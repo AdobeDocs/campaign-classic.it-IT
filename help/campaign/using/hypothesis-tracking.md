@@ -1,0 +1,83 @@
+---
+title: Tracciamento delle ipotesi
+seo-title: Tracciamento delle ipotesi
+description: Tracciamento delle ipotesi
+seo-description: null
+page-status-flag: never-activated
+uuid: cb949a9d-8bbe-446b-b5b4-22234a91a68b
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: campaign
+content-type: reference
+topic-tags: response-manager
+discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+
+---
+
+
+# Tracciamento delle ipotesi{#hypothesis-tracking}
+
+Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign: gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nelle ipotesi contenute nei rapporti disponibili tramite campagne e consegne.
+
+## Risultati dell&#39;ipotesi {#hypothesis-results}
+
+### Indicatori {#indicators}
+
+Una volta calcolata l&#39;ipotesi, diversi indicatori di misura vengono aggiornati automaticamente. Sono disponibili nella **[!UICONTROL General]** scheda dell&#39;ipotesi.
+
+![](assets/response_hypothesis_delivery_example_010.png)
+
+Questi indicatori sono:
+
+* **Numero di contatti** intervistati: numero di persone contattate che corrispondono all&#39;ipotesi.
+* **Tasso** di risposta contattato: numero di contatti intervistati / totale di persone contattate durante la consegna.
+* **Numero di contatti** del gruppo di controllo partecipanti: numero di gruppi di controllo che corrispondono all&#39;ipotesi.
+* **Tasso di risposta del gruppo** di controllo: numero di gruppi di controllo partecipanti / numero totale di gruppi di controllo della consegna.
+* **Numero di reazioni**: numero di record nella tabella che contiene il rapporto tra individui, l&#39;ipotesi e la tabella delle transazioni.
+
+Per l’elenco completo degli indicatori, fate clic sul **[!UICONTROL Display the list]** collegamento:
+
+![](assets/response_hypothesis_indicators_002.png)
+
+Gli indicatori forniscono le seguenti informazioni:
+
+* **Entrate totali della popolazione contattata**: importi totali relativi al numero di persone contattate.
+* **Entrate totali del gruppo** di controllo: importi totali sul numero di gruppi di controllo.
+* **Entrate medie per contatto**: totale importi / contattati.
+* **Entrate medie del gruppo** di controllo: totale importi / gruppo di controllo.
+* **Margine totale per contatto**: margine totale su contattato.
+* **Margine totale del gruppo** di controllo: margine totale sul gruppo di controllo.
+* **Margine medio per contatto**: totale / contattato.
+* **Margine medio dei gruppi** di controllo: margini totali / gruppo di controllo.
+* **Entrate** aggiuntive: (Entrate medie del gruppo di controllo contattato-Ricavi medi)*Numero di contatti
+* **Margine** aggiuntivo: (margine medio del gruppo di controllo contattato-margine medio) / numero di contatti
+* **Costo medio per contatto**: costo di consegna calcolato / Numero di contatti.
+* **ROI**: costo calcolato della consegna / Margine totale per contatto
+* **ROI** efficace: costo di consegna calcolato / margine aggiuntivo.
+* **Significato**: contiene valori da 0 a 3 a seconda del significato della campagna.
+
+### Reazioni {#reactions}
+
+È possibile visualizzare le reazioni dei destinatari alle ipotesi tramite la **[!UICONTROL Reactions]** scheda.
+
+1. Una volta completato il calcolo dell&#39;ipotesi, andate al **[!UICONTROL Campaign management > Measurement hypotheses]** nodo della struttura ad albero di Adobe Campaign.
+1. Selezionate l&#39;ipotesi desiderata e fate clic sulla **[!UICONTROL Reactions]** scheda per visualizzare l&#39;elenco dei destinatari che probabilmente acquisteranno qualcosa dopo la campagna di marketing.
+
+   ![](assets/response_hypothesis_reactions_001.png)
+
+## Rapporti {#reports}
+
+Consente di **[!UICONTROL Hypothesis report]** visualizzare i risultati delle ipotesi eseguite su campagne e consegne. La relazione contiene gli indicatori calcolati in base all&#39;ipotesi (per ulteriori informazioni, fare riferimento a [indicatori](#indicators)).
+
+* **A livello** di campagna: fate clic sul **[!UICONTROL Reports]** collegamento della campagna interessata e selezionate la campagna **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l&#39;elenco delle consegne della campagna e le ipotesi calcolate per ogni consegna.
+
+   ![](assets/response_hypothesis_campaign_report_001.png)
+
+* **A livello** di consegna: per accedere al rapporto, apri il recapito interessato, fai clic sul pulsante **[!UICONTROL Reports]** nella **[!UICONTROL Summary]** scheda e seleziona il **[!UICONTROL Hypothesis report]**. Se per la stessa consegna sono state calcolate diverse ipotesi, la relazione conterrà tutte le ipotesi.
+
+   ![](assets/response_hypothesis_delivery_report_001.png)
