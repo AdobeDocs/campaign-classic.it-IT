@@ -1,0 +1,34 @@
+---
+title: Raccomandazione di una categoria
+seo-title: Raccomandazione di una categoria
+description: Raccomandazione di una categoria
+seo-description: null
+page-status-flag: never-activated
+uuid: d6bda8bb-003b-45cf-8f68-928f41bec959
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: interaction
+content-type: reference
+topic-tags: managing-an-offer-catalog
+discoiquuid: d52c3e72-bac0-48d9-9750-0a30aa816b83
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+
+---
+
+
+# Raccomandazione di una categoria{#recommending-a-category}
+
+Può darsi che un destinatario non sia considerato idoneo per tutte le offerte. Per garantire che tutti i destinatari ricevano una proposta di offerta, è possibile aggiungere sistematicamente una o diverse categorie di offerte nelle raccomandazioni. A differenza delle offerte principali, queste offerte di &quot;backup&quot; devono avere un peso basso (ma non zero), in modo che siano prese in considerazione solo se non sono ammissibili offerte di alto peso. Inoltre, non deve essere applicata alcuna regola di presentazione a queste offerte per garantire che siano sempre incluse nelle raccomandazioni. Ciò significa che, durante una proposta, se non è disponibile un&#39;offerta elevata, il destinatario riceverà almeno un&#39;offerta da questa categoria.
+
+Per includere sempre una categoria nelle raccomandazioni, effettuate le seguenti operazioni:
+
+1. Aprite l&#39;elenco di cartelle e fate clic su un catalogo di offerte dalla struttura ad albero.
+1. Fare clic sulla **[!UICONTROL Eligibility]** scheda e selezionare la **[!UICONTROL Always include this category in the recommendations]** casella.
+1. Per terminare e approvare, fai clic su **[!UICONTROL Save]**.
+
+   ![](assets/offer_cat_default_001.png)
+
