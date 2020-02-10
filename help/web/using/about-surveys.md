@@ -1,0 +1,92 @@
+---
+title: Informazioni sui sondaggi
+seo-title: Informazioni sui sondaggi
+description: Informazioni sui sondaggi
+seo-description: null
+page-status-flag: never-activated
+uuid: 31a07a48-2ebb-4b51-ae24-382f3ce3f04a
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: web
+content-type: reference
+topic-tags: online-surveys
+discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+
+---
+
+
+# Informazioni sui sondaggi{#about-surveys}
+
+Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una rete extranet, o moduli di notifica, inclusi i dati del database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
+
+Il modulo **Survey** opzionale consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni sul profilo, per iscriversi o annullare l’iscrizione a un servizio di informazioni o a un modulo di partecipazione al concorso. Una volta raccolte, le risposte vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente attraverso le risposte fornite ai questionari. Potete visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
+
+Questo capitolo descrive il metodo per la creazione e la gestione di **sondaggi**, gestione di campi e pagine, modalità di memorizzazione e record.
+
+La procedura per la creazione di un modulo Web standard è descritta in [questa sezione](../../web/using/about-web-forms.md).
+
+La gestione delle applicazioni Web è dettagliata in [questa sezione](../../web/using/about-web-applications.md). Per ulteriori informazioni, consultare questo capitolo.
+
+>[!CAUTION]
+>
+>Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
+
+## Ambito sondaggi campagna {#campaign-surveys-scope}
+
+In Adobe Campaign, le applicazioni Web in generale consentono di accedere alle seguenti funzionalità:
+
+* Creazione di moduli con più pagine,
+* Gestione delle indagini multilingue con uno strumento di traduzione integrato,
+* Interfaccia grafica per la gestione delle pagine, layout a più colonne,
+* Personalizzazione del rendering e posizione sul campo,
+* Visualizzazione condizionale dei campi del sondaggio in base alle risposte,
+* Visualizzazione della pagina condizionale,
+* Verifica delle informazioni prima dell&#39;approvazione, in base al tipo di dati previsti (numero, indirizzo e-mail, date, ecc.) e campi obbligatori,
+* Inviti/notifiche e-mail,
+* Personalizzazione di messaggi di errore e messaggi finali,
+* Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc.
+
+>[!NOTE]
+>
+>Tutte le configurazioni collegate ai moduli Web sono descritte in [questa sezione](../../web/using/about-web-forms.md). Per informazioni dettagliate sui concetti e sulle funzionalità dei moduli Web che utilizzano Adobe Campaign, consulta questo documento.
+
+Il modulo opzionale per la creazione di sondaggi (**Survey**) offre le seguenti funzionalità aggiuntive:
+
+* Estensione dinamica del database: creazione di risposte che non fanno parte del modello dati iniziale. Per ulteriori informazioni, vedere [Memorizzazione delle risposte](../../web/using/managing-answers.md#storing-collected-answers)raccolte.
+* Gestione del punteggio. Per ulteriori informazioni, consulta Gestione [punteggio](../../web/using/managing-answers.md#score-management).
+* Visualizzazione casuale delle domande. Per ulteriori informazioni, vedere [Aggiunta di domande](../../web/using/building-a-survey.md#adding-questions).
+* Tracciamento delle risposte in tempo reale. Per ulteriori informazioni, consulta Tracciamento delle [risposte](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta [Rapporti sulle indagini](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+
+Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
+
+## Passi di implementazione delle indagini {#surveys-implementation-steps}
+
+Per creare e distribuire un sondaggio ed elaborarne i risultati, effettuate le seguenti operazioni:
+
+1. Create le pagine del sondaggio e il relativo contenuto (campi di input, elenchi a discesa, domande e così via).
+1. Definire le modalità di salvataggio delle risposte.
+
+   Per precaricare il modulo con i dati già presenti nel database, è possibile inserire una fase di pre-caricamento dei dati. Potete anche aggiungere una casella di prova.
+
+1. Pubblicate, quindi distribuite il sondaggio ai destinatari (ad esempio, includete il collegamento in una consegna o in un sito Web).
+1. Monitorare le risposte e visualizzare i rapporti.
+
+Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi, consultare [questa sezione](../../web/using/about-web-forms.md). In questo capitolo sono descritte solo le configurazioni specifiche dei sondaggi.
+
+## Configurazione sondaggi {#surveys-configuration}
+
+I sondaggi sono memorizzati nel **[!UICONTROL Resources > Online > Web Applications]** nodo della struttura di Adobe Campaign. Le configurazioni si trovano nelle cartelle seguenti:
+
+* **[!UICONTROL Administration > Configuration > Form rendering]**: contiene i modelli di rendering per la presentazione di moduli Web (applicazioni e sondaggi).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contiene i modelli di modulo. Per creare un modulo, è necessario iniziare con un modello.
+
+>[!NOTE]
+>
+>Le informazioni sulla configurazione sono disponibili in [questa sezione](../../web/using/about-web-forms.md).
+
