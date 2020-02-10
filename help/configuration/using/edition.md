@@ -1,0 +1,42 @@
+---
+title: Edition
+seo-title: Edition
+description: Edition
+seo-description: null
+page-status-flag: never-activated
+uuid: df9298fc-5f62-4afb-8118-ca7e3987e81f
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: configuration
+content-type: reference
+topic-tags: navigation-hierarchy
+discoiquuid: 820be231-af76-44ce-8f4d-cd5eae1eb169
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+
+---
+
+
+# Edition{#edition}
+
+La schermata per la creazione e la configurazione dei documenti di configurazione della gerarchia di navigazione è accessibile tramite il **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nodo:
+
+![](assets/d_ncs_integration_navigation_arbo.png)
+
+La configurazione della gerarchia di navigazione è suddivisa in più documenti XML. Opera su un principio simile all&#39;estensione dello schema: tutti i documenti vengono uniti per generare un singolo documento contenente l’intera configurazione. Questo documento non può essere modificato e viene visualizzato tramite la scheda &quot;Anteprima&quot;.
+
+Il campo di modifica fornisce il contenuto del documento XML:
+
+![](assets/d_ncs_integration_navigation_edit.png)
+
+>[!NOTE]
+>
+>Il controllo di modifica &quot;Name&quot; consente di immettere la chiave del documento costituita dal nome e dallo spazio dei nomi. Gli attributi &quot;name&quot; e &quot;namespace&quot; dell&#39; **`<navtree>`** elemento vengono aggiornati automaticamente nel campo di modifica XML dello schema.
+
+L&#39;anteprima genera automaticamente il documento unito contenente la configurazione completa:
+
+![](assets/d_ncs_integration_navigation_preview.png)
+
