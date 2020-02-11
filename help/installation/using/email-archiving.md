@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ A tal fine, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a 
 ## Recommendations e limitazioni {#recommendations-and-limitations}
 
 * La funzione di archiviazione delle e-mail è opzionale. Controllare il contratto di licenza.
-* Per architetture ospitate e ibride, contattate il vostro responsabile commerciale per attivarla. Per le installazioni in sede, seguite le linee guida riportate di seguito: consultate le sezioni [Attivazione dell&#39;archiviazione delle e-mail (in sede)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail CCN (in sede)](#configuring-the-bcc-email-address--on-premise-) .
-* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Archive emails]** opzione. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* Per architetture **** ospitate e ibride, contattate il vostro responsabile commerciale per attivarla. L&#39;indirizzo CCN desiderato deve essere fornito al team Adobe che lo configurerà automaticamente.
+* Per le installazioni **** locali, seguite le linee guida riportate di seguito per attivarle. Consultate le sezioni [Attivazione dell&#39;archiviazione delle e-mail (in sede)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail CCN (in sede)](#configuring-the-bcc-email-address--on-premise-) .
 * È possibile utilizzare un solo indirizzo e-mail CCN.
+* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Archive emails]** opzione. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 * Solo le e-mail inviate con successo vengono prese in considerazione, i messaggi non vengono visualizzati.
 * Il sistema di archiviazione delle e-mail è cambiato con Adobe Campaign 17.2 (build 8795). Se si utilizza già l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema di archiviazione delle e-mail (CCN). Per ulteriori informazioni, consulta la sezione [Aggiornato sistema di archiviazione delle e-mail (CCN)](#updated-email-archiving-system--bcc-) .
 
