@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM proviene da una combinazione di DomainKeys, Yahoo! e Cisco Identificato pri
 
 DKIM ha sostituito l&#39;autenticazione **DomainKeys** .
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento a Enhanced MTA, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della **[!UICONTROL Domain management]** tabella come parte dell&#39;aggiornamento MTA avanzato.
 >
