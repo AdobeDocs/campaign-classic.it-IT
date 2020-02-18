@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # Estensione di uno schema{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alcuni schemi predefiniti non devono essere estesi: principalmente quelle per le quali sono definite le seguenti impostazioni:\
 >**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
@@ -38,7 +38,7 @@ Esistono due metodi per estendere uno schema esistente:
 
    Uno schema di estensione non ha uno schema specifico: lo schema generato dallo schema di origine sarà compilato con i campi dello schema di estensione.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Non è consentito modificare gli schemi predefiniti dell&#39;applicazione, ma il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell&#39;applicazione. Ciò può causare malfunzionamenti nell&#39;utilizzo di Adobe Campaign.
 
@@ -66,7 +66,7 @@ Esistono due metodi per estendere uno schema esistente:
 
    L&#39;attributo **membersTo** nel campo viene compilato nello schema in cui è dichiarato.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per tenere conto delle modifiche, è necessario rigenerare gli schemi. Per ulteriori informazioni, vedere la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) .\
 >Se le modifiche influiscono sulla struttura del database, è necessario eseguire un aggiornamento. Per ulteriori informazioni, vedere [Aggiornamento della struttura](../../configuration/using/updating-the-database-structure.md) del database.
