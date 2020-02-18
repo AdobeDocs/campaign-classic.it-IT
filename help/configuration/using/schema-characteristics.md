@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono
 * È necessario specificare esplicitamente i nomi delle tabelle e delle colonne,
 * Gli indici devono essere dichiarati.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non eliminare i campi nella tabella dei destinatari standard, anche se inutili. Ciò potrebbe causare errori comportamentali nel database Adobe Campaign.
 
