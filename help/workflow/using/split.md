@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ Per creare un sottoinsieme:
 
    Il processo è lo stesso di un&#39;attività di tipo **Query**.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >È possibile filtrare i dati in un massimo di due database esterni (FDA).
 
@@ -59,7 +59,7 @@ Per creare un sottoinsieme:
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Se l’ **[!UICONTROL Enable overlapping of output populations]** opzione non è selezionata, i sottoinsiemi vengono creati nell’ordine delle schede. Utilizzare le frecce nella sezione in alto a destra di questa finestra per spostarle. Se il primo sottoinsieme recupera il 70% della popolazione iniziale, ad esempio, il sottoinsieme successivo applicherà i criteri di selezione solo al restante 30%, e così via.
 
@@ -135,7 +135,7 @@ Per un esempio dell&#39; **[!UICONTROL Local approval]** attività con un modell
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per utilizzare questa funzione, è necessario acquistare il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controllare il contratto di licenza.
 
@@ -200,7 +200,7 @@ Il modello di distribuzione dei dati consente di limitare il numero di record ut
 
       In caso di limitazione semplice tramite raggruppamento dati senza approvazione locale, non è necessario immettere il **[!UICONTROL Group or operator]** campo.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Accertatevi che agli operatori siano stati assegnati i diritti appropriati.
 
