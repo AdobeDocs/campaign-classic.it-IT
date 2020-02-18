@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ Per visualizzare i rapporti, fate clic sui relativi nomi. Per impostazione prede
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >Questa sezione mostra solo i rapporti collegati alle consegne.
 
@@ -104,7 +104,7 @@ Vengono utilizzati i seguenti indicatori:
    >
    >Questo indicatore riguarda solo le consegne sui canali mobili. For more on this, refer to [this section](../../delivery/using/sms-channel.md).
 
-   Per aprire ciascuna riga della tabella dei valori, fare clic sul simbolo [+] . Per ciascun tipo di errore, è possibile visualizzare la suddivisione dei messaggi di errore per dominio.
+   Per aprire ciascuna riga della tabella dei valori, fare clic sul `[+]` simbolo. Per ciascun tipo di errore, è possibile visualizzare la suddivisione dei messaggi di errore per dominio.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
