@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Adobe Campaign consente di collegare le informazioni di tracciamento Web raccolte a un destinatario quando questi sfoglia il sito in modo anonimo. Quando un utente esplora le pagine con tag del sito Web, vengono raccolte le informazioni di ricerca, in modo che una volta che fa clic in un messaggio e-mail inviato da Adobe Campaign, queste vengono identificate e le informazioni vengono automaticamente collegate.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La configurazione del tracciamento anonimo su un sito Web può attivare la raccolta di una quantità significativa di registri di tracciamento, con un impatto sul funzionamento del database. Configuratelo con attenzione.\
 >I registri di tracciamento vengono salvati nel database fino all’eliminazione dei dati di tracciamento. Utilizzate la procedura guidata di distribuzione per configurare la frequenza di eliminazione. For more on this, refer to [this section](../../installation/using/deploying-an-instance.md#purging-data).
