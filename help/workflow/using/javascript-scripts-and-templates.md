@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ Le variabili sono le proprietà libere degli **[!UICONTROL instance]**, **[!UICO
 
 ### Variabili di istanza {#instance-variables}
 
-Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali: Sono condivisi da tutte le attività.
+Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali.  Sono condivisi da tutte le attività.
 
 ### Variabili attività {#task-variables}
 
-Le variabili attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali: Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per lo scambio di dati tra i diversi script di una stessa attività.
+Le variabili attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali.  Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per lo scambio di dati tra i diversi script di una stessa attività.
 
 ### Variabili evento {#event-variables}
 
