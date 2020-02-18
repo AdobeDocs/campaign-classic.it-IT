@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ Quando un utente fa clic sulla scheda di un’applicazione Facebook, questa vien
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Attenetevi ai passaggi di configurazione descritti in [Creazione di un&#39;applicazione](../../social/using/creating-a-facebook-application.md)Facebook.
 
@@ -44,7 +44,7 @@ Gli esempi di applicazioni Web di tipo Facebook descritti di seguito sono:
 * Come inoltrare le impostazioni a un&#39;applicazione Facebook. Fare riferimento a [Come inoltrare le impostazioni a un&#39;applicazione Facebook?](#how-to-forward-settings-to-a-facebook-application-).
 * Come acquisire i dati del ventilatore. Fare riferimento a [Come acquisire i dati dei ventilatori?](#how-to-acquire-fan-data-).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questi casi d’uso semplici sono forniti come esempi per illustrare le funzionalità delle applicazioni Web di tipo Facebook.
 
@@ -97,7 +97,7 @@ Controlla che la scheda dell&#39;applicazione **App01** venga visualizzata sulla
 
 ## Come inoltrare le impostazioni a un&#39;applicazione Facebook? {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Seguite i passaggi di configurazione descritti in [Creazione di un’applicazione](../../social/using/creating-a-facebook-application.md)Facebook.
 
