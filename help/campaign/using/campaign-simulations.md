@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ Per creare una simulazione, effettuate le seguenti operazioni:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Se necessario, è possibile utilizzare una condizione dinamica tramite il **[!UICONTROL Edit the dynamic condition...]** collegamento
+   Se necessario, è possibile utilizzare una condizione dinamica tramite il **[!UICONTROL Edit the dynamic condition...]** collegamento.
 
    Fate clic **[!UICONTROL Save]** per approvare la configurazione.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Nel calcolo delle simulazioni si tiene conto solo delle consegne il cui obiettivo è stato calcolato (stati: **Target pronto** o **pronto per la distribuzione**).
 
@@ -215,13 +215,13 @@ Nell&#39;esempio seguente, vogliamo creare un asse di reporting aggiuntivo in ba
 
    * **[!UICONTROL Generate target overlap statistics]** consente di recuperare tutte le statistiche di sovrapposizione nel rapporto di simulazione. Le sovrapposizioni sono destinatari mirati in almeno due consegne all&#39;interno di una simulazione.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Selezionando questa opzione si aumenta notevolmente il tempo di esecuzione della simulazione.
 
    * **[!UICONTROL Keep the simulation work table]** consente di mantenere tracce di simulazione.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Il salvataggio automatico di queste tabelle richiede una notevole capacità di storage: assicurarsi che il database sia sufficientemente grande.
 
