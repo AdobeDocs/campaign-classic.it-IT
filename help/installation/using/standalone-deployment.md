@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -181,7 +181,7 @@ Effettuate le seguenti operazioni:
    * Per Linux: [Integrazione in un server Web per Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Per Windows: [Integrazione in un server Web per Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Avviate il sito Web e verificate il reindirizzamento utilizzando l’URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Avviate il sito Web e verificate il reindirizzamento utilizzando l’URL: https://tracking.campaign.net/r/test.
 
    Il browser deve visualizzare il seguente messaggio:
 
@@ -196,6 +196,10 @@ Effettuate le seguenti operazioni:
 
 1. Avviate il server Adobe Campaign (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) ed eseguite di nuovo il **pdump** nlserver per verificare la presenza di tutti i moduli abilitati.
 
+   >[!NOTE]
+   >
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di avvio **del sistema**
+
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
@@ -209,7 +213,7 @@ Effettuate le seguenti operazioni:
 
    Questo comando consente inoltre di conoscere la versione e il numero di build del server Adobe Campaign installato sul computer.
 
-1. Verificate il modulo Web **del** server utilizzando l&#39;URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)
+1. Verificate il modulo Web **del** server utilizzando l&#39;URL: https://console.campaign.net/nl/jsp/logon.jsp
 
    Questo URL consente di accedere alla pagina di download per il programma di configurazione client.
 
@@ -222,7 +226,7 @@ Effettuate le seguenti operazioni:
    * Per Linux: Disponibilità della console [client per Linux](../../installation/using/client-console-availability-for-linux.md)
    * Per Windows: Disponibilità della console [client per Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Avviate la console client Adobe Campaign (dalla pagina di download precedente o avviata direttamente sul server per un&#39;installazione di Windows), impostate l&#39;URL della connessione del server su [https://console.campaign.net](https://console.campaign.net) e collegatevi utilizzando l&#39;accesso **interno** .
+1. Avviate la console client Adobe Campaign (dalla pagina di download precedente o avviata direttamente sul server per un&#39;installazione di Windows), impostate l&#39;URL della connessione del server su https://console.campaign.net e collegatevi utilizzando l&#39;accesso **interno** .
 
    Fare riferimento a [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md) e all&#39;identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
 
