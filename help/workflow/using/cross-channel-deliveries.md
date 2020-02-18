@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -64,11 +64,10 @@ Ad esempio, qui creeremo un flusso di lavoro per inviare un&#39;e-mail o un SMS 
 1. Aggiungete e configurate un&#39; **[!UICONTROL Wait]** attività affinché i destinatari non ricevano troppe consegne alla volta.
 1. Aggiungete un&#39; **[!UICONTROL Split]** attività per dividere gli utenti iscritti a un&#39;applicazione mobile iOS o Android.
 
-   Selezionare un servizio per ciascun sistema operativo. Per ulteriori informazioni sulla creazione del servizio, consulta questa [pagina](../../delivery/using/setting-up-mobile-app-channel.md#creating-the-service-and-collecting-subscriptions).
+   Selezionare un servizio per ciascun sistema operativo. Per ulteriori informazioni sulla creazione del servizio, consulta questa [pagina](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
 1. Seleziona e configura la distribuzione di un&#39;applicazione mobile per ciascuno dei sistemi operativi.
 
    ![](assets/cross_channel_delivery_5.png)
-
