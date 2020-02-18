@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ Per estendere la tabella destinatari dello schema **nms:destinatario** , attener
 
    In questo esempio, viene aggiunto un campo indicizzato (**fedeltà**) e l&#39;elemento **location** (che esisteva già nello schema **nms:destinatario** ) viene completato con un campo (**area**) enumerato.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Ricordare di aggiungere l&#39;attributo **ExtendedSchema** per fare riferimento allo schema di estensione.
 
