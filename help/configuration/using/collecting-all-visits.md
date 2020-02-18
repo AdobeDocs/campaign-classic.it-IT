@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Tuttavia, potete configurare la piattaforma in modo che raccolga tutte le visite
 
 Un utente noto alla piattaforma è un destinatario che ha già ricevuto il targeting per una consegna e che ha fatto clic su di essa almeno una volta. Per identificare il destinatario viene utilizzato un cookie permanente.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La piattaforma Adobe Campaign non è destinata a essere utilizzata come strumento di tracciamento del sito Web oltre al contesto della visita al sito successiva a un clic in un messaggio. Quando questa opzione è attivata, può causare un utilizzo molto elevato delle risorse sui computer in cui sono installati i server (reindirizzamento, applicazione e database). È consigliabile assicurarsi che l&#39;architettura hardware in uso supporti questo carico ed evitare di inserire tag di tracciamento Web nelle pagine visitate più di frequente, come la pagina principale.
 
