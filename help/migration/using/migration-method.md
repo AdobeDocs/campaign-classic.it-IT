@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4437d2ea4e4044245a2b9a5a870267cd1f1c0bc9
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -30,7 +30,7 @@ I database e i sistemi operativi della versione a 32 bit sono ancora supportati 
 
 In v6.02, la modalità &quot;multi timezone&quot; era disponibile solo per i motori di database PostSQL. Ora è disponibile indipendentemente dal tipo di motore di database utilizzato. Consigliamo vivamente di trasformare la base in una base &quot;multi-timezone&quot;. Per ulteriori informazioni, vedere la sezione Fusi [orari](../../migration/using/general-configurations.md#time-zones) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alcune versioni software supportate in Adobe Campaign 5.11 e 6.02 non sono più supportate in Adobe Campaign v7.
 >
