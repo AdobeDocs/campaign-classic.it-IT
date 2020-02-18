@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -31,7 +31,7 @@ Prima di avviare il processo di aggiornamento, determina e conferma quale versio
 
 >[!NOTE]
 >
->Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) build.
+>Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) build.
 
 ## In Windows {#in-windows}
 
