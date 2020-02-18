@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ I seguenti comandi vengono utilizzati per avviare e arrestare manualmente il ser
 
    * **/etc/init.d di avvio/nlserver6**
    * **/etc/init.d/nlserver6 stop**
+
+>[!NOTE]
+>
+>A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): avvio **di sistema nlserver** / arresto di **sistema nlserver**
 
 Di seguito è riportato un elenco dei comandi di amministrazione consueti accessibili in Linux (come **Adobe Campaign**):
 
@@ -76,24 +80,22 @@ Di seguito è riportato un elenco dei comandi di amministrazione consueti access
    **riavvio Web**
 
    >[!NOTE]
-
-   >* Se l&#39;istanza non è specificata, verrà utilizzata l&#39;istanza &quot;predefinita&quot;.
-   >    
-   >    
+   > 
+   >    * Se l&#39;istanza non è specificata, verrà utilizzata l&#39;istanza &quot;predefinita&quot;.
    >    * In caso di emergenza, utilizzare l&#39;opzione **-immediate** per forzare l&#39;arresto immediato del processo (equivalente al comando Unix **kill -9**).
-   * Utilizzate l&#39;opzione **-noconsole** per fare in modo che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd** .
-   * Utilizzate l&#39;opzione **dettagliata** per visualizzare informazioni aggiuntive sulle azioni del processo.
-
-
+   >    * Utilizzate l&#39;opzione **-noconsole** per fare in modo che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd** .
+   >    * Utilizzate l&#39;opzione **dettagliata** per visualizzare informazioni aggiuntive sulle azioni del processo.
+      >    
+      >      
       Esempio:
-
-
+      >    
+      >      
       **nlserver riavvio web -verbose**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance -verbose**
-
-
+      >    
+      >      
       Questa opzione aggiunge altri registri. Si consiglia di riavviare i processi senza l&#39;opzione **dettagliata** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
 
 
@@ -110,5 +112,6 @@ Di seguito è riportato un elenco dei comandi di amministrazione consueti access
    **nlserver config -reload**
 
    >[!NOTE]
-   Alcune modifiche alla configurazione non vengono prese in considerazione in modo dinamico; Adobe Campaign deve essere arrestato e riavviato.
+   >
+   >Alcune modifiche alla configurazione non vengono prese in considerazione in modo dinamico; Adobe Campaign deve essere arrestato e riavviato.
 
