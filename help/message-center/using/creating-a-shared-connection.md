@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -75,11 +75,15 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    La raccolta dei dati avviene tramite un servizio Web che utilizza l&#39;accesso HTTP/HTTPS, oppure tramite il modulo FDA (Federated Data Access).
 
+   >[!NOTE]
+   >
+   >Quando si utilizza FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database Postgres. MSSQL o database Oracle non sono supportati.
+
    Il secondo metodo è consigliato se l&#39;istanza di controllo ha accesso diretto al database delle istanze di esecuzione. In caso contrario, scegliete l&#39;accesso al servizio Web. L&#39;account FDA da specificare coincide con la connessione ai database delle varie istanze di esecuzione create nell&#39;istanza di controllo.
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Per ulteriori informazioni su Federated Data Access (FDA), vedere [Accesso a un database](../../platform/using/accessing-an-external-database.md)esterno.
+   Per ulteriori informazioni su Federated Data Access (FDA), vedere [Accesso a un database](../../platform/using/about-fda.md)esterno.
 
 1. Fare clic **[!UICONTROL Test the connection]** per assicurarsi che l&#39;istanza di controllo e l&#39;istanza di esecuzione siano collegate.
 
