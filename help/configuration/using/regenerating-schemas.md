@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ Quando modificate uno schema e salvate le modifiche, lo schema esteso viene gene
 >[!NOTE]
 >
 >Se devi forzare la rigenerazione di tutti gli schemi, ad esempio per risolvere alcuni problemi di dipendenza nei collegamenti invertiti, puoi avviare il comando seguente dal server dell’applicazione Adobe Campaign:
-
+>
 >**nlserver config -postupgrade -instance:`&lt;nome_istanza>&#39; -force**
-
+>
 >È quindi necessario riavviare il server dell&#39;applicazione Adobe Campaign e disconnettersi/riconnettersi alla console client.
-
