@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -417,7 +417,7 @@ Il nome e l&#39;accesso dell&#39;operatore devono essere precedentemente configu
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Si tratta di un test per verificare che un operatore possa accedere al server Adobe Campaign tramite una pagina Web; la stessa pagina Web a cui si accede tramite i menu della console client. È consigliabile includerlo nei vostri strumenti di sorveglianza (Tivoli, Nagios, ecc.).
+Si tratta di un test per verificare che un operatore possa accedere al server Adobe Campaign tramite una pagina Web; la stessa pagina Web a cui si accede tramite i menu della console client. Puoi chiamare questa pagina dai tuoi strumenti di sorveglianza (Tivoli, Nagios, ecc.).
 
 ![](assets/ncs_monitoring_web.png)
 
