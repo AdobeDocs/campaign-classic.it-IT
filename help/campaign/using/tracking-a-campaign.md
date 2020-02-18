@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -51,7 +51,7 @@ Queste informazioni sono disponibili anche nella **[!UICONTROL Campaign orders]*
 
 L&#39;operatore centrale può modificare l&#39;ordine. Esistono due modi per farlo:
 
-1. L&#39;operatore può fare clic sul nome dell&#39;ordine per modificarlo: viene visualizzato il dettaglio dell&#39;ordine.
+1. L&#39;operatore può fare clic sul nome dell&#39;ordine per modificarlo: vengono visualizzati i dettagli dell&#39;ordine.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
