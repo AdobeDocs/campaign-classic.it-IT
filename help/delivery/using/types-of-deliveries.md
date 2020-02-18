@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 194d2263de0bf98afa0efc7e2e0b4ca433c95b6d
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -30,7 +30,7 @@ Un **recapito** è un oggetto di consegna standalone che viene eseguito una volt
 
 Le consegne possono essere create dall&#39;elenco delle consegne o all&#39;interno di un flusso di lavoro tramite un&#39;attività [Consegna](../../workflow/using/delivery.md) .
 
-I flussi di lavoro forniscono inoltre attività di consegna specifiche in base al tipo di canale che si desidera utilizzare. For more on these activites, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+I flussi di lavoro forniscono inoltre attività di consegna specifiche in base al tipo di canale che si desidera utilizzare. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
 
 ## Consegna ricorrente {#recurring-delivery}
 
