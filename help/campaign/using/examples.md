@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ L&#39;interfaccia **Per tipo di modulo** Web prevede l&#39;uso di un&#39;applica
 >[!NOTE]
 >
 >Le API sono dettagliate in un documento dedicato, il cui accesso dipende dal contratto. Fate riferimento a [API](../../configuration/using/about-web-services.md).
-
->[!NOTE]
 >
 >L&#39;applicazione Web utilizzata in questo esempio non è un&#39;app Web disponibile con Adobe Campaign. Per utilizzare un modulo in una campagna, è necessario creare l&#39;applicazione Web dedicata.
 
@@ -159,7 +157,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
    * il contenuto del messaggio che verrà inviato alle entità locali nella notifica,
    * il promemoria di approvazione,
-   * elaborazione prevista per la campagna
+   * elaborazione prevista per la campagna.
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Salvare i record.
