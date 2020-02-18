@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ad1a83d40f5a841b01aaeb17fe271b44f2480dd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -30,9 +30,7 @@ I comandi di installazione consentono di:
 
 * Copiare i file in **/user/local/neolane**
 * Create un account Linux Adobe Campaign (e il gruppo associato), creato con **/usr/local/neolane** come directory principale
-* Creare uno script automatico **/etc/init.d/nlserver6** da utilizzare all&#39;avvio
-
-Questo pacchetto viene compilato utilizzando GCC 4, il che implica dipendenze con versioni specifiche delle librerie che non sono sempre disponibili sulla piattaforma di installazione.
+* Create uno script automatico **/etc/init.d/nlserver6** da utilizzare all&#39;avvio oppure create un&#39;unità di sistema (a partire dalla versione 20.1).
 
 >[!NOTE]
 >
@@ -76,72 +74,7 @@ Con CentOS, è necessario installare il pacchetto bc.x86_64: collegarsi come **r
 yum install bc.x86_64
 ```
 
-**Esempio di installazione su SLES 11 SP2:**
-
-* Disattiva **[!UICONTROL libboost_regex]** :
-
-   ```
-   zypper remove libboost_regex1_36_0
-   ```
-
-* Installare Oracle Java o OpenJDK (per ulteriori informazioni, fare riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk)):
-
-   ```
-   ./jdk-6uxx-linux-x64-rpm.bin
-   ```
-
-* Installate OpenSSL 1.0 (per ulteriori informazioni, consultate [Librerie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libopenssl1_0_0-1.0.0c-18.42.1.x86_64.rpm
-   ```
-
-   È necessario creare alias che puntino ai file della libreria OpenSSL:
-
-   ```
-   ln -s /lib64/libssl.so.1.0.0 /lib64/libssl.so.10
-   ln -s /lib64/libcrypto.so.1.0.0 /lib64/libcrypto.so.10
-   ```
-
-* Installate libicu 4.2 (per ulteriori informazioni, consultate [Librerie](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)):
-
-   ```
-   yast -i libicu-4.2-7.3.1.x86_64.rpm
-   ```
-
-* Installa il pacchetto del server Adobe Campaign:
-
-   ```
-   yast -i nlserver6-v7-xxx-x.x86_64.rpm
-   ```
-
 ## Distribuzione basata su APT (Debian) {#distribution-based-on-apt--debian-}
-
-### In Debian 32 bit {#in-debian-32-bits}
-
-Per installare Adobe Campaign a 32 bit su un sistema operativo Debian a 32 bit, effettua i seguenti passaggi:
-
-1. Devi prima ottenere i due pacchetti Adobe Campaign.
-
-   * **nlserver6-v7-XXXX-linux-2.6-intel.deb** per v7.
-   * **nlserver6-XXXX-linux-2.6-intel.deb** per v6.1.
-   **XXXX** è il numero di build di Adobe Campaign.
-
-   >[!CAUTION]
-   >
-   >Accertatevi di utilizzare il nome file corretto per la versione di Adobe Campaign negli esempi di comando di questa sezione.
-
-1. Per installarlo, connettiti come **root** ed esegui il seguente comando (dove **XXXX** è il numero di build di Adobe Campaign):
-
-   ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
-   ```
-
-   Se mancano dipendenze, eseguire il comando seguente:
-
-   ```
-   apt-get install -f
-   ```
 
 ### In Debian 64 bit {#in-debian-64-bits}
 
@@ -163,15 +96,21 @@ Per installare Adobe Campaign a 64 bit su un sistema operativo Debian a 64 bit, 
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-**Specifiche Debian 7/8**
-
-Durante l&#39;installazione di Adobe Campaign su un sistema operativo Debian 7, tieni presente quanto segue:
-
-* OpenSSL deve essere installato in anticipo.
-* Installate libicu48 (Debian 7), libicu52 (Debian 8) o libicu57 (Debian 9), libprotobuf9 (Debian8) e libc-ares2 con i seguenti comandi:
+   Se mancano dipendenze, eseguire il comando seguente:
 
    ```
-   aptitude install libicu48 (Debian 7) libicu52 (Debian 8) libicu57 (Debian 9)
+   apt-get install -f
+   ```
+
+**Specifiche Debian 8/9**
+
+Durante l&#39;installazione di Adobe Campaign su un sistema operativo Debian 8/9, tieni presente quanto segue:
+
+* OpenSSL deve essere installato in anticipo.
+* Installate libicu52 (Debian 8) o libicu57 (Debian 9), libprotobuf9 (Debian8) e libc-ares2 con i seguenti comandi:
+
+   ```
+   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
    ```
 
    ```
@@ -179,13 +118,13 @@ Durante l&#39;installazione di Adobe Campaign su un sistema operativo Debian 7, 
    ```
 
    ```
-   aptitude install libprotobuf9 (only Debian 7/8)
+   aptitude install libprotobuf9 (only Debian 8)
    ```
 
 * Installate JDK7 con il seguente comando:
 
    ```
-   aptitude install openjdk-7-jdk (Debian 7/8)
+   aptitude install openjdk-7-jdk (Debian 8)
    ```
 
    ```
@@ -309,6 +248,13 @@ I comandi sono i seguenti:
 /etc/init.d/nlserver6 start
 ```
 
+A partire da 20.1, si consiglia di utilizzare i seguenti comandi:
+
+```
+systemctl stop nlserver
+systemctl start nlserver
+```
+
 ### Client Oracle in Linux {#oracle-client-in-linux}
 
 Quando si utilizza Oracle con Adobe Campaign, è necessario configurare i livelli client Oracle in Linux.
@@ -340,7 +286,7 @@ Quando si utilizza Oracle con Adobe Campaign, è necessario configurare i livell
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Se si verifica un problema, verificare che i pacchetti elencati nella documentazione [di installazione di](http://www.oracle.com/pls/db112/portal.portal_db?selected=11) Oracle siano correttamente installati.
+Se si verifica un problema, verificare che i pacchetti elencati nella documentazione [di installazione di](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) Oracle siano correttamente installati.
 
 ## Controlli di installazione {#installation-checks}
 
