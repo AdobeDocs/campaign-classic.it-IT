@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Sono disponibili tre modalità di tracciamento Web: **&quot;Tracciamento della s
 
 Ogni modalità ha caratteristiche specifiche. La modalità di tracciamento Web &quot;permanente&quot; include le caratteristiche della modalità di tracciamento Web &quot;sessione&quot;, mentre la modalità &quot;anonima&quot; include le caratteristiche delle modalità &quot;permanente&quot; e &quot;sessione&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La modalità di tracciamento Web &quot;anonima&quot; è abilitata per impostazione predefinita se il pacchetto &quot;Lead&quot; è abilitato. In tutti gli altri casi, la modalità di tracciamento Web &quot;sessione&quot; è abilitata per impostazione predefinita.
 >
