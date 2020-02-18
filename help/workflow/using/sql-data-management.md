@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ L&#39;attività **SQL Data Management** consente di creare script SQL personaliz
 
 Prima di configurare l&#39;attività, accertatevi che siano soddisfatti i seguenti prerequisiti:
 
-* L&#39;attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell&#39;istanza (vedere [questa sezione](../../platform/using/accessing-an-external-database.md)).
+* L&#39;attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell&#39;istanza (vedere [questa sezione](../../platform/using/about-fda.md)).
 * Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA (per ulteriori informazioni sugli schemi di dati, consultare [questa sezione](../../configuration/using/about-schema-reference.md)).
 * L&#39;operatore che esegue il flusso di lavoro deve avere il **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nome right. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
