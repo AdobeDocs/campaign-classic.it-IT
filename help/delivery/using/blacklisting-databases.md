@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ Questi database sono denominati RBL (Real-time Blackhole Lists) e vengono consul
 * Per dominio mittente: elenca i domini del mittente (dominio completo dell&#39;indirizzo e-mail di rimbalzo) che inviano spam o che non sono configurati correttamente.
 * Per dominio Web: elenca i domini (domini di alto livello registrati con i registrar) che si trovano negli URL dei collegamenti e delle immagini contenuti nel contenuto spam. In Adobe Campaign, il dominio da prendere in considerazione è generalmente l&#39;indirizzo utilizzato per il tracciamento.
 
-Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più completo, fare riferimento al modulo [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) o [https://www.dnsstuff.com/](https://www.dnsstuff.com/) (sezione &quot;Strumenti IP&quot;, &quot;Ricerca nel database spam&quot;).
+Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più completo, fare riferimento al modulo [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (&quot;Ricerca nella lista nera degli spam&quot;).
 
 * **Spamhaus**
 
