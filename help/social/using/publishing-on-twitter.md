@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -100,7 +100,7 @@ La configurazione del tracciamento è la stessa di una distribuzione tramite e-m
 >
 >Nel modello di **[!UICONTROL Tweet]** consegna, il tracciamento è attivato per impostazione predefinita.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non riusciamo a distinguere tra robot che analizzano tweet e utenti che stanno cliccando.
 
@@ -134,7 +134,7 @@ Il **[!UICONTROL Synchronize Twitter accounts]** flusso di lavoro (fare riferime
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Affinché il flusso di lavoro possa recuperare l’elenco dei follower di Twitter, la **[!UICONTROL Synchronize Twitter accounts]** casella deve essere selezionata nella schermata Modifica del servizio collegato all’account. Per ulteriori informazioni, consulta: Delega [dell&#39;accesso in scrittura ad Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
@@ -181,7 +181,7 @@ Seleziona i follower a cui inviare il messaggio diretto.
 
    * Selezionate questa opzione **[!UICONTROL Twitter subscribers]** per inviare un messaggio diretto a tutti i follower dell&#39;account.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Non è possibile inviare più di 250 messaggi al giorno. Se il vostro account Twitter ha più di 250 follower, consigliamo vivamente di fornire ondate di messaggi. Ciò implica lo stesso processo delle comunicazioni e-mail. Fare riferimento a [questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
