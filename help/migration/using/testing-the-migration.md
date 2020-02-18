@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
 1. Se la migrazione dell&#39;ambiente di sviluppo ha esito positivo, è possibile migrare l&#39;ambiente di produzione.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >A causa delle modifiche apportate alla struttura dei dati, non è possibile importare ed esportare pacchetti di dati tra una piattaforma v5 e una piattaforma v7.
 
