@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -37,4 +37,4 @@ Connettore HTTP/2: è necessario consentire la comunicazione con e dai server se
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, vedere [Connettori](../../delivery/using/setting-up-mobile-app-channel.md#connectors).
+>Per ulteriori informazioni sui due connettori, consulta [Configurazione dell’applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
