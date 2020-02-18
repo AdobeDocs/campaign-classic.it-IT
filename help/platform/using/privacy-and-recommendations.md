@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
 
@@ -24,13 +24,21 @@ source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
 
 ## Informazioni sulla privacy e il consenso {#about-privacy-and-consent}
 
-Adobe Campaign è uno strumento potente per la raccolta e l&#39;elaborazione di una quantità estremamente elevata di dati, comprese informazioni personali. Incoraggiamo tutti gli utenti di Adobe Campaign a lavorare nell&#39;ambito della legislazione (DPA, CAN-SPAM, Direttiva Europea sulla Privacy e le Comunicazioni Elettroniche, GDPR Europea, ecc.), a fare un uso responsabile ed etico delle informazioni personali e ad astenersi dall&#39;inviare e-mail, notifiche push e messaggi SMS non richiesti (&quot;spam&quot;). Crediamo fermamente nei principi del marketing delle autorizzazioni per promuovere il valore e la fedeltà della vita dei clienti, e pertanto proibiamo severamente l&#39;uso di Adobe Campaign per inviare messaggi non richiesti.
+Adobe Campaign è uno strumento potente per la raccolta e l&#39;elaborazione di una quantità estremamente elevata di dati, comprese informazioni personali. Invitiamo tutti gli utenti di Adobe Campaign a lavorare nell&#39;ambito della legislazione (DPA, CAN-SPAM, Direttiva Europea sulla Privacy e le Comunicazioni Elettroniche, GDPR europea, CCPA, ecc.), a fare un uso responsabile ed etico delle informazioni personali e ad astenersi dall&#39;inviare e-mail, notifiche push e messaggi SMS non richiesti (&quot;spam&quot;). Crediamo fermamente nei principi del marketing delle autorizzazioni per promuovere il valore e la fedeltà della vita dei clienti, e pertanto proibiamo severamente l&#39;uso di Adobe Campaign per inviare messaggi non richiesti.
 
 Per ulteriori informazioni, consulta [privacy](https://www.adobe.com/privacy/marketing-cloud.html)di Adobe Experience Cloud.
 
-Adobe Campaign fornisce gli strumenti e le funzionalità, nonché le best practice, per aiutarti a rispettare la conformità ai requisiti GDPR quando utilizzi il nostro servizio. Fare riferimento a [questo documento](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
-
 Dedica il tempo a seguire l&#39;elenco [di controllo sulla](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) sicurezza e la privacy per scoprire gli elementi chiave da verificare in materia di sicurezza e privacy.
+
+## Gestione della privacy {#privacy-management}
+
+Il GDPR (General Data Protection Regulation, Regolamento generale sulla protezione dei dati) è la normativa dell’Unione europea sulla privacy che armonizza e aggiorna i requisiti in materia di protezione dei dati. Il Regolamento GDPR si applica ai clienti Adobe Campaign che detengono dati per i soggetti dati residenti nell&#39;UE.
+
+CCPA (California Consumer Privacy Act) offre ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone loro responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
+
+Oltre alla gestione del consenso, alle impostazioni di conservazione dei dati e alla gestione dei diritti, offriamo, in qualità di processore dati, funzionalità aggiuntive per facilitare la disponibilità del titolare del trattamento per determinate richieste di privacy.
+
+In questo [articolo](https://helpx.adobe.com/campaign/kb/acc-privacy.html), scoprirai in che modo Adobe Campaign ti aiuta a gestire le diverse funzionalità della chiave per la privacy: Diritto di accesso, Diritto di essere dimenticato, consenso, conservazione dei dati e ruoli utente. Troverai anche le best practice per aiutarti a rispettare la Privacy quando utilizzi il nostro servizio.
 
 ## Cookie e funzionalità di tracciamento {#cookies-and-tracking-capabilities}
 
