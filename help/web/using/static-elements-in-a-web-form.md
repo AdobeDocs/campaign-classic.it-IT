@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -64,7 +64,7 @@ Per aggiungere un collegamento ipertestuale, passare a **[!UICONTROL Static elem
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * Il **[!UICONTROL Label]** collegamento ipertestuale corrisponde al contenuto visualizzato nella pagina del modulo.
-* L’indirizzo **[!UICONTROL URL]** è quello desiderato, ad esempio: [https://www.adobe.com](https://www.adobe.com) per un sito Web o [mailto:info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
+* L’indirizzo **[!UICONTROL URL]** è quello desiderato, ad esempio: [https://www.adobe.com](https://www.adobe.com) per un sito Web o [info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
 * Il **[!UICONTROL Window]** campo consente di selezionare la modalità di visualizzazione del collegamento nel caso di un sito. È possibile aprire il collegamento in una nuova finestra, nella finestra corrente o in un&#39;altra.
 * È possibile aggiungere una descrizione comandi, come illustrato di seguito:
 
