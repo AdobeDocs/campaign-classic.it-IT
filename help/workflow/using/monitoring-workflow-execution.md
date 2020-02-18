@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ I supervisori del flusso di lavoro ricevono una notifica. Vengono notificati anc
 
 ## Filtrare i flussi di lavoro in base al loro stato{#filtering-workflows-status}
 
-L&#39;interfaccia di Campaign Classic consente di monitorare lo stato di esecuzione di tutti i flussi di lavoro sull&#39;istanza utilizzando **viste** predefinite. Per accedere a queste viste, aprire il nodo Stato **** Amministrazione **/** Audit **/** Flussi di lavoro.
+L&#39;interfaccia di Campaign Classic consente di monitorare lo stato di esecuzione di tutti i flussi di lavoro sull&#39;istanza utilizzando **viste** predefinite. Per accedere a queste viste, aprire il nodo **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
 
 Sono disponibili le seguenti viste:
 
-* **Esecuzione**: elenca tutti i flussi di lavoro in esecuzione.
-* **In pausa**: elenca tutti i flussi di lavoro in pausa.
-* **Non riuscito**: elenca tutti i flussi di lavoro con errore.
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**: elenca tutti i flussi di lavoro in esecuzione.
+* **[!UICONTROL Paused]**: elenca tutti i flussi di lavoro in pausa.
+* **[!UICONTROL Failed]**: elenca tutti i flussi di lavoro con errore.
+* **[!UICONTROL Start Pending]**: elenca tutti i flussi di lavoro in attesa di essere avviati dal processo operationMgt. Questa visualizzazione è disponibile solo con il pacchetto **Campagne** marketing (consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)standard per campagne).
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-Per impostazione predefinita, queste viste sono accessibili nella cartella **Audit**. Tuttavia, potete ricrearli nella posizione desiderata nella struttura delle cartelle. In questo modo, saranno disponibili per gli utenti standard senza diritto di amministrazione.
+Per impostazione predefinita, queste viste sono accessibili nella **[!UICONTROL Audit]** cartella. Tuttavia, potete ricrearli nella posizione desiderata nella struttura delle cartelle. In questo modo, saranno disponibili per gli utenti standard senza diritto di amministrazione.
 
 Per eseguire questa operazione:
 
 1. Fare clic con il pulsante destro del mouse sulla cartella in cui si desidera aggiungere la visualizzazione.
-1. In **Aggiungi nuova cartella**/**Amministrazione**, selezionate la visualizzazione da aggiungere.
+1. In **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]**, selezionate la visualizzazione da aggiungere.
 1. Una volta aggiunta la cartella alla struttura, accertatevi di configurarla come visualizzazione, in modo che visualizzi tutti i flussi di lavoro, indipendentemente dalla cartella di origine.Per ulteriori informazioni sulla configurazione delle viste, consultate [questa sezione](../../platform/using/access-management.md#adding-folders-and-creating-views).
 
 Inoltre, potete impostare delle cartelle di filtri che consentono di filtrare l’elenco dei flussi di lavoro in base al relativo stato di esecuzione. Per eseguire questa operazione:
@@ -293,6 +290,3 @@ Per ulteriori informazioni, consultare le sezioni seguenti:
 
 * [Creazione di filtri avanzati](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Salvataggio dei filtri](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
