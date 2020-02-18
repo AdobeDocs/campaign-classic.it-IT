@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## Creazione di una query {#creating-a-query}
 
 Una query consente di selezionare una destinazione in base ai criteri. È possibile associare un codice di segmento al risultato della query e inserirvi dati aggiuntivi.
+Per ulteriori informazioni sugli esempi di query, consultare [questa sezione](../../workflow/using/querying-recipient-table.md).
 
 >[!NOTE]
 >
->Gli esempi di query sono presentati in [questa sezione](../../workflow/using/querying-recipient-table.md).
+>Le attività di query non sono compatibili con i campi CLOB quando si utilizza Oracle.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ Per aggiungere una raccolta di informazioni collegate a una popolazione di desti
 
    * Se un singolo elemento della raccolta coincide con le condizioni di filtro per questa raccolta, selezionate **[!UICONTROL Single row]** nel **[!UICONTROL Data collected]** campo.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Questa modalità ottimizza la query SQL generata grazie a un giunzione diretta sugli elementi della raccolta.
       >
