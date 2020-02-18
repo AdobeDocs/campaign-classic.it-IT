@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Quando viene creata una query, i valori &quot;bound&quot; vengono sostituiti da 
 
 Per evitare il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; deve essere popolato con il valore &quot;true&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se la query include istruzioni &quot;order-by&quot; o &quot;group-by&quot;, i motori di database non saranno in grado di &quot;eseguire il binding&quot; dei valori. È necessario inserire l&#39;attributo @noSqlBind=&quot;true&quot; nelle istruzioni &quot;select&quot; e/o &quot;where&quot; della query.
 
