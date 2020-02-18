@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ Esempi:
 
 L&#39;attributo **xpath** punta al campo nello schema che si desidera indicizzare.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >È importante tenere presente che i miglioramenti delle prestazioni di lettura della query SQL forniti dagli indici generano anche un hit di prestazioni nella scrittura dei record. È pertanto opportuno utilizzare gli indici con cautela.
 
@@ -112,7 +112,7 @@ Esempio:
 
 In questo esempio, invece di consentire all&#39;attributo **@autopk** di creare una chiave primaria predefinita denominata &quot;id&quot;, stiamo specificando la chiave primaria &quot;familyId&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Durante la creazione di un nuovo schema o durante un&#39;estensione dello schema, è necessario mantenere lo stesso valore di sequenza della chiave primaria (@pkSequence) per l&#39;intero schema.
 
@@ -171,7 +171,7 @@ Esempio di un campo XML memorizzato anche in un campo SQL con attributo **@dataP
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Anche se la maggior parte degli attributi sono collegati in base a una cardinalità 1-1 a un campo fisico del database, ciò non vale per i campi XML o i campi calcolati.\
 >Un campo XML è memorizzato in un campo Memo (&quot;mData&quot;) della tabella.\
