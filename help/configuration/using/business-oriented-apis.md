@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ Le API business sono specifiche per ciascun tipo di oggetto. Hanno un effetto su
 
 In questa sezione viene illustrato l&#39;utilizzo dei servizi &quot;Subscribe&quot;, &quot;Unsubscription&quot; e &quot;SubmitDelivery&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[La documentazione](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
