@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ Le proprietà del modulo Web sono dettagliate in [questa pagina](../../web/using
 
 ## Definizione di impostazioni aggiuntive {#defining-additional-settings}
 
-La **[!UICONTROL Settings]** scheda consente di creare impostazioni aggiuntive per il rapporto: queste impostazioni verranno trasmesse all’URL durante la chiamata.
+La **[!UICONTROL Parameters]** scheda consente di creare impostazioni aggiuntive per il rapporto: queste impostazioni verranno trasmesse all’URL durante la chiamata.
 
 Le proprietà del modulo Web sono dettagliate in [questa pagina](../../web/using/about-web-forms.md).
 
@@ -110,6 +110,14 @@ Per creare una nuova impostazione:
    I dati vengono recuperati direttamente a livello di entità: **ctx/receive/@account**.
 
    L&#39; **[!UICONTROL Variable]** opzione consente di creare o selezionare una variabile che verrà passata come parametro dell&#39;URL e che può essere utilizzata nei filtri.
+
+Questo **[!UICONTROL Response HTTP headers]** consente di evitare il clic quando si inserisce la pagina del rapporto in una pagina HTML utilizzando iframe. Per evitare il clickjacking, potete scegliere il **[!UICONTROL X-Frame-options header]** comportamento:
+
+* **[!UICONTROL None]**: Il rapporto non avrà alcun risultato **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: Per impostazione predefinita, vengono creati nuovi rapporti e rapporti ripubblicati. Il nome host sarà uguale all&#39;URL del report.
+* **[!UICONTROL Deny]**: Il rapporto non può essere incluso in una pagina HTML utilizzando iframe.
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Aggiunta di variabili {#adding-variables}
 
