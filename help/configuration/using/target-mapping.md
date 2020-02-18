@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b3ab02d1fd90c3f14314508a8fa7d99df82436c
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -105,7 +105,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Adobe Campaign non supporta più schemi destinatari, noti come schemi di targeting, collegati agli stessi schemi di trasmissione e/o di tracciamento. In caso contrario si verificheranno successivamente delle anomalie nella riconciliazione dei dati. Per ulteriori informazioni, consultate la pagina [Raccomandazione e limitazioni](../../configuration/using/about-custom-recipient-table.md) .
 
