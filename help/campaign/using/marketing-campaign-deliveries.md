@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ La destinazione principale di una consegna può essere definita anche nel flusso
 
 La guida [Automazione con i flussi di lavoro](../../workflow/using/executing-a-workflow.md#architecture) include una descrizione dettagliata del funzionamento del modulo del flusso di lavoro.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nella stessa campagna, non potete impostare più di 28 flussi di lavoro. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
 
@@ -233,7 +233,7 @@ Per impostazione predefinita, la configurazione del gruppo di controllo definita
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Fare clic sulla **[!UICONTROL Control group]** scheda, quindi selezionare **[!UICONTROL Enable and edit control group configuration]**.
-1. Fare clic **[!UICONTROL Edit...]** per configurare il gruppo di controllo
+1. Fare clic **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
 
 La procedura di configurazione viene presentata in [Estrazione del gruppo di controllo dalla destinazione](#extracting-the-control-group-from-the-main-target) principale e [Aggiunta di una popolazione](#adding-a-population).
 
@@ -353,7 +353,7 @@ L&#39;estrazione del file avvia due operazioni: calcolo del budget e delle scort
 
 Potete associare vari documenti a una campagna: report, foto, pagina Web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Per collegare i documenti a una campagna, consultate [Aggiunta di documenti](#adding-documents).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questa modalità è riservata ai documenti di piccole dimensioni.
 
