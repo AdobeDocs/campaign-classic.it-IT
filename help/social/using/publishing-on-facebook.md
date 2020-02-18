@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Tuttavia è anche possibile utilizzare i filtri per l&#39;audience utilizzati da
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Utilizzate questa funzione con attenzione. Nei rapporti di consegna, l&#39; **[!UICONTROL Number of fans]** indicatore non terrà conto di questi filtri Facebook.
 >
@@ -115,7 +115,7 @@ Un tipo di stato fornito con un collegamento può contenere testo, immagini e un
 
 Immettete i vari campi:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Tutti gli URL devono iniziare con **&quot;http://&quot;** o **&quot;https://&quot;**.
 
@@ -136,7 +136,7 @@ Immettete i vari campi:
 
 1. Nel **[!UICONTROL Image]** campo, immettete l’URL dell’immagine che verrà visualizzata a sinistra della pubblicazione.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >L&#39;immagine deve essere ospitata su un sito Internet pubblico per poter essere caricata da Facebook.
 
