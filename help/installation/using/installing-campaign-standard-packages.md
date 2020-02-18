@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
 
 ---
 
@@ -210,7 +210,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Rendering inbox (IR)<br /> </td> 
    <td> Consente di visualizzare l'anteprima del messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto e di verificare la compatibilità nei principali desktop e applicazioni. Ti serve un account Litmus.<br /> </td> 
    <td> Marketing<br /> </td> 
-   <td> Facoltativo, <a href="../../delivery/using/about-deliverability.md#inbox-rendering">Ulteriori informazioni</a> </td> 
+   <td> Facoltativo, <a href="../../delivery/using/inbox-rendering.md">Ulteriori informazioni</a> </td> 
   </tr> 
   <tr> 
    <td> Marketing centrale/locale (Distributed Marketing)<br /> </td> 
@@ -250,9 +250,9 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
   </tr> 
   <tr> 
    <td> Privacy Data Protection<br /> </td> 
-   <td> Contiene funzionalità aggiuntive per aiutare i progetti a diventare conformi al GDPR in Campaign Classic.<br /> </td> 
+   <td> Contiene funzionalità aggiuntive per aiutarti a rispettare la privacy in Campaign Classic.<br /> </td> 
    <td> Tutto</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html">Ulteriori informazioni</a> </td> 
+   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Ulteriori informazioni</a> </td> 
   </tr> 
   <tr> 
    <td> Trasferisci a origine media <br /> </td> 
