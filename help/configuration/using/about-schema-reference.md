@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ Uno schema dati è identificato dal nome e dallo spazio dei nomi.
 
 Uno spazio dei nomi consente di raggruppare un set di schemi per area di interesse. Ad esempio, lo spazio dei nomi **focus** viene utilizzato per la configurazione specifica del cliente (**clienti**).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Come standard, il nome dello spazio nomi deve essere conciso e deve contenere solo caratteri autorizzati in conformità alle regole di denominazione XML.
 >
