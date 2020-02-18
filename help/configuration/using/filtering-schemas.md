@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -103,7 +103,7 @@ Per impostazione predefinita, gli schemi predefiniti sono accessibili solo con a
 * xtk:stringhe
 * xtk:xslt
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Le autorizzazioni di lettura e scrittura per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza di Adobe Campaign.
 
