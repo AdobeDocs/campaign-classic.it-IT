@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -26,10 +26,10 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Le fasi di migrazione in Linux sono le seguenti:
 
-1. Arresta servizi: vedi [arresto](#service-stop)del servizio,
-1. Salvate il database: vedere [Eseguire il backup del database e dell&#39;installazione](#back-up-the-database-and-the-existing-installation)esistente,
-1. Disinstallare i pacchetti precedenti della versione di Adobe Campaign: vedi [Disinstallazione dei pacchetti](#uninstalling-adobe-campaign-previous-version-packages)delle versioni precedenti di Adobe Campaign,
-1. Migra la piattaforma: fate riferimento alla [distribuzione di Adobe Campaign v7](#deploying-adobe-campaign-v7),
+1. Arresta servizi: vedete [Interruzione](#service-stop)del servizio.
+1. Salvate il database: vedete [Eseguire il backup del database e dell&#39;installazione](#back-up-the-database-and-the-existing-installation)esistente.
+1. Disinstallare i pacchetti precedenti della versione di Adobe Campaign: consultate [Disinstallazione dei pacchetti](#uninstalling-adobe-campaign-previous-version-packages)delle versioni precedenti di Adobe Campaign.
+1. Migra la piattaforma: fate riferimento a [Distribuzione di Adobe Campaign v7](#deploying-adobe-campaign-v7).
 1. Riavvia servizio: fare riferimento ai servizi [di](#re-starting-services)riavvio.
 
 ## Interruzione del servizio {#service-stop}
@@ -90,7 +90,7 @@ La procedura dipende dalla versione precedente di Adobe Campaign.
    mv nl5 nl5.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Come precauzione, consigliamo di comprimere la cartella **nl5.back** e salvarla in un percorso protetto diverso dal server.
 
@@ -125,7 +125,7 @@ La procedura dipende dalla versione precedente di Adobe Campaign.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Come precauzione, consigliamo di comprimere la cartella **nl6.back** e salvarla in un percorso protetto diverso dal server.
 
@@ -160,7 +160,7 @@ La procedura dipende dalla versione precedente di Adobe Campaign.
    mv nl6 nl6.back
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Come precauzione, consigliamo di comprimere la cartella **nl6.back** e salvarla in un percorso protetto diverso dal server.
 
@@ -264,15 +264,15 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-linux-2.6-intel.deb
+      dpkg -i nlserver6-XXXX-linux-2.6-intel.deb
       ```
 
    * In **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+      rpm -Uvh nlserver6-XXXX-0.x86_64.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >È necessario installare correttamente i pacchetti prima di passare al passaggio successivo.
 
@@ -308,13 +308,13 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
 1. Accedete come **root** e preparate l&#39;istanza utilizzando i seguenti comandi:
 
    ```
-   /etc/init.d/nlserver6-v7 start   
-   Starting nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 start   
+   Starting nlserver6: [  OK  ]
    ```
 
    ```
-   /etc/init.d/nlserver6-v7 stop
-   Stopping nlserver6-v7: [  OK  ]
+   /etc/init.d/nlserver6 stop
+   Stopping nlserver6: [  OK  ]
    ```
 
    >[!NOTE]
@@ -323,7 +323,7 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
 
 1. Passate alla cartella di backup **nl5.back** e copiate (sovrascrivete) i file di configurazione e le sottocartelle di ogni istanza. Accedete come **neolano** ed eseguite il comando seguente:
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Per il primo comando di seguito, non copiate il file **config-default.xml** .
 
@@ -348,7 +348,7 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Se il servizio **trackogd** non viene avviato sul server di tracciamento, non verranno inoltrate informazioni di tracciamento.
 
@@ -365,7 +365,7 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    nlserver config -timezone:<time zone> -postupgrade -instance:<instance name>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >È necessario specificare quale fuso orario utilizzare come riferimento durante l&#39;aggiornamento successivo (utilizzando l&#39;opzione **-timezone** ). In questo caso, utilizziamo il **fuso orario Europa/Parigi: &quot;Europa/Parigi&quot;**.
 
@@ -373,7 +373,7 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    >
    >Consigliamo vivamente di aggiornare la base a &quot;multi timezone&quot;. Per ulteriori informazioni sulle opzioni relative al fuso orario, consultate la sezione Fusi [orari](../../migration/using/general-configurations.md#time-zones) .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non avviare ancora i servizi Adobe Campaign: le modifiche devono ancora essere apportate ad Apache.
 
@@ -391,15 +391,15 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * In **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >È necessario installare correttamente i pacchetti prima di passare al passaggio successivo.
 
@@ -423,7 +423,7 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    <trackinglogd autoStart="true"/>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Se il servizio **trackogd** non viene avviato sul server di tracciamento, non verranno inoltrate informazioni di tracciamento.
 
@@ -469,15 +469,15 @@ Per distribuire Adobe Campaign, effettua i seguenti passaggi:
    * In **Debian**:
 
       ```
-      dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+      dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
    * In **Red Hat**:
 
       ```
-      rpm -Uvh nlserver6-v7-XXXX-x86_64_rhX.rpm
+      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >È necessario installare correttamente i pacchetti prima di passare al passaggio successivo.
 
@@ -563,13 +563,6 @@ A questo punto, Apache deve essere fermato. Consultare: Arresto [del](#service-s
    * In **Red Hat**:
 
       Andate alla directory **/usr/local/apache2/conf** , modificate il file **http.conf** e sostituite **nl5** con **nl6** nelle seguenti righe.
-
-      In **RHEL 6/Debian 7**:
-
-      ```
-      LoadModule requesthandler22_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
-      Include /usr/local/neolane/nl6/tomcat-6/conf/apache_neolane.conf
-      ```
 
       In **RHEL 7/Debian 8**:
 
