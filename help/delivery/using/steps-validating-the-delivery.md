@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -82,7 +82,7 @@ Questa scheda consente di accedere alle seguenti opzioni:
 
 * **[!UICONTROL Label and code of the delivery]** : le opzioni relative a questa sezione dello schermo vengono utilizzate per calcolare i valori di questi campi durante la fase di analisi del recapito. Il **[!UICONTROL Calculate the execution folder during the delivery analysis]** campo calcola il nome della cartella che conterrà questa azione di consegna durante la fase di analisi.
 * **[!UICONTROL Approval mode]** : questo campo consente di selezionare il tipo di approvazione della consegna. Le modalità di approvazione sono presentate nel processo di [convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico. Consente di migliorare notevolmente le prestazioni dell&#39;analisi di distribuzione quando vengono elaborati molti dati, soprattutto se i dati di personalizzazione provengono da una tabella esterna tramite FDA. Fare riferimento alla sezione [Accesso a un database esterno (FDA)](../../platform/using/accessing-an-external-database.md#optimizing-email-personalization-with-external-data) .
+* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico. Consente di migliorare notevolmente le prestazioni dell&#39;analisi di distribuzione quando vengono elaborati molti dati, soprattutto se i dati di personalizzazione provengono da una tabella esterna tramite FDA. Fare riferimento alla sezione [Accesso a un database esterno (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
 * **[!UICONTROL Start job in a detached process]** : Questa opzione consente di avviare l&#39;analisi della consegna in un processo separato. Per impostazione predefinita, la funzione di analisi utilizza il processo del server applicazione Adobe Campaign (web nlserver). Selezionando questa opzione, l&#39;analisi verrà completata anche in caso di errore del server applicazione.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : questa opzione aggiunge i registri query SQL al giornale di registrazione consegna durante la fase di analisi.
 * **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di bypassare l&#39;interpretazione delle direttive JavaScript presenti nel contenuto HTML. Vengono visualizzati così come sono nei contenuti consegnati. Queste direttive vengono introdotte con il tag **&lt;%=** ).
