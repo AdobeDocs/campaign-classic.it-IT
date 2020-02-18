@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 
 * **Errore** ignorato: gli errori ignorati non inviano un indirizzo alla quarantena.
 * **Errore** rigido: l&#39;indirizzo e-mail corrispondente viene inviato immediatamente alla quarantena.
-* **Errore** temporaneo: gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori. Quando il contatore di errori raggiunge la soglia limite, l&#39;indirizzo viene messo in quarantena. Nella configurazione predefinita, la soglia è impostata su cinque errori, dove due errori sono significativi se si verificano almeno 24 ore di differenza. L&#39;indirizzo viene messo in quarantena al sesto errore. È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, vedere [Riprova dopo un errore](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporaneo di consegna.
-
-   Quando una consegna ha esito positivo dopo un nuovo tentativo, viene reinizializzato il contatore di errori dell&#39;indirizzo precedente a quello messo in quarantena. Lo stato dell&#39;indirizzo diventa **Valido** e viene eliminato dall&#39;elenco delle quarantena dopo due giorni dal flusso di lavoro di pulizia **del** database.
+* **Errore** temporaneo: gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consultate Gestione [rapida degli errori](#soft-error-management).
 
 Se un utente qualifica un&#39;e-mail come spam (**Feedback loop**), il messaggio viene automaticamente reindirizzato verso una cassetta postale tecnica gestita da Adobe. L&#39;indirizzo e-mail dell&#39;utente viene quindi inviato automaticamente alla quarantena.
 
 Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano riassegnati in un secondo momento.
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### Gestione rapida degli errori {#soft-error-management}
+
+Invece di errori gravi, gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori.
+
+* Quando il contatore di errori raggiunge la soglia limite, l&#39;indirizzo viene messo in quarantena.
+* Nella configurazione predefinita, la soglia è impostata su cinque errori, dove due errori sono significativi se si verificano almeno 24 ore di differenza. L&#39;indirizzo viene messo in quarantena al sesto errore.
+* È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, vedere [Riprova dopo un errore](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporaneo di consegna.
+
+Il contatore di errori viene reinizializzato se l&#39;ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo diventa **Valido** e viene eliminato dall&#39;elenco delle quarantena dal flusso di lavoro di pulizia **del** database.
 
 ## quarantena delle notifiche push {#push-notification-quarantines}
 
