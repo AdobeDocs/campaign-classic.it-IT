@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -103,7 +103,7 @@ Una volta creato il profilo dell&#39;operatore, potete aggiungerne o aggiornarne
 
 >[!NOTE]
 >
->Il **[!UICONTROL Session timeout]** campo consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../platform/using/accessing-an-external-database.md#about-federated-data-access).
+>Il **[!UICONTROL Session timeout]** campo consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../platform/using/about-fda.md).
 
 ### Fuso orario dell&#39;operatore {#time-zone-of-the-operator}
 
