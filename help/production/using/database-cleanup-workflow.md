@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ Questa attività elimina tutte le consegne da eliminare o riciclare.
 
       dove **$(l)** è l&#39;identificatore della consegna.
 
-   * Nelle tabelle del registro di consegna (**NmsBroadlogXxx**), le eliminazioni di massa vengono eseguite in batch di 10.000 record.
-   * Nelle tabelle delle proposte di offerta (**NmsPropositionXxx**), le eliminazioni di massa vengono eseguite in batch di 10.000 record.
-   * Nelle tabelle del registro di monitoraggio (**NmsTrackinglogXxx**), le eliminazioni di massa vengono eseguite in batch di 5.000 record.
-   * Nella tabella del frammento di consegna (**NmsDeliveryPart**), le eliminazioni di massa vengono eseguite in batch di 5.000 record. Questa tabella contiene informazioni sulla personalizzazione dei messaggi rimanenti da inviare.
-   * Nella tabella del frammento di dati della pagina mirror (**NmsMirrorPageInfo**), le eliminazioni di massa vengono eseguite in batch di 5.000 record. Questa tabella contiene informazioni sulla personalizzazione su tutti i messaggi utilizzati per generare pagine mirror.
-   * Nella tabella di ricerca della pagina mirror (**NmsMirrorPageSearch**), le eliminazioni di massa vengono eseguite in batch di 5.000 record. Questa tabella è un indice di ricerca che fornisce l’accesso alle informazioni di personalizzazione memorizzate nella tabella **NmsMirrorPageInfo** .
-   * Nella tabella di registro del processo batch (**XtkJobLog**), le eliminazioni di massa vengono eseguite in batch di 5.000 record. Questa tabella contiene il registro delle consegne da eliminare.
+   * Nelle tabelle del registro di consegna (**NmsBroadlogXxx**), le eliminazioni di massa vengono eseguite in batch di 20.000 record.
+   * Nelle tabelle delle proposte di offerta (**NmsPropositionXxx**), le eliminazioni di massa vengono eseguite in batch di 20.000 record.
+   * Nelle tabelle del registro di monitoraggio (**NmsTrackinglogXxx**), le eliminazioni di massa vengono eseguite in batch di 20.000 record.
+   * Nella tabella del frammento di consegna (**NmsDeliveryPart**), le eliminazioni di massa vengono eseguite in batch di 500.000 record. Questa tabella contiene informazioni sulla personalizzazione dei messaggi rimanenti da inviare.
+   * Nella tabella del frammento di dati della pagina mirror (**NmsMirrorPageInfo**), le eliminazioni di massa vengono eseguite in batch di 20.000 record per le parti di consegna scadute e per quelle finite o annullate. Questa tabella contiene informazioni sulla personalizzazione su tutti i messaggi utilizzati per generare pagine mirror.
+   * Nella tabella di ricerca della pagina mirror (**NmsMirrorPageSearch**), le eliminazioni di massa vengono eseguite in batch di 20.000 record. Questa tabella è un indice di ricerca che fornisce l’accesso alle informazioni di personalizzazione memorizzate nella tabella **NmsMirrorPageInfo** .
+   * Nella tabella di registro del processo batch (**XtkJobLog**), le eliminazioni di massa vengono eseguite in batch di 20.000 record. Questa tabella contiene il registro delle consegne da eliminare.
    * Nella tabella di tracciamento URL di consegna (**NmsTrackingUrl**) viene utilizzata la seguente query:
 
       ```
@@ -576,6 +576,26 @@ Questa operazione elimina le tabelle di simulazione orfane (che non sono più co
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### Pulizia della traccia di controllo {#cleanup-of-audit-trail}
+
+Viene utilizzata la seguente query:
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+dove **$(tsDate)** è la data del server corrente dalla quale viene suddiviso il periodo definito per l&#39;opzione **XtkCleanup_AuditTrailPurgeDelay** .
+
+### Pulizia di Nmsaddress {#cleanup-of-nmsaddress}
+
+Viene utilizzata la seguente query:
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+Questa query elimina tutte le voci correlate a iOS e Android.
+
 ### Aggiornamento delle statistiche e ottimizzazione dello storage {#statistics-update}
 
 L’opzione **XtkCleanup_NoStats** consente di controllare il comportamento del passaggio di ottimizzazione dell’archiviazione del flusso di lavoro di pulizia.
@@ -590,13 +610,15 @@ Se il valore dell&#39;opzione è 2, verrà eseguita l&#39;analisi dello storage 
 
 Questa attività elimina tutte le sottoscrizioni relative ai servizi eliminati o alle applicazioni mobili.
 
-1. Per recuperare l’elenco degli schemi di trasmissione, viene utilizzata la seguente query:
+Per recuperare l’elenco degli schemi di trasmissione, viene utilizzata la seguente query:
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. L&#39;attività quindi recupera i nomi delle tabelle collegate al collegamento **appSubscription** ed elimina queste tabelle.
+L&#39;attività quindi recupera i nomi delle tabelle collegate al collegamento **appSubscription** ed elimina queste tabelle.
+
+Questo flusso di lavoro di pulizia elimina anche tutte le voci in cui disabilitato = 1 che non sono state aggiornate dall’ora impostata nell’opzione **NmsCleanup_AppSubscriptionRcpPurgeDelay** .
 
 ### Pulizia delle informazioni sulla sessione {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ Questa attività pulisce gli eventi ricevuti e memorizzati nelle istanze di esec
 ### Pulizia delle reazioni {#cleansing-reactions}
 
 Questo compito pulisce le reazioni (tabella **NmsRemaMatchRcp**) in cui le ipotesi sono state eliminate.
-
-### Pulizia della traccia di controllo {#cleanup-of-audit-trail}
-
-Viene utilizzata la seguente query:
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-dove **$(tsDate)** è la data del server corrente dalla quale viene suddiviso il periodo definito per l&#39;opzione **XtkCleanup_AuditTrailPurgeDelay** .
