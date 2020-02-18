@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ Potete specificare nello schema di origine il nome della sequenza da utilizzare 
 
 Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza negli schemi predefiniti. È ora possibile creare uno schema o estendere lo schema esistente con una sequenza dedicata.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Durante la creazione di un nuovo schema o durante un&#39;estensione dello schema, è necessario mantenere lo stesso valore di sequenza della chiave primaria (@pkSequence) per l&#39;intero schema.
 
@@ -346,7 +346,7 @@ Schema generato:
 
 Oltre alla definizione della chiave e del relativo indice, allo schema esteso è stato aggiunto un campo numerico denominato &quot;id&quot; per contenere la chiave primaria generata automaticamente.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Un record con una chiave primaria impostata su 0 viene inserito automaticamente al momento della creazione della tabella. Questo record viene utilizzato per evitare i join esterni, che non sono efficaci sulle tabelle dei volumi. Per impostazione predefinita, tutte le chiavi esterne sono inizializzate con il valore 0, in modo che sia sempre possibile restituire un risultato sul join quando l&#39;elemento dati non è popolato.
 
@@ -373,7 +373,7 @@ Per le relazioni di join mediante Federated Database Access:
 * ![](assets/join_fda_11.png) : Cardinalità 1-1
 * ![](assets/join_fda_1m.png) : Cardinalità 1-N
 
-Per ulteriori informazioni sulle tabelle FDA, vedere [Accesso a un database](../../platform/using/accessing-an-external-database.md)esterno.
+Per ulteriori informazioni sulle tabelle FDA, vedere [Accesso a un database](../../platform/using/about-fda.md)esterno.
 
 Un collegamento deve essere dichiarato nello schema contenente la chiave esterna della tabella collegata tramite l&#39;elemento principale:
 
