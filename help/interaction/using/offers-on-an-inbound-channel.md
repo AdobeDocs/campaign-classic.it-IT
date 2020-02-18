@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ Il sito Neobank vuole visualizzare un&#39;offerta sul suo sito Web rivolta ai vi
 
 Per impostare questa interazione, stiamo per:
 
-1. [Creare un ambiente](#creating-an-anonymous-environment)anonimo.
-1. [Creare spazi](#creating-anonymous-offer-spaces)di offerta anonimi.
-1. [Create una categoria di offerte e un tema.](#creating-an-offer-category-and-a-theme).
-1. [Creare offerte anonime.](#creating-anonymous-offers).
-1. [Configurate gli spazi delle offerte Web sul sito Web](#configure-the-web-offer-space-on-the-website).
+1. [Creare un ambiente anonimo](#creating-an-anonymous-environment)
+1. [Creare spazi di offerta anonimi](#creating-anonymous-offer-spaces)
+1. [Creare una categoria di offerte e un tema](#creating-an-offer-category-and-a-theme)
+1. [Creare offerte anonime.](#creating-anonymous-offers)
+1. [Configurare gli spazi di offerta Web nel sito Web](#configure-the-web-offer-space-on-the-website)
 
 ### Creazione di un ambiente anonimo {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Verrà visualizzata una struttura ad albero contenente il nuovo ambiente:
    * Titolo
    * Contenuto HTML
    * URL immagine
-   * URL di destinazione.
+   * URL di destinazione
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Modificate la funzione di rendering HTML, ad esempio come segue:
