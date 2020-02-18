@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ Puoi visualizzare i valori di questi parametri configurando l&#39;elenco del reg
 
 Nella configurazione del server, potete definire il numero massimo di caratteri da prendere in considerazione per i parametri di tracciamento Web.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;aumento del numero massimo di caratteri da prendere in considerazione può influenzare le prestazioni di monitoraggio Web della piattaforma.
 
@@ -76,15 +76,25 @@ Quando la configurazione è stata modificata, è necessario:
 
 * Arrestate il server Web che ospita il modulo di reindirizzamento (Apache, IIS, ecc.),
 * Arrestate il server Adobe Campaign: arresto **net nlserver6** in Windows, **/etc/init.d/nlserver6 arresto** in Linux,
+
+   >[!NOTE]
+   >
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di arresto **del sistema**
+
 * In Linux, eliminate i segmenti di memoria condivisa utilizzando il comando **ipcrm** ,
 * Riavvia il server Adobe Campaign: avvio **rete nlserver6** in Windows, avvio **** /etc/init.d/nlserver6 in Linux,
+
+   >[!NOTE]
+   >
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di avvio **del sistema**
+
 * Riavviate il server Web.
 
 **Esempio**: tenendo conto della configurazione in Linux.
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
