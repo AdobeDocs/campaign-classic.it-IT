@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -148,14 +148,14 @@ In questa scheda, specificate le date di esecuzione pianificate delle campagne i
 
 La modalità di configurazione del programma di esecuzione coincide con l&#39; **[!UICONTROL Scheduler]** oggetto Workflow. For more on this, refer to [this section](../../workflow/using/executing-a-workflow.md#architecture).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La configurazione del programma di esecuzione deve essere eseguita con attenzione per evitare il sovraccarico del database. Le campagne ricorrenti duplicano i flussi di lavoro del modello a seconda della pianificazione specificata. L&#39;attuazione di un flusso di lavoro eccessivamente frequente può ostacolare il funzionamento della banca dati.
 
 1. Specificate un valore nel **[!UICONTROL Create in advance for]** campo per creare i flussi di lavoro corrispondenti per il periodo indicato.
 1. Create il modello di workflow da utilizzare nelle campagne basate su questo modello, con i parametri di targeting e uno o più invii generici.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Questo flusso di lavoro deve essere salvato come modello di flusso di lavoro periodico. A questo scopo, modificate le proprietà del flusso di lavoro e selezionate l&#39; **[!UICONTROL Recurring workflow template]** opzione nella **[!UICONTROL Execution]** scheda.
 
@@ -174,7 +174,7 @@ Per creare la campagna ricorrente ed eseguirne i flussi di lavoro in base alla p
 
    Per ogni linea, puoi aggiungere le seguenti opzioni aggiuntive:
 
-   * **[!UICONTROL To be approved]** : consente di forzare le richieste di approvazione della consegna nel flusso di lavoro
+   * **[!UICONTROL To be approved]** : consente di forzare le richieste di approvazione della consegna nel flusso di lavoro.
    * **[!UICONTROL To be started]** : consente di avviare il flusso di lavoro una volta raggiunta la data di inizio.
    Il **[!UICONTROL Create in advance for]** campo consente di creare tutti i flussi di lavoro che coprono il periodo immesso.
 
@@ -211,7 +211,7 @@ Una campagna periodica è una campagna basata su un modello specifico che consen
 
 1. Immettete le proprietà del modello.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >L&#39;operatore a cui è assegnato il modello deve disporre dei diritti appropriati per creare campagne nel programma selezionato.
 
@@ -227,7 +227,7 @@ Una campagna periodica è una campagna basata su un modello specifico che consen
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >I modelli delle campagne periodiche creano nuove campagne in base alla pianificazione precedentemente definita. Deve pertanto essere completato con attenzione, per evitare di sovraccaricare il database di Adobe Campaign.
 
