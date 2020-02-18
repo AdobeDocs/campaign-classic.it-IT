@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
+source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
 
@@ -221,8 +221,8 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> Caratteri validi per un indirizzo e-mail.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td> 
-   <td> Consente di specificare un periodo massimo (espresso in ore) per limitare il numero di log recuperati ogni volta che viene eseguito il flusso di lavoro di sincronizzazione. Vedere <a href="../../platform/using/accessing-an-external-database.md#cloud-messaging---fda-synchronization">questa sezione</a>.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
+   <td> Consente di specificare un periodo massimo (espresso in ore) per limitare il numero di log recuperati ogni volta che viene eseguito il flusso di lavoro di sincronizzazione.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
