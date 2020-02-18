@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -141,7 +141,7 @@ Per impostazione predefinita sono disponibili i seguenti parametri:
 * **origine** per specificare l&#39;origine del convenuto.
 * **_uuid** consente la visualizzazione del modulo prima della pubblicazione e il tracciamento degli errori. Questo parametro è per uso interno (creazione e debug): quando si accede al modulo Web tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). L&#39;origine viene forzata al **[!UICONTROL Adobe Campaign]** valore.
 
-   Viene utilizzato con i parametri **_preview** e/o ** _debug**:
+   Viene utilizzato con i parametri **_preview** e/o **_debug**:
 
    **_anteprima** per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di prova.
 
