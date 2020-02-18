@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 Inizia con Adobe Campaign consultando le nostre intuitive guide dettagliate.
 
 * [Modifica del contenuto delle e-mail con Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): scopri le informazioni di base per iniziare a utilizzare l&#39;integrazione tra Adobe Campaign ed Experience Manager.
-* [Regolamento](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html)generale sulla protezione dei dati: scopri i contenuti forniti da Adobe Campaign Classic per aiutarti a rispettare i requisiti GDPR quando utilizzi il nostro servizio.
+* [Gestione](https://helpx.adobe.com/campaign/kb/acc-privacy.html)della privacy: scopri i contenuti forniti da Adobe Campaign Classic per aiutarti a rispettare la Privacy quando utilizzi il nostro servizio.
 * [Integrazione del contenuto dinamico in un messaggio e-mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): scoprite le basi per iniziare a utilizzare l&#39;integrazione tra Campaign Classic e Target Standard.
 * [Gestione della recapito](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): scopri i concetti e le best practice relativi alla recapito dei prodotti e gli strumenti offerti da Adobe Campaign Classic per ottimizzare l&#39;invio delle consegne.
 * [Best practice](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)per la distribuzione: scopri le best practice relative alla progettazione e all&#39;invio di consegne con Adobe Campaign Classic.
