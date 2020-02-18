@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -108,6 +108,10 @@ Per arrestare i servizi di Adobe Campaign, usa uno dei comandi seguenti:
       /etc/init.d/nlserver6 stop
       ```
 
+      >[!NOTE]
+      >
+      >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di arresto **del sistema**
+
    * In Windows:
 
       ```
@@ -127,6 +131,11 @@ Allo stesso modo, per riavviare Adobe Campaign puoi usare uno dei seguenti coman
 * Se disponete dell&#39;accesso principale o amministratore:
 
    * In Linux:/etc/init.d di avvio/nlserver6
+
+      >[!NOTE]
+      >
+      >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di avvio **del sistema**
+
    * In Windows:net start nlserver6
 
 * Altrimenti, nell&#39;account Adobe Campaign: watchdog **nlserver -svc -noconsole**
