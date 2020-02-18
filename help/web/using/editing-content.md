@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo nei blocch
 >Per ogni tipo di collegamento, puoi configurare la modalità di apertura: selezionate la finestra di destinazione nell&#39;elenco a discesa **Target** . Questo valore corrisponde al tag **`<target>`** HTML.
 >
 >L&#39;elenco delle **destinazioni** disponibili è il seguente:
-
+>
 >* Altro (IFrame)
 >* Finestra superiore (_top)
-* Finestra principale (_parent)
-* Nuova finestra (_blank)
-* Finestra corrente (_self)
-* Comportamento browser predefinito
+>* Finestra principale (_parent)
+>* Nuova finestra (_blank)
+>* Finestra corrente (_self)
+>* Comportamento browser predefinito
+>
 
 
 
@@ -170,7 +171,8 @@ Il **collegamento che definisce un&#39;opzione di azione** consente di configura
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-Le azioni disponibili sono descritte in [Aggiunta di un&#39;azione a una sezione di pulsante](#adding-an-action-to-a-button) .
+>
+>Le azioni disponibili sono descritte in [Aggiunta di un&#39;azione a una sezione di pulsante](#adding-an-action-to-a-button) .
 
 ### Eliminare un collegamento {#delete-a-link}
 
@@ -180,7 +182,8 @@ Quando è stato inserito un collegamento, la barra degli strumenti offre due nuo
 * **[!UICONTROL Break the link]** consente di eliminare, dopo la conferma, il collegamento e tutti i parametri correlati.
 
 >[!NOTE]
-Se il collegamento viene eliminato, il contenuto viene comunque mantenuto.
+>
+>Se il collegamento viene eliminato, il contenuto viene comunque mantenuto.
 
 ## Modifica degli attributi di font {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ Le opzioni disponibili sono le seguenti:
 * **Cambia icona colore** testo: consente di modificare il colore del testo del blocco selezionato o solo del testo selezionato (`<span style="color: #CODE">`)
 
 >[!NOTE]
-* **Icona Elimina** : elimina il blocco e tutto il relativo contenuto.
-
+>
+>* **Icona Elimina** : elimina il blocco e tutto il relativo contenuto.
+   >
+   >
 * **Icona duplicata** : duplica il blocco e tutti gli stili correlati al blocco.
 
 
@@ -223,7 +228,8 @@ Per essere compatibile con DCE, le animazioni **di tipo** &quot;Flash&quot; devo
 ```
 
 >[!CAUTION]
-Non è necessario richiamare file esterni in un tag **script** della pagina HTML. Questi file non verranno importati nel server Adobe Campaign.
+>
+>Non è necessario richiamare file esterni in un tag **script** della pagina HTML. Questi file non verranno importati nel server Adobe Campaign.
 
 ### Aggiunta/eliminazione/duplicazione di un’immagine {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ L’icona **Elimina** elimina il ![]() tag che contiene l’immagine.
 L’icona **Duplica** duplica il ![]() tag e il relativo contenuto.
 
 >[!CAUTION]
-Quando duplicate un’immagine, gli identificatori relativi alla nuova immagine vengono eliminati.
+>
+>Quando duplicate un’immagine, gli identificatori relativi alla nuova immagine vengono eliminati.
 
 ### Modifica delle proprietà immagine {#editing-image-properties}
 
