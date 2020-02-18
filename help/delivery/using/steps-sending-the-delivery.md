@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -42,7 +42,7 @@ Prima di inviare la consegna, potete definire i parametri di invio nelle proprie
    >
    >Quando la consegna viene duplicata, il parametro viene reimpostato.
 
-* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, vedere [Invio con più onde](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, vedere [Invio tramite più onde](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l&#39;invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP ma non viene inviata.
 
