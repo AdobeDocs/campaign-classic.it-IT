@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -171,7 +171,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **userEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;open&quot;. I valori dell&#39;enumerazione possono essere definiti dall&#39;utente nell&#39;interfaccia.
 * **visibleIf (stringa)**: definisce una condizione sotto forma di espressione XTK per mostrare o nascondere l&#39;attributo.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >L&#39;attributo è nascosto ma è ancora possibile accedervi.
 
