@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 78c94268723e172b4a4e3c3a965877978b075b82
+source-git-commit: 1206b2dcee8a4b0e95a005e47b947b00388e7e43
 
 ---
 
@@ -56,7 +56,7 @@ _17 febbraio 2020_
  <tbody> 
   <tr> 
    <td> <p>Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza di Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
-    <p>Per ulteriori informazioni, consulta la documentazione <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake"></a>dettagliata.</p>
+    <p>Per ulteriori informazioni, consultate la documentazione <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html."></a>tutorial.</p>
    </td> 
   </tr> 
  </tbody> 
