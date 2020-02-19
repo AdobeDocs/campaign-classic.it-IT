@@ -128,29 +128,29 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
 1. Eseguite il flusso di lavoro dall&#39;esempio precedente e sostituite lo script dell&#39;attività Codice **** JavaScript con il seguente script:
 
-   ```
-   instance.vars.foo = "bar1"
-   vars.foo = "bar2"
-   task.vars.foo = "bar3"
-   ```
+    ```
+    instance.vars.foo = "bar1"
+    vars.foo = "bar2"
+    task.vars.foo = "bar3"
+    ```
 
 1. Aggiungete lo script seguente allo script di inizializzazione dell&#39;attività **End** :
 
-   ```
-   logInfo("instance.vars.foo = " + instance.vars.foo)
-   logInfo("vars.foo = " + vars.foo)
-   logInfo("task.vars.foo = " + task.vars.foo)
-   ```
+    ```
+    logInfo("instance.vars.foo = " + instance.vars.foo)
+    logInfo("vars.foo = " + vars.foo)
+    logInfo("task.vars.foo = " + task.vars.foo)
+    ```
 
 1. Avviate il flusso di lavoro, quindi controllate il registro.
 
-   ```
-   Workflow finished
-   task.vars.foo = undefined
-   vars.foo = bar2
-   instance.vars.foo = bar1
-   Starting workflow (operator 'admin')
-   ```
+    ```
+    Workflow finished
+    task.vars.foo = undefined
+    vars.foo = bar2
+    instance.vars.foo = bar1
+    Starting workflow (operator 'admin')
+    ```
 
 Questo esempio mostra che l&#39;attività che segue il codice **** JavaScript accede alle variabili di istanza e di evento, ma le variabili di attività non sono accessibili dall&#39;esterno (&#39;undefined&#39;).
 
