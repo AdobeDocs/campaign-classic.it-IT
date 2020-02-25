@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8b836ca3179b85877ec917a3bf28c94dbbac7772
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -36,7 +36,7 @@ Per eseguire questa operazione:
 
 Il processo di configurazione per questa attività è simile a quello della creazione di un modello di consegna in termini di opzioni disponibili. For more on this, refer to this [section](../../delivery/using/about-templates.md).
 
-Per un esempio dell&#39;attività in uso, consultate questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Per un esempio dell&#39;attività in uso, consultate questa [sezione](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 >[!NOTE]
 >
