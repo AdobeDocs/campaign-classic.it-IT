@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -26,7 +26,7 @@ Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispond
 
 Una delle ragioni principali per utilizzarli è **la protezione** della mailing list. L&#39;inserimento di indirizzi iniziali nella mailing list consente di notare se viene utilizzato da un terzo, in quanto gli indirizzi iniziali che contiene riceveranno le consegne inviate alla mailing list.
 
-Inoltre, gli indirizzi iniziali consentono di **visualizzare in anteprima e verificare la personalizzazione e il rendering** delle consegne prima del loro invio, inviando loro le prove (vedere [Uso degli indirizzi iniziali come prova](../../delivery/using/steps-validating-the-delivery.md#using-seed-addresses-as-proof)).
+Inoltre, gli indirizzi iniziali consentono di **visualizzare in anteprima e verificare la personalizzazione e il rendering** delle consegne prima del loro invio, inviando loro le prove (vedere [Uso degli indirizzi iniziali come prova](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 La funzione degli indirizzi di base presenta i seguenti vantaggi:
 
