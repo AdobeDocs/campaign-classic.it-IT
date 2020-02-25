@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracciamento
 
 ## Come configurare la recapito delle e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla guida [introduttiva sulla](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)recapito, leggi la sezione sulla configurazione della recapito delle e-mail per comprendere come configurare la tua istanza per massimizzare le funzionalità di distribuzione delle campagne.
+Oltre alla guida [introduttiva sulla](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)recapito, leggi la sezione sulla configurazione della recapito delle e-mail per comprendere come configurare la tua istanza per massimizzare le funzionalità di distribuzione delle campagne.
 
 [Fai clic qui per saperne di più](../../installation/using/email-deliverability.md).
 
