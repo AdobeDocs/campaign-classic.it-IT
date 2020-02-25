@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: b7fa53a0463c5752a5fe4d11262dbf7b8ad77144
 
 ---
 
@@ -28,7 +28,7 @@ Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin
 
 ![](assets/data-model_documentation-tab.png)
 
-Per ulteriori informazioni sulla descrizione predefinita del modello Dati classici della campagna, consulta questo [documento](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
+Per ulteriori informazioni sulla descrizione predefinita del modello dati Campaign Classic, consulta questo [documento](https://final-docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html).
 
 La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta questa [sezione](../../configuration/using/about-schema-reference.md).
 
