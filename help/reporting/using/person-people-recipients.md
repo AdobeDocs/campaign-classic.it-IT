@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -32,7 +32,7 @@ Questo esempio ti aiuterà a capire la differenza tra una persona/una persona e 
 
 >[!NOTE]
 >
->Questi indicatori sono utilizzati nella **[!UICONTROL Tracking indicators]** relazione. Per ulteriori informazioni, vedere [Indicatori](#tracking-indicators)di tracciamento.
+>Questi indicatori sono utilizzati nella **[!UICONTROL Tracking indicators]** relazione. Per ulteriori informazioni, vedere [Indicatori](../../reporting/using/delivery-reports.md#tracking-indicators)di tracciamento.
 
 A una consegna vengono aggiunti tre collegamenti. Viene inviato a 4 destinatari:
 
