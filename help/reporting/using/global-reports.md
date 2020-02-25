@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ Per visualizzare i rapporti, fate clic sui relativi nomi. Per impostazione prede
 * **[!UICONTROL Sharing to social networks]** : fare riferimento a [Condivisione su social network](#sharing-to-social-networks).
 * **[!UICONTROL Statistics on sharing activities]** : fare riferimento a [Statistiche sulle attività](#statistics-on-sharing-activities)di condivisione.
 * **[!UICONTROL Operating systems]** : fare riferimento ai sistemi [](#operating-systems)operativi.
-* **[!UICONTROL URLs and click streams]** : fate riferimento agli [URL e fate clic sui flussi](#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : fare riferimento agli indicatori [di](#tracking-indicators)tracciamento.
+* **[!UICONTROL URLs and click streams]** : fate riferimento agli [URL e fate clic sui flussi](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : fare riferimento agli indicatori [di](../../reporting/using/delivery-reports.md#tracking-indicators)tracciamento.
 * **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a [Non risultati finali e rimbalzi](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : fare riferimento alle attività [](#user-activities)utente.
 * **[!UICONTROL Subscription tracking]** : fate riferimento al tracciamento [della](#subscription-tracking)sottoscrizione.
-* **[!UICONTROL Delivery summary]** : fare riferimento al riepilogo [](#delivery-summary)Consegna.
+* **[!UICONTROL Delivery summary]** : fare riferimento al riepilogo [](../../reporting/using/delivery-reports.md#delivery-summary)Consegna.
 * **[!UICONTROL Delivery statistics]** : fare riferimento alle statistiche sulla [consegna](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : fare riferimento a [Suddivisione delle aperture](#breakdown-of-opens).
 
@@ -64,7 +64,7 @@ Questo rapporto mostra la suddivisione di aperture, clic e transazioni per mezz&
 
 Sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Opens]** : Numero totale di messaggi aperti. Le e-mail in formato testo non vengono prese in considerazione. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](#tracking-opens-)di tracciamento.
+* **[!UICONTROL Opens]** : Numero totale di messaggi aperti. Le e-mail in formato testo non vengono prese in considerazione. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](../../reporting/using/indicator-calculation.md#tracking-opens-)di tracciamento.
 * **[!UICONTROL Clicks]** : Numero totale di clic sui collegamenti nelle consegne. I clic su collegamenti non in abbonamento e sulle pagine mirror non vengono presi in considerazione.
 * **[!UICONTROL Transactions]** : Numero totale di transazioni dopo la ricezione di un messaggio. Affinché una transazione possa essere presa in considerazione, è necessario inserire un tag webtracking di tipo transazione nella pagina Web corrispondente. La configurazione del tracciamento Web viene presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
 
@@ -302,7 +302,7 @@ Vengono utilizzati i seguenti indicatori:
 
 Questo rapporto mostra la suddivisione delle aperture per sistema operativo, dispositivo e browser per il periodo in questione. Per ciascuna categoria vengono utilizzati due grafici. Il primo visualizza le statistiche relative alle aperture su un computer e dispositivi mobili. Il secondo visualizza le statistiche relative solo alle aperture sui dispositivi mobili.
 
-Il numero di aperture corrisponde al numero totale di messaggi aperti. Le e-mail in formato testo non vengono conteggiate. Per ulteriori informazioni sulle aperture Tracciamento, fare riferimento alla sezione [Tracciamento delle aperture](#tracking-opens-) .
+Il numero di aperture corrisponde al numero totale di messaggi aperti. Le e-mail in formato testo non vengono conteggiate. Per ulteriori informazioni sulle aperture Tracciamento, fare riferimento alla sezione [Tracciamento delle aperture](../../reporting/using/indicator-calculation.md#tracking-opens-) .
 
 ![](assets/dlv_useragent_report.png)
 
