@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -28,7 +28,7 @@ Una condizione è un&#39;espressione JavaScript che deve essere valutata come &#
 
 ![](assets/edit_test.png)
 
-Per ulteriori informazioni su tutte le funzioni e i metodi SOAP JavaScript aggiuntivi del server applicativo accessibili tramite il flusso di lavoro JavaScript, consultare la documentazione [](http://docs.campaign.adobe.com/doc/AC/en/jsapi/p-1.html)JSAPI.
+Per ulteriori informazioni su tutte le funzioni e i metodi SOAP JavaScript aggiuntivi del server applicativo accessibili tramite il flusso di lavoro JavaScript, consultare la documentazione [](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)JSAPI.
 
 È inoltre possibile inserire le variabili direttamente da questo editor.
 
