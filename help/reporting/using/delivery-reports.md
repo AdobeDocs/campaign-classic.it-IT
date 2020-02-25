@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 ---
 
@@ -35,19 +35,19 @@ Puoi tenere traccia dell’esecuzione delle consegne tramite vari rapporti acces
 
    Per impostazione predefinita, sono disponibili i seguenti rapporti:
 
-   * **[!UICONTROL Delivery throughput]** : fare riferimento alla [consegna effettiva](#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : fare riferimento a [Condivisione su social network](#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : fare riferimento a [Statistiche sulle attività](#statistics-on-sharing-activities)di condivisione.
+   * **[!UICONTROL Delivery throughput]** : fare riferimento alla [consegna effettiva](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Sharing to social networks]** : fare riferimento a [Condivisione su social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistics on sharing activities]** : fare riferimento a [Statistiche sulle attività](../../reporting/using/global-reports.md#statistics-on-sharing-activities)di condivisione.
    * **[!UICONTROL Hot clicks]** : fare riferimento ai [clic](#hot-clicks)attivi.
    * **[!UICONTROL Tracking statistics]** : fare riferimento alle statistiche di [tracciamento](#tracking-statistics)
    * **[!UICONTROL URLs and click streams]** : fate riferimento agli [URL e fate clic sui flussi](#urls-and-click-streams).
    * **[!UICONTROL Tracking indicators]** : fare riferimento agli indicatori [di](#tracking-indicators)tracciamento.
-   * **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a [Non risultati finali e rimbalzi](#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : fare riferimento alle attività [](#user-activities)utente.
+   * **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a [Non risultati finali e rimbalzi](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL User activities]** : fare riferimento alle attività [](../../reporting/using/global-reports.md#user-activities)utente.
    * **[!UICONTROL Delivery summary]** : fare riferimento al riepilogo [](#delivery-summary)Consegna.
-   * **[!UICONTROL Subscription tracking]** : fate riferimento al tracciamento [della](#subscription-tracking)sottoscrizione.
-   * **[!UICONTROL Delivery statistics]** : fare riferimento alle statistiche sulla [consegna](#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : fare riferimento a [Suddivisione delle aperture](#breakdown-of-opens).
+   * **[!UICONTROL Subscription tracking]** : fate riferimento al tracciamento [della](../../reporting/using/global-reports.md#subscription-tracking)sottoscrizione.
+   * **[!UICONTROL Delivery statistics]** : fare riferimento alle statistiche sulla [consegna](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Breakdown of opens]** : fare riferimento a [Suddivisione delle aperture](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Indicatori di tracciamento {#tracking-indicators}
 
@@ -55,7 +55,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 
 >[!NOTE]
 >
->I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alle e-mail in formato testo. Gli **[!UICONTROL Distinct opens/Sum of opens for the population reached]** indicatori tengono conto di questo margine di errore. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](#tracking-opens-)di tracciamento.
+>I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alle e-mail in formato testo. Gli **[!UICONTROL Distinct opens/Sum of opens for the population reached]** indicatori tengono conto di questo margine di errore. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](../../reporting/using/indicator-calculation.md#tracking-opens-)di tracciamento.
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -78,7 +78,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari mirati, fare riferimento a Persone/destinatari [](#targeted-persons---recipients)mirati.
+   >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari mirati, fare riferimento a Persone/destinatari [](../../reporting/using/indicator-calculation.md#targeted-persons---recipients)mirati.
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -121,7 +121,7 @@ Questa tabella di valori mostra la suddivisione di consegne, aperture, clic e re
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-Questa sezione mostra il numero di messaggi condivisi su ogni social network. Per ulteriori informazioni, consulta [Condivisione su social network](#sharing-to-social-networks).
+Questa sezione mostra il numero di messaggi condivisi su ogni social network. Per ulteriori informazioni, consulta [Condivisione su social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
 
 ## URL e flussi di clic {#urls-and-click-streams}
 
@@ -137,7 +137,7 @@ Nella sezione superiore del rapporto vengono visualizzate le seguenti percentual
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](#tracking-opens-)di tracciamento.
+   >Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](../../reporting/using/indicator-calculation.md#tracking-opens-)di tracciamento.
 
 * **[!UICONTROL Distinct clicks]** : Numero di persone distinte che hanno fatto clic almeno una volta (escluso il collegamento e la pagina mirror di annullamento dell&#39;iscrizione) in una consegna. Il tasso visualizzato viene calcolato in base al numero di messaggi consegnati correttamente.
 * **[!UICONTROL Cumulated clicks]** : Numero totale di clic per destinatari con targeting (escluso collegamento e pagina mirror senza iscrizione). Il tasso visualizzato viene calcolato in base al numero di messaggi inoltrati correttamente.
@@ -199,6 +199,6 @@ Consente di monitorare l&#39;impatto di marketing della distribuzione. Potete co
 
 Questo rapporto fornisce una tabella di valori e un grafico Pareto che mostra il tempo necessario per la consegna per raggiungere la massima efficienza. Vengono utilizzati i seguenti indicatori:
 
-* **[!UICONTROL Opens]** : Stima del tempo necessario per raggiungere una percentuale del numero totale di messaggi aperti. Le e-mail in formato testo non vengono prese in considerazione. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](#tracking-opens-)di tracciamento.
+* **[!UICONTROL Opens]** : Stima del tempo necessario per raggiungere una percentuale del numero totale di messaggi aperti. Le e-mail in formato testo non vengono prese in considerazione. Per ulteriori informazioni sulle aperture di tracciamento, consultate [Aperture](../../reporting/using/indicator-calculation.md#tracking-opens-)di tracciamento.
 * **[!UICONTROL Clicks]** : Stima del tempo necessario per raggiungere una percentuale del numero totale di clic registrati. I clic sul collegamento di rifiuto e sulla pagina mirror non vengono presi in considerazione.
 * **[!UICONTROL Transactions]** : Tempo necessario per ottenere una percentuale del numero totale di transazioni successive alla ricezione dei messaggi. Affinché una transazione possa essere presa in considerazione, è necessario inserire un tag webtracking di tipo transazione nella pagina Web corrispondente. La configurazione del tracciamento Web viene presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
