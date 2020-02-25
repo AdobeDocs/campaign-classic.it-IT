@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71662675e347e5f5b289afa03e2898e6ce0ecaa9
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -26,7 +26,7 @@ Questa sezione descrive tutte le attività disponibili. A seconda del nodo o del
 
 Le attività del flusso di lavoro sono raggruppate per categoria. Contemporaneamente sono disponibili quattro schede.
 
-Nei flussi di lavoro della campagna, la **[!UICONTROL Events]** scheda viene sostituita dalla **[!UICONTROL Deliveries]** scheda. Le attività in questa scheda sono descritte in dettaglio nella sezione Attività [](#action-activities) azione.
+Nei flussi di lavoro della campagna, la **[!UICONTROL Events]** scheda viene sostituita dalla **[!UICONTROL Deliveries]** scheda. Le attività in questa scheda sono descritte in dettaglio nella sezione Attività [](../../workflow/using/about-action-activities.md) azione.
 
 ![](assets/wf-activity-tabs.png)
 
