@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ Se durante l&#39;aggiornamento successivo viene visualizzato un errore **ORA 018
 
 1. Accertatevi che i file del fuso orario siano identici su entrambi i server.
 
-Per maggiori informazioni, visita: [https://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm](http://download.oracle.com/docs/cd/E11882_01/server.112/e10729/ch4datetime.htm).
+Per maggiori informazioni, visita: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
 Un disallineamento del fuso orario tra client e server può anche causare dei ritardi. Per questo motivo, si consiglia di utilizzare la stessa versione di Oracle library sui lati client e server, entrambi i fusi orari devono essere identici.
 
