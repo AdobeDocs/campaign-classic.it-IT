@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -169,7 +169,6 @@ Come regola generale, devi installare il livello client corrispondente nel datab
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
-
 1. In Campaign Classic, configura il tuo account esterno Snowflake in Campaign Classic. Dal **[!UICONTROL Explorer]**, aprire il **[!UICONTROL Administration]** menu.
 
 1. Aprite il **[!UICONTROL Platform]** menu e fate clic su **[!UICONTROL External accounts]**.
@@ -393,7 +392,7 @@ Per ulteriori informazioni su come configurare il database esterno Hadoop in FDA
    User/Password: admin/<your password here>
    ```
 
-1. Create l&#39;account esterno Hadoop, come illustrato nella sezione [Creazione di una connessione](#creating-a-shared-connection) condivisa.
+1. Create l&#39;account esterno Hadoop, come illustrato nella sezione [Creazione di una connessione](../../message-center/using/creating-a-shared-connection.md) condivisa.
 
 ### Per Linux {#for-linux}
 
@@ -448,7 +447,7 @@ Per ulteriori informazioni su come configurare il database esterno Hadoop in FDA
    >
    >Il parametro **UseNativeQuery** è molto importante. Campaign è consapevole dell&#39;Hive e non funzionerà correttamente se non viene impostato UseNativeQuery. In genere, il driver o il connettore Hive SQL riscrive le query e altera l&#39;ordine delle colonne.
 
-   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizzate AuthMech=6 per l’autenticazione utente/password, come descritto [qui](http://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizzate AuthMech=6 per l’autenticazione utente/password, come descritto [qui](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Esportare le variabili.
 
@@ -480,7 +479,7 @@ Per ulteriori informazioni su come configurare il database esterno Hadoop in FDA
    isql vorac -v
    ```
 
-1. Create l&#39;account esterno Hadoop, come illustrato nella sezione [Creazione di una connessione](#creating-a-shared-connection) condivisa.
+1. Create l&#39;account esterno Hadoop, come illustrato nella sezione [Creazione di una connessione](../../message-center/using/creating-a-shared-connection.md) condivisa.
 
 ## Configurare l&#39;accesso a Netezza {#configure-access-to-netezza}
 
@@ -529,7 +528,7 @@ La connessione a un database esterno di Netezza in FDA richiede configurazioni a
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: posizione del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
-1. Create l&#39;account esterno di Netezza, come illustrato nella sezione [Creazione di una connessione](#creating-a-shared-connection) condivisa.
+1. Create l&#39;account esterno di Netezza, come illustrato nella sezione [Creazione di una connessione](../../message-center/using/creating-a-shared-connection.md) condivisa.
 
 >[!NOTE]
 >
@@ -625,7 +624,7 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
    * Se utilizzi un file customer.sh per dichiarare il percorso: aggiungete il percorso /opt/sybase/IQ-16_0/lib64 per la variabile LD_LIBRARY_PATH.
    * In caso contrario, utilizzare un comando Unix.
 
-1. Create un nuovo account esterno FDA, come descritto nella sezione [Creazione di una connessione](#creating-a-shared-connection) condivisa. Per Sybase IQ, il nome del server corrisponde alla connessione ODBC (`<server_alias>`) definita al punto 5. Non è necessariamente il nome del server stesso.
+1. Create un nuovo account esterno FDA, come descritto nella sezione [Creazione di una connessione](../../message-center/using/creating-a-shared-connection.md) condivisa. Per Sybase IQ, il nome del server corrisponde alla connessione ODBC (`<server_alias>`) definita al punto 5. Non è necessariamente il nome del server stesso.
 
 >[!NOTE]
 >
@@ -635,7 +634,7 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
 
 La connessione a un database esterno Teradata in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign. Per ulteriori informazioni su come configurare il database Teradata, consulta questo [articolo](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html).
 
-1. Installare il driver [ODBC per Teradata](http://downloads.teradata.com/download/connectivity/odbc-driver/linux).
+1. Installare il driver [ODBC per Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
    È composto da tre pacchetti che possono essere installati su Red Hat (o CentOS)/Suse nell&#39;ordine seguente:
 
@@ -712,4 +711,4 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
    * **LD_LIBRARY_PATH**: Deve includere il collegamento al client SAP Hana (per impostazione predefinita, /usr/sap/hdbclient/libodbcHDB.so).
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
 
-1. Create l&#39;account esterno SAP Hana, come illustrato nella sezione [Creazione di una connessione](#creating-a-shared-connection) condivisa.
+1. Create l&#39;account esterno SAP Hana, come illustrato nella sezione [Creazione di una connessione](../../message-center/using/creating-a-shared-connection.md) condivisa.
