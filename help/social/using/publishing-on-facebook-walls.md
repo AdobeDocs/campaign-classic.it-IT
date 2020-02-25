@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ Per iniziare, create un account Facebook e diverse pagine: verranno utilizzati p
 
 ## Creazione di una pagina Facebook di prova {#creating-a-test-facebook-page}
 
-È consigliabile creare una pagina Facebook privata per la distribuzione delle prove di pubblicazione (per ulteriori informazioni, vedere [Invio delle prove](#sending-the-proof)).
+È consigliabile creare una pagina Facebook privata per la distribuzione delle prove di pubblicazione (per ulteriori informazioni, vedere [Invio delle prove](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Accedete all&#39;account Facebook che utilizzate per amministrare le pagine.
 1. Create una nuova pagina Facebook.
