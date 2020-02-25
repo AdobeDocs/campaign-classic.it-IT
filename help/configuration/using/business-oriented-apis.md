@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -45,7 +45,7 @@ In questa sezione viene illustrato l&#39;utilizzo dei servizi &quot;Subscribe&qu
 
 >[!IMPORTANT]
 >
->[La documentazione](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
+>[La documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
 ## Iscrizione (nms:iscrizione) {#subscribe--nms-subscription-}
 
