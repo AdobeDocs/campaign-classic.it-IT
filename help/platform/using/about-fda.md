@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
+source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
 
 ---
 
@@ -35,11 +35,11 @@ L&#39;opzione FDA consente di estendere il modello dati in un database di terze 
 
 Per utilizzare questa funzionalità, è necessario:
 
-1. Disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign. L&#39;elenco dei sistemi di database e delle versioni compatibili è dettagliato nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità. Gli utenti devono anche disporre delle autorizzazioni [](#remote-database-access-rights) necessarie in Adobe Campaign e nel database esterno.
-1. [Installate i driver](#specific-configurations-by-database-type) corrispondenti al database sul server Adobe Campaign.
-1. [Crea e configura un account](#connecting-to-the-database) esterno che consente di stabilire la connessione tra Adobe Campaign e il database esterno. Per ulteriori informazioni sugli account esterni disponibili, fare riferimento a questa [pagina](../../platform/using/external-accounts.md).
-1. [Crea lo schema](#creating-the-data-schema) del database esterno in Adobe Campaign. Questo consente di riconoscere la struttura dati del database esterno.
-1. Alla fine, [create una nuova mappatura](#defining-data-mapping) di destinazione dallo schema creato in precedenza, nel caso in cui i destinatari delle consegne provengano dal database esterno. Ciò presenta alcune limitazioni, in particolare per quanto riguarda la personalizzazione delle consegne.
+1. Disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign. L&#39;elenco dei sistemi di database e delle versioni compatibili è dettagliato nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità. Gli utenti devono anche disporre delle autorizzazioni [](../../platform/using/remote-database-access-rights.md) necessarie in Adobe Campaign e nel database esterno.
+1. [Installate i driver](../../platform/using/specific-configuration-database.md) corrispondenti al database sul server Adobe Campaign.
+1. [Crea e configura un account](../../platform/using/connecting-to-database.md) esterno che consente di stabilire la connessione tra Adobe Campaign e il database esterno. Per ulteriori informazioni sugli account esterni disponibili, fare riferimento a questa [pagina](../../platform/using/external-accounts.md).
+1. [Crea lo schema](../../platform/using/creating-data-schema.md) del database esterno in Adobe Campaign. Questo consente di riconoscere la struttura dati del database esterno.
+1. Alla fine, [create una nuova mappatura](../../platform/using/defining-data-mapping.md) di destinazione dallo schema creato in precedenza, nel caso in cui i destinatari delle consegne provengano dal database esterno. Ciò presenta alcune limitazioni, in particolare per quanto riguarda la personalizzazione delle consegne.
 
 Una volta creato lo schema dati, i dati possono essere elaborati nei flussi di lavoro Adobe Campaign. For more on this, refer to [this section](../../workflow/using/executing-a-workflow.md#architecture).
 
