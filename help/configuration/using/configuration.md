@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del **`<soapcall>`** tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API SOAP, consultate la documentazione [JSAPI per](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign.
+La presenza facoltativa del **`<soapcall>`** tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API SOAP, consultate la documentazione [JSAPI per](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign.
 
 Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal **`<enter>`** tag . Per ulteriori informazioni su questo tag, consultare la documentazione relativa ai moduli di input.
 
@@ -269,7 +269,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del **`<soapcall>`** tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, consulta la documentazione [JSAPI di](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign.
+La presenza facoltativa del **`<soapcall>`** tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, consulta la documentazione [JSAPI di](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign.
 
 Il contesto del modulo può essere aggiornato in fase di inizializzazione tramite il **`<enter>`** tag . Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input.
 
