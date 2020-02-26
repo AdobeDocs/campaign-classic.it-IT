@@ -16,7 +16,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -29,7 +29,7 @@ La finestra di modifica DCE è suddivisa in tre diverse sezioni. Consentono di v
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. La sezione **superiore** è un&#39;area di visualizzazione per i messaggi all&#39;utente. Questi messaggi indicano lo stato dell&#39;applicazione Web o la consegna in fase di creazione, nonché gli avvisi e i messaggi di errore relativi al contenuto. Per ulteriori informazioni, consultate gli stati del contenuto [HTML](#html-content-statuses).
+1. La sezione **superiore** è un&#39;area di visualizzazione per i messaggi all&#39;utente. Questi messaggi indicano lo stato dell&#39;applicazione Web o la consegna in fase di creazione, nonché gli avvisi e i messaggi di errore relativi al contenuto. Per ulteriori informazioni, consultate gli stati del contenuto [HTML](../../web/using/content-editing-best-practices.md#html-content-statuses).
 1. La sezione a **sinistra** della finestra è l’area da cui modificare il contenuto. Da questa area, l&#39;utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti a comparsa: inserire un collegamento in un&#39;immagine, modificare il font, eliminare un campo e così via. Per ulteriori informazioni, vedere [Modifica dei moduli](../../web/using/editing-content.md#editing-forms).
 1. La sezione a **destra** della finestra è l&#39;area del pannello di controllo. Quest&#39;area raggruppa le diverse opzioni per l&#39;editor, in particolare quelle relative alla configurazione dell&#39;intestazione di pagina e delle opzioni generali per un blocco: aggiungere un bordo, collegare un campo di database con un&#39;area di input, accedere alle proprietà della pagina Web, ecc. Per ulteriori informazioni, consultare le sezioni Opzioni [](#global-options) globali e [Modifica del contenuto](../../web/using/editing-content.md) .
 
