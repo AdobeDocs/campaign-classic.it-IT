@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -376,7 +376,7 @@ Potete aggiungere un campo di caricamento a una pagina. Questa funzionalità pu�
 
 Per inserire un campo di caricamento in una pagina del modulo, selezionate il **[!UICONTROL Advanced controls > File...]** menu nella barra degli strumenti dell’editor pagina.
 
-Per impostazione predefinita, i file caricati sono memorizzati in file di risorse accessibili tramite il **[!UICONTROL Resources > Online > Public resources]** menu. È possibile utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella documentazione [JSAPI di](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)Campaign, incluse quelle relative alla manipolazione dei file.
+Per impostazione predefinita, i file caricati sono memorizzati in file di risorse accessibili tramite il **[!UICONTROL Resources > Online > Public resources]** menu. È possibile utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella documentazione [JSAPI di](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign, incluse quelle relative alla manipolazione dei file.
 
 È possibile memorizzare il collegamento a questi file in una variabile locale o in un campo del database. Ad esempio, è possibile estendere lo schema del destinatario per aggiungere un collegamento a risorse basate su file.
 
