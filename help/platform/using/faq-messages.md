@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Scopri come tenere traccia delle consegne e comprendere il comportamento dei des
 
 Adobe Campaign viene fornito con una serie di rapporti per monitorare le consegne e tenere traccia dei messaggi.
 
-[Fai clic qui per saperne di più sui report](../../reporting/using/reports-on-deliveries.md#delivery-reports)incorporati.
+[Fai clic qui per saperne di più sui report](../../reporting/using/delivery-reports.md)incorporati.
 
 ### In che modo Adobe Campaign qualifica e gestisce gli indirizzi di quarantena? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
