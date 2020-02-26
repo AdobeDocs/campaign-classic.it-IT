@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ Questo tipo di configurazione può gestire un numero elevato di destinatari (da 
 
 ### Installazione del server applicazione {#installing-the-application-server}
 
-Segui i passaggi per installare un’istanza autonoma dal server delle applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fare riferimento a [Installazione e configurazione (computer singolo)](#installing-and-configuring--single-machine-).
+Segui i passaggi per installare un’istanza autonoma dal server delle applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fare riferimento a [Installazione e configurazione (computer singolo)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Poiché il computer non è un server di tracciamento, non tenete conto dell&#39;integrazione con il server Web.
 
