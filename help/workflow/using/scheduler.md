@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ Una procedura guidata consente di definire la frequenza e il periodo di validit�
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-L&#39;utilizzo di un&#39;attività del pianificatore potrebbe causare l&#39;esecuzione simultanea di diverse esecuzioni di un flusso di lavoro. Ad esempio, è possibile avere un pianificatore che attiva l&#39;esecuzione del flusso di lavoro ogni ora, ma a volte l&#39;esecuzione dell&#39;intero flusso di lavoro richiede più di un&#39;ora. È possibile saltare l&#39;esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come impedire l&#39;esecuzione simultanea di un flusso di lavoro, vedere [questa pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution).
+L&#39;utilizzo di un&#39;attività del pianificatore potrebbe causare l&#39;esecuzione simultanea di diverse esecuzioni di un flusso di lavoro. Ad esempio, è possibile avere un pianificatore che attiva l&#39;esecuzione del flusso di lavoro ogni ora, ma a volte l&#39;esecuzione dell&#39;intero flusso di lavoro richiede più di un&#39;ora. È possibile saltare l&#39;esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come impedire l&#39;esecuzione simultanea di un flusso di lavoro, vedere [questa pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 Si noti inoltre che la transizione può essere attivata diverse ore dopo se il flusso di lavoro eseguiva un&#39;attività a lungo termine, come un&#39;importazione, o se il modulo wfserver è stato arrestato per un periodo di tempo. In questo caso, potrebbe essere necessario limitare l&#39;esecuzione dell&#39;attività attivata dal pianificatore a un determinato intervallo di tempo.
