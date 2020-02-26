@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ Per abilitare una connessione al database esterno, è necessario indicare i para
 
 >[!CAUTION]
 >
->L&#39;utente Adobe Campaign necessita di diritti specifici per il database esterno e il server delle applicazioni Adobe Campaign per elaborare i dati da un database esterno. Per ulteriori informazioni, consulta la sezione Diritti [di accesso al database](#remote-database-access-rights) remoto.
+>L&#39;utente Adobe Campaign necessita di diritti specifici per il database esterno e il server delle applicazioni Adobe Campaign per elaborare i dati da un database esterno. Per ulteriori informazioni, consulta la sezione Diritti [di accesso al database](../../platform/using/remote-database-access-rights.md) remoto.
 >
 >Per evitare qualsiasi malfunzionamento, gli operatori che accedono ai dati condivisi remoti devono utilizzare spazi separati.
 
@@ -38,7 +38,7 @@ Per abilitare una connessione a un database esterno condiviso, finché la connes
 1. Fare clic sul **[!UICONTROL New]** pulsante e selezionare il **[!UICONTROL External database]** tipo.
 1. Definire i **[!UICONTROL Connection]** parametri del database esterno.
 
-   Per le connessioni a un database di tipo **ODBC** , il **[!UICONTROL Server]** campo deve contenere il nome dell&#39;origine dati ODBC e non il nome del server. Inoltre, alcune configurazioni aggiuntive possono essere necessarie a seconda dei database utilizzati. Fare riferimento alla sezione Configurazioni [specifiche per tipo](#specific-configurations-by-database-type) di database.
+   Per le connessioni a un database di tipo **ODBC** , il **[!UICONTROL Server]** campo deve contenere il nome dell&#39;origine dati ODBC e non il nome del server. Inoltre, alcune configurazioni aggiuntive possono essere necessarie a seconda dei database utilizzati. Fare riferimento alla sezione Configurazioni [specifiche per tipo](../../platform/using/specific-configuration-database.md) di database.
 
 1. Una volta inseriti i parametri, fate clic sul **[!UICONTROL Test the connection]** pulsante per approvarli.
 
