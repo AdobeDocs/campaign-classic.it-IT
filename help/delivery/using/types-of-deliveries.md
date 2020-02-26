@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -38,7 +38,7 @@ Una consegna **** periodica consente di creare una nuova consegna ogni volta che
 
 Ad esempio, se esegui questo tipo di attività una volta al mese, alla fine avrai 12 consegne dopo un anno.
 
-Le consegne ricorrenti vengono create all&#39;interno dei flussi di lavoro tramite l&#39;attività [di consegna](../../workflow/using/recurring-delivery.md)ricorrente. Un esempio di questa attività utilizzata è presentato in questa sezione: [Creazione di una consegna periodica in un flusso di lavoro](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-recurring-delivery-in-a-targeting-workflow)di targeting.
+Le consegne ricorrenti vengono create all&#39;interno dei flussi di lavoro tramite l&#39;attività [di consegna](../../workflow/using/recurring-delivery.md)ricorrente. Un esempio di questa attività utilizzata è presentato in questa sezione: [Creazione di una consegna periodica in un flusso di lavoro](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow)di targeting.
 
 ## Consegna continua {#continuous-delivery}
 
