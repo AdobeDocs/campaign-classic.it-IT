@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -72,7 +72,7 @@ Iniziate creando una nuova consegna.
    >
    >**[!UICONTROL Badge]** e le notifiche **[!UICONTROL Alert and badge]** tipo consentono di modificare il valore del contrassegno (il numero sopra il logo dell’applicazione mobile). Per aggiornare il contrassegno, è sufficiente immettere 0 come valore. Se il campo è vuoto, il valore del contrassegno non viene modificato.
 
-1. Consente di **[!UICONTROL Action button]** definire un&#39;etichetta per il pulsante di azione visualizzato sulle notifiche di avviso (campo **action_loc_key** del payload). Se l&#39;applicazione iOS gestisce stringhe localizzabili (**Localizable.strings**), immettere la chiave corrispondente in questo campo. Se l&#39;applicazione non gestisce il testo localizzabile, immettere l&#39;etichetta che si desidera visualizzare sul pulsante dell&#39;azione. Per ulteriori informazioni sulle stringhe localizzabili, consulta la documentazione [](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.md#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple.
+1. Consente di **[!UICONTROL Action button]** definire un&#39;etichetta per il pulsante di azione visualizzato sulle notifiche di avviso (campo **action_loc_key** del payload). Se l&#39;applicazione iOS gestisce stringhe localizzabili (**Localizable.strings**), immettere la chiave corrispondente in questo campo. Se l&#39;applicazione non gestisce il testo localizzabile, immettere l&#39;etichetta che si desidera visualizzare sul pulsante dell&#39;azione. Per ulteriori informazioni sulle stringhe localizzabili, consulta la documentazione [](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple.
 1. Nel **[!UICONTROL Play a sound]** campo, selezionate l&#39;audio che deve essere riprodotto dal terminale mobile al ricevimento della notifica.
 
    >[!NOTE]
