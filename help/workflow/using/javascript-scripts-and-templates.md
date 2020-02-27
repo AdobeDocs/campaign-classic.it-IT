@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -114,7 +114,9 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
 1. All&#39;interno della sezione dello script di inizializzazione della scheda Avanzate dell&#39;attività Split, definire una condizione JS. La condizione JS seleziona la percentuale di campionamento casuale della prima transizione proveniente dall&#39;attività Split e la aggiorna a un valore impostato dalla variabile di istanza creata in precedenza.
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
 1. Eseguite il flusso di lavoro dall&#39;esempio precedente e sostituite lo script dell&#39;attività Codice **** JavaScript con il seguente script:
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. Aggiungete lo script seguente allo script di inizializzazione dell&#39;attività **End** :
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. Avviate il flusso di lavoro, quindi controllate il registro.
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 Questo esempio mostra che l&#39;attività che segue il codice **** JavaScript accede alle variabili di istanza e di evento, ma le variabili di attività non sono accessibili dall&#39;esterno (&#39;undefined&#39;).
 
