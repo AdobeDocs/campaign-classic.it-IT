@@ -15,36 +15,53 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
 
 # Release 19.1{#release-19-1}
 
-## Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+[Genera aggiornamento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) controllo| Aggiornamenti [alla](../../rn/using/documentation-updates.md) documentazione| [Versioni](../../rn/using/release--19-1.md) precedenti| Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td><img src="assets/green3.png"/><strong>Disponibilità generale</strong></td>
+   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/orange3.png"/><strong>Non più disponibile</strong></td> 
+   <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
+  </tr> 
+   <tr> 
+   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
+   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
+   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
+   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+L&#39; **ultima build** stabile è 9032 (205c981c3). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## ![](assets/orange_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
 >Questa build è solo per installazioni locali. Per le distribuzioni ibride, le istanze ospitate continueranno a eseguire la build 9032. Non aggiornare l&#39;istanza di marketing alla build 9035 perché non è compatibile con 9032.
 
-3 ottobre 2019
+_3 ottobre 2019_
 
 **Miglioramenti**
 
 * È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
 * È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
 * È stato risolto un problema di prestazioni durante l&#39;invio dei messaggi. (NEO-17558)
-* È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di Media Source. (NEO-12395)
+* È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di origine mid-Sourcing. (NEO-12395)
 * È stato risolto un problema che impediva l&#39;uso completo dell&#39;attività di gestione dati SQL (manca la &quot;gestione dati SQL&quot; denominata right).
 
-## Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-13 agosto 2019
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+_13 agosto 2019_
 
 **Miglioramenti**
 
@@ -57,43 +74,31 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-**17 dicembre 2019**: nuova build (9032-9d34fb17e) che include la seguente correzione:
+![](assets/green_2.png) 5 **marzo 2020**: nuova build (9032-...205c981c3) che include la seguente correzione:
+
+* È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
+
+![](assets/orange_2.png) 17 **dicembre 2019**: nuova build (9032-...9d34fb17e) che include la seguente correzione:
 
 * È stato risolto un problema di tracciamento sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter).
 (NEO-19595)
 
-**11 dicembre 2019**: nuova build (9032-e28b428b7) che include la seguente correzione:
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+![](assets/orange_2.png) 11 **dicembre 2019**: nuova build (9032-...e28b428b7) con la seguente correzione:
 
 * È stato risolto un problema di prestazioni durante l&#39;invio di messaggi con un database MSSQL. (NEO-17558)
 
-**20 novembre 2019**: nuova build (9032-3468c7bb5) con le seguenti correzioni:
+![](assets/orange_2.png) 20 **novembre 2019**: nuova build (9032-...3468c7bb5) con le seguenti correzioni:
 
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
-
-* È stato risolto un problema di accesso tramite autenticazione IMS. (NEO-17312)
+* È stato risolto un problema di accesso tramite l&#39;autenticazione IMS. (NEO-17312)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti cumulativi su più consegne. (NEO-18165)
-* È stato risolto un problema che poteva bloccare o arrestare il server Web.
+* È stato risolto un problema che poteva bloccare o causare l&#39;arresto anomalo del server Web.
 
-**19 settembre 2019**: nuova build (9032-cee805c93) con le seguenti correzioni:
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+![](assets/orange_2.png) 19 **settembre 2019**: nuova build (9032-...cee805c93) che include le seguenti correzioni:
 
 * È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
 * È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
 
-**13 agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+![](assets/orange_2.png) 13 **agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
 
 * È stato risolto un problema con l&#39;attività del pianificatore che generava messaggi di errore indesiderati durante la configurazione guidata. Ripristino dell&#39;aggiornamento da NEO-11662. (NEO-17097)
 * È stata corretta una regressione causata dalla NEO-12727 che poteva causare l&#39;arresto dei flussi di lavoro quando un&#39;attività Test veniva eseguita due volte. (NEO-16835)
@@ -101,13 +106,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * È stato risolto un problema con la chiave DKIM che non era più incorporata nelle e-mail, causando problemi di recapito. (NEO-16804)
 * Sono stati risolti diversi problemi relativi alla pianificazione del flusso di lavoro. I flussi di lavoro venivano pianificati una volta al giorno senza tenere conto della configurazione del pianificatore. (NEO-16619, NEO-16426)
 
-## Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
-21 giugno 2019
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+_21 giugno 2019_
 
 **Miglioramenti della sicurezza**
 
@@ -121,13 +122,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * È ora possibile eliminare i record fittizi creati in Microsoft Dynamics durante il flusso di lavoro di importazione.
 * Sono state migliorate le autorizzazioni per eseguire il pacchetto della zona di sicurezza quando si utilizza un account interno.
 
-## Release 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
 
-30 maggio 2019
-
->[!CAUTION]
->
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+_30 maggio 2019_
 
 **Cosa c&#39;è di nuovo?**
 
@@ -148,8 +145,8 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
    <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consultate la documentazione <a href="../../production/using/audit-trail.md"></a> dettagliata e il <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">video</a>sulle procedure.</p></td> 
   </tr> 
   <tr> 
-   <td> Protezione, Robustezza e scalabilità<br /> </td> 
-   <td> Una serie di miglioramenti è stata aggiunta a Campaign Classic. I miglioramenti a livello di affidabilità e scalabilità sono elencati di seguito.<br /> </td> 
+   <td> Guardrail, robustezza e scalabilità<br /> </td> 
+   <td> Una serie di miglioramenti è stata aggiunta a Campaign Classic. I miglioramenti a livello di affidabilità, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
@@ -167,8 +164,8 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 **Miglioramenti della sicurezza**
 
-* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza l&#39; **[!UICONTROL Pre-process the file]** opzione in un&#39;attività di **[!UICONTROL Data loading (file)]** workflow. È ora disponibile un elenco a discesa che consente di selezionare tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di protezione XtkSecurity_Disable_Preproc. Per i nuovi clienti, questa opzione sarà impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 per il post-aggiornamento per mantenere il comportamento precedente. Fare riferimento a questa [sezione](../../workflow/using/data-loading--file-.md).
-* È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account FDA esterno senza fuso orario.
+* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza l&#39; **[!UICONTROL Pre-process the file]** opzione in un&#39;attività di **[!UICONTROL Data loading (file)]** flusso di lavoro. È ora disponibile un elenco a discesa che consente di selezionare tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di protezione XtkSecurity_Disable_Preproc. Per i nuovi clienti, questa opzione sarà impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 per il post-aggiornamento per mantenere il comportamento precedente. Fare riferimento a questa [sezione](../../workflow/using/data-loading--file-.md).
+* È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account FDA esterno senza fuso orario impostato.
 * La libreria PDFBox è stata rimossa.
 * Tomcat è stato aggiornato alla versione 7.0.93.
 * È stato risolto un problema di visibilità token che si verificava quando il token di protezione non era valido.
@@ -202,7 +199,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * La gestione del broadcast è stata migliorata per i messaggi transazionali. Quando i log di trasmissione vengono sincronizzati dall&#39;istanza di esecuzione all&#39;istanza di controllo, il campo @lastModified viene aggiornato alla data corrente del sistema. Per le istanze di controllo è stata aggiunta l’opzione MC_Update_BlLastModified. True indica che la data corrente verrà utilizzata nell&#39;istanza di controllo (comportamento predefinito). False indica che utilizzeremo la data @lastModified dell&#39;istanza di esecuzione del registro di trasmissione. (NEO-12579)
 * Sono stati aggiunti indici nelle tabelle temporanee dei coupon per ottimizzare l&#39;invio delle consegne. (NEO-12437)
 * Nell&#39;integrazione di Analytics, è ora consentito il recupero dei dati del segmento AAM con il carattere %. (NEO-12025)
-* È stato rimosso il limite di 10.000 record in Workflow Heatmap per risolvere un problema di dati mancante. (NEO-12329)
+* È stato rimosso il limite di 10.000 record nella mappa di calore del flusso di lavoro per risolvere un problema di dati mancante. (NEO-12329)
 * Open Office non è supportato e ora è completamente rimosso dall&#39;applicazione. Se ancora si utilizza, passare a Libre Office in quanto non funzionerà più a partire dalla 19.1.
 * Ora puoi limitare l&#39;accesso in scrittura all&#39;attività di aggiornamento dei dati nel flusso di lavoro utilizzando gli attributi sysfilter. [Leggi tutto](../../configuration/using/filtering-schemas.md)
 
@@ -261,4 +258,4 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * È stato risolto un problema durante l&#39;assegnazione di un fuso orario a un operatore. (NEO-12464)
 * È stato risolto un problema che poteva causare errori nei registri secondari principali. (NEO-11539, NEO-8978)
 * È stato risolto un problema che si verificava facendo clic sull&#39;icona Cronologia in un rapporto salvato. (NEO-11620)
-* È stato risolto un problema durante la modifica di una tabella pivot in un report. (NEO-12068)
+* È stato risolto un problema che si verificava durante la modifica di una tabella pivot in un report. (NEO-12068)
