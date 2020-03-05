@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -31,17 +31,17 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
    <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
-   <td>Ultima build stabile disponibile. <br>Build convalidata in produzione. </td>
-   <td>Build convalidata da Adobe. <br>In attesa di prove di produzione. </td>
-   <td>Nuova build disponibile con correzioni di bug. <br>L'aggiornamento è obbligatorio. </td>
-   <td>Contiene regressioni note. <br>L'aggiornamento è obbligatorio. </td>
+   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
+   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
+   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
+   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Fare clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032) per visualizzare l&#39; **ultima build** stabile (GA).
+L&#39; **ultima build** stabile è 9032 (205c981c3). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Release 20.1 - Build 9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) Release 20.1 - Build 9122 {#release-20-1-build-9122}
 
 _17 febbraio 2020_
 
@@ -50,7 +50,7 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Connettore FDA di neve</strong><br /> </th> 
+   <th> <strong>Connettore FDA per fiocco di neve</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -85,7 +85,7 @@ _17 febbraio 2020_
 
 * È stato migliorato il JSP del monitor per correggere una divulgazione IP interna. (NEO-16821)
 
-* È stato risolto un problema che causava la visualizzazione delle informazioni sulla traccia dello stack agli utenti non amministratori. (NEO-12388)
+* È stato risolto un problema per il quale le informazioni di traccia dello stack potevano essere visualizzate agli utenti non amministratori. (NEO-12388)
 
 * È stata migliorata la gestione dei dati memorizzati nella cache delle sessioni precedenti. (NEO-17039)
 
@@ -111,7 +111,7 @@ _17 febbraio 2020_
 
 * Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
-* Prestazioni delle query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
+* Sono state migliorate le prestazioni delle query che potrebbero essere influenzate da connessioni di database non necessarie.
 
 * Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database.
 
@@ -153,7 +153,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che causava la visualizzazione di un&#39;immagine non aggiornata quando si selezionava il blocco **Power by Campaign** Personalization (Personalizzazione in funzione) nell&#39;editor e-mail.
 
-* La comunicazione di rete tra client e server è stata migliorata.
+* È stata migliorata la comunicazione di rete tra il client e il server.
 
 * È stato risolto un problema che si verificava quando troppi flussi di lavoro venivano creati nella stessa campagna. Ora non è possibile creare più di 28 flussi di lavoro. Viene visualizzato un avviso.
 
@@ -181,9 +181,9 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava il costante errore di **Importa pubblico dal flusso di lavoro tecnico di Adobe Experience Cloud** . (NEO-18463)
+* È stato risolto un problema che causava il costante errore del flusso di lavoro **Importa pubblico dal flusso di lavoro tecnico di Adobe Experience Cloud** . (NEO-18463)
 
-* È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano modelli importati da Experience Manager. (NEO-17540)
+* È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano i modelli importati da Experience Manager. (NEO-17540)
 
 * È stato risolto un problema che si verificava dopo l&#39;aggiornamento alla build 9032 e che impediva all&#39;istanza di connettersi al server FTP tramite il protocollo SSL. (NEO-20498)
 
