@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # Informazioni sulle tipologie delle campagne{#about-campaign-typologies}
 
-Ottimizzazione campagna è il modulo Adobe Campaign che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Questo garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
+Ottimizzazione campagna è il modulo Adobe Campaign che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Questo garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti e le politiche di comunicazione aziendali.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Con Adobe Campaign puoi progettare e applicare quattro tipi di regole di tipolog
 1. **Regole di filtro** che consentono di escludere parte del target in base ai criteri. Per ulteriori informazioni, consultate [Filtrare le regole](../../campaign/using/filtering-rules.md).
 1. **Regole di pressione** che consentono di controllare la fatica del marketing. Per ulteriori informazioni, vedere Regole sulla [pressione](../../campaign/using/pressure-rules.md).
 1. **Regole di capacità** che consentono di limitare i carichi per garantire condizioni di elaborazione ottimali. Per ulteriori informazioni, vedere [Controllo della capacità](../../campaign/using/consistency-rules.md#controlling-capacity).
-1. **Controlla** le regole che consentono di verificare la validità dei messaggi prima che vengano inviati. Per ulteriori informazioni, vedere [Regole](../../campaign/using/control-rules.md)di controllo.
+1. **Controlla** le regole che ti consentono di verificare la validità dei messaggi prima che vengano inviati. Per ulteriori informazioni, vedere [Regole](../../campaign/using/control-rules.md)di controllo.
 
 Una volta create, le regole di tipologia sono raggruppate nelle tipologie di campagna a cui viene fatto riferimento nelle consegne. Consultate [Applicazione delle tipologie](#applying-typologies).
 
