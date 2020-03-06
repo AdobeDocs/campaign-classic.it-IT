@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -45,10 +45,6 @@ Scopri come importare un HTML esistente per creare e inviare un messaggio e-mail
 
 [Progettare un&#39;e-mail con l&#39;editor](../../web/using/use-case--creating-an-email-delivery.md)di contenuti digitali di Campaign: scopri come utilizzare Campaign DCE per progettare un&#39;e-mail tramite un esempio.
 
-## Come si aggiunge un codice a barre in un messaggio e-mail? {#how-can-i-add-a-barcode-in-an-email-}
-
-Scopri come [aggiungere facilmente un codice a barre](../../delivery/using/inserting-a-barcode-in-an-email.md) in un messaggio e-mail personalizzato.
-
 ## Come posso creare una newsletter basata su iscrizione in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
 [Creare un servizio](../../delivery/using/managing-subscriptions.md)newsletter: passaggi chiave per creare una newsletter e gestire le iscrizioni.
@@ -68,6 +64,6 @@ Puoi inviare messaggi in più lingue ai destinatari, a seconda delle loro prefer
 
 A tal fine, puoi localizzare il contenuto del messaggio e personalizzarlo a seconda del profilo del destinatario, utilizzando [le condizioni](../../delivery/using/conditional-content.md). Puoi anche utilizzare [i flussi di lavoro](../../workflow/using/split.md) per selezionare la versione del messaggio da inviare in base a un test nella lingua preferita.
 
-## Come si localizza un modulo Web? {#how-can-i-localize-a-webform-}
+## Come è possibile localizzare un modulo Web? {#how-can-i-localize-a-webform-}
 
 Potete localizzare un&#39;applicazione Web in diverse lingue. Il meccanismo di traduzione è presentato in [questa sezione](../../web/using/translating-a-web-form.md).
