@@ -106,7 +106,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Creazione di notifiche](delivery/using/creating-notifications.md)
       + [Risoluzione dei problemi](delivery/using/troubleshooting.md)
    + Invio di posta diretta {#sending-direct-mail}
-      + [Canale di posta diretta](delivery/using/about-direct-mail-channel.md)
+      + [Informazioni sul canale di posta diretta](delivery/using/about-direct-mail-channel.md)
       + [Creazione di una consegna diretta per posta](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definizione del contenuto della direct mail](delivery/using/defining-the-direct-mail-content.md)
       + [Convalida](delivery/using/validating.md)
@@ -191,7 +191,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Regole di controllo](campaign/using/control-rules.md)
       + [Regole di filtro](campaign/using/filtering-rules.md)
       + [Applicazione delle regole](campaign/using/applying-rules.md)
-      + [simulazioni di campagne](campaign/using/campaign-simulations.md)
+      + [Simulazioni delle campagne](campaign/using/campaign-simulations.md)
    + Marketing distribuito {#distributed-marketing}
       + [Informazioni sul marketing distribuito](campaign/using/about-distributed-marketing.md)
       + [Creazione di una campagna locale](campaign/using/creating-a-local-campaign.md)
@@ -243,7 +243,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Creazione di indicatori](reporting/using/creating-indicators.md)
       + [Utilizzo dei cubi per esplorare i dati](reporting/using/using-cubes-to-explore-data.md)
       + [Concetti e metodologia](reporting/using/concepts-and-methodology.md)
-      + [Caso di utilizzo: visualizzazione del rapporto sulle risposte a un sondaggio online](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
+      + [Caso di utilizzo: visualizzazione di un rapporto sulle risposte a un sondaggio online](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Progettazione di contenuti Web {#designing-content}
    + Applicazioni Web {#web-applications}
       + [Informazioni sulle applicazioni Web](web/using/about-web-applications.md)
@@ -256,7 +256,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
    + Modifica del contenuto HTML {#editing-html-content}
       + [Informazioni sull&#39;editor HTML di Campaign](web/using/about-campaign-html-editor.md)
       + [Gestione dei modelli](web/using/template-management.md)
-      + [Interfaccia editor di contenuti](web/using/content-editor-interface.md)
+      + [Interfaccia dell&#39;editor di contenuti](web/using/content-editor-interface.md)
       + [Modifica del contenuto](web/using/editing-content.md)
       + [Best practice di modifica dei contenuti](web/using/content-editing-best-practices.md)
       + [Creazione di una pagina di destinazione](web/using/creating-a-landing-page.md)
@@ -477,7 +477,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Integrazione tramite SOAP (lato server)](interaction/using/integration-via-soap--server-side-.md)
       + [Interazioni anonime](interaction/using/anonymous-interactions.md)
    + Tracciamento delle offerte {#tracking-offers}
-      + [Cronologia delle offerte](interaction/using/offer-proposition-history.md)
+      + [Cronologia delle proposte di offerta](interaction/using/offer-proposition-history.md)
       + [Report analisi offerta](interaction/using/offer-analysis-report.md)
    + Parametri avanzati {#advanced-parameters}
       + [Utilizzo di parametri avanzati](interaction/using/using-advanced-parameters.md)
@@ -607,7 +607,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Configurazione](production/using/configuration.md)
       + [File di registro](production/using/log-files.md)
       + [Monitoraggio dei processi](production/using/monitoring-processes.md)
-      + [Comandi comuni](production/using/usual-commands.md)
+      + [Comandi abituali](production/using/usual-commands.md)
       + [Audit trail](production/using/audit-trail.md)
    + Elaborazione dati {#data-processing}
       + [Backup](production/using/backup.md)
@@ -623,7 +623,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Recommendations](production/using/recommendations.md)
       + [Tabelle da mantenere](production/using/tables-to-maintain.md)
       + [Tipi di manutenzione](production/using/types-of-maintenance.md)
-      + [Raccomandazioni specifiche RDBMS](production/using/rdbms-specific-recommendations.md)
+      + [Raccomandazioni specifiche per RDBMS](production/using/rdbms-specific-recommendations.md)
       + [Oggetti applicazione](production/using/application-objects.md)
    + Risoluzione dei problemi {#troubleshooting}
       + [Problemi di prestazioni e di throughput](production/using/performance-and-throughput-issues.md)
