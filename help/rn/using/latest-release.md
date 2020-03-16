@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: defbe3793be531eeb5c7aab913607ff094a624c7
 
 ---
 
@@ -40,6 +40,10 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 </table>
 
 L&#39; **ultima build** stabile è 9032 (205c981c3). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+
+* È stato risolto un problema che impediva la distribuzione della versione sul server Red Hat 7. (NEO-23332)
 
 ## ![](assets/blue_2.png) Release 20.1 - Build 9122 {#release-20-1-build-9122}
 
