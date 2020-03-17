@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1d08730421c598873e272f305a819e3fb4509d90
+source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
 
 ---
 
@@ -209,7 +209,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
