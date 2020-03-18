@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ## Informazioni sulle quarantena {#about-quarantines}
 
-Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
+Adobe Campaign gestisce un elenco di indirizzi posti in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Inoltre, le quarantena contribuiscono a ridurre i costi di invio degli SMS esclu
 
 ### Quarantena e blacklist {#quarantine-vs-blacklisting}
 
-**La quarantena** si applica solo a un indirizzo, non al profilo stesso. Ciò significa che, se due profili hanno lo stesso indirizzo e-mail, saranno entrambi interessati dalla quarantena dell&#39;indirizzo.
+**La quarantena** si applica solo a un indirizzo, non al profilo stesso. Ciò significa che, se due profili hanno lo stesso indirizzo e-mail, saranno entrambi interessati se l&#39;indirizzo viene messo in quarantena.
 
 Allo stesso modo, un profilo il cui indirizzo e-mail è stato messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo, e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
 
@@ -120,7 +120,7 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 
 Se un utente qualifica un&#39;e-mail come spam (**Feedback loop**), il messaggio viene automaticamente reindirizzato verso una cassetta postale tecnica gestita da Adobe. L&#39;indirizzo e-mail dell&#39;utente viene quindi inviato automaticamente alla quarantena.
 
-Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano riassegnati in un secondo momento.
+Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano ritirati in un secondo momento.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -129,7 +129,7 @@ Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reas
 Invece di errori gravi, gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori.
 
 * Quando il contatore di errori raggiunge la soglia limite, l&#39;indirizzo viene messo in quarantena.
-* Nella configurazione predefinita, la soglia è impostata su cinque errori, dove due errori sono significativi se si verificano almeno 24 ore di differenza. L&#39;indirizzo viene messo in quarantena al sesto errore.
+* Nella configurazione predefinita, la soglia è impostata su cinque errori, dove due errori sono significativi se si verificano almeno 24 ore di differenza. L&#39;indirizzo viene messo in quarantena al quinto errore.
 * È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, vedere [Riprova dopo un errore](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporaneo di consegna.
 
 Il contatore di errori viene reinizializzato se l&#39;ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo diventa **Valido** e viene eliminato dall&#39;elenco delle quarantena dal flusso di lavoro di pulizia **del** database.
@@ -157,7 +157,7 @@ Il server APNS notifica in modo asincrono ad Adobe Campaign che un token disposi
 
 Il protocollo http/2 consente un feedback diretto e uno stato per ogni invio push. Se si utilizza il connettore del protocollo http/2, il servizio di feedback non viene più chiamato dal **[!UICONTROL mobileAppOptOutMgt]** flusso di lavoro. I token non registrati vengono gestiti in modo diverso tra il connettore binario iOS e il connettore iOS http/2. Un token viene considerato non registrato quando un’applicazione mobile viene disinstallata o reinstallata.
 
-Sincronamente, se APNS restituisce uno stato &quot;non registrato&quot; per un messaggio, il token di destinazione verrà messo immediatamente in quarantena.
+Sincrona, se APNS restituisce uno stato &quot;non registrato&quot; per un messaggio, il token di destinazione verrà messo immediatamente in quarantena.
 
 <table> 
  <tbody> 
@@ -222,7 +222,7 @@ Sincronamente, se APNS restituisce uno stato &quot;non registrato&quot; per un m
    <td> Errore<br /> </td> 
    <td> Errore di connessione<br /> </td> 
    <td> Non definito<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
    <td> Yes<br /> </td> 
   </tr> 
   <tr> 
@@ -301,7 +301,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Errore<br /> </td> 
    <td> Nessuna risposta dal servizio Firebase Cloud Messaging all'indirizzo: {1}<br /> </td> 
    <td> Morbido<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
    <td> Yes<br /> </td> 
   </tr> 
   <tr> 
@@ -309,7 +309,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Errore<br /> </td> 
    <td> Servizio Firebase Cloud Messaging temporaneamente non disponibile<br /> </td> 
    <td> Morbido<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
    <td> Yes<br /> </td> 
   </tr> 
   <tr> 
@@ -384,21 +384,21 @@ La **[!UICONTROL Delivery log qualification]** tabella non si applica al connett
    <td> Errore<br /> </td> 
    <td> Errore durante la ricezione dei dati (SR o MO)<br /> </td> 
    <td> Morbido<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
   </tr> 
   <tr> 
    <td> Conferma MT non valida<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Errore '{1}' durante l'elaborazione della cornice di riconoscimento per la query di invio<br /> </td> 
    <td> Morbido<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
   </tr> 
   <tr> 
-   <td> Errore durante l'invio del MT<br /> </td> 
+   <td> Errore durante l'invio dell'MT<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Errore durante l'invio dei messaggi<br /> </td> 
    <td> Morbido<br /> </td> 
-   <td> Non raggiungibile<br /> </td> 
+   <td> Non Raggiungibile<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -424,7 +424,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Tutti i messaggi di errore iniziano con **SR** per distinguere i codici di errore SMS dai codici di errore email.
 * La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell&#39;implementazione SMSC, come definito nel **[!UICONTROL SMSC implementation name]** campo dell&#39;account esterno SMS. Vedere [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
-   Poiché lo stesso codice di errore può avere un significato diverso per ciascun provider, questo campo consente di sapere quale provider ha generato il codice di errore. L&#39;errore può essere trovato nella documentazione del fornitore.
+   Poiché lo stesso codice di errore può avere un significato diverso per ciascun provider, questo campo consente di sapere quale provider ha generato il codice di errore. L&#39;errore può essere trovato nella documentazione del fornitore pertinente.
 
 * La terza parte (**DELIVRD** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dalla SR utilizzando il regex di estrazione dello stato definito nell&#39;account esterno di SMS.
 
@@ -432,14 +432,14 @@ SR Generic DELIVRD 000|#MESSAGE#
 
    ![](assets/tech_quarant_error_regex.png)
 
-   **Per impostazione predefinita, il regex estrae lo** stato: come definito nella sezione **Appendice B** della specifica **** SMPP 3.4.
+   Per impostazione predefinita, il regex estrae lo **stato:** come definito nella sezione **Appendice B** della specifica **** SMPP 3.4.
 
 * La quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dalla SR utilizzando il regex di estrazione del codice di errore definito nell&#39;account esterno di SMS.
 
    Questo regex è specificato nella **[!UICONTROL SMSC specificities]** scheda dell&#39;account esterno. Vedere [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
-   **Per impostazione predefinita, il regex estrae l’** errore: come definito nella sezione **Appendice B** della specifica **** SMPP 3.4.
+   Per impostazione predefinita, il regex estrae l’ **errore:** come definito nella sezione **Appendice B** della specifica **** SMPP 3.4.
 
-* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nella **[!UICONTROL First text]** colonna della **[!UICONTROL Delivery log qualification]** tabella. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di inserire più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)della posta rimbalzata.
+* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nella **[!UICONTROL First text]** colonna della **[!UICONTROL Delivery log qualification]** tabella. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di inserire più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, vedere Qualificazione [](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)per posta rimbalzata.
 
 Il connettore SMPP generico esteso applica un euristico per trovare valori predefiniti ragionevoli: se lo stato inizia con **DELIV**, viene considerato un successo perché corrisponde agli stati comuni **DELIVRD** o **DELIVERED** utilizzati dalla maggior parte dei fornitori. Qualsiasi altro stato porta a un duro fallimento.
