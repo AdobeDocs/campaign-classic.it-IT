@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
 
 ---
 
@@ -43,7 +43,7 @@ Quindi, per elaborare i dati contenuti in un database esterno, l&#39;utente Adob
 In generale, sono necessari i seguenti diritti:
 
 * **CONNECT**: connessione al database remoto,
-* **LEGGI dati**: accesso in sola lettura alle tabelle contenenti dati dei clienti,
+* **LEGGI dati**: accesso in sola lettura alle tabelle contenenti i dati dei clienti,
 * **LEGGI &#39;MetaData&#39;**: accesso ai cataloghi di dati del server per ottenere la struttura della tabella,
 * **CARICA**: carico di massa nelle tabelle di lavoro (richiesto quando si lavora su raccolte e join),
 * **CREA/RILASCIA** PER **TABELLA/INDICE/PROCEDURA/FUNZIONE**,
@@ -52,4 +52,4 @@ In generale, sono necessari i seguenti diritti:
 
 >[!NOTE]
 >
->L&#39;amministratore del database deve far corrispondere questi diritti ai diritti specifici di ciascun motore di database. Per ulteriori informazioni, fare riferimento a diritti [specifici](https://docs.campaign.adobe.com/doc/AC6.1/en/technicalResources/technicalResources.html)RDBMS.
+>L&#39;amministratore del database deve far corrispondere questi diritti ai diritti specifici di ciascun motore di database. Per ulteriori informazioni, fare riferimento a diritti [specifici](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)RDBMS.
