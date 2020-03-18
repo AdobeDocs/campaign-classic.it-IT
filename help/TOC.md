@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
 
 ---
 
@@ -645,9 +645,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + Configurazione di Campaign Classic {#configuring-campaign-classic}
    + Data model {#data-model}
       + [Informazioni sul modello dati](configuration/using/about-data-model.md)
-      + [Utilizzo della tabella Destinatario predefinita](configuration/using/default-recipient-table.md)
-      + [Estensione del modello dati](configuration/using/extending-data-model.md)
-      + [Utilizzo di una tabella di destinazione personalizzata](configuration/using/custom-recipient-table.md)
+      + [Descrizione del modello dati](configuration/using/data-model-description.md)
       + [Best practice](configuration/using/data-model-best-practices.md)
    + Riferimento schema {#schema-reference}
       + [Informazioni sul riferimento allo schema](configuration/using/about-schema-reference.md)
