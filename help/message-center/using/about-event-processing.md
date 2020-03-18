@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c2c53041d8a19a491b8ec4da12a8a0ced25cf9a
+source-git-commit: ceb5b2fdcd0dfca28412534ed3417367026f71d0
 
 ---
 
@@ -31,7 +31,6 @@ Esempio di dati evento:
 Per elaborare eventi di messaggistica transazionali, è necessario applicare i seguenti passaggi:
 
 1. Raccolta eventi,
-1. Arricchimento dell’evento prima di essere trasferito a un modello di messaggio (se hai acquisito l’opzione di arricchimento disponibile per il modulo di messaggistica transazionale Campaign),
 1. Trasferimento di eventi a un modello di messaggio,
 1. Arricchimento degli eventi con dati di personalizzazione,
 1. esecuzione della consegna,
