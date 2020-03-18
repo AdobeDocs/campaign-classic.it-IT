@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 ---
 
@@ -69,6 +69,10 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
 
 1. Dalla **[!UICONTROL Admin]** scheda, selezionare **[!UICONTROL Data Connectors]**.
 
+   Per accedere al **[!UICONTROL Data Connectors]** menu è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. Per ulteriori informazioni, consulta questa [pagina](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   * Integrazioni (Crea)
+   * Integrazioni (aggiornamento)
+   * Integrazioni (Elimina)
    ![](assets/adobe_genesis_install_002.png)
 
 1. Dall&#39;elenco dei partner, selezionare **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
@@ -87,6 +91,7 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
    ![](assets/adobe_genesis_install_005.png)
 
 1. Specificate gli identificatori necessari per misurare l’impatto della campagna e-mail, ad esempio il nome della campagna interna (cid) e l’ID tabella iNmsBroadlog (bid). È inoltre necessario specificare gli indicatori per gli eventi da raccogliere.
+Accertatevi di **[!UICONTROL Events]** avere il tipo Numerico, altrimenti non verranno visualizzati nel menu a discesa.
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -187,15 +192,15 @@ Se nella procedura guidata Connettore dati sono stati configurati altri segmenti
 
 ### Flussi di lavoro tecnici dei processi di analisi Web {#technical-workflows-of-web-analytics-processes}
 
-Lo scambio di dati tra Adobe Campaign e Adobe Analytics - Connettore dati è gestito da quattro flussi di lavoro tecnici che vengono eseguiti come attività in background.
+Scambio di dati tra Adobe Campaign e Adobe Analytics - Il connettore dati è gestito da quattro flussi di lavoro tecnici che vengono eseguiti come attività in background.
 
 Sono disponibili nella struttura di Adobe Campaign, sotto la **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]** cartella.
 
 ![](assets/webanalytics_workflows.png)
 
-* **[!UICONTROL Recovering of web events]**: una volta all&#39;ora, questo flusso di lavoro scarica i segmenti sul comportamento degli utenti in un dato sito, li include nel database Adobe Campaign e avvia il flusso di lavoro di remarketing.
+* **[!UICONTROL Recovering of web events]**: una volta all&#39;ora, questo flusso di lavoro scarica i segmenti sul comportamento degli utenti in un dato sito, li include nel database di Adobe Campaign e avvia il flusso di lavoro di remarketing.
 * **[!UICONTROL Event purge]**: questo flusso di lavoro consente di eliminare tutti gli eventi dal database a seconda del periodo configurato nel **[!UICONTROL Lifespan]** campo. Per maggiori informazioni, consulta il [Passaggio 2: Create l&#39;account esterno in Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: directory dei visitatori che hanno effettuato un acquisto in seguito a una campagna di remarketing. I dati raccolti da questo flusso di lavoro sono accessibili nel **[!UICONTROL Re-marketing efficiency]** rapporto, fare riferimento a questa [pagina](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: consente di inviare gli indicatori delle campagne e-mail tramite Adobe Campaign ad Adobe Experience Cloud tramite il connettore dati Adobe Analytics. Questo flusso di lavoro viene attivato ogni giorno alle 4 del mattino e potrebbe essere necessario 24 ore prima che i dati vengano inviati ad Analytics.
+* **[!UICONTROL Identification of converted contacts]**: directory dei visitatori che hanno effettuato un acquisto in seguito a una campagna di remarketing. I dati raccolti da questo flusso di lavoro sono accessibili nel **[!UICONTROL Re-marketing efficiency]** rapporto, fare riferimento a questa [pagina](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: consente di inviare gli indicatori delle campagne e-mail tramite Adobe Campaign ad Adobe Experience Cloud tramite il connettore dati Adobe Analytics. Questo flusso di lavoro viene attivato ogni giorno alle 4 del mattino e potrebbe essere necessario attendere 24 ore prima che i dati vengano inviati ad Analytics.
 
    Il flusso di lavoro non deve essere riavviato oppure tutti i dati precedenti che possono distorcere i risultati di Analytics verranno inviati di nuovo.
 
@@ -207,7 +212,7 @@ Sono disponibili nella struttura di Adobe Campaign, sotto la **[!UICONTROL Admin
    * **[!UICONTROL Total count of opens]** (@totalRecipientOpen)
    * **[!UICONTROL Recipients who have opened]** (@destinatarioOpen)
    * **[!UICONTROL Total number of recipients who clicked]** (@totalRecipientClick)
-   * **[!UICONTROL People who clicked]** (@personaClick)
+   * **[!UICONTROL People who clicked]** (@personaClic)
    * **[!UICONTROL Number of distinct clicks]** (@destinatarioClick)
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
