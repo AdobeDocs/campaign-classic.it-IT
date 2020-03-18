@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >L&#39;MTA dà priorità all&#39;elaborazione dei messaggi transazionali rispetto a qualsiasi altra consegna.
 
-Nell’istanza di esecuzione, una volta completate le fasi di arricchimento e collegato un modello di consegna all’evento, la consegna viene inviata. Tutte le consegne sono raggruppate nella **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
+Nell’istanza di esecuzione, una volta completata la fase di arricchimento e collegato un modello di consegna all’evento, la consegna viene inviata. Tutte le consegne sono raggruppate nella **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
