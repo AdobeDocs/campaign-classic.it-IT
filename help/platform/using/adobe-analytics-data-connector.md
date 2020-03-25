@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
+source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
 
 Il Connettore dati (precedentemente noto come Adobe Genesis) consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto di connettori **di** Web Analytics. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail distribuite da Adobe Campaign ad Adobe Analytics - Connettore dati.
 
-Utilizzando il connettore dati, Adobe Campaign può misurare l&#39;audience di Internet (Web Analytics). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti a seguito di una campagna di marketing e (dopo l&#39;analisi) eseguire campagne di ricommercializzazione per convertirli in acquirenti. Al contrario, gli strumenti di analisi Web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
+Utilizzando il connettore dati, Adobe Campaign offre un modo per misurare il pubblico su Internet (Web Analytics). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti a seguito di una campagna di marketing e (dopo l&#39;analisi) eseguire campagne di ricommercializzazione per convertirli in acquirenti. Al contrario, gli strumenti di analisi Web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
 
 Per ulteriori informazioni sull&#39;implementazione dell&#39;integrazione Adobe Analytics con Adobe Campaign, consulta questa [documentazione](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
 
@@ -75,7 +75,7 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
    * Integrazioni (Elimina)
    ![](assets/adobe_genesis_install_002.png)
 
-1. Dall&#39;elenco dei partner, selezionare **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
+1. Dall&#39;elenco dei partner, selezionare **[!UICONTROL Adobe Campaign Classic]**.
 
    ![](assets/adobe_genesis_install_014.png)
 
