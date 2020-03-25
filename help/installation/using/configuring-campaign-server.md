@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
 
 ---
 
@@ -24,7 +24,11 @@ source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 La sezione seguente descrive le configurazioni lato server che possono essere eseguite in base alle esigenze e alle specifiche dell&#39;ambiente.
 
-Queste configurazioni devono essere eseguite dagli amministratori e solo per i modelli di hosting **locali** . Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo da Adobe. Tuttavia, alcune impostazioni possono essere configurate nel Pannello di controllo (ad esempio, la whitelist IP o le autorizzazioni URL).
+>[!IMPORTANT]
+>
+>Queste configurazioni devono essere eseguite dagli amministratori e solo per i modelli di hosting **locali** .
+>
+>Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo da Adobe. Tuttavia, alcune impostazioni possono essere configurate nel Pannello di controllo (ad esempio, la whitelist IP o le autorizzazioni URL).
 
 Per ulteriori informazioni, consultare le sezioni seguenti:
 
@@ -109,7 +113,7 @@ Tutti i diritti che definiscono una zona sono i seguenti:
 * **sessionTokenOnly**: il token di protezione non è richiesto nell&#39;URL di connessione
 * **showErrors**: gli errori sul lato server vengono inoltrati e visualizzati
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nella definizione di un&#39;area, ogni attributo con il valore **true** riduce la protezione.
 
@@ -153,7 +157,7 @@ Il parametro **proxy** può essere utilizzato in un elemento **subNetwork** per 
 
 Quando si fa riferimento a un proxy e una connessione entra tramite questo proxy (visibile tramite l&#39;intestazione HTTP X-Forwarded-For), la zona verificata è quella dei client del proxy e non quella del proxy.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se un proxy è configurato e può essere ignorato (o se non esiste), l&#39;indirizzo IP che verrà testato sarà in grado di essere falsificato.
 >
@@ -200,7 +204,7 @@ Gli indirizzi IP dei proxy che possono accedere al server Adobe Campaign devono 
 
 ### Collegamento di una zona di protezione a un operatore {#linking-a-security-zone-to-an-operator}
 
-Una volta definite le zone, ogni operatore deve essere collegato a uno di essi per poter accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;operatore deve essere incluso negli indirizzi o nell&#39;intervallo di indirizzi a cui fa riferimento la zona.
+Una volta definite le zone, ogni operatore deve essere collegato a uno di essi per poter accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;operatore deve essere incluso negli indirizzi o nell&#39;intervallo di indirizzi a cui si fa riferimento nella zona.
 
 La configurazione tecnica delle zone viene eseguita nel file di configurazione del server Campaign: **serverConf.xml**.
 
@@ -251,7 +255,7 @@ Quindi modificate la porta delle pagine dei relè JSP. A tal fine, modificate il
 
 ### Mapping di una cartella in Tomcat {#mapping-a-folder-in-tomcat}
 
-Per definire le impostazioni specifiche del cliente, potete creare un file **user_contexts.xml** nella cartella **/tomcat-7/conf** , che contiene anche il file **contexts.xml** .
+Per definire le impostazioni specifiche per il cliente, potete creare un file **user_contexts.xml** nella cartella **/tomcat-7/conf** , che contiene anche il file **contexts.xml** .
 
 Questo file conterrà il seguente tipo di informazioni:
 
@@ -281,7 +285,7 @@ In questo caso, questi parametri vengono impostati configurando il server SMTP n
 <relay address="192.0.0.3" port="25"/>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questa modalità operativa comporta gravi limitazioni per le consegne, in quanto può ridurre notevolmente il throughput a causa delle prestazioni intrinseche del server relay (latenza, banner...). Inoltre, la capacità di qualificare gli errori di consegna sincroni (rilevati analizzando il traffico SMTP) sarà limitata e l&#39;invio non sarà possibile se il server relay non è disponibile.
 
@@ -297,9 +301,9 @@ Consultare anche Ottimizzazione [dell’invio per](../../installation/using/emai
 
 ### Gestione del traffico SMTP in uscita con affinità {#managing-outbound-smtp-traffic-with-affinities}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->La configurazione di affinità deve essere coerente da un server all&#39;altro. È consigliabile contattare Adobe per la configurazione dell&#39;affinità, in quanto le modifiche alla configurazione devono essere replicate su tutti i server applicazioni che eseguono l&#39;MTA.
+>La configurazione di affinità deve essere coerente da un server all&#39;altro. È consigliabile contattare Adobe per la configurazione dell&#39;affinità, in quanto le modifiche alla configurazione devono essere replicate su tutti i server applicazioni in cui è in esecuzione l&#39;MTA.
 
 È possibile migliorare il traffico SMTP in uscita tramite affinità con indirizzi IP.
 
@@ -307,7 +311,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
 1. Immettete le affinità nella **`<ipaffinity>`** sezione del file **serverConf.xml** .
 
-   **Un&#39;affinità può avere diversi nomi diversi: per separarli, utilizzare il**; carattere.
+   Un&#39;affinità può avere diversi nomi diversi: per separarli, utilizzare il **;** carattere.
 
    Esempio:
 
@@ -363,11 +367,11 @@ Esistono tre modalità di protezione della connessione:
 </urlPermission>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per impostazione predefinita, il client dei nuovi clienti utilizza la modalità **di** blocco. Se devono consentire l’aggiunta di un nuovo URL, devono contattare l’amministratore per inserirlo nella whitelist.
 >
->I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, questi devono contattare l’amministratore per inserire gli URL nella whitelist e attivare la modalità **di** blocco.
+>I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, gli utenti devono contattare l’amministratore per inserire in una whitelist gli URL e attivare la modalità **di** blocco.
 
 ## Sicurezza e relè delle pagine dinamiche {#dynamic-page-security-and-relays}
 
@@ -425,7 +429,7 @@ In questo esempio, il **`<IP_addresses>`** valore coincide con l&#39;elenco di i
 
 >[!NOTE]
 >
->La seguente configurazione è necessaria solo per le installazioni locali.
+>La seguente configurazione è necessaria solo per le installazioni aziendali interne.
 
 Dalla build 8780, gli amministratori tecnici possono limitare l&#39;elenco dei comandi esterni autorizzati utilizzabili in Adobe Campaign.
 
@@ -444,7 +448,7 @@ ruby
 sh
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questo elenco non è esaustivo.
 
@@ -466,7 +470,7 @@ Ad esempio:
 
 Questo utente deve essere aggiunto all&#39;elenco secondario dell&#39;operatore Adobe Campaign &quot;neolane&quot;.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non utilizzare un sudo personalizzato. Nel sistema deve essere installato un sudo standard.
 
@@ -581,7 +585,7 @@ A questo scopo, andate al file **serverConf.xml** , che si trova nell&#39;archiv
 
 Ogni processo configurato in questo file ha un attributo **processRestartTime** . Potete modificare il valore di questo attributo per adattare il tempo di riavvio di ogni processo in base alle vostre esigenze.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non eliminare questo attributo. Tutti i processi devono essere riavviati ogni giorno.
 
@@ -597,7 +601,7 @@ Per limitare i possibili formati, è necessario sostituire il valore dell&#39;at
 
 Ad esempio: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In Internet Explorer, il percorso completo del file deve essere verificato dall&#39;espressione regolare.
 
