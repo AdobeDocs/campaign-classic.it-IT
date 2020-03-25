@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
 
 ---
 
 
 # Informazioni sugli errori di consegna{#understanding-delivery-failures}
 
-## Errori di consegna {#about-delivery-failures}
+## Informazioni sugli errori di consegna {#about-delivery-failures}
 
-Quando un messaggio (e-mail, SMS, notifica push) non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, prelevato dalla piattaforma Adobe Campaign e qualificato per determinare se l&#39;indirizzo e-mail o il numero di telefono devono essere posti in quarantena. Consultate Gestione [della posta](#bounce-mail-management)rimbalzata.
+Quando un messaggio (e-mail, SMS, notifica push) non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, prelevato dalla piattaforma Adobe Campaign e qualificato per determinare se l&#39;indirizzo e-mail o il numero di telefono devono essere posti in quarantena o meno. Consultate Gestione [della posta](#bounce-mail-management)rimbalzata.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ I messaggi possono essere esclusi durante la preparazione del recapito se un ind
 Esistono tre tipi di errore quando un messaggio non riesce. Ogni tipo di errore determina se un indirizzo viene inviato alle quarantena. Per ulteriori informazioni, vedere [Condizioni per l&#39;invio di un indirizzo alla quarantena](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **Duro**: Un errore &quot;hard&quot; indica un indirizzo non valido. Ciò comporta un messaggio di errore che indica esplicitamente che l&#39;indirizzo non è valido, ad esempio: &quot;Utente sconosciuto&quot;.
-* **Soft**: Potrebbe trattarsi di un errore temporaneo o di un errore che non è stato possibile classificare, ad esempio: &quot;Dominio non valido&quot; o &quot;Cassetta postale completa&quot;.
+* **Morbido**: Potrebbe trattarsi di un errore temporaneo o di un errore che non è stato possibile classificare, ad esempio: &quot;Dominio non valido&quot; o &quot;Cassetta postale completa&quot;.
 * **Ignorato**: Si tratta di un errore che è noto come temporaneo, ad esempio &quot;Fuori sede&quot; o un errore tecnico, ad esempio se il tipo di mittente è &quot;postmaster&quot;.
 
 I possibili motivi di un mancato recapito sono:
@@ -80,13 +80,13 @@ I possibili motivi di un mancato recapito sono:
    <td> Indirizzo di qualità non valida </td> 
    <td> Ignorato </td> 
    <td> 14 </td> 
-   <td> Il punteggio qualità per questo indirizzo è troppo basso.<br /> </td> 
+   <td> Il valore di qualità per questo indirizzo è troppo basso.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indirizzo Blacklist </td> 
    <td> Rigido </td> 
    <td> 8 </td> 
-   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco di Adobe Campaign Quarantine.<br /> </td> 
+   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco quarantena di Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indirizzo di controllo </td> 
@@ -140,7 +140,7 @@ I possibili motivi di un mancato recapito sono:
    <td> Non definito </td> 
    <td> Non definito </td> 
    <td> 0 </td> 
-   <td> L'indirizzo è nella qualifica perché l'errore non è ancora stato incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore di errori aumenta, che avviserà i team tecnici. Possono quindi eseguire l'analisi dei messaggi e individuare l'errore tramite il nodo <span class="uicontrol">Amministrazione</span> /Gestione <span class="uicontrol"></span> campagne/Gestione <span class="uicontrol"></span> risultati finali nella struttura ad albero.<br /> </td> 
+   <td> L'indirizzo è nella qualifica perché l'errore non è ancora stato incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore di errori aumenta, che avviserà i team tecnici. Possono quindi eseguire l'analisi dei messaggi e individuare l'errore tramite il nodo <span class="uicontrol">Amministrazione</span> /Gestione <span class="uicontrol"></span> campagne/Gestione <span class="uicontrol"></span> non risultati finali nella struttura ad albero.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non ammissibile alle offerte </td> 
@@ -167,16 +167,16 @@ I possibili motivi di un mancato recapito sono:
    <td> L'indirizzo postale non è qualificato.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non raggiungibile </td> 
+   <td> Non Raggiungibile </td> 
    <td> Soft/Hard </td> 
    <td> 3 </td> 
-   <td> Errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
+   <td> Si è verificato un errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Rigido </td> 
    <td> 1 </td> 
-   <td> Indirizzo inesistente. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
+   <td> L'indirizzo non esiste. Per questo profilo non verranno tentate altre consegne.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -242,11 +242,15 @@ I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
->
->Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, i titoli di rimbalzo nella **[!UICONTROL Delivery log qualification]** tabella non vengono più utilizzati. L&#39;MTA avanzata determinerà il tipo di rimbalzo e la qualifica e invierà tali informazioni a Campaign.
->
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato:
+
+* I titoli di rimbalzo contenuti nella **[!UICONTROL Delivery log qualification]** tabella non vengono più utilizzati per i messaggi di errore di consegna sincrona. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
+
+* I rimbalzi asincroni sono ancora qualificati dal processo inMail attraverso le **[!UICONTROL Inbound email]** regole. Per ulteriori informazioni, consultate Regole di gestione delle [e-mail](#email-management-rules).
+
+* Per le istanze che utilizzano l&#39;MTA avanzata senza **Webhooks/EFS**, le **[!UICONTROL Inbound email]** regole saranno utilizzate anche per elaborare le e-mail di rimbalzo sincrone provenienti dall&#39;MTA avanzata, utilizzando lo stesso indirizzo e-mail come per le e-mail di rimbalzo asincrone.
+
+Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 ### Regole di gestione e-mail {#email-management-rules}
 
@@ -264,33 +268,53 @@ Le regole predefinite sono le seguenti:
 
 * **E-mail in ingresso**
 
-   Quando un&#39;e-mail non riesce, il server remoto restituisce un messaggio di rimbalzo all&#39;indirizzo specificato nei parametri della piattaforma. Adobe Campaign confronta il contenuto di ogni messaggio di rimbalzo con le stringhe nell&#39;elenco delle regole, quindi le assegna uno dei tre tipi di errore.
+   Quando un&#39;e-mail ha esito negativo, il server remoto restituisce un messaggio di rimbalzo all&#39;indirizzo specificato nei parametri della piattaforma.
+
+   Adobe Campaign confronta il contenuto di ogni messaggio di rimbalzo con le stringhe nell&#39;elenco delle regole, quindi le assegna uno dei tre tipi di errore.
 
    L&#39;utente può creare regole personalizzate.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Quando importate un pacchetto e aggiornate i dati tramite il flusso di lavoro **Aggiorna per la recapito** , le regole create dall&#39;utente vengono sovrascritte.
 
+   Per ulteriori informazioni sulla qualifica della posta indesiderata, consulta [questa sezione](#bounce-mail-qualification).
+
+   >[!NOTE]
+   >
+   >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, le **[!UICONTROL Inbound email]** regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+   >
+   >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+
 * **Gestione del dominio**
 
-   Le regole di gestione del dominio vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi. Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole. Le regole per i domini Hotmail e MSN sono disponibili per impostazione predefinita in Adobe Campaign.
+   Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole.
+
+   Le regole per i domini Hotmail e MSN sono disponibili per impostazione predefinita in Adobe Campaign.
 
    Fate clic sull&#39; **[!UICONTROL Detail]** icona per accedere alla configurazione della regola.
 
    ![](assets/tech_quarant_domain_rules_02.png)
 
-   Per configurare le regole di gestione del dominio, è sufficiente impostare una soglia e selezionare alcuni parametri SMTP. Una **soglia** è un limite calcolato come percentuale di errore oltre il quale tutti i messaggi verso un dominio specifico vengono bloccati.
-
-   Ad esempio, nel caso generale, per un minimo di 300 messaggi, l&#39;invio di e-mail viene bloccato per tre ore se il tasso di errore raggiunge il 90%.
-
    I parametri **** SMTP fungono da filtri applicati per una regola di blocco.
 
    * È possibile scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **Sender ID**, **DomainKeys**, **DKIM** e **S/MIME**.
-   * **Relè** SMTP: consente di configurare l’indirizzo IP e la porta di un server di inoltro per un determinato dominio.
+   * **Relè** SMTP: consente di configurare l’indirizzo IP e la porta di un server di inoltro per un determinato dominio. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
+   Se i messaggi vengono visualizzati in Outlook come **[!UICONTROL on behalf of]** con un nome di dominio diverso, accertatevi di non firmare i messaggi e-mail con l&#39;ID **** mittente, che è lo standard obsoleto di autenticazione e-mail proprietario di Microsoft. Se l&#39; **[!UICONTROL Sender ID]** opzione è abilitata, deseleziona la casella corrispondente e contatta il supporto di Adobe Campaign. La sua recapito non verrà influenzata.
+
+   >[!NOTE]
+   >
+   >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le **[!UICONTROL Domain management]** regole non vengono più utilizzate. **La firma dell&#39;autenticazione dell&#39;e-mail DKIM (DomainKeys Identified Mail)** viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini. Non firma con **Sender ID**, **DomainKeys** o **S/MIME** , a meno che non venga specificato diversamente a livello Enhanced MTA.
+   >
+   >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 * **Gestione MX**
 
+   * Le regole di gestione MX vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi.
+
+   * Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole.
+
+   * Per configurare le regole di gestione MX, è sufficiente impostare una soglia e selezionare alcuni parametri SMTP. Una **soglia** è un limite calcolato come percentuale di errore oltre il quale tutti i messaggi verso un dominio specifico vengono bloccati. Ad esempio, nel caso generale, per un minimo di 300 messaggi, l&#39;invio di e-mail viene bloccato per tre ore se il tasso di errore raggiunge il 90%.
    For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
    >[!NOTE]
@@ -299,7 +323,7 @@ Le regole predefinite sono le seguenti:
    >
    >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Se i parametri sono stati modificati, è necessario riavviare il server di consegna (MTA).
 >* La modifica o la creazione di regole di gestione è riservata esclusivamente agli utenti esperti.
