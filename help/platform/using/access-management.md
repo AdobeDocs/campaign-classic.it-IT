@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -83,7 +83,7 @@ Per creare un nuovo operatore e concedere le autorizzazioni, effettuate le segue
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Potete anche selezionare uno o più diritti denominati (consultate [Diritti](#named-rights)denominati). A tale scopo, fare clic sulla freccia a destra del **[!UICONTROL Folder]** campo e selezionare **[!UICONTROL Named rights]**:
+   Potete anche selezionare uno o più diritti denominati (consultate [Diritti](#named-rights)denominati). A tal fine, fare clic sulla freccia a destra del **[!UICONTROL Folder]** campo, quindi selezionare **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
@@ -97,7 +97,7 @@ Per creare un nuovo operatore e concedere le autorizzazioni, effettuate le segue
 >
 >È possibile organizzare gli operatori in base alle proprie esigenze creando nuove cartelle di operatori. A tale scopo, fare clic con il pulsante destro del mouse sulla cartella dell&#39;operatore e selezionare **[!UICONTROL Add an 'Operators' folder]**.
 
-Una volta creato il profilo dell&#39;operatore, potete aggiungerne o aggiornarne le informazioni. A tale scopo, fare clic sulla **[!UICONTROL Edit]** scheda.
+Una volta creato il profilo dell&#39;operatore, è possibile aggiungerne o aggiornarne le informazioni. A tale scopo, fare clic sulla **[!UICONTROL Edit]** scheda.
 
 ![](assets/operator_edit_profile.png)
 
@@ -174,7 +174,7 @@ La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relati
 
 ### Operatori predefiniti {#default-operators}
 
-Adobe Campaign utilizza operatori tecnici con profili configurati per impostazione predefinita: Amministratore (&#39;admin&#39;), Fatturazione (&#39;fatturazione&#39;), Monitoraggio, Agente applicazione Web (&#39;webapp&#39;), ecc. Alcune dipendono dalle applicazioni e dalle opzioni installate sulla piattaforma: Gli operatori &#39;central&#39; e &#39;local&#39;, ad esempio, sono visibili solo se è installata l&#39;opzione Distributed Marketing.
+Adobe Campaign utilizza operatori tecnici con profili configurati per impostazione predefinita: Amministratore (&#39;admin&#39;), Fatturazione (&#39;fatturazione&#39;), Monitoraggio, Agente applicazione Web (&#39;webapp&#39;), ecc. Alcune di queste dipendono dalle applicazioni e dalle opzioni installate sulla piattaforma: Gli operatori &#39;central&#39; e &#39;local&#39;, ad esempio, sono visibili solo se è installata l&#39;opzione Distributed Marketing.
 
 >[!CAUTION]
 >
@@ -230,7 +230,7 @@ Per creare un nuovo gruppo di operatori, attenersi alla procedura seguente:
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
-   Ripetere questa operazione per aggiungere altri diritti o operatori.
+   Ripetete questa operazione per aggiungere altri diritti o operatori.
 
 1. Fate clic sul **[!UICONTROL Save]** pulsante per aggiungere il gruppo all’elenco.
 
@@ -240,11 +240,11 @@ I gruppi di operatori predefiniti sono:
 
 1. Operatori di distribuzione
 
-   Gli operatori del gruppo sono responsabili della gestione delle consegne: consentono di accedere alle risorse principali necessarie per creare e preparare le consegne (tipologie di campagne, mappature delle consegne, modelli predefiniti, blocchi di personalizzazione, ecc.).
+   Gli operatori di questo gruppo sono responsabili della gestione delle consegne: consentono di accedere alle risorse principali necessarie per creare e preparare le consegne (tipologie di campagne, mappature delle consegne, modelli predefiniti, blocchi di personalizzazione, ecc.).
 
    Questo gruppo contiene i seguenti diritti denominati:
 
-   * PREPARA DISTRIBUZIONI: diritto di creare, modificare e avviare l&#39;analisi della consegna,
+   * PREPARARE LE DISTRIBUZIONI: diritto di creare, modificare e avviare l&#39;analisi della consegna,
    * AVVIA DISTRIBUZIONI: diritto di approvare le consegne analizzate in precedenza.
 
 1. Manager campagna
@@ -287,26 +287,45 @@ Per impostazione predefinita, Adobe Campaign propone un set di diritti denominat
 
 Tali diritti sono i seguenti:
 
-* AMMINISTRAZIONE: Diritto di amministrazione generico applicato a tutte le cartelle della console.
-* AMMINISTRAZIONE DELL’OMOLOGAZIONE: Diritto di assegnare i revisori.
-* CENTRALE: Right for central management (Distributed Marketing).
-* ELIMINA CARTELLA: Destra per eliminare le cartelle.
-* MODIFICA CARTELLE: Diritto di modifica delle proprietà della cartella: nome, etichetta, immagine associata, ecc.
-* ESPORTAZIONE: Diritto di esportare i dati.
-* ACCESSO AI FILE: Diritto di accesso in lettura e scrittura per i file tramite uno script.
-* IMPORTA: Esatto per l&#39;importazione di dati generici.
-* INSERISCI CARTELLE: Diritto di inserire le cartelle.
-* LOCALE: Adatta alla gestione locale (Distributed Marketing).
-* UNIONE: Diritto di unire i record.
-* PREPARA DISTRIBUZIONI: Diritto di creare, modificare e avviare l&#39;analisi della distribuzione.
-* DIRITTO DATI PRIVACY: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consultare questa [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
-* ESECUZIONE DEL PROGRAMMA: Diritto di eseguire programmi esterni.
-* IMPORTAZIONE DESTINATARIA: Diritto di importare i destinatari.
-* ESECUZIONE SCRIPT SQL: Diritto di eseguire script SQL sul database.
-* AVVIA DISTRIBUZIONI: Diritto di approvare le consegne analizzate in precedenza.
-* UTILIZZARE L&#39;ATTIVITÀ DI GESTIONE DATI SQL: Diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL, per creare e compilare tabelle di lavoro (vedere [questa sezione](../../workflow/using/sql-data-management.md)).
-* FLUSSO DI LAVORO: Diritto di utilizzare i flussi di lavoro.
-* WEBAPP: Diritto di utilizzare applicazioni Web.
+* **[!UICONTROL ADMINISTRATION]**: Gli operatori con **[!UICONTROL ADMINISTRATION]** diritto di accesso all&#39;istanza. Gli utenti amministratori possono eseguire, creare, modificare o eliminare qualsiasi oggetto, ad esempio flusso di lavoro, distribuzione, script e così via.
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Puoi impostare più passaggi di approvazione all&#39;interno di flussi di lavoro e consegne per garantire che lo stato corrente sia stato approvato da un operatore o gruppo assegnato. Gli utenti con **[!UICONTROL APPROVAL ADMINISTRATION]** diritto possono impostare le fasi di approvazione e assegnare anche un operatore o un gruppo di operatori che deve approvare tali passaggi.
+
+* **[!UICONTROL CENTRAL]**: Right for central management (Distributed Marketing).
+
+* **[!UICONTROL DELETE FOLDER]**: Destra per eliminare le cartelle. Con questo diritto, gli utenti possono eliminare le cartelle dalla visualizzazione Esploratore.
+
+* **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
+
+* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle istanze di Adobe Campaign in un file su un server o su un computer locale tramite l&#39;attività del **[!UICONTROL EXPORT]** flusso di lavoro.
+
+* **[!UICONTROL FILES ACCESS]**: Diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nell&#39;attività del **[!UICONTROL JavaScript]** flusso di lavoro per leggere e scrivere i file su un server.
+
+* **[!UICONTROL IMPORT]**: Esatto per l&#39;importazione di dati generici. **[!UICONTROL IMPORT]** consente di importare dati in qualsiasi altra tabella, mentre il **[!UICONTROL RECIPIENT IMPORT]** diritto consente l&#39;importazione solo nella tabella ricevente.
+
+* **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire le cartelle. Gli utenti con la **[!UICONTROL INSERT FOLDERS]** destra possono creare nuove cartelle nella struttura delle cartelle nella visualizzazione Esploratore.
+
+* **[!UICONTROL LOCAL]**: Adatta alla gestione locale (Distributed Marketing).
+
+* **[!UICONTROL MERGE]**: Diritto di unire i record selezionati in un unico. Se i destinatari esistono come duplicati, la **[!UICONTROL MERGE]** destra consente all&#39;utente di selezionare i duplicati e di unirli in un destinatario principale.
+
+* **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Gli utenti con **[!UICONTROL PREPARE DELIVERIES]** destra possono anche avviare il processo di analisi della consegna.
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consultare questa [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+
+* **[!UICONTROL PROGRAM EXECUTION]**: Diritto di eseguire comandi in vari linguaggi di programmazione.
+
+* **[!UICONTROL RECIPIENT IMPORT]**: Diritto di importare i destinatari. Gli utenti con **[!UICONTROL RECIPIENT IMPORT]** destra possono importare un file locale nella tabella dei destinatari.
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** Diritto di eseguire qualsiasi comando SQL direttamente sul database.
+
+* **[!UICONTROL START DELIVERIES]**: Diritto di approvare le consegne analizzate in precedenza. Dopo l&#39;analisi della consegna, la consegna verrà messa in pausa a vari passi di approvazione e dovrà essere approvata per riprendere. Gli utenti **[!UICONTROL START DELIVERIES]** autorizzati possono approvare le consegne.
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL, per creare e compilare tabelle di lavoro (vedere [questa sezione](../../workflow/using/sql-data-management.md)).
+
+* **[!UICONTROL WORKFLOW]**: Diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
+
+* **[!UICONTROL WEBAPP]**: Diritto di utilizzare applicazioni Web.
 
 >[!NOTE]
 >
@@ -399,7 +418,7 @@ Nell&#39;esempio seguente, verranno create nuove cartelle per visualizzare dati 
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
-1. Definite i criteri del filtro di consegna dall&#39;editor query nella sezione centrale della finestra: verranno visualizzate le campagne corrispondenti al filtro definito.
+1. Definite i criteri del filtro di consegna dall&#39;editor di query nella sezione centrale della finestra: verranno visualizzate le campagne corrispondenti al filtro definito.
 
    >[!NOTE]
    >
