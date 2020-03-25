@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
+source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 
 ---
 
@@ -60,8 +60,8 @@ La lingua viene selezionata al momento dell&#39;installazione dell&#39;istanza d
 
 Potete scegliere tra cinque lingue diverse:
 
+* Inglese (Regno Unito)
 * Inglese (USA)
-* Inglese (EN)
 * Francese
 * Tedesco
 * Giapponese
