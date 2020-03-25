@@ -1,11 +1,11 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: Documentazione di prodotto Adobe Campaign Classic
+seo-title: Documentazione di prodotto di Adobe Campaign Classic
 solution: Campaign Classic
-title: Documentazione di prodotto Adobe Campaign Classic
+title: Documentazione di prodotto di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
+source-git-commit: d674d8a0cabb72a8a344019de688ad7027cb3e8d
 
 ---
 
@@ -23,8 +23,6 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 * **[Guida](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>alla manutenzione Scopri come monitorare l&#39;istanza e i processi di Campaign
 
 * **[Contenuto interattivo con AMP](delivery/using/defining-interactive-content.md)**<br/>Informazioni sull&#39;invio di e-mail dinamiche con il nuovo formato[AMP per e-mail](https://amp.dev/about/email/)
-
-* **[Pannello](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)**<br/>di controllo Scopri come gestire le impostazioni e monitorare l&#39;utilizzo dell&#39;istanza Campaign
 
 [Fai clic qui per ulteriori aggiornamenti](/help/rn/using/documentation-updates.md)
 
@@ -53,7 +51,7 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
     Aggiornamento <strong>alla build</strong>più recente </a>
     </div>
     <p>
-    <em>Informazioni sui passaggi e sulle procedure ottimali per eseguire un aggiornamento della build</em>
+    <em>Informazioni sui passaggi e sulle procedure ottimali per eseguire l'aggiornamento della build</em>
     <p>
   </td>
   <td>
@@ -71,15 +69,13 @@ source-git-commit: 08f697afc1630f275188dc86ca39d7841f922ed9
 </tr>
 </table>
 
-
 ## Risorse aggiuntive
 
-* [Note sulla versione](/help/rn/using/latest-release.md)
-
-* [Video dimostrativi](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-
-* [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
-
-* [Guida all&#39;implementazione](https://helpx.adobe.com/campaign/kb/acc-implementation.html)
-
-* [Note tecniche](https://helpx.adobe.com/campaign/kb/article-list.html)
+<table>
+<tr>
+  <td valign="top"><strong>Pagine</strong>utili * [Note sulla versione](/help/rn/using/latest-release.md) * [Video introduttivi](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) * [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) * [Guida introduttiva a Campaign Classic](../../platform/using/about-adobe-campaign-classic.md) * [Aggiornamento Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) * [Funzioni obsolete e rimosse](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) * [Documentazione del Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+  </td>
+  <td valign="top"><strong>Risorse per gli sviluppatori</strong>* [Elenco dei messaggi di errore](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) * [Modello dati classico per le campagne](../../configuration/using/about-data-model.md) * [documentazione JSAPI](../../configuration/using/about-web-services.md) * [Guida all'implementazione](https://helpx.adobe.com/campaign/kb/acc-implementation.html) * [Guida di tracciamento](https://helpx.adobe.com/campaign/kb/acc-tracking.html) * [Elenco di controllo sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) * [Note tecniche](https://helpx.adobe.com/campaign/kb/article-list.html)
+  </td>
+</tr>
+</table>
