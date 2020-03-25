@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -52,7 +52,7 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
       Dopo aver selezionato l’azione di consegna, potete visualizzare il contenuto facendo clic sull’ **[!UICONTROL Edit link]** icona .
 
-   * Creare uno script per calcolare la consegna. A questo scopo, selezionare l&#39; **[!UICONTROL Calculated by a script]** opzione e immettere lo script. Per aprire una finestra di input, fate clic sull’ **[!UICONTROL Edit...]** opzione. L&#39;esempio seguente recupera l&#39;identificatore della consegna:
+   * Creare uno script per calcolare la consegna. A questo scopo, selezionare l&#39; **[!UICONTROL Computed by a script]** opzione e immettere lo script. Per aprire una finestra di input, fate clic sull’ **[!UICONTROL Edit...]** opzione. L&#39;esempio seguente recupera l&#39;identificatore della consegna:
 
       ![](assets/diffusion_edit_3.png)
 
@@ -84,7 +84,7 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
    * **[!UICONTROL Save]**: questa opzione consente di creare la consegna e salvarla. Non lo analizzerà né lo fornirà.
    * **[!UICONTROL Estimate the target]**: questa opzione consente di calcolare il target di consegna per valutarne il potenziale (prima fase di analisi). Questa azione equivale a selezionare l&#39; **[!UICONTROL Estimate the population to be targeted]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale tramite **[!UICONTROL Analyze]** Consegna ****.
-   * **[!UICONTROL Prepare]**: questa opzione consente di eseguire l&#39;intero processo di analisi (calcolo target e preparazione del contenuto). La consegna non viene inviata. Questa azione equivale a selezionare l&#39; **[!UICONTROL Deliver as soon as possible]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale con **[!UICONTROL Analyze]** Consegna ****.
+   * **[!UICONTROL Prepare]**: questa opzione consente di eseguire l&#39;intero processo di analisi (calcolo di destinazione e preparazione del contenuto). La consegna non viene inviata. Questa azione equivale a selezionare l&#39; **[!UICONTROL Deliver as soon as possible]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale con **[!UICONTROL Analyze]** Consegna ****.
    * **[!UICONTROL Send a proof]**: questa opzione consente di inviare una prova della consegna. Questa azione equivale a fare clic sul **[!UICONTROL Send a proof]** pulsante nella barra degli strumenti di una consegna con **consegna**
    * **[!UICONTROL Prepare and start]**: questa opzione avvia l’intero processo di analisi (calcolo target e preparazione dei contenuti) e invia la distribuzione. Questa azione equivale a fare clic **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** scegliere quando si invia una consegna alla destinazione principale con **Consegna**.
    L&#39; **[!UICONTROL Act on a delivery]** attività ulteriormente utilizzata nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la distribuzione (calcolo della destinazione, preparazione dei contenuti, distribuzione). Per ulteriori informazioni, consulta Controllo [](../../workflow/using/delivery-control.md)consegna.
