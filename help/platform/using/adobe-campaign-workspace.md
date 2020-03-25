@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
 
 Una volta connessi al database, potrai accedere alla home page di Adobe Campaign, che è una dashboard: è costituito da collegamenti e collegamenti che consentono di accedere alle funzionalità, a seconda dell&#39;installazione e delle configurazioni generali della piattaforma.
 
-Dalla sezione centrale della home page potete utilizzare i collegamenti per accedere al portale della documentazione online di Campaign, al forum e al sito Web del supporto.
+Dalla sezione centrale della home page, potete utilizzare i collegamenti per accedere al portale della documentazione online di Campaign, al forum e al sito Web del supporto.
 
 ![](assets/d_ncs_user_interface_home.png)
 
@@ -34,7 +34,7 @@ La schermata precedente è un esempio della pagina principale per un utente di A
 
 >[!NOTE]
 >
->Le funzionalità di Adobe Campaign disponibili nella tua istanza dipendono dai moduli e dai componenti aggiuntivi installati. Alcuni potrebbero anche non essere disponibili, a seconda delle autorizzazioni e delle configurazioni specifiche.
+>Le funzionalità di Adobe Campaign disponibili nella tua istanza dipendono dai moduli e dai componenti aggiuntivi installati. Alcuni di essi potrebbero anche non essere disponibili, a seconda delle autorizzazioni e delle configurazioni specifiche.
 >
 >Prima di installare qualsiasi modulo o componente aggiuntivo, è necessario verificare il contratto di licenza o contattare il responsabile aziendale dell&#39;account Adobe.
 
@@ -51,6 +51,22 @@ Ad esempio, per un determinato operatore, nella console viene visualizzata una c
 Con l&#39;accesso Web, invece, le opzioni consentiranno principalmente la visualizzazione:
 
 ![](assets/operation_from_web.png)
+
+### Lingue {#languages}
+
+La lingua viene selezionata al momento dell&#39;installazione dell&#39;istanza di Adobe Campaign Classic e non può essere modificata in seguito. Per ulteriori informazioni su come creare un’istanza, consultate questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
+
+![](assets/language.png)
+
+Potete scegliere tra cinque lingue diverse:
+
+* Inglese (USA)
+* Inglese (EN)
+* Francese
+* Tedesco
+* Giapponese
+
+La lingua scelta per l&#39;istanza di Adobe Campaign Classic potrebbe influenzare i formati di data e ora. For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Nozioni di base sulla navigazione {#navigation-basics}
 
@@ -134,7 +150,7 @@ Nella parte inferiore destra della schermata dell’elenco, un **[!UICONTROL cou
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Se &quot;**&quot;**&quot; viene visualizzato invece del numero a destra, fare clic sul contatore per avviare il calcolo.
+Se un &quot;**?**&quot; viene visualizzato invece del numero a destra, fare clic sul contatore per avviare il calcolo.
 
 ### Caricamento di più record {#loading-more-records}
 
@@ -287,7 +303,7 @@ Gli elenchi possono contenere una grande quantità di dati. Potete ordinare ques
 
 Fare clic sull&#39;intestazione della colonna per applicare un ordinamento crescente o decrescente o per annullare l&#39;ordinamento dei dati. Lo stato di ordinamento e l&#39;ordine di ordinamento attivi sono indicati da una freccia blu prima dell&#39;etichetta della colonna. Un trattino rosso prima dell&#39;etichetta della colonna indica che l&#39;ordinamento viene applicato ai dati indicizzati dal database. Questo metodo di ordinamento viene utilizzato per ottimizzare i processi di ordinamento.
 
-Potete anche configurare l’ordinamento o combinare criteri di ordinamento. A questo scopo, effettuate le seguenti operazioni:
+Potete anche configurare l’ordinamento o combinare criteri di ordinamento. A questo scopo, attenetevi alla procedura seguente:
 
 1. **[!UICONTROL Configure list]** sotto e a destra dell&#39;elenco.
 
