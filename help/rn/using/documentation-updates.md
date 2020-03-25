@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2de7987a0e5089a9023c0cf3b4c6c61a758a5e5f
+source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
 
 ---
 
@@ -32,6 +32,14 @@ La pagina Best practice del modello dati è stata aggiornata con nuove sezioni, 
 
 È ora disponibile una nuova sezione che descrive il modello dati predefinito di Adobe Campaign e l&#39;interazione tra tabelle pronte all&#39;uso. [Leggi tutto](../../configuration/using/data-model-description.md)
 
+Ulteriori risorse sono state aggiunte alla home page della documentazione. [Leggi tutto](../../campaign-classic-home.md)
+
+È stato aggiunto un caso di utilizzo per l&#39;integrazione di un&#39;offerta dinamica da Adobe Target in un&#39;e-mail in Adobe Campaign. [Leggi tutto](../../integrations/using/inserting-a-dynamic-image.md)
+
+È ora disponibile una nuova sezione in cui sono elencate le diverse lingue disponibili in Adobe Campaign. [Leggi tutto](../../platform/using/adobe-campaign-workspace.md#languages)
+
+La pagina di gestione Accesso è stata aggiornata con ulteriori informazioni sui diritti denominati. [Leggi tutto](../../platform/using/access-management.md#named-rights)
+
 ## Febbraio 2020 {#february-2020}
 
 È ora disponibile una nuova sezione che illustra le procedure ottimali e le raccomandazioni chiave durante la progettazione del modello dati di Adobe Campaign. [Leggi tutto](../../configuration/using/data-model-best-practices.md)
@@ -43,8 +51,6 @@ Il documento Domande frequenti sulla conformità è stato aggiornato con ulterio
 AMP for Email ora supportato da tre provider di posta elettronica (Gmail, Outlook e Mail.ru), la sezione che descrive come definire il contenuto interattivo con AMP è stata aggiornata. [Leggi tutto](../../delivery/using/defining-interactive-content.md)
 
 La sezione Archiviazione e-mail è stata chiarita. [Leggi tutto](../../installation/using/email-archiving.md#recommendations-and-limitations)
-
-
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
