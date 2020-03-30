@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
+source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
 
 ---
 
@@ -86,7 +86,7 @@ I possibili motivi di un mancato recapito sono:
    <td> Indirizzo Blacklist </td> 
    <td> Rigido </td> 
    <td> 8 </td> 
-   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco quarantena di Adobe Campaign.<br /> </td> 
+   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco di Adobe Campaign Quarantine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indirizzo di controllo </td> 
@@ -300,7 +300,7 @@ Le regole predefinite sono le seguenti:
 
    * È possibile scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **Sender ID**, **DomainKeys**, **DKIM** e **S/MIME**.
    * **Relè** SMTP: consente di configurare l’indirizzo IP e la porta di un server di inoltro per un determinato dominio. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
-   Se i messaggi vengono visualizzati in Outlook come **[!UICONTROL on behalf of]** con un nome di dominio diverso, accertatevi di non firmare i messaggi e-mail con l&#39;ID **** mittente, che è lo standard obsoleto di autenticazione e-mail proprietario di Microsoft. Se l&#39; **[!UICONTROL Sender ID]** opzione è abilitata, deseleziona la casella corrispondente e contatta il supporto di Adobe Campaign. La sua recapito non verrà influenzata.
+   Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** l&#39;indirizzo del mittente, assicurarsi di non firmare le e-mail con l&#39;ID **** mittente, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39; **[!UICONTROL Sender ID]** opzione è abilitata, deseleziona la casella corrispondente e contatta il supporto di Adobe Campaign. La sua recapito non verrà influenzata.
 
    >[!NOTE]
    >
