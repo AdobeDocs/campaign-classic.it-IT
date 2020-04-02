@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1336bf7ab9cce7f2ffe7d4ffa5e119851e946885
+source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
 
 ---
 
@@ -110,7 +110,7 @@ La tabella seguente descrive questi identificatori e la loro funzione.
 | Identificatore | Descrizione | Best practice |
 |--- |--- |--- |
 | Id | <ul><li>L&#39;ID è la chiave primaria fisica di una tabella di Adobe Campaign. Per le tabelle pronte all&#39;uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign. </li><li>Un ID generato automaticamente può essere visibile in una definizione dello schema. Cercate l&#39;attributo *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o in una definizione di pacchetto.</li><li>Non si deve presumere che l&#39;ID sia sempre un numero crescente.</li><li>L’ID in una tabella out-of-the-box è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
-| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un&#39;altra istanza di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinominare il nome del record generato da Adobe Campaign se l&#39;oggetto è destinato a essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto ha un attributo spazio nomi (*schema* , ad esempio), lo spazio nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Quando un oggetto non ha uno spazio nomi (ad esempio,*flusso* di lavoro o *consegna* ), questa nozione dello spazio nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzate caratteri speciali come lo spazio &quot;&quot;, la semicolona &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri vengono sostituiti da un carattere di sottolineatura &quot;_&quot; (caratteri consentiti). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
+| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un&#39;altra istanza di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinominare il nome del record generato da Adobe Campaign se l&#39;oggetto è destinato a essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto dispone di un attributo spazio nomi (*schema* ad esempio), lo spazio nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Quando un oggetto non ha uno spazio nomi (ad esempio,*flusso* di lavoro o *consegna* ), questa nozione dello spazio nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzate caratteri speciali come lo spazio &quot;&quot;, la semicolona &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri vengono sostituiti da un carattere di sottolineatura &quot;_&quot; (caratteri consentiti). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
 | Etichetta | <ul><li>L&#39;etichetta è l&#39;identificatore aziendale di un oggetto o di un record in Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Questa è la soluzione più semplice da usare per identificare un record o un oggetto per un utente di Adobe Campaign.</li></ul> |
 
 ## Chiavi interne personalizzate {#custom-internal-keys}
@@ -171,6 +171,41 @@ Tuttavia, tenete presente quanto segue:
 * Non rimuovere indici nativi dalle tabelle pronte all&#39;uso.
 
 <!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+
+### Esempio
+
+La gestione degli indici può diventare molto complessa, quindi è importante capire come funzionano. Per illustrare questa complessità, prendiamo un esempio di base, ad esempio la ricerca dei destinatari tramite filtro sul nome e il cognome. Per eseguire questa operazione:
+1. Passate alla cartella in cui sono elencati tutti i destinatari presenti nel database. Per ulteriori informazioni, consulta [Gestione dei profili](../../platform/using/managing-profiles.md).
+1. Fare clic con il pulsante destro del mouse sul **[!UICONTROL First name]** campo.
+1. Selezionare **[!UICONTROL Filter on this field]**.
+
+   ![](assets/data-model-index-example.png)
+
+1. Ripetere questa operazione per il **[!UICONTROL Last name]** campo.
+
+I due filtri corrispondenti vengono aggiunti nella parte superiore dello schermo.
+
+![](assets/data-model-index-search.png)
+
+Ora è possibile eseguire il filtro di ricerca sui **[!UICONTROL First name]** campi e **[!UICONTROL Last name]** in base alle diverse condizioni del filtro.
+
+Ora, per velocizzare la ricerca su questi filtri, è possibile aggiungere indici. Ma quali indici dovrebbero essere utilizzati?
+
+>[!NOTE]
+>
+>Questo esempio si applica ai clienti ospitati che utilizzano un database PostgreSQL.
+
+La tabella seguente mostra in quali casi i tre indici descritti di seguito vengono utilizzati o meno in base al pattern di accesso visualizzato nella prima colonna.
+
+| Criteri di ricerca | Indice 1 (Nome + Cognome) | Indice 2 (solo nome) | Indice 3 (solo cognome) | Commenti |
+|--- |--- |--- |--- |--- |
+| Nome uguale a &quot;Johnny&quot; | Usato | Usato | Non utilizzato | Poiché il primo nome si trova nella prima posizione dell&#39;indice 1, verrà comunque utilizzato: non è necessario aggiungere un criterio per il cognome. |
+| Il nome è uguale a &quot;Johnny&quot; E il cognome è uguale a &quot;Smith&quot; | Usato | Non utilizzato | Non utilizzato | Poiché entrambi gli attributi vengono ricercati nella stessa query, verrà utilizzato solo l&#39;indice che combina entrambi gli attributi. |
+| Cognome uguale a &quot;Smith&quot; | Non utilizzato | Non utilizzato | Usato | Si tiene conto dell&#39;ordine degli attributi nell&#39;indice. Se l&#39;ordine non corrisponde, l&#39;indice potrebbe non essere utilizzato. |
+| Il nome inizia con &quot;Joh&quot; | Usato | Usato | Non utilizzato | &quot;Ricerca a sinistra&quot; consente gli indici. |
+| Il nome termina con &quot;nny&quot; | Non utilizzato | Non utilizzato | Non utilizzato | &quot;Right search&quot; disattiverà gli indici e verrà eseguita una scansione completa. Alcuni tipi di indice specifici potrebbero gestire questo caso d&#39;uso, ma per impostazione predefinita non sono disponibili in Adobe Campaign. |
+| Il nome contiene &quot;John&quot; | Non utilizzato | Non utilizzato | Non utilizzato | Questa è una combinazione di ricerche &quot;a sinistra&quot; e &quot;a destra&quot;. A causa di quest&#39;ultimo, disabiliterà gli indici e verrà eseguita una scansione completa. |
+| Nome uguale a &quot;john&quot; | Non utilizzato | Non utilizzato | Non utilizzato | Per gli indici viene fatta distinzione tra maiuscole e minuscole. Per evitare la distinzione tra maiuscole e minuscole, è necessario creare un indice specifico che includa una funzione SQL come &quot;high(firstname)&quot;. È necessario eseguire le stesse operazioni con altre trasformazioni di dati, ad esempio &quot;unaccentuate(firstname)&quot;. |
 
 ## Collegamenti e cardinalità {#links-and-cardinality}
 
