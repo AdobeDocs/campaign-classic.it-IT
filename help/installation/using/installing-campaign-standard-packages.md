@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
 
 ---
 
@@ -39,7 +39,7 @@ Per installare un pacchetto standard:
 1. Nell&#39;elenco visualizzato, verificate i pacchetti da installare.
    >[!NOTE]
    >
-   >Se un pacchetto è disabilitato, non potete installarlo. Indica che è già installato o che non è compatibile con l&#39;istanza. Ad esempio, non puoi installare il pacchetto della piattaforma **** Mid-sourcing su un&#39;istanza di marketing. Queste informazioni sono disponibili nella tabella seguente.
+   >Se un pacchetto è disattivato, non potete installarlo. Indica che è già installato o che non è compatibile con l&#39;istanza. Ad esempio, non puoi installare il pacchetto della piattaforma **** Mid-sourcing su un&#39;istanza di marketing. Queste informazioni sono disponibili nella tabella seguente.
 1. Fate clic **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
    Una volta installati i pacchetti, la barra di avanzamento mostra il **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
@@ -87,7 +87,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Facoltativo, <a href="../../interaction/using/interaction-and-offer-management.md">Ulteriori informazioni</a></td> 
   </tr> 
   <tr> 
-   <td> Controllo del motore di offerta con istanza di esecuzione<br /> </td> 
+   <td> Controllo del motore di offerta con l'istanza di esecuzione<br /> </td> 
    <td> </td> 
    <td> Marketing<br /> </td> 
    <td> Facoltativo</td> 
@@ -108,7 +108,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Social network (Social Marketing) <br /> </td> 
    <td> Sincronizza Adobe Campaign con Twitter e Facebook.<br /> </td> 
    <td> Tutto</td> 
-   <td> <a href="../../social/using/starting-workflows.md">Ulteriori informazioni</a> </td> 
+   <td> <a href="../../social/using/about-social-marketing.md">Ulteriori informazioni</a> </td> 
   </tr> 
   <tr> 
    <td> Controllo messaggi transazionali (Centro messaggi - Controllo)<br /> </td> 
@@ -208,7 +208,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
   </tr> 
   <tr> 
    <td> Rendering inbox (IR)<br /> </td> 
-   <td> Consente di visualizzare l'anteprima del messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto e di verificare la compatibilità nei principali desktop e applicazioni. Ti serve un account Litmus.<br /> </td> 
+   <td> Consente di visualizzare l'anteprima del messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto e di verificare la compatibilità nei principali desktop e applicazioni. Hai bisogno di un account Litmus.<br /> </td> 
    <td> Marketing<br /> </td> 
    <td> Facoltativo, <a href="../../delivery/using/inbox-rendering.md">Ulteriori informazioni</a> </td> 
   </tr> 
