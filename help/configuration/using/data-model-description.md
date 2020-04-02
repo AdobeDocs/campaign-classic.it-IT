@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 828c95aaa4b1d0d9507129edb164ddf978c363c1
+source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
 
 ---
 
@@ -40,7 +40,7 @@ Il diagramma seguente mostra i join tra le principali tabelle aziendali del mode
 
 ![](assets/data-model_simplified-diagram.png)
 
-Il modello dati Adobe Campaign predefinito include le tabelle principali seguenti.
+Il modello dati di Adobe Campaign predefinito include le tabelle principali elencate di seguito.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -108,11 +108,15 @@ La struttura ad albero è gestita dai campi iParentId e iChildCount. Il campo sF
 
 ## Consegna e monitoraggio {#delivery-and-tracking}
 
+Questo insieme di tabelle è collegato al modulo **Consegna** , che consente di monitorare le consegne e eventuali problemi riscontrati durante l&#39;invio dei messaggi. Per ulteriori informazioni, consulta [Monitoraggio delle consegne](../../delivery/using/monitoring-a-delivery.md). Per ulteriori informazioni sul tracciamento, vedi [Tracciamento dei messaggi](../../delivery/using/about-message-tracking.md).
+
 ![](assets/data-model_delivery.png)
 
 **NmsBroadLogMsg**: Questa tabella corrisponde allo schema **nms:wideLogMsg** . Si tratta di un&#39;estensione della tabella del registro di consegna.
 
 ## Gestione delle campagne {#campaign-management}
+
+Questo insieme di tabelle è collegato al modulo Campagne **** marketing, che consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Per ulteriori informazioni, consulta [Informazioni sulle campagne](../../campaign/using/designing-marketing-campaigns.md)di marketing.
 
 ![](assets/data-model_campaign.png)
 
@@ -128,6 +132,8 @@ La struttura ad albero è gestita dai campi iParentId e iChildCount. Il campo sF
 
 ## Coerenza delle comunicazioni {#communication-consistency}
 
+Questo insieme di tabelle è collegato al modulo **Campaign Optimization** , che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per ulteriori informazioni, consultate [Informazioni sulle tipologie di campagne](../../campaign/using/about-campaign-typologies.md).
+
 ![](assets/data-model_typology.png)
 
 * **NmsTypologyRule**: Questa tabella corrisponde allo schema **nms:typologyRule** . Contiene le regole che si applicano alle consegne a seconda delle tipologie.
@@ -137,6 +143,8 @@ La struttura ad albero è gestita dai campi iParentId e iChildCount. Il campo sF
 * **NmsVolumeConsumed**: Questa tabella corrisponde allo schema **nms:volumeConsumed** . Contiene tutte le linee di consumo delle regole di capacità.
 
 ## Gestione delle risposte {#response-management}
+
+Questo insieme di tabelle è collegato al modulo **Response Manager** , che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerta per tutti i canali di comunicazione. Per ulteriori informazioni, consultate [Informazioni su Gestione](../../campaign/using/about-response-manager.md)risposte.
 
 ![](assets/data-model_response.png)
 
@@ -196,6 +204,8 @@ Contiene un record che rappresenta la reazione di un individuo a una data ipotes
 
 ## Simulazione e consegna {#simulation-and-delivery}
 
+Questo insieme di tabelle è collegato al modulo **Simulazione** , che consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari. Per ulteriori informazioni, consultate [Informazioni sulla simulazione](../../interaction/using/about-offers-simulation.md)delle offerte.
+
 ![](assets/data-model_simulation.png)
 
 * **NmsSimulation**: Questa tabella corrisponde allo schema **nms:simulazione** . Rappresenta una simulazione per un insieme di consegne o offerte su una determinata popolazione.
@@ -203,6 +213,8 @@ Contiene un record che rappresenta la reazione di un individuo a una data ipotes
 * **NmsOfferSimulationRel**: Questa tabella corrisponde allo schema **nms:offerSimulationRel** . Consente di collegare una simulazione a un’offerta.
 
 ## Modulo di interazione {#interaction-module}
+
+Questo insieme di tabelle è collegato al modulo **Interazione** , che permette di rispondere in tempo reale durante un&#39;interazione con un determinato contatto, rendendogli una o più offerte adattate. Per ulteriori informazioni, consulta Gestione delle [interazioni e delle](../../interaction/using/interaction-and-offer-management.md)offerte.
 
 * **NmsOffer**: Questa tabella corrisponde allo schema **nms:offer** . Contiene la definizione di ogni offerta di marketing.
 * **NmsPropositionRcp**: Questa tabella corrisponde allo schema **nms:propositionRcp** . Contiene il registro multicanale delle proposte di marketing inviate a ciascun utente. Il record viene creato quando una proposta viene preparata o effettivamente fatta a un individuo.
@@ -213,6 +225,8 @@ Contiene un record che rappresenta la reazione di un individuo a una data ipotes
 * **NmsOfferEnv**: Questa tabella corrisponde a **nms:offerEnv**. Contiene gli ambienti delle offerte.
 
 ## Modulo Centro messaggi {#message-center-module}
+
+Il seguente insieme di tabelle è collegato al modulo **Transactional messaging** (Message Center), che consente di gestire le comunicazioni singole ed univoche inviate a un utente e generate da eventi attivati dai sistemi informativi. Per ulteriori informazioni, vedere [Informazioni sui messaggi](../../message-center/using/about-transactional-messaging.md)transazionali.
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -226,15 +240,19 @@ Questa tabella corrisponde allo schema **nms:rtEvent** . Contiene una definizion
 
 Questa tabella corrisponde allo schema **nms:batchEvent** . Contiene la definizione degli eventi per batch.
 
-## Modulo Microsites {#microsites-module}
+<!--## Microsites Module {#microsites-module}
+
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
 ![](assets/data-model_microsites.png)
 
-* **NmsTrackingUrl**: Questa tabella corrisponde allo schema **nms:trackingUrl** .
+* **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: Questa tabella corrisponde allo schema **nms:purl** .
+* **NmsPurl**: This table matches the **nms:purl** schema.-->
 
 ## Modulo NMAC {#nmac-module}
+
+Questo insieme di tabelle è collegato al canale **app** mobile, che consente di inviare notifiche personalizzate ai terminali iOS e Android tramite app. Per ulteriori informazioni, consulta [Informazioni sul canale](../../delivery/using/about-mobile-app-channel.md)delle app mobili.
 
 * **NmsMobileApp**: Questa tabella corrisponde allo schema **nms:mobileApp** . Contiene le applicazioni mobili definite in Adobe Campaign.
 * **NmsAppSubscription**: Questa tabella corrisponde allo schema **nms:appSubscription** . Contiene le informazioni degli abbonati relative a una o più applicazioni.
@@ -244,6 +262,8 @@ Questa tabella corrisponde allo schema **nms:batchEvent** . Contiene la definizi
 * **NmsBroadLogAppSubRcp**: Questa tabella corrisponde allo schema **nms:wideLogAppSubRcp** .
 
 ## Modulo di marketing social {#social-marketing-module}
+
+Questo insieme di tabelle è collegato al modulo **Gestione dei social network** , che consente di interagire con clienti e potenziali clienti tramite Facebook e Twitter. Per ulteriori informazioni, consultate [Informazioni sul marketing](../../social/using/about-social-marketing.md)social.
 
 ![](assets/data-model_social.png)
 
