@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ae44e38e9d05478e8ebfacb1e063cdfd5d7ff30c
+source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
 
 ---
 
@@ -50,6 +50,34 @@ In generale, sono necessari i seguenti diritti:
 * **EXPLAIN** (consigliato): per monitorare le prestazioni in caso di problemi,
 * **SCRIVI dati** (a seconda dello scenario di integrazione).
 
->[!NOTE]
->
->L&#39;amministratore del database deve far corrispondere questi diritti ai diritti specifici di ciascun motore di database. Per ulteriori informazioni, fare riferimento a diritti [specifici](https://docs.adobe.com/content/help/en/campaign-classic/using/assets/fda_rdbms_rights.pdf)RDBMS.
+L&#39;amministratore del database deve far corrispondere questi diritti ai diritti specifici di ciascun motore di database. Per ulteriori informazioni, consulta la sezione seguente.
+
+## Diritti FDA {#fda-rights}
+
+|   | Fiocco di neve | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Connessione al database remoto** | UTILIZZO IN MAGAZZINO E UTILIZZO SUI privilegi DI DATABASE | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
+| **Creazione di tabelle** | CREA IL privilegio TABELLA SU SCHEMA | CREA privilegio | CREATE TABLE, privilegio | CREA autorizzazione TABELLA | CREA privilegio | CREA privilegio |
+| **Creazione di indici** | N/D | CREA privilegio | Privilegi INDEX o CREATE ANY INDEX | Autorizzazione ALTER | CREA privilegio | Privilegio INDEX |
+| **Creazione di funzioni** | CREA FUNZIONE SUL privilegio SCHEMA | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | Autorizzazione CREATE FUNCTION | Privilegio USAGE | CREA privilegio ROUTINE |
+| **Creazione di procedure** | CREA PROCEDURA SUL privilegio SCHEMA | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | AUTORIZZAZIONE CREA PROCEDURA | Privilegio USAGE (le procedure sono funzioni) | CREA privilegio ROUTINE |
+| **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Proprietario dell&#39;oggetto | Proprietario dell&#39;oggetto o superutente | DROP ANY &lt; oggetto >, privilegio | Autorizzazione ALTER | Tabella: proprietario dell&#39;indice della tabella: proprietario della funzione di indice: proprietario della funzione | Privilegio DROP |
+| **Monitoraggio delle esecuzioni** | Privilegio MONITOR sull&#39;oggetto richiesto | Nessun privilegio richiesto per utilizzare il comando EXPLAIN | Privilegi INSERT e SELECT e privilegi necessari per eseguire l&#39;istruzione su cui si basa il PIANO EXPLAIN | Autorizzazione SHOWPLAN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | SELECT, privilegio |
+| **Scrittura dei dati** | Privilegi INSERT e/o UPDATE (a seconda dell&#39;operazione di scrittura) | Privilegi INSERT e UPDATE | INSERIRE, AGGIORNARE, INSERIRE E AGGIORNARE QUALSIASI privilegio TABELLA | Autorizzazioni INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE |
+| **Caricamento di dati nelle tabelle** | CREA STAGE ON SCHEMA, SELEZIONA e INSERISCI sui privilegi della tabella di destinazione | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT | INSERIRE, AMMINISTRARE LE OPERAZIONI DI BULK E MODIFICARE LE AUTORIZZAZIONI TABELLA | Privilegi SELECT e INSERT | Privilegio FILE |
+| **Accesso ai dati del client** | SELECT on (FUTURE) TABLE(S) o VIEW(S) Privilegi | SELECT, privilegio | SELEZIONARE O SELEZIONARE QUALSIASI privilegio TABELLA | SELECT, autorizzazione | SELECT, privilegio | SELECT, privilegio |
+| **Accesso ai metadati** | Selezionare il privilegio INFORMATION_SCHEMA SCHEMA | SELECT, privilegio | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione DESCRIBE | VISUALIZZA autorizzazione DEFINIZIONE | Nessun privilegio richiesto per l&#39;utilizzo del comando &quot;\d table&quot; | SELECT, privilegio |
+
+|   | DB2 UDB | TeraData | InfiniDB | IQ Sybase / Sybase ASE | Netezza | Greenplum | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Connessione al database remoto** | AUTORIZZAZIONE CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione CONNECT | Nessun privilegio richiesto | CONNECT, privilegio | CONNECT, privilegio |
+| **Creazione di tabelle** | Autorità CREATETAB | CREA TABELLA o TABELLA, parola chiave | CREA privilegio | Autorità di RISORSA e autorizzazione CREATE | TABLE, privilegio | CREA privilegio | CREA privilegio |
+| **Creazione di indici** | Privilegio INDEX | CREATE INDEX o parola chiave INDEX | Privilegio INDEX | Autorità di RISORSA e autorizzazione CREATE | Privilegio INDEX | CREA privilegio | CREA privilegio |
+| **Creazione di funzioni** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA FUNZIONE o FUNZIONE, parola chiave | CREA privilegio ROUTINE | Autorità di RISORSA o autorità DBA per le funzioni Java | Privilegio FUNCTION | Privilegio USAGE | CREA privilegio FUNCTION |
+| **Creazione di procedure** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA PROCEDURA o PROCEDURA, parola chiave | CREA privilegio ROUTINE | Autorità delle risorse | Privilegio di PROCEDURA | Privilegio USAGE | CREA privilegio FUNCTION |
+| **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Privilegio DROPIN o privilegio CONTROL o proprietario dell&#39;oggetto | DROP &lt; oggetto > o parola chiave correlata a un oggetto | Privilegio DROP | Proprietario dell&#39;oggetto o dell&#39;autorità DBA | Privilegio DROP | Proprietario dell&#39;oggetto | Proprietario dell&#39;oggetto |
+| **Monitoraggio delle esecuzioni** | EXPLAIN, autorità | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | SELECT, privilegio | Solo un amministratore di sistema può eseguire sp_showplan | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN |
+| **Scrittura dei dati** | Privilegi INSERT e UPDATE o autorità ACCESS DATA | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE | Autorizzazioni INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE |
+| **Caricamento di dati nelle tabelle** | AUTORIZZAZIONE DI CARICO | Privilegi SELECT e INSERISCI per utilizzare rispettivamente le istruzioni COPY TO e COPY FROM | Privilegio FILE | Proprietario della tabella o autorizzazione ALTER. A seconda dell&#39;opzione -gl, LOAD TABLE può essere eseguito solo se l&#39;utente ha l&#39;autorità DBA | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT |
+| **Accesso ai dati del client** | Privilegi INSERT/UPDATE o autorità DATAACCESS | SELECT, privilegio | SELECT, privilegio | SELECT, autorizzazione | SELECT, privilegio | SELECT, privilegio | SELECT, privilegio |
+| **Accesso ai metadati** | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | SHOW, privilegio | SELECT, privilegio | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | Nessun privilegio richiesto per l&#39;utilizzo del comando &quot;\d table&quot; | Nessun privilegio richiesto per l&#39;utilizzo del comando &quot;\d table&quot; | Nessun privilegio richiesto per l&#39;utilizzo del comando SHOW |
