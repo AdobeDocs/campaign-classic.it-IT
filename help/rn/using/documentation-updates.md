@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 295dcd0ac302194df5e202ccabb579f006ed5651
+source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
 
 ---
 
@@ -25,6 +25,16 @@ Scopri tutti gli ultimi aggiornamenti della documentazione di Adobe Campaign Cla
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti della documentazione per ciascuna versione di Adobe Campaign Classic.
 
 Puoi anche consultare le note [sulla versione di](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Aprile 2020 {#april-2020}
+
+La tabella dei diritti FDA è stata spostata nella documentazione di accesso a un database esterno (FDA). [Leggi tutto](../../platform/using/remote-database-access-rights.md)
+
+Le domande frequenti sono state aggiornate con suggerimenti su come cancellare la cache soft e hard. [Leggi tutto](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+
+La sezione Best practice del modello dati è stata migliorata con ulteriori informazioni sugli indici. [Leggi tutto](../../configuration/using/data-model-best-practices.md#indexes)
+
+La sezione che descrive il modello di dati predefiniti di Adobe Campaign è stata aggiornata con ulteriori dettagli su ciascuna tabella out-of-the-box e con collegamenti ai moduli pertinenti. [Leggi tutto](../../configuration/using/data-model-description.md)
 
 ## Marzo 2020 {#march-2020}
 
@@ -353,7 +363,7 @@ Spostata la sezione su come utilizzare gli indirizzi iniziali nel capitolo Panor
 
 È stato aggiunto un nuovo caso di utilizzo del flusso di lavoro: Gestione degli aggiornamenti dalle esecuzioni dei flussi di lavoro simultanee. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
-La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e con una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
+La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
 La sezione &quot;SpamAssassin&quot; è stata migliorata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
 
