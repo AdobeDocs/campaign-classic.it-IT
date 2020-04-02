@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
@@ -67,14 +67,46 @@ I database esterni compatibili con Campaign tramite Federated Data Access (FDA) 
 
 ## Adobe Campaign può integrarsi con LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
-In qualità di clienti interni/ibridi, puoi integrare Campaign Classic con la directory LDAP.
+In qualità di clienti interni/ibridi, puoi integrare Campaign Classic con la tua directory LDAP.
 
 [Clicca qui per scoprire come](../../installation/using/connecting-through-ldap.md).
 
 ## Come posso impostare i connettori CRM in Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
 
-Adobe Campaign fornisce diversi connettori CRM per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori CRM consentono di sincronizzare contatti, account, acquisti ecc. Facilitano l&#39;integrazione dell&#39;applicazione con diverse applicazioni di terze parti e aziendali.
+Adobe Campaign fornisce diversi connettori CRM per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori CRM consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l&#39;integrazione dell&#39;applicazione con diverse applicazioni di terze parti e aziendali.
 
 Questi connettori consentono un&#39;integrazione rapida e semplice dei dati: Adobe Campaign fornisce una procedura guidata dedicata per la raccolta e la selezione delle risorse tra le tabelle disponibili in CRM. Questo garantisce la sincronizzazione bidirezionale per garantire che i dati siano sempre aggiornati in tutti i sistemi.
 
 Leggi [Configurare i connettori](../../platform/using/crm-connectors.md) CRM per apprendere come sincronizzare lo strumento CRM con Adobe Campaign. Guardate questo video sull&#39;integrazione con [Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+
+## Come eseguire Soft Cache Clear quando i problemi sono specifici del computer o dell&#39;utente? {#perform-soft-cache-clear}
+
+In caso di problemi come il nuovo logo che si riflette correttamente, in grado di esportare con successo i dati specifici del computer o dell&#39;utente, potrebbe essere necessario eseguire una cancellazione della cache software con Windows (Windows 7, Windows XP, Windows 10).
+
+Dopo aver effettuato l&#39;accesso, andate a **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Dopo questo, disconnettetevi ed effettuate nuovamente l&#39;accesso.
+
+![](assets/faq_soft_cache.png)
+
+Se questo non è ancora utile, provate a cancellare la cache rigida eseguendo i passaggi indicati di seguito.
+
+## Come eseguire Hard Cache Clear quando i problemi sono specifici del computer o dell&#39;utente? {#perform-hard-cache-clear}
+
+In caso di problemi quali il riflesso corretto dei nuovi logo, in grado di esportare con successo i dati specifici del computer o dell&#39;utente, potrebbe essere necessario eseguire una cancellazione dalla cache rigida con Windows (Windows 7, Windows XP, Windows 10).
+
+1. Nella console client, scegliete **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+
+1. Disconnettetevi e chiudete la console client (client avanzato).
+
+1. Andate nelle seguenti posizioni, in base alla versione del sistema operativo in uso:
+
+   * Windows 7: C:\Users\&lt; Nome utente > \AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Nome utente >\Application Data\Neolane\NL_5
+   Qui troverete molti file xml denominati nlclient-config-&lt; valore alfanumerico >.xml.
+
+1. Eliminate questi file xml e le cartelle associate.
+
+   >[!CAUTION]
+   >
+   >Non eliminate il file nlclient_cnx.xml.
+
+1. Accedere alla console client.
