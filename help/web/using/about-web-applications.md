@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
 
 ---
 
@@ -38,23 +38,23 @@ Questo capitolo fornisce una panoramica della gestione delle applicazioni Web.
 
 Le applicazioni Web in Adobe Campaign consentono di accedere alle seguenti funzionalità:
 
-* Creazione di moduli con più pagine,
-* Gestione delle indagini multilingue con uno strumento di traduzione integrato,
-* Interfaccia grafica per la gestione delle pagine, layout a più colonne,
-* Personalizzazione del rendering e posizione sul campo,
-* Visualizzazione condizionale dei campi del sondaggio in base alle risposte,
-* Visualizzazione casuale delle domande,
-* Visualizzazione della pagina condizionale,
-* Controllo delle informazioni prima della convalida in base al tipo di dati previsto (numero, indirizzo e-mail, data, ecc.) e i campi obbligatori,
-* inviti e-mail o notifiche,
-* Personalizzazione di messaggi di errore e messaggi finali,
-* Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc.
-* Monitoraggio delle risposte in tempo reale.
+* Creazione di moduli con più pagine. Per ulteriori informazioni, consultare questa [pagina](../../web/using/about-web-forms.md).
+* Gestione multilingue dei sondaggi con uno strumento di traduzione integrato. Per ulteriori informazioni, consultare questa [pagina](../../web/using/translating-a-web-application.md).
+* Interfaccia grafica per la gestione delle pagine, layout a più colonne. Per ulteriori informazioni, consultare questa [pagina](../../web/using/designing-a-web-application.md).
+* Personalizzazione del rendering e posizione del campo. Per ulteriori informazioni, consultare questa [pagina](../../web/using/editing-content.md#adding-personalization-content).
+* Visualizzazione condizionale dei campi del sondaggio in base alle risposte. Per ulteriori informazioni, consultare questa [pagina](../../web/using/form-rendering.md#defining-fields-conditional-display).
+* Visualizzazione casuale delle domande. Per ulteriori informazioni, consultare questa [pagina](../../web/using/building-a-survey.md#adding-questions).
+* Visualizzazione della pagina condizionale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+* Controllo delle informazioni prima della convalida in base al tipo di dati previsto (numero, indirizzo e-mail, data, ecc.) e i campi obbligatori. Per ulteriori informazioni, consultare questa [pagina](../../web/using/form-rendering.md#defining-control-settings).
+* Inviti e-mail o notifiche. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Personalizzazione dei messaggi di errore e di fine. Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
+* Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. Per ulteriori informazioni, consultare questa [pagina](../../web/using/editing-content.md).
+* Monitoraggio delle risposte in tempo reale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
 Il modulo di creazione **sondaggio** opzionale offre le seguenti funzionalità aggiuntive:
 
-* Estensione dinamica del database: creazione di risposte non incluse nel modello di dati iniziale,
-* Generazione di rapporti dedicati.
+* Estensione dinamica del database: creazione di risposte non incluse nel modello dati iniziale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/managing-answers.md#storing-collected-answers).
+* Generazione di rapporti dedicati. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
 
@@ -68,11 +68,11 @@ Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semp
 
 Per creare e pubblicare un&#39;applicazione Web, è necessario:
 
-1. Creare il contenuto (campi, elenchi, tabelle, grafici ecc.).
+1. Creare il contenuto (campi, elenchi, tabelle, grafici, ecc.).
 
    È inoltre possibile visualizzare la sezione con i dettagli dei campi disponibili per i moduli: tutti questi campi sono disponibili anche per le applicazioni Web. Queste informazioni sono disponibili in [questa pagina](../../web/using/adding-fields-to-a-web-form.md).
 
-1. Se necessario, potete aggiungere passaggi di precaricamento, test e salvataggio e configurare il sistema di controllo degli accessi (principalmente all&#39;interno del framework di una pubblicazione extranet).
+1. Se necessario, potete aggiungere passaggi di precaricamento, test e salvataggio e configurare il sistema di controllo dell&#39;accesso (principalmente all&#39;interno del framework di una pubblicazione extranet).
 1. Pubblicazione dell&#39;applicazione Web per renderla disponibile su una rete extranet o in Adobe Campaign.
 
 ## Configurazione iniziale applicazione Web {#web-application-initial-configuration}
