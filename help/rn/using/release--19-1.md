@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
 
 ---
 
@@ -74,7 +74,13 @@ _13 agosto 2019_
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **marzo 2020**: nuova build (9032-...205c981c3) che include la seguente correzione:
+![](assets/green_2.png) 3 **aprile 2020**: nuova build (9032-...e8b36257e) che include la seguente correzione:
+
+* Stiamo introducendo un meccanismo di firma per il monitoraggio dei collegamenti nelle e-mail al fine di prevenire potenziali utilizzi dannosi (phishing). Ciò impedisce la riscrittura dei parametri di tracciamento che possono includere un URL utilizzato per reindirizzare l’utente. Questo meccanismo è attualmente disattivato per impostazione predefinita. Per attivarla, contatta l&#39;Assistenza clienti.
+
+* È stata aggiunta una protezione complementare per impedire il reindirizzamento degli URL con formato errato generati dalle build precedenti o quando il meccanismo di firma è disattivato. Contatta l&#39;Assistenza clienti se hai bisogno di utilizzarla.
+
+![](assets/orange_2.png) 5 **marzo 2020**: nuova build (9032-...205c981c3) che include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
@@ -126,7 +132,7 @@ _21 giugno 2019_
 
 _30 maggio 2019_
 
-**Cosa c&#39;è di nuovo?**
+**Novità?**
 
 <table> 
  <thead> 
