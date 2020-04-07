@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 11aab98507be594bde79e21c9a5e8ae0b2e8fe36
+source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
 
 ---
 
@@ -35,6 +35,10 @@ Le domande frequenti sono state aggiornate con suggerimenti su come cancellare l
 La sezione Best practice del modello dati è stata migliorata con ulteriori informazioni sugli indici. [Leggi tutto](../../configuration/using/data-model-best-practices.md#indexes)
 
 La sezione che descrive il modello di dati predefiniti di Adobe Campaign è stata aggiornata con ulteriori dettagli su ciascuna tabella out-of-the-box e con collegamenti ai moduli pertinenti. [Leggi tutto](../../configuration/using/data-model-description.md)
+
+I casi di utilizzo della guida &quot;Automazione con i flussi di lavoro&quot; sono stati riorganizzati in sezioni tematiche. [Leggi tutto](../../workflow/using/using-the-local-approval-activity.md)
+
+Le sezioni [Bounce Mail Qualified](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) and [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) sono state migliorate con informazioni aggiornate.
 
 ## Marzo 2020 {#march-2020}
 
@@ -174,9 +178,9 @@ La sezione Gestione dell&#39;accesso è stata aggiornata con il diritto **alla**
 
 Sono state aggiunte informazioni per specificare che il contenuto dei campi di personalizzazione non può superare i 1024 caratteri. [Leggi tutto](../../delivery/using/personalization-fields.md)
 
-La documentazione del Pannello di controllo è stata integrata nel nuovo set di documenti collaborativi. [Leggi tutto](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+La documentazione del Pannello di controllo è stata integrata nel nuovo set di documenti collaborativi. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
-La guida introduttiva sulle procedure ottimali per la distribuzione è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+La guida introduttiva sulle procedure ottimali per la distribuzione è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/delivery-best-practices.html)
 
 ## Ottobre 2019 {#october-2019}
 
@@ -188,7 +192,7 @@ In Campaign Classic è stata aggiunta una nuova pagina per la risoluzione dei pr
 
 È stata aggiunta una nuova pagina contenente le procedure ottimali per Adobe Analytics Data Connector. [Ulteriori informazioni su Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
-La guida introduttiva sulle procedure ottimali per la distribuzione è stata spostata e aggiornata. [Leggi tutto](https://helpx.adobe.com/campaign/kb/delivery-best-practices.html)
+La guida introduttiva sulle procedure ottimali per la distribuzione è stata spostata e aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/delivery-best-practices.html)
 
 È stata aggiunta una raccomandazione alla documentazione del canale SMS per evitare problemi quando si utilizzano più account esterni utilizzando il connettore SMPP generico esteso con lo stesso account provider. [Leggi tutto](../../delivery/using/sms-channel.md#automatic-reply)
 
@@ -210,7 +214,7 @@ Sono state aggiornate le best practice per migliorare le prestazioni di flussi d
 
 **Nuove funzionalità incluse nella release**
 
-Pannello di controllo - [Leggi tutto](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Pannello di controllo - [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
 Audit trail - [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
@@ -363,7 +367,7 @@ Spostata la sezione su come utilizzare gli indirizzi iniziali nel capitolo Panor
 
 È stato aggiunto un nuovo caso di utilizzo del flusso di lavoro: Gestione degli aggiornamenti dalle esecuzioni dei flussi di lavoro simultanee. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
-La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
+La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e con una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
 La sezione &quot;SpamAssassin&quot; è stata migliorata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
 
