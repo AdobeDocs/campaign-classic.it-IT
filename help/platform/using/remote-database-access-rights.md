@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
+source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 
 ---
 
@@ -46,7 +46,7 @@ In generale, sono necessari i seguenti diritti:
 * **LEGGI dati**: accesso in sola lettura alle tabelle contenenti i dati dei clienti,
 * **LEGGI &#39;MetaData&#39;**: accesso ai cataloghi di dati del server per ottenere la struttura della tabella,
 * **CARICA**: carico di massa nelle tabelle di lavoro (richiesto quando si lavora su raccolte e join),
-* **CREA/RILASCIA** PER **TABELLA/INDICE/PROCEDURA/FUNZIONE**,
+* **CREA/RILASCIA** per **TABELLA/INDICE/PROCEDURA/FUNZIONE** (solo per le tabelle di lavoro generate da Adobe Campaign),
 * **EXPLAIN** (consigliato): per monitorare le prestazioni in caso di problemi,
 * **SCRIVI dati** (a seconda dello scenario di integrazione).
 
@@ -56,11 +56,11 @@ L&#39;amministratore del database deve far corrispondere questi diritti ai dirit
 
 |   | Fiocco di neve | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Connessione al database remoto** | UTILIZZO IN MAGAZZINO E UTILIZZO SUI privilegi DI DATABASE | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
+| **Connessione al database remoto** | UTILIZZO IN MAGAZZINO, UTILIZZO SUL DATABASE E UTILIZZO SUI privilegi DELLO SCHEMA | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
 | **Creazione di tabelle** | CREA IL privilegio TABELLA SU SCHEMA | CREA privilegio | CREATE TABLE, privilegio | CREA autorizzazione TABELLA | CREA privilegio | CREA privilegio |
 | **Creazione di indici** | N/D | CREA privilegio | Privilegi INDEX o CREATE ANY INDEX | Autorizzazione ALTER | CREA privilegio | Privilegio INDEX |
 | **Creazione di funzioni** | CREA FUNZIONE SUL privilegio SCHEMA | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | Autorizzazione CREATE FUNCTION | Privilegio USAGE | CREA privilegio ROUTINE |
-| **Creazione di procedure** | CREA PROCEDURA SUL privilegio SCHEMA | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | AUTORIZZAZIONE CREA PROCEDURA | Privilegio USAGE (le procedure sono funzioni) | CREA privilegio ROUTINE |
+| **Creazione di procedure** | N/D | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | AUTORIZZAZIONE CREA PROCEDURA | Privilegio USAGE (le procedure sono funzioni) | CREA privilegio ROUTINE |
 | **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Proprietario dell&#39;oggetto | Proprietario dell&#39;oggetto o superutente | DROP ANY &lt; oggetto >, privilegio | Autorizzazione ALTER | Tabella: proprietario dell&#39;indice della tabella: proprietario della funzione di indice: proprietario della funzione | Privilegio DROP |
 | **Monitoraggio delle esecuzioni** | Privilegio MONITOR sull&#39;oggetto richiesto | Nessun privilegio richiesto per utilizzare il comando EXPLAIN | Privilegi INSERT e SELECT e privilegi necessari per eseguire l&#39;istruzione su cui si basa il PIANO EXPLAIN | Autorizzazione SHOWPLAN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | SELECT, privilegio |
 | **Scrittura dei dati** | Privilegi INSERT e/o UPDATE (a seconda dell&#39;operazione di scrittura) | Privilegi INSERT e UPDATE | INSERIRE, AGGIORNARE, INSERIRE E AGGIORNARE QUALSIASI privilegio TABELLA | Autorizzazioni INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE |
