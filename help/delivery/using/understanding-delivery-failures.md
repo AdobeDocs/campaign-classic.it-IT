@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e34e49d66f5d943951cd5d9a11d45df9af544ba
+source-git-commit: e5a2ef47108c6779a744197638e2de9d1072cfe3
 
 ---
 
@@ -102,7 +102,7 @@ I possibili motivi di un mancato recapito sono:
   </tr> 
   <tr> 
    <td> Errore ignorato </td> 
-   <td> Nessun errore </td> 
+   <td> Ignorato </td> 
    <td> 25 </td> 
    <td> L'indirizzo è inserito nella white list. L’errore viene quindi ignorato e viene inviato un messaggio e-mail.<br /> </td> 
   </tr> 
@@ -238,25 +238,28 @@ I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 
 * **[!UICONTROL To qualify]** : impossibile qualificare il messaggio di rimbalzo. La qualifica deve essere assegnata al team di distribuzione per garantire una distribuzione efficiente della piattaforma. Finché non è qualificato, il messaggio di rimbalzo non viene utilizzato per arricchire l&#39;elenco delle regole di gestione delle e-mail.
 * **[!UICONTROL Keep]** : il messaggio di rimbalzo è stato qualificato e verrà utilizzato dal flusso di lavoro **Aggiorna per la recapito** , da confrontare con le regole di gestione e-mail esistenti e arricchire l&#39;elenco.
-* **[!UICONTROL Ignore]** : il messaggio di rimbalzo era qualificato ma non verrà utilizzato dal flusso di lavoro **Aggiorna per la recapito** . Non verrà inviato alle istanze client.
+* **[!UICONTROL Ignore]** : il messaggio di rimbalzo viene ignorato dall&#39;MTA della campagna, il che significa che questo messaggio di rimbalzo non causerà mai la quarantena dell&#39;indirizzo del destinatario. Non verrà utilizzato dal flusso di lavoro **Aggiorna per la recapito** e non verrà inviato alle istanze client.
 
 ![](assets/deliverability_qualif_status.png)
 
-Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato:
-
-* I titoli di rimbalzo contenuti nella **[!UICONTROL Delivery log qualification]** tabella non vengono più utilizzati per i messaggi di errore di consegna sincrona. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
-
+>[!NOTE]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato:
+>
+>* I titoli di rimbalzo contenuti nella **[!UICONTROL Delivery log qualification]** tabella non vengono più utilizzati per i messaggi di errore di consegna sincrona. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
+   >
+   >
 * I rimbalzi asincroni sono ancora qualificati dal processo inMail attraverso le **[!UICONTROL Inbound email]** regole. Per ulteriori informazioni, consultate Regole di gestione delle [e-mail](#email-management-rules).
-
+   >
+   >
 * Per le istanze che utilizzano l&#39;MTA avanzata senza **Webhooks/EFS**, le **[!UICONTROL Inbound email]** regole saranno utilizzate anche per elaborare le e-mail di rimbalzo sincrone provenienti dall&#39;MTA avanzata, utilizzando lo stesso indirizzo e-mail come per le e-mail di rimbalzo asincrone.
-
+>
+>
 Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 ### Regole di gestione e-mail {#email-management-rules}
 
 Le regole della posta sono accessibili tramite il **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** nodo. Le regole di gestione e-mail sono visualizzate nella parte inferiore della finestra.
-
-Queste regole contengono l&#39;elenco di stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l&#39;errore (**Hard**, **Soft** o **Ignored**).
 
 ![](assets/tech_quarant_rules.png)
 
@@ -264,67 +267,61 @@ Queste regole contengono l&#39;elenco di stringhe di caratteri che possono esser
 >
 >I parametri predefiniti della piattaforma sono configurati nella procedura guidata di distribuzione. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/deploying-an-instance.md).
 
-Le regole predefinite sono le seguenti:
-
-* **E-mail in ingresso**
-
-   Quando un&#39;e-mail ha esito negativo, il server remoto restituisce un messaggio di rimbalzo all&#39;indirizzo specificato nei parametri della piattaforma.
-
-   Adobe Campaign confronta il contenuto di ogni messaggio di rimbalzo con le stringhe nell&#39;elenco delle regole, quindi le assegna uno dei tre tipi di errore.
-
-   L&#39;utente può creare regole personalizzate.
-
-   >[!IMPORTANT]
-   >
-   >Quando importate un pacchetto e aggiornate i dati tramite il flusso di lavoro **Aggiorna per la recapito** , le regole create dall&#39;utente vengono sovrascritte.
-
-   Per ulteriori informazioni sulla qualifica della posta indesiderata, consulta [questa sezione](#bounce-mail-qualification).
-
-   >[!NOTE]
-   >
-   >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, le **[!UICONTROL Inbound email]** regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
-   >
-   >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
-
-* **Gestione del dominio**
-
-   Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole.
-
-   Le regole per i domini Hotmail e MSN sono disponibili per impostazione predefinita in Adobe Campaign.
-
-   Fate clic sull&#39; **[!UICONTROL Detail]** icona per accedere alla configurazione della regola.
-
-   ![](assets/tech_quarant_domain_rules_02.png)
-
-   I parametri **** SMTP fungono da filtri applicati per una regola di blocco.
-
-   * È possibile scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **Sender ID**, **DomainKeys**, **DKIM** e **S/MIME**.
-   * **Relè** SMTP: consente di configurare l’indirizzo IP e la porta di un server di inoltro per un determinato dominio. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
-   Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** l&#39;indirizzo del mittente, assicurarsi di non firmare le e-mail con l&#39;ID **** mittente, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39; **[!UICONTROL Sender ID]** opzione è abilitata, deseleziona la casella corrispondente e contatta il supporto di Adobe Campaign. La sua recapito non verrà influenzata.
-
-   >[!NOTE]
-   >
-   >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le **[!UICONTROL Domain management]** regole non vengono più utilizzate. **La firma dell&#39;autenticazione dell&#39;e-mail DKIM (DomainKeys Identified Mail)** viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini. Non firma con **Sender ID**, **DomainKeys** o **S/MIME** , a meno che non venga specificato diversamente a livello Enhanced MTA.
-   >
-   >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
-
-* **Gestione MX**
-
-   * Le regole di gestione MX vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi.
-
-   * Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole.
-
-   * Per configurare le regole di gestione MX, è sufficiente impostare una soglia e selezionare alcuni parametri SMTP. Una **soglia** è un limite calcolato come percentuale di errore oltre il quale tutti i messaggi verso un dominio specifico vengono bloccati. Ad esempio, nel caso generale, per un minimo di 300 messaggi, l&#39;invio di e-mail viene bloccato per tre ore se il tasso di errore raggiunge il 90%.
-   For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
-
-   >[!NOTE]
-   >
-   >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le regole di **[!UICONTROL MX management]** consegna effettiva non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
-   >
-   >Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+Le regole predefinite sono le seguenti.
 
 >[!IMPORTANT]
 >
 >* Se i parametri sono stati modificati, è necessario riavviare il server di consegna (MTA).
 >* La modifica o la creazione di regole di gestione è riservata esclusivamente agli utenti esperti.
 
+
+#### E-mail in ingresso {#inbound-email}
+
+Queste regole contengono l&#39;elenco di stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l&#39;errore (**Hard**, **Soft** o **Ignored**).
+
+Quando un&#39;e-mail ha esito negativo, il server remoto restituisce un messaggio di rimbalzo all&#39;indirizzo specificato nei parametri della piattaforma. Adobe Campaign confronta il contenuto di ogni messaggio di rimbalzo con le stringhe nell&#39;elenco delle regole, quindi le assegna uno dei tre tipi [di](#delivery-failure-types-and-reasons)errore.
+
+>[!NOTE]
+>
+>L&#39;utente può creare regole personalizzate. Quando importate un pacchetto e aggiornate i dati tramite il flusso di lavoro **Aggiorna per la recapito** , le regole create dall&#39;utente vengono sovrascritte.
+
+Per ulteriori informazioni sulla qualifica della posta indesiderata, consulta [questa sezione](#bounce-mail-qualification).
+
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato e se l’istanza dispone di funzionalità **Webhooks/EFS** , le **[!UICONTROL Inbound email]** regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+>
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+
+#### Gestione del dominio {#domain-management}
+
+Il server di messaggistica di Adobe Campaign applica una singola regola di gestione **del** dominio a tutti i domini.
+
+<!--![](assets/tech_quarant_domain_rules_02.png)-->
+
+* È possibile scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **Sender ID**, **DomainKeys**, **DKIM** e **S/MIME**.
+* I parametri di inoltro **** SMTP consentono di configurare l&#39;indirizzo IP e la porta di un server di inoltro per un dominio specifico. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
+
+Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** l&#39;indirizzo del mittente, assicurarsi di non firmare le e-mail con l&#39;ID **** mittente, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39; **[!UICONTROL Sender ID]** opzione è abilitata, deseleziona la casella corrispondente e contatta il supporto di Adobe Campaign. La sua recapito non verrà influenzata.
+
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le **[!UICONTROL Domain management]** regole non vengono più utilizzate. **La firma dell&#39;autenticazione dell&#39;e-mail DKIM (DomainKeys Identified Mail)** viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini. Non firma con **Sender ID**, **DomainKeys** o **S/MIME** , a meno che non venga specificato diversamente a livello Enhanced MTA.
+>
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+
+#### Gestione MX {#mx-management}
+
+* Le regole di gestione MX vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi.
+
+* Il server di messaggistica di Adobe Campaign applica regole specifiche per i domini, quindi le regole per il caso generale rappresentate da un asterisco nell&#39;elenco delle regole.
+
+* Per configurare le regole di gestione MX, è sufficiente impostare una soglia e selezionare alcuni parametri SMTP. Una **soglia** è un limite calcolato come percentuale di errore oltre il quale tutti i messaggi verso un dominio specifico vengono bloccati. Ad esempio, nel caso generale, per un minimo di 300 messaggi, l&#39;invio di e-mail viene bloccato per tre ore se il tasso di errore raggiunge il 90%.
+
+For more on MX management, refer to [this section](../../installation/using/email-deliverability.md#mx-configuration).
+
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le regole di **[!UICONTROL MX management]** consegna effettiva non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
+>
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
