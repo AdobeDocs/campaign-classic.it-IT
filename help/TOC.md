@@ -1,11 +1,11 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic Help
+user-guide-title: Guida di Adobe Campaign Classic
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
+source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
 
 ---
 
@@ -55,7 +55,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
    + Filtrare dati {#filtering-data}
       + [Opzioni di filtro](platform/using/filtering-options.md)
       + [Creazione di filtri](platform/using/creating-filters.md)
-      + [Caso di utilizzo](platform/using/use-case.md)
+      + [Caso d’uso](platform/using/use-case.md)
    + Creazione di query {#creating-queries}
       + [Informazioni sulle query in Campaign](platform/using/about-queries-in-campaign.md)
       + [Passaggi per creare una query](platform/using/steps-to-create-a-query.md)
@@ -224,7 +224,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Informazioni sull&#39;analisi descrittiva](reporting/using/about-descriptive-analysis.md)
       + [Utilizzo della procedura guidata di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Elaborazione di un report](reporting/using/processing-a-report.md)
-      + [Casi di utilizzo](reporting/using/use-cases.md)
+      + [Casi d’uso](reporting/using/use-cases.md)
    + Creazione di nuovi rapporti {#creating-new-reports}
       + [Creazione di report in Campaign](reporting/using/about-reports-creation-in-campaign.md)
       + [Creazione di un nuovo rapporto](reporting/using/creating-a-new-report.md)
@@ -360,8 +360,8 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Approvazione](workflow/using/approval.md)
       + [Avviso](workflow/using/alert.md)
       + [Attività](workflow/using/task.md)
-   + Attività di azione {#action-activities}
-      + [Informazioni sulle attività di azione](workflow/using/about-action-activities.md)
+   + Attività azione {#action-activities}
+      + [Informazioni sulle attività azione](workflow/using/about-action-activities.md)
       + [Consegna](workflow/using/delivery.md)
       + [Controllo consegna](workflow/using/delivery-control.md)
       + [Consegna continua](workflow/using/continuous-delivery.md)
@@ -384,18 +384,23 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Download Web](workflow/using/web-download.md)
       + [E-mail in entrata](workflow/using/inbound-emails.md)
       + [SMS in ingresso](workflow/using/inbound-sms.md)
-   + Casi di utilizzo {#use-cases}
-      + [Utilizzo dell&#39;attività di approvazione locale](workflow/using/using-the-local-approval-activity.md)
-      + [Invio di un rapporto a un elenco](workflow/using/sending-a-report-to-a-list.md)
-      + [Flussi di lavoro di supervisione](workflow/using/supervising-workflows.md)
-      + [Coordinare gli aggiornamenti dei dati](workflow/using/coordinating-data-updates.md)
-      + [Creazione di un elenco di riepilogo](workflow/using/creating-a-summary-list.md)
-      + [Arricchimento dei dati](workflow/using/enriching-data.md)
-      + [Test A/B](workflow/using/a-b-testing.md)
-      + [Uso degli aggregati](workflow/using/using-aggregates.md)
-      + [Invio di un&#39;e-mail di compleanno](workflow/using/sending-a-birthday-email.md)
-      + [Caricamento del contenuto della consegna](workflow/using/loading-delivery-content.md)
-      + [Flusso di lavoro per la distribuzione tra canali](workflow/using/cross-channel-delivery-workflow.md)
+   + Casi d’uso {#use-cases}
+      + Consegne {#deliveries}
+         + [Utilizzo dell&#39;attività di approvazione locale](workflow/using/using-the-local-approval-activity.md)
+         + [Test A/B](workflow/using/a-b-testing.md)
+         + [Invio di un&#39;e-mail di compleanno](workflow/using/sending-a-birthday-email.md)
+         + [Caricamento del contenuto della consegna](workflow/using/loading-delivery-content.md)
+         + [Flusso di lavoro per la distribuzione tra canali](workflow/using/cross-channel-delivery-workflow.md)
+         + [Arricchimento delle e-mail con campi data personalizzati](workflow/using/email-enrichment-with-custom-date-fields.md)
+      + Monitoraggio {#monitoring}
+         + [Invio di un rapporto a un elenco](workflow/using/sending-a-report-to-a-list.md)
+         + [Flussi di lavoro di supervisione](workflow/using/supervising-workflows.md)
+         + [Invio di avvisi personalizzati agli operatori](workflow/using/sending-personalized-alerts-to-operators.md)
+      + Gestione dei dati {#data-management}
+         + [Coordinare gli aggiornamenti dei dati](workflow/using/coordinating-data-updates.md)
+         + [Creazione di un elenco di riepilogo](workflow/using/creating-a-summary-list.md)
+         + [Arricchimento dei dati](workflow/using/enriching-data.md)
+         + [Uso degli aggregati](workflow/using/using-aggregates.md)
       + Progettazione di query {#designing-queries}
          + [Query della tabella destinatari](workflow/using/querying-recipient-table.md)
          + [Query sulle informazioni di consegna](workflow/using/querying-delivery-information.md)
@@ -405,8 +410,6 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
          + [Aggiunta di un campo calcolato di tipo enumerazione](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Creazione di un filtro](workflow/using/creating-a-filter.md)
          + [Filtrare i destinatari duplicati](workflow/using/filtering-duplicated-recipients.md)
-      + [Invio di avvisi personalizzati agli operatori](workflow/using/sending-personalized-alerts-to-operators.md)
-      + [Arricchimento delle e-mail con campi data personalizzati](workflow/using/email-enrichment-with-custom-date-fields.md)
    + Flussi di lavoro di monitoraggio {#monitoring-workflows}
       + [Esecuzione del flusso di lavoro di monitoraggio](workflow/using/monitoring-workflow-execution.md)
       + [Monitoraggio dei flussi di lavoro tecnici](workflow/using/monitoring-technical-workflows.md)
@@ -523,7 +526,7 @@ source-git-commit: f96ba390baaa92ebe4e0ca09b0d897bc3d7f6328
       + [Cronologia degli eventi del Centro messaggi](message-center/using/history-of-message-center-events.md)
       + [Livello del servizio Centro messaggi](message-center/using/message-center-service-level.md)
       + [Tempo di elaborazione Centro messaggi](message-center/using/message-center-processing-time.md)
-   + Caso di utilizzo {#use-case}
+   + Caso d’uso {#use-case}
       + [Finalità](message-center/using/purpose.md)
       + [Note importanti](message-center/using/important-notes.md)
       + [Implementazione](message-center/using/implementation.md)
