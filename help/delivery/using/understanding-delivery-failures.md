@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e5a2ef47108c6779a744197638e2de9d1072cfe3
+source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
 
 ---
 
@@ -86,7 +86,7 @@ I possibili motivi di un mancato recapito sono:
    <td> Indirizzo Blacklist </td> 
    <td> Rigido </td> 
    <td> 8 </td> 
-   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco di Adobe Campaign Quarantine.<br /> </td> 
+   <td> L'indirizzo è stato inserito in una blacklist al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni durante l'importazione di dati nell'elenco quarantena di Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indirizzo di controllo </td> 
@@ -242,7 +242,7 @@ I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato:
 >
