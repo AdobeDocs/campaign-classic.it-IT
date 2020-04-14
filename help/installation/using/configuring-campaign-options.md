@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+source-git-commit: 05831dbcf2450600a9f2f91f87c4440d7e599c9d
 
 ---
 
@@ -54,7 +54,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span><br /> </td> 
-   <td> Elenco di schemi per i quali si desidera utilizzare gli indirizzi di prova per il rendering in entrata. (i nomi degli elementi sono separati da virgole) Esempio: custom_nms_Recipient.<br /> </td> 
+   <td> Elenco di schemi per i quali si desidera utilizzare gli indirizzi di prova per il rendering in entrata. (i nomi degli elementi sono separati da virgole) Ad esempio: custom_nms_Recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span><br /> </td> 
@@ -94,7 +94,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span><br /> </td> 
-   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per dialogare con il database dei destinatari predefinito (nms:destinatario).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella del destinatario esterno.<br /> </td> 
+   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per avviare una finestra di dialogo con il database del destinatario predefinito (nms:destinatario).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella del destinatario esterno.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span><br /> </td> 
@@ -134,7 +134,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span><br /> </td> 
-   <td> Nome comune del cliente. Utilizzata in alcuni messaggi di avviso visualizzati dai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con ***** o con una società collegata. Per non ricevere più messaggi da *****".<br /> </td> 
+   <td> Nome comune del cliente. Utilizzata in alcuni messaggi di avviso visualizzati dai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con ***** o con una società affiliata. Per non ricevere più messaggi da *****".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span><br /> </td> 
@@ -230,7 +230,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirm</span><br /> </td> 
-   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attivate l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedere <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
+   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> Per eseguire questa operazione, attivare l'opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedere <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span><br /> </td> 
@@ -254,7 +254,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Aggiungete questa opzione con il valore "0" per disabilitare l'edizione del codice XML delle consegne (fate clic con il pulsante destro del mouse / <span class="uicontrol">Edit XML source</span> or <span class="uicontrol">CTRL + F4</span> shortcuts).<br /> </td> 
+   <td> Aggiungete questa opzione con il valore "0" per disabilitare l'edizione del codice XML delle consegne (fate clic con il pulsante destro del mouse / <span class="uicontrol">Edit XML source</span> (Modifica origine <span class="uicontrol">XML) o la scelta rapida</span> CTRL + F4).<br /> </td> 
   </tr> 
   <!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -291,7 +291,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span><br /> </td> 
-   <td> Cartella in cui memorizzare le immagini sul server.<br /> </td> 
+   <td> Cartella in cui devono essere memorizzate le immagini sul server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span><br /> </td> 
@@ -299,7 +299,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span><br /> </td> 
-   <td> Cartella principale per pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e di testo, consultate <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
+   <td> Cartella principale per le pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e di testo, consultate <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span><br /> </td> 
@@ -405,7 +405,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span><br /> </td> 
-   <td> Se è selezionato 1, questa opzione disattiva i controlli ACL durante il download di un file (tramite fileDownload.jsp).<br /> </td> 
+   <td> Se è selezionata l'opzione 1, questa opzione disattiva i controlli ACL durante il download di un file (tramite fileDownload.jsp).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_JSFileSandbox</span><br /> </td> 
@@ -440,8 +440,8 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span><br /> </td> 
    <td> Libreria JavaScript da personalizzare per l'arricchimento degli eventi. Devono contenere l'attuazione di queste due funzioni:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> enrichRtEvents(aiEventId);: arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella degli eventi in tempo reale elaborati).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> enrichBatchEvents(aiEventId);: arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella ID degli eventi batch elaborati).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella degli eventi in tempo reale elaborati).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella ID degli eventi batch elaborati).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -452,8 +452,8 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> <span class="uicontrol">MC_RoutingCustomJs</span><br /> </td> 
    <td> Libreria JavaScript da personalizzare per gli eventi di routing. Devono contenere l'attuazione di queste due funzioni:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> sendRtEvent(iEventId);: restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento in tempo reale (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento in tempo reale elaborato).</p> </li> 
-     <li> <p> <span class="uicontrol"></span> sendBatchEvent(iEventId);: restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento batch (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento batch elaborato).</p> </li> 
+     <li> <p> <span class="uicontrol">sendRtEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento in tempo reale (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento in tempo reale elaborato).</p> </li> 
+     <li> <p> <span class="uicontrol">sendBatchEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento batch (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento batch elaborato).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -576,7 +576,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_PropositionPurgeDelay</span><br /> </td> 
-   <td><p> Consente di definire il ritardo dopo il quale le proposizioni vengono eliminate dal database.</p><p> Questa opzione viene creata automaticamente una volta che il ritardo viene modificato all'interno dell'interfaccia. Se modificate il valore dall'elenco delle opzioni, espresso in secondi.</p><br /> </td> 
+   <td><p> Consente di definire il ritardo dopo il quale le proposizioni vengono cancellate dal database.</p><p> Questa opzione viene creata automaticamente una volta che il ritardo viene modificato all'interno dell'interfaccia. Se modificate il valore dall'elenco delle opzioni, espresso in secondi.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_QuarantineMailboxFull</span><br /> </td> 
@@ -608,7 +608,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_AzureDw</span><br /> </td> 
-   <td> Opzioni del connettore Azure SQL Datawarehouse.<br /> </td> 
+   <td> Opzioni del connettore di Azure SQL Datawarehouse.<br /> </td> 
   </tr>
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span><br /> </td> 
@@ -635,7 +635,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server. In questo modo vengono ottimizzati backup e replica. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">Leggi tutto</a><br /> </td> 
+   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L'opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto.</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Leggi tutto</a><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -670,17 +670,17 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span><br /> </td> 
    <td> Durante la migrazione, la struttura ad albero viene automaticamente riorganizzata in base ai nuovi standard di versione.<br /> Questa opzione consente di disabilitare la migrazione automatica della struttura di navigazione. Se lo utilizzate, dopo la migrazione dovrete eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol"></span> Tipo di dati:Integer</p> </li> 
+     <li> <p> <span class="uicontrol">Tipo di dati:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Valore (testo)</span> : 1 </p> </li> 
     </ul> Questa opzione deve essere utilizzata solo se la struttura di navigazione out-of-the-box ha subito troppe modifiche.<br /> Per ulteriori informazioni, consulta <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStateCoalesce</span><br /> </td> 
-   <td> Data ultima elaborazione della pulizia della tabella <span class="uicontrol">NmsEmailErrorState</span> .<br /> </td> 
+   <td> Data dell’ultima elaborazione della pulizia della tabella <span class="uicontrol">NmsEmailErrorState</span> .<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span><br /> </td> 
-   <td> <br /> Informazioni relative all'errore che si è verificato in Postupgrade, seguendo la sintassi seguente: <strong>{Numero build}:{modalità: pre/post/...}:{L'errore 'lessThan'/'greaterOrEquelThan' in cui si è verificato + sub-step}</strong> </td> 
+   <td> Informazioni relative all'errore che si è verificato in Postupgrade, seguendo la sintassi seguente:<br /> <strong>{Numero build}:{modalità: pre/post/...}:{L'errore 'lessThan'/'greaterOrEquelThan' in cui si è verificato l'errore + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span><br /> </td> 
@@ -717,11 +717,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span><br /> </td> 
-   <td>  Server Adobe Target utilizzato per l'integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde ad Adobe Target Domain Server, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Server Adobe Target utilizzato per l'integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde ad Adobe Target Domain Server, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span><br /> </td> 
-   <td>  Nome organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Nome organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span><br /> </td> 
@@ -950,7 +950,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearch</span><br /> </td> 
-   <td> Abilita ricerca DN nella directory.<br /> </td> 
+   <td> Abilitare la ricerca DN nella directory.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchBase</span><br /> </td> 
@@ -1027,7 +1027,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span><br /> </td> 
-   <td> Elenco indirizzi personalizzato dei server da contattare per l'annullamento della convalida del modulo Web (modalità "altri server").<br /> </td> 
+   <td> Elenco di indirizzi personalizzati dei server da contattare per l'annullamento della convalida del modulo Web (modalità "altri server").<br /> </td> 
   </tr> 
  </tbody> 
 </table>
