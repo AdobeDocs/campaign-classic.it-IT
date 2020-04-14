@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Documentazione di prodotto di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -16,11 +16,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ## Novità
 
-* **[Gestione](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>della privacy Scopri come Adobe Campaign può aiutarti con la conformità alla privacy.
+* **[Conformità](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)**<br/> alla privacy Scopri come Adobe Campaign può aiutarti a rispettare la privacy
 
-* **[Guida](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>al tracciamento Informazioni sulle funzionalità di tracciamento in Campaign
-
-* **[Guida](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>alla manutenzione Scopri come monitorare l&#39;istanza e i processi di Campaign
+* **[Capacità](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> di tracciamento Comprendere le capacità di tracciamento in Campaign
 
 * **[Contenuto interattivo con AMP](delivery/using/defining-interactive-content.md)**<br/>Informazioni sull&#39;invio di e-mail dinamiche con il nuovo formato[AMP per e-mail](https://amp.dev/about/email/)
 
@@ -74,9 +72,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 | Pagine utili | Risorse per sviluppatori |
 |---|---|
 | [Note sulla versione](/help/rn/using/latest-release.md) | [Elenco dei messaggi di errore](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Video dimostrativi](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign Classic Data Model](configuration/using/about-data-model.md) |
-| [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [Documentazione JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Video dimostrativi](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign data model](configuration/using/about-data-model.md) |
+| [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Guida introduttiva a Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Guida all&#39;implementazione](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Aggiornamento Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Guida di tracciamento](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Funzioni obsolete e rimosse](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Elenco di controllo sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Documentazione del Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Note tecniche](https://helpx.adobe.com/campaign/kb/article-list.html) |
+| [Pannello di controllo campagna](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) | [Best practice di monitoraggio](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
