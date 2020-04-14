@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
+source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
 
 ---
 
@@ -151,7 +151,7 @@ Quando un visitatore accede alla home page del sito Web, le offerte con il tema 
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
-Un utente che visita più volte la pagina visualizzerà una o le altre offerte della categoria, poiché a entrambe è stato assegnato lo stesso peso.
+Un utente che visita più volte la pagina visualizzerà una o le altre offerte della categoria, in quanto a entrambe è stato assegnato lo stesso peso.
 
 ## Passaggio a un ambiente anonimo in caso di contatti non identificati {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
@@ -175,7 +175,7 @@ Questo caso di studio si basa sul seguente scenario:
 
    ![](assets/offer_inbound_fallback_example_053.png)
 
-Per implementare questo case study, è necessario disporre di due ambienti di offerta: uno per interazioni anonime e uno con offerte configurate soprattutto per contatti identificati. L&#39;ambiente delle offerte identificato sarà configurato per passare automaticamente all&#39;ambiente delle offerte anonimo se il contatto non è connesso e quindi non è identificato.
+Per implementare questo case study, è necessario disporre di due ambienti di offerta: uno per le interazioni anonime e uno con offerte configurate soprattutto per i contatti identificati. L&#39;ambiente delle offerte identificato sarà configurato per passare automaticamente all&#39;ambiente delle offerte anonimo se il contatto non è connesso e quindi non è identificato.
 
 Effettuate le seguenti operazioni:
 
@@ -234,7 +234,7 @@ Per creare uno spazio di offerta che corrisponda alla categoria **Migliore offer
 
 Iniziate creando due categorie di offerte: la categoria **Migliore offerta** e la categoria **Partner** . Ogni categoria conterrà due offerte per contatti anonimi.
 
-1. Andate all&#39; **[!UICONTROL Offer catalog]** ambiente anonimo appena creato.
+1. Andate all&#39; **[!UICONTROL Offer catalog]** ambiente anonimo che avete appena creato.
 1. Aggiungete una **[!UICONTROL Offer category]** cartella con l’etichetta **Migliore offerta** .
 
    ![](assets/offer_inbound_fallback_example_027.png)
@@ -369,7 +369,7 @@ Vogliamo creare due offerte personalizzate per ciascuna categoria, ossia quattro
 
 ### Configurazione degli spazi di offerta sulla pagina Web {#configuring-offer-spaces-on-the-web-page}
 
-Il sito web della società Neobank ha tre spazi per offerte: due per le offerte relative alla banca dalla categoria **Migliore offerta** e uno per le offerte dalla categoria **Partner** .
+Il sito web della società Neobank ha tre spazi per le offerte: due per le offerte relative alla banca dalla categoria **Migliore offerta** e uno per le offerte dalla categoria **Partner** .
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -381,7 +381,7 @@ Per configurare questi spazi di offerta sulla pagina HTML del sito Web, effettua
 
    ![](assets/offer_inbound_fallback_example_039.png)
 
-1. Inserire quindi lo script per definire i valori degli attributi.
+1. Inserire quindi lo script per la definizione dei valori degli attributi.
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
