@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 Per accedere all&#39;elenco delle consegne, vai all&#39; **[!UICONTROL Campaigns]** universo e fai clic sul **[!UICONTROL Deliveries]** collegamento.
 
-Se si utilizza [la visualizzazione](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer)Esplora risorse, è possibile accedere a tutte le consegne tramite il **[!UICONTROL Campaign management > Deliveries]** nodo nella struttura.
+Se si utilizza [la visualizzazione](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer)Esplora risorse, è possibile accedere a tutte le consegne tramite il **[!UICONTROL Campaign management > Deliveries]** nodo nella struttura ad albero.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Fate clic sul nome di una consegna per visualizzarne le informazioni principali.
 
 Le informazioni sulla **[!UICONTROL Delivery throughput]** pagina riguardano tutte le consegne della piattaforma. Per misurare la velocità di invio dei messaggi, i criteri sono il numero di messaggi inviati all&#39;ora e la dimensione dei messaggi (in bit al secondo). Nell&#39;esempio seguente, il primo grafico mostra le consegne riuscite in blu e il numero di consegne errate in arancione.
 
-È possibile scegliere lo slot per il quale viene calcolata la velocità effettiva. A questo scopo, selezionare il valore dall&#39;elenco a discesa, quindi fare clic **[!UICONTROL Refresh]**.
+È possibile scegliere lo slot di tempo per il quale viene calcolata la velocità effettiva. A questo scopo, selezionare il valore dall&#39;elenco a discesa, quindi fare clic **[!UICONTROL Refresh]**.
 
 ![](assets/s_ncs_user_interface_delivery06.png)
 
@@ -90,4 +90,4 @@ Le informazioni sulla **[!UICONTROL Delivery throughput]** pagina riguardano tut
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, la **[!UICONTROL Delivery throughput]** pagina non visualizzerà più il throughput ai destinatari delle e-mail. Verrà mostrata la velocità effettiva per il inoltro dei messaggi da Campaign all&#39;MTA avanzato.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
