@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -38,4 +38,4 @@ Questo ordinamento può essere modificato nelle proprietà del modello di messag
 
 >[!NOTE]
 >
->Per le installazioni ospitate o ibride, se hai effettuato l’aggiornamento all’MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzata di Adobe Campaign per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) Adobe Campaign.
+>Per le installazioni ospitate o ibride, se hai effettuato l’aggiornamento all’MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzata di Adobe Campaign per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
