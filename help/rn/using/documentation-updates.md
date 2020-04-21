@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ I casi di utilizzo della guida &quot;Automazione con i flussi di lavoro&quot; so
 
 Le sezioni [Bounce Mail Qualified](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) and [Email Management Rules](../../delivery/using/understanding-delivery-failures.md#email-management-rules) sono state migliorate con informazioni aggiornate.
 
-L&#39;articolo MTA avanzato di Adobe Campaign è stato aggiornato. Ora si applica solo a Campaign Classic. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+L&#39;articolo MTA avanzato di Adobe Campaign è stato aggiornato. Ora si applica solo a Campaign Classic. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## Marzo 2020 {#march-2020}
 
