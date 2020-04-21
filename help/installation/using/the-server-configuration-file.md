@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -243,7 +243,7 @@ Di seguito sono elencati i diversi parametri del nodo **dataStore** . Qui si tro
    <td> workingDirectory<br /> </td> 
    <td> XPath della directory di lavoro.<br /> </td> 
    <td> Stringa<br /> </td> 
-   <td> workingDirectory:XPath della directory di lavoro. Predefinito: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
+   <td> workingDirectory: XPath della directory di lavoro. Predefinito: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -409,7 +409,7 @@ Nel nodo **dataStore > dataSource > pool** , configura i parametri del pool di c
   </tr> 
   <tr> 
    <td> freeCnx<br /> </td> 
-   <td> Numero di connessione gratuita custodito nel pool.<br /> </td> 
+   <td> Numero di connessione gratuita custodito nella piscina.<br /> </td> 
    <td> Breve<br /> </td> 
   </tr> 
   <tr> 
@@ -517,7 +517,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Nome dominio: nome di dominio predefinito. Utilizzato dal comando HELO SMTP. per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows; oppure analizza la file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
+   <td> Nome dominio: nome di dominio predefinito. Utilizzato dal comando HELO SMTP. per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows; oppure analizza la sezione file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1236,7 +1236,7 @@ Ecco i diversi parametri del nodo **inMail** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> maxSessionTTLSec<br /> </td> 
-   <td> Durata sessione: durata massima della sessione di elaborazione dei messaggi.<br /> </td> 
+   <td> Durata della sessione: durata massima della sessione di elaborazione dei messaggi.<br /> </td> 
    <td> Long<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1312,7 +1312,7 @@ Nel nodo **inMail > msgDump** configurate i seguenti parametri. Questa è la con
 
 Ecco i diversi parametri del nodo **interattivo** . Questa è la configurazione del demone di scrittura per gli eventi Interazione in ingresso.
 
-Per ulteriori informazioni, fare riferimento a [Interazione - Buffer](../../installation/using/interaction---data-buffer.md)dati.
+Per ulteriori informazioni, fare riferimento a [Interazione - Buffer](../../installation/using/interaction---data-buffer.md)di dati.
 
 <table> 
  <thead> 
@@ -1427,7 +1427,7 @@ Ecco i diversi parametri del nodo **mta** . Questa è la configurazione degli ag
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
-   <td> Salva percorso delle e-mail inviate: se non vuoto, il percorso in cui verranno salvati tutti i file sorgente delle e-mail inviate. <br /> </td> 
+   <td> Salvataggio del percorso delle e-mail inviate: se non vuoto, il percorso in cui verranno salvati tutti i file sorgente delle e-mail inviate. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1556,13 +1556,13 @@ Ecco i diversi parametri del nodo **mta** . Questa è la configurazione degli ag
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Se è impostato su "true", l’istanza utilizza l’MTA <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank"></a>avanzato.<br /> </td> 
+   <td> Se è impostato su "true", l’istanza utilizza l’MTA <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank"></a>avanzato.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td>b 
   </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
-   <td> Modalità di verifica: attiva la modalità di verifica (nessuna trasmissione fisica dei messaggi; utilizzati per simulazioni e prove).<br /> </td> 
+   <td> Modalità di verifica: attiva la modalità di verifica (nessuna trasmissione fisica dei messaggi; utilizzati per la simulazione e i test).<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1756,7 +1756,7 @@ Per ulteriori informazioni, consultate Ottimizzazione dell&#39;invio per [e-mail
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
-   <td> Dimensione massima della memoria (in MB) utilizzabile da un processo figlio. Oltre questo limite, il processo viene interrotto in modo che la memoria utilizzata venga rilasciata al sistema. <br /> </td> 
+   <td> Dimensione massima della memoria (in MB) utilizzabile da un processo figlio. Al di sopra di questo limite, il processo viene interrotto in modo che la memoria utilizzata venga rilasciata al sistema. <br /> </td> 
    <td> Long<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
@@ -1813,7 +1813,7 @@ Nel nodo **mta > figlio > smtp** , configurate i seguenti parametri. Questa è l
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Numero massimo di sessioni SMTP per server figlio. Per inviare un messaggio, l'MTA inizializza una connessione SMTP con l'MTA destinatario. Il numero massimo di sessioni SMTP simultanee e attive per un determinato server figlio è limitato da questo valore. Se moltiplicate questo valore per maxSpareServers, viene visualizzato il numero massimo di messaggi che possono essere elaborati contemporaneamente da un determinato server figlio.<br /> </td> 
+   <td> Numero massimo di sessioni SMTP per server figlio. Per inviare un messaggio, l'MTA inizializza una connessione SMTP con l'MTA del destinatario. Il numero massimo di sessioni SMTP simultanee e attive per un determinato server figlio è limitato da questo valore. Se moltiplicate questo valore per maxSpareServers, viene visualizzato il numero massimo di messaggi che possono essere elaborati contemporaneamente da un determinato server figlio.<br /> </td> 
    <td> Long<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2044,7 +2044,7 @@ Ecco i diversi parametri del nodo **tubato** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> puntatoreFlushMessageCount<br /> </td> 
-   <td> Il puntatore viene memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
+   <td> Il puntatore viene memorizzato nel database ogni volta che viene elaborato questo numero di messaggi.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2360,7 +2360,7 @@ Di seguito sono elencati i diversi parametri del nodo **sms** . Questa è la con
 
 ### netsize {#netsize}
 
-Ecco i diversi parametri del nodo **sms > netsize** .
+Di seguito sono elencati i diversi parametri del nodo **sms > netsize** .
 
 <table> 
  <thead> 
@@ -2581,7 +2581,7 @@ Ecco i diversi parametri del nodo di **tracciamento** . Configurazione del serve
   </tr> 
   <tr> 
    <td> logCountPerRequest<br /> </td> 
-   <td> Numero di registri richiesti mediante chiamata al server di tracciamento remoto.<br /> </td> 
+   <td> Numero di registri richiesti da una chiamata al server di tracciamento remoto.<br /> </td> 
    <td> Long<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2969,7 +2969,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
-   <td> Caratteri non consentiti (Percorso): elenco di caratteri non consentiti nella sezione 'percorso' di un URI.<br /> </td> 
+   <td> Carattere(i) proibito(i) (Percorso): elenco di caratteri non consentiti nella sezione 'percorso' di un URI.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
@@ -2987,7 +2987,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
   </tr> 
   <tr> 
    <td> startRelayInModule<br /> </td> 
-   <td> Avviate il modulo di inoltro HTTP nel server Web. <br /> </td> 
+   <td> Avviate il modulo di inoltro HTTP all'interno del server Web. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -3040,7 +3040,7 @@ Per ulteriori informazioni, vedere Protezione [dinamica delle pagine, relè](../
   </tr> 
   <tr> 
    <td> relayHost<br /> </td> 
-   <td> Aggiungi host originale: utilizzate l'intestazione HTTP 'Host' della richiesta originale durante la trasmissione.<br /> </td> 
+   <td> Aggiungi host originale: durante la trasmissione, utilizzate l'intestazione HTTP 'Host' della richiesta originale.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3311,7 +3311,7 @@ Per ulteriori informazioni, vedere [Configurazione di SpamAssassin](../../instal
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Comando da eseguire per valutare il punteggio di un'e-mail relativo allo spam (ad es. 'perl spamcheck.pl').<br /> </td> 
+   <td> Comando da eseguire per valutare il punteggio di un'e-mail relativo all'anti-spam (ad es. 'perl spamcheck.pl').<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
