@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -24,7 +24,7 @@ Di seguito sono elencate diverse tecniche, configurazioni e strumenti utilizzabi
 
 ## Configurazione {#configuration}
 
-### DNS inversi {#reverse-dns}
+### Inverti DNS {#reverse-dns}
 
 Adobe Campaign verifica se per un indirizzo IP è stato specificato un DNS inverso e che questo indichi correttamente l&#39;IP.
 
@@ -72,7 +72,7 @@ Va notato che i record effettuati a livello dei server DNS possono richiedere fi
 
 ### DKIM {#dkim}
 
-L&#39;autenticazione DKIM (DomainKeys Identified Mail) è un successore di SPF e utilizza la crittografia a chiave pubblica che consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato e se il contenuto del messaggio sia stato alterato tra il momento in cui è stato inviato originariamente (e DKIM &quot;firmato&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione &quot;Da&quot; o &quot;Mittente&quot;. Per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di crittografia. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
+L&#39;autenticazione DKIM (DomainKeys Identified Mail) è un successore di SPF e utilizza la crittografia a chiave pubblica che consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato e se il contenuto del messaggio sia stato alterato tra il momento in cui è stato inviato originariamente (e DKIM &quot;firmato&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione &quot;Da&quot; o &quot;Mittente&quot;. Per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
 
 DKIM proviene da una combinazione di DomainKeys, Yahoo! e Cisco Identificato principi di autenticazione della posta Internet e viene utilizzato per verificare l&#39;autenticità del dominio del mittente e garantire l&#39;integrità del messaggio.
 
@@ -82,13 +82,13 @@ DKIM ha sostituito l&#39;autenticazione **DomainKeys** .
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento a Enhanced MTA, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della **[!UICONTROL Domain management]** tabella come parte dell&#39;aggiornamento MTA avanzato.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 L’utilizzo di DKIM richiede alcuni prerequisiti:
 
 * **Protezione**: La cifratura è un elemento chiave del DKIM e per assicurare il livello di sicurezza del DKIM dalla primavera 2013, 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
-* **Reputazione**: la reputazione si basa sull&#39;IP e/o sul dominio, ma anche il selettore DKIM meno trasparente è un elemento chiave da prendere in considerazione. La scelta del selettore è importante: evitare di mantenere il &quot;default&quot; che potrebbe essere utilizzato da chiunque e quindi ha una reputazione molto debole. Devi implementare un selettore diverso per le comunicazioni **di** conservazione e acquisizione e per l&#39;autenticazione.
-* **Dichiarazione** di opzione di Adobe Campaign: nella campagna Adobe la chiave privata DKIM è basata su un selettore DKIM e un dominio. Attualmente non è possibile creare più chiavi private per lo stesso dominio/sottodominio con diversi selettori. Non è possibile definire il dominio o il sottodominio del selettore da utilizzare per l&#39;autenticazione nella piattaforma o nell&#39;e-mail. In alternativa, la piattaforma selezionerà una delle chiavi private, il che significa che l&#39;autenticazione ha una probabilità elevata di errore.
+* **Reputazione**: la reputazione si basa sull&#39;IP e/o sul dominio, ma anche il selettore DKIM meno trasparente è un elemento chiave da prendere in considerazione. La scelta del selettore è importante: evitare di mantenere il &quot;default&quot; che potrebbe essere utilizzato da chiunque e quindi ha una reputazione molto debole. È necessario implementare un selettore diverso per le comunicazioni **di** conservazione e acquisizione e per l&#39;autenticazione.
+* **Dichiarazione** di opzione di Adobe Campaign: nella campagna Adobe la chiave privata DKIM è basata su un selettore DKIM e un dominio. Al momento non è possibile creare più chiavi private per lo stesso dominio/sottodominio con diversi selettori. Non è possibile definire il dominio o il sottodominio del selettore da utilizzare per l&#39;autenticazione nella piattaforma o nell&#39;e-mail. In alternativa, la piattaforma selezionerà una delle chiavi private, il che significa che l&#39;autenticazione ha una probabilità elevata di errore.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ L’utilizzo di DKIM richiede alcuni prerequisiti:
 DMARC (Domain-based Message Authentication, Reporting and Conformance) è la forma più recente di autenticazione tramite e-mail e si basa sull&#39;autenticazione SPF e DKIM per determinare se un&#39;e-mail viene passata o meno. DMARC è unico e potente in due modi molto importanti:
 
 * Conformità: consente al mittente di indicare agli ISP cosa fare con qualsiasi messaggio che non riesce ad autenticarsi (ad es. non accettarlo).
-* Reporting: fornisce al mittente un rapporto dettagliato che mostra tutti i messaggi che non hanno superato l&#39;autenticazione DMARC, insieme al dominio &quot;Da&quot; e all&#39;indirizzo IP utilizzati per ciascuno di essi. Questo consente a un&#39;azienda di identificare e-mail legittime che non ottengono l&#39;autenticazione e che necessitano di alcuni tipi di &quot;correzione&quot; (ad esempio, l&#39;aggiunta di indirizzi IP al record SPF), nonché le fonti e la prevalenza dei tentativi di phishing nei propri domini e-mail.
+* Reporting: fornisce al mittente un rapporto dettagliato che mostra tutti i messaggi che non hanno superato l&#39;autenticazione DMARC, insieme al dominio &quot;Da&quot; e all&#39;indirizzo IP utilizzati per ciascuno di essi. Questo consente a un&#39;azienda di identificare e-mail legittime che non ottengono l&#39;autenticazione e che necessitano di alcuni tipi di &quot;correzione&quot; (ad esempio, l&#39;aggiunta di indirizzi IP al proprio record SPF), nonché le fonti e la prevalenza dei tentativi di phishing nei propri domini e-mail.
 
 DMARC può sfruttare i report generati da [250ok](https://250ok.com/).
 
@@ -160,7 +160,7 @@ nlserver inMail -instance:instance -verbose.
 
 Se dovete utilizzare un unico indirizzo del ciclo di feedback per più istanze, dovete:
 
-* Replicare i messaggi ricevuti su un numero illimitato di cassette postali,
+* Replicare i messaggi ricevuti su un numero illimitato di caselle di posta elettronica,
 * Far sì che ogni cassetta postale venga prelevata da un&#39;unica istanza,
 * Configurate le istanze in modo che elaborino solo i messaggi che le riguardano: le informazioni sull&#39;istanza sono incluse nell&#39;intestazione Message-ID dei messaggi inviati da Adobe Campaign e quindi si trovano anche nei messaggi del ciclo di feedback. È sufficiente specificare il parametro **checkInstanceName** nel file di configurazione dell’istanza (per impostazione predefinita, l’istanza non viene verificata e questo potrebbe causare una quarantena errata per alcuni indirizzi):
 
@@ -261,18 +261,18 @@ I mittenti certificati vengono aggiunti alle whitelist delle e-mail utilizzate d
 
 Il programma [Return Path Certification](https://www.validity.com/products/returnpath/certification/) offre una serie di vantaggi, tra cui:
 
-* Un aumento misurabile del posizionamento delle caselle di posta in entrata nei principali fornitori di cassette postali come Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru e altro
+* Un aumento misurabile del posizionamento delle caselle di posta in entrata nei principali fornitori di cassette postali come Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru e altro ancora
 * Buona reputazione e trattamento a filtri critici come Cloudmark, SpamAssassin e Cisco Ironport
 * Un team dedicato al monitoraggio 24 ore su 24, con avvisi di sicurezza e collaborazione con voi attraverso la risoluzione di eventuali compromessi
 * Dati del provider di cassette postali che forniscono informazioni dettagliate su KPI, posizionamento e prestazioni di certificazione
 * Riscaldamento IP semplificato e più veloce, inclusa una maggiore reputazione e riconoscimento durante la migrazione o l&#39;ottenimento di un nuovo indirizzo IP
 
-La Certificazione [Certified Senders Alliance](https://certified-senders.org/certification-process/) offre tra l&#39;altro i seguenti vantaggi:
+La Certificazione [Certified Senders Alliance](https://certified-senders.org/certification-process/) offre, tra gli altri, i seguenti vantaggi:
 
-* Certificazione dei mittenti di e-mail commerciali che possono rispettare standard di qualità elevati
+* Certificazione dei mittenti di e-mail commerciali in grado di soddisfare standard di qualità elevati
 * Miglioramento della consegna e della recapito delle e-mail commerciali per aumentare il tasso di posizionamento delle inbox e ridurre il filtraggio dello spam
 * Tutela dai rischi giuridici e finanziari rispettando pienamente le norme giuridiche
-* Proteggere la reputazione mediante avvertenze anticipate da parte dell&#39;Ufficio di denuncia CSA e segnalazioni giornaliere di intercettazione di spam
+* Proteggere la reputazione mediante avvertenze anticipate da parte dell&#39;Ufficio di denuncia CSA e resoconti giornalieri sulle intercettazioni di spam
 
 Gli ISP sono liberi di utilizzare questi servizi e il numero di ISP può variare a seconda della whitelist.
 
