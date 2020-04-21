@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -40,7 +40,7 @@ Tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione effici
 
 L&#39;output dei messaggi deve essere controllato per ogni indirizzo IP utilizzato dai server di consegna (**mta**). Diversi **dati** suddivisi su più computer e appartenenti a diverse istanze di Adobe Campaign possono condividere lo stesso indirizzo IP per la consegna delle e-mail: è necessario impostare un processo per coordinare l&#39;uso di questi indirizzi IP.
 
-Questo è ciò che il modulo **stat** fa: inoltra tutte le richieste di connessione e i messaggi ai server di posta elettronica per un insieme di indirizzi IP. Il server delle statistiche tiene traccia delle consegne e può abilitare o disabilitare l&#39;invio in base alle quote impostate.
+Questo è ciò che il modulo **stat** fa: inoltra tutte le richieste di connessione e i messaggi da inviare ai server di posta elettronica per un insieme di indirizzi IP. Il server delle statistiche tiene traccia delle consegne e può abilitare o disabilitare l&#39;invio in base alle quote impostate.
 
 ![](assets/s_ncs_install_mta.png)
 
@@ -54,7 +54,7 @@ Il modulo **mta** distribuisce i messaggi ai suoi moduli figlio **principale** .
 La procedura è la seguente:
 
 1. Il **tag** seleziona i messaggi idonei e assegna loro un **elemento secondario** principale disponibile.
-1. Il **nodo secondario** carica tutte le informazioni necessarie per creare il messaggio (contenuto, elementi di personalizzazione, allegati, immagini, ecc.) e inoltra il messaggio all&#39; **e-mail Traffic Shaper**.
+1. Il **nodo secondario** carica tutte le informazioni necessarie per la creazione del messaggio (contenuto, elementi di personalizzazione, allegati, immagini, ecc.) e inoltra il messaggio all&#39; **e-mail Traffic Shaper**.
 1. Non appena lo shaper del traffico e-mail riceve l&#39;autorizzazione del server di statistiche (stato **smtp**), il messaggio viene inviato al destinatario.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -144,7 +144,7 @@ Le regole MX (Mail eXchanger) sono regole che gestiscono la comunicazione tra un
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le regole di **[!UICONTROL MX management]** consegna effettiva non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Queste regole vengono ricaricate automaticamente ogni mattina alle 6 del mattino (ora del server) per fornire regolarmente l&#39;istanza del client.
 
@@ -152,7 +152,7 @@ A seconda delle capacità materiali e della politica interna, un ISP accetta un 
 
 Il numero massimo di connessioni non dipende esclusivamente dal numero di indirizzi IP pubblici utilizzati dall&#39;MTA.
 
-Ad esempio, se avete consentito 5 connessioni nelle regole MX e avete configurato 2 IP pubblici, potreste pensare che non sia possibile avere più di 10 connessioni contemporaneamente aperte a questo dominio. Questo non è vero, infatti il numero massimo di connessioni si riferisce a un percorso e un percorso che è una combinazione di uno dei nostri IP pubblici MTA e un IP pubblico dell&#39;MTA del cliente.
+Ad esempio, se sono state consentite 5 connessioni nelle regole MX e avete configurato 2 IP pubblici, potreste pensare che non sia possibile avere più di 10 connessioni contemporaneamente aperte a questo dominio. Questo non è vero, infatti il numero massimo di connessioni si riferisce a un percorso e un percorso che è una combinazione di uno dei nostri IP pubblici MTA e un IP pubblico dell&#39;MTA del cliente.
 
 Nell&#39;esempio seguente, l&#39;utente ha due indirizzi IP pubblici configurati e il dominio è yahoo.com.
 
@@ -232,7 +232,7 @@ Per ricaricare la configurazione senza riavviare il server di statistiche, utili
 
 >[!NOTE]
 >
->Questa riga di comando è preferibile al riavvio del **server**. Impedisce la perdita delle statistiche raccolte prima del riavvio ed evita picchi di utilizzo che possono andare contro le quote definite nelle regole MX.
+>Questa riga di comando è preferibile al riavvio del **server**. Impedisce la perdita delle statistiche raccolte prima del riavvio ed evita picchi d&#39;uso che possono andare contro le quote definite nelle regole MX.
 
 ### Configurazione delle regole MX {#configuring-mx-rules}
 
@@ -363,7 +363,7 @@ Per utilizzare il server di statistiche sullo stesso computer, è necessario imm
 
 La configurazione relativa alla gestione del traffico si trova nell&#39;elemento **mta/child/smtp** del file di configurazione.
 
-Per ciascun elemento **IPAffinity** , è necessario dichiarare gli indirizzi IP che possono essere utilizzati per il computer.
+Per ogni elemento **IPAffinity** , è necessario dichiarare gli indirizzi IP che possono essere utilizzati per il computer.
 
 Esempio:
 
@@ -422,4 +422,4 @@ Il parametro **maxWorkingSetMb** viene calcolato empiricamente moltiplicando il 
 
 ### Regola il numero di elementi secondari {#adjust-the-number-of-mtachild}
 
-Il numero di figli non deve superare il numero di processori nella macchina (circa 1000 sessioni). Si consiglia di non superare gli 8 **figli**. Potreste quindi aumentare il numero di messaggi per **figlio** (**maxMsgPerChild**) per ottenere una durata di vita sufficiente.
+Il numero di figli non deve superare il numero di processori nella macchina (circa 1000 sessioni). Si consiglia di non superare gli 8 **elementi figlio**. Potreste quindi aumentare il numero di messaggi per **figlio** (**maxMsgPerChild**) per ottenere una durata di vita sufficiente.
