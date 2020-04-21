@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -44,7 +44,7 @@ Prima di inviare la consegna, potete definire i parametri di invio nelle proprie
 
 * **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, vedere [Invio tramite più onde](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l&#39;invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP ma non viene inviata.
+* **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l&#39;invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata.
 
    >[!NOTE]
    >
@@ -114,7 +114,7 @@ Per bilanciare il carico, è possibile suddividere le consegne in più batch. Co
 
 >[!NOTE]
 >
->Potete definire solo la dimensione e il ritardo tra due onde consecutive. Impossibile configurare i criteri di selezione dei destinatari per ogni onda.
+>È possibile definire solo la dimensione e il ritardo tra due onde consecutive. Impossibile configurare i criteri di selezione dei destinatari per ogni onda.
 
 1. Aprite la finestra delle proprietà di consegna e fate clic sulla **[!UICONTROL Delivery]** scheda.
 1. Selezionate l’ **[!UICONTROL Send using multiple waves]** opzione e fate clic sul **[!UICONTROL Define waves...]** collegamento.
@@ -123,9 +123,9 @@ Per bilanciare il carico, è possibile suddividere le consegne in più batch. Co
 
 1. Per configurare le onde, potete:
 
-   * Definite la dimensione per ogni onda. Ad esempio, se si immette **[!UICONTROL 30%]** nel campo corrispondente, ogni onda rappresenterà il 30% dei messaggi inclusi nella consegna, tranne l&#39;ultima, che rappresenterà il 10% dei messaggi.
+   * Definite la dimensione per ogni onda. Ad esempio, se si immette **[!UICONTROL 30%]** nel campo corrispondente, ogni onda rappresenterà il 30% dei messaggi inclusi nella consegna, ad eccezione dell&#39;ultima, che rappresenterà il 10% dei messaggi.
 
-      Nel **[!UICONTROL Period]** campo, specificate il ritardo tra l&#39;inizio di due onde consecutive. Ad esempio, se immettete **[!UICONTROL 2d]**, la prima onda inizierà immediatamente, la seconda inizierà tra due giorni, la terza ondata tra quattro giorni e così via.
+      Nel **[!UICONTROL Period]** campo, specificate il ritardo tra l&#39;inizio di due onde consecutive. Ad esempio, se immettete **[!UICONTROL 2d]**, la prima ondata inizierà immediatamente, la seconda ondata inizierà tra due giorni, la terza ondata tra quattro giorni e così via.
 
       ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
@@ -150,7 +150,7 @@ Per bilanciare il carico, è possibile suddividere le consegne in più batch. Co
 
 I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più onde.
 
-* **Durante il processo di espansione**
+* **Durante il processo di rampa**
 
    Quando le e-mail vengono inviate utilizzando una nuova piattaforma, i provider di servizi Internet (ISP) sono sospetti rispetto agli indirizzi IP non riconosciuti. Se grandi quantità di e-mail vengono inviate improvvisamente, gli ISP spesso le contrassegnano come spam.
 
@@ -184,7 +184,7 @@ Per impostazione predefinita, per il primo giorno della consegna sono pianificat
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, le impostazioni dei tentativi nella distribuzione non vengono più utilizzate da Campaign. I tentativi di rimbalzo contenuti e il tempo che intercorre tra di essi sono determinati dall’MTA avanzata in base al tipo e alla gravità delle risposte di rimbalzo provenienti dal dominio e-mail del messaggio.
 >
->Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) Adobe Campaign.
+>Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
 
 
 ## Definizione del periodo di validità {#defining-validity-period}
@@ -193,11 +193,11 @@ Una volta avviata la consegna, i messaggi (e tutti i tentativi) possono essere i
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* Il **[!UICONTROL Delivery duration]** campo consente di specificare il limite per i tentativi di consegna globali. Ciò significa che Adobe Campaign invia i messaggi a partire dalla data di inizio, quindi, per i messaggi che restituiscono solo un errore, vengono eseguiti tentativi regolari configurabili fino al raggiungimento del limite di validità.
+* Il **[!UICONTROL Delivery duration]** campo consente di specificare il limite per i tentativi di consegna globali. Ciò significa che Adobe Campaign invia i messaggi a partire dalla data di inizio, e quindi, per i messaggi che restituiscono solo un errore, i tentativi regolari e configurabili vengono eseguiti fino al raggiungimento del limite di validità.
 
    Potete anche scegliere di specificare le date. A tale scopo, selezionare **[!UICONTROL Explicitly set validity dates]**. In questo caso, le date limite di consegna e validità consentono anche di specificare l&#39;ora. L&#39;ora corrente è utilizzata per impostazione predefinita, ma è possibile modificarla direttamente nel campo di input.
 
-* **Limite di validità delle risorse**:Il **[!UICONTROL Validity limit]** campo viene utilizzato per le risorse caricate, principalmente per la pagina mirror e le immagini. Le risorse presenti in questa pagina sono valide per un periodo di tempo limitato (per risparmiare spazio su disco).
+* **Limite di validità delle risorse**: Il **[!UICONTROL Validity limit]** campo viene utilizzato per le risorse caricate, principalmente per la pagina mirror e le immagini. Le risorse presenti in questa pagina sono valide per un periodo di tempo limitato (per risparmiare spazio su disco).
 
    I valori in questo campo possono essere espressi nelle unità elencate in [questa sezione](../../platform/using/adobe-campaign-workspace.md#default-units).
 
@@ -205,4 +205,4 @@ Una volta avviata la consegna, i messaggi (e tutti i tentativi) possono essere i
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, l&#39; **[!UICONTROL Delivery duration]** impostazione nelle consegne della campagna verrà utilizzata solo se impostata su **3,5** giorni o meno. Se si definisce un valore superiore a 3,5 giorni, non verrà preso in considerazione.
 >
->Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) Adobe Campaign.
+>Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
