@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -27,10 +27,10 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
    <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-L&#39; **ultima build** stabile è 9032 (205c981c3). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _3 ottobre 2019_
 * È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di origine mid-Sourcing. (NEO-12395)
 * È stato risolto un problema che impediva l&#39;uso completo dell&#39;attività di gestione dati SQL (manca la &quot;gestione dati SQL&quot; denominata right).
 
-## ![](assets/orange_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 agosto 2019_
 
@@ -74,31 +74,35 @@ _13 agosto 2019_
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5 **marzo 2020**: nuova build (9032-...205c981c3) che include la seguente correzione:
+![](assets/do-not-localize/green_2.png) 29 **aprile 2020**: nuova build (9032@3a9dc9c) che include la seguente correzione:
+
+* Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 5 **marzo 2020**: nuova build (9032@19f73c5) che include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
-![](assets/orange_2.png) 17 **dicembre 2019**: nuova build (9032-...9d34fb17e) che include la seguente correzione:
+![](assets/do-not-localize/orange_2.png) 17 **dicembre 2019**: nuova build (9032@d6b8062) che include la seguente correzione:
 
-* È stato risolto un problema di tracciamento sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter).
-(NEO-19595)
+* È stato risolto un problema di tracciamento sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
 
-![](assets/orange_2.png) 11 **dicembre 2019**: nuova build (9032-...e28b428b7) con la seguente correzione:
+![](assets/do-not-localize/orange_2.png) 11 **dicembre 2019**: nuova build (9032@bc4a935) che include la seguente correzione:
 
 * È stato risolto un problema di prestazioni durante l&#39;invio di messaggi con un database MSSQL. (NEO-17558)
 
-![](assets/orange_2.png) 20 **novembre 2019**: nuova build (9032-...3468c7bb5) con le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) 20 **novembre 2019**: nuova build (9032@3468c7b) con le seguenti correzioni:
 
 * È stato risolto un problema di accesso tramite l&#39;autenticazione IMS. (NEO-17312)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti cumulativi su più consegne. (NEO-18165)
 * È stato risolto un problema che poteva bloccare o causare l&#39;arresto anomalo del server Web.
 
-![](assets/orange_2.png) 19 **settembre 2019**: nuova build (9032-...cee805c93) che include le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) 19 **settembre 2019**: nuova build (9032@cee805c) con le seguenti correzioni:
 
 * È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
 * È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
 
-![](assets/orange_2.png) 13 **agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) 13 **agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
 
 * È stato risolto un problema con l&#39;attività del pianificatore che generava messaggi di errore indesiderati durante la configurazione guidata. Ripristino dell&#39;aggiornamento da NEO-11662. (NEO-17097)
 * È stata corretta una regressione causata dalla NEO-12727 che poteva causare l&#39;arresto dei flussi di lavoro quando un&#39;attività Test veniva eseguita due volte. (NEO-16835)
@@ -106,7 +110,7 @@ _13 agosto 2019_
 * È stato risolto un problema con la chiave DKIM che non era più incorporata nelle e-mail, causando problemi di recapito. (NEO-16804)
 * Sono stati risolti diversi problemi relativi alla pianificazione del flusso di lavoro. I flussi di lavoro venivano pianificati una volta al giorno senza tenere conto della configurazione del pianificatore. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 giugno 2019_
 
@@ -122,7 +126,7 @@ _21 giugno 2019_
 * È ora possibile eliminare i record fittizi creati in Microsoft Dynamics durante il flusso di lavoro di importazione.
 * Sono state migliorate le autorizzazioni per eseguire il pacchetto della zona di sicurezza quando si utilizza un account interno.
 
-## ![](assets/orange_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 maggio 2019_
 
@@ -138,7 +142,7 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei server SFTP monitorando l'archiviazione, la whitelist degli indirizzi IP e l'installazione delle chiavi SSH per ogni istanza. Il Pannello di controllo è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: per accedere al Pannello di controllo non è necessario effettuare l'aggiornamento alla build Campaign più recente.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei server SFTP monitorando l'archiviazione, la whitelist degli indirizzi IP e l'installazione delle chiavi SSH per ogni istanza. Il Pannello di controllo è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: per accedere al Pannello di controllo non è necessario effettuare l'aggiornamento alla build Campaign più recente.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
