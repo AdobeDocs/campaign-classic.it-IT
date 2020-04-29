@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ La guida ai rapporti è stata aggiornata e riorganizzata. [Leggi tutto](../../re
 
 L&#39;opzione &quot;WdbcOptions_TempDbName&quot; è stata aggiunta all&#39;elenco delle opzioni Campagna. [Leggi tutto](../../installation/using/configuring-campaign-options.md)
 
-La pagina della matrice FDA è stata spostata [qui](/help/rn/using/assets/fda_rdbms_rights.pdf).
+La pagina della matrice FDA è stata spostata [qui](../../platform/using/remote-database-access-rights.md).
 
 La pagina della matrice dei diritti di accesso è stata spostata [qui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
