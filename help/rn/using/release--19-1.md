@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
 
 ---
 
@@ -74,7 +74,7 @@ _13 agosto 2019_
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **aprile 2020**: nuova build (9032@3a9dc9c) che include la seguente correzione:
+![](assets/do-not-localize/green_2.png) 29 **aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
 
 * Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
