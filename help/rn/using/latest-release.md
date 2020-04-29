@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
@@ -25,10 +25,10 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Obsoleto</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
   </tr> 
    <tr> 
    <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
@@ -39,19 +39,19 @@ source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
  </tbody> 
 </table>
 
-L&#39; **ultima build** stabile è 9032 (205c981c3). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
 
 _13 marzo 2020_
 
 * È stato risolto un problema che impediva la distribuzione della versione sui server Red Hat 7. (NEO-23332)
 
-## ![](assets/orange_2.png) Release 20.1 - Build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1 - Build 9122 {#release-20-1-build-9122}
 
 _17 febbraio 2020_
 
-**Cosa c&#39;è di nuovo?**
+**Novità?**
 
 <table> 
  <thead> 
@@ -209,7 +209,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
