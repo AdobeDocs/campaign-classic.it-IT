@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
+source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
 
 ---
 
 
 # Account esterni{#external-accounts}
 
-Un account esterno è una configurazione che consente di configurare e verificare l&#39;accesso a un server esterno ad Adobe Campaign. Questi account esterni possono essere utilizzati nei flussi di lavoro Campaign per accedere e gestire i dati.
+Un account esterno è una configurazione che consente di configurare e verificare l&#39;accesso a un server esterno ad Adobe Campaign. Questi account esterni possono essere utilizzati nei flussi di lavoro di Campaign per accedere e gestire i dati.
 
-Puoi impostare i seguenti tipi di account esterni:
+È possibile impostare i seguenti tipi di account esterni:
 
 * [Routing account esterno](#routing-external-account)
 * [Account esterno FTP](#ftp-external-account)
@@ -92,7 +92,7 @@ Per configurare l&#39;account **[!UICONTROL Bounce mails (defaultPopAccount)]** 
 
 * **[!UICONTROL Password]**
 
-   Password account utente.
+   Password dell&#39;account utente.
 
 * **[!UICONTROL Encryption]**
 
@@ -118,7 +118,7 @@ L&#39;account **[!UICONTROL Routing]** esterno consente di configurare ogni cana
 
 ## Account esterno FTP {#ftp-external-account}
 
-L&#39;account FTP esterno consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per impostare connessioni con sistemi esterni come server FTP 898 utilizzati per i trasferimenti di file, potete creare account esterni. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/file-transfer.md).
+L&#39;account FTP esterno consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per configurare le connessioni con i sistemi esterni, come i server FTP 898, utilizzati per i trasferimenti di file, potete creare i vostri account esterni. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/file-transfer.md).
 
 A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
@@ -138,11 +138,11 @@ A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenzia
 
 * **[!UICONTROL Password]**
 
-   Password account utente.
+   Password dell&#39;account utente.
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+   Tipo di cifratura scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
 
 Per sapere dove individuare queste credenziali, fare riferimento a questa [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -183,7 +183,7 @@ Per configurare questo account esterno per l&#39;utilizzo con Adobe Campaign, de
    
 * **[!UICONTROL Password]**
 
-       Password account utente.
+       Password dell&#39;account utente.
    
 * **[!UICONTROL Database]**
 
@@ -423,7 +423,7 @@ L&#39;account **[!UICONTROL Azure]** esterno abilita una connessione a un databa
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+   Tipo di cifratura scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
@@ -511,7 +511,6 @@ Con **[!UICONTROL Web API]** il tipo di distribuzione e **[!UICONTROL Certificat
 
 * **[!UICONTROL Custom Key identifier]**
 
-
 * **[!UICONTROL Key ID]**
 
 * **[!UICONTROL Client identifier]**
@@ -564,11 +563,11 @@ Per configurare l&#39;account esterno di Salesforce CRM in modo che funzioni con
 
 * **[!UICONTROL Client identifier]**
 
-   Per sapere dove trovare l’identificatore client, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Per sapere dove trovare l’identificatore client, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Per sapere dove trovare il token di protezione, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Per sapere dove trovare il token di protezione, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
