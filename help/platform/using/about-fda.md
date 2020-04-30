@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
 
 ---
 
@@ -32,7 +32,6 @@ Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elabor
 
 L&#39;opzione FDA consente di estendere il modello dati in un database di terze parti. Rileva automaticamente la struttura delle tabelle di destinazione e utilizza i dati provenienti dalle origini SQL.
 
-
 Per utilizzare questa funzionalità, è necessario:
 
 1. Disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign. L&#39;elenco dei sistemi di database e delle versioni compatibili è dettagliato nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità. Gli utenti devono anche disporre delle autorizzazioni [](../../platform/using/remote-database-access-rights.md) necessarie in Adobe Campaign e nel database esterno.
@@ -41,7 +40,7 @@ Per utilizzare questa funzionalità, è necessario:
 1. [Crea lo schema](../../platform/using/creating-data-schema.md) del database esterno in Adobe Campaign. Questo consente di riconoscere la struttura dati del database esterno.
 1. Alla fine, [create una nuova mappatura](../../platform/using/defining-data-mapping.md) di destinazione dallo schema creato in precedenza, nel caso in cui i destinatari delle consegne provengano dal database esterno. Ciò presenta alcune limitazioni, in particolare per quanto riguarda la personalizzazione delle consegne.
 
-Una volta creato lo schema dati, i dati possono essere elaborati nei flussi di lavoro Adobe Campaign. For more on this, refer to [this section](../../workflow/using/executing-a-workflow.md#architecture).
+Una volta creato lo schema dati, i dati possono essere elaborati nei flussi di lavoro Adobe Campaign. For more on this, refer to [this section](../../workflow/using/accessing-an-external-database--fda-.md).
 
 ## Best practice e raccomandazioni {#best-practices-and-recommendations}
 
@@ -49,7 +48,7 @@ L&#39;opzione FDA è stata creata per manipolare i dati nei database esterni in 
 
 Evitate le operazioni che richiedono l&#39;utilizzo del più possibile di Adobe Campaign e del database esterno. A questo scopo, potete:
 
-* Esporta il database Adobe Campaign nel database esterno ed esegui le operazioni solo dal database esterno prima di reimportare i risultati in Adobe Campaign.
+* Esporta il database di Adobe Campaign nel database esterno ed esegui le operazioni solo dal database esterno prima di reimportare i risultati in Adobe Campaign.
 * Raccogli i dati dal database Adobe Campaign esterno ed esegui le operazioni localmente.
 
 Se desiderate eseguire la personalizzazione nelle consegne utilizzando i dati del database esterno, raccogliete i dati da utilizzare in un flusso di lavoro per renderlo disponibile in una tabella temporanea. Quindi utilizzate i dati della tabella temporanea per personalizzare la consegna.
