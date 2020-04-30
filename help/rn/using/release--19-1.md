@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _13 agosto 2019_
 
 * Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
+* È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
+* È stato risolto un problema che poteva interessare la notifica push quando inviata ad alta frequenza. (NEO-20516)
+* È stato risolto un problema nella gestione delle risposte delle offerte che poteva causare arresti anomali del server Web. (NEO-19482)
+* È stato corretto un errore in Gestione LibreOffice che impediva l’esportazione dei rapporti. (NEO-20982)
+* È stato risolto un problema che causava un errore durante l’aggiornamento di numerosi flussi di lavoro tramite un’attività di sondaggio.
+* Migliorata la gestione di LibreOffice per evitare errori nell’anteprima delle e-mail con file .odt.
+* È stata migliorata la gestione della connessione Apache per evitare la latenza nel servizio Web.
+* Migliorata la visualizzazione del tag di versione (7 cifre) nel menu **Informazioni su** .
+* Risolto un problema di regressione nella gestione degli elenchi che impediva la pubblicazione delle offerte.
+* È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
+* Risolto un problema di regressione minore nei registri del flusso di lavoro di pulizia.
 
 ![](assets/do-not-localize/orange_2.png) 5 **marzo 2020**: nuova build (9032@19f73c5) che include la seguente correzione:
 
