@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
@@ -68,9 +68,9 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * &quot;update&quot;: update. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
    * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
-* **advanced (boolean)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
+* **advanced (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
 * **applyIf (stringa)**: questo attributo consente di rendere facoltativi i campi. L&#39; `<attribute>` elemento verrà preso in considerazione durante l&#39;aggiornamento del database quando il vincolo viene rispettato. &quot;applyIf&quot; riceve un&#39;espressione XTK.
-* **autoIncrement (booleano)**: se questa opzione è attivata, il campo diventa un contatore. Questo consente di incrementare un valore (per lo più ID). (uso esterno)
+* **autoIncrement (booleano)**: se questa opzione è attivata, il campo diventa un contatore. Questo consente di incrementare un valore (per la maggior parte ID). (uso esterno)
 * **membersTo (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e compila lo schema in cui è dichiarato l&#39;attributo. (utilizzato solo in a `<schema>`).
 * **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
 
@@ -84,7 +84,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * &quot;resIdentifier&quot;: nome file
 
 * **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti nel `<srcschema>`.
-* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
+* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente applicato di nuovo al record.
 * **default (string)**: consente di definire il valore del campo predefinito (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
 * **desc (stringa)**: consente di inserire una descrizione dell&#39;attributo. Questa descrizione viene visualizzata nella barra di stato dell&#39;interfaccia.
 * **edit (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
@@ -127,7 +127,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **ref (stringa)**: questo attributo definisce un riferimento a un `<attribute>` elemento condiviso da più schemi (factoring di definizione). La definizione non viene copiata nello schema corrente.
 * **obbligatorio (booleano)**: se questo attributo è attivato (@requirements=&quot;true&quot;), il campo è evidenziato nell&#39;interfaccia. L&#39;etichetta del campo sarà rossa nei moduli.
 * **sql (booleano)**: se questo attributo è attivato (@sql=&quot;true&quot;), forza l&#39;archiviazione dell&#39;attributo SQL, anche quando l&#39;elemento che contiene l&#39;attributo ha la proprietà xml=&quot;true&quot;.
-* **sqlDefault (stringa)**: questo attributo consente di definire il valore predefinito preso in considerazione per aggiornare il database se l&#39;attributo @notNull è attivato. Se questo attributo viene aggiunto dopo la creazione dell&#39;attributo, il comportamento dello schema non verrà modificato nemmeno per i nuovi record. Per modificare lo schema e aggiornare il valore dei nuovi record, è necessario eliminare e creare nuovamente l&#39;attributo.
+* **sqlDefault (stringa)**: questo attributo consente di definire il valore predefinito preso in considerazione per l&#39;aggiornamento del database se l&#39;attributo @notNull è attivato. Se questo attributo viene aggiunto dopo la creazione dell&#39;attributo, il comportamento dello schema non verrà modificato nemmeno per i nuovi record. Per modificare lo schema e aggiornare il valore dei nuovi record, è necessario eliminare e creare nuovamente l&#39;attributo.
 * **sqlname (stringa)**: del campo durante la creazione della tabella. Se @sqlname non è specificato, per impostazione predefinita viene utilizzato il valore dell&#39;attributo &quot;@name&quot;. Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente a seconda del tipo di campo.
 * **template (stringa)**: questo attributo definisce un riferimento a un `<attribute>` elemento condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
 * **translateDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, l&#39;attributo &quot;@translateDefault&quot; consentirà di ridefinire un&#39;espressione che corrisponda a quella definita in @default, che verrà raccolta dallo strumento di traduzione (uso interno).
@@ -173,7 +173,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
    >[!IMPORTANT]
    >
-   >L&#39;attributo è nascosto ma è ancora possibile accedervi.
+   >L&#39;attributo è nascosto, ma è comunque possibile accedervi.
 
 * **xml (booleano)**: se questa opzione è attivata, i valori del campo non hanno un campo SQL collegato. Adobe Campaign crea un campo &quot;mData&quot; di tipo Testo per l&#39;archiviazione dei record. Ciò significa che non è possibile filtrare o ordinare i campi.
 
@@ -235,7 +235,7 @@ compute-string:==EMPTY
 
 ### Bambini {#children-1}
 
- None
+None
 
 ### Descrizione {#description-1}
 
@@ -284,7 +284,7 @@ condizione:==EMPTY
 
 ### Bambini {#children-2}
 
- None
+None
 
 ### Descrizione {#description-2}
 
@@ -320,7 +320,7 @@ dbindex:==keyfield
 * @applyIf (stringa)
 * @label (stringa)
 * @name (MNTOKEN)
-* @Unique (booleano)
+* @univoche (booleano)
 
 ### Genitori {#parents-3}
 
@@ -404,7 +404,7 @@ CREATE INDEX DocNewSchemaUser_myIndex ON DocNewSchemaUser(sEmail, sPhone);
 
 ### Modello di contenuto {#content-model-4}
 
-element:==(attribute| stringa di calcolo| dbindex| Default| element| help| join| Tasto| sysFilter| translateDefault)
+element:==(attribute | stringa di calcolo | dbindex | Default | element | help | join | Tasto | sysFilter | translateDefault)
 
 ### Attributi {#attributes-4}
 
@@ -452,11 +452,11 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
    * &quot;update&quot;: update. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
    * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
-* **advanced (boolean)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
+* **advanced (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
 * **aggregate (stringa)**: consente di copiare la definizione di un `<element>` altro schema. Questo attributo riceve una dichiarazione dello schema sotto forma di &quot;namespace:name&quot;.
 * **applyIf (stringa)**: condizione per l’applicazione dell’indice. Questo attributo riceve un&#39;espressione XTK.
 * **autopk (booleano)**: se questa opzione è attivata (autopk=&quot;true&quot;), viene automaticamente definita una chiave univoca. Questa opzione può essere utilizzata solo sull&#39;elemento principale dello schema. Attenzione, Adobe Campaign garantisce solo che la chiave generata sia univoca. Non è garantito che i valori chiave siano consecutivi e incrementali.
-* **dataPolicy (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL. I valori per questo attributo sono:
+* **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL. I valori per questo attributo sono:
 
    * &quot;none&quot;: nessun valore
    * &quot;smartCase&quot;: lettere maiuscole
@@ -468,7 +468,7 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
    * &quot;resIdentifier&quot;: nome file
 
 * **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti nel `<srcschema>`.
-* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
+* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente applicato di nuovo al record.
 * **default (string)**: consente di definire il comportamento degli elementi (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
 * **desc (stringa)**: consente di inserire una descrizione dell’elemento. Questa descrizione viene visualizzata nella barra di stato dell&#39;interfaccia.
 * **displayAsField (booleano)**: se questo attributo è attivato, un tipo di &quot;collegamento&quot; `<element>` verrà visualizzato come campo nella vista struttura degli schemi (scheda &quot;Struttura&quot;). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarne il comportamento durante una query. Quando l&#39;elemento viene trovato nella SELEZIONE di una query, verrà utilizzato il valore della destinazione del collegamento. Quando l&#39;elemento viene trovato nella posizione WHERE di una query, verrà utilizzata la chiave sottostante del collegamento.
@@ -549,7 +549,7 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 * **sqlname (stringa)**: nome del campo durante la creazione della tabella. Se &quot;@sqlname&quot; non è specificato, il valore dell&#39;attributo &quot;@name&quot; viene utilizzato per impostazione predefinita. Durante la scrittura dello schema nella tabella, i prefissi vengono aggiunti automaticamente in base al tipo di campo.
 * **sqltable (stringa)**: per l&#39;elemento principale dello schema, questo attributo sovraccarica il nome della tabella SQL generata per impostazione predefinita. Se &quot;@sqltable&quot; non è specificato, il nome predefinito sarà strutturato come segue: namespace (prima lettera maiuscola) seguito dal valore dello SrcSchema &quot;@name&quot;.
 * **tableSpace (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dei dati per una tabella (valida nella directory principale `<element>`).
-* **tableSpaceIndex (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dell&#39;indice per una tabella (valida nella directory principale `<element>`).
+* **tableSpaceIndex (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dell&#39;indice per una tabella (valida per la directory principale `<element>`).
 * **target (MNTOKEN)**: riceve il nome dello schema di destinazione durante la creazione di un collegamento tra tabelle. Questo attributo è attivo solo per gli elementi di tipo &quot;link&quot;.
 * **template (stringa)**: questo attributo definisce un riferimento a un `<element>` elemento condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
 * **translateDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, l&#39;attributo &quot;@translateDefault&quot; consentirà di ridefinire un&#39;espressione che corrisponda a quella definita in @default, che verrà raccolta dallo strumento di traduzione (uso interno).
@@ -657,7 +657,7 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima della definizi
    * periodo
    * uuid
 
-* **default (string)**:Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
+* **default (string)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
 * **desc (stringa)**: descrizione dell&#39;enumerazione.
 * **label (stringa)**: etichetta di enumerazione.
 * **name (stringa)**: nome interno dell&#39;enumerazione.
@@ -696,7 +696,7 @@ help:==EMPTY
 
 ### Attributi {#attributes-6}
 
- None
+None
 
 ### Genitori {#parents-6}
 
@@ -704,7 +704,7 @@ help:==EMPTY
 
 ### Bambini {#children-6}
 
- None
+None
 
 ### Descrizione {#description-6}
 
@@ -741,7 +741,7 @@ join:==EMPTY
 
 ### Bambini {#children-7}
 
- None
+None
 
 ### Descrizione {#description-7}
 
@@ -822,8 +822,8 @@ I primi 1000 identificatori sono riservati, quindi se è necessario definire un 
 
 * **allowEmptyPart (booleano)**: nel caso di una chiave composita, se questo attributo è attivato, la chiave viene considerata valida se almeno una delle chiavi non è vuota. In questo caso, il valore di nozione vuoto è &quot;0&quot; (booleano o per tutti i tipi di dati numerici). Per impostazione predefinita, è necessario immettere tutte le chiavi che costituiscono una chiave composita.
 * **applyIf (stringa)**: questo attributo consente di rendere la chiave facoltativa. Definisce la condizione in base alla quale verrà applicata la definizione chiave. Questo attributo riceve un&#39;espressione XTK.
-* **internal (boolean)**: se è attivato, questo attributo informa Adobe Campaign che la chiave è primaria.
-* **label (stringa)**: etichetta della chiave.
+* **internal (boolean)**: se è attivato, questo attributo consente ad Adobe Campaign di sapere che la chiave è primaria.
+* **label (stringa)**: dell&#39;etichetta della chiave.
 * **name (MNTOKEN)**: nome interno della chiave.
 * **noDbIndex (booleano)**: se è attivato (noDbIndex=&quot;true&quot;), il campo corrispondente alla chiave non verrà indicizzato.
 
@@ -866,7 +866,7 @@ keyfield:==EMPTY
 
 ### Bambini {#children-9}
 
- None
+None
 
 ### Descrizione {#description-9}
 
@@ -889,7 +889,7 @@ Selezione del campo &quot;sName&quot; in un indice con un percorso Xpath su &quo
 
 ### Modello di contenuto {#content-model-10}
 
-metodo:==( help| parametri)
+metodo:==( help | parametri)
 
 ### Attributi {#attributes-10}
 
@@ -957,7 +957,7 @@ methods:==method
 
 ### Attributi {#attributes-11}
 
- None
+None
 
 ### Genitori {#parents-11}
 
@@ -1017,7 +1017,7 @@ Questo elemento consente di definire un parametro per richiamare un metodo SOAP.
 
 * **desc (stringa)**: descrizione relativa all’ `<param>` elemento.
 * **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all&#39;input (in) o all&#39;output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
-* **label (stringa)**: `<param>` etichetta
+* **label (stringa)**: `<param>` label
 * **localizzabile (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
 * **name (MNTOKEN)**: nome interno del `<param>`
 * **type (stringa)**: questo attributo definisce il tipo di `<param>` elemento
@@ -1070,7 +1070,7 @@ parametri:==param
 
 ### Attributi {#attributes-13}
 
- None
+None
 
 ### Genitori {#parents-13}
 
@@ -1090,7 +1090,7 @@ Questo elemento è obbligatorio, anche per un singolo elemento `<param>` seconda
 
 ### Descrizione attributo {#attribute-description-13}
 
- None
+None
 
 ### Esempi {#examples-10}
 
@@ -1104,7 +1104,7 @@ Questo elemento è obbligatorio, anche per un singolo elemento `<param>` seconda
 
 ### Modello di contenuto {#content-model-14}
 
-srcSchema:==(attribute| createdBy| dati| element| enumerazione| help| interfaccia| Metodi| modifiedBy)
+srcSchema:==(attribute | createdBy | dati | element | enumerazione | help | interfaccia | Metodi | modifiedBy)
 
 ### Attributi {#attributes-14}
 
@@ -1112,7 +1112,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), E
 
 ### Genitori {#parents-14}
 
- None
+None
 
 ### Bambini {#children-14}
 
@@ -1128,7 +1128,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), E
 
 ### Descrizione {#description-14}
 
-L&#39; `<srcschema>` elemento principale di uno schema. È il punto di input per la definizione dello schema.
+L&#39;elemento `<srcschema>` principale di uno schema. È il punto di input per la definizione dello schema.
 
 ### Uso e contesto di utilizzo {#use-and-context-of-use-9}
 
@@ -1136,7 +1136,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento](.
 
 ### Descrizione attributo {#attribute-description-14}
 
-* **created (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora della creazione dello schema. Contiene un modulo &quot;Data Time&quot;. I valori visualizzati vengono prelevati dal server. L&#39;ora viene visualizzata in formato UTC.
+* **created (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora della creazione dello schema. Presenta un modulo &quot;Data e ora&quot;. I valori visualizzati vengono prelevati dal server. L&#39;ora viene visualizzata in formato UTC.
 * **createBy-id (long)**: è l&#39;identificatore dell&#39;operatore che ha creato lo schema.
 * **desc (stringa)**: descrizione schema
 * **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approva la grammatica con lo schema dichiarato nell&#39;attributo @xtkschema.
@@ -1144,7 +1144,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento](.
 * **img (stringa)**: icona collegata allo schema (può essere definita nella procedura guidata di creazione dello schema).
 * **label (stringa)**: etichetta dello schema.
 * **labelSingular (stringa)**: label (singolare) per la visualizzazione nell&#39;interfaccia.
-* **lastModified (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora dell&#39;ultima modifica. Contiene un modulo &quot;Data Time&quot;. I valori visualizzati vengono prelevati dal server. L&#39;ora viene visualizzata in formato UTC.
+* **lastModified (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora dell&#39;ultima modifica. Presenta un modulo &quot;Data e ora&quot;. I valori visualizzati vengono prelevati dal server. L&#39;ora viene visualizzata in formato UTC.
 * **libreria (booleana)**: utilizzo dello schema come libreria e non come entità. A questo schema possono pertanto fare riferimento altri schemi grazie agli attributi &quot;@ref&quot; e &quot;@template&quot;.
 * **mappingType (stringa)**:
 
@@ -1179,7 +1179,7 @@ sysFilter:==condition
 
 ### Attributi {#attributes-15}
 
- None
+None
 
 ### Genitori {#parents-15}
 
