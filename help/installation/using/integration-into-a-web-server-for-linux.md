@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
@@ -28,7 +28,7 @@ Potete utilizzare questo server Tomcat integrato per soddisfare le richieste HTT
 
 In questo caso:
 
-* la porta di ascolto predefinita è 8080. Per modificarlo, consultare [Configurazione di Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [Configurazione di Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
 * Le console client si connettono quindi utilizzando un URL come:
 
    ```
@@ -51,7 +51,7 @@ Questo processo si applica se Apache è stato installato in una distribuzione ba
 
 Effettuate le seguenti operazioni:
 
-1. Disattivate i moduli caricati per impostazione predefinita utilizzando il seguente comando:
+1. Per impostazione predefinita, disattivate i moduli caricati utilizzando il seguente comando:
 
    ```
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
@@ -234,19 +234,19 @@ Verificate quindi che risponda inviando un URL di prova.
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 Quindi immettete:
 
 ```
 GET /r/test
-````
+```
 
 Vengono visualizzate le informazioni seguenti:
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
 Potete anche richiedere l’URL [`https://<computer>`](https://machine/r/test) da un browser Web.
