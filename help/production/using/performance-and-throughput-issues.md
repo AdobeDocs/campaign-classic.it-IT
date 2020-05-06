@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Nella maggior parte dei casi, i problemi di prestazioni sono collegati alla manu
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta questa sezione: Prestazioni del [database](../../production/using/database-performances.md).
+>Per ulteriori informazioni, consulta questa sezione: [Prestazioni](../../production/using/database-performances.md)del database.
 
 ## Configurazione applicazione {#application-configuration}
 
@@ -57,16 +60,16 @@ Di seguito è riportato un elenco degli articoli relativi alle procedure ottimal
 
 * Processi e memoria MTA e MTAChild: il modulo **mta** distribuisce i messaggi ai suoi moduli figlio **principale** . Ogni **nodo secondario** prepara i messaggi prima di richiedere un&#39;autorizzazione al server delle statistiche e inviarli. Per ulteriori informazioni, consultare questa [pagina](../../installation/using/email-deliverability.md) .
 * Configurazione TLS: l&#39;abilitazione di TLS a livello globale non è consigliata perché può ridurre il throughput. Al contrario, le impostazioni TLS per dominio, gestite dal team di recapito, dovrebbero essere regolate in base alle esigenze. Per ulteriori informazioni, consultare questa [pagina](../../installation/using/email-deliverability.md#mx-configuration) .
-* DKIM: per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di crittografia. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Fate riferimento a questa [pagina](../../delivery/using/technical-recommendations.md#dkim) e a questa [nota tecnica](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Fate riferimento a questa [pagina](../../delivery/using/technical-recommendations.md#dkim) e a questa [nota tecnica](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
 ## Problemi di realizzazione {#deliverability-issues}
 
 Di seguito è riportato un elenco delle best practice e degli articoli relativi alla recapito:
 
-* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Deliverability Monitoring** offre diversi strumenti per monitorare le prestazioni della piattaforma. Fare riferimento a questa [pagina](../../delivery/using/technical-monitoring.md).
+* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Deliverability Monitoring** offre diversi strumenti per monitorare le prestazioni della piattaforma. Fare riferimento a questa [pagina](../../delivery/using/monitoring-deliverability.md).
 * Riscaldamento IP: il riscaldamento dell&#39;IP viene eseguito dal team di recapito. Ciò comporta un aumento graduale del numero di e-mail attraverso nuovi IP in un periodo di poche settimane.
 * Impostazione affinità IP: un&#39;impostazione errata dell&#39;affinità IP può arrestare completamente le e-mail (nome di operatore/affinità errato nella configurazione) o ridurre il throughput (numero limitato di IP nell&#39;affinità). Fare riferimento a questa [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione e-mail: le dimensioni delle e-mail svolgono un ruolo importante nella trasmissione. La dimensione massima consigliata per l’e-mail è 60 KB. Fare riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [sulla velocità](../../reporting/using/delivery-reports.md#delivery-throughput) di consegna, controlla il numero di byte trasferiti per ora.
+* Dimensione e-mail: la dimensione dell&#39;e-mail svolge un ruolo importante nella trasmissione. La dimensione massima consigliata per l’e-mail è 60 KB. Fare riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [sulla velocità](../../reporting/using/delivery-reports.md#delivery-throughput) di consegna, controlla il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: se è presente un numero elevato di destinatari non validi, può avere un impatto sul throughput. Il MTA continua a ripetere l&#39;invio di e-mail a destinatari non validi. Assicurarsi che il database sia ben mantenuto.
 * Entità della personalizzazione: se una consegna rimane in &quot;Personalizzazione in corso&quot;, controlla il codice JavaScript utilizzato nei blocchi di personalizzazione.
 
