@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2602'
+ht-degree: 1%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 Il dashboard **di** distribuzione è fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l&#39;invio dei messaggi.
 
-**Argomenti correlati**
+**Argomenti correlati:**
 
 * [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
 * [Riconoscimento della gestione della quarantena](../../delivery/using/understanding-quarantine-management.md)
-* [Best practice di distribuzione](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
-* [Guida introduttiva: Gestione della recapito](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)
+* [Best practice di distribuzione](https://helpx.adobe.com/it/campaign/kb/delivery-best-practices.html)
+* [Gestione delle consegne](../../delivery/using/about-deliverability.md)
 
 ## Pannello consegna {#delivery-dashboard}
 
@@ -105,7 +108,7 @@ Puoi anche tenere traccia delle consegne con diversi rapporti tramite la dashboa
 Se le prestazioni di consegna sono sbagliate, è possibile controllare:
 
 * **Dimensioni della consegna**: Il completamento delle consegne di grandi dimensioni può richiedere più tempo. Gli elementi figlio MTA sono configurati per gestire una dimensione batch predefinita, che funziona per la maggior parte delle istanze, ma devono essere controllati quando le consegne sono costantemente lente.
-* **Destinazione della consegna**: Il divieto di prestazioni di consegna è influenzato da errori di rimbalzo soft, che vengono gestiti in base alla configurazione dei tentativi. Maggiore è il numero di errori, maggiori saranno i tentativi necessari.
+* **Destinazione della consegna**: Il divieto di prestazioni di consegna è influenzato da errori di rimbalzo soft, che vengono gestiti in base alla configurazione del nuovo tentativo. Maggiore è il numero di errori, maggiori saranno i tentativi necessari.
 * **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può risentirne. È inoltre possibile controllare la reputazione dell&#39;IP e i problemi di recapito. Per ulteriori informazioni, consulta la guida [sulle procedure ottimali per la](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) distribuzione di Adobe Campaign e a [questa pagina](../../delivery/using/about-deliverability.md).
 
 La manutenzione di piattaforme e database può anche influire sulle prestazioni di invio delle consegne. For more on this, refer to [this page](../../production/using/database-performances.md).
@@ -210,7 +213,7 @@ Lo **[!UICONTROL Pending]** stato può innanzitutto indicare che la consegna è 
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 
-* MTA (Message Transfert Agent), che esegue moduli e processi sul server di consegna e che gestisce l&#39;invio di e-mail, potrebbe non essere stato avviato o deve essere riavviato. Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti passaggi:
+* L&#39;agente MTA (Message Transfert Agent), che esegue moduli e processi sul server di consegna e che gestisce l&#39;invio di e-mail, potrebbe non essere stato avviato o deve essere riavviato. Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti passaggi:
 
    * Verificate che `mta@<instance>` i moduli siano avviati sui server MTA.
 
@@ -241,11 +244,11 @@ Se lo stato di invio dell’e-mail è **[!UICONTROL Failed]**, può essere colle
 
 I registri di consegna sono la chiave per capire perché una consegna non è riuscita. Di seguito sono riportati possibili errori che è possibile rilevare dai registri di consegna:
 
-* Se i messaggi del destinatario non riescono con un errore &quot;Non raggiungibile&quot; che indica: Errore **durante la compilazione della riga X dello script &#39;content htmlContent&#39;: non`[table]`è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
+* Se i messaggi dei destinatari non riescono con un errore &quot;Non raggiungibile&quot; che indica: **Errore durante la compilazione della riga X dello script &#39;content htmlContent&#39;:`[table]`non è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
 
    Per correggere questo problema, è necessario rivedere il flusso di lavoro e il contenuto di distribuzione per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare la tabella. Da qui, la rimozione della chiamata a questa tabella nell’HTML o la correzione della mappatura alla consegna costituirebbe il percorso della risoluzione.
 
-* Nel modello di distribuzione mid-sourcing, il seguente messaggio può essere visualizzato nei registri di distribuzione: **Errore durante la chiamata del metodo &#39;AppendDeliveryPart&#39; sul server di origine mid: &#39;Errore di comunicazione con il server: verificare che questo sia configurato correttamente. Codice HTTP 408 &#39;Servizio temporaneamente non disponibile&#39;**.
+* Nel modello di distribuzione mid-sourcing, il messaggio seguente può essere visualizzato nei registri di distribuzione: **Errore durante la chiamata del metodo &#39;AppendDeliveryPart&#39; sul server di origine mid: &#39;Errore di comunicazione con il server: verificare che questo sia configurato correttamente. Codice HTTP 408 &#39;Servizio temporaneamente non disponibile&#39;**.
 
    La causa è collegata a problemi di prestazioni. Significa che l&#39;istanza di marketing impiega troppo tempo a generare dati prima di inviarli al server di mid-sourcing.
 
@@ -257,7 +260,7 @@ I registri di consegna sono la chiave per capire perché una consegna non è riu
 
    Solitamente, questo errore indica che all&#39;interno dell&#39;e-mail è presente un campo o un blocco di personalizzazione con più valori per il destinatario. Viene utilizzato un blocco di personalizzazione che raccoglie più record per un particolare destinatario.
 
-   Per risolvere questo problema, controllate i dati di personalizzazione utilizzati, quindi verificate se nel target sono presenti più voci per i destinatari che dispongono di più campi. Potete inoltre utilizzare un&#39; **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consultare [questa pagina](../../workflow/using/deduplication.md).
+   Per risolvere questo problema, controllate i dati di personalizzazione utilizzati, quindi verificate se nel target sono presenti più voci per i destinatari con più di una voce per ciascuno di questi campi. Potete inoltre utilizzare un&#39; **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consultare [questa pagina](../../workflow/using/deduplication.md).
 
 * Alcune consegne potrebbero non riuscire con un errore &quot;Impossibile da raggiungere&quot; che indica: &quot;Rimbalzo e-mail in entrata (la regola &#39;Auto_answer&#39; ha trovato la stessa corrispondenza). Ciò significa che la consegna è riuscita, ma Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad es. una risposta &quot;Fuori sede&quot;) che corrispondeva alle regole e-mail in entrata &#39;Auto_answer&#39;. L&#39;e-mail di risposta automatica viene ignorata da Adobe Campaign e l&#39;indirizzo del destinatario non verrà inviato alle quarantena.
 
@@ -274,8 +277,8 @@ I registri di consegna sono la chiave per capire perché una consegna non è riu
 Per impostazione predefinita, l&#39;elenco delle consegne contiene i nomi e gli stati delle consegne create nel nodo selezionato. Mostra anche il numero di messaggi da inviare, elaborare e inviare con esito positivo.
 
 * Il numero di **[!UICONTROL Messages to send]** destinatari corrisponde al numero di destinatari interessati dopo l’analisi e prima della consegna.
-* Il numero di messaggi nella **[!UICONTROL success]** colonna corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
-* Il numero di **[!UICONTROL processed]** messaggi corrisponde al numero di messaggi ricevuti più il numero di messaggi con errori.
+* Il numero di messaggi nella **[!UICONTROL Success]** colonna corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
+* Il numero di **[!UICONTROL Processed]** messaggi corrisponde al numero di messaggi ricevuti più il numero di messaggi con errori.
 
 Il dashboard di distribuzione consente di tenere traccia del numero di messaggi inviati.
 
