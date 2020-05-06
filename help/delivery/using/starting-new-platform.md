@@ -13,25 +13,37 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
 
 # Avvio di una nuova piattaforma {#starting-new-platform}
 
-Mantenere la reputazione del dominio e dell&#39;indirizzo IP è fondamentale. Di seguito troverete alcuni consigli per la configurazione di una nuova piattaforma.
+Mantenere la reputazione del dominio e dell&#39;indirizzo IP è fondamentale quando si configura una nuova piattaforma.
 
-L&#39;invio di e-mail su una nuova piattaforma è un passaggio sensibile in quanto la piattaforma non dispone di alcuna cronologia di utilizzo e non ha alcuna reputazione (quando gli IP di invio non sono mai stati utilizzati a questo scopo). Gli ISP sono naturalmente sospettosi degli indirizzi IP che non sono mai stati utilizzati per inviare email e che improvvisamente iniziano a inviare grandi volumi di traffico email. In effetti, gli spammer generalmente utilizzano indirizzi IP &quot;sconosciuti&quot; (cioè indirizzi che non sono mai stati inseriti in blacklist) per inviare il maggior numero possibile di messaggi prima del rilevamento.
+* L&#39;invio di e-mail è un passaggio sensibile in quanto la piattaforma non dispone di alcuna cronologia di utilizzo e, quando gli IP di invio non sono mai stati utilizzati a questo scopo, non ha alcuna reputazione.
 
-Non ci si può aspettare di raggiungere la velocità operativa in termini di output all&#39;inizio della fase di produzione. Inoltre, non si dovrebbe tentare di inviare messaggi a questo tasso, in quanto potrebbe indurre gli ISP a bloccare gli indirizzi di invio e a compromettere gravemente il resto della fase di avvio.
+* Gli ISP sono naturalmente sospettosi degli indirizzi IP che non sono mai stati utilizzati per inviare email e che improvvisamente iniziano a inviare grandi volumi di traffico email. Infatti, gli spammers generalmente utilizzano indirizzi IP &quot;sconosciuti&quot; (indirizzi che non sono mai stati inseriti in blacklist) per inviare il maggior numero possibile di messaggi prima del rilevamento.
 
-L&#39;avvio di una piattaforma spesso avviene quando si utilizza per la prima volta un elenco di indirizzi che potrebbero non essere completi. Se invii a indirizzi non validi o a indirizzi in honeypot, ciò contribuirà a ridurre la reputazione della piattaforma. Se si dispone di un elenco di indirizzi non validi, è nell&#39;interesse dell&#39;utente importarlo nella tabella di quarantena (**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**) prima di inviarlo per la prima volta. Se, comunque, si desidera riqualificare gli indirizzi non validi, è di gran lunga preferibile farlo una volta che la reputazione della piattaforma è stabilita e un po&#39; alla volta, al fine di &quot;diluire&quot; l&#39;uso di indirizzi cattivi nel tempo.
+* Non ci si può aspettare di raggiungere la velocità operativa in termini di output all&#39;inizio della fase di produzione. Inoltre, non si dovrebbe tentare di inviare messaggi a questo tasso, in quanto potrebbe indurre gli ISP a bloccare gli indirizzi di invio e a compromettere gravemente il resto della fase di avvio.
 
-Per riassumere i principi da seguire all&#39;avvio:
+Di seguito sono elencati i principi principali da seguire per l&#39;avvio di una nuova piattaforma:
 
-* Importazione di indirizzi non validi nella tabella di quarantena (se si dispone di tali informazioni)
-* Limitazione della velocità effettiva (impostazione tecnica: limitazione del numero di campioni)
-* Incremento progressivo dei volumi inviati: Non eseguire il targeting dell&#39;intero database fin dall&#39;inizio, ma aggiungere una frazione extra dell&#39;elenco ogni volta che si invia; questo dovrebbe consentire di aumentare il volume in ogni fase, riducendo al contempo il tasso complessivo di indirizzi non validi
-* Invio regolare: In una certa misura è meglio inviare regolarmente piccole riprese rispetto alle campagne più grandi
-* Presta particolare attenzione ai rapporti di consegna: indicatori di errore elevati possono indicare che un&#39;impostazione tecnica non è configurata correttamente.
+* Se si dispone di queste informazioni, **importare indirizzi non validi nella tabella**di quarantena.
+L&#39;avvio di una piattaforma spesso avviene quando si utilizza per la prima volta un elenco di indirizzi che potrebbero non essere completi. Se si inviano indirizzi non validi o a indirizzi in honeypot, ciò contribuirà a ridurre la reputazione della piattaforma.
+
+   * Se si dispone di un elenco di indirizzi non validi, è nell&#39;interesse dell&#39;utente importarlo nella tabella di quarantena (disponibile tramite il **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menu) prima di inviarlo per la prima volta.
+   * Se, comunque, si desidera riqualificare gli indirizzi non validi, è di gran lunga preferibile farlo una volta che la reputazione della piattaforma è stabilita e un po&#39; alla volta, al fine di &quot;diluire&quot; l&#39;uso di indirizzi cattivi nel tempo.
+   Per ulteriori informazioni, consulta [Ottimizzazione della consegna tramite quarantena](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
+* **Limita la velocità** effettiva limitando il numero di schede. Per ulteriori informazioni sulla regolazione di tale impostazione tecnica, contatta l&#39;amministratore di Adobe Campaign.
+* **Aumentare progressivamente i volumi inviati** per evitare di essere contrassegnati come spam. Non eseguite il targeting dell&#39;intero database fin dall&#39;inizio, ma aggiungete una frazione extra dell&#39;elenco ogni volta che inviate. Questo dovrebbe consentire di aumentare il volume in ogni fase, riducendo al contempo il tasso complessivo di indirizzi non validi. Per garantire uno sviluppo uniforme della fase di avvio, è possibile utilizzare le onde. Per ulteriori informazioni, consultate [Invio con più onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+* **Invia regolarmente**. In una certa misura è meglio inviare regolarmente piccole riprese piuttosto che campagne di grandi dimensioni sporadicamente.
+* **Presta particolare attenzione ai rapporti** di consegna. Indicatori di errore elevati possono indicare che un&#39;impostazione tecnica è configurata male. Per ulteriori informazioni, consulta [Monitoraggio della distribuzione](../../delivery/using/monitoring-a-delivery.md).
+
+**Argomenti** correlati:
+* [Aumenta la tua reputazione di email con il riscaldamento IP](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
+* [Tutte le trappole dello spam](https://helpx.adobe.com/campaign/kb/spam-traps.html)
