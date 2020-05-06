@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2433'
+ht-degree: 0%
 
 ---
 
@@ -78,12 +81,6 @@ DKIM proviene da una combinazione di DomainKeys, Yahoo! e Cisco Identificato pri
 
 DKIM ha sostituito l&#39;autenticazione **DomainKeys** .
 
->[!IMPORTANT]
->
->Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento a Enhanced MTA, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della **[!UICONTROL Domain management]** tabella come parte dell&#39;aggiornamento MTA avanzato.
->
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 L’utilizzo di DKIM richiede alcuni prerequisiti:
 
 * **Protezione**: La cifratura è un elemento chiave del DKIM e per assicurare il livello di sicurezza del DKIM dalla primavera 2013, 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
@@ -92,10 +89,14 @@ L’utilizzo di DKIM richiede alcuni prerequisiti:
 
 >[!NOTE]
 >
->* Se hai configurato DomainKeys per l’istanza Adobe Campaign, devi solo selezionare **dkim** nelle regole di gestione del dominio. In caso contrario, seguire gli stessi passaggi di configurazione (chiave pubblica/privata) di DomainKeys.
+>* Se hai configurato DomainKeys per l’istanza Adobe Campaign, devi solo selezionare **dkim** nelle regole [di gestione del](../../delivery/using/understanding-delivery-failures.md#domain-management)dominio. In caso contrario, seguire gli stessi passaggi di configurazione (chiave pubblica/privata) di DomainKeys.
 >* Non è necessario abilitare sia DomainKeys che DKIM per lo stesso dominio di DKIM è una versione migliorata di DomainKeys.
 >* I seguenti domini convalidano attualmente DKIM: AOL, Gmail.
 
+
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA [](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)avanzata, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata per tutti i messaggi con tutti i domini.
 
 ### DMARC {#dmarc}
 
