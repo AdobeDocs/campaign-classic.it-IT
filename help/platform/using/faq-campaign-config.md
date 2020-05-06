@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,9 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracciamento
 
 ## Come configurare la recapito delle e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla guida [introduttiva sulla](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)recapito, leggi la sezione sulla configurazione della recapito delle e-mail per comprendere come configurare la tua istanza per massimizzare le funzionalità di distribuzione delle campagne.
+Oltre alla sezione di configurazione [della](../../delivery/using/about-deliverability.md#configuration) recapito, leggi le raccomandazioni tecniche sulla recapito per comprendere come configurare la tua istanza al fine di massimizzare le funzionalità di distribuzione delle campagne.
 
-[Fai clic qui per saperne di più](../../installation/using/email-deliverability.md).
+[Fai clic qui per saperne di più](../../delivery/using/technical-recommendations.md).
 
 ## Come posso implementare l&#39;approvazione dei contenuti? {#how-can-i-implement-content-approval-}
 
@@ -105,7 +108,7 @@ In caso di problemi quali il riflesso corretto dei nuovi logo, in grado di espor
 
 1. Eliminate questi file xml e le cartelle associate.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Non eliminate il file nlclient_cnx.xml.
 
