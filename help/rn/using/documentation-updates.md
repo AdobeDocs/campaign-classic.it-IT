@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
+source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+workflow-type: tm+mt
+source-wordcount: '6488'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,15 @@ Scopri tutti gli ultimi aggiornamenti della documentazione di Adobe Campaign Cla
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti della documentazione per ciascuna versione di Adobe Campaign Classic.
 
 Puoi anche consultare le note [sulla versione di](../../rn/using/latest-release.md)Adobe Campaign Classic.
+
+## Maggio 2020 {#may-2020}
+
+La sezione Controllo della recapito è stata spostata e riorganizzata. [Leggi tutto](../../delivery/using/monitoring-deliverability.md)
+
+La sezione Risoluzione dei problemi di recapito è stata spostata e aggiornata. [Leggi tutto](../../delivery/using/deliverability-faq.md)
+
+La sezione Avvio di una nuova piattaforma è stata migliorata. [Leggi tutto](../../delivery/using/starting-new-platform.md)
+
 
 ## Aprile 2020 {#april-2020}
 
@@ -156,7 +168,7 @@ Messaggi SMS protetti (TLS) - [Leggi tutto](https://helpx.adobe.com/campaign/kb/
 
 È ora disponibile la documentazione MTA avanzata di Adobe Campaign. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
-È stata aggiunta una nuova sezione su come risolvere eventuali problemi relativi a un flusso di lavoro nello stato &quot;Inizia il prima possibile&quot; all’interno di una campagna. Ulteriori[informazioni](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
+È stata aggiunta una nuova sezione su come risolvere eventuali problemi relativi a un flusso di lavoro nello stato &quot;Inizia il prima possibile&quot; all’interno di una campagna. [Leggi tutto](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
 Le nuove opzioni &quot;NmsOperation_DeliveryPreparationWindow&quot; e &quot;WdbcKillSessionPolicy&quot; sono state aggiunte all&#39;elenco delle opzioni Campagna. [Leggi tutto](../../installation/using/configuring-campaign-options.md)
 
@@ -279,7 +291,7 @@ Sono state aggiunte informazioni sul rapporto Fatturazione.
 Aggiornamento della documentazione sull&#39;integrazione dell&#39;audience condivisa.
 [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
-Sono state aggiornate le seguenti note tecniche: Protocollo e impostazioni [del connettore](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) SMS e generazione [automatica](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)sequenza.
+Sono state aggiornate le seguenti note tecniche: [Protocollo e impostazioni](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) del connettore SMS e generazione [automatica](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)della sequenza.
 
 La sezione Flussi di lavoro tecnici è stata aggiornata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Technical_workflows_About_technical_workflows.html)
 
@@ -311,7 +323,7 @@ La sezione Archiviazione [](https://docs.campaign.adobe.com/doc/AC/en/INS_Additi
 
 È stato aggiunto un caso di utilizzo alla guida Automazione con flussi di lavoro: Invio di avvisi personalizzati agli operatori. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Sending_personalized_alerts_to_operators.html)
 
-La sezione &quot;Migrazione a una nuova versione&quot; è stata aggiornata. La documentazione ora descrive solo i passaggi per la migrazione ad Adobe Campaign Classic v7 da qualsiasi versione precedente, in quanto non è più possibile effettuare la migrazione ad Adobe Campaign v6.11. Ulteriori [informazioni](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
+La sezione &quot;Migrazione a una nuova versione&quot; è stata aggiornata. La documentazione ora descrive solo i passaggi per la migrazione ad Adobe Campaign Classic v7 da qualsiasi versione precedente, in quanto non è più possibile effettuare la migrazione ad Adobe Campaign v6.11. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
 È stata chiarita la sezione &quot;Ritiri dopo una consegna temporanea di guasto&quot;. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Monitoring_deliveries_Understanding_delivery_failures.html#Retries_after_a_delivery_temporary_failure)
 
