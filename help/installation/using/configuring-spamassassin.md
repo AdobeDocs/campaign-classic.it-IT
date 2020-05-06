@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
 
 ## Panoramica {#overview}
 
-SpamAssassin è un software progettato per filtrare le e-mail indesiderate. Insieme a questo software, Adobe Campaign può assegnare un punteggio alle e-mail e stabilire se è probabile che un messaggio venga considerato indesiderabile prima dell&#39;avvio della consegna. A tal fine, SpamAssassin deve essere installato e configurato sui server applicazioni di Adobe Campaign e richiede il funzionamento di un certo numero di moduli Perl aggiuntivi.
+SpamAssassin è un software progettato per filtrare le e-mail indesiderabili. In combinazione con questo software, Adobe Campaign può assegnare un punteggio alle e-mail e determinare se è probabile che un messaggio venga considerato indesiderabile prima dell&#39;avvio della consegna. A tal fine, SpamAssassin deve essere installato e configurato sui server applicazioni di Adobe Campaign e richiede il funzionamento di un certo numero di moduli Perl aggiuntivi.
 
 L&#39;implementazione e l&#39;integrazione di SpamAssassin come descritto in questo capitolo si basano sull&#39;installazione software predefinita, così come le regole di filtraggio e punteggio, che sono quelle fornite da SpamAssassin senza alcuna modifica o ottimizzazione. L&#39;attribuzione del punteggio e la qualifica del messaggio si basano esclusivamente sulla configurazione delle opzioni SpamAssassin e sulle regole di filtraggio. Gli amministratori di rete sono responsabili dell&#39;adattamento alle esigenze aziendali.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La qualifica delle e-mail come indesiderabili da SpamAssassin si basa interamente su regole di filtraggio e punteggio.
 >
@@ -54,7 +57,7 @@ Per installare e configurare SpamAssassin in Windows per abilitare l&#39;integra
 ### Installazione di SpamAssassin {#installing-spamassassin}
 
 1. Effettuate la connessione al portale [](http://support.neolane.net) Extranet utilizzando le credenziali utente.
-1. Andate al centro **** Download, quindi individuate la sezione **Strumenti** nella pagina.
+1. Andate al centro **** Download, quindi sfogliate la pagina per trovare la sezione **Strumenti** .
 1. Scaricate il file **Spam Assassin (Installazione di Windows) (1.0)** .
 1. Copiate questo file nel server Adobe Campaign, quindi decomprimetelo.
 
@@ -66,7 +69,7 @@ Per installare e configurare SpamAssassin in Windows per abilitare l&#39;integra
 
    Se viene visualizzata una shell di Windows e continua a essere visualizzata per alcuni secondi, attendere il completamento dell&#39;installazione e dell&#39;aggiornamento, quindi fare clic su **Invio**.
 
-   Se Windows Shell non viene visualizzato o non viene visualizzato prima della scomparsa immediata, procedere come segue: fare doppio clic sul file **portableShell.bat** per visualizzare una shell di Windows e verificare che il percorso Shell corrisponda alla cartella in cui è stato decompresso il file **spamassassin.zip** . In caso contrario, accedete utilizzando il comando **cd** .
+   Se la shell di Windows non viene visualizzata o non viene visualizzata prima della scomparsa immediata, procedere come segue: fare doppio clic sul file **portatileShell.bat** per visualizzare una shell di Windows e verificare che il percorso della shell corrisponda alla cartella in cui è stato decompresso il file **spamassassin.zip** . In caso contrario, accedete utilizzando il comando **cd** .
 
    Immettere **run_me.bat** , quindi fare clic su **Enter** per avviare il processo di installazione e aggiornamento. L&#39;operazione restituisce uno dei seguenti valori per indicare il risultato dell&#39;aggiornamento.
 
@@ -175,7 +178,7 @@ cpan Mail::SpamAssassin
 
 ### Aggiornamento delle regole filtro {#updating-filter-rules}
 
-Le regole del filtro possono essere aggiornate automaticamente utilizzando lo strumento **sa-update** . Per ulteriori informazioni, consultare il sito ufficiale SpamAssassin [http://spamassassin.apache.org/](http://spamassassin.apache.org/) .
+Le regole del filtro possono essere aggiornate automaticamente utilizzando lo strumento **sa-update** . Per ulteriori informazioni, consulta il sito ufficiale SpamAssassin [http://spamassassin.apache.org/](http://spamassassin.apache.org/) .
 
 In Debian, gli aggiornamenti avvengono automaticamente ogni giorno.
 
