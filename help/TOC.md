@@ -5,7 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
+source-git-commit: 2ba9efa49f26559786641ff5e1caa9c481f770b2
+workflow-type: tm+mt
+source-wordcount: '2077'
+ht-degree: 7%
 
 ---
 
@@ -151,12 +154,13 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Avvio di una nuova piattaforma](delivery/using/starting-new-platform.md)
       + [Controllo del contenuto dei messaggi](delivery/using/control-message-content.md)
       + [Migliorare la tua reputazione](delivery/using/improve-reputation.md)
-      + [Best practice per il nuovo coinvolgimento](delivery/using/re-engagement-best-practices.md)
       + [Raccomandazioni tecniche](delivery/using/technical-recommendations.md)
-      + [Monitoraggio tecnico](delivery/using/technical-monitoring.md)
+      + [Monitoraggio del recapito messaggi](delivery/using/monitoring-deliverability.md)
       + [Rendering in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
+      + [Best practice per il nuovo coinvolgimento](delivery/using/re-engagement-best-practices.md)
       + [Database Blacklist](delivery/using/blacklisting-databases.md)
+      + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
       + [Risorse e principi di Content Manager](delivery/using/content-manager-resources-and-principles.md)
@@ -554,26 +558,26 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [I modelli ibridi e ospitati](installation/using/about-hybrid-and-hosted-models.md)
       + [Modello ibrido](installation/using/hybrid-model.md)
       + [Modello ospitato](installation/using/hosted-model.md)
-   + Prerequisiti e raccomandazioni {#prerequisites-and-recommendations-}
+   + Prerequisiti e raccomandazioni  {#prerequisites-and-recommendations-}
       + [Prima di iniziare](installation/using/before-starting.md)
       + [Database](installation/using/database.md)
       + [Application Server](installation/using/application-server.md)
       + [Server di messaggistica](installation/using/messaging-server.md)
       + [Configurazione della rete](installation/using/network-configuration.md)
-   + Tipi di distribuzione {#deployment-types-}
+   + Tipi di distribuzione  {#deployment-types-}
       + [Informazioni sui tipi di distribuzione](installation/using/about-deployment-types.md)
       + [Implementazione indipendente](installation/using/standalone-deployment.md)
       + [Implementazione standard](installation/using/standard-deployment.md)
       + [Implementazione Enterprise](installation/using/enterprise-deployment.md)
       + [Distribuzione mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Alimentatore e cluster di alimentazione](installation/using/power-booster-and-power-cluster.md)
-   + Installazione di Campaign in Windows {#installing-campaign-in-windows-}
+   + Installazione di Campaign in Windows  {#installing-campaign-in-windows-}
       + [Prerequisiti per l&#39;installazione di Campaign in Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installazione del server](installation/using/installing-the-server.md)
       + [Integrazione in un server Web per Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Disponibilità della console client per Windows](installation/using/client-console-availability-for-windows.md)
       + [Installazione della console client](installation/using/installing-the-client-console.md)
-   + Installazione di Campaign in Linux {#installing-campaign-in-linux-}
+   + Installazione di Campaign in Linux  {#installing-campaign-in-linux-}
       + [Prerequisiti per l&#39;installazione di Campaign in Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installazione di pacchetti con Linux](installation/using/installing-packages-with-linux.md)
       + [Integrazione in un server Web per Linux](installation/using/integration-into-a-web-server-for-linux.md)
