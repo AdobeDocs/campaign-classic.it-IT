@@ -13,14 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
+workflow-type: tm+mt
+source-wordcount: '1411'
+ht-degree: 0%
 
 ---
 
 
 # Ultima versione{#latest-release}
 
-[Genera aggiornamento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) controllo| Aggiornamenti [alla](../../rn/using/documentation-updates.md) documentazione| [Versioni](../../rn/using/release--19-2.md) precedenti| Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-2.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,13 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Release 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+
+_6 maggio 2020_
+
+* È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
+
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
 
 _13 marzo 2020_
 
@@ -209,7 +218,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
