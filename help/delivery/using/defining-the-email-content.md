@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2800'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Per informazioni su come inserire e utilizzare i campi di personalizzazione, con
 >* Adobe Campaign controlla la sintassi degli indirizzi e-mail immessi.
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nel contesto dei controlli implementati dai provider di accesso a Internet (ISP, Internet Access Providers) per combattere le e-mail non richieste (spam), Adobe consiglia di creare account e-mail che corrispondano agli indirizzi specificati per le consegne e le risposte. Consultate l’amministratore del sistema di messaggistica.
 
@@ -46,7 +49,7 @@ Per informazioni su come inserire e utilizzare i campi di personalizzazione, con
 
 L&#39;oggetto del messaggio è configurato nel campo corrispondente. È possibile immetterlo direttamente nel campo o fare clic sul **[!UICONTROL Subject]** collegamento per immettere uno script. Il collegamento di personalizzazione consente di inserire i campi del database nell&#39;oggetto.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;oggetto del messaggio è obbligatorio.
 
@@ -62,7 +65,7 @@ Ad esempio, nel messaggio precedente, l&#39;oggetto del messaggio è personalizz
 
 ## Contenuto del messaggio {#message-content}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
@@ -72,9 +75,9 @@ I messaggi vengono inviati in formato HTML o testo per impostazione predefinita,
 
 * Per importare un contenuto HTML, utilizzate il **[!UICONTROL Open]** pulsante . È inoltre possibile incollare il codice sorgente direttamente nella **[!UICONTROL Source]** sottoscheda.
 
-   Se utilizzate [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), fate riferimento a [Selezione di un modello](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content)di contenuto.
+   Se utilizzate [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE), consultate [Selezione di un modello](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content)di contenuto.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Il contenuto HTML deve essere creato in anticipo e quindi importato in Adobe Campaign. L&#39;editor HTML non è progettato per la creazione di contenuto.
 
@@ -88,7 +91,7 @@ I messaggi vengono inviati in formato HTML o testo per impostazione predefinita,
 
    ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Le immagini della libreria sono accessibili tramite la **[!UICONTROL Resources>Online>Public resources]** cartella nella struttura delle cartelle. Consultare anche [Aggiunta di immagini](#adding-images).
+   Per accedere alle immagini della libreria, usate la **[!UICONTROL Resources>Online>Public resources]** cartella nella struttura delle cartelle. Consultare anche [Aggiunta di immagini](#adding-images).
 
    L’ultimo pulsante nella barra degli strumenti consente di inserire campi di personalizzazione.
 
@@ -126,9 +129,9 @@ Selezionate il formato del messaggio e-mail nella sezione inferiore della finest
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   Il messaggio contiene entrambi i formati: text e HTML. Il formato visualizzato sulla ricezione dipende dalla configurazione del software di posta del destinatario (multipart-alternative).
+   Il messaggio contiene entrambi i formati: text e HTML. Il formato visualizzato in base alla ricezione dipende dalla configurazione del software di posta del destinatario (multipart-alternative).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Questa opzione include entrambe le versioni del documento. Di conseguenza, influisce sulla frequenza di consegna, poiché la dimensione del messaggio è maggiore.
 
@@ -169,7 +172,7 @@ Le immagini possono essere:
 
 * Una risorsa condivisa con Adobe Experience Cloud. Fare riferimento a [questa sezione](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per includere immagini nei messaggi e-mail tramite la procedura guidata di consegna, l&#39;istanza di Adobe Campaign deve essere configurata per abilitare la gestione delle risorse pubbliche. Questa procedura può essere eseguita dalla procedura guidata di distribuzione. Per ulteriori informazioni sulla configurazione, consulta [questa sezione](../../installation/using/deploying-an-instance.md) .
 
@@ -188,13 +191,13 @@ Selezionare **[!UICONTROL Upload images]** nella **[!UICONTROL Images]** scheda.
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Potete caricare manualmente le immagini senza attendere la fase di analisi della distribuzione. A tale scopo, fare clic sul **[!UICONTROL Upload images now]** collegamento.
-* Potete specificare un altro percorso per accedere alle immagini sul server di tracciamento. A questo scopo, immettetela nel **[!UICONTROL Image URL]** campo. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
+* Potete specificare un altro percorso per l’accesso alle immagini sul server di tracciamento. A questo scopo, immettetela nel **[!UICONTROL Image URL]** campo. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
 
 Quando aprite contenuto HTML con immagini incluse nella procedura guidata di consegna, viene visualizzato un messaggio che consente di caricare le immagini immediatamente, in base ai parametri di consegna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I percorsi di accesso alle immagini vengono modificati durante il caricamento manuale o durante l’invio dei messaggi.
 
@@ -285,7 +288,7 @@ Quindi configurate i seguenti elementi in base alle vostre esigenze:
 
 1. Il **[!UICONTROL Height]** campo consente di configurare l&#39;altezza del codice a barre senza modificarne la larghezza, modificando la quantità di spazio tra ciascuna barra.
 
-   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se un valore di codice a barre non è corretto, sarà visibile solo in modalità **Anteprima** , dove il codice a barre verrà barrato in rosso.
+   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se il valore di un codice a barre non è corretto, sarà visibile solo in modalità **Anteprima** , dove il codice a barre verrà barrato in rosso.
 
    >[!NOTE]
    >
@@ -326,7 +329,7 @@ Per l&#39;invio di e-mail che verranno lette su un cellulare gestito da un provi
 È pertanto necessario:
 
 * Usare solo immagini in formato JPEG o GIF
-* Create una consegna con sezioni di testo e HTML rigorosamente inferiori a 10 000 byte (per KDDI AU e DoCoMo)
+* Create una distribuzione con sezioni di testo e HTML rigorosamente inferiori a 10 000 byte (per KDDI AU e DoCoMo)
 * Usate immagini con una dimensione totale (prima della codifica) inferiore a 100 KB
 * Non utilizzare più di 20 immagini per messaggio
 * Utilizzate un formato HTML di dimensioni ridotte (per ogni operatore è disponibile un numero limitato di tag)
@@ -360,7 +363,7 @@ Nella **[!UICONTROL Preview]** scheda della finestra di modifica del contenuto, 
 
 Oltre alla diagnosi di anteprima, durante l&#39;invio di una prova o una consegna viene effettuato un secondo controllo: durante l&#39;analisi viene avviata una regola di tipologia specifica **[!UICONTROL Deco-mail check]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questa regola di tipologia viene eseguita solo se almeno uno dei destinatari è configurato per ricevere e-mail in **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** o **[!UICONTROL Decoration Mail (KDDI AU)]** formato.
 
@@ -379,11 +382,11 @@ Ad esempio, potete sostituire l&#39;indirizzo di un profilo con test@softbank.ne
 Per inviare un&#39;e-mail ai destinatari con formati e-mail giapponesi con Campaign, sono possibili due opzioni:
 
 * Create due consegne: uno solo per i destinatari giapponesi e un altro per gli altri destinatari - fare riferimento a [questa sezione](#designing-a-specific-delivery-for-japanese-formats).
-* Crea un&#39;unica consegna e Adobe Campaign rileverà automaticamente il formato da utilizzare. Consulta [questa sezione](#designing-a-delivery-for-all-formats).
+* Crea un&#39;unica consegna e Adobe Campaign rileverà automaticamente il formato da utilizzare. Fai riferimento a [questa sezione](#designing-a-delivery-for-all-formats).
 
 #### Progettazione di una distribuzione specifica per i formati giapponesi {#designing-a-specific-delivery-for-japanese-formats}
 
-Potete creare un flusso di lavoro contenente due consegne: uno da leggere su un cellulare giapponese e un altro per i destinatari con un formato e-mail standard.
+Potete creare un flusso di lavoro contenente due consegne: uno da leggere su un dispositivo mobile giapponese e un altro per i destinatari con un formato e-mail standard.
 
 A tal fine, utilizzate l&#39; **[!UICONTROL Split]** attività nel flusso di lavoro e definite i formati di posta elettronica giapponesi (Deco-mail, Decoration Mail e Decore Mail) come condizioni di filtraggio.
 
@@ -397,6 +400,6 @@ Quando Adobe Campaign gestisce in modo dinamico i formati in base al dominio (pr
 
 Il contatto del messaggio verrà visualizzato correttamente per gli utenti su dispositivi mobili giapponesi, come per i destinatari standard.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Assicuratevi di rispettare le funzioni speciali associate a ciascun formato di posta elettronica giapponese (Deco-mail, Decoration Mail e Decore Mail). For more information on limitations, refer to [this section](#limitations-and-recommendations).
