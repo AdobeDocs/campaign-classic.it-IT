@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -47,4 +50,4 @@ Cos&#39;è esattamente la recapito delle e-mail? E come possono i professionisti
 
 Per &quot;recapito e-mail&quot; si intende l&#39;insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, entro breve tempo e con la qualità prevista in termini di contenuto e formato. Queste caratteristiche sono suddivise in quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Insieme, costituiscono la base di un programma di recapito e-mail di successo. Questa panoramica illustra i quattro principi fondamentali del successo della distribuzione delle e-mail e offre le best practice per raggiungere la inbox e incrementare i ricavi derivanti dai programmi di e-mail marketing.
 
-![](assets/deliverability_overview_2.png)
+<!--![](assets/deliverability_overview_2.png)-->
