@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9091059b1d8431a84eb93f104dbd8e8833cb94a7
+source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
 workflow-type: tm+mt
-source-wordcount: '6488'
+source-wordcount: '6502'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ La sezione Risoluzione dei problemi di recapito è stata spostata e aggiornata. 
 
 La sezione Avvio di una nuova piattaforma è stata migliorata. [Leggi tutto](../../delivery/using/starting-new-platform.md)
 
+La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
 
 ## Aprile 2020 {#april-2020}
 
@@ -381,7 +382,7 @@ Spostata la sezione su come utilizzare gli indirizzi iniziali nel capitolo Panor
 
 È stato aggiunto un nuovo caso di utilizzo del flusso di lavoro: Gestione degli aggiornamenti dalle esecuzioni dei flussi di lavoro simultanee. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
-La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e con una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
+La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
 La sezione &quot;SpamAssassin&quot; è stata migliorata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
 
