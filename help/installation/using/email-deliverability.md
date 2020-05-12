@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 0%
 
 ---
 
@@ -293,7 +296,7 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
    * **[!UICONTROL Default configuration]**: Si tratta della configurazione generale specificata nel file di configurazione serverConf.xml applicato.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Non è consigliabile modificare la configurazione predefinita.
 
@@ -327,7 +330,7 @@ Se l’ **[!UICONTROL Image inclusion]** opzione è attivata, queste vengono vis
 
 Questa opzione è utilizzata in particolare dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consultare [questo documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L’inserimento di immagini in un messaggio e-mail ne aumenta notevolmente le dimensioni.
 
@@ -355,7 +358,7 @@ Per utilizzare il server di statistiche sullo stesso computer, è necessario imm
  <mta statServerAddress="localhost">
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se questo campo non viene popolato, il **tag** non verrà avviato.
 
@@ -363,7 +366,7 @@ Per utilizzare il server di statistiche sullo stesso computer, è necessario imm
 
 La configurazione relativa alla gestione del traffico si trova nell&#39;elemento **mta/child/smtp** del file di configurazione.
 
-Per ogni elemento **IPAffinity** , è necessario dichiarare gli indirizzi IP che possono essere utilizzati per il computer.
+Per ciascun elemento **IPAffinity** , è necessario dichiarare gli indirizzi IP che possono essere utilizzati per il computer.
 
 Esempio:
 
