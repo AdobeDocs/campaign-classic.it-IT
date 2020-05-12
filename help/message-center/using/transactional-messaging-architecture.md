@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
 ## Informazioni sulle istanze di esecuzione e controllo {#about-execution-and-control-instances}
 
-In Adobe Campaign, le funzionalità di messaggistica transazionali (note anche come Centro messaggi) sono state progettate per supportare la scalabilità e fornire un servizio 24/7. È costituito da diversi casi:
+In Adobe Campaign, le funzionalità di messaggistica transazionali (note anche come Centro messaggi) sono state progettate per supportare la scalabilità e fornire un servizio 24/7. Si compone di diversi casi:
 
 * un&#39;istanza di controllo in cui vengono creati i modelli di messaggio,
 * una o più istanze di esecuzione che ricevono eventi e inviano messaggi.
@@ -49,7 +52,7 @@ Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi
 
 ## Installazione delle istanze {#installing-instances}
 
-Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni. Adobe consiglia di lavorare in un ambiente di test prima di essere messo in produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale Adobe.
+Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni. Adobe consiglia di lavorare in un ambiente di test prima di essere messo in produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
 
 >[!CAUTION]
 >
@@ -75,40 +78,40 @@ Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) deve 
 
    ![](assets/messagecenter_install_channel.png)
 
-## Messaggi transazionali e interazione in entrata {#transactional-messages-and-inbound-interaction}
+<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
-In combinazione con il modulo Interazione in entrata, la messaggistica transazionale consente di inserire nel messaggio un&#39;offerta di marketing dedicata al destinatario.
+When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
 >[!NOTE]
 >
->Il modulo Interazione è dettagliato in [Interazione](../../interaction/using/interaction-and-offer-management.md).
+>The Interaction module is detailed in [Interaction](../../interaction/using/interaction-and-offer-management.md).
 
-Per utilizzare i messaggi transazionali con Interaction, è necessario applicare le seguenti configurazioni:
+To use transactional messaging with Interaction, you need to apply the following configurations:
 
-* Installate il pacchetto **Interaction** nell&#39;istanza di controllo e configurate il catalogo delle offerte.
+* Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-   >[!CAUTION]
-   >
-   >Non replicare le offerte nelle istanze di esecuzione.
+  >[!CAUTION]
+  >
+  >Do not replicate the offers onto the execution instances.
 
-* L&#39;evento deve includere un identificatore collegato ai destinatari per personalizzare le offerte. L&#39;attributo **@externalId** deve contenere il valore di questo identificatore. **L&#39;interazione** è configurata per impostazione predefinita per identificare il destinatario della chiave primaria:
+* The event must include an identifier linked to the recipients, for personalizing offers. The **@externalId** attribute must contain the value of this identifier. **Interaction** is configured by default to identify the recipient of the primary key:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
+  ```
 
-   Puoi configurare l’ **interazione** in modo che l’identificazione avvenga nel campo desiderato, ad esempio sull’indirizzo e-mail:
+  You can configure **Interaction** so that identification takes place in the field of your choice, for example on the email address:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
+  ```
 
-Create i modelli di distribuzione come fareste per una campagna e-mail:
+Create your delivery templates the way you would for an email campaign:
 
-* Aggiungete l&#39;offerta al modello di messaggio transazionale.
-* Controllate l’anteprima, inviate una prova e pubblicate il modello.
+* Add the offer to your transactional message template.
+* Check the preview, send a proof and publish the template.
 
-È inoltre necessario attivare la modalità unitaria negli spazi di offerta. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
 ## Messaggi transazionali e notifiche push {#transactional-messaging-and-push-notifications}
 
@@ -118,7 +121,7 @@ Se combinato con il modulo del canale delle app mobili, i messaggi transazionali
 >
 >Il canale dell&#39;app mobile è dettagliato in [questa sezione](../../delivery/using/about-mobile-app-channel.md).
 
-Per utilizzare moduli di messaggi transazionali con Mobile App Channel, è necessario applicare le seguenti configurazioni:
+Per utilizzare i moduli di messaggi transazionali con Mobile App Channel, è necessario applicare le seguenti configurazioni:
 
 1. Installa il pacchetto **Mobile App Channel** nelle istanze di controllo ed esecuzione.
 1. Replicare il servizio Adobe Campaign di tipo applicazione **** Mobile e le applicazioni mobili che contiene sulle istanze di esecuzione.
@@ -126,7 +129,7 @@ Per utilizzare moduli di messaggi transazionali con Mobile App Channel, è neces
 L&#39;evento deve contenere i seguenti elementi:
 
 * L’ID del dispositivo mobile (**registrationId** per Android e **deviceToken** per iOS). Questo ID rappresenta l&#39;&quot;indirizzo&quot; a cui verrà inviata la notifica.
-* Il collegamento all&#39;applicazione mobile o alla chiave di integrazione (**uuid**) che consente di recuperare informazioni sulla connessione specifiche per l&#39;applicazione.
+* Il collegamento all&#39;applicazione mobile o alla chiave di integrazione (**uuid**) che consente di recuperare le informazioni di connessione specifiche per l&#39;applicazione.
 * Canale a cui verrà inviata la notifica (**DesiderateChannel**): 41 per iOS e 42 per Android
 * Tutti i dati utili per la personalizzazione
 
@@ -202,7 +205,7 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
 
    * **[!UICONTROL Type]** : selezionate **[!UICONTROL HTTP relay to remote Database]** .
    * **[!UICONTROL Server]** : immettete l&#39;URL del server della campagna per l&#39;istanza di esecuzione.
-   * **[!UICONTROL Account]** : immettere l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
+   * **[!UICONTROL Account]** : immettete l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
    * **[!UICONTROL Password]** : immettete la password per l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
    * **[!UICONTROL Data Source]** : immettete la sintassi seguente **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
