@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87966db35779f0e6a4b09a1a3ba1c30d4d002518
+source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin
 
 ![](assets/data-model_documentation-tab.png)
 
-Per ulteriori informazioni sulla descrizione predefinita del modello dati Campaign Classic, consulta questa [sezione](../../configuration/using/data-model-description.md).
+Per ulteriori informazioni sulla descrizione predefinita del modello dati Campaign Classic, consulta [questa sezione](../../configuration/using/data-model-description.md).
 
-La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta questa [sezione](../../configuration/using/about-schema-reference.md).
+La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
 
 ## Panoramica {#data-model-overview}
 
@@ -38,13 +41,13 @@ Adobe Campaign si basa su un database relazionale contenente tabelle collegate t
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;architettura del modello dati Campaign e sulle relative best practice, consulta questa [sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+>Per ulteriori informazioni sull&#39;architettura del modello dati Campaign e sulle relative best practice, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).
 
 ### Tabella destinatari {#recipient-table}
 
 Il modello dati si basa su una tabella principale che per impostazione predefinita è la tabella Recipient (**NmsRecipient**). Questa tabella consente di archiviare tutti i profili di marketing.
 
-Per ulteriori informazioni sulla tabella Destinatario, consulta questa [sezione](#default-recipient-table).
+Per ulteriori informazioni sulla tabella Destinatario, consulta [questa sezione](#default-recipient-table).
 
 ### Tabella di consegna {#delivery-table}
 
@@ -85,7 +88,7 @@ Inoltre, poiché la tabella Destinatario fa parte del prodotto, sia la tabella c
 
 Quando inizi con Adobe Campaign, devi valutare il modello dati predefinito per verificare quale tabella è la più adatta per memorizzare i dati di marketing.
 
-Se pertinente, puoi utilizzare la tabella dei destinatari predefinita con i campi out-of-the-box, come descritto in questa [sezione](#default-recipient-table).
+Se pertinente, puoi utilizzare la tabella dei destinatari predefinita con i campi out-of-the-box, come descritto in [questa sezione](#default-recipient-table).
 
 Se necessario, potete estenderlo con due meccanismi:
 
@@ -108,7 +111,7 @@ Infatti, se il modello dati non soddisfa la struttura incentrata sui destinatari
 >
 >In questo caso, dovrete creare una nuova mappatura [di](../../configuration/using/target-mapping.md)destinazione.
 
-Tutti i principi e i passaggi necessari per utilizzare una tabella di destinatari personalizzata sono descritti in dettaglio in questa [sezione](../../configuration/using/about-custom-recipient-table.md).
+Tutti i principi e i passaggi necessari per utilizzare una tabella di destinatari personalizzata sono descritti in [questa sezione](../../configuration/using/about-custom-recipient-table.md).
 
 I vantaggi derivanti dall&#39;utilizzo di una tabella Destinatario personalizzata sono i seguenti:
 
@@ -130,4 +133,4 @@ Non è necessaria alcuna manutenzione per verificare che tutte le estensioni sia
 
 >[!IMPORTANT]
 >
->L&#39;utilizzo di una tabella di destinatari personalizzata è riservato agli utenti avanzati ed è soggetto a alcune limitazioni. Per ulteriori informazioni, consulta questa sezione.
+>L&#39;utilizzo di una tabella di destinatari personalizzata è riservato agli utenti avanzati ed è soggetto a alcune limitazioni. Per ulteriori informazioni, consulta [questa sezione](../../configuration/using/about-custom-recipient-table.md).
