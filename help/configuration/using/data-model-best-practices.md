@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '3997'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Questo documento delinea le raccomandazioni chiave durante la progettazione del 
 
 Per una migliore comprensione delle tabelle integrate in Campaign e della loro interazione, consulta la sezione relativa al modello [di dati](../../configuration/using/about-data-model.md) Campaign Classic.
 
-Leggi questa [documentazione](../../configuration/using/about-schema-reference.md) per iniziare a usare gli schemi di Campaign. Scopri come configurare gli schemi di estensione per estendere il modello di dati concettuali del database Adobe Campaign in questo [documento](../../configuration/using/about-schema-edition.md).
+Leggi [questa documentazione](../../configuration/using/about-schema-reference.md) per iniziare a usare gli schemi di Campaign. Scopri come configurare gli schemi di estensione per estendere il modello di dati concettuali del database Adobe Campaign in [questo documento](../../configuration/using/about-schema-edition.md).
 
 ## Panoramica {#overview}
 
@@ -46,7 +49,7 @@ Questo approccio incentrato sul cliente è riportato nel grafico seguente. La ta
 
 Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla **[!UICONTROL Documentation]** scheda.
 
-Il modello dati predefinito di Adobe Campaign è presentato in questo [documento](../../configuration/using/data-model-description.md).
+Il modello dati predefinito di Adobe Campaign è presentato in [questo documento](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -154,8 +157,8 @@ Quando viene creata una tabella personalizzata in Adobe Campaign con una chiave 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2.1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando ID negativi. Questo dovrebbe essere utilizzato con cura e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign Classic nelle query SQL generate.
 
 **Argomenti correlati:**
-* Per ulteriori informazioni sulla funzione di generazione **automatica della** sequenza, consultate questo [documento](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
-* Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guardate questo [video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+* Per ulteriori informazioni sulla funzione di generazione **automatica della** sequenza, consultate [questo documento](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* Per ulteriori informazioni sull’esaurimento delle sequenze, guardate [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -221,7 +224,7 @@ La dichiarazione di un collegamento come join esterno non è valida per le prest
 
 Sebbene sia possibile unire qualsiasi tabella in un flusso di lavoro, Adobe consiglia di definire collegamenti comuni tra le risorse direttamente nella definizione della struttura dati.
 
-Il collegamento deve essere definito in linea con i dati effettivi nelle tabelle. Una definizione errata potrebbe avere un impatto sui dati recuperati tramite collegamenti, ad esempio la duplicazione inattesa di record.
+Il collegamento deve essere definito in linea con i dati effettivi nelle tabelle. Una definizione errata potrebbe avere un impatto sui dati recuperati tramite collegamenti, ad esempio la duplicazione imprevista di record.
 
 Denominate il collegamento in modo coerente con il nome della tabella: il nome del collegamento deve essere utile per comprendere la tabella lontana.
 
