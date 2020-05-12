@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 
 # Informazioni sul recapito messaggi{#about-deliverability}
+
+**La realizzabilità** consiste nel misurare il successo delle campagne che raggiungono la inbox dei destinatari senza rimbalzare o essere contrassegnate come spam.
 
 Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito della tua piattaforma. In questa sezione vengono inoltre evidenziati i principi principali da tenere a mente per la gestione e l&#39;ottimizzazione della recapito.
 
