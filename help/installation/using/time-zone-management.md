@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Le principali funzionalità della piattaforma per la gestione del fuso orario so
 
 **Gli operatori** possono modificare i fusi orari durante la configurazione **della** consegna e specificare il fuso orario in cui verrà eseguito il recapito.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se il database non gestisce più fusi orari, per tutte le manipolazioni dei filtri dati è necessario eseguire query SQL nel fuso orario del server del database.
 
@@ -46,9 +49,9 @@ Se la piattaforma Adobe Campaign non richiede la gestione del fuso orario, puoi 
 
 I fusi orari combinano diverse realtà: l&#39;espressione può descrivere un intervallo di tempo costante con la data UTC o con gli orari di una regione che possono cambiare due volte all&#39;anno (ora legale).
 
-**Ad esempio, in postgreSQL,** SET TIME ZONE &#39;Europe/Paris&#39;; Il comando terrà conto degli orari estivi e invernali: la data sarà espressa in UTC+1 o UTC+2 a seconda dell&#39;ora dell&#39;anno.
+Ad esempio, in postgreSQL, **SET TIME ZONE &#39;Europe/Paris&#39;;** Il comando terrà conto degli orari estivi e invernali: la data sarà espressa in UTC+1 o UTC+2 a seconda dell&#39;ora dell&#39;anno.
 
-**Tuttavia, se si utilizza il** SET TIME ZONE 0200, il ritardo sarà sempre UTC+2.
+Tuttavia, se si utilizza il **SET TIME ZONE 0200,** il ritardo sarà sempre UTC+2.
 
 ## Configurazione {#configuration}
 
@@ -59,7 +62,7 @@ Dal punto di vista tecnico, nel database sono disponibili due modi per memorizza
 1. TIMESTAMP CON IL FORMATO TIMEZONE: il motore del database memorizza le date in UTC. Ogni sessione aperta avrà un fuso orario e le date verranno convertite in base ad esso.
 1. Formato locale + fuso orario locale: tutte le date sono memorizzate nel formato locale (nessuna gestione del time-lag) e viene loro assegnato un unico fuso orario. Il fuso orario è memorizzato nell’opzione **WdbcTimeZone** dell’istanza Adobe Campaign e può essere modificato mediante il **[!UICONTROL Administration > Platform > Options]** menu della struttura.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Tieni presente che questa modifica può causare problemi di coerenza dei dati e sincronizzazione.
 
@@ -71,7 +74,7 @@ Selezionare l&#39; **[!UICONTROL UTC database (date fields with time zone)]** op
 
 ![](assets/install_wz_select_utc_option.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se si utilizza **Oracle**, i file timezone (.dat) dei livelli client Oracle devono essere compatibili con i file timezones installati sul server.
 
@@ -93,7 +96,7 @@ I campi XML contenenti le date sono ora memorizzati in UTC. Durante il caricamen
 
 Per utilizzare un&#39;istanza esistente, aggiungete l&#39;opzione **WdbcTimeZone** e inserite il fuso orario dell&#39;istanza.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Verificate che il valore corretto sia configurato per l&#39;opzione WdbcTimeZone: le modifiche effettuate successivamente possono causare incoerenze.
 
