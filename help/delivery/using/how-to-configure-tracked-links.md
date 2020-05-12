@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Per ogni consegna, puoi tenere traccia della ricezione dei messaggi e dell&#39;a
 
 Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettuate le seguenti operazioni:
 
-1. Selezionate l’ **[!UICONTROL Display URLs]** opzione nella sezione inferiore della procedura guidata di consegna, sotto al contenuto del messaggio.
+1. Selezionate l&#39; **[!UICONTROL Display URLs]** opzione nella sezione inferiore della procedura guidata di consegna, sotto al contenuto del messaggio.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -42,7 +45,7 @@ Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per pers
 
 1. Per ciascun URL del messaggio, seleziona se attivare o meno il tracciamento.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Quando l’URL del collegamento viene utilizzato come etichetta, si consiglia di disattivare il tracciamento per evitare i rischi di rifiuto dovuti al phishing.
    >
@@ -67,4 +70,4 @@ Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per pers
    * **[!UICONTROL Opt-out]** : considera questo URL come un URL di rinuncia o di annullamento dell’iscrizione.
    * **[!UICONTROL Mirror page]** : considera questo URL come un URL della pagina mirror.
 
-1. Inoltre, potete selezionare una categoria per ciascun URL tracciato nell’elenco a discesa della **[!UICONTROL Category]** colonna. Queste categorie possono essere visualizzate come ad esempio in **[!UICONTROL URLs and click streams]** (vedere [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in una specifica enumerazione: **[!UICONTROL urlCategory]** (consultate [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
+1. Inoltre, potete selezionare una categoria per ciascun URL tracciato nell’elenco a discesa della **[!UICONTROL Category]** colonna. Queste categorie possono essere visualizzate come ad esempio in **[!UICONTROL URLs and click streams]** (vedere [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un&#39;enumerazione specifica: **[!UICONTROL urlCategory]** (consultate [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
