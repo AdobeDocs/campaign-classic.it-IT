@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2375'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin
 
 >[!NOTE]
 >
->La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta questa [sezione](../../configuration/using/about-schema-reference.md).
+>La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
 
 ## Descrizione delle tabelle principali {#description-main-tables}
 
@@ -58,7 +61,7 @@ Il campo iFolderId è la chiave esterna che collega il destinatario alla propria
 
 Il campo sCountryCode è il codice ISO alfa 2 3166-1 (2 caratteri) del paese associato al destinatario. Questo campo è in realtà una chiave esterna nella tabella di riferimento del paese (NmsCountry), che contiene le etichette del paese e altri dati del codice del paese. Se il paese non è popolato, il valore XX viene memorizzato (e viene utilizzato al posto di un record con ID zero).
 
-Per ulteriori informazioni sulla tabella Destinatario, consulta questa [sezione](../../configuration/using/about-data-model.md#default-recipient-table).
+Per ulteriori informazioni sulla tabella Destinatario, consulta [questa sezione](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
@@ -182,21 +185,21 @@ I seguenti indicatori vengono aggiornati automaticamente durante l&#39;esecuzion
 * Numero di persone contattate: **iContactReact**. Numero distinto di contatti mirati nell&#39;ipotesi.
 * Conteggio gruppi di controllo: **iProofReact**. Numero distinto di contatti di gruppi di controllo mirati nell&#39;ipotesi.
 * Tasso di risposta contattato: **dContactReactRate**. Tasso di risposta dei contatti mirati nell&#39;ipotesi.
-* Tasso di risposta del gruppo di controllo: **dProofReactRate**. Tasso di risposta del gruppo di controllo delle ipotesi.
+* Tasso di risposta del gruppo di controllo: **dReactRate**. Tasso di risposta del gruppo di controllo delle ipotesi.
 * Entrate totali della popolazione contattata: **dContactReactTotalAmount**. Entrate totali dei contatti mirati nell&#39;ipotesi.
 * Entrate medie del gruppo di controllo: **dContactReactAvgAmount**. Entrate medie dei contatti del gruppo di controllo mirato nell&#39;ipotesi.
 * Entrate totali del gruppo di controllo: **dProofReactTotalAmount**. Entrate totali del gruppo di controllo delle ipotesi.
-* Entrate medie del gruppo di controllo: **dProofReactAvgAmount**. Entrate medie del gruppo di controllo delle ipotesi.
+* Entrate medie del gruppo di controllo: **dReactAvgAmount**. Entrate medie del gruppo di controllo delle ipotesi.
 * Margine totale per contatto: **dContactReactTotalMargin**. Margine totale per contatto mirato nell&#39;ipotesi.
 * Margine medio per contatto: **dContactReactAvgMargin**. Margine medio per contatto mirato nell&#39;ipotesi.
-* Margine totale del gruppo di controllo: **ProofReactTotalMargin**. Margine totale del gruppo di controllo oggetto dell&#39;ipotesi.
-* Margine medio del gruppo di controllo: **ProofReactAvgMargin**. Margine medio del gruppo di controllo oggetto dell&#39;ipotesi.
+* Margine totale del gruppo di controllo: **dProofReactTotalMargin**. Margine totale del gruppo di controllo oggetto dell&#39;ipotesi.
+* Margine medio del gruppo di controllo: **dReactAvgMargin**. Margine medio del gruppo di controllo oggetto dell&#39;ipotesi.
 * Entrate aggiuntive: **AdditionalAmount**. (Ricavi medi di contattati - Ricavi medi del gruppo di controllo) * Numero di contattati.
 * Margine aggiuntivo: **AdditionalMargin**. (Margine medio di contattati - Margine medio del gruppo di controllo) / Numero di contattati.
 * Costo medio per contatto (espressione SQL). Costo calcolato della consegna / Numero di contatti.
 * ROI (espressione SQL). Costo calcolato della consegna / Margine totale della consegna contattata.
 * ROI effettivo (espressione SQL). Costo calcolato della consegna/margine aggiuntivo.
-* Significato: **iSignificativy** (espressione SQL). Contiene valori da 0 a 3 a seconda del significato della campagna.
+* Significato: **Significatività** (espressione SQL). Contiene valori da 0 a 3 a seconda del significato della campagna.
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
