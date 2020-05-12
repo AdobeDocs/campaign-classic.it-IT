@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Nel contesto della consegna di un’e-mail, il tracciamento consente di tenere t
 
 Le metriche di tracciamento possono essere consultate nei **[!UICONTROL URLs and click streams]**, **[!UICONTROL Tracking statistics]**, **[!UICONTROL Hot clicks]** rapporti e nella **[!UICONTROL Tracking]** scheda della distribuzione.
 
-Il dashboard di distribuzione è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l&#39;invio dei messaggi. For more on this refer to this [section](../../delivery/using/monitoring-a-delivery.md).
+Il dashboard di distribuzione è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l&#39;invio dei messaggi. For more on this refer to [this section](../../delivery/using/monitoring-a-delivery.md).
 
 **Argomenti** correlati:
 
