@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 Messaggi transazionali (Centro messaggi) è un modulo Campaign progettato per gestire i messaggi di attivazione. Questi messaggi sono generati da eventi attivati dai sistemi informativi e possono essere: fattura, conferma dell&#39;ordine, conferma della spedizione, modifica della password, notifica dell&#39;indisponibilità del prodotto, dichiarazione dell&#39;account o creazione dell&#39;account del sito Web, ad esempio.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >I messaggi transazionali richiedono una licenza specifica. Controllare il contratto di licenza.
 
