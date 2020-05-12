@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
+source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+workflow-type: tm+mt
+source-wordcount: '2894'
+ht-degree: 0%
 
 ---
 
@@ -278,6 +281,14 @@ I gruppi di operatori predefiniti sono:
 1. Gestione locale/centrale
 
    Questi gruppi consentono di utilizzare il marketing **** distribuito (modulo opzionale Adobe Campaign).
+
+1. Manager offerta
+
+   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consultare questa [pagina](../../interaction/using/operator-profiles.md).
+Questo gruppo contiene i seguenti diritti denominati:
+
+   * INSERISCI CARTELLE: Diritto di inserire cartelle nella struttura di Adobe Campaign (a condizione che disponiate dei diritti di modifica per i rami interessati),
+   * MODIFICA CARTELLE: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
 
 ## Diritti denominati {#named-rights}
 
