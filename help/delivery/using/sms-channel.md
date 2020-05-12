@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6e587747be546860c0a485b44aee79d396f25cec
+source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+workflow-type: tm+mt
+source-wordcount: '3227'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +31,13 @@ Adobe Campaign consente di eseguire consegne personalizzate di massa di messaggi
 >
 >Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite l&#39;opzione Canale app mobile (NMAC) **di** Adobe Campaign.
 > 
->Per ulteriori informazioni, consulta la sezione [Informazioni sul canale](../../delivery/using/about-mobile-app-channel.md) app mobile.
+>Per ulteriori informazioni, consulta la sezione [Informazioni sul canale](../../delivery/using/about-mobile-app-channel.md) dell’app mobile.
 
 Le sezioni seguenti forniscono informazioni specifiche per il canale SMS. Per informazioni globali su come creare una consegna, consulta[questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Configurazione del canale SMS {#setting-up-sms-channel}
 
-Per inviare a un telefono cellulare è necessario:
+Per inviare a un telefono cellulare, è necessario:
 
 1. Un account esterno che specifica un connettore e il tipo di messaggio.
 
@@ -72,7 +75,7 @@ Se desiderate utilizzare il protocollo SMPP, potete anche creare un nuovo accoun
 
 Per ulteriori informazioni sul protocollo e sulle impostazioni SMS, consultare questa nota [tecnica](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
-A questo scopo, effettuate le seguenti operazioni:
+A questo scopo, attenetevi alla procedura seguente:
 
 1. Nel nodo **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** della struttura ad albero, fate clic sull&#39; **[!UICONTROL New]** icona.
 1. Definite il tipo di account come **Routing**, il canale come **Mobile (SMS)** e la modalità di consegna come consegna **in** blocco.
@@ -118,7 +121,7 @@ A questo scopo, effettuate le seguenti operazioni:
 
 1. Nella **[!UICONTROL SMSC specificities]** scheda, l&#39; **[!UICONTROL Send full phone number]** opzione è disabilitata per impostazione predefinita. Non attivarla se si desidera rispettare il protocollo SMPP e trasferire solo cifre al server del provider SMS (SMSC).
 
-   Tuttavia, dato che alcuni provider richiedono l&#39;uso del prefisso &quot;+&quot;, si consiglia di consultare il provider e si consiglia di abilitare questa opzione se necessario.
+   Tuttavia, dato che alcuni provider richiedono l&#39;uso del prefisso &quot;+&quot;, si consiglia di consultare il provider e si consiglia di abilitare questa opzione, se necessario.
 
    La **[!UICONTROL Enable TLS over SMPP]** casella di controllo consente di crittografare il traffico SMPP. Per ulteriori informazioni, consultare questa nota [](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html)tecnica.
 
@@ -133,13 +136,13 @@ La traslitterazione dei caratteri può essere impostata in un account esterno SM
 La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando tale carattere non è preso in considerazione dallo standard GSM.
 
 * Se la traslitterazione è **[!UICONTROL authorized]**, ogni carattere non preso in considerazione viene sostituito da un carattere GSM al momento dell&#39;invio del messaggio. Ad esempio, la lettera &quot;ë&quot; è sostituita da &quot;e&quot;. Il messaggio viene quindi leggermente modificato, ma il limite di caratteri rimane lo stesso.
-* Quando la traslitterazione è **[!UICONTROL not authorized]**, ogni messaggio che contiene caratteri non presi in considerazione viene inviato in formato binario (Unicode): tutti i caratteri vengono quindi inviati così come sono. Tuttavia, i messaggi SMS che utilizzano Unicode sono limitati a 70 caratteri (o 67 caratteri per SMS per i messaggi inviati in più parti). Se viene superato il numero massimo di caratteri, verranno inviati diversi messaggi, con conseguenti costi aggiuntivi.
+* Quando la traslitterazione è **[!UICONTROL not authorized]**, ogni messaggio che contiene caratteri non presi in considerazione viene inviato in formato binario (Unicode): tutti i caratteri vengono quindi inviati così come sono. Tuttavia, i messaggi SMS che utilizzano Unicode sono limitati a 70 caratteri (o 67 caratteri per SMS per i messaggi inviati in più parti). Se viene superato il numero massimo di caratteri, verranno inviati diversi messaggi, il che potrebbe comportare costi aggiuntivi.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM.
 
-Per impostazione predefinita, la traduzione dei caratteri è disabilitata. Se si desidera che tutti i caratteri nei messaggi SMS siano mantenuti invariati, per non modificare ad esempio i nomi propri, si consiglia di non abilitare questa opzione.
+Per impostazione predefinita, la traslazione dei caratteri è disabilitata. Se si desidera che tutti i caratteri nei messaggi SMS siano mantenuti invariati, per non modificare ad esempio i nomi propri, si consiglia di non abilitare questa opzione.
 
 Tuttavia, se i messaggi SMS contengono molti caratteri che generano messaggi Unicode, è possibile abilitare questa opzione per limitare i costi di invio dei messaggi.
 
@@ -332,7 +335,7 @@ Quando si configura un nuovo account esterno per la distribuzione di dispositivi
 
 >[!NOTE]
 >
->La mappatura tra il valore **data_coding** e la codifica effettivamente utilizzata è standardizzata. Tuttavia, alcuni SMSC hanno una propria mappatura specifica: in questo caso, l&#39;amministratore di **Adobe Campaign** deve dichiarare questa mappatura. Consultate il vostro fornitore per ulteriori informazioni.
+>La mappatura tra il valore **data_coding** e la codifica effettivamente utilizzata è standardizzata. Tuttavia, alcuni SMSC hanno una propria mappatura specifica: in questo caso, l&#39;amministratore di **Adobe Campaign** deve dichiarare questa mappatura. Consultate il vostro fornitore per saperne di più.
 
 È possibile dichiarare **data_codings** e forzare la codifica, se necessario: a tal fine, specificate una singola codifica nella tabella.
 
@@ -343,7 +346,7 @@ Quando si configura un nuovo account esterno per la distribuzione di dispositivi
 
 * Quando definisci le codifiche che desideri utilizzare e i valori dei **[!UICONTROL data_coding]** campi collegati, Adobe Campaign cercherà di utilizzare la prima codifica nell&#39;elenco, quindi quanto segue, se la prima codifica risulta impossibile.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;ordine di dichiarazione è importante: si consiglia di inserire l&#39;elenco in ordine crescente **di costo** per favorire le codifiche che consentono di contenere il maggior numero possibile di caratteri in ogni messaggio SMS.
 >
@@ -420,21 +423,21 @@ Per creare una nuova consegna SMS, segui i passaggi seguenti:
 
 >[!NOTE]
 >
->In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali sulla creazione dei contenuti.
+>In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali relativi alla creazione dei contenuti.
 
 1. Create una nuova consegna, ad esempio dal dashboard Consegna.
 1. Selezionate il modello di consegna **[!UICONTROL Send to mobiles (NetSize)]** creato in precedenza. Per ulteriori informazioni, consulta la sezione [Modifica del modello](#changing-the-delivery-template) di consegna.
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifica la consegna con etichetta, codice e descrizione. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con un&#39;etichetta, un codice e una descrizione. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Fai clic **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
 
 ## Definizione del contenuto SMS {#defining-the-sms-content}
 
 Per creare il contenuto dell&#39;SMS, procedere come segue:
 
-1. Immettere il contenuto del messaggio nella **[!UICONTROL Text content]** sezione della procedura guidata. I pulsanti della barra degli strumenti consentono di importare, salvare o cercare contenuti. L&#39;ultimo pulsante viene utilizzato per inserire campi di personalizzazione.
+1. Immettete il contenuto del messaggio nella **[!UICONTROL Text content]** sezione della procedura guidata. I pulsanti della barra degli strumenti consentono di importare, salvare o cercare contenuti. L&#39;ultimo pulsante viene utilizzato per inserire campi di personalizzazione.
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
@@ -454,7 +457,7 @@ Per creare il contenuto dell&#39;SMS, procedere come segue:
 
    >[!NOTE]
    >
-   >I messaggi SMS possono contenere un massimo di 160 caratteri se viene utilizzata la tabella codici Latin-1 (ISO-8859-1). Se il messaggio è scritto in Unicode, non deve superare i 70 caratteri. Alcuni caratteri speciali possono influenzare la lunghezza del messaggio. Per ulteriori informazioni sulla lunghezza del messaggio, consulta la sezione [Informazioni sulla traduzione](#about-character-transliteration) dei caratteri.
+   >I messaggi SMS possono contenere un massimo di 160 caratteri se viene utilizzata la tabella codici Latin-1 (ISO-8859-1). Se il messaggio è scritto in Unicode, non deve superare i 70 caratteri. Alcuni caratteri speciali possono influenzare la lunghezza del messaggio. Per ulteriori informazioni sulla lunghezza del messaggio, consulta la sezione [Informazioni sulla traslitterazione](#about-character-transliteration) dei caratteri.
    >
    >Quando sono presenti campi di personalizzazione o campi di contenuto condizionale, le dimensioni del messaggio variano da un destinatario all&#39;altro. La lunghezza del messaggio deve essere valutata al momento della personalizzazione.
    >
@@ -491,7 +494,7 @@ Sono disponibili le seguenti opzioni:
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Controlla la legge del tuo paese riguardo alla modifica dei nomi dei mittente. È inoltre necessario verificare con l&#39;operatore se questa funzionalità è disponibile.
 
@@ -533,7 +536,7 @@ Il modulo **nlserver sms** invia una query al router SMS a intervalli regolari. 
    > * Un account SMS può essere collegato a un solo account esterno per garantire che i rapporti sullo stato siano attribuiti all&#39;account corretto
 
 
-* **Annulla iscrizione**: i destinatari che desiderano interrompere la ricezione di SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite l&#39;attività flusso di lavoro SMS **** in entrata e quindi creare una query per abilitare l&#39;opzione **Non contattare più il destinatario** per i destinatari interessati.
+* **Annullamento sottoscrizione**: i destinatari che desiderano interrompere la ricezione di SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite l&#39;attività flusso di lavoro SMS **** in entrata e quindi creare una query per abilitare l&#39;opzione **Non contattare più il destinatario** per i destinatari interessati.
 
    Fare riferimento alla guida [Flussi](../../workflow/using/executing-a-workflow.md#architecture) di lavoro.
 
@@ -547,7 +550,7 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
 * **create**: il messaggio data in arrivo è stato inserito in Adobe Campaign.
 * **extAccount**: Account esterno di Adobe Campaign.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >I campi seguenti sono specifici di NetSize.
    >
@@ -567,11 +570,11 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
 
 Quando gli abbonati rispondono a un messaggio SMS che è stato loro inviato tramite Adobe Campaign e utilizzano una parola chiave come STOP, HELP o YES, è necessario, nel mercato statunitense, configurare i messaggi che vengono automaticamente restituiti.
 
-Ad esempio, se i destinatari inviano la parola chiave STOP, riceveranno automaticamente un messaggio di conferma in cui si attesta che sono stati annullati.
+Ad esempio, se i destinatari inviano la parola chiave STOP, riceveranno automaticamente un messaggio di conferma in cui si attesta che sono stati annullati la sottoscrizione.
 
 Il nome del mittente per questo tipo di messaggio è un codice breve di solito utilizzato per inviare le consegne.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La seguente procedura dettagliata è valida solo per i connettori SMPP, ad eccezione del connettore SMPP generico esteso. Per ulteriori informazioni, consultare la sezione [Creazione di un account](#creating-an-smpp-external-account) esterno SMPP.
 >
@@ -603,7 +606,7 @@ Il nome del mittente per questo tipo di messaggio è un codice breve di solito u
    >
    >Ogni parola chiave deve essere scritta in lettere maiuscole.
 
-   Se desiderate inviare lo stesso messaggio per più parole chiave, duplicate la riga corrispondente.
+   Se si desidera inviare lo stesso messaggio per più parole chiave, duplicare la riga corrispondente.
 
    Ad esempio:
 
@@ -618,7 +621,7 @@ Il nome del mittente per questo tipo di messaggio è un codice breve di solito u
 
 1. Copiate questo file nella directory **conf** di Adobe Campaign, nello stesso punto del server Web.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questi tipi di messaggi automatici non mantengono una cronologia. Pertanto, non vengono visualizzati nel dashboard [di](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard)distribuzione.
 >
