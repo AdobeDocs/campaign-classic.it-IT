@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -255,7 +258,7 @@ I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 * Per le istanze che utilizzano l&#39;MTA avanzata senza **Webhooks/EFS**, le **[!UICONTROL Inbound email]** regole saranno utilizzate anche per elaborare le e-mail di rimbalzo sincrone provenienti dall&#39;MTA avanzata, utilizzando lo stesso indirizzo e-mail come per le e-mail di rimbalzo asincrone.
 >
 >
-Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### Regole di gestione e-mail {#email-management-rules}
 
@@ -291,7 +294,7 @@ Per ulteriori informazioni sulla qualifica della posta indesiderata, consulta [q
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato e se l’istanza dispone di funzionalità **Webhooks/EFS** , le **[!UICONTROL Inbound email]** regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestione del dominio {#domain-management}
 
@@ -308,7 +311,7 @@ Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** 
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le **[!UICONTROL Domain management]** regole non vengono più utilizzate. **La firma dell&#39;autenticazione dell&#39;e-mail DKIM (DomainKeys Identified Mail)** viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini. Non firma con **Sender ID**, **DomainKeys** o **S/MIME** , a meno che non venga specificato diversamente a livello Enhanced MTA.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Gestione MX {#mx-management}
 
@@ -324,4 +327,4 @@ For more on MX management, refer to [this section](../../installation/using/emai
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le regole di **[!UICONTROL MX management]** consegna effettiva non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
