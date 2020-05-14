@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3055'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +163,7 @@ I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia di Adobe 
 * **[!UICONTROL Address for errors]** : Compila questo campo per trasferire a un indirizzo di terze parti solo i messaggi di errore che il processo inMail non è stato in grado di soddisfare le condizioni richieste.
 * **[!UICONTROL SMTP server]** : Server utilizzato per inviare le e-mail di rimbalzo non elaborate.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per inoltrare e-mail di rimbalzo non elaborate, Adobe consiglia di compilare solo il **[!UICONTROL Address for errors]** campo. Tuttavia, assicurarsi che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe mettere un carico pesante sul server di posta. Per ulteriori informazioni, contattate il vostro responsabile commerciale.
 
@@ -310,7 +313,7 @@ Questa fase consente di includere le preferenze per i criteri dei dati.
 
 ## Accesso da Internet {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
@@ -334,7 +337,7 @@ Adobe Campaign consente di distinguere questi tre URL per estendere il carico su
 
 ## Gestione delle risorse pubbliche {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
