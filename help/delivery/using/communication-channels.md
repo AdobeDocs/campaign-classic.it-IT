@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '764'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Le funzionalità principali includono il targeting, la definizione e la personal
 
 >[!NOTE]
 >
->Adobe Campaign offre una serie di strumenti per monitorare la tua recapito e ottimizzare l&#39;invio delle e-mail. Per ulteriori informazioni, consulta la guida [Deliverability Getting Started](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) and [Deliverability Management](../../delivery/using/about-deliverability.md)(Introduzione alla distribuzione).
+>Adobe Campaign offre una serie di strumenti per monitorare la tua recapito e ottimizzare l&#39;invio delle e-mail. Per ulteriori informazioni, consulta la guida [Deliverability](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) and [Deliverability Management](../../delivery/using/about-deliverability.md)(Introduzione alla conformità e gestione della conformità).
 
 L&#39;invio può essere automatizzato mediante la preparazione di una consegna e/o l&#39;invio nel processo di un flusso di lavoro. Per ulteriori informazioni sulle attività di tipo consegna nei flussi di lavoro, consulta [questa sezione](../../workflow/using/about-action-activities.md).
 
@@ -72,7 +75,7 @@ Per ulteriori informazioni sui diversi tipi di consegne, consulta [questa sezion
 
 Adobe Campaign consente di inviare messaggi [SMS](../../delivery/using/sms-channel.md) e [LINE](../../delivery/using/line-channel.md) sui dispositivi mobili.
 
-Per i messaggi SMS, potete creare, modificare e personalizzare i messaggi solo in formato testo. Potete anche visualizzare l&#39;anteprima dei messaggi SMS prima che vengano inviati.
+Per i messaggi SMS, potete creare, modificare e personalizzare i messaggi solo in formato testo. È inoltre possibile visualizzare l&#39;anteprima dei messaggi SMS prima dell&#39;invio.
 
 Per i messaggi LINE, è possibile inviare testo o immagini e collegamenti.
 
@@ -89,4 +92,4 @@ Adobe Campaign consente di inviare notifiche [](../../delivery/using/about-mobil
 
 [La posta](../../delivery/using/about-direct-mail-channel.md) diretta è un canale offline che consente di personalizzare e generare il file richiesto dai fornitori di posta diretta. Offre la possibilità di combinare canali online e offline nei viaggi dei clienti.
 
-I canali online consentono di creare i messaggi (e-mail, SMS, distribuzione di app mobili, ecc.) e inviali al tuo pubblico direttamente da Adobe Campaign. Con i canali offline, è diverso. Quando prepari la consegna diretta per posta, Adobe Campaign genera un file contenente tutti i profili di destinazione e le informazioni di contatto scelte (ad esempio l&#39;indirizzo postale). Sarà quindi possibile inviare questo file al provider di posta diretta che si prenderà cura dell&#39;invio effettivo.
+I canali online consentono di creare i messaggi (e-mail, SMS, distribuzione di app mobili, ecc.) e inviali al tuo pubblico direttamente da Adobe Campaign. Con i canali offline, è diverso. Quando prepari la consegna diretta per posta, Adobe Campaign genera un file contenente tutti i profili di destinazione e le informazioni di contatto scelte (ad esempio l&#39;indirizzo postale). Sarà quindi possibile inviare questo file al provider di posta diretta che si occuperà dell&#39;invio effettivo.
