@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 0%
 
 ---
 
 
 # Creazione di una connessione condivisa{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Le estensioni dello schema eseguite sugli schemi utilizzati dai flussi di lavoro [tecnici del Centro](../../message-center/using/technical-workflows.md) messaggi nelle istanze di controllo o esecuzione devono essere duplicate nelle altre istanze utilizzate dal modulo di messaggistica transazionale di Adobe Campaign.
 >* L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
@@ -36,7 +39,7 @@ Se si dispone di un&#39;architettura suddivisa, è necessario specificare le ist
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
 
 Per creare un account esterno di tipo istanza di esecuzione, procedere come segue:
 
@@ -101,7 +104,7 @@ Per utilizzare una password vuota, andate alle istanze di esecuzione e definite 
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
 
 1. Passate alla cartella dell&#39;operatore nell&#39;istanza di esecuzione ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selezionare l&#39;agente **Centro** messaggi.
@@ -120,7 +123,7 @@ Per utilizzare una password vuota, andate alle istanze di esecuzione e definite 
 
 È possibile condividere un cluster di esecuzione con diverse istanze di controllo. Questo tipo di architettura richiede la seguente configurazione.
 
-Ad esempio, se la società gestisce due marchi, ciascuno con una propria istanza di controllo: **Controllo 1** e **Controllo 2**. Vengono utilizzate anche due istanze di esecuzione. È necessario immettere un operatore del Centro messaggi diverso per ogni istanza di controllo: un operatore **mc1** per l&#39;istanza **Control 1** e un operatore **mc2** per l&#39;istanza **Control 2** .
+Ad esempio, se la società gestisce due marchi, ciascuno con una propria istanza di controllo: **Controllo 1** e **controllo 2**. Vengono utilizzate anche due istanze di esecuzione. È necessario immettere un operatore del Centro messaggi diverso per ogni istanza di controllo: un operatore **mc1** per l&#39;istanza **Control 1** e un operatore **mc2** per l&#39;istanza **Control 2** .
 
 Nella struttura ad albero di tutte le istanze di esecuzione, create una cartella per operatore (**Cartella 1** e **Cartella 2**) e limitate l&#39;accesso ai dati di ciascun operatore alla propria cartella.
 
