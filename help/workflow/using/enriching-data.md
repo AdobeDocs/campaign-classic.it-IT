@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## Informazioni sull&#39;arricchimento dei dati {#about-enriching-data}
 
-Questo caso di utilizzo descrive i possibili usi dell&#39; **[!UICONTROL Enrichment]** attività in un flusso di lavoro di targeting. Per ulteriori informazioni sull&#39;utilizzo dell&#39; **[!UICONTROL Enrichment]** attività, consultate: [Arricchimento](../../workflow/using/enrichment.md).
+Questo caso di utilizzo descrive i possibili usi dell&#39; **[!UICONTROL Enrichment]** attività in un flusso di lavoro di targeting. Per ulteriori informazioni sull&#39;utilizzo dell&#39; **[!UICONTROL Enrichment]** attività, fare riferimento a: [Arricchimento](../../workflow/using/enrichment.md).
+
+In [questa sezione](../../workflow/using/email-enrichment-with-custom-date-fields.md)è disponibile anche un esempio di utilizzo per arricchire la consegna di un&#39;e-mail con date personalizzate.
 
 I contatti presenti nel database marketing vengono inviati tramite un&#39;applicazione Web, invitandoli a partecipare a un concorso. I risultati della concorrenza sono riportati nella **[!UICONTROL Competition results]** tabella. Questa tabella è collegata alla tabella dei contatti (**[!UICONTROL Recipients]**). La **[!UICONTROL Competition results]** tabella contiene i campi seguenti:
 
@@ -65,7 +70,7 @@ Un&#39;attività **[!UICONTROL Intersection]** di tipo viene quindi aggiunta al 
 
 ## Passaggio 2: Arricchimento {#step-2--enrichment}
 
-In questo esempio, vogliamo personalizzare le consegne in base al **[!UICONTROL Score]** campo memorizzato nella **[!UICONTROL Competition results]** tabella. Questa tabella ha una relazione di tipo 1-n con la tabella dei destinatari. L&#39; **[!UICONTROL Enrichment]** attività consente di aggiungere dati da una tabella collegata alla dimensione di filtro alla tabella di lavoro del flusso di lavoro.
+In questo esempio, desideriamo personalizzare le consegne in base al **[!UICONTROL Score]** campo memorizzato nella **[!UICONTROL Competition results]** tabella. Questa tabella ha una relazione di tipo 1-n con la tabella dei destinatari. L&#39; **[!UICONTROL Enrichment]** attività consente di aggiungere dati da una tabella collegata alla dimensione di filtro alla tabella di lavoro del flusso di lavoro.
 
 1. Nella schermata di modifica dell&#39;attività di arricchimento, selezionate **[!UICONTROL Add data]**, quindi **[!UICONTROL Data linked to the filtering dimension]** fate clic su **[!UICONTROL Next]**.
 
