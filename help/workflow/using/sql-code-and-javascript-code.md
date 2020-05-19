@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
+source-git-commit: 26ba86073e4f1569bf05a7d8aa864ca87baed3ea
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 16e35b62cdf42c04139cc17645095a3d1f6e0fa7
 
 ## Codice SQL {#sql-code}
 
-Un&#39;attività **[!UICONTROL SQL code*]* esegue uno script SQL. Lo script è un modello JST.
+Un&#39; **[!UICONTROL SQL code]** attività esegue uno script SQL. Lo script è un modello JST.
 
 ![](assets/sql_code.png)
 
@@ -50,14 +53,14 @@ Un&#39;attività **[!UICONTROL SQL code*]* esegue uno script SQL. Lo script è u
 
    ![](assets/javascript_code.png)
 
-   * **[!UICONTROL Script]**:L&#39;area centrale dell&#39;editor contiene lo script da eseguire.
-   * **[!UICONTROL Processing errors]**:Fare riferimento a Errori [di](../../workflow/using/monitoring-workflow-execution.md#processing-errors)elaborazione.
+   * **[!UICONTROL Script]**: L&#39;area centrale dell&#39;editor contiene lo script da eseguire.
+   * **[!UICONTROL Processing errors]**: Fare riferimento a Errori [di](../../workflow/using/monitoring-workflow-execution.md#processing-errors)elaborazione.
 
 * **[!UICONTROL Advanced JavaScript code]**
 
    ![](assets/advanced_javascript_code.png)
 
-   * **[!UICONTROL First call]**:La prima area dell&#39;editor contiene lo script da eseguire durante la prima chiamata.
-   * **[!UICONTROL Next calls]**:La seconda area dell&#39;editor contiene lo script da eseguire durante le chiamate successive.
-   * **[!UICONTROL Transitions]**:Potete definire diverse transizioni di output dell&#39;attività.
-   * **[!UICONTROL Schedule]**:La **[!UICONTROL Schedule]** scheda consente di pianificare quando attivare l&#39;attività.
+   * **[!UICONTROL First call]**: La prima area dell&#39;editor contiene lo script da eseguire durante la prima chiamata.
+   * **[!UICONTROL Next calls]**: La seconda area dell&#39;editor contiene lo script da eseguire durante le chiamate successive.
+   * **[!UICONTROL Transitions]**: Potete definire diverse transizioni di output dell&#39;attività.
+   * **[!UICONTROL Schedule]**: La **[!UICONTROL Schedule]** scheda consente di pianificare quando attivare l&#39;attività.
