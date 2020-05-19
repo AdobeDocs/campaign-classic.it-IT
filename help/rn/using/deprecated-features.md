@@ -12,12 +12,15 @@ discoiquuid: null
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 79f8cc179fcbf9d537a1cc889b268a43202d7369
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
 
-# Deprecated and removed features {#deprecated-and-removed-features}
+# Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
 Adobe valuta costantemente le funzionalità dei prodotti per identificare le funzioni meno recenti da sostituire con alternative più moderne, al fine di migliorare il valore complessivo dei clienti, sempre con un&#39;attenta considerazione della compatibilità con le versioni precedenti. Poiché Adobe Campaign Classic funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate. Le versioni non più compatibili con Adobe Campaign Classic sono elencate di seguito.
 
@@ -32,11 +35,11 @@ Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la lor
 >Le release di Adobe Campaign e le nuove funzionalità sono elencate nelle note sulla [versione](../../rn/using/latest-release.md).
 
 
-## Funzioni obsolete {#deprecated-features}
+## Deprecated features {#deprecated-features}
 
 In questa sezione sono elencate le funzionalità contrassegnate come obsolete con le ultime versioni di Campaign Classic.
 
-In genere, le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleta, con un&#39;alternativa fornita. Queste funzionalità non sono più disponibili per i nuovi clienti di Campaign Standard o non devono essere utilizzate per alcuna nuova implementazione. Vengono anche rimosse dalla documentazione del prodotto.
+In genere, le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleta, con un&#39;alternativa fornita. Queste funzionalità non sono più disponibili per i nuovi clienti di Campaign Classic o non devono essere utilizzate per alcuna nuova implementazione. Vengono anche rimosse dalla documentazione del prodotto.
 
 Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzionalità nella distribuzione corrente e di pianificare la modifica della propria implementazione per utilizzare l&#39;alternativa fornita. Fare riferimento alla data di rimozione della destinazione per pianificare l&#39;ambiente e gli aggiornamenti del progetto di conseguenza.
 
@@ -50,8 +53,8 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
    <td><strong>Sostituzione</strong></td> 
   </tr> 
    <tr> 
-   <td>Javascript SDK Security<br></td>
-   <td>decryptString<br></td>
+   <td>Javascript SDK Security<br> </td>
+   <td>decryptString<br> </td>
    <td><p>Per motivi di sicurezza, l'API <em>deryptString</em> non è più disponibile per impostazione predefinita per le nuove installazioni.</p> 
    <p>Nel contesto di un post-aggiornamento a 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>deryptPassword</em> .</p><br> </td>
   </tr> 
@@ -68,14 +71,14 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
    <td><strong>Sostituzione</strong></td> 
   </tr> 
    <tr> 
-   <td>Archiviazione<br>e-mail</td>
-   <td>Archiviazione<br>basata su file</td>
+   <td>Archiviazione e-mail<br> </td>
+   <td>Archiviazione basata su file<br> </td>
    <td><p>L'archiviazione delle e-mail è ora disponibile tramite un indirizzo e-mail CCN dedicato. <a href="../../installation/using/email-archiving.md">Ulteriori</a>informazioni.</p> 
    <p><em>Data di rimozione destinazione: Release Campaign 20.2 - Giugno 2020</em></p><br> </td>
   </tr> 
    <tr> 
-   <td>Gestione<br>dei lead</td>
-   <td>Lead<br></td>
+   <td>Gestione dei lead<br> </td>
+   <td>Lead<br> </td>
    <td><p>Il pacchetto Lead Management in Adobe Campaign Classic ha semplificato il processo di creazione e manutenzione dell’intero ciclo di vita della gestione dei lead. Funzionalità simili possono essere implementate tramite altre attività di flusso di lavoro native e modifiche apportate ai modelli di dati.</p> 
    <p><em>Data di rimozione destinazione: Release Campaign 20.2 - Giugno 2020</em></p><br> </td>
   </tr> 
@@ -96,24 +99,24 @@ A partire dalla release del 20.1 febbraio, il sistema seguente è diventato obso
    <td><strong>Sostituzione</strong></td> 
   </tr> 
    <tr> 
-   <td>Console Client Classic Campaign 32 bit<br></td>
+   <td>Console Client Classic Campaign 32 bit<br> </td>
    <td><p>Console client Campaign Classic 64 bit</p><br> </td>
   </tr> 
  </tbody> 
 </table>
 
-### Versione di Adobe Campaign 19.2 {#compat-19-2-release}
+### Versione di Adobe Campaign 19.2  {#compat-19-2-release}
 
 A partire dalla versione 19.2 di Autunno, i seguenti sistemi operativi sono obsoleti per Campaign Classic. La compatibilità terminerà nel 2020.
 
-* Server Web: Apache 2.2. Per [saperne di più](https://wiki.centos.org/About/Product)
+* Server Web: Apache 2.2. [Ulteriori informazioni](https://wiki.centos.org/About/Product)
 * Sistema operativo: CentOS 6. [Ulteriori informazioni](https://wiki.centos.org/About/Product)
 
 Fare riferimento alla matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) compatibilità per effettuare l&#39;aggiornamento a una versione più recente o passare a un nuovo sistema.
 
 ## Funzioni rimosse {#removed-features}
 
-In questa sezione sono elencate le funzionalità rimosse da Campaign Standard.
+In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
 
 <table> 
  <tbody> 
@@ -123,7 +126,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Standard.
    <td><strong>Versione</strong></td> 
   </tr> 
    <tr> 
-   <td>Documentazione sulle API delle campagne - file<br>jsapi.chm</td>
+   <td>Documentazione sulle API delle campagne - file jsapi.chm<br> </td>
    <td>Le API Campaign Classic sono ora disponibili in una pagina dedicata. Se utilizzi il file jsapi.chm, ora consulta <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">la nuova versione</a>online.</td>
    <td>19.1</td>
   </tr> 
@@ -138,7 +141,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Standard.
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Notifiche push - Connettore<br>binario iOS</td>
+   <td>Notifiche push - Connettore binario iOS<br> </td>
    <td>In base alla raccomandazione di Apple, Adobe rimuoverà il connettore binario iOS legacy. È già disponibile il connettore HTTP/2 più efficiente e potente.</td>
    <td>18.10</td>
   </tr> 
