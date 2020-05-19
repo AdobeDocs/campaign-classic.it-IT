@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -32,19 +35,21 @@ Dedica il tempo a seguire l&#39;elenco [di controllo sulla](https://docs.campaig
 
 ## Gestione della privacy {#privacy-management}
 
+Adobe Campaign offre una serie di strumenti per aiutarti a rispettare le normative sulla privacy (GDPR, CCPA e altro ancora.)
+
 Il GDPR (General Data Protection Regulation, Regolamento generale sulla protezione dei dati) è la normativa dell’Unione europea sulla privacy che armonizza e aggiorna i requisiti in materia di protezione dei dati. Il Regolamento GDPR si applica ai clienti Adobe Campaign che detengono dati per i soggetti dati residenti nell&#39;UE.
 
 CCPA (California Consumer Privacy Act) offre ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone loro responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
 
 Oltre alla gestione del consenso, alle impostazioni di conservazione dei dati e alla gestione dei diritti, offriamo, in qualità di processore dati, funzionalità aggiuntive per facilitare la disponibilità del titolare del trattamento per determinate richieste di privacy.
 
-In questo [articolo](https://helpx.adobe.com/campaign/kb/acc-privacy.html), scoprirai in che modo Adobe Campaign ti aiuta a gestire le diverse funzionalità della chiave per la privacy: Diritto di accesso, Diritto di essere dimenticato, consenso, conservazione dei dati e ruoli utente. Troverai anche le best practice per aiutarti a rispettare la Privacy quando utilizzi il nostro servizio.
+In [questo articolo](https://helpx.adobe.com/campaign/kb/acc-privacy.html), scoprirai in che modo Adobe Campaign ti aiuta a gestire le diverse funzionalità della chiave per la privacy: Diritto di accesso, Diritto di essere Dimenticato, consenso, conservazione dei dati e ruoli utente. Troverai anche le best practice per aiutarti a rispettare la Privacy quando utilizzi la nostra soluzione.
 
 ## Cookie e funzionalità di tracciamento {#cookies-and-tracking-capabilities}
 
 Grazie alle sue funzionalità di tracciamento, Adobe Campaign consente di monitorare l&#39;esplorazione dei destinatari della distribuzione su un sito Web. A tal fine, Adobe Campaign utilizza i cookie di sessione e i cookie permanenti.
 
-La direttiva europea 2009/136/CE sulla privacy e le comunicazioni elettroniche e il regolamento generale europeo sulla protezione dei dati (GDPR) stabiliscono che le aziende richiedono l&#39;accordo degli utenti dei siti Web prima di installare qualsiasi cookie. È necessario informare gli utenti che i siti sono dotati di strumenti di monitoraggio Web tramite una richiesta di autorizzazione (che viene visualizzata sopra la pagina, ad esempio) con una casella di controllo per autorizzare l&#39;installazione dei cookie, o aggiungere un banner nella parte superiore della prima pagina in cui accedono, ecc. Le finestre a comparsa dovrebbero essere evitate in quanto spesso bloccate dai browser.
+La direttiva europea 2009/136/CE sulla privacy e le comunicazioni elettroniche e il regolamento generale europeo sulla protezione dei dati (GDPR) stabiliscono che le aziende richiedono l&#39;accordo degli utenti dei siti Web prima di installare qualsiasi cookie. Dovete informare gli utenti che i vostri siti sono dotati di strumenti di monitoraggio Web tramite una richiesta di autorizzazione (che viene visualizzata sopra la pagina, ad esempio) con una casella di controllo per autorizzare l&#39;installazione dei cookie, o aggiungere un banner nella parte superiore della prima pagina in cui accedono, ecc. Le finestre a comparsa dovrebbero essere evitate in quanto spesso bloccate dai browser.
 
 La configurazione della gestione del tracciamento utente è disponibile per le applicazioni Web e le pagine di destinazione con un banner di rifiuto. Fare riferimento a [questa pagina](../../web/using/web-application-tracking-opt-out.md).
 
