@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,11 @@ Esistono quattro tipi di collegamenti:
 
    Questa opzione è configurata nella **[!UICONTROL Reconciliation and deduplication]** scheda a cui è possibile accedere tramite il **[!UICONTROL Edit additional data]** collegamento dell&#39; **[!UICONTROL Enrichment]** attività.
 
-I [dati](../../workflow/using/enriching-data.md) Arricchimento e [Creazione di un elenco](../../workflow/using/creating-a-summary-list.md) riepilogativo utilizzano i casi in cui vengono descritti nel dettaglio il funzionamento delle attività di Arricchimento nel loro contesto.
+I casi d’uso che descrivono dettagliatamente il funzionamento delle attività di arricchimento nel loro contesto sono disponibili anche nelle seguenti sezioni:
+
+* [Arricchimento delle e-mail con campi](../../workflow/using/email-enrichment-with-custom-date-fields.md)data personalizzati.
+* [Arricchimento dei dati](../../workflow/using/enriching-data.md)
+* [Creazione di un elenco di riepilogo](../../workflow/using/creating-a-summary-list.md)
 
 ## Aggiunta di informazioni {#adding-information}
 
@@ -97,7 +104,7 @@ Deselezionate l’ **[!UICONTROL Keep all additional data from the main set]** o
 
 ![](assets/enrichment_edit_without_additional.png)
 
-I dati e lo schema nella fase di arricchimento saranno i seguenti:
+I dati e lo schema nella fase di arricchimento dell&#39;output saranno i seguenti:
 
 ![](assets/enrichment_content_after_without_additional.png)
 
@@ -109,7 +116,7 @@ Ad esempio, se carichi i dati di un file che contiene il numero di account, il p
 
 A questo scopo, eseguire i seguenti passaggi:
 
-1. Raccogliere e caricare il seguente tipo di file:
+1. Raccogli e carica il seguente tipo di file:
 
    ```
    Account number;Country;Email
@@ -122,7 +129,7 @@ A questo scopo, eseguire i seguenti passaggi:
    83TY2;SWITZERLAND;mike@gmail.com
    ```
 
-1. **Modificate l&#39;attività di arricchimento e fate clic su** Aggiungi dati... per creare un join con la tabella Paese.
+1. Modificate l&#39;attività di arricchimento e fate clic su **Aggiungi dati...** per creare un join con la tabella Paese.
 
    ![](assets/enrichment_edit_after_file_box.png)
 
@@ -156,7 +163,7 @@ L&#39;attività di arricchimento consente di aggiungere offerte o collegamenti a
 
 Per ulteriori informazioni sull&#39;attività di arricchimento, consultare questa [sezione](../../workflow/using/enrichment.md).
 
-Ad esempio, puoi arricchire i dati per una query del destinatario prima della consegna.
+Ad esempio, è possibile arricchire i dati per una query del destinatario prima della consegna.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -211,7 +218,7 @@ Per eseguire questa operazione:
 
 Per impostazione predefinita, quando un&#39;attività di **arricchimento** viene utilizzata per distribuire le offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
 
- L&#39; **[!UICONTROL Offer engine]** attività memorizza tali informazioni per impostazione predefinita.
+L&#39; **[!UICONTROL Offer engine]** attività memorizza tali informazioni per impostazione predefinita.
 
 Tuttavia, potete memorizzare queste informazioni nel modo seguente:
 
