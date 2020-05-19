@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
 
 # Deduplicazione{#deduplication}
 
-La deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
+Deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
 
 ## Best practice {#best-practices}
 
@@ -39,17 +42,20 @@ Questo problema deve essere affrontato come segue:
 
 Per configurare una deduplicazione, immettete l’etichetta, il metodo e i criteri di deduplicazione, nonché le opzioni relative al risultato.
 
-Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
+Fate clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
 1. Selezione destinazione
 
-   Selezionare il tipo di target per questa attività (per impostazione predefinita, la deduplicazione riguarda i destinatari) e il criterio da utilizzare, ovvero il campo per il quale valori identici consentono di identificare duplicati: indirizzo e-mail, numero di cellulare o di telefono, numero di fax o indirizzo postale.
+   Selezionare il tipo di target per questa attività (per impostazione predefinita, la deduplicazione riguarda i destinatari) e il criterio da utilizzare, ovvero il campo per il quale valori identici consentono di identificare duplicati: indirizzo e-mail, numero di cellulare o di telefono, numero di fax o indirizzo di posta diretta.
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-   Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezionare il criterio o i criteri da utilizzare:
+   >[!NOTE]
+   >
+   >Se si utilizzano dati esterni come input, ad esempio da un file esterno, assicurarsi di selezionare l&#39; **[!UICONTROL Temporary schema]** opzione.
+Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezionare il criterio o i criteri da utilizzare:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
