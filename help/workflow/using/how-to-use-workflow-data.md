@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ I dati del database Adobe Campaign e degli elenchi esistenti possono essere aggi
 
 * L&#39; **[!UICONTROL List update]** attività consente di memorizzare le tabelle di lavoro in un datalist.
 
-   Potete selezionare un elenco esistente o crearlo. In questo caso, il nome e probabilmente la cartella di record vengono calcolati.
+   Potete selezionare un elenco esistente o crearlo. In questo caso, vengono calcolati il nome e, eventualmente, la cartella del record.
 
    ![](assets/s_user_create_list.png)
 
@@ -64,7 +67,7 @@ Oltre ai campi di personalizzazione standard, puoi aggiungere campi di personali
 
 ![](assets/s_advuser_using_additional_data.png)
 
-I dati contenuti nella tabella del flusso di lavoro sono identificati dal relativo nome: è sempre composto dal collegamento **targetData** . Per ulteriori informazioni, consulta Dati [](../../workflow/using/executing-a-workflow.md#target-data)Target.
+I dati contenuti nella tabella del flusso di lavoro sono identificati dal relativo nome: è sempre composto dal collegamento **targetData** . Per ulteriori informazioni, fai riferimento ai dati [di](../../workflow/using/data-life-cycle.md#target-data)Target.
 
 Nel quadro della distribuzione delle e-mail, i campi di personalizzazione possono anche utilizzare i dati provenienti dall&#39;estensione di destinazione eseguita nelle fasi del flusso di lavoro di targeting, come illustrato nell&#39;esempio seguente:
 
