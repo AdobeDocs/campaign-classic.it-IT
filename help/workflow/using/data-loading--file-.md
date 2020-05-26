@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## Use {#use}
 
-L&#39; **[!UICONTROL Load (File)]** attività consente di accedere direttamente a un&#39;origine di dati esterni e di utilizzarla in Adobe Campaign. Infatti, tutti i dati richiesti per le operazioni di targeting non sempre si trovano nel database di Adobe Campaign: può essere reso disponibile in file esterni.
+L&#39; **[!UICONTROL Data loading (File)]** attività consente di accedere direttamente a un&#39;origine di dati esterni e di utilizzarla in Adobe Campaign. Infatti, tutti i dati richiesti per le operazioni di targeting non sempre si trovano nel database di Adobe Campaign: può essere reso disponibile in file esterni.
 
 Il file da caricare può essere specificato dalla transizione o calcolato durante l&#39;esecuzione di questa attività. Ad esempio, può essere l&#39;elenco dei 10 prodotti preferiti di un cliente i cui acquisti vengono gestiti in un database esterno.
 
@@ -76,7 +79,7 @@ La formattazione delle colonne consente di definire il valore di elaborazione di
    * **[!UICONTROL Reject the line when there is no remapping value]**: l&#39;intera linea viene elaborata solo se è stata definita una mappatura per il valore errato (vedere l&#39; **[!UICONTROL Mapping]** opzione di seguito).
    * **[!UICONTROL Use a default value in case the value is not remapped]**: sostituisce il valore che causava l&#39;errore con un valore predefinito, definito nel **[!UICONTROL Default value]** campo, a meno che non sia stata definita una mappatura per il valore errato (vedere l&#39; **[!UICONTROL Mapping]** opzione seguente).
 
-* **[!UICONTROL Default value]**: specifica il valore predefinito in base all&#39;elaborazione degli errori scelta.
+* **[!UICONTROL Default value]**: specifica il valore predefinito in base all&#39;elaborazione dell&#39;errore scelta.
 * **[!UICONTROL Mapping]**: questo campo è disponibile solo nella configurazione dei dettagli delle colonne (a cui si accede mediante un doppio clic o tramite le opzioni a destra dell’elenco delle colonne). In questo modo alcuni valori vengono trasformati al momento dell’importazione. Ad esempio, potete trasformare &quot;tre&quot; in &quot;3&quot;.
 
 ## Esempio: Raccolta e caricamento dei dati nel database {#example--collecting-data-and-loading-it-in-the-database}
@@ -89,7 +92,7 @@ L&#39;esempio seguente consente di raccogliere un file sul server ogni giorno, c
 
    La **[!UICONTROL Directory]** scheda contiene informazioni sui file da recuperare. Nel nostro esempio, tutti i file in formato testo i cui nomi contengono la parola &#39;clienti&#39; e che sono memorizzati nella directory tmp/Adobe/Data/files del server verranno recuperati.
 
-   L&#39;utilizzo di **[!UICONTROL File collector]** è descritto nella sezione [Raccolta](../../workflow/using/file-collector.md) file.
+   L&#39;utilizzo di **[!UICONTROL File collector]** è descritto in dettaglio nella sezione [Raccolta](../../workflow/using/file-collector.md) file.
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
