@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 Questa sezione descrive i principi chiave e le procedure ottimali per creare un flusso di lavoro in Campaign.
 
 * Creare un flusso di lavoro, vedere [Creazione di un nuovo flusso di lavoro](#creating-a-new-workflow)
-* Progettazione del diagramma del flusso di lavoro, consultate [Aggiunta e collegamento di attività](#adding-and-linking-activities)
+* Progettare il diagramma del flusso di lavoro, vedere [Aggiunta e collegamento di attività](#adding-and-linking-activities)
 * Accedere ai parametri e alle proprietà delle attività, vedere [Configurazione delle attività](#configuring-activities)
 * Progettazione di flussi di lavoro di targeting, vedi Flussi di lavoro [di targeting](#targeting-workflows)
 * Utilizza il flusso di lavoro per eseguire una campagna, vedi Flussi di lavoro [campagna](#campaign-workflows)
@@ -44,7 +47,7 @@ Oppure, potete anche usare il **[!UICONTROL Create]** pulsante nella panoramica 
 
 ![](assets/create_a_wf.png)
 
-Immettete un’etichetta e fate clic **[!UICONTROL Save]**.
+Immettete un’etichetta e fate clic su **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
@@ -109,7 +112,7 @@ Creazione del diagramma
 
    Per allineare le icone, selezionatele e fate clic sull’icona **[!UICONTROL Align vertically]** o **[!UICONTROL Align horizontally]** .
 
-   Utilizzare il tasto **CTRL** per selezionare più attività sparse o per deselezionare una o più attività. Fare clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
+   Utilizzate il tasto **CTRL** per selezionare più attività sparse o per deselezionare una o più attività. Fare clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
 
 * **Gestione delle immagini**
 
@@ -149,21 +152,21 @@ I flussi di lavoro di targeting nel quadro di una campagna vengono memorizzati c
 
 ### Passaggi di implementazione {#implementation-steps-}
 
-Le fasi di generazione dei dati sono le seguenti:
+Le fasi di generazione dei dati di destinazione sono le seguenti:
 
 1. Per identificare i dati nel database, fare riferimento a [Creazione di query](../../workflow/using/targeting-data.md#creating-queries).
 1. Per preparare i dati in base alle esigenze di consegna, fare riferimento a [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
-1. Per utilizzare i dati per eseguire aggiornamenti o per una consegna, fare riferimento a [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
+1. Per utilizzare i dati per eseguire aggiornamenti o per eseguire una consegna, fare riferimento a [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-I risultati di tutti gli arricchimenti e tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili in campi di personalizzazione, in particolare per la creazione di messaggi personalizzati. Per ulteriori informazioni, fai riferimento ai dati di [Target](../../workflow/using/executing-a-workflow.md#target-data)
+I risultati di tutti gli arricchimenti e tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili in campi di personalizzazione, in particolare per la creazione di messaggi personalizzati. Per ulteriori informazioni, fai riferimento ai dati di [Target](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
-Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione di filtro. La dimensione di targeting consente di definire la popolazione di destinazione dell&#39;operazione: destinatari, beneficiari del contratto, operatori, abbonati, ecc. La dimensione filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
+Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione di filtro. La dimensione di targeting consente di definire la popolazione di destinazione dell&#39;operazione: destinatari, beneficiari del contratto, operatori, abbonati, ecc. La dimensione di filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
 
-Ad esempio, per selezionare i clienti che hanno sottoscritto una polizza di assicurazione vita per oltre 5 anni, selezionare la dimensione di targeting seguente: **Client** e le seguenti dimensioni filtro: Titolare del **contratto**. È quindi possibile definire le condizioni di filtraggio all&#39;interno dell&#39;attività di query
+Ad esempio, per selezionare i clienti che hanno sottoscritto una polizza di assicurazione vita per oltre 5 anni, selezionare la dimensione di targeting seguente: **Client** e le seguenti dimensioni filtro: **Titolare** del contratto. È quindi possibile definire le condizioni di filtraggio all&#39;interno dell&#39;attività di query
 
-Durante la fase di selezione della dimensione di targeting, nell&#39;interfaccia sono disponibili solo dimensioni di filtro compatibili.
+Durante la fase di selezione della dimensione di targeting, nell&#39;interfaccia sono disponibili solo dimensioni di filtraggio compatibili.
 
 Queste due dimensioni devono essere correlate. Pertanto, il contenuto dell&#39; **[!UICONTROL Filtering dimension]** elenco dipende dalla dimensione di targeting specificata nel primo campo.
 
@@ -183,7 +186,7 @@ Per ogni campagna, puoi creare flussi di lavoro da eseguire dalla **[!UICONTROL 
 
 Questa scheda contiene le stesse attività di tutti i flussi di lavoro. Sono presentati nella sezione [Implementazione](#implementation-steps-) .
 
-Oltre alle campagne di targeting, i flussi di lavoro delle campagne consentono di creare e configurare le consegne per tutti i canali disponibili. Una volta creati nel flusso di lavoro, tali consegne sono disponibili dal dashboard della campagna.
+Oltre alle campagne di targeting, i flussi di lavoro delle campagne consentono di creare e configurare le consegne per tutti i canali disponibili. Una volta creati nel flusso di lavoro, questi invii sono disponibili dal dashboard della campagna.
 
 Tutti i flussi di lavoro delle campagne sono centralizzati sotto il **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** nodo.
 
@@ -193,7 +196,7 @@ I flussi di lavoro delle campagne e gli esempi di implementazione sono descritti
 
 ## Flussi di lavoro tecnici {#technical-workflows}
 
-I flussi di lavoro tecnici sono forniti con Adobe Campaign. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di monitoraggio sulle consegne e impostare i processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite il **[!UICONTROL Administration > Production > Technical workflows]** nodo.
+Adobe Campaign offre flussi di lavoro tecnici out-of-the-box. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di monitoraggio sulle consegne e impostare i processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite il **[!UICONTROL Administration > Production > Technical workflows]** nodo.
 
 ![](assets/navtree.png)
 
@@ -215,7 +218,7 @@ I modelli di workflow contengono la configurazione globale delle proprietà ed e
 
 Potete creare nuovi modelli di flusso di lavoro basati su modelli esistenti o modificare direttamente un flusso di lavoro in un modello.
 
-I modelli di workflow sono memorizzati nel **[!UICONTROL Resources > Templates > Workflow templates]** nodo della struttura di Adobe Campaign.
+I modelli di flusso di lavoro sono memorizzati nel **[!UICONTROL Resources > Templates > Workflow templates]** nodo della struttura di Adobe Campaign.
 
 ![](assets/s_advuser_wf_template_tree.png)
 
@@ -237,11 +240,11 @@ Potete duplicare diversi tipi di flussi di lavoro. Una volta duplicate, le modif
    ![](assets/duplicate-workflows.png)
 
 1. Nella finestra del flusso di lavoro, modificate l’etichetta del flusso di lavoro.
-1. Fate clic su **Salva**.
+1. Fai clic su **Salva**.
 
 La funzione duplicata non è direttamente disponibile nella visualizzazione di una campagna.
 
-Tuttavia, potete creare una vista per visualizzare tutti i flussi di lavoro sull’istanza. In questa visualizzazione, puoi duplicare i flussi di lavoro utilizzando **Duplica**.
+Tuttavia, potete creare una vista per visualizzare tutti i flussi di lavoro sull’istanza. In questa visualizzazione, puoi duplicare i flussi di lavoro utilizzando la funzione **Duplica**.
 
 **Innanzitutto, creiamo una vista:**
 
@@ -265,6 +268,6 @@ La cartella ora viene compilata con tutti i flussi di lavoro dell&#39;istanza.
 1. Fare clic con il pulsante destro del mouse su **Duplica**.
    ![](assets/duplicate-to-right-click.png)
 1. Modificatene l’etichetta.
-1. Fate clic su **Salva**.
+1. Fai clic su **Salva**.
 
 Potete visualizzare il flusso di lavoro duplicato nella visualizzazione del flusso di lavoro.
