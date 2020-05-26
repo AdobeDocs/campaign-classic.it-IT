@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ In [questa sezione](../../production/using/workflow-execution.md)sono disponibil
 
 ### Registri {#logs}
 
-Il metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debug di un flusso di lavoro. È utile, ma deve essere utilizzato con attenzione, soprattutto per le attività che sono spesso eseguite: può sovraccaricare i registri e aumentare notevolmente la dimensione della tabella di registro. Ma potreste avere anche bisogno di più di **[!UICONTROL logInfo()]**.
+Il metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debug di un flusso di lavoro. È utile, ma deve essere utilizzato con attenzione, soprattutto per le attività che vengono eseguite frequentemente: può sovraccaricare i registri e aumentare notevolmente la dimensione della tabella di registro. Ma potreste avere anche bisogno di più di **[!UICONTROL logInfo()]**.
 
 Sono disponibili due soluzioni aggiuntive per:
 
@@ -46,17 +49,17 @@ Sono disponibili due soluzioni aggiuntive per:
 
 * **Registra query SQL nel giornale di registrazione**
 
-   Disponibile nella **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata nella produzione.
+   Disponibile nella **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata in fase di produzione.
 
 Rimuovere i registri quando non sono più necessari. La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere eliminata dal **[!UICONTROL File > Actions]** menu o facendo clic sul pulsante Azioni nella barra degli strumenti sopra l&#39;elenco. Selezionare Elimina cronologia.
-Per informazioni su come eliminare i registri, consulta questa [documentazione](../../workflow/using/executing-a-workflow.md#actions-toolbar).
+Per informazioni su come eliminare i registri, consulta questa [documentazione](../../workflow/using/starting-a-workflow.md).
 
 ### Pianificazione del flusso di lavoro {#workflow-planning}
 
 * Cercate di mantenere un livello di attività stabile durante il giorno ed evitare picchi per evitare che l&#39;istanza si sovraccarichi. A tal fine, distribuite gli orari di inizio del flusso di lavoro in modo uniforme durante l&#39;intera giornata.
 * Pianificare il caricamento dei dati in un giorno successivo per ridurre il contenzioso sulle risorse.
 * Flussi di lavoro lunghi possono avere un impatto potenziale sulle risorse del server e del database. Suddividere i flussi di lavoro più lunghi per ridurre i tempi di elaborazione.
-* Per ridurre i tempi di esecuzione complessivi, sostituite le attività che richiedono tempo con attività semplificate e più veloci.
+* Per ridurre i tempi di esecuzione complessivi, sostituisci le attività che richiedono tempo con attività semplificate e più veloci.
 * Evitate di eseguire più di 20 flussi di lavoro contemporaneamente. Se vengono eseguiti contemporaneamente troppi flussi di lavoro, il sistema può esaurire le risorse e diventare instabile. Per ulteriori informazioni sul motivo per cui il flusso di lavoro potrebbe non essere avviato, consultate questo [articolo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
 ### Esecuzione del flusso di lavoro {#workflow-execution}
@@ -67,13 +70,13 @@ Evitare di lasciare i flussi di lavoro in stato di pausa. Se create un flusso di
 
 Per evitare che i flussi di lavoro vengano messi in pausa:
 
-* Controlla regolarmente i flussi di lavoro per evitare errori imprevisti.
+* Controlla regolarmente i tuoi flussi di lavoro per evitare errori imprevisti.
 * Semplificate al massimo i flussi di lavoro, ad esempio suddividendo flussi di lavoro di grandi dimensioni in diversi flussi di lavoro. Puoi utilizzare **[!UICONTROL External signal]** le attività per attivarne l&#39;esecuzione in base all&#39;esecuzione di altri flussi di lavoro.
 * Evitare di disabilitare le attività con flussi di lavoro che consentono di lasciare i thread aperti e di generare numerose tabelle temporanee che richiedono molto spazio. Non mantenere attività **[!UICONTROL Do not enable]** o **[!UICONTROL Enable but do not execute]** stati nei flussi di lavoro.
 
 Inoltre, interrompete i flussi di lavoro inutilizzati. I flussi di lavoro che mantengono in esecuzione mantengono le connessioni al database.
 
-Utilizzare l&#39;interruzione non condizionale solo nei casi più rari. Non utilizzate questa azione su base regolare. La mancata chiusura delle connessioni generate dai flussi di lavoro al database ha un impatto sulle prestazioni.
+Utilizzate l&#39;interruzione non condizionale solo nei casi più rari. Non utilizzate questa azione su base regolare. La mancata chiusura delle connessioni generate dai flussi di lavoro al database ha un impatto sulle prestazioni.
 
 ### Esegui nel motore, opzione {#execute-in-the-engine-option}
 
@@ -109,7 +112,7 @@ Puoi configurare la gravità di un flusso di lavoro nelle proprietà del flusso 
 
 * Normale
 * Produzione
-*  Critico
+* Critico
 
 Fornire queste informazioni al momento della creazione di un flusso di lavoro vi aiuterà a comprendere la gravità del processo configurato.
 
@@ -148,7 +151,7 @@ Il nome dell&#39;attività si trova nella **[!UICONTROL Advanced]** scheda. Non 
 
    ![](assets/wf-scheduler.png)
 
-* Utilizzate **[!UICONTROL End]** le attività per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e Fine](../../workflow/using/start-and-end.md).
+* Utilizzate **[!UICONTROL End]** le attività per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](../../workflow/using/start-and-end.md).
 
 ### Javascript all&#39;interno di un&#39;attività {#javascript-within-an-activity}
 
