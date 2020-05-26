@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Quando questa opzione è selezionata, le attività eseguite sono visualizzate in
 
 ## Visualizzazione dei registri {#displaying-logs}
 
-Il registro contiene la cronologia o la traccia di controllo del flusso di lavoro. Registra tutte le azioni utente, tutte le operazioni eseguite e gli errori rilevati. È possibile:
+Il registro contiene la cronologia o la traccia di controllo del flusso di lavoro. Registra tutte le azioni degli utenti, tutte le operazioni eseguite e gli errori rilevati. È possibile:
 
 * Selezionate la **[!UICONTROL Tracking]** scheda nel dettaglio. Questo elenco contiene tutti i messaggi del flusso di lavoro.
 
@@ -88,7 +91,7 @@ Il registro mostra l&#39;elenco cronologico dei messaggi di esecuzione relativi 
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      La sezione inferiore del diagramma presenta due schede: Registro e attività.
+      Nella sezione inferiore del diagramma sono visualizzate due schede: Registro e attività.
 
       Le attività selezionate all&#39;interno del diagramma fungono da filtri nel registro e nell&#39;elenco delle attività.
 
@@ -102,7 +105,7 @@ Il registro mostra l&#39;elenco cronologico dei messaggi di esecuzione relativi 
 
 ## Rimozione dei registri {#purging-the-logs}
 
-La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere rimossa dal **[!UICONTROL File > Actions]** menu o facendo clic sul **[!UICONTROL Actions]** pulsante situato nella barra degli strumenti sopra l&#39;elenco. Selezionare **[!UICONTROL Purge history]**. Le opzioni disponibili nel **[!UICONTROL Actions]** menu sono dettagliate nella sezione della barra degli strumenti [](../../workflow/using/executing-a-workflow.md#actions-toolbar) Azioni.
+La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere rimossa dal **[!UICONTROL File > Actions]** menu o facendo clic sul **[!UICONTROL Actions]** pulsante situato nella barra degli strumenti sopra l&#39;elenco. Selezionare **[!UICONTROL Purge history]**. Le opzioni disponibili nel **[!UICONTROL Actions]** menu sono dettagliate nella sezione della barra degli strumenti [](../../workflow/using/starting-a-workflow.md) Azioni.
 
 ![](assets/purge_historique.png)
 
@@ -138,7 +141,7 @@ Il collegamento consente di accedere alla console Adobe Campaign in modalità We
 
 ![](assets/wf-notification_error-console.png)
 
-Potete configurare il flusso di lavoro in modo che non interrompa e continui l’esecuzione in caso di errori. A questo scopo, modificate il flusso di lavoro **[!UICONTROL Properties]** e, nella **[!UICONTROL Error management]** sezione, selezionate l&#39; **[!UICONTROL Ignore]** opzione nel **[!UICONTROL In case of error]** campo. È quindi possibile specificare il numero di errori consecutivi che possono essere ignorati prima che il processo venga messo in pausa.
+È possibile configurare il flusso di lavoro in modo che non interrompa e continui l&#39;esecuzione in caso di errori. A questo scopo, modificate il flusso di lavoro **[!UICONTROL Properties]** e, nella **[!UICONTROL Error management]** sezione, selezionate l&#39; **[!UICONTROL Ignore]** opzione nel **[!UICONTROL In case of error]** campo. È quindi possibile specificare il numero di errori consecutivi che possono essere ignorati prima che il processo venga messo in pausa.
 
 In questo caso, l&#39;attività di errore viene interrotta. Questa modalità è particolarmente adatta ai flussi di lavoro progettati per tentare di ripetere la campagna in un secondo momento (azioni periodiche).
 
@@ -229,7 +232,7 @@ Si noti che:
 * È possibile controllare il valore corrente della variabile di istanza tramite la scheda **Variabili** , disponibile in **Proprietà** flusso di lavoro.
 * Le variabili di istanza vengono reimpostate al riavvio di un flusso di lavoro.
 * In JavaScript, un valore non definito è falso in un test, consentendo di verificare la variabile di istanza anche prima di averla inizializzata.
-* È possibile monitorare le attività non elaborate a causa di questo meccanismo aggiungendo un&#39;istruzione di registrazione allo script di inizializzazione della fine &quot;no&quot;.
+* È possibile monitorare le attività che non vengono elaborate a causa di questo meccanismo aggiungendo un&#39;istruzione di registrazione allo script di inizializzazione della fine &quot;no&quot;.
 
    ```
    logInfo("Workflow already running, parallel execution not allowed.");
@@ -249,7 +252,7 @@ Il flusso di lavoro di pulizia **del** database accessibile tramite il nodo **Am
 
 Per impostazione predefinita, se un flusso di lavoro viene messo in pausa, le relative tabelle di lavoro non vengono mai eliminate. Dalla build 8880, i flussi di lavoro che sono stati messi in pausa per troppo tempo vengono automaticamente interrotti e i relativi tavoli di lavoro vengono eliminati. Questo comportamento viene attivato come segue:
 
-* I flussi di lavoro che sono stati messi in pausa da oltre 7 giorni vengono visualizzati come un avviso nel dashboard di monitoraggio (e nell’API di monitoraggio) e una notifica viene inviata al gruppo di supervisori.
+* I flussi di lavoro che sono stati messi in pausa da più di 7 giorni vengono visualizzati come un avviso nel dashboard di monitoraggio (e nell’API di monitoraggio) e una notifica viene inviata al gruppo di supervisori.
 * Lo stesso accade ogni settimana, quando viene attivato il flusso di lavoro **[!UICONTROL cleanupPausedWorkflows]** tecnico. Per ulteriori dettagli sul flusso di lavoro, consulta [questa sezione](../../workflow/using/delivery.md).
 * Dopo 4 notifiche (ovvero un mese in stato di pausa per impostazione predefinita), il flusso di lavoro viene interrotto senza condizioni. Dopo l’arresto, nel flusso di lavoro viene visualizzato un registro. Le tabelle vengono eliminate nel flusso di lavoro di esecuzione successivo **[!UICONTROL cleanup]**
 
@@ -257,7 +260,7 @@ Questi periodi possono essere configurati tramite l&#39;opzione NmsServer_Paused
 
 I supervisori del flusso di lavoro ricevono una notifica. Vengono notificati anche l’autore e l’ultimo utente che ha modificato il flusso di lavoro. Gli amministratori non ricevono le notifiche.
 
-## Filtrare i flussi di lavoro in base al loro stato{#filtering-workflows-status}
+## Filtrare i flussi di lavoro in base al loro stato {#filtering-workflows-status}
 
 L&#39;interfaccia di Campaign Classic consente di monitorare lo stato di esecuzione di tutti i flussi di lavoro sull&#39;istanza utilizzando **viste** predefinite. Per accedere a queste viste, aprire il nodo **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
 
