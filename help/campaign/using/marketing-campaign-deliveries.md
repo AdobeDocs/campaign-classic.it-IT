@@ -1,7 +1,7 @@
 ---
-title: Distribuzione di campagne marketing
-seo-title: Distribuzione di campagne marketing
-description: Distribuzione di campagne marketing
+title: Distribuzione di campagne di marketing
+seo-title: Distribuzione di campagne di marketing
+description: Distribuzione di campagne di marketing
 seo-description: Ulteriori informazioni sulle consegne delle campagne di marketing
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 0%
 
 ---
 
 
-# Distribuzione di campagne marketing {#marketing-campaign-deliveries}
+# Distribuzione di campagne di marketing {#marketing-campaign-deliveries}
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
 
@@ -70,13 +73,13 @@ Per generare la destinazione di consegna, potete definire criteri di filtraggio 
 
 La destinazione principale di una consegna può essere definita anche nel flusso di lavoro di targeting: questo ambiente grafico consente di creare una destinazione utilizzando query, test e operatori: unione, deduplicazione, condivisione, ecc.
 
-La guida [Automazione con i flussi di lavoro](../../workflow/using/executing-a-workflow.md#architecture) include una descrizione dettagliata del funzionamento del modulo del flusso di lavoro.
+La guida [Automazione con i flussi di lavoro](../../workflow/using/architecture.md) include una descrizione dettagliata del funzionamento del modulo del flusso di lavoro.
 
 >[!IMPORTANT]
 >
 >Nella stessa campagna, non potete impostare più di 28 flussi di lavoro. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
 
-####  Creazione di un flusso di lavoro di targeting {#creating-a-targeting-workflow}
+#### Creazione di un flusso di lavoro di targeting {#creating-a-targeting-workflow}
 
 Il targeting può essere creato tramite una combinazione di condizioni di filtraggio in una sequenza grafica in un flusso di lavoro. Potete creare popolazioni e sottopopolazioni che verranno indirizzate in base alle vostre esigenze. Per visualizzare l’editor del flusso di lavoro, fate clic sulla **[!UICONTROL Targeting and workflows]** scheda nel dashboard della campagna.
 
@@ -90,7 +93,7 @@ Selezionare gli oggetti dagli elenchi a sinistra dell&#39;area di lavoro e colle
 
 ![](assets/s_ncs_user_edit_op_wf_tab_a.png)
 
-Nel diagramma, collegate le query di targeting e pianificazione necessarie per la costruzione della destinazione nel diagramma. È possibile eseguire il targeting mentre la costruzione è in corso, per controllare la popolazione estratta dal database.
+Nel diagramma, collegate le query di targeting e pianificazione necessarie per la costruzione della destinazione nel diagramma. È possibile eseguire il targeting mentre la costruzione è in corso, al fine di controllare la popolazione estratta dal database.
 
 >[!NOTE]
 >
@@ -104,7 +107,7 @@ Le funzioni di esecuzione e formattazione del flusso di lavoro di targeting sono
 
 >[!NOTE]
 >
->Le attività disponibili per creare il diagramma, nonché tutte le funzioni di visualizzazione e layout sono descritte in dettaglio nella guida [Automazione con flussi di lavoro](../../workflow/using/executing-a-workflow.md#architecture) .
+>Le attività disponibili per creare il diagramma, nonché tutte le funzioni di visualizzazione e layout sono descritte in dettaglio nella guida [Automazione con flussi di lavoro](../../workflow/using/architecture.md) .
 
 Potete creare diversi flussi di lavoro di targeting per una singola campagna. Per aggiungere un flusso di lavoro:
 
@@ -119,7 +122,7 @@ Potete creare diversi flussi di lavoro di targeting per una singola campagna. Pe
 
 I flussi di lavoro di targeting possono essere avviati manualmente tramite il **[!UICONTROL Start]** pulsante nella barra degli strumenti, a condizione che disponiate dei diritti appropriati.
 
-Il targeting può essere programmato per l&#39;esecuzione automatica in base a una pianificazione (pianificatore) o a un evento (segnale esterno, importazione file, ecc.).
+Il targeting può essere programmato per l&#39;esecuzione automatica in base a una pianificazione (pianificatore) o a un evento (segnale esterno, importazione di file, ecc.).
 
 Le azioni relative all&#39;esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono processi **asincroni** : il comando viene salvato e avrà effetto non appena il server sarà disponibile ad applicarlo.
 
@@ -155,7 +158,7 @@ Le icone della barra degli strumenti consentono di intervenire sull&#39;esecuzio
 
       ![](assets/s_user_segmentation_pause_status.png)
 
-      Potete anche sospendere automaticamente un flusso di lavoro di targeting quando la sua esecuzione raggiunge una particolare attività. A tal fine, fate clic con il pulsante destro del mouse sull&#39;attività da cui il flusso di lavoro di targeting deve essere messo in pausa, quindi selezionate **[!UICONTROL Enable but do not execute]**.
+      Potete anche mettere in pausa automaticamente un flusso di lavoro di targeting quando la sua esecuzione raggiunge una particolare attività. A tal fine, fate clic con il pulsante destro del mouse sull&#39;attività da cui il flusso di lavoro di targeting deve essere messo in pausa, quindi selezionate **[!UICONTROL Enable but do not execute]**.
 
       ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -190,7 +193,7 @@ Le icone della barra degli strumenti consentono di intervenire sull&#39;esecuzio
 
 * Interruzione incondizionata
 
-   In Esplora risorse, selezionate **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e intervenire su ogni flusso di lavoro campagna.
+   In Esplora risorse, selezionate **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e intervenire su ogni flusso di lavoro delle campagne.
 
    Per interrompere il flusso di lavoro in modo incondizionato, fai clic sull’ **[!UICONTROL Actions]** icona e seleziona **[!UICONTROL Unconditional]** Interrompi. Questa azione termina il flusso di lavoro della campagna.
 
@@ -252,11 +255,11 @@ Fare clic **[!UICONTROL Next]** per definire l&#39;ordine di ordinamento (se nec
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Questa configurazione è equivalente a un&#39;attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/executing-a-workflow.md#architecture) .
+Questa configurazione è equivalente a un&#39;attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md) .
 
 ### Aggiunta di una popolazione {#adding-a-population}
 
-È possibile definire una nuova popolazione da utilizzare come gruppo di controllo. Questa popolazione può provenire da un gruppo di destinatari o può essere creata tramite una query specifica.
+È possibile definire una nuova popolazione da utilizzare come gruppo di controllo. Questa popolazione può provenire da un gruppo di destinatari o è possibile crearla tramite una query specifica.
 
 ![](assets/s_ncs_user_add_to_target_population.png)
 
