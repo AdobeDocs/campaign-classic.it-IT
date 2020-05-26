@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
 
       * **[!UICONTROL Password]**
 
-         Password account utente.
+         Password dell&#39;account utente.
 
       * **[!UICONTROL Port]**
 
@@ -82,5 +85,5 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
 
    ![](assets/email_rec_edit_3.png)
 
-   La configurazione è la stessa dell&#39;attività di pianificazione. Fare riferimento a [Scadenza](../../workflow/using/executing-a-workflow.md#expirations).
+   La configurazione è la stessa dell&#39;attività di pianificazione. Fare riferimento a [Scadenze](../../workflow/using/defining-approvals.md).
 
