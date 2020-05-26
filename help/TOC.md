@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2090'
 ht-degree: 7%
 
 ---
@@ -327,8 +327,13 @@ ht-degree: 7%
       + [Dati di targeting](workflow/using/targeting-data.md)
       + [Importazione di dati](workflow/using/importing-data.md)
       + [Come utilizzare i dati del flusso di lavoro](workflow/using/how-to-use-workflow-data.md)
-      + [Esecuzione di un flusso di lavoro](workflow/using/executing-a-workflow.md)
       + [Procedure consigliate per i flussi di lavoro](workflow/using/workflow-best-practices.md)
+   + Esecuzione di un flusso di lavoro {#executing-a-workflow}
+      + [Avvio di un flusso di lavoro](workflow/using/starting-a-workflow.md)
+      + [Ciclo di vita del flusso di lavoro](workflow/using/workflow-life-cycle.md)
+      + [Ciclo di vita dei dati](workflow/using/data-life-cycle.md)
+      + [Definizione delle approvazioni](workflow/using/defining-approvals.md)
+      + [Architettura](workflow/using/architecture.md)
    + Attività di targeting {#targeting-activities}
       + [Informazioni sulle attività di targeting](workflow/using/about-targeting-activities.md)
       + [Query](workflow/using/query.md)
