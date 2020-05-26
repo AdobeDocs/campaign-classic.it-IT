@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1937c1ddcbde092a22f4fe8c50d3d72b02cfeed
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 0%
 
 ---
 
 
 # Oggetti applicazione{#application-objects}
 
-Gli oggetti incorporati devono essere monitorati ed è importante evitare che la crescita sia eccessiva.
+Gli oggetti incorporati devono essere monitorati ed è importante evitare che la loro crescita sia eccessiva.
 
 ## Sequenza di ID {#sequence-of-ids}
 
@@ -58,7 +61,7 @@ Se un flusso di lavoro importa file e non utilizza le funzioni standard, deve es
 
 ## Dati e registri transazionali {#transactional-data-and-logs}
 
-Ogni [flusso di lavoro](../../workflow/using/executing-a-workflow.md#work-table) che importa dati in Adobe Campaign determina l&#39;aumento delle dimensioni del database.
+Ogni [flusso di lavoro](../../workflow/using/data-life-cycle.md#work-table) che importa dati in Adobe Campaign determina l&#39;aumento delle dimensioni del database.
 
 Verificate che i flussi di lavoro di pulizia o rimozione siano in esecuzione e che i record vengano eliminati in modo efficace. Tutti i dati e i registri transazionali devono essere eliminati. L&#39;attività di pulizia elimina solo le tabelle standard: tracking e log ampi. Le tabelle specifiche devono essere eliminate da flussi di lavoro specifici. Fare riferimento a [questa sezione](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
