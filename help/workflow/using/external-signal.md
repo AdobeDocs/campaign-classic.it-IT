@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ Puoi configurare questa attività per definire gli eventi in caso di mancata ric
 
 ![](assets/edit_signal.png)
 
-La configurazione delle scadenze è dettagliata in [Scadenze](../../workflow/using/executing-a-workflow.md#expirations).
+La configurazione delle scadenze è dettagliata in [Scadenze](../../workflow/using/defining-approvals.md).
 
 Il campo **Ritardo** consente di specificare un ritardo di scadenza nelle unità di scelta. Vedi [Aspetta](../../workflow/using/wait.md).
 
