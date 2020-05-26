@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Per creare una campagna di marketing:
 
 1. Definire le popolazioni target: creare un flusso di lavoro con query di targeting.
 
-   Vedere [Selezione della popolazione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)di destinazione.
+   Consultate [Selezione della popolazione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)di destinazione.
 
 1. Crea consegne: selezionare i canali e definire il contenuto da inviare.
 
@@ -63,12 +66,12 @@ Per configurare la gerarchia di cartelle per i piani e i programmi di marketing:
    ![](assets/create_plan_1.png)
 
 1. Rinominare il piano.
-1. **Fare clic con il pulsante destro del mouse sul piano appena creato e selezionare** Proprietà. .
+1. Fare clic con il pulsante destro del mouse sul piano appena creato e selezionare **Proprietà.**.
 
    ![](assets/create_plan_2.png)
 
 1. Nella scheda **Generale** , modificate il nome **** interno per evitare duplicati durante le esportazioni del pacchetto.
-1. Fate clic su **Salva**.
+1. Fai clic su **Salva**.
 1. Fare clic con il pulsante destro del mouse sul piano appena creato e selezionare **Crea una nuova cartella**&quot;Programma&quot;.
 1. Ripetere i passaggi indicati per rinominare la nuova cartella del programma e il nome interno.
 
@@ -142,11 +145,11 @@ In questa scheda, specificate le date di esecuzione pianificate delle campagne i
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-È possibile utilizzare la procedura guidata di creazione della pianificazione per compilare automaticamente tutte le date di esecuzione. A tale scopo, fare clic sul **[!UICONTROL Complete the execution schedule...]** collegamento situato sopra la tabella.
+È possibile utilizzare la procedura guidata per la creazione della pianificazione per compilare automaticamente tutte le date di esecuzione. A tale scopo, fare clic sul **[!UICONTROL Complete the execution schedule...]** collegamento situato sopra la tabella.
 
 ![](assets/s_ncs_user_op_template_recur_planning_wz.png)
 
-La modalità di configurazione del programma di esecuzione coincide con l&#39; **[!UICONTROL Scheduler]** oggetto Workflow. For more on this, refer to [this section](../../workflow/using/executing-a-workflow.md#architecture).
+La modalità di configurazione del programma di esecuzione coincide con l&#39; **[!UICONTROL Scheduler]** oggetto Workflow. For more on this, refer to [this section](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
@@ -186,7 +189,7 @@ Per creare la campagna ricorrente ed eseguirne i flussi di lavoro in base alla p
 
    L&#39;etichetta di un&#39;istanza di flusso di lavoro ricorrente è costituita dall&#39;etichetta del modello e dal numero del flusso di lavoro, con il carattere # compreso tra due.
 
-   I flussi di lavoro creati dalla pianificazione vengono automaticamente associati alla programmazione nella **[!UICONTROL Workflow]** colonna della **[!UICONTROL Schedule]** scheda.
+   I flussi di lavoro creati dalla pianificazione vengono associati automaticamente alla programmazione nella **[!UICONTROL Workflow]** colonna della **[!UICONTROL Schedule]** scheda.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
