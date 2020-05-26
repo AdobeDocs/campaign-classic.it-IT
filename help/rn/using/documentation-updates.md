@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6464'
+source-wordcount: '6477'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ La sezione relativa alla risoluzione dei problemi di recapito è stata spostata 
 Sono state migliorate le linee guida per l&#39;implementazione di una nuova sezione di piattaforma. [Leggi tutto](../../delivery/using/starting-new-platform.md)
 
 La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
+
+La sezione Best practice del pacchetto dati è stata spostata e aggiornata. [Leggi tutto](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## Aprile 2020 {#april-2020}
 
