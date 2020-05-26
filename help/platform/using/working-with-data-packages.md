@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+workflow-type: tm+mt
+source-wordcount: '2481'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Esempio di pacchetto dati:
 </package>
 ```
 
-Il documento XML deve iniziare e terminare con l&#39; **`<package>`** elemento . Tutti **`<entities>`** gli elementi successivi distribuiscono i dati per tipo di documento.
+Il documento XML deve iniziare e terminare con l&#39; **`<package>`** elemento . Tutti **`<entities>`** gli elementi che seguono distribuiscono i dati per tipo di documento.
 
 Un **`<entities>`** elemento contiene i dati del pacchetto nel formato dello schema dati immesso nell&#39;attributo **schema** .
 
@@ -86,7 +89,7 @@ Nel nostro esempio, i join sui collegamenti &quot;cartella&quot; e &quot;societ�
 
 L&#39; **`operation`** attributo con il valore &quot;none&quot; definisce un collegamento di riconciliazione.
 
-Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. È sufficiente assicurarsi che la struttura del documento XML sia conforme allo schema di dati &quot;xtk:navtree&quot;. La console di Adobe Campaign dispone di un modulo di esportazione e importazione di pacchetti di dati.
+Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. È sufficiente assicurarsi che la struttura del documento XML sia conforme allo schema di dati &quot;xtk:navtree&quot;. La console di Adobe Campaign dispone di un modulo di esportazione e importazione per i pacchetti di dati.
 
 ## Esportazione di pacchetti {#exporting-packages}
 
@@ -114,7 +117,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i seguenti passaggi:
 
    >[!CAUTION]
    >
-   >Se esportate una cartella **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]** o **[!UICONTROL Program]** digitate, non selezionate mai la cartella **[!UICONTROL Plan]** xtk:folder **** in quanto potreste perdere alcuni dati. Selezionate l&#39;entità che corrisponde alla cartella: **nms:offerCategory** per le categorie di offerte, **nms:offerEnv** per gli ambienti di offerte, **nms:program** e **nms:plan** per i piani.
+   >Se esportate una cartella **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]** o **[!UICONTROL Program]** digitate, non selezionate mai la cartella **[!UICONTROL Plan]** xtk:folder **** in quanto potreste perdere alcuni dati. Selezionate l&#39;entità che corrisponde alla cartella: **nms:offerCategory** per le categorie di offerte, **nms:offerEnv** per gli ambienti di offerte, **nms:program** per i programmi e **nms:plan** per i piani.
 
    Gestione elenchi consente di aggiungere o eliminare entità per l&#39;esportazione dalla configurazione. Fate clic **[!UICONTROL Add]** per selezionare una nuova entità.
 
@@ -124,7 +127,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i seguenti passaggi:
    >
    >Il meccanismo di dipendenza controlla la sequenza di esportazione delle entità. Per ulteriori informazioni, vedere [Gestione delle dipendenze](#managing-dependencies).
 
-1. La schermata di configurazione dell&#39;entità definisce la query del filtro sul tipo di documento da estrarre.
+1. La schermata di configurazione dell&#39;entità definisce la query del filtro per il tipo di documento da estrarre.
 
    È necessario configurare la clausola di filtraggio per l&#39;estrazione dei dati.
 
@@ -262,7 +265,7 @@ Nella **[!UICONTROL Content]** scheda, fate clic sul **[!UICONTROL Add]** pulsan
 
 ![](assets/packagedefinition_addentities.png)
 
-Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell&#39;istanza. A questo scopo, effettuate le seguenti operazioni:
+Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell&#39;istanza. A questo scopo, attenetevi alla procedura seguente:
 
 1. Fare clic con il pulsante destro del mouse sull&#39;entità desiderata, quindi selezionare **[!UICONTROL Actions > Export in a package]**.
 
@@ -294,7 +297,7 @@ La generazione del pacchetto può essere configurata dalla **[!UICONTROL Content
    >
    >Se l&#39;istanza in cui viene importato il pacchetto contiene entità identiche a quelle del pacchetto (ad esempio con lo stesso ID esterno), i loro attributi non saranno aggiornati. Ciò può verificarsi se gli attributi della precedente istanza hanno valori predefiniti, in quanto non sono inclusi nel pacchetto.
    >
-   >In tal caso, la selezione dell&#39; **[!UICONTROL Include default values]** opzione impedirebbe l&#39;unione delle versioni, poiché tutti gli attributi dell&#39;istanza precedente venivano esportati con il pacchetto.
+   >In tal caso, la selezione dell&#39; **[!UICONTROL Include default values]** opzione impedirebbe l&#39;unione delle versioni, in quanto tutti gli attributi dell&#39;istanza precedente venivano esportati con il pacchetto.
 
 ### Esportazione di pacchetti da una definizione di pacchetto {#exporting-packages-from-a-package-definition}
 
@@ -335,3 +338,128 @@ I pacchetti standard vengono installati quando Adobe Campaign è configurato. A 
 Fate riferimento al contratto di licenza per verificare quali pacchetti è possibile installare.
 
 Per ulteriori informazioni sui pacchetti standard, consultate [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
+
+## Best practice per i pacchetti di dati {#data-package-best-practices}
+
+Questa sezione descrive come organizzare i pacchetti di dati in modo coerente per tutta la durata del progetto.
+
+<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
+
+I pacchetti possono contenere diversi tipi di configurazioni ed elementi, filtrati o meno. Se mancano alcuni elementi o non importate elementi/pacchetti nell&#39;ordine corretto, la configurazione della piattaforma può interrompersi.
+
+Inoltre, con molte persone che lavorano sulla stessa piattaforma con molte caratteristiche diverse, la cartella delle specifiche del pacchetto può rapidamente diventare complessa.
+
+Anche se non è obbligatorio, questa sezione offre una soluzione per organizzare e utilizzare i pacchetti in Adobe Campaign per progetti su larga scala.
+
+<!--This solution has been used with a project involving more than 10 consultants.-->
+
+I principali vincoli sono i seguenti:
+* Organizzare i pacchetti e tenere traccia delle modifiche e dei tempi
+* Se una configurazione viene aggiornata, riducete il rischio di interrompere qualcosa che non è direttamente collegato all&#39;aggiornamento
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sulla configurazione di un flusso di lavoro per l&#39;esportazione automatica di pacchetti, consultate [questa pagina](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+
+### Recommendations {#data-package-recommendations}
+
+Importa sempre nella stessa versione della piattaforma. È necessario verificare di distribuire i pacchetti tra due istanze che hanno la stessa build. Non forzare mai l&#39;importazione e aggiornare sempre prima la piattaforma (se la build è diversa).
+
+>[!IMPORTANT]
+>
+>L&#39;importazione tra versioni diverse non è supportata da Adobe.
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+
+Prestate attenzione allo schema e alla struttura del database. L&#39;importazione del pacchetto con schema deve essere seguita dalla generazione dello schema.
+
+### Soluzione {#data-package-solution}
+
+#### Tipi di pacchetti {#package-types}
+
+Iniziate definendo diversi tipi di pacchetti. Saranno utilizzati solo quattro tipi:
+
+**Entità**
+* Tutti gli elementi specifici &quot;xtk&quot; e &quot;nms&quot; in Adobe Campaign come schemi, moduli, cartelle, modelli di consegna ecc.
+* Potete considerare un&#39;entità come un elemento &quot;admin&quot; e &quot;platform&quot;.
+* Non devi includere più di un&#39;entità in un pacchetto quando lo carichi su un&#39;istanza Campaign.
+
+<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+
+Se è necessario distribuire la configurazione in una nuova istanza, è possibile importare tutti i pacchetti di entità.
+
+**Caratteristiche** Questo tipo di pacchetto:
+* Risponde a un requisito o a una specifica client.
+* Contiene una o più funzionalità.
+* Deve contenere tutte le dipendenze per poter eseguire la funzionalità senza alcun altro pacchetto.
+
+**Campagne** Questo pacchetto non è obbligatorio. A volte è utile creare un tipo specifico per tutte le campagne, anche se una campagna può essere vista come una funzione.
+
+**Aggiornamenti** Una volta configurata, una funzione può essere esportata in un altro ambiente. Ad esempio, il pacchetto può essere esportato da un ambiente di sviluppo a un ambiente di test. In questo test viene rivelato un difetto. In primo luogo, deve essere fissato sull&#39;ambiente di sviluppo. Quindi, la patch deve essere applicata alla piattaforma di prova.
+
+La prima soluzione consisterebbe nell&#39;esportare nuovamente l&#39;intera funzionalità. Ma, per evitare qualsiasi rischio (aggiornamento di elementi indesiderati), è più sicuro avere un pacchetto contenente solo la correzione.
+
+È per questo che consigliamo di creare un pacchetto &quot;update&quot; contenente un solo tipo di entità della funzione.
+
+Un aggiornamento non può essere solo una correzione, ma anche un nuovo elemento del pacchetto entità/funzione/campagna. Per evitare di distribuire l&#39;intero pacchetto, potete esportare un pacchetto di aggiornamento.
+
+### Convenzioni di denominazione {#data-package-naming}
+
+Ora che i tipi sono definiti, è necessario specificare una convenzione di denominazione. Adobe Campaign non consente di creare sottocartelle per le specifiche del pacchetto, il che significa che i numeri sono la soluzione migliore per rimanere organizzati. Numeri prefissi i nomi dei pacchetti. È possibile utilizzare la seguente convenzione:
+
+* Entità: dall&#39;1 al 99
+* Funzionalità: dal 100 al 1999
+* Campaign: dal 200 al 299
+* Aggiorna: da 5000 a 5999
+
+### Pacchetti {#data-packages}
+
+>[!NOTE]
+>
+>È meglio impostare regole per la definizione del numero corretto di pacchetti.
+
+#### Ordine pacchetti entità {#entity-packages-order}
+
+Per facilitare l&#39;importazione, i pacchetti di entità devono essere ordinati in base all&#39;ordine in cui verranno importati. Ad esempio:
+* 001 - Schema
+* 002 - Modulo
+* 003 - Immagini
+* ecc.
+
+>[!NOTE]
+>
+>I moduli devono essere importati solo dopo gli aggiornamenti dello schema.
+
+#### Pacchetto 200 {#package-200}
+
+Il numero di pacchetto &quot;200&quot; non deve essere utilizzato per una campagna specifica: questo numero verrà utilizzato per aggiornare qualcosa che riguarda tutte le campagne.
+
+#### Pacchetto di aggiornamento {#update-package}
+
+L&#39;ultimo punto riguarda la numerazione del pacchetto di aggiornamento. È il numero del pacchetto (entità, funzione o campagna) con il prefisso &quot;5&quot;. Ad esempio:
+* 5001 per aggiornare uno schema
+* 5200 per aggiornare tutte le campagne
+* 5101 per aggiornare la funzione 101
+
+Il pacchetto di aggiornamento deve contenere una sola entità specifica, per essere facilmente riutilizzabile. Per dividerli, aggiungete un nuovo numero (iniziate da 1). Non esistono regole di ordine specifiche per questi pacchetti. Per capire meglio, immaginate di avere una caratteristica 101, un&#39;applicazione sociale:
+* Contiene un&#39;app Web e un account esterno.
+   * L&#39;etichetta del pacchetto è: 101 - Applicazione sociale (socialApplication).
+* C&#39;è un difetto nell&#39;app Web.
+   * L’app wepApp viene corretta.
+   * È necessario creare un pacchetto di correzione, con il seguente nome: 5101 - 1 - Applicazione social webApp (socialApplication_webApp).
+* È necessario aggiungere un nuovo account esterno per la funzione social.
+   * Viene creato un account esterno.
+   * Il nuovo pacchetto è: 5101 - 2 - Account esterno applicazione social (socialApplication_extAccount).
+   * Parallelamente, il pacchetto 101 viene aggiornato per essere aggiunto all&#39;account esterno, ma non viene distribuito.
+      ![](assets/ncs_datapackage_best-practices-1.png)
+
+#### Documentazione del pacchetto {#package-documentation}
+
+Quando aggiornate un pacchetto, inserite sempre un commento nel campo di descrizione per specificare le modifiche e i motivi (ad esempio, &quot;aggiungi un nuovo schema&quot; o &quot;correggi un difetto&quot;).
+
+![](assets/ncs_datapackage_best-practices-2.png)
+
+È inoltre necessario specificare la data del commento. Segnala sempre il tuo commento su un pacchetto di aggiornamento al &quot;principale&quot; (pacchetto senza il prefisso 5).
+
+>[!IMPORTANT]
+>
+>Il campo di descrizione può contenere fino a 2.000 caratteri.
