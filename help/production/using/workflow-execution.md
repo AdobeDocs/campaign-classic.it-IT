@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 69b562979f3b32a4d30dfed0695cf3cf6c0fd26a
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,8 @@ La sezione seguente contiene informazioni su problemi comuni relativi all’esec
 Per ulteriori informazioni sui flussi di lavoro, consulta le sezioni seguenti:
 
 * [Informazioni sui flussi di lavoro](../../workflow/using/about-workflows.md)
-* [Esecuzione di un flusso di lavoro](../../workflow/using/executing-a-workflow.md)
+* [Avvio di un flusso di lavoro](../../workflow/using/starting-a-workflow.md)
+* [Ciclo di vita del flusso di lavoro](../../workflow/using/workflow-life-cycle.md)
 * [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
 
 ## Inizia il prima possibile nelle campagne {#start-as-soon-as-possible-in-campaigns}
@@ -42,7 +46,7 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
 
    >[NOTA]
    >
-   >Una volta riavviato il flusso di lavoro, accertatevi di eseguire le attività in sospeso (fate clic con il pulsante destro del mouse sull&#39; **[!UICONTROL Scheduler]** attività / **[!UICONTROL Execute pending task(s) now]**) per verificare se il flusso di lavoro ha nuovamente esito negativo su una delle attività.
+   >Una volta riavviato il flusso di lavoro, accertatevi di eseguire le attività in sospeso (fate clic con il pulsante destro del mouse sull&#39; **[!UICONTROL Scheduler]** attività / **[!UICONTROL Execute pending task(s) now]**) per verificare se il flusso di lavoro ha nuovamente esito negativo su una qualsiasi delle attività.
 
    Se il flusso di lavoro continua a non riuscire, controllare il registro di controllo per verificare la presenza di errori specifici, risolvere i problemi di conseguenza, quindi riavviare il flusso di lavoro.
 
