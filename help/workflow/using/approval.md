@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ Un operatore può approvare le attività assegnate a tale operatore dalla consol
 
 La modifica del titolo o del corpo del messaggio dell&#39;attività non influisce sulle attività correnti, ma, d&#39;altra parte, la modifica delle possibili scelte influisce direttamente sulle attività correnti, che ereditano automaticamente il nuovo elenco di scelte.
 
-**Le attività relative al tipo di approvazione** sono accessibili dal **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nodo: gli operatori possono accedere al modulo di approvazione direttamente da questa vista.
+**Le attività relative al tipo di approvazione** sono accessibili dal **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nodo: gli operatori possono accedere al modulo di approvazione direttamente tramite questa visualizzazione.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -70,7 +73,7 @@ Fate clic sul **[!UICONTROL Advanced parameters...]** collegamento per seleziona
 
 Questo modello può essere modificato per personalizzare il layout del messaggio, ma è preferibile eseguire una copia. Il meccanismo di targeting (file esterno, mappatura destinazione) non deve essere modificato perché è necessario per il corretto funzionamento delle notifiche.
 
-Un esempio di approvazione viene visualizzato in [Definizione delle approvazioni](../../workflow/using/executing-a-workflow.md#defining-approvals).
+Un esempio di approvazione viene visualizzato in [Definizione delle approvazioni](../../workflow/using/defining-approvals.md).
 
 ## Parametri di output {#output-parameters}
 
