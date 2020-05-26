@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Scopri le best practice per importare i dati tramite un flusso di lavoro Campaig
 
 ## Posso monitorare l&#39;esecuzione del flusso di lavoro? {#can-i-monitor-workflow-execution-}
 
-Scopri come monitorare l&#39;esecuzione del flusso di lavoro Campaign [in questa pagina](../../workflow/using/executing-a-workflow.md).
+Scopri come monitorare l&#39;esecuzione del flusso di lavoro Campaign [in questa pagina](../../workflow/using/starting-a-workflow.md).
 
 ## Come posso aggiornare i dati di Campaign con un flusso di lavoro? {#how-can-i-update-campaign-data-with-a-workflow-}
 
@@ -53,7 +56,7 @@ In Adobe Campaign, puoi sfruttare una serie di attività per risolvere problemi 
 
 ## Posso automatizzare l&#39;invio di messaggi personalizzati? {#can-i-automate-personalized-messages-sending-}
 
-Leggi [questo caso](../../workflow/using/enriching-data.md) di utilizzo per inviare messaggi personalizzati alle persone a seconda dei punteggi più alti di un concorso.
+Leggi [questo caso](../../workflow/using/enriching-data.md) d’uso per inviare messaggi personalizzati alle persone a seconda dei punteggi più alti di un concorso.
 
 ## Come posso dividere un&#39;audience in sottoinsiemi con un flusso di lavoro? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
