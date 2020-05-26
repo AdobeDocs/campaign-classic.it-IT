@@ -1,7 +1,7 @@
 ---
-title: Raccomandazioni specifiche RDBMS
-seo-title: Raccomandazioni specifiche RDBMS
-description: Raccomandazioni specifiche RDBMS
+title: Raccomandazioni specifiche per RDBMS
+seo-title: Raccomandazioni specifiche per RDBMS
+description: Raccomandazioni specifiche per RDBMS
 seo-description: null
 page-status-flag: never-activated
 uuid: 637c1b5a-0484-4734-a012-eb4ba8036263
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 0%
 
 ---
 
 
-# Raccomandazioni specifiche RDBMS{#rdbms-specific-recommendations}
+# Raccomandazioni specifiche per RDBMS{#rdbms-specific-recommendations}
 
 Per facilitare l&#39;impostazione dei piani di manutenzione, questa sezione elenca alcune raccomandazioni/best practice adattate ai vari motori RDBMS supportati da Adobe Campaign. Tuttavia, queste sono solo raccomandazioni. Sta a voi adattarli alle vostre esigenze, in conformità con la vostra procedura interna e i vostri vincoli. L&#39;amministratore del database ha la responsabilità di creare ed eseguire tali piani.
 
@@ -99,14 +102,14 @@ vacuum full nmsdelivery;
 >* Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
 >* I comandi **sottovuoto** e **reindicizzati** bloccheranno la tabella, che mette in pausa alcuni processi durante la manutenzione.
 >* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo. Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
->* Questa operazione di manutenzione può essere implementata da un flusso di lavoro di Adobe Campaign utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/executing-a-workflow.md#architecture)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
+>* Questa operazione di manutenzione può essere implementata da un flusso di lavoro di Adobe Campaign utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
 >
 
 
 
 ### Ricreazione di un database {#rebuilding-a-database}
 
-PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, dal momento che il **vuoto intero** blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non è utilizzata. È possibile:
+PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, dal momento che il **vuoto intero** blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non è utilizzata. Potete effettuare le seguenti operazioni:
 
 * eseguire la manutenzione quando la piattaforma Adobe Campaign viene arrestata,
 * arresta i vari servizi secondari di Adobe Campaign che potrebbero scrivere nella tabella in fase di ricostruzione (**interrompi il server nome_istanza** per arrestare il processo del flusso di lavoro).
