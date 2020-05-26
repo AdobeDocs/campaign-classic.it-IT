@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 8%
 
 ---
 
 
-# About activities{#about-activities}
+# Informazioni sulle attività{#about-activities}
 
 Questa sezione descrive tutte le attività disponibili. A seconda del nodo o del contesto in cui viene creato o modificato il flusso di lavoro, le attività disponibili possono variare. Ad esempio, i flussi di lavoro creati in una campagna hanno attività di distribuzione specifiche per il canale.
 
@@ -34,5 +37,5 @@ Ulteriori informazioni:
 
 * [Informazioni sulle attività di targeting](../../workflow/using/about-targeting-activities.md)
 * [Importazione di dati](../../workflow/using/importing-data.md)
-* [Esecuzione di un flusso di lavoro](../../workflow/using/executing-a-workflow.md)
+* [Esecuzione di un flusso di lavoro](../../workflow/using/starting-a-workflow.md)
 * [Procedure consigliate per i flussi di lavoro](../../workflow/using/workflow-best-practices.md)
