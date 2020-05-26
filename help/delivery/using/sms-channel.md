@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 0%
@@ -538,7 +538,7 @@ Il modulo **nlserver sms** invia una query al router SMS a intervalli regolari. 
 
 * **Annullamento sottoscrizione**: i destinatari che desiderano interrompere la ricezione di SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite l&#39;attività flusso di lavoro SMS **** in entrata e quindi creare una query per abilitare l&#39;opzione **Non contattare più il destinatario** per i destinatari interessati.
 
-   Fare riferimento alla guida [Flussi](../../workflow/using/executing-a-workflow.md#architecture) di lavoro.
+   Fare riferimento alla guida [Flussi](../../workflow/using/architecture.md) di lavoro.
 
 ## Schema InSMS {#insms-schema}
 
