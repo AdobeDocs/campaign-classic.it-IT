@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -387,14 +387,20 @@ Iniziate definendo diversi tipi di pacchetti. Saranno utilizzati solo quattro ti
 
 Se è necessario distribuire la configurazione in una nuova istanza, è possibile importare tutti i pacchetti di entità.
 
-**Caratteristiche** Questo tipo di pacchetto:
+**Caratteristiche**
+
+Questo tipo di pacchetto:
 * Risponde a un requisito o a una specifica client.
 * Contiene una o più funzionalità.
 * Deve contenere tutte le dipendenze per poter eseguire la funzionalità senza alcun altro pacchetto.
 
-**Campagne** Questo pacchetto non è obbligatorio. A volte è utile creare un tipo specifico per tutte le campagne, anche se una campagna può essere vista come una funzione.
+**Campagne**
 
-**Aggiornamenti** Una volta configurata, una funzione può essere esportata in un altro ambiente. Ad esempio, il pacchetto può essere esportato da un ambiente di sviluppo a un ambiente di test. In questo test viene rivelato un difetto. In primo luogo, deve essere fissato sull&#39;ambiente di sviluppo. Quindi, la patch deve essere applicata alla piattaforma di prova.
+Questo pacchetto non è obbligatorio. A volte è utile creare un tipo specifico per tutte le campagne, anche se una campagna può essere vista come una funzione.
+
+**Aggiornamenti**
+
+Una volta configurata, una funzione può essere esportata in un altro ambiente. Ad esempio, il pacchetto può essere esportato da un ambiente di sviluppo a un ambiente di test. In questo test viene rivelato un difetto. In primo luogo, deve essere fissato sull&#39;ambiente di sviluppo. Quindi, la patch deve essere applicata alla piattaforma di prova.
 
 La prima soluzione consisterebbe nell&#39;esportare nuovamente l&#39;intera funzionalità. Ma, per evitare qualsiasi rischio (aggiornamento di elementi indesiderati), è più sicuro avere un pacchetto contenente solo la correzione.
 
