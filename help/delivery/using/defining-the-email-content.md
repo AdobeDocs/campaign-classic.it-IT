@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2798'
 ht-degree: 0%
 
 ---
@@ -180,17 +180,21 @@ La procedura guidata di consegna consente di aggiungere al contenuto dei messagg
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-Affinché i destinatari possano visualizzare le immagini incluse nei messaggi ricevuti, questi messaggi devono essere disponibili su un server accessibile dall&#39;esterno.
+>[!IMPORTANT]
+>
+>Affinché i destinatari possano visualizzare le immagini incluse nei messaggi ricevuti, questi messaggi devono essere disponibili su un server accessibile dall&#39;esterno.
 
-Per gestire le immagini tramite la procedura guidata di consegna, è necessario fare clic sull’ **[!UICONTROL Tracking & Images]** icona nella barra degli strumenti.
+Per gestire le immagini tramite la procedura guidata di distribuzione:
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. Fare clic sull’ **[!UICONTROL Tracking & Images]** icona nella barra degli strumenti.
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-Selezionare **[!UICONTROL Upload images]** nella **[!UICONTROL Images]** scheda. Potete quindi scegliere se includere o meno le immagini nel messaggio e-mail.
+1. Selezionare **[!UICONTROL Upload images]** nella **[!UICONTROL Images]** scheda.
+1. Potete quindi scegliere se includere o meno le immagini nel messaggio e-mail.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Potete caricare manualmente le immagini senza attendere la fase di analisi della distribuzione. A tale scopo, fare clic sul **[!UICONTROL Upload images now]** collegamento.
+* Potete caricare manualmente le immagini senza attendere la fase di analisi della distribuzione. A tale scopo, fare clic sul **[!UICONTROL Upload the images straightaway...]** collegamento.
 * Potete specificare un altro percorso per l’accesso alle immagini sul server di tracciamento. A questo scopo, immettetela nel **[!UICONTROL Image URL]** campo. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
 
 Quando aprite contenuto HTML con immagini incluse nella procedura guidata di consegna, viene visualizzato un messaggio che consente di caricare le immagini immediatamente, in base ai parametri di consegna.
@@ -201,7 +205,7 @@ Quando aprite contenuto HTML con immagini incluse nella procedura guidata di con
 >
 >I percorsi di accesso alle immagini vengono modificati durante il caricamento manuale o durante l’invio dei messaggi.
 
-**Esempio: invio di un messaggio con immagini{#example--sending-a-message-with-images}**
+### Esempio: invio di un messaggio con immagini {#example--sending-a-message-with-images}
 
 Esempio di distribuzione con quattro immagini:
 
@@ -336,7 +340,7 @@ Per l&#39;invio di e-mail che verranno lette su un cellulare gestito da un provi
 
 >[!NOTE]
 >
->Durante la creazione del messaggio è necessario tenere conto delle limitazioni specifiche di ciascun operatore. Consultare:
+>Durante la creazione del messaggio è necessario tenere conto delle limitazioni specifiche di ciascun operatore. Fai riferimento a:
 >
 >* Per DoCoMo, fai riferimento a [questa pagina](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
 >* Per KDDI AU, fai riferimento a [questa pagina](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
