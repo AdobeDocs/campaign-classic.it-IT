@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
+source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Potete allegare uno o più file a una consegna e-mail. Esistono due casi possibi
 
 >[!NOTE]
 >
->Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. Per ulteriori informazioni, vedere [Informazioni sui modelli](../../delivery/using/about-templates.md).
+>Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. For more on this, refer to [About templates](../../delivery/using/about-templates.md).
 
 ## Collegamento di un file locale {#attaching-a-local-file}
 
@@ -42,15 +45,16 @@ Per allegare un file locale a una consegna, procedere come segue.
 >Potete allegare più file a una consegna. Gli allegati possono essere in qualsiasi formato, incluso in formato compresso.
 
 1. Fate clic sul **[!UICONTROL Attachments]** collegamento.
-1. Fare clic sul **[!UICONTROL Add]** pulsante, quindi fare clic **[!UICONTROL File...]** per selezionare il file da allegare alla consegna.
+1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fare clic **[!UICONTROL File...]** per selezionare il file da allegare alla consegna.
 
-![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![](assets/s_ncs_user_wizard_email_attachement.png)
 
 È inoltre possibile trascinare e rilasciare il file direttamente nel **[!UICONTROL Attachments]** campo di consegna, oppure utilizzare l&#39; **[!UICONTROL Attach]** icona dalla barra degli strumenti della procedura guidata di consegna,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-1. Una volta selezionato, il file viene caricato immediatamente sul server per essere disponibile al momento della consegna. È elencata nel **[!UICONTROL Attachments]** campo.
+Una volta selezionato, il file viene caricato immediatamente sul server per essere disponibile al momento della consegna. È elencata nel **[!UICONTROL Attachments]** campo.
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -72,8 +76,8 @@ Sono disponibili le seguenti opzioni:
 
 * **Nome file specificato durante la creazione del modello di consegna**
 * **Il contenuto del file viene personalizzato e convertito in PDF durante la distribuzione di ciascun messaggio**
-* **Il nome file viene calcolato durante l&#39;analisi della consegna (non può dipendere dal profilo del destinatario)**
-* **Il nome del file viene calcolato al momento della consegna per ciascun destinatario (dipende dal destinatario)**
+* **Il nome del file viene calcolato durante l&#39;analisi della consegna (non può dipendere dal profilo del destinatario)**
+* **Il nome del file viene calcolato al momento della consegna per ciascun destinatario (può dipendere dal destinatario)**
 
 ### Collegamento di un file locale {#attach-a-local-file}
 
@@ -92,7 +96,7 @@ Se l&#39;allegato è un file locale, selezionare l&#39;opzione: **[!UICONTROL Fi
 
 ### Collegamento di un messaggio personalizzato {#attach-a-personalized-message}
 
-L’opzione **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** consente di selezionare una fine con campi di personalizzazione, quali il cognome e il nome del destinatario desiderato.
+L’opzione **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** consente di selezionare un file con campi di personalizzazione, ad esempio il cognome e il nome del destinatario desiderato.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -148,7 +152,7 @@ Quando si seleziona l&#39;allegato, è possibile scegliere l&#39;opzione **[!UIC
 >Questa opzione viene utilizzata solo quando la consegna viene inviata da un processo esterno o da un flusso di lavoro.
 
 1. Specificare l&#39;etichetta da applicare all&#39;allegato.
-1. Specificate il percorso di accesso del file e il nome esatto nella finestra di definizione. Se il nome del file è personalizzato, puoi usare i campi Personalizzazione per i valori rilevanti.
+1. Specificate il percorso di accesso del file e il nome esatto nella finestra di definizione. Se il nome del file è personalizzato, puoi usare i campi Personalizzazione per i valori pertinenti.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
