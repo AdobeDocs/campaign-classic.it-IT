@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 0%
@@ -60,6 +60,13 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> Elenco di schemi per i quali si desidera utilizzare gli indirizzi di prova per il rendering in entrata. (i nomi degli elementi sono separati da virgole) Ad esempio: custom_nms_Recipient.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirm</span> <br /> </td> 
+   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> Per eseguire questa operazione, attivare l'opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedere <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per avviare una finestra di dialogo con il database del destinatario predefinito (nms:destinatario).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella del destinatario esterno.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> Numero minimo di destinatari affinché la consegna sia considerata la principale nel rapporto di fatturazione.<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
    <td> Se si inserisce "1" come valore, è possibile ignorare automaticamente i doppi.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per avviare una finestra di dialogo con il database del destinatario predefinito (nms:destinatario).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella del destinatario esterno.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span> <br /> </td> 
@@ -164,6 +167,10 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> Elenco di indirizzi e-mail di inoltro autorizzati (dal modulo di elaborazione posta in entrata). Gli indirizzi devono essere separati da virgole (o * per consentire tutti). Ad esempio xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> Tasto AES usato nel servlet 'lineImage' per codificare gli URL (canale LINE).<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> Sul canale "email" (usa come predefinito): Numero massimo di errori accettati, per gli errori SOFT durante l'invio prima di mettere il destinatario in quarantena.<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> Sul canale "mobile" : Periodo minimo da trascorrere dopo il precedente errore SOFT di riferimento, prima di tenere conto di un nuovo errore SOFT.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> L'URL del server delle pagine mirror (per impostazione predefinita, deve essere identico a NmsTracking_ServerUrl).<br /> Si tratta del valore predefinito delle comunicazioni e-mail se l’URL non è specificato nella definizione di routing.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> Consente di specificare un periodo massimo (espresso in ore) per limitare il numero di log recuperati ogni volta che viene eseguito il flusso di lavoro di sincronizzazione.</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> Numero massimo di chiamate nella sessione MidSourcing, che possono essere eseguite in parallelo (3 per impostazione predefinita).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> Ritardo personalizzato (in minuti) dopo il quale una consegna viene considerata come "ritardata", impostazione predefinita di 30 minuti.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
+   <td><p>Questa opzione viene utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> al momento del conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> Riga 1 dell'indirizzo del mittente.<br /> </td> 
@@ -203,10 +222,10 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> Riga 7 dell'indirizzo del mittente.<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Questa opzione viene utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> al momento del conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> L'URL del server delle pagine mirror (per impostazione predefinita, deve essere identico a NmsTracking_ServerUrl).<br /> Si tratta del valore predefinito delle comunicazioni e-mail se l’URL non è specificato nella definizione di routing.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> Parametri dei messaggi SMS inviati: informazioni trasmesse al gateway SMS per indicare la priorità del messaggio.<br /> </td> 
@@ -220,51 +239,33 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
    <td> Periodo durante il quale verranno eseguiti i tentativi di invio di SMS.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> Caratteri validi per un indirizzo e-mail.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Consente di specificare un periodo massimo (espresso in ore) per limitare il numero di log recuperati ogni volta che viene eseguito il flusso di lavoro di sincronizzazione.</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Numero massimo di chiamate nella sessione MidSourcing, che possono essere eseguite in parallelo (3 per impostazione predefinita).<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirm</span> <br /> </td> 
-   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> Per eseguire questa operazione, attivare l'opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedere <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Ritardo personalizzato (in minuti) dopo il quale una consegna viene considerata come "ritardata", impostazione predefinita di 30 minuti.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> Abilita/Disattiva il supporto per i caratteri speciali per Code128.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> Tasto AES usato nel servlet 'lineImage' per codificare gli URL (canale LINE).<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> Data ultimo consolidamento per le statistiche <span class="uicontrol">NmsUserAgent</span> .<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> Nome dell’opzione che contiene i segmenti Web e i relativi stati.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Data ultimo consolidamento per le statistiche <span class="uicontrol">NmsUserAgent</span> .<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> Abilita/disabilita il supporto per i caratteri speciali per Code128.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> Caratteri validi per un indirizzo e-mail.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> Aggiungete questa opzione con il valore "0" per disabilitare l'edizione del codice XML delle consegne (fate clic con il pulsante destro del mouse / <span class="uicontrol">Edit XML source</span> (Modifica origine <span class="uicontrol">XML) o la scelta rapida</span> CTRL + F4).<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## Risorse {#resources}
 
@@ -638,7 +639,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L'opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto.</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Leggi tutto</a> <br /> </td> 
+   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L'opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto.</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Ulteriori informazioni</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
