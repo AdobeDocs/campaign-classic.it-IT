@@ -15,20 +15,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Informazioni sulle applicazioni Web{#about-web-applications}
 
-Adobe Campaign consente di creare e pubblicare applicazioni Web dinamiche e interattive con dati provenienti dal database e contenuti adattati ai diritti dell&#39;utente connesso. È possibile creare pagine, ad esempio un modulo di modifica su una rete extranet, o moduli di notifica, inclusi i dati del database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
+Adobe Campaign consente di creare e pubblicare applicazioni Web dinamiche e interattive con dati provenienti dal database e contenuti adattati ai diritti dell&#39;utente connesso.
+
+È possibile creare pagine, ad esempio un modulo di modifica su una rete extranet, o moduli di notifica, inclusi i dati del database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
 
 Può trattarsi di un modulo di iscrizione contenente dati precaricati con informazioni contenute nel database Adobe Campaign, come illustrato di seguito:
 
 ![](assets/webapp_form_sample.png)
 
 Questo capitolo fornisce una panoramica della gestione delle applicazioni Web.
+
+>[!NOTE]
+>
+>Per informazioni su come ottimizzare la sicurezza per le applicazioni Web, fare riferimento all&#39;elenco [di controllo](https://helpx.adobe.com/campaign/kb/acc-security.html) Sicurezza e privacy.
 
 >[!CAUTION]
 >
@@ -38,23 +47,23 @@ Questo capitolo fornisce una panoramica della gestione delle applicazioni Web.
 
 Le applicazioni Web in Adobe Campaign consentono di accedere alle seguenti funzionalità:
 
-* Creazione di moduli con più pagine. Per ulteriori informazioni, consultare questa [pagina](../../web/using/about-web-forms.md).
-* Gestione multilingue dei sondaggi con uno strumento di traduzione integrato. Per ulteriori informazioni, consultare questa [pagina](../../web/using/translating-a-web-application.md).
-* Interfaccia grafica per la gestione delle pagine, layout a più colonne. Per ulteriori informazioni, consultare questa [pagina](../../web/using/designing-a-web-application.md).
-* Personalizzazione del rendering e posizione del campo. Per ulteriori informazioni, consultare questa [pagina](../../web/using/editing-content.md#adding-personalization-content).
-* Visualizzazione condizionale dei campi del sondaggio in base alle risposte. Per ulteriori informazioni, consultare questa [pagina](../../web/using/form-rendering.md#defining-fields-conditional-display).
-* Visualizzazione casuale delle domande. Per ulteriori informazioni, consultare questa [pagina](../../web/using/building-a-survey.md#adding-questions).
-* Visualizzazione della pagina condizionale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
-* Controllo delle informazioni prima della convalida in base al tipo di dati previsto (numero, indirizzo e-mail, data, ecc.) e i campi obbligatori. Per ulteriori informazioni, consultare questa [pagina](../../web/using/form-rendering.md#defining-control-settings).
-* Inviti e-mail o notifiche. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
-* Personalizzazione dei messaggi di errore e di fine. Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
-* Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. Per ulteriori informazioni, consultare questa [pagina](../../web/using/editing-content.md).
-* Monitoraggio delle risposte in tempo reale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Creazione di moduli con più pagine. For more on this, refer to this [page](../../web/using/about-web-forms.md).
+* Gestione multilingue dei sondaggi con uno strumento di traduzione integrato. For more on this, refer to this [page](../../web/using/translating-a-web-application.md).
+* Interfaccia grafica per la gestione delle pagine, layout a più colonne. For more on this, refer to this [page](../../web/using/designing-a-web-application.md).
+* Personalizzazione del rendering e posizione del campo. For more on this, refer to this [page](../../web/using/editing-content.md#adding-personalization-content).
+* Visualizzazione condizionale dei campi del sondaggio in base alle risposte. For more on this, refer to this [page](../../web/using/form-rendering.md#defining-fields-conditional-display).
+* Visualizzazione casuale delle domande. For more on this, refer to this [page](../../web/using/building-a-survey.md#adding-questions).
+* Visualizzazione della pagina condizionale. For more on this, refer to this [page](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+* Controllo delle informazioni prima della convalida in base al tipo di dati previsto (numero, indirizzo e-mail, data, ecc.) e i campi obbligatori. For more on this, refer to this [page](../../web/using/form-rendering.md#defining-control-settings).
+* Inviti e-mail o notifiche. For more on this, refer to this [page](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Personalizzazione dei messaggi di errore e di fine. For more on this, refer to this [page](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
+* Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. For more on this, refer to this [page](../../web/using/editing-content.md).
+* Monitoraggio delle risposte in tempo reale. For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
 Il modulo di creazione **sondaggio** opzionale offre le seguenti funzionalità aggiuntive:
 
-* Estensione dinamica del database: creazione di risposte non incluse nel modello dati iniziale. Per ulteriori informazioni, consultare questa [pagina](../../web/using/managing-answers.md#storing-collected-answers).
-* Generazione di rapporti dedicati. Per ulteriori informazioni, consultare questa [pagina](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Estensione dinamica del database: creazione di risposte non incluse nel modello dati iniziale. For more on this, refer to this [page](../../web/using/managing-answers.md#storing-collected-answers).
+* Generazione di rapporti dedicati. For more on this, refer to this [page](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
 
