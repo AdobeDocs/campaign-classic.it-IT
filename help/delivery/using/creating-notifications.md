@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 1%
 
 ---
 
 
 # Creazione di notifiche{#creating-notifications}
 
-Questa sezione descrive gli elementi specifici per la distribuzione delle notifiche iOS e Android. In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali sulla creazione dei contenuti.
+Questa sezione descrive gli elementi specifici per la distribuzione delle notifiche iOS e Android. In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali relativi alla creazione dei contenuti.
 
 Iniziate creando una nuova consegna.
 
@@ -46,7 +49,7 @@ Iniziate creando una nuova consegna.
    >
    >Per ulteriori informazioni sull&#39;inclusione di un elenco di sementi, vedere [Informazioni sugli indirizzi](../../delivery/using/about-seed-addresses.md)di sementi.
 
-1. Seleziona **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, seleziona il servizio relativo all&#39;applicazione mobile (in questo caso Neotrips), quindi seleziona la versione iOS dell&#39;applicazione.
+1. Selezionate **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, selezionate il servizio relativo all&#39;applicazione mobile (in questo caso, Neotrips), quindi selezionate la versione iOS dell&#39;applicazione.
 
    ![](assets/nmac_delivery_ios_3.png)
 
@@ -58,19 +61,19 @@ Iniziate creando una nuova consegna.
    >
    >La modalità **Silent Push** è disponibile da iOS 7. Questo consente di inviare una notifica &quot;silenziosa&quot; a un’applicazione mobile. L&#39;utente non viene informato dell&#39;arrivo della notifica. Viene trasferito direttamente all&#39;applicazione.
 
-1. Nel **[!UICONTROL Title]** campo, inserite l’etichetta del titolo che desiderate visualizzare nella notifica. Verrà visualizzato solo nell&#39;elenco delle notifiche disponibili dal Centro notifiche. Questo campo consente di definire il valore del parametro **title** del payload di notifica iOS.
+1. Nel **[!UICONTROL Title]** campo, immettete l’etichetta del titolo che desiderate visualizzare nella notifica. Verrà visualizzato solo nell&#39;elenco delle notifiche disponibili dal Centro notifiche. Questo campo consente di definire il valore del parametro **title** del payload di notifica iOS.
+
 1. Se utilizzate il connettore HTTP/2, potete aggiungere un sottotitolo (valore del parametro del **sottotitolo** del payload di notifica iOS). Consultare la sezione [Configurazione dell&#39;applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+
 1. Quindi immettete il **[!UICONTROL Message]** e il **[!UICONTROL Value of the badge]** valore in base al tipo di notifica scelto.
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >Potete aggiungere delle emoticon al contenuto della notifica. Per farlo, visitate un sito Web con elenco di emoji ([ad esempio](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), copiate un’emoji e incollatela direttamente nell’editor di contenuti. In Windows 7, alcune icone potrebbero non essere visualizzate correttamente nell’editor (simbolo quadrato), ma dovrebbero essere inviate correttamente nella notifica finale. La capacità di visualizzare le emoticon dipende dal sistema operativo utilizzato sul dispositivo. È consigliabile inviare prove per verificare che la consegna sia visualizzata correttamente prima di inviarla.
+   >**[!UICONTROL Badge]** e le notifiche **[!UICONTROL Alert and badge]** del tipo consentono di modificare il valore del contrassegno (il numero sopra il logo dell’applicazione mobile). Per aggiornare il contrassegno, è sufficiente immettere 0 come valore. Se il campo è vuoto, il valore del contrassegno non viene modificato.
 
-   >[!NOTE]
-   >
-   >**[!UICONTROL Badge]** e le notifiche **[!UICONTROL Alert and badge]** tipo consentono di modificare il valore del contrassegno (il numero sopra il logo dell’applicazione mobile). Per aggiornare il contrassegno, è sufficiente immettere 0 come valore. Se il campo è vuoto, il valore del contrassegno non viene modificato.
+1. Fate clic sull&#39; **[!UICONTROL Insert emoticon]** icona per inserire le icone nella notifica push. Per personalizzare l’elenco delle icone, consultate [Personalizzazione dell’elenco delle icone](../../delivery/using/defining-interactive-content.md)
 
 1. Consente di **[!UICONTROL Action button]** definire un&#39;etichetta per il pulsante di azione visualizzato sulle notifiche di avviso (campo **action_loc_key** del payload). Se l&#39;applicazione iOS gestisce stringhe localizzabili (**Localizable.strings**), immettere la chiave corrispondente in questo campo. Se l&#39;applicazione non gestisce il testo localizzabile, immettere l&#39;etichetta che si desidera visualizzare sul pulsante dell&#39;azione. Per ulteriori informazioni sulle stringhe localizzabili, consulta la documentazione [](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple.
 1. Nel **[!UICONTROL Play a sound]** campo, selezionate l&#39;audio che deve essere riprodotto dal terminale mobile al ricevimento della notifica.
@@ -121,9 +124,7 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >Potete aggiungere delle emoticon al contenuto della notifica. Per farlo, visitate un sito Web con elenco di emoji ([ad esempio](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), copiate un’emoji e incollatela direttamente nell’editor di contenuti. In Windows 7, alcune icone potrebbero non essere visualizzate correttamente nell’editor (simbolo quadrato), ma dovrebbero essere inviate correttamente nell’e-mail finale. La capacità di visualizzare le emoticon dipende dal sistema operativo utilizzato sul dispositivo. È consigliabile inviare prove per verificare che la consegna sia visualizzata correttamente prima di inviarla.
+1. Fate clic sull&#39; **[!UICONTROL Insert emoticon]** icona per inserire le icone nella notifica push. Per personalizzare l’elenco delle icone, consultate [Personalizzazione dell’elenco delle icone](../../delivery/using/defining-interactive-content.md)
 
 1. Nel **[!UICONTROL Application variables]** campo, immettere il valore di ogni variabile. Le variabili di applicazione consentono di definire il comportamento di notifica: ad esempio, potete configurare una schermata specifica dell&#39;applicazione da visualizzare quando l&#39;utente attiva la notifica.
 
