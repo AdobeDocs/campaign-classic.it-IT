@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +67,7 @@ In questo caso, anche se la regola è collegata a tutte le consegne, verrà appl
 
 >[!NOTE]
 >
->Le tipologie e le regole di filtro possono essere utilizzate in un flusso di lavoro, in un&#39; **[!UICONTROL Delivery outline]** attività. For more on this, refer to [this section](../../workflow/using/delivery-outline.md).
+>Le tipologie e le regole di filtro possono essere utilizzate in un flusso di lavoro, in un&#39; **[!UICONTROL Delivery outline]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/delivery-outline.md).
 
 ## Creazione e utilizzo di una tipologia di filtro {#creating-and-using-a-filtering-typology}
 
@@ -84,17 +87,16 @@ Potete anche collegare le regole di filtro direttamente tramite questa scheda, s
 
 >[!NOTE]
 >
->* Nella finestra di selezione sono disponibili solo le tipologie e le regole di filtro.
->* Queste configurazioni possono essere definite nel modello di consegna da applicare automaticamente a tutte le nuove consegne create utilizzando il modello.
+>Nella finestra di selezione sono disponibili solo le tipologie e le regole di filtro.
 >
-
+>Queste configurazioni possono essere definite nel modello di consegna da applicare automaticamente a tutte le nuove consegne create utilizzando il modello.
 
 
 ## Regole di esclusione recapito predefinite {#default-deliverability-exclusion-rules}
 
 Per impostazione predefinita sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l&#39;analisi delle e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio vietati contenuti in un elenco di soppressione globale crittografato gestito nell&#39;istanza di recapito. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
 
-Questo per evitare di essere inseriti in blacklist a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviata una e-mail di conferma a tale Spamtrap, che comporta la blacklist automatica dell&#39;indirizzo.
+Questo per evitare di essere inseriti in blacklist a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviata una e-mail di conferma a tale Spamtrap, che ne determina la blacklist automatica dell&#39;indirizzo.
 
 >[!NOTE]
 >
