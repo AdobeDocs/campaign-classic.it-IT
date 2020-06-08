@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ I client per dispositivi mobili, messaggi e webmail disponibili per il rendering
 
 >[!NOTE]
 >
->Il rendering in entrata non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere verificata con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [le prove](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Il rendering della inbox non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere verificata con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [le prove](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Attivazione del rendering in entrata{#activating-inbox-rendering}
+## Attivazione del rendering in entrata {#activating-inbox-rendering}
 
 Per i client ospitati e ibridi, il rendering in entrata è configurato nell’istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
 
@@ -47,7 +50,7 @@ Per le installazioni locali, seguite i passaggi descritti di seguito per configu
 1. Impostate i parametri del conto esterno come segue:
    * **[!UICONTROL Label]**: Informazioni sul server di distribuzione
    * **[!UICONTROL Internal name]**: deliverabilityInstance
-   * **[!UICONTROL Type]**:HTTP
+   * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
    * **[!UICONTROL Encryption]**: None
    * Selezionare l&#39; **[!UICONTROL Enabled]** opzione.
@@ -84,10 +87,10 @@ Ogni volta che utilizzate la **[!UICONTROL Inbox rendering]** funzione in una di
 
 >[!IMPORTANT]
 >
->Account Token per ogni singolo rendering e non per l&#39;intero rapporto di rendering Inbox, ovvero:
+>Account Token per ogni singolo rendering e non per l&#39;intero rapporto di rendering Inbox, il che significa che:
 >
 >* Ogni volta che viene generato il rapporto di rendering Inbox, viene detratto un token per client di messaggistica: un token per il rendering di Outlook 2000, uno per il rendering di Outlook 2010, uno per il rendering di Apple Mail 9 e così via.
->* Per la stessa consegna, se generate di nuovo il rendering in entrata, il numero di token disponibili viene nuovamente diminuito dal numero di rendering generati.
+>* Per la stessa consegna, se generate di nuovo il rendering in entrata, il numero di token disponibili viene nuovamente diminuito in base al numero di rendering generati.
 >
 
 
@@ -96,13 +99,7 @@ Il numero di token rimanenti disponibili viene visualizzato nel rapporto **[!UIC
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-In genere, la funzione di rendering Inbox viene utilizzata per testare il framework HTML di un nuovo e-mail progettato. Ciascun rendering richiede circa 70 token (a seconda del numero di ambienti generalmente testati). Tuttavia, in alcuni casi potrebbe essere necessario disporre di più rapporti di rendering per verificare completamente la consegna. Potrebbero quindi essere necessari più token per completare diversi controlli.
-
->[!NOTE]
->
->Se sei un client Litmus, puoi usare il tuo account Litmus per effettuare il provisioning e utilizzare il rendering Inbox in Adobe Campaign. Per ulteriori informazioni, contattate il vostro responsabile commerciale Adobe.
->
->Tenere presente che la modifica delle credenziali di Litmus può causare problemi di autenticazione in Adobe Campaign.
+In genere, la funzione di rendering Inbox viene utilizzata per testare il framework HTML di un messaggio e-mail di nuova progettazione. Ciascun rendering richiede circa 70 token (a seconda del numero di ambienti generalmente testati). Tuttavia, in alcuni casi potrebbe essere necessario disporre di più rapporti di rendering per verificare completamente la consegna. Potrebbero quindi essere necessari più token per completare diversi controlli.
 
 ## Accesso al rapporto di rendering della inbox {#accessing-the-inbox-rendering-report}
 
@@ -137,7 +134,7 @@ Il **[!UICONTROL General summary]** numero di messaggi ricevuti, indesiderati (s
 
 Passate il mouse sul grafico per visualizzare i dettagli di ciascun colore.
 
-Il contenuto della relazione è diviso in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, e **[!UICONTROL Webmails]**. Scorrete il rapporto verso il basso per visualizzare tutti i rendering raggruppati in queste tre categorie.
+Il contenuto della relazione è diviso in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Scorrete il rapporto verso il basso per visualizzare tutti i rendering raggruppati in queste tre categorie.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
