@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -26,20 +29,19 @@ L&#39; **[!UICONTROL Sub-workflow]** attività consente di attivare l&#39;esecuz
 
 Puoi chiamare più flussi di lavoro secondari in un unico flusso di lavoro. I flussi di lavoro secondari vengono eseguiti in modo sincrono.
 
->[!NOTE]
->
->Affinché il flusso di lavoro secondario possa essere eseguito correttamente, è necessario avere un solo salto di tipo &quot;arrivo&quot; con il numero più basso e un solo salto di tipo &quot;inizio&quot; con il numero più alto. Ad esempio, se il tipo &quot;start&quot; consente di saltare con priorità pari a 1, 2 e 3, è consigliabile impostare un solo tipo &quot;start&quot; con priorità pari a 3.
+Nell’esempio seguente, un flusso di lavoro &quot;principale&quot; chiama un flusso di lavoro secondario utilizzando i collegamenti. Per ulteriori informazioni sugli oggetti grafici di tipo &quot;salto&quot;, vedere [questa sezione](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Crea un flusso di lavoro da utilizzare come flusso di lavoro secondario in un altro flusso di lavoro.
-1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se hai più salti di tipo &quot;arrivo&quot;, Adobe Campaign utilizzerà il salto &quot;arrivo&quot; con il numero più basso.
-
-   Inserite un&#39; **[!UICONTROL Jump (start point)]** attività con priorità pari a 2 alla fine del flusso di lavoro. Se hai più salti di tipo &quot;start&quot;, Adobe Campaign utilizzerà il salto &quot;start&quot; con il numero più alto.
+1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se hai più salti di tipo &quot;punto finale&quot;, Adobe Campaign utilizzerà il salto &quot;punto finale&quot; con il numero più basso.
+1. Inserite un&#39; **[!UICONTROL Jump (start point)]** attività con priorità pari a 2 alla fine del flusso di lavoro. Se hai più salti di tipo &quot;punto iniziale&quot;, Adobe Campaign utilizzerà il salto &quot;punto iniziale&quot; con il numero più alto.
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >Se l&#39;attività del flusso di lavoro secondario fa riferimento a un flusso di lavoro con diverse **[!UICONTROL Jump]** attività, il flusso di lavoro secondario viene eseguito tra il salto del tipo di &quot;arrivo&quot; con il numero più basso e il salto del tipo &quot;inizio&quot; con il numero più alto.
+   >Se l&#39;attività del flusso di lavoro secondario fa riferimento a un flusso di lavoro con diverse **[!UICONTROL Jump]** attività, il flusso di lavoro secondario viene eseguito tra il tipo di &quot;salto del punto finale&quot; con il numero più basso e il tipo di &quot;salto del punto iniziale&quot; con il numero più alto.
+   >
+   >Affinché il flusso di lavoro secondario possa essere eseguito correttamente, è necessario che sia presente un solo salto di tipo &quot;punto finale&quot; con il numero più basso e che sia possibile effettuare un solo salto di tipo &quot;punto iniziale&quot; con il numero più alto.
 
 1. Completa e salva questo &quot;flusso di lavoro secondario&quot;.
 1. Create un flusso di lavoro &quot;principale&quot;.
@@ -78,6 +80,4 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 
 Questo insieme di tre valori identifica la popolazione oggetto della query. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed **[!UICONTROL recCount]** è il numero di elementi nella tabella.
 
-* targetSchema
-
-Questo valore è lo schema della tabella di lavoro. Questo parametro è valido per tutte le transizioni con **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
+* targetSchema: Questo valore è lo schema della tabella di lavoro. Questo parametro è valido per tutte le transizioni con **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
