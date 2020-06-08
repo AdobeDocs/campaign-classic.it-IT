@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 2%
 
 ---
 
@@ -32,10 +35,10 @@ Ottimizzazione campagna è il modulo Adobe Campaign che consente di controllare,
 
 Con Adobe Campaign puoi progettare e applicare quattro tipi di regole di tipologia:
 
-1. **Regole di filtro** che consentono di escludere parte del target in base ai criteri. Per ulteriori informazioni, consultate [Filtrare le regole](../../campaign/using/filtering-rules.md).
-1. **Regole di pressione** che consentono di controllare la fatica del marketing. Per ulteriori informazioni, vedere Regole sulla [pressione](../../campaign/using/pressure-rules.md).
-1. **Regole di capacità** che consentono di limitare i carichi per garantire condizioni di elaborazione ottimali. Per ulteriori informazioni, vedere [Controllo della capacità](../../campaign/using/consistency-rules.md#controlling-capacity).
-1. **Controlla** le regole che ti consentono di verificare la validità dei messaggi prima che vengano inviati. Per ulteriori informazioni, vedere [Regole](../../campaign/using/control-rules.md)di controllo.
+* **Regole di filtro** che consentono di escludere parte del target in base ai criteri. For more on this, refer to [Filtering rules](../../campaign/using/filtering-rules.md).
+* **Regole di pressione** che consentono di controllare la fatica del marketing. For more on this, refer to [Pressure rules](../../campaign/using/pressure-rules.md).
+* **Regole di capacità** che consentono di limitare i carichi per garantire condizioni di elaborazione ottimali. For more on this, refer to [Controlling capacity](../../campaign/using/consistency-rules.md#controlling-capacity).
+* **Controlla** le regole che ti consentono di verificare la validità dei messaggi prima che vengano inviati. For more on this, refer to [Control rules](../../campaign/using/control-rules.md).
 
 Una volta create, le regole di tipologia sono raggruppate nelle tipologie di campagna a cui viene fatto riferimento nelle consegne. Consultate [Applicazione delle tipologie](#applying-typologies).
 
@@ -55,13 +58,13 @@ I passaggi per creare e applicare una tipologia alle consegne sono elencati di s
 
    Le regole di tipologia si trovano nel **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** nodo.
 
-   Diverse regole disponibili in Campaign sono descritte nelle seguenti sezioni: regole [sulla pressione](../../campaign/using/pressure-rules.md)di vendita, regole [sulla](../../campaign/using/consistency-rules.md#controlling-capacity)capacità, regole [di](../../campaign/using/control-rules.md) controllo e regole [di](../../campaign/using/filtering-rules.md)filtraggio.
+   Diverse regole disponibili in Campaign sono descritte nelle seguenti sezioni: [regole](../../campaign/using/pressure-rules.md)di pressione sulle vendite, regole [di](../../campaign/using/consistency-rules.md#controlling-capacity)capacità, regole [di](../../campaign/using/control-rules.md) controllo e regole [di](../../campaign/using/filtering-rules.md)filtraggio.
 
 1. Create una tipologia e fate riferimento alle regole create al suo interno.
 
    Le tipologie sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
 
-1. Configurate la distribuzione in modo da utilizzare la tipologia creata. For more on this, refer to [this section](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Configurate la distribuzione in modo da utilizzare la tipologia creata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
 1. Test e controllo del comportamento mediante simulazioni di campagne. For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
 Durante la preparazione della consegna, i destinatari sono esclusi quando il criterio è soddisfatto. Potete controllare i registri per monitorare le esclusioni. Esempi di utilizzo delle regole di tipo pressione sono disponibili in [questa pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
