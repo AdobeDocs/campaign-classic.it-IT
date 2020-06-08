@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ In questo scenario, gli allegati non vengono pre-creati, ma aggiunti al volo all
 * Se l&#39;allegato è associato a una transazione (come nello scenario di esempio sopra descritto), potrebbe contenere dati dinamici generati durante il processo del cliente.
 * L’associazione di file PDF ottimizza la protezione e consente di cifrarli e inviarli mediante il protocollo HTTPS.
 
+>[!NOTE]
+>
+>Per evitare problemi di prestazioni, se includete come allegati immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
 ## Recommendations {#important-notes}
 
 Prima di implementare questo scenario, leggi attentamente le linee guida seguenti:
@@ -54,6 +58,10 @@ Prima di implementare questo scenario, leggi attentamente le linee guida seguent
 * Non è invece corretto utilizzare lo spazio su disco nelle istanze dei messaggi transazionali per archiviare file di qualsiasi tipo, nemmeno per gli allegati.
 * Per ospitare questi file è necessario utilizzare un altro sistema di dischi online. Hai bisogno di un accesso FTP a questo sistema e devi essere in grado di scrivere ed eliminare file.
 
+>[!NOTE]
+>
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
 ## Implementazione {#implementation}
 
 Il diagramma seguente mostra i diversi passaggi per implementare questo scenario:
@@ -62,7 +70,7 @@ Il diagramma seguente mostra i diversi passaggi per implementare questo scenario
 
 Per aggiungere al volo un allegato e-mail a un messaggio transazionale, effettua le operazioni seguenti:
 
-1. Iniziate progettando l&#39;allegato. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/attaching-files.md#attach-a-personalized-file).
+1. Iniziate progettando l&#39;allegato. For more on this, see [this section](../../delivery/using/attaching-files.md#attach-a-personalized-file).
 
    Questo consente di allegare i file a un&#39;e-mail, anche se non sono ospitati nell&#39;istanza di esecuzione.
 
