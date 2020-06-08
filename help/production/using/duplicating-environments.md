@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+workflow-type: tm+mt
+source-wordcount: '1291'
+ht-degree: 0%
 
 ---
 
@@ -111,11 +114,15 @@ Verificare che il numero di opzioni/account esportati sia uguale al numero di ri
 > 
 >For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
 
+>[!NOTE]
+>
+>Quando la tabella nmsextaccount viene esportata, le password correlate agli account esterni (ad esempio password per Mid-sourcing, Esecuzione centro messaggi, SMPP, IMS e altri account esterni) non vengono esportate. Assicuratevi di avere accesso alle password corrette in anticipo, in quanto potrebbero dover essere reinserite dopo che gli account esterni sono stati reimportati nell&#39;ambiente.
+
 ### Passo 3 - Arrestare l&#39;ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
 
 Devi interrompere i processi di Adobe Campaign su tutti i server dell&#39;ambiente di destinazione. Questa operazione dipende dal sistema operativo in uso.
 
-È possibile arrestare tutti i processi o solo quelli che scrivono nel database.
+È possibile arrestare tutti i processi, o solo quelli che scrivono nel database.
 
 Per arrestare tutti i processi, utilizzare i comandi seguenti:
 
@@ -143,10 +150,10 @@ nlserver pdump
 
 È inoltre possibile verificare che non siano ancora in esecuzione processi di sistema.
 
-A questo scopo, attenersi alla procedura seguente:
+A tal fine, attenersi alla procedura seguente:
 
 * In Windows: aprire **Task Manager** e verificare che non siano presenti processi **nlserver.exe** .
-* In Linux: eseguire il **ps aux| grep nlserver** e verificare che non siano presenti processi **nlserver** .
+* In Linux: eseguire il **ps aux | grep nlserver** e verificare che non siano presenti processi **nlserver** .
 
 ### Passaggio 4 - Ripristino dei database nell&#39;ambiente di destinazione (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -156,7 +163,7 @@ Per ripristinare i database di origine nell&#39;ambiente di destinazione, utiliz
 psql mydatabase < mydatabase.sql
 ```
 
-### Passaggio 5 - Ottimizzare l&#39;ambiente di destinazione (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Passo 5 - Cauterizzare l&#39;ambiente di destinazione (dev) {#step-5---cauterize-the-target-environment--dev-}
 
 Per evitare malfunzionamenti, i processi collegati all&#39;invio della distribuzione e all&#39;esecuzione del flusso di lavoro non devono essere eseguiti automaticamente quando l&#39;ambiente di destinazione è attivato.
 
@@ -174,7 +181,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT * FROM neolane.nmsdeliverypart;
    ```
 
-1. Verificare che l&#39;aggiornamento dello stato di consegna sia corretto:
+1. Verificate che l&#39;aggiornamento dello stato di consegna sia corretto:
 
    ```
    SELECT iState, count(*) FROM neolane.nmsdelivery GROUP BY iState;
