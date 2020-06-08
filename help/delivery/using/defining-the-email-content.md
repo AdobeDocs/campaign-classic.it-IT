@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ Ad esempio, nel messaggio precedente, l&#39;oggetto del messaggio è personalizz
 >[!NOTE]
 >
 >L’uso dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md).
+
+È inoltre possibile inserire icone sulla linea dell’oggetto mediante la finestra a **[!UICONTROL Insert emoticon]** comparsa.
 
 ## Contenuto del messaggio {#message-content}
 
@@ -115,6 +117,19 @@ I messaggi vengono inviati in formato HTML o testo per impostazione predefinita,
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
+### Inserimento di icone in un messaggio e-mail {#inserting-emoticons}
+
+Potete inserire icone nel contenuto dell’e-mail.
+
+1. Fate clic sull&#39; **[!UICONTROL Insert emoticon]** icona.
+1. Selezionate un’icona dalla finestra a comparsa.
+
+   ![](assets/emoticon_4.png)
+
+1. Al termine, fate clic sul **[!UICONTROL Close]** pulsante.
+
+Per personalizzare l’elenco delle icone, consultate questa [pagina](../../delivery/using/customizing-emoticon-list.md).
+
 ## Selezione dei formati dei messaggi {#selecting-message-formats}
 
 Potete modificare il formato dei messaggi e-mail inviati. A questo scopo, modificate le proprietà di consegna e fate clic sulla **[!UICONTROL Delivery]** scheda.
@@ -143,7 +158,7 @@ Selezionate il formato del messaggio e-mail nella sezione inferiore della finest
 
 Adobe Campaign consente di provare il nuovo formato [AMP per e-mail](https://amp.dev/about/email/) interattivo, che consente di inviare e-mail dinamiche a determinate condizioni.
 
-Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/defining-interactive-content.md).
+For more on this, see [this section](../../delivery/using/defining-interactive-content.md).
 
 ## Utilizzo della gestione dei contenuti {#using-content-management}
 
@@ -191,11 +206,10 @@ Per gestire le immagini tramite la procedura guidata di distribuzione:
 
 1. Selezionare **[!UICONTROL Upload images]** nella **[!UICONTROL Images]** scheda.
 1. Potete quindi scegliere se includere o meno le immagini nel messaggio e-mail.
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Potete caricare manualmente le immagini senza attendere la fase di analisi della distribuzione. A tale scopo, fare clic sul **[!UICONTROL Upload the images straightaway...]** collegamento.
-* Potete specificare un altro percorso per l’accesso alle immagini sul server di tracciamento. A questo scopo, immettetela nel **[!UICONTROL Image URL]** campo. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
+* Potete specificare un altro percorso per l’accesso alle immagini sul server di tracciamento. A questo scopo, immettetela nel **[!UICONTROL Images URL]** campo. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
 
 Quando aprite contenuto HTML con immagini incluse nella procedura guidata di consegna, viene visualizzato un messaggio che consente di caricare le immagini immediatamente, in base ai parametri di consegna.
 
@@ -205,7 +219,11 @@ Quando aprite contenuto HTML con immagini incluse nella procedura guidata di con
 >
 >I percorsi di accesso alle immagini vengono modificati durante il caricamento manuale o durante l’invio dei messaggi.
 
-### Esempio: invio di un messaggio con immagini {#example--sending-a-message-with-images}
+### Invio di un messaggio con immagini {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>Per evitare problemi di prestazioni, se includete al volo immagini scaricate da un URL personalizzato come [allegato](../../delivery/using/attaching-files.md), per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
 
 Esempio di distribuzione con quattro immagini:
 
