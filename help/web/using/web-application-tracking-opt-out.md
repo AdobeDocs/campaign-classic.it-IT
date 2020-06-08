@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,10 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 Adobe Campaign consente di interrompere il tracciamento dei comportamenti Web degli utenti finali che rifiutano il tracciamento del comportamento tramite cookie o Web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; potete aggiungere questi banner alle applicazioni Web o alle pagine di destinazione.
 
 Se un utente finale rinuncia al tracciamento del comportamento tramite cookie o Web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con API JavaScript. Nota che alcune giurisdizioni possono richiedere che il Cliente presenti agli utenti finali una clausola di rinuncia prima che sia possibile offrire (o che abbia altri requisiti legali), ed è responsabilità del Cliente rispettare le leggi applicabili.
+
+>[!NOTE]
+>
+>Quando gli script seguono sempre le linee guida descritte nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
