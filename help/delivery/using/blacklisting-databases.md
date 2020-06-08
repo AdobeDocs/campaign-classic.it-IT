@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 0%
 
 ---
 
 
 # Database Blacklist{#blacklisting-databases}
 
-Diverse organizzazioni gestiscono database di indirizzi IP e domini ritenuti utilizzati dagli spammers. La consultazione di questi siti può essere utile per capire perché alcuni messaggi sono stati rifiutati come spam. È generalmente possibile richiedere la rimozione di un indirizzo inserito erroneamente in tali elenchi.
+Diverse organizzazioni gestiscono database di indirizzi IP e domini ritenuti utilizzati dagli spammers. La consultazione di questi siti può essere utile per capire perché alcuni messaggi sono stati rifiutati come spam. In genere è possibile richiedere la rimozione di un indirizzo inserito erroneamente in tali elenchi.
 
 Questi database sono denominati RBL (Real-time Blackhole Lists) e vengono consultati tramite un meccanismo DNS. Esistono tre tipi di RBL:
 
 * Per indirizzo IP: elenca gli indirizzi IP che inviano spam o che probabilmente trasmettono spam.
 * Per dominio mittente: elenca i domini del mittente (dominio completo dell&#39;indirizzo e-mail di rimbalzo) che inviano spam o che non sono configurati correttamente.
-* Per dominio Web: elenca i domini (domini di alto livello registrati con i registrar) che si trovano negli URL dei collegamenti e delle immagini contenuti nel contenuto spam. In Adobe Campaign, il dominio da prendere in considerazione è generalmente l&#39;indirizzo utilizzato per il tracciamento.
+* Per dominio Web: elenca i domini (domini di alto livello registrati con i registrar) che si trovano negli URL dei collegamenti e delle immagini contenuti nel contenuto spam. In Adobe Campaign, il dominio da prendere in considerazione è in genere l&#39;indirizzo utilizzato per il tracciamento.
 
 Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più completo, fare riferimento al modulo [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (&quot;Ricerca nella lista nera degli spam&quot;).
 
@@ -36,7 +39,7 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
    Fare riferimento a [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e il supporto Adobe Campaign.
+   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e il supporto di Adobe Campaign.
 
 * **SpamCop**
 
@@ -52,7 +55,7 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
 * **SURBL**
 
-   Fare riferimento a [https://www.surbl.org/](https://www.surbl.org/)
+   Fare riferimento a [http://www.surbl.org/](http://www.surbl.org/)
 
    SURBL identifica i siti web che appaiono regolarmente nello spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. Devi informare immediatamente i servizi di recapito e il supporto Adobe Campaign.
 
