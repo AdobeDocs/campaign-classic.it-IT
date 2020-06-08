@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+workflow-type: tm+mt
+source-wordcount: '7852'
+ht-degree: 3%
 
 ---
 
@@ -1534,6 +1537,12 @@ Ecco i diversi parametri del nodo **mta** . Questa è la configurazione degli ag
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
+   <td> signEmailLinks<br /> </td> 
+   <td> Attivare il meccanismo di firma. Questo migliora la sicurezza del tracciamento dei collegamenti nelle e-mail.<br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> true<br /> </td> 
+  </tr>
+  <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Indirizzo del server delle statistiche di consegna, indicato come &lt;dns o ip&gt; [: 
      &lt;port&gt; ]. Vedere <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server</a>di statistiche. 
@@ -2044,7 +2053,7 @@ Ecco i diversi parametri del nodo **tubato** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> puntatoreFlushMessageCount<br /> </td> 
-   <td> Il puntatore viene memorizzato nel database ogni volta che viene elaborato questo numero di messaggi.<br /> </td> 
+   <td> Il puntatore viene memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2544,6 +2553,12 @@ Ecco i diversi parametri del nodo di **tracciamento** . Configurazione del serve
    <td> false<br /> </td> 
   </tr> 
   <tr> 
+   <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
+   <td> Disattiva gli URL generati in modo errato dalle build precedenti.<br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> false<br /> </td> 
+  </tr> 
+  <tr> 
    <td> consolidamentoPeriodoSec<br /> </td> 
    <td> Periodo di consolidamento<br /> </td> 
    <td> Long<br /> </td> 
@@ -2596,6 +2611,18 @@ Ecco i diversi parametri del nodo di **tracciamento** . Configurazione del serve
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
    <td> Long<br /> </td> 
    <td> 1600<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceAPIKey<br /> </td> 
+   <td> Chiave API per l'integrazione endpoint di Phishbowl Service. In questo modo viene protetto il reindirizzamento degli URL con formazione non corretta generati dalle build meno recenti. <br /> </td> 
+   <td> Long<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceEndpoint<br /> </td> 
+   <td> Endpoint per l'integrazione dell'endpoint del servizio Phishbowl. In questo modo viene protetto il reindirizzamento degli URL con formazione non corretta generati dalle build meno recenti.<br /> </td> 
+   <td> Long<br /> </td> 
+   <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
