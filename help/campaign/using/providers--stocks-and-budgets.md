@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +84,7 @@ Per creare un modello di servizio e definirne il contenuto, effettuate le seguen
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Inserire un&#39;etichetta per questa categoria di costi e selezionare il tipo di processo: Consegna tramite **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]**, **[!UICONTROL Fax]** o **[!UICONTROL Task]**.
+   * Inserire un&#39;etichetta per questa categoria di costi e selezionare il tipo di processo interessato: Consegna tramite **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** o **[!UICONTROL Task]**.
    * Fare clic sul **[!UICONTROL Add]** pulsante per definire i tipi di costo associati a questa categoria.
    * Se necessario, ha associato una linea di magazzino a ciascun tipo di costo in modo che i quantitativi utilizzati siano automaticamente correlati alle scorte esistenti.
 
@@ -108,7 +111,7 @@ Fare clic sulla **[!UICONTROL Cost structure]** scheda per configurare il calcol
 
 * Per creare la struttura dei costi, selezionare il tipo di messaggio e la categoria di costi interessati dagli elenchi a discesa, nonché il tipo di costo a cui si applicherà la regola di calcolo. Il contenuto di questi elenchi a discesa deriva dalle informazioni inserite tramite la **[!UICONTROL Cost categories]** scheda.
 
-   È necessario assegnare un&#39;etichetta alla struttura dei costi. Per impostazione predefinita, il modello di consegna è il seguente: Categoria **costo - Tipo di costo**.
+   È necessario assegnare un&#39;etichetta alla struttura dei costi. Per impostazione predefinita, il modello di consegna è il seguente: **Categoria di costo - Tipo di costo**.
 
    È tuttavia possibile rinominarlo: immettere il valore desiderato direttamente nel **[!UICONTROL Label]** campo.
 
@@ -176,7 +179,7 @@ Quando un servizio è selezionato, le categorie di costi corrispondenti al tipo 
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* Per la distribuzione su canali mobili, fax o telefono, si applica la stessa modalità di selezione.
+* Per la distribuzione su canali mobili o telefonici, si applica la stessa modalità di selezione.
 * Per una consegna tramite e-mail, il servizio viene selezionato dalla **[!UICONTROL Advanced]** scheda nelle proprietà di consegna, come nell&#39;esempio seguente:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
@@ -292,7 +295,7 @@ I costi di consegna per una campagna sono consolidati a livello di campagna e i 
 
 ### Implementazione {#implementation}
 
-In una campagna, quando si seleziona il budget è necessario inserire l&#39;importo iniziale. I costi calcolati saranno aggiornati automaticamente in base al livello di impegno degli importi inseriti (spese sostenute, previste, riservate, impegnate). Vedere [Calcolo degli importi](../../campaign/using/controlling-costs.md#calculating-amounts).
+In una campagna, quando si seleziona il budget è necessario inserire l&#39;importo iniziale. I costi calcolati saranno aggiornati automaticamente in base al livello di impegno degli importi inseriti (spese sostenute, attese, riservate, impegnate). Vedere [Calcolo degli importi](../../campaign/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
