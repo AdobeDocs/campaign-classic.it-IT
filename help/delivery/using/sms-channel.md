@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3227'
-ht-degree: 0%
+source-wordcount: '3152'
+ht-degree: 1%
 
 ---
 
@@ -41,41 +41,16 @@ Per inviare a un telefono cellulare, è necessario:
 
 1. Un account esterno che specifica un connettore e il tipo di messaggio.
 
-   I connettori disponibili sono: NetSize, SMPP generico (SMPP versione 3.4 che supporta la modalità binaria), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e Extended SMPP generico.
+   I seguenti connettori saranno obsoleti a partire dalla release 20.2: NetSize, SMPP generico (SMPP versione 3.4 che supporta la modalità binaria), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Le funzionalità obsolete sono ancora disponibili, ma non verranno ulteriormente migliorate né supportate. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 1. Un modello di consegna in cui viene fatto riferimento a questo account esterno.
 
-### Attivazione di un account esterno {#activating-an-external-account}
-
-L&#39;elenco degli account esterni si trova nel nodo **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** della struttura di esplorazione di Adobe Campaign.
-
-* Ad esempio, passate all&#39;account predefinito denominato **[!UICONTROL NetSize mobile delivery]**.
-* Nella **[!UICONTROL General]** scheda, selezionare la **[!UICONTROL Enabled]** casella.
-
-   ![](assets/s_user_external_account_01.png)
-
-* Verificare che l&#39; **[!UICONTROL Mobile]** opzione sia selezionata per il **[!UICONTROL Channel]** campo.
-* Nella **[!UICONTROL Mobile]** scheda, selezionare un connettore dall&#39;elenco a discesa: NetSize, SMPP generico, Sybase365 (SAP SMS 365), comunicazioni CLX, Tele2, O2 o SMPP generico esteso. Per ulteriori informazioni sul connettore SMPP generico esteso, fare riferimento alla sezione [Creazione di un account](#creating-an-smpp-external-account) esterno SMPP.
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* Configurare il connettore in base alle informazioni fornite dal fornitore. Nell&#39;esempio seguente, l&#39;operatore è NetSize.
-
-   ![](assets/s_user_external_account_param.png)
-
-* Nella **[!UICONTROL Connector]** scheda, lasciate selezionata la modalità di **[!UICONTROL Call Web Service]** attivazione per impostazione predefinita.
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* Se viene visualizzata la **[!UICONTROL Connector]** scheda, specificate l&#39;URL di accesso per il connettore. L&#39;indirizzo deve terminare in **netsize.jsp** se il provider è NetSize. Per tutti gli altri connettori, l&#39;indirizzo URL termina in **smpp34.jsp**.
-
 ### Creazione di un account esterno SMPP {#creating-an-smpp-external-account}
 
-Se desiderate utilizzare il protocollo SMPP, potete anche creare un nuovo account esterno.
-
+Per inviare un SMS a un telefono cellulare, è prima necessario creare il tuo account SMPP esterno.
 Per ulteriori informazioni sul protocollo e sulle impostazioni SMS, consultare questa nota [tecnica](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
-A questo scopo, attenetevi alla procedura seguente:
+Per farlo, segui la procedura indicata di seguito:
 
 1. Nel nodo **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** della struttura ad albero, fate clic sull&#39; **[!UICONTROL New]** icona.
 1. Definite il tipo di account come **Routing**, il canale come **Mobile (SMS)** e la modalità di consegna come consegna **in** blocco.
@@ -87,7 +62,11 @@ A questo scopo, attenetevi alla procedura seguente:
 
    ![](assets/extended_smpp_connector.png)
 
-   L&#39; **[!UICONTROL Enable verbose SMPP traces in the log file]** opzione consente di scaricare tutto il traffico SMPP nei file di registro. Questa opzione deve essere abilitata per la risoluzione dei problemi del connettore e per il confronto con il traffico rilevato dal provider.
+   >[!CAUTION]
+   >
+   > A partire dalla release 20.2, i connettori legacy non saranno più supportati e non saranno più supportati. È consigliabile utilizzare il **[!UICONTROL Extended generic SMPP]** connettore. Per ulteriori informazioni sulla migrazione al connettore consigliato, fare riferimento a questa [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+
+1. L&#39; **[!UICONTROL Enable verbose SMPP traces in the log file]** opzione consente di scaricare tutto il traffico SMPP nei file di registro. Questa opzione deve essere abilitata per la risoluzione dei problemi del connettore e per il confronto con il traffico rilevato dal provider.
 
 1. Contatta il tuo provider di servizi SMS che ti spiegherà come completare i diversi campi dell&#39;account esterno dalla **[!UICONTROL Connection settings]** scheda.
 
@@ -109,7 +88,7 @@ A questo scopo, attenetevi alla procedura seguente:
 
    ![](assets/extended_smpp_transliteration.png)
 
-   For more on this, refer to [this section](#about-character-transliteration).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](#about-character-transliteration).
 
 1. Nella **[!UICONTROL Throughput and delays]** scheda, puoi specificare la velocità massima di trasmissione dei messaggi in uscita (&quot;MT&quot;, Mobile Terminated) in MT al secondo. Se si inserisce &quot;0&quot; nel campo corrispondente, la velocità effettiva sarà illimitata.
 
@@ -117,7 +96,7 @@ A questo scopo, attenetevi alla procedura seguente:
 
 1. Nella **[!UICONTROL Mapping of encodings]** scheda è possibile definire le codifiche.
 
-   For more on this, refer to [this section](#about-text-encodings).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](#about-text-encodings).
 
 1. Nella **[!UICONTROL SMSC specificities]** scheda, l&#39; **[!UICONTROL Send full phone number]** opzione è disabilitata per impostazione predefinita. Non attivarla se si desidera rispettare il protocollo SMPP e trasferire solo cifre al server del provider SMS (SMSC).
 
@@ -127,7 +106,7 @@ A questo scopo, attenetevi alla procedura seguente:
 
 1. Se si sta configurando un **[!UICONTROL Extended generic SMPP]** connettore, è possibile impostare le risposte automatiche.
 
-   For more on this, refer to [this section](#automatic-reply).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](#automatic-reply).
 
 ### Informazioni sulla traslitterazione dei caratteri {#about-character-transliteration}
 
@@ -378,6 +357,7 @@ I destinatari sono elencati nella **[!UICONTROL Non deliverables and addresses]*
 
 Se si dispone di più account esterni utilizzando il connettore SMPP generico esteso con lo stesso account provider, potrebbe verificarsi il seguente problema: quando invii una risposta a un codice breve, potrebbe essere ricevuta su una qualsiasi delle tue connessioni di account esterne. Di conseguenza, la risposta automatica inviata non poteva essere il messaggio previsto.
 Per evitare questo problema, applicate una delle seguenti soluzioni, a seconda del provider in uso:
+
 * Create un account fornitore per ciascun account esterno.
 * Utilizzare il **[!UICONTROL System type]** campo della scheda **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** per distinguere ciascun codice breve. Chiedete al vostro fornitore un valore diverso per ciascun account.
 
@@ -393,19 +373,19 @@ Per distribuire tramite canale SMS, è necessario creare un modello in cui viene
 
 Per mantenere il modello di consegna nativo, si consiglia di duplicarlo e configurarlo.
 
-Nell&#39;esempio seguente, creiamo un modello per inviare messaggi tramite l&#39;account NetSize abilitato in precedenza. Per eseguire questa operazione:
+Nell&#39;esempio riportato di seguito, viene creato un modello per inviare i messaggi tramite l&#39;account SMPP abilitato in precedenza. Per eseguire questa operazione:
 
 1. Vai al **[!UICONTROL Delivery templates]** nodo.
 1. Fare clic con il pulsante destro del mouse sul **[!UICONTROL Send to mobiles]** modello e selezionare **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Modificate l’etichetta del modello.
+1. Modificate l’etichetta del modello, ad esempio **Inviato a dispositivi mobili (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Clic **[!UICONTROL Properties]**.
-1. Nella **[!UICONTROL General]** scheda, selezionare una modalità di routing che corrisponda a un account esterno configurato, ad esempio **[!UICONTROL NetSize mobile delivery]**.
+1. Nella **[!UICONTROL General]** scheda, selezionare una modalità di routing che corrisponda all&#39;account esterno creato nei passaggi precedenti.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,11 +406,11 @@ Per creare una nuova consegna SMS, segui i passaggi seguenti:
 >In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali relativi alla creazione dei contenuti.
 
 1. Create una nuova consegna, ad esempio dal dashboard Consegna.
-1. Selezionate il modello di consegna **[!UICONTROL Send to mobiles (NetSize)]** creato in precedenza. Per ulteriori informazioni, consulta la sezione [Modifica del modello](#changing-the-delivery-template) di consegna.
+1. Selezionate il modello di consegna **Inviato a dispositivi mobili (SMPP)** creato in precedenza. Per ulteriori informazioni, consulta la sezione [Modifica del modello](#changing-the-delivery-template) di consegna.
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifica la consegna con un&#39;etichetta, un codice e una descrizione. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con un&#39;etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Fai clic **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
 
 ## Definizione del contenuto SMS {#defining-the-sms-content}
@@ -488,7 +468,7 @@ Il **[!UICONTROL Properties]** pulsante consente di accedere al parametro di con
 
 Sono disponibili le seguenti opzioni:
 
-* **Indirizzo** mittente (solo per i connettori NetSize e SMPP): consente di personalizzare il nome del mittente della consegna utilizzando una stringa di caratteri alfanumerici limitati a undici caratteri. Il campo non deve essere costituito esclusivamente da cifre. È possibile definire una condizione per visualizzare, ad esempio, nomi diversi in base al codice dell&#39;area del destinatario:
+* **Indirizzo** mittente: consente di personalizzare il nome del mittente della consegna utilizzando una stringa di caratteri alfanumerici limitati a undici caratteri. Il campo non deve essere costituito esclusivamente da cifre. È possibile definire una condizione per visualizzare, ad esempio, nomi diversi in base al codice dell&#39;area del destinatario:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
