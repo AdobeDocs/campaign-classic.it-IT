@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+workflow-type: tm+mt
+source-wordcount: '2908'
+ht-degree: 0%
 
 ---
 
@@ -60,11 +63,11 @@ Il **[!UICONTROL Deployment wizard]** , accessibile tramite il **[!UICONTROL Too
 I campi della **[!UICONTROL Purge of data]** finestra coincidono con le seguenti opzioni. Sono utilizzati da alcune delle attività eseguite dal **[!UICONTROL Database cleanup]** flusso di lavoro:
 
 * Tracciamento consolidato: **NmsCleanup_TrackingStatePurgeDelay** (fare riferimento alla [pulizia dei registri](#cleanup-of-tracking-logs)di tracciamento)
-* Registri di consegna: **NmsCleanup_BroadLogPurgeDelay** (consultare [Pulizia dei registri](#cleanup-of-delivery-logs)di consegna)
-* Registri di tracciamento: **NmsCleanup_TrackingLogPurgeDelay** (consultare [Pulizia dei registri](#cleanup-of-tracking-logs)di tracciamento)
+* Registri di consegna: **NmsCleanup_BroadLogPurgeDelay** (fare riferimento alla [pulizia dei registri](#cleanup-of-delivery-logs)di consegna)
+* Registri di tracciamento: **NmsCleanup_TrackingLogPurgeDelay** (fare riferimento alla [pulizia dei registri](#cleanup-of-tracking-logs)di monitoraggio)
 * Consegne eliminate: **NmsCleanup_RecycledDeliveryPurgeDelay** (fare riferimento alla [pulizia delle consegne da eliminare o riciclare](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * Importa rifiuti: **NmsCleanup_RejectPurgeDelay** (fare riferimento alla [pulizia dei rifiuti generati dalle importazioni](#cleanup-of-rejects-generated-by-imports-))
-* Profili visitatore: **NmsCleanup_VisitorPurgeDelay** (consultare [Pulizia dei visitatori](#cleanup-of-visitors))
+* Profili visitatore: **NmsCleanup_VisitorPurgeDelay** (fare riferimento a [Pulizia dei visitatori](#cleanup-of-visitors))
 * Proposte di offerta: **NmsCleanup_PropositionPurgeDelay** (fare riferimento a [Pulizia delle proposizioni](#cleanup-of-propositions))
 
    >[!NOTE]
@@ -95,7 +98,7 @@ Alla data e all&#39;ora definite nel pianificatore del flusso di lavoro (vedere 
 >
 >Le sezioni seguenti che descrivono le attività eseguite dal flusso di lavoro di pulizia del database sono riservate agli amministratori di database o agli utenti che hanno familiarità con il linguaggio SQL.
 
-### Elenchi da eliminare {#lists-to-delete-cleanup}
+### Elenchi per eliminare la pulizia {#lists-to-delete-cleanup}
 
 La prima attività eseguita dal **[!UICONTROL Database cleanup]** flusso di lavoro elimina tutti i gruppi con **deleteStatus != 0** attributo da **NmsGroup**. Vengono eliminati anche i record collegati a tali gruppi e presenti in altre tabelle.
 
@@ -131,7 +134,7 @@ La prima attività eseguita dal **[!UICONTROL Database cleanup]** flusso di lavo
 
 Questa attività elimina tutte le consegne da eliminare o riciclare.
 
-1. Il **[!UICONTROL Database cleanup]** flusso di lavoro seleziona tutte le consegne per le quali il campo **deleteStatus** ha il valore **[!UICONTROL Yes]** o **[!UICONTROL Recycled]** e la cui data di eliminazione è precedente al periodo definito nel campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) della procedura guidata di distribuzione. Per ulteriori informazioni, consulta [Procedura guidata](#deployment-wizard)di distribuzione. Questo periodo è calcolato in relazione alla data corrente del server.
+1. Il **[!UICONTROL Database cleanup]** flusso di lavoro seleziona tutte le consegne per le quali il campo **deleteStatus** ha il valore **[!UICONTROL Yes]** o **[!UICONTROL Recycled]** e la cui data di eliminazione è precedente al periodo definito nel campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) della procedura guidata di distribuzione. For more on this, refer to [Deployment wizard](#deployment-wizard). Questo periodo è calcolato in relazione alla data corrente del server.
 1. Per ciascun server di mid-sourcing, l&#39;attività seleziona l&#39;elenco delle consegne da eliminare.
 1. Il **[!UICONTROL Database cleanup]** flusso di lavoro elimina i registri di consegna, gli allegati, le informazioni della pagina mirror e tutti gli altri dati correlati.
 1. Prima di eliminare definitivamente la consegna, il flusso di lavoro elimina le informazioni collegate dalle tabelle seguenti:
@@ -272,7 +275,7 @@ Con questa attività vengono eliminate le risorse Web (pagine mirror) utilizzate
    dove **$(dl)** è l&#39;identificatore della consegna.
 
 1. Una voce viene quindi aggiunta al registro di consegna.
-1. Le consegne sollecitate vengono poi identificate, per evitare di doverle rielaborare in seguito. Viene eseguita la seguente query:
+1. Le consegne sollecitate vengono poi identificate, per evitare di doverle rielaborare in un secondo momento. Viene eseguita la seguente query:
 
    ```
    UPDATE NmsDelivery SET iWebResPurged = 1 WHERE iDeliveryId IN ($(strIn))
@@ -324,11 +327,11 @@ Questo passaggio consente di eliminare i record per i quali non sono stati elabo
 
 ### Pulizia delle istanze del flusso di lavoro {#cleanup-of-workflow-instances}
 
-Questa attività elimina ogni istanza del flusso di lavoro utilizzando l&#39;identificatore (**lWorkflowId**) e la cronologia (**lHistory**). Elimina le tabelle inattive eseguendo di nuovo l&#39;attività di pulizia della tabella di lavoro.
+Questa attività elimina ogni istanza del flusso di lavoro utilizzando l&#39;identificatore (**lWorkflowId**) e la cronologia (**lHistory**). Elimina le tabelle inattive eseguendo di nuovo l&#39;attività di pulizia della tabella di lavoro. La pulizia elimina anche tutte le tabelle di lavoro orfane (wkf% e wkfhisto%) dei flussi di lavoro eliminati.
 
 >[!NOTE]
 >
->La frequenza di eliminazione della cronologia viene specificata per ogni flusso di lavoro nel campo **Cronologia in giorni** (valore predefinito: 30 giorni). Questo campo si trova nella scheda **Esecuzione** delle proprietà del flusso di lavoro. For more on this, refer to [this section](../../workflow/using/workflow-properties.md#execution).
+>La frequenza di eliminazione della cronologia viene specificata per ogni flusso di lavoro nel campo **Cronologia in giorni** (valore predefinito: 30 giorni). Questo campo si trova nella scheda **Esecuzione** delle proprietà del flusso di lavoro. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/workflow-properties.md#execution).
 
 1. Per recuperare l&#39;elenco dei flussi di lavoro da eliminare, viene utilizzata la seguente query:
 
@@ -404,7 +407,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 Questa attività elimina i record obsoleti dalla tabella dei visitatori utilizzando l&#39;eliminazione di massa. I record obsoleti sono quelli per i quali l&#39;ultima modifica è precedente al periodo di conservazione definito nella procedura guidata di distribuzione (fare riferimento alla procedura guidata [di](#deployment-wizard)distribuzione). Viene utilizzata la seguente query:
 
 ```
-DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < $(tsDate) LIMIT 5000)
+DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
 ```
 
 dove **$(tsDate)** è la data corrente del server, dalla quale viene sottratto il periodo definito per l&#39;opzione **NmsCleanup_VisitorPurgeDelay** .
@@ -514,7 +517,7 @@ Se il totale è maggiore di 0:
    "DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)"
    ```
 
-1. Ogni errore viene salvato nella tabella **NmsEmailErrorState** utilizzando la seguente query:
+1. Ogni errore viene salvato nella tabella **NmsEmailErrorStat** utilizzando la seguente query:
 
    ```
    "INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))"
@@ -600,7 +603,7 @@ Questa query elimina tutte le voci correlate a iOS e Android.
 
 L’opzione **XtkCleanup_NoStats** consente di controllare il comportamento del passaggio di ottimizzazione dell’archiviazione del flusso di lavoro di pulizia.
 
-Se l&#39;opzione **XtkCleanup_NoStats** non esiste o se il relativo valore è 0, verrà eseguita l&#39;ottimizzazione dell&#39;archiviazione in modalità dettagliata (VACUUM VERBOSE ANALYZE) su PostgreSQL e verranno aggiornate le statistiche su tutti gli altri database. Per verificare che questo comando sia eseguito, controllare i registri PostSQL. VACUUM emette linee nel formato: `INFO: vacuuming "public.nmsactivecontact"` e ANALYZE emettono le righe nel formato seguente: `INFO: analyzing "public.nmsactivecontact"`.
+Se l&#39;opzione **XtkCleanup_NoStats** non esiste o se il relativo valore è 0, verrà eseguita l&#39;ottimizzazione dell&#39;archiviazione in modalità dettagliata (VACUUM VERBOSE ANALYZE) su PostgreSQL e verranno aggiornate le statistiche su tutti gli altri database. Per verificare che questo comando sia eseguito, controllare i registri PostSQL. VACUUM emette linee nel formato: `INFO: vacuuming "public.nmsactivecontact"` e ANALYZE genera le righe nel formato: `INFO: analyzing "public.nmsactivecontact"`.
 
 Se il valore dell&#39;opzione è 1, l&#39;aggiornamento delle statistiche non viene eseguito su alcun database. Nei registri del flusso di lavoro verrà visualizzata la seguente riga di registro: `Option 'XtkCleanup_NoStats' is set to '1'`.
 
