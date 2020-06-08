@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 0%
 
 ---
 
@@ -26,47 +29,60 @@ Quando una consegna è stata creata e configurata, è necessario convalidarla pr
 
 Per eseguire questa operazione:
 
-1. **Analizzare la consegna**: questo passaggio consente di preparare i messaggi da inviare. Consultare [Analisi della consegna](#analyzing-the-delivery).
+1. **Analizzare la consegna**: questo passaggio consente di preparare i messaggi da inviare. Fare riferimento a [Analisi della consegna](#analyzing-the-delivery).
 
-   Le modalità di convalida disponibili sono descritte in [Modifica della modalità](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)di approvazione.
+   Le regole applicate durante l&#39;analisi sono presentate nella sezione relativa al processo di [convalida con tipologie](#validation-process-with-typologies) . Le modalità di convalida disponibili sono descritte in dettaglio nella sezione [Modifica della modalità](#changing-the-approval-mode) di approvazione.
 
 1. **Invia prove**: questo passaggio consente di approvare contenuti, URL, campi di personalizzazione, ecc. Fare riferimento a [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) e [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)di prova specifica.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Entrambi questi passaggi devono necessariamente essere eseguiti dopo ogni modifica apportata al contenuto del messaggio.
 
 ## Analisi della consegna {#analyzing-the-delivery}
 
-L&#39;analisi è la fase in cui viene calcolata la popolazione di destinazione e preparato il contenuto di consegna. Una volta completato, la consegna è pronta per essere inviata. Per avviare l&#39;analisi della consegna, fai clic su **[!UICONTROL Send]**, quindi seleziona **[!UICONTROL Deliver as soon as possible]**.
+L&#39;analisi è la fase in cui viene calcolata la popolazione di destinazione e preparato il contenuto di consegna. Una volta completato, la consegna è pronta per essere inviata.
 
-![](assets/s_ncs_user_email_del_send.png)
+### Avvio dell&#39;analisi {#launching-the-analysis}
 
-Il **[!UICONTROL Analyze]** pulsante consente di avviare l&#39;analisi manualmente. La barra di avanzamento mostra l’avanzamento dell’analisi. Nella sezione inferiore della finestra viene visualizzato il risultato dell’analisi. Le icone speciali visualizzano avvisi.
+1. Per avviare l&#39;analisi di consegna, fai clic su **[!UICONTROL Send]**.
+1. Selezionare **[!UICONTROL Deliver as soon as possible]**.
 
-![](assets/s_ncs_user_interface_delivery04b.png)
+   ![](assets/s_ncs_user_email_del_send.png)
 
->[!NOTE]
->
->Le regole di convalida sono descritte nel processo di [convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+1. Fate clic **[!UICONTROL Analyze]** per avviare l&#39;analisi manualmente.
 
-Potete interrompere il processo in qualsiasi momento facendo clic su **[!UICONTROL Stop]**.
+   La barra di avanzamento mostra l’avanzamento dell’analisi.
 
-![](assets/s_ncs_user_wizard_email01_16.png)
+   ![](assets/s_ncs_user_email_del_analyze_progress.png)
 
-Durante la fase di analisi non vengono inviati messaggi. È quindi possibile avviare o annullare il processo senza rischi.
+   >[!NOTE]
+   >
+   >Le regole di convalida utilizzate durante l&#39;analisi sono descritte nella sezione Processo di [convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) .
 
->[!CAUTION]
->
->L&#39;analisi blocca la consegna (o la prova) al momento dell&#39;analisi. Ogni modifica alla consegna (o alla prova) deve essere seguita da un&#39;altra analisi prima di essere applicabile.
+1. Puoi interrompere l’analisi in qualsiasi momento facendo clic su **[!UICONTROL Stop]**.
 
-Nell&#39;ultimo messaggio di registro sono visualizzati tutti i messaggi di errore e il numero di errori. Un&#39;icona speciale mostra il tipo di errore: l&#39;icona gialla indica un errore di elaborazione non critico, l&#39;icona rossa indica un errore critico che impedisce l&#39;avvio della consegna.
+   ![](assets/s_ncs_user_wizard_email01_16.png)
 
-![](assets/s_ncs_user_email_del_analyze_error.png)
+   Durante la fase di preparazione non vengono inviati messaggi. È quindi possibile avviare o annullare l&#39;analisi senza rischi.
 
-Fare clic **[!UICONTROL Close]** per correggere gli errori. Dopo aver apportato le modifiche, è necessario riavviare l&#39;analisi.
+   >[!IMPORTANT]
+   >
+   >Durante l&#39;esecuzione, l&#39;analisi blocca la consegna (o la prova). Qualsiasi modifica alla consegna (o prova) deve essere seguita da un&#39;altra analisi prima di diventare applicabile.
 
-Controlla il risultato dell&#39;analisi prima di fare clic **[!UICONTROL Confirm delivery]** per inviare il messaggio alla destinazione specificata. Un messaggio di conferma consente di avviare la consegna.
+1. Attendere il completamento dell&#39;analisi.
+
+   Al termine dell&#39;analisi, la parte superiore della finestra indica se la preparazione della consegna è completa o se si sono verificati degli errori. Vengono elencati tutti i passaggi, gli avvisi e gli errori di convalida. Le icone colorate mostrano il tipo di messaggio:
+   * L’icona blu indica un messaggio informativo.
+   * L’icona gialla indica un errore di elaborazione non critico.
+   * L&#39;icona rossa indica un errore critico che impedisce l&#39;invio del messaggio.
+   ![](assets/s_ncs_user_email_del_analyze_error.png)
+
+1. Fate clic **[!UICONTROL Close]** per correggere gli eventuali errori.
+
+1. Dopo aver apportato le modifiche, riavviate l’analisi facendo clic **[!UICONTROL Analyze]**.
+
+Dopo aver controllato il risultato dell&#39;analisi, potrai fare clic **[!UICONTROL Confirm delivery]** per inviare il messaggio alla destinazione specificata. Un messaggio di conferma consente di avviare la consegna.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
@@ -74,24 +90,39 @@ Controlla il risultato dell&#39;analisi prima di fare clic **[!UICONTROL Confirm
 >
 >Fai clic sul **[!UICONTROL Change the main delivery target]** collegamento se il numero di messaggi da inviare non corrisponde alla configurazione. Questo consente di modificare la definizione della popolazione di destinazione e di riavviare l&#39;analisi.
 
-La **[!UICONTROL Analysis]** scheda dei parametri di consegna consente di definire un insieme di informazioni relative alla preparazione dei messaggi durante la fase di analisi.
+### Parametri di analisi {#analysis-parameters}
+
+La **[!UICONTROL Analysis]** scheda delle proprietà di consegna consente di definire un insieme di informazioni relative alla preparazione dei messaggi durante la fase di analisi.
 
 ![](assets/s_ncs_user_email_del_analyze_adv_param.png)
 
 Questa scheda consente di accedere alle seguenti opzioni:
 
-* **[!UICONTROL Label and code of the delivery]** : le opzioni relative a questa sezione dello schermo vengono utilizzate per calcolare i valori di questi campi durante la fase di analisi del recapito. Il **[!UICONTROL Calculate the execution folder during the delivery analysis]** campo calcola il nome della cartella che conterrà questa azione di consegna durante la fase di analisi.
-* **[!UICONTROL Approval mode]** : questo campo consente di selezionare il tipo di approvazione della consegna. Le modalità di approvazione sono presentate nel processo di [convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico. Consente di migliorare notevolmente le prestazioni dell&#39;analisi di distribuzione quando vengono elaborati molti dati, soprattutto se i dati di personalizzazione provengono da una tabella esterna tramite FDA. Fare riferimento alla sezione [Accesso a un database esterno (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
-* **[!UICONTROL Start job in a detached process]** : Questa opzione consente di avviare l&#39;analisi della consegna in un processo separato. Per impostazione predefinita, la funzione di analisi utilizza il processo del server applicazione Adobe Campaign (web nlserver). Selezionando questa opzione, l&#39;analisi verrà completata anche in caso di errore del server applicazione.
+* **[!UICONTROL Label and code of the delivery]** : le opzioni di questa sezione sono utilizzate per calcolare i valori di questi campi durante la fase di analisi del recapito. Il **[!UICONTROL Compute the execution folder during the delivery analysis]** campo calcola il nome della cartella che conterrà l’azione di consegna durante la fase di analisi.
+* **[!UICONTROL Approval mode]** : questo campo consente di definire la consegna manuale o automatica una volta completata l&#39;analisi. Le modalità di convalida vengono presentate nella sezione [Modifica della modalità](#changing-the-approval-mode) di approvazione.
+* **[!UICONTROL Prepare the delivery parts in the database]** : questa opzione consente di migliorare le prestazioni dell&#39;analisi della distribuzione. For more on this, see [this section](#improving-delivery-analysis).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico, che può consentirvi di ottenere un significativo aumento delle prestazioni per l&#39;esecuzione della personalizzazione. Per ulteriori informazioni, consulta [Ottimizzazione della personalizzazione](../../delivery/using/personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Start job in a detached process]** : questa opzione consente di avviare l&#39;analisi della consegna in un processo separato. Per impostazione predefinita, la funzione di analisi utilizza il processo del server applicazione Adobe Campaign (web nlserver). Selezionando questa opzione, l&#39;analisi verrà completata anche in caso di errore del server applicazione.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : questa opzione aggiunge i registri query SQL al giornale di registrazione consegna durante la fase di analisi.
 * **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di bypassare l&#39;interpretazione delle direttive JavaScript presenti nel contenuto HTML. Vengono visualizzati così come sono nei contenuti consegnati. Queste direttive vengono introdotte con il tag **&lt;%=** ).
+
+### Miglioramento delle prestazioni dell&#39;analisi dei risultati {#improving-delivery-analysis}
+
+Per accelerare la preparazione della consegna, potete selezionare l&#39; **[!UICONTROL Prepare the delivery parts in the database]** opzione prima di avviare l&#39;analisi.
+
+Quando questa opzione è attivata, la preparazione della consegna viene eseguita direttamente all&#39;interno del database, il che può accelerare notevolmente l&#39;analisi.
+
+Al momento, questa opzione è disponibile solo se sono soddisfatte le seguenti condizioni:
+* La consegna deve essere un&#39;e-mail. Per il momento, gli altri canali non sono supportati.
+* Non è necessario utilizzare il routing mid-sourcing o esterno, ma solo il tipo di routing della consegna in blocco. È possibile controllare il ciclo utilizzato nella **[!UICONTROL General]** scheda del **[!UICONTROL Delivery properties]**.
+* Non è possibile eseguire il targeting di una popolazione proveniente da un file esterno. Per una singola consegna, fate clic sul **[!UICONTROL To]** collegamento dal menu **[!UICONTROL Email parameters]** e verificate che l&#39; **[!UICONTROL Defined in the database]** opzione sia selezionata. Per una consegna utilizzata in un flusso di lavoro, verificate che i destinatari siano **[!UICONTROL Specified by the inbound event(s)]** nella **[!UICONTROL Delivery]** scheda.
+* È necessario utilizzare un database PostgreSQL.
 
 ### Configurazione della priorità di analisi {#analysis-priority-}
 
 Quando la consegna fa parte di una campagna, nella **[!UICONTROL Advanced]** scheda è disponibile un&#39;opzione aggiuntiva. Questo consente di organizzare l&#39;ordine di elaborazione per le consegne nella stessa campagna.
 
-Prima dell&#39;invio viene analizzata ogni consegna. La durata dell&#39;analisi dipende dal file di estrazione del recapito. Maggiore è la dimensione del file, maggiore sarà il tempo necessario per l&#39;analisi, con l&#39;attesa delle seguenti consegne.
+Prima dell&#39;invio, ogni consegna viene analizzata. La durata dell&#39;analisi dipende dal file di estrazione del recapito. Maggiore è la dimensione del file, maggiore sarà il tempo necessario per l&#39;analisi, con l&#39;attesa delle seguenti consegne.
 
 Le opzioni per il flusso di lavoro della campagna **[!UICONTROL Message preparation by the scheduler]** consentono di assegnare priorità all&#39;analisi della distribuzione.
 
@@ -117,7 +148,7 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 Per inviare una prova, effettuate le seguenti operazioni:
 
-1. Accertatevi che la destinazione della prova sia stata configurata come descritto in [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)di prova specifica.
+1. Verificate che la destinazione della prova sia stata configurata come descritto in [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)di prova specifica.
 1. Fate clic **[!UICONTROL Send a proof]** sulla barra superiore della procedura guidata di consegna.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
@@ -125,7 +156,7 @@ Per inviare una prova, effettuate le seguenti operazioni:
 1. Avvia l&#39;analisi dei messaggi. Consultate [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 1. Ora puoi inviare la consegna (vedi [Invio della consegna](../../delivery/using/steps-sending-the-delivery.md)).
 
-   Una volta inviata la consegna, la prova verrà visualizzata nell&#39;elenco di consegna e verrà automaticamente creata e numerata. Può essere modificato se desiderate accedere al contenuto e alle proprietà. Per ulteriori informazioni, consultare questa [pagina](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   Una volta inviata la consegna, la prova verrà visualizzata nell&#39;elenco di consegna e verrà automaticamente creata e numerata. Può essere modificato se desiderate accedere al contenuto e alle proprietà. For more on this, refer to this [page](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -172,6 +203,8 @@ La tipologia da applicare per ogni consegna è selezionata nella **[!UICONTROL T
 
 È possibile creare nuove regole e definire nuove tipologie da questo nodo. Tali attività sono tuttavia riservate agli utenti esperti che conoscono JavaScript.
 
+Per ulteriori informazioni sulle regole di tipologia, vedere [Informazioni sulle tipologie](../../campaign/using/about-campaign-typologies.md)delle campagne.
+
 Per modificare la tipologia corrente, fare clic sull&#39; **[!UICONTROL Edit link]** icona a destra del **[!UICONTROL Typology]** campo.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
@@ -182,7 +215,7 @@ Nella **[!UICONTROL Rule]** scheda è riportato un elenco delle regole di tipolo
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** le tipologie sono utilizzate nel quadro della gestione della pressione di vendita. For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** le tipologie sono utilizzate nel quadro della gestione della pressione di vendita. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 ## Modifica della modalità di approvazione {#changing-the-approval-mode}
 
