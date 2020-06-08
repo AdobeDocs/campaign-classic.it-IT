@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
+source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2912'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Gestione degli accessi{#access-management}
 
-## Informazioni sulle autorizzazioni {#about-permissions}
+## About permissions {#about-permissions}
 
 Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
 
@@ -62,11 +62,11 @@ La procedura completa per creare un operatore è descritta in [questa pagina](#c
 
 Per ulteriori informazioni sull&#39;integrazione con Adobe Campaign e LDAP, consulta [questa pagina](../../installation/using/connecting-through-ldap.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Gli operatori devono essere collegati a un&#39;area di protezione per accedere a un&#39;istanza. Per ulteriori informazioni sulle aree di sicurezza in Adobe Campaign, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Gli utenti possono anche connettersi direttamente ad Adobe Campaign utilizzando il proprio Adobe ID. Per ulteriori informazioni, consultare questa [pagina](../../integrations/using/about-adobe-id.md).
+Gli utenti possono anche connettersi direttamente ad Adobe Campaign utilizzando il proprio Adobe ID. For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
 
 ### Creazione di un operatore {#creating-an-operator}
 
@@ -78,7 +78,7 @@ Per creare un nuovo operatore e concedere le autorizzazioni, effettuate le segue
 
 1. Specificate il nome **[!UICONTROL Identification parameters]** dell’utente: login, password e nome. L&#39;operatore utilizzerà il login e la password per accedere ad Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può cambiare la password tramite il **[!UICONTROL Tools > Change password]** menu. L&#39;e-mail dell&#39;operatore è essenziale in quanto consente all&#39;operatore di ricevere notifiche, ad esempio durante l&#39;elaborazione delle approvazioni.
 
-   Questa sezione consente inoltre di collegare un operatore a un&#39;entità organizzativa. Per ulteriori informazioni, vedere [questa pagina](../../campaign/using/about-distributed-marketing.md).
+   Questa sezione consente inoltre di collegare un operatore a un&#39;entità organizzativa. For more on this, refer to the [this page](../../campaign/using/about-distributed-marketing.md).
 
 1. Selezionare le autorizzazioni concesse all&#39;operatore nella **[!UICONTROL Operator access rights]** sezione.
 
@@ -149,7 +149,7 @@ Il **[!UICONTROL Edit the access parameters...]** collegamento consente di acced
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Si tratta di una restrizione molto severa, e deve essere usata con cautela. Un operatore che ha eseguito l&#39;accesso con questo tipo di diritti può visualizzare SOLO il contenuto della cartella specificata e non ha accesso ad alcun altro nodo della struttura tramite l&#39;utilità di esplorazione. Tuttavia, a seconda delle funzionalità a cui ha accesso (ad esempio: workflow), può visualizzare i dati solitamente memorizzati in nodi che non riesce a vedere.
 
@@ -179,7 +179,7 @@ La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relati
 
 Adobe Campaign utilizza operatori tecnici con profili configurati per impostazione predefinita: Amministratore (&#39;admin&#39;), Fatturazione (&#39;fatturazione&#39;), Monitoraggio, Agente applicazione Web (&#39;webapp&#39;), ecc. Alcune di queste dipendono dalle applicazioni e dalle opzioni installate sulla piattaforma: Gli operatori &#39;central&#39; e &#39;local&#39;, ad esempio, sono visibili solo se è installata l&#39;opzione Distributed Marketing.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questi operatori tecnici ricevono una notifica predefinita quando i messaggi di informazione vengono restituiti dalla piattaforma. Consigliamo vivamente di fornire loro un&#39;e-mail di contatto.
 >
@@ -322,7 +322,7 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Gli utenti con **[!UICONTROL PREPARE DELIVERIES]** destra possono anche avviare il processo di analisi della consegna.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consultare questa [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. For more on this, refer to this [page](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Diritto di eseguire comandi in vari linguaggi di programmazione.
 
@@ -396,7 +396,7 @@ Nella **[!UICONTROL Security]** scheda, se l&#39; **[!UICONTROL System folder]**
 
 ## Cartelle e viste {#folders-and-views}
 
-### Informazioni su cartelle e viste {#about-folders-and-views}
+### Informazioni sulle cartelle {#about-folders}
 
 Le cartelle sono nodi nella struttura di Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura, tramite il **[!UICONTROL Add new folder]** menu. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
 
@@ -404,17 +404,23 @@ Le cartelle sono nodi nella struttura di Adobe Campaign. Questi nodi vengono cre
 
 Potete concedere le autorizzazioni a queste cartelle come in tutte le altre cartelle della struttura. Consultate Gestione dell’accesso alle [cartelle](#folder-access-management).
 
+### Informazioni sulle viste {#about-views}
+
 Inoltre, potete creare delle viste per limitare l’accesso ai dati e organizzare il contenuto della struttura in base alle vostre esigenze. Potete quindi assegnare le autorizzazioni alle viste.
 
 Una vista è una cartella che visualizza i record fisicamente memorizzati in una o più cartelle dello stesso tipo. Ad esempio, se create una cartella Campaign che è una visualizzazione, per impostazione predefinita vengono visualizzate tutte le campagne presenti nel database, indipendentemente dalla loro origine. Questi dati possono quindi essere filtrati.
 
 Quando convertite una cartella in una vista, tutti i dati corrispondenti al tipo di cartella presente nel database vengono visualizzati nella visualizzazione, indipendentemente dalla cartella in cui è stata salvata. È quindi possibile filtrarlo per limitare l&#39;elenco dei dati visualizzati.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Le viste contengono i dati e forniscono l&#39;accesso, ma i dati non vengono memorizzati fisicamente nella cartella di visualizzazione. L&#39;operatore deve disporre dei diritti appropriati per l&#39;azione desiderata nelle cartelle dell&#39;origine dati (accesso in lettura almeno).
 >
 >Per consentire l’accesso a una visualizzazione senza concedere l’accesso alla propria cartella di origine, è sufficiente non consentire l’accesso in lettura sul nodo padre della cartella di origine.
+
+Per distinguere le viste dalle cartelle, il nome di ciascuna vista viene visualizzato in un colore diverso (ciano scuro).
+
+![](assets/s_ncs_user_view_name_color.png)
 
 ### Aggiunta di cartelle e creazione di viste {#adding-folders-and-creating-views}
 
@@ -442,4 +448,3 @@ Nell&#39;esempio seguente, verranno create nuove cartelle per visualizzare dati 
 Vengono visualizzate le seguenti consegne:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
-
