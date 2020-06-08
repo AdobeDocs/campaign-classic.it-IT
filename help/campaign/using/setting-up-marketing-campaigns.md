@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Per configurare la gerarchia di cartelle per i piani e i programmi di marketing:
 
 ### Aggiunta di una campagna {#adding-a-campaign}
 
-Potete creare una campagna tramite l&#39;elenco delle campagne. Per visualizzare questa visualizzazione, selezionate il **[!UICONTROL Campaigns]** menu nel **[!UICONTROL Campaigns]** dashboard.
+È possibile creare una campagna tramite l&#39;elenco delle campagne. Per visualizzare questa visualizzazione, selezionate il **[!UICONTROL Campaigns]** menu nel **[!UICONTROL Campaigns]** dashboard.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -145,11 +145,7 @@ In questa scheda, specificate le date di esecuzione pianificate delle campagne i
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-È possibile utilizzare la procedura guidata per la creazione della pianificazione per compilare automaticamente tutte le date di esecuzione. A tale scopo, fare clic sul **[!UICONTROL Complete the execution schedule...]** collegamento situato sopra la tabella.
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
-
-La modalità di configurazione del programma di esecuzione coincide con l&#39; **[!UICONTROL Scheduler]** oggetto Workflow. For more on this, refer to [this section](../../workflow/using/architecture.md).
+La modalità di configurazione del programma di esecuzione coincide con l&#39; **[!UICONTROL Scheduler]** oggetto Workflow. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
