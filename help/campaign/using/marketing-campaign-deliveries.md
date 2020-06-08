@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2925'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Per creare una consegna collegata a una campagna, fate clic sul **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-Le configurazioni consigliate sono adatte ai diversi tipi di consegna (posta diretta, e-mail, canali mobili, fax o telefono).
+Le configurazioni consigliate sono adatte ai diversi tipi di distribuzione: posta diretta, e-mail, canali mobili.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Per ogni consegna, il manager della campagna definirà:
 
 * L&#39;obiettivo principale. Per ulteriori informazioni, vedere [Creazione della destinazione principale in un flusso di lavoro](#building-the-main-target-in-a-workflow) e [Selezione della popolazione](#selecting-the-target-population)di destinazione.
 * Gruppo di controllo. Per ulteriori informazioni, vedere [Definizione di un gruppo](#defining-a-control-group)di controllo.
-* Gli indirizzi seed. For more on this, refer to [this section](../../delivery/using/about-seed-addresses.md).
+* Gli indirizzi seed. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
 
 Alcune di queste informazioni vengono ereditate dal modello.
 
@@ -314,7 +314,7 @@ Per ulteriori informazioni, vedere [Approvazione di un file](../../campaign/usin
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Fate clic sul **[!UICONTROL Send a proof]** pulsante per creare le prove.
+* Click the **[!UICONTROL Send a proof]** button to create the proofs.
 
    Il bersaglio della prova deve essere definito in anticipo.
 
@@ -413,7 +413,7 @@ Per creare una struttura, fate clic sulla **[!UICONTROL Delivery outlines]** sot
 >
 >Se questa scheda non è presente, questa funzione non è disponibile per la campagna. Fate riferimento alla configurazione del modello di campagna.
 >   
->Per ulteriori informazioni, consulta Modelli [per](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
+>For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
