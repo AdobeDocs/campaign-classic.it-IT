@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 0%
+source-wordcount: '843'
+ht-degree: 1%
 
 ---
 
@@ -79,23 +79,23 @@ Creiamo un&#39;e-mail in cui inseriremo prima il nome del destinatario e quindi 
 
    >[!NOTE]
    >
-   >Quando una consegna fa parte di un flusso di lavoro, potete utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel **[!UICONTROL Target extension]** menu. For more on this, refer to [this section](../../workflow/using/data-life-cycle.md#target-data).
+   >Quando una consegna fa parte di un flusso di lavoro, potete utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel **[!UICONTROL Target extension]** menu. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Ottimizzazione della personalizzazione {#optimizing-personalization}
 
-Puoi ottimizzare la personalizzazione utilizzando un&#39;opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella **[!UICONTROL Analysis]** scheda delle proprietà di consegna.
+Puoi ottimizzare la personalizzazione utilizzando un&#39;opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella **[!UICONTROL Analysis]** scheda delle proprietà di consegna. Per ulteriori informazioni sull&#39;analisi della consegna, consulta [questa sezione](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante l&#39;analisi della consegna, questa opzione crea ed esegue automaticamente un flusso di lavoro che memorizza tutti i dati collegati alla destinazione in una tabella temporanea, compresi i dati provenienti da tabelle collegate in FDA.
 
-Selezionando questa opzione, puoi ottenere un aumento significativo delle prestazioni per l&#39;esecuzione della personalizzazione.
+Selezionando questa opzione è possibile migliorare notevolmente le prestazioni dell&#39;analisi di distribuzione quando vengono elaborati molti dati, soprattutto se i dati di personalizzazione provengono da una tabella esterna tramite FDA. Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 
 Ad esempio, in caso di problemi di prestazioni durante la distribuzione a un numero elevato di destinatari utilizzando molti campi di personalizzazione e/o blocchi di personalizzazione nel contenuto dei messaggi, questa opzione può accelerare la gestione della personalizzazione e quindi la distribuzione dei messaggi.
 
 Per utilizzare questa opzione, attenetevi alla procedura seguente:
 
-1. Creare una campagna. For more on this, refer to [this section](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Nella **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungete un&#39;attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultate [questa sezione](../../workflow/using/query.md).
-1. Aggiungete un&#39; **[!UICONTROL Email delivery]** attività al flusso di lavoro e apritela. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultate [questa sezione](../../workflow/using/delivery.md).
+1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Nella **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungete un&#39;attività **Query** al flusso di lavoro. For more on using this activity, refer to [this section](../../workflow/using/query.md).
+1. Aggiungete un&#39; **[!UICONTROL Email delivery]** attività al flusso di lavoro e apritela. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Passate alla **[!UICONTROL Analysis]** scheda del **[!UICONTROL Delivery properties]** pannello e selezionate l&#39; **[!UICONTROL Prepare the personalization data with a workflow]** opzione.
 
    ![](assets/perso_optimization.png)
