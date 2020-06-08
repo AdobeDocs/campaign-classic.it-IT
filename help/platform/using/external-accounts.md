@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ Gli account esterni sono utilizzati da processi tecnici quali flussi di lavoro t
 
    ![](assets/ext_account_1.png)
 
-1. Fate clic sul **[!UICONTROL New]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL New]**. 
 
    ![](assets/ext_account_2.png)
 
@@ -107,7 +110,7 @@ L&#39;account **[!UICONTROL Routing]** esterno consente di configurare ogni cana
 È possibile configurare i seguenti canali:
 
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobile (SMS)](../../delivery/using/sms-channel.md#activating-an-external-account).
+* [Mobile (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
 * [Telefono](../../delivery/using/other-channels.md)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/other-channels.md)
@@ -118,7 +121,7 @@ L&#39;account **[!UICONTROL Routing]** esterno consente di configurare ogni cana
 
 ## Account esterno FTP {#ftp-external-account}
 
-L&#39;account FTP esterno consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per configurare le connessioni con i sistemi esterni, come i server FTP 898, utilizzati per i trasferimenti di file, potete creare i vostri account esterni. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/file-transfer.md).
+L&#39;account FTP esterno consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per configurare le connessioni con i sistemi esterni, come i server FTP 898, utilizzati per i trasferimenti di file, potete creare i vostri account esterni. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
@@ -154,6 +157,7 @@ Adobe Campaign offre diversi connettori che consentono di comunicare con applica
 
 È possibile configurare i seguenti tipi di connessione:
 
+* Azure Synapse. Per ulteriori informazioni, consultare questa [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
 * Oracle. Per ulteriori informazioni, consultare questa [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
 * Netezza. Per ulteriori informazioni, consultare questa [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
 * SAP HANA. Per ulteriori informazioni, consultare questa [pagina](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
@@ -239,7 +243,7 @@ Il **[!UICONTROL Default]** campo consente di inserire una banda di query predef
 
 Il **[!UICONTROL Users]** campo consente di specificare una banda di query per ogni utente. È possibile aggiungere tutte le coppie chiave/valore necessarie, ad esempio priorità=1;carico di lavoro=alto. Se all&#39;utente non è assegnata alcuna banda di query, il **[!UICONTROL Default]** campo viene applicato.
 
-Per ulteriori informazioni su **[!UICONTROL Query banding]**, consulta la documentazione [Teradata](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+For more information on **[!UICONTROL Query banding]**, refer to the [Teradata documentation](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Account esterno di Web Analytics {#web-analytics-external-account}
 
@@ -247,13 +251,13 @@ L&#39;account **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** 
 
 ![](assets/ext_account_10.png)
 
-Per questo account esterno, la formula di calcolo per gli URL tracciati deve essere arricchita e la connessione tra le due soluzioni deve essere approvata. Per ulteriori informazioni, consultare questa [pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+Per questo account esterno, la formula di calcolo per gli URL tracciati deve essere arricchita e la connessione tra le due soluzioni deve essere approvata. For more on this, refer to this [page](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
 ## Account esterno di connessione Facebook {#facebook-connect-external-account}
 
 L&#39;account **[!UICONTROL Facebook Connect]** esterno consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, semplificando l&#39;acquisizione di potenziali clienti tramite questo social network.
 
-Per ogni applicazione Facebook, è necessario creare un account esterno di tipo **[!UICONTROL Facebook Connect]** type. Per ulteriori informazioni, consultare la [pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+Per ogni applicazione Facebook, è necessario creare un account esterno di tipo **[!UICONTROL Facebook Connect]** type. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
@@ -339,7 +343,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ## Account esterno SFTP {#sftp-external-account}
 
-L&#39;account esterno SFTP consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per impostare connessioni con sistemi esterni come SFTP utilizzati per i trasferimenti di file, potete creare i vostri account esterni. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/file-transfer.md).
+L&#39;account esterno SFTP consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per impostare connessioni con sistemi esterni come SFTP utilizzati per i trasferimenti di file, potete creare i vostri account esterni. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -381,7 +385,7 @@ For more on this, refer to this [section](../../integrations/using/about-adobe-e
 
 ## Account esterno Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un&#39;attività del flusso di lavoro. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/file-transfer.md).
+Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un&#39;attività del flusso di lavoro. For more on this, refer to this [page](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
