@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
 
 # Pubblicazione modelli{#template-publication}
 
-Una volta completato il modello di messaggio creato nell&#39;istanza di controllo, potete pubblicarlo su tutte le istanze di esecuzione. La pubblicazione consente di creare automaticamente due modelli di messaggio nell&#39;istanza di esecuzione, per l&#39;invio di messaggi collegati a eventi in tempo reale e batch.
+Una volta completato il modello di messaggio creato nell&#39;istanza di controllo, è possibile pubblicarlo su tutte le istanze di esecuzione. La pubblicazione consente di creare automaticamente due modelli di messaggio nell&#39;istanza di esecuzione, per l&#39;invio di messaggi collegati a eventi in tempo reale e batch.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ricorda di pubblicare il modello ogni volta che apporti modifiche per rendere effettive le modifiche durante la distribuzione dei messaggi transazionali.
 
@@ -34,15 +37,14 @@ Una volta completato il modello di messaggio creato nell&#39;istanza di controll
 
 1. Nell&#39;istanza di controllo, passare alla **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
 1. Selezionate il modello da pubblicare sulle istanze di esecuzione.
-1. Clic **[!UICONTROL Publication]** .
+1. Clic **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Al termine della pubblicazione, nella struttura dell&#39;istanza di produzione nella **[!UICONTROL Administration > Production > Message Center > Default > Transactional message templates]** cartella vengono creati entrambi i modelli di messaggio da applicare agli eventi batch e in tempo reale.
+Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare agli eventi batch e di tipo in tempo reale vengono creati nella struttura dell&#39;istanza di produzione nella **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** cartella.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
 >[!NOTE]
 >
 >Se si sostituisce un campo esistente del modello di messaggi transazionali, ad esempio l&#39;indirizzo del mittente, con un valore vuoto, il campo corrispondente nelle istanze di esecuzione non verrà aggiornato una volta che il messaggio transazionale sarà nuovamente pubblicato. Conterrà comunque il valore precedente. Tuttavia, se si aggiunge un valore non vuoto, il campo corrispondente verrà aggiornato normalmente dopo la pubblicazione successiva.
-
