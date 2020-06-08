@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ In genere, il salvataggio di una destinazione in un elenco indica la fine di un 
 
 ## Esempio: Aggiornamento elenco {#example--list-update}
 
-Nell&#39;esempio seguente, l&#39;attività di aggiornamento elenco segue una query che riguarda gli uomini che vivono in Francia oltre 30 anni. L&#39;elenco verrà creato inizialmente dai risultati della query. Viene quindi aggiornato ogni volta che viene avviato dal flusso di lavoro. Ad esempio, può essere utilizzato regolarmente per offerte promozionali mirate per le campagne.
+Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segue una query che riguarda gli uomini che vivono in Francia oltre 30 anni. L&#39;elenco verrà creato inizialmente dai risultati della query. Viene quindi aggiornato ogni volta che viene avviato dal flusso di lavoro. Ad esempio, può essere utilizzato regolarmente per offerte promozionali mirate per le campagne.
 
 1. Aggiungete un oggetto **[!UICONTROL list update activity]** direttamente dopo una query, quindi apritelo per modificarlo.
 
@@ -72,6 +75,4 @@ Identifica la popolazione da salvare nel gruppo.
 
 ## Parametri di output {#output-parameters}
 
-* groupId
-
-Identificatore gruppo.
+* groupId: Identificatore gruppo.
