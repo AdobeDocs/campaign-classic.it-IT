@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 7%
+source-wordcount: '2100'
+ht-degree: 8%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 7%
 + Note sulla versione {#release-notes}
    + [Ultima versione](rn/using/latest-release.md)
    + Versioni precedenti {#previous-releases}
+      + [Release 20.1](rn/using/release--20-1.md)
       + [Release 19.2](rn/using/release--19-2.md)
       + [Release 19.1](rn/using/release--19-1.md)
       + [Release 18.10](rn/using/release--18-10.md)
@@ -33,7 +34,7 @@ ht-degree: 7%
       + [Avvio di Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Area di lavoro di Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Domande frequenti {#faq}
-         + [Domande frequenti](platform/using/common-questions.md)
+         + [Domande comuni](platform/using/common-questions.md)
          + [Concetti chiave](platform/using/faq-key-concepts.md)
          + [Audiences](platform/using/faq-audiences.md)
          + [Messaggi di progettazione](platform/using/faq-designing.md)
@@ -127,6 +128,7 @@ ht-degree: 7%
       + [Contenuto condizionale](delivery/using/conditional-content.md)
       + [coupon personalizzati](delivery/using/personalized-coupons.md)
       + [Generazione di documenti PDF personalizzati](delivery/using/generating-personalized-pdf-documents.md)
+      + [Personalizzazione dell’elenco delle icone](delivery/using/customizing-emoticon-list.md)
    + Uso degli indirizzi seed {#using-seed-addresses}
       + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
       + [Creazione di indirizzi iniziali](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 7%
       + [Anteprima messaggi transazionali](message-center/using/transactional-message-preview.md)
       + [Invio di una prova](message-center/using/sending-a-proof.md)
       + [Pubblicazione modelli](message-center/using/template-publication.md)
+      + [Annullamento pubblicazione modello](message-center/using/template-unpublication.md)
    + Elaborazione evento {#event-processing}
       + [Informazioni sull&#39;elaborazione degli eventi](message-center/using/about-event-processing.md)
       + [Raccolta eventi](message-center/using/event-collection.md)
@@ -603,6 +606,7 @@ ht-degree: 7%
       + [Interazione - Buffer dati](installation/using/interaction---data-buffer.md)
    + Appendici {#appendices}
       + [Il file di configurazione del server](installation/using/the-server-configuration-file.md)
+      + [Endpoint di rete campagna](installation/using/campaign-network-endpoints.md)
       + [Linee di comando](installation/using/command-lines.md)
       + [Creazione di nuove istanze](installation/using/creating-new-instances.md)
       + [Elenco delle opzioni di Campaign Classic](installation/using/configuring-campaign-options.md)
