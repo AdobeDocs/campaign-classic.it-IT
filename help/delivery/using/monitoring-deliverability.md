@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,8 @@ Il pacchetto Deliverability consente di accedere a:
 
 Potete anche usare i seguenti strumenti:
 
-* Il **[!UICONTROL Delivery throughput]** rapporto fornisce una panoramica dell&#39;intero throughput della piattaforma per un determinato periodo di tempo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
-* Il **[!UICONTROL Technical deliverability monitoring]** rapporto include una serie di indicatori di qualità della distribuzione per la piattaforma. Per ulteriori informazioni, consulta [questa sezione](#technical-deliverability-monitoring).
+* Il **[!UICONTROL Delivery throughput]** rapporto fornisce una panoramica dell&#39;intero throughput della piattaforma per un determinato periodo di tempo. For more on this, see [this section](../../reporting/using/global-reports.md#delivery-throughput).
+* Il **[!UICONTROL Technical deliverability monitoring]** rapporto include una serie di indicatori di qualità della distribuzione per la piattaforma. For more on this, see [this section](#technical-deliverability-monitoring).
 * Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche sulla qualità dei dati e sulla reputazione che possono avere un impatto sulla tua recapito, inclusi i seguenti numeri:
    * **[!UICONTROL Hard bounces]** indicano la qualità dei dati. Tale numero dovrebbe essere inferiore al 2%.
    * **[!UICONTROL Soft bounces]** indica la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
@@ -70,7 +70,7 @@ Signal Spam è un servizio francese che offre un report anonimo sul loop di feed
 
 ## 250 ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di Adobe per la distribuzione, che fornisce informazioni su IP, elenchi di dominio e indicatori di reputazione.
+[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di Adobe per la distribuzione, che fornisce indicatori IP, di blacklist del dominio e di reputazione.
 
 Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza proattiva.
 
