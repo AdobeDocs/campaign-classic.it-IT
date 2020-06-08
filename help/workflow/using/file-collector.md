@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Il raccoglitore **** File controlla l&#39;arrivo di uno o più file in una direc
 
 Per impostazione predefinita, il raccoglitore file è un&#39;attività persistente che verifica la presenza di file nei momenti specificati dalla pianificazione.
 
-I file devono trovarsi sul server in cui viene eseguito il modulo wfserver responsabile del flusso di lavoro. Se più moduli wfserver vengono distribuiti su una singola istanza, è necessario specificare l&#39;affinità delle attività che utilizzano tali file o l&#39;affinità complessiva del flusso di lavoro.
+I file devono trovarsi sul server in cui viene eseguito il modulo wfserver responsabile del flusso di lavoro. Se più moduli wfserver vengono distribuiti su un&#39;unica istanza, è necessario specificare l&#39;affinità delle attività che utilizzano tali file o l&#39;affinità complessiva del flusso di lavoro.
 
 ## Proprietà {#properties}
 
@@ -74,7 +77,7 @@ La prima scheda dell&#39; **[!UICONTROL File collector]** attività consente di 
 
 1. **Storizzazione**
 
-   Fare riferimento al **[!UICONTROL File historization]** passaggio qui: Download [Web](../../workflow/using/web-download.md).
+   Fare riferimento al **[!UICONTROL File historization]** passaggio qui: [Download](../../workflow/using/web-download.md)Web.
 
 Impossibile determinare l&#39;ordine di elaborazione del file. Per elaborare un set di file in sequenza, utilizzate l&#39; **[!UICONTROL Stop as soon as a file has been processed]** opzione e create un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. L’ **[!UICONTROL Process file nonexistence]** opzione consente di terminare l’iterazione.
 
@@ -82,6 +85,4 @@ Impossibile determinare l&#39;ordine di elaborazione del file. Per elaborare un 
 
 ## Parametri di output {#output-parameters}
 
-* nomefile
-
-Nome file completo. Questo è il nome del file dopo che è stato spostato nella directory di cronologia. Il percorso è quindi diverso, ma il nome è diverso se nella directory esiste già un altro file con lo stesso nome. L&#39;estensione viene mantenuta.
+* nomefile: Nome file completo. Questo è il nome del file dopo che è stato spostato nella directory di cronologia. Il percorso è quindi diverso, ma il nome è diverso se nella directory esiste già un altro file con lo stesso nome. L&#39;estensione viene mantenuta.
