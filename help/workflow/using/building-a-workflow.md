@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1631'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Questa sezione descrive i principi chiave e le procedure ottimali per creare un 
 * Accesso e creazione di flussi di lavoro tecnici, consulta Flussi di lavoro [tecnici](#technical-workflows)
 * Utilizzare i modelli per creare flussi di lavoro, vedere Modelli di [flusso di lavoro](#workflow-templates)
 
-## Creazione di un nuovo flusso di lavoro {#creating-a-new-workflow}
+## Creating a new workflow {#creating-a-new-workflow}
 
 Dalla cartella **[!UICONTROL Explorer]**, accedete a una cartella del flusso di lavoro. Per impostazione predefinita, è possibile utilizzare **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
@@ -84,15 +84,13 @@ Creazione del diagramma
 
    Potete collegare automaticamente un&#39;attività alla precedente inserendo la nuova attività alla fine della transizione.
 
-1. Aggiungi le attività necessarie e collegale come mostrato nel diagramma seguente.
+1. Aggiungete le attività necessarie e collegatele come mostrato nel diagramma seguente.
 
    ![](assets/new-workflow-5.png)
 
 >[!CAUTION]
 >
 >Potete copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, non è consigliabile copiare le attività Incolla tra flussi di lavoro diversi. Alcune impostazioni associate ad attività quali Consegne e Utilità di pianificazione potrebbero causare conflitti ed errori durante l&#39;esecuzione del flusso di lavoro di destinazione. È stato invece consigliato di **duplicare** i flussi di lavoro. Per ulteriori informazioni, vedere [Duplicazione dei flussi di lavoro](#duplicating-workflows).
-
-### Opzioni di layout aggiuntive {#additional-layout-options}
 
 È possibile modificare la visualizzazione e il layout del grafico utilizzando i seguenti elementi:
 
@@ -136,7 +134,7 @@ Per una migliore comprensione delle attività e per migliorare la leggibilità d
 
 I flussi di lavoro di targeting consentono di creare diversi target di consegna. Potete creare query, definire unioni o esclusioni in base a criteri specifici, aggiungere la pianificazione, grazie alle attività del flusso di lavoro. Il risultato di questo targeting può essere trasferito automaticamente a un elenco che può fungere da destinazione delle azioni di consegna
 
-Oltre a queste attività, le opzioni di gestione dei dati consentono di manipolare i dati e accedere a funzioni avanzate per risolvere problemi di targeting complessi. Per ulteriori informazioni, consulta Gestione [](../../workflow/using/targeting-data.md#data-management)dati.
+Oltre a queste attività, le opzioni di gestione dei dati consentono di manipolare i dati e accedere a funzioni avanzate per risolvere problemi di targeting complessi. For more on this, refer to [Data Management](../../workflow/using/targeting-data.md#data-management).
 
 Tutte queste attività si trovano nella prima scheda del flusso di lavoro.
 
@@ -158,7 +156,7 @@ Le fasi di generazione dei dati di destinazione sono le seguenti:
 1. Per preparare i dati in base alle esigenze di consegna, fare riferimento a [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
 1. Per utilizzare i dati per eseguire aggiornamenti o per eseguire una consegna, fare riferimento a [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-I risultati di tutti gli arricchimenti e tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili in campi di personalizzazione, in particolare per la creazione di messaggi personalizzati. Per ulteriori informazioni, fai riferimento ai dati di [Target](../../workflow/using/data-life-cycle.md#target-data)
+I risultati di tutti gli arricchimenti e tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili in campi di personalizzazione, in particolare per la creazione di messaggi personalizzati. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
@@ -210,7 +208,7 @@ La **[!UICONTROL Campaign process]** sottocartella centralizza i flussi di lavor
 
 Puoi creare altri flussi di lavoro tecnici nel **[!UICONTROL Administration > Production > Technical workflows]** nodo della struttura ad albero. Tuttavia, questo processo è riservato agli utenti esperti.
 
-Le attività offerte sono le stesse che per i flussi di lavoro di targeting. Per ulteriori informazioni, consulta i passaggi [di](#implementation-steps-)implementazione.
+Le attività offerte sono le stesse che per i flussi di lavoro di targeting. For more on this, refer to [Implementation steps](#implementation-steps-).
 
 ## Modelli per flussi di lavoro {#workflow-templates}
 
