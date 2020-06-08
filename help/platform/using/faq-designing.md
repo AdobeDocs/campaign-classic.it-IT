@@ -14,7 +14,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Prima di iniziare a progettare le e-mail, scopri i concetti e le procedure ottim
 
 La configurazione e i parametri di consegna possono essere salvati in un modello di consegna per essere riutilizzati.
 
-Fai clic qui per saperne di più.
+[Fai clic qui per saperne di più](../../delivery/using/about-templates.md).
 
 ## Posso importare facilmente un HTML esistente per creare un&#39;e-mail in Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
