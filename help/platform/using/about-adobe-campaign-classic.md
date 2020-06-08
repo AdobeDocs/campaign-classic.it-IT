@@ -15,32 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: 3b04cf988f144b8bfb846aff83e97c9b3a82e6e0
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 0%
 
 ---
 
 
 # About Adobe Campaign Classic{#about-adobe-campaign-classic}
 
-Per offrire un elevato livello di coinvolgimento dei clienti e grandi esperienze, i marchi devono creare percorsi coerenti con i clienti a tutti i punti di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente le campagne di marketing su più canali, in modo da offrire un alto ritorno sugli investimenti di marketing e promuovere la fidelizzazione.
+Per offrire un elevato grado di coinvolgimento dei clienti e grandi esperienze, i marchi devono creare percorsi coerenti con i clienti a tutti i punti di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente le campagne di marketing su più canali, in modo da offrire un alto ritorno sugli investimenti di marketing e promuovere la fidelizzazione.
 
 Adobe Campaign consente di coordinare la creazione di campagne di marketing conversazionali. Adobe Campaign offre funzionalità innovative per modellare, semplificare e automatizzare i processi di comunicazione marketing e con i clienti.
 
 >[!NOTE]
 >
->Adobe Campaign Classic è disponibile nelle release v6.11 e v7. Eccetto quando indicato, i materiali di aiuto si applicano a entrambe le versioni, nella build più recente. Le schermate fanno riferimento a Campaign Classic v7.
+>Adobe Campaign Classic è disponibile nelle release v6.11 e v7. Eccetto quando indicato, i materiali di aiuto si applicano a entrambe le versioni, nella build più recente. Le schermate riflettono l&#39;interfaccia utente di Campaign Classic v7.
 
 ## Funzionalità chiave {#key-capabilities}
 
-Adobe Campaign offre una piattaforma per la progettazione di esperienze cliente multicanale e fornisce un ambiente per l&#39;orchestrazione visiva delle campagne, la gestione delle interazioni in tempo reale e l&#39;esecuzione tra canali.
+Adobe Campaign offre una piattaforma per la progettazione di esperienze cliente multicanale e fornisce un ambiente per l&#39;orchestrazione visiva delle campagne, la gestione delle interazioni in tempo reale e l&#39;esecuzione su più canali.
 
 Il ciclo di campagna di marketing in Adobe Campaign illustra le aree principali di funzionalità del prodotto:
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Integrated customer profile {#integrated-customer-profile}
+### Profilo cliente integrato {#integrated-customer-profile}
 
-Profili (clienti, potenziali clienti, abbonati a newsletter, ecc.) sono centralizzati nel database di Adobe Campaign. Esistono molti possibili meccanismi per acquisire i profili e creare questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi informativi. Con Adobe Campaign, puoi includere la cronologia di marketing, le informazioni sugli acquisti, le preferenze, i dati CRM ed eventuali dati PII pertinenti in una vista consolidata per analizzare e intraprendere azioni.
+Profili (clienti, potenziali clienti, abbonati a newsletter, ecc.) sono centralizzati nel database di Adobe Campaign. Esistono molti possibili meccanismi per l&#39;acquisizione dei profili e la creazione di questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi informativi. Con Adobe Campaign, puoi includere la cronologia di marketing, le informazioni sugli acquisti, le preferenze, i dati CRM ed eventuali dati PII pertinenti in una vista consolidata per analizzare e intraprendere azioni.
 
 In Adobe Campaign, i destinatari sono i profili predefiniti destinati all&#39;invio (e-mail, SMS ecc.). Grazie ai dati dei destinatari memorizzati nel database, potrai filtrare la destinazione che riceverà una determinata consegna e aggiungere dati di personalizzazione nei contenuti di distribuzione. Nel database sono presenti altri tipi di profili. Sono progettati per usi diversi. Ad esempio, i profili iniziali vengono creati per verificare le consegne prima che vengano inviati alla destinazione finale.
 
@@ -62,7 +65,7 @@ Attira l&#39;attenzione dei clienti e migliora i tassi di risposta grazie alla p
 
 ### Analisi e reporting {#analysis-and-reporting}
 
-Adobe Campaign consente di monitorare e interpretare il comportamento dei clienti arricchendo gradualmente i loro dati e profili. Gli strumenti di reporting e analisi consentono di sfruttare al meglio ogni nuova campagna, indirizzare meglio le iniziative di marketing e ottimizzarne l&#39;impatto e il ritorno sull&#39;investimento. Per ulteriori informazioni, consultare [questa pagina](../../reporting/using/delivery-reports.md) .
+Adobe Campaign consente di monitorare e interpretare il comportamento dei clienti arricchendo gradualmente i loro dati e profili. Gli strumenti di reporting e analisi consentono di sfruttare al meglio ogni nuova campagna, di indirizzare meglio le iniziative di marketing e di ottimizzarne l&#39;impatto e il ritorno sull&#39;investimento. Per ulteriori informazioni, consultare [questa pagina](../../reporting/using/delivery-reports.md) .
 
 ### Integrazioni Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
@@ -70,7 +73,7 @@ Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gesti
 
 ## Funzionalità di base e componenti aggiuntivi {#core-capabilities-and-add-ons}
 
-Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing di conversione in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall&#39;installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: Descrizione [prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)Adobe Campaign Classic.
+Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing di conversione in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall&#39;installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Descrizione](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)prodotto Adobe Campaign Classic.
 
 Sono disponibili le seguenti funzionalità. A seconda del contratto di licenza, alcune di queste funzionalità possono essere disponibili o meno nell&#39;istanza.
 
