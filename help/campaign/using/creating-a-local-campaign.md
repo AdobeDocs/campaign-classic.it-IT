@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -164,14 +167,14 @@ Salvate il modello di campagna. Ora puoi utilizzarlo dalla visualizzazione dei p
 >
 >I modelli delle campagne e la relativa configurazione generale sono descritti in dettaglio nei modelli [delle](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
 
-## Creazione del pacchetto campagna {#creating-the-campaign-package}
+## Creazione del pacchetto della campagna {#creating-the-campaign-package}
 
 Affinché il modello di campagna diventi disponibile per le entità locali, deve essere aggiunto all&#39;elenco. Per fare questo, l&#39;agenzia centrale deve creare un nuovo pacchetto.
 
 Effettuate le seguenti operazioni:
 
 1. Nella **[!UICONTROL Navigation]** sezione della pagina **Campagne** fare clic sul **[!UICONTROL Campaign packages]** collegamento.
-1. Fate clic sul **[!UICONTROL Create]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Create]**. 
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -185,7 +188,7 @@ Effettuate le seguenti operazioni:
 
 Le date di inizio e fine definiscono il periodo di visibilità della campagna nell&#39;elenco dei pacchetti della campagna.
 
-La data di disponibilità è la data in cui la campagna diventerà disponibile per le entità locali (per ordine).
+La data di disponibilità è la data in cui la campagna diventerà disponibile per le entità locali (per l&#39;ordine).
 
 >[!CAUTION]
 >
@@ -195,9 +198,9 @@ Queste informazioni sono contenute nel messaggio di notifica inviato alle agenzi
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
-### Audience {#audience}
+### Pubblico {#audience}
 
-Per una campagna locale, l&#39;entità centrale può specificare le entità locali coinvolte controllando l&#39; **[!UICONTROL Limit the package to a set of local entities]**.
+Per una campagna locale, l&#39;entità centrale può specificare le entità locali coinvolte controllando l&#39;evento **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
@@ -223,7 +226,7 @@ Dalla **[!UICONTROL General]** scheda, l&#39;entità centrale può:
 
 ### Notifications {#notifications}
 
-Quando una campagna diventa disponibile o quando viene raggiunta la scadenza di registrazione, viene inviato un messaggio agli operatori del gruppo di notifiche locale. Per ulteriori informazioni, vedere [Entità](../../campaign/using/about-distributed-marketing.md#organizational-entities)organizzative.
+Quando una campagna diventa disponibile o quando viene raggiunta la scadenza di registrazione, viene inviato un messaggio agli operatori del gruppo di notifiche locale. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Ordinamento di una campagna {#ordering-a-campaign}
 
@@ -251,9 +254,9 @@ Per ordinare una campagna:
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-   Completare i parametri disponibili e approvare l&#39;ordine.
+1. Completare i parametri disponibili e approvare l&#39;ordine.
 
-   Una notifica viene inviata al manager dell&#39;entità organizzativa alla quale l&#39;entità locale appartiene, per approvare l&#39;ordine.
+1. Una notifica viene inviata al manager dell&#39;entità organizzativa alla quale l&#39;entità locale appartiene, per approvare l&#39;ordine.
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
@@ -273,9 +276,9 @@ Per ordinare una campagna:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Per ulteriori informazioni, consulta la sezione [Approvazione](#approval-process) .
+   Per ulteriori informazioni, consulta la sezione relativa al processo [di](#approval-process) approvazione.
 
-1. L&#39;operatore locale riceve una notifica della disponibilità della campagna: la disponibilità delle campagne è disponibile nell&#39;elenco dei pacchetti delle campagne all&#39;interno dell&#39;universo **Campagne** . La campagna può quindi essere utilizzata. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md).
+1. L&#39;operatore locale riceve una notifica della disponibilità della campagna: la disponibilità delle campagne è disponibile nell&#39;elenco dei pacchetti delle campagne all&#39;interno dell&#39;universo **Campagne** . La campagna può quindi essere utilizzata. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
    L&#39; **[!UICONTROL Start targeting with order approval]** opzione consente all&#39;entità locale di eseguire la campagna non appena l&#39;ordine è stato approvato.
 
@@ -285,7 +288,7 @@ Per ordinare una campagna:
 
 Per confermare un ordine di campagna, l&#39;entità centrale deve approvarlo.
 
-La **[!UICONTROL Campaign orders]** panoramica, accessibile tramite l&#39;universo **Campagne** , consente di visualizzare lo stato degli ordini delle campagne e di approvarli.
+La **[!UICONTROL Campaign orders]** panoramica, a cui si accede tramite l&#39;universo **Campagne** , consente di visualizzare lo stato degli ordini delle campagne e di approvarli.
 
 >[!NOTE]
 >
@@ -307,7 +310,7 @@ Quando una campagna viene ordinata da un&#39;entità locale, i relativi revisori
 
 #### Approvazione tramite la console Adobe Campaign {#approving-via-the-adobe-campaign-console}
 
-L’ordine può essere approvato anche tramite la console, nella panoramica dell’ordine della campagna. Per approvare un ordine, selezionatelo e fate clic **[!UICONTROL Approve the order]**.
+L’ordine può essere approvato anche tramite la console, nella panoramica dell’ordine della campagna. Per approvare un ordine, selezionatelo e fate clic su **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +324,7 @@ Una volta approvato, l&#39;ordine di campagna può essere configurato ed eseguit
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md).
+For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
 ### Rifiuto di un&#39;approvazione {#rejecting-an-approval}
 
@@ -331,7 +334,7 @@ L&#39;operatore incaricato dell&#39;approvazione può rifiutare un ordine o un p
 
 Se il revisore rifiuta un ordine, la notifica corrispondente viene inviata automaticamente alle entità locali interessate: visualizza il commento immesso dall&#39;operatore che ha rifiutato l&#39;approvazione.
 
-Le informazioni vengono visualizzate nella pagina dell&#39;elenco dei pacchetti campagna o nella pagina dell&#39;ordine della campagna. Se hanno accesso alla console di Adobe Campaign, le entità locali vengono informate di questo rifiuto.
+Le informazioni vengono visualizzate nella pagina dell&#39;elenco dei pacchetti della campagna o nella pagina dell&#39;ordine della campagna. Se hanno accesso alla console di Adobe Campaign, le entità locali vengono informate di questo rifiuto.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
