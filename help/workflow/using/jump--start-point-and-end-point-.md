@@ -15,16 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 4994aff9f2db36a519a9c7af2864393713eb65e3
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
 
 # Jump (punto iniziale e punto finale){#jump-start-point-and-end-point}
 
-**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare uno con transizioni di attraversamento.
+**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di uno con transizioni di attraversamento.
 
-Gli jump sono transizioni senza frecce: Passano da un&#39;attività all&#39;altra, come nell&#39;esempio seguente.
+Gli jump sono transizioni senza frecce.
+
+Passano da un&#39;attività all&#39;altra, come nell&#39;esempio seguente:
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
