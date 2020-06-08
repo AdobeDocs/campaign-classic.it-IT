@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7db84fc951234cb6257d8e41615ba7fc5b2c6f77
+source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+workflow-type: tm+mt
+source-wordcount: '3589'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +35,7 @@ La sezione seguente descrive le configurazioni lato server che possono essere es
 
 Per ulteriori informazioni, consultare le sezioni seguenti:
 
-* [Documentazione del Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+* [Documentazione per il Pannello di controllo](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
 * [Matrice delle funzionalità locali e ospitate di Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Passaggi di configurazione per modelli ibridi ed ospitati](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
@@ -202,7 +205,7 @@ Gli indirizzi IP dei proxy che possono accedere al server Adobe Campaign devono 
 </securityZone>
 ```
 
-### Collegamento di una zona di protezione a un operatore {#linking-a-security-zone-to-an-operator}
+### Collegamento di un’area di sicurezza a un operatore {#linking-a-security-zone-to-an-operator}
 
 Una volta definite le zone, ogni operatore deve essere collegato a uno di essi per poter accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;operatore deve essere incluso negli indirizzi o nell&#39;intervallo di indirizzi a cui si fa riferimento nella zona.
 
@@ -340,16 +343,16 @@ A questo scopo, eseguire i seguenti passaggi:
 
 ## Autorizzazioni URL {#url-permissions}
 
-Elenco predefinito di URL che possono essere richiamati dai codici JavaScript (flussi di lavoro, ecc.) le istanze Campaign Classic sono limitate. Si tratta di URL che consentono il corretto funzionamento delle istanze.
+L’elenco predefinito di URL che possono essere richiamati tramite codici JavaScript (flussi di lavoro, ecc.) dalle istanze Campaign Classic è limitato. Si tratta di URL che consentono il corretto funzionamento delle istanze.
 
-Per impostazione predefinita, le istanze non possono connettersi agli URL esterni. Tuttavia, è possibile aggiungere alcuni URL esterni all’elenco degli URL autorizzati, in modo che l’istanza possa connettersi a tali URL. Questo consente di collegare le istanze Campaign a sistemi esterni come, ad esempio, server SFTP o siti Web per abilitare il trasferimento di file e/o dati.
+Per impostazione predefinita, le istanze non possono connettersi a URL esterni. Tuttavia, è possibile aggiungere alcuni URL esterni all’elenco degli URL autorizzati, in modo che l’istanza possa connettersi a tali URL. Questo consente di connettere le istanze Campaign a sistemi esterni, ad esempio server SFTP o siti Web, per abilitare il trasferimento di file e/o dati.
 
-Una volta aggiunto l’URL, viene fatto riferimento al file di configurazione dell’istanza (serverConf.xml).
+Una volta aggiunto l’URL, viene inserito un suo riferimento nel file di configurazione dell’istanza (serverConf.xml).
 
 I metodi utilizzati per gestire le autorizzazioni URL dipendono dal modello di hosting:
 
 * **Ibrido** o **locale**: aggiungete gli URL da consentire nel file **** serverConf.xml. Informazioni dettagliate sono disponibili nella sezione seguente.
-* **Ospitato**: aggiungete gli URL per consentire l’accesso al **Pannello** di controllo. Per ulteriori informazioni, consulta la documentazione [](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html)dedicata.
+* **Ospitato**: aggiungete gli URL per consentire l’accesso al **Pannello** di controllo. Per ulteriori informazioni, consulta la [documentazione dedicata](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/url-permissions.html).
 
 Con i modelli di hosting **ibridi** e **locali** , l&#39;amministratore deve fare riferimento a un nuovo **urlPermission** nel file **serverConf.xml** . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -517,7 +520,7 @@ Le risorse pubbliche sono presentate in [Gestione delle risorse](../../installat
 
 Sono memorizzati nella directory **/var/res/instance** della directory di installazione di Adobe Campaign.
 
-L’URL corrispondente è: **http://server/res/instance** dove **instance** è il nome dell’istanza di tracciamento.
+L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell’istanza di tracciamento.
 
 È possibile specificare un&#39;altra directory aggiungendo un nodo al file **conf-`<instance>`.xml** per configurare la memorizzazione sul server. Questo significa aggiungere le seguenti righe:
 
@@ -611,9 +614,11 @@ Se devi collegare il server Campaign all&#39;esterno tramite un proxy (ad esempi
 
 >[!NOTE]
 >
+>A partire dalla versione 20.2, i parametri del protocollo HTTP e HTTPS non sono più disponibili. Le seguenti informazioni fanno ancora riferimento a questi parametri, poiché rimangono disponibili per le build precedenti, incluso 9032.
+>
 >I proxy SOCKS non sono supportati.
 
-Utilizzate il comando seguente:
+Usa il comando seguente:
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
