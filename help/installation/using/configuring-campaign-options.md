@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3903'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,18 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMask</span> <br /> </td> 
    <td> Consente di definire la sintassi dell'indirizzo Da utilizzato per l'invio di un messaggio.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> Consente di definire un limite di timeout (in secondi) per ricevere una risposta dal server durante il recupero di un'immagine scaricata da un URL personalizzato e collegata a un'e-mail. Se questo valore viene superato, il messaggio non può essere inviato. The default value is 60 seconds.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadImageSize</span> <br /> </td> 
+   <td> Consente di definire la dimensione massima (in byte) consentita per un'immagine scaricata da un URL personalizzato e collegata a un'e-mail. Il valore predefinito è 100.000 byte. Quando si invia una prova e si scaricano le immagini per elaborare l'e-mail, se le dimensioni di un'immagine superano questo valore o se si verifica un problema di download, nei registri di consegna verrà visualizzato un errore e la consegna della prova non riuscirà.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendationsAttachments</span> <br /> </td> 
+   <td> Consente di impostare un numero massimo di allegati in un modello e-mail o e-mail transazionali. Se questo valore viene superato, nei registri di analisi della consegna o durante la pubblicazione del modello di e-mail transazionale viene visualizzato un avviso. Il valore predefinito è 1 allegato.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
@@ -639,7 +651,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L'opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto.</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L'opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto.</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Leggi tutto</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -676,7 +688,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
     <ul> 
      <li> <p> <span class="uicontrol">Tipo di dati:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Valore (testo)</span> : 1 </p> </li> 
-    </ul> Questa opzione deve essere utilizzata solo se la struttura di navigazione out-of-the-box ha subito troppe modifiche.<br /> Per ulteriori informazioni, consulta <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">questa sezione</a>.<br /> </td> 
+    </ul> Questa opzione deve essere utilizzata solo se la struttura di navigazione out-of-the-box ha subito troppe modifiche.<br /> Per ulteriori informazioni al riguardo, consulta <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStateCoalesce</span> <br /> </td> 
