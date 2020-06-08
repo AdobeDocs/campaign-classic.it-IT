@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +34,7 @@ L&#39;elenco completo delle soluzioni e dei servizi di base Adobe che possono es
 
 >[!CAUTION]
 >
->La maggior parte di queste integrazioni richiede l&#39;accesso tramite un Adobe ID (IMS). Per ulteriori informazioni su questa implementazione, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
+>La maggior parte di queste integrazioni richiede l&#39;accesso tramite un Adobe ID (IMS). For more on this implementation, refer to [this page](../../integrations/using/about-adobe-id.md).
 >
 >L&#39;implementazione IMS è un processo complesso, che può essere lungo. È strettamente riservato agli amministratori tecnici Adobe.
 
@@ -96,10 +99,6 @@ La seguente tabella consente di accedere alla documentazione di integrazione di 
   <tr> 
    <td> <strong>Adobe Analytics - Connettori dati</strong><br /> </td> 
    <td> <strong>I connettori</strong> dati (precedentemente noti come Adobe Genesis) consentono ad Adobe Campaign e Adobe Analytics di interagire attraverso i segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail distribuite da Adobe Campaign ad Adobe Analytics - Connettore dati.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Ulteriori</a> informazioni sull'integrazione Campaign - Connettori dati.</p><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>Adobe Campaign Standard</strong> (offerta Prime)<br /> </td> 
-   <td> Consente di replicare i dati su <strong>Campaign Standard</strong>, unendo il meglio di entrambe le applicazioni. Campaign Classic v7 dispone di strumenti avanzati per gestire il database di marketing principale. La replica dei dati di Campaign Classic v7 consente a Campaign Standard di sfruttare i dati avanzati in un ambiente semplice da utilizzare.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Ulteriori</a> informazioni sull'integrazione di Adobe Campaign Classic - Adobe Campaign Standard.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
