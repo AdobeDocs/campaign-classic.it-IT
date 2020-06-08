@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
@@ -72,7 +72,7 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
 
 1. Dalla **[!UICONTROL Admin]** scheda, selezionare **[!UICONTROL Data Connectors]**.
 
-   Per accedere al **[!UICONTROL Data Connectors]** menu è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. Per ulteriori informazioni, consulta questa [pagina](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
+   Per accedere al **[!UICONTROL Data Connectors]** menu è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. For more on this, refer to this [page](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/analytics-tools.html)
    * Integrazioni (Crea)
    * Integrazioni (aggiornamento)
    * Integrazioni (Elimina)
