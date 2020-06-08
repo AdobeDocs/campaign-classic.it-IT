@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 0%
 
 ---
 
@@ -145,13 +148,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Invia le consegne utilizzando il canale del telefono con Adobe Campaign.<br /> </td> 
    <td> Tutto<br /> </td> 
    <td> Facoltativo</td> 
-  </tr> 
-  <tr> 
-   <td> Canale fax<br /> </td> 
-   <td> Invia le consegne tramite il canale fax con Adobe Campaign.<br /> </td> 
-   <td> Tutto<br /> </td> 
-   <td> Facoltativo</td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> Canale app mobile<br /> </td> 
    <td> Utilizza la piattaforma Adobe Campaign per inviare notifiche personalizzate ai terminali iOS e Android tramite app. <br /> </td> 
