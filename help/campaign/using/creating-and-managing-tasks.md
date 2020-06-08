@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '3737'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +29,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente all&#39;interno dell&#39;applicazione. L&#39;implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o ai fornitori di servizi esterni. Questa modalità di funzionamento consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 
-Le attività possono essere create, visualizzate e monitorate dall’elenco delle attività o dal dashboard della campagna. Possono inoltre essere visualizzati e tracciati nei programmi del piano di marketing, dei programmi e delle campagne.
+Le attività possono essere create, visualizzate e monitorate dall’elenco delle attività o dal dashboard della campagna. Possono inoltre essere visualizzati e tracciati nelle pianificazioni del piano di marketing, dei programmi e delle campagne.
 
 Le attività sono associate alla campagna e possono avere dipendenze, ad esempio attività associate. Ogni attività ha uno stato, una priorità, un carico stimato e i relativi costi.
 
-Tutte le attività sono raggruppate in un elenco accessibile tramite l&#39;universo **Campagne** . Per ulteriori informazioni, vedere [Accesso alle attività](#accessing-tasks).
+Tutte le attività sono raggruppate in un elenco accessibile tramite l&#39;universo **Campagne** . For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 Possono essere visualizzati nella programmazione del programma a cui appartengono.
 
@@ -60,7 +63,7 @@ Fare clic su un&#39;attività per modificarla.
 
 ![](assets/s_ncs_user_task_edit_from_view.png)
 
-## Creazione di una nuova attività {#creating-a-new-task}
+## Creating a new task {#creating-a-new-task}
 
 Per creare un&#39;attività, fare clic sul **[!UICONTROL Tasks]** collegamento nell&#39;universo Campagne e selezionare **[!UICONTROL Create]**.
 
@@ -82,7 +85,7 @@ Una volta creata, l&#39;attività viene aggiunta alla pianificazione della campa
 
 Per configurarlo, dovete indicare:
 
-* Il manager e i partecipanti: fare riferimento a [Manager e partecipanti](#manager-and-participants).
+* Il manager e i partecipanti: fare riferimento al [manager e ai partecipanti](#manager-and-participants).
 * Pianificazione della creazione: fare riferimento al programma [di](#execution-schedule)esecuzione.
 * I costi impegnati: fare riferimento a [Spese e ricavi](#expenses-and-revenues).
 
@@ -108,7 +111,7 @@ Le opzioni selezionate vengono visualizzate tramite l’ **[!UICONTROL Resources
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
-Fare clic **[!UICONTROL Ok]** e quindi inserire il tasso di utilizzo: rappresenta il carico assegnato all&#39;operatore per la durata dell&#39;esecuzione dell&#39;attività. Questo tasso è solo indicativo ed è espresso in percentuale.
+Fare clic su **[!UICONTROL Ok]** e quindi inserire il tasso di utilizzo: rappresenta il carico assegnato all&#39;operatore per la durata dell&#39;esecuzione dell&#39;attività. Questo tasso è solo indicativo ed è espresso in percentuale.
 
 Ad esempio, per un&#39;attività la cui pianificazione di esecuzione è impostata su 10 giorni, un operatore il cui tasso di utilizzo è pari al 50% verrà mobilitato su questa attività per la metà del suo orario di lavoro per i 10 giorni.
 
@@ -142,7 +145,7 @@ La persona incaricata del compito può assegnare a se stessa il compito di appro
 
 ### Documenti a cui si fa riferimento {#documents-referenced}
 
-È possibile aggiungere documenti e risorse di marketing a un&#39;attività (per ulteriori informazioni, consulta [Gestione delle risorse](../../campaign/using/managing-marketing-resources.md)di marketing). A tale scopo, aprire l&#39;attività e fare clic sull&#39; **[!UICONTROL Documents]** icona nella barra degli strumenti dell&#39;attività.
+È possibile aggiungere documenti e risorse di marketing a un&#39;attività (per ulteriori informazioni, consulta [Gestione delle risorse](../../campaign/using/managing-marketing-resources.md)di marketing). A tal fine, aprite l&#39;attività e fate clic sull&#39; **[!UICONTROL Documents]** icona nella barra degli strumenti dell&#39;attività.
 
 Fare clic **[!UICONTROL Add]** e selezionare il documento da aggiungere all&#39;attività. Applica lo stesso processo alle risorse di marketing.
 
@@ -180,7 +183,7 @@ Per ulteriori informazioni, fare riferimento allo stato di [avanzamento di un&#3
 
 ### Spese e ricavi {#expenses-and-revenues}
 
-È possibile definire le spese correlate e le entrate previste per ogni attività. Questi saranno calcolati e quindi consolidati per la campagna alla quale è allegato l&#39;attività.
+È possibile definire le spese correlate e le entrate previste per ogni attività. Questi verranno calcolati e quindi consolidati per la campagna alla quale è associata l&#39;attività.
 
 Per specificare queste informazioni, fare clic sull’ **[!UICONTROL Expenses and revenue]** icona nella barra degli strumenti delle attività.
 
@@ -216,15 +219,15 @@ Quando un provider di servizi è selezionato, viene visualizzato nel dashboard a
 
 ### Operazioni ritardate {#late-tasks}
 
-Un&#39;attività è in ritardo se ha raggiunto la data di fine senza che lo stato cambi in **[!UICONTROL Finished]**. Per impostazione predefinita, nessun operatore viene avvertito quando un&#39;attività è in ritardo. Potete configurare la distribuzione di un messaggio e-mail di notifica: tutti gli operatori possono essere informati anche se non partecipano all&#39;attività.
+Un&#39;attività è in ritardo se ha raggiunto la data di fine senza che lo stato cambi in **[!UICONTROL Finished]**. Per impostazione predefinita, nessun operatore viene avvertito quando un&#39;attività è in ritardo. Potete configurare la distribuzione di un messaggio e-mail di notifica: tutti gli operatori possono essere informati anche se non sono coinvolti nell&#39;attività.
 
-Passare alla **[!UICONTROL Resources]** casella e aggiungere l&#39;operatore al **[!UICONTROL Assignation]** campo. Per inviare notifiche a più utenti, selezionate un gruppo di operatori.
+Passare alla **[!UICONTROL Resources]** casella e aggiungere l&#39;operatore al **[!UICONTROL Assignation]** campo. Per inviare una notifica a più utenti, selezionate un gruppo di operatori.
 
 ![](assets/mrm_task_alert_if_late.png)
 
 ### Notifiche iniziali {#initial-notifications}
 
-Quando crei o modifichi un&#39;attività con una data di inizio futura, Adobe Campaign offre di inviare un&#39;e-mail alla persona responsabile dell&#39;attività per informarla dell&#39;inizio.
+Quando crei o modifichi un&#39;attività con una data di inizio futura, Adobe Campaign offre di inviare un&#39;e-mail alla persona responsabile dell&#39;attività per informarla al momento dell&#39;inizio.
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -274,10 +277,10 @@ Quando create attività tramite una campagna, potete creare attività specifiche
 
 È possibile pianificare le attività seguenti:
 
-* **[!UICONTROL Control task]**, fare riferimento alle attività [di](#control-tasks)controllo,
-* **[!UICONTROL Marketing resource creation task]**, fare riferimento all&#39;attività [di](#grouping-task)raggruppamento,
-* **[!UICONTROL Grouping task]**, fare riferimento all&#39;attività [di](#grouping-task)raggruppamento,
-* **[!UICONTROL Notification task]**, fare riferimento all&#39;attività [](#notification-task)Notifica.
+* [attività](#control-tasks)di controllo,
+* [Attività](#grouping-task)di raggruppamento,
+* [Attività](#grouping-task)di raggruppamento,
+* [Attività](#notification-task)di notifica.
 
 >[!NOTE]
 >
@@ -356,7 +359,7 @@ Tuttavia, se è già stata creata un&#39;attività che si desidera collegare a u
 
 ### Attività di notifica {#notification-task}
 
-Le attività di notifica consentono di pianificare le consegne tramite e-mail (a un operatore, a un gruppo di operatori, a un fornitore di servizi, ecc.). Questo consente di pianificare promemoria, ad esempio per informare un utente che una campagna è in fase di completamento o per inviare documenti prima dell’inizio di una campagna in modo che gli operatori possano prepararla. Questo significa che puoi tenere traccia delle comunicazioni all&#39;interno della campagna o del programma e controllare da vicino le azioni eseguite.
+Le attività di notifica consentono di pianificare le consegne tramite e-mail (a un operatore, a un gruppo di operatori, a un fornitore di servizi, ecc.). Questo consente di pianificare promemoria, ad esempio per informare un utente che una campagna è in fase di completamento o per inviare documenti prima dell’inizio di una campagna in modo che gli operatori possano prepararla. Ciò significa che puoi tenere traccia delle comunicazioni all’interno della campagna o del programma e controllare più da vicino le azioni eseguite.
 
 #### Ciclo di vita {#life-cycle}
 
@@ -421,7 +424,7 @@ Inoltre, se posticipate la fine di un&#39;attività padre, alcune delle attivit�
 
 Un&#39;attività padre pianificata per terminare il 9 ottobre alle ore 17.00 dispone di due attività figlio, l&#39;attività A e l&#39;attività B. L&#39;inizio dell&#39;attività A è previsto per il 10 ottobre alle ore 14 e l&#39;inizio dell&#39;attività B è previsto per il 12 ottobre alle ore 8.
 
-Rimandiamo l&#39;attività principale: ora si conclude l&#39;11 ottobre alle 13. Solo l&#39;attività A è rinviata e inizierà l&#39;11 ottobre alle 13.
+Rimandiamo l&#39;attività principale: ora si conclude l&#39;11 ottobre alle 13. Solo l&#39;attività A è stata rimandata e inizierà l&#39;11 ottobre alle 13.
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -447,17 +450,17 @@ Un&#39;attività può essere: **[!UICONTROL Scheduled]**, **[!UICONTROL In progr
 
 ### Stato di avanzamento di un&#39;attività {#progress-status-of-a-task}
 
-Oltre allo stato di esecuzione, un&#39;attività può essere associata a uno stato di avanzamento: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** o **[!UICONTROL To do this week]**. Queste informazioni vengono inserite automaticamente in base alla programmazione delle attività.
+Oltre al relativo stato di esecuzione, un&#39;attività può essere associata a uno stato di avanzamento: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** o **[!UICONTROL To do this week]**. Queste informazioni vengono inserite automaticamente in base alla programmazione delle attività.
 
 È possibile filtrare l&#39;elenco delle attività in base allo stato di avanzamento o di processo.
 
-Per ulteriori informazioni, vedere [Accesso alle attività](#accessing-tasks).
+For more on this, refer to [Accessing tasks](#accessing-tasks).
 
 ### Ciclo di vita completo delle attività {#complete-task-life-cycle}
 
 Di seguito sono riportate le fasi di un ciclo completo di vita dell&#39;attività per le quali la persona responsabile ha definito partecipanti e revisori.
 
-1. Il responsabile crea l&#39;attività ed entra nei vari campi. Per ulteriori informazioni, vedere [Creazione di una nuova attività](#creating-a-new-task).
+1. La persona incaricata crea l&#39;attività ed entra nei vari campi. Per ulteriori informazioni, vedere [Creazione di una nuova attività](#creating-a-new-task).
 
    Quando create e modificate un&#39;attività **pianificata in futuro** (fino a quando la data di inizio dell&#39;attività non viene raggiunta), è possibile inviare una notifica ai partecipanti e ai manager per informarli che è stata pianificata una nuova attività.
 
@@ -491,7 +494,7 @@ Di seguito sono riportate le fasi di un ciclo completo di vita dell&#39;attivit�
 
    >[!NOTE]
    >
-   >Il responsabile di un&#39;attività può chiuderla in qualsiasi momento, anche se mancano le approvazioni. Lo stato di avanzamento cambia automaticamente a 100%.
+   >La persona responsabile di un&#39;attività può chiuderla in qualsiasi momento, anche se mancano le approvazioni. Lo stato di avanzamento cambia automaticamente a 100%.
 
 1. Lo stato dell&#39;attività cambia in **[!UICONTROL To approve]**, e viene inviata una notifica al revisore.
 
