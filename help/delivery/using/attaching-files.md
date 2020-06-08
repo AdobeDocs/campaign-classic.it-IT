@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,13 @@ ht-degree: 0%
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
-Potete allegare uno o più file a una consegna e-mail. Esistono due casi possibili:
+Potete allegare uno o più file a una consegna e-mail.
+
+>[!NOTE]
+>
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
+Esistono due casi possibili:
 
 * Selezionare un file e allegarlo alla consegna così come è.
 * Personalizza il contenuto dell&#39;allegato per ciascun destinatario. In questo caso, è necessario creare un allegato **** calcolato: il nome dell&#39;allegato viene calcolato al momento della consegna per ciascun messaggio, a seconda del destinatario. Se disponete dell&#39;opzione Stampa **digitale** variabile, i contenuti possono essere personalizzati e convertiti in formato PDF al momento della distribuzione.
@@ -45,7 +51,7 @@ Per allegare un file locale a una consegna, procedere come segue.
 >Potete allegare più file a una consegna. Gli allegati possono essere in qualsiasi formato, incluso in formato compresso.
 
 1. Fate clic sul **[!UICONTROL Attachments]** collegamento.
-1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Add]**. 
 1. Fare clic **[!UICONTROL File...]** per selezionare il file da allegare alla consegna.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -92,7 +98,7 @@ Se l&#39;allegato è un file locale, selezionare l&#39;opzione: **[!UICONTROL Fi
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   Il file è quindi disponibile sul server per essere allegato alle diverse consegne create da questo modello.
+Il file è quindi disponibile sul server per essere allegato alle diverse consegne create da questo modello.
 
 ### Collegamento di un messaggio personalizzato {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ Per questo tipo di allegato, eseguire i seguenti passaggi di configurazione:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>Per evitare problemi di prestazioni, se includete come allegati immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+
 ### Collegamento di un file calcolato {#attach-a-calculated-file}
 
 È possibile calcolare il nome dell&#39;allegato durante la preparazione della consegna. A questo scopo, selezionare l&#39;opzione **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
@@ -131,7 +141,7 @@ Per questo tipo di allegato, eseguire i seguenti passaggi di configurazione:
 1. Specificare l&#39;etichetta da applicare all&#39;allegato.
 1. Specificate il percorso di accesso del file e il nome esatto nella finestra di definizione.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Il file deve essere presente sul server.
 
@@ -152,11 +162,11 @@ Quando si seleziona l&#39;allegato, è possibile scegliere l&#39;opzione **[!UIC
 >Questa opzione viene utilizzata solo quando la consegna viene inviata da un processo esterno o da un flusso di lavoro.
 
 1. Specificare l&#39;etichetta da applicare all&#39;allegato.
-1. Specificate il percorso di accesso del file e il nome esatto nella finestra di definizione. Se il nome del file è personalizzato, puoi usare i campi Personalizzazione per i valori pertinenti.
+1. Specificate il percorso di accesso del file e il nome esatto nella finestra di definizione. Se il nome del file è personalizzato, puoi usare i campi Personalizzazione per i valori rilevanti.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Il file deve essere presente sul server.
 
