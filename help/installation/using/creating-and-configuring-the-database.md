@@ -69,7 +69,7 @@ A seconda del motore di database selezionato, le informazioni di identificazione
 * Per un motore **PostgreSQL** o **DB2** , è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server dell&#39;applicazione per accedere al server del database.
 * Per un motore **Microsoft SQL Server** , è necessario definire:
 
-   1. il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database: **DNS** o **DNS\`<instance>`**(modalità di istanza),
+   1. il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database: **DNS** o **DNS\ `<instance>`**(modalità di istanza),
    1. il metodo di autenticazione utilizzato per accedere a Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** o **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
