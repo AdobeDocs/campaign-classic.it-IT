@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Diversi stati sono elencati in [questa pagina](#delivery-statuses).
 
 ### Tracking logs {#tracking-logs}
 
-La **[!UICONTROL Tracking]** scheda elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento dei messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte di Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
+La **[!UICONTROL Tracking]** scheda elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti al tracciamento per  Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
 
 >[!NOTE]
 >
@@ -95,9 +95,9 @@ Dal dashboard di distribuzione, è necessario controllare i messaggi elaborati e
 Alcuni indicatori o lo stato possono essere errati o non aggiornati. Questo problema può essere risolto con le seguenti soluzioni:
 
 * Se lo stato di consegna non è corretto, verifica che siano state effettuate tutte le approvazioni necessarie per la consegna oppure che i flussi di lavoro **[!UICONTROL operationMgt]** e **[!UICONTROL deliveryMgt]** di lavoro siano in esecuzione senza errori. Ciò può anche essere dovuto al recapito tramite un&#39;affinità non configurata nell&#39;istanza di invio.
-* Se gli indicatori di consegna sono ancora pari a zero e se siete in una configurazione mid-sourcing, controllate il flusso di lavoro **[!UICONTROL Mid-sourcing (delivery counters)]** tecnico. Avviatelo se il suo stato non è **[!UICONTROL Started]**. Puoi quindi provare a calcolare nuovamente gli indicatori facendo clic con il pulsante destro del mouse sulla distribuzione desiderata in Adobe Campaign Explorer e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
-* Se il contatore di consegna non corrisponde alla consegna, prova a calcolare gli indicatori facendo clic con il pulsante destro del mouse sulla consegna desiderata in Adobe Campaign Explorer e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** per eseguire nuovamente la sincronizzazione. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
-* Se il contatore di distribuzione non è aggiornato per le distribuzioni di mid-sourcing, verificare che il flusso di lavoro **[!UICONTROL Mid-Sourcing (Delivery counters)]** tecnico sia in esecuzione. Per ulteriori informazioni, consultare questa [pagina](../../installation/using/mid-sourcing-deployment.md).
+* Se gli indicatori di consegna sono ancora pari a zero e se siete in una configurazione mid-sourcing, controllate il flusso di lavoro **[!UICONTROL Mid-sourcing (delivery counters)]** tecnico. Avviatelo se il suo stato non è **[!UICONTROL Started]**. Potete quindi provare a calcolare gli indicatori facendo clic con il pulsante destro del mouse sulla consegna desiderata nell&#39;elenco di  Adobe Campaign e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Se il contatore di consegna non corrisponde alla consegna, provare a calcolare gli indicatori facendo clic con il pulsante destro del mouse sulla consegna desiderata nell&#39;elenco di cartelle del Adobe Campaign  e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** per eseguire nuovamente la sincronizzazione. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Se il contatore di distribuzione non è aggiornato per le distribuzioni di mid-sourcing, verificare che il flusso di lavoro **[!UICONTROL Mid-Sourcing (Delivery counters)]** tecnico sia in esecuzione. For more on this, refer to this [page](../../installation/using/mid-sourcing-deployment.md).
 
 Puoi anche tenere traccia delle consegne con diversi rapporti tramite la dashboard di distribuzione. For more on this, refer to this [section](../../reporting/using/delivery-reports.md).
 
@@ -109,20 +109,20 @@ Se le prestazioni di consegna sono sbagliate, è possibile controllare:
 
 * **Dimensioni della consegna**: Il completamento delle consegne di grandi dimensioni può richiedere più tempo. Gli elementi figlio MTA sono configurati per gestire una dimensione batch predefinita, che funziona per la maggior parte delle istanze, ma devono essere controllati quando le consegne sono costantemente lente.
 * **Destinazione della consegna**: Il divieto di prestazioni di consegna è influenzato da errori di rimbalzo soft, che vengono gestiti in base alla configurazione del nuovo tentativo. Maggiore è il numero di errori, maggiori saranno i tentativi necessari.
-* **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può risentirne. È inoltre possibile controllare la reputazione dell&#39;IP e i problemi di recapito. Per ulteriori informazioni, consulta la guida [sulle procedure ottimali per la](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) distribuzione di Adobe Campaign e a [questa pagina](../../delivery/using/about-deliverability.md).
+* **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può risentirne. È inoltre possibile controllare la reputazione dell&#39;IP e i problemi di recapito. Per ulteriori informazioni, consulta  guida [sulle procedure ottimali per la](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) realizzazione di Adobi Campaign e consulta [questa pagina](../../delivery/using/about-deliverability.md).
 
-La manutenzione di piattaforme e database può anche influire sulle prestazioni di invio delle consegne. For more on this, refer to [this page](../../production/using/database-performances.md).
+La manutenzione di Platform e del database può anche influire sulle prestazioni di invio delle consegne. For more on this, refer to [this page](../../production/using/database-performances.md).
 
 ### Consegne lente {#slow-deliveries}
 
 Dopo aver fatto clic sul **[!UICONTROL Send]** pulsante, la consegna sembra richiedere più tempo del solito. Ciò può essere causato da diversi elementi:
 
-* Alcuni provider di posta elettronica potrebbero avere inserito in blacklist i tuoi indirizzi IP. In questo caso, controlla i tuoi blog e consulta [questa guida introduttiva](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente, questo potrebbe verificarsi con una personalizzazione JavaScript elevata o se il volume di consegna supera i 60 Kbyte. Per informazioni sulle linee guida per la [distribuzione dei contenuti, consulta le best practice](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) per la distribuzione di Adobe Campaign.
-* Potrebbe essersi verificata una limitazione nell&#39;MTA di Adobe Campaign. Ciò è causato da:
+* Alcuni provider di posta elettronica potrebbero aver aggiunto gli indirizzi IP a un elenco di blocchi. In questo caso, controlla i tuoi registri di trasmissione e consulta [questa sezione](../../delivery/using/about-deliverability.md).
+* La consegna potrebbe essere troppo grande per essere elaborata rapidamente, questo potrebbe verificarsi con una personalizzazione JavaScript elevata o se il volume di consegna supera i 60 Kbyte. Per informazioni sulle linee guida relative ai contenuti, fare riferimento  best practice [per la](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) distribuzione dei Adobi Campaign.
+* Potrebbe essersi verificata una limitazione all&#39;interno dell&#39;MTA del Adobe Campaign . Ciò è causato da:
 
    * Messaggi aperti (**[!UICONTROL quotas met]** messaggio): sono state rispettate le quote dichiarate dalle regole dichiarative MX definite in Campaign. Per ulteriori informazioni su questo messaggio, consulta [questa pagina](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Per ulteriori informazioni sulle regole MX, consultare [questa pagina](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): Campaign MTA ha rilevato degli errori quando si tenta di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore eccessiva e quindi di fronte a potenziali blacklist.
+   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): MTA campagna ha rilevato degli errori durante il tentativo di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore troppo grande e quindi di fronte a un potenziale elenco di blocchi.
 
 * Un problema del sistema può impedire ai server di interagire tra loro: questo può rallentare l&#39;intero processo di invio. Controlla i server per assicurarti che non ci siano problemi di memoria o di risorse che possano avere un impatto su Campaign, ad esempio nel processo di ottenimento dei dati di personalizzazione.
 
@@ -166,7 +166,7 @@ Durante l&#39;invio di una consegna, sul dashboard di consegna potresti avere il
   </tr> 
   <tr> 
    <td> Ignorato<br /> </td> 
-   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. È stato inserito in blacklist, in quarantena, non fornito o duplicato. <br /> </td> 
+   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. È stato aggiunto a un elenco di blocchi, messo in quarantena, non fornito o duplicato. <br /> </td> 
   </tr> 
   <tr> 
    <td> Inviato<br /> </td> 
@@ -203,7 +203,7 @@ Durante l&#39;invio di una consegna, sul dashboard di consegna potresti avere il
  </tbody> 
 </table>
 
-Per informazioni su come ottimizzare la recapito dei messaggi e-mail di Adobe Campaign, consulta la Guida [alle procedure ottimali per la](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) distribuzione di Adobe Campaign e [questa pagina](../../delivery/using/about-deliverability.md).
+Per informazioni su come ottimizzare la recapito dei messaggi e-mail  Adobe Campaign, consultare  Guida alle procedure ottimali per la [distribuzione dei Adobi Campaign](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) e consultare [questa pagina](../../delivery/using/about-deliverability.md).
 
 ### Stato in sospeso {#pending-status}
 
@@ -262,7 +262,7 @@ I registri di consegna sono la chiave per capire perché una consegna non è riu
 
    Per risolvere questo problema, controllate i dati di personalizzazione utilizzati, quindi verificate se nel target sono presenti più voci per i destinatari con più di una voce per ciascuno di questi campi. Potete inoltre utilizzare un&#39; **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consultare [questa pagina](../../workflow/using/deduplication.md).
 
-* Alcune consegne potrebbero non riuscire con un errore &quot;Impossibile da raggiungere&quot; che indica: &quot;Rimbalzo e-mail in entrata (la regola &#39;Auto_answer&#39; ha trovato la stessa corrispondenza). Ciò significa che la consegna è riuscita, ma Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad es. una risposta &quot;Fuori sede&quot;) che corrispondeva alle regole e-mail in entrata &#39;Auto_answer&#39;. L&#39;e-mail di risposta automatica viene ignorata da Adobe Campaign e l&#39;indirizzo del destinatario non verrà inviato alle quarantena.
+* Alcune consegne potrebbero non riuscire con un errore &quot;Impossibile da raggiungere&quot; che indica: &quot;Rimbalzo e-mail in entrata (la regola &#39;Auto_answer&#39; ha trovato la stessa corrispondenza). Ciò significa che la consegna è riuscita, ma  Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad es. una risposta &quot;Fuori sede&quot;) che corrispondeva alle regole e-mail in entrata &#39;Auto_answer&#39;. L&#39;e-mail di risposta automatica viene ignorata dal  Adobe Campaign e l&#39;indirizzo del destinatario non verrà inviato alle quarantena.
 
 **Argomenti correlati:**
 
