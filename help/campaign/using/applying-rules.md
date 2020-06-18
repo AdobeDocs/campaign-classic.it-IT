@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+workflow-type: tm+mt
+source-wordcount: '980'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ Per applicare le regole di tipologia create, è necessario associarle a una tipo
    >
    >La tipologia può essere definita nel modello di consegna, da applicare automaticamente a tutte le consegne create utilizzando questo modello.
 
-## Definizione delle condizioni di applicazione {#defining-application-conditions}
+## Definizione delle condizioni dell&#39;applicazione {#defining-application-conditions}
 
 È possibile limitare il campo applicazione di una regola in base alle proprie esigenze (ad eccezione delle regole di controllo).
 
@@ -59,7 +62,7 @@ Quindi utilizzate l&#39;editor di query per definire le condizioni di filtro. Ne
 
 >[!NOTE]
 >
->Per filtrare le regole, potete selezionare la condizione di applicazione dei criteri di filtro: possono dipendere dalla consegna o dal profilo di consegna. Per ulteriori informazioni, vedere [Condizionamento di una regola](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)di filtro.
+>Per le regole di filtro, potete selezionare la condizione di applicazione dei criteri di filtro: possono dipendere dalla consegna o dal profilo di consegna. Per ulteriori informazioni, vedere [Condizionamento di una regola](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule)di filtro.
 
 ## Regolazione della frequenza di calcolo {#adjusting-calculation-frequency}
 
@@ -84,7 +87,7 @@ In modalità operativa standard, le regole vengono applicate nella sequenza segu
 1. Regole di controllo, se applicate all&#39;inizio del targeting.
 1. Regole di filtro:
 
-   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo non verificato / indirizzo inserito in una lista nera / indirizzo messo in quarantena / qualità indirizzo.
+   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo non verificato / indirizzo nell&#39;elenco dei blocchi / indirizzo messo in quarantena / qualità indirizzo.
    * Regole di filtro definite dall&#39;utente.
    * Regola di deduplicazione sull&#39;indirizzo o sull&#39;identificatore (applicata se necessario).
 
@@ -139,7 +142,7 @@ Come opzione, potete utilizzare il **[!UICONTROL Managing affinities with IP add
 >[!NOTE]
 >
 >La gestione dell&#39;affinità non si applica alle **[!UICONTROL Filtering]** tipologie.\
->Le affinità sono definite nel file di configurazione dell&#39;istanza sul server Adobe Campaign. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+>Le affinità sono definite nel file di configurazione dell&#39;istanza, sul server del Adobe Campaign . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/about-initial-configuration.md).
 
 ### Ottimizzazione delle campagne e marketing distribuito {#campaign-optimization-and-distributed-marketing}
 
