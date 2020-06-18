@@ -1,6 +1,6 @@
 ---
-title: Monitoraggio della recapito in Adobe Campaign Classic
-description: Scopri gli strumenti e le linee guida sul monitoraggio della recapito in Adobe Campaign Classic.
+title: Monitoraggio della recapito in  Adobe Campaign Classic
+description: Scopri gli strumenti e le linee guida per il monitoraggio della recapito in  Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Monitoraggio del recapito messaggi{#monitoring-deliverability}
 
-Di seguito troverai informazioni dettagliate sui diversi strumenti di monitoraggio forniti da Adobe Campaign, nonché alcune linee guida aggiuntive sul monitoraggio della recapito.
+Qui di seguito troverai informazioni sui diversi strumenti di monitoraggio forniti dal Adobe Campaign  e alcune linee guida aggiuntive sul monitoraggio della recapito.
 
 ## Strumenti di monitoraggio {#monitoring-tools}
 
-Utilizza le funzionalità offerte da Adobe Campaign per monitorare la recapito della tua piattaforma.
+Utilizzate le funzionalità offerte  Adobe Campaign per monitorare la conformità della piattaforma.
 
 Il pacchetto Deliverability consente di accedere a:
 
@@ -58,7 +58,7 @@ Seguono alcune linee guida aggiuntive sul monitoraggio della recapito:
 * Controllate ogni throughput di distribuzione per assicurarvi che sia coerente con la validità del contenuto di distribuzione (ad es. Le vendite flash devono essere consegnate in minuti, non in giorni).
 * Quando si utilizzano [le onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verificare che ogni onda disponga di tempo sufficiente per terminare prima che venga attivata la successiva.
 * Verificate che il numero di errori e di nuove [quarantena](../../delivery/using/understanding-quarantine-management.md) siano coerenti con altre consegne.
-* Consultate attentamente i registri [di](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) consegna per verificare il tipo di errori evidenziati (lista grigia o nera, problemi DNS, regole anti-spam, ecc.).
+* Consultate attentamente i registri [di](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) consegna per verificare il tipo di errori evidenziati (elenchi di blocchi, problemi DNS, regole anti-spam, ecc.).
 
 ## Spam segnale {#signal-spam}
 
@@ -70,31 +70,31 @@ Signal Spam è un servizio francese che offre un report anonimo sul loop di feed
 
 ## 250 ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di Adobe per la distribuzione, che fornisce indicatori IP, di blacklist del dominio e di reputazione.
+[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di recapito di Adobe che fornisce elenchi di blocchi IP e di dominio e indicatori di reputazione.
 
 Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza proattiva.
 
 ## Rapporto di monitoraggio sulla realizzazione tecnica {#technical-deliverability-monitoring}
 
-Il rapporto di monitoraggio della recapito tecnico viene aggiornato ogni giorno e disponibile accedendo a **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e facendo clic sul **[!UICONTROL Technical monitoring]** collegamento dalla scheda Adobe Campaign **[!UICONTROL Home]** . Include una serie di indicatori di qualità della distribuzione per la piattaforma.
+Il rapporto di monitoraggio della recapito tecnico viene aggiornato ogni giorno e disponibile accedendo a **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e facendo clic sul **[!UICONTROL Technical monitoring]** collegamento dalla scheda Adobe Campaign  **[!UICONTROL Home]** . Include una serie di indicatori di qualità della distribuzione per la piattaforma.
 
 Questi indicatori vengono aggiornati ogni giorno alle 9.
 
 >[!NOTE]
 >
->Inoltre, potete ricevere un rapporto giornaliero via e-mail all&#39;indirizzo specificato. Inviaci l&#39;indirizzo e-mail richiesto tramite e-mail o tramite Adobe Campaign Extranet.
+>Inoltre, potete ricevere un rapporto giornaliero via e-mail all&#39;indirizzo specificato. Inviateci l&#39;indirizzo e-mail richiesto tramite e-mail o tramite l&#39;Extranet  Adobe Campaign.
 
 ![](assets/s_tn_del_monitoring.png)
 
 Nella relazione sono utilizzati i seguenti indicatori:
 
-* **[!UICONTROL Reverse DNS]** : Adobe Campaign verifica se per un indirizzo IP è stato specificato un DNS inverso e che questo indichi correttamente l&#39;IP.
+* **[!UICONTROL Reverse DNS]** :  Adobe Campaign verifica se per un indirizzo IP viene fornito un DNS inverso e che questo indichi correttamente l&#39;IP.
 
 * **[!UICONTROL SPF]** (Framework per i criteri di invio): Meccanismo di autenticazione che consente agli ISP e ai fornitori di cassette postali di verificare se il mittente e-mail è autorizzato nel dominio di invio.
 
 * **[!UICONTROL DomainKeys]** : Un servizio sviluppato da Yahoo e destinato a certificare l&#39;identità di un mittente di posta elettronica.
 
-* **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni blocklist per cattiva reputazione. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc. Adobe Campaign elabora attualmente controlli rispetto agli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
+* **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni di elenchi di blocchi per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro le RBL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
 
