@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 # Il file di configurazione del server{#the-server-configuration-file}
 
-La configurazione globale di Adobe Campaign è definita nel file **serverConf.xml** , che si trova nella directory **conf** della directory di installazione. In questa sezione sono elencati tutti i diversi nodi e parametri del file **serverConf.xml** .
+La configurazione globale di  Adobe Campaign è definita nel file **serverConf.xml** , che si trova nella directory **conf** della directory di installazione. In questa sezione sono elencati tutti i diversi nodi e parametri del file **serverConf.xml** .
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Di seguito sono elencati i diversi parametri del nodo **dataStore** . Qui si tro
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> File autorizzati da scaricare separati da ','. La stringa deve essere un'espressione Java regolare valida. Consultate <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Limitazione dei file</a>caricabili.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ Per ulteriori informazioni, vedere [Limitazione dei comandi](../../installation/
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
-   <td> Percorso del file contenente i comandi da inserire nella blacklist. <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> Percorso del file contenente i comandi da aggiungere all'elenco allow. <br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
@@ -907,7 +907,7 @@ Di seguito sono elencati i diversi parametri del nodo **threadPool** .
 
 Di seguito sono elencati i diversi parametri del nodo **urlPermission** . Questo è l&#39;elenco di URL a cui il codice JavaScript può accedere.
 
-Elenco di domini ed espressioni regolari che specificano se un URL rilevato nel codice JavaScript può o meno essere utilizzato dal server Adobe Campaign.
+Elenco di domini ed espressioni regolari che specificano se un URL rilevato nel codice JavaScript può o meno essere utilizzato dal server di Adobe Campaign .
 
 Se non è possibile trovare l’URL, l’azione predefinita viene eseguita, in base alla modalità predefinita specificata.
 
@@ -1179,7 +1179,7 @@ Ecco i diversi parametri del nodo **inMail** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Verifica nome istanza: se true, il nome dell'istanza Adobe Campaign contenuta nelle intestazioni Message-ID deve essere lo stesso dell'istanza corrente. <br /> </td> 
+   <td> Verifica nome istanza: se true, il nome dell'istanza del Adobe Campaign  contenuta nelle intestazioni Message-ID deve essere uguale all'istanza corrente. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -2053,7 +2053,7 @@ Ecco i diversi parametri del nodo **tubato** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> puntatoreFlushMessageCount<br /> </td> 
-   <td> Il puntatore viene memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
+   <td> Il puntatore viene memorizzato nel database ogni volta che viene elaborato questo numero di messaggi.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Per ulteriori informazioni, vedere Protezione [dinamica delle pagine, relè](../
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono 'normal' (esecuzione normale), 'blacklist' (blacklist url in caso di errore 404) e 'spare' (caricamento di file sul server di riserva, se esistente).<br /> </td> 
+   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono 'normal' (esecuzione normale), 'blocklist' (url aggiunto all'elenco dei blocchi in caso di errore 404) e 'spare' (caricamento di file sul server di riserva, se esistente).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ Configurazione predefinita:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
@@ -3219,7 +3219,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificatore organizzazione IMS: identificatore univoco dell’organizzazione in Adobe Marketing Cloud, utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
+   <td> Identificatore organizzazione IMS: identificatore univoco dell’organizzazione all’interno del Adobe Marketing Cloud , utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
