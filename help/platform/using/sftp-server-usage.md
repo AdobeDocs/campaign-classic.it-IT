@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 2%
 
 ---
 
@@ -32,9 +35,9 @@ Per evitare tali problemi, Adobe consiglia di seguire le best practice riportate
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, potete monitorare l&#39;archiviazione del server SFTP tramite il Pannello [di](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html)controllo di Campaign Classic.
+>Se l&#39;istanza è ospitata su AWS, è possibile monitorare l&#39;archiviazione del server SFTP con il Pannello [di](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html)controllo di Campaign Classic.
 >
->Per verificare se l’istanza è in hosting su AWS, segui i passaggi descritti in [questa sezione](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) .
+>Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) .
 
 * Le dimensioni del server variano a seconda della licenza. In ogni caso, mantenete i dati minimi possibili e mantenete i dati per tutto il tempo necessario (15 giorni è il limite massimo).
 * Per evitare la scadenza della password, utilizzare l&#39;autenticazione basata sulle chiavi anziché l&#39;autenticazione tramite password (le password hanno un periodo di validità di 90 giorni). Inoltre, l&#39;autenticazione basata sulle chiavi consente di generare più chiavi, ad esempio per la gestione di più entità. Al contrario, l&#39;autenticazione tramite password richiede la condivisione della password con tutte le entità gestite.
@@ -47,7 +50,7 @@ Per evitare tali problemi, Adobe consiglia di seguire le best practice riportate
 * Talvolta, effettuate l’accesso a SFTP per verificare direttamente ciò che vi si trova.
 * Ricorda che la gestione del disco SFTP è principalmente una tua responsabilità.
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l’identificatore. Quando create delle cartelle a cui Campaign deve accedere, accertatevi di configurarle con diritti di lettura/scrittura per l&#39;intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
-* Gli IP pubblici da cui si sta tentando di avviare la connessione SFTP devono essere inseriti nella white list dell&#39;istanza Campaign. La whitelist degli indirizzi IP può essere richiesta tramite un ticket [di](https://support.neolane.net)supporto.
+* Gli IP pubblici da cui si sta tentando di avviare la connessione SFTP devono essere aggiunti all&#39;elenco di autorizzazione nell&#39;istanza Campaign. L&#39;aggiunta di indirizzi IP all&#39;elenco di indirizzi consentiti può essere richiesta tramite un ticket [di](https://support.neolane.net)supporto.
 
 >[!CAUTION]
 >
@@ -89,7 +92,7 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di as
 
    Se la porta non è aperta, accertatevi di aprire le connessioni in uscita sul vostro lato, quindi riprovate. Se i problemi di connessione persistono, condividete l&#39;output del comando con il team di assistenza Adobe.
 
-1. Verificate che l&#39;IP pubblico da cui state tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per la creazione di una whitelist.
+1. Verificate che l&#39;IP pubblico da cui state tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per l&#39;elenco di autorizzazioni.
 1. Se utilizzate un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). È quindi vivamente consigliato l&#39;utilizzo di un&#39;autenticazione basata sulle chiavi (consultate Best practice [per il server](#sftp-server-best-practices)SFTP).
 1. Se utilizzate un&#39;autenticazione basata su chiave, verificate che la chiave in uso sia la stessa che avete fornito al team di supporto Adobe per la configurazione dell&#39;istanza.
 1. Se si utilizza FileZilla o uno strumento FTP equivalente, fornire i dettagli dei log di connessione nel ticket di supporto.
