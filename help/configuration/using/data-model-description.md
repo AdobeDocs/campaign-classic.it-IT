@@ -1,6 +1,6 @@
 ---
-title: Descrizione del modello di dati Adobe Campaign Classic
-description: Questo documento descrive il modello dati di Adobe Campaign Classic.
+title: Descrizione modello dati classico  Adobe Campaign
+description: In questo documento viene descritto il modello di dati  Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Descrizione modello dati campagna{#data-model-description}
 
-Adobe Campaign viene fornito con un modello dati predefinito. Questa sezione fornisce alcuni dettagli sulle tabelle integrate del modello dati di Adobe Campaign e sulla loro interazione.
+ Adobe Campaign viene fornito con un modello dati predefinito. In questa sezione vengono fornite informazioni dettagliate sulle tabelle integrate del modello dati del Adobe Campaign  e sulla relativa interazione.
 
 Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla **[!UICONTROL Documentation]** scheda.
 
@@ -31,19 +31,19 @@ Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin
 
 >[!NOTE]
 >
->La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
+>La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Obbedisce a una grammatica specifica  Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi  Adobe Campaign, consultate [questa sezione](../../configuration/using/about-schema-reference.md).
 
 ## Descrizione delle tabelle principali {#description-main-tables}
 
-Adobe Campaign si basa su un database relazionale contenente tabelle collegate tra loro.
+ Adobe Campaign si basa su un database relazionale contenente tabelle collegate tra loro.
 
-Il diagramma seguente mostra i join tra le principali tabelle aziendali del modello dati di Adobe Campaign con i campi principali per ciascuna tabella.
+Il diagramma seguente mostra i join tra le principali tabelle aziendali del modello dati del Adobe Campaign  con i campi principali per ciascuna tabella.
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-Il modello dati di Adobe Campaign predefinito include le tabelle principali elencate di seguito.
+Il modello di dati  Adobe Campaign predefinito include le tabelle principali elencate di seguito.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -55,9 +55,9 @@ Si tratta della tabella predefinita utilizzata per i **destinatari delle consegn
 * iEmailFormat: formato preferenziale per le e-mail (1 per Testo, 2 per HTML e 0 per non definito).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity sono utilizzati per costruire l&#39;indirizzo postale (in conformità con lo standard XPZ 10-011 AFNOR dal maggio 1997).
 * sPhone, sMobilePhone, sFax contengono rispettivamente i numeri di telefono, telefono cellulare e fax.
-* iBlackList è il flag di rifiuto predefinito utilizzato per i profili (1 significa &quot;non iscritto&quot;, 0 in caso contrario).
+* iBlockList è il flag di rifiuto predefinito utilizzato per i profili (1 significa &quot;non iscritto&quot;, 0 in caso contrario).
 
-Il campo iFolderId è la chiave esterna che collega il destinatario alla propria cartella di esecuzione. Per ulteriori informazioni, consulta [XtkFolder](#XtkFolder).
+Il campo iFolderId è la chiave esterna che collega il destinatario alla propria cartella di esecuzione. For more on this, see [XtkFolder](#XtkFolder).
 
 Il campo sCountryCode è il codice ISO alfa 2 3166-1 (2 caratteri) del paese associato al destinatario. Questo campo è in realtà una chiave esterna nella tabella di riferimento del paese (NmsCountry), che contiene le etichette del paese e altri dati del codice del paese. Se il paese non è popolato, il valore XX viene memorizzato (e viene utilizzato al posto di un record con ID zero).
 
@@ -67,7 +67,7 @@ Per ulteriori informazioni sulla tabella Destinatario, consulta [questa sezione]
 
 Questa tabella corrisponde allo schema **nms:group** .
 
-Consente di creare gruppi **statici di destinatari**. Esiste una relazione molti-a-molti tra i destinatari e i gruppi. Ad esempio, un destinatario può appartenere a diversi gruppi e un gruppo può contenere più destinatari. I gruppi possono essere creati manualmente, tramite un&#39;importazione o mediante il targeting delle consegne. I gruppi vengono spesso utilizzati come destinazioni di consegna. Nel campo è presente un indice univoco che rappresenta il nome interno del gruppo sName. Il gruppo è collegato a una cartella (la chiave è iFolderId). Per ulteriori informazioni, vedere [XtkFolder](#XtkFolder)).
+Consente di creare gruppi **statici di destinatari**. Esiste una relazione molti-a-molti tra i destinatari e i gruppi. Ad esempio, un destinatario può appartenere a diversi gruppi e un gruppo può contenere più destinatari. I gruppi possono essere creati manualmente, tramite un&#39;importazione o mediante il targeting delle consegne. I gruppi vengono spesso utilizzati come destinazioni di consegna. Nel campo è presente un indice univoco che rappresenta il nome interno del gruppo sName. Il gruppo è collegato a una cartella (la chiave è iFolderId). For more on this, see [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -77,11 +77,11 @@ La tabella delle relazioni NmsRcpGrpRel contiene solo i due campi corrispondenti
 
 Questa tabella corrisponde allo schema **nms:service** .
 
-In Adobe Campaign, puoi creare e gestire le iscrizioni ai servizi di informazione (argomenti). La tabella NmsService memorizza la definizione dei servizi di informazione (argomenti) a cui si offre ai destinatari di iscriversi (ad esempio una newsletter).
+In  Adobe Campaign, potete creare e gestire le iscrizioni ai servizi di informazione (argomenti). La tabella NmsService memorizza la definizione dei servizi di informazione (argomenti) a cui si offre ai destinatari di iscriversi (ad esempio una newsletter).
 
 I servizi sono entità simili ai gruppi (raggruppamenti di destinatari statici), con la differenza che circolano più informazioni e consentono una gestione semplice delle sottoscrizioni e degli annullamento delle sottoscrizioni tramite i moduli.
 
-Nel campo è presente un indice univoco che rappresenta il nome interno del servizio sName. Il servizio è collegato a una cartella (la chiave è iFolderId). Per ulteriori informazioni, vedere [XtkFolder](#XtkFolder)). Infine, il campo iType specifica il canale di consegna del servizio (0 per e-mail, 1 per SMS, 2 per telefono, 3 per posta diretta e 4 per fax).
+Nel campo è presente un indice univoco che rappresenta il nome interno del servizio sName. Il servizio è collegato a una cartella (la chiave è iFolderId). For more on this, see [XtkFolder](#XtkFolder)). Infine, il campo iType specifica il canale di consegna del servizio (0 per e-mail, 1 per SMS, 2 per telefono, 3 per posta diretta e 4 per fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -101,7 +101,7 @@ Questa tabella corrisponde allo schema **nms:delivery** .
 
 Ogni record in questa tabella rappresenta un&#39;azione **di** consegna o un modello **di** consegna. Contiene tutti i parametri necessari per eseguire le consegne (target, contenuto, ecc.). I registri di consegna (trasmissione) (NmsBroadLog) e gli URL di tracciamento associati (NmsTrackingUrl) vengono creati durante la fase di analisi (vedere di seguito per ulteriori dettagli su entrambe le tabelle).
 
-Nel campo è presente un indice univoco che rappresenta il nome interno della consegna sInternalName o dello scenario. La consegna è collegata a una cartella di esecuzione (la chiave esterna è iFolderProcessId. Per ulteriori informazioni, vedere [XtkFolder](#XtkFolder)).
+Nel campo è presente un indice univoco che rappresenta il nome interno della consegna sInternalName o dello scenario. La consegna è collegata a una cartella di esecuzione (la chiave esterna è iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
@@ -259,7 +259,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 Questo insieme di tabelle è collegato al canale **app** mobile, che consente di inviare notifiche personalizzate ai terminali iOS e Android tramite app. Per ulteriori informazioni, consulta [Informazioni sul canale](../../delivery/using/about-mobile-app-channel.md)delle app mobili.
 
-* **NmsMobileApp**: Questa tabella corrisponde allo schema **nms:mobileApp** . Contiene le applicazioni mobili definite in Adobe Campaign.
+* **NmsMobileApp**: Questa tabella corrisponde allo schema **nms:mobileApp** . Contiene le applicazioni mobili definite in  Adobe Campaign.
 * **NmsAppSubscription**: Questa tabella corrisponde allo schema **nms:appSubscription** . Contiene le informazioni degli abbonati relative a una o più applicazioni.
 * **NmsAppSubscriptionRcp**: Questa tabella corrisponde allo schema **nms:appSubscriptionRcp** . Consente di collegare i visitatori che hanno effettuato l’iscrizione a un’applicazione alla tabella dei destinatari.
 * **NmsExcludeLogAppSubRcp**: Questa tabella corrisponde allo schema **nms:excludeLogAppSubRcp** .
