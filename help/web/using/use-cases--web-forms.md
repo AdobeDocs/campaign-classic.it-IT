@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
@@ -51,13 +54,13 @@ I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Poiché i destinatari della consegna non hanno confermato l&#39;approvazione, vengono comunque inseriti in blacklist nel database. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello per indirizzare i destinatari in lista nera.
+1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nell&#39;elenco dei blocchi del database. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello ai destinatari di destinazione che si trovano nell&#39;elenco dei blocchi.
 
    A tale scopo, fare clic sulla **[!UICONTROL Exclusions]** scheda.
 
-1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** opzione.
+1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** opzione.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
+   <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
    >[!CAUTION]
    >
@@ -83,7 +86,7 @@ Il flusso di lavoro del modulo Web includerà le seguenti attività:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
-A questo scopo, effettuate le seguenti operazioni:
+Per farlo, segui la procedura indicata di seguito:
 
 1. Creare un modulo Web e scegliere il modello **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
@@ -109,10 +112,10 @@ A questo scopo, effettuate le seguenti operazioni:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   La prima **[!UICONTROL Script]** attività includerà i destinatari della blacklist fino a quando non avranno confermato la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
+   La prima **[!UICONTROL Script]** attività aggiunge i destinatari all’elenco dei blocchi fino a quando non confermano la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
 
    ```
-   ctx.recipient.@blackList=1
+   ctx.recipient.@blockList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +123,7 @@ A questo scopo, effettuate le seguenti operazioni:
    La seconda **[!UICONTROL Script]** attività autorizza l&#39;invio agli utenti e la sottoscrizione alla newsletter. Le ultime due righe dello script consentiranno di trasferire i destinatari dalla cartella temp a un&#39;altra cartella e di riconciliarsi con i profili esistenti non appena avranno confermato l&#39;iscrizione.
 
    ```
-   ctx.recipient.@blackList=0
+   ctx.recipient.@blockList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -168,11 +171,11 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
-   Gli viene comunicato tramite messaggio nel loro browser che la loro richiesta è stata presa in considerazione.
+   Gli viene comunicato tramite un messaggio nel loro browser che la loro richiesta è stata presa in considerazione.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   L&#39;utente viene aggiunto al database di Adobe Campaign nella **[!UICONTROL Temp]** cartella e il suo profilo viene inserito in blacklist finché non conferma l&#39;iscrizione tramite e-mail.
+   L’utente viene aggiunto al database del Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto all’elenco dei blocchi fino a quando non conferma la propria iscrizione tramite e-mail.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -184,9 +187,9 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
-   In Adobe Campaign, il profilo utente viene aggiornato:
+    Adobe Campaign, il profilo utente viene aggiornato:
 
-   * non sono più in lista nera,
+   * non sono più nell&#39;elenco dei blocchi,
    * sono iscritti al servizio informazioni.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
