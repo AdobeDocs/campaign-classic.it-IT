@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -39,11 +42,11 @@ ISP come AOL, Gmail, Microsoft e Yahoo! visualizzate i messaggi non associati co
 
 ## Come si dovrebbe affrontare l&#39;inattività? {#how-should-you-approach-inactivity-}
 
-Fortunatamente, i clienti che usano la piattaforma Adobe Campaign possono visualizzare l&#39;inattività nella propria istanza visualizzando i dati aperti e facendo clic in base al segmento. Poiché il mancato coinvolgimento può ostacolare la consegna, il primo pensiero può essere quello di rimuovere semplicemente gli abbonati dal database. In alcuni casi, tuttavia, questa potrebbe rivelarsi un&#39;opzione sbagliata. Di conseguenza, una strategia di riimpegno (nota anche come &quot;win back&quot;) è la migliore raccomandazione per mantenere gli abbonati interessati a ricevere posta, e gradualmente eliminare quelli che non mostrano più attività.
+Fortunatamente, i clienti che usano la piattaforma di Adobe Campaign  possono visualizzare l&#39;inattività all&#39;interno della propria istanza rivedendo i dati aperti e facendo clic su in base al segmento. Poiché il mancato coinvolgimento può ostacolare la consegna, il primo pensiero può essere quello di rimuovere semplicemente gli abbonati dal database. In alcuni casi, tuttavia, questa potrebbe rivelarsi un&#39;opzione sbagliata. Di conseguenza, una strategia di riimpegno (nota anche come &quot;win back&quot;) è la migliore raccomandazione per mantenere gli abbonati interessati a ricevere la posta, e gradualmente eliminare quelli che non mostrano più attività.
 
 ## Le campagne di recoinvolgimento funzionano davvero? {#do-re-engagement-campaigns-really-work-}
 
-Secondo uno studio sul percorso di ritorno, le campagne di reimpegno sono uscite con un tasso di apertura del 12% rispetto a una media del 14% per le campagne normali. Anche se solo il 24% degli abbonati aveva letto la campagna di ricoinvolgimento, circa il 45% di loro ha letto i messaggi successivi.
+Secondo uno studio sul percorso di ritorno, le campagne di reimpegno sono uscite con un tasso di apertura del 12% rispetto a un tasso medio del 14% per le campagne normali. Anche se solo il 24% degli abbonati aveva letto la campagna di ricoinvolgimento, circa il 45% di loro ha letto i messaggi successivi.
 
 ![](assets/deliverability_implementation_1.png)
 
@@ -52,9 +55,9 @@ Secondo uno studio sul percorso di ritorno, le campagne di reimpegno sono uscite
 ### Fase 1 {#phase-1}
 
 * Il primo passaggio consiste nell&#39;identificare gli abbonati che hanno un&#39;attività che non può essere aperta o fare clic su un elemento molto piccolo, e quindi segmentare il gruppo in base a un intervallo di tempo impostato. La regola del pollice consiste nel rivedere gli utenti che non hanno aperto o fatto clic su un&#39;e-mail negli ultimi 90 giorni. Tuttavia, questo varia a seconda della natura dell&#39;attività (ad esempio, l&#39;invio stagionale).
-* Un altro punto da tenere a mente durante la definizione dei tempi è che gli ISP e le aziende della lista nera considerano il coinvolgimento ovunque tra 1,5 e 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
+* Un altro punto da tenere a mente durante la definizione dei tempi è che gli ISP e le aziende di liste di blocchi considerano il coinvolgimento a un punto qualsiasi tra 1,5 e 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
 
-### Fase 1 {#phase-2}
+### Fase 2 {#phase-2}
 
 * Una volta definito un segmento, il passo successivo consiste nel creare una campagna di coinvolgimento reattiva che si rivolga all&#39;utente iscritto in base alle metriche identificate. La creazione di un oggetto aumenterà l&#39;interesse dell&#39;utente iscritto. Secondo uno studio Return Path, le righe di oggetto e i contenuti con lo stato &quot;Ci manchi&quot; generano tassi di risposta più alti rispetto a &quot;Ti vogliamo indietro&quot;.
 * È inoltre possibile offrire un incentivo per il riutilizzo dell&#39;e-mail. Quando si considerano le offerte con sconti, è consigliabile utilizzare gli importi in dollari rispetto alle percentuali. Anche Percorso di ritorno suggerisce di eseguire questa operazione in quanto causerà tassi di risposta più elevati. Infine, l&#39;esecuzione di test suddivisi A/B per esaminare la risposta e i tassi di successo è anche un&#39;opzione utile.
@@ -69,8 +72,8 @@ Gli iscritti che interagiscono con la campagna seguendo l&#39;attività aperta o
 
 ### Fase 4 {#phase-4}
 
-* La fase successiva consiste nell&#39;identificare gli abbonati che non mostrano mai alcuna attività e ridurre gradualmente l&#39;invio di e-mail a tali utenti in un determinato periodo di tempo. Se non è presente alcuna attività nell&#39;ultimo anno, è utile mettere in pausa l&#39;iscrizione all&#39;e-mail degli abbonati. Sebbene non abbiano mostrato alcun interesse per il contenuto dell’e-mail, esiste sempre un’ultima possibilità per consentire loro di riattivare l’iscrizione inviando una campagna di riconferma una tantum.
-* Le campagne di riconferma sono un buon modo per chiedere agli abbonati che restano inattivi per un periodo di tempo prolungato se desiderano rimanere nell’elenco delle iscrizioni. Durante la creazione della campagna, è preferibile aggiungere un collegamento &quot;clic qui&quot; in modo che possano confermare l&#39;azione e verificare il loro indirizzo. In questo modo, l&#39;azione può essere registrata nel database. Di seguito è riportato un esempio di messaggio e-mail di conferma:
+* La fase successiva consiste nell&#39;identificare gli abbonati che non mostrano mai alcuna attività e ridurre gradualmente l&#39;invio di e-mail a tali utenti in un determinato periodo di tempo. Se non è presente alcuna attività nell&#39;ultimo anno, è utile mettere in pausa l&#39;iscrizione all&#39;e-mail degli abbonati. Sebbene non abbiano mostrato alcun interesse per il contenuto dell’e-mail, esiste sempre l’ultima possibilità per consentire loro di riattivare l’iscrizione inviando una campagna di riconferma una tantum.
+* Le campagne di riconferma sono un buon modo per chiedere agli utenti che restano inattivi per un periodo di tempo prolungato se desiderano rimanere nell’elenco di iscrizione. Durante la creazione della campagna, è preferibile aggiungere un collegamento &quot;clic qui&quot; in modo che possano confermare l&#39;azione e verificare il loro indirizzo. In questo modo, l&#39;azione può essere registrata nel database. Di seguito è riportato un esempio di messaggio e-mail di conferma:
 
    ![](assets/deliverability_implementation_3.png)
 
