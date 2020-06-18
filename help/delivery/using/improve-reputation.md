@@ -1,6 +1,6 @@
 ---
-title: Miglioramento della reputazione nell'utilizzo di Adobe Campaign Classic
-description: Scopri di più sul miglioramento della tua reputazione utilizzando Adobe Campaign Classic.
+title: Miglioramento della reputazione quando si utilizza  Adobe Campaign Classic
+description: Scopri di più sul miglioramento della tua reputazione quando utilizzi  Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,19 +13,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
 
 # Crescita reputazione{#improve-reputation}
 
-Per evitare di esaurire i destinatari, elimina gli indirizzi e-mail duplicati dalla destinazione. Questo passaggio protegge la tua reputazione di invio e assicura una buona gestione della quarantena. Adobe Campaign offre gli strumenti necessari per implementare queste raccomandazioni ed evitare il rischio di essere inserito in blacklist dall&#39;ISP.
+Per evitare di esaurire i destinatari, elimina gli indirizzi e-mail duplicati dalla destinazione. Questo passaggio protegge la tua reputazione di invio e assicura una buona gestione della quarantena.  Adobe Campaign offre gli strumenti necessari per attuare tali raccomandazioni ed evitare il rischio di essere aggiunti a un elenco di blocchi dal provider di servizi Internet.
 
 Per evitare il più possibile duplicazioni, è necessario eseguire le azioni seguenti:
 
 * Le importazioni devono essere configurate con attenzione
-* Prestate attenzione quando modificate gli indirizzi e-mail
+* Prestate attenzione durante la modifica degli indirizzi e-mail
 * Prestate attenzione durante le importazioni automatiche
 * I profili devono essere ordinati in cartelle diverse
 
@@ -33,7 +36,7 @@ La gestione della quarantena è presentata in [questa sezione](../../delivery/us
 
 Qui di seguito troverete informazioni sulla gestione dei duplicati e della quarantena.
 
-Potete controllare il volume delle e-mail inviate per indirizzo IP. Per questo è necessaria un&#39;estensione dello schema. È necessario estendere la tabella dei registri di trasmissione per aggiungere l&#39;&quot;identificatore pubblico&quot; e creare un flusso di lavoro per estrarre e visualizzare i dati. Se necessario, contattate Adobe.
+È possibile monitorare il volume delle e-mail inviate per indirizzo IP. Per questo è necessaria un&#39;estensione dello schema. È necessario estendere la tabella dei registri di trasmissione per aggiungere l&#39;&quot;identificatore pubblico&quot; e creare un flusso di lavoro per estrarre e visualizzare i dati. Se necessario, contattate Adobe.
 
 ## Duplicati {#duplicates}
 
@@ -42,7 +45,7 @@ La presenza di indirizzi e-mail duplicati può avere molteplici conseguenze:
 * Lo stesso messaggio viene inviato più di una volta. Anche se Campaign esegue una procedura di deduplicazione per impostazione predefinita prima dell&#39;invio, non c&#39;è nulla che fermi l&#39;invio dello stesso messaggio da parte di azioni diverse con lo stesso contenuto quando una destinazione viene divisa.
 * Richieste di annullamento sottoscrizione non rispettate. Se un destinatario annulla la sottoscrizione dopo aver ricevuto un messaggio, il profilo duplicato sarà comunque idoneo per i messaggi futuri.
 
-Oltre a questa procedura di opt-in, questa situazione porterà gli utenti a considerare i messaggi come spam e ad avviare una procedura di blacklist presso l&#39;ISP.
+Oltre a questa procedura di opt-in, questa situazione porterà probabilmente gli utenti a considerare i messaggi come spam e ad attivare una procedura di lista di blocco presso l&#39;ISP.
 
 È necessario essere particolarmente prudenti quando si eseguono operazioni sul database:
 
@@ -55,6 +58,6 @@ Ci sono, comunque, casi in cui i duplicati tra le diverse partizioni sono normal
 
 ## Quarantena {#quarantines}
 
-Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari i cui indirizzi sono posti in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito: non sono mirati. Un indirizzo e-mail può essere messo in quarantena, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. In tutti i casi, la quarantena corrisponde alle norme specifiche di seguito indicate.
+ Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari i cui indirizzi sono posti in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito: non sono mirati. Un indirizzo e-mail può essere messo in quarantena, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. In tutti i casi, la quarantena corrisponde alle norme specifiche di seguito indicate.
 
 La gestione della quarantena è presentata in [questa sezione](../../delivery/using/understanding-quarantine-management.md).
