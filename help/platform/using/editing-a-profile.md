@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Le schede e il relativo contenuto dipendono dalla configurazione e dai pacchetti
 
 >[!CAUTION]
 >
->Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura ad albero di Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
+>Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura  Adobi Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
 >
 >Per ulteriori informazioni, consultate [questa pagina](../../configuration/using/about-schema-edition.md).
 
@@ -46,7 +49,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 
 >[!NOTE]
 >
->Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo viene inserito in blacklist, ovvero che il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
+>Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo si trova nell’elenco dei blocchi, ovvero che il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
 ## Informazioni di contatto, scheda {#contact-information-tab}
 
@@ -68,7 +71,7 @@ Questa schermata contiene campi definiti dall’utente che possono essere person
 
 ## Scheda Elenchi {#lists-tab}
 
-Questa schermata mostra i gruppi a cui appartiene il profilo selezionato. Fate clic **[!UICONTROL Add]** per iscrivervi a un elenco. Fare clic **[!UICONTROL Detail]** per visualizzare la descrizione e l&#39;elenco dei profili nell&#39;elenco selezionato.
+In questa schermata vengono visualizzati i gruppi a cui appartiene il profilo selezionato. Fate clic **[!UICONTROL Add]** per iscrivervi a un elenco. Fare clic **[!UICONTROL Detail]** per visualizzare la descrizione e l&#39;elenco dei profili nell&#39;elenco selezionato.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
