@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3055'
+source-wordcount: '3066'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## Procedura guidata di distribuzione {#deployment-wizard}
 
-Una procedura guidata grafica, disponibile nella console client di Adobe Campaign, consente di definire i parametri dell&#39;istanza a cui ci si desidera connettere.
+Una procedura guidata grafica, disponibile nella console client del Adobe Campaign , consente di definire i parametri dell’istanza a cui ci si desidera connettere.
 
-Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Implementazione guidata**.
+Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Procedura guidata** di distribuzione.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -90,15 +90,15 @@ Indicate i seguenti parametri:
 * **[!UICONTROL Sender address]** : L&#39;indirizzo del mittente,
 * **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
 * **[!UICONTROL Reply address]** : L&#39;indirizzo e-mail da utilizzare quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
-* **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Si tratta dell&#39;indirizzo tecnico utilizzato per gestire i messaggi di rimbalzo, compresi i messaggi e-mail ricevuti dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti.
+* **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Questo è l&#39;indirizzo tecnico utilizzato per gestire i messaggi di rimbalzo, comprese le e-mail ricevute dal server di Adobe Campaign  a causa di indirizzi di destinazione inesistenti.
 
-Inoltre, potete specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando una virgola. Questa configurazione è facoltativa. Quando vengono immessi dei campi, Adobe Campaign verifica al momento della consegna (durante l&#39;analisi, se l&#39;indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
+Inoltre, potete specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando una virgola. Questa configurazione è facoltativa. Quando si immettono i campi,  Adobe Campaign verifica al momento della consegna (durante l&#39;analisi, se l&#39;indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
 
 ### Caratteri autorizzati negli indirizzi {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-Nel database di Adobe Campaign, tutti gli indirizzi e-mail devono essere creati come segue: `x@y.z`. I caratteri **x**, **y** e **z** non devono essere vuoti e non devono includere caratteri non autorizzati.
+Nel database del Adobe Campaign , tutti gli indirizzi e-mail devono essere creati come segue: `x@y.z`. I caratteri **x**, **y** e **z** non devono essere vuoti e non devono includere caratteri non autorizzati.
 
 È possibile definire qui i caratteri autorizzati (&#39;criteri dati&#39;) nel campo e-mail del database. I caratteri non inclusi nell&#39;elenco saranno vietati e quindi rifiutati quando si immettono informazioni nel database tramite l&#39;interfaccia, tramite un modulo Web e si importano anche dati.
 
@@ -116,7 +116,7 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Delivery duration of messages]** : Oltre tale limite, la consegna è interrotta (per impostazione predefinita, 5 giorni),
 * **[!UICONTROL Online resources validity duration]** : Tempo di conservazione delle informazioni del profilo destinatario per generare pagine mirror,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, i destinatari inseriti nella blacklist non verranno contattati,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, i destinatari nell&#39;elenco dei blocchi non verranno contattati,
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non verrà effettuata a indirizzi duplicati.
 
 ### Parametri del tentativo {#retry-parameters}
@@ -155,11 +155,11 @@ Una volta specificate le impostazioni POP, fate clic su **Test** per verificare 
 
 ### Messaggi di rimbalzo non elaborati {#unprocessed-bounce-mails}
 
-Gli avvisi vengono gestiti automaticamente da Adobe Campaign applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non risultati finali > Qualifica** del registro di consegna. Per ulteriori informazioni, consultare Gestione [della posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)rimbalzata.
+Gli avvisi vengono gestiti automaticamente da  Adobe Campaign, applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non risultati finali > Qualificazione** del registro di consegna. Per ulteriori informazioni, consultare Gestione [della posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)rimbalzata.
 
-I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia di Adobe Campaign. Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i seguenti campi:
+I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia del Adobe Campaign . Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i seguenti campi:
 
-* **[!UICONTROL Forwarding address]** : Compila questo campo per trasferire a un indirizzo di terze parti tutti i messaggi di errore (elaborati o non elaborati) raccolti dalla piattaforma Adobe Campaign.
+* **[!UICONTROL Forwarding address]** : Compila questo campo per trasferire a un indirizzo di terze parti tutti i messaggi di errore (elaborati o non elaborati) raccolti dalla piattaforma del Adobe Campaign .
 * **[!UICONTROL Address for errors]** : Compila questo campo per trasferire a un indirizzo di terze parti solo i messaggi di errore che il processo inMail non è stato in grado di soddisfare le condizioni richieste.
 * **[!UICONTROL SMTP server]** : Server utilizzato per inviare le e-mail di rimbalzo non elaborate.
 
@@ -181,15 +181,15 @@ Quando si attiva il tracciamento su un&#39;istanza, gli URL nelle consegne vengo
 
 * Le informazioni sugli URL esterni (protetti o meno) immesse in questa pagina della procedura guidata di distribuzione vengono utilizzate per creare il nuovo URL. Oltre a queste informazioni, il collegamento modificato contiene: gli identificatori della consegna, il destinatario e l’URL.
 
-   Le informazioni di tracciamento vengono raccolte da Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
+   Le informazioni di tracciamento vengono raccolte  Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
 
-   Le informazioni sugli URL interni vengono utilizzate solo dal server dell’applicazione Adobe Campaign per contattare i server di tracciamento.
+   Le informazioni sugli URL interni vengono utilizzate solo dal server applicazione del Adobe Campaign  per contattare i server di tracciamento.
 
-   Per ulteriori informazioni, vedere [Server](#tracking-server)di tracciamento.
+   For more on this, refer to [Tracking server](#tracking-server).
 
 * Una volta configurati gli URL, è necessario abilitare il tracciamento. A questo scopo, l’istanza deve essere registrata sui server di tracciamento.
 
-   Per ulteriori informazioni, consulta [Salvataggio del tracciamento](#saving-tracking).
+   For more on this, refer to [Saving tracking](#saving-tracking).
 
 ### Server di tracciamento {#tracking-server}
 
@@ -199,7 +199,7 @@ Per garantire l&#39;efficienza del tracciamento su questo caso, devono essere vi
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
 * **[!UICONTROL External URL]** e/o **[!UICONTROL Secure external URL]** : Immettete l’URL di reindirizzamento da utilizzare nell’e-mail da inviare.
-* **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server Adobe Campaign per contattare i server di tracciamento per raccogliere i registri e caricare gli URL. Non è necessario associarlo all&#39;istanza.
+* **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server di Adobe Campaign  per contattare i server di tracciamento per raccogliere i registri e caricare gli URL. Non è necessario associarlo all&#39;istanza.
 
    Se non specificate un URL, per impostazione predefinita verrà utilizzato l’URL di tracciamento.
 
@@ -317,7 +317,7 @@ Questa fase consente di includere le preferenze per i criteri dei dati.
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
-Questo passaggio consente di definire gli URL di accesso per le pagine Adobe Campaign esposte su Internet.
+Questo passaggio consente di definire gli URL di accesso per  pagine di Adobe Campaign esposte su Internet.
 
 È inoltre necessario indicare qui le opzioni di pubblicazione collegate ai moduli Web.
 
@@ -333,7 +333,7 @@ Utilizzare questa pagina per compilare gli URL del server in modo che:
 
    Una pagina mirror è una pagina dinamica che visualizza il contenuto dell&#39;e-mail. È accessibile tramite un collegamento inserito nel messaggio inviato al destinatario e può contenere elementi personalizzati. La pagina mirror dà al destinatario la possibilità di leggere il messaggio in un browser Internet invece del software e-mail, indipendentemente dal formato di consegna (testo o HTML). Tuttavia, le pagine mirror vengono generate per una determinata consegna solo se è stato definito il contenuto HTML richiesto.
 
-Adobe Campaign consente di distinguere questi tre URL per estendere il carico su più piattaforme.
+ Adobe Campaign consente di differenziare questi tre URL per estendere il carico su più piattaforme.
 
 ## Gestione delle risorse pubbliche {#managing-public-resources}
 
@@ -351,7 +351,7 @@ Per questo passaggio, dovete immettere:
 1. Modalità di rilevamento delle immagini in una distribuzione. Per ulteriori informazioni, consulta la sezione Rilevamento [immagini](#delivery-image-detection) consegna.
 1. Opzioni di pubblicazione. Per ulteriori informazioni, consulta la sezione Modalità [di](#publication-modes) pubblicazione.
 
-Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > Online > Risorse** pubbliche della struttura di Adobe Campaign. Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
+Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > Online > Risorse** pubbliche della struttura degli Adobi Campaign . Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -390,11 +390,11 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
    Le risorse verranno automaticamente copiate sui diversi server di tracciamento. Sono configurati nella configurazione [step](#tracking-configuration)Tracking.
 
-* Altri server Adobe Campaign
+* Altri server  Adobe Campaign
 
-   Puoi utilizzare uno o più altri server Adobe Campaign in cui copieranno le risorse.
+   Potete utilizzare un altro server  Adobe Campaign in cui copiare le risorse.
 
-   Sul lato server, per utilizzare un server Adobe Campaign dedicato, devi creare una nuova istanza con il seguente comando:
+   Sul lato server, per utilizzare un server di Adobe Campaign  dedicato, è necessario creare una nuova istanza con il seguente comando:
 
    ```
    nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
@@ -419,13 +419,13 @@ Sono disponibili le seguenti modalità di pubblicazione:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      dove `[INSTALL]` è il percorso di accesso alla cartella di installazione di Adobe Campaign.
+      dove `[INSTALL]` è il percorso di accesso alla cartella di installazione del Adobe Campaign .
 
    * In Unix, verificare che lo script sia eseguibile.
 
 Per le immagini, devono essere copiate dalla cartella &quot;immagini&quot; specificata tramite l&#39;opzione **NmsDelivery_ImageSubDirectory** su uno o più server frontali. Tali server memorizzeranno le immagini per renderle accessibili tramite il nuovo URL configurato.
 
-In caso di pubblicazione su un server Adobe Campaign senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nel `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
+In caso di pubblicazione su un server di Adobe Campaign  senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nel `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. L’URL corrispondente è il seguente: **`https://server/res/instance`** dove instance è il nome dell’istanza di tracciamento.
 
@@ -459,7 +459,7 @@ L&#39;attributo status può essere uno dei tre valori seguenti:
 
 * normal: Comportamento esistente (senza sincronizzazione)
 
-* blacklist: L’URL viene inserito in blacklist se restituisce un errore 404. La durata (in secondi) dell&#39;elenco di blacklist è definita da un attributo di **timeout** il cui valore predefinito è 60 s.
+* blocklist: L&#39;URL viene aggiunto all&#39;elenco dei blocchi se restituisce un errore 404. La durata (in secondi) dell’URL presente nell’elenco dei blocchi è definita da un attributo di **timeout** il cui valore predefinito è 60 s.
 
 La configurazione out-of-the-box della sincronizzazione è:
 
@@ -478,11 +478,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="false"
 <relay debugRelay="false" forbiddenCharsInAuthority="?#.@/:" forbiddenCharsInPath="?#/"
            modDir="index.html" startRelay="false" startRelayInModule="true" timeout="60">
    <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/view/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
-      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jsp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*.jssp"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/webApp/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/report/*"/>
+      <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="/jssp/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/strings/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/interaction/*"/>
       <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" status="normal" targetUrl="https://localhost:8080" timeout="" urlPath="/barcode/*"/>
