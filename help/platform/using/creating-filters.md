@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+workflow-type: tm+mt
+source-wordcount: '1980'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Introduzione {#introduction}
 
-Quando ti trovi nella struttura di Adobe Campaign (dal **[!UICONTROL Explorer]** menu nella home page), i dati contenuti nel database vengono visualizzati negli elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall&#39;operatore. È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare i dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
+Quando vi spostate nella struttura  Adobe Campaign (dal **[!UICONTROL Explorer]** menu nella home page), i dati contenuti nel database vengono visualizzati negli elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall&#39;operatore. È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare i dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 
 >[!NOTE]
 >
@@ -32,11 +35,11 @@ Quando ti trovi nella struttura di Adobe Campaign (dal **[!UICONTROL Explorer]**
 
 ## Tipologia dei filtri disponibili {#typology-of-available-filters}
 
-Adobe Campaign consente di applicare filtri agli elenchi di dati.
+ Adobe Campaign consente di applicare filtri agli elenchi di dati.
 
 Questi filtri possono essere utilizzati una sola volta, oppure potete salvarli per un utilizzo futuro. Potete applicare più filtri contemporaneamente.
 
-In Adobe Campaign sono disponibili i seguenti tipi di filtro:
+I seguenti tipi di filtro sono disponibili in  Adobe Campaign:
 
 * Filtri predefiniti
 
@@ -70,7 +73,7 @@ In Adobe Campaign sono disponibili i seguenti tipi di filtro:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   >Per ulteriori informazioni sulla creazione di query in  Adobe Campaign, consultare [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 * Filtri utente
 
@@ -179,7 +182,7 @@ Potete salvare un filtro avanzato per mantenerlo utilizzabile in futuro. Per ult
 
 ### Creazione di un filtro avanzato con funzioni {#creating-an-advanced-filter-with-functions}
 
-I filtri avanzati possono utilizzare funzioni; I **filtri con funzioni** vengono creati tramite un editor di espressioni che consente di creare formule utilizzando i dati del database e le funzioni avanzate. Per creare un filtro con funzioni, ripetete i passaggi 1, 2 e 3 per la creazione avanzata del filtro, quindi procedete come segue:
+I filtri avanzati possono utilizzare funzioni; **i filtri con funzioni** vengono creati tramite un editor di espressioni che consente di creare formule utilizzando i dati del database e le funzioni avanzate. Per creare un filtro con funzioni, ripetete i passaggi 1, 2 e 3 per la creazione avanzata del filtro, quindi procedete come segue:
 
 1. Nella finestra di selezione del campo fare clic su **[!UICONTROL Advanced selection]**.
 1. Selezionare il tipo di formula da utilizzare: aggregazione, filtro utente esistente o espressione.
@@ -205,7 +208,7 @@ I filtri avanzati possono utilizzare funzioni; I **filtri con funzioni** vengono
 
 ## Salvataggio di un filtro {#saving-a-filter}
 
-I filtri sono specifici di ciascun operatore e vengono reinizializzati ogni volta che l&#39;operatore cancella la cache della console client.
+I filtri sono specifici di ciascun operatore e vengono reinizializzati ogni volta che l&#39;operatore cancella la cache della propria console client.
 
 Potete creare un filtro **** applicazione salvando un filtro avanzato: può essere riutilizzato facendo clic con il pulsante destro del mouse in un qualsiasi elenco o mediante il **[!UICONTROL Filters]** pulsante situato sopra gli elenchi.
 
@@ -229,7 +232,7 @@ Potete combinare i filtri facendo clic sul **[!UICONTROL Filters]** pulsante e u
 
 ## Filtrare i destinatari {#filtering-recipients}
 
-I filtri predefiniti (consultate [Salvataggio di un filtro](#saving-a-filter)) consentono di filtrare i profili dei destinatari contenuti nel database. È possibile modificare i filtri dal **[!UICONTROL Profiles and Targets > Predefined filters]** nodo della struttura. I filtri sono elencati nella sezione superiore dell&#39;area di lavoro, tramite il **[!UICONTROL Filters]** pulsante .
+I filtri predefiniti (consultate [Salvataggio di un filtro](#saving-a-filter)) consentono di filtrare i profili dei destinatari contenuti nel database. È possibile modificare i filtri dal **[!UICONTROL Profiles and Targets > Predefined filters]** nodo della struttura ad albero. I filtri sono elencati nella sezione superiore dell&#39;area di lavoro, tramite il **[!UICONTROL Filters]** pulsante .
 
 Selezionare un filtro per visualizzarne la definizione e accedere a un&#39;anteprima dei dati filtrati.
 
@@ -237,7 +240,7 @@ Selezionare un filtro per visualizzarne la definizione e accedere a un&#39;antep
 
 >[!NOTE]
 >
->Per un esempio dettagliato di creazione di filtri predefiniti, consultate [Caso](../../platform/using/use-case.md)di utilizzo.
+>Per un esempio dettagliato di creazione di filtri predefiniti, consultate [Caso](../../platform/using/use-case.md)d’uso.
 
 I filtri predefiniti sono:
 
@@ -276,8 +279,8 @@ I filtri predefiniti sono:
    <td> Seleziona i destinatari che hanno fatto clic su una consegna almeno X volte negli ultimi Y mesi.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Indirizzo e-mail Blacklist<br /> </td> 
-   <td> Seleziona i destinatari il cui indirizzo e-mail è inserito in blacklist.<br /> </td> 
+ <td> Indirizzo e-mail nell'elenco dei blocchi<br /> </td> 
+    <td> Seleziona i destinatari il cui indirizzo e-mail si trova nell'elenco dei blocchi.<br/> </td>
   </tr> 
   <tr> 
    <td> Indirizzo e-mail in quarantena<br /> </td> 
@@ -305,14 +308,14 @@ I filtri predefiniti sono:
   </tr> 
   <tr> 
    <td> Per iscrizione<br /> </td> 
-   <td> Seleziona i destinatari per iscrizione.<br /> </td> 
+   <td> Seleziona i destinatari in base alla sottoscrizione.<br /> </td> 
   </tr> 
   <tr> 
    <td> Facendo clic su un collegamento specifico<br /> </td> 
    <td> Seleziona i destinatari che hanno fatto clic su un particolare URL in una consegna.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Per comportamento post-consegna<br /> </td> 
+   <td> Per comportamento di post-consegna<br /> </td> 
    <td> Seleziona i destinatari in base al loro comportamento dopo la ricezione della consegna.<br /> </td> 
   </tr> 
   <tr> 
@@ -336,7 +339,7 @@ I filtri predefiniti sono:
    <td> Seleziona i destinatari che hanno aperto tra le consegne X e Y per un periodo di tempo pari a Z.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Per nome o e-mail<br /> </td> 
+   <td> Per nome o per e-mail<br /> </td> 
    <td> Seleziona i destinatari in base al nome o all’e-mail.<br /> </td> 
   </tr> 
   <tr> 
@@ -381,7 +384,7 @@ Fare clic sulla **[!UICONTROL Settings]** scheda per accedere alle seguenti opzi
 
    Selezionate l’ **[!UICONTROL Do not restrict the filter]** opzione per impedire all’utente di ignorare il filtro.
 
-   Questa opzione è abilitata per i filtri &quot;Destinatari di una consegna&quot; e &quot;Destinatari di consegne appartenenti a una cartella&quot; offerti nella procedura guidata di consegna che non possono essere sovraccarichi.
+   Questa opzione è abilitata per i filtri &quot;Destinatari di una consegna&quot; e &quot;Destinatari di consegne appartenenti a una cartella&quot; offerti nella procedura guidata di consegna che non possono essere sovraccaricati.
 
    ![](assets/s_ncs_user_filter_advanced_param.png)
 
