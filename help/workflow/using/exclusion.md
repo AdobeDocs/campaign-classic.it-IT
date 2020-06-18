@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
@@ -40,15 +43,13 @@ Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera s
 
 L&#39;esempio seguente cerca di compilare un elenco dei destinatari di età compresa tra i 18 e i 30 anni, escludendo i residenti di Parigi.
 
-1. Inserire e aprire un&#39;attività **[!UICONTROL Exclusion]** -type dopo due query. La prima query riguarda i destinatari residenti a Parigi. La seconda query ha come obiettivo quelli di età compresa tra 18 e 30 anni.
+1. Inserire e aprire un&#39;attività **[!UICONTROL Exclusion]** -type dopo due query. La prima query riguarda i destinatari residenti a Parigi. La seconda query ha come obiettivo quelli di età compresa tra i 18 e i 30 anni.
 1. Inserite il set principale. Qui la serie principale è la query vecchia **di** 18-30 anni. Gli elementi relativi al secondo set saranno esclusi dal risultato finale.
 1. Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera sfruttare i dati che rimangono dopo l&#39;esclusione. In questo caso, il complemento è costituito da beneficiari di età compresa tra i 18 e i 30 anni che vivono a Parigi.
 1. Approvare la configurazione di esclusione, quindi inserire un&#39;attività dell&#39;elenco di aggiornamento nel risultato. Se necessario, è inoltre possibile inserire un aggiornamento dell&#39;elenco aggiuntivo.
 1. Eseguire il flusso di lavoro. In questo esempio, il risultato è composto da beneficiari di età compresa tra i 18 e i 30 anni, ma quelli che vivono a Parigi sono esclusi e inviati al complemento.
 
    ![](assets/exclusion_example.png)
-
-L&#39;esempio di importazione della lista nera utilizza un&#39;attività di tipo **Esclusione** che si trova nell&#39;elenco [](../../workflow/using/read-list.md)Leggi.
 
 ## Parametri di input {#input-parameters}
 
