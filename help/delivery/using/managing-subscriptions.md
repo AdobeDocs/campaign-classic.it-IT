@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +60,7 @@ Per modificare un servizio esistente, fate clic sul suo nome. Per creare un serv
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Immettete il nome del servizio nel **[!UICONTROL Label]** campo e selezionate il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni mobili.
+* Immettete il nome del servizio nel **[!UICONTROL Label]** campo e selezionate il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni per dispositivi mobili.
 
    >[!NOTE]
    >
@@ -67,7 +70,7 @@ Per modificare un servizio esistente, fate clic sul suo nome. Per creare un serv
 * Potete inviare messaggi **di** conferma per un&#39;iscrizione o per annullarne l&#39;iscrizione. A tal fine, selezionate i modelli di consegna da utilizzare per creare le consegne corrispondenti dai **[!UICONTROL Subscription]** campi e **[!UICONTROL Unsubscription]** . Questi modelli devono essere configurati con una mappatura di destinazione del **[!UICONTROL Subscription]** tipo, senza una destinazione definita. Vedere la sezione [Informazioni sul canale](../../delivery/using/about-email-channel.md)e-mail.
 * Per impostazione predefinita, le iscrizioni sono illimitate. Potete deselezionare l&#39; **[!UICONTROL Unlimited]** opzione per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
 
-Una volta salvato, il servizio viene aggiunto all&#39;elenco Servizi e iscrizioni: Fate clic sul nome per modificarlo. Sono disponibili diverse schede. La **[!UICONTROL Subscriptions]** scheda consente di visualizzare l&#39;elenco degli utenti iscritti al servizio informazioni (**[!UICONTROL Active subscriptions]** scheda) o la cronologia di iscrizione/annullamento dell&#39;iscrizione (**[!UICONTROL History]** scheda). È inoltre possibile aggiungere ed eliminare sottoscrittori da questa scheda. Consultate [Aggiunta ed eliminazione di sottoscrittori](#adding-and-deleting-subscribers).
+Una volta salvato, il servizio viene aggiunto all&#39;elenco Servizi e iscrizioni: Fate clic sul suo nome per modificarlo. Sono disponibili diverse schede. La **[!UICONTROL Subscriptions]** scheda consente di visualizzare l&#39;elenco degli utenti iscritti al servizio informazioni (**[!UICONTROL Active subscriptions]** scheda) o la cronologia di iscrizione/annullamento dell&#39;iscrizione (**[!UICONTROL History]** scheda). È inoltre possibile aggiungere ed eliminare sottoscrittori da questa scheda. Consultate [Aggiunta ed eliminazione di sottoscrittori](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -89,7 +92,7 @@ In entrambi i casi, potete inviare un messaggio di conferma agli utenti interess
 
 ![](assets/s_ncs_user_services_update.png)
 
-Consultate [Modalità](#subscription-and-unsubscription-mechanisms)di iscrizione e annullamento della sottoscrizione.
+Consultate Meccanismi [di](#subscription-and-unsubscription-mechanisms)iscrizione e annullamento della sottoscrizione.
 
 ## Consegna agli abbonati di un servizio {#delivering-to-the-subscribers-of-a-service}
 
@@ -133,13 +136,13 @@ Per registrare i destinatari per un servizio di informazione, potete:
    Per ulteriori informazioni, consulta la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
 
 * Iscriviti automaticamente a questo servizio un set di destinatari. L&#39;elenco dei destinatari può provenire da un&#39;operazione di filtro, un gruppo, una cartella, un&#39;importazione o una selezione diretta utilizzando il mouse. Per iscriverti a questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
-* Importa i destinatari e li iscrive automaticamente a un servizio di informazione. A questo scopo, selezionate il servizio interessato nell’ultimo passaggio della procedura guidata di importazione.
+* Importa i destinatari e li iscrivi automaticamente a un servizio di informazione. A questo scopo, selezionate il servizio in questione nell’ultimo passaggio della procedura guidata di importazione.
 
-   For more on this, refer to [this section](../../platform/using/importing-data.md#import-wizard).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/importing-data.md#import-wizard).
 
 * Utilizzare un modulo Web per consentire ai destinatari di iscriversi a un servizio.
 
-   For more on this, refer to [this section](../../web/using/about-web-applications.md).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-web-applications.md).
 
 * Creazione di un flusso di lavoro di targeting e utilizzo di una **[!UICONTROL Subscription service]** casella.
 
@@ -149,11 +152,11 @@ Per registrare i destinatari per un servizio di informazione, potete:
 
 ### Annullamento dell&#39;iscrizione di un destinatario da un servizio {#unsubscribing-a-recipient-from-a-service}
 
-#### Annullamento manuale della sottoscrizione {#manual-unsubscribing}
+#### Annullamento manuale dell&#39;iscrizione {#manual-unsubscribing}
 
 per legge, le consegne e-mail devono contenere un collegamento per annullare l&#39;iscrizione. I destinatari possono fare clic su questo collegamento per aggiornare il proprio profilo ed essere esclusi dagli obiettivi delle consegne future.
 
-Il collegamento predefinito per l’annullamento dell’iscrizione viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti disponibile nella procedura guidata di distribuzione (consultate [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene inserito in blacklist (rinuncia), il che significa che il destinatario non sarà più preso di mira da alcuna azione di consegna.
+Il collegamento predefinito per l’annullamento dell’iscrizione viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti disponibile nella procedura guidata di distribuzione (consultate [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto all&#39;elenco dei blocchi (rinuncia), il che significa che il destinatario non sarà più preso di mira da alcuna azione di consegna.
 
 I destinatari possono tuttavia scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. A tal fine, è possibile utilizzare un modulo Web (fare riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento personalizzato senza iscrizione (vedere Blocchi [di](../../delivery/using/personalization-blocks.md)personalizzazione).
 
