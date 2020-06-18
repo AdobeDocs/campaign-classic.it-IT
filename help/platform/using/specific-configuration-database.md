@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 # Configurazioni specifiche per tipo di database {#specific-configurations-by-database-type}
 
-A seconda dei database esterni a cui si desidera accedere da Adobe Campaign, sarà necessario eseguire determinate configurazioni specifiche. Tali configurazioni prevedono essenzialmente l&#39;installazione di driver e la dichiarazione di variabili di ambiente appartenenti a ciascun RDBMS sul server Adobe Campaign.
+A seconda dei database esterni a cui si desidera accedere da  Adobe Campaign, sarà necessario eseguire determinate configurazioni specifiche. Tali configurazioni prevedono essenzialmente l&#39;installazione di driver e la dichiarazione di variabili di ambiente appartenenti a ciascun RDBMS sul server di Adobe Campaign .
 
-Come regola generale, devi installare il livello client corrispondente nel database esterno sul server Adobe Campaign.
+Come regola generale, è necessario installare il livello client corrispondente nel database esterno sul server del Adobe Campaign .
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Per creare un account esterno [!DNL Azure Synapse] esterno:
 
 1. Configurate l&#39;account [!DNL Azure Synapse] esterno, dovete specificare:
 
-   * **[!UICONTROL Type]**: Analisi della sinapsi di Azure
+   * **[!UICONTROL Type]**: Azure Synapse  Analytics
 
    * **[!UICONTROL Server]**: URL del server Azure Synapse
 
@@ -121,9 +121,9 @@ Per configurare Azure Synapse su CentOS:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign Classic potete quindi configurare l&#39;account [!DNL Azure Synapse] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#azure-external).
+1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Azure Synapse] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Poiché Azure Synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta sul firewall. Usa il comando seguente:
+1. Poiché Azure Synapse  Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta sul firewall. Usa il comando seguente:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -132,7 +132,7 @@ Per configurare Azure Synapse su CentOS:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario inserire l&#39;IP pubblico nella whitelist. A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico all&#39;elenco allow. A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 1. Nel caso di iptables, eseguire il comando seguente:
 
@@ -144,7 +144,7 @@ Per configurare Azure Synapse su CentOS:
 
 >[!NOTE]
 >
->Questa versione è esclusiva della versione 13 del driver ODBC, ma Adobe Campaign Classic può anche utilizzare i driver del client nativo di SQL Server 11.0 e 10.0.
+>Questa funzione è esclusiva della versione 13 del driver ODBC, ma  Adobe Campaign Classic può anche utilizzare i driver client nativi di SQL Server 11.0 e 10.0.
 
 Per configurare Azure Synapse su Windows:
 
@@ -158,9 +158,9 @@ Per configurare Azure Synapse su Windows:
 
 1. Una volta installato il driver ODBC, è possibile verificarlo se necessario. For more on this, refer to this [page](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. In Campaign Classic potete quindi configurare l&#39;account [!DNL Azure Synapse] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#azure-external).
+1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Azure Synapse] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Poiché Azure Synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta su Windows Defender Firewall. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Poiché Azure Synapse  Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta su Windows Defender Firewall. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azure Synapse su Debian {#azure-debian}
 
@@ -215,7 +215,7 @@ Per configurare Azure Synapse su Debian:
 
 1. In Campaign Classic, ora puoi configurare il tuo account [!DNL Azure Synapse] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Per configurare le iptables su Debian per garantire la connessione con Azure Synapse Analytics, abilita la porta TCP 1433 in uscita per il tuo nome host con il comando seguente:
+1. Per configurare le iptables su Debian per garantire la connessione con Azure Synapse  Analytics, abilita la porta TCP 1433 in uscita per il tuo nome host con il comando seguente:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -223,7 +223,7 @@ Per configurare Azure Synapse su Debian:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario inserire l&#39;IP pubblico nella whitelist. A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico all&#39;elenco allow. A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 ## Configurare l&#39;accesso a Snowflake {#configure-access-to-snowflake}
 
@@ -283,7 +283,7 @@ Il connettore supporta le seguenti opzioni:
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campaign Classic potete quindi configurare l&#39;account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
+1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
 
 ### Fiocco di neve su Debian {#snowflake-debian}
 
@@ -303,7 +303,7 @@ Il connettore supporta le seguenti opzioni:
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic potete quindi configurare l&#39;account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
+1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
 
 ### Snowflake on Windows {#snowflake-windows}
 
@@ -311,11 +311,11 @@ Il connettore supporta le seguenti opzioni:
 
 1. Configurare il driver ODBC. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. In Campaign Classic potete quindi configurare l&#39;account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
+1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
 
 ## Configurare l&#39;accesso a Hadoop 3.0 {#configure-access-to-hadoop-3}
 
-La connessione a un database esterno Hadoop in FDA richiede le seguenti configurazioni sul server Adobe Campaign. Questa configurazione è disponibile per Windows e Linux.
+La connessione a un database esterno Hadoop in FDA richiede le seguenti configurazioni sul server del Adobe Campaign . Questa configurazione è disponibile per Windows e Linux.
 
 1. Scaricate i driver ODBC per Hadoop a seconda della versione del sistema operativo in uso. I driver si trovano in [questa pagina](https://www.cloudera.com/downloads.html).
 
@@ -328,7 +328,7 @@ La connessione a un database esterno Hadoop in FDA richiede le seguenti configur
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic potete quindi configurare l&#39;account esterno Snowflake. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, potete quindi configurare il vostro account esterno Snowflake. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic su **[!UICONTROL Create]** e selezionate **[!UICONTROL External database]** come tipo di account.
 
@@ -470,7 +470,7 @@ Il connettore supporta anche le seguenti opzioni Hive:
 
 ## Configurare l&#39;accesso a Netezza {#configure-access-to-netezza}
 
-La connessione a un database esterno di Netezza in FDA richiede configurazioni aggiuntive nel server di Adobe Campaign:
+La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive nel server del Adobe Campaign :
 
 1. Installare i driver ODBC per Netezza, in base al sistema operativo utilizzato:
 
@@ -509,13 +509,13 @@ La connessione a un database esterno di Netezza in FDA richiede configurazioni a
       Socket           = 16384
       ```
 
-1. Specifica le variabili di ambiente del server Adobe Campaign:
+1. Specificate le variabili di ambiente del server di Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib e /usr/local/nz/lib64. &quot;/usr/local/nz&quot; corrisponde al repository di installazione offerto per impostazione predefinita durante l&#39;installazione dei driver. Qui è necessario specificare il repository selezionato per l&#39;installazione.
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: posizione del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
-1. In Campaign Classic potete quindi configurare il vostro account Netezza esterno. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, potete quindi configurare il vostro account Netezza esterno. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
@@ -539,7 +539,7 @@ La connessione a un database esterno di Netezza in FDA richiede configurazioni a
 
 ## Configurare l&#39;accesso a Oracle {#configure-access-to-oracle}
 
-La connessione a un database Oracle esterno in FDA richiede configurazioni aggiuntive nel server Adobe Campaign.
+La connessione a un database Oracle esterno in FDA richiede configurazioni aggiuntive nel server del Adobe Campaign .
 
 ### Per Linux {#for-linux-1}
 
@@ -548,7 +548,7 @@ La connessione a un database Oracle esterno in FDA richiede configurazioni aggiu
 
    Quindi create una nuova variabile di ambiente TNS_ADMIN: esportare TNS_ADMIN=/etc/oracle e riavviare il computer.
 
-1. Integrare Oracle nel server Adobe Campaign (nlserver). A tal fine, verificate che il file **customer.sh** sia presente nella cartella &quot;nl6&quot; della struttura ad albero del server Adobe Campaign e che includa i collegamenti alle librerie Oracle.
+1. Integrare Oracle nel server del Adobe Campaign  (nlserver). A questo scopo, verificate che il file **customer.sh** sia presente nella cartella &quot;nl6&quot; della struttura ad albero del server di Adobi Campaign  e che includa i collegamenti alle librerie Oracle.
 
    Ad esempio, per un client nella versione 11.2:
 
@@ -588,7 +588,7 @@ La connessione a un database Oracle esterno in FDA richiede configurazioni aggiu
 
 ## Configurare l&#39;accesso a Sybase IQ {#configure-access-to-sybase-iq}
 
-La connessione a un database esterno Sybase IQ in FDA richiede configurazioni aggiuntive nel server Adobe Campaign:
+La connessione a un database esterno Sybase IQ in FDA richiede configurazioni aggiuntive nel server del Adobe Campaign :
 
 1. Verificate che il pacchetto unixodbc sia sul server.
 1. Installate **iq_odbc**. Un errore può verificarsi alla fine dell&#39;installazione. Questo errore può essere ignorato.
@@ -625,7 +625,7 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
    * Se utilizzi un file customer.sh per dichiarare il percorso: aggiungete il percorso /opt/sybase/IQ-16_0/lib64 per la variabile LD_LIBRARY_PATH.
    * In caso contrario, utilizzare un comando Unix.
 
-1. In Campaign Classic, puoi quindi configurare il tuo account esterno Sybase IQ. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, potete quindi configurare il vostro account esterno Sybase IQ. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
@@ -643,11 +643,11 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
 
 >[!NOTE]
 >
->Per Windows, devi installare il client IQ Sybase sul server Adobe Campaign e creare una connessione ODBC. Assicurati di creare un&#39;origine dati di sistema quando il server Adobe Campaign (nlserver) è in esecuzione come servizio in Windows.
+>Per Windows, è necessario installare il client Sybase IQ sul server di Adobe Campaign  e creare una connessione ODBC. Assicurarsi di creare un&#39;origine dati di sistema quando il server di Adobe Campaign  (nlserver) è in esecuzione come servizio in Windows.
 
 ## Configurare l&#39;accesso a Teradata {#configure-access-to-teradata}
 
-La connessione a un database esterno Teradata in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign. Per ulteriori informazioni su come configurare il database Teradata, consulta questo [articolo](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html).
+La connessione a un database esterno Teradata in FDA richiede alcune configurazioni aggiuntive sul server del Adobe Campaign . Per ulteriori informazioni su come configurare il database Teradata, consulta questo [articolo](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html).
 
 1. Installare il driver [ODBC per Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -682,7 +682,7 @@ La connessione a un database esterno Teradata in FDA richiede alcune configurazi
       SQLLevel=1
       ```
 
-1. Specifica le variabili di ambiente del server Adobe Campaign:
+1. Specificate le variabili di ambiente del server di Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64 e /opt/teradata/client/15.10/odbc_64/lib.
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
@@ -706,7 +706,7 @@ La connessione a un database esterno Teradata in FDA richiede alcune configurazi
 
 ## Configurare l&#39;accesso a SAP HANA {#configure-access-to-sap-hana}
 
-La connessione a un database esterno SAP HANA in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign:
+La connessione a un database esterno SAP HANA in FDA richiede alcune configurazioni aggiuntive sul server del Adobe Campaign :
 
 1. Installare i driver ODBC per SAP HANA, in base al sistema operativo utilizzato:
 
@@ -737,12 +737,12 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
       Driver = /usr/sap/hdbclient/libodbcHDB.so
       ```
 
-1. Specifica le variabili di ambiente del server Adobe Campaign:
+1. Specificate le variabili di ambiente del server di Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: Deve includere il collegamento al client SAP Hana (per impostazione predefinita, /usr/sap/hdbclient/libodbcHDB.so).
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
 
-1. In Campaign Classic puoi quindi configurare il tuo account esterno SAP Hana. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, è quindi possibile configurare l&#39;account esterno SAP Hana. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
