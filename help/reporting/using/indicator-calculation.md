@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '2980'
+ht-degree: 1%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -43,7 +46,7 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
   <tr> 
    <td> Clic<br /> </td> 
    <td> @clic<br /> </td> 
-   <td> Somma di tutti i @totalClicks con un tipo URL uguale a "Email click".<br /> </td> 
+   <td> Somma di tutti i @totalClicks con un tipo di URL uguale a "Email click".<br /> </td> 
    <td> sum(Iif([url/@type]=1, @totalClicks, 0)<br /> </td> 
   </tr> 
   <tr> 
@@ -66,10 +69,10 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -86,7 +89,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
    <td> Count(@status=2 e msg/@failureReason=1)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non raggiungibile <br /> </td> 
+   <td> Non Raggiungibile <br /> </td> 
    <td> @non raggiungibile<br /> </td> 
    <td> Conteggio di tutti i messaggi con stato uguale a "Non riuscito" e motivo uguale a "Non raggiungibile". <br /> </td> 
    <td> Count(@status=2 e msg/@failureReason=3)<br /> </td> 
@@ -149,10 +152,10 @@ Questo rapporto è basato sulla **[!UICONTROL Internet Browser Statistics]** tab
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -182,10 +185,10 @@ Questo rapporto è basato sulla **[!UICONTROL Internet Browser Statistics]** tab
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -217,10 +220,10 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -286,10 +289,10 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -319,10 +322,10 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -354,17 +357,17 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Nuovi contatti<br /> </td> 
    <td> @newContatti<br /> </td> 
-   <td> Numero di visitatori collegati a un destinatario.<br /> </td> 
+   <td> Conteggio del numero di visitatori collegati a un destinatario.<br /> </td> 
    <td> Formula: count(@id)<br /> Filtro: @Recipi-id != 0<br /> </td> 
   </tr> 
   <tr> 
@@ -391,10 +394,10 @@ Questo rapporto è basato sulla **[!UICONTROL Internet Browser Statistics]** tab
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -407,7 +410,7 @@ Questo rapporto è basato sulla **[!UICONTROL Internet Browser Statistics]** tab
   <tr> 
    <td> Pagine visualizzate<br /> </td> 
    <td> @totalPages / @Days<br /> </td> 
-   <td> Media giornaliera del numero totale di clic sui collegamenti di consegna per sistema operativo per tutte le consegne.<br /> </td> 
+   <td> Media giornaliera del numero totale di clic sui collegamenti di consegna per ogni sistema operativo per tutte le consegne.<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
   </tr> 
   <tr> 
@@ -424,10 +427,10 @@ Questo rapporto è basato sulla **[!UICONTROL Internet Browser Statistics]** tab
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -459,18 +462,18 @@ Questo rapporto è basato sulla **[!UICONTROL Services]** tabella (nms:service).
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Registrato<br /> </td> 
    <td> @_subscriber<br /> </td> 
-   <td> Numero di persone registrate il giorno precedente.<br /> </td> 
-   <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0)<br /> </td> 
+   <td> Conteggio delle persone registrate il giorno precedente.<br /> </td> 
+   <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Iscrizioni<br /> </td> 
@@ -493,7 +496,7 @@ Questo rapporto è basato sulla **[!UICONTROL Services]** tabella (nms:service).
   <tr> 
    <td> Fedeltà<br /> </td> 
    <td> -<br /> </td> 
-   <td> Tasso di fedeltà degli utenti iscritti per il periodo correlato.<br /> </td> 
+   <td> Tasso di fedeltà dell’utente iscritto per il periodo correlato.<br /> </td> 
    <td> 1%(@_unsubscription,@_subscriber+@_subscription-@_unsubscription)<br /> </td> 
   </tr> 
  </tbody> 
@@ -506,17 +509,17 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Messaggi da inviare<br /> </td> 
    <td> @toDeliver<br /> </td> 
-   <td> Numero di wideLogs dopo l’analisi di destinazione.<br /> </td> 
+   <td> Conteggio del numero di wideLogs dopo l’analisi di destinazione.<br /> </td> 
    <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
@@ -527,7 +530,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   </tr> 
   <tr> 
    <td> Apertura distinta sulla popolazione raggiunta<br /> </td> 
-   <td> @EstimRecipientOpen<br /> </td> 
+   <td> @EstimalRecipientOpen<br /> </td> 
    <td> Estrapolazione del numero di aperture distinte per tutte le e-mail in base al numero di aperture distinte per le e-mail in formato html.<br /> </td> 
    <td> Iif([@toDeliver] - [@text]) = 0, 0, round(toDouble(@RecipiOpen) * [@toDeliver] / ([@toDeliver] - [@text])<br /> </td> 
   </tr> 
@@ -564,13 +567,13 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Reclami<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo inserito in blacklist".<br /> </td> 
+   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo aggiunto all'elenco dei blocchi".<br /> </td> 
    <td> Count(@status=2 e msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
    <td> @receiveOpen<br /> </td> 
-   <td> Conteggio di tutti gli @broadLog-ids in tutti i registri di monitoraggio.<br /> </td> 
+   <td> Conteggio di tutti gli @broadLog-ids in tutti i registri di tracciamento.<br /> </td> 
    <td> Countdistinto ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
@@ -607,7 +610,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
    <td> Reattività stimata<br /> </td> 
    <td> -<br /> </td> 
    <td> Rapporto tra il numero di destinatari che hanno fatto clic in una consegna almeno una volta rispetto alla stima dei destinatari che hanno aperto la consegna almeno una volta.<br /> </td> 
-   <td> percentuale(@destinatarioClick, @EstimRecipientOpen<br /> </td> 
+   <td> percentuale(@RecipientClick, @EstimRecipientOpen<br /> </td> 
   </tr> 
   <tr> 
    <td> Pagine visitate<br /> </td> 
@@ -703,10 +706,10 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -750,10 +753,10 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -766,7 +769,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
   <tr> 
    <td> Messaggi rifiutati dalla regola<br /> </td> 
    <td> @rifiutare<br /> </td> 
-   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, in quarantena, in lista nera, ecc.<br /> </td> 
+   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, messo in quarantena, aggiunto all'elenco dei blocchi, ecc.<br /> </td> 
    <td> sum([proprietà/@rifiuto])<br /> </td> 
   </tr> 
   <tr> 
@@ -809,10 +812,10 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -844,10 +847,10 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -866,7 +869,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
   <tr> 
    <td> Rimbalzi netti<br /> </td> 
    <td> @hardBounce<br /> </td> 
-   <td> Numero totale di messaggi con stato uguale a "Non riuscito" e motivo uguale a "Utente sconosciuto".<br /> </td> 
+   <td> Numero totale di messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "Utente sconosciuto".<br /> </td> 
    <td> @unknownUser<br /> </td> 
   </tr> 
   <tr> 
@@ -878,7 +881,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
   <tr> 
    <td> Messaggi aperti<br /> </td> 
    <td> @receiveOpen<br /> </td> 
-   <td> Numero totale di @broadLog-ids nei registri di monitoraggio.<br /> </td> 
+   <td> Numero totale di @broadLog-ids nei registri di tracciamento.<br /> </td> 
    <td> Countdistinto ([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
@@ -903,17 +906,17 @@ Questo rapporto si basa sulle tabelle **Consegne** (nms:delivery) e **Registri**
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Etichetta</strong><br /> </th> 
-   <th> <strong>Nome</strong> campo <br /> </th> 
-   <th> <strong>Descrizione</strong> indicatore <br /> </th> 
-   <th> <strong>Formula</strong> di calcolo dell'indicatore <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
+   <th> <strong>Nome campo</strong> <br /> </th> 
+   <th> <strong>Descrizione indicatore</strong> <br /> </th> 
+   <th> <strong>Formula di calcolo indicatore</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
-   <td> Somma di tutti @id con una chiave primaria URL uguale a 1 (aperta). <br /> </td> 
+   <td> Somma di tutti gli @id con una chiave primaria URL uguale a 1 (aperta). <br /> </td> 
    <td> count(Iif([@url-id] = 1, @id, 0)<br /> </td> 
   </tr> 
  </tbody> 
@@ -925,20 +928,20 @@ L&#39;indicatore **Inviato** (@sent), a cui si accede tramite il nodo **Consegne
 
 ## Sincronizzazione indicatori {#indicator-synchronization}
 
-Se rilevi una desincronizzazione o un&#39;incoerenza per alcuni indicatori, seleziona la distribuzione interessata in Adobe Campaign Explorer, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fate clic **[!UICONTROL Next]**, quindi fate clic **[!UICONTROL Finish]**.
+In caso di desincronizzazione o incoerenza per alcuni indicatori, selezionate la consegna interessata nell&#39;elenco di cartelle del Adobe Campaign , fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fate clic **[!UICONTROL Next]**, quindi fate clic **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
 ## Aperture di tracciamento {#tracking-opens-}
 
-Affinché Adobe Campaign possa rilevare le aperture dei messaggi, il destinatario deve scaricare le immagini presenti nell&#39;e-mail. Le e-mail HTML e multiparte/alternativa includono un&#39;immagine di 0 pixel che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione delle immagini.
+Affinché  Adobe Campaign possa rilevare le aperture dei messaggi, il destinatario deve scaricare le immagini contenute nell&#39;e-mail. HTML e e e-mail multiparte/alternative includono un&#39;immagine di 0 pixel che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione delle immagini.
 
 ## Persone / destinatari interessati {#targeted-persons---recipients}
 
-In alcuni rapporti, Adobe Campaign differenzia le persone mirate e i destinatari mirati.
+In alcuni rapporti,  Adobe Campaign distingue le persone mirate e i destinatari mirati.
 
 I destinatari di destinazione sono tutti i destinatari a cui è stato inviato il recapito.
 
 Il numero di persone include destinatari mirati più tutte le persone a cui è stato inviato il messaggio e-mail. Ogni volta che si apre o si fa clic in un nuovo browser (il messaggio non è ancora stato aperto), alle statistiche viene aggiunta un&#39;altra persona.
 
-Ad esempio, se ricevi un&#39;e-mail (inviata da Adobe Campaign) al lavoro e ti apri o fai clic su di essa, sarai conteggiato come destinatario (ad es. destinatario=1, persona=1). Se inviate questa e-mail a due amici, il numero di destinatari con targeting sarà ancora uguale a uno, mentre il numero di persone sarà uguale a tre. Il valore 3 coincide con ogni apertura o clic in un nuovo browser.
+Ad esempio, se ricevi un&#39;e-mail (inviata dal  Adobe Campaign) al lavoro e ti apri o fai clic su di essa, verrai conteggiato come destinatario (ad es. destinatario=1, persona=1). Se inviate questa e-mail a due amici, il numero di destinatari con targeting sarà ancora uguale a uno, mentre il numero di persone sarà uguale a tre. Il valore 3 coincide con ogni apertura o clic in un nuovo browser.
