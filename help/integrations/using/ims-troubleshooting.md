@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **i
 Deve essere presente **un solo** account esterno con le seguenti impostazioni:
 
 * **Nome** interno: Adobe_Marketing_Cloud
-* **Tipo**: Adobe Marketing Cloud
+* **Tipo**: Adobe Marketing Cloud 
 
 Eliminate eventuali account esterni duplicati con le stesse impostazioni.
 
@@ -37,13 +40,13 @@ Eliminate eventuali account esterni duplicati con le stesse impostazioni.
 
 Se l&#39;account esterno dispone di un campo Contesto **** prodotto, verificate che il relativo valore sia impostato su: **dma_campaign_classic**
 
-Assicurati che il contesto del prodotto sia lo stesso per Campaign ed Experience Cloud.
+Assicurati che il contesto del prodotto sia lo stesso per Campaign e  Experience Cloud.
 
-Ad esempio, se il contesto **** prodotto non viene visualizzato, il contesto prodotto predefinito deve essere **dma_campaign** sia in Campaign che Experience Cloud. Se viene visualizzato il campo Contesto **** prodotto, il contesto predefinito del prodotto deve essere **dma_campaign_classic** sia in Campaign che Experience Cloud.
+Ad esempio, se il Contesto **** prodotto non viene visualizzato, il contesto prodotto predefinito deve essere **dma_campaign** sia in Campaign che  Experience Cloud. Se viene visualizzato il campo Contesto **** prodotto, il contesto predefinito del prodotto deve essere **dma_campaign_classic** sia in Campaign che  Experience Cloud.
 
 **[!UICONTROL IMS Server URL]**
 
-Nell&#39;account esterno di Campaign **Adobe Marketing Cloud** , verifica che **[!UICONTROL IMS Server URL]** sia [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) o [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Accertatevi che le istanze di fase e produzione puntino allo stesso punto finale di produzione IMS.
+Nell&#39;account esterno del Adobe Marketing Cloud **Campaign** Campaign, verifica che **[!UICONTROL IMS Server URL]** sia [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) o [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Accertatevi che le istanze di fase e produzione puntino allo stesso punto finale di produzione IMS.
 
 **Maschera di associazione**
 
@@ -62,7 +65,7 @@ Gli ambiti definiti nell&#39;account esterno della campagna devono essere un sot
 
 **URL richiamata**
 
-L’URL **di** callback deve essere inserito nella white list e iniziare con &quot;https://&quot;. Verificate che l’URL **di** callback sia collegato all’istanza corrispondente. Ad esempio, l&#39;istanza di produzione deve reindirizzare all&#39;URL di produzione.
+L’URL **di** callback deve essere aggiunto all’elenco di indirizzi consentiti e iniziare con &quot;https://&quot;. Verificate che l’URL **di** callback sia collegato all’istanza corrispondente. Ad esempio, l&#39;istanza di produzione deve reindirizzare all&#39;URL di produzione.
 
 **ID client e segreto**
 
@@ -84,7 +87,7 @@ Riavvia il server se vengono apportate modifiche alle impostazioni precedenti ne
 
    Fare riferimento ai passaggi precedenti per verificare la configurazione dei gruppi **[!UICONTROL Association Mask]** e degli operatori.
 
-* L&#39;utente non può accedere alla pagina di accesso all&#39;Adobe ID:
+* L&#39;utente non è in grado di accedere alla pagina di login del Adobe ID :
 
    Fare riferimento ai passaggi precedenti per controllare la configurazione dell&#39;ambito.
 
