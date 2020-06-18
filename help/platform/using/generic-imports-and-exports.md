@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 0%
 
 ---
 
 
 # Importazioni ed esportazioni generiche{#generic-imports-and-exports}
 
-Adobe Campaign offre un modulo di esportazione dei dati che semplifica l&#39;estrazione di un elenco di clienti o potenziali (ad esempio, dopo un&#39;operazione di targeting) che diventeranno quindi parte di una popolazione target.
+ Adobe Campaign offre un modulo di esportazione dei dati che semplifica l&#39;estrazione di un elenco di clienti o potenziali (ad esempio, dopo un&#39;operazione di targeting) che diventeranno quindi parte di una popolazione target.
 
-Adobe Campaign offre anche un modulo di importazione che consente di fornire al database i dati provenienti da file esterni.
+ Adobe Campaign offre anche un modulo di importazione che consente di fornire al database i dati provenienti da file esterni.
 
 >[!NOTE]
 >
->Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite **[!UICONTROL Import]** e **[!UICONTROL Export]** attività. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. Se necessario, puoi creare un&#39;importazione o un&#39;esportazione occasionale tramite il **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo della struttura di Adobe Campaign.
+>Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite **[!UICONTROL Import]** e **[!UICONTROL Export]** attività. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. Se necessario, potete creare un&#39;importazione o un&#39;esportazione occasionale tramite il **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo della struttura ad Adobe Campaign .
 
 È possibile:
 
@@ -38,11 +41,11 @@ Adobe Campaign offre anche un modulo di importazione che consente di fornire al 
 
 >[!CAUTION]
 >
->L&#39;importazione dei dati in Campaign deve essere eseguita tramite flussi di lavoro per garantire la coerenza dei dati e migliorare l&#39;efficienza. Per ulteriori informazioni, consultare le sezioni [Importazione di dati](../../workflow/using/importing-data.md), [Best practice](../../workflow/using/importing-data.md#best-practices-when-importing-data) e [Importazione di modelli di esempio](../../workflow/using/importing-data.md#setting-up-a-recurring-import) .
+>L&#39;importazione dei dati in Campaign deve essere eseguita tramite flussi di lavoro per garantire la coerenza dei dati e migliorare l&#39;efficienza. Per ulteriori informazioni, consultare le sezioni [Importazione di dati](../../workflow/using/importing-data.md), [Importazione di best practice](../../workflow/using/importing-data.md#best-practices-when-importing-data) e [Importazione di modelli di esempio](../../workflow/using/importing-data.md#setting-up-a-recurring-import) .
 
 ## Creating a job template {#creating-a-job-template}
 
-I modelli di importazione ed esportazione sono memorizzati nella **[!UICONTROL Resources > Templates > Job templates]** directory della struttura di Adobe Campaign.
+I modelli di importazione ed esportazione sono memorizzati nella **[!UICONTROL Resources > Templates > Job templates]** directory della struttura  Adobi Campaign.
 
 ![](assets/s_ncs_user_export_wizard_template.png)
 
@@ -54,17 +57,17 @@ La procedura per la creazione di un modello di processo viene presentata in [Esp
 
 >[!NOTE]
 >
->Il modello nativo **[!UICONTROL Import blacklist]** è già configurato per importare un elenco di indirizzi e-mail in lista nera.
+>Il modello nativo **[!UICONTROL Import block list]** è già configurato per importare un elenco di indirizzi e-mail aggiunti all&#39;elenco dei blocchi.
 > 
 >I modelli **[!UICONTROL New text import]** e **[!UICONTROL New text export]** consentono di configurare un’importazione o un’esportazione da zero.
 
 ## Creazione di una nuova importazione/esportazione {#creating-a-new-import-export}
 
-Una volta configurato il modello, le operazioni di importazione ed esportazione possono essere avviate in diversi contesti in Adobe Campaign.
+Una volta configurato il modello, le operazioni di importazione ed esportazione possono essere avviate in diversi contesti  Adobe Campaign.
 
 Tutte queste opzioni consentono di aprire la procedura guidata di [importazione](../../platform/using/importing-data.md) o [esportazione](../../platform/using/exporting-data.md#export-wizard) .
 
-* Nella **[!UICONTROL Profiles and targets]** sezione dell&#39;area di lavoro di Adobe Campaign, fai clic sul **[!UICONTROL Jobs]** collegamento: viene visualizzato l’elenco delle importazioni e delle esportazioni esistenti.
+* Nella **[!UICONTROL Profiles and targets]** sezione dell’area di lavoro  Adobe Campaign, fate clic sul **[!UICONTROL Jobs]** collegamento: viene visualizzato l’elenco delle importazioni e delle esportazioni esistenti.
 
    Fate clic sul **[!UICONTROL Create]** pulsante e selezionate il tipo di processo da eseguire.
 
@@ -74,7 +77,7 @@ Tutte queste opzioni consentono di aprire la procedura guidata di [importazione]
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* Importazioni ed esportazioni possono essere avviate anche da Adobe Campaign Explorer.
+* Importazioni ed esportazioni possono essere avviate anche dall&#39;esploratore di Adobi Campaign .
 
    Per esportare/importare dati, fare clic sul **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo, quindi sull&#39; **[!UICONTROL New]** icona, quindi selezionare **[!UICONTROL Export]** o **[!UICONTROL Import]**. Viene aperta la procedura guidata appropriata.
 
