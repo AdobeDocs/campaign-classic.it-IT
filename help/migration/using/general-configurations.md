@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '2822'
+ht-degree: 0%
 
 ---
 
 
 # Configurazioni generali{#general-configurations}
 
-Questa sezione descrive la configurazione da eseguire in Adobe Campaign v7 se state eseguendo la migrazione da una v5.11 o una v6.02.
+Questa sezione descrive la configurazione da eseguire in  Adobe Campaign v7 se state eseguendo la migrazione da una v5.11 o una v6.02.
 
 Inoltre:
 
@@ -31,7 +34,7 @@ Inoltre:
 
 ## Fusi orari {#time-zones}
 
-### Modalità multifuso {#multi-time-zone-mode}
+### Modalità fuso orario multiplo {#multi-time-zone-mode}
 
 Nella release v6.02, la modalità &quot;fuso orario multiplo&quot; era disponibile solo per i motori di database PostSQL. Ora è disponibile indipendentemente dal tipo di motore di database utilizzato. Consigliamo vivamente di trasformare la base in una base &quot;multi-timezone&quot;.
 
@@ -59,7 +62,7 @@ Se durante l&#39;aggiornamento successivo viene visualizzato un errore **ORA 018
 
    I file del fuso orario si trovano in genere nella cartella **ORACLE_HOME/oracore/zoneinfo/** .
 
-1. Accertatevi che i file del fuso orario siano identici su entrambi i server.
+1. Verificate che i file del fuso orario siano identici su entrambi i server.
 
 Per maggiori informazioni, visita: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
@@ -89,9 +92,9 @@ Per verificare se entrambi i lati si trovano negli stessi fusi orari:
 
 >[!IMPORTANT]
 >
->Per motivi di sicurezza, la piattaforma Adobe Campaign non è più accessibile per impostazione predefinita: è necessario configurare le aree di protezione e quindi raccogliere gli indirizzi IP dell&#39;operatore.
+>Per motivi di sicurezza, la piattaforma di Adobe Campaign  non è più accessibile per impostazione predefinita: è necessario configurare le aree di protezione e quindi raccogliere gli indirizzi IP dell&#39;operatore.
 
-Adobe Campaign v7 include il concetto di zone **di** sicurezza. Ogni utente deve essere associato a una zona per accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;utente deve essere incluso negli indirizzi o negli intervalli di indirizzi definiti nella zona di protezione. La configurazione delle aree di protezione può essere effettuata nel file di configurazione del server Adobe Campaign. La zona di protezione a cui è associato un utente deve essere definita nella console (**[!UICONTROL Administration > Access management > Operators]**).
+ Adobe Campaign v7 riguarda il concetto di zone **di** sicurezza. Ogni utente deve essere associato a una zona per accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;utente deve essere incluso negli indirizzi o negli intervalli di indirizzi definiti nella zona di protezione. È possibile configurare le aree di protezione nel file di configurazione del server di Adobe Campaign . La zona di protezione a cui è associato un utente deve essere definita nella console (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Prima della migrazione**, chiedi all’amministratore di rete di aiutarti a definire le zone di sicurezza da attivare dopo la migrazione.
 
@@ -113,7 +116,7 @@ nlserver config -internalpassword
 
 ### Nuove funzioni in v7 {#new-features-in-v7}
 
-* Gli utenti senza autorizzazioni non possono più connettersi ad Adobe Campaign. Le autorizzazioni devono essere aggiunte manualmente, ad esempio creando un&#39;autorizzazione denominata **connect**.
+* Gli utenti senza autorizzazioni non possono più connettersi a  Adobe Campaign. Le autorizzazioni devono essere aggiunte manualmente, ad esempio creando un&#39;autorizzazione denominata **connect**.
 
    Gli utenti interessati da questa modifica vengono identificati ed elencati durante il post aggiornamento.
 
@@ -156,7 +159,7 @@ Alcuni schemi predefiniti sono stati modificati e ora sono accessibili solo per 
 
 ### Parametro sessionToken {#sessiontoken-parameter}
 
-In v5, il parametro del token **di** sessione funzionava su entrambi i lati client (elenco di schermate del tipo di panoramica, editor di collegamenti, ecc.) e lato server (applicazioni Web, rapporti, jsp, jssp, ecc.). In v7, funziona solo sul lato server. Se desiderate tornare alla funzionalità completa come in v5, dovete modificare i collegamenti utilizzando questo parametro e passare attraverso la pagina di connessione:
+In v5, il parametro del token **di** sessione funzionava su entrambi i lati client (elenco di schermate del tipo di panoramica, editor di collegamenti, ecc.) e lato server (applicazioni Web, rapporti, jsp, jssp, ecc.). In v7, funziona solo sul lato server. Se desiderate tornare alla funzionalità completa come in v5, dovete modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
 
 Esempio di collegamento:
 
@@ -192,18 +195,18 @@ Ad esempio:
 
 ```
 <url IPMask="" deny="" hostMask="" httpAllowed="true" relayHost="true" relayPath="true"
-           status="blacklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
+           status="blocklist" targetUrl="https://localhost:8080" timeout="" urlPath="*/cus/myPublicPage.jssp"/>
 ```
 
 ## Sintassi {#syntax}
 
 ### JavaScript {#javascript}
 
-Adobe Campaign v7 integra un interprete JavaScript più recente. Tuttavia, questo aggiornamento potrebbe causare il malfunzionamento di alcuni script. Poiché il motore precedente era più permissivo, alcune sintassi funzionerebbe, che non è più il caso con la nuova versione del motore.
+ Adobe Campaign v7 integra un interprete JavaScript più recente. Tuttavia, questo aggiornamento potrebbe causare il malfunzionamento di alcuni script. Poiché il motore precedente era più permissivo, alcune sintassi funzionerebbe, che non è più il caso con la nuova versione del motore.
 
 La **[!UICONTROL myObject.@attribute]** sintassi ora è valida solo per gli oggetti XML. Questa sintassi può essere utilizzata per personalizzare le consegne e la gestione dei contenuti. Se avete utilizzato questo tipo di sintassi su un oggetto non XML, le funzioni di personalizzazione non funzioneranno più.
 
-Per tutti gli altri tipi di oggetto, la sintassi è ora **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ad esempio, un oggetto non XML che utilizzava la sintassi seguente: È ora **[!UICONTROL employee.@sn]**necessario utilizzare la sintassi seguente:**[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Per tutti gli altri tipi di oggetto, la sintassi è ora **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ad esempio, un oggetto non XML che utilizzava la sintassi seguente:**[!UICONTROL employee.@sn]**, deve ora usare la sintassi seguente:**[!UICONTROL employee`[`&quot;Sn&quot;`]`]**.
 
 * Sintassi precedente:
 
@@ -251,7 +254,7 @@ Non è più possibile utilizzare un attributo XML come chiave di tabella.
 
 ### SQLData {#sqldata}
 
-Per rafforzare la sicurezza dell’istanza, in Adobe Campaign v7 è stata introdotta una nuova sintassi che sostituisce la sintassi basata su SQLData. Se utilizzate questi elementi di codice con questa sintassi, dovete modificarli. I principali elementi in questione sono:
+Per rafforzare la sicurezza dell&#39;istanza, nell&#39;Adobe Campaign v7 è stata introdotta una nuova sintassi che sostituisce la sintassi basata su SQLData. Se utilizzate questi elementi di codice con questa sintassi, dovete modificarli. I principali elementi in questione sono:
 
 * Filtraggio per sottoquery: la nuova sintassi si basa sull&#39; `<subQuery>` elemento per definire una sottoquery
 * Aggregati: la nuova sintassi è &quot;funzione di aggregazione(raccolta)&quot;
@@ -265,7 +268,7 @@ Lo schema queryDef (xtk:queryDef) è stato modificato:
 
 Quando si utilizza un attributo &quot;@expr&quot;, è possibile che sia presente SQLData. È possibile eseguire una ricerca per i seguenti termini: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Le istanze di Adobe Campaign v7 sono protette per impostazione predefinita. La sicurezza viene in termini di definizioni delle zone di protezione nel **[!UICONTROL serverConf.xml]** file: l&#39;attributo **allowSQLInjection** gestisce la protezione della sintassi SQL.
+ Adobe Campaign v7 le istanze sono protette per impostazione predefinita. La sicurezza viene in termini di definizioni delle zone di protezione nel **[!UICONTROL serverConf.xml]** file: l&#39;attributo **allowSQLInjection** gestisce la protezione della sintassi SQL.
 
 Se si verifica un errore SQLData durante l&#39;esecuzione post-aggiornamento, è necessario modificare questo attributo per consentire temporaneamente l&#39;utilizzo di sintassi basate su SQLData, consentendo di riscrivere il codice. Per eseguire questa operazione, è necessario modificare l&#39;opzione seguente nel file **serverConf.xml** :
 
@@ -339,7 +342,7 @@ Di seguito sono riportati alcuni esempi comparativi tra la vecchia e la nuova si
      </queryFilter>
    ```
 
-**Aggregato**
+**L&#39;aggregato**
 
 Aggregate, funzione (raccolta)
 
@@ -443,7 +446,7 @@ Il risultato della sincronizzazione può essere visualizzato in due modi:
 
    Se l&#39;avviso riguarda un conflitto di risorse, l&#39;operatore deve prestare attenzione a risolverlo.
 
-* Il risultato della sincronizzazione è **postupgrade_`<server version number>`_time del file postupgrade`>`.log** . È disponibile per impostazione predefinita nella seguente directory: directory **di installazione/var/`<instance>`postupgrade**. Gli errori e gli avvisi sono indicati dagli attributi **error** e **warning** .
+* Il risultato della sincronizzazione è **postupgrade_`<server version number>`_time del file postupgrade`>`.log** . È disponibile per impostazione predefinita nella seguente directory: **directory di installazione/var/`<instance>`postupgrade**. Gli errori e gli avvisi sono indicati dagli attributi **error** e **warning** .
 
 ### Risoluzione di un conflitto {#resolve-a-conflict}
 
@@ -451,17 +454,17 @@ La risoluzione dei conflitti deve essere eseguita solo dagli operatori avanzati 
 
 Per risolvere un conflitto, eseguire il seguente processo:
 
-1. Nella struttura ad albero di Adobe Campaign, posiziona il cursore sopra **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
+1. Nella struttura ad albero  Adobe Campaign, posizionare il cursore **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]**.
 1. Selezionare il conflitto da risolvere nell&#39;elenco.
 
 Esistono tre modi possibili per risolvere un conflitto:
 
 * **[!UICONTROL Declared as resolved]**: richiede l&#39;intervento preventivo dell&#39;operatore.
-* **[!UICONTROL Accept the new version]**: consigliato se le risorse fornite con Adobe Campaign non sono state modificate dall&#39;utente.
+* **[!UICONTROL Accept the new version]**: consigliato se le risorse fornite con  Adobe Campaign non sono state modificate dall&#39;utente.
 * **[!UICONTROL Keep the current version]**: indica che l&#39;aggiornamento viene rifiutato.
 
    >[!IMPORTANT]
-   Se selezionate questa modalità di risoluzione, rischiate di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che tale opzione non sia utilizzata o riservata solo agli operatori esperti.
+   Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che tale opzione non sia utilizzata o riservata solo agli operatori esperti.
 
 Se scegliete di risolvere manualmente il conflitto, procedete come segue:
 
@@ -478,7 +481,7 @@ Se scegliete di risolvere manualmente il conflitto, procedete come segue:
 
 ## Tomcat {#tomcat}
 
-Il server Tomcat integrato in Adobe Campaign v7 ha modificato la versione (Tomcat 7). Anche la sua cartella di installazione (tomcat-6) è cambiata (tomcat 7). Dopo l&#39;aggiornamento, accertatevi che i percorsi colleghino alla cartella aggiornata (nel **[!UICONTROL serverConf.xml]** file):
+Il server Tomcat integrato nel  Adobe Campaign v7 ha modificato la versione (Tomcat 7). Anche la sua cartella di installazione (tomcat-6) è cambiata (tomcat 7). Dopo l&#39;aggiornamento, accertatevi che i percorsi colleghino alla cartella aggiornata (nel **[!UICONTROL serverConf.xml]** file):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar 
@@ -494,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 ### Prerequisiti {#prerequisites}
 
-**Prima dell&#39;aggiornamento** successivo, è necessario eliminare tutti i riferimenti allo schema dalla versione 6.02 che non saranno più presenti nella versione v7.
+**Prima dell’aggiornamento** successivo, è necessario eliminare tutti i riferimenti allo schema dalla versione 6.02 che non saranno più presenti nella versione v7.
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -504,12 +507,12 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 ### Contenuto offerta {#offer-content}
 
-In v7, il contenuto dell’offerta è stato spostato. In v6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). In v7, il contenuto è ora nello schema delle offerte. Dopo l&#39;aggiornamento, il contenuto non sarà quindi visibile nell&#39;interfaccia. Dopo l&#39;aggiornamento, è necessario ricreare il contenuto dell&#39;offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell&#39;offerta.
+In v7, il contenuto dell’offerta è stato spostato. In v6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). In v7, il contenuto è ora nello schema delle offerte. Dopo l&#39;aggiornamento successivo, il contenuto non sarà quindi visibile nell&#39;interfaccia. Dopo l&#39;aggiornamento, è necessario ricreare il contenuto dell&#39;offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell&#39;offerta.
 
 >[!IMPORTANT]
-Se alcune consegne che utilizzano offerte configurate devono essere inviate dopo la migrazione, dovete eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non si desidera utilizzare tutte le nuove funzioni di Interaction v7. Questa è una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per maggiori informazioni su questa modalità, contattateci.
+Se alcune consegne che utilizzano offerte configurate devono essere inviate dopo la migrazione, dovete eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non si desidera utilizzare tutte le nuove funzioni di Interaction v7. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per maggiori informazioni su questa modalità, contattateci.
 
-Un esempio di script di movimento (**interactiveTo610_full_XX.js**) è disponibile nella cartella **Migrazione** all&#39;interno della cartella Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (i **[!UICONTROL htmlSource]** campi e **[!UICONTROL textSource]** ). Il contenuto presente nella tabella **NmsEmailOfferView** è stato spostato nella tabella delle offerte.
+Un esempio di script di movimento (**interactiveTo610_full_XX.js**) è disponibile nella cartella **Migration** all’interno della cartella  Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (i **[!UICONTROL htmlSource]** campi e **[!UICONTROL textSource]** ). Il contenuto presente nella tabella **NmsEmailOfferView** è stato spostato nella tabella delle offerte.
 
 >[!NOTE]
 L&#39;utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; e &quot;rendering delle funzioni&quot;. Per beneficiare di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
@@ -602,7 +605,7 @@ Di seguito viene illustrata la procedura da seguire dopo aver spostato il conten
 
    ![](assets/migration_interaction_5.png)
 
-1. Esegue le stesse operazioni per tutte le offerte di ambiente ENV.
+1. Esegue le stesse operazioni per tutte le offerte di ambiente &quot;ENV&quot;.
 1. Attiva tutte le offerte di ambiente &quot;ENV_DESIGN&quot; sui canali pertinenti.
 1. Test per rendere disponibile un&#39;offerta. Se non si verificano problemi, eseguite le attività in sospeso nell’attività del flusso di lavoro più recente **[!UICONTROL Offer notification]** (offerMgt) per rendere attive tutte le offerte.
 
@@ -617,11 +620,11 @@ Di seguito viene illustrata la procedura da seguire dopo aver spostato il conten
 
 ### Rapporti standard {#standard-reports}
 
-Tutti i report standard attualmente utilizzano il motore di rendering v6.x. Se avevate aggiunto JavaScript in questi rapporti, alcuni elementi potrebbero non funzionare più. La vecchia versione di JavaScript non è compatibile con il motore di rendering v6.x. È quindi necessario controllare il codice JavaScript e adattarlo in un secondo momento. È necessario verificare ogni rapporto, in particolare la funzione di esportazione.
+Tutti i report standard attualmente utilizzano il motore di rendering v6.x. Se avevate aggiunto JavaScript in questi rapporti, alcuni elementi potrebbero non funzionare più. In effetti, la vecchia versione di JavaScript non è compatibile con il motore di rendering v6.x. È quindi necessario controllare il codice JavaScript e adattarlo in un secondo momento. È necessario verificare ogni rapporto, in particolare la funzione di esportazione.
 
 ### Rapporti personalizzati {#personalized-reports}
 
-Se desiderate avere il banner blu dalla release v7 (che consenta di accedere agli universi), dovete ripubblicare i rapporti. In caso di problemi, potete forzare il motore di rendering v6.0. Per eseguire questa operazione, andate all&#39; **[!UICONTROL Properties]** interno del rapporto, fate clic **[!UICONTROL Rendering]** e scegliete il motore di **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering.
+Se desiderate avere il banner blu dalla release v7 (che consenta di accedere agli universi), dovete ripubblicare i rapporti. In caso di problemi, potete forzare il motore di rendering v6.0. Per eseguire questa operazione, andate all&#39; **[!UICONTROL Properties]** interno del rapporto, fate clic su **[!UICONTROL Rendering]** e scegliete il motore di **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering.
 
 ![](assets/migration_reports_1.png)
 
@@ -676,7 +679,7 @@ I passaggi per selezionare il motore di rendering sono gli stessi per la selezio
 
 ## Cappello rosso {#red-hat}
 
-Se gli schemi out-of-the-box sono stati eliminati in v6.02 o v5.11, non sarà più possibile modificare gli schemi dopo l&#39;aggiornamento postaggiornato. In questo caso, eseguite il comando:
+Se gli schemi out-of-the-box sono stati eliminati in v6.02 o v5.11, dopo l’aggiornamento potrebbe non essere più possibile modificare gli schemi. In questo caso, eseguite il comando:
 
 ```
 su - neolane
