@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ In questa sezione viene illustrato l&#39;utilizzo dei servizi &quot;Subscribe&qu
 
 >[!IMPORTANT]
 >
->[La documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
+>[La documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI della campagna contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript nel  Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
 ## Iscrizione (nms:iscrizione) {#subscribe--nms-subscription-}
 
@@ -147,7 +150,7 @@ Se il destinatario non è presente nel database o non è iscritto al servizio in
 
 >[!NOTE]
 >
->Se il nome del servizio non è specificato come parametro, il destinatario viene automaticamente inserito in blacklist (@blackList=&quot;1&quot;).
+>Se il nome del servizio non è specificato come parametro, il destinatario viene inserito automaticamente nell&#39;elenco dei blocchi (@blockList=&quot;1&quot;).
 
 Questa chiamata non restituisce alcun dato, tranne eventuali errori.
 
@@ -204,9 +207,9 @@ Descrizione del metodo nello schema:
 </method>
 ```
 
-È necessario creare un modello di consegna dalla console client di Adobe Campaign. Contiene i parametri comuni a tutte le consegne (indirizzo del mittente o durata di validità del messaggio).
+È necessario creare un modello di consegna dalla console client  Adobe Campaign. Contiene i parametri comuni a tutte le consegne (indirizzo del mittente o durata di validità del messaggio).
 
-Il documento XML di input è un frammento di modello di consegna che segue la struttura dello schema &quot;nms:delivery&quot;. Contiene tutti i dati aggiuntivi che non è stato possibile definire in modo statico nel modello di consegna (ad esempio, l&#39;elenco dei destinatari da destinare).
+Il documento XML di input è un frammento di modello di consegna che segue la struttura dello schema &quot;nms:delivery&quot;. Conterrà tutti i dati aggiuntivi che non è stato possibile definire in modo statico nel modello di consegna (ad esempio, l&#39;elenco dei destinatari da destinare).
 
 Questa chiamata non restituisce alcun dato, tranne eventuali errori.
 
