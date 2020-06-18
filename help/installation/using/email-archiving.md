@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 1%
 
 ---
 
 
 # Archiviazione e-mail{#email-archiving}
 
-Puoi configurare Adobe Campaign per mantenere una copia dei messaggi e-mail inviati dalla tua piattaforma.
+Potete configurare  Adobe Campaign per mantenere una copia delle e-mail inviate dalla piattaforma in uso.
 
-Tuttavia, Adobe Campaign non gestisce i file archiviati. Consente di inviare i messaggi di vostra scelta a un indirizzo dedicato, da dove possono essere elaborati e archiviati utilizzando un sistema esterno.
+Tuttavia,  Adobe Campaign stesso non gestisce i file archiviati. Consente di inviare i messaggi di vostra scelta a un indirizzo dedicato, da dove possono essere elaborati e archiviati utilizzando un sistema esterno.
 
 A tal fine, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a un server remoto, ad esempio un server di posta elettronica SMTP. La destinazione di archiviazione è un indirizzo e-mail CCN (invisibile ai destinatari della consegna) che è necessario specificare.
 
@@ -34,13 +37,13 @@ A tal fine, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a 
 * Per architetture **** ospitate e ibride, contattate il vostro responsabile commerciale per attivarla. L&#39;indirizzo CCN desiderato deve essere fornito al team Adobe che lo configurerà automaticamente.
 * Per le installazioni **** locali, seguite le linee guida riportate di seguito per attivarle. Consultate le sezioni [Attivazione dell&#39;archiviazione delle e-mail (in sede)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail CCN (in sede)](#configuring-the-bcc-email-address--on-premise-) .
 * È possibile utilizzare un solo indirizzo e-mail CCN.
-* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Archive emails]** opzione. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Archive emails]** opzione. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 * Solo le e-mail inviate con successo vengono prese in considerazione, i messaggi non vengono visualizzati.
-* Il sistema di archiviazione delle e-mail è cambiato con Adobe Campaign 17.2 (build 8795). Se si utilizza già l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema di archiviazione delle e-mail (CCN). Per ulteriori informazioni, consulta la sezione [Aggiornato sistema di archiviazione delle e-mail (CCN)](#updated-email-archiving-system--bcc-) .
+* Il sistema di archiviazione delle e-mail è cambiato con  Adobe Campaign 17.2 (build 8795). Se si utilizza già l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema di archiviazione delle e-mail (CCN). Per ulteriori informazioni, consulta la sezione [Aggiornato sistema di archiviazione delle e-mail (CCN)](#updated-email-archiving-system--bcc-) .
 
 ## Attivazione dell&#39;archiviazione delle e-mail (in sede) {#activating-email-archiving--on-premise-}
 
-Per attivare l’archiviazione delle e-mail in CCN quando Adobe Campaign è installato in sede, segui i passaggi descritti di seguito.
+Per attivare l&#39;archiviazione delle e-mail CCN quando  Adobe Campaign è installato in sede, attenetevi alla procedura indicata di seguito.
 
 ### Cartella locale {#local-folder}
 
@@ -132,7 +135,7 @@ Nel file **config-`<instance name>.xml`**, utilizzate i seguenti parametri per d
 
 >[!CAUTION]
 >
->Il sistema di archiviazione delle e-mail (CCN) è stato modificato con Adobe Campaign 17.2 (build 8795). Se state effettuando l’aggiornamento da una build precedente e state già utilizzando le funzionalità di archiviazione delle e-mail, dovete eseguire l’aggiornamento manuale al nuovo sistema di archiviazione delle e-mail (CCN).
+>Il sistema di archiviazione delle e-mail (CCN) è stato modificato con  Adobe Campaign 17.2 (build 8795). Se state effettuando l’aggiornamento da una build precedente e state già utilizzando le funzionalità di archiviazione delle e-mail, dovete eseguire l’aggiornamento manuale al nuovo sistema di archiviazione delle e-mail (CCN).
 
 A questo scopo, apportare le seguenti modifiche al **`config-<instance>.xml`** file:
 
@@ -140,7 +143,7 @@ A questo scopo, apportare le seguenti modifiche al **`config-<instance>.xml`** f
 1. Impostate il parametro **compressioneFormat** su **1** , se necessario.
 1. Impostare il parametro **archiveType** su **1**.
 
-Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; **[!UICONTROL Archive emails]** opzione nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; **[!UICONTROL Archive emails]** opzione nel modello di consegna o nella consegna. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Best practice {#best-practices}
 
@@ -150,6 +153,6 @@ Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; 
    * Se condividete un MTA con più client e uno di essi ha attivato questa opzione, il client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizzate un MTA diverso per ciascun client.
    * Se si utilizza lo stesso MTA per più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze saranno duplicati dall&#39;opzione dataLogPath.
 
-* **E-mail per connessione**: L&#39;archiviazione delle e-mail CCN funziona aprendo una connessione e provando a inviare tutte le e-mail tramite tale connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. Aumentare questo numero può avere un grande impatto sul throughput CCN.
-* **IP** invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario inserire in una whitelist IP aggiuntivi sulla rete, a seconda della configurazione del server di posta elettronica.
+* **E-mail per connessione**: L&#39;archiviazione delle e-mail CCN funziona aprendo una connessione e provando a inviare tutte le e-mail tramite quella connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. Aumentare questo numero può avere un grande impatto sul throughput CCN.
+* **IP** invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP all&#39;elenco di indirizzi consentiti nella rete, a seconda della configurazione del server di posta elettronica.
 
