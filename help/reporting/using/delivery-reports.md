@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +75,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 
 * **[!UICONTROL Distinct opens for the population reached]** : Stima del numero di destinatari con targeting che hanno aperto un messaggio almeno una volta. Vengono presi in considerazione i clic sui collegamenti di annullamento dell&#39;iscrizione e le pagine mirror.
 * **[!UICONTROL Sum of opens for the population reached]** : Stima del numero totale di aperture per destinatari con targeting.
-* **[!UICONTROL Clicks on opt-out link]** :Numero di clic sul collegamento di annullamento della sottoscrizione.
+* **[!UICONTROL Clicks on opt-out link]** : Numero di clic sul collegamento di annullamento della sottoscrizione.
 * **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina mirror. Per essere presi in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fare riferimento a questa [pagina](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nel messaggio e-mail.
 
@@ -92,7 +95,7 @@ Questa tabella di valori mostra la suddivisione di consegne, aperture, clic e re
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo rapporto sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere domini predefiniti, modificare l&#39;elenco **[!UICONTROL Domains]** dettagliato e modificare valori e alias. For more on this, refer to [this section](../../platform/using/managing-enumerations.md). La **[!UICONTROL Others]** categoria include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
+>I nomi di dominio visualizzati in questo rapporto sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere domini predefiniti, modificare l&#39;elenco **[!UICONTROL Domains]** dettagliato e modificare valori e alias. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/managing-enumerations.md). La **[!UICONTROL Others]** categoria include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -103,7 +106,7 @@ Questa tabella di valori mostra la suddivisione di consegne, aperture, clic e re
 * **[!UICONTROL Distinct clicks for the population reached]** : Numero di persone distinte che hanno fatto clic su una consegna almeno una volta.
 * **[!UICONTROL Cumulated clicks]** : Numero totale di clic per destinatari con targeting, esclusi i collegamenti senza iscrizione e le pagine mirror.
 * **[!UICONTROL Recipient clicks]** : Numero di destinatari con targeting distinto che hanno fatto clic almeno una volta nella stessa consegna.
-* **[!UICONTROL Estimated recipient reactivity]** : Rapporto tra il numero di destinatari che hanno fatto clic almeno una volta in una consegna e il numero stimato di destinatari che hanno aperto una consegna almeno una volta. I clic sui collegamenti di pagina di rifiuto e di pagina mirror non vengono presi in considerazione.
+* **[!UICONTROL Estimated recipient reactivity]** : Rapporto tra il numero di destinatari che hanno fatto clic almeno una volta in una consegna e il numero stimato di destinatari che hanno aperto una consegna almeno una volta. I clic sui collegamenti di pagina di tipo optedout e mirror non vengono presi in considerazione.
 
 **[!UICONTROL 5. Web tracking]**
 
@@ -129,7 +132,7 @@ Questo rapporto mostra l&#39;elenco delle pagine visitate dopo la consegna.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Per configurare il contenuto di questo rapporto, seleziona: il grafico di valutazione da visualizzare, il filtro dell’ora (dall’avvio dell’azione, nelle prime 6 ore successive all’avvio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, per categoria); per ulteriori informazioni, consultate [questa pagina](../../delivery/using/monitoring-a-delivery.md). Fate clic **[!UICONTROL Refresh]** per confermare la selezione.
+Per configurare il contenuto di questo rapporto, seleziona: il grafico di valutazione da visualizzare, il filtro dell’ora (dall’avvio dell’azione, nelle prime 6 ore successive all’avvio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, per categoria); per ulteriori informazioni, consultate [questa pagina](../../delivery/using/monitoring-a-delivery.md). Click **[!UICONTROL Refresh]** to confirm your selection.
 
 Nella sezione superiore del rapporto vengono visualizzate le seguenti percentuali:
 
@@ -163,8 +166,8 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 
 Questa sezione ha due indicatori:
 
-* **[!UICONTROL Initial population]** :Numero totale di destinatari interessati dalla consegna.
-* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, in quarantena, in lista nera, ecc. Per ulteriori informazioni sulle regole di tipologia, fare riferimento a questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Initial population]** : Numero totale di destinatari interessati dalla consegna.
+* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, in quarantena, aggiunto all&#39;elenco dei blocchi, ecc. Per ulteriori informazioni sulle regole di tipologia, fare riferimento a questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -175,7 +178,7 @@ Il grafico centrale mostra la suddivisione per regola dei messaggi rifiutati dur
 Questa sezione include i seguenti indicatori:
 
 * **[!UICONTROL Messages to be delivered]** : Numero totale di messaggi da inviare dopo l&#39;analisi della consegna.
-* **[!UICONTROL Success]** :Numero di messaggi elaborati correttamente. La frequenza associata è il rapporto con il numero di messaggi da inviare.
+* **[!UICONTROL Success]** : Numero di messaggi elaborati correttamente. La frequenza associata è il rapporto con il numero di messaggi da inviare.
 * **[!UICONTROL Errors]** : Numero totale di errori cumulati durante le consegne e l&#39;elaborazione automatica del rimbalzo. La frequenza associata è il rapporto con il numero di messaggi da inviare.
 * **[!UICONTROL New quarantines]** : Numero di indirizzi in quarantena dopo una consegna non riuscita (dominio utente sconosciuto, non valido). La frequenza associata è il rapporto con il numero di messaggi da inviare.
 
@@ -195,7 +198,7 @@ Questo rapporto fornisce statistiche su aperture, clic e transazioni.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Consente di monitorare l&#39;impatto di marketing della distribuzione. Potete configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione di 1 ora, 3 ore o 24 ore, ecc.). Fate clic **[!UICONTROL Refresh]** per confermare la selezione.
+Consente di monitorare l&#39;impatto di marketing della distribuzione. Potete configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione di 1 ora, 3 ore o 24 ore, ecc.). Click **[!UICONTROL Refresh]** to confirm your selection.
 
 Questo rapporto fornisce una tabella di valori e un grafico Pareto che mostra il tempo necessario per la consegna per raggiungere la massima efficienza. Vengono utilizzati i seguenti indicatori:
 
