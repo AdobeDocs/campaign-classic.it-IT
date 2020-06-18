@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ## Informazioni sulle quarantena {#about-quarantines}
 
-Adobe Campaign gestisce un elenco di indirizzi posti in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
+ Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
 >[!NOTE]
 >
@@ -34,21 +37,21 @@ Adobe Campaign gestisce un elenco di indirizzi posti in quarantena. I destinatar
 
 I profili i cui indirizzi e-mail o numero di telefono si trovano in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedere [Identificazione degli indirizzi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). Ciò velocizzerà le consegne, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
 
-Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. Quarantine consente quindi di evitare la blacklist da parte di questi fornitori.
+Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare che questi provider vengano aggiunti a un elenco di blocchi.
 
 Inoltre, le quarantena contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
 
-### Quarantena e blacklist {#quarantine-vs-blacklisting}
+### Elenco quarantena e blocchi {#quarantine-vs-block-list}
 
 **La quarantena** si applica solo a un indirizzo, non al profilo stesso. Ciò significa che, se due profili hanno lo stesso indirizzo e-mail, saranno entrambi interessati se l&#39;indirizzo viene messo in quarantena.
 
 Allo stesso modo, un profilo il cui indirizzo e-mail è stato messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo, e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
 
-**L&#39;inserimento in blacklist**, invece, impedisce al profilo di essere più mirato da una consegna, ad esempio dopo l&#39;annullamento dell&#39;iscrizione (opzione di rifiuto).
+Se ci si trova nell&#39;elenco **dei** blocchi, d&#39;altro canto, il profilo non verrà più mirato da alcuna consegna, ad esempio dopo un annullamento dell&#39;iscrizione (opzione di rifiuto).
 
 >[!NOTE]
 >
->Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene inserito in blacklist come nel processo di rifiuto delle e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
+>Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene aggiunto all&#39;elenco dei blocchi come nel processo di rifiuto dell&#39;e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
 
 ## Identificazione degli indirizzi in quarantena {#identifying-quarantined-addresses}
 
@@ -103,16 +106,16 @@ Per rimuovere un indirizzo dalla quarantena, cambiarne lo stato manualmente in *
 
 ![](assets/tech_quarant_error_status.png)
 
-Se cambiate lo stato in **[!UICONTROL Whitelisted]**, l&#39;indirizzo verrà mirato sistematicamente ogni volta anche in caso di errore.
+Se cambiate lo stato in **[!UICONTROL On allow list]**, l&#39;indirizzo verrà mirato sistematicamente ogni volta anche in caso di errore.
 
 >[!CAUTION]
-Gli indirizzi inseriti in blacklist non sono interessati dal sistema di quarantena e non hanno come destinazione, anche se si modifica lo stato dell&#39;indirizzo.
+Gli indirizzi nell&#39;elenco dei blocchi non sono interessati dal sistema di quarantena e non hanno come destinazione, anche se si modifica lo stato dell&#39;indirizzo.
 
 È inoltre possibile modificare il numero di errori e il periodo tra gli errori. A questo scopo, modificate le impostazioni della procedura guidata di distribuzione (canale e-mail/impostazioni avanzate). Per ulteriori informazioni sulla procedura guidata di distribuzione, consulta [questa sezione](../../installation/using/deploying-an-instance.md).
 
 ## Condizioni per l&#39;invio di un indirizzo alla quarantena {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (vedere Qualificazione [posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)rimbalzata) e ai tipi e motivi [di mancata](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)consegna.
+ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (vedere Qualificazione [posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)rimbalzata) e ai tipi e ai motivi [di mancata](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)consegna.
 
 * **Errore** ignorato: gli errori ignorati non inviano un indirizzo alla quarantena.
 * **Errore** rigido: l&#39;indirizzo e-mail corrispondente viene inviato immediatamente alla quarantena.
@@ -120,7 +123,7 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 
 Se un utente qualifica un&#39;e-mail come spam (**Feedback loop**), il messaggio viene automaticamente reindirizzato verso una cassetta postale tecnica gestita da Adobe. L&#39;indirizzo e-mail dell&#39;utente viene quindi inviato automaticamente alla quarantena.
 
-Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano ritirati in un secondo momento.
+Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. La quarantena nel Adobe Campaign  fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano ritirati in un secondo momento.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -144,14 +147,14 @@ Gli elementi messi in quarantena sono token dispositivo.
 
 **Per iOS - connettore binario**
 
-Per ogni notifica, Adobe Campaign riceve gli errori sincroni e asincroni dal server APNS. Per i seguenti errori sincroni, Adobe Campaign genera errori software:
+Per ogni notifica,  Adobe Campaign riceve gli errori sincroni e asincroni dal server APNS. Per i seguenti errori sincroni,  Adobe Campaign genera errori soft:
 
 * Problemi di lunghezza del payload: nessun tentativo, il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
 * Problemi di scadenza del certificato: nessun tentativo, il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
 * Connessione persa durante la consegna: tentativi eseguiti. Il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
 * Problema di configurazione del servizio (certificato non valido, password del certificato non valida, nessun certificato): nessun tentativo, il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
 
-Il server APNS notifica in modo asincrono ad Adobe Campaign che un token dispositivo è stato deregistrato (quando l&#39;applicazione mobile è stata disinstallata dall&#39;utente). Il **[!UICONTROL mobileAppOptOutMgt]** flusso di lavoro viene eseguito ogni 6 ore per contattare i servizi di feedback APNS per aggiornare la tabella **AppSubscriptionRcp** . Per tutti i token disattivati, il campo **Disattivato** è impostato su **True** e la sottoscrizione collegata a tale token dispositivo verrà automaticamente esclusa dalle consegne future.
+Il server APNS notifica in modo asincrono  Adobe Campaign che un token dispositivo è stato deregistrato (quando l&#39;applicazione mobile è stata disinstallata dall&#39;utente). Il **[!UICONTROL mobileAppOptOutMgt]** flusso di lavoro viene eseguito ogni 6 ore per contattare i servizi di feedback APNS per aggiornare la tabella **AppSubscriptionRcp** . Per tutti i token disattivati, il campo **Disattivato** è impostato su **True** e la sottoscrizione collegata a tale token dispositivo verrà automaticamente esclusa dalle consegne future.
 
 **Per iOS - Connettore HTTP/2**
 
@@ -248,7 +251,7 @@ Sincrona, se APNS restituisce uno stato &quot;non registrato&quot; per un messag
 
 **Per Android V1**
 
-Per ogni notifica, Adobe Campaign riceve gli errori sincroni direttamente dal server FCM. La campagna Adobe li gestisce al volo e genera errori rigidi o soft in base alla gravità dell&#39;errore e è possibile eseguire dei tentativi:
+Per ogni notifica,  Adobe Campaign riceve gli errori sincroni direttamente dal server FCM. La campagna Adobe li gestisce al volo e genera errori rigidi o soft in base alla gravità dell&#39;errore e è possibile eseguire dei tentativi:
 
 * Lunghezza payload superata, problema di connessione, problema di disponibilità del servizio: tentativi eseguiti, errore software, motivo errore **[!UICONTROL Refused]**.
 * Quota dispositivo superata: nessun tentativo, errore soft, motivo di errore **[!UICONTROL Refused]**.
@@ -264,7 +267,7 @@ Per i clienti che utilizzano il connettore Baidu, ecco i diversi tipi di errori:
 * Connessione persa durante la consegna: errore soft, motivo errore **[!UICONTROL Refused]**, riprovate.
 * Errore sincrono restituito da Baidu durante l&#39;invio: errore, motivo errore **[!UICONTROL Refused]** e non si esegue alcun tentativo.
 
-Adobe Campaign contatta il server di Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiornare i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei log è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
+ Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i log di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei log è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
