@@ -1,6 +1,6 @@
 ---
-title: Punti chiave per la gestione della recapito in Adobe Campaign Classic
-description: Quali sono i punti chiave da verificare nella gestione della recapito in Adobe Campaign Classic?
+title: Punti chiave per la gestione della recapito in  Adobe Campaign Classic
+description: Quali sono i punti chiave da verificare per la gestione della recapito in  Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Si è verificato un problema di recapito? Puoi trovare la soluzione qui.
 
 Questo messaggio indica che è stato raggiunto il limite di quota per un MX specifico e che è necessario attendere di poter inviare un&#39;altra e-mail a questo provider.
 
-In Adobe Campaign, esiste una configurazione relativa al numero di e-mail all&#39;ora che è possibile inviare. Questa configurazione deve essere utilizzata con attenzione, in quanto il numero definito nell&#39;istanza riguarda il numero di connessioni effettuate con l&#39;ISP e non il numero di e-mail effettivamente inviate.
+ Adobe Campaign, è disponibile una configurazione relativa al numero di e-mail per ora che possono essere inviate. Questa configurazione deve essere utilizzata con attenzione, in quanto il numero definito nell&#39;istanza riguarda il numero di connessioni effettuate con l&#39;ISP e non il numero di e-mail effettivamente inviate.
 
-Ciò significa che una connessione può utilizzare una regola MX senza inviare correttamente un&#39;e-mail. In questo caso, una configurazione con un IP o un dominio con una reputazione ridotta dovrà provare diverse connessioni prima di inviare un&#39;e-mail. Per ogni tentativo, verrà utilizzato un messaggio all&#39;ora di credito. Di conseguenza, le prestazioni della campagna di marketing avranno un impatto significativo.
+Ciò significa che una connessione può utilizzare una regola MX senza inviare correttamente un&#39;e-mail. In questo caso, una configurazione con un IP o un dominio con una reputazione ridotta dovrà provare diverse connessioni prima di inviare un&#39;e-mail. Per ogni tentativo, verrà utilizzato un messaggio all&#39;ora di credito. Di conseguenza, le prestazioni della campagna di marketing subiranno un impatto significativo.
 
 Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel registro [](../../production/using/monitoring-processes.md#smtp-errors-per-domain)SMTP.
 
@@ -48,40 +48,39 @@ Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#
 * Aggiornare i moduli di iscrizione per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dalla destinazione.
 
-Se il problema persiste, contatta i servizi commerciali o di recapito, Adobe Campaign Client Care o il supporto Adobe Campaign.
+Se il problema persiste, contattate i servizi commerciali o di recapito,  Client Care di Adobe Campaign o  supporto del Adobe Campaign.
 
-## Lista nera e quarantena {#blacklisting-versus-quarantine}
+## Elenco blocchi e quarantena {#block-list-versus-quarantine}
 
-* **Qual è la differenza tra un indirizzo e-mail inserito in blacklist e un indirizzo e-mail in quarantena?**
+* **Qual è la differenza tra un indirizzo e-mail nell&#39;elenco dei blocchi e un indirizzo e-mail in quarantena?**
 
-   * Lo stato **[!UICONTROL Blacklisted]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
+   * Lo stato **[!UICONTROL On block list]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
    * Lo stato **[!UICONTROL Quarantined]** è il risultato di un rimbalzo morbido o duro.
-   Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
 
-   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, indirizzo inserito in blacklist, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
+   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, indirizzo nell&#39;elenco blocchi, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
    Per ulteriori informazioni, consulta [Informazioni sulla gestione](../../delivery/using/understanding-quarantine-management.md)della quarantena.
 
-## Senza blacklist {#unblacklisting}
+## Rimozione dall&#39;elenco dei blocchi {#remove-from-block-list}
 
-* **Uno dei miei destinatari è stato inserito in blacklist per errore. Come posso cancellarli in modo da poter iniziare a inviarli nuovamente?**
+* **Uno dei miei destinatari è stato aggiunto all&#39;elenco dei blocchi per errore. Come posso rimuoverli dall&#39;elenco dei blocchi in modo da poter iniziare a inviarli di nuovo?**
 
    * Vai a **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nei dettagli del record corrispondente, impostare il valore del **[!UICONTROL Status]** campo su **[!UICONTROL Valid]**.
    * Salvare il record.
 
-* **Come posso sapere se uno dei miei IP è in lista nera? Come posso rimuovere la blacklist dei miei IP?**
+* **Come posso sapere se uno dei miei IP si trova in un elenco di blocchi? Come posso rimuovere i miei IP da un elenco di blocchi?**
 
-   Per verificare se l&#39;indirizzo IP è inserito in una blacklist, potete usare diversi siti Web per verificarlo:
-   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
-   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
-   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
-   In genere, il risultato della verifica dell&#39;indirizzo IP restituirà un elenco contenente i dettagli della blacklist e il nome del sito Web che ha inserito in blacklist l&#39;indirizzo IP.
+   Per verificare se l&#39;indirizzo IP si trova in un elenco di blocchi, è possibile utilizzare vari siti Web per verificarlo, ad esempio:
+   * [Toolbox MX](https://mxtoolbox.com/)
+   * [Qual è il mio indirizzo IP?](https://whatismyipaddress.com)
+   In genere, il risultato della verifica dell&#39;indirizzo IP restituirà un elenco contenente i dettagli dell&#39;elenco dei blocchi e il nome del sito Web che ha bloccato l&#39;indirizzo IP.
 
-   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il vostro sito Web venga cancellato dal sito Web che ha inserito in blacklist l&#39;indirizzo IP.
+   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il sito Web venga eliminato dal sito Web che ha aggiunto l&#39;indirizzo IP al relativo elenco di blocchi.
 
    >[!NOTE]
    >
