@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -24,19 +27,19 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## SpamAssassin {#about-spamassassin}
 
-Adobe Campaign può essere configurato per l&#39;utilizzo di [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per il filtraggio degli spam via e-mail. Questo consente di segnare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
+ Adobe Campaign può essere configurato per lavorare con [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per filtrare gli spam via e-mail. Questo consente di segnare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
-SpamAssassin utilizza una serie di tecniche di rilevamento dello spam, tra cui:
+SpamAssassin sfrutta una serie di tecniche di rilevamento dello spam, tra cui:
 
 * Rilevamento di spam basato su DNS e con checksum approssimativo
 * Filtro bayesiano
 * Programmi esterni
-* Blacklist
+* Elenchi di blocchi
 * Database online
 
 >[!NOTE]
 >
->SpamAssassin deve essere installato e configurato nel server dell’applicazione Adobe Campaign. For more on this, refer to [this section](../../installation/using/configuring-spamassassin.md).
+>SpamAssassin deve essere installato e configurato nel server dell&#39;applicazione  Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-spamassassin.md).
 >
 >Le regole che determinano se un elemento è spam o meno vengono gestite tramite SpamAssassin e possono essere modificate da un amministratore con privilegi.
 
