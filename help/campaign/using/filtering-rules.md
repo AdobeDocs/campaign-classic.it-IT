@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Potete anche collegare le regole di filtro direttamente tramite questa scheda, s
 
 Per impostazione predefinita sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l&#39;analisi delle e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio vietati contenuti in un elenco di soppressione globale crittografato gestito nell&#39;istanza di recapito. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
 
-Questo per evitare di essere inseriti in blacklist a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviata una e-mail di conferma a tale Spamtrap, che ne determina la blacklist automatica dell&#39;indirizzo.
+Questo per evitare di essere aggiunto all&#39;elenco dei blocchi a causa di attività dannose, in particolare l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviato un messaggio e-mail di conferma a tale Spamtrap, con l&#39;aggiunta automatica dell&#39;indirizzo all&#39;elenco dei blocchi.
 
 >[!NOTE]
 >
