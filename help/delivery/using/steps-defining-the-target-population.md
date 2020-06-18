@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +29,8 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 Per ogni consegna, potete definire diversi tipi di popolazioni target. La sezione seguente fornisce ulteriori informazioni su come selezionare:
 
-* **I principali destinatari della consegna**. [Leggi tutto](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **Destinatari di messaggi** di prova, per impostare un ciclo di convalida. [Leggi tutto](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* **I principali destinatari della consegna**. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+* **I destinatari dei messaggi** di prova, al fine di impostare un ciclo di convalida. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 È inoltre possibile definire indirizzi [](../../delivery/using/about-seed-addresses.md)iniziali e gruppi [di](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controllo. se la consegna è inclusa in una campagna di marketing.
 
@@ -44,7 +47,7 @@ Per selezionare i destinatari della consegna da creare, effettuate le seguenti o
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selezionate la mappatura della destinazione nell&#39;elenco a **[!UICONTROL Target mapping]** discesa. La mappatura di destinazione predefinita di Adobe Campaign è **[!UICONTROL Recipients]**.
+1. Selezionate la mappatura della destinazione nell&#39;elenco a **[!UICONTROL Target mapping]** discesa.  mappatura di destinazione predefinita Adobe Campaign è **[!UICONTROL Recipients]**.
 
    Sono disponibili altre mappature di destinazione, alcune delle quali possono essere correlate alla configurazione specifica. Per ulteriori informazioni sulle mappature di destinazione, vedere [Selezione di una mappatura](../../delivery/using/selecting-a-target-mapping.md)di destinazione.
 
@@ -67,7 +70,7 @@ Per selezionare i destinatari della consegna da creare, effettuate le seguenti o
 
       ![](assets/s_ncs_user_wizard_email02d.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]** : questa opzione consente di selezionare una cartella di consegna e di eseguire il targeting dei destinatari delle consegne nella cartella.
+   * **[!UICONTROL Delivery recipients belonging to a folder]** : questa opzione consente di selezionare una cartella di consegna e di eseguire il targeting dei destinatari delle consegne in tale cartella.
 
       ![](assets/s_ncs_user_wizard_email02e.png)
 
@@ -141,20 +144,20 @@ Fate clic sul **[!UICONTROL Edit...]** collegamento per modificare la configuraz
 
 Sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**. Questa opzione è attiva per impostazione predefinita: consente di eliminare gli indirizzi e-mail duplicati durante la consegna. La strategia applicata può variare a seconda di come viene utilizzato Adobe Campaign e del tipo di dati nel database.
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. Questa opzione è attiva per impostazione predefinita: consente di eliminare gli indirizzi e-mail duplicati durante la consegna. La strategia applicata può variare a seconda di come viene utilizzato  Adobe Campaign e del tipo di dati nel database.
 
    Il valore predefinito dell&#39;opzione può essere configurato per ogni modello di consegna.
 
    Ad esempio:
 
    * Consegna di una newsletter o di un documento elettronico. Nessuna esclusione di duplicati in alcuni casi se i dati non presentano duplicati nativi. Un paio di abbonati con lo stesso indirizzo e-mail può ricevere due messaggi e-mail personalizzati specifici: uno indirizzato a ciascun individuo per nome. In questo caso, questa opzione può essere deselezionata.
-   * Consegna di una campagna di marketing: la doppia esclusione è essenziale per evitare di inviare troppi messaggi allo stesso destinatario. In questo caso, è possibile selezionare questa opzione.
+   * Consegna di una campagna di marketing: l&#39;esclusione duplicata è essenziale per evitare di inviare troppi messaggi allo stesso destinatario. In questo caso, è possibile selezionare questa opzione.
 
       Se deselezionate questa opzione, potete accedere a un’ulteriore opzione: **[!UICONTROL Keep duplicate records (same identifier)]**. Consente di autorizzare più consegne ai destinatari che soddisfano più criteri di targeting.
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail si trovano in una blacklist (&quot;opt out&quot;). Questa opzione deve rimanere selezionata per rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano il commercio elettronico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail si trovano in un elenco di blocchi (&quot;rinuncia&quot;). Questa opzione deve rimanere selezionata per rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano il commercio elettronico.
 * **[!UICONTROL Exclude quarantined recipients]**. Questa opzione consente di escludere dalla destinazione qualsiasi profilo con un indirizzo che non risponde. È consigliabile mantenere selezionata questa opzione.
 
    >[!NOTE]
@@ -176,7 +179,7 @@ La prova è un messaggio speciale che consente di verificare la consegna prima d
 Per selezionare la destinazione delle prove, effettuate le seguenti operazioni:
 
 1. Fate clic sul **[!UICONTROL To]** collegamento.
-1.  Fate clic sulla **[!UICONTROL Target of the proofs]** scheda.
+1. Fate clic sulla **[!UICONTROL Target of the proofs]** scheda.
 1. Fate clic sul **[!UICONTROL Targeting mode]** campo per scegliere il metodo da applicare: **[!UICONTROL Definition of a specific proof target]** , **[!UICONTROL Substitution of the address]** , **[!UICONTROL Seed addresses]** o **[!UICONTROL Specific target and seed addresses]**.
 
 >[!NOTE]
