@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Il **[!UICONTROL Edit query...]** collegamento consente di definire il tipo di t
 
 ## Aggiunta di dati {#adding-data}
 
-Le colonne aggiuntive consentono di raccogliere informazioni aggiuntive sulla popolazione di destinazione, ad esempio numeri di contratto, iscrizioni a newsletter o origine. Questi dati possono essere memorizzati nel database Adobe Campaign o in un database esterno.
+Le colonne aggiuntive consentono di raccogliere informazioni aggiuntive sulla popolazione di destinazione, ad esempio numeri di contratto, iscrizioni a newsletter o origine. Questi dati possono essere memorizzati nel database del Adobe Campaign  o in un database esterno.
 
 Il **[!UICONTROL Add data...]** collegamento consente di selezionare i dati aggiuntivi da raccogliere.
 
@@ -79,13 +82,13 @@ Per iniziare, seleziona il tipo di dati da aggiungere:
 
 ![](assets/wf_add_data_1st_option.png)
 
-* Seleziona **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database di Adobe Campaign.
-* Selezionare **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se avete acquistato l&#39;opzione **Federated Data Access** . Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+* Selezionare **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database del Adobe Campaign .
+* Selezionare **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se è stata acquistata l&#39;opzione **Federated Data Access** . Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 * Selezionate l&#39; **[!UICONTROL An offer proposition]** opzione per aggiungere un set di colonne che vi consenta di memorizzare la proposta migliore generata dal motore delle offerte. Questa opzione è disponibile solo se avete acquistato il modulo **Interazione** .
 
 Se sulla piattaforma non è installato alcun modulo opzionale, questa fase non viene visualizzata. Verrai portato direttamente al prossimo stadio.
 
-Per aggiungere dati dal database Adobe Campaign:
+Per aggiungere dati dal database del Adobe Campaign :
 
 1. Selezionare il tipo di dati da aggiungere. Può trattarsi di dati appartenenti alla dimensione filtro o di dati memorizzati in tabelle collegate.
 
@@ -97,7 +100,7 @@ Per aggiungere dati dal database Adobe Campaign:
 
    È possibile aggiungere:
 
-   * Campo calcolato in base ai dati provenienti dalla popolazione di destinazione o da un aggregato (numero di acquisti in sospeso nell&#39;ultimo mese, importo medio di una ricevuta, ecc.). Ad esempio, passare a [Selezione dati](../../workflow/using/targeting-data.md#selecting-data).
+   * Campo calcolato in base ai dati provenienti dalla popolazione di destinazione o da un aggregato (numero di acquisti in sospeso nell&#39;ultimo mese, importo medio di una ricevuta, ecc.). Ad esempio, passare a [Selezione dei dati](../../workflow/using/targeting-data.md#selecting-data).
    * Nuovo campo creato utilizzando il **[!UICONTROL Add]** pulsante a destra dell&#39;elenco delle colonne di output.
 
       Puoi anche aggiungere una raccolta di informazioni, ad esempio un elenco di contratti, le ultime 5 consegne, ecc. Le raccolte coincidono con i campi che possono avere più valori per lo stesso profilo (relazione 1-N). Per ulteriori informazioni, vedere [Modifica di dati](../../workflow/using/targeting-data.md#editing-additional-data)aggiuntivi.
@@ -141,7 +144,7 @@ Nell&#39;esempio seguente, la query cerca di identificare gli uomini di età com
 1. Selezionate **[!UICONTROL Filtering conditions]** nell’elenco dei tipi di filtro disponibili.
 1. Inserire i diversi criteri per l&#39;obiettivo proposto. Qui i criteri vengono combinati utilizzando l&#39;opzione AND. Per essere inclusi nella selezione, i destinatari dovranno soddisfare le quattro condizioni seguenti:
 
-   * Destinatari il cui titolo è &quot;Mr&quot; (si può trovare anche utilizzando il campo **Genere** e selezionando **Maschio** come valore).
+   * Destinatari il cui titolo è &quot;Mr&quot; (è possibile trovare anche il campo **Genere** e selezionare **Maschio** come valore).
    * Destinatari di età inferiore ai 30 anni.
    * Destinatari con più di 18 anni.
    * Destinatari che vivono in Francia.
@@ -172,7 +175,7 @@ Questo valore è lo schema della tabella di lavoro. Questo parametro è valido p
 
 ## Ottimizzazione delle query {#optimizing-queries}
 
-La sezione seguente illustra le procedure ottimali per ottimizzare le query in esecuzione su Adobe Campaign al fine di limitare il carico di lavoro sul database e migliorare l&#39;esperienza degli utenti.
+La sezione seguente illustra le procedure ottimali per ottimizzare le query in esecuzione  Adobe Campaign per limitare il carico di lavoro sul database e migliorare l&#39;esperienza utente.
 
 ### Iscrizioni e indici {#joins-and-indexes}
 
@@ -185,7 +188,7 @@ La sezione seguente illustra le procedure ottimali per ottimizzare le query in e
 
    Assicurarsi che la `where` clausola sia dello stesso tipo del campo.
 
-   Un errore comune è: `iBlacklist='3'` dove `iBlacklist` è un campo numerico e `3` indica un valore di testo.
+   Un errore comune è: `iBlocklist='3'` dove `iBlocklist` è un campo numerico e `3` indica un valore di testo.
 
    Verificare di conoscere il piano di esecuzione della query. Evitate analisi complete delle tabelle, in particolare per query in tempo reale o query in tempo quasi reale eseguite ogni minuto.
 
@@ -208,7 +211,7 @@ Nelle query, le condizioni &quot;esiste come&quot; nei filtri non sono efficient
 
 `select iRecipientId from nmsRecipient where iRecipientId IN (select iRecipientId from nmsBroadLog where (...))`
 
-È consigliabile utilizzare invece la dimensione di filtro della query:
+È consigliabile utilizzare invece la dimensione di filtraggio della query:
 
 ![](assets/optimize-queries-filtering2.png)
 
