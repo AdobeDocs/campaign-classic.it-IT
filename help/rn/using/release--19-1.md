@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+workflow-type: tm+mt
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
 
 # Release 19.1{#release-19-1}
 
-[Genera aggiornamento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) controllo| Aggiornamenti [alla](../../rn/using/documentation-updates.md) documentazione| [Versioni](../../rn/using/release--19-1.md) precedenti| Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-1.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -74,7 +77,7 @@ _13 agosto 2019_
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29 **aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
+![](assets/do-not-localize/green_2.png) **29 aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
 
 * Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
@@ -90,30 +93,30 @@ _13 agosto 2019_
 * È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * Risolto un problema di regressione minore nei registri del flusso di lavoro di pulizia.
 
-![](assets/do-not-localize/orange_2.png) 5 **marzo 2020**: nuova build (9032@19f73c5) che include la seguente correzione:
+![](assets/do-not-localize/orange_2.png) **5 marzo 2020**: nuova build (9032@19f73c5) che include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 17 **dicembre 2019**: nuova build (9032@d6b8062) che include la seguente correzione:
+![](assets/do-not-localize/orange_2.png) **17 dicembre 2019**: nuova build (9032@d6b8062) che include la seguente correzione:
 
 * È stato risolto un problema di tracciamento sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 11 **dicembre 2019**: nuova build (9032@bc4a935) che include la seguente correzione:
+![](assets/do-not-localize/orange_2.png) **11 dicembre 2019**: nuova build (9032@bc4a935) che include la seguente correzione:
 
 * È stato risolto un problema di prestazioni durante l&#39;invio di messaggi con un database MSSQL. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) 20 **novembre 2019**: nuova build (9032@3468c7b) con le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) **20 novembre 2019**: nuova build (9032@3468c7b) con le seguenti correzioni:
 
 * È stato risolto un problema di accesso tramite l&#39;autenticazione IMS. (NEO-17312)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti cumulativi su più consegne. (NEO-18165)
 * È stato risolto un problema che poteva bloccare o causare l&#39;arresto anomalo del server Web.
 
-![](assets/do-not-localize/orange_2.png) 19 **settembre 2019**: nuova build (9032@cee805c) con le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) **19 settembre 2019**: nuova build (9032@cee805c) con le seguenti correzioni:
 
 * È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
 * È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
 
-![](assets/do-not-localize/orange_2.png) 13 **agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
+![](assets/do-not-localize/orange_2.png) **13 agosto 2019**: build 19.1.4 iniziale che include le seguenti correzioni:
 
 * È stato risolto un problema con l&#39;attività del pianificatore che generava messaggi di errore indesiderati durante la configurazione guidata. Ripristino dell&#39;aggiornamento da NEO-11662. (NEO-17097)
 * È stata corretta una regressione causata dalla NEO-12727 che poteva causare l&#39;arresto dei flussi di lavoro quando un&#39;attività Test veniva eseguita due volte. (NEO-16835)
@@ -153,19 +156,19 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei server SFTP monitorando l'archiviazione, la whitelist degli indirizzi IP e l'installazione delle chiavi SSH per ogni istanza. Il Pannello di controllo è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: per accedere al Pannello di controllo non è necessario effettuare l'aggiornamento alla build Campaign più recente.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP per consentire l'elenco e installa le chiavi SSH per ogni istanza. Il Pannello di controllo è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite l'Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: per accedere al Pannello di controllo non è necessario effettuare l'aggiornamento alla build Campaign più recente.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
-   <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consultate la documentazione <a href="../../production/using/audit-trail.md"></a> dettagliata e il <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">video</a>sulle procedure.</p></td> 
+   <td> <p>In qualità di amministratore, aumentate la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza di Adobe Campaign Classic . La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consultate la documentazione <a href="../../production/using/audit-trail.md"></a> dettagliata e il <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">video</a>sulle procedure.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robustezza e scalabilità<br /> </td> 
-   <td> Una serie di miglioramenti è stata aggiunta a Campaign Classic. I miglioramenti a livello di affidabilità, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
+   <td> Campaign Classic ha apportato una serie di miglioramenti. I miglioramenti a livello di affidabilità, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
-   <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fare riferimento alla <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matrice</a>di compatibilità.<br /> 
+   <td> Con questa nuova versione,  Adobe Campaign ora supporta i seguenti sistemi di database. Fare riferimento alla <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matrice</a>di compatibilità.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -213,7 +216,7 @@ _30 maggio 2019_
 * Ora, durante l&#39;analisi di una consegna definitiva, se la modalità di pubblicazione è impostata **[!UICONTROL None]** nella procedura guidata di distribuzione, viene registrato un errore e l&#39;analisi viene arrestata: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul cellulare.&quot; (NEO-12208)
 * La gestione del broadcast è stata migliorata per i messaggi transazionali. Quando i log di trasmissione vengono sincronizzati dall&#39;istanza di esecuzione all&#39;istanza di controllo, il campo @lastModified viene aggiornato alla data corrente del sistema. Per le istanze di controllo è stata aggiunta l’opzione MC_Update_BlLastModified. True indica che la data corrente verrà utilizzata nell&#39;istanza di controllo (comportamento predefinito). False indica che utilizzeremo la data @lastModified dell&#39;istanza di esecuzione del registro di trasmissione. (NEO-12579)
 * Sono stati aggiunti indici nelle tabelle temporanee dei coupon per ottimizzare l&#39;invio delle consegne. (NEO-12437)
-* Nell&#39;integrazione di Analytics, è ora consentito il recupero dei dati del segmento AAM con il carattere %. (NEO-12025)
+* Nell&#39;integrazione Analytics , è ora consentito recuperare i dati del segmento AAM con il carattere %. (NEO-12025)
 * È stato rimosso il limite di 10.000 record nella mappa di calore del flusso di lavoro per risolvere un problema di dati mancante. (NEO-12329)
 * Open Office non è supportato e ora è completamente rimosso dall&#39;applicazione. Se ancora si utilizza, passare a Libre Office in quanto non funzionerà più a partire dalla 19.1.
 * Ora puoi limitare l&#39;accesso in scrittura all&#39;attività di aggiornamento dei dati nel flusso di lavoro utilizzando gli attributi sysfilter. [Leggi tutto](../../configuration/using/filtering-schemas.md)
@@ -243,7 +246,7 @@ _30 maggio 2019_
 * È stato risolto un problema che poteva causare la sovrascrittura di alcuni valori durante l&#39;esportazione e l&#39;importazione di un oggetto tramite XML. È stata aggiunta l’opzione XtkExport_IncludeDefaultValues. Se è impostata su True (comportamento predefinito), vengono esportati tutti i valori. Se è impostata su False, le modifiche vengono sovrascritte con il valore predefinito. (NEO-11979)
 * È stato risolto un problema che causava il fallimento dell&#39;attività del **[!UICONTROL Alert]** flusso di lavoro quando un&#39;attività di arricchimento veniva aggiunta dopo una query. (NEO-12132)
 * È stato risolto un problema nelle impostazioni Oracle in cui gli offset della pipeline (trigger) non venivano recuperati correttamente dal database causando duplicati. (NEO-12121)
-* È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot quando si utilizzava l&#39;integrazione di Analytics (NEO-12103)
+* È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot quando si utilizzava l&#39;integrazione Analytics  (NEO-12103)
 * È stato risolto un problema relativo al report Analisi descrittiva. (NEO-11414)
 * È stato risolto un problema con i connettori CRM quando la tabella remota conteneva un campo con un carattere di sottolineatura nel nome.
 * È stato risolto un problema che poteva causare un problema di visualizzazione dei simboli di valuta nei rapporti Ipotesi. (NEO-11634)
@@ -263,10 +266,10 @@ _30 maggio 2019_
 * È stato corretto un problema di arresto anomalo del server Web. (NEO-12904)
 * È stato risolto un problema con il parametro Natura nei modelli transazionali. (NEO-12334)
 * È stato risolto un problema di arresto anomalo della console durante la visualizzazione degli URL tracciati nell’editor di testo e-mail. (NEO-13122)
-* È stato risolto un problema relativo all&#39;attività Dividi file durante l&#39;importazione di audience da Audience Manager. (NEO-11550)
+* È stato risolto un problema con l&#39;attività Dividi file durante l&#39;importazione di audience da  Audience Manager. (NEO-11550)
 * È stato risolto un problema che causava errori nel rapporto clic con il pulsante destro del mouse. (NEO-11459)
 * È stato risolto un problema con il rendering delle offerte. (NEO-11565)
-* È stato risolto un problema relativo all&#39;attività di aggiornamento elenco durante l&#39;importazione di audience da Audience Manager. (NEO-11226)
+* È stato risolto un problema relativo all&#39;attività di aggiornamento elenco durante l&#39;importazione di audience da  Audience Manager. (NEO-11226)
 * È stato risolto un problema con la configurazione dell&#39;attività Pianificazione e del fuso orario. (NEO-11662)
 * È stato risolto un problema che causava un errore nel flusso di lavoro di tracciamento in caso di URL con formato errato.
 * È stato risolto un problema con gli account esterni dopo l&#39;importazione del pacchetto dell&#39;applicazione mobile.
