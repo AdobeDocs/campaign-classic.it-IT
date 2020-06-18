@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ La sezione seguente descrive le configurazioni lato server che possono essere es
 >
 >Queste configurazioni devono essere eseguite dagli amministratori e solo per i modelli di hosting **locali** .
 >
->Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo da Adobe. Tuttavia, alcune impostazioni possono essere configurate nel Pannello di controllo (ad esempio, la whitelist IP o le autorizzazioni URL).
+>Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo da Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno del Pannello di controllo (ad esempio, IP consente la gestione degli elenchi o le autorizzazioni URL).
 
 Per ulteriori informazioni, consultare le sezioni seguenti:
 
@@ -40,16 +40,16 @@ Per ulteriori informazioni, consultare le sezioni seguenti:
 * [Matrice delle funzionalità locali e ospitate di Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Passaggi di configurazione per modelli ibridi ed ospitati](https://docs.campaign.adobe.com/doc/AC/en/INS_Hybrid_and_Hosted_models_About_hybrid_and_hosted_models.html)
 
-I file di configurazione di Campaign Classic sono memorizzati nella cartella **conf** della cartella di installazione di Adobe Campaign. La configurazione è suddivisa in due file:
+I file di configurazione Campaign Classic sono memorizzati nella cartella **conf** della cartella di installazione del Adobe Campaign . La configurazione è suddivisa in due file:
 
-* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server Adobe Campaign: vengono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è dettagliata di seguito. I diversi nodi e parametri ed elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server di Adobe Campaign : vengono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è dettagliata di seguito. I diversi nodi e parametri ed elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (dove **instance** è il nome dell’istanza): specifica configurazione dell&#39;istanza. Se condividete il server tra più istanze, inserite i parametri specifici per ciascuna istanza nel relativo file.
 
 ## Definizione delle aree di protezione {#defining-security-zones}
 
 ### Informazioni sulle aree di protezione {#about-security-zones}
 
-Ogni operatore deve essere collegato a una zona per accedere a un&#39;istanza e l&#39;IP dell&#39;operatore deve essere incluso negli indirizzi o nei set di indirizzi definiti nella zona di sicurezza. La configurazione dell&#39;area di protezione viene eseguita nel file di configurazione del server Adobe Campaign.
+Ogni operatore deve essere collegato a una zona per accedere a un&#39;istanza e l&#39;IP dell&#39;operatore deve essere incluso negli indirizzi o nei set di indirizzi definiti nella zona di sicurezza. La configurazione dell&#39;area di protezione viene eseguita nel file di configurazione del server di Adobe Campaign .
 
 Gli operatori sono collegati a una zona di protezione dal relativo profilo nella console ( **[!UICONTROL Administration > Access management > Operators]** nodo). Scopri come collegare le aree agli operatori della campagna in [questa sezione](#linking-a-security-zone-to-an-operator).
 
@@ -81,7 +81,7 @@ Il file **serverConf.xml** out-of-the-box include tre aree: **public, VPN e LAN*
 
 >[!NOTE]
 >
->**La configurazione out-of-the-box è sicura**. Tuttavia, prima di effettuare la migrazione da una versione precedente di Adobe Campaign, potrebbe essere necessario ridurre temporaneamente la sicurezza per migrare e approvare le nuove regole.
+>**La configurazione out-of-the-box è sicura**. Tuttavia, prima di eseguire la migrazione da una versione precedente di  Adobe Campaign, potrebbe essere necessario ridurre temporaneamente la sicurezza per migrare e approvare le nuove regole.
 
 Esempio di come definire una zona nel file **serverConf.xml** :
 
@@ -170,19 +170,19 @@ Quando si fa riferimento a un proxy e una connessione entra tramite questo proxy
 
 Possono verificarsi diversi casi:
 
-* Nella zona di protezione viene fatto riferimento direttamente a una sub-rete e non è configurato alcun proxy: gli utenti della rete secondaria possono connettersi direttamente al server di Adobe Campaign.
+* Nella zona di protezione viene fatto riferimento direttamente a una sub-rete e non è configurato alcun proxy: gli utenti della rete secondaria possono connettersi direttamente al server del Adobe Campaign .
 
    ![](assets/8101_proxy1.png)
 
-* È specificato un proxy per una rete secondaria nella zona di sicurezza: gli utenti di questa sub-rete possono accedere al server Adobe Campaign tramite questo proxy.
+* È specificato un proxy per una rete secondaria nella zona di sicurezza: gli utenti di questa sub-rete possono accedere al server di Adobe Campaign  tramite questo proxy.
 
    ![](assets/8101_proxy2.png)
 
-* Un proxy è incluso in una rete secondaria della zona di sicurezza: gli utenti che hanno accesso tramite questo proxy, indipendentemente dalla loro origine, possono accedere al server Adobe Campaign.
+* Un proxy è incluso in una rete secondaria della zona di sicurezza: gli utenti che hanno accesso tramite questo proxy, indipendentemente dalla loro origine, possono accedere al server del Adobe Campaign .
 
    ![](assets/8101_proxy3.png)
 
-Gli indirizzi IP dei proxy che possono accedere al server Adobe Campaign devono essere inseriti sia nella **`<subnetwork>`** relativa rete secondaria che nella sottorete di primo livello **`<subnetwork name="all"/>`**. Ad esempio, qui per un proxy il cui indirizzo IP è 10.131.146.102:
+Gli indirizzi IP dei proxy che possono accedere al server di Adobe Campaign  devono essere inseriti sia nella **`<subnetwork>`** relativa rete secondaria che nella sottorete di primo livello **`<subnetwork name="all"/>`**. Ad esempio, qui per un proxy il cui indirizzo IP è 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -245,9 +245,9 @@ Una volta definite le zone e configurata l&#39; **[!UICONTROL Security zone]** e
 
 ### Porta predefinita per Tomcat {#default-port-for-tomcat}
 
-Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una gratuita (ad esempio 8090). Per modificarlo, modifica il file **server.xml** salvato nella directory **/tomcat-7/conf** della cartella di installazione di Adobe Campaign.
+Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una gratuita (ad esempio 8090). Per modificarlo, modificate il file **server.xml** salvato nella directory **/tomcat-7/conf** della cartella di installazione del Adobe Campaign .
 
-Quindi modificate la porta delle pagine dei relè JSP. A tal fine, modificate il file **serverConf.xml** salvato nella directory **/conf** della directory di installazione di Adobe Campaign. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+Quindi modificate la porta delle pagine dei relè JSP. A questo scopo, modificate il file **serverConf.xml** salvato nella directory **/conf** della directory di installazione del Adobe Campaign . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
 ```
 <serverConf>
@@ -280,7 +280,7 @@ Potete anche eseguire le seguenti configurazioni in base alle vostre esigenze e 
 
 Il modulo MTA agisce come agente nativo di trasferimento della posta per la trasmissione SMTP (porta 25).
 
-È tuttavia possibile sostituirlo con un server di inoltro se richiesto dal criterio di protezione. In tal caso, il throughput globale sarà quello relay (a condizione che il throughput del server relay sia inferiore a quello di Adobe Campaign).
+È tuttavia possibile sostituirlo con un server di inoltro se richiesto dal criterio di protezione. In tal caso, il throughput globale sarà quello relay (a condizione che il throughput del server relay sia inferiore a quello del Adobe Campaign ).
 
 In questo caso, questi parametri vengono impostati configurando il server SMTP nella **`<relay>`** sezione. È necessario specificare l&#39;indirizzo IP (o l&#39;host) del server SMTP utilizzato per trasferire la posta e la porta associata (per impostazione predefinita, 25).
 
@@ -358,9 +358,9 @@ Con i modelli di hosting **ibridi** e **locali** , l&#39;amministratore deve far
 
 Esistono tre modalità di protezione della connessione:
 
-* **Blocco**: tutti gli URL che non appartengono alla whitelist sono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post aggiornamento.
-* **Autorizzazione**: tutti gli URL che non appartengono alla whitelist sono consentiti.
-* **Avviso**: tutti gli URL non bianchi sono consentiti, ma l&#39;interprete JS emette un avviso in modo che l&#39;amministratore possa raccoglierli. Questa modalità aggiunge i messaggi di avviso JST-310027.
+* **Blocco**: tutti gli URL che non appartengono all&#39;elenco di indirizzi consentiti sono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post aggiornamento.
+* **Autorizzazione**: tutti gli URL che non appartengono all&#39;elenco di autorizzazioni sono consentiti.
+* **Avviso**: tutti gli URL che non appartengono all&#39;elenco di autorizzazioni sono consentiti, ma l&#39;interprete JS invia un avviso in modo che l&#39;amministratore possa raccogliere tali URL. Questa modalità aggiunge i messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Esistono tre modalità di protezione della connessione:
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, il client dei nuovi clienti utilizza la modalità **di** blocco. Se devono consentire l’aggiunta di un nuovo URL, devono contattare l’amministratore per inserirlo nella whitelist.
+>Per impostazione predefinita, il client dei nuovi clienti utilizza la modalità **di** blocco. Se devono consentire un nuovo URL, devono contattare l’amministratore per aggiungerlo all’elenco di autorizzazioni.
 >
->I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, gli utenti devono contattare l’amministratore per inserire in una whitelist gli URL e attivare la modalità **di** blocco.
+>I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, questi devono contattare l’amministratore per aggiungere gli URL all’elenco di autorizzazioni e attivare la modalità **di** blocco.
 
 ## Sicurezza e relè delle pagine dinamiche {#dynamic-page-security-and-relays}
 
@@ -390,7 +390,7 @@ Per le pagine JSP, la configurazione predefinita è:
 <url relayHost="true" relayPath="true" targetUrl="http://localhost:8080" urlPath="*.jsp"/>
 ```
 
-Adobe Campaign utilizza le seguenti pagine JSP:
+ Adobe Campaign utilizza le seguenti pagine JSP:
 
 * /nl/jsp/**soaprouter.jsp**: connessioni console client e servizi Web (API SOAP),
 * /nl/jsp/**m.jsp**: pagine mirror,
@@ -434,7 +434,7 @@ In questo esempio, il **`<IP_addresses>`** valore coincide con l&#39;elenco di i
 >
 >La seguente configurazione è necessaria solo per le installazioni aziendali interne.
 
-Dalla build 8780, gli amministratori tecnici possono limitare l&#39;elenco dei comandi esterni autorizzati utilizzabili in Adobe Campaign.
+Dalla build 8780, gli amministratori tecnici possono limitare l&#39;elenco dei comandi esterni autorizzati utilizzabili in  Adobe Campaign.
 
 A tal fine, è necessario creare un file di testo con l&#39;elenco dei comandi che si desidera impedire l&#39;utilizzo, ad esempio:
 
@@ -455,23 +455,23 @@ sh
 >
 >Questo elenco non è esaustivo.
 
-Nel nodo **exec** del file di configurazione del server, è necessario fare riferimento al file creato in precedenza nell&#39;attributo **blacklistFile** .
+Nel nodo **exec** del file di configurazione del server, è necessario fare riferimento al file creato in precedenza nell&#39;attributo **blocklistFile** .
 
 **Solo** per Linux: nel file di configurazione del server, si consiglia di specificare un utente dedicato all&#39;esecuzione di comandi esterni per migliorare la configurazione di protezione. Questo utente è impostato nel nodo **exec** del file di configurazione. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
->Se non viene specificato alcun utente, tutti i comandi vengono eseguiti nel contesto utente dell&#39;istanza Adobe Campaign. L&#39;utente deve essere diverso dall&#39;utente che esegue Adobe Campaign.
+>Se non viene specificato alcun utente, tutti i comandi vengono eseguiti nel contesto utente dell&#39;istanza del Adobe Campaign . L&#39;utente deve essere diverso dall&#39;utente che esegue  Adobe Campaign.
 
 Ad esempio:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
-Questo utente deve essere aggiunto all&#39;elenco secondario dell&#39;operatore Adobe Campaign &quot;neolane&quot;.
+Questo utente deve essere aggiunto all&#39;elenco secondario dell&#39;operatore di Adobe Campaign &#39;neolane&#39; .
 
 >[!IMPORTANT]
 >
@@ -518,7 +518,7 @@ Per ottenere il nome host del computer, eseguire il comando seguente: **hostname
 
 Le risorse pubbliche sono presentate in [Gestione delle risorse](../../installation/using/deploying-an-instance.md#managing-public-resources)pubbliche.
 
-Sono memorizzati nella directory **/var/res/instance** della directory di installazione di Adobe Campaign.
+Sono memorizzati nella directory **/var/res/instance** della directory di installazione del Adobe Campaign .
 
 L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell’istanza di tracciamento.
 
@@ -539,11 +539,11 @@ In questo caso, il nuovo URL per le risorse pubbliche fornito nella parte superi
 
 ## Flussi di lavoro e affinità ad alta disponibilità {#high-availability-workflows-and-affinities}
 
-Potete configurare diversi server di workflow (wfserver) e distribuirli su due o più computer. Se scegli questo tipo di architettura, configura la modalità di connessione dei bilanciatori di carico in base all&#39;accesso ad Adobe Campaign.
+Potete configurare diversi server di workflow (wfserver) e distribuirli su due o più computer. Se scegliete questo tipo di architettura, configurate la modalità di connessione dei bilanciatori di carico in base all&#39;accesso al Adobe Campaign .
 
 Per accedere dal Web, selezionate la modalità di bilanciamento del **carico** per limitare i tempi di connessione.
 
-Se accedete tramite la console Adobe Campaign, scegliete **hash** o **ip** in modalità. Questo consente di mantenere la connessione tra il client avanzato e il server e impedire che una sessione utente venga interrotta durante un&#39;operazione di importazione o esportazione, ad esempio.
+Se accedete tramite la console  Adobe Campaign, scegliete **hash** o **ip** in modalità. Questo consente di mantenere la connessione tra il client avanzato e il server e impedire che una sessione utente venga interrotta durante un&#39;operazione di importazione o esportazione, ad esempio.
 
 Potete scegliere di imporre l&#39;esecuzione di un flusso di lavoro o di un&#39;attività di workflow su un computer specifico. A tal fine, è necessario definire una o più affinità per il flusso di lavoro o l&#39;attività interessati.
 
@@ -580,7 +580,7 @@ Potete scegliere di imporre l&#39;esecuzione di un flusso di lavoro o di un&#39;
 
 ## Riavvio automatico del processo {#automatic-process-restart}
 
-Per impostazione predefinita, i diversi processi di Adobe Campaign si riavviano automaticamente alle 6 del mattino (ora del server) ogni giorno.
+Per impostazione predefinita, i diversi processi di  Adobe Campaign si riavviano automaticamente alle 6 del mattino (ora del server) ogni giorno.
 
 Tuttavia, potete modificare questa configurazione.
 
@@ -594,7 +594,7 @@ Ogni processo configurato in questo file ha un attributo **processRestartTime** 
 
 ## Limitazione dei file caricati {#limiting-uploadable-files}
 
-Un nuovo attributo **uploadWhiteList** consente di limitare i tipi di file disponibili per il caricamento nel server Adobe Campaign.
+Un nuovo attributo **uploadAllowList** consente di limitare i tipi di file disponibili per il caricamento nel server di Adobe Campaign .
 
 Questo attributo è disponibile nell&#39;elemento **dataStore** del file **serverConf.xml** . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -602,7 +602,7 @@ Il valore predefinito di questo attributo è **.+** e consente di caricare quals
 
 Per limitare i possibili formati, è necessario sostituire il valore dell&#39;attributo con un&#39;espressione regolare Java valida. È possibile immettere diversi valori separandoli con una virgola.
 
-Ad esempio: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
+Ad esempio: **uploadAllowList=&quot;.*.png,.*.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
 
 >[!IMPORTANT]
 >
