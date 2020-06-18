@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
 
 ## Informazioni generali {#general-information}
 
-Tutti i metodi API sono presentati sotto forma di servizi Web. Questo consente di gestire tutte le funzioni di Adobe Campaign tramite chiamate SOAP, che rappresentano il punto di ingresso nativo del server dell&#39;applicazione Adobe Campaign. La console di Adobe Campaign utilizza solo le chiamate SOAP.
+Tutti i metodi API sono presentati sotto forma di servizi Web. Questo consente di gestire tutte le funzioni  Adobe Campaign tramite chiamate SOAP, che sono il punto di ingresso nativo del server applicazione del Adobe Campaign . La console del Adobe Campaign  utilizza solo le chiamate SOAP.
 
 I servizi Web consentono di creare molte applicazioni da un sistema di terze parti:
 
@@ -34,7 +37,7 @@ I servizi Web consentono di creare molte applicazioni da un sistema di terze par
 
 ## Definizione dei servizi Web {#definition-of-web-services}
 
-La definizione dei servizi Web implementati nel server dell&#39;applicazione Adobe Campaign è disponibile dagli schemi di dati.
+La definizione dei servizi Web implementati nel server applicazione del Adobe Campaign  è disponibile dagli schemi di dati.
 
 Un servizio Web è descritto nella grammatica degli schemi di dati ed è disponibile dall&#39; **`<methods>`** elemento .
 
@@ -59,7 +62,7 @@ La presenza dell&#39;attributo &quot;static&quot; (con il valore &quot;true&quot
 
 Un metodo &quot;const&quot; contiene implicitamente un documento XML nel formato del relativo schema associato come input.
 
-Una descrizione completa dell&#39; `<method>` elemento di uno schema di Adobe Campaign è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
+Una descrizione completa dell&#39; `<method>` elemento di uno schema di Adobe Campaign  è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
 
 Esempio del metodo &quot;const&quot; di tipo &quot;ExecuteQuery&quot; dallo schema &quot;xtk:queryDef&quot;:
 
@@ -76,7 +79,7 @@ Il parametro di input di questo metodo è un documento XML nel formato dello sch
 
 ## Descrizione servizio Web: WSDL {#web-service-description--wsdl}
 
-Per ciascun servizio è disponibile un file WSDL (Web Service Description Library). Questo file XML utilizza una lingua metalinguage per descrivere il servizio e specificare i metodi, i parametri e il server disponibili da contattare per l&#39;esecuzione del servizio.
+Per ciascun servizio è disponibile un file WSDL (Web Service Description Library). Questo file XML utilizza una lingua metalinguage per descrivere il servizio e specificare i metodi, i parametri disponibili e il server da contattare per l&#39;esecuzione del servizio.
 
 ### Generazione di file WSDL {#wsdl-file-generation}
 
@@ -86,7 +89,7 @@ Per generare un file WSDL, è necessario immettere il seguente URL da un browser
 
 Con:
 
-* **`<server>`**: il server dell’applicazione Adobe Campaign (Web del server)
+* **`<server>`**: il server applicazione del Adobe Campaign  (web nlserver)
 * **`<schema>`**: chiave di identificazione dello schema (namespace:nome_schema)
 
 ### Esempio del metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -181,7 +184,7 @@ La `<binding>` parte specifica il protocollo di comunicazione SOAP ( `<soap:bind
 
 #### Servizio {#service}
 
-La `<service>` parte descrive il servizio &quot;XtkQueryDef&quot; con il relativo URI sull&#39;URL del server dell&#39;applicazione Adobe Campaign.
+La `<service>` parte descrive il servizio &quot;XtkQueryDef&quot; con il relativo URI sull&#39;URL del server dell&#39;applicazione del Adobe Campaign .
 
 ```
 <service name="XtkQueryDef">
@@ -193,7 +196,7 @@ La `<service>` parte descrive il servizio &quot;XtkQueryDef&quot; con il relativ
 
 ## Connettività {#connectivity}
 
-Adobe Campaign ha incrementato la sicurezza dei meccanismi di autenticazione introducendo le aree di sicurezza (consultare il capitolo **Definizione delle aree** di sicurezza in [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones)) e le impostazioni di gestione delle sessioni.
+ Adobe Campaign ha aumentato la sicurezza per i meccanismi di autenticazione introducendo le aree di sicurezza (vedere il capitolo **Definizione delle aree** di sicurezza in [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones)) e le impostazioni di gestione delle sessioni.
 
 Sono disponibili due modalità di autenticazione:
 
@@ -201,9 +204,9 @@ Sono disponibili due modalità di autenticazione:
 
 o
 
-* **tramite il login di Adobe Campaign + password** per creare un token di sessione. Il token di sessione scade automaticamente dopo un determinato periodo. Questa modalità non è consigliata e richiede di ridurre le impostazioni di protezione dell’applicazione per alcune impostazioni di area (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
+* **tramite il login  Adobe Campaign + password** per creare un token sessione. Il token di sessione scade automaticamente dopo un determinato periodo. Questa modalità non è consigliata e richiede di ridurre le impostazioni di protezione dell’applicazione per alcune impostazioni di area (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
 
-### Caratteristiche token sessione {#session-token-characteristics}
+### Caratteristiche del token di sessione {#session-token-characteristics}
 
 Il token sessione ha le seguenti caratteristiche:
 
@@ -220,7 +223,7 @@ Il token di protezione ha le seguenti caratteristiche:
 
 * viene generato dal token di sessione
 * ha un ciclo di vita di 24 ore (configurabile nel file &#39;serverConf.xml&#39;, il periodo predefinito è 24 ore)
-* è memorizzato nella console di Adobe Campaign
+* è memorizzato nella console Adobe Campaign 
 * quando si accede tramite Web:
 
    * viene memorizzato in un documento.__securityToken, proprietà
@@ -281,7 +284,7 @@ Da una chiamata SOAP:
 
 >[!NOTE]
 >
->Gli URL utilizzati nelle seguenti chiamate **HttpServletRequest** devono essere inseriti nella white list della sezione delle autorizzazioni URL del file **serverConf.xml** . Ciò vale anche per l&#39;URL del server stesso.
+>Gli URL utilizzati nelle seguenti chiamate **HttpServletRequest** devono trovarsi nell’elenco di autorizzazioni nella sezione delle autorizzazioni URL del file **serverConf.xml** . Ciò vale anche per l&#39;URL del server stesso.
 
 Esecuzione di accesso():
 
