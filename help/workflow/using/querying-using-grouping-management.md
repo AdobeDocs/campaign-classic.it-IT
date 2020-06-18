@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -57,15 +60,15 @@ Per creare questo esempio, procedere come segue:
 
    Questa finestra di raggruppamento dei dati viene visualizzata solo se la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) è stata selezionata.
 
-   ![](assets/query_editor_blacklist_04.png)
+   ![](assets/query_editor_blocklist_04.png)
 
 1. Nella **[!UICONTROL Grouping condition]** finestra, indicate un numero di chiavi primarie superiore a 30, in quanto desideriamo che vengano restituiti come risultati solo i domini e-mail con targeting superiore a 30 volte.
 
    Questa finestra viene visualizzata quando la **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** casella è stata selezionata: in questo caso il risultato del raggruppamento viene filtrato (HAVING).
 
-   ![](assets/query_editor_blacklist_05.png)
+   ![](assets/query_editor_blocklist_05.png)
 
 1. Nella **[!UICONTROL Data formatting]** finestra, fate clic su **[!UICONTROL Next]**: qui non è necessaria alcuna formattazione.
 1. Nella finestra di anteprima dei dati, fai clic su **[!UICONTROL Launch data preview]**: qui vengono restituiti tre diversi domini e-mail con targeting superiore a 30 volte.
 
-   ![](assets/query_editor_blacklist_06.png)
+   ![](assets/query_editor_blocklist_06.png)
