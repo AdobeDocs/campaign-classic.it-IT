@@ -1,13 +1,13 @@
 ---
 audience: end-user
-user-guide-title: Guida di Adobe Campaign Classic
+user-guide-title: ' Adobe Campaign classico Aiuto'
 index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 8%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 8%
       + [Release 18.4](rn/using/release--18-4.md)
    + [Funzioni obsolete](rn/using/deprecated-features.md)
 + Getting Started {#getting-started}
-   + A partire da Adobe Campaign {#starting-with-adobe-campaign}
-      + [Informazioni su Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+   + A partire da  Adobe Campaign {#starting-with-adobe-campaign}
+      + [Informazioni  Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy e raccomandazioni](platform/using/privacy-and-recommendations.md)
-      + [Avvio di Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Area di lavoro di Adobe Campaign](platform/using/adobe-campaign-workspace.md)
+      + [Avvio  Adobe Campaign](platform/using/launching-adobe-campaign.md)
+      + [Area di lavoro Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Domande frequenti {#faq}
          + [Domande comuni](platform/using/common-questions.md)
          + [Concetti chiave](platform/using/faq-key-concepts.md)
@@ -82,7 +82,7 @@ ht-degree: 8%
    + Connettori {#connectors}
       + [Informazioni sui connettori](platform/using/about-connectors.md)
       + [Connettori CRM](platform/using/crm-connectors.md)
-      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe  Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Invio di messaggi {#sending-messages}
    + Informazioni su consegne e canali {#about-deliveries-and-channels}
       + [Canali di comunicazione](delivery/using/communication-channels.md)
@@ -107,7 +107,7 @@ ht-degree: 8%
    + Invio di notifiche push {#sending-push-notifications}
       + [Il canale delle app mobili](delivery/using/about-mobile-app-channel.md)
       + [Integrazione di Campaign SDK nell&#39;applicazione mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + [Configurazione dell’applicazione mobile in Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
+      + [Configurazione dell’applicazione mobile in  Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
       + [Creazione di notifiche](delivery/using/creating-notifications.md)
       + [Risoluzione dei problemi](delivery/using/troubleshooting.md)
    + Invio di posta diretta {#sending-direct-mail}
@@ -161,7 +161,7 @@ ht-degree: 8%
       + [Rendering in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per il nuovo coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database Blacklist](delivery/using/blacklisting-databases.md)
+      + [Database degli elenchi di blocchi](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -214,7 +214,7 @@ ht-degree: 8%
       + [Creazione di ipotesi](campaign/using/creating-hypotheses.md)
       + [Tracciamento delle ipotesi](campaign/using/hypothesis-tracking.md)
 + Reporting {#reporting}
-   + Generazione di rapporti in Adobe Campaign {#reporting-in-adobe-campaign}
+   + Generazione di rapporti in  Adobe Campaign {#reporting-in-adobe-campaign}
       + [Introduzione ai rapporti](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Best practice per la creazione di report](reporting/using/best-practices.md)
    + Accesso ai rapporti incorporati {#accessing-built-in-reports}
@@ -294,23 +294,23 @@ ht-degree: 8%
    + Condivisione dell&#39;audience {#audience-sharing}
       + [Condivisione dei tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Invio della richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Configurazione dell&#39;integrazione dell&#39;audience condivisa in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Configurazione dell&#39;integrazione dell&#39;audience condivisa in [!DNL  Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Risoluzione dei problemi](integrations/using/troubleshooting.md)
       + [Importazione ed esportazione di audience](integrations/using/importing-and-exporting-audiences.md)
    + Condivisione delle risorse {#asset-sharing}
       + [Condivisione di risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Configurazione dell&#39;accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserimento di una risorsa condivisa](integrations/using/inserting-a-shared-asset.md)
-   + Adobe Experience Manager {#adobe-experience-manager}
-      + [Informazioni su [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+   + Adobe Experience Manager  {#adobe-experience-manager}
+      + [Informazioni su [!DNL  Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurazione dell&#39;integrazione](integrations/using/configuring-the-integration.md)
-      + [Creazione di una newsletter [!DNL Experience Manager]](integrations/using/creating-an-experience-manager-newsletter.md)
-   + Adobe Target {#adobe-target}
-      + [Integrazione con [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [Configurazione dell&#39;integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Creazione di una newsletter [!DNL  Experience Manager]](integrations/using/creating-an-experience-manager-newsletter.md)
+   + Adobe Target  {#adobe-target}
+      + [Integrazione con [!DNL  Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Configurazione dell&#39;integrazione con [!DNL  Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserimento di un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
-   + Connessione tramite un Adobe ID {#connecting-via-an-adobe-id}
-      + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+   + Collegamento tramite un Adobe ID  {#connecting-via-an-adobe-id}
+      + [Informazioni su [!DNL  Adobe ID]](integrations/using/about-adobe-id.md)
       + [Configurazione di [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementazione di [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Risoluzione dei problemi IMS](integrations/using/ims-troubleshooting.md)
@@ -439,7 +439,7 @@ ht-degree: 8%
       + [I flussi di lavoro tecnici](workflow/using/about-technical-workflows.md)
       + [Consegne](workflow/using/deliveries.md)
       + [Campagna](workflow/using/campaign.md)
-      + [Analisi Web](workflow/using/web-analytics.md)
+      + [Web  Analytics](workflow/using/web-analytics.md)
       + [Marketing distribuito](workflow/using/distributed-marketing.md)
       + [Monitoraggio della produttività](workflow/using/email-deliverability.md)
       + [Rendering in entrata](workflow/using/inbox-rendering.md)
@@ -594,7 +594,7 @@ ht-degree: 8%
       + [Creazione e configurazione del database](installation/using/creating-and-configuring-the-database.md)
       + [Configurazione del server Campaign](installation/using/campaign-server-configuration.md)
       + [Distribuzione di un&#39;istanza](installation/using/deploying-an-instance.md)
-      + [Installazione di pacchetti standard per Campaign Classic](installation/using/installing-campaign-standard-packages.md)
+      + [Installazione di pacchetti standard Campaign Classic](installation/using/installing-campaign-standard-packages.md)
    + Configurazioni aggiuntive {#additional-configurations}
       + [Configurazione del server Campaign](installation/using/configuring-campaign-server.md)
       + [Connessione tramite LDAP](installation/using/connecting-through-ldap.md)
@@ -609,9 +609,9 @@ ht-degree: 8%
       + [Endpoint di rete campagna](installation/using/campaign-network-endpoints.md)
       + [Linee di comando](installation/using/command-lines.md)
       + [Creazione di nuove istanze](installation/using/creating-new-instances.md)
-      + [Elenco delle opzioni di Campaign Classic](installation/using/configuring-campaign-options.md)
+      + [Elenco delle opzioni Campaign Classic](installation/using/configuring-campaign-options.md)
       + [Disinstallazione di Campaign](installation/using/uninstalling-campaign.md)
-+ Campagna di monitoraggio Classic {#monitoring-campaign-classic}
++ Monitoraggio di Campaign Classic {#monitoring-campaign-classic}
    + Introduzione {#introduction}
       + [Precedente](production/using/foreword.md)
       + [Architettura generale](production/using/general-architecture.md)
@@ -724,10 +724,10 @@ ht-degree: 8%
       + [Prima di avviare la migrazione](migration/using/before-starting-migration.md)
       + [Verifica della migrazione](migration/using/testing-the-migration.md)
       + [Configurazione della piattaforma](migration/using/configuring-your-platform.md)
-   + Migrazione ad Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [Prerequisiti per la migrazione ad Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migrazione in Windows per Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migrazione in Linux per Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+   + Migrazione all&#39; Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
+      + [Prerequisiti per la migrazione al  Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
+      + [Migrazione in Windows per  Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Migrazione in Linux per  Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + Configurazione {#configuration}
       + [Configurazioni generali](migration/using/general-configurations.md)
       + [Configurazioni specifiche in v5.11](migration/using/specific-configurations-in-v5-11.md)
