@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2808'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,19 @@ _13 agosto 2019_
 
 ## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **29 aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
+![](assets/do-not-localize/green_2.png) **22 giugno 2020**: nuova build (9032@800be2e) con le seguenti correzioni:
+
+* Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903, NEO-25799)
+
+Le seguenti correzioni sono correlate al meccanismo di sicurezza dei collegamenti di tracciamento:
+
+* È stato risolto un problema che impediva il monitoraggio dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
+* È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook.  (NEO-25688)
+* È stato risolto un problema che impediva il funzionamento del tracciamento degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
+* È stato risolto un problema con il servizio anti-phishing. (NEO-25283)
+* È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **29 aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
 
 * Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
