@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Use {#use}
 
-L&#39; **[!UICONTROL Data loading (File)]** attività consente di accedere direttamente a un&#39;origine di dati esterni e di utilizzarla in Adobe Campaign. Infatti, tutti i dati richiesti per le operazioni di targeting non sempre si trovano nel database di Adobe Campaign: può essere reso disponibile in file esterni.
+L&#39; **[!UICONTROL Data loading (File)]** attività consente di accedere direttamente a un&#39;origine di dati esterni e di utilizzarla in  Adobe Campaign. Infatti, tutti i dati richiesti per le operazioni di targeting non sempre si trovano nel database del Adobe Campaign : può essere reso disponibile in file esterni.
 
 Il file da caricare può essere specificato dalla transizione o calcolato durante l&#39;esecuzione di questa attività. Ad esempio, può essere l&#39;elenco dei 10 prodotti preferiti di un cliente i cui acquisti vengono gestiti in un database esterno.
 
@@ -38,6 +38,10 @@ La sezione superiore della finestra di configurazione per questa attività conse
 ![](assets/s_advuser_wf_etl_file.png)
 
 È possibile definire un processo preliminare da eseguire durante l&#39;importazione del file, ad esempio per non decomprimere il file sul server (e quindi risparmiare spazio per il file decompresso) ma per includere la decompressione nell&#39;elaborazione del file. Selezionate l’ **[!UICONTROL Pre-process the file]** opzione e scegliete una delle 3 opzioni seguenti: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg).
+
+![](assets/preprocessing-dataloading.png)
+
+Per ulteriori informazioni, consulta questa sezione: [Estrazione o decrittografia di un file prima dell&#39;elaborazione](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
 
 ## Definizione del formato del file {#defining-the-file-format}
 
@@ -104,7 +108,7 @@ L&#39;esempio seguente consente di raccogliere un file sul server ogni giorno, c
 
    A questo scopo, fate clic sul **[!UICONTROL Change...]** pulsante situato nella parte inferiore destra dello strumento di modifica e configurate la pianificazione.
 
-   Per ulteriori informazioni, vedere [Pianificatore](../../workflow/using/scheduler.md).
+   For more on this, refer to [Scheduler](../../workflow/using/scheduler.md).
 
 1. Quindi configurate l&#39;attività di caricamento dei dati (file) per indicare la modalità di lettura dei file raccolti. A questo scopo, selezionate un file di esempio con la stessa struttura dei file da caricare.
 
@@ -114,7 +118,7 @@ L&#39;esempio seguente consente di raccogliere un file sul server ogni giorno, c
 
    * la prima colonna contiene un codice che coincide con l’evento: acquisto (più o meno di 3.000 euro), nessun acquisto o rimborso per uno o più acquisti.
    * le quattro colonne seguenti contengono nome, cognome, e-mail e numero di account del cliente.
-   La configurazione del formato del file da caricare coincide con quella definita durante l&#39;importazione di dati in Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
+   La configurazione del formato del file da caricare coincide con quella definita durante l&#39;importazione di dati in  Adobe Campaign. For more on this, refer to this [section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Nell&#39;attività divisa, specificate i sottoinsiemi da creare, in base al valore della colonna **Evento** .
 
