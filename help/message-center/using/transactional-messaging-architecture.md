@@ -1,6 +1,6 @@
 ---
-title: Architettura dei messaggi transazionali di Adobe Campaign Classic
-description: Questa sezione descrive l'architettura dei messaggi transazionali di Adobe Campaign Classic.
+title: ' Adobe Campaign Architettura di messaggistica transazionale classica'
+description: In questa sezione viene descritta l'architettura di messaggistica transazionale  Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 ## Informazioni sulle istanze di esecuzione e controllo {#about-execution-and-control-instances}
 
-In Adobe Campaign, le funzionalità di messaggistica transazionali (note anche come Centro messaggi) sono state progettate per supportare la scalabilità e fornire un servizio 24/7. Si compone di diversi casi:
+In  Adobe Campaign, le funzionalità di messaggistica transazionali (note anche come Message Center) sono state progettate per supportare la scalabilità e fornire un servizio 24/7. Si compone di diversi casi:
 
 * un&#39;istanza di controllo in cui vengono creati i modelli di messaggio,
 * una o più istanze di esecuzione che ricevono eventi e inviano messaggi.
 
-Per utilizzare queste funzionalità, gli utenti di Adobe Campaign accedono all&#39;istanza di controllo per creare modelli di messaggi transazionali, generare l&#39;anteprima dei messaggi utilizzando un elenco di valori iniziali, visualizzare i rapporti e monitorare le istanze di esecuzione.
+Per utilizzare queste funzionalità,  utenti del Adobe Campaign accedono all&#39;istanza di controllo per creare modelli di messaggi transazionali, generare l&#39;anteprima dei messaggi utilizzando un elenco di elementi iniziali, visualizzare i rapporti e monitorare le istanze di esecuzione.
 
 Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi transazionali e inviano un messaggio personalizzato a ciascun destinatario.
 
@@ -38,7 +38,7 @@ Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi
 
 ## Supporto di più istanze di controllo {#supporting-several-control-instances}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La condivisione di un cluster di esecuzione con più istanze di controllo è supportata solo per gli ambienti locali.
 
@@ -52,9 +52,9 @@ Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi
 
 ## Installazione delle istanze {#installing-instances}
 
-Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni. Adobe consiglia di lavorare in un ambiente di test prima di essere messo in produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
+Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni. Adobe consiglia di lavorare in un ambiente di test prima di essere messo in produzione. È inoltre necessario disporre di una licenza  Adobe Campaign compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
 
@@ -90,7 +90,7 @@ To use transactional messaging with Interaction, you need to apply the following
 
 * Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-  >[!CAUTION]
+  >[!IMPORTANT]
   >
   >Do not replicate the offers onto the execution instances.
 
@@ -124,7 +124,7 @@ Se combinato con il modulo del canale delle app mobili, i messaggi transazionali
 Per utilizzare i moduli di messaggi transazionali con Mobile App Channel, è necessario applicare le seguenti configurazioni:
 
 1. Installa il pacchetto **Mobile App Channel** nelle istanze di controllo ed esecuzione.
-1. Replicare il servizio Adobe Campaign di tipo applicazione **** Mobile e le applicazioni mobili che contiene sulle istanze di esecuzione.
+1. Replicare il tipo di applicazione **** Mobile  servizio Adobe Campaign e le applicazioni mobili che contiene sulle istanze di esecuzione.
 
 L&#39;evento deve contenere i seguenti elementi:
 
@@ -226,9 +226,9 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
 
    * **[!UICONTROL Method]** : selezionate **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : selezionate il vostro account FDA dall&#39;elenco a discesa.
-   * Fate clic sul **[!UICONTROL Create the archiving workflow]** pulsante.
+   * Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]**. 
    * Fare clic sul **[!UICONTROL Create data synchronization workflow]** pulsante per creare il flusso di lavoro di sincronizzazione dei dati LINE.
 
 
 
-1. Ora puoi iniziare a creare messaggi transazionali. Per ulteriori informazioni, consultare questa [pagina](../../message-center/using/introduction.md).
+1. Ora puoi iniziare a creare messaggi transazionali. For more on this, refer to this [page](../../message-center/using/introduction.md).
