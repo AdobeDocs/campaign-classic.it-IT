@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
 
    L&#39; **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** opzione aggiunge un passaggio aggiuntivo per filtrare il risultato finale dell&#39;aggregazione, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte e così via.
 
-1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio calcoli o risultati di elaborazione. A questo scopo, fate clic sull&#39; **[!UICONTROL Add]** icona
+1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio calcoli o risultati di elaborazione. A tale scopo, fare clic sull&#39; **[!UICONTROL Add]** icona.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -50,6 +53,12 @@ Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
    Scegliere la formula desiderata dall&#39;elenco.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
+
+È possibile definire un post-processo da eseguire durante l&#39;estrazione dei dati, consentendo di comprimere o cifrare i file. A questo scopo, il comando desiderato deve essere aggiunto nella **[!UICONTROL Script]** scheda dell&#39;attività.
+
+Per ulteriori informazioni, consulta questa sezione: [Estrazione o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+
+![](assets/postprocessing_dataextraction.png)
 
 ## Elenco delle funzioni aggregate {#list-of-aggregate-functions}
 
