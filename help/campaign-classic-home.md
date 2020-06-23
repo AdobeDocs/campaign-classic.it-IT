@@ -1,14 +1,14 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: Documentazione di prodotto di Adobe Campaign Classic
+seo-title: ' Adobe Campaign Classic documentazione del prodotto'
 solution: Campaign Classic
-title: Documentazione di prodotto di Adobe Campaign Classic
+title: ' Adobe Campaign Classic documentazione del prodotto'
 topic: Premium
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 25%
+source-wordcount: '275'
+ht-degree: 30%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 25%
 
 ## Novità
 
+* Sia i termini &quot;whitelist&quot; che &quot;blacklist&quot; sono stati rimossi dalla documentazione  Adobe Campaign. [Leggi tutto](/help/rn/using/documentation-updates.md)
+
 * **[Domande frequenti sull&#39;](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/> accesso al supportoDomande frequenti, procedure ottimali, risorse di aiuto e richieste di assistenza
 
-* **[Conformità](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)**<br/> alla privacy Scopri come Adobe Campaign può aiutarti a rispettare la privacy
+* **[Conformità](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)**<br/> alla privacy Scopri come  Adobe Campaign può aiutarti nella conformità alla privacy
 
 * **[Capacità](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> di tracciamento Comprendere le capacità e i processi di tracciamento in Campaign
 
