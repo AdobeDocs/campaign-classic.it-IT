@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2808'
+source-wordcount: '2848'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,11 @@ Le seguenti correzioni sono correlate al meccanismo di sicurezza dei collegament
 ![](assets/do-not-localize/orange_2.png) **29 aprile 2020**: nuova build (9032@3a9dc9c) con le seguenti correzioni:
 
 * Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+
+>[!CAUTION]
+>
+>In caso di problemi con le notifiche push tramite i collegamenti di tracciamento o le consegne tramite i tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per il tracciamento dei collegamenti. La procedura è dettagliata in questa [pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
 * È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
 * È stato risolto un problema che poteva interessare la notifica push quando inviata ad alta frequenza. (NEO-20516)
