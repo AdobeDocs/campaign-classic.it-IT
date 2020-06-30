@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3a932bc440853151704f1ba1e188fa0af9d4c5cb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,3 @@ I flussi di lavoro vengono gestiti da un modulo specifico. Questo modulo può es
 * Il processo &#39;Workflow Instance Runner&#39; (runwf) esegue tutte le attività di una determinata istanza del flusso di lavoro. Quando non ci sono attività da eseguire per il momento, diventa &quot;passivo&quot;, cioè salva il suo stato nel database, quindi si arresta.
 * Il modulo &#39;Workflow Server&#39; (wfserver) controlla le istanze correnti del flusso di lavoro. In presenza di un&#39;attività da eseguire, questo modulo crea un processo per attivare (o riattivare) l&#39;istanza corrispondente.
 
-Quando un operatore esegue un&#39;azione su un flusso di lavoro (avvio, arresto, pausa, ecc.), l&#39;azione non viene eseguita direttamente dal modulo &#39;nlserver&#39;, ma viene invece inserita in una coda per essere elaborata dal modulo del flusso di lavoro.
