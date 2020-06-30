@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2126'
 ht-degree: 8%
 
 ---
@@ -320,6 +320,13 @@ ht-degree: 8%
       + [Sincronizzazione delle audience](integrations/using/synchronizing-audiences.md)
       + [Sincronizzazione delle applicazioni Web](integrations/using/synchronizing-web-applications.md)
       + [Risoluzione dei problemi del connettore [!DNL ACS]](integrations/using/troubleshooting-the-acs-connector.md)
+   + Experience Cloud Triggers {#experience-triggers}
+      + [Informazioni su [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Configurazione della pipeline](integrations/using/configuring-pipeline.md)
+      + [Opzione pipeline NmsPipeline_Config](integrations/using/nmspipeline-config.md)
+      + [Attiva eventi](integrations/using/events.md)
+      + [Monitoraggio del condotto](integrations/using/pipeline-monitoring.md)
+      + [Risoluzione dei problemi relativi alla tubazione](integrations/using/pipeline-troubleshooting.md)
 + Automazione con flussi di lavoro {#automating-with-workflows}
    + Introduzione {#introduction}
       + [Informazioni sui flussi di lavoro](workflow/using/about-workflows.md)
@@ -397,6 +404,7 @@ ht-degree: 8%
       + [E-mail in entrata](workflow/using/inbound-emails.md)
       + [SMS in ingresso](workflow/using/inbound-sms.md)
    + Casi d’uso {#use-cases}
+      + [I casi di utilizzo dei flussi di lavoro](workflow/using/about-workflow-use-cases.md)
       + Consegne {#deliveries}
          + [Utilizzo dell&#39;attività di approvazione locale](workflow/using/using-the-local-approval-activity.md)
          + [Test A/B](workflow/using/a-b-testing.md)
