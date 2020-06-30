@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Azioni relative all&#39;esecuzione del flusso di lavoro di targeting (avvio, arr
 La barra degli strumenti consente di avviare e tenere traccia dell’esecuzione del flusso di lavoro.
 
 L&#39;elenco delle opzioni disponibili nel **[!UICONTROL Actions]** menu e il menu di scelta rapida sono descritti di seguito.
+
+>[!IMPORTANT]
+>
+>Tenere presente che, quando un operatore esegue un&#39;azione su un flusso di lavoro (avvio, arresto, pausa, ecc.), l&#39;azione non viene eseguita immediatamente, ma inserita in una coda per essere elaborata dal modulo [del](../../workflow/using/architecture.md)flusso di lavoro.
 
 ## Azioni, barra degli strumenti {#actions-toolbar}
 
