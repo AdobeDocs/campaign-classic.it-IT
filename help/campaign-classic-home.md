@@ -5,9 +5,9 @@ solution: Campaign Classic
 title: ' Adobe Campaign Classic documentazione del prodotto'
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
+source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 25%
 
 ---
@@ -87,4 +87,4 @@ ht-degree: 25%
 | [Guida introduttiva a Campaign](platform/using/about-adobe-campaign-classic.md) | [Guida all’implementazione](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Aggiornamento Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Guida di tracciamento](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Funzioni obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Elenco di controllo sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Pannello di controllo campagna](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) | [Best practice di monitoraggio](https://helpx.adobe.com/campaign/kb/acc-maintenance.html) |
+| [Pannello di controllo campagna](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
