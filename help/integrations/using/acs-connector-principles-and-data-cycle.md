@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '1996'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Ponti del connettore ACS  Adobe Campaign v7 e  Adobe Campaign Standard. Si tratt
 
 Con il connettore ACS, Campaign Standard continua a essere utilizzato dagli esperti di marketing digitale per progettare, eseguire ed eseguire campagne, mentre Campaign v7 è progettato appositamente per gli utenti orientati ai dati come gli esperti di marketing dei database.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Il connettore ACS è disponibile solo come parte dell&#39;offerta Prime del Adobe Campaign . Per ulteriori informazioni su come concedere la licenza  Adobe Campaign Prime, contatta il tuo account manager.
 >
@@ -83,7 +83,7 @@ Il connettore ACS replica periodicamente i seguenti elementi da Campaign Standar
 
 La replica degli ID di consegna e dei registri e-mail consente di accedere alla cronologia delle consegne e ai dati di tracciamento per i destinatari v7 da Campaign v7.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Solo i log di trasmissione e tracciamento delle e-mail vengono replicati da Campaign Standard a Campaign v7.
 
@@ -120,7 +120,7 @@ La fatturazione non viene influenzata dalla scelta dell&#39;applicazione per l&#
 
 Esistono due tipi di implementazione per il connettore ACS. Entrambi sono sempre eseguiti dal Adobe Campaign  Consulenza.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questa sezione è destinata solo agli utenti esperti, per fornire loro una visione globale del processo di implementazione e dei suoi passi principali.
 >
@@ -140,7 +140,7 @@ Tutti gli elementi tecnici relativi al connettore ACS sono disponibili nel **[!U
 
 Dopo l&#39;installazione del pacchetto, sono disponibili due flussi di lavoro tecnici in **[!UICONTROL Administration > ACS Connector > Process]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Non provare mai a modificare questi flussi di lavoro. Non dovrebbero mai essere in errore o messi in pausa. In tal caso, contattate il consulente  Adobe Campaign.
 
@@ -219,7 +219,7 @@ Di seguito è riportato l&#39;elenco dei campi dei destinatari replicati con l&#
   </tr> 
   <tr> 
    <td> Nessun contatto (da un canale)<br /> </td> 
-   <td> @blockList<br /> </td> 
+   <td> @ inserii nell'elenco Bloccati<br /> </td> 
   </tr> 
   <tr> 
    <td> Non contatta più tramite e-mail<br /> </td> 
@@ -290,7 +290,7 @@ I diritti vengono gestiti in modo diverso in Campaign v7 e Campaign Standard. In
 
 Questa sezione descrive alcune delle possibilità in termini di implementazione avanzata.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Queste informazioni possono essere utilizzate solo come linee guida generali. Rivolgiti al tuo consulente  Adobe Campaign per l&#39;implementazione.
 
