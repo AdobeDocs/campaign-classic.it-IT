@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
 workflow-type: tm+mt
-source-wordcount: '6767'
+source-wordcount: '6795'
 ht-degree: 8%
 
 ---
@@ -27,13 +27,19 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti della
 
 Per ulteriori aggiornamenti, è inoltre possibile consultare le [Note](../../rn/using/latest-release.md) sulla versione classiche di Adobe Campaign.
 
+## Luglio 2020 {#july-2020}
+
+È stata aggiunta una nuova sezione con linee guida relative al monitoraggio Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
+
+La sezione Privacy e Consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md).
+
 ## Giugno 2020 {#june-2020}
 
 La sezione Rimozione di un indirizzo in quarantena è stata aggiornata. Ciò include il chiarimento dei casi in cui gli indirizzi vengono automaticamente rimossi dall&#39;elenco di quarantena. [Leggi tutto](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Sono stati aggiunti casi di utilizzo per [cifrare](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [decifrare](../../workflow/using/importing-data.md#use-case-gpg-decrypt) i dati tramite il Pannello di controllo e i flussi di lavoro Campagna.
 
-Sia i termini &quot;whitelist&quot; che &quot;blacklist&quot; sono stati rimossi dalla documentazione  Adobe Campaign. Alcune occorrenze di questi termini potrebbero ancora esistere nell&#39;interfaccia utente del prodotto, nei nomi delle opzioni e nel codice interno, ma verranno sostituiti nelle prossime release di Campaign con ‘blocklist’ e ‘Allowlist’.
+Sia i termini &quot;whitelist&quot; che &quot;blacklist&quot; sono stati rimossi dalla documentazione  Adobe Campaign. Alcune occorrenze di questi termini possono ancora esistere nell&#39;interfaccia utente del prodotto, nei nomi delle opzioni e nel codice interno, ma saranno sostituite nelle prossime release di Campaign con &quot; inserii nell&#39;elenco Bloccati&quot; e &quot; inserire nell&#39;elenco Consentiti&quot;.
 
 La  pagina di integrazione di Experience Cloud Triggers e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
 
@@ -68,7 +74,6 @@ Gli endpoint di rete della campagna sono stati spostati in questa [sezione](../.
 La sezione di installazione Spam Assassin è stata aggiornata con il nuovo nome del file di installazione. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 La sezione sugli ambienti duplicati è stata aggiornata. [Ulteriori informazioni](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## Maggio 2020 {#may-2020}
 
@@ -260,7 +265,7 @@ La procedura per configurare il rendering in entrata per le installazioni aziend
 
 ## Settembre 2019 {#september-2019}
 
-È stata aggiunta una nuova pagina per fornire linee guida generali sulla manutenzione di Campaign Classic. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)
+È stata aggiunta una nuova pagina per fornire linee guida generali sulla manutenzione di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
 Le informazioni relative al monitoraggio dei flussi di lavoro sono state centralizzate in una nuova sezione dedicata. [Ulteriori informazioni](../../workflow/using/monitoring-workflow-execution.md).
 
@@ -425,7 +430,7 @@ Spostata la sezione su come utilizzare gli indirizzi iniziali nel capitolo Panor
 
 È stato aggiunto un nuovo caso di utilizzo del flusso di lavoro: Gestione degli aggiornamenti dalle esecuzioni dei flussi di lavoro simultanee. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Coordinating_data_updates.html)
 
-La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
+La sezione &quot;Rendering in entrata&quot; è stata aggiornata con ulteriori informazioni su Litmus e con una procedura più dettagliata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_Inbox_rendering.html#Multiplexing_the_mid-sourcing_server)
 
 La sezione &quot;SpamAssassin&quot; è stata migliorata. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/DLV_Deliverability_management_SpamAssassin.html)
 
