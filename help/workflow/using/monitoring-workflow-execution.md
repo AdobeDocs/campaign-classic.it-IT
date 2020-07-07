@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2001'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ In questa sezione vengono fornite informazioni su come monitorare l&#39;esecuzio
 
 In [questa sezione](../../workflow/using/supervising-workflows.md#supervising-workflows)è disponibile anche un caso di utilizzo per la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro che vengono &quot;messi in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
 
-Inoltre, gli amministratori dell’istanza possono utilizzare la traccia di **controllo** per controllare le attività e le ultime modifiche apportate ai flussi di lavoro, lo stato dei flussi di lavoro. Per ulteriori informazioni, consulta la sezione [](../../production/using/audit-trail.md)dedicata.
+Inoltre, gli amministratori dell’istanza possono utilizzare la traccia di **controllo** per controllare le attività e le ultime modifiche apportate ai flussi di lavoro, lo stato dei flussi di lavoro. For more on this, refer to the [dedicated section](../../production/using/audit-trail.md).
 
-In [questa pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
+In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
 ## Visualizzazione dello stato {#displaying-progress}
 
@@ -111,7 +111,7 @@ La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i 
 
 ## Tabelle di lavoro e schema del flusso di lavoro {#worktables-and-workflow-schema}
 
-Il flusso di lavoro contiene tabelle di lavoro che possono essere modificate tramite determinate attività. Adobe Campaign consente, tramite le attività di gestione dei dati, di modificare, rinominare e arricchire le colonne delle tabelle di lavoro del flusso di lavoro, ad esempio per allinearle con la nomenclatura in base alle esigenze del cliente, per raccogliere informazioni aggiuntive sul co-beneficiario di un contratto, ecc.
+Il flusso di lavoro contiene tabelle di lavoro che possono essere modificate tramite determinate attività.  Adobe Campaign consente, tramite le attività di gestione dei dati, di modificare, rinominare e arricchire le colonne delle tabelle di lavoro del flusso di lavoro, ad esempio per allinearle con la nomenclatura in base alle esigenze del cliente, per raccogliere informazioni aggiuntive sul co-beneficiario di un contratto, ecc.
 
 È inoltre possibile creare collegamenti tra diverse dimensioni di lavoro e definire le modifiche di dimensione. Ad esempio, per ogni contratto registrato nella banca dati, rivolgersi al titolare principale e utilizzare i dati del co-titolare nelle informazioni aggiuntive.
 
@@ -123,7 +123,7 @@ Quando si verifica un errore, il flusso di lavoro viene messo in pausa e l&#39;a
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-In Adobe Campaign Explorer, l&#39;elenco dei flussi di lavoro visualizza una **[!UICONTROL Failed]** colonna per impostazione predefinita.
+In Esplora Adobi Campaign , l&#39;elenco dei flussi di lavoro visualizza una **[!UICONTROL Failed]** colonna per impostazione predefinita.
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -137,7 +137,7 @@ Esempio di notifica:
 
 ![](assets/wf-notification_error-msg.png)
 
-Il collegamento consente di accedere alla console Adobe Campaign in modalità Web e di lavorare sul flusso di lavoro degli errori dopo aver effettuato l&#39;accesso.
+Il collegamento consente di accedere alla console  Adobe Campaign in modalità Web e di lavorare sul flusso di lavoro degli errori dopo aver effettuato l’accesso.
 
 ![](assets/wf-notification_error-console.png)
 
@@ -175,7 +175,7 @@ Se possibile, si consiglia di riavviare completamente il flusso di lavoro dopo a
 
 ## Controllo istanza {#instance-supervision}
 
-La **[!UICONTROL Instance supervision]** pagina consente di visualizzare l&#39;attività del server Adobe Campaign e di visualizzare l&#39;elenco dei flussi di lavoro e delle consegne con errori.
+La **[!UICONTROL Instance supervision]** pagina consente di visualizzare l&#39;attività del server di Adobe Campaign  e visualizzare l&#39;elenco dei flussi di lavoro e delle consegne con errori.
 
 Per accedere a questa pagina, vai all&#39; **[!UICONTROL Monitoring]** universo e fai clic sul **[!UICONTROL General view]** collegamento.
 
@@ -262,7 +262,7 @@ I supervisori del flusso di lavoro ricevono una notifica. Vengono notificati anc
 
 ## Filtrare i flussi di lavoro in base al loro stato {#filtering-workflows-status}
 
-L&#39;interfaccia di Campaign Classic consente di monitorare lo stato di esecuzione di tutti i flussi di lavoro sull&#39;istanza utilizzando **viste** predefinite. Per accedere a queste viste, aprire il nodo **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
+L&#39;interfaccia Campaign Classic consente di monitorare lo stato di esecuzione di tutti i flussi di lavoro sull&#39;istanza utilizzando **viste** predefinite. Per accedere a queste viste, aprire il nodo **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
 
 Sono disponibili le seguenti viste:
 
