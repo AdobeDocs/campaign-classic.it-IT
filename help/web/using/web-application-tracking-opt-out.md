@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 # Rifiuto tracciamento applicazione Web{#web-application-tracking-opt-out}
 
-Adobe Campaign consente di interrompere il tracciamento dei comportamenti Web degli utenti finali che rifiutano il tracciamento del comportamento tramite cookie o Web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; potete aggiungere questi banner alle applicazioni Web o alle pagine di destinazione.
+ Adobe Campaign consente di interrompere il tracciamento dei comportamenti Web degli utenti finali che rifiutano il tracciamento del comportamento tramite cookie o Web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; potete aggiungere questi banner alle applicazioni Web o alle pagine di destinazione.
 
-Se un utente finale rinuncia al tracciamento del comportamento tramite cookie o Web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con API JavaScript. Nota che alcune giurisdizioni possono richiedere che il Cliente presenti agli utenti finali una clausola di rinuncia prima che sia possibile offrire (o che abbia altri requisiti legali), ed è responsabilità del Cliente rispettare le leggi applicabili.
+Se un utente finale rinuncia al tracciamento del comportamento tramite cookie o Web beacon, tali informazioni vengono trasmesse al server di tracciamento del Adobe Campaign  con le API JavaScript. Nota che alcune giurisdizioni possono richiedere che il Cliente presenti agli utenti finali una clausola di rinuncia prima che sia possibile offrire (o che abbia altri requisiti legali), ed è responsabilità del Cliente rispettare le leggi applicabili.
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Se un utente finale rinuncia al tracciamento del comportamento tramite cookie o 
 
 Per essere visualizzato all&#39;interno di applicazioni Web o pagine di destinazione, il banner deve essere configurato.
 
-Adobe Campaign viene fornito con un banner di esempio che devi adattare alle tue esigenze. Questa versione del banner viene visualizzata come blocco di personalizzazione nella cartella del modello di contenuto. Fare riferimento a [questa pagina](../../delivery/using/personalization-blocks.md).
+ Adobe Campaign viene fornito con un banner di esempio che è necessario adattare alle proprie esigenze. Questa versione del banner viene visualizzata come blocco di personalizzazione nella cartella del modello di contenuto. Fare riferimento a [questa pagina](../../delivery/using/personalization-blocks.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per creare un banner personalizzato, dovete personalizzare il banner out-of-the-box.
 
@@ -78,7 +78,7 @@ Il banner viene distribuito con un CSS specifico. Tuttavia, potete sovrascrivere
 
 ## Impostazione del cookie di rinuncia tramite API {#setting-the-opt-out-cookie-using-api}
 
-Adobe Campaign viene fornito con le API che consentono di gestire il valore del cookie e recuperare le preferenze utente.
+ Adobe Campaign viene fornito con le API che consentono di gestire il valore del cookie e recuperare le preferenze utente.
 
 Il nome del cookie è **acoptout**. I valori comuni sono:
 
