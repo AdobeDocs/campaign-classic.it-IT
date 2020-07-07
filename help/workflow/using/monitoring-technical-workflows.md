@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 I flussi di lavoro tecnici devono essere monitorati e le azioni devono essere intraprese in caso di guasto.
 
-In [questa pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
+In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
 ## Pannello di controllo per le istanze {#instance-monitoring-dashboard}
 
@@ -32,7 +35,7 @@ Il pannello di monitoraggio delle istanze è accessibile tramite l&#39; **[!UICO
 
 ![](assets/monitoring_technical_workflows1.png)
 
-In Indicatori di sistema e file di base, verificare che nessun indicatore sia evidenziato in rosso. In questo caso e in alcuni casi, è necessario:
+In Indicatori di sistema e file di base, verificare che nessun indicatore sia evidenziato in rosso. Se questo è il caso e alcuni sono, è necessario:
 
 * Verificare che i processi necessari siano sempre in esecuzione,
 * Verificate che nessuno dei processi sia troppo vecchio,
@@ -46,29 +49,29 @@ A seconda del flusso di lavoro tecnico, seguite i passaggi descritti di seguito 
 
 Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico dovrebbe eseguire, consultare questa [sezione](../../workflow/using/about-technical-workflows.md).
 
-Per **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+Ad **[!UICONTROL Database Cleanup workflow (‘cleanup’)]** esempio:
 
-1. Verificate che il **[!UICONTROL Database Cleanup]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/delivery.md).
-1. Verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
+1. Verificate che il **[!UICONTROL Database Cleanup]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. Esaminare il giornale di registrazione per verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
 1. Per ulteriori informazioni, consultate questa [pagina](../../production/using/database-cleanup-workflow.md).
 
-Per **[!UICONTROL Tracking workflow (‘tracking’)]**:
+Ad **[!UICONTROL Tracking workflow (‘tracking’)]** esempio:
 
 Verificare che il flusso di lavoro di tracciamento venga eseguito come pianificato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. For more on this, refer to this [section](../../workflow/using/delivery.md).
 
-Per **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+Ad **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]** esempio:
 
-1. Verificate che il **[!UICONTROL Deliverability update]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/delivery.md).
+1. Verificate che il **[!UICONTROL Deliverability update]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. For more on this, refer to this [page](../../workflow/using/delivery.md).
 1. Verificare nel giornale di registrazione che le regole siano aggiornate regolarmente.
 
-Per **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
+Ad **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]** esempio:
 
-1. Controllate tutti i flussi di lavoro che si trovano sotto la **[!UICONTROL Campaign process]** cartella. Per ulteriori informazioni, consultare questa [pagina](../../workflow/using/campaign.md).
+1. Controllate tutti i flussi di lavoro che si trovano sotto la **[!UICONTROL Campaign process]** cartella. For more on this, refer to this [page](../../workflow/using/campaign.md).
 1. Verificare che i flussi di lavoro vengano eseguiti come pianificato e che il giornale di registrazione non evidenzi gli errori ricorrenti.
 
 ## Controllo del flusso di lavoro {#workflow-supervision}
 
-Il **[!UICONTROL Workflow supervisors]** gruppo dovrebbe contenere operatori che devono essere informati dei fallimenti e che possono intervenire in tempo.
+Il **[!UICONTROL Workflow supervisors]** gruppo dovrebbe contenere operatori che devono essere informati dei fallimenti e che possono intervenire in tempo utile.
 
 ![](assets/monitoring_technical_workflows3.png)
 
@@ -78,7 +81,7 @@ Accertatevi che ciascun operatore disponga di un indirizzo e-mail valido.
 
 Qualsiasi flusso di lavoro da eseguire per mantenere la piattaforma attiva, ad esempio le importazioni giornaliere di dati, deve essere dichiarato &quot;Produzione&quot; (casella di controllo) e visualizzato in grassetto.
 
-## Elenco manutenzione flussi di lavoro {#workflow-maintenance-list}
+## Elenco di manutenzione del flusso di lavoro {#workflow-maintenance-list}
 
 Tutti i flussi di lavoro tecnici personalizzati devono essere documentati in un foglio di lavoro contenente:
 
@@ -102,4 +105,4 @@ Potete creare un flusso di lavoro di monitoraggio per inviare un messaggio e-mai
 
 È possibile creare una visualizzazione che consenta di monitorare tutti i flussi di lavoro in un&#39;area funzionale o a livello di sistema.
 
-Puoi anche utilizzare la funzionalità di creazione di rapporti o processi di Adobe Campaign per creare documentazione su richiesta, sempre aggiornata.
+Potete inoltre utilizzare la funzionalità di creazione di Adobi Campaign  o rapporti per creare la documentazione su richiesta, sempre aggiornata.
