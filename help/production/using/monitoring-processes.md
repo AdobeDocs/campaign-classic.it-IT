@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '3602'
+ht-degree: 0%
 
 ---
 
 
 # Monitoraggio dei processi{#monitoring-processes}
 
-Il server applicazione e il server di reindirizzamento (**tracking**) possono essere monitorati manualmente o automaticamente.
+Il server delle applicazioni e il server di reindirizzamento (**tracking**) possono essere monitorati manualmente o automaticamente.
 
 ## Monitoraggio manuale {#manual-monitoring}
 
-Vai a **[!UICONTROL Monitoring]** e fai clic sul **[!UICONTROL Overview]** collegamento per visualizzare la pagina di monitoraggio del processo di Adobe Campaign.
+Vai a **[!UICONTROL Monitoring]** e fai clic sul **[!UICONTROL Overview]** collegamento per visualizzare la pagina di monitoraggio del processo del Adobe Campaign .
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -36,7 +39,7 @@ La pagina visualizzata consente di visualizzare lo stato dell’istanza connessa
 * l&#39;elenco dei processi mancanti e delle informazioni di esecuzione (data di inizio, PID, ecc.),
 * una visualizzazione dei flussi di lavoro e delle consegne.
 
-In [questa pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
+In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
 ### Giornale di registrazione {#log-journal}
 
@@ -63,7 +66,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
-   Quando **[!UICONTROL Warning]** e gli **[!UICONTROL Alert]** indicatori sono visualizzati, puoi risolvere il problema aggiungendo RAM al computer in cui è installato il server Adobe Campaign. Puoi anche decidere di installare il server Adobe Campaign su un computer dedicato.
+   Quando **[!UICONTROL Warning]** e gli **[!UICONTROL Alert]** indicatori sono visualizzati, è possibile risolvere il problema aggiungendo RAM al computer in cui è installato il server di Adobe Campaign . Potete anche decidere di installare il server di Adobe Campaign  su un computer dedicato.
 
 * **[!UICONTROL Swap Memory]** : informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area sul disco rigido che Windows utilizza come se fosse RAM.
 
@@ -93,7 +96,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando lo spazio disponibile su disco raggiunge il 90% della capacità totale.
 
-* **[!UICONTROL Number of processes too old]** : informazioni sui processi di Adobe Campaign che sono stati attivi per più di un giorno.
+* **[!UICONTROL Number of processes too old]** : informazioni relative  processi di Adobe Campaign che sono stati attivi da più di un giorno.
 
    **[!UICONTROL Current value]** : numero di processi attualmente attivi.
 
@@ -101,7 +104,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    **[!UICONTROL Alert]** : questo indicatore viene visualizzato se il numero di processi è uguale a 1.
 
-   Quando l&#39; **[!UICONTROL Alert]** indicatore viene visualizzato, è possibile che il processo interessato sia bloccato dal motore del database SQL o che sia bloccato in un ciclo infinito. Il processo di **controllo** fornito da Adobe Campaign riavvia automaticamente tutti i processi ogni giorno e consente di risolvere questo problema. Tuttavia, potete anche interrompere il processo in questione per forzare il riavvio.
+   Quando l&#39; **[!UICONTROL Alert]** indicatore viene visualizzato, è possibile che il processo interessato sia bloccato dal motore del database SQL o che sia bloccato in un ciclo infinito. Il processo **di controllo** fornito da  Adobe Campaign riavvia automaticamente tutti i processi ogni giorno e consente di risolvere il problema. Tuttavia, potete anche interrompere il processo in questione per forzare il riavvio.
 
 #### In Linux {#in-linux}
 
@@ -130,7 +133,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
-   Quando **[!UICONTROL Warning]** e gli **[!UICONTROL Alert]** indicatori sono visualizzati, puoi risolvere il problema aggiungendo RAM al computer in cui è installato il server Adobe Campaign. Puoi anche decidere di installare il server Adobe Campaign su un computer dedicato.
+   Quando **[!UICONTROL Warning]** e gli **[!UICONTROL Alert]** indicatori sono visualizzati, è possibile risolvere il problema aggiungendo RAM al computer in cui è installato il server di Adobe Campaign . Potete anche decidere di installare il server di Adobe Campaign  su un computer dedicato.
 
 * **[!UICONTROL Swap Memory]** : informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area sul disco rigido che Windows utilizza come se fosse RAM.
 
@@ -146,7 +149,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    Quando **[!UICONTROL Warning]** e gli **[!UICONTROL Alert]** indicatori sono visualizzati, è possibile risolvere il problema aumentando le dimensioni del file di scambio.
 
-* **[!UICONTROL Core Files]** : informazioni sui file generati in seguito all&#39;arresto anomalo di un processo Adobe Campaign. Questi file consentono di diagnosticare i motivi dell&#39;arresto anomalo.
+* **[!UICONTROL Core Files]** : informazioni relative ai file generati in seguito all’arresto anomalo di un processo di Adobe Campaign . Questi file consentono di diagnosticare i motivi dell&#39;arresto anomalo.
 
    **[!UICONTROL Current Value]** : numero di file esistenti.
 
@@ -156,9 +159,9 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
    **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di file è uguale a 1.
 
-   Quando un processo risulta mancante a causa di un arresto anomalo, viene visualizzato in rosso nell&#39;elenco dei processi e riavviato automaticamente dal processo di **controllo** fornito da Adobe Campaign.
+   Quando un processo risulta mancante a causa di un arresto anomalo, viene visualizzato in rosso nell’elenco dei processi e riavviato automaticamente dal processo **di controllo** fornito da  Adobe Campaign.
 
-* **[!UICONTROL Number of shared memory segments]** : informazioni sui segmenti di memoria condivisi da tutti i processi di Adobe Campaign.
+* **[!UICONTROL Number of shared memory segments]** : informazioni sui segmenti di memoria condivisi da tutti i processi  Adobe Campaign.
 
    **[!UICONTROL Current value]** : numero di segmenti di memoria attualmente in uso.
 
@@ -214,7 +217,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
 #### Indicatori personalizzati {#customized-indicators}
 
-Adobe Campaign consente di personalizzare gli indicatori. Per eseguire questa operazione:
+ Adobe Campaign consente di personalizzare gli indicatori. Per eseguire questa operazione:
 
 1. Create un file **.sh** e denominatelo **[!UICONTROL cust_indicators.sh]** .
 1. Aggiungi gli indicatori personalizzati a questo file. Ad esempio:
@@ -242,11 +245,11 @@ Adobe Campaign consente di personalizzare gli indicatori. Per eseguire questa op
 
 1. Inserite il file nella **[!UICONTROL usr/local/neolane/nl6]** cartella.
 
-Questo file verrà chiamato da Adobe Campaign.
+Il file verrà chiamato dal Adobe Campaign .
 
 ## Report SMTP {#smtp-reports}
 
-I rapporti sul monitoraggio della distribuzione SMTP sono integrati nella piattaforma Adobe Campaign. È possibile accedervi dalla console o tramite l&#39;accesso Web.
+I report di monitoraggio della distribuzione SMTP sono integrati nella piattaforma di Adobe Campaign . È possibile accedervi dalla console o tramite l&#39;accesso Web.
 
 Questi rapporti mostrano le statistiche di consegna SMTP e gli errori SMTP per dominio.
 
@@ -288,7 +291,7 @@ L&#39;elenco degli indicatori per questo rapporto è riportato sotto il grafico.
    * Curva Kaki: la coda &quot;differita&quot;. Impossibile restituire questi messaggi per il momento a causa di limitazione o perché non è disponibile alcuna connessione alla destinazione. I tentativi avranno luogo ogni 5s, 10s, 20s, 40s, 2 min, ecc. per il tempo **MaxAgeSec** definito prima dell&#39;abbandono.
 
 1. Questo grafico mostra un dettaglio dei messaggi abbandonati (curva rossa sul secondo grafico): mostra la percentuale di messaggi abbandonati senza tentativi (mauve) rispetto a messaggi con invio non riuscito (rosso). Questo consente di visualizzare la percentuale di messaggi non elaborati entro il periodo concesso a causa di limitazioni da parte del server di statistiche (limitazione) o a causa di indisponibilità del server remoto.
-1. Connessioni SMTP aperte o aperte.
+1. Le connessioni SMTP si aprono o si aprono.
 1. Stima del numero di **elementi secondari**.
 
 >[!NOTE]
@@ -321,7 +324,7 @@ L&#39;elenco degli indicatori per questo rapporto è riportato sotto la tabella.
 
 Fate clic su un nome di dominio per visualizzarne gli errori.
 
-Sono organizzati per PublicId: questo identificatore corrisponde a un indirizzo IP condiviso da più mtas di Adobe Campaign dietro un router. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e consegna tra questo punto iniziale e il server di destinazione.
+Sono organizzati per PublicId: questo identificatore corrisponde a un indirizzo IP condiviso da diversi  di Adobe Campaign dietro un router. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e consegna tra questo punto iniziale e il server di destinazione.
 
 ![](assets/smtp_error_report_details.png)
 
@@ -337,7 +340,7 @@ Fate clic su un identificatore PublicId per visualizzare ulteriori dettagli.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli errori SMTP e sulla loro gestione in Adobe Campaign, consulta [questa sezione](../../installation/using/email-deliverability.md).
+>Per ulteriori informazioni sugli errori SMTP e sulla loro gestione in  Adobe Campaign, consultare [questa sezione](../../installation/using/email-deliverability.md).
 
 ## Report fatturazione {#billing-report}
 
@@ -363,7 +366,7 @@ Sono disponibili le metriche seguenti per tenere traccia delle consegne:
 
 ## Monitoraggio automatico {#automatic-monitoring}
 
-Adobe Campaign offre diversi metodi di monitoraggio automatico, descritti di seguito.
+ Adobe Campaign offre diversi metodi di monitoraggio automatico, presentati di seguito.
 
 ### Riga di comando {#command-line}
 
@@ -371,7 +374,7 @@ Comando
 
 **monitor nlserver**
 
-Consente di elencare una serie di indicatori nei moduli di Adobe Campaign e nel sistema.
+Consente di elencare una serie di indicatori nei moduli di Adobe Campaign  e nel sistema.
 
 Genera l&#39;output in un formato XML facilmente elaborato.
 
@@ -403,13 +406,13 @@ Visualizza una riga come questa in formato XML:
 
 Questa pagina **http(s)://`<Application server url>`/nl/jsp/ping.jsp** funziona nello stesso modo della sua controparte di rete: verifica una query completa attraverso apache/tomcat/modulo Web/database e il caricamento sul client. Se tutto funziona correttamente, restituisce un &quot;OK&quot;. È consigliabile eseguire questo test su computer con accesso ai database (ad esempio, mtas e sondaggi).
 
-**Utilizzo**: un token di sessione associato al login di un operatore deve essere passato come argomento per accedere in remoto (vedete il suggerimento nel monitoraggio [automatico tramite gli script](#automatic-monitoring-via-adobe-campaign-scripts)di Adobe Campaign).
+**Utilizzo**: un token di sessione associato al login di un operatore deve essere passato come argomento per accedere in remoto (vedete il suggerimento nel monitoraggio [automatico tramite  script](#automatic-monitoring-via-adobe-campaign-scripts)di Adobe Campaign).
 
 Ad esempio:
 
 ![](assets/ncs_monitoring_ping.png)
 
-Il nome e l&#39;accesso dell&#39;operatore devono essere precedentemente configurati nella console client Adobe Campaign con diritti di database.
+Il nome dell&#39;operatore e il login devono essere configurati in precedenza nella console client  Adobe Campaign con diritti di accesso al database.
 
 ![](assets/ncs_operators_rights_01.png)
 
@@ -417,23 +420,23 @@ Il nome e l&#39;accesso dell&#39;operatore devono essere precedentemente configu
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Si tratta di un test per verificare che un operatore possa accedere al server Adobe Campaign tramite una pagina Web; la stessa pagina Web a cui si accede tramite i menu della console client. Puoi chiamare questa pagina dai tuoi strumenti di sorveglianza (Tivoli, Nagios, ecc.).
+Si tratta di un test per verificare che un operatore possa accedere al server del Adobe Campaign  tramite una pagina Web; la stessa pagina Web a cui si accede tramite i menu della console client. Puoi chiamare questa pagina dai tuoi strumenti di sorveglianza (Tivoli, Nagios, ecc.).
 
 ![](assets/ncs_monitoring_web.png)
 
-**Utilizzo**: un token di sessione associato al login di un operatore che consente di connettersi all&#39;istanza deve essere utilizzato come argomento (vedete il suggerimento nel monitoraggio [automatico tramite gli script](#automatic-monitoring-via-adobe-campaign-scripts)di Adobe Campaign).
+**Utilizzo**: un token di sessione associato al login di un operatore che consente di connettersi all&#39;istanza deve essere utilizzato come argomento (vedete il suggerimento nel monitoraggio [automatico tramite  script](#automatic-monitoring-via-adobe-campaign-scripts)di Adobe Campaign).
 
-L&#39;operatore e il relativo login devono essere configurati in precedenza nella console client di Adobe Campaign con i diritti e le restrizioni appropriati per il database.
+L&#39;operatore e il relativo login devono essere configurati in precedenza nella console del client di Adobe Campaign  con i diritti e le limitazioni del database appropriati.
 
 **Frequenza**: si tratta di un test server completo e non deve essere eseguito spesso (ad esempio, può essere eseguito una volta ogni dieci minuti).
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Questo **jsp** rappresenta il punto di ingresso delle API delle applicazioni Adobe Campaign. Essa può pertanto fornire un controllo dettagliato della domanda. Può essere utilizzato anche per monitorare i servizi Web di Adobe Campaign. Viene utilizzato nei nostri script di monitoraggio, ma si noti che è solo per gli utenti di alimentazione.
+Questo **jsp** rappresenta il punto di ingresso  API applicazione di Adobe Campaign. Essa può pertanto fornire un controllo dettagliato della domanda. Può essere utilizzato anche per monitorare  servizi Web di Adobe Campaign. Viene utilizzato nei nostri script di monitoraggio, ma si noti che è solo per gli utenti di alimentazione.
 
 ### Monitoraggio in base ai tipi di distribuzione {#monitoring-based-on-deployment-types}
 
-Adobe Campaign abilita diverse configurazioni di distribuzione (per ulteriori informazioni, consulta [questa sezione](../../installation/using/hosting-models.md)). Questa sezione descrive le varie tecniche di monitoraggio automatico da applicare a seconda del tipo di installazione.
+ Adobe Campaign abilita diverse configurazioni di distribuzione (per ulteriori informazioni, consulta [questa sezione](../../installation/using/hosting-models.md)). Questa sezione descrive le varie tecniche di monitoraggio automatico da applicare a seconda del tipo di installazione.
 
 <table> 
  <thead> 
@@ -447,7 +450,7 @@ Adobe Campaign abilita diverse configurazioni di distribuzione (per ulteriori in
    <td> Autonomo </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/test</span> e <span class="uicontrol">/nl/jsp/monitor.jsp</span> sul server di Adobe Campaign</p> </li> 
+     <li><p> <span class="uicontrol">/r/test</span> e <span class="uicontrol">/nl/jsp/monitor.jsp</span> sul server di Adobe Campaign </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -476,15 +479,15 @@ Adobe Campaign abilita diverse configurazioni di distribuzione (per ulteriori in
  </tbody> 
 </table>
 
-## Monitoraggio automatico tramite script Adobe Campaign {#automatic-monitoring-via-adobe-campaign-scripts}
+## Monitoraggio automatico tramite script  Adobe Campaign {#automatic-monitoring-via-adobe-campaign-scripts}
 
-Adobe Campaign può fornire uno strumento di monitoraggio delle istanze (netreport) che consente di inviare un report via e-mail sulle anomalie rilevate.
+ Adobe Campaign può fornire uno strumento di monitoraggio delle istanze (netreport) che consente di inviare un report via e-mail sulle anomalie rilevate.
 
 ![](assets/pro_netreport.png)
 
 >[!CAUTION]
 >
->Questo strumento può essere utilizzato per monitorare le istanze, ma non è supportato da Adobe Campaign. Per ulteriori informazioni, contattate l&#39;amministratore della campagna.
+>Questo strumento può essere utilizzato per monitorare le istanze, ma non è supportato da  Adobe Campaign. Per ulteriori informazioni, contattate l&#39;amministratore della campagna.
 
 ### Elementi richiesti {#required-elements}
 
@@ -493,7 +496,7 @@ Per il monitoraggio automatico sono necessarie le seguenti precauzioni di preins
 * È necessario disporre di file **netreport.tgz **(installazione Linux) o **netreport.zip** (installazione Windows),
 * Consigliamo vivamente di non installare il monitoraggio sulla macchina da monitorare,
 * deve essere installato su un computer con JRE o JDK,
-* in Linux, la macchina da monitorare deve avere il pacchetto **bc** . For more on this, refer to [this section](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
+* in Linux, la macchina da monitorare deve avere il pacchetto **bc** . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
 
 ### Procedura di installazione {#installation-procedure}
 
@@ -555,7 +558,7 @@ Esempio di configurazione:
 Questo elemento viene utilizzato per compilare la configurazione delle e-mail, ovvero
 
 * **mailServer**: Server SMTP utilizzato per inviare e-mail (ad esempio: smtp.domain.net).
-* **mailFrom**: indirizzo e-mail del mittente del rapporto (ad esempio: monitoring@domain.net).
+* **mailFrom**: indirizzo e-mail del mittente del rapporto (ad es.: monitoring@domain.net).
 * **receiveList**: l’elenco degli indirizzi e-mail dei destinatari del monitoraggio. Gli indirizzi devono essere separati da virgole (senza spazi).
 * La modalità &#39;**night**&#39; (opzionale) è utilizzata per evitare l&#39;invio di e-mail tra il periodo di tempo specificato. Al contrario, i dati vengono consolidati e un messaggio e-mail relativo all&#39;attività notturna viene inviato dopo l&#39;ora di fine (per impostazione predefinita, 7:00).
 * Il sottoelemento **buildRange** (facoltativo) consente di specificare un numero di build minimo e massimo. Verrà generato un errore per tutti i computer il cui numero di build non rientra in questo intervallo
@@ -596,7 +599,7 @@ Questo elemento configura il monitoraggio di un determinato server sull’host, 
 * **alias** (facoltativo): nome del computer monitorato così come apparirà nel report.
 * **sessionToken**: fornisce l&#39;autenticazione di accesso tramite un token di sessione autorizzato.
 
-   Per configurare il token di sessione, seleziona l’operatore di **monitoraggio** nella console di Adobe Campaign. Nella scheda Diritti **di** accesso, specificare gli indirizzi IP dei computer autorizzati a monitorare l&#39;istanza. Sarà quindi possibile connettersi alla pagina di monitoraggio da quei computer utilizzando l&#39;identificatore di **monitoraggio** e senza dover specificare una password.
+   Per configurare il token di sessione, selezionate l’operatore di **monitoraggio** nella console Adobe Campaign . Nella scheda Diritti **di** accesso, specificare gli indirizzi IP dei computer autorizzati a monitorare l&#39;istanza. Sarà quindi possibile connettersi alla pagina di monitoraggio da quei computer utilizzando l&#39;identificatore di **monitoraggio** e senza dover specificare una password.
 
    ![](assets/ncs_operators_rights_02.png)
 
