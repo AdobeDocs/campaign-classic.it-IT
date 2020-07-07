@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9188a68ca2ffcd9cf9e82b475aa2a0dd5807561b
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 0%
@@ -54,7 +54,7 @@ I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nell&#39;elenco dei blocchi del database. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello ai destinatari di destinazione che si trovano nell&#39;elenco dei blocchi.
+1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nel database  elenco Bloccati. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello ai destinatari di destinazione che si trovano nel elenco Bloccati .
 
    A tale scopo, fare clic sulla **[!UICONTROL Exclusions]** scheda.
 
@@ -62,7 +62,7 @@ I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Questa opzione può essere disabilitata solo in questo tipo di contesto.
 
@@ -112,7 +112,7 @@ Per farlo, segui la procedura indicata di seguito:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   La prima **[!UICONTROL Script]** attività aggiunge i destinatari all’elenco dei blocchi fino a quando non confermano la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
+   La prima **[!UICONTROL Script]** attività aggiungerà i destinatari al elenco Bloccati  fino a quando non avranno confermato la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
 
    ```
    ctx.recipient.@blockList=1
@@ -175,7 +175,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   L’utente viene aggiunto al database del Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto all’elenco dei blocchi fino a quando non conferma la propria iscrizione tramite e-mail.
+   L’utente viene aggiunto al database del Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto al elenco Bloccati  fino a quando non conferma la propria iscrizione tramite e-mail.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -189,7 +189,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
     Adobe Campaign, il profilo utente viene aggiornato:
 
-   * non sono più nell&#39;elenco dei blocchi,
+   * non si trovano più nel elenco Bloccati ,
    * sono iscritti al servizio informazioni.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
