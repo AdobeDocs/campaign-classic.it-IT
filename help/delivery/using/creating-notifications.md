@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Iniziate creando una nuova consegna.
 
 1. Nel **[!UICONTROL Title]** campo, immettete l’etichetta del titolo che desiderate visualizzare nella notifica. Verrà visualizzato solo nell&#39;elenco delle notifiche disponibili dal Centro notifiche. Questo campo consente di definire il valore del parametro **title** del payload di notifica iOS.
 
-1. Se utilizzate il connettore HTTP/2, potete aggiungere un sottotitolo (valore del parametro del **sottotitolo** del payload di notifica iOS). Consultare la sezione [Configurazione dell&#39;applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+1. Se utilizzate il connettore HTTP/2, potete aggiungere un sottotitolo (valore del parametro del **sottotitolo** del payload di notifica iOS). Consultate [Configurazione dell’applicazione mobile nella sezione  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 1. Quindi immettete il **[!UICONTROL Message]** e il **[!UICONTROL Value of the badge]** valore in base al tipo di notifica scelto.
 
@@ -73,7 +73,7 @@ Iniziate creando una nuova consegna.
    >
    >**[!UICONTROL Badge]** e le notifiche **[!UICONTROL Alert and badge]** del tipo consentono di modificare il valore del contrassegno (il numero sopra il logo dell’applicazione mobile). Per aggiornare il contrassegno, è sufficiente immettere 0 come valore. Se il campo è vuoto, il valore del contrassegno non viene modificato.
 
-1. Fate clic sull&#39; **[!UICONTROL Insert emoticon]** icona per inserire le icone nella notifica push. Per personalizzare l’elenco delle icone, consultate [Personalizzazione dell’elenco delle icone](../../delivery/using/defining-interactive-content.md)
+1. Fate clic sull&#39; **[!UICONTROL Insert emoticon]** icona per inserire le icone nella notifica push. Per personalizzare l’elenco delle icone, consultate [Personalizzazione dell’elenco delle icone](../../delivery/using/customizing-emoticon-list.md)
 
 1. Consente di **[!UICONTROL Action button]** definire un&#39;etichetta per il pulsante di azione visualizzato sulle notifiche di avviso (campo **action_loc_key** del payload). Se l&#39;applicazione iOS gestisce stringhe localizzabili (**Localizable.strings**), immettere la chiave corrispondente in questo campo. Se l&#39;applicazione non gestisce il testo localizzabile, immettere l&#39;etichetta che si desidera visualizzare sul pulsante dell&#39;azione. Per ulteriori informazioni sulle stringhe localizzabili, consulta la documentazione [](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) Apple.
 1. Nel **[!UICONTROL Play a sound]** campo, selezionate l&#39;audio che deve essere riprodotto dal terminale mobile al ricevimento della notifica.
@@ -86,7 +86,7 @@ Iniziate creando una nuova consegna.
 
    >[!NOTE]
    >
-   >Le variabili di applicazione devono essere definite nel codice dell’applicazione mobile e immesse durante la creazione del servizio. Per ulteriori informazioni, consulta: [Configurazione di un’applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Le variabili di applicazione devono essere definite nel codice dell’applicazione mobile e immesse durante la creazione del servizio. Per ulteriori informazioni, consulta: [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Una volta configurata la notifica, fate clic sulla **[!UICONTROL Preview]** scheda per visualizzare l&#39;anteprima della notifica.
 
@@ -94,7 +94,7 @@ Iniziate creando una nuova consegna.
 
    >[!NOTE]
    >
-   >Lo stile della notifica (banner o avviso) non è definito in Adobe Campaign. Dipende dalla configurazione selezionata dall&#39;utente nelle relative impostazioni iOS. Tuttavia, Adobe Campaign consente di visualizzare in anteprima ciascun tipo di stile di notifica. Fare clic sulla freccia in basso a destra per passare da uno stile all&#39;altro.
+   >Lo stile di notifica (banner o avviso) non è definito nell&#39;Adobe Campaign . Dipende dalla configurazione selezionata dall&#39;utente nelle relative impostazioni iOS. Tuttavia,  Adobe Campaign consente di visualizzare in anteprima ogni tipo di stile di notifica. Fare clic sulla freccia in basso a destra per passare da uno stile all&#39;altro.
    >
    >L&#39;anteprima utilizza l&#39;aspetto e il comportamento di iOS 10.
 
@@ -130,7 +130,7 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
    >[!NOTE]
    >
-   >Le variabili di applicazione devono essere definite nel codice dell’applicazione mobile e immesse durante la creazione del servizio. Per ulteriori informazioni, consulta: [Configurazione di un’applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Le variabili di applicazione devono essere definite nel codice dell’applicazione mobile e immesse durante la creazione del servizio. Per ulteriori informazioni, consulta: [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Una volta configurata la notifica, fate clic sulla **[!UICONTROL Preview]** scheda per visualizzare l&#39;anteprima della notifica.
 
