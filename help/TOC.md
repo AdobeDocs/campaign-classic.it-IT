@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2122'
 ht-degree: 8%
 
 ---
@@ -73,12 +73,13 @@ ht-degree: 8%
    + Accesso a un database esterno (FDA){#accessing-external-database}
       + [Informazioni su FDA](platform/using/about-fda.md)
       + [Configurazioni specifiche per tipo di database](platform/using/specific-configuration-database.md)
+      + [Connettori precedenti](platform/using/legacy-connectors.md)
       + [Diritti di accesso al database remoto](platform/using/remote-database-access-rights.md)
       + [Connessione al database](platform/using/connecting-to-database.md)
       + [Creazione dello schema dati](platform/using/creating-data-schema.md)
       + [Definizione del mapping dei dati](platform/using/defining-data-mapping.md)
       + [Opzioni aggiuntive](platform/using/additional-options.md)
-      + [Utilizzo dei dati di un database esterno in un flusso di lavoro](platform/using/data-external-database-workflow.md)
+      + [Appendici](platform/using/appendices-fda.md)
    + Connettori {#connectors}
       + [Informazioni sui connettori](platform/using/about-connectors.md)
       + [Connettori CRM](platform/using/crm-connectors.md)
@@ -161,7 +162,7 @@ ht-degree: 8%
       + [Rendering in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per il nuovo coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database degli elenchi di blocchi](delivery/using/block-list-databases.md)
+      + [Database di  Elenco Bloccati](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -623,6 +624,7 @@ ht-degree: 8%
    + Introduzione {#introduction}
       + [Precedente](production/using/foreword.md)
       + [Architettura generale](production/using/general-architecture.md)
+      + [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md)
    + Procedure di produzione {#production-procedures}
       + [Principio di configurazione](production/using/configuration-principle.md)
       + [Principio di funzionamento](production/using/operating-principle.md)
