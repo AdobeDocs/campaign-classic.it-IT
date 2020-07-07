@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
@@ -40,16 +43,16 @@ Gli indirizzi dei semi vengono aggiunti alla destinazione delle consegne importa
 >
 >Gli indirizzi dei semi non appartengono alla tabella dei destinatari, ma vengono creati in una tabella separata. Se si estende la tabella dei destinatari con nuovi dati, è necessario estendere la tabella degli indirizzi iniziali insieme agli stessi dati. In caso contrario, i campi estesi non saranno presi in considerazione per gli indirizzi iniziali.
 >
->Un esempio di come estendere la tabella degli indirizzi di base è presentato in questa sezione: Caso [di utilizzo: selezione degli indirizzi di base sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+>Un esempio di come estendere la tabella degli indirizzi di base è presentato in questa sezione: [Caso di utilizzo: selezione degli indirizzi di base sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
 
 Per le consegne per corrispondenza diretta, gli indirizzi iniziali vengono aggiunti durante l&#39;estrazione e mescolati nel documento di output.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per le consegne per corrispondenza diretta, il formato del file di estrazione deve rispettare i seguenti limiti:
 >
 >* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. For more on this, refer to [this section](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
 >
 
 
