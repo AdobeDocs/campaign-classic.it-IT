@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,18 @@ ht-degree: 0%
 
 ## Informazioni sui pacchetti di dati {#about-data-packages}
 
-Adobe Campaign consente di esportare o importare la configurazione della piattaforma e i dati attraverso un sistema di pacchetti. I pacchetti possono contenere diversi tipi di configurazioni, elementi, filtrati o meno.
+ Adobe Campaign consente di esportare o importare la configurazione della piattaforma e i dati attraverso un sistema di package. I pacchetti possono contenere diversi tipi di configurazioni, elementi, filtrati o meno.
 
-I pacchetti di dati consentono la visualizzazione delle entità del database Adobe Campaign tramite file in formato XML. Ogni entità contenuta in un pacchetto è rappresentata da tutti i suoi dati.
+I pacchetti di dati consentono la visualizzazione delle entità del database del Adobe Campaign  tramite file in formato XML. Ogni entità contenuta in un pacchetto è rappresentata da tutti i suoi dati.
 
-Il principio dei pacchetti **di** dati è esportare una configurazione di dati e integrarla in un altro sistema Adobe Campaign. Per ulteriori informazioni su come mantenere un insieme coerente di pacchetti di dati, consulta questa [nota tecnica](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf).
+Il principio dei pacchetti **di** dati è di esportare una configurazione di dati e integrarla in un altro sistema  Adobe Campaign. Scopri come mantenere un insieme coerente di pacchetti di dati in questa [sezione](#data-package-best-practices).
 
 ### Tipi di pacchetti {#types-of-packages}
 
 Esistono tre tipi di pacchetti esportabili: pacchetti utente, pacchetti di piattaforma e pacchetti di amministrazione.
 
 * **Pacchetto** utente: consente di selezionare l&#39;elenco delle entità da esportare. Questo tipo di pacchetto gestisce le dipendenze e verifica gli errori.
-* **Pacchetto** piattaforma: include tutte le risorse tecniche aggiunte (non standard): schemi, codice JavaScript, ecc.
+* **Pacchetto** Platform: include tutte le risorse tecniche aggiunte (non standard): schemi, codice JavaScript, ecc.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
@@ -89,7 +89,7 @@ Nel nostro esempio, i join sui collegamenti &quot;cartella&quot; e &quot;societ�
 
 L&#39; **`operation`** attributo con il valore &quot;none&quot; definisce un collegamento di riconciliazione.
 
-Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. È sufficiente assicurarsi che la struttura del documento XML sia conforme allo schema di dati &quot;xtk:navtree&quot;. La console di Adobe Campaign dispone di un modulo di esportazione e importazione per i pacchetti di dati.
+Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. È sufficiente assicurarsi che la struttura del documento XML sia conforme allo schema di dati &quot;xtk:navtree&quot;. La console del Adobe Campaign  dispone di un modulo di esportazione e importazione di pacchetti di dati.
 
 ## Esportazione di pacchetti {#exporting-packages}
 
@@ -105,7 +105,7 @@ Una volta esportato un pacchetto, potrete importarlo e tutte le entità aggiunte
 
 ### Esportazione di un set di oggetti in un pacchetto {#exporting-a-set-of-objects-in-a-package}
 
-La procedura guidata di esportazione del pacchetto è accessibile dal **[!UICONTROL Tools > Advanced > Export package...]** menu della console client Adobe Campaign.
+La procedura guidata di esportazione del pacchetto è accessibile tramite il **[!UICONTROL Tools > Advanced > Export package...]** menu della console client del Adobe Campaign .
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -125,7 +125,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Il meccanismo di dipendenza controlla la sequenza di esportazione delle entità. Per ulteriori informazioni, vedere [Gestione delle dipendenze](#managing-dependencies).
+   >Il meccanismo di dipendenza controlla la sequenza di esportazione delle entità. For more on this, refer to [Managing dependencies](#managing-dependencies).
 
 1. La schermata di configurazione dell&#39;entità definisce la query del filtro per il tipo di documento da estrarre.
 
@@ -151,7 +151,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i seguenti passaggi:
 
 ### Gestione delle dipendenze {#managing-dependencies}
 
-Il meccanismo di esportazione consente ad Adobe Campaign di tenere traccia dei collegamenti tra i vari elementi esportati.
+Il meccanismo di esportazione consente  Adobe Campaign di tenere traccia dei collegamenti tra i vari elementi esportati.
 
 Tale meccanismo è definito da due regole:
 
@@ -265,7 +265,7 @@ Nella **[!UICONTROL Content]** scheda, fate clic sul **[!UICONTROL Add]** pulsan
 
 ![](assets/packagedefinition_addentities.png)
 
-Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell&#39;istanza. A questo scopo, attenetevi alla procedura seguente:
+Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell&#39;istanza. Per farlo, segui la procedura indicata di seguito:
 
 1. Fare clic con il pulsante destro del mouse sull&#39;entità desiderata, quindi selezionare **[!UICONTROL Actions > Export in a package]**.
 
@@ -313,9 +313,9 @@ Per esportare un pacchetto dalla definizione di un pacchetto, effettuate le segu
 
 ### Informazioni sull&#39;importazione di pacchetti {#about-package-import}
 
-La procedura guidata di importazione dei pacchetti è accessibile dal menu principale **[!UICONTROL Tools > Advanced > Package import...]** della console client Adobe Campaign.
+La procedura guidata di importazione dei pacchetti è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Package import...]** della console client di Adobe Campaign .
 
-Puoi importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza di Adobe Campaign, o da un pacchetto standard, a seconda dei termini della licenza.
+Potete importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza  Adobe Campaign, o da un pacchetto standard, a seconda dei termini della licenza.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -333,7 +333,7 @@ Fate clic su **[!UICONTROL Next]** e **[!UICONTROL Start]** per avviare l&#39;im
 
 ### Installazione di un pacchetto standard {#installing-a-standard-package}
 
-I pacchetti standard vengono installati quando Adobe Campaign è configurato. A seconda delle autorizzazioni e del modello di distribuzione, potete importare nuovi pacchetti standard se acquisite nuove opzioni o componenti aggiuntivi o se effettuate l’aggiornamento a una nuova offerta.
+I pacchetti standard vengono installati quando il Adobe Campaign  è configurato. A seconda delle autorizzazioni e del modello di distribuzione, potete importare nuovi pacchetti standard se acquisite nuove opzioni o componenti aggiuntivi o se effettuate l’aggiornamento a una nuova offerta.
 
 Fate riferimento al contratto di licenza per verificare quali pacchetti è possibile installare.
 
@@ -343,15 +343,11 @@ Per ulteriori informazioni sui pacchetti standard, consultate [questa pagina](..
 
 Questa sezione descrive come organizzare i pacchetti di dati in modo coerente per tutta la durata del progetto.
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 I pacchetti possono contenere diversi tipi di configurazioni ed elementi, filtrati o meno. Se mancano alcuni elementi o non importate elementi/pacchetti nell&#39;ordine corretto, la configurazione della piattaforma può interrompersi.
 
 Inoltre, con molte persone che lavorano sulla stessa piattaforma con molte caratteristiche diverse, la cartella delle specifiche del pacchetto può rapidamente diventare complessa.
 
-Anche se non è obbligatorio, questa sezione offre una soluzione per organizzare e utilizzare i pacchetti in Adobe Campaign per progetti su larga scala.
-
-<!--This solution has been used with a project involving more than 10 consultants.-->
+Anche se non è obbligatorio, questa sezione offre una soluzione per organizzare e utilizzare i pacchetti in  Adobe Campaign per progetti su larga scala.
 
 I principali vincoli sono i seguenti:
 * Organizzare i pacchetti e tenere traccia delle modifiche e dei tempi
@@ -379,7 +375,7 @@ Prestate attenzione allo schema e alla struttura del database. L&#39;importazion
 Iniziate definendo diversi tipi di pacchetti. Saranno utilizzati solo quattro tipi:
 
 **Entità**
-* Tutti gli elementi specifici &quot;xtk&quot; e &quot;nms&quot; in Adobe Campaign come schemi, moduli, cartelle, modelli di consegna ecc.
+* Tutti gli elementi specifici &quot;xtk&quot; e &quot;nms&quot; in  Adobe Campaign come schemi, moduli, cartelle, modelli di consegna ecc.
 * Potete considerare un&#39;entità come un elemento &quot;admin&quot; e &quot;platform&quot;.
 * Non devi includere più di un&#39;entità in un pacchetto quando lo carichi su un&#39;istanza Campaign.
 
@@ -410,7 +406,7 @@ Un aggiornamento non può essere solo una correzione, ma anche un nuovo elemento
 
 ### Convenzioni di denominazione {#data-package-naming}
 
-Ora che i tipi sono definiti, è necessario specificare una convenzione di denominazione. Adobe Campaign non consente di creare sottocartelle per le specifiche del pacchetto, il che significa che i numeri sono la soluzione migliore per rimanere organizzati. Numeri prefissi i nomi dei pacchetti. È possibile utilizzare la seguente convenzione:
+Ora che i tipi sono definiti, è necessario specificare una convenzione di denominazione.  Adobe Campaign non consente di creare sottocartelle per le specifiche del pacchetto, il che significa che i numeri sono la soluzione migliore per rimanere organizzati. Numeri prefissi i nomi dei pacchetti. È possibile utilizzare la seguente convenzione:
 
 * Entità: dall&#39;1 al 99
 * Funzionalità: dal 100 al 1999
