@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ La mappatura SQL dello schema di esempio fornisce il seguente documento XML:
 
 L&#39;elemento principale dello schema non è più **`<srcschema>`**, ma **`<schema>`**.
 
-Questo ci porta a un altro tipo di documento, che viene generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall&#39;applicazione Adobe Campaign.
+Questo ci porta a un altro tipo di documento, che viene generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall&#39;applicazione del Adobe Campaign .
 
 I nomi SQL vengono determinati automaticamente in base al nome e al tipo dell&#39;elemento.
 
@@ -108,7 +111,7 @@ Per compilare un campo in XML, è necessario aggiungere l&#39;attributo **xml** 
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Il tipo &quot;html&quot; consente di archiviare il contenuto HTML in un tag CDATA e di visualizzare un controllo speciale per la modifica HTML nell&#39;interfaccia client di Adobe Campaign.
+   Il tipo &quot;html&quot; consente di archiviare il contenuto HTML in un tag CDATA e di visualizzare un controllo speciale per la modifica HTML nell&#39;interfaccia client del Adobe Campaign .
 
 L&#39;utilizzo di campi XML consente di aggiungere campi senza dover modificare la struttura fisica del database. Un altro vantaggio è rappresentato dal minor utilizzo di risorse (dimensione allocata ai campi SQL, limite al numero di campi per tabella, ecc.).
 
@@ -207,7 +210,7 @@ Le chiavi obbediscono alle regole seguenti:
 
 >[!NOTE]
 >
->Le chiavi vengono create durante la mappatura della tabella (standard o FDA), Adobe Campaign trova indici univoci.
+>Le chiavi vengono create durante la mappatura della tabella (standard o FDA),  Adobe Campaign trova indici univoci.
 
 **Esempio**:
 
@@ -296,7 +299,7 @@ Le chiavi obbediscono alle regole seguenti:
 
 ### Tasto incrementale automatico {#auto-incremental-key}
 
-La chiave primaria della maggior parte delle tabelle di Adobe Campaign è un numero intero lungo 32 bit generato automaticamente dal motore del database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId** ) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene inserito automaticamente all&#39;inserimento del record.
+La chiave primaria della maggior parte  tabelle di Adobi Campaign è un numero intero lungo 32 bit generato automaticamente dal motore del database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId** ) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene inserito automaticamente all&#39;inserimento del record.
 
 Il vantaggio di una chiave incrementale è che fornisce una chiave tecnica non modificabile per i join tra le tabelle. Inoltre, questa chiave non occupa molta memoria perché utilizza un numero intero a doppio byte.
 
@@ -310,7 +313,7 @@ Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza neg
 
 >[!NOTE]
 >
->Una sequenza cui viene fatto riferimento in uno schema di Adobe Campaign (ad esempio,**NmsTrackingLogId** ) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata ******GetNewXXXIds**, dove **XXX** è il nome della sequenza (ad esempio,**GetNewNmsTrackingLogIds** ). Visualizzare i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
+>Una sequenza cui viene fatto riferimento in uno schema di Adobe Campaign  (ad esempio,**NmsTrackingLogId** ) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata ******GetNewXXXIds**, dove **XXX** è il nome della sequenza (ad esempio,**GetNewNmsTrackingLogIds** ). Visualizzare i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
 
 Per dichiarare una chiave univoca, compilare l&#39;attributo **autopk** (con valore &quot;true&quot;) sull&#39;elemento principale dello schema dati.
 
@@ -362,7 +365,7 @@ I vari tipi di associazioni (note come &quot;cardinalità&quot;) sono i seguenti
 
 Nell&#39;interfaccia, è possibile distinguere facilmente i diversi tipi di relazioni grazie alle loro icone.
 
-Per unire le relazioni con una tabella/database della campagna:
+Per le relazioni di partecipazione con una tabella/database di campagna:
 
 * ![](assets/join_with_campaign11.png) : Cardinalità 1-1. Ad esempio, tra un destinatario e un ordine corrente. Un destinatario può essere correlato a una sola occorrenza della tabella dell&#39;ordine corrente alla volta.
 * ![](assets/externaljoin11.png) : Cardinalità 1-1, unione esterna. Ad esempio, tra un destinatario e il relativo paese. Un destinatario può essere correlato a una sola occorrenza del paese della tabella. Il contenuto della tabella del paese non verrà salvato.
@@ -401,12 +404,12 @@ I collegamenti rispettano le regole seguenti:
       * **owncopy**: le stesse **proprie** (in caso di cancellazione) o duplica le occorrenze (in caso di duplicazione),
       * **neutro**: non fa niente.
    * **revIntegrity** (facoltativo): integrità dello schema di destinazione (facoltativo, &quot;normale&quot; per impostazione predefinita),
-   * **revCardinality** (facoltativo): con valore &quot;single&quot; popola la cardinalità con tipo 1-1 (1-N per impostazione predefinita).
+   * **revCardinality** (facoltativo): con il valore &quot;single&quot; popola la cardinalità con tipo 1-1 (1-N per impostazione predefinita).
    * **externalJoin** (facoltativo): forza l&#39;unione esterna
    * **revExternalJoin** (facoltativo): forza l&#39;unione esterna sul collegamento inverso
 
 
-* Un collegamento fa riferimento a uno o più campi dalla tabella di origine alla tabella di destinazione. Non è necessario compilare i campi che compongono il join ( `<join>` elemento) perché vengono automaticamente dedotti per impostazione predefinita utilizzando la chiave interna dello schema di destinazione.
+* Un collegamento fa riferimento a uno o più campi dalla tabella di origine alla tabella di destinazione. I campi che compongono il join ( `<join>` elemento) non devono essere compilati perché vengono automaticamente dedotti per impostazione predefinita utilizzando la chiave interna dello schema di destinazione.
 * Un indice viene aggiunto automaticamente alla chiave esterna del collegamento nello schema esteso.
 * Un collegamento è composto da due collegamenti intermedi, in cui il primo è dichiarato dallo schema di origine e il secondo viene creato automaticamente nello schema esteso dello schema di destinazione.
 * Un join può essere un join esterno se viene aggiunto l’attributo **externalJoin** , con il valore &quot;true&quot; (supportato in PostgreSQL).
@@ -470,11 +473,11 @@ Schema esteso della destinazione (&quot;cus:company&quot;):
 </schema>
 ```
 
-È stato aggiunto un collegamento inverso alla tabella &quot;cus:destinatario&quot; con i seguenti parametri:
+È stato aggiunto un collegamento inverso alla tabella &quot;cus:Recipient&quot; con i seguenti parametri:
 
 * **name**: dedotto automaticamente dal nome dello schema di origine (può essere forzato con l&#39;attributo &quot;revLink&quot; nella definizione del collegamento nello schema di origine)
 * **revLink**: nome del collegamento inverso
-* **target**: chiave dello schema collegato (&quot;cus:Recipient&quot;)
+* **target**: chiave dello schema collegato (schema &quot;cus:Recipient&quot;)
 * **unbound**: il collegamento è dichiarato come elemento di raccolta per una cardinalità 1-N (per impostazione predefinita)
 * **integrità**: &quot;define&quot; per impostazione predefinita (può essere forzato con l&#39;attributo &quot;revIntegrity&quot; nella definizione del collegamento sullo schema di origine).
 
