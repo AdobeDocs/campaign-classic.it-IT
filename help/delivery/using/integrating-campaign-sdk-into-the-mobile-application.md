@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+workflow-type: tm+mt
+source-wordcount: '957'
+ht-degree: 0%
 
 ---
 
@@ -28,15 +31,15 @@ Gli SDK delle campagne per iOS e Android sono uno dei componenti del modulo Cana
 >
 >Per ottenere l&#39;SDK di Campaign (precedentemente noto come Neolane SDK), contatta l&#39;Assistenza clienti Adobe.
 
-L&#39;obiettivo dell&#39;SDK è quello di facilitare l&#39;integrazione di un&#39;applicazione mobile nella piattaforma Adobe Campaign.
+L’obiettivo dell’SDK è quello di facilitare l’integrazione di un’applicazione mobile nella piattaforma di Adobe Campaign .
 
-Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, consultate la matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) compatibilità .
+Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, fare riferimento alla matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) compatibilità.
 
 ## Caricamento dell&#39;SDK della campagna {#loading-campaign-sdk}
 
 * **In Android**: il file **neolane_sdk-release.aar** deve essere collegato al progetto.
 
-   La seguente autorizzazione consente di accedere al server Adobe Campaign:
+   La seguente autorizzazione consente di accedere al server del Adobe Campaign :
 
    ```
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -64,13 +67,13 @@ Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, c
 
 Per integrare Campaign SDK nell&#39;applicazione mobile, l&#39;amministratore funzionale deve fornire allo sviluppatore le seguenti informazioni:
 
-* **Una chiave** di integrazione: per abilitare la piattaforma Adobe Campaign per identificare l&#39;applicazione mobile.
+* **Una chiave** di integrazione: per abilitare la piattaforma di Adobe Campaign  per identificare l&#39;applicazione mobile.
 
    >[!NOTE]
    >
-   >Questa chiave di integrazione viene immessa nella console di Adobe Campaign, nella **[!UICONTROL Information]** scheda del servizio dedicata all’applicazione per dispositivi mobili. Consultare [Configurazione di un&#39;applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Questa chiave di integrazione viene immessa nella console  Adobe Campaign, nella **[!UICONTROL Information]** scheda del servizio dedicata all’applicazione mobile. Consultare [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-* **Un URL** di tracciamento: che corrisponde all&#39;indirizzo del server di tracciamento di Adobe Campaign.
+* **Un URL** di tracciamento: che corrisponde all&#39;indirizzo del server di tracciamento  Adobe Campaign.
 * **Un URL** di marketing: per abilitare la raccolta di sottoscrizioni.
 
 * **In Android**:
@@ -94,7 +97,7 @@ Per integrare Campaign SDK nell&#39;applicazione mobile, l&#39;amministratore fu
 
 La funzione di registrazione consente di:
 
-* invia l&#39;ID notifica o l&#39;ID push (deviceToken per iOS e registrationID per Android) ad Adobe Campaign.
+* inviate l&#39;ID notifica o l&#39;ID push (deviceToken per iOS e registrationID per Android) al  Adobe Campaign.
 * recuperare la chiave di riconciliazione o userKey (ad esempio, e-mail o numero account)
 
 * **In Android**:
@@ -112,7 +115,7 @@ La funzione di registrazione consente di:
    }
    ```
 
-   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **registerDevice** quando chiami la funzione **onTokenRefresh** per notificare ad Adobe Campaign la modifica apportata al token del dispositivo mobile dell&#39;utente.
+   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **registerDevice** quando chiami la funzione **onTokenRefresh** per notificare  Adobe Campaign la modifica nel token del dispositivo mobile dell&#39;utente.
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -202,14 +205,19 @@ La funzione di registrazione consente di:
        if( url == null )     url = "https://www.tripadvisor.fr";
        int iconId = R.drawable.notif_neotrip;
    
-       // notify Neolane that a notification just arrived
-       NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-       nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-         public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-         public void onIOException(IOException arg0, Object arg1) {}
-         public void onComplete(String arg0, Object arg1){}
-       });
-       if (yourApplication.isActivityVisible())
+     // notify Neolane that a notification just arrived
+     SharedPreferences settings = context.getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+     Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+     Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));
+     Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+     NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
+     nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
+       public void onIOException(IOException arg0, Object arg1) {}
+       public void onComplete(String arg0, Object arg1){}
+     });
+     if (yourApplication.isActivityVisible())
        {
          Log.i("INFO", "The application has the focus" );
          ...
@@ -247,24 +255,28 @@ La funzione di registrazione consente di:
 
    ```
    public class NotificationActivity extends Activity {
-    public static final String NOTIFICATION_URL_KEYNAME = "NotificationUrl";
-    .....
-    public void onCreate(Bundle savedBundle) {
-     super.onCreate(savedBundle);
-     setContentView(R.layout.notification_viewer);  
-     .....  
-     Bundle extra = getIntent().getExtras();  
-     .....  
-     //get the messageId and the deliveryId to do the tracking  
-     String deliveryId = extra.getString("_dId");
-     String messageId = extra.getString("_mId");
-     if (deliveryId != null && messageId != null) {
-      NeolaneAsyncRunner neolaneAs = new NeolaneAsyncRunner(Neolane.getInstance());
-      neolaneAs.notifyOpening(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
-       public void onNeolaneException(NeolaneException arg0, Object arg1) {}
-       public void onIOException(IOException arg0, Object arg1) {}
-       public void onComplete(String arg0, Object arg1) {}
-       });
+   public void onCreate(Bundle savedBundle) {
+     [...]
+     Bundle extra = getIntent().getExtras();
+     if (extra != null) {
+       // reinit the acc sdk
+       SharedPreferences settings = getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
+       Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
+       Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));               
+       Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
+   
+       // Get the messageId and the deliveryId to do the tracking
+       String deliveryId = extra.getString("_dId");
+       String messageId = extra.getString("_mId");
+       if (deliveryId != null && messageId != null) {
+         try {
+           Neolane.getInstance().notifyOpening(Integer.valueOf(messageId), Integer.valueOf(deliveryId));
+         } catch (NeolaneException e) {
+           // ...
+         } catch (IOException e) {
+           // ...
+         }
+       }
      }
     }
    }
@@ -272,7 +284,7 @@ La funzione di registrazione consente di:
 
 * **In iOS**:
 
-   La funzione di tracciamento consente di monitorare quando vengono attivate le notifiche (si apre).
+   La funzione di tracciamento consente di tenere traccia di quando vengono attivate le notifiche (si apre).
 
    ```
    (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
@@ -291,7 +303,7 @@ La funzione di registrazione consente di:
 
 ## Tracciamento delle notifiche invisibili {#silent-notification-tracking}
 
-iOS consente di inviare notifiche silenziose, una notifica o dati che verranno inviati direttamente a un&#39;applicazione mobile senza visualizzarli. Adobe Campaign consente di seguirli.
+iOS consente di inviare notifiche silenziose, una notifica o dati che verranno inviati direttamente a un&#39;applicazione mobile senza visualizzarli.  Adobe Campaign consente di seguirli.
 
 Per tenere traccia della notifica invisibile, seguite l&#39;esempio seguente:
 
@@ -345,7 +357,7 @@ Il prototipo **registerDeviceStatus** è:
 
 **Lo stato** consente di sapere se una registrazione ha avuto esito positivo o se si è verificato un errore.
 
-**ErrorReason** fornisce ulteriori informazioni sugli errori che si sono verificati. Per ulteriori informazioni sugli errori disponibili e le relative descrizioni, consultare la tabella seguente.
+**ErrorReason** fornisce ulteriori informazioni sugli errori che si sono verificati. Per ulteriori informazioni sugli errori disponibili e le relative descrizioni, fare riferimento alla tabella seguente.
 
 <table> 
  <thead>
@@ -377,7 +389,7 @@ Il prototipo **registerDeviceStatus** è:
    <td> Ulteriori informazioni (nella lingua corrente del sistema operativo)<br /> </td>
   </tr>
   <tr> 
-   <td> ACCRegisterDeviceStatusFailedUnknownUID<br /> </td>
+   <td> ACCRegisterDeviceStatusFailedUnknownUUID<br /> </td>
    <td> L'UUID fornito (chiave di integrazione) è sconosciuto.<br /> </td>
    <td> VUOTO<br /> </td>
   </tr>
@@ -527,7 +539,7 @@ Per implementare **registerDeviceStatus** delegate, effettua le seguenti operazi
 
 ## Variabili {#variables}
 
-Le variabili consentono di definire il comportamento dell’applicazione mobile dopo la ricezione di una notifica. Queste variabili devono essere definite nel codice dell’applicazione mobile e nella console Adobe Campaign, nella **[!UICONTROL Variables]** scheda del servizio applicazione mobile dedicato (consultate [Configurazione di un’applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Di seguito è riportato un esempio di codice che consente a un&#39;applicazione mobile di raccogliere eventuali variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
+Le variabili consentono di definire il comportamento dell’applicazione mobile dopo la ricezione di una notifica. Queste variabili devono essere definite nel codice dell’applicazione mobile e nella console del Adobe Campaign , nella **[!UICONTROL Variables]** scheda del servizio dedicato dell’applicazione mobile (consultate [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Di seguito è riportato un esempio di codice che consente a un&#39;applicazione mobile di raccogliere eventuali variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -613,9 +625,9 @@ Il supporto deve essere scaricato a livello di estensione del servizio di notifi
 
 A questo livello, è necessario:
 
-* Associa l&#39;estensione del contenuto alla categoria inviata da Adobe Campaign:
+* Associate l&#39;estensione di contenuto alla categoria inviata dal Adobe Campaign :
 
-   Se desiderate che l’applicazione mobile visualizzi un’immagine, potete impostare il valore della categoria su &quot;image&quot; in Adobe Campaign e nell’applicazione mobile, create un’estensione di notifica con il parametro **UNNotificationExtensionCategory** impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l&#39;estensione viene chiamata in base al valore della categoria definito.
+   Se desiderate che l’applicazione mobile visualizzi un’immagine, potete impostare il valore della categoria su &quot;image&quot; nel Adobe Campaign  e nell’applicazione mobile, create un’estensione di notifica con il parametro **UNNotificationExtensionCategory** impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l&#39;estensione viene chiamata in base al valore della categoria definito.
 
 * Definire il layout di notifica
 
