@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d6a4d56c595f16f454684b1d6afc7d7323c5914c
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '1326'
+ht-degree: 0%
 
 ---
 
 
 # HeatMap flusso di lavoro {#workflow-heatmap}
 
-La HeatMap del flusso di lavoro di Adobe Campaign consiste in una rappresentazione grafica codificata in base al colore di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
+La  Workflow HeatMap consiste in una rappresentazione grafica con colori diversi per tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
 
-In [questa pagina](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
+In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
 ## Informazioni sulla mappa di calore del flusso di lavoro {#about-the-workflow-heatmap}
 
-Fornendo una rapida panoramica sul numero di flussi di lavoro simultanei, Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign di monitorare il carico sull’istanza e pianificare di conseguenza i flussi di lavoro.
+Fornendo una rapida panoramica sul numero di flussi di lavoro simultanei, Workflow HeatMap consente agli amministratori della piattaforma di  Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza.
 
 Più precisamente, consente agli amministratori di piattaforma di:
 
@@ -36,29 +39,29 @@ Più precisamente, consente agli amministratori di piattaforma di:
 * Filtrare i flussi di lavoro per durata per vedere quali flussi di lavoro potrebbero incontrare problemi
 * Filtrare le attività per durata per vedere quali attività possono incontrare problemi
 * Trova facilmente flussi di lavoro singoli e tutte le attività correlate (con la loro durata)
-* Ricerca per tipo di flusso di lavoro (flussi di lavoro[](../../workflow/using/building-a-workflow.md#technical-workflows) tecnici o flussi di lavoro [](../../workflow/using/building-a-workflow.md#campaign-workflows)campagna)
+* Ricerca per tipo di flusso di lavoro (flussi di lavoro[](../../workflow/using/building-a-workflow.md#technical-workflows) tecnici o flussi di lavoro [di](../../workflow/using/building-a-workflow.md#campaign-workflows)campagna)
 * Cercare un flusso di lavoro specifico da analizzare
 
 >[!NOTE]
 >
->Oltre alla Heatmap del **flusso di lavoro**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. Per ulteriori informazioni, consulta la sezione [](../../workflow/using/supervising-workflows.md)dedicata.
+>Oltre alla Heatmap del **flusso di lavoro**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. For more on this, refer to the [dedicated section](../../workflow/using/supervising-workflows.md).
 
-L’utilizzo di HeatMap del flusso di lavoro richiede una buona comprensione dei seguenti concetti: Best practice per [flussi](../../workflow/using/about-workflows.md)di lavoro, [attività](../../workflow/using/about-activities.md) e [flussi di lavoro](../../workflow/using/workflow-best-practices.md).
+L’utilizzo di HeatMap del flusso di lavoro richiede una buona comprensione dei seguenti concetti: [Best practice](../../workflow/using/about-workflows.md)per flussi di lavoro, [attività](../../workflow/using/about-activities.md) e [flussi di lavoro](../../workflow/using/workflow-best-practices.md).
 
-Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in Adobe Campaign a partire dalla versione 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti](https://support.neolane.net/) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per apprendere come installarlo.
+Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti](https://support.neolane.net/) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per apprendere come installarlo.
 
-Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. Questo accordo consente il trasferimento e l&#39;archiviazione negli Stati Uniti, consentendo ad Adobe Campaign di:
+Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. L&#39;accordo consente il trasferimento e lo stoccaggio negli Stati Uniti, consentendo  Adobe Campaign di:
 
 * monitorare le istanze per esaminare eventuali problemi di prestazioni.
 * raccogliere i dati per il rilevamento delle anomalie.
 
-Il trasferimento dei dati è disponibile solo per gli utenti che si connettono ad Adobe Campaign utilizzando il proprio Adobe ID.
+Il trasferimento dei dati è disponibile solo per gli utenti che si connettono a  Adobe Campaign utilizzando il proprio Adobe ID .
 
 ![](assets/wf_monitoring_agreement.png)
 
 Sono disponibili tre opzioni:
 
-* **[!UICONTROL Accept]** : Accettando questo contratto, autorizzi Adobe Campaign a raccogliere i tuoi dati e a trasferirli negli Stati Uniti per essere in grado di aiutarti in caso di rilevamento di anomalie.
+* **[!UICONTROL Accept]** : Accettando questo contratto, autorizzi  Adobe Campaign a raccogliere i tuoi dati e a trasferirli negli Stati Uniti per essere in grado di aiutarti in caso di rilevamento di anomalie.
 * **[!UICONTROL Refuse]** : Rifiutando l&#39;accordo, i dati non verranno trasferiti ma puoi comunque utilizzare Workflow Heatmap.
 * **[!UICONTROL Do not show this message again]** : Facendo clic su **[!UICONTROL Do not show this message again]** , la finestra a comparsa si interrompe quando si accede a Workflow Heatmap ma è ancora disponibile dal **[!UICONTROL Term of use]** pulsante.
 
@@ -83,7 +86,7 @@ Questa scelta non è finale, è sempre possibile modificarla facendo clic sul **
    >Sono visibili solo i flussi di lavoro che non sono stati eliminati dal **[!UICONTROL Database cleanup]** flusso di lavoro. Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consultare [questa sezione](../../production/using/database-cleanup-workflow.md).\
    >Per impostazione predefinita, il fuso orario Workflow HeatMap è quello definito per l’utente amministratore corrente. Ad esempio, puoi modificarlo se non ti trovi nella stessa area degli utenti di marketing con cui stai lavorando.
 
-1. Fate clic sul **[!UICONTROL Filters]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Filters]**. 
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -175,7 +178,7 @@ Come amministratore di Campaign, Workflow HeatMap ti aiuta a trovare i flussi di
 
 ## Esempio: Utilizzo di HeatMap per migliorare la pianificazione del flusso di lavoro {#example--using-the-heatmap-to-improve-workflow-planning}
 
-L&#39;esempio seguente mostra come la pianificazione possa essere più efficiente e come migliorare le prestazioni quando si utilizza la mappa di calore del flusso di lavoro di Adobe Campaign.
+L’esempio seguente mostra come la pianificazione possa essere più efficiente e come migliorare le prestazioni quando si utilizza la mappa calore del flusso di lavoro del Adobe Campaign .
 
 In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro. È necessario verificare cosa rallenta l&#39;attività e come risolvere il problema.
 
@@ -186,7 +189,7 @@ In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro
 
    ![](assets/wkf_monitoring_without.png)
 
-   * Alle 10 di mattina sono in esecuzione cinquanta flussi di lavoro di campagna di lunga durata (più di 5 minuti).
+   * Alle 10 di mattina sono in esecuzione 50 flussi di lavoro di campagna di lunga durata (più di 5 minuti).
    * La maggior parte di essi dispone di uno stato in sospeso (per impostazione predefinita, il limite di concorrenza è impostato su 20).
    * I flussi di lavoro in sospeso devono essere riavviati manualmente ogni giorno.
    * Le prestazioni sono basse.
@@ -199,5 +202,5 @@ In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro
 
    * Solo diciotto flussi di lavoro per campagne di lunga durata sono ancora in esecuzione alle 10 di mattina.
    * Nessun flusso di lavoro in sospeso (il limite di concorrenza è ancora impostato su 20).
-   * Gli orari di inizio dei flussi di lavoro vengono distribuiti in modo uniforme durante la giornata.
+   * Gli orari di inizio dei flussi di lavoro vengono distribuiti in modo uniforme durante l&#39;intera giornata.
    * Nessun altro utente si lamenta dei problemi di prestazioni.
