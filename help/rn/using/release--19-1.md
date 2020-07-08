@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2934'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _7 luglio 2020_
 
 Questa nuova build (9032@efd8a94) include la seguente correzione:
 
-* È stato risolto un problema che impediva il funzionamento dei collegamenti di tracciamento. (NEO-26411)
+* È stato risolto un problema che impediva il monitoraggio quando il server di origine mid era sulla build 9032 (Gold Standard 7) e il server di marketing su una build precedente (precedente alla 9032). (NEO-26411)
 
 >[!CAUTION]
 >
