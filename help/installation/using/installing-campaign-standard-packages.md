@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1128'
 ht-degree: 2%
 
 ---
@@ -132,12 +132,6 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Invia le consegne utilizzando il canale Mobile/SMS con  Adobe Campaign. Facoltativo. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
-  <tr> 
-   <td> Canale telefonico<br /> </td> 
-   <td> Invia le consegne utilizzando il canale del telefono con  Adobe Campaign.<br /> </td> 
-   <td> Tutto<br /> </td> 
-   <td> Facoltativo</td> 
-  </tr>
   <tr> 
    <td> Canale app mobile<br /> </td> 
    <td> Utilizza la piattaforma del Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Facoltativo. <a href="../../delivery/using/about-mobile-app-channel.md">Ulteriori informazioni</a> <br /> </td> 
