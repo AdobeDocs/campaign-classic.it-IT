@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ce00d34ecbdfa6a13593772ffa1850768ad6e45
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
 
@@ -70,7 +70,7 @@ _17 febbraio 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza di Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
+   <td> <p>Snowflake è una data warehouse cloud completamente gestita, progettata per essere scalata sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza di Snowflake per eseguire la segmentazione Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
     <p>Per ulteriori informazioni, consultate la documentazione <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html"></a>tutorial.</p>
    </td> 
   </tr> 
@@ -198,7 +198,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che causava il costante errore del flusso di lavoro **Importa pubblico dal flusso di lavoro tecnico di Adobe Experience Cloud** . (NEO-18463)
 
-* È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano i modelli importati da Experience Manager. (NEO-17540)
+* È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano modelli importati da  Experience Manager. (NEO-17540)
 
 * È stato risolto un problema che si verificava dopo l&#39;aggiornamento alla build 9032 e che impediva all&#39;istanza di connettersi al server FTP tramite il protocollo SSL. (NEO-20498)
 
