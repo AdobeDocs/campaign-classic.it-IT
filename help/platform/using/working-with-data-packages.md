@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Esistono tre tipi di pacchetti esportabili: pacchetti utente, pacchetti di piatt
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **Pacchetto** amministratore: include tutti i modelli e gli oggetti business aggiunti (non standard): modelli, librerie ecc.
+* **Pacchetto** amministratore: include tutti i modelli e gli oggetti aziendali aggiunti (non standard): modelli, librerie ecc.
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -315,7 +315,7 @@ Per esportare un pacchetto dalla definizione di un pacchetto, effettuate le segu
 
 La procedura guidata di importazione dei pacchetti è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Package import...]** della console client di Adobe Campaign .
 
-Potete importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza  Adobe Campaign, o da un pacchetto standard, a seconda dei termini della licenza.
+Potete importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza  Adobe Campaign, o da un pacchetto [](../../installation/using/installing-campaign-standard-packages.md)incorporato, a seconda dei termini della licenza.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ Fate clic su **[!UICONTROL Next]** e **[!UICONTROL Start]** per avviare l&#39;im
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Installazione di un pacchetto standard {#installing-a-standard-package}
+### Installazione di un pacchetto incorporato {#installing-a-standard-package}
 
-I pacchetti standard vengono installati quando il Adobe Campaign  è configurato. A seconda delle autorizzazioni e del modello di distribuzione, potete importare nuovi pacchetti standard se acquisite nuove opzioni o componenti aggiuntivi o se effettuate l’aggiornamento a una nuova offerta.
+I pacchetti standard sono pacchetti incorporati, installati quando il Adobe Campaign  è configurato. A seconda delle autorizzazioni e del modello di distribuzione, potete importare nuovi pacchetti standard se acquisite nuove opzioni o componenti aggiuntivi o se effettuate l’aggiornamento a una nuova offerta.
 
 Fate riferimento al contratto di licenza per verificare quali pacchetti è possibile installare.
 
-Per ulteriori informazioni sui pacchetti standard, consultate [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
+Per ulteriori informazioni sui pacchetti incorporati, consultate [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Best practice per i pacchetti di dati {#data-package-best-practices}
 
