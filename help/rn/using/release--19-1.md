@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 1%
@@ -83,7 +83,7 @@ _7 luglio 2020_
 
 Questa nuova build (9032@efd8a94) include la seguente correzione:
 
-* È stato risolto un problema che impediva il monitoraggio quando il server di origine mid era sulla build 9032 (Gold Standard 7) e il server di marketing su una build precedente (precedente alla 9032). (NEO-26411)
+* È stato risolto un problema che impediva il monitoraggio quando il server di mid-sourcing era sulla build 9032 (Gold Standard) e il server di marketing su una build precedente (prima di 9032). (NEO-26411)
 
 >[!CAUTION]
 >
