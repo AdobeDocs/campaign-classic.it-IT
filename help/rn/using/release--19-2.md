@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+workflow-type: tm+mt
+source-wordcount: '1372'
+ht-degree: 2%
 
 ---
 
 
 # Release 19.2{#release-19-2}
 
-[Genera aggiornamento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) controllo| Aggiornamenti [alla](../../rn/using/documentation-updates.md) documentazione| [Versioni](../../rn/using/release--19-1.md) precedenti| Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-1.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
@@ -41,7 +44,7 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-L&#39; **ultima build** stabile è 9032 (3a9dc9c). Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
@@ -66,8 +69,8 @@ _02 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA è la nuova legge sulla privacy dello Stato della California che armonizza e aggiorna i requisiti di protezione dei dati in vigore dal 1° gennaio 2020. CCPA si applica ai clienti di Adobe Campaign che detengono i dati per i soggetti dati residenti in California.</p>
-    <p>Oltre alle funzionalità per la privacy già disponibili (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), Adobe Campaign ti aiuta a semplificare la tua preparazione all'adozione dell'APP:</p>
+   <td> <p>CCPA è la nuova legge sulla privacy dello Stato della California che armonizza e aggiorna i requisiti di protezione dei dati in vigore dal 1° gennaio 2020. CCPA si applica ai clienti  Adobe Campaign che detengono i dati per i soggetti dati residenti in California.</p>
+    <p>Oltre alle funzionalità per la privacy già disponibili (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente),  Adobe Campaign facilita la preparazione all'adozione di CCPA:</p>
     <ul>
       <li>Diritto di accesso e Diritto di eliminazione: stiamo sfruttando le funzionalità aggiunte per il GDPR. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Leggi tutto</a></li>
       <li>È possibile verificare se un consumatore ha rinunciato alla vendita di Dati Personali. A questo scopo, è necessario estendere la tabella Profili e aggiungere un campo <strong>Rifiuto per CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Leggi tutto</a></li></td> 
@@ -84,7 +87,7 @@ _02 dicembre 2019_
  <tbody> 
   <tr> 
    <td> <p>Ora puoi monitorare lo stato di esecuzione di tutti i flussi di lavoro sulla tua istanza utilizzando viste predefinite.</p>
-   <p>Per ulteriori informazioni, consulta la documentazione <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status"></a>dettagliata.</p></td> 
+   <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status">documentazione dettagliata</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -98,7 +101,7 @@ _02 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Adobe Campaign consente di provare il nuovo formato <a href="https://amp.dev/about/email/">AMP per e-mail</a> interattivo, che consente agli esperti di marketing di includere componenti AMP nei messaggi per migliorare l'esperienza e-mail con contenuti avanzati, dinamici e interattivi, direttamente utilizzabili nel messaggio stesso.</p>
+<td> <p> Adobe Campaign consente di provare il nuovo formato <a href="https://amp.dev/about/email/">AMP per e-mail</a> interattivo, che consente agli addetti al marketing di includere componenti AMP nei messaggi per migliorare l'esperienza e-mail con contenuti avanzati, dinamici e interattivi, direttamente utilizzabili nel messaggio stesso.</p>
    <p>Questa funzionalità viene rilasciata come versione beta pubblica.</p>
    <p>Per ulteriori informazioni, consultate la documentazione <a href="../../delivery/using/defining-interactive-content.md"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html"></a>dell'esercitazione.</p><br /></td> 
   </tr> 
@@ -114,7 +117,7 @@ _02 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Gli SMS protetti ora sono supportati tramite il connettore SMPP generico esteso. Consente una connessione crittografata al provider.</p> <p><strong>Avviso</strong> Questa funzione richiede un certificato aggiornato su tutti i server. Certificati non validi, revocati o scaduti genereranno errori che influiranno sulle capacità di invio SMS complessive.</p><p>Per ulteriori informazioni, consulta la documentazione <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html"></a>dettagliata. </p> </td> 
+<td> <p>Gli SMS protetti ora sono supportati tramite il connettore SMPP generico esteso. Consente una connessione crittografata al provider.</p> <p><strong>Avviso</strong> Questa funzione richiede un certificato aggiornato su tutti i server. Certificati non validi, revocati o scaduti genereranno errori che influiranno sulle capacità di invio SMS complessive.</p><p>Per ulteriori informazioni, consulta la <a href="https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html">documentazione dettagliata</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -144,7 +147,7 @@ _02 dicembre 2019_
 
 _Sistemi obsoleti_
 
-I seguenti sistemi ora sono [obsoleti](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) per le implementazioni di Campaign Classic:
+I seguenti sistemi ora sono [obsoleti](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) per le implementazioni Campaign Classic:
 * Apache 2.2
 * Centos 6
 
@@ -177,9 +180,9 @@ _Campaign Mobile SDK_
 * È stato risolto un problema relativo alle chiavi DKIM che non venivano incorporate nelle e-mail. (NEO-16804)
 * È stato risolto un problema che causava la visualizzazione del codice di errore errato quando veniva utilizzato un token di sessione non valido nel contesto delle chiamate API per attivare gli eventi. Il codice di errore era &#39;HTTP 200 OK&#39; invece di &#39;HTTP 403 Vibidden&#39;. (NEO-16826)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti di consegna tramite accesso Web. (NEO-17015)
-* È stato risolto un problema di autenticazione IMS quando si effettuava l&#39;accesso ad Adobe Campaign. (NEO-17312)
+* È stato risolto un problema di autenticazione IMS quando si effettuava l&#39;accesso  Adobe Campaign. (NEO-17312)
 * È stato risolto un problema che impediva l&#39;eliminazione delle e-mail in quarantena tramite il processo di gestione della privacy. (NEO-17314)
-* Sono stati corretti i problemi di throughput dopo l&#39;aggiornamento a 9031 con il database SQL. (NEO-17558)
+* Risolti problemi di throughput dopo l’aggiornamento a 9031 con il database SQL. (NEO-17558)
 * È stato risolto un problema che interessava il connettore CRM con Salesforce. (NEO-17712)
 * È stato risolto un problema di timeout durante l&#39;importazione di dati da un SFTP esterno. (NEO-19723)
 * È stato risolto un problema durante l&#39;accesso ai modelli predittivi. (NEO-19713)
