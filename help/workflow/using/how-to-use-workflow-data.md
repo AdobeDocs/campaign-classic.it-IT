@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,8 @@ Potete quindi utilizzare i comandi o il codice nella **[!UICONTROL Script]** sch
 ### Caso di utilizzo: Cifratura ed esportazione dei dati tramite una chiave installata nel Pannello di controllo {#use-case-gpg-encrypt}
 
 In questo caso, verrà creato un flusso di lavoro per la cifratura e l&#39;esportazione dei dati tramite una chiave installata nel Pannello di controllo.
+
+In [questa sezione](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)è disponibile anche un video di esercitazione che mostra come utilizzare una chiave GPG per cifrare i dati.
 
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
