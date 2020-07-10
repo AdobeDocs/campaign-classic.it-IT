@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -86,12 +86,15 @@ Un esempio è illustrato nel caso di utilizzo riportato di seguito.
 
 In questo caso, verrà creato un flusso di lavoro per importare i dati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo.
 
+In [questa sezione](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)è disponibile anche un video di esercitazione che mostra come usare una chiave GPG per decifrare i dati.
+
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
 1. Usate il Pannello di controllo per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella documentazione [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)controllo.
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
    * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.
+
    ![](assets/gpg_generate.png)
 
 1. Nel sistema esterno, utilizzare la chiave pubblica scaricata dal Pannello di controllo per cifrare i dati da importare in Campaign Classic.
@@ -223,6 +226,7 @@ In questo esempio viene illustrato come preimpostare un flusso di lavoro che pu�
    * **[!UICONTROL Split]**: Creare filtri per elaborare i record in modo diverso a seconda che possano essere riconciliati o meno.
    * **[!UICONTROL Deduplication]**: Deduplicare i dati dal file in entrata prima di essere inseriti nel database.
    * **[!UICONTROL Update data]**: Aggiornate il database con i profili importati.
+
    ![](assets/import_template_example0.png)
 
 1. Configurare l&#39; **[!UICONTROL Data Loading (file)]** attività:
@@ -244,6 +248,7 @@ In questo esempio viene illustrato come preimpostare un flusso di lavoro che pu�
 
    * Nella **[!UICONTROL Enrichment]** scheda, selezionare **[!UICONTROL Add data]** e definire un collegamento tra i dati importati e la dimensione di targeting dei destinatari. In questo esempio, il campo personalizzato ID **** CRM viene utilizzato per creare la condizione di partecipazione. Utilizzare il campo o la combinazione di campi necessari, purché sia possibile identificare record univoci.
    * Nella **[!UICONTROL Reconciliation]** scheda, lasciate l&#39; **[!UICONTROL Identify the document from the working data]** opzione deselezionata.
+
    ![](assets/import_template_example2.png)
 
 1. Configurare l&#39; **[!UICONTROL Split]** attività per recuperare i destinatari riconciliati in una transizione e i destinatari che non possono essere riconciliati ma che dispongono di dati sufficienti in una seconda transizione.
@@ -284,6 +289,7 @@ In questo esempio viene illustrato come preimpostare un flusso di lavoro che pu�
 
    * In questo esempio, il campo e-mail viene utilizzato per trovare profili univoci. Potete utilizzare qualsiasi campo sicuramente compilato e parte di una combinazione univoca.
    * Nella **[!UICONTROL Deduplication method]** schermata, selezionate **[!UICONTROL Advanced parameters]** e selezionate l&#39; **[!UICONTROL Disable automatic filtering of 0 ID records]** opzione per fare in modo che i record con una chiave primaria uguale a 0 (che dovrebbe essere tutti i record di questa transizione) non siano esclusi.
+
    ![](assets/import_template_example7.png)
 
 1. Configurate l&#39; **[!UICONTROL Update data]** attività che si trova dopo che l&#39; **[!UICONTROL Deduplication]** attività è stata configurata in precedenza.
