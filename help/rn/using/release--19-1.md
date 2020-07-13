@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
+source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2921'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ _7 luglio 2020_
 
 Questa nuova build (9032@efd8a94) include la seguente correzione:
 
-* È stato risolto un problema che impediva il monitoraggio quando il server di mid-sourcing era sulla build 9032 (Gold Standard) e il server di marketing su una build precedente (prima di 9032). (NEO-26411)
+* È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
 
 >[!CAUTION]
 >
