@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 La **[!UICONTROL Monitoring]** scheda, accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per facilitare il monitoraggio dell&#39;istanza.
 
-Fornisce un dashboard di ciò che si verifica nell’istanza:  stato (versione build, pacchetti installati, ecc.), indicatori di sistema, registri, flussi di lavoro attualmente in esecuzione, stato delle ultime consegne inviate, ecc.
+Fornisce un dashboard di ciò che si verifica nell’istanza: stato (versione build, pacchetti installati, ecc.), indicatori di sistema, registri, flussi di lavoro attualmente in esecuzione, stato delle ultime consegne inviate, ecc.
 
 Informazioni dettagliate sono disponibili [qui](../../production/using/monitoring-processes.md).
 
@@ -35,16 +35,18 @@ Informazioni dettagliate sono disponibili [qui](../../production/using/monitorin
 
 ## Monitoraggio dei processi Campaign Classic {#monitoring-campaign-classic-processes}
 
-Sono disponibili metodi aggiuntivi per monitorare i diversi processi di Campaign. Per ulteriori informazioni, consulta le sezioni seguenti.
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">Monitorare l’istanza</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">Monitorare i flussi di lavoro</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">Monitorare il database</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorare le consegne</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitorare l’istanza</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Monitorare i flussi di lavoro</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorare il database</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorare le consegne</a></p></td></tr>
 </table>
 
+Sono disponibili metodi aggiuntivi per monitorare i diversi processi di Campaign. Offrono diversi modi di monitorare le istanze per garantire la salute del sistema e, infine, per risolvere eventuali problemi che possono verificarsi durante la configurazione dei flussi di lavoro, l&#39;invio di consegne, ecc.
+
 ### Monitoraggio dell’istanza {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Strumenti di monitoraggio automatico**
 
@@ -56,13 +58,15 @@ La traccia di controllo consente di visualizzare la cronologia completa delle mo
 
 **Pannello di controllo Campaign**
 
-Il Pannello di controllo consente di gestire diverse impostazioni dell’istanza: gestire le autorizzazioni URL, controllare i dettagli dell&#39;istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. [Fai clic qui](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) per ulteriori informazioni.
+Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestire le autorizzazioni URL, controllare i dettagli dell&#39;istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. [Fai clic qui](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) per ulteriori informazioni.
 
 >[!NOTE]
 >
->Il Pannello di controllo è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano  Adobi Managed Services.
+>Il Pannello di controllo Campaign è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano  Adobi Managed Services.
 
 ### Flussi di lavoro di monitoraggio {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **HeatMap flusso di lavoro**
 
@@ -88,6 +92,8 @@ Seguire le linee guida e le best practice per l&#39;utilizzo dei flussi di lavor
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **Rapporti SMTP**
 
 I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per dominio. [Fai clic qui](../../production/using/monitoring-processes.md) per ulteriori informazioni.
@@ -103,6 +109,8 @@ I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per domini
 * [Problemi relativi](../../production/using/temporary-files.md) ai file temporanei - solo modelli di hosting *in sede*
 
 ### Monitoraggio del database {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Flusso di lavoro di pulizia del database**
 
