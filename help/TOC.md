@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2076'
 ht-degree: 8%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 8%
 + Getting Started {#getting-started}
    + A partire da  Adobe Campaign {#starting-with-adobe-campaign}
       + [Informazioni  Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Privacy e raccomandazioni](platform/using/privacy-and-recommendations.md)
+      + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Avvio  Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Area di lavoro Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Domande frequenti {#faq}
@@ -72,7 +72,7 @@ ht-degree: 8%
       + [Account esterni](platform/using/external-accounts.md)
    + Accesso a un database esterno (FDA){#accessing-external-database}
       + [Informazioni su FDA](platform/using/about-fda.md)
-      + [Configurazioni specifiche per tipo di database](platform/using/specific-configuration-database.md)
+      + [Configurazione dei connettori FDA](platform/using/specific-configuration-database.md)
       + [Connettori precedenti](platform/using/legacy-connectors.md)
       + [Diritti di accesso al database remoto](platform/using/remote-database-access-rights.md)
       + [Connessione al database](platform/using/connecting-to-database.md)
@@ -293,36 +293,36 @@ ht-degree: 8%
 + Integrating with Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Informazioni sulle integrazioni di Campaign](integrations/using/about-campaign-integrations.md)
    + Condivisione dell&#39;audience {#audience-sharing}
-      + [Condivisione dei tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Condivisione di audience con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Invio della richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Configurazione dell&#39;integrazione dell&#39;audience condivisa in [!DNL  Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Configurazione dell&#39;integrazione dell&#39;audience condivisa in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Risoluzione dei problemi](integrations/using/troubleshooting.md)
       + [Importazione ed esportazione di audience](integrations/using/importing-and-exporting-audiences.md)
    + Condivisione delle risorse {#asset-sharing}
-      + [Condivisione di risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Condivisione delle risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Configurazione dell&#39;accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserimento di una risorsa condivisa](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager  {#adobe-experience-manager}
-      + [Informazioni su [!DNL  Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Informazioni [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurazione dell&#39;integrazione](integrations/using/configuring-the-integration.md)
-      + [Creazione di una newsletter [!DNL  Experience Manager]](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creazione di [!DNL Experience Manager] una newsletter](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target  {#adobe-target}
-      + [Integrazione con [!DNL  Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [Configurazione dell&#39;integrazione con [!DNL  Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integrazione con [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Configurazione dell&#39;integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserimento di un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + Collegamento tramite un Adobe ID  {#connecting-via-an-adobe-id}
-      + [Informazioni su [!DNL  Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configurazione di [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementazione di [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [Informazioni [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [Configurazione [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementazione [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Risoluzione dei problemi IMS](integrations/using/ims-troubleshooting.md)
    + Connettore ACS {#acs-connector}
-      + [Principi di [!DNL ACS Connector] e ciclo di dati](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] principi e ciclo dei dati](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzazione dei profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzazione delle audience](integrations/using/synchronizing-audiences.md)
       + [Sincronizzazione delle applicazioni Web](integrations/using/synchronizing-web-applications.md)
-      + [Risoluzione dei problemi del connettore [!DNL ACS]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Risoluzione dei problemi [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
-      + [Informazioni su [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Informazioni [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurazione della pipeline](integrations/using/configuring-pipeline.md)
       + [Opzione pipeline NmsPipeline_Config](integrations/using/nmspipeline-config.md)
       + [Attiva eventi](integrations/using/events.md)
