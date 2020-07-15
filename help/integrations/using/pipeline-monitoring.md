@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Monitoraggio del condotto {#pipeline-monitoring}
 
-Il servizio Web con stato tubato fornisce informazioni sullo stato del processo collegato.
+Il servizio Web [!DNL pipelined] status fornisce informazioni sullo stato del [!DNL pipelined] processo.
 
 È possibile accedervi manualmente utilizzando un browser o automaticamente con un&#39;applicazione di monitoraggio.
 
@@ -50,7 +50,7 @@ Gli indicatori raccomandati da monitorare sono evidenziati.
    * next-offsets-flush: tempo di attesa per il batch successivo, al termine.
    * processed-from-last-flush: numero di attivatori elaborati nell&#39;ultimo batch.
 * routing
-   * trigger: elenco di trigger recuperati. Configurata nell’opzione pipeline.
+   * trigger: elenco di trigger recuperati. Configurata nell’ [!DNL pipelined] opzione.
 * statistiche
    * tempo medio-rosso-rosso-ms: tempo di elaborazione medio per un batch di attivatori.
    * tempo medio di elaborazione-trigger-ms: tempo medio impiegato per l&#39;analisi dei dati dei trigger.
