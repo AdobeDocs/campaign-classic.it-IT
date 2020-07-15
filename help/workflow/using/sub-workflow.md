@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ L&#39; **[!UICONTROL Sub-workflow]** attività consente di attivare l&#39;esecuz
 
 Puoi chiamare più flussi di lavoro secondari in un unico flusso di lavoro. I flussi di lavoro secondari vengono eseguiti in modo sincrono.
 
-Nell’esempio seguente, un flusso di lavoro &quot;principale&quot; chiama un flusso di lavoro secondario utilizzando i collegamenti. Per ulteriori informazioni sugli oggetti grafici di tipo &quot;salto&quot;, vedere [questa sezione](../../workflow/using/jump--start-point-and-end-point-.md).
+Nell’esempio seguente, un flusso di lavoro principale chiama un flusso di lavoro secondario utilizzando i collegamenti. Per ulteriori informazioni sugli oggetti grafici di tipo &quot;salto&quot;, vedere [questa sezione](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Crea un flusso di lavoro da utilizzare come flusso di lavoro secondario in un altro flusso di lavoro.
-1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se hai più salti di tipo &quot;punto finale&quot;, Adobe Campaign utilizzerà il salto &quot;punto finale&quot; con il numero più basso.
-1. Inserite un&#39; **[!UICONTROL Jump (start point)]** attività con priorità pari a 2 alla fine del flusso di lavoro. Se hai più salti di tipo &quot;punto iniziale&quot;, Adobe Campaign utilizzerà il salto &quot;punto iniziale&quot; con il numero più alto.
+1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se avete più salti di tipo &quot;punto finale&quot;,  Adobe Campaign utilizza il salto &quot;punto finale&quot; con il numero più basso.
+1. Inserite un&#39; **[!UICONTROL Jump (start point)]** attività con priorità pari a 2 alla fine del flusso di lavoro. Se avete più salti di tipo &quot;punto iniziale&quot;,  Adobe Campaign utilizzerà il salto &quot;punto iniziale&quot; con il numero più alto.
 
    ![](assets/subworkflow_jumps.png)
 
@@ -44,7 +44,7 @@ Nell’esempio seguente, un flusso di lavoro &quot;principale&quot; chiama un fl
    >Affinché il flusso di lavoro secondario possa essere eseguito correttamente, è necessario che sia presente un solo salto di tipo &quot;punto finale&quot; con il numero più basso e che sia possibile effettuare un solo salto di tipo &quot;punto iniziale&quot; con il numero più alto.
 
 1. Completa e salva questo &quot;flusso di lavoro secondario&quot;.
-1. Create un flusso di lavoro &quot;principale&quot;.
+1. Creare un flusso di lavoro principale.
 1. Inserite un&#39; **[!UICONTROL Sub-workflow]** attività e apritela.
 1. Dall’elenco a **[!UICONTROL Workflow template]** discesa, selezionate il flusso di lavoro da utilizzare.
 
@@ -57,13 +57,17 @@ Nell’esempio seguente, un flusso di lavoro &quot;principale&quot; chiama un fl
 
 1. Eseguire il flusso di lavoro.
 
-Una volta eseguito, il flusso di lavoro chiamato come flusso di lavoro secondario è ancora nello **[!UICONTROL Being edited]** stato, ovvero:
+Una volta eseguito, il flusso di lavoro chiamato come flusso di lavoro secondario rimane nello **[!UICONTROL Being edited]** stato, ovvero:
 
 * Non potete fare clic con il pulsante destro del mouse sulle transizioni per visualizzare la destinazione.
 * Impossibile visualizzare il numero di popolazioni intermedie.
-* I file di registro sono aggregati nel flusso di lavoro &quot;principale&quot; e sono etichettati solo come &quot;subworkflow&quot;.
+* I registri dei flussi di lavoro secondari vengono visualizzati nel flusso di lavoro principale.
 
-Questo flusso di lavoro è solo un modello. Un nuovo flusso di lavoro secondario basato su questo modello viene creato quando chiamato dal flusso di lavoro &quot;principale&quot;.
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>Se si verifica un errore nel flusso di lavoro secondario, il flusso di lavoro principale viene messo in pausa e viene creata una copia del flusso di lavoro secondario.
 
 ## Parametri di input (facoltativo) {#input-parameters--optional-}
 
