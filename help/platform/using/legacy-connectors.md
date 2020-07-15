@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fddd0b61c71c90849a1f64776eea43c57d9debe2
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
 
 
 # Connettori precedenti {#legacy-connectors}
+
+I connettori FDA precedenti sono ancora supportati da Adobe. Tuttavia, si consiglia di sostituirli con alternative più recenti elencate in questa [pagina](../../platform/using/specific-configuration-database.md).
 
 ## Configurare l&#39;accesso a Hadoop 2.1 {#configure-access-to-hadoop}
 
