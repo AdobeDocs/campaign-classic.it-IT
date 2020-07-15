@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6898'
 ht-degree: 8%
 
 ---
@@ -33,15 +33,23 @@ Per ulteriori aggiornamenti, è inoltre possibile consultare le [Note](../../rn/
 
 La sezione Privacy e Consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md).
 
+La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo &#39;regolamentazione&#39;, ora disponibile quando si utilizza l&#39;API che consente di configurare il processo di richiesta della privacy automatica. [Leggi tutto](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+
+La pagina Panoramica sulla gestione della privacy è stata aggiornata per includere informazioni sulla legge sulla protezione dei dati personali (PDPA) in Tailandia e sulla società brasiliana Lei Geral de Proteção de Dados (LGPD). [Leggi tutto](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+
+Sono state aggiunte informazioni sui registri dei flussi di lavoro secondari e sul comportamento in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
+
+Le best practice sono state aggiunte nella sezione **[!UICONTROL Scheduler]** Attività. [Leggi tutto](../../workflow/using/scheduler.md)
+
 ## Giugno 2020 {#june-2020}
 
 La sezione Rimozione di un indirizzo in quarantena è stata aggiornata. Ciò include il chiarimento dei casi in cui gli indirizzi vengono automaticamente rimossi dall&#39;elenco di quarantena. [Leggi tutto](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Sono stati aggiunti casi di utilizzo per [cifrare](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [decifrare](../../workflow/using/importing-data.md#use-case-gpg-decrypt) i dati tramite il Pannello di controllo e i flussi di lavoro Campagna.
+Sono stati aggiunti casi di utilizzo per [cifrare](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [decifrare](../../workflow/using/importing-data.md#use-case-gpg-decrypt) i dati tramite flussi di lavoro Pannello di controllo Campaign e campagna.
 
-Sia i termini &quot;whitelist&quot; che &quot;blacklist&quot; sono stati rimossi dalla documentazione  Adobe Campaign. Alcune occorrenze di questi termini possono ancora esistere nell&#39;interfaccia utente del prodotto, nei nomi delle opzioni e nel codice interno, ma saranno sostituite nelle prossime release di Campaign con &quot; inserii nell&#39;elenco Bloccati&quot; e &quot; inserire nell&#39;elenco Consentiti&quot;.
+I termini “whitelist” e “blacklist” sono stati rimossi dalla documentazione Adobe Campaign. Alcune occorrenze di questi termini potrebbero persistere nell’interfaccia utente del prodotto, nei nomi delle opzioni e nel codice interno, ma saranno sostituite nelle prossime versioni di Campaign da “elenco Bloccati” e “elenco Consentiti”.
 
-La  pagina di integrazione di Experience Cloud Triggers e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
+La  pagina di integrazione Experience Cloud Triggers e  Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -241,7 +249,7 @@ La sezione Gestione dell&#39;accesso è stata aggiornata con il diritto **alla**
 
 Sono state aggiunte informazioni per specificare che il contenuto dei campi di personalizzazione non può superare i 1024 caratteri. [Leggi tutto](../../delivery/using/personalization-fields.md)
 
-La documentazione del Pannello di controllo è stata integrata nel nuovo set di documenti collaborativi. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
+La documentazione del Pannello di controllo Campaign è stata integrata nel nuovo set di documenti collaborativi. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
 La guida introduttiva sulle procedure ottimali per la distribuzione è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/delivery-best-practices.html)
 
@@ -277,7 +285,7 @@ Sono state aggiornate le best practice per migliorare le prestazioni di flussi d
 
 **Nuove funzionalità incluse nella release**
 
-Pannello di controllo - [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
+Pannello di controllo Campaign - [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
 Audit trail - [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
 
