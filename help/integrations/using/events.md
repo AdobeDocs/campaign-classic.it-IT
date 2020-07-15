@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 Pipeline utilizza una funzione JavaScript per elaborare ciascun messaggio. Questa funzione è definita dall&#39;utente.
 
-È configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione sotto l&#39;attributo &quot;JSConnector&quot;. Questo javascript viene chiamato ogni volta che viene ricevuto un evento. È gestito dal processo condotto.
+È configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione sotto l&#39;attributo &quot;JSConnector&quot;. Questo javascript viene chiamato ogni volta che viene ricevuto un evento. È gestito dal [!DNL pipelined] processo.
 
 Il file JS di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
-La pipeline Javascript deve iniziare con una funzione specifica.
+Javascript deve iniziare con una funzione specifica. [!DNL pipelined]
 
 Questa funzione viene chiamata una volta per ogni evento:
 
@@ -51,7 +51,7 @@ Deve restituire come
 <undefined/>
 ```
 
-Riavviate in tubazione dopo aver modificato il JS.
+Riavviate [!DNL pipelined] dopo la modifica del JS.
 
 ### Attiva formato dati {#trigger-format}
 
@@ -110,7 +110,7 @@ Esempio:
 
 ### Ordine di elaborazione degli eventi {#order-events}
 
-Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread della pipeline elabora una partizione diversa.
+Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread del [!DNL pipelined] processo elabora una partizione diversa.
 
 L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall&#39;ultimo messaggio. Questi dati vengono memorizzati nello schema integrato xtk:pipelineOffset.
 
@@ -122,8 +122,8 @@ Al momento, non è possibile avere code diverse per ambienti separati come &#39;
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al registro collegato. Errori come logError() vengono scritti nel registro collegato e l&#39;evento viene messo in coda di nuovi tentativi. Controllare il registro tubato.
-I messaggi di errore vengono ripetuti più volte nella durata impostata nelle opzioni pipeline.
+I registri come logInfo() vengono indirizzati al [!DNL pipelined] registro. Errori come logError() vengono scritti nel [!DNL pipelined] registro e l&#39;evento viene inserito in una coda di tentativi. Controllare il registro tubato.
+I messaggi di errore vengono ripetuti più volte nella durata impostata nelle [!DNL pipelined] opzioni.
 
 A scopo di debug e monitoraggio, i dati dell&#39;attivatore completo vengono scritti nella tabella dell&#39;attivatore. Si trova nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati di attivazione ha lo stesso scopo.
 
