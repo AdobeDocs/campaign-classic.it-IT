@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3151'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 # Canale SMS{#sms-channel}
 
-Adobe Campaign consente di eseguire consegne personalizzate di massa di messaggi SMS. I profili dei destinatari devono contenere almeno un numero di telefono cellulare.
+ Adobe Campaign consente di eseguire consegne personalizzate di massa di messaggi SMS. I profili dei destinatari devono contenere almeno un numero di telefono cellulare.
 
 >[!NOTE]
 >
->Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite l&#39;opzione Canale app mobile (NMAC) **di** Adobe Campaign.
+> Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili, tramite la relativa opzione Canale app mobile (NMAC) **** Adobe Campaign.
 > 
 >Per ulteriori informazioni, consulta la sezione [Informazioni sul canale](../../delivery/using/about-mobile-app-channel.md) dell’app mobile.
 
@@ -64,7 +64,7 @@ Per farlo, segui la procedura indicata di seguito:
 
    >[!CAUTION]
    >
-   > A partire dalla release 20.2, i connettori legacy non saranno più supportati e non saranno più supportati. È consigliabile utilizzare il **[!UICONTROL Extended generic SMPP]** connettore. Per ulteriori informazioni sulla migrazione al connettore consigliato, fare riferimento a questa [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+   > A partire dalla release 20.2, i connettori legacy sono obsoleti e non sono supportati. È consigliabile utilizzare il **[!UICONTROL Extended generic SMPP]** connettore. Per ulteriori informazioni sulla migrazione al connettore consigliato, fare riferimento a questa [pagina](https://helpx.adobe.com/campaign/kb/sms-connector.html).
 
 1. L&#39; **[!UICONTROL Enable verbose SMPP traces in the log file]** opzione consente di scaricare tutto il traffico SMPP nei file di registro. Questa opzione deve essere abilitata per la risoluzione dei problemi del connettore e per il confronto con il traffico rilevato dal provider.
 
@@ -308,9 +308,9 @@ CR: Ritorno a capo
 
 ### Informazioni sulle codifiche di testo {#about-text-encodings}
 
-Quando invii un messaggio SMS, Adobe Campaign può utilizzare una o più codifiche di testo. Ogni codifica ha un set di caratteri specifico e determina il numero di caratteri che possono essere inclusi in un messaggio SMS.
+Quando si invia un messaggio SMS,  Adobe Campaign può utilizzare una o più codifiche di testo. Ogni codifica ha un set di caratteri specifico e determina il numero di caratteri che possono essere inclusi in un messaggio SMS.
 
-Quando si configura un nuovo account esterno per la distribuzione di dispositivi mobili SMPP, è possibile definire il contenuto **[!UICONTROL Mapping of encodings]** nella **[!UICONTROL Mobile]** scheda: il **[!UICONTROL data_coding]** campo consente ad Adobe Campaign di comunicare quale codifica viene utilizzata per SMSC.
+Quando si configura un nuovo account esterno per la distribuzione di dispositivi mobili SMPP, è possibile definire il contenuto **[!UICONTROL Mapping of encodings]** nella **[!UICONTROL Mobile]** scheda: il **[!UICONTROL data_coding]** campo consente  Adobe Campaign di comunicare quale codifica viene utilizzata per SMSC.
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ Quando si configura un nuovo account esterno per la distribuzione di dispositivi
    * Proverà a utilizzare la codifica GSM a cui assegna il valore **data_coding = 0**.
    * Se la codifica GSM non riesce, utilizzerà la codifica **UCS2** a cui assegna il valore **data_coding = 8**.
 
-* Quando definisci le codifiche che desideri utilizzare e i valori dei **[!UICONTROL data_coding]** campi collegati, Adobe Campaign cercherà di utilizzare la prima codifica nell&#39;elenco, quindi quanto segue, se la prima codifica risulta impossibile.
+* Quando si definiscono le codifiche che si desidera utilizzare e i valori dei **[!UICONTROL data_coding]** campi collegati,  Adobe Campaign tenterà di utilizzare la prima codifica nell&#39;elenco, quindi la seguente, se la prima codifica risulta impossibile.
 
 >[!IMPORTANT]
 >
@@ -335,7 +335,7 @@ Quando si configura un nuovo account esterno per la distribuzione di dispositivi
 
 Quando si configura un connettore SMPP generico esteso, è possibile configurare le risposte automatiche.
 
-Quando un utente iscritto risponde a un messaggio SMS inviato tramite Adobe Campaign e il suo messaggio contiene una parola chiave come &quot;STOP&quot;, puoi configurare i messaggi che vengono automaticamente inviati di nuovo nella **[!UICONTROL Automatic reply sent to the MO]** sezione.
+Quando un utente iscritto risponde a un messaggio SMS inviato tramite  Adobe Campaign e il suo messaggio contiene una parola chiave come &quot;STOP&quot;, è possibile configurare i messaggi che vengono automaticamente inviati di nuovo nella **[!UICONTROL Automatic reply sent to the MO]** sezione.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ I passaggi per la configurazione di un account esterno tramite il connettore SMP
 
 ### Modifica del modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign ti offre un modello per la distribuzione a dispositivi mobili. Questo modello è disponibile nel **[!UICONTROL Resources > Templates > Delivery templates]** nodo. Per ulteriori informazioni, consultare la sezione [Informazioni sui modelli](../../delivery/using/about-templates.md) .
+ Adobe Campaign fornisce un modello per la distribuzione a dispositivi mobili. Questo modello è disponibile nel **[!UICONTROL Resources > Templates > Delivery templates]** nodo. For more on this, refer to the [About templates](../../delivery/using/about-templates.md) section.
 
 Per distribuire tramite canale SMS, è necessario creare un modello in cui viene fatto riferimento al connettore del canale.
 
@@ -443,7 +443,7 @@ Per creare il contenuto dell&#39;SMS, procedere come segue:
    >
    >Quando avviate l&#39;analisi, la lunghezza dei messaggi viene controllata e viene visualizzato un avviso in caso di overflow.
 
-1. Se si utilizza il connettore NetSize o un connettore SMPP, è possibile personalizzare il nome del mittente della consegna. Per ulteriori informazioni, consulta la sezione Parametri [](#advanced-parameters) avanzati.
+1. Se si utilizza il connettore NetSize o un connettore SMPP, è possibile personalizzare il nome del mittente della consegna. For more on this, refer to the [Advanced parameters](#advanced-parameters) section.
 
 ## Selezione della popolazione di destinazione {#selecting-the-target-population}
 
@@ -504,7 +504,7 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
 ## Elaborazione dei messaggi in entrata {#processing-inbound-messages}
 
-Il modulo **nlserver sms** invia una query al router SMS a intervalli regolari. Questo consente ad Adobe Campaign di monitorare l&#39;avanzamento delle consegne e di gestire i rapporti sullo stato e le richieste di annullamento dell&#39;iscrizione del destinatario.
+Il modulo **nlserver sms** invia una query al router SMS a intervalli regolari. Questo consente  Adobe Campaign di monitorare l&#39;avanzamento delle consegne e gestire i rapporti sullo stato e le richieste di annullamento sottoscrizione del destinatario.
 
 * **Rapporti** di stato: visualizza i registri di consegna per verificare lo stato dei messaggi.
 
@@ -527,8 +527,8 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
 * **messaggio**: contenuto dell&#39;SMS ricevuto.
 * **origine**: numero mobile all’origine del messaggio.
 * **providerId**: identificatore del messaggio restituito dal SMSC (message center).
-* **create**: il messaggio data in arrivo è stato inserito in Adobe Campaign.
-* **extAccount**: Account esterno di Adobe Campaign.
+* **create**: data in entrata è stato inserito nel Adobe Campaign .
+* **extAccount**:  conto esterno del Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -544,11 +544,11 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
 * **largeAccount**: codice account cliente collegato a SMS in arrivo.
 * **countryCode**: codice del paese dell&#39;operatore.
 * **operatorCode**: codice di rete dell&#39;operatore.
-* **linkedSmsId**: Identificatore di Adobe Campaign (BroadlogId) collegato all&#39;SMS in uscita, dove questo SMS è la risposta.
+* **linkedSmsId**:  ID Adobe Campaign (BroadlogId) collegato all&#39;SMS in uscita, dove questo SMS rappresenta la risposta.
 
 ## Gestione delle risposte automatiche (regolamento americano) {#managing-automatic-replies--american-regulation-}
 
-Quando gli abbonati rispondono a un messaggio SMS che è stato loro inviato tramite Adobe Campaign e utilizzano una parola chiave come STOP, HELP o YES, è necessario, nel mercato statunitense, configurare i messaggi che vengono automaticamente restituiti.
+Quando gli abbonati rispondono a un messaggio SMS che è stato loro inviato tramite  Adobe Campaign e utilizzano una parola chiave come STOP, HELP o YES, è necessario, nel mercato statunitense, configurare i messaggi che vengono automaticamente restituiti.
 
 Ad esempio, se i destinatari inviano la parola chiave STOP, riceveranno automaticamente un messaggio di conferma in cui si attesta che sono stati annullati la sottoscrizione.
 
@@ -599,7 +599,7 @@ Il nome del mittente per questo tipo di messaggio è un codice breve di solito u
 
    Il nome del file distingue tra maiuscole e minuscole in Linux.
 
-1. Copiate questo file nella directory **conf** di Adobe Campaign, nello stesso punto del server Web.
+1. Copiate questo file nella directory **conf** in  Adobe Campaign, nello stesso punto del server Web.
 
 >[!IMPORTANT]
 >
