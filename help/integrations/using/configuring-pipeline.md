@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Effettuate le seguenti operazioni:
 
 ### Registrazione del nome dell&#39;applicazione in  Adobe Campaign Classic {#application-name-registration}
 
-L&#39;ID applicazione del client Auth creato deve essere configurato in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39;elemento collegato, in particolare l&#39;attributo appName.
+L&#39;ID applicazione del client Auth creato deve essere configurato in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo appName.
 
 Esempio:
 
@@ -139,11 +139,11 @@ Esempio:
 
 ### Cifratura chiave {#key-encription}
 
-Per poter essere utilizzata da un pipeline, la chiave privata deve essere crittografata. La cifratura viene eseguita utilizzando la funzione cryptString Javascript e deve essere eseguita sulla stessa istanza della tubazione.
+Per essere utilizzata da [!DNL pipelined], la chiave privata deve essere crittografata. La cifratura viene eseguita utilizzando la funzione cryptString Javascript e deve essere eseguita sulla stessa istanza di [!DNL pipelined].
 
 Un esempio di crittografia di chiave privata con JavaScript è disponibile in questa [pagina](../../integrations/using/pipeline-troubleshooting.md).
 
-La chiave privata crittografata deve essere registrata  Adobe Campaign. È possibile farlo modificando il file di configurazione dell&#39;istanza nell&#39;elemento pipeline, in particolare l&#39;attributo authPrivateKey.
+La chiave privata crittografata deve essere registrata  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo authPrivateKey.
 
 Esempio:
 
@@ -153,7 +153,7 @@ Esempio:
 
 ### Avvio automatico processo tubato {#pipelined-auto-start}
 
-Il processo tubato deve essere avviato automaticamente.
+Il [!DNL pipelined] processo deve essere avviato automaticamente.
 Per eseguire questa operazione, impostate l’elemento nel file di configurazione su autostart=&quot;true&quot;:
 
 ```
@@ -174,7 +174,7 @@ Per rendere effettive le modifiche è necessario riavviare il sistema:
 nlserver restart pipelined@instance
 ```
 
-In caso di errori, cercate gli errori nell’output standard (se avviato manualmente) o nel file di registro con le tubazioni. Per ulteriori informazioni sulla risoluzione dei problemi, consultare la sezione Risoluzione dei problemi del documento.
+In caso di errori, cercate gli errori nell’output standard (se avviato manualmente) o nel file di [!DNL pipelined] registro. Per ulteriori informazioni sulla risoluzione dei problemi, consultare la sezione Risoluzione dei problemi del documento.
 
 ### Opzioni di configurazione pipeline {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ In caso di errori, cercate gli errori nell’output standard (se avviato manualm
 | findPipelineEndpoint | URL per scoprire l&#39;endpoint di Pipeline Services da utilizzare per questo tenant. Valore predefinito: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | Il periodo compreso tra 2 discariche dello stato interno del processo nello stato var/INSTANCE/pipelined.json è accessibile anche on-demand all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
 | forzatoPipelineEndpoint | Disabilitare l&#39;individuazione di PipelineServicesEndpoint e forzarla |
-| monitorServerPort | Il processo di tubazione ascolta su questa porta per fornire lo stato interno del processo all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
+| monitorServerPort | Il [!DNL pipelined] processo è in ascolto di questa porta per fornire lo stato interno del processo all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
 | puntatoreFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. Il valore predefinito è 1000 |
 | puntatoreFlushPeriodSec | Dopo questo periodo, gli offset verranno salvati nel database. Il valore predefinito è 5 (secondi) |
 | processingJSThread | Numero di messaggi di elaborazione thread dedicati con connettori JS personalizzati. Il valore predefinito è 4 |
