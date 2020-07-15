@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f1f1cd9c5ebb77fbb01cadad6c587ed2fe64dcc
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
 
 
-# Configurazioni specifiche per tipo di database {#specific-configurations-by-database-type}
+# Configurazione dei connettori FDA {#specific-configurations-by-database-type}
 
 A seconda dei database esterni a cui si desidera accedere da  Adobe Campaign, sarà necessario eseguire determinate configurazioni specifiche. Tali configurazioni prevedono essenzialmente l&#39;installazione di driver e la dichiarazione di variabili di ambiente appartenenti a ciascun RDBMS sul server di Adobe Campaign .
 
@@ -59,6 +59,7 @@ Per creare un account esterno [!DNL Azure Synapse] esterno:
    * **[!UICONTROL Password]**: Password account utente
 
    * **[!UICONTROL Database]**: Nome del database
+
    ![](assets/azure_1.png)
 
 ### Azure Synapse su CentOS {#azure-centos}
@@ -258,6 +259,7 @@ L&#39;account [!DNL Snowflake] esterno consente di collegare l&#39;istanza Campa
    * **[!UICONTROL Password]**: Password account utente
 
    * **[!UICONTROL Database]**: Nome del database
+
    ![](assets/snowflake.png)
 
 1. Fare clic sulla **[!UICONTROL Parameters]** scheda e quindi sul **[!UICONTROL Deploy functions]** pulsante per creare le funzioni.
@@ -270,7 +272,7 @@ Il connettore supporta le seguenti opzioni:
 |---|---|
 | schema di lavoro | Schema del database da utilizzare per le tabelle di lavoro |
 | warehouse | Nome del magazzino predefinito da utilizzare. Sostituirà l&#39;impostazione predefinita dell&#39;utente. |
-| TimeZoneName | Per impostazione predefinita vuota, ovvero viene utilizzato il fuso orario del sistema del server app Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. <br>Per ulteriori informazioni, consultare [questa pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| TimeZoneName | Per impostazione predefinita vuota, ovvero viene utilizzato il fuso orario del sistema del server app Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. <br>For more on this, refer to [this page](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | parametro di sessione WEEK_START. Per impostazione predefinita, è impostato su 0. <br>Per ulteriori informazioni, consultare [questa pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
 | UseCachedResult | parametro di sessione USE_CACHED_RESULTS. Per impostazione predefinita, è impostato su TRUE. Questa opzione può essere utilizzata per disattivare i risultati di Snowflake memorizzati nella cache. <br>Per ulteriori informazioni, consultare [questa pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
@@ -346,6 +348,7 @@ L&#39;account [!DNL Hadoop] esterno consente di collegare l&#39;istanza Campaign
    * **[!UICONTROL Database]**: Nome del database se non specificato in DSN. Può essere lasciato vuoto se specificato nel DSN
 
    * **[!UICONTROL Time zone]**: Fuso orario server
+
    ![](assets/hadoop3.png)
 
 Il connettore supporta le seguenti opzioni ODBC:
@@ -404,6 +407,7 @@ L&#39;account [!DNL Oracle] esterno consente di collegare l&#39;istanza Campaign
    * **[!UICONTROL Password]**: Password account utente
 
    * **[!UICONTROL Time zone]**: Fuso orario server
+
    ![](assets/oracle_config.png)
 
 ### Oracle su Linux {#for-linux-1}
