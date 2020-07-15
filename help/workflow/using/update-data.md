@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +34,14 @@ Il **[!UICONTROL Operation type]** campo consente di scegliere il processo da es
 * **[!UICONTROL Insert or update]**: aggiungere dati o aggiornarli se sono già stati aggiunti.
 * **[!UICONTROL Insert]**: aggiungi solo dati.
 * **[!UICONTROL Update]**: aggiorna solo i dati.
-* **[!UICONTROL Update and merge collections]**: aggiornate i dati e scegliete un record &quot;principale&quot;, quindi collegate agli elementi duplicati nel record master. I duplicati possono quindi essere eliminati senza creare elementi associati orfani.
+* **[!UICONTROL Update and merge collections]**: aggiorna i dati e scegli un record principale, quindi collega gli elementi collegati ai duplicati in questo record primario. I duplicati possono quindi essere eliminati senza creare elementi associati orfani.
 * **[!UICONTROL Delete]**: eliminare i dati.
 
 ![](assets/s_advuser_update_data_1.png)
 
 Il **[!UICONTROL Batch size]** campo consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Ad esempio, se specifichi 500, i primi 500 record trattati verranno aggiornati.
 
-## Identificazione record {#record-identification}
+## Identificazione del record {#record-identification}
 
 Specificare come identificare i record nel database:
 
@@ -52,7 +55,7 @@ Specificare come identificare i record nel database:
 
 ## Selezione dei campi da aggiornare {#selecting-the-fields-to-be-updated}
 
-Utilizzate l&#39; **[!UICONTROL Automatically associate fields with the same name]** opzione affinché Adobe Campaign identifichi automaticamente i campi da aggiornare.
+Utilizzate l&#39; **[!UICONTROL Automatically associate fields with the same name]** opzione per  Adobe Campaign per identificare automaticamente i campi da aggiornare.
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -87,7 +90,7 @@ Crea una transizione in uscita che verrà attivata al termine dell&#39;esecuzion
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-Crea una transizione in uscita contenente record che non sono stati elaborati correttamente dopo l&#39;aggiornamento (ad esempio, se è presente un duplicato). L&#39;aggiornamento in genere segna la fine di un flusso di lavoro di targeting e pertanto l&#39;opzione non è attivata per impostazione predefinita.
+Crea una transizione in uscita contenente record che non sono stati elaborati correttamente dopo l&#39;aggiornamento (ad esempio, se è presente un duplicato). L&#39;aggiornamento in genere segna la fine di un flusso di lavoro di targeting e di conseguenza l&#39;opzione non è attivata per impostazione predefinita.
 
 ## Aggiornamento e unione delle raccolte {#updating-and-merging-collections}
 
@@ -111,7 +114,7 @@ L&#39;aggiornamento dei dati e l&#39;unione delle raccolte consente di aggiornar
 
    Quindi immettete le condizioni da prendere in considerazione per la regola.
 
-   Infine, specificate il tipo di aggiornamento da eseguire. Ad esempio, è possibile scegliere di eliminare i record secondari dopo aver aggiornato i dati.
+   Infine, specificate il tipo di aggiornamento da eseguire. Ad esempio, è possibile scegliere di eliminare i record secondari dopo l&#39;aggiornamento dei dati.
 
    Ad esempio, potete configurare l&#39;unione di raccolte contenenti dati eterogenei, come l&#39;elenco di sottoscrizioni per un destinatario. Utilizzando le regole, puoi anche creare nuove storie di iscrizione dalle sottoscrizioni di record secondari, oppure spostare l&#39;elenco di sottoscrizioni da un record secondario a un record primario.
 
