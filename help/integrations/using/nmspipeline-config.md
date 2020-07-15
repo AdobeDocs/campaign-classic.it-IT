@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 # Opzione pipeline NmsPipeline_Config {#nmspipeline_config}
 
-Una volta che l&#39;autenticazione funziona, pipeline può recuperare gli eventi ed elaborarli. Elabora solo attivatori configurati in  Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da  Analytics e inviato in anticipo alla pipeline.
+Una volta eseguita l&#39;autenticazione, [!DNL pipelined] è possibile recuperare gli eventi ed elaborarli. Elabora solo attivatori configurati in  Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da  Analytics e inviato in anticipo alla pipeline.
 L&#39;opzione può essere configurata anche con un carattere jolly per intercettare tutti i trigger, indipendentemente dal nome.
 
 La configurazione dei trigger viene effettuata in un&#39;opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell&#39;opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
@@ -90,6 +90,6 @@ Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito](http://jsonli
 
 * &quot;name&quot; è l&#39;ID attivatore. Un carattere jolly &quot;*&quot; rileva tutti i trigger.
 * &quot;Consumer&quot; è una qualsiasi stringa univoca che identifica in modo univoco l&#39;istanza nlserver. In genere può essere il nome dell&#39;istanza stesso. Per più ambienti (dev/stage/prod), accertatevi che sia univoco per ciascuno di essi in modo che ogni istanza ottenga una copia del messaggio.
-* Pipeline supporta anche l&#39;argomento &quot;alias&quot;.
+* [!DNL Pipelined] supporta anche l&#39;argomento &quot;alias&quot;.
 
-Riavviate la pipeline dopo aver apportato le modifiche.
+Riavviate [!DNL pipelined] dopo aver apportato le modifiche.
