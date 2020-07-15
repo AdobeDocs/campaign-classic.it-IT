@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ Pipeline è un sistema di messaggistica ospitato nell&#39;Experience Cloud  che 
 
 ### Come funziona Pipeline? {#how-pipeline-work}
 
-Il processo &quot;pipeline&quot; è sempre in esecuzione sul server di marketing  Adobe Campaign. Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
+Il [!DNL pipelined] processo è sempre in esecuzione sul server di marketing  Adobe Campaign. Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
 
 ![](assets/triggers_2.png)
 
-Il processo collegato esegue l&#39;accesso all&#39;Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi. [!DNL Triggers] vengono recuperati da un servizio Web REST utilizzando una semplice richiesta GET. La risposta è in formato JSON. I parametri della richiesta includono il nome dell&#39;attivatore e un puntatore che indica l&#39;ultimo messaggio recuperato. Il processo tubato lo gestisce automaticamente.
+Il [!DNL pipelined] processo effettua l&#39;accesso all&#39;Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi. [!DNL Triggers] vengono recuperati da un servizio Web REST utilizzando una semplice richiesta GET. La risposta è in formato JSON. I parametri della richiesta includono il nome dell&#39;attivatore e un puntatore che indica l&#39;ultimo messaggio recuperato. Il [!DNL pipelined] processo lo gestisce automaticamente.
 
 ## Utilizzo dell’integrazione di Adobe Experience Cloud Triggers con  Adobe Campaign Classic
 
