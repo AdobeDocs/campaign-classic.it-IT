@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 La versione di  Adobe Campaign Classic non supporta la pipeline.
 
-1. Verificate che l&#39;elemento tubato sia presente nel file di configurazione. In caso contrario, significa che non è supportato.
+1. Verificate la presenza dell&#39; [!DNL pipelined] elemento nel file di configurazione. In caso contrario, significa che non è supportato.
 1. Aggiornamento alla versione 6.11 build 8705 o successiva.
 
 **La tubazione non riesce con &#39;&#39; aurait du commencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&quot;**
@@ -53,7 +53,7 @@ Il parametro @authPrivateKey del file di configurazione dell&#39;istanza non è 
 1. Controlla che authPrivateKey: inizia con @, termina con =, ed è lungo circa 4000 caratteri.
 1. Cercare la chiave originale e verificare che sia: in formato RSA, 4096 bit di lunghezza e inizia con —BEGIN RSA PRIVATE KEY—.
    <br> Se necessario, ricreate la chiave e registratela in Adobe  Analytics. Fare riferimento a questa [sezione](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
-1. Verificate che la chiave sia stata codificata all’interno della stessa istanza come tubata. <br>Se necessario, ripetete la codifica utilizzando il codice JavaScript o il flusso di lavoro di esempio.
+1. Verificate che la chiave sia stata codificata all’interno della stessa istanza di [!DNL pipelined]. <br>Se necessario, ripetete la codifica utilizzando il codice JavaScript o il flusso di lavoro di esempio.
 
 **Impossibile leggere il token durante l&#39;autenticazione**
 
@@ -65,12 +65,12 @@ Il formato della chiave privata non è valido.
 
 **Non vengono recuperati trigger**
 
-Quando il processo tubato è in esecuzione e non vengono recuperati attivatori:
+Quando il [!DNL pipelined] processo è in esecuzione e non vengono recuperati attivatori:
 
 1. Assicurarsi che l&#39;attivatore sia attivo in  Analytics e stia generando eventi.
-1. Assicurarsi che il processo tubato sia in esecuzione.
-1. Cercare gli errori nel registro tubato.
-1. Cercare gli errori nella pagina di stato tubata. trigger-scarted, trigger-failures dovrebbe essere zero.
+1. Verificare che il [!DNL pipelined] processo sia in esecuzione.
+1. Cercare gli errori nel [!DNL pipelined] registro.
+1. Cercare gli errori nella pagina di [!DNL pipelined] stato. trigger-scarted, trigger-failures dovrebbe essere zero.
 1. Verificate che il nome dell&#39;attivatore sia configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione. In caso di dubbi, utilizzate l&#39;opzione carattere jolly.
 1. Verificare che  Analytics disponga di un attivatore attivo e stia generando eventi. Potrebbe verificarsi un ritardo di alcune ore dopo che la configurazione è stata realizzata in  Analytics prima che sia attiva.
 
@@ -89,9 +89,9 @@ Quando la marca temporale  Analytics è molto più vecchia della data di creazio
 
 Generalmente, un attivatore può richiedere 15-90 minuti per avviare una campagna di marketing. Questo varia a seconda dell&#39;implementazione della raccolta di dati, del carico sulla pipeline, della configurazione personalizzata del trigger definito e del flusso di lavoro nel Adobe Campaign .
 
-1. Verificare se il processo tubato è stato in esecuzione.
+1. Verificare se il [!DNL pipelined] processo è stato in esecuzione.
 1. Cercare gli errori in pipelified.log che possono causare nuovi tentativi. Correggete gli errori, se applicabile.
-1. Verificare la dimensione della coda nella pagina di stato dei tubazioni. Se la dimensione della coda è grande, migliorare le prestazioni del JS.
+1. Controllate la pagina di [!DNL pipelined] stato per conoscere la dimensione della coda. Se la dimensione della coda è grande, migliorare le prestazioni del JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura gli attivatori su  Analytics utilizzando meno messaggi.
 Allegati
 
