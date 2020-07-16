@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1330'
 ht-degree: 1%
 
 ---
@@ -23,40 +23,19 @@ ht-degree: 1%
 
 # Release 20.1{#release-20-1}
 
-[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-2.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
-   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
-   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
-   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - Build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _6 maggio 2020_
 
 * È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _13 marzo 2020_
 
 * È stato risolto un problema che impediva la distribuzione della versione sui server Red Hat 7. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1 - Build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Release 20.1 - Build 9122{#release-20-1-build-9122}
 
 _17 febbraio 2020_
 
@@ -218,7 +197,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
