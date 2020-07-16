@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2118'
 ht-degree: 1%
 
 ---
 
 
 # Release 19.1{#release-19-1}
-
-[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-1.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
-   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
-   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
-   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -62,7 +41,7 @@ _3 ottobre 2019_
 * È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di origine mid-Sourcing. (NEO-12395)
 * È stato risolto un problema che impediva l&#39;uso completo dell&#39;attività di gestione dati SQL (manca la &quot;gestione dati SQL&quot; denominata right).
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
 _13 agosto 2019_
 
@@ -75,117 +54,14 @@ _13 agosto 2019_
 * È stata aggiunta una nuova opzione di autenticazione per supportare le credenziali OAuth nel connettore CA con Microsoft Dynamics. (NEO-11982)
 * Il problema di correzione con UUID (Unique Universal Identifier) causa il mancato completamento dell’attività di arricchimento con Hive FDA.
 
-## Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Rilascio Gold Standard 10**
-
-_7 luglio 2020_
-
-Questa nuova build (9032@efd8a94) include la seguente correzione:
-
-* È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
-
->[!CAUTION]
+>[!NOTE]
 >
->È consigliabile aggiornare la console client con quella disponibile in questa versione. Fare riferimento a questa [pagina](../../installation/using/installing-the-client-console.md)
+>19.1.4 Le versioni Gold Standard sono elencate in questa [pagina](../../rn/using/gold-standard.md).
 
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 9**
 
-_22 giugno 2020_
-
-Questa nuova build (9032@800be2e) include le seguenti correzioni:
-
-* Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903, NEO-25799)
-
-Le seguenti correzioni sono correlate al meccanismo di sicurezza dei collegamenti di tracciamento (vedere l&#39;elenco di controllo [](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Sicurezza e Privacy):
-
-* È stato risolto un problema che impediva il monitoraggio dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
-* È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook.  (NEO-25688)
-* È stato risolto un problema che impediva il funzionamento del tracciamento degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
-* È stato risolto un problema con il servizio anti-phishing. (NEO-25283)
-* È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277)
-
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 8**
-
-_29 aprile 2020_
-
-Questa nuova build (9032@3a9dc9c) include le seguenti correzioni:
-
-* Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
-
->[!CAUTION]
->
->In caso di problemi con le notifiche push tramite i collegamenti di tracciamento o le consegne tramite i tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per il tracciamento dei collegamenti. La procedura è dettagliata in questa [pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
-
-* È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
-* È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
-* È stato risolto un problema che poteva interessare la notifica push quando inviata ad alta frequenza. (NEO-20516)
-* È stato risolto un problema nella gestione delle risposte delle offerte che poteva causare arresti anomali del server Web. (NEO-19482)
-* È stato corretto un errore in Gestione LibreOffice che impediva l’esportazione dei rapporti. (NEO-20982)
-* È stato risolto un problema che causava un errore durante l’aggiornamento di numerosi flussi di lavoro tramite un’attività di sondaggio.
-* Migliorata la gestione di LibreOffice per evitare errori nell’anteprima delle e-mail con file .odt.
-* È stata migliorata la gestione della connessione Apache per evitare la latenza nel servizio Web.
-* Migliorata la visualizzazione del tag di versione (7 cifre) nel menu **Informazioni su** .
-* Risolto un problema di regressione nella gestione degli elenchi che impediva la pubblicazione delle offerte.
-* È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
-* Risolto un problema di regressione minore nei registri del flusso di lavoro di pulizia.
-
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 6**
-
-_9 marzo 2019_
-
-Questa nuova build (9032@19f73c5) include la seguente correzione:
-
-* È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
-
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 5**
-
-_17 dicembre 2019_
-
-Questa nuova build (9032@d6b8062) include la seguente correzione:
-
-* È stato risolto un problema di tracciamento sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
-
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 4**
-
-_11 dicembre 2019_
-
-Questa nuova build (9032@bc4a935) include la seguente correzione:
-
-* È stato risolto un problema di prestazioni durante l&#39;invio di messaggi con un database MSSQL. (NEO-17558)
-
-![](assets/do-not-localize/orange_2.png) **Rilascio Gold Standard 3**
-
-_20 novembre 2019_
-
-Questa nuova build (9032@3468c7b) include le seguenti correzioni:
-
-* È stato risolto un problema di accesso tramite l&#39;autenticazione IMS. (NEO-17312)
-* È stato risolto un problema che si verificava durante la visualizzazione dei rapporti cumulativi su più consegne. (NEO-18165)
-* È stato risolto un problema che poteva bloccare o causare l&#39;arresto anomalo del server Web.
-
-![](assets/do-not-localize/orange_2.png) **Release Gold Standard 2**
-
-_19 settembre 2019_
-
-Questa nuova build (9032@cee805c) include le seguenti correzioni:
-
-* È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
-* È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
-
-![](assets/do-not-localize/orange_2.png) **Release 19.1.4 - Build 9032**
-
-_13 agosto 2019_
-
-Prima build 19.1.4 che include le seguenti correzioni:
-
-* È stato risolto un problema con l&#39;attività del pianificatore che generava messaggi di errore indesiderati durante la configurazione guidata. Ripristino dell&#39;aggiornamento da NEO-11662. (NEO-17097)
-* È stata corretta una regressione causata dalla NEO-12727 che poteva causare l&#39;arresto dei flussi di lavoro quando un&#39;attività Test veniva eseguita due volte. (NEO-16835)
-* È stato risolto un problema che causava la restituzione di un codice HTTP errato (HTTP 200 OK invece di HTTP 403 Non consentito) quando nelle chiamate API veniva utilizzato un token di sessione non valido o scaduto. (NEO-16826)
-* È stato risolto un problema con la chiave DKIM che non era più incorporata nelle e-mail, causando problemi di recapito. (NEO-16804)
-* Sono stati risolti diversi problemi relativi alla pianificazione del flusso di lavoro. I flussi di lavoro venivano pianificati una volta al giorno senza tenere conto della configurazione del pianificatore. (NEO-16619, NEO-16426)
-
-## ![](assets/do-not-localize/orange_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Release 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 giugno 2019_
 
@@ -201,7 +77,7 @@ _21 giugno 2019_
 * È ora possibile eliminare i record fittizi creati in Microsoft Dynamics durante il flusso di lavoro di importazione.
 * Sono state migliorate le autorizzazioni per eseguire il pacchetto della zona di sicurezza quando si utilizza un account interno.
 
-## ![](assets/do-not-localize/orange_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Release 19.1 - Build 9026{#release-19-1-build-9026}
 
 _30 maggio 2019_
 
@@ -217,7 +93,7 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al elenco consentiti  e installa le chiavi SSH per ogni istanza. Il Pannello di controllo è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite l'Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: per accedere al Pannello di controllo non è necessario effettuare l'aggiornamento alla build Campaign più recente.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al elenco consentiti  e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete tramite l'Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consultate la documentazione <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">sulle</a>procedure. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
