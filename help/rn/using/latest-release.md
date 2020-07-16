@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -23,28 +23,7 @@ ht-degree: 1%
 
 # Ultima versione{#latest-release}
 
-[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--20-1.md) | Funzioni [obsolete](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
-   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
-   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
-   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
-
-![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** del Pannello di controllo di giugno con monitoraggio dei profili attivi, controllo della recapito del sottodominio e gestione delle chiavi GPG. [Ulteriori](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informazioni.
+![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** di giugno Pannello di controllo Campaign con monitoraggio profili attivi, controllo della recapito del sottodominio e gestione chiavi GPG. [Ulteriori](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informazioni.
 
 ## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
