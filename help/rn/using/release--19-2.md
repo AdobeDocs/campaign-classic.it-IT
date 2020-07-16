@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: c7b00960ffde49df65cd5c8fcfb8fab6aee485d7
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
 
 # Release 19.2{#release-19-2}
-
-[Aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | Rilasci del [Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | Aggiornamenti [alla documentazione](../../rn/using/documentation-updates.md) | Versioni [precedenti](../../rn/using/release--19-1.md) | Funzioni [obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Disponibilità generale</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Non più disponibile</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Obsoleto</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Ultima build stabile disponibile. Build convalidata in produzione.<br> </td>
-   <td>Build convalidata da Adobe. In attesa di prove di produzione.<br> </td>
-   <td>Nuova build disponibile con correzioni di bug. L'aggiornamento è obbligatorio.<br> </td>
-   <td>Contiene regressioni note. L'aggiornamento è obbligatorio.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
@@ -53,7 +32,7 @@ _07 febbraio 2020_
 **Miglioramenti**
 
 * È stato risolto un problema di regressione a causa dell&#39;implementazione della certificazione SSL che causava un errore di connessione utente sul server Windows. (NEO-20629)
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 ## ![](assets/do-not-localize/orange_2.png) Release 19.2 - Build 9080 {#release-19-2-build-9080}
 
@@ -182,7 +161,7 @@ _Campaign Mobile SDK_
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti di consegna tramite accesso Web. (NEO-17015)
 * È stato risolto un problema di autenticazione IMS quando si effettuava l&#39;accesso  Adobe Campaign. (NEO-17312)
 * È stato risolto un problema che impediva l&#39;eliminazione delle e-mail in quarantena tramite il processo di gestione della privacy. (NEO-17314)
-* Risolti problemi di throughput dopo l’aggiornamento a 9031 con il database SQL. (NEO-17558)
+* Sono stati corretti i problemi di throughput dopo l&#39;aggiornamento a 9031 con il database SQL. (NEO-17558)
 * È stato risolto un problema che interessava il connettore CRM con Salesforce. (NEO-17712)
 * È stato risolto un problema di timeout durante l&#39;importazione di dati da un SFTP esterno. (NEO-19723)
 * È stato risolto un problema durante l&#39;accesso ai modelli predittivi. (NEO-19713)
