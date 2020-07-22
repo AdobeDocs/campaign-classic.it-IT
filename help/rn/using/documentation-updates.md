@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6963'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,8 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti della
 Per ulteriori aggiornamenti, è inoltre possibile consultare le [Note](../../rn/using/latest-release.md) sulla versione classiche di Adobe Campaign.
 
 ## Luglio 2020 {#july-2020}
+
+Ai casi di utilizzo del flusso di lavoro è stato aggiunto un caso di utilizzo per l’aggiornamento automatico di un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
 Le note [di](../../rn/using/latest-release.md) rilascio sono state riorganizzate: è stata aggiunta una pagina [di](../../rn/using/latest-release.md) panoramica con informazioni sugli stati di creazione, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata per le release [](../../rn/using/gold-standard.md) Gold Standard e la matrice [di](../../rn/using/compatibility-matrix.md) compatibilità è stata integrata.
 
