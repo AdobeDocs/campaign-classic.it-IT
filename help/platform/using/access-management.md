@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
+source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 0%
@@ -347,9 +347,9 @@ Tali diritti sono i seguenti:
 
 I gruppi predefiniti e i diritti denominati consentono agli operatori di accedere a determinate cartelle nella gerarchia di navigazione e concedono autorizzazioni di lettura, scrittura ed eliminazione.
 
- matrice dei diritti di accesso Adobe Campaign è disponibile [qui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+ matrice dei diritti di accesso Adobe Campaign è disponibile [qui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
+[![immagine](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Gestione dell&#39;accesso alle cartelle {#folder-access-management}
 
