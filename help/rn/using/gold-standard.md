@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ff58cee4b189c51fbff20880ac800d91f1b0147
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
 
-I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
+I clienti interni e ibridi possono inoltre beneficiare delle versioni Gold Standard.
 
 Questa è la nostra versione di supporto a lungo termine. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
 
@@ -35,7 +35,7 @@ In questa pagina sono elencate le versioni di Gold Standard.
 
 Per ulteriori informazioni sull&#39;aggiornamento Gold Standard, consultate questo [articolo](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/green_2.png) Rilascio Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/blue_2.png) Rilascio Gold Standard 10{#gs-10}
 
 _7 luglio 2020_
 
@@ -88,7 +88,7 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 * È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * Risolto un problema di regressione minore nei registri del flusso di lavoro di pulizia.
 
-## ![](assets/do-not-localize/orange_2.png) Release Gold Standard 6{#gs-6}
+## ![](assets/do-not-localize/green_2.png) Release Gold Standard 6{#gs-6}
 
 _9 marzo 2020_
 
