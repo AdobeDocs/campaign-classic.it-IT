@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
+source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
 workflow-type: tm+mt
-source-wordcount: '2912'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## About permissions {#about-permissions}
 
-Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
+ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
 
 * accesso a determinate funzionalità (tramite i diritti denominati),
 * l&#39;accesso a taluni documenti,
@@ -35,7 +35,7 @@ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operat
 
 Le autorizzazioni si applicano ai profili dell&#39;operatore o ai gruppi di operatori.
 
-Vengono completati da parametri di sicurezza collegati alla modalità di connessione dell&#39;operatore ad Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Sono completati da parametri di sicurezza collegati alla modalità di connessione dell&#39;operatore al Adobe Campaign . For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
@@ -50,7 +50,7 @@ Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
 ### Informazioni sugli operatori {#about-operators}
 
-Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni necessarie per accedere ed eseguire azioni.
+Un operatore è un utente  Adobe Campaign che dispone delle autorizzazioni necessarie per accedere ed eseguire azioni.
 
 Per impostazione predefinita, gli operatori sono memorizzati nel **[!UICONTROL Administration > Access management > Operators]** nodo.
 
@@ -60,13 +60,13 @@ Gli operatori possono essere creati manualmente o mappati su una directory LDAP 
 
 La procedura completa per creare un operatore è descritta in [questa pagina](#creating-an-operator).
 
-Per ulteriori informazioni sull&#39;integrazione con Adobe Campaign e LDAP, consulta [questa pagina](../../installation/using/connecting-through-ldap.md).
+Per ulteriori informazioni sull’integrazione  Adobe Campaign e LDAP, consultate [questa pagina](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->Gli operatori devono essere collegati a un&#39;area di protezione per accedere a un&#39;istanza. Per ulteriori informazioni sulle aree di sicurezza in Adobe Campaign, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>Gli operatori devono essere collegati a un&#39;area di protezione per accedere a un&#39;istanza. Per ulteriori informazioni sulle aree di protezione in  Adobe Campaign, fare riferimento a [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Gli utenti possono anche connettersi direttamente ad Adobe Campaign utilizzando il proprio Adobe ID. For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
+Gli utenti possono inoltre connettersi direttamente al  Adobe Campaign utilizzando il proprio Adobe ID . For more on this, refer to this [page](../../integrations/using/about-adobe-id.md).
 
 ### Creazione di un operatore {#creating-an-operator}
 
@@ -76,7 +76,7 @@ Per creare un nuovo operatore e concedere le autorizzazioni, effettuate le segue
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Specificate il nome **[!UICONTROL Identification parameters]** dell’utente: login, password e nome. L&#39;operatore utilizzerà il login e la password per accedere ad Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può cambiare la password tramite il **[!UICONTROL Tools > Change password]** menu. L&#39;e-mail dell&#39;operatore è essenziale in quanto consente all&#39;operatore di ricevere notifiche, ad esempio durante l&#39;elaborazione delle approvazioni.
+1. Specificate il nome **[!UICONTROL Identification parameters]** dell’utente: login, password e nome. Il login e la password verranno utilizzati dall&#39;operatore per accedere al  Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può cambiare la password tramite il **[!UICONTROL Tools > Change password]** menu. L&#39;e-mail dell&#39;operatore è essenziale in quanto consente all&#39;operatore di ricevere notifiche, ad esempio durante l&#39;elaborazione delle approvazioni.
 
    Questa sezione consente inoltre di collegare un operatore a un&#39;entità organizzativa. For more on this, refer to the [this page](../../campaign/using/about-distributed-marketing.md).
 
@@ -118,7 +118,7 @@ La configurazione dei fusi orari è descritta in [questa pagina](../../installat
 >
 >Le collaborazioni all’interno di diversi fusi orari richiedono l’archiviazione delle date in UTC. Le date vengono convertite nel fuso orario appropriato nei seguenti contesti: quando una data viene visualizzata nel fuso orario dell’utente, quando i file vengono importati ed esportati, quando viene pianificata una consegna e-mail, quando le attività vengono pianificate in un flusso di lavoro (pianificazione, attesa, limite di tempo, ecc.)
 >
->Vincoli e raccomandazioni collegati a questi contesti sono presentati nelle sezioni correlate della documentazione di Adobe Campaign.
+>Vincoli e raccomandazioni collegati a tali contesti sono presentati nelle sezioni correlate della documentazione del Adobe Campaign .
 
 Inoltre, l&#39;elenco a **[!UICONTROL Regional settings]** discesa consente di selezionare il formato per visualizzare date e numeri.
 
@@ -130,12 +130,12 @@ Utilizzate la **[!UICONTROL Access rights]** scheda per aggiornare i gruppi e i 
 
 Il **[!UICONTROL Edit the access parameters...]** collegamento consente di accedere alle seguenti opzioni:
 
-* L&#39; **[!UICONTROL Disable account]** opzione consente di disabilitare l&#39;account dell&#39;operatore: non accederà più ad Adobe Campaign.
-* L&#39; **[!UICONTROL Forbid access from the rich client]** opzione consente di limitare l&#39;uso di Adobe Campaign all&#39;accesso [](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) Web o tramite API: l&#39;accesso alla console client Adobe Campaign non è più disponibile.
+* L&#39; **[!UICONTROL Disable account]** opzione consente di disabilitare l&#39;account dell&#39;operatore: non accederà più  Adobe Campaign.
+* L&#39; **[!UICONTROL Forbid access from the rich client]** opzione consente di limitare l&#39;uso di  Adobe Campaign all&#39;accesso [](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) Web o tramite API: l&#39;accesso alla console client del Adobe Campaign  non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Potete anche definire una maschera IP affidabile utilizzando il collegamento appropriato.
 
-   L&#39;operatore sarà in grado di connettersi ad Adobe Campaign senza immettere la password, se l&#39;indirizzo IP è incluso in questo elenco.
+   L&#39;operatore sarà in grado di connettersi a  Adobe Campaign senza immettere la password, se l&#39;indirizzo IP è incluso in questo elenco.
 
    Potete anche specificare un set di indirizzi IP che saranno autorizzati a connettersi senza una password, come nell&#39;esempio seguente:
 
@@ -177,7 +177,7 @@ La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relati
 
 ### Operatori predefiniti {#default-operators}
 
-Adobe Campaign utilizza operatori tecnici con profili configurati per impostazione predefinita: Amministratore (&#39;admin&#39;), Fatturazione (&#39;fatturazione&#39;), Monitoraggio, Agente applicazione Web (&#39;webapp&#39;), ecc. Alcune di queste dipendono dalle applicazioni e dalle opzioni installate sulla piattaforma: Gli operatori &#39;central&#39; e &#39;local&#39;, ad esempio, sono visibili solo se è installata l&#39;opzione Distributed Marketing.
+ Adobe Campaign utilizza operatori tecnici con profili configurati per impostazione predefinita: Amministratore (&#39;admin&#39;), Fatturazione (&#39;fatturazione&#39;), Monitoraggio, Agente applicazione Web (&#39;webapp&#39;), ecc. Alcune di queste dipendono dalle applicazioni e dalle opzioni installate sulla piattaforma: Gli operatori &#39;central&#39; e &#39;local&#39;, ad esempio, sono visibili solo se è installata l&#39;opzione Distributed Marketing.
 
 >[!IMPORTANT]
 >
@@ -211,7 +211,7 @@ Per impostazione predefinita, l&#39;operatore tecnico &#39;webapp&#39; ha il dir
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle linee guida sulla sicurezza, consulta l&#39;elenco [di controllo della configurazione di](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)Adobe Campaign Security.
+>Per ulteriori informazioni sulle linee guida relative alla sicurezza, fare riferimento a [elenco](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)di controllo della configurazione della sicurezza di Adobe Campaign.
 
 ## Gruppi di operatori {#operator-groups}
 
@@ -256,15 +256,16 @@ I gruppi di operatori predefiniti sono:
 
    Questo gruppo contiene i seguenti diritti denominati:
 
-   * INSERISCI CARTELLE: diritto di inserire cartelle nella struttura di Adobe Campaign (a condizione che disponiate dei diritti di modifica per i rami interessati),
+   * INSERISCI CARTELLE: diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
    * FLUSSO DI LAVORO: diritto di utilizzare i flussi di lavoro.
+
    >[!NOTE]
    >
    >Questo gruppo non consente agli operatori di avviare le consegne.
 
 1. Collaboratori di contenuti
 
-   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, nel quadro della gestione dei **** contenuti (modulo Adobe Campaign facoltativo). Questo gruppo non concede diritti aggiuntivi.
+   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, all’interno del framework di **Content Management** (modulo di Adobe Campaign  facoltativo). Questo gruppo non concede diritti aggiuntivi.
 
 1. Accesso ai rapporti
 
@@ -280,19 +281,19 @@ I gruppi di operatori predefiniti sono:
 
 1. Gestione locale/centrale
 
-   Questi gruppi consentono di utilizzare il marketing **** distribuito (modulo opzionale Adobe Campaign).
+   Questi gruppi consentono di utilizzare **Distributed marketing** (modulo di Adobe Campaign  facoltativo).
 
 1. Manager offerta
 
    Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consultare questa [pagina](../../interaction/using/operator-profiles.md).
 Questo gruppo contiene i seguenti diritti denominati:
 
-   * INSERISCI CARTELLE: Diritto di inserire cartelle nella struttura di Adobe Campaign (a condizione che disponiate dei diritti di modifica per i rami interessati),
+   * INSERISCI CARTELLE: Diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
    * MODIFICA CARTELLE: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
 
 ## Diritti denominati {#named-rights}
 
-Per impostazione predefinita, Adobe Campaign propone un set di diritti denominati che consente di definire le autorizzazioni assegnate a operatori e gruppi di operatori. Questi diritti possono essere modificati dal **[!UICONTROL Administration > Access management > Named rights]** nodo della struttura.
+Per impostazione predefinita,  Adobe Campaign propone un insieme di diritti denominati che consente di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati dal **[!UICONTROL Administration > Access management > Named rights]** nodo della struttura.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
@@ -308,7 +309,7 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
 
-* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle istanze di Adobe Campaign in un file su un server o su un computer locale tramite l&#39;attività del **[!UICONTROL EXPORT]** flusso di lavoro.
+* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle istanze del Adobe Campaign  in un file su un server o su un computer locale tramite l&#39;attività del **[!UICONTROL EXPORT]** flusso di lavoro.
 
 * **[!UICONTROL FILES ACCESS]**: Diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nell&#39;attività del **[!UICONTROL JavaScript]** flusso di lavoro per leggere e scrivere i file su un server.
 
@@ -346,7 +347,9 @@ Tali diritti sono i seguenti:
 
 I gruppi predefiniti e i diritti denominati consentono agli operatori di accedere a determinate cartelle nella gerarchia di navigazione e concedono autorizzazioni di lettura, scrittura ed eliminazione.
 
-La matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/accessrights.pdf).
+ matrice dei diritti di accesso Adobe Campaign è disponibile [qui](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
+
+[![immagine](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
 
 ## Gestione dell&#39;accesso alle cartelle {#folder-access-management}
 
@@ -398,7 +401,7 @@ Nella **[!UICONTROL Security]** scheda, se l&#39; **[!UICONTROL System folder]**
 
 ### Informazioni sulle cartelle {#about-folders}
 
-Le cartelle sono nodi nella struttura di Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura, tramite il **[!UICONTROL Add new folder]** menu. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
+Le cartelle sono nodi nella struttura  Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura, tramite il **[!UICONTROL Add new folder]** menu. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
