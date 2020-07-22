@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _7 luglio 2020_
 
 La build 9032@efd8a94 include la seguente correzione:
 
-* È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
+È stato risolto un problema che impediva il monitoraggio quando la funzionalità di firma era disabilitata o quando si utilizzava una vecchia istanza di marketing con un identificatore Mid recente. (NEO-26411)
 
 >[!CAUTION]
 >
