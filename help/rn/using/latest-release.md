@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1987'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,29 @@ ht-degree: 1%
 
 ![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** di giugno Pannello di controllo Campaign con monitoraggio profili attivi, controllo della recapito del sottodominio e gestione chiavi GPG. [Ulteriori](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informazioni.
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+
+_22 luglio 2020_
+
+* È stato risolto un problema che impediva il monitoraggio quando la funzionalità di firma era disabilitata o quando si utilizzava una vecchia istanza di marketing con un identificatore Mid recente. (NEO-26411)
+* È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati quando questi dovevano essere consentiti. (NEO-25210)
+* È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook. (NEO-25688)
+* È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail. (NEO-26084)
+* È stato risolto un problema con la gestione degli URL di codifica nel servizio di anti-phishing. (NEO-25283)
+* È stato risolto un problema che impediva il funzionamento del tracciamento degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
+* È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277) È stato risolto un problema che impediva il funzionamento del tracciamento dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
+* È stata corretta una regressione che ha un impatto sui campi calcolati in un flusso di lavoro. (NEO-25194)
+* È stata corretta una regressione che impediva il funzionamento della creazione immediata di URL di tracciamento Web. (NEO-20999)
+* È stato risolto un problema relativo ai rapporti di consegna forniti con Scene7 che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
+* È stato risolto un problema di arresto anomalo nella procedura guidata di distribuzione.
+* È stato risolto un problema che poteva impedire il corretto funzionamento del flusso di lavoro di notifica dell&#39;offerta dopo un post aggiornamento.
+* Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903)
+* L&#39;elenco jarsToSkip in catalina.properties è stato aggiornato per rimuovere il riferimento a un file jar non più utilizzato (notifiche iOS).
+* È stato risolto un problema che impediva la preparazione della consegna dopo l&#39;aggiornamento postaggiornato.
+* Dopo il passaggio al [nuovo meccanismo](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)ID sequenza, tutte le applicazioni Web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
+* Risolto un problema di potenziale vulnerabilità XSS nel contenuto di distribuzione. (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) Release 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _8 giugno 2020_
 
