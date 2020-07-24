@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18035a68b0ebfee4a8165c49646e408a85371ae5
+source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ A partire da Campaign Classic 19.2, a ciascuna build viene associato uno stato. 
 ![](assets/do-not-localize/green3.png) **Disponibilità** generale - Ultima build stabile disponibile. Build convalidata in produzione.
 
 L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/gold-standard.md)
+
+![](assets/do-not-localize/limited.png) **Disponibilità** limitata: build attualmente in fase di convalida della produzione. Solo distribuzione su richiesta.
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** - Build convalidata da Adobe. In attesa di prove di produzione.
 
