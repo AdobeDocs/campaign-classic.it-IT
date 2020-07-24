@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
+source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
 
-I clienti interni e ibridi possono inoltre beneficiare delle versioni Gold Standard.
+I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
 
 Questa è la nostra versione di supporto a lungo termine. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
 
@@ -35,7 +35,7 @@ In questa pagina sono elencate le versioni di Gold Standard.
 
 Per ulteriori informazioni sull&#39;aggiornamento Gold Standard, consultate questo [articolo](https://helpx.adobe.com/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/blue_2.png) Rilascio Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/limited.png) Rilascio Gold Standard 10{#gs-10}
 
 _7 luglio 2020_
 
