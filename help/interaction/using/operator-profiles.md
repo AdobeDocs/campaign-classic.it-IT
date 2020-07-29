@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
@@ -24,10 +27,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Esistono due tipi di operatori che utilizzano l&#39;interazione: gestori di offerte e gestori di distribuzione. Ciascuno di essi dispone di diritti specifici che consentono loro di accedere solo ad alcune parti dell&#39;albero e della piattaforma.
 
-* **[!UICONTROL Offer manager]** : crea e mantiene le offerte
+* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se nel flusso di lavoro vengono utilizzate le offerte, per eseguire il flusso di lavoro l&#39;operatore dovrà essere nel gruppo di operatori **[!UICONTROL Administrator]** o **[!UICONTROL Offer Manager)** .
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
-I passaggi per la creazione di operatori specifici di Interaction sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. For more on this, refer to [this section](../../platform/using/access-management.md#creating-an-operator). I diritti vengono configurati durante la creazione dell&#39;operatore.
+I passaggi per la creazione di operatori specifici di Interaction sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md#creating-an-operator). I diritti vengono configurati durante la creazione dell&#39;operatore.
 
 ## Gestione offerte {#offer-manager}
 
@@ -134,7 +137,7 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
   <tr> 
    <td> </td> 
    <td> <strong>Manager consegna (modifica)</strong><br /> </td> 
-   <td> <strong>Direttore consegna (live)</strong><br /> </td> 
+   <td> <strong>Direttore consegna (dal vivo)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Livello struttura ad albero</strong><br /> </td> 
