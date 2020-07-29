@@ -1,6 +1,6 @@
 ---
 title: Importazione di dati
-description: Scopri come importare dati in  Adobe Campaign Classic
+description: Scopri come importare dati in Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: c8cf2bf1-f7a5-4de4-9e53-a961c9e5beca
 contentOwner: sauviat
@@ -13,15 +13,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2473'
 ht-degree: 0%
 
 ---
 
 
 # Importazione di dati{#importing-data}
+
+>[!CAUTION]
+>
+>Ricorda i limiti di archiviazione SFTP, archiviazione DB e profilo attivo in base al contratto AdobeCampaign quando utilizzi questa funzionalità.
 
 ## Modalità di raccolta dei dati {#how-to-collect-data}
 
@@ -57,13 +61,13 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Per essere in grado di effettuare le seguenti operazioni:
 
-1. Usate il Pannello [di](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) controllo per generare una coppia di chiavi pubblica/privata.
+1. Utilizzate l&#39; [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
 
    >[!NOTE]
    >
-   >Il Pannello di controllo è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
+   >Il Pannello di controllo Campaign è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
 
-1. Se l&#39;installazione di  Adobe Campaign è ospitata da Adobe, contatta l&#39;Assistenza clienti Adobe per richiedere che sul server siano installate le utility necessarie.
+1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contattate  Assistenza clienti Adobe per avere sul server le utility necessarie.
 1. Se l&#39;installazione di  Adobe Campaign è in sede, installate l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
 
 Potete quindi usare i comandi di pre-elaborazione desiderati nei flussi di lavoro:
@@ -82,31 +86,31 @@ Un esempio è illustrato nel caso di utilizzo riportato di seguito.
 * [Attività](../../workflow/using/data-loading--file-.md)di caricamento dei dati (file).
 * [Estrazione o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-### Caso di utilizzo: Importazione di dati crittografati con una chiave generata dal Pannello di controllo {#use-case-gpg-decrypt}
+### Caso di utilizzo: Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
 
-In questo caso, verrà creato un flusso di lavoro per importare i dati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo.
+In questo caso, verrà creato un flusso di lavoro per importare i dati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo Campaign.
 
 In [questa sezione](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)è disponibile anche un video di esercitazione che mostra come usare una chiave GPG per decifrare i dati.
 
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
-1. Usate il Pannello di controllo per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella documentazione [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)controllo.
+1. Utilizzate il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella documentazione [dell&#39;](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)Pannello di controllo Campaign.
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
-   * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.
+   * La chiave privata verrà utilizzata dal Campaign Classic per decrittografare i dati crittografati in arrivo.
 
    ![](assets/gpg_generate.png)
 
-1. Nel sistema esterno, utilizzare la chiave pubblica scaricata dal Pannello di controllo per cifrare i dati da importare in Campaign Classic.
+1. Nel sistema esterno, utilizzare la chiave pubblica scaricata dal Pannello di controllo Campaign per cifrare i dati da importare in Campaign Classic.
 
    ![](assets/gpg_external.png)
 
-1. In Campaign Classic, creare un flusso di lavoro per importare i dati crittografati e decifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo. A tal fine, verrà creato un flusso di lavoro come segue:
+1. In Campaign Classic, creare un flusso di lavoro per importare i dati crittografati e decifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 
    ![](assets/gpg_workflow.png)
 
-   * **[!UICONTROL File transfer]** activity: Trasferisce il file da un&#39;origine esterna ad Campaign Classic. In questo esempio, vogliamo trasferire il file da un server SFTP.
-   * **[!UICONTROL Data loading (file)]** activity: Carica i dati dal file nel database e decrittografalo utilizzando la chiave privata generata nel Pannello di controllo.
+   * **[!UICONTROL File transfer]** activity: Trasferisce il file da un&#39;origine esterna a un Campaign Classic. In questo esempio, vogliamo trasferire il file da un server SFTP.
+   * **[!UICONTROL Data loading (file)]** activity: Carica i dati dal file nel database e decrittografalo utilizzando la chiave privata generata nel Pannello di controllo Campaign.
 
 1. Aprite l&#39; **[!UICONTROL File transfer]** attività, quindi specificate l&#39;account esterno da cui desiderate importare il file .gpg crittografato.
 
@@ -124,7 +128,7 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
    >[!CAUTION]
    >
-   >In questo esempio, utilizziamo la passphrase utilizzata per impostazione predefinita dal Pannello di controllo, che è &quot;passphrase&quot;.
+   >In questo esempio, utilizziamo la passphrase utilizzata per impostazione predefinita dal Pannello di controllo Campaign, che è &quot;passphrase&quot;.
    >
    >Se in passato avete già installato chiavi GPG nell&#39;istanza tramite una richiesta dell&#39;Assistenza clienti, la passphrase potrebbe essere stata modificata e per impostazione predefinita è diversa da quella.
 
@@ -240,7 +244,7 @@ In questo esempio viene illustrato come preimpostare un flusso di lavoro che pu�
 
    * Nella **[!UICONTROL Name of the file to load]** sezione, selezionare **[!UICONTROL Upload a file from the local machine]** e lasciare il campo vuoto. Ogni volta che viene creato un nuovo flusso di lavoro da questo modello, potete specificare qui il file desiderato, purché corrisponda alla struttura definita.
 
-      Potete utilizzare una qualsiasi delle opzioni, ma dovete modificare di conseguenza il modello. Ad esempio, se selezionate **[!UICONTROL Specified in the transition]**, potete aggiungere un&#39; **[!UICONTROL File Transfer]** attività prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare dati di segmento in  Adobe Campaign con la piattaforma dati cliente Adobe in tempo reale. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+      Potete utilizzare una qualsiasi delle opzioni, ma dovete modificare di conseguenza il modello. Ad esempio, se selezionate **[!UICONTROL Specified in the transition]**, potete aggiungere un&#39; **[!UICONTROL File Transfer]** attività prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare dati di segmento in  Adobe Campaign con  piattaforma dati cliente in tempo reale del Adobe. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
