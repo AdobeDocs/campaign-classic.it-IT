@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2961'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere l&#39;elenco [di controllo della configurazione di](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)sicurezza.
+>Prima di iniziare a definire le autorizzazioni,  Adobe consiglia di leggere l&#39;elenco [di controllo della configurazione di](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html)protezione.
 
 ## Operatori {#operators}
 
@@ -241,55 +241,63 @@ Per creare un nuovo gruppo di operatori, attenersi alla procedura seguente:
 
 I gruppi di operatori predefiniti sono:
 
-1. Operatori di distribuzione
+1. **[!UICONTROL Administrator]**
+
+   Gli operatori di questo gruppo hanno accesso completo all&#39;istanza. Gli amministratori sono utenti che possono accedere alle parti più tecniche dell&#39;interfaccia. Essi ricoprono il **[!UICONTROL Administration]** ruolo e si accertano che la piattaforma sia completamente impostata.
+
+   Questo gruppo contiene il seguente diritto denominato:
+
+   * **[!UICONTROL ADMINISTRATION]**: diritto di eseguire, creare, modificare, eliminare qualsiasi oggetto, ad esempio workflow, distribuzione, script ecc.
+
+1. **[!UICONTROL Delivery operators]**
 
    Gli operatori di questo gruppo sono responsabili della gestione delle consegne: consentono di accedere alle risorse principali necessarie per creare e preparare le consegne (tipologie di campagne, mappature delle consegne, modelli predefiniti, blocchi di personalizzazione, ecc.).
 
    Questo gruppo contiene i seguenti diritti denominati:
 
-   * PREPARARE LE DISTRIBUZIONI: diritto di creare, modificare e avviare l&#39;analisi della consegna,
-   * AVVIA DISTRIBUZIONI: diritto di approvare le consegne analizzate in precedenza.
+   * **[!UICONTROL PREPARE DELIVERIES]**: diritto di creare, modificare e avviare l&#39;analisi della consegna,
+   * **[!UICONTROL START DELIVERIES]**: diritto di approvare le consegne analizzate in precedenza.
 
-1. Manager campagna
+1. **[!UICONTROL Campaign managers]**
 
-   Gli operatori di questo gruppo possono gestire le campagne di marketing: consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.).
+   Gli operatori di questo gruppo possono gestire le campagne di marketing: consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nel quadro di **[!UICONTROL Campaign]** (modulo di Adobe Campaign  facoltativo).
 
    Questo gruppo contiene i seguenti diritti denominati:
 
-   * INSERISCI CARTELLE: diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
-   * FLUSSO DI LAVORO: diritto di utilizzare i flussi di lavoro.
+   * **[!UICONTROL INSERT FOLDERS]**: diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
+   * **[!UICONTROL WORKFLOW]**: diritto di utilizzare i flussi di lavoro.
 
    >[!NOTE]
    >
    >Questo gruppo non consente agli operatori di avviare le consegne.
 
-1. Collaboratori di contenuti
+1. **[!UICONTROL Content contributors]**
 
-   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, all’interno del framework di **Content Management** (modulo di Adobe Campaign  facoltativo). Questo gruppo non concede diritti aggiuntivi.
+   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, all’interno del framework di **[!UICONTROL Content management]** (modulo di Adobe Campaign  facoltativo). Questo gruppo non concede diritti aggiuntivi.
 
-1. Accesso ai rapporti
+1. **[!UICONTROL Access to reports]**
 
    Questo gruppo è riservato agli operatori esterni per accedere ai rapporti di consegna tramite un accesso Web.
 
-1. Esecuzione del flusso di lavoro
+1. **[!UICONTROL Workflow execution]**
 
    Questo gruppo consente di assegnare agli operatori il diritto di gestire flussi di lavoro non correlati alle campagne.
 
-1. Supervisori flusso di lavoro
+1. **[!UICONTROL Workflow supervisors]**
 
    Gli operatori di questo gruppo ricevono una notifica e-mail in caso di avvisi relativi ai flussi di lavoro delle campagne.
 
 1. Gestione locale/centrale
 
-   Questi gruppi consentono di utilizzare **Distributed marketing** (modulo di Adobe Campaign  facoltativo).
+   Questi gruppi consentono di utilizzare **[!UICONTROL Distributed marketing]** (modulo di Adobe Campaign  facoltativo).
 
-1. Manager offerta
+1. **[!UICONTROL Offer managers]**
 
    Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consultare questa [pagina](../../interaction/using/operator-profiles.md).
 Questo gruppo contiene i seguenti diritti denominati:
 
-   * INSERISCI CARTELLE: Diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
-   * MODIFICA CARTELLE: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
+   * **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
+   * **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
 
 ## Diritti denominati {#named-rights}
 
