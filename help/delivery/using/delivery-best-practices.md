@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4361'
 ht-degree: 3%
 
 ---
 
 
 # Best practice di distribuzione {#delivery-best-practices}
+
+Scopri le best practice relative alla progettazione e all&#39;invio di materiale  Adobe Campaign.
 
 ## Ottimizzazione della distribuzione {#optimize-delivery}
 
@@ -102,7 +104,7 @@ Quando gestite diversi marchi in  Adobe Campaign,  Adobe consiglia di avere un s
 
 **Suggerimento**:  Per evitare errori di configurazione in Campaign Standard, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
 
-**Configurare gli indirizzi**
+### Configurare gli indirizzi
 
 * L&#39;indirizzo del mittente è obbligatorio per consentire l&#39;invio di un&#39;e-mail.
 
@@ -126,7 +128,7 @@ Per configurare gli indirizzi nell&#39;interfaccia di Campaign, effettua le segu
 
 1. Nei **[!UICONTROL Reply address text]** campi, l&#39;indirizzo del mittente viene utilizzato per impostazione predefinita per le risposte. Tuttavia,  Adobe consiglia di utilizzare un indirizzo reale esistente, come l&#39;assistenza clienti del marchio. In questo caso, se un destinatario invia una risposta, l&#39;assistenza clienti sarà in grado di gestirla.
 
-**Impostazione di un gruppo di controllo**
+### Impostazione di un gruppo di controllo
 
 Una volta inviata la consegna, potete confrontare il comportamento dei destinatari esclusi con quello dei destinatari che hanno ricevuto la consegna. Potete quindi misurare l&#39;efficienza delle campagne. Ulteriori informazioni sui gruppi di controllo [in questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -134,7 +136,7 @@ Per impostare un gruppo di controllo, fare clic sul **[!UICONTROL To]** collegam
 
 ![](assets/d_best_practices_control_group.png)
 
-**Utilizzare le tipologie per applicare filtri o regole di controllo**
+### Utilizzare le tipologie per applicare filtri o regole di controllo
 
 Una tipologia contiene le regole di controllo applicate durante la fase di analisi, prima di inviare qualsiasi messaggio.
 
@@ -342,7 +344,7 @@ Una volta che il messaggio è pronto, accertati che il contenuto sia visualizzat
 
 Prima di inviare il messaggio, assicurati anche che i parametri e la configurazione siano coerenti con la consegna.
 
-### Convalida è la chiave {#validation-is-key}
+### Perché la convalida è fondamentale {#validation-is-key}
 
 Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare. A tal fine, devi convalidare il contenuto del messaggio e i parametri di consegna.
 
@@ -404,7 +406,7 @@ Puoi:
 
 * Definite le affinità IP nel file di configurazione serverConf.xml. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* Per ogni elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* Per ciascun elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
 * Nella [tipologia](../../campaign/using/about-campaign-typologies.md) scelta, utilizza il **[!UICONTROL Managing affinities with IP addresses]** campo per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
@@ -461,7 +463,7 @@ Per misurare la velocità di invio dei messaggi, puoi controllare la velocità d
 
 * Non provare a pianificare insieme consegne di grandi dimensioni. Si prega di notare che possono essere necessari da 5 a 10 minuti per distribuire uniformemente il carico sul sistema.
 
-## Risoluzione dei problemi di consegna {#delivery-troubleshooting}
+### Risoluzione dei problemi di consegna {#delivery-troubleshooting}
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 
