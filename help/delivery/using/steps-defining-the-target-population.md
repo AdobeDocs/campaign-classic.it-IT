@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -29,25 +29,23 @@ ht-degree: 0%
 
 Per ogni consegna, potete definire diversi tipi di popolazioni target. La sezione seguente fornisce ulteriori informazioni su come selezionare:
 
-* **I principali destinatari della consegna**. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
-* **I destinatari dei messaggi** di prova, al fine di impostare un ciclo di convalida. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+* I principali destinatari della consegna. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Destinatari di messaggi di prova, al fine di impostare un ciclo di convalida. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-È inoltre possibile definire indirizzi [](../../delivery/using/about-seed-addresses.md)iniziali e gruppi [di](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controllo. se la consegna è inclusa in una campagna di marketing.
+Inoltre, se la consegna è inclusa in una campagna di marketing, puoi anche definire indirizzi [](../../delivery/using/about-seed-addresses.md)iniziali e gruppi [di](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controllo.
 
 ## Selezione dei principali destinatari della consegna {#selecting-the-main-target}
 
-Nella maggior parte dei casi, la destinazione principale viene estratta dal database Campaign (modalità predefinita).
+Nella maggior parte dei casi, la destinazione principale viene estratta  database Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Ulteriori informazioni in [questa sezione](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-I destinatari possono anche essere memorizzati in un file esterno. La configurazione di questo tipo di consegna viene presentata in [Selezione di destinatari](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)esterni.
+Per selezionare i destinatari di una consegna, effettuate le seguenti operazioni:
 
-Per selezionare i destinatari della consegna da creare, effettuate le seguenti operazioni:
-
-1. Fate clic sul **[!UICONTROL To]** collegamento.
-1. Se i destinatari sono memorizzati nel database, selezionare la prima opzione.
+1. Nell&#39;editor di distribuzione, selezionate **[!UICONTROL To]**.
+1. Se i destinatari sono memorizzati nel database, scegliete la prima opzione.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selezionate la mappatura della destinazione nell&#39;elenco a **[!UICONTROL Target mapping]** discesa.  mappatura di destinazione predefinita Adobe Campaign è **[!UICONTROL Recipients]**.
+1. Selezionate la mappatura della destinazione nell&#39;elenco a **[!UICONTROL Target mapping]** discesa.  Mappatura destinazione predefinita Adobe Campaign è **[!UICONTROL Recipients]**, basata sullo schema **nms:destinatario** .
 
    Sono disponibili altre mappature di destinazione, alcune delle quali possono essere correlate alla configurazione specifica. Per ulteriori informazioni sulle mappature di destinazione, vedere [Selezione di una mappatura](../../delivery/using/selecting-a-target-mapping.md)di destinazione.
 
@@ -114,7 +112,7 @@ Per eseguire questa operazione:
 
 1. Quando importate i destinatari, fate clic sul **[!UICONTROL File format definition...]** collegamento per selezionare e configurare il file esterno.
 
-   Per ulteriori informazioni sull&#39;importazione dei dati, consultare [questa sezione](../../platform/using/importing-data.md#step-2---source-file-selection).
+   For more information on data import, refer to [this section](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Fai clic su **[!UICONTROL Finish]** e configura la consegna come consegna standard.
 
@@ -157,7 +155,7 @@ Sono disponibili le seguenti opzioni:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail si trovano in un elenco di blocchi (&quot;rinuncia&quot;). Questa opzione deve rimanere selezionata per rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano il commercio elettronico.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail si trovano in un elenco Bloccati  (&quot;rinuncia&quot;). Questa opzione deve rimanere selezionata per rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano il commercio elettronico.
 * **[!UICONTROL Exclude quarantined recipients]**. Questa opzione consente di escludere dalla destinazione qualsiasi profilo con un indirizzo che non risponde. È consigliabile mantenere selezionata questa opzione.
 
    >[!NOTE]
