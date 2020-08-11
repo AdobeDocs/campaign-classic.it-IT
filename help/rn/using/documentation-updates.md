@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6943'
-ht-degree: 14%
+source-wordcount: '7069'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,37 @@ ht-degree: 14%
 
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti della documentazione al mese e il rilascio di Campaign.
 
+
 Per ulteriori aggiornamenti, è inoltre possibile consultare le Note [sulla versione di](../../rn/using/latest-release.md) Adobe Campaign Classic.
+
+## Agosto 2020 {#aug-2020}
+
+Scopri le best practice relative alla progettazione e all&#39;invio di contenuti con Campaign in una sezione dedicata. [Ulteriori informazioni](../../delivery/using/delivery-best-practices.md)
+
+La pagina di destinazione Best practice per la distribuzione è stata migliorata per facilitare l’accesso alle sottosezioni. [Ulteriori informazioni](../../delivery/using/deliverability-key-points.md)
+
+I video introduttivi sono ora disponibili sui seguenti argomenti:
+
+* [Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign/using/about-campaign-typologies.md)
+
+* [Come creare un messaggio e-mail in una campagna](../../campaign/using/designing-marketing-campaigns.md)
+
+* [Come creare una newsletter multilingue con contenuti condizionali](../../delivery/using/conditional-content.md)
+
+* [Come configurare e distribuire un modello di consegna](../../delivery/using/creating-a-delivery-template.md)
+
+* [Come attivare e utilizzare AMP per le e-mail](../../delivery/using/defining-interactive-content.md)
+
+* [Come personalizzare le e-mail utilizzando blocchi di contenuto dinamici](../../delivery/using/personalization-blocks.md)
+
+* [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
+
+* [Come gestire sementi e prove in un&#39;e-mail](../../delivery/using/steps-defining-the-target-population.md)
+
+* [Come impostare una consegna ricorrente](../../workflow/using/recurring-delivery.md)
+
+* [Come impostare una consegna continua](../../workflow/using/continuous-delivery.md)
+
 
 ## Luglio 2020 {#july-2020}
 
