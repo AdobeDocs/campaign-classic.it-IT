@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
@@ -55,18 +58,36 @@ Per configurare un modello di consegna, eseguite i seguenti passaggi:
 
    ![](assets/delivery_template_3.png)
 
-1. Nella scheda **Generale** , confermate o modificate le posizioni selezionate nei menu a discesa cartella **** Esecuzione, **cartella** e **Routing** .
+1. Nella scheda **Generale** , confermate o modificate le posizioni selezionate nei menu a discesa Cartella **** esecuzione, **Cartella** e **Ciclo** .
 
    ![](assets/delivery_template_4.png)
 
 1. Completa la categoria dei parametri **** e-mail con l’oggetto e la popolazione dell’e-mail.
 1. Aggiungete il contenuto **** HTML per personalizzare il modello, potete visualizzare un collegamento di pagina mirror e un collegamento di annullamento dell&#39;iscrizione.
-1. Selezionate la scheda **Anteprima** . Nel menu a discesa **Personalizzazione** test, selezionate **Destinatario** per visualizzare in anteprima il modello come profilo scelto.
+1. Select the **Preview** tab. Nel menu a discesa **Personalizzazione** test, selezionate **Destinatario** per visualizzare in anteprima il modello come profilo scelto.
 
    ![](assets/delivery_template_5.png)
 
-1. Fate clic su **Salva**. Il modello è ora pronto per essere utilizzato in una consegna.
+1. Fai clic su **Salva**. Il modello è ora pronto per essere utilizzato in una consegna.
 
 >[!NOTE]
 >
 >Per evitare errori di configurazione, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
+
+## Come configurare un modello di consegna
+
+Il seguente video illustra come configurare un modello per una distribuzione ad hoc.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+
+## Come impostare le proprietà dei modelli di consegna
+
+Il seguente video mostra come impostare le proprietà del modello di consegna e spiega in dettaglio ciascuna proprietà.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+
+## Come distribuire un modello di consegna ad hoc
+
+Questo video spiega come distribuire un modello di consegna e-mail ad hoc e spiega la differenza tra una consegna e-mail e un flusso di lavoro di consegna.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
