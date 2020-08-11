@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Le configurazioni consigliate sono adatte ai diversi tipi di distribuzione: post
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione delle consegne, consulta la sezione [Invio di messaggi](../../delivery/using/communication-channels.md) .
+>Per ulteriori informazioni sulla creazione e la configurazione delle consegne, consulta la sezione [Invio di messaggi](../../delivery/using/steps-about-delivery-creation-steps.md) .
 
 ## Selezione della popolazione di destinazione {#selecting-the-target-population}
 
@@ -45,7 +45,7 @@ Per ogni consegna, il manager della campagna definirà:
 
 * L&#39;obiettivo principale. Per ulteriori informazioni, vedere [Creazione della destinazione principale in un flusso di lavoro](#building-the-main-target-in-a-workflow) e [Selezione della popolazione](#selecting-the-target-population)di destinazione.
 * Gruppo di controllo. Per ulteriori informazioni, vedere [Definizione di un gruppo](#defining-a-control-group)di controllo.
-* Gli indirizzi seed. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
+* Gli indirizzi seed. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
 
 Alcune di queste informazioni vengono ereditate dal modello.
 
@@ -79,13 +79,13 @@ La guida [Automazione con i flussi di lavoro](../../workflow/using/architecture.
 >
 >Nella stessa campagna, non potete impostare più di 28 flussi di lavoro. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
 
-#### Creazione di un flusso di lavoro di targeting {#creating-a-targeting-workflow}
+#### Creating a targeting workflow {#creating-a-targeting-workflow}
 
 Il targeting può essere creato tramite una combinazione di condizioni di filtraggio in una sequenza grafica in un flusso di lavoro. Potete creare popolazioni e sottopopolazioni che verranno indirizzate in base alle vostre esigenze. Per visualizzare l’editor del flusso di lavoro, fate clic sulla **[!UICONTROL Targeting and workflows]** scheda nel dashboard della campagna.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-La popolazione di destinazione viene estratta dal database di Adobe Campaign tramite una o più query inserite in un flusso di lavoro. Per informazioni su come creare una query, consultare [questa sezione](../../workflow/using/query.md).
+La popolazione di destinazione viene estratta dal database Adobe Campaign  tramite una o più query inserite in un flusso di lavoro. Per informazioni su come creare una query, consultare [questa sezione](../../workflow/using/query.md).
 
 Potete avviare query e condividere le popolazioni tramite caselle quali Unione, Intersezione, Condivisione, Esclusione, ecc.
 
@@ -210,7 +210,7 @@ Il gruppo di controllo può essere estratto dalla destinazione principale e/o pr
 È possibile definire un gruppo di controllo a livello di campagna, nel qual caso il gruppo di controllo verrà applicato a ogni distribuzione della campagna interessata.
 
 1. Modificate la campagna in questione e fate clic sulla **[!UICONTROL Edit]** scheda.
-1. Clic **[!UICONTROL Advanced campaign settings]**.
+1. Fai clic su **[!UICONTROL Advanced campaign settings]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -219,7 +219,7 @@ Il gruppo di controllo può essere estratto dalla destinazione principale e/o pr
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-La procedura di configurazione viene presentata in [Estrazione del gruppo di controllo dalla destinazione](#extracting-the-control-group-from-the-main-target) principale e [Aggiunta di una popolazione](#adding-a-population).
+La procedura di configurazione viene presentata in [Estrazione del gruppo di controllo dalla destinazione](#extracting-the-control-group-from-the-main-target) principale e [Aggiunta di un gruppo](#adding-a-population)di controllo.
 
 #### Attivazione del gruppo di controllo per una consegna {#activating-the-control-group-for-a-delivery}
 
@@ -238,7 +238,7 @@ Per impostazione predefinita, la configurazione del gruppo di controllo definita
 1. Fare clic sulla **[!UICONTROL Control group]** scheda, quindi selezionare **[!UICONTROL Enable and edit control group configuration]**.
 1. Fare clic **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
 
-La procedura di configurazione viene presentata in [Estrazione del gruppo di controllo dalla destinazione](#extracting-the-control-group-from-the-main-target) principale e [Aggiunta di una popolazione](#adding-a-population).
+La procedura di configurazione viene presentata in [Estrazione del gruppo di controllo dalla destinazione](#extracting-the-control-group-from-the-main-target) principale e [Aggiunta di un gruppo](#adding-a-population)di controllo.
 
 #### Estrazione del gruppo di controllo dalla destinazione principale {#extracting-the-control-group-from-the-main-target}
 
@@ -257,7 +257,7 @@ Fare clic **[!UICONTROL Next]** per definire l&#39;ordine di ordinamento (se nec
 
 Questa configurazione è equivalente a un&#39;attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md) .
 
-### Aggiunta di una popolazione {#adding-a-population}
+### Aggiunta di un gruppo di controlli {#adding-a-population}
 
 È possibile definire una nuova popolazione da utilizzare come gruppo di controllo. Questa popolazione può provenire da un gruppo di destinatari o è possibile crearla tramite una query specifica.
 
@@ -265,7 +265,7 @@ Questa configurazione è equivalente a un&#39;attività di condivisione nel flus
 
 >[!NOTE]
 >
->L&#39;editor di query di Adobe Campaign è presentato in [questa sezione](../../workflow/using/query.md).
+> editor di query Adobe Campaign viene presentato in [questa sezione](../../workflow/using/query.md).
 
 ## Avvio di una consegna {#starting-a-delivery}
 
@@ -273,11 +273,11 @@ Una volta concesse tutte le approvazioni, la consegna è pronta per essere avvia
 
 ### Avvio di una consegna online {#starting-an-online-delivery}
 
-Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore. Se appropriato, all&#39;operatore Adobe Campaign (o al gruppo di operatori) nominato revisore per avviare la consegna viene notificato che la consegna è pronta per essere avviata.
+Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore. Se del caso, all’operatore Adobe Campaign  (o al gruppo di operatori) nominato revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
 
 >[!NOTE]
 >
->Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, è anche possibile consentire all&#39;operatore responsabile della consegna di confermare l&#39;invio. A questo scopo, attivate l&#39;opzione **NMS_ActivateOwnerConfirm** immettendo **1** come valore. Le opzioni sono gestite dal nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in Adobe Campaign Explorer.
+>Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, è anche possibile consentire all&#39;operatore responsabile della consegna di confermare l&#39;invio. A questo scopo, attivate l&#39;opzione **NMS_ActivateOwnerConfirm** immettendo **1** come valore. Le opzioni vengono gestite dal nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in Adobe Campaign Explorer .
 >  
 >Per disattivare questa opzione, immettere **0** come valore. Il processo di conferma dell&#39;invio funzionerà come impostazione predefinita: solo l&#39;operatore o il gruppo di operatori designati per l&#39;invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l&#39;invio.
 
@@ -322,7 +322,7 @@ Per ulteriori informazioni, vedere [Approvazione di un file](../../campaign/usin
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Lo stato di consegna cambia in **[!UICONTROL To submit]**. Fare clic sul **[!UICONTROL Submit proofs]** pulsante per avviare il processo di approvazione.
+* Lo stato di consegna cambia in **[!UICONTROL To submit]**. Click the **[!UICONTROL Submit proofs]** button to start the approval process.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -354,7 +354,7 @@ L&#39;estrazione del file avvia due operazioni: calcolo del budget e delle scort
 
 ## Gestione dei documenti associati {#managing-associated-documents}
 
-Potete associare vari documenti a una campagna: report, foto, pagina Web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Per collegare i documenti a una campagna, consultate [Aggiunta di documenti](#adding-documents).
+Potete associare vari documenti a una campagna: report, foto, pagina Web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG,  Acrobat PDF, ecc.). Per collegare i documenti a una campagna, consultate [Aggiunta di documenti](#adding-documents).
 
 >[!IMPORTANT]
 >
@@ -372,7 +372,7 @@ I documenti possono essere associati a livello di campagna (documenti contestual
 
 La **[!UICONTROL Documents]** scheda contiene:
 
-* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con diritti appropriati,
+* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente da  operatori Adobe Campaign con diritti adeguati,
 * Eventuali documenti contenenti informazioni per il router.
 
 I documenti sono collegati al programma o alla campagna tramite la **[!UICONTROL Edit > Documents]** scheda.
@@ -427,7 +427,7 @@ Quindi, fate clic su **[!UICONTROL Add a delivery outline]** e create la gerarch
 Una struttura può contenere elementi e campi di personalizzazione, risorse e offerte:
 
 * Gli elementi possono essere documenti fisici, ad esempio, a cui si fa riferimento e che sono descritti qui e che verranno allegati alla consegna.
-* I campi di personalizzazione consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in Adobe Campaign e importati nella struttura tramite il **[!UICONTROL Import personalization fields...]** collegamento.
+* I campi di personalizzazione consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in  Adobe Campaign e importati nella struttura tramite il **[!UICONTROL Import personalization fields...]** collegamento.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
