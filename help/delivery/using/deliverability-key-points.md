@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -80,7 +80,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
 <tr>
   <td>
     <a href="starting-new-platform.md">
-      <img alt="Inizio" src="assets/do-not-localize/start.svg"/>
+      <img alt="Inizio" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="starting-new-platform.md">
@@ -93,7 +93,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
   </td>
    <td>
     <a href="control-message-content.md">
-      <img alt="Progettazione" src="assets/do-not-localize/design.svg"/>
+      <img alt="Progettazione" src="assets/do-not-localize/design.svg" width="60px"/>
     </a>
     <div>
       <a href="control-message-content.md">
@@ -106,7 +106,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
   </td>
   <td>
     <a href="improve-reputation.md">
-      <img alt="Progettazione" src="assets/do-not-localize/check.svg"/>
+      <img alt="Progettazione" src="assets/do-not-localize/check.svg" width="60px"/>
     </a>
     <div>
       <a href="improve-reputation.md">
@@ -121,7 +121,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
 <tr>
   <td>
     <a href="technical-recommendations.md">
-      <img alt="Ottimizza" src="assets/do-not-localize/optimize.svg"/>
+      <img alt="Ottimizza" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="technical-recommendations.md">
@@ -134,7 +134,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
   </td>
    <td>
     <a href="monitoring-deliverability.md">
-      <img alt="Controlla" src="assets/do-not-localize/monitor.svg"/>
+      <img alt="Controlla" src="assets/do-not-localize/monitor.svg" width="60px"/>
     </a>
     <div>
       <a href="monitoring-deliverability.md">
@@ -147,7 +147,7 @@ Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign
   </td>
   <td>
     <a href="deliverability-faq.md">
-      <img alt="Ottimizza" src="assets/do-not-localize/troubleshoot.svg"/>
+      <img alt="Ottimizza" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="deliverability-faq.md">
