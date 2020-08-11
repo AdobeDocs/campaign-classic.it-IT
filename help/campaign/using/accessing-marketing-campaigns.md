@@ -15,20 +15,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 0%
 
 ---
 
 
 # Accesso a campagne di marketing{#accessing-marketing-campaigns}
 
-Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
+ Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
 ## Nozioni di base sull’area di lavoro {#workspace-basics}
 
-### Home page {#home-page}
+### Pagina Home {#home-page}
 
-Una volta stabilita la connessione ad Adobe Campaign, verrà visualizzata la pagina principale.
+Una volta effettuata la connessione a  Adobe Campaign, verrà visualizzata la home page.
 
 ![](assets/campaign_global_view.png)
 
@@ -38,16 +41,16 @@ Gli elementi della campagna si trovano nell&#39; **[!UICONTROL Campaigns]** univ
 
 Il blocco di navigazione dell&#39; **[!UICONTROL Campaigns]** universo offre varie voci, a seconda dei moduli installati nell&#39;istanza. Ad esempio, potete accedere a:
 
-* **Calendario** campagna: calendario di piani, programmi di marketing, consegne e campagne. Fate riferimento al calendario [](#campaign-calendar)campagna.
+* **Calendario** campagna: calendario di piani, programmi di marketing, consegne e campagne. Fate riferimento al calendario [](#campaign-calendar)della campagna.
 * **Campagne**: accesso alle campagne contenute in tutti i programmi di marketing.
 * **Consegne**: accesso alle consegne collegate alle campagne.
 * **Applicazioni** Web: accesso alle applicazioni Web (moduli, sondaggi, ecc.).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;ergonomia, le autorizzazioni e le funzionalità di gestione dei profili di Adobe Campaign, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md).
+>Per ulteriori informazioni sull&#39;ergonomia generale  Adobe Campaign, sulle autorizzazioni e sulle funzionalità di gestione dei profili, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md).
 >
->Tutte le funzionalità relative ai canali e alle consegne sono descritte in [questa sezione](../../delivery/using/communication-channels.md).
+>Tutte le funzionalità relative ai canali e alle consegne sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Calendario campagna {#campaign-calendar}
 
@@ -114,7 +117,7 @@ Il dashboard di una campagna viene utilizzato come interfaccia di controllo. Con
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
-Con Adobe Campaign puoi impostare processi collaborativi per la creazione e l&#39;approvazione delle varie fasi delle campagne di marketing e comunicazione: approvazione del bilancio, obiettivo, contenuto, ecc.
+Con  Adobe Campaign è possibile impostare processi collaborativi per la creazione e l&#39;approvazione delle varie fasi delle campagne di marketing e comunicazione: approvazione del bilancio, obiettivo, contenuto, ecc.
 
 ![](assets/s_ncs_user_op_board_validate.png)
 
@@ -132,7 +135,7 @@ Una campagna centralizza un insieme di consegne. Per ogni campagna, la pianifica
 
 Per ogni campagna, gli operatori possono scambiare messaggi tramite un forum dedicato.
 
-Per ulteriori informazioni, consulta [Forum](../../campaign/using/discussion-forums.md)di discussione.
+For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
 
 #### Rapporti {#reports}
 
@@ -149,9 +152,9 @@ Il **[!UICONTROL Reports]** collegamento consente di accedere ai rapporti della 
 Le campagne vengono create tramite modelli di campagna. Potete configurare modelli riutilizzabili per i quali sono selezionate alcune opzioni e altre impostazioni sono già salvate. Per ogni campagna, sono disponibili le seguenti funzionalità:
 
 * Riferimento a documenti e risorse: potete associare i documenti alla campagna (breve, rapporto, immagini ecc.). Sono supportati tutti i formati di documento. Consultate [Gestione dei documenti](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)associati.
-* Definizione dei costi: per ogni campagna, Adobe Campaign consente di definire le voci di costo e le strutture di calcolo dei costi da utilizzare per la creazione della campagna di marketing. Ad esempio: spese di stampa, utilizzo di un&#39;agenzia esterna, noleggio di camere, ecc. Vedere [Definizione delle categorie](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)di costi.
+* Definizione dei costi: per ogni campagna,  Adobe Campaign consente di definire le voci di costo e le strutture di calcolo dei costi da utilizzare per la creazione della campagna di marketing. Ad esempio: spese di stampa, utilizzo di un&#39;agenzia esterna, noleggio di camere, ecc. Vedere [Definizione delle categorie](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)di costi.
 * Definizione degli obiettivi: potete definire obiettivi quantificabili per una campagna, ad esempio numero di abbonati, volume di affari, ecc. Tali informazioni vengono successivamente utilizzate nei rapporti sulle campagne.
-* Gestione degli indirizzi iniziali (per ulteriori informazioni, consultare [questa sezione](../../delivery/using/about-seed-addresses.md)) e dei gruppi di controllo (fare riferimento a [Definizione di un gruppo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)di controllo).
+* Gestione degli indirizzi iniziali (per ulteriori informazioni, fare riferimento a [questa sezione](../../delivery/using/about-seed-addresses.md)) e dei gruppi di controllo (fare riferimento a [Definizione di un gruppo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)di controllo).
 * Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. Consulta [Controllo e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
@@ -160,7 +163,7 @@ Le campagne vengono create tramite modelli di campagna. Potete configurare model
 
 ## Utilizzo dell&#39;interfaccia Web {#using-the-web-interface-}
 
-Puoi accedere alle schermate della console di Adobe Campaign tramite un browser Internet per visualizzare tutte le campagne e le consegne, nonché rapporti e informazioni sui profili presenti nel database. Questo accesso non consente la creazione dei record. A seconda dei diritti dell&#39;operatore, è possibile visualizzare e/o agire sui dati presenti nel database. Ad esempio, potete approvare il contenuto della campagna e il targeting, riavviare o interrompere la consegna, ecc.
+Potete accedere alle schermate della console  Adobe Campaign tramite un browser Internet per visualizzare tutte le campagne e le consegne, nonché i rapporti e le informazioni sui profili presenti nel database. Questo accesso non consente la creazione dei record. A seconda dei diritti dell&#39;operatore, è possibile visualizzare e/o agire in base ai dati presenti nel database. Ad esempio, potete approvare il contenuto della campagna e il targeting, riavviare o interrompere la consegna, ecc.
 
 1. Accedete normalmente tramite https://`<your instance>:<port>/view/home`.
 1. Usate i menu per accedere alle panoramiche.
