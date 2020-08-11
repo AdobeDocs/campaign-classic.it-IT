@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Per impostare questo caso di utilizzo, abbiamo creato il seguente flusso di lavo
 
 Questo flusso di lavoro (esecuzione giornaliera) seleziona tutti i destinatari la cui data di nascita è la data corrente.
 
-Questo caso di utilizzo si trova anche sotto forma di video. Per ulteriori informazioni, consultate [Creazione di un video di workflow](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) .
+Questo caso di utilizzo si trova anche sotto forma di video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 A questo scopo, create una campagna e fate clic sulla **[!UICONTROL Targeting and workflows]** scheda. Per ulteriori informazioni, vedere [Creazione della destinazione principale in una sezione del flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
@@ -95,7 +98,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    Fate clic **[!UICONTROL Finish]** per confermare.
 
-1. Ripetere questa procedura per recuperare il mese di nascita corrispondente al mese corrente. A tale scopo, fare clic sul **[!UICONTROL Add]** pulsante e ripetere i passaggi da 3 a 10, sostituendoli **[!UICONTROL Day]** con **[!UICONTROL Month]**.
+1. Ripetete questa procedura per recuperare il mese di nascita corrispondente al mese corrente. A tale scopo, fare clic sul **[!UICONTROL Add]** pulsante e ripetere i passaggi da 3 a 10, sostituendoli **[!UICONTROL Day]** con **[!UICONTROL Month]**.
 
    La query completa è la seguente:
 
@@ -209,7 +212,7 @@ Aggiungi un&#39;attività di consegna **** ricorrente in base al modello e-mail 
 
 >[!CAUTION]
 >
->Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al processo della campagna. Per ulteriori informazioni, consulta la sezione [Elenco dei flussi di lavoro](../../workflow/using/campaign.md) dei processi delle campagne.
+>Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al processo della campagna. For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
 >
 >Se per la campagna sono abilitati i passaggi di approvazione, le consegne verranno inviate solo dopo che tali passaggi saranno stati confermati. Per ulteriori informazioni, vedere [Scelta dei processi da approvare](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 
