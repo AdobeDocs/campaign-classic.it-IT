@@ -1,7 +1,7 @@
 ---
 title: Concetti chiave
 seo-title: Domande frequenti sulle funzionalità delle campagne
-description: Domande frequenti su Campaign Classic
+description: Domande frequenti sui Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,37 +14,40 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
 
 # Concetti chiave {#key-concepts}
 
-Scopri i passaggi chiave per iniziare con Adobe Campaign.
+Scopri i passaggi chiave per iniziare con  Adobe Campaign.
 
-## Posso collegarmi a Campaign Classic con un Adobe ID? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
+## Posso collegarmi al Campaign Classic con un Adobe ID ? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
 
-Grazie all&#39;integrazione con IMS (Adobe Identity Management System), gli utenti possono connettersi alla console Adobe Campaign utilizzando il proprio Adobe ID. Questa integrazione offre i seguenti vantaggi:
+Grazie all&#39;integrazione con IMS ( Adobe  Identity Management System), gli utenti possono connettersi alla console  Adobe Campaign utilizzando  Adobe ID. Questa integrazione offre i seguenti vantaggi:
 
-* Lo stesso ID può essere utilizzato per tutte le soluzioni Experience Cloud.
-* La connessione viene memorizzata quando si utilizza Adobe Campaign con diverse integrazioni.
+* Lo stesso ID può essere utilizzato per tutte le soluzioni  Experience Cloud.
+* La connessione viene memorizzata quando si utilizza  Adobe Campaign con diverse integrazioni.
 * Criteri di gestione password più sicuri.
-* Utilizzo di account Federated ID (provider di ID esterno).
+* Utilizzo di account di Federated ID (provider di ID esterno).
 
-[Fai clic qui per saperne di più](../../integrations/using/about-adobe-id.md) sull&#39;accesso a Campaign Classic con un Adobe ID.
+[Fate clic qui per ulteriori](../../integrations/using/about-adobe-id.md) informazioni sull&#39;accesso ai Campaign Classic con un Adobe ID .
 
 ## Qual è la mia versione di Campaign? {#what-is-my-version-of-campaign-}
 
-[ Controllate la ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)versione e il numero **di build da** Aiuto > Informazioni su... menu della console client Campaign.
+Controllate la [versione e il numero](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) di build da **Aiuto > Informazioni su...** menu della console client Campaign.
 
 ## Quali sono le differenze quando si lavora in sede rispetto a un ambiente ospitato? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
-Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e la loro configurazione possono dipendere dal [tipo di implementazione](../../installation/using/hosting-models.md) dell&#39;installazione: ospitato (Servizi gestiti) o in sede.
+Adobe Campaign Classic viene fornito con una serie di moduli e opzioni. La disponibilità di questi moduli e la loro configurazione possono dipendere dal [tipo di implementazione](../../installation/using/hosting-models.md) dell&#39;installazione: ospitato (Managed Services) o in sede.
 
 [Fai clic qui per saperne di più](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
 
-## Come posso impostare le autorizzazioni per l’utente? {#how-can-i-set-up-user-permissions-}
+## Come si configurano le autorizzazioni per l’utente? {#how-can-i-set-up-user-permissions-}
 
 In qualità di amministratore di Campaign, puoi impostare le autorizzazioni per gli utenti dell&#39;organizzazione.
 
@@ -58,25 +61,25 @@ Si tratta di una serie di diritti e restrizioni che autorizzano o negano a:
 
 ## Come garantire la conformità alla privacy con Campaign? {#how-to-be-gdpr-compliant-with-campaign-}
 
-Adobe Campaign offre una serie di strumenti per aiutarti con la conformità alla privacy per GDPR e CCPA.
+ Adobe Campaign offre una serie di strumenti per aiutarti con la conformità alla privacy per GDPR e CCPA.
 
-Fai riferimento a [questo documento](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) per comprendere a fondo gli strumenti e le funzionalità forniti da Adobe Campaign, nonché le best practice, per aiutarti a rispettare la conformità ai requisiti GDPR quando utilizzi il nostro servizio. I passaggi di implementazione per Campaign Classic sono descritti in [questo articolo](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+Consulta [questo documento](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html) per comprendere gli strumenti e le funzionalità forniti da Adobe Campaign, nonché le procedure ottimali, per aiutarti con la conformità al GDPR quando utilizzi il nostro servizio. I passaggi di implementazione per i Campaign Classic sono descritti in [questo articolo](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 ## Quali sono i concetti dell&#39;interfaccia utente di Campaign che dovrei conoscere? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
-Leggi [questa sezione](../../platform/using/adobe-campaign-workspace.md) per saperne di più sulle nozioni di base dell&#39;area di lavoro di Adobe Campaign. Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
+Leggi [questa sezione](../../platform/using/adobe-campaign-workspace.md) per saperne di più sulle nozioni di base &#39;area di lavoro di Adobe Campaign. Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
 
 ## Come posso selezionare il pubblico dei miei messaggi? {#how-can-i-select-the-target-population-of-my-messages-}
 
-Con Adobe Campaign, puoi utilizzare strategie diverse per creare audience e selezionare destinatari.
+Con  Adobe Campaign, potete utilizzare strategie diverse per creare audience e selezionare destinatari.
 
 [Fai clic qui per saperne di più](../../delivery/using/steps-defining-the-target-population.md).
 
 ## Che cos’è un flusso di lavoro? {#what-is-a-workflow-}
 
-Adobe Campaign include flussi di lavoro per coordinare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazioni. Questo ambiente grafico completo vi consente di progettare processi che includono segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e tiene traccia di questi processi.
+ Adobe Campaign include flussi di lavoro per coordinare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazioni. Questo ambiente grafico completo vi consente di progettare processi che includono segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e tiene traccia di questi processi.
 
-Puoi utilizzare un flusso di lavoro, ad esempio, per scaricare un file da un server, decomprimerlo e importare i record contenuti nel database di Adobe Campaign.
+È possibile utilizzare un flusso di lavoro, ad esempio per scaricare un file da un server, decomprimerlo e quindi importare i record contenuti nel database Adobe Campaign .
 
 Un flusso di lavoro può coinvolgere anche uno o più operatori ai quali inviare una notifica o che possono effettuare scelte e approvare processi. In questo modo, è possibile creare un&#39;azione di consegna, assegnare un&#39;attività a uno o più operatori per lavorare sul contenuto, specificare le destinazioni e approvare le prove prima di iniziare la consegna.
 
@@ -92,21 +95,21 @@ Scopri come configurare la piattaforma e inviare messaggi SMS [in questa sezione
 
 ## Come inviare le notifiche push? {#how-to-send-push-notifications-}
 
-Scopri come utilizzare Adobe Campaign per [inviare una notifica](../../delivery/using/creating-notifications.md) push personalizzata ai dispositivi iOS e Android tramite app.
+Scoprite come utilizzare l&#39;Adobe Campaign  per [inviare una notifica](../../delivery/using/creating-notifications.md) push personalizzata ai dispositivi iOS e Android tramite app.
 
 ## Come progettare e condividere un sondaggio online? {#how-to-design-and-share-an-online-survey-}
 
-Scopri come [creare un sondaggio](../../web/using/getting-started-with-surveys.md)online, con i passaggi chiave per progettarlo e pubblicarlo con Campaign Classic.
+Scopri come [creare un sondaggio](../../web/using/getting-started-with-surveys.md)online, con i passaggi chiave per progettarlo e pubblicarlo con i Campaign Classic.
 
 ## Come creare una pagina di destinazione? {#how-to-create-landing-page-}
 
-Puoi utilizzare l&#39;editor di contenuti digitali di Adobe Campaign per progettare una pagina di destinazione e definire la mappatura con i campi del database.
+È possibile utilizzare  editor di contenuti digitali Adobe Campaign per progettare una pagina di destinazione e definire la mappatura con i campi del database.
 
 [Fai clic qui per saperne di più](../../web/using/creating-a-landing-page.md).
 
 ## Come posso tenere traccia delle consegne? {#how-can-i-track-deliveries-}
 
-Puoi tenere traccia delle consegne inviate con Campaign Classic tramite report [di](../../reporting/using/delivery-reports.md) consegna dedicati e quindi monitorare le consegne.
+Puoi tenere traccia delle consegne inviate con Campaign Classic tramite rapporti [di](../../reporting/using/delivery-reports.md) consegna dedicati e quindi monitorare le consegne.
 
 Ulteriori informazioni sulla gestione del tracciamento in Campaign in [questa pagina](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
@@ -116,7 +119,7 @@ Leggi l&#39;elenco [di controllo della configurazione di](https://helpx.adobe.co
 
 ## Come tradurre un messaggio di errore? {#how-to-translate-an-error-message-}
 
-Viene visualizzato un messaggio di errore in una lingua straniera? Tutti i messaggi di errore e la relativa traduzione sono elencati in [questa pagina](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html).
+Viene visualizzato un messaggio di errore in una lingua straniera? Tutti i messaggi di errore e la relativa traduzione sono elencati in [questa pagina](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html).
 
 ## Posso creare un modulo Web e raccogliere le risposte in Campaign? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
@@ -124,12 +127,12 @@ Come [creare un modulo](../../web/using/about-web-forms.md)Web: progettare, veri
 
 ## Esiste un elenco di funzioni e versioni obsolete? {#is-there-a-list-of-deprecated-features-and-versions-}
 
-Adobe valuta costantemente le capacità del prodotto e dei piani temporali per sostituire le funzionalità con versioni più potenti, oppure decide di reimplementare parti selezionate per prepararsi meglio alle aspettative future o alle estensioni. Poiché Campaign funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate.
+ Adobe valuta costantemente le capacità del prodotto e nel tempo pianifica di sostituire le funzionalità con versioni più potenti, o decide di reimplementare parti selezionate per essere meglio preparate per future aspettative o estensioni. Poiché Campaign funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate.
 
 [Fai clic qui per saperne di più](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html).
 
 ## Sono disponibili nuovi aggiornamenti alla documentazione e materiali di aiuto? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Gli ultimi aggiornamenti della documentazione di Campaign Classic sono elencati [in questa pagina](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
+Gli ultimi aggiornamenti della documentazione Campaign Classic sono elencati [in questa pagina](https://docs.adobe.com/content/help/en/campaign-classic/using/documentation-updates.html).
 
 È inoltre possibile fare riferimento alle note tecniche più recenti elencate [in questa pagina](https://helpx.adobe.com/campaign/kb/article-list.html).
