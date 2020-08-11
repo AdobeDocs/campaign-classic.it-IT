@@ -1,7 +1,7 @@
 ---
-title: Riconoscimento della gestione della quarantena
-seo-title: Riconoscimento della gestione della quarantena
-description: Riconoscimento della gestione della quarantena
+title: Informazioni sulla gestione della quarantena
+seo-title: Informazioni sulla gestione della quarantena
+description: Informazioni sulla gestione della quarantena
 seo-description: null
 page-status-flag: never-activated
 uuid: 9421e26c-bdcc-4588-8e44-fa6f31051081
@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 0%
+source-wordcount: '2576'
+ht-degree: 13%
 
 ---
 
 
-# Riconoscimento della gestione della quarantena{#understanding-quarantine-management}
+# Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
 
-## Informazioni sulle quarantena {#about-quarantines}
+## Informazioni sulla quarantena {#about-quarantines}
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
@@ -33,41 +33,41 @@ ht-degree: 0%
 >
 >Questa sezione si applica ai canali online: email, SMS, notifica push.
 
-### Ottimizzazione della distribuzione tramite quarantena {#optimizing-your-delivery-through-quarantines}
+### Ottimizzazione della consegna tramite quarantena {#optimizing-your-delivery-through-quarantines}
 
-I profili i cui indirizzi e-mail o numero di telefono si trovano in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedere [Identificazione degli indirizzi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). Ciò velocizzerà le consegne, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
+I profili con indirizzi e-mail o numeri di telefono in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedi [Identificazione degli indirizzi messi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
 
-Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare che questi provider vengano aggiunti a un elenco di blocchi.
+Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare di essere aggiunta a un elenco Bloccati  da parte di questi fornitori.
 
-Inoltre, le quarantena contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](../../delivery/using/delivery-best-practices.md) .
 
-### Elenco quarantena e blocchi {#quarantine-vs-block-list}
+### Quarantena e elenco Bloccati  {#quarantine-vs-block-list}
 
-**La quarantena** si applica solo a un indirizzo, non al profilo stesso. Ciò significa che, se due profili hanno lo stesso indirizzo e-mail, saranno entrambi interessati se l&#39;indirizzo viene messo in quarantena.
+La **quarantena** si applica solo a un indirizzo, non a tutto il profilo. Ciò significa che se due profili hanno lo stesso indirizzo e-mail, vengono entrambi coinvolti se l’indirizzo viene messo in quarantena.
 
-Allo stesso modo, un profilo il cui indirizzo e-mail è stato messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo, e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
+Allo stesso modo, un profilo con un indirizzo e-mail messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
 
-Se ci si trova nell&#39;elenco **dei** blocchi, d&#39;altro canto, il profilo non verrà più mirato da alcuna consegna, ad esempio dopo un annullamento dell&#39;iscrizione (opzione di rifiuto).
-
->[!NOTE]
->
->Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene aggiunto all&#39;elenco dei blocchi come nel processo di rifiuto dell&#39;e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
-
-## Identificazione degli indirizzi in quarantena {#identifying-quarantined-addresses}
-
-Gli indirizzi in quarantena possono essere elencati per una consegna specifica o per l&#39;intera piattaforma.
-
-### Identificazione di indirizzi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
-
-Gli indirizzi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (vedere i registri di [consegna e la cronologia](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
-
-### Identificazione degli indirizzi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
-
-Gli amministratori possono elencare gli indirizzi in quarantena per l&#39;intera piattaforma dal **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Questo menu elenca gli elementi in quarantena per i canali di **e-mail**, **SMS** e notifiche **** push.
+>Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene aggiunto al elenco Bloccati  come nel processo di rifiuto dell&#39;e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
+
+## Identificazione degli indirizzi messi in quarantena {#identifying-quarantined-addresses}
+
+È possibile elencare gli indirizzi messi in quarantena per una consegna specifica o per l’intera piattaforma.
+
+### Identificazione di indirizzi messi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
+
+Quarantined addresses for a specific delivery are listed during the delivery preparation phase, in the delivery logs of the delivery dashboard (see [Delivery logs and history](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
+
+### Identificazione degli indirizzi messi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
+
+Administrators can list the addresses in quarantine for the entire platform from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
+
+>[!NOTE]
+>
+>Questo menu elenca gli elementi messi in quarantena per i canali **e-mail**, **SMS** e di **notifiche push**.
 
 Per ogni indirizzo sono disponibili le seguenti informazioni:
 
@@ -94,7 +94,7 @@ I seguenti rapporti forniscono informazioni sugli indirizzi in quarantena:
 
 Puoi cercare queste informazioni per tutte le consegne della piattaforma (**[!UICONTROL Home page > Reports]**) o per una consegna specifica. Potete anche creare rapporti personalizzati e selezionare le informazioni da visualizzare.
 
-### Identificazione di indirizzi in quarantena per un destinatario {#identifying-quarantined-addresses-for-a-recipient}
+### Identifying quarantined addresses for a recipient {#identifying-quarantined-addresses-for-a-recipient}
 
 Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A tal fine, selezionate il profilo del destinatario e fate clic sulla **[!UICONTROL Deliveries]** scheda. Per tutte le consegne a quel destinatario, potete verificare se l&#39;indirizzo ha avuto esito negativo, è stato messo in quarantena durante l&#39;analisi, ecc. Per ogni cartella, potete visualizzare solo i destinatari il cui indirizzo e-mail è in quarantena. A questo scopo, utilizzate il filtro **[!UICONTROL Quarantined email address]** applicazione.
 
@@ -125,19 +125,19 @@ Il loro stato diventa **[!UICONTROL Valid]**.
 >[!IMPORTANT]
 I destinatari con un indirizzo **[!UICONTROL Quarantine]** o **[!UICONTROL On block list]** uno stato non verranno mai rimossi, anche se ricevono un&#39;e-mail.
 
-È possibile modificare il numero di errori e il periodo compreso tra due errori. A questo scopo, modificate le impostazioni corrispondenti nella procedura guidata di distribuzione (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Per ulteriori informazioni sulla procedura guidata di distribuzione, consulta [questa sezione](../../installation/using/deploying-an-instance.md).
+È possibile modificare il numero di errori e il periodo compreso tra due errori. A questo scopo, modificate le impostazioni corrispondenti nella procedura guidata di distribuzione (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
-## Condizioni per l&#39;invio di un indirizzo alla quarantena {#conditions-for-sending-an-address-to-quarantine}
+## Condizioni per la messa in quarantena di un indirizzo {#conditions-for-sending-an-address-to-quarantine}
 
- Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (vedere Qualificazione [posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)rimbalzata) e ai tipi e ai motivi [di mancata](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)consegna.
+ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (vedere Qualificazione [posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)rimbalzata) e ai tipi e motivi [di mancata](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)consegna.
 
-* **Errore** ignorato: gli errori ignorati non inviano un indirizzo alla quarantena.
-* **Errore** rigido: l&#39;indirizzo e-mail corrispondente viene inviato immediatamente alla quarantena.
-* **Errore** temporaneo: gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consultate Gestione [rapida degli errori](#soft-error-management).
+* **Errore ignorato**: gli errori ignorati non mettono un indirizzo in quarantena.
+* **Errore rigido**: l’indirizzo e-mail corrispondente viene messo immediatamente in quarantena.
+* **Errore morbido**: gli errori morbidi non mettono immediatamente un indirizzo in quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consultate Gestione [rapida degli errori](#soft-error-management).
 
-Se un utente qualifica un&#39;e-mail come spam ([Feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop)), il messaggio viene automaticamente reindirizzato verso una cassetta postale tecnica gestita da Adobe. L&#39;indirizzo e-mail dell&#39;utente viene quindi inviato automaticamente alla quarantena.
+If a user qualifies an email as a spam ([Feedback loop](../../delivery/using/technical-recommendations.md#feedback-loop)), the message is automatically redirected towards a technical mailbox managed by Adobe. L&#39;indirizzo e-mail dell&#39;utente viene quindi inviato automaticamente alla quarantena.
 
-Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. La quarantena nel Adobe Campaign  fa distinzione tra maiuscole e minuscole. Accertatevi di importare gli indirizzi e-mail in lettere maiuscole, in modo che non vengano ritirati in un secondo momento.
+Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reason]** campo indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -146,8 +146,8 @@ Nell&#39;elenco degli indirizzi posti in quarantena, il **[!UICONTROL Error reas
 Invece di errori gravi, gli errori software non inviano immediatamente un indirizzo alla quarantena, ma incrementano un contatore di errori.
 
 * Quando il contatore di errori raggiunge la soglia limite, l&#39;indirizzo viene messo in quarantena.
-* Nella configurazione predefinita, la soglia è impostata su cinque errori, dove due errori sono significativi se si verificano almeno 24 ore di differenza. L&#39;indirizzo viene messo in quarantena al quinto errore.
-* È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, vedere [Riprova dopo un errore](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)temporaneo di consegna.
+* Nella configurazione predefinita, la soglia è impostata a cinque errori, dove due errori sono significativi se si verificano almeno a 24 ore di distanza. L’indirizzo viene messo in quarantena al quinto errore.
+* È possibile modificare la soglia del contatore di errori. For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Il contatore di errori viene reinizializzato se l&#39;ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo diventa **Valido** e viene eliminato dall&#39;elenco delle quarantena dal flusso di lavoro di pulizia **del** database.
 
@@ -161,7 +161,7 @@ Gli elementi messi in quarantena sono token dispositivo.
 
 **Per iOS - connettore binario**
 
-Per ogni notifica,  Adobe Campaign riceve gli errori sincroni e asincroni dal server APNS. Per i seguenti errori sincroni,  Adobe Campaign genera errori soft:
+Per ogni notifica,  Adobe Campaign riceve gli errori sincroni e asincroni dal server APNS. Per i seguenti errori sincroni,  Adobe Campaign genera errori software:
 
 * Problemi di lunghezza del payload: nessun tentativo, il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
 * Problemi di scadenza del certificato: nessun tentativo, il motivo dell&#39;errore è **[!UICONTROL Unreachable]**.
@@ -265,7 +265,7 @@ Sincrona, se APNS restituisce uno stato &quot;non registrato&quot; per un messag
 
 **Per Android V1**
 
-Per ogni notifica,  Adobe Campaign riceve gli errori sincroni direttamente dal server FCM. La campagna Adobe li gestisce al volo e genera errori rigidi o soft in base alla gravità dell&#39;errore e è possibile eseguire dei tentativi:
+Per ogni notifica,  Adobe Campaign riceve gli errori sincroni direttamente dal server FCM.  campagna di Adobe li gestisce al volo e genera errori rigidi o morbidi in base alla gravità dell&#39;errore e i tentativi possono essere eseguiti:
 
 * Lunghezza payload superata, problema di connessione, problema di disponibilità del servizio: tentativi eseguiti, errore software, motivo errore **[!UICONTROL Refused]**.
 * Quota dispositivo superata: nessun tentativo, errore soft, motivo di errore **[!UICONTROL Refused]**.
@@ -281,11 +281,11 @@ Per i clienti che utilizzano il connettore Baidu, ecco i diversi tipi di errori:
 * Connessione persa durante la consegna: errore soft, motivo errore **[!UICONTROL Refused]**, riprovate.
 * Errore sincrono restituito da Baidu durante l&#39;invio: errore, motivo errore **[!UICONTROL Refused]** e non si esegue alcun tentativo.
 
- Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i log di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei log è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
+ Adobe Campaign contatta il server di Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei log è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
-Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1, lo stesso vale per l&#39;aggiornamento delle sottoscrizioni e delle esclusioni. Per ulteriori informazioni, consulta la sezione [Android V1](#android-quarantine) .
+Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1, lo stesso vale per l&#39;aggiornamento delle sottoscrizioni e delle esclusioni. For more on this refer to the [Android V1](#android-quarantine) section.
 
 <table> 
  <tbody> 
@@ -429,7 +429,7 @@ Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito u
 Prima che un nuovo tipo di errore sia qualificato, il motivo dell&#39;errore è sempre impostato su **Rifiutato** per impostazione predefinita.
 
 >[!NOTE]
-I tipi di errore e i motivi dell&#39;errore sono gli stessi utilizzati per le e-mail. Consulta Tipi di [consegna non riuscita e motivi](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I tipi di errore e i motivi dell&#39;errore sono gli stessi utilizzati per le e-mail. See [Delivery failure types and reasons](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Chiedete al vostro fornitore un elenco di stati e codici di errore al fine di impostare i tipi di errore e i motivi corretti per l&#39;errore nella tabella delle qualifiche del registro di consegna.
 
 Esempio di messaggio generato:
@@ -439,13 +439,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Tutti i messaggi di errore iniziano con **SR** per distinguere i codici di errore SMS dai codici di errore email.
-* La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell&#39;implementazione SMSC, come definito nel **[!UICONTROL SMSC implementation name]** campo dell&#39;account esterno SMS. Vedere [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell&#39;implementazione SMSC, come definito nel **[!UICONTROL SMSC implementation name]** campo dell&#39;account esterno SMS. Consulta [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Poiché lo stesso codice di errore può avere un significato diverso per ciascun provider, questo campo consente di sapere quale provider ha generato il codice di errore. L&#39;errore può essere trovato nella documentazione del fornitore pertinente.
 
 * La terza parte (**DELIVRD** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dalla SR utilizzando il regex di estrazione dello stato definito nell&#39;account esterno di SMS.
 
-   Questo regex è specificato nella **[!UICONTROL SMSC specificities]** scheda dell&#39;account esterno. Vedere [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Questo regex è specificato nella **[!UICONTROL SMSC specificities]** scheda dell&#39;account esterno. Consulta [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -453,7 +453,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * La quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dalla SR utilizzando il regex di estrazione del codice di errore definito nell&#39;account esterno di SMS.
 
-   Questo regex è specificato nella **[!UICONTROL SMSC specificities]** scheda dell&#39;account esterno. Vedere [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Questo regex è specificato nella **[!UICONTROL SMSC specificities]** scheda dell&#39;account esterno. Consulta [questa pagina](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Per impostazione predefinita, il regex estrae l’ **errore:** come definito nella sezione **Appendice B** della specifica **** SMPP 3.4.
 
