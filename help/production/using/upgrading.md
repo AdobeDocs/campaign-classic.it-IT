@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1122'
+ht-degree: 0%
 
 ---
 
 
 # Aggiornamento{#upgrading}
 
-Prima di avviare il processo di aggiornamento, determina e conferma quale versione di Adobe Campaign verrà aggiornata e consulta le [Note](https://docs.campaign.adobe.com/doc/AC/en/RN.html)sulla versione.
+Prima di avviare il processo di aggiornamento, determinare e confermare la versione di  Adobe Campaign in fase di aggiornamento e consultare le [Note](../../rn/using/latest-release.md) sulla versione.
 
 >[!CAUTION]
 >
@@ -31,14 +34,14 @@ Prima di avviare il processo di aggiornamento, determina e conferma quale versio
 
 >[!NOTE]
 >
->Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) build.
+>Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) build.
 
 ## In Windows {#in-windows}
 
-Per aggiornare Adobe Campaign in una nuova versione al momento della distribuzione di una nuova build, in Windows dovrebbe essere applicata la seguente procedura:
+Per aggiornare  Adobe Campaign in una nuova versione al momento della distribuzione di una nuova build, in Windows dovrebbe essere applicata la seguente procedura:
 
-* [servizi](#shut-down-services)di arresto,
-* [Aggiorna l’applicazione](#upgrade-the-adobe-campaign-server-application)server Adobe Campaign,
+* [Arrestare i servizi](#shut-down-services),
+* [Aggiornare l&#39;applicazione](#upgrade-the-adobe-campaign-server-application)server Adobe Campaign ,
 * [Sincronizzare le risorse](#synchronize-resources),
 * [Riavviate i servizi](#restart-services).
 
@@ -54,7 +57,7 @@ Per sostituire tutti i file con la nuova versione, è necessario chiudere tutte 
 
       **iisreset /stop**
 
-   * Servizio Adobe Campaign: Net Stop Server6 ****
+   *  servizio Adobe Campaign: **net stop nlserver6**
    >[!CAUTION]
    >
    >È inoltre necessario assicurarsi che il server di reindirizzamento (webmdl) sia arrestato, in modo che il file **nlsrvmod.dll** utilizzato da IIS possa essere sostituito con la nuova versione.
@@ -69,17 +72,17 @@ Per sostituire tutti i file con la nuova versione, è necessario chiudere tutte 
 
    È possibile utilizzare Task Manager di Windows per verificare che tutti i processi siano interrotti.
 
-### Aggiornamento dell’applicazione server Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
+### Aggiornamento dell&#39;applicazione server Adobe Campaign  {#upgrade-the-adobe-campaign-server-application}
 
 Per eseguire il file di aggiornamento, procedere come segue:
 
 1. Eseguire **setup.exe**.
 
-   Per scaricare questo file, vai alla pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
+   Per scaricare questo file, accedete alla  pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
 
 1. Selezionate la modalità di installazione: scegli **[!UICONTROL Update or repair]**
-1. Clic **[!UICONTROL Next]** .
-1. Clic **[!UICONTROL Finish]** .
+1. Fai clic su **[!UICONTROL Next]** .
+1. Fai clic su **[!UICONTROL Finish]** .
 
    Il programma di installazione copia quindi i nuovi file.
 
@@ -111,11 +114,11 @@ I servizi da riavviare sono:
 
    **iisreset /start**
 
-* Servizio Adobe Campaign: Net start nlserver6 ****
+*  servizio Adobe Campaign: **net start nlserver6**
 
 ## In Linux {#in-linux}
 
-Per aggiornare Adobe Campaign in una nuova versione quando viene consegnata una nuova build, la procedura per Linux è la seguente:
+Per aggiornare  Adobe Campaign in una nuova versione quando viene consegnata una nuova build, la procedura per Linux è la seguente:
 
 * [Ottenere pacchetti](#obtain-updated-packages)aggiornati,
 * [Eseguire un aggiornamento](#perform-an-update),
@@ -129,7 +132,7 @@ Per informazioni su come aggiornare la console client, consulta [questa sezione]
 
 ### Ottenere pacchetti aggiornati {#obtain-updated-packages}
 
-Inizia recuperando entrambi i pacchetti aggiornati di Adobe Campaign: vai alla pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
+Iniziate recuperando entrambi i pacchetti aggiornati di  Adobe Campaign: andate alla  pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
 
 Il file è **nlserver6-v7-XXX.rpm**
 
@@ -178,6 +181,7 @@ A questo scopo, eseguite il comando seguente:
 >* Lo script potrebbe essere denominato **httpd** invece di **apache**.
 >* È NECESSARIO eseguire questo comando fino a ottenere la seguente risposta:
    >Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
+
 >
 
 
@@ -209,19 +213,19 @@ Esistono due modi per visualizzare il risultato della sincronizzazione:
 
    Se l&#39;avviso riguarda un conflitto di risorse, è necessario prestare attenzione alla risoluzione del problema.
 
-* Il file di registro **postupgrade_`<server version number>_<time of postupgrade>`.log** contiene il risultato della sincronizzazione. È disponibile per impostazione predefinita nella seguente directory: **`<installation directory>/var/<instance/postupgrade`**. Errori e avvisi sono indicati dagli attributi di errore e avviso.
+* Il file di registro **postupgrade_`<server version number>_<time of postupgrade>`.log** contiene il risultato della sincronizzazione. È disponibile per impostazione predefinita nella seguente directory: **`<installation directory>/var/<instance/postupgrade`**. Gli errori e gli avvisi sono indicati dagli attributi di errore e avviso.
 
 ### Risoluzione dei conflitti {#resolving-conflicts}
 
 Per risolvere i conflitti, eseguire il seguente processo:
 
-1. Nell&#39;albero di Adobe Campaign, vai a **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. Nella struttura  Adobe Campaign, andate a **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
 1. Selezionare il conflitto da risolvere nell&#39;elenco.
 
 Esistono tre modi per risolvere un conflitto:
 
 * **[!UICONTROL Declare as resolved]** : richiede l&#39;intervento preventivo dell&#39;utente.
-* **[!UICONTROL Accept the new version]** : consigliato se le risorse fornite con Adobe Campaign non sono state modificate dall&#39;utente.
+* **[!UICONTROL Accept the new version]** : consigliato se le risorse fornite con  Adobe Campaign non sono state modificate dall&#39;utente.
 * **[!UICONTROL Keep the current version]** : indica che l&#39;aggiornamento viene rifiutato.
 
    >[!CAUTION]
@@ -251,13 +255,13 @@ Ad esempio, un database unicode non deve solo autorizzare la memorizzazione di d
 
 ### In Windows {#in-windows-1}
 
-Nel computer in cui è installato il server applicazione (**server Web**) Adobe Campaign, scarica e copia il file
+Nel computer in cui è installato (**server Web**)  server applicazioni Adobe Campaign, scaricate e copiate il file
 
 **setup-client-6.** XXXX **.exe**
 
 in **[percorso dell&#39;applicazione]**datakitnlunjsp
 
-Alla successiva connessione delle console client, una finestra informa gli utenti della disponibilità di un aggiornamento e offre loro la possibilità di scaricarlo e installarlo.
+Alla successiva connessione delle console client, una finestra informerà gli utenti della disponibilità di un aggiornamento e offrirà loro la possibilità di scaricarlo e installarlo.
 
 >[!NOTE]
 >
@@ -265,7 +269,7 @@ Alla successiva connessione delle console client, una finestra informa gli utent
 
 ### In Linux {#in-linux-1}
 
-Nel computer in cui è installato il server applicazione Adobe Campaign (**nlserver web**), ottieni il pacchetto seguente:
+Nel computer in cui è installato  server applicazioni Adobe Campaign (**server Web**), recuperate il pacchetto seguente:
 
 **setup-client-6.** XXXX **.exe**
 
@@ -275,7 +279,7 @@ e copiarlo, salvandolo come **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
-Alla successiva connessione delle console client, una finestra informa gli utenti della disponibilità di un aggiornamento e offre loro la possibilità di scaricarlo e installarlo.
+Alla successiva connessione delle console client, una finestra informerà gli utenti della disponibilità di un aggiornamento e offrirà loro la possibilità di scaricarlo e installarlo.
 
 >[!NOTE]
 >
