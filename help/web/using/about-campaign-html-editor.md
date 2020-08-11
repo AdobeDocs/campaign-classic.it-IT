@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 
 # Informazioni sull&#39;editor HTML di Campaign{#about-campaign-html-editor}
 
-DCE ( **Digital Content Editor)** è un editor di contenuti HTML che consente di creare o modificare facilmente modelli o contenuti in formato HTML in Adobe Campaign.
+DCE ( **Digital Content Editor)** è un editor di contenuti HTML che consente di creare o modificare facilmente modelli o contenuti in formato HTML all&#39;interno  Adobe Campaign.
 
 Digital Content Editor consente di inserire e formattare elementi di pagina e di associare campi di database agli elementi di una pagina HTML. Per impostazione predefinita, questa opzione è disponibile quando si crea una pagina per un&#39;applicazione Web o quando si creano consegne basate su un modello in cui è attiva.
 
@@ -60,7 +63,7 @@ Per creare una consegna tramite e-mail, effettuate le seguenti operazioni:
 * Creare una consegna da un modello di tipo e-mail in cui il DCE è attivo,
 * Selezionate il contenuto esistente o create il contenuto da un modello standard,
 * Modifica e configurazione di contenuti online,
-* Invia la consegna, per ulteriori informazioni, consulta [questa sezione](../../delivery/using/communication-channels.md).
+* Invia la consegna, per ulteriori informazioni, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
