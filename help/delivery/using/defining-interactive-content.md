@@ -1,6 +1,6 @@
 ---
-title: Definizione di contenuto interattivo in  Adobe Campaign Classic
-description: Scoprite come definire contenuti e-mail interattivi e dinamici con AMP in  Adobe Campaign Classic.
+title: Definizione di contenuti interattivi in Adobe Campaign Classic
+description: Scoprite come definire contenuti e-mail interattivi e dinamici con AMP in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Definizione del contenuto interattivo{#defining-interactive-content}
 
- Adobe Campaign consente di provare il nuovo formato [AMP interattivo per e-mail](https://amp.dev/about/email/) , che consente di inviare e-mail dinamiche, a determinate condizioni.
+ Adobe Campaign consente di provare il nuovo formato [AMP per e-mail](https://amp.dev/about/email/) interattivo, che consente di inviare e-mail dinamiche, a determinate condizioni.
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,9 @@ Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign.
 
 Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, incluso il server [](../../installation/using/mid-sourcing-server.md) mid-sourcing e l&#39;istanza [di](../../message-center/using/creating-a-shared-connection.md#execution-instance)esecuzione. Contattate il vostro responsabile commerciale.
 
-Guardate questo [video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html) per vedere come attivare AMP in  Adobe Campaign e per saperne di più sull’utilizzo.
+Il video seguente spiega come attivare AMP in Adobe Campaign Classic e ne illustra l’utilizzo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## Informazioni su AMP per e-mail {#about-amp-for-email}
 
@@ -58,7 +60,7 @@ Per ulteriori informazioni su formato e specifiche dell&#39;e-mail AMP, consulta
 
 ## Passaggi chiave per utilizzare AMP per e-mail con  Adobe Campaign {#key-steps-to-use-amp}
 
-Per testare e inviare correttamente un messaggio e-mail AMP con  Adobe Campaign, effettuate le seguenti operazioni:
+Per testare e inviare correttamente un&#39;e-mail AMP con  Adobe Campaign, segui la procedura seguente:
 1. Installate il **[!UICONTROL AMP support (Beta)]** pacchetto. Consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)standard di Campaign.
 1. Create un&#39;e-mail e create il contenuto AMP all&#39;interno  Adobe Campaign. Consultate [Creare contenuto e-mail AMP con  Adobe Campaign](#build-amp-email-content).
 1. Accertatevi di rispettare tutti i requisiti di consegna dai provider di posta elettronica che supportano il formato AMP. Consultate [AMP per i requisiti](#amp-for-email-delivery-requirements)di distribuzione e-mail.
@@ -99,7 +101,7 @@ Per creare un&#39;e-mail utilizzando il formato AMP, segui i passaggi descritti 
    >
    >Per ulteriori informazioni sulla creazione della prima e-mail AMP, consulta la documentazione [per gli sviluppatori](https://amp.dev/documentation/guides-and-tutorials/start/create_email/?format=email)AMP.
 
-   Ad esempio, potete utilizzare il componente elenco prodotti dal modello AMP e mantenere un elenco di prodotti da un sistema di terze parti, o anche all’interno  Adobe Campaign. Ogni volta che regolate un prezzo o un altro elemento, questo verrà riflesso automaticamente quando il destinatario riapre l&#39;e-mail dalla propria cassetta postale.
+   Ad esempio, potete utilizzare il componente elenco prodotti dal modello AMP e mantenere un elenco di prodotti da un sistema di terze parti, o anche all&#39;interno  Adobe Campaign. Ogni volta che regolate un prezzo o un altro elemento, questo verrà riflesso automaticamente quando il destinatario riapre l&#39;e-mail dalla propria cassetta postale.
 
 1. Personalizzate i contenuti AMP in base alle vostre esigenze, come fareste di solito con il formato HTML in  Adobe Campaign, con campi di personalizzazione e blocchi di personalizzazione.
 
@@ -117,7 +119,7 @@ Per creare un&#39;e-mail utilizzando il formato AMP, segui i passaggi descritti 
 
    >[!NOTE]
    >
-   >L&#39;editor AMP  Adobe Campaign non è progettato per la convalida del contenuto. Utilizzate un sito Web esterno, ad esempio il validatore [basato su Web](https://validator.ampproject.org) AMP, per verificare che il contenuto sia corretto.
+   >L&#39;editor  Adobe Campaign AMP non è progettato per la convalida del contenuto. Utilizzate un sito Web esterno, ad esempio il validatore [basato su Web](https://validator.ampproject.org) AMP, per verificare che il contenuto sia corretto.
 
 1. Apportate le modifiche necessarie finché il contenuto AMP non supera la convalida.
 
@@ -133,9 +135,9 @@ Per creare un&#39;e-mail utilizzando il formato AMP, segui i passaggi descritti 
 
    >[!NOTE]
    >
-   >Non potete visualizzare l&#39;anteprima del contenuto AMP direttamente  Adobe Campaign. Utilizzate un sito Web esterno, ad esempio [AMP Playground](https://playground.amp.dev).
+   >Non potete visualizzare l&#39;anteprima del contenuto AMP direttamente in  Adobe Campaign. Utilizzate un sito Web esterno, ad esempio [AMP Playground](https://playground.amp.dev).
 
-1. Tornate  Adobe Campaign e copiate e incollate il contenuto convalidato nella **[!UICONTROL AMP content]** scheda.
+1. Tornate  Adobe Campaign e incollate i contenuti convalidati nella **[!UICONTROL AMP content]** scheda.
 
 1. Passate alla **[!UICONTROL HTML content]** scheda o **[!UICONTROL Text content]** e definite il contenuto per almeno uno di questi due formati.
 
@@ -162,8 +164,8 @@ Potete inoltre consultare i [suggerimenti e le limitazioni note per Gmail](https
 
 AMP per e-mail essendo disponibile come funzionalità beta, al momento è possibile provare a inviare un&#39;e-mail AMP in due passaggi:
 
-1.  Adobe Campaign consente di verificare la distribuzione di un messaggio e-mail dinamico basato su AMP a indirizzi e-mail selezionati configurati in modo appropriato, al fine di verificarne il contenuto e il comportamento. Consultate [Verifica della consegna di e-mail AMP per gli indirizzi](#testing-amp-delivery-for-selected-addresses)selezionati.
-1. Una volta verificato, è possibile inviare una consegna o una campagna come parte del programma AMP per la versione beta dell&#39;e-mail registrandosi presso i provider di posta elettronica interessati per fare in modo che il dominio del mittente venga aggiunto all&#39;elenco di indirizzi consentiti. Consultate [Distribuzione di e-mail AMP tramite registrazione presso un provider](#delivering-amp-emails-by-registering)di posta elettronica.
+1.  Adobe Campaign consente di testare la distribuzione di un&#39;e-mail dinamica basata su AMP a indirizzi e-mail selezionati configurati in modo appropriato, al fine di verificarne il contenuto e il comportamento. Consultate [Verifica della consegna di e-mail AMP per gli indirizzi](#testing-amp-delivery-for-selected-addresses)selezionati.
+1. Una volta verificato, è possibile inviare una consegna o una campagna come parte del programma AMP per la versione beta dell&#39;e-mail registrandosi presso i provider di posta elettronica interessati per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti . Consultate [Distribuzione di e-mail AMP tramite registrazione presso un provider](#delivering-amp-emails-by-registering)di posta elettronica.
 
 ### Verifica della consegna di e-mail AMP per gli indirizzi selezionati {#testing-amp-delivery-for-selected-addresses}
 
@@ -173,7 +175,7 @@ AMP per e-mail essendo disponibile come funzionalità beta, al momento è possib
 >
 >Attualmente solo Gmail, Outlook e Mail.ru supportano il test del formato AMP.
 
-Per Gmail e Outlook, è innanzitutto necessario aggiungere gli indirizzi del mittente che si sta utilizzando nell&#39;elenco Consenti da distribuire  Adobe Campaign per gli account Gmail e Outlook di destinazione.
+Per Gmail e Outlook, è innanzitutto necessario aggiungere gli indirizzi del mittente che si sta utilizzando al elenco consentiti  per distribuire da  Adobe Campaign per gli account Gmail e Outlook di destinazione.
 
 Per eseguire questa operazione:
 1. Verificate che l&#39;opzione che attiva l&#39;e-mail dinamica sia selezionata per i provider e-mail pertinenti.
@@ -187,7 +189,7 @@ Per testare l&#39;invio di un&#39;e-mail AMP a un indirizzo Mail.ru, seguite i p
 
 ### Distribuzione di e-mail AMP tramite registrazione presso un provider di posta elettronica {#delivering-amp-emails-by-registering}
 
-È possibile provare a distribuire e-mail dinamiche registrandosi presso i provider di posta elettronica che partecipano al programma beta AMP per fare in modo che il dominio del mittente venga aggiunto all&#39;elenco di indirizzi consentiti.
+È possibile provare a distribuire e-mail dinamiche registrandosi presso i provider di posta elettronica che partecipano al programma beta di AMP per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti .
 
 >[!NOTE]
 >
