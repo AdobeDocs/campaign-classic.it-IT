@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 # Matrice di compatibilità{#compatibility-matrix}
 
-In questo documento sono elencati tutti i sistemi e i componenti supportati per la versione più recente di **Adobe Campaign Classic (v6.11 e v7)**. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con  Adobe Campaign.
+Questo documento elenca tutti i sistemi e i componenti supportati per la build più recente di **Adobe Campaign Classic (v6.11 e v7)**. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con  Adobe Campaign.
 
 ## Note importanti{#important-notes}
 
@@ -31,7 +31,7 @@ Questa matrice viene regolarmente aggiornata con l&#39;aggiunta di nuovi element
 
 Salvo diversa indicazione, sono supportate tutte le versioni minori.
 
- Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Poiché versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori,  Adobe Campaign non sarà più compatibile con tali versioni e saranno rimossi dalla nostra matrice di compatibilità nella successiva release del prodotto. Verificare di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
+Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Poiché versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori,  Adobe Campaign non sarà più compatibile con tali versioni e saranno rimossi dalla nostra matrice di compatibilità nella release successiva del prodotto. Verificare di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
 
 Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../../rn/using/deprecated-features.md).
 
@@ -159,7 +159,7 @@ Sono supportati i seguenti driver RDBMS:
 <p>9.6.x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>Nota: è inoltre possibile utilizzare Amazon RDS per PostgreSQL con le versioni sopra specificate.</p>
+<p>Nota: è inoltre possibile utilizzare  Amazon RDS per PostgreSQL con le versioni sopra specificate.</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Sono supportati i seguenti driver RDBMS:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Avviso: Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. Fare riferimento alla guida all' <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">installazione</a>.</p>
+<p>Avviso: Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. <a href="https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Ulteriori informazioni</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -217,11 +217,11 @@ Sono supportati i seguenti driver RDBMS:
 <table>
 <tbody>
 <tr>
-<td>Microsoft Azure Synapse  Analytics</td>
+<td>Analisi sinapsi di Microsoft Azure</td>
 <td> </td>
 </tr>
 <tr>
-<td>Amazon Redshift</td>
+<td> Amazon Redshift</td>
 <td><p> </p>
 </td>
 </tr>
@@ -292,7 +292,7 @@ Sono supportati i seguenti driver RDBMS:
 </td>
 </tr>
 <tr>
-<td>Fiocco di neve</td>
+<td>Snowflake </td>
 <td> </td>
 </tr>
 </tbody>
@@ -362,11 +362,11 @@ Per i seguenti browser, è supportata la versione più recente:
 
 ## Integrazioni Experience Cloud{#ExperienceCloudintegrations}
 
-Per le integrazioni con le soluzioni Adobe, consulta questa [sezione](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
+Per le integrazioni con  soluzioni di Adobe, consulta questa [sezione](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
 
 ## Più simile{#Morelikethis}
 
-* [Note sulla versione di Campaign Classic](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/release-notes/latest-release.html)
+* [Note sulla versione Campaign Classic](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/release-notes/latest-release.html)
 * [Guida all&#39;installazione](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
 * [Funzioni e sistemi obsoleti](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 * [Procedura di aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
