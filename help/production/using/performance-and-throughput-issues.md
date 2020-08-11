@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Prima di tutto, verificate di disporre della build più recente installata. In questo modo avrete a disposizione le funzioni e le correzioni di bug più recenti. Per ulteriori informazioni sul contenuto di ciascuna versione, consulta [Note](https://docs.campaign.adobe.com/doc/AC/en/RN.html) sulla versione.
+>Prima di tutto, verificate di disporre della build più recente installata. In questo modo avrete a disposizione le funzioni e le correzioni di bug più recenti. Per ulteriori informazioni sul contenuto di ciascuna versione, consulta [Note](../../rn/using/latest-release.md) sulla versione.
 
 ## Hardware e infrastruttura {#hardware-and-infrastructure}
 
-Le linee guida generali per i requisiti hardware per Campaign Classic locale sono descritte in dettaglio in questo [articolo](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html).
+Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in dettaglio in questo [articolo](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html).
 
 Il team di consulenza può fornire ai clienti ospitati uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Offre inoltre strumenti per la pulizia di dati non necessari. Contattate i team di consulenza o assistenza se avete bisogno di implementare questo strumento. Di seguito sono riportati alcuni elementi importanti da verificare utilizzando questo strumento:
 
@@ -39,20 +39,20 @@ Il team di consulenza può fornire ai clienti ospitati uno strumento che consent
 * Controllare le tabelle con il numero massimo di caratteri jolly. Se queste tabelle vengono utilizzate frequentemente, devono essere svuotate.
 * Il blocco del database può causare l&#39;interruzione dell&#39;invio delle e-mail.
 
-Adobe Campaign offre anche uno [strumento](../../production/using/monitoring-processes.md#manual-monitoring) per verificare l’utilizzo di CPU e RAM. Utilizzate questo strumento e osservate indicatori specifici quali: **Memoria**, **Memoria** Swap, **Disco**, Processi **** Attivi. Se i valori sono troppo alti, puoi provare a ridurre il numero di flussi di lavoro o pianificare l&#39;avvio dei flussi di lavoro in momenti diversi.
+ Adobe Campaign fornisce anche uno [strumento](../../production/using/monitoring-processes.md#manual-monitoring) per controllare l&#39;utilizzo di CPU e RAM. Utilizzate questo strumento e osservate indicatori specifici quali: **Memoria**, **Memoria** Swap, **Disco**, Processi **** Attivi. Se i valori sono troppo alti, puoi provare a ridurre il numero di flussi di lavoro o pianificare l&#39;avvio dei flussi di lavoro in momenti diversi.
 
 ## Prestazioni del database {#database-performances}
 
 Nella maggior parte dei casi, i problemi di prestazioni sono collegati alla manutenzione del database. Gli elementi principali da verificare sono i seguenti:
 
-* Configurazione: è consigliabile verificare la configurazione iniziale della piattaforma Adobe Campaign ed eseguire un controllo hardware completo.
-* Installazione e configurazione della piattaforma Adobe Campaign: controlla la configurazione di rete e le opzioni di recapito della piattaforma.
+* Configurazione: è consigliabile verificare la configurazione iniziale  piattaforma Adobe Campaign ed eseguire un controllo hardware completo.
+* Installazione e configurazione della piattaforma Adobe Campaign : controlla la configurazione di rete e le opzioni di recapito della piattaforma.
 * Manutenzione del database: accertatevi che l&#39;attività di pulizia del database sia operativa e che la manutenzione del database sia pianificata ed eseguita correttamente. Verificare il numero e la dimensione delle tabelle di lavoro.
 * Diagnosi in tempo reale: controllate i file di registro di processo e piattaforma, quindi controllate l&#39;attività del database durante la ricreazione del problema.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta questa sezione: [Prestazioni](../../production/using/database-performances.md)del database.
+>For more information, refer to this section: [Database performances](../../production/using/database-performances.md).
 
 ## Configurazione applicazione {#application-configuration}
 
@@ -75,5 +75,5 @@ Di seguito è riportato un elenco delle best practice e degli articoli relativi 
 
 >[!NOTE]
 >
->Non dimenticare di consultare la guida introduttiva alla [Deliverability](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) .
+>Vedere anche [Sezione Punti](../../delivery/using/deliverability-key-points.md) chiave di recapito.
 
