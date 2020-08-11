@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+workflow-type: tm+mt
+source-wordcount: '1134'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Questa configurazione include tutti i componenti sullo stesso computer:
 * processo applicativo (web),
 * processo di consegna (MTA),
 * processo di reindirizzamento (tracciamento),
-* processo di workflow e attività pianificate (wfserver),
+* processo del flusso di lavoro e attività pianificate (wfserver),
 * processo di posta indesiderata (inMail),
 * processo statistico (stato).
 
@@ -75,7 +78,7 @@ Con la crescita del volume, una variante di questa architettura sposta il server
    * il primo esposto al pubblico per il monitoraggio e l&#39;puntamento al computer sul suo IP pubblico;
    * il secondo alias esposto agli utenti interni per l&#39;accesso alla console e indirizzato allo stesso computer.
 
-* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere Configurazione [](../../installation/using/network-configuration.md)di rete.
+* Firewall configurato per aprire SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere Configurazione [](../../installation/using/network-configuration.md)di rete.
 
 Nei seguenti esempi, i parametri dell&#39;istanza sono:
 
@@ -87,11 +90,11 @@ Nei seguenti esempi, i parametri dell&#39;istanza sono:
 
 Effettuate le seguenti operazioni:
 
-1. Segui la procedura di installazione per il server Adobe Campaign: pacchetto **nlserver** in Linux o **setup.exe** in Windows.
+1. Seguite la procedura di installazione per il server Adobe Campaign : **pacchetto nlserver** in Linux o **setup.exe** in Windows.
 
    Per ulteriori informazioni, consulta [Prerequisiti per l&#39;installazione di Campaign in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Prerequisiti per l&#39;installazione di Campaign in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Una volta installato il server Adobe Campaign, avviate il server applicazione (Web) utilizzando il **server di comando web -tomcat** (il modulo Web consente di avviare Tomcat in modalità server Web standalone in ascolto sulla porta 8080) e di verificare che Tomcat inizi correttamente:
+1. Una volta installato il server Adobe Campaign , avviate il server applicazione (web) utilizzando il **server di comando web -tomcat** (il modulo Web consente di avviare Tomcat in modalità server Web indipendente in ascolto sulla porta 8080) e per assicurarsi che Tomcat avvii correttamente:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -117,7 +120,7 @@ Effettuate le seguenti operazioni:
    nlserver config -internalpassword
    ```
 
-   Per ulteriori informazioni, vedere Identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Create l’istanza **demo** con le maschere DNS per il tracciamento (in questo caso, **tracking.campaign.net**) e l’accesso alle console client (in questo caso, **console.campaign.net**). Esistono due modi per farlo:
 
@@ -155,7 +158,7 @@ Effettuate le seguenti operazioni:
    </serverconf>
    ```
 
-   Per ulteriori informazioni, vedere [Attivare i processi](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Modificate il file **serverConf.xml** e specificate il dominio di consegna, quindi specificate gli indirizzi IP (o host) dei server DNS utilizzati dal modulo MTA per rispondere alle query DNS di tipo MX.
 
@@ -173,8 +176,8 @@ Effettuate le seguenti operazioni:
 
    Per ulteriori informazioni, consulta le sezioni seguenti:
 
-   * Per Linux: Disponibilità della console [client per Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Per Windows: Disponibilità della console [client per Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Per Linux: [Disponibilità della console client per Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Per Windows: [Disponibilità della console client per Windows](../../installation/using/client-console-availability-for-windows.md)
 
 1. Seguite la procedura di integrazione con il server Web (IIS, Apache) descritta nelle sezioni seguenti:
 
@@ -191,14 +194,14 @@ Effettuate le seguenti operazioni:
 
    Per ulteriori informazioni, consulta le sezioni seguenti:
 
-   * Per Linux: Avvio [del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Per Windows: Avvio [del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Linux: [Avvio del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Windows: [Avvio del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Avviate il server Adobe Campaign (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) ed eseguite di nuovo il **pdump** nlserver per verificare la presenza di tutti i moduli abilitati.
+1. Avviate il server Adobe Campaign  (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) ed eseguite di nuovo **nlserver pdump** per verificare la presenza di tutti i moduli abilitati.
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di avvio **del sistema**
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **system start nlserver**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -211,7 +214,7 @@ Effettuate le seguenti operazioni:
    web@default (28671) - 40.5 MB
    ```
 
-   Questo comando consente inoltre di conoscere la versione e il numero di build del server Adobe Campaign installato sul computer.
+   Questo comando consente inoltre di conoscere la versione e il numero di build del server Adobe Campaign  installato sul computer.
 
 1. Verificate il modulo Web **del** server utilizzando l&#39;URL: https://console.campaign.net/nl/jsp/logon.jsp
 
@@ -223,10 +226,10 @@ Effettuate le seguenti operazioni:
 
    Per ulteriori informazioni, consulta le sezioni seguenti:
 
-   * Per Linux: Disponibilità della console [client per Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Per Windows: Disponibilità della console [client per Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Per Linux: [Disponibilità della console client per Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Per Windows: [Disponibilità della console client per Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Avviate la console client Adobe Campaign (dalla pagina di download precedente o avviata direttamente sul server per un&#39;installazione di Windows), impostate l&#39;URL della connessione del server su https://console.campaign.net e collegatevi utilizzando l&#39;accesso **interno** .
+1. Avviate la console client Adobe Campaign  (dalla pagina di download precedente o avviata direttamente sul server per un&#39;installazione di Windows), impostate l&#39;URL della connessione del server su https://console.campaign.net e collegatevi utilizzando l&#39;accesso **interno** .
 
    Fare riferimento a [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md) e all&#39;identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
 
@@ -249,11 +252,11 @@ Effettuate le seguenti operazioni:
    * Invio e-mail: mittente e indirizzi di risposta e la casella di posta di errore per la posta indesiderata.
    * Tracciamento: Compilate l’URL esterno utilizzato per il reindirizzamento e l’URL interno, fate clic su **Registrazione nei server di tracciamento** e convalidatelo nell’istanza **demo** del server di tracciamento.
 
-      Per ulteriori informazioni, consulta Configurazione [](../../installation/using/deploying-an-instance.md#tracking-configuration)tracciamento.
+      For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Poiché il server Adobe Campaign viene utilizzato sia come server applicazione che come server di reindirizzamento, l&#39;URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
+      Poiché il server Adobe Campaign  viene utilizzato sia come server applicazione che come server di reindirizzamento, l’URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
 
    * Gestione rimbalzi: Inserite i parametri per gestire la posta **non elaborata (non tenete conto della sezione Posta** non elaborata).
    * Accesso da: Fornire i due URL per report, moduli Web e pagine mirror.
