@@ -13,23 +13,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 1%
+source-wordcount: '1976'
+ht-degree: 3%
 
 ---
 
 
 # Ultima versione{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** di giugno Pannello di controllo Campaign con monitoraggio profili attivi, controllo della recapito del sottodominio e gestione chiavi GPG. [Ulteriori](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html)informazioni.
+![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** di giugno Pannello di controllo Campaign con monitoraggio profili attivi, controllo della recapito del sottodominio e gestione chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Release 20.2.1 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Release 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _22 luglio 2020_
 
-* È stato risolto un problema che impediva il monitoraggio quando la funzionalità di firma era disabilitata o quando si utilizzava una vecchia istanza di marketing con un identificatore Mid recente. (NEO-26411)
+* È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
 * È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati quando questi dovevano essere consentiti. (NEO-25210)
 * È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook. (NEO-25688)
 * È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail. (NEO-26084)
@@ -51,7 +51,7 @@ _22 luglio 2020_
 
 _8 giugno 2020_
 
-**Novità?**
+**Quali sono le novità?**
 
 <table> 
  <thead> 
@@ -93,9 +93,9 @@ _8 giugno 2020_
   <tr> 
    <td> <p>La Legge per la Protezione dei Dati Personali (PPDPA) della Thailandia è la nuova legge sulla privacy che armonizza e aggiorna i requisiti di protezione dei Dati per la Thailandia. </p>
    <p>La società brasiliana Lei Geral de Proteção de Dados (LGPD) entrerà in vigore a partire dal 16 agosto per tutte le aziende che raccolgono o elaborano dati personali in Brasile.</p>
-   <p>Queste normative si applicano ai clienti  Adobe Campaign che detengono i dati per i soggetti che risiedono in questi paesi. Oltre alle funzionalità per la privacy già disponibili in Campaign (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), stiamo sfruttando questa opportunità per includere funzionalità aggiuntive, per facilitare la disponibilità di PDF e LGPD:</p>
+   <p>Queste regole si applicano ai clienti Adobe Campaign  che detengono i dati per gli oggetti Data che risiedono in questi paesi. Oltre alle funzionalità per la privacy già disponibili in Campaign (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), stiamo sfruttando questa opportunità per includere funzionalità aggiuntive, per facilitare la disponibilità di PDF e LGPD:</p>
    <ul> 
-     <li><p>Diritto di accesso e Diritto di eliminazione: stiamo sfruttando le funzionalità aggiunte per il GDPR e il CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Leggi tutto</a></p></li> 
+     <li><p>Diritto di accesso e Diritto di eliminazione: sono state sfruttate le funzionalità aggiunte del RGPD e del CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Ulteriori informazioni</a></p></li> 
      <li> <p>Quando crei una richiesta di privacy utilizzando l'interfaccia o l'API di Campaign, ora seleziona il tipo di <strong>regolamento</strong> : PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Ulteriori informazioni</a>.</p></li>
     </ul>
    </td> 
@@ -120,17 +120,17 @@ _8 giugno 2020_
 Campaign supporta ora i seguenti sistemi:
 * Sistemi operativi: Debian 10
 * RDBMS: Oracle 18c e Oracle 19c
-* FDA: Azure Synapse  Analytics
+* FDA: Analisi della sinapsi di Azure
 
 Ulteriori informazioni nella matrice [Compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)campagna.
 
 **Miglioramenti**
 
-* I messaggi transazionali sono stati migliorati per una migliore esperienza utente. Ora puoi annullare la pubblicazione di un modello di messaggio transazionale, che lo elimina dalle istanze di esecuzione. [Ulteriori](../../message-center/using/template-unpublication.md)informazioni.
+* I messaggi transazionali sono stati migliorati per una migliore esperienza utente. Ora puoi annullare la pubblicazione di un modello di messaggio transazionale, che lo elimina dalle istanze di esecuzione. [Ulteriori informazioni](../../message-center/using/template-unpublication.md).
 
-* Sono disponibili nuove opzioni per impostare limitazioni durante l&#39;invio di e-mail che includono immagini o allegati. Tali tutdrail possono evitare problemi di prestazioni, che è particolarmente utile con i messaggi transazionali. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
+* Sono disponibili nuove opzioni per impostare limitazioni durante l&#39;invio di e-mail che includono immagini o allegati. Tali tutdrail possono evitare problemi di prestazioni, che è particolarmente utile con i messaggi transazionali. [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md#delivery)
 
-* La nuova opzione **Prepara le parti di consegna nel database** consente di eseguire la preparazione della consegna direttamente all&#39;interno del database, il che può accelerare notevolmente l&#39;analisi. Questa opzione è disponibile solo per configurazioni specifiche. [Ulteriori](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)informazioni. (NEO-23886)
+* La nuova opzione **Prepara le parti di consegna nel database** consente di eseguire la preparazione della consegna direttamente all&#39;interno del database, il che può accelerare notevolmente l&#39;analisi. Questa opzione è disponibile solo per configurazioni specifiche. [Ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Sono state migliorate le prestazioni dell&#39;attività [del connettore](../../workflow/using/crm-connector.md) CRM per Microsoft Dynamics. (NEO-13303, NEO-12710)
 
@@ -140,21 +140,21 @@ Ulteriori informazioni nella matrice [Compatibilità](https://helpx.adobe.com/ca
    >
    >Questo miglioramento richiede un ulteriore passaggio dopo l&#39;esecuzione dell&#39;aggiornamento. Fare riferimento alla sezione **Tecniche evoluzioni** seguente.
 
-* Il flusso di lavoro di pulizia è stato migliorato. Anche le tabelle di lavoro isolate di tutti i flussi di lavoro eliminati ora vengono eliminate automaticamente dal flusso di lavoro di pulizia. [Ulteriori](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances)informazioni.
+* Il flusso di lavoro di pulizia è stato migliorato. Anche le tabelle di lavoro isolate di tutti i flussi di lavoro eliminati ora vengono eliminate automaticamente dal flusso di lavoro di pulizia. [Ulteriori informazioni](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * I certificati per le applicazioni mobili iOS con il connettore iOS HTTP2 ora vengono convalidati prima dell&#39;invio delle notifiche push, impedendo in tal modo la mancata riuscita delle consegne a causa dei certificati scaduti.
 
-* È stata migliorata la gestione delle connessioni proxy HTTP. [Ulteriori](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)informazioni.
+* È stata migliorata la gestione delle connessioni proxy HTTP. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Altre modifiche**
 
 * I vecchi connettori SMS ora sono obsoleti. Consultare la pagina [Funzioni](../../rn/using/deprecated-features.md)obsolete.
 
-* Non è più possibile utilizzare il proprio account Litmus per effettuare il provisioning e utilizzare il rendering Inbox in  Adobe Campaign. [Ulteriori](../../delivery/using/inbox-rendering.md)informazioni.
+* Non è più possibile utilizzare il proprio account Litmus per effettuare il provisioning e utilizzare il rendering Inbox in  Adobe Campaign. [Ulteriori informazioni](../../delivery/using/inbox-rendering.md).
 
-* Per distinguere meglio le viste dalle cartelle, il colore dei nomi delle viste è stato modificato da blu scuro a ciano scuro. [Leggi tutto](../../platform/using/access-management.md#about-views)
+* Per distinguere meglio le viste dalle cartelle, il colore dei nomi delle viste è stato modificato da blu scuro a ciano scuro. [Ulteriori informazioni](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic può ora essere connesso agli account di Microsoft Dynamics CRM ospitati nelle regioni Regno Unito, India e Canada. Ciò vale per i tipi di distribuzione di Office 365 e locale (Dynamics 2015).
+* È ora possibile connettersi agli account di Microsoft Dynamics CRM ospitati nelle regioni Regno Unito, India e Canada. Ciò vale per i tipi di distribuzione di Office 365 e locale (Dynamics 2015).
 
 * Campaign esegue ora una verifica TLS per verificare che il nome host del server corrisponda al nome host nel certificato fornito.
 
@@ -162,7 +162,7 @@ Ulteriori informazioni nella matrice [Compatibilità](https://helpx.adobe.com/ca
 
 * È stato aggiunto un messaggio di errore nel file di registro per avvisare gli utenti quando il file scaricato è più grande dello spazio su disco.
 
-* Sono ora disponibili le seguenti funzioni per il connettore Snowflake: Mesi Fa, GiorniFaInt, DataDataOra, AnniFa.
+* Sono ora disponibili le seguenti funzioni per il connettore del Snowflake : Mesi Fa, GiorniFaInt, DataDataOra, AnniFa.
 
 **Evoluzioni tecniche**
 
@@ -218,7 +218,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema che ignorava il passaggio di approvazione della destinazione quando si riprendeva un flusso di lavoro per inviare una consegna ricorrente. (NEO-18166)
 * È stato risolto un problema che impediva al pulsante **Riavvia preparazione** messaggio di riprendere la consegna dopo la risoluzione di un errore nel flusso di lavoro. (NEO-13488)
 * È stato risolto un problema che poteva causare un errore nelle consegne in modalità mid-sourcing durante la fase di rampa verso l’alto, in cui i destinatari inclusi nella destinazione erano in formato e-mail giapponese. (NEO-23846)
-* È stato risolto un problema di conversione del fuso orario con il connettore Snowflake (NEO-20105)
+* È stato risolto un problema di conversione del fuso orario con il connettore del Snowflake  (NEO-20105)
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini nelle consegne di linea. (NEO-23207)
 * È stato risolto un problema che causava un errore durante la pubblicazione di un&#39;offerta. (NEO-23312)
@@ -243,7 +243,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema che poteva verificarsi durante la pubblicazione di un modello in un&#39;istanza di esecuzione.
 * È stato risolto un problema che poteva impedire l&#39;esecuzione del flusso di lavoro tecnico collectPrivacyRequests. (NEO-20513, NEO-25169)
-* Sono stati risolti i problemi che potevano verificarsi quando si tentava di connettersi a  Audience Manager dopo l&#39;aggiornamento alla build 9080. (NEO-20511, NEO-25167)
+* Sono stati risolti i problemi che potevano verificarsi quando si tentava di connettersi  Audience Manager dopo l&#39;aggiornamento alla build 9080. (NEO-20511, NEO-25167)
 * Risolti i problemi che potevano verificarsi durante l&#39;esportazione di rapporti in formato PDF o XLS. (NEO-20982, NEO-23493, NEO-23348)
 * È stato risolto un problema che poteva visualizzare due volte una consegna nell&#39;elenco di consegna dopo l&#39;invio.
 * È stato risolto un problema di preparazione della consegna che poteva verificarsi quando la configurazione del routing era impostata per inviare la consegna tramite mid-sourcing.
