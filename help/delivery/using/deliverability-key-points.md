@@ -13,17 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 0%
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
 # Punti chiave della realizzazione{#deliverability-key-points}
 
-Per ottimizzare la recapito dei messaggi e-mail di Adobe Campaign, ti consigliamo di utilizzare le best practice elencate di seguito. I problemi di recapito sono generalmente legati alle misure di protezione contro lo spam attuate dai provider di servizi Internet e dagli amministratori dei server di posta elettronica.
+Per ottimizzare la recapito dei messaggi e-mail di  Adobe Campaign, si consiglia di utilizzare le procedure ottimali elencate di seguito. I problemi di recapito sono generalmente legati alle misure di protezione contro lo spam attuate dai provider di servizi Internet e dagli amministratori dei server di posta elettronica.
 
 **Per &quot;recapito** e-mail&quot; si intende l&#39;insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, entro breve tempo, e con la qualità prevista in termini di contenuto e formato.
 
@@ -71,3 +71,92 @@ In misura minore, il contenuto di alcuni messaggi può portare alcuni filtri per
 ## Lavora sulla tua reputazione {#reputation}
 
 Gli spammer fanno consegne programmate per mantenere la loro reputazione nel tempo. A volte devono adattare il piano di marketing per soddisfare le migliori pratiche imposte dai provider di servizi Internet e quindi, dopo un picco di reputazione (accelerazione), configurano consegne regolari.
+
+## Best practice {#best-practices}
+
+Scopri le best practice relative alla recapito dei contenuti con  Adobe Campaign. Utilizzate i collegamenti di seguito per navigare tra gli argomenti e trovare istruzioni.
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="Inizio" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>Inizio</strong>
+    </a>
+    </div>
+    <p>
+    <em>Avvio di una nuova piattaforma</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="Progettazione" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>Progettazione</strong>
+    </a>
+    </div>
+    <p>
+    <em>Controllo del contenuto dei messaggi</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="Progettazione" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>Invia</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migliorare la tua reputazione</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="Ottimizza" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>Ottimizza</strong>
+    </a>
+    </div>
+    <p>
+    <em>Raccomandazioni tecniche</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="Controlla" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>Monitor</strong>
+    </a>
+    </div>
+    <p>
+    <em>Strumenti di monitoraggio</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="Ottimizza" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>Risoluzione dei problemi</strong>
+    </a>
+    </div>
+    <p>
+    <em>Risolvere i problemi</em>
+    <p>
+  </td>
+</tr>
+</table>
