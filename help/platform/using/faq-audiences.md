@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti su profili e audience
-seo-title: Domande frequenti
-description: Domande frequenti su Campaign Classic
+seo-title: Domande comuni
+description: Domande frequenti sui Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,14 +14,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
 # Profiles and Audiences FAQ {#audiences-faq}
 
-Scopri come eseguire il targeting di una popolazione e gestire i tipi di pubblico in Adobe Campaign.
+Scopri come eseguire il targeting di una popolazione e gestire i tipi di pubblico in  Adobe Campaign.
 
 ## Come creare i destinatari? {#how-to-create-recipients-}
 
@@ -29,7 +32,7 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console client
 
 ## Come importare i profili? {#how-to-import-profiles-}
 
-Scoprite i casi di utilizzo semplificati per [importare i profili](../../platform/using/importing-data.md#generic-import-samples) nel database. Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
+Scoprite i casi di utilizzo semplificati per l’ [importazione di profili](../../platform/using/importing-data.md#generic-import-samples) nel database. Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
 
 ## Come posso definire la popolazione di destinazione di una campagna di marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -39,7 +42,7 @@ Puoi [utilizzare i flussi di lavoro per creare una popolazione](../../campaign/u
 
 Un elenco è un set statico di destinatari che possono essere indirizzati alle azioni di consegna, aggiornati durante le operazioni di importazione o l&#39;esecuzione del flusso di lavoro. Ad esempio, una popolazione estratta dal database tramite una query può fornire un elenco.
 
-[Fai clic qui per saperne di più](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) su come creare manualmente un elenco e [questo altro video](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) per creare e aggiornare automaticamente un elenco di destinatari in un flusso di lavoro.
+[Fai clic qui per saperne di più](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Potete anche guardare [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) su come creare manualmente un elenco e [questo altro video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) per creare e aggiornare automaticamente un elenco di destinatari in un flusso di lavoro.
 
 ## Come posso deduplicare una popolazione prima di inviare un messaggio? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
