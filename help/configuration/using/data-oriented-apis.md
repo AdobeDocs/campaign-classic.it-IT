@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Le API orientate ai dati consentono di gestire l&#39;intero modello dati.
 
 ## Panoramica del modello dati {#overview-of-the-datamodel}
 
-Adobe Campaign non offre un&#39;API di lettura dedicata per entità (nessuna funzione getRecipient o getDelivery, ecc.). Utilizzare i metodi di lettura e modifica dei dati QUERY e WRITER per accedere ai dati del modello.
+ Adobe Campaign non offre un&#39;API di lettura dedicata per entità (nessuna funzione getRecipient o getDelivery, ecc.). Utilizzare i metodi di lettura e modifica dei dati QUERY e WRITER per accedere ai dati del modello.
 
-Adobe Campaign consente di gestire le raccolte: le query consentono di recuperare una serie di informazioni raccolte in tutta la base. A differenza dell&#39;accesso in modalità SQL, le API di Adobe Campaign restituiscono una struttura XML invece delle colonne di dati. Adobe Campaign crea quindi documenti compositi con tutti i dati raccolti.
+ Adobe Campaign consente di gestire le raccolte: le query consentono di recuperare una serie di informazioni raccolte in tutta la base. A differenza dell&#39;accesso in modalità SQL,  API Adobe Campaign restituiscono una struttura XML invece delle colonne di dati.  Adobe Campaign crea quindi documenti compositi con tutti i dati raccolti.
 
 Questa modalità operativa non offre la mappatura uno-a-uno tra gli attributi e gli elementi dei documenti XML e le colonne delle tabelle nel database.
 
@@ -36,15 +39,15 @@ I documenti XML sono memorizzati nei campi del tipo MEMO del database.
 
 ## Descrizione del modello {#description-of-the-model}
 
-Devi avere familiarità con il modello dati di Adobe Campaign per poter risolvere i campi del database negli script.
+È necessario avere familiarità con il  modello dati Adobe Campaign per poter indirizzare i campi del database negli script.
 
-Per una presentazione del modello dati, fai riferimento alla descrizione [del modello dati di](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/_Datamodel_Description_of_the_main_tables.html)Adobe Campaign.
+Per una presentazione del modello dati, fare riferimento alla descrizione [del modello dati](../../configuration/using/data-model-description.md)Adobe Campaign.
 
 Per generare la struttura, fare riferimento a questo articolo: [Come generare un modello dati o un dizionario](https://helpx.adobe.com/campaign/kb/generate-data-model.html)dati.
 
 ## Query e scrittura {#query-and-writer}
 
-Lo schema di introduzione seguente descrive gli scambi di basso livello per la lettura (ExecuteQuery) e la scrittura (Writer) tra database e cliente (pagine Web o console client Adobe Campaign).
+Lo schema di introduzione seguente descrive gli scambi di basso livello per la lettura (ExecuteQuery) e la scrittura (Writer) tra il database e il cliente (pagine Web o  console client Adobe Campaign).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -52,7 +55,7 @@ Lo schema di introduzione seguente descrive gli scambi di basso livello per la l
 
 Per le colonne e le condizioni, potete utilizzare Query.
 
-Questo consente di isolare il SQL sottostante. La lingua della query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, generando diversi ordini SELECT SQL.
+Questo consente di isolare l&#39;SQL sottostante. La lingua della query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, che potrebbero generare diversi ordini SELECT SQL.
 
 Per ulteriori informazioni, vedere [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
@@ -226,7 +229,7 @@ Per contare il numero di record in una query:
 
 >[!NOTE]
 >
->Anche in questo caso utilizziamo la condizione dell&#39;esempio precedente. Le clausole `<select>` e non vengono utilizzate. </select>&quot;
+>Anche in questo caso utilizziamo la condizione dell&#39;esempio precedente. Le clausole `<select>` e non vengono utilizzate. </select>`
 
 #### Raggruppamento dati {#data-grouping}
 
@@ -377,7 +380,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
 
 #### Binding dei parametri della clausola &#39;where&#39; e &#39;select&#39; {#binding-the-parameters-of-the--where--and--select--clause}
 
-Il binding dei parametri consente al motore di impostare i valori dei parametri utilizzati nella query. Questo è molto utile, dal momento che il motore è responsabile della fuga di valori, e c&#39;è il vantaggio aggiuntivo di una cache per i parametri da recuperare.
+Il binding dei parametri consente al motore di impostare i valori dei parametri utilizzati nella query. Questo è molto utile, dal momento che il motore è responsabile dell&#39;evasione dei valori, e c&#39;è il vantaggio aggiuntivo di una cache per i parametri da recuperare.
 
 Quando viene creata una query, i valori &quot;bound&quot; vengono sostituiti da un carattere (? in ODBC, `#[index]#` in postgres...) nel corpo della query SQL.
 
@@ -390,7 +393,7 @@ Quando viene creata una query, i valori &quot;bound&quot; vengono sostituiti da 
 </select>
 ```
 
-Per evitare il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; deve essere popolato con il valore &quot;true&quot;.
+Per evitare di eseguire il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; deve essere popolato con il valore &quot;true&quot;.
 
 >[!IMPORTANT]
 >
@@ -398,7 +401,7 @@ Per evitare il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; de
 
 #### Suggerimento per la creazione di query: {#query-building-tip-}
 
-Per semplificare la sintassi di una query, puoi scrivere la query utilizzando l&#39;editor query generico nella console client Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Per eseguire questa operazione:
+Per semplificare la sintassi di una query, è possibile scrivere la query utilizzando l&#39;editor query generico nella console client Adobe Campaign  ( **[!UICONTROL Tools/ Generic query editor...]** menu). Per eseguire questa operazione:
 
 1. Selezionare i dati da recuperare:
 
@@ -588,7 +591,7 @@ Aggiornamento o inserimento per diversi destinatari:
 
 ### Esempio di collegamenti {#example-on-links}
 
-#### Esempio 1 {#example-1}
+#### Example 1 {#example-1}
 
 Associazione della cartella a un destinatario in base al nome interno (@name).
 
@@ -606,7 +609,7 @@ La definizione della chiave dell&#39;entità principale (&quot;nms:Recipient&quo
 >
 >L&#39;operazione &quot;none&quot; immessa nell&#39;elemento cartella definisce una riconciliazione sulla cartella senza aggiornare o inserire.
 
-#### Esempio 2 {#example-2}
+#### Example 2 {#example-2}
 
 Aggiornamento della società (tabella collegata nello schema &quot;cus:company&quot;) da un destinatario:
 
@@ -616,7 +619,7 @@ Aggiornamento della società (tabella collegata nello schema &quot;cus:company&q
 </recipient>
 ```
 
-#### Esempio 3 {#example-3}
+#### Example 3 {#example-3}
 
 Aggiunta di un destinatario a un gruppo con la tabella di relazione del gruppo (&quot;nms:rcpGrpRel&quot;):
 
