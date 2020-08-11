@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Se l’elenco esiste già, i destinatari verranno aggiunti al contenuto esistent
 
 Se si desidera che l&#39;elenco creato o aggiornato utilizzi una tabella diversa da quella del destinatario, selezionare l&#39; **[!UICONTROL Create or use a list with its own table]** opzione.
 
-Per utilizzare l&#39;opzione, le tabelle specifiche in questione devono essere state configurate nell&#39;istanza di Adobe Campaign.
+Per utilizzare l&#39;opzione, le tabelle specifiche in questione devono essere state configurate nell&#39;istanza di Adobe Campaign .
 
 In genere, il salvataggio di una destinazione in un elenco indica la fine di un flusso di lavoro. Per impostazione predefinita, l&#39; **[!UICONTROL List update]** attività non ha pertanto una transizione in uscita. Selezionare l&#39; **[!UICONTROL Generate an outbound transition]** opzione per aggiungerne una.
 
@@ -58,13 +58,13 @@ Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segu
 1. Lasciate l&#39; **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** opzione selezionata per eliminare i destinatari che non corrispondono ai criteri di targeting e per inserire quelli nuovi nell&#39;elenco.
 1. Lasciate selezionata anche l’ **[!UICONTROL Create or use a list with its own table]** opzione.
 1. Lasciate l’ **[!UICONTROL Generate an outbound transition]** opzione deselezionata.
-1. Fate clic su **[!UICONTROL Ok]** quindi avviate il flusso di lavoro.
+1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
    L&#39;elenco dei destinatari corrispondenti viene quindi creato o aggiornato.
 
-Per ulteriori informazioni, consultate [Creazione di un elenco di video dei destinatari](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) .
+Per ulteriori informazioni, consultate [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
 
 ## Parametri di input {#input-parameters}
 
