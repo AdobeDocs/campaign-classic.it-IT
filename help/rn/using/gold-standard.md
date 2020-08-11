@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
 
-I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
+I clienti interni e ibridi possono inoltre beneficiare delle versioni Gold Standard.
 
 Questa è la nostra versione di supporto a lungo termine. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
 
@@ -41,7 +41,7 @@ _7 luglio 2020_
 
 La build 9032@efd8a94 include la seguente correzione:
 
-È stato risolto un problema che impediva il monitoraggio quando la funzionalità di firma era disabilitata o quando si utilizzava una vecchia istanza di marketing con un identificatore Mid recente. (NEO-26411)
+È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
 
 >[!CAUTION]
 >
