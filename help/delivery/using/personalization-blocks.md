@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ I blocchi di personalizzazione sono dinamici, personalizzati e contengono un ren
 >
 >I blocchi di personalizzazione sono disponibili anche da **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
 
-I blocchi di personalizzazione sono accessibili tramite il **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Esplora Adobi Campaign . Per impostazione predefinita sono disponibili diversi blocchi (consultate Blocchi [di personalizzazione](#out-of-the-box-personalization-blocks)predefiniti).
+I blocchi di personalizzazione sono accessibili tramite il **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Adobe Campaign Explorer . Per impostazione predefinita sono disponibili diversi blocchi (consultate Blocchi [di personalizzazione](#out-of-the-box-personalization-blocks)predefiniti).
 
 Puoi definire nuovi blocchi che ti consentiranno di ottimizzare la personalizzazione delle consegne. Per ulteriori informazioni, consulta [Definizione di blocchi](#defining-custom-personalization-blocks)personalizzati.
 
@@ -111,7 +111,7 @@ Per impostazione predefinita è disponibile un elenco di blocchi di personalizza
    >Per ulteriori informazioni sulla generazione della pagina mirror, vedere [Generazione della pagina](../../delivery/using/sending-messages.md#generating-the-mirror-page)mirror.
 
 * **[!UICONTROL Link to mirror page]** : inserisce un collegamento alla pagina mirror: &quot;Se non riesci a visualizzare correttamente questo messaggio, fai clic qui&quot;.
-* **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l’iscrizione a tutte le consegne (elenco blocchi).
+* **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l&#39;iscrizione a tutte le consegne ( elenco Bloccati).
 * **[!UICONTROL Formatting function for proper nouns]** : genera la funzione **[!UICONTROL toSmartCase]** Javascript, che modifica la prima lettera di ogni parola in maiuscolo. Questo blocco deve essere inserito nel codice sorgente del recapito, nei **`<script>...</script>`** tag.
 
    Nell&#39;esempio seguente, la funzione viene utilizzata per sostituire l&#39;elemento &quot;Intestazione personale&quot; con &quot;Nuova intestazione&quot; con lettere maiuscole a ogni parola:
@@ -158,4 +158,10 @@ Per creare un blocco di personalizzazione, accedete a Esplora risorse e eseguite
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Immettete il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fai clic su **[!UICONTROL Save]** .
+   * Immettete il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fai clic su **[!UICONTROL Save]**.
+
+## Come personalizzare le e-mail utilizzando blocchi di contenuto dinamici
+
+Scoprite come creare blocchi di contenuto dinamici e come utilizzarli per personalizzare il contenuto della distribuzione delle e-mail.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
