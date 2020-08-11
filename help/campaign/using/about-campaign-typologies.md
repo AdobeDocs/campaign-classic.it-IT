@@ -15,25 +15,25 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 2%
+source-wordcount: '479'
+ht-degree: 5%
 
 ---
 
 
 # Informazioni sulle tipologie delle campagne{#about-campaign-typologies}
 
-Ottimizzazione campagna è il modulo Adobe Campaign che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Questo garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti e le politiche di comunicazione aziendali.
+Ottimizzazione campagna è il modulo Adobe Campaign  che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per evitare conflitti tra campagne,  Adobe Campaign può testare diverse combinazioni applicando regole di vincolo specifiche. Questo garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti e le politiche di comunicazione aziendali.
 
 >[!NOTE]
 >
->A seconda dell&#39;offerta, è possibile includere l&#39;ottimizzazione per le campagne o un componente aggiuntivo. Controllare il contratto di licenza.
+>A seconda dell&#39;offerta, è possibile includere l&#39;ottimizzazione per le campagne o un componente aggiuntivo. Controlla il contratto di licenza.
 
 ## Regole di tipologia {#typology-rules}
 
-Con Adobe Campaign puoi progettare e applicare quattro tipi di regole di tipologia:
+Con  Adobe Campaign è possibile progettare e applicare quattro tipi di regole di tipologia:
 
 * **Regole di filtro** che consentono di escludere parte del target in base ai criteri. For more on this, refer to [Filtering rules](../../campaign/using/filtering-rules.md).
 * **Regole di pressione** che consentono di controllare la fatica del marketing. For more on this, refer to [Pressure rules](../../campaign/using/pressure-rules.md).
@@ -64,11 +64,27 @@ I passaggi per creare e applicare una tipologia alle consegne sono elencati di s
 
    Le tipologie sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
 
-1. Configurate la distribuzione in modo da utilizzare la tipologia creata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Configurate la distribuzione in modo da utilizzare la tipologia creata. Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
 1. Test e controllo del comportamento mediante simulazioni di campagne. For more on campaign simulations, refer to [this section](../../campaign/using/campaign-simulations.md).
 
-Durante la preparazione della consegna, i destinatari sono esclusi quando il criterio è soddisfatto. Potete controllare i registri per monitorare le esclusioni. Esempi di utilizzo delle regole di tipo pressione sono disponibili in [questa pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
+Durante la preparazione della consegna, i destinatari sono esclusi quando il criterio è soddisfatto. Per monitorare le esclusioni, puoi controllare i registri. Esempi di utilizzo delle regole di tipo pressione sono disponibili in [questa pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
+
+## Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia
+
+Questo video spiega come implementare la gestione della fatica in Adobe Campaign Classic sfruttando le regole della tipologia.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## Come impostare la gestione della fatica utilizzando filtri predefiniti
+
+La gestione della fatica controlla la frequenza e la quantità di messaggi per evitare un eccesso di richieste da parte dei destinatari. Se nell’istanza della campagna non è presente il modulo di ottimizzazione della campagna, potete configurare un filtro predefinito che filtrerà la popolazione di destinazione in base al numero di messaggi ricevuti. In questo video viene illustrato come implementare la gestione dell’affaticamento in Adobe Campaign Classic utilizzando i filtri.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
 **Argomento correlato**
 
 * [Applica regole aziendali automatiche alle consegne su qualsiasi canale](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [Informazioni sulle tipologie delle campagne](../../campaign/using/pressure-rules.md)
+
+* [Gestione della stanchezza di marketing con le regole di pressione](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
