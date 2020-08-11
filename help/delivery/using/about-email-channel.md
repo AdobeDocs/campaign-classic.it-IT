@@ -1,5 +1,5 @@
 ---
-title: Il canale e-mail in Adobe Campaign Classic
+title: Informazioni sul canale e-mail in Adobe Campaign Classic
 description: Questa sezione contiene informazioni generali specifiche per il canale e-mail in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: aaef3c4a-99b2-4554-9a78-bb66459e45a4
@@ -13,24 +13,27 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 3%
 
 ---
 
 
 # Il canale di posta elettronica{#about-email-channel}
 
-Adobe Campaign consente di inviare in massa messaggi elettronici personalizzati a una popolazione specifica.
+ Adobe Campaign consente di inviare in massa messaggi elettronici personalizzati a una popolazione specifica.
 
 Prima di iniziare a inviare i messaggi e-mail:
 
 * Assicurati che i profili dei destinatari contengano almeno un indirizzo e-mail.
-* Ulteriori informazioni sulle best practice per la [distribuzione di Adobe Campaign](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+* Ulteriori informazioni sulle procedure ottimali per la [distribuzione di Adobe Campaign](../../delivery/using/delivery-best-practices.md).
 * Informazioni sulla [recapito](../../delivery/using/about-deliverability.md) e sulla [gestione della recapito](https://helpx.adobe.com/campaign/kb/acc-deliverability.html).
 
 I passaggi principali per inviare un messaggio e-mail sono i seguenti:
 
-* [Creazione di una consegna tramite e-mail](../../delivery/using/creating-an-email-delivery.md)
+* [Creazione di una consegna e-mail](../../delivery/using/creating-an-email-delivery.md)
 * [Definizione della popolazione di destinazione](../../delivery/using/steps-defining-the-target-population.md)
 * [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
 * [Invio del messaggio e-mail](../../delivery/using/sending-messages.md)
