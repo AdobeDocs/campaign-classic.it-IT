@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 5%
 
 ---
 
@@ -34,12 +37,21 @@ Per eseguire questa operazione:
 
 1. Configurare il modello di consegna.
 
-Il processo di configurazione per questa attività è simile a quello della creazione di un modello di consegna in termini di opzioni disponibili. For more on this, refer to this [section](../../delivery/using/about-templates.md).
+Il processo di configurazione per questa attività è simile a quello della creazione di un modello di consegna in termini di opzioni disponibili. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
 
 Per un esempio dell&#39;attività in uso, consultate questa [sezione](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+
+## Come impostare la consegna ricorrente
+
+Una consegna **** periodica crea una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, il risultato sarà 52 Consegne dopo un anno. Ciò significa anche che i log di registro e di monitoraggio ampi saranno separati da ogni istanza di consegna.
+
+![Consegna ricorrente](assets/delivery_recurring.jpg)
+
+In questo video viene illustrato come configurare un&#39;attività di consegna periodica e un&#39;attività di pianificazione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 >[!NOTE]
 >
 >Non è possibile inviare una prova da un&#39;attività di **[!UICONTROL Recurring delivery]** tipo.\
 >Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizzate le attività specifiche del canale preconfigurate (ad es. **[!UICONTROL Email delivery]**).
-
