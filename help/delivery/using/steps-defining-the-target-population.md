@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -229,3 +229,15 @@ Potete utilizzare **[!UICONTROL Seed addresses]** come destinazione le prove: qu
 >Gli indirizzi dei semi sono presentati in [Informazioni sugli indirizzi](../../delivery/using/about-seed-addresses.md)iniziali.
 
 È possibile combinare la definizione di una destinazione di prova specifica e l&#39;uso di indirizzi di prova utilizzando l&#39; **[!UICONTROL Specific target and Seed addresses]** opzione. Le configurazioni correlate vengono quindi definite in due sottoschede separate.
+
+## Come gestire sementi e prove in un&#39;e-mail
+
+Questo video illustra come aggiungere sementi e prove a un&#39;e-mail esistente e come inviarla.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+Vedi anche:
+* [Selezione della destinazione di prova](#selecting-the-proof-target)
+
+* [Informazioni sugli indirizzi iniziali](../../delivery/using/about-seed-addresses.md)
+
+* [Caso di utilizzo: selezione degli indirizzi di base sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
