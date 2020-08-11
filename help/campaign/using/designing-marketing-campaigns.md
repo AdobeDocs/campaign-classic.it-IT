@@ -15,25 +15,28 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
 
 # Progettazione di campagne di marketing{#designing-marketing-campaigns}
 
-Adobe Campaign consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign agisce come un centro unificato per l&#39;ordine e l&#39;esecuzione delle strategie di marketing. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md) e [Impostazione delle campagne](../../campaign/using/setting-up-marketing-campaigns.md)di marketing.
+ Adobe Campaign consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing.  Adobe Campaign si comporta come un centro unificato di ordine ed esecuzione per le strategie di marketing. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md) e [Impostazione delle campagne](../../campaign/using/setting-up-marketing-campaigns.md)di marketing.
 
-Inoltre, il modulo **Marketing Resource Management (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo gestione completa e tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
+Inoltre, il modulo **Marketing Resource Management (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo gestione completa e tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta la sezione [Guida introduttiva](../../platform/using/about-adobe-campaign-classic.md) .\
->Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla distribuzione dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/communication-channels.md).
+>Per ulteriori informazioni sulle funzionalità di base  Adobe Campaign, consulta la sezione [Guida introduttiva](../../platform/using/about-adobe-campaign-classic.md) .\
+>Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla distribuzione dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Concetti di base {#core-concepts}
 
-Nel contesto di Campaign è necessario conoscere i seguenti concetti:
+Nel contesto di Campaign, è necessario conoscere i seguenti concetti:
 
 * **Campagna**
 
@@ -49,13 +52,13 @@ Nel contesto di Campaign è necessario conoscere i seguenti concetti:
 
    Il piano di marketing può contenere più programmi. È collegato a un periodo di calendario, ha un bilancio assegnato e può anche essere collegato a documenti e obiettivi.
 
-   Per ulteriori informazioni, consulta Calendario [](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar)campagna.
+   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Flusso di lavoro**
 
    Un flusso di lavoro della campagna contiene le stesse attività di tutti i flussi di lavoro, ma è specifico per la campagna. Consente di creare e configurare le consegne per tutti i canali disponibili.
 
-   For more on this, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+   Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Obiettivi**
 
@@ -66,3 +69,11 @@ Nel contesto di Campaign è necessario conoscere i seguenti concetti:
    Un profilo di consegna è una descrizione strutturata di una consegna. Ogni consegna può fare riferimento a un profilo di consegna che contiene, ad esempio, le relative offerte, i documenti da allegare o un collegamento agli store. È possibile fare riferimento a un&#39;offerta nella consegna in base al profilo di consegna selezionato.
 
    Per ulteriori informazioni, vedere [Associazione e strutturazione delle risorse collegate tramite una struttura](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)di distribuzione.
+
+## Come creare un messaggio e-mail in una campagna
+
+In questo video viene illustrato come creare una campagna e un’e-mail in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
