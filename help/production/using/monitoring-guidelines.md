@@ -1,6 +1,6 @@
 ---
 title: Linee guida per il monitoraggio
-description: Questa sezione presenta le linee guida generali per il monitoraggio di Campaign Classic.
+description: Questa sezione presenta le linee guida generali per il monitoraggio Campaign Classic.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 41c515008a12fa066cedc9d7125195e2c4776f40
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 2%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ## Pannello di controllo per le istanze {#instance-monitoring-dashboard}
 
-La **[!UICONTROL Monitoring]** scheda, accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per facilitare il monitoraggio dell&#39;istanza.
+La **[!UICONTROL Monitoring]** scheda, accessibile dalla home page Campaign Classic, è il punto di ingresso principale per facilitare il monitoraggio dell&#39;istanza.
 
 Fornisce un dashboard di ciò che si verifica nell’istanza: stato (versione build, pacchetti installati, ecc.), indicatori di sistema, registri, flussi di lavoro attualmente in esecuzione, stato delle ultime consegne inviate, ecc.
 
@@ -62,7 +62,7 @@ Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell�
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano  Adobi Managed Services.
+>Il Pannello di controllo Campaign è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano i servizi gestiti Adobe.
 
 ### Flussi di lavoro di monitoraggio {#monitoring-workflows}
 
@@ -88,7 +88,7 @@ Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di m
 
 Seguire le linee guida e le best practice per l&#39;utilizzo dei flussi di lavoro può migliorare le prestazioni. Per ulteriori informazioni, consultare le sezioni seguenti:
 * [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
-* [Esecuzione del flusso di lavoro di monitoraggio](../../workflow/using/monitoring-workflow-execution.md)
+* [Monitoraggio dell’esecuzione di un flusso di lavoro](../../workflow/using/monitoring-workflow-execution.md)
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
 
@@ -96,11 +96,11 @@ Seguire le linee guida e le best practice per l&#39;utilizzo dei flussi di lavor
 
 **Rapporti SMTP**
 
-I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per dominio. [Fai clic qui](../../production/using/monitoring-processes.md) per ulteriori informazioni.
+I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per dominio. [Ulteriori informazioni](../../production/using/monitoring-processes.md)
 
 **Best practice**
 
-[Le procedure ottimali per l&#39;invio e la progettazione](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html) delle consegne consentono di migliorare le prestazioni.
+[Le procedure ottimali per l&#39;invio e la progettazione](../../delivery/using/delivery-best-practices.md) delle consegne consentono di migliorare le prestazioni.
 
 **Risoluzione dei problemi** di distribuzione È possibile eseguire azioni specifiche in caso di problemi relativi alle consegne:
 * [Problemi di realizzazione](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
@@ -152,8 +152,8 @@ Le risorse tecniche sono disponibili nella documentazione Campaign Classic. È c
 
 **Principi generali**
 
-* [Architettura Campaign Classic](../../production/using/general-architecture.md)
-* [Moduli Campaign Classic](../../production/using/operating-principle.md)
+* [architettura Campaign Classic](../../production/using/general-architecture.md)
+* [moduli Campaign Classic](../../production/using/operating-principle.md)
 * [Opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Come impostare l&#39;avvio automatico dei moduli](../../production/using/administration.md)
 * [Principio di configurazione della campagna](../../production/using/configuration-principle.md)
