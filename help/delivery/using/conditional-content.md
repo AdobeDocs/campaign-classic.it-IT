@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Configurando i campi di contenuto condizionale, puoi creare una personalizzazion
 
 ## Utilizzo delle condizioni in un messaggio e-mail {#using-conditions-in-an-email}
 
-Nell&#39;esempio seguente verrà illustrato come creare un messaggio, personalizzato dinamicamente in base al genere e agli interessi del destinatario.
+Nell&#39;esempio seguente verrà illustrato come creare un messaggio, personalizzato in modo dinamico in base al genere e agli interessi del destinatario.
 
 * Display che mostra &quot;Mr&quot; o &quot;Ms.&quot; in base al valore del **[!UICONTROL Gender]** campo (M o F) nell&#39;origine dati,
 * Assemblaggio personalizzato di una newsletter o di offerte promozionali in base agli interessi indicati o rilevati:
@@ -105,8 +108,14 @@ Nell’esempio seguente, verrà illustrato come creare un’e-mail in più lingu
    <% } %>
    ```
 
-1. Verifica il contenuto delle e-mail nella **[!UICONTROL Preview]** scheda selezionando i destinatari con lingue diverse tra loro preferite.
+1. Per testare il contenuto delle e-mail nella **[!UICONTROL Preview]** scheda, selezionate i destinatari con diverse lingue preferite.
 
    >[!NOTE]
    >
    >Poiché nel contenuto dell’e-mail non è stata definita alcuna versione alternativa, accertatevi di filtrare la popolazione di destinazione prima di inviare l’e-mail.
+
+## Come creare una newsletter multilingue con contenuti condizionali
+
+Scoprite come aggiungere contenuti condizionali a una distribuzione, ad esempio una newsletter multilingue.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
