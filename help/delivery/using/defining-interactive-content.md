@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Per ulteriori informazioni sul test e l&#39;invio di e-mail AMP, consultate [Tar
 Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign. Per utilizzarlo, il pacchetto deve essere installato. Al termine, riavviate il server per prendere in considerazione il pacchetto.
 
 >[!NOTE]
->>Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, incluso il server [](../../installation/using/mid-sourcing-server.md) mid-sourcing e l&#39;istanza [di](../../message-center/using/creating-a-shared-connection.md#execution-instance)esecuzione. Contattate il vostro responsabile commerciale.
+> Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, incluso il server [](../../installation/using/mid-sourcing-server.md) mid-sourcing e l&#39;istanza [di](../../message-center/using/creating-a-shared-connection.md#execution-instance)esecuzione. Contattate il vostro responsabile commerciale.
 
 
 ## Informazioni su AMP per e-mail {#about-amp-for-email}
@@ -46,11 +46,11 @@ Ad esempio:
 * Il contenuto rimane aggiornato nel messaggio.
 * I destinatari possono intervenire come se rispondessero a un modulo senza uscire dalla casella in entrata.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#amp-email-video)
-
 AMP per e-mail è compatibile con le e-mail esistenti. La versione AMP del messaggio viene incorporata nell&#39;e-mail come nuova parte MIME, oltre all&#39;HTML e/o al testo normale, garantendo la compatibilità tra tutti i client e-mail.
 
 Per ulteriori informazioni su formato e specifiche dell&#39;e-mail AMP, consultate la documentazione [per gli sviluppatori](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)AMP.
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#amp-email-video)
 
 ## Passaggi chiave per utilizzare AMP per e-mail con  Adobe Campaign {#key-steps-to-use-amp}
 
