@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,9 @@ I campi di personalizzazione sono utilizzati per la personalizzazione di primo l
 
 Ad esempio, il campo di personalizzazione con la sintassi **&lt;%= receive.LastName %>** indica a  Adobe Campaign di inserire il nome del destinatario nel database (tabella del destinatario).
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >Il contenuto dei campi di personalizzazione non può superare i 1024 caratteri.
 
@@ -124,7 +126,7 @@ Il valore predefinito è 5 secondi.
 
 Se impostate questa opzione su 0, non vi sarà alcun limite di tempo per la fase di personalizzazione.
 
-## Come personalizzare le e-mail utilizzando i campi di personalizzazione
+## Come personalizzare le e-mail utilizzando i campi di personalizzazione {#personalization-field-video}
 
 Scoprite come aggiungere un campo di personalizzazione alla riga dell&#39;oggetto e al contenuto di una distribuzione tramite e-mail.
 
