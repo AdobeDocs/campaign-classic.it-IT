@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7069'
 ht-degree: 13%
@@ -38,7 +38,7 @@ I video introduttivi sono ora disponibili sui seguenti argomenti:
 
 * [Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign/using/about-campaign-typologies.md)
 
-* [Come creare un messaggio e-mail in una campagna](../../campaign/using/designing-marketing-campaigns.md)
+* [Come creare un messaggio e-mail in una campagna](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [Come creare una newsletter multilingue con contenuti condizionali](../../delivery/using/conditional-content.md)
 
