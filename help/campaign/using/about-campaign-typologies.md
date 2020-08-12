@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 5%
 # Informazioni sulle tipologie delle campagne{#about-campaign-typologies}
 
 Ottimizzazione campagna è il modulo Adobe Campaign  che consente di controllare, filtrare e monitorare l&#39;invio di consegne. Per evitare conflitti tra campagne,  Adobe Campaign può testare diverse combinazioni applicando regole di vincolo specifiche. Questo garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti e le politiche di comunicazione aziendali.
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#typologies-video)
 
 >[!NOTE]
 >
@@ -69,7 +71,7 @@ I passaggi per creare e applicare una tipologia alle consegne sono elencati di s
 
 Durante la preparazione della consegna, i destinatari sono esclusi quando il criterio è soddisfatto. Per monitorare le esclusioni, puoi controllare i registri. Esempi di utilizzo delle regole di tipo pressione sono disponibili in [questa pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia
+## Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia {#typologies-video}
 
 Questo video spiega come implementare la gestione della fatica in Adobe Campaign Classic sfruttando le regole della tipologia.
 
