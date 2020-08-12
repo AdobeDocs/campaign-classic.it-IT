@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 3%
@@ -126,7 +126,7 @@ Il valore predefinito è 5 secondi.
 
 Se impostate questa opzione su 0, non vi sarà alcun limite di tempo per la fase di personalizzazione.
 
-## Come personalizzare le e-mail utilizzando i campi di personalizzazione {#personalization-field-video}
+## Come personalizzare le e-mail utilizzando i campi di personalizzazione {#personalization-fields-video}
 
 Scoprite come aggiungere un campo di personalizzazione alla riga dell&#39;oggetto e al contenuto di una distribuzione tramite e-mail.
 
