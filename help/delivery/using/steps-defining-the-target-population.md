@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1578'
 ht-degree: 0%
 
 ---
@@ -174,6 +174,9 @@ Potete ridurre la dimensione della popolazione di destinazione. A tal fine, spec
 
 La prova è un messaggio speciale che consente di verificare la consegna prima di inviarla alla destinazione principale. I destinatari della prova sono responsabili dell&#39;approvazione sia del modulo che del contenuto del messaggio.
 
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#seeds-and-proofs-video)
+
+
 Per selezionare la destinazione delle prove, effettuate le seguenti operazioni:
 
 1. Fate clic sul **[!UICONTROL To]** collegamento.
@@ -230,7 +233,7 @@ Potete utilizzare **[!UICONTROL Seed addresses]** come destinazione le prove: qu
 
 È possibile combinare la definizione di una destinazione di prova specifica e l&#39;uso di indirizzi di prova utilizzando l&#39; **[!UICONTROL Specific target and Seed addresses]** opzione. Le configurazioni correlate vengono quindi definite in due sottoschede separate.
 
-## Come gestire sementi e prove in un&#39;e-mail
+## Come gestire sementi e prove in un&#39;e-mail {#seeds-and-proofs-video}
 
 Questo video illustra come aggiungere sementi e prove a un&#39;e-mail esistente e come inviarla.
 
