@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 
 # Creating a delivery template{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#delivery-template-video)
 
 ## Conversione di una consegna esistente in un modello {#converting-an-existing-delivery-to-a-template}
 
@@ -74,7 +76,7 @@ Per configurare un modello di consegna, eseguite i seguenti passaggi:
 >
 >Per evitare errori di configurazione, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
 
-## Come configurare un modello di consegna
+## Come configurare un modello di consegna {#delivery-template-video}
 
 Il seguente video illustra come configurare un modello per una distribuzione ad hoc.
 
