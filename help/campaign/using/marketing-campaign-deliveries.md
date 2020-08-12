@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 # Distribuzione di campagne di marketing {#marketing-campaign-deliveries}
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
 
 ## Creazione di consegne {#creating-deliveries}
 
@@ -78,6 +80,13 @@ La guida [Automazione con i flussi di lavoro](../../workflow/using/architecture.
 >[!IMPORTANT]
 >
 >Nella stessa campagna, non potete impostare più di 28 flussi di lavoro. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
+
+### Come creare un messaggio e-mail in una campagna {#create-email-video}
+
+In questo video viene illustrato come creare una campagna e un’e-mail in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Creating a targeting workflow {#creating-a-targeting-workflow}
 
