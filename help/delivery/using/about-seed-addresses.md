@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,9 @@ Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispond
 
 Una delle ragioni principali per utilizzarli è **la protezione** della mailing list. L&#39;inserimento di indirizzi iniziali nella mailing list consente di notare se viene utilizzato da un terzo, in quanto gli indirizzi iniziali che contiene riceveranno le consegne inviate alla mailing list.
 
-Inoltre, gli indirizzi iniziali consentono di **visualizzare in anteprima e verificare la personalizzazione e il rendering** delle consegne prima del loro invio, inviando loro le prove (vedere [Uso degli indirizzi iniziali come prova](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Inoltre, gli indirizzi iniziali consentono di **visualizzare in anteprima e verificare la personalizzazione delle consegne e il rendering** prima del loro invio, inviando loro le prove (vedere [Uso degli indirizzi iniziali come prova](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 La funzione degli indirizzi di base presenta i seguenti vantaggi:
 
@@ -52,7 +54,8 @@ Per le consegne per corrispondenza diretta, gli indirizzi iniziali vengono aggiu
 >Per le consegne per corrispondenza diretta, il formato del file di estrazione deve rispettare i seguenti limiti:
 >
 >* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
+
 >
 
 
