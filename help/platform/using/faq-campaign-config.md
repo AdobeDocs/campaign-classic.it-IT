@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sulle impostazioni delle campagne
+title: Domande frequenti sulle impostazioni di Campaign
 seo-title: Come configurare Campaign
 description: Domande frequenti su Campaign Classic
 page-status-flag: never-activated
@@ -13,103 +13,103 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Domande frequenti sulle impostazioni delle campagne {#settings-faq}
+# Domande frequenti sulle impostazioni di Campaign {#settings-faq}
 
-Scopri le configurazioni chiave per configurare l&#39;istanza di Campaign in base alle tue esigenze.
+Scopri le configurazioni principali per impostare l’istanza di Campaign in base alle tue esigenze.
 
-## Posso cambiare la lingua dell&#39;interfaccia di Campaign? {#can-i-change-the-language-of-campaign-interface-}
+## Posso cambiare la lingua dell’interfaccia di Campaign? {#can-i-change-the-language-of-campaign-interface-}
 
-La lingua della campagna viene selezionata al momento della creazione dell&#39;istanza. Non si può cambiare dopo. For more on this, refer to [this section](../../installation/using/creating-an-instance-and-logging-on.md).
+La lingua di Campaign viene selezionata al momento della creazione dell’istanza. Non puoi modificarla in un secondo momento. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/creating-an-instance-and-logging-on.md).
 
-L&#39;interfaccia utente di Adobe Campaign è disponibile in 4 lingue: Inglese, francese, tedesco e giapponese. Tenere presente che la console client e il server devono essere impostati con la stessa lingua. Ogni istanza Campaign può essere eseguita in una sola lingua.
+L’interfaccia utente di Adobe Campaign è disponibile in 4 lingue: inglese, francese, tedesco e giapponese. Tieni presente che la console del client e il server devono essere impostati nella stessa lingua. Ogni istanza di Campaign può essere eseguita in una sola lingua.
 
-Per l&#39;inglese, durante l&#39;installazione di Campaign, potete selezionare Inglese USA o Inglese Regno Unito: differiscono per i formati di data e ora. For more on these differences refer to [this section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+Per l’inglese, durante l’installazione di Campaign puoi selezionare inglese US o inglese GB, che differiscono nei formati di data e ora. Per ulteriori informazioni su tali differenze, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Posso utilizzare Campaign Classic con altre soluzioni Adobe? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 
-Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gestione delle campagne di Adobe Campaign con un set di soluzioni create per aiutarti a personalizzare l&#39;esperienza degli utenti.
+Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gestione delle campagne di Adobe Campaign con una serie di soluzioni create per aiutarti a personalizzare la user experience.
 
-Fai clic qui per scoprire [come lavorare con altre soluzioni](../../integrations/using/about-campaign-integrations.md) Adobe e [come configurare IMS in Campaign](../../integrations/using/about-adobe-id.md).
+Fai clic qui per scoprire [come lavorare con altre soluzioni Adobe](../../integrations/using/about-campaign-integrations.md) e [come impostare IMS in Campaign](../../integrations/using/about-adobe-id.md).
 
-## Come posso impostare le funzionalità di tracciamento nell&#39;istanza di Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## Come posso impostare le funzionalità di tracking nella mia istanza di Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
-In qualità di utente esperto, puoi configurare le funzionalità di tracciamento nell&#39;istanza Campaign.
+In qualità di utente esperto, puoi configurare le funzionalità di tracking nella tua istanza di Campaign.
 
-[Fai clic qui per saperne di più](../../installation/using/deploying-an-instance.md#tracking-configuration).
+[Fai clic qui per ulteriori informazioni](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Come configurare la recapito delle e-mail? {#how-to-configure-email-deliverability-}
+## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla sezione di configurazione [della](../../delivery/using/about-deliverability.md#configuration) recapito, leggi le raccomandazioni tecniche sulla recapito per comprendere come configurare la tua istanza al fine di massimizzare le funzionalità di distribuzione delle campagne.
+Oltre alla sezione [Configurazione del recapito messaggi](../../delivery/using/about-deliverability.md#configuration), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
-[Fai clic qui per saperne di più](../../delivery/using/technical-recommendations.md).
+[Fai clic qui per ulteriori informazioni](../../delivery/using/technical-recommendations.md).
 
-## Come posso implementare l&#39;approvazione dei contenuti? {#how-can-i-implement-content-approval-}
+## Come posso implementare l’approvazione dei contenuti? {#how-can-i-implement-content-approval-}
 
-Campaign consente di impostare i processi di approvazione per i passaggi principali della campagna di marketing, in modalità collaborativa. Per ogni campagna puoi approvare target di consegna, contenuti e costi. Gli operatori Adobe Campaign incaricati dell&#39;approvazione possono ricevere notifiche via e-mail e accettare o rifiutare l&#39;approvazione dalla console o tramite una connessione Web.
+Campaign ti consente di impostare processi di approvazione per i passaggi principali della campagna di marketing, in modalità collaborativa. Per ogni campagna puoi approvare il target di consegna, i contenuti e i costi.  Gli operatori di Adobe Campaign incaricati dell’approvazione possono ricevere una notifica tramite e-mail e accettare o rifiutare l’approvazione dalla console o tramite una connessione web.
 
-[Fai clic qui per saperne di più](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e scoprire i passaggi per implementare l&#39;approvazione dei contenuti di distribuzione in Campaign.
+[Fai clic qui per ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e per scoprire i passaggi per implementare l’approvazione dei contenuti della tua consegna in Campaign.
 
-## Come posso accedere ai dati memorizzati in un database esterno? {#how-can-i-access-data-stored-in-an-external-database-}
+## Come posso accedere ai dati archiviati in un database esterno? {#how-can-i-access-data-stored-in-an-external-database-}
 
-Adobe Campaign fornisce l&#39;opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
+Adobe Campaign offre l’opzione Federated Data Access (FDA) per elaborare le informazioni archiviare in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
 
-[Fai clic qui per saperne di più](../../platform/using/connecting-to-database.md).
+[Fai clic qui per ulteriori informazioni](../../platform/using/connecting-to-database.md).
 
 ## A quali database esterni posso collegare Campaign? {#which-external-databases-can-i-connect-campaign-to-}
 
-I database esterni compatibili con Campaign tramite Federated Data Access (FDA) sono elencati nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+I database esterni compatibili con Campaign tramite Federated Data Access (FDA) sono elencati nella [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
 
-## Adobe Campaign può integrarsi con LDAP? {#can-adobe-campaign-integrate-with-ldap-}
+## Adobe Campaign può integrarsi con il protocollo LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
-In qualità di clienti interni/ibridi, puoi integrare Campaign Classic con la tua directory LDAP.
+In qualità di cliente on-premise/ibrido, puoi integrare Campaign Classic con la tua directory LDAP.
 
-[Clicca qui per scoprire come](../../installation/using/connecting-through-ldap.md).
+[Fai clic qui per scoprire come](../../installation/using/connecting-through-ldap.md).
 
-## Come posso impostare i connettori CRM in Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
+## Come posso impostare i connettori di gestione delle relazioni con i clienti in Campaign? {#how-can-i-set-up-crm-connectors-in-campaign-}
 
-Adobe Campaign fornisce diversi connettori CRM per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori CRM consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l&#39;integrazione dell&#39;applicazione con diverse applicazioni di terze parti e aziendali.
+Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i clienti per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori di gestione delle relazioni con i clienti ti consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l’integrazione dell’applicazione con varie applicazioni di terze parti e aziendali.
 
-Questi connettori consentono un&#39;integrazione rapida e semplice dei dati: Adobe Campaign fornisce una procedura guidata dedicata per la raccolta e la selezione delle risorse tra le tabelle disponibili in CRM. Questo garantisce la sincronizzazione bidirezionale per garantire che i dati siano sempre aggiornati in tutti i sistemi.
+Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe Campaign offre una procedura guidata dedicata per la raccolta e la selezione dalle tabelle disponibili nella gestione delle relazioni con i clienti. Ciò garantisce la sincronizzazione bidirezionale per far sì che i dati siano sempre aggiornati in tutti i sistemi.
 
-Leggi [Configurare i connettori](../../platform/using/crm-connectors.md) CRM per apprendere come sincronizzare lo strumento CRM con Adobe Campaign. Guardate questo video sull&#39;integrazione con [Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+Consulta [Configurare i connettori di gestione delle relazioni con i clienti](../../platform/using/crm-connectors.md) per scoprire come sincronizzare il tuo strumento di gestione delle relazioni con i clienti con Adobe Campaign. Guarda questo video relativo a un caso di utilizzo sull’[integrazione di Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-## Come eseguire Soft Cache Clear quando i problemi sono specifici del computer o dell&#39;utente? {#perform-soft-cache-clear}
+## Come si esegue la cancellazione della Soft Cache quando i problemi riguardano nello specifico il computer o l’utente? {#perform-soft-cache-clear}
 
-In caso di problemi come il nuovo logo che si riflette correttamente, in grado di esportare con successo i dati specifici del computer o dell&#39;utente, potrebbe essere necessario eseguire una cancellazione della cache software con Windows (Windows 7, Windows XP, Windows 10).
+In caso di problemi quali la corretta riflessione dei nuovi loghi, in grado di esportare correttamente i dati specifici per il computer o l’utente, potresti dover eseguire una cancellazione della Soft Cache con Windows (Windows 7, Windows XP, Windows 10).
 
-Dopo aver effettuato l&#39;accesso, andate a **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Dopo questo, disconnettetevi ed effettuate nuovamente l&#39;accesso.
+Dopo aver effettuato l’accesso, passa a **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. In seguito, effettua la disconnessione e accedi nuovamente.
 
 ![](assets/faq_soft_cache.png)
 
-Se questo non è ancora utile, provate a cancellare la cache rigida eseguendo i passaggi indicati di seguito.
+Se questo non risolve il problema, prova a cancellare la Hard Cache eseguendo i passaggi indicati di seguito.
 
-## Come eseguire Hard Cache Clear quando i problemi sono specifici del computer o dell&#39;utente? {#perform-hard-cache-clear}
+## Come si esegue la cancellazione della Hard Cache quando i problemi riguardano nello specifico il computer o l’utente? {#perform-hard-cache-clear}
 
-In caso di problemi quali il riflesso corretto dei nuovi logo, in grado di esportare con successo i dati specifici del computer o dell&#39;utente, potrebbe essere necessario eseguire una cancellazione dalla cache rigida con Windows (Windows 7, Windows XP, Windows 10).
+In caso di problemi quali la corretta riflessione dei nuovi loghi, in grado di esportare correttamente i dati specifici per il computer o l’utente, potresti dover eseguire una cancellazione della Hard Cache con Windows (Windows 7, Windows XP, Windows 10).
 
-1. Nella console client, scegliete **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+1. Nella console del client, scegli **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
 
-1. Disconnettetevi e chiudete la console client (client avanzato).
+1. Effettua la disconnessione e chiudi la console del client (rich client).
 
-1. Andate nelle seguenti posizioni, in base alla versione del sistema operativo in uso:
+1. Vai ai seguenti percorsi, in base alla versione del sistema operativo in uso:
 
-   * Windows 7: C:\Users\&lt; Nome utente > \AppData\Roaming\Neolane\NL_5\
-   * Windows XP: C:\Documents and Settings\&lt; Nome utente >\Application Data\Neolane\NL_5
-   Qui troverete molti file xml denominati nlclient-config-&lt; valore alfanumerico >.xml.
+   * Windows 7: C:\Users\&lt; Nome utente >\AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Nome utente >\Application Data\Neolane\NL_5
+   Qui troverai molti file xml denominati nlclient-config-&lt; valore alfanumerico >.xml.
 
-1. Eliminate questi file xml e le cartelle associate.
+1. Elimina questi file xml e le cartelle associate.
 
    >[!IMPORTANT]
    >
-   >Non eliminate il file nlclient_cnx.xml.
+   >Non eliminare il file nlclient_cnx.xml.
 
-1. Accedere alla console client.
+1. Accedi alla console del client.
