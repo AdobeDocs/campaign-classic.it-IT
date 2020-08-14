@@ -18,78 +18,78 @@ translation-type: tm+mt
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# About Adobe Campaign Classic{#about-adobe-campaign-classic}
+# Informazioni su Adobe Campaign Classic{#about-adobe-campaign-classic}
 
-Per offrire un elevato grado di coinvolgimento dei clienti e grandi esperienze, i marchi devono creare percorsi coerenti con i clienti a tutti i punti di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente le campagne di marketing su più canali, in modo da offrire un alto ritorno sugli investimenti di marketing e promuovere la fidelizzazione.
+Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, i brand devono creare customer journey coerenti ad ogni punto di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente campagne di marketing cross-channel, in modo tale da offrire un ritorno elevato sull’investimento marketing e promuovere la fidelizzazione.
 
- Adobe Campaign consente di coordinare la creazione di campagne di marketing conversazionali.  Adobe Campaign offre funzionalità innovative per modellare, semplificare e automatizzare i processi di comunicazione marketing e con i clienti.
+ Adobe Campaign ti consente di coordinare la creazione di campagne di marketing conversazionali.  Adobe Campaign dispone di funzioni innovative per modellare, semplificare e automatizzare i processi di marketing e di comunicazione con i clienti.
 
 >[!NOTE]
 >
->Adobe Campaign Classic è disponibile nelle release v6.11 e v7. Eccetto quando indicato, i materiali di aiuto si applicano a entrambe le versioni, nella build più recente. Le schermate riflettono l&#39;interfaccia utente Campaign Classic v7.
+> Adobe Campaign Classic è disponibile nelle versioni v6.11 e v7. Eccetto quando indicato, i materiali di supporto si applicano a entrambe le versioni, nella build più recente. Le schermate rappresentano l’interfaccia utente di Campaign Classic v7.
 
-## Funzionalità chiave {#key-capabilities}
+## Funzionalità principali {#key-capabilities}
 
- Adobe Campaign fornisce una piattaforma per la progettazione di esperienze cliente cross-channel e offre un ambiente per l’orchestrazione visiva delle campagne, la gestione delle interazioni in tempo reale e l’esecuzione cross-channel. 
+ Adobe Campaign fornisce una piattaforma per la progettazione di customer experience cross-channel e fornisce un ambiente per l’orchestrazione visiva delle campagne, la gestione delle interazioni in tempo reale e l’esecuzione cross-channel.
 
-Il ciclo di campagne di marketing in  Adobe Campaign illustra le aree principali di funzionalità del prodotto:
+Il ciclo della campagna di marketing in Adobe Campaign illustra le principali aree di funzionalità del prodotto:
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Integrated customer profile {#integrated-customer-profile}
+### Profilo cliente integrato {#integrated-customer-profile}
 
-Profili (clienti, potenziali clienti, abbonati a newsletter, ecc.) sono centralizzati nel database Adobe Campaign . Esistono molti possibili meccanismi per l&#39;acquisizione dei profili e la creazione di questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi informativi. Con  Adobe Campaign, puoi includere la cronologia di marketing, le informazioni di acquisto, le preferenze, i dati CRM e qualsiasi dato PII rilevante in una vista consolidata per analizzare e intraprendere azioni.
+I profili (clienti, potenziali clienti, abbonati a newsletter, ecc.) sono centralizzati nel database di Adobe Campaign. Esistono molti possibili meccanismi per l’acquisizione di profili e la creazione di questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi di informazioni. Con Adobe Campaign, puoi incorporare la cronologia di marketing, le informazioni di acquisto, le preferenze, i dati di gestione delle relazioni con i clienti ed eventuali dati PII rilevanti in una vista consolidata per analizzare e intraprendere azioni.
 
-In  Adobe Campaign, i destinatari sono i profili predefiniti destinati all&#39;invio (e-mail, SMS ecc.). Grazie ai dati dei destinatari memorizzati nel database, potrai filtrare la destinazione che riceverà una determinata consegna e aggiungere dati di personalizzazione nei contenuti di distribuzione. Nel database sono presenti altri tipi di profili. Sono progettati per usi diversi. Ad esempio, i profili iniziali vengono creati per verificare le consegne prima che vengano inviati alla destinazione finale.
+In Adobe Campaign, i destinatari sono i profili predefiniti oggetto di targeting per l’invio di consegne (e-mail, SMS, ecc.). Grazie ai dati sui destinatari archiviati nel database, potrai filtrare il target che riceverà una determinata consegna e aggiungere dati di personalizzazione nei contenuti della consegna. Nel database sono presenti altri tipi di profili. Essi sono progettati per diversi utilizzi. Ad esempio, i profili di seed vengono creati per testare le consegne prima che vengano inviate al target finale.
 
 Le nozioni di base sulla gestione dei profili sono illustrate in [Informazioni sui profili](../../platform/using/about-profiles.md).
 
 ### Segmentazione mirata {#targeted-segmentation}
 
- Adobe Campaign offre funzioni di segmentazione e targeting potenti e intuitive che consentono di creare offerte mirate e differenziate. La funzionalità di analisi descrittiva consente di analizzare le informazioni a monte e a valle delle campagne di marketing, e la funzionalità di gestione dei filtri e editor [di query](../../platform/using/about-queries-in-campaign.md) grafiche consente di filtrare la popolazione di abbonati e di campionare o creare gruppi di destinazione in base a un numero illimitato di criteri. Le funzioni di analisi e targeting sono descritte in [questa pagina](../../reporting/using/about-descriptive-analysis.md) e nella sezione [Creazione di filtri](../../platform/using/creating-filters.md) .
+ Adobe Campaign dispone di funzioni di segmentazione e targeting potenti e intuitive che ti consentono di creare offerte altamente mirate e differenziate. La funzionalità di analisi descrittiva ti consente di analizzare le informazioni a monte e a valle delle campagne di marketing, e la funzionalità di gestione dei filtri e di [editor di query grafiche](../../platform/using/about-queries-in-campaign.md) ti consente di filtrare la popolazione degli abbonati e di campionare o creare gruppi target in base a un numero illimitato di criteri. Le funzioni di analisi e di targeting sono descritte in [questa pagina](../../reporting/using/about-descriptive-analysis.md) e nella sezione [Creazione di filtri](../../platform/using/creating-filters.md).
 
-La funzionalità avanzata di gestione dei dati estende le funzionalità di elaborazione dei dati. Semplifica e ottimizza il processo di targeting includendo i dati non modellati nel datamart. Questa funzionalità è dettagliata in [questa pagina](../../workflow/using/targeting-data.md#data-management).
+La funzionalità avanzata di gestione dei dati estende le funzionalità di elaborazione dei dati. Semplifica e ottimizza il processo di targeting includendo dati non modellati nel data mart. Questa funzionalità è descritta in [questa pagina](../../workflow/using/targeting-data.md#data-management).
 
-### Organizzazione delle campagne tra canali {#cross-channel-campaign-orchestration}
+### Orchestrazione di campagne cross-channel {#cross-channel-campaign-orchestration}
 
- Adobe Campaign consente di progettare e orchestrare campagne mirate e personalizzate su più canali: e-mail, posta diretta, SMS, notifica push. Un&#39;unica interfaccia offre tutte le funzioni necessarie per pianificare, orchestrare, configurare, personalizzare, automatizzare, eseguire e misurare tutte le campagne e le comunicazioni. Per ulteriori informazioni sulla pianificazione e l&#39;esecuzione delle campagne, consultare [questa pagina](../../campaign/using/setting-up-marketing-campaigns.md).
+ Adobe Campaign ti consente di progettare e orchestrare campagne mirate e personalizzate su più canali: e-mail, direct mail, SMS, notifica push. Un’unica interfaccia ti offre tutte le funzioni necessarie per pianificare, orchestrare, configurare, personalizzare, automatizzare, eseguire e misurare tutte le tue campagne e comunicazioni. Per ulteriori informazioni sulla programmazione e sull’esecuzione di campagne, consulta [questa pagina](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Personalizzazione e interazione in tempo reale {#personalization-and-real-time-interaction}
 
-Attira l&#39;attenzione dei clienti e migliora i tassi di risposta grazie alla personalizzazione avanzata dei contenuti e delle intestazioni dei messaggi in base ai profili e alle preferenze dei clienti. Per ulteriori informazioni sulla gestione del contenuto dei messaggi e la personalizzazione, consulta [questa pagina](../../delivery/using/about-personalization.md). La gestione collaborativa dei contenuti, dei circuiti di notifica e approvazione sono descritti in [questa sezione](../../campaign/using/about-marketing-resource-management.md).
+Attira l’attenzione dei clienti e migliora i tassi di risposta grazie alla personalizzazione avanzata dei contenuti dei messaggi e delle intestazioni in base ai profili e alle preferenze dei clienti. Per ulteriori informazioni sulla gestione e la personalizzazione del contenuto dei messaggi, consulta [questa pagina](../../delivery/using/about-personalization.md). La gestione collaborativa dei contenuti, le notifiche e i circuiti di approvazione sono descritti in [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 ### Analisi e reporting {#analysis-and-reporting}
 
- Adobe Campaign consente di monitorare e interpretare il comportamento dei clienti arricchendo gradualmente i loro dati e profili. Gli strumenti di reporting e analisi consentono di sfruttare al meglio ogni nuova campagna, di indirizzare meglio le iniziative di marketing e di ottimizzarne l&#39;impatto e il ritorno sull&#39;investimento. Per ulteriori informazioni, consultare [questa pagina](../../reporting/using/delivery-reports.md) .
+ Adobe Campaign ti consente di monitorare e interpretare il comportamento dei clienti arricchendo gradualmente i loro dati e profili. Gli strumenti di reporting e di analisi ti consentono di sfruttare al meglio ogni nuova campagna, di eseguire meglio il targeting delle iniziative di marketing e di ottimizzarne l’impatto e il ritorno sull’investimento. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/delivery-reports.md).
 
-### Integrazioni Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+### Integrazioni con Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Puoi combinare le funzionalità di distribuzione e le funzionalità avanzate di gestione delle campagne di  Adobe Campaign con una serie di soluzioni create per personalizzare l&#39;esperienza degli utenti: Adobe Experience Manager,  attivatori Adobe Analytics,  Adobe Target o Adobe Experience Cloud, ad esempio. Puoi anche effettuare l&#39;integrazione  Adobe IMS e accedere a Campaign con il tuo Adobe ID . Per ulteriori informazioni sulle integrazioni tra soluzioni e autenticazione, consulta [questa sezione](../../integrations/using/about-adobe-id.md).
+Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gestione delle campagne di Adobe Campaign con una serie di soluzioni create per aiutarti a personalizzare la user experience: Adobe Experience Manager, Adobe Analytics, Adobe Target o i trigger di Adobe Experience Cloud, ad esempio. Puoi inoltre effettuare l’integrazione con Adobe IMS e accedere a Campaign con il tuo Adobe ID. Per ulteriori informazioni sulle integrazioni tra soluzioni e di autenticazione, consulta [questa sezione](../../integrations/using/about-adobe-id.md).
 
 ## Funzionalità di base e componenti aggiuntivi {#core-capabilities-and-add-ons}
 
- Adobe Campaign offre una serie di funzionalità che consentono di implementare e ottimizzare le funzionalità di marketing basato sulla conversazione in base alle esigenze e all&#39;architettura. Alcune di queste sono funzionalità di base e altre dipendono dall&#39;installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Descrizione](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)prodotto Adobe Campaign Classic.
+ Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing conversazionale in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall’installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Adobe Campaign Classic Product Description](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
-Sono disponibili le seguenti funzionalità. A seconda del contratto di licenza, alcune di queste funzionalità possono essere disponibili o meno nell&#39;istanza.
+Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licenza, alcune di queste funzionalità possono essere disponibili o meno nella tua istanza.
 
-* [Canali](../../delivery/using/steps-about-delivery-creation-steps.md) : progettazione e invio di consegne su vari canali: email, SMS, Line, app mobile, posta diretta,
-* [Campaign](../../campaign/using/designing-marketing-campaigns.md) - orchestrare campagne tra canali,
-* [MRM](../../campaign/using/about-marketing-resource-management.md) - gestire risorse e budget di marketing,
-* [Interazione](../../interaction/using/interaction-and-offer-management.md) - gestione delle offerte con Campaign
-* [Centro](../../message-center/using/about-transactional-messaging.md) messaggi - invia messaggi transazionali via e-mail, SMS o su app mobili,
-* [Social Marketing](../../social/using/about-social-marketing.md) - Comunicare sui social media: Facebook, Twitter,
-* [Workflow](../../workflow/using/about-workflows.md) / Gestione dei dati - automatizzare i processi e gestire i dati con i flussi di lavoro,
-* [applicazioni](../../web/using/about-web-applications.md) Web - creazione di pagine Web e moduli,
-* [Survey Manager](../../web/using/about-surveys.md) - creare sondaggi e sondaggi online,
-* [Content Manager](../../delivery/using/about-content-management.md) - gestione del contenuto delle e-mail,
-* [Distributed Marketing](../../campaign/using/about-distributed-marketing.md) - campagne coordinate per enti centrali e locali,
-* [Response Manager](../../campaign/using/about-response-manager.md) : gestione della risposta del cliente,
-* [Connettori](../../platform/using/about-connectors.md) - utilizzare connettori per comunicare con soluzioni esterne e motori di database,
-* [Servizi](../../configuration/using/about-web-services.md) Web - utilizzare Campaign tramite API/servizi Web,
-* [Rapporti](../../reporting/using/about-adobe-campaign-reporting-tools.md) : accesso ai report incorporati, analisi dei dati e progettazione di report personalizzati.
+* [Canali](../../delivery/using/steps-about-delivery-creation-steps.md): progettare e inviare consegne su vari canali: e-mail, SMS, Line, app mobile, direct mail,
+* [Campagna](../../campaign/using/designing-marketing-campaigns.md): orchestrare campagne cross-channel,
+* [MRM](../../campaign/using/about-marketing-resource-management.md): gestire risorse di marketing e budget,
+* [Interazione](../../interaction/using/interaction-and-offer-management.md): gestione delle offerte con Campaign,
+* [Centro messaggi](../../message-center/using/about-transactional-messaging.md): inviare messaggi transazionali tramite e-mail, SMS o su app mobili,
+* [Social marketing](../../social/using/about-social-marketing.md): comunicare sui social media: Facebook, Twitter,
+* [Flusso di lavoro](../../workflow/using/about-workflows.md) / Gestione dati: automatizzare i processi e gestire i dati con i flussi di lavoro,
+* [Applicazioni web](../../web/using/about-web-applications.md): creare pagine e moduli web,
+* [Gestione dei sondaggi](../../web/using/about-surveys.md): creare sondaggi e votazioni online,
+* [Gestione dei contenuti](../../delivery/using/about-content-management.md): gestire il contenuto delle e-mail,
+* [Marketing distribuito](../../campaign/using/about-distributed-marketing.md): campagne coordinate per enti centrali e locali,
+* [Gestione della risposta](../../campaign/using/about-response-manager.md): gestire la risposta dei clienti,
+* [Connettori](../../platform/using/about-connectors.md): utilizzare i connettori per comunicare con soluzioni e motori di database esterni,
+* [Servizi web](../../configuration/using/about-web-services.md): utilizzare Campaign tramite API/servizi web,
+* [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md): accedere ai report integrati, analizzare i dati e progettare report personalizzati.
 
