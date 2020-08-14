@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione precedenti
-seo-title: Note sulla versione precedenti
+title: Note sulla versione legacy
+seo-title: Note sulla versione legacy
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -11,11 +11,14 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+workflow-type: ht
+source-wordcount: '11'
+ht-degree: 100%
 
 ---
 
 
-# Note sulla versione precedenti{#legacy-release-notes}
+# Note sulla versione legacy{#legacy-release-notes}
 
