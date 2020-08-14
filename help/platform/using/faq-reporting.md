@@ -1,6 +1,6 @@
 ---
-title: Domande frequenti sui rapporti
-seo-title: Esplorare i dati e creare rapporti
+title: Domande frequenti sul reporting
+seo-title: Esplorare i dati e creare report
 description: Domande frequenti su Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
@@ -13,46 +13,49 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+workflow-type: ht
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
 
-# Domande frequenti sui rapporti {#reporting-faq}
+# Domande frequenti sul reporting {#reporting-faq}
 
-## Come è possibile creare nuovi rapporti? {#how-can-i-create-new-reports-}
+## Come posso creare nuovi report? {#how-can-i-create-new-reports-}
 
-Oltre ai rapporti incorporati, Adobe Campaign consente di generare rapporti in vari contesti e per soddisfare esigenze diverse.
+In aggiunta ai report incorporati, Adobe Campaign ti consente di generare report in vari contesti e di soddisfare esigenze diverse.
 
-Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati.
+ Adobe Campaign non è uno strumento di reporting specializzato: i report creati in Adobe Campaign ti consentono principalmente di visualizzare i dati aggregati.
 
-[Fai clic qui per saperne di più](../../reporting/using/about-adobe-campaign-reporting-tools.md) sulle funzionalità di reporting delle campagne.
+[Fai clic qui per ulteriori informazioni](../../reporting/using/about-adobe-campaign-reporting-tools.md) sulle funzionalità di reporting di Campaign.
 
-## Come posso progettare e condividere rapporti statistici sulle popolazioni? {#how-can-i-design-and-share-statistic-reports-on-populations-}
+## Come posso progettare e condividere report statistici sulle popolazioni? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
-I rapporti [di analisi](../../reporting/using/about-descriptive-analysis.md) descrittiva di Adobe Campaign consentono di progettare e condividere rapporti statistici sulle popolazioni, [esplorare un pubblico](../../reporting/using/use-cases.md#analyzing-a-population)di newsletter o [creare un rapporto sulla popolazione di una transizione](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)al flusso di lavoro. È inoltre possibile, ad esempio, [analizzare il tasso di reattività dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)delle newsletter.
+ I [report di analisi descrittiva](../../reporting/using/about-descriptive-analysis.md) di Adobe Campaign ti consentono di progettare e condividere report statistici sulle popolazioni, di [esplorare il pubblico di una newsletter](../../reporting/using/use-cases.md#analyzing-a-population) o di [creare un report sulla popolazione di una transizione di flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Inoltre puoi, ad esempio, [analizzare il tasso di reattività dei destinatari di una newsletter](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-[Clicca qui per saperne di più](../../reporting/using/about-descriptive-analysis.md).
+[Fai clic qui per ulteriori informazioni](../../reporting/using/about-descriptive-analysis.md).
 
 ## Come posso progettare report avanzati sui miei dati? {#how-can-i-design-advanced-reports-on-my-data-}
 
-Con Campaign Classic potete [creare rapporti](../../reporting/using/about-reports-creation-in-campaign.md)avanzati. In qualità di utente esperto, potrete creare e distribuire rapporti personalizzati sui vostri dati.
+Campaign Classic ti consente di [creare report avanzati](../../reporting/using/about-reports-creation-in-campaign.md). In qualità di utente esperto, potrai creare, aggiornare e distribuire report personalizzati sui tuoi dati.
 
-[Clicca qui per saperne di più](../../reporting/using/about-reports-creation-in-campaign.md).
+[Fai clic qui per ulteriori informazioni](../../reporting/using/about-reports-creation-in-campaign.md).
 
-## Cos&#39;è un cubo e come creare tale rapporto? {#what-is-a-cube-and-how-to-create-such-a-report-}
+## Cos’è un cubo e come si crea questo tipo di report? {#what-is-a-cube-and-how-to-create-such-a-report-}
 
-È possibile ampliare le capacità di esplorazione e analisi del database e semplificare la configurazione di rapporti e tabelle da parte degli utenti finali: è sufficiente selezionare un cubo esistente (completamente configurato) al momento della creazione del rapporto o della tabella per elaborare calcoli, misure e statistiche.
+Puoi estendere le capacità di esplorazione e di analisi del database e semplificare la configurazione di report e tabelle da parte degli utenti finali: tutto ciò che devono fare è selezionare un cubo esistente (completamente configurato) durante la creazione del report o della tabella per elaborare calcoli, misure e statistiche.
 
-Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query dei report e nelle applicazioni Web. Possono essere utilizzati e modificati all&#39;interno di tabelle pivot.
+Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query dei report e nelle applicazioni web. Possono essere utilizzati e manipolati all’interno di tabelle pivot.
 
 Scopri come [esplorare i tuoi dati](../../reporting/using/using-cubes-to-explore-data.md) con i cubi.
 
-## Posso creare un rapporto dalle risposte a un sondaggio online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
+## Posso creare un report dalle risposte a un sondaggio online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Leggi [questo caso](../../reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md) d’uso per apprendere come progettare un rapporto per visualizzare le risposte a un sondaggio online.
+Per scoprire come progettare un report per visualizzare le risposte di un sondaggio online, leggi [questo caso d’uso](../../reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md).
 
-## Come posso condividere l&#39;accesso al mio rapporto nell&#39;interfaccia di Campaign? {#how-can-i-share-access-to-my-report}
+## Come posso condividere l’accesso al mio report nell’interfaccia di Campaign? {#how-can-i-share-access-to-my-report}
 
-Puoi definire in quale contesto il rapporto verrà visualizzato nell&#39;interfaccia utente di Adobe Campaign. For more on report access, refer to [this section](../../reporting/using/configuring-access-to-the-report.md).
+Puoi definire in quale contesto il report verrà visualizzato nell’interfaccia utente di Adobe Campaign. Per ulteriori informazioni sull’accesso ai report, consulta [questa sezione](../../reporting/using/configuring-access-to-the-report.md).
