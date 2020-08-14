@@ -1,14 +1,14 @@
 ---
 keywords: Campaign Classic;home;popular topics
-seo-title: ' Adobe Campaign Classic documentazione del prodotto'
+seo-title: Documentazione di Adobe Campaign Classic
 solution: Campaign Classic
-title: ' Adobe Campaign Classic documentazione del prodotto'
+title: Documentazione di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
 source-git-commit: ad0f9bdd2571a8780da464dc3ac8feb7b5aed998
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 25%
+ht-degree: 99%
 
 ---
 
@@ -19,15 +19,18 @@ ht-degree: 25%
 
 ## Novità
 
-* **[Emoticon](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>È ora possibile inserire icone nei messaggi e nell’oggetto
+* **[Emoticon](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Ora puoi inserire emoticon nei messaggi e nell’oggetto
 
-* **[Domande frequenti sull&#39;](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/> accesso al supportoDomande frequenti, procedure ottimali, risorse di aiuto e richieste di assistenza
+* **[Ottenere assistenza](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/>
+Accedi a domande frequenti, best practice e risorse di assistenza e richiedi assistenza
 
-* **[Conformità](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)**<br/> alla privacy Scopri come  Adobe Campaign può aiutarti nella conformità alla privacy
+* **[Conformità in materia di privacy](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)**<br/>
+Scopri in che modo Adobe Campaign può aiutarti con la conformità in materia di privacy
 
-* **[Capacità](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/> di tracciamento Comprendere le capacità e i processi di tracciamento in Campaign
+* **[Funzionalità di tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html)**<br/>
+Comprendi le funzionalità e i processi di tracking in Campaign
 
-* **[Contenuto interattivo con AMP](delivery/using/defining-interactive-content.md)**<br/>Informazioni sull&#39;invio di e-mail dinamiche con il nuovo formato AMP
+* **[Contenuto interattivo con AMP](delivery/using/defining-interactive-content.md)**<br/>Scopri come inviare e-mail dinamiche con il nuovo formato AMP
 
 [Fai clic qui per ulteriori aggiornamenti](/help/rn/using/documentation-updates.md)
 
@@ -45,20 +48,20 @@ ht-degree: 25%
     </a>
     </div>
     <p>
-    <em>Risposte alle domande più frequenti quando si utilizza Campaign Classic</em>
+    <em>Trova risposte alle domande comuni inerenti all’utilizzo di Campaign Classic</em>
     <p>
   </td>
    <td>
-    <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
-      <img alt="Aggiornamento build" src="platform/using/assets/upgrade.png" />
+    <a href="https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html">
+      <img alt="Aggiornamento della build" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html">
-    <strong>Aggiornamento alla build più recente</strong>
+      <a href="https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html">
+    <strong>Eseguire l’aggiornamento alla build più recente</strong>
     </a>
     </div>
     <p>
-    <em>Informazioni sui passaggi e sulle procedure ottimali per eseguire l'aggiornamento della build</em>
+    <em>Scopri i passaggi chiave e le best practice per eseguire un aggiornamento della build</em>
     <p>
   </td>
   <td>
@@ -71,7 +74,7 @@ ht-degree: 25%
     </a>
     </div>
     <p>
-    <em>Progettare e inviare notifiche push personalizzate sui dispositivi mobili</em>
+    <em>Progetta e invia notifiche push personalizzate sui dispositivi mobili</em>
     <p>
   </td>
 </tr>
@@ -82,9 +85,9 @@ ht-degree: 25%
 | Pagine utili | Risorse per sviluppatori |
 |---|---|
 | [Note sulla versione](/help/rn/using/latest-release.md) | [Elenco dei messaggi di errore](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Video dimostrativi](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Modello dati di Campaign](configuration/using/about-data-model.md) |
-| [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Guida introduttiva a Campaign](platform/using/about-adobe-campaign-classic.md) | [Guida all’implementazione](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
-| [Aggiornamento Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Guida di tracciamento](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
-| [Funzioni obsolete](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Elenco di controllo sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Pannello di controllo campagna](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
+| [Video dimostrativi](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html) | [Modello dati di Campaign](configuration/using/about-data-model.md) |
+| [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) | [JSAPI per Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Guida introduttiva a Campaign](platform/using/about-adobe-campaign-classic.md) | [Guida all’implementazione](https://helpx.adobe.com/it/campaign/kb/acc-implementation.html) |
+| [Aggiornamento Gold Standard](https://helpx.adobe.com/it/campaign/kb/gold-standard.html) | [Guida al tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html) |
+| [Funzioni obsolete](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html) | [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html) |
+| [Pannello di controllo Campaign](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
