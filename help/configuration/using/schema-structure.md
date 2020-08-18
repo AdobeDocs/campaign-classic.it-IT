@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+workflow-type: tm+mt
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
@@ -129,7 +132,7 @@ Devono essere rispettate le seguenti regole:
 
 * Solo **`<element>`** gli elementi possono contenere **`<attribute>`** elementi ed **`<element>`** elementi nella struttura XML.
 * Un **`<attribute>`** elemento deve avere un nome univoco all&#39;interno di un **`<element>`**.
-* È consigliabile utilizzare**`<elements>`** nelle stringhe di dati su più righe.
+* Si consiglia di utilizzare **`<elements>`** nelle stringhe di dati con più righe.
 
 ## Tipi di dati {#data-types}
 
@@ -149,7 +152,7 @@ I seguenti tipi di dati sono supportati negli schemi:
 * **byte**, **short**, **long**: numeri interi (1 byte, 2 byte, 4 byte). Esempi: un&#39;età, un numero di conto, un numero di punti, ecc.
 * **double**: numero a virgola mobile a doppia precisione. Esempi: un prezzo, un tasso, ecc.
 * **date**, **datetime**: date e date + ore. Esempi: una data di nascita, una data di acquisto, ecc.
-* **datetimenotz**: data + ora senza dati sul fuso orario.
+* **datetimenotz**: data + ora senza i dati del fuso orario.
 * **timespan**: durate. Esempio: anzianità.
 * **nota**: campi di testo lunghi (righe multiple). Esempi: una descrizione, un commento, ecc.
 * **uuid**: Campi &quot;uniqueidentifier&quot; per supportare un GUID (supportati solo in Microsoft SQL Server).
@@ -173,9 +176,9 @@ Di seguito è riportato lo schema di esempio con i tipi immessi:
 </srcSchema>
 ```
 
-### Mappatura dei tipi di dati Adobe Campaign/DBMS {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Mappatura dei tipi di dati  Adobe Campaign/DBMS {#mapping-the-types-of-adobe-campaign-dbms-data}
 
-La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database.
+Nella tabella seguente sono elencati i mapping per i tipi di dati generati da  Adobe Campaign per i diversi sistemi di gestione del database.
 
 <table> 
  <tbody> 
@@ -245,10 +248,10 @@ La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campai
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
-   <td> DATA<br /> </td> 
-   <td> DATA<br /> </td> 
+   <td> DATE<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIMESTAMP<br /> </td> 
-   <td> DATA<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
@@ -262,7 +265,7 @@ La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campai
   <tr> 
    <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATA<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIMESTAMP<br /> </td> 
    <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
@@ -270,7 +273,7 @@ La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campai
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATA<br /> </td> 
+   <td> DATE<br /> </td> 
    <td> TIMESTAMP<br /> </td> 
    <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
@@ -284,7 +287,7 @@ La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campai
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Per memoria<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
    <td> CLOB (CLOB CHARACTER SET UNICODE se Unicode)<br /> </td> 
@@ -302,7 +305,7 @@ La tabella seguente elenca i mapping per i tipi di dati generati da Adobe Campai
  </tbody> 
 </table>
 
-## Proprietà {#properties}
+## Properties {#properties}
 
 Gli elementi **`<elements>`** e **`<attributes>`** gli elementi dello schema di dati possono essere arricchiti con varie proprietà. È possibile compilare un&#39;etichetta per descrivere l&#39;elemento corrente.
 
@@ -320,13 +323,13 @@ Gli elementi **`<elements>`** e **`<attributes>`** gli elementi dello schema di 
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   L&#39;etichetta è visibile nel modulo di input della console client Adobe Campaign:
+   L&#39;etichetta è visibile dal modulo di input della console client Adobe Campaign :
 
    ![](assets/d_ncs_integration_schema_label.png)
 
 * La proprietà **desc** consente di inserire una descrizione lunga.
 
-   La descrizione è visibile nel modulo di input nella barra di stato della finestra principale della console client Adobe Campaign.
+   La descrizione è visibile dal modulo di input nella barra di stato della finestra principale della console client Adobe Campaign .
 
    >[!NOTE]
    >
@@ -340,7 +343,7 @@ Gli elementi **`<elements>`** e **`<attributes>`** gli elementi dello schema di 
 
 ### Valori predefiniti {#default-values}
 
-La proprietà **predefinita** consente di definire un&#39;espressione che restituisce un valore predefinito alla creazione del contenuto.
+La proprietà **predefinita** consente di definire un&#39;espressione che restituisce un valore predefinito durante la creazione del contenuto.
 
 Il valore deve essere un&#39;espressione conforme al linguaggio XPath. Per ulteriori informazioni, vedere [Riferimento con XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -353,7 +356,7 @@ Il valore deve essere un&#39;espressione conforme al linguaggio XPath. Per ulter
 
    >[!NOTE]
    >
-   >Nella console client di Adobe Campaign, il **[!UICONTROL Administration>Counters]** nodo viene utilizzato per gestire i contatori.
+   >Nella console client Adobe Campaign , il **[!UICONTROL Administration>Counters]** nodo viene utilizzato per gestire i contatori.
 
 Per collegare un valore predefinito a un campo, è possibile utilizzare la `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -377,7 +380,7 @@ Questi valori vengono visualizzati in un elenco a discesa dal modulo di input:
 
 >[!NOTE]
 >
->Nella console client di Adobe Campaign, il **[!UICONTROL Administration > Enumerations]** nodo viene utilizzato per gestire le enumerazioni.
+>Nella console client Adobe Campaign , il **[!UICONTROL Administration > Enumerations]** nodo viene utilizzato per gestire le enumerazioni.
 
 #### Enumerazione set {#set-enumeration}
 
@@ -471,7 +474,7 @@ Con proiezione del contenuto XML:
 
 ## Riferimento con XPath {#referencing-with-xpath}
 
-Il linguaggio XPath viene utilizzato in Adobe Campaign per fare riferimento a un elemento o attributo appartenente a uno schema di dati.
+Il linguaggio XPath viene utilizzato in  Adobe Campaign per fare riferimento a un elemento o attributo appartenente a uno schema di dati.
 
 XPath è una sintassi che consente di individuare un nodo nella struttura di un documento XML.
 
@@ -482,8 +485,8 @@ Gli elementi sono indicati dal nome e gli attributi sono designati dal nome prec
 * **@email**: seleziona l’e-mail,
 * **location/@city**: seleziona l&#39;attributo &quot;city&quot; sotto l&#39; **`<location>`** elemento
 * **../@email**: seleziona l&#39;indirizzo e-mail dall&#39;elemento padre dell&#39;elemento corrente
-* **group`[1]/@label`**: seleziona l&#39;attributo &quot;label&quot; secondario del primo elemento della **`<group>`**raccolta
-* **group`[@label='test1']`**: seleziona l&#39;attributo &quot;label&quot; secondario dell&#39;**`<group>`**elemento e contiene il valore &quot;test1&quot;
+* **group`[1]/@label`**: seleziona l&#39;attributo &quot;label&quot; secondario del primo elemento della **`<group>`** raccolta
+* **group`[@label='test1']`**: seleziona l&#39;attributo &quot;label&quot; secondario dell&#39; **`<group>`** elemento e contiene il valore &quot;test1&quot;
 
 >[!NOTE]
 >
@@ -491,6 +494,7 @@ Gli elementi sono indicati dal nome e gli attributi sono designati dal nome prec
 >
 >* **location/@city** non è valido; utilizzare **`[location/@city]`**
 >* **`[@email]`** e **@email** è equivalente
+
 >
 
 
@@ -502,7 +506,7 @@ Gli elementi sono indicati dal nome e gli attributi sono designati dal nome prec
 
 Alle espressioni sono state aggiunte funzioni di alto livello per arricchire il potenziale di questa lingua.
 
-Puoi accedere all’elenco delle funzioni disponibili tramite qualsiasi editor di espressioni nella console client di Adobe Campaign:
+È possibile accedere all&#39;elenco delle funzioni disponibili tramite qualsiasi editor di espressioni nella  console client Adobe Campaign:
 
 ![](assets/d_ncs_integration_schema_function.png)
 
