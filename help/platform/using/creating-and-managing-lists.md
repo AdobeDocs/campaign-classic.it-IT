@@ -15,36 +15,39 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
 
 # Creazione e gestione di elenchi{#creating-and-managing-lists}
 
-## Informazioni sugli elenchi in Adobe Campaign {#about-lists-in-adobe-campaign}
+## Informazioni sugli elenchi in  Adobe Campaign {#about-lists-in-adobe-campaign}
 
 Un elenco è un set statico di profili che possono essere mirati nelle azioni di consegna o aggiornati durante le operazioni di importazione o durante l&#39;esecuzione del flusso di lavoro. Ad esempio, una popolazione estratta dal database tramite una query può fornire un elenco.
 
-Le consegne (via e-mail, SMS o altri canali) mirate a questi elenchi possono quindi essere organizzate in conformità con l&#39;etica professionale del marketing dei permessi.
+
 
 Gli elenchi vengono creati e gestiti tramite il **[!UICONTROL Lists]** collegamento presente nella **[!UICONTROL Profiles and targets]** scheda.
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
-In Adobe Campaign sono disponibili due tipi di elenchi:
+In  Adobe Campaign sono disponibili due tipi di elenchi:
 
 * **[!UICONTROL Group]** type: Gli elenchi di **[!UICONTROL Group]** tipi appartengono a un elenco **statico** di persone selezionate in base a criteri specifici. L’elenco è simile a un’istantanea di un set di profili. Nota che non viene aggiornato automaticamente in caso di aggiunta di profili al database.
 
-   Per ulteriori informazioni su come creare un elenco di **[!UICONTROL Group]** tipi, fare riferimento a questa [pagina](#creating-a-profile-list-from-a-group).
+   For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
 * **[!UICONTROL List]** type: Gli elenchi dei **[!UICONTROL List]** tipi consentono di utilizzare i flussi di lavoro per creare e gestire gli elenchi. Si tratta di elenchi specifici risultanti dalle importazioni di dati, che possono essere aggiornati tramite l&#39;attività dedicata al **[!UICONTROL List update]** flusso di lavoro.
 
-   A differenza dell&#39;elenco dei **[!UICONTROL Group]** tipi, questo elenco può essere aggiornato automaticamente con un&#39; **[!UICONTROL Scheduler]** attività. Si noti che per un esempio su come creare elenchi di **[!UICONTROL List]** tipi, fare riferimento a [questa pagina](../../workflow/using/list-update.md).
+   A differenza dell&#39;elenco dei **[!UICONTROL Group]** tipi, questo elenco di tipi può essere aggiornato automaticamente con un&#39; **[!UICONTROL Scheduler]** attività. Si noti che per un esempio su come creare elenchi di **[!UICONTROL List]** tipi, fare riferimento a [questa pagina](../../workflow/using/list-update.md).
 
 ## Creazione di un elenco di profili da un gruppo {#creating-a-profile-list-from-a-group}
 
-**[!UICONTROL Group]** gli elenchi di tipi creati tramite il **[!UICONTROL Profiles and targets]** collegamento devono essere basati sulla tabella di profilo predefinita di Adobe Campaign (nms:destinatario).
+**[!UICONTROL Group]** gli elenchi di tipi creati tramite il **[!UICONTROL Profiles and targets]** collegamento devono essere basati sulla tabella di profilo Adobe Campaign  predefinita (nms:destinatario).
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ In Adobe Campaign sono disponibili due tipi di elenchi:
 
 Per creare un nuovo elenco di **[!UICONTROL Group]** tipi, procedere come segue:
 
-1. Fate clic sul **[!UICONTROL Create]** pulsante e selezionate **[!UICONTROL New list]**.
+1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
@@ -68,9 +71,9 @@ Per creare un nuovo elenco di **[!UICONTROL Group]** tipi, procedere come segue:
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. Fare clic **[!UICONTROL Save]** per salvare l&#39;elenco. Viene quindi aggiunta alla panoramica degli elenchi.
+1. Click **[!UICONTROL Save]** to save the list. Viene quindi aggiunta alla panoramica degli elenchi.
 
-Potete creare nuovi profili direttamente dalla finestra &quot;Aggiungi profili&quot; facendo clic su **[!UICONTROL Create]**. Il profilo verrà aggiunto al database.
+Potete creare nuovi profili direttamente dalla finestra &#39;aggiungi profili&#39; facendo clic su **[!UICONTROL Create]**. Il profilo verrà aggiunto al database.
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
@@ -85,7 +88,7 @@ L&#39;elenco dei profili può essere configurato come altri elenchi. Consultate 
 I profili di un set di profili possono essere filtrati e collegati a un elenco. Le azioni di consegna possono quindi essere inviate a questo elenco, ai profili di destinazione. Per raggruppare i profili:
 
 1. Selezionate i profili e fate clic con il pulsante destro del mouse.
-1. Selezionare **[!UICONTROL Actions > Associate selection with a list...]**.
+1. Seleziona **[!UICONTROL Actions > Associate selection with a list...]**.
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
@@ -93,7 +96,7 @@ I profili di un set di profili possono essere filtrati e collegati a un elenco. 
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Fate clic sul **[!UICONTROL Start]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Start]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
@@ -107,7 +110,7 @@ La sezione superiore della finestra consente di monitorare l&#39;esecuzione. Il 
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-Puoi anche modificare l&#39;elenco tramite la home page di Adobe Campaign: fare clic sul **[!UICONTROL Profiles and Targets > Lists]** menu e selezionare l&#39;elenco interessato. La **[!UICONTROL Content]** scheda mostra i profili collegati a questo elenco.
+Potete anche modificare l’elenco tramite la home page di  Adobe Campaign: fare clic sul **[!UICONTROL Profiles and Targets > Lists]** menu e selezionare l&#39;elenco interessato. La **[!UICONTROL Content]** scheda mostra i profili collegati a questo elenco.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
@@ -119,13 +122,13 @@ Per rimuovere un profilo da un elenco, potete:
 
    ![](assets/list_remove_a_recipient.png)
 
-* Modificate il profilo, fate clic sulla **[!UICONTROL List]** scheda, quindi fate clic sull&#39;icona **[!UICONTROL Delete]** .
+* Modificate il profilo, fate clic sulla **[!UICONTROL List]** scheda, quindi fate clic sull&#39; **[!UICONTROL Delete]** icona.
 
    ![](assets/recipient_remove_a_list.png)
 
 ## Eliminazione di un elenco di profili {#deleting-a-list-of-profiles}
 
-Puoi eliminare uno o più elenchi dall&#39;elenco dei gruppi nella struttura di Adobe Campaign. A questo scopo, modifica la struttura ad albero tramite il **[!UICONTROL Advanced > Explorer]** collegamento presente nella home page di Adobe Campaign. Selezionare i gruppi interessati e fare clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Delete]**. Un messaggio di avviso richiede di confermare l’eliminazione.
+È possibile eliminare uno o più elenchi dall&#39;elenco dei gruppi nella struttura  Adobe Campaign. A questo scopo, modificate la struttura ad albero tramite il **[!UICONTROL Advanced > Explorer]** collegamento presente nella home page di  Adobe Campaign. Selezionare i gruppi interessati e fare clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Delete]**. Un messaggio di avviso richiede di confermare l’eliminazione.
 
 >[!NOTE]
 >
