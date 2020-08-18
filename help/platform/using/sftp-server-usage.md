@@ -1,5 +1,5 @@
 ---
-title: Best practice e risoluzione dei problemi per il server SFTP
+title: Utilizzo di server SFTP
 description: Ulteriori informazioni sulle procedure ottimali e la risoluzione dei problemi del server SFTP.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 12%
 
 ---
@@ -118,9 +118,9 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
    1. Verificare che il nome del server sia stato aggiunto al server DNS locale.
    1. In caso affermativo, eseguite il seguente comando  server Adobe Campaign per ottenere l’indirizzo IP:
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   Questo conferma il funzionamento del server FTP e la sua raggiungibilità da  server applicazioni Adobe Campaign.
+      Questo conferma il funzionamento del server FTP e la sua raggiungibilità da  server applicazioni Adobe Campaign.
 
 1. Risoluzione dei problemi relativi ai registri **** delle sessioni:
 
@@ -128,11 +128,11 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
    1. Vai alla **[!UICONTROL File Transfer]** scheda, quindi fai clic su **[!UICONTROL Advanced Parameters]**.
    1. Seleziona l’opzione **[!UICONTROL Display the session logs]**.
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. Andate al controllo del flusso di lavoro e verificate che nei registri sia visualizzato l&#39;errore &#39;Impossibile risolvere il nome host&#39;.
 
-   Se il server SFTP è ospitato da  Adobe, controlla se l&#39;IP viene aggiunto al elenco consentiti  contattando l&#39;Assistenza clienti.
+1. Se il server SFTP è ospitato da  Adobe, controlla se l&#39;IP viene aggiunto al elenco consentiti  contattando l&#39;Assistenza clienti.
 
    In caso contrario, convalida:
 
