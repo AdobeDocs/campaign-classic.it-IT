@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: ea248639e9730c6bdd1090098866a094b80daebb
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
@@ -30,12 +30,12 @@ ht-degree: 1%
 Per iniziare a utilizzare  Adobe Campaign, consulta le nostre intuitive guide dettagliate.
 
 * [Modifica del contenuto delle e-mail con Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): scoprite le nozioni di base per iniziare a utilizzare l&#39;integrazione tra  Adobe Campaign e  Experience Manager.
-* [Gestione](https://helpx.adobe.com/campaign/kb/acc-privacy.html)della privacy: scoprite le informazioni fornite da Adobe Campaign Classic per aiutarti a rispettare la Privacy quando utilizzi il nostro servizio.
+* [Gestione](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html)della privacy: scoprite le informazioni fornite da Adobe Campaign Classic per aiutarti a rispettare la Privacy quando utilizzi il nostro servizio.
 * [Integrazione del contenuto dinamico in un messaggio e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): scoprite le nozioni di base per iniziare a utilizzare l&#39;integrazione tra Campaign Classic e Target Standard.
 * [Gestione della recapito](../../delivery/using/deliverability-key-points.md): scopri i concetti e le best practice relativi alla recapito e gli strumenti offerti da Adobe Campaign Classic per ottimizzare l’invio delle consegne.
 * [Best practice](../../delivery/using/delivery-best-practices.md)per la distribuzione: informazioni sulle best practice relative alla progettazione e all&#39;invio di materiale con Adobe Campaign Classic.
-* [Esecuzione di una build]upgradehttps://helpx.adobe.com/campaign/kb/acc-build-upgrade.html: questa guida illustra i passaggi e le procedure ottimali principali per eseguire un aggiornamento della build con Campaign Classic.
-* [Elenco](https://helpx.adobe.com/campaign/kb/acc-security.html)di controllo della configurazione di protezione: scoprite gli elementi chiave da verificare per quanto riguarda la configurazione di sicurezza e l&#39;indurimento per la distribuzione locale
+* [Esecuzione di un aggiornamento](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)build: questa guida illustra i passaggi e le procedure ottimali principali per eseguire un aggiornamento della build con Campaign Classic.
+* [Elenco](https://helpx.adobe.com/it/campaign/kb/acc-security.html)di controllo della configurazione di protezione: scoprite gli elementi chiave da verificare per quanto riguarda la configurazione di sicurezza e l&#39;indurimento per la distribuzione locale
 
 Per saperne di più  Adobe Campaign, consulta i casi di utilizzo e gli esempi seguenti:
 
@@ -49,14 +49,14 @@ Per saperne di più  Adobe Campaign, consulta i casi di utilizzo e gli esempi se
 
 Scoprite  caratteristiche principali di Adobe Campaign guardando i nostri video dimostrativi.
 
-* [Creazione di un&#39;audience](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): scoprite come creare un&#39;audience in  Adobe Campaign.
-* [Creazione di una campagna e di un messaggio e-mail](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html): scoprite come creare un’e-mail in una campagna in  Adobe Campaign.
-* [Creazione di un elenco di destinatari](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): crea un elenco di destinatari con un flusso di lavoro in  Adobe Campaign.
+* [Creazione di un&#39;audience](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): scoprite come creare un&#39;audience in  Adobe Campaign.
+* [Creazione di una campagna e di un messaggio e-mail](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html): scoprite come creare un’e-mail in una campagna in  Adobe Campaign.
+* [Creazione di un elenco di destinatari](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): crea un elenco di destinatari con un flusso di lavoro in  Adobe Campaign.
 * [Creazione di un flusso di lavoro](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html)di targeting: create un flusso di lavoro per eseguire il targeting dei compleanni dei destinatari.
-* [Creazione di un flusso di lavoro in una campagna](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html): scoprite come creare un flusso di lavoro in una campagna.
-* [Importazione di profili](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html): scoprite come importare profili da un file in  Adobe Campaign.
+* [Creazione di un flusso di lavoro in una campagna](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html): scoprite come creare un flusso di lavoro in una campagna.
+* [Importazione di profili](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/importing-profiles.html): scoprite come importare profili da un file in  Adobe Campaign.
 * [Panoramica](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)dell&#39;interfaccia: scoprite come navigare &#39;interfaccia Adobe Campaign.
-* [Gestione di seed e prove in un messaggio e-mail](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): scoprite come aggiungere sementi e prove a un&#39;e-mail esistente in  Adobe Campaign.
+* [Gestione di seed e prove in un messaggio e-mail](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html): scoprite come aggiungere sementi e prove a un&#39;e-mail esistente in  Adobe Campaign.
 * [Integrazione](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html) Adobe Campaign e Microsoft Dynamics 365: scopri come collegare e sincronizzare  Adobe Campaign e Microsoft Dynamics tramite le funzionalità di connettori CRM.
 
 Oltre a questi brevi e dettagliati video, potete trovare anche corsi [di](https://learning.adobe.com/catalog.html) formazione e video [di](https://www.adobe.com/training/video.html) presentazione sul nostro sito web.
