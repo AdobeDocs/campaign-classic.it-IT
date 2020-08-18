@@ -15,20 +15,35 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 14%
 
 ---
 
 
-# Esportazione e importazione di profili{#exporting-and-importing-profiles}
+# Importing and exporting profiles{#exporting-and-importing-profiles}
 
-I profili dei destinatari possono essere importati nel database Adobe Campaign oppure esportati e memorizzati in un file esterno al database.
+Potete [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari in  database Adobe Campaign, oppure per impostare importazioni [generiche o processi](#create-jobs)di esportazione.
 
-Per configurare ed eseguire le importazioni ed esportazioni di dati, vai all&#39; **[!UICONTROL Profiles and targets]** universo e fai clic sul **[!UICONTROL Jobs]** collegamento.
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#import-profiles-video)
+
+## Utilizzare i flussi di lavoro{#use-workflows}
+
+Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite **[!UICONTROL Import]** e **[!UICONTROL Export]** attività. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. [Ulteriori informazioni](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+
+Se necessario, potete creare un processo di importazione o esportazione occasionale tramite la **[!UICONTROL Generic imports and exports]** funzione descritta di seguito.
+
+## Creazione di processi{#create-jobs}
+
+Per configurare ed eseguire i processi di importazione ed esportazione dei dati, andate alla **[!UICONTROL Profiles and targets]** scheda e fate clic sul **[!UICONTROL Jobs]** collegamento. [Ulteriori informazioni](../../platform/using/generic-imports-and-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
->[!NOTE]
->
->L&#39;importazione e l&#39;esportazione dei dati vengono presentate in importazioni ed esportazioni [](../../platform/using/generic-imports-and-exports.md) generiche e in [questo video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
 
+## Come si importano i profili{#import-profiles-video}
+
+In questo video viene illustrato come importare profili in  Adobe Campaign, per un’importazione occasionale.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
