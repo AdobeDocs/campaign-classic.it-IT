@@ -15,17 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 1%
 
 ---
 
 
 # Creazione e configurazione del database{#creating-and-configuring-the-database}
 
-Quando create un database, Adobe Campaign offre due opzioni diverse:
+Quando create un database,  Adobe Campaign offre due opzioni diverse:
 
 1. Creazione o riciclo di un database: scegliete questa opzione se desiderate creare un nuovo database o riutilizzarne uno esistente. Fare riferimento al [caso 1: Creazione/riciclo di un database](#case-1--creating-recycling-a-database).
 1. Utilizzo di un database esistente: scegliete questa opzione se l’amministratore ha già creato un database vuoto e desiderate usarlo; o per estendere la struttura di un database esistente. Fare riferimento al [caso 2: Utilizzo di un database](#case-2--using-an-existing-database)esistente.
@@ -57,7 +57,7 @@ Selezionare il motore del database tra quelli presenti nell&#39;elenco a discesa
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-I database supportati sono presentati nella sezione [Matrice](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)di compatibilità.
+I database supportati sono presentati nella sezione [Matrice](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)di compatibilità.
 
 Identificare il server e scegliere il tipo di operazione da eseguire. In questo caso, **[!UICONTROL Create or recycle a database]**.
 
@@ -69,7 +69,7 @@ A seconda del motore di database selezionato, le informazioni di identificazione
 * Per un motore **PostgreSQL** o **DB2** , è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server dell&#39;applicazione per accedere al server del database.
 * Per un motore **Microsoft SQL Server** , è necessario definire:
 
-   1. il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database: **DNS** o **DNS\ `<instance>`**(modalità di istanza),
+   1. il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database: **DNS** o **DNS\`<instance>`** (modalità di istanza),
    1. il metodo di autenticazione utilizzato per accedere a Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** o **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,17 +132,17 @@ La **[!UICONTROL Creation steps]** finestra consente di visualizzare e modificar
 
 * Per un database Oracle, Microsoft SQL Server o PostgreSQL, l&#39;amministratore può anche definire i parametri **di** memorizzazione da utilizzare per la creazione di oggetti del database.
 
-   Questi parametri ricevono i nomi esatti della tablespace (avviso: con distinzione tra maiuscole e minuscole). Sono rispettivamente memorizzati nel **[!UICONTROL Administration > Platform > Options]** nodo nelle seguenti opzioni:
+   Questi parametri ricevono i nomi esatti della tablespace (avviso: con distinzione tra maiuscole e minuscole). Sono rispettivamente memorizzati nel **[!UICONTROL Administration > Platform > Options]** nodo nelle seguenti opzioni (vedere [](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: tabelle utente basate su uno schema
    * **WdbcOptions_TableSpaceIndex**: indice di tabelle utente basate su uno schema
    * **WdbcOptions_TableSpaceWork**: tabelle di lavoro senza schema
    * **WdbcOptions_TableSpaceWorkIndex**: indice di tabelle di lavoro senza schema
 
-* Per un database Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall** .
-* L&#39; **[!UICONTROL Set or change the administrator password]** opzione consente di inserire la password collegata all&#39;operatore Adobe Campaign con diritti di amministratore.
+* Per un database Oracle, l&#39;utente Adobe Campaign  deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall** .
+* L&#39; **[!UICONTROL Set or change the administrator password]** opzione consente di inserire la password collegata all&#39;operatore Adobe Campaign  con diritti di amministratore.
 
-   È consigliabile definire una password amministratore account Adobe Campaign a scopo di sicurezza.
+   È consigliabile definire una password amministratore  account Adobe Campaign a scopo di sicurezza.
 
 ### Passaggio 6 - Creazione del database {#step-6---creating-the-database}
 
@@ -154,7 +154,7 @@ Una volta creato il database, potete riconnettervi per finalizzare la configuraz
 
 È ora necessario avviare la procedura guidata di distribuzione per completare la configurazione dell&#39;istanza. Fare riferimento alla procedura guidata [di distribuzione](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
+Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign .
 
 Esempio di configurazione di Microsoft SQL Server nel database base61 collegato all&#39;account &#39;campaign&#39; con password crittografata:
 
@@ -166,7 +166,7 @@ Esempio di configurazione di Microsoft SQL Server nel database base61 collegato 
 
 Il database, così come l&#39;utente, devono essere stati creati dall&#39;amministratore del database e i diritti di accesso devono essere stati configurati correttamente.
 
-Ad esempio, per un database Oracle, i diritti minimi richiesti sono: CONCEDERE CONNECT, RESOURCE E TABLESPACE ILLIMITATI.
+Ad esempio, per un database Oracle, i diritti minimi richiesti sono: CONCEDERE CONNECT, RISORSE E TABLESPACE ILLIMITATI.
 
 Per utilizzare un database esistente, procedere come segue:
 
@@ -230,10 +230,10 @@ La **[!UICONTROL Creation steps]** finestra consente di visualizzare e modificar
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Per i database Oracle, Microsoft SQL Server o PostgreSQL, l&#39;amministratore può definire i parametri **di** memorizzazione da utilizzare per la creazione degli oggetti del database.
-* Per un database Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall** .
-* L&#39; **[!UICONTROL Set or change the administrator password]** opzione consente di inserire la password collegata all&#39;operatore Adobe Campaign con diritti di amministratore.
+* Per un database Oracle, l&#39;utente Adobe Campaign  deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall** .
+* L&#39; **[!UICONTROL Set or change the administrator password]** opzione consente di inserire la password collegata all&#39;operatore Adobe Campaign  con diritti di amministratore.
 
-   È consigliabile definire una password amministratore account Adobe Campaign a scopo di sicurezza.
+   È consigliabile definire una password amministratore  account Adobe Campaign a scopo di sicurezza.
 
 ### Passaggio 5 - Creazione del database {#step-5---creating-the-database}
 
@@ -245,7 +245,7 @@ Una volta completata la creazione del database, potete riconnettervi per finaliz
 
 È ora necessario avviare la procedura guidata di distribuzione per completare la configurazione dell&#39;istanza. Fare riferimento alla procedura guidata [di distribuzione](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
+Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign .
 
 Esempio di configurazione di Microsoft SQL Server nel database base61 collegato all&#39;account &#39;campaign&#39; con password crittografata:
 
