@@ -15,21 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3903'
-ht-degree: 0%
+source-wordcount: '3927'
+ht-degree: 1%
 
 ---
 
 
-# Elenco delle opzioni Campaign Classic{#configuring-campaign-options}
+# Elenco opzioni di Campaign Classic{#configuring-campaign-options}
 
-Il **[!UICONTROL Administration / Platform / Options]** nodo consente di configurare  opzioni di Adobe Campaign.
+Il **[!UICONTROL Administration / Platform / Options]** nodo consente di configurare  opzioni Adobe Campaign.
 
 >[!NOTE]
 >
->La modifica o l’aggiornamento  opzioni di Adobe Campaign possono essere eseguite solo dagli utenti esperti.
+>Modificare o aggiornare  opzioni Adobe Campaign può essere eseguito solo da utenti esperti.
 
 Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono essere aggiunti manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con l&#39;istanza.
 
@@ -61,7 +61,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirm</span> <br /> </td> 
-   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> Per eseguire questa operazione, attivare l'opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedere <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
+   <td><p> Consente all'operatore responsabile della consegna di confermare l'invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> Per eseguire questa operazione, attivare l'opzione immettendo "1" come valore. Per disattivare questa opzione, immettete "0".</p><p> Il processo di conferma dell'invio funzionerà come impostazione predefinita: solo l'operatore o il gruppo di operatori designati per l'invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l'invio. Vedi <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td>  Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per avviare una finestra di dialogo con il database del destinatario predefinito (nms:destinatario).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella del destinatario esterno.<br /> </td> 
@@ -279,7 +279,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr>
 -->
 
-## Risorse {#resources}
+## Resources {#resources}
 
 <table> 
  <thead> 
@@ -291,11 +291,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Posizione delle risorse per la pubblicazione nella console del client  Adobe Campaign. Vedere <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
+   <td> Posizione delle risorse per la pubblicazione nella console  client Adobe Campaign. Vedi <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Posizione delle risorse da visualizzare in anteprima nella console del client  Adobe Campaign. Vedere <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
+   <td> Posizione delle risorse da visualizzare in anteprima nella console client Adobe Campaign . Vedi <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -633,21 +633,21 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
     <li><p>1 - pg_cancel_backend: interrompe il processo del flusso di lavoro e annulla la query nel database<p></li>
     <li><p>2 - pg_terminate_backend: interrompe il processo del flusso di lavoro e termina la query nel database<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere gli indici delle tabelle standard  Adobe Campaign.<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> Nome della tablespace destinata a contenere i dati delle tabelle standard Adobe Campaign .<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere i dati delle tabelle standard  Adobe Campaign.<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> Nome della tablespace destinata a contenere gli indici delle tabelle standard Adobe Campaign .<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere i dati delle tabelle di lavoro del Adobe Campaign .<br /> </td> 
+   <td> Nome della tablespace destinata a contenere i dati delle tabelle di lavoro  Adobe Campaign.<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere gli indici delle tabelle di lavoro del Adobe Campaign .<br /> </td> 
+   <td> Nome della tablespace destinata a contenere gli indici delle  tabelle di lavoro Adobe Campaign.<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -655,7 +655,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
-   <td> Fuso orario dell'istanza  Adobe Campaign . Vedere <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configurazione</a>.<br /> </td> 
+   <td> Fuso orario dell’istanza di Adobe Campaign . Vedere <a href="../../installation/using/time-zone-management.md#configuration" target="_blank">Configurazione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcUseNChar</span> <br /> </td> 
@@ -717,11 +717,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Tipi di risorse AEM utilizzabili in  Adobe Campaign. I valori devono essere separati da virgole.<br /> </td> 
+   <td> Tipi di risorse AEM che possono essere utilizzate in  Adobe Campaign. I valori devono essere separati da virgole.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Consente di configurare  Experience Cloud Triggers. Il tipo di dati è "testo lungo" e deve essere in formato JSON. Vedere <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Come utilizzare  attivatori Experience Cloud con  Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Consente di configurare  attivatori di Experience Cloud. Il tipo di dati è "testo lungo" e deve essere in formato JSON. Vedere <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Come utilizzare  attivatori di Experience Cloud con Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -733,19 +733,19 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Server di Adobe Target  utilizzato per l'integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio  Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td>  server Adobe Target utilizzato per l'integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al  Adobe Target Domain Server, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td>  nome organizzazione Adobe Target. Questo valore corrisponde al nome del client  Adobe Target.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td>  Nome organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target .<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Opzione utilizzata per l'integrazione con  Adobe Audience Manager.<br /> </td> 
+   <td> Opzione utilizzata per l'integrazione con Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Opzione utilizzata per l'integrazione con  Adobe Audience Manager.<br /> </td> 
+   <td> Opzione utilizzata per l'integrazione con Adobe Audience Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -758,7 +758,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  </tbody> 
 </table>
 
-## Offerte {#offers}
+## Offers {#offers}
 
 <table> 
  <thead> 
@@ -832,7 +832,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  </tbody> 
 </table>
 
-## Tracciamento {#tracking}
+## Tracking {#tracking}
 
 <table> 
  <thead> 
@@ -958,7 +958,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> Attiva la creazione automatica di operatori e diritti in  Adobe Campaign.<br /> </td> 
+   <td> Abilitare la creazione automatica di operatori e diritti in  Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -1002,7 +1002,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
-   <td> Espressione per estrarre i nomi dei diritti di Adobe Campaign  dalle autorizzazioni LDAP.<br /> </td> 
+   <td> Espressione per estrarre i nomi dei diritti Adobe Campaign  dalle autorizzazioni LDAP.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
@@ -1015,7 +1015,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  </tbody> 
 </table>
 
-## Moduli Web {#web-forms}
+## Moduli web {#web-forms}
 
 <table> 
  <thead> 
