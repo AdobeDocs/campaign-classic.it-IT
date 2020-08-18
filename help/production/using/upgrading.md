@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1120'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Prima di avviare il processo di aggiornamento, determinare e confermare la versi
 
 >[!NOTE]
 >
->Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) build.
+>Consultare anche la guida [all&#39;](../../installation/using/general-architecture.md) installazione e l&#39;aggiornamento [della](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html) build.
 
 ## In Windows {#in-windows}
 
@@ -257,7 +257,7 @@ Ad esempio, un database unicode non deve solo autorizzare la memorizzazione di d
 
 Nel computer in cui è installato (**server Web**)  server applicazioni Adobe Campaign, scaricate e copiate il file
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 in **[percorso dell&#39;applicazione]**datakitnlunjsp
 
@@ -271,7 +271,7 @@ Alla successiva connessione delle console client, una finestra informerà gli ut
 
 Nel computer in cui è installato  server applicazioni Adobe Campaign (**server Web**), recuperate il pacchetto seguente:
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 e copiarlo, salvandolo come **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
