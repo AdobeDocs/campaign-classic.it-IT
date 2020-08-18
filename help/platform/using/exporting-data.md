@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
 
-# Esportazione dei dati{#exporting-data}
+# Esportazione di dati{#exporting-data}
 
 ## Esportazione guidata {#export-wizard}
 
@@ -46,11 +49,11 @@ Quando si avvia la procedura guidata di esportazione, è innanzitutto necessario
 
 Selezionare il tipo di documento da esportare, ad esempio lo schema dei dati da esportare.
 
-Per impostazione predefinita, quando l&#39;esportazione viene avviata dal **[!UICONTROL Jobs]** nodo i dati provengono dalla tabella del destinatario. Quando l&#39;esportazione viene avviata da un elenco di dati (dal **[!UICONTROL right click > Export]** menu), la tabella alla quale i dati appartengono viene automaticamente compilata nel **[!UICONTROL Document type]** campo.
+Per impostazione predefinita, quando l&#39;esportazione viene avviata dal **[!UICONTROL Jobs]** nodo, i dati provengono dalla tabella del destinatario. Quando l&#39;esportazione viene avviata da un elenco di dati (dal **[!UICONTROL right click > Export]** menu), la tabella alla quale i dati appartengono viene automaticamente compilata nel **[!UICONTROL Document type]** campo.
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* Per impostazione predefinita, l’ **[!UICONTROL Download the file generated on the server after the export]** opzione è selezionata. Nel **[!UICONTROL Local file]** campo, compilare il nome e il percorso del file da creare, oppure sfogliare il disco locale facendo clic sulla cartella a destra del campo. Potete deselezionare questa opzione per immettere il percorso di accesso e il nome del file di output del server.
+* By default, the **[!UICONTROL Download the file generated on the server after the export]** option is selected. Nel **[!UICONTROL Local file]** campo, compilare il nome e il percorso del file da creare, oppure sfogliare il disco locale facendo clic sulla cartella a destra del campo. Potete deselezionare questa opzione per immettere il percorso di accesso e il nome del file di output del server.
 
    >[!NOTE]
    >
@@ -73,7 +76,7 @@ Selezionare un formato di output per il file di esportazione. È possibile utili
 * Per **[!UICONTROL Text]** il formato, selezionare i delimitatori per separare le colonne (tabulazioni, virgole, punti e virgola o punti e virgola personalizzati) e le stringhe (virgolette singole o doppie o nessuna).
 * Per **[!UICONTROL text]** e **[!UICONTROL CSV]**, potete selezionare l&#39;opzione **[!UICONTROL Use first lines as column titles]**.
 * Indica il formato della data e il formato del numero. A tale scopo, fare clic sul **[!UICONTROL Edit]** pulsante relativo al campo in questione e utilizzare l&#39;editor.
-* Per i campi contenenti valori enumerati, è possibile selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere memorizzato nel modulo **1=Sig.**, **2=Miss**,** 3=Sig.ra**. Se questa opzione è selezionata, **Sig.**, **Miss** e **Sig.** verranno esportati.
+* Per i campi contenenti valori enumerati, è possibile selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere memorizzato nel modulo **1=Sig.**, **2=Miss**, **3=Sig.ra**. Se questa opzione è selezionata, **Sig.**, **Miss** e **Sig.** verranno esportati.
 
 ### Passaggio 4 - Selezione dei dati {#step-4---data-selection}
 
@@ -94,7 +97,7 @@ Selezionare l&#39;ordine di ordinamento delle colonne.
 
 ### Passaggio 6 - Condizioni filtro {#step-6---filter-conditions-}
 
-Potete aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting del destinatario nella procedura guidata di consegna. Fare riferimento a [questa pagina](../../delivery/using/steps-defining-the-target-population.md).
+È possibile aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting del destinatario nella procedura guidata di consegna. Consulta [questa pagina](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -107,11 +110,12 @@ Potete aggiungere condizioni di filtro per evitare di esportare tutti i dati. La
 * Per applicare una trasformazione di maiuscole e minuscole al contenuto di un campo, selezionatelo dalla **[!UICONTROL Transformation]** colonna. Potete selezionare:
 
    * Passa alla lettera minuscola
-   * Passa al maiuscolo
+   * Passa alla lettera maiuscola
    * Prima lettera in maiuscolo
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
-* Fate clic **[!UICONTROL Add a calculated field]** per creare un nuovo campo calcolato (ad esempio, una colonna contenente il cognome + il nome). Per ulteriori informazioni, vedere Campi [](../../platform/using/importing-data.md#calculated-fields)calcolati.
+* Fate clic **[!UICONTROL Add a calculated field]** per creare un nuovo campo calcolato (ad esempio, una colonna contenente il cognome + il nome). For more on this, refer to [Calculated fields](../../platform/using/importing-data.md#calculated-fields).
 
 Se state esportando una raccolta di elementi (ad esempio, iscrizioni dei destinatari, elenchi a cui appartengono, ecc.), dovete specificare il numero di elementi nella raccolta che desiderate esportare.
 
