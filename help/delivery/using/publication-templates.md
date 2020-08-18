@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ La chiave di identificazione di un foglio di stile è una stringa costituita dal
 >
 >In pratica, si consiglia di utilizzare la stessa chiave per lo schema, il modulo e il modello di pubblicazione.
 
-## Creazione e configurazione del modello {#creating-and-configuring-the-template}
+## Creating and configuring the template {#creating-and-configuring-the-template}
 
 I modelli di pubblicazione sono memorizzati per impostazione predefinita nel **[!UICONTROL Administration > Configuration > Publication templates]** nodo. Per creare un nuovo modello, fate clic sul **[!UICONTROL New]** pulsante sopra l’elenco dei modelli.
 
@@ -52,7 +55,7 @@ Per configurare il modello di pubblicazione, compilare il nome del modello (ovve
 >
 >L&#39;etichetta viene visualizzata ogni volta che viene creato il contenuto in base a questo modello di pubblicazione.
 
-L&#39;opzione **Controlla stato per convalidare la generazione** di contenuto forza un controllo sullo stato &quot;Convalida&quot; delle istanze di contenuto per autorizzare la generazione di file. Per ulteriori informazioni, consulta [Pubblicazione](#publication).
+L&#39;opzione **Controlla stato per convalidare la generazione** di contenuto forza un controllo sullo stato &quot;Convalida&quot; delle istanze di contenuto per autorizzare la generazione di file. For more on this, refer to [Publication](#publication).
 
 È necessario aggiungere un modello di trasformazione per ciascun documento di output. Potete creare tutti i modelli di trasformazione necessari.
 
@@ -75,10 +78,10 @@ La pubblicazione comporta la generazione del documento di output sotto forma di 
 Sono disponibili le seguenti opzioni di pubblicazione:
 
 * Il set di caratteri di codifica del file di output può essere forzato tramite il **[!UICONTROL Encoding]** campo. Per impostazione predefinita viene utilizzato il set di caratteri Latin 1 (1252).
-* Questa **[!UICONTROL Multi-file generation]** opzione attiva una modalità speciale di pubblicazione del documento. Questa opzione consiste nella compilazione di un tag di partizionamento all&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genererà un file per ciascun tag di partizionamento popolato. Questa modalità viene utilizzata per generare mini-siti da un blocco di contenuto. per ulteriori informazioni, vedere Generazione [](#multi-file-generation)di più file.
+* L&#39; **[!UICONTROL Multi-file generation]** opzione attiva una modalità speciale di pubblicazione del documento. Questa opzione consiste nella compilazione di un tag di partizionamento all&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genererà un file per ciascun tag di partizionamento popolato. Questa modalità viene utilizzata per generare mini-siti da un blocco di contenuto. for more on this, refer to [Multi-file generation](#multi-file-generation).
 * Il **[!UICONTROL Location]** campo contiene il nome del file di output. Il nome può essere composto da variabili per generare un nome di file automatico.
 
-   Una variabile viene compilata con il formato seguente: **`$(<xpath>)`, dove `<xpath>` è il percorso di un campo dello schema dati del modello di pubblicazione.
+   Una variabile viene compilata con il formato seguente: **`$(<xpath>)`**, dove **`<xpath>`** è il percorso di un campo dello schema dati del modello di pubblicazione.
 
    Il nome di un file può essere costituito da un campo di tipo data. Per formattare correttamente questo campo, utilizzare la funzione **$date-format** , utilizzando come parametri il percorso del campo e il formato di output.
 
@@ -116,7 +119,7 @@ Il tag di partizionamento da integrare nel foglio di stile è il seguente:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** dove **`<name_of_file>`** è il nome del file della pagina da generare.
 
-**Esempio:**Generazione multipla di file utilizzando lo schema &quot;cus:book&quot;.
+**Esempio:** Generazione multipla di file utilizzando lo schema &quot;cus:book&quot;.
 
 Il principio consiste nel generare una pagina principale in cui siano elencati i capitoli, con la possibilità di visualizzare i dettagli del capitolo in una pagina esterna.
 
