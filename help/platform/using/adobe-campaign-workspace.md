@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2165'
+ht-degree: 2%
 
 ---
 
@@ -24,23 +27,23 @@ source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
 
 ## About Adobe Campaign interface {#about-adobe-campaign-interface}
 
-Una volta connessi al database, potrai accedere alla home page di Adobe Campaign, che è una dashboard: è costituito da collegamenti e collegamenti che consentono di accedere alle funzionalità, a seconda dell&#39;installazione e delle configurazioni generali della piattaforma.
+Una volta che siete connessi al database, potrete accedere alla home page  Adobe Campaign, che è una dashboard: è costituito da collegamenti e collegamenti che consentono di accedere alle funzionalità, a seconda dell&#39;installazione e delle configurazioni generali della piattaforma.
 
 Dalla sezione centrale della home page, potete utilizzare i collegamenti per accedere al portale della documentazione online di Campaign, al forum e al sito Web del supporto.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-La schermata precedente è un esempio della pagina principale per un utente di Adobe Campaign. Per ulteriori informazioni, guarda il video [introduttivo sull&#39;interfaccia di](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign.
+Lo screenshot qui sopra è un esempio della home page per un utente Adobe Campaign . Per ulteriori informazioni, guarda il video [sulla panoramica dell’interfaccia](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign.
 
 >[!NOTE]
 >
->Le funzionalità di Adobe Campaign disponibili nella tua istanza dipendono dai moduli e dai componenti aggiuntivi installati. Alcuni di essi potrebbero anche non essere disponibili, a seconda delle autorizzazioni e delle configurazioni specifiche.
+> capacità Adobe Campaign disponibili nell’istanza in uso dipendono dai moduli e dai componenti aggiuntivi installati. Alcuni di essi potrebbero anche non essere disponibili, a seconda delle autorizzazioni e delle configurazioni specifiche.
 >
->Prima di installare qualsiasi modulo o componente aggiuntivo, è necessario verificare il contratto di licenza o contattare il responsabile aziendale dell&#39;account Adobe.
+>Prima di installare qualsiasi modulo o componente aggiuntivo, è necessario verificare il contratto di licenza o contattare il responsabile commerciale  account di Adobe.
 
 ### Console e accesso Web {#console-and-web-access}
 
-La piattaforma Adobe Campaign è accessibile tramite una console o un browser Internet.
+La piattaforma Adobe Campaign  è accessibile tramite una console o un browser Internet.
 
 L&#39;accesso Web fornisce un&#39;interfaccia simile alla console ma con un set ridotto di funzionalità.
 
@@ -54,7 +57,7 @@ Con l&#39;accesso Web, invece, le opzioni consentiranno principalmente la visual
 
 ### Lingue {#languages}
 
-La lingua viene selezionata al momento dell&#39;installazione dell&#39;istanza di Adobe Campaign Classic e non può essere modificata in seguito. Per ulteriori informazioni su come creare un’istanza, consultate questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
+La lingua viene selezionata durante l’installazione dell’istanza Adobe Campaign Classic e non può essere modificata in seguito. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 ![](assets/language.png)
 
@@ -66,7 +69,7 @@ Potete scegliere tra cinque lingue diverse:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l&#39;istanza di Adobe Campaign Classic potrebbe influenzare i formati di data e ora. For more on this, refer to this [section](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influenzare i formati di data e ora. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Nozioni di base sulla navigazione {#navigation-basics}
 
@@ -104,11 +107,11 @@ Ad esempio, nella pagina di consegna, utilizzate il **[!UICONTROL Create]** puls
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
-## Utilizzo di Adobe Campaign Explorer {#using-adobe-campaign-explorer}
+## Utilizzo  Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
 ### About Adobe Campaign explorer {#about-adobe-campaign-explorer}
 
-Adobe Campaign Explorer è accessibile tramite l&#39;icona della barra degli strumenti. Consente di accedere ad Adobe Campaign a tutte le funzionalità, alle schermate di configurazione di Adobe Campaign e a una visualizzazione più dettagliata di alcuni degli elementi della piattaforma.
+ Adobe Campaign Explorer è accessibile tramite l&#39;icona della barra degli strumenti. Consente di accedere al  Adobe Campaign a tutte le  funzionalità di Adobe Campaign, alle schermate di configurazione e a una visualizzazione più dettagliata di alcuni degli elementi della piattaforma.
 
 L’ **[!UICONTROL Explorer]** area di lavoro è divisa in tre aree:
 
@@ -122,11 +125,11 @@ L’ **[!UICONTROL Explorer]** area di lavoro è divisa in tre aree:
 
 ### Risoluzione dello schermo {#screen-resolution}
 
-Per una navigazione e un&#39;usabilità ottimali, Adobe consiglia di utilizzare una risoluzione minima dello schermo di 1600x900 pixel.
+Per una navigazione e un&#39;usabilità ottimali,  Adobe consiglia di utilizzare una risoluzione minima dello schermo di 1600x900 pixel.
 
 >[!CAUTION]
 >
->Adobe Campaign potrebbe non supportare risoluzioni inferiori a 1600x900 pixel.
+>Le risoluzioni inferiori a 1600x900 pixel potrebbero non essere supportate da  Adobe Campaign.
 
 Nell’ **[!UICONTROL Explorer]** area di lavoro, se alcune parti della **[!UICONTROL Details]** zona appaiono troncate, espandetela utilizzando la freccia in alto o facendo clic sul **[!UICONTROL Enlarge]** pulsante.
 
@@ -144,7 +147,7 @@ Per sfogliare un elenco, è possibile utilizzare **le barre** di scorrimento (or
 
 ### Conteggio dei record {#counting-records}
 
-Per impostazione predefinita, Adobe Campaign carica i primi 200 record di un elenco. Ciò significa che la visualizzazione non mostra necessariamente tutti i record della tabella visualizzata. È possibile eseguire un conteggio del numero di record nell&#39;elenco e caricare altri record.
+Per impostazione predefinita,  Adobe Campaign carica i primi 200 record di un elenco. Ciò significa che la visualizzazione non mostra necessariamente tutti i record della tabella visualizzata. È possibile eseguire un conteggio del numero di record nell&#39;elenco e caricare altri record.
 
 Nella parte inferiore destra della schermata dell’elenco, un **[!UICONTROL counter]** messaggio mostra quanti record sono stati caricati e il numero totale di record nel database (dopo aver applicato eventuali filtri):
 
@@ -176,14 +179,14 @@ Nella finestra di configurazione elenco, fare clic su &quot;Parametri avanzati&q
 
 ### Configurazione degli elenchi {#configuring-lists}
 
-#### Aggiungere colonne {#add-columns}
+#### Add columns {#add-columns}
 
 Esistono due modi per aggiungere una colonna a un elenco.
 
 È possibile aggiungere rapidamente una colonna a un elenco dai dettagli di un record. Per eseguire questa operazione:
 
 1. Da una schermata di dettaglio, fare clic con il pulsante destro del mouse sul campo che si desidera visualizzare in una colonna.
-1. Selezionare **[!UICONTROL Add in the list]**.
+1. Seleziona **[!UICONTROL Add in the list]**.
 
    La colonna viene aggiunta a destra delle colonne esistenti.
 
@@ -207,8 +210,7 @@ Un altro modo per aggiungere colonne, ad esempio se si desidera visualizzare i d
    >
    >Utilizzare il campo **Cerca** per eseguire una ricerca nei campi disponibili. Per ulteriori informazioni, vedere [Ordinamento di un elenco](#sorting-a-list).
    >
-   >I campi sono identificati da icone specifiche: Campi SQL, tabelle collegate, campi calcolati, ecc. Per ciascun campo selezionato, la descrizione viene visualizzata sotto l&#39;elenco dei campi disponibili.
-   [Configurazione degli elenchi](#configuring-lists).
+   >I campi sono identificati da icone specifiche: Campi SQL, tabelle collegate, campi calcolati, ecc. Per ciascun campo selezionato, la descrizione viene visualizzata sotto l&#39;elenco dei campi disponibili. [Configurazione degli elenchi](#configuring-lists).
    >
    >Potete anche ordinare e filtrare i dati. Consultate Opzioni [](../../platform/using/filtering-options.md)di filtro.
 
@@ -272,7 +274,7 @@ Ad esempio, per una cartella di consegna, è possibile configurare la visualizza
 Per salvare la configurazione dell&#39;elenco in modo che possa essere riutilizzata, procedere come segue:
 
 1. Fare clic con il pulsante destro del mouse sulla cartella contenente i dati visualizzati.
-1. Selezionare **[!UICONTROL Properties]**.
+1. Seleziona **[!UICONTROL Properties]**.
 1. Fare clic **[!UICONTROL Advanced settings]** e specificare un nome nel **[!UICONTROL Configuration]** campo.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
@@ -303,7 +305,7 @@ Gli elenchi possono contenere una grande quantità di dati. Potete ordinare ques
 
 Fare clic sull&#39;intestazione della colonna per applicare un ordinamento crescente o decrescente o per annullare l&#39;ordinamento dei dati. Lo stato di ordinamento e l&#39;ordine di ordinamento attivi sono indicati da una freccia blu prima dell&#39;etichetta della colonna. Un trattino rosso prima dell&#39;etichetta della colonna indica che l&#39;ordinamento viene applicato ai dati indicizzati dal database. Questo metodo di ordinamento viene utilizzato per ottimizzare i processi di ordinamento.
 
-Potete anche configurare l’ordinamento o combinare criteri di ordinamento. A questo scopo, attenetevi alla procedura seguente:
+Potete anche configurare l’ordinamento o combinare criteri di ordinamento. Per farlo, segui la procedura indicata di seguito:
 
 1. **[!UICONTROL Configure list]** sotto e a destra dell&#39;elenco.
 
@@ -334,7 +336,7 @@ Potete anche configurare l’ordinamento o combinare criteri di ordinamento. A q
 
 ### Data e ora {#date-and-time}
 
-La lingua dell&#39;istanza Adobe Campaign Classic influisce sui formati di data e ora.
+La lingua dell’istanza Adobe Campaign Classic influisce sui formati di data e ora.
 
 La lingua viene selezionata durante l&#39;installazione di Campaign e non può essere modificata in seguito. Potete selezionare: Inglese (USA), inglese (EN), francese, tedesco o giapponese. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -377,7 +379,7 @@ Se si fa clic **[!UICONTROL Yes]**, questo valore sarà disponibile nella casell
 
 >[!NOTE]
 >
->Le enumerazioni (dette anche &#39;elenchi dettagliati&#39;) vengono gestite dall&#39;amministratore tramite la **[!UICONTROL Administration > Platform > Enumerations]** sezione. Per ulteriori informazioni, vedere [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md).
+>Le enumerazioni (dette anche &#39;elenchi dettagliati&#39;) vengono gestite dall&#39;amministratore tramite la **[!UICONTROL Administration > Platform > Enumerations]** sezione. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
 
 ### Unità predefinite {#default-units}
 
