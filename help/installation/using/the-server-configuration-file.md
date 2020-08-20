@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
 source-wordcount: '7859'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ La configurazione globale di  Adobe Campaign è definita nel file **serverConf.x
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite da Adobe solo per le distribuzioni ospitate da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html). I passaggi di installazione e configurazione per i modelli ospitati e ibridi sono descritti in questa [sezione](../../installation/using/hosted-model.md).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html). I passaggi di installazione e configurazione per i modelli ospitati e ibridi sono descritti in questa [sezione](../../installation/using/hosted-model.md).
 
 I primi parametri si trovano all&#39;interno del nodo **condiviso** . Sono correlate all&#39;istanza. Sono potenzialmente utilizzati da tutti i comandi nlserver (nlserver web, nlserver wfserver, ecc.). Le altre sezioni sono correlate a uno specifico sottocomando nlserver.
 
@@ -344,7 +344,7 @@ Nel nodo **dataStore > dataSource > dbcnx** , configura le impostazioni di conne
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Tipo (enumerazione). I valori possibili sono 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC, Sybase, Sybase IQ), 'Relay' (inoltro HTTP al database remoto).<br /> </td> 
+   <td> Tipo (enumerazione). I valori possibili sono 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' ( Amazon Redshift), 'ODBC' (ODBC (Sybase, SyASE) base IQ), 'Relay' (inoltro HTTP al database remoto).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -506,7 +506,7 @@ Configurazione predefinita:
 
 Di seguito sono elencati i diversi parametri del nodo **dnsConfig** (configurazione DNS).
 
-Per ulteriori informazioni, consultate questa [sezione](../../installation/using/configuring-campaign-server.md).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md).
 
 <table> 
  <thead> 
@@ -576,7 +576,7 @@ Per ulteriori informazioni, vedere [Limitazione dei comandi](../../installation/
  <tbody> 
   <tr> 
    <td> blocklistFile<br /> </td> 
-   <td> Percorso del file contenente i comandi da aggiungere all'elenco allow. <br /> </td> 
+   <td> Percorso del file contenente i comandi da aggiungere al elenco consentiti . <br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
@@ -729,7 +729,7 @@ Ecco i diversi parametri del nodo **modulo** . Questa è la configurazione per i
  </tbody> 
 </table>
 
-## monitoraggio {#monitoring}
+## monitoring {#monitoring}
 
 Ecco i diversi parametri del nodo di **monitoraggio** . Questa è la configurazione del servizio di monitoraggio.
 
@@ -907,7 +907,7 @@ Di seguito sono elencati i diversi parametri del nodo **threadPool** .
 
 Di seguito sono elencati i diversi parametri del nodo **urlPermission** . Questo è l&#39;elenco di URL a cui il codice JavaScript può accedere.
 
-Elenco di domini ed espressioni regolari che specificano se un URL rilevato nel codice JavaScript può o meno essere utilizzato dal server di Adobe Campaign .
+Elenco di domini ed espressioni regolari che specificano se un URL rilevato nel codice JavaScript può o meno essere utilizzato dal server Adobe Campaign .
 
 Se non è possibile trovare l’URL, l’azione predefinita viene eseguita, in base alla modalità predefinita specificata.
 
@@ -1179,7 +1179,7 @@ Ecco i diversi parametri del nodo **inMail** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Verifica nome istanza: se true, il nome dell'istanza del Adobe Campaign  contenuta nelle intestazioni Message-ID deve essere uguale all'istanza corrente. <br /> </td> 
+   <td> Verifica nome istanza: se true, il nome dell'istanza Adobe Campaign  contenuta nelle intestazioni Message-ID deve essere uguale all'istanza corrente. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1544,8 +1544,8 @@ Ecco i diversi parametri del nodo **mta** . Questa è la configurazione degli ag
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
-   <td> Indirizzo del server delle statistiche di consegna, indicato come &lt;dns o ip&gt; [: 
-     &lt;port&gt; ]. Vedere <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server</a>di statistiche. 
+   <td> Indirizzo del server delle statistiche di consegna, indicato come &lt;dns o ip&gt; <code>[</code>: 
+     &lt;port&gt; <code>]</code>. Vedere <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server</a>di statistiche. 
       <br /> 
      </td> 
    <td> Stringa<br /> </td> 
@@ -1565,7 +1565,7 @@ Ecco i diversi parametri del nodo **mta** . Questa è la configurazione degli ag
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Se è impostato su "true", l’istanza utilizza l’MTA <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank"></a>avanzato.<br /> </td> 
+   <td> Se è impostato su "true", l’istanza utilizza l’MTA <a href="https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank"></a>avanzato.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1660,7 +1660,7 @@ Per ulteriori informazioni, fare riferimento al relè [SMTP](../../installation/
 
 Nel nodo **mta > master** , configurate i seguenti parametri. Questa è la configurazione del server principale.
 
-Per ulteriori informazioni, consultate questa [sezione](../../installation/using/configuring-campaign-server.md#mta-child-processes).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
 <table> 
  <thead> 
@@ -1875,7 +1875,7 @@ Per ulteriori informazioni, vedere [Elenco di indirizzi IP da utilizzare](../../
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> ID indirizzo pubblico associato. Utilizzata come chiave per il server di statistiche. Deve essere numerico. Vedere questa <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sezione</a>.<br /> </td> 
+   <td> ID indirizzo pubblico associato. Utilizzata come chiave per il server di statistiche. Deve essere numerico. See this <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">section</a>.<br /> </td> 
    <td> Long<br /> </td> 
   </tr> 
   <tr> 
@@ -2053,7 +2053,7 @@ Ecco i diversi parametri del nodo **tubato** . Questa è la configurazione del m
   </tr> 
   <tr> 
    <td> puntatoreFlushMessageCount<br /> </td> 
-   <td> Il puntatore viene memorizzato nel database ogni volta che viene elaborato questo numero di messaggi.<br /> </td> 
+   <td> Il puntatore viene memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2436,7 +2436,7 @@ Ecco i diversi parametri del nodo **stat** . Questa è la configurazione del mod
   </tr> 
   <tr> 
    <td> port<br /> </td> 
-   <td> Porta di ascolto del server. Vedere questa <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">sezione</a>.<br /> </td> 
+   <td> Porta di ascolto del server. See this <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">section</a>.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2750,7 +2750,7 @@ Ecco i diversi parametri del nodo **trackinglogd** . Questa è la configurazione
 
 Di seguito sono elencati i diversi parametri del nodo **Web** . Questa è la configurazione del modulo Web.
 
-Per ulteriori informazioni, consultate questa [sezione](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+For additional information, refer to this [section](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2970,7 +2970,7 @@ Il nodo **web > jsp > classpath** contiene l&#39;elenco di tutti i percorsi di c
 
 Di seguito sono elencati i diversi parametri del nodo **Web > relay** . Questa è la configurazione del relay per le richieste HTTP tra due aree.
 
-Per ulteriori informazioni, consultate questa [sezione](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3079,7 +3079,7 @@ Per ulteriori informazioni, vedere Protezione [dinamica delle pagine, relè](../
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono 'normal' (esecuzione normale), 'blocklist' (url aggiunto all'elenco dei blocchi in caso di errore 404) e 'spare' (caricamento di file sul server di riserva, se esistente).<br /> </td> 
+   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono 'normal' (esecuzione normale), ' inserii nell'elenco Bloccati' (url aggiunto al elenco Bloccati  in caso di errore 404) e 'spare' (caricamento di file sul server di riserva, se esistente).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3205,7 +3205,7 @@ Configurazione predefinita:
 
 Di seguito sono elencati i diversi parametri del nodo **Web > redirection** . Questa è la configurazione del modulo di reindirizzamento.
 
-Per ulteriori informazioni, consultate questa [sezione](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
+For additional information, refer to this [section](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
 <table> 
  <thead> 
@@ -3219,7 +3219,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificatore organizzazione IMS: identificatore univoco dell’organizzazione all’interno del Adobe Marketing Cloud , utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
+   <td> Identificatore organizzazione IMS: identificatore univoco dell’organizzazione all’interno dell’Adobe Marketing Cloud, utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3227,7 +3227,7 @@ Per ulteriori informazioni, consultate questa [sezione](../../installation/using
    <td> P3PCompactPolicy<br /> </td> 
    <td> Valore che descrive il criterio utilizzato per i cookie permanenti (conforme al formato P3P Compact Policy). <br /> </td> 
    <td> Stringa<br /> </td> 
-   <td> 'CAO DSP COR CUR DEVa TAIa OUR BUS IND UNI COM NAV'<br /> </td> 
+   <td> 'CAO DSP COR CURa DEVa TAIa NOSTRO AUTOBUS IND UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
