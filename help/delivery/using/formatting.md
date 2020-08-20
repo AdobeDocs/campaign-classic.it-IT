@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ Nel nostro esempio, la riga seguente visualizza il contenuto del nome della rubr
 <h1><%= content.@name %></h1>
 ```
 
-Il codice seguente ripete sull&#39;elemento `<chapter>` collection:
+Il codice seguente si ripete sull&#39;elemento `<chapter>` collection:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -74,8 +77,8 @@ Gli attributi e gli elementi del contenuto sono rappresentati come oggetti JavaS
 **Esempio**:
 
 * **content.@name**: recupera il valore dell&#39;attributo &quot;name&quot; dell&#39;elemento principale
-* **content.@`['name']`**: identico al** contenuto.Sintassi di @name **
-* **content.Chapter.length**: restituisce il numero di elementi sull&#39;elemento `<chapter` collection
+* **content.@`['name']`**: identico al **contenuto.Sintassi di @name**
+* **content.Chapter.length**: restituisce il numero di elementi nell&#39;elemento `<chapter` di raccolta
 * **content.Chapter`[0]`.@name**: recupera il nome del primo `<chapter>` elemento
 * **Chapter.name()**: restituisce il nome dell&#39; `<chapter>` elemento
 * **Chapter.parent().name()**: restituisce il nome dell&#39;elemento padre di `<chapter>`
@@ -477,7 +480,7 @@ Esempi:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* Aggiunta del test condizionale **&lt;% if (Recipient.language == &#39;en&#39;) { %>**:
+* Aggiunta del test condizionale **&lt;% if (Recipient.language == &#39;en&#39;)`{`%>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -524,7 +527,7 @@ Per generare un&#39;anteprima del documento di output in qualsiasi momento, sele
 
 Alle immagini inserite nel documento di output HTML è possibile fare riferimento con riferimenti assoluti o relativi.
 
-Il riferimento relativo consente di inserire l’URL del server contenente le immagini nelle opzioni **NcmRessourcesDir** e **NcmRessourcesDirPreview** . Queste opzioni contengono il percorso delle immagini per la pubblicazione e l&#39;anteprima nella console client di Adobe Campaign.
+Il riferimento relativo consente di inserire l’URL del server contenente le immagini nelle opzioni **NcmRessourcesDir** e **NcmRessourcesDirPreview** . Queste opzioni contengono il percorso delle immagini per la pubblicazione e l’anteprima nella console client Adobe Campaign .
 
 Queste due opzioni sono accessibili tramite la schermata di gestione delle opzioni nella **[!UICONTROL Administration > Platform > Options]** cartella.
 
@@ -573,11 +576,11 @@ Nel modulo, il campo per la selezione dell&#39;immagine verrà aggiunto tramite 
 
 Nel documento di input XML, le date sono memorizzate nel formato XML interno: **AAAA/MM/GG HH:MM:SS** (esempio 2018/10/01 12:23:30).
 
-Adobe Campaign fornisce funzioni di formattazione delle date per i modelli JavaScript e i fogli di stile XSL descritti di seguito.
+ Adobe Campaign fornisce funzioni di formattazione delle date per i modelli JavaScript e i fogli di stile XSL descritti di seguito.
 
 ### Formattazione data JavaScript {#javascript-date-formatting}
 
-Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce la funzione **formatDate** che prende come input il contenuto della data e una stringa che specifica il formato di output con la sintassi seguente: **%4Y/%2M/%2D %2H%2N%2S**
+Per visualizzare una data nel formato desiderato,  Adobe Campaign fornisce la funzione **formatDate** che prende come input il contenuto della data e una stringa che specifica il formato di output con la sintassi seguente: **%4Y/%2M/%2D %2H%2N%2S**
 
 Esempi:
 
@@ -608,7 +611,7 @@ Esempi:
 
 ### Formattazione data XSL {#xsl-date-formatting}
 
-Nella sintassi XSLT non è disponibile alcuna funzione di gestione data standard. Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce il formato **** data della funzione esterna. Questa funzione utilizza come input il contenuto della data e una stringa che specifica il formato di output con la sintassi seguente: **%4Y/%2M/%2D %2H%2N%2S**
+Nella sintassi XSLT non è disponibile alcuna funzione di gestione data standard. Per visualizzare una data nel formato desiderato,  Adobe Campaign fornisce il formato **** data della funzione esterna. Questa funzione utilizza come input il contenuto della data e una stringa che specifica il formato di output con la sintassi seguente: **%4Y/%2M/%2D %2H%2N%2S**
 
 Esempi:
 
