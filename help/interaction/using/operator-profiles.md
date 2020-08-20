@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '388'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 Esistono due tipi di operatori che utilizzano l&#39;interazione: gestori di offerte e gestori di distribuzione. Ciascuno di essi dispone di diritti specifici che consentono loro di accedere solo ad alcune parti dell&#39;albero e della piattaforma.
 
-* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se nel flusso di lavoro vengono utilizzate le offerte, per eseguire il flusso di lavoro l&#39;operatore dovrà essere nel gruppo di operatori **[!UICONTROL Administrator]** o **[!UICONTROL Offer Manager)** .
+* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se nel flusso di lavoro vengono utilizzate le offerte, per eseguire il flusso di lavoro l&#39;operatore dovrà essere nel gruppo **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** dell&#39;operatore.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
 I passaggi per la creazione di operatori specifici di Interaction sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md#creating-an-operator). I diritti vengono configurati durante la creazione dell&#39;operatore.
@@ -95,7 +95,7 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
    <td> Leggi<br /> </td> 
   </tr> 
   <tr> 
-   <td> Amministrazione<br /> </td> 
+   <td> Administration<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Leggi<br /> </td> 
   </tr> 
@@ -155,7 +155,7 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
    <td> Leggi<br /> </td> 
   </tr> 
   <tr> 
-   <td> Amministrazione<br /> </td> 
+   <td> Administration<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
