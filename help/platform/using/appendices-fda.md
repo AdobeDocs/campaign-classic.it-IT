@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 **Basato in Latin1**
 
-Le versioni precedenti  Adobe Campaign Classic 17.9 supportavano solo il database Teradata Latin-1.
+Le versioni precedenti ad Adobe Campaign Classic 17.9 supportavano solo il database Teradata Latin-1.
 
-A partire  Adobe Campaign Classic 17.9, ora è supportato dal database Teradata predefinito in Unicode.
+A partire da Adobe Campaign Classic 17.9, ora è supportato dal database Teradata predefinito in Unicode.
 
 I clienti con un database Latino-1 Teradata che eseguono la migrazione a una versione recente di Campaign Classic dovranno aggiungere il parametro APICharSize=1 nelle opzioni dell’account esterno.
 
@@ -50,11 +50,11 @@ I clienti con un database Latino-1 Teradata che eseguono la migrazione a una ver
 
 #### Configurazione utente {#user-configuration}
 
-Sono richiesti i seguenti diritti: creare/rilasciare/eseguire procedure personalizzate, creare/rilasciare/inserire/selezionare tabelle. È inoltre possibile che sia necessario creare funzioni di modalità utente se si desidera utilizzare le funzioni md5 e sha2 nell&#39;istanza del Adobe Campaign .
+Sono richiesti i seguenti diritti: creare/rilasciare/eseguire procedure personalizzate, creare/rilasciare/inserire/selezionare tabelle. È inoltre possibile che sia necessario creare funzioni di modalità utente se si desidera utilizzare le funzioni md5 e sha2 nell&#39;istanza di Adobe Campaign .
 
-Accertatevi di configurare il fuso orario corretto. Deve corrispondere a quanto verrà impostato nell&#39;account esterno creato nell&#39;istanza del Adobe Campaign .
+Accertatevi di configurare il fuso orario corretto. Deve corrispondere a quanto verrà impostato nell&#39;account esterno creato nell&#39;istanza di Adobe Campaign .
 
- Adobe Campaign non imposta una modalità di protezione (fallback) sugli oggetti che verranno creati nel database. Potrebbe essere necessario impostare un valore predefinito per l&#39;utente che  Adobe Campaign utilizzerà per connettersi al database Teradata utilizzando la seguente query:
+ Adobe Campaign non imposterà una modalità di protezione (fallback) per gli oggetti che verranno creati nel database. Potrebbe essere necessario impostare un valore predefinito per l&#39;utente che  Adobe Campaign utilizzerà per connettersi al database Teradata utilizzando la seguente query:
 
 | disattiva fallback predefinito |
 | :-: |
@@ -62,7 +62,7 @@ Accertatevi di configurare il fuso orario corretto. Deve corrispondere a quanto 
 
 #### Installazione di MD5 {#md5-installation}
 
-Se si desidera utilizzare le funzioni md5 nell&#39;istanza  Adobe Campaign, è necessario installare la funzione modalità utente nel database Teradata da questa [pagina](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip).
+Se desiderate utilizzare le funzioni md5 nell&#39;istanza di Adobe Campaign , dovrete installare la funzione modalità utente nel database Teradata da questa [pagina](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip).
 
 Lo sha1 del file scaricato è il seguente 65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e.
 
@@ -82,7 +82,7 @@ Per installare md5:
 
 #### Installazione SHA2 {#sha2-installation}
 
-Se si desidera utilizzare le funzioni sha2 nell&#39;istanza del Adobe Campaign , è necessario installare la funzione modalità utente nel database Teradata da questa [pagina](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
+Se si desidera utilizzare le funzioni sha2 nell&#39;istanza di Adobe Campaign , è necessario installare la funzione modalità utente nel database Teradata da questa [pagina](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
 
 Lo sha1 del file scaricato è il seguente e87438d37424836358bd3902cf1adeb629349780.
 
@@ -103,7 +103,7 @@ Per installare sha2:
 
 #### Installazione di UDF_UTF16TO8 {#UDF-UTF16TO8-installation}
 
-Se si desidera utilizzare le funzioni udf_utf16to8 nell&#39;istanza  Adobe Campaign, sarà necessario installare la funzione modalità utente nel database Teradata dal kit **di strumenti** Teradata unicode di questa [pagina](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Se si desidera utilizzare le funzioni udf_utf16to8 nell&#39;istanza di Adobe Campaign , è necessario installare la funzione modalità utente nel database Teradata dal kit **di strumenti** Teradata unicode di questa [pagina](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
 
 Lo sha1 del file scaricato è il seguente e58235f434f52c71316a577cb48e20b97d24f470.
 
@@ -144,7 +144,7 @@ Nomi file e sha1:
 
 * TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz b 29d0af5ffd8dcf68a9dbbaa6f8639387b19c563
 
-Se non è presente alcun pacchetto per la distribuzione Linux, è possibile installare come spiegato in un CentOS 7 (ad esempio utilizzando docker) e copiare il contenuto di /opt/teradata sul server di Adobe Campaign .
+Se non è presente alcun pacchetto per la distribuzione Linux, è possibile installare come spiegato in un CentOS 7 (ad esempio utilizzando docker) e copiare il contenuto di /opt/teradata sul server Adobe Campaign .
 
 #### Installazione driver ODBC {#odbc-installation}
 
@@ -184,13 +184,13 @@ Per installare Strumenti:
 
 #### Configurazione driver {#driver-configuration}
 
-Per ulteriori informazioni sulla configurazione del driver, consultare questa [sezione](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
+To learn more on driver configuration, refer to this [section](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
 #### Variabili di ambiente {#environment-varaiables}
 
-Per ulteriori informazioni sulle variabili di ambiente del server di Adobe Campaign , consultare questa [sezione](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
+Per ulteriori informazioni sulle variabili di ambiente del server Adobe Campaign , consultare questa [sezione](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
-### Configurazione del server campagna per Windows #campaign-server-windows}
+### Configurazione del server Campaign per Windows {#campaign-server-windows}
 
 È innanzitutto necessario scaricare gli strumenti e le utility Teradata per Windows. Puoi scaricarlo da questa [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
@@ -203,7 +203,7 @@ Verificare che il percorso del driver e delle utility sia nella variabile PATH c
 Se durante il test della connessione **TIM-030008 Date &#39;2&#39; viene visualizzato il seguente errore: caratteri mancanti (iRc=-53)** assicurarsi che il driver ODBC sia installato correttamente e che LD_LIBRARY_PATH (Linux) / PATH (Windows) sia impostato per il server Campaign.
 
 Errore ODBC **ODB-240000:[Nome origine dati Microsoft][ODBC Driver Manager]non trovato e nessun driver predefinito specificato.** si verifica con Windows se si utilizza un driver 16.X.  Adobe Campaign prevede che i teradata siano denominati &#39;{teradata}&#39; in odbcinst.ini.
-Se si dispone di una versione server di Adobe Campaign 18.10 , è possibile aggiungere ODBCDRiverName=&quot;Driver ODBC 16.10 del database Teradata&quot; nelle opzioni dell&#39;account esterno. Il numero di versione può cambiare, il nome esatto può essere trovato eseguendo odbcad32.exe e l&#39;accesso alla scheda Driver.
+Se si dispone di una versione server Adobe Campaign 18.10 , è possibile aggiungere ODBCDRiverName=&quot;Driver ODBC 16.10 del database Teradata&quot; nelle opzioni dell&#39;account esterno. Il numero di versione può cambiare, il nome esatto può essere trovato eseguendo odbcad32.exe e l&#39;accesso alla scheda Driver.
 Per la versione inferiore a 18.10, sarà necessario copiare la sezione Teradata di odbcinst.ini creata dall&#39;installazione del driver in una nuova sezione chiamata Teradata,regedit può essere utilizzato in questo caso.
 
 Se la base è in latin1, è necessario aggiungere APICharSize=1 nelle opzioni.
@@ -212,7 +212,7 @@ Se la base è in latin1, è necessario aggiungere APICharSize=1 nelle opzioni.
 
 Teradata utilizza un nome di fuso orario non standard. L&#39;elenco è disponibile nel sito [Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA).  Adobe Campaign cercherà di convertire il fuso orario indicato nella configurazione esterna in qualcosa che Teradata capisce. Se non viene trovata una corrispondenza, verrà trovato il fuso orario GMT+X (o GMT-X) più chiuso per la sessione, con un avviso nel registro.
 
-La conversione viene eseguita leggendo un file denominato teradata_timezones.txt che dovrebbe trovarsi nella seguente directory di datakit: /usr/local/neolane/nl6/datakit sotto linux. Se modifichi questo file, contatta il team del Adobe Campaign  per apportare la modifica al codice sorgente, altrimenti il file verrà sovrascritto durante il prossimo aggiornamento di Campaign.
+La conversione viene eseguita leggendo un file denominato teradata_timezones.txt che dovrebbe trovarsi nella seguente directory di datakit: /usr/local/neolane/nl6/datakit sotto linux. Se modifichi questo file, contatta il team Adobe Campaign  per apportare la modifica al codice sorgente, altrimenti il file verrà sovrascritto durante il prossimo aggiornamento di Campaign.
 
 Il fuso orario utilizzato per la connessione viene indicato quando si esegue nlserver con lo switch -verbose, ad esempio:
 
@@ -232,7 +232,7 @@ MODIFY USER $login$ AS TIME ZONE = 'Europe Central';
 
 ### Configurazione server {#server-configuration-mysql}
 
-La configurazione del server non richiede passaggi di installazione specifici.  Adobe Campaign deve funzionare con un database latin1, con valori predefiniti in MySQL o con un database unicode.
+La configurazione del server non richiede passaggi di installazione specifici.  Adobe Campaign deve utilizzare un database latin1, il database predefinito su MySQL o un database unicode.
 
 ### Installazione driver {#driver-installation-mysql}
 
