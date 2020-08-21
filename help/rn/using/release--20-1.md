@@ -1,6 +1,6 @@
 ---
-title: Release 20.1
-description: Release 20.1
+title: Versione 20.1
+description: Versione 20.1
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,29 +13,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 1%
+source-wordcount: '1331'
+ht-degree: 6%
 
 ---
 
 
-# Release 20.1{#release-20-1}
+# Versione 20.1{#release-20-1}
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.3 - Build 9124{#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Versione 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
 _6 maggio 2020_
 
-* È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
+* È stato risolto un problema con l’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1.2 - Build 9123{#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Versione 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
 _13 marzo 2020_
 
 * È stato risolto un problema che impediva la distribuzione della versione sui server Red Hat 7. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Release 20.1 - Build 9122{#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Versione 20.1 - Build 9122{#release-20-1-build-9122}
 
 _17 febbraio 2020_
 
@@ -44,13 +44,13 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Connettore FDA per fiocco di neve</strong><br /> </th> 
+   <th> <strong>Connettore FDA Snowflake</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake è una data warehouse cloud completamente gestita, progettata per essere scalata sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza di Snowflake per eseguire la segmentazione Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
-    <p>Per ulteriori informazioni, consultate la documentazione <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake"></a> dettagliata e il video <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html"></a>tutorial.</p>
+   <td> <p> Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza  Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da  Adobe.</p>
+    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -103,7 +103,7 @@ _17 febbraio 2020_
 
 * In Linux, l&#39;avvio del servizio di nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installate il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile, ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Sono state migliorate le prestazioni delle query che potrebbero essere influenzate da connessioni di database non necessarie.
 
@@ -175,7 +175,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava il costante errore del flusso di lavoro **Importa pubblico dal flusso di lavoro tecnico di Adobe Experience Cloud** . (NEO-18463)
+* È stato risolto un problema che causava il costante errore del flusso di lavoro **Importa pubblico dal flusso di lavoro tecnico Adobe Experience Cloud** . (NEO-18463)
 
 * È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano modelli importati da  Experience Manager. (NEO-17540)
 
@@ -183,7 +183,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che si verificava durante l&#39;eliminazione, l&#39;inserimento o l&#39;aggiornamento di una grande quantità di dati con l&#39;attività **Aggiorna dati** in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
 
-* È stato risolto un problema che impediva l&#39;invio di e-mail quando si utilizzava l&#39;istruzione &#39;if&#39; all&#39;esterno del `body` tag.
+* È stato risolto un problema che impediva l&#39;invio di e-mail quando si utilizzava l&#39;istruzione &#39;if&#39; all&#39;esterno del `body` tag. (NEO-18628)
 
 * È stato risolto un problema che si verificava durante il tentativo di visualizzare la pagina mirror dai log di consegna di un messaggio inviato. (NEO-17976)
 
@@ -193,11 +193,11 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nella schermata di creazione della distribuzione **dei** dati.
 
-* È stato risolto un problema che si verificava durante la pianificazione di un&#39;attività di consegna in un&#39;istanza con Asia/Calcutta come fuso orario. (NEO-2001)
+* È stato risolto un problema che si verificava durante la pianificazione di un&#39;attività di consegna in un&#39;istanza con Asia/Calcutta come fuso orario. (NEO-20001)
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
