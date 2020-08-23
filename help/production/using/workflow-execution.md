@@ -1,7 +1,7 @@
 ---
-title: Esecuzione del flusso di lavoro
-seo-title: Esecuzione del flusso di lavoro
-description: Esecuzione del flusso di lavoro
+title: Esecuzione di un flusso di lavoro
+seo-title: Esecuzione di un flusso di lavoro
+description: Esecuzione di un flusso di lavoro
 seo-description: null
 page-status-flag: never-activated
 uuid: 115256f6-bdf2-4594-885c-e90d02a25b80
@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 5a4ee9b14d4c77f74ff73209d4323bf4f1347155
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '635'
+ht-degree: 3%
 
 ---
 
 
-# Esecuzione del flusso di lavoro{#workflow-execution}
+# Esecuzione di un flusso di lavoro{#workflow-execution}
 
 La sezione seguente contiene informazioni su problemi comuni relativi all’esecuzione dei flussi di lavoro e su come risolverli.
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni sui flussi di lavoro, consulta le sezioni seguenti:
 
 * [Informazioni sui flussi di lavoro](../../workflow/using/about-workflows.md)
 * [Avvio di un flusso di lavoro](../../workflow/using/starting-a-workflow.md)
-* [Ciclo di vita del flusso di lavoro](../../workflow/using/workflow-life-cycle.md)
+* [Ciclo di vita di un flusso di lavoro](../../workflow/using/workflow-life-cycle.md)
 * [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
 
 ## Inizia il prima possibile nelle campagne {#start-as-soon-as-possible-in-campaigns}
@@ -44,15 +44,15 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
 
    Per ulteriori informazioni sul monitoraggio dei flussi di lavoro tecnici, consulta [questa pagina](../../workflow/using/monitoring-technical-workflows.md).
 
-   >[NOTA]
+   >[!NOTE]
    >
    >Una volta riavviato il flusso di lavoro, accertatevi di eseguire le attività in sospeso (fate clic con il pulsante destro del mouse sull&#39; **[!UICONTROL Scheduler]** attività / **[!UICONTROL Execute pending task(s) now]**) per verificare se il flusso di lavoro ha nuovamente esito negativo su una qualsiasi delle attività.
 
    Se il flusso di lavoro continua a non riuscire, controllare il registro di controllo per verificare la presenza di errori specifici, risolvere i problemi di conseguenza, quindi riavviare il flusso di lavoro.
 
-1. Controllate lo stato del **[!UICONTROL wfserver]** modulo nella **[!UICONTROL Monitoring]** scheda, accessibile dalla home page di Campaign Classic (consultate Processi [di](../../production/using/monitoring-processes.md)monitoraggio). Questo processo è responsabile dell&#39;esecuzione di tutti i flussi di lavoro.
+1. Controllare lo stato del **[!UICONTROL wfserver]** modulo nella **[!UICONTROL Monitoring]** scheda, accessibile dalla homepage del Campaign Classic (vedere Processi [di](../../production/using/monitoring-processes.md)monitoraggio). Questo processo è responsabile dell&#39;esecuzione di tutti i flussi di lavoro.
 
-   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`**venga avviato sul server applicazione principale utilizzando il comando seguente.
+   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** venga avviato sul server applicazione principale utilizzando il comando seguente.
 
    ```
    nlserver pdump
@@ -62,7 +62,7 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
    [...]
    ```
 
-   Se il modulo non è in esecuzione, contatta l&#39;Assistenza clienti Adobe. Se disponete di un&#39;installazione locale, un utente amministratore deve riavviare il servizio utilizzando il comando seguente.
+   Se il modulo non è in esecuzione, contatta  Assistenza clienti di Adobe. Se disponete di un&#39;installazione locale, un utente amministratore deve riavviare il servizio utilizzando il comando seguente.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -79,11 +79,11 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
 
    Per risolvere questo problema, interrompere i flussi di lavoro indesiderati ed eliminare le consegne non riuscite. Se la soglia è stata raggiunta, ciò consentirà l&#39;esecuzione di nuovi processi.
 
-   Per verificare il numero di flussi di lavoro in esecuzione dell&#39;istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Per ulteriori informazioni, consultare [questa pagina](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Per verificare il numero di flussi di lavoro in esecuzione dell&#39;istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
-   >[ATTENZIONE]
+   >[!CAUTION]
    >
-   >L&#39;aumento della soglia di **[!UICONTROL NmsOperation_LimitConcurrency]** opzione potrebbe causare problemi di prestazioni nell&#39;istanza. In ogni caso, non eseguire questa operazione autonomamente e rivolgiti al contatto Adobe Campaign.
+   >L&#39;aumento della soglia di **[!UICONTROL NmsOperation_LimitConcurrency]** opzione potrebbe causare problemi di prestazioni nell&#39;istanza. In ogni caso, non eseguire questa operazione autonomamente e contattare il vostro contatto Adobe Campaign .
 
 Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
 
@@ -93,9 +93,9 @@ Se i flussi di lavoro non sono in esecuzione e il loro stato è **Inizia in cors
 
 Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti passaggi:
 
-1. Controllate lo stato del **[!UICONTROL wfserver]** modulo nella **[!UICONTROL Monitoring]** scheda, accessibile dalla home page di Campaign Classic (consultate Processi [di](../../production/using/monitoring-processes.md)monitoraggio).
+1. Controllare lo stato del **[!UICONTROL wfserver]** modulo nella **[!UICONTROL Monitoring]** scheda, accessibile dalla homepage del Campaign Classic (vedere Processi [di](../../production/using/monitoring-processes.md)monitoraggio).
 
-   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`**venga avviato sul server applicazione principale utilizzando il comando seguente.
+   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** venga avviato sul server applicazione principale utilizzando il comando seguente.
 
    ```
    nlserver pdump
@@ -107,7 +107,7 @@ Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti p
 
    Per ulteriori informazioni su come monitorare i moduli, consultare [questa sezione](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Se il modulo non è in esecuzione, contatta l&#39;Assistenza clienti Adobe. Se disponete di un&#39;installazione locale, un amministratore deve riavviarla utilizzando il comando seguente.
+1. Se il modulo non è in esecuzione, contatta  Assistenza clienti di Adobe. Se disponete di un&#39;installazione locale, un amministratore deve riavviarla utilizzando il comando seguente.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
