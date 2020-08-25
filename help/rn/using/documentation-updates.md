@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
+source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
 workflow-type: tm+mt
-source-wordcount: '7096'
-ht-degree: 95%
+source-wordcount: '7164'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ I video introduttivi sono ora disponibili sui seguenti argomenti:
 
 * [Come attivare e utilizzare AMP per le e-mail](../../delivery/using/defining-interactive-content.md)
 
-* [Come personalizzare le e-mail utilizzando blocchi di contenuto dinamici](../../delivery/using/personalization-blocks.md)
+* [Personalizzare le e-mail utilizzando blocchi di contenuto dinamici](../../delivery/using/personalization-blocks.md)
 
 * [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
 
@@ -56,6 +56,15 @@ I video introduttivi sono ora disponibili sui seguenti argomenti:
 * [Come impostare una consegna continua](../../workflow/using/continuous-delivery.md)
 
 Sono state aggiunte informazioni sui controlli e sulle azioni da eseguire quando viene visualizzato l&#39;errore &quot;Impossibile risolvere il nome host&quot; dopo la connessione a un server FTP. [Leggi tutto](../../platform/using/sftp-server-usage.md)
+
+Nell’elenco dei casi di utilizzo del [flusso di lavoro è stato fatto riferimento a nuovi casi](../../workflow/using/about-workflow-use-cases.md)di utilizzo:
+
+* Automazione della creazione, edizione e pubblicazione di contenuti
+* Impostazione di un processo di approvazione del destinatario prima dell&#39;invio
+* Chiamata di una variabile di istanza in una query
+* Applicazione di una percentuale divisa su una popolazione
+
+La sezione **[!UICONTROL AND-join]** Attività è stata arricchita da informazioni aggiuntive sull&#39;utilizzo di questa funzionalità, nonché da una nota sull&#39;utilizzo delle variabili. [Leggi tutto](../../workflow/using/and-join.md)
 
 ## Luglio 2020 {#july-2020}
 
