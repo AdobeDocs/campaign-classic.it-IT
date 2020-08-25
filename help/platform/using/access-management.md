@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni,  Adobe consiglia di leggere l&#39;elenco [di controllo della configurazione di](https://helpx.adobe.com/campaign/kb/acc-security.html)protezione.
+>Prima di iniziare a definire le autorizzazioni,  Adobe consiglia di leggere l&#39;elenco [di controllo della configurazione di](https://helpx.adobe.com/it/campaign/kb/acc-security.html)protezione.
 
 ## Operatori {#operators}
 
@@ -211,7 +211,7 @@ Per impostazione predefinita, l&#39;operatore tecnico &#39;webapp&#39; ha il dir
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle linee guida relative alla sicurezza, vedere [elenco](https://helpx.adobe.com/campaign/kb/acc-security.html)di controllo della configurazione di Adobe Campaign Security.
+>Per ulteriori informazioni sulle linee guida relative alla sicurezza, vedere [elenco](https://helpx.adobe.com/it/campaign/kb/acc-security.html)di controllo della configurazione di Adobe Campaign Security.
 
 ## Gruppi di operatori {#operator-groups}
 
@@ -247,7 +247,7 @@ I gruppi di operatori predefiniti sono:
 
    Questo gruppo contiene il seguente diritto denominato:
 
-   * **[!UICONTROL ADMINISTRATION]**: diritto di eseguire, creare, modificare, eliminare qualsiasi oggetto, ad esempio workflow, distribuzione, script ecc.
+   * **[!UICONTROL ADMINISTRATION]**: diritto di eseguire, creare, modificare, eliminare qualsiasi oggetto, ad esempio workflow, distribuzione, script, ecc.
 
 1. **[!UICONTROL Delivery operators]**
 
@@ -331,7 +331,7 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Gli utenti con **[!UICONTROL PREPARE DELIVERIES]** destra possono anche avviare il processo di analisi della consegna.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Diritto di eseguire comandi in vari linguaggi di programmazione.
 
@@ -357,7 +357,7 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
  matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![immagine](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Gestione dell&#39;accesso alle cartelle {#folder-access-management}
 
