@@ -15,14 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 6%
 
 ---
 
 
 # Test{#test}
 
-Un&#39;attività di tipo **Test** attiva la prima transizione che soddisfa la condizione associata. Se non viene soddisfatta alcuna condizione e se l&#39; **[!UICONTROL Use the default fork]** opzione è attivata, verrà attivata la transizione predefinita.
+A **Test** type activity activates the first transition that satisfies the condition associated with it. If no condition is satisfied and if the **[!UICONTROL Use the default fork]** option is activated, the default transition will be activated.
 
 Una condizione è un&#39;espressione JavaScript che deve essere valutata come &#39;true&#39; o &#39;false&#39;. Per immettere l&#39;espressione, fate clic sull&#39;icona a destra del nome della condizione, quindi selezionate **[!UICONTROL Edit...]**.
 
@@ -30,7 +33,7 @@ Una condizione è un&#39;espressione JavaScript che deve essere valutata come &#
 
 Per ulteriori informazioni su tutte le funzioni e i metodi SOAP JavaScript aggiuntivi del server applicativo accessibili tramite il flusso di lavoro JavaScript, consultare la documentazione [](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)JSAPI.
 
-È inoltre possibile inserire le variabili direttamente da questo editor.
+È inoltre possibile inserire le variabili direttamente da questo editor. Per ulteriori informazioni sull&#39;utilizzo delle variabili, consultare [questa sezione](../../workflow/using/javascript-scripts-and-templates.md#variables).
 
 Le condizioni possono essere aggiunte, eliminate o ordinate dalla finestra di modifica della proprietà dell&#39;attività, ma possono anche essere modificate dalla transizione.
 
