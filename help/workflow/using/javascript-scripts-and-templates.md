@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ Gli script sono onnipresenti in un diagramma di flusso di lavoro:
 
 ## Oggetti esposti {#objects-exposed}
 
-JavaScript eseguiti nel contesto di un flusso di lavoro accedono a una serie di oggetti globali aggiuntivi.
+Gli script JavaScript eseguiti nel contesto di un flusso di lavoro accedono a una serie di oggetti globali aggiuntivi.
 
 * **instance**: Rappresenta il flusso di lavoro in esecuzione. Lo schema di questo oggetto è **xtk:workflow**.
 * **task**: Rappresenta le attività in corso di esecuzione. Lo schema di questo oggetto è **xtk:workflowTask**.
@@ -74,23 +77,29 @@ Le variabili sono le proprietà libere degli **[!UICONTROL instance]**, **[!UICO
 
 ### Variabili di istanza {#instance-variables}
 
-Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali.  Sono condivisi da tutte le attività.
+Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali. Sono condivisi da tutte le attività.
 
 ### Variabili attività {#task-variables}
 
-Le variabili attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali.  Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per lo scambio di dati tra i diversi script di una stessa attività.
+Le variabili attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali. Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per lo scambio di dati tra i diversi script di una stessa attività.
 
 ### Variabili evento {#event-variables}
 
 Le variabili evento (**[!UICONTROL vars.xxx]**) consentono lo scambio di dati tra le attività elementari di un processo di workflow. Queste variabili vengono trasmesse dall’attività che ha attivato l’attività in corso. È possibile modificarle e definirne di nuove. Vengono quindi trasmesse alle seguenti attività.
 
-Nel caso di attività di tipo **AND-join** , le variabili vengono unite ma se una stessa variabile viene definita due volte, si verifica un conflitto e il valore rimane indeterminato.
+>[!CAUTION]
+>
+>Nel caso di attività di tipo [AND-join](../../workflow/using/and-join.md) , le variabili vengono unite ma se una stessa variabile viene definita due volte, si verifica un conflitto e il valore rimane indeterminato.
 
-Si tratta delle variabili utilizzate più spesso e dovrebbero essere utilizzate in preferenza per le variabili di istanza.
+Gli eventi sono le variabili utilizzate più spesso e dovrebbero essere utilizzati in preferenza per le variabili di istanza.
 
 Alcune variabili di evento vengono modificate o lette dalle varie attività. Sono tutte variabili di tipo stringa. Ad esempio, un’esportazione imposta la **[!UICONTROL vars.filename]** variabile con il nome completo del file appena esportato. Tutte queste variabili lette o modificate sono documentate in [Informazioni sulle attività](../../workflow/using/about-activities.md), nelle sezioni Parametri **di** input e Parametri **di** output delle attività.
 
-### Esempi {#example}
+### Casi d’uso {#example}
+
+>[!NOTE]
+>
+>In [questa sezione](../../workflow/using/about-workflow-use-cases.md)sono disponibili ulteriori casi di utilizzo del flusso di lavoro.
 
 **Esempio 1**
 
@@ -112,7 +121,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
    ![](assets/js_ex2.png)
 
-1. All&#39;interno della sezione dello script di inizializzazione della scheda Avanzate dell&#39;attività Split, definire una condizione JS. La condizione JS seleziona la percentuale di campionamento casuale della prima transizione proveniente dall&#39;attività Split e la aggiorna a un valore impostato dalla variabile di istanza creata in precedenza.
+1. All&#39;interno della sezione dello script di inizializzazione della scheda Avanzate dell&#39;attività Dividi, definire una condizione JS. La condizione JS seleziona la percentuale di campionamento casuale della prima transizione proveniente dall&#39;attività Split e la aggiorna a un valore impostato dalla variabile di istanza creata in precedenza.
 
    ```
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
@@ -172,7 +181,7 @@ Ad esempio:
 
    Come promemoria, queste informazioni vengono memorizzate nei registri di consegna.
 
-   Per fare riferimento alla variabile di istanza nella **[!UICONTROL Value]** colonna, immettere **$(instance/vars/@deliveryIN)**.
+   Per fare riferimento alla variabile di istanza nella **[!UICONTROL Value]** colonna, immettete **$(instance/vars/@deliveryIN)**.
 
    Il flusso di lavoro restituirà i destinatari della distribuzione DM42.
 
