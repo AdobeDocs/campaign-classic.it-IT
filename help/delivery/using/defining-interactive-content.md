@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: f52e00ade7c97662eb4061e19fd38b863b2c2bd3
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 3%
 
 ---
 
@@ -33,13 +33,14 @@ Per ulteriori informazioni sul test e l&#39;invio di e-mail AMP, consultate [Tar
 
 Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign. Per utilizzarlo, il pacchetto deve essere installato. Al termine, riavviate il server per prendere in considerazione il pacchetto.
 
->[!NOTE]
-> Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, incluso il server [](../../installation/using/mid-sourcing-server.md) mid-sourcing e l&#39;istanza [di](../../message-center/using/creating-a-shared-connection.md#execution-instance)esecuzione. Contattate il vostro responsabile commerciale.
+    >[!NOTE]
+    >
+    > Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, incluso il [server mid-sourcing](../../installation/using/mid-sourcing-server.md) e l&#39;[istanza di esecuzione](../../message-center/using/creating-a-shared-connection.md#execute-instance). Contattate il vostro responsabile commerciale.
 
 
 ## Informazioni su AMP per e-mail {#about-amp-for-email}
 
-Il nuovo formato **AMP per e-mail** consente di includere componenti AMP nei messaggi per migliorare l&#39;esperienza e-mail con contenuti avanzati e fruibili. Grazie alle moderne funzionalità delle app disponibili direttamente nelle e-mail, i destinatari possono interagire in modo dinamico con il contenuto del messaggio stesso.
+Il nuovo formato **AMP per e-mail** consente di includere componenti AMP nei messaggi per migliorare l&#39;esperienza e-mail con contenuti avanzati e fruibili. Grazie alle funzionalità moderne dell’app disponibili direttamente nelle e-mail, i destinatari possono interagire in modo dinamico con il contenuto all’interno del messaggio stesso.
 
 Ad esempio:
 * Le e-mail scritte con AMP possono contenere elementi interattivi quali caroselli di immagini.
