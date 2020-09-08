@@ -1,7 +1,7 @@
 ---
-title: Aggiornamento dei dati
-seo-title: Aggiornamento dei dati
-description: Aggiornamento dei dati
+title: Aggiornamenti dei dati
+seo-title: Aggiornamenti dei dati
+description: Aggiornamenti dei dati
 seo-description: null
 page-status-flag: never-activated
 uuid: 3a192934-215a-4a0a-a141-956b5c229f5b
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 98c880e1218f179b8b804d52690135a2f28520a0
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 3%
 
 ---
 
 
-# Aggiornamento dei dati{#updating-data}
+# Aggiornamenti dei dati{#updating-data}
 
 I dati collegati al profilo di un destinatario possono essere aggiornati manualmente o automaticamente.
 
 ## Impostazione di un aggiornamento automatico {#setting-up-an-automatic-update}
 
-Un aggiornamento automatico può essere configurato tramite un flusso di lavoro. For more on this, refer to [this section](../../workflow/using/update-data.md).
+Un aggiornamento automatico può essere configurato tramite un flusso di lavoro. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/update-data.md).
 
 ## Esecuzione di un aggiornamento di massa {#performing-a-mass-update}
 
@@ -78,13 +81,13 @@ La procedura guidata visualizza i valori da recuperare per ogni campo completato
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
-Fate clic **[!UICONTROL Compute]** per visualizzare il risultato desiderato.
+Fate clic **[!UICONTROL Compute]** per visualizzare il risultato della scelta.
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
 Controllare le **[!UICONTROL Result]** colonne di entrambe le sezioni della finestra e fare clic **[!UICONTROL Finish]** per eseguire l&#39;unione.
 
-## Esportazione dei dati {#exporting-data}
+## Esportazione di dati {#exporting-data}
 
 È possibile esportare il contenuto di un elenco. Per configurare ed eseguire l&#39;esportazione:
 
@@ -104,7 +107,7 @@ Controllare le **[!UICONTROL Result]** colonne di entrambe le sezioni della fine
 Nella maggior parte dei casi, i destinatari si iscrivono a una newsletter tramite una pagina di destinazione dedicata, come illustrato in [questa sezione](../../delivery/using/managing-subscriptions.md). Tuttavia, i profili dei destinatari filtrati possono essere sottoscritti manualmente a un servizio (Newsletter o Viral service). Per eseguire questa operazione:
 
 1. Selezionate i destinatari che desiderate sottoscrivere e fate clic con il pulsante destro del mouse.
-1. Selezionare **[!UICONTROL Actions > Subscribe selection to a service]**.
+1. Seleziona **[!UICONTROL Actions > Subscribe selection to a service]**.
 
    ![](assets/s_ncs_user_selection_subscribe_service.png)
 
@@ -116,7 +119,7 @@ Nella maggior parte dei casi, i destinatari si iscrivono a una newsletter tramit
    >
    >Questo editor consente di creare un nuovo servizio: fare clic sul **[!UICONTROL Create]** pulsante.
 
-1. Puoi **[!UICONTROL Send a confirmation message]** indirizzare i destinatari. Il contenuto di questo messaggio può essere configurato nello scenario di iscrizione collegato al servizio selezionato.
+1. È possibile **[!UICONTROL Send a confirmation message]** indirizzare i destinatari. Il contenuto di questo messaggio può essere configurato nello scenario di iscrizione collegato al servizio selezionato.
 1. Fate clic sul **[!UICONTROL Start]** pulsante per eseguire il processo di iscrizione.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
