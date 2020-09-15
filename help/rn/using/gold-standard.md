@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -27,15 +27,15 @@ ht-degree: 0%
 
 In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
 
-I clienti interni e ibridi possono inoltre beneficiare delle versioni Gold Standard.
+I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
 
 Questa è la nostra versione di supporto a lungo termine. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
 
 In questa pagina sono elencate le versioni di Gold Standard.
 
-Per ulteriori informazioni sull&#39;aggiornamento Gold Standard, consultate questo [articolo](https://helpx.adobe.com/campaign/kb/gold-standard.html).
+Per ulteriori informazioni sull&#39;aggiornamento Gold Standard, consultate questo [articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited.png) Rilascio Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) Rilascio Gold Standard 10{#gs-10}
 
 _7 luglio 2020_
 
@@ -45,7 +45,7 @@ La build 9032@efd8a94 include la seguente correzione:
 
 >[!CAUTION]
 >
->È consigliabile aggiornare la console client con quella disponibile in questa versione. Fare riferimento a questa [pagina](../../installation/using/installing-the-client-console.md)
+>È consigliabile aggiornare la console client con quella disponibile in questa versione. Refer to this [page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Release Gold Standard 9{#gs-9}
 
@@ -69,14 +69,14 @@ _29 aprile 2020_
 
 La build 9032@3a9dc9c include le seguenti correzioni:
 
-* Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. È disponibile un&#39;ulteriore funzione di sicurezza avanzata che può essere abilitata contattando l&#39;Assistenza clienti. Ulteriori dettagli sulla funzionalità e sui passaggi per consentire ai clienti non ospitati di utilizzarla sono disponibili nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Miglioramento della protezione per il tracciamento dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
 >In caso di problemi con le notifiche push tramite i collegamenti di tracciamento o le consegne tramite i tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per il tracciamento dei collegamenti. La procedura è dettagliata in questa [pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
-* È stato risolto un problema con l&#39;attività **Trasferimento** file che impediva il funzionamento dell&#39;autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
+* È stato risolto un problema con l’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
 * È stato risolto un problema che poteva interessare la notifica push quando inviata ad alta frequenza. (NEO-20516)
 * È stato risolto un problema nella gestione delle risposte delle offerte che poteva causare arresti anomali del server Web. (NEO-19482)
 * È stato corretto un errore in Gestione LibreOffice che impediva l’esportazione dei rapporti. (NEO-20982)
@@ -85,8 +85,8 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 * È stata migliorata la gestione della connessione Apache per evitare la latenza nel servizio Web.
 * Migliorata la visualizzazione del tag di versione (7 cifre) nel menu **Informazioni su** .
 * Risolto un problema di regressione nella gestione degli elenchi che impediva la pubblicazione delle offerte.
-* È stata corretta una regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
-* Risolto un problema di regressione minore nei registri del flusso di lavoro di pulizia.
+* È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
+* È stato risolto un problema di regressione minore nei log del flusso di lavoro di pulizia.
 
 ## ![](assets/do-not-localize/green_2.png) Release Gold Standard 6{#gs-6}
 
@@ -120,7 +120,7 @@ La build 9032@3468c7b include le seguenti correzioni:
 
 * È stato risolto un problema di accesso tramite l&#39;autenticazione IMS. (NEO-17312)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti cumulativi su più consegne. (NEO-18165)
-* È stato risolto un problema che poteva bloccare o causare l&#39;arresto anomalo del server Web.
+* È stato risolto un problema che poteva bloccare o arrestare il server Web.
 
 ## ![](assets/do-not-localize/red_2.png) Release Gold Standard 2{#gs-2}
 
@@ -131,7 +131,7 @@ La build 9032@cee805c include le seguenti correzioni:
 * È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
 * È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
 
-## ![](assets/do-not-localize/red_2.png) Release 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/red_2.png) Versione 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
 _13 agosto 2019_
 
