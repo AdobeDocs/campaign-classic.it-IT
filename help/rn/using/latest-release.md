@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
+source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 80%
+source-wordcount: '2161'
+ht-degree: 76%
 
 ---
 
@@ -45,13 +45,13 @@ _22 luglio 2020_
 * È stato risolto un problema che impediva il funzionamento del tracciamento quando la funzione di firma era disabilitata. (NEO-26411)
 * È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati quando questi dovevano essere consentiti. (NEO-25210)
 * È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook. (NEO-25688)
-* È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail. (NEO-26084)
+* È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
 * È stato risolto un problema con la gestione degli URL di codifica nel servizio di anti-phishing. (NEO-25283)
 * È stato risolto un problema che impediva il funzionamento del tracciamento degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
 * È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277) È stato risolto un problema che impediva il funzionamento del tracciamento dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
-* È stata corretta una regressione che ha un impatto sui campi calcolati in un flusso di lavoro. (NEO-25194)
+* È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro e causava un errore nel flusso di lavoro. (NEO-25194)
 * È stata corretta una regressione che impediva il funzionamento della creazione immediata di URL di tracciamento Web. (NEO-20999)
-* È stato risolto un problema relativo ai rapporti di consegna forniti con Scene7 che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
+* È stato risolto un problema di regressione con i rapporti di consegna forniti che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
 * È stato risolto un problema di arresto anomalo nella procedura guidata di distribuzione.
 * È stato risolto un problema che poteva impedire il corretto funzionamento del flusso di lavoro di notifica dell&#39;offerta dopo un post aggiornamento.
 * Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903)
@@ -239,7 +239,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema che poteva interessare le notifiche push quando inviate con un’elevata frequenza. (NEO-20516)
 * È stato risolto un problema che causava l’inclusione di duplicati nei dati di tracking anche se i log di tracking non ne includevano. (NEO-20040)
 * È stato risolto un problema che causava l’invio di e-mail transazionali duplicate dopo la risoluzione di un errore di comunicazione del server di tracking. (NEO-23640)
-* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracking. (NEO-25637)
+* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracciamento (impatto sui caratteri giapponesi). (NEO-25637)
 * È stato risolto un problema che poteva impedire il funzionamento di una query durante il confronto di numeri in virgola mobile. (NEO-23243)
 * È stato risolto un problema che poteva impedire la visualizzazione del contenuto della colonna **Modified by** dopo il riavvio di un flusso di lavoro. (NEO-23035)
 * È stato risolto un problema che causava un errore nel flusso di lavoro tecnico di tracking durante il download dei log da un secondo contenitore. (NEO-23159)
@@ -249,7 +249,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema relativo ai campi di archiviazione aggiuntivi durante la creazione di consegne tramite l’opzione **Computed by a script** nell’attività del flusso di lavoro **Script**. (NEO-20609)
 * È stato risolto un problema che impediva l’eliminazione dei flussi di lavoro fantasma nelle attività di pulizia del database.
 * È stato risolto un problema che causava un errore del flusso di lavoro tecnico di **fatturazione (profili attivi)**. (NEO-19777)
-* È stato risolto un problema che si verificava durante il test della connessione dell’account esterno acsDefaultAccount. (NEO-23433)
+* È stato risolto un problema di regressione quando si utilizzava la funzione di connettore ACS che impediva la connessione a un&#39;istanza Campaign Standard (gestione errata della connessione FOH/FOH2). (NEO-23433)
 * È stato risolto un problema che impediva la creazione di un’estensione dello schema su una chiave primaria con più colonne con una tabella Hadoop. (NEO-17390)
 * È stato risolto un problema nell’attività **Loading (SOAP)** che poteva impedire il caricamento di file WSDL da un URL. (NEO-16924)
 * È stato risolto un problema che impediva l’esecuzione di un **arresto incondizionato** tramite la console in caso di bilanciamento del carico di più server del flusso di lavoro attivi. (NEO-19556)
@@ -261,6 +261,6 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema che poteva far sì che una consegna fosse visualizzata due volte nell’elenco di consegna dopo l’invio.
 * È stato risolto un problema relativo alla preparazione delle consegne che poteva verificarsi quando la configurazione dell’indirizzamento era impostata per inviare la consegna tramite mid-sourcing.
 * È stato risolto un problema che poteva visualizzare un messaggio di errore quando si faceva clic su un collegamento di un’applicazione web all’interno di un messaggio Line.
-* È stato risolto un problema che poteva impedire alla gestione delle relazioni con i clienti di Microsoft Dynamics di recuperare tutte le entità. (NEO-24528)
 * È stato risolto un problema che eliminava la cronologia dell’attività **Incremental query** dopo l’esecuzione del flusso di lavoro di pulizia.
-* È stato risolto un problema che si verificava durante la creazione di un account esterno di mid-sourcing a causa del quale l’opzione NmsMidSourcing_LastBroadLog_&lt;InternalName> risultava mancante
+* È stato risolto un problema che si verificava durante la creazione di un account esterno di mid-sourcing a causa del quale l’opzione NmsMidSourcing_LastBroadLog_&lt;InternalName> risultava mancante.
+* È stato risolto un problema di regressione della connessione al database che causava il riavvio costante del server Web a causa di un problema di codifica del database. Ciò potrebbe portare ad un consumo eccessivo. (NEO-23264)
