@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 16%
+source-wordcount: '944'
+ht-degree: 15%
 
 ---
 
@@ -97,6 +97,12 @@ Il layout generale di  Adobe Campaign Explorer viene presentato in [Utilizzo  Ad
 
 I profili attivi sono i profili conteggiati a scopo di fatturazione.
 
+>[!NOTE]
+>
+>Se siete ospitati su AWS e utilizzate Campaign Classic dalla build 8931, potete anche monitorare il numero di profili attivi utilizzati sulle istanze direttamente dal Pannello di controllo Campaign. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>
+>Il conteggio dei profili attivi è disponibile solo per le istanze **di** Marketing. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid-sourcing) e RT (Message Center / Real-time messaging).
+
 “**Profile**” means a record of information (e.g.: a record in the nmsRecipient table or an external table containing a cookie ID, Customer ID, mobile identifier or other information relevant to a particular channel) representing an end-customer, prospect, or lead.
 
 La fatturazione riguarda solo i profili **attivi**. Un profilo è considerato attivo se è stato eseguito il targeting o comunicato con il profilo negli ultimi 12 mesi tramite qualsiasi canale.
@@ -108,8 +114,6 @@ I profili esclusi durante la preparazione della consegna (regole di tipologia, q
 >I canali Facebook e Twitter non vengono presi in considerazione.
 
 Potete avere una panoramica del **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . Il conteggio effettivo viene eseguito dal flusso di lavoro **[!UICONTROL Number of active billing profiles]****[!UICONTROL billingActiveContactCount]**( [)](../../workflow/using/deliveries.md)tecnico, che viene eseguito ogni giorno e aggiunge i nuovi dati al rapporto esistente per il periodo corrente nel **[!UICONTROL Customer metrics]** menu. Ogni periodo dura 12 mesi.
-
-Se siete ospitati su AWS e utilizzate Campaign Classic dalla build 8931, potete anche monitorare il numero di profili attivi utilizzati sulle istanze direttamente dal Pannello di controllo Campaign. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Come creare e gestire i profili {#create-profiles-video}
 
