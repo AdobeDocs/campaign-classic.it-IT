@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1344'
 ht-degree: 6%
 
 ---
@@ -91,7 +91,7 @@ _17 febbraio 2020_
 
 * Miglioramento della gestione della quarantena e della pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disattivati ora vengono gestiti come per Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Leggi tutto](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* È stata aggiunta una nuova opzione nel codice **** JavaScript e nelle attività del flusso di lavoro del codice **JavaScript** avanzato per definire un periodo di timeout. Questo impedisce l&#39;esecuzione troppo lunga della fase di esecuzione javascript. Se il periodo di timeout intercorre, il flusso di lavoro viene interrotto. Il timeout predefinito è 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nel codice **** JavaScript e nelle attività del flusso di lavoro del codice **JavaScript** avanzato per definire un periodo di timeout. Questo impedisce l&#39;esecuzione troppo lunga della fase di esecuzione di javascript. Se il periodo di timeout intercorre, il flusso di lavoro viene interrotto. Il timeout predefinito è 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
 
 * L&#39;analisi di consegna ora viene arrestata quando non viene trovata alcuna affinità corrispondente nel server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
@@ -107,7 +107,7 @@ _17 febbraio 2020_
 
 * Sono state migliorate le prestazioni delle query che potrebbero essere influenzate da connessioni di database non necessarie.
 
-* Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database.
+* Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
 
 * La gestione dei record del database è stata migliorata.
 
@@ -183,7 +183,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che si verificava durante l&#39;eliminazione, l&#39;inserimento o l&#39;aggiornamento di una grande quantità di dati con l&#39;attività **Aggiorna dati** in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
 
-* È stato risolto un problema che impediva l&#39;invio di e-mail quando si utilizzava l&#39;istruzione &#39;if&#39; all&#39;esterno del `body` tag. (NEO-18628)
+* È stato risolto un problema che impediva l&#39;invio di e-mail in caso di codice JavaScript all&#39;esterno del tag di contenuto HTML. (NEO-18628)
 
 * È stato risolto un problema che si verificava durante il tentativo di visualizzare la pagina mirror dai log di consegna di un messaggio inviato. (NEO-17976)
 
@@ -197,7 +197,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
