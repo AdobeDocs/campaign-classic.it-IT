@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
  Adobe Campaign viene aggiornato regolarmente. In media vengono rilasciate ogni anno due o tre versioni secondarie con nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build con solo correzioni cumulative.
 
-Questa regolare frequenza di aggiornamenti mira a ottenere il massimo e il massimo dalle vostre mani, mantenendo il vostro ambiente sicuro e migliorando la vostra esperienza con il nostro prodotto.
+Questa regolare frequenza di aggiornamenti mira a ottenere il massimo e più recente nelle vostre mani, mantenendo il vostro ambiente sicuro e migliorando la vostra esperienza con il nostro prodotto.
 
 Questo è il motivo per cui crediamo sia fondamentale eseguire la versione più recente di  Adobe Campaign. In questo modo sarà possibile ottenere un&#39;esperienza di supporto migliore, poiché identificare, riprodurre e risolvere un problema in una build recente è generalmente molto più veloce. Inoltre, molti problemi che potrebbero verificarsi sono già stati risolti nelle build più recenti.
 
@@ -37,13 +37,13 @@ A partire dal Campaign Classic 19.2, a ciascuna build viene associato uno stato.
 
 L&#39; **ultima costruzione** stabile è Gold Standard 6. Fai clic [qui](../../rn/using/gold-standard.md)
 
-![](assets/do-not-localize/limited.png) **Disponibilità** limitata: build attualmente in fase di convalida della produzione. Solo distribuzione su richiesta.
+![](assets/do-not-localize/limited3.png) **Disponibilità** limitata: build attualmente in fase di convalida della produzione. Solo distribuzione su richiesta.
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** - Build convalidata dal Adobe . In attesa di prove di produzione.
 
-![](assets/do-not-localize/orange3.png) **Non più disponibile** - È disponibile una nuova build con correzioni di bug. L&#39;aggiornamento è obbligatorio.
+![](assets/do-not-localize/orange3.png) **Non più disponibile** - È disponibile una nuova build con correzioni di bug. L’aggiornamento è richiesto.
 
-![](assets/do-not-localize/red3.png) **Obsoleto** - Contiene regressioni note. L&#39;aggiornamento è obbligatorio.
+![](assets/do-not-localize/red3.png) **Obsoleto** - Contiene regressioni note. L’aggiornamento è obbligatorio.
 
 ## Processo di aggiornamento{#process-upgrade}
 
@@ -51,7 +51,7 @@ In qualità di cliente ospitato (Servizio gestito o Ibrido), devi contattare il 
 
 In qualità di utente Gold Standard, si beneficerà automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
-In qualità di utente locale, potete eseguire l&#39;aggiornamento. A tal fine, è necessario [scaricare la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) stabile più recente e aggiornare tutti gli ambienti. Ulteriori informazioni sul processo [di](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)aggiornamento e consultare le domande frequenti relative all&#39;aggiornamento della [build](https://helpx.adobe.com/campaign/kb/build-upgrade-faq.html).
+In qualità di utente locale, potete eseguire l&#39;aggiornamento. A tal fine, è necessario [scaricare la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) stabile più recente e aggiornare tutti gli ambienti. Ulteriori informazioni sul processo [di](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)aggiornamento e consultare le domande frequenti relative all&#39;aggiornamento della [build](https://helpx.adobe.com/it/campaign/kb/build-upgrade-faq.html).
 
 ## Raccomandazioni{#recommendations}
 
