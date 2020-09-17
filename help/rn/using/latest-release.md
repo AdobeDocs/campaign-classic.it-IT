@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
+source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 76%
@@ -48,7 +48,8 @@ _22 luglio 2020_
 * È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
 * È stato risolto un problema con la gestione degli URL di codifica nel servizio di anti-phishing. (NEO-25283)
 * È stato risolto un problema che impediva il funzionamento del tracciamento degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
-* È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277) È stato risolto un problema che impediva il funzionamento del tracciamento dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
+* È stato risolto un problema di tracciamento quando si utilizzavano formule di tracciamento personalizzate specifiche. (NEO-25277)
+* È stato risolto un problema che impediva il monitoraggio dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
 * È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro e causava un errore nel flusso di lavoro. (NEO-25194)
 * È stata corretta una regressione che impediva il funzionamento della creazione immediata di URL di tracciamento Web. (NEO-20999)
 * È stato risolto un problema di regressione con i rapporti di consegna forniti che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
