@@ -7,13 +7,13 @@ contentOwner: sauviat
 products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
-topic-tags: latest-release-notes
+topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
+source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -197,7 +197,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
