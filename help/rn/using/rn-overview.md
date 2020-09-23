@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 10%
@@ -35,7 +35,7 @@ A partire dal Campaign Classic 19.2, a ciascuna build viene associato uno stato.
 
 ![](assets/do-not-localize/green3.png) **Disponibilità** generale - Ultima build stabile disponibile. Build convalidata in produzione.
 
-L&#39; **ultima costruzione** stabile è Gold Standard 6. Fai clic [qui](../../rn/using/gold-standard.md)
+L&#39; **ultima costruzione** stabile è Gold Standard 10. Fai clic [qui](../../rn/using/gold-standard.md#gs-10)
 
 ![](assets/do-not-localize/limited3.png) **Disponibilità** limitata: build attualmente in fase di convalida della produzione. Solo distribuzione su richiesta.
 
@@ -49,7 +49,7 @@ L&#39; **ultima costruzione** stabile è Gold Standard 6. Fai clic [qui](../../r
 
 In qualità di cliente ospitato (Servizio gestito o Ibrido), devi contattare il team di assistenza clienti per aggiornare l&#39;ambiente.
 
-In qualità di utente Gold Standard, si beneficerà automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+In qualità di utente Gold Standard, si beneficerà automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-10)
 
 In qualità di utente locale, potete eseguire l&#39;aggiornamento. A tal fine, è necessario [scaricare la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) stabile più recente e aggiornare tutti gli ambienti. Ulteriori informazioni sul processo [di](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)aggiornamento e consultare le domande frequenti relative all&#39;aggiornamento della [build](https://helpx.adobe.com/it/campaign/kb/build-upgrade-faq.html).
 
