@@ -11,7 +11,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 96%
@@ -132,7 +132,7 @@ I seguenti sistemi sono obsoleti per Campaign Classic. Consulta la [Matrice di c
 A partire dalla versione 20.2, i seguenti sistemi sono obsoleti per Campaign Classic. La compatibilità terminerà con la release 20.3 - ottobre 2020.
 
 * Console del client: Windows 7
-* Connettori SMS precedenti (vedere Funzioni [obsolete](#deprecated-features)
+* Connettori SMS precedenti - vedere Funzioni [obsolete](#deprecated-features)
 * DB2 UDB 10.5 per Federated Data Access (FDA)
 
 ### Adobe Campaign versione 19.2 {#compat-19-2-release}
