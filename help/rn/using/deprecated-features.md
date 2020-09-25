@@ -11,17 +11,17 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 100%
+source-wordcount: '1444'
+ht-degree: 96%
 
 ---
 
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le funzionalità dei prodotti per identificare le funzioni meno recenti da sostituire con alternative più moderne, al fine di migliorare il valore complessivo per il cliente, sempre con un’attenta considerazione della compatibilità con le versioni precedenti. Poiché Adobe Campaign Classic funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate. Le versioni non più compatibili con Adobe Campaign Classic sono elencate di seguito e nella [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+Adobe valuta costantemente le funzionalità dei prodotti per identificare le funzioni meno recenti da sostituire con alternative più moderne, al fine di migliorare il valore complessivo per il cliente, sempre con un’attenta considerazione della compatibilità con le versioni precedenti. Poiché Adobe Campaign Classic funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate. Le versioni non più compatibili con Adobe Campaign Classic sono elencate di seguito e nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 Per comunicare l’imminente rimozione/sostituzione delle funzionalità di Campaign Classic, si applicano le seguenti regole:
 
@@ -49,7 +49,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
    <tr>
   <td>Connettori SMS<br></td>
-  <td><p> A partire dalla versione 20.2, i seguenti connettori SMS sono obsoleti.<p>
+  <td><p> A partire dalla release Campaign 20.2, i seguenti connettori SMS sono obsoleti.<p>
    <ul>
    <li>NetSize</li>
    <li>SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)</li>
@@ -66,7 +66,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
  </tr>
   <tr>  
    <td>Canale fax<br></td>
-   <td><p>A partire dalla versione 20.2, il canale fax è obsoleto.</p> 
+   <td><p>A partire dalla release Campaign 20.2, il canale Fax è diventato obsoleto.</p> 
    <p>Se utilizzi questo canale, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a> sui canali di Campaign.</p>
    <p><em>Data effettiva di rimozione: 2021</em></p></td>
   </tr>
@@ -125,14 +125,15 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
 
 ## Compatibilità obsoleta {#deprecated-compatibility}
 
-I seguenti sistemi sono obsoleti per Campaign Classic. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) per effettuare l’aggiornamento a una versione più recente o per passare a un nuovo sistema prima del termine della compatibilità.
+I seguenti sistemi sono obsoleti per Campaign Classic. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md) per effettuare l’aggiornamento a una versione più recente o per passare a un nuovo sistema prima del termine della compatibilità.
 
 ### Adobe Campaign versione 20.2 {#compat-20-2-release}
 
-A partire dalla versione 20.2, il seguente sistema è obsoleto per Campaign Classic. La compatibilità terminerà con la versione 20.3 a settembre 2020.
+A partire dalla versione 20.2, i seguenti sistemi sono obsoleti per Campaign Classic. La compatibilità terminerà con la release 20.3 - ottobre 2020.
 
 * Console del client: Windows 7
-* Connettori SMS legacy (consulta la sezione Funzioni obsolete di seguito)
+* Connettori SMS precedenti (vedere Funzioni [obsolete](#deprecated-features)
+* DB2 UDB 10.5 per Federated Data Access (FDA)
 
 ### Adobe Campaign versione 19.2 {#compat-19-2-release}
 
@@ -141,17 +142,17 @@ A partire dalla versione 19.2, i seguenti sistemi operativi sono obsoleti per Ca
 * Server web: Apache 2.2.
 * Sistema operativo: CentOS 6.
 
-Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) per effettuare l’aggiornamento a una versione più recente o per passare a un nuovo sistema.
+Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md) per effettuare l’aggiornamento a una versione più recente o per passare a un nuovo sistema.
 
 ## Fine della compatibilità {#end-of-compatibility}
 
 >[!CAUTION]
 >
->Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati nella [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html). Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni: vengono classificate come obsolete e quindi rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
+>Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md). Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni: vengono classificate come obsolete e quindi rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
 
 ### Console del client {#client-console-eol}
 
- La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data effettiva di rimozione. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+ La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data effettiva di rimozione. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008, 2008 R2
 * Windows XP, Vista
@@ -186,7 +187,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 Adobe non supporta i seguenti motori di database in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono queste versioni devono effettuare l’aggiornamento alla versione più recente o passare a un’altra versione.
 
-Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di compatibilità di Campaign Classic](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di compatibilità di Campaign ](../../rn/using/compatibility-matrix.md).
 
 **FEDERATED DATA ACCESS (FDA)**
 
