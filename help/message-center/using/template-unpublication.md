@@ -1,7 +1,7 @@
 ---
-title: Pubblicazione modelli
-seo-title: Pubblicazione modelli
-description: Pubblicazione modelli
+title: Pubblicazione di modelli
+seo-title: Pubblicazione di modelli
+description: Pubblicazione di modelli
 seo-description: null
 page-status-flag: never-activated
 uuid: f83dbe5f-762c-4c58-aeed-6ec289eb522f
@@ -15,17 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
 
-# Annullamento pubblicazione modello{#template-unpublication}
+# Annullamento della pubblicazione di modelli{#template-unpublication}
 
 Una volta pubblicato il modello di messaggio sulle istanze di esecuzione, è possibile annullarne la pubblicazione.
+
+>[!NOTE]
+>
+>Questa funzionalità è disponibile a partire dalla release Campaign 20.2.
 
 In effetti, è ancora possibile chiamare un modello pubblicato. Pertanto, se non utilizzate più un modello di messaggio, è consigliabile annullarne la pubblicazione. In questo modo si evita di inviare per errore un messaggio transazionale indesiderato. Ad esempio, hai pubblicato un modello di messaggio che utilizzavi solo per le campagne natalizie. Potrebbe essere utile annullarla la pubblicazione al termine del periodo natalizio e pubblicarla nuovamente l&#39;anno successivo.
 
@@ -35,11 +39,11 @@ Per annullare la pubblicazione di un modello di messaggio transazionale, effettu
 
 1. Nell&#39;istanza di controllo, passare alla **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
 1. Selezionate il modello da annullare la pubblicazione.
-1. Clic **[!UICONTROL Unpublish]**.
+1. Fai clic su **[!UICONTROL Unpublish]**.
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
 
-1. Clic **[!UICONTROL Start]**.
+1. Fai clic su **[!UICONTROL Start]**.
 
 ![](assets/message-center-unpublish.png)
 
