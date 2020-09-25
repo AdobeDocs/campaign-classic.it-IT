@@ -13,18 +13,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 0%
 
 ---
 
 
-# Server mid-sourcing{#mid-sourcing-server}
+# Server di mid-sourcing{#mid-sourcing-server}
 
 Questa sezione descrive l&#39;installazione e la configurazione di un server di mid-sourcing, nonché la distribuzione di un&#39;istanza che consente a terze parti di inviare messaggi in modalità **mid-sourcing** .
 
 L&#39;architettura &quot;mid-sourcing&quot; viene presentata nella distribuzione [](../../installation/using/mid-sourcing-deployment.md)mid-sourcing.
 
-L&#39;installazione di un server mid-sourcing segue lo stesso processo dell&#39;installazione di un server nel modo normale (fare riferimento alla configurazione standard). È un&#39;istanza indipendente con un proprio database che può essere utilizzata per eseguire le consegne. In poche parole, contiene una configurazione aggiuntiva per consentire alle istanze remote di eseguire le consegne attraverso di esso in modalità mid-sourcing.
+L&#39;installazione di un server mid-sourcing segue lo stesso processo dell&#39;installazione di un server nel modo normale (fare riferimento alla configurazione standard). Si tratta di un&#39;istanza indipendente con un proprio database che può essere utilizzata per eseguire le consegne. In poche parole, contiene una configurazione aggiuntiva per consentire alle istanze remote di eseguire le consegne attraverso di esso in modalità mid-sourcing.
 
 ## Passaggi per l’installazione e la configurazione di un’istanza {#steps-for-installing-and-configuring-an-instance}
 
@@ -60,7 +63,7 @@ Tuttavia, è necessario applicare quanto segue:
    </serverconf>
    ```
 
-   Per ulteriori informazioni, vedere [Attivare i processi](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 * I passaggi **6**, **9** e **10** non sono necessari.
 * Nei passaggi **12** e **13**, è necessario indicare la porta 8080 nell’URL della connessione (poiché la console comunica direttamente con Tomcat, non tramite il server Web). L’URL diventa [http://console.campaign.net:8080](http://console.campaign.net). Durante il passaggio **13**, selezionate il **[!UICONTROL Issue towards Mid-sourcing]** pacchetto e quelli da installare.
@@ -79,13 +82,13 @@ Dalla console client, individuate il routing **E-mail utilizzando l’account mi
 >
 >L&#39;opzione **mid-sourcingEmitter** crea due flussi di lavoro **mid-sourcing** . Si tratta di un processo che viene eseguito per impostazione predefinita ogni 1 ora e 20 minuti e raccoglie le informazioni di consegna sul server di mid-sourcing.
 
-## Distribuzione di un server di mid-sourcing {#deploying-a-mid-sourcing-server}
+## Implementazione di un server di mid-sourcing {#deploying-a-mid-sourcing-server}
 
 1. Installazione del server applicazione:
 
    >[!CAUTION]
    >
-   >Se installate il server di mid-sourcing e desiderate installare ulteriori moduli Adobe Campaign, consigliamo di utilizzare il modulo di distribuzione e non il modulo Campaign.
+   >Se installate il server di mid-sourcing e desiderate installare altri moduli  Adobe Campaign, si consiglia di utilizzare il modulo Consegna e non il modulo Campagna.
 
    Seguite la stessa procedura utilizzata per la distribuzione standard, selezionando solo l’ **[!UICONTROL Mid-sourcing platform]** opzione.
 
@@ -93,7 +96,7 @@ Dalla console client, individuate il routing **E-mail utilizzando l’account mi
 
 1. Configurazione per la ricezione in modalità mid-sourcing
 
-   Imposta la password dell&#39;account di invio: Nella cartella **/Mid-sourcing/Access Management/Operator/** , l&#39;operatore **mid** viene utilizzato dall&#39;istanza remota per l&#39;invio in modalità mid-sourcing. È necessario impostare una password per questo operatore e assegnarla all&#39;amministratore dell&#39;istanza di invio.
+   Impostate la password dell&#39;account di invio: Nella cartella **/Mid-sourcing/Access Management/Operator/** , l&#39;operatore **mid** viene utilizzato dall&#39;istanza remota per l&#39;invio in modalità mid-sourcing. È necessario impostare una password per questo operatore e assegnarla all&#39;amministratore dell&#39;istanza di invio.
 
    L&#39;opzione Piattaforma **di origine** intermedia crea le cartelle predefinite per la memorizzazione delle consegne inviate e l&#39;operatore predefinito che esegue le invii.
 
@@ -122,9 +125,9 @@ Dalla console client, individuate il routing **E-mail utilizzando l’account mi
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Riavviate il modulo Web utilizzando il comando seguente: riavvio **del Web** da parte del server.
+1. Riavviate il modulo Web utilizzando il comando seguente: **riavvio Web** da server.
 
-È necessario modificare l&#39;impostazione del server di mid-sourcing nel file serverConf.xml. La seguente riga deve essere aggiunta alla sezione &quot;Gestione delle affinità con indirizzi IP&quot;, nella riga esistente:
+È necessario modificare l&#39;impostazione del server di mid-sourcing nel file serverConf.xml. La seguente riga deve essere aggiunta alla sezione &quot;Gestione delle affinità con indirizzi IP&quot;, sotto la riga esistente:
 
 ```
 <IPAffinity IPMask="" localDomain="" name=""/>
@@ -147,7 +150,7 @@ Per poter prendere in considerazione la modifica, è necessario arrestare e riav
 **Configurazione del server di mid-sourcing**
 
 1. Fare clic su &quot;operatori&quot; e selezionare l&#39;operatore **[!UICONTROL mid]**.
-1. Nella **[!UICONTROL Frontal servers]** scheda, immettere i parametri di connessione del server di tracciamento.
+1. Nella **[!UICONTROL Frontal servers]** scheda, immetti i parametri di connessione del server di tracciamento.
 
    Per creare un’istanza di tracciamento, immettete l’URL del server di tracciamento, la password dell’account del server di tracciamento e il nome dell’istanza, la relativa password e le maschere DNS ad essa associate.
 
@@ -170,7 +173,7 @@ Per poter prendere in considerazione la modifica, è necessario arrestare e riav
 1. Confermate la configurazione facendo clic su **[!UICONTROL Test the connection]**.
 1. Dichiarare l’istanza di tracciamento a cui si fa riferimento nel server di mid-sourcing:
 
-   Fate clic sul collegamento **[!UICONTROL Use this platform as a platform to access the tracking servers]**,
+   Fate clic sul collegamento **[!UICONTROL Use this platform as a proxy to access the tracking servers]**,
 
    Specifica il nome dell’istanza di tracciamento e conferma la connessione con il server di tracciamento.
 
