@@ -1,8 +1,6 @@
 ---
 title: Informazioni sui flussi di lavoro
-seo-title: Informazioni sui flussi di lavoro
-description: Informazioni sui flussi di lavoro
-seo-description: null
+description: Automatizza i processi con flussi di lavoro, gestisci dati e audience, invia messaggi e molto altro.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -15,26 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 16%
 
 ---
 
 
-# Informazioni sui flussi di lavoro{#about-workflows}
+# Introduzione ai flussi di lavoro{#about-workflows}
 
-Adobe Campaign include un modulo di flusso di lavoro che consente di orchestrare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazione. Questo ambiente grafico completo vi consente di progettare processi che includono segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e tiene traccia di questi processi.
+## Informazioni sui flussi di lavoro
 
-Puoi utilizzare un flusso di lavoro, ad esempio, per scaricare un file da un server, decomprimerlo e importare i record contenuti nel database di Adobe Campaign.
+ Adobe Campaign include un modulo di flusso di lavoro che consente di orchestrare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazioni. Questo ambiente grafico completo ti consente di progettare processi inclusi segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e traccia tali processi.
 
-Un flusso di lavoro può coinvolgere anche uno o più operatori ai quali inviare una notifica o che possono effettuare scelte e approvare processi. In questo modo, è possibile creare un&#39;azione di consegna, assegnare un&#39;attività a uno o più operatori per lavorare sul contenuto, specificare le destinazioni e approvare le prove prima di iniziare la consegna.
+Ad esempio, puoi utilizzare un flusso di lavoro per scaricare un file da un server, decomprimerlo e quindi importare i record contenuti all’interno nel database di Adobe Campaign.
+
+Un flusso di lavoro può inoltre coinvolgere uno o più operatori da avvisare o che possono effettuare scelte e approvare processi. In questo modo, è possibile creare un’azione di consegna, assegnare un’attività a uno o più operatori per lavorare sul contenuto, specificare dei target e approvare le prove prima di avviare la consegna.
 
 I flussi di lavoro si verificano in vari contesti e fasi del processo di gestione delle campagne.
 
-Adobe Campaign utilizza i flussi di lavoro per:
+ Adobe Campaign utilizza i flussi di lavoro per:
 
-* Eseguire campagne di targeting. Per ulteriori informazioni, consulta i passaggi [di](../../workflow/using/building-a-workflow.md#implementation-steps-)implementazione.
-* Creare campagne: per ogni campagna, la **[!UICONTROL Workflow]** scheda consente di creare la destinazione e creare le consegne. Per ulteriori informazioni, consulta Flussi di lavoro [](../../workflow/using/building-a-workflow.md#campaign-workflows)Campaign.
-* Eseguire processi tecnici: pulizia, raccolta delle informazioni di tracciamento o calcoli provvisori. Per ulteriori informazioni, consulta Flussi di lavoro [](../../workflow/using/building-a-workflow.md#technical-workflows)tecnici.
+* Eseguire campagne di targeting. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* Creare campagne: per ogni campagna, la **[!UICONTROL Workflow]** scheda consente di creare la destinazione e creare le consegne. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
+* Eseguire processi tecnici: pulizia, raccolta delle informazioni di tracciamento o calcoli provvisori. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
 
 Un flusso di lavoro può significare sia una definizione del processo (il modello del flusso di lavoro, che è una rappresentazione di ciò che dovrebbe accadere) che un&#39;istanza di questo processo (un&#39;istanza del flusso di lavoro, che è una rappresentazione di ciò che sta effettivamente accadendo).
 
@@ -60,7 +63,7 @@ Ogni flusso di lavoro contiene:
 
    >[!NOTE]
    >
-   >È comunque possibile eseguire un flusso di lavoro contenente transizioni non interrotte: viene generato un messaggio di avviso e il flusso di lavoro viene messo in pausa una volta raggiunta la transizione, ma non viene generato un errore. È quindi possibile avviare un flusso di lavoro senza completarlo e aggiungerlo man mano che si procede.
+   >È comunque possibile eseguire un flusso di lavoro contenente transizioni non interrotte: viene generato un messaggio di avviso e il flusso di lavoro viene messo in pausa una volta raggiunta la transizione, ma non viene generato un errore. È quindi possibile avviare un flusso di lavoro senza completarlo e aggiungerlo man mano che si prosegue.
 
    Per ulteriori informazioni sulla creazione di un flusso di lavoro, consulta [questa sezione](../../workflow/using/building-a-workflow.md).
 
@@ -70,3 +73,14 @@ Ogni flusso di lavoro contiene:
 
    Ulteriori informazioni sui dati e sulle tabelle del flusso di lavoro in [questa sezione](../../workflow/using/how-to-use-workflow-data.md).
 
+## Principi chiave e procedure ottimali
+
+Per informazioni e procedure ottimali per automatizzare i processi con i flussi di lavoro, consultare queste sezioni:
+
+* Ulteriori informazioni sulle attività del flusso di lavoro in [questa pagina](../../workflow/using/how-to-use-workflow-data.md).
+* Scopri come creare un flusso di lavoro in [questa sezione](../../workflow/using/building-a-workflow.md).
+* Scopri come utilizzare i flussi di lavoro per importare dati in Campaign in [questa sezione](../../workflow/using/importing-data.md).
+* Le best practice relative ai flussi di lavoro sono illustrate in [questa pagina](../../workflow/using/workflow-best-practices.md).
+* In [questa sezione](../../workflow/using/starting-a-workflow.md)troverai le istruzioni sull’esecuzione del flusso di lavoro.
+* Scopri come monitorare i flussi di lavoro in [questa pagina](../../workflow/using/monitoring-workflow-execution).
+* Scopri come concedere l’accesso agli utenti per l’utilizzo dei flussi di lavoro in [questa pagina](../../workflow/using/managing-rights.md).
