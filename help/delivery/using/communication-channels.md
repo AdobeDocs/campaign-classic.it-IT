@@ -1,7 +1,7 @@
 ---
 title: Canali di comunicazione
 seo-title: Canali di comunicazione
-description: Canali di comunicazione
+description: Crea consegne per inviare messaggi personalizzati su canali diversi.
 seo-description: null
 page-status-flag: never-activated
 uuid: 42975431-64c9-4ecb-98ed-b1f9b13c157e
@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1183'
 ht-degree: 11%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 11%
 
 # Canali di comunicazione{#communication-channels}
 
-Con  Adobe Campaign, puoi inviare campagne tra canali, inclusi e-mail, SMS, messaggi LINE, notifiche push e indirizzi diretti, e misurarne l&#39;efficacia utilizzando vari [rapporti](../../reporting/using/delivery-reports.md)dedicati. Questi messaggi sono progettati e inviati attraverso le consegne e possono essere personalizzati per ogni destinatario.
+Con  Adobe Campaign, puoi inviare campagne tra canali, inclusi e-mail, SMS, messaggi LINE, notifiche push e indirizzi diretti, e misurarne l&#39;efficacia utilizzando vari [rapporti](../../reporting/using/delivery-reports.md)dedicati. Questi messaggi sono progettati e inviati tramite le consegne e possono essere personalizzati per ogni destinatario.
 
 Le funzionalità principali includono il targeting, la definizione e la personalizzazione dei messaggi, l&#39;esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Questo punto di accesso porta a diverse funzionalità coperte da  Adobe Campaign.
 
 >[!NOTE]
 >
-> Adobe Campaign offre una serie di strumenti per monitorare la tua recapito e ottimizzare l&#39;invio delle e-mail. Per ulteriori informazioni, consulta la guida [Deliverability](../../delivery/using/deliverability-key-points.md) and [Deliverability Management](../../delivery/using/about-deliverability.md)(Introduzione alla conformità e gestione della conformità).
+> Adobe Campaign offre una serie di strumenti per monitorare la tua recapito e ottimizzare l&#39;invio delle e-mail. Per ulteriori informazioni, consulta la guida [Deliverability Getting Started](../../delivery/using/deliverability-key-points.md) and [Deliverability Management](../../delivery/using/about-deliverability.md)(Introduzione alla distribuzione).
 
 L&#39;invio può essere automatizzato mediante la preparazione di una consegna e/o l&#39;invio nel processo di un flusso di lavoro. Per ulteriori informazioni sulle attività di tipo consegna nei flussi di lavoro, consulta [questa sezione](../../workflow/using/about-action-activities.md).
 
