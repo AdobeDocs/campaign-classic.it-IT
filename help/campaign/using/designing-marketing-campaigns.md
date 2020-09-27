@@ -1,7 +1,7 @@
 ---
 title: Progettazione di campagne di marketing
 seo-title: Progettazione di campagne di marketing
-description: Progettazione di campagne di marketing
+description: Definizione, ottimizzazione, esecuzione e analisi delle campagne di marketing.
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
  Adobe Campaign consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing.  Adobe Campaign si comporta come un centro unificato di ordine ed esecuzione per le strategie di marketing. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md) e [Impostazione delle campagne](../../campaign/using/setting-up-marketing-campaigns.md)di marketing.
 
-Inoltre, il modulo **Marketing Resource Management (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo gestione completa e tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
+Inoltre, il modulo **Marketing Resource Management (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo gestione completa e tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Nel contesto di Campaign, è necessario conoscere i seguenti concetti:
 
    Un flusso di lavoro della campagna contiene le stesse attività di tutti i flussi di lavoro, ma è specifico per la campagna. Consente di creare e configurare le consegne per tutti i canali disponibili.
 
-   Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Obiettivi**
 
