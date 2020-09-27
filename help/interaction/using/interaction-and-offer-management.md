@@ -1,8 +1,6 @@
 ---
-title: Interazione e gestione delle offerte
-seo-title: Interazione e gestione delle offerte
-description: Interazione e gestione delle offerte
-seo-description: null
+title: Gestione dell’interazione e dell’offerta
+description: Invia le migliori offerte ai tuoi contatti in base alle regole di idoneità.
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -15,12 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 6%
 
 ---
 
 
-# Interazione e gestione delle offerte{#interaction-and-offer-management}
+# Gestione dell’interazione e dell’offerta{#interaction-and-offer-management}
 
 L&#39;interazione consente di rispondere in tempo reale durante un&#39;interazione con un determinato contatto (un cliente o un target), rendendolo una o più offerte adattate. Ad esempio, possono essere semplici messaggi di comunicazione, offerte speciali su uno o più prodotti o servizi.
 
@@ -32,12 +33,12 @@ L&#39;interazione consente di creare e gestire un catalogo di offerte e di confi
 
 ![](assets/Offermgt2.png)
 
-Per acquisire familiarità con la funzione di interazione e le terminologie utilizzate in Interazione campagna, guarda questo video: Panoramica sull&#39;interazione con [Adobe Campaign](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+Per acquisire familiarità con la funzione di interazione e le terminologie utilizzate in Interazione campagna, guarda questo video: [Panoramica](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)dell’interazione con Adobe Campaign.
 
 ## Argomenti correlati
 
 | Pagine utili | Risorse aggiuntive |
 |---|---|
 | [Passaggi di implementazione delle interazioni](../../interaction/using/implementation-steps.md) | [Verifica della distribuzione delle offerte](../../interaction/using/about-offers-simulation.md) |
-| [Ambienti Live/Design](../../interaction/using/live-design-environments.md) | [Aggiunta di un’offerta in un messaggio e-mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [Ambienti di progettazione/in tempo reale](../../interaction/using/live-design-environments.md) | [Aggiunta di un’offerta in un messaggio e-mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
 | [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md) | [Caso di utilizzo: aggiungere un&#39;offerta in un sito Web](../../interaction/using/offers-on-an-inbound-channel.md) |
