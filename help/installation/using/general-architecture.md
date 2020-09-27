@@ -1,8 +1,6 @@
 ---
 title: Architettura generale
-seo-title: Architettura generale
-description: Architettura generale
-seo-description: null
+description: Scopri come installare e configurare Campaign Classic.
 page-status-flag: never-activated
 uuid: 686bc660-2403-4bab-a4ea-9b872adf8fa0
 contentOwner: sauviat
@@ -15,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,7 @@ ht-degree: 0%
 
 # Architettura generale{#general-architecture}
 
-La distribuzione tipica della soluzione di  Adobe Campaign è composta dai seguenti componenti:
+La tipica implementazione  soluzione Adobe Campaign consiste dei seguenti componenti:
 
 * **Ambiente client personalizzato**
 
@@ -37,33 +35,33 @@ La distribuzione tipica della soluzione di  Adobe Campaign è composta dai segue
 
 * **Contenitori di database**
 
-   In base alla tecnologia di database relazionale, il database del Adobe Campaign  memorizza tutte le informazioni dei clienti, i componenti della campagna, le offerte e i flussi di lavoro, nonché i risultati della campagna nei contenitori del database dei clienti.
+   In base alla tecnologia di database relazionale, il database  Adobe Campaign memorizza tutte le informazioni sui clienti, i componenti delle campagne, le offerte e i flussi di lavoro, nonché i risultati delle campagne nei contenitori del database dei clienti.
 
  Adobe Campaign è basato su un&#39;architettura orientata ai servizi (SOA) e comprende diversi moduli funzionali. Questi moduli possono essere distribuiti su uno o più computer, in uno o più casi, a seconda dei vincoli in termini di scalabilità, disponibilità e isolamento del servizio. La portata delle configurazioni di implementazione è quindi molto ampia e si estende su un singolo computer centrale fino a configurazioni che includono più server dedicati su più siti.
 
 >[!NOTE]
 >
->In qualità di fornitore di software, è possibile specificare infrastrutture hardware e software compatibili. Le raccomandazioni hardware qui riportate sono solo a scopo informativo e si basano sulla nostra esperienza. Adobe non è responsabile di alcuna decisione presa sulla base di tali decisioni. Dipenderà anche dalle regole e dalle pratiche aziendali, dalla criticità e dai livelli di prestazioni richiesti per il progetto.
+>In qualità di fornitore di software, è possibile specificare infrastrutture hardware e software compatibili. Le raccomandazioni hardware qui riportate sono solo a scopo informativo e si basano sulla nostra esperienza.  Adobe non è responsabile delle decisioni da esso prese. Dipenderà anche dalle regole e dalle pratiche aziendali, dalla criticità e dai livelli di prestazioni richiesti per il progetto.
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma di Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni di Adobe Campaign e la conformità con la [Matrice](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) di compatibilità tra i componenti.
+>Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni Adobe Campaign e la conformità con la [Matrice](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) di compatibilità tra i componenti.
 
 ## Livello presentazione {#presentation-layer}
 
 L&#39;accesso all&#39;applicazione può essere effettuato in diversi modi, a seconda delle esigenze degli utenti: Integrazione con client Rich, Thin Client o API.
 
-* **Client** avanzato: L&#39;interfaccia utente principale dell&#39;applicazione è un client avanzato, in altre parole un&#39;applicazione nativa (Windows) che comunica con il server dell&#39;applicazione del Adobe Campaign  esclusivamente con protocolli Internet standard (SOAP, HTTP, ecc.). Questa console offre una grande facilità di utilizzo per la produttività, utilizza una larghezza di banda molto ridotta (attraverso l&#39;utilizzo di una cache locale) ed è progettata per una facile installazione. Questa console può essere implementata da un browser Internet, può essere aggiornata automaticamente e non richiede alcuna configurazione di rete specifica, perché genera solo traffico HTTP(S).
-* **Thin client**: Alcune parti dell&#39;applicazione sono accessibili tramite un semplice browser Web utilizzando un&#39;interfaccia utente HTML, tra cui il modulo di reporting, le fasi di approvazione della consegna, le funzionalità del modulo Distributed Marketing (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere funzionalità  Adobe Campaign in una Intranet o in una Extranet.
+* **Client** avanzato: L&#39;interfaccia utente principale dell&#39;applicazione è un client avanzato, in altre parole un&#39;applicazione nativa (Windows) che comunica con il server applicazione Adobe Campaign  esclusivamente con protocolli Internet standard (SOAP, HTTP, ecc.). Questa console offre una grande facilità di utilizzo per la produttività, utilizza una larghezza di banda molto ridotta (attraverso l&#39;utilizzo di una cache locale) ed è progettata per una facile installazione. Questa console può essere implementata da un browser Internet, può essere aggiornata automaticamente e non richiede alcuna configurazione di rete specifica, perché genera solo traffico HTTP(S).
+* **Thin client**: Alcune parti dell&#39;applicazione sono accessibili tramite un semplice browser Web utilizzando un&#39;interfaccia utente HTML, tra cui il modulo di reporting, le fasi di approvazione della consegna, le funzionalità del modulo Distributed Marketing (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere  funzionalità Adobe Campaign in una rete Intranet o in una rete Intranet.
 * **Integrazione tramite le API**: In alcuni casi, il sistema può essere chiamato da un&#39;applicazione esterna utilizzando le API dei servizi Web esposte tramite il protocollo SOAP.
 
 ## Livello applicazione logico {#logical-application-layer}
 
- Adobe Campaign è un&#39;unica piattaforma con diverse applicazioni che si combinano per creare un&#39;architettura aperta e scalabile. La piattaforma di Adobe Campaign  è scritta su un livello di applicazione flessibile ed è facilmente configurabile per soddisfare le esigenze aziendali. In questo modo, le esigenze crescenti dell&#39;azienda vengono soddisfatte sia dal punto di vista funzionale che tecnico. L&#39;architettura distribuita assicura una scalabilità lineare del sistema, che passa da migliaia di messaggi a milioni di messaggi.
+ Adobe Campaign è una piattaforma unica con diverse applicazioni che si combinano per creare un&#39;architettura aperta e scalabile. La piattaforma Adobe Campaign  è scritta su un livello di applicazione flessibile ed è facilmente configurabile in base alle esigenze aziendali. In questo modo, le esigenze crescenti dell&#39;azienda vengono soddisfatte sia dal punto di vista funzionale che tecnico. L&#39;architettura distribuita assicura una scalabilità lineare del sistema, che passa da migliaia di messaggi a milioni di messaggi.
 
- Adobe Campaign si basa su un insieme di processi lato server che funzionano insieme.
+ Adobe Campaign si basa su una serie di processi lato server che funzionano insieme.
 
 I processi principali sono:
 
@@ -127,12 +125,12 @@ In questo modo vengono mantenute le statistiche sul numero di connessioni, sui m
 
 >[!NOTE]
 >
->L&#39;elenco completo dei moduli  Adobe Campaign è disponibile in [questo documento](../../production/using/operating-principle.md).
+>L&#39;elenco completo  moduli Adobe Campaign è disponibile in [questo documento](../../production/using/operating-principle.md).
 
 ## Livello di persistenza {#persistence-layer}
 
-Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite dal Adobe Campaign . Questo include sia i dati funzionali (profili, iscrizioni, contenuto, ecc.), sia i dati tecnici (processi di consegna e registri, registri di monitoraggio, ecc.) e dati di lavoro (acquisti, lead).
+Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite da  Adobe Campaign. Questo include sia i dati funzionali (profili, iscrizioni, contenuto, ecc.), sia i dati tecnici (processi di consegna e registri, registri di monitoraggio, ecc.) e dati di lavoro (acquisti, lead).
 
-L&#39;affidabilità del database è della massima importanza perché la maggior parte dei componenti del Adobe Campaign  richiedono l&#39;accesso al database per eseguire le proprie attività (con la notevole eccezione del modulo di reindirizzamento).
+L&#39;affidabilità del database è della massima importanza perché la maggior parte dei componenti Adobe Campaign  richiedono l&#39;accesso al database per eseguire le proprie attività (con la notevole eccezione del modulo di reindirizzamento).
 
-La piattaforma è preconfigurata con un data mart centrato sul marketing o può facilmente stare al di sopra di un data mart esistente e di uno schema utilizzando uno dei principali sistemi di gestione del database relazionale (RDBMS). Tutti i dati all&#39;interno del data mart sono accessibili dalla piattaforma del Adobe Campaign  tramite chiamate SQL dal Adobe Campaign  al database.  Adobe Campaign fornisce anche un complemento completo degli strumenti Estrai trasformazione e Carica (ETL) per eseguire l&#39;importazione ed esportazione di dati in e fuori dal sistema.
+La piattaforma è preconfigurata con un data mart centrato sul marketing o può facilmente stare al di sopra di un data mart esistente e di uno schema utilizzando uno dei principali sistemi di gestione del database relazionale (RDBMS). Tutti i dati all&#39;interno del data mart sono accessibili dalla piattaforma  Adobe Campaign tramite chiamate SQL da  Adobe Campaign al database.  Adobe Campaign fornisce inoltre un complemento completo degli strumenti Estrai trasformazione e Carica (ETL) per eseguire l&#39;importazione ed esportazione di dati all&#39;interno e all&#39;esterno del sistema.
