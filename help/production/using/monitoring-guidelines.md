@@ -1,6 +1,6 @@
 ---
 title: Linee guida per il monitoraggio
-description: Questa sezione presenta le linee guida generali per il monitoraggio Campaign Classic.
+description: Scopri le linee guida e le best practice per monitorare l'istanza e i processi di Campaign.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '712'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Informazioni dettagliate sono disponibili [qui](../../production/using/monitorin
 
 ![](assets/monitoring_tab.png)
 
-## Monitoraggio dei processi Campaign Classic {#monitoring-campaign-classic-processes}
+## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitorare l’istanza</a></p></td>
@@ -64,17 +64,17 @@ Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell�
 >
 >Il Pannello di controllo Campaign è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano i servizi gestiti Adobe.
 
-### Flussi di lavoro di monitoraggio {#monitoring-workflows}
+### Monitoraggio dei flussi di lavoro {#monitoring-workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**HeatMap flusso di lavoro**
+**Workflow HeatMap**
 
 Workflow HeatMap ha fornito una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. [Fai clic qui](../../workflow/using/heatmap.md) per ulteriori informazioni.
 
 **Audit trail**
 
-La traccia di controllo consente di visualizzare tutte le modifiche apportate ai flussi di lavoro, nonché i relativi stati correnti. [Clicca qui](../../production/using/audit-trail.md).
+La traccia di controllo consente di visualizzare tutte le modifiche apportate ai flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](../../production/using/audit-trail.md).
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
@@ -88,7 +88,7 @@ Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di m
 
 Seguire le linee guida e le best practice per l&#39;utilizzo dei flussi di lavoro può migliorare le prestazioni. Per ulteriori informazioni, consultare le sezioni seguenti:
 * [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
-* [Monitoraggio dell’esecuzione di un flusso di lavoro](../../workflow/using/monitoring-workflow-execution.md)
+* [Monitoraggio dell’esecuzione dei flussi di lavoro](../../workflow/using/monitoring-workflow-execution.md)
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
 
@@ -104,7 +104,7 @@ I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per domini
 
 **Risoluzione dei problemi** di distribuzione È possibile eseguire azioni specifiche in caso di problemi relativi alle consegne:
 * [Problemi di realizzazione](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
-* [Problemi di visualizzazione delle immagini](../../production/using/image-display-issues.md)
+* [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 * [Problemi relativi alle prestazioni di distribuzione](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 * [Problemi relativi](../../production/using/temporary-files.md) ai file temporanei - solo modelli di hosting *in sede*
 
@@ -139,7 +139,7 @@ Le risorse tecniche sono disponibili nella documentazione Campaign Classic. È c
 **Modelli e funzionalità di hosting**
 
 * [Modelli di hosting Campaign Classic](../../installation/using/hosting-models.md)
-* [Funzionalità del modello di hosting](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Funzionalità del modello di hosting](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html)
 
 **Configurazione server**
 
