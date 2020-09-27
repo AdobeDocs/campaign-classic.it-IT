@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 16%
@@ -82,5 +82,5 @@ Per informazioni e procedure ottimali per automatizzare i processi con i flussi 
 * Scopri come utilizzare i flussi di lavoro per importare dati in Campaign in [questa sezione](../../workflow/using/importing-data.md).
 * Le best practice relative ai flussi di lavoro sono illustrate in [questa pagina](../../workflow/using/workflow-best-practices.md).
 * In [questa sezione](../../workflow/using/starting-a-workflow.md)troverai le istruzioni sull’esecuzione del flusso di lavoro.
-* Scopri come monitorare i flussi di lavoro in [questa pagina](../../workflow/using/monitoring-workflow-execution).
+* Scopri come monitorare i flussi di lavoro in [questa pagina](../../workflow/using/monitoring-workflow-execution.md).
 * Scopri come concedere l’accesso agli utenti per l’utilizzo dei flussi di lavoro in [questa pagina](../../workflow/using/managing-rights.md).
