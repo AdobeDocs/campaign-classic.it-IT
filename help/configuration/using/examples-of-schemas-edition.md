@@ -1,7 +1,7 @@
 ---
-title: Esempi di edizione degli schemi
-seo-title: Esempi di edizione degli schemi
-description: Esempi di edizione degli schemi
+title: Esempi di modifica degli schemi
+seo-title: Esempi di modifica degli schemi
+description: Esempi di modifica degli schemi
 seo-description: null
 page-status-flag: never-activated
 uuid: f4bc1596-cf4e-4d1f-b6e8-b18cbd1e2e23
@@ -15,16 +15,19 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 042349ae62012984a040b578d97706bae1c9917d
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 
-# Esempi di edizione degli schemi{#examples-of-schemas-edition}
+# Esempi di modifica degli schemi{#examples-of-schemas-edition}
 
 ## Estensione di una tabella {#extending-a-table}
 
-Per estendere la tabella destinatari dello schema **nms:destinatario** , attenersi alla procedura descritta di seguito.
+Per estendere la tabella dei destinatari dello schema **nms:destinatario** , attenersi alla procedura descritta di seguito.
 
 1. Create lo schema di estensione (**cus:extension**) utilizzando i dati seguenti:
 
@@ -108,7 +111,7 @@ Schema origine tabella ordine:
 </srcSchema>
 ```
 
-Il tipo di tabella è **automatico** al fine di creare una chiave primaria generata automaticamente che verrà utilizzata dal collegamento alla tabella del destinatario.
+Il tipo di tabella è **automatico** al fine di creare una chiave primaria generata automaticamente da utilizzare per il join del collegamento alla tabella del destinatario.
 
 Schema generato:
 
@@ -304,3 +307,46 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
+## Caso di utilizzo: collegare un campo a una tabella di riferimento esistente {#uc-link}
+
+Questo esempio illustra come utilizzare una tabella di riferimento esistente come alternativa ai meccanismi di enumerazione integrati  Adobe Campaign (enum, userEnum o dbEnum).
+
+È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l’attributo **displayAsField=&quot;true&quot;**.
+
+In questo esempio, la tabella di riferimento contiene un elenco di nomi bancari e identificatori:
+
+```
+<srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
+xtkschema="xtk:srcSchema">
+    <element img="cus:bank16x16.png" label="Banks" name="bank">
+        <compute-string expr="@name"/>
+        <key name="id">
+            <keyfield xpath="@id"/>
+        </key>
+        <attribute label="Bank Id" name="id" type="short"/>
+        <attribute label="Name" length="64" name="name" type="string"/>
+     </element> 
+</srcSchema>
+```
+
+In qualsiasi tabella che utilizza questa tabella di riferimento, definite un collegamento e aggiungete l’attributo **displayAsField=&quot;true&quot;** .
+
+```
+<element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
+```
+
+L&#39;interfaccia utente non visualizza un collegamento ma un campo. Quando l&#39;utente seleziona tale campo, può selezionare un valore dalla tabella di riferimento o utilizzare la funzione di completamento automatico.
+
+![](assets/schema-edition-ex.png)
+
+* Per completare automaticamente il componente, è necessario definire una stringa di calcolo nella tabella di riferimento.
+
+* Aggiungi l’attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire  Adobe Campaign di creare un indice sui valori memorizzati nella tabella di origine del collegamento.
+
+## Argomenti correlati
+
+* [Utilizzo delle enumerazioni](../../platform/using/managing-enumerations.md)
+
+* [Guida introduttiva agli schemi campagna](../../configuration/using/about-schema-edition.md)
+
+* [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md)
