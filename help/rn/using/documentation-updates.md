@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3704'
 ht-degree: 87%
 
 ---
@@ -32,6 +32,8 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 È stata aggiunta una nota per specificare che il conteggio dei profili attivi è disponibile solo per le istanze Marketing. [Leggi tutto](../../platform/using/about-profiles.md#active-profiles)
 
 È stato aggiunto un nuovo esempio sull&#39;edizione dello schema per collegare un campo a una tabella di riferimento esistente. [Leggi tutto](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+È stata aggiunta una nota relativa all&#39;utilizzo di dati aggiuntivi con indirizzi iniziali nelle consegne. [Leggi tutto](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Agosto 2020 {#aug-2020}
 
