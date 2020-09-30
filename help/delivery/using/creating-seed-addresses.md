@@ -1,7 +1,7 @@
 ---
-title: Creazione di indirizzi iniziali
-seo-title: Creazione di indirizzi iniziali
-description: Creazione di indirizzi iniziali
+title: Creazione di indirizzi di seed
+seo-title: Creazione di indirizzi di seed
+description: Creazione di indirizzi di seed
 seo-description: null
 page-status-flag: never-activated
 uuid: 0dae107a-7b53-4096-93c3-9517b402cbc9
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# Creazione di indirizzi iniziali{#creating-seed-addresses}
+# Creazione di indirizzi di seed{#creating-seed-addresses}
 
-Gli indirizzi dei semi non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia di Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
+Gli indirizzi dei semi non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia Adobe Campaign  **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Potete creare sottocartelle per organizzare gli indirizzi iniziali. A tal fine, fare clic con il pulsante destro del mouse sul **[!UICONTROL Seed addresses]** nodo e selezionare **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** per eseguire la convalida. È ora possibile creare o copiare gli indirizzi iniziali in questa sottocartella. Per ulteriori informazioni, vedere [Definizione degli indirizzi](#defining-addresses).
+Potete creare sottocartelle per organizzare gli indirizzi iniziali. A tal fine, fare clic con il pulsante destro del mouse sul **[!UICONTROL Seed addresses]** nodo e selezionare **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** per eseguire la convalida. È ora possibile creare o copiare gli indirizzi iniziali in questa sottocartella. For more on this, refer to [Defining addresses](#defining-addresses).
 
-Adobe Campaign consente inoltre di creare modelli di indirizzi di base che vengono importati in consegne o campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fare riferimento a [Creazione di modelli](#creating-seed-address-templates)di indirizzi iniziali.
+ Adobe Campaign consente inoltre di creare modelli di indirizzi di base che vengono importati nelle consegne o nelle campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fare riferimento a [Creazione di modelli](#creating-seed-address-templates)di indirizzi iniziali.
 
 ## Definizione degli indirizzi {#defining-addresses}
 
@@ -37,14 +40,19 @@ Per creare indirizzi iniziali, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >L’etichetta dell’indirizzo viene compilata automaticamente con il cognome e il nome definiti.
+   >L’etichetta dell’indirizzo viene compilata automaticamente con il cognome e il nome definiti dall’utente.
    >
    >Non è necessario immettere tutti i campi di ciascuna scheda al momento della creazione di un indirizzo seed. Eventuali elementi di personalizzazione mancanti vengono inseriti in modo casuale durante la distribuzione.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
 1. Nella **[!UICONTROL Seed fields]** scheda, immettete i valori che verranno inseriti nei registri di consegna durante la fase di analisi (nella **[!UICONTROL nms:broadLog]** tabella).
+
 1. Nella **[!UICONTROL Additional data]** scheda, immetti i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dei dati a cui vuoi assegnare un valore specifico.
+
+   >[!NOTE]
+   >
+   >Verificate che siano stati definiti ulteriori dati di destinazione con un alias che inizia con &#39;@&#39; nell&#39; **[!UICONTROL Enrichment]** attività. In caso contrario, non potrai utilizzarli correttamente con i tuoi indirizzi iniziali nell&#39;attività di consegna.
 
 ## Creazione di modelli di indirizzi iniziali {#creating-seed-address-templates}
 
