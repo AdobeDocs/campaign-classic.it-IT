@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
+source-git-commit: a636d56652e1045e7c48bd2e1a2420b58212739a
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
  Adobe Campaign consente di provare il nuovo formato [AMP per e-mail](https://amp.dev/about/email/) interattivo, che consente di inviare e-mail dinamiche, a determinate condizioni.
 
-In questa versione è possibile:
+Attualmente con AMP per e-mail potete:
 * Test della distribuzione di e-mail AMP a indirizzi specifici configurati in modo appropriato.
 * Dopo la registrazione con i provider corrispondenti, inviate e-mail AMP agli indirizzi Gmail, Outlook o Mail.ru.
 
@@ -55,19 +55,14 @@ Per ulteriori informazioni su formato e specifiche dell&#39;e-mail AMP, consulta
 ## Passaggi chiave per utilizzare AMP per e-mail con  Adobe Campaign {#key-steps-to-use-amp}
 
 Per testare e inviare correttamente un&#39;e-mail AMP con  Adobe Campaign, segui la procedura seguente:
-1. Installate il **[!UICONTROL AMP support (Beta)]** pacchetto. Consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)standard di Campaign.
+1. Installate il **[!UICONTROL AMP support]** pacchetto. Consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)standard di Campaign.
 1. Create un&#39;e-mail e create il contenuto AMP all&#39;interno  Adobe Campaign. Consultate [Creare contenuto e-mail AMP con  Adobe Campaign](#build-amp-email-content).
 1. Accertatevi di rispettare tutti i requisiti di consegna dai provider di posta elettronica che supportano il formato AMP. Consultate [AMP per i requisiti](#amp-for-email-delivery-requirements)di distribuzione e-mail.
-
-   >[!NOTE]
-   >
-   >AMP per e-mail è disponibile come funzionalità beta per il test. Al momento solo alcuni provider di posta elettronica supportano il test di questo formato.
-
 1. Quando definite il target, accertatevi di selezionare i destinatari che saranno in grado di visualizzare il formato AMP. Consultate [Destinazione di un’e-mail](#targeting-amp-email)AMP.
 
    >[!NOTE]
    >
-   >Attualmente è possibile testare la distribuzione di e-mail AMP a indirizzi e-mail specifici configurati in modo appropriato o dopo la registrazione solo con i provider di posta elettronica che partecipano al programma beta di AMP.
+   >Attualmente puoi inviare e-mail AMP solo a indirizzi [e-mail](#testing-amp-delivery-for-selected-addresses) specifici (a scopo di test) o dopo aver [effettuato la registrazione](#delivering-amp-emails-by-registering) con i client e-mail supportati.
 
 1. Invia la tua e-mail come faresti di solito. Consultate [Invio di un’e-mail](#sending-amp-email)AMP.
 
@@ -156,10 +151,10 @@ Potete inoltre consultare i [suggerimenti e le limitazioni note per Gmail](https
 
 ## Targeting di un&#39;e-mail AMP {#targeting-amp-email}
 
-AMP per e-mail essendo disponibile come funzionalità beta, al momento è possibile provare a inviare un&#39;e-mail AMP in due passaggi:
+Attualmente puoi provare a inviare un messaggio e-mail AMP in due passaggi:
 
 1.  Adobe Campaign consente di testare la distribuzione di un&#39;e-mail dinamica basata su AMP a indirizzi e-mail selezionati configurati in modo appropriato, al fine di verificarne il contenuto e il comportamento. Consultate [Verifica della consegna di e-mail AMP per gli indirizzi](#testing-amp-delivery-for-selected-addresses)selezionati.
-1. Una volta verificato, è possibile inviare una consegna o una campagna come parte del programma AMP per la versione beta dell&#39;e-mail registrandosi presso i provider di posta elettronica interessati per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti . Consultate [Distribuzione di e-mail AMP tramite registrazione presso un provider](#delivering-amp-emails-by-registering)di posta elettronica.
+1. Una volta verificato, è possibile inviare una consegna o una campagna come parte del programma AMP per e-mail registrandosi presso i provider di posta elettronica pertinenti per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti . Consultate [Distribuzione di e-mail AMP tramite registrazione presso un provider](#delivering-amp-emails-by-registering)di posta elettronica.
 
 ### Verifica della consegna di e-mail AMP per gli indirizzi selezionati {#testing-amp-delivery-for-selected-addresses}
 
@@ -183,7 +178,7 @@ Per testare l&#39;invio di un&#39;e-mail AMP a un indirizzo Mail.ru, seguite i p
 
 ### Distribuzione di e-mail AMP tramite registrazione presso un provider di posta elettronica {#delivering-amp-emails-by-registering}
 
-È possibile provare a distribuire e-mail dinamiche registrandosi presso i provider di posta elettronica che partecipano al programma beta di AMP per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti .
+È possibile provare a distribuire e-mail dinamiche registrandosi presso i provider di posta elettronica supportati per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti .
 
 >[!NOTE]
 >
