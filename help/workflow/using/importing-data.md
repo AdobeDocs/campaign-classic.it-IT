@@ -9,11 +9,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Ricorda i limiti di archiviazione SFTP, archiviazione del database e profilo attivo previsti dal contratto AdobeCampaign durante l&#39;importazione dei dati.
+>Durante l&#39;importazione dei dati, tieni presente i limiti di archiviazione SFTP, archiviazione di database e profilo attivo come previsto dal contratto Adobe Campaign .
 
 ## Modalità di raccolta dei dati {#how-to-collect-data}
 
@@ -135,7 +132,7 @@ Per mantenere la coerenza dei dati nel database Adobe Campaign , attenersi ai pr
 
 L’utilizzo di un modello di importazione è una procedura consigliata se è necessario importare regolarmente file con la stessa struttura.
 
-In questo esempio viene illustrato come preimpostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un CRM nel database Adobe Campaign . Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, consultate questa [sezione](../../workflow/using/about-activities.md).
+Questo esempio mostra come impostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un CRM nel database Adobe Campaign . Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, consultate questa [sezione](../../workflow/using/about-activities.md).
 
 1. Crea un nuovo modello di workflow da **[!UICONTROL Resources > Templates > Workflow templates]**.
 1. Aggiungete le seguenti attività:
