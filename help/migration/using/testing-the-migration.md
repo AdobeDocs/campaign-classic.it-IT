@@ -1,7 +1,7 @@
 ---
-title: Verifica della migrazione
-seo-title: Verifica della migrazione
-description: Verifica della migrazione
+title: Test della migrazione
+seo-title: Test della migrazione
+description: Test della migrazione
 seo-description: null
 page-status-flag: never-activated
 uuid: 3ee6a10b-dea2-41c6-9aef-ee3ac922b459
@@ -11,28 +11,28 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
 
-# Verifica della migrazione{#testing-the-migration}
+# Test della migrazione{#testing-the-migration}
 
 ## Procedura generale {#general-procedure}
 
 A seconda della configurazione, esistono diversi modi per eseguire i test di migrazione.
 
-È necessario disporre di un ambiente di test/sviluppo per eseguire i test di migrazione. Gli ambienti di sviluppo sono soggetti a licenza: verifica il contratto di licenza o contatta il servizio di vendita di Adobe Campaign.
+È necessario disporre di un ambiente di test/sviluppo per eseguire i test di migrazione. Gli ambienti di sviluppo sono soggetti a licenza: controllare il contratto di licenza o contattare  servizio vendite Adobe Campaign.
 
-1. Arrestare tutti gli sviluppi in corso e trasmetterli nell&#39;ambiente produttivo.
+1. Arrestare tutti gli sviluppi in corso e trasmetterli nell&#39;ambiente di produzione.
 1. Eseguire un backup del database dell&#39;ambiente di sviluppo.
-1. Interrompi tutti i processi di Adobe Campaign nell&#39;istanza di sviluppo.
+1. Arrestate tutti  processi Adobe Campaign nell&#39;istanza di sviluppo.
 1. Eseguire un backup del database dell&#39;ambiente di produzione e ripristinarlo come ambiente di sviluppo.
-1. Prima di avviare i servizi di Adobe Campaign, eseguite lo script di **bloccoInstance.js** cauterizzazione che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
+1. Prima di avviare i servizi Adobe Campaign , eseguire lo script di **bloccoInstance.js** pruderization che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -45,7 +45,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 1. Verificare che i backup siano corretti cercando di ripristinarli. Assicuratevi di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verificare la procedura di migrazione nell&#39;ambiente di sviluppo.
 
-   Le procedure complete sono descritte nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   Le procedure complete sono descritte nella sezione [Prerequisiti per la migrazione a  Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
 
 1. Se la migrazione dell&#39;ambiente di sviluppo ha esito positivo, è possibile migrare l&#39;ambiente di produzione.
 
@@ -55,7 +55,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
 >[!NOTE]
 >
->Il comando di aggiornamento di Adobe Campaign (**post aggiornamento**) consente di sincronizzare le risorse, aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
+>Il comando  Adobe Campaign update (**post-aggiornamento**) consente di sincronizzare le risorse e gli schemi di aggiornamento e il database. Questa operazione può essere eseguita solo una volta sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
 ## Strumenti di migrazione {#migration-tools}
 
@@ -75,7 +75,7 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 
 >[!NOTE]
 >
->**È necessario utilizzare l&#39;`<instanceame>`**istanza: opzione. Non si consiglia di utilizzare l&#39;opzione** Tutte le istanze **.
+>È necessario utilizzare l&#39; **istanza:`<instanceame>`** opzione. Non si consiglia di utilizzare l&#39;opzione **Tutte le istanze** .
 
 ### Opzioni -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
 
