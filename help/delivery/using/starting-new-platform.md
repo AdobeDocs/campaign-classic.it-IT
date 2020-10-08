@@ -1,6 +1,6 @@
 ---
-title: Avvio di una nuova piattaforma con  Adobe Campaign Classic
-description: Scopri di più sulla gestione del recapito quando si avvia una nuova piattaforma con  Adobe Campaign Classic.
+title: Avvio di una nuova piattaforma con Adobe Campaign Classic
+description: Scopri di più sulla gestione del recapito quando si avvia una nuova piattaforma con Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -27,7 +24,7 @@ Mantenere la reputazione del dominio e dell&#39;indirizzo IP è fondamentale qua
 
 * L&#39;invio di e-mail è un passaggio sensibile in quanto la piattaforma non dispone di alcuna cronologia di utilizzo e, quando gli IP di invio non sono mai stati utilizzati a questo scopo, non ha alcuna reputazione.
 
-* Gli ISP sono naturalmente sospettosi degli indirizzi IP che non sono mai stati utilizzati per inviare email e che improvvisamente iniziano a inviare grandi volumi di traffico email. Infatti, gli spammer generalmente utilizzano indirizzi IP &quot;sconosciuti&quot; (indirizzi che non sono mai stati aggiunti a un elenco di blocchi) per inviare il maggior numero possibile di messaggi prima del rilevamento.
+* Gli ISP sono naturalmente sospettosi degli indirizzi IP che non sono mai stati utilizzati per inviare email e che improvvisamente iniziano a inviare grandi volumi di traffico email. Infatti, gli spammer generalmente utilizzano indirizzi IP &quot;sconosciuti&quot; (indirizzi che non sono mai stati aggiunti a un elenco Bloccati ) per inviare il maggior numero possibile di messaggi prima del rilevamento.
 
 * Non ci si può aspettare di raggiungere la velocità operativa in termini di output all&#39;inizio della fase di produzione. Inoltre, non si dovrebbe tentare di inviare messaggi a questo tasso, in quanto potrebbe indurre gli ISP a bloccare gli indirizzi di invio e a compromettere gravemente il resto della fase di avvio.
 
@@ -38,8 +35,9 @@ L&#39;avvio di una piattaforma spesso avviene quando si utilizza per la prima vo
 
    * Se si dispone di un elenco di indirizzi non validi, è nell&#39;interesse dell&#39;utente importarlo nella tabella di quarantena (disponibile tramite il **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menu) prima di inviarlo per la prima volta.
    * Se, comunque, si desidera riqualificare gli indirizzi non validi, è di gran lunga preferibile farlo una volta che la reputazione della piattaforma è stabilita e un po&#39; alla volta, al fine di &quot;diluire&quot; l&#39;uso di indirizzi cattivi nel tempo.
+
    Per ulteriori informazioni, consulta [Ottimizzazione della consegna tramite quarantena](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
-* **Limita la velocità** effettiva limitando il numero di schede. Per ulteriori informazioni sulla regolazione di tale impostazione tecnica, contattate l’amministratore di Adobe Campaign .
+* **Limita la velocità** effettiva limitando il numero di schede. Per ulteriori informazioni sulla regolazione di tale impostazione tecnica, contattate il vostro amministratore  Adobe Campaign.
 * **Aumentare progressivamente i volumi inviati** per evitare di essere contrassegnati come spam. Non eseguite il targeting dell&#39;intero database fin dall&#39;inizio, ma aggiungete una frazione extra dell&#39;elenco ogni volta che inviate. Questo dovrebbe consentire di aumentare il volume in ogni fase, riducendo al contempo il tasso complessivo di indirizzi non validi. Per garantire uno sviluppo uniforme della fase di avvio, è possibile utilizzare le onde. Per ulteriori informazioni, consultate [Invio con più onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 * **Invia regolarmente**. In una certa misura è meglio inviare regolarmente piccole riprese piuttosto che campagne di grandi dimensioni sporadicamente.
 * **Presta particolare attenzione ai rapporti** di consegna. Indicatori di errore elevati possono indicare che un&#39;impostazione tecnica è configurata male. Per ulteriori informazioni, consulta [Monitoraggio della distribuzione](../../delivery/using/monitoring-a-delivery.md).
