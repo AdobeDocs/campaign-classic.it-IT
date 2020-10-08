@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -34,12 +31,12 @@ SpamAssassin sfrutta una serie di tecniche di rilevamento dello spam, tra cui:
 * Rilevamento di spam basato su DNS e con checksum approssimativo
 * Filtro bayesiano
 * Programmi esterni
-* Elenchi di blocchi
+* elenchi Bloccati 
 * Database online
 
 >[!NOTE]
 >
->SpamAssassin deve essere installato e configurato nel server dell&#39;applicazione  Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-spamassassin.md).
+>SpamAssassin deve essere installato e configurato sul server  applicazione Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-spamassassin.md).
 >
 >Le regole che determinano se un elemento è spam o meno vengono gestite tramite SpamAssassin e possono essere modificate da un amministratore con privilegi.
 
@@ -49,7 +46,7 @@ Dopo aver creato la consegna e-mail e definito il contenuto, effettuate le opera
 
 Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md).
 
-1. Vai alla **[!UICONTROL Preview]** scheda.
+1. Vai alla scheda **[!UICONTROL Preview]**. 
 1. Seleziona un destinatario per visualizzare l&#39;anteprima della consegna.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -63,7 +60,7 @@ Per ulteriori informazioni sulla creazione e la progettazione di una consegna, c
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Fate clic sul **[!UICONTROL More...]** collegamento accanto all’avviso.
-1. Selezionate la **[!UICONTROL Anti-spam checking]** scheda.
+1. Seleziona la scheda **[!UICONTROL Anti-spam checking]**.
 1. Andate alla **[!UICONTROL Points / Rule / Description]** sezione per visualizzare i motivi di questo rischio.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
