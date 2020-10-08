@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Creating a delivery template{#creating-a-delivery-template}
+# Creazione di un modello di consegna{#creating-a-delivery-template}
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#delivery-template-video)
 
@@ -90,6 +87,6 @@ Il seguente video mostra come impostare le proprietà del modello di consegna e 
 
 ## Come distribuire un modello di consegna ad hoc
 
-Questo video spiega come distribuire un modello di consegna e-mail ad hoc e spiega la differenza tra una consegna e-mail e un flusso di lavoro di consegna.
+Questo video spiega come distribuire un modello di consegna e-mail ad hoc e spiega la differenza tra una consegna e-mail e un flusso di lavoro per la consegna.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
