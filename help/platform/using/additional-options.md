@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -93,9 +90,9 @@ Durante l&#39;analisi della consegna, questa opzione crea ed esegue automaticame
 
 Selezionando questa opzione, puoi ottenere un aumento significativo delle prestazioni per l&#39;esecuzione della personalizzazione.
 
-## Utilizzo dei dati di un database esterno in un flusso di lavoro {#using-data-from-an-external-database-in-a-workflow}
+## Utilizzo di dati da un database esterno in un flusso di lavoro {#using-data-from-an-external-database-in-a-workflow}
 
-In diverse attività del flusso di lavoro  Adobe Campaign, potete utilizzare i dati memorizzati in un database esterno.
+In diverse attività  flusso di lavoro Adobe Campaign, potete utilizzare i dati memorizzati in un database esterno.
 
 ### Applicazione di filtri a dati esterni {#filtering-on-external-data}
 
