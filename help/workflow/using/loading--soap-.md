@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 >[!CAUTION]
 >
->L&#39;attività di **caricamento (SOAP)** è disponibile solo se è installato il modulo **FDA (Federated Data Access)** . Controllare il contratto di licenza.
+>L&#39;attività di **caricamento (SOAP)** è disponibile solo se è installato il modulo **FDA (Federated Data Access)** . Controlla il contratto di licenza.
 
-L&#39;attività di **caricamento (SOAP)** viene utilizzata in aggiunta all&#39;attività di caricamento dei **dati (RDBMS)** quando non è possibile raccogliere dati direttamente tramite FDA in un database esterno.
+L&#39;attività di **caricamento (SOAP)** viene utilizzata in aggiunta all&#39;attività di caricamento dei **dati (RDBMS)** quando non è possibile raccogliere i dati direttamente tramite FDA in un database esterno.
 
 L&#39;operazione è la seguente:
 
@@ -56,7 +56,7 @@ L&#39;operazione è la seguente:
    * **[!UICONTROL Initialization]**: stabilisce una connessione SOAP.
    * **[!UICONTROL Iteration]**: esegue la chiamata al servizio SOAP. Il risultato di questa funzione deve essere un oggetto XML compatibile con la descrizione dell&#39;esempio o del WSDL.
 
-      Il codice di questa scheda verrà chiamato in loop da Adobe Campaign fino alla restituzione di un oggetto XML nullo.
+      Il codice di questa scheda viene chiamato in un ciclo da  Adobe Campaign fino alla restituzione di un oggetto XML nullo.
 
    * **[!UICONTROL Finalization]**: chiude la connessione e/o libera altre risorse create durante l&#39;elaborazione.
 
