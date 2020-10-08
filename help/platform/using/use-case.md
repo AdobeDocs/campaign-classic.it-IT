@@ -1,7 +1,7 @@
 ---
-title: Caso di utilizzo
-seo-title: Caso di utilizzo
-description: Caso di utilizzo
+title: Caso d’uso
+seo-title: Caso d’uso
+description: Caso d’uso
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c76fdf-d562-4151-93ec-08b4f6563440
@@ -11,16 +11,16 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: fbc38e33-60a6-4d21-a598-312293d168fb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 3%
 
 ---
 
 
-# Caso di utilizzo{#use-case}
+# Caso d’uso{#use-case}
 
 ## Creazione di un filtro per il formato e-mail degli abbonati {#creating-a-filter-on-the-email-format-of-subscribers}
 
