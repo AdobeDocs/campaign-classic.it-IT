@@ -1,7 +1,7 @@
 ---
-title: Tabelle da mantenere
-seo-title: Tabelle da mantenere
-description: Tabelle da mantenere
+title: Tabelle che richiedono manutenzione
+seo-title: Tabelle che richiedono manutenzione
+description: Tabelle che richiedono manutenzione
 seo-description: null
 page-status-flag: never-activated
 uuid: 1085e929-65cc-48fa-9c31-0508a14b4704
@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 6ec4e566-7116-4d7f-835d-cb0f3c3a6a7a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
 
-# Tabelle da mantenere{#tables-to-maintain}
+# Tabelle che richiedono manutenzione{#tables-to-maintain}
 
-L&#39;elenco delle tabelle da mantenere dipende dalla versione di Adobe Campaign in uso, dalla modalità di utilizzo e dalla configurazione del modello dati.
+L&#39;elenco delle tabelle da gestire dipende dalla versione di  Adobe Campaign, dalla modalità di utilizzo e dalla configurazione del modello di dati.
 
 L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammentazione. Gli impatti sono i seguenti:
 
 * il consumo eccessivo di spazio su disco, con conseguente impatto sull&#39;accesso al database,
 * indici che non sono stati aggiornati regolarmente e che rallentano le prestazioni delle query.
 
-## Tabelle di Adobe Campaign {#adobe-campaign-tables}
+##  tabelle Adobe Campaign {#adobe-campaign-tables}
 
 <table> 
  <thead> 
@@ -44,7 +44,7 @@ L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammenta
   <tr> 
    <td> NmsDelivery<br /> </td> 
    <td> Piccolo<br /> </td> 
-   <td> Aggiornamenti<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Esiste un record per azione di consegna. Un singolo record può essere aggiornato più volte per riflettere l'avanzamento della distribuzione, pertanto gli indici di questa tabella tendono a frammentarsi rapidamente. <br /> </td> 
   </tr> 
   <tr> 
@@ -74,14 +74,14 @@ L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammenta
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> Piccolo<br /> </td> 
-   <td> Aggiornamenti<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Esiste un record per ogni istanza del flusso di lavoro, quindi pochissimi record. Tuttavia, la tabella viene regolarmente aggiornata per riflettere lo stato e l'avanzamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
    <td> Piccolo<br /> </td> 
    <td> Inserzioni, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Ogni esecuzione di un'attività di workflow porta alla creazione di un record in questa tabella. Il meccanismo di rimozione li elimina una volta scaduti.<br /> </td> 
+   <td> Ogni esecuzione di un'attività del flusso di lavoro porta alla creazione di un record in questa tabella. Il meccanismo di rimozione li elimina una volta scaduti.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
@@ -110,7 +110,7 @@ L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammenta
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
    <td> Piccolo<br /> </td> 
-   <td> Aggiornamenti<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Questa tabella contiene informazioni utilizzate per gli errori SMTP idonei. È abbastanza piccolo, ma sarà massicciamente aggiornato, quindi gli indici in questa tabella tendono a frammentarsi rapidamente. <br /> </td> 
   </tr> 
   <tr> 
@@ -165,7 +165,7 @@ L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammenta
    <td> NmsRtEvent (istanza di esecuzione del Centro messaggi)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserzioni, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Tabella contenente la coda eventi del Centro messaggi. Lo stato di questi eventi viene aggiornato dal Centro messaggi durante l'elaborazione. Le eliminazioni vengono effettuate durante la rimozione. Vi consigliamo di ricreare regolarmente l'indice di questa tabella e di rigenerarlo.<br /> </td> 
+   <td> Tabella contenente la coda degli eventi del Centro messaggi. Lo stato di questi eventi viene aggiornato dal Centro messaggi durante l'elaborazione. Le eliminazioni vengono effettuate durante la rimozione. Vi consigliamo di ricreare regolarmente l'indice di questa tabella e di rigenerarlo.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsEventHisto (istanza di controllo del Centro messaggi)<br /> </td> 
@@ -208,4 +208,4 @@ L&#39;elenco seguente contiene solo le tabelle maggiormente soggette a frammenta
 
 ## Tabelle cliente {#customer-tables}
 
-Oltre all&#39;elenco riportato sopra, anche le tabelle contenenti i dati creati dai clienti (che non esistono nel modello dati di Adobe Campaign) durante la configurazione della piattaforma possono essere soggette a frammentazione, soprattutto se vengono aggiornate frequentemente durante le procedure di caricamento o sincronizzazione dei dati. Queste tabelle possono essere parte del modello dati predefinito di Adobe Campaign (ad esempio, **NmsRecipient**). In questo caso, spetta all&#39;amministratore della piattaforma Adobe Campaign eseguire un controllo del proprio modello di database specifico per trovare queste tabelle personalizzate. Queste tabelle non sono necessariamente menzionate esplicitamente nelle nostre procedure di manutenzione.
+Oltre all&#39;elenco riportato sopra, anche le tabelle contenenti elementi creati dai clienti (che non esistono nel modello dati Adobe Campaign ) durante la configurazione della piattaforma possono essere soggette a frammentazione, soprattutto se vengono aggiornate frequentemente durante le procedure di caricamento o sincronizzazione dei dati. Queste tabelle possono essere parte del modello dati Adobe Campaign predefinito  (ad esempio, **NmsRecipient**). In questo caso, spetta all&#39;amministratore della piattaforma Adobe Campaign  eseguire un controllo del proprio modello di database specifico per trovare queste tabelle personalizzate. Queste tabelle non sono necessariamente menzionate esplicitamente nelle nostre procedure di manutenzione.
