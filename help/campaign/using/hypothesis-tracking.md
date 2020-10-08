@@ -1,7 +1,7 @@
 ---
-title: Tracciamento delle ipotesi
-seo-title: Tracciamento delle ipotesi
-description: Tracciamento delle ipotesi
+title: Tracking delle ipotesi
+seo-title: Tracking delle ipotesi
+description: Tracking delle ipotesi
 seo-description: null
 page-status-flag: never-activated
 uuid: cb949a9d-8bbe-446b-b5b4-22234a91a68b
@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# Tracciamento delle ipotesi{#hypothesis-tracking}
+# Tracking delle ipotesi{#hypothesis-tracking}
 
-Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign: gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nelle ipotesi contenute nei rapporti disponibili tramite campagne e consegne.
+Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign : gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nelle ipotesi contenute nei rapporti disponibili tramite campagne e consegne.
 
 ## Risultati dell&#39;ipotesi {#hypothesis-results}
 
@@ -55,7 +55,7 @@ Gli indicatori forniscono le seguenti informazioni:
 * **Margine medio per contatto**: totale / contattato.
 * **Margine medio dei gruppi** di controllo: margini totali / gruppo di controllo.
 * **Entrate** aggiuntive: (Entrate medie del gruppo di controllo contattato-Ricavi medi)*Numero di contatti
-* **Margine** aggiuntivo: (margine medio del gruppo di controllo contattato-margine medio) / numero di contatti
+* **Margine** aggiuntivo: (margine medio del gruppo di controllo contattato-margine medio) / numero di contattati
 * **Costo medio per contatto**: costo di consegna calcolato / Numero di contatti.
 * **ROI**: costo calcolato della consegna / Margine totale per contatto
 * **ROI** efficace: costo di consegna calcolato / margine aggiuntivo.
@@ -65,7 +65,7 @@ Gli indicatori forniscono le seguenti informazioni:
 
 È possibile visualizzare le reazioni dei destinatari alle ipotesi tramite la **[!UICONTROL Reactions]** scheda.
 
-1. Una volta completato il calcolo dell&#39;ipotesi, andate al **[!UICONTROL Campaign management > Measurement hypotheses]** nodo della struttura ad albero di Adobe Campaign.
+1. Una volta completato il calcolo dell&#39;ipotesi, passare al **[!UICONTROL Campaign management > Measurement hypotheses]** nodo della struttura  Adobe Campaign.
 1. Selezionate l&#39;ipotesi desiderata e fate clic sulla **[!UICONTROL Reactions]** scheda per visualizzare l&#39;elenco dei destinatari che probabilmente acquisteranno qualcosa dopo la campagna di marketing.
 
    ![](assets/response_hypothesis_reactions_001.png)
@@ -74,7 +74,7 @@ Gli indicatori forniscono le seguenti informazioni:
 
 Consente di **[!UICONTROL Hypothesis report]** visualizzare i risultati delle ipotesi eseguite su campagne e consegne. La relazione contiene gli indicatori calcolati in base all&#39;ipotesi (per ulteriori informazioni, fare riferimento a [indicatori](#indicators)).
 
-* **A livello** di campagna: fate clic sul **[!UICONTROL Reports]** collegamento della campagna interessata e selezionate la campagna **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l&#39;elenco delle consegne della campagna e le ipotesi calcolate per ogni consegna.
+* **A livello** di campagna: fate clic sul **[!UICONTROL Reports]** collegamento della campagna in questione e selezionate la campagna **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l&#39;elenco delle consegne della campagna e le ipotesi calcolate per ogni consegna.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
