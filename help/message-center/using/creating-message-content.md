@@ -1,7 +1,7 @@
 ---
-title: Creazione del contenuto dei messaggi
-seo-title: Creazione del contenuto dei messaggi
-description: Creazione del contenuto dei messaggi
+title: Creazione del contenuto del messaggio
+seo-title: Creazione del contenuto del messaggio
+description: Creazione del contenuto del messaggio
 seo-description: null
 page-status-flag: never-activated
 uuid: 4ee013fc-fba2-4120-b796-dd4008000ea9
@@ -11,22 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 4%
 
 ---
 
 
-# Creazione del contenuto dei messaggi{#creating-message-content}
+# Creazione del contenuto del messaggio{#creating-message-content}
 
-La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per la consegna tramite e-mail potete creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l&#39;oggetto di consegna. Per ulteriori informazioni, consulta il capitolo sulla distribuzione [delle e-](../../delivery/using/about-email-channel.md)mail.
+La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in  Adobe Campaign. Ad esempio, per la consegna tramite e-mail potete creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l&#39;oggetto di consegna. Per ulteriori informazioni, consulta il capitolo sulla consegna [delle e-](../../delivery/using/about-email-channel.md)mail.
 
 >[!CAUTION]
 >
->Le immagini incluse nel messaggio devono essere accessibili al pubblico. Adobe Campaign non fornisce alcun meccanismo di caricamento delle immagini per i messaggi transazionali.\
+>Le immagini incluse nel messaggio devono essere accessibili al pubblico.  Adobe Campaign non fornisce alcun meccanismo di caricamento delle immagini per i messaggi transazionali.\
 >A differenza di JSSP o webApp, non `<%=` dispone di escape predefinito.
 >
 >In questo caso, è necessario eseguire correttamente l&#39;escape di ogni dato proveniente dall&#39;evento. Questa escape dipende dalla modalità di utilizzo del campo. Ad esempio, all’interno di un URL, utilizzate encodeURIComponent. Per essere visualizzato nell’HTML, è possibile utilizzare escapeXMLString.
@@ -46,7 +46,7 @@ Per inserire tag di personalizzazione nel corpo di un messaggio e-mail, effettua
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Compilate il tag utilizzando la sintassi seguente: nome **** dell&#39;elemento.@nome **** attributo come mostrato di seguito.
+1. Compilate il tag utilizzando la sintassi seguente: **nome** dell&#39;elemento.@nome **** attributo come mostrato di seguito.
 
    ![](assets/messagecenter_create_custo_003.png)
 
