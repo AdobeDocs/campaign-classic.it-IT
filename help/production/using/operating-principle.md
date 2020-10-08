@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
 
 # Principio di funzionamento{#operating-principle}
 
-Tecnicamente, la piattaforma Adobe Campaign si basa su diversi moduli.
+Tecnicamente, la piattaforma Adobe Campaign  è basata su diversi moduli.
 
-Ci sono molti moduli di Adobe Campaign. Alcuni funzionano in modo continuo, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio, per consolidare le informazioni di tracciamento).
+Ci sono molti moduli  Adobe Campaign. Alcuni funzionano in modo continuo, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio, per consolidare le informazioni di tracciamento).
 
-Esistono tre tipi di moduli di Adobe Campaign:
+Esistono tre tipi di moduli Adobe Campaign :
 
 * Moduli a istanza multipla: viene eseguito un singolo processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività dal file **config-default.xml** ).
-* Moduli a istanza mono: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** **`<instance>`** (attività dal fileconfig-.xml).
+* Moduli a istanza mono: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività del **`<instance>`** file config-.xml).
 * Moduli di utilità: si tratta di moduli che vengono eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**pulizia**, **configurazione**, scaricamento dei registri di tracciamento, ecc.).
 
 L&#39;amministrazione del modulo viene eseguita utilizzando il **server** della riga di comando installato nella directory **bin** della cartella di installazione.
@@ -49,13 +49,13 @@ I moduli disponibili sono descritti nella tabella seguente:
 | pulizia | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;ottimizzatore del motore del database. |
 | config | Modifica della configurazione del server |
 | copybase | Copia di un database |
-| export | Esportazione alla riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client Adobe Campaign |
+| export | Esportazione alla riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client Adobe Campaign  |
 | fileconvert | Conversione di un file di dimensioni impostate |
-| import | Importazione alla riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client Adobe Campaign. |
+| import | Importazione alla riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client Adobe Campaign . |
 | inMail | Analizzatore di posta in entrata |
 | installsetup | Disponibilità del file di installazione del cliente |
 | javascript | Esecuzione di script JavaScript, con accesso alle API SOAP. |
-| job | Elaborazione riga di comando |
+| job | Elaborazione della riga di comando |
 | merge | Unione dei moduli |
 | midSourcing | Recupero delle informazioni di consegna in modalità mid-sourcing |
 | monitor | XML Visualizzazione dello stato dei processi server e delle attività pianificate, per istanza. |
@@ -72,16 +72,16 @@ I moduli disponibili sono descritti nella tabella seguente:
 | stat | Mantiene le statistiche di connessione MTA |
 | stop | Chiusura parziale del sistema |
 | sottomissione | Invio di un&#39;azione di consegna |
-| syslogd | Server di registrazione e traccia |
+| syslogd | Server di registrazione e traccia per la scrittura |
 | tracking | Consolidamento e recupero dei registri di tracciamento |
 | trackinglogd | Tracciamento del registro di scrittura e rimozione del server |
 | cane da guardia | Avvio e monitoraggio dell’istanza |
 | web | Server applicazione (HTTP e SOAP) |
-| wfserver | Workflow server |
+| wfserver | Server flussi di lavoro |
 
 >[!CAUTION]
 >
->Esiste un ultimo modulo: il modulo di tracciamento e relay collegato al server applicazione che, per motivi di prestazioni, è integrato tramite meccanismi nativi in un server Web Apache o IIS tramite una libreria dinamica. Nessun comando Adobe Campaign consente di avviare o amministrare il modulo. È pertanto necessario utilizzare i comandi del server Web stesso.
+>Esiste un ultimo modulo: il modulo di tracciamento e relay collegato al server applicazione che, per motivi di prestazioni, è integrato tramite meccanismi nativi in un server Web Apache o IIS tramite una libreria dinamica. Nessun comando Adobe Campaign  consente di avviare o amministrare il modulo. È pertanto necessario utilizzare i comandi del server Web stesso.
 
 L&#39;utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il seguente comando: **nlserver`[module]`-?**
 
