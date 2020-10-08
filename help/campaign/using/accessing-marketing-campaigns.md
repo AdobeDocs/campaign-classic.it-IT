@@ -1,7 +1,7 @@
 ---
-title: Accesso a campagne di marketing
-seo-title: Accesso a campagne di marketing
-description: Accesso a campagne di marketing
+title: Accesso alle campagne di marketing
+seo-title: Accesso alle campagne di marketing
+description: Accesso alle campagne di marketing
 seo-description: null
 page-status-flag: never-activated
 uuid: a482be37-61bb-4588-9dfb-f9c3ee5a1930
@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 discoiquuid: 8e7eb53c-bbe2-4bd4-8581-c2a63a3dc84e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Accesso a campagne di marketing{#accessing-marketing-campaigns}
+# Accesso alle campagne di marketing{#accessing-marketing-campaigns}
 
  Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
