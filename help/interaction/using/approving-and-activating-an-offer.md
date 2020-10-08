@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Il banner nel dashboard delle offerte indica se l’offerta deve o meno attraver
 
 ## Approvazione del contenuto delle offerte {#approving-offer-content}
 
-Per approvare il contenuto delle offerte si intendono le rappresentazioni che desiderate rendere disponibili nell&#39;ambiente live.
+Per approvare i contenuti delle offerte, selezionate le rappresentazioni da rendere disponibili nell&#39;ambiente live.
 
 Il contenuto di un&#39;offerta ha una rappresentazione per spazio. Poiché ciascuno spazio delle offerte ha una propria struttura e le proprie funzioni di rendering, la rappresentazione dell&#39;offerta può variare.
 
