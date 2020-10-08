@@ -1,7 +1,7 @@
 ---
-title: coupon personalizzati
-seo-title: coupon personalizzati
-description: coupon personalizzati
+title: Coupon personalizzati
+seo-title: Coupon personalizzati
+description: Coupon personalizzati
 seo-description: null
 page-status-flag: never-activated
 uuid: c840e2de-f0ef-478b-af9f-82e1b6534933
@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: f324afa5-304c-470e-a592-290f76a11ccb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 1%
 
 ---
 
 
-# coupon personalizzati{#personalized-coupons}
+# Coupon personalizzati{#personalized-coupons}
 
-L&#39;aggiunta di buoni alle consegne consente di offrire ai destinatari un valore aggiunto per prodotti e servizi. Puoi utilizzare il modulo coupon Campagna per creare un set di buoni da aggiungere alle prossime offerte di marketing. Quando sei pronto a creare una consegna, assegna i buoni applicabili. Poiché le cedole sono valide per un periodo selezionato, una cedola assegnata è collegata in modo univoco al messaggio di consegna. Campaign inoltre conferma che esistono abbastanza buoni sconto per il numero di messaggi prima dell&#39;invio.
+L&#39;aggiunta di buoni alle consegne consente di offrire ai destinatari un valore aggiunto per prodotti e servizi. Puoi utilizzare il modulo coupon Campagna per creare un set di buoni da aggiungere alle prossime offerte di marketing. Quando sei pronto a creare una consegna, assegna i coupon applicabili. Poiché le cedole sono valide per un periodo selezionato, una cedola assegnata è collegata in modo univoco al messaggio di consegna. Campaign inoltre conferma che esistono abbastanza buoni sconto per il numero di messaggi prima dell&#39;invio.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Prima di seguire i passaggi descritti di seguito, accertatevi di conoscere il ti
 
    ![](assets/deliv_coup_01.png)
 
-1. Fate clic sul **[!UICONTROL New]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL New]**.
 1. Immettere il nome del coupon nel **[!UICONTROL Label]** campo. È stato immesso automaticamente un codice univoco in **[!UICONTROL Coupon code]**. È possibile mantenere il codice o inserirne uno nuovo.
 
    ![](assets/deliv_coup_02.png)
@@ -58,6 +58,7 @@ Prima di seguire i passaggi descritti di seguito, accertatevi di conoscere il ti
    1. Quando si sceglie Singolo, in basso a sinistra compare una nuova scheda, Coupons. Vai alla **[!UICONTROL Coupons]** scheda e fai clic su **[!UICONTROL Add]**.
    1. Immettete un codice univoco per il singolo coupon quando richiesto dalla finestra a comparsa.
    1. Fare clic **[!UICONTROL Save]** per generare il coupon.
+
    Per ulteriori dettagli sulla scheda Coupons, vedere [Configurazione di singoli coupon](#configuring-individual-coupons).
 
    >[!NOTE]
@@ -79,10 +80,10 @@ I valori per **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL a
 
 ## Inserimento di un coupon in una consegna tramite e-mail {#inserting-a-coupon-into-an-email-delivery}
 
-Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzioni dettagliate su come creare una consegna, consultate [questa sezione](../../delivery/using/about-email-channel.md). Potete anche aggiungere un coupon a una consegna in un flusso di lavoro.
+Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzioni dettagliate su come creare una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md). Potete anche aggiungere un coupon a una consegna in un flusso di lavoro.
 
 1. Vai a **[!UICONTROL Campaigns]** e scegli **[!UICONTROL Deliveries]**.
-1. Clic **[!UICONTROL Create]**.
+1. Fai clic su **[!UICONTROL Create]**.
 
    ![](assets/deliv_coup_04.png)
 
@@ -119,7 +120,7 @@ Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzi
 
       ![](assets/deliv_coup_11.png)
 
-      Il coupon viene inserito nel messaggio come codice anziché come nome assegnato. Il codice viene utilizzato all&#39;interno del modello dati standard Campaign.
+      Il coupon viene inserito nel messaggio come codice anziché come nome assegnato. Il codice viene utilizzato all&#39;interno del modello dati standard di Campaign.
    ![](assets/deliv_coup_12.png)
 
 1. Eseguire un test per confermare il nome assegnato al coupon. Vai alla **[!UICONTROL Preview]** scheda e fai clic su **[!UICONTROL Test personalization]**. Scegliete un destinatario per il test.
@@ -134,7 +135,7 @@ Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzi
 
    ![](assets/deliv_coup_15.png)
 
-1. Clic **[!UICONTROL Analyze]**. Se il registro analisi conferma che esistono abbastanza buoni per tutti i destinatari, fai clic **[!UICONTROL Confirm delivery]** per inviarlo.
+1. Fai clic su **[!UICONTROL Analyze]**. Se il registro analisi conferma che esistono abbastanza buoni per tutti i destinatari, fai clic **[!UICONTROL Confirm delivery]** per inviarlo.
 
    ![](assets/deliv_coup_16.png)
 
@@ -145,7 +146,7 @@ Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzi
 Per confermare che la consegna è avvenuta correttamente:
 
 1. Vai a **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**.
-1.  Fate clic sulla **[!UICONTROL Deliveries]** scheda.
+1. Fate clic sulla **[!UICONTROL Deliveries]** scheda.
 
    ![](assets/deliv_coup_17.png)
 
@@ -153,15 +154,15 @@ Per confermare che la consegna è avvenuta correttamente:
 
 >[!NOTE]
 >
->Per impostazione predefinita, il modulo di gestione delle cedole utilizza una tabella **nms:destinatario** . Per istruzioni sull&#39;uso di altre tabelle, vedere [Modifica degli schemi](../../configuration/using/data-schemas.md).
+>Per impostazione predefinita, il modulo di gestione delle cedole utilizza una tabella **nms:Recipients** . Per istruzioni sull&#39;uso di altre tabelle, vedere [Modifica degli schemi](../../configuration/using/data-schemas.md).
 
 ## Gestione di coupon insufficienti {#managing-insufficient-coupons}
 
 L&#39;analisi di consegna si interrompe se i coupon sono più numerosi dei messaggi. In questo caso, puoi importare più coupon o limitare il numero di messaggi. Seguite le istruzioni riportate di seguito per limitare il numero di messaggi.
 
 1. Passate alla finestra di consegna e-mail.
-1. Clic **[!UICONTROL To]**.
-1. In **[!UICONTROL Select target]**, andate alla **[!UICONTROL Exclusions]** scheda.
+1. Fai clic su **[!UICONTROL To]**.
+1. In **[!UICONTROL Select target]**, go to the **[!UICONTROL Exclusions]** tab.
 
    ![](assets/deliv_coup_18.png)
 
