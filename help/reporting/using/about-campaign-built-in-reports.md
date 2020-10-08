@@ -1,7 +1,7 @@
 ---
-title: I rapporti incorporati nelle campagne
-seo-title: I rapporti incorporati nelle campagne
-description: I rapporti incorporati nelle campagne
+title: Informazioni sui report incorporati di Campaign
+seo-title: Informazioni sui report incorporati di Campaign
+description: Informazioni sui report incorporati di Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: 28c32281-51b8-419d-9f18-c7073788df13
@@ -11,26 +11,26 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 8e4028f8-055a-435c-b226-3d8e0a352f92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 5%
 
 ---
 
 
-# I rapporti incorporati nelle campagne{#about-campaign-built-in-reports}
+# Informazioni sui report incorporati di Campaign{#about-campaign-built-in-reports}
 
-Questo capitolo contiene l&#39;elenco dei rapporti incorporati di Adobe Campaign, il relativo contenuto e il relativo contesto. Le informazioni riportate di seguito consentono di evitare la creazione di rapporti già disponibili nella piattaforma.
+Questo capitolo contiene l&#39;elenco  report incorporati Adobe Campaign, il relativo contenuto e il relativo contesto. Le informazioni riportate di seguito consentono di evitare la creazione di rapporti già disponibili nella piattaforma.
 
 >[!NOTE]
 >
->È inoltre possibile apprendere come aggiungere i propri rapporti alla **[!UICONTROL Reports]** scheda. Per ulteriori informazioni, consultare questa [pagina](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
+>È inoltre possibile apprendere come aggiungere i propri rapporti alla **[!UICONTROL Reports]** scheda. For more information, refer to this [page](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
 
 Tali rapporti e il relativo contenuto sono descritti in modo dettagliato nei documenti relativi alle funzionalità che essi riguardano.
 
-Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console clienti o da un browser Internet.
+ Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console del cliente o da un browser Internet.
 
 Sono disponibili i seguenti tipi di report:
 
@@ -42,7 +42,7 @@ Potete accedere ai rapporti dalla home page della console client, dal dashboard 
 
 Per accedere ai rapporti predefiniti della campagna:
 
-1. Seleziona la **[!UICONTROL Reports]** scheda dell&#39;interfaccia di Adobe Campaign.
+1. Selezionate la **[!UICONTROL Reports]** scheda dell&#39;interfaccia Adobe Campaign .
 
    ![](assets/reporting_access_from_home.png)
 
