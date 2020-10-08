@@ -1,7 +1,7 @@
 ---
-title: Controllo consegna
-seo-title: Controllo consegna
-description: Controllo consegna
+title: Controllo della consegna
+seo-title: Controllo della consegna
+description: Controllo della consegna
 seo-description: null
 page-status-flag: never-activated
 uuid: f9cef2d9-a6a5-45bd-8c7a-fabc11879628
@@ -11,20 +11,20 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 0b5ee05c-4b96-425a-ab0f-60b930de21bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
 
-# Controllo consegna{#delivery-control}
+# Controllo della consegna{#delivery-control}
 
 Un&#39;azione di tipo controllo **** Consegna consente di avviare, mettere in pausa o interrompere una consegna.
 
-Può trattarsi della consegna specificata nella transizione, di una consegna selezionata esplicitamente o di una consegna calcolata da uno script. Per ulteriori informazioni, consulta [Consegna](../../workflow/using/delivery.md).
+Può trattarsi della consegna specificata nella transizione, di una consegna selezionata esplicitamente o di una consegna calcolata da uno script. For more on this, refer to [Delivery](../../workflow/using/delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
