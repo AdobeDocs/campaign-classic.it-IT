@@ -1,7 +1,7 @@
 ---
-title: Prerequisiti per l'installazione di Campaign in Linux
-seo-title: Prerequisiti per l'installazione di Campaign in Linux
-description: Prerequisiti per l'installazione di Campaign in Linux
+title: Prerequisiti per l’installazione di Campaign in Linux
+seo-title: Prerequisiti per l’installazione di Campaign in Linux
+description: Prerequisiti per l’installazione di Campaign in Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
@@ -11,26 +11,26 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 
-# Prerequisiti per l&#39;installazione di Campaign in Linux{#prerequisites-of-campaign-installation-in-linux}
+# Prerequisiti per l’installazione di Campaign in Linux{#prerequisites-of-campaign-installation-in-linux}
 
 ## Prerequisiti software {#software-prerequisites}
 
-Questa sezione descrive i passaggi preliminari per le configurazioni necessari prima di installare Adobe Campaign.
+Questa sezione descrive i passaggi preliminari per le configurazioni necessari prima di installare  Adobe Campaign.
 
-La configurazione tecnica e software necessaria per installare Adobe Campaign è descritta dettagliatamente nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+La configurazione tecnica e software necessaria per l&#39;installazione  Adobe Campaign è dettagliata nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
-* Apache, fare riferimento a [Matrice](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)di compatibilità,
+* Apache, fare riferimento a [Matrice](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)di compatibilità,
 * Java JDK e OpenJDK, fare riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Librerie, fare riferimento a [Librerie](#libraries),
 * livelli di accesso al database, fare riferimento ai livelli [di accesso al](#database-access-layers)database,
@@ -43,11 +43,11 @@ Come promemoria, è necessario installare e configurare correttamente i seguenti
 
 ### Librerie {#libraries}
 
-Per installare Adobe Campaign in Linux, accertatevi di disporre delle librerie necessarie.
+Per installare  Adobe Campaign in Linux, accertatevi di disporre delle librerie necessarie.
 
 * La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, tranne per alcuni kernel per i quali il supporto Xen è stato disattivato.
 
-   Per verificare questo, è possibile utilizzare il **nome uname -a| grep xen** , ad esempio.
+   Per verificare questo, è possibile utilizzare il **nome uname -a | grep xen** , ad esempio.
 
    Se il comando non restituisce nulla (riga vuota), significa che la configurazione è corretta.
 
@@ -55,14 +55,15 @@ Per installare Adobe Campaign in Linux, accertatevi di disporre delle librerie n
 
    Per le distribuzioni RHEL 7, è necessaria la versione 1.0 di OpenSSL.
 
-* Per utilizzare Adobe Campaign, devi avere installato la libreria **libicu** .
+* Per utilizzare  Adobe Campaign, è necessario che sia installata la libreria **libicu** .
 
    Sono supportate le seguenti versioni di **libicu** (32 bit o 64 bit):
 
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
-   Per utilizzare Adobe Campaign, devi avere installato la libreria libc-ares. In RHEL/CentOS, eseguite il comando seguente:
+
+   Per utilizzare  Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, eseguite il comando seguente:
 
    ```
    yum install c-ares
@@ -84,13 +85,13 @@ A questo scopo, accedete come root e immettete il comando seguente:
 echo 0 >/selinux/enforce
 ```
 
-Inoltre, nel file **/etc/sysconfig/httpd** , è stata aggiunta la riga seguente per fare riferimento allo script di configurazione dell&#39;ambiente di Adobe Campaign:
+Inoltre, nel file **/etc/sysconfig/httpd** , è stata aggiunta la riga seguente per fare riferimento allo script di configurazione dell&#39;ambiente Adobe Campaign :
 
 ```
 . ~neolane/nl6/env.sh
 ```
 
-In RHEL e CentOS, problemi di compatibilità con i livelli client dei database sono stati rilevati quando SELLinux è abilitato. Per essere certi che Adobe Campaign sia in grado di funzionare correttamente, si consiglia di disattivare SELLinux.
+In RHEL e CentOS, problemi di compatibilità con i livelli client dei database sono stati rilevati quando SELLinux è abilitato. Per essere certi  Adobe Campaign è in grado di funzionare correttamente, si consiglia di disattivare SELLinux.
 
 **Applicate il seguente processo:**
 
@@ -128,7 +129,7 @@ In Debian, aggiungete il comando:
 aptitude install fonts-ipafont
 ```
 
-In Red Hat aggiungete il comando:
+In Red Hat, aggiungete il comando:
 
 ```
 yum install ipa-gothic-fonts ipa-mincho-fonts
@@ -168,17 +169,17 @@ Con CentOS sono necessarie le seguenti configurazioni:
 
 ## Livelli di accesso al database {#database-access-layers}
 
-I livelli di accesso per il motore di database utilizzato devono essere installati sul server e accessibili tramite l&#39;account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
+I livelli di accesso per il motore di database utilizzato devono essere installati sul server e accessibili tramite l&#39;account Adobe Campaign . Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
-La versione pilota supportata è dettagliata nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+La versione pilota supportata è dettagliata nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
 
 Consultare anche la sezione [Database](../../installation/using/database.md) generale.
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
+ Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
 
-L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
+L&#39;utilizzo di PostgreSQL con  Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
 
 ### Oracle {#oracle}
 
@@ -202,7 +203,7 @@ Se nella console client si nota che nei registri sono presenti ritardi di tempo 
 
 1. Verificate che la versione **** client e la versione **del server di** database siano **uguali**.
 
-   È noto che la combinazione di versioni nonostante la matrice di compatibilità e la raccomandazione di Oracle per allineare le versioni client e server causa problemi.
+   È noto che il mixaggio delle versioni nonostante la matrice di compatibilità e la raccomandazione di Oracle per allineare le versioni client e server causa problemi.
 
    Controllare inoltre il valore ORACLE_HOME per essere certi che punti alla versione client prevista (nel caso in cui sul computer siano installate più versioni).
 
@@ -214,11 +215,11 @@ La versione della libreria supportata è **libdb2.so**.
 
 ## Passaggi di implementazione {#implementation-steps}
 
-Le installazioni di Adobe Campaign per Linux devono essere eseguite nella seguente sequenza: l&#39;installazione del server seguita dalla configurazione dell&#39;istanza.
+ installazioni Adobe Campaign per Linux devono essere eseguite nella seguente sequenza: l&#39;installazione del server seguita dalla configurazione dell&#39;istanza.
 
 Il processo di installazione è descritto in questo capitolo. Le fasi di installazione sono le seguenti:
 
 * Passaggio 1: Installazione del server applicazione, vedere [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
 * Passaggio 2: Integrazione con un server Web (facoltativo, a seconda dei componenti distribuiti).
 
-Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, consultate [Informazioni sulla configurazione](../../installation/using/about-initial-configuration.md)iniziale.
+Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, consulta [Informazioni sulla configurazione](../../installation/using/about-initial-configuration.md)iniziale.
