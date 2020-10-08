@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 discoiquuid: d538f489-f1ae-4682-9c21-d0300bd42b26
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
 
 # Passaggi per creare una query{#steps-to-create-a-query}
 
-Di seguito sono riportati i passaggi per creare una query in Adobe Campaign:
+Per creare una query in  Adobe Campaign, procedere come segue:
 
 1. Selezionare la tabella di lavoro. Fare riferimento al [Passaggio 1 - Scegliere una tabella](#step-1---choose-a-table).
 1. Selezionare i dati da estrarre. Fare riferimento al [Passaggio 2 - Scegliere i dati da estrarre](#step-2---choose-data-to-extract).
@@ -60,7 +60,7 @@ Ad esempio, selezionare **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!
 
 * La **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** funzione consente di &quot;raggruppare per&quot; e selezionare i raggruppamenti (&quot;avere&quot;). Questa funzione si applica a tutti i campi della colonna di output. Ad esempio, questa opzione consente di raggruppare tutte le scelte di una colonna di output e recuperare un tipo specifico di informazioni, ad esempio i destinatari compresi tra 35 e 50.
 
-   For more on this, refer to [this section](../../workflow/using/querying-using-grouping-management.md).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/querying-using-grouping-management.md).
 
 * La **[!UICONTROL Remove duplicate rows (DISTINCT)]** funzione consente di deduplicare risultati identici ottenuti nella colonna di output. Ad esempio, se effettui un censimento selezionando i campi Cognome, Nome e E-mail nella colonna di output, quelli con dati identici verranno eliminati, poiché significa che lo stesso contatto è stato immesso più volte nel database: verrà preso in considerazione solo un risultato.
 
@@ -83,7 +83,7 @@ I filtri offerti dipendono dalla tabella interessata dalla query.
 
 ![](assets/query_editor_nveau_09.png)
 
-Una volta selezionato, **[!UICONTROL Filtering conditions]** si accede alla **[!UICONTROL Target elements]** sezione: questo consente di definire come filtrare i dati da raccogliere.
+Una volta selezionato, **[!UICONTROL Filtering conditions]** si accede alla **[!UICONTROL Target elements]** sezione: in questo modo puoi definire come filtrare i dati da raccogliere.
 
 * Per creare un nuovo filtro, selezionare i campi, gli operatori e i valori richiesti per creare la formula da verificare per consentire la selezione dei dati. È possibile combinare diverse condizioni (per ulteriori informazioni, vedere [Definizione delle condizioni](../../platform/using/defining-filter-conditions.md)del filtro).
 * Per utilizzare i filtri salvati in precedenza, aprire l&#39;elenco a discesa facendo clic sul **[!UICONTROL Add]** pulsante, fare clic **[!UICONTROL Predefined filter]** e selezionare quello desiderato.
@@ -102,7 +102,7 @@ Come illustrato nell’esempio seguente, per recuperare tutti i destinatari che 
 
 >[!NOTE]
 >
->È possibile accedere direttamente a un&#39;opzione digitando la seguente formula nel campo **Valore** : **$(opzioni:OPTION_NAME)**.
+>È possibile accedere direttamente a un&#39;opzione digitando la seguente formula nel campo **Valore** : **$(options:OPTION_NAME)**.
 
 Fare clic sulla **[!UICONTROL Preview]** scheda per visualizzare il risultato della condizione di filtro. In questo caso, tutti i destinatari che parlano inglese vengono visualizzati con il proprio nome, nome e indirizzo e-mail.
 
@@ -112,7 +112,7 @@ Gli utenti che hanno familiarità con SQL Language possono fare clic **[!UICONTR
 
 ![](assets/query_editor_nveau_99.png)
 
-## Passaggio 5 - Formato dei dati {#step-5---format-data}
+## Passaggio 5 - Formattare i dati {#step-5---format-data}
 
 Una volta configurati i filtri di restrizione, potrete accedere alla **[!UICONTROL Data formatting]** finestra. Questa finestra consente di ridisporre le colonne di output, trasformare i dati e modificare le lettere maiuscole e minuscole delle etichette delle colonne. Consente inoltre di applicare una formula al risultato finale utilizzando un campo calcolato.
 
