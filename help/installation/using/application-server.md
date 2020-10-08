@@ -1,7 +1,7 @@
 ---
-title: Application Server
-seo-title: Application Server
-description: Application Server
+title: Server dell’applicazione
+seo-title: Server dell’applicazione
+description: Server dell’applicazione
 seo-description: null
 page-status-flag: never-activated
 uuid: 837c6a5c-53a4-4d1b-a084-9cf77e7a0eee
@@ -11,28 +11,28 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
 
-# Application Server{#application-server}
+# Server dell’applicazione{#application-server}
 
-I livelli di accesso al database richiesti devono essere installati sul server e accessibili dall&#39;account Adobe Campaign.
+I livelli di accesso al database richiesti devono essere installati sul server e accessibili dall&#39;account Adobe Campaign .
 
 ## Java Development Kit - JDK {#java-development-kit---jdk}
 
-Il generatore dinamico di pagine Web utilizza la tecnologia JSP 1.2. Per questo, un motore Tomcat (da Apache) è incluso nell&#39;applicazione. Richiede un Java Development Kit (JDK) installato su tutti i server in cui è installata l’applicazione Adobe Campaign.
+Il generatore dinamico di pagine Web utilizza la tecnologia JSP 1.2. Per questo, un motore Tomcat (da Apache) è incluso nell&#39;applicazione. Richiede un Java Development Kit (JDK) installato su tutti i server in cui è installata l&#39;applicazione Adobe Campaign .
 
-È innanzitutto necessario installare un JDK sui computer in cui si desidera eseguire il server applicazione Adobe Campaign (processo Web **** nlserver), perché include un contenitore servlet, Apache Tomcat, utilizzato per generare pagine Web dinamiche (rapporti, moduli Web, ecc.).
+È innanzitutto necessario installare un JDK sui computer in cui si desidera eseguire il server applicazione Adobe Campaign  (processo Web **** nlserver), perché include un contenitore servlet, Apache Tomcat, utilizzato per generare pagine Web dinamiche (rapporti, moduli Web, ecc.).
 
 L&#39;applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per **OpenJDK**.
 
-Le versioni supportate sono dettagliate nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+Le versioni supportate sono dettagliate nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
 
 >[!NOTE]
 >
@@ -66,11 +66,11 @@ yum install java-1.8.0-openjdk
 
 ## OpenSSL {#openssl}
 
-In Linux, OpenSSL deve essere installato. Le versioni supportate da Adobe Campaign sono **OpenSSL 1.0.1** e **OpenSSL 0.9.8**. Sono accettate le versioni da 0.9.8g a 0.9.8o.
+In Linux, OpenSSL deve essere installato. Le versioni supportate da  Adobe Campaign sono **OpenSSL 1.0.1** e **OpenSSL 0.9.8**. Sono accettate le versioni da 0.9.8g a 0.9.8o.
 
 ## Esportazione dei rapporti {#exporting-reports}
 
-Adobe Campaign consente di esportare i rapporti sulle piattaforme in formato Microsoft Excel e Adobe PDF. Per il formato Microsoft Excel, Adobe Campaign utilizza **LibreOffice**. Per il formato Adobe PDF, Adobe Campaign utilizza il convertitore **PhantomJS** . PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer in cui viene eseguito il server applicazione Adobe Campaign (processo Web **** nlserver).
+ Adobe Campaign consente di esportare i rapporti sulle piattaforme in formato Microsoft Excel e  Adobe PDF. Per il formato Microsoft Excel,  Adobe Campaign utilizza **LibreOffice**. Per il formato Adobe PDF ,  Adobe Campaign utilizza il convertitore **PhantomJS** . PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer in cui viene eseguito il server applicazioni Adobe Campaign  (processo Web **** nlserver).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Adobe Campaign consente di esportare i rapporti sulle piattaforme in formato Mic
 
 SpamAssassin consente di assegnare un punteggio alle e-mail per determinare se un messaggio rischi di essere considerato indesiderabile dagli strumenti anti-spam utilizzati alla ricezione. L&#39;installazione è facoltativa.
 
-La qualifica delle e-mail come indesiderabili da SpamAssassin si basa interamente su regole di filtraggio e punteggio. Queste regole devono pertanto essere aggiornate almeno una volta al giorno affinché l&#39;installazione di SpamAssassin e la sua integrazione in Adobe Campaign siano completamente funzionanti e per garantire la pertinenza dei punteggi assegnati alle consegne prima dell&#39;invio. Questo aggiornamento è responsabilità dell&#39;amministratore del server che ospita SpamAssassin.
+La qualifica delle e-mail come indesiderabili da SpamAssassin si basa interamente su regole di filtraggio e punteggio. Queste regole devono quindi essere aggiornate almeno una volta al giorno affinché l&#39;installazione SpamAssassin e la sua integrazione in  Adobe Campaign siano pienamente funzionanti e per garantire la pertinenza dei punteggi assegnati alle consegne prima dell&#39;invio. Questo aggiornamento è responsabilità dell&#39;amministratore del server che ospita SpamAssassin.
 
 La versione minima supportata è: **3.4**
 
