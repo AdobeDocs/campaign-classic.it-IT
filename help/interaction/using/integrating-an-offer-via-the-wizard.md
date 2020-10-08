@@ -1,7 +1,7 @@
 ---
-title: Integrazione di un'offerta tramite la procedura guidata
-seo-title: Integrazione di un'offerta tramite la procedura guidata
-description: Integrazione di un'offerta tramite la procedura guidata
+title: Integrazione di un’offerta tramite la procedura guidata
+seo-title: Integrazione di un’offerta tramite la procedura guidata
+description: Integrazione di un’offerta tramite la procedura guidata
 seo-description: null
 page-status-flag: never-activated
 uuid: 0d8cf0b5-fc27-4bf4-bd1d-892fe6e3257b
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 181fcb70-9394-4091-93df-92c39273ec3d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
 
-# Integrazione di un&#39;offerta tramite la procedura guidata{#integrating-an-offer-via-the-wizard}
+# Integrazione di un’offerta tramite la procedura guidata{#integrating-an-offer-via-the-wizard}
 
 Durante la creazione di una consegna, sono disponibili due metodi per integrare le offerte:
 
@@ -35,7 +35,7 @@ Per presentare un&#39;offerta durante una campagna di marketing, create semplice
 
 Per ulteriori informazioni sulle consegne e le campagne di marketing, consulta [Consegna](../../delivery/using/about-direct-mail-channel.md) e [Campagna](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### Passaggi principali per inserire un&#39;offerta in una consegna {#main-steps-for-inserting-an-offer-into-a-delivery}
+### Passaggi principali per l&#39;inserimento di un&#39;offerta in una consegna {#main-steps-for-inserting-an-offer-into-a-delivery}
 
 Per inserire le proposte di offerta in una consegna, effettuate le seguenti operazioni:
 
@@ -97,7 +97,7 @@ Potete anche presentare le offerte in una consegna utilizzando i contorni di con
 Per ulteriori informazioni sui contorni di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) .
 
 1. Create una nuova campagna o accedete a una campagna esistente.
-1. Accedete ai contorni di consegna tramite la scheda **[!UICONTROL Edit]** **[!UICONTROL Documents]** > della campagna.
+1. Accedete ai contorni di consegna tramite la scheda della campagna **[!UICONTROL Edit]** > **[!UICONTROL Documents]** .
 1. Aggiungi una struttura, quindi inserisci tutte le offerte che ti interessano facendo clic con il pulsante destro del mouse sulla struttura e selezionando **[!UICONTROL New]** > **[!UICONTROL Offer]**, quindi salva la campagna.
 
    ![](assets/int_compo_offre1.png)
