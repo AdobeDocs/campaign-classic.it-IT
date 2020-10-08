@@ -1,7 +1,7 @@
 ---
-title: Informazioni sul tracciamento Web
-seo-title: Informazioni sul tracciamento Web
-description: Informazioni sul tracciamento Web
+title: Informazioni sul web tracking
+seo-title: Informazioni sul web tracking
+description: Informazioni sul web tracking
 seo-description: null
 page-status-flag: never-activated
 uuid: 59d18ffb-c26e-4571-8364-5e85ec587349
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 38ba9be9-dabc-41d4-878c-d772955301fe
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 6%
 
 ---
 
 
-# Informazioni sul tracciamento Web{#about-web-tracking}
+# Informazioni sul web tracking{#about-web-tracking}
 
-Oltre al tracciamento standard che mostra il comportamento di un utente di Internet che fa clic su un collegamento in un messaggio e-mail, la piattaforma Adobe Campaign consente di raccogliere informazioni sul modo in cui gli utenti di Internet consultano il sito Web. Questa raccolta dati viene eseguita dal modulo di tracciamento Web.
+Oltre al tracciamento standard che mostra il comportamento di un utente di Internet che fa clic su un collegamento in un messaggio e-mail, la piattaforma Adobe Campaign  consente di raccogliere informazioni su come gli utenti di Internet navigano nel sito Web. Questa raccolta di dati viene eseguita dal modulo di tracciamento Web.
 
 Quando un utente di Internet fa clic su un collegamento tracciato in un messaggio e-mail da una data consegna, il server di reindirizzamento ha contattato per depositare un cookie di sessione contenente l’identificatore del registro di trasmissione (BroadlogId) e l’identificatore della consegna (deliveryId).
 
