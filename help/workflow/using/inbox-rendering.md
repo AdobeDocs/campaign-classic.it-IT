@@ -9,18 +9,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
 
 # Rendering della inbox (IR){#inbox-rendering}
 
-Il flusso di lavoro riportato di seguito viene installato con il modulo di rendering **Inbox (IR)** per impostazione predefinita. Per ulteriori informazioni sul rendering in entrata, consultare questa [sezione](../../delivery/using/inbox-rendering.md).
+Il flusso di lavoro riportato di seguito viene installato con il modulo di rendering **Inbox (IR)** per impostazione predefinita. For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
@@ -31,7 +31,7 @@ Il flusso di lavoro riportato di seguito viene installato con il modulo di rende
   </tr> 
   <tr> 
    <td> <strong>Aggiorna rete di seed per il rendering della inbox</strong><br /> </td> 
-   <td> <span class="uicontrol">updateRenderingSeeds</span><br /> </td> 
+   <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
    <td> Questo flusso di lavoro aggiorna gli indirizzi e-mail utilizzati per il rendering in entrata e funziona solo se la porta HTTPS è aperta per <strong>recapito.neolane.net</strong>.<br /> </td> 
   </tr> 
  </tbody> 
