@@ -1,7 +1,7 @@
 ---
-title: Definizione della sequenza di pagine dei moduli Web
-seo-title: Definizione della sequenza di pagine dei moduli Web
-description: Definizione della sequenza di pagine dei moduli Web
+title: Definizione della sequenza di pagine dei moduli web
+seo-title: Definizione della sequenza di pagine dei moduli web
+description: Definizione della sequenza di pagine dei moduli web
 seo-description: null
 page-status-flag: never-activated
 uuid: 297fad62-d806-4bd8-9b8c-313c20344ab0
@@ -11,22 +11,22 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 85bf3244-6896-43e7-96b8-84c45c282fec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 2%
 
 ---
 
 
-# Definizione della sequenza di pagine dei moduli Web{#defining-web-forms-page-sequencing}
+# Definizione della sequenza di pagine dei moduli web{#defining-web-forms-page-sequencing}
 
 Il modulo può contenere una o più pagine. È costruito tramite un diagramma che consente di sequenziare pagine e test, esecuzione di script e fasi di registrazione di salto di pagina. La modalità di costruzione del diagramma è la stessa di un flusso di lavoro.
 
 ## La pagina precedente e la pagina successiva {#about-previous-page-and-next-page}
 
-Per ogni pagina è possibile eliminare i **[!UICONTROL Next]** pulsanti o **[!UICONTROL Previous]** . A questo scopo, selezionate la pagina in questione e selezionate l’opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disallow returning to the previous page]** .
+Per ogni pagina, è possibile eliminare i **[!UICONTROL Next]** pulsanti o **[!UICONTROL Previous]** . A questo scopo, selezionate la pagina in questione e selezionate l’opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disallow returning to the previous page]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
@@ -80,7 +80,7 @@ Nell&#39;esempio seguente, si desidera configurare un modulo Web che, una volta 
 
 ## Inserimento di un collegamento a un’altra pagina del modulo {#inserting-a-link-to-another-page-of-the-form}
 
-È possibile inserire collegamenti ad altre pagine del modulo. A questo scopo, aggiungere alla pagina un elemento statico **[!UICONTROL Link]** tipo. Per ulteriori informazioni, vedere [Inserimento di un collegamento](../../web/using/static-elements-in-a-web-form.md#inserting-a-link).
+È possibile inserire collegamenti ad altre pagine del modulo. A questo scopo, aggiungete alla pagina un elemento statico **[!UICONTROL Link]** tipo. Per ulteriori informazioni, consulta [Inserimento di un collegamento](../../web/using/static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Visualizzazione della pagina condizionale {#conditional-page-display}
 
@@ -118,7 +118,7 @@ Quindi, definite la sequenza delle pagine quando una delle condizioni è vera, a
 
 ## Aggiunta di script {#adding-scripts}
 
-L&#39; **[!UICONTROL Script]** oggetto consente di inserire direttamente uno script JavaScript, ad esempio per modificare il valore di un campo, recuperare dati dal database o chiamare un&#39;API di Adobe Campaign.
+L&#39; **[!UICONTROL Script]** oggetto consente di immettere direttamente uno script JavaScript, ad esempio per modificare il valore di un campo, recuperare dati dal database o chiamare un&#39;API Adobe Campaign .
 
 ## Personalizzazione della pagina finale {#personalizing-the-end-page}
 
