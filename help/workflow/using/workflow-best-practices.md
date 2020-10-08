@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# Procedure consigliate per i flussi di lavoro{#workflow-best-practices}
+# Best practice per i flussi di lavoro{#workflow-best-practices}
 
 ## Esecuzione e prestazioni {#execution-and-performance}
 
@@ -31,7 +28,7 @@ Di seguito sono elencate le linee guida generali sull&#39;ottimizzazione delle p
 
 In [questa sezione](../../production/using/workflow-execution.md)sono disponibili anche le linee guida per la risoluzione dei problemi relativi all&#39;esecuzione dei flussi di lavoro.
 
-### Registri {#logs}
+### Logs {#logs}
 
 Il metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debug di un flusso di lavoro. È utile, ma deve essere utilizzato con attenzione, soprattutto per le attività che vengono eseguite frequentemente: può sovraccaricare i registri e aumentare notevolmente la dimensione della tabella di registro. Ma potreste avere anche bisogno di più di **[!UICONTROL logInfo()]**.
 
@@ -62,7 +59,7 @@ Per informazioni su come eliminare i registri, consulta questa [documentazione](
 * Per ridurre i tempi di esecuzione complessivi, sostituisci le attività che richiedono tempo con attività semplificate e più veloci.
 * Evitate di eseguire più di 20 flussi di lavoro contemporaneamente. Se vengono eseguiti contemporaneamente troppi flussi di lavoro, il sistema può esaurire le risorse e diventare instabile. Per ulteriori informazioni sul motivo per cui il flusso di lavoro potrebbe non essere avviato, consultate questo [articolo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
-### Esecuzione del flusso di lavoro {#workflow-execution}
+### Esecuzione di un flusso di lavoro {#workflow-execution}
 
 Si consiglia di non pianificare un flusso di lavoro per eseguire più di 15 minuti, in quanto potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
 
@@ -84,17 +81,17 @@ Nella **[!UICONTROL Workflow properties]** finestra, non selezionare mai l&#39; 
 
 ![](assets/wf-execute-in-engine.png)
 
-## Proprietà flusso di lavoro {#workflow-properties}
+## Proprietà del flusso di lavoro {#workflow-properties}
 
 ### Cartelle del flusso di lavoro {#workflow-folders}
 
-Adobe consiglia di creare i flussi di lavoro in una cartella dedicata.
+ Adobe consiglia di creare i flussi di lavoro in una cartella dedicata.
 
 Se il flusso di lavoro influisce sull’intera piattaforma (ad esempio, processi di pulizia), potete prendere in considerazione l’aggiunta di una sottocartella nella **[!UICONTROL Technical Workflows]** cartella incorporata.
 
 ### Denominazione del flusso di lavoro {#workflow-naming}
 
-Poiché semplifica la ricerca e la risoluzione dei problemi se non vengono eseguite nei modi previsti, Adobe consiglia di assegnare ai flussi di lavoro nomi ed etichette corretti: compilare il campo di descrizione del flusso di lavoro per riepilogare il processo da eseguire in modo che l&#39;operatore possa capirlo facilmente.
+Poiché ciò ne semplifica la ricerca e la risoluzione dei problemi se non stanno ottenendo le prestazioni previste, Adobe consiglia di assegnare ai flussi di lavoro nomi ed etichette corretti: compila il campo di descrizione del flusso di lavoro per riepilogare il processo da eseguire in modo tale che l’operatore possa comprenderlo facilmente.
 
 Se il flusso di lavoro fa parte di un processo che coinvolge più flussi di lavoro, puoi essere esplicito quando immetti un&#39;etichetta; l&#39;utilizzo di numeri è un ottimo modo per ordinare i flussi di lavoro (per Etichetta).
 
@@ -126,11 +123,11 @@ Tutti i flussi di lavoro pianificati in esecuzione in ambienti di produzione dev
 
 Nelle proprietà del flusso di lavoro, selezionare un gruppo di supervisori, il gruppo predefinito **[!UICONTROL Workflow supervisors]** o personalizzato. Accertatevi che almeno un operatore appartenga a questo gruppo, con un&#39;impostazione e-mail.
 
-Prima di iniziare a creare un flusso di lavoro, occorre definire le autorità di supervisione del flusso di lavoro. In caso di errori, riceveranno una notifica tramite e-mail. Per ulteriori informazioni, vedere [Gestione degli errori](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Prima di iniziare a creare un flusso di lavoro, occorre definire le autorità di supervisione del flusso di lavoro. In caso di errori, riceveranno una notifica tramite e-mail. For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Controllare regolarmente l&#39; **[!UICONTROL Monitoring]** universo per visualizzare lo stato complessivo dei flussi di lavoro attivi. Per ulteriori informazioni, fare riferimento a Controllo [](../../workflow/using/monitoring-workflow-execution.md#instance-supervision)istanza.
+Controllare regolarmente l&#39; **[!UICONTROL Monitoring]** universo per visualizzare lo stato complessivo dei flussi di lavoro attivi. For more on this, refer to [Instance supervision](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
-Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, consulta Monitoraggio dei [flussi di lavoro](../../workflow/using/heatmap.md).
+Workflow HeatMap consente agli amministratori  piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. For more on this, refer to [Workflow monitoring](../../workflow/using/heatmap.md).
 
 ## Utilizzo delle attività {#using-activities}
 
@@ -140,18 +137,18 @@ Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign d
 
 ### Nome dell&#39;attività {#name-of-the-activity}
 
-Durante lo sviluppo del flusso di lavoro, tutte le attività avranno un nome, così come tutti gli oggetti di Adobe Campaign. Mentre il nome viene generato dallo strumento, è consigliabile rinominarlo con un nome esplicito durante la configurazione. Il rischio di farlo in seguito è che interrompa il flusso di lavoro con le attività utilizzando il nome di un&#39;altra attività precedente. Sarebbe quindi difficile aggiornare i nomi successivamente.
+Durante lo sviluppo del flusso di lavoro, tutte le attività avranno un nome, così come tutti  oggetti Adobe Campaign. Mentre il nome viene generato dallo strumento, è consigliabile rinominarlo con un nome esplicito durante la configurazione. Il rischio di farlo in seguito è che interrompa il flusso di lavoro con le attività utilizzando il nome di un&#39;altra attività precedente. Sarebbe quindi difficile aggiornare i nomi successivamente.
 
 Il nome dell&#39;attività si trova nella **[!UICONTROL Advanced]** scheda. Non lasciare loro nomi **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, ma dare loro nomi espliciti come **[!UICONTROL querySubscribedRecipients]**. Questo nome verrà visualizzato nel giornale di registrazione, e se applicabile nei registri SQL, e questo aiuterà a eseguire il debug del flusso di lavoro durante la configurazione.
 
 ### Prima e ultima attività {#first-and-last-activities}
 
 * Avviate sempre il flusso di lavoro con un&#39; **[!UICONTROL Start]** attività o **[!UICONTROL Scheduler]** un&#39;attività. Se pertinente, potete anche utilizzare un&#39; **[!UICONTROL External signal]** attività.
-* Durante la creazione del flusso di lavoro, utilizzate una sola **[!UICONTROL Scheduler]** attività per ramo. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, con conseguente notevole sovraccarico del database. Questa regola si applica anche a tutte le attività con una **[!UICONTROL Scheduling & History]** scheda. Ulteriori informazioni sulla [pianificazione](../../workflow/using/scheduler.md).
+* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con una **[!UICONTROL Scheduling & History]** scheda. Ulteriori informazioni sulla [pianificazione](../../workflow/using/scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Utilizzate **[!UICONTROL End]** le attività per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](../../workflow/using/start-and-end.md).
+* Utilizzate **[!UICONTROL End]** le attività per ogni flusso di lavoro. Questo consente  Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](../../workflow/using/start-and-end.md).
 
 ### Javascript all&#39;interno di un&#39;attività {#javascript-within-an-activity}
 
@@ -159,7 +156,7 @@ Potrebbe essere necessario aggiungere JavaScript durante l&#39;inizializzazione 
 
 Per semplificare la ricerca del flusso di lavoro, si consiglia di utilizzare due trattini all&#39;inizio e alla fine dell&#39;etichetta dell&#39;attività, come segue: — La mia etichetta —
 
-### Segnale {#signal}
+### Signal {#signal}
 
 Nella maggior parte dei casi, non si sa da dove viene chiamato il segnale. Per evitare questo problema, utilizzare il **[!UICONTROL Comment]** campo all&#39;interno della **[!UICONTROL Advanced]** scheda dell&#39;attività del segnale per documentare l&#39;origine prevista di un segnale per questa attività.
 
