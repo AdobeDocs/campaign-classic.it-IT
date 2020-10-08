@@ -1,6 +1,6 @@
 ---
-title: Modelli per messaggi
-seo-title: Modelli per messaggi
+title: Modelli di messaggi
+seo-title: Modelli di messaggi
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: c5304193-7545-4071-8958-731ecbcb7b43
 contentOwner: sauviat
 discoiquuid: 68f347d1-0c39-4992-949b-e8c7d79b7b21
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
 
-# Modelli per messaggi{#message-templates}
+# Modelli di messaggi{#message-templates}
 
