@@ -1,7 +1,7 @@
 ---
-title: Configurazione di più librerie
-seo-title: Configurazione di più librerie
-description: Configurazione di più librerie
+title: Configurazione di più brand
+seo-title: Configurazione di più brand
+description: Configurazione di più brand
 seo-description: null
 page-status-flag: never-activated
 uuid: 61b4235c-da03-4da8-b14b-7ffb12c8d4c8
@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 907d82c8-9262-4952-b8df-21144dd55824
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5eac80743d4cc82cdf55aa9287e8bb4fcc84356
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 3%
 
 ---
 
 
-# Configurazione di più librerie{#configuring-multibranding}
+# Configurazione di più brand{#configuring-multibranding}
 
-Questa sezione descrive una soluzione per configurare gli URL di tracciamento e mirroring delle pagine per marchio, per i messaggi transazionali in Adobe Campaign.
+Questa sezione descrive una soluzione per configurare gli URL di tracciamento e mirroring delle pagine per marchio, per i messaggi transazionali in  Adobe Campaign.
 
 ## Prerequisiti {#prerequisites}
 
@@ -32,7 +32,7 @@ Questa sezione descrive una soluzione per configurare gli URL di tracciamento e 
 
 ## Processo tipico {#typical-process}
 
-Per configurare l&#39;attività di multibranding, è necessario configurare sia le istanze di esecuzione che le istanze di controllo. Nelle istanze di esecuzione, attenetevi alla procedura seguente:
+Per configurare l&#39;attività di multibranding, è necessario configurare sia le istanze di esecuzione che l&#39;istanza di controllo. Nelle istanze di esecuzione, attenetevi alla procedura seguente:
 
 1. Crea un account esterno per marchio.
 
