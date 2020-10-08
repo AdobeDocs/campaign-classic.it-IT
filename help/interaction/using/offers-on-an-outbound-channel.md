@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 3bd113c3-da67-4f4f-aa40-f4c7860a8569
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Fate clic **[!UICONTROL Preview]** per visualizzare l&#39;anteprima delle offerte nella distribuzione, quindi selezionate un destinatario per visualizzare l&#39;anteprima delle offerte così come verranno ricevute.
+1. Fate clic **[!UICONTROL Preview]** per visualizzare l&#39;anteprima delle offerte nella distribuzione, quindi selezionate un destinatario per visualizzare l&#39;anteprima delle offerte man mano che le riceveranno.
 
    ![](assets/offer_delivery_example_009.png)
 
@@ -93,7 +93,7 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_simulation_example_006.png)
 
-1. Immettere le date di validità. È necessario immettere almeno una data iniziale. Questo consente al filtro del motore delle offerte di scegliere le offerte valide in una data specificata.
+1. Immettere le date di validità. È necessario immettere almeno una data di inizio. Questo consente al filtro del motore delle offerte di scegliere le offerte valide in una data specificata.
 1. Se necessario, specificate uno o più temi per limitare il numero di offerte a quelli che contengono questa parola chiave nelle relative impostazioni.
 
    Nel nostro esempio, la categoria **Viaggi** contiene due sottocategorie con due temi separati. Vogliamo eseguire una simulazione per le offerte con il tema **Customers>1 anno** .
