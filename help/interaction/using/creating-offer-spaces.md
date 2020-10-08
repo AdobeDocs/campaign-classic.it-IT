@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '984'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Il rendering HTML o XML viene creato tramite una funzione di rendering. La seque
 
 Per creare un nuovo spazio per le offerte, effettuate le seguenti operazioni:
 
-1. Passate all’elenco degli spazi delle offerte e fate clic su **[!UICONTROL New]**.
+1. Passate all’elenco degli spazi per le offerte e fate clic su **[!UICONTROL New]**.
 
    ![](assets/offer_space_create_001.png)
 
@@ -42,16 +42,16 @@ Per creare un nuovo spazio per le offerte, effettuate le seguenti operazioni:
 
    ![](assets/offer_space_create_002.png)
 
-1. Selezionate la **[!UICONTROL Enable unitary mode]** casella se uno dei seguenti casi è applicabile:
+1. Selezionate la **[!UICONTROL Enable unitary mode]** casella se uno dei seguenti casi si applica all’utente:
 
    * Stai utilizzando Interazione con Centro messaggi
-   * Si utilizza la modalità unitaria di Interaction (interazioni in ingresso)
+   * Si sta utilizzando la modalità unitaria di Interaction (interazioni in ingresso)
 
 1. Vai alla **[!UICONTROL Content field]** finestra e fai clic su **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Vai al **[!UICONTROL Content]** nodo e seleziona i campi nel seguente ordine: **[!UICONTROL Title]**, poi **[!UICONTROL Image URL]**, poi **[!UICONTROL HTML content]**, poi **[!UICONTROL Destination URL]**.
+1. Vai al **[!UICONTROL Content]** nodo e seleziona i campi nel seguente ordine: **[!UICONTROL Title]** Poi **[!UICONTROL Image URL]**, poi **[!UICONTROL HTML content]**, poi **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
@@ -59,7 +59,7 @@ Per creare un nuovo spazio per le offerte, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Questa configurazione viene utilizzata nell&#39;anteprima e rende gli spazi offerta non validi durante la pubblicazione se uno degli elementi obbligatori non è presente nell&#39;offerta in questione. Tuttavia, se un&#39;offerta è già attiva in uno spazio di offerta, questi criteri non vengono presi in considerazione.
+   >Questa configurazione viene utilizzata nell&#39;anteprima e rende gli spazi di offerta non validi durante la pubblicazione se uno degli elementi obbligatori non è presente nell&#39;offerta in questione. Tuttavia, se un&#39;offerta è già attiva in uno spazio di offerta, questi criteri non vengono presi in considerazione.
 
    ![](assets/offer_space_create_005.png)
 
@@ -95,7 +95,7 @@ L&#39;interazione viene fornita con i seguenti valori che possono essere utilizz
 * **[!UICONTROL Presented]**.
 * **[!UICONTROL Rejected]**.
 
-Questi valori non vengono applicati per impostazione predefinita: devono essere configurati.
+Questi valori non vengono applicati per impostazione predefinita: devono essere configurate.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Quando una proposta di offerta viene creata dal motore di interazione, il suo st
 
 Per ogni spazio, potete configurare lo stato da applicare al momento della creazione di una proposta, a seconda delle informazioni che desiderate visualizzare nei rapporti sulle offerte.
 
-A questo scopo, attenersi alla procedura seguente:
+A tal fine, attenersi alla procedura seguente:
 
 1. Passare alla **[!UICONTROL Storage]** scheda dello spazio desiderato.
 1. Selezionare lo stato che si desidera applicare alla proposta al momento della creazione.
@@ -118,7 +118,7 @@ A questo scopo, attenersi alla procedura seguente:
 
 Una volta accettata la proposta di offerta, potete utilizzare uno dei valori forniti per impostazione predefinita per configurare il nuovo stato della proposta. L&#39;aggiornamento è efficace quando un destinatario fa clic su un collegamento nell&#39;offerta, che richiama il motore di interazione.
 
-A questo scopo, attenersi alla procedura seguente:
+A tal fine, attenersi alla procedura seguente:
 
 1. Passare alla **[!UICONTROL Storage]** scheda dello spazio desiderato.
 1. Selezionare lo stato che si desidera applicare alla proposta quando viene accettata.
@@ -145,7 +145,7 @@ Non appena un visitatore fa clic sull&#39;offerta, e quindi l&#39;URL, lo **[!UI
 >
 >Se desiderate specificare un altro stato nell’url (ad esempio, se una proposta di offerta viene rifiutata), utilizzate il valore corrispondente allo stato desiderato. Esempio: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; e così via.
 >
->Gli stati e i relativi valori possono essere recuperati nello schema **[!UICONTROL Offer propositions (nms)]** dati. For more on this, refer to [this page](../../configuration/using/data-schemas.md).
+>Gli stati e i relativi valori possono essere recuperati nello schema **[!UICONTROL Offer propositions (nms)]** dati. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/data-schemas.md).
 
 **Interazione in uscita**
 
@@ -157,7 +157,7 @@ In caso di interazione in uscita, potete applicare automaticamente lo **[!UICONT
 
 ## Anteprima offerta per spazio {#offer-preview-per-space}
 
-In questa scheda, puoi visualizzare le offerte per le quali il destinatario è idoneo tramite un metodo scelto. Nell&#39;esempio seguente, il destinatario può ricevere tre proposte di offerta per posta.
+In questa scheda, puoi visualizzare le offerte per le quali il destinatario è idoneo tramite un metodo scelto. Nell&#39;esempio seguente, il destinatario può ricevere tre proposte di offerta per posta elettronica.
 
 ![](assets/offer_space_overview_002.png)
 
