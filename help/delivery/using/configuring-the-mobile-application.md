@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell’applicazione mobile in Adobe Campaign
-seo-title: Configurazione dell’applicazione mobile in Adobe Campaign
-description: Configurazione dell’applicazione mobile in Adobe Campaign
+title: Configurazione dell’app mobile in Adobe Campaign
+seo-title: Configurazione dell’app mobile in Adobe Campaign
+description: Configurazione dell’app mobile in Adobe Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: aff1a4a0-34e7-4ce0-9eb3-30a8de1380f2
@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
 
-# Configurazione dell’applicazione mobile in Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
+# Configurazione dell’app mobile in Adobe Campaign {#configuring-the-mobile-application-in-adobe-campaign}
 
-Di seguito è riportato un esempio di configurazione basato su una società che vende pacchetti per le vacanze online. La sua applicazione mobile (Neotrips) è disponibile ai suoi clienti in due versioni: Neotrips per Android e Neotrips per iOS. Per configurare l&#39;applicazione mobile in Adobe Campaign, devi:
+Di seguito è riportato un esempio di configurazione basato su una società che vende pacchetti per le vacanze online. La sua applicazione mobile (Neotrips) è disponibile ai suoi clienti in due versioni: Neotrips per Android e Neotrips per iOS. Per configurare l’applicazione mobile in  Adobe Campaign, è necessario:
 
 * Crea un servizio di informazioni sui **[!UICONTROL Mobile application]** tipi per l’applicazione mobile Neotrips.
 * Aggiungete al servizio le versioni iOS e Android dell&#39;applicazione.
-* Create una consegna per iOS e Android.
+* Create una consegna sia per iOS che per Android.
 
 ![](assets/nmac_service_diagram.png)
 
@@ -38,17 +38,17 @@ Di seguito è riportato un esempio di configurazione basato su una società che 
 
 >[!CAUTION]
 >
->L&#39;applicazione deve essere stata configurata per le azioni push PRIMA di qualsiasi integrazione con Adobe Campaign SDK.
+>L&#39;applicazione deve essere stata configurata per le azioni push PRIMA di qualsiasi integrazione  Adobe Campaign SDK.
 >
 >In caso contrario, fare riferimento a [questa pagina](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
-### Passaggio 1:Installazione del pacchetto {#installing-package-ios}
+### Passaggio 1: Installazione del pacchetto {#installing-package-ios}
 
-1. Accedi alla procedura guidata di importazione dei pacchetti dalla **[!UICONTROL Tools > Advanced > Package import...]** console client di Adobe Campaign.
+1. Accedete alla procedura guidata di importazione dei pacchetti **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
 
    ![](assets/package_ios.png)
 
-1. Selezionare **[!UICONTROL Install a standard package]**.
+1. Seleziona **[!UICONTROL Install a standard package]**.
 
 1. Nell&#39;elenco visualizzato, selezionare **[!UICONTROL Mobile App Channel]**.
 
@@ -72,7 +72,7 @@ Per iOS, sono disponibili due connettori:
 Per scegliere quale connettore utilizzare, procedere come segue:
 
 1. Vai a **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selezionate l’account **[!UICONTROL iOS routing]** esterno.
+1. Select the **[!UICONTROL iOS routing]** external account.
 1. Nella **[!UICONTROL Connector]** scheda, compila il **[!UICONTROL Access URL of the connector]** campo:
 
    Per iOS HTTP2: http://localhost:8080/nms/jsp/iosHTTP2.jsp
@@ -83,7 +83,7 @@ Per scegliere quale connettore utilizzare, procedere come segue:
    >
    > È inoltre possibile configurarlo come segue https://localhost:8080/nms/jsp/ios.jsp, ma si consiglia di utilizzare la versione 2 del connettore.
 
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 
 Il connettore iOS è ora configurato. Potete iniziare a creare il servizio.
 
@@ -93,7 +93,7 @@ Il connettore iOS è ora configurato. Potete iniziare a creare il servizio.
 
    ![](assets/nmac_service_1.png)
 
-1. Definire un **[!UICONTROL Label]** e un **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Vai al **[!UICONTROL Type]** campo e seleziona **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -102,7 +102,7 @@ Il connettore iOS è ora configurato. Potete iniziare a creare il servizio.
 
    ![](assets/nmac_ios.png)
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante per selezionare il tipo di applicazione.
+1. Quindi fate clic sul **[!UICONTROL Add]** pulsante per selezionare il tipo di applicazione.
 
    ![](assets/nmac_service_2.png)
 
@@ -125,7 +125,7 @@ Nell&#39;esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare un
 
 1. Fare clic **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di sviluppo.
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni, consulta: [Integrazione di Campaign SDK nell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)mobile. Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l&#39;applicazione mobile alla piattaforma Adobe Campaign.
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in  Adobe Campaign e nel codice dell’applicazione tramite l’SDK. Per ulteriori informazioni, consulta: [Integrazione di Campaign SDK nell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)mobile. Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’applicazione mobile alla piattaforma Adobe Campaign .
 
    >[!NOTE]
    >
@@ -137,35 +137,35 @@ Nell&#39;esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare un
 
    >[!NOTE]
    >
-   >Apple richiede certificati diversi per le versioni Sviluppo e Produzione di una stessa applicazione mobile. Dovrai configurare le due applicazioni separate in Adobe Campaign.
+   >Apple richiede certificati diversi per le versioni Sviluppo e Produzione di una stessa applicazione mobile. Dovrete configurare le due applicazioni separate in  Adobe Campaign.
 
    ![](assets/nmac_ios_4.png)
 
-1. Fare clic **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di produzione e seguire gli stessi passaggi descritti sopra.
+1. Fare clic **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di produzione e seguire gli stessi passaggi descritti in precedenza.
 
    ![](assets/nmac_ios_5.png)
 
-1. Clic **[!UICONTROL Finish]**. L&#39;applicazione iOS è ora pronta per essere utilizzata in Campaign Classic.
+1. Fai clic su **[!UICONTROL Finish]**. L&#39;applicazione iOS è ora pronta per essere utilizzata in Campaign Classic.
 
 ### Passaggio 4: Creazione di una notifica iOS RTF {#creating-ios-delivery}
 
-Con iOS 10 o versione successiva, è possibile generare notifiche avanzate. Adobe Campaign può inviare notifiche utilizzando variabili che consentiranno al dispositivo di visualizzare una notifica avanzata.
+Con iOS 10 o versione successiva, è possibile generare notifiche avanzate.  Adobe Campaign può inviare notifiche utilizzando variabili che consentiranno al dispositivo di visualizzare una notifica RTF.
 
 È ora necessario creare una nuova consegna e collegarla all’applicazione mobile creata.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Clic **[!UICONTROL New]**.
+1. Fai clic su **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
-1. Seleziona **[!UICONTROL Deliver on iOS (ios)]** nell’ **[!UICONTROL Delivery template]** elenco a discesa. Aggiungi una **[!UICONTROL Label]** alla consegna.
+1. Seleziona **[!UICONTROL Deliver on iOS (ios)]** nell’ **[!UICONTROL Delivery template]** elenco a discesa. Aggiungi un **[!UICONTROL Label]** biglietto alla consegna.
 
-1. Fare clic **[!UICONTROL To]** per definire la popolazione di destinazione. Per impostazione predefinita, viene applicata la mappatura **[!UICONTROL Subscriber application]** di destinazione. Fate clic **[!UICONTROL Add]** per selezionare il servizio creato in precedenza.
+1. Fare clic **[!UICONTROL To]** per definire la popolazione di destinazione. Per impostazione predefinita, viene applicata la mappatura della **[!UICONTROL Subscriber application]** destinazione. Fate clic **[!UICONTROL Add]** per selezionare il servizio creato in precedenza.
 
    ![](assets/nmac_ios_9.png)
 
-1. Nella **[!UICONTROL Target type]** finestra selezionare **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** e fare clic su **[!UICONTROL Next]**.
+1. Nella **[!UICONTROL Target type]** finestra, selezionare **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** e fare clic su **[!UICONTROL Next]**.
 
 1. Nell&#39; **[!UICONTROL Service]** elenco a discesa, selezionate il servizio creato in precedenza e quindi l&#39;applicazione di destinazione e fate clic su **[!UICONTROL Finish]**.
 Le **[!UICONTROL Application variables]** vengono aggiunte automaticamente in base a quanto è stato aggiunto durante i passaggi di configurazione.
@@ -186,13 +186,13 @@ L&#39;immagine e la pagina Web devono essere visualizzate nella notifica push qu
 
 ## Configurazione dell’applicazione mobile con Android {#configuring-the-mobile-application-android}
 
-### Passaggio 1:Installazione del pacchetto {#installing-package-android}
+### Passaggio 1: Installazione del pacchetto {#installing-package-android}
 
-1. Accedi alla procedura guidata di importazione dei pacchetti dalla **[!UICONTROL Tools > Advanced > Package import...]** console client di Adobe Campaign.
+1. Accedete alla procedura guidata di importazione dei pacchetti **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
 
    ![](assets/package_ios.png)
 
-1. Selezionare **[!UICONTROL Install a standard package]**.
+1. Seleziona **[!UICONTROL Install a standard package]**.
 
 1. Nell&#39;elenco visualizzato, selezionare **[!UICONTROL Mobile App Channel]**.
 
@@ -216,7 +216,7 @@ Per Android sono disponibili due connettori:
 Per scegliere quale connettore utilizzare, procedere come segue:
 
 1. Vai a **[!UICONTROL Administration > Platform > External accounts]**.
-1. Selezionate l’account **[!UICONTROL Android routing]** esterno.
+1. Select the **[!UICONTROL Android routing]** external account.
 1. Nella **[!UICONTROL Connector]** scheda, compila il **[!UICONTROL JavaScript used in the connector]** campo:
 
    Per Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
@@ -227,7 +227,7 @@ Per scegliere quale connettore utilizzare, procedere come segue:
 
    ![](assets/nmac_connectors3.png)
 
-1. Per Android V2, nel file di configurazione di Adobe Server (serverConf.xml) è disponibile un parametro aggiuntivo:
+1. Per Android V2, un parametro aggiuntivo è disponibile nel file di configurazione del server di Adobe  (serverConf.xml):
 
    * **maxGCMConnectPerChild**: Limite massimo di richieste HTTP parallele a FCM avviate da ciascun server figlio (per impostazione predefinita, 8).
 
@@ -237,7 +237,7 @@ Per scegliere quale connettore utilizzare, procedere come segue:
 
    ![](assets/nmac_service_1.png)
 
-1. Definire un **[!UICONTROL Label]** e un **[!UICONTROL Internal name]**.
+1. Define a **[!UICONTROL Label]** and an **[!UICONTROL Internal name]**.
 1. Vai al **[!UICONTROL Type]** campo e seleziona **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
@@ -246,17 +246,17 @@ Per scegliere quale connettore utilizzare, procedere come segue:
 
    ![](assets/nmac_ios.png)
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante per selezionare il tipo di applicazione.
+1. Quindi fate clic sul **[!UICONTROL Add]** pulsante per selezionare il tipo di applicazione.
 
    ![](assets/nmac_service_2.png)
 
-1. Selezionare **[!UICONTROL Create an Android application]**.
+1. Seleziona **[!UICONTROL Create an Android application]**.
 
    ![](assets/nmac_android.png)
 
 1. Immettete un **[!UICONTROL Label]**.
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni, consulta: [Integrazione di Campaign SDK nell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)mobile.
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in  Adobe Campaign e nel codice dell’applicazione tramite l’SDK. Per ulteriori informazioni, consulta: [Integrazione di Campaign SDK nell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)mobile.
 
    >[!NOTE]
    >
@@ -272,9 +272,9 @@ Per scegliere quale connettore utilizzare, procedere come segue:
 
    ![](assets/nmac_android_2.png)
 
-1. Fate clic **[!UICONTROL Finish]** quindi **[!UICONTROL Save]**. L&#39;applicazione Android è ora pronta per essere utilizzata in Campaign Classic.
+1. Fai clic su **[!UICONTROL Finish]**, quindi su **[!UICONTROL Save]**. L&#39;applicazione Android ora è pronta per essere utilizzata in Campaign Classic.
 
-Per impostazione predefinita, Adobe Campaign salva una chiave nel campo **[!UICONTROL User identifier]** (@userKey) della **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabella. Questa chiave consente di collegare un&#39;iscrizione a un destinatario. Per raccogliere dati aggiuntivi (ad esempio una chiave di riconciliazione complessa), è necessario applicare la seguente configurazione:
+Per impostazione predefinita,  Adobe Campaign salva una chiave nel campo **[!UICONTROL User identifier]** (@userKey) della **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabella. Questa chiave consente di collegare un&#39;iscrizione a un destinatario. Per raccogliere dati aggiuntivi (ad esempio una chiave di riconciliazione complessa), è necessario applicare la seguente configurazione:
 
 1. Create un&#39;estensione dello **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema e definite i nuovi campi.
 1. Definite la mappatura nella **[!UICONTROL Subscription parameters]** scheda.
@@ -288,19 +288,19 @@ Per impostazione predefinita, Adobe Campaign salva una chiave nel campo **[!UICO
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
-1. Clic **[!UICONTROL New]**.
+1. Fai clic su **[!UICONTROL New]**.
 
    ![](assets/nmac_android_3.png)
 
-1. Seleziona **[!UICONTROL Deliver on Android (android)]** nell’ **[!UICONTROL Delivery template]** elenco a discesa. Aggiungi una **[!UICONTROL Label]** alla consegna.
+1. Seleziona **[!UICONTROL Deliver on Android (android)]** nell’ **[!UICONTROL Delivery template]** elenco a discesa. Aggiungi un **[!UICONTROL Label]** biglietto alla consegna.
 
-1. Fare clic **[!UICONTROL To]** per definire la popolazione di destinazione. Per impostazione predefinita, viene applicata la mappatura **[!UICONTROL Subscriber application]** di destinazione. Fate clic **[!UICONTROL Add]** per selezionare il servizio creato in precedenza.
+1. Fare clic **[!UICONTROL To]** per definire la popolazione di destinazione. Per impostazione predefinita, viene applicata la mappatura della **[!UICONTROL Subscriber application]** destinazione. Fate clic **[!UICONTROL Add]** per selezionare il servizio creato in precedenza.
 
    ![](assets/nmac_android_7.png)
 
-1. Nella **[!UICONTROL Target type]** finestra, selezionate Iscritti a un’applicazione mobile Android e fate clic su **[!UICONTROL Next]**.
+1. Nella **[!UICONTROL Target type]** finestra, selezionate Sottoscrittori di un’applicazione mobile Android e fate clic su **[!UICONTROL Next]**.
 
-1. Nell&#39; **[!UICONTROL Service]** elenco a discesa, seleziona il servizio creato in precedenza e fai clic su **[!UICONTROL Finish]**.
+1. Nell&#39; **[!UICONTROL Service]** elenco a discesa, seleziona il servizio creato in precedenza, quindi l&#39;applicazione e fai clic su **[!UICONTROL Finish]**.
 Le **[!UICONTROL Application variables]** vengono aggiunte automaticamente in base a quanto è stato aggiunto durante i passaggi di configurazione.
 
    ![](assets/nmac_android_6.png)
