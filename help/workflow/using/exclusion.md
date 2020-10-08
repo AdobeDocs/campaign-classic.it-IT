@@ -1,7 +1,7 @@
 ---
-title: Esclusione
-seo-title: Esclusione
-description: Esclusione
+title: Exclusion
+seo-title: Exclusion
+description: Exclusion
 seo-description: null
 page-status-flag: never-activated
 uuid: e4f54a0b-2fec-4415-986b-83c8928ed174
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -23,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Esclusione{#exclusion}
+# Exclusion{#exclusion}
 
 Un&#39;attività di tipo **Esclusione** crea un target basato su un target principale da cui vengono estratti uno o più altri target.
 
@@ -35,7 +32,7 @@ Per configurare questa attività, immettete la relativa etichetta e selezionate 
 >
 >Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di esclusione, vedere [Esclusione di una popolazione (Esclusione)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
 
-Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera sfruttare la popolazione rimanente. Il complemento conterrà la popolazione entrante principale meno la popolazione in uscita. All&#39;attività verrà quindi aggiunta una transizione di output aggiuntiva, come segue:
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Il complemento conterrà la popolazione entrante principale meno la popolazione in uscita. All&#39;attività verrà quindi aggiunta una transizione di output aggiuntiva, come segue:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
