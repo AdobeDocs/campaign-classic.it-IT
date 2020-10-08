@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 031f8d5d-940c-4a4c-97e7-ad4ef61983c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Gli aggregati sono definiti a livello di cubo ai fini del reporting. Quando si configura un aggregato è disponibile una **[!UICONTROL Workflow]** scheda.
 
-Per ulteriori informazioni sui cubi e sull&#39;utilizzo degli aggregati in Adobe Campaign, consulta la [sezione](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)dedicata.
+Per ulteriori informazioni sui cubi e sull&#39;utilizzo degli aggregati in  Adobe Campaign, consultare la [sezione](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)dedicata.
 
 L&#39; **[!UICONTROL Update aggregate]** attività consente di selezionare la modalità di aggiornamento da applicare: pieno o parziale.
 
