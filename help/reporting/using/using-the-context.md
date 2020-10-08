@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ A questo scopo, fate clic sul **[!UICONTROL Filter data...]** collegamento nella
 
 Nell&#39;esempio seguente, il grafico mostrerà solo i profili dei destinatari residenti in Francia e che hanno effettuato un acquisto durante l&#39;anno.
 
-Per definire questo filtro, inserite una pagina nel grafico e modificatelo. Fare clic sul **[!UICONTROL Filter data]** collegamento e creare il filtro corrispondente ai dati da visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+Per definire questo filtro, posizionate una pagina nel grafico e modificatelo. Fare clic sul **[!UICONTROL Filter data]** collegamento e creare il filtro corrispondente ai dati da visualizzare. Per ulteriori informazioni sulla creazione di query in  Adobe Campaign, consultare [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -61,7 +61,7 @@ Effettuate le seguenti operazioni:
 1. Inserite una pagina nel grafico e modificatela.
 1. Creare una tabella pivot.
 1. Passare alla **[!UICONTROL Data]** scheda e selezionare il cubo da utilizzare.
-1. Fate clic sul **[!UICONTROL Filter data...]** collegamento e definite la seguente query per rimuovere Adobe dall&#39;elenco delle società.
+1. Fate clic sul **[!UICONTROL Filter data...]** collegamento e definite la seguente query per rimuovere  Adobe dall’elenco delle società.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
