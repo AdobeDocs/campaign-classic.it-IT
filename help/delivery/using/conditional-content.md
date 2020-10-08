@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -111,7 +108,7 @@ Nell’esempio seguente, verrà illustrato come creare un’e-mail in più lingu
    <% } %>
    ```
 
-1. Per testare il contenuto delle e-mail nella **[!UICONTROL Preview]** scheda, selezionate i destinatari con diverse lingue preferite.
+1. Verifica il contenuto delle e-mail nella **[!UICONTROL Preview]** scheda selezionando i destinatari con lingue diverse tra loro preferite.
 
    >[!NOTE]
    >
