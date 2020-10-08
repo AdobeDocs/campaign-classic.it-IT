@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: f66f1ff5-3601-4eb8-b05d-6f99164890ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 2%
 
 ---
 
@@ -32,13 +32,13 @@ La schermata delle proprietà di un&#39;attività dispone di una **[!UICONTROL A
 
    ![](assets/wf-advanced-full.png)
 
-I campi da inserire nella **[!UICONTROL Advanced]** scheda sono descritti nelle sezioni seguenti.
+I campi da inserire nella **[!UICONTROL Advanced]** scheda sono descritti in dettaglio nelle sezioni seguenti.
 
 ## Nome {#name}
 
 Questo campo contiene il nome interno dell&#39;attività.
 
-## Image {#image}
+## Immagine {#image}
 
 Questo campo consente di modificare l&#39;immagine collegata a un&#39;attività. Per ulteriori informazioni, consulta: [Gestione delle immagini](../../workflow/using/managing-activity-images.md)dell&#39;attività.
 
@@ -50,15 +50,15 @@ Queste opzioni sono generalmente selezionate nel carrello facendo clic con il pu
 
 * **[!UICONTROL Normal]**: l&#39;attività viene eseguita normalmente.
 * **[!UICONTROL Do not activate]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite.
-* **[!UICONTROL Activate but do not execute]**: questa attività e tutte le attività seguenti (nello stesso ramo) vengono automaticamente interrotte. Questo può essere utile se si desidera essere presenti all’avvio dell’attività. Per eseguire l&#39;attività manualmente, fare clic con il pulsante destro del mouse sull&#39;attività e selezionare **[!UICONTROL Normal execution]**.
+* **[!UICONTROL Activate but do not execute]**: questa attività e tutte le attività seguenti (nello stesso ramo) vengono automaticamente interrotte. Questa funzione può essere utile se si desidera essere presenti all’avvio dell’attività. Per eseguire l&#39;attività manualmente, fare clic con il pulsante destro del mouse sull&#39;attività e selezionare **[!UICONTROL Normal execution]**.
 
 ## Affinità {#affinity}
 
-Questo campo consente di forzare l&#39;esecuzione di un&#39;attività su un computer specifico. Per ulteriori informazioni, consulta: [Gestione della propensione](../../workflow/using/managing-propensity.md).
+Questo campo consente di forzare l&#39;esecuzione di un&#39;attività su un computer specifico. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
 
 ## Max periodo di esecuzione {#max--execution-period}
 
-Questo campo consente di impostare un avviso quando l&#39;attività richiede troppo tempo. Non influirà sul flusso di lavoro. Se l’attività non è finita al termine del **[!UICONTROL Max. execution period]** test, nella **[!UICONTROL Instance monitoring]** pagina verrà visualizzato un avviso per il flusso di lavoro. Questa pagina è accessibile dalla **[!UICONTROL Monitoring]** scheda della home page.
+Questo campo consente di impostare un avviso per il momento in cui l&#39;attività richiede troppo tempo. Non influirà sul flusso di lavoro. Se l’attività non è finita al termine del **[!UICONTROL Max. execution period]** test, nella **[!UICONTROL Instance monitoring]** pagina verrà visualizzato un avviso per il flusso di lavoro. Questa pagina è accessibile dalla **[!UICONTROL Monitoring]** scheda della home page.
 
 ## Comportamento {#behavior}
 
@@ -76,11 +76,11 @@ Questo campo consente di selezionare il fuso orario dell&#39;attività. Per ulte
 Questo campo consente di definire l&#39;azione da eseguire quando l&#39;attività presenta errori. Sono disponibili due opzioni:
 
 * **[!UICONTROL Stop the process]**: il flusso di lavoro viene arrestato automaticamente. Il suo stato cambia in **[!UICONTROL Failed]**. Una volta risolto il problema, riavviate il flusso di lavoro.
-* **[!UICONTROL Ignore]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite. Questo può essere utile per le attività ricorrenti. Se il ramo dispone di un pianificatore posizionato a monte, verrà avviato come di consueto alla data di esecuzione successiva.
+* **[!UICONTROL Ignore]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite. Questa funzione può essere utile per le attività ricorrenti. Se il ramo dispone di un pianificatore posizionato a monte, verrà avviato come di consueto alla data di esecuzione successiva.
 
 ## Script di inizializzazione {#initialization-script}
 
-Questo campo consente di inizializzare le variabili o di modificare le proprietà dell&#39;attività. Per ulteriori informazioni, consulta: Script [e modelli](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+Questo campo consente di inizializzare le variabili o di modificare le proprietà dell&#39;attività. Per ulteriori informazioni, consulta: [Script e modelli](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
 
 ## Commento {#comment}
 
