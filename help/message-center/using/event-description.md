@@ -1,7 +1,7 @@
 ---
-title: Descrizione evento
-seo-title: Descrizione evento
-description: Descrizione evento
+title: Descrizione di un evento
+seo-title: Descrizione di un evento
+description: Descrizione di un evento
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b174ffd-28b2-4147-b992-e17b0b2cf733
@@ -11,20 +11,20 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
 
-# Descrizione evento{#event-description}
+# Descrizione di un evento{#event-description}
 
 ## Informazioni sul modello dati di messaggistica transazionale {#about-transactional-messaging-datamodel}
 
-I messaggi transazionali si basano sul modello dati di Adobe Campaign e utilizzano due ulteriori tabelle separate. Queste [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contengono gli stessi campi e consentono di gestire gli eventi in tempo reale da un lato e gli eventi batch dall&#39;altro.
+I messaggi transazionali si basano sul modello dati Adobe Campaign  e utilizzano due tabelle separate aggiuntive. Queste [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contengono gli stessi campi e consentono di gestire gli eventi in tempo reale da un lato e gli eventi batch dall&#39;altro.
 
 ## Metodi SOAP {#soap-methods}
 
@@ -162,11 +162,11 @@ Esempio di dati:
 
 ## Informazioni restituite dalla chiamata SOAP {#information-returned-by-the-soap-call}
 
-Quando riceve un evento, Adobe Campaign genera un ID di ritorno univoco. Questo è l&#39;ID della versione archiviata dell&#39;evento.
+Quando riceve un evento,  Adobe Campaign genera un ID restituito univoco. Questo è l&#39;ID della versione archiviata dell&#39;evento.
 
 >[!CAUTION]
 >
->Quando ricevete chiamate SOAP, Adobe Campaign verifica il formato dell&#39;indirizzo e-mail. Se un indirizzo e-mail non è formattato correttamente, viene restituito un errore.
+>Quando ricevete chiamate SOAP,  Adobe Campaign verifica il formato dell&#39;indirizzo e-mail. Se un indirizzo e-mail non è formattato correttamente, viene restituito un errore.
 
 * Esempio di identificatore restituito dal metodo quando l&#39;elaborazione dell&#39;evento ha esito positivo:
 
@@ -180,7 +180,7 @@ Quando riceve un evento, Adobe Campaign genera un ID di ritorno univoco. Questo 
    </SOAP-ENV:Envelope>
    ```
 
-Se il valore dell&#39;identificatore restituito è strettamente maggiore di zero, significa che l&#39;evento è stato archiviato correttamente in Adobe Campaign.
+Se il valore dell&#39;identificatore restituito è rigorosamente maggiore di zero, significa che l&#39;evento è stato archiviato correttamente in  Adobe Campaign.
 
 Tuttavia, se l&#39;evento non viene elaborato, il metodo restituisce un messaggio di errore o un valore uguale a zero.
 
