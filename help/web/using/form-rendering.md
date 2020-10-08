@@ -1,7 +1,7 @@
 ---
-title: Rendering del modulo
-seo-title: Rendering del modulo
-description: Rendering del modulo
+title: Rendering di un modulo
+seo-title: Rendering di un modulo
+description: Rendering di un modulo
 seo-description: null
 page-status-flag: never-activated
 uuid: 714ce201-5535-4fde-b388-1605ac54edcb
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 2%
 
 ---
 
 
-# Rendering del modulo{#form-rendering}
+# Rendering di un modulo{#form-rendering}
 
 ## Selezione del modello di rendering del modulo {#selecting-the-form-rendering-template}
 
@@ -38,16 +38,16 @@ Potete modificare o ignorare questi modelli. A tal fine, fate clic sul **[!UICON
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
-È possibile:
+Puoi:
 
-* Modificare l’immagine utilizzata come logo e adattarne le dimensioni,
+* Modificate l’immagine usata come logo e adattatene le dimensioni,
 * Specificate inoltre il percorso per accedere all&#39;immagine di anteprima quando gli utenti selezionano questo modello di rendering.
 
 La **[!UICONTROL Headers/Footers]** scheda consente di modificare le informazioni visualizzate nelle intestazioni e nei piè di pagina di ciascuna pagina del modulo utilizzando questo modello.
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Ogni riga della sezione **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corrisponde a una riga nella pagina HTML. Fare clic **[!UICONTROL Add]** per creare una nuova riga.
+Ogni riga della sezione **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corrisponde a una riga nella pagina HTML. Click **[!UICONTROL Add]** to create a new line.
 
 Selezionate una linea esistente e fate clic sul **[!UICONTROL Detail]** pulsante per personalizzarla.
 
@@ -70,7 +70,7 @@ I **[!UICONTROL Position]** campi consentono di definire la posizione degli elem
 
 È possibile sovraccaricare il foglio di stile per ciascun elemento del modulo (campi di input, immagini, pulsanti di scelta, ecc.).
 
-A questo scopo, utilizzare la **[!UICONTROL Advanced]** scheda.
+To do this, use the **[!UICONTROL Advanced]** tab.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
@@ -83,7 +83,7 @@ Consente di definire le seguenti proprietà:
 * **[!UICONTROL Width]** della zona: può essere espresso come percentuale o in em, punti o pixel (valore predefinito),
 * Massimo **[!UICONTROL Length]**: Numero massimo di caratteri consentiti (per i controlli di tipo Testo, Numero e Password),
 * **[!UICONTROL Lines]**: numero di righe per una zona di **[!UICONTROL Multi-line text]** tipo,
-* **[!UICONTROL Style inline]**: consente di sovraccaricare il foglio di stile CSS con impostazioni aggiuntive. **Questi sono separati utilizzando**; come illustrato nell&#39;esempio seguente:
+* **[!UICONTROL Style inline]**: consente di sovraccaricare il foglio di stile CSS con impostazioni aggiuntive. Questi sono separati utilizzando **;** come illustrato nell&#39;esempio seguente:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -139,7 +139,7 @@ L&#39;utente deve immettere un numero intero nel campo modulo.
 
 ## Definizione della visualizzazione condizionale dei campi {#defining-fields-conditional-display}
 
-È possibile configurare la visualizzazione dei campi sulla pagina da visualizzare in base ai valori scelti dall&#39;utente. Questo può essere applicato a un campo o a un gruppo di campi (se raggruppati in un contenitore).
+È possibile configurare la visualizzazione dei campi sulla pagina da visualizzare in base ai valori scelti dall&#39;utente. Questo può essere applicato a un campo o a un gruppo di campi (quando sono raggruppati in un contenitore).
 
 Per ciascun elemento della pagina, la **[!UICONTROL Visibility]** sezione consente di definire le condizioni di visualizzazione.
 
@@ -153,7 +153,7 @@ Nella finestra di selezione del campo è possibile scegliere tra i dati seguenti
 
 * La struttura ad albero principale contiene i parametri del contesto del modulo. I parametri predefiniti sono l&#39;Identificatore (che corrisponde all&#39;identificatore crittografato del destinatario), la Lingua e l&#39;Origine.
 
-   Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 * La struttura **[!UICONTROL Recipients]** secondaria contiene i campi di input inseriti nel modulo e memorizzati nel database.
 
@@ -161,9 +161,9 @@ Nella finestra di selezione del campo è possibile scegliere tra i dati seguenti
 
 * La struttura **[!UICONTROL Variables]** secondaria contiene le variabili disponibili per il modulo. Per ulteriori informazioni, vedere [Memorizzazione dei dati in una variabile](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)locale.
 
-Per ulteriori informazioni, consulta il caso d’uso qui: Visualizzazione [di opzioni diverse a seconda dei valori](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)selezionati.
+Per ulteriori informazioni, consulta il caso d’uso qui: [Visualizzazione di opzioni diverse a seconda dei valori](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)selezionati.
 
-È inoltre possibile condizionare la visualizzazione delle pagine del modulo utilizzando l&#39; **[!UICONTROL Test]** oggetto. Per ulteriori informazioni, consultare questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+È inoltre possibile condizionare la visualizzazione delle pagine del modulo utilizzando l&#39; **[!UICONTROL Test]** oggetto. Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Importazione di elementi da un modulo esistente {#importing-elements-from-an-existing-form}
 
