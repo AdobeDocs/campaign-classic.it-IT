@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di allegati ai messaggi transazionali con Adobe Campaign Classic
-description: Scopri come inviare e-mail transazionali con allegati singoli e/o personalizzati tramite Adobe Campaign Classic
+description: Informazioni sull'invio di e-mail transazionali con allegati singoli e/o personalizzati tramite Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 4452d839-318a-49d8-8abb-4ba04c803e9f
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -49,12 +46,12 @@ In questo scenario, gli allegati non vengono pre-creati, ma aggiunti al volo all
 >
 >Per evitare problemi di prestazioni, se includete come allegati immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
 
-## Recommendations {#important-notes}
+## Raccomandazioni {#important-notes}
 
 Prima di implementare questo scenario, leggi attentamente le linee guida seguenti:
 
 * Le istanze di Messaggi transazionali non devono essere utilizzate per memorizzare, esportare o caricare file o dati. Possono essere utilizzati solo per i dati dell&#39;evento e le relative informazioni. Non devono essere considerati come un sistema di archiviazione file.
-* Poiché non esiste l&#39;accesso diretto alle istanze o ai server di Messaggistica transnazionale al di fuori di Adobe, non esiste un modo standard per inviare tali file in questi server (nessun accesso FTP).
+* Poiché non esiste un accesso diretto alle istanze o ai server di Messaggistica transnazionale al di fuori  Adobe, non esiste un modo standard per inviare tali file in push su tali server (nessun accesso FTP).
 * Non è invece corretto utilizzare lo spazio su disco nelle istanze dei messaggi transazionali per archiviare file di qualsiasi tipo, nemmeno per gli allegati.
 * Per ospitare questi file è necessario utilizzare un altro sistema di dischi online. Hai bisogno di un accesso FTP a questo sistema e devi essere in grado di scrivere ed eliminare file.
 
@@ -70,7 +67,7 @@ Il diagramma seguente mostra i diversi passaggi per implementare questo scenario
 
 Per aggiungere al volo un allegato e-mail a un messaggio transazionale, effettua le operazioni seguenti:
 
-1. Iniziate progettando l&#39;allegato. For more on this, see [this section](../../delivery/using/attaching-files.md#attach-a-personalized-file).
+1. Iniziate progettando l&#39;allegato. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/attaching-files.md#attach-a-personalized-file).
 
    Questo consente di allegare i file a un&#39;e-mail, anche se non sono ospitati nell&#39;istanza di esecuzione.
 
