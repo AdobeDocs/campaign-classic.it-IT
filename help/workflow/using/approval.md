@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -59,7 +56,7 @@ La modifica del titolo o del corpo del messaggio dell&#39;attività non influisc
 
 ![](assets/s_advuser_validation_from_console.png)
 
-## Proprietà {#properties}
+## Properties {#properties}
 
 Le variabili di personalizzazione possono essere utilizzate nel messaggio inviato ai revisori. Possono essere inseriti nel titolo o nel corpo del messaggio.
 
