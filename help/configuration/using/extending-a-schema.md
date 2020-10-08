@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 1c9af980-4e6b-44dc-af61-dd284863ec7d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 >
 >Alcuni schemi predefiniti non devono essere estesi: principalmente quelle per le quali sono definite le seguenti impostazioni:\
 >**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
->I seguenti schemi non devono essere estesi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, ncm:publishing, xtk:entityBackupOriginale **,** xtk:entityOriginalxtk:entity **, xtk:entityOriginalextk:entity************************************, xtk:entityNetOriginale, xtk:entityEventNetNetInfo, xtk, xtk:entityEventNetNetEventNetNetEventNetNetTM, xtk:fileMail:fileTM:fileNetNetMail:fileNetMailMail, xtk, xtk:fileMailNetNetNetMailNetMailNetNetNetNetNetNetInNetNetTM , nms:userAgentRules, xxk:builder, xtk:connectionxtk:connection, xtk:dbInit, xtk:funcList, xtk:fusion, xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext, xtk:session, xtk:sqlSchema, stringhe**************xtk:xtk:.
+>I seguenti schemi non devono essere estesi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, ******************************************ncm:publishing, nl:monitoraggio, nms:calendario, nms:remoteTracking,  nmsAgentRules:userxtk:builder, xtk:connection, xtk:dbInit, xtk:funcList, xtk:fusion, xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext, xtk:session, xtk:sqlSchema, stringhe**************xtk:xtk:.
 >Questo elenco non è esaustivo.
 
 Esistono due metodi per estendere uno schema esistente:
@@ -40,7 +40,7 @@ Esistono due metodi per estendere uno schema esistente:
 
    >[!IMPORTANT]
    >
-   >Non è consentito modificare gli schemi predefiniti dell&#39;applicazione, ma il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell&#39;applicazione. Ciò può causare malfunzionamenti nell&#39;utilizzo di Adobe Campaign.
+   >Non è consentito modificare gli schemi predefiniti dell&#39;applicazione, ma il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell&#39;applicazione. Ciò può causare malfunzionamenti nell&#39;uso di  Adobe Campaign.
 
    **Esempio**: estensione dello schema **nms:destinatario** .
 
@@ -68,6 +68,6 @@ Esistono due metodi per estendere uno schema esistente:
 
 >[!IMPORTANT]
 >
->Per tenere conto delle modifiche, è necessario rigenerare gli schemi. Per ulteriori informazioni, vedere la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) .\
->Se le modifiche influiscono sulla struttura del database, è necessario eseguire un aggiornamento. Per ulteriori informazioni, vedere [Aggiornamento della struttura](../../configuration/using/updating-the-database-structure.md) del database.
+>Per tenere conto delle modifiche, è necessario rigenerare gli schemi. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>Se le modifiche influiscono sulla struttura del database, è necessario eseguire un aggiornamento. Per ulteriori informazioni, consulta la sezione [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md).
 
