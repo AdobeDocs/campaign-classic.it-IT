@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '3255'
+ht-degree: 4%
 
 ---
 
@@ -31,24 +31,24 @@ L&#39;implementazione della gestione della pressione di vendita consente di evit
 Le campagne vengono selezionate in base a soglie definite e allo spessore del messaggio.
 
 * Una soglia è il numero massimo di consegne autorizzate per un dato destinatario in un dato periodo. Può essere impostata o variabile. Viene impostato o calcolato nelle impostazioni delle regole di tipologia. Fare riferimento al numero [massimo di messaggi](#maximum-number-of-messages).
-* I pesi di distribuzione consentono di identificare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con lo spessore maggiore hanno priorità. Fare riferimento a Spessore [](#message-weight)messaggio.
+* I pesi di distribuzione consentono di identificare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con lo spessore maggiore hanno la priorità. Fare riferimento a Spessore [](#message-weight)messaggio.
 
 L&#39;arbitrato consiste nel fare in modo che le campagne pianificate il cui peso sia maggiore della campagna in corso non portino a un&#39;eccessiva richiesta di profilo: in questo caso, il profilo viene escluso dalla consegna.
 
 I criteri di arbitraggio (spessore e/o soglia del messaggio) possono variare in base a due tipi di informazioni:
 
-* preferenza del destinatario, ovvero informazioni dichiarative: abbonamenti a newsletter, stato del destinatario (cliente o potenziale),
+* preferenza del destinatario, che è informazione dichiarativa: abbonamenti a newsletter, stato del destinatario (cliente o potenziale),
 * comportamento del destinatario: acquisti, collegamenti visitati, ecc.
 
 La regola di arbitrato per la definizione dei messaggi idonei viene applicata durante la fase di analisi. Per ciascun destinatario e per il periodo in questione, il messaggio verrà inviato se la formula seguente è vera: **(numero di messaggi inviati) + (numero di messaggi con maggior peso) &lt; soglia**.
 
 In caso contrario, il destinatario sarà **[!UICONTROL Excluded by arbitration]**. Per ulteriori informazioni, consulta [Esclusione dopo l&#39;arbitrato](#exclusion-after-arbitration).
 
-## Creazione di una regola di pressione {#creating-a-pressure-rule}
+## Creating a pressure rule {#creating-a-pressure-rule}
 
-Per impostare l&#39;arbitrato tra le campagne che utilizzano Adobe Campaign, iniziare creando tipologie di campagne e definendo regole di tipologia collegate (regole di **pressione** ).
+Per impostare l&#39;arbitrato tra le campagne che utilizzano  Adobe Campaign, iniziare creando tipologie di campagne e definendo regole di tipologia collegate (regole di **pressione** ).
 
-Per creare e configurare una regola **[!UICONTROL Pressure]** di tipo, attenetevi alla seguente procedura:
+Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, attieniti alla seguente procedura:
 
 1. Nell&#39;elenco delle regole di tipologia della campagna, fai clic sull&#39; **[!UICONTROL New]** icona sopra l&#39;elenco.
 
@@ -58,7 +58,7 @@ Per creare e configurare una regola **[!UICONTROL Pressure]** di tipo, attenetev
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Se necessario, modificate l&#39;ordine di esecuzione. Quando più regole di tipologia vengono applicate come **[!UICONTROL Typology]** set, le regole di ordine inferiore vengono applicate per prime. Per ulteriori informazioni, fare riferimento a Ordine [di](../../campaign/using/applying-rules.md#execution-order)esecuzione.
+1. Se necessario, modificate l&#39;ordine di esecuzione. Quando più regole di tipologia vengono applicate come **[!UICONTROL Typology]** set, le regole di ordine inferiore vengono applicate per prime. For more on this, refer to [Execution order](../../campaign/using/applying-rules.md#execution-order).
 1. Nella **[!UICONTROL Calculation parameters]** sezione, definite una frequenza se desiderate salvare il targeting oltre la successiva esecuzione di ri-arbitraggio giornaliera. Per ulteriori informazioni, vedere [Regolazione della frequenza](../../campaign/using/applying-rules.md#adjusting-calculation-frequency)di calcolo.
 1. Fare clic sulla **[!UICONTROL Pressure]** scheda e scegliere il periodo di calendario durante il quale si applica la regola di tipologia.
 
@@ -68,13 +68,13 @@ Per creare e configurare una regola **[!UICONTROL Pressure]** di tipo, attenetev
 
    >[!NOTE]
    >
-   >Le consegne programmate vengono prese in considerazione solo se l&#39; **[!UICONTROL Take the deliveries into account in the provisional calendar]** opzione è selezionata. Per ulteriori informazioni, vedere [Impostazione del periodo](#setting-the-period).
+   >Le consegne programmate vengono prese in considerazione solo se l&#39; **[!UICONTROL Take the deliveries into account in the provisional calendar]** opzione è selezionata. For more on this, refer to [Setting the period](#setting-the-period).
 
 1. Definire il metodo per il calcolo del numero massimo di messaggi.
 
-   La soglia rappresenta il numero massimo di messaggi che possono essere inviati a un destinatario durante il periodo in questione.
+   La soglia rappresenta il numero più alto di messaggi che possono essere inviati a un destinatario durante il periodo in questione.
 
-   Per impostazione predefinita, la soglia è costante ed è necessario indicare un numero massimo di messaggi autorizzati dalla regola.
+   Per impostazione predefinita, la soglia è costante e devi indicare un numero massimo di messaggi autorizzati dalla regola.
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
@@ -84,9 +84,9 @@ Per creare e configurare una regola **[!UICONTROL Pressure]** di tipo, attenetev
 
    Per ulteriori informazioni, vedere [Numero massimo di messaggi](#maximum-number-of-messages).
 
-1. Specificare il metodo di calcolo del peso della consegna.
+1. Specificare il metodo per il calcolo del peso della consegna.
 
-   Ogni consegna ha un peso, ovvero un valore che rappresenta il suo livello di priorità: questo consente l&#39;arbitrato tra le campagne. I pesi vengono calcolati utilizzando la formula definita nella regola di tipologia e/o nelle relative proprietà. Per ulteriori informazioni, consulta [Spessore](#message-weight)messaggio.
+   Ogni consegna ha un peso, ovvero un valore che rappresenta il suo livello di priorità: questo consente l&#39;arbitrato tra le campagne. I pesi vengono calcolati utilizzando la formula definita nella regola di tipologia e/o nelle relative proprietà. For more on this, refer to [Message weight](#message-weight).
 
 1. Per impostazione predefinita, tutti i messaggi vengono presi in considerazione per il calcolo della soglia. La **[!UICONTROL Restriction]** scheda consente di filtrare i messaggi interessati dalla regola di tipologia:
 
@@ -96,13 +96,13 @@ Per creare e configurare una regola **[!UICONTROL Pressure]** di tipo, attenetev
       Nell’esempio seguente, vengono presi in considerazione solo i destinatari salvati nella cartella **NewContatti** , mentre per le consegne che iniziano con **Newsletter** .
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. La **[!UICONTROL Typologies]** scheda consente di visualizzare i tipi di campagna che applicano questa regola o di collegare la regola a uno o più tipi esistenti. Per ulteriori informazioni, vedere [Applicazione delle tipologie](../../campaign/using/about-campaign-typologies.md#applying-typologies).
+1. La **[!UICONTROL Typologies]** scheda consente di visualizzare i tipi di campagna che applicano questa regola o di collegare la regola a uno o più tipi esistenti. For more on this, refer to [Applying typologies](../../campaign/using/about-campaign-typologies.md#applying-typologies).
 
 ## Definizione di soglie e pesi {#defining-thresholds-and-weights}
 
 ### Numero massimo di messaggi {#maximum-number-of-messages}
 
-Ogni regola di pressione definisce una soglia, ovvero il numero massimo di messaggi che possono essere inviati a un destinatario in un dato periodo di tempo. Una volta raggiunta tale soglia, non potranno più essere effettuate consegne fino alla fine del periodo in esame. Questa procedura consente di escludere automaticamente un destinatario da una consegna se un messaggio supera la soglia impostata, evitando in tal modo un eccesso di richieste.
+Ogni regola di pressione definisce una soglia, ovvero il numero massimo di messaggi che possono essere inviati a un destinatario in un dato periodo di tempo. Una volta raggiunta tale soglia, non potranno più essere effettuate ulteriori consegne fino alla fine del periodo considerato. Questa procedura consente di escludere automaticamente un destinatario da una consegna se un messaggio supera la soglia impostata, evitando in tal modo un eccesso di richieste.
 
 I valori di soglia possono essere costanti o calcolati da una formula con variabili. Ciò significa che per un determinato periodo, le soglie possono variare da un destinatario all&#39;altro, o persino per lo stesso destinatario.
 
@@ -144,7 +144,7 @@ Nell&#39;esempio seguente, vogliamo collegare il peso delle newsletter sulla mus
 
 1. Applica questa regola ai messaggi con il seguente argomento: newsletter, offerte speciali, ecc. Il peso di queste consegne, e quindi il loro livello di priorità, dipenderà dal punteggio di propensione di ciascun destinatario.
 
-## Impostazione del periodo {#setting-the-period}
+## Setting the period {#setting-the-period}
 
 Le regole di pressione sono definite nei periodi **giornalieri**.
 
@@ -203,15 +203,15 @@ Infine, se non è selezionato alcun raggruppamento, non verrà inviata solo la *
 
 >[!NOTE]
 >
->Quando si modifica la definizione di una regola di tipologia, è possibile creare una **simulazione** per controllarne l&#39;impatto sulle consegne a cui è applicata e monitorare l&#39;impatto che le consegne hanno l&#39;una sull&#39;altra. Per ulteriori informazioni, consulta simulazioni [di](../../campaign/using/campaign-simulations.md)campagne.
+>Quando si modifica la definizione di una regola di tipologia, è possibile creare una **simulazione** per controllarne l&#39;impatto sulle consegne a cui è applicata e monitorare l&#39;impatto che le consegne hanno l&#39;una sull&#39;altra. For more on this, refer to [Campaign simulations](../../campaign/using/campaign-simulations.md).
 
-## Esclusione dopo arbitrato {#exclusion-after-arbitration}
+## Esclusione dopo l&#39;arbitrato {#exclusion-after-arbitration}
 
 L&#39;arbitraggio viene riapplicato ogni notte tramite il flusso di lavoro **[!UICONTROL Forecasting]** tecnico e il **[!UICONTROL Campaign jobs]** flusso di lavoro.
 
 Il **[!UICONTROL Forecasting]** flusso di lavoro precalcola i dati per il periodo in corso (dalla data di inizio alla data corrente), consentendo di applicare le regole di tipologia durante l&#39;analisi. Inoltre ricalcola i contatori di esclusione per l&#39;arbitrato ogni notte.
 
-Pertanto, per ciascun destinatario, Adobe Campaign verifica che il numero di messaggi da inviare non superi la soglia, tenendo conto del numero di messaggi già inviati per il periodo in questione. Queste informazioni sono un **indicatore**, poiché tutti i calcoli vengono aggiornati al momento della consegna.
+Pertanto, per ciascun destinatario,  Adobe Campaign controlla che il numero di messaggi da inviare non superi la soglia, tenendo conto del numero di messaggi già inviati per il periodo in questione. Queste informazioni sono un **indicatore**, poiché tutti i calcoli vengono aggiornati al momento della consegna.
 
 Se questo numero supera la soglia, vengono applicate le regole di arbitrato definite nella tipologia della campagna e i destinatari vengono esclusi dalle campagne con peso inferiore.
 
@@ -229,22 +229,22 @@ Vogliamo creare una regola di tipologia per impedire la consegna di più di 4 me
 
 Per identificare clienti e potenziali clienti, utilizzate il **[!UICONTROL Status]** campo, che contiene 0 per i potenziali clienti e 1 per i clienti.
 
-Per creare la regola, eseguire i seguenti passaggi:
+Per creare la regola, esegui i seguenti passaggi:
 
-1. Creare una nuova regola di tipo **Pressione** .
-1. Modificate la **[!UICONTROL Pressure]** scheda: nella **[!UICONTROL Maximum number of messages]** sezione, vogliamo creare una formula per calcolare la soglia a seconda di ciascun destinatario. Selezionare il **[!UICONTROL Depends on the recipient]** valore nel **[!UICONTROL Threshold type]** campo, quindi fare clic **[!UICONTROL Edit expression]** a destra del **[!UICONTROL Formula]** campo.
+1. Create a new **Pressure** type typology rule.
+1. Edit the **[!UICONTROL Pressure]** tab: in the **[!UICONTROL Maximum number of messages]** section, we want to create a formula to calculate the threshold depending on each recipient. Selezionare il **[!UICONTROL Depends on the recipient]** valore nel **[!UICONTROL Threshold type]** campo, quindi fare clic **[!UICONTROL Edit expression]** a destra del **[!UICONTROL Formula]** campo.
 
    Fare clic sul **[!UICONTROL Advanced parameters]** pulsante per definire la formula di calcolo.
 
    ![](assets/campaign_opt_pressure_sample_1_1.png)
 
-1. Selezionate l’ **[!UICONTROL Edit the formula using an expression]** opzione e fate clic su **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Edit the formula using an expression]** option and click **[!UICONTROL Next]**.
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. Nell&#39;elenco delle funzioni, fare doppio clic sulla funzione **Iif** nel **[!UICONTROL Others]** nodo.
+1. In the list of functions, double-click the **Iif** function in the **[!UICONTROL Others]** node.
 
-   Quindi selezionate **Stato** del destinatario nella **[!UICONTROL Available fields]** sezione.
+   Then select the recipients&#39; **Status** in the **[!UICONTROL Available fields]** section.
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -252,15 +252,15 @@ Per creare la regola, eseguire i seguenti passaggi:
 
    ![](assets/campaign_opt_pressure_sample_1_4.png)
 
-   Questa formula consente di assegnare il valore 2 se lo stato è uguale a 0 e il valore 4 per tutti gli altri stati.
+   Questa formula ti consente di assegnare il valore 2 se lo stato è uguale a 0 e il valore 4 per tutti gli altri stati.
 
-   Fare clic **[!UICONTROL Finish]** per approvare la formula.
+   Fai clic su **[!UICONTROL Finish]** per approvare la formula.
 
-1. Indicare il periodo durante il quale si applicherà la regola: 7 giorni in questo caso, per contare il numero di messaggi alla settimana.
+1. Indicare il periodo durante il quale si applicherà la regola: 7 giorni in questo caso, per conteggiare il numero di messaggi alla settimana.
 
    ![](assets/campaign_opt_pressure_sample_1_5.png)
 
-1. Salvate la regola per approvare la creazione.
+1. Salva la regola per approvare la creazione.
 
 Collegate ora la regola appena creata a una tipologia per applicarla alle consegne. Per eseguire questa operazione:
 
@@ -297,13 +297,13 @@ Durante l&#39;analisi della consegna, i destinatari della consegna sono esclusi 
 
 Puoi definire regole di pressione in base al comportamento del destinatario: pertanto, il peso di una consegna può adattarsi a criteri che variano da un destinatario all&#39;altro. Ad esempio, puoi decidere di inviare un messaggio a seconda che un destinatario abbia visitato o meno il tuo sito Internet, che abbia fatto clic in una sezione specifica dell’ultima newsletter, che abbia effettuato l’iscrizione a un servizio di informazione o che si basasse anche sulle risposte a un sondaggio, a un gioco online, ecc.
 
-Nell&#39;esempio seguente, vogliamo creare una consegna con un peso di 5. Questo peso è arricchito con punteggi di propensione in base al comportamento del destinatario: i clienti che hanno già ordinato da questo sito avranno un punteggio di 5, mentre i clienti che non hanno mai ordinato online avranno un punteggio di 4.
+Nell&#39;esempio seguente, vogliamo creare una consegna con un peso pari a 5. Questo peso è arricchito con punteggi di propensione in base al comportamento del destinatario: i clienti che hanno già ordinato da questo sito avranno un punteggio di 5, mentre i clienti che non hanno mai ordinato online avranno un punteggio di 4.
 
 Per eseguire questo tipo di configurazione, è necessario utilizzare una formula per definire lo spessore del messaggio. Le informazioni sui punteggi di propensione e le risposte ai sondaggi devono essere accessibili nel modello dati. Nel nostro esempio, è stato aggiunto il campo **Propensity (Propensità** ).
 
 Effettuate le seguenti operazioni di configurazione:
 
-1. Creare una nuova regola di tipo **Pressione** .
+1. Create a new **Pressure** type typology rule.
 1. Modificate la **[!UICONTROL Pressure]** scheda. Vogliamo creare una formula di soglia basata su ciascun singolo destinatario: fare clic sull&#39; **[!UICONTROL Edit expression]** icona a destra del **[!UICONTROL Weight formula]** campo.
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
@@ -328,27 +328,27 @@ A tal fine, è necessario pianificare diverse consegne con diversi pesi per lo s
 Innanzitutto, configurate la regola di pressione.
 
 1. Creare una regola di pressione. Per ulteriori informazioni, vedere [Creazione di una regola](#creating-a-pressure-rule)di pressione.
-1. Nella **[!UICONTROL General]** scheda, selezionare l&#39; **[!UICONTROL Re-apply the rule at the start of personalization]** opzione.
+1. In the **[!UICONTROL General]** tab, select the **[!UICONTROL Re-apply the rule at the start of personalization]** option.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
    Questa opzione sovrascrive il valore definito nel **[!UICONTROL Frequency]** campo e applica automaticamente la regola durante la fase di personalizzazione. Per ulteriori informazioni, vedere [Regolazione della frequenza](../../campaign/using/applying-rules.md#adjusting-calculation-frequency)di calcolo.
 
-1. Nella **[!UICONTROL Pressure]** scheda, selezionare **[!UICONTROL 7d]** come **[!UICONTROL Period considered]** e **[!UICONTROL Grouping per day]** come **[!UICONTROL Period type]**.
+1. In the **[!UICONTROL Pressure]** tab, select **[!UICONTROL 7d]** as the **[!UICONTROL Period considered]** and **[!UICONTROL Grouping per day]** as the **[!UICONTROL Period type]**.
 1. Selezionare l&#39; **[!UICONTROL Take the deliveries into account in the provisional calendar]** opzione per includere le consegne programmate.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Le consegne inviate fino a 7 giorni prima della data di consegna e programmate fino a 7 giorni dopo la data di consegna saranno prese in considerazione nel calcolo. Per ulteriori informazioni, vedere [Impostazione del periodo](#setting-the-period).
+   Le consegne inviate fino a 7 giorni prima della data di consegna e programmate fino a 7 giorni dopo la data di consegna saranno prese in considerazione nel calcolo. For more on this, refer to [Setting the period](#setting-the-period).
 
 1. Nella **[!UICONTROL Typologies]** scheda, collegate la regola a una tipologia di campagna.
-1.  Salvare le modifiche.
+1. Salva le modifiche.
 
 Ora create e configurate un flusso di lavoro per ogni consegna a cui desiderate applicare la regola di pressione.
 
-1. Creare una campagna. For more on this, refer to [this section](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Nella **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungete un&#39;attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultate [questa sezione](../../workflow/using/query.md).
-1. Aggiungete un&#39; **[!UICONTROL Email delivery]** attività al flusso di lavoro e apritela. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultate [questa sezione](../../workflow/using/delivery.md).
+1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Nella **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungete un&#39;attività **Query** al flusso di lavoro. For more on using this activity, refer to [this section](../../workflow/using/query.md).
+1. Aggiungete un&#39; **[!UICONTROL Email delivery]** attività al flusso di lavoro e apritela. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Passate alla **[!UICONTROL Approvals]** scheda dell&#39;elenco **[!UICONTROL Delivery properties]** e disattivate tutte le approvazioni.
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -369,7 +369,7 @@ Ora create e configurate un flusso di lavoro per ogni consegna a cui desiderate 
 1. Procedere in modo simile per ogni consegna che si desidera inviare. Accertatevi di impostare il peso desiderato per ogni consegna.
 1. Esegui i flussi di lavoro pertinenti per preparare e inviare le consegne.
 
-Quando viene applicato l&#39;arbitrato notturno, le consegne con i pesi più bassi per lo stesso destinatario saranno escluse. Solo le consegne con il peso più alto saranno prese in considerazione per l&#39;invio. Per ulteriori informazioni, consulta [Spessore](#message-weight)messaggio.
+Quando viene applicato l&#39;arbitrato notturno, le consegne con i pesi più bassi per lo stesso destinatario saranno escluse. Solo le consegne con il peso più alto saranno prese in considerazione per l&#39;invio. For more on this, refer to [Message weight](#message-weight).
 
 Considerando che un&#39;e-mail è già stata inviata ai destinatari interessati all&#39;inizio della settimana, la tabella seguente mostra un esempio delle configurazioni che possono essere applicate per altre due consegne.
 
@@ -393,7 +393,7 @@ Considerando che un&#39;e-mail è già stata inviata ai destinatari interessati 
    <td> Disattivato<br /> </td> 
    <td> 5<br /> </td> 
    <td> 3pm<br /> </td> 
-   <td> 8 (giorno successivo)<br /> </td> 
+   <td> 8 del mattino (giorno successivo)<br /> </td> 
    <td> 2pm<br /> </td> 
    <td> Notte<br /> </td> 
    <td> Escluso<br /> </td> 
@@ -415,4 +415,4 @@ Considerando che un&#39;e-mail è già stata inviata ai destinatari interessati 
 
 Dopo che la data di estrazione è scaduta per le due consegne, l&#39;arbitrato notturno viene riapplicato prima delle date di contatto di entrambe le consegne. Questo consente di trovare tutte le consegne già inviate (destinatari per i quali viene elaborata una consegna, registrati attraverso i registri generali) o pianificate per l&#39;invio (destinatari idonei a ricevere una consegna, registrati attraverso i registri delle previsioni).
 
-Una volta che tutte le consegne inviate e potenziali sono state elencate per il periodo definito nella regola di pressione, Adobe Campaign le ordina in base al peso, con la ponderazione più alta per prima. Quando viene raggiunta la soglia impostata nella regola di pressione (qui non più di 2 e-mail nella stessa settimana), i destinatari sono esclusi dalla consegna.
+Una volta che tutte le consegne inviate e potenziali sono state elencate per il periodo definito nella regola di pressione,  Adobe Campaign le ordina in base al peso, con la ponderazione più alta prima. Quando viene raggiunta la soglia impostata nella regola di pressione (qui non più di 2 e-mail nella stessa settimana), i destinatari sono esclusi dalla consegna.
