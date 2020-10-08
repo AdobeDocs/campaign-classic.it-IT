@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 679b9ae2-362c-483d-acb8-47bc01928541
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Il modulo di generazione dei codici a barre consente di creare diversi tipi di c
 
 È possibile generare in modo dinamico un codice a barre come bitmap utilizzando un valore definito utilizzando i criteri del cliente. I codici a barre personalizzati possono essere inclusi nelle campagne e-mail. Il destinatario può stampare il messaggio e mostrarlo alla società emittente per la scansione (ad esempio durante il check-out).
 
-Per inserire un codice a barre in un messaggio e-mail, posizionate il cursore nel contenuto in cui desiderate visualizzarlo, quindi fate clic sul pulsante di personalizzazione. Selezionare **[!UICONTROL Include > Barcode...]**.
+Per inserire un codice a barre in un messaggio e-mail, posizionate il cursore nel contenuto in cui desiderate visualizzarlo, quindi fate clic sul pulsante di personalizzazione. Seleziona **[!UICONTROL Include > Barcode...]**.
 
 ![](assets/barcode_insert_14.png)
 
@@ -34,7 +34,7 @@ Quindi configurate i seguenti elementi in base alle vostre esigenze:
 
 1. Selezionare il tipo di codice a barre.
 
-   * Per il formato 1D, in Adobe Campaign sono disponibili i seguenti tipi: Codabar, Codice 128, GS1-128 (ex EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 di 5, POSTNET e Royal Mail (RM4SCC).
+   * Per il formato 1D, in  Adobe Campaign sono disponibili i seguenti tipi: Codabar, Codice 128, GS1-128 (ex EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 di 5, POSTNET e Royal Mail (RM4SCC).
 
       Esempio di codice a barre 1D:
 
@@ -63,7 +63,7 @@ Quindi configurate i seguenti elementi in base alle vostre esigenze:
 
 1. Il **[!UICONTROL Height]** campo consente di configurare l&#39;altezza del codice a barre senza modificarne la larghezza, modificando la quantità di spazio tra ciascuna barra.
 
-   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se un valore di codice a barre non è corretto, sarà visibile solo in modalità **Anteprima** , dove il codice a barre verrà barrato in rosso.
+   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se il valore di un codice a barre non è corretto, sarà visibile solo in modalità **Anteprima** , dove il codice a barre verrà barrato in rosso.
 
    >[!NOTE]
    >
