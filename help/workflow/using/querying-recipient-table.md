@@ -1,5 +1,5 @@
 ---
-title: Query della tabella destinatari
+title: Query della tabella dei destinatari
 description: Scopri come eseguire una query sulla tabella dei destinatari
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
-# Query della tabella destinatari {#querying-recipient-table}
+# Query della tabella dei destinatari {#querying-recipient-table}
 
 In questo esempio, vogliamo recuperare i nomi e le e-mail dei destinatari il cui dominio e-mail è &quot;orange.co.uk&quot; e che non vivono a Londra.
 
@@ -32,7 +32,7 @@ In questo esempio, vogliamo recuperare i nomi e le e-mail dei destinatari il cui
 
 * Quali sono le condizioni di filtraggio dei destinatari?
 
-   dominio città ed e-mail
+   dominio città e indirizzo e-mail
 
 * È configurato un ordinamento?
 
@@ -40,12 +40,12 @@ In questo esempio, vogliamo recuperare i nomi e le e-mail dei destinatari il cui
 
 Per creare questo esempio, procedere come segue:
 
-1. Fate clic su **[!UICONTROL Tools > Generic query editor...]** e scegliete la tabella **Destinatari** (**mms:destinatario**). Quindi fate clic **[!UICONTROL Next]**.
-1. Scegliete: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Questi campi vengono aggiunti a **[!UICONTROL Output columns]**. Quindi fate clic **[!UICONTROL Next]**.
+1. Fate clic su **[!UICONTROL Tools > Generic query editor...]** e scegliete la tabella **Destinatari** (**mms:destinatario**). Quindi fai clic su **[!UICONTROL Next]**.
+1. Scegliete: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Questi campi vengono aggiunti a **[!UICONTROL Output columns]**. Quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_03.png)
 
-1. Ordinare le colonne per visualizzarle nell&#39;ordine corretto. Qui vogliamo ordinare i numeri dei conti in ordine decrescente e i nomi in ordine alfabetico. Quindi fate clic **[!UICONTROL Next]**.
+1. Ordinare le colonne per visualizzarle nell&#39;ordine corretto. Qui vogliamo ordinare i numeri dei conti in ordine decrescente e i nomi in ordine alfabetico. Quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_04.png)
 
@@ -58,7 +58,7 @@ Per creare questo esempio, procedere come segue:
 
 1. Se necessario, fate clic sul **[!UICONTROL Distribution of values]** pulsante per visualizzare una distribuzione basata sul dominio e-mail dei potenziali clienti. È disponibile una percentuale per ciascun dominio e-mail nel database. I domini diversi da &quot;orange.co.uk&quot; vengono visualizzati fino a quando non viene applicato il filtro.
 
-   Nella parte inferiore della finestra viene visualizzato un riepilogo della query: Dominio **e-mail uguale a &#39;orange.co.uk&#39;**.
+   Nella parte inferiore della finestra viene visualizzato un riepilogo della query: **Dominio e-mail uguale a &#39;orange.co.uk&#39;**.
 
 1. Fate clic **[!UICONTROL Preview]** per ottenere un&#39;idea del risultato della query: vengono visualizzati solo i domini e-mail &quot;orange.co.uk&quot;.
 
@@ -76,7 +76,7 @@ Per creare questo esempio, procedere come segue:
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Nella **[!UICONTROL Data preview]** finestra, fate clic su **[!UICONTROL Start the preview of the data]**. Questa funzione calcola il risultato della query.
+1. In the **[!UICONTROL Data preview]** window, click **[!UICONTROL Start the preview of the data]**. Questa funzione calcola il risultato della query.
 
    La **[!UICONTROL Column results]** scheda mostra il risultato della query in colonne.
 
