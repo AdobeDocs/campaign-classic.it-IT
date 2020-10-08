@@ -1,7 +1,7 @@
 ---
-title: Creazione di tag di tracciamento Web
-seo-title: Creazione di tag di tracciamento Web
-description: Creazione di tag di tracciamento Web
+title: Creazione di etichette di web tracking
+seo-title: Creazione di etichette di web tracking
+description: Creazione di etichette di web tracking
 seo-description: null
 page-status-flag: never-activated
 uuid: c5599bdd-e6b8-4db4-b0ca-aaee2adc1919
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 647ca037-4efb-4524-9642-11056d096aea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 6%
 
 ---
 
 
-# Creazione di tag di tracciamento Web{#creating-web-tracking-tags}
+# Creazione di etichette di web tracking{#creating-web-tracking-tags}
 
-Ogni pagina del sito che desideri monitorare deve essere segnalata nella piattaforma Adobe Campaign. Questo riferimento può essere eseguito in due modi:
+Ogni pagina del sito da monitorare deve essere indicata nella piattaforma Adobe Campaign . Questo riferimento può essere eseguito in due modi:
 
 1. definizione manuale degli URL da tracciare,
 1. Creazione rapida di URL da tracciare.
