@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 18ba04d9-7bab-4eea-8dbb-6c2c138c5293
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Per creare un rapporto di analisi descrittivo, utilizzate la procedura guidata d
 
 ## Analisi dei dati nel database {#analyzing-data-in-the-database}
 
-La procedura guidata di analisi descrittiva può essere avviata dal **[!UICONTROL Tools > Descriptive analysis]** menu: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:Recipients**). Si applica a tutti i dati presenti nel database Adobe Campaign.
+La procedura guidata di analisi descrittiva può essere avviata dal **[!UICONTROL Tools > Descriptive analysis]** menu: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:Recipients**). Si applica a tutti i dati presenti nel database Adobe Campaign .
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
@@ -34,7 +34,7 @@ Per analizzare una tabella diversa dai destinatari standard uno (**nms:destinata
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-Per generare statistiche su parte dei dati, è possibile definire un filtro: a questo scopo, fate clic sul **[!UICONTROL Advanced settings...]** collegamento e definite il filtro da applicare, come illustrato di seguito:
+Se si desidera generare statistiche su parte dei dati, è possibile definire un filtro: a questo scopo, fate clic sul **[!UICONTROL Advanced settings...]** collegamento e definite il filtro da applicare, come illustrato di seguito:
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
@@ -42,9 +42,9 @@ L&#39;analisi riguarderà solo i destinatari di database di età non inferiore a
 
 ## Analisi di un insieme di dati {#analyzing-a-set-of-data}
 
-Puoi usare la procedura guidata di analisi descrittiva in un contesto diverso: un elenco, una transizione di workflow, una o più consegne, una selezione di destinatari, ecc.
+Puoi usare la procedura guidata di analisi descrittiva in un contesto diverso: un elenco, una transizione di workflow, una o più consegne, una selezione di destinatari e così via.
 
-È accessibile tramite diversi nodi della struttura di Adobe Campaign che puntano alla tabella dei destinatari.
+È accessibile tramite diversi nodi della struttura di Adobe Campaign  che puntano alla tabella dei destinatari.
 
 Aprite la procedura guidata di analisi descrittiva selezionando gli elementi e facendo clic con il pulsante destro del mouse. Vengono analizzati solo i dati selezionati.
 
@@ -54,7 +54,7 @@ Aprite la procedura guidata di analisi descrittiva selezionando gli elementi e f
 
    Per selezionare tutti i destinatari nella cartella o nel filtro corrente, utilizzare la scelta rapida CTRL+A. Ciò significa che anche i destinatari non visualizzati verranno selezionati.
 
-   Per un esempio di analisi descrittiva dei destinatari, fare riferimento a: Analisi [](../../reporting/using/use-cases.md#qualitative-data-analysis)qualitativa dei dati.
+   Per un esempio di analisi descrittiva dei destinatari, fare riferimento a: [Analisi](../../reporting/using/use-cases.md#qualitative-data-analysis)qualitativa dei dati.
 
 * Nel contesto di un **flusso di lavoro**, posizionate il cursore su una transizione verso la tabella dei destinatari, fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Analyze target]**. Per ulteriori informazioni, consulta l’esempio in [Analisi di una destinazione di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Per **gli elenchi**, selezionare uno o più elenchi e applicare lo stesso processo utilizzato per i destinatari.
@@ -62,7 +62,7 @@ Aprite la procedura guidata di analisi descrittiva selezionando gli elementi e f
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Esempi di analisi descrittive per le consegne sono forniti qui: [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) ed effettuate le seguenti operazioni: Analisi [dei registri](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)di tracciamento dei destinatari.
+   Esempi di analisi descrittive per le consegne sono forniti qui: [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) ed effettuate le seguenti operazioni: [Analisi dei registri](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)di tracciamento dei destinatari.
 
 ## Configurazione del modello di distribuzione qualitativa {#configuring-the-qualitative-distribution-template}
 
@@ -90,10 +90,10 @@ Le opzioni variano a seconda del contenuto del campo:
    >
    >Questa opzione deve essere utilizzata con attenzione: può avere un impatto importante sul report e sulle prestazioni della macchina.
 
-* **[!UICONTROL Auto]** : questa opzione consente di visualizzare gli n valori rappresentati più di frequente. Vengono calcolati automaticamente e ciascuna rappresenta una percentuale delle variabili rispetto al numero di raccoglitori. Per i valori numerici, Adobe Campaign genera automaticamente n classi in cui ordinare i dati.
+* **[!UICONTROL Auto]** : questa opzione consente di visualizzare gli n valori rappresentati più di frequente. Vengono calcolati automaticamente e ciascuna rappresenta una percentuale delle variabili rispetto al numero di raccoglitori. Per i valori numerici,  Adobe Campaign genera automaticamente n classi in cui ordinare i dati.
 * **[!UICONTROL Manual]** : questa opzione funziona come l’ **[!UICONTROL Auto]** opzione, ma potete impostare manualmente questi valori. A tale scopo, fare clic sul **[!UICONTROL Add]** pulsante a destra della tabella dei valori.
 
-   I valori possono essere inizializzati automaticamente da Adobe Campaign prima della personalizzazione: a tal fine, immettete il numero di contenitori da generare e fate clic sul **[!UICONTROL Initialize with]** collegamento, come illustrato di seguito:
+   I valori possono essere inizializzati automaticamente da  Adobe Campaign prima della personalizzazione: a tal fine, immettete il numero di contenitori da generare e fate clic sul **[!UICONTROL Initialize with]** collegamento, come illustrato di seguito:
 
    ![](assets/reporting_descriptive_initialize.png)
 
@@ -121,7 +121,7 @@ Utilizzare la barra degli strumenti per personalizzare la visualizzazione delle 
 
 La sezione superiore della finestra consente di selezionare le impostazioni di visualizzazione.
 
-È possibile visualizzare o nascondere il nome delle statistiche e i totali parziali e scegliere l&#39;orientamento delle statistiche. Per ulteriori informazioni, consulta Impostazioni [di visualizzazione dei rapporti](../../reporting/using/processing-a-report.md#analysis-report-display-settings)Analisi.
+È possibile visualizzare o nascondere il nome delle statistiche e i totali parziali e scegliere l&#39;orientamento delle statistiche. Per ulteriori informazioni, consulta Impostazioni [di visualizzazione dei rapporti di](../../reporting/using/processing-a-report.md#analysis-report-display-settings)analisi.
 
 ### Visualizzazione dei dati nel grafico {#displaying-data-in-the-chart}
 
@@ -141,13 +141,13 @@ Fare clic sul **[!UICONTROL Variants]** collegamento per modificare le propriet�
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-Le opzioni disponibili dipendono dal tipo di grafico selezionato. Per ulteriori informazioni, consultare [questa pagina](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+Le opzioni disponibili dipendono dal tipo di grafico selezionato. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 
 ### Calcolo delle statistiche {#statistics-calculation}
 
 La procedura guidata di analisi descrittiva consente di calcolare diversi tipi di statistiche sui dati. Per impostazione predefinita, è configurato un solo conteggio semplice.
 
-Fate clic **[!UICONTROL Add]** per creare una nuova statistica.
+Click **[!UICONTROL Add]** to create a new statistic.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
@@ -183,7 +183,7 @@ Sono possibili le seguenti operazioni:
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. Create una nuova statistica di **[!UICONTROL Calculated field]** tipo e inserite la seguente formula nel **[!UICONTROL User function]** campo: **@purchase/@count**.
+   1. Create una nuova statistica di **[!UICONTROL Calculated field]** tipo e immettete la seguente formula nel **[!UICONTROL User function]** campo: **@purchase/@count**.
 
       ![](assets/report_compute_data_sample4.png)
 
@@ -217,7 +217,7 @@ Per iniziare, selezionate la variabile che i calcoli riguardano:
 
 ![](assets/s_ncs_user_report_wizard_017.png)
 
-Per impostazione predefinita, Adobe Campaign offre una serie di statistiche da calcolare per i dati selezionati. È possibile modificare questo elenco, aggiungerlo o eliminare le statistiche in base alle proprie esigenze.
+Per impostazione predefinita,  Adobe Campaign offre una serie di statistiche da calcolare per i dati selezionati. È possibile modificare questo elenco, aggiungerlo o eliminare le statistiche in base alle proprie esigenze.
 
 Sono possibili le seguenti operazioni:
 
