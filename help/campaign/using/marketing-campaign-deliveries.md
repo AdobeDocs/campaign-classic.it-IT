@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Distribuzione di campagne di marketing {#marketing-campaign-deliveries}
+# Marketing campaign deliveries {#marketing-campaign-deliveries}
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
 
@@ -47,7 +44,7 @@ Per ogni consegna, il manager della campagna definirà:
 
 * L&#39;obiettivo principale. Per ulteriori informazioni, vedere [Creazione della destinazione principale in un flusso di lavoro](#building-the-main-target-in-a-workflow) e [Selezione della popolazione](#selecting-the-target-population)di destinazione.
 * Gruppo di controllo. Per ulteriori informazioni, vedere [Definizione di un gruppo](#defining-a-control-group)di controllo.
-* Gli indirizzi seed. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
+* Gli indirizzi seed. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
 
 Alcune di queste informazioni vengono ereditate dal modello.
 
@@ -83,12 +80,12 @@ La guida [Automazione con i flussi di lavoro](../../workflow/using/architecture.
 
 ### Come creare un messaggio e-mail in una campagna {#create-email-video}
 
-In questo video viene illustrato come creare una campagna e un’e-mail in Adobe Campaign Classic.
+In questo video viene illustrato come creare una campagna e un messaggio e-mail in Adobe Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
-#### Creating a targeting workflow {#creating-a-targeting-workflow}
+#### Creazione di un flusso di lavoro di targeting {#creating-a-targeting-workflow}
 
 Il targeting può essere creato tramite una combinazione di condizioni di filtraggio in una sequenza grafica in un flusso di lavoro. Potete creare popolazioni e sottopopolazioni che verranno indirizzate in base alle vostre esigenze. Per visualizzare l’editor del flusso di lavoro, fate clic sulla **[!UICONTROL Targeting and workflows]** scheda nel dashboard della campagna.
 
@@ -208,7 +205,7 @@ Le icone della barra degli strumenti consentono di intervenire sull&#39;esecuzio
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-### Definizione di un gruppo di controllo {#defining-a-control-group}
+### Defining a control group {#defining-a-control-group}
 
 Un gruppo di controllo è una popolazione che non riceve la consegna; viene utilizzato per monitorare il comportamento dei post-consegna e l&#39;impatto della campagna effettuando un confronto con il comportamento della popolazione target, che ha ricevuto la consegna.
 
@@ -258,7 +255,7 @@ Potete estrarre i destinatari dalla destinazione principale della consegna. In q
 Per estrarre un gruppo di controllo, abilitare il gruppo di controllo per la campagna o la distribuzione e selezionare una delle opzioni seguenti: **[!UICONTROL Activate random sampling]** o **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : questa opzione applica il campionamento casuale ai destinatari nella popolazione di destinazione. Se poi impostate la soglia su 100, il gruppo di controllo sarà composto da 100 destinatari selezionati in modo casuale dalla popolazione di destinazione. Il campionamento casuale dipende dal motore del database.
-* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più ordini di ordinamento. Se si seleziona il **[!UICONTROL Age]** campo come criterio di ordinamento e quindi si definisce 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
+* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più criteri di ordinamento. Se si seleziona il **[!UICONTROL Age]** campo come criterio di ordinamento e quindi si definisce 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
 
 Fare clic **[!UICONTROL Next]** per definire l&#39;ordine di ordinamento (se necessario) e selezionare la modalità di limitazione del destinatario.
 
@@ -266,7 +263,7 @@ Fare clic **[!UICONTROL Next]** per definire l&#39;ordine di ordinamento (se nec
 
 Questa configurazione è equivalente a un&#39;attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md) .
 
-### Aggiunta di un gruppo di controlli {#adding-a-population}
+### Aggiunta di un gruppo di controllo {#adding-a-population}
 
 È possibile definire una nuova popolazione da utilizzare come gruppo di controllo. Questa popolazione può provenire da un gruppo di destinatari o è possibile crearla tramite una query specifica.
 
@@ -373,7 +370,7 @@ In una campagna puoi fare riferimento anche ad altri elementi, come buoni promoz
 
 >[!NOTE]
 >
->Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per i lavori di collaborazione. Consulta [Gestione delle risorse](../../campaign/using/managing-marketing-resources.md)di marketing.
+>Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per i lavori di collaborazione. See [Managing marketing resources](../../campaign/using/managing-marketing-resources.md).
 
 ### Aggiunta di documenti {#adding-documents}
 
