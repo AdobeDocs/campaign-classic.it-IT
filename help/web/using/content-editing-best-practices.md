@@ -1,7 +1,7 @@
 ---
-title: Best practice di modifica dei contenuti
-seo-title: Best practice di modifica dei contenuti
-description: Best practice di modifica dei contenuti
+title: Best practice per la modifica del contenuto
+seo-title: Best practice per la modifica del contenuto
+description: Best practice per la modifica del contenuto
 seo-description: null
 page-status-flag: never-activated
 uuid: badc6806-b474-4cad-94a3-003a50271281
@@ -11,22 +11,22 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 7%
 
 ---
 
 
-# Best practice di modifica dei contenuti{#content-editing-best-practices}
+# Best practice per la modifica del contenuto{#content-editing-best-practices}
 
 Per garantire il funzionamento ottimale dell&#39;editor, si consiglia di osservare le seguenti linee guida:
 
-* Prima di **importare un modello** di pagina HTML in Adobe Campaign, accertatevi che il modello si apra e venga visualizzato correttamente nei vari browser.
-* Se la pagina HTML contiene script **** JavaScript, questi devono essere eseguiti **senza errori** al di fuori dell&#39;editor.
-* Durante la creazione di un modello, si consiglia di aggiungere un attributo **&#39;type&#39;** ai `<input>` tag. Queste informazioni verranno elaborate dall&#39;editor e aiuteranno l&#39;utente a collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
+* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
+* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e aiuteranno l&#39;utente a collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
    Esempio di codice HTML nel modello:
 
@@ -80,7 +80,7 @@ Digital Content Editor funziona anche con le seguenti pagine di codice supportat
 
 Nella sezione superiore dell&#39;editor vengono visualizzati messaggi relativi allo stato del contenuto. I codici colore dei messaggi sono i seguenti:
 
-* **Messaggio** grigio: messaggio informativo, non è necessario eseguire alcuna azione nell&#39;editor.
+* **Messaggio** grigio: messaggio di informazioni, non è necessario eseguire alcuna azione nell&#39;editor.
 * **Messaggio** blu: messaggio informativo relativo al contenuto in corso di modifica.
 * **Messaggio** giallo: messaggio di avviso o di errore che richiede un&#39;azione per conto dell&#39;utente.
 
