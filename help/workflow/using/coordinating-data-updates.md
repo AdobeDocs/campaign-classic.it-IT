@@ -1,7 +1,7 @@
 ---
-title: Coordinare gli aggiornamenti dei dati
-seo-title: Coordinare gli aggiornamenti dei dati
-description: Coordinare gli aggiornamenti dei dati
+title: Coordinamento degli aggiornamenti dati
+seo-title: Coordinamento degli aggiornamenti dati
+description: Coordinamento degli aggiornamenti dati
 seo-description: null
 page-status-flag: never-activated
 uuid: 003d63f8-3169-4190-882e-e360a83ccafb
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: efe09c66-b74b-48f0-9042-5da4342e014e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 4%
 
 ---
 
 
-# Coordinare gli aggiornamenti dei dati{#coordinating-data-updates}
+# Coordinamento degli aggiornamenti dati{#coordinating-data-updates}
 
 Questo caso d’uso descrive in dettaglio la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti dei contenuti quando si utilizzano più esecuzioni di un flusso di lavoro.
 
