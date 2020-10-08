@@ -1,7 +1,7 @@
 ---
-title: Inizio e fine
-seo-title: Inizio e fine
-description: Inizio e fine
+title: Start ed End
+seo-title: Start ed End
+description: Start ed End
 seo-description: null
 page-status-flag: never-activated
 uuid: ec0c818c-c307-4f50-908c-507bce0ea27b
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 8b239d5e-2317-42c8-9fee-7d40bea624da
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 9%
 
 ---
 
 
-# Inizio e fine{#start-and-end}
+# Start ed End{#start-and-end}
 
 Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** consentono di contrassegnare graficamente l’inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
 
