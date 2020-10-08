@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -31,11 +28,11 @@ Prima di inviare il messaggio, assicurati anche che i parametri e la configurazi
 
 Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare. A tal fine, devi convalidare il contenuto del messaggio e i parametri di consegna.
 
-Questo passaggio consente di rilevare eventuali errori e di correggerli prima di inviarli alla destinazione principale.
+Questo passaggio consente di rilevare eventuali errori e correggerli prima di inviarli alla destinazione principale.
 
 I passaggi per la convalida di una consegna sono descritti [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
 
-## Rendering in entrata {#inbox-and-email-rendering}
+## Rendering della casella in entrata {#inbox-and-email-rendering}
 
 Il rendering della casella in entrata consente di visualizzare l&#39;anteprima dei messaggi sui principali client e-mail, acquisire il contenuto e la reputazione, scoprire in che modo i destinatari leggono i messaggi.
 
@@ -109,7 +106,7 @@ Puoi:
 
 ### Utilizzare le tipologie
 
-Potete utilizzare le regole di tipologia per escludere parte della destinazione in base a criteri specifici. Questo garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, potete filtrare i destinatari meno recenti dalla destinazione della newsletter. Ulteriori informazioni [in questo esempio](../../campaign/using/filtering-rules.md).
+Potete utilizzare le regole di tipologia per escludere parte della destinazione in base a criteri specifici. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, potete filtrare i destinatari meno recenti dalla destinazione della newsletter. Ulteriori informazioni [in questo esempio](../../campaign/using/filtering-rules.md).
 
 ### Evitare gli allegati
 
