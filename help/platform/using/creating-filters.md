@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6d63a43bdcf1c63b2ada240e7e15db8a5dfcfe11
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -39,7 +36,7 @@ Quando vi spostate nella struttura  Adobe Campaign (dal **[!UICONTROL Explorer]*
 
 Questi filtri possono essere utilizzati una sola volta, oppure potete salvarli per un utilizzo futuro. Potete applicare più filtri contemporaneamente.
 
-I seguenti tipi di filtro sono disponibili in  Adobe Campaign:
+In  Adobe Campaign sono disponibili i seguenti tipi di filtro:
 
 * Filtri predefiniti
 
@@ -120,7 +117,7 @@ Per creare un filtro **** semplice, effettuate le seguenti operazioni:
 
 1. Per attivare il filtro, premere Invio sulla tastiera oppure fare clic sulla freccia verde a destra dei campi del filtro.
 
-Se il campo sul quale si desidera filtrare i dati non viene visualizzato nel modulo del profilo, è possibile aggiungerlo nelle colonne visualizzate e quindi filtrare su tale colonna. Per fare questo,
+Se il campo sul quale si desidera filtrare i dati non viene visualizzato nel modulo del profilo, è possibile aggiungerlo nelle colonne visualizzate e quindi filtrare su tale colonna. Per eseguire questa operazione,
 
 1. Fate clic sull&#39; **[!UICONTROL Configure the list]** icona.
 
@@ -142,7 +139,7 @@ Se il campo sul quale si desidera filtrare i dati non viene visualizzato nel mod
 
 Per creare un filtro **** avanzato, effettuate le seguenti operazioni:
 
-1. Fate clic sul **[!UICONTROL Filters]** pulsante e selezionate **[!UICONTROL Advanced filter...]**.
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**.
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
@@ -279,8 +276,8 @@ I filtri predefiniti sono:
    <td> Seleziona i destinatari che hanno fatto clic su una consegna almeno X volte negli ultimi Y mesi.<br /> </td> 
   </tr> 
   <tr> 
- <td> Indirizzo e-mail nell'elenco dei blocchi<br /> </td> 
-    <td> Seleziona i destinatari il cui indirizzo e-mail si trova nell'elenco dei blocchi.<br/> </td>
+ <td> Indirizzo e-mail nel elenco Bloccati<br /> </td> 
+    <td> Seleziona i destinatari il cui indirizzo e-mail si trova nel elenco Bloccati .<br/> </td>
   </tr> 
   <tr> 
    <td> Indirizzo e-mail in quarantena<br /> </td> 
