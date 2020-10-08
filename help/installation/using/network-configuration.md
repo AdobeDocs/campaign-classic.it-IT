@@ -1,7 +1,7 @@
 ---
-title: Configurazione della rete
-seo-title: Configurazione della rete
-description: Configurazione della rete
+title: Configurazione di rete
+seo-title: Configurazione di rete
+description: Configurazione di rete
 seo-description: null
 page-status-flag: never-activated
 uuid: 17357170-7440-4603-bea6-2e4b9086ae72
@@ -11,22 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 2%
 
 ---
 
 
-# Configurazione della rete{#network-configuration}
+# Configurazione di rete{#network-configuration}
 
 ## Comunicazione tra i processi {#communication-between-processes}
 
 Alcuni processi dell&#39;applicazione devono comunicare con altri o accedere alla LAN e a Internet. Ciò significa che alcune porte TCP devono essere aperte per questi processi.
 
-Utilizzate la porta Apache Tomcat incorporata come priorità (per impostazione predefinita, 8080) per le comunicazioni interne tra i vari server applicazione di una piattaforma Adobe Campaign.
+Utilizzate la porta Apache Tomcat incorporata come priorità (per impostazione predefinita 8080) per le comunicazioni interne tra i vari server applicazioni di una piattaforma Adobe Campaign .
 
 ### Server di consegna {#delivery-server}
 
@@ -86,7 +86,7 @@ Per il processo di recupero della posta in entrata (**nlserver inMail**), devono
  </tbody> 
 </table>
 
-### Application Server {#application-server}
+### Server dell’applicazione {#application-server}
 
 Per il server applicazione (**nlserver Web**), devono essere aperte le seguenti porte:
 
@@ -105,7 +105,7 @@ Per il server applicazione (**nlserver Web**), devono essere aperte le seguenti 
  </tbody> 
 </table>
 
-Quando diversi server applicazioni di una piattaforma Adobe Campaign devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) invece di quella della porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
+Quando diversi server applicazioni di una piattaforma Adobe Campaign  devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) invece di quella della porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
 
 ### Stato consegna SMS {#sms-delivery-status}
 
@@ -128,7 +128,7 @@ Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire l
 
 ### Client avanzato {#rich-client}
 
-Per il client avanzato Adobe Campaign (**nlclient**), devono essere aperte le seguenti porte:
+Per il client Adobe Campaign avanzato  (**nlclient**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -139,7 +139,7 @@ Per il client avanzato Adobe Campaign (**nlclient**), devono essere aperte le se
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Application Server<br /> </td> 
+   <td> Server dell’applicazione<br /> </td> 
    <td> Traffico SOAP (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
@@ -180,7 +180,7 @@ Le porte predefinite sono le seguenti:
 
 ## Accesso esterno {#external-access}
 
-Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in modo da poter visualizzare le campagne e-mail eseguite direttamente da Adobe Campaign. Ciò significa che alcune porte devono essere aperte per i componenti.
+Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in modo da poter visualizzare le campagne e-mail eseguite direttamente da  Adobe Campaign. Ciò significa che alcune porte devono essere aperte per i componenti.
 
 ### Server di reindirizzamento {#redirection-server}
 
@@ -209,7 +209,7 @@ Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seg
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Ovunque. Necessario quando i moduli Web vengono gestiti direttamente dalla piattaforma Adobe Campaign o quando vengono utilizzate pagine mirror.<br /> </td> 
+   <td> Ovunque. Necessario quando i moduli Web vengono gestiti direttamente dalla piattaforma Adobe Campaign  o quando vengono utilizzate pagine mirror.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -231,7 +231,7 @@ Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seg
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L&#39;integrazione tra Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;in sede&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la documentazione [](../../integrations/using/about-adobe-experience-manager.md)dettagliata.
+L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;in sede&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la documentazione [](../../integrations/using/about-adobe-experience-manager.md)dettagliata.
 
 <table> 
  <tbody> 
@@ -241,11 +241,11 @@ L&#39;integrazione tra Adobe Campaign e Adobe Experience Manager richiede l&#39;
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> Connessione AEM ad Adobe Campaign<br /> </td> 
+   <td> Connessione AEM a  Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Connessione di Adobe Campaign alle istanze "authoring" e "pubblicazione" di AEM. Le porte da aprire possono essere diverse da quelle predefinite, a seconda della configurazione di AEM.<br /> </td> 
+   <td>  connessione Adobe Campaign a AEM istanze "authoring" e "pubblicazione". Le porte da aprire possono essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
