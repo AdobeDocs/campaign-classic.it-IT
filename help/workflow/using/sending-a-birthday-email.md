@@ -1,7 +1,7 @@
 ---
-title: Invio di un'e-mail di compleanno
-seo-title: Invio di un'e-mail di compleanno
-description: Invio di un'e-mail di compleanno
+title: Invio di un’e-mail di compleanno
+seo-title: Invio di un’e-mail di compleanno
+description: Invio di un’e-mail di compleanno
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Invio di un&#39;e-mail di compleanno{#sending-a-birthday-email}
+# Invio di un’e-mail di compleanno{#sending-a-birthday-email}
 
 ## Introduzione {#introduction}
 
