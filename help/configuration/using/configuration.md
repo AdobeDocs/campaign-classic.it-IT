@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: b781fd52-828c-4582-a546-a1fee7e5a26d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 2%
 
 ---
 
@@ -98,7 +98,7 @@ Un separatore di comando consente di visualizzare una barra di separazione tra i
 
 La presenza facoltativa del **`<soapcall>`** tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API SOAP, consultate la documentazione [JSAPI per](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)Campaign.
 
-Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal **`<enter>`** tag . Per ulteriori informazioni su questo tag, consultare la documentazione relativa ai moduli di input.
+Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal **`<enter>`** tag . Per ulteriori informazioni su questo tag, consulta la documentazione relativa ai moduli di input.
 
 **Esempio**:
 
@@ -168,7 +168,7 @@ L&#39; **`<nodemodel>`** elemento contiene la descrizione del tipo di cartella c
 * **label**: etichetta utilizzata nel **[!UICONTROL Add new folder]** menu e come etichetta predefinita quando si inserisce una cartella.
 * **img**: immagine predefinita nell’inserimento della cartella.
 * **hiddenCommands**: elenco di comandi (separati da virgola) da mascherare. Valori possibili: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; e &quot;duplicate&quot;.
-* **newFolderShortCuts**: elenco di scelte rapide da tastiera per i modelli (**`<nodemodel>`** separate da virgola) nella creazione delle cartelle.
+* **newFolderShortCuts**: elenco di scelte rapide da tastiera per i modelli (**`<nodemodel>`** separate da virgola) per la creazione di cartelle.
 * **insertRight**, **editRight**, **deleteRight**: diritti per l’inserimento, la modifica e l’eliminazione di cartelle.
 
 L&#39; **`<view>`** elemento sotto l&#39; **`<nodemodel>`** elemento contiene la configurazione dell&#39;elenco associato alla vista. Lo schema dell&#39;elenco viene immesso nell&#39;attributo **schema** dell&#39; **`<view>`** elemento.
@@ -206,7 +206,7 @@ La configurazione predefinita delle colonne dell&#39;elenco viene immessa tramit
 </model>
 ```
 
-Menu di inserimento cartella corrispondente:
+Il menu di inserimento della cartella corrispondente:
 
 ![](assets/d_ncs_integration_navigation_exemple2.png)
 
