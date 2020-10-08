@@ -11,16 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 538d3b48-ff39-463f-878d-ebe085057129
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 0%
 
 ---
 
 
-# Risoluzione dei problemi relativi al connettore ACS{#troubleshooting-the-acs-connector}
+# Troubleshooting the ACS Connector{#troubleshooting-the-acs-connector}
 
 A seconda dell’implementazione, potete affrontare diversi problemi comuni.
 
@@ -38,7 +38,7 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
  <tbody> 
   <tr> 
    <td> destinatari (o qualsiasi altra dimensione di profilo)<br /> </td> 
-   <td> profili<br /> </td> 
+   <td> profiles<br /> </td> 
   </tr> 
   <tr> 
    <td> list<br /> </td> 
@@ -46,14 +46,14 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
   </tr> 
   <tr> 
    <td> flussi di lavoro campagna, flussi di lavoro di targeting<br /> </td> 
-   <td> workflow<br /> </td> 
+   <td> workflows<br /> </td> 
   </tr> 
   <tr> 
    <td> operazioni<br /> </td> 
-   <td> campaign<br /> </td> 
+   <td> campaigns<br /> </td> 
   </tr> 
   <tr> 
-   <td> applicazioni Web<br /> </td> 
+   <td> web applications<br /> </td> 
    <td> landing pages<br /> </td> 
   </tr> 
   <tr> 
@@ -62,12 +62,12 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
   </tr> 
   <tr> 
    <td> sementi<br /> </td> 
-   <td> profili di prova<br /> </td> 
+   <td> test profiles<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-* **I destinatari dell&#39;istanza Campaign v7 non sono sincronizzati o visibili in Campaign Standard.**
+* **I destinatari dell&#39;istanza Campaign v7 non sono sincronizzati o visibili ai Campaign Standard.**
 
    Questo caso può verificarsi per diversi motivi:
 
@@ -77,35 +77,35 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
 
 * **Non trovo i campi del profilo su cui devo basare la query in Campaign Standard.**
 
-   Per impostazione predefinita, 20 campi della tabella nms:destinatario sono sincronizzati con Campaign Standard. Fare riferimento all&#39;elenco dettagliato dei campi sincronizzati. Qualsiasi campo aggiuntivo da recuperare in Campaign Standard deve essere mappato e configurato dal consulente.
+   Per impostazione predefinita, 20 campi della tabella nms:Recipients sono sincronizzati con Campaign Standard. Fare riferimento all&#39;elenco dettagliato dei campi sincronizzati. Qualsiasi campo aggiuntivo da recuperare in Campaign Standard deve essere mappato e configurato dal consulente.
 
    Per essere certi che il campo che si desidera utilizzare sia disponibile, è possibile controllare la definizione delle risorse del profilo da **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
-   Inoltre, per impostazione predefinita, tutti i dati allegati ai destinatari e memorizzati nelle tabelle correlate a nms:destinatari non sono sincronizzati con Campaign Standard.
+   Inoltre, tutti i dati associati ai destinatari e memorizzati nelle tabelle correlate a nms:Recipients non sono sincronizzati per impostazione predefinita con Campaign Standard.
 
    Per poter ancora utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato nella sezione [Sincronizzazione dei tipi di pubblico](../../integrations/using/synchronizing-audiences.md) , oppure consultare il tuo consulente per esplorare le possibilità di personalizzazione.
 
-* **Sto utilizzando un&#39;altra dimensione di profilo rispetto a quella predefinita di nms:destinatario in Campaign v7, come posso sincronizzarle con Campaign Standard?**
+* **Sto utilizzando un&#39;altra dimensione di profilo rispetto a quella predefinita di nms:destinatario in Campaign v7, come posso sincronizzarle con il Campaign Standard?**
 
    Campaign Standard utilizza una risorsa di targeting univoca denominata **profili**. L&#39;implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili Campaign Standard.
 
-   Se utilizzi un&#39;altra dimensione di profilo in Campaign v7 o se ne utilizzi altre diverse, devi mapparli tutti con i profili Campaign Standard. Per rispondere a questa particolare esigenza, fare riferimento al proprio consulente.
+   Se utilizzi un’altra dimensione di profilo in Campaign v7 o se ne utilizzi più, questi devono essere mappati con profili Campaign Standard. Per rispondere a questa particolare esigenza, fare riferimento al proprio consulente.
 
 * **Voglio condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro, ma non riesco a trovare il pubblico in Campaign Standard**.
 
-   Le audience sono disponibili nel **[!UICONTROL Audiences]** menu in Campaign Standard. Hanno l&#39;etichetta specificata nell&#39; **[!UICONTROL List update]** attività nel flusso di lavoro di Campaign v7. Sono soggetti alla mappatura delle cartelle definita durante l’implementazione.
+   Le audience si trovano nel **[!UICONTROL Audiences]** menu in Campaign Standard. Hanno l&#39;etichetta specificata nell&#39; **[!UICONTROL List update]** attività nel flusso di lavoro di Campaign v7. Sono soggetti alla mappatura delle cartelle definita durante l’implementazione.
 
-   La prima cosa da verificare è se il flusso di lavoro è terminato senza errori. Se notate un errore nell&#39; **[!UICONTROL List update]** attività, la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare maggiori dettagli su cosa è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene i flussi di lavoro di sincronizzazione attivati dall&#39;esecuzione dell&#39; **[!UICONTROL List update]** attività.
+   La prima cosa da verificare è se il flusso di lavoro è terminato senza errori. Se notate un errore nell&#39; **[!UICONTROL List update]** attività, significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare maggiori dettagli su cosa è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene i flussi di lavoro di sincronizzazione attivati dall&#39;esecuzione dell&#39; **[!UICONTROL List update]** attività.
 
    Inoltre, accertatevi che l&#39; **[!UICONTROL Share with ACS]** opzione sia selezionata nell&#39; **[!UICONTROL List update]** attività e che il flusso di lavoro sia stato eseguito correttamente.
 
-   I profili dei destinatari contenuti nell&#39;elenco devono essere stati sincronizzati con Campaign Standard prima dell&#39;esecuzione del flusso di lavoro. Una volta condiviso con Campaign Standard, i destinatari dell&#39;elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere lì. I destinatari dell&#39;elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
+   I profili dei destinatari contenuti nell&#39;elenco devono essere stati sincronizzati con i Campaign Standard prima dell&#39;esecuzione del flusso di lavoro. Una volta condiviso con l&#39;Campaign Standard, i destinatari dell&#39;elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere. I destinatari dell&#39;elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
 
-   Se condividete un elenco di profili e non ne condividete nessuno con Campaign Standard, viene creata un&#39;audience Query vuota in Campaign Standard che non può essere utilizzata.
+   Se condividete un elenco composto da profili e non ne viene sincronizzato nessuno con il Campaign Standard, viene creata un&#39;audience Query vuota nel Campaign Standard che non può essere utilizzata.
 
 * **Ho ricevuto una notifica in cui si informa che un flusso di lavoro di sincronizzazione è in stato di errore. Cosa dovrei fare?**
 
-   Verifica la configurazione dell&#39;account esterno sia in Campaign Standard che in Campaign v7 verificando la connessione:
+   Verifica la configurazione dell’account esterno sia in Campaign Standard che in Campaign v7 verificando la connessione:
 
    * **[!UICONTROL acsDefaultRelayAccount]** in Campaign Standard.
    * **[!UICONTROL acsDefaultAccount]** in Campaign v7.
