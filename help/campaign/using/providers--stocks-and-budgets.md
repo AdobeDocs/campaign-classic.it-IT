@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # Fornitori, scorte e budget{#providers-stocks-and-budgets}
 
-Adobe Campaign consente di definire i fornitori di servizi che saranno coinvolti nei processi svolti all&#39;interno delle campagne. Le informazioni relative ai fornitori di servizi e alle relative strutture di costi sono definite dall&#39;amministratore di Adobe Campaign dalla vista principale. Il fornitore di servizi è indicato dalla fornitura e le sue strutture di costo consentono il calcolo dei costi associati a tale consegna nonché la gestione delle scorte in questione.
+ Adobe Campaign consente di definire i provider di servizi che saranno coinvolti nei processi svolti all&#39;interno delle campagne. Le informazioni relative ai fornitori di servizi e alle relative strutture di costi sono definite dall&#39;amministratore di Adobe Campaign  dalla vista principale. Il fornitore di servizi è indicato dalla fornitura e le sue strutture di costo consentono il calcolo dei costi associati a tale consegna nonché la gestione delle scorte in questione.
 
 ## Creazione di fornitori di servizi e relative strutture di costo {#creating-service-providers-and-their-cost-structures}
 
@@ -35,7 +32,7 @@ I provider di servizi sono configurati nel **[!UICONTROL Administration > Campai
 
 I lavori svolti durante le consegne sono eseguiti dai prestatori di servizi, in particolare per la posta diretta e i canali mobili. Questi fornitori di servizi possono, ad esempio, essere coinvolti nella stampa o nella distribuzione di messaggi. Tali processi comportano configurazioni e costi specifici per ciascun fornitore di servizi. La configurazione dei fornitori di servizi comporta quattro fasi:
 
-1. Creazione di un provider di servizi in Adobe Campaign
+1. Creazione di un provider di servizi in  Adobe Campaign
 
    Consultate [Aggiunta di un provider](#adding-a-service-provider)di servizi.
 
@@ -70,7 +67,7 @@ Puoi creare tutti i provider di servizi necessari per le consegne. La procedura 
 
 >[!NOTE]
 >
->Per ulteriori informazioni, vedere [Definizione della struttura](#defining-the-cost-structure)dei costi.
+>For more on this, refer to [Defining the cost structure](#defining-the-cost-structure).
 
 Una categoria di costi è un&#39;entità contenente un insieme di costi ammissibili per un tipo di consegna (e-mail, posta diretta, ecc.) o per un’attività. Le categorie di costi sono raggruppate nei modelli di servizi associati ai fornitori di servizi. Ogni provider di servizi può fare riferimento a uno o più modelli di servizio.
 
@@ -101,7 +98,7 @@ Per creare un modello di servizio e definirne il contenuto, effettuate le seguen
 
    ![](assets/s_ncs_user_supplier_default_cost.png)
 
-### Definizione della struttura dei costi {#defining-the-cost-structure}
+### Defining the cost structure {#defining-the-cost-structure}
 
 Per ciascun tipo di costo, una struttura di costi specifica le regole di calcolo da applicare.
 
@@ -143,7 +140,7 @@ Per aggiungere una soglia, fate clic sul **[!UICONTROL Add]** pulsante a destra 
 
 #### Struttura costante per soglia {#constant-structure-by-threshold}
 
-Infine, puoi configurare un calcolo dei costi in base al numero totale di messaggi. A questo scopo, selezionare una struttura di **[!UICONTROL Constant by threshold]** calcolo. Ad esempio, il costo verrà fissato a un importo fisso di 12,00 per 1 a 100 messaggi e a 100,00 per una consegna di 101 a 1000 messaggi e a 500,00 per ogni consegna su 1000 messaggi, indipendentemente dal numero totale.
+Infine, puoi configurare un calcolo dei costi in base al numero totale di messaggi. A tal fine, selezionare una struttura di **[!UICONTROL Constant by threshold]** calcolo. Ad esempio, il costo verrà fissato a un importo fisso di 12,00 per 1 a 100 messaggi e a 100,00 per una consegna di 101 a 1000 messaggi e a 500,00 per ogni consegna su 1000 messaggi, indipendentemente dal numero totale.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
@@ -194,7 +191,7 @@ La **[!UICONTROL Amount to surcharge]** colonna consente di aggiungere un costo 
 
 I tipi di costo possono essere associati alle linee di magazzino per gestire avvisi, tenere traccia delle forniture e degli ordini di avvio.
 
-La procedura per l&#39;impostazione della gestione di scorte e ordini in Adobe Campaign e per avvisare gli operatori in caso di scorte insufficienti per la consegna è la seguente:
+La procedura per la costituzione della gestione delle scorte e degli ordini in  Adobe Campaign e gli operatori avvisatori in caso di scorte insufficienti per la consegna è la seguente:
 
 1. Creazione di scorte e riferimento a fornitori di servizi associati
 
@@ -214,7 +211,7 @@ La procedura per l&#39;impostazione della gestione di scorte e ordini in Adobe C
 
 ### Gestione delle scorte {#stock-management}
 
-Adobe Campaign può avvisare un gruppo di operatori se le scorte sono esaurite o hanno raggiunto una soglia minima. I livelli delle scorte sono accessibili attraverso il **[!UICONTROL Stocks]** collegamento dell&#39; **[!UICONTROL Campaigns]** universo attraverso il **[!UICONTROL Other choices]** collegamento dell&#39;area di navigazione.
+ Adobe Campaign può avvisare un gruppo di operatori se le scorte sono esaurite o hanno raggiunto una soglia minima. I livelli delle scorte sono accessibili attraverso il **[!UICONTROL Stocks]** collegamento dell&#39; **[!UICONTROL Campaigns]** universo attraverso il **[!UICONTROL Other choices]** collegamento dell&#39;area di navigazione.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
