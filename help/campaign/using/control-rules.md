@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ## Regole di analisi e di controllo dell&#39;arbitrato {#analysis-and-arbitration-control-rules}
 
-Le regole di controllo consentono di garantire la validità e la qualità dei messaggi prima della consegna: visualizzazione dei caratteri, dimensioni SMS, formato dell&#39;indirizzo, ecc.
+Le regole di controllo consentono di garantire la validità e la qualità dei messaggi prima della consegna: visualizzazione del carattere, dimensioni dell&#39;SMS, formato dell&#39;indirizzo, ecc.
 
 Una serie di regole pronte all&#39;uso consente di eseguire controlli consueti. Tali controlli (visualizzati in grassetto nell’interfaccia) sono:
 
@@ -37,7 +37,7 @@ Una serie di regole pronte all&#39;uso consente di eseguire controlli consueti. 
 * **[!UICONTROL Wave scheduling check]** (e-mail): controlla che l&#39;ultima serie di consegne abbia inizio prima della fine del periodo di validità, se la consegna è suddivisa in più ondate.
 * **[!UICONTROL Unsubscription link approval]** (e-mail): verifica la presenza di almeno un URL di annullamento iscrizione (rinuncia) in ciascun contenuto (HTML e testo).
 
-## Creazione di una regola di controllo {#creating-a-control-rule}
+## Creating a control rule {#creating-a-control-rule}
 
 È possibile creare nuove regole di controllo in base alle proprie esigenze. A tal fine, create una regola di **[!UICONTROL Control]** tipologia e immettete la formula di controllo in SQL nella **[!UICONTROL Code]** scheda.
 
