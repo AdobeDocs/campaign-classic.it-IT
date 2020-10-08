@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -25,14 +22,14 @@ ht-degree: 0%
 
 **La realizzabilità** consiste nel misurare il successo delle campagne che raggiungono la inbox dei destinatari senza rimbalzare o essere contrassegnate come spam.
 
-Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito della tua piattaforma. In questa sezione vengono inoltre evidenziati i principi principali da tenere a mente per la gestione e l&#39;ottimizzazione della recapito.
+ Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito della piattaforma. In questa sezione vengono inoltre evidenziati i principi principali da tenere a mente per la gestione e l&#39;ottimizzazione della recapito.
 
 ## Configurazione {#configuration}
 
-Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, il pacchetto deve essere installato. Al termine, riavviate il server per prendere in considerazione il pacchetto.
-* Per i client ospitati e ibridi, il monitoraggio **della** recapito è configurato sull&#39;istanza dall&#39;assistenza tecnica e dai consulenti Adobe. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
+Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign. Per utilizzarlo, il pacchetto deve essere installato. Al termine, riavviate il server per prendere in considerazione il pacchetto.
+* Per i client ospitati e ibridi, il monitoraggio **della** recapito è configurato sull&#39;istanza dall&#39;assistenza tecnica e dai consulenti  Adobe. Per ulteriori informazioni, contattate l&#39;amministratore  account di Adobe.
 
-* Per le installazioni in sede, è necessario installare il **[!UICONTROL Deliverability monitoring (Email Deliverability)]** pacchetto tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Per ulteriori informazioni, consulta [Installazione dei pacchetti](../../installation/using/installing-campaign-standard-packages.md)standard di Campaign Classic.
+* Per le installazioni in sede, è necessario installare il **[!UICONTROL Deliverability monitoring (Email Deliverability)]** pacchetto tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Per ulteriori informazioni, consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)Campaign Classic standard.
 
 In Adobe Campaign Classic, il monitoraggio della **recapito** è gestito dal **[!UICONTROL Refresh for deliverability]** flusso di lavoro. È installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualificazione della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il **[!UICONTROL Deliverability monitoring (Email Deliverability)]** pacchetto, il flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consente di gestire attivamente la distribuzione della piattaforma.
 
