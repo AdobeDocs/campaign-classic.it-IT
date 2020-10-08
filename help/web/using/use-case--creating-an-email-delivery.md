@@ -1,7 +1,7 @@
 ---
-title: '"Caso di utilizzo: creazione di una consegna tramite e-mail"'
-seo-title: '"Caso di utilizzo: creazione di una consegna tramite e-mail"'
-description: '"Caso di utilizzo: creazione di una consegna tramite e-mail"'
+title: '"Caso d’uso: creazione di una consegna e-mail"'
+seo-title: '"Caso d’uso: creazione di una consegna e-mail"'
+description: '"Caso d’uso: creazione di una consegna e-mail"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 7cd6329c-63d5-4cf0-9451-f0b4c2eaf0dd
@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 3%
 
 ---
 
 
-# Caso di utilizzo: creazione di una consegna tramite e-mail{#use-case-creating-an-email-delivery}
+# Caso d’uso: creazione di una consegna e-mail{#use-case-creating-an-email-delivery}
 
-In questo caso d&#39;uso, verranno illustrati i passaggi necessari per progettare un&#39;e-mail di consegna tramite Adobe Campaign Digital Content Editor (DCE).
+In questo caso di utilizzo, verranno illustrati i passaggi necessari per progettare una distribuzione di e-mail utilizzando  Adobe Campaign Digital Content Editor (DCE).
 
 Il nostro obiettivo finale è quello di creare una consegna con un modello personalizzato che contenga:
 
@@ -39,13 +39,13 @@ Il nostro obiettivo finale è quello di creare una consegna con un modello perso
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
-Per creare una nuova consegna, posizionate il cursore nella scheda **Campagne** e fate clic su **Consegne**. Fare clic sul pulsante **Crea** sopra l&#39;elenco delle consegne esistenti. Per ulteriori informazioni sulla creazione di consegne, consulta [questa pagina](../../delivery/using/about-email-channel.md).
+Per creare una nuova consegna, posizionate il cursore nella scheda **Campagne** e fate clic su **Consegne**. Fare clic sul pulsante **Crea** sopra l&#39;elenco delle consegne esistenti. For more on creating deliveries, refer to [this page](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
 ## Passaggio 2 - Selezione di un modello {#step-2---selecting-a-template}
 
-Selezionate un modello di consegna, quindi assegnate un nome alla consegna. Questo nome sarà visibile solo agli utenti della console Adobe Campaign e non ai destinatari, ma questa intestazione verrà visualizzata nell&#39;elenco delle consegne. Clic **[!UICONTROL Continue]**.
+Selezionate un modello di consegna, quindi assegnate un nome alla consegna. Questo nome sarà visibile solo agli utenti della console  Adobe Campaign e non ai destinatari, ma questa intestazione verrà visualizzata nell’elenco delle consegne. Fai clic su **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -57,15 +57,15 @@ Selezionate il modello di contenuto da utilizzare, quindi fate clic sul **[!UICO
 
 ![](assets/dce_select_model.png)
 
-Puoi anche importare un contenuto HTML creato al di fuori di Adobe Campaign selezionando **[!UICONTROL From a file]**.
+Potete anche importare un contenuto HTML creato al di fuori di  Adobe Campaign selezionando **[!UICONTROL From a file]**.
 
 ![](assets/dce_select_from_file_template.png)
 
-Potete salvare questo contenuto come modello da utilizzare in futuro. Una volta creato un modello di contenuto personalizzato, potete visualizzarlo in anteprima dall&#39;elenco dei modelli. Per ulteriori informazioni, consulta Gestione [dei](../../web/using/template-management.md)modelli.
+Potete salvare questo contenuto come modello da utilizzare in futuro. Una volta creato un modello di contenuto personalizzato, potete visualizzarlo in anteprima dall&#39;elenco dei modelli. For more on this, refer to [Template management](../../web/using/template-management.md).
 
 >[!CAUTION]
 >
->Se utilizzi l&#39;interfaccia **Web di** Adobe Campaign, devi importare un file .zip contenente il contenuto HTML e le immagini correlate.
+>Se utilizzate l&#39;interfaccia **Web** Adobe Campaign, dovete importare un file .zip contenente il contenuto HTML e le immagini correlate.
 
 ## Passaggio 4 - Progettazione del messaggio {#step-4---designing-the-message}
 
@@ -109,7 +109,7 @@ Potete salvare questo contenuto come modello da utilizzare in futuro. Una volta 
 
 * Integrazione di un collegamento a un&#39;applicazione Web
 
-   Digital Content Editor consente di integrare i collegamenti alle applicazioni Web dalla console di Adobe Campaign, ad esempio una pagina di destinazione o una pagina di modulo. Per ulteriori informazioni, vedere [Collegamento a un&#39;applicazione](../../web/using/editing-content.md#link-to-a-web-application)Web.
+   Digital Content Editor consente di integrare i collegamenti alle applicazioni Web dalla console  Adobe Campaign, ad esempio una pagina di destinazione o una pagina di modulo. Per ulteriori informazioni, vedere [Collegamento a un&#39;applicazione](../../web/using/editing-content.md#link-to-a-web-application)Web.
 
    Selezionare un campo di testo per il collegamento a un&#39;applicazione Web, quindi fare clic sulla prima icona. Scegliete **[!UICONTROL Link to a Web application]**, quindi selezionate l&#39;applicazione desiderata facendo clic sull&#39;icona alla fine del campo Applicazione **** Web.
 
