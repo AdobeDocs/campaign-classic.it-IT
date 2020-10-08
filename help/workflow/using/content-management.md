@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 13b72aa1-de40-4548-835b-97e765e04e95
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Un&#39;attività di gestione **del** contenuto consente di creare e manipolare u
 
 >[!CAUTION]
 >
->La gestione dei contenuti è un modulo Adobe Campaign opzionale. Controllare il contratto di licenza.
+>La gestione dei contenuti è un modulo Adobe Campaign  facoltativo. Controlla il contratto di licenza.
 
 Le proprietà dell&#39;attività sono suddivise in tre fasi:
 
@@ -36,7 +36,7 @@ Le proprietà dell&#39;attività sono suddivise in tre fasi:
 
    ![](assets/content_mgmt_edit.png)
 
-   Per ulteriori informazioni sulla configurazione e l&#39;utilizzo della gestione dei contenuti in Adobe Campaign, consulta questa [sezione](../../delivery/using/about-content-management.md).
+   Per ulteriori informazioni sulla configurazione e l&#39;utilizzo della gestione dei contenuti in  Adobe Campaign, consultare questa [sezione](../../delivery/using/about-content-management.md).
 
 1. **Contenuto**
 
