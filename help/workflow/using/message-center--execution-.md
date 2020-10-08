@@ -1,7 +1,7 @@
 ---
-title: Centro messaggi (esecuzione)
-seo-title: Centro messaggi (esecuzione)
-description: Centro messaggi (esecuzione)
+title: Centro messaggi (Esecuzione)
+seo-title: Centro messaggi (Esecuzione)
+description: Centro messaggi (Esecuzione)
 seo-description: null
 page-status-flag: never-activated
 uuid: 8dfb09d1-da00-43fb-9df4-243bb915cbde
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: dc3d8998-9493-4d71-b3e2-6f9531cb9bac
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 7%
 
 ---
 
 
-# Centro messaggi (esecuzione){#message-center-execution}
+# Centro messaggi (Esecuzione){#message-center-execution}
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Centro messaggi - Esecuzione** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../message-center/using/about-transactional-messaging.md).
+Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono installati con il modulo **Centro messaggi - Esecuzione** . For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
 Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, consulta [questa pagina](../../message-center/using/technical-workflows.md).
 
@@ -34,8 +34,8 @@ Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relati
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Aggiorna stato</span> evento <br /> </td> 
-   <td> <span class="uicontrol">updateEventsStatus</span><br /> </td> 
+   <td> <span class="uicontrol">Update event status</span> <br /> </td> 
+   <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Questo flusso di lavoro consente di assegnare uno stato a un evento. Gli stati dell'evento sono i seguenti:<br /> 
     <ul> 
      <li> <p><strong>In sospeso</strong>: l'evento è in coda. Non è ancora stato associato alcun modello di messaggio.</p> </li> 
@@ -47,13 +47,13 @@ Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relati
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Elaborazione degli eventi</span> batch <br /> </td> 
-   <td> <span class="uicontrol">batchEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Elaborazione degli eventi batch</span> <br /> </td> 
+   <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
    <td> Questo flusso di lavoro consente di mettere in coda gli eventi batch prima di associarli a un modello di messaggio. <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Elaborazione di eventi</span> in tempo reale <br /> </td> 
-   <td> <span class="uicontrol">rtEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">Elaborazione di eventi in tempo reale</span> <br /> </td> 
+   <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
    <td> Questo flusso di lavoro consente di mettere in coda gli eventi in tempo reale prima di associarli a un modello di messaggio. <br /> </td> 
   </tr> 
  </tbody> 
