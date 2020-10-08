@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di indirizzi iniziali
-seo-title: Aggiunta di indirizzi iniziali
-description: Aggiunta di indirizzi iniziali
+title: Aggiunta di indirizzi di seed
+seo-title: Aggiunta di indirizzi di seed
+description: Aggiunta di indirizzi di seed
 seo-description: null
 page-status-flag: never-activated
 uuid: e94ddd46-bed6-4505-91b7-7e17abb0e9c8
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: 0b9b53bf-4dd2-416c-894e-393aded489f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 5%
 
 ---
 
 
-# Aggiunta di indirizzi iniziali{#adding-seed-addresses}
+# Aggiunta di indirizzi di seed{#adding-seed-addresses}
 
 ## Indirizzi delle sementi in una consegna {#seed-addresses-in-a-delivery}
 
@@ -32,7 +32,7 @@ Esistono tre possibili modalità di inserimento:
 
 1. Inserimento di indirizzi iniziali singoli.
 
-   A questo scopo, fate clic sul **[!UICONTROL Add]** pulsante e definite il contenuto dei campi indirizzo. Ripetere la procedura per ogni indirizzo. For more on this, refer to [this section](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   A questo scopo, fate clic sul **[!UICONTROL Add]** pulsante e definite il contenuto dei campi indirizzo. Ripetere la procedura per ogni indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
 
 1. Importazione di modelli di indirizzo e loro adattamento in base alle esigenze.
 
@@ -44,11 +44,11 @@ Esistono tre possibili modalità di inserimento:
 
    A questo scopo, fate clic sul **[!UICONTROL Edit the dynamic condition...]** collegamento, quindi immettete i parametri di selezione dell&#39;indirizzo e-mail. Ad esempio, potete includere tutti gli indirizzi iniziali contenuti in una cartella specifica, o gli indirizzi iniziali appartenenti a un reparto specifico della vostra organizzazione.
 
-   Un esempio è illustrato in questa sezione: Caso [di utilizzo: selezione degli indirizzi iniziali sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Un esempio è illustrato in questa sezione: [Caso di utilizzo: selezione degli indirizzi iniziali sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->Questa opzione viene utilizzata quando la tabella dei destinatari utilizzata non è la tabella **nms:destinatari** predefinita e si utilizza la funzionalità di rendering Posta in arrivo fornita con il **[!UICONTROL Deliverability]** modulo di Adobe Campaign.
+>Questa opzione viene utilizzata quando la tabella dei destinatari utilizzata non è la tabella **nms:destinatari** predefinita e si utilizza la funzionalità di rendering Posta in arrivo fornita con  modulo Adobe Campaign **[!UICONTROL Deliverability]** .
 >
 >Per ulteriori informazioni, consultare [Utilizzo di una tabella](../../delivery/using/using-an-external-recipient-table.md) di destinazione esterna e la documentazione sul rendering [](../../delivery/using/inbox-rendering.md)Inbox.
 
