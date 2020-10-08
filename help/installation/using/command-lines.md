@@ -1,7 +1,7 @@
 ---
-title: Linee di comando
-seo-title: Linee di comando
-description: Linee di comando
+title: Righe di comando
+seo-title: Righe di comando
+description: Righe di comando
 seo-description: null
 page-status-flag: never-activated
 uuid: fa897d6a-0326-4922-8936-2471af2f213c
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 3621d4ec-8839-40c3-a574-486c408f79ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 
-# Linee di comando{#command-lines}
+# Righe di comando{#command-lines}
 
-Le seguenti righe di comando richiedono la capacità di accedere al server dell&#39;applicazione. Per le distribuzioni ospitate da Adobe, questi comandi possono essere eseguiti solo da Adobe.
+Le seguenti righe di comando richiedono la capacità di accedere al server dell&#39;applicazione. Per le distribuzioni ospitate da  Adobe, questi comandi possono essere eseguiti solo da  Adobe.
 
 ## Creazione di un’istanza {#creating-an-instance}
 
@@ -51,7 +51,7 @@ I seguenti valori sono possibili per il **`[rdbms]`** parametro:
 * **mssql**: per Microsoft SQL Server,
 * **DB2**: per il motore DB2.
 
-Il seguente comando configura l&#39;istanza **demo** con il server di tipo SQL denominato **base6**, collegato all&#39;account **campagna** e alla relativa **password** sul server **dbsrv** :
+Il seguente comando configura l&#39;istanza **demo** con il server di tipo SQL noto come **base6**, collegato all&#39;account **campagna** e alla relativa **password** sul server **dbsrv** :
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
