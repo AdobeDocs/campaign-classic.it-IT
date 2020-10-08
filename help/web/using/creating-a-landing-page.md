@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: 5f1e5886-628f-4c9e-80c1-d82feec23e8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 3%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ## Creazione di pagine di destinazione {#about-landing-pages-creation}
 
-Questo caso d’uso mostra l’utilizzo dell’editor digitale per creare una pagina di destinazione dalla console di Adobe Campaign.
+Questo caso d’uso mostra l’utilizzo dell’editor digitale per creare una pagina di destinazione dalla console Adobe Campaign .
 
-Prima di iniziare a configurare la pagina di destinazione in Adobe Campaign, accertati di disporre di **uno o più modelli** per rappresentare le pagine HTML.
+Prima di iniziare a configurare la pagina di destinazione in  Adobe Campaign, accertatevi di disporre di **uno o più modelli** per rappresentare le pagine HTML.
 
-Lo scopo principale di questo caso di utilizzo è far corrispondere i campi del modulo Pagina di destinazione ai campi interni di Adobe Campaign utilizzando le funzioni di DCE.
+Lo scopo principale di questo caso di utilizzo è far corrispondere i campi del modulo Pagina di destinazione ai campi interni di  Adobe Campaign utilizzando le funzioni di DCE.
 
-## Creazione della pagina di destinazione {#creating-the-landing-page}
+## Creating the landing page {#creating-the-landing-page}
 
 Per creare una nuova applicazione Web di tipo Pagina di destinazione, procedere come segue:
 
@@ -39,7 +39,7 @@ Per creare una nuova applicazione Web di tipo Pagina di destinazione, procedere 
 
    ![](assets/dce_uc1_newlandingpage.png)
 
-1.  Fate clic sulla **[!UICONTROL Edit]** scheda.
+1. Fate clic sulla **[!UICONTROL Edit]** scheda.
 1. Eliminate l&#39;attività **End** .
 1. Aggiungete un&#39; **[!UICONTROL Page]** attività dopo l&#39; **[!UICONTROL Storage]** attività.
 1. Modificate l&#39;attività **Pagina 2** , quindi deselezionate l&#39; **[!UICONTROL Activate outbound transitions]** opzione nella **[!UICONTROL Properties]** scheda.
@@ -86,8 +86,8 @@ Per caricare il modello sulla prima pagina, effettuate le seguenti operazioni:
    >
    >Prima di chiudere è necessario attendere il messaggio seguente: **[!UICONTROL The external resources have been successfully published]** .
 
-1.  Fate clic sulla **[!UICONTROL Properties]** scheda.
-1. Inserite un’ **etichetta** per ciascuna pagina (ad esempio: Pagina 1= Raccolta, Pagina 2=Grazie).
+1. Fate clic sulla **[!UICONTROL Properties]** scheda.
+1. Inserite un’ **etichetta** per ciascuna pagina (ad esempio: Pagina 1= Raccogli, Pagina 2=Grazie).
 
    ![](assets/dce_uc1_pagelabel.png)
 
@@ -95,7 +95,7 @@ Applicare questi passaggi per ogni pagina inserita nell&#39;applicazione Web.
 
 >[!CAUTION]
 >
->**DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello HTML che possono essere visualizzati nell&#39;interfaccia di Adobe Campaign. Questi errori non sono correlati all&#39;editor. Per verificare che non ci siano errori nei file importati, si consiglia di testarli in un browser (Internet Explorer / Firefox / Chrome) prima di importare i file in DCE.
+>**DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello HTML che possono essere visualizzati nell&#39;interfaccia Adobe Campaign . Questi errori non sono correlati all&#39;editor. Per verificare che non ci siano errori nei file importati, si consiglia di testarli in un browser (Internet Explorer / Firefox / Chrome) prima di importare i file in DCE.
 
 ## Passaggio 2 - Configurazione del contenuto {#step-2---configuring-the-content}
 
