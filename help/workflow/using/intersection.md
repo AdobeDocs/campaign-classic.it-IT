@@ -1,7 +1,7 @@
 ---
-title: Intersezione
-seo-title: Intersezione
-description: Intersezione
+title: Intersection
+seo-title: Intersection
+description: Intersection
 seo-description: null
 page-status-flag: never-activated
 uuid: a8ff7a66-6c12-4e3c-ad45-d11b34ca64ff
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: d0dd9c74-aad5-452e-a11d-c231dacd2aec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
 
-# Intersezione{#intersection}
+# Intersection{#intersection}
 
 Un&#39;attività di tipo **Intersezione** crea un target dall&#39;intersezione dei target ricevuti.
 
@@ -30,7 +30,7 @@ Un&#39;intersezione consente di estrarre solo la popolazione comune a tutti i ri
 
 Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, vedere [Estrazione di dati comuni (Intersezione)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
 
-Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera elaborare la popolazione rimanente. Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione in uscita, come segue:
+Check the **[!UICONTROL Generate complement]** option if you wish to process the remaining population. Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione in uscita, come segue:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
