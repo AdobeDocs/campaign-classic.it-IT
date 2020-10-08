@@ -1,7 +1,7 @@
 ---
-title: Come utilizzare i dati del flusso di lavoro
-seo-title: Come utilizzare i dati del flusso di lavoro
-description: Come utilizzare i dati del flusso di lavoro
+title: Come utilizzare i dati dei flussi di lavoro
+seo-title: Come utilizzare i dati dei flussi di lavoro
+description: Come utilizzare i dati dei flussi di lavoro
 seo-description: null
 page-status-flag: never-activated
 uuid: ed03f14b-1b53-426e-9213-22cb2f3deb19
@@ -11,27 +11,24 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# Come utilizzare i dati del flusso di lavoro{#how-to-use-workflow-data}
+# Come utilizzare i dati dei flussi di lavoro{#how-to-use-workflow-data}
 
-## Aggiornamento del database {#updating-the-database}
+## Updating the database {#updating-the-database}
 
 Tutti i dati raccolti possono essere utilizzati per aggiornare il database o nelle consegne. Ad esempio, puoi arricchire le possibilità di personalizzazione dei contenuti dei messaggi (includere il numero di contratti nel messaggio, specificare il carrello medio degli acquisti nell&#39;ultimo anno, ecc.) o targeting dettagliato della popolazione (inviare un messaggio ai co-possessori del contratto, indirizzare i 1000 migliori abbonati ai servizi online, ecc.). Questi dati possono essere esportati o archiviati in un elenco.
 
 ### Elenchi e aggiornamenti diretti {#lists-and-direct-updates}
 
-I dati del database del Adobe Campaign  e gli elenchi esistenti possono essere aggiornati utilizzando due attività dedicate:
+I dati del database Adobe Campaign  e gli elenchi esistenti possono essere aggiornati utilizzando due attività dedicate:
 
 * L&#39; **[!UICONTROL List update]** attività consente di memorizzare le tabelle di lavoro in un datalist.
 
@@ -77,7 +74,7 @@ Se un codice del segmento viene specificato in un&#39;attività di targeting, vi
 
 ![](assets/s_advuser_segment_code_select.png)
 
-## Esportazione dei dati {#exporting-data}
+## Esportazione di dati {#exporting-data}
 
 ### Zipping o cifratura di un file {#zipping-or-encrypting-a-file}
 
@@ -85,13 +82,13 @@ Se un codice del segmento viene specificato in un&#39;attività di targeting, vi
 
 Per essere in grado di effettuare le seguenti operazioni:
 
-1. Installate una coppia di chiavi GPG per la vostra istanza utilizzando il [Pannello](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)di controllo.
+1. Installate una coppia di chiavi GPG per la vostra istanza utilizzando l&#39; [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
    >[!NOTE]
    >
-   >Il Pannello di controllo è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
+   >Il Pannello di controllo Campaign è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
 
-1. Se l&#39;installazione di  Adobe Campaign è ospitata da Adobe, contatta l&#39;Assistenza clienti Adobe per richiedere che sul server siano installate le utility necessarie.
+1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contatta  Assistenza clienti Adobe per avere installato sul server le utility necessarie.
 1. Se l&#39;installazione di  Adobe Campaign è in sede, installate l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
 
 Potete quindi utilizzare i comandi o il codice nella **[!UICONTROL Script]** scheda dell&#39;attività o in un&#39; **[!UICONTROL JavaScript code]** attività. Un esempio è illustrato nel caso di utilizzo riportato di seguito.
@@ -101,17 +98,17 @@ Potete quindi utilizzare i comandi o il codice nella **[!UICONTROL Script]** sch
 * [Estrazione o decrittografia di un file prima dell&#39;elaborazione](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
 * [Attività](../../workflow/using/extraction--file-.md)di estrazione dei dati (file).
 
-### Caso di utilizzo: Cifratura ed esportazione dei dati tramite una chiave installata nel Pannello di controllo {#use-case-gpg-encrypt}
+### Caso di utilizzo: Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign {#use-case-gpg-encrypt}
 
-In questo caso, verrà creato un flusso di lavoro per la cifratura e l&#39;esportazione dei dati tramite una chiave installata nel Pannello di controllo.
+In questo caso, verrà creato un flusso di lavoro per la cifratura e l&#39;esportazione dei dati tramite una chiave installata sul Pannello di controllo Campaign.
 
 In [questa sezione](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)è disponibile anche un video di esercitazione che mostra come utilizzare una chiave GPG per cifrare i dati.
 
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
-1. Generare una coppia di chiavi GPG (pubblica/privata) utilizzando un&#39;utility GPG, quindi installare la chiave pubblica nel Pannello di controllo. I passaggi dettagliati sono disponibili nella documentazione [del Pannello di](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)controllo.
+1. Generate una coppia di chiavi GPG (pubblica/privata) utilizzando un&#39;utility GPG, quindi installate la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella documentazione [dell&#39;](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)Pannello di controllo Campaign.
 
-1. In Campaign Classic, creare un flusso di lavoro per esportare i dati ed esportarli utilizzando la chiave privata installata tramite il Pannello di controllo. A tal fine, verrà creato un flusso di lavoro come segue:
+1. In Campaign Classic, genera un flusso di lavoro per esportare i dati ed esportarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -130,7 +127,7 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
    >[!IMPORTANT]
    >
-   >Sostituite il valore dell’ **impronta digitale** del comando con l’impronta digitale della chiave pubblica installata nel Pannello di controllo.
+   >Sostituite il valore dell&#39; **impronta digitale** del comando con l&#39;impronta digitale della chiave pubblica installata nel Pannello di controllo Campaign.
 
    ```
    var cmd='gpg ';
