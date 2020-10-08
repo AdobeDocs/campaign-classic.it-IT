@@ -1,5 +1,5 @@
 ---
-title: Ciclo di vita del flusso di lavoro
+title: Ciclo di vita di un flusso di lavoro
 description: Ulteriori informazioni sul ciclo di vita di un flusso di lavoro.
 page-status-flag: never-activated
 uuid: 7668f1a2-fcd0-41f8-b8f6-71d77bc47486
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Ciclo di vita del flusso di lavoro {#workflow-life-cycle}
+# Ciclo di vita di un flusso di lavoro {#workflow-life-cycle}
 
 Il ciclo di workflow presenta tre fasi principali.
 
