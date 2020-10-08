@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 6%
@@ -47,7 +44,7 @@ Per ottimizzare la distribuzione quando si gestiscono e-mail in grandi volumi ed
 
 **Suggerimento**:  Utilizza un indirizzo mittente trasparente corrispondente al sito Web del tuo marchio. Ad esempio, la società TravelAgency gestisce la catena alberghiera di Valentino. Possiede il dominio valentino.com per il suo sito web. Per promuovere il Valentino hotel a Parigi, utilizza il sottodominio paris.valentino.com. Pertanto, un indirizzo mittente rilevante può essere hotel@paris.valentino.com.
 
-## Gestione della distribuzione {#deliverability-management}
+## Gestione del recapito messaggi {#deliverability-management}
 
 Per raggiungere la casella in entrata dei destinatari senza rimbalzare o contrassegnare come spam, è necessario migliorare il tasso di recapito dei messaggi.
 
@@ -73,7 +70,7 @@ Quando iniziate a inviare e-mail su una nuova piattaforma, potete utilizzare un 
 
 * I destinatari i cui indirizzi sono posti in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito: non sono mirati. In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. Un indirizzo e-mail può essere messo in quarantena, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
 
-*  Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md).
+*  Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md).
 
 
 * Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare di essere aggiunta a un elenco Bloccati  da parte di questi fornitori.
