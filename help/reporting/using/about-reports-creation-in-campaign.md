@@ -1,7 +1,7 @@
 ---
-title: Creazione di report in Campaign
-seo-title: Creazione di report in Campaign
-description: Creazione di report in Campaign
+title: Informazioni sulla creazione di report in Campaign
+seo-title: Informazioni sulla creazione di report in Campaign
+description: Informazioni sulla creazione di report in Campaign
 seo-description: null
 page-status-flag: never-activated
 uuid: 9176ab80-c941-47a1-956a-3d1d63c403ba
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 11%
 
 ---
 
 
-# Creazione di report in Campaign{#about-reports-creation-in-campaign}
+# Informazioni sulla creazione di report in Campaign{#about-reports-creation-in-campaign}
 
 Per generare statistiche sui dati nel database Campaign, puoi creare rapporti e adattarne il contenuto e il layout in base alle tue esigenze. Tali rapporti possono essere condivisi con altri operatori.
 
