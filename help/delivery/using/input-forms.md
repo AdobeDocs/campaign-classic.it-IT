@@ -11,24 +11,24 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 2%
 
 ---
 
 
 # Moduli di input{#input-forms}
 
-Di seguito sono riportati alcuni principi generali relativi all&#39;uso dei moduli di input in Adobe Campaign.
+Di seguito sono riportati alcuni principi generali relativi all&#39;uso dei moduli di input in  Adobe Campaign.
 
-I moduli sono descritti in [questa sezione](../../configuration/using/identifying-a-form.md).
+Forms è dettagliato in [questa sezione](../../configuration/using/identifying-a-form.md).
 
-## Struttura del modulo {#form-structure}
+## Struttura di un modulo {#form-structure}
 
-Il documento XML di un modulo di input deve contenere l&#39;elemento **`<form>`** principale con gli attributi **name** e **namespace** per compilare rispettivamente il nome del modulo e il relativo spazio nomi.
+Il documento XML di un modulo di input deve contenere l&#39;elemento **`<form>`** principale con gli attributi **name** e **namespace** , rispettivamente per compilare il nome del modulo e il relativo spazio nomi.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -58,7 +58,7 @@ Un controllo di modifica viene immesso in un **`<input>`** elemento con l&#39;at
 
 **Promemoria relativa alla sintassi XPath:**
 
-Il linguaggio XPath viene utilizzato in Adobe Campaign per fare riferimento a un elemento o attributo appartenente a uno schema di dati.
+Il linguaggio XPath viene utilizzato in  Adobe Campaign per fare riferimento a un elemento o attributo appartenente a uno schema di dati.
 
 XPath è una sintassi che consente di individuare un nodo nella struttura di un documento XML.
 
@@ -72,7 +72,7 @@ Esempi:
 
 Il controllo edit si adatta automaticamente al tipo di dati corrispondente e utilizza l&#39;etichetta definita nello schema.
 
-Per impostazione predefinita, ogni campo viene visualizzato su una riga e occupa tutto lo spazio disponibile, a seconda del tipo di dati.
+Per impostazione predefinita, ogni campo viene visualizzato su una sola riga e occupa tutto lo spazio disponibile, a seconda del tipo di dati.
 
 >[!CAUTION]
 >
@@ -80,9 +80,9 @@ Per impostazione predefinita, ogni campo viene visualizzato su una riga e occupa
 
 ## Formattazione {#formatting}
 
-La disposizione dei controlli è simile a quella utilizzata nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di elementi di interlacciamento o di specificare l&#39;occupazione dello spazio disponibile. Tuttavia, la formattazione autorizza solo la distribuzione delle proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
+La disposizione dei controlli è simile a quella utilizzata nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di elementi di interlacciamento o di specificare l&#39;occupazione dello spazio disponibile. Tenere presente, tuttavia, che la formattazione autorizza solo la distribuzione delle proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
 
-For more on this, refer to [this section](../../configuration/using/form-structure.md#formatting).
+Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/form-structure.md#formatting).
 
 ## Controlli del tipo di elenco {#list-type-controls}
 
@@ -175,7 +175,7 @@ Questo elenco presenta la modifica degli elementi della raccolta sotto forma di 
 </container>
 ```
 
-Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;blocco appunti&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
+Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;blocco appunti&quot;** , e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
 
 Il titolo della scheda contiene il valore dei dati immessi tramite l&#39;attributo **xpath-label** .
 
