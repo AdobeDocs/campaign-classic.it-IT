@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Principi {#principles}
 
-Per modificare, creare e configurare gli schemi, fai clic sul **[!UICONTROL Administration > Configuration > Data schemas]** nodo della console client di Adobe Campaign.
+Per modificare, creare e configurare gli schemi, fate clic sul **[!UICONTROL Administration > Configuration > Data schemas]** nodo della console client Adobe Campaign .
 
 >[!NOTE]
 >
@@ -48,15 +48,15 @@ L&#39;anteprima genera automaticamente lo schema esteso:
 >
 >Quando lo schema di origine viene salvato, la generazione dello schema esteso viene avviata automaticamente.
 
-Per verificare la struttura completa di uno schema, è possibile utilizzare la scheda Anteprima. Se lo schema è stato esteso, sarà possibile visualizzare tutte le sue estensioni. Come complemento, nella scheda Documentazione sono visualizzati tutti gli attributi e gli elementi dello schema e le relative proprietà (Campo SQL, tipo/lunghezza, etichetta, descrizione). La scheda Documentazione si applica solo agli schemi generati. Per ulteriori informazioni, vedere la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) .
+Per verificare la struttura completa di uno schema, è possibile utilizzare la scheda Anteprima. Se lo schema è stato esteso, sarà possibile visualizzare tutte le sue estensioni. Come complemento, nella scheda Documentazione sono visualizzati tutti gli attributi e gli elementi dello schema e le relative proprietà (Campo SQL, tipo/lunghezza, etichetta, descrizione). La scheda Documentazione si applica solo agli schemi generati. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## Esempio: creazione di una tabella di contratto {#example--creating-a-contract-table}
 
-Nell&#39;esempio seguente, vogliamo creare una nuova tabella per i **contratti** nel modello di database del database di Adobe Campaign. Questa tabella consente di memorizzare i nomi e i cognomi e gli indirizzi e-mail di titolari e co-possessori per ogni contratto.
+Nell&#39;esempio seguente, si desidera creare una nuova tabella per **i contratti** nel modello di database del database Adobe Campaign . Questa tabella consente di memorizzare i nomi e i cognomi e gli indirizzi e-mail di titolari e co-possessori, per ogni contratto.
 
 A tal fine, è necessario creare lo schema della tabella e aggiornare la struttura del database per generare la tabella corrispondente. Applicate le seguenti fasi:
 
-1. Modifica il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura ad albero di Adobe Campaign e fai clic su **[!UICONTROL New]** .
+1. Modificate il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura di Adobe Campaign  e fate clic su **[!UICONTROL New]** .
 1. Scegliete l’ **[!UICONTROL Create a new table in the data model]** opzione e fate clic su **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
@@ -91,7 +91,7 @@ A tal fine, è necessario creare lo schema della tabella e aggiornare la struttu
    </srcSchema>
    ```
 
-   Aggiungere il tipo di contratto e inserire un indice sul numero di contratto.
+   Aggiungere il tipo di contratto e inserire un indice sul numero del contratto.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -125,5 +125,5 @@ A tal fine, è necessario creare lo schema della tabella e aggiornare la struttu
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Aggiornare la struttura del database per creare la tabella a cui verrà collegato lo schema. Per ulteriori informazioni, vedere [Aggiornamento della struttura](../../configuration/using/updating-the-database-structure.md)del database.
+1. Aggiornare la struttura del database per creare la tabella a cui verrà collegato lo schema. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
 
