@@ -1,7 +1,7 @@
 ---
-title: Esecuzione del flusso di lavoro di monitoraggio
-seo-title: Esecuzione del flusso di lavoro di monitoraggio
-description: Esecuzione del flusso di lavoro di monitoraggio
+title: Monitoraggio dell’esecuzione dei flussi di lavoro
+seo-title: Monitoraggio dell’esecuzione dei flussi di lavoro
+description: Monitoraggio dell’esecuzione dei flussi di lavoro
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2001'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Esecuzione del flusso di lavoro di monitoraggio {#monitoring-workflow-execution}
+# Monitoraggio dell’esecuzione dei flussi di lavoro {#monitoring-workflow-execution}
 
 In questa sezione vengono fornite informazioni su come monitorare l&#39;esecuzione dei flussi di lavoro.
 
@@ -47,7 +44,7 @@ Quando questa opzione è selezionata, le attività eseguite sono visualizzate in
 
 ## Visualizzazione dei registri {#displaying-logs}
 
-Il registro contiene la cronologia o la traccia di controllo del flusso di lavoro. Registra tutte le azioni degli utenti, tutte le operazioni eseguite e gli errori rilevati. È possibile:
+Il registro contiene la cronologia o la traccia di controllo del flusso di lavoro. Registra tutte le azioni degli utenti, tutte le operazioni eseguite e gli errori rilevati. Puoi:
 
 * Selezionate la **[!UICONTROL Tracking]** scheda nel dettaglio. Questo elenco contiene tutti i messaggi del flusso di lavoro.
 
@@ -105,7 +102,7 @@ Il registro mostra l&#39;elenco cronologico dei messaggi di esecuzione relativi 
 
 ## Rimozione dei registri {#purging-the-logs}
 
-La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere rimossa dal **[!UICONTROL File > Actions]** menu o facendo clic sul **[!UICONTROL Actions]** pulsante situato nella barra degli strumenti sopra l&#39;elenco. Selezionare **[!UICONTROL Purge history]**. Le opzioni disponibili nel **[!UICONTROL Actions]** menu sono dettagliate nella sezione della barra degli strumenti [](../../workflow/using/starting-a-workflow.md) Azioni.
+La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere rimossa dal **[!UICONTROL File > Actions]** menu o facendo clic sul **[!UICONTROL Actions]** pulsante situato nella barra degli strumenti sopra l&#39;elenco. Seleziona **[!UICONTROL Purge history]**. Le opzioni disponibili nel **[!UICONTROL Actions]** menu sono dettagliate nella sezione della barra degli strumenti [](../../workflow/using/starting-a-workflow.md) Azioni.
 
 ![](assets/purge_historique.png)
 
@@ -123,7 +120,7 @@ Quando si verifica un errore, il flusso di lavoro viene messo in pausa e l&#39;a
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-In Esplora Adobi Campaign , l&#39;elenco dei flussi di lavoro visualizza una **[!UICONTROL Failed]** colonna per impostazione predefinita.
+In Adobe Campaign Explorer , l&#39;elenco dei flussi di lavoro visualizza una **[!UICONTROL Failed]** colonna per impostazione predefinita.
 
 ![](assets/wf-explorer_errors_col.png)
 
@@ -175,7 +172,7 @@ Se possibile, si consiglia di riavviare completamente il flusso di lavoro dopo a
 
 ## Controllo istanza {#instance-supervision}
 
-La **[!UICONTROL Instance supervision]** pagina consente di visualizzare l&#39;attività del server di Adobe Campaign  e visualizzare l&#39;elenco dei flussi di lavoro e delle consegne con errori.
+La **[!UICONTROL Instance supervision]** pagina consente di visualizzare l&#39;attività  server Adobe Campaign e visualizzare l&#39;elenco dei flussi di lavoro e delle consegne con errori.
 
 Per accedere a questa pagina, vai all&#39; **[!UICONTROL Monitoring]** universo e fai clic sul **[!UICONTROL General view]** collegamento.
 
@@ -244,7 +241,7 @@ Un caso di utilizzo è presentato in questa sezione: [Coordinare gli aggiornamen
 
 I flussi di lavoro utilizzano molte tabelle di lavoro che occupano spazio e finiscono per rallentare l&#39;intera piattaforma se non viene mantenuta. Per ulteriori informazioni sulla manutenzione del database, consultate questa [sezione](../../production/using/tables-to-maintain.md) .
 
-Il flusso di lavoro di pulizia **del** database accessibile tramite il nodo **Amministrazione > Produzione > Flussi** di lavoro tecnici, consente di eliminare i dati obsoleti per evitare la crescita esponenziale del database. Il flusso di lavoro viene attivato automaticamente senza l&#39;intervento dell&#39;utente. Fare riferimento a questa [sezione](../../production/using/database-cleanup-workflow.md).
+Il flusso di lavoro di pulizia **del** database accessibile tramite il nodo **Amministrazione > Produzione > Flussi** di lavoro tecnici, consente di eliminare i dati obsoleti per evitare la crescita esponenziale del database. Il flusso di lavoro viene attivato automaticamente senza l&#39;intervento dell&#39;utente. Refer to this [section](../../production/using/database-cleanup-workflow.md).
 
 È inoltre possibile creare flussi di lavoro tecnici specifici per eliminare lo spazio necessario per i dati. Fare riferimento a questa [sezione](../../production/using/application-objects.md) e a questa [pagina](#purging-the-logs).
 
