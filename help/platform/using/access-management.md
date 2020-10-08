@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +32,7 @@ ht-degree: 1%
 
 Le autorizzazioni si applicano ai profili dell&#39;operatore o ai gruppi di operatori.
 
-Vengono completati da parametri di sicurezza collegati alla modalità di connessione dell&#39;operatore a  Adobe Campaign. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Vengono completati da parametri di sicurezza collegati alla modalità di connessione dell&#39;operatore a  Adobe Campaign. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
@@ -132,7 +129,7 @@ Il **[!UICONTROL Edit the access parameters...]** collegamento consente di acced
 
 * L&#39; **[!UICONTROL Disable account]** opzione consente di disabilitare l&#39;account dell&#39;operatore: non accederà più  Adobe Campaign.
 * L&#39; **[!UICONTROL Forbid access from the rich client]** opzione consente di limitare l&#39;uso di  Adobe Campaign all&#39;accesso [](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) Web o tramite API: l&#39;accesso alla console client Adobe Campaign  non è più disponibile.
-* È possibile collegare una zona di sicurezza all&#39;operatore. For more on this, refer to [this page](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+* È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Potete anche definire una maschera IP affidabile utilizzando il collegamento appropriato.
 
    L&#39;operatore sarà in grado di connettersi a  Adobe Campaign senza immettere la password, se l&#39;indirizzo IP è incluso in questo elenco.
