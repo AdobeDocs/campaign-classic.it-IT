@@ -1,7 +1,7 @@
 ---
-title: Offerte su un canale in ingresso
-seo-title: Offerte su un canale in ingresso
-description: Offerte su un canale in ingresso
+title: Offerte su un canale in entrata
+seo-title: Offerte su un canale in entrata
+description: Offerte su un canale in entrata
 seo-description: null
 page-status-flag: never-activated
 uuid: 45cfc990-da38-451b-b65e-e9703e443a4d
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2093'
+ht-degree: 1%
 
 ---
 
 
-# Offerte su un canale in ingresso{#offers-on-an-inbound-channel}
+# Offerte su un canale in entrata{#offers-on-an-inbound-channel}
 
 ## Presentazione di un&#39;offerta a un visitatore anonimo {#presenting-an-offer-to-an-anonymous-visitor}
 
@@ -65,6 +65,7 @@ Verrà visualizzata una struttura ad albero contenente il nuovo ambiente:
    * Contenuto HTML
    * URL immagine
    * URL di destinazione
+
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Modificate la funzione di rendering HTML, ad esempio come segue:
@@ -100,7 +101,7 @@ Verrà visualizzata una struttura ad albero contenente il nuovo ambiente:
 ### Creazione di offerte anonime {#creating-anonymous-offers}
 
 1. Passate alla categoria appena creata.
-1. Clic **[!UICONTROL New]**.
+1. Fai clic su **[!UICONTROL New]**.
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
@@ -209,7 +210,7 @@ Le offerte che devono essere presentate sul sito web appartengono a due diverse 
 
 Per creare uno spazio di offerta che corrisponda alla categoria **Migliore offerta** , effettuate le seguenti operazioni:
 
-1. Nell&#39;albero di Adobe Campaign, accedi all&#39;ambiente anonimo appena creato e aggiungi uno spazio per le offerte.
+1. Nella struttura  di Adobe Campaign, andate all’ambiente anonimo appena creato e aggiungete uno spazio per le offerte.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
@@ -217,7 +218,7 @@ Per creare uno spazio di offerta che corrisponda alla categoria **Migliore offer
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Immettete un’etichetta: La migliore offerta **anonima** Web, per esempio.
+1. Immettete un’etichetta: **Migliore offerta** anonima Web, per esempio.
 1. Aggiungete i campi del contenuto dell&#39;offerta utilizzati per questo spazio e configurate le funzioni di rendering.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -288,7 +289,7 @@ Le offerte che state per presentare sul sito web sono prese da due diverse categ
 
 Per creare i due spazi di offerta, applicate la stessa procedura utilizzata per gli spazi di offerta anonimi. Consultate [Configurazione degli spazi di offerta per l’ambiente](#configuring-offer-spaces-for-the-anonymous-environment)anonimo.
 
-1. Nell&#39;albero di Adobe Campaign, accedi all&#39;ambiente appena creato e aggiungi gli spazi per le offerte **Migliore offerta** e **Partner** .
+1. Nella struttura  di Adobe Campaign, andate all&#39;ambiente appena creato e aggiungete gli spazi **Migliore offerta** e **Partner** .
 1. Applicate il processo descritto in [Configurazione degli spazi di offerta per l&#39;ambiente](#configuring-offer-spaces-for-the-anonymous-environment)anonimo.
 
    ![](assets/offer_inbound_fallback_example_005.png)
@@ -303,14 +304,14 @@ Per creare i due spazi di offerta, applicate la stessa procedura utilizzata per 
 
 ### Specifica delle impostazioni avanzate degli spazi di offerta identificati {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
-In questo esempio, l&#39;identificazione dei contatti avviene grazie all&#39;indirizzo e-mail presente nel database di Adobe Campaign. Per aggiungere l&#39;e-mail del destinatario allo spazio, eseguire la procedura seguente:
+In questo esempio, l&#39;identificazione dei contatti avviene grazie all&#39;indirizzo e-mail nel database Adobe Campaign . Per aggiungere l&#39;e-mail del destinatario allo spazio, eseguire la procedura seguente:
 
 1. Nell’ambiente identificato, andate alla cartella dello spazio delle offerte.
 1. Selezionate lo spazio **Migliore offerta** e fate clic su **[!UICONTROL Advanced parameters]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. Nella **[!UICONTROL Target identification]** scheda fare clic su **[!UICONTROL Add]**.
+1. Nella scheda **[!UICONTROL Target identification]**, fai clic su **[!UICONTROL Add]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
@@ -405,7 +406,7 @@ Per configurare questi spazi di offerta sulla pagina HTML del sito Web, effettua
 
    L’URL contiene **EnvNeobankRecip**, il nome interno dell’ambiente identificato.
 
-Quando si apre la pagina Web; lo script consente di richiamare il motore di interazione per visualizzare il contenuto delle offerte negli spazi pertinenti della pagina Web. In una singola chiamata al server Adobe Campaign, il motore determina l&#39;ambiente, lo spazio di offerta e le categorie da selezionare.
+Quando si apre la pagina Web; lo script consente di richiamare il motore di interazione per visualizzare il contenuto delle offerte negli spazi pertinenti della pagina Web. In una singola chiamata al server Adobe Campaign , il motore determina l&#39;ambiente, lo spazio di offerta e le categorie da selezionare.
 
 In questo esempio, il motore riconosce l&#39;ambiente identificato (**EnvNeobankIdnRecip**). Identifica lo spazio di offerta (**OSWebBestOfferIdentified**) e la categoria **Migliore offerta** (**CatBestOffer**) per il primo e il secondo spazio di offerta sulla pagina Web, nonché lo spazio di offerta (**OSWebPartnerIdentified**) e la categoria **Partner** (PAPACatPartner ****) per il terzo) offre spazio sul sito.
 
