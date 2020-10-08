@@ -1,7 +1,7 @@
 ---
-title: Flussi di lavoro di supervisione
-seo-title: Flussi di lavoro di supervisione
-description: Flussi di lavoro di supervisione
+title: Supervisione dei flussi di lavoro
+seo-title: Supervisione dei flussi di lavoro
+description: Supervisione dei flussi di lavoro
 seo-description: null
 page-status-flag: never-activated
 uuid: e16d1c40-50ae-4c3d-95df-fac62f987a15
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 1%
 
 ---
 
 
-# Flussi di lavoro di supervisione{#supervising-workflows}
+# Supervisione dei flussi di lavoro{#supervising-workflows}
 
 Questo caso d’uso descrive in dettaglio la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro che vengono &quot;messi in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
 
@@ -38,7 +38,7 @@ Per monitorare lo stato di un set di flussi di lavoro, è necessario effettuare 
 
 >[!NOTE]
 >
->Oltre al flusso di lavoro, Campaign **Workflow Heatmap** consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [](../../workflow/using/heatmap.md)dedicata.
+>Oltre al flusso di lavoro, Campaign **Workflow Heatmap** consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. For more on this, refer to the [dedicated section](../../workflow/using/heatmap.md).
 >
 >Per ulteriori informazioni su come **monitorare l&#39;esecuzione** dei flussi di lavoro, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
 
@@ -126,7 +126,7 @@ vars.strWorkflowStop = strStop;
 
 L&#39;attività &quot;Test&quot; consente di determinare se una consegna deve essere inviata o se il flusso di lavoro di monitoraggio deve eseguire un altro ciclo in base all&#39;attività &quot;Wait&quot;.
 
-Una consegna viene inviata al supervisore **se almeno una delle tre variabili evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
+Una consegna viene inviata al supervisore **se almeno una delle tre variabili di evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
@@ -158,7 +158,7 @@ Questo modello deve includere:
 Dopo aver creato e approvato il modello, devi configurare l&#39;attività **Consegna** per:
 
 * collegate l&#39;attività &quot;Consegna&quot; al modello di consegna creato in precedenza.
-* collegate le variabili evento del flusso di lavoro a quelle specifiche del modello di consegna.
+* collegate le variabili evento del flusso di lavoro a quelle specifiche per il modello di consegna.
 
 Fate doppio clic sull&#39;attività **Consegna** e selezionate le seguenti opzioni:
 
