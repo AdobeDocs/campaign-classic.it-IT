@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ L&#39;interfaccia **Per tipo di modulo** Web prevede l&#39;uso di un&#39;applica
 >
 >Le API sono dettagliate in un documento dedicato, il cui accesso dipende dal contratto. Fate riferimento a [API](../../configuration/using/about-web-services.md).
 >
->L&#39;applicazione Web utilizzata in questo esempio non è un&#39;app Web disponibile con Adobe Campaign. Per utilizzare un modulo in una campagna, è necessario creare l&#39;applicazione Web dedicata.
+>L&#39;applicazione Web utilizzata in questo esempio non è un&#39;app Web disponibile con  Adobe Campaign. Per utilizzare un modulo in una campagna, è necessario creare l&#39;applicazione Web dedicata.
 
 Quando create il modello di campagna, fate clic sull&#39; **[!UICONTROL Zoom]** icona all&#39;interno dell&#39; **[!UICONTROL Web interface]** opzione del **[!UICONTROL Advanced campaign settings...]** collegamento per accedere ai dettagli dell&#39;applicazione Web.
 
@@ -111,7 +111,7 @@ La procedura è la seguente:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Facendo clic sul **[!UICONTROL Access your contact list and approve targeting]** collegamento, l&#39;entità locale dispone dell&#39;accesso (tramite browser Web) all&#39;elenco dei client selezionati per la campagna.
+1. Facendo clic sul **[!UICONTROL Access your contact list and approve targeting]** collegamento, all&#39;entità locale viene fornito l&#39;accesso (tramite browser Web) all&#39;elenco dei client selezionati per la campagna.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -131,17 +131,18 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
 1. Nella **[!UICONTROL General]** scheda, è necessario specificare:
 
-   * il **[!UICONTROL Targeting dimension]**. Qui la distribuzione **dei** dati viene eseguita sui **destinatari**.
-   * il **[!UICONTROL Distribution type]**. È possibile scegliere una dimensione **** fissa o una **dimensione come percentuale**.
-   * il **[!UICONTROL Assignment type]**. Selezionate l&#39;opzione **Entità** locale.
-   * il **[!UICONTROL Distribution type]**. Qui è il **[!UICONTROL Origin (@origin)]** campo presente nella tabella Destinatario che consente di identificare la relazione tra il contatto e l&#39;entità locale.
+   * the **[!UICONTROL Targeting dimension]**. Qui la distribuzione **dei** dati viene eseguita sui **destinatari**.
+   * the **[!UICONTROL Distribution type]**. È possibile scegliere una dimensione **** fissa o una **dimensione come percentuale**.
+   * the **[!UICONTROL Assignment type]**. Selezionate l&#39;opzione **Entità** locale.
+   * the **[!UICONTROL Distribution type]**. Qui è il **[!UICONTROL Origin (@origin)]** campo presente nella tabella Destinatario che consente di identificare la relazione tra il contatto e l&#39;entità locale.
    * Il **[!UICONTROL Approval storage]** campo. Selezionare l&#39;opzione di approvazione **locale del destinatario** .
 
-1. Nella **[!UICONTROL Breakdown]** scheda, specificate:
+1. In the **[!UICONTROL Breakdown]** tab, specify:
 
    * , **[!UICONTROL Distribution field value]** che corrisponde alle entità locali coinvolte nella prossima campagna.
    * l&#39;entità locale **[!UICONTROL label]**.
    * il valore **[!UICONTROL Size]** (fisso o percentuale). Il valore **predefinito** 0 prevede la selezione di tutti i destinatari collegati all&#39;entità locale.
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Salva la nuova distribuzione dei dati.
@@ -157,7 +158,8 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
    * il contenuto del messaggio che verrà inviato alle entità locali nella notifica,
    * il promemoria di approvazione,
-   * elaborazione prevista per la campagna.
+   * l&#39;elaborazione prevista per la campagna.
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Salvare i record.
@@ -170,6 +172,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
    * in modalità **Manuale** , le entità locali partecipano alla campagna se accettano l&#39;invito dall&#39;entità centrale. Possono eliminare i contatti preselezionati se lo desiderano e l&#39;approvazione da parte del manager è necessaria per confermare la loro partecipazione alla campagna.
    * in modalità **Automatica** , le entità locali devono partecipare alla campagna, a meno che non si disconnettano da essa. Possono eliminare i contatti senza bisogno di approvazione.
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. Nella **[!UICONTROL Description]** scheda, potete aggiungere una descrizione per la campagna e tutti i documenti da inviare alle entità locali.
@@ -186,7 +189,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
 Sei il responsabile marketing per un grande marchio di trucco che ha un negozio online e diverse boutique in tutti gli Stati Uniti. Per scaricare il materiale invernale e fare spazio per il nuovo stock, si decide di creare un&#39;offerta speciale per due categorie di clienti: gli oltre 30, a cui offrirete prodotti per la cura della pelle sensibili all&#39;età, e i meno 30 anni, a cui offrirete i più basilari prodotti per la cura della pelle.
 
-Decidete quindi di utilizzare Distributed Marketing per creare una campagna collaborativa (per modulo) che vi consentirà di selezionare i client dai diversi store per fasce di età. I clienti riceveranno un&#39;e-mail con un&#39;offerta speciale che sarà stata personalizzata in base alla loro fascia di età.
+Decidete quindi di utilizzare Distributed Marketing per creare una campagna collaborativa (per modulo) che vi consentirà di selezionare i client dai diversi store per fasce di età. Questi clienti riceveranno un&#39;e-mail di consegna con un&#39;offerta speciale che sarà stata personalizzata in base alla loro fascia di età.
 
 La prima parte di questo esempio illustra le entità locali che ricevono la notifica di creazione della campagna e come possono utilizzarla per valutare la campagna e ordinarla.
 
@@ -243,7 +246,7 @@ La procedura è la seguente:
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. Completate la configurazione del pacchetto selezionando la modalità di approvazione nella **[!UICONTROL Edit]** scheda.
+1. Per completare la configurazione del pacchetto, selezionate la modalità di approvazione nella **[!UICONTROL Edit]** scheda.
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
