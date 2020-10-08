@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -37,9 +34,9 @@ Le schede e il relativo contenuto dipendono dalla configurazione e dai pacchetti
 
 >[!CAUTION]
 >
->Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura  Adobi Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
+>Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura di Adobe Campaign . Solo gli utenti esperti possono apportare modifiche a tali schemi.
 >
->Per ulteriori informazioni, consultate [questa pagina](../../configuration/using/about-schema-edition.md).
+>For further information, refer to [this page](../../configuration/using/about-schema-edition.md).
 
 ## Scheda Generale {#general-tab}
 
@@ -49,7 +46,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 
 >[!NOTE]
 >
->Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo si trova nell’elenco dei blocchi, ovvero che il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
+>Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo si trova sul elenco Bloccati , ovvero che il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
 ## Informazioni di contatto, scheda {#contact-information-tab}
 
@@ -85,7 +82,7 @@ Questa schermata contiene i servizi di informazione a cui il profilo ha effettua
 
 Il **[!UICONTROL Detail]** pulsante visualizza le proprietà della sottoscrizione selezionata. Il **[!UICONTROL Add]** pulsante viene utilizzato per aggiungere manualmente una nuova iscrizione.
 
-For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
+Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
 
 ## scheda Consegne {#deliveries-tab}
 
