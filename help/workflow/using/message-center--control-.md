@@ -1,7 +1,7 @@
 ---
-title: Centro messaggi (controllo)
-seo-title: Centro messaggi (controllo)
-description: Centro messaggi (controllo)
+title: Centro messaggi (Controllo)
+seo-title: Centro messaggi (Controllo)
+description: Centro messaggi (Controllo)
 seo-description: null
 page-status-flag: never-activated
 uuid: bdb3610b-a893-4e60-a9f7-f21d90b66919
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 69e3e99f-d392-4316-926c-3c3c675415ad
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 8%
 
 ---
 
 
-# Centro messaggi (controllo){#message-center-control}
+# Centro messaggi (Controllo){#message-center-control}
 
-Il flusso di lavoro descritto di seguito verrà eseguito ogni ora. È installato con il modulo **Message Center - Control** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../message-center/using/about-transactional-messaging.md).
+Il flusso di lavoro descritto di seguito è pianificato per essere eseguito ogni ora. È installato con il modulo **Message Center - Control** per impostazione predefinita. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
 
 Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, consulta [questa pagina](../../message-center/using/technical-workflows.md).
 
