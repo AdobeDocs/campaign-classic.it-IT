@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1526'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +52,7 @@ Prima di inviare la consegna, potete definire i parametri di invio nelle proprie
    >
    >Per ulteriori informazioni sulla configurazione di un server SMTP, consultare [questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Per ulteriori informazioni, vedere [Archiviazione delle e-mail](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Archive emails]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
 
 Una volta che la consegna è configurata e pronta per l&#39;invio, accertatevi di aver eseguito l&#39;analisi [](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)Consegna. Al termine, fai clic **[!UICONTROL Confirm delivery]** per avviare la distribuzione dei messaggi.
 
@@ -60,15 +60,15 @@ Una volta che la consegna è configurata e pronta per l&#39;invio, accertatevi d
 
 Potete quindi chiudere la procedura guidata di consegna e monitorare l&#39;esecuzione della consegna dalla **[!UICONTROL Delivery]** scheda, accessibile tramite i dettagli della consegna o tramite l&#39;elenco delle consegne.
 
-Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta le sezioni seguenti:
+Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
 * [Monitoraggio di una consegna](../../delivery/using/monitoring-a-delivery.md)
 * [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sul tracciamento dei messaggi](../../delivery/using/about-message-tracking.md)
+* [Informazioni sul tracking dei messaggi](../../delivery/using/about-message-tracking.md)
 
 ## Pianificazione dell&#39;invio della consegna {#scheduling-the-delivery-sending}
 
-È possibile posticipare la consegna dei messaggi per pianificare la consegna o gestire la pressione di vendita ed evitare l&#39;eccesso di richieste da parte di una popolazione.
+Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gestire la pressione di vendita ed evitare di sollecitare eccessivamente una popolazione.
 
 1. Fate clic sul **[!UICONTROL Send]** pulsante e selezionate l’ **[!UICONTROL Postpone delivery]** opzione.
 
@@ -142,9 +142,9 @@ Per bilanciare il carico, è possibile suddividere le consegne in più batch. Co
    >
    >Assicurarsi che le ultime onde non superino il termine di consegna, definito nella **[!UICONTROL Validity]** scheda. In caso contrario, alcuni messaggi potrebbero non essere inviati.
    >
-   >È inoltre necessario concedere tempo sufficiente per i tentativi di configurazione delle ultime onde. Vedere [questa sezione](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >È inoltre necessario concedere tempo sufficiente per i tentativi di configurazione delle ultime onde. Vedi [questa sezione](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
-1. Per monitorare le tue invii, vai ai registri di consegna. Vedere [questa pagina](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+1. Per monitorare le tue invii, vai ai registri di consegna. Consulta [questa pagina](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
 
    Puoi vedere le consegne che erano già state inviate nelle onde elaborate (**[!UICONTROL Sent]** stato) e le consegne da inviare nelle onde rimanenti (**[!UICONTROL Pending]** stato).
 
@@ -166,7 +166,7 @@ I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più o
 
    Utilizzando le onde, puoi limitare il numero di messaggi a 20 al giorno, ossia la capacità di elaborazione giornaliera di un call center.
 
-   A questo scopo, selezionare l&#39; **[!UICONTROL Schedule multiple waves of the same size]** opzione. Immettete **[!UICONTROL 20]** le dimensioni dell’onda e **[!UICONTROL 1d]** nel **[!UICONTROL Period]** campo.
+   To do this, select the **[!UICONTROL Schedule multiple waves of the same size]** option. Immettete **[!UICONTROL 20]** le dimensioni dell’onda e **[!UICONTROL 1d]** nel **[!UICONTROL Period]** campo.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -184,7 +184,7 @@ Per impostazione predefinita, per il primo giorno della consegna sono pianificat
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, le impostazioni dei tentativi nella distribuzione non vengono più utilizzate da Campaign. I tentativi di rimbalzo contenuti e il tempo che intercorre tra di essi sono determinati dall’MTA avanzata in base al tipo e alla gravità delle risposte di rimbalzo provenienti dal dominio e-mail del messaggio.
 >
->Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
+>Tutti gli impatti sono descritti nel documento [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html) .
 
 
 ## Definizione del periodo di validità {#defining-validity-period}
@@ -193,7 +193,7 @@ Una volta avviata la consegna, i messaggi (e tutti i tentativi) possono essere i
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* Il **[!UICONTROL Delivery duration]** campo consente di specificare il limite per i tentativi di consegna globali. Ciò significa che Adobe Campaign invia i messaggi a partire dalla data di inizio, e quindi, per i messaggi che restituiscono solo un errore, i tentativi regolari e configurabili vengono eseguiti fino al raggiungimento del limite di validità.
+* Il **[!UICONTROL Delivery duration]** campo consente di specificare il limite per i tentativi di consegna globali. Ciò significa che  Adobe Campaign invia i messaggi a partire dalla data di inizio e che, per i messaggi che restituiscono solo un errore, vengono eseguiti tentativi regolari configurabili fino al raggiungimento del limite di validità.
 
    Potete anche scegliere di specificare le date. A tale scopo, selezionare **[!UICONTROL Explicitly set validity dates]**. In questo caso, le date limite di consegna e validità consentono anche di specificare l&#39;ora. L&#39;ora corrente è utilizzata per impostazione predefinita, ma è possibile modificarla direttamente nel campo di input.
 
@@ -203,6 +203,6 @@ Una volta avviata la consegna, i messaggi (e tutti i tentativi) possono essere i
 
 >[!NOTE]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, l&#39; **[!UICONTROL Delivery duration]** impostazione nelle consegne della campagna verrà utilizzata solo se impostata su **3,5** giorni o meno. Se si definisce un valore superiore a 3,5 giorni, non verrà preso in considerazione.
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, l&#39; **[!UICONTROL Delivery duration]** impostazione nelle consegne della campagna verrà utilizzata solo se impostata su **3,5** giorni o meno. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
 >
->Tutti gli impatti sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
+>Tutti gli impatti sono descritti nel documento [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html) .
