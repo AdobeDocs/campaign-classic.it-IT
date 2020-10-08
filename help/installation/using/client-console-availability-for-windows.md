@@ -1,7 +1,7 @@
 ---
-title: Disponibilità della console client per Windows
-seo-title: Disponibilità della console client per Windows
-description: Disponibilità della console client per Windows
+title: Disponibilità della console del client per Windows
+seo-title: Disponibilità della console del client per Windows
+description: Disponibilità della console del client per Windows
 seo-description: null
 page-status-flag: never-activated
 uuid: d1cbb34e-87e0-481b-a78b-3616047eb5cb
@@ -11,29 +11,29 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: 4fa2e8c1-33d1-4d14-941b-ca528b8ceabb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
 
-# Disponibilità della console client per Windows{#client-console-availability-for-windows}
+# Disponibilità della console del client per Windows{#client-console-availability-for-windows}
 
-Affinché gli utenti di Adobe Campaign possano accedere all&#39;istanza creata e configurata, devono utilizzare la console client.
+Affinché  utenti Adobe Campaign possano accedere all’istanza creata e configurata, devono utilizzare la console client.
 
-Quando il computer utilizzato per avviare un server applicazioni Adobe Campaign (**server web**) riceve connessioni utente dalla console client, puoi configurarlo per rendere disponibile il programma di configurazione per il client avanzato Adobe Campaign tramite un&#39;interfaccia HTML.
+Quando il computer utilizzato per avviare un  server applicazioni Adobe Campaign (Web **** nlserver) riceve le connessioni utente dalla console client, potete configurarlo per rendere disponibile il programma di configurazione per il client Adobe Campaign  tramite un&#39;interfaccia HTML.
 
 A tal fine, è necessario:
 
 1. Recuperare il pacchetto che contiene il programma di installazione della console.
 
-   Questo file viene chiamato `setup-client-7.X.XXXX.exe` per v7 o `setup-client-6.X.XXXX.exe` per v6.1, dove `X` è la versione secondaria di Adobe Campaign ed `XXXX` è il numero di build.
+   Questo file viene chiamato `setup-client-7.X.XXXX.exe` per v7 o `setup-client-6.X.XXXX.exe` per v6.1, dove `X` è la sub-versione di  Adobe Campaign e `XXXX` è il numero di build.
 
-1. Copia e incolla il pacchetto nella cartella di installazione di Adobe Campaign, in **/datakit/nl/eng/jsp**.
-1. Avvia il server Adobe Campaign.
+1. Copiate e incollate il pacchetto nella cartella di installazione  Adobe Campaign, in **/datakit/nl/eng/jsp**.
+1. Avviate il server Adobe Campaign .
 
 Gli utenti finali possono quindi scaricare il programma di installazione della console tramite un browser Web grazie al seguente URL:
 
@@ -49,7 +49,7 @@ Ogni volta che è disponibile una nuova versione della console client, si invita
 
 >[!NOTE]
 >
->Nel prompt visualizzato, Adobe consiglia di lasciare l’opzione **[!UICONTROL No longer ask this question]** deselezionata per fare in modo che tutti gli utenti siano avvisati quando è disponibile una nuova versione della console.\
+>Nel prompt visualizzato,  Adobe consiglia di lasciare l&#39;opzione **[!UICONTROL No longer ask this question]** deselezionata per fare in modo che tutti gli utenti ricevano avvisi quando è disponibile una nuova versione della console.\
 >Se selezionate questa opzione e scegliete di non scaricare la versione più recente, nessun altro utente verrà informato delle nuove versioni disponibili.
 
 Per ripristinare questo prompt, attenetevi alla procedura seguente (solo gli amministratori di sistema che hanno familiarità con la modifica del Registro di sistema devono effettuare le seguenti modifiche):
