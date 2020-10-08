@@ -1,5 +1,5 @@
 ---
-title: Query mediante gestione dei gruppi
+title: Query tramite gestione dei raggruppamenti
 description: Scopri come eseguire query utilizzando la gestione dei gruppi
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Query mediante gestione dei gruppi {#querying-using-grouping-management}
+# Query tramite gestione dei raggruppamenti {#querying-using-grouping-management}
 
 In questo esempio, vogliamo eseguire una query per trovare tutti i domini e-mail con targeting più di 30 volte durante le consegne precedenti.
 
@@ -51,11 +48,11 @@ Per creare questo esempio, procedere come segue:
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Nella **[!UICONTROL Sorting]** finestra, ordinate i domini e-mail in ordine decrescente. Per eseguire questa operazione, selezionare **[!UICONTROL Yes]** la **[!UICONTROL Descending sort]** colonna. Clic **[!UICONTROL Next]**.
+1. Nella **[!UICONTROL Sorting]** finestra, ordinate i domini e-mail in ordine decrescente. Per eseguire questa operazione, selezionare **[!UICONTROL Yes]** la **[!UICONTROL Descending sort]** colonna. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. In **[!UICONTROL Data filtering]**, selezionate **[!UICONTROL Filtering conditions]**. Vai alla **[!UICONTROL Target elements]** finestra e fai clic su **[!UICONTROL Next]**.
+1. In **[!UICONTROL Data filtering]**, seleziona **[!UICONTROL Filtering conditions]**. Vai alla **[!UICONTROL Target elements]** finestra e fai clic su **[!UICONTROL Next]**.
 1. Nella **[!UICONTROL Data grouping]** finestra, selezionare l&#39; **[!UICONTROL Email domain]** oggetto facendo clic su **[!UICONTROL Add]**.
 
    Questa finestra di raggruppamento dei dati viene visualizzata solo se la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) è stata selezionata.
