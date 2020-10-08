@@ -1,7 +1,7 @@
 ---
-title: Caricamento dei dati (RDBMS)
-seo-title: Caricamento dei dati (RDBMS)
-description: Caricamento dei dati (RDBMS)
+title: Caricamento dati (RDBMS)
+seo-title: Caricamento dati (RDBMS)
+description: Caricamento dati (RDBMS)
 seo-description: null
 page-status-flag: never-activated
 uuid: d5ec30f2-398a-4b16-9232-924437da146a
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a128caac-5740-4dac-b14d-1d2fcef3cc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 6%
 
 ---
 
 
-# Caricamento dei dati (RDBMS){#data-loading-rdbms}
+# Caricamento dati (RDBMS){#data-loading-rdbms}
 
 L&#39; **[!UICONTROL Data loading (RDBMS)]** attività consente di accedere direttamente a questo database esterno e di raccogliere solo i dati necessari per il targeting.
 
