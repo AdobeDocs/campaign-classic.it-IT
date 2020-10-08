@@ -11,24 +11,24 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 3fd7a1ef-b0e2-4a7e-9e36-044d997db785
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 
 # Interazioni anonime{#anonymous-interactions}
 
-Guardate questo [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) per una panoramica di come le offerte vengono distribuite a target identificati e anonimi.
+Guardate questo [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) per una panoramica di come le offerte vengono distribuite a target identificati e anonimi.
 
 ## Targeting e archiviazione di un ambiente per interazioni anonime {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
 Per impostazione predefinita, Interaction viene fornito con un ambiente preconfigurato per il targeting della tabella dei destinatari (offerte identificate). Se desiderate eseguire il targeting di un&#39;altra tabella (tabella visitatore per le offerte anonime o una tabella di destinazione specifica), dovete utilizzare la procedura guidata di mappatura della destinazione per creare l&#39;ambiente. Per ulteriori informazioni, consultate [Creazione di un ambiente](../../interaction/using/live-design-environments.md#creating-an-offer-environment)di offerte.
 
-Quando create un ambiente anonimo tramite la procedura guidata di creazione della mappatura, la **[!UICONTROL Environment dedicated to incoming anonymous interactions]** casella viene selezionata automaticamente nella **[!UICONTROL General]** scheda dell&#39;ambiente.
+Quando si crea un ambiente anonimo tramite la procedura guidata di creazione della mappatura, la **[!UICONTROL Environment dedicated to incoming anonymous interactions]** casella viene selezionata automaticamente nella **[!UICONTROL General]** scheda dell&#39;ambiente.
 
 Il modulo **[!UICONTROL Targeting dimension]** viene completato automaticamente. Per impostazione predefinita, collega la tabella del visitatore.
 
@@ -50,7 +50,7 @@ Per creare categorie e spazi, applicate lo stesso processo utilizzato per i visi
 
 I visitatori anonimi possono essere inviati a un processo di identificazione dei cookie quando si connettono. Questo riconoscimento implicito si basa sulla cronologia del browser del visitatore.
 
-Durante questo passaggio viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, il visitatore viene riconosciuto (viene quindi identificato implicitamente), in altri casi, non viene riconosciuto (e quindi rimane anonimo).
+Durante questo passaggio, viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, il visitatore viene riconosciuto (viene quindi identificato implicitamente), in altri casi, non viene riconosciuto (e quindi rimane anonimo).
 
 Per eseguire questa analisi, per lo spazio dell&#39;offerta, selezionate l&#39; **[!UICONTROL Implicitly identify the individual based on their browser history]** opzione.
 
@@ -58,7 +58,7 @@ Per eseguire questa analisi, per lo spazio dell&#39;offerta, selezionate l&#39; 
 
 ## Elaborazione di visitatori anonimi non identificati {#processing-unidentified-anonymous-visitors}
 
-Dopo l&#39;analisi, se un visitatore anonimo non è identificato, puoi archiviare i dati in uno spazio specifico. In questo modo potrete suggerire offerte mirate a questo tipo di visitatore, in linea con le regole di tipologia specificate.
+Dopo l&#39;analisi, se un visitatore anonimo non è identificato, puoi archiviare i dati in uno spazio specifico. In questo modo potrete suggerire offerte specificamente indirizzate a questo tipo di visitatore, in linea con le regole di tipologia specificate.
 
 Se non esiste alcun elemento che consenta di identificare un contatto, o se non si desidera suggerire un&#39;offerta identificata a un contatto che possa essere implicitamente identificato, è possibile scegliere di eseguire un fallback su un ambiente anonimo.
 
