@@ -1,7 +1,7 @@
 ---
-title: Canale di posta diretta
-seo-title: Canale di posta diretta
-description: Canale di posta diretta
+title: Informazioni sul canale direct mail
+seo-title: Informazioni sul canale direct mail
+description: Informazioni sul canale direct mail
 seo-description: null
 page-status-flag: never-activated
 uuid: c7fe4d33-a056-49cd-977e-b56753360c8b
@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: 33fe5a57-55db-4cd7-b1fd-0dc3691909ab
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 11%
 
 ---
 
 
-# Canale di posta diretta{#about-direct-mail-channel}
+# Informazioni sul canale direct mail{#about-direct-mail-channel}
 
-Adobe Campaign consente di produrre file per distribuire in massa lettere personalizzate. I profili dei destinatari devono contenere almeno i loro nomi e indirizzi postali.
+ Adobe Campaign consente di produrre file per distribuire in massa lettere personalizzate. I profili dei destinatari devono contenere almeno i loro nomi e indirizzi postali.
 
 >[!NOTE]
 >
