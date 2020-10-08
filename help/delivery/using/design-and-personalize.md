@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c804745ae58a9bded885ac5aef32f019f43e82be
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 7%
@@ -121,7 +118,7 @@ Per evitare errori di formattazione comuni, verificare quanto segue:
 
 * Utilizzo di caratteri **** autorizzati nelle e-mail: l&#39;elenco di caratteri validi per gli indirizzi e-mail è definito nell&#39;opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni Campagna [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali,  Adobe Campaign deve essere installato in Unicode.
 
-* Configurazione dell&#39;autenticazione **** e-mail: accertatevi che le intestazioni e-mail contengano la firma DKIM. L&#39;autenticazione DKIM (Domain Keys Identified Mail) consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato, e se il contenuto del messaggio sia stato modificato tra il momento dell&#39;invio originale (e DKIM &quot;signed&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
+* Configurazione dell&#39;autenticazione **** e-mail: accertatevi che le intestazioni e-mail contengano la firma DKIM. L&#39;autenticazione DKIM (Domain Keys Identified Mail) consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato, e se il contenuto del messaggio sia stato modificato tra il momento dell&#39;invio originale (e DKIM &quot;signed&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
 
 ### Progettazione e-mail reattiva
 
