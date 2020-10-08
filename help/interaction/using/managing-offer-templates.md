@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 62d03128-5525-4556-8590-8492847c4a1f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # Gestione dei modelli di offerta{#managing-offer-templates}
 
-I modelli di offerta vengono forniti out-of-box in Adobe Campaign. Potete utilizzarli dopo aver creato le offerte, duplicarle o adattarne la configurazione alle vostre esigenze. Potete anche creare dei modelli personalizzati. Le offerte per i modelli sono memorizzate nella cartella **Risorse** > **Modelli** > Modelli **di** offerta.
+I modelli di offerta vengono forniti out-of-box in  Adobe Campaign. Potete utilizzarli dopo aver creato le offerte, duplicarle o adattarne la configurazione alle vostre esigenze. Potete anche creare dei modelli personalizzati. Le offerte per i modelli sono memorizzate nella cartella **Risorse** > **Modelli** > Modelli **di** offerta.
 
 ## Creazione di un modello di offerta {#creating-an-offer-template}
 
@@ -39,7 +39,7 @@ Per creare un’offerta modello, effettuate le seguenti operazioni:
 
 Per duplicare un modello di offerta (out-of-the-box o no), effettuate le seguenti operazioni:
 
-1. Andate a **Risorse > Modelli > Modelli** offerta.
+1. Andate a **Risorse > Modelli > Modelli** di offerta.
 1. Con il mouse, fare clic con il pulsante destro del mouse sul modello da duplicare e selezionare **Duplica** dal menu a discesa.
 
    ![](assets/offer_model_002.png)
