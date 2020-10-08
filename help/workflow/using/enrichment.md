@@ -1,7 +1,7 @@
 ---
-title: Arricchimento
-seo-title: Arricchimento
-description: Arricchimento
+title: Enrichment
+seo-title: Enrichment
+description: Enrichment
 seo-description: null
 page-status-flag: never-activated
 uuid: 8dad57b7-fa08-48ee-990c-f9f0bb312d1f
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Arricchimento{#enrichment}
+# Enrichment{#enrichment}
 
 L&#39; **[!UICONTROL Enrichment]** attività consente di aggiungere informazioni a un elenco di profili e collegamenti a una tabella esistente (creare un nuovo join). È inoltre possibile definire criteri di riconciliazione con i profili presenti nel database.
 
@@ -54,13 +51,13 @@ Esistono quattro tipi di collegamenti:
 
    Questa opzione è configurata nella **[!UICONTROL Simple Join]** scheda a cui è possibile accedere tramite il **[!UICONTROL Edit additional data]** collegamento dell&#39; **[!UICONTROL Enrichment]** attività.
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: questo tipo di collegamento definisce una riconciliazione con un record univoco. Adobe Campaign crea un collegamento a una tabella di destinazione aggiungendo una chiave esterna nella tabella di destinazione per memorizzare un riferimento al record univoco.
+* **[!UICONTROL Define a link by searching for a reference among several options]**: questo tipo di collegamento definisce una riconciliazione con un record univoco.  Adobe Campaign crea un collegamento a una tabella di destinazione aggiungendo una chiave esterna nella tabella di destinazione per memorizzare un riferimento al record univoco.
 
    Questa opzione è configurata nella **[!UICONTROL Reconciliation and deduplication]** scheda a cui è possibile accedere tramite il **[!UICONTROL Edit additional data]** collegamento dell&#39; **[!UICONTROL Enrichment]** attività.
 
 I casi d’uso che descrivono dettagliatamente il funzionamento delle attività di arricchimento nel loro contesto sono disponibili anche nelle seguenti sezioni:
 
-* [Arricchimento delle e-mail con campi](../../workflow/using/email-enrichment-with-custom-date-fields.md)data personalizzati.
+* [Arricchimento delle e-mail con campi data personalizzati](../../workflow/using/email-enrichment-with-custom-date-fields.md).
 * [Arricchimento dei dati](../../workflow/using/enriching-data.md)
 * [Creazione di un elenco di riepilogo](../../workflow/using/creating-a-summary-list.md)
 
@@ -110,7 +107,7 @@ I dati e lo schema nella fase di arricchimento dell&#39;output saranno i seguent
 
 ## Creazione di un collegamento {#creating-a-link}
 
-Puoi utilizzare l&#39;attività di arricchimento per creare un collegamento tra i dati di lavoro e il database di Adobe Campaign: si tratta di un collegamento locale al flusso di lavoro tra i dati in entrata.
+È possibile utilizzare l&#39;attività di arricchimento per creare un collegamento tra i dati di lavoro e il database Adobe Campaign : si tratta di un collegamento locale al flusso di lavoro tra i dati in entrata.
 
 Ad esempio, se carichi i dati di un file che contiene il numero di account, il paese e l’e-mail dei destinatari, dovrai creare un collegamento alla tabella del paese per aggiornare tali informazioni nei loro profili.
 
@@ -133,7 +130,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Selezionate l’ **[!UICONTROL Link definition]** opzione e fate clic sul **[!UICONTROL Next]** pulsante. Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell&#39;elenco dei paesi disponibili nella tabella dedicata del database. Scegliete l’ **[!UICONTROL Define a link by searching for a reference among several options]** opzione. Selezionare la tabella del paese nel **[!UICONTROL Target schema]** campo.
+1. Selezionate l’ **[!UICONTROL Link definition]** opzione e fate clic sul **[!UICONTROL Next]** pulsante. Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell&#39;elenco dei paesi disponibili nella tabella dedicata del database. Scegli l’opzione **[!UICONTROL Define a link by searching for a reference among several options]**. Selezionare la tabella del paese nel **[!UICONTROL Target schema]** campo.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -147,7 +144,7 @@ All&#39;output di questa attività di arricchimento, lo schema temporaneo conter
 
 ## Riconciliazione dei dati {#data-reconciliation}
 
-L&#39;attività di arricchimento può essere utilizzata per configurare la riconciliazione dei dati, inclusa una volta che i dati sono stati caricati nel database. In questo caso, la **[!UICONTROL Reconciliation]** scheda consente di definire il collegamento tra i dati nel database Adobe Campaign e i dati nella tabella di lavoro.
+L&#39;attività di arricchimento può essere utilizzata per configurare la riconciliazione dei dati, inclusa una volta che i dati sono stati caricati nel database. In questo caso, la **[!UICONTROL Reconciliation]** scheda consente di definire il collegamento tra i dati nel database Adobe Campaign  e i dati nella tabella di lavoro.
 
 Selezionare l&#39; **[!UICONTROL Identify the targeting document based on work data]** opzione, specificare lo schema a cui si desidera creare un collegamento e definire le condizioni di unione: a tal fine, selezionate i campi da riconciliare nei dati di lavoro (**[!UICONTROL Source expression]**) e nella dimensione di targeting (**[!UICONTROL Destination expression]**).
 
@@ -161,7 +158,7 @@ Se sono specificate più condizioni di join, devono essere verificate tutte in m
 
 L&#39;attività di arricchimento consente di aggiungere offerte o collegamenti alle offerte per i destinatari della distribuzione.
 
-Per ulteriori informazioni sull&#39;attività di arricchimento, consultare questa [sezione](../../workflow/using/enrichment.md).
+For more information on the enrichment activity, refer to this [section](../../workflow/using/enrichment.md).
 
 Ad esempio, è possibile arricchire i dati per una query del destinatario prima della consegna.
 
@@ -170,7 +167,7 @@ Ad esempio, è possibile arricchire i dati per una query del destinatario prima 
 Dopo aver configurato la query (consultare questa [sezione](../../workflow/using/query.md)):
 
 1. Aggiungere e aprire un&#39;attività di arricchimento.
-1. Nella **[!UICONTROL Enrichment]** scheda, selezionare **[!UICONTROL Add data]**.
+1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
 1. Selezionare **[!UICONTROL An offer proposition]** i tipi di dati da aggiungere.
 
    ![](assets/int_enrichment_offer2.png)
@@ -222,7 +219,7 @@ L&#39; **[!UICONTROL Offer engine]** attività memorizza tali informazioni per i
 
 Tuttavia, potete memorizzare queste informazioni nel modo seguente:
 
-1. Crea una chiamata al motore delle offerte in un&#39;attività di arricchimento inserita dopo una query e prima di un&#39;attività di consegna. Fare riferimento a questa [sezione](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Crea una chiamata al motore delle offerte in un&#39;attività di arricchimento inserita dopo una query e prima di un&#39;attività di consegna. Refer to this [section](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Nella finestra principale dell&#39;attività, selezionate **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
