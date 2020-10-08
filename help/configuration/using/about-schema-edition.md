@@ -1,7 +1,7 @@
 ---
-title: Informazioni sull'edizione dello schema
-seo-title: Informazioni sull'edizione dello schema
-description: Informazioni sull'edizione dello schema
+title: Informazioni sulla modifica degli schemi
+seo-title: Informazioni sulla modifica degli schemi
+description: Informazioni sulla modifica degli schemi
 seo-description: null
 page-status-flag: never-activated
 uuid: edb4d47d-b507-4d86-9873-ebd5f6acefc6
@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: d5b08e4e-060c-4185-9dac-af270918e2b9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 7%
 
 ---
 
 
-# Informazioni sull&#39;edizione dello schema{#about-schema-edition}
+# Informazioni sulla modifica degli schemi{#about-schema-edition}
 
-Adobe Campaign utilizza gli schemi dati per:
+ Adobe Campaign utilizza gli schemi dati per:
 
-* Definire il modo in cui gli oggetti dati all&#39;interno dell&#39;applicazione sono legati alle tabelle di database sottostanti.
-* Definire collegamenti tra i diversi oggetti dati all&#39;interno dell&#39;applicazione Campaign.
+* Definire il modo in cui gli oggetti dati all’interno dell’applicazione sono legati alle tabelle del database sottostanti.
+* Definire i collegamenti tra i diversi oggetti dati all’interno dell’applicazione Campaign.
 * Definire e descrivere i singoli campi inclusi in ciascun oggetto.
 
-Per una migliore comprensione delle tabelle integrate in Campaign e della loro interazione, fai riferimento al modello [dati](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)Campaign Classic.
+Per una migliore comprensione delle tabelle integrate in Campaign e della loro interazione, fai riferimento al modello [dati](https://helpx.adobe.com/it/campaign/kb/acc-datamodel.html)Campaign Classic.
 
 ## Estensione o creazione di schemi {#extending-or-creating-schemas}
 
-Per aggiungere un campo o un indice o un altro elemento a uno degli schemi di dati di base in Campaign, come la tabella dei destinatari (nms:destinatario), è necessario estendere tale schema. Per ulteriori informazioni, vedere [Estensione di una sezione dello schema](../../configuration/using/extending-a-schema.md) .
+Per aggiungere un campo o un indice o un altro elemento a uno degli schemi di dati di base in Campaign, come la tabella dei destinatari (nms:destinatario), è necessario estendere tale schema. For more on this, refer to the [Extending a schema](../../configuration/using/extending-a-schema.md) section.
 
-Per aggiungere un nuovo tipo di dati che non esiste out-of-the-box in Adobe Campaign (ad esempio, una tabella di contratti), puoi creare direttamente uno schema personalizzato. Per ulteriori informazioni, vedere la sezione [Schemi](../../configuration/using/data-schemas.md) dati.
+Per aggiungere un tipo completamente nuovo di dati che non esiste out-of-the-box in  Adobe Campaign (ad esempio una tabella di contratti), è possibile creare direttamente uno schema personalizzato. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -120,7 +120,7 @@ Per ulteriori informazioni sulle chiavi, consulta la sezione [Gestione delle chi
 
 ## Attributi (campi) {#attributes--fields-}
 
-Gli attributi consentono di definire i campi che compongono l&#39;oggetto dati. È possibile utilizzare il **[!UICONTROL Insert]** pulsante nella barra degli strumenti dell&#39;edizione dello schema per rilasciare modelli di attributi vuoti nel codice XML in cui si trova il cursore. Per ulteriori informazioni, vedere la sezione [Schemi](../../configuration/using/data-schemas.md) dati.
+Gli attributi consentono di definire i campi che compongono l&#39;oggetto dati. È possibile utilizzare il **[!UICONTROL Insert]** pulsante nella barra degli strumenti dell&#39;edizione dello schema per rilasciare modelli di attributi vuoti nel codice XML in cui si trova il cursore. For more on this, refer to the [Data schemas](../../configuration/using/data-schemas.md) section.
 
 ![](assets/schemaextension_getting_started_2.png)
 
@@ -141,7 +141,7 @@ L&#39;elenco completo degli attributi è disponibile nella sezione degli [`<attr
 * **@xml**
 * **@type**
 
-   Per visualizzare una tabella che elenca i mapping per i tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database, fai riferimento alla sezione [Mapping dei tipi di dati](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Adobe Campaign/DBMS.
+   Per visualizzare una tabella in cui sono elencati i mapping per i tipi di dati generati da  Adobe Campaign per i diversi sistemi di gestione del database, fare riferimento alla sezione [Mapping dei tipi  dati](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Adobe Campaign/DBMS.
 
 Per ulteriori informazioni su ciascun attributo, fare riferimento alla sezione Descrizione [](../../configuration/using/elements-and-attributes.md#attribute-description) attributo.
 
@@ -213,7 +213,7 @@ Qui &quot;xpath-dst&quot; corrisponde alla chiave primaria nello schema di desti
 
 Un elemento utile da includere nella parte inferiore dello schema è un elemento di tracciamento (traccia di audit).
 
-L’esempio seguente illustra i campi relativi alla data di creazione, all’utente che ha creato i dati, alla data e all’autore dell’ultima modifica per tutti i dati della tabella:
+Utilizzate l&#39;esempio seguente per includere i campi relativi alla data di creazione, all&#39;utente che ha creato i dati, alla data e all&#39;autore dell&#39;ultima modifica per tutti i dati della tabella:
 
 ```
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
@@ -225,9 +225,9 @@ Una volta completate e salvate le modifiche, tutte le modifiche che possono infl
 
 ![](assets/schemaextension_getting_started_3.png)
 
-Per ulteriori informazioni, vedere [Aggiornamento della struttura](../../configuration/using/updating-the-database-structure.md) del database.
+Per ulteriori informazioni, consulta la sezione [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md).
 
 >[!NOTE]
 >
->Quando le modifiche non influiscono sulla struttura del database, è sufficiente rigenerare gli schemi. A questo scopo, selezionate gli schemi da aggiornare, fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Actions > Regenerate selected schemas...]** . Per ulteriori informazioni, vedere la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) .
+>Quando le modifiche non influiscono sulla struttura del database, è sufficiente rigenerare gli schemi. A questo scopo, selezionate gli schemi da aggiornare, fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Actions > Regenerate selected schemas...]** . For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
