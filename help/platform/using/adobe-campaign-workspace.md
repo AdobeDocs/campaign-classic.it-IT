@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2165'
 ht-degree: 2%
@@ -117,7 +114,7 @@ L’ **[!UICONTROL Explorer]** area di lavoro è divisa in tre aree:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Albero**: potete personalizzare il contenuto della struttura ad albero (aggiungere, spostare o eliminare nodi). Questa procedura è destinata esclusivamente agli utenti esperti. For more on this, refer to [this page](../../configuration/using/about-navigation-hierarchy.md).
+**1 - Albero**: potete personalizzare il contenuto della struttura ad albero (aggiungere, spostare o eliminare nodi). Questa procedura è destinata esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/about-navigation-hierarchy.md).
 
 **2 - Elenco**: potete filtrare questo elenco, eseguire ricerche, aggiungere informazioni o ordinare i dati.
 
@@ -338,7 +335,7 @@ Potete anche configurare l’ordinamento o combinare criteri di ordinamento. Per
 
 La lingua dell’istanza Adobe Campaign Classic influisce sui formati di data e ora.
 
-La lingua viene selezionata durante l&#39;installazione di Campaign e non può essere modificata in seguito. Potete selezionare: Inglese (USA), inglese (EN), francese, tedesco o giapponese. For more on this, refer to [this page](../../installation/using/creating-an-instance-and-logging-on.md).
+La lingua viene selezionata durante l&#39;installazione di Campaign e non può essere modificata in seguito. Potete selezionare: Inglese (USA), inglese (EN), francese, tedesco o giapponese. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
 Le principali differenze tra inglese americano e inglese britannico sono:
 
