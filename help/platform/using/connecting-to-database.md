@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,13 @@ Per abilitare una connessione al database esterno, è necessario indicare i para
 
 >[!CAUTION]
 >
->L&#39;utente Adobe Campaign necessita di diritti specifici per il database esterno e il server delle applicazioni Adobe Campaign per elaborare i dati da un database esterno. Per ulteriori informazioni, consulta la sezione Diritti [di accesso al database](../../platform/using/remote-database-access-rights.md) remoto.
+>L&#39;utente Adobe Campaign  necessita di diritti specifici per il database esterno e il server applicazione Adobe Campaign  per elaborare i dati da un database esterno. Per ulteriori informazioni, consulta la sezione Diritti [di accesso al database](../../platform/using/remote-database-access-rights.md) remoto.
 >
 >Per evitare qualsiasi malfunzionamento, gli operatori che accedono ai dati condivisi remoti devono utilizzare spazi separati.
 
 ## Creazione di una connessione condivisa {#creating-a-shared-connection}
 
-Per abilitare una connessione a un database esterno condiviso, finché la connessione è attiva, è possibile accedere al database tramite Adobe Campaign.
+Per abilitare una connessione a un database esterno condiviso, finché la connessione è attiva, è possibile accedere al database tramite  Adobe Campaign.
 
 1. La configurazione deve essere definita in anticipo tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo.
 1. Fare clic sul **[!UICONTROL New]** pulsante e selezionare il **[!UICONTROL External database]** tipo.
@@ -45,7 +45,7 @@ Per abilitare una connessione a un database esterno condiviso, finché la connes
    ![](assets/wf-external-account-create.png)
 
 1. Se necessario, deselezionate l&#39; **[!UICONTROL Enabled]** opzione per disabilitare l&#39;accesso a questo database senza eliminarne la configurazione.
-1. Per consentire ad Adobe Campaign di accedere a questo database, è necessario distribuire le funzioni SQL. Fare clic sulla **[!UICONTROL Parameters]** scheda e quindi sul **[!UICONTROL Deploy functions]** pulsante.
+1. Per consentire  Adobe Campaign di accedere a questo database, è necessario distribuire le funzioni SQL. Fare clic sulla **[!UICONTROL Parameters]** scheda e quindi sul **[!UICONTROL Deploy functions]** pulsante.
 
    ![](assets/wf-external-account-functions.png)
 
@@ -72,7 +72,7 @@ Ad esempio, nell&#39;attività di query, i passaggi per la creazione di una conn
 
    ![](assets/wf_add_data_local_external_data_param.png)
 
-   Fate clic sul **[!UICONTROL Next]** pulsante.
+   Fai clic sul pulsante **[!UICONTROL Next]**.
 
 1. Selezionare la tabella in cui sono memorizzati i dati.
 
@@ -80,7 +80,7 @@ Ad esempio, nell&#39;attività di query, i passaggi per la creazione di una conn
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Fai clic sul **[!UICONTROL Add]** pulsante per definire uno o più campi di riconciliazione tra i dati del database esterno e i dati del database Adobe Campaign. Le **[!UICONTROL Edit expression]** icone della tabella **[!UICONTROL Remote field]** e **[!UICONTROL Local field]** consente di accedere all’elenco dei campi di ciascuna tabella.
+1. Fare clic sul **[!UICONTROL Add]** pulsante per definire uno o più campi di riconciliazione tra i dati del database esterno e i dati del database Adobe Campaign . Le **[!UICONTROL Edit expression]** icone della tabella **[!UICONTROL Remote field]** e **[!UICONTROL Local field]** consente di accedere all’elenco dei campi di ciascuna tabella.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
@@ -105,8 +105,8 @@ I dati verranno quindi inviati tramite il protocollo SSL sicuro.
 
 ## Configurazioni aggiuntive {#additional-configurations}
 
-Se necessario, è possibile creare lo schema per l&#39;elaborazione dei dati in un database esterno. Allo stesso modo, Adobe Campaign consente di definire la mappatura dei dati in una tabella esterna. Queste configurazioni sono generali e non si applicano esclusivamente ai flussi di lavoro.
+Se necessario, è possibile creare lo schema per l&#39;elaborazione dei dati in un database esterno. Analogamente,  Adobe Campaign consente di definire la mappatura dei dati in una tabella esterna. Queste configurazioni sono generali e non si applicano esclusivamente ai flussi di lavoro.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione di schemi in Adobe Campaign e sulla definizione di una nuova mappatura dati, consulta [questa pagina](../../configuration/using/about-schema-edition.md).
+>Per ulteriori informazioni sulla creazione di schemi in  Adobe Campaign e sulla definizione di una nuova mappatura dati, consulta [questa pagina](../../configuration/using/about-schema-edition.md).
