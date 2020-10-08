@@ -1,7 +1,7 @@
 ---
-title: Dividi
-seo-title: Dividi
-description: Dividi
+title: Divisione
+seo-title: Divisione
+description: Divisione
 seo-description: null
 page-status-flag: never-activated
 uuid: 00dc3436-e271-4512-8f29-71a55213afc3
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 0%
 
 ---
 
 
-# Dividi{#split}
+# Divisione{#split}
 
 Un&#39;attività di tipo **Split** consente di dividere una destinazione in più sottoinsiemi. Il target è costruito con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere state portate a termine affinché tale attività possa essere eseguita.
 
@@ -51,7 +51,7 @@ Per creare un sottoinsieme:
 
 1. È possibile specificare il numero massimo di record da estrarre dalla destinazione per creare il sottoinsieme. Per eseguire questa operazione, selezionare l&#39; **[!UICONTROL Limit the selected records]** opzione e fare clic sul **[!UICONTROL Edit...]** collegamento.
 
-   Una procedura guidata consente di scegliere la modalità di selezione per i record di questo sottoinsieme. La procedura è indicata in [Limitazione del numero di record](#limiting-the-number-of-subset-records)di sottoinsiemi.
+   Una procedura guidata consente di scegliere la modalità di selezione per i record di questo sottoinsieme. La procedura è indicata nella sezione [Limitazione del numero di record](#limiting-the-number-of-subset-records)di sottoinsiemi.
 
    ![](assets/s_user_segmentation_partage4.png)
 
@@ -103,7 +103,7 @@ Se non si desidera utilizzare l&#39;intera popolazione contenuta in un sottoinsi
    * **[!UICONTROL Maximum size]**: un numero massimo di record.
    * **[!UICONTROL By data grouping]**: è possibile impostare un limite al numero di record in base ai valori di un campo specificato della popolazione in entrata. Per ulteriori informazioni su questo argomento, vedere [Limitazione del numero di record di sottoinsiemi per raggruppamento](#limiting-the-number-of-subset-records-by-data-grouping)di dati.
    * **[!UICONTROL By data grouping (in %)]**: è possibile impostare un limite al numero di record in base ai valori di un campo specificato della popolazione in entrata utilizzando una percentuale. Per ulteriori informazioni su questo argomento, vedere [Limitazione del numero di record di sottoinsiemi per raggruppamento](#limiting-the-number-of-subset-records-by-data-grouping)di dati.
-   * **[!UICONTROL By data distribution]**: Se i campi di raggruppamento hanno troppi valori o se desiderate evitare di immettere nuovamente i valori per ogni nuova attività divisa, Adobe Campaign consente di configurare una **[!UICONTROL By data distribution]** limitazione (modulo Distributed Marketing opzionale). Per ulteriori informazioni, vedere [Limitazione del numero di record di sottoinsiemi per distribuzione](#limiting-the-number-of-subset-records-per-data-distribution)di dati.
+   * **[!UICONTROL By data distribution]**: Se i campi di raggruppamento hanno troppi valori o se si desidera evitare di immettere nuovamente i valori per ogni nuova attività divisa,  Adobe Campaign consente di configurare una **[!UICONTROL By data distribution]** limitazione (modulo Distributed Marketing opzionale). Per ulteriori informazioni, vedere [Limitazione del numero di record di sottoinsiemi per distribuzione](#limiting-the-number-of-subset-records-per-data-distribution)di dati.
 
 1. Fare clic **[!UICONTROL Finish]** per approvare i criteri di selezione del record. La configurazione definita viene quindi visualizzata nella finestra centrale dell&#39;editor.
 
@@ -127,9 +127,9 @@ Ad esempio, se si seleziona il **[!UICONTROL Language]** campo come campo di gru
 
 1. Fate clic **[!UICONTROL Finish]** per approvare il limite e tornare alla modifica dell&#39;attività divisa.
 
-## Limitazione del numero di record di sottoinsiemi per distribuzione dati {#limiting-the-number-of-subset-records-per-data-distribution}
+## Limitazione del numero di record di sottoinsiemi per distribuzione di dati {#limiting-the-number-of-subset-records-per-data-distribution}
 
-Se i campi di raggruppamento contengono un numero eccessivo di valori o se desiderate evitare di reimpostare i valori per ogni nuova attività divisa, Adobe Campaign consente di creare un limite per la distribuzione dei dati. Quando si selezionano i valori di limitazione dei dati (per ulteriori informazioni sull&#39;oggetto vedere la sezione [Creazione di sottoinsiemi](#creating-subsets) ), selezionare l&#39; **[!UICONTROL By data distribution]** opzione e selezionare un modello dal menu a discesa. La creazione di un modello di distribuzione dei dati è illustrata di seguito.
+Se i campi di raggruppamento contengono un numero eccessivo di valori o se si desidera evitare di reimpostare i valori per ogni nuova attività di suddivisione,  Adobe Campaign consente di creare un limite per la distribuzione dei dati. Quando si selezionano i valori di limitazione dei dati (per ulteriori informazioni sull&#39;oggetto vedere la sezione [Creazione di sottoinsiemi](#creating-subsets) ), selezionare l&#39; **[!UICONTROL By data distribution]** opzione e selezionare un modello dal menu a discesa. La creazione di un modello di distribuzione dei dati è illustrata di seguito.
 
 Per un esempio dell&#39; **[!UICONTROL Local approval]** attività con un modello di distribuzione, fare riferimento a [Utilizzo dell&#39;attività](../../workflow/using/using-the-local-approval-activity.md)di approvazione locale.
 
@@ -137,7 +137,7 @@ Per un esempio dell&#39; **[!UICONTROL Local approval]** attività con un modell
 
 >[!IMPORTANT]
 >
->Per utilizzare questa funzione, è necessario acquistare il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controllare il contratto di licenza.
+>Per utilizzare questa funzione, è necessario acquistare il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controlla il contratto di licenza.
 
 Il modello di distribuzione dei dati consente di limitare il numero di record utilizzando un elenco di valori di raggruppamento. Per creare un modello di distribuzione dei dati, procedere come segue:
 
@@ -155,8 +155,8 @@ Il modello di distribuzione dei dati consente di limitare il numero di record ut
    * **[!UICONTROL Targeting dimension]**: immettere la dimensione di targeting a cui verrà applicata, **[!UICONTROL Recipient]** ad esempio, la distribuzione dei dati. Questo schema deve essere sempre compatibile con i dati utilizzati nel flusso di lavoro di targeting.
    * **[!UICONTROL Distribution field]**: selezionate un campo tramite la dimensione di targeting. Ad esempio, se si seleziona il **[!UICONTROL Email domain]** campo, l&#39;elenco dei destinatari verrà suddiviso per dominio.
    * **[!UICONTROL Distribution type]**: selezionare la modalità di suddivisione del valore di limitazione della destinazione nella **[!UICONTROL Distribution]** scheda: **[!UICONTROL Percentage]** o **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: selezionare il tipo di assegnazione distribuzione dati. È possibile scegliere tra l&#39;assegnazione per gruppo o operatore o l&#39;assegnazione per entità locale. L&#39;assegnazione per entità locale viene utilizzata in **Distributed Marketing**. Per ulteriori informazioni, consultare questa [sezione](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: se utilizzate un&#39; **[!UICONTROL Local approval]** attività nel flusso di lavoro di targeting (consultate approvazione [](../../workflow/using/local-approval.md)locale), immettete lo schema in cui verranno memorizzati i risultati dell&#39;approvazione. È necessario specificare uno schema di memorizzazione per schema di targeting. Se utilizzate lo schema di **[!UICONTROL Recipients]** targeting, immettete lo schema di **[!UICONTROL Local approval of recipients]** memorizzazione predefinito.
+   * **[!UICONTROL Assignment type]**: selezionare il tipo di assegnazione distribuzione dati. È possibile scegliere tra l&#39;assegnazione per gruppo o operatore o l&#39;assegnazione per entità locale. L&#39;assegnazione per entità locale viene utilizzata in **Distributed Marketing**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Approval storage]**: se utilizzate un&#39; **[!UICONTROL Local approval]** attività nel flusso di lavoro di targeting (consultate approvazione [](../../workflow/using/local-approval.md)locale), immettete lo schema in cui verranno memorizzati i risultati dell&#39;approvazione. È necessario specificare uno schema di memorizzazione per lo schema di targeting. Se utilizzate lo schema di **[!UICONTROL Recipients]** targeting, immettete lo schema di **[!UICONTROL Local approval of recipients]** memorizzazione predefinito.
 
       In caso di limitazione semplice tramite raggruppamento dati senza approvazione locale, non è necessario immettere il **[!UICONTROL Approvals storage]** campo.
 
@@ -204,7 +204,7 @@ Il modello di distribuzione dei dati consente di limitare il numero di record ut
       >
       >Accertatevi che agli operatori siano stati assegnati i diritti appropriati.
 
-   * **[!UICONTROL Local entity]**: selezionare l&#39;entità locale assegnata a ciascun valore di distribuzione. Le entità locali vengono utilizzate in **Distributed Marketing**. Per ulteriori informazioni, consultare questa [sezione](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: selezionare l&#39;entità locale assegnata a ciascun valore di distribuzione. Le entità locali vengono utilizzate in **Distributed Marketing**. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
 
 ## Parametri di filtro {#filtering-parameters}
 
@@ -212,7 +212,7 @@ Fate clic sulla **[!UICONTROL General]** scheda per immettere l&#39;etichetta de
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera sfruttare la popolazione rimanente. Il complemento è la destinazione in entrata meno l&#39;unione dei sottoinsiemi. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione in uscita, come segue:
+Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Il complemento è la destinazione in entrata meno l&#39;unione dei sottoinsiemi. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione in uscita, come segue:
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
@@ -220,12 +220,12 @@ Affinché questa opzione funzioni correttamente, i dati in entrata devono avere 
 
 Ad esempio, se i dati vengono letti direttamente da un database esterno come Netezza (che non supporta la nozione di indice) tramite un&#39; **[!UICONTROL Data loading (RDBMS)]** attività, il complemento generato dall&#39; **[!UICONTROL Split]** attività sarà errato.
 
-Per evitare questo problema, potete trascinare un&#39; **[!UICONTROL Enrichment]** attività appena prima dell&#39; **[!UICONTROL Split]** attività. Nell&#39; **[!UICONTROL Enrichment]** attività, controllate **[!UICONTROL Keep all additional data from the main set]** e specificate nei dati aggiuntivi le colonne da utilizzare per configurare i filtri dell&#39; **[!UICONTROL Split]** attività. I dati della transizione in entrata dell&#39; **[!UICONTROL Split]** attività vengono quindi memorizzati localmente in una tabella temporanea sul server Adobe Campaign e il complemento può essere generato correttamente.
+Per evitare questo problema, potete trascinare un&#39; **[!UICONTROL Enrichment]** attività appena prima dell&#39; **[!UICONTROL Split]** attività. Nell&#39; **[!UICONTROL Enrichment]** attività, controllate **[!UICONTROL Keep all additional data from the main set]** e specificate nei dati aggiuntivi le colonne da utilizzare per configurare i filtri dell&#39; **[!UICONTROL Split]** attività. I dati della transizione in ingresso dell&#39; **[!UICONTROL Split]** attività vengono quindi memorizzati localmente in una tabella temporanea sul server Adobe Campaign  e il complemento può essere generato correttamente.
 
 L&#39; **[!UICONTROL Enable overlapping of output populations]** opzione consente di gestire le popolazioni appartenenti a diversi sottoinsiemi:
 
 * Se la casella non è selezionata, l&#39;attività di divisione verifica che un destinatario non sia presente in più transizioni di output, anche se soddisfa i criteri di più sottoinsiemi. Saranno nella destinazione della prima scheda con criteri corrispondenti.
-* Quando la casella è selezionata, i destinatari si trovano in diversi sottoinsiemi se soddisfano i criteri di filtro. Adobe Campaign consiglia di utilizzare criteri esclusivi.
+* Quando la casella è selezionata, i destinatari si trovano in diversi sottoinsiemi se soddisfano i criteri di filtro.  Adobe Campaign consiglia di utilizzare criteri esclusivi.
 
 ## Parametri di input {#input-parameters}
 
