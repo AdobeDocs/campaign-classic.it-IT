@@ -1,6 +1,6 @@
 ---
-title: Personalizzazione dell’elenco delle icone
-description: Scopri come personalizzare l'elenco delle icone quando usi Adobe Campaign Classic.
+title: Personalizzazione dell’elenco delle emoticon
+description: Scoprite come personalizzare l’elenco delle icone quando si utilizza Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3beb62d0264cfcb03486c291ce79cc7ff582e9c7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Personalizzazione dell’elenco delle icone {#customize-emoticons}
+# Personalizzazione dell’elenco delle emoticon {#customize-emoticons}
 
 L&#39;elenco di icone visualizzato nella finestra a comparsa è controllato da un&#39;enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte che l&#39;utente ha per un dato campo.
 Potete personalizzare l’ordine degli elenchi di icone e aggiungere altre icone all’elenco.
@@ -39,11 +36,11 @@ Le icone sono disponibili per le e-mail e per il push per ulteriori informazioni
 
    >[!NOTE]
    >
-   >Le enumerazioni pronte all&#39;uso possono essere gestite solo da un amministratore della console Adobe Campaign Classic.
+   >Le enumerazioni pronte all’uso possono essere gestite solo da un amministratore della console Adobe Campaign Classic.
 
    ![](assets/emoticon_1.png)
 
-1. Clic **[!UICONTROL Add]**.
+1. Fai clic su **[!UICONTROL Add]**.
 
 1. Compila i campi:
 
@@ -51,6 +48,7 @@ Le icone sono disponibili per le e-mail e per il push per ulteriori informazioni
 Per evitare problemi di compatibilità, consigliamo di scegliere le icone supportate sui browser e su ogni sistema operativo.
 
    * **[!UICONTROL Label]**: Etichetta della nuova icona.
+
    ![](assets/emoticon_5.png)
 
 1. Fate clic **[!UICONTROL Ok]** quindi **[!UICONTROL Save]** al termine della configurazione.
@@ -66,7 +64,7 @@ La nuova icona verrà automaticamente inserita nel negozio.
 
 1. La nuova icona è stata aggiunta all’enumerazione **[!UICONTROL Insert emoticon list]** out-of-the-box. È possibile cambiare la sua **[!UICONTROL Display order]** in qualsiasi momento o spostarla nel negozio se non ne ha più bisogno.
 
-1. Affinché le modifiche vengano prese in considerazione, disconnettetevi e ricollegatevi da Adobe Campaign Classic. Se la nuova icona non viene visualizzata nella finestra a **[!UICONTROL Insert emoticon]** comparsa, potrebbe essere necessario cancellare la cache. For more on this, refer to this [section](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+1. Per tenere conto delle modifiche, disconnettetevi e ricollegatevi da Adobe Campaign Classic. Se la nuova icona non viene visualizzata nella finestra a **[!UICONTROL Insert emoticon]** comparsa, potrebbe essere necessario cancellare la cache. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
 1. La nuova icona si trova ora nelle consegne nella finestra a **[!UICONTROL Insert emoticon]** comparsa nella 61° posizione, come configurato nei passaggi precedenti. Per ulteriori informazioni sull’utilizzo delle icone nelle distribuzioni, consultate questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
