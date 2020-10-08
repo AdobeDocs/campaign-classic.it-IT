@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -82,13 +79,13 @@ Le regole di tipologia vengono applicate in una sequenza specifica durante le fa
 
 ### Ordine di esecuzione {#execution-order}
 
-In modalità operativa standard, le regole vengono applicate nella sequenza seguente:
+Nella modalità operativa standard, le regole vengono applicate nella sequenza seguente:
 
-1. Regole di controllo, se applicate all&#39;inizio del targeting.
+1. Regole di controllo, se applicate all’inizio del targeting.
 1. Regole di filtro:
 
-   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo non verificato / indirizzo nell&#39;elenco dei blocchi / indirizzo messo in quarantena / qualità indirizzo.
-   * Regole di filtro definite dall&#39;utente.
+   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo / non verificato / indirizzo sul elenco Bloccati  / indirizzo messo in quarantena / qualità indirizzo.
+   * Regole di filtro definite dall’utente.
    * Regola di deduplicazione sull&#39;indirizzo o sull&#39;identificatore (applicata se necessario).
 
 1. Regole di pressione.
@@ -142,7 +139,7 @@ Come opzione, potete utilizzare il **[!UICONTROL Managing affinities with IP add
 >[!NOTE]
 >
 >La gestione dell&#39;affinità non si applica alle **[!UICONTROL Filtering]** tipologie.\
->Le affinità sono definite nel file di configurazione dell&#39;istanza, sul server del Adobe Campaign . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/about-initial-configuration.md).
+>Le affinità sono definite nel file di configurazione dell&#39;istanza, sul server Adobe Campaign . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/about-initial-configuration.md).
 
 ### Ottimizzazione delle campagne e marketing distribuito {#campaign-optimization-and-distributed-marketing}
 
