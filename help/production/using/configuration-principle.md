@@ -11,26 +11,26 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 5%
 
 ---
 
 
 # Principio di configurazione{#configuration-principle}
 
-La piattaforma Adobe Campaign si basa sul concetto di istanze, simile a quello degli host virtuali utilizzati da Apache. Questa modalità di funzionamento consente di condividere un server assegnandogli più istanze. Le istanze sono completamente separate l&#39;una dall&#39;altra e funzionano con il proprio database e file di configurazione.
+La piattaforma Adobe Campaign  si basa sul concetto di istanze, simile a quello degli host virtuali utilizzati da Apache. Questa modalità di funzionamento consente di condividere un server assegnandogli più istanze. Le istanze sono completamente separate l&#39;una dall&#39;altra e funzionano con il proprio database e file di configurazione.
 
-Per un determinato server, esistono due elementi comuni a tutte le istanze di Adobe Campaign:
+Per un determinato server, esistono due elementi comuni a tutte  istanze Adobe Campaign:
 
 * La password **interna** : questa è la password dell&#39;amministratore generale. È comune a tutte le istanze di un particolare server applicazione.
 
    >[!CAUTION]
    >
-   >Per accedere con l&#39;identificatore **interno** , è necessario che sia stata definita una password in anticipo. For more on this, refer to [this section](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   >Per accedere con l&#39;identificatore **Interno** , è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 * Configurazioni server tecniche multiple: tutte queste configurazioni possono essere sovraccaricate nella configurazione specifica di un&#39;istanza.
 
