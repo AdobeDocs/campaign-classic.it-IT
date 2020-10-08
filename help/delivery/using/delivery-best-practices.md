@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -116,4 +113,4 @@ Vedi anche:
 
 * [Passaggi per la creazione di consegne](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-* [Elenco di controllo sulla sicurezza e sulla privacy](https://helpx.adobe.com/campaign/kb/acc-security.html)
+* [Elenco di controllo sulla sicurezza e sulla privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
