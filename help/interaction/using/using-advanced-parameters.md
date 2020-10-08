@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 9%
 
 ---
 
@@ -28,9 +28,9 @@ Questo capitolo descrive i vari possibili parametri avanzati in Interazione.
 >
 >Il capitolo seguente è destinato agli amministratori **** tecnici.
 
-* È possibile utilizzare dati contestuali aggiuntivi. Fare riferimento alla sezione [Dati](../../interaction/using/additional-data.md) aggiuntivi.
+* È possibile utilizzare dati contestuali aggiuntivi. Refer to the [Additional data](../../interaction/using/additional-data.md) section.
 * È possibile arricchire i contesti applicativi delle offerte suggerite tramite un canale in entrata. A tal fine, è necessario estendere lo schema di interazione **nms:interactive** . Per la procedura completa, consultate la sezione [Esempio](../../interaction/using/extension-example.md) di estensione.
 * La creazione di un ambiente di test è dettagliata nella sezione [Creazione di un ambiente](../../interaction/using/creating-a-test-environment.md) di test.
-* È possibile modificare il comportamento standard del motore utilizzando gli ganci. Per ulteriori informazioni, consulta la sezione [Ganci](../../interaction/using/hooks.md) .
+* È possibile modificare il comportamento standard del motore utilizzando gli ganci. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
 * Infine, l&#39;utilizzo di Interaction con un&#39;architettura distribuita è descritto nella sezione [Architetture](../../interaction/using/distributed-architectures.md) distribuite.
 
