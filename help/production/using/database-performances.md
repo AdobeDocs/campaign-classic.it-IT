@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 8%
 
 ---
 
@@ -25,17 +25,17 @@ source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
 La maggior parte dei problemi di prestazioni sono collegati alla manutenzione del database. Di seguito sono riportati quattro principali lead per individuare la causa di prestazioni lente:
 
 * Configurazione,
-* installazione e configurazione della piattaforma Adobe Campaign,
-* manutenzione del database,
+* Installazione e configurazione della piattaforma Adobe Campaign ,
+* Manutenzione del database,
 * Diagnosi in tempo reale.
 
 ## Configurazione {#configuration}
 
-Verifica che la configurazione iniziale della piattaforma Adobe Campaign sia ancora valida e, se necessario, rivaluta le esigenze del cliente in termini di recapito o dimensioni del database. È inoltre consigliabile eseguire un controllo hardware completo (CPU, RAM, sistema IO).
+Verificare che la configurazione iniziale  piattaforma Adobe Campaign sia ancora valida e, se necessario, rivalutare le esigenze del cliente in termini di recapito o dimensioni del database. È inoltre consigliabile eseguire un controllo hardware completo (CPU, RAM, sistema IO).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, fai riferimento alla guida [al dimensionamento di](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html) Adobe Campaign Harware.
+>Per ulteriori informazioni, consulta [Guida](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html) al dimensionamento di Adobe Campaign Harware.
 
 ## Configurazione della piattaforma {#platform-configuration}
 
@@ -45,17 +45,17 @@ Una configurazione non appropriata potrebbe influire sulle prestazioni della pia
 
 **Attività di pulizia del database**
 
-Verificare che l&#39;attività di pulizia del database sia operativa. A questo scopo, visualizzate i file di registro per verificare se contengono errori. For more on this, refer to [this section](../../production/using/database-cleanup-workflow.md).
+Verificare che l&#39;attività di pulizia del database sia operativa. A questo scopo, visualizzate i file di registro per verificare se contengono errori. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/database-cleanup-workflow.md).
 
 **Piani di manutenzione**
 
 Assicuratevi che la manutenzione del database sia pianificata ed eseguita correttamente. A questo scopo, contattate l&#39;amministratore del database per ulteriori informazioni:
 
 * il programma di manutenzione,
-* piani di manutenzione precedentemente eseguiti,
+* piani di manutenzione eseguiti in precedenza,
 * visualizzare i registri di script.
 
-For more on this, refer to [this section](../../production/using/recommendations.md).
+Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
 >[!CAUTION]
 >
@@ -71,18 +71,18 @@ Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano un
 
 >[!CAUTION]
 >
->Se l&#39;operazione richiede molto tempo e libera molto spazio, ciò significa che è necessaria una manutenzione approfondita (ricostruzione dell&#39;indice, ecc.). For more on this, refer to [this section](../../production/using/recommendations.md).
+>Se l&#39;operazione richiede molto tempo e libera molto spazio, ciò significa che è necessaria una manutenzione approfondita (ricostruzione dell&#39;indice, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
-**Monitoraggio del processo Adobe Campaign**
+**del processo Adobe Campaign**
 
-A seconda delle impostazioni di installazione di Adobe Campaign, potete utilizzare due strumenti per il monitoraggio della piattaforma:
+A seconda  impostazioni di installazione di Adobe Campaign, è possibile utilizzare due strumenti per il monitoraggio della piattaforma:
 
-* la pagina di produzione dell&#39;istanza. Per maggiori informazioni, consulta [Monitoraggio](../../production/using/monitoring-processes.md#manual-monitoring)manuale.
-* lo script netreport. Per ulteriori informazioni, consulta Monitoraggio [automatico tramite script](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)Adobe Campaign.
+* la pagina di produzione dell&#39;istanza. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
+* lo script netreport. Per ulteriori informazioni, vedere Monitoraggio [automatico tramite  script](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)Adobe Campaign.
 
-## Specifiche {#specifics}
+## Specifics {#specifics}
 
-Potrebbe essere necessario eseguire una diagnosi in tempo reale per identificare la causa del problema. Per iniziare, controllate i file di registro di processo e piattaforma, quindi controllate l&#39;attività del database durante la ricreazione del problema. prestare particolare attenzione ai seguenti elementi:
+Potrebbe essere necessario eseguire una diagnosi in tempo reale per identificare la causa del problema. Per iniziare, controllate i file di registro di processo e piattaforma, quindi controllate l&#39;attività del database durante la ricreazione del problema. Prestare particolare attenzione ai seguenti elementi:
 
 * il piano di esecuzione della manutenzione,
 * Query SQL in esecuzione,
