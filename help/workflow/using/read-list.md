@@ -1,7 +1,7 @@
 ---
-title: Leggi l'elenco
-seo-title: Leggi l'elenco
-description: Leggi l'elenco
+title: Leggi elenco
+seo-title: Leggi elenco
+description: Leggi elenco
 seo-description: null
 page-status-flag: never-activated
 uuid: 34e28675-f28b-407f-8d60-41a5383af0db
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 1%
 
 ---
 
 
-# Leggi l&#39;elenco{#read-list}
+# Leggi elenco{#read-list}
 
 I dati elaborati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati preparati o strutturati in anticipo (dopo una precedente segmentazione o caricamento di file).
 
@@ -42,7 +42,7 @@ Una volta configurata la selezione dell&#39;elenco, potete aggiungere un filtro 
 >
 >Per poter creare un filtro in un&#39;attività dell&#39;elenco di lettura, l&#39;elenco pertinente deve essere di tipo &quot;file&quot;.
 
-Gli elenchi possono essere creati direttamente in Adobe Campaign tramite il **[!UICONTROL Profiles and Targets > Lists]** collegamento della home page. Possono anche essere creati in un flusso di lavoro utilizzando l&#39; **[!UICONTROL List update]** attività.
+Gli elenchi possono essere creati direttamente in  Adobe Campaign tramite il **[!UICONTROL Profiles and Targets > Lists]** collegamento della home page. Possono anche essere creati in un flusso di lavoro utilizzando l&#39; **[!UICONTROL List update]** attività.
 
 **Esempio: Escludere un elenco di indirizzi di invio**
 
@@ -50,9 +50,9 @@ L’esempio seguente consente di utilizzare un elenco di indirizzi e-mail da esc
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-I profili contenuti nella cartella **Nuovi contatti** devono essere interessati da un&#39;azione di consegna. Gli indirizzi e-mail da escludere dalla destinazione sono memorizzati in un elenco esterno. Nel nostro esempio, solo le informazioni sugli indirizzi e-mail sono necessarie per l&#39;esclusione.
+I profili contenuti nella cartella **Nuovi contatti** devono essere mirati da un&#39;azione di consegna. Gli indirizzi e-mail da escludere dalla destinazione sono memorizzati in un elenco esterno. Nel nostro esempio, solo le informazioni sugli indirizzi e-mail sono necessarie per l&#39;esclusione.
 
-1. La query di selezione della cartella **Nuovi contatti** deve consentire di caricare gli indirizzi e-mail dei profili selezionati, al fine di abilitare l&#39;allineamento con le informazioni nell&#39;elenco.
+1. La query di selezione della cartella **Nuovi contatti** deve consentire di caricare gli indirizzi e-mail dei profili selezionati, al fine di abilitare l&#39;allineamento con le informazioni presenti nell&#39;elenco.
 
    ![](assets/s_advuser_list_read_sample_0.png)
 
