@@ -1,7 +1,7 @@
 ---
-title: Gestione delle immagini dell'attività
-seo-title: Gestione delle immagini dell'attività
-description: Gestione delle immagini dell'attività
+title: Gestione delle immagini delle attività
+seo-title: Gestione delle immagini delle attività
+description: Gestione delle immagini delle attività
 seo-description: null
 page-status-flag: never-activated
 uuid: 6497d979-b22b-4245-9142-b7c5ff047413
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: ae8fc2b7-456b-481c-8abb-64dab1c22534
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
 
-# Gestione delle immagini dell&#39;attività{#managing-activity-images}
+# Gestione delle immagini delle attività{#managing-activity-images}
 
 Le immagini utilizzate nei diagrammi dei vari flussi di lavoro possono essere modificate. Tuttavia devono rispettare alcuni vincoli. Le fasi di implementazione sono le seguenti:
 
