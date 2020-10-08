@@ -9,14 +9,11 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -40,9 +37,9 @@ L&#39;elenco completo delle soluzioni e dei servizi di base  Adobe che possono e
 
 ## Collegamento delle soluzioni {#working-with-experience-cloud-solutions}
 
-A seconda dell&#39;ambiente, diverse soluzioni possono essere collegate ad Adobe Experience Cloud. Sono collegate come organizzazioni. Un&#39; **organizzazione** è l&#39;entità che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il single sign-on nel Experience Cloud . L&#39;organizzazione funziona come un&#39;azienda che abbraccia tutti i prodotti e le soluzioni  Experienci Cloud. Nella maggior parte dei casi, un&#39;organizzazione è il vostro nome aziendale. Tuttavia, un&#39;azienda può avere molte organizzazioni.
+A seconda dell&#39;ambiente, diverse soluzioni possono essere collegate ad Adobe Experience Cloud. Sono collegate come organizzazioni. An **organization** is the entity that enables an administrator to configure groups and users, and to control single sign-on in the Experience Cloud. L’organizzazione funziona come una log-in company che abbraccia tutti i prodotti e le soluzioni di Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, ma una stessa azienda può avere molte organizzazioni.
 
-La gestione dell&#39;organizzazione e il collegamento degli account Adobe Experience Cloud sono descritti dettagliatamente nel portale [della guida di](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)Adobe Experience Cloud.
+La gestione dell&#39;organizzazione e il collegamento degli account Adobe Experience Cloud sono descritti dettagliatamente nel portale [della guida di](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/organizations.html)Adobe Experience Cloud.
 
 >[!CAUTION]
 >
@@ -74,11 +71,11 @@ La tabella seguente fornisce l&#39;accesso alla documentazione di integrazione  
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Consente di creare contenuti e-mail o moduli mappati al database Adobe Campaign  direttamente in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
+   <td> Allows you to create email contents or forms mapped to the Adobe Campaign database directly in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Consente di inserire immagini che vengono calcolate dinamicamente da <strong>Adobe Target</strong> all’apertura dell’e-mail creata e inviata da  Adobe Campaign.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign -  Adobe Target.</p><br /> </td> 
+   <td> Allows you to insert images that are dynamically computed by <strong>Adobe Target</strong> when the email created and sent by Adobe Campaign is opened.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign -  Adobe Target.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Servizio</strong><br /> di base Persone <strong>Adobe Audience Manager</strong><br /> </td> 
@@ -86,11 +83,11 @@ La tabella seguente fornisce l&#39;accesso alla documentazione di integrazione  
   </tr> 
   <tr> 
    <td> <strong>Servizio di base risorse</strong><br /> </td> 
-   <td> Consente di inserire le risorse dalla libreria Adobe Experience Cloud nelle e-mail e nelle pagine di destinazione create in  Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Scopri di più</a> su  Adobe Campaign - Integrazione dei servizi di base di Assets</p><br /> </td> 
+   <td> Consente di inserire gli assets dalla libreria di Adobe Experience Cloud nelle e-mail e nelle pagine di destinazione create in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Scopri di più</a> su  Adobe Campaign - Integrazione dei servizi di base di Assets</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
-   <td> Consente di inserire le risorse dalla libreria AEM Assets <strong></strong> nelle e-mail e nelle pagine di destinazione create in  Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign -  AEM Assets.</p><br /> </td> 
+   <td> Allows you to insert assets from your <strong>AEM Assets</strong> library into emails and landing pages created in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Ulteriori</a> informazioni sull'integrazione  Adobe Campaign -  AEM Assets.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Trigger di Experience Cloud</strong><br /> </td> 
