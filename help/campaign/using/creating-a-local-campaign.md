@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,7 +36,7 @@ Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimen
 1. Ordinare la campagna.
 1. Esecuzione di campagne.
 
-## Creazione di un modello di campagna locale {#creating-a-local-campaign-template}
+## Creating a local campaign template {#creating-a-local-campaign-template}
 
 Per creare un pacchetto di campagna, dovete innanzitutto creare il modello **di** campagna tramite il **[!UICONTROL Resources > Templates]** nodo.
 
@@ -83,7 +80,7 @@ Sono disponibili quattro tipi di interfacce Web:
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : l&#39;entità locale ha accesso ai parametri della campagna nella propria extranet (non in Adobe Campaign). Questi parametri sono identici a quelli di una campagna **locale (per modulo)**.
+* **[!UICONTROL By external form]** : l&#39;entità locale ha accesso ai parametri della campagna nella propria extranet (non  Adobe Campaign). Questi parametri sono identici a quelli di una campagna **locale (per modulo)**.
 * **[!UICONTROL Pre-set]** : l&#39;entità locale ordina la campagna utilizzando il modulo predefinito, senza localizzarlo.
 
    ![](assets/mkt_distr_5.png)
@@ -174,7 +171,7 @@ Affinché il modello di campagna diventi disponibile per le entità locali, deve
 Effettuate le seguenti operazioni:
 
 1. Nella **[!UICONTROL Navigation]** sezione della pagina **Campagne** fare clic sul **[!UICONTROL Campaign packages]** collegamento.
-1. Fai clic sul pulsante **[!UICONTROL Create]**. 
+1. Fai clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
@@ -242,7 +239,7 @@ Per utilizzare una campagna offerta dall&#39;entità centrale, l&#39;entità loc
 
 Per ordinare una campagna:
 
-1. Fai clic **[!UICONTROL Order campaign]** nel messaggio di notifica o sul pulsante corrispondente in Adobe Campaign.
+1. Fate clic **[!UICONTROL Order campaign]** nel messaggio di notifica o sul pulsante corrispondente in  Adobe Campaign.
 
    Immettete il vostro ID e la password per ordinare la campagna. L&#39;interfaccia è composta da un set di pagine definite in un&#39;applicazione Web.
 
@@ -276,7 +273,7 @@ Per ordinare una campagna:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   Per ulteriori informazioni, consulta la sezione relativa al processo [di](#approval-process) approvazione.
+   For more on this, refer to the [Approval process](#approval-process) section.
 
 1. L&#39;operatore locale riceve una notifica della disponibilità della campagna: la disponibilità delle campagne è disponibile nell&#39;elenco dei pacchetti delle campagne all&#39;interno dell&#39;universo **Campagne** . La campagna può quindi essere utilizzata. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
 
@@ -308,7 +305,7 @@ Quando una campagna viene ordinata da un&#39;entità locale, i relativi revisori
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Approvazione tramite la console Adobe Campaign {#approving-via-the-adobe-campaign-console}
+#### Approvazione tramite la console Adobe Campaign  {#approving-via-the-adobe-campaign-console}
 
 L’ordine può essere approvato anche tramite la console, nella panoramica dell’ordine della campagna. Per approvare un ordine, selezionatelo e fate clic su **[!UICONTROL Approve the order]**.
 
@@ -334,7 +331,7 @@ L&#39;operatore incaricato dell&#39;approvazione può rifiutare un ordine o un p
 
 Se il revisore rifiuta un ordine, la notifica corrispondente viene inviata automaticamente alle entità locali interessate: visualizza il commento immesso dall&#39;operatore che ha rifiutato l&#39;approvazione.
 
-Le informazioni vengono visualizzate nella pagina dell&#39;elenco dei pacchetti della campagna o nella pagina dell&#39;ordine della campagna. Se hanno accesso alla console di Adobe Campaign, le entità locali vengono informate di questo rifiuto.
+Le informazioni vengono visualizzate nella pagina dell&#39;elenco dei pacchetti della campagna o nella pagina dell&#39;ordine della campagna. Se hanno accesso alla console Adobe Campaign , le entità locali vengono informate di questo rifiuto.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
