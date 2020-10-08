@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 27cd51f6-b787-4703-a34d-ce23321f0dcf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 9%
 
 ---
 
@@ -32,8 +32,8 @@ Le seguenti attività sono attività di database: Il loro compito principale è 
 * **Attendi**: abilita la transizione in uscita dopo un determinato limite di tempo. Fare riferimento a [Attendere](../../workflow/using/wait.md).
 * **Limite** di tempo: consente di sospendere un’attività per un determinato periodo di tempo. Fare riferimento al vincolo [Tempo](../../workflow/using/time-constraint.md).
 * **Flusso di lavoro** secondario: consente di eseguire un altro flusso di lavoro. Fare riferimento a [Flusso di lavoro](../../workflow/using/sub-workflow.md)secondario.
-* **Salti**: consente di implementare transizioni senza collegamenti. Fare riferimento a [Jump (punto iniziale e punto finale)](../../workflow/using/jump--start-point-and-end-point-.md).
-* **Segnale** esterno: consente di abilitare la transizione in uscita dopo aver ricevuto un segnale esterno. Fare riferimento alla sezione [Segnale](../../workflow/using/external-signal.md) esterno.
+* **Salti**: consente di implementare transizioni senza collegamenti. Refer to [Jump (start point and end point)](../../workflow/using/jump--start-point-and-end-point-.md).
+* **Segnale** esterno: consente di abilitare la transizione in uscita dopo aver ricevuto un segnale esterno. Consulta la sezione [External signal](../../workflow/using/external-signal.md).
 * **Approvazione**: consente di inviare un&#39;e-mail a un operatore o a un gruppo di operatori e di attendere che l&#39;approvazione continui con l&#39;esecuzione. Fare riferimento alla sezione [Approvazione](../../workflow/using/approval.md) .
 * **Avviso**: consente di inviare un avviso a un operatore o a un gruppo di operatori. Fare riferimento alla sezione [Avviso](../../workflow/using/alert.md) .
 * **Attività**: consente di configurare l&#39;esecuzione delle attività. Fare riferimento alla sezione [Attività](../../workflow/using/task.md) .
