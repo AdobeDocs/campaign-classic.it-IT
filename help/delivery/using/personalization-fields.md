@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 
 # Campi di personalizzazione{#personalization-fields}
 
-I campi di personalizzazione sono utilizzati per la personalizzazione di primo livello del contenuto dei messaggi inviati. I campi inseriti in un contenuto principale mostrano la posizione in cui inserire i dati dall&#39;origine dati selezionata.
+I campi di personalizzazione sono utilizzati per la personalizzazione di primo livello del contenuto dei messaggi inviati. I campi inseriti in un contenuto principale mostrano la posizione in cui inserire i dati dall’origine dati selezionata.
 
 Ad esempio, il campo di personalizzazione con la sintassi **&lt;%= receive.LastName %>** indica a  Adobe Campaign di inserire il nome del destinatario nel database (tabella del destinatario).
 
@@ -71,7 +68,7 @@ Creiamo un&#39;e-mail in cui inseriremo prima il nome del destinatario e quindi 
 
    ![](assets/s_ncs_user_insert_custom_field_b.png)
 
-1. Selezionare il campo con le informazioni da visualizzare e fare clic **[!UICONTROL OK]**.
+1. Selezionare il campo con le informazioni da visualizzare e fare clic su **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
@@ -81,7 +78,7 @@ Creiamo un&#39;e-mail in cui inseriremo prima il nome del destinatario e quindi 
 
    >[!NOTE]
    >
-   >Quando una consegna fa parte di un flusso di lavoro, potete utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel **[!UICONTROL Target extension]** menu. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/data-life-cycle.md#target-data).
+   >Quando una consegna fa parte di un flusso di lavoro, potete utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel **[!UICONTROL Target extension]** menu. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Ottimizzazione della personalizzazione {#optimizing-personalization}
 
@@ -95,7 +92,7 @@ Ad esempio, in caso di problemi di prestazioni durante la distribuzione a un num
 
 Per utilizzare questa opzione, attenetevi alla procedura seguente:
 
-1. Creare una campagna. Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Nella **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungete un&#39;attività **Query** al flusso di lavoro. For more on using this activity, refer to [this section](../../workflow/using/query.md).
 1. Aggiungete un&#39; **[!UICONTROL Email delivery]** attività al flusso di lavoro e apritela. For more on using this activity, refer to [this section](../../workflow/using/delivery.md).
 1. Passate alla **[!UICONTROL Analysis]** scheda del **[!UICONTROL Delivery properties]** pannello e selezionate l&#39; **[!UICONTROL Prepare the personalization data with a workflow]** opzione.
