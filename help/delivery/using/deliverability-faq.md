@@ -1,6 +1,6 @@
 ---
-title: Punti chiave per la gestione della recapito in  Adobe Campaign Classic
-description: Quali sono i punti chiave da verificare per la gestione della recapito in  Adobe Campaign Classic?
+title: Punti chiave per la gestione della recapito in Adobe Campaign Classic
+description: Quali sono i punti chiave da verificare nella gestione della recapito in Adobe Campaign Classic?
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56fed9fff445892366d3e0f1367029882077ae20
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -31,13 +28,13 @@ Si è verificato un problema di recapito? Puoi trovare la soluzione qui.
 
 Questo messaggio indica che è stato raggiunto il limite di quota per un MX specifico e che è necessario attendere di poter inviare un&#39;altra e-mail a questo provider.
 
- Adobe Campaign, è disponibile una configurazione relativa al numero di e-mail per ora che possono essere inviate. Questa configurazione deve essere utilizzata con attenzione, in quanto il numero definito nell&#39;istanza riguarda il numero di connessioni effettuate con l&#39;ISP e non il numero di e-mail effettivamente inviate.
+In  Adobe Campaign, è disponibile una configurazione relativa al numero di e-mail per ora che possono essere inviate. Questa configurazione deve essere utilizzata con attenzione, in quanto il numero definito nell&#39;istanza riguarda il numero di connessioni effettuate con l&#39;ISP e non il numero di e-mail effettivamente inviate.
 
 Ciò significa che una connessione può utilizzare una regola MX senza inviare correttamente un&#39;e-mail. In questo caso, una configurazione con un IP o un dominio con una reputazione ridotta dovrà provare diverse connessioni prima di inviare un&#39;e-mail. Per ogni tentativo, verrà utilizzato un messaggio all&#39;ora di credito. Di conseguenza, le prestazioni della campagna di marketing subiranno un impatto significativo.
 
 Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel registro [](../../production/using/monitoring-processes.md#smtp-errors-per-domain)SMTP.
 
-Per ulteriori informazioni sulla configurazione MX, consulta [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
+For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Stesso messaggio di errore per un ISP {#same-error-for-an-isp}
 
@@ -48,39 +45,40 @@ Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#
 * Aggiornare i moduli di iscrizione per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dalla destinazione.
 
-Se il problema persiste, contattate i servizi commerciali o di recapito,  Client Care di Adobe Campaign o  supporto del Adobe Campaign.
+Se il problema persiste, contattate i servizi commerciali o di recapito,  Adobe Campaign Client Care o  supporto Adobe Campaign.
 
-## Elenco blocchi e quarantena {#block-list-versus-quarantine}
+## elenco Bloccati  contro quarantena {#block-list-versus-quarantine}
 
-* **Qual è la differenza tra un indirizzo e-mail nell&#39;elenco dei blocchi e un indirizzo e-mail in quarantena?**
+* **Qual è la differenza tra un indirizzo e-mail nel elenco Bloccati  e un indirizzo e-mail in quarantena?**
 
    * Lo stato **[!UICONTROL On block list]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
    * Lo stato **[!UICONTROL Quarantined]** è il risultato di un rimbalzo morbido o duro.
-   For more on this, see [this section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
+   Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
 
-   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, indirizzo nell&#39;elenco blocchi, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
+   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, indirizzo  elenco Bloccati, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
-   Per ulteriori informazioni, consulta [Informazioni sulla gestione](../../delivery/using/understanding-quarantine-management.md)della quarantena.
+   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Rimozione dall&#39;elenco dei blocchi {#remove-from-block-list}
+## Rimozione da  elenco Bloccati {#remove-from-block-list}
 
-* **Uno dei miei destinatari è stato aggiunto all&#39;elenco dei blocchi per errore. Come posso rimuoverli dall&#39;elenco dei blocchi in modo da poter iniziare a inviarli di nuovo?**
+* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati  per errore. Come posso rimuoverli dal elenco Bloccati  in modo da poter iniziare a inviare nuovamente i messaggi?**
 
    * Vai a **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nei dettagli del record corrispondente, impostare il valore del **[!UICONTROL Status]** campo su **[!UICONTROL Valid]**.
    * Salvare il record.
 
-* **Come posso sapere se uno dei miei IP si trova in un elenco di blocchi? Come posso rimuovere i miei IP da un elenco di blocchi?**
+* **Come posso sapere se uno dei miei IP è su un elenco Bloccati ? Come posso rimuovere i miei IP da un elenco Bloccati ?**
 
-   Per verificare se l&#39;indirizzo IP si trova in un elenco di blocchi, è possibile utilizzare vari siti Web per verificarlo, ad esempio:
+   Per verificare se l&#39;indirizzo IP si trova su un elenco Bloccati , potete utilizzare vari siti Web per verificarlo, ad esempio:
    * [Toolbox MX](https://mxtoolbox.com/)
    * [Qual è il mio indirizzo IP?](https://whatismyipaddress.com)
-   In genere, il risultato della verifica dell&#39;indirizzo IP restituirà un elenco contenente i dettagli dell&#39;elenco dei blocchi e il nome del sito Web che ha bloccato l&#39;indirizzo IP.
 
-   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il sito Web venga eliminato dal sito Web che ha aggiunto l&#39;indirizzo IP al relativo elenco di blocchi.
+   In genere, il risultato della verifica dell&#39;indirizzo IP restituirà un elenco contenente i dettagli del elenco Bloccati  e anche il nome del sito Web che ha bloccato l&#39;indirizzo IP.
+
+   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il vostro sito Web venga eliminato dal sito Web che ha aggiunto l&#39;indirizzo IP al suo elenco Bloccati .
 
    >[!NOTE]
    >
@@ -133,7 +131,7 @@ I reclami provengono anche dagli abbonati che semplicemente non desiderano più 
 **Validità dei dati**
 
 **I rimbalzi** forti si verificano quando si invia a un **indirizzo** non consegnabile presso un ISP. Un indirizzo può non essere recapitato per diversi motivi, ad esempio:
-* Indirizzo con errore ortografico. Questo problema può essere risolto con un servizio di convalida dei dati in tempo reale, o richiedendo una scelta confermata prima di inviare e-mail di marketing a tale indirizzo.
+* Indirizzo errato. Questo problema può essere risolto con un servizio di convalida dei dati in tempo reale, o richiedendo una scelta confermata prima di inviare e-mail di marketing a tale indirizzo.
 * Elenco o origine dati non valida. Se proviene da una nuova origine, controlla in che modo gli indirizzi sono stati raccolti e verifica che sia presente l&#39;autorizzazione.
 * Invio a un indirizzo che era in una volta attivo, ma che è stato chiuso o terminato dopo un periodo di inattività.
 
