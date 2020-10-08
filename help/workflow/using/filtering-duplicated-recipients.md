@@ -1,5 +1,5 @@
 ---
-title: Filtrare i destinatari duplicati
+title: Filtraggio dei destinatari duplicati
 description: Scopri come filtrare i destinatari duplicati
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
 
-# Filtrare i destinatari duplicati {#filtering-duplicated-recipients}
+# Filtraggio dei destinatari duplicati {#filtering-duplicated-recipients}
 
 In questo esempio, vogliamo filtrare i destinatari che appaiono due o più volte in una consegna per recuperare i profili duplicati.
 
