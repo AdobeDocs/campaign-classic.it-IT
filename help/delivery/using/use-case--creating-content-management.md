@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 2%
 
 ---
 
 
-# Caso di utilizzo: creazione di content management{#use-case-creating-content-management}
+# Caso di utilizzo: creazione di gestione dei contenuti{#use-case-creating-content-management}
 
-Per creare la gestione dei contenuti in Adobe Campaign, sono necessari i seguenti passaggi:
+Per creare la gestione dei contenuti in  Adobe Campaign, sono necessari i seguenti passaggi:
 
 * [Fase 1 - Analisi del contenuto da produrre](#step-1---analyzing-the-content-to-be-produced),
 * [Passaggio 2 - Creazione dello schema](#step-2---creating-the-data-schema)dati,
@@ -55,21 +55,21 @@ Questa newsletter contiene tre tipi di elementi:
 
 I vari elementi di questa newsletter vengono assemblati in base alle regole definite in un modello JavaScript che fa riferimento a tutti gli elementi da inserire e ne concettualizza il layout.
 
-Questi elementi vengono creati tramite uno schema dedicato che specifica gli elementi seguenti per ogni contenuto: nome, etichetta, tipo, dimensione e qualsiasi altra informazione pertinente alla sua elaborazione in Adobe Campaign.
+Questi elementi vengono creati tramite uno schema dedicato che specifica gli elementi seguenti per ogni contenuto: nome, etichetta, tipo, dimensione e qualsiasi altra informazione pertinente alla sua elaborazione in  Adobe Campaign.
 
-## Passaggio 2 - Creazione dello schema dati {#step-2---creating-the-data-schema}
+## Step 2 - Creating the data schema {#step-2---creating-the-data-schema}
 
 Uno schema dati è un documento XML associato al contenuto. Descrive la struttura XML dei dati in questo contenuto.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati in Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-edition.md).
+>Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati in  Adobe Campaign, consultare [questa sezione](../../configuration/using/about-schema-edition.md).
 >
 >Gli elementi di configurazione specifici per la gestione del contenuto sono descritti dettagliatamente negli schemi [di](../../delivery/using/data-schemas.md)dati.
 
 Per creare uno schema dati, procedere come segue:
 
-1. Apri Adobe Campaign Explorer e seleziona il **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
+1. Aprire  Adobe Campaign Explorer e selezionare il **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
 
    Fare clic sull&#39; **[!UICONTROL New]** icona situata sopra l&#39;elenco degli schemi di dati.
 
@@ -89,7 +89,7 @@ Per creare uno schema dati, procedere come segue:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Per ulteriori informazioni, vedere [Modifica degli schemi](../../delivery/using/data-schemas.md#editing-schemas).
+   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
 
    Per ogni elemento a cui si fa riferimento nel contenuto, dovete selezionare un tipo corrispondente.
 
@@ -98,10 +98,10 @@ Per creare uno schema dati, procedere come segue:
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Contenuto</strong><br /> </th> 
-   <th> <strong>Formato</strong><br /> </th> 
-   <th> <strong>Tipo</strong><br /> </th> 
-   <th> <strong>Etichetta</strong><br /> </th> 
+   <th> <strong>Contenuto</strong> <br /> </th> 
+   <th> <strong>Formato</strong> <br /> </th> 
+   <th> <strong>Tipo</strong> <br /> </th> 
+   <th> <strong>Etichetta</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -138,14 +138,14 @@ Per creare uno schema dati, procedere come segue:
   <tr> 
    <td> Autore<br /> </td> 
    <td> Elemento<br /> </td> 
-   <td> Per memoria<br /> </td> 
+   <td> Memo<br /> </td> 
    <td> Autore<br /> </td> 
   </tr> 
   <tr> 
-   <td> Logo intestazione (memorizzato nelle risorse pubbliche di Adobe Campaign)<br /> </td> 
+   <td> Logo intestazione (memorizzato  risorse pubbliche Adobe Campaign)<br /> </td> 
    <td> Attributo<br /> </td> 
    <td> Collegamento<br /> </td> 
-   <td> Image<br /> </td> 
+   <td> Immagine<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -169,19 +169,19 @@ Lo schema conterrà le seguenti informazioni:
 
 ## Passaggio 3 - Creazione del modulo di input {#step-3---creating-the-input-form}
 
-Il modulo di input consente di modificare un&#39;istanza di contenuto tramite un&#39;interfaccia di input dalla console client Adobe Campaign.
+Il modulo di input consente di modificare un&#39;istanza di contenuto tramite un&#39;interfaccia di input dalla console client Adobe Campaign .
 
 La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema del modulo &quot;xtk:form&quot;.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione di moduli in Adobe Campaign, consulta [questa sezione](../../configuration/using/identifying-a-form.md).
+>Per ulteriori informazioni sulla creazione e la configurazione di moduli in  Adobe Campaign, consultare [questa sezione](../../configuration/using/identifying-a-form.md).
 >
 >Gli elementi di configurazione specifici per la gestione del contenuto sono descritti nei moduli [di](../../delivery/using/input-forms.md)input.
 
 Per creare un modulo di input per la gestione del contenuto, procedere come segue:
 
-1. Apri Adobe Campaign Explorer e seleziona il **[!UICONTROL Administration > Configuration > Input forms]** nodo.
+1. Aprire  Adobe Campaign Explorer e selezionare il **[!UICONTROL Administration > Configuration > Input forms]** nodo.
 
    Fare clic sull&#39; **[!UICONTROL New]** icona sopra l&#39;elenco dei moduli.
 
@@ -229,9 +229,9 @@ In questo esempio, desideriamo utilizzare un modello JavaScript per definire la 
 >
 >I vincoli collegati alla creazione di documenti (modello JavaScript o XSL) sono descritti in [Formattazione](../../delivery/using/formatting.md).
 
-Per utilizzare un modello JavaScript in Adobe Campaign, effettua i seguenti passaggi:
+Per utilizzare un modello JavaScript in  Adobe Campaign, eseguire i seguenti passaggi:
 
-1. Apri Adobe Campaign Explorer e seleziona il **[!UICONTROL Administration > Configuration > JavaScript Templates]** nodo.
+1. Aprire  Adobe Campaign Explorer e selezionare il **[!UICONTROL Administration > Configuration > JavaScript Templates]** nodo.
 
    Fate clic sull’ **[!UICONTROL New]** icona sopra l’elenco dei modelli.
 
@@ -331,7 +331,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, effettua i seguenti pass
    </html>
    ```
 
-   La chiamata di una funzione all&#39;inizio di un modello consente di impostare una chiamata ai dati di personalizzazione provenienti dal database di Adobe Campaign (in questo caso: Recipients.firstName e Recipiente.lastName), in modo che possa essere interpretato quando utilizzato in una consegna. Per ulteriori informazioni, vedere [Inclusione di un modello](../../delivery/using/formatting.md#including-a-javascript-template)JavaScript.
+   La chiamata di una funzione all&#39;inizio di un modello consente di impostare una chiamata ai dati di personalizzazione provenienti dal database Adobe Campaign  (in questo caso: Recipients.firstName e Recipiente.lastName), in modo che possa essere interpretato quando utilizzato in una consegna. Per ulteriori informazioni, vedere [Inclusione di un modello](../../delivery/using/formatting.md#including-a-javascript-template)JavaScript.
 
    In questo esempio, la funzione conterrà il seguente codice:
 
