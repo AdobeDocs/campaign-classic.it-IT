@@ -1,7 +1,7 @@
 ---
-title: Creazione di un nuovo rapporto
-seo-title: Creazione di un nuovo rapporto
-description: Creazione di un nuovo rapporto
+title: Creazione di un nuovo report
+seo-title: Creazione di un nuovo report
+description: Creazione di un nuovo report
 seo-description: null
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
@@ -11,22 +11,22 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
 
-# Creazione di un nuovo rapporto{#creating-a-new-report}
+# Creazione di un nuovo report{#creating-a-new-report}
 
 Per creare un rapporto, effettua i seguenti passaggi:
 
-1. Apri Adobe Campaign Explorer e dal **[!UICONTROL Administration > Configuration]** nodo, quindi seleziona la **[!UICONTROL Reports]** cartella.
+1. Aprite  Adobe Campaign Explorer e dal **[!UICONTROL Administration > Configuration]** nodo, quindi selezionate la **[!UICONTROL Reports]** cartella.
 1. Fate clic sul **[!UICONTROL New]** pulsante sopra l’elenco dei rapporti.
-1. Selezionate **[!UICONTROL Create a new report from a template]** e fate clic su **[!UICONTROL Next]**.
+1. Seleziona **[!UICONTROL Create a new report from a template]** e fai clic su **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
@@ -35,6 +35,7 @@ Per creare un rapporto, effettua i seguenti passaggi:
    * Consente di **[!UICONTROL Extended report]** creare un rapporto configurato con un grafico.
    * Il **[!UICONTROL Qualitative distribution]** rapporto consente di creare statistiche basate su tutti i tipi di dati (nome società, dominio e-mail, ecc.).
    * Il **[!UICONTROL Quantitative distribution]** rapporto consente di creare statistiche sui dati misurabili o conteggiabili (importo fattura, età destinatario, ecc.).
+
    Per ulteriori informazioni su questi modelli di report, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md).
 
 1. Immettete il nome del rapporto e la relativa descrizione nei campi corrispondenti. Specifica **[!UICONTROL schema]** in quale rapporto verrà applicato.
@@ -63,7 +64,7 @@ Per creare un rapporto, a seconda della natura e del contesto, è necessario ide
 
    È obbligatorio se il grafico include un ciclo.
 
-1. Aggiungi una o più attività &#39;Query&#39; per raccogliere dati utili per la creazione del rapporto. I dati possono essere raccolti direttamente tramite una query su uno schema del database o tramite un elenco importato o un cubo esistente.
+1. Aggiungi una o più attività &#39;Query&#39; per raccogliere i dati utili per la creazione del rapporto. I dati possono essere raccolti direttamente tramite una query su uno schema del database o tramite un elenco importato o un cubo esistente.
 
    Per ulteriori informazioni, vedere [Raccolta dei dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
 
@@ -71,21 +72,21 @@ Per creare un rapporto, a seconda della natura e del contesto, è necessario ide
 
 1. Posizionare una o più attività &#39;Pagina&#39; per definire la rappresentazione grafica dei dati raccolti. È possibile inserire tabelle, grafici, campi di immissione e condizionare la visualizzazione di una o più pagine o elementi della pagina. Il contenuto visualizzato è completamente configurabile.
 
-   Per ulteriori informazioni, vedere [Elementi](#static-elements)statici.
+   For more on this, refer to [Static elements](#static-elements).
 
 1. Utilizzare un&#39;attività &quot;Test&quot; per definire le condizioni per la visualizzazione o l&#39;accesso ai dati.
 
-   Per ulteriori informazioni, vedere [Visualizzazione](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display)della pagina Condizionata.
+   For more on this, refer to [Conditioning page display](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
 1. Se necessario, aggiungere script personalizzati tramite l&#39;attività &quot;Script&quot;, ad esempio per calcolare il nome di un rapporto, per filtrare la visualizzazione del risultato all&#39;interno di un contesto specifico, ecc.
 
-   Per ulteriori informazioni, vedere Attività [](../../reporting/using/advanced-functionalities.md#script-activity)Script.
+   For more on this, refer to [Script activity](../../reporting/using/advanced-functionalities.md#script-activity).
 
 1. Infine, per una lettura più semplice dei rapporti complessi, puoi inserire una o più attività di tipo &quot;salto&quot;. Questo consente di passare da un&#39;attività all&#39;altra senza materializzare la transizione nel rapporto. Il metodo &quot;Jump&quot; può essere utilizzato anche per visualizzare un altro rapporto.
 
-   Per ulteriori informazioni, consulta Attività [Jump](../../reporting/using/advanced-functionalities.md#jump-activity).
+   For more on this, refer to [Jump activity](../../reporting/using/advanced-functionalities.md#jump-activity).
 
-Non è possibile eseguire più rami contemporaneamente. Ciò significa che un report creato come questo non funzionerà:
+Non è possibile eseguire più rami contemporaneamente. Ciò significa che un report costruito in questo modo non funzionerà:
 
 ![](assets/reporting_graph_sample_ko.png)
 
@@ -101,7 +102,7 @@ Per configurare un&#39;attività, fate doppio clic sulla relativa icona.
 
 Il contenuto visualizzato è definito nelle attività di tipo **Pagina** .
 
-Un rapporto può includere una o più pagine. Le pagine vengono create tramite un editor dedicato che consente di inserire, in una struttura ad albero, campi di input, campi di selezione, elementi statici, grafici o tabelle. I contenitori consentono di definire il layout. Per ulteriori informazioni, consulta Layout [](../../reporting/using/element-layout.md)elemento.
+Un rapporto può includere una o più pagine. Le pagine vengono create tramite un editor dedicato che consente di inserire, in una struttura ad albero, campi di input, campi di selezione, elementi statici, grafici o tabelle. I contenitori consentono di definire il layout. For more on this, refer to [Element layout](../../reporting/using/element-layout.md).
 
 Per aggiungere un componente alla pagina, utilizzate le icone nella sezione in alto a sinistra della barra degli strumenti.
 
@@ -143,7 +144,7 @@ I controlli di input e selezione consentono di filtrare le informazioni visualiz
 
 Per ulteriori informazioni sulla creazione e configurazione di campi di input e di selezione, consultare [questa sezione](../../web/using/about-web-forms.md).
 
-Puoi integrare uno o più controlli di input nei rapporti. Questo tipo di controllo consente di filtrare le informazioni visualizzate in base al valore immesso.
+Puoi integrare uno o più controlli di input nei tuoi rapporti. Questo tipo di controllo consente di filtrare le informazioni visualizzate in base al valore immesso.
 
 ![](assets/reporting_control_text.png)
 
