@@ -1,7 +1,7 @@
 ---
-title: '"Tag tracciamento Web: definition'
-seo-title: '"Tag tracciamento Web: definition'
-description: '"Tag tracciamento Web: definition'
+title: '"Etichetta di web tracking: definizione"'
+seo-title: '"Etichetta di web tracking: definizione"'
+description: '"Etichetta di web tracking: definizione"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 915ddfd8-ad1b-41ac-96ed-f7fae687c09f
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: b8996508-7173-4225-95e7-b51209aae1f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3ad288bc983002da82b564e8ab3f4244c6324573
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
 
-# Tag tracciamento Web: definition{#web-tracking-tag-definition}
+# Etichetta di web tracking: definizione{#web-tracking-tag-definition}
 
 Un tag di tracciamento Web è semplicemente un URL costruito con i parametri appropriati, inviato al server di reindirizzamento tramite una query HTTP.
 
@@ -48,7 +48,7 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                               <p>ID</p> 
                            </td>
                            <td>
-                              <p>cookie di sessione</p> 
+                              <p>Cookie di sessione</p> 
                            </td>
                            <td>
                               <p>Identificatore di consegna e identificatore del destinatario.</p> 
