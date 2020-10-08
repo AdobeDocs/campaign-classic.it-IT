@@ -1,7 +1,7 @@
 ---
-title: Utilizzo dell'attività di approvazione locale
-seo-title: Utilizzo dell'attività di approvazione locale
-description: Utilizzo dell'attività di approvazione locale
+title: Utilizzo dell’attività di approvazione locale
+seo-title: Utilizzo dell’attività di approvazione locale
+description: Utilizzo dell’attività di approvazione locale
 seo-description: null
 page-status-flag: never-activated
 uuid: 6003aaed-543d-4e6b-b1f2-ad4e9757bff3
@@ -11,22 +11,22 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: c143d8c3-c3ce-470c-8812-4b19cdb8afbf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1274'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo dell&#39;attività di approvazione locale{#using-the-local-approval-activity}
+# Utilizzo dell’attività di approvazione locale{#using-the-local-approval-activity}
 
 L&#39; **[!UICONTROL Local approval]** attività integrata in un flusso di lavoro di targeting consente di impostare un processo di approvazione del destinatario prima dell&#39;invio.
 
 >[!CAUTION]
 >
->Per utilizzare questa funzione, è necessario acquistare il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controllare il contratto di licenza.
+>Per utilizzare questa funzione, è necessario acquistare il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controlla il contratto di licenza.
 
 Per impostare questo caso di utilizzo, abbiamo creato il seguente flusso di lavoro di targeting:
 
@@ -64,12 +64,12 @@ Per ulteriori informazioni sulla creazione di un modello di distribuzione dei da
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. Selezionate la **[!UICONTROL General]** scheda.
+1. Seleziona la scheda **[!UICONTROL General]**.
 
    ![](assets/local_validation_data_distribution_2.png)
 
 1. Inserite il **[!UICONTROL Label]** e il **[!UICONTROL Distribution context]**. In questo esempio, abbiamo selezionato lo schema di **[!UICONTROL Recipient]** targeting e il **[!UICONTROL Email domain]** campo come campo di distribuzione. L&#39;elenco dei destinatari sarà suddiviso per dominio.
-1. Nel **[!UICONTROL Distribution type]** campo, selezionare l&#39;espressione del valore di limitazione della destinazione nella **[!UICONTROL Distribution]** scheda. Qui abbiamo scelto **[!UICONTROL Percentage]**.
+1. Nel **[!UICONTROL Distribution type]** campo, selezionare l&#39;espressione del valore di limitazione della destinazione nella **[!UICONTROL Distribution]** scheda. Qui, abbiamo scelto **[!UICONTROL Percentage]**.
 1. Nel **[!UICONTROL Approval storage]** campo, immettere lo schema di memorizzazione delle approvazioni che corrispondono allo schema di targeting in uso. Qui si utilizza lo schema di memorizzazione predefinito: **[!UICONTROL Local approval of recipients]**.
 1. Quindi fate clic sul **[!UICONTROL Advanced parameters]** collegamento.
 
@@ -79,12 +79,12 @@ Per ulteriori informazioni sulla creazione di un modello di distribuzione dei da
 1. Nel **[!UICONTROL Delivery label]** campo, abbiamo lasciato l&#39;espressione predefinita (stringa di calcolo del recapito). L&#39;etichetta standard della consegna verrà utilizzata nella notifica di feedback.
 1. Nella **[!UICONTROL Grouping field]** sezione, abbiamo selezionato il **[!UICONTROL Gender]** campo come campo di raggruppamento per visualizzare i destinatari nelle notifiche di approvazione e feedback.
 1. Nella **[!UICONTROL Edit targeted messages]** sezione sono state selezionate l&#39;applicazione **[!UICONTROL Edit recipients]** Web e il **[!UICONTROL recipientId]** parametro. Nelle notifiche di approvazione e feedback, i destinatari potranno fare clic e indirizzare l’URL dell’applicazione Web. Il parametro URL aggiuntivo sarà **[!UICONTROL recipientId]**.
-1. Fate clic sulla **[!UICONTROL Distribution]** scheda. Per ciascun dominio, immettete i campi seguenti:
+1. Quindi fate clic sulla **[!UICONTROL Distribution]** scheda. Per ciascun dominio, immettete i campi seguenti:
 
    ![](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**: immettere il valore del nome di dominio.
-   * **[!UICONTROL Percentage / Fixed]**: per ciascun dominio, immettete il valore massimo. numero di destinatari a cui si desidera inviare la consegna. In questo esempio, vogliamo limitare la consegna al 10% per dominio.
+   * **[!UICONTROL Percentage / Fixed]**: per ciascun dominio, immettete il valore massimo. il numero di destinatari a cui si desidera inviare la consegna. In questo esempio, vogliamo limitare la consegna al 10% per dominio.
    * **[!UICONTROL Label]**: immettete l’etichetta del dominio da visualizzare nelle notifiche di approvazione e feedback.
    * **[!UICONTROL Group or operator]**: selezionare l&#39;operatore o il gruppo di operatori assegnati al dominio.
 
@@ -100,7 +100,7 @@ Per impostare questo caso di utilizzo, abbiamo creato il seguente flusso di lavo
 
 Sono state aggiunte le seguenti attività:
 
-* Due **[!UICONTROL Query]** attività,
+* Two **[!UICONTROL Query]** activities,
 * Una **[!UICONTROL Intersection]** attività,
 * Una **[!UICONTROL Split]** attività,
 * Una **[!UICONTROL Local approval]** attività,
@@ -121,11 +121,11 @@ Se non si desidera limitare la popolazione dalla query, non è necessario utiliz
 
    ![](assets/local_validation_split_1.png)
 
-1. Selezionate l’ **[!UICONTROL Keep only the first records after sorting]** opzione e fate clic su **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Keep only the first records after sorting]** option and click **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. Nella **[!UICONTROL Sort columns]** sezione, aggiungere il campo a cui viene applicato l&#39;ordinamento. Qui abbiamo scelto il **[!UICONTROL Email]** campo. Clic **[!UICONTROL Next]**.
+1. Nella **[!UICONTROL Sort columns]** sezione, aggiungete il campo a cui viene applicato l&#39;ordinamento. Qui abbiamo scelto il **[!UICONTROL Email]** campo. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_2.png)
 
@@ -147,19 +147,19 @@ Per ulteriori informazioni sulla configurazione dell&#39; **[!UICONTROL Local ap
 
 È necessario inserire i campi seguenti:
 
-1. Nella **[!UICONTROL Action to execute]** sezione, selezionare l&#39; **[!UICONTROL Target approval notification]** opzione.
-1. Nella **[!UICONTROL Distribution context]** sezione, selezionare l&#39; **[!UICONTROL Specified in the transition]** opzione.
+1. In the **[!UICONTROL Action to execute]** section, select the **[!UICONTROL Target approval notification]** option.
+1. In the **[!UICONTROL Distribution context]** section, select the **[!UICONTROL Specified in the transition]** option.
 
    Se non si desidera limitare la popolazione di destinazione, selezionare l&#39; **[!UICONTROL Explicit]** opzione qui e immettere il modello di distribuzione creato in precedenza nel **[!UICONTROL Data distribution]** campo.
 
-1. Nella **[!UICONTROL Notification]** sezione, selezionate il modello di consegna e l’oggetto da utilizzare per l’e-mail di notifica. Qui abbiamo scelto il modello predefinito: **[!UICONTROL Local approval notification]**.
+1. Nella **[!UICONTROL Notification]** sezione, selezionate il modello di consegna e l’oggetto da utilizzare per l’e-mail di notifica. Qui è stato scelto il modello predefinito: **[!UICONTROL Local approval notification]**.
 1. Nella **[!UICONTROL Approval schedule]** sezione, abbiamo mantenuto la scadenza di approvazione predefinita (3 giorni) e aggiunto un promemoria. La consegna partirà 3 giorni dopo l&#39;inizio dell&#39;approvazione. Una volta raggiunta la scadenza di approvazione, i destinatari che non sono stati approvati non vengono presi in considerazione dal targeting.
 
 L&#39;e-mail di notifica inviata dall&#39; **[!UICONTROL Local approval]** attività ai supervisori locali è la seguente:
 
 ![](assets/local_validation_intro_2.png)
 
-### Attendi {#wait}
+### Wait {#wait}
 
 L&#39;attività di attesa consente di posticipare l&#39;inizio della seconda attività di approvazione locale che invierà la notifica di feedback sulla consegna. Nel **[!UICONTROL Duration]** campo è stato immesso il **[!UICONTROL 5d]** valore (5 giorni). Le azioni eseguite dai destinatari per 5 giorni dopo l&#39;invio della consegna saranno incluse nella notifica di feedback.
 
