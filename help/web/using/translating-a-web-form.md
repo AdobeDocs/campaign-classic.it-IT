@@ -1,7 +1,7 @@
 ---
-title: Traduzione di un modulo Web
-seo-title: Traduzione di un modulo Web
-description: Traduzione di un modulo Web
+title: Traduzione di un modulo web
+seo-title: Traduzione di un modulo web
+description: Traduzione di un modulo web
 seo-description: null
 page-status-flag: never-activated
 uuid: 3de2b021-ce1e-4597-8099-7fbef3279170
@@ -11,20 +11,20 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 145c26cc-c868-4b7b-904d-6af577fbcb83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 1%
 
 ---
 
 
-# Traduzione di un modulo Web{#translating-a-web-form}
+# Traduzione di un modulo web{#translating-a-web-form}
 
 È possibile localizzare un&#39;applicazione Web in diverse lingue.
 
-Puoi eseguire le traduzioni direttamente nella console di Adobe Campaign (consulta [Gestione delle traduzioni nell’editor](#managing-translations-in-the-editor)) oppure esportare e importare stringhe per esternalizzare la traduzione (consulta [Esternalizzazione delle traduzioni](#externalizing-translation)).
+È possibile eseguire le traduzioni direttamente nella  console Adobe Campaign (fare riferimento a [Gestione delle traduzioni nell&#39;editor](#managing-translations-in-the-editor)) oppure esportare e importare le stringhe per esternalizzare la traduzione (fare riferimento a [Esternalizzazione della traduzione](#externalizing-translation)).
 
 L&#39;elenco delle lingue di traduzione disponibili per impostazione predefinita è dettagliato nella sezione [Modifica della lingua](#changing-forms-display-language)di visualizzazione dei moduli.
 
@@ -48,7 +48,7 @@ Per definire una o più lingue di traduzione, fare clic sul **[!UICONTROL Proper
 
 Quando si aggiungono lingue di traduzione per un&#39;applicazione Web (o quando la lingua predefinita e la lingua di modifica sono diverse), nella **[!UICONTROL Translation]** scheda viene aggiunta una **[!UICONTROL Edit]** sottoscheda per gestire le traduzioni.
 
-Adobe Campaign include uno strumento per tradurre e gestire le traduzioni multilingue. Questo editor consente di visualizzare le stringhe per tradurre o approvare, immettere le traduzioni direttamente nell&#39;interfaccia o importare/esportare le stringhe dei caratteri per esternalizzare le traduzioni.
+ Adobe Campaign include uno strumento per tradurre e gestire le traduzioni multilingue. Questo editor consente di visualizzare le stringhe per tradurre o approvare, immettere le traduzioni direttamente nell&#39;interfaccia o importare/esportare le stringhe dei caratteri per esternalizzare le traduzioni.
 
 ## Gestione delle traduzioni nell&#39;editor {#managing-translations-in-the-editor}
 
@@ -58,7 +58,7 @@ La **[!UICONTROL Translations]** scheda consente di immettere le traduzioni per 
 
 La prima volta che si apre questa scheda non conterrà alcun dato. Fare clic sul **[!UICONTROL Collect the strings to translate]** collegamento per aggiornare le stringhe nell&#39;applicazione Web.
 
-Adobe Campaign raccoglie etichette di campi e stringhe definite nelle **[!UICONTROL Texts]** schede di tutti gli elementi statici: Blocchi HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in Elementi [statici di un modulo](../../web/using/static-elements-in-a-web-form.md)Web.
+ Adobe Campaign raccoglie le etichette di campi e stringhe definiti nelle **[!UICONTROL Texts]** schede di tutti gli elementi statici: Blocchi HTML, Javascript, ecc. Gli elementi statici sono descritti in dettaglio in Elementi [statici di un modulo](../../web/using/static-elements-in-a-web-form.md)Web.
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -66,7 +66,7 @@ Adobe Campaign raccoglie etichette di campi e stringhe definite nelle **[!UICONT
 >
 >Questo processo può richiedere alcuni minuti a seconda del volume di dati da elaborare.
 > 
->Se viene visualizzato un avviso che indica la mancanza di alcune traduzioni nel dizionario di sistema, vedere [Traduzione delle stringhe](#translating-the-system-strings)di sistema.
+>Se viene visualizzato un avviso che indica la mancanza di alcune traduzioni nel dizionario di sistema, fare riferimento a [Traduzione delle stringhe](#translating-the-system-strings)di sistema.
 
 Ogni volta che una stringa viene tradotta, la sua traduzione viene aggiunta al dizionario di traduzione.
 
@@ -76,7 +76,7 @@ Per le stringhe di caratteri che non sono mai state tradotte, il **[!UICONTROL T
 
 ### Filtrare le stringhe {#filtering-strings}
 
-Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell&#39;applicazione Web. Esistono due filtri predefiniti: lingua e stato. Fare clic sul **[!UICONTROL Filters]** pulsante, quindi fare clic **[!UICONTROL By language or status]** per visualizzare le caselle corrispondenti. Potete anche creare un filtro avanzato. For more on this, refer to [this page](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell&#39;applicazione Web. Esistono due filtri predefiniti: lingua e stato. Fare clic sul **[!UICONTROL Filters]** pulsante, quindi fare clic **[!UICONTROL By language or status]** per visualizzare le caselle corrispondenti. Potete anche creare un filtro avanzato. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -102,7 +102,7 @@ Per visualizzare solo le stringhe non convertite, selezionare **[!UICONTROL To t
 
 ## Esternalizzazione della traduzione {#externalizing-translation}
 
-È possibile esportare e importare stringhe di caratteri per tradurle con uno strumento diverso da Adobe Campaign.
+È possibile esportare e importare stringhe di caratteri per tradurle con uno strumento diverso da  Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -149,7 +149,7 @@ Una volta completata la traduzione esterna, potete importare i file convertiti.
 
    >[!NOTE]
    >
-   >Non è necessario selezionare le applicazioni Web interessate dalla traduzione. Posizionare il cursore in qualsiasi punto dell&#39;elenco delle applicazioni Web.
+   >Non è necessario selezionare le applicazioni Web interessate dalla traduzione. Posizionare il cursore in un punto qualsiasi dell&#39;elenco delle applicazioni Web.
 
    ![](assets/s_ncs_admin_survey_trad_import.png)
 
@@ -446,7 +446,7 @@ Aggiungete **?lang=fr** alla fine dell’URL per visualizzarlo in francese:
 
 ### Traduzione delle stringhe di sistema {#translating-the-system-strings}
 
-Le stringhe di sistema sono stringhe di caratteri predefinite utilizzate da tutte le applicazioni Web. Ad esempio: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** pulsanti, **[!UICONTROL Loading]** messaggi ecc. Per impostazione predefinita, alcune lingue contengono un dizionario con traduzioni per queste stringhe. L&#39;elenco delle lingue è dettagliato in [Modifica della lingua](#changing-forms-display-language)di visualizzazione dei moduli.
+Le stringhe di sistema sono stringhe di caratteri predefinite utilizzate da tutte le applicazioni Web. Ad esempio: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** pulsanti, **[!UICONTROL Loading]** messaggi ecc. Per impostazione predefinita, alcune lingue contengono un dizionario con traduzioni per queste stringhe. L&#39;elenco delle lingue è dettagliato nella sezione [Modifica della lingua](#changing-forms-display-language)di visualizzazione dei moduli.
 
 Se si traduce l&#39;applicazione Web in una lingua per la quale il dizionario di sistema non è tradotto, verrà visualizzato un messaggio di avviso per segnalare la mancanza di alcune traduzioni.
 
@@ -454,7 +454,7 @@ Se si traduce l&#39;applicazione Web in una lingua per la quale il dizionario di
 
 Per aggiungere una lingua, procedere come segue:
 
-1. Vai alla struttura di Adobe Campaign e fai clic su **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
+1. Passate alla struttura  Adobe Campaign e fate clic su **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
 1. Nella sezione superiore della finestra, selezionare la stringa di sistema da tradurre, quindi fare clic **[!UICONTROL Add]** nella sezione inferiore.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
@@ -475,7 +475,7 @@ Per aggiungere una lingua, procedere come segue:
 
 Per tradurre le applicazioni Web in lingue diverse da quelle predefinite (fare riferimento a [Modifica della lingua](#changing-forms-display-language)di visualizzazione dei moduli), sarà necessario aggiungere una nuova lingua di traduzione.
 
-1. Fai clic sul **[!UICONTROL Administration > Platform > Itemized lists]** nodo della struttura ad albero di Adobe Campaign e seleziona **[!UICONTROL Languages available for translation]** dall&#39;elenco. L&#39;elenco delle traduzioni disponibili viene visualizzato nella sezione inferiore della finestra.
+1. Fare clic sul **[!UICONTROL Administration > Platform > Itemized lists]** nodo della struttura di Adobe Campaign  e selezionarlo **[!UICONTROL Languages available for translation]** dall&#39;elenco. L&#39;elenco delle traduzioni disponibili viene visualizzato nella sezione inferiore della finestra.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
