@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2479'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Ogni fase della consegna può essere sottoposta ad approvazione per garantire il
 >
 >È necessario verificare che i revisori dispongano dei diritti appropriati per l&#39;approvazione. Verificate inoltre che la relativa area di protezione sia definita correttamente.
 
-Le e-mail di notifica vengono inviate agli operatori Adobe Campaign che sono stati designati per i revisori per informarli di una richiesta di approvazione.
+Le e-mail di notifica vengono inviate agli operatori Adobe Campaign  designati per essere informati di una richiesta di approvazione.
 
 La procedura di approvazione è presentata in [Controllo e approvazione delle consegne](#checking-and-approving-deliveries).
 
@@ -60,7 +60,7 @@ Tali notifiche vengono inviate agli operatori interessati a ogni processo per il
 
 Le approvazioni possono essere abilitate per il modello di campagna, per ogni campagna singolarmente o per una consegna.
 
-Tutti i processi che richiedono l’approvazione sono selezionati nel modello della campagna ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** scheda), così come gli operatori che hanno il compito dell’approvazione (riceveranno le notifiche, a meno che questa opzione non sia abilitata). Per ulteriori informazioni, consulta [Approvare i processi](#approving-processes).
+Tutti i processi che richiedono l’approvazione sono selezionati nel modello della campagna ( **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]** scheda), così come gli operatori che hanno il compito dell’approvazione (riceveranno le notifiche, a meno che questa opzione non sia abilitata). For more on this, refer to [Approving processes](#approving-processes).
 
 Queste impostazioni possono essere sostituite per ogni campagna creata utilizzando questo modello e singolarmente per ogni distribuzione della campagna: fare clic sul **[!UICONTROL Properties]** pulsante, quindi sulla **[!UICONTROL Approvals]** scheda.
 
@@ -80,7 +80,7 @@ Se non viene specificato alcun revisore, il manager della campagna sarà respons
 
 >[!NOTE]
 >
->Anche tutti gli altri operatori Adobe Campaign con **[!UICONTROL Administrator]** diritti possono approvare i processi, ma non riceveranno notifiche.\
+>Anche tutti gli altri operatori Adobe Campaign  con **[!UICONTROL Administrator]** diritti possono approvare i processi, ma non riceveranno notifiche.\
 >Per impostazione predefinita, il manager campagna non può eseguire l&#39;approvazione o avviare le consegne se gli operatori di approvazione sono stati definiti. Potete modificare questo comportamento e autorizzare il manager campagna ad approvare/avviare le consegne creando l&#39;opzione **NmsCampaign_Activate_OwnerConfirm** con **1** come valore.
 
 ### Modalità di approvazione {#approval-modes}
@@ -91,7 +91,7 @@ Per approvare un processo tramite la console o l’interfaccia Web, fate clic su
 
 ![](assets/s_user_validation_from_console.png)
 
-Controllare le informazioni da approvare, scegliere se accettare o rifiutare l&#39;approvazione e, se necessario, immettere un commento. Fate clic **[!UICONTROL Ok]** per salvare.
+Verificate le informazioni da approvare, scegliete se accettare o rifiutare l’approvazione e, se necessario, immettete un commento. Click **[!UICONTROL Ok]** to save.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Selezionate **[!UICONTROL Accept]** o **[!UICONTROL Reject]** immettete un comme
 
 ![](assets/s_user_validation_save_target_validation.png)
 
-Clic **[!UICONTROL Validate]**.
+Fai clic su **[!UICONTROL Validate]**.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Le informazioni sono disponibili in diversi punti:
 
 #### Approvazione automatica e manuale {#automatic-and-manual-approval}
 
-Durante la creazione di un flusso di lavoro di targeting, se l&#39;approvazione è automatica (modalità predefinita), Adobe Campaign visualizza il collegamento di approvazione o invia una notifica non appena è richiesta l&#39;approvazione.
+Quando create un flusso di lavoro di targeting, se l&#39;approvazione è automatica (modalità predefinita),  Adobe Campaign visualizza il collegamento di approvazione o invia una notifica non appena è richiesta l&#39;approvazione.
 
 Per scegliere la modalità di approvazione (manuale o automatica), fate clic sulla **[!UICONTROL Edit > Properties]** scheda della campagna o del modello di campagna, quindi fate clic **[!UICONTROL Advanced campaign settings...]** e infine sulla **[!UICONTROL Approvals]** scheda.
 
@@ -173,15 +173,15 @@ A questo scopo, modificate la finestra di approvazione del modello campagna o ca
 
 #### Contenuto notifica {#notification-content}
 
-Il contenuto delle notifiche è definito in un modello specifico: **[!UICONTROL Notification of validations for the marketing campaign]**. Questo modello viene salvato nella **[!UICONTROL Administration > Campaign management > Technical delivery templates]** cartella della struttura di Adobe Campaign.
+Il contenuto delle notifiche è definito in un modello specifico: **[!UICONTROL Notification of validations for the marketing campaign]**. Questo modello viene salvato nella **[!UICONTROL Administration > Campaign management > Technical delivery templates]** cartella della struttura  Adobe Campaign.
 
 ## Controllo e approvazione delle consegne {#checking-and-approving-deliveries}
 
-Adobe Campaign consente di impostare i processi di approvazione per le fasi principali della campagna di marketing in modalità collaborativa.
+ Adobe Campaign consente di impostare i processi di approvazione per le fasi principali della campagna di marketing in modalità collaborativa.
 
-Per le consegne per corrispondenza diretta, gli operatori di Adobe Campaign possono visualizzare il file di estrazione prima dell&#39;invio al router, e se necessario possono modificare il formato e riavviare l&#39;estrazione. Consultate [Approvazione di un file](#approving-an-extraction-file)di estrazione.
+Per le consegne di posta diretta,  gli operatori Adobe Campaign possono visualizzare il file di estrazione prima dell&#39;invio al router, e se necessario possono modificare il formato e riavviare l&#39;estrazione. Consultate [Approvazione di un file](#approving-an-extraction-file)di estrazione.
 
-Per ogni campagna potete approvare target di consegna, contenuto (consultate [Approvazione di contenuti](#approving-content)) e costi. Gli operatori Adobe Campaign incaricati dell&#39;approvazione possono ricevere notifiche via e-mail e accettare o rifiutare l&#39;approvazione dalla console o tramite una connessione Web. Consultate [Approvare i processi](#approving-processes).
+Per ogni campagna potete approvare target di consegna, contenuto (consultate [Approvazione di contenuti](#approving-content)) e costi. Gli operatori di Adobe Campaign incaricati dell’approvazione possono ricevere una notifica tramite e-mail e accettare o rifiutare l’approvazione dalla console o tramite una connessione web. Consultate [Approvare i processi](#approving-processes).
 
 Una volta completate queste fasi di convalida, la consegna può essere avviata. Vedere [Avvio di una consegna](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
@@ -197,7 +197,7 @@ A questo punto, lo stato della campagna è **[!UICONTROL To validate]**.
 
 >[!NOTE]
 >
->* Per selezionare i processi che saranno soggetti all&#39;approvazione, modificate il modello della campagna. Per ulteriori informazioni, consulta Modelli [per](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
+>* Per selezionare i processi che saranno soggetti all&#39;approvazione, modificate il modello della campagna. For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
    >
    >
 * Consultare anche la sezione relativa al processo di [approvazione](#approval-process).
@@ -220,7 +220,7 @@ Per ogni consegna nella campagna, potete approvare i seguenti processi:
 
    >[!NOTE]
    >
-   >L&#39;approvazione del budget è disponibile solo se l&#39;approvazione del targeting è abilitata nella finestra delle impostazioni di approvazione. Il collegamento per l&#39;approvazione del budget viene visualizzato solo dopo l&#39;analisi della destinazione. Inoltre, questo collegamento viene visualizzato insieme al collegamento per l&#39;approvazione della destinazione.
+   >L&#39;approvazione del budget è disponibile solo se l&#39;approvazione del targeting è abilitata nella finestra delle impostazioni di approvazione. Il collegamento per l&#39;approvazione del budget viene visualizzato solo dopo che la destinazione è stata analizzata. Inoltre, questo collegamento viene visualizzato insieme al collegamento per l&#39;approvazione della destinazione.
 
    Se le opzioni **[!UICONTROL Assign content editing]** o **[!UICONTROL External content approval]** sono selezionate nella finestra delle impostazioni di approvazione, nel dashboard vengono visualizzati i **[!UICONTROL Available content]** collegamenti e **[!UICONTROL External content approval]** .
 
@@ -250,7 +250,7 @@ Per ogni consegna nella campagna, potete approvare i seguenti processi:
 
 #### Selezione dei processi da approvare {#choosing-the-processes-to-be-approved}
 
-Le fasi di approvazione sono definite con il modello associato alla campagna. Devi selezionare gli elementi da approvare dal modello e specificare gli operatori Adobe Campaign che saranno responsabili di queste approvazioni. Per ulteriori informazioni, consulta Modelli [per](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
+Le fasi di approvazione sono definite con il modello associato alla campagna. È necessario selezionare gli elementi da approvare dal modello e specificare gli operatori Adobe Campaign  che saranno responsabili di queste approvazioni. For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
@@ -260,9 +260,9 @@ Queste informazioni possono essere sostituite per ogni campagna e consegna.
 
 Per una campagna, fare clic sulla **[!UICONTROL Edit > Properties]** scheda, quindi sul **[!UICONTROL Advanced campaign settings...]** collegamento e infine sulla **[!UICONTROL Approvals]** sottoscheda per accedere alla pagina di configurazione delle approvazioni.
 
-Puoi selezionare e deselezionare i processi per approvare e nominare gli operatori Adobe Campaign incaricati dell&#39;approvazione. Può trattarsi di singoli operatori, di un gruppo di operatori o di un elenco di operatori.
+È possibile selezionare e deselezionare i processi per approvare e nominare  operatori Adobe Campaign responsabili dell&#39;approvazione. Può trattarsi di singoli operatori, di un gruppo di operatori o di un elenco di operatori.
 
-Per selezionare un elenco di operatori, fare clic sul **[!UICONTROL Edit...]** collegamento a destra del campo a destra del primo revisore e aggiungere tutti gli operatori necessari, come illustrato di seguito:
+Per selezionare un elenco di operatori, fate clic sul **[!UICONTROL Edit...]** collegamento a destra del campo a destra del primo revisore e aggiungete tutti gli operatori necessari, come illustrato di seguito:
 
 ![](assets/s_user_validation_add_operator.png)
 
@@ -271,6 +271,7 @@ Per selezionare un elenco di operatori, fare clic sul **[!UICONTROL Edit...]** c
 >* Se viene definito un elenco di revisori, un processo viene approvato non appena un revisore lo accetta. Il collegamento di approvazione non viene più visualizzato nel dashboard. Quando l&#39;invio di notifiche è abilitato, se un altro revisore fa clic sul collegamento di approvazione nel messaggio di notifica, viene loro notificato che un altro operatore ha già approvato il processo.
 >* Potete definire una pianificazione di approvazione per la campagna nella sezione inferiore della finestra di modifica del revisore. Per impostazione predefinita, i revisori dispongono di tre giorni a partire dalla data di invio per approvare un processo. È possibile configurare un promemoria che viene inviato automaticamente agli operatori interessati prima del termine di approvazione.
 >* Potete aggiungere promemoria da questa sezione.
+
 >
 
 
@@ -327,7 +328,7 @@ Per ogni consegna, fate clic sul **[!UICONTROL Audit]** pulsante e sulla **[!UIC
 
    >[!NOTE]
    >
-   >Il responsabile della campagna può riavviare il ciclo di approvazione dei contenuti in qualsiasi momento. A questo scopo, fate clic sul collegamento sulla **[!UICONTROL Content status]** linea del dashboard della campagna (a livello di consegna), quindi fate clic **[!UICONTROL Reset content approval to submit it again]**.
+   >Il responsabile della campagna può riavviare il ciclo di approvazione dei contenuti in qualsiasi momento. A questo scopo, fate clic sul collegamento sulla **[!UICONTROL Content status]** linea del dashboard della campagna (a livello di consegna), quindi fate clic su **[!UICONTROL Reset content approval to submit it again]**.
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
@@ -355,7 +356,7 @@ Questa opzione consente di definire un utente responsabile della modifica del co
 
    A tal fine, possono:
 
-   * fai clic sul **[!UICONTROL Available content]** collegamento tramite la console di Adobe Campaign.
+   * fate clic sul **[!UICONTROL Available content]** collegamento tramite la console Adobe Campaign .
 
       ![](assets/s_ncs_user_validation_submit_content_available.png)
 
@@ -373,7 +374,7 @@ Questa opzione consente di definire un utente responsabile della modifica del co
 
 #### Approvazione di contenuti esterni {#external-content-approval}
 
-Questa opzione consente di definire un operatore esterno incaricato di approvare il rendering della distribuzione, ad esempio la coerenza della comunicazione del marchio, le tariffe ecc. Quando l&#39; **[!UICONTROL External content approval]** opzione è selezionata nella finestra delle impostazioni di approvazione, vengono aggiunti diversi passaggi di approvazione tra l&#39;approvazione del contenuto e la consegna della notifica alla persona responsabile della campagna:
+Questa opzione consente di definire un operatore esterno incaricato di approvare il rendering della distribuzione, ad esempio la coerenza della comunicazione del marchio, le tariffe, ecc. Quando l&#39; **[!UICONTROL External content approval]** opzione è selezionata nella finestra delle impostazioni di approvazione, vengono aggiunti diversi passaggi di approvazione tra l&#39;approvazione del contenuto e la consegna della notifica alla persona responsabile della campagna:
 
 1. Il manager del contenuto esterno riceve un messaggio e-mail di notifica in cui informa che il contenuto è stato approvato e richiede l’approvazione esterna.
 1. Il messaggio e-mail di notifica contiene collegamenti alle prove di stampa inviate, che consentono di visualizzare il rendering della consegna, e un pulsante per approvare o rifiutare il contenuto della consegna.
@@ -386,7 +387,7 @@ Questa opzione consente di definire un operatore esterno incaricato di approvare
 
 ### Approvazione di un file di estrazione {#approving-an-extraction-file}
 
-Per le consegne offline, Adobe Campaign genera un file di estrazione che, a seconda della configurazione, viene inviato al router. Il relativo contenuto dipende dal modello di esportazione utilizzato.
+Per le consegne offline,  Adobe Campaign genera un file di estrazione che, a seconda della configurazione, viene inviato al router. Il relativo contenuto dipende dal modello di esportazione utilizzato.
 
 Quando il contenuto, il targeting e il budget sono stati approvati, la distribuzione diventa **[!UICONTROL Extraction pending]** finché non viene avviato il flusso di lavoro di estrazione per le campagne.
 
