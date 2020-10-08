@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Effettuate le seguenti operazioni:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. Nella **[!UICONTROL Data filtering]** finestra, selezionare **[!UICONTROL Filtering conditions]**.
+1. In the **[!UICONTROL Data filtering]** window, select **[!UICONTROL Filtering conditions]**.
 1. Nella **[!UICONTROL Target element]** finestra, la condizione di filtro per l’estrazione di profili senza registro di tracciamento per gli ultimi 7 giorni prevede due passaggi. L’elemento da selezionare è un collegamento molti-molti.
 
    * Per iniziare, selezionate l&#39;elemento **[!UICONTROL Recipient delivery logs (broadlog)]** raccolta (nodo arancione) per la prima **[!UICONTROL Value]** colonna.
@@ -83,7 +83,7 @@ Effettuate le seguenti operazioni:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Clic **[!UICONTROL OK]**. La **[!UICONTROL Data formatting]** finestra è configurata.
+   Fai clic su **[!UICONTROL OK]**. La **[!UICONTROL Data formatting]** finestra è configurata.
 
    Per ulteriori informazioni sull&#39;aggiunta di campi calcolati, consultare questa sezione.
 
