@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 4655ad65-7eba-44d5-b3f9-f4b8f44d9d5c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Il binding consente di semplificare la visualizzazione dei dati raggruppando i v
 
 Nel complesso, sono disponibili tre tipi di binding:
 
-1. Utilizzo di intervalli di valori definiti manualmente. Ad esempio, età, carrello medio, numero di consegne aperte, ecc.). Per ulteriori informazioni, consultate [Definizione di ciascun raccoglitore](#defining-each-bin).
+1. Utilizzo di intervalli di valori definiti manualmente. Ad esempio, età, carrello acquisti medio, numero di consegne aperte, ecc.). For more on this, refer to [Defining each bin](#defining-each-bin).
 1. In modo dinamico, a seconda dei valori di un&#39;enumerazione: visualizza solo i valori contenuti nell&#39;enumerazione, tutti gli altri valori sono raggruppati in &#39;Others&#39;. Per ulteriori informazioni, vedere Gestione [dinamica dei](#dynamically-managing-bins)contenitori.
 1. Utilizzando intervalli di valori, tutti gli altri vengono raggruppati. Ad esempio, bambini dai 18 ai 25 anni, dai 26 ai 59 anni e gli altri. Per ulteriori informazioni, vedere [Creazione di intervalli](#creating-value-ranges)di valori.
 
@@ -38,7 +38,7 @@ Per abilitare il binning, selezionare la casella appropriata al momento della cr
 
 È possibile creare i contenitori manualmente oppure collegarli a un&#39;enumerazione esistente.
 
-Adobe Campaign fornisce anche un assistente per il binning automatico: i valori possono essere suddivisi in gruppi N o raggruppati in base ai valori più frequenti nel database.
+ Adobe Campaign fornisce anche un assistente per il binning automatico: i valori possono essere suddivisi in gruppi N o raggruppati in base ai valori più frequenti nel database.
 
 ### Definizione di ciascun raccoglitore {#defining-each-bin}
 
@@ -85,11 +85,11 @@ Quindi specificate i limiti inferiore e superiore e fate clic **[!UICONTROL Ok]*
 
 ### Generazione automatica dei raccoglitori {#generating-bins-automatically}
 
-È inoltre possibile generare automaticamente i contenitori. A tale scopo, fare clic sul **[!UICONTROL Generate bins...]** collegamento.
+È inoltre possibile generare automaticamente i raccoglitori. A tale scopo, fare clic sul **[!UICONTROL Generate bins...]** collegamento.
 
 ![](assets/s_advuser_cube_class_06.png)
 
-È possibile:
+Potete effettuare le seguenti operazioni:
 
 * Recuperare i valori più utilizzati
 
@@ -97,15 +97,15 @@ Quindi specificate i limiti inferiore e superiore e fate clic **[!UICONTROL Ok]*
 
 * Generazione di raccoglitori sotto forma di slot
 
-   Nell&#39;esempio seguente, Adobe Campaign crea automaticamente 4 slot per valori delle stesse dimensioni per visualizzare i valori nel database.
+   Nell&#39;esempio seguente,  Adobe Campaign crea automaticamente 4 slot per valori delle stesse dimensioni per visualizzare i valori nel database.
 
 In questo caso, il filtro selezionato nello schema dei fatti viene ignorato.
 
 ### Enumerazioni {#enumerations}
 
-Per migliorare la pertinenza e la leggibilità di un rapporto, Adobe Campaign consente di creare enumerazioni specifiche per raggruppare valori diversi nello stesso raccoglitore. Queste enumerazioni, riservate al binning, fanno riferimento ai cubi visualizzati nei report.
+Per migliorare la pertinenza e la leggibilità di un rapporto,  Adobe Campaign consente di creare enumerazioni specifiche per raggruppare valori diversi nello stesso raccoglitore. Queste enumerazioni, riservate al binning, fanno riferimento ai cubi visualizzati nei report.
 
-Adobe Campaign offre anche un&#39;enumerazione sui domini che consente di visualizzare un elenco dei domini e-mail di tutti i contatti nel database, raggruppati da ISP, come illustrato nell&#39;esempio seguente:
+ Adobe Campaign offre anche un&#39;enumerazione sui domini che consente di visualizzare un elenco dei domini e-mail di tutti i contatti nel database, raggruppati da ISP, come illustrato nell&#39;esempio seguente:
 
 ![](assets/nmx_report_sample.png)
 
@@ -113,13 +113,13 @@ Viene creato utilizzando il seguente modello:
 
 ![](assets/nmx_enum_domain.png)
 
-Per creare un rapporto utilizzando questa enumerazione, crea un cubo utilizzando la **[!UICONTROL Email domain]** dimensione. Scegliete l’ **[!UICONTROL Enable binning]** opzione, quindi **[!UICONTROL Dynamically link the values to an enumeration]**. Quindi selezionate l&#39;enumerazione **Domains** come mostrato sopra. Tutti i valori privi di alias specificato verranno raggruppati sotto l&#39;etichetta **Altri** .
+Per creare un rapporto utilizzando questa enumerazione, crea un cubo utilizzando la **[!UICONTROL Email domain]** dimensione. Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Quindi selezionate l&#39;enumerazione **Domains** come mostrato sopra. Tutti i valori privi di alias specificato verranno raggruppati sotto l&#39;etichetta **Altri** .
 
 ![](assets/nmx_add_dimension.png)
 
 Quindi, crea un rapporto basato su questo Cubo per visualizzare i valori.
 
-È sufficiente modificare l&#39;enumerazione per aggiornare il rapporto correlato. Ad esempio, create il valore **Adobe** e aggiungete l&#39;alias **adobe.com** ; il rapporto viene aggiornato automaticamente con il valore Adobe al livello di enumerazione.
+È sufficiente modificare l&#39;enumerazione per aggiornare il rapporto correlato. Ad esempio, create il valore **Adobe** e aggiungete l&#39;alias **adobe.com** ; il rapporto viene aggiornato automaticamente con il valore  Adobe a livello di enumerazione.
 
 ![](assets/nmx_add_alias.png)
 
@@ -167,7 +167,7 @@ Per creare un nuovo aggregato, procedere come segue:
 
 I tipi di misure sono definiti nella **[!UICONTROL Measures]** scheda del cubo. Potete calcolare somme, medie, deviazioni, ecc.
 
-Potete creare tutte le misure necessarie: quindi selezionate la misura da visualizzare o nascondere nella tabella. Per ulteriori informazioni, vedere [Visualizzazione delle misure](#displaying-measures).
+Potete creare tutte le misure necessarie: quindi selezionate la misura da visualizzare o nascondere nella tabella. For more on this, refer to [Displaying measures](#displaying-measures).
 
 Per definire una nuova misura, procedere come segue:
 
@@ -177,7 +177,7 @@ Per definire una nuova misura, procedere come segue:
 
 1. Se necessario, e a seconda dell&#39;operatore, scegliere l&#39;espressione interessata dall&#39;operazione.
 
-   Il **[!UICONTROL Advanced selection]** pulsante consente di creare formule di calcolo complesse. For more on this, refer to [this section](../../platform/using/about-queries-in-campaign.md).
+   Il **[!UICONTROL Advanced selection]** pulsante consente di creare formule di calcolo complesse. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
@@ -269,7 +269,7 @@ Per eseguire questa operazione:
 
 Ogni volta che un filtro viene modificato (aggiungi, rimuovi, modifica), il rapporto deve essere ricalcolato.
 
-I filtri possono essere creati anche in base a una selezione. A questo scopo, seleziona le celle, le linee e le colonne di origine e fai clic sull&#39; **[!UICONTROL Add a filter]** icona .
+I filtri possono essere creati anche in base a una selezione. A questo scopo, seleziona le celle, le linee e le colonne di origine, quindi fai clic sull&#39; **[!UICONTROL Add a filter]** icona .
 
 Per selezionare una riga, una colonna o una cella, fare clic su di essa con il pulsante sinistro del mouse. Per deselezionare, fate di nuovo clic.
 
