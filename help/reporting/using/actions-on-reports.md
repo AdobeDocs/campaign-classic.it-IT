@@ -1,7 +1,7 @@
 ---
-title: Azioni sui rapporti
-seo-title: Azioni sui rapporti
-description: Azioni sui rapporti
+title: Azioni sui report
+seo-title: Azioni sui report
+description: Azioni sui report
 seo-description: null
 page-status-flag: never-activated
 uuid: 7f9d99ab-ce19-46dd-bbf0-79de348d38fb
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
 
-# Azioni sui rapporti{#actions-on-reports}
+# Azioni sui report{#actions-on-reports}
 
 Quando visualizzate un rapporto, la barra degli strumenti consente di eseguire un certo numero di azioni. Questi sono descritti di seguito.
 
@@ -32,17 +32,17 @@ La barra degli strumenti consente, ad esempio, di esportare, stampare, archiviar
 
 ## Esportazione di un rapporto {#exporting-a-report}
 
-Dall’elenco a discesa, selezionate il formato in cui esportare il rapporto. (.xls, .pdf o .ods).
+Dall’elenco a discesa, selezionate il formato in cui desiderate esportare il rapporto. (.xls, .pdf o .ods).
 
 ![](assets/s_ncs_advuser_report_wizard_06.png)
 
 Quando un rapporto contiene più pagine, è necessario ripetere l&#39;operazione per ogni pagina.
 
-È possibile configurare il rapporto per esportarlo in formato PDF, Excel o OpenOffice. Apri Adobe Campaign Explorer e seleziona il report interessato.
+È possibile configurare il rapporto per esportarlo in formato PDF, Excel o OpenOffice. Aprite  Adobe Campaign Explorer e selezionate il report interessato.
 
 Le opzioni di esportazione sono accessibili tramite le **[!UICONTROL Page]** attività del rapporto, nella **[!UICONTROL Advanced]** scheda.
 
-Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. Potete inoltre autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39; **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** opzione.
+Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39; **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** opzione.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -60,7 +60,7 @@ Per i report di **[!UICONTROL List with group]** tipo destinati all&#39;esportaz
 
 * I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** per definire il formato delle celle nella tabella. È **[!UICONTROL Form rendering]** possibile accedervi tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Non è consigliabile inserire contenuto HTML.
-* Se un rapporto contiene diverse tabelle, grafici e così via. gli elementi di tipo vengono esportati uno sotto l’altro.
+* Se un rapporto contiene diverse tabelle, grafici e così via. gli elementi di tipo, verranno esportati uno sotto l’altro.
 * È possibile forzare il ritorno a capo in celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, vedere [Definizione del formato](../../reporting/using/creating-a-table.md#defining-cell-format)delle celle.
 
 ### Posticipare l&#39;esportazione {#postpone-the-export}
@@ -91,7 +91,7 @@ Per ulteriori informazioni sul servizio **nlserver** , consultare [questa sezion
 
 ## Stampa di un rapporto {#printing-a-report}
 
-Potete stampare il rapporto: a questo scopo, fare clic sull&#39;icona della stampante: si apre la finestra di dialogo.
+È possibile stampare il rapporto: a questo scopo, fare clic sull&#39;icona della stampante: si apre la finestra di dialogo.
 
 Per ottenere un risultato migliore, modificate le opzioni di stampa di Internet Explorer e selezionate **[!UICONTROL Print background colors and images]**.
 
@@ -113,7 +113,7 @@ Le date dell&#39;archivio vengono visualizzate sotto l&#39;icona Mostra/Nascondi
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-È possibile eliminare un archivio di report. A tal fine, andate al nodo Adobe Campaign in cui sono memorizzati i rapporti. Fare clic sulla **[!UICONTROL Archives]** scheda, selezionare quella da eliminare e fare clic su **[!UICONTROL Delete]**.
+È possibile eliminare un archivio di report. A tal fine, andate al nodo Adobe Campaign  in cui sono memorizzati i rapporti. Fare clic sulla **[!UICONTROL Archives]** scheda, selezionare quella da eliminare e fare clic su **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
