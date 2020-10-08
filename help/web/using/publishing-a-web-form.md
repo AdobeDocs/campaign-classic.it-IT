@@ -1,7 +1,7 @@
 ---
-title: Pubblicazione di un modulo Web
-seo-title: Pubblicazione di un modulo Web
-description: Pubblicazione di un modulo Web
+title: Pubblicazione di un modulo web
+seo-title: Pubblicazione di un modulo web
+description: Pubblicazione di un modulo web
 seo-description: null
 page-status-flag: never-activated
 uuid: 37222829-1d56-438c-a4ca-878925debcb5
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 2%
 
 ---
 
 
-# Pubblicazione di un modulo Web{#publishing-a-web-form}
+# Pubblicazione di un modulo web{#publishing-a-web-form}
 
 ## Precaricamento dei dati del modulo {#pre-loading-the-form-data}
 
@@ -30,7 +30,7 @@ Sono possibili i seguenti metodi di identificazione:
 
 * **[!UICONTROL Adobe Campaign Encryption]**
 
-   Questo metodo di cifratura utilizza l&#39;identificatore Adobe Campaign (ID) crittografato. Questo metodo è applicabile solo a un oggetto Adobe Campaign e l&#39;ID crittografato può essere generato solo dalla piattaforma Adobe Campaign.
+   Questo metodo di cifratura utilizza l’identificatore Adobe Campaign (ID)  cifrato. Questo metodo è applicabile solo a un oggetto Adobe Campaign  e l&#39;ID crittografato può essere generato solo dalla piattaforma Adobe Campaign .
 
    Quando si utilizza questo metodo, è necessario adattare l&#39;URL del modulo per inviarlo all&#39;indirizzo e-mail aggiungendo il **`<%=escapeUrl(recipient.cryptedId) %>`** parametro. Per ulteriori informazioni, vedere [Distribuzione di un modulo tramite e-mail](#delivering-a-form-via-email).
 
@@ -38,7 +38,7 @@ Sono possibili i seguenti metodi di identificazione:
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Questo metodo di cifratura utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal fornitore esterno. Il **[!UICONTROL Des key]** campo consente di immettere questa chiave di crittografia.
+   Questo metodo di cifratura utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da  Adobe Campaign e dal provider esterno. Il **[!UICONTROL Des key]** campo consente di immettere questa chiave di crittografia.
 
 * **[!UICONTROL List of fields]**
 
@@ -50,7 +50,7 @@ Sono possibili i seguenti metodi di identificazione:
 
    >[!CAUTION]
    >
-   >I dati nei campi selezionati non sono crittografati. Non deve essere fornito in un modulo crittografato perché Adobe Campaign non sarà in grado di decifrarlo se l&#39; **[!UICONTROL Field list]** opzione è selezionata.
+   >I dati nei campi selezionati non sono crittografati. Non deve essere fornito in un modulo crittografato perché  Adobe Campaign non sarà in grado di decifrarlo se l&#39; **[!UICONTROL Field list]** opzione è selezionata.
 
    Nell&#39;esempio seguente, il precaricamento del profilo si basa sull&#39;indirizzo e-mail.
 
@@ -64,13 +64,13 @@ Sono possibili i seguenti metodi di identificazione:
 
    >[!CAUTION]
    >
-   >Se nell&#39;elenco sono specificati più campi, i dati di **ALL FIELDS** devono corrispondere ai dati memorizzati nel database per poter aggiornare il profilo. In caso contrario, viene creato un nuovo profilo.
+   >Se nell&#39;elenco sono specificati più campi, i dati di **TUTTI I CAMPI** devono corrispondere ai dati memorizzati nel database per poter aggiornare il profilo. In caso contrario, viene creato un nuovo profilo.
    > 
    >Questa funzione è particolarmente utile per le applicazioni Web, ma non è consigliata per i moduli pubblici. L&#39;opzione di controllo di accesso selezionata deve essere &quot;Abilita controllo di accesso&quot;.
 
 L’ **[!UICONTROL Skip preloading if identification is empty]** opzione deve essere selezionata se non si desidera aggiornare i profili. In questo caso, ogni profilo immesso verrà aggiunto al database dopo l&#39;approvazione del modulo. Questa opzione è utilizzata, ad esempio, quando il modulo viene pubblicato su un sito Web.
 
-L&#39; **[!UICONTROL Auto-load data referenced in the form]** opzione consente di precaricare automaticamente i dati corrispondenti ai campi di input e di unione del modulo. Tuttavia, i dati cui si fa riferimento nelle **[!UICONTROL Script]** attività e nelle attività non sono **[!UICONTROL Test]** interessati. Se questa opzione non è selezionata, è necessario definire i campi utilizzando l&#39; **[!UICONTROL Load additional data]** opzione.
+L&#39; **[!UICONTROL Auto-load data referenced in the form]** opzione consente di precaricare automaticamente i dati corrispondenti ai campi di input e di unione del modulo. Tuttavia, i dati cui si fa riferimento nelle **[!UICONTROL Script]** attività e nelle attività **[!UICONTROL Test]** non sono pertinenti. Se questa opzione non è selezionata, è necessario definire i campi utilizzando l&#39; **[!UICONTROL Load additional data]** opzione.
 
 L&#39; **[!UICONTROL Load additional data]** opzione consente di aggiungere informazioni che non vengono utilizzate nelle pagine del modulo, ma che verranno comunque precaricate.
 
@@ -114,7 +114,7 @@ Lo stato di pubblicazione di un modulo viene visualizzato nell&#39;elenco dei mo
 
 ![](assets/s_ncs_admin_survey_status.png)
 
-### Pubblicazione di un modulo {#publishing-a-form}
+### Publishing a form {#publishing-a-form}
 
 Per modificare lo stato di un modulo, è necessario pubblicarlo. A tal fine, fare clic sul **[!UICONTROL Publication]** pulsante sopra l&#39;elenco dei moduli Web e selezionare lo stato nella casella a discesa.
 
@@ -124,7 +124,7 @@ Per modificare lo stato di un modulo, è necessario pubblicarlo. A tal fine, far
 
 Per essere accessibile dagli utenti, il modulo deve essere in produzione e avviato, ovvero entro il periodo di validità. Le date di validità vengono inserite tramite il **[!UICONTROL Properties]** collegamento del modulo.
 
-* Utilizzare i campi della **[!UICONTROL Project]** sezione per inserire le date di inizio e fine del modulo.
+* Utilizzare i campi della **[!UICONTROL Project]** sezione per inserire le date di inizio e di fine del modulo.
 
    ![](assets/webapp_availability_date.png)
 
@@ -164,5 +164,5 @@ Potete elaborare i registri di risposta forniti nelle query, ad esempio per indi
 
 >[!NOTE]
 >
->Per un monitoraggio completo delle risposte fornite, esportate le risposte e visualizzate o create rapporti dedicati, utilizzate il modulo **Survey** facoltativo. For more on this, refer to [this section](../../web/using/about-surveys.md).
+>Per un monitoraggio completo delle risposte fornite, esportate le risposte e visualizzate o create rapporti dedicati, utilizzate il modulo **Survey** facoltativo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
 
