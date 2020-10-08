@@ -1,7 +1,7 @@
 ---
-title: Pubblicazione modelli
-seo-title: Pubblicazione modelli
-description: Pubblicazione modelli
+title: Pubblicazione di modelli
+seo-title: Pubblicazione di modelli
+description: Pubblicazione di modelli
 seo-description: null
 page-status-flag: never-activated
 uuid: f83dbe5f-762c-4c58-aeed-6ec289eb522f
@@ -11,19 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Pubblicazione modelli{#template-publication}
+# Pubblicazione di modelli{#template-publication}
 
 Una volta completato il modello di messaggio creato nell&#39;istanza di controllo, è possibile pubblicarlo su tutte le istanze di esecuzione. La pubblicazione consente di creare automaticamente due modelli di messaggio nell&#39;istanza di esecuzione, per l&#39;invio di messaggi collegati a eventi in tempo reale e batch.
 
@@ -37,7 +34,7 @@ Una volta completato il modello di messaggio creato nell&#39;istanza di controll
 
 1. Nell&#39;istanza di controllo, passare alla **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
 1. Selezionate il modello da pubblicare sulle istanze di esecuzione.
-1. Clic **[!UICONTROL Publish]**.
+1. Fai clic su **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
