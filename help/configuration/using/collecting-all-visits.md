@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 7f841368-3867-4d6e-9720-c038d9bea0ce
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 4%
 
 ---
 
 
 # Raccolta di tutte le visite{#collecting-all-visits}
 
-Il modulo di monitoraggio Web fornito da Adobe Campaign consente di raccogliere le visite a determinate pagine del sito eseguite da un destinatario nel contesto del tracciamento del sito in seguito a un clic in un messaggio.
+Il modulo di monitoraggio Web fornito da  Adobe Campaign consente di raccogliere le visite ad alcune pagine del sito eseguite da un destinatario nel contesto del tracciamento del sito in seguito a un clic in un messaggio.
 
 Tuttavia, potete configurare la piattaforma in modo che raccolga tutte le visite alle pagine con un tag di tracciamento Web da parte di un utente noto alla piattaforma.
 
@@ -30,11 +30,11 @@ Un utente noto alla piattaforma è un destinatario che ha già ricevuto il targe
 
 >[!IMPORTANT]
 >
->La piattaforma Adobe Campaign non è destinata a essere utilizzata come strumento di tracciamento del sito Web oltre al contesto della visita al sito successiva a un clic in un messaggio. Quando questa opzione è attivata, può causare un utilizzo molto elevato delle risorse sui computer in cui sono installati i server (reindirizzamento, applicazione e database). È consigliabile assicurarsi che l&#39;architettura hardware in uso supporti questo carico ed evitare di inserire tag di tracciamento Web nelle pagine visitate più di frequente, come la pagina principale.
+>La piattaforma Adobe Campaign  non è destinata a essere utilizzata come strumento di tracciamento del sito Web oltre al contesto della visita al sito successiva a un clic in un messaggio. Quando questa opzione è attivata, può causare un utilizzo molto elevato delle risorse sui computer in cui sono installati i server (reindirizzamento, applicazione e database). È consigliabile assicurarsi che l&#39;architettura hardware in uso supporti questo carico ed evitare di inserire tag di tracciamento Web nelle pagine visitate più di frequente, come la pagina principale.
 
 ## Configurazione server {#server-configuration}
 
-I server sono configurati sovraccaricando alcuni elementi del file **serverConf.xml** . Questi file vengono salvati nella sottodirectory **conf** della directory di installazione di Adobe Campaign.
+I server sono configurati sovraccaricando alcuni elementi del file **serverConf.xml** . Questi file vengono salvati nella sottodirectory **conf** della directory di installazione di Adobe Campaign .
 
 ### Server di reindirizzamento {#redirection-server}
 
