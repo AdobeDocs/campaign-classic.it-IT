@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Modelli campagna di marketing {#campaign-templates}
+# Marketing Campaign templates {#campaign-templates}
 
 I modelli delle campagne sono centralizzati nel **[!UICONTROL Resources > Templates > Campaign templates]** nodo. Un modello predefinito viene fornito come standard. Consente di creare una nuova campagna utilizzando tutti i moduli disponibili (documenti, attività, indirizzi e così via), ma i moduli offerti dipendono dai diritti e dalla configurazione della piattaforma Adobe Campaign .
 
@@ -119,7 +116,7 @@ Verranno visualizzati i seguenti collegamenti e schede:
 
    ![](assets/s_ncs_user_op_template_activate_1.png)
 
-* **Indirizzi delle sementi**
+* **Indirizzi di seed**
 
    Quando il modulo è selezionato, alle impostazioni avanzate del modello e alle campagne basate su questo modello viene aggiunta una scheda aggiuntiva. La configurazione può essere definita tramite il modello o singolarmente per ogni campagna.
 
@@ -149,7 +146,7 @@ Verranno visualizzati i seguenti collegamenti e schede:
 
 * **Approvazione**
 
-   Se si seleziona l&#39; **[!UICONTROL Approval]**, è possibile selezionare i processi da approvare e gli operatori responsabili delle approvazioni.
+   Se si seleziona questa opzione, è possibile selezionare i processi da approvare e gli operatori responsabili delle approvazioni. **[!UICONTROL Approval]**
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
 
