@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >I passaggi seguenti devono essere eseguiti da un profilo **Amministratore** e solo in ambienti di progettazione.
 
-1. Creazione di profili utente. Per ulteriori informazioni, vedere Profili [](../../interaction/using/operator-profiles.md)operatore.
+1. Creazione di profili utente. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
 1. Creazione di un ambiente di offerte mediante il targeting della dimensione. Per ulteriori informazioni, consultate [Creazione di un ambiente](../../interaction/using/live-design-environments.md#creating-an-offer-environment)di offerte.
 1. Creazione di regole di tipologia per ogni ambiente. Per ulteriori informazioni, consultate [Creazione e riferimento a una regola](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)di presentazione delle offerte.
 1. Creazione di spazi di offerta per ciascun ambiente e configurazione delle funzioni di rendering. Per ulteriori informazioni, consultate [Creazione di spazi](../../interaction/using/creating-offer-spaces.md)per le offerte.
@@ -45,7 +45,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
    >
    >Quando viene creato uno spazio sul canale Web in ingresso, è necessaria una configurazione anche sul sito in cui verrà visualizzata l&#39;offerta.
 
-## Gestione del catalogo delle offerte {#managing-the-offer-catalog-}
+## Managing the offer catalog {#managing-the-offer-catalog-}
 
 >[!NOTE]
 >
