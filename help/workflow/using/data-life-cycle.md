@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -45,9 +42,9 @@ A questo scopo, selezionate il menu appropriato:
 
    Questo menu consente di accedere alla procedura guidata di analisi descrittiva che consente di generare statistiche e rapporti sui dati della transizione.
 
-   For more on this, refer to this [section](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+   Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-I dati di destinazione vengono eliminati durante l&#39;esecuzione del flusso di lavoro. È accessibile solo l&#39;ultima tabella di lavoro. È possibile configurare il flusso di lavoro in modo che tutte le tabelle di lavoro rimangano accessibili: selezionate l&#39; **[!UICONTROL Keep the result of interim populations between two executions]** opzione nelle proprietà del flusso di lavoro.
+I dati di destinazione vengono eliminati durante l&#39;esecuzione del flusso di lavoro. È accessibile solo l&#39;ultima tabella di lavoro. È possibile configurare il flusso di lavoro in modo che tutte le tabelle di lavoro rimangano accessibili: selezionate l’ **[!UICONTROL Keep the result of interim populations between two executions]** opzione nelle proprietà del flusso di lavoro.
 
 Tuttavia, si consiglia di evitare di attivare questa opzione in caso di quantità significative di dati.
 
@@ -65,7 +62,7 @@ Questo consente di utilizzare i dati raccolti tramite un elenco o in base alle r
 
 **[!UICONTROL Target extension]** Gli elementi di personalizzazione di tipo (targetData) non sono disponibili per i flussi di lavoro di targeting. La destinazione di consegna deve essere integrata nel flusso di lavoro e specificata nella transizione in entrata della consegna.
 
-Se desiderate creare delle prove di consegna, il target di prova deve essere costruito in base alla **[!UICONTROL Address substitution]** modalità in modo da poter inserire i dati di personalizzazione. For more on this, refer to this [section](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se desiderate creare delle prove di consegna, il target di prova deve essere costruito in base alla **[!UICONTROL Address substitution]** modalità in modo da poter inserire i dati di personalizzazione. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 Nell&#39;esempio seguente, raccoglieremo un elenco di informazioni sui clienti da utilizzare in un&#39;e-mail personalizzata.
 
@@ -91,7 +88,7 @@ Effettuate le seguenti operazioni:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configura l&#39;attività del **[!UICONTROL Enrichment]** tipo per riconciliare i dati raccolti con quelli già presenti nel database Adobe Campaign.
+1. Configurare l&#39;attività del **[!UICONTROL Enrichment]** tipo per riconciliare i dati raccolti con quelli già presenti nel database Adobe Campaign .
 
    Qui, la chiave di riconciliazione è il numero di conto:
 
