@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,8 +53,8 @@ Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segu
 1. Selezionare la cartella in cui salvare l&#39;elenco.
 1. Immettere un&#39;etichetta per l&#39;elenco. È possibile inserire campi dinamici per generare automaticamente il nome dall&#39;elenco. In questo esempio, l&#39;elenco ha lo stesso nome della query per identificare facilmente il suo contenuto.
 1. Lasciate l&#39; **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** opzione selezionata per eliminare i destinatari che non corrispondono ai criteri di targeting e per inserire quelli nuovi nell&#39;elenco.
-1. Lasciate selezionata anche l’ **[!UICONTROL Create or use a list with its own table]** opzione.
-1. Lasciate l’ **[!UICONTROL Generate an outbound transition]** opzione deselezionata.
+1. Also leave the **[!UICONTROL Create or use a list with its own table]** option checked.
+1. Leave the **[!UICONTROL Generate an outbound transition]** option unchecked.
 1. Click **[!UICONTROL Ok]** then start the workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
