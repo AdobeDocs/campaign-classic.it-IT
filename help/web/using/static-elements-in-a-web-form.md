@@ -1,7 +1,7 @@
 ---
-title: Elementi statici in un modulo Web
-seo-title: Elementi statici in un modulo Web
-description: Elementi statici in un modulo Web
+title: Elementi statici in un modulo web
+seo-title: Elementi statici in un modulo web
+description: Elementi statici in un modulo web
 seo-description: null
 page-status-flag: never-activated
 uuid: 628e2252-16a2-4c8a-a178-60a9441d3198
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: ca3377c6-a120-4cd0-aaf4-80248f4f5918
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 4%
 
 ---
 
 
-# Elementi statici in un modulo Web{#static-elements-in-a-web-form}
+# Elementi statici in un modulo web{#static-elements-in-a-web-form}
 
 È possibile includere nelle pagine del modulo elementi con i quali l&#39;utente non interagisce; si tratta di elementi statici quali immagini, contenuto HTML, barra orizzontale o collegamento ipertestuale. Questi elementi vengono creati mediante il primo pulsante nella barra degli strumenti, facendo clic sul **[!UICONTROL Add static element]** menu.
 
@@ -31,7 +31,7 @@ Sono disponibili i seguenti tipi di campo:
 * Valore basato su risposte fornite in precedenza (nel contesto del modulo) o sul database.
 * Collegamento ipertestuale, HTML, barra orizzontale. Consultate [Inserimento di contenuto](#inserting-html-content)HTML.
 * Immagine salvata nella libreria delle risorse o su un server accessibile dagli utenti. Consultate [Inserimento di immagini](#inserting-images).
-* Script eseguito sul lato client e/o server. Deve essere scritto in JavaScript ed essere compatibile con la maggior parte dei browser per garantire la corretta esecuzione sul lato client.
+* Script eseguito sul lato client e/o sul lato server. Deve essere scritto in JavaScript ed essere compatibile con la maggior parte dei browser per garantire la corretta esecuzione sul lato client.
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fare riferimento a questa [pagina](../../web/using/defining-web-forms-page-sequencing.md).
+   È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Refer to this [page](../../web/using/defining-web-forms-page-sequencing.md).
 
    Il collegamento sostituirà il **[!UICONTROL Next]** pulsante utilizzato per impostazione predefinita.
 
@@ -120,7 +120,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
    >[!CAUTION]
    >
-   >Questa funzione è disponibile solo se è stata installata l’ **[!UICONTROL Social Marketing]** applicazione. Per utilizzare questa opzione, è necessario creare un&#39;applicazione Facebook con un account esterno di **[!UICONTROL Facebook Connect]** tipo. For more on this, refer to [this page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+   >Questa funzione è disponibile solo se è stata installata l’ **[!UICONTROL Social Marketing]** applicazione. Per utilizzare questa opzione, è necessario creare un&#39;applicazione Facebook con un account esterno di **[!UICONTROL Facebook Connect]** tipo. Per ulteriori informazioni, consulta [questa pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
    L&#39; **[!UICONTROL Preload with Facebook]** opzione consente di inserire un pulsante in un modulo per precaricare i campi utilizzando le informazioni del profilo Facebook.
 
@@ -142,8 +142,8 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 Per questo caso di utilizzo, è stata creata un&#39;applicazione Web composta dai seguenti elementi:
 
 * una pagina contenente il modulo
-* un&#39; **[!UICONTROL Record]** attività
-* un&#39; **[!UICONTROL End]** attività
+* un’attività **[!UICONTROL Record]**
+* an **[!UICONTROL End]** activity
 
 ![](assets/social_webapp_031.png)
 
@@ -165,7 +165,7 @@ Per aggiungere un pulsante di precaricamento, effettuate le seguenti operazioni:
 
    ![](assets/social_webapp_035.png)
 
-1. Accedete al **[!UICONTROL Application]** campo e selezionate il **[!UICONTROL Facebook Connect]** tipo di account esterno creato in precedenza. For more on this, refer to [this page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+1. Accedete al **[!UICONTROL Application]** campo e selezionate il **[!UICONTROL Facebook Connect]** tipo di account esterno creato in precedenza. Per ulteriori informazioni, consulta [questa pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
    ![](assets/social_webapp_036.png)
 
@@ -198,9 +198,9 @@ Questo produce il seguente risultato:
 
 La **[!UICONTROL Text]** scheda consente di creare campi variabili che possono essere utilizzati nell&#39;HTML tra i caratteri &lt;%= e %> con la sintassi seguente: **$(IDENTIFIER)**.
 
-Utilizzare questo metodo per localizzare facilmente le stringhe. Vedere [Traduzione di un modulo Web](../../web/using/translating-a-web-form.md)
+Utilizzare questo metodo per localizzare facilmente le stringhe. See [Translating a web form](../../web/using/translating-a-web-form.md)
 
-Ad esempio, potete creare un campo **Contatto** che vi consentirà di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto HTML. A questo scopo, effettuate le seguenti operazioni:
+Ad esempio, potete creare un campo **Contatto** che vi consentirà di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto HTML. Per farlo, segui la procedura indicata di seguito:
 
 1. Fate clic sulla **[!UICONTROL Text]** scheda del testo HTML.
 1. Fate clic sull&#39; **[!UICONTROL Add]** icona.
