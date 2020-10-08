@@ -1,7 +1,7 @@
 ---
-title: Struttura di uno schema dati
-seo-title: Struttura di uno schema dati
-description: Struttura di uno schema dati
+title: Struttura di uno schema di dati
+seo-title: Struttura di uno schema di dati
+description: Struttura di uno schema di dati
 seo-description: null
 page-status-flag: never-activated
 uuid: 83e3995d-fa31-4cb5-acf2-83f17329c99c
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: a1a39eaa-6d6f-42c5-a36b-bd1cb3a77dcb
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 13%
 
 ---
 
 
-# Struttura di uno schema dati{#structure-of-a-data-schema}
+# Struttura di uno schema di dati{#structure-of-a-data-schema}
 
-La struttura di uno schema dati è visualizzata sotto forma di struttura ad albero. Per visualizzarlo graficamente nella console client Adobe Campaign, seleziona lo schema di destinazione e fai clic sulla **[!UICONTROL Structure]** sottoscheda.
+La struttura di uno schema dati è visualizzata sotto forma di struttura ad albero. Per visualizzarlo graficamente nella console client Adobe Campaign , selezionate lo schema di destinazione e fate clic sulla **[!UICONTROL Structure]** sottoscheda.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
