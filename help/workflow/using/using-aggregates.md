@@ -1,7 +1,7 @@
 ---
-title: Uso degli aggregati
-seo-title: Uso degli aggregati
-description: Uso degli aggregati
+title: Utilizzo di aggregati
+seo-title: Utilizzo di aggregati
+description: Utilizzo di aggregati
 seo-description: null
 page-status-flag: never-activated
 uuid: 70556745-56b2-4f22-bbc5-7f8106fb0d4a
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 2%
 
 ---
 
 
-# Uso degli aggregati{#using-aggregates}
+# Utilizzo di aggregati{#using-aggregates}
 
 Questo caso d’uso descrive come identificare automaticamente gli ultimi destinatari aggiunti al database.
 
@@ -38,17 +38,17 @@ Per eseguire un filtro di tipo Data **creazione = data max (data creazione)** su
 ## Passaggio 1: Calcolo del risultato aggregato {#step-1--calculating-the-aggregate-result}
 
 1. Creare una query. Qui l&#39;obiettivo è calcolare l&#39;ultima data di creazione nota di tutti i destinatari nel database. La query non contiene pertanto un filtro.
-1. Selezionare **[!UICONTROL Add data]**.
+1. Seleziona **[!UICONTROL Add data]**.
 1. Nelle finestre che si aprono, selezionare **[!UICONTROL Data linked to the filtering dimension]** quindi **[!UICONTROL Filtering dimension data]**.
-1. Nella **[!UICONTROL Data to add]** finestra, aggiungere una colonna che calcola il valore massimo per il campo Data **** creazione nella tabella dei destinatari. È possibile utilizzare l&#39;editor di espressioni o immettere **max(@created)** direttamente in un campo della **[!UICONTROL Expression]** colonna. Quindi fate clic sul **[!UICONTROL Finish]** pulsante.
+1. Nella **[!UICONTROL Data to add]** finestra, aggiungere una colonna che calcola il valore massimo per il campo Data **** creazione nella tabella dei destinatari. È possibile utilizzare l&#39;editor di espressioni o immettere **max(@created)** direttamente in un campo della **[!UICONTROL Expression]** colonna. Then click the **[!UICONTROL Finish]** button.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Fate clic **[!UICONTROL Edit additional data]** quindi **[!UICONTROL Advanced parameters...]**. Selezionare l&#39; **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** opzione.
+1. Fai clic su **[!UICONTROL Edit additional data]**, quindi su **[!UICONTROL Advanced parameters...]**. Seleziona l’opzione **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
 
    Questa opzione assicura che tutti i destinatari non vengano visualizzati come risultato e che i dati aggiunti in modo esplicito non vengano conservati. In questo caso, si riferisce all&#39;ultima data in cui è stato creato un destinatario.
 
-   Lasciate selezionata l&#39; **[!UICONTROL Remove duplicate rows (DISTINCT)]** opzione.
+   Lascia selezionata l’opzione **[!UICONTROL Remove duplicate rows (DISTINCT)]**.
 
 ## Passaggio 2: Collegamento dei destinatari e del risultato della funzione di aggregazione {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
@@ -60,6 +60,7 @@ Per collegare la query relativa ai destinatari alla query che esegue il calcolo 
    * Selezionare lo schema temporaneo relativo all&#39;aggregazione. I dati per questo schema verranno aggiunti ai membri del set principale.
    * Selezionate **[!UICONTROL Use a simple join]** per collegare il risultato aggregato a ogni destinatario del set principale.
    * Infine, specificate che il collegamento è un **[!UICONTROL Type 11 simple link]**.
+
    ![](assets/datamanagement_usecase_3.png)
 
 Il risultato dell&#39;aggregazione è quindi collegato a ogni destinatario.
@@ -72,7 +73,7 @@ Una volta stabilito il collegamento, il risultato dell&#39;aggregazione e i dest
 1. Nella **[!UICONTROL subsets]** scheda, selezionare **[!UICONTROL Add a filtering condition on the inbound population]** quindi fare clic su **[!UICONTROL Edit...]**.
 1. Utilizzando l&#39;editor di espressioni, aggiungete un criterio di uguaglianza tra la data di creazione dei destinatari e la data di creazione calcolata dall&#39;aggregazione.
 
-   I campi del tipo di data nel database vengono generalmente salvati in millisecondi. È pertanto necessario estendere questi valori per l&#39;intera giornata per evitare di recuperare i destinatari creati solo in millisecondi.
+   I campi del tipo di data nel database vengono generalmente salvati in millisecondi. È pertanto necessario estendere tali valori per l&#39;intera giornata per evitare di recuperare i destinatari creati solo con lo stesso millisecondo.
 
    A tal fine, utilizzare la funzione **ToDate** , disponibile nell&#39;editor di espressioni, che converte date e ore in date semplici.
 
@@ -80,8 +81,9 @@ Una volta stabilito il collegamento, il risultato dell&#39;aggregazione e i dest
 
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**: `toDate([datemax/expr####])`, dove expr##### fa riferimento all&#39;aggregazione specificata nella query della funzione di aggregazione.
+
    ![](assets/datamanagement_usecase_4.png)
 
-Il risultato dell&#39;attività divisa è quindi relativo ai destinatari creati lo stesso giorno dell&#39;ultima data di creazione nota.
+Il risultato della divisione dell&#39;attività è quindi relativo ai destinatari creati lo stesso giorno dell&#39;ultima data di creazione nota.
 
 Potete quindi aggiungere altre attività, ad esempio un aggiornamento dell&#39;elenco o una distribuzione per arricchire il flusso di lavoro.
