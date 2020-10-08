@@ -1,7 +1,7 @@
 ---
-title: HeatMap flusso di lavoro
-seo-title: HeatMap flusso di lavoro
-description: HeatMap flusso di lavoro
+title: Workflow HeatMap
+seo-title: Workflow HeatMap
+description: Workflow HeatMap
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
@@ -11,35 +11,32 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# HeatMap flusso di lavoro {#workflow-heatmap}
+# Workflow HeatMap {#workflow-heatmap}
 
-La  Workflow HeatMap consiste in una rappresentazione grafica con colori diversi per tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
+La Workflow HeatMap di Adobe Campaign consiste in una rappresentazione grafica codificata per colori di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
 
 In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
 ## Informazioni sulla mappa di calore del flusso di lavoro {#about-the-workflow-heatmap}
 
-Fornendo una rapida panoramica sul numero di flussi di lavoro simultanei, Workflow HeatMap consente agli amministratori della piattaforma di  Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza.
+Fornendo una rapida panoramica sul numero di flussi di lavoro simultanei, Workflow HeatMap consente agli amministratori  piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare di conseguenza i flussi di lavoro.
 
 Più precisamente, consente agli amministratori di piattaforma di:
 
-* Visualizzare e comprendere flussi di lavoro simultanei
-* Filtrare i flussi di lavoro per durata per vedere quali flussi di lavoro potrebbero incontrare problemi
+* Visualizzare e comprendere i flussi di lavoro simultanei
+* Filtrare i flussi di lavoro per durata per vedere quali potrebbero presentare problemi
 * Filtrare le attività per durata per vedere quali attività possono incontrare problemi
-* Trova facilmente flussi di lavoro singoli e tutte le attività correlate (con la loro durata)
-* Ricerca per tipo di flusso di lavoro (flussi di lavoro[](../../workflow/using/building-a-workflow.md#technical-workflows) tecnici o flussi di lavoro [di](../../workflow/using/building-a-workflow.md#campaign-workflows)campagna)
+* Trovare facilmente singoli flussi di lavoro e le attività correlate ad essi (con la relativa durata)
+* Ricercare per tipo di flusso di lavoro ([flussi di lavoro tecnici](../../workflow/using/building-a-workflow.md#technical-workflows) o [flussi di lavoro di campagne](../../workflow/using/building-a-workflow.md#campaign-workflows))
 * Cercare un flusso di lavoro specifico da analizzare
 
 >[!NOTE]
@@ -48,9 +45,9 @@ Più precisamente, consente agli amministratori di piattaforma di:
 
 L’utilizzo di HeatMap del flusso di lavoro richiede una buona comprensione dei seguenti concetti: [Best practice](../../workflow/using/about-workflows.md)per flussi di lavoro, [attività](../../workflow/using/about-activities.md) e [flussi di lavoro](../../workflow/using/workflow-best-practices.md).
 
-Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti](https://support.neolane.net/) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per apprendere come installarlo.
+Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti del](https://support.neolane.net/) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per capire come installarlo.
 
-Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. L&#39;accordo consente il trasferimento e lo stoccaggio negli Stati Uniti, consentendo  Adobe Campaign di:
+Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. Questo accordo consente il trasferimento e lo stoccaggio negli Stati Uniti, consentendo  Adobe Campaign di:
 
 * monitorare le istanze per esaminare eventuali problemi di prestazioni.
 * raccogliere i dati per il rilevamento delle anomalie.
@@ -61,7 +58,7 @@ Il trasferimento dei dati è disponibile solo per gli utenti che si connettono a
 
 Sono disponibili tre opzioni:
 
-* **[!UICONTROL Accept]** : Accettando questo contratto, autorizzi  Adobe Campaign a raccogliere i tuoi dati e a trasferirli negli Stati Uniti per essere in grado di aiutarti in caso di rilevamento di anomalie.
+* **[!UICONTROL Accept]** : Accettando questo contratto, l&#39;utente autorizza  Adobe Campaign a raccogliere i dati e a trasferirli negli Stati Uniti per essere in grado di fornire assistenza in caso di rilevamento di anomalie.
 * **[!UICONTROL Refuse]** : Rifiutando l&#39;accordo, i dati non verranno trasferiti ma puoi comunque utilizzare Workflow Heatmap.
 * **[!UICONTROL Do not show this message again]** : Facendo clic su **[!UICONTROL Do not show this message again]** , la finestra a comparsa si interrompe quando si accede a Workflow Heatmap ma è ancora disponibile dal **[!UICONTROL Term of use]** pulsante.
 
@@ -86,7 +83,7 @@ Questa scelta non è finale, è sempre possibile modificarla facendo clic sul **
    >Sono visibili solo i flussi di lavoro che non sono stati eliminati dal **[!UICONTROL Database cleanup]** flusso di lavoro. Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consultare [questa sezione](../../production/using/database-cleanup-workflow.md).\
    >Per impostazione predefinita, il fuso orario Workflow HeatMap è quello definito per l’utente amministratore corrente. Ad esempio, puoi modificarlo se non ti trovi nella stessa area degli utenti di marketing con cui stai lavorando.
 
-1. Fai clic sul pulsante **[!UICONTROL Filters]**. 
+1. Fai clic sul pulsante **[!UICONTROL Filters]**.
 
    ![](assets/wkf_monitoring_filters.png)
 
@@ -178,7 +175,7 @@ Come amministratore di Campaign, Workflow HeatMap ti aiuta a trovare i flussi di
 
 ## Esempio: Utilizzo di HeatMap per migliorare la pianificazione del flusso di lavoro {#example--using-the-heatmap-to-improve-workflow-planning}
 
-L’esempio seguente mostra come la pianificazione possa essere più efficiente e come migliorare le prestazioni quando si utilizza la mappa calore del flusso di lavoro del Adobe Campaign .
+L’esempio seguente mostra come la pianificazione possa essere più efficiente e come migliorare le prestazioni quando si utilizza la mappa calore  flusso di lavoro Adobe Campaign.
 
 In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro. È necessario verificare cosa rallenta l&#39;attività e come risolvere il problema.
 
