@@ -1,7 +1,7 @@
 ---
-title: Aggiornare dati
-seo-title: Aggiornare dati
-description: Aggiornare dati
+title: Update data
+seo-title: Update data
+description: Update data
 seo-description: null
 page-status-flag: never-activated
 uuid: 5f3ab7c8-175a-4b06-a50c-edc97b226e3c
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Aggiornare dati{#update-data}
+# Update data{#update-data}
 
 Un&#39;attività di tipo **Aggiorna dati** esegue un aggiornamento di massa dei campi nel database.
 
@@ -35,7 +32,7 @@ Il **[!UICONTROL Operation type]** campo consente di scegliere il processo da es
 * **[!UICONTROL Insert]**: aggiungi solo dati.
 * **[!UICONTROL Update]**: aggiorna solo i dati.
 * **[!UICONTROL Update and merge collections]**: aggiorna i dati e scegli un record principale, quindi collega gli elementi collegati ai duplicati in questo record primario. I duplicati possono quindi essere eliminati senza creare elementi associati orfani.
-* **[!UICONTROL Delete]**: eliminare i dati.
+* **[!UICONTROL Delete]**: elimina i dati.
 
 ![](assets/s_advuser_update_data_1.png)
 
@@ -63,7 +60,7 @@ Utilizzate l&#39; **[!UICONTROL Automatically associate fields with the same nam
 
 ![](assets/s_advuser_update_data_3.png)
 
-Selezionate tutti i campi da aggiornare e, se necessario, aggiungete le condizioni in base alle quali eseguire l&#39;aggiornamento. A questo scopo, utilizzare la **[!UICONTROL Taken into account if]** colonna. Le condizioni vengono applicate una dopo l&#39;altra e in conformità con l&#39;ordine nell&#39;elenco. Utilizzate le frecce a destra per cambiare l&#39;ordine degli aggiornamenti.
+Selezionate tutti i campi da aggiornare e, se necessario, aggiungete le condizioni in base alle quali eseguire l&#39;aggiornamento. A questo scopo, utilizza la colonna **[!UICONTROL Taken into account if]**. Le condizioni vengono applicate una dopo l&#39;altra e in conformità con l&#39;ordine nell&#39;elenco. Utilizzate le frecce a destra per cambiare l&#39;ordine degli aggiornamenti.
 
 È possibile utilizzare lo stesso campo di destinazione più volte.
 
@@ -110,7 +107,7 @@ L&#39;aggiornamento dei dati e l&#39;unione delle raccolte consente di aggiornar
 
 1. Selezionate le raccolte da spostare al record principale e i campi da aggiornare.
 
-   Immettere le regole che si applicano a questi record secondari una o più volte identificati. A questo scopo, potete utilizzare il generatore di espressioni. For more on this, refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions). Ad esempio, specificando che si tratta del valore aggiornato più recente tra tutti i diversi record da conservare.
+   Immettere le regole che si applicano a questi record secondari una o più volte identificati. A questo scopo, potete utilizzare il generatore di espressioni. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions). Ad esempio, specificando che si tratta del valore aggiornato più recente tra tutti i diversi record da conservare.
 
    Quindi immettete le condizioni da prendere in considerazione per la regola.
 
