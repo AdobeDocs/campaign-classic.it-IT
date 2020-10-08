@@ -1,7 +1,7 @@
 ---
-title: Filtrare gli schemi
-seo-title: Filtrare gli schemi
-description: Filtrare gli schemi
+title: Filtraggio degli schemi
+seo-title: Filtraggio degli schemi
+description: Filtraggio degli schemi
 seo-description: null
 page-status-flag: never-activated
 uuid: 04a90785-3084-42fd-85af-77bc28687579
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
-# Filtrare gli schemi{#filtering-schemas}
+# Filtraggio degli schemi{#filtering-schemas}
 
 ## Filtri di sistema {#system-filters}
 
@@ -32,7 +32,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 * **readAccess**: consente l&#39;accesso in sola lettura ai dati dello schema.
 
-   **Avviso** - Tutte le tabelle collegate devono essere impostate con la stessa limitazione. Questa configurazione può influire sulle prestazioni.
+   **Avvertenza** - Tutte le tabelle collegate devono essere impostate con la stessa limitazione. Questa configurazione può influire sulle prestazioni.
 
 * **writeAccess**: fornisce l&#39;accesso in scrittura ai dati dello schema.
 
@@ -40,7 +40,7 @@ Questi filtri vengono inseriti a livello di **elemento** principale degli schemi
 
 * Limita autorizzazioni di scrittura
 
-   In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di scrittura sullo schema per gli operatori senza l&#39;autorizzazione di amministrazione. Ciò significa che solo gli amministratori avranno le autorizzazioni di scrittura sulle entità descritte da questo schema.
+   In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di scrittura sullo schema per gli operatori senza l&#39;autorizzazione AMMINISTRAZIONE. Ciò significa che solo gli amministratori avranno le autorizzazioni di scrittura sulle entità descritte da questo schema.
 
    ```
    <sysFilter name="writeAccess">      
@@ -105,7 +105,7 @@ Per impostazione predefinita, gli schemi predefiniti sono accessibili solo con a
 
 >[!IMPORTANT]
 >
->Le autorizzazioni di lettura e scrittura per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza di Adobe Campaign.
+>Le autorizzazioni LETTURA e SCRITTURA per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza Adobe Campaign .
 
 ## Modifica dei filtri di sistema degli schemi incorporati {#modifying-system-filters-of-built-in-schemas}
 
@@ -113,9 +113,9 @@ Per impostazione predefinita, gli schemi predefiniti sono accessibili solo con a
 
 >[!NOTE]
 >
->Adobe consiglia tuttavia di non modificare i parametri predefiniti per garantire una protezione ottimale.
+>Tuttavia,  Adobe consiglia di non modificare i parametri predefiniti per garantire una protezione ottimale.
 
 1. Create un&#39;estensione per lo schema interessato o aprite un&#39;estensione esistente.
 1. Aggiungete un elemento secondario **`<sysfilter name="<filter name>" _operation="delete"/>`** nell&#39;elemento principale per eliminare l&#39;applicazione del filtro sotto lo stesso nello schema di origine.
-1. Se lo desiderate, potete aggiungere un nuovo filtro, come descritto in filtri [](#system-filters)di sistema.
+1. Se lo desiderate, potete aggiungere un nuovo filtro, come descritto in Filtri [di](#system-filters)sistema.
 
