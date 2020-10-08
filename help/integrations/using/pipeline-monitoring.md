@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell'integrazione
-seo-title: Configurazione dell'integrazione
-description: Configurazione dell'integrazione
+title: Configurazione dell’integrazione
+seo-title: Configurazione dell’integrazione
+description: Configurazione dell’integrazione
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Monitoraggio del condotto {#pipeline-monitoring}
+# Monitoraggio della pipeline {#pipeline-monitoring}
 
 Il servizio Web [!DNL pipelined] status fornisce informazioni sullo stato del [!DNL pipelined] processo.
 
