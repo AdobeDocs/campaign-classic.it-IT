@@ -1,6 +1,6 @@
 ---
-title: Iscrizioni e riferimenti
-seo-title: Iscrizioni e riferimenti
+title: Abbonamenti e riferimenti
+seo-title: Abbonamenti e riferimenti
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 6a81e1ad-c801-45c3-9c21-96ae5d4d281d
 contentOwner: sauviat
 discoiquuid: 6ad69818-0909-4ac3-aa25-0781c41a60a3
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '11'
+ht-degree: 100%
 
 ---
 
 
-# Iscrizioni e riferimenti{#subscriptions-and-referrals}
+# Abbonamenti e riferimenti{#subscriptions-and-referrals}
 
