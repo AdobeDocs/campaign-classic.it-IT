@@ -1,7 +1,7 @@
 ---
-title: Inserimento di tag nel sito
-seo-title: Inserimento di tag nel sito
-description: Inserimento di tag nel sito
+title: Inserimento di etichette nel sito
+seo-title: Inserimento di etichette nel sito
+description: Inserimento di etichette nel sito
 seo-description: null
 page-status-flag: never-activated
 uuid: e5e4a431-2093-4d5a-acd2-0040b6ce3519
@@ -11,20 +11,20 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 57988b00-62cc-43d3-a2eb-bfed5bff7dc1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
 
-# Inserimento di tag nel sito{#inserting-tags-in-your-site}
+# Inserimento di etichette nel sito{#inserting-tags-in-your-site}
 
 ## Metodo semplice {#simple-method}
 
-Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un tag **`<img>`** HTML nel codice sorgente HTML della pagina Web da monitorare.
+Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un tag **`<img>`** HTML nel codice sorgente HTML della pagina Web che si desidera tracciare.
 
 >[!IMPORTANT]
 >
