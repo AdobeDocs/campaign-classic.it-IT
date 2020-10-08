@@ -1,7 +1,7 @@
 ---
-title: API orientate al business
-seo-title: API orientate al business
-description: API orientate al business
+title: API orientate alle aziende
+seo-title: API orientate alle aziende
+description: API orientate alle aziende
 seo-description: null
 page-status-flag: never-activated
 uuid: ddb6e5cf-dfe0-4dc9-ac5b-fab21827b874
@@ -11,19 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# API orientate al business{#business-oriented-apis}
+# API orientate alle aziende{#business-oriented-apis}
 
 Le API business sono specifiche per ciascun tipo di oggetto. Hanno un effetto su:
 
@@ -48,7 +45,7 @@ In questa sezione viene illustrato l&#39;utilizzo dei servizi &quot;Subscribe&qu
 
 >[!IMPORTANT]
 >
->[La documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI della campagna contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript nel  Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
+>[La documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di Javascript in  Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
 ## Iscrizione (nms:iscrizione) {#subscribe--nms-subscription-}
 
@@ -150,7 +147,7 @@ Se il destinatario non è presente nel database o non è iscritto al servizio in
 
 >[!NOTE]
 >
->Se il nome del servizio non è specificato come parametro, il destinatario viene inserito automaticamente nell&#39;elenco dei blocchi (@blockList=&quot;1&quot;).
+>Se il nome del servizio non è specificato come parametro, il destinatario viene automaticamente  elenco Bloccati (@ inserii nell&#39;elenco Bloccati=&quot;1&quot;).
 
 Questa chiamata non restituisce alcun dato, tranne eventuali errori.
 
@@ -207,7 +204,7 @@ Descrizione del metodo nello schema:
 </method>
 ```
 
-È necessario creare un modello di consegna dalla console client  Adobe Campaign. Contiene i parametri comuni a tutte le consegne (indirizzo del mittente o durata di validità del messaggio).
+È necessario creare un modello di consegna dalla console client Adobe Campaign . Contiene i parametri comuni a tutte le consegne (indirizzo del mittente o durata di validità del messaggio).
 
 Il documento XML di input è un frammento di modello di consegna che segue la struttura dello schema &quot;nms:delivery&quot;. Conterrà tutti i dati aggiuntivi che non è stato possibile definire in modo statico nel modello di consegna (ad esempio, l&#39;elenco dei destinatari da destinare).
 
