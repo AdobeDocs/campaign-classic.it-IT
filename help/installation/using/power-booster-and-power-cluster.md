@@ -1,7 +1,7 @@
 ---
-title: Alimentatore e cluster di alimentazione
-seo-title: Alimentatore e cluster di alimentazione
-description: Alimentatore e cluster di alimentazione
+title: Power Booster e Power Cluster
+seo-title: Power Booster e Power Cluster
+description: Power Booster e Power Cluster
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d23ed42-a368-4bd6-afaf-48452e253d19
@@ -11,28 +11,28 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 7%
 
 ---
 
 
-# Alimentatore e cluster di alimentazione{#power-booster-and-power-cluster}
+# Power Booster e Power Cluster{#power-booster-and-power-cluster}
 
 ## Panoramica {#overview}
 
-Adobe Campaign offre due set di opzioni di architettura precompilate per la quotatura della distribuzione:
+ Adobe Campaign offre due serie di opzioni di architettura precompilate per la quotatura dell’implementazione:
 
 * **Alimentatore**
 
-   Questa opzione fornisce il supporto per una singola istanza di esecuzione aggiuntiva scollegata dall&#39;istanza dell&#39;applicazione Adobe Campaign principale. Le istanze di esecuzione dedicate possono essere ospitate in remoto o da terzi. Quando implementata, l&#39;esecuzione delle e-mail, il tracciamento, le pagine mirror e i messaggi di rimbalzo vengono gestiti indipendentemente dalle funzioni dell&#39;applicazione centrale.
+   Questa opzione fornisce il supporto per una singola istanza di esecuzione aggiuntiva disaccoppiata dall&#39;istanza dell&#39;applicazione Adobe Campaign  principale. Le istanze di esecuzione dedicate possono essere ospitate in remoto o da terzi. Quando implementata, l&#39;esecuzione delle e-mail, il tracciamento, le pagine mirror e i messaggi di rimbalzo vengono gestiti indipendentemente dalle funzioni dell&#39;applicazione centrale.
 
 * **Cluster di alimentazione**
 
-   Questa opzione supporta da 2 a N istanze di esecuzione in cluster disaccoppiate dall&#39;istanza dell&#39;applicazione Adobe Campaign principale in relazione a una determinata applicazione. I cluster possono essere ospitati in remoto, in distribuzioni distribuite e da terze parti. Oltre ai vantaggi dell&#39;isolamento del processo, l&#39;opzione Adobe Campaign Power Cluster consente la ridondanza e l&#39;implementazione di strategie tramite l&#39;hardware di base per un&#39;evoluzione semplificata dello SLA o delle prestazioni.
+   Questa opzione supporta da 2 a N istanze di esecuzione in cluster disaccoppiate dall&#39;istanza dell&#39;applicazione Adobe Campaign  principale in relazione a una determinata applicazione. I cluster possono essere ospitati in remoto, in distribuzioni distribuite e da terze parti. Oltre ai vantaggi dell&#39;isolamento del processo, l&#39;opzione  Adobe Campaign Power Cluster consente la ridondanza e l&#39;implementazione di strategie tramite hardware di base per un&#39;evoluzione semplificata dello SLA o delle prestazioni.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -82,14 +82,14 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
    <td> Modello di distribuzione<br /> </td> 
    <td> Tutti su un sito (può essere in sede o nel cloud)<br /> </td> 
    <td> Marketing locale con esecuzione nel cloud possibile<br /> </td> 
-   <td> Marketing locale con esecuzione nel cloud; esecuzione in diverse aree possibili<br /> </td> 
+   <td> Marketing locale con esecuzione nel cloud; esecuzione in diverse aree geografiche possibili<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Recommendations {#recommendations}
+## Raccomandazioni {#recommendations}
 
-* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non potete installare un pacchetto per un servizio a cui non avete effettuato la sottoscrizione. Se, ad esempio, vi iscrivete all&#39;opzione **Power Booster** per il servizio **Message Center** , potete installare il **[!UICONTROL Execution of transactional messages]** pacchetto solo nell&#39;istanza di esecuzione dedicata. Controllare il contratto di licenza.
-* Poiché le istanze dedicate (o cluster) sono istanze di Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. For more on this, refer to [this document](../../production/using/foreword.md).
-* Per configurare correttamente l&#39;istanza dal punto di vista di un database o di componenti hardware, contattate Adobe Campaign Professional Services.
+* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non potete installare un pacchetto per un servizio a cui non avete effettuato la sottoscrizione. Se, ad esempio, vi iscrivete all&#39;opzione **Power Booster** per il servizio **Message Center** , potete installare il **[!UICONTROL Execution of transactional messages]** pacchetto solo nell&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
+* Poiché le istanze dedicate (o cluster) sono  istanze Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. For more on this, refer to [this document](../../production/using/foreword.md).
+* Per configurare correttamente l&#39;istanza dal punto di vista di un database o componenti hardware, contattare  Adobe Campaign Professional Services.
 
