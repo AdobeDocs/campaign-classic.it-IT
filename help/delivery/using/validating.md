@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 discoiquuid: c363a7cf-81a5-4c02-a021-b822eeeadd03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 70f51ba3937d0f20d9a488c61b52b7ec4396fa5e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Puoi configurare la modalità di recupero dei registri di consegna dalla **[!UIC
 
 Sono disponibili due modalità:
 
-* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità di funzione, tutti i log vengono aggiornati quando l&#39;operatore conferma l&#39;invio (il loro stato passa da &quot;In attesa di consegna&quot; a &quot;Inviato&quot;) e la consegna viene automaticamente impostata su **[!UICONTROL Finished]**.
+* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità di funzione, tutti i log di trasmissione vengono aggiornati quando l&#39;operatore conferma l&#39;invio (il loro stato passa da &quot;In attesa di consegna&quot; a &quot;Inviato&quot;) e la consegna viene automaticamente impostata su **[!UICONTROL Finished]**.
 * **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : questa modalità consente di aggiornare i log di trasmissione tramite un file esterno inviato dal provider di servizi. In questo caso, per elaborare queste informazioni è necessario utilizzare un flusso di lavoro per aggiornare lo stato del registro di trasmissione.
 
    >[!NOTE]
