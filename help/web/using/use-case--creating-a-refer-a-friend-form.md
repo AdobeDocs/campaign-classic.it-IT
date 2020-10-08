@@ -1,7 +1,7 @@
 ---
-title: '"Caso di utilizzo: creazione di un modulo di riferimento a un amico"'
-seo-title: '"Caso di utilizzo: creazione di un modulo di riferimento a un amico"'
-description: '"Caso di utilizzo: creazione di un modulo di riferimento a un amico"'
+title: '"Caso di utilizzo: creazione di un modulo per invitare un amico"'
+seo-title: '"Caso di utilizzo: creazione di un modulo per invitare un amico"'
+description: '"Caso di utilizzo: creazione di un modulo per invitare un amico"'
 seo-description: null
 page-status-flag: never-activated
 uuid: ad8b9076-c551-420d-bb23-0b3c645ee943
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
 
-# Caso di utilizzo: creazione di un modulo di riferimento a un amico{#use-case-creating-a-refer-a-friend-form}
+# Caso di utilizzo: creazione di un modulo per invitare un amico{#use-case-creating-a-refer-a-friend-form}
 
 In questo esempio, vogliamo offrire un concorso ai destinatari del database. Il modulo Web avrà una sezione per l&#39;immissione delle risposte e un&#39;altra per il riferimento a un amico immettendo il proprio indirizzo e-mail.
 
@@ -42,7 +42,7 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
    >
    >Fintanto che il destinatario non ha dato il proprio consenso, non è possibile archiviarli con i destinatari nel database. Saranno memorizzati temporaneamente nella tabella **visitatore** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene svuotata regolarmente grazie alle operazioni di **pulizia** .
    >
-   >In questo esempio, vogliamo indirizzare i destinatari affinché suggeriscano loro di partecipare al concorso raccomandato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se dispongono di un’iscrizione, possono essere memorizzati nel database.
+   >In questo esempio, desideriamo indirizzare i destinatari affinché suggeriscano loro di partecipare al concorso raccomandato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se dispongono di un’iscrizione, possono essere memorizzati nel database.
 
    ![](assets/s_ncs_admin_survey_viral_sample_5.png)
 
@@ -88,7 +88,7 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
 
    * Questo modello contiene un collegamento al modulo per il concorso e il collegamento per l’iscrizione dell’utente a una newsletter.
 
-      Il collegamento di iscrizione viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, consente di iscriversi al servizio **newsletter** . Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un altro servizio.
+      Il collegamento di iscrizione viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, consente di effettuare la sottoscrizione dei profili al servizio **newsletter** . Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un altro servizio.
 
    * Il nome interno (&#39;referrer&#39; qui) verrà utilizzato nello script di distribuzione dei messaggi come mostrato di seguito.
    >[!NOTE]
