@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1191'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Attività di gestione dei contenuti {#content-management-activity}
 
-La creazione, la modifica e la pubblicazione di contenuti possono essere automatizzate utilizzando un flusso di lavoro configurato tramite l&#39;interfaccia client di Adobe Campaign.
+La creazione, la modifica e la pubblicazione di contenuti possono essere automatizzate utilizzando un flusso di lavoro configurato tramite l&#39;interfaccia client Adobe Campaign .
 
 L&#39;attività di gestione **dei** contenuti è accessibile dalla **[!UICONTROL Tools]** barra degli strumenti del diagramma del flusso di lavoro.
 
@@ -41,7 +41,7 @@ Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
 * **Specificato dalla transizione**
 
-   Il contenuto da utilizzare è stato creato in precedenza. I processi riguardano l&#39;istanza di contenuto propagata dall&#39;evento in arrivo. L&#39;accesso all&#39;identificatore di contenuto è effettuato tramite la variabile &quot;contentId&quot; dell&#39;evento.
+   Il contenuto da utilizzare è stato creato in precedenza. I processi riguarderanno l&#39;istanza di contenuto propagata dall&#39;evento in arrivo. L&#39;accesso all&#39;identificatore di contenuto è effettuato tramite la variabile &quot;contentId&quot; dell&#39;evento.
 
 * **Esplicito**
 
@@ -69,7 +69,7 @@ Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
 ### Azione da eseguire {#action-to-execute}
 
-* **Salva**
+* **Salva.**
 
    Salva il contenuto creato o modificato. L&#39;identificatore del contenuto salvato viene propagato nella variabile &quot;contentId&quot; dell&#39;evento in uscita.
 
@@ -77,13 +77,13 @@ Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
    Genera i file di output per ciascuno dei modelli di trasformazione con pubblicazione di tipo &quot;File&quot;. La transizione in uscita viene attivata per ciascun file generato, con i seguenti parametri: l’identificatore del contenuto salvato nella variabile &quot;contentId&quot; e il nome del file nella variabile &quot;filename&quot;.
 
-### Transizione {#transition}
+### Transition {#transition}
 
 L&#39;opzione **Genera una transizione** di output consente di aggiungere una transizione di output all&#39; **[!UICONTROL Content management]** attività per collegare una nuova attività all&#39;esecuzione del flusso di lavoro. Dopo aver selezionato questa opzione, immettete un&#39;etichetta per la transizione.
 
 ## Esempi {#examples}
 
-### Automazione della creazione e distribuzione dei contenuti {#automating-content-creation-and-delivery}
+### Automazione della creazione e della distribuzione dei contenuti {#automating-content-creation-and-delivery}
 
 L&#39;esempio seguente automatizza la creazione e la distribuzione di un blocco di contenuto.
 
@@ -167,7 +167,7 @@ L&#39;ultimo passaggio per completare l&#39;attività consiste nel preparare e a
 
 ### Creazione di contenuti e pubblicazione in un secondo momento {#creating-content-and-publishing-it-later}
 
-Questo esempio crea un blocco di contenuto e avvia la pubblicazione del file dopo un ritardo specifico.
+In questo esempio viene creato un blocco di contenuto e viene avviata la pubblicazione del file dopo un ritardo specifico.
 
 ![](assets/d_ncs_content_workflow5.png)
 
@@ -221,11 +221,11 @@ L&#39;azione finale dell&#39;attività consiste nel preparare e avviare la conse
 
 ### Importazione di contenuti dall&#39;FTP {#importing-content-from-ftp}
 
-Se il contenuto della distribuzione è disponibile in un file HTML ubicato su server FTP o SFTP, puoi facilmente caricare tale contenuto nelle consegne di Adobe Campaign. Fare riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto di distribuzione è disponibile in un file HTML ubicato su server FTP o SFTP, potete facilmente caricare tale contenuto  consegne Adobe Campaign. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
-### Importazione di contenuti dal connettore Amazon S3 (Simple Storage Service) {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importazione di contenuti da  connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se il contenuto della distribuzione si trova su bucket Amazon Simple Storage Service (S3), puoi facilmente caricare tale contenuto nelle consegne di Adobe Campaign. Fare riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto di distribuzione si trova  bucket Amazon Simple Storage Service (S3), è possibile caricare facilmente tale contenuto  consegne Adobe Campaign. Refer to [this example](../../workflow/using/loading-delivery-content.md).
 
 ## Aggiornamento semiautomatico {#semi-automatic-update}
 
