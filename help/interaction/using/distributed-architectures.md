@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Il pacchetto Interaction deve essere installato in tutte le istanze (controllo e
 >
 >Durante l&#39;installazione del pacchetto, i campi di tipo **esteso** della tabella **nms:proposition** , ad esempio l&#39;ID proposta, diventano campi di tipo **int64** . Questo tipo di dati è dettagliato in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite la **[!UICONTROL Data purge]** finestra nella procedura guidata di distribuzione). Per le istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per calcolare le regole di tipologia (periodo di scorrimento) e le regole di idoneità.
+La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite la **[!UICONTROL Data purge]** finestra nella procedura guidata di distribuzione). Per le istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo di scorrimento) e delle regole di idoneità.
 
 Sulle istanze di controllo:
 
@@ -78,8 +78,8 @@ Sulle istanze di controllo:
    ![](assets/interaction_powerbooster1.png)
 
    * Completate l’etichetta e aggiungete un nome interno breve ed esplicito.
-   * Selezionare il **[!UICONTROL Execution instance]**.
-   * Selezionare l&#39; **[!UICONTROL Enabled]** opzione.
+   * Seleziona **[!UICONTROL Execution instance]**.
+   * Seleziona l’opzione **[!UICONTROL Enabled]**.
    * Completate i parametri di connessione per l&#39;istanza di esecuzione.
    * Ogni istanza di esecuzione deve essere collegata a un ID. Questo ID viene assegnato quando si fa clic sul **[!UICONTROL Initialize connection]** pulsante.
    * Verificare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
@@ -143,7 +143,7 @@ Se l’istanza non aveva in precedenza il pacchetto Interaction, non è necessar
 
 Ci sono due metodi. Il primo (che utilizza una tabella di lavoro) è leggermente più veloce.
 
-**Tabella lavoro**
+**Tabella di lavoro**
 
 ```
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
