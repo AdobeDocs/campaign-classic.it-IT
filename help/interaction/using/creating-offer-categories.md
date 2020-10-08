@@ -1,7 +1,7 @@
 ---
-title: Creazione di categorie di offerte
-seo-title: Creazione di categorie di offerte
-description: Creazione di categorie di offerte
+title: Creazione di categorie di offerta
+seo-title: Creazione di categorie di offerta
+description: Creazione di categorie di offerta
 seo-description: null
 page-status-flag: never-activated
 uuid: 5ac0ae5e-1731-4699-b4ef-f3867ad0ab58
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
 
-# Creazione di categorie di offerte{#creating-offer-categories}
+# Creazione di categorie di offerta{#creating-offer-categories}
 
 La creazione di categorie di offerte può avvenire solo nell&#39; **[!UICONTROL Design]** ambiente. Vengono distribuiti automaticamente nell&#39; **[!UICONTROL Live]** ambiente (ovvero resi disponibili) quando vengono approvate le offerte create/modificate che contengono. Per impostazione predefinita, l&#39; **[!UICONTROL Design]** ambiente contiene una categoria in cui ricevere tutte le offerte. È possibile creare sottocategorie per aggiungere una gerarchia alle offerte del catalogo.
 
@@ -28,7 +28,7 @@ Per ciascuna categoria, è possibile definire le date di idoneità, ossia un per
 
 Per creare una categoria aggiuntiva, attenetevi alla seguente procedura:
 
-1. Andate alla **[!UICONTROL Offer catalog]** cartella.
+1. Go to the **[!UICONTROL Offer catalog]** folder.
 
    ![](assets/offer_cat_create_001.png)
 
