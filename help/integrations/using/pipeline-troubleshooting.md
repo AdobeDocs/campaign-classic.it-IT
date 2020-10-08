@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -72,7 +69,7 @@ Quando il [!DNL pipelined] processo è in esecuzione e non vengono recuperati at
 1. Cercare gli errori nel [!DNL pipelined] registro.
 1. Cercare gli errori nella pagina di [!DNL pipelined] stato. trigger-scarted, trigger-failures dovrebbe essere zero.
 1. Verificate che il nome dell&#39;attivatore sia configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione. In caso di dubbi, utilizzate l&#39;opzione carattere jolly.
-1. Controlla che Analytics abbia un attivatore attivo e stia generando eventi. Potrebbe verificarsi un ritardo di alcune ore dopo che la configurazione è stata effettuata in Analytics prima che sia attiva.
+1. Verifica che Analytics disponga di un attivatore attivo e stia generando eventi. Potrebbe verificarsi un ritardo di alcune ore dopo che la configurazione è stata effettuata in Analytics prima che sia attiva.
 
 **Gli eventi non sono collegati a un cliente**
 
@@ -97,7 +94,7 @@ Annessi
 
 **Come utilizzare il codice JavaScript di crittografia Key**
 
-Eseguite un JavaScript per crittografare la chiave privata. È necessaria per la configurazione della pipeline.
+Eseguire un JavaScript per crittografare la chiave privata. È necessaria per la configurazione della pipeline.
 
 Di seguito è riportato un esempio di codice che è possibile utilizzare per eseguire la funzione cryptString:
 
