@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 2dc278ce-477c-493d-8abb-8bbdf2e988a5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Create una nuova consegna basata sul modello di **[!UICONTROL Tweet (twitter)]**
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Selezione della destinazione principale {#selecting-the-main-target}
+### Selecting the main target {#selecting-the-main-target}
 
 Selezionate gli account a cui desiderate inviare i tweet.
 
@@ -47,11 +47,11 @@ Selezionate gli account a cui desiderate inviare i tweet.
 
    ![](assets/social_twitter_delivery_002.png)
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
-1. Selezionare **[!UICONTROL A Twitter account]**.
+1. Seleziona **[!UICONTROL A Twitter account]**.
 
    ![](assets/social_twitter_delivery_007.png)
 
@@ -79,7 +79,7 @@ Digita il contenuto del tweet nella **[!UICONTROL Content]** scheda.
 
 La **[!UICONTROL Preview]** scheda consente di visualizzare un rendering del tweet.
 
-1.  Fate clic sulla **[!UICONTROL Preview]** scheda.
+1. Fate clic sulla **[!UICONTROL Preview]** scheda.
 1. Fare clic sul **[!UICONTROL Test personalization]** menu a discesa e selezionare **[!UICONTROL Service]**.
 1. Nel **[!UICONTROL Folder]** campo, selezionate la cartella del servizio che contiene il vostro account Twitter.
 1. Scegliete l’account Twitter con cui testare l’anteprima.
@@ -94,7 +94,7 @@ La **[!UICONTROL Preview]** scheda consente di visualizzare un rendering del twe
 
 Il tracciamento può essere visualizzato nei rapporti di consegna e nella **[!UICONTROL Edit > Tracking]** scheda della consegna e del servizio.
 
-La configurazione del tracciamento è la stessa di una distribuzione tramite e-mail. For more on this, refer to [this section](../../delivery/using/monitoring-a-delivery.md).
+La configurazione del tracciamento è la stessa di una distribuzione tramite e-mail. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/monitoring-a-delivery.md).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ La configurazione del tracciamento è la stessa di una distribuzione tramite e-m
 
 Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per ottenere un rendering esatto della pubblicazione su una pagina privata di test Twitter. Per ulteriori informazioni sulla creazione di un account Twitter privato, consultate [Creazione di un account di prova su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare la destinazione della prova sono descritti in [Selezione della destinazione della prova](#selecting-the-target-of-the-proof).
 
-La consegna della prova è identica alle consegne tramite e-mail. Fare riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+La consegna della prova è identica alle consegne tramite e-mail. Fai riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Invio del messaggio {#sending-the-message}
 
@@ -130,15 +130,15 @@ La consegna della prova è identica alle consegne tramite e-mail. Fare riferimen
 
 ### Principio di funzionamento {#operating-principle}
 
-Il **[!UICONTROL Synchronize Twitter accounts]** flusso di lavoro (fare riferimento a [Sincronizzazione account](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)Twitter) recupera l&#39;elenco degli utenti Twitter in modo da poter inviare loro messaggi diretti. I follower recuperati sono memorizzati in una tabella specifica: la tabella dei visitatori. Per visualizzare l&#39;elenco dei follower di Twitter, andate al **[!UICONTROL Profiles and Targets > Visitors]** nodo.
+Il **[!UICONTROL Synchronize Twitter accounts]** flusso di lavoro (fare riferimento a [Sincronizzazione degli account](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)Twitter) recupera l&#39;elenco degli utenti Twitter in modo da poter inviare loro messaggi diretti. I follower recuperati sono memorizzati in una tabella specifica: la tabella dei visitatori. Per visualizzare l&#39;elenco dei follower di Twitter, andate al **[!UICONTROL Profiles and Targets > Visitors]** nodo.
 
 ![](assets/social_twitter_visitors_001.png)
 
 >[!IMPORTANT]
 >
->Affinché il flusso di lavoro possa recuperare l’elenco dei follower di Twitter, la **[!UICONTROL Synchronize Twitter accounts]** casella deve essere selezionata nella schermata Modifica del servizio collegato all’account. Per ulteriori informazioni, consulta: Delega [dell&#39;accesso in scrittura ad Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
+>Affinché il flusso di lavoro possa recuperare l’elenco dei follower di Twitter, la **[!UICONTROL Synchronize Twitter accounts]** casella deve essere selezionata nella schermata Modifica del servizio collegato all’account. Per ulteriori informazioni, consulta: [Delega dell&#39;accesso in scrittura a  Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign).
 
-Per ciascun follower, Adobe Campaign recupera le informazioni seguenti:
+Per ciascun follower,  Adobe Campaign recupera le informazioni seguenti:
 
 * **[!UICONTROL Origin]**: nome del social network (**Twitter** in questo caso)
 * **[!UICONTROL External ID]**: user identifier
@@ -155,7 +155,7 @@ Le seguenti limitazioni sono limitazioni inerenti a Twitter.
 
 * Il messaggio non può contenere più di 140 caratteri.
 * HTML non è supportato.
-* Non è possibile inviare più di 250 messaggi diretti al giorno. Per evitare di superare questa soglia, potete eseguire diverse operazioni. Le consegne nelle onde sono configurate come le consegne tramite e-mail. For more on this, refer to [this section](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+* Non è possibile inviare più di 250 messaggi diretti al giorno. Per evitare di superare questa soglia, potete eseguire diverse operazioni. Le consegne nelle onde sono configurate come le consegne tramite e-mail. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Creazione della consegna {#creating-the-delivery-}
 
@@ -163,7 +163,7 @@ Create una nuova consegna basata sul modello di **[!UICONTROL Tweet (Direct Mess
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Selezione della destinazione principale {#selecting-the-main-target-1}
+### Selecting the main target {#selecting-the-main-target-1}
 
 Seleziona i follower a cui inviare il messaggio diretto.
 
@@ -171,7 +171,7 @@ Seleziona i follower a cui inviare il messaggio diretto.
 
    ![](assets/social_twitter_delivery_016.png)
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/social_twitter_delivery_006.png)
 
@@ -183,9 +183,9 @@ Seleziona i follower a cui inviare il messaggio diretto.
 
       >[!IMPORTANT]
       >
-      >Non è possibile inviare più di 250 messaggi al giorno. Se il vostro account Twitter ha più di 250 follower, consigliamo vivamente di fornire ondate di messaggi. Ciò implica lo stesso processo delle comunicazioni e-mail. Fare riferimento a [questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+      >Non è possibile inviare più di 250 messaggi al giorno. Se il vostro account Twitter ha più di 250 follower, consigliamo vivamente di fornire ondate di messaggi. Ciò implica lo stesso processo delle comunicazioni e-mail. Fai riferimento a [questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
-   * Selezionare **[!UICONTROL Filter conditions]** per definire una query e visualizzarne il risultato. Questa opzione è identica a quella per le comunicazioni e-mail. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md) .
+   * Selezionare **[!UICONTROL Filter conditions]** per definire una query e visualizzarne il risultato. Questa opzione è identica a quella per le consegne tramite e-mail. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md) .
 
       ![](assets/social_twitter_delivery_018.png)
 
@@ -209,4 +209,4 @@ I campi di personalizzazione possono essere utilizzati come per le comunicazioni
 
 ![](assets/social_twitter_delivery_021.png)
 
-La procedura seguente è la stessa per inviare un tweet a un account Twitter. Fate riferimento a [Pubblicazione sui vostri account](#publishing-on-your-twitter-accounts)Twitter.
+La procedura seguente è la stessa per l&#39;invio di un tweet a un account Twitter. Fate riferimento a [Pubblicazione sui vostri account](#publishing-on-your-twitter-accounts)Twitter.
