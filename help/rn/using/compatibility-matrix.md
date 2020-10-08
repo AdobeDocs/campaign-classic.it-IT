@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 6%
+ht-degree: 16%
 
 ---
 
@@ -31,11 +28,11 @@ Questa matrice viene regolarmente aggiornata con l&#39;aggiunta di nuovi element
 
 Salvo diversa indicazione, sono supportate tutte le versioni minori.
 
-Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Poiché versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori,  Adobe Campaign non sarà più compatibile con tali versioni e saranno rimossi dalla nostra matrice di compatibilità nella release successiva del prodotto. Verificare di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
+Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Poiché versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori,  Adobe Campaign non sarà più compatibile con tali versioni e saranno rimossi dalla nostra matrice di compatibilità nella release successiva del prodotto. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
 
 Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../../rn/using/deprecated-features.md).
 
-## Sistemi operativi{#OperatingSystems}
+## Operating Systems{#OperatingSystems}
 
 <table> 
 <tbody> 
@@ -71,7 +68,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 </tbody>
 </table>
 
-## Server Web{#WebServers}
+## Web Servers{#WebServers}
 
 <table>
 <tbody>
@@ -179,7 +176,7 @@ Sono supportati i seguenti driver RDBMS:
 >
 >PostgreSQL è il server di database predefinito per gli ambienti ospitati.
 
-## Connettori CRM{#CRMconnectors}
+## CRM connectors{#CRMconnectors}
 
 <table>
 <tbody>
@@ -368,8 +365,8 @@ Per le integrazioni con  soluzioni di Adobe, consulta questa [sezione](https://d
 
 * [Note sulla versione Campaign Classic](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/release-notes/latest-release.html)
 * [Guida all&#39;installazione](https://docs.adobe.com/content/help/en/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/general-architecture.html)
-* [Funzioni e sistemi obsoleti](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
-* [Procedura di aggiornamento build](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html)
-* [Matrice di compatibilità Campaign Classic per la versione 19.0](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-0.html)
-* [Matrice di compatibilità Campaign Classic per la versione 19.1](https://helpx.adobe.com/campaign/kb/compatibility-matrix-19-1.html)
+* [Funzioni e sistemi obsoleti](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html)
+* [Procedura di aggiornamento build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)
+* [Matrice di compatibilità Campaign Classic per la versione 19.0](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix-19-0.html)
+* [Matrice di compatibilità Campaign Classic per la versione 19.1](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix-19-1.html)
 
