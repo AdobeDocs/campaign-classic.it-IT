@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
 1. **Consegna**
 
-   È possibile:
+   Puoi:
 
    * Agisci sulla consegna specificata nella transizione in entrata. A questo scopo, selezionare la prima opzione della **[!UICONTROL Delivery]** sezione della finestra.
 
@@ -87,7 +87,8 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
    * **[!UICONTROL Prepare]**: questa opzione consente di eseguire l&#39;intero processo di analisi (calcolo di destinazione e preparazione del contenuto). La consegna non viene inviata. Questa azione equivale a selezionare l&#39; **[!UICONTROL Deliver as soon as possible]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale con **[!UICONTROL Analyze]** Consegna ****.
    * **[!UICONTROL Send a proof]**: questa opzione consente di inviare una prova della consegna. Questa azione equivale a fare clic sul **[!UICONTROL Send a proof]** pulsante nella barra degli strumenti di una consegna con **consegna**
    * **[!UICONTROL Prepare and start]**: questa opzione avvia l’intero processo di analisi (calcolo target e preparazione dei contenuti) e invia la distribuzione. Questa azione equivale a fare clic **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** scegliere quando si invia una consegna alla destinazione principale con **Consegna**.
-   L&#39; **[!UICONTROL Act on a delivery]** attività ulteriormente utilizzata nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la distribuzione (calcolo della destinazione, preparazione dei contenuti, distribuzione). Per ulteriori informazioni, consulta Controllo [](../../workflow/using/delivery-control.md)consegna.
+
+   L&#39; **[!UICONTROL Act on a delivery]** attività ulteriormente utilizzata nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la distribuzione (calcolo della destinazione, preparazione dei contenuti, distribuzione). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    Sono inoltre disponibili le seguenti opzioni:
 
@@ -115,8 +116,8 @@ Crea un nuovo flusso di lavoro e aggiungi attività come mostrato nell’immagin
 Aprite l&#39;attività **Consegna** e definite le proprietà come segue:
 
 * Nella **[!UICONTROL Delivery]** sezione, selezionate **[!UICONTROL New, created from a template]** e selezionate un modello di consegna.
-* Nella **[!UICONTROL Recipients]** sezione, selezionare **[!UICONTROL Specified in the delivery]**.
-* Nella **[!UICONTROL Action to execute]** sezione, mantenere l&#39; **[!UICONTROL Prepare]** opzione.
+* In the **[!UICONTROL Recipients]** section, select **[!UICONTROL Specified in the delivery]**.
+* In the **[!UICONTROL Action to execute]** section, keep the **[!UICONTROL Prepare]** option.
 
 ![](assets/new-workflow-param-delivery.png)
 
@@ -131,7 +132,7 @@ Aprite l&#39;attività **Approvazione** e definite le proprietà come segue:
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: rappresenta **[!UICONTROL vars.recCount]** il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, fare riferimento a script e modelli [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: **[!UICONTROL vars.recCount]** rappresenta il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, fare riferimento a script e modelli [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
 
    ![](assets/new-workflow-param-validation.png)
 
