@@ -1,7 +1,7 @@
 ---
-title: '"Casi di utilizzo: web forms"'
-seo-title: '"Casi di utilizzo: web forms"'
-description: '"Casi di utilizzo: web forms"'
+title: '"Casi di utilizzo: moduli web"'
+seo-title: '"Casi di utilizzo: moduli web"'
+description: '"Casi di utilizzo: moduli web"'
 seo-description: null
 page-status-flag: never-activated
 uuid: b2c3f171-325e-4913-a188-a791bad0df2e
@@ -11,19 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Casi di utilizzo: moduli Web{#use-cases-web-forms}
+# Casi di utilizzo: moduli web{#use-cases-web-forms}
 
 ## Creare un modulo di iscrizione con doppio consenso {#create-a-subscription--form-with-double-opt-in}
 
@@ -48,7 +45,7 @@ Questo esempio si basa sullo scenario seguente:
 
 I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a cui viene fatto riferimento a livello di servizio temporaneo.
 
-1. In **[!UICONTROL Explorer]** , selezionare **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Create un modello di consegna per l&#39;invio dei messaggi di conferma dell&#39;iscrizione.
 1. Fate clic sul **[!UICONTROL To]** pulsante in **[!UICONTROL Email parameters]** per associare il modello di consegna alla mappatura di destinazione Iscrizioni anziché ai destinatari.
 
@@ -175,7 +172,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   L’utente viene aggiunto al database del Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto al elenco Bloccati  fino a quando non conferma la propria iscrizione tramite e-mail.
+   L’utente viene aggiunto al database Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto al elenco Bloccati  fino a quando non conferma la propria iscrizione tramite e-mail.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -187,7 +184,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
-    Adobe Campaign, il profilo utente viene aggiornato:
+   In  Adobe Campaign, il profilo utente viene aggiornato:
 
    * non si trovano più nel elenco Bloccati ,
    * sono iscritti al servizio informazioni.
