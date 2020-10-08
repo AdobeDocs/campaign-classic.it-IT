@@ -1,7 +1,7 @@
 ---
-title: Pubblicare, tenere traccia e utilizzare i dati raccolti
-seo-title: Pubblicare, tenere traccia e utilizzare i dati raccolti
-description: Pubblicare, tenere traccia e utilizzare i dati raccolti
+title: Pubblicare, tracciare e utilizzare i dati raccolti
+seo-title: Pubblicare, tracciare e utilizzare i dati raccolti
+description: Pubblicare, tracciare e utilizzare i dati raccolti
 seo-description: null
 page-status-flag: never-activated
 uuid: eac16f2c-0423-4727-a2da-3af1d6c616ec
@@ -11,22 +11,22 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 4%
 
 ---
 
 
-# Pubblicare, tenere traccia e utilizzare i dati raccolti{#publish-track-and-use-collected-data}
+# Pubblicare, tracciare e utilizzare i dati raccolti{#publish-track-and-use-collected-data}
 
 Una volta creato, configurato e pubblicato il modulo, è possibile condividere il collegamento con il pubblico e tenere traccia delle risposte.
 
 >[!NOTE]
 >
->Il ciclo di vita di un sondaggio in Adobe Campaign e le relative modalità di pubblicazione e consegna sono simili a quelli dei moduli Web: sono descritti in [questa sezione](../../web/using/about-web-forms.md).
+>Il ciclo di vita di un sondaggio in  Adobe Campaign e le relative modalità di pubblicazione e consegna sono simili a quelle dei moduli Web: sono descritti in [questa sezione](../../web/using/about-web-forms.md).
 
 ## Pannello di controllo {#survey-dashboard}
 
@@ -46,7 +46,7 @@ Per ciascun sondaggio distribuito, potete tenere traccia delle risposte nella **
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Fate doppio clic su una riga per visualizzare il modulo del sondaggio compilato dal rispondente. Potete consultare il sondaggio nel dettaglio e accedere alle risposte complete. Questi possono essere esportati in un file esterno. Per ulteriori informazioni, consultate [Esportazione delle risposte](#exporting-answers).
+Fate doppio clic su una riga per visualizzare il modulo del sondaggio compilato dal rispondente. Potete consultare il sondaggio nel dettaglio e accedere alle risposte complete. Questi possono essere esportati in un file esterno. For more on this, refer to [Exporting answers](#exporting-answers).
 
 L’origine è indicata nell’URL del sondaggio aggiungendo i seguenti caratteri:
 
@@ -56,7 +56,7 @@ L’origine è indicata nell’URL del sondaggio aggiungendo i seguenti caratter
 
 durante la modifica del sondaggio, il relativo URL contiene il parametro **[!UICONTROL __uuid]**, che indica che si trova in una fase di prova e non è ancora online. Quando accedete al sondaggio tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). L&#39;origine viene forzata al valore **[!UICONTROL Adobe Campaign]**.
 
-Per ulteriori informazioni sui parametri URL, consultate [questa pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+For more on URL parameters, refer to [this page](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Relazioni sulle indagini {#reports-on-surveys}
 
@@ -84,17 +84,17 @@ Altri due rapporti sui sondaggi Web sono disponibili nella **[!UICONTROL Reports
 
 ## Esportazione delle risposte {#exporting-answers}
 
-Le risposte a un sondaggio possono essere esportate in un file esterno da elaborare successivamente. Esistono due modi per farlo:
+Le risposte a un sondaggio possono essere esportate in un file esterno da elaborare in un secondo momento. Esistono due modi per farlo:
 
 1. Esportazione dei dati del rapporto
 
    Per esportare i dati del rapporto, fate clic sul **[!UICONTROL Export]** pulsante e scegliete il formato di esportazione.
 
-   Per ulteriori informazioni sull&#39;esportazione dei dati del rapporto, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+   For more on exporting report data, refer to [this section](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Esportazione delle risposte
 
-   Per esportare le risposte, fate clic sulla **[!UICONTROL Responses]** scheda del sondaggio e fate clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Export...]**.
+   Per esportare le risposte, fate clic sulla **[!UICONTROL Responses]** scheda del sondaggio e fate clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -107,6 +107,7 @@ Le risposte a un sondaggio possono essere esportate in un file esterno da elabor
    * aggiungere colonne al file di output e recuperare le informazioni sul destinatario (memorizzato nel database),
    * formattare i dati esportati,
    * selezionate il formato di codifica per le informazioni nel file.
+
    Se il sondaggio che desiderate esportare contiene diversi **[!UICONTROL Multi-line text]** campi o **[!UICONTROL HTML text]** campi, deve essere esportato in **[!UICONTROL XML]** formato. A questo scopo, selezionare questo formato nell&#39;elenco a discesa del **[!UICONTROL Output format]** campo, come mostrato di seguito:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
@@ -119,7 +120,7 @@ Le risposte a un sondaggio possono essere esportate in un file esterno da elabor
 
 ## Utilizzo dei dati raccolti {#using-the-collected-data}
 
-Le informazioni raccolte tramite indagini online possono essere recuperate nel quadro di un flusso di lavoro di targeting. A questo scopo, utilizzare la **[!UICONTROL Survey responses]** casella.
+Le informazioni raccolte tramite indagini online possono essere recuperate nel quadro di un flusso di lavoro di targeting. To do this, use the **[!UICONTROL Survey responses]** box.
 
 Nell&#39;esempio seguente, vogliamo fare un&#39;offerta Web specialmente per i cinque destinatari con almeno due bambini e con i punteggi più alti in un sondaggio online. Le risposte a questo sondaggio sono:
 
@@ -155,7 +156,7 @@ Modificate la casella di divisione per configurarla:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Selezionate l’ **[!UICONTROL Keep only the first records after sorting]** opzione e selezionate la colonna di ordinamento. Selezionare l&#39; **[!UICONTROL Descending sort]** opzione.
+* Selezionate l’ **[!UICONTROL Keep only the first records after sorting]** opzione e selezionate la colonna di ordinamento. Seleziona l’opzione **[!UICONTROL Descending sort]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
@@ -167,6 +168,6 @@ Modificate la casella di divisione per configurarla:
 
 ## Standardizzazione dei dati {#standardizing-data}
 
-È possibile configurare processi di standardizzazione in Adobe Campaign per i dati raccolti utilizzando gli alias. Questo consente di standardizzare i dati memorizzati nel database: a tal fine, definire gli alias negli elenchi dettagliati che contengono le informazioni pertinenti.
+È possibile impostare processi di standardizzazione in  Adobe Campaign per i dati raccolti utilizzando gli alias. Questo consente di standardizzare i dati memorizzati nel database: a tal fine, definire gli alias negli elenchi dettagliati che contengono le informazioni pertinenti.
 
-For more on this, refer to [this page](../../platform/using/managing-enumerations.md#about-enumerations).
+Per ulteriori informazioni, consulta [questa pagina](../../platform/using/managing-enumerations.md#about-enumerations).
