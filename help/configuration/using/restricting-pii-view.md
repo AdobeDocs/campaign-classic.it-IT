@@ -1,7 +1,7 @@
 ---
-title: Limitazione della visualizzazione PII
-seo-title: Limitazione della visualizzazione PII
-description: Limitazione della visualizzazione PII
+title: Limitazione della vista PII
+seo-title: Limitazione della vista PII
+description: Limitazione della vista PII
 seo-description: null
 page-status-flag: never-activated
 uuid: 4dddc7f5-dac3-47b3-b3cb-92b47eb595fa
@@ -11,20 +11,20 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 550439c1-978c-414e-be5b-a9e1a202c4cd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
 
-# Limitazione della visualizzazione PII{#restricting-pii-view}
+# Limitazione della vista PII{#restricting-pii-view}
 
 ## Panoramica {#overview}
 
-Alcuni clienti hanno bisogno che gli utenti di marketing siano in grado di accedere ai record di dati ma non desiderano che visualizzino informazioni personali (PII), come nome, cognome o indirizzo e-mail. Adobe Campaign propone un modo per proteggere la privacy ed evitare che i dati vengano utilizzati in modo improprio dagli operatori regolari delle campagne.
+Alcuni clienti hanno bisogno che gli utenti di marketing siano in grado di accedere ai record di dati ma non desiderano che visualizzino informazioni personali (PII), come nome, cognome o indirizzo e-mail.  Adobe Campaign propone un modo per proteggere la privacy e impedire che i dati vengano utilizzati in modo improprio dagli operatori regolari delle campagne.
 
 ## Implementazione {#implementation}
 
@@ -57,11 +57,11 @@ Di seguito sono riportate le conseguenze dell&#39;utilizzo di questo attributo i
 * I dati diventeranno di sola lettura in visualizzazione dettagliata.
 * I dati saranno utilizzabili solo all&#39;interno di filtri (il che significa che utilizzando alcune strategie di dicotomia, è ancora possibile indovinare i valori).
 * Qualsiasi espressione creata utilizzando un campo con restrizioni diventa anch&#39;essa soggetta a restrizioni: lower(@email) diventa accessibile come @email.
-* In un flusso di lavoro, puoi aggiungere la colonna con restrizioni alla popolazione di destinazione come colonna aggiuntiva della transizione, ma resta inaccessibile per gli utenti di Adobe Campaign.
-* Durante la memorizzazione della popolazione di destinazione in un gruppo (elenco), le caratteristiche dei campi memorizzati sono le stesse dell&#39;origine dei dati.
+* In un flusso di lavoro, potete aggiungere la colonna con restrizioni alla popolazione di destinazione come una colonna aggiuntiva della transizione, ma resta inaccessibile per  utenti Adobe Campaign.
+* Quando si memorizza la popolazione di destinazione in un gruppo (elenco), le caratteristiche dei campi memorizzati sono le stesse dell&#39;origine dei dati.
 * Per impostazione predefinita, i dati non sono accessibili al codice JS.
 
-## Recommendations {#recommendations}
+## Raccomandazioni {#recommendations}
 
 In ogni consegna, gli indirizzi e-mail vengono copiati nelle **[!UICONTROL broadLog]** e nelle **[!UICONTROL forecastLog]** tabelle: di conseguenza, anche questi campi devono essere protetti.
 
