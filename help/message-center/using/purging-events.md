@@ -1,7 +1,7 @@
 ---
-title: Rimozione degli eventi
-seo-title: Rimozione degli eventi
-description: Rimozione degli eventi
+title: Rimozione di eventi
+seo-title: Rimozione di eventi
+description: Rimozione di eventi
 seo-description: null
 page-status-flag: never-activated
 uuid: bbce6813-dfa8-418c-9b52-06e814c15265
@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2f643080-93b4-4c9f-80cf-b1770b149e6c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 8%
 
 ---
 
 
-# Rimozione degli eventi{#purging-events}
+# Rimozione di eventi{#purging-events}
 
 È possibile utilizzare la procedura guidata di distribuzione per configurare per quanto tempo i dati devono essere memorizzati nel database.
 
