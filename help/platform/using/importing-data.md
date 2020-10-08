@@ -11,26 +11,26 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4142'
+ht-degree: 1%
 
 ---
 
 
 # Importazione di dati{#importing-data}
 
-Adobe Campaign consente di importare dati nel database da uno o più file in formato testo, CSV, TAB o XML. Questi file sono associati a una tabella (principale o collegata) e ogni campo dei file di origine è associato a un campo del database. La configurazione di importazione può essere salvata per essere riutilizzata in modo da poter pianificare le attività di importazione che automatizzeranno le operazioni di replica.
+ Adobe Campaign consente di importare dati nel database da uno o più file in formato testo, CSV, TAB o XML. Questi file sono associati a una tabella (principale o collegata) e ogni campo dei file di origine è associato a un campo del database. La configurazione di importazione può essere salvata per essere riutilizzata in modo da poter pianificare le attività di importazione che automatizzeranno le operazioni di replica.
 
 >[!NOTE]
 >
 >È possibile importare i dati senza mapparli con i dati del database utilizzando la **[!UICONTROL Import a list]** funzione.
-> 
->I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro attraverso l&#39; **[!UICONTROL Read list]** oggetto. For more on this, refer to [this page](../../workflow/using/read-list.md).
 >
->Per ulteriori informazioni, guardate il video sull’ [importazione dei profili](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) .
+>I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro attraverso l&#39; **[!UICONTROL Read list]** oggetto. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/read-list.md).
+>
+>Per ulteriori informazioni, guardate il video sull’ [importazione dei profili](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/importing-profiles.html) .
 
 ## Struttura dei dati da importare {#structure-of-the-data-to-import}
 
@@ -38,13 +38,13 @@ Nel file di origine, ogni riga coincide con un record. I dati contenuti nei reco
 
 ## Procedura guidata di importazione {#import-wizard}
 
-La procedura guidata di importazione consente di configurare l’importazione, definirne le opzioni (come la trasformazione dei dati) e avviare l’esecuzione. È una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell&#39;operatore.
+La procedura guidata di importazione consente di configurare l’importazione, definirne le opzioni (come la trasformazione dei dati) e avviare l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell&#39;operatore.
 
 >[!NOTE]
 >
 >Se utilizzate un server Web IIS, potrebbe essere necessaria una configurazione per autorizzare il caricamento di file di grandi dimensioni (>28 MB).
 >
->For more information, refer to [this section](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
+>Per ulteriori informazioni, consulta [questa sezione](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
 
 ### Passaggio 1 - Scelta del modello di importazione {#step-1---choosing-the-import-template}
 
@@ -60,7 +60,7 @@ Quando si avvia la procedura guidata di importazione, è innanzitutto necessario
    Il modello nativo è **[!UICONTROL New text import]**. Questo modello non deve essere modificato, ma può essere duplicato per configurare un nuovo modello in base ai requisiti. Per impostazione predefinita, i modelli di importazione vengono salvati nel **[!UICONTROL Profiles and targets > Templates > Job templates]** nodo.
 
 1. Immettete un nome per l’importazione nel **[!UICONTROL Label]** campo. Potete aggiungere una descrizione.
-1. Selezionate il tipo di importazione nel campo appropriato. Esistono due tipi di importazione possibili: **[!UICONTROL Simple import]** importare un solo file e **[!UICONTROL Multiple import]** importare più file in una singola esecuzione.
+1. Selezionate il tipo di importazione nel campo appropriato. Esistono due tipi di importazione possibili: **[!UICONTROL Simple import]** per importare un solo file e **[!UICONTROL Multiple import]** importare più file in una singola esecuzione.
 
    Per un’importazione multipla, selezionate **[!UICONTROL Multiple import]** dall’elenco a **[!UICONTROL Import type]** discesa nella prima schermata della procedura guidata di importazione.
 
@@ -92,7 +92,7 @@ Il **[!UICONTROL Advanced parameters]** collegamento consente di accedere alle s
 
    * **[!UICONTROL Start the job in a detached process]**
 
-      Questa opzione è selezionata per impostazione predefinita. Consente di scollegare l’esecuzione dell’importazione in modo da non influenzare altri processi in corso nel database.
+      Questa opzione è selezionata per impostazione predefinita. Consente di scollegare l’esecuzione dell’importazione in modo che non influisca sugli altri processi in corso nel database.
 
    * **[!UICONTROL Do not update enumerations]**
 
@@ -108,13 +108,13 @@ Il **[!UICONTROL Advanced parameters]** collegamento consente di accedere alle s
 
 ### Passaggio 2 - Selezione del file di origine {#step-2---source-file-selection}
 
-Il file sorgente può essere in formato testo (txt, csv, tab, fixed Columns) o xml.
+Il file di origine può essere in formato testo (txt, csv, tab, fixed Columns) o xml.
 
-Per impostazione predefinita, **[!UICONTROL Upload file on the server]** è selezionata. Fare clic sulla cartella a destra del **[!UICONTROL Local file]** campo per sfogliare il disco locale e selezionare il file da importare. Potete deselezionare questa opzione per immettere il percorso di accesso e il nome del file da importare, se presente sul server.
+By default, **[!UICONTROL Upload file on the server]** is selected. Fare clic sulla cartella a destra del **[!UICONTROL Local file]** campo per sfogliare il disco locale e selezionare il file da importare. Potete deselezionare questa opzione per immettere il percorso di accesso e il nome del file da importare, se presente sul server.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
-Quando il file è stato specificato, è possibile visualizzarne i dati nella sezione inferiore della finestra facendo clic **[!UICONTROL Auto-detect format]**. Questa anteprima mostra le prime 200 righe del file sorgente.
+Quando il file è stato specificato, è possibile visualizzarne i dati nella sezione inferiore della finestra facendo clic su **[!UICONTROL Auto-detect format]**. Questa anteprima mostra le prime 200 righe del file sorgente.
 
 ![](assets/s_ncs_user_import_wizard02_2.png)
 
@@ -163,11 +163,11 @@ Fare clic **[!UICONTROL OK]** per salvare la formattazione, quindi fare clic **[
    >
    >La trasformazione viene applicata al momento dell&#39;importazione. Tuttavia, se sono stati definiti vincoli per il campo di destinazione (nell&#39;esempio precedente, nel campo @lastname), tali vincoli hanno la priorità.
 
-* È possibile aggiungere campi calcolati utilizzando l&#39;icona appropriata, a destra della tabella centrale. I campi calcolati consentono di eseguire trasformazioni complesse, aggiungere colonne virtuali o unire i dati di più colonne. Per informazioni dettagliate sulle varie possibilità, consultare le sezioni seguenti.
+* È possibile aggiungere campi calcolati utilizzando l&#39;icona appropriata, a destra della tabella centrale. I campi calcolati consentono di eseguire trasformazioni complesse, aggiungere colonne virtuali o unire i dati di più colonne. Per informazioni dettagliate sulle varie possibilità, fare riferimento alle sezioni seguenti.
 
 #### Campi calcolati {#calculated-fields}
 
-I campi calcolati sono nuove colonne aggiunte al file di origine e calcolate da altre colonne. I campi calcolati possono quindi essere associati ai campi del database Adobe Campaign. Le operazioni di riconciliazione, tuttavia, non sono possibili sui campi calcolati.
+I campi calcolati sono nuove colonne aggiunte al file di origine e calcolate da altre colonne. I campi calcolati possono quindi essere associati ai campi del database Adobe Campaign . Le operazioni di riconciliazione, tuttavia, non sono possibili sui campi calcolati.
 
 Esistono quattro tipi di campi calcolati:
 
@@ -188,7 +188,7 @@ Il passaggio di riconciliazione della procedura guidata di importazione consente
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
-La sezione centrale della schermata contiene una struttura ad albero con i campi e le tabelle del database Adobe Campaign in cui verranno importati i dati.
+La sezione centrale della schermata contiene una struttura ad albero con i campi e le tabelle del database Adobe Campaign  a cui verranno importati i dati.
 
 Sono disponibili opzioni speciali per ciascun nodo (tabella o campo). Quando si fa clic sul nodo interessato nell&#39;elenco, i relativi parametri e una breve descrizione sono visualizzati di seguito. Il comportamento definito per ciascun elemento viene visualizzato nella **[!UICONTROL Behavior]** colonna corrispondente.
 
@@ -198,7 +198,7 @@ Sono disponibili opzioni speciali per ciascun nodo (tabella o campo). Quando si 
 
 Per ogni tabella interessata dall&#39;importazione, è necessario definire il tipo di operazione. Per l&#39;elemento principale del database sono disponibili le seguenti operazioni:
 
-* **[!UICONTROL Update or insertion]**: aggiorna il record se esiste nel database e lo crea in caso contrario.
+* **[!UICONTROL Update or insertion]**: aggiorna il record, se presente nel database, e lo crea in caso contrario.
 * **[!UICONTROL Insertion]**: inserisce i record nel database.
 * **[!UICONTROL Update]**: aggiorna solo i record esistenti (ignora gli altri record).
 * **[!UICONTROL Reconciliation only]**: cerca il record nel database, ma non esegue un aggiornamento. Ad esempio, consente di associare la cartella dei destinatari da importare in base a una colonna del file senza aggiornare i dati nelle cartelle.
@@ -232,7 +232,7 @@ evitare di scegliere un campo che potrebbe essere modificato durante l&#39;impor
 >
 >Pertanto, la riconciliazione viene eseguita solo su questa cartella (a meno che non sia selezionata alcuna cartella).
 
-#### Deduplicazione {#deduplication}
+#### Deduplication {#deduplication}
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Il **[!UICONTROL Management of doubles]** campo consente di configurare la dedup
 >
 >La deduplicazione viene eseguita solo in memoria. Le dimensioni di un&#39;importazione con deduplicazione sono pertanto limitate. Il limite dipende da diversi parametri (capacità del server applicazione, attività, numero di campi nella chiave, ecc.). La dimensione massima per una deduplicazione è dell&#39;ordine di 1.000.000 righe.
 
-La deduplicazione riguarda un record presente sia nel file di origine che nel database. Riguarda solo le operazioni con aggiornamento (cioè **[!UICONTROL Update and insertion]** o **[!UICONTROL Update]**). L&#39; **[!UICONTROL Duplicate management]** opzione consente di aggiornare o ignorare il record se si trova sia nel file di origine che nel database. L&#39; **[!UICONTROL Update or insert based on origin]** opzione appartiene al modulo facoltativo e non può essere utilizzata in un contesto standard.
+La deduplicazione riguarda un record presente sia nel file di origine che nel database. Riguarda solo le operazioni con aggiornamento (ossia **[!UICONTROL Update and insertion]** o **[!UICONTROL Update]**). L&#39; **[!UICONTROL Duplicate management]** opzione consente di aggiornare o ignorare il record se si trova sia nel file di origine che nel database. L&#39; **[!UICONTROL Update or insert based on origin]** opzione appartiene al modulo facoltativo e non può essere utilizzata in un contesto standard.
 
 Le opzioni **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** funzionano come illustrato sopra.
 
@@ -292,7 +292,7 @@ Il passaggio successivo della procedura guidata di importazione consente di sele
 
 >[!NOTE]
 >
->Questo passaggio viene visualizzato solo quando si importano i destinatari e quando si utilizza la tabella dei destinatari predefinita di Adobe Campaign (**nms:destinatario**).
+>Questo passaggio viene visualizzato solo quando si importano i destinatari e quando si utilizza la tabella predefinita  destinatari Adobe Campaign (**nms:destinatario**).
 
 * Fate clic sui **[!UICONTROL Edit]** collegamenti per selezionare la cartella, l’elenco o il servizio al quale desiderate associare o sottoscrivere i destinatari.
 
@@ -308,7 +308,7 @@ Il passaggio successivo della procedura guidata di importazione consente di sele
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Per creare una nuova cartella, selezionate il nodo da cui desiderate aggiungere una cartella e fate clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Create a new 'Recipients' folder]**.
+      Per creare una nuova cartella, selezionate il nodo da cui desiderate aggiungere una cartella e fate clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Create a new 'Recipients' folder]**.
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
@@ -342,7 +342,7 @@ Fare clic **[!UICONTROL Next]** per convalidare questo passaggio e visualizzare 
 
 ### Passaggio 6 - Avvio dell&#39;importazione {#step-6---launching-the-import}
 
-L&#39;ultimo passaggio della procedura guidata consente di avviare l&#39;importazione dei dati. A tale scopo, fare clic sul **[!UICONTROL Start]** pulsante.
+L&#39;ultimo passaggio della procedura guidata consente di avviare l&#39;importazione dei dati. To do this, click the **[!UICONTROL Start]** button.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
@@ -358,7 +358,7 @@ Lo stato del processo indica lo stato corrente di un processo. Ogni stato è rap
 
 * **Esecuzione in corso**
 
-   Il processo viene eseguito.
+   Il processo è in esecuzione.
 
 * **Annulla**
 
@@ -386,7 +386,7 @@ Lo stato del processo indica lo stato corrente di un processo. Ogni stato è rap
 
 * **Arresto del server in corso**
 
-   Il processo in corso viene interrotto a causa della chiusura del server Adobe Campaign.
+   Il processo in corso viene interrotto perché il server Adobe Campaign  è stato arrestato.
 
 ## Esempi di importazione generici {#generic-import-samples}
 
@@ -396,7 +396,7 @@ Per creare e fornire un elenco di destinatari dalla panoramica degli elenchi, pr
 
 1. Creazione dell’elenco
 
-   * Fai clic sul **[!UICONTROL Lists]** collegamento nel **[!UICONTROL Profiles and targets]** menu della home page di Adobe Campaign.
+   * Fate clic sul **[!UICONTROL Lists]** collegamento nel **[!UICONTROL Profiles and targets]** menu della home page di  Adobe Campaign.
    * Fare clic sul pulsante **[!UICONTROL Create]** e quindi sul **[!UICONTROL Import a list]** pulsante.
 
 1. Selezione del file da importare
@@ -419,14 +419,14 @@ Per creare e fornire un elenco di destinatari dalla panoramica degli elenchi, pr
 
 ### Esempio: importare nuovi record da un file di testo {#example--import-new-records-from-a-text-file-}
 
-Per importare i nuovi profili dei destinatari memorizzati in un file di testo nel database Adobe Campaign, effettua i seguenti passaggi:
+Per importare nel database Adobe Campaign  nuovi profili di destinatari memorizzati in un file di testo, procedere come segue:
 
 1. Scelta di un modello
 
-   * Dalla home page di Adobe Campaign, fai clic sul **[!UICONTROL Profiles and targets]** collegamento, quindi **[!UICONTROL Jobs]**. Sopra l’elenco dei processi, fate clic su **[!UICONTROL New import]**.
+   * Dalla home page di  Adobe Campaign, fate clic sul **[!UICONTROL Profiles and targets]** collegamento, quindi **[!UICONTROL Jobs]**. Sopra l’elenco dei processi, fate clic su **[!UICONTROL New import]**.
    * Mantenere il **[!UICONTROL New text import]** modello selezionato per impostazione predefinita.
-   * Modificare l’etichetta e la descrizione.
-   * Selezionare **[!UICONTROL Simple import]**.
+   * Modificate l’etichetta e la descrizione.
+   * Seleziona **[!UICONTROL Simple import]**.
    * Mantenete la cartella di processo predefinita.
    * Fate clic su **[!UICONTROL Advanced parameters]** e selezionate l’ **[!UICONTROL Tracking mode]** opzione per visualizzare i dettagli dell’importazione durante l’esecuzione.
 
@@ -442,7 +442,7 @@ Per importare i nuovi profili dei destinatari memorizzati in un file di testo ne
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. Riconciliazione
+1. Reconciliation
 
    * Vai alla tabella **Destinatari (nms:destinatario)** .
    * Selezionare l&#39; **[!UICONTROL Insertion]** operazione e lasciare i valori predefiniti negli altri campi.
@@ -457,7 +457,7 @@ Per importare i nuovi profili dei destinatari memorizzati in un file di testo ne
 
 1. Avvio dell&#39;importazione
 
-   * Clic **[!UICONTROL Start]**.
+   * Fai clic su **[!UICONTROL Start]**.
 
       Nell’area centrale dell’editor, potete verificare che l’operazione di importazione sia stata completata e visualizzare il numero di record elaborati.
 
@@ -493,7 +493,7 @@ Vogliamo aggiornare i record esistenti nel database e crearne di nuovi da un fil
 
    Applicate la procedura descritta nell&#39;esempio 2 precedente.
 
-1. Riconciliazione
+1. Reconciliation
 
    * Mantieni **[!UICONTROL Update or insert]** selezionato per impostazione predefinita.
    * Mantenere l&#39;opzione **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** modalità in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
@@ -503,9 +503,9 @@ Vogliamo aggiornare i record esistenti nel database e crearne di nuovi da un fil
 
 1. Avvio dell&#39;importazione
 
-   * Clic **[!UICONTROL Start]**.
+   * Fai clic su **[!UICONTROL Start]**.
 
-      Nella finestra di tracciamento potete verificare che l’importazione sia riuscita e visualizzare il numero di record elaborati.
+      Nella finestra di tracciamento, puoi verificare che l’importazione sia riuscita e visualizzare il numero di record elaborati.
 
       ![](assets/s_ncs_user_import_example06_02.png)
 
@@ -543,7 +543,7 @@ Effettuate le seguenti operazioni:
 
    Nell&#39;anteprima delle prime righe del file, è possibile vedere che il file contiene aggiornamenti per alcuni record.
 
-1. Riconciliazione
+1. Reconciliation
 
    * Passate alla tabella e selezionate l&#39; **[!UICONTROL Update]** operazione.
    * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il **[!UICONTROL Management of doubles]** campo.
@@ -556,7 +556,7 @@ Effettuate le seguenti operazioni:
 
 1. Avvio dell&#39;importazione
 
-   Clic **[!UICONTROL Start]**.
+   Fai clic su **[!UICONTROL Start]**.
 
    Consultare la tabella dei destinatari per verificare che i record siano stati modificati dall&#39;importazione.
 
@@ -592,7 +592,7 @@ In questo esempio, alcuni campi nel file di testo hanno un valore vuoto, mentre 
 
    Applicate la procedura descritta nell&#39;esempio 2 precedente.
 
-1. Riconciliazione
+1. Reconciliation
 
    * Vai alla tabella e seleziona **[!UICONTROL Update]**.
    * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il **[!UICONTROL Management of doubles]** campo.
@@ -604,7 +604,7 @@ In questo esempio, alcuni campi nel file di testo hanno un valore vuoto, mentre 
 
 1. Avvio dell&#39;importazione
 
-   * Clic **[!UICONTROL Start]**.
+   * Fai clic su **[!UICONTROL Start]**.
    * Consultare la tabella dei destinatari per verificare che i record siano stati modificati dall&#39;operazione.
 
       ![](assets/s_ncs_user_import_example06_06.png)
