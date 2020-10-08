@@ -1,7 +1,7 @@
 ---
-title: Come configurare i collegamenti tracciati
-seo-title: Come configurare i collegamenti tracciati
-description: Come configurare i collegamenti tracciati
+title: Come configurare collegamenti tracciati
+seo-title: Come configurare collegamenti tracciati
+description: Come configurare collegamenti tracciati
 seo-description: null
 page-status-flag: never-activated
 uuid: 0fb41a43-8a84-4a61-bf93-97e1d448a5ec
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 
-# Come configurare i collegamenti tracciati{#how-to-configure-tracked-links}
+# Come configurare collegamenti tracciati{#how-to-configure-tracked-links}
 
-Per ogni consegna, puoi tenere traccia della ricezione dei messaggi e dell&#39;attivazione dei collegamenti inseriti nel contenuto del messaggio. In questo modo puoi tenere traccia del comportamento dei destinatari in seguito alle azioni di consegna a cui sono stati assegnati.
+Per ogni consegna, puoi tracciare la ricezione dei messaggi e l’attivazione dei collegamenti inseriti nel contenuto del messaggio. In questo modo puoi tracciare il comportamento dei destinatari in seguito alle azioni di consegna per le quali sono stati oggetto di targeting.
 
 >[!NOTE]
 >
