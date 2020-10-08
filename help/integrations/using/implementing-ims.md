@@ -11,30 +11,30 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: 3999577b-0460-4898-a4ec-a7b0e5002065
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
 
-# Implementazione di IMS{#implementing-ims}
+# Implementing IMS{#implementing-ims}
 
-## Attivazione della connessione IMS {#enabling-the-ims-connection}
+## Abilitazione della connessione IMS {#enabling-the-ims-connection}
 
 1. Per abilitare la connessione tramite IMS, controllate **[!UICONTROL Connect with an Adobe ID]** nella finestra delle connessioni della console.
 
    ![](assets/ims_1.png)
 
-1. Immettete il vostro Adobe ID e la password. Viene visualizzata la schermata iniziale di Adobe Campaign.
+1. Inserite il vostro Adobe ID  e la password. Viene visualizzata la schermata iniziale  Adobe Campaign.
 
    ![](assets/ims_2.png)
 
 ## Disattivazione della connessione IMS {#disabling-the-ims-connection}
 
-Per disattivare la connessione tramite l&#39;Adobe ID, disconnettetevi, fate clic **[!UICONTROL File > Connections]** e deselezionate **[!UICONTROL Connect with an Adobe ID]**.
+Per disattivare la connessione tramite l&#39;Adobe ID , disconnettetevi, fate clic **[!UICONTROL File > Connections]** e deselezionate **[!UICONTROL Connect with an Adobe ID]**.
 
 ![](assets/ims_4.png)
 
