@@ -1,7 +1,7 @@
 ---
-title: Download Web
-seo-title: Download Web
-description: Download Web
+title: Download web
+seo-title: Download web
+description: Download web
 seo-description: null
 page-status-flag: never-activated
 uuid: 44039e9c-0cd8-4d3f-b73f-e01c5343835a
@@ -11,27 +11,24 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 8590cc75-11c8-450d-90e8-56744e12ac70
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Download Web{#web-download}
+# Download web{#web-download}
 
-L&#39;attività di download **** Web avvia il download di un file su un URL esplicito, un account esterno o un&#39;istanza di Adobe Campaign. Viene utilizzato il protocollo HTTP. Può trattarsi di un download GET o POST.
+L&#39;attività di download **** Web avvia il download di un file su un URL esplicito, un account esterno o un&#39;istanza Adobe Campaign . Viene utilizzato il protocollo HTTP. Può trattarsi di un download di GET o POST.
 
-## Proprietà {#properties}
+## Properties {#properties}
 
 1. **Selezione del file Web**
 
-   Per specificare il file da scaricare, puoi immettere l&#39;URL del file, utilizzare l&#39;account HTTP esterno in cui il file è memorizzato oppure caricare il file tramite un&#39;istanza di Adobe Campaign. I parametri disponibili sono descritti di seguito:
+   Per specificare il file da scaricare, potete immettere l&#39;URL del file, utilizzare l&#39;account HTTP esterno in cui è memorizzato il file oppure caricare il file tramite un&#39;istanza Adobe Campaign . I parametri disponibili sono descritti di seguito:
 
    * Per immettere direttamente l&#39;URL del file da scaricare, selezionate l&#39; **[!UICONTROL Explicit URL]** opzione e specificate l&#39;URL nel campo appropriato. Questo URL può essere costruito con dati variabili.
 
@@ -39,11 +36,11 @@ L&#39;attività di download **** Web avvia il download di un file su un URL espl
 
    * Per utilizzare un account, **[!UICONTROL External account]** selezionatelo dall&#39;elenco a discesa e specificate il file da scaricare.
 
-      Gli account esterni sono configurati dal **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign. I parametri dell&#39;account possono essere modificati tramite l&#39; **[!UICONTROL Edit link]** icona .
+      Gli account esterni sono configurati dal **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign . I parametri dell&#39;account possono essere modificati tramite l&#39; **[!UICONTROL Edit link]** icona .
 
       ![](assets/download_web_edit_external.png)
 
-   * Per scaricare il file dall&#39;istanza di Adobe Campaign, seleziona l&#39; **[!UICONTROL Adobe Campaign Instance]** opzione.
+   * Per scaricare il file dall&#39;istanza di Adobe Campaign , selezionate l&#39; **[!UICONTROL Adobe Campaign Instance]** opzione.
 
       ![](assets/download_web_edit_instance.png)
 
@@ -55,9 +52,10 @@ L&#39;attività di download **** Web avvia il download di un file su un URL espl
 
    Sono disponibili le seguenti opzioni:
 
-   * **[!UICONTROL Use a default storage directory]**: il file viene sempre spostato prima di essere elaborato. Se questa opzione è selezionata, il file viene spostato nella directory di memorizzazione predefinita (la directory **vars** della cartella di installazione di Adobe Campaign). Per specificare una directory di memorizzazione, deselezionare la casella e immettere il percorso nel **[!UICONTROL Storage directory]** campo
+   * **[!UICONTROL Use a default storage directory]**: il file viene sempre spostato prima di essere elaborato. Se questa opzione è selezionata, il file viene spostato nella directory di memorizzazione predefinita (la directory **vars** della cartella di installazione  Adobe Campaign). Per specificare una directory di memorizzazione, deselezionare la casella e immettere il percorso nel **[!UICONTROL Storage directory]** campo
    * **[!UICONTROL Number of files]**: immettere il numero massimo di file da conservare nella directory di memorizzazione.
    * **[!UICONTROL Maximum size (in Mb)]**: immettete la capacità massima della directory di memorizzazione (in megabyte).
+
    Ogni file viene conservato per 24 ore prima di essere sottoposto alle regole di eliminazione definite. La rimozione avviene appena prima dell&#39;inizio dell&#39;attività e non tiene conto del file del flusso di lavoro in corso.
 
    I file vengono eliminati in funzione della loro età (dal più vecchio al più recente). I file meno recenti vengono eliminati finché non vengono verificate entrambe le regole di eliminazione. Di conseguenza, se viene definito un limite di 100 file, la directory di memorizzazione conterrà sempre i 100 file più recenti prima dell’inizio del flusso di lavoro, nonché quelli in fase di elaborazione nel flusso di lavoro in corso.
