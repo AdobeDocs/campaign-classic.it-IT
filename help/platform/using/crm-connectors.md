@@ -1,7 +1,7 @@
 ---
-title: Connettori CRM
-seo-title: Connettori CRM
-description: Connettori CRM
+title: Connettori di gestione delle relazioni con i clienti
+seo-title: Connettori di gestione delle relazioni con i clienti
+description: Connettori di gestione delle relazioni con i clienti
 seo-description: null
 page-status-flag: never-activated
 uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
@@ -11,25 +11,22 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2541'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Connettori CRM{#crm-connectors}
+# Connettori di gestione delle relazioni con i clienti{#crm-connectors}
 
 ## Informazioni sui connettori CRM {#about-crm-connectors}
 
- Adobe Campaign fornisce diversi connettori CRM per collegare la piattaforma del Adobe Campaign  ai sistemi di terze parti. Questi connettori CRM consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l&#39;integrazione dell&#39;applicazione con diverse applicazioni di terze parti e aziendali.
+Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i clienti per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori di gestione delle relazioni con i clienti ti consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l’integrazione dell’applicazione con varie applicazioni di terze parti e aziendali.
 
-Questi connettori consentono un&#39;integrazione rapida e semplice dei dati:  Adobe Campaign fornisce una procedura guidata dedicata per la raccolta e la selezione tra le tabelle disponibili in CRM. Questo garantisce la sincronizzazione bidirezionale per garantire che i dati siano sempre aggiornati in tutti i sistemi.
+Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe Campaign offre una procedura guidata dedicata per la raccolta e la selezione dalle tabelle disponibili nella gestione delle relazioni con i clienti. Ciò garantisce la sincronizzazione bidirezionale per far sì che i dati siano sempre aggiornati in tutti i sistemi.
 
 >[!NOTE]
 >
@@ -41,7 +38,7 @@ La connessione a CRM viene eseguita tramite attività di flusso di lavoro dedica
 
 I CRM elencati di seguito possono essere integrati  Adobe Campaign.
 
-Le versioni supportate sono descritte dettagliatamente nella matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+Le versioni supportate sono descritte dettagliatamente nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
 
 * **Salesforce.com**
 
@@ -55,7 +52,7 @@ Le versioni supportate sono descritte dettagliatamente nella matrice [di](https:
    >    
    >    * Le istanze di produzione di prova sono supportate.
    >    * Le regole di assegnazione sono supportate.
-   >    * Le enumerazioni di selezione multipla non sono supportate dal Adobe Campaign .
+   >    * Le enumerazioni di selezione multiple non sono supportate da  Adobe Campaign.
 
 
 * **Oracle On Demand**
@@ -64,21 +61,21 @@ Le versioni supportate sono descritte dettagliatamente nella matrice [di](https:
 
    >[!IMPORTANT]
    >
-   >Durante la connessione  Adobe Campaign con Oracle On Demand, le limitazioni sono:
+   >Quando si collega  Adobe Campaign a Oracle On Demand, le limitazioni sono:
    >
    >    
    >    
-   >    *  Adobe Campaign può sincronizzare qualsiasi oggetto disponibile nei modelli standard di Oracle On Demand. Se in Oracle On Demand sono state aggiunte tabelle personalizzate, queste non verranno recuperate  Adobe Campaign.
+   >    *  Adobe Campaign può sincronizzare qualsiasi oggetto disponibile nei modelli standard di Oracle On Demand. Se in Oracle On Demand sono state aggiunte tabelle personalizzate, queste non verranno recuperate in  Adobe Campaign.
    >    * La versione API v1.0 consente di ordinare o filtrare i dati durante una query, ma non di eseguire entrambe le operazioni contemporaneamente.
    >    * Le date inviate da Oracle On Demand non contengono informazioni sul fuso orario.
-   >    * Le enumerazioni di selezione multipla non sono supportate dal Adobe Campaign .
+   >    * Le enumerazioni di selezione multiple non sono supportate da  Adobe Campaign.
 
 
 * **MS Dynamics CRM** e **MS Dynamics Online**
 
    Fare riferimento a [questa sezione](#example-for-microsoft-dynamics) per informazioni su come impostare la connessione con Microsoft Dynamics.
 
-   Scopri  casi di utilizzo dell’integrazione con Microsoft Dynamics e Adobe Campaign in [questo video](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+   Scopri  casi di utilizzo dell’integrazione con Adobe Campaign e Microsoft Dynamics in [questo video](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
    >[!IMPORTANT]
    >
@@ -87,7 +84,7 @@ Le versioni supportate sono descritte dettagliatamente nella matrice [di](https:
    >    
    >    
    >    * L&#39;installazione dei plug-in può modificare il comportamento di CRM, il che può causare problemi di compatibilità con  Adobe Campaign.
-   >    * Le enumerazioni di selezione multipla non sono supportate dal Adobe Campaign .
+   >    * Le enumerazioni di selezione multiple non sono supportate da  Adobe Campaign.
 
 
 ## Configurazione della connessione {#setting-up-the-connection}
@@ -107,7 +104,7 @@ Per utilizzare i connettori CRM in  Adobe Campaign, attenetevi alla seguente pro
 
 Per configurare il connettore **Salesforce.com** con  Adobe Campaign, procedere come segue:
 
-1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura  Adobe Campaign.
+1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign .
 1. Eseguire la procedura guidata di configurazione per generare le tabelle CRM disponibili.
 
    ![](assets/crm_connectors_sfdc_wz.png)
@@ -120,17 +117,17 @@ Per configurare il connettore **Salesforce.com** con  Adobe Campaign, procedere 
 
    >[!NOTE]
    >
-   >Per approvare la configurazione, dovete disconnettervi e tornare alla console del Adobe Campaign .
+   >Per approvare la configurazione, dovete disconnettervi e tornare alla  console Adobe Campaign.
 
 1. Controllare lo schema generato in  Adobe Campaign nel **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
 
    ![](assets/crm_connectors_sfdc_table.png)
 
-1. Una volta creato lo schema, è possibile sincronizzare le enumerazioni automaticamente tramite CRM al Adobe Campaign .
+1. Una volta creato lo schema, puoi sincronizzare automaticamente le enumerazioni tramite CRM a  Adobe Campaign.
 
-   A questo scopo, fai clic sul **[!UICONTROL Synchronizing enumerations...]** collegamento e seleziona l&#39;enumerazione del Adobe Campaign  che corrisponde all&#39;enumerazione CRM.
+   A questo scopo, fai clic sul **[!UICONTROL Synchronizing enumerations...]** collegamento e seleziona l&#39;enumerazione Adobe Campaign  che corrisponde all&#39;enumerazione CRM.
 
-   Puoi sostituire tutti i valori di un&#39;enumerazione di Adobe Campaign  con quelli di CRM: a questo scopo, selezionate **[!UICONTROL Yes]** nella **[!UICONTROL Replace]** colonna.
+   Puoi sostituire tutti i valori di un&#39;enumerazione Adobe Campaign  con quelli di CRM: a questo scopo, selezionate **[!UICONTROL Yes]** nella **[!UICONTROL Replace]** colonna.
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -140,7 +137,7 @@ Per configurare il connettore **Salesforce.com** con  Adobe Campaign, procedere 
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
-1. Per importare i dati Salesforce o per esportare  dati di Adobe Campaign in Salesforce, è necessario creare un flusso di lavoro e utilizzare l&#39; **[!UICONTROL CRM connector]** attività.
+1. Per importare i dati Salesforce o per esportare  dati Adobe Campaign in Salesforce, è necessario creare un flusso di lavoro e utilizzare l&#39; **[!UICONTROL CRM connector]** attività.
 
    ![](assets/crm_connectors_sfdc_wf.png)
 
@@ -148,7 +145,7 @@ Per configurare il connettore **Salesforce.com** con  Adobe Campaign, procedere 
 
 Per configurare il connettore **Oracle On Demand** in modo che funzioni con  Adobe Campaign, procedere come segue:
 
-1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura  Adobe Campaign.
+1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign .
 
    ![](assets/crm_connectors_ood_1.png)
 
@@ -170,13 +167,13 @@ Per configurare il connettore **Oracle On Demand** in modo che funzioni con  Ado
 
    ![](assets/crm_connectors_ood_5.png)
 
-   Questo flusso di lavoro importa i contatti tramite Oracle On Demand, li sincronizza con i dati del Adobe Campaign  esistente, elimina i contatti duplicati e aggiorna il database del Adobe Campaign .
+   Questo flusso di lavoro importa i contatti tramite Oracle On Demand, li sincronizza con i dati Adobe Campaign  esistenti, elimina i contatti duplicati e aggiorna il database Adobe Campaign .
 
    L&#39; **[!UICONTROL CRM Connector]** attività deve essere configurata come illustrato di seguito:
 
    ![](assets/crm_connectors_ood_6.png)
 
-1. Per esportare  dati di Adobe Campaign in Oracle On Demand, creare il seguente flusso di lavoro:
+1. Per esportare  dati Adobe Campaign in Oracle On Demand, creare il seguente flusso di lavoro:
 
    ![](assets/crm_connectors_ood_7.png)
 
@@ -184,27 +181,27 @@ Per configurare il connettore **Oracle On Demand** in modo che funzioni con  Ado
 
 ### Esempio per Microsoft Dynamics {#example-for-microsoft-dynamics}
 
-Per configurare il connettore di Microsoft Dynamics in modo che funzioni con  Adobe Campaign, procedere come segue:
+Per configurare il connettore Microsoft Dynamics in modo che funzioni con  Adobe Campaign, eseguire i passaggi seguenti:
 
-1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura  Adobe Campaign.
+1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign .
 
    ![](assets/crm_connectors_msdynamics_01_4.png)
 
 1. Selezionate il tipo **di** distribuzione: **[!UICONTROL On-premise]**, **[!UICONTROL Office 365]** o **[!UICONTROL Web API]**, a seconda del connettore che si desidera configurare.
 
-    Adobe Campaign Classic supporta l&#39;interfaccia REST di Dynamics 365 con protocollo OAuth per l&#39;autenticazione.
+   Adobe Campaign Classic supporta l&#39;interfaccia REST di Dynamics 365 con protocollo OAuth per l&#39;autenticazione.
 
    Se si seleziona una **[!UICONTROL WebAPI]** distribuzione, è necessario registrare un&#39;app nella directory di Azure e ottenere il **clientId** dalla directory di Azure. Questa registrazione è documentata in [questa pagina](https://msdn.microsoft.com/en-us/library/mt622431.aspx).
 
    >[!NOTE]
    >
-   >Il parametro redirectURL non è richiesto da  Adobe Campaign Classic.
+   >Il parametro redirectURL non è richiesto da Adobe Campaign Classic.
 
-   Il valore **clientId** viene utilizzato con nome utente/password per recuperare il token del portatore utilizzando la password del tipo di sovvenzione. Si chiama Concessione credenziali password proprietario **risorsa**. For more on this, refer to [this page](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
+   Il valore **clientId** viene utilizzato con nome utente/password per recuperare il token del portatore utilizzando la password del tipo di sovvenzione. Si chiama Concessione credenziali password proprietario **risorsa**. Per ulteriori informazioni, consulta [questa pagina](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
-   Per ulteriori informazioni sulla compatibilità della versione CRM, fare riferimento alla matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
+   Per ulteriori informazioni sulla compatibilità della versione CRM, fare riferimento alla matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
 
 1. Aprire la procedura guidata di configurazione.  Adobe Campaign rileva automaticamente le tabelle dal modello dati di Microsoft Dynamics.
 
@@ -234,7 +231,7 @@ Per configurare il connettore di Microsoft Dynamics in modo che funzioni con  Ad
 
    ![](assets/crm_connectors_msdynamics_07.png)
 
-   Questo flusso di lavoro importa i contatti tramite Microsoft Dynamics, li sincronizza con i dati del Adobe Campaign  esistente, elimina i contatti duplicati e aggiorna il database del Adobe Campaign .
+   Questo flusso di lavoro importa i contatti tramite Microsoft Dynamics, li sincronizza con i dati Adobe Campaign  esistenti, elimina i contatti duplicati e aggiorna il database Adobe Campaign .
 
    L&#39; **[!UICONTROL CRM Connector]** attività deve essere configurata come segue:
 
@@ -279,7 +276,7 @@ Per un&#39;attività di importazione, i passaggi di configurazione dell&#39;atti
 
    >[!IMPORTANT]
    >
-   >L&#39;identificatore del record in CRM è obbligatorio per il collegamento di oggetti in CRM e  Adobe Campaign. Viene aggiunto automaticamente all’approvazione della casella.
+   >L&#39;identificatore del record in CRM è obbligatorio per il collegamento di oggetti in CRM e in  Adobe Campaign. Viene aggiunto automaticamente all’approvazione della casella.
    >
    >Anche l&#39;ultima data di modifica sul lato CRM è obbligatoria per le importazioni di dati incrementali.
 
@@ -371,7 +368,7 @@ Selezionate quindi i campi della popolazione in entrata che desiderate importare
 
 ### Esportazione in CRM {#exporting-to-the-crm}
 
-L&#39;esportazione  dati di Adobe Campaign in CRM consente di copiare l&#39;intero contenuto in un database CRM.
+L&#39;esportazione  dati Adobe Campaign in CRM consente di copiare l&#39;intero contenuto in un database CRM.
 
 Per esportare i dati in CRM, devi creare il seguente tipo di flusso di lavoro:
 
@@ -447,7 +444,7 @@ La transizione **[!UICONTROL Reject]** di output consente di accedere allo schem
 
 ### Importazione di oggetti eliminati in CRM {#importing-objects-deleted-in-the-crm}
 
-Per abilitare l&#39;impostazione di un ampio processo di sincronizzazione dei dati, puoi importare gli oggetti eliminati nel CRM in  Adobe Campaign.
+Per abilitare l&#39;impostazione di un ampio processo di sincronizzazione dei dati, puoi importare gli oggetti eliminati in CRM in  Adobe Campaign.
 
 A questo scopo, eseguire i seguenti passaggi:
 
