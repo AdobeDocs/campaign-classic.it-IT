@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 19%
 
 ---
 
@@ -26,7 +26,7 @@ Per creare un elenco di **[!UICONTROL List]** tipi basato sulla nuova tabella de
 
 1. Passate al **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nodo dell&#39;esploratore.
 1. Create un nuovo flusso di lavoro di targeting.
-1. Inserire un&#39;attività **Query** seguita da un&#39;attività di aggiornamento **** Elenco.
+1. Inserite un&#39;attività **Query** seguita da un&#39;attività di aggiornamento **** Elenco.
 
    ![](assets/mapping_create_list_workflow01.png)
 
@@ -48,5 +48,5 @@ Per creare un elenco di **[!UICONTROL List]** tipi basato sulla nuova tabella de
 
 >[!NOTE]
 >
->Potete anche fare riferimento a [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) .
+>Potete anche fare riferimento a [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) .
 
