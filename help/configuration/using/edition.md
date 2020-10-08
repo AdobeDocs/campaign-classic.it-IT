@@ -1,7 +1,7 @@
 ---
-title: Edition
-seo-title: Edition
-description: Edition
+title: Modifica
+seo-title: Modifica
+description: Modifica
 seo-description: null
 page-status-flag: never-activated
 uuid: df9298fc-5f62-4afb-8118-ca7e3987e81f
@@ -11,22 +11,22 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 discoiquuid: 820be231-af76-44ce-8f4d-cd5eae1eb169
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 3%
 
 ---
 
 
-# Edition{#edition}
+# Modifica{#edition}
 
 La schermata per la creazione e la configurazione dei documenti di configurazione della gerarchia di navigazione è accessibile tramite il **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nodo:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
-La configurazione della gerarchia di navigazione è suddivisa in più documenti XML. Opera su un principio simile all&#39;estensione dello schema: tutti i documenti vengono uniti per generare un singolo documento contenente l’intera configurazione. Questo documento non può essere modificato e viene visualizzato tramite la scheda &quot;Anteprima&quot;.
+La configurazione della gerarchia di navigazione è suddivisa in più documenti XML. Opera in base a un principio simile all&#39;estensione dello schema: tutti i documenti vengono uniti per generare un singolo documento contenente l’intera configurazione. Questo documento non può essere modificato e viene visualizzato tramite la scheda &quot;Anteprima&quot;.
 
 Il campo di modifica fornisce il contenuto del documento XML:
 
