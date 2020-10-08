@@ -1,7 +1,7 @@
 ---
-title: Servizi sottoscrizione
-seo-title: Servizi sottoscrizione
-description: Servizi sottoscrizione
+title: Subscription Services
+seo-title: Subscription Services
+description: Subscription Services
 seo-description: null
 page-status-flag: never-activated
 uuid: f8c05f8a-0791-4294-8aa3-69b7325e4d43
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 
-# Servizi sottoscrizione{#subscription-services}
+# Subscription Services{#subscription-services}
 
 Un’attività di tipo servizi **** iscrizione consente di creare o eliminare una sottoscrizione a un servizio informazioni per la popolazione specificata nella transizione.
 
@@ -36,7 +36,7 @@ Per configurarlo, modificate l&#39;attività e inseritene l&#39;etichetta, quind
 1. Fate clic su **[!UICONTROL Subscription]** o **[!UICONTROL Unsubscription]** se desiderate iscrivervi o annullare l’iscrizione della popolazione specificata al servizio di informazioni selezionato.
 1. Selezionate questa opzione **[!UICONTROL Send a confirmation message]** per notificare ai destinatari che dispongono di un’iscrizione o che ne viene annullata la sottoscrizione a un servizio.
 
-   Il contenuto di questo messaggio viene specificato in un modello di consegna relativo al servizio informazioni. For more on this, refer to this [section](../../delivery/using/managing-subscriptions.md).
+   Il contenuto di questo messaggio viene specificato in un modello di consegna relativo al servizio informazioni. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/managing-subscriptions.md).
 
 ## Esempio: Iscriviti a un elenco di destinatari per una newsletter {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
