@@ -1,7 +1,7 @@
 ---
-title: Implementazione indipendente
-seo-title: Implementazione indipendente
-description: Implementazione indipendente
+title: Distribuzione autonoma
+seo-title: Distribuzione autonoma
+description: Distribuzione autonoma
 seo-description: null
 page-status-flag: never-activated
 uuid: 48ce793e-cb9f-4102-898f-758512cb9bf2
@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Implementazione indipendente{#standalone-deployment}
+# Distribuzione autonoma{#standalone-deployment}
 
 Questa configurazione include tutti i componenti sullo stesso computer:
 
@@ -181,8 +178,8 @@ Effettuate le seguenti operazioni:
 
 1. Seguite la procedura di integrazione con il server Web (IIS, Apache) descritta nelle sezioni seguenti:
 
-   * Per Linux: [Integrazione in un server Web per Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Per Windows: [Integrazione in un server Web per Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Avviate il sito Web e verificate il reindirizzamento utilizzando l’URL: https://tracking.campaign.net/r/test.
 
