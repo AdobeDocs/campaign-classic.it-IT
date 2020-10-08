@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 3%
 
 ---
 
@@ -54,16 +54,16 @@ La procedura di migrazione deve essere eseguita su **tutti** i server e in un or
 * Nel caso di una piattaforma **** indipendente (modalità a macchina singola), l’applicazione viene migrata completamente.
 * Nel caso di una piattaforma **** standard (enterprise), le fasi di migrazione sono le seguenti:
 
-   1. Migra il server di marketing.
+   1. Esegui la migrazione del server di marketing.
    1. Migrate il server di posta (mta).
-   1. Migrare i server di reindirizzamento e monitoraggio (Apache / IIS).
+   1. Migrare i server di reindirizzamento e tracciamento (Apache / IIS).
 
-* Nel caso di una piattaforma **di messaggistica** Cloud, i server di esecuzione sono ospitati in Adobe Campaign. Contatta Adobe Campaign per coordinare la migrazione tra diversi server.
+* Nel caso di una piattaforma **** Cloud Messaging, i server di esecuzione sono ospitati  Adobe Campaign. Contattate  Adobe Campaign per coordinare la migrazione tra server diversi.
 * Nel caso di una piattaforma **** Power Booster o Power Cluster, le fasi di migrazione sono le seguenti:
 
-   1. Migrare i server di reindirizzamento e monitoraggio (Apache / IIS).
+   1. Migrare i server di reindirizzamento e tracciamento (Apache / IIS).
    1. Migrare i server Power Booster/Cluster.
-   1. Migra il server di marketing.
+   1. Esegui la migrazione del server di marketing.
 
 >[!NOTE]
 >
