@@ -9,14 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68a95962dfecc4b10f48ba16d4f8ab29cae02ee8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -61,7 +58,7 @@ I pulsanti della barra degli strumenti sono descritti in dettaglio in questa [se
 
    Questa azione si arresta e quindi riavvia il flusso di lavoro. Nella maggior parte dei casi, il riavvio è più rapido. È inoltre utile automatizzare il riavvio quando l&#39;arresto richiede un certo tempo: perché il comando &#39;Stop&#39; non è disponibile quando il flusso di lavoro viene interrotto.
 
-   Le **[!UICONTROL Start / Pause / Stop / Restart]** azioni sono disponibili anche tramite le icone di esecuzione nella barra degli strumenti. For more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Le **[!UICONTROL Start / Pause / Stop / Restart]** azioni sono disponibili anche tramite le icone di esecuzione nella barra degli strumenti. Per ulteriori informazioni, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **[!UICONTROL Purge history]**
 
@@ -87,7 +84,7 @@ I pulsanti della barra degli strumenti sono descritti in dettaglio in questa [se
 
    Questa azione crea un nuovo modello di flusso di lavoro basato sul flusso di lavoro selezionato. È necessario specificare la cartella in cui verrà salvato (nel **[!UICONTROL Folder]** campo).
 
-   Le opzioni **[!UICONTROL Mass update of selected lines]** e **[!UICONTROL Merge selected lines]** sono opzioni di piattaforma generiche disponibili in tutti i **[!UICONTROL Actions]** menu. For more on this, refer to this [section](../../platform/using/updating-data.md).
+   Le opzioni **[!UICONTROL Mass update of selected lines]** e **[!UICONTROL Merge selected lines]** sono opzioni di piattaforma generiche disponibili in tutti i **[!UICONTROL Actions]** menu. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/updating-data.md).
 
 ## Menu di scelta rapida {#right-click-menu}
 
