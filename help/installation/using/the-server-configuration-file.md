@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 5%
@@ -633,7 +630,7 @@ Di seguito sono elencati i diversi parametri del nodo **htmlToPdf** . Questa è 
   </tr> 
   <tr> 
    <td> waitTime<br /> </td> 
-   <td> Ritardo in attesa di un processo: ritardo in secondi, quando tutti i processi vengono utilizzati contemporaneamente e in attesa che un processo venga liberato. Se questo ritardo viene superato, la conversione viene interrotta e viene generato un errore. <br /> </td> 
+   <td> Ritardo in attesa di un processo: ritardo in secondi, quando tutti i processi vengono utilizzati allo stesso tempo e in attesa del rilascio di un processo. Se questo ritardo viene superato, la conversione viene interrotta e viene generato un errore. <br /> </td> 
    <td> Long<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
@@ -1315,7 +1312,7 @@ Nel nodo **inMail > msgDump** configurate i seguenti parametri. Questa è la con
 
 Ecco i diversi parametri del nodo **interattivo** . Questa è la configurazione del demone di scrittura per gli eventi Interazione in ingresso.
 
-Per ulteriori informazioni, fare riferimento a [Interazione - Buffer](../../installation/using/interaction---data-buffer.md)di dati.
+Per ulteriori informazioni, fare riferimento a [Interazione - Buffer](../../installation/using/interaction---data-buffer.md)dati.
 
 <table> 
  <thead> 
@@ -2559,7 +2556,7 @@ Ecco i diversi parametri del nodo di **tracciamento** . Configurazione del serve
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> consolidamentoPeriodoSec<br /> </td> 
+   <td> consolidamentoPeriodSec<br /> </td> 
    <td> Periodo di consolidamento<br /> </td> 
    <td> Long<br /> </td> 
    <td> 300<br /> </td> 
@@ -2990,7 +2987,7 @@ For additional information, refer to this [section](../../installation/using/dep
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Caratteri non consentiti (Dominio): elenco di caratteri proibiti nella sezione "autorità" di un URI.<br /> </td> 
+   <td> Carattere(i) proibito(i) (Dominio): elenco di caratteri proibiti nella sezione "autorità" di un URI.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
