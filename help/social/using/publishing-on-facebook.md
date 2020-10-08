@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Create una nuova consegna utilizzando il modello di **[!UICONTROL Publish to a b
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Selezione della destinazione principale {#selecting-the-main-target}
+## Selecting the main target {#selecting-the-main-target}
 
 È necessario selezionare le pagine sulle quali si desidera pubblicare la pubblicazione.
 
@@ -45,11 +45,11 @@ Create una nuova consegna utilizzando il modello di **[!UICONTROL Publish to a b
 
    ![](assets/social_facebook_delivery_010.png)
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/social_facebook_delivery_011.png)
 
-1. Selezionare **[!UICONTROL A Facebook page]**.
+1. Seleziona **[!UICONTROL A Facebook page]**.
 
    ![](assets/social_facebook_delivery_012.png)
 
@@ -67,9 +67,9 @@ La **[!UICONTROL Target of the proofs]** scheda consente di definire la pagina F
 >
 >Se utilizzate la stessa pagina di test Facebook per tutte le consegne, potete salvare la destinazione della prova nel modello di **[!UICONTROL Publish to a brand page]** consegna, a cui si accede tramite il **[!UICONTROL Resources > Templates > Delivery templates]** nodo. La destinazione della prova verrà immessa per impostazione predefinita per ogni nuova consegna.
 
-## Defining the audience {#defining-the-audience}
+## Definizione dell&#39;audience {#defining-the-audience}
 
-Se desiderate utilizzare i segmenti locali per definire il tipo di pubblico autorizzato a visualizzare la pubblicazione, è consigliabile creare una pagina Facebook per segmento (ad esempio: Adobe Campaign Paris, Adobe Campaign London, ecc.)
+Se desiderate utilizzare i segmenti locali per definire il tipo di pubblico autorizzato a visualizzare la pubblicazione, è consigliabile creare una pagina Facebook per segmento (ad esempio:  Adobe Campaign Paris,  Adobe Campaign London, ecc.).
 
 Tuttavia è anche possibile utilizzare i filtri per l&#39;audience utilizzati da Facebook. La **[!UICONTROL Audience]** scheda della **[!UICONTROL Select target window]** scheda offre quattro filtri:
 
@@ -119,7 +119,7 @@ Immettete i vari campi:
 >
 >Tutti gli URL devono iniziare con **&quot;http://&quot;** o **&quot;https://&quot;**.
 
-1. Nel **[!UICONTROL Status]** campo, immettere il testo che verrà visualizzato sotto il nome della pagina.
+1. Nel **[!UICONTROL Status]** campo, immettete il testo che verrà visualizzato sotto il nome della pagina.
 1. Nel **[!UICONTROL Name]** campo, inserire il titolo della pubblicazione.
 1. Nel **[!UICONTROL Link]** campo, immettete l’URL a cui punta la pubblicazione.
 
@@ -131,7 +131,7 @@ Immettete i vari campi:
    >1. Immettere il **[!UICONTROL Namespace]** campo.
    >1. Immettere il **[!UICONTROL Mobile Site URL]** campo: quando un utente fa clic sul collegamento della pubblicazione sul proprio smartphone, viene automaticamente reindirizzato da Facebook all&#39;URL definito in questo campo.
    >1. Create l&#39;applicazione Web in modo che il display di Facebook sia personalizzato in funzione del dispositivo utilizzato (smartphone o PC).
-   >1. Andate al **[!UICONTROL Link]** campo della pubblicazione tramite la console Adobe Campaign, immettete l&#39;URL del **[!UICONTROL Canvas page]** campo.
+   >1. Passate al **[!UICONTROL Link]** campo della pubblicazione tramite la console Adobe Campaign , immettete l’URL del **[!UICONTROL Canvas page]** campo.
 
 
 1. Nel **[!UICONTROL Image]** campo, immettete l’URL dell’immagine che verrà visualizzata a sinistra della pubblicazione.
@@ -141,7 +141,7 @@ Immettete i vari campi:
    >L&#39;immagine deve essere ospitata su un sito Internet pubblico per poter essere caricata da Facebook.
 
 1. Nel **[!UICONTROL Caption]** campo, immettete il testo che verrà visualizzato alla fine della pubblicazione.
-1. Passare al **[!UICONTROL Description]** campo e immettere il testo da visualizzare sotto il titolo.
+1. Vai al **[!UICONTROL Description]** campo e immetti il testo da visualizzare sotto il titolo.
 
 ![](assets/social_facebook_delivery_005.png)
 
@@ -157,11 +157,11 @@ Immettete i vari campi:
 >
 >Tutti gli URL devono iniziare con **&quot;http://&quot;** o **&quot;https://&quot;**.
 
-1. Nel **[!UICONTROL Status]** campo, immettere il testo che verrà visualizzato sotto il nome della pagina.
+1. Nel **[!UICONTROL Status]** campo, immettete il testo che verrà visualizzato sotto il nome della pagina.
 1. Nel **[!UICONTROL Name]** campo, inserire il titolo della pubblicazione.
 1. Nel **[!UICONTROL Video code]** campo , inserite il codice del video di YouTube. Ad esempio, per il collegamento https://www.youtube.com/watch?v=abc123456&#39;, il codice video sarà &#39;abc123456&#39;.
 1. Nel **[!UICONTROL Caption]** campo, immettete il testo che verrà visualizzato alla fine della pubblicazione.
-1. Passare al **[!UICONTROL Description]** campo e immettere il testo da visualizzare sotto il titolo.
+1. Vai al **[!UICONTROL Description]** campo e immetti il testo da visualizzare sotto il titolo.
 
 ![](assets/social_facebook_delivery_youtube.png)
 
@@ -184,7 +184,7 @@ Immettete i vari campi:
 
 La **[!UICONTROL Preview]** scheda consente di visualizzare il rendering della pubblicazione.
 
-1.  Fate clic sulla **[!UICONTROL Preview]** scheda.
+1. Fate clic sulla **[!UICONTROL Preview]** scheda.
 1. Fare clic sul **[!UICONTROL Test personalization]** menu a discesa e selezionare **[!UICONTROL Service]**.
 1. Nel **[!UICONTROL Folder]** campo, selezionate la cartella del servizio che contiene le pagine Facebook. Per impostazione predefinita, le pagine sono memorizzate nella cartella principale del **[!UICONTROL Facebook]** servizio.
 1. Selezionate la pagina Facebook sulla quale desiderate testare l’anteprima.
@@ -199,9 +199,9 @@ La **[!UICONTROL Preview]** scheda consente di visualizzare il rendering della p
 
 Il tracciamento può essere visualizzato nei rapporti di consegna e nella **[!UICONTROL Edit > Tracking]** scheda della consegna e del servizio.
 
-I clic sull&#39;URL contenuto nella consegna vengono misurati da Adobe Campaign. Il numero di clic sul **[!UICONTROL Like]** pulsante, il numero di commenti e il numero di fan sono misurati da Facebook.
+I clic sull’URL contenuto nella consegna vengono misurati da  Adobe Campaign. Il numero di clic sul **[!UICONTROL Like]** pulsante, il numero di commenti e il numero di fan sono misurati da Facebook.
 
-La configurazione del tracciamento è la stessa di una distribuzione tramite e-mail. For more on this, refer to [this section](../../delivery/using/monitoring-a-delivery.md).
+La configurazione del tracciamento è la stessa di una distribuzione tramite e-mail. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/monitoring-a-delivery.md).
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ La configurazione del tracciamento è la stessa di una distribuzione tramite e-m
 
 Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per visualizzare l&#39;esatto rendering della pubblicazione su una pagina di test Facebook privata. Per ulteriori informazioni sulla creazione di una pagina di test Facebook privata, consultate [Creazione di una pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page)Facebook di prova. I passaggi per selezionare la prova di destinazione sono descritti in [Selezione della destinazione](#selecting-the-proof-target)della prova.
 
-La consegna della prova è identica alle consegne tramite e-mail. Fare riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+La consegna della prova è identica alle consegne tramite e-mail. Fai riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ## Invio del messaggio {#sending-the-message}
 
@@ -224,7 +224,7 @@ La consegna della prova è identica alle consegne tramite e-mail. Fare riferimen
 
    ![](assets/social_facebook_delivery_009.png)
 
-1. Al termine dell&#39;analisi, verificare il risultato.
+1. Una volta completata l&#39;analisi, verificare il risultato.
 1. Fate clic **[!UICONTROL Confirm delivery]**, quindi fate clic **[!UICONTROL Yes]**.
 
    ![](assets/social_facebook_delivery_016.png)
