@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
 
 Il server del database può essere eseguito su qualsiasi sistema operativo specificato, indipendentemente dal sistema operativo utilizzato dal server dell&#39;applicazione o dai server, a condizione che vi sia una connessione di rete tra di essi.
 
-Il sistema operativo del server del database non è importante finché è disponibile la connettività con i diversi componenti di Adobe Campaign.
+Il sistema operativo del server di database non è importante finché è disponibile la connettività con i diversi componenti di  Adobe Campaign.
 
-Controlla anche la sezione Livelli [di accesso al](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) database.
+Controllate anche la sezione Livelli [di accesso al](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) database.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-Il client nativo deve essere installato sui server delle applicazioni Adobe Campaign.
+Il client nativo deve essere installato sui server applicazioni Adobe Campaign .
 
 È possibile verificare il client nativo sul server tramite il pannello di configurazione del driver ODBC, in Client nativo **SQL Server 10.0** (per client Microsoft SQL Server 2008 e 2008 R2) o client nativo **SQL Server 11.0** (per Microsoft SQL Server 2012, 2014, 2016 e 2 017 client).
 
@@ -53,7 +53,7 @@ Devono essere presenti le seguenti DLL di accesso:
 
 Affinché il database funzioni in modalità Unicode o ANSI, i parametri **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** devono essere configurati correttamente.
 
-Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altre codifiche potrebbe causare problemi di compatibilità: in questo caso, contattare l&#39;assistenza tecnica.
+ Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altre codifiche potrebbe causare problemi di compatibilità: in questo caso, contattare l&#39;assistenza tecnica.
 
 Per informazioni sulla codifica, utilizzate il seguente **comando sqlplus** :
 
@@ -90,4 +90,4 @@ sqlplus
 
 **Argomento correlato**
 
-* [Opzione non registrata nelle tabelle di Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Opzione non registrata nelle tabelle Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
