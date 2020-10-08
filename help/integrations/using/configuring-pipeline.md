@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell'integrazione
-seo-title: Configurazione dell'integrazione
-description: Configurazione dell'integrazione
+title: Configurazione dell’integrazione
+seo-title: Configurazione dell’integrazione
+description: Configurazione dell’integrazione
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,14 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -34,26 +31,26 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 L&#39;utilizzo [!DNL Experience Cloud Triggers] in Campaign richiede:
 
-*  Adobe Campaign 6.11 build 8705 o versione successiva.
-* Adobe  Analytics Ultimate, Premium, Foundation, OD, Select, Prime, Mobile Apps, Select o Standard.
+*  Adobe Campaign versione 6.11 build 8705 o successiva.
+* Adobe Analytics Ultimate, Premium, Foundation, OD, Select, Prime, Mobile Apps, Select o Standard.
 
 Le configurazioni preliminari sono:
 
 * Creazione di un file di chiave privata e quindi creazione dell&#39;applicazione Auth registrata con quella chiave.
-* Configurazione degli attivatori in Adobe  Analytics.
+* Configurazione degli attivatori in  Adobe Analytics.
 
-La configurazione Adobe  Analytics non rientra nell&#39;ambito di questo documento.
+La configurazione Adobe Analytics  non rientra nell&#39;ambito di questo documento.
 
- Adobe Campaign richiede le seguenti informazioni da Adobe  Analytics:
+ Adobe Campaign richiede le seguenti informazioni da  Adobe Analytics:
 
 * Nome dell&#39;applicazione Auth.
-* IMSOrgId, l’identificatore del cliente Experience Cloud .
-* I nomi degli attivatori configurati in  Analytics.
+* IMSOrgId, l’identificatore del cliente del Experience Cloud .
+* I nomi degli attivatori configurati in Analytics.
 * Nome e formato dei campi di dati da riconciliare con il database Marketing.
 
 Parte di questa configurazione è uno sviluppo personalizzato e richiede quanto segue:
 
-* Conoscenza di lavoro dell&#39;analisi JSON, XML e Javascript in  Adobe Campaign.
+* Conoscenza di base delle analisi di JSON, XML e Javascript in  Adobe Campaign.
 * Conoscenza operativa delle API QueryDef e Writer.
 * Nozioni di funzionamento di crittografia e autenticazione utilizzando chiavi private.
 
@@ -63,13 +60,13 @@ Parte di questa configurazione è uno sviluppo personalizzato e richiede quanto 
 
 ## File di autenticazione e configurazione {#authentication-configuration}
 
-L&#39;autenticazione è necessaria in quanto Pipeline è ospitata in Adobe Experience Cloud.
+L&#39;autenticazione è necessaria in quanto la pipeline è ospitata nell&#39;Adobe Experience Cloud.
 Se il server Marketing è ospitato in sede, quando accede alla pipeline, deve autenticarsi per disporre di una connessione protetta.
 Utilizza un paio di chiavi pubbliche e private. Questa procedura è la stessa funzione di utente/password, solo più sicura.
 
 ### IMSOrgId {#imsorgid}
 
-IMSOrgId è l’identificatore del cliente in Adobe Experience Cloud.
+IMSOrgId è l’identificatore del cliente sull’Adobe Experience Cloud.
 Impostatelo nel file instance serverConf.xml, sotto l’attributo IMSOrgId.
 Esempio:
 
@@ -112,11 +109,11 @@ EwIDAQAB
 
 ### Creazione di client di autenticazione in Adobe Experience Cloud {#oauth-client-creation}
 
-È necessario creare un&#39;applicazione di tipo JWT effettuando l&#39;accesso ad Adobe  Analytics nell&#39;account organizzazione corretto in **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
+È necessario creare un&#39;applicazione di tipo JWT effettuando l&#39;accesso all&#39;Adobe Analytics  nell&#39;account organizzazione corretto in **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
 
 Effettuate le seguenti operazioni:
 
-1. Selezionare il **[!UICONTROL Service Account (JWT Assertion)]**.
+1. Seleziona **[!UICONTROL Service Account (JWT Assertion)]**.
 1. Inserire il **[!UICONTROL Application Name]**.
 1. Registra il **[!UICONTROL Public key]**.
 1. Selezionare l&#39;attivatore **[!UICONTROL Scopes]**.
@@ -127,7 +124,7 @@ Effettuate le seguenti operazioni:
 
    ![](assets/triggers_6.png)
 
-### Registrazione del nome dell&#39;applicazione in  Adobe Campaign Classic {#application-name-registration}
+### Registrazione del nome dell&#39;applicazione in Adobe Campaign Classic {#application-name-registration}
 
 L&#39;ID applicazione del client Auth creato deve essere configurato in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo appName.
 
@@ -143,7 +140,7 @@ Per essere utilizzata da [!DNL pipelined], la chiave privata deve essere crittog
 
 Un esempio di crittografia di chiave privata con JavaScript è disponibile in questa [pagina](../../integrations/using/pipeline-troubleshooting.md).
 
-La chiave privata crittografata deve essere registrata  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo authPrivateKey.
+La chiave privata crittografata deve essere registrata in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo authPrivateKey.
 
 Esempio:
 
@@ -180,9 +177,9 @@ In caso di errori, cercate gli errori nell’output standard (se avviato manualm
 
 | Opzione | Descrizione |
 |:-:|:-:|
-| appName | ID dell’applicazione OAuth (ID applicazione) registrata in Adobe  Analytics (dove è stata caricata la chiave pubblica): Admin (Amministratore) > User Management (Gestione utente) > Legacy Oath application (Applicazione giurata legacy). Fare riferimento a questa[sezione](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
+| appName | ID dell’applicazione OAuth (ID applicazione) registrata in  Adobe Analytics (dove è stata caricata la chiave pubblica): Admin (Amministratore) > User Management (Gestione utente) > Legacy Oath application (Applicazione giurata legacy). Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
 | authGatewayEndpoint | URL per ottenere i &quot;token gateway&quot;. <br> Valore predefinito: https://api.omniture.com |
-| authPrivateKey | Chiave privata (parte pubblica caricata in Adobe  Analytics (consultare questa sezione). AES crittografato con l&#39;opzione XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
+| authPrivateKey | Chiave privata (parte pubblica caricata in  Adobe Analytics (consultare questa sezione). AES crittografato con l&#39;opzione XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
 | disableAuth | Disattiva autenticazione (la connessione senza token gateway è accettata solo da alcuni endpoint pipeline di sviluppo) |
 | findPipelineEndpoint | URL per scoprire l&#39;endpoint di Pipeline Services da utilizzare per questo tenant. Valore predefinito: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | Il periodo compreso tra 2 discariche dello stato interno del processo nello stato var/INSTANCE/pipelined.json è accessibile anche on-demand all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
