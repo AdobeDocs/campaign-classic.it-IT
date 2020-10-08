@@ -1,7 +1,7 @@
 ---
-title: marketing virale e sociale
-seo-title: marketing virale e sociale
-description: marketing virale e sociale
+title: Marketing virale e social marketing
+seo-title: Marketing virale e social marketing
+description: Marketing virale e social marketing
 seo-description: null
 page-status-flag: never-activated
 uuid: dca3db7e-cc8d-42ca-b1b8-45e9fb739c97
@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 2%
 
 ---
 
 
-# marketing virale e sociale{#viral-and-social-marketing}
+# Marketing virale e social marketing{#viral-and-social-marketing}
 
 ## Informazioni sul marketing virale {#about-viral-marketing}
 
-Adobe Campaign consente di configurare strumenti per incoraggiare il marketing virale.
+ Adobe Campaign consente di configurare strumenti per incoraggiare il marketing virale.
 
-Questo consente ai destinatari o ai visitatori del sito Web di condividere informazioni con la propria rete: dall&#39;aggiunta di un collegamento al profilo Facebook o Twitter per l&#39;invio di un messaggio a un amico.
+Questo consente ai destinatari o ai visitatori del sito Web di condividere informazioni con la propria rete: dall&#39;aggiunta di un collegamento al proprio profilo Facebook o Twitter per l&#39;invio di un messaggio a un amico.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
@@ -54,11 +54,11 @@ Quando il destinatario fa clic sull&#39;icona di uno dei social network visualiz
 
 >[!NOTE]
 >
->Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le tue esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, vai al **[!UICONTROL Resources > Campaign management > Personalization blocks]** nodo della struttura ad albero di Adobe Campaign.
+>Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le tue esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, andate al **[!UICONTROL Resources > Campaign management > Personalization blocks]** nodo della struttura di Adobe Campaign .
 
 ## Marketing virtuale: inoltrare a un amico {#viral-marketing--forward-to-a-friend}
 
-Un servizio virale consente di eseguire azioni di tipo referral: queste azioni consentono di inoltrare un messaggio a un amico. Il profilo dell&#39;arbitro viene memorizzato temporaneamente nel database (in una tabella dedicata). I messaggi inoltrati includono un collegamento per l’utente che desidera sottoscrivere: in tal caso, verranno aggiunti al database di Adobe Campaign.
+Un servizio virale consente di eseguire azioni di tipo referral: queste azioni consentono di inoltrare un messaggio a un amico. Il profilo dell&#39;arbitro viene memorizzato temporaneamente nel database (in una tabella dedicata). I messaggi inoltrati includono un collegamento per l’utente che desidera sottoscrivere: in tal caso, verranno aggiunti al database Adobe Campaign .
 
 L&#39;inoltro dei messaggi si basa sugli stessi principi dei collegamenti dei social network.
 
@@ -89,7 +89,7 @@ Applicate le seguenti fasi:
    >
    >Questa configurazione può essere adattata. A tal fine, è necessario modificare l&#39;applicazione Web iscrizione **** Destinatario memorizzata nel **[!UICONTROL Resources > Online > Web applications]** nodo.
    >
-   >Per ulteriori informazioni sulle applicazioni Web, consultare [questa sezione](../../web/using/about-web-applications.md).
+   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
 
    Una volta convalidati, viene loro inviato un messaggio di conferma: verranno registrati per sempre solo dopo aver attivato il collegamento nel messaggio di conferma. Questo messaggio viene creato in base al **[!UICONTROL Registration confirmation]** modello, memorizzato nel **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nodo.
 
@@ -97,7 +97,7 @@ Applicate le seguenti fasi:
 
 ## Tracciamento della condivisione social network {#tracking-social-network-sharing}
 
-La condivisione e l&#39;accesso alle informazioni condivise vengono tracciati. Queste informazioni raccolte da Adobe Campaign sono accessibili in due posizioni:
+La condivisione e l&#39;accesso alle informazioni condivise vengono tracciati. Queste informazioni raccolte da  Adobe Campaign sono accessibili in due punti:
 
 * nella **[!UICONTROL Tracking]** scheda della consegna (o singolarmente per ciascun destinatario):
 
