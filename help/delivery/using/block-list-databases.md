@@ -1,7 +1,7 @@
 ---
-title: Database degli elenchi di blocchi
-seo-title: Database degli elenchi di blocchi
-description: Database degli elenchi di blocchi
+title: Database dell’elenco Bloccati
+seo-title: Database dell’elenco Bloccati
+description: Database dell’elenco Bloccati
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Database degli elenchi di blocchi{#blocklisting-databases}
+# Database dell’elenco Bloccati{#blocklisting-databases}
 
 Diverse organizzazioni gestiscono database di indirizzi IP e domini ritenuti utilizzati dagli spammers. La consultazione di questi siti può essere utile per capire perché alcuni messaggi sono stati rifiutati come spam. In genere è possibile richiedere la rimozione di un indirizzo inserito erroneamente in tali elenchi.
 
@@ -39,7 +36,7 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
    Fare riferimento a [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e il supporto  Adobe Campaign.
+   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e  supporto Adobe Campaign.
 
 * **SpamCop**
 
@@ -51,13 +48,13 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
    Fare riferimento a [https://www.uribl.com/](https://www.uribl.com/)
 
-   Questo elenco identifica i domini che vengono visualizzati regolarmente nei messaggi dichiarati come spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e il supporto  Adobe Campaign.
+   Questo elenco identifica i domini che vengono visualizzati regolarmente nei messaggi dichiarati come spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e  supporto Adobe Campaign.
 
 * **SURBL**
 
    Fare riferimento a [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifica i siti web che appaiono regolarmente nello spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e il supporto  Adobe Campaign.
+   SURBL identifica i siti web che appaiono regolarmente nello spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e  supporto Adobe Campaign.
 
 * **Manitu iX**
 
