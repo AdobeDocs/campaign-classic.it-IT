@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
 
 # Creazione di un grafico{#creating-a-chart}
 
-I dati nel database possono essere raccolti e visualizzati in un grafico. Adobe Campaign offre una serie di rappresentazioni grafiche. La configurazione è dettagliata qui sotto.
+I dati nel database possono essere raccolti e visualizzati in un grafico.  Adobe Campaign offre una serie di rappresentazioni grafiche. La configurazione è dettagliata qui sotto.
 
 I grafici vengono inseriti direttamente in una pagina del rapporto tramite il menu di scelta rapida o la barra degli strumenti.
 
@@ -40,7 +40,7 @@ Per creare un grafico in un rapporto, effettua i seguenti passaggi:
 
 1. Fare clic sulla **[!UICONTROL Data]** scheda per definire l&#39;origine dati e la serie da calcolare.
 
-   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, ovvero i dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, vedere [Uso dei dati](../../reporting/using/using-the-context.md#using-context-data)contestuali).
+   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, ovvero i dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, fare riferimento a [Utilizzo dei dati](../../reporting/using/using-the-context.md#using-context-data)contestuali).
 
    * Fate clic sul **[!UICONTROL Filter data...]** collegamento per definire i criteri di filtro per i dati nel database.
 
@@ -56,7 +56,7 @@ Per creare un grafico in un rapporto, effettua i seguenti passaggi:
 
 ## Tipi di grafico e varianti {#chart-types-and-variants}
 
-Adobe Campaign offre diversi tipi di rappresentazioni grafiche. Sono descritti in dettaglio di seguito.
+ Adobe Campaign offre vari tipi di rappresentazioni grafiche. Sono descritti in dettaglio di seguito.
 
 Il tipo di grafico viene selezionato quando viene inserito nella pagina.
 
@@ -118,7 +118,7 @@ Se appropriato, potete sovrapporre i valori.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Se necessario, è possibile invertire la sequenza di visualizzazione dei valori. A questo scopo, selezionare l&#39; **[!UICONTROL Reverse stacking]** opzione.
+Se necessario, è possibile invertire la sequenza di visualizzazione dei valori. To do this, select the **[!UICONTROL Reverse stacking]** option.
 
 ### Conversione: imbuto {#conversion--funnel}
 
@@ -168,4 +168,4 @@ Per creare una nuova statistica, fate clic sull’ **[!UICONTROL Add]** icona e 
 
 ![](assets/reporting_add_statistics.png)
 
-For more on this, refer to [this section](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
