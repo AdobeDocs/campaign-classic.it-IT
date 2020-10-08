@@ -11,32 +11,32 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 12%
 
 ---
 
 
 # Informazioni sui connettori{#about-connectors}
 
-Adobe Campaign offre diversi connettori che consentono di comunicare con applicazioni esterne, connettersi ai motori di database e integrarsi con Adobe Analytics per condividere i dati.
+ Adobe Campaign fornisce diversi connettori che consentono di comunicare con applicazioni esterne, connettersi ai motori di database e integrarsi con  Adobe Analytics per condividere i dati.
 
 I connettori sono:
 
-* Il connettore FDA (**Federated Data Access**) consente di collegare Campaign a uno o più database esterni e di memorizzare informazioni sul processo in essi archiviate senza influire sui dati della campagna. [Ulteriori](../../platform/using/about-fda.md)informazioni.
-* I connettori CRM consentono lo scambio di dati tra Adobe Campaign e la soluzione CRM utilizzando attività di flusso di lavoro dedicate. [Ulteriori](../../platform/using/crm-connectors.md)informazioni.
-* I Connettori dati di Analytics (era **Adobe Genesis**) consentono di condividere i dati tra Adobe Campaign e Adobe Analytics. [Ulteriori](../../platform/using/adobe-analytics-data-connector.md)informazioni.
+* Il connettore FDA (**Federated Data Access**) consente di collegare Campaign a uno o più database esterni e di memorizzare informazioni sul processo in essi archiviate senza influire sui dati della campagna. [Ulteriori informazioni](../../platform/using/about-fda.md).
+* I connettori CRM consentono lo scambio di dati tra  soluzione Adobe Campaign e CRM utilizzando attività di flusso di lavoro dedicate. [Ulteriori informazioni](../../platform/using/crm-connectors.md).
+* Analytics Data Connectors (era **Adobe Genesis**) consente di condividere i dati tra  Adobe Campaign e  Adobe Analytics. [Ulteriori informazioni](../../platform/using/adobe-analytics-data-connector.md).
 
 Puoi anche integrare Campaign con diversi altri sistemi, ad esempio:
 
-* Soluzioni Adobe Experience Cloud: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, Experience Cloud Triggers, ecc. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md)
-* Adobe IMS/SSO, per proteggere l&#39;accesso all&#39;istanza Campaign e per connettersi ad Adobe Campaign con lo stesso Adobe ID che per le altre soluzioni Adobe Experience Cloud. [Ulteriori](../../integrations/using/about-adobe-id.md)informazioni.
-* Directory LDAP, per unificare la gestione degli accessi. [Ulteriori](../../installation/using/connecting-through-ldap.md)informazioni.
+* Soluzioni Adobe Experience Cloud: Adobe Experience Manager,  Adobe Target, Adobe Audience Manager,  attivatori di Experienci Cloud, ecc. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md)
+*  Adobe IMS/SSO, per proteggere l&#39;accesso all&#39;istanza Campaign e collegarsi a  Adobe Campaign con lo stesso Adobe ID  come per le altre soluzioni Adobe Experience Cloud. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
+* Directory LDAP, per unificare la gestione degli accessi. [Ulteriori informazioni](../../installation/using/connecting-through-ldap.md).
 
 >[!NOTE]
 >
->La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fate riferimento alla matrice [delle capacità on-pre/ospitate di](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)Campaign.
+>La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fate riferimento alla matrice [delle capacità on-pre/ospitate di](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html)Campaign.
 
