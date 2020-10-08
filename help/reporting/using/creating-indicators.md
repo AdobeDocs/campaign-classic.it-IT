@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Per creare un cubo, effettua i seguenti passaggi:
 
 1. Selezionare la tabella di lavoro. Fare riferimento a [Selezione della tabella](#selecting-the-work-table)di lavoro.
 1. Definite le dimensioni. Fare riferimento a [Definizione delle dimensioni](#defining-dimensions).
-1. Definire le misure. Fare riferimento agli indicatori [di](#building-indicators)generazione.
+1. Definite le misure. Fare riferimento agli indicatori [di](#building-indicators)generazione.
 1. Creare aggregati (facoltativo). Fare riferimento a [Calcolo e utilizzo degli aggregati](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 In questo esempio viene illustrato come creare rapidamente un cubo semplice in un rapporto per esportare le relative misure.
@@ -53,11 +53,11 @@ Fai clic sul **[!UICONTROL Filter the source data...]** collegamento per applica
 
 ## Definizione delle dimensioni {#defining-dimensions}
 
-Le dimensioni coincidono con gli assi di analisi definiti per ciascun cubo in base al relativo schema di fatti. Queste sono le dimensioni esaminate nell&#39;analisi, come ora (anno, mese, data...), una classificazione di prodotti o contratti (famiglia, riferimento, ecc.), un segmento di popolazione (per città, gruppo di età, stato, ecc.).
+Gli Dimension coincidono con gli assi di analisi definiti per ciascun cubo in base al relativo schema di fatti. Queste sono le dimensioni esaminate nell&#39;analisi, come l&#39;ora (anno, mese, data...), una classificazione di prodotti o contratti (famiglia, riferimento, ecc.), un segmento di popolazione (per città, gruppo di età, stato, ecc.).
 
 Questi assi di analisi sono definiti nella **[!UICONTROL Dimension]** scheda del cubo.
 
-Fai clic sul **[!UICONTROL Add]** pulsante per creare una nuova dimensione, quindi fai clic sull&#39;icona **[!UICONTROL Expression field]**, **[!UICONTROL Edit expression]** per selezionare il campo contenente i dati interessati.
+Fai clic sul **[!UICONTROL Add]** pulsante per creare una nuova dimensione, quindi fai clic sull&#39;icona **[!UICONTROL Expression field]**, **[!UICONTROL Edit expression]** per selezionare il campo che contiene i dati in questione.
 
 ![](assets/s_advuser_cube_wz_04.png)
 
@@ -77,7 +77,7 @@ Fai clic sul **[!UICONTROL Add]** pulsante per creare una nuova dimensione, quin
 
    ![](assets/s_advuser_cube_wz_07.png)
 
-   Nel nostro esempio, vogliamo visualizzare solo anni, mesi e giorni, poiché non è possibile lavorare con settimane e semestri/mesi contemporaneamente: questi livelli non sono compatibili.
+   Nel nostro esempio, vogliamo visualizzare solo anni, mesi e giorni, dal momento che non è possibile lavorare con settimane e semestri/mesi contemporaneamente: questi livelli non sono compatibili.
 
 * Crea un&#39;altra dimensione per analizzare i dati relativi alla città del destinatario
 
@@ -85,7 +85,7 @@ Fai clic sul **[!UICONTROL Add]** pulsante per creare una nuova dimensione, quin
 
    ![](assets/s_advuser_cube_wz_08.png)
 
-   Potete abilitare il binding per semplificare la lettura delle informazioni e collegare i valori a un&#39;enumerazione.
+   È possibile abilitare il binding per semplificare la lettura delle informazioni e collegare i valori a un&#39;enumerazione.
 
    ![](assets/s_advuser_cube_wz_09.png)
 
@@ -103,7 +103,7 @@ Una volta definite le dimensioni, è necessario specificare una modalità di cal
 
 A questo scopo, eseguire i seguenti passaggi:
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Add]**.
 1. Selezionare il tipo di misura e la formula da applicare. Qui vogliamo contare il numero di donne tra i beneficiari.
 
    La misura è basata sullo schema dei fatti e utilizza l&#39; **[!UICONTROL Count]** operatore.
@@ -136,7 +136,7 @@ Per eseguire questa operazione:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Potete cambiare gli assi della quota, eliminarli, aggiungere nuove misure, ecc. Le possibili operazioni sono descritte di seguito: [Utilizzo dei cubi per esplorare i dati](../../reporting/using/using-cubes-to-explore-data.md).
+1. Potete cambiare gli assi della quota, eliminarli, aggiungere nuove misure, ecc. Le possibili operazioni sono descritte qui di seguito: [Utilizzo dei cubi per esplorare i dati](../../reporting/using/using-cubes-to-explore-data.md).
 
    A tal fine, utilizzate le icone appropriate.
 
