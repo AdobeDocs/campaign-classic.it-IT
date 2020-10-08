@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: d71e5ff7-1e81-4c49-9673-c6fae890029b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3737'
 ht-degree: 0%
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 ## Informazioni sulle attività {#about-tasks}
 
-Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente all&#39;interno dell&#39;applicazione. L&#39;implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o ai fornitori di servizi esterni. Questa modalità di funzionamento consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
+ Adobe Campaign consente di creare attività e di gestire il ciclo di vita completo direttamente all’interno dell’applicazione. L&#39;implementazione di programmi e campagne può essere suddivisa in attività assegnate a  operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità di funzionamento consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 
 Le attività possono essere create, visualizzate e monitorate dall’elenco delle attività o dal dashboard della campagna. Possono inoltre essere visualizzati e tracciati nelle pianificazioni del piano di marketing, dei programmi e delle campagne.
 
@@ -97,7 +94,7 @@ Il ciclo di vita dell&#39;attività è presentato nel ciclo di [vita](#life-cycl
 
 Solo l&#39;operatore responsabile di un&#39;attività è autorizzato a chiuderla.
 
-Per impostazione predefinita, quando un operatore Adobe Campaign crea un&#39;attività, questa viene assegnata automaticamente. Per selezionare un operatore diverso, utilizzare il **[!UICONTROL Assigned to]** campo.
+Per impostazione predefinita, quando un operatore Adobe Campaign  crea un&#39;attività, questa viene assegnata automaticamente. Per selezionare un operatore diverso, utilizzare il **[!UICONTROL Assigned to]** campo.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -119,7 +116,7 @@ Per ogni operatore, è possibile inserire un carico di lavoro pianificato e un c
 
 È possibile configurare un promemoria che verrà inviato automaticamente a tutti gli operatori coinvolti nell&#39;attività prima della data di fine.
 
-Puoi visualizzare il profilo dell&#39;operatore Adobe Campaign tramite l&#39; **[!UICONTROL Edit link]** icona.
+È possibile visualizzare il profilo dell&#39;operatore Adobe Campaign  tramite l&#39; **[!UICONTROL Edit link]** icona.
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 
@@ -141,7 +138,7 @@ Per specificare un elenco di operatori, fate clic sul **[!UICONTROL Edit...]** c
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
-La persona incaricata del compito può assegnare a se stessa il compito di approvarlo, anche se altri operatori sono già stati assegnati a tale compito. Se non è stato definito alcun revisore, le notifiche vengono inviate alla persona responsabile dell&#39;attività. Anche tutti gli altri operatori Adobe Campaign con **[!UICONTROL Administrator]** diritti possono approvare l&#39;attività. Tuttavia, non riceveranno notifiche.
+La persona incaricata del compito può assegnare a se stessa il compito di approvarlo, anche se altri operatori sono già stati assegnati a tale compito. Se non è stato definito alcun revisore, le notifiche vengono inviate alla persona responsabile dell&#39;attività. Anche tutti gli altri operatori Adobe Campaign  con **[!UICONTROL Administrator]** diritti possono approvare l&#39;attività. Tuttavia, non riceveranno notifiche.
 
 ### Documenti a cui si fa riferimento {#documents-referenced}
 
@@ -227,7 +224,7 @@ Passare alla **[!UICONTROL Resources]** casella e aggiungere l&#39;operatore al 
 
 ### Notifiche iniziali {#initial-notifications}
 
-Quando crei o modifichi un&#39;attività con una data di inizio futura, Adobe Campaign offre di inviare un&#39;e-mail alla persona responsabile dell&#39;attività per informarla al momento dell&#39;inizio.
+Quando create o modificate un&#39;attività con una data di inizio futura,  Adobe Campaign offre di inviare un&#39;e-mail alla persona responsabile dell&#39;attività per informarla dell&#39;inizio.
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -240,7 +237,7 @@ Per pianificare una notifica, andate alla **[!UICONTROL Resources]** casella e u
 * Per le attività all&#39;interno delle campagne, selezionare una data e un&#39;ora specifiche.
 * Per le attività all&#39;interno dei modelli di campagna, l&#39;ora di notifica è espressa come l&#39;ora rimanente prima dell&#39;inizio dell&#39;attività (ad esempio, se si immette 2 d nel **[!UICONTROL Initial notification]** campo, l&#39;e-mail verrà inviata 2 giorni prima della data di inizio dell&#39;attività).
 
-Se hai pianificato una notifica, quando salvi l&#39;attività, Adobe Campaign continua a offrire di inviare una notifica immediatamente. Puoi decidere di inviarlo e questo non sostituirà la notifica pianificata.
+Se avete pianificato una notifica, quando salvate l&#39;attività,  Adobe Campaign continua a offrire di inviare una notifica immediatamente. Puoi decidere di inviarlo e questo non sostituirà la notifica pianificata.
 
 ### Attività collegata a un programma {#task-linked-to-a-program}
 
@@ -328,7 +325,7 @@ La persona che esamina l&#39;attività non è necessariamente la stessa persona 
 
 ![](assets/mrm_task_asset_creation.png)
 
-Nel **[!UICONTROL Marketing resource]** campo, definire la risorsa da gestire tramite questa attività. È possibile:
+Nel **[!UICONTROL Marketing resource]** campo, definire la risorsa da gestire tramite questa attività. Puoi:
 
 * Selezionate una risorsa esistente: l’elenco a discesa offre tutte le risorse con lo stato **[!UICONTROL Being edited]**.
 * Creazione di una risorsa: fate clic sull&#39; **[!UICONTROL Select the link]** icona, quindi fate clic sull&#39; **[!UICONTROL Create]** icona.
@@ -416,7 +413,7 @@ La dipendenza tra le attività è rappresentata dalle frecce nel dashboard della
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-Nel caso di attività raggruppate, Adobe Campaign assegna automaticamente la data di fine dell&#39;attività padre all&#39;attività secondaria come data di inizio. Ad esempio, se l’attività **Crea invito** termina il 15 ottobre alle 15:30, l’attività **Invia e-mail** figlio invito inizierà il 15 ottobre alle 15:30.
+Nel caso di attività raggruppate,  Adobe Campaign assegna automaticamente la data di fine dell&#39;attività principale all&#39;attività secondaria come data di inizio. Ad esempio, se l’attività **Crea invito** termina il 15 ottobre alle 15:30, l’attività **Invia e-mail** figlio invito inizierà il 15 ottobre alle 15:30.
 
 Inoltre, se posticipate la fine di un&#39;attività padre, alcune delle attività figlio potrebbero essere interessate: si tratta delle attività figlie il cui stato è **[!UICONTROL Scheduled]** e la cui data di inizio è precedente alla nuova data di fine dell&#39;attività padre. La durata dell&#39;attività rimane la stessa. Se la data di inizio di un&#39;attività secondaria è successiva alla nuova data di fine dell&#39;attività principale, l&#39;attività secondaria non viene interessata.
 
@@ -438,12 +435,13 @@ Un&#39;attività può essere: **[!UICONTROL Scheduled]**, **[!UICONTROL In progr
 * Una volta avviata, l&#39;attività è **[!UICONTROL In progress]**. Quando la persona responsabile dell&#39;attività la chiude, cambia in **[!UICONTROL Finished]**.
 * Se è stato definito un revisore, l&#39;attività sarà **[!UICONTROL Pending approval]** una volta che il responsabile la chiuderà e finché il revisore non lo approverà. Se il revisore lo rifiuta, l&#39;attività sarà **[!UICONTROL Rejected]**.
 * Un&#39;attività può essere annullata dalla persona responsabile tramite il dashboard o il **[!UICONTROL Task map]** pulsante facendo clic sul **[!UICONTROL Cancel]** pulsante.
-* Per pianificare un&#39;attività, inserire una data di inizio futura. Puoi quindi inviare una prima notifica agli operatori Adobe Campaign coinvolti nell&#39;esecuzione dell&#39;attività. Vedere [Ciclo](#complete-task-life-cycle)di vita completo delle attività.
+* Per pianificare un&#39;attività, inserire una data di inizio futura. È quindi possibile inviare una prima notifica agli operatori Adobe Campaign  coinvolti nell&#39;esecuzione dell&#39;attività. Vedere [Ciclo](#complete-task-life-cycle)di vita completo delle attività.
 
 >[!NOTE]
 >
 >* Lo stato dell&#39;attività viene aggiornato automaticamente.
 >* Anche se il periodo di validità è terminato, le attività non chiuse vengono comunque visualizzate nell&#39;elenco delle attività in corso. Un avviso avvisa gli operatori che l&#39;attività è in ritardo.
+
 >
 
 
@@ -470,7 +468,7 @@ Di seguito sono riportate le fasi di un ciclo completo di vita dell&#39;attivit�
 
    Quando un&#39;attività viene creata e pianificata per il futuro, il suo stato è **[!UICONTROL Scheduled]**.
 
-1. Nella data di inizio dell&#39;attività, la persona responsabile e i partecipanti ricevono una notifica in cui si informa che l&#39;attività è iniziata. Il suo stato cambia in **[!UICONTROL In progress]**.
+1. Alla data di inizio dell&#39;attività, la persona responsabile e i partecipanti ricevono una notifica in cui si informa che l&#39;attività è iniziata. Il suo stato cambia in **[!UICONTROL In progress]**.
 1. Dopo aver completato la sezione assegnata, i partecipanti possono approvare l&#39;attività:
 
    * tramite l’e-mail di notifica.
