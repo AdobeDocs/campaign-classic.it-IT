@@ -11,32 +11,32 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 
 # Configurazione del server Campaign{#campaign-server-configuration}
 
-Nelle sezioni seguenti sono descritte le configurazioni server obbligatorie che garantiscono il funzionamento efficiente di Adobe Campaign per la maggior parte delle configurazioni.
+Nelle sezioni seguenti sono descritte le configurazioni server obbligatorie che garantiscono il funzionamento efficiente di  Adobe Campaign per la maggior parte delle configurazioni.
 
 Configurazioni aggiuntive sono disponibili in [Configurazione del server](../../installation/using/configuring-campaign-server.md)Campaign.
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite da Adobe solo per le distribuzioni ospitate da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o questo [articolo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Identificatore interno {#internal-identifier}
 
-L’identificatore **interno** è un login tecnico da utilizzare a fini di installazione, amministrazione e manutenzione. Questo login non è associato a un&#39;istanza.
+L’identificatore **interno** è un login tecnico da utilizzare per l’installazione, l’amministrazione e la manutenzione. Questo login non è associato a un&#39;istanza.
 
 Gli operatori connessi con questo login avranno tutti i diritti su tutte le istanze. Questo login non avrà una password nel caso di una nuova installazione. È necessario definire manualmente questa password.
 
-Utilizzate il comando seguente:
+Usa il comando seguente:
 
 ```
 nlserver config -internalpassword
@@ -56,12 +56,12 @@ Confirmation: XXXX
 
 ## File di configurazione {#configuration-files}
 
-I file di configurazione sono memorizzati nella cartella **conf** della cartella di installazione di Adobe Campaign. La configurazione è suddivisa in due file:
+I file di configurazione sono memorizzati nella cartella **conf** della cartella di installazione  Adobe Campaign. La configurazione è suddivisa in due file:
 
 * **`config-<instance>.xml`** (dove **instance** è il nome dell’istanza): specifica configurazione dell&#39;istanza. Se condividete il server tra più istanze, inserite i parametri specifici per ciascuna istanza nel relativo file.
-* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server Adobe Campaign: vengono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è dettagliata di seguito. Fare riferimento al file stesso per visualizzare tutti i parametri disponibili. I diversi nodi e parametri ed elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server Adobe Campaign : vengono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è dettagliata di seguito. Fare riferimento al file stesso per visualizzare tutti i parametri disponibili. I diversi nodi e parametri ed elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
-Puoi configurare la directory di memorizzazione (**var** directory) dei dati di Adobe Campaign (registri, download, reindirizzamenti ecc.). A questo scopo, utilizzate la variabile di sistema **XTK_VAR_DIR** :
+È possibile configurare la directory di memorizzazione (**var** directory) di  dati Adobe Campaign (registri, download, reindirizzamenti, ecc.). A questo scopo, utilizzate la variabile di sistema **XTK_VAR_DIR** :
 
 * In Windows, indicare il seguente valore nella variabile di sistema **XTK_VAR_DIR** :
 
@@ -69,15 +69,15 @@ Puoi configurare la directory di memorizzazione (**var** directory) dei dati di 
    D:\log\AdobeCampaign
    ```
 
-* In Linux, andate al file **customer.sh** e indicate: **esportate XTK_VAR_DIR=/app/log/AdobeCampaign**.
+* In Linux, andate al file **customer.sh** e indicate: **esporta XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Per ulteriori informazioni, consulta [Personalizzazione dei parametri](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 ## Abilitazione dei processi {#enabling-processes}
 
-I processi di Adobe Campaign sul server sono attivati (e disabilitati) tramite **config-default.xml** e **`config-<instance>.xml`** i file.
+ processi Adobe Campaign sul server sono attivati (e disabilitati) tramite **config-default.xml** e **`config-<instance>.xml`** file.
 
-Per applicare le modifiche a questi file, se il servizio Adobe Campaign è avviato, devi eseguire il comando **nlserver config -reload** .
+Per applicare le modifiche a questi file, se il servizio Adobe Campaign  è avviato, è necessario eseguire il comando **nlserver config -reload** .
 
 Esistono due tipi di processi: istanza multipla e istanza singola.
 
@@ -85,7 +85,7 @@ Esistono due tipi di processi: istanza multipla e istanza singola.
 
    L&#39;abilitazione può essere configurata dal file **config-default.xml** .
 
-   Dichiarazione di un server Adobe Campaign per accedere alle console client e per il reindirizzamento (tracciamento):
+   Dichiarazione di un server Adobe Campaign  per accedere alle console client e per il reindirizzamento (tracciamento):
 
    ```
    vi nl6/conf/config-default.xml
