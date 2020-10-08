@@ -11,29 +11,29 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 0f7c835e-b429-422b-87ae-1234c7dd8fe6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 8%
 
 ---
 
 
 # Rigenerazione degli schemi{#regenerating-schemas}
 
-Quando modificate uno schema e salvate le modifiche, lo schema esteso viene generato automaticamente. Tuttavia, potrebbe essere necessario rigenerare manualmente gli schemi per applicare le modifiche. Per eseguire questa operazione:
+Quando si modifica uno schema e si salvano le modifiche, lo schema esteso viene generato automaticamente. Tuttavia, potrebbe essere necessario rigenerare manualmente gli schemi per applicare le modifiche. Per eseguire questa operazione:
 
 1. Selezionare gli schemi da rigenerare.
 1. Fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Actions > Regenerate selected schemas...]** .
 1. Fate clic **[!UICONTROL OK]** per confermare e avviare il processo.
 
-È quindi possibile controllare la struttura dello schema generato nelle schede Anteprima e Documentazione. Per ulteriori informazioni, consulta la sezione [Principi](../../configuration/using/data-schemas.md#principles) .
+È quindi possibile controllare la struttura dello schema generato nelle schede Anteprima e Documentazione. For more on this, refer to the [Principles](../../configuration/using/data-schemas.md#principles) section.
 
 >[!NOTE]
 >
->Se devi forzare la rigenerazione di tutti gli schemi, ad esempio per risolvere alcuni problemi di dipendenza nei collegamenti invertiti, puoi avviare il comando seguente dal server dell’applicazione Adobe Campaign:
+>Se è necessario forzare la rigenerazione di tutti gli schemi, ad esempio per risolvere alcuni problemi di dipendenza nei collegamenti invertiti, è possibile avviare il comando seguente dal server applicazione Adobe Campaign :
 >
 >**nlserver config -postupgrade -instance:`&lt;nome_istanza>&#39; -force**
 >
->È quindi necessario riavviare il server dell&#39;applicazione Adobe Campaign e disconnettersi/riconnettersi alla console client.
+>È quindi necessario riavviare  server applicazioni Adobe Campaign e disconnettersi/riconnettersi alla console client.
