@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell'integrazione
-seo-title: Configurazione dell'integrazione
-description: Configurazione dell'integrazione
+title: Configurazione dell’integrazione
+seo-title: Configurazione dell’integrazione
+description: Configurazione dell’integrazione
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,19 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Attiva eventi {#events}
+# Eventi di trigger {#events}
 
 ## Eventi di elaborazione in JavaScript {#events-javascript}
 
@@ -58,7 +55,7 @@ Riavviate [!DNL pipelined] dopo la modifica del JS.
 I [!DNL trigger] dati vengono passati alla funzione JS. È in formato XML.
 
 * L&#39; **[!UICONTROL @triggerId]** attributo contiene il nome dell&#39; [!DNL trigger].
-* L&#39;elemento **di arricchimento** in formato JSON contiene i dati generati da  Analytics ed è collegato al trigger.
+* L&#39;elemento **di arricchimento** in formato JSON contiene i dati generati da Analytics ed è collegato al trigger.
 * **[!UICONTROL @offset]** è il &quot;puntatore&quot; del messaggio. Indica l’ordine del messaggio all’interno della coda.
 * **[!UICONTROL @partitio]**n è un contenitore di messaggi all&#39;interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni in coda.
 
@@ -77,12 +74,12 @@ Esempio:
 >
 >Si tratta di un esempio specifico ricavato da diverse possibili implementazioni.
 
-Il contenuto è definito in  Analytics per ogni trigger. È in formato JSON.
+Il contenuto è definito in Analytics per ciascun trigger. È in formato JSON.
 Ad esempio, in un trigger LogoUpload_uploading_Visits:
 
 * **[!UICONTROL eVar01]** può contenere l&#39;ID acquirente che viene utilizzato per riconciliare con i destinatari della campagna. È in formato stringa. <br>Deve essere riconciliato per trovare l&#39;ID acquirente, che è la chiave primaria.
 
-* **[!UICONTROL timeGMT]** può contenere l&#39;ora del trigger sul lato Analytics . È in formato Epoch UTC (secondi a partire dall&#39;1/01/1970 UTC).
+* **[!UICONTROL timeGMT]** può contenere l&#39;ora del trigger sul lato Analytics. È in formato Epoch UTC (secondi a partire dall&#39;1/01/1970 UTC).
 
 Esempio:
 
@@ -149,7 +146,7 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 Prestate attenzione nell’analisi per evitare errori.
-Poiché questo codice è utilizzato per tutte le attivazioni, la maggior parte dei dati non è necessaria. Pertanto, può essere lasciato vuoto se non presente.
+Poiché questo codice è utilizzato per tutti i trigger, la maggior parte dei dati non è necessaria. Pertanto, può essere lasciato vuoto se non presente.
 
 ### Memorizzazione del trigger {#storing-triggers-js}
 
@@ -207,10 +204,10 @@ Di seguito è riportato un esempio di codice dello schema per la tabella seguent
 | data | Per memoria | Trigger Data | Il contenuto completo dei dati di attivazione in formato XML. A scopo di debug e audit. |
 | triggerType | Stringa 50 | TriggerType | Nome dell&#39;attivatore. Identifica il comportamento del cliente sul sito Web. |
 | shopper_id | Stringa 32 | shopper_id | Identificatore interno dell&#39;acquirente. Impostato dal flusso di lavoro di riconciliazione. Se zero, significa che il cliente è sconosciuto in Campaign. |
-| shopper_key | Long | shopper_key | Identificatore esterno dell&#39;acquirente acquisito da  Analytics. |
+| shopper_key | Long | shopper_key | Identificatore esterno dell&#39;acquirente acquisito da Analytics. |
 | created | Datetime | Creato | L&#39;ora in cui è stato creato l&#39;evento in Campaign. |
 | lastModified | Datetime | Ultima modifica | L’ultima volta che l’evento è stato modificato in  Adobe. |
-| timeGMT | Datetime | Timestamp | L’ora in cui l’evento è stato generato in  Analytics. |
+| timeGMT | Datetime | Timestamp | L&#39;ora in cui l&#39;evento è stato generato in Analytics. |
 
 ### Visualizzazione degli eventi {#display-events}
 
@@ -226,7 +223,7 @@ Gli eventi possono essere visualizzati con un semplice modulo basato sullo schem
 
 ### Flusso di lavoro di riconciliazione {#reconciliation-workflow}
 
-Riconciliazione è il processo di corrispondenza del cliente da  Analytics al database Campaign. Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
+La riconciliazione è il processo di corrispondenza del cliente da Analytics al database Campaign. Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
 
 Per motivi di prestazioni, la corrispondenza deve essere eseguita in modalità batch tramite un flusso di lavoro.
 La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lavoro. Di conseguenza, il ritardo tra la ricezione di un evento in  Adobe Campaign e la relativa elaborazione da parte di un flusso di lavoro di marketing è di 15 minuti.
