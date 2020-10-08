@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 48f491b7-bf7b-457f-9cf2-db2bbf4eceea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Per ulteriori informazioni, consulta l’esempio completo di implementazione: [C
 
 ## Creazione di un&#39;istanza di contenuto {#creating-a-content-instance}
 
-Puoi creare contenuti direttamente nella struttura di Adobe Campaign da utilizzare nei flussi di lavoro, da esportare o da inserire direttamente nelle nuove consegne.
+Potete creare contenuti direttamente nella struttura  di Adobe Campaign da usare nei flussi di lavoro, da esportare o da inserire direttamente nelle nuove consegne.
 
 Effettuate le seguenti operazioni:
 
@@ -78,11 +78,11 @@ Effettuate le seguenti operazioni:
    >
    >Potete autorizzare la generazione di contenuti non approvati. A questo scopo, modificate l’opzione pertinente nel modello di pubblicazione. Per ulteriori informazioni, vedere [Creazione e configurazione del modello](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
 
-   I contenuti HTML e di testo vengono generati per impostazione predefinita nella cartella di **pubblicazione** dell&#39;istanza Adobe Campaign. Potete modificare la cartella della pubblicazione tramite l’opzione **NcmPublishingDir** .
+   I contenuti HTML e Testo vengono generati per impostazione predefinita nella cartella di **pubblicazione** dell’istanza Adobe Campaign . Potete modificare la cartella della pubblicazione tramite l’opzione **NcmPublishingDir** .
 
 ## Distribuzione di un&#39;istanza di contenuto {#delivering-a-content-instance}
 
-Per creare un&#39;istanza di contenuto e distribuirla, è necessario collegare un modello di consegna al modello di pubblicazione utilizzato per generare il contenuto. Per ulteriori informazioni, consulta [Consegna](../../delivery/using/publication-templates.md#delivery).
+Per creare un&#39;istanza di contenuto e distribuirla, è necessario collegare un modello di consegna al modello di pubblicazione utilizzato per generare il contenuto. For more on this, refer to [Delivery](../../delivery/using/publication-templates.md#delivery).
 
 Inoltre, la cartella di archiviazione dei contenuti deve essere dedicata ai contenuti tratti da questo modello di pubblicazione (quando una cartella di contenuti consente di generare diversi tipi di contenuto, non è possibile creare automaticamente le consegne).
 
