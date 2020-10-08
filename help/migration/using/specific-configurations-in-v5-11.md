@@ -1,7 +1,7 @@
 ---
-title: Configurazioni specifiche in v5.11
-seo-title: Configurazioni specifiche in v5.11
-description: Configurazioni specifiche in v5.11
+title: Configurazioni specifiche nella versione v5.11
+seo-title: Configurazioni specifiche nella versione v5.11
+description: Configurazioni specifiche nella versione v5.11
 seo-description: null
 page-status-flag: never-activated
 uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: fc280640-528d-44de-87d8-52f443772abd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 3%
 
 ---
 
 
-# Configurazioni specifiche in v5.11{#specific-configurations-in-v5-11}
+# Configurazioni specifiche nella versione v5.11{#specific-configurations-in-v5-11}
 
 In questa sezione viene descritta la configurazione aggiuntiva necessaria per la migrazione dalla versione 5.11. È inoltre necessario configurare le impostazioni dettagliate nella sezione Configurazioni [](../../migration/using/general-configurations.md) generali.
 
-## Applicazioni Web {#web-applications}
+## Applicazioni web {#web-applications}
 
 Durante la migrazione verrà visualizzato automaticamente il seguente avviso:
 
@@ -37,13 +37,13 @@ Alcuni componenti delle applicazioni Web, ad esempio i vari campi formula, hanno
 Durante la migrazione, è **necessario** controllare il percorso del file di registro specificato nell&#39;avviso:
 
 * **Il file non è vuoto**: contiene avvisi che riguardano incoerenze registrate prima della migrazione e che ancora esistono. Può trattarsi di codice JavaScript in un&#39;applicazione Web che fa riferimento a un ID non esistente. Ogni errore deve essere controllato e corretto.
-* **Il file è vuoto**: ciò significa che Adobe Campaign non ha rilevato alcun problema.
+* **Il file è vuoto**: ciò significa che  Adobe Campaign non ha rilevato alcun problema.
 
 A prescindere dal fatto che il file sia vuoto o meno, dovete verificare che questi ID non siano utilizzati per la configurazione altrove (e, in questo caso, adattare la configurazione).
 
 ## Flussi di lavoro {#workflows}
 
-Poiché il nome della directory di installazione di Adobe Campaign è cambiato, alcuni flussi di lavoro potrebbero non funzionare dopo la migrazione. Se un flusso di lavoro fa riferimento alla directory nl5 in una delle sue attività, si verificherà un errore. Sostituisci questo riferimento con **build**. È possibile eseguire una query SQL per identificare i flussi di lavoro seguenti (esempio PostgreSQL):
+Poiché il nome della directory di installazione di Adobe Campaign  è cambiato, alcuni flussi di lavoro potrebbero non funzionare dopo la migrazione. Se un flusso di lavoro fa riferimento alla directory nl5 in una delle sue attività, si verificherà un errore. Sostituisci questo riferimento con **build**. È possibile eseguire una query SQL per identificare i flussi di lavoro seguenti (esempio PostgreSQL):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -53,9 +53,9 @@ WHERE mData LIKE '%nl5%';
 
 ## Facilità di utilizzo {#user-friendliness}
 
-La home page di Adobe Campaign v5.11 non è più disponibile.
+La home page  Adobe Campaign v5.11 non è più disponibile.
 
-Sebbene non sia consigliato, esistono alcune soluzioni per mantenere interfacce specifiche da Adobe Campaign v5.11. Per maggiori informazioni, contattateci.
+Sebbene non sia consigliato, esistono alcune soluzioni per mantenere interfacce specifiche da  Adobe Campaign v5.11. Per maggiori informazioni, contattateci.
 
 ## MySQL {#mysql}
 
@@ -77,10 +77,10 @@ Se sono state apportate modifiche alla struttura del database, durante la config
 
 1. Prima di avviare la migrazione, eseguire il backup del database.
 1. Eliminare le modifiche SQL.
-1. Esegui l&#39;aggiornamento successivo in base alla procedura descritta nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Eseguite l&#39;aggiornamento successivo in base alla procedura descritta nella sezione [Prerequisiti per la migrazione a  Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
    >[!NOTE]
    >
-   >È fondamentale seguire i passaggi di migrazione descritti nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >È fondamentale seguire i passaggi di migrazione descritti nella sezione [Prerequisiti per la migrazione a  Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
 1. Reintegrare le modifiche SQL.
 
 In questo esempio è stata creata una visualizzazione **NmcTrackingLogMessages** con un campo **Timestamp** denominato **tslog**. In questo caso, la procedura di migrazione non riesce e viene visualizzato il seguente messaggio di errore:
@@ -93,11 +93,11 @@ In questo esempio è stata creata una visualizzazione **NmcTrackingLogMessages**
 
 Per essere certi che il post-aggiornamento funzioni, è necessario eliminare la vista prima della migrazione e ricrearla dopo la migrazione, adattandola alla modalità TIMESTAMP WITH TIMEZONE.
 
-## Tracciamento {#tracking}
+## Tracking {#tracking}
 
-La formula di tracciamento è stata modificata. Durante la migrazione, la vecchia formula (v5) viene sostituita dalla nuova (v7). Se utilizzi una formula personalizzata in Adobe Campaign v5, questa configurazione deve essere adattata in Adobe Campaign v7 (opzioni **NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** ).
+La formula di tracciamento è stata modificata. Durante la migrazione, la vecchia formula (v5) viene sostituita dalla nuova (v7). Se utilizzate una formula personalizzata in  Adobe Campaign v5, questa configurazione deve essere adattata  Adobe Campaign v7 (opzioni **NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** ).
 
-È stata modificata anche la gestione del tracciamento Web. Una volta eseguita la migrazione a v7, è necessario avviare la procedura guidata di distribuzione per completare la configurazione del tracciamento Web.
+È stata modificata anche la gestione del tracciamento Web. Una volta eseguita la migrazione alla versione v7, è necessario avviare la procedura guidata di distribuzione per completare la configurazione del tracciamento Web.
 
 ![](assets/migration_web_tracking.png)
 
@@ -111,15 +111,15 @@ Sono disponibili tre modalità:
 >
 >Per ulteriori informazioni su queste tre modalità, consulta [questa sezione](../../configuration/using/about-web-tracking.md).
 
-## Struttura ad albero di Adobe Campaign v7 {#campaign-vseven-tree-structure}
+##  struttura ad albero Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
 Durante la migrazione, la struttura ad albero viene automaticamente riorganizzata in base agli standard v7. Le nuove cartelle vengono aggiunte, le cartelle obsolete vengono eliminate e il relativo contenuto viene inserito nella cartella &quot;Per spostare&quot;. Tutti gli elementi in questa cartella devono essere controllati dopo la migrazione, e il consulente deve decidere di tenerli o di eliminarli. Gli articoli da conservare devono essere spostati nel posto giusto.
 
 È stata aggiunta un&#39;opzione per disattivare la migrazione automatica della struttura di navigazione. Questa operazione è ora manuale. Le cartelle obsolete non vengono eliminate e non vengono aggiunte nuove cartelle. Questa opzione deve essere utilizzata solo se la struttura di navigazione out-of-the-box v5 ha subito troppe modifiche. Aggiungere l’opzione alla console prima di eseguire la migrazione nel **[!UICONTROL Administration > Options]** nodo:
 
 * Nome interno: NlMigration_KeepFolderStructure
-* Tipo di dati:Integer
-* Valore (testo): 1
+* Tipo di dati: Integer
+* Valore (testo): 3
 
 Se utilizzate questa opzione, dopo la migrazione dovrete eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.
 
@@ -164,7 +164,7 @@ Le cartelle obsolete da eliminare dopo la migrazione sono le seguenti:
 | ncmSrcSchema | Schemi di dati | Content Manager installato |
 | ncmStylesheet | File di stile XSL | Content Manager installato |
 | nmsAdminPlan | Amministrazione | Campagna installata |
-| nmsResourcePlan | Risorse | Campagna installata |
+| nmsResourcePlan | Resources | Campagna installata |
 | nmsResourcesModels | Modelli | Campagna installata |
 | nmsRootPlan | Gestione delle campagne | Campagna installata |
 | nmsOperator | Operatori marketing | MRM installato |
