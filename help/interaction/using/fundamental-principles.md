@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 discoiquuid: 695cf33f-1cc7-4ae8-8ef6-05aa65219411
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Esistono due ambienti per ciascuna dimensione di targeting utilizzata per gestir
 
    La procedura di approvazione delle offerte è dettagliata nella sezione [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md) .
 
-* Un ambiente live in cui le offerte approvate dall&#39;ambiente di progettazione, così come i vari spazi di offerta, filtri, categorie e regole configurati nell&#39;ambiente di progettazione possono essere trovati tutti. Durante una chiamata al motore delle offerte, il motore utilizzerà sempre le offerte dall&#39;ambiente live.
+* Un ambiente live in cui le offerte approvate dall&#39;ambiente di progettazione, così come i vari spazi di offerta, filtri, categorie e regole configurati nell&#39;ambiente di progettazione, sono tutti reperibili. Durante una chiamata al motore delle offerte, il motore utilizzerà sempre le offerte dall&#39;ambiente live.
 
 Un&#39;offerta viene distribuita solo sugli spazi di offerta selezionati durante il processo di approvazione. Pertanto, un&#39;offerta può essere live ma inutilizzabile su uno spazio di offerta che è anche live.
 
