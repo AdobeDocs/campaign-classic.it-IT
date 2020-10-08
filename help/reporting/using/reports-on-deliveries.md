@@ -1,7 +1,7 @@
 ---
-title: Rapporti sulle consegne
-seo-title: Rapporti sulle consegne
-description: Rapporti sulle consegne
+title: Report sulle consegne
+seo-title: Report sulle consegne
+description: Report sulle consegne
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
 
-# Informazioni sui rapporti sulle consegne{#reports-on-deliveries}
+# Informazioni sui report sulle consegne{#reports-on-deliveries}
 
-Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console clienti o da un browser Internet.
+ Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console del cliente o da un browser Internet.
 
 Sono disponibili i seguenti tipi di report:
 
@@ -42,16 +42,16 @@ Quando il rapporto viene generato, potete eseguire varie azioni utilizzando le i
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-È possibile:
+Puoi:
 
 * Esportare il rapporto in Excel, PDF o Open Document,
 * Stampa il rapporto,
 * Creare la cronologia del rapporto,
-* Visualizzare diverse storie di rapporti,
+* Visualizzare diverse cronologie dei rapporti,
 * Aggiorna i dati nel rapporto.
 
 >[!NOTE]
 >
 >Alcuni rapporti presentano grafici (curve, barre, funnel, ecc.). Sposta il cursore su un grafico per visualizzarne i valori.
 
-Per ulteriori informazioni su queste opzioni, consultare [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
