@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +28,7 @@ Per impostazione predefinita, il raccoglitore file è un&#39;attività persisten
 
 I file devono trovarsi sul server in cui viene eseguito il modulo wfserver responsabile del flusso di lavoro. Se più moduli wfserver vengono distribuiti su un&#39;unica istanza, è necessario specificare l&#39;affinità delle attività che utilizzano tali file o l&#39;affinità complessiva del flusso di lavoro.
 
-## Proprietà {#properties}
+## Properties {#properties}
 
 La prima scheda dell&#39; **[!UICONTROL File collector]** attività consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate in [Inbound Emails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** schede).
 
