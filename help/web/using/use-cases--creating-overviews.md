@@ -11,11 +11,8 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: a3834828-4d39-4699-b648-d399797b8ea7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -92,7 +89,7 @@ In una panoramica, potete scegliere di accedere ai dati a seconda della posizion
 
 ## Aggiunta di un pulsante per configurare una nuova applicazione Web {#adding-a-button-to-configure-a-new-web-application}
 
-1. Posizionare il cursore sull&#39; **[!UICONTROL Page]** elemento e aggiungere un collegamento (**[!UICONTROL Static elements > Link]**).
+1. Posiziona il cursore sull’ **[!UICONTROL Page]** elemento e aggiungi un collegamento (**[!UICONTROL Static elements > Link]**).
 1. Modificate l&#39;etichetta del collegamento in quanto apparirà sul pulsante nella panoramica.
 
    Nel nostro esempio, l&#39;etichetta è **Nuova**.
