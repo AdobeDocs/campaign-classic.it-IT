@@ -1,7 +1,7 @@
 ---
-title: I flussi di lavoro tecnici
-seo-title: I flussi di lavoro tecnici
-description: I flussi di lavoro tecnici
+title: Informazioni sui flussi di lavoro tecnici
+seo-title: Informazioni sui flussi di lavoro tecnici
+description: Informazioni sui flussi di lavoro tecnici
 seo-description: null
 page-status-flag: never-activated
 uuid: 60b66853-ae4f-458d-bd62-076f2d7c965f
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 38%
 
 ---
 
 
-# I flussi di lavoro tecnici{#about-technical-workflows}
+# Informazioni sui flussi di lavoro tecnici{#about-technical-workflows}
 
-I flussi di lavoro descritti in questa sezione sono installati con i diversi pacchetti predefiniti di Adobe Campaign. Questi pacchetti e i relativi flussi di lavoro tecnici dipendono dal contratto di licenza. Per impostazione predefinita, sono disponibili in una sottocartella del nodo seguente: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+I flussi di lavoro descritti in questa sezione vengono installati con i diversi pacchetti  Adobe Campaign incorporati. Questi pacchetti e i relativi flussi di lavoro tecnici dipendono dal contratto di licenza. Per impostazione predefinita, sono disponibili in una sottocartella del nodo seguente: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 >[!NOTE]
 >
@@ -34,19 +34,19 @@ Questa sezione include informazioni sui flussi di lavoro tecnici che riguardano 
 
 * [Consegne](../../workflow/using/deliveries.md)
 * [Campagna](../../workflow/using/campaign.md)
-* [Analisi Web](../../workflow/using/web-analytics.md)
+* [Analisi web](../../workflow/using/web-analytics.md)
 * [Marketing distribuito](../../workflow/using/distributed-marketing.md)
 * [Monitoraggio della realizzabilità (recapito e-mail)](../../workflow/using/email-deliverability.md)
 * [Rendering inbox (IR)](../../workflow/using/inbox-rendering.md)
 * [Interazione](../../workflow/using/interaction.md)
 * [Controllo del motore di offerta](../../workflow/using/control-of-offer-engine.md)
-* [Centro messaggi (controllo)](../../workflow/using/message-center--control-.md)
-* [Centro messaggi (esecuzione)](../../workflow/using/message-center--execution-.md)
+* [Centro messaggi (Controllo)](../../workflow/using/message-center--control-.md)
+* [Centro messaggi (Esecuzione)](../../workflow/using/message-center--execution-.md)
 * [Canale app mobile](../../workflow/using/mobile-app-channel.md)
 * [Canale LINE](../../workflow/using/line-channel.md)
 * [Risorse di marketing (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [Social marketing](../../workflow/using/social-marketing.md)
 * [Integrazioni con le soluzioni Adobe Experience Cloud](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Privacy Data Protection](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Regolamento sulla protezione dei dati sulla privacy](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [Trasferisci a mid-sourcing](../../workflow/using/transfer-to-mid-sourcing.md)
-* [Piattaforma mid-sourcing](../../workflow/using/mid-sourcing-platform.md)
+* [Piattaforma di mid-sourcing](../../workflow/using/mid-sourcing-platform.md)
