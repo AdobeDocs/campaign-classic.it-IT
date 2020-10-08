@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 3%
 
 ---
 
@@ -37,4 +37,4 @@ Connettore HTTP/2: è necessario consentire la comunicazione con e dai server se
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, consulta [Configurazione dell’applicazione mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+>Per ulteriori informazioni sui due connettori, vedere [Configurazione dell’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
