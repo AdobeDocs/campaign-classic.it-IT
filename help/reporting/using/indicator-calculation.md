@@ -11,11 +11,8 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 1%
@@ -228,7 +225,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
  </thead> 
  <tbody> 
   <tr> 
-   <td> Numero di messaggi da inviare<br /> </td> 
+   <td> Number of messages to deliver<br /> </td> 
    <td> @totalTarget<br /> </td> 
    <td> Numero totale di messaggi elaborati durante l'analisi di consegna.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
@@ -368,7 +365,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
    <td> Nuovi contatti<br /> </td> 
    <td> @newContatti<br /> </td> 
    <td> Conteggio del numero di visitatori collegati a un destinatario.<br /> </td> 
-   <td> Formula: count(@id)<br /> Filtro: @Recipi-id != 0<br /> </td> 
+   <td> Formula: count(@id)<br /> Filtro: @receive-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
@@ -473,7 +470,7 @@ Questo rapporto è basato sulla **[!UICONTROL Services]** tabella (nms:service).
    <td> Registrato<br /> </td> 
    <td> @_subscriber<br /> </td> 
    <td> Conteggio delle persone registrate il giorno precedente.<br /> </td> 
-   <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
+   <td> sum(Iif(@created &lt; addDays(getDate(), (-1)), 1, 0)<br /> </td> 
   </tr> 
   <tr> 
    <td> Iscrizioni<br /> </td> 
@@ -482,7 +479,7 @@ Questo rapporto è basato sulla **[!UICONTROL Services]** tabella (nms:service).
    <td> sum(Iif(@action = 1 e @date &gt; addDays(getDate(), (-1)), 1, 0)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Sottoscrizioni non riuscite<br /> </td> 
+   <td> Abbonamenti non riusciti<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> conteggio di sottoscrizioni (azione = 0) nel giorno precedente.<br /> </td> 
    <td> sum(Iif(@action = 0 e @date &gt; addDays(getDate(), (-1)), 1, 0)<br /> </td> 
@@ -567,7 +564,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Reclami<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo aggiunto all'elenco dei blocchi".<br /> </td> 
+   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo aggiunto al elenco Bloccati ".<br /> </td> 
    <td> Count(@status=2 e msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -597,7 +594,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Clic cumulati<br /> </td> 
    <td> @totalRecipientClick<br /> </td> 
-   <td> Conteggio di tutti gli @ids con una categoria di URL che equivale a "Clic e-mail".<br /> </td> 
+   <td> Conteggio di tutti gli @ids con una categoria di URL che corrisponde a "Clic e-mail".<br /> </td> 
    <td> count(Iif([url/@type]=1, @id, 0)<br /> </td> 
   </tr> 
   <tr> 
@@ -728,7 +725,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
   <tr> 
    <td> Clic cumulati<br /> </td> 
    <td> @totalClicks<br /> </td> 
-   <td> Rapporto tra il numero totale di clic dei destinatari con targeting e il numero di messaggi consegnati con esito positivo.<br /> </td> 
+   <td> Rapporto tra il numero totale di clic dei destinatari con targeting e il numero di messaggi inviati con esito positivo.<br /> </td> 
    <td> percentuale([indicatori/@totalRecipientClick], [indicatori/@success])<br /> </td> 
   </tr> 
   <tr> 
@@ -769,7 +766,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
   <tr> 
    <td> Messaggi rifiutati dalla regola<br /> </td> 
    <td> @rifiutare<br /> </td> 
-   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, messo in quarantena, aggiunto all'elenco dei blocchi, ecc.<br /> </td> 
+   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, messo in quarantena, aggiunto al elenco Bloccati , ecc.<br /> </td> 
    <td> sum([proprietà/@rifiuto])<br /> </td> 
   </tr> 
   <tr> 
@@ -891,7 +888,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery and tracking statistics]*
    <td> Countdistinta(Iif([url/@type]=1, @source-id, 0) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Sottoscrizioni non riuscite<br /> </td> 
+   <td> Abbonamenti non riusciti<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Numero totale di @ids per i quali la categoria URL è uguale a "Rifiuto".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0)<br /> </td> 
@@ -928,7 +925,7 @@ L&#39;indicatore **Inviato** (@sent), a cui si accede tramite il nodo **Consegne
 
 ## Sincronizzazione indicatori {#indicator-synchronization}
 
-In caso di desincronizzazione o incoerenza per alcuni indicatori, selezionate la consegna interessata nell&#39;elenco di cartelle del Adobe Campaign , fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fate clic **[!UICONTROL Next]**, quindi fate clic **[!UICONTROL Finish]**.
+In caso di desincronizzazione o incoerenza per alcuni indicatori, selezionate la distribuzione interessata in  Adobe Campaign Explorer, fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fate clic **[!UICONTROL Next]**, quindi fate clic **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
@@ -944,4 +941,4 @@ I destinatari di destinazione sono tutti i destinatari a cui è stato inviato il
 
 Il numero di persone include destinatari mirati più tutte le persone a cui è stato inviato il messaggio e-mail. Ogni volta che si apre o si fa clic in un nuovo browser (il messaggio non è ancora stato aperto), alle statistiche viene aggiunta un&#39;altra persona.
 
-Ad esempio, se ricevi un&#39;e-mail (inviata dal  Adobe Campaign) al lavoro e ti apri o fai clic su di essa, verrai conteggiato come destinatario (ad es. destinatario=1, persona=1). Se inviate questa e-mail a due amici, il numero di destinatari con targeting sarà ancora uguale a uno, mentre il numero di persone sarà uguale a tre. Il valore 3 coincide con ogni apertura o clic in un nuovo browser.
+Ad esempio, se ricevi un&#39;e-mail (inviata da  Adobe Campaign) al lavoro e ti apri o fai clic su di essa, verrai conteggiato come destinatario (ad es. destinatario=1, persona=1). Se inviate questa e-mail a due amici, il numero di destinatari con targeting sarà ancora uguale a uno, mentre il numero di persone sarà uguale a tre. Il valore 3 coincide con ogni apertura o clic in un nuovo browser.
