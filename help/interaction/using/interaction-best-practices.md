@@ -1,6 +1,6 @@
 ---
-title: Best practice per l'interazione con Adobe Campaign Classic
-description: In questa sezione viene illustrato l'approccio migliore per gestire il modulo Interazione in Adobe Campaign Classic.
+title: Best practice di interazione Adobe Campaign Classic
+description: In questa sezione viene illustrato l'approccio migliore per gestire il modulo Interaction in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 88bcc1d5-be8f-4a63-9b4a-3843b5751abe
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 85e8348f-d240-4a36-b7bd-645807dbc227
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 91f80adf0b84d45a71e07079d4e72fd7628b41c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 91f80adf0b84d45a71e07079d4e72fd7628b41c1
 
 In questa sezione viene illustrato l&#39;approccio migliore per gestire il modulo Interazione in Adobe Campaign Classic, incluse le regole di idoneità, i filtri predefiniti, le attività del flusso di lavoro e le opzioni del database.
 
-L&#39;interazione in Adobe Campaign richiede un&#39;attenta gestione per funzionare in modo efficiente. È necessario trovare un equilibrio tra il numero di contatti e il numero di categorie e offerte. Se questi fattori non vengono trattati con attenzione, l&#39;istanza di Adobe Campaign potrebbe rilevare dei problemi.
+L&#39;interazione in  Adobe Campaign richiede un&#39;attenta gestione per funzionare in modo efficiente. È necessario trovare un equilibrio tra il numero di contatti e il numero di categorie e offerte. Se tali fattori non vengono trattati con attenzione, l&#39;istanza di Adobe Campaign  potrebbe incontrare problemi.
 
 ### Implementazione {#implementation}
 
@@ -61,7 +61,7 @@ Di seguito sono elencate alcune best practice relative alla tabella delle propos
 
 ## Suggerimenti e trucchi per gestire le offerte {#tips-managing-offers}
 
-Questa sezione contiene consigli più dettagliati sulla gestione delle offerte e sull&#39;utilizzo del modulo Interazione in Adobe Campaign Classic.
+Questa sezione contiene consigli più dettagliati sulla gestione delle offerte e sull&#39;utilizzo del modulo Interaction in Adobe Campaign Classic.
 
 ### Utilizzo di più spazi di offerta in una distribuzione tramite e-mail {#multiple-offer-spaces}
 
