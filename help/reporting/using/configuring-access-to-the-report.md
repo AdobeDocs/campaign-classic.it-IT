@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell'accesso al rapporto
-seo-title: Configurazione dell'accesso al rapporto
-description: Configurazione dell'accesso al rapporto
+title: Configurazione dell’accesso al report
+seo-title: Configurazione dell’accesso al report
+description: Configurazione dell’accesso al report
 seo-description: null
 page-status-flag: never-activated
 uuid: d32d9805-f84f-457f-b37b-a8278642336a
@@ -11,20 +11,20 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: dd50ca25-8fa2-48fa-84cc-a63e476701a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 2%
 
 ---
 
 
-# Configurazione dell&#39;accesso al rapporto{#configuring-access-to-the-report}
+# Configurazione dell’accesso al report{#configuring-access-to-the-report}
 
 ## Contesto di visualizzazione del report {#report-display-context}
 
-Definisci il contesto di visualizzazione del rapporto nella piattaforma Adobe Campaign utilizzando la **[!UICONTROL Display]** scheda. L&#39;accesso a un rapporto dipende dal tipo di selezione, dalle condizioni di visualizzazione e dalle autorizzazioni di accesso.
+Definite il contesto di visualizzazione del rapporto nella piattaforma Adobe Campaign  utilizzando la **[!UICONTROL Display]** scheda. L&#39;accesso a un rapporto dipende dal tipo di selezione, dalle condizioni di visualizzazione e dalle autorizzazioni di accesso.
 
 ### Tipo di selezione {#selection-type}
 
@@ -33,7 +33,7 @@ L&#39;accesso al rapporto può essere limitato a un contesto specifico o a uno s
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
 * **[!UICONTROL Single selection]** : il rapporto è accessibile solo quando è selezionata una specifica entità.
-* **[!UICONTROL Multiple selection]** : l&#39;accesso al report viene eseguito quando sono selezionate più entità.
+* **[!UICONTROL Multiple selection]** : l&#39;accesso al report viene eseguito quando si selezionano più entità.
 * **[!UICONTROL Global]** : il rapporto è accessibile tramite l&#39;elenco dei report disponibili nell&#39;universo Reports.
 
 ### Sequenza di visualizzazione {#display-sequence}
@@ -103,7 +103,7 @@ Ad esempio, creeremo un collegamento a un rapporto per renderlo accessibile tram
    Ciò significa che il rapporto sarà accessibile tramite qualsiasi elenco di destinatari e che le statistiche riguarderanno i destinatari nell&#39;elenco selezionato.
 
 1. Salvataggio e visualizzazione del rapporto.
-1. Inserisci il tasto di collegamento. In questo caso, la chiave esterna del collegamento Cartelle.
+1. Inserisci il tasto di collegamento. In questo caso, la chiave esterna del collegamento &quot;Cartelle&quot;.
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
