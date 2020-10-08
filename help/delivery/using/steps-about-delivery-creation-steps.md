@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign Classic
-description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic.
+description: Scopri i passaggi principali per la creazione delle consegne in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c581f22261af7e083f6bd47e603d17d2d71e7ce6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ I passaggi principali per la creazione di una consegna sono i seguenti:
 
 1. **Invia la consegna**. [Leggi tutto](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Monitorare la consegna** (monitoraggio, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](../../delivery/using/monitoring-a-delivery.md) e [Tracciamento delle consegne](../../delivery/using/about-message-tracking.md) .
+1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](../../delivery/using/monitoring-a-delivery.md) e [Tracciamento delle consegne](../../delivery/using/about-message-tracking.md) .
 
 >[!NOTE]
 >
