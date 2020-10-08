@@ -1,7 +1,7 @@
 ---
-title: Cambia dimensione
-seo-title: Cambia dimensione
-description: Cambia dimensione
+title: Cambiare dimensione
+seo-title: Cambiare dimensione
+description: Cambiare dimensione
 seo-description: null
 page-status-flag: never-activated
 uuid: 6cb309c0-4096-47ce-b1d4-37a3ddafaaa1
@@ -11,18 +11,18 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 61583062-2349-4ab3-a3bf-310d21894f34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
 
-# Cambia dimensione{#change-dimension}
+# Cambiare dimensione{#change-dimension}
 
-L&#39;attività di modifica della dimensione consente di modificare la dimensione di targeting durante il ciclo di costruzione di destinazione. Lo spostamento dell&#39;asse dipende dal modello dati e dalla dimensione di input. Questo consente di passare dalla dimensione &quot;contratti&quot; alla dimensione &quot;clienti&quot;, ad esempio.
+L&#39;attività di modifica della dimensione consente di modificare la dimensione di targeting durante il ciclo di costruzione di destinazione. Lo spostamento dell&#39;asse dipende dal modello di dati e dalla dimensione di input. Questo consente di passare dalla dimensione &quot;contratti&quot; alla dimensione &quot;clienti&quot;, ad esempio.
 
 Potete inoltre utilizzare questa attività per definire le colonne aggiuntive della nuova destinazione.
 
@@ -40,7 +40,7 @@ Per configurare l’attività di modifica della dimensione, effettua i seguenti 
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   Quando scegliete di mantenere un solo record, una raccolta viene visualizzata nello schema di lavoro: Questa raccolta rappresenta tutti i record che non verranno inseriti nel targeting nel risultato finale (poiché viene mantenuto un solo record). Come tutte le altre raccolte, questa consente di calcolare gli aggregati o recuperare le informazioni nelle colonne.
+   Quando si sceglie di mantenere un solo record, una raccolta viene visualizzata nello schema di lavoro: Questa raccolta rappresenta tutti i record che non verranno inseriti nel targeting nel risultato finale (poiché viene mantenuto un solo record). Come tutte le altre raccolte, questa consente di calcolare gli aggregati o recuperare le informazioni nelle colonne.
 
    Ad esempio, se modificate la **[!UICONTROL Customers]** **[!UICONTROL Recipients]** dimensione, sarà possibile eseguire il targeting dei clienti di uno specifico store, aggiungendo al contempo il numero di acquisti effettuati.
 
