@@ -9,19 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
 
-# Il canale di posta elettronica{#about-email-channel}
+# Informazioni sul canale e-mail{#about-email-channel}
 
  Adobe Campaign consente di inviare in massa messaggi elettronici personalizzati a una popolazione specifica.
 
@@ -34,7 +31,7 @@ Prima di iniziare a inviare i messaggi e-mail:
 I passaggi principali per inviare un messaggio e-mail sono i seguenti:
 
 * [Creazione di una consegna e-mail](../../delivery/using/creating-an-email-delivery.md)
-* [Definizione della popolazione di destinazione](../../delivery/using/steps-defining-the-target-population.md)
+* [Definizione della popolazione target](../../delivery/using/steps-defining-the-target-population.md)
 * [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
 * [Invio del messaggio e-mail](../../delivery/using/sending-messages.md)
 * [Monitoraggio della consegna](../../delivery/using/monitoring-a-delivery.md)
