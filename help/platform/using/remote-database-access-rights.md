@@ -11,20 +11,20 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
 
 # Diritti di accesso al database remoto {#remote-database-access-rights}
 
-Innanzitutto, affinché l&#39;utente possa eseguire operazioni su un database esterno tramite FDA, quest&#39;ultimo deve avere uno specifico diritto denominato in Adobe Campaign.
+In primo luogo, affinché l&#39;utente possa eseguire operazioni su un database esterno tramite FDA, quest&#39;ultimo deve avere un diritto specifico denominato in  Adobe Campaign.
 
-1. Seleziona il **[!UICONTROL Administration > Access Management > Named Rights]** nodo in Adobe Campaign Explorer.
+1. Selezionate il **[!UICONTROL Administration > Access Management > Named Rights]** nodo in  Adobe Campaign Explorer.
 1. Crea un nuovo diritto specificando l&#39;etichetta scelta.
 1. Il **[!UICONTROL Name]** campo deve avere il seguente formato: **utente:base@server**, dove:
 
@@ -36,9 +36,9 @@ Innanzitutto, affinché l&#39;utente possa eseguire operazioni su un database es
       >
       >La parte **:base** è facoltativa in Oracle.
 
-1. Salva il nome a destra e collegalo all&#39;utente scelto dal **[!UICONTROL Administration > Access Management > Operators]** nodo di Adobe Campaign Explorer.
+1. Salvate il nome a destra e collegatelo all&#39;utente scelto dal **[!UICONTROL Administration > Access Management > Operators]** nodo di Adobe Campaign Explorer .
 
-Quindi, per elaborare i dati contenuti in un database esterno, l&#39;utente Adobe Campaign deve avere almeno i diritti di scrittura sul database per poter creare tabelle di lavoro. Questi vengono eliminati automaticamente da Adobe Campaign.
+Quindi, per elaborare i dati contenuti in un database esterno, l&#39;utente Adobe Campaign  deve disporre almeno dei diritti di scrittura sul database per poter creare tabelle di lavoro. Questi vengono eliminati automaticamente da  Adobe Campaign.
 
 In generale, sono necessari i seguenti diritti:
 
@@ -46,7 +46,7 @@ In generale, sono necessari i seguenti diritti:
 * **LEGGI dati**: accesso in sola lettura alle tabelle contenenti i dati dei clienti,
 * **LEGGI &#39;MetaData&#39;**: accesso ai cataloghi di dati del server per ottenere la struttura della tabella,
 * **CARICA**: carico di massa nelle tabelle di lavoro (richiesto quando si lavora su raccolte e join),
-* **CREA/RILASCIA** per **TABELLA/INDICE/PROCEDURA/FUNZIONE** (solo per le tabelle di lavoro generate da Adobe Campaign),
+* **CREA/RILASCIA** per **TABELLA/INDICE/PROCEDURA/FUNZIONE** (solo per tabelle di lavoro generate da  Adobe Campaign),
 * **EXPLAIN** (consigliato): per monitorare le prestazioni in caso di problemi,
 * **SCRIVI dati** (a seconda dello scenario di integrazione).
 
@@ -54,9 +54,9 @@ L&#39;amministratore del database deve far corrispondere questi diritti ai dirit
 
 ## Diritti FDA {#fda-rights}
 
-|   | Fiocco di neve | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake  | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Connessione al database remoto** | UTILIZZO IN MAGAZZINO, UTILIZZO SUL DATABASE E UTILIZZO SUI privilegi DELLO SCHEMA | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
+| **Connessione al database remoto** | UTILIZZO IN MAGAZZINO, UTILIZZO SUL DATABASE E UTILIZZO SUI privilegi DELLO SCHEMA | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
 | **Creazione di tabelle** | CREA IL privilegio TABELLA SU SCHEMA | CREA privilegio | CREATE TABLE, privilegio | CREA autorizzazione TABELLA | CREA privilegio | CREA privilegio |
 | **Creazione di indici** | N/D | CREA privilegio | Privilegi INDEX o CREATE ANY INDEX | Autorizzazione ALTER | CREA privilegio | Privilegio INDEX |
 | **Creazione di funzioni** | CREA FUNZIONE SUL privilegio SCHEMA | USAGE ON LANGUAGE plpythonu privilegio per poter chiamare script python esterni | CREA PROCEDURA o CREA QUALSIASI privilegio PROCEDURA | Autorizzazione CREATE FUNCTION | Privilegio USAGE | CREA privilegio ROUTINE |
@@ -70,9 +70,9 @@ L&#39;amministratore del database deve far corrispondere questi diritti ai dirit
 
 |   | DB2 UDB | TeraData | InfiniDB | IQ Sybase / Sybase ASE | Netezza | Greenplum | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Connessione al database remoto** | AUTORIZZAZIONE CONNECT | CONNECT, privilegio | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione CONNECT | Nessun privilegio richiesto | CONNECT, privilegio | CONNECT, privilegio |
+| **Connessione al database remoto** | autorità CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione CONNECT | Nessun privilegio richiesto | privilegio CONNECT | privilegio CONNECT |
 | **Creazione di tabelle** | Autorità CREATETAB | CREA TABELLA o TABELLA, parola chiave | CREA privilegio | Autorità di RISORSA e autorizzazione CREATE | TABLE, privilegio | CREA privilegio | CREA privilegio |
-| **Creazione di indici** | Privilegio INDEX | CREATE INDEX o parola chiave INDEX | Privilegio INDEX | Autorità di RISORSA e autorizzazione CREATE | Privilegio INDEX | CREA privilegio | CREA privilegio |
+| **Creazione di indici** | Privilegio INDEX | parola chiave CREATE INDEX o INDEX | Privilegio INDEX | Autorità di RISORSA e autorizzazione CREATE | Privilegio INDEX | CREA privilegio | CREA privilegio |
 | **Creazione di funzioni** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA FUNZIONE o FUNZIONE, parola chiave | CREA privilegio ROUTINE | Autorità di RISORSA o autorità DBA per le funzioni Java | Privilegio FUNCTION | Privilegio USAGE | CREA privilegio FUNCTION |
 | **Creazione di procedure** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA PROCEDURA o PROCEDURA, parola chiave | CREA privilegio ROUTINE | Autorità delle risorse | Privilegio di PROCEDURA | Privilegio USAGE | CREA privilegio FUNCTION |
 | **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Privilegio DROPIN o privilegio CONTROL o proprietario dell&#39;oggetto | DROP &lt; oggetto > o parola chiave correlata a un oggetto | Privilegio DROP | Proprietario dell&#39;oggetto o dell&#39;autorità DBA | Privilegio DROP | Proprietario dell&#39;oggetto | Proprietario dell&#39;oggetto |
