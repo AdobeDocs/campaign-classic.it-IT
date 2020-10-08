@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # Connettori precedenti {#legacy-connectors}
 
-I connettori FDA precedenti sono ancora supportati da Adobe. Tuttavia, si consiglia di sostituirli con alternative più recenti elencate in questa [pagina](../../platform/using/specific-configuration-database.md).
+I connettori FDA precedenti sono ancora supportati  Adobe. Tuttavia, si consiglia di sostituirli con alternative più recenti elencate in questa [pagina](../../platform/using/specific-configuration-database.md).
 
 ## Configurare l&#39;accesso a Hadoop 2.1 {#configure-access-to-hadoop}
 
@@ -134,7 +131,7 @@ I connettori FDA precedenti sono ancora supportati da Adobe. Tuttavia, si consig
 
 ## Configurare l&#39;accesso a Netezza {#configure-access-to-netezza}
 
-La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive nel server del Adobe Campaign :
+La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive nel server Adobe Campaign :
 
 1. Installare i driver ODBC per Netezza, in base al sistema operativo utilizzato:
 
@@ -173,13 +170,13 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
       Socket           = 16384
       ```
 
-1. Specificate le variabili di ambiente del server di Adobe Campaign :
+1. Specificate le variabili di ambiente del server Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib e /usr/local/nz/lib64. &quot;/usr/local/nz&quot; corrisponde al repository di installazione offerto per impostazione predefinita durante l&#39;installazione dei driver. Qui è necessario specificare il repository selezionato per l&#39;installazione.
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: posizione del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
-1. In Campaign Classic, potete quindi configurare il vostro account Netezza esterno. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, potete quindi configurare il vostro account Netezza esterno. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
@@ -203,7 +200,7 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
 
 ## Configurare l&#39;accesso a Sybase IQ {#configure-access-to-sybase-iq}
 
-La connessione a un database esterno Sybase IQ in FDA richiede configurazioni aggiuntive nel server del Adobe Campaign :
+La connessione a un database esterno Sybase IQ in FDA richiede configurazioni aggiuntive nel server Adobe Campaign :
 
 1. Verificate che il pacchetto unixodbc sia sul server.
 1. Installate **iq_odbc**. Un errore può verificarsi alla fine dell&#39;installazione. Questo errore può essere ignorato.
@@ -240,7 +237,7 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
    * Se utilizzi un file customer.sh per dichiarare il percorso: aggiungete il percorso /opt/sybase/IQ-16_0/lib64 per la variabile LD_LIBRARY_PATH.
    * In caso contrario, utilizzare un comando Unix.
 
-1. In Campaign Classic, potete quindi configurare il vostro account esterno Sybase IQ. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, puoi quindi configurare il tuo account esterno Sybase IQ. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
@@ -258,11 +255,11 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
 
 >[!NOTE]
 >
->Per Windows, è necessario installare il client Sybase IQ sul server di Adobe Campaign  e creare una connessione ODBC. Assicurarsi di creare un&#39;origine dati di sistema quando il server di Adobe Campaign  (nlserver) è in esecuzione come servizio in Windows.
+>Per Windows, è necessario installare il client Sybase IQ sul server Adobe Campaign  e creare una connessione ODBC. Assicurarsi di creare un&#39;origine dati di sistema quando il server Adobe Campaign  (nlserver) è in esecuzione come servizio in Windows.
 
 ## Configurare l&#39;accesso a Teradata {#configure-access-to-teradata}
 
-La connessione a un database esterno Teradata in FDA richiede alcune configurazioni aggiuntive sul server del Adobe Campaign . Per ulteriori informazioni su come configurare il database Teradata, consulta questa [pagina](../../platform/using/appendices-fda.md#teradata-configuration).
+La connessione a un database esterno Teradata in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign . Per ulteriori informazioni su come configurare il database Teradata, consulta questa [pagina](../../platform/using/appendices-fda.md#teradata-configuration).
 
 1. Installare il driver [ODBC per Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -297,13 +294,13 @@ La connessione a un database esterno Teradata in FDA richiede alcune configurazi
       SQLLevel=1
       ```
 
-1. Specificate le variabili di ambiente del server di Adobe Campaign :
+1. Specificate le variabili di ambiente del server Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: /opt/teradata/client/15.10/lib64 e /opt/teradata/client/15.10/odbc_64/lib.
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NLSPATH**: posizione del file opermsgs.cat (/opt/teradata/client/15.10/msg/opermsgs.cat)
 
-1. In Campaign Classic, puoi quindi configurare il tuo account esterno Teradata. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, puoi quindi configurare il tuo account esterno Teradata. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
@@ -321,7 +318,7 @@ La connessione a un database esterno Teradata in FDA richiede alcune configurazi
 
 ## Configurare l&#39;accesso a SAP HANA {#configure-access-to-sap-hana}
 
-La connessione a un database esterno SAP HANA in FDA richiede alcune configurazioni aggiuntive sul server del Adobe Campaign :
+La connessione a un database esterno SAP HANA in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign :
 
 1. Installare i driver ODBC per SAP HANA, in base al sistema operativo utilizzato:
 
@@ -352,12 +349,12 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
       Driver = /usr/sap/hdbclient/libodbcHDB.so
       ```
 
-1. Specificate le variabili di ambiente del server di Adobe Campaign :
+1. Specificate le variabili di ambiente del server Adobe Campaign :
 
    * **LD_LIBRARY_PATH**: Deve includere il collegamento al client SAP Hana (per impostazione predefinita, /usr/sap/hdbclient/libodbcHDB.so).
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
 
-1. In Campaign Classic, è quindi possibile configurare l&#39;account esterno SAP Hana. Dal **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, puoi quindi configurare il tuo account esterno SAP Hana. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
