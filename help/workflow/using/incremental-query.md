@@ -1,7 +1,7 @@
 ---
-title: Query incrementale
-seo-title: Query incrementale
-description: Query incrementale
+title: Incremental query
+seo-title: Incremental query
+description: Incremental query
 seo-description: null
 page-status-flag: never-activated
 uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# Query incrementale{#incremental-query}
+# Incremental query{#incremental-query}
 
 Una query incrementale consente di selezionare periodicamente una destinazione in base a un criterio, escludendo le persone già interessate per questo criterio.
 
@@ -42,14 +39,14 @@ La query è definita come per le query standard, ma la sua esecuzione è pianifi
 
 Per eseguire questa operazione:
 
-1. Nella **[!UICONTROL Scheduling & History]** scheda, selezionare l&#39; **[!UICONTROL Schedule execution]** opzione. L&#39;attività rimane attiva una volta creata e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l&#39;opzione è disabilitata, la query viene eseguita immediatamente **e in una sola volta**.
-1. Fai clic sul pulsante **[!UICONTROL Change]**. 
+1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. L&#39;attività rimane attiva una volta creata e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l&#39;opzione è disabilitata, la query viene eseguita immediatamente **e in una sola volta**.
+1. Fai clic sul pulsante **[!UICONTROL Change]**.
 
    Nella **[!UICONTROL Schedule editing wizard]** finestra potete configurare il tipo di frequenza, ricorrenza evento e periodo di validità dell’evento.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Fate clic **[!UICONTROL Finish]** per salvare la pianificazione.
+1. Click **[!UICONTROL Finish]** to save the schedule.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
