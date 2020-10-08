@@ -9,14 +9,11 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -88,7 +85,7 @@ L&#39;applicazione Web viene creata tramite il **[!UICONTROL Web Applications]**
 
 Le applicazioni Web sono memorizzate nel **[!UICONTROL Resources > Online > Web Applications]** nodo della struttura di Adobe Campaign . Le configurazioni sono suddivise nelle cartelle seguenti:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: contiene i modelli di rendering per la presentazione del modulo Web (applicazioni e sondaggi). Il modello consente di generare il modulo. Utilizza anche un foglio di stile CSS. Questo foglio di stile può essere sovraccaricato a livello di modello. For more on this, refer to [this page](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Configuration > Form renderings]**: contiene i modelli di rendering per la presentazione del modulo Web (applicazioni e sondaggi). Il modello consente di generare il modulo. Utilizza anche un foglio di stile CSS. Questo foglio di stile può essere sovraccaricato a livello di modello. Per ulteriori informazioni, consulta [questa pagina](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contiene modelli di modulo. Per creare un modulo o un&#39;applicazione Web, è necessario iniziare da un modello.
 
 ## Modelli di applicazioni Web {#web-application-templates}
