@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: affecd87-00a3-4d50-92d3-31ac6228948b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Memorizzazione delle risposte raccolte {#storing-collected-answers}
 
-Oltre alle modalità di memorizzazione standard comuni a tutti i moduli Web in Adobe Campaign (campi di database e variabili locali), i sondaggi consentono l&#39;estensione dinamica del modello dati utilizzando i campi archiviati.
+Oltre alle modalità di memorizzazione standard comuni a tutti i moduli Web in  Adobe Campaign (campo di database e variabile locale), i sondaggi consentono l&#39;estensione dinamica del modello dati utilizzando i campi archiviati.
 
 >[!CAUTION]
 >
