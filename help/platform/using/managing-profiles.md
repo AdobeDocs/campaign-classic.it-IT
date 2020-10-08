@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: ef7aa3a0-249f-46eb-9300-5b97bce31c8c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 3%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ## Struttura destinatari {#recipient-tree}
 
-Per accedere alle funzionalità avanzate di gestione dei destinatari, devi modificare la struttura ad albero di Adobe Campaign. A tale scopo, fare clic sul **[!UICONTROL Explorer]** pulsante nella barra degli strumenti.
+Per accedere alle funzionalità avanzate di gestione dei destinatari, è necessario modificare la struttura  Adobe Campaign. A tale scopo, fare clic sul **[!UICONTROL Explorer]** pulsante nella barra degli strumenti.
 
-Per impostazione predefinita, i destinatari sono memorizzati nel **[!UICONTROL Profiles and targets]** nodo della struttura di Adobe Campaign. Dallo stesso nodo, puoi creare una o più cartelle e sottocartelle per memorizzare i profili dei destinatari.
+Per impostazione predefinita, i destinatari sono memorizzati nel **[!UICONTROL Profiles and targets]** nodo della struttura di Adobe Campaign . Dallo stesso nodo, puoi creare una o più cartelle e sottocartelle per memorizzare i profili dei destinatari.
 
 Ogni nodo coincide con una cartella. I dati di ciascuna cartella devono essere considerati partizionati l&#39;uno dall&#39;altro. Ciò significa che la gestione dei duplicati sarà più complessa per più cartelle di destinatari.
 
@@ -36,7 +36,7 @@ Ogni nodo coincide con una cartella. I dati di ciascuna cartella devono essere c
 
 ## Spostamento dei destinatari {#moving-recipients}
 
-Puoi selezionare uno o più destinatari, trascinarli dall’elenco dei destinatari e rilasciarli nella cartella desiderata. Un messaggio di avviso richiede di confermare l’azione.
+Puoi selezionare uno o più destinatari, trascinarli dall’elenco dei destinatari e rilasciarli nella cartella desiderata. Viene visualizzato un messaggio di avviso che richiede di confermare l’azione.
 
 ## Copia di un destinatario {#copying-a-recipient}
 
@@ -46,7 +46,7 @@ Per copiare un destinatario nella stessa cartella, fai clic con il pulsante dest
 
 Per eliminare i destinatari, spostateli in una cartella specifica, quindi rimuovete il contenuto di questa cartella. È **vivamente consigliato non utilizzare** l&#39; **[!UICONTROL Delete]** opzione in questo caso.
 
-Per eliminare una cartella, usate il **[!UICONTROL Actions > Purge folder]** menu a cui accedere facendo clic con il pulsante destro del mouse sulla cartella desiderata.
+Per eliminare una cartella, usate il **[!UICONTROL Actions > Purge folder]** menu a cui si accede facendo clic con il pulsante destro del mouse sulla cartella desiderata.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
