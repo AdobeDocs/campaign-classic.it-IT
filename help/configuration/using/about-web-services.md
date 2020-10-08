@@ -1,7 +1,7 @@
 ---
-title: Informazioni sui servizi Web
-seo-title: Informazioni sui servizi Web
-description: Informazioni sui servizi Web
+title: Informazioni sui servizi web
+seo-title: Informazioni sui servizi web
+description: Informazioni sui servizi web
 seo-description: null
 page-status-flag: never-activated
 uuid: f0b21cb3-aa75-4f54-a9f5-64e880f93e53
@@ -11,19 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Informazioni sui servizi Web{#about-web-services}
+# Informazioni sui servizi web{#about-web-services}
 
 ## Definizione di  API Adobe Campaign {#definition-of-adobe-campaign-apis}
 
@@ -33,7 +30,7 @@ Il server  delle applicazioni Adobe Campaign è stato progettato per garantire l
 
 >[!IMPORTANT]
 >
->Il numero di chiamate al motore autorizzate al giorno varia in base al contratto di licenza. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>Il numero di chiamate al motore autorizzate al giorno varia in base al contratto di licenza. Per ulteriori informazioni, consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
 >In [questa documentazione](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)dedicata è disponibile un elenco di tutte le API, inclusa la descrizione completa.
 
 ## Prerequisiti {#prerequisites}
@@ -76,7 +73,7 @@ Lo schema seguente mostra le varie risorse coinvolte nell&#39;utilizzo delle API
 
 In questo esempio, una query SOAP richiama il metodo &quot;ExecuteQuery&quot;, che considera una stringa di caratteri come parametro per l&#39;autenticazione (token sessione) e un contenuto XML per la descrizione della query da eseguire.
 
-Per ulteriori informazioni, fare riferimento a [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+Per ulteriori informazioni, vedere [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >
@@ -143,7 +140,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-L&#39; `<soap-env:fault>` elemento nel corpo del messaggio SOAP viene utilizzato per trasmettere i segnali di errore generati durante l&#39;elaborazione del servizio Web. È composto dai seguenti sottoelementi:
+L&#39; `<soap-env:fault>` elemento nel corpo del messaggio SOAP viene utilizzato per trasmettere i segnali di errore generati durante l&#39;elaborazione del servizio Web. È composta dai seguenti sottoelementi:
 
 * `<faultcode>` : indica il tipo di errore. I tipi di errore sono:
 
