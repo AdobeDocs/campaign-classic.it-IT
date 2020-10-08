@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di campi a un modulo Web
-seo-title: Aggiunta di campi a un modulo Web
-description: Aggiunta di campi a un modulo Web
+title: Aggiunta di campi a un modulo web
+seo-title: Aggiunta di campi a un modulo web
+description: Aggiunta di campi a un modulo web
 seo-description: null
 page-status-flag: never-activated
 uuid: 33c6ab85-b021-422a-a224-c9eff27e6fc0
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2452'
+ht-degree: 1%
 
 ---
 
 
-# Aggiunta di campi a un modulo Web{#adding-fields-to-a-web-form}
+# Aggiunta di campi a un modulo web{#adding-fields-to-a-web-form}
 
 In un modulo Web, i campi consentono agli utenti di immettere informazioni e selezionare opzioni. I moduli Web offrono campi di input, campi di selezione, contenuto statico e avanzato (didascalie, iscrizioni, ecc.).
 
@@ -47,7 +47,7 @@ Specificare la modalità di memorizzazione della risposta: aggiornare un campo n
 
 >[!NOTE]
 >
->Per impostazione predefinita, il campo è inserito nella parte inferiore della struttura ad albero corrente. Utilizzare le frecce nella barra degli strumenti per spostarle verso l&#39;alto o verso il basso.
+>Per impostazione predefinita, il campo è inserito nella parte inferiore della struttura ad albero corrente. Utilizzate le frecce nella barra degli strumenti per spostarle verso l’alto o il basso.
 
 ## Creazione guidata campo {#field-creation-wizard}
 
@@ -79,9 +79,9 @@ In una pagina del modulo è possibile inserire cinque tipi diversi di campi di t
 
    ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Numero**: consente all&#39;utente di immettere un numero su una riga. per ulteriori informazioni, vedere [Aggiunta di numeri](#adding-numbers).
+* **Numero**: consente all&#39;utente di immettere un numero su una riga. for more on this, refer to [Adding numbers](#adding-numbers).
 
-   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore immesso sia compatibile con il campo. Per ulteriori informazioni, vedere [Definizione delle impostazioni](../../web/using/form-rendering.md#defining-control-settings)di controllo.
+   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore immesso sia compatibile con il campo. For more on this, refer to [Defining control settings](../../web/using/form-rendering.md#defining-control-settings).
 
 * **Password**: consente all&#39;utente di inserire il testo su una sola riga. Durante l&#39;immissione del testo, i caratteri vengono sostituiti da punti:
 
@@ -99,7 +99,7 @@ In una pagina del modulo è possibile inserire cinque tipi diversi di campi di t
    >
    >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Lo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML. Per ulteriori informazioni sui tipi di dati negli schemi, vedere il capitolo &quot;Riferimento allo schema&quot; in [questa sezione](../../configuration/using/about-schema-reference.md).
    >   
-   >Se utilizzate il modulo **Sondaggio** , potete memorizzare questo tipo di campo in un campo archiviato che si adatterà automaticamente al formato. For more on this, refer to [this section](../../web/using/about-surveys.md).
+   >Se utilizzate il modulo **Sondaggio** , potete memorizzare questo tipo di campo in un campo archiviato che si adatterà automaticamente al formato. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
 
 * **Testo** multiriga con riciclo: consente all&#39;utente di immettere del testo con un layout che verrà memorizzato in formato HTML.
 
@@ -127,7 +127,7 @@ La modalità di memorizzazione delle risposte può essere modificata tramite il 
 >
 >Le modalità di memorizzazione sono dettagliate nei campi di memorizzazione [Risposta](../../web/using/web-forms-answers.md#response-storage-fields)
 
-La **[!UICONTROL Advanced]** scheda consente di definire i parametri di visualizzazione del campo (posizione delle etichette, allineamento, ecc.). Vedere [Definizione del layout](../../web/using/defining-web-forms-layout.md)dei moduli Web.
+La **[!UICONTROL Advanced]** scheda consente di definire i parametri di visualizzazione del campo (posizione delle etichette, allineamento, ecc.). See [Defining web forms layout](../../web/using/defining-web-forms-layout.md).
 
 ## Aggiunta di elenchi a discesa {#adding-drop-down-lists}
 
@@ -225,7 +225,7 @@ Aggiungete tutti i pulsanti di scelta quante sono le etichette. Il vantaggio di 
 
 >[!NOTE]
 >
->I moduli Web non autorizzano la selezione di diversi valori. La selezione multipla può essere attivata solo per i moduli di tipo **Sondaggio** . For more on this, refer to [this section](../../web/using/about-surveys.md).\
+>I moduli Web non autorizzano la selezione di diversi valori. La selezione multipla può essere attivata solo per i moduli di tipo **Sondaggio** . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).\
 >È tuttavia possibile inserire un campo di **[!UICONTROL Multiple choice]** tipo in un&#39;applicazione Web; ma senza autorizzare la selezione di più valori: le opzioni offerte possono essere selezionate utilizzando i pulsanti di scelta.
 
 ## Aggiunta di griglie {#adding-grids}
@@ -272,7 +272,7 @@ Le date possono essere selezionate tramite un calendario o caselle a discesa. È
 
 >[!NOTE]
 >
->Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. Vedere [Traduzione di un modulo](../../web/using/translating-a-web-form.md)Web.
+>Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 Tuttavia, in alcuni casi (ad esempio per le date di nascita) può essere più semplice utilizzare elenchi a discesa.
 
@@ -350,7 +350,7 @@ Immettere l&#39;etichetta del campo. Questa etichetta verrà visualizzata davant
 
 >[!NOTE]
 >
->Per i controlli **[!UICONTROL captcha]** tipo, non è necessario indicare un campo di memorizzazione o una variabile.
+>Per i controlli **[!UICONTROL captcha]** di tipo, non è necessario indicare un campo di memorizzazione o una variabile.
 
 Il Captcha viene inserito nella pagina con un campo di input posizionato sotto l’elemento visivo. Questi due elementi sono inseparabili e sono considerati come un elemento singolo ai fini del layout di pagina (occupano una singola cella).
 
@@ -383,9 +383,10 @@ Per impostazione predefinita, i file caricati sono memorizzati in file di risors
 >[!CAUTION]
 >
 >* Questo tipo di file deve essere riservato ai moduli con accesso protetto (utilizzando le credenziali).
->* Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto di utilizzare i campi di caricamento solo per i siti Intranet di tipo protetto.
->* Se diversi server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
->* Queste implementazioni richiedono l&#39;assistenza del team di consulenza di Adobe Campaign.
+>*  Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto di utilizzare i campi di caricamento solo per i siti Intranet di tipo protetto.
+>* Se più server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
+>* Queste implementazioni richiedono l&#39;assistenza del team  Adobe Campaign Consulting.
+
 >
 
 
