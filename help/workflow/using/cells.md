@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,7 @@ Questa attività può essere configurata per immettere parametri specifici in ba
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Per questa configurazione, al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** nodo della struttura di Adobe Campaign) sono state aggiunte le seguenti informazioni:
+Per questa configurazione, al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** nodo della struttura di Adobe Campaign ) sono state aggiunte le seguenti informazioni:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -55,4 +55,4 @@ Per questa configurazione, al modulo del flusso di lavoro (nel **[!UICONTROL Adm
                 </container>
 ```
 
-La personalizzazione dei moduli di partecipazione in Adobe Campaign è riservata agli utenti esperti. For more on this, refer to this [section](../../configuration/using/identifying-a-form.md).
+La personalizzazione dei moduli di partecipazione in  Adobe Campaign è riservata agli utenti esperti. Per ulteriori informazioni, consulta questa [sezione](../../configuration/using/identifying-a-form.md).
