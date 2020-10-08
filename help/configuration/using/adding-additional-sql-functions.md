@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di funzioni SQL aggiuntive
-seo-title: Aggiunta di funzioni SQL aggiuntive
-description: Aggiunta di funzioni SQL aggiuntive
+title: Aggiunta di ulteriori funzioni SQL
+seo-title: Aggiunta di ulteriori funzioni SQL
+description: Aggiunta di ulteriori funzioni SQL
 seo-description: null
 page-status-flag: never-activated
 uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
@@ -11,22 +11,22 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 1%
 
 ---
 
 
-# Aggiunta di funzioni SQL aggiuntive{#adding-additional-sql-functions}
+# Aggiunta di ulteriori funzioni SQL{#adding-additional-sql-functions}
 
 ## Introduzione {#introduction}
 
-Adobe Campaign consente all&#39;utente di definire le **proprie funzioni** in grado di accedere alle funzioni SQL, sia quelle offerte dal database che quelle non già disponibili nella console. Questo è utile per le funzioni aggregate (media, massima, somma), ad esempio, che possono essere calcolate solo sul server o quando il database fornisce un modo più semplice per implementare determinate funzioni, piuttosto che scrivere l&#39;espressione &quot;manualmente&quot; nella console (ad esempio, gestione delle date).
+ Adobe Campaign consente all&#39;utente di definire le **proprie funzioni** in grado di accedere alle funzioni SQL, sia quelle offerte dal database che quelle non già disponibili nella console. Questo è utile per le funzioni aggregate (media, massima, somma), ad esempio, che possono essere calcolate solo sul server o quando il database fornisce un modo più semplice per implementare determinate funzioni, piuttosto che scrivere l&#39;espressione &quot;manualmente&quot; nella console (ad esempio, gestione delle date).
 
-Questo meccanismo può essere utilizzato anche se si desidera utilizzare una funzione SQL del motore di database recente o non comune, che non è ancora disponibile nella console di Adobe Campaign.
+Questo meccanismo può essere utilizzato anche se si desidera utilizzare una funzione SQL del motore di database recente o non comune, che non è ancora disponibile dalla console Adobe Campaign .
 
 Una volta aggiunte queste funzioni, verranno visualizzate nell&#39;editor di espressioni come altre funzioni predefinite.
 
@@ -42,7 +42,7 @@ Per installarlo dalla console, selezionate le opzioni **Strumenti/Avanzate/Impor
 
 >[!IMPORTANT]
 >
->Avviso: anche se l&#39;elenco delle funzioni importate viene immediatamente visualizzato nell&#39;editor delle funzioni, non saranno utilizzabili fino al riavvio di Adobe Campaign.
+>Avviso: anche se l&#39;elenco delle funzioni importate viene immediatamente visualizzato nell&#39;editor delle funzioni, non saranno utilizzabili fino  riavvio di Adobe Campaign.
 
 ## Struttura generale del pacchetto da importare {#general-structure-of-package-to-import}
 
@@ -77,7 +77,7 @@ Le funzioni da aggiungere si trovano nel file **** &quot;package&quot; in format
 * I campi **buildVersion** e **buildNumber** sono obbligatori. Devono corrispondere al numero del server a cui è collegata la console. Queste informazioni sono disponibili nella casella &quot;Aiuto/Informazioni su&quot;.
 * I seguenti blocchi, **entità** e **funclist** sono obbligatori. In funcList, i campi &quot;name&quot; e &quot;namespace&quot; sono obbligatori, ma il loro nome è lasciato alla decisione dell&#39;utente, che designa in modo univoco l&#39;elenco delle funzioni.
 
-   Ciò significa che se viene importato un altro elenco di funzioni con la stessa coppia di nomi/nomi (qui &quot;cus::myList&quot;), le funzioni importate in precedenza verranno eliminate. Al contrario, se si modifica questa coppia nome/spazio nomi, la nuova serie di funzioni importate verrà aggiunta alla precedente.
+   Ciò significa che se viene importato un altro elenco di funzioni con la stessa coppia di nomi/nomi (qui &quot;cus::myList&quot;), le funzioni importate in precedenza verranno eliminate. Al contrario, se si modifica questa coppia nome/spazio nomi, la nuova serie di funzioni importate verrà aggiunta a quella precedente.
 
 * L&#39;elemento **group** consente di specificare il gruppo di funzioni nel quale verranno visualizzate le funzioni importate nell&#39;editor delle funzioni. L&#39;attributo @name può essere un nome già esistente (nel qual caso le funzioni verranno aggiunte al gruppo considerato) o un nuovo nome (nel qual caso apparirà in un nuovo gruppo).
 * Promemoria: i valori possibili per l&#39;attributo @name nell&#39; `<group>` elemento sono:
@@ -133,6 +133,7 @@ Il campo **@name** fa riferimento al nome della funzione, e &quot;args&quot; è 
 
    * L&#39;attributo **provider** è obbligatorio, specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come illustrato nell&#39;esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
    * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione, nella lingua del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(selezionare la colonna dalla tabella dove...)&quot;) che restituiscono solo un singolo valore. Ad esempio, questo è il caso in Oracle (la query deve essere scritta tra parentesi).
+
    >[!NOTE]
    >
    >Se solo uno o due database verranno probabilmente interrogati dalla funzione definita, sarà sempre possibile fornire solo le definizioni corrispondenti a tali database.
