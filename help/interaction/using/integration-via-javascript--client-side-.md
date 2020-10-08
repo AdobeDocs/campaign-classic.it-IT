@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Per chiamare il motore di interazione in una pagina Web, inserire una chiamata a un codice JavaScript direttamente nella pagina. Questa chiamata restituisce il contenuto dell&#39;offerta in un oggetto
 
-    element.
+element.
 
-Adobe consiglia di utilizzare il metodo di integrazione JavaScript.
+ Adobe consiglia di utilizzare il metodo di integrazione JavaScript.
 
-Lo script che richiama l&#39;URL si presenta così:
+Lo script che richiama l&#39;URL avrà l&#39;aspetto seguente:
 
 ```
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
@@ -36,7 +36,7 @@ Lo script che richiama l&#39;URL si presenta così:
 
 Il parametro &quot;**env**&quot; riceve il nome interno dell&#39;ambiente live dedicato alle interazioni anonime.
 
-Per presentare un&#39;offerta, dobbiamo creare un ambiente e uno spazio di offerta in Adobe Campaign, quindi configurare la pagina HTML.
+Per presentare un&#39;offerta, è necessario creare un ambiente e uno spazio di offerta in  Adobe Campaign, quindi configurare la pagina HTML.
 
 I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazione delle offerte tramite JavaScript.
 
@@ -46,7 +46,7 @@ I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazio
 
 1. **Preparazione del motore di interazione**
 
-   Apri l&#39;interfaccia di Adobe Campaign e prepara un ambiente anonimo.
+   Aprite l&#39;interfaccia Adobe Campaign  e preparate un ambiente anonimo.
 
    Create uno spazio di offerta collegato all&#39;ambiente anonimo.
 
@@ -120,7 +120,7 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
 
    In questo esempio, la chiave di identificazione è composita in quanto si basa sia sull&#39;e-mail che sul nome del destinatario.
 
-1. Durante la visualizzazione della pagina Web, la valutazione dello script consente di trasmettere l&#39;ID destinatario al motore delle offerte. Se l’ID è composito, i tasti vengono visualizzati nella stessa sequenza utilizzata nelle impostazioni avanzate e separati da un|
+1. Durante la visualizzazione della pagina Web, la valutazione dello script consente di trasmettere l&#39;ID destinatario al motore delle offerte. Se l’ID è composito, i tasti vengono visualizzati nella stessa sequenza utilizzata nelle impostazioni avanzate e separati da un |
 
    Nell&#39;esempio seguente, il contatto ha eseguito l&#39;accesso al sito Web ed è stato riconosciuto durante la chiamata al motore di interazione grazie alla propria e-mail e nome.
 
@@ -135,7 +135,7 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
 Per generare automaticamente la rappresentazione dell&#39;offerta HTML, potete utilizzare una funzione di rendering.
 
 1. Andate nello spazio delle offerte e fate clic sul **[!UICONTROL Edit functions]** collegamento.
-1. Selezionare **[!UICONTROL Overload the HTML rendering function]**.
+1. Seleziona **[!UICONTROL Overload the HTML rendering function]**.
 1. Andate alla **[!UICONTROL HTML rendering]** scheda e inserite le variabili che corrispondono ai campi definiti per il contenuto dell&#39;offerta nello spazio dell&#39;offerta.
 
    ![](assets/interaction_htmlmode_002.png)
@@ -177,7 +177,7 @@ Il nodo XML restituito è simile al seguente:
 </propositions>
 ```
 
-Il seguente caso di utilizzo descrive le configurazioni da eseguire in Adobe Campaign per abilitare la modalità XML, quindi mostra il risultato della chiamata al motore nella pagina HTML.
+Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campaign per abilitare la modalità XML, quindi mostra il risultato della chiamata al motore nella pagina HTML.
 
 1. **Creazione di un ambiente e di uno spazio di offerta**
 
@@ -218,7 +218,7 @@ Il seguente caso di utilizzo descrive le configurazioni da eseguire in Adobe Cam
    >
    >Ogni elemento deve essere definito due volte. Gli elementi di tipo CDATA (&quot;_jst&quot;) possono contenere campi di personalizzazione.
    >
-   >Non dimenticare di aggiornare la struttura del database. For more on this, refer to [this section](../../configuration/using/updating-the-database-structure.md).
+   >Non dimenticare di aggiornare la struttura del database. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/updating-the-database-structure.md).
 
    >[!NOTE]
    >
@@ -318,7 +318,7 @@ Il seguente caso di utilizzo descrive le configurazioni da eseguire in Adobe Cam
 È possibile utilizzare una funzione di rendering XML per creare una presentazione di offerta. Questa funzione modificherà il nodo XML che viene restituito alla pagina HTML durante la chiamata al motore.
 
 1. Andate nello spazio delle offerte e fate clic sul **[!UICONTROL Edit functions]** collegamento.
-1. Selezionare **[!UICONTROL Overload the XML rendering function]**.
+1. Seleziona **[!UICONTROL Overload the XML rendering function]**.
 1. Passare alla **[!UICONTROL XML rendering]** scheda e inserire la funzione desiderata.
 
    La funzione può essere simile alla seguente:
