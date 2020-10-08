@@ -1,7 +1,7 @@
 ---
-title: Importazione ed esportazione di audience
-seo-title: Importazione ed esportazione di audience
-description: Importazione ed esportazione di audience
+title: Importazione ed esportazione di pubblici
+seo-title: Importazione ed esportazione di pubblici
+description: Importazione ed esportazione di pubblici
 seo-description: null
 page-status-flag: never-activated
 uuid: af03ce68-8a58-4909-83e9-23c385820284
@@ -11,33 +11,30 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Importing and exporting audiences{#importing-and-exporting-audiences}
+# Importazione ed esportazione di pubblici{#importing-and-exporting-audiences}
 
 ## Importazione di un&#39;audience {#importing-an-audience}
 
-Puoi importare audience/segmenti da Audience Manager o dal servizio di base Persone  Adobe Campaign tramite gli elenchi dei destinatari.
+Puoi importare audience/segmenti da Audience Manager o dal servizio di base Persone in  Adobe Campaign tramite gli elenchi dei destinatari.
 
-1. Passate al nodo **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** nell&#39;esploratore di Adobi Campaign .
+1. Passate al nodo **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** in  Adobe Campaign Explorer.
 1. Nella barra delle azioni, selezionate **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]**.
 
    ![](assets/aam_import_audience.png)
 
-1. Nella finestra visualizzata, fai clic **[!UICONTROL Select a shared audience]** per passare all&#39;elenco dei tipi di pubblico/segmenti condivisi disponibili dalle altre soluzioni Adobe Experience Cloud.
+1. Nella finestra visualizzata, fate clic **[!UICONTROL Select a shared audience]** per passare all&#39;elenco dei tipi di pubblico/segmenti condivisi disponibili dalle altre soluzioni Adobe Experience Cloud.
 1. Selezionate un&#39;audience e confermate. Le informazioni del pubblico vengono completate automaticamente.
 
-   Per poter importare un&#39;audience condivisa, è necessario assegnarvi il **[!UICONTROL Audience library]** prodotto nella console di amministrazione ed essere un amministratore in  Audience Manager. Per ulteriori informazioni, consulta la documentazione [di](https://helpx.adobe.com/enterprise/managing/user-guide.html)Admin Console.
+   Per poter importare un&#39;audience condivisa, è necessario assegnarvi il **[!UICONTROL Audience library]** prodotto nella console di amministrazione ed essere un amministratore  Audience Manager. Per ulteriori informazioni, consulta la documentazione di [Admin Console](https://helpx.adobe.com/it/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
@@ -47,15 +44,15 @@ Puoi importare audience/segmenti da Audience Manager o dal servizio di base Pers
 
 1. Salva il pubblico.
 
-L&#39;audience viene importata tramite un flusso di lavoro tecnico. L&#39;elenco importato contiene elementi che possono essere riconciliati utilizzando l&#39;origine dati AMC. Gli elementi non riconosciuti dal Adobe Campaign  non vengono importati.
+L&#39;audience viene importata tramite un flusso di lavoro tecnico. L&#39;elenco importato contiene elementi che possono essere riconciliati utilizzando l&#39;origine dati AMC. Gli elementi non riconosciuti da  Adobe Campaign non vengono importati.
 
 La sincronizzazione del processo di importazione richiede 24-36 ore, quando i segmenti vengono importati direttamente dal servizio di base Persone o  Audience Manager. Dopo questo periodo, potrete trovare e utilizzare la nuova audience in  Adobe Campaign.
 
 >[!NOTE]
 >
->Se importate audience da Adobe  Analytics a  Adobe Campaign, queste devono essere innanzitutto condivise in Servizio core Persone o  Audience Manager. Questo processo richiede 12-24 ore, che devono essere aggiunte alla sincronizzazione di 24-36 ore con Campaign.
+>Se importate audience da  Adobe Analytics a  Adobe Campaign, queste devono prima essere condivise in Servizio core Persone o  Audience Manager. Questo processo richiede 12-24 ore, che devono essere aggiunte alla sincronizzazione di 24-36 ore con Campaign.
 >
->In questo caso specifico, il periodo di condivisione dell&#39;audience può essere fino a 60 ore. Per ulteriori informazioni sulla condivisione di audience di Adobe  Analytics nel servizio Persone di base e in Audience Manager, consulta questa [documentazione](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
+>In questo caso specifico, il periodo di condivisione dell&#39;audience può essere fino a 60 ore. Per ulteriori informazioni  condivisione dell&#39;audience Adobe Analytics nel servizio Persone di base e in Audience Manager, consulta questa [documentazione](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html).
 
 I dati del pubblico vengono sostituiti completamente ogni volta che vengono sincronizzati. È possibile importare solo i segmenti. I dati granulari, incluse coppie chiave-valore, caratteristiche e regole, non sono supportati.
 
@@ -85,7 +82,7 @@ Puoi esportare un&#39;audience da  Adobe Campaign a Audience Manager o al serviz
 
 L&#39;audience viene quindi esportata. L&#39;attività Salva audience ha due transizioni in uscita. La transizione principale contiene i destinatari esportati correttamente. La transizione aggiuntiva contiene i destinatari che non potevano essere mappati con un ID visitatore o un ID dichiarato.
 
-La sincronizzazione tra  servizio di base Persone e Adobe Campaign richiede 24-36 ore. Dopo questo periodo, potrai trovare il nuovo pubblico nel servizio di base Persone e riutilizzarlo in altre soluzioni Adobe Experience Cloud. Per ulteriori informazioni sull&#39;utilizzo di un&#39;audience condivisa  Adobe Campaign nel servizio di base Adobe People, consulta questa [documentazione](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html).
+La sincronizzazione tra  servizio di base Adobe Campaign e Persone richiede 24-36 ore. Dopo questo periodo, potrai trovare la nuova audience nel servizio di base Persone e riutilizzarla in altre soluzioni Adobe Experience Cloud. Per ulteriori informazioni sull&#39;utilizzo di un&#39;audience condivisa  Adobe Campaign nel servizio di base Persone del Adobe, consultate questa [documentazione](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-audience-create.html).
 
 >[!NOTE]
 >
