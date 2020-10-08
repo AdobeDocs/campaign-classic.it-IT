@@ -1,7 +1,7 @@
 ---
-title: Definizione della popolazione di destinazione
-seo-title: Definizione della popolazione di destinazione
-description: Definizione della popolazione di destinazione
+title: Definizione della popolazione target
+seo-title: Definizione della popolazione target
+description: Definizione della popolazione target
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,26 +11,23 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Definizione della popolazione di destinazione {#defining-the-target-population}
+# Definizione della popolazione target {#defining-the-target-population}
 
 ## Informazioni sulle popolazioni target {#about-target-populations}
 
 Per ogni consegna, potete definire diversi tipi di popolazioni target. La sezione seguente fornisce ulteriori informazioni su come selezionare:
 
-* I principali destinatari della consegna. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* Destinatari di messaggi di prova, al fine di impostare un ciclo di convalida. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* I principali destinatari della consegna. [Leggi tutto](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Destinatari di messaggi di prova, al fine di impostare un ciclo di convalida. [Leggi tutto](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
 Inoltre, se la consegna è inclusa in una campagna di marketing, puoi anche definire indirizzi [](../../delivery/using/about-seed-addresses.md)iniziali e gruppi [di](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)controllo.
 
@@ -233,7 +230,7 @@ Potete utilizzare **[!UICONTROL Seed addresses]** come destinazione le prove: qu
 
 È possibile combinare la definizione di una destinazione di prova specifica e l&#39;uso di indirizzi di prova utilizzando l&#39; **[!UICONTROL Specific target and Seed addresses]** opzione. Le configurazioni correlate vengono quindi definite in due sottoschede separate.
 
-## Come gestire sementi e prove in un&#39;e-mail {#seeds-and-proofs-video}
+## How to manage seed and proofs in an email {#seeds-and-proofs-video}
 
 Questo video illustra come aggiungere sementi e prove a un&#39;e-mail esistente e come inviarla.
 
@@ -244,4 +241,4 @@ Vedi anche:
 
 * [Informazioni sugli indirizzi iniziali](../../delivery/using/about-seed-addresses.md)
 
-* [Caso di utilizzo: selezione degli indirizzi di base sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
