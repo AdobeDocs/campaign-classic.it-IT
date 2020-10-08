@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 13%
 
 ---
 
@@ -43,7 +43,7 @@ Potete creare nuovi modelli di consegna per preconfigurare parametri specifici i
 
 Devi completare i parametri per identificare la consegna. Per eseguire questa operazione:
 
-1. Inserisci un nome per la consegna nel **[!UICONTROL Label]** campo.
+1. Immettete un nome per la consegna nel **[!UICONTROL Label]** campo.
 
    Un codice di consegna può anche essere assegnato alla consegna. Il nome della consegna e il relativo codice vengono visualizzati nell&#39;elenco delle consegne, ma non possono essere visti dai destinatari.
 
