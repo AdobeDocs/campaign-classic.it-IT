@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 3%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Marketing Analytics semplifica la creazione di report e l&#39;identificazione e la selezione dei dati dal database tramite cubi. Questo consente di:
 
-* Creare rapporti basati su cubi. Il processo è illustrato di seguito: Esplorazione [dei dati in un report](#exploring-the-data-in-a-report).
+* Creare rapporti basati su cubi. Il processo è illustrato di seguito: [Esplorazione dei dati in un report](#exploring-the-data-in-a-report).
 * Raccogliere i dati nel database e raggrupparli in elenchi, ad esempio per identificare e generare target e consegne. Per ulteriori informazioni, vedere [Creazione di una popolazione](#building-a-target-population)target.
 * Inserire una tabella pivot in un rapporto, fare riferimento a un cubo esistente al suo interno. Per ulteriori informazioni, vedere [Inserimento di una tabella pivot in un rapporto](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
->Marketing Analytics è necessario per creare o modificare i cubi. Per ulteriori informazioni, vedere [Informazioni sui cubi](../../reporting/using/about-cubes.md).
+>Marketing Analytics è necessario per creare o modificare i cubi. For more on this, refer to [About cubes](../../reporting/using/about-cubes.md).
 
 ## Esplorazione dei dati in un rapporto {#exploring-the-data-in-a-report}
 
@@ -59,13 +59,13 @@ I **[!UICONTROL Add]** pulsanti di ciascun asse consentono di aggiungere dimensi
 
    I parametri dipendono dal tipo di dati della dimensione selezionata.
 
-   Ad esempio, per le date, possono essere disponibili diversi livelli. Per ulteriori informazioni, vedere [Visualizzazione delle misure](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Ad esempio, per le date, possono essere disponibili diversi livelli. For more on this, refer to [Displaying measures](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    In questo caso sono disponibili le seguenti opzioni:
 
    ![](assets/s_advuser_cube_in_report_config2.png)
 
-   È possibile:
+   Potete effettuare le seguenti operazioni:
 
    * Espandi dati durante il caricamento: i valori verranno visualizzati per impostazione predefinita ogni volta che il rapporto viene aggiornato (valore predefinito: no).
    * Visualizza il totale alla fine della riga: quando i dati vengono visualizzati in colonne, un&#39;opzione aggiuntiva consente di visualizzare il totale alla fine della riga: alla tabella viene aggiunta una colonna (valore predefinito: sì).
@@ -75,7 +75,7 @@ I **[!UICONTROL Add]** pulsanti di ciascun asse consentono di aggiungere dimensi
 
 1. Fate clic **[!UICONTROL Ok]** per confermare: la dimensione viene aggiunta alle dimensioni esistenti.
 
-   Il banner giallo sopra la tabella indica che sono state apportate modifiche: fare clic sul **[!UICONTROL Save]** pulsante per salvarli.
+   Il banner giallo sopra la tabella indica che sono state apportate delle modifiche: fare clic sul **[!UICONTROL Save]** pulsante per salvarli.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -85,7 +85,7 @@ Una volta inserite le righe e le colonne, indicate le misure da visualizzare e l
 
 Per impostazione predefinita, viene visualizzata una sola misura. Per aggiungere o configurare misure:
 
-1. Fate clic sul **[!UICONTROL Measures]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Measures]**.
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
@@ -116,11 +116,12 @@ Per impostazione predefinita, viene visualizzata una sola misura. Per aggiungere
    * Proporzione: questo tipo di misura consente di calcolare il numero di record misurati per una data dimensione. È possibile calcolare la proporzionalità in base a una dimensione o sub-dimensione.
    * Variazione: questa misura consente di calcolare la variazione dei valori di un livello.
    * Deviazione standard: questo tipo di misura consente di calcolare le deviazioni all&#39;interno di ciascun gruppo di celle rispetto alla media dei valori. Ad esempio, puoi confrontare il volume di acquisto per tutti i segmenti esistenti.
+
    La misura creata viene aggiunta al report.
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   Dopo aver creato una misura, potete modificarla e, se necessario, modificarne la configurazione. A questo scopo, fare clic sul **[!UICONTROL Measures]** pulsante, quindi passare alla scheda della misura da modificare.
+   Dopo aver creato una misura, potete modificarla e, se necessario, modificarne la configurazione. Per eseguire questa operazione, fare clic sul **[!UICONTROL Measures]** pulsante, quindi passare alla scheda della misura da modificare.
 
    Quindi fate clic **[!UICONTROL Edit the dynamic measure]** per accedere al menu delle impostazioni.
 
@@ -164,7 +165,7 @@ Per raggruppare una popolazione in un elenco, procedere come segue:
 
 Per creare una tabella ed esplorare i dati contenuti in un cubo, procedere come segue:
 
-1. Crea un nuovo rapporto con una singola pagina e inserisci una tabella pivot al suo interno. For more on this, refer to [this page](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table).
+1. Crea un nuovo rapporto con una singola pagina e inserisci una tabella pivot al suo interno. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table).
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
