@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 0%
@@ -27,11 +24,11 @@ ht-degree: 0%
 
 ## Informazioni sul controllo dei costi {#about-cost-control}
 
-Adobe Campaign consente di controllare i costi di marketing pianificati, impegnati e fatturati e di suddividerli per categoria utilizzando il modulo Gestione risorse di marketing.
+ Adobe Campaign consente di controllare i costi di marketing pianificati, impegnati e fatturati e di suddividerli per categoria utilizzando il modulo Gestione risorse di marketing.
 
 I costi impegnati per i vari processi di una campagna vengono addebitati su un budget definito in anticipo dal reparto marketing. Gli importi possono essere suddivisi in diverse categorie per rendere le informazioni più leggibili e fornire una comunicazione più dettagliata degli investimenti di marketing.
 
-La gestione e il tracciamento dei budget sono centralizzati in un nodo dedicato della struttura di Adobe Campaign. Questo consente di monitorare gli importi allocati, riservati, impegnati e spesi dalla stessa vista e per tutti i budget.
+La gestione e il tracciamento dei budget sono centralizzati in un nodo dedicato della struttura di Adobe Campaign . Questo consente di monitorare gli importi allocati, riservati, impegnati e spesi dalla stessa vista e per tutti i budget.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 
@@ -208,6 +205,7 @@ I costi sono suddivisi in tre categorie:
    * Per una consegna che non è ancora stata analizzata, il costo calcolato è il costo provvisorio stimato. Se l&#39;analisi è già stata eseguita, il costo calcolato sarà la somma di tutti i costi calcolati dal servizio fornire strutture di costo e il numero di destinatari interessati.
    * Per un&#39;attività in corso, il costo calcolato utilizza il costo provvisorio stimato. Se l&#39;attività è finita, il costo calcolato sarà la somma di tutti i costi calcolati dalle strutture dei costi del fornitore di servizi e il numero di giorni completati.
    * Per il piano di marketing, come per il programma, il costo calcolato è la somma dei costi calcolati per le campagne. Se tali costi non vengono specificati, il costo calcolato utilizzerà i costi provvisori stimati.
+
    >[!NOTE]
    >
    >Il **[!UICONTROL Breakdown]** collegamento consente di visualizzare i dettagli del calcolo e la data dell&#39;ultimo calcolo del costo.
@@ -227,7 +225,7 @@ I costi sono calcolati tramite strutture di costo e addebitati ai bilanci selezi
 Stiamo per creare una campagna con:
 
 * Consegna diretta tramite posta mediante le strutture dei costi di un fornitore di servizi
-* Attività con un costo fisso
+* Un&#39;attività con un costo fisso
 * Attività con un costo giornaliero
 
 #### Passaggio 1 - Creazione del budget {#step-1---creating-the-budget}
@@ -253,9 +251,11 @@ Stiamo per creare una campagna con:
    Per le attività, creare le due seguenti categorie di costi:
 
    * **[!UICONTROL Room reservation]** (Camera piccola e Camera grande), con una struttura di costo **fissa** di 300 e 500 Euro:
+
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** (Tipo di modello **di** contenuto), con una struttura di costo **giornaliera** di 300 Euro:
+
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### Passaggio 3 - Addebito del budget nella campagna {#step-3---charging-the-budget-in-the-campaign}
@@ -350,7 +350,7 @@ Una volta approvato il budget e terminata la consegna, i costi vengono caricati 
 
 ## Ordini e fatture {#orders-and-invoices}
 
-Nel contesto di MRM, è possibile salvare gli ordini con un fornitore di servizi ed emettere fatture. L&#39;intero ciclo di vita di questi ordini e fatture può essere gestito tramite l&#39;interfaccia di Adobe Campaign.
+Nel contesto di MRM, è possibile salvare gli ordini con un fornitore di servizi ed emettere fatture. L&#39;intero ciclo di vita di questi ordini e fatture può essere gestito tramite l&#39;interfaccia Adobe Campaign .
 
 ### Creazione dell&#39;ordine {#order-creation}
 
@@ -364,7 +364,7 @@ Specificare il numero dell&#39;ordine, il fornitore di servizi interessato e l&#
 
 Per ogni provider di servizi è possibile salvare le fatture e definirne lo stato e il budget addebitato.
 
-Le fatture vengono create e memorizzate nel **[!UICONTROL MRM > Invoices]** nodo della struttura di Adobe Campaign.
+Le fatture vengono create e memorizzate nel **[!UICONTROL MRM > Invoices]** nodo della struttura di Adobe Campaign .
 
 ![](assets/s_user_cost_create_invoice.png)
 
