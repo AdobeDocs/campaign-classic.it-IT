@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra
 
 Per creare questo esempio, procedere come segue:
 
-1. In **[!UICONTROL Data to extract]**, definite un conteggio per la chiave primaria (come mostrato nell&#39;esempio precedente). Aggiungere il **[!UICONTROL Gender]** campo nella colonna di output. Selezionare l&#39; **[!UICONTROL Group]** opzione nella **[!UICONTROL Gender]** colonna. In questo modo i destinatari verranno raggruppati per genere.
+1. In **[!UICONTROL Data to extract]**, definite un conteggio per la chiave primaria (come mostrato nell&#39;esempio precedente). Aggiungere il **[!UICONTROL Gender]** campo nella colonna di output. Selezionate l’ **[!UICONTROL Group]** opzione nella **[!UICONTROL Gender]** colonna. In questo modo i destinatari verranno raggruppati per genere.
 
    ![](assets/query_editor_nveau_27.png)
 
