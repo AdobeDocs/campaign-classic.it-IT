@@ -11,21 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Raccomandazioni specifiche per RDBMS{#rdbms-specific-recommendations}
 
-Per facilitare l&#39;impostazione dei piani di manutenzione, questa sezione elenca alcune raccomandazioni/best practice adattate ai vari motori RDBMS supportati da Adobe Campaign. Tuttavia, queste sono solo raccomandazioni. Sta a voi adattarli alle vostre esigenze, in conformità con la vostra procedura interna e i vostri vincoli. L&#39;amministratore del database ha la responsabilità di creare ed eseguire tali piani.
+Per facilitare l&#39;impostazione dei piani di manutenzione, questa sezione elenca alcune raccomandazioni/best practice adattate ai vari motori RDBMS che  Adobe Campaign supporta. Tuttavia, queste sono solo raccomandazioni. Sta a voi adattarli alle vostre esigenze, in conformità con la vostra procedura interna e i vostri vincoli. L&#39;amministratore del database ha la responsabilità di creare ed eseguire tali piani.
 
 ## PostgreSQL {#postgresql}
 
@@ -98,11 +95,12 @@ vacuum full nmsdelivery;
 
 >[!NOTE]
 >
->* Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
->* Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
+>*  Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
+>*  Adobe riordina l&#39;aggiunta delle tabelle specifiche del modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
 >* I comandi **sottovuoto** e **reindicizzati** bloccheranno la tabella, che mette in pausa alcuni processi durante la manutenzione.
->* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo. Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
->* Questa operazione di manutenzione può essere implementata da un flusso di lavoro di Adobe Campaign utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
+>* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
+>* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
+
 >
 
 
@@ -111,8 +109,8 @@ vacuum full nmsdelivery;
 
 PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, dal momento che il **vuoto intero** blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non è utilizzata. Potete effettuare le seguenti operazioni:
 
-* eseguire la manutenzione quando la piattaforma Adobe Campaign viene arrestata,
-* arresta i vari servizi secondari di Adobe Campaign che potrebbero scrivere nella tabella in fase di ricostruzione (**interrompi il server nome_istanza** per arrestare il processo del flusso di lavoro).
+* eseguire la manutenzione quando la piattaforma Adobe Campaign  viene arrestata,
+* arrestate i vari servizi secondari  Adobe Campaign che potrebbero scrivere nella tabella in fase di ricostruzione (**nlserver arresta wfserver instance_name** per arrestare il processo del flusso di lavoro).
 
 Di seguito è riportato un esempio di deframmentazione delle tabelle che utilizza funzioni specifiche per generare la DDL necessaria. Il seguente SQL consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che possono essere utilizzati per generare il DDL necessario per ricreare una tabella.
 
@@ -419,7 +417,7 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra v
 
 1. Una volta completato il piano di manutenzione, fare clic su **[!UICONTROL Close]** .
 1. In Microsoft SQL Server Explorer, fate doppio clic sulla **[!UICONTROL Management > Maintenance Plans]** cartella.
-1. Seleziona il piano di manutenzione di Adobe Campaign: i vari passaggi sono descritti in dettaglio in un flusso di lavoro.
+1. Selezionate il piano di manutenzione  Adobe Campaign: i vari passaggi sono descritti in dettaglio in un flusso di lavoro.
 
    Un oggetto è stato creato nella **[!UICONTROL SQL Server Agent > Jobs]** cartella. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio esiste un solo oggetto, in quanto tutte le attività di manutenzione fanno parte dello stesso piano.
 
@@ -439,4 +437,4 @@ Questa opzione può essere utilizzata per creare tabelle di lavoro (ad esempio, 
 
 Quando si imposta l&#39;opzione su &quot;tempdb.dbo.&quot;, le tabelle di lavoro verranno create nel database temporaneo predefinito di Microsoft SQL Server. L&#39;amministratore del database deve consentire l&#39;accesso in scrittura al database tempdb.
 
-Se questa opzione è impostata, verrà utilizzata in tutti i database di Microsoft SQL Server configurati in Adobe Campaign (database principale e account esterni). Si noti che se due account esterni condividono lo stesso server, possono verificarsi conflitti (in quanto tempdb sarà univoco). Allo stesso modo, se due istanze Campaign utilizzano lo stesso server MSSQL, potrebbero verificarsi conflitti se utilizzano lo stesso tempdb.
+Se questa opzione è impostata, verrà utilizzata in tutti i database di Microsoft SQL Server configurati in  Adobe Campaign (database principale e account esterni). Si noti che se due account esterni condividono lo stesso server, possono verificarsi conflitti (in quanto tempdb sarà univoco). Allo stesso modo, se due istanze Campaign utilizzano lo stesso server MSSQL, potrebbero verificarsi conflitti se utilizzano lo stesso tempdb.
