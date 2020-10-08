@@ -1,7 +1,7 @@
 ---
-title: Proprietà flusso di lavoro
-seo-title: Proprietà flusso di lavoro
-description: Proprietà flusso di lavoro
+title: Proprietà del flusso di lavoro
+seo-title: Proprietà del flusso di lavoro
+description: Proprietà del flusso di lavoro
 seo-description: null
 page-status-flag: never-activated
 uuid: bd576cc0-2db8-4519-bcb5-52bf5c811f42
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
 
-# Proprietà flusso di lavoro{#workflow-properties}
+# Proprietà del flusso di lavoro{#workflow-properties}
 
 ## Scheda Esecuzione {#execution-tab}
 
@@ -28,13 +28,13 @@ La **[!UICONTROL Execution]** scheda della **[!UICONTROL Properties]** finestra 
 
 ![](assets/wf_execution_tab.png)
 
-### Pianificazione {#scheduler}
+### Scheduler {#scheduler}
 
 Questa sezione viene visualizzata solo nei flussi di lavoro delle campagne.
 
 * **[!UICONTROL Priority]**
 
-   Il motore del flusso di lavoro elabora i flussi di lavoro da eseguire in base al criterio di priorità definito in questo campo. Ad esempio, tutti i flussi di lavoro con una **[!UICONTROL Average]** priorità verranno eseguiti prima di quelli con **[!UICONTROL Low]** priorità.
+   Il motore del flusso di lavoro elabora i flussi di lavoro da eseguire in base al criterio di priorità definito in questo campo. Ad esempio, tutti i flussi di lavoro con una **[!UICONTROL Average]** priorità verranno eseguiti prima di quelli con una **[!UICONTROL Low]** priorità.
 
 * **[!UICONTROL Schedule execution for a time of low activity]**
 
@@ -46,7 +46,7 @@ Questa sezione viene visualizzata solo nei flussi di lavoro delle campagne.
 
    Se l&#39;installazione include diversi server di workflow, utilizzare questo campo per scegliere il computer su cui verrà eseguito il flusso di lavoro. Se il valore definito in questo campo non esiste su alcun server, il flusso di lavoro rimarrà in sospeso.
 
-   Fare riferimento a questa [sezione](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Refer to this [section](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL History in days]**
 
@@ -54,7 +54,7 @@ Questa sezione viene visualizzata solo nei flussi di lavoro delle campagne.
 
 * **[!UICONTROL Log SQL queries in the journal]**
 
-   Questa funzionalità è riservata agli utenti avanzati. Riguarda flussi di lavoro che contengono attività di targeting (query, unione, intersezione, ecc.). Quando questa opzione è selezionata, le query SQL inviate al database durante l&#39;esecuzione del flusso di lavoro vengono visualizzate in Adobe Campaign: questo significa che puoi analizzarli per ottimizzare le query o diagnosticare i problemi.
+   Questa funzionalità è riservata agli utenti avanzati. Riguarda flussi di lavoro che contengono attività di targeting (query, unione, intersezione, ecc.). Quando questa opzione è selezionata, le query SQL inviate al database durante l&#39;esecuzione del flusso di lavoro vengono visualizzate in  Adobe Campaign: questo significa che puoi analizzarli per ottimizzare le query o diagnosticare i problemi.
 
    Le query vengono visualizzate in una **[!UICONTROL SQL logs]** scheda che viene aggiunta al flusso di lavoro (ad eccezione dei flussi di lavoro delle campagne) e all&#39; **[!UICONTROL Properties]** attività quando l&#39;opzione è abilitata. La **[!UICONTROL Audit]** scheda include anche query SQL.
 
@@ -64,7 +64,7 @@ Questa sezione viene visualizzata solo nei flussi di lavoro delle campagne.
 
    Questa opzione può essere utilizzata solo per il debug e non mai in produzione. Quando è attivato, il flusso di lavoro ha la priorità e tutti gli altri flussi di lavoro vengono interrotti fino al termine.
 
-### Gestione errori {#error-management}
+### Error management {#error-management}
 
 * **[!UICONTROL Troubleshooting]**
 
@@ -85,7 +85,7 @@ Questa sezione viene visualizzata solo nei flussi di lavoro delle campagne.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Il modello **[!UICONTROL Notification to a workflow supervisor]** predefinito include un collegamento per l&#39;accesso alla console di Adobe Campaign tramite Web, in modo che il destinatario possa risolvere il problema una volta effettuato l&#39;accesso.
+   Il modello **[!UICONTROL Notification to a workflow supervisor]** predefinito include un collegamento per l’accesso alla console Adobe Campaign  tramite Web, in modo che il destinatario possa lavorare sul problema una volta effettuato l’accesso.
 
    Per creare un modello personalizzato, passate a **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.
 
