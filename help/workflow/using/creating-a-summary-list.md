@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6b0acb6b-0808-4972-b2a2-15fab29b3861
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Viene utilizzata la seguente struttura dati:
 
 Il suo scopo è:
 
-* Uso delle varie opzioni dell&#39;attività di arricchimento
+* Per utilizzare le varie opzioni dell&#39;attività di arricchimento
 * Per aggiornare i dati nel database dopo una riconciliazione
 * Per creare una &quot;vista&quot; globale dei dati arricchiti
 
@@ -62,7 +62,7 @@ Questi dati sono contenuti in un file di testo &quot;Purchases.txt&quot;.
 
 1. Aggiungi al flusso di lavoro le attività **Raccolta** file e Caricamento **dati (file)** .
 
-   L&#39;attività **di raccolta** dei file consente di raccogliere e inviare i file da e verso il server Adobe Campaign.
+   L&#39;attività **Raccolta** file consente di raccogliere e inviare i file da e verso il server Adobe Campaign .
 
    L&#39;attività di caricamento **dei dati (file)** consente di arricchire la tabella di lavoro del flusso di lavoro con i dati raccolti.
 
@@ -108,7 +108,7 @@ Nella finestra seguente, è necessario creare una condizione di unione seleziona
 Ora che il collegamento è stato creato, verrà aggiunta una colonna alla tabella di lavoro del flusso di lavoro dallo schema &quot;Stores&quot;: il campo &quot;Riferimento ZipCode&quot;.
 
 1. Aprire l&#39;attività di arricchimento.
-1. Clic **[!UICONTROL Edit additional data]**.
+1. Fai clic su **[!UICONTROL Edit additional data]**.
 1. Aggiungete il campo &quot;ZipCode Reference&quot; al **[!UICONTROL Output columns]**.
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -121,13 +121,13 @@ I dati nella tabella di lavoro del flusso di lavoro dopo l’arricchimento saran
 
 Questo passaggio descrive come scrivere i dati importati e arricchiti nella tabella &quot;Acquisti&quot;. A tal fine, è necessario utilizzare un&#39;attività di **aggiornamento dei dati** .
 
-Prima di aggiornare i dati nella tabella **Acquisti** , è necessario eseguire una riconciliazione tra i dati presenti nella tabella di lavoro del flusso di lavoro e la dimensione di targeting **Acquisti** .
+Prima di aggiornare i dati nella tabella **Acquisti** , è necessario eseguire una riconciliazione tra i dati nella tabella di lavoro del flusso di lavoro e la dimensione di targeting **Acquisti** .
 
 1. Fare clic sulla **[!UICONTROL Reconciliation]** scheda dell&#39;attività di arricchimento.
 1. Selezionare la dimensione di targeting, in questo caso lo schema &quot;Acquisti&quot;.
 1. Selezionare un&#39;espressione &quot;Source&quot; per i dati nella tabella del flusso di lavoro (in questo caso il campo &quot;storeName&quot;).
 1. Selezionare una &quot;espressione di destinazione&quot; per i dati nella tabella &quot;Acquisti&quot; (in questo caso il campo &quot;storename&quot;).
-1. Selezionare l&#39; **[!UICONTROL Keep unreconciled data coming from the work table]** opzione.
+1. Seleziona l’opzione **[!UICONTROL Keep unreconciled data coming from the work table]**.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
@@ -152,7 +152,7 @@ Lo scopo di questo secondo arricchimento è quello di creare un aggregato sullo 
 1. Fate clic su Aggiungi **[!UICONTROL Data]**.
 1. Fate clic sull’ **[!UICONTROL Data linked to the targeting dimension]** opzione.
 1. Fate clic sull’ **[!UICONTROL Data linked to the filtering dimension]** opzione nella **[!UICONTROL Select fields to add]** finestra.
-1. Selezionare il **[!UICONTROL Purchases]** nodo e fare clic su **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Purchases]** node then click **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
@@ -160,7 +160,7 @@ Lo scopo di questo secondo arricchimento è quello di creare un aggregato sullo 
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. Clic **[!UICONTROL Next]**.
+1. Fai clic su **[!UICONTROL Next]**.
 1. Aggiungi la seguente espressione per calcolare il totale degli acquisti per ogni contatto: &quot;Sum(@prodprice)&quot;.
 
    ![](assets/uc2_enrich_enrich6.png)
@@ -172,7 +172,7 @@ Per preparare l&#39;elenco di riepilogo, è necessario aggiungere campi dai camp
 
    ![](assets/uc2_enrich_enrich7.png)
 
-1.  Fate clic sulla **[!UICONTROL Properties]** scheda.
+1. Fate clic sulla **[!UICONTROL Properties]** scheda.
 1. Cambia il secondo collegamento per creare una sola riga.
 
    ![](assets/uc2_enrich_enrich8.png)
@@ -188,7 +188,7 @@ L&#39;ultimo passaggio prevede la scrittura di tutti i dati arricchiti in un ele
 Una volta eseguito il flusso di lavoro, l&#39;elenco includerà:
 
 * un elenco dei contatti,
-* una colonna &quot;Totale acquisti&quot;,
+* una colonna &quot;Acquisti totali&quot;,
 * una colonna &quot;Nome store&quot;,
 * una colonna &quot;Riferimento codice postale&quot; inserita per tutti gli store contenuti nello schema di riferimento dello store.
 
