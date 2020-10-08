@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -137,7 +134,7 @@ Se la consegna è troppo grande, è meglio assegnarvi una priorità bassa per ev
 
 ## Invio di una bozza {#sending-a-proof}
 
-Per rilevare eventuali errori nella configurazione dei messaggi,  Adobe consiglia vivamente di impostare un ciclo di convalida della consegna. Accertatevi che il contenuto venga approvato con la frequenza necessaria inviando prove di stampa ai destinatari del test. Una prova deve essere inviata ogni volta che viene apportata una modifica per approvare il contenuto.
+Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia vivamente di impostare un ciclo di convalida della consegna. Accertati che il contenuto sia approvato con la frequenza necessaria inviando delle prove a destinatari di test. Per approvare il contenuto, deve essere inviata una prova ogni volta che viene apportata una modifica.
 
 >[!NOTE]
 >
@@ -217,7 +214,7 @@ Nella **[!UICONTROL Rule]** scheda è riportato un elenco delle regole di tipolo
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** le tipologie sono utilizzate nel quadro della gestione della pressione di vendita. Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
+>**[!UICONTROL Arbitration]** le tipologie sono utilizzate nel quadro della gestione della pressione di vendita. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 ## Modifica della modalità di approvazione {#changing-the-approval-mode}
 
