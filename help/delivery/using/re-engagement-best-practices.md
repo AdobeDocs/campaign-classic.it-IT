@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -32,7 +29,7 @@ Durante l&#39;implementazione della funzionalità di recapito, alcune delle best
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle strategie per il nuovo coinvolgimento nelle campagne e sui servizi di distribuzione di Adobe, contattate il vostro consulente per la distribuzione o contattate il vostro agente di vendita Adobe.
+>Per ulteriori informazioni sulle strategie per il rilancio delle campagne e sui servizi di distribuzione  Adobe, contattate il consulente per la distribuzione o contattate il vostro agente di vendita  Adobe.
 
 ## In che modo gli ISP visualizzano l&#39;attività non legata al coinvolgimento? {#how-do-isps-view-non-engagement-activity-}
 
@@ -42,7 +39,7 @@ ISP come AOL, Gmail, Microsoft e Yahoo! visualizzate i messaggi non associati co
 
 ## Come si dovrebbe affrontare l&#39;inattività? {#how-should-you-approach-inactivity-}
 
-Fortunatamente, i clienti che usano la piattaforma di Adobe Campaign  possono visualizzare l&#39;inattività all&#39;interno della propria istanza rivedendo i dati aperti e facendo clic su in base al segmento. Poiché il mancato coinvolgimento può ostacolare la consegna, il primo pensiero può essere quello di rimuovere semplicemente gli abbonati dal database. In alcuni casi, tuttavia, questa potrebbe rivelarsi un&#39;opzione sbagliata. Di conseguenza, una strategia di riimpegno (nota anche come &quot;win back&quot;) è la migliore raccomandazione per mantenere gli abbonati interessati a ricevere la posta, e gradualmente eliminare quelli che non mostrano più attività.
+Fortunatamente, i clienti che usano la piattaforma Adobe Campaign  possono visualizzare l&#39;inattività all&#39;interno della propria istanza rivedendo i dati aperti e facendo clic in base al segmento. Poiché il mancato coinvolgimento può ostacolare la consegna, il primo pensiero può essere quello di rimuovere semplicemente gli abbonati dal database. In alcuni casi, tuttavia, questa potrebbe rivelarsi un&#39;opzione sbagliata. Di conseguenza, una strategia di riimpegno (nota anche come &quot;win back&quot;) è la migliore raccomandazione per mantenere gli abbonati interessati a ricevere la posta, e gradualmente eliminare quelli che non mostrano più attività.
 
 ## Le campagne di recoinvolgimento funzionano davvero? {#do-re-engagement-campaigns-really-work-}
 
@@ -55,7 +52,7 @@ Secondo uno studio sul percorso di ritorno, le campagne di reimpegno sono uscite
 ### Fase 1 {#phase-1}
 
 * Il primo passaggio consiste nell&#39;identificare gli abbonati che hanno un&#39;attività che non può essere aperta o fare clic su un elemento molto piccolo, e quindi segmentare il gruppo in base a un intervallo di tempo impostato. La regola del pollice consiste nel rivedere gli utenti che non hanno aperto o fatto clic su un&#39;e-mail negli ultimi 90 giorni. Tuttavia, questo varia a seconda della natura dell&#39;attività (ad esempio, l&#39;invio stagionale).
-* Un altro punto da tenere a mente durante la definizione dei tempi è che gli ISP e le aziende di liste di blocchi considerano il coinvolgimento a un punto qualsiasi tra 1,5 e 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
+* Un altro punto da tenere a mente durante la definizione dei tempi è che i provider di servizi Internet e le aziende  elenchi Bloccati considerano l&#39;impegno un luogo da 1,5 a 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
 
 ### Fase 2 {#phase-2}
 
@@ -68,7 +65,7 @@ Il passo successivo consiste nel determinare la frequenza della campagna di reco
 
 ![](assets/deliverability_implementation_2.png)
 
-Gli iscritti che interagiscono con la campagna seguendo l&#39;attività aperta o di clic vengono aggiunti nuovamente all&#39;elenco degli iscritti coinvolti.
+Gli iscritti che interagiscono con la campagna seguendo l&#39;attività aperta o di clic vengono aggiunti nuovamente all&#39;elenco degli utenti coinvolti.
 
 ### Fase 4 {#phase-4}
 
