@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c830d40cef836533c5104901d03a07e7cf96d3d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -63,7 +60,7 @@ Iniziate creando una nuova consegna.
 
 1. Nel **[!UICONTROL Title]** campo, immettete l’etichetta del titolo che desiderate visualizzare nella notifica. Verrà visualizzato solo nell&#39;elenco delle notifiche disponibili dal Centro notifiche. Questo campo consente di definire il valore del parametro **title** del payload di notifica iOS.
 
-1. Se utilizzate il connettore HTTP/2, potete aggiungere un sottotitolo (valore del parametro del **sottotitolo** del payload di notifica iOS). Consultate [Configurazione dell’applicazione mobile nella sezione  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+1. Se utilizzate il connettore HTTP/2, potete aggiungere un sottotitolo (valore del parametro del **sottotitolo** del payload di notifica iOS). Consultate [Configurazione dell’applicazione mobile  sezione Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 1. Quindi immettete il **[!UICONTROL Message]** e il **[!UICONTROL Value of the badge]** valore in base al tipo di notifica scelto.
 
@@ -94,13 +91,13 @@ Iniziate creando una nuova consegna.
 
    >[!NOTE]
    >
-   >Lo stile di notifica (banner o avviso) non è definito nell&#39;Adobe Campaign . Dipende dalla configurazione selezionata dall&#39;utente nelle relative impostazioni iOS. Tuttavia,  Adobe Campaign consente di visualizzare in anteprima ogni tipo di stile di notifica. Fare clic sulla freccia in basso a destra per passare da uno stile all&#39;altro.
+   >Lo stile di notifica (banner o avviso) non è definito in  Adobe Campaign. Dipende dalla configurazione selezionata dall&#39;utente nelle relative impostazioni iOS. Tuttavia,  Adobe Campaign consente di visualizzare in anteprima ogni tipo di stile di notifica. Fare clic sulla freccia in basso a destra per passare da uno stile all&#39;altro.
    >
    >L&#39;anteprima utilizza l&#39;aspetto e il comportamento di iOS 10.
 
 Per inviare una prova e inviare la consegna finale, utilizzate la stessa procedura utilizzata per le consegne tramite e-mail.
 
-Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta le sezioni seguenti:
+Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
 * [quarantena delle notifiche push](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitoraggio di una consegna](../../delivery/using/monitoring-a-delivery.md)
@@ -143,7 +140,7 @@ La procedura dettagliata per la convalida e l&#39;invio di una consegna è descr
 * [Convalida della consegna](../../delivery/using/steps-validating-the-delivery.md)
 * [Invio della consegna](../../delivery/using/steps-sending-the-delivery.md)
 
-Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta le sezioni seguenti:
+Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
 * [quarantena delle notifiche push](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
 * [Monitoraggio di una consegna](../../delivery/using/monitoring-a-delivery.md)
