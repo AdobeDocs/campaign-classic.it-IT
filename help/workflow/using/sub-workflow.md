@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +29,7 @@ Puoi chiamare più flussi di lavoro secondari in un unico flusso di lavoro. I fl
 Nell’esempio seguente, un flusso di lavoro principale chiama un flusso di lavoro secondario utilizzando i collegamenti. Per ulteriori informazioni sugli oggetti grafici di tipo &quot;salto&quot;, vedere [questa sezione](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Crea un flusso di lavoro da utilizzare come flusso di lavoro secondario in un altro flusso di lavoro.
-1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se avete più salti di tipo &quot;punto finale&quot;,  Adobe Campaign utilizza il salto &quot;punto finale&quot; con il numero più basso.
+1. Inserite un&#39; **[!UICONTROL Jump (end point)]** attività con priorità pari a 1 all&#39;inizio del flusso di lavoro. Se avete più salti di tipo &quot;punto finale&quot;,  Adobe Campaign utilizzerà il salto &quot;punto finale&quot; con il numero più basso.
 1. Inserite un&#39; **[!UICONTROL Jump (start point)]** attività con priorità pari a 2 alla fine del flusso di lavoro. Se avete più salti di tipo &quot;punto iniziale&quot;,  Adobe Campaign utilizzerà il salto &quot;punto iniziale&quot; con il numero più alto.
 
    ![](assets/subworkflow_jumps.png)
@@ -51,7 +48,7 @@ Nell’esempio seguente, un flusso di lavoro principale chiama un flusso di lavo
    ![](assets/subworkflow_selection.png)
 
 1. È inoltre possibile aggiungere uno script di configurazione per modificare il flusso di lavoro di riferimento.
-1. Clic **[!UICONTROL Ok]**. Crea automaticamente una transizione in uscita con l&#39;etichetta dell&#39; **[!UICONTROL Jump (start point)]** attività dal flusso di lavoro selezionato.
+1. Fai clic su **[!UICONTROL Ok]**. Crea automaticamente una transizione in uscita con l&#39;etichetta dell&#39; **[!UICONTROL Jump (start point)]** attività dal flusso di lavoro selezionato.
 
    ![](assets/subworkflow_outbound.png)
 
