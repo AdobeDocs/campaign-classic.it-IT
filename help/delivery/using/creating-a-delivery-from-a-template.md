@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 8b50d14a-8cc6-4546-8069-47fe24f15b61
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 13%
 
 ---
 
@@ -38,7 +38,7 @@ Selezionate il modello di consegna da utilizzare e fate clic su **[!UICONTROL Ok
 
 ## Esecuzione del modello {#executing-the-template}
 
-Potete avviare l&#39;esecuzione di un modello direttamente dall&#39;elenco dei modelli senza prima creare una consegna. A questo scopo, selezionate il modello da eseguire e fate clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions>Execute the delivery template...]**.
+Potete avviare l&#39;esecuzione di un modello direttamente dall&#39;elenco dei modelli senza prima creare una consegna. A questo scopo, selezionate il modello da eseguire e fate clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
 
 Potete anche usare **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
