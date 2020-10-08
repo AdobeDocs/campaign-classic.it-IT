@@ -1,7 +1,7 @@
 ---
-title: Accesso a campagne
-seo-title: Accesso a campagne
-description: Accesso a campagne
+title: Accesso alle campagne
+seo-title: Accesso alle campagne
+description: Accesso alle campagne
 seo-description: null
 page-status-flag: never-activated
 uuid: 277f49fa-8056-42dc-876f-15ad0edc2716
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 39d8ddcd-7fae-44fa-8a49-c3ad999e7903
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 4%
 
 ---
 
 
-# Accesso a campagne{#accessing-campaigns}
+# Accesso alle campagne{#accessing-campaigns}
 
 Una volta ordinata una campagna, l&#39;ordine è stato approvato e la data di disponibilità raggiunta, può essere eseguito.
 
@@ -38,7 +38,7 @@ La campagna rimane accessibile nella panoramica Campagna, tramite il **[!UICONTR
 
 ## Impostazioni disponibili {#available-settings}
 
-Le entità locali possono adattare il contenuto della campagna alle proprie esigenze, utilizzando tutti gli elementi del dashboard della campagna. Il compito principale sarà quello di adattare il flusso di lavoro di targeting ed eventualmente personalizzare il contenuto della distribuzione.
+Le entità locali possono adattare il contenuto della campagna in base alle proprie esigenze, utilizzando tutti gli elementi del dashboard della campagna. Il compito principale sarà quello di adattare il flusso di lavoro di targeting ed eventualmente personalizzare il contenuto della distribuzione.
 
 ## Esecuzione della campagna {#campaign-execution}
 
