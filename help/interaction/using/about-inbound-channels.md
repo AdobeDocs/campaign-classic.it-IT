@@ -1,7 +1,7 @@
 ---
-title: I canali in ingresso
-seo-title: I canali in ingresso
-description: I canali in ingresso
+title: Informazioni sui canali in entrata
+seo-title: Informazioni sui canali in entrata
+description: Informazioni sui canali in entrata
 seo-description: null
 page-status-flag: never-activated
 uuid: 4224282b-f05f-400e-82f9-9ee9d7a8b443
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 9469495c-9e46-4fd8-826d-1b7227326ce1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 5%
 
 ---
 
 
-# I canali in ingresso{#about-inbound-channels}
+# Informazioni sui canali in entrata{#about-inbound-channels}
 
 Le offerte possono essere presentate su vari spazi di offerta utilizzando un canale in entrata o in uscita. Questo capitolo descrive alcune funzioni specifiche per i canali in ingresso.
 
@@ -38,4 +38,4 @@ Prima di poter presentare le offerte su un canale in ingresso, devi configurare 
 >
 >Per le interazioni in entrata, dovete configurare in modo specifico il motore delle offerte per presentare e aggiornare una o più offerte.
 >
->È inoltre necessario attivare la modalità unitaria negli spazi di offerta. Per ulteriori informazioni, consultate la sezione [Creazione di spazi](../../interaction/using/creating-offer-spaces.md) di offerta.
+>È inoltre necessario attivare la modalità unitaria negli spazi di offerta. For more on this, refer to the [Creating offer spaces](../../interaction/using/creating-offer-spaces.md) section.
