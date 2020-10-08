@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 discoiquuid: 6e27caea-1f1a-457d-bdec-1f93a12b01cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 Al di fuori dell&#39;attività di distribuzione stessa, diverse attività del flusso di lavoro consentono di definire il modo in cui vengono presentate le offerte:
 
 * Profilo di consegna
-* Arricchimento
+* Enrichment
 * Motore di offerta
 * Offerte per cella
 
@@ -36,12 +36,12 @@ L&#39;attività del profilo di consegna, disponibile nei flussi di lavoro della 
 1. In un flusso di lavoro, aggiungete un&#39;attività di struttura della consegna prima di aggiungere un&#39;attività di consegna.
 1. Nell&#39;attività del profilo di consegna, specificate il profilo da utilizzare.
 
-   Per ulteriori informazioni sulla specifica dei contorni di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) .
+   Per ulteriori informazioni su come specificare i contorni di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) .
 
 1. Completa i campi disponibili in base alla consegna.
 1. Esistono due casi possibili:
 
-   * Se desiderate chiamare il motore delle offerte, selezionate la **[!UICONTROL Restrict the number of propositions selected]** casella. Specificate lo spazio di offerta e il numero di proposte che verranno presentate nella consegna.
+   * Se desiderate chiamare il motore delle offerte, selezionate la **[!UICONTROL Restrict the number of propositions selected]** casella. Specificate lo spazio dell&#39;offerta e il numero di proposte che verranno presentate nella consegna.
 
       I pesi delle offerte e le regole di ammissibilità saranno prese in considerazione dal motore delle offerte.
 
@@ -52,7 +52,7 @@ L&#39;attività del profilo di consegna, disponibile nei flussi di lavoro della 
 
    ![](assets/int_compo_offre_wf1.png)
 
-## Arricchimento {#enrichment}
+## Enrichment {#enrichment}
 
 L&#39;attività di arricchimento consente di aggiungere offerte o collegamenti alle offerte per i destinatari della distribuzione.
 
@@ -60,7 +60,7 @@ L&#39;attività di arricchimento consente di aggiungere offerte o collegamenti a
 >
 >Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la documentazione dedicata nella guida [](../../workflow/using/enrichment.md)Flussi di lavoro.
 
-Ad esempio, puoi arricchire i dati per una query del destinatario prima della consegna.
+Ad esempio, è possibile arricchire i dati per una query del destinatario prima della consegna.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -74,7 +74,7 @@ Esistono due metodi per specificare le proposte di offerta.
 Dopo aver configurato la query (consultare la guida [](../../workflow/using/query.md)Flussi di lavoro):
 
 1. Aggiungere e aprire un&#39;attività di arricchimento.
-1. Nella **[!UICONTROL Enrichment]** scheda, selezionare **[!UICONTROL Add data]**.
+1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
 1. Selezionare **[!UICONTROL An offer proposition]** i tipi di dati da aggiungere.
 
    ![](assets/int_enrichment_offer2.png)
@@ -100,7 +100,7 @@ Dopo aver configurato la query (consultare la guida [](../../workflow/using/quer
 
 Potete anche fare riferimento a un collegamento a un&#39;offerta in un&#39;attività di arricchimento.
 
-A questo scopo, attenersi alla procedura seguente:
+A tal fine, attenersi alla procedura seguente:
 
 1. Selezionate **[!UICONTROL Add data]** nella **[!UICONTROL Enrichment]** scheda dell&#39;attività.
 1. Nella finestra in cui si sceglie il tipo di dati da aggiungere, selezionare **[!UICONTROL A link]**.
@@ -166,7 +166,7 @@ Dopo aver configurato la query (consultare la guida [](../../workflow/using/quer
 
 L&#39; **[!UICONTROL Offers by cell]** attività consente di distribuire la popolazione in entrata (ad esempio da una query) in diversi segmenti e di specificare un&#39;offerta da presentare per ciascuno di questi segmenti.
 
-A questo scopo, attenersi alla procedura seguente:
+A tal fine, attenersi alla procedura seguente:
 
 1. Aggiungete l&#39; **[!UICONTROL Offers by cell]** attività una volta specificata la popolazione di destinazione, quindi apritela.
 1. Nella **[!UICONTROL General]** scheda, selezionate lo spazio dell&#39;offerta sul quale desiderate presentare le offerte.
