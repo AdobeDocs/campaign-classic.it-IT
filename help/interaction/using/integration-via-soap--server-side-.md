@@ -11,18 +11,18 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
 
 # Integrazione tramite SOAP (lato server){#integration-via-soap-server-side}
 
-I servizi Web SOAP forniti per la gestione delle offerte sono diversi da quelli generalmente utilizzati in Adobe Campaign. È possibile accedervi tramite l&#39;URL di interazione descritto nella sezione precedente e consentire di presentare o aggiornare le offerte per un determinato contatto.
+I servizi Web SOAP forniti per la gestione delle offerte sono diversi da quelli normalmente utilizzati in  Adobe Campaign. È possibile accedervi tramite l&#39;URL di interazione descritto nella sezione precedente e consentire di presentare o aggiornare le offerte per un determinato contatto.
 
 ## Proposta di offerta {#offer-proposition}
 
@@ -30,11 +30,11 @@ Per una proposta di offerta tramite SOAP, aggiungete il comando **nms:propositio
 
 * **targetId**: chiave primaria del destinatario (può essere una chiave composita).
 * **maxCount**: specifica il numero di proposte di offerta per il contatto.
-* **contesto**: consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interazioni**, **`<empty>`** aggiungere.
+* **contesto**: consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interazioni**, **`<empty>`** è necessario aggiungerlo.
 * **categorie**: specifica le categorie a cui devono appartenere le offerte.
 * **temi**: specifica i temi a cui devono appartenere le offerte.
-* **uuid**: del cookie permanente di Adobe Campaign (&quot;uuid230&quot;).
-* **nli**: del cookie di sessione di Adobe Campaign (&quot;nlid&quot;).
+* **uuid**: valore del cookie permanente  Adobe Campaign (&quot;uuid230&quot;).
+* **nli**: del cookie di sessione di  Adobe Campaign (&quot;nlid&quot;).
 * **noProp**: utilizzate il valore &quot;true&quot; per disattivare l&#39;inserimento della proposta.
 
 >[!NOTE]
@@ -46,13 +46,13 @@ In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 * **actionId**: ID dell’interazione.
 * **proposizioni**: L&#39;elemento XML contiene l&#39;elenco delle proposizioni, ciascuna con un proprio ID e una propria rappresentazione HTML.
 
-## Aggiornamento offerta {#offer-update}
+## Aggiornamento dell&#39;offerta {#offer-update}
 
 Aggiungete il comando **nms:interactive#UpdateStatus** all’URL, seguito dai seguenti parametri:
 
 * **proposta**: stringa di caratteri, contiene l&#39;ID di proposta fornito come output durante una proposta di offerta. Fare riferimento alla proposta [di offerta](#offer-proposition).
 * **status**: tipo di stringa, specifica il nuovo stato dell&#39;offerta. I valori possibili sono elencati nell&#39;enumerazione **propositionStatus** , nello schema **nms:common** . Ad esempio, out-of-the-box, il numero 3 corrisponde allo stato **Accettato** .
-* **contesto**: Elemento XML, consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:interazioni**, **`<empty>`** aggiungere.
+* **contesto**: Elemento XML, consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:interazioni**, **`<empty>`** è necessario aggiungerlo.
 
 ## Esempio di utilizzo di una chiamata SOAP {#example-using-a-soap-call}
 
