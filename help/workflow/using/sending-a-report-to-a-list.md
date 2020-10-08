@@ -1,7 +1,7 @@
 ---
-title: Invio di un rapporto a un elenco
-seo-title: Invio di un rapporto a un elenco
-description: Invio di un rapporto a un elenco
+title: Invio di un report a un elenco
+seo-title: Invio di un report a un elenco
+description: Invio di un report a un elenco
 seo-description: null
 page-status-flag: never-activated
 uuid: 29759fd8-47f3-47cc-9f7e-263e305fd6fb
@@ -11,16 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 3%
 
 ---
 
 
-# Invio di un rapporto a un elenco{#sending-a-report-to-a-list}
+# Invio di un report a un elenco{#sending-a-report-to-a-list}
 
 Questo caso d’uso descrive come generare un rapporto mensile out-of-the-box **[!UICONTROL Tracking indicators]** in formato PDF e come inviarlo a un elenco di destinatari.
 
@@ -28,9 +28,9 @@ Questo caso d’uso descrive come generare un rapporto mensile out-of-the-box **
 
 Le fasi di implementazione principali per questo caso di utilizzo sono:
 
-* Creazione di un elenco dei destinatari che riceveranno la consegna (fare riferimento a: Passaggio [1: Creazione dell&#39;elenco](#step-1--creating-the-recipient-list)destinatari).
-* Creazione di un modello di consegna che consenta di generare una nuova consegna ogni volta che viene eseguito il flusso di lavoro (consultate: Passaggio [2: Creazione del modello](#step-2--creating-the-delivery-template)di consegna).
-* Creazione di un flusso di lavoro per generare il rapporto in formato PDF e inviarlo all’elenco dei destinatari (consultare: Passaggio [3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
+* Creazione di un elenco dei destinatari che riceveranno la consegna (fare riferimento a: [Passaggio 1: Creazione dell&#39;elenco](#step-1--creating-the-recipient-list)destinatari).
+* Creazione di un modello di consegna che consenta di generare una nuova consegna ogni volta che viene eseguito il flusso di lavoro (consultate: [Passaggio 2: Creazione del modello](#step-2--creating-the-delivery-template)di consegna).
+* Creazione di un flusso di lavoro per generare il rapporto in formato PDF e inviarlo all’elenco dei destinatari (consultare: [Passaggio 3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
 
 ## Passaggio 1: Creazione dell&#39;elenco dei destinatari {#step-1--creating-the-recipient-list}
 
@@ -38,11 +38,11 @@ Vai all&#39; **[!UICONTROL Profiles and targets]** universo, fai clic sul **[!UI
 
 ![](assets/use_case_report_1.png)
 
-Per ulteriori informazioni sulla creazione di elenchi, consultare questa [sezione](../../platform/using/creating-and-managing-lists.md).
+For more on creating lists, refer to this [section](../../platform/using/creating-and-managing-lists.md).
 
 ## Passaggio 2: Creazione del modello di consegna {#step-2--creating-the-delivery-template}
 
-1. Vai al **[!UICONTROL Resources > Templates > Delivery templates]** nodo di Adobe Campaign Explorer e duplica il modello **[!UICONTROL Email delivery]** out-of-the-box.
+1. Passate al **[!UICONTROL Resources > Templates > Delivery templates]** nodo di  Adobe Campaign Explorer e duplicate il modello **[!UICONTROL Email delivery]** out-of-the-box.
 
    ![](assets/use_case_report_2.png)
 
@@ -72,7 +72,7 @@ Per ulteriori informazioni sulla creazione di elenchi, consultare questa [sezion
 
       >[!CAUTION]
       >
-      >Il file deve essere presente sul server. Il percorso e il nome devono essere identici a quelli immessi nell&#39;attività di **[!UICONTROL JavaScript code]** tipo del flusso di lavoro (fare riferimento a: Passaggio [3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
+      >Il file deve essere presente sul server. Il percorso e il nome devono essere identici a quelli immessi nell&#39;attività di **[!UICONTROL JavaScript code]** tipo del flusso di lavoro (fare riferimento a: [Passaggio 3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
 
    * Selezionare la **[!UICONTROL Advanced]** scheda e selezionare **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Passate alla zona di modifica e immettete il nome da assegnare all’allegato nella consegna finale.
 
@@ -118,11 +118,11 @@ Per questo caso di utilizzo è stato creato il seguente flusso di lavoro. Esso h
    Vengono utilizzate le seguenti variabili:
 
    * **var reportName**: immettere il nome interno del rapporto tra virgolette. In questo caso, il nome interno del report indicatore **di** tracciamento è &quot;deliveryFeedback&quot;.
-   * **percorso** var: immettete il percorso di salvataggio del file (&quot;tmp/files/&quot;), il nome che desiderate assegnare al file (&quot;deliveryFeedback&quot;) e l’estensione del file (&quot;.pdf&quot;). In questo caso, abbiamo usato il nome interno come nome file. I valori devono essere compresi tra virgolette doppie e separati dal carattere &quot;+&quot;.
+   * **percorso** var: immettete il percorso di salvataggio del file (&quot;tmp/files/&quot;), il nome che desiderate assegnare al file (&quot;deliveryFeedback&quot;) e l’estensione del file (&quot;.pdf&quot;). In questo caso, abbiamo usato il nome interno come nome del file. I valori devono essere compresi tra virgolette doppie e separati dal carattere &quot;+&quot;.
 
       >[!CAUTION]
       >
-      >Il file deve essere salvato sul server. È necessario immettere lo stesso percorso e lo stesso nome nella **[!UICONTROL General]** scheda della finestra di modifica per l&#39;allegato calcolato (fare riferimento a: Passaggio [2: Creazione del modello](#step-2--creating-the-delivery-template)di consegna).
+      >Il file deve essere salvato sul server. È necessario immettere lo stesso percorso e lo stesso nome nella **[!UICONTROL General]** scheda della finestra di modifica per l&#39;allegato calcolato (fare riferimento a: [Passaggio 2: Creazione del modello](#step-2--creating-the-delivery-template)di consegna).
 
    * **var exportFormat**: immettere il formato di esportazione del file (&quot;PDF&quot;).
    * **var_ctx** (contesto): in questo caso, utilizziamo la **[!UICONTROL Tracking indicators]** relazione nel suo contesto globale.
@@ -133,5 +133,6 @@ Per questo caso di utilizzo è stato creato il seguente flusso di lavoro. Esso h
    * Per i **[!UICONTROL Recipients]** campi e **[!UICONTROL Content]** , selezionare **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: selezionare **[!UICONTROL Prepare and start]**.
    * Deselezionare **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)
 
