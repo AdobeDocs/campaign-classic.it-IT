@@ -1,7 +1,7 @@
 ---
-title: Nuova procedura guidata per i campi
-seo-title: Nuova procedura guidata per i campi
-description: Nuova procedura guidata per i campi
+title: Procedura guidata per l’aggiunta di nuovi campi
+seo-title: Procedura guidata per l’aggiunta di nuovi campi
+description: Procedura guidata per l’aggiunta di nuovi campi
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c8d35db-042a-47cf-a7a6-3bb63bf40d94
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6da65fb5-18a1-41a0-96d8-588e383f944b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 5%
 
 ---
 
 
-# Nuova procedura guidata per i campi{#new-field-wizard}
+# Procedura guidata per l’aggiunta di nuovi campi{#new-field-wizard}
 
 Una procedura guidata accessibile tramite **[!UICONTROL Tools > Advanced > Add new fields]** consente di aggiungere uno o più campi a una tabella del database.
 
