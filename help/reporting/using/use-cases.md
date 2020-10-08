@@ -1,7 +1,7 @@
 ---
-title: Casi di utilizzo
-seo-title: Casi di utilizzo
-description: Casi di utilizzo
+title: Casi d’uso
+seo-title: Casi d’uso
+description: Casi d’uso
 seo-description: null
 page-status-flag: never-activated
 uuid: 86762d94-2a7d-4053-980b-c699a58a021d
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 691eea2c-bffc-4520-91c8-43798eece916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 0%
 
 ---
 
 
-# Casi di utilizzo{#use-cases}
+# Casi d’uso{#use-cases}
 
 ## Analisi di una popolazione {#analyzing-a-population}
 
@@ -38,7 +38,7 @@ A tal fine, selezionare le consegne interessate, quindi fare clic con il pulsant
 
 ### Selezione di un tipo di analisi {#selecting-a-type-of-analysis}
 
-Nel primo passaggio dell&#39;assistente, potete selezionare il modello di analisi descrittiva da utilizzare. Per impostazione predefinita, Adobe Campaign offre due modelli: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. Per ulteriori informazioni, consulta la sezione [Configurazione del modello](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) di distribuzione qualitativa. I vari rendering sono presentati nella sezione [Informazioni sull&#39;analisi](../../reporting/using/about-descriptive-analysis.md) descrittiva.
+Nel primo passaggio dell&#39;assistente, potete selezionare il modello di analisi descrittiva da utilizzare. Per impostazione predefinita,  Adobe Campaign offre due modelli: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. For more on this refer to the [Configuring the qualitative distribution template](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) section. I vari rendering sono presentati nella sezione [Informazioni sull&#39;analisi](../../reporting/using/about-descriptive-analysis.md) descrittiva.
 
 Per questo esempio, selezionate il **[!UICONTROL Qualitative distribution]** modello e scegliete una visualizzazione con un grafico e una tabella (array). Assegna al rapporto un nome (&quot;Analisi descrittiva&quot;) e fai clic su **[!UICONTROL Next]**.
 
@@ -82,7 +82,7 @@ Questa finestra consente di definire l&#39;elenco delle statistiche da calcolare
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Per creare una nuova statistica, fate clic sul **[!UICONTROL Add]** pulsante. Per ulteriori informazioni, vedere Calcolo delle [statistiche](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Per creare una nuova statistica, fate clic sul **[!UICONTROL Add]** pulsante. For more on this, refer to [Statistics calculation](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
 ### Visualizzazione e utilizzo del rapporto {#viewing-and-using-the-report}
 
@@ -116,7 +116,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    Passa il cursore del mouse su una barra per vedere il numero esatto di clienti o potenziali clienti per questo paese.
 
-1. Attiva o disattiva la visualizzazione di uno dei paesi in base alla legenda.
+1. Abilitare o disabilitare la visualizzazione di uno dei paesi in base alla legenda.
 
    ![](assets/s_ncs_user_report_wizard_06png.png)
 
@@ -137,7 +137,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    Fate clic **[!UICONTROL Next]** per approvare questo passaggio.
 
-1. Inserire quindi le statistiche da calcolare: mantenete il conteggio predefinito e create una nuova statistica. Fare clic **[!UICONTROL Add]** e selezionare **[!UICONTROL Total percentage distribution]** come operatore.
+1. Inserire quindi le statistiche da calcolare: mantenete il conteggio predefinito e create una nuova statistica. A questo scopo, fare clic **[!UICONTROL Add]** e selezionare **[!UICONTROL Total percentage distribution]** come operatore.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -149,7 +149,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
-1. Una volta generato il rapporto di analisi, potete adattare lo schermo in base alle vostre esigenze senza modificare la configurazione. Ad esempio, potete cambiare gli assi: fare clic con il pulsante destro del mouse sui nomi di dominio e selezionare **[!UICONTROL Turn]** il menu di scelta rapida.
+1. Una volta generato il rapporto di analisi, potete adattare lo schermo in base alle vostre esigenze senza modificare la configurazione. Ad esempio, è possibile cambiare gli assi: fare clic con il pulsante destro del mouse sui nomi di dominio e selezionare **[!UICONTROL Turn]** il menu di scelta rapida.
 
    ![](assets/s_ncs_user_report_wizard_07.png)
 
@@ -167,11 +167,11 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    Fate clic sul **[!UICONTROL Next]** pulsante per approvare questo passaggio.
 
-1. Selezionate la **[!UICONTROL Age]** variabile e immettete la relativa etichetta. Specificare se si tratta di un numero intero, quindi fare clic **[!UICONTROL Next]**.
+1. Selezionate la **[!UICONTROL Age]** variabile e immettete la relativa etichetta. Specificate se si tratta di un numero intero o meno, quindi fate clic **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
-1. Eliminate le **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** e **[!UICONTROL Sum]** le statistiche: non sono necessarie qui.
+1. Eliminate le **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** e **[!UICONTROL Sum]** le statistiche: non sono necessari qui.
 
    ![](assets/s_ncs_user_report_wizard_012.png)
 
@@ -238,7 +238,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    Qui, per ogni newsletter, la tabella mostrerà: il numero di aperture, il numero di clic, il tasso di reattività (in percentuale).
 
-1. Aggiungete una statistica per conteggiare il numero di clic: definire il filtro appropriato nella **[!UICONTROL Filter]** scheda.
+1. Aggiungete una statistica per il conteggio del numero di clic: definire il filtro appropriato nella **[!UICONTROL Filter]** scheda.
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
