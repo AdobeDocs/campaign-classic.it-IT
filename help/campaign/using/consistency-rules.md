@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 9bcb5dc1-8cb4-4781-a8cd-8d072ff28b1a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 3%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ## Informazioni sulle regole di coerenza {#about-consistency-rules}
 
-Adobe Campaign garantisce comunicazioni coerenti grazie a una serie di regole contenute nelle tipologie di campagne. L&#39;obiettivo è quello di controllare le consegne inviate ai destinatari, quali volume, natura, pertinenza, ecc.
+ Adobe Campaign garantisce comunicazioni coerenti grazie a una serie di regole contenute nelle tipologie delle campagne. L&#39;obiettivo è quello di controllare le consegne inviate ai destinatari, quali volume, natura, pertinenza, ecc.
 
-**Le regole di capacità** , ad esempio, possono evitare di sovraccaricare la piattaforma interessata dalla consegna dei messaggi. Ad esempio, le offerte speciali che contengono un collegamento per il download non devono essere inviate a troppe persone contemporaneamente, per evitare di saturare il server; le campagne telefoniche non devono superare la capacità di elaborazione dei call center, ecc. Per ulteriori informazioni, vedere [Controllo della capacità](#controlling-capacity).
+**Le regole di capacità** , ad esempio, possono evitare di sovraccaricare la piattaforma interessata dalla consegna dei messaggi. Ad esempio, le offerte speciali che contengono un collegamento per il download non devono essere inviate a troppe persone contemporaneamente, per evitare di saturare il server; le campagne telefoniche non devono superare la capacità di elaborazione dei call center, ecc. For more on this, refer to [Controlling capacity](#controlling-capacity).
 
 ## Capacità di controllo {#controlling-capacity}
 
@@ -43,7 +43,7 @@ Per progettare una nuova regola di capacità, effettuate le seguenti operazioni:
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. Nella **[!UICONTROL Capacity]** scheda, creare le righe di disponibilità: nel nostro esempio, questi sono periodi di tempo durante i quali possono essere effettuate chiamate. Selezionare un periodo di 24 ore e immettere 150 nella quantità iniziale, il che significa che il call center può gestire 150 chiamate al giorno.
+1. Nella **[!UICONTROL Capacity]** scheda, creare le righe di disponibilità: nel nostro esempio, si tratta di periodi di tempo durante i quali possono essere effettuate chiamate. Selezionare un periodo di 24 ore e immettere 150 nella quantità iniziale, il che significa che il call center può gestire 150 chiamate al giorno.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -51,14 +51,14 @@ Per progettare una nuova regola di capacità, effettuate le seguenti operazioni:
    >
    >Le righe di disponibilità sono esclusivamente a scopo informativo. Per escludere i messaggi quando viene raggiunto il limite di capacità, consulta [questa sezione](#exclude-messages-when-capacity-limit-reached).
 
-1. Associate questa regola a una tipologia, quindi fate riferimento alla tipologia nella distribuzione per applicare questa regola di capacità. For more on this, refer to [this section](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
+1. Associate questa regola a una tipologia, quindi fate riferimento alla tipologia nella distribuzione per applicare questa regola di capacità. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/applying-rules.md#applying-a-typology-to-a-delivery).
 1. È possibile monitorare il consumo dalla regola **[!UICONTROL Consumptions]** e dalle **[!UICONTROL Capacity]** schede.
 
    Quando una regola viene utilizzata in una consegna, le **[!UICONTROL Consumed]** colonne e **[!UICONTROL Remaining]** le colonne forniscono informazioni sul caricamento, come illustrato di seguito:
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   For more on this, refer to [this section](#monitoring-consumption).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](#monitoring-consumption).
 
 ## Definizione del carico massimo {#defining-the-maximum-load}
 
@@ -108,7 +108,7 @@ Le righe di disponibilità sono solo a scopo informativo. Per escludere i messag
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Il numero di messaggi da elaborare è suddiviso in modo uniforme per l&#39;intervallo di disponibilità definito. Ciò è particolarmente importante per i call center, poiché il loro numero massimo di chiamate al giorno è limitato. Nel caso delle consegne tramite e-mail, l&#39; **[!UICONTROL Do not limit instantaneous delivery capacity]** opzione consente di ignorare questo intervallo di disponibilità e inviare contemporaneamente i messaggi e-mail.
+Il numero di messaggi da elaborare è suddiviso in modo uniforme per l&#39;intervallo di disponibilità definito. Ciò è particolarmente importante per i call center, in quanto il loro numero massimo di chiamate al giorno è limitato. Nel caso delle consegne tramite e-mail, l&#39; **[!UICONTROL Do not limit instantaneous delivery capacity]** opzione consente di ignorare questo intervallo di disponibilità e inviare contemporaneamente i messaggi e-mail.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
@@ -120,7 +120,7 @@ Il numero di messaggi da elaborare è suddiviso in modo uniforme per l&#39;inter
 
 ## Monitoraggio del consumo {#monitoring-consumption}
 
-Per impostazione predefinita, le regole di capacità sono esclusivamente a scopo indicativo. Selezionate l’ **[!UICONTROL Exclude messages in excess of capacity from the target]** opzione per impedire il superamento del carico definito. In questo caso, i messaggi in eccesso verranno automaticamente esclusi dalle consegne utilizzando questa regola di tipologia.
+Per impostazione predefinita, le regole di capacità sono esclusivamente a scopo indicativo. Selezionate l’ **[!UICONTROL Exclude messages in excess of capacity from the target]** opzione per impedire il superamento del carico definito. In questo caso, i messaggi in eccesso verranno automaticamente esclusi dalle consegne che utilizzano questa regola di tipologia.
 
 Per monitorare i consumi, visualizzare i valori visualizzati nella **[!UICONTROL Consumed]** colonna della **[!UICONTROL Capacity]** scheda nella regola di tipologia.
 
