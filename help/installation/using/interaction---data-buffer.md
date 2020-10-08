@@ -1,7 +1,7 @@
 ---
-title: Interazione - Buffer dati
-seo-title: Interazione - Buffer dati
-description: Interazione - Buffer dati
+title: 'Interazione: buffer dati'
+seo-title: 'Interazione: buffer dati'
+description: 'Interazione: buffer dati'
 seo-description: null
 page-status-flag: never-activated
 uuid: 4cb742b5-6bde-43e8-b26b-16f27dd65f72
@@ -11,22 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: cbfdeb2f-4f20-45b8-8cc0-89362f9ea9c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
 
-# Interazione - Buffer dati{#interaction-data-buffer}
+# Interazione: buffer dati{#interaction-data-buffer}
 
 >[!NOTE]
 >
->Alcune configurazioni possono essere eseguite solo da Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Alcune configurazioni possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Ad esempio, per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
 
-In Adobe Campaign, nel modulo Interaction è stata introdotta una zona **del buffer** dati. Questo consente di **aumentare le prestazioni** dell&#39;interazione in entrata desincronizzando i calcoli di azioni e offerte.
+In  Adobe Campaign, nel modulo Interaction è stata introdotta una zona **del buffer** dati. Questo consente di **aumentare le prestazioni** dell&#39;interazione in entrata desincronizzando i calcoli di azioni e offerte.
 
 Riguarda solo l&#39;interazione in ingresso, sia tramite una chiamata (con o senza dati di chiamata), sia tramite un aggiornamento dello stato (updateStatus).
 
@@ -36,7 +36,7 @@ La **configurazione** della zona del buffer dati può essere effettuata nel file
 
 >[!NOTE]
 >
->Qualsiasi modifica apportata alla configurazione richiede il riavvio del server Web (Apache:IIS) e dei processi di Adobe Campaign.\
+>Qualsiasi modifica apportata alla configurazione richiede il riavvio del server Web (Apache:IIS) e dei processi Adobe Campaign .\
 >Dopo aver configurato la zona del buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
 
 Dopo aver configurato la zona del buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
@@ -49,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-Se utilizzi Interazione in ingresso, l&#39;attributo @autostart deve essere &quot;true&quot; per avviare automaticamente il processo all&#39;avvio del server Adobe Campaign.
+Se utilizzate Interazione in ingresso, l&#39;attributo @autostart deve essere &quot;true&quot; per avviare automaticamente il processo all&#39;avvio del server Adobe Campaign .
 
 Dettagli argomento:
 
