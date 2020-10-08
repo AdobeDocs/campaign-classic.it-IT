@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -80,19 +77,19 @@ In questo esempio, desideriamo personalizzare le consegne in base al **[!UICONTR
 
    ![](assets/uc1_enrich_7.png)
 
-1. Immettete un ID e un&#39;etichetta, quindi selezionate l&#39; **[!UICONTROL Limit the line count]** opzione nel **[!UICONTROL Data collected]** campo. Nel **[!UICONTROL Lines to retrieve]** campo, selezionare &#39;1&#39; come valore. Per ciascun destinatario, l&#39;attività di arricchimento aggiungerà una sola riga dalla **[!UICONTROL Competition results]** tabella alla tabella di lavoro del flusso di lavoro. Clic **[!UICONTROL Next]**.
+1. Immettete un ID e un&#39;etichetta, quindi selezionate l&#39; **[!UICONTROL Limit the line count]** opzione nel **[!UICONTROL Data collected]** campo. Nel **[!UICONTROL Lines to retrieve]** campo, selezionare &#39;1&#39; come valore. Per ciascun destinatario, l&#39;attività di arricchimento aggiungerà una sola riga dalla **[!UICONTROL Competition results]** tabella alla tabella di lavoro del flusso di lavoro. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. In questo esempio, vogliamo recuperare il punteggio più alto del destinatario, ma solo per l&#39;ultima competizione. A questo scopo, aggiungere un filtro al **[!UICONTROL Competition name]** campo per escludere tutte le righe relative ai concorsi precedenti. Clic **[!UICONTROL Next]**.
+1. In questo esempio, vogliamo recuperare il punteggio più alto del destinatario, ma solo per l&#39;ultima competizione. A questo scopo, aggiungere un filtro al **[!UICONTROL Competition name]** campo per escludere tutte le righe relative ai concorsi precedenti. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Passate alla **[!UICONTROL Sort]** schermata e fate clic sul **[!UICONTROL Add]** pulsante, selezionate il **[!UICONTROL Score]** campo e selezionate la casella nella **[!UICONTROL descending]** colonna per ordinare gli elementi dei **[!UICONTROL Score]** campi in ordine decrescente. Per ciascun destinatario, l&#39;attività di arricchimento aggiunge una linea che corrisponde al punteggio più alto dell&#39;ultima partita. Clic **[!UICONTROL Next]**.
+1. Passate alla **[!UICONTROL Sort]** schermata e fate clic sul **[!UICONTROL Add]** pulsante, selezionate il **[!UICONTROL Score]** campo e selezionate la casella nella **[!UICONTROL descending]** colonna per ordinare gli elementi dei **[!UICONTROL Score]** campi in ordine decrescente. Per ciascun destinatario, l&#39;attività di arricchimento aggiunge una linea che corrisponde al punteggio più alto dell&#39;ultima partita. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Nella **[!UICONTROL Data to add]** finestra, fare doppio clic sul **[!UICONTROL Score]** campo. Per ciascun destinatario, l&#39;attività di arricchimento aggiungerà solo il **[!UICONTROL Score]** campo. Clic **[!UICONTROL Finish]**.
+1. Nella **[!UICONTROL Data to add]** finestra, fare doppio clic sul **[!UICONTROL Score]** campo. Per ciascun destinatario, l&#39;attività di arricchimento aggiungerà solo il **[!UICONTROL Score]** campo. Fai clic su **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
