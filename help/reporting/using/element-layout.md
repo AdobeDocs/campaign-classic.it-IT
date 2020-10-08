@@ -1,7 +1,7 @@
 ---
-title: Layout elemento
-seo-title: Layout elemento
-description: Layout elemento
+title: Layout degli elementi
+seo-title: Layout degli elementi
+description: Layout degli elementi
 seo-description: null
 page-status-flag: never-activated
 uuid: 60dc80d9-f81b-48ce-9341-f975daaf5ebc
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 8fdda764-3e42-4972-a9c9-63567588931e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
 
-# Layout elemento{#element-layout}
+# Layout degli elementi{#element-layout}
 
-Oltre ai vari grafici qui descritti: Tipi di [grafici e varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del rapporto.
+Oltre ai vari grafici qui descritti: [Tipi di grafico e varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del rapporto.
 
 È possibile utilizzare i contenitori: questi consentono di collegare diversi elementi di una pagina e configurarne il layout in colonne e/o celle. Come utilizzarli è illustrato in [questa sezione](../../web/using/defining-web-forms-layout.md#creating-containers).
 
@@ -42,7 +42,7 @@ Le **[!UICONTROL Display settings]** opzioni consentono di selezionare la posizi
 
 Selezionate le varie opzioni nella **[!UICONTROL Browse]** sezione per autorizzare la navigazione da una pagina del rapporto all’altra. Se l&#39; **[!UICONTROL Disable next page]** opzione o l&#39; **[!UICONTROL Disable previous page]** opzione è selezionata, i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** non vengono visualizzati nella pagina del rapporto.
 
-## Aggiunta di un&#39;intestazione e un piè di pagina {#adding-a-header-and-a-footer}
+## Aggiunta di un&#39;intestazione e di un piè di pagina {#adding-a-header-and-a-footer}
 
 La finestra delle proprietà del rapporto consente inoltre di definire gli elementi di layout, ad esempio: il titolo della finestra, il contenuto HTML delle intestazioni e dei piè di pagina.
 
@@ -68,4 +68,4 @@ Quindi inserite questi identificatori nel contenuto HTML del rapporto:
 
 Quando viene visualizzato il rapporto, verranno sostituiti automaticamente con il contenuto appropriato.
 
-Come per i testi HTML, questa modalità operativa consente di centralizzare i testi utilizzati nel rapporto e di gestirne la traduzione. I testi creati in questa scheda vengono raccolti automaticamente dallo strumento di traduzione integrata di Adobe Campaign.
+Come per i testi HTML, questa modalità operativa consente di centralizzare i testi utilizzati nel rapporto e di gestirne la traduzione. I testi creati in questa scheda vengono raccolti automaticamente dallo strumento di traduzione integrato  Adobe Campaign.
