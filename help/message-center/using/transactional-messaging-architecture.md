@@ -1,6 +1,6 @@
 ---
-title: ' Adobe Campaign Architettura di messaggistica transazionale classica'
-description: In questa sezione viene descritta l'architettura di messaggistica transazionale  Adobe Campaign Classic.
+title: Architettura dei messaggi transazionali Adobe Campaign Classic
+description: Questa sezione descrive l'architettura dei messaggi transazionali Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -9,14 +9,11 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +27,7 @@ In  Adobe Campaign, le funzionalità di messaggistica transazionali (note anche 
 * un&#39;istanza di controllo in cui vengono creati i modelli di messaggio,
 * una o più istanze di esecuzione che ricevono eventi e inviano messaggi.
 
-Per utilizzare queste funzionalità,  utenti del Adobe Campaign accedono all&#39;istanza di controllo per creare modelli di messaggi transazionali, generare l&#39;anteprima dei messaggi utilizzando un elenco di elementi iniziali, visualizzare i rapporti e monitorare le istanze di esecuzione.
+Per utilizzare queste funzionalità,  gli utenti Adobe Campaign accedono all&#39;istanza di controllo per creare modelli di messaggi transazionali, generare l&#39;anteprima dei messaggi utilizzando un elenco di elementi iniziali, visualizzare i rapporti e monitorare le istanze di esecuzione.
 
 Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi transazionali e inviano un messaggio personalizzato a ciascun destinatario.
 
@@ -52,7 +49,7 @@ Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi
 
 ## Installazione delle istanze {#installing-instances}
 
-Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni. Adobe consiglia di lavorare in un ambiente di test prima di essere messo in produzione. È inoltre necessario disporre di una licenza  Adobe Campaign compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale di Adobe.
+Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessario prendere diverse precauzioni.  Adobe consiglia di lavorare in un ambiente di test prima di entrare in produzione. È inoltre necessario disporre di una licenza Adobe Campaign  compatibile. Per ulteriori informazioni, contattate il vostro responsabile commerciale  Adobe.
 
 >[!IMPORTANT]
 >
@@ -179,6 +176,7 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
    * **[!UICONTROL Type]** : selezionate **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** deve essere selezionata.
+
    Dalla **[!UICONTROL Connection]** categoria:
 
    * **[!UICONTROL Type]** : selezionate il server del database, ad esempio PostgresSQL.
@@ -201,6 +199,7 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
    * **[!UICONTROL Type]** : selezionate **[!UICONTROL External database]** .
    * La casella attivata deve essere selezionata.
+
    Dalla **[!UICONTROL Connection]** categoria:
 
    * **[!UICONTROL Type]** : selezionate **[!UICONTROL HTTP relay to remote Database]** .
@@ -217,18 +216,20 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
    * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
    * **[!UICONTROL Type]** : selezionate **[!UICONTROL Execution instance]** .
    * La casella attivata deve essere selezionata.
+
    Dalla **[!UICONTROL Connection]** categoria:
 
    * **[!UICONTROL URL]** : immettete l&#39;URL dell&#39;istanza di esecuzione.
    * **[!UICONTROL Account]** : immettete l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
    * **[!UICONTROL Password]** : immettete la password per l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
+
    Dalla **[!UICONTROL Account connection method]** categoria:
 
    * **[!UICONTROL Method]** : selezionate **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : selezionate il vostro account FDA dall&#39;elenco a discesa.
-   * Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]**. 
+   * Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]**.
    * Fare clic sul **[!UICONTROL Create data synchronization workflow]** pulsante per creare il flusso di lavoro di sincronizzazione dei dati LINE.
 
 
 
-1. Ora puoi iniziare a creare messaggi transazionali. For more on this, refer to this [page](../../message-center/using/introduction.md).
+1. Ora puoi iniziare a creare messaggi transazionali. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/introduction.md).
