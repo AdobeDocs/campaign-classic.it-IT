@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 Il profilo di consegna consente di utilizzare un profilo in un flusso di lavoro della campagna. Il profilo deve essere stato creato in precedenza nella campagna.
 
-Per ulteriori informazioni sui contorni di consegna in Adobe Campaign, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Per ulteriori informazioni sui contorni di consegna in  Adobe Campaign, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 Per configurare l&#39;attività, è sufficiente selezionare il profilo desiderato e la data di contatto prevista. Potete aggiungere regole di filtro aggiungendo tipologie o regole di tipologia.
 
@@ -44,11 +44,12 @@ L&#39;attività del profilo di consegna, disponibile nei flussi di lavoro della 
 1. Completa i campi disponibili in base alla consegna.
 1. Esistono due casi possibili:
 
-   * Se desiderate chiamare il motore delle offerte, selezionate la **[!UICONTROL Restrict the number of propositions selected]** casella. Specificate lo spazio di offerta e il numero di proposte che verranno presentate nella consegna.
+   * Se desiderate chiamare il motore delle offerte, selezionate la **[!UICONTROL Restrict the number of propositions selected]** casella. Specificate lo spazio dell&#39;offerta e il numero di proposte che verranno presentate nella consegna.
 
       I pesi delle offerte e le regole di ammissibilità saranno prese in considerazione dal motore delle offerte.
 
    * Se non selezionate la casella, tutte le offerte nel profilo di consegna verranno presentate senza effettuare una chiamata al motore delle offerte.
+
    L&#39;anteprima tiene conto del numero di offerte specificate nella consegna. Quando si esegue un flusso di lavoro, viene preso in considerazione il numero specificato nel profilo di consegna.
 
    ![](assets/int_compo_offre_wf1.png)
