@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ L&#39;interazione consente di controllare il flusso delle proposte di offerta ut
 
 ## Creazione e riferimento a una regola di presentazione delle offerte {#creating-and-referencing-an-offer-presentation-rule}
 
-1. Passare al **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** nodo.
+1. Go to the **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** node.
 1. Create una regola di tipologia e scegliete il **[!UICONTROL Offer presentation]** tipo.
 
    ![](assets/offer_typology_001.png)
@@ -54,7 +54,7 @@ L&#39;interazione consente di controllare il flusso delle proposte di offerta ut
 
 ### Criteri di applicazione {#application-criteria-}
 
-I criteri di applicazione disponibili nella **[!UICONTROL General]** scheda consentono di specificare le offerte a cui si applicherà la regola di presentazione. A questo scopo, dovete creare una query e scegliere le offerte interessate, come descritto di seguito.
+I criteri di applicazione disponibili nella **[!UICONTROL General]** scheda consentono di specificare le offerte a cui si applicherà la regola di presentazione. A tal fine, è necessario creare una query e scegliere le offerte interessate, come descritto di seguito.
 
 1. Nella regola di tipologia, fai clic sul **[!UICONTROL Edit the rule application conditions...]** collegamento per creare la query.
 
@@ -66,11 +66,11 @@ I criteri di applicazione disponibili nella **[!UICONTROL General]** scheda cons
 
    ![](assets/offer_typology_008.png)
 
-### Dimensioni offerta {#offer-dimensions}
+### Dimensioni dell&#39;offerta {#offer-dimensions}
 
 Nella **[!UICONTROL Offer presentation]** scheda, è necessario specificare le stesse dimensioni per la regola di presentazione di quelle configurate nell&#39;ambiente.
 
-La tabella **[!UICONTROL Targeting dimension]** coincide con quella dei destinatari (per impostazione predefinita: nms:destinatari) che riceveranno le proposte di offerta. La tabella **[!UICONTROL Storage dimension]** coincide con la cronologia delle proposizioni collegata alla dimensione di targeting (per impostazione predefinita:nms:propositionRcp).
+La tabella **[!UICONTROL Targeting dimension]** coincide con la tabella dei destinatari (per impostazione predefinita: nms:destinatari) che riceveranno le proposte di offerta. La tabella **[!UICONTROL Storage dimension]** coincide con la cronologia delle proposizioni collegata alla dimensione di targeting (per impostazione predefinita:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -109,7 +109,7 @@ Potete selezionare criteri di filtraggio per escludere le proposizioni in base a
 
 ![](assets/offer_typology_014.png)
 
-Tali criteri rappresentano le applicazioni più frequenti delle regole di presentazione. Per utilizzare altri criteri, potete creare una query utilizzando il **[!UICONTROL Limit propositions...]** collegamento. Per ulteriori informazioni, vedere [Creazione di una query sulle proposte](#creating-a-query-on-propositions) .
+Tali criteri rappresentano le applicazioni più frequenti delle regole di presentazione. Per utilizzare altri criteri, potete creare una query utilizzando il **[!UICONTROL Limit propositions...]** collegamento. For more on this, refer to the [Creating a query on propositions](#creating-a-query-on-propositions) section.
 
 * **Filtrare sul canale**
 
