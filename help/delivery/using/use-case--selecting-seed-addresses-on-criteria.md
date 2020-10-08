@@ -1,7 +1,7 @@
 ---
-title: '"Caso di utilizzo: selezione degli indirizzi di base sui criteri"'
-seo-title: '"Caso di utilizzo: selezione degli indirizzi di base sui criteri"'
-description: '"Caso di utilizzo: selezione degli indirizzi di base sui criteri"'
+title: '"Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri"'
+seo-title: '"Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri"'
+description: '"Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 6af39893-6ef3-4204-8b53-0c16e35bac8f
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 4%
 
 ---
 
 
-# Caso di utilizzo: selezione degli indirizzi di base sui criteri{#use-case-selecting-seed-addresses-on-criteria}
+# Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri{#use-case-selecting-seed-addresses-on-criteria}
 
 Nel quadro di una consegna o di una campagna, il **[!UICONTROL Edit the dynamic condition...]** collegamento consente di scegliere gli indirizzi iniziali in base a criteri di selezione specifici.
 
@@ -33,7 +33,7 @@ Per condividere il risultato finale della loro collaborazione con loro, il respo
 Per utilizzare la condizione dinamica, è necessario disporre di:
 
 * una consegna pronta per essere inviata,
-* indirizzi seed con un valore comune. Questo valore può essere un campo già esistente in Adobe Campaign. In questo esempio, gli indirizzi iniziali condividono il valore &quot;Purchasing&quot; nel campo &quot;Dipartimento&quot;, che per impostazione predefinita non è presente nell&#39;applicazione.
+* indirizzi seed con un valore comune. Questo valore può essere un campo già esistente in  Adobe Campaign. In questo esempio, gli indirizzi iniziali condividono il valore &quot;Purchasing&quot; nel campo &quot;Dipartimento&quot;, che per impostazione predefinita non è presente nell&#39;applicazione.
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
@@ -60,7 +60,7 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. Clic **[!UICONTROL Save]**.
+1. Fai clic su **[!UICONTROL Save]**.
 1. Nella finestra di modifica dello schema, copiare le righe sottostanti e incollarle nell&#39;area indicata nello screenshot.
 
    ```
@@ -85,8 +85,8 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    In questo caso, state specificando che una nuova enumerazione denominata **[!UICONTROL Department]** è stata creata nella tabella degli indirizzi iniziali, e si basa sul modello di **[!UICONTROL @company]** enumerazione standard (etichettata sotto il nome **Società** nel modulo dell&#39;indirizzo e-mail).
 
-1. Clic **[!UICONTROL Save]**.
-1. Nel **[!UICONTROL Tools > Advanced]** menu, selezionate l’ **[!UICONTROL Update database structure]** opzione.
+1. Fai clic su **[!UICONTROL Save]**.
+1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
@@ -94,13 +94,13 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Seguite la procedura guidata fino a visualizzare la pagina per eseguire l&#39;aggiornamento. Fate clic sul **[!UICONTROL Start]** pulsante.
+1. Seguite la procedura guidata fino a visualizzare la pagina per eseguire l&#39;aggiornamento. Fai clic sul pulsante **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
    Al termine dell&#39;aggiornamento, è possibile chiudere la procedura guidata.
 
-1. Disconnettiti, quindi ricollega ad Adobe Campaign. Le modifiche apportate nello schema di dati dell&#39;indirizzo di base ora sono effettive. Affinché siano visibili dalla schermata dell&#39;indirizzo di base, è necessario aggiornare il relativo **[!UICONTROL Input form]**. Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-form) di input.
+1. Disconnettetevi quindi di nuovo a  Adobe Campaign. Le modifiche apportate nello schema di dati dell&#39;indirizzo di base ora sono effettive. Affinché siano visibili dalla schermata dell&#39;indirizzo di base, è necessario aggiornare il relativo **[!UICONTROL Input form]**. Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-form) di input.
 
 #### Estensione dello schema di dati da una tabella collegata {#extending-the-data-schema-from-a-linked-table}
 
@@ -152,7 +152,7 @@ Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-for
 
    ![](assets/dlv_seeds_usecase_21.png)
 
-1.  Salvare le modifiche.
+1. Salva le modifiche.
 1. Aprite un indirizzo seed. Il **[!UICONTROL Department]** campo viene visualizzato nella **[!UICONTROL Recipient]** tabella.
 
    ![](assets/dlv_seeds_usecase_22.png)
@@ -183,21 +183,21 @@ Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-for
    >
    >L&#39;estensione dello schema creata in precedenza proviene dallo schema **destinatario** . I valori visualizzati sullo schermo sopra provengono da un&#39;enumerazione dello schema **destinatario** .
 
-1. Clic **[!UICONTROL Ok]**.
+1. Fai clic su **[!UICONTROL Ok]**.
 
    La query viene visualizzata nella **[!UICONTROL Select target]** finestra.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Fare clic **[!UICONTROL Ok]** per approvare la query.
+1. Click **[!UICONTROL Ok]** to approve the query.
 1. Analizza la consegna, quindi fai clic sulla **[!UICONTROL Delivery]** scheda per accedere ai log di consegna.
 
    Gli indirizzi iniziali del reparto acquisti vengono visualizzati come consegna in sospeso, come quelli dei destinatari o di altri indirizzi iniziali.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Fate clic sul **[!UICONTROL Send]** pulsante per avviare la consegna.
+1. Click the **[!UICONTROL Send]** button to start the delivery.
 
-   I membri del reparto acquisti fanno parte degli indirizzi di base che riceveranno la consegna nella propria casella in entrata.
+   I membri del reparto acquisti fanno parte dei vostri indirizzi di base che riceveranno la consegna nella loro casella in entrata e-mail.
 
    ![](assets/dlv_seeds_usecase_18.png)
