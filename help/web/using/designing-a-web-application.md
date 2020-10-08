@@ -1,7 +1,7 @@
 ---
-title: Progettazione di un'applicazione Web
-seo-title: Progettazione di un'applicazione Web
-description: Progettazione di un'applicazione Web
+title: Progettazione di un’applicazione web
+seo-title: Progettazione di un’applicazione web
+description: Progettazione di un’applicazione web
 seo-description: null
 page-status-flag: never-activated
 uuid: 29c11154-f056-4047-849a-739ba0a2c615
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '365'
+ht-degree: 4%
 
 ---
 
 
-# Progettazione di un&#39;applicazione Web{#designing-a-web-application}
+# Progettazione di un’applicazione web{#designing-a-web-application}
 
 Le applicazioni Web vengono create e gestite secondo lo stesso principio dei sondaggi [](../../web/using/about-surveys.md)online.
 
@@ -58,7 +58,7 @@ Per aggiungere una tabella, utilizzare l&#39;elenco a discesa di tabelle nella b
 
 ## Applicazioni Web di tipo Panoramica {#overview-type-web-applications}
 
-L&#39;interfaccia di Adobe Campaign utilizza molte applicazioni Web per accedere, gestire e interagire con destinatari, consegne, campagne, scorte, ecc.
+L&#39;interfaccia  Adobe Campaign utilizza molte applicazioni Web per accedere, gestire e interagire con destinatari, consegne, campagne, scorte e così via.
 
 Vengono visualizzate nell&#39;interfaccia sotto forma di dashboard con una sola pagina.
 
