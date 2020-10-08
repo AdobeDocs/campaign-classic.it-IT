@@ -11,14 +11,11 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,13 +28,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Se non si dispone dell&#39;accesso al server e al database (ambienti ospitati), non sarà possibile eseguire le procedure descritte di seguito. Contattate Adobe.
+>Se non si dispone dell&#39;accesso al server e al database (ambienti ospitati), non sarà possibile eseguire le procedure descritte di seguito. Contatta  Adobe.
 
-L&#39;utilizzo di Adobe Campaign richiede l&#39;installazione e la configurazione di uno o più ambienti: sviluppo, test, preproduzione, produzione, ecc.
+Per utilizzare  Adobe Campaign è necessario installare e configurare uno o più ambienti: sviluppo, test, preproduzione, produzione, ecc.
 
-Ogni ambiente contiene un&#39;istanza di Adobe Campaign e ogni istanza di Adobe Campaign è collegata a uno o più database. Il server applicazioni può eseguire uno o più processi: quasi tutti questi utenti hanno accesso diretto al database delle istanze.
+Ogni ambiente contiene un&#39;istanza Adobe Campaign  e ogni istanza Adobe Campaign  è collegata a uno o più database. Il server applicazioni può eseguire uno o più processi: quasi tutti questi utenti hanno accesso diretto al database delle istanze.
 
-In questa sezione vengono descritti i processi da applicare per duplicare un ambiente Adobe Campaign, ovvero per ripristinare un ambiente di origine in un ambiente di destinazione, con la conseguente creazione di due ambienti di lavoro identici.
+In questa sezione vengono descritti i processi da applicare per duplicare un ambiente Adobe Campaign , ovvero per ripristinare un ambiente di origine in un ambiente di destinazione e ottenere due ambienti di lavoro identici.
 
 A questo scopo, eseguire i seguenti passaggi:
 
@@ -49,12 +46,12 @@ A questo scopo, eseguire i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Nel contesto di Adobe Campaign, una **cauterizzazione** combina azioni che consentono di interrompere l&#39;interazione di tutti i processi con l&#39;esterno: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
+   >Nel contesto di  Adobe Campaign, una **cauterizzazione** combina azioni che consentono di interrompere l’interazione con l’esterno di tutti i processi: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
    >Questo passaggio è necessario per evitare di inviare messaggi più volte (una volta dall&#39;ambiente nominale e una dall&#39;ambiente duplicato).
 
    >[!CAUTION]
    >
-   >Un ambiente può contenere diverse istanze. Ogni istanza di Adobe Campaign è soggetta a un contratto di licenza. Controllate il contratto di licenza per verificare quanti ambienti è possibile utilizzare.\
+   >Un ambiente può contenere diverse istanze. Ogni istanza di Adobe Campaign  è soggetta a un contratto di licenza. Controllate il contratto di licenza per verificare quanti ambienti è possibile utilizzare.\
    >La procedura seguente consente di trasferire un ambiente senza influire sul numero di ambienti e istanze installati.
 
 ### Prima di iniziare {#before-you-start}
@@ -77,6 +74,7 @@ I seguenti passaggi devono essere eseguiti con grande attenzione: alcuni process
 >
 >* La seguente procedura è valida in linguaggio PostgreSQL. Se il linguaggio SQL è diverso (ad esempio Oracle), le query SQL devono essere adattate.
 >* I comandi seguenti si applicano nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
+
 >
 
 
@@ -112,7 +110,7 @@ Verificare che il numero di opzioni/account esportati sia uguale al numero di ri
 >
 >Il numero di righe da esportare in un pacchetto di esportazione è di 1000 righe. Se il numero di opzioni o conti esterni è superiore a 1000, è necessario eseguire diverse esportazioni.
 > 
->For more information, refer to [this section](../../platform/using/working-with-data-packages.md#exporting-packages).
+>Per ulteriori informazioni, consulta [questa sezione](../../platform/using/working-with-data-packages.md#exporting-packages).
 
 >[!NOTE]
 >
@@ -120,7 +118,7 @@ Verificare che il numero di opzioni/account esportati sia uguale al numero di ri
 
 ### Passo 3 - Arrestare l&#39;ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
 
-Devi interrompere i processi di Adobe Campaign su tutti i server dell&#39;ambiente di destinazione. Questa operazione dipende dal sistema operativo in uso.
+È necessario arrestare  processi Adobe Campaign su tutti i server dell&#39;ambiente di destinazione. Questa operazione dipende dal sistema operativo in uso.
 
 È possibile arrestare tutti i processi, o solo quelli che scrivono nel database.
 
@@ -196,11 +194,11 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 ### Passaggio 7 - Riavviare il processo Web dell&#39;ambiente di destinazione (dev) {#step-7---restart-the-target-environment-web-process--dev-}
 
-Nell&#39;ambiente di destinazione, riavvia i processi di Adobe Campaign per tutti i server.
+Nell&#39;ambiente di destinazione, riavviare i processi Adobe Campaign  per tutti i server.
 
 >[!NOTE]
 >
->Prima di riavviare Adobe Campaign sull&#39;ambiente di **sviluppo** , puoi applicare una procedura di sicurezza aggiuntiva: avviate solo il modulo **Web** .
+>Prima di riavviare  Adobe Campaign nell&#39;ambiente di **sviluppo** , potete applicare una procedura di sicurezza aggiuntiva: avviate solo il modulo **Web** .
 >  
 >A questo scopo, modificate il file di configurazione dell&#39;istanza (**config-dev.xml**), quindi aggiungete il carattere &quot;_&quot; prima delle opzioni autoStart=&quot;true&quot; per ciascun modulo (mta, stat, ecc.).
 
@@ -229,17 +227,17 @@ Soprattutto, verificate i valori di diverse righe dei file prima di importarli (
 Per importare la configurazione dal database dell&#39;ambiente di destinazione (dev):
 
 1. Aprite la console di amministrazione del database ed eliminate gli account esterni (tabella nms:extAccount) il cui ID non è 0 (@id &lt;> 0).
-1. Nella console di Adobe Campaign, importa il pacchetto options_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione.
+1. Nella console  Adobe Campaign, importate il pacchetto options_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione.
 
    Verificare che le opzioni siano state effettivamente aggiornate nel **[!UICONTROL Administration > Platform > Options]** nodo.
 
-1. Nella console di Adobe Campaign, importa l’extaccount_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione
+1. Nella console  Adobe Campaign, importate il file extaccount_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione
 
    Verificate che le banche dati esterne siano state effettivamente importate nel **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Passaggio 9 - Riavviate tutti i processi e modificate gli utenti (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Per avviare i processi di Adobe Campaign, usa i comandi seguenti:
+Per avviare i processi Adobe Campaign , utilizzare i comandi seguenti:
 
 * In Windows:
 
