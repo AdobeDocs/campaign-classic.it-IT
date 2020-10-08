@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: d2309f41-8356-4d7e-bd84-c08521e0b0d0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 18%
 
 ---
 
 
 # Identificazione di un modulo{#identifying-a-form}
 
-Un modulo di input consente di modificare un&#39;istanza associata a uno schema dati dalla console client di Adobe Campaign.
+Un modulo di input consente di modificare un&#39;istanza associata a uno schema dati dalla console client Adobe Campaign .
 
 Il modulo è identificato dal nome e dallo spazio dei nomi.
 
