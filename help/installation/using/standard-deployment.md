@@ -1,7 +1,7 @@
 ---
-title: Implementazione standard
-seo-title: Implementazione standard
-description: Implementazione standard
+title: Distribuzione standard
+seo-title: Distribuzione standard
+description: Distribuzione standard
 seo-description: null
 page-status-flag: never-activated
 uuid: e2f9c4d9-4b36-4899-9954-493135597057
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
 
-# Implementazione standard{#standard-deployment}
+# Distribuzione standard{#standard-deployment}
 
 Per questa configurazione sono necessari tre computer:
 
@@ -29,9 +29,9 @@ Per questa configurazione sono necessari tre computer:
 
 I due server della rete perimetrale perimetrale DMZ, le pagine mirror e la consegna sono ridondanti per l&#39;elevata disponibilità.
 
-Il server applicazioni della LAN serve agli utenti finali ed esegue tutti i processi ricorrenti (motore del flusso di lavoro). Pertanto, quando i picchi di carico vengono raggiunti sui server frontali, gli utenti dell&#39;applicazione non vengono interessati.
+Il server applicazioni della LAN serve gli utenti finali ed esegue tutti i processi ricorrenti (motore del flusso di lavoro). Pertanto, quando i picchi di carico vengono raggiunti sui server frontali, gli utenti dell&#39;applicazione non vengono interessati.
 
-Il server del database può essere ospitato su un computer diverso da questi tre. In caso contrario, il server delle applicazioni e il server del database condividono lo stesso computer all&#39;interno della LAN, purché il sistema operativo sia supportato da Adobe Campaign (Linux o Windows).
+Il server del database può essere ospitato su un computer diverso da questi tre. In caso contrario, il server applicazioni e il server di database condividono lo stesso computer all&#39;interno della LAN, purché il sistema operativo sia supportato da  Adobe Campaign (Linux o Windows).
 
 La comunicazione generale tra server e processi viene eseguita secondo il seguente schema:
 
@@ -56,14 +56,14 @@ Questo tipo di configurazione può gestire un numero elevato di destinatari (da 
 * Cassetta postale accessibile tramite POP3,
 * Creazione di due alias DNS:
 
-   * il primo esposto al pubblico per il tracciamento e l&#39;indicazione del sistema di bilanciamento del carico su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
+   * il primo esposto al pubblico per il monitoraggio e l&#39;indicazione del sistema di bilanciamento del carico su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
    * il secondo è esposto agli utenti interni per l’accesso tramite la console e lo stesso server applicazione.
 
 * Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione Accesso al [database](../../installation/using/network-configuration.md#database-access).
 
 ### Installazione del server applicazione {#installing-the-application-server}
 
-Segui i passaggi per installare un’istanza autonoma dal server delle applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fare riferimento a [Installazione e configurazione (computer singolo)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Attenetevi alla procedura per installare un&#39;istanza standalone dal  server applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fare riferimento a [Installazione e configurazione (computer singolo)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Poiché il computer non è un server di tracciamento, non tenete conto dell&#39;integrazione con il server Web.
 
@@ -80,14 +80,14 @@ La procedura di installazione e configurazione è identica su entrambi i compute
 
 La procedura è la seguente:
 
-1. Installa il server Adobe Campaign.
+1. Installate il server Adobe Campaign .
 
    Per ulteriori informazioni, consulta [Prerequisiti per l&#39;installazione di Campaign in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Prerequisiti per l&#39;installazione di Campaign in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Seguite la procedura di integrazione con il server Web (IIS, Apache) descritta nelle sezioni seguenti:
 
-   * Per Linux: [Integrazione in un server Web per Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Per Windows: [Integrazione in un server Web per Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
 1. Create l’istanza **demo** . Esistono due modi per farlo:
 
@@ -112,7 +112,7 @@ La procedura è la seguente:
 
 1. Modificate l&#39; **interno** con lo stesso server applicazione.
 
-   Per ulteriori informazioni, vedere Identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
+   For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 1. Collegate il database all&#39;istanza:
 
@@ -120,9 +120,9 @@ La procedura è la seguente:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Nei file **config-default.xml** e **config-demo.xml** , abilitate i moduli **Web**, **tracking** e **mta** .
+1. Nei file **config-default.xml** e **config-demo.xml** , abilitate i moduli **Web**, **trackinglogd** e **mta** .
 
-   Per ulteriori informazioni, vedere [Attivare i processi](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
 1. Modificate il file **serverConf.xml** e compilate:
 
@@ -136,7 +136,7 @@ La procedura è la seguente:
       >
       >Il parametro **nameServers** è utilizzato solo in Windows.
 
-      Per ulteriori informazioni, consulta Impostazioni [di](../../installation/using/campaign-server-configuration.md#delivery-settings)consegna.
+      For more on this, refer to [Delivery settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
 
    * i server di monitoraggio ridondanti nei parametri di reindirizzamento:
 
@@ -145,7 +145,7 @@ La procedura è la seguente:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      Per ulteriori informazioni, consulta Tracciamento [ridondante](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+      For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 1. Avviate il sito Web e verificate il reindirizzamento dall’URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -163,11 +163,11 @@ La procedura è la seguente:
 
    Per ulteriori informazioni, consulta le sezioni seguenti:
 
-   * Per Linux: Avvio [del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Per Windows: Avvio [del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Linux: [Avvio del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Windows: [Avvio del server Web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Avvia il server Adobe Campaign.
-1. Nella console di Adobe Campaign, effettua la connessione utilizzando il login di **amministratore** senza una password e avvia la procedura guidata di distribuzione.
+1. Avviate il server Adobe Campaign .
+1. Nella console Adobe Campaign , effettua la connessione utilizzando il login di **amministratore** senza una password e avvia la procedura guidata di distribuzione.
 
    Per ulteriori informazioni, vedere [Distribuzione di un&#39;istanza](../../installation/using/deploying-an-instance.md).
 
@@ -175,7 +175,7 @@ La procedura è la seguente:
 
 1. Compilate l’URL esterno (quello del sistema di bilanciamento del carico) utilizzato per il reindirizzamento e gli URL interni dei due server frontali.
 
-   Per ulteriori informazioni, consulta Configurazione [](../../installation/using/deploying-an-instance.md#tracking-configuration)tracciamento.
+   For more on this, refer to [Tracking configuration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
    ![](assets/d_ncs_install_tracking2.png)
 
