@@ -9,14 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -44,7 +41,7 @@ Suggerimento: Controllare la configurazione della gestione del traffico (affinit
 >
 >Questi passaggi possono essere eseguiti solo da un utente esperto.
 
-## Tracciamento {#tracking-deliveries}
+## Tracking {#tracking-deliveries}
 
 Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia delle loro reazioni: ricezione, apertura, clic su collegamenti, annullamento sottoscrizioni, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracciamento dei destinatari destinatari della consegna e nella scheda Tracciamento della consegna. In Campaign Standard , viene visualizzato nella scheda Registri di tracciamento della consegna.
 
@@ -70,7 +67,7 @@ Per misurare la velocità di invio dei messaggi, puoi controllare la velocità d
 
 * [Problemi di realizzazione](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 
-* [Problemi di visualizzazione delle immagini](../../production/using/image-display-issues.md)
+* [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 
 * [Problemi relativi alle prestazioni di distribuzione](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 
