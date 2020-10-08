@@ -1,7 +1,7 @@
 ---
-title: Distribuzione di un'istanza
-seo-title: Distribuzione di un'istanza
-description: Distribuzione di un'istanza
+title: Distribuzione di un’istanza
+seo-title: Distribuzione di un’istanza
+description: Distribuzione di un’istanza
 seo-description: null
 page-status-flag: never-activated
 uuid: 5694b07a-6c1c-45a3-8a22-fd9da163c28c
@@ -11,36 +11,33 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3066'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Distribuzione di un&#39;istanza{#deploying-an-instance}
+# Distribuzione di un’istanza{#deploying-an-instance}
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite da Adobe solo per le distribuzioni ospitate da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Procedura guidata di distribuzione {#deployment-wizard}
 
-Una procedura guidata grafica, disponibile nella console client del Adobe Campaign , consente di definire i parametri dell’istanza a cui ci si desidera connettere.
+Una procedura guidata grafica, disponibile nella  console client Adobe Campaign, consente di definire i parametri dell’istanza a cui si desidera connettersi.
 
-Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Procedura guidata** di distribuzione.
+Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Implementazione guidata**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
 I passaggi di configurazione sono i seguenti:
 
 1. [Parametri generali](#general-parameters)
-1. [Parametri canale e-mail](#email-channel-parameters)
+1. [Parametri del canale e-mail](#email-channel-parameters)
 1. [Gestione delle e-mail rimbalzate](#managing-bounced-emails)
 1. [Monitoraggio della configurazione](#tracking-configuration)
 1. [Parametri del canale mobile](#mobile-channel-parameters)
@@ -74,7 +71,7 @@ Sono disponibili le seguenti opzioni:
 * **[!UICONTROL Managing bounced emails]** : Per definire l&#39;account POP utilizzato per recuperare la posta elettronica in arrivo. Fate riferimento a [Gestione delle e-mail](#managing-bounced-emails)rimbalzate.
 * **[!UICONTROL LDAP integration]** : Per configurare l’autenticazione utente tramite una directory LDAP. Fate riferimento a [Connessione mediante LDAP](../../installation/using/connecting-through-ldap.md).
 
-## Parametri canale e-mail {#email-channel-parameters}
+## Parametri del canale e-mail {#email-channel-parameters}
 
 Il passaggio seguente consente di definire le informazioni da visualizzare nelle intestazioni dei messaggi.
 
@@ -90,7 +87,7 @@ Indicate i seguenti parametri:
 * **[!UICONTROL Sender address]** : L&#39;indirizzo del mittente,
 * **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
 * **[!UICONTROL Reply address]** : L&#39;indirizzo e-mail da utilizzare quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
-* **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Questo è l&#39;indirizzo tecnico utilizzato per gestire i messaggi di rimbalzo, comprese le e-mail ricevute dal server di Adobe Campaign  a causa di indirizzi di destinazione inesistenti.
+* **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Questo è l&#39;indirizzo tecnico utilizzato per gestire i messaggi di rimbalzo, comprese le e-mail ricevute dal server Adobe Campaign  a causa di indirizzi di destinazione inesistenti.
 
 Inoltre, potete specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando una virgola. Questa configurazione è facoltativa. Quando si immettono i campi,  Adobe Campaign verifica al momento della consegna (durante l&#39;analisi, se l&#39;indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
 
@@ -98,7 +95,7 @@ Inoltre, potete specificare le **maschere** autorizzate per l&#39;indirizzo del 
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
-Nel database del Adobe Campaign , tutti gli indirizzi e-mail devono essere creati come segue: `x@y.z`. I caratteri **x**, **y** e **z** non devono essere vuoti e non devono includere caratteri non autorizzati.
+Nel database Adobe Campaign , tutti gli indirizzi e-mail devono essere creati come segue: `x@y.z`. I caratteri **x**, **y** e **z** non devono essere vuoti e non devono includere caratteri non autorizzati.
 
 È possibile definire qui i caratteri autorizzati (&#39;criteri dati&#39;) nel campo e-mail del database. I caratteri non inclusi nell&#39;elenco saranno vietati e quindi rifiutati quando si immettono informazioni nel database tramite l&#39;interfaccia, tramite un modulo Web e si importano anche dati.
 
@@ -116,14 +113,14 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Delivery duration of messages]** : Oltre tale limite, la consegna è interrotta (per impostazione predefinita, 5 giorni),
 * **[!UICONTROL Online resources validity duration]** : Tempo di conservazione delle informazioni del profilo destinatario per generare pagine mirror,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, i destinatari nell&#39;elenco dei blocchi non verranno contattati,
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, i destinatari  elenco Bloccati non verranno contattati,
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non verrà effettuata a indirizzi duplicati.
 
 ### Parametri del tentativo {#retry-parameters}
 
 Le informazioni sui recuperi sono fornite nei campi **Recupero** e **Numero di recuperi** : quando un destinatario non è raggiungibile, ad esempio se la propria inbox è piena, per impostazione predefinita il programma tenta di contattarli 5 volte, con un intervallo di un&#39;ora tra ogni tentativo (durante il tempo di consegna massimo). Questi valori possono essere modificati in base alle vostre esigenze.
 
-### Parametri di quarantena {#quarantine-parameters}
+### Quarantine parameters {#quarantine-parameters}
 
 Le opzioni di configurazione per le quarantena sono le seguenti:
 
@@ -157,15 +154,15 @@ Una volta specificate le impostazioni POP, fate clic su **Test** per verificare 
 
 Gli avvisi vengono gestiti automaticamente da  Adobe Campaign, applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non risultati finali > Qualificazione** del registro di consegna. Per ulteriori informazioni, consultare Gestione [della posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)rimbalzata.
 
-I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia del Adobe Campaign . Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i seguenti campi:
+I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia  Adobe Campaign. Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i seguenti campi:
 
-* **[!UICONTROL Forwarding address]** : Compila questo campo per trasferire a un indirizzo di terze parti tutti i messaggi di errore (elaborati o non elaborati) raccolti dalla piattaforma del Adobe Campaign .
+* **[!UICONTROL Forwarding address]** : Compila questo campo per trasferire a un indirizzo di terze parti tutti i messaggi di errore (elaborati o non elaborati) raccolti dalla piattaforma Adobe Campaign .
 * **[!UICONTROL Address for errors]** : Compila questo campo per trasferire a un indirizzo di terze parti solo i messaggi di errore che il processo inMail non è stato in grado di soddisfare le condizioni richieste.
 * **[!UICONTROL SMTP server]** : Server utilizzato per inviare le e-mail di rimbalzo non elaborate.
 
 >[!IMPORTANT]
 >
->Per inoltrare e-mail di rimbalzo non elaborate, Adobe consiglia di compilare solo il **[!UICONTROL Address for errors]** campo. Tuttavia, assicurarsi che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe mettere un carico pesante sul server di posta. Per ulteriori informazioni, contattate il vostro responsabile commerciale.
+>Per inoltrare le e-mail di rimbalzo non elaborate,  Adobe consiglia di compilare solo il **[!UICONTROL Address for errors]** campo. Tuttavia, assicurarsi che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe mettere un carico pesante sul server di posta. Per ulteriori informazioni, contattate il vostro responsabile commerciale.
 
 ## Monitoraggio della configurazione {#tracking-configuration}
 
@@ -181,9 +178,9 @@ Quando si attiva il tracciamento su un&#39;istanza, gli URL nelle consegne vengo
 
 * Le informazioni sugli URL esterni (protetti o meno) immesse in questa pagina della procedura guidata di distribuzione vengono utilizzate per creare il nuovo URL. Oltre a queste informazioni, il collegamento modificato contiene: gli identificatori della consegna, il destinatario e l’URL.
 
-   Le informazioni di tracciamento vengono raccolte  Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
+   Le informazioni di tracciamento vengono raccolte da  Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
 
-   Le informazioni sugli URL interni vengono utilizzate solo dal server applicazione del Adobe Campaign  per contattare i server di tracciamento.
+   Le informazioni sugli URL interni vengono utilizzate solo dal server applicazione Adobe Campaign  per contattare i server di tracciamento.
 
    For more on this, refer to [Tracking server](#tracking-server).
 
@@ -199,7 +196,7 @@ Per garantire l&#39;efficienza del tracciamento su questo caso, devono essere vi
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
 * **[!UICONTROL External URL]** e/o **[!UICONTROL Secure external URL]** : Immettete l’URL di reindirizzamento da utilizzare nell’e-mail da inviare.
-* **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server di Adobe Campaign  per contattare i server di tracciamento per raccogliere i registri e caricare gli URL. Non è necessario associarlo all&#39;istanza.
+* **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server Adobe Campaign  per contattare i server di tracciamento per raccogliere i registri e caricare gli URL. Non è necessario associarlo all&#39;istanza.
 
    Se non specificate un URL, per impostazione predefinita verrà utilizzato l’URL di tracciamento.
 
@@ -266,7 +263,7 @@ Nella finestra precedente, un messaggio conferma la registrazione a livello di s
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-I parametri collegati alle ricerche URL non **devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contattate Adobe.
+I parametri collegati alle ricerche URL non **devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contattare  Adobe.
 
 ## Parametri del canale mobile {#mobile-channel-parameters}
 
@@ -274,7 +271,7 @@ Il passaggio successivo ti consente di definire le impostazioni predefinite per 
 
 >[!NOTE]
 >
->Il canale mobile è opzionale: questa fase verrà visualizzata solo se è stata acquistata. Controllare il contratto di licenza.
+>Il canale mobile è opzionale: questa fase verrà visualizzata solo se è stata acquistata. Controlla il contratto di licenza.
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
@@ -317,7 +314,7 @@ Questa fase consente di includere le preferenze per i criteri dei dati.
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
-Questo passaggio consente di definire gli URL di accesso per  pagine di Adobe Campaign esposte su Internet.
+Questo passaggio consente di definire gli URL di accesso per  pagine Adobe Campaign esposte su Internet.
 
 È inoltre necessario indicare qui le opzioni di pubblicazione collegate ai moduli Web.
 
@@ -349,9 +346,9 @@ Per questo passaggio, dovete immettere:
 
 1. Il nuovo URL della risorsa pubblica. Per ulteriori informazioni, consultate la sezione URL [risorse](#public-resources-url) pubbliche.
 1. Modalità di rilevamento delle immagini in una distribuzione. Per ulteriori informazioni, consulta la sezione Rilevamento [immagini](#delivery-image-detection) consegna.
-1. Opzioni di pubblicazione. Per ulteriori informazioni, consulta la sezione Modalità [di](#publication-modes) pubblicazione.
+1. Opzioni di pubblicazione. For more information, refer to the [Publication modes](#publication-modes) section.
 
-Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > Online > Risorse** pubbliche della struttura degli Adobi Campaign . Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
+Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > Online > Risorse** pubbliche della struttura di Adobe Campaign . Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -390,11 +387,11 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
    Le risorse verranno automaticamente copiate sui diversi server di tracciamento. Sono configurati nella configurazione [step](#tracking-configuration)Tracking.
 
-* Altri server  Adobe Campaign
+* Altri server Adobe Campaign 
 
-   Potete utilizzare un altro server  Adobe Campaign in cui copiare le risorse.
+   Potete utilizzare un altro  server Adobe Campaign in cui copiare le risorse.
 
-   Sul lato server, per utilizzare un server di Adobe Campaign  dedicato, è necessario creare una nuova istanza con il seguente comando:
+   Sul lato server, per utilizzare un server Adobe Campaign dedicato , è necessario creare una nuova istanza con il seguente comando:
 
    ```
    nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
@@ -419,13 +416,13 @@ Sono disponibili le seguenti modalità di pubblicazione:
       [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
       ```
 
-      dove `[INSTALL]` è il percorso di accesso alla cartella di installazione del Adobe Campaign .
+      dove `[INSTALL]` è il percorso di accesso alla cartella di installazione  Adobe Campaign.
 
    * In Unix, verificare che lo script sia eseguibile.
 
 Per le immagini, devono essere copiate dalla cartella &quot;immagini&quot; specificata tramite l&#39;opzione **NmsDelivery_ImageSubDirectory** su uno o più server frontali. Tali server memorizzeranno le immagini per renderle accessibili tramite il nuovo URL configurato.
 
-In caso di pubblicazione su un server di Adobe Campaign  senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nel `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
+In caso di pubblicazione su un server Adobe Campaign  senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nel `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
 
 `XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. L’URL corrispondente è il seguente: **`https://server/res/instance`** dove instance è il nome dell’istanza di tracciamento.
 
@@ -459,7 +456,7 @@ L&#39;attributo status può essere uno dei tre valori seguenti:
 
 * normal: Comportamento esistente (senza sincronizzazione)
 
-* blocklist: L&#39;URL viene aggiunto all&#39;elenco dei blocchi se restituisce un errore 404. La durata (in secondi) dell’URL presente nell’elenco dei blocchi è definita da un attributo di **timeout** il cui valore predefinito è 60 s.
+*  inserii nell&#39;elenco Bloccati: L’URL viene aggiunto al elenco Bloccati  se restituisce un errore 404. La durata (in secondi) dell’URL presente nel elenco Bloccati  è definita da un attributo **timeout** il cui valore predefinito è 60 s.
 
 La configurazione out-of-the-box della sincronizzazione è:
 
