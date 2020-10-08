@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5e24d94a-f9c1-4642-a881-dfc4b5492f14
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '6022'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). Alcuni errori possono essere rilevati anche durante l&#39;aggiornamento del database utilizzando l&#39;aggiornamento della struttura del database. procedura guidata.
 
-Per impostazione predefinita, negli schemi di Adobe Campaign, tutti gli attributi di tipo booleano sono &quot;false&quot;. Per attivarli, è necessario specificare l&#39;attributo nello schema e impostarne il valore su &quot;true&quot;.
+Per impostazione predefinita,  schemi Adobe Campaign, tutti gli attributi di tipo booleano sono &quot;false&quot;. Per attivarli, è necessario specificare l&#39;attributo nello schema e impostarne il valore su &quot;true&quot;.
 
 ## `<attribute>` element {#attribute--element}
 
@@ -62,11 +62,11 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
    I valori accessibili sono:
 
-   * &quot;none&quot;: solo riconciliazione. Ciò significa che Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
-   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
-   * &quot;insert&quot;: inserimento. Ciò significa che Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
-   * &quot;update&quot;: update. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
-   * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
+   * &quot;none&quot;: solo riconciliazione. Ciò significa che  Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
+   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
+   * &quot;insert&quot;: inserimento. Ciò significa che  Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
+   * &quot;update&quot;: update. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
+   * &quot;delete&quot;: eliminazione. Ciò significa che  Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **advanced (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
 * **applyIf (stringa)**: questo attributo consente di rendere facoltativi i campi. L&#39; `<attribute>` elemento verrà preso in considerazione durante l&#39;aggiornamento del database quando il vincolo viene rispettato. &quot;applyIf&quot; riceve un&#39;espressione XTK.
@@ -94,10 +94,12 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
    * &quot;shared&quot;: il contenuto è memorizzato in una tabella condivisa per tipo di dati
    * &quot;dedicato&quot;: il contenuto è memorizzato in una tabella dedicata
+
    Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
 
    * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Esistono due tipi di campi di caratteristiche: campi semplici &quot;oà¹&quot; in cui è autorizzato un singolo valore per la caratteristica, e campi di scelta multipla &quot;oà¹&quot;, in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
 
    Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
@@ -105,19 +107,20 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **featureDate (booleano)**: attributo collegato al campo delle caratteristiche &quot;@feature&quot;. Se il valore è &quot;true&quot;, è possibile verificare l’ultimo aggiornamento del valore.
 * **img (stringa)**: consente di definire un percorso per un’immagine collegata a un campo (namespace + nome immagine) (esempio: img=&quot;cus:mypicture.jpg&quot;). Fisicamente, l&#39;immagine deve essere importata nel server dell&#39;applicazione.
 * **label (stringa)**: etichetta collegata al campo, destinata principalmente all&#39;utente nell&#39;interfaccia. Consente di evitare i vincoli di denominazione.
-* **length (stringa)**: max numero di caratteri per un valore del campo SQL di tipo &quot;stringa&quot;. Se l&#39;attributo &quot;@length&quot; non è specificato, Adobe Campaign crea automaticamente un campo per 255 caratteri.
+* **length (stringa)**: max numero di caratteri per un valore del campo SQL di tipo &quot;stringa&quot;. Se l&#39;attributo &quot;@length&quot; non è specificato,  Adobe Campaign crea automaticamente un campo per 255 caratteri.
 * **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
 * **name (MNTOKEN)**: nome dell&#39;attributo che corrisponderà al nome del campo nella tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e conforme ai vincoli di denominazione XML.
 
-   Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente al nome del campo da Adobe Campaign:
+   Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente al nome del campo da  Adobe Campaign:
 
    * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
    * &quot;d&quot;: per il tipo &#39;double&#39;.
    * &quot;s&quot;: per il tipo di stringa del carattere.
    * &quot;t&quot;: per il tipo &#39;date&#39;.
+
    Per definire completamente il nome del campo nella tabella, utilizzate l&#39;opzione &quot;@sqlname&quot; quando definite un attributo.
 
-* **notNull (booleano)**: consente di ridefinire il comportamento di Adobe Campaign per quanto riguarda la gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono null e i campi stringa e tipo data possono essere null.
+* **notNull (booleano)**: consente di ridefinire  comportamento di Adobe Campaign per quanto riguarda la gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono null e i campi stringa e tipo data possono essere null.
 * **pkgStatus (stringa)**: durante le esportazioni del pacchetto, i valori vengono presi in considerazione a seconda del valore di &quot;@pkgStatus&quot;:
 
    * &quot;always&quot;: always present
@@ -134,7 +137,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **translateExpr (stringa)**: se è presente un attributo &quot;@expr&quot;, l&#39;attributo &quot;@translateExpr&quot; consente di ridefinire un&#39;espressione che corrisponda a quella definita in @expr, da raccogliere con lo strumento di traduzione (uso interno).
 * **type (MNTOKEN)**: tipo di campo.
 
-   I tipi di campo sono generici. A seconda del tipo di database installato, Adobe Campaign modifica il tipo definito in un valore specifico per il database installato durante l&#39;aggiornamento della struttura.
+   I tipi di campo sono generici. A seconda del tipo di database installato,  Adobe Campaign modifica il tipo definito in un valore specifico per il database installato durante l&#39;aggiornamento della struttura.
 
    Elenco dei tipi disponibili:
 
@@ -161,10 +164,11 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * primarykey
    * short
    * string
-   * time
+   * orario
    * periodo
    * uuid
-   Se l&#39;attributo &quot;@type&quot; viene lasciato vuoto, per impostazione predefinita Adobe Campaign collega al campo una stringa di caratteri (STRING) con una lunghezza pari a 100.
+
+   Se l&#39;attributo &quot;@type&quot; viene lasciato vuoto, per impostazione predefinita  Adobe Campaign collegherà al campo una stringa di caratteri (STRING) con una lunghezza pari a 100.
 
    Se il campo è di tipo STRING e il nome del campo non è specificato dalla presenza dell&#39;attributo &quot;@sqlname&quot;, il nome del campo nel database sarà automaticamente preceduto da un nome &#39;s&#39;. Questa modalità operativa sarà simile a quella dei campi INTEGER (i), DOUBLE (d) e DATES (ts).
 
@@ -175,7 +179,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    >
    >L&#39;attributo è nascosto, ma è comunque possibile accedervi.
 
-* **xml (booleano)**: se questa opzione è attivata, i valori del campo non hanno un campo SQL collegato. Adobe Campaign crea un campo &quot;mData&quot; di tipo Testo per l&#39;archiviazione dei record. Ciò significa che non è possibile filtrare o ordinare i campi.
+* **xml (booleano)**: se questa opzione è attivata, i valori del campo non hanno un campo SQL collegato.  Adobe Campaign crea un campo di tipo Testo &quot;mData&quot; per la memorizzazione dei record. Ciò significa che non è possibile filtrare o ordinare i campi.
 
 ### Esempi {#examples}
 
@@ -350,11 +354,11 @@ Il nome dell&#39;indice nel database viene calcolato concatenando il nome della 
 
    I valori accessibili sono:
 
-   * &quot;none&quot;: solo riconciliazione. Ciò significa che Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
-   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
-   * &quot;insert&quot;: inserimento. Ciò significa che Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
-   * &quot;update&quot;: update. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
-   * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
+   * &quot;none&quot;: solo riconciliazione. Ciò significa che  Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
+   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
+   * &quot;insert&quot;: inserimento. Ciò significa che  Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
+   * &quot;update&quot;: update. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
+   * &quot;delete&quot;: eliminazione. Ciò significa che  Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **applyIf (stringa)**: condizione per tenere conto dell&#39;indice - riceve un&#39;espressione XTK.
 * **label (stringa)**: index label.
@@ -431,7 +435,7 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 
 ### Descrizione {#description-4}
 
-Adobe Campaign offre quattro tipi di `<element>` elementi:
+In  Adobe Campaign sono disponibili quattro tipi di `<element>` elementi:
 
 * Radice `<element>` : definisce il nome della tabella SQL che corrisponde allo schema.
 * Struttura `<element>` : definisce un gruppo di `<element>` elementi o di `<attribute>` elementi.
@@ -446,16 +450,16 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 
    I valori accessibili sono:
 
-   * &quot;none&quot;: solo riconciliazione. Ciò significa che Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
-   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
-   * &quot;insert&quot;: inserimento. Ciò significa che Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
-   * &quot;update&quot;: update. Questo significa che Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
-   * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
+   * &quot;none&quot;: solo riconciliazione. Ciò significa che  Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
+   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
+   * &quot;insert&quot;: inserimento. Ciò significa che  Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
+   * &quot;update&quot;: update. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
+   * &quot;delete&quot;: eliminazione. Ciò significa che  Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **advanced (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
 * **aggregate (stringa)**: consente di copiare la definizione di un `<element>` altro schema. Questo attributo riceve una dichiarazione dello schema sotto forma di &quot;namespace:name&quot;.
 * **applyIf (stringa)**: condizione per l’applicazione dell’indice. Questo attributo riceve un&#39;espressione XTK.
-* **autopk (booleano)**: se questa opzione è attivata (autopk=&quot;true&quot;), viene automaticamente definita una chiave univoca. Questa opzione può essere utilizzata solo sull&#39;elemento principale dello schema. Attenzione, Adobe Campaign garantisce solo che la chiave generata sia univoca. Non è garantito che i valori chiave siano consecutivi e incrementali.
+* **autopk (booleano)**: se questa opzione è attivata (autopk=&quot;true&quot;), viene automaticamente definita una chiave univoca. Questa opzione può essere utilizzata solo sull&#39;elemento principale dello schema. Attenzione,  Adobe Campaign garantisce solo che la chiave generata sia univoca. Non è garantito che i valori chiave siano consecutivi e incrementali.
 * **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL. I valori per questo attributo sono:
 
    * &quot;none&quot;: nessun valore
@@ -471,7 +475,7 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 * **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente applicato di nuovo al record.
 * **default (string)**: consente di definire il comportamento degli elementi (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
 * **desc (stringa)**: consente di inserire una descrizione dell’elemento. Questa descrizione viene visualizzata nella barra di stato dell&#39;interfaccia.
-* **displayAsField (booleano)**: se questo attributo è attivato, un tipo di &quot;collegamento&quot; `<element>` verrà visualizzato come campo nella vista struttura degli schemi (scheda &quot;Struttura&quot;). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarne il comportamento durante una query. Quando l&#39;elemento viene trovato nella SELEZIONE di una query, verrà utilizzato il valore della destinazione del collegamento. Quando l&#39;elemento viene trovato nella posizione WHERE di una query, verrà utilizzata la chiave sottostante del collegamento.
+* **displayAsField (booleano)**: se questo attributo è attivato, un tipo di &quot;collegamento&quot; `<element>` verrà visualizzato come campo nella vista ad albero degli schemi (scheda &quot;Struttura&quot;). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarne il comportamento durante una query. Quando l&#39;elemento viene trovato nella SELEZIONE di una query, verrà utilizzato il valore della destinazione del collegamento. Quando l&#39;elemento viene trovato nella posizione WHERE di una query, verrà utilizzata la chiave sottostante del collegamento.
 * **edit (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
 * **enum (stringa)**: riceve il nome dell&#39;enumerazione collegata al campo. L&#39;enumerazione può essere inserita nello stesso schema o in uno schema remoto.
 * **expr (stringa)**: questo attributo definisce un campo calcolato per il quale non è memorizzata alcuna definizione nella tabella. Riceve un&#39;espressione Xpath o XTK (stringa).
@@ -480,10 +484,12 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 
    * &quot;shared&quot;: il contenuto è memorizzato in una tabella condivisa per tipo di dati
    * &quot;dedicato&quot;: il contenuto è memorizzato in una tabella dedicata
+
    Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
 
    * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+
    Esistono due tipi di campi di caratteristiche: campi semplici in cui è autorizzato un singolo valore sui campi caratteristici e a scelta multipla, in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
 
    Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
@@ -499,7 +505,7 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 
    I valori accessibili sono:
 
-   * &quot;define&quot;: Adobe Campaign non elimina l&#39;entità se vi viene fatto riferimento tramite il collegamento
+   * &quot;define&quot;:  Adobe Campaign non elimina l&#39;entità se vi viene fatto riferimento tramite il collegamento
    * &quot;normal&quot;: l&#39;eliminazione dell&#39;occorrenza di origine inizializza le chiavi del collegamento sull&#39;occorrenza di destinazione (modalità predefinita). Questo tipo di integrità inizializza tutte le chiavi esterne
    * &quot;own&quot;: l&#39;eliminazione dell&#39;occorrenza di origine attiva l&#39;eliminazione dell&#39;occorrenza di destinazione
    * &quot;owncopy&quot;: simili a &quot;own&quot; (in caso di cancellazione) o a duplicati (in caso di duplicazione)
@@ -511,16 +517,17 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 * **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
 * **name (MNTOKEN)**: nome interno dell&#39;elemento che corrisponde al nome della tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione collegati a XML.
 
-   Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente al nome del campo da Adobe Campaign.
+   Quando lo schema viene scritto nel database,  Adobe Campaign aggiunge automaticamente i prefissi al nome del campo.
 
    * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
    * &quot;d&quot;: per il tipo &#39;double&#39;.
    * &quot;s&quot;: per il tipo di stringa del carattere.
    * &quot;t&quot;: per il tipo &#39;date&#39;.
+
    Per definire il nome della tabella in modo autonomo, è necessario utilizzare l&#39;attributo &quot;@sqltable&quot; nella definizione dell&#39;elemento dello schema principale.
 
 * **noDbIndex (booleano)**: consente di specificare che l&#39;elemento non verrà indicizzato.
-* **ordered (booleano)**: se l&#39;attributo è attivato (ordered=&quot;true&quot;), Adobe Campaign mantiene la sequenza di dichiarazione dell&#39;elemento in un elemento di raccolta XML.
+* **ordered (booleano)**: se l&#39;attributo è attivato (ordered=&quot;true&quot;),  Adobe Campaign mantiene la sequenza di dichiarazione dell&#39;elemento in un elemento di raccolta XML.
 * **pkSequence (stringa)**: riceve il nome della sequenza da utilizzare per il calcolo di una chiave incrementale automatica. Questo attributo può essere utilizzato solo se è definita una chiave automatica incrementale sull&#39;elemento principale dello schema.
 * **pkgStatus (stringa)**: durante le esportazioni del pacchetto, i valori saranno presi in considerazione in funzione del valore di questo attributo:
 
@@ -537,11 +544,12 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
 
    * &quot;single&quot; : Collegamento semplice di tipo 1-1
    * &quot;unbound&quot;: Collegamento raccolta tipi 1-N
+
    Per impostazione predefinita, se l&#39;attributo non è specificato durante la creazione del collegamento, la cardinalità sarà di 1-N.
 
 * **revDesc (stringa)**: questo attributo riceve una descrizione collegata al collegamento opposto.
 * **revExternalJoin (booleano)**: quando attivato, questo attributo consente di forzare il join esterno sul collegamento opposto.
-* **revIntegrity (stringa)**: questo attributo definisce l&#39;integrità dello schema di destinazione. Gli stessi valori dell&#39;attributo &quot;@integrità&quot; sono autorizzati. Per impostazione predefinita, Adobe Campaign assegna il valore &quot;normale&quot; a questo attributo.
+* **revIntegrity (stringa)**: questo attributo definisce l&#39;integrità dello schema di destinazione. Gli stessi valori dell&#39;attributo &quot;@integrità&quot; sono autorizzati. Per impostazione predefinita,  Adobe Campaign assegna il valore &quot;normal&quot; a questo attributo.
 * **revLabel (stringa)**: etichetta del collegamento opposto.
 * **revLink (stringa)**: nome del collegamento opposto. Se il valore è &quot;_NONE_&quot;, nello schema di destinazione non verrà creato alcun collegamento opposto.
 * **revTarget (stringa)**: destinazione del collegamento opposto.
@@ -581,7 +589,7 @@ Adobe Campaign offre quattro tipi di `<element>` elementi:
    * primarykey
    * short
    * string
-   * time
+   * orario
    * periodo
    * uuid
 
@@ -653,7 +661,7 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima della definizi
    * primarykey
    * short
    * string
-   * time
+   * orario
    * periodo
    * uuid
 
@@ -822,7 +830,7 @@ I primi 1000 identificatori sono riservati, quindi se è necessario definire un 
 
 * **allowEmptyPart (booleano)**: nel caso di una chiave composita, se questo attributo è attivato, la chiave viene considerata valida se almeno una delle chiavi non è vuota. In questo caso, il valore di nozione vuoto è &quot;0&quot; (booleano o per tutti i tipi di dati numerici). Per impostazione predefinita, è necessario immettere tutte le chiavi che costituiscono una chiave composita.
 * **applyIf (stringa)**: questo attributo consente di rendere la chiave facoltativa. Definisce la condizione in base alla quale verrà applicata la definizione chiave. Questo attributo riceve un&#39;espressione XTK.
-* **internal (boolean)**: se è attivato, questo attributo consente ad Adobe Campaign di sapere che la chiave è primaria.
+* **internal (boolean)**: se è attivato, questo attributo consente  Adobe Campaign di sapere che la chiave è primaria.
 * **label (stringa)**: dell&#39;etichetta della chiave.
 * **name (MNTOKEN)**: nome interno della chiave.
 * **noDbIndex (booleano)**: se è attivato (noDbIndex=&quot;true&quot;), il campo corrispondente alla chiave non verrà indicizzato.
@@ -1049,7 +1057,7 @@ Questo elemento consente di definire un parametro per richiamare un metodo SOAP.
    * primarykey
    * short
    * string
-   * time
+   * orario
    * periodo
    * uuid
 
@@ -1128,7 +1136,7 @@ None
 
 ### Descrizione {#description-14}
 
-L&#39;elemento `<srcschema>` principale di uno schema. È il punto di input per la definizione dello schema.
+L&#39; `<srcschema>` elemento principale di uno schema. È il punto di input per la definizione dello schema.
 
 ### Uso e contesto di utilizzo {#use-and-context-of-use-9}
 
@@ -1139,7 +1147,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento](.
 * **created (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora della creazione dello schema. Presenta un modulo &quot;Data e ora&quot;. I valori visualizzati vengono prelevati dal server. L&#39;ora viene visualizzata in formato UTC.
 * **createBy-id (long)**: è l&#39;identificatore dell&#39;operatore che ha creato lo schema.
 * **desc (stringa)**: descrizione schema
-* **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approva la grammatica con lo schema dichiarato nell&#39;attributo @xtkschema.
+* **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per  Adobe Campaign: xtk:srcSchema). Quando si salva lo schema corrente,  Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell&#39;attributo @xtkschema.
 * **extensionSchema (stringa)**: riceve il nome dello schema out-of-the-box su cui si basa l&#39;estensione dello schema corrente. Il modulo è &quot;namespace:name&quot;.
 * **img (stringa)**: icona collegata allo schema (può essere definita nella procedura guidata di creazione dello schema).
 * **label (stringa)**: etichetta dello schema.
