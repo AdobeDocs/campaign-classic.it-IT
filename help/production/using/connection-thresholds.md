@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
@@ -28,9 +28,9 @@ Esistono tre soglie diverse:
 
 1. La soglia di connessione Web, configurata nel server Web. Per modificarlo, contattare l&#39;amministratore di sistema.
 1. La soglia di connessione del database. Per modificarlo, contattate l&#39;amministratore del database.
-1. La soglia di connessione di Adobe Campaign, disponibile in due posizioni:
+1. La soglia di connessione Adobe Campaign , disponibile in due posizioni:
 
-   * Lato Tomcat: tutte le query in arrivo sul client Adobe Campaign Tomcat.
+   * Lato Tomcat: tutte le query in arrivo sul client Adobe Campaign Tomcat .
 
       Questa soglia è configurata nel file **nl6/tomcat-7/conf/server.xml** . L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
 
