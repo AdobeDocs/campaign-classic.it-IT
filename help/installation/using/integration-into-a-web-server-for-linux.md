@@ -1,7 +1,7 @@
 ---
-title: Integrazione in un server Web per Linux
-seo-title: Integrazione in un server Web per Linux
-description: Integrazione in un server Web per Linux
+title: Integrazione in un server web per Linux
+seo-title: Integrazione in un server web per Linux
+description: Integrazione in un server web per Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: 7b18d176-4458-46a8-8da4-3621f90c6b13
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 5%
 
 ---
 
 
-# Integrazione in un server Web per Linux{#integration-into-a-web-server-for-linux}
+# Integrazione in un server web per Linux{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server dell&#39;applicazione tramite HTTP (e SOAP).
+ Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server dell’applicazione tramite HTTP (e SOAP).
 
 Potete utilizzare questo server Tomcat integrato per soddisfare le richieste HTTP.
 
@@ -35,7 +35,7 @@ In questo caso:
    http://<computer>:8080
    ```
 
-Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console all&#39;esterno della rete.
+Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue  Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console all&#39;esterno della rete.
 
 Un server Web consente inoltre di garantire la riservatezza dei dati con il protocollo HTTP.
 
@@ -83,7 +83,7 @@ Effettuate le seguenti operazioni:
     a2enmod nlsrv
    ```
 
-   Se utilizzi il modulo **mod_rewrite** per le pagine di Adobe Campaign, devi rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, eseguire il comando seguente:
+   Se utilizzate il modulo **mod_rewrite** per  pagine Adobe Campaign, dovete rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, eseguire il comando seguente:
 
    ```
    a2enmod zz-nlsrv
@@ -99,7 +99,7 @@ Effettuate le seguenti operazioni:
 
    Salvare le modifiche.
 
-1. Quindi aggiungi gli utenti Adobe Campaign al gruppo di utenti Apache e viceversa utilizzando il seguente tipo di comando:
+1. Quindi aggiungete  utenti Adobe Campaign al gruppo di utenti Apache e viceversa utilizzando il seguente tipo di comando:
 
    ```
    usermod neolane -G www-data
@@ -157,7 +157,7 @@ Effettuate le seguenti operazioni:
    ForceLanguagePriority
    ```
 
-1. Crea un file di configurazione specifico per Adobe Campaign nella `/etc/httpd/conf.d/` cartella. Ad esempio `CampaignApache.conf`
+1. Create un file di configurazione  Adobe Campaign specifico nella `/etc/httpd/conf.d/` cartella. Ad esempio `CampaignApache.conf`
 
 1. Per **RHEL7**, aggiungete le seguenti istruzioni nel file:
 
@@ -183,7 +183,7 @@ Effettuate le seguenti operazioni:
    systemctl daemon-reload
    ```
 
-1. Quindi aggiungi gli operatori Adobe Campaign al gruppo di operatori Apache e viceversa, eseguendo il comando:
+1. Quindi, aggiungere  operatori Adobe Campaign al gruppo di operatori Apache e viceversa, eseguendo il comando:
 
    ```
    usermod -a -G neolane apache
@@ -192,7 +192,7 @@ Effettuate le seguenti operazioni:
 
    I nomi dei gruppi da utilizzare dipendono dalla configurazione di Apache.
 
-1. Esegui Apache e il server Adobe Campaign.
+1. Eseguite Apache e il server Adobe Campaign .
 
    Per RHEL7:
 
@@ -203,7 +203,7 @@ Effettuate le seguenti operazioni:
 
 ## Avvio del server Web e verifica della configurazione{#launching-the-web-server-and-testing-the-configuration}
 
-È ora possibile verificare la configurazione avviando Apache. Il modulo Adobe Campaign deve ora visualizzare il proprio banner sulla console (due banner in alcuni sistemi operativi):
+È ora possibile verificare la configurazione avviando Apache. Il modulo Adobe Campaign  deve ora visualizzare il banner sulla console (due banner in alcuni sistemi operativi):
 
 ```
  /etc/init.d/apache start
