@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -51,22 +48,22 @@ Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico dovrebbe 
 
 Ad **[!UICONTROL Database Cleanup workflow (‘cleanup’)]** esempio:
 
-1. Verificate che il **[!UICONTROL Database Cleanup]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. Verificate che il **[!UICONTROL Database Cleanup]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
 1. Esaminare il giornale di registrazione per verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
 1. Per ulteriori informazioni, consultate questa [pagina](../../production/using/database-cleanup-workflow.md).
 
 Ad **[!UICONTROL Tracking workflow (‘tracking’)]** esempio:
 
-Verificare che il flusso di lavoro di tracciamento venga eseguito come pianificato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. For more on this, refer to this [section](../../workflow/using/delivery.md).
+Verificare che il flusso di lavoro di tracciamento venga eseguito come pianificato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. Per ulteriori informazioni, consulta questa [sezione](../../workflow/using/delivery.md).
 
 Ad **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]** esempio:
 
-1. Verificate che il **[!UICONTROL Deliverability update]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. For more on this, refer to this [page](../../workflow/using/delivery.md).
+1. Verificate che il **[!UICONTROL Deliverability update]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
 1. Verificare nel giornale di registrazione che le regole siano aggiornate regolarmente.
 
 Ad **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]** esempio:
 
-1. Controllate tutti i flussi di lavoro che si trovano sotto la **[!UICONTROL Campaign process]** cartella. For more on this, refer to this [page](../../workflow/using/campaign.md).
+1. Controllate tutti i flussi di lavoro che si trovano sotto la **[!UICONTROL Campaign process]** cartella. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/campaign.md).
 1. Verificare che i flussi di lavoro vengano eseguiti come pianificato e che il giornale di registrazione non evidenzi gli errori ricorrenti.
 
 ## Controllo del flusso di lavoro {#workflow-supervision}
@@ -105,4 +102,4 @@ Potete creare un flusso di lavoro di monitoraggio per inviare un messaggio e-mai
 
 È possibile creare una visualizzazione che consenta di monitorare tutti i flussi di lavoro in un&#39;area funzionale o a livello di sistema.
 
-Potete inoltre utilizzare la funzionalità di creazione di Adobi Campaign  o rapporti per creare la documentazione su richiesta, sempre aggiornata.
+Potete inoltre utilizzare la funzionalità di  processo Adobe Campaign o di report per creare la documentazione su richiesta, sempre aggiornata.
