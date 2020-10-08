@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 79f1e85a-b5e6-4875-ac57-ab979fc57079
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 4%
 
 ---
 
@@ -28,13 +28,13 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 Un&#39; **[!UICONTROL Query]** attività consente di selezionare i dati di base per creare la popolazione di destinazione. Per ulteriori informazioni, vedere [Creazione di una query](../../workflow/using/query.md#creating-a-query).
 
-Per eseguire query e perfezionare i dati del database è inoltre possibile utilizzare le attività seguenti: Query [incrementale](../../workflow/using/incremental-query.md), elenco [](../../workflow/using/read-list.md)di lettura.
+Per eseguire query e perfezionare i dati del database è inoltre possibile utilizzare le attività seguenti: [Query](../../workflow/using/incremental-query.md)incrementale, elenco [](../../workflow/using/read-list.md)di lettura.
 
 È possibile raccogliere dati aggiuntivi da inoltrare ed elaborare per tutto il ciclo di vita del flusso di lavoro. Per ulteriori informazioni, vedere [Aggiunta di dati](../../workflow/using/query.md#adding-data) e [Modifica di dati](#editing-additional-data)aggiuntivi.
 
 ### Modifica di dati aggiuntivi {#editing-additional-data}
 
-Una volta aggiunti i dati aggiuntivi, è possibile modificarli o utilizzarli per definire la destinazione definita nell&#39;attività di query.
+Una volta aggiunti i dati aggiuntivi, è possibile modificarli o utilizzarli per ridefinire la destinazione definita nell&#39;attività di query.
 
 Il **[!UICONTROL Edit additional data...]** collegamento consente di visualizzare i dati aggiunti e modificarli o aggiungerli.
 
@@ -66,7 +66,7 @@ I dati aggiuntivi raccolti possono consentire di perfezionare il filtraggio dei 
 
 ### Omogenealizzazione dei dati {#homogenizing-data}
 
-Nelle attività **[!UICONTROL Union]** o nel **[!UICONTROL Intersection]** tipo, è possibile scegliere di conservare solo i dati aggiuntivi condivisi per mantenere la coerenza dei dati. In questo caso, la tabella di lavoro dell&#39;output temporaneo di questa attività conterrà solo i dati aggiuntivi rilevati in tutti i set in entrata.
+Nelle attività **[!UICONTROL Union]** o nel **[!UICONTROL Intersection]** tipo, potete scegliere di mantenere solo i dati aggiuntivi condivisi per mantenere la coerenza dei dati. In questo caso, la tabella di lavoro dell&#39;output temporaneo di questa attività conterrà solo i dati aggiuntivi rilevati in tutti i set in entrata.
 
 ![](assets/option-common_additionnal_col_only.png)
 
@@ -80,7 +80,7 @@ Durante le fasi di riconciliazione dei dati (**[!UICONTROL Union]**, **[!UICONTR
 
 L&#39; **[!UICONTROL Split]** attività consente di creare sottoinsiemi in base a criteri definiti tramite query di estrazione. Per ciascun sottoinsieme, quando si modifica una condizione di filtro sulla popolazione, si accede all&#39;attività di query standard che consente di definire le condizioni di segmentazione di destinazione.
 
-Potete dividere una destinazione in più sottoinsiemi utilizzando solo dati aggiuntivi come condizioni di filtraggio, o in aggiunta ai dati di destinazione. Puoi anche utilizzare dati esterni se hai acquistato l&#39;opzione **Federated Data Access** .
+Potete dividere una destinazione in più sottoinsiemi utilizzando solo dati aggiuntivi come condizioni di filtraggio, o in aggiunta ai dati di destinazione. È inoltre possibile utilizzare dati esterni se è stata acquistata l&#39;opzione **Federated Data Access** .
 
 Per ulteriori informazioni, consultate [Creazione di sottoinsiemi tramite l&#39;attività](#creating-subsets-using-the-split-activity)Dividi.
 
@@ -102,7 +102,7 @@ Sono disponibili le seguenti opzioni di riconciliazione dei dati:
 
    Questa opzione consente di riconciliare i dati in base a tutte le colonne comuni alle diverse popolazioni della destinazione.
 
-   Adobe Campaign identifica le colonne in base al loro nome. È accettata una soglia di tolleranza: ad esempio, una colonna &#39;E-mail&#39; può essere riconosciuta identica a una colonna &#39;@email&#39;.
+    Adobe Campaign identifica le colonne in base al nome. È accettata una soglia di tolleranza: ad esempio, una colonna &#39;E-mail&#39; può essere riconosciuta identica a una colonna &#39;@email&#39;.
 
 * **[!UICONTROL A selection of columns]**
 
@@ -128,7 +128,7 @@ Sono disponibili le seguenti opzioni di riconciliazione dei dati:
 
 ![](assets/traitements.png)
 
-L&#39;intersezione consente di recuperare solo le righe condivise dalle popolazioni di transizioni in entrata. Questa attività è configurata come l&#39;attività dell&#39;unione.
+L&#39;intersezione consente di recuperare solo le righe condivise dalle popolazioni di transizioni in entrata. Questa attività deve essere configurata come l&#39;attività dell&#39;unione.
 
 Inoltre, è possibile mantenere solo una selezione di colonne, o solo le colonne condivise dalla popolazione in entrata.
 
@@ -150,9 +150,9 @@ L&#39; **[!UICONTROL Split]** attività è un&#39;attività standard che consent
 
 I dati aggiuntivi trasmessi dalla transizione in entrata possono essere utilizzati nei criteri di filtro.
 
-Per configurarlo, occorre anzitutto selezionare i criteri:
+Per configurarlo, è innanzitutto necessario selezionare i criteri:
 
-1. Nel flusso di lavoro, trascinate un’ **[!UICONTROL Split]** attività.
+1. Nel flusso di lavoro, trascinate e rilasciate un’ **[!UICONTROL Split]** attività.
 1. Nella **[!UICONTROL General]** scheda, selezionare l&#39;opzione desiderata: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** o **[!UICONTROL Use external data]**.
 1. Se l&#39; **[!UICONTROL Use data from the target and additional data]** opzione è selezionata, la dimensione di targeting consente di utilizzare tutti i dati trasmessi dalla transizione in ingresso.
 
@@ -170,7 +170,7 @@ Per configurarlo, occorre anzitutto selezionare i criteri:
 
    È inoltre possibile assegnare un codice del segmento al sottoinsieme per identificarlo e utilizzarlo per il targeting della popolazione.
 
-   Se necessario, potete modificare le dimensioni di targeting e filtro singolarmente per ciascun sottoinsieme da creare. A questo scopo, modificate la condizione di filtro del sottoinsieme e verificate l&#39; **[!UICONTROL Use a specific filtering dimension]** opzione.
+   Se necessario, potete modificare le dimensioni di targeting e filtro singolarmente per ciascun sottoinsieme da creare. A questo scopo, modificate la condizione di filtraggio del sottoinsieme e verificate l&#39; **[!UICONTROL Use a specific filtering dimension]** opzione.
 
    ![](assets/split-subset-config-specific-filtering.png)
 
@@ -182,7 +182,7 @@ Per configurarlo, occorre anzitutto selezionare i criteri:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   For more on this, refer to this [section](../../platform/using/about-fda.md).
+   Per ulteriori informazioni, consulta questa [sezione](../../platform/using/about-fda.md).
 
 Quindi, è necessario aggiungere nuovi sottoinsiemi:
 
@@ -194,19 +194,19 @@ Quindi, è necessario aggiungere nuovi sottoinsiemi:
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Se necessario, potete modificare singolarmente la dimensione di filtro per ciascun sottoinsieme. Questo consente di creare un set per tutti i possessori di carte Gold, uno per tutti i destinatari che hanno fatto clic sulla newsletter più recente e un terzo per le persone di età compresa tra i 18 e i 25 anni che hanno effettuato un acquisto in-store negli ultimi 30 giorni, utilizzando la stessa attività di divisione. A questo scopo, selezionare l&#39; **[!UICONTROL Use a specific filtering dimension]** opzione e il contesto di filtraggio dei dati.
+1. Se necessario, potete modificare singolarmente la dimensione di filtro per ciascun sottoinsieme. Questo consente di creare un set per tutti i possessori di carte Gold, uno per tutti i destinatari che hanno fatto clic sulla newsletter più recente e un terzo per le persone di età compresa tra i 18 e i 25 anni che hanno effettuato un acquisto in-store negli ultimi 30 giorni, utilizzando la stessa attività di divisione. A questo scopo, selezionare l&#39; **[!UICONTROL Use a specific filtering dimension]** opzione e selezionare il contesto di filtraggio dei dati.
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >Se hai acquisito l&#39;opzione **Federated Data Access** , puoi creare sottoinsiemi basati sulle informazioni in una base esterna. A tal fine, selezionare lo schema della tabella esterna nel **[!UICONTROL Targeting dimension]** campo. Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+   >Se hai acquisito l&#39;opzione **Federated Data Access** , puoi creare sottoinsiemi in base alle informazioni in una base esterna. A tal fine, selezionare lo schema della tabella esterna nel **[!UICONTROL Targeting dimension]** campo. Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 
 Una volta creati i sottoinsiemi, per impostazione predefinita l&#39;attività divisa mostra tutte le transizioni di output possibili:
 
 ![](assets/wf_split_multi_outputs.png)
 
-Potete raggruppare tutti questi sottoinsiemi in una singola transizione di output. In questo caso, il collegamento ai rispettivi sottoinsiemi sarà visibile, ad esempio, nel codice del segmento. A questo scopo, selezionare l&#39; **[!UICONTROL Generate all subsets in the same table]** opzione.
+Potete raggruppare tutti questi sottoinsiemi in una singola transizione di output. In questo caso, il collegamento ai rispettivi sottoinsiemi sarà visibile, ad esempio, nel codice del segmento. To do this, select the **[!UICONTROL Generate all subsets in the same table]** option.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -214,7 +214,7 @@ Ad esempio, puoi inserire una singola attività di consegna e personalizzare il 
 
 ![](assets/wf_split_single_output.png)
 
-I sottoinsiemi possono anche essere creati utilizzando l&#39; **[!UICONTROL Cells]** attività. Per ulteriori informazioni, vedere la sezione [Celle](../../workflow/using/cells.md) .
+I sottoinsiemi possono anche essere creati utilizzando l&#39; **[!UICONTROL Cells]** attività. For more on this, refer to the [Cells](../../workflow/using/cells.md) section.
 
 ### Utilizzo di dati di destinazione {#using-targeted-data}
 
@@ -226,23 +226,23 @@ Una volta identificati e preparati, i dati possono essere utilizzati nei seguent
 
 * Potete anche aggiornare il contenuto degli elenchi esistenti.
 
-   Per ulteriori informazioni, consulta Aggiornamento [](../../workflow/using/list-update.md)elenco.
+   For more on this, refer to [List update](../../workflow/using/list-update.md).
 
 * Puoi preparare o avviare direttamente le consegne nel flusso di lavoro.
 
    Per maggiori informazioni, consulta [Consegna](../../workflow/using/delivery.md), Controllo [](../../workflow/using/delivery-control.md) Consegna e Consegna [](../../workflow/using/continuous-delivery.md)continua.
 
-## Gestione dei dati {#data-management}
+## Data Management {#data-management}
 
-In Adobe Campaign, Data Management combina una serie di attività per risolvere problemi di targeting complessi offrendo strumenti più efficienti e flessibili. Questo consente di implementare una gestione coerente di tutte le comunicazioni con un contatto utilizzando informazioni relative ai contratti, alle sottoscrizioni, alla reattività alle consegne, ecc. Gestione dati consente di tenere traccia del ciclo di vita dei dati durante le operazioni di segmentazione, in particolare:
+In  Adobe Campaign, Data Management combina una serie di attività per risolvere problemi di targeting complessi offrendo strumenti più efficienti e flessibili. Questo consente di implementare una gestione coerente di tutte le comunicazioni con un contatto utilizzando le informazioni relative ai contratti, alle sottoscrizioni, alla reattività alle consegne, ecc. La gestione dati ti consente di eseguire il tracciamento del ciclo di vita dei dati durante le operazioni di segmentazione, in particolare:
 
-* Semplificazione e ottimizzazione dei processi di targeting, includendo i dati non modellati nel datamart (creazione di nuove tabelle): estensione locale per ogni flusso di lavoro di targeting, a seconda della configurazione).
-* Mantenimento e trasmissione dei calcoli del buffer, soprattutto durante le fasi di costruzione di destinazione o per l&#39;amministrazione del database.
+* Semplificazione e ottimizzazione dei processi di targeting, includendo dati non modellati nel data mart (creazione di nuove tabelle: estensione locale per ogni flusso di lavoro di targeting, a seconda della configurazione).
+* Mantenimento e trasmissione dei calcoli di buffer, soprattutto durante le fasi di costruzione del target o per l’amministrazione del database.
 * Accesso a basi esterne (facoltativo): database eterogenei presi in considerazione durante il processo di targeting.
 
-Per implementare queste operazioni, Adobe Campaign offre:
+Per implementare queste operazioni,  Adobe Campaign offre:
 
-* Attività di raccolta dati: Trasferimento [di](../../workflow/using/file-transfer.md)file, caricamento di [dati (file)](../../workflow/using/data-loading--file-.md), caricamento di [dati (RDBMS)](../../workflow/using/data-loading--rdbms-.md), [aggiornamento dei dati](../../workflow/using/update-data.md). Questa prima fase della raccolta dei dati prepara i dati per consentirne l&#39;elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e fornire i risultati previsti. Ad esempio, quando si importano i dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
+* Attività di raccolta dati: [Trasferimento](../../workflow/using/file-transfer.md)dei file, caricamento [dei dati (file)](../../workflow/using/data-loading--file-.md), caricamento dei [dati (RDBMS)](../../workflow/using/data-loading--rdbms-.md), [aggiornamento dei dati](../../workflow/using/update-data.md). Questa prima fase della raccolta dei dati prepara i dati per consentirne l&#39;elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e fornire i risultati previsti. Ad esempio, quando si importano i dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
 * Il targeting delle attività è stato arricchito con le opzioni di gestione dei dati: [Query](../../workflow/using/query.md), [Unione](../../workflow/using/union.md), [Intersezione](../../workflow/using/intersection.md), [Dividi](../../workflow/using/split.md). Questo consente di configurare un&#39;unione o un&#39;intersezione tra dati provenienti da diverse dimensioni di targeting, purché sia possibile la riconciliazione dei dati.
 * Attività di trasformazione dei dati: [Arricchimento](../../workflow/using/enrichment.md), [Modifica dimensione](../../workflow/using/change-dimension.md).
 
