@@ -1,7 +1,7 @@
 ---
-title: Release 18.10
-seo-title: Release 18.10
-description: Release 18.10
+title: Versione 18.10
+seo-title: Versione 18.10
+description: Versione 18.10
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -11,18 +11,18 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 8%
 
 ---
 
 
-# Release 18.10{#release-18-10}
+# Versione 18.10{#release-18-10}
 
-## Release 18.10.6 - Build 8985{#release-18-10-6-build-8985}
+## Versione 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
 12 luglio 2019
 
@@ -34,17 +34,17 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * Sono state migliorate le autorizzazioni per eseguire il pacchetto della zona di sicurezza quando si utilizza un account interno.
 * È stato risolto un problema che poteva causare errori nei registri secondari principali. (NEO-8978)
 
-## Release 18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## Versione 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
 23 aprile 2019
 
 **Miglioramenti**
 
 * È stato risolto un problema di blocco critico SQL che causava un errore di analisi del recapito in caso di analisi/invio simultanei (quando due consegne venivano analizzate contemporaneamente). (NEO-13026)
-* È stato rimosso il limite di 10.000 record in Workflow Heatmap per risolvere un problema di dati mancante. (NEO-12329)
+* È stato rimosso il limite di 10.000 record nella mappa di calore del flusso di lavoro per risolvere un problema di dati mancante. (NEO-12329)
 * È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;opzione &quot;Conserva tutti i dati aggiuntivi dal set principale&quot; in un&#39;attività del flusso di lavoro di arricchimento. (NEO-13291)
 
-## Release 18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## Versione 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
 15 aprile 2019
 
@@ -54,10 +54,10 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * È stato risolto un problema con l’API HTTPRequest che non aspettava il completamento di tutte le callback. (NEO-12628)
 * Sono stati aggiunti indici nelle tabelle temporanee dei coupon per ottimizzare l&#39;invio delle consegne. (NEO-12437)
 * È stato risolto un problema durante l&#39;analisi di un messaggio che determinava il targeting dei destinatari per i domini giapponesi (.JP). (NEO-12246)
-* Nell&#39;integrazione di Analytics, è ora consentito il recupero dei dati del segmento AAM con il carattere %. (NEO-12025)
+* Nell&#39;integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
 * È stato corretto un problema di arresto anomalo Tomcat durante l&#39;invio delle notifiche push tramite HTTP2. (NEO-12701)
 
-## Release 18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## Versione 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
 29 gennaio 2019
 
@@ -81,7 +81,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * È stato risolto un problema di escape dei caratteri durante l&#39;invio di notifiche push in un&#39;applicazione mobile.
 * È stato risolto un problema che impediva il passaggio da FDA a metodo di sincronizzazione SOAP in un account esterno di Media Sourcing.
 
-## Release 18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## Versione 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
 6 dicembre 2018
 
@@ -103,7 +103,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * È stato risolto un problema con il calcolo delle durate del flusso di lavoro in Workflow HeatMap.
 
 
-## Release 18.10 - Build 8977{#release-18-10-build-8977}
+## Versione 18.10 - Build 8977{#release-18-10-build-8977}
 
 5 nov 2018
 
@@ -111,7 +111,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 >
 >Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
 
-**Cosa c&#39;è di nuovo?**
+**Novità?**
 
 <table> 
  <thead> 
@@ -123,20 +123,20 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
  <tbody> 
   <tr> 
    <td> Miglioramenti delle notifiche push<br /> </td> 
-   <td> Per la notifica push in Adobe Campaign sono stati implementati diversi miglioramenti:<br /> 
+   <td> Sono stati implementati diversi miglioramenti per le notifiche push in  Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Tenere traccia delle notifiche silenziose in iOS </p> </li> 
      <li> <p>Implementare il feedback sulle chiamate di registrazione in iOS</p> </li> 
      <li> <p>Miglioramento della velocità di preparazione della distribuzione iOS</p> </li> 
-    </ul> <p>Come parte dell'ammortamento GCM di Google, il connettore Android V2 ora consente le connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la documentazione <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md"></a>dettagliata. L'aggiornamento manuale a FCM è dettagliato in questo <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
+    </ul> <p>Come parte dell'ammortamento GCM di Google, il connettore Android V2 ora consente le connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>. L'aggiornamento manuale a FCM è dettagliato in questo <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> Attività di gestione dati SQL<br /> </td> 
-   <td> <p>È stata aggiunta una nuova attività di gestione dei dati. L'attività <strong>SQL Data Management</strong> consente di scrivere o copiare/incollare script SQL personalizzati per creare e compilare tabelle di lavoro (solo FDA). </p> <p>Per ulteriori informazioni, consulta la documentazione <a href="../../workflow/using/sql-data-management.md"></a>dettagliata.</p></td> 
+   <td> <p>È stata aggiunta una nuova attività del flusso di lavoro di gestione dei dati. L'attività <strong>SQL Data Management</strong> consente di scrivere o copiare/incollare script SQL personalizzati per creare e compilare tabelle di lavoro (solo FDA). </p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/sql-data-management.md">documentazione dettagliata</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Monitoraggio del flusso di lavoro<br /> </td> 
-   <td> <p>Con la nuova Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rappresentazione grafica rapida di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull'istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la documentazione <a href="../../workflow/using/heatmap.md"></a>dettagliata.</p> <p>Il pacchetto HeatMap del flusso di lavoro è disponibile anche su richiesta per le build precedenti alla 8977 (avvio build 8700). Per ulteriori informazioni sulla richiesta e l’installazione, consultare <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
+   <td> <p>Con la nuova  Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rapida rappresentazione grafica di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull'istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/heatmap.md">documentazione dettagliata</a>.</p> <p>Il pacchetto HeatMap del flusso di lavoro è disponibile anche su richiesta per le build precedenti alla 8977 (avvio build 8700). Per ulteriori informazioni sulla richiesta e l’installazione, consultare <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,15 +151,15 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 **Miglioramenti**
 
-* Le API Campaign Classic sono ora disponibili in una pagina [](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html)dedicata. Se utilizzi il file jsapi.chm, fai riferimento alla nuova versione online.
-* PostgreSQL 10, Debian 9 e Teradata 16.20 ora sono supportati. Fare riferimento alla matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)compatibilità.
-* Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. Per maggiori informazioni, consulta la documentazione [](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) dettagliata (NEO-9868)
+* Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
+* PostgreSQL 10, Debian 9 e Teradata 16.20 ora sono supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+* Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * L&#39;opzione di formula **di calcolo della** data è ora disponibile nelle proprietà di consegna quando si crea un singolo recapito utilizzando il modello di consegna diretta per posta. (NEO-9792)
-* La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e le applicazioni Web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot; di seguito.
-* L&#39;importazione di risorse condivise di Adobe Marketing Cloud in una pagina di consegna o di destinazione è stata migliorata in termini di sicurezza e prestazioni.
-* Una nuova casella di controllo è disponibile nell&#39;account esterno del canale Mobile per abilitare tracce SMPP dettagliate nel file di registro, il che rende questo output direttamente accessibile dall&#39;interfaccia di Adobe Campaign.
+* La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e per le applicazioni Web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot; di seguito.
+* L&#39;importazione di risorse condivise Adobe Marketing Cloud in una pagina di consegna o di destinazione è stata migliorata in termini di sicurezza e prestazioni.
+* Una nuova casella di controllo è disponibile nell&#39;account esterno del canale Mobile per abilitare tracce SMPP dettagliate nel file di registro, che rende questo output direttamente accessibile dall&#39;interfaccia Adobe Campaign .
 * Nei log di trasmissione, ora esiste una distinzione tra il numero massimo di connessioni e il numero massimo di messaggi per ora. Una volta raggiunti i limiti, è possibile sapere perché il throughput è limitato. In precedenza, lo stesso messaggio (&quot;quota soddisfatta&quot;) era applicato a entrambi i casi.
-* È ora possibile specificare uno script SQL da eseguire quando si acquisisce una connessione dal pool. Questo script può essere utilizzato per impostare lo schema predefinito. Questo script verrà applicato dopo l&#39;esecuzione della banding della query. (NEO-11256)
+* È ora possibile specificare uno script SQL da eseguire quando si acquisisce una connessione dal pool. Questo script può essere utilizzato per impostare lo schema predefinito. Questo script verrà applicato dopo l&#39;esecuzione della bendatura della query. (NEO-11256)
 * Campaign SDK non memorizza più l&#39;ID utente per conformarsi alle nostre normative PII. I dati ora vengono memorizzati come hash.
 * Quando si importa un file XML di esportazione del pacchetto, Campaign ora supporta la presenza di BOM nel file, anche se la codifica è dichiarata esplicitamente in esso.
 
@@ -173,7 +173,7 @@ Aggiornamento client e server
 
 Gestione dei nomi di dominio
 
-La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e le applicazioni Web.
+La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e per le applicazioni Web.
 
 Ora, tutti i nomi di dominio di secondo livello di due lettere sono supportati per impostazione predefinita (ad esempio .aa.com). Per nomi di dominio più complessi (ad esempio domini di secondo livello di tre lettere come .com.au), è necessario aggiungerli nell&#39;opzione **cookieDomains** di serverConf (sotto il tag di reindirizzamento). Esempio:
 
@@ -203,22 +203,22 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 **Patch**
 
 * È stato corretto un errore che impediva il download dei file dall&#39;attività del flusso di lavoro di download **** Web. (NEO-11105)
-* È stato corretto un errore che a volte lasciava il flusso di lavoro **Invio di indicatori e attributi** campagna in uno stato Non riuscito (NEO-10820).
+* È stato corretto un errore che a volte lasciava il flusso di lavoro **Invio di indicatori e attributi** della campagna in uno stato Non riuscito (NEO-10820).
 * È stato risolto un problema che eliminava l&#39;elenco dei destinatari creato dopo l&#39;esecuzione dell&#39;attività di aggiornamento Elenco in un flusso di lavoro. (NEO-11696)
 * È stato risolto un problema che causava erroneamente la visualizzazione delle campagne un mese prima nel calendario Campaign (su un&#39;istanza giapponese). (NEO-11445)
 * È stato risolto un problema che impediva la visualizzazione della configurazione di Analytics nella scheda Analisi Web delle proprietà di consegna. (NEO-11619)
 * È stato corretto un errore visualizzato quando si tentava di modificare e salvare il modulo di input nms:delivery. (NEO-10973)
 * È stato risolto un problema di configurazione dell&#39;account esterno che si verificava durante l&#39;esecuzione di un flusso di lavoro contenente un&#39;attività di trasferimento file. (NEO-11012)
-* È stato risolto un problema che restituiva righe vuote quando si utilizzava la funzione zcat per caricare i file nell&#39;attività di caricamento dei dati. (NEO-11273)
+* È stato risolto un problema che causava la restituzione di righe vuote quando si utilizzava la funzione zcat per caricare i file nell&#39;attività di caricamento dei dati. (NEO-11273)
 * È stato risolto un problema che generava registri ampi duplicati durante l&#39;analisi della consegna. (NEO-11360)
 * È stato risolto un problema che causava un errore di consegna a causa di una chiave di collegamento esterna mancante dopo l&#39;esecuzione dell&#39;attività di arricchimento in un flusso di lavoro. (NEO-11537)
-* È stato risolto un problema che impediva la corretta disinstallazione o riparazione di Adobe Campaign se il percorso di installazione includeva caratteri cinesi GB18030 specifici.
+* È stato risolto un problema che impediva la corretta disinstallazione o riparazione di  Adobe Campaign quando il percorso di installazione includeva caratteri cinesi GB18030 specifici.
 * È stato risolto un problema che collegava alcuni registri di monitoraggio alla consegna errata. (NEO-11412)
 * È stato risolto un problema che poteva causare la permanenza di alcune parti dei log di consegna con stato in sospeso maggiore del previsto. (NEO-11336)
 * È stato corretto un errore che si verificava durante la modifica di una query per aggiungere un coupon a una consegna. (NEO-11037)
 * È stato risolto un problema nei report che faceva in modo che i grafici calcolassero sempre la somma dei valori indipendentemente dall&#39;operatore aggregato selezionato. (NEO-10913)
 * Poiché la funzione &quot;request.Scheme&quot; è obsoleta, è stata rimossa dalla documentazione JSAPI. (NEO-10828)
-* È stato risolto un problema che impediva ad alcuni utenti con configurazioni di fuso orario specifiche di accedere ad Adobe Campaign. (NEO-10712)
+* È stato risolto un problema che impediva ad alcuni utenti con specifiche configurazioni di fuso orario di accedere a  Adobe Campaign. (NEO-10712)
 * È stato risolto un problema che si verificava durante la configurazione di un account esterno di un canale mobile utilizzando il connettore SMPP generico esteso: se si specificavano parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente questi parametri invece dei propri.
 * È stato risolto un problema che causava il fallimento delle consegne programmate durante l&#39;impostazione di una frequenza per la regola di pressione, in quanto le consegne venivano continuamente ricalcolate dopo il primo arbitrato. (NEO-10016)
 * È stato risolto un problema che causava l&#39;arresto anomalo del server Web IIS durante il processo di riciclo del pool di applicazioni (nella libreria nlsrvmod.dll). (NEO-10862)
@@ -233,7 +233,7 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 * È stato risolto un problema che si verificava durante l&#39;ordinamento dei dati in un&#39;attività di flusso di lavoro di arricchimento. (NEO-11394)
 * È stato risolto un problema durante l&#39;ordinamento dei dati in un report personalizzato. (NEO-10896)
 * È stato risolto un problema che causava errori durante l&#39;utilizzo dell&#39;impostazione useVault con Teradata. (NEO-11399)
-* È stato risolto un problema che causava l&#39;arresto anomalo della console client Adobe Campaign durante l&#39;eliminazione di più righe di query. (NEO-10744)
+* È stato risolto un problema che causava l&#39;arresto anomalo della console client Adobe Campaign  durante l&#39;eliminazione di più righe di query. (NEO-10744)
 * È stato risolto un problema che impediva l&#39;applicazione delle regole di pressione in alcuni casi durante la consegna della posta diretta. (NEO-9004)
 * È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;attività di caricamento dei dati per importare una colonna con il tipo di dati &quot;ora&quot;: il separatore di tempo viene reimpostato anche dopo la rimozione. (NEO-10743)
 * È stato risolto un problema che impediva la visualizzazione della cartella Consegne dall&#39;elenco delle cartelle Esecuzione nelle proprietà Consegna durante la modifica di un recapito periodico. (NEO-11094)
