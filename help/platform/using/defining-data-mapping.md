@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d2758b5e81d1720a4f01a610e51c4a33995d88d1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
 
-# Definizione del mapping dei dati {#defining-data-mapping}
+# Definizione della mappatura dei dati {#defining-data-mapping}
 
-Adobe Campaign consente di definire la mappatura dei dati in una tabella esterna.
+ Adobe Campaign consente di definire la mappatura dei dati in una tabella esterna.
 
 A tal fine, una volta creato lo schema della tabella esterna, è necessario creare una nuova mappatura di consegna per utilizzare i dati in questa tabella come destinazione di consegna.
 
