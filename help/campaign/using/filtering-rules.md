@@ -11,11 +11,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 3%
@@ -29,7 +26,7 @@ Le regole di filtro consentono di definire i messaggi da escludere in base ai cr
 
 Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie o raggruppate in una specifica tipologia di **filtro** . Per ulteriori informazioni, vedere [Creazione e utilizzo di una tipologia](#creating-and-using-a-filtering-typology)di filtro.
 
-## Creazione di una regola di filtro {#creating-a-filtering-rule}
+## Creating a filtering rule {#creating-a-filtering-rule}
 
 Ad esempio, potete filtrare gli utenti iscritti alla newsletter in modo da impedire l’invio di comunicazioni ai destinatari minorenni.
 
@@ -96,7 +93,7 @@ Potete anche collegare le regole di filtro direttamente tramite questa scheda, s
 
 Per impostazione predefinita sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l&#39;analisi delle e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio vietati contenuti in un elenco di soppressione globale crittografato gestito nell&#39;istanza di recapito. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
 
-Questo per evitare di essere aggiunto all&#39;elenco dei blocchi a causa di attività dannose, in particolare l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviato un messaggio e-mail di conferma a tale Spamtrap, con l&#39;aggiunta automatica dell&#39;indirizzo all&#39;elenco dei blocchi.
+Questo per evitare di essere aggiunti al elenco Bloccati  a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviato un messaggio e-mail di conferma a tale Spamtrap, con l&#39;aggiunta automatica dell&#39;indirizzo al elenco Bloccati .
 
 >[!NOTE]
 >
