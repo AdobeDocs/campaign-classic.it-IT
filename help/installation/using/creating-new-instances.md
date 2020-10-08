@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: ba9c8e4c-441b-4422-a465-758771025ee8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 14%
 
 ---
 
 
 # Creazione di nuove istanze{#creating-new-instances}
 
-Dopo aver installato Adobe Campaign e creato l&#39;istanza, puoi aggiungere una nuova istanza dalla console. Questa modalità di creazione consente di creare istanze di tracciamento senza accedere alla console.
+Una volta installato  Adobe Campaign e creata l’istanza, potete aggiungere una nuova istanza dalla console. Questa modalità di creazione consente di creare istanze di tracciamento senza accedere alla console.
 
 A tal fine, accedete a un database esistente e eseguite i seguenti passaggi:
 
