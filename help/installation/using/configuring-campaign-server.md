@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3593'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -37,7 +34,7 @@ Per ulteriori informazioni, consultare le sezioni seguenti:
 
 * [Documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
-* [Matrice di funzionalità Campaign Classic locale e ospitata](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html)
+* [Matrice di funzionalità Campaign Classic locale e ospitata](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Procedura](../../installation/using/about-hybrid-and-hosted-models.md) di configurazione per modelli ibridi ed ospitati )
 
 I file di configurazione Campaign Classic sono memorizzati nella cartella **conf** della cartella di installazione Adobe Campaign . La configurazione è suddivisa in due file:
@@ -558,7 +555,7 @@ Potete scegliere di imporre l&#39;esecuzione di un flusso di lavoro o di un&#39;
 
    L&#39;elenco a discesa contiene le affinità precedentemente utilizzate. Viene completato nel tempo con i diversi valori inseriti.
 
-1. Aprite il file **nl6/conf/config-`<instance>.xml`**.
+1. Aprite il file **nl6/conf/config-`<instance>.xml`** .
 1. Modificate la linea che corrisponde al **[!UICONTROL wfserver]** modulo come segue:
 
    ```
