@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Per creare un&#39;offerta, effettuate le seguenti operazioni:
 
    ![](assets/offer_create_001.png)
 
-1. Fate clic sul **[!UICONTROL Create]** pulsante.
+1. Fai clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/offer_create_005.png)
 
@@ -62,7 +62,7 @@ Al di fuori di queste date, l&#39;offerta non sarà selezionata dal motore di in
 
 Potete applicare filtri alla destinazione dell’offerta.
 
-A questo scopo, fate clic sul **[!UICONTROL Edit query]** collegamento e selezionate il filtro da applicare. (Fare riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+A questo scopo, fate clic sul **[!UICONTROL Edit query]** collegamento e selezionate il filtro da applicare. (Fai riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -84,7 +84,7 @@ Ad esempio, un&#39;offerta può avere un peso di A per i contatti tra i 18 e i 2
 
 Per creare un fattore di ponderazione in un’offerta, effettuate le seguenti operazioni:
 
-1. Clic **[!UICONTROL Add]**.
+1. Fai clic su **[!UICONTROL Add]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -108,7 +108,7 @@ Per creare un fattore di ponderazione in un’offerta, effettuate le seguenti op
 
    ![](assets/offer_weight_create_004.png)
 
-1. Fare clic **[!UICONTROL OK]** per salvare lo spessore.
+1. Click **[!UICONTROL OK]** to save the weight.
 
    ![](assets/offer_weight_create_005.png)
 
@@ -116,7 +116,7 @@ Per creare un fattore di ponderazione in un’offerta, effettuate le seguenti op
    >
    >Se una destinazione è idonea per più pesi per un&#39;offerta selezionata, il motore mantiene il peso massimo (massimo). Quando si richiama il motore delle offerte, viene selezionata un&#39;offerta al massimo una volta per ogni contatto.
 
-### Riepilogo delle regole di idoneità per le offerte {#a-summary-of-offer-eligibility-rules}
+### Un riepilogo delle regole di idoneità per le offerte {#a-summary-of-offer-eligibility-rules}
 
 Una volta completata la configurazione, un riepilogo delle regole di idoneità sarà disponibile nel dashboard delle offerte.
 
@@ -164,9 +164,9 @@ Per visualizzarlo, fare clic sul **[!UICONTROL Schedule and eligibility rules]**
 
 ## Anteprima dell’offerta {#previewing-the-offer}
 
-Una volta configurato il contenuto dell&#39;offerta, potete visualizzare l&#39;anteprima dell&#39;offerta così come apparirà per il destinatario. Per eseguire questa operazione:
+Non appena il contenuto dell&#39;offerta è configurato, potete visualizzare l&#39;anteprima dell&#39;offerta così come apparirà per il destinatario. Per eseguire questa operazione:
 
-1.  Fate clic sulla **[!UICONTROL Preview]** scheda.
+1. Fate clic sulla **[!UICONTROL Preview]** scheda.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -184,7 +184,7 @@ Potete creare ipotesi sulle proposte di offerta. Questo consente di determinare 
 
 >[!NOTE]
 >
->Queste ipotesi vengono eseguite tramite Response Manager. Controllare il contratto di licenza.
+>Queste ipotesi vengono eseguite tramite Response Manager. Controlla il contratto di licenza.
 
 Le ipotesi eseguite su una proposta di offerta sono indicate nella relativa **[!UICONTROL Measure]** scheda.
 
