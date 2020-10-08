@@ -1,7 +1,7 @@
 ---
-title: Interfaccia editor di contenuti
-seo-title: Interfaccia editor di contenuti
-description: Interfaccia editor di contenuti
+title: Interfaccia dell’editor di contenuti
+seo-title: Interfaccia dell’editor di contenuti
+description: Interfaccia dell’editor di contenuti
 seo-description: null
 page-status-flag: never-activated
 uuid: b108ea74-ae2c-4e47-bee8-12070927ba89
@@ -12,16 +12,16 @@ content-type: reference
 topic-tags: editing-html-content
 dc-title: </strong> and
 discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
 
-# Interfaccia editor di contenuti{#content-editor-interface}
+# Interfaccia dell’editor di contenuti{#content-editor-interface}
 
 ## Finestra di modifica {#editing-window}
 
@@ -30,7 +30,7 @@ La finestra di modifica DCE è suddivisa in tre diverse sezioni. Consentono di v
 ![](assets/dce_decoupe_window_nb.png)
 
 1. La sezione **superiore** è un&#39;area di visualizzazione per i messaggi all&#39;utente. Questi messaggi indicano lo stato dell&#39;applicazione Web o la consegna in fase di creazione, nonché gli avvisi e i messaggi di errore relativi al contenuto. Per ulteriori informazioni, consultate gli stati del contenuto [HTML](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. La sezione a **sinistra** della finestra è l’area da cui modificare il contenuto. Da questa area, l&#39;utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti a comparsa: inserire un collegamento in un&#39;immagine, modificare il font, eliminare un campo e così via. Per ulteriori informazioni, vedere [Modifica dei moduli](../../web/using/editing-content.md#editing-forms).
+1. La sezione a **sinistra** della finestra è l’area da cui modificare il contenuto. Da questa area, l&#39;utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti a comparsa: inserire un collegamento in un&#39;immagine, modificare il font, eliminare un campo e così via. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
 1. La sezione a **destra** della finestra è l&#39;area del pannello di controllo. Quest&#39;area raggruppa le diverse opzioni per l&#39;editor, in particolare quelle relative alla configurazione dell&#39;intestazione di pagina e delle opzioni generali per un blocco: aggiungere un bordo, collegare un campo di database con un&#39;area di input, accedere alle proprietà della pagina Web, ecc. Per ulteriori informazioni, consultare le sezioni Opzioni [](#global-options) globali e [Modifica del contenuto](../../web/using/editing-content.md) .
 
 ## Opzioni globali {#global-options}
@@ -45,7 +45,7 @@ Sono disponibili quattro icone:
 
 * L&#39;icona **Visualizza/Nascondi blocchi** consente di visualizzare cornici blu intorno ai blocchi di contenuto (corrispondenti al tag `<div>` HTML).
 
-* L’icona **Scegli altro contenuto** consente all’utente di caricare nuovo contenuto da un modello (modello esistente o modello out-of-the-box).
+* L’icona **Scegli un altro contenuto** consente all’utente di caricare nuovo contenuto da un modello (modello esistente o modello out-of-the-box).
 
    ![](assets/dce_popup_templatechoice.png)
 
@@ -77,7 +77,7 @@ La sezione a destra dell’editor raggruppa le opzioni principali che consentono
 
 ![](assets/dce_right_section.png)
 
-È possibile:
+Puoi:
 
 * Determinare la visualizzazione di uno o più blocchi, fare riferimento a [Definizione di una condizione](../../web/using/editing-content.md#defining-a-visibility-condition)di visibilità,
 * Definire bordi e cornici, fare riferimento a [Aggiunta di un bordo e di uno sfondo](../../web/using/editing-content.md#adding-a-border-and-background),
@@ -92,5 +92,5 @@ La barra degli strumenti è un elemento **a** comparsa dell&#39;interfaccia DCE 
 
 >[!CAUTION]
 >
->Alcune funzioni della barra degli strumenti consentono di formattare il contenuto HTML. Tuttavia, se la pagina contiene un foglio di stile CSS, le **istruzioni** del foglio di stile potrebbero assumere la **priorità** rispetto alle istruzioni specificate nella barra degli strumenti.
+>Alcune funzioni della barra degli strumenti ti consentono di formattare il contenuto HTML. However, if the page contains a CSS style sheet, the **instructions** from the style sheet may prove to take **priority** over the instructions specified with the toolbar.
 
