@@ -11,18 +11,18 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
 
 
 # Creazione del modello di messaggio{#creating-the-message-template}
 
-1. Vai alla **[!UICONTROL Message Center >Transactional message templates]** cartella nella struttura di Adobe Campaign.
+1. Passate alla **[!UICONTROL Message Center >Transactional message templates]** cartella nella struttura di Adobe Campaign .
 1. Nell&#39;elenco dei modelli per messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa o fai clic sul **[!UICONTROL New]** pulsante sopra l&#39;elenco dei modelli per messaggi transazionali.
 
    ![](assets/messagecenter_create_model_001.png)
@@ -32,7 +32,7 @@ source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
    ![](assets/messagecenter_create_model_002.png)
 
 1. Se necessario, cambiate l’etichetta.
-1. Selezionate il tipo di evento che corrisponde al messaggio da inviare.
+1. Selezionare il tipo di evento che corrisponde al messaggio che si desidera inviare.
 
    ![](assets/messagecenter_create_model_003.png)
 
