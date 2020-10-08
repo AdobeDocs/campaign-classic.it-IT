@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 discoiquuid: 22e289d0-c33c-4daa-a893-b292e523f30b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
@@ -30,13 +30,13 @@ Il modello di consegna può essere eseguito manualmente, come descritto in quest
 
 Esistono due tipi di modello:
 
-1. Modelli di consegna nativa di Adobe Campaign
+1.  modelli di distribuzione nativa Adobe Campaign
 
    I modelli nativi NON DEVONO ESSERE ELIMINATI DAL SISTEMA. Includono una configurazione minima per ogni canale di consegna. Tuttavia, l&#39;amministratore può limitare determinate funzioni o offrire valori predefiniti agli utenti (tracciamento dell&#39;attivazione, indirizzi e-mail del mittente, ecc.). Gli scenari nativi vengono visualizzati in grassetto nell’elenco dei modelli. Devono essere duplicati per modificarli.
 
 1. Modelli di consegna predefiniti
 
-   L&#39;amministratore di Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (quelli con diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, potete configurare un modello per la consegna delle e-mail; quando l&#39;utente crea una consegna utilizzando questo modello, deve semplicemente immettere il testo o il contenuto HTML e quindi distribuirla; le altre scelte sono già state definite dall&#39;amministratore.
+   L&#39;amministratore  Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (quelli con diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, potete configurare un modello per la consegna delle e-mail; quando l&#39;utente crea una consegna utilizzando questo modello, deve semplicemente immettere il testo o il contenuto HTML e quindi distribuirla; le altre scelte sono già state definite dall&#39;amministratore.
 
 >[!NOTE]
 >
