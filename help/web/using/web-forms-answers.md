@@ -1,7 +1,7 @@
 ---
-title: Risposte ai moduli Web
-seo-title: Risposte ai moduli Web
-description: Risposte ai moduli Web
+title: Risposte ai moduli web
+seo-title: Risposte ai moduli web
+description: Risposte ai moduli web
 seo-description: null
 page-status-flag: never-activated
 uuid: 374df070-8969-4bf6-bd24-0b827d38593f
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 1%
 
 ---
 
 
-# Risposte ai moduli Web{#web-forms-answers}
+# Risposte ai moduli web{#web-forms-answers}
 
 ## Campi di memorizzazione di risposta {#response-storage-fields}
 
@@ -124,7 +124,7 @@ Questa casella può essere utilizzata in due modi:
 
 * Se l&#39;accesso al modulo Web è effettuato tramite un collegamento inviato tramite e-mail e se l&#39;utente che accede all&#39;applicazione è già presente nel database, è possibile selezionare l&#39; **[!UICONTROL Update the preloaded record]** opzione. Per ulteriori informazioni, vedere [Distribuzione di un modulo tramite e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. È necessario configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, vedere [Precaricamento dei dati](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)del modulo.
+   In questo caso,  Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da  Adobe Campaign. È necessario configurare le informazioni per il precaricamento tramite la casella di precaricamento. Per ulteriori informazioni, vedere [Precaricamento dei dati](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)del modulo.
 
    >[!CAUTION]
    >
@@ -136,7 +136,7 @@ Questa casella può essere utilizzata in due modi:
 
 Per impostazione predefinita, i dati vengono importati nel database tramite un&#39; **[!UICONTROL Update or insertion]** operazione: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail immesso). Se non esiste, le informazioni vengono aggiunte.
 
-Potete tuttavia modificare questo comportamento. A questo scopo, selezionate la radice dell&#39;elemento e l&#39;operazione da eseguire dall&#39;elenco a discesa:
+Potete tuttavia modificare questo comportamento. A questo scopo, selezionate la radice dell&#39;elemento e selezionate l&#39;operazione da eseguire dall&#39;elenco a discesa:
 
 ![](assets/s_ncs_admin_survey_save_operation.png)
 
@@ -146,5 +146,5 @@ Potete selezionare una cartella di ricerca per la riconciliazione e la cartella 
 >
 >Le operazioni possibili sono: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
 >La cartella predefinita dell&#39;operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;autorizzazione di scrittura.\
->Fare riferimento a [questa sezione](../../platform/using/access-management.md).
+>Fai riferimento a [questa sezione](../../platform/using/access-management.md).
 
