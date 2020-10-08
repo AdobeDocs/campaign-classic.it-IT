@@ -11,20 +11,20 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 
 # Creazione di un sondaggio{#building-a-survey}
 
-## Creazione di un nuovo sondaggio {#creating-a-new-survey}
+## Creating a new survey {#creating-a-new-survey}
 
-Questo capitolo descrive la progettazione di un modulo di tipo **Sondaggio** con Adobe Campaign, nonché le opzioni e le configurazioni disponibili. Adobe Campaign consente di rendere questo sondaggio disponibile agli utenti e di raccogliere e archiviare le risposte nel database.
+Questo capitolo descrive la progettazione di un modulo di tipo **Sondaggio** utilizzando  Adobe Campaign, nonché le opzioni e le configurazioni disponibili.  Adobe Campaign consente di rendere questo sondaggio disponibile agli utenti e di raccogliere e archiviare le risposte nel database.
 
 I moduli Web sono accessibili tramite il **[!UICONTROL Resources > Online > Web applications]** nodo della struttura ad albero. Per creare un sondaggio, fate clic sul **[!UICONTROL New]** pulsante sopra l’elenco delle applicazioni oppure fate clic con il pulsante destro del mouse sull’elenco e scegliete **[!UICONTROL New]**.
 
@@ -96,7 +96,7 @@ Inoltre, il percorso di memorizzazione per questo campo di input deve essere un 
 >[!CAUTION]
 >
 >* Questa funzionalità è disponibile solo per i moduli di tipo **Sondaggio** .
->* Questa opzione non è compatibile con la visualizzazione casuale delle domande. Per ulteriori informazioni, vedere [Aggiunta di domande](#adding-questions).
+>* Questa opzione non è compatibile con la visualizzazione casuale delle domande. For more on this, refer to [Adding questions](#adding-questions).
 
 
 ### Aggiunta di domande {#adding-questions}
@@ -129,7 +129,7 @@ Nell’esempio precedente, il rendering sarà il seguente:
 >
 >Ogni domanda ha un contenitore di tipo **Domanda** .
 
-Puoi abilitare il disegno casuale delle domande da parte di Adobe Campaign. È quindi possibile specificare il numero di domande da visualizzare nella pagina, nel campo situato nella parte inferiore della finestra di configurazione.
+Potete attivare il disegno casuale delle domande da parte di  Adobe Campaign. È quindi possibile specificare il numero di domande da visualizzare nella pagina, nel campo situato nella parte inferiore della finestra di configurazione.
 
 ![](assets/s_ncs_admin_survey_containers_qu_display.png)
 
