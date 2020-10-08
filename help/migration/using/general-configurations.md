@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 0%
@@ -92,9 +89,9 @@ Per verificare se entrambi i lati si trovano negli stessi fusi orari:
 
 >[!IMPORTANT]
 >
->Per motivi di sicurezza, la piattaforma di Adobe Campaign  non è più accessibile per impostazione predefinita: è necessario configurare le aree di protezione e quindi raccogliere gli indirizzi IP dell&#39;operatore.
+>Per motivi di sicurezza, la piattaforma Adobe Campaign  non è più accessibile per impostazione predefinita: è necessario configurare le aree di protezione e quindi raccogliere gli indirizzi IP dell&#39;operatore.
 
- Adobe Campaign v7 riguarda il concetto di zone **di** sicurezza. Ogni utente deve essere associato a una zona per accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;utente deve essere incluso negli indirizzi o negli intervalli di indirizzi definiti nella zona di protezione. È possibile configurare le aree di protezione nel file di configurazione del server di Adobe Campaign . La zona di protezione a cui è associato un utente deve essere definita nella console (**[!UICONTROL Administration > Access management > Operators]**).
+ Adobe Campaign v7 prevede il concetto di zone **di** sicurezza. Ogni utente deve essere associato a una zona per accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;utente deve essere incluso negli indirizzi o negli intervalli di indirizzi definiti nella zona di protezione. È possibile configurare le aree di protezione nel file di configurazione  server Adobe Campaign. La zona di protezione a cui è associato un utente deve essere definita nella console (**[!UICONTROL Administration > Access management > Operators]**).
 
 **Prima della migrazione**, chiedi all’amministratore di rete di aiutarti a definire le zone di sicurezza da attivare dopo la migrazione.
 
@@ -206,7 +203,7 @@ Ad esempio:
 
 La **[!UICONTROL myObject.@attribute]** sintassi ora è valida solo per gli oggetti XML. Questa sintassi può essere utilizzata per personalizzare le consegne e la gestione dei contenuti. Se avete utilizzato questo tipo di sintassi su un oggetto non XML, le funzioni di personalizzazione non funzioneranno più.
 
-Per tutti gli altri tipi di oggetto, la sintassi è ora **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ad esempio, un oggetto non XML che utilizzava la sintassi seguente:**[!UICONTROL employee.@sn]**, deve ora usare la sintassi seguente:**[!UICONTROL employee`[`&quot;Sn&quot;`]`]**.
+Per tutti gli altri tipi di oggetto, la sintassi è ora **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Ad esempio, un oggetto non XML che utilizzava la sintassi seguente: **[!UICONTROL employee.@sn]**, deve ora usare la sintassi seguente: **[!UICONTROL employee`[`&quot;Sn&quot;`]`]**.
 
 * Sintassi precedente:
 
@@ -254,7 +251,7 @@ Non è più possibile utilizzare un attributo XML come chiave di tabella.
 
 ### SQLData {#sqldata}
 
-Per rafforzare la sicurezza dell&#39;istanza, nell&#39;Adobe Campaign v7 è stata introdotta una nuova sintassi che sostituisce la sintassi basata su SQLData. Se utilizzate questi elementi di codice con questa sintassi, dovete modificarli. I principali elementi in questione sono:
+Per rafforzare la sicurezza dell’istanza, in  Adobe Campaign v7 è stata introdotta una nuova sintassi che sostituisce la sintassi basata su SQLData. Se utilizzate questi elementi di codice con questa sintassi, dovete modificarli. I principali elementi in questione sono:
 
 * Filtraggio per sottoquery: la nuova sintassi si basa sull&#39; `<subQuery>` elemento per definire una sottoquery
 * Aggregati: la nuova sintassi è &quot;funzione di aggregazione(raccolta)&quot;
@@ -268,7 +265,7 @@ Lo schema queryDef (xtk:queryDef) è stato modificato:
 
 Quando si utilizza un attributo &quot;@expr&quot;, è possibile che sia presente SQLData. È possibile eseguire una ricerca per i seguenti termini: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
- Adobe Campaign v7 le istanze sono protette per impostazione predefinita. La sicurezza viene in termini di definizioni delle zone di protezione nel **[!UICONTROL serverConf.xml]** file: l&#39;attributo **allowSQLInjection** gestisce la protezione della sintassi SQL.
+ le istanze di Adobe Campaign v7 sono protette per impostazione predefinita. La sicurezza viene in termini di definizioni delle zone di protezione nel **[!UICONTROL serverConf.xml]** file: l&#39;attributo **allowSQLInjection** gestisce la protezione della sintassi SQL.
 
 Se si verifica un errore SQLData durante l&#39;esecuzione post-aggiornamento, è necessario modificare questo attributo per consentire temporaneamente l&#39;utilizzo di sintassi basate su SQLData, consentendo di riscrivere il codice. Per eseguire questa operazione, è necessario modificare l&#39;opzione seguente nel file **serverConf.xml** :
 
@@ -481,7 +478,7 @@ Se scegliete di risolvere manualmente il conflitto, procedete come segue:
 
 ## Tomcat {#tomcat}
 
-Il server Tomcat integrato nel  Adobe Campaign v7 ha modificato la versione (Tomcat 7). Anche la sua cartella di installazione (tomcat-6) è cambiata (tomcat 7). Dopo l&#39;aggiornamento, accertatevi che i percorsi colleghino alla cartella aggiornata (nel **[!UICONTROL serverConf.xml]** file):
+Il server Tomcat integrato in  Adobe Campaign v7 ha modificato la versione (Tomcat 7). Anche la sua cartella di installazione (tomcat-6) è cambiata (tomcat 7). Dopo l&#39;aggiornamento, accertatevi che i percorsi colleghino alla cartella aggiornata (nel **[!UICONTROL serverConf.xml]** file):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar 
@@ -497,7 +494,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 ### Prerequisiti {#prerequisites}
 
-**Prima dell’aggiornamento** successivo, è necessario eliminare tutti i riferimenti allo schema dalla versione 6.02 che non saranno più presenti nella versione v7.
+**Prima dell&#39;aggiornamento** successivo, è necessario eliminare tutti i riferimenti allo schema dalla versione 6.02 che non saranno più presenti nella versione v7.
 
 * nms:emailOfferView
 * nms:webOfferView
@@ -512,7 +509,7 @@ In v7, il contenuto dell’offerta è stato spostato. In v6.02 il contenuto era 
 >[!IMPORTANT]
 Se alcune consegne che utilizzano offerte configurate devono essere inviate dopo la migrazione, dovete eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non si desidera utilizzare tutte le nuove funzioni di Interaction v7. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per maggiori informazioni su questa modalità, contattateci.
 
-Un esempio di script di movimento (**interactiveTo610_full_XX.js**) è disponibile nella cartella **Migration** all’interno della cartella  Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (i **[!UICONTROL htmlSource]** campi e **[!UICONTROL textSource]** ). Il contenuto presente nella tabella **NmsEmailOfferView** è stato spostato nella tabella delle offerte.
+Un esempio di script di movimento (**interactiveTo610_full_XX.js**) è disponibile nella cartella **Migrazione** all’interno della cartella  Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (i **[!UICONTROL htmlSource]** campi e **[!UICONTROL textSource]** ). Il contenuto presente nella tabella **NmsEmailOfferView** è stato spostato nella tabella delle offerte.
 
 >[!NOTE]
 L&#39;utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; e &quot;rendering delle funzioni&quot;. Per beneficiare di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
@@ -630,7 +627,7 @@ Se desiderate avere il banner blu dalla release v7 (che consenta di accedere agl
 
 Se desiderate beneficiare delle nuove funzionalità del rapporto, dovete selezionare il motore di rendering v.6.x. In questo caso, controllare tutti gli script e modificarli se necessario. Per quanto riguarda l&#39;esportazione PDF, se avevate aggiunto script specifici per OpenOffice, questo non funzionerà più con il nuovo motore di esportazione PDF (PhantomJS).
 
-## Applicazioni Web {#web-applications}
+## Applicazioni web {#web-applications}
 
 Esistono due famiglie di applicazioni Web:
 
