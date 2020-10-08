@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1350'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ In questo caso di utilizzo, confronteremo due contenuti di distribuzione delle e
 
 La popolazione interessata è divisa in tre parti: due gruppi di test e la popolazione rimanente. A ogni gruppo di test viene inviata una versione diversa della consegna. Dopo la consegna, viene configurato un periodo di attesa di 5 giorni prima di raccogliere i risultati delle migliori tariffe aperte. Il contenuto della distribuzione con il punteggio più alto viene quindi recuperato da uno script e inviato alla popolazione che non è stata utilizzata come gruppo di test.
 
-Si prega di notare che i criteri che decideranno quale consegna è migliore possono essere modificati per soddisfare le vostre esigenze. Può trattarsi del tasso aperto, del tasso di click-through, del tasso di sottoscrizione, della reattività, ecc.
+Si prega di notare che i criteri che decideranno quale consegna è migliore possono essere modificati per soddisfare le vostre esigenze. Può trattarsi del tasso di apertura, del tasso di click-through, del tasso di sottoscrizione, della reattività, ecc.
 
 Inoltre, il test dettagliato in questo caso d&#39;uso riguarda solo due consegne, ma potete testare tutte le versioni necessarie. È sufficiente aggiungere attività al flusso di lavoro.
 
@@ -42,7 +42,7 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 * [Passaggio 7: Avvio del flusso di lavoro](#step-7--starting-the-workflow)
 * [Passaggio 8: Analisi del risultato](#step-8--analyzing-the-result).
 
-## Passaggio 1: Creazione di un flusso di lavoro di targeting {#step-1--creating-a-targeting-workflow}
+## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
 
 È necessario creare il flusso di lavoro nella **[!UICONTROL Targeting and Workflows]** scheda di una campagna. È composta da un&#39; **[!UICONTROL Query]** attività, un&#39; **[!UICONTROL Split]** attività collegata a due **[!UICONTROL Email delivery]** attività, un&#39; **[!UICONTROL Wait]** attività, un&#39; **[!UICONTROL JavaScript code]** attività e un&#39; **[!UICONTROL Delivery]** attività.
 
@@ -50,7 +50,7 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Vai alla **[!UICONTROL Targeting and Workflows]** scheda.
+1. Vai alla scheda **[!UICONTROL Targeting and Workflows]**. 
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
@@ -66,7 +66,7 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 
 ### Configurazione dell&#39;attività Query {#configuring-the-query-activity}
 
-* Fate doppio clic sull&#39; **[!UICONTROL Query]** attività.
+* Double-click the **[!UICONTROL Query]** activity.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
@@ -84,7 +84,7 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
 1. Creazione popolazione A:
 
-   * Fate doppio clic sull&#39; **[!UICONTROL Split]** attività.
+   * Double-click the **[!UICONTROL Split]** activity.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -116,11 +116,11 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
 1. Creazione della popolazione rimanente:
 
-   * Vai alla **[!UICONTROL General]** scheda.
+   * Vai alla scheda **[!UICONTROL General]**. 
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
-   * Selezionare **[!UICONTROL Generate complement]**.
+   * Seleziona **[!UICONTROL Generate complement]**.
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
@@ -130,9 +130,9 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
 ## Passaggio 3: Creazione di due modelli di consegna {#step-3--creating-two-delivery-templates}
 
-Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39; **[!UICONTROL Email delivery]** attività collegata all&#39; **[!UICONTROL Split]** attività. For more on this, refer to this [section](../../delivery/using/about-templates.md).
+Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39; **[!UICONTROL Email delivery]** attività collegata all&#39; **[!UICONTROL Split]** attività. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
 
-1. Andate alla **[!UICONTROL Resources > Delivery template]** cartella.
+1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
 1. Duplica il modello di **[!UICONTROL Email]** consegna.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -147,14 +147,14 @@ Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferim
 
 ## Passaggio 4: Configurazione delle consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Il passo successivo consiste nel configurare le consegne. Sono destinati alle tre popolazioni create durante la fase precedente: Passaggio [2: Configurazione dei campioni](#step-2--configuring-population-samples)di popolazione. Le prime due consegne consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è destinata alla popolazione che non ha ricevuto né A né B. Il contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale dei due avrà ottenuto il punteggio più alto. Dobbiamo configurare un periodo di attesa per la terza consegna, per conoscere il risultato delle consegne A e B. Per questo motivo la terza consegna include un&#39; **[!UICONTROL Wait]** attività.
+Il passo successivo consiste nel configurare le consegne. Sono destinati alle tre popolazioni create nella fase precedente: [Passaggio 2: Configurazione dei campioni](#step-2--configuring-population-samples)di popolazione. Le prime due consegne consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è destinata alla popolazione che non ha ricevuto né A né B. Il contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale dei due avrà ottenuto il punteggio più alto. Dobbiamo configurare un periodo di attesa per la terza consegna, per conoscere il risultato delle consegne A e B. Per questo motivo la terza consegna include un&#39; **[!UICONTROL Wait]** attività.
 
 1. Andate all&#39; **[!UICONTROL Split]** attività e collegate la transizione per la popolazione A a una delle consegne di e-mail già presenti nel flusso di lavoro.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
 1. Fate doppio clic sulla consegna per aprirla.
-1. Dall&#39;elenco a discesa, selezionate il modello per la consegna A.
+1. Utilizzando l&#39;elenco a discesa, selezionate il modello per la consegna A.
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
@@ -188,7 +188,7 @@ La scelta del contenuto di distribuzione destinato alla popolazione rimanente vi
 
 ### Esempio di script {#example-of-a-script}
 
-Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting. Per ulteriori informazioni, consulta [Implementazione](#implementation).
+Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting. For more on this, refer to [Implementation](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -331,7 +331,7 @@ L&#39;esempio precedente consente di selezionare il contenuto di una consegna in
 
 * Velocità effettiva clic ottimale: `[indicators/@recipientClickRatio]`,
 * Velocità di reattività più elevata (apertura e clic dell’e-mail nel messaggio): `[indicators/@reactivity]`,
-* Tasso minimo di reclamo: `[indicators/@refusedRatio]` (utilizzate il valore false per l&#39;attributo sortDesc),
+* Tasso di reclamo più basso: `[indicators/@refusedRatio]` (utilizzate il valore false per l&#39;attributo sortDesc),
 * Tasso di conversione più elevato: `[indicators/@transactionRatio]`,
 * Numero di pagine visitate dopo la ricezione di un messaggio: `[indicators/@totalWebPage]`,
 * Tasso di annullamento sottoscrizione inferiore: `[indicators/@optOutRatio]`,
@@ -358,7 +358,7 @@ Preparando la consegna specificata nella transizione (definita tramite l&#39; **
 
 1. Approvare target e contenuti per le consegne A e B tramite il dashboard della campagna.
 1. Conferma la consegna.
-1. Attendere fino alla fine del periodo di 5 giorni per scoprire quale contenuto è stato calcolato dopo i risultati dell&#39;apertura della consegna.
+1. Attendete fino alla fine del periodo di 5 giorni per scoprire quale contenuto è stato calcolato dopo i risultati dell&#39;apertura della consegna.
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 
@@ -370,7 +370,7 @@ Preparando la consegna specificata nella transizione (definita tramite l&#39; **
 
 Una volta inviate le consegne di test, potete verificare a quali destinatari sono stati inviati e se sono stati aperti o meno.
 
-* Per scoprire quali destinatari sono stati assegnati, aprite una consegna tramite il dashboard della campagna e fate clic sulla **[!UICONTROL Delivery]** scheda.
+* Per scoprire quali destinatari sono stati assegnati, aprite un invio tramite il dashboard della campagna e fate clic sulla **[!UICONTROL Delivery]** scheda.
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
