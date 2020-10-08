@@ -1,7 +1,7 @@
 ---
-title: Gestione degli indirizzi iniziali nei messaggi transazionali
-seo-title: Gestione degli indirizzi iniziali nei messaggi transazionali
-description: Gestione degli indirizzi iniziali nei messaggi transazionali
+title: Gestione degli indirizzi di seed nei messaggi transazionali
+seo-title: Gestione degli indirizzi di seed nei messaggi transazionali
+description: Gestione degli indirizzi di seed nei messaggi transazionali
 seo-description: null
 page-status-flag: never-activated
 uuid: 51c4e79d-53bb-4d46-9c7d-e90066f5317d
@@ -11,22 +11,22 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
 
-# Gestione degli indirizzi iniziali nei messaggi transazionali{#managing-seed-addresses-in-transactional-messages}
+# Gestione degli indirizzi di seed nei messaggi transazionali{#managing-seed-addresses-in-transactional-messages}
 
-Un indirizzo e-mail consente di visualizzare un&#39;anteprima del messaggio, inviare una prova e testare la personalizzazione dei messaggi prima dell&#39;invio tramite e-mail o SMS. Gli indirizzi dei semi sono collegati alla consegna e non possono essere utilizzati per altre consegne.
+L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, inviare una prova e testare la personalizzazione dei messaggi prima dell&#39;invio tramite e-mail o SMS. Gli indirizzi dei semi sono collegati alla consegna e non possono essere utilizzati per altre consegne.
 
 ## Creazione di un indirizzo e-mail {#creating-a-seed-address}
 
-1. Nel modello di messaggio transazionale, fai clic sulla **[!UICONTROL Seed addresses]** scheda.
+1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -38,7 +38,7 @@ Un indirizzo e-mail consente di visualizzare un&#39;anteprima del messaggio, inv
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Immettere l&#39;identificatore esterno: questo campo facoltativo consente di inserire una chiave aziendale (ID univoco, nome + e-mail, ecc.) comune a tutte le applicazioni presenti sul sito Web, utilizzate per identificare i profili. Se questo campo è presente anche nel database di marketing di Adobe Campaign, puoi quindi riconciliare un evento con un profilo presente nel database.
+1. Immettere l&#39;identificatore esterno: questo campo facoltativo consente di inserire una chiave aziendale (ID univoco, nome + e-mail, ecc.) comune a tutte le applicazioni presenti sul sito Web, utilizzate per identificare i profili. Se questo campo è presente anche nel  database di marketing di Adobe Campaign, potete quindi riconciliare un evento con un profilo presente nel database.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
