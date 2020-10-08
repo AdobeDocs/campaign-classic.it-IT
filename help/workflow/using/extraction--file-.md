@@ -1,5 +1,5 @@
 ---
-title: Estrazione dei dati (file)
+title: Estrazione dati (file)
 description: Ulteriori informazioni sull'attività del flusso di lavoro di estrazione dei dati (file).
 page-status-flag: never-activated
 uuid: c1e3fde3-183c-4602-9cef-760e4648fcf7
@@ -9,19 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Estrazione dei dati (file){#extraction-file}
+# Estrazione dati (file){#extraction-file}
 
 Potete estrarre i dati da una tabella di un flusso di lavoro in un file esterno utilizzando l&#39; **[!UICONTROL Data extraction (file)]** attività.
 
@@ -60,7 +57,7 @@ Per ulteriori informazioni, consulta questa sezione: [Estrazione o cifratura di 
 
 ![](assets/postprocessing_dataextraction.png)
 
-## Elenco delle funzioni aggregate {#list-of-aggregate-functions}
+## List of aggregate functions {#list-of-aggregate-functions}
 
 Di seguito è riportato un elenco delle funzioni di aggregazione disponibili:
 
