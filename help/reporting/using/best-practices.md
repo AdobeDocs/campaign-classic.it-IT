@@ -1,7 +1,7 @@
 ---
-title: Best practice per la creazione di report
-seo-title: Best practice per la creazione di report
-description: Best practice per la creazione di report
+title: Best practice per il reporting
+seo-title: Best practice per il reporting
+description: Best practice per il reporting
 seo-description: null
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
@@ -11,16 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
 
-# Best practice per la creazione di report{#best-practices-reporting}
+# Best practice per il reporting{#best-practices-reporting}
 
 ## Analisi delle esigenze{#analyzing-needs}
 
@@ -32,7 +32,7 @@ Per ottimizzare la creazione, l&#39;utilizzo e la durata di un rapporto, è nece
 
    Il primo passo è identificare chiaramente la necessità: ciò che desideri mostrare nel tuo rapporto e qual è il suo obiettivo (monitoraggio, analisi, esportazione di dati, ecc.).
 
-   Adobe Campaign offre un&#39;ampia gamma di capacità di reporting. È importante analizzare la necessità di identificare le funzionalità più adatte.
+    Adobe Campaign offre un&#39;ampia gamma di capacità di reporting. È importante analizzare la necessità di identificare le funzionalità più adatte.
 
    Ad esempio, potete:
 
@@ -40,7 +40,7 @@ Per ottimizzare la creazione, l&#39;utilizzo e la durata di un rapporto, è nece
    * Aggiungere indicatori a un rapporto esistente (fare riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Visualizzare i dati nel database (tramite [questa sezione](../../reporting/using/about-descriptive-analysis.md)),
    * Crea un nuovo rapporto sulla consegna (consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](../../workflow/using/about-workflows.md)),
+   * Esportare dati dal database Adobe Campaign  (tramite un flusso di lavoro, fare riferimento a [questa sezione](../../workflow/using/about-workflows.md)),
    * Creare una tabella pivot (fare riferimento a [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)),
    * Esplorare i dati aggregati (tramite [questa sezione](../../reporting/using/about-cubes.md)),
    * Utilizza una procedura guidata per analizzare i dati (tramite [questa sezione](../../reporting/using/about-descriptive-analysis.md)),
@@ -48,23 +48,24 @@ Per ottimizzare la creazione, l&#39;utilizzo e la durata di un rapporto, è nece
 
 1. Identificare la popolazione di destinazione
 
-   Quindi devi scoprire chi sarà il destinatario del rapporto che desideri creare, sapere il tipo di pubblico che lo visualizzerà e la modalità di visualizzazione del rapporto (in un browser, in Adobe Campaign, per un oggetto specifico, per l&#39;intera piattaforma, ecc.).
+   Quindi devi scoprire chi sarà il destinatario del rapporto che desideri creare, sapere il tipo di pubblico che lo visualizzerà e la modalità di visualizzazione del rapporto (in un browser, in  Adobe Campaign, per un oggetto specifico, per l&#39;intera piattaforma, ecc.).
 
    Potete anche creare rapporti per:
 
-   * Tutti gli operatori Adobe Campaign,
+   * Tutti  operatori Adobe Campaign,
    * Operatori con diritti di accesso esclusivamente a una campagna di marketing,
    * un unico operatore per uso temporaneo,
    * Tutti gli operatori in accesso Web, ecc.
+
    Tali considerazioni devono anche tener conto delle questioni connesse ai diritti di accesso e alla sicurezza.
 
 1. Definire il contenuto
 
    È quindi necessario individuare il tipo di dati da visualizzare: indicatori di consegna, rapporti sui profili del database, ecc.
 
-   È inoltre necessario conoscere la natura di questi dati (semplici, risultanti da un calcolo, significativi, ecc.), la sua posizione (in Adobe Campaign, in un sistema di terze parti), la sua frequenza di aggiornamento per definire la periodicità di calcolo (giornaliera, settimanale, on-the-fly), nonché il suo volume.
+   È inoltre necessario conoscere la natura di questi dati (semplici, risultanti da un calcolo, significativi, ecc.), la sua posizione (in  Adobe Campaign, in un sistema di terze parti), la sua frequenza di aggiornamento per definire la periodicità di calcolo (giornaliera, settimanale, on-the-fly), così come il suo volume.
 
-   I problemi legati ai volumi di dati e agli aggiornamenti devono essere esaminati attentamente per evitare problemi di visualizzazione dei report, soprattutto in termini di tempo. È pertanto consigliabile creare aggregati per precalcolare alcuni dati al di fuori del rapporto. Le tabelle contenenti i registri di monitoraggio e consegna possono includere milioni di record: ciò significa che i dati devono essere aggregati tramite un flusso di lavoro da utilizzare in un report.
+   I problemi legati ai volumi di dati e agli aggiornamenti devono essere esaminati attentamente per evitare problemi di visualizzazione dei report, soprattutto in termini di tempo. È pertanto consigliabile creare aggregati per precalcolare alcuni dati al di fuori del rapporto. Le tabelle che contengono i registri di monitoraggio e consegna possono includere milioni di record: ciò significa che i dati devono essere aggregati tramite un flusso di lavoro da utilizzare in un report.
 
 ## Ottimizzazione della creazione dei report{#optimizing-report-creation}
 
@@ -100,11 +101,11 @@ Le query che consentono di raccogliere i dati visualizzati nei rapporti non devo
 
 Le raccomandazioni di cui sopra consentono di ottimizzare il calcolo dei report.
 
-Inoltre, Adobe Campaign consiglia i seguenti miglioramenti:
+Inoltre,  Adobe Campaign consiglia i seguenti miglioramenti:
 
 * Studiare il modello dati: i campi indicizzati devono essere utilizzati principalmente per migliorare le formule di calcolo.
 
-   Per trovare rapidamente un campo indicizzato, cerca il nome della colonna nell&#39;interfaccia di Adobe Campaign: la freccia di ordinamento è sottolineata in rosso se il campo è indicizzato.
+   Per trovare rapidamente un campo indicizzato, osservare il nome della colonna nell’interfaccia Adobe Campaign : la freccia di ordinamento è sottolineata in rosso se il campo è indicizzato.
 
 * Assicurati che il rapporto sia valido a lungo termine: il volume dei dati può aumentare notevolmente nel tempo.
 
@@ -114,4 +115,4 @@ Inoltre, Adobe Campaign consiglia i seguenti miglioramenti:
 
 ### Esportazione dei rapporti {#exporting-reports}
 
-Le raccomandazioni specifiche per l&#39;esportazione dei rapporti sono descritte in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
