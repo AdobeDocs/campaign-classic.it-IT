@@ -1,7 +1,7 @@
 ---
-title: Mappatura destinazione
-seo-title: Mappatura destinazione
-description: Mappatura destinazione
+title: Mappatura del target
+seo-title: Mappatura del target
+description: Mappatura del target
 seo-description: null
 page-status-flag: never-activated
 uuid: a7dad8eb-c191-4f10-b7d8-63e0699603b7
@@ -11,27 +11,27 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ff7e6f72-7605-41ee-b25a-1e4618e674d7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
 
-# Mappatura destinazione{#target-mapping}
+# Mappatura del target{#target-mapping}
 
 La creazione del mapping di destinazione è necessaria in due casi:
 
-* se utilizzi una tabella di destinatari diversa da quella fornita da Adobe Campaign,
+* se utilizzi una tabella di destinatari diversa da quella fornita da  Adobe Campaign,
 * se configurate una dimensione di filtro diversa dalla dimensione di targeting standard nella schermata di mappatura della destinazione.
 
 La procedura guidata per la creazione del mapping di destinazione consente di creare tutti gli schemi necessari per utilizzare la tabella personalizzata.
 
 ## Creazione e configurazione di schemi collegati alla tabella personalizzata {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Prima di creare una mappatura di destinazione, sono necessarie diverse configurazioni affinché Adobe Campaign possa funzionare con un nuovo schema di dati del destinatario.
+Prima di creare una mappatura di destinazione, sono necessarie diverse configurazioni affinché  Adobe Campaign possa funzionare con un nuovo schema di dati del destinatario.
 
 A questo scopo, eseguire i seguenti passaggi:
 
@@ -97,7 +97,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Nella finestra **Archiviazione** seguente, immettete il **suffisso del campo degli schemi** di estensione per distinguere i nuovi schemi dagli schemi forniti da Adobe Campaign.
+1. Nella finestra **Archiviazione** seguente, immettete il **suffisso del campo degli schemi** di estensione per distinguere i nuovi schemi dagli schemi forniti da  Adobe Campaign.
 
    Fate clic **[!UICONTROL Define new additional fields]** per selezionare la dimensione da destinare alla consegna.
 
@@ -107,9 +107,9 @@ A questo scopo, eseguire i seguenti passaggi:
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign non supporta più schemi destinatari, noti come schemi di targeting, collegati agli stessi schemi di trasmissione e/o di tracciamento. In caso contrario si verificheranno successivamente delle anomalie nella riconciliazione dei dati. Per ulteriori informazioni, consultate la pagina [Raccomandazione e limitazioni](../../configuration/using/about-custom-recipient-table.md) .
+   > Adobe Campaign non supporta più schemi destinatari, noti come schemi di targeting, collegati agli stessi schemi di trasmissione e/o di trackinglog. In caso contrario si verificheranno successivamente delle anomalie nella riconciliazione dei dati. Per ulteriori informazioni, consultate la pagina [Raccomandazione e limitazioni](../../configuration/using/about-custom-recipient-table.md) .
 
-1. Nella finestra **Estensioni** , seleziona gli schemi facoltativi da generare (l&#39;elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign).
+1. Nella finestra **Estensioni** , selezionate gli schemi facoltativi da generare (l&#39;elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign ).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
