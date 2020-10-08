@@ -1,7 +1,7 @@
 ---
-title: Indirizzi delle sementi
-seo-title: Indirizzi delle sementi
-description: Indirizzi delle sementi
+title: Indirizzi di seed
+seo-title: Indirizzi di seed
+description: Indirizzi di seed
 seo-description: null
 page-status-flag: never-activated
 uuid: 0ebdeb73-be67-4c34-9f59-9fd4fb5241ab
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 41338d32-b95c-45ae-bee6-17b2af5bd837
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
 
 
-# Indirizzi delle sementi{#seed-addresses}
+# Indirizzi di seed{#seed-addresses}
 
 Se la tabella del destinatario è una tabella personalizzata, sono necessarie configurazioni aggiuntive. Lo **[!UICONTROL nms:seedMember]** schema deve essere esteso. Agli indirizzi iniziali viene aggiunta una scheda aggiuntiva per la definizione dei campi adeguati, come illustrato di seguito:
 
@@ -75,7 +75,7 @@ Effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >L&#39;estensione dello schema **nms:seedMember** deve essere conforme alle strutture di una campagna e di una consegna in Adobe Campaign.
+   >L&#39;estensione dello schema **nms:seedMember** deve essere conforme alle strutture di una campagna e di una distribuzione in  Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -87,7 +87,7 @@ Effettuate le seguenti operazioni:
    >    * Nell’estensione **nms:seedMember** , il campo contenente l’indirizzo e-mail deve avere come attributo **name=&quot;email&quot;** . Il nome SQL deve essere diverso da &#39;sEmail&#39; già utilizzato per lo schema del destinatario. Questo attributo deve essere dichiarato immediatamente sotto l&#39; **`<element name="custom_cus_person" />`** elemento .
 
 
-1. Modificare di conseguenza il **[!UICONTROL seedMember]** modulo per definire una nuova scheda &quot;Destinatario interno&quot; nella **[!UICONTROL Seed addresses]** finestra. Per ulteriori informazioni, consultare la struttura [del](../../configuration/using/form-structure.md)modulo.
+1. Modificare di conseguenza il **[!UICONTROL seedMember]** modulo per definire una nuova scheda &quot;Destinatario interno&quot; nella **[!UICONTROL Seed addresses]** finestra. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -102,4 +102,4 @@ Effettuate le seguenti operazioni:
      </container>
    ```
 
-Se tutti gli attributi dell&#39;indirizzo del seme non vengono inseriti, Adobe Campaign sostituisce automaticamente i profili: verranno inseriti automaticamente durante la personalizzazione utilizzando i dati di un profilo esistente.
+Se tutti gli attributi dell&#39;indirizzo seed non vengono inseriti,  Adobe Campaign sostituisce automaticamente i profili: verranno inseriti automaticamente durante la personalizzazione utilizzando i dati di un profilo esistente.
