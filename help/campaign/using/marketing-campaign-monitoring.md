@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
 
 # Monitoraggio delle campagne di marketing {#monitoring-marketing-campaigns}
 
-## Tracciamento di una campagna {#tracking-a-campaign}
+## Tracking di una campagna {#tracking-a-campaign}
 
 Per ogni campagna, la **[!UICONTROL Tracking]** scheda consente di visualizzare tutti i processi e i relativi stati. Le informazioni seguenti sono accessibili tramite questa sottoscheda:
 
@@ -58,6 +58,6 @@ Per verificare lo stato di una consegna, modificatela e visualizzatene il dashbo
 
 ## Tracciamento esecuzione {#execution-tracking}
 
-Per verificare lo stato delle consegne, fai clic sul pulsante **[!UICONTROL Deliveries]**, accessibile dalla home page di Adobe Campaign. Consulta Tracciamento [consegna](#delivery-tracking).
+Per verificare lo stato delle consegne, fai clic sul **[!UICONTROL Deliveries]**, accessibile dalla home page di  Adobe Campaign. Consulta Tracciamento [consegna](#delivery-tracking).
 
-Le informazioni relative ai processi eseguiti in una campagna vengono raccolte nella **[!UICONTROL Edit > Audit]** scheda della campagna. Qui potete visualizzare l&#39;elenco delle consegne nella campagna. Consultate [Tracciamento di una campagna](#tracking-a-campaign).
+Le informazioni relative ai processi eseguiti in una campagna vengono raccolte nella **[!UICONTROL Edit > Audit]** scheda della campagna. Qui potete visualizzare l&#39;elenco delle consegne nella campagna. See [Tracking a campaign](#tracking-a-campaign).
