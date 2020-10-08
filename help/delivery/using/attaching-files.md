@@ -1,7 +1,7 @@
 ---
-title: Associazione di file
-seo-title: Associazione di file
-description: Associazione di file
+title: File allegati
+seo-title: File allegati
+description: File allegati
 seo-description: null
 page-status-flag: never-activated
 uuid: a4dc1908-a6ef-4bc8-a310-605fc80c34ca
@@ -11,19 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Associazione di file{#attaching-files}
+# File allegati{#attaching-files}
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
@@ -51,7 +48,7 @@ Per allegare un file locale a una consegna, procedere come segue.
 >Potete allegare più file a una consegna. Gli allegati possono essere in qualsiasi formato, incluso in formato compresso.
 
 1. Fate clic sul **[!UICONTROL Attachments]** collegamento.
-1. Fai clic sul pulsante **[!UICONTROL Add]**. 
+1. Fai clic sul pulsante **[!UICONTROL Add]**.
 1. Fare clic **[!UICONTROL File...]** per selezionare il file da allegare alla consegna.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
@@ -87,7 +84,7 @@ Sono disponibili le seguenti opzioni:
 
 ### Collegamento di un file locale {#attach-a-local-file}
 
-Se l&#39;allegato è un file locale, selezionare l&#39;opzione: **[!UICONTROL File name is specified when creating the delivery template]**. Il file viene selezionato localmente e caricato sul server. Effettuate le seguenti operazioni:
+Se l&#39;allegato è un file locale, selezionare l&#39;opzione: **[!UICONTROL File name is specified when creating the delivery template]**. Il file viene selezionato localmente e caricato sul server. Segui i passaggi seguenti:
 
 1. Selezionate il file da caricare nel **[!UICONTROL Local file]** campo.
 1. Se necessario, specificate l’etichetta. L&#39;etichetta sostituisce il nome del file quando viene visualizzato nei sistemi di messaggistica. Se non viene specificato nulla, per impostazione predefinita viene utilizzato il nome del file.
@@ -132,7 +129,7 @@ Per questo tipo di allegato, eseguire i seguenti passaggi di configurazione:
 
 ### Collegamento di un file calcolato {#attach-a-calculated-file}
 
-È possibile calcolare il nome dell&#39;allegato durante la preparazione della consegna. A questo scopo, selezionare l&#39;opzione **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
+È possibile calcolare il nome dell&#39;allegato durante la preparazione della consegna. To do this, select the option **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
 >[!NOTE]
 >
@@ -178,7 +175,7 @@ Quando si seleziona l&#39;allegato, è possibile scegliere l&#39;opzione **[!UIC
 
 ### Impostazioni degli allegati {#attachment-settings}
 
-Per le prime due opzioni, potete scegliere **[!UICONTROL Upload file on the server]** l’opzione appropriata. Il **[!UICONTROL Update the file on the server]** collegamento consente di avviare il caricamento.
+Per le prime due opzioni, potete scegliere **[!UICONTROL Upload file on the server]** selezionando l’opzione appropriata. Il **[!UICONTROL Update the file on the server]** collegamento consente di avviare il caricamento.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
