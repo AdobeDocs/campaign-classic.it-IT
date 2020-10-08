@@ -1,7 +1,7 @@
 ---
-title: Mappatura database
-seo-title: Mappatura database
-description: Mappatura database
+title: Mappatura del database
+seo-title: Mappatura del database
+description: Mappatura del database
 seo-description: null
 page-status-flag: never-activated
 uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -23,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Mappatura database{#database-mapping}
+# Mappatura del database{#database-mapping}
 
 La mappatura SQL dello schema di esempio fornisce il seguente documento XML:
 
@@ -50,7 +47,7 @@ La mappatura SQL dello schema di esempio fornisce il seguente documento XML:
 
 L&#39;elemento principale dello schema non è più **`<srcschema>`**, ma **`<schema>`**.
 
-Questo ci porta a un altro tipo di documento, che viene generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall&#39;applicazione del Adobe Campaign .
+Questo ci porta a un altro tipo di documento, che viene generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall&#39;applicazione Adobe Campaign .
 
 I nomi SQL vengono determinati automaticamente in base al nome e al tipo dell&#39;elemento.
 
@@ -111,7 +108,7 @@ Per compilare un campo in XML, è necessario aggiungere l&#39;attributo **xml** 
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Il tipo &quot;html&quot; consente di archiviare il contenuto HTML in un tag CDATA e di visualizzare un controllo speciale per la modifica HTML nell&#39;interfaccia client del Adobe Campaign .
+   Il tipo &quot;html&quot; consente di archiviare il contenuto HTML in un tag CDATA e di visualizzare un controllo speciale per la modifica HTML nell&#39;interfaccia client  Adobe Campaign.
 
 L&#39;utilizzo di campi XML consente di aggiungere campi senza dover modificare la struttura fisica del database. Un altro vantaggio è rappresentato dal minor utilizzo di risorse (dimensione allocata ai campi SQL, limite al numero di campi per tabella, ecc.).
 
@@ -299,7 +296,7 @@ Le chiavi obbediscono alle regole seguenti:
 
 ### Tasto incrementale automatico {#auto-incremental-key}
 
-La chiave primaria della maggior parte  tabelle di Adobi Campaign è un numero intero lungo 32 bit generato automaticamente dal motore del database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId** ) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene inserito automaticamente all&#39;inserimento del record.
+La chiave primaria della maggior parte  tabelle Adobe Campaign è un numero intero lungo 32 bit generato automaticamente dal motore del database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId** ) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene inserito automaticamente all&#39;inserimento del record.
 
 Il vantaggio di una chiave incrementale è che fornisce una chiave tecnica non modificabile per i join tra le tabelle. Inoltre, questa chiave non occupa molta memoria perché utilizza un numero intero a doppio byte.
 
@@ -313,7 +310,7 @@ Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza neg
 
 >[!NOTE]
 >
->Una sequenza cui viene fatto riferimento in uno schema di Adobe Campaign  (ad esempio,**NmsTrackingLogId** ) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata ******GetNewXXXIds**, dove **XXX** è il nome della sequenza (ad esempio,**GetNewNmsTrackingLogIds** ). Visualizzare i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
+>Una sequenza cui viene fatto riferimento in uno schema Adobe Campaign  (ad esempio,**NmsTrackingLogId** ) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata ******GetNewXXXIds**, dove **XXX** è il nome della sequenza (ad esempio,**GetNewNmsTrackingLogIds** ). Visualizzare i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
 
 Per dichiarare una chiave univoca, compilare l&#39;attributo **autopk** (con valore &quot;true&quot;) sull&#39;elemento principale dello schema dati.
 
@@ -418,7 +415,7 @@ I collegamenti rispettano le regole seguenti:
 >
 >Come standard, i collegamenti sono gli elementi dichiarati alla fine dello schema.
 
-### Esempio 1 {#example-1}
+### Example 1 {#example-1}
 
 1-N in relazione alla tabella dello schema &quot;cus:company&quot;:
 
@@ -481,7 +478,7 @@ Schema esteso della destinazione (&quot;cus:company&quot;):
 * **unbound**: il collegamento è dichiarato come elemento di raccolta per una cardinalità 1-N (per impostazione predefinita)
 * **integrità**: &quot;define&quot; per impostazione predefinita (può essere forzato con l&#39;attributo &quot;revIntegrity&quot; nella definizione del collegamento sullo schema di origine).
 
-### Esempio 2 {#example-2}
+### Example 2 {#example-2}
 
 In questo esempio, dichiareremo un collegamento verso la tabella dello schema &quot;nms:address&quot;. Il join è un join esterno ed è popolato esplicitamente con l&#39;indirizzo e-mail del destinatario e il campo &quot;@address&quot; della tabella collegata (&quot;nms:address&quot;).
 
@@ -496,7 +493,7 @@ In questo esempio, dichiareremo un collegamento verso la tabella dello schema &q
 </srcSchema>
 ```
 
-### Esempio 3 {#example-3}
+### Example 3 {#example-3}
 
 1-1 relazione con la tabella dello schema &quot;cus:extension&quot;:
 
@@ -504,7 +501,7 @@ In questo esempio, dichiareremo un collegamento verso la tabella dello schema &q
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Esempio 4 {#example-4}
+### Example 4 {#example-4}
 
 Collegare una cartella (&quot;schema xtk:folder&quot;):
 
@@ -514,7 +511,7 @@ Collegare una cartella (&quot;schema xtk:folder&quot;):
 
 Il valore predefinito restituisce l&#39;identificatore del primo file di tipo di parametro idoneo immesso nella funzione &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Esempio 5 {#example-5}
+### Example 5 {#example-5}
 
 In questo esempio, desideriamo creare una chiave su un collegamento (&quot;società&quot; a schema &quot;cus:company&quot;) con l&#39;attributo **xlink** e un campo della tabella (&quot;email&quot;):
 
