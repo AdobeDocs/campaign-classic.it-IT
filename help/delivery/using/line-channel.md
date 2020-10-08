@@ -11,22 +11,22 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 3%
 
 ---
 
 
 # Canale LINE{#line-channel}
 
-LINE è un&#39;applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su tutti gli smartphone (iPhone, Android, Windows Phone, Blackberry, Nokia) e su PC. Adobe Campaign consente di inviare messaggi LINE.
+LINE è un&#39;applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su tutti gli smartphone (iPhone, Android, Windows Phone, Blackberry, Nokia) e su PC.  Adobe Campaign consente di inviare messaggi LINE.
 
 LINE è disponibile solo per le installazioni di servizi locali o gestiti.
 
-LINE può anche essere combinato con il modulo di messaggi transazionali per inviare messaggi in tempo reale sull&#39;app LINE installata nei dispositivi mobili consumer. Per ulteriori informazioni, consultare questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
+LINE può anche essere combinato con il modulo di messaggi transazionali per inviare messaggi in tempo reale sull&#39;app LINE installata nei dispositivi mobili consumer. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
 
 ![](assets/line_message.png)
 
@@ -48,7 +48,7 @@ I passaggi per utilizzare il canale LINE sono:
 >
 >Prima di creare un account LINE e un account esterno, è necessario installare il pacchetto LINE sull&#39;istanza. Per ulteriori informazioni, consulta la sezione [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) nella guida all’installazione.
 
-È innanzitutto necessario creare un account LINE, in modo da collegarlo poi ad Adobe Campaign. Quindi, puoi inviare messaggi LINE agli utenti che hanno aggiunto il tuo account LINE nella loro applicazione mobile. Gli account esterni e gli account LINE possono essere gestiti solo dall&#39;amministratore funzionale della piattaforma.
+È innanzitutto necessario creare un account LINE, in modo da collegarlo a  Adobe Campaign. Quindi, puoi inviare messaggi LINE agli utenti che hanno aggiunto il tuo account LINE nella loro applicazione mobile. Gli account esterni e gli account LINE possono essere gestiti solo dall&#39;amministratore funzionale della piattaforma.
 
 Per creare e configurare un account LINE, vedi [https://developers.line.me/](https://developers.line.me/).
 
@@ -56,7 +56,7 @@ Per creare e configurare un servizio LINE, consulta [Gestione delle sottoscrizio
 
 ![](assets/line_service.png)
 
-Infine, per creare un account esterno su Adobe Campaign:
+Infine, per creare un account esterno su  Adobe Campaign:
 
 1. Nella struttura ad albero **Amministrazione** > **Piattaforma** , fate clic sulla scheda Account **** esterni.
 1. Fate clic sull’icona **Nuovo** .
@@ -75,7 +75,7 @@ Infine, per creare un account esterno su Adobe Campaign:
    * **Chiave** segreta canale: viene fornito tramite il vostro account LINE nella scheda **Canali** > Informazioni di **base del pannello** .
    * **Token** di accesso: viene fornito tramite il vostro account LINE nel portale per sviluppatori o facendo clic sul **[!UICONTROL Get access token]** pulsante.
    * **Data** di scadenza token di accesso: consente di specificare la data di scadenza del token di accesso.
-   * **Servizio** iscrizione LINE: consente di specificare i servizi ai quali gli utenti verranno sottoscritti.
+   * **Servizio** di iscrizione LINE: consente di specificare i servizi ai quali gli utenti verranno sottoscritti.
 
 >[!NOTE]
 >
@@ -87,17 +87,17 @@ Per creare una consegna **LINE** è necessario eseguire la procedura seguente:
 
 >[!NOTE]
 >
->In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali sulla creazione dei contenuti.
+>In [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md)vengono illustrati i concetti globali relativi alla creazione dei contenuti.
 
 1. Dalla **[!UICONTROL Campaigns]** scheda, selezionare **[!UICONTROL Deliveries]** quindi fare clic sul **[!UICONTROL Create]** pulsante.
 1. Nella finestra visualizzata, selezionate il modello di **[!UICONTROL LINE V2 delivery]** consegna.
 
    ![](assets/line_message_01.png)
 
-1. Identifica la consegna con etichetta, codice e descrizione. For more on this, refer to [this section](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con un&#39;etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Fate clic **[!UICONTROL Continue]** per creare la consegna.
 
-## Defining the content {#defining-the-content}
+## Definizione del contenuto {#defining-the-content}
 
 Per definire il contenuto di una consegna LINE, devi prima aggiungere il tipo di messaggio alla consegna. Ogni consegna LINE può contenere fino a 5 messaggi.
 
@@ -112,7 +112,7 @@ Un messaggio **di testo** Consegna linea è un messaggio inviato ai destinatari 
 
 ![](assets/line_message_02.png)
 
-La configurazione di questo tipo di messaggio è simile alla configurazione del **testo** in un messaggio e-mail. Per ulteriori informazioni, consultare questa [pagina](../../delivery/using/defining-the-email-content.md#message-content).
+La configurazione di questo tipo di messaggio è simile alla configurazione del **testo** in un messaggio e-mail. For more information, refer to this [page](../../delivery/using/defining-the-email-content.md#message-content).
 
 ### Configurazione della distribuzione di un’immagine e collegamento {#configuring-an-image-and-link-delivery}
 
@@ -141,6 +141,7 @@ Per **Immagine e linea di collegamento** si intende un messaggio inviato ai dest
    * 460px
    * 300px
    * 240px
+
    >[!NOTE]
    >
    >La dimensione 1040x1040 px è obbligatoria per ogni immagine LINE con collegamento.
@@ -157,7 +158,7 @@ Per **Immagine e linea di collegamento** si intende un messaggio inviato ai dest
 >
 >La sintassi &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> consente di includere in un messaggio LINE un collegamento a un&#39;app Web.
 
-### Recommendations {#recommendations}
+### Raccomandazioni {#recommendations}
 
 * Quando si invia una consegna LINE a un nuovo destinatario per la prima volta, è necessario aggiungere il messaggio LINE ufficiale relativo ai termini di utilizzo e consenso alla consegna. Il messaggio ufficiale è disponibile al seguente link: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
