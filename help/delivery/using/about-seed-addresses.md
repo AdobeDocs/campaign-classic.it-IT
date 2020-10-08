@@ -1,7 +1,7 @@
 ---
-title: Informazioni sugli indirizzi seed
-seo-title: Informazioni sugli indirizzi seed
-description: Informazioni sugli indirizzi seed
+title: Informazioni sugli indirizzi di seed
+seo-title: Informazioni sugli indirizzi di seed
+description: Informazioni sugli indirizzi di seed
 seo-description: null
 page-status-flag: never-activated
 uuid: 80ab5abc-3ae0-484d-88c0-be039aac360d
@@ -11,21 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 discoiquuid: b49acfd0-b601-4694-88e3-cc0a169cb866
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
 
-# Informazioni sugli indirizzi seed{#about-seed-addresses}
+# Informazioni sugli indirizzi di seed{#about-seed-addresses}
 
-Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispondono ai criteri di destinazione definiti. In questo modo, i destinatari che non rientrano nell&#39;ambito di distribuzione possono ricevere la consegna, come farebbe qualsiasi altro destinatario.
+Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non corrispondono ai criteri di target definiti. In questo modo, i destinatari che non rientrano nell&#39;ambito di distribuzione possono ricevere la consegna, come farebbe qualsiasi altro destinatario.
 
 Una delle ragioni principali per utilizzarli è **la protezione** della mailing list. L&#39;inserimento di indirizzi iniziali nella mailing list consente di notare se viene utilizzato da un terzo, in quanto gli indirizzi iniziali che contiene riceveranno le consegne inviate alla mailing list.
 
@@ -54,7 +51,7 @@ Per le consegne per corrispondenza diretta, gli indirizzi iniziali vengono aggiu
 >Per le consegne per corrispondenza diretta, il formato del file di estrazione deve rispettare i seguenti limiti:
 >
 >* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39; **[!UICONTROL Single row (expert user)]** opzione non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
 
 >
 
