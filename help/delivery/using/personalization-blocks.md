@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 811d664807776473790b74c4cb6a672b5ca2bdd8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +32,7 @@ Puoi definire nuovi blocchi che ti consentiranno di ottimizzare la personalizzaz
 
 >[!NOTE]
 >
->I blocchi di personalizzazione sono disponibili anche da **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
+>I blocchi di personalizzazione sono disponibili anche da **[!UICONTROL Digital Content Editor (DCE)]** . Per ulteriori informazioni, consulta [questa pagina](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Inserimento di blocchi di personalizzazione {#inserting-personalization-blocks}
 
