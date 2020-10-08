@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 199eb687-3da6-49c1-9997-ef1cbd2647b6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Informazioni sui filtri {#about-filtering}
 
-Per impostazione predefinita, Adobe Campaign visualizza tutti i dati nel database per i quali l&#39;operatore interessato dispone di diritti di lettura.
+Per impostazione predefinita,  Adobe Campaign visualizza tutti i dati nel database per i quali l&#39;operatore interessato dispone di diritti di lettura.
 
 Questi dati possono essere filtrati tramite le opzioni presenti nella sezione superiore della finestra del browser.
 
@@ -69,4 +69,4 @@ Utilizzate il campo di ricerca per accedere rapidamente all’elemento che state
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 
-Per visualizzare nuovamente tutti gli elementi, fate clic sulla croce per eliminare il contenuto del campo di ricerca.
+Per visualizzare di nuovo tutti gli elementi, fate clic sulla croce per eliminare il contenuto del campo di ricerca.
