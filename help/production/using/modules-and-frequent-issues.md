@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: a44f5e71-3f9b-4d02-8b7a-a9782bb6bdd8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -51,12 +51,12 @@ Di seguito è riportato un elenco di moduli interessati da problemi frequenti:
   <tr> 
    <td> mta </td> 
    <td> Invia e-mail<br /> </td> 
-   <td> Controllate questo modulo se le e-mail non vengono più inviate.<br /> </td> 
+   <td> Controllare questo modulo se le e-mail non vengono più inviate.<br /> </td> 
   </tr> 
   <tr> 
    <td> stat </td> 
    <td> Mantiene le statistiche di connessione MTA<br /> </td> 
-   <td> Controllate questo modulo se le e-mail non vengono più inviate.<br /> </td> 
+   <td> Controllare questo modulo se le e-mail non vengono più inviate.<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
@@ -76,7 +76,7 @@ Di seguito è riportato un elenco di moduli interessati da problemi frequenti:
   <tr> 
    <td> cane da guardia </td> 
    <td> Avvio e monitoraggio dell’istanza<br /> </td> 
-   <td> Controllare questo modulo se non vengono avviati processi.<br /> </td> 
+   <td> Controllare questo modulo se non viene avviato alcun processo.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
