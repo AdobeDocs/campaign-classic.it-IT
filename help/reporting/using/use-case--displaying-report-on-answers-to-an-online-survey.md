@@ -1,7 +1,7 @@
 ---
-title: '"Caso di utilizzo: visualizzazione del rapporto sulle risposte a un sondaggio online"'
-seo-title: '"Caso di utilizzo: visualizzazione del rapporto sulle risposte a un sondaggio online"'
-description: '"Caso di utilizzo: visualizzazione del rapporto sulle risposte a un sondaggio online"'
+title: '"Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"'
+seo-title: '"Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"'
+description: '"Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c0a5b7d-c606-4bcb-9600-8f89e6fce32a
@@ -11,18 +11,18 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 9%
 
 ---
 
 
-# Caso di utilizzo: visualizzazione del rapporto sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-Le risposte ai sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
+Le risposte  sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
 
 Nell&#39;esempio seguente, vogliamo raccogliere le risposte a un sondaggio online e visualizzarle in una tabella pivot
 
@@ -36,13 +36,13 @@ Prima di iniziare questo caso di utilizzo, è necessario avere accesso a un sond
 
 >[!NOTE]
 >
->Questo caso d’uso può essere implementato solo se avete acquisito l’opzione **Survey Manager** . Controllare il contratto di licenza.
+>Questo caso d’uso può essere implementato solo se avete acquisito l’opzione **Survey Manager** . Controlla il contratto di licenza.
 
-## Passaggio 1 - Creazione del flusso di lavoro di raccolta e memorizzazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
+## Passaggio 1 - Creazione del flusso di lavoro per la raccolta e l&#39;archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Per raccogliere le risposte al sondaggio, effettuate le seguenti operazioni:
 
-1. Create un flusso di lavoro e inserite un&#39; **[!UICONTROL Answers to a survey]** attività. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultate [questa sezione](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Create un flusso di lavoro e inserite un&#39; **[!UICONTROL Answers to a survey]** attività. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Modificate l&#39;attività e selezionate il sondaggio di cui desiderate analizzare le risposte.
 1. Abilitate l&#39; **[!UICONTROL Select all the answer data]** opzione per raccogliere tutte le informazioni.
 
