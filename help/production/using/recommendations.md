@@ -1,7 +1,7 @@
 ---
-title: Recommendations
-seo-title: Recommendations
-description: Recommendations
+title: Raccomandazioni
+seo-title: Raccomandazioni
+description: Raccomandazioni
 seo-description: null
 page-status-flag: never-activated
 uuid: d898fe6d-7627-405f-b2bc-b17bf1dc9e96
@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: a31c5c9f-503f-4b55-8409-34d4addbd581
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 3%
 
 ---
 
 
-# Recommendations{#recommendations}
+# Raccomandazioni{#recommendations}
 
-Adobe Campaign è un sistema altamente transazionale (database OLTP). Ciò significa che il database sottostante verrà aggiornato frequentemente, con conseguente peggioramento delle prestazioni nel tempo. Per evitare questo tipo di problema, è necessaria una manutenzione regolare del database.
+ Adobe Campaign è un sistema altamente transazionale (database OLTP). Ciò significa che il database sottostante verrà aggiornato frequentemente, con conseguente peggioramento delle prestazioni nel tempo. Per evitare questo tipo di problema, è necessaria una manutenzione regolare del database.
 
 >[!CAUTION]
 >
