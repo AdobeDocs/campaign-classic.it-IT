@@ -1,7 +1,7 @@
 ---
-title: Problemi di prestazioni e di throughput
-seo-title: Problemi di prestazioni e di throughput
-description: Problemi di prestazioni e di throughput
+title: Problemi relativi a prestazioni e velocità effettiva
+seo-title: Problemi relativi a prestazioni e velocità effettiva
+description: Problemi relativi a prestazioni e velocità effettiva
 seo-description: null
 page-status-flag: never-activated
 uuid: 28c35453-9a15-44a3-9961-f4c604c209c2
@@ -11,19 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: ec66e3e3-b09a-44a4-914d-e3b38c7643f8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Problemi di prestazioni e di throughput{#performance-and-throughput-issues}
+# Problemi relativi a prestazioni e velocità effettiva{#performance-and-throughput-issues}
 
 >[!NOTE]
 >
@@ -31,7 +28,7 @@ ht-degree: 0%
 
 ## Hardware e infrastruttura {#hardware-and-infrastructure}
 
-Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in dettaglio in questo [articolo](https://helpx.adobe.com/campaign/kb/hardware-sizing-guide.html).
+Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in dettaglio in questo [articolo](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
 Il team di consulenza può fornire ai clienti ospitati uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Offre inoltre strumenti per la pulizia di dati non necessari. Contattate i team di consulenza o assistenza se avete bisogno di implementare questo strumento. Di seguito sono riportati alcuni elementi importanti da verificare utilizzando questo strumento:
 
@@ -58,18 +55,18 @@ Nella maggior parte dei casi, i problemi di prestazioni sono collegati alla manu
 
 Di seguito è riportato un elenco degli articoli relativi alle procedure ottimali per la configurazione dell&#39;applicazione:
 
-* Processi e memoria MTA e MTAChild: il modulo **mta** distribuisce i messaggi ai suoi moduli figlio **principale** . Ogni **nodo secondario** prepara i messaggi prima di richiedere un&#39;autorizzazione al server delle statistiche e inviarli. Per ulteriori informazioni, consultare questa [pagina](../../installation/using/email-deliverability.md) .
-* Configurazione TLS: l&#39;abilitazione di TLS a livello globale non è consigliata perché può ridurre il throughput. Al contrario, le impostazioni TLS per dominio, gestite dal team di recapito, dovrebbero essere regolate in base alle esigenze. Per ulteriori informazioni, consultare questa [pagina](../../installation/using/email-deliverability.md#mx-configuration) .
+* Processi e memoria MTA e MTAChild: il modulo **mta** distribuisce i messaggi ai suoi moduli figlio **principale** . Ogni **nodo secondario** prepara i messaggi prima di richiedere un&#39;autorizzazione al server delle statistiche e inviarli. Refer to this [page](../../installation/using/email-deliverability.md) for more information.
+* Configurazione TLS: l&#39;abilitazione di TLS a livello globale non è consigliata perché può ridurre il throughput. Al contrario, le impostazioni TLS per dominio, gestite dal team di recapito, dovrebbero essere regolate in base alle esigenze. Refer to this [page](../../installation/using/email-deliverability.md#mx-configuration) for more information.
 * DKIM: per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Fate riferimento a questa [pagina](../../delivery/using/technical-recommendations.md#dkim) e a questa [nota tecnica](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html).
 
 ## Problemi di realizzazione {#deliverability-issues}
 
 Di seguito è riportato un elenco delle best practice e degli articoli relativi alla recapito:
 
-* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Deliverability Monitoring** offre diversi strumenti per monitorare le prestazioni della piattaforma. Fare riferimento a questa [pagina](../../delivery/using/monitoring-deliverability.md).
+* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Deliverability Monitoring** offre diversi strumenti per monitorare le prestazioni della piattaforma. Refer to this [page](../../delivery/using/monitoring-deliverability.md).
 * Riscaldamento IP: il riscaldamento dell&#39;IP viene eseguito dal team di recapito. Ciò comporta un aumento graduale del numero di e-mail attraverso nuovi IP in un periodo di poche settimane.
-* Impostazione affinità IP: un&#39;impostazione errata dell&#39;affinità IP può arrestare completamente le e-mail (nome di operatore/affinità errato nella configurazione) o ridurre il throughput (numero limitato di IP nell&#39;affinità). Fare riferimento a questa [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione e-mail: la dimensione dell&#39;e-mail svolge un ruolo importante nella trasmissione. La dimensione massima consigliata per l’e-mail è 60 KB. Fare riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [sulla velocità](../../reporting/using/global-reports.md#delivery-throughput) di consegna, controlla il numero di byte trasferiti per ora.
+* Impostazione affinità IP: un&#39;impostazione errata dell&#39;affinità IP può arrestare completamente le e-mail (nome di operatore/affinità errato nella configurazione) o ridurre il throughput (numero limitato di IP nell&#39;affinità). Refer to this [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* Dimensione e-mail: la dimensione dell&#39;e-mail svolge un ruolo importante nella trasmissione. La dimensione massima consigliata per l’e-mail è 60 KB. Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [sulla velocità](../../reporting/using/global-reports.md#delivery-throughput) di consegna, controlla il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: se è presente un numero elevato di destinatari non validi, può avere un impatto sul throughput. Il MTA continua a ripetere l&#39;invio di e-mail a destinatari non validi. Assicurarsi che il database sia ben mantenuto.
 * Entità della personalizzazione: se una consegna rimane in &quot;Personalizzazione in corso&quot;, controlla il codice JavaScript utilizzato nei blocchi di personalizzazione.
 
