@@ -11,20 +11,20 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 2%
 
 ---
 
 
 # Tipi di manutenzione{#types-of-maintenance}
 
-## Manutenzione delle applicazioni {#application-maintenance}
+## Manutenzione dell&#39;applicazione {#application-maintenance}
 
-Adobe Campaign offre un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: il flusso di lavoro **di pulizia del** database. Questo flusso di lavoro esegue le seguenti attività:
+ Adobe Campaign fornisce un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: il flusso di lavoro **di pulizia del** database. Questo flusso di lavoro esegue le seguenti attività:
 
 * soppressione dei documenti scaduti,
 * eliminazione dei record orfani e reinizializzazione dello stato per gli oggetti scaduti,
@@ -39,7 +39,7 @@ Adobe Campaign offre un flusso di lavoro integrato che consente di pianificare a
 Il flusso di lavoro di pulizia del database non include alcuno strumento di manutenzione del database: spetta a voi organizzare la manutenzione. A questo scopo, potete:
 
 * collaborare con l&#39;amministratore del database per configurare la manutenzione del database con strumenti di terze parti,
-* utilizza il motore del flusso di lavoro di Adobe Campaign per pianificare e monitorare tali attività di manutenzione.
+* utilizzate il motore del flusso di lavoro Adobe Campaign  per pianificare e monitorare tali attività di manutenzione.
 
 Tali procedure di manutenzione devono essere eseguite su base regolare e devono comprendere:
 
