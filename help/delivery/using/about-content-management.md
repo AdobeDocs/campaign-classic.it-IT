@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 9f4e8d10-7387-4716-aa85-a6b012ad14ef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
 
 # Informazioni sulla gestione dei contenuti{#about-content-management}
 
-Il modulo Adobe Campaign Content Manager è uno specifico pacchetto [](../../installation/using/installing-campaign-standard-packages.md) standard Campaign Classic che puoi installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+ modulo Adobe Campaign Content Manager è un pacchetto [](../../installation/using/installing-campaign-standard-packages.md) standard Campaign Classic specifico che potete installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >
@@ -41,13 +41,13 @@ L&#39;utilizzo di Content Manager in una distribuzione consente di offrire agli 
 La gestione dei contenuti offre i seguenti vantaggi:
 
 * Modifica strutturata dei messaggi mediante interfacce di input,
-* separazione del contenuto dei dati e relativa presentazione (generata in formato XML),
+* Separazione del contenuto dei dati e relativa presentazione (generata in formato XML),
 * Generazione di documenti in più formati (HTML, txt, XML, ecc.) basati su fogli di stile per garantire la conformità ai caratteri grafici,
 * Recupero e aggregazione automatica dei flussi di contenuto esterno,
 * Collaborazione con il flusso di lavoro per la convalida e il controllo dei dati.
 
 Questa modalità di creazione dei contenuti comporta tuttavia alcuni vincoli; in particolare:
 
-* libertà limitata per quanto riguarda la progettazione finale del documento,
+* Libertà limitata per quanto riguarda la progettazione finale del documento,
 * L&#39;analisi dei requisiti deve essere rigorosa in modo che gli utenti finali non siano penalizzati da una funzione mancante.
 
