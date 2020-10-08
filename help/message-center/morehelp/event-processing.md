@@ -1,6 +1,6 @@
 ---
-title: Elaborazione evento
-seo-title: Elaborazione evento
+title: Elaborazione di eventi
+seo-title: Elaborazione di eventi
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: 88d230e5-29e6-44c9-8537-b3fe29862b64
 contentOwner: sauviat
 discoiquuid: cff41f02-8816-4c55-9d1f-f1d4d7dd65b1
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '8'
+ht-degree: 100%
 
 ---
 
 
-# Elaborazione evento{#event-processing}
+# Elaborazione di eventi{#event-processing}
 
