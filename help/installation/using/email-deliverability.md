@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -23,31 +20,31 @@ ht-degree: 0%
 ---
 
 
-# Configurazioni e-mail tecniche{#email-deliverability}
+# Configurazioni delle e-mail tecniche{#email-deliverability}
 
 ## Panoramica {#overview}
 
-La sezione seguente fornisce una panoramica della configurazione necessaria per controllare l&#39;output delle istanze di Adobe Campaign quando si distribuiscono le e-mail.
+Nella sezione seguente viene fornita una panoramica della configurazione necessaria per controllare l&#39;output delle istanze di  Adobe Campaign durante la distribuzione delle e-mail.
 
 >[!NOTE]
 >
->Alcune configurazioni possono essere eseguite solo da Adobe per le distribuzioni ospitate da Adobe, ad esempio per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Alcune configurazioni possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe, ad esempio per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Per ulteriori informazioni sui concetti e sulle best practice relativi alla recapito, consulta questa [sezione](../../delivery/using/about-deliverability.md).
 
-Tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione efficiente di e-mail da parte di una piattaforma Adobe Campaign sono disponibili in questa [sezione](../../delivery/using/technical-recommendations.md).
+Tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione efficiente di e-mail da parte di una piattaforma Adobe Campaign  sono disponibili in questa [sezione](../../delivery/using/technical-recommendations.md).
 
 ## Principio di funzionamento {#operating-principle}
 
-È possibile controllare l&#39;output di una o più istanze di Adobe Campaign per limitare il numero di e-mail inviate a seconda di un dominio. Ad esempio, potete limitare l&#39;output a 20.000 all&#39;ora per gli indirizzi **yahoo.com** , mentre configurate 100.000 messaggi all&#39;ora per tutti gli altri domini.
+È possibile controllare l&#39;output di una o più istanze di Adobe Campaign  limitare il numero di e-mail inviate a seconda di un dominio. Ad esempio, potete limitare l&#39;output a 20.000 all&#39;ora per gli indirizzi **yahoo.com** , mentre configurate 100.000 messaggi all&#39;ora per tutti gli altri domini.
 
-L&#39;output dei messaggi deve essere controllato per ogni indirizzo IP utilizzato dai server di consegna (**mta**). Diversi **dati** suddivisi su più computer e appartenenti a diverse istanze di Adobe Campaign possono condividere lo stesso indirizzo IP per la consegna delle e-mail: è necessario impostare un processo per coordinare l&#39;uso di questi indirizzi IP.
+L&#39;output dei messaggi deve essere controllato per ogni indirizzo IP utilizzato dai server di consegna (**mta**). Diversi **dati** suddivisi su più computer e appartenenti a varie istanze Adobe Campaign  possono condividere lo stesso indirizzo IP per la consegna delle e-mail: è necessario impostare un processo per coordinare l&#39;uso di questi indirizzi IP.
 
 Questo è ciò che il modulo **stat** fa: inoltra tutte le richieste di connessione e i messaggi da inviare ai server di posta elettronica per un insieme di indirizzi IP. Il server delle statistiche tiene traccia delle consegne e può abilitare o disabilitare l&#39;invio in base alle quote impostate.
 
 ![](assets/s_ncs_install_mta.png)
 
-* Il server delle statistiche (**stat**) è collegato a una base Adobe Campaign per caricare la configurazione.
+* Il server delle statistiche (**stat**) è collegato a una base Adobe Campaign  per caricare la configurazione.
 * I server di distribuzione (**mta**) utilizzano un UDP per contattare un server di statistiche che non appartiene sempre alla propria istanza.
 
 ### Server di distribuzione {#delivery-servers}
@@ -105,7 +102,7 @@ Quando un messaggio viene inviato, sono disponibili 3 risultati:
 
    >[!NOTE]
    >
-   >Un **percorso** è una connessione tra l&#39; **oggetto** di Adobe Campaign e l&#39; **elemento** di destinazione. Il **tag** di Adobe Campaign può scegliere tra diversi IP iniziali e diversi IP di dominio di destinazione.
+   >Un **percorso** è una connessione tra il  Adobe Campaign **mta** e il **mta** di destinazione. Il **tag** Adobe Campaign  può scegliere tra diversi IP iniziali e diversi IP di dominio di destinazione.
 
 ### Abbandono dei messaggi {#message-abandonment}
 
@@ -123,7 +120,7 @@ Un percorso è generalmente contrassegnato come non disponibile per un periodo d
 
 Il server di statistiche può essere utilizzato da più istanze: deve essere configurato in modo indipendente dalle istanze che lo utilizzeranno.
 
-Per iniziare, definisci il database di Adobe Campaign che ospiterà la configurazione.
+Iniziate definendo il database Adobe Campaign  che ospiterà la configurazione.
 
 ### Avvia configurazione {#start-configuration}
 
@@ -147,11 +144,11 @@ Le regole MX (Mail eXchanger) sono regole che gestiscono la comunicazione tra un
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato, le regole di **[!UICONTROL MX management]** consegna effettiva non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
 >
->Per ulteriori informazioni sull&#39;MTA avanzata di Adobe Campaign, consulta questo [documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per ulteriori informazioni sull&#39; MTA avanzata di Adobe Campaign, consultate questo [documento](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Queste regole vengono ricaricate automaticamente ogni mattina alle 6 del mattino (ora del server) per fornire regolarmente l&#39;istanza del client.
 
-A seconda delle capacità materiali e della politica interna, un ISP accetta un numero predefinito di connessioni e messaggi all&#39;ora. Queste variabili possono essere modificate automaticamente dal sistema ISP a seconda della reputazione dell&#39;IP e del dominio di invio. Attraverso la sua piattaforma di recapito, Adobe Campaign gestisce più di 150 regole specifiche dall&#39;ISP e, inoltre, una regola generica per altri domini.
+A seconda delle capacità materiali e della politica interna, un ISP accetta un numero predefinito di connessioni e messaggi all&#39;ora. Queste variabili possono essere modificate automaticamente dal sistema ISP a seconda della reputazione dell&#39;IP e del dominio di invio. Attraverso la sua piattaforma di recapito,  Adobe Campaign gestisce più di 150 regole specifiche da parte del provider di servizi Internet e, inoltre, una regola generica per altri domini.
 
 Il numero massimo di connessioni non dipende esclusivamente dal numero di indirizzi IP pubblici utilizzati dall&#39;MTA.
 
@@ -223,7 +220,7 @@ Le regole da rispettare per MX sono definite nel **[!UICONTROL MX management]** 
 Se il **[!UICONTROL MX management]** documento non esiste nel nodo, è possibile crearlo manualmente. Per eseguire questa operazione:
 
 1. Create un nuovo set di regole per la posta elettronica.
-1. Scegliere la **[!UICONTROL MX management]** modalità.
+1. Choose the **[!UICONTROL MX management]** mode.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
@@ -252,10 +249,12 @@ I seguenti parametri disponibili per ciascuna regola sono:
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    sono compatibili con le seguenti maschere:
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    Ad esempio, per l’indirizzo e-mail foobar@gmail.com, il dominio è gmail.com e il record MX è:
 
    ```
@@ -272,6 +271,7 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
    * Numero: la regola verrà applicata solo a publicId,
    * Un intervallo di numeri (**numero1-numero2**): la regola verrà applicata a tutti gli publicID tra questi due numeri.
+
    >[!NOTE]
    >
    >Se il campo è vuoto, la regola si applica a tutti gli identificatori.
@@ -313,7 +313,7 @@ Esempio di configurazione:
 
 A tale scopo, passare al **[!UICONTROL Management of email formats]** documento, che si trova in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consultare [questo documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da  Adobe Campaign. For more information, refer to [this document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
@@ -338,7 +338,7 @@ Questa opzione è utilizzata in particolare dal mercato giapponese per **Deco-ma
 
 ### Blocca sincronizzazione {#clock-synchronization}
 
-Gli orologi di tutti i server che compongono la piattaforma Adobe Campaign (incluso il database) devono essere sincronizzati e i loro sistemi devono essere impostati sullo stesso fuso orario.
+Gli orologi di tutti i server che compongono la piattaforma Adobe Campaign  (incluso il database) devono essere sincronizzati e i loro sistemi devono essere impostati sullo stesso fuso orario.
 
 ### Coordinate del server di statistiche {#coordinates-of-the-statistics-server}
 
@@ -383,7 +383,7 @@ I parametri sono i seguenti:
 * **indirizzo**: si tratta dell&#39;indirizzo IP del computer host MTA da utilizzare.
 * **heloHost**: questo identificatore rappresenta l&#39;indirizzo IP come verrà visualizzato dal server SMTP.
 
-* **publicId**: questa informazione è utile quando un indirizzo IP è condiviso da diversi **mtas** di Adobe Campaign dietro a un router NAT. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e invio tra il punto iniziale e il server di destinazione.
+* **publicId**: questa informazione è utile quando un indirizzo IP è condiviso da diversi **mtas** Adobe Campaign  dietro un router NAT. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e invio tra il punto iniziale e il server di destinazione.
 * **peso**: consente di definire la frequenza relativa di utilizzo dell’indirizzo. Per impostazione predefinita, tutti gli indirizzi hanno uno spessore pari a 1.
 
 >[!NOTE]
@@ -411,7 +411,7 @@ Se, ad esempio, il primo indirizzo non può essere utilizzato per un dato MX, i 
 
 ## Ottimizzazione dell&#39;invio tramite e-mail {#email-sending-optimization}
 
-L&#39;architettura interna dell&#39; **applicazione** Adobe Campaign ha un impatto sulla configurazione per ottimizzare la distribuzione delle e-mail. Di seguito sono riportati alcuni suggerimenti per migliorare le consegne.
+L&#39;architettura interna dell&#39; **elemento** Adobe Campaign ha un impatto sulla configurazione per ottimizzare la distribuzione delle e-mail. Di seguito sono riportati alcuni suggerimenti per migliorare le consegne.
 
 ### Regolare il parametro maxWaitingMessages {#adjust-the-maxwaitingmessages-parameter}
 
