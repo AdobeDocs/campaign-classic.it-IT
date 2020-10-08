@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ## Panoramica {#overview}
 
-Quando l&#39;applicazione deve accedere ai dati di una tabella esistente, di una vista SQL o ai dati di un database remoto, crea il proprio schema in Adobe Campaign con i dati seguenti:
+Quando l&#39;applicazione deve accedere ai dati di una tabella esistente, di una vista SQL o di dati da un database remoto, crearne lo schema in  Adobe Campaign con i dati seguenti:
 
 * Nome della tabella: immettere il nome della tabella (con il relativo alias quando viene utilizzato un collegamento) con l&#39;attributo &quot;sqltable&quot;,
 * chiave di schema: fare riferimento ai campi di riconciliazione,
@@ -36,8 +36,8 @@ Quando l&#39;applicazione deve accedere ai dati di una tabella esistente, di una
 
 Per creare lo schema corrispondente, procedere come segue:
 
-1. Modifica il **[!UICONTROL Administration>Configuration>Data schemas]** nodo della struttura ad albero di Adobe Campaign e fai clic su **[!UICONTROL New]** .
-1. Selezionate l’ **[!UICONTROL Access data from an existing table or an SQL view]** opzione e fate clic su **[!UICONTROL Next]** .
+1. Modificate il **[!UICONTROL Administration>Configuration>Data schemas]** nodo della struttura di Adobe Campaign  e fate clic su **[!UICONTROL New]** .
+1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
