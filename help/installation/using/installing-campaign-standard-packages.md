@@ -1,7 +1,7 @@
 ---
-title: Installazione di pacchetti standard Campaign Classic
-seo-title: Installazione di pacchetti standard Campaign Classic
-description: Installazione di pacchetti standard Campaign Classic
+title: Installazione dei pacchetti standard di Campaign Classic
+seo-title: Installazione dei pacchetti standard di Campaign Classic
+description: Installazione dei pacchetti standard di Campaign Classic
 seo-description: null
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
@@ -11,19 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
-# Installazione di pacchetti predefiniti per Campaign Classic{#installing-campaign-standard-packages}
+# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
 
 ## Informazioni sui pacchetti incorporati {#campaign-standard-packages}
 
@@ -39,8 +36,8 @@ I pacchetti incorporati contengono un set di funzioni che possono essere install
 
 Per installare un pacchetto predefinito:
 
-1. Accedete alla procedura guidata di importazione dei pacchetti **[!UICONTROL Tools > Advanced > Package import...]** nella console client  Adobe Campaign.
-1. Selezionare **[!UICONTROL Install a standard package]**.
+1. Accedete alla procedura guidata di importazione dei pacchetti **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
+1. Seleziona **[!UICONTROL Install a standard package]**.
 1. Nell&#39;elenco dei pacchetti, verificate i pacchetti da installare.
    >[!NOTE]
    >
@@ -77,7 +74,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Risorse di marketing (MRM)<br /> </td> 
+   <td> Marketing resources (MRM)<br /> </td> 
    <td> Controlla le azioni di marketing in modalità collaborativa fornendo la gestione e il tracciamento di attività, budget e risorse di marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -134,7 +131,7 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
   </tr> 
   <tr> 
    <td> Canale app mobile<br /> </td> 
-   <td> Utilizza la piattaforma del Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Facoltativo. <a href="../../delivery/using/about-mobile-app-channel.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Utilizza la piattaforma Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Facoltativo. <a href="../../delivery/using/about-mobile-app-channel.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -148,22 +145,22 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing  Analytics<br /> </td> 
+   <td> Marketing Analytics<br /> </td> 
    <td> Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, potete creare rapporti e creare popolazioni target. Facoltativo. <a href="../../reporting/using/about-cubes.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Response Manager<br /> </td> 
+   <td> Gestione della risposta<br /> </td> 
    <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerta per tutti i canali di comunicazione.  Facoltativo. <a href="../../campaign/using/about-response-manager.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Accesso ai dati esterni (accesso ai dati federati)<br /> </td> 
-   <td> Fornisce l'opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati  Adobe Campaign.  Facoltativo. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Fornisce l'opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura  dati Adobe Campaign.  Facoltativo. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ottimizzazione campagna<br /> </td> 
+   <td> Ottimizzazione di Campaign<br /> </td> 
    <td> Controlla, filtra e controlla l'invio di messaggi in modo che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in conformità con le politiche di comunicazione aziendali. Facoltativo. <a href="../../campaign/using/about-campaign-typologies.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -188,48 +185,48 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Connettori CRM<br /> </td> 
-   <td> Fornisce diversi connettori CRM per collegare la piattaforma  Adobe Campaign ai sistemi di terze parti.  <a href="../../platform/using/crm-connectors.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> CRM connectors<br /> </td> 
+   <td> Fornisce diversi connettori CRM per collegare la tua piattaforma Adobe Campaign  ai tuoi sistemi di terze parti.  <a href="../../platform/using/crm-connectors.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Connettori Web  Analytics<br /> </td> 
-   <td> Consente  Adobe Campaign e Adobe  Analytics di interagire attraverso il pacchetto di connettori Analytics  Web. Non compatibile con i messaggi transazionali (pacchetto del centro messaggi). <a href="../../platform/using/adobe-analytics-data-connector.md">Ulteriori informazioni</a><br /> </td> 
+   <td> Connettori per analisi Web<br /> </td> 
+   <td> Consente  Adobe Campaign e  Adobe Analytics di interagire attraverso il pacchetto di connettori di analisi Web. Non compatibile con i messaggi transazionali (pacchetto del centro messaggi). <a href="../../platform/using/adobe-analytics-data-connector.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
    <td> Integrazione AEM<br /> </td> 
-   <td> Consente di gestire il contenuto delle comunicazioni e-mail e dei moduli direttamente in  Adobe Experience Manager, per sfruttare le funzionalità di modifica dei contenuti di AEM e  capacità  consegna dei contenuti. <a href="../../integrations/using/about-adobe-experience-manager.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di gestire il contenuto delle comunicazioni e-mail e dei moduli direttamente in Adobe Experience Manager, per poter usufruire AEM funzionalità di modifica dei contenuti e  capacità di consegna Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integrazione  pubblico condiviso Adobe Marketing Cloud<br /> </td> 
-   <td> Consente di scambiare e condividere audience/segmenti con le soluzioni e i servizi di base di Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Integrazione dell'audience condivisa Adobe Marketing Cloud<br /> </td> 
+   <td> Consente di scambiare e condividere audience/segmenti con le soluzioni Adobe Experience Cloud e i servizi di base. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integrazione con  Adobe Marketing Cloud<br /> </td> 
-   <td> Consente di importare ed esportare tipi di pubblico/segmenti da diverse soluzioni  Adobe Marketing Cloud in  Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
+   <td> Integrazione con Adobe Marketing Cloud<br /> </td> 
+   <td> Consente di importare ed esportare audience/segmenti da diverse soluzioni Adobe Marketing Cloud in  Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Privacy Data Protection<br /> </td> 
-   <td> Contiene funzionalità aggiuntive per agevolare la conformità alla privacy in Campaign Classic. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Ulteriori informazioni</a> <br /> </td> 
+   <td> Regolamento sulla protezione dei dati sulla privacy<br /> </td> 
+   <td> Contiene funzionalità aggiuntive per agevolare la conformità alla privacy in Campaign Classic. <a href="https://helpx.adobe.com/it/campaign/kb/acc-privacy.html">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto</td> 
   </tr> 
   <tr> 
-   <td> Trasferisci a origine media <br /> </td> 
+   <td> Transfer to Mid-Sourcing <br /> </td> 
    <td> Consente di specificare l'installazione e la configurazione di un server mid-sourcing, nonché la distribuzione di un'istanza che consente a terzi di inviare messaggi in modalità mid-sourcing. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Piattaforma mid-sourcing<br /> </td> 
-   <td> Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l'internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di "mid-sourcing" ospitato in  Adobe Campaign. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Piattaforma di mid-sourcing<br /> </td> 
+   <td> Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l'internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di "mid-sourcing" ospitato  Adobe Campaign. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Media-sourcing </td> 
   </tr> 
   <tr> 
    <td> Connettore ACS<br /> </td> 
-   <td> Ponti  Adobe Campaign v7 e  Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati ad Campaign Standard, unendo il meglio di entrambe le applicazioni. Facoltativo. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Ponti  Adobe Campaign v7 e  Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati ai Campaign Standard, unendo il meglio di entrambe le applicazioni. Facoltativo. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 
