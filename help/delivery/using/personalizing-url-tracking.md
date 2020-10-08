@@ -1,7 +1,7 @@
 ---
-title: Personalizzazione del tracciamento URL
-seo-title: Personalizzazione del tracciamento URL
-description: Personalizzazione del tracciamento URL
+title: Personalizzazione del tracking degli URL
+seo-title: Personalizzazione del tracking degli URL
+description: Personalizzazione del tracking degli URL
 seo-description: null
 page-status-flag: never-activated
 uuid: e054d106-9cf2-49db-aa16-2fdbc0777c8b
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 discoiquuid: f0e8a50b-d4a4-4271-87f7-802ef410a0f9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 12%
 
 ---
 
 
-# Personalizzazione del tracciamento URL{#personalizing-url-tracking}
+# Personalizzazione del tracking degli URL{#personalizing-url-tracking}
 
 Le impostazioni avanzate per il tracciamento dei messaggi sono accessibili tramite l’ **[!UICONTROL Tracking & Images]** icona nella barra degli strumenti della procedura guidata di consegna.
 
@@ -44,7 +44,7 @@ Puoi configurare le opzioni di tracciamento:
 
 Gli URL tracciati sono elencati nella finestra centrale del modulo ad albero.
 
-Puoi attivare o disattivare il tracciamento singolarmente per ogni URL del messaggio. For more on this, refer to [this section](../../delivery/using/how-to-configure-tracked-links.md).
+Puoi attivare o disattivare il tracciamento singolarmente per ogni URL del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/how-to-configure-tracked-links.md).
 
 La **[!UICONTROL Advanced]** scheda consente di personalizzare le formule di calcolo degli URL tracciati e l&#39;URL di apertura.
 
