@@ -1,7 +1,7 @@
 ---
-title: Pianificazione
-seo-title: Pianificazione
-description: Pianificazione
+title: Scheduler
+seo-title: Scheduler
+description: Scheduler
 seo-description: null
 page-status-flag: never-activated
 uuid: e814b978-2edd-442e-9334-9633bc9ec63a
@@ -11,23 +11,20 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
 
-# Pianificazione {#scheduler}
+# Scheduler {#scheduler}
 
 L&#39; **utilità** di pianificazione è un&#39;attività persistente che attiva la transizione nei momenti specificati dalla pianificazione.
 
-L&#39; **[!UICONTROL Scheduler]** attività deve essere considerata come un inizio pianificato. Le regole di posizionamento dell&#39;attività all&#39;interno del grafico sono le stesse dell&#39; **[!UICONTROL Start]** attività. Questa attività non deve avere una transizione in entrata.
+Dovresti considerare l’attività **[!UICONTROL Scheduler]** come un inizio pianificato. Le regole di posizionamento dell’attività all’interno del grafico sono le stesse dell’attività **[!UICONTROL Start]**. Questa attività non deve avere una transizione in entrata.
 
 ## Best practice {#best-practices}
 
