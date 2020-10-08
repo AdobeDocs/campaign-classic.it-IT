@@ -1,7 +1,7 @@
 ---
-title: simulazioni di campagne
-seo-title: simulazioni di campagne
-description: simulazioni di campagne
+title: Simulazioni delle campagne
+seo-title: Simulazioni delle campagne
+description: Simulazioni delle campagne
 seo-description: null
 page-status-flag: never-activated
 uuid: d5a090ef-57e5-46b2-b9ad-6d4d964c8e20
@@ -11,20 +11,20 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: e8e7a720-c93d-491d-8768-270e47e9c898
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 1%
 
 ---
 
 
-# simulazioni di campagne{#campaign-simulations}
+# Simulazioni delle campagne{#campaign-simulations}
 
 ## Informazioni sulle simulazioni {#about-simulations}
 
-Ottimizzazione campagna consente di verificare l&#39;efficienza di un piano di campagna mediante simulazioni. Questo consente di misurare il potenziale successo di una campagna: ricavi generati, volume target basato sulle regole di tipologia applicate, ecc.
+Ottimizzazione campagna consente di verificare l&#39;efficienza di un piano di campagna mediante simulazioni. Questo consente di misurare il potenziale successo di una campagna: ricavi generati, volume di destinazione in base alle regole di tipologia applicate, ecc.
 
 La simulazione consente di monitorare e confrontare l&#39;impatto delle consegne.
 
@@ -62,7 +62,7 @@ Per creare una simulazione, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Se selezioni delle consegne tramite un piano, un programma o una campagna, Adobe Campaign può aggiornare automaticamente l&#39;elenco delle consegne da prendere in considerazione ogni volta che viene avviata una simulazione. Per eseguire questa operazione, selezionare l&#39; **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** opzione.
+   >Se selezioni le consegne tramite un piano, un programma o una campagna,  Adobe Campaign può aggiornare automaticamente l&#39;elenco delle consegne da tenere in considerazione ogni volta che viene avviata una simulazione. Per eseguire questa operazione, selezionare l&#39; **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]** opzione.
    >  
    >In caso contrario, le consegne non disponibili nel piano, nel programma o nella campagna al momento della creazione della simulazione non verranno prese in considerazione: le consegne aggiunte in seguito verranno ignorate.
 
@@ -72,7 +72,7 @@ Per creare una simulazione, effettuate le seguenti operazioni:
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
-   Fare clic **[!UICONTROL Finish]** per approvare la selezione.
+   Click **[!UICONTROL Finish]** to approve the selection.
 
    Puoi combinare manualmente le consegne e le consegne selezionate appartenenti a piani, programmi o campagne.
 
@@ -84,7 +84,7 @@ Per creare una simulazione, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Nel calcolo delle simulazioni si tiene conto solo delle consegne il cui obiettivo è stato calcolato (stati: **Target pronto** o **pronto per la distribuzione**).
+   >Nel calcolo delle simulazioni si tiene conto solo delle consegne il cui obiettivo è stato calcolato (stati: **Target ready** o **Ready to delivery**).
 
 1. Nella **[!UICONTROL Calculations]** scheda, selezionare una dimensione di analisi, ad esempio lo schema del destinatario.
 
@@ -116,9 +116,9 @@ Al termine dell&#39;esecuzione, aprite la simulazione e fate clic sulla **[!UICO
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. La **[!UICONTROL Deliveries]** sottoscheda elenca tutte le consegne prese in considerazione dalla simulazione. Vengono visualizzati due conteggi:
+1. Nella **[!UICONTROL Deliveries]** sottoscheda sono elencate tutte le consegne prese in considerazione dalla simulazione. Vengono visualizzati due conteggi:
 
-   * L&#39;oggetto **[!UICONTROL Initial count]** è l&#39;oggetto così come è stato calcolato durante la stima nella consegna.
+   * L&#39;oggetto **[!UICONTROL Initial count]** è l&#39;oggetto così come è stato calcolato durante la sua stima nella consegna.
    * Il numero **[!UICONTROL Final count]** è il numero di destinatari contati dopo la simulazione.
 
       La differenza tra il conteggio iniziale e quello finale riflette l&#39;applicazione delle varie regole o filtri configurati prima della simulazione.
@@ -159,12 +159,12 @@ Per analizzare il risultato di una simulazione, modificatene i rapporti: mostran
 Per impostazione predefinita, vengono forniti i seguenti rapporti:
 
 * **[!UICONTROL Detail of simulation exclusions]** : la relazione fornisce un grafico dettagliato delle cause di esclusione per tutte le consegne interessate.
-* **[!UICONTROL Simulation summary]** : questa relazione mostra le popolazioni escluse dalla simulazione durante le varie consegne.
+* **[!UICONTROL Simulation summary]** : questa relazione mostra le popolazioni escluse dalla simulazione per tutta la durata delle varie consegne.
 * **[!UICONTROL Summary of exclusions linked to the simulation]** : questo rapporto mostra un grafico delle esclusioni causate dalla simulazione insieme alla regola di tipologia applicata e un grafico che mostra il rapporto di esclusione per regola.
 
 >[!NOTE]
 >
->Puoi creare nuovi rapporti e aggiungerli a quelli offerti. For more on this, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+>Puoi creare nuovi rapporti e aggiungerli a quelli offerti. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 Per accedere ai rapporti, fate clic sul **[!UICONTROL Reports]** collegamento della simulazione mirata tramite il relativo dashboard.
 
@@ -176,7 +176,7 @@ Potete anche modificare i rapporti utilizzando il **[!UICONTROL Reports]** colle
 
 Ogni volta che viene eseguita una simulazione, il risultato sostituisce eventuali risultati precedenti: non è possibile visualizzare e confrontare i risultati di un&#39;esecuzione a un&#39;altra.
 
-Per confrontare i risultati, è necessario utilizzare i rapporti. Adobe Campaign consente infatti di salvare la cronologia dei report per visualizzarla nuovamente in un secondo momento. Questa storia viene salvata durante tutto il ciclo di vita delle simulazioni.
+Per confrontare i risultati, è necessario utilizzare i rapporti. In effetti,  Adobe Campaign consente di salvare una cronologia dei report per visualizzarla nuovamente in un secondo momento. Questa storia viene salvata durante tutto il ciclo di vita delle simulazioni.
 
 **Esempio:**
 
@@ -186,12 +186,12 @@ Per confrontare i risultati, è necessario utilizzare i rapporti. Adobe Campaign
 
    ![](assets/campaign_opt_reporting_create_hist.png)
 
-1. Chiudere la simulazione e modificare la configurazione della tipologia **A**.
-1. Eseguire nuovamente la simulazione e confrontare il risultato con quello visualizzato nel report per il quale è stata creata una cronologia.
+1. Chiudete la simulazione e modificate la configurazione della tipologia **A**.
+1. Eseguire di nuovo la simulazione e confrontare il risultato con quello visualizzato nel report per il quale è stata creata una cronologia.
 
    ![](assets/campaign_opt_reporting_edit_hist.png)
 
-   Puoi salvare tutte le cronologie necessarie.
+   Puoi salvare tutte le cronologie dei report necessarie.
 
 ### Assi di reporting {#reporting-axes}
 
@@ -200,7 +200,7 @@ La **[!UICONTROL Calculations]** scheda consente di definire gli assi di reporti
 >[!NOTE]
 >
 >È consigliabile definire gli assi di calcolo nei modelli di simulazione anziché singolarmente per ogni simulazione.\
->I modelli di simulazione vengono salvati nel **[!UICONTROL Resources > Templates > Simulation templates]** nodo della struttura di Adobe Campaign.
+>I modelli di simulazione vengono salvati nel **[!UICONTROL Resources > Templates > Simulation templates]** nodo della struttura di Adobe Campaign .
 
 **Esempio:**
 
@@ -235,4 +235,4 @@ Le sovrapposizioni delle destinazioni di consegna indicano i destinatari con tar
 >
 >Questa sottoscheda viene visualizzata solo se l&#39; **[!UICONTROL Generate target recovery statistics]** opzione è stata attivata.
 
-Le informazioni sugli assi di reporting possono essere elaborate nei report di analisi dell&#39;esclusione creati nella **[!UICONTROL Exploring exclusions]** sottoscheda. Per ulteriori informazioni, vedere [Esplorazione dei risultati](#exploring-results).
+Le informazioni sugli assi di reporting possono essere elaborate nei report di analisi dell&#39;esclusione creati nella **[!UICONTROL Exploring exclusions]** sottoscheda. For more on this, refer to [Exploring results](#exploring-results).
