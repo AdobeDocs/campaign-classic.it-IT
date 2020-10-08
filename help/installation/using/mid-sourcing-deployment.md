@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 19220d8e-9494-46b4-9aa0-4c4a729aea96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 2%
 
 ---
 
 
 # Distribuzione mid-sourcing{#mid-sourcing-deployment}
 
-Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l&#39;internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di &quot;mid-sourcing&quot; ospitato in Adobe Campaign.
+Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l&#39;internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di &quot;mid-sourcing&quot; ospitato  Adobe Campaign.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ La comunicazione generale tra server e processi viene eseguita secondo il seguen
 ### Apparecchiature consigliate {#recommended-equipment}
 
 * Server applicazioni: 2 Ghz quad-core CPU, 4 GB di RAM, software RAID 1 disco rigido SATA da 80 GB.
-* Server database: CPU biquadruple a 3 GHz, almeno 4 GB di RAM, disco rigido SAS RAID 10 15000 rpm hardware, il numero a seconda delle dimensioni e delle prestazioni previste del database.
+* Server di database: CPU biquadruple a 3 GHz, almeno 4 GB di RAM, disco rigido SAS RAID 10 15000 rpm hardware, il numero a seconda delle dimensioni e delle prestazioni previste del database.
 
 >[!NOTE]
 >
