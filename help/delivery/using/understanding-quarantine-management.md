@@ -11,14 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -27,7 +24,7 @@ ht-degree: 13%
 
 ## Informazioni sulla quarantena {#about-quarantines}
 
- Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito e non verranno impostati come destinazione. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la cassetta postale è piena o se l&#39;indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
+ Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere posto in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
 >[!NOTE]
 >
@@ -278,7 +275,7 @@ Durante l&#39;analisi della consegna, tutti i dispositivi esclusi dalla destinaz
 >[!NOTE]
 Per i clienti che utilizzano il connettore Baidu, ecco i diversi tipi di errori:
 * Problema di connessione all&#39;inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo errore **[!UICONTROL Unreachable]** e riprovare.
-* Connessione persa durante la consegna: errore soft, motivo errore **[!UICONTROL Refused]**, riprovate.
+* Connessione persa durante la consegna: errore soft, causa errore **[!UICONTROL Refused]**, tentativo viene eseguito.
 * Errore sincrono restituito da Baidu durante l&#39;invio: errore, motivo errore **[!UICONTROL Refused]** e non si esegue alcun tentativo.
 
  Adobe Campaign contatta il server di Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei log è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
