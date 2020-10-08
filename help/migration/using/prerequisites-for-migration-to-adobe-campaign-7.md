@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: a3bbd8cc-97c6-4b08-adbf-76ab77b97262
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
 
 Prima di eseguire qualsiasi migrazione, consulta le sezioni [Prima di avviare la migrazione](../../migration/using/before-starting-migration.md) e [Configurazione della piattaforma](../../migration/using/configuring-your-platform.md) .
 
-Durante la migrazione dalla v6.02 ad Adobe Campaign v7, alcuni file consegnati in precedenza non vengono consegnati.
+Durante la migrazione dalla v6.02 a  Adobe Campaign v7, alcuni file consegnati in precedenza non vengono consegnati.
 
-Se viene visualizzato un errore client, è necessario aggiornare i dashboard con il nuovo codice Adobe Campaign v7 oppure copiare manualmente i file seguenti dall&#39;istanza v6.02 all&#39;istanza v7:
+Se viene visualizzato un errore client, dovete aggiornare i dashboard con il nuovo codice Adobe Campaign v7  oppure copiare manualmente i file seguenti dall’istanza v6.02 all’istanza v7:
 
 ```
 v6.02 files and spaces:
