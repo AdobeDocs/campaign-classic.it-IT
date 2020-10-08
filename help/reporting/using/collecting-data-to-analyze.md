@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Questa attività offre tre metodi diversi:
 1. Elaborazione dei dati contenuti in un elenco.
 1. Utilizzo dei dati contenuti in un cubo esistente.
 
-La scelta del metodo dipende dal tipo di calcolo, dal volume dei dati e dalla loro durata, ecc. Tutti questi parametri devono essere esaminati attentamente per evitare il sovraccarico del database di Adobe Campaign e per ottimizzare la generazione e la manipolazione dei rapporti creati. For more on this, refer to [this page](../../reporting/using/best-practices.md#optimizing-report-creation).
+La scelta del metodo dipende dal tipo di calcolo, dal volume dei dati e dalla loro durata, ecc. Tutti questi parametri devono essere esaminati attentamente per evitare il sovraccarico del database Adobe Campaign  e per ottimizzare la generazione e la manipolazione dei rapporti creati. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/best-practices.md#optimizing-report-creation).
 
 In tutti i casi, i dati vengono raccolti tramite un&#39;attività di **[!UICONTROL Query]** tipo.
 
