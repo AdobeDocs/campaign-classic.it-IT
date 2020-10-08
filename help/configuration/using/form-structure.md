@@ -1,7 +1,7 @@
 ---
-title: Struttura del modulo
-seo-title: Struttura del modulo
-description: Struttura del modulo
+title: Struttura di un modulo
+seo-title: Struttura di un modulo
+description: Struttura di un modulo
 seo-description: null
 page-status-flag: never-activated
 uuid: b4e2078e-5630-493b-8ed5-3553ffea105c
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: f8ae9497-9ca2-4c0c-8dc8-c0563839b036
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 0%
 
 ---
 
 
-# Struttura del modulo{#form-structure}
+# Struttura di un modulo{#form-structure}
 
 La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema del modulo **xtk:form**.
 
@@ -32,7 +32,7 @@ Il documento XML del modulo di input deve contenere l&#39;elemento `<form>` prin
 </form>
 ```
 
-Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo con un nome diverso, impostare l&#39;attributo **entity-schema** dell&#39; `<form>` elemento sul nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descriviamo un&#39;interfaccia utilizzando lo schema di esempio &quot;cus:receive&quot;:
+Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo con un nome diverso, impostare l&#39;attributo **entity-schema** dell&#39; `<form>` elemento sul nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descriviamo un&#39;interfaccia utilizzando lo schema di esempio &quot;cus:Recipient&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -167,7 +167,7 @@ Esempio con l&#39;aggiunta di &quot;xpath&quot; all&#39;elemento denominato &quo
 
 I contenitori vengono utilizzati per creare controlli complessi utilizzando un set di campi formattati nelle pagine.
 
-#### Contenitore di schede {#tab-container}
+#### Contenitore di tabulazione {#tab-container}
 
 Un contenitore tabulazione formatta i dati in pagine accessibili dalle schede.
 
@@ -238,7 +238,7 @@ Un contenitore di visibilità è definito dall&#39;attributo **type=&quot;visibl
 
 Esempi di sintassi della condizione:
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: verifica l&#39;uguaglianza nei dati di tipo stringa. Il valore di confronto deve essere tra virgolette.
+* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: verifica l&#39;uguaglianza nei dati di tipo stringa. Il valore di confronto deve essere racchiuso tra virgolette.
 * **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: su un valore numerico.
 * **visibleIf=&quot;@boolean1==true o @boolean2==false&quot;**: test sui campi booleani.
 
@@ -275,7 +275,7 @@ Il controllo di modifica del collegamento nel relativo modulo di input è il seg
 
 La selezione di destinazione è accessibile tramite il campo di modifica. La voce è assistita dal tipo avanti in modo che un elemento di destinazione possa essere facilmente trovato dai primi caratteri immessi. La ricerca si basa quindi sulla stringa **Calcola** definita nello schema di destinazione. Se lo schema non esiste dopo la convalida nel controllo, viene visualizzato un messaggio di conferma della creazione della destinazione al volo. La conferma crea un nuovo record nella tabella di destinazione e lo associa al collegamento.
 
-Un elenco a discesa viene utilizzato per selezionare un elemento target dall&#39;elenco di record già creati.
+Un elenco a discesa viene utilizzato per selezionare un elemento di destinazione dall&#39;elenco di record già creati.
 
 L&#39;icona **[!UICONTROL Modify the link]** (cartella) avvia un modulo di selezione con l&#39;elenco degli elementi di destinazione e una zona filtro:
 
@@ -348,7 +348,7 @@ Una barra degli strumenti con un&#39;etichetta (definita sul collegamento nello 
 
 L&#39;elenco può essere filtrato tramite il **[!UICONTROL Filters]** pulsante e configurato per aggiungere e ordinare le colonne.
 
-I pulsanti **[!UICONTROL Add]** e **[!UICONTROL Delete]** consentono di aggiungere ed eliminare elementi della raccolta sul collegamento. Per impostazione predefinita, l&#39;aggiunta di un elemento avvia il modulo di modifica dello schema di destinazione.
+I **[!UICONTROL Add]** pulsanti e **[!UICONTROL Delete]** i pulsanti consentono di aggiungere ed eliminare elementi della raccolta sul collegamento. Per impostazione predefinita, l&#39;aggiunta di un elemento avvia il modulo di modifica dello schema di destinazione.
 
 Il **[!UICONTROL Detail]** pulsante viene aggiunto automaticamente quando l&#39;attributo **zoom=&quot;true&quot;** viene completato nel **`<input>`** tag dell&#39;elenco: consente di avviare il modulo di modifica della riga selezionata.
 
@@ -382,7 +382,7 @@ Esempio di una tabella di relazione in uno schema:
 </srcSchema>
 ```
 
-Per il nostro esempio, iniziamo con il modulo di input dello schema &quot;cus:destinatario&quot;. L&#39;elenco deve visualizzare le associazioni con iscrizioni ai servizi e consentire di aggiungere un&#39;iscrizione selezionando un servizio esistente.
+Per il nostro esempio, iniziamo con il modulo di input dello schema &quot;cus:destinatario&quot;. L&#39;elenco deve visualizzare le associazioni con iscrizioni ai servizi e consentire l&#39;aggiunta di un&#39;iscrizione selezionando un servizio esistente.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -435,7 +435,7 @@ Le colonne sono dichiarate nei **`<input>`** tag secondari dell&#39;elenco. L’
 
 >[!NOTE]
 >
->Le frecce di ordinamento vengono aggiunte automaticamente quando l&#39;attributo **ordered=&quot;true&quot;** viene aggiunto all&#39;elemento raccolta nello schema dati.
+>Le frecce di ordinamento vengono aggiunte automaticamente quando l&#39;attributo **ordered=&quot;true&quot;** viene aggiunto all&#39;elemento raccolta nello schema di dati.
 
 I pulsanti della barra degli strumenti possono essere allineati orizzontalmente:
 
@@ -654,7 +654,7 @@ I parametri di input sono descritti sugli **`<param>`** elementi sotto il **`<so
 Il tipo di parametro deve essere specificato tramite l&#39;attributo **type** . I tipi possibili sono i seguenti:
 
 * **stringa**: stringa di caratteri
-* **booleano**:Booleano
+* **booleano**: Booleano
 * **byte**: Numero intero a 8 bit
 * **short**: Numero intero a 16 bit
 * **long**: Numero intero a 32 bit
