@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 discoiquuid: d10624ea-d961-4162-879b-1754f897d763
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -23,16 +20,16 @@ ht-degree: 0%
 ---
 
 
-# Condivisione di risorse con Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
+# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
- Risorse Experience Cloud offre un archivio unico e centralizzato di risorse pronte per il marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
+ Risorse Experience Cloud fornisce un archivio unico e centralizzato di risorse pronte per il marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
 
 I servizi delle risorse includono:
 
 * Archivio delle risorse, interfaccia di gestione, interfaccia di selezione incorporata (a cui si accede tramite le soluzioni).
-* Integrazioni con le soluzioni Creative Cloud e  Experience Cloud.
+* Integrazioni con soluzioni di Creative Cloud e Experience Cloud .
 
-Quando modifichi una consegna e-mail o una pagina di destinazione in  Adobe Campaign, puoi inserire risorse dalle tue librerie Adobe Experience Cloud. A seconda delle soluzioni utilizzate, queste risorse possono essere memorizzate nel servizio di base Risorse o  risorse di Adobe Experience Manager.
+Quando modificate una consegna e-mail o una pagina di destinazione in  Adobe Campaign, potete inserire le risorse dalle librerie Adobe Experience Cloud. A seconda delle soluzioni in uso, queste risorse possono essere memorizzate nel servizio di base Risorse o in Adobe Experience Manager Assets.
 
 Le diverse librerie disponibili sono dettagliate in [questo documento](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
 
@@ -40,5 +37,5 @@ Consultate la sezione [Configurazione dell’accesso alle risorse](../../integra
 
 >[!NOTE]
 >
->Se utilizzi  Adobe Campaign locale, l’integrazione con il servizio di base Risorse e con AEM Assets non è disponibile, a meno che AEM Assets non sia anche locale.
+>Se utilizzate  Adobe Campaign On-Premise, l&#39;integrazione con il servizio di base Assets e con  AEM Assets non è disponibile, a meno che  AEM Assets non sia anche On-Premise.
 
