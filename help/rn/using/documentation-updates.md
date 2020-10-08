@@ -9,14 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3704'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -86,7 +83,7 @@ La sezione Privacy e Consenso è stata migliorata con informazioni più dettagli
 
 La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo &#39;regolamentazione&#39; che ora è disponibile quando si utilizza l&#39;API che consente di configurare il processo di richiesta della privacy automatica. [Leggi tutto](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-La pagina Panoramica sulla gestione della privacy è stata aggiornata per includere informazioni sulla legge sulla protezione dei dati personali (PDPA) in Tailandia e sulla società brasiliana Lei Geral de Proteção de Dados (LGPD). [Leggi tutto](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+La Panoramica sulla Gestione della privacy è stata aggiornata con informazioni sulla Legge tailandese sulla protezione dei dati personali (PDPA) e sulla Lei Geral de Proteção de Dados (LGPD) brasiliana. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 Sono state aggiunte informazioni sui registri dei flussi di lavoro secondari e sul comportamento in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
