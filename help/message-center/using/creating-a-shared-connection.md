@@ -11,14 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,8 +24,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->* Le estensioni dello schema eseguite sugli schemi utilizzati dai flussi di lavoro [tecnici del Centro](../../message-center/using/technical-workflows.md) messaggi nelle istanze di controllo o esecuzione devono essere duplicate nelle altre istanze utilizzate dal modulo di messaggistica transazionale di Adobe Campaign.
+>* Le estensioni dello schema eseguite sugli schemi utilizzati dai flussi di lavoro [tecnici di](../../message-center/using/technical-workflows.md) Message Center nelle istanze di controllo o di esecuzione devono essere duplicate nelle altre istanze utilizzate  modulo di messaggistica transazionale di Adobe Campaign.
 >* L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
+
 >
 
 
@@ -39,12 +37,12 @@ Se si dispone di un&#39;architettura suddivisa, è necessario specificare le ist
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
 
 Per creare un account esterno di tipo istanza di esecuzione, procedere come segue:
 
-1. Andate alla **[!UICONTROL Administration > Platform > External accounts]** cartella.
-1. Seleziona uno dei tipi di account esterni forniti out-of-the-box con Adobe Campaign, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Duplicate]** .
+1. Go to the **[!UICONTROL Administration > Platform > External accounts]** folder.
+1. Selezionate uno dei tipi di account esterni forniti con  Adobe Campaign, fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Duplicate]** .
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -60,7 +58,7 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. L&#39;account deve corrispondere all&#39;agente del Centro messaggi come definito nella cartella dell&#39;operatore. Per impostazione predefinita, l&#39;account out-of-the-box fornito da Adobe Campaign è **[!UICONTROL mc]** .
+1. L&#39;account deve corrispondere all&#39;agente del Centro messaggi come definito nella cartella dell&#39;operatore. Per impostazione predefinita, l&#39;account out-of-the-box fornito da  Adobe Campaign è **[!UICONTROL mc]** .
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -68,7 +66,7 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    >[!NOTE]
    >
-   >Per evitare di immettere una password ogni volta che si accede all&#39;istanza, è possibile specificare l&#39;indirizzo IP dell&#39;istanza di controllo nell&#39;istanza di esecuzione. Per ulteriori informazioni, vedere [Esecuzione](#execution-instance).
+   >Per evitare di immettere una password ogni volta che si accede all&#39;istanza, è possibile specificare l&#39;indirizzo IP dell&#39;istanza di controllo nell&#39;istanza di esecuzione. For more on this, refer to [Execution instance](#execution-instance).
 
 1. Specificare il metodo di ripristino da utilizzare per l&#39;istanza di esecuzione.
 
@@ -100,14 +98,14 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
 Affinché l&#39;istanza di controllo possa connettersi all&#39;istanza di esecuzione senza dover fornire una password, è sufficiente immettere l&#39;indirizzo IP dell&#39;istanza di controllo nella sezione Diritti di accesso di **Message Center** . Tuttavia, per impostazione predefinita le password vuote sono vietate.
 
-Per utilizzare una password vuota, andate alle istanze di esecuzione e definite una zona di protezione limitata all&#39;indirizzo IP del sistema di informazione che distribuisce gli eventi. Questa area di protezione deve consentire password vuote e accettare connessioni di `<identifier> / <password>` tipo. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Per utilizzare una password vuota, andate alle istanze di esecuzione e definite una zona di protezione limitata all&#39;indirizzo IP del sistema di informazione che distribuisce gli eventi. Questa area di protezione deve consentire password vuote e accettare connessioni di `<identifier> / <password>` tipo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, vedere [Uso di più istanze](#using-several-control-instances)di controllo.
 
 1. Passate alla cartella dell&#39;operatore nell&#39;istanza di esecuzione ( **[!UICONTROL Administration > Access management > Operators]** ).
-1. Selezionare l&#39;agente **Centro** messaggi.
+1. Selezionare l&#39;agente **del Centro** messaggi.
 
    ![](assets/messagecenter_operator_001.png)
 
@@ -155,7 +153,7 @@ Per utilizzare più istanze di controllo, questa configurazione deve essere eseg
 
    >[!NOTE]
    >
-   >**gli operatori mc1** e **mc2** devono avere **[!UICONTROL Message Center execution]** diritti e non possono accedere alla console client di Adobe Campaign. Un operatore deve sempre essere collegato a una zona di sicurezza. For more on this, refer to [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**gli operatori mc1** e **mc2** devono avere **[!UICONTROL Message Center execution]** diritti e non possono accedere alla console client Adobe Campaign . Un operatore deve sempre essere collegato a una zona di sicurezza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 1. Per ciascun operatore, selezionate la **[!UICONTROL Restrict to information found in sub-folders of]** casella e selezionate la cartella desiderata (**Cartella 1** per l&#39;operatore **mc1** e **Cartella 2** per l&#39;operatore **mc2** ).
 
