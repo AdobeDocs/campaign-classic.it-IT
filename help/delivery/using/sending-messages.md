@@ -1,6 +1,6 @@
 ---
-title: Invio di un'e-mail con Adobe Campaign Classic
-description: Scopri i parametri specifici per la distribuzione di e-mail in Adobe Campaign Classic.
+title: Invio di un’e-mail con Adobe Campaign Classic
+description: Informazioni sui parametri specifici per la distribuzione di e-mail in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -9,18 +9,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 9%
 
 ---
 
 
 # Invio di un messaggio e-mail{#sending-an-email}
 
-Per approvare il messaggio e-mail e inviarlo ai destinatari della consegna che si sta creando, fate clic **[!UICONTROL Send]**.
+Per approvare il messaggio e-mail e inviarlo ai destinatari della consegna che si sta creando, fate clic su **[!UICONTROL Send]**.
 
 La procedura dettagliata per la convalida e l&#39;invio di una consegna è descritta nelle sezioni seguenti:
 
@@ -31,22 +31,22 @@ Le sezioni seguenti descrivono i parametri specifici per la distribuzione delle 
 
 ## Archiviazione di e-mail {#archiving-emails}
 
-Adobe Campaign consente di archiviare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Una volta attivata l&#39;opzione, per questa consegna viene conservata una copia esatta di tutti i messaggi inviati.
+ Adobe Campaign consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Una volta attivata l&#39;opzione, per questa consegna viene conservata una copia esatta di tutti i messaggi inviati.
 
 Per ulteriori informazioni sulla configurazione di Email BCC, consulta [questa sezione](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Questa funzione è facoltativa. Controllare il contratto di licenza e contattare il responsabile commerciale di riferimento per attivarlo.
+>Questa funzione è facoltativa. Controlla il contratto di licenza e contatta il responsabile dell’account per attivarla.
 
 Quando si crea un nuovo modello di consegna o consegna, Ccn e-mail non è abilitato per impostazione predefinita, anche se l&#39;opzione è stata acquistata. È necessario attivarlo manualmente in ogni consegna o modello in cui si desidera utilizzarlo.
 
-A questo scopo, effettuate le seguenti operazioni:
+Per farlo, segui la procedura indicata di seguito:
 
 1. Vai a **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** o **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selezionate la consegna desiderata o duplicate il modello di consegna **** e-mail fornito con il prodotto, quindi selezionate il modello duplicato.
-1. Fate clic sul pulsante **Proprietà** .
-1. Selezionate la **[!UICONTROL Delivery]** scheda.
+1. Click the **Properties** button.
+1. Seleziona la scheda **[!UICONTROL Delivery]**.
 1. Selezionate la casella **Archivia e-mail** per conservare una copia di tutti i messaggi inviati per la consegna o per ogni consegna basata su questo modello.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
@@ -73,7 +73,7 @@ Oltre alla modalità predefinita, sono disponibili anche le seguenti opzioni:
 
 * **[!UICONTROL Force the generation of the mirror page]** : anche se non viene inserito alcun collegamento alla pagina mirror, verrà creata la pagina mirror.
 * **[!UICONTROL Do not generate the mirror page]** : non viene generata alcuna pagina mirror, anche se il collegamento è presente nella consegna.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : questa opzione consente di accedere al contenuto della pagina mirror, con informazioni sulla personalizzazione, nella finestra del registro di distribuzione. A questo scopo, al termine della consegna, fare clic sulla **[!UICONTROL Delivery]** scheda e selezionare la riga del destinatario di cui si desidera visualizzare la pagina mirror. Fate clic sul **[!UICONTROL Display the mirror page for this message...]** collegamento.
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : questa opzione consente di accedere al contenuto della pagina mirror, con informazioni sulla personalizzazione, nella finestra del registro di distribuzione. A questo scopo, dopo la fine della consegna, fare clic sulla **[!UICONTROL Delivery]** scheda e selezionare la riga del destinatario di cui si desidera visualizzare la pagina mirror. Fate clic sul **[!UICONTROL Display the mirror page for this message...]** collegamento.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -103,12 +103,12 @@ A questo scopo, selezionate l&#39; **[!UICONTROL Force the encoding used for mes
 
 È possibile aggiungere intestazioni SMTP alle consegne. A tal fine, utilizzare la sezione pertinente della **[!UICONTROL SMTP]** scheda nella consegna.
 
-Lo script immesso in questa finestra deve fare riferimento a un&#39;intestazione per riga nel modulo seguente: **name:value**.
+The script entered in this window must reference one header per line in the following form: **name:value**.
 
 Se necessario, i valori vengono codificati automaticamente.
 
 >[!CAUTION]
 >
->L&#39;aggiunta di uno script per l&#39;inserimento di intestazioni SMTP aggiuntive è riservata agli utenti avanzati.
+>L’aggiunta di uno script per l’inserimento di intestazioni SMTP aggiuntive è un’operazione riservata agli utenti avanzati.
 >
->La sintassi di questo script deve essere conforme ai requisiti di questo tipo di contenuto: nessuno spazio inutilizzato, nessuna linea vuota, ecc.
+>La sintassi di questo script deve essere conforme ai requisiti di questo tipo di contenuto: nessuno spazio inutilizzato, nessuna linea vuota e così via.
