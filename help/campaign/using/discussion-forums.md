@@ -11,18 +11,18 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 discoiquuid: 88eb17b6-5206-4064-9cd9-b4645a85c609
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 1%
 
 ---
 
 
 # Forum di discussione{#discussion-forums}
 
-Gli operatori di Adobe Campaign possono utilizzare i forum di discussione per condividere le informazioni. I seguenti elementi hanno un proprio forum: piani, programmi, campagne, risorse, simulazioni, scorte. Ogni operatore ha anche un forum personale. Tutte le discussioni sono pubbliche, anche su forum personali.
+ gli operatori Adobe Campaign possono utilizzare i forum di discussione per condividere le informazioni. I seguenti elementi hanno un proprio forum: piani, programmi, campagne, risorse, simulazioni, scorte. Ogni operatore ha anche un forum personale. Tutte le discussioni sono pubbliche, anche su forum personali.
 
 Gli operatori possono iscriversi a un forum per ricevere un’e-mail di notifica ogni volta che viene pubblicato un messaggio.
 
@@ -46,7 +46,7 @@ Per iniziare una nuova discussione, fate clic sul **[!UICONTROL Add a discussion
 
 ![](assets/mrm_forum_new_thread.png)
 
-**Inserire un messaggio in una discussione esistente**
+**Pubblicare un messaggio su una discussione esistente**
 
 Per pubblicare un messaggio su una discussione esistente, aprite il messaggio a cui desiderate rispondere, quindi fate clic sul **[!UICONTROL Reply]** collegamento nell&#39;angolo in alto a sinistra. La **[!UICONTROL Discussion forum]** scatola viene visualizzata (vedi sotto).
 
@@ -54,7 +54,7 @@ Per pubblicare un messaggio su una discussione esistente, aprite il messaggio a 
 
 Quando rispondi a un messaggio, la persona che ha pubblicato il messaggio originale riceverà una notifica.
 
-**Creazione di un messaggio**
+**Scrittura di un messaggio**
 
 Nella **[!UICONTROL Discussion forum]** casella:
 
@@ -75,16 +75,16 @@ Nella **[!UICONTROL Discussion forum]** casella:
 
 ## Registrazione al forum personale di un operatore {#posting-to-the-personal-forum-of-an-operator}
 
-Puoi inviare un messaggio al forum di un operatore se, ad esempio, il messaggio non riguarda una campagna specifica ma vuoi comunque tenere traccia della conversazione in Adobe Campaign. I forum personali sono pubblici e tutti gli operatori visualizzeranno il messaggio. L&#39;operatore riceve un messaggio ogni volta che un utente inserisce nel proprio forum personale.
+È possibile inviare un messaggio al forum di un operatore se, ad esempio, il messaggio non riguarda una campagna specifica ma si desidera comunque tenere traccia della conversazione in  Adobe Campaign. I forum personali sono pubblici e tutti gli operatori visualizzeranno il messaggio. L&#39;operatore riceve un messaggio ogni volta che un utente inserisce nel proprio forum personale.
 
 Per accedere al forum di un operatore:
 
 * Se disponete dei diritti necessari per accedere al **[!UICONTROL Administration > Access management > Operators]** nodo dell&#39;esploratore, aprite il dashboard dell&#39;operatore desiderato e fate clic sul **[!UICONTROL Forum]** collegamento nell&#39;angolo superiore destro.
-* In caso contrario, trova il nome dell&#39;operatore in Adobe Campaign (tramite un messaggio inviato al forum da questo operatore, un&#39;attività che gli viene assegnata) e fai clic su di esso per accedere al dashboard. Potete anche chiedere all’amministratore di creare una visualizzazione della cartella dell’operatore.
+* In caso contrario, trovate il nome dell&#39;operatore in  Adobe Campaign (tramite un messaggio inviato al forum da questo operatore, un&#39;attività a lui assegnata) e fate clic su di esso per accedere al dashboard. Potete anche chiedere all’amministratore di creare una visualizzazione della cartella dell’operatore.
 
 ## Iscrizione a un forum {#subscribing-to-a-forum}
 
-La sottoscrizione a un forum consente di seguire le discussioni. Riceverete una notifica e-mail ogni volta che un messaggio viene inviato al forum. Il messaggio e-mail conterrà il corpo del messaggio e gli eventuali allegati. Per rispondere a un messaggio, fai clic sul corpo dell&#39;e-mail, quindi accedi all&#39;interfaccia Web di Adobe Campaign. Con l’iscrizione a un forum, queste informazioni sono visibili a tutti.
+La sottoscrizione a un forum consente di seguire le discussioni. Riceverete una notifica e-mail ogni volta che un messaggio viene inviato al forum. Il messaggio e-mail conterrà il corpo del messaggio e gli eventuali allegati. Per rispondere a un messaggio, fai clic sul corpo del messaggio e-mail, quindi accedi all&#39;interfaccia Web  Adobe Campaign. Con l’iscrizione a un forum, queste informazioni sono visibili a tutti.
 
 * Per iscriversi a un forum, fate clic sul **[!UICONTROL Follow discussions]** pulsante in alto a destra sopra l’elenco dei messaggi.
 
@@ -96,7 +96,7 @@ La sottoscrizione a un forum consente di seguire le discussioni. Riceverete una 
 
    ![](assets/mrm_forum_unsubscribe.png)
 
-* Il dashboard personale elenca i forum a cui siete iscritti. Fate clic sul **[!UICONTROL Subscription to discussion forums]** collegamento per visualizzare l’elenco, quindi fate clic sull’elemento che vi interessa accedere al relativo forum.
+* Il dashboard personale elenca i forum a cui siete iscritti. Fate clic sul **[!UICONTROL Subscription to discussion forums]** collegamento per visualizzare l’elenco, quindi fate clic sull’elemento che vi interessa per accedere al relativo forum.
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
@@ -114,7 +114,8 @@ Se gli operatori sottoscritti a un forum non ricevono le notifiche come previsto
 * Andate al **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** nodo e verificate che il **[!UICONTROL Jobs in discussion forums]** flusso di lavoro sia avviato e privo di errori.
 * Visualizza i registri di consegna:
 
-   * Nella home page di Adobe Campaign, vai a **[!UICONTROL Campaigns > Navigation > Deliveries]**, quindi apri la **[!UICONTROL Discussion forum notification]** consegna.
+   * Nella home page di  Adobe Campaign, andate a **[!UICONTROL Campaigns > Navigation > Deliveries]**, quindi aprite la **[!UICONTROL Discussion forum notification]** consegna.
    * In Esplora risorse, andate a **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, quindi fate clic su **[!UICONTROL Discussion forum notifications]**.
+
    Nella **[!UICONTROL Discussion forum notifications]** casella, i registri di consegna si trovano nella **[!UICONTROL Edit > Delivery]** scheda. È inoltre possibile visualizzare le schede **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]** .
 
