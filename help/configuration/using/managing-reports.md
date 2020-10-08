@@ -1,7 +1,7 @@
 ---
-title: Gestione dei rapporti
-seo-title: Gestione dei rapporti
-description: Gestione dei rapporti
+title: Gestione dei report
+seo-title: Gestione dei report
+description: Gestione dei report
 seo-description: null
 page-status-flag: never-activated
 uuid: 3b8e6f11-4cbd-450e-871b-50fd0ead96db
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 21777423-0c8a-4bb1-b210-972f660648bd
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 5%
 
 ---
 
 
-# Gestione dei rapporti{#managing-reports}
+# Gestione dei report{#managing-reports}
 
-I report basati su uno schema specifico per i destinatari predefiniti di Adobe Campaign (nm:destinatario o schema collegati) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura di destinazione (vedere la sezione Mappatura [di](../../configuration/using/target-mapping.md) Target).
+I report basati su uno schema specifico per i destinatari predefiniti  Adobe Campaign (nm:destinatario o schema collegati) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite il mapping di destinazione (vedere la sezione Mappatura [di](../../configuration/using/target-mapping.md) Target).
 
 Per creare nuovi rapporti, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
@@ -31,7 +31,7 @@ In alcuni casi, è necessario anche mettere nuovi cubi specifici di queste tabel
 Si tratta delle seguenti relazioni:
 
 * **[!UICONTROL Recent proposition tracking]** (RecentProposition): tracciamento delle proposte in tempo reale.
-* **[!UICONTROL Breakdown of opens]** (openByUserAgent): si apre suddivisi in base al software utente.
+* **[!UICONTROL Breakdown of opens]** (openByUserAgent): si apre suddivisi in base al software dell&#39;utente.
 * **[!UICONTROL Statistics of the sharing activities]** (forwardActivities): analisi delle attività di condivisione, delle aperture e delle sottoscrizioni per periodo di tempo.
 * **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): indicatori di tracciamento per una distribuzione su un’applicazione mobile.
 * **[!UICONTROL Offer analysis]** (offerAnalysis): analisi delle offerte per data e canale.
