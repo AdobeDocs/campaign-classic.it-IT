@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 29339aad-fd8e-4dae-8f6e-2db87221ad04
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ In un flusso di lavoro di targeting (canale in uscita), potete utilizzare i dati
 
 ## Configurazione dati aggiuntivi {#additional-data-configuration}
 
-È necessario estendere lo schema di interazione **** nms:collegato all&#39;ambiente e dichiarare l&#39;elenco dei campi aggiuntivi che verranno utilizzati durante una chiamata al motore di interazione. Quando create la regola di idoneità o personalizzate un&#39;offerta, questi campi saranno accessibili dal nodo **Interazione** (consultate [Utilizzo di dati](#using-additional-data)aggiuntivi).
+È necessario estendere lo schema di interazione **** nms:collegato all&#39;ambiente e dichiarare l&#39;elenco dei campi aggiuntivi che verranno utilizzati durante una chiamata al motore di interazione. Quando si crea la regola di idoneità o si personalizza un&#39;offerta, questi campi saranno accessibili dal nodo **Interazione** (fare riferimento a [Utilizzo di dati](#using-additional-data)aggiuntivi).
 
 Per il canale in entrata, devi aggiungere i campi dati della chiamata al nodo **Interaction** .
 
@@ -71,7 +71,7 @@ Se si desidera memorizzare questi dati nella tabella delle proposizioni, è inol
 
 ### Canale di input (pagina Web) {#input-channel--web-page-}
 
-Per trasferire dati aggiuntivi quando si chiama il motore, è necessario aggiungere la variabile **interactiveGlobalCtx** al codice JavaScript della pagina Web. Inserire il nodo **Interazione** contenente i dati della chiamata in questa variabile. È necessario rispettare la stessa struttura xml presente nello schema **nms:interactive** . Consultare: Configurazione [dati](#additional-data-configuration)aggiuntivi.
+Per trasferire dati aggiuntivi quando si chiama il motore, è necessario aggiungere la variabile **interactiveGlobalCtx** al codice JavaScript della pagina Web. Inserire il nodo **Interazione** contenente i dati della chiamata in questa variabile. È necessario rispettare la stessa struttura xml presente nello schema **nms:interactive** . Consultare: [Configurazione](#additional-data-configuration)dati aggiuntiva.
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -79,7 +79,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Canale di uscita {#output-channel}
 
-È necessario creare un flusso di lavoro di targeting che carichi dati aggiuntivi nella tabella di lavoro rispettando la stessa struttura xml e gli stessi nomi interni dello schema **nms:interactive** . Consultare: Configurazione [dati](#additional-data-configuration)aggiuntivi.
+È necessario creare un flusso di lavoro di targeting che carichi dati aggiuntivi nella tabella di lavoro rispettando la stessa struttura xml e gli stessi nomi interni come nello schema **nms:interactive** . Consultare: [Configurazione](#additional-data-configuration)dati aggiuntiva.
 
 ## Utilizzo di dati aggiuntivi {#using-additional-data}
 
@@ -93,11 +93,11 @@ Ad esempio, potete scegliere di presentare l’offerta solo alle persone che vis
 
 >[!NOTE]
 >
->È necessario limitare la regola sui canali per i quali i dati sono definiti. Nel nostro esempio, limitiamo la regola sul canale Web in ingresso (**[!UICONTROL Taken into account if]** campo).
+>È necessario limitare la regola sui canali per i quali i dati sono definiti. Nel nostro esempio, stiamo limitando la regola sul canale Web in ingresso (**[!UICONTROL Taken into account if]** campo).
 
 ### Personalizzazione {#personalization}
 
-Potete inoltre utilizzare questi dati aggiuntivi durante la personalizzazione di un&#39;offerta. Ad esempio, potete aggiungere una condizione per il linguaggio di navigazione
+Potete inoltre utilizzare questi dati aggiuntivi durante la personalizzazione di un&#39;offerta. Ad esempio, è possibile aggiungere una condizione per il linguaggio di navigazione
 
 ![](assets/ita_calldata_perso.png)
 
@@ -113,13 +113,13 @@ Durante l&#39;anteprima, fate clic **[!UICONTROL Content personalization options
 
 ![](assets/ita_calldata_preview2.png)
 
-### Storage {#storage}
+### Archiviazione {#storage}
 
 Durante una chiamata al motore, potete memorizzare dati aggiuntivi nella tabella delle proposte per arricchire il database. Questi dati possono essere utilizzati, ad esempio nei rapporti, nei calcoli sul ROI o per processi successivi.
 
 >[!NOTE]
 >
->È necessario estendere lo schema **nms:propositionRcp** e dichiarare i campi che conterranno i dati da memorizzare. Per ulteriori informazioni: Configurazione [dati](#additional-data-configuration)aggiuntivi.
+>È necessario estendere lo schema **nms:propositionRcp** e dichiarare i campi che conterranno i dati da memorizzare. Per ulteriori informazioni: [Configurazione](#additional-data-configuration)dati aggiuntiva.
 
 Nello spazio delle offerte, andate alla **[!UICONTROL Storage]** scheda e fate clic sul **[!UICONTROL Add]** pulsante.
 
