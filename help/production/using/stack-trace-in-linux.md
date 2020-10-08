@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,12 @@ Una traccia **** dello stack rappresenta una traccia contenuta in un file di tip
 >
 >* Un file **di base** è denominato **core.`<num>`**.
 >* **gdb - Il debugger** GNU deve essere installato nel computer.
+
 >
 
 
 
-Il supporto tecnico di Adobe Campaign può richiedere questa traccia **** dello stack. Per ottenerlo, immettete i seguenti comandi in Linux:
+ supporto tecnico Adobe Campaign può richiedere questa traccia **** dello stack. Per ottenerlo, immettete i seguenti comandi in Linux:
 
 ```
 su - neolane
@@ -59,9 +60,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Il supporto tecnico di Adobe Campaign potrebbe chiederti di eseguire questo comando utilizzando un file eseguibile specifico (che verrà fornito da noi).
+ supporto tecnico Adobe Campaign potrebbe chiedere di eseguire questo comando utilizzando un file eseguibile specifico (fornito da noi).
 
-In questo caso, esegui semplicemente il comando seguente sostituendo **nlserver** con l’eseguibile fornito da Adobe Campaign:
+In questo caso, eseguite semplicemente il comando seguente sostituendo **nlserver** con l&#39;eseguibile fornito da  Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>
