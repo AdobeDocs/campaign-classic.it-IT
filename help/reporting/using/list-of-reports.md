@@ -11,20 +11,20 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 2%
 
 ---
 
 
 # Elenco dei report{#list-of-reports}
 
-## Rapporti sulle consegne {#reports-on-deliveries}
+## Report sulle consegne {#reports-on-deliveries}
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../reporting/using/delivery-reports.md).
 
@@ -92,7 +92,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
   </tr> 
   <tr> 
    <td> Statistiche di tracciamento (trackingStatistics)<br /> </td> 
-   <td> Apri, fai clic e crea un rapporto sui tassi di transazione.<br /> </td> 
+   <td> Apri, fai clic su e crea un rapporto sui tassi di transazione.<br /> </td> 
    <td> nms:consegna<br /> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
 
 I report sulle campagne riguardano i dati nella tabella **nms:operation** .
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
 
@@ -188,7 +188,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
 
 I rapporti sui servizi riguardano i dati nella tabella **nms:service** .
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relative guide.
 
@@ -223,7 +223,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
 
 ## Report budget {#budget-reports}
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
 
@@ -270,7 +270,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
    <td> nms:programma<br /> </td> 
   </tr> 
   <tr> 
-   <td> Riepilogo del/dei bilancio/i (bilancio)<br /> </td> 
+   <td> Sintesi del bilancio (bilancio)<br /> </td> 
    <td> Istantanea dei principali costi, categorie di spesa e budget.<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
@@ -281,7 +281,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
 
 I rapporti sulle simulazioni riguardano i dati nella tabella **nms:simulation** .
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relative guide.
 
@@ -318,7 +318,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
 
 I report sulle applicazioni Web riguardano i dati nella tabella **nms:WebApp** .
 
-I rapporti incorporati forniti da Adobe Campaign sono riportati nella tabella seguente.
+I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../web/using/about-web-applications.md).
 
@@ -330,7 +330,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
   </tr> 
   <tr> 
    <td> Documentazione (surveyDictionary)<br /> </td> 
-   <td> Descrizione della struttura del sondaggio, dipende dal componente aggiuntivo Survey Manager.<br /> </td> 
+   <td> Descrizione della struttura del sondaggio, dipende dal componente aggiuntivo di Survey Manager.<br /> </td> 
   </tr> 
   <tr> 
    <td> Main (surveyProperties)<br /> </td> 
