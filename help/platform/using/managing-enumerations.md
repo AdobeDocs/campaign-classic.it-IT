@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 7674c856-2b64-4a85-9ffa-3e14a142028e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Un&#39;enumerazione (nota anche come &#39;elenco dettagliato&#39;) è un elenco 
 
 L&#39;elenco di valori viene visualizzato come elenco a discesa dal quale è possibile selezionare il valore da immettere nel campo. L&#39;elenco a discesa consente inoltre l&#39;input predittivo, in cui l&#39;operatore immette le prime lettere, e l&#39;applicazione completa il resto.
 
-Alcuni campi della console sono stati definiti con questo tipo di enumerazioni. Le enumerazioni sono denominate &quot;open&quot; se è possibile aggiungere valori mediante immissione diretta nel campo corrispondente.
+Alcuni dei campi della console sono stati definiti con questo tipo di enumerazioni. Le enumerazioni sono denominate &quot;open&quot; se è possibile aggiungere valori mediante immissione diretta nel campo corrispondente.
 
 ## Accesso ai valori {#access-to-values}
 
@@ -59,7 +59,7 @@ Nei campi elenco dettagliati è possibile immettere valori diversi dai valori di
 
 >[!CAUTION]
 >
->La pulizia dei dati è un processo critico che interessa i dati presenti nel database. Adobe Campaign esegue aggiornamenti di massa dei dati, che potrebbero causare l&#39;eliminazione di alcuni valori. Questa operazione è pertanto riservata agli utenti esperti.
+>La pulizia dei dati è un processo critico che interessa i dati presenti nel database.  Adobe Campaign esegue aggiornamenti di massa dei dati, che potrebbero causare l&#39;eliminazione di alcuni valori. Questa operazione è pertanto riservata agli utenti esperti.
 
 Il valore immesso può essere:
 
@@ -95,7 +95,7 @@ Controllare i parametri prima di confermare l&#39;operazione.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Pertanto, quando un utente immette il valore **NEILSEN** in un campo &quot;società&quot; (nella console di Adobe Campaign o in un modulo), verrà automaticamente sostituito dal valore **NIELSEN Ltd**. La sostituzione del valore viene eseguita dal flusso di lavoro di pulizia **degli** alias. Fare riferimento a [Esecuzione della pulizia](#running-data-cleansing)dei dati.
+Pertanto, quando un utente immette il valore **NEILSEN** in un campo &quot;società&quot; (nella console Adobe Campaign  o in un modulo), verrà automaticamente sostituito dal valore **NIELSEN Ltd**. La sostituzione del valore viene eseguita dal flusso di lavoro di pulizia **degli** alias. Fare riferimento a [Esecuzione della pulizia](#running-data-cleansing)dei dati.
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -127,7 +127,7 @@ Se necessario, la **[!UICONTROL Hits]** colonna può visualizzare il numero di v
 
 ### Esecuzione della pulizia dei dati {#running-data-cleansing}
 
-La pulizia dei dati viene eseguita dal flusso di lavoro **[!UICONTROL Alias cleansing]** tecnico. Le configurazioni definite per le enumerazioni vengono applicate durante l&#39;esecuzione. Fare riferimento al flusso di lavoro [di pulizia](#alias-cleansing-workflow)alias.
+La pulizia dei dati viene eseguita dal flusso di lavoro **[!UICONTROL Alias cleansing]** tecnico. Le configurazioni definite per le enumerazioni vengono applicate durante l&#39;esecuzione. Fare riferimento al flusso di lavoro [di pulizia](#alias-cleansing-workflow)degli alias.
 
 La pulizia può essere attivata tramite il **[!UICONTROL Cleanse values...]** collegamento.
 
@@ -152,7 +152,7 @@ Puoi eseguire il calcolo degli hit manualmente tramite il **[!UICONTROL Cleanse 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
 * **[!UICONTROL Update the number of alias hits]**: questo consente di aggiornare gli hit già calcolati, in base alla data immessa.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: consente di eseguire il calcolo sull&#39;intera piattaforma Adobe Campaign.
+* **[!UICONTROL Recalculate the number of alias hits from the start]**: consente di eseguire il calcolo sull&#39;intera piattaforma  Adobe Campaign.
 
 È inoltre possibile creare un flusso di lavoro dedicato per consentire l&#39;esecuzione automatica del calcolo per un determinato periodo, ad esempio una volta alla settimana.
 
