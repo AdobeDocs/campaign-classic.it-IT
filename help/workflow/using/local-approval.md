@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Se integrata in un flusso di lavoro di targeting, l&#39; **[!UICONTROL Local app
 
 >[!CAUTION]
 >
->Per utilizzare questa attività, è necessario aver acquistato il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controllare il contratto di licenza.
+>Per utilizzare questa attività, è necessario aver acquistato il modulo Distributed Marketing, che è un&#39;opzione Campaign. Controlla il contratto di licenza.
 
 Per un esempio dell&#39; **[!UICONTROL Local approval]** attività con un modello di distribuzione, fare riferimento a [Utilizzo dell&#39;attività](../../workflow/using/using-the-local-approval-activity.md)di approvazione locale.
 
@@ -40,7 +40,7 @@ Per iniziare, immettete un&#39;etichetta per l&#39;attività e il **[!UICONTROL 
 
    ![](assets/local_validation_intro_2.png)
 
-* **Query** incrementale: consente di eseguire una query e pianificare la relativa esecuzione. Fare riferimento alla sezione Query [](../../workflow/using/incremental-query.md) incrementale.
+* **Query** incrementale: consente di eseguire una query e pianificarne l&#39;esecuzione. Refer to the [Incremental query](../../workflow/using/incremental-query.md) section.
 
    ![](assets/local_validation_intro_3.png)
 
@@ -60,7 +60,7 @@ I campi da inserire nel caso di una notifica per l&#39;approvazione target sono:
 
 * **[!UICONTROL Approval management]**
 
-   * Selezionate il modello di consegna e l’oggetto da utilizzare per la notifica e-mail. È disponibile un modello predefinito: **[!UICONTROL Local approval notification]**. Puoi anche aggiungere una descrizione che verrà visualizzata sopra gli elenchi dei destinatari nelle notifiche di approvazione e feedback.
+   * Selezionate il modello di consegna e l’oggetto da utilizzare per la notifica e-mail. A default template is available: **[!UICONTROL Local approval notification]**. Puoi anche aggiungere una descrizione che verrà visualizzata sopra gli elenchi dei destinatari nelle notifiche di approvazione e feedback.
    * Specificare **[!UICONTROL Approval type]** che corrisponde alla scadenza dell&#39;approvazione (data o scadenza dall&#39;inizio dell&#39;approvazione). A questa data, il flusso di lavoro viene riavviato e i destinatari che non sono stati approvati non vengono presi in considerazione nel targeting. Una volta inviate le notifiche, l&#39;attività viene messa in coda in modo che le autorità di vigilanza locali possano approvare i loro contatti.
 
       >[!NOTE]
@@ -98,7 +98,7 @@ Un operatore può approvare una consegna in uno dei due modi seguenti: utilizzar
 
    L’e-mail inviata agli operatori del gruppo Amministratore consente di approvare la destinazione di consegna. Il messaggio utilizza il testo definito e l&#39;espressione JavaScript viene sostituita dal valore calcolato (in questo caso, &#39;574&#39;)
 
-   Per approvare la consegna, fai clic sul collegamento pertinente e accedi alla console Adobe Campaign.
+   Per approvare la consegna, fai clic sul collegamento pertinente e accedi alla console Adobe Campaign .
 
    ![](assets/new-workflow-valid-webaccess.png)
 
