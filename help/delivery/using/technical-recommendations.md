@@ -1,6 +1,6 @@
 ---
-title: Consigli tecnici per migliorare la recapito con  Adobe Campaign Classic
-description: Scopri tecniche, configurazioni e strumenti che puoi utilizzare per migliorare il tasso di recapito con  Adobe Campaign Classic.
+title: Consigli tecnici per migliorare la recapito con Adobe Campaign Classic
+description: Scopri tecniche, configurazioni e strumenti che puoi utilizzare per migliorare il tasso di recapito con Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2436'
 ht-degree: 0%
@@ -85,18 +82,18 @@ L’utilizzo di DKIM richiede alcuni prerequisiti:
 
 * **Protezione**: La cifratura è un elemento chiave del DKIM e per assicurare il livello di sicurezza del DKIM dalla primavera 2013, 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
 * **Reputazione**: la reputazione si basa sull&#39;IP e/o sul dominio, ma anche il selettore DKIM meno trasparente è un elemento chiave da prendere in considerazione. La scelta del selettore è importante: evitare di mantenere il &quot;default&quot; che potrebbe essere utilizzato da chiunque e quindi ha una reputazione molto debole. È necessario implementare un selettore diverso per le comunicazioni **di** conservazione e acquisizione e per l&#39;autenticazione.
-* **dichiarazione** opzione Adobe Campaign: nella campagna Adobe la chiave privata DKIM è basata su un selettore DKIM e un dominio. Al momento non è possibile creare più chiavi private per lo stesso dominio/sottodominio con diversi selettori. Non è possibile definire il dominio o il sottodominio del selettore da utilizzare per l&#39;autenticazione nella piattaforma o nell&#39;e-mail. In alternativa, la piattaforma selezionerà una delle chiavi private, il che significa che l&#39;autenticazione ha una probabilità elevata di errore.
+* **dichiarazione** opzione Adobe Campaign: in  campagna di Adobe la chiave privata DKIM è basata su un selettore DKIM e un dominio. Al momento non è possibile creare più chiavi private per lo stesso dominio/sottodominio con diversi selettori. Non è possibile definire il dominio o il sottodominio del selettore da utilizzare per l&#39;autenticazione nella piattaforma o nell&#39;e-mail. In alternativa, la piattaforma selezionerà una delle chiavi private, il che significa che l&#39;autenticazione ha una probabilità elevata di errore.
 
 >[!NOTE]
 >
->* Se hai configurato DomainKeys per l&#39;istanza  Adobe Campaign, devi solo selezionare **dkim** nelle regole [di gestione del](../../delivery/using/understanding-delivery-failures.md#domain-management)dominio. In caso contrario, seguire gli stessi passaggi di configurazione (chiave pubblica/privata) di DomainKeys.
+>* Se hai configurato DomainKeys per la tua istanza  Adobe Campaign, devi solo selezionare **dkim** nelle regole [di gestione del](../../delivery/using/understanding-delivery-failures.md#domain-management)dominio. In caso contrario, seguire gli stessi passaggi di configurazione (chiave pubblica/privata) di DomainKeys.
 >* Non è necessario abilitare sia DomainKeys che DKIM per lo stesso dominio di DKIM è una versione migliorata di DomainKeys.
 >* I seguenti domini convalidano attualmente DKIM: AOL, Gmail.
 
 
 >[!IMPORTANT]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA [](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)avanzata, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata per tutti i messaggi con tutti i domini.
+>Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA [](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html)avanzata, la firma dell’autenticazione tramite e-mail DKIM viene fatta dall’MTA avanzata per tutti i messaggi con tutti i domini.
 
 ### DMARC {#dmarc}
 
@@ -138,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## Ciclo di feedback {#feedback-loop}
 
-Un ciclo di feedback funziona dichiarando a livello di ISP un indirizzo e-mail specificato per una serie di indirizzi IP utilizzati per inviare i messaggi. L&#39;ISP invierà a questa cassetta postale, in modo simile a quello che viene fatto per i messaggi di rimbalzo, quei messaggi che vengono segnalati dai destinatari come spam. La piattaforma deve essere configurata per bloccare le consegne future agli utenti che hanno inoltrato reclamo. È importante non contattarli più anche se non hanno utilizzato il collegamento di rinuncia corretto. È sulla base di questi reclami che un ISP aggiungerà un indirizzo IP al suo elenco di blocchi. A seconda dell&#39;ISP, un tasso di reclamo di circa l&#39;1% bloccherà un indirizzo IP.
+Un ciclo di feedback funziona dichiarando a livello di ISP un indirizzo e-mail specificato per una serie di indirizzi IP utilizzati per inviare i messaggi. L&#39;ISP invierà a questa cassetta postale, in modo simile a quello che viene fatto per i messaggi di rimbalzo, quei messaggi che vengono segnalati dai destinatari come spam. La piattaforma deve essere configurata per bloccare le consegne future agli utenti che hanno inoltrato reclamo. È importante non contattarli più anche se non hanno utilizzato il collegamento di rinuncia corretto. È sulla base di questi reclami che un ISP aggiungerà un indirizzo IP al suo elenco Bloccati . A seconda dell&#39;ISP, un tasso di reclamo di circa l&#39;1% bloccherà un indirizzo IP.
 
 È in corso di elaborazione uno standard per definire il formato dei messaggi del ciclo di feedback: il formato ARF ( [Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
@@ -163,7 +160,7 @@ Se dovete utilizzare un unico indirizzo del ciclo di feedback per più istanze, 
 
 * Replicare i messaggi ricevuti su un numero illimitato di caselle di posta elettronica,
 * Far sì che ogni cassetta postale venga prelevata da un&#39;unica istanza,
-* Configurate le istanze in modo che elaborino solo i messaggi che le riguardano: le informazioni sull’istanza sono incluse nell’intestazione Message-ID dei messaggi inviati dal Adobe Campaign  e quindi si trovano anche nei messaggi del ciclo di feedback. È sufficiente specificare il parametro **checkInstanceName** nel file di configurazione dell’istanza (per impostazione predefinita, l’istanza non viene verificata e questo potrebbe causare una quarantena errata per alcuni indirizzi):
+* Configurate le istanze in modo che elaborino solo i messaggi che le riguardano: le informazioni sull’istanza sono incluse nell’intestazione Message-ID dei messaggi inviati da  Adobe Campaign e quindi si trovano anche nei messaggi del ciclo di feedback. È sufficiente specificare il parametro **checkInstanceName** nel file di configurazione dell’istanza (per impostazione predefinita, l’istanza non viene verificata e questo potrebbe causare una quarantena errata per alcuni indirizzi):
 
    ```
    <serverConf>
@@ -171,7 +168,7 @@ Se dovete utilizzare un unico indirizzo del ciclo di feedback per più istanze, 
    </serverConf>
    ```
 
- Adobe Campaign  servizio di recapito gestisce la sottoscrizione a servizi loop di feedback per i seguenti ISP: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+ servizio di distribuzione Adobe Campaign gestisce la sottoscrizione a servizi di loop di feedback per i seguenti ISP: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## Elenco-Annulla sottoscrizione {#list-unsubscribe}
 
@@ -250,7 +247,7 @@ Gli errori SMTP non controllati da una regola sono elencati nella cartella **[!U
 
 ### IP dedicati {#dedicated-ips}
 
-Adobe offre una strategia IP dedicata a ciascun cliente con un IP di espansione per creare una reputazione e ottimizzare le prestazioni di distribuzione.
+ Adobe offre una strategia IP dedicata a ciascun cliente con un IP di espansione per costruire una reputazione e ottimizzare le prestazioni di distribuzione.
 
 ## Certificazione IP {#ip-certification}
 
@@ -258,7 +255,7 @@ La certificazione IP è un programma di invio di best practice che aiuta a garan
 
 Attualmente due provider offrono la certificazione IP: Return Path e Certified Senders Alliance.
 
-I mittenti certificati vengono aggiunti alle mailing list di mailing list utilizzate dai provider di cassette postali globali e dalle società di sicurezza delle e-mail. Questi elenchi commerciali di permessi si basano su un sistema che consente al mittente di bypassare del tutto i filtri antispam o di essere assegnati punti incrementali quando entrano nel sistema.
+I mittenti certificati vengono aggiunti ai elenchi consentiti di e-mail  utilizzati dai provider di cassette postali globali e dalle società di sicurezza e-mail. Questi elenchi consentiti  commerciali si basano su un sistema che consente al mittente di bypassare completamente i filtri antispam o di ricevere punti incrementali al momento dell&#39;ingresso nel sistema.
 
 Il programma [Return Path Certification](https://www.validity.com/products/returnpath/certification/) offre una serie di vantaggi, tra cui:
 
@@ -275,6 +272,6 @@ La Certificazione [Certified Senders Alliance](https://certified-senders.org/cer
 * Tutela dai rischi giuridici e finanziari rispettando pienamente le norme giuridiche
 * Proteggere la reputazione mediante avvertenze anticipate da parte dell&#39;Ufficio di denuncia CSA e resoconti giornalieri sulle intercettazioni di spam
 
-Gli ISP sono liberi di utilizzare questi servizi e il numero di ISP può variare a seconda dell&#39;elenco di consenso.
+Gli ISP sono liberi di utilizzare questi servizi e il numero di ISP può variare a seconda del elenco consentiti .
 
 Tuttavia, poiché sempre più ISP generano i propri filtri antispam in base al comportamento del proprietario della inbox anziché analizzare il contenuto del messaggio stesso, l&#39;utilizzo della certificazione IP non può essere una garanzia di posizionamento della inbox o addirittura di consegna.
