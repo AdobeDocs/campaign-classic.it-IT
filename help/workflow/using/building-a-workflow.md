@@ -11,14 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -55,7 +52,7 @@ Immettete un’etichetta e fate clic su **[!UICONTROL Save]**.
 
 ## Aggiunta e collegamento di attività {#adding-and-linking-activities}
 
-È ora necessario definire le varie attività e collegarle insieme nel diagramma. A questo punto della configurazione, è possibile visualizzare l’etichetta del diagramma e lo stato del flusso di lavoro (Modifica in corso). La sezione inferiore della finestra viene utilizzata solo per modificare il diagramma. Contiene una barra degli strumenti, una palette di attività (a sinistra) e il diagramma stesso (a destra).
+Devi ora definire le varie attività e collegarle nel diagramma. A questo punto della configurazione, è possibile visualizzare l’etichetta del diagramma e lo stato del flusso di lavoro (Modifica in corso). La sezione inferiore della finestra viene utilizzata solo per modificare il diagramma. Contiene una barra degli strumenti, una palette di attività (a sinistra) e il diagramma stesso (a destra).
 
 ![](assets/new-workflow-2.png)
 
@@ -70,21 +67,21 @@ Le attività sono raggruppate per categoria all&#39;interno delle diverse schede
 * La terza scheda contiene gli strumenti e le azioni che è possibile utilizzare nel flusso di lavoro. Tali attività sono descritte in dettaglio nelle attività [](../../workflow/using/about-action-activities.md)d&#39;azione.
 * La quarta scheda contiene le attività che dipendono da un determinato evento, ad esempio la ricezione di un&#39;e-mail o l&#39;arrivo di un file su un server. Tali attività sono dettagliate nelle attività [](../../workflow/using/about-event-activities.md)Evento.
 
-Creazione del diagramma
+Per creare il diagramma
 
 1. Per aggiungere un&#39;attività, selezionatela nella palette e spostatela nel diagramma mediante un&#39;operazione di trascinamento.
 
-   Aggiungete un&#39;attività **Start** e quindi un&#39;attività **Delivery** nel diagramma.
+   Add a **Start** activity and then a **Delivery** activity on the diagram.
 
    ![](assets/new-workflow-3.png)
 
-1. Collegate le attività trascinando la transizione **Avvia** attività e rilasciandola sull&#39;attività **Consegna** .
+1. Link the activities together by dragging the **Start** activity transition and dropping it on to the **Delivery** activity.
 
    ![](assets/new-workflow-4.png)
 
    Potete collegare automaticamente un&#39;attività alla precedente inserendo la nuova attività alla fine della transizione.
 
-1. Aggiungete le attività necessarie e collegatele come mostrato nel diagramma seguente.
+1. Aggiungi le attività necessarie e collegale come mostrato nel diagramma seguente.
 
    ![](assets/new-workflow-5.png)
 
@@ -142,7 +139,7 @@ Tutte queste attività si trovano nella prima scheda del flusso di lavoro.
 >
 >Le attività di targeting sono descritte in [questa sezione](../../workflow/using/about-activities.md).
 
-I flussi di lavoro di targeting possono essere creati e modificati tramite il **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nodo della struttura di Adobe Campaign o tramite il **[!UICONTROL Profiles and Targets > Targeting workflows]** menu della home page.
+I flussi di lavoro di targeting possono essere creati e modificati tramite il **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nodo della struttura di Adobe Campaign  o tramite il **[!UICONTROL Profiles and Targets > Targeting workflows]** menu della home page.
 
 ![](assets/target_wf.png)
 
@@ -194,7 +191,7 @@ I flussi di lavoro delle campagne e gli esempi di implementazione sono descritti
 
 ## Flussi di lavoro tecnici {#technical-workflows}
 
-Adobe Campaign offre flussi di lavoro tecnici out-of-the-box. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di monitoraggio sulle consegne e impostare i processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite il **[!UICONTROL Administration > Production > Technical workflows]** nodo.
+I flussi di lavoro tecnici vengono forniti con  Adobe Campaign. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di monitoraggio sulle consegne e impostare i processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite il **[!UICONTROL Administration > Production > Technical workflows]** nodo.
 
 ![](assets/navtree.png)
 
@@ -216,7 +213,7 @@ I modelli di workflow contengono la configurazione globale delle proprietà ed e
 
 Potete creare nuovi modelli di flusso di lavoro basati su modelli esistenti o modificare direttamente un flusso di lavoro in un modello.
 
-I modelli di flusso di lavoro sono memorizzati nel **[!UICONTROL Resources > Templates > Workflow templates]** nodo della struttura di Adobe Campaign.
+I modelli di flusso di lavoro sono memorizzati nel **[!UICONTROL Resources > Templates > Workflow templates]** nodo della struttura di Adobe Campaign .
 
 ![](assets/s_advuser_wf_template_tree.png)
 
@@ -226,7 +223,7 @@ Oltre alle normali proprietà del flusso di lavoro, le proprietà del modello co
 
 ## Duplicazione dei flussi di lavoro {#duplicating-workflows}
 
-Potete duplicare diversi tipi di flussi di lavoro. Una volta duplicate, le modifiche del flusso di lavoro non vengono riportate nella copia del flusso di lavoro.
+Potete duplicare diversi tipi di flussi di lavoro. Una volta eseguita la duplicazione, le modifiche del flusso di lavoro non vengono riportate nella copia del flusso di lavoro.
 
 >[!CAUTION]
 >
