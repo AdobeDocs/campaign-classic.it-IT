@@ -1,7 +1,7 @@
 ---
-title: Deduplicazione
-seo-title: Deduplicazione
-description: Deduplicazione
+title: Deduplication
+seo-title: Deduplication
+description: Deduplication
 seo-description: null
 page-status-flag: never-activated
 uuid: 90dee589-ac45-442e-89ef-1c14bb22200d
@@ -11,19 +11,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
-# Deduplicazione{#deduplication}
+# Deduplication{#deduplication}
 
 Deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
 
@@ -42,7 +39,7 @@ Questo problema deve essere affrontato come segue:
 
 Per configurare una deduplicazione, immettete l’etichetta, il metodo e i criteri di deduplicazione, nonché le opzioni relative al risultato.
 
-Fate clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
+Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -55,7 +52,8 @@ Fate clic sul **[!UICONTROL Edit configuration...]** collegamento per definire l
    >[!NOTE]
    >
    >Se si utilizzano dati esterni come input, ad esempio da un file esterno, assicurarsi di selezionare l&#39; **[!UICONTROL Temporary schema]** opzione.
-Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezionare il criterio o i criteri da utilizzare:
+   >
+   >Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezionare il criterio o i criteri da utilizzare:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -68,11 +66,11 @@ Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezi
    Sono disponibili i seguenti metodi:
 
    * **[!UICONTROL Choose for me]**: seleziona in modo casuale il record da escludere dai duplicati.
-   * **[!UICONTROL Following a list of values]**: consente di definire un valore di priorità per uno o più campi. Per definire i valori, selezionare un campo o creare un&#39;espressione, quindi aggiungere i valori nella tabella appropriata. Per definire un nuovo campo, fare clic sul **[!UICONTROL Add]** pulsante situato sopra l&#39;elenco dei valori.
+   * **[!UICONTROL Following a list of values]**: ti consente di definire un valore di priorità per uno o più campi. Per definire i valori, seleziona un campo o crea un’espressione, quindi aggiungi i valori nella tabella appropriata. Per definire un nuovo campo, fai clic sul pulsante **[!UICONTROL Add]** situato sopra l’elenco dei valori.
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: consente di conservare i record per i quali il valore dell&#39;espressione selezionata non è vuoto come priorità.
+   * **[!UICONTROL Non-empty value]**: questo ti consente di conservare i record per i quali il valore dell’espressione selezionata non è vuoto come priorità.
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
@@ -87,7 +85,7 @@ Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezi
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Selezionare l&#39; **[!UICONTROL Generate complement]** opzione se si desidera sfruttare la popolazione rimanente. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
+   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
