@@ -1,7 +1,7 @@
 ---
-title: Tracciamento di un’applicazione Web
-seo-title: Tracciamento di un’applicazione Web
-description: Tracciamento di un’applicazione Web
+title: Tracking di un’applicazione web
+seo-title: Tracking di un’applicazione web
+description: Tracking di un’applicazione web
 seo-description: null
 page-status-flag: never-activated
 uuid: c087b40c-fd14-440f-8f38-33f5f68120a9
@@ -11,18 +11,18 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 3%
 
 ---
 
 
-# Tracciamento di un’applicazione Web{#tracking-a-web-application}
+# Tracking di un’applicazione web{#tracking-a-web-application}
 
-Adobe Campaign consente di monitorare e misurare le visite sulle pagine delle applicazioni Web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni Web (moduli, sondaggi online, pagine Web create con DCE, ecc.).
+ Adobe Campaign consente di monitorare e misurare le visite sulle pagine dell&#39;applicazione Web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni Web (moduli, sondaggi online, pagine Web create con DCE, ecc.).
 
 Potete quindi definire diversi percorsi di navigazione e valutarne il successo. I dati recuperati sono quindi disponibili nei rapporti di ogni applicazione.
 
@@ -42,6 +42,7 @@ I principali miglioramenti introdotti in questa versione sono i seguenti:
    * **Tasso** di conversione: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
    * **Frequenza** rimbalzo: numero di persone che hanno visualizzato solo il primo passo
    * **Tunnel** di conversione: tasso di perdita tra ciascun passaggio.
+
    Inoltre, un grafico di tipo **Settore** mostra la popolazione in base all&#39;origine.
 
 ## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
@@ -53,7 +54,7 @@ Per identificare da dove proviene il visitatore quando accede a un&#39;applicazi
 
    ![](assets/trackers_6.png)
 
-Per identificare l&#39;origine del traffico in un&#39;applicazione Web, Adobe Campaign cerca in successione le informazioni seguenti:
+Per identificare l&#39;origine del traffico in un&#39;applicazione Web,  Adobe Campaign cerca in successione le informazioni seguenti:
 
 1. l&#39;identificatore di consegna di origine, se esiste (cookie nlId),
 1. l&#39;identificatore della consegna esterna definito nelle proprietà dell&#39;applicazione Web, se esiste,
@@ -63,7 +64,7 @@ Per identificare l&#39;origine del traffico in un&#39;applicazione Web, Adobe Ca
 >
 >Il tracciamento anonimo è possibile solo se l’opzione corrispondente è stata attivata nella procedura guidata di distribuzione.
 >
->Per ulteriori informazioni, consulta la guida all’ [installazione](../../installation/using/deploying-an-instance.md).
+>For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
 
 ## Applicazioni Web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
