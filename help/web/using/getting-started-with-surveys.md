@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ Per creare un nuovo sondaggio, andate alla **[!UICONTROL Campaigns]** scheda o *
 
 ## Passaggio 2 - Selezione del modello {#step-2---selecting-the-template}
 
-Selezionate un modello di sondaggio, quindi assegnate al sondaggio un nome. Questo nome non verrà visualizzato dagli utenti finali, ma consente l&#39;identificazione del sondaggio in Adobe Campaign. Fare clic **[!UICONTROL Save]** per aggiungere il sondaggio all&#39;elenco delle applicazioni Web.
+Selezionate un modello di sondaggio, quindi assegnate al sondaggio un nome. Questo nome non verrà visualizzato dagli utenti finali, ma consente di identificare il sondaggio all&#39;interno  Adobe Campaign. Fare clic **[!UICONTROL Save]** per aggiungere il sondaggio all&#39;elenco delle applicazioni Web.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
@@ -67,7 +67,7 @@ Un sondaggio deve contenere **almeno** tre componenti: una pagina, una casella d
 
 ## Passaggio 4 - Creazione del contenuto della pagina {#step-4---creating-the-page-content}
 
-Nell&#39;esempio seguente viene utilizzata una pagina di **[!UICONTROL Page (v5 compatibility)]** tipo. Questo tipo di pagina è accessibile tramite il menu avanzato della **[!UICONTROL Edit]** scheda.
+Nell&#39;esempio seguente, viene utilizzata una pagina di **[!UICONTROL Page (v5 compatibility)]** tipo. Questo tipo di pagina è accessibile tramite il menu avanzato della **[!UICONTROL Edit]** scheda.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
