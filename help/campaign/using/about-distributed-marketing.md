@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## Introduzione {#introduction}
 
-Adobe Campaign offre un&#39;applicazione **Distributed Marketing** per l&#39;implementazione di campagne di cooperazione tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti di vendita, agenzie regionali, ecc.). Questa collaborazione si basa su un&#39;area di lavoro condivisa nota come **[!UICONTROL list of campaign packages]**, in cui i modelli e le istanze delle campagne create a livello centrale vengono offerti alle entità locali.
+ Adobe Campaign offre un&#39;applicazione **Distributed Marketing** per l&#39;implementazione di campagne di cooperazione tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti di vendita, agenzie regionali, ecc.). Questa collaborazione si basa su un&#39;area di lavoro condivisa nota come **[!UICONTROL list of campaign packages]**, in cui i modelli e le istanze delle campagne create a livello centrale vengono offerti alle entità locali.
 
 L&#39;entità centrale fornisce campagne che gli enti locali possono utilizzare. Le campagne vengono materializzate da pacchetti che rappresentano campagne locali o collaborative. Per utilizzare una campagna, l&#39;entità locale deve ordinarla e l&#39;ordine deve essere approvato.
 
 >[!CAUTION]
 >
->Il modulo Distributed Marketing è un&#39;opzione **Campaign** . Controllare il contratto di licenza.
+>Il modulo Distributed Marketing è un&#39;opzione **Campaign** . Controlla il contratto di licenza.
 
 ## Terminologia {#terminology}
 
@@ -41,7 +41,7 @@ Le entità centrali sono composte da operatori di marketing incaricati di specif
 Il modulo di marketing distribuito consente all&#39;entità centrale di:
 
 * impostare pacchetti campagna di marketing per entità locali,
-* aumentare il grado di autonomia delle entità locali rispetto alla loro scelta nella comunicazione cliente/potenziale, nel targeting, nei contenuti, ecc.
+* aumentare il grado di autonomia delle entità locali rispetto alla loro scelta nella comunicazione con i clienti/potenziali, nel targeting, nei contenuti, ecc.
 * gestire e controllare i costi,
 * gestire una rete di agenzie.
 
@@ -75,7 +75,7 @@ Fate riferimento a [Creazione di una campagna](../../campaign/using/creating-a-l
 
 Una campagna collaborativa è una campagna la cui pianificazione di **esecuzione è definita** dall&#39;entità centrale, che può essere utilizzata dall&#39;entità locale. Il contenuto rimane lo stesso per ogni entità locale, ma i costi vengono condivisi. Per partecipare, gli enti locali si iscrivono alla campagna collaborativa.
 
-* **[!UICONTROL Collaborative campaign (by form)]**: consigliato per campagne che coinvolgono fino a 300 entità locali. L&#39;entità locale può immettere parametri predefiniti per il targeting e la personalizzazione del contenuto in un modulo Web. Il modulo può essere un modulo Adobe Campaign o un modulo esterno (client extranet). Un amministratore funzionale può definire e configurare il modulo in base a un modello di modulo definito dall&#39;integratore. Per ordinare la campagna, l&#39;entità locale ha solo bisogno dell&#39;accesso Web.
+* **[!UICONTROL Collaborative campaign (by form)]**: consigliato per campagne che coinvolgono fino a 300 entità locali. L&#39;entità locale può immettere parametri predefiniti per il targeting e la personalizzazione del contenuto in un modulo Web. Il modulo può essere un modulo Adobe Campaign  o un modulo esterno (client extranet). Un amministratore funzionale può definire e configurare il modulo in base a un modello di modulo definito dall&#39;integratore. Per ordinare la campagna, l&#39;entità locale ha solo bisogno dell&#39;accesso Web.
 * **[!UICONTROL Collaborative campaign (by campaign)]**: consigliato per campagne indirizzate a dozzine di entità locali. Questo tipo di campagna crea campagne figlio per ogni entità locale. Una volta **[!UICONTROL collaborative campaign (by campaign)]** approvata dall&#39;entità centrale, la campagna viene resa disponibile all&#39;entità locale, che può modificarla. L&#39;esecuzione viene sincronizzata automaticamente tra le campagne padre e figlio. L&#39;entità locale deve avere accesso a un&#39;istanza per ordinare una campagna e parteciparvi.
 * **[!UICONTROL Collaborative campaign (by target approval)]**: consigliato per campagne indirizzate a diverse migliaia di enti locali. L&#39;entità locale riceve un elenco di contatti predefinito dall&#39;entità centrale. L&#39;entità locale decide se mantenere o meno determinati contatti in base al contenuto della campagna, tramite un modulo Web. Le entità locali sono dedotte dall&#39;elenco dei contatti selezionati. Per partecipare alla campagna, l&#39;entità locale ha solo bisogno dell&#39;accesso Web.
 * **[!UICONTROL Collaborative campaign (simple)]**: questa modalità assicura la compatibilità con i processi di esecuzione specifici delle versioni precedenti.
@@ -134,7 +134,7 @@ Le campagne Distributed Marketing vengono create e pubblicate dall&#39;entità c
 
 La procedura di implementazione dipende dal tipo di pacchetto campagna utilizzato e dai livelli di delega delle entità locali.
 
-### Integratore {#integrator-side}
+### Lato integratore {#integrator-side}
 
 1. Creare entità locali.
 1. Collegare i destinatari agli operatori che gestiscono le entità locali.
@@ -149,7 +149,7 @@ La procedura di implementazione dipende dal tipo di pacchetto campagna utilizzat
    * programma di esecuzione (data di contatto e data di estrazione), solo **** per gli operatori locali,
    * estensione dello schema di ordine con tutti i campi aggiuntivi necessari.
 
-1. Creare un modulo Web (Adobe o extranet) che consenta di visualizzare i parametri di localizzazione, valutare la destinazione e il budget, nonché visualizzare in anteprima il contenuto e approvare l&#39;ordine.
+1. Creare un modulo Web ( Adobe o extranet) che consenta di visualizzare i parametri di localizzazione, valutare la destinazione e il budget, nonché visualizzare in anteprima il contenuto e approvare l&#39;ordine.
 
    Per campagne **collaborative (per approvazione target)**, create la tabella in cui verranno salvate le approvazioni per ogni entità locale.
 
