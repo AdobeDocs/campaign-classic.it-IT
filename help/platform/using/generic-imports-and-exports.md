@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -31,9 +28,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite **[!UICONTROL Import]** e **[!UICONTROL Export]** attività. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. Se necessario, potete creare un&#39;importazione o un&#39;esportazione occasionale tramite il **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo della struttura ad Adobe Campaign .
+>Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite **[!UICONTROL Import]** e **[!UICONTROL Export]** attività. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. Se necessario, potete creare un&#39;importazione o un&#39;esportazione occasionale tramite il **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo della struttura di Adobe Campaign .
 
-È possibile:
+Puoi:
 
 * Create un modello di importazione o esportazione e configuratelo (vedete di seguito).
 * Creare un&#39;importazione o un&#39;esportazione: fare riferimento a [Esportazione di dati](../../platform/using/exporting-data.md) o [Importazione di dati](../../platform/using/importing-data.md).
@@ -45,7 +42,7 @@ ht-degree: 0%
 
 ## Creating a job template {#creating-a-job-template}
 
-I modelli di importazione ed esportazione sono memorizzati nella **[!UICONTROL Resources > Templates > Job templates]** directory della struttura  Adobi Campaign.
+I modelli di importazione ed esportazione sono memorizzati nella **[!UICONTROL Resources > Templates > Job templates]** directory della struttura di Adobe Campaign .
 
 ![](assets/s_ncs_user_export_wizard_template.png)
 
@@ -57,7 +54,7 @@ La procedura per la creazione di un modello di processo viene presentata in [Esp
 
 >[!NOTE]
 >
->Il modello nativo **[!UICONTROL Import block list]** è già configurato per importare un elenco di indirizzi e-mail aggiunti all&#39;elenco dei blocchi.
+>Il modello nativo **[!UICONTROL Import block list]** è già configurato per importare un elenco di indirizzi e-mail aggiunti al elenco Bloccati .
 > 
 >I modelli **[!UICONTROL New text import]** e **[!UICONTROL New text export]** consentono di configurare un’importazione o un’esportazione da zero.
 
@@ -67,7 +64,7 @@ Una volta configurato il modello, le operazioni di importazione ed esportazione 
 
 Tutte queste opzioni consentono di aprire la procedura guidata di [importazione](../../platform/using/importing-data.md) o [esportazione](../../platform/using/exporting-data.md#export-wizard) .
 
-* Nella **[!UICONTROL Profiles and targets]** sezione dell’area di lavoro  Adobe Campaign, fate clic sul **[!UICONTROL Jobs]** collegamento: viene visualizzato l’elenco delle importazioni e delle esportazioni esistenti.
+* Nella **[!UICONTROL Profiles and targets]** sezione  area di lavoro Adobe Campaign, fate clic sul **[!UICONTROL Jobs]** collegamento: viene visualizzato l’elenco delle importazioni e delle esportazioni esistenti.
 
    Fate clic sul **[!UICONTROL Create]** pulsante e selezionate il tipo di processo da eseguire.
 
@@ -77,7 +74,7 @@ Tutte queste opzioni consentono di aprire la procedura guidata di [importazione]
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* Importazioni ed esportazioni possono essere avviate anche dall&#39;esploratore di Adobi Campaign .
+* Importazioni ed esportazioni possono essere avviate anche da  Adobe Campaign Explorer.
 
    Per esportare/importare dati, fare clic sul **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo, quindi sull&#39; **[!UICONTROL New]** icona, quindi selezionare **[!UICONTROL Export]** o **[!UICONTROL Import]**. Viene aperta la procedura guidata appropriata.
 
