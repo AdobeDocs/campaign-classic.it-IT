@@ -1,7 +1,7 @@
 ---
-title: Ganci
-seo-title: Ganci
-description: Ganci
+title: Hook
+seo-title: Hook
+description: Hook
 seo-description: null
 page-status-flag: never-activated
 uuid: 4394717e-8625-4e2f-9492-3fd9b444a732
@@ -11,24 +11,24 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 1%
 
 ---
 
 
-# Ganci{#hooks}
+# Hook{#hooks}
 
 I blocchi in Interazione consentono di modificare il comportamento **** standard del motore.
 
-In Adobe Campaign, **[!UICONTROL Target loading]** i ganci e **[!UICONTROL Proposition post-processing]** i ganci sono configurati nello spazio delle offerte:
+I **[!UICONTROL Target loading]** ganci e **[!UICONTROL Proposition post-processing]** i ganci sono configurati, in  Adobe Campaign, nello spazio delle offerte:
 
 ![](assets/interaction_hooks_1.png)
 
-L&#39; **[!UICONTROL Dynamic offer]** amo è configurato con il peso dell&#39;offerta in Adobe Campaign:
+Il **[!UICONTROL Dynamic offer]** gancio è configurato con il peso dell&#39;offerta in  Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -137,7 +137,7 @@ In precedenza, l&#39;integratore dovrebbe estendere lo schema **PropositionRcp**
 
 **Parametri restituiti:**
 
-Viene restituito un elenco di proposte da generare. Ciascun elemento di questa tabella è costituito dalle seguenti informazioni:
+Viene restituito un indice di proposizioni da generare. Ciascun elemento di questa tabella è costituito dalle seguenti informazioni:
 
 * offer identifier
 * dati di prodotto aggiuntivi (ad esempio, codice prodotto)
