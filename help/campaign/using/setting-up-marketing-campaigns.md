@@ -11,19 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Impostazione di campagne di marketing{#setting-up-marketing-campaigns}
+# Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 Le campagne includono azioni (consegne) e processi (importazione o estrazione di file), nonché risorse (documenti di marketing, linee di consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
@@ -79,7 +76,7 @@ Per configurare la gerarchia di cartelle per i piani e i programmi di marketing:
 
 ### Aggiunta di una campagna {#adding-a-campaign}
 
-È possibile creare una campagna tramite l&#39;elenco delle campagne. Per visualizzare questa visualizzazione, selezionate il **[!UICONTROL Campaigns]** menu nel **[!UICONTROL Campaigns]** dashboard.
+Potete creare una campagna tramite l&#39;elenco delle campagne. Per visualizzare questa visualizzazione, selezionate il **[!UICONTROL Campaigns]** menu nel **[!UICONTROL Campaigns]** dashboard.
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -121,7 +118,7 @@ Una campagna ricorrente è una campagna basata su un modello specifico, i cui fl
 
 Una campagna periodica è una campagna creata automaticamente in base alla pianificazione di esecuzione del modello.
 
-### Creazione di una campagna ricorrente {#creating-a-recurring-campaign}
+### Creating a recurring campaign {#creating-a-recurring-campaign}
 
 Le campagne ricorrenti vengono create da un modello specifico che definisce il modello di flusso di lavoro da eseguire e il programma di esecuzione.
 
@@ -175,6 +172,7 @@ Per creare la campagna ricorrente ed eseguirne i flussi di lavoro in base alla p
 
    * **[!UICONTROL To be approved]** : consente di forzare le richieste di approvazione della consegna nel flusso di lavoro.
    * **[!UICONTROL To be started]** : consente di avviare il flusso di lavoro una volta raggiunta la data di inizio.
+
    Il **[!UICONTROL Create in advance for]** campo consente di creare tutti i flussi di lavoro che coprono il periodo immesso.
 
    Dopo l&#39;esecuzione del **[!UICONTROL Jobs on campaigns]** flusso di lavoro, i flussi di lavoro dedicati vengono creati in base alle occorrenze definite nella pianificazione della campagna. Viene quindi creato un flusso di lavoro per ogni data di esecuzione.
@@ -198,7 +196,7 @@ Per creare la campagna ricorrente ed eseguirne i flussi di lavoro in base alla p
    >La data di inizio della riga di pianificazione associata al flusso di lavoro è disponibile da una variabile del flusso di lavoro con la sintassi seguente:\
    >`$date(instance/vars/@startPlanningDate)`
 
-### Creazione di una campagna periodica {#creating-a-periodic-campaign}
+### Creating a periodic campaign {#creating-a-periodic-campaign}
 
 Una campagna periodica è una campagna basata su un modello specifico che consente di creare istanze di campagna basate su una pianificazione di esecuzione. Le istanze delle campagne vengono create automaticamente in base a un modello di campagna periodico, a seconda della frequenza definita nella pianificazione del modello.
 
@@ -228,7 +226,7 @@ Una campagna periodica è una campagna basata su un modello specifico che consen
 
    >[!IMPORTANT]
    >
-   >I modelli delle campagne periodiche creano nuove campagne in base alla pianificazione precedentemente definita. Deve pertanto essere completato con attenzione, per evitare di sovraccaricare il database di Adobe Campaign.
+   >I modelli delle campagne periodiche creano nuove campagne in base alla pianificazione precedentemente definita. Occorre pertanto completarlo con attenzione, per evitare di sovraccaricare il database Adobe Campaign .
 
 1. Una volta raggiunta la data di inizio dell&#39;esecuzione, la campagna corrispondente viene creata automaticamente. Prende in considerazione tutte le caratteristiche del modello.
 
