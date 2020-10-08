@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: b9846eda-eeca-433e-b961-6dfc2aa2708b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -27,11 +24,11 @@ ht-degree: 1%
 
 ## Principio di funzionamento {#operating-principle}
 
-Adobe Campaign consente di esprimere le date in funzione del relativo fuso orario: questo consente agli utenti internazionali di lavorare in tutto il mondo su diversi fusi orari. Ogni paese che utilizza la stessa istanza può gestire l&#39;esecuzione di campagne, il tracciamento, l&#39;archiviazione, ecc. a seconda dell&#39;ora locale.
+ Adobe Campaign consente di esprimere le date in funzione del relativo fuso orario: questo consente agli utenti internazionali di lavorare in tutto il mondo su diversi fusi orari. Ogni paese che utilizza la stessa istanza può gestire l&#39;esecuzione di campagne, il tracciamento, l&#39;archiviazione, ecc. a seconda dell&#39;ora locale.
 
-Per abilitare l&#39;uso della piattaforma Adobe Campaign su scala internazionale, tutte le date utilizzate dai sistemi devono essere collegabili a un fuso orario. Una data il cui fuso orario è noto può quindi essere importata in qualsiasi altro fuso orario, o a prescindere dal fuso orario.
+Per consentire l&#39;uso della piattaforma Adobe Campaign  su scala internazionale, tutte le date utilizzate dai sistemi devono essere collegabili a un fuso orario. Una data il cui fuso orario è noto può quindi essere importata in qualsiasi altro fuso orario, o a prescindere dal fuso orario.
 
-Adobe Campaign consente di memorizzare le date/ore nel formato UTC (ora universale coordinata). Quando i dati sono esposti, vengono convertiti nella data/ora locale dell&#39;operatore. La conversione viene eseguita automaticamente quando il database è configurato in UTC (vedere [Configurazione](#configuration)). Se il database non è configurato in UTC, le informazioni relative al fuso orario delle date nella piattaforma vengono memorizzate in un&#39;opzione.
+ Adobe Campaign consente di memorizzare le date/ore in formato UTC (Coordinated Universal Time). Quando i dati sono esposti, vengono convertiti nella data/ora locale dell&#39;operatore. La conversione viene eseguita automaticamente quando il database è configurato in UTC (vedere [Configurazione](#configuration)). Se il database non è configurato in UTC, le informazioni relative al fuso orario delle date nella piattaforma vengono memorizzate in un&#39;opzione.
 
 Le principali funzionalità della piattaforma per la gestione del fuso orario sono: importazione/esportazione di dati e gestione di operatori e flussi di lavoro. Il concetto **di** ereditarietà è disponibile per le importazioni/esportazioni o per i flussi di lavoro. Per impostazione predefinita, sono configurati per il fuso orario del server del database, tuttavia è possibile ridefinire nuovi fusi orari per un flusso di lavoro e anche per una singola attività.
 
@@ -41,11 +38,11 @@ Le principali funzionalità della piattaforma per la gestione del fuso orario so
 >
 >Se il database non gestisce più fusi orari, per tutte le manipolazioni dei filtri dati è necessario eseguire query SQL nel fuso orario del server del database.
 
-Ciascun operatore Adobe Campaign è collegato a un fuso orario: queste informazioni sono configurate nel relativo profilo. For more on this, refer to [this document](../../platform/using/access-management.md).
+Ogni operatore Adobe Campaign  è collegato a un fuso orario: queste informazioni sono configurate nel relativo profilo. For more on this, refer to [this document](../../platform/using/access-management.md).
 
-Se la piattaforma Adobe Campaign non richiede la gestione del fuso orario, puoi mantenere una modalità di archiviazione in formato locale con un fuso orario collegato specifico.
+Se la piattaforma Adobe Campaign  non richiede la gestione del fuso orario, è possibile mantenere una modalità di memorizzazione in formato locale con un fuso orario collegato specifico.
 
-## Recommendations {#recommendations}
+## Raccomandazioni {#recommendations}
 
 I fusi orari combinano diverse realtà: l&#39;espressione può descrivere un intervallo di tempo costante con la data UTC o con gli orari di una regione che possono cambiare due volte all&#39;anno (ora legale).
 
@@ -60,13 +57,13 @@ La modalità di memorizzazione per le date e le ore è selezionata durante la cr
 Dal punto di vista tecnico, nel database sono disponibili due modi per memorizzare le informazioni relative al tipo di **data+ora** :
 
 1. TIMESTAMP CON IL FORMATO TIMEZONE: il motore del database memorizza le date in UTC. Ogni sessione aperta avrà un fuso orario e le date verranno convertite in base ad esso.
-1. Formato locale + fuso orario locale: tutte le date sono memorizzate nel formato locale (nessuna gestione del time-lag) e viene loro assegnato un unico fuso orario. Il fuso orario è memorizzato nell’opzione **WdbcTimeZone** dell’istanza Adobe Campaign e può essere modificato mediante il **[!UICONTROL Administration > Platform > Options]** menu della struttura.
+1. Formato locale + fuso orario locale: tutte le date sono memorizzate nel formato locale (nessuna gestione del time-lag) e viene loro assegnato un unico fuso orario. Il fuso orario viene memorizzato nell’opzione **WdbcTimeZone** dell’istanza Adobe Campaign  e può essere modificato mediante il **[!UICONTROL Administration > Platform > Options]** menu della struttura.
 
 >[!IMPORTANT]
 >
 >Tieni presente che questa modifica può causare problemi di coerenza dei dati e sincronizzazione.
 
-### Creazione di una nuova istanza {#creating-a-new-instance}
+### Creating a new instance {#creating-a-new-instance}
 
 Affinché diversi utenti internazionali possano lavorare sulla stessa istanza, è necessario configurare i fusi orari al momento della creazione dell&#39;istanza per gestire i periodi di tempo tra i paesi. Durante la creazione dell&#39;istanza, selezionate la modalità di gestione della data e dell&#39;ora nella **[!UICONTROL Time zone]** sezione del passaggio di configurazione del database.
 
@@ -90,7 +87,7 @@ In caso contrario, vengono memorizzati nel formato locale e sarà necessario sel
 
 Durante la migrazione a una versione precedente (senza gestione del fuso orario), sarà necessario definire la modalità di archiviazione delle date nel database.
 
-Per garantire la compatibilità con gli strumenti esterni che accedono al database di Adobe Campaign, i campi SQL di tipo **Date+time** rimangono memorizzati nel formato locale per impostazione predefinita.
+Per garantire la compatibilità con gli strumenti esterni che accedono al database Adobe Campaign , i campi SQL di tipo **Date+time** rimangono memorizzati in formato locale per impostazione predefinita.
 
 I campi XML contenenti le date sono ora memorizzati in UTC. Durante il caricamento, i campi non in formato UTC vengono convertiti automaticamente utilizzando il fuso orario dei server. Ciò significa che tutti i campi XML verranno progressivamente convertiti in formato UTC.
 
