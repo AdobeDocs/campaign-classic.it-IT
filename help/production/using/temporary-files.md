@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f18237b0-ef54-46a6-9c14-34b038f9de18
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ Se compaiono messaggi di errore come i seguenti (in particolare nei registri di 
 
 La causa è la seguente:
 
-Adobe Campaign genera file temporanei sotto **/tmp**, quindi li rinomina per spostarli in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico a **/var/nl6**) corrispondono a diversi dispositivi. Il comando **df** viene utilizzato per la verifica.
+ Adobe Campaign genera file temporanei sotto **/tmp**, quindi li rinomina per spostarli in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico a **/var/nl6**) corrispondono a diversi dispositivi. Il comando **df** viene utilizzato per la verifica.
 
 Per risolvere il problema, i file temporanei devono essere generati nello stesso dispositivo della destinazione. Ad esempio, eseguendo:
 
