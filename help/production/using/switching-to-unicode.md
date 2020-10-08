@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
@@ -100,7 +100,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    /etc/init.d/apache start
    ```
 
-1. Confermare l&#39;interruttore. A questo scopo, connettiti tramite la console di Adobe Campaign e:
+1. Confermare l&#39;interruttore. A questo scopo, collegatevi tramite la  console Adobe Campaign e:
 
    * verificare che i dati siano visualizzati correttamente, in particolare i caratteri accentuati:
    * avviare una consegna e verificare che il recupero del tracciamento funzioni.
