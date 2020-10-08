@@ -1,7 +1,7 @@
 ---
-title: Tracciamento di una campagna
-seo-title: Tracciamento di una campagna
-description: Tracciamento di una campagna
+title: Tracking di una campagna
+seo-title: Tracking di una campagna
+description: Tracking di una campagna
 seo-description: null
 page-status-flag: never-activated
 uuid: 66919c81-b22c-4138-a654-ea53154ba718
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: e1f8958d-f036-4635-be6e-ebdbea6ac116
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
 
-# Tracciamento di una campagna{#tracking-a-campaign}
+# Tracking di una campagna{#tracking-a-campaign}
 
 Gli operatori di entità centrale possono tenere traccia degli ordini delle campagne nell&#39;elenco dei pacchetti delle campagne.
 
@@ -31,7 +31,7 @@ Questo consente di:
 * [Annullare un pacchetto](#cancel-a-package),
 * [Reinizializzazione di un pacchetto](#reinitializing-a-package).
 
-## Pacchetti filtro {#filter-packages}
+## Filtrare i pacchetti {#filter-packages}
 
 Da **[!UICONTROL Campaigns universe]**, potete visualizzare l&#39;elenco dei **[!UICONTROL Campaign packages]** raggruppamenti di tutte le campagne Distributed Marketing esistenti. Potete filtrare questo elenco in modo che visualizzi solo le campagne pubblicate, in ritardo, in attesa di approvazione, ecc. A questo scopo, fate clic sui collegamenti nella sezione superiore della vista oppure utilizzate il **[!UICONTROL Filter list]** collegamento e selezionate lo stato del pacchetto della campagna da visualizzare.
 
@@ -45,7 +45,7 @@ Questo riepilogo mostra le seguenti informazioni: etichetta, tipo di campagna, n
 
 Fate clic sul nome del pacchetto per modificarlo. Potete inoltre visualizzare gli ordini in base alle entità locali e al relativo stato.
 
-Queste informazioni sono disponibili anche nella **[!UICONTROL Campaign orders]** visualizzazione che elenca tutti gli ordini.
+Queste informazioni sono disponibili anche nella **[!UICONTROL Campaign orders]** visualizzazione in cui sono elencati tutti gli ordini.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -55,7 +55,7 @@ L&#39;operatore centrale può modificare l&#39;ordine. Esistono due modi per far
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   La **[!UICONTROL Edit > General]** scheda consente di visualizzare le informazioni immesse dall&#39;entità locale quando ha ordinato la campagna.
+   La **[!UICONTROL Edit > General]** scheda consente di visualizzare le informazioni immesse dall&#39;entità locale al momento dell&#39;ordine della campagna.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -93,7 +93,7 @@ I pacchetti annullati possono essere ancora accessibili e reinizializzati dall&#
 
 ## Reinizializzazione di un pacchetto {#reinitializing-a-package}
 
-I pacchetti campagna già pubblicati possono essere reinizializzati, modificati e resi disponibili alle entità locali.
+I pacchetti campagna che sono già stati pubblicati possono essere reinizializzati, modificati e resi disponibili alle entità locali.
 
 1. Selezionare il pacchetto interessato.
 1. Fate clic sul **[!UICONTROL Reinitialize the package to reuse it]** collegamento e fate clic su **[!UICONTROL OK]**.
