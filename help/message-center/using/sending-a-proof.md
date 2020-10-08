@@ -11,16 +11,16 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 8%
 
 ---
 
 
-# Invio di una prova{#sending-a-proof}
+# Invio di una bozza{#sending-a-proof}
 
 È possibile verificare la consegna dei messaggi inviando una prova a un indirizzo seed creato in precedenza.
 
