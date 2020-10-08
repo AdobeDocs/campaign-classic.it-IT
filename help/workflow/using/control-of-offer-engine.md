@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: 8b6d5f89-a904-47d8-bfb7-5dd383fc1f63
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 32%
 
 ---
 
@@ -32,8 +32,8 @@ Il flusso di lavoro riportato di seguito viene installato con il **controllo del
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Sincronizzazione</span> proposta <br /> </td> 
-   <td> <span class="uicontrol">propositionSynch</span><br /> </td> 
+   <td> <span class="uicontrol">Sincronizzazione proposta</span> <br /> </td> 
+   <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
    <td> Questo flusso di lavoro sincronizza le proposizioni tra l'istanza di marketing e l'istanza di esecuzione utilizzata per le interazioni.<br /> </td> 
   </tr> 
  </tbody> 
