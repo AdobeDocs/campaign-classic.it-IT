@@ -11,11 +11,8 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 11%
@@ -197,7 +194,7 @@ Per configurare questo account esterno per l&#39;utilizzo con  Adobe Campaign, d
 
 ### Conto esterno Teradata {#teradata-external-account}
 
-L&#39;account esterno **Teradata** consente di collegare l&#39;istanza Campaign al database esterno Teradata. Per ulteriori informazioni su come configurare il Campaign Classic con Teradata, consulta questa [pagina](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) o questa [sezione](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+L&#39;account esterno **Teradata** consente di collegare l&#39;istanza Campaign al database esterno Teradata. Per ulteriori informazioni su come configurare il Campaign Classic con Teradata, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/campaign_fda_teradata.html) o questa [sezione](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
 
 ![](assets/ext_account_19.png)
 
@@ -321,7 +318,7 @@ Per connettersi alla console  Adobe Campaign utilizzando un Adobe ID , è necess
 
 * **[!UICONTROL Callback server]**
 
-   URL di accesso dell’istanza  Adobe Campaign.
+   URL di accesso dell’istanza di Adobe Campaign .
 
 * **[!UICONTROL IMS organization ID]**
 
