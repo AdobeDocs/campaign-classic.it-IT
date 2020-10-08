@@ -1,7 +1,7 @@
 ---
-title: Caratteristiche dello schema
-seo-title: Caratteristiche dello schema
-description: Caratteristiche dello schema
+title: Caratteristiche di uno schema
+seo-title: Caratteristiche di uno schema
+description: Caratteristiche di uno schema
 seo-description: null
 page-status-flag: never-activated
 uuid: ca8eb7af-ef22-403a-8f04-ece5dc903174
@@ -11,30 +11,30 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 441e80e1-0559-41fd-83e8-afdf94279e75
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
 
-# Caratteristiche dello schema{#schema-characteristics}
+# Caratteristiche di uno schema{#schema-characteristics}
 
 Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono le seguenti:
 
-* Adobe Campaign non deve modificare gli oggetti SQL relativi alle tabelle esistenti,
+*  Adobe Campaign non deve modificare gli oggetti SQL relativi alle tabelle esistenti,
 * È necessario specificare esplicitamente i nomi delle tabelle e delle colonne,
 * Gli indici devono essere dichiarati.
 
 >[!IMPORTANT]
 >
->Non eliminare i campi nella tabella dei destinatari standard, anche se inutili. Ciò potrebbe causare errori comportamentali nel database Adobe Campaign.
+>Non eliminare i campi nella tabella dei destinatari standard, anche se inutili. Ciò potrebbe causare errori comportamentali nel database Adobe Campaign .
 
 ## L&#39;attributo view {#the-view-attribute}
 
-Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema** . Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. Pertanto, all&#39;applicazione non è consentito sincronizzare la tabella, le relative colonne e i relativi indici con lo schema corrispondente.
+Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema** . Deve essere utilizzato quando  Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. Pertanto, all&#39;applicazione non è consentito sincronizzare la tabella, le relative colonne e i relativi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
