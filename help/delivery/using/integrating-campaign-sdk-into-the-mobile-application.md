@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f3ef7b0a7b656f81400ed55a713058d43e6c96b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -23,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# Integrazione di Campaign SDK nell&#39;applicazione mobile {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrazione dell’SDK Campaign nell’app mobile {#integrating-campaign-sdk-into-the-mobile-application}
 
 Gli SDK delle campagne per iOS e Android sono uno dei componenti del modulo Canale app mobile.
 
 >[!NOTE]
 >
->Per ottenere l&#39;SDK di Campaign (precedentemente noto come Neolane SDK), contatta l&#39;Assistenza clienti Adobe.
+>Per ottenere l&#39;SDK di Campaign (precedentemente noto come Neolane SDK), contatta &#39;Assistenza clienti del Adobe.
 
-L’obiettivo dell’SDK è quello di facilitare l’integrazione di un’applicazione mobile nella piattaforma di Adobe Campaign .
+L’obiettivo dell’SDK è quello di facilitare l’integrazione di un’applicazione mobile nella piattaforma Adobe Campaign .
 
 Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, fare riferimento alla matrice [di](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) compatibilità.
 
@@ -39,7 +36,7 @@ Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, f
 
 * **In Android**: il file **neolane_sdk-release.aar** deve essere collegato al progetto.
 
-   La seguente autorizzazione consente di accedere al server del Adobe Campaign :
+   La seguente autorizzazione consente di accedere al server Adobe Campaign :
 
    ```
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -67,13 +64,13 @@ Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, f
 
 Per integrare Campaign SDK nell&#39;applicazione mobile, l&#39;amministratore funzionale deve fornire allo sviluppatore le seguenti informazioni:
 
-* **Una chiave** di integrazione: per abilitare la piattaforma di Adobe Campaign  per identificare l&#39;applicazione mobile.
+* **Una chiave** di integrazione: per abilitare la piattaforma Adobe Campaign  per identificare l&#39;applicazione mobile.
 
    >[!NOTE]
    >
    >Questa chiave di integrazione viene immessa nella console  Adobe Campaign, nella **[!UICONTROL Information]** scheda del servizio dedicata all’applicazione mobile. Consultare [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-* **Un URL** di tracciamento: che corrisponde all&#39;indirizzo del server di tracciamento  Adobe Campaign.
+* **Un URL** di tracciamento: che corrisponde all&#39;indirizzo del server di tracciamento Adobe Campaign .
 * **Un URL** di marketing: per abilitare la raccolta di sottoscrizioni.
 
 * **In Android**:
@@ -97,7 +94,7 @@ Per integrare Campaign SDK nell&#39;applicazione mobile, l&#39;amministratore fu
 
 La funzione di registrazione consente di:
 
-* inviate l&#39;ID notifica o l&#39;ID push (deviceToken per iOS e registrationID per Android) al  Adobe Campaign.
+* inviate l&#39;ID notifica o l&#39;ID push (deviceToken per iOS e registrationID per Android) a  Adobe Campaign.
 * recuperare la chiave di riconciliazione o userKey (ad esempio, e-mail o numero account)
 
 * **In Android**:
@@ -115,7 +112,7 @@ La funzione di registrazione consente di:
    }
    ```
 
-   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **registerDevice** quando chiami la funzione **onTokenRefresh** per notificare  Adobe Campaign la modifica nel token del dispositivo mobile dell&#39;utente.
+   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **registerDevice** quando chiami la funzione **onTokenRefresh** per notificare  Adobe Campaign la modifica apportata al token del dispositivo mobile dell&#39;utente.
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -153,7 +150,7 @@ La funzione di registrazione consente di:
 
 * **In Android**:
 
-   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (schermata).
+   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (screenshot).
 
    Per tenere traccia della visualizzazione delle notifiche (richiamando la funzione **notificationReceive** dell’SDK), segui l’implementazione riportata di seguito. Se utilizzate FCM (Firebase Cloud Messaging), consigliamo di utilizzare la funzione **notificationReceive** quando la funzione **onMessageReceived** viene chiamata dal sistema Android.
 
@@ -389,14 +386,14 @@ Il prototipo **registerDeviceStatus** è:
    <td> Ulteriori informazioni (nella lingua corrente del sistema operativo)<br /> </td>
   </tr>
   <tr> 
-   <td> ACCRegisterDeviceStatusFailedUnknownUUID<br /> </td>
+   <td> ACCRegisterDeviceStatusFailedUnknownUID<br /> </td>
    <td> L'UUID fornito (chiave di integrazione) è sconosciuto.<br /> </td>
    <td> VUOTO<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailedUnexpectedError<br /> </td>
    <td> Errore imprevisto restituito al server ACC.<br /> </td>
-   <td> Messaggio di errore restituito ad ACC.<br /> </td>
+   <td> Il messaggio di errore è stato restituito ad ACC.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -539,7 +536,7 @@ Per implementare **registerDeviceStatus** delegate, effettua le seguenti operazi
 
 ## Variabili {#variables}
 
-Le variabili consentono di definire il comportamento dell’applicazione mobile dopo la ricezione di una notifica. Queste variabili devono essere definite nel codice dell’applicazione mobile e nella console del Adobe Campaign , nella **[!UICONTROL Variables]** scheda del servizio dedicato dell’applicazione mobile (consultate [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Di seguito è riportato un esempio di codice che consente a un&#39;applicazione mobile di raccogliere eventuali variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
+Le variabili consentono di definire il comportamento dell’applicazione mobile dopo la ricezione di una notifica. Queste variabili devono essere definite nel codice dell’applicazione mobile e nella  console Adobe Campaign, nella **[!UICONTROL Variables]** scheda del servizio applicazione mobile dedicato (consultate [Configurazione di un’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Di seguito è riportato un esempio di codice che consente a un&#39;applicazione mobile di raccogliere eventuali variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -583,7 +580,7 @@ Le variabili consentono di definire il comportamento dell’applicazione mobile 
 
 >[!CAUTION]
 >
->Adobe consiglia di scegliere nomi di variabili brevi perché la dimensione di notifica è limitata a 4 kB per iOS e Android.
+> Adobe consiglia di scegliere nomi di variabili brevi perché la dimensione di notifica è limitata a 4kB per iOS e Android.
 
 ## Estensione del servizio di notifica {#notification-service-extension}
 
@@ -625,9 +622,9 @@ Il supporto deve essere scaricato a livello di estensione del servizio di notifi
 
 A questo livello, è necessario:
 
-* Associate l&#39;estensione di contenuto alla categoria inviata dal Adobe Campaign :
+* Associate l&#39;estensione di contenuto alla categoria inviata da  Adobe Campaign:
 
-   Se desiderate che l’applicazione mobile visualizzi un’immagine, potete impostare il valore della categoria su &quot;image&quot; nel Adobe Campaign  e nell’applicazione mobile, create un’estensione di notifica con il parametro **UNNotificationExtensionCategory** impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l&#39;estensione viene chiamata in base al valore della categoria definito.
+   Se desiderate che l’applicazione mobile visualizzi un’immagine, potete impostare il valore della categoria su &quot;image&quot; in  Adobe Campaign e nell’applicazione mobile, create un’estensione di notifica con il parametro **UNNotificationExtensionCategory** impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l&#39;estensione viene chiamata in base al valore della categoria definito.
 
 * Definire il layout di notifica
 
