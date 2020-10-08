@@ -1,7 +1,7 @@
 ---
-title: Definizione delle proprietà dei moduli Web
-seo-title: Definizione delle proprietà dei moduli Web
-description: Definizione delle proprietà dei moduli Web
+title: Definizione delle proprietà dei moduli web
+seo-title: Definizione delle proprietà dei moduli web
+description: Definizione delle proprietà dei moduli web
 seo-description: null
 page-status-flag: never-activated
 uuid: 2fb0952a-5f73-48f5-b344-e3247cefca62
@@ -11,16 +11,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: 36953eb5-3296-4796-9352-945121bbdc69
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 1%
 
 ---
 
 
-# Definizione delle proprietà dei moduli Web{#defining-web-forms-properties}
+# Definizione delle proprietà dei moduli web{#defining-web-forms-properties}
 
 I moduli Web sono completamente configurabili e personalizzabili per soddisfare le tue esigenze. I parametri devono essere inseriti nella finestra delle proprietà.
 
@@ -60,7 +60,7 @@ Il contenuto delle stringhe visualizzate è definito nella **[!UICONTROL Error p
 
 La **[!UICONTROL Localization]** scheda consente di selezionare le lingue di progettazione e visualizzazione del modulo Web.
 
-Vedere [Traduzione di un modulo](../../web/using/translating-a-web-form.md)Web.
+See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Esplorazione e rendering dei moduli {#form-browsing-and-rendering}
 
@@ -70,7 +70,7 @@ La **[!UICONTROL Rendering]** scheda consente di definire il tipo di esplorazion
 
 ![](assets/s_ncs_admin_survey_wz_02_navig_type.png)
 
-I pulsanti sono gli elementi di navigazione per impostazione predefinita. Consentono di eseguire le azioni seguenti:
+Per impostazione predefinita, i pulsanti sono gli elementi di navigazione. Consentono di eseguire le azioni seguenti:
 
 * Approva la pagina corrente e visualizza la pagina successiva facendo clic su **[!UICONTROL Next]**. Questo pulsante viene visualizzato su tutte le pagine tranne l&#39;ultima.
 * Visualizzare la pagina precedente facendo clic su **[!UICONTROL Previous]**. Questo pulsante viene visualizzato su tutte le pagine tranne la prima.
@@ -94,7 +94,7 @@ Nella parte inferiore della finestra delle proprietà viene visualizzato un rend
 
 La **[!UICONTROL Page]** scheda consente di definire il contenuto dell&#39;intestazione e del piè di pagina del modulo. Vedere [Definizione di intestazioni e piè di pagina](../../web/using/form-rendering.md#defining-headers-and-footers).
 
-Consente inoltre di gestire le traduzioni. Vedere [Traduzione di un modulo](../../web/using/translating-a-web-form.md)Web.
+Consente inoltre di gestire le traduzioni. See [Translating a web form](../../web/using/translating-a-web-form.md).
 
 ## Accessibilità del modulo {#accessibility-of-the-form}
 
@@ -106,7 +106,7 @@ Il periodo di validità va dalla **[!UICONTROL Start]** data alla **[!UICONTROL 
 
 >[!NOTE]
 >
->Se il modulo è chiuso, e quindi il periodo di validità non è stato raggiunto o è scaduto, o se è stato chiuso dall&#39;operatore Adobe Campaign, viene visualizzato un messaggio quando l&#39;utente tenta di accedervi. Puoi personalizzare il messaggio facendo clic su **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Se il modulo è chiuso e il periodo di validità non è stato raggiunto o è scaduto, o se è stato chiuso dall&#39;operatore Adobe Campaign , viene visualizzato un messaggio quando l&#39;utente tenta di accedervi. Puoi personalizzare il messaggio facendo clic su **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
 ## Controllo accesso modulo {#form-access-control}
 
@@ -120,7 +120,7 @@ Quando si accede alla pagina, viene visualizzato il seguente modulo di autentica
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Login e password sono quelli utilizzati dagli operatori di Adobe Campaign. For more on this, refer to [this section](../../platform/using/access-management.md).
+Login e password sono quelli utilizzati dagli operatori  Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md).
 
 L&#39; **[!UICONTROL Use a specific account]** opzione consente di limitare l&#39;autorizzazione di lettura o scrittura dell&#39;operatore che accede al modulo. Utilizzare la casella a discesa per selezionare un operatore o un gruppo di operatori che si occuperà di concedere tali autorizzazioni.
 
@@ -130,7 +130,7 @@ L&#39; **[!UICONTROL Use a specific account]** opzione consente di limitare l&#3
 
 È possibile aggiungere parametri aggiuntivi nell&#39;URL di un modulo per personalizzare il contenuto e inizializzare un contesto (lingua, ID destinatario crittografato, società, formula calcolata memorizzata in una variabile, ecc.). Questo consente di accedere a un modulo tramite diversi URL e di personalizzare il contenuto della pagina in base al valore dei parametri indicati nell’URL.
 
-Per impostazione predefinita, Adobe Campaign offre parametri per visualizzare l&#39;anteprima del modulo e verificare gli errori. È possibile creare nuove impostazioni collegate al modulo, che possono utilizzare i valori di un campo nel database o di una variabile locale.
+Per impostazione predefinita,  Adobe Campaign offre parametri per la visualizzazione dell&#39;anteprima del modulo e per il controllo degli errori. È possibile creare nuove impostazioni collegate al modulo, che possono utilizzare i valori di un campo nel database o di una variabile locale.
 
 ## Parametri standard {#standard-parameters}
 
@@ -145,11 +145,11 @@ Per impostazione predefinita sono disponibili i seguenti parametri:
 
    **_anteprima** per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di prova.
 
-   **_debug** per visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, anche dopo la pubblicazione del modulo.
+   **_debug** per visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, inclusa una volta che il modulo è stato pubblicato.
 
    >[!CAUTION]
    >
-   >Quando il modulo viene visualizzato tramite un URL con il parametro **_uuid** , il valore del **[!UICONTROL origin]** parametro viene forzato in **Adobe Campaign**.
+   >Quando il modulo viene visualizzato tramite un URL con il parametro **_uuid** , il valore del **[!UICONTROL origin]** parametro viene forzato a **Adobe Campaign**.
 
 ## Aggiunta di parametri {#adding-parameters}
 
