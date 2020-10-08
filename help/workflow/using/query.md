@@ -11,11 +11,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -25,7 +22,7 @@ ht-degree: 0%
 
 # Query{#query}
 
-## Creazione di una query {#creating-a-query}
+## Creating a query {#creating-a-query}
 
 Una query consente di selezionare una destinazione in base ai criteri. È possibile associare un codice di segmento al risultato della query e inserirvi dati aggiuntivi.
 Per ulteriori informazioni sugli esempi di query, consultare [questa sezione](../../workflow/using/querying-recipient-table.md).
@@ -62,7 +59,7 @@ Il **[!UICONTROL Edit query...]** collegamento consente di definire il tipo di t
 
 1. Se avete selezionato **[!UICONTROL Filtering conditions]** al punto 1 o utilizzando l&#39;opzione **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** , dovrete aggiungere manualmente i criteri di filtro in seguito.
 
-   È inoltre possibile aggiungere condizioni di raggruppamento dei dati selezionando la casella corrispondente. A tal fine, la dimensione di filtraggio deve essere diversa dalla dimensione di targeting della query. Per ulteriori informazioni sul raggruppamento, consultate questa [sezione](../../workflow/using/querying-using-grouping-management.md).
+   È inoltre possibile aggiungere condizioni di raggruppamento dei dati selezionando la casella corrispondente. A tal fine, la dimensione di filtraggio deve essere diversa dalla dimensione di targeting della query. For more information on grouping, refer to this [section](../../workflow/using/querying-using-grouping-management.md).
 
    È inoltre possibile aggiungere altri criteri utilizzando il generatore di espressioni e combinandolo con le opzioni logiche AND, OR e EXCEPT. Potete quindi visualizzare l’anteprima della combinazione **[!UICONTROL Corresponding SQL query...]** di criteri. For more on this refer to this [section](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -72,7 +69,7 @@ Il **[!UICONTROL Edit query...]** collegamento consente di definire il tipo di t
 
 ## Aggiunta di dati {#adding-data}
 
-Le colonne aggiuntive consentono di raccogliere informazioni aggiuntive sulla popolazione di destinazione, ad esempio numeri di contratto, iscrizioni a newsletter o origine. Questi dati possono essere memorizzati nel database del Adobe Campaign  o in un database esterno.
+Le colonne aggiuntive consentono di raccogliere informazioni aggiuntive sulla popolazione di destinazione, ad esempio numeri di contratto, iscrizioni a newsletter o origine. Questi dati possono essere memorizzati nel database Adobe Campaign  o in un database esterno.
 
 Il **[!UICONTROL Add data...]** collegamento consente di selezionare i dati aggiuntivi da raccogliere.
 
@@ -82,13 +79,13 @@ Per iniziare, seleziona il tipo di dati da aggiungere:
 
 ![](assets/wf_add_data_1st_option.png)
 
-* Selezionare **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database del Adobe Campaign .
+* Selezionare **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database Adobe Campaign .
 * Selezionare **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se è stata acquistata l&#39;opzione **Federated Data Access** . Per ulteriori informazioni, vedere [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 * Selezionate l&#39; **[!UICONTROL An offer proposition]** opzione per aggiungere un set di colonne che vi consenta di memorizzare la proposta migliore generata dal motore delle offerte. Questa opzione è disponibile solo se avete acquistato il modulo **Interazione** .
 
 Se sulla piattaforma non è installato alcun modulo opzionale, questa fase non viene visualizzata. Verrai portato direttamente al prossimo stadio.
 
-Per aggiungere dati dal database del Adobe Campaign :
+Per aggiungere dati dal database Adobe Campaign :
 
 1. Selezionare il tipo di dati da aggiungere. Può trattarsi di dati appartenenti alla dimensione filtro o di dati memorizzati in tabelle collegate.
 
@@ -124,6 +121,7 @@ Per aggiungere una raccolta di informazioni collegate a una popolazione di desti
 
    * Se si sceglie di recuperare diverse righe (**[!UICONTROL Limit the line count]**) è possibile specificare il numero di righe da raccogliere.
    * Se le colonne raccolte contengono aggregati, ad esempio il numero di guasti dichiarati, la spesa media di un sito, ecc. potete usare il **[!UICONTROL Aggregates]** valore.
+
    ![](assets/query_add_collection_param.png)
 
 1. Specificate la sottoselezione della raccolta. Ad esempio: acquisti effettuati solo negli ultimi 15 giorni.
@@ -148,6 +146,7 @@ Nell&#39;esempio seguente, la query cerca di identificare gli uomini di età com
    * Destinatari di età inferiore ai 30 anni.
    * Destinatari con più di 18 anni.
    * Destinatari che vivono in Francia.
+
    ![](assets/query_example.png)
 
    È possibile visualizzare l&#39;SQL corrispondente alla combinazione di criteri:
@@ -175,7 +174,7 @@ Questo valore è lo schema della tabella di lavoro. Questo parametro è valido p
 
 ## Ottimizzazione delle query {#optimizing-queries}
 
-La sezione seguente illustra le procedure ottimali per ottimizzare le query in esecuzione  Adobe Campaign per limitare il carico di lavoro sul database e migliorare l&#39;esperienza utente.
+La sezione seguente illustra le procedure ottimali per ottimizzare le query in esecuzione su  Adobe Campaign per limitare il carico di lavoro sul database e migliorare l&#39;esperienza utente.
 
 ### Iscrizioni e indici {#joins-and-indexes}
 
@@ -192,7 +191,7 @@ La sezione seguente illustra le procedure ottimali per ottimizzare le query in e
 
    Verificare di conoscere il piano di esecuzione della query. Evitate analisi complete delle tabelle, in particolare per query in tempo reale o query in tempo quasi reale eseguite ogni minuto.
 
-Per ulteriori informazioni, consulta[le sezioni Best practice](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html) del modello dati e mappatura [del](../../configuration/using/database-mapping.md) database.
+Per ulteriori informazioni, consulta[le sezioni Best practice](https://helpx.adobe.com/it/campaign/kb/acc-data-model-best-practices.html) del modello dati e mappatura [del](../../configuration/using/database-mapping.md) database.
 
 ### Funzioni {#functions}
 
@@ -231,9 +230,10 @@ For more on filtering dimensions, refer to [this section](../../workflow/using/b
    * Dati,
    * Applicazione,
    * Volumi.
+
    >[!NOTE]
    >
-   >Una funzione che funziona in un ambiente di sviluppo potrebbe non funzionare in un ambiente di produzione in cui i dati possono essere diversi. Cercare di individuare le principali differenze al fine di anticipare i rischi e preparare soluzioni.
+   >Una funzione che funziona in un ambiente di sviluppo potrebbe non funzionare in un ambiente di produzione in cui i dati possono essere diversi. Cercate di individuare le principali differenze al fine di anticipare i rischi e preparare soluzioni.
 
 * Configurazioni corrispondenti ai volumi di destinazione. I grandi volumi richiedono configurazioni specifiche. Una configurazione che funzionava per 100.000 destinatari potrebbe non funzionare per 10.000.000 destinatari.
 
