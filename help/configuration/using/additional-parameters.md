@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## Definizione dei parametri {#definition-of-parameters}
 
-La piattaforma Adobe Campaign offre due parametri di monitoraggio Web di tipo TRANSACTION standard:
+La piattaforma Adobe Campaign  offre due parametri di monitoraggio Web di tipo TRANSACTION standard:
 
 * **importo**: rappresenta l&#39;importo di una transazione,
 * **articolo**: rappresenta il numero di elementi in una transazione.
@@ -57,7 +57,7 @@ Nella configurazione del server, potete definire il numero massimo di caratteri 
 >
 >L&#39;aumento del numero massimo di caratteri da prendere in considerazione può influenzare le prestazioni di monitoraggio Web della piattaforma.
 
-A tal fine, modificate l’attributo **webTrackingParamSize** dell’ **`<trackinglogd>`** elemento nel file **serverConf.xml** . Questo file viene salvato nella sottodirectory **conf** della directory di installazione di Adobe Campaign.
+A tal fine, modificate l’attributo **webTrackingParamSize** dell’ **`<trackinglogd>`** elemento nel file **serverConf.xml** . Questo file viene salvato nella sottodirectory **conf** della directory di installazione di Adobe Campaign .
 
 **Esempio**:
 
@@ -75,18 +75,18 @@ webTrackingParamSize="64"/>
 Quando la configurazione è stata modificata, è necessario:
 
 * Arrestate il server Web che ospita il modulo di reindirizzamento (Apache, IIS, ecc.),
-* Arrestate il server Adobe Campaign: arresto **net nlserver6** in Windows, **/etc/init.d/nlserver6 arresto** in Linux,
+* Arrestate il server Adobe Campaign : **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di arresto **del sistema**
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
 
 * In Linux, eliminate i segmenti di memoria condivisa utilizzando il comando **ipcrm** ,
-* Riavvia il server Adobe Campaign: avvio **rete nlserver6** in Windows, avvio **** /etc/init.d/nlserver6 in Linux,
+* Riavviate il server Adobe Campaign : **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): server di avvio **del sistema**
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **system start nlserver**
 
 * Riavviate il server Web.
 
