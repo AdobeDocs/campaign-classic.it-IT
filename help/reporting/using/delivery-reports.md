@@ -1,7 +1,7 @@
 ---
-title: Rapporti di consegna
-seo-title: Rapporti di consegna
-description: Rapporti di consegna
+title: Report di consegna
+seo-title: Report di consegna
+description: Report di consegna
 seo-description: null
 page-status-flag: never-activated
 uuid: 83ea834e-08f7-441b-8f15-a25ec07c4aab
@@ -11,19 +11,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1456'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Rapporti di consegna {#delivery-reports}
+# Report di consegna {#delivery-reports}
 
 Puoi tenere traccia dell’esecuzione delle consegne tramite vari rapporti accessibili dalla panoramica sulla distribuzione. Per visualizzare i rapporti, attenersi alla procedura seguente:
 
@@ -76,7 +73,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 * **[!UICONTROL Distinct opens for the population reached]** : Stima del numero di destinatari con targeting che hanno aperto un messaggio almeno una volta. Vengono presi in considerazione i clic sui collegamenti di annullamento dell&#39;iscrizione e le pagine mirror.
 * **[!UICONTROL Sum of opens for the population reached]** : Stima del numero totale di aperture per destinatari con targeting.
 * **[!UICONTROL Clicks on opt-out link]** : Numero di clic sul collegamento di annullamento della sottoscrizione.
-* **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina mirror. Per essere presi in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fare riferimento a questa [pagina](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina mirror. Per essere presi in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Refer to this [page](../../delivery/using/monitoring-a-delivery.md).
 * **[!UICONTROL Estimation of forwards]** : Stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nel messaggio e-mail.
 
    >[!NOTE]
@@ -132,7 +129,7 @@ Questo rapporto mostra l&#39;elenco delle pagine visitate dopo la consegna.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Per configurare il contenuto di questo rapporto, seleziona: il grafico di valutazione da visualizzare, il filtro dell’ora (dall’avvio dell’azione, nelle prime 6 ore successive all’avvio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, per categoria); per ulteriori informazioni, consultate [questa pagina](../../delivery/using/monitoring-a-delivery.md). Click **[!UICONTROL Refresh]** to confirm your selection.
+Per configurare il contenuto di questo rapporto, seleziona: il grafico di valutazione da visualizzare, il filtro dell’ora (dall’avvio dell’azione, nelle prime 6 ore successive all’avvio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, per categoria); per ulteriori informazioni, consultate [questa pagina](../../delivery/using/monitoring-a-delivery.md). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
 
 Nella sezione superiore del rapporto vengono visualizzate le seguenti percentuali:
 
@@ -167,7 +164,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione ha due indicatori:
 
 * **[!UICONTROL Initial population]** : Numero totale di destinatari interessati dalla consegna.
-* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, in quarantena, aggiunto all&#39;elenco dei blocchi, ecc. Per ulteriori informazioni sulle regole di tipologia, fare riferimento a questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, in quarantena, aggiunto al elenco Bloccati , ecc. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -198,7 +195,7 @@ Questo rapporto fornisce statistiche su aperture, clic e transazioni.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Consente di monitorare l&#39;impatto di marketing della distribuzione. Potete configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione di 1 ora, 3 ore o 24 ore, ecc.). Click **[!UICONTROL Refresh]** to confirm your selection.
+Consente di monitorare l&#39;impatto di marketing della distribuzione. Potete configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione di 1 ora, 3 ore o 24 ore, ecc.). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
 
 Questo rapporto fornisce una tabella di valori e un grafico Pareto che mostra il tempo necessario per la consegna per raggiungere la massima efficienza. Vengono utilizzati i seguenti indicatori:
 
