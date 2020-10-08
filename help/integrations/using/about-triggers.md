@@ -1,7 +1,7 @@
 ---
-title: Informazioni  Adobe Experience Manager
-seo-title: Informazioni  Adobe Experience Manager
-description: Informazioni  Adobe Experience Manager
+title: Informazioni su Adobe Experience Manager
+seo-title: Informazioni su Adobe Experience Manager
+description: Informazioni su Adobe Experience Manager
 seo-description: null
 page-status-flag: never-activated
 uuid: c523822f-8178-4989-bd88-ab402470e540
@@ -11,11 +11,8 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -25,7 +22,7 @@ ht-degree: 1%
 
 # Informazioni su Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
-[!DNL Triggers] è un&#39;integrazione tra  Adobe Campaign e Adobe  Analytics mediante la pipeline. La pipeline recupera le azioni o gli attivatori degli utenti dal sito Web. Un abbandono del carrello è un esempio di trigger. Gli attivatori vengono elaborati  Adobe Campaign per inviare e-mail in tempo quasi reale.
+[!DNL Triggers] è un&#39;integrazione tra  Adobe Campaign e  Adobe Analytics mediante la pipeline. La pipeline recupera le azioni o gli attivatori degli utenti dal sito Web. Un abbandono del carrello è un esempio di trigger. Gli attivatori vengono elaborati in  Adobe Campaign per inviare e-mail in tempo quasi reale.
 
 [!DNL Triggers] eseguire azioni di marketing entro un breve intervallo di tempo a seguito dell&#39;azione di un utente. Il tempo di risposta tipico è inferiore a un&#39;ora.
 
@@ -38,21 +35,21 @@ Supporta inoltre volumi elevati di traffico senza influire sulle prestazioni del
 
 >[!CAUTION]
 >
->Solo le soluzioni Adobe Cloud possono produrre e utilizzare eventi dai servizi pipeline di Adobe. I sistemi esterni ad Adobe non possono.
+>Solo  soluzioni Adobe Cloud possono produrre e utilizzare eventi dai servizi pipeline  Adobe. I sistemi esterni  Adobe non possono.
 
-Pipeline è un sistema di messaggistica ospitato nell&#39;Experience Cloud  che utilizza [Apache Kafka](http://kafka.apache.org/). È un modo per trasmettere facilmente i dati tra le soluzioni. Inoltre, Pipeline è una coda di messaggi anziché un database. I produttori spingono gli eventi in preparazione e i consumatori ascoltano il flusso e fanno ciò che vogliono con l&#39;evento. Gli eventi vengono conservati per alcuni giorni, ma non più. Lo scopo è quello di ascoltare 24 ore su 24, 7 giorni su 7 e di elaborare gli eventi immediatamente.
+Pipeline è un sistema di messaggistica ospitato nel Experience Cloud  che utilizza [Apache Kafka](http://kafka.apache.org/). È un modo per trasmettere facilmente i dati tra le soluzioni. Inoltre, Pipeline è una coda di messaggi anziché un database. I produttori spingono gli eventi in preparazione e i consumatori ascoltano il flusso e fanno ciò che vogliono con l&#39;evento. Gli eventi vengono conservati per alcuni giorni, ma non più. Lo scopo è quello di ascoltare 24 ore su 24, 7 giorni su 7 e di elaborare gli eventi immediatamente.
 
 ![](assets/triggers_1.png)
 
 ### Come funziona Pipeline? {#how-pipeline-work}
 
-Il [!DNL pipelined] processo è sempre in esecuzione sul server di marketing  Adobe Campaign. Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
+Il [!DNL pipelined] processo è sempre in esecuzione sul server di marketing Adobe Campaign . Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
 
 ![](assets/triggers_2.png)
 
-Il [!DNL pipelined] processo effettua l&#39;accesso all&#39;Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi. [!DNL Triggers] vengono recuperati da un servizio Web REST utilizzando una semplice richiesta GET. La risposta è in formato JSON. I parametri della richiesta includono il nome dell&#39;attivatore e un puntatore che indica l&#39;ultimo messaggio recuperato. Il [!DNL pipelined] processo lo gestisce automaticamente.
+Il [!DNL pipelined] processo accede al Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi. [!DNL Triggers] vengono recuperati da un servizio Web REST utilizzando una semplice richiesta di GET. La risposta è in formato JSON. I parametri della richiesta includono il nome dell&#39;attivatore e un puntatore che indica l&#39;ultimo messaggio recuperato. Il [!DNL pipelined] processo lo gestisce automaticamente.
 
-## Utilizzo dell’integrazione di Adobe Experience Cloud Triggers con  Adobe Campaign Classic
+## Utilizzo dell&#39;integrazione di Adobe Experience Cloud Triggers con Adobe Campaign Classic
 
 Di seguito sono riportate alcune [!DNL Triggers] best practice:
 
