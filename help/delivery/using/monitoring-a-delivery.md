@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -64,13 +61,13 @@ Diversi stati sono elencati in [questa pagina](#delivery-statuses).
 
 ### Tracking logs {#tracking-logs}
 
-La **[!UICONTROL Tracking]** scheda elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento dei messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte  Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
+La **[!UICONTROL Tracking]** scheda elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte  Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
 
 >[!NOTE]
 >
 >Se il tracciamento non è abilitato per una consegna, questa scheda non viene visualizzata.
 
-La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. Vedere [Come configurare i collegamenti](../../delivery/using/how-to-configure-tracked-links.md)tracciati.
+La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** i dati vengono interpretati nei rapporti di consegna. Vedi [questa sezione](../../reporting/using/delivery-reports.md).
 
@@ -111,7 +108,7 @@ Se le prestazioni di consegna sono sbagliate, è possibile controllare:
 * **Destinazione della consegna**: Il divieto di prestazioni di consegna è influenzato da errori di rimbalzo soft, che vengono gestiti in base alla configurazione del nuovo tentativo. Maggiore è il numero di errori, maggiori saranno i tentativi necessari.
 * **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può risentirne. È inoltre possibile controllare la reputazione dell&#39;IP e i problemi di recapito. Per ulteriori informazioni, consultare  Guida alle procedure ottimali per la [distribuzione di Adobe Campaign](../../delivery/using/deliverability-key-points.md) e consultare [questa pagina](../../delivery/using/about-deliverability.md).
 
-La manutenzione di piattaforme e database può anche influire sulle prestazioni di invio delle consegne. For more on this, refer to [this page](../../production/using/database-performances.md).
+La manutenzione di piattaforme e database può anche influire sulle prestazioni di invio delle consegne. Per ulteriori informazioni, consulta [questa pagina](../../production/using/database-performances.md).
 
 ### Consegne lente {#slow-deliveries}
 
@@ -122,7 +119,7 @@ Dopo aver fatto clic sul **[!UICONTROL Send]** pulsante, la consegna sembra rich
 * Potrebbe essersi verificata una limitazione all&#39;interno della  MTA Adobe Campaign. Ciò è causato da:
 
    * Messaggi aperti (**[!UICONTROL quotas met]** messaggio): sono state rispettate le quote dichiarate dalle regole dichiarative MX definite in Campaign. Per ulteriori informazioni su questo messaggio, fare riferimento a [questa pagina](../../delivery/using/deliverability-faq.md) . Per ulteriori informazioni sulle regole MX, consultare [questa pagina](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): Campaign MTA ha rilevato degli errori quando si tenta di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore troppo grande e quindi affrontare il potenziale elenco Bloccati .
+   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): Campaign MTA ha rilevato degli errori quando si tenta di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore eccessiva e quindi di affrontare il potenziale elenco Bloccati .
 
 * Un problema del sistema può impedire ai server di interagire tra loro: questo può rallentare l&#39;intero processo di invio. Controlla i server per assicurarti che non ci siano problemi di memoria o di risorse che possano avere un impatto su Campaign, ad esempio nel processo di ottenimento dei dati di personalizzazione.
 
@@ -244,11 +241,11 @@ Se lo stato di invio dell’e-mail è **[!UICONTROL Failed]**, può essere colle
 
 I registri di consegna sono la chiave per capire perché una consegna non è riuscita. Di seguito sono riportati possibili errori che è possibile rilevare dai registri di consegna:
 
-* Se i messaggi del destinatario non riescono con un errore &quot;Non raggiungibile&quot; che indica: **Errore durante la compilazione della riga X dello script &#39;content htmlContent&#39;:`[table]`non è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
+* Se i messaggi dei destinatari non riescono con un errore &quot;Non raggiungibile&quot; che indica: **Errore durante la compilazione della riga X dello script &#39;content htmlContent&#39;:`[table]`non è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
 
    Per correggere questo problema, è necessario rivedere il flusso di lavoro e il contenuto di distribuzione per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare la tabella. Da qui, la rimozione della chiamata a questa tabella nell’HTML o la correzione della mappatura alla consegna costituirebbe il percorso della risoluzione.
 
-* Nel modello di distribuzione mid-sourcing, il messaggio seguente può essere visualizzato nei registri di distribuzione: **Errore durante la chiamata del metodo &#39;AppendDeliveryPart&#39; sul server di origine mid: &#39;Errore di comunicazione con il server: verificare che questo sia configurato correttamente. Codice HTTP 408 &#39;Servizio temporaneamente non disponibile&#39;**.
+* Nel modello di distribuzione mid-sourcing, il seguente messaggio può essere visualizzato nei registri di distribuzione: **Errore durante la chiamata del metodo &#39;AppendDeliveryPart&#39; sul server di origine mid: &#39;Errore di comunicazione con il server: verificare che questo sia configurato correttamente. Codice HTTP 408 &#39;Servizio temporaneamente non disponibile&#39;**.
 
    La causa è collegata a problemi di prestazioni. Significa che l&#39;istanza di marketing impiega troppo tempo a generare dati prima di inviarli al server di mid-sourcing.
 
