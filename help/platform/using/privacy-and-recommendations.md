@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: a3b5378c2e67b9982fa425f32e14e0b1c66e1bf3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -48,7 +45,7 @@ Per gestire correttamente la privacy e gestire i dati personali, lavorare nell&#
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come GDPR, CCPA, PDPA e LGPD si applicano a  Adobe Campaign, consulta [questa pagina](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Per ulteriori informazioni su come GDPR, CCPA, PDPA e LGPD si applicano a  Adobe Campaign, consulta [questa pagina](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
 
 ### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
@@ -136,7 +133,7 @@ Per ulteriori informazioni su queste funzioni e su come gestirle in  Adobe Campa
 
 >[!NOTE]
 >
->Questo set di strumenti è disponibile qui per aiutarti a rispettare la privacy per GDPR, CCPA, PDPA e LGPD. Per ulteriori informazioni su queste diverse normative, consulta [questa pagina](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
+>Questo set di strumenti è disponibile qui per aiutarti a rispettare la privacy per GDPR, CCPA, PDPA e LGPD. Per ulteriori informazioni su queste diverse normative, consulta [questa pagina](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#whatisgdpr).
 
 <!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
 
