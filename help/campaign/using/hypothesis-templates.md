@@ -1,7 +1,7 @@
 ---
-title: Modelli per ipotesi
-seo-title: Modelli per ipotesi
-description: Modelli per ipotesi
+title: Modelli di ipotesi
+seo-title: Modelli di ipotesi
+description: Modelli di ipotesi
 seo-description: null
 page-status-flag: never-activated
 uuid: 080417c2-1c45-4404-961e-2e660d8f0436
@@ -11,16 +11,16 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1437'
+ht-degree: 0%
 
 ---
 
 
-# Modelli per ipotesi{#hypothesis-templates}
+# Modelli di ipotesi{#hypothesis-templates}
 
 ## Creazione di un modello di ipotesi {#creating-a-hypothesis-model}
 
@@ -28,15 +28,15 @@ La configurazione del modello di ipotesi consente di definire il contesto per la
 
 Per creare un modello di ipotesi, effettuate le seguenti operazioni:
 
-1. In Adobe Campaign Explorer, fai clic su **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. In  Adobe Campaign Explorer, fate clic su **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
 1. Fate clic con il pulsante destro del mouse **[!UICONTROL New]** o fate clic con il pulsante destro del mouse nell’elenco dei modelli e scegliete **[!UICONTROL New]** dall’elenco a discesa.
 1. Immettete l’etichetta dell’ipotesi.
 1. Specificate se il modello è destinato alle ipotesi sulle offerte o sulle consegne tramite **[!UICONTROL Hypothesis type]**.
-1. Per i modelli di **[!UICONTROL Delivery]** tipo, specificare se le misurazioni devono essere eseguite con o senza un gruppo di controllo (per ulteriori informazioni, vedere [Proprietà di un modello](#properties-of-a-hypothesis-template)di ipotesi).
-1. Per i modelli di **[!UICONTROL Delivery]** tipo, puoi scegliere un canale specifico o decidere di applicare il modello a tutti i canali disponibili in Adobe Campaign utilizzando l&#39;elenco a **[!UICONTROL Channel]** discesa (per ulteriori informazioni, consulta [Proprietà di un modello](#properties-of-a-hypothesis-template)di ipotesi).
+1. Per i modelli di **[!UICONTROL Delivery]** tipo, specificare se le misurazioni devono essere eseguite con o senza un gruppo di controllo (per ulteriori informazioni, fare riferimento a [Proprietà di un modello](#properties-of-a-hypothesis-template)di ipotesi).
+1. Per i modelli di **[!UICONTROL Delivery]** tipo, potete scegliere un canale specifico o decidere di applicare il modello a tutti i canali disponibili in  Adobe Campaign utilizzando l&#39;elenco a **[!UICONTROL Channel]** discesa (per ulteriori informazioni, consultate [Proprietà di un modello](#properties-of-a-hypothesis-template)di ipotesi).
 1. Selezionate **[!UICONTROL Execution folder]** in cui desiderate creare ed eseguire automaticamente le ipotesi che verranno create da questo modello.
 1. Scegliete le impostazioni di esecuzione (per ulteriori informazioni, consultate le impostazioni [di esecuzione dei modelli di](#hypothesis-template-execution-settings)ipotesi).
 1. Specificare il periodo di calcolo dell&#39;ipotesi (per ulteriori informazioni, fare riferimento alle impostazioni [di esecuzione dei modelli di](#hypothesis-template-execution-settings)ipotesi).
@@ -70,18 +70,18 @@ La **[!UICONTROL General]** scheda del modello consente di specificare le opzion
 
    Per ulteriori informazioni sulla definizione e configurazione di un gruppo di controllo, vedere [Definizione di un gruppo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)di controllo.
 
-* **[!UICONTROL Channel]**: puoi scegliere un canale specifico o rendere disponibile il modello di ipotesi a tutti i canali nella console Adobe Campaign selezionando **[!UICONTROL All channels]** nell&#39;elenco a discesa. Se configurate il modello per un canale specifico, questo consente di filtrare automaticamente le consegne per canale al momento della creazione dell&#39;ipotesi (consultate [Creazione di ipotesi](../../campaign/using/creating-hypotheses.md)).
+* **[!UICONTROL Channel]**: potete scegliere un canale specifico o rendere disponibile il modello di ipotesi a tutti i canali nella console Adobe Campaign  selezionando **[!UICONTROL All channels]** nell’elenco a discesa. Se configurate il modello per un canale specifico, questo consente di filtrare automaticamente le consegne per canale al momento della creazione dell&#39;ipotesi (consultate [Creazione di ipotesi](../../campaign/using/creating-hypotheses.md)).
 
    ![](assets/response_properties_001.png)
 
 * **[!UICONTROL Execution folder]**: consente di specificare la cartella di esecuzione per l&#39;ipotesi.
-* **[!UICONTROL Taken into account in campaign ROI calculation]**: tiene conto del risultato dell’ipotesi nel calcolo del ROI per la campagna correlata.
+* **[!UICONTROL Taken into account in campaign ROI calculation]**: prende in considerazione il risultato dell’ipotesi nel calcolo del ROI per la campagna correlata.
 
 ### Impostazioni di esecuzione dei modelli di ipotesi {#hypothesis-template-execution-settings}
 
 La **[!UICONTROL General]** scheda del modello consente inoltre di specificare i parametri di esecuzione dell&#39;ipotesi. Le opzioni disponibili sono le seguenti:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: consente di pianificare il lancio dell&#39;ipotesi per ottimizzare le prestazioni di Adobe Campaign. Quando questa opzione è selezionata, il flusso di lavoro di elaborazione delle campagne esegue il calcolo delle ipotesi durante il periodo di inattività.
+* **[!UICONTROL Schedule execution for a time of low activity]**: consente di pianificare il lancio dell&#39;ipotesi per ottimizzare  prestazioni Adobe Campaign. Quando questa opzione è selezionata, il flusso di lavoro di elaborazione delle campagne esegue il calcolo delle ipotesi durante il periodo di inattività.
 
    ![](assets/response_exec_settings_002.png)
 
@@ -103,7 +103,7 @@ La **[!UICONTROL General]** scheda del modello consente inoltre di specificare i
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Fate clic **[!UICONTROL Finish]** per salvare la pianificazione.
+   1. Click **[!UICONTROL Finish]** to save the schedule.
 
       ![](assets/response_frequency_execution_003.png)
 
@@ -120,7 +120,7 @@ La **[!UICONTROL General]** scheda del modello consente inoltre di specificare i
 
 Questa scheda contiene i vari campi e tabelle che consentono di salvare la cronologia delle reazioni dei destinatari in termini di transazioni. Per ulteriori informazioni sulle tabelle dedicate alla gestione delle risposte, fare riferimento alla guida [Configurazione](../../configuration/using/about-schema-reference.md) .
 
-* **[!UICONTROL Schema (reaction log storage)]**: selezionare la tabella di reazione del destinatario. La tabella standard di Adobe Campaign è **NmsRemaMatchRcp**.
+* **[!UICONTROL Schema (reaction log storage)]**: selezionare la tabella di reazione del destinatario. La tabella standard in  Adobe Campaign è **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: scegliere la tabella che le ipotesi riguarderanno, ovvero la transazione o la tabella di acquisto.
 * **[!UICONTROL Querying schema]**: scegliete i criteri per filtrare l’ipotesi.
 * **[!UICONTROL Link to individuals]**: scegliere il collegamento tra singoli e la tabella utilizzata come schema di transazione.
@@ -146,7 +146,7 @@ Questa scheda contiene i vari campi e tabelle che consentono di salvare la crono
 
 ### Perimetro di ipotesi {#hypothesis-perimeter}
 
-Una volta definita la tabella delle transazioni e i campi che l&#39;ipotesi riguarderà, è possibile definire l&#39;ambito delle ipotesi specificando le transazioni e le consegne mirate utilizzando i filtri. È inoltre possibile utilizzare uno script JavaScript per indicare esplicitamente un prodotto a cui si fa riferimento nella tabella delle transazioni.
+Una volta definita la tabella delle transazioni e i campi che l&#39;ipotesi riguarderà, è possibile definire l&#39;ambito delle ipotesi specificando le transazioni e le consegne mirate utilizzando i filtri. È inoltre possibile utilizzare uno script JavaScript per puntare esplicitamente a un prodotto a cui si fa riferimento nella tabella delle transazioni.
 
 * **Filtro sulle transazioni**: nella **[!UICONTROL Scope]** scheda è possibile configurare un filtro per l&#39;ipotesi. Per eseguire questa operazione:
 
@@ -172,7 +172,7 @@ Una volta definita la tabella delle transazioni e i campi che l&#39;ipotesi rigu
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Fate clic **[!UICONTROL Finish]** per salvare la query.
+   1. Click **[!UICONTROL Finish]** to save your query.
 
       ![](assets/response_scope_filtering_006.png)
 
@@ -190,7 +190,7 @@ Una volta definita la tabella delle transazioni e i campi che l&#39;ipotesi rigu
 
 In questo esempio, stiamo per creare un modello di ipotesi su una consegna diretta per tipo di posta. La tabella delle transazioni (**Acquisti** nel nostro esempio) su cui si baseranno le ipotesi contiene le linee di acquisto collegate agli articoli o ai prodotti. Vogliamo configurare il nostro modello per creare ipotesi su articoli o prodotti nella tabella di acquisto.
 
-1. In Adobe Campaign Explorer andate al **[!UICONTROL Resources > Templates > Hypothesis templates]** nodo.
+1. In  Adobe Campaign Explorer, andate al **[!UICONTROL Resources > Templates > Hypothesis templates]** nodo.
 1. Fate clic **[!UICONTROL New]** per creare un modello.
 
    ![](assets/response_hypothesis_model_example_001.png)
