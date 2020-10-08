@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1236'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Per aggiungere una condizione di visibilità, selezionare un blocco e immettere 
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio, **ctx.receive.@email!= &quot;&quot;** o **ctx.Recipients.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
+Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio, **ctx.Recipients).@email!= &quot;&quot;** o **ctx.Recipients.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
 
 >[!NOTE]
 >
@@ -44,11 +44,11 @@ Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio, **c
 
 ## Aggiunta di un bordo e uno sfondo {#adding-a-border-and-background}
 
-È possibile aggiungere un **bordo** a un blocco selezionato. I bordi sono definiti utilizzando tre opzioni: stile, dimensione e colore.
+You can add a **border** to a selected block. I bordi sono definiti utilizzando tre opzioni: stile, dimensione e colore.
 
 ![](assets/dce_popup_border.png)
 
-È inoltre possibile definire un colore **di** sfondo selezionando un colore dalla tavola colori.
+You can also define a **background color** by selecting a color from the color chart.
 
 ![](assets/dce_popup_background.png)
 
@@ -64,13 +64,13 @@ Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio, **c
 >
 >I campi predefiniti sono quelli dello schema di memorizzazione dell&#39;applicazione Web.
 
-L&#39;area di input del **campo** consente di selezionare un campo del database da collegare al campo del modulo.
+The **field** input zone lets you select a database field to link with the form field.
 
 Per impostazione predefinita, i campi offerti sono quelli della tabella **nms:Recipients** .
 
 ![](assets/dce_field_selection.png)
 
-L&#39;opzione Campo **** obbligatorio consente di autorizzare l&#39;approvazione della pagina solo se l&#39;utente ha compilato il campo. Se non viene compilato un campo obbligatorio, verrà visualizzato un messaggio di errore.
+The **Required field** option lets you only authorize the page&#39;s approval if the user has filled in the field. Se non viene compilato un campo obbligatorio, verrà visualizzato un messaggio di errore.
 
 Per i pulsanti di scelta e le caselle di controllo, è necessaria **una configurazione** aggiuntiva.
 
@@ -142,6 +142,7 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo nei blocch
 >* Nuova finestra (_blank)
 >* Finestra corrente (_self)
 >* Comportamento browser predefinito
+
 >
 
 
@@ -156,7 +157,7 @@ Immettete l’indirizzo del collegamento in questione nel campo **URL** . Il cam
 
 ### Collegamento a un&#39;applicazione Web {#link-to-a-web-application}
 
-L&#39;opzione **Collega a un&#39;applicazione** Web consente di accedere a un&#39;applicazione Web Adobe Campaign.
+L&#39;opzione **Collega a un&#39;applicazione** Web consente di accedere a un&#39;applicazione Web  Adobe Campaign.
 
 ![](assets/dce_toolbar_imgblock_appweb.png)
 
@@ -176,14 +177,14 @@ Il **collegamento che definisce un&#39;opzione di azione** consente di configura
 
 ### Eliminare un collegamento {#delete-a-link}
 
-Quando è stato inserito un collegamento, la barra degli strumenti offre due nuove icone: **Modifica collegamento** e **interrompi il collegamento** che consente di interagire con il collegamento creato.
+Quando è stato inserito un collegamento, la barra degli strumenti offre due nuove icone: **Modifica il collegamento** e **interrompi il collegamento** che consente di interagire con il collegamento creato.
 
 * **[!UICONTROL Edit link]** consente di visualizzare una finestra con tutti i parametri del collegamento.
 * **[!UICONTROL Break the link]** consente di eliminare, dopo la conferma, il collegamento e tutti i parametri correlati.
 
 >[!NOTE]
 >
->Se il collegamento viene eliminato, il contenuto viene comunque mantenuto.
+>Se il collegamento viene eliminato, il contenuto continua a essere mantenuto.
 
 ## Modifica degli attributi di font {#changing-font-attributes}
 
@@ -202,7 +203,7 @@ Le opzioni disponibili sono le seguenti:
 * **Icona Centro** : centra il testo per il blocco selezionato (add style=&quot;text-align: center;&quot;)
 * **Icona Allinea a destra** : allinea il testo a destra del blocco selezionato (aggiungi stile=&quot;text-align: right;&quot;)
 * **Cambia l’icona del colore** di sfondo: consente di modificare il colore di sfondo del blocco selezionato (aggiungere stile=&quot;background-color: rgba(170, 86, 255, 0.87)
-* **Cambia icona colore** testo: consente di modificare il colore del testo del blocco selezionato o solo del testo selezionato (`<span style="color: #CODE">`)
+* **Icona Cambia colore** testo: consente di modificare il colore del testo del blocco selezionato o solo del testo selezionato (`<span style="color: #CODE">`)
 
 >[!NOTE]
 >
@@ -229,7 +230,7 @@ Per essere compatibile con DCE, le animazioni **di tipo** &quot;Flash&quot; devo
 
 >[!CAUTION]
 >
->Non è necessario richiamare file esterni in un tag **script** della pagina HTML. Questi file non verranno importati nel server Adobe Campaign.
+>Non è necessario richiamare file esterni in un tag **script** della pagina HTML. Questi file non verranno importati nel server Adobe Campaign .
 
 ### Aggiunta/eliminazione/duplicazione di un’immagine {#adding---deleting---duplicating-an-image}
 
@@ -237,7 +238,7 @@ Per inserire un’immagine, selezionare un blocco per il tipo di immagine e fare
 
 ![](assets/dce_insert_image.png)
 
-Selezionate un file immagine salvato localmente.
+Selezionate un file di immagine salvato localmente.
 
 ![](assets/dce_popup_imgupload.png)
 
@@ -254,7 +255,7 @@ L’icona **Duplica** duplica il ![]() tag e il relativo contenuto.
 Quando si seleziona un blocco contenente un&#39;immagine, è possibile accedere alle proprietà seguenti:
 
 * **Didascalia** consente di definire la didascalia collegata all’immagine (corrisponde all’attributo **HTML alt** ).
-* **Dimensioni** consente di specificare le dimensioni dell’immagine, in pixel.
+* **Dimension** consente di specificare le dimensioni dell’immagine, in pixel.
 
    ![](assets/dce_popup_imgsize.png)
 
@@ -268,13 +269,13 @@ L&#39;opzione Campo **di** personalizzazione per l&#39;icona di inserimento cons
 
 Per impostazione predefinita, i campi offerti sono tratti dalla **[!UICONTROL Recipient]** tabella. Se necessario, modificare le proprietà dell&#39;applicazione Web per selezionare un&#39;altra tabella.
 
-Il nome del campo viene visualizzato nell’editor, evidenziato in giallo. Sarà sostituito dal profilo del destinatario di destinazione quando viene generata la personalizzazione (ad esempio, quando si visualizza in anteprima una pagina di destinazione).
+Il nome del campo viene visualizzato nell’editor, evidenziato in giallo. Sarà sostituito dal profilo del destinatario di destinazione quando viene generata la personalizzazione (ad esempio, quando si visualizza l&#39;anteprima di una pagina di destinazione).
 
 Un esempio è presentato nella sezione [Inserimento di un campo](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) di personalizzazione.
 
 ### Inserimento di un blocco di personalizzazione {#inserting-a-personalization-block}
 
-L&#39;opzione **Personalizzazione blocco** consente di inserire blocchi dinamici e personalizzati nel contenuto. Ad esempio, potete aggiungere un logo o un messaggio di saluto. Non è disponibile per i blocchi di tipo Testo.
+L&#39;opzione per il blocco **di** personalizzazione consente di inserire blocchi dinamici e personalizzati nel contenuto. Ad esempio, potete aggiungere un logo o un messaggio di saluto. Non è disponibile per i blocchi di tipo Testo.
 
 ![](assets/dce_toolbar_textblock_persoblock.png)
 
