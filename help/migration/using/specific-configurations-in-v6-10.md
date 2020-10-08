@@ -1,7 +1,7 @@
 ---
-title: Configurazioni specifiche in v6.10
-seo-title: Configurazioni specifiche in v6.10
-description: Configurazioni specifiche in v6.10
+title: Configurazioni specifiche nella versione v6.10
+seo-title: Configurazioni specifiche nella versione v6.10
+description: Configurazioni specifiche nella versione v6.10
 seo-description: null
 page-status-flag: never-activated
 uuid: 29fa3576-7f25-4eaf-9602-5fc6d09467ec
@@ -11,20 +11,20 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 1b6ce502-0d33-46e4-b52e-124b849de11f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 16%
 
 ---
 
 
-# Configurazioni specifiche in v6.10{#specific-configurations-in-v6-10}
+# Configurazioni specifiche nella versione v6.10{#specific-configurations-in-v6-10}
 
-In Adobe Campaign v7 sono stati apportati alcuni miglioramenti per ottimizzare la sicurezza.
+Sono stati apportati alcuni miglioramenti in  Adobe Campaign v7 al fine di ottimizzare la sicurezza.
 
-Se state eseguendo la migrazione da una piattaforma 6.10 e la console client è precedente alla build 8104, dovete aggiornarla. Se questa operazione non viene eseguita prima della migrazione, verrà richiesto di aggiornare la console client al momento della riconnessione. Clic **[!UICONTROL Yes]**.
+Se state eseguendo la migrazione da una piattaforma 6.10 e la console client è precedente alla build 8104, dovete aggiornarla. Se questa operazione non viene eseguita prima della migrazione, verrà richiesto di aggiornare la console client al momento della riconnessione. Fai clic su **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
