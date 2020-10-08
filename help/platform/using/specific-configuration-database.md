@@ -11,14 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1833'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -272,9 +269,9 @@ Il connettore supporta le seguenti opzioni:
 |---|---|
 | schema di lavoro | Schema del database da utilizzare per le tabelle di lavoro |
 | warehouse | Nome del magazzino predefinito da utilizzare. Sostituirà l&#39;impostazione predefinita dell&#39;utente. |
-| TimeZoneName | Per impostazione predefinita vuota, ovvero viene utilizzato il fuso orario del sistema del server app Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. <br>[Per ulteriori informazioni, consulta questa pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
-| WeekStart | parametro di sessione WEEK_START. Per impostazione predefinita, è impostato su 0. <br>[Per ulteriori informazioni, consulta questa pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
-| UseCachedResult | parametro di sessione USE_CACHED_RESULTS. Per impostazione predefinita, è impostato su TRUE. Questa opzione può essere utilizzata per disabilitare  risultati Snowflake memorizzati nella cache. <br>[Per ulteriori informazioni, consulta questa pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| TimeZoneName | Per impostazione predefinita vuota, ovvero viene utilizzato il fuso orario del sistema del server app Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. <br>Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
+| WeekStart | parametro di sessione WEEK_START. Per impostazione predefinita, è impostato su 0. <br>Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start). |
+| UseCachedResult | parametro di sessione USE_CACHED_RESULTS. Per impostazione predefinita, è impostato su TRUE. Questa opzione può essere utilizzata per disabilitare  risultati Snowflake memorizzati nella cache. <br>Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
 ###  Snowflake su CentOS {#snowflake-centos}
 
@@ -317,9 +314,9 @@ Il connettore supporta le seguenti opzioni:
 
 ### Snowflake  in Windows {#snowflake-windows}
 
-1. Scaricare il driver [ODBC per Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Per installare il driver, è necessario disporre dei privilegi di amministratore. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
+1. Scaricare il driver [ODBC per Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Per installare il driver, è necessario disporre dei privilegi di amministratore. Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
 
-1. Configurare il driver ODBC. For more on this, refer to [this page](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
+1. Configurare il driver ODBC. Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
 1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Snowflake] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta questa [sezione](../../platform/using/specific-configuration-database.md#snowflake-external).
 
