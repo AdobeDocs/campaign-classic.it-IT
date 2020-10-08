@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 discoiquuid: 667746cb-b553-4a71-8523-6b2695047ab6
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 62b2f1f6cfcaadd10880d428b8b94d73d2addcdb
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ Una volta salvato, il rapporto può essere riutilizzato per generare altri rappo
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Per apportare modifiche a questo rapporto, modifica il **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** nodo della struttura di Adobe Campaign (o la prima cartella di tipo &quot;Report&quot; per la quale l&#39;operatore dispone dei diritti di modifica). Per ulteriori informazioni, consulta [Configurazione del layout di un rapporto](#configuring-the-layout-of-a-descriptive-analysis-report)di analisi descrittivo.
+Per apportare modifiche a questo rapporto, modificare il **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** nodo della struttura di Adobe Campaign  (o la prima cartella di tipo &quot;Report&quot; per la quale l&#39;operatore dispone dei diritti di modifica). Per ulteriori informazioni, consulta [Configurazione del layout di un rapporto](#configuring-the-layout-of-a-descriptive-analysis-report)di analisi descrittivo.
 
 ## Impostazioni aggiuntive del rapporto di analisi {#analysis-report-additional-settings}
 
@@ -50,7 +50,7 @@ Queste opzioni sono le stesse dei rapporti standard e sono dettagliate in [quest
 
 ## Configurazione del layout di un rapporto di analisi descrittivo {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-È possibile personalizzare la visualizzazione e il layout dei dati nei grafici e nelle tabelle dell&#39;analisi descrittiva. Tutte le opzioni sono accessibili tramite la struttura di Adobe Campaign, nella **[!UICONTROL Edit]** scheda di ciascun rapporto.
+È possibile personalizzare la visualizzazione e il layout dei dati nei grafici e nelle tabelle dell&#39;analisi descrittiva. Tutte le opzioni sono accessibili tramite la struttura  Adobe Campaign, nella **[!UICONTROL Edit]** scheda di ciascun rapporto.
 
 ### Modalità di visualizzazione dei rapporti di analisi {#analysis-report-display-mode}
 
@@ -116,7 +116,7 @@ Sono disponibili le seguenti opzioni:
 * L&#39; **[!UICONTROL Accumulate values]** opzione consente di aggiungere valori da una serie all&#39;altra.
 * È possibile decidere se visualizzare o meno la legenda del grafico: per nasconderlo, deselezionate l’opzione appropriata. Per impostazione predefinita, la legenda viene visualizzata all’esterno del grafico nell’angolo in alto a destra.
 
-   La legenda può anche essere visualizzata sopra al grafico per risparmiare spazio di visualizzazione. A questo scopo, selezionare l&#39;opzione **[!UICONTROL Include in the chart]**
+   La legenda può anche essere visualizzata sopra al grafico per risparmiare spazio di visualizzazione. To do this, select the option **[!UICONTROL Include in the chart]**
 
    Selezionare l&#39;allineamento verticale e orizzontale nell&#39;elenco a **[!UICONTROL Caption position]** discesa.
 
@@ -128,17 +128,17 @@ Per esportare i dati da un rapporto di analisi, fai clic sull’elenco a discesa
 
 ![](assets/s_ncs_user_report_wizard_09.png)
 
-For more on this, refer to [this page](../../reporting/using/actions-on-reports.md).
+Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/actions-on-reports.md).
 
 ## Riutilizzo di report e analisi esistenti {#re-using-existing-reports-and-analyses}
 
-Puoi creare rapporti di analisi descrittivi sui dati utilizzando i rapporti esistenti già memorizzati in Adobe Campaign. Questa modalità è possibile quando le analisi sono state salvate o quando sono stati creati e configurati per l&#39;accesso tramite la procedura guidata di analisi descrittiva.
+Potete creare rapporti di analisi descrittivi sui dati utilizzando i rapporti esistenti già memorizzati in  Adobe Campaign. Questa modalità è possibile quando le analisi sono state salvate o quando sono stati creati e configurati per l&#39;accesso tramite la procedura guidata di analisi descrittiva.
 
 Per informazioni su come salvare le analisi descrittive, vedere [Salvataggio di un report](#saving-an-analysis-report)di analisi.
 
 Per creare rapporti di analisi descrittivi, l&#39;analisi guidata deve essere eseguita tramite una transizione di workflow o tramite il **[!UICONTROL Tools > Descriptive analysis]** menu.
 
-1. Selezionate **[!UICONTROL Existing analyses and reports]** e fate clic su **[!UICONTROL Next]**.
+1. Seleziona **[!UICONTROL Existing analyses and reports]** e fai clic su **[!UICONTROL Next]**.
 1. Questo consente di accedere all&#39;elenco dei rapporti disponibili. Selezionate il rapporto da generare.
 
    ![](assets/s_ncs_user_report_wizard_01.png)
