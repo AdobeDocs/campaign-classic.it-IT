@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: personalizing-deliveries
 discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ Per impostazione predefinita è disponibile un elenco di blocchi di personalizza
    >Per ulteriori informazioni sulla generazione della pagina mirror, vedere [Generazione della pagina](../../delivery/using/sending-messages.md#generating-the-mirror-page)mirror.
 
 * **[!UICONTROL Link to mirror page]** : inserisce un collegamento alla pagina mirror: &quot;Se non riesci a visualizzare correttamente questo messaggio, fai clic qui&quot;.
-* **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l&#39;iscrizione a tutte le consegne ( elenco Bloccati).
+* **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l’iscrizione a tutte le consegne (elenco Bloccati).
 * **[!UICONTROL Formatting function for proper nouns]** : genera la funzione **[!UICONTROL toSmartCase]** Javascript, che modifica la prima lettera di ogni parola in maiuscolo. Questo blocco deve essere inserito nel codice sorgente del recapito, nei **`<script>...</script>`** tag.
 
    Nell&#39;esempio seguente, la funzione viene utilizzata per sostituire l&#39;elemento &quot;Intestazione personale&quot; con &quot;Nuova intestazione&quot; con lettere maiuscole a ogni parola:
