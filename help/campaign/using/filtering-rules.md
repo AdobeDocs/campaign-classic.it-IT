@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '505'
 ht-degree: 3%
 
 ---
@@ -93,7 +93,7 @@ Potete anche collegare le regole di filtro direttamente tramite questa scheda, s
 
 Per impostazione predefinita sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l&#39;analisi delle e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio vietati contenuti in un elenco di soppressione globale crittografato gestito nell&#39;istanza di recapito. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
 
-Questo per evitare di essere aggiunti al elenco Bloccati  a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviato un messaggio e-mail di conferma a tale Spamtrap, con l&#39;aggiunta automatica dell&#39;indirizzo al elenco Bloccati .
+Questo per evitare di essere aggiunto al elenco Bloccati a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare la sottoscrizione tramite uno dei moduli Web, viene automaticamente inviato un messaggio e-mail di conferma a tale Spamtrap, con conseguente aggiunta automatica dell&#39;indirizzo al elenco Bloccati.
 
 >[!NOTE]
 >
