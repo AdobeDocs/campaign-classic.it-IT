@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '489'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ Puoi:
 >
 >L&#39;importazione dei dati in Campaign deve essere eseguita tramite flussi di lavoro per garantire la coerenza dei dati e migliorare l&#39;efficienza. Per ulteriori informazioni, consultare le sezioni [Importazione di dati](../../workflow/using/importing-data.md), [Importazione di best practice](../../workflow/using/importing-data.md#best-practices-when-importing-data) e [Importazione di modelli di esempio](../../workflow/using/importing-data.md#setting-up-a-recurring-import) .
 
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+
 ## Creating a job template {#creating-a-job-template}
 
 I modelli di importazione ed esportazione sono memorizzati nella **[!UICONTROL Resources > Templates > Job templates]** directory della struttura di Adobe Campaign .
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 Per impostazione predefinita, in questa directory sono presenti tre modelli di importazione e uno di esportazione. Non devono essere modificati. Potete duplicarli per creare modelli personalizzati o creare un nuovo modello tramite il **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
 
@@ -54,7 +54,7 @@ La procedura per la creazione di un modello di processo viene presentata in [Esp
 
 >[!NOTE]
 >
->Il modello nativo **[!UICONTROL Import block list]** è già configurato per importare un elenco di indirizzi e-mail aggiunti al elenco Bloccati .
+>Il modello nativo **[!UICONTROL Import denylist]** è già configurato per importare un elenco di indirizzi e-mail aggiunti al elenco Bloccati.
 > 
 >I modelli **[!UICONTROL New text import]** e **[!UICONTROL New text export]** consentono di configurare un’importazione o un’esportazione da zero.
 
