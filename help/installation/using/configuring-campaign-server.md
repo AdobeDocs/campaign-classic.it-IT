@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3587'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ La sezione seguente descrive le configurazioni lato server che possono essere es
 >
 >Queste configurazioni devono essere eseguite dagli amministratori e solo per i modelli di hosting **locali** .
 >
->Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo  Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno del Pannello di controllo Campaign (ad esempio, gestione di elenchi consentiti  IP o autorizzazioni URL).
+>Per le distribuzioni **ospitate** , le impostazioni lato server possono essere configurate solo  Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno del Pannello di controllo Campaign (ad esempio, gestione dei inserire nell&#39;elenco Consentiti di  IP o autorizzazioni URL).
 
 Per ulteriori informazioni, consultare le sezioni seguenti:
 
@@ -355,9 +355,9 @@ Con i modelli di hosting **ibridi** e **locali** , l&#39;amministratore deve far
 
 Esistono tre modalità di protezione della connessione:
 
-* **Blocco**: tutti gli URL che non appartengono al elenco consentiti  sono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post aggiornamento.
-* **Autorizzazione**: tutti gli URL che non appartengono al elenco consentiti  sono consentiti.
-* **Avviso**: tutti gli URL che non appartengono al elenco consentiti  sono consentiti, ma l&#39;interprete JS invia un avviso in modo che l&#39;amministratore possa raccogliere tali URL. Questa modalità aggiunge i messaggi di avviso JST-310027.
+* **Blocco**: tutti gli URL che non appartengono al inserire nell&#39;elenco Consentiti  vengono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post aggiornamento.
+* **Autorizzazione**: tutti gli URL che non appartengono al inserire nell&#39;elenco Consentiti  sono consentiti.
+* **Avviso**: tutti gli URL che non appartengono al inserire nell&#39;elenco Consentiti  sono consentiti, ma l&#39;interprete JS invia un avviso in modo che l&#39;amministratore possa raccogliere tali URL. Questa modalità aggiunge i messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -369,9 +369,9 @@ Esistono tre modalità di protezione della connessione:
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, il client dei nuovi clienti utilizza la modalità **di** blocco. Se devono consentire un nuovo URL, devono contattare l’amministratore per aggiungerlo al elenco consentiti .
+>Per impostazione predefinita, il client dei nuovi clienti utilizza la modalità **di** blocco. Se devono consentire un nuovo URL, devono contattare l&#39;amministratore per aggiungerlo al inserire nell&#39;elenco Consentiti .
 >
->I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, questi devono contattare l’amministratore per aggiungere gli URL al elenco consentiti  e attivare la modalità **di** blocco.
+>I clienti esistenti che provengono da una migrazione possono utilizzare la modalità **di** avviso per un certo periodo di tempo. Nel frattempo, devono analizzare il traffico in uscita prima di autorizzare gli URL. Una volta definito l’elenco degli URL autorizzati, questi devono contattare l’amministratore per aggiungere gli URL al inserire nell&#39;elenco Consentiti  e attivare la modalità **di** blocco.
 
 ## Sicurezza e relè delle pagine dinamiche {#dynamic-page-security-and-relays}
 
@@ -452,7 +452,7 @@ sh
 >
 >Questo elenco non è esaustivo.
 
-Nel nodo **exec** del file di configurazione del server, è necessario fare riferimento al file creato in precedenza nell&#39;attributo **blocklistFile** .
+Nel nodo **exec** del file di configurazione del server, è necessario fare riferimento al file creato in precedenza nell&#39;attributo **blacklistFile** .
 
 **Solo** per Linux: nel file di configurazione del server, si consiglia di specificare un utente dedicato all&#39;esecuzione di comandi esterni per migliorare la configurazione di protezione. Questo utente è impostato nel nodo **exec** del file di configurazione. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -464,7 +464,7 @@ Ad esempio:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
