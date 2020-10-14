@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Si tratta della tabella predefinita utilizzata per i **destinatari delle consegn
 * iEmailFormat: formato preferenziale per le e-mail (1 per Testo, 2 per HTML e 0 per non definito).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity sono utilizzati per costruire l&#39;indirizzo postale (in conformità con lo standard XPZ 10-011 AFNOR dal maggio 1997).
 * sPhone, sMobilePhone, sFax contengono rispettivamente i numeri di telefono, telefono cellulare e fax.
-* iBlockList è il flag di rifiuto predefinito utilizzato per i profili (1 significa &quot;non iscritto&quot;, 0 in caso contrario).
+* iBlackList è il flag di rinuncia predefinito utilizzato per i profili (1 significa &quot;unsubscribed&quot;, 0 in caso contrario).
 
 Il campo iFolderId è la chiave esterna che collega il destinatario alla propria cartella di esecuzione. For more on this, see [XtkFolder](#XtkFolder).
 
