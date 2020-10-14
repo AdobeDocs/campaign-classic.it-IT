@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2440'
 ht-degree: 16%
 
 ---
@@ -32,7 +32,7 @@ Quando un messaggio (e-mail, SMS, notifica push) non può essere inviato a un pr
 
 Una volta inviato il messaggio, i registri di consegna consentono di visualizzare lo stato di consegna per ciascun profilo e il tipo e il motivo di errore associati.
 
-È inoltre possibile escludere i messaggi durante la preparazione della consegna se un indirizzo viene messo in quarantena o se un profilo si trova nel elenco Bloccati . I messaggi esclusi sono elencati nel dashboard di distribuzione.
+I messaggi possono essere esclusi anche durante la preparazione della consegna se un indirizzo viene messo in quarantena o se un profilo è in elenco Bloccati. I messaggi esclusi sono elencati nel dashboard di distribuzione.
 
 **Argomenti correlati:**
 
@@ -83,10 +83,10 @@ I possibili motivi di un errore di consegna sono:
    <td> Il valore di qualità per questo indirizzo è troppo basso.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Indirizzo  elenco Bloccati </td> 
+   <td> Indirizzo Inserita nell'elenco Bloccati </td> 
    <td> Rigido </td> 
    <td> 8 </td> 
-   <td> L'indirizzo è stato aggiunto al elenco Bloccati  al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni nell'elenco  Adobe Campaign Quarantine.<br /> </td> 
+   <td> L'indirizzo è stato aggiunto al elenco Bloccati al momento dell'invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni nell'elenco  Adobe Campaign Quarantine.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indirizzo di controllo </td> 
@@ -104,7 +104,7 @@ I possibili motivi di un errore di consegna sono:
    <td> Errore ignorato </td> 
    <td> Ignorato </td> 
    <td> 25 </td> 
-   <td> L'indirizzo è sul elenco consentiti . L’errore viene quindi ignorato e viene inviato un messaggio e-mail.<br /> </td> 
+   <td> L'indirizzo è sul inserire nell'elenco Consentiti . L’errore viene quindi ignorato e viene inviato un messaggio e-mail.<br /> </td> 
   </tr> 
   <tr> 
    <td> Escluso dopo l'arbitrato </td> 
@@ -204,7 +204,7 @@ Un messaggio può non riuscire immediatamente (errore sincrono), o successivamen
    >
    >La configurazione della cassetta postale di rimbalzo è dettagliata in [questa sezione](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   Il ciclo [di](../../delivery/using/technical-recommendations.md#feedback-loop) feedback funziona come un messaggio e-mail di rimbalzo. Quando un utente qualifica un messaggio e-mail come spam, potete configurare le regole e-mail in  Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un&#39;e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti si trovano nel elenco Bloccati  anche se non hanno fatto clic sul collegamento per l’annullamento dell’iscrizione. Gli indirizzi si trovano nel elenco Bloccati  nella tabella di quarantena (**NmsAddress**) e non nella tabella del destinatario (**NmsRecipient**).
+   Il ciclo [di](../../delivery/using/technical-recommendations.md#feedback-loop) feedback funziona come un messaggio e-mail di rimbalzo. Quando un utente qualifica un messaggio e-mail come spam, potete configurare le regole e-mail in  Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un&#39;e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti sono in elenco Bloccati anche se non hanno fatto clic sul collegamento di annullamento della sottoscrizione. Gli indirizzi sono elenco Bloccati nella tabella di quarantena (**NmsAddress**) e non nella tabella del destinatario (**NmsRecipient**).
 
    >[!NOTE]
    >
