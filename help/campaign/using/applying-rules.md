@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 10%
 
 ---
@@ -84,7 +84,7 @@ Nella modalità operativa standard, le regole vengono applicate nella sequenza s
 1. Regole di controllo, se applicate all’inizio del targeting.
 1. Regole di filtro:
 
-   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo / non verificato / indirizzo sul elenco Bloccati  / indirizzo messo in quarantena / qualità indirizzo.
+   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo / non verificato / indirizzo sul elenco Bloccati / indirizzo messo in quarantena / qualità indirizzo / non verificato.
    * Regole di filtro definite dall’utente.
    * Regola di deduplicazione sull&#39;indirizzo o sull&#39;identificatore (applicata se necessario).
 
