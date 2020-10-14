@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '736'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ Per raggiungere la casella in entrata dei destinatari senza rimbalzare o contras
 
 È nel vostro interesse mantenere buoni processi di gestione della quarantena.
 
-Quando iniziate a inviare e-mail su una nuova piattaforma, potete utilizzare un elenco di indirizzi non completi. Se si inviano a indirizzi non validi o a indirizzi per le chat (le caselle di posta solo create per gli spammers ingannevoli), questo inizierà a ridurre la reputazione della piattaforma. Una buona gestione della quarantena aiuta a: mantenere la qualità dell&#39;indirizzo, evitare  elenco Bloccati da parte dei provider di accesso a Internet e ridurre il tasso di errore, velocizzare le consegne e la velocità di trasmissione.
+Quando iniziate a inviare e-mail su una nuova piattaforma, potete utilizzare un elenco di indirizzi non completi. Se si inviano a indirizzi non validi o a indirizzi per le chat (le caselle di posta solo create per gli spammers ingannevoli), questo inizierà a ridurre la reputazione della piattaforma. Una buona gestione della quarantena aiuta a: mantenere la qualità degli indirizzi, evitare elenchi Bloccati da parte dei provider di accesso a Internet e ridurre il tasso di errore, velocizzare le consegne e la velocità di trasmissione.
 
 **Suggerimenti**
 
@@ -73,7 +73,7 @@ Quando iniziate a inviare e-mail su una nuova piattaforma, potete utilizzare un 
 *  Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md).
 
 
-* Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare di essere aggiunta a un elenco Bloccati  da parte di questi fornitori.
+* Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. Quarantine quindi consente di evitare di essere aggiunti al elenco Bloccati da questi provider.
 
 * La gestione delle scorte contribuirà anche a ridurre i costi di invio di SMS escludendo numeri di telefono errati dalle consegne.
 
