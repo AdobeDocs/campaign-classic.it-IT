@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 2%
 
 ---
@@ -114,12 +114,12 @@ La manutenzione di piattaforme e database può anche influire sulle prestazioni 
 
 Dopo aver fatto clic sul **[!UICONTROL Send]** pulsante, la consegna sembra richiedere più tempo del solito. Ciò può essere causato da diversi elementi:
 
-* Alcuni provider di posta elettronica potrebbero aver aggiunto gli indirizzi IP a un elenco Bloccati . In questo caso, controlla i tuoi registri di trasmissione e consulta [questa sezione](../../delivery/using/about-deliverability.md).
+* Alcuni provider di posta elettronica potrebbero aver aggiunto gli indirizzi IP a un elenco Bloccati. In questo caso, controlla i tuoi registri di trasmissione e consulta [questa sezione](../../delivery/using/about-deliverability.md).
 * La consegna potrebbe essere troppo grande per essere elaborata rapidamente, questo potrebbe verificarsi con una personalizzazione JavaScript elevata o se il volume di consegna supera i 60 Kbyte. Per informazioni sulle linee guida relative ai contenuti, fare riferimento  best practice [per la](../../delivery/using/delivery-best-practices.md) distribuzione Adobe Campaign.
 * Potrebbe essersi verificata una limitazione all&#39;interno della  MTA Adobe Campaign. Ciò è causato da:
 
    * Messaggi aperti (**[!UICONTROL quotas met]** messaggio): sono state rispettate le quote dichiarate dalle regole dichiarative MX definite in Campaign. Per ulteriori informazioni su questo messaggio, fare riferimento a [questa pagina](../../delivery/using/deliverability-faq.md) . Per ulteriori informazioni sulle regole MX, consultare [questa pagina](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): Campaign MTA ha rilevato degli errori quando si tenta di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore eccessiva e quindi di affrontare il potenziale elenco Bloccati .
+   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): Campaign MTA ha rilevato degli errori quando si tenta di inviare messaggi per un dato ISP che causano un rallentamento per evitare una densità di errore troppo elevata e quindi di fronte a un potenziale elenco Bloccati.
 
 * Un problema del sistema può impedire ai server di interagire tra loro: questo può rallentare l&#39;intero processo di invio. Controlla i server per assicurarti che non ci siano problemi di memoria o di risorse che possano avere un impatto su Campaign, ad esempio nel processo di ottenimento dei dati di personalizzazione.
 
@@ -163,7 +163,7 @@ Durante l&#39;invio di una consegna, sul dashboard di consegna potresti avere il
   </tr> 
   <tr> 
    <td> Ignorato<br /> </td> 
-   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. È stato aggiunto a un elenco Bloccati , messo in quarantena, non fornito o duplicato. <br /> </td> 
+   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. Era elenco Bloccati, in quarantena, non fornito o un duplicato. <br /> </td> 
   </tr> 
   <tr> 
    <td> Inviato<br /> </td> 
@@ -241,7 +241,7 @@ Se lo stato di invio dell’e-mail è **[!UICONTROL Failed]**, può essere colle
 
 I registri di consegna sono la chiave per capire perché una consegna non è riuscita. Di seguito sono riportati possibili errori che è possibile rilevare dai registri di consegna:
 
-* Se i messaggi dei destinatari non riescono con un errore &quot;Non raggiungibile&quot; che indica: **Errore durante la compilazione della riga X dello script &#39;content htmlContent&#39;:`[table]`non è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
+* Se i messaggi dei destinatari non riescono con un errore &quot;Non raggiungibile&quot; che indica: **Errore durante la compilazione della riga X dello script &#39;content htmlContent&#39;: `[table]` non è definito. JavaScript: durante la valutazione dello script &#39;content htmlContent**, la causa di questo problema è quasi sempre una personalizzazione all&#39;interno dell&#39;HTML che tenta di richiamare una tabella o un campo che non è stato definito o mappato nel targeting upstream o nella mappatura di destinazione della consegna.
 
    Per correggere questo problema, è necessario rivedere il flusso di lavoro e il contenuto di distribuzione per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare la tabella. Da qui, la rimozione della chiamata a questa tabella nell’HTML o la correzione della mappatura alla consegna costituirebbe il percorso della risoluzione.
 
