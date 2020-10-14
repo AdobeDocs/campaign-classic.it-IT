@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1303'
 ht-degree: 3%
 
 ---
@@ -151,5 +151,5 @@ Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; 
    * Se si utilizza lo stesso MTA per più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze saranno duplicati dall&#39;opzione dataLogPath.
 
 * **E-mail per connessione**: L&#39;archiviazione delle e-mail CCN funziona aprendo una connessione e provando a inviare tutte le e-mail tramite quella connessione.  Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. Aumentare questo numero può avere un grande impatto sul throughput CCN.
-* **IP** invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP al elenco consentiti  della rete, a seconda della configurazione del server e-mail.
+* **IP** invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP al inserire nell&#39;elenco Consentiti  della rete, a seconda della configurazione del server di posta elettronica.
 
