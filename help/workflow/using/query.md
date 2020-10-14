@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: targeting-activities
 discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
@@ -187,7 +187,7 @@ La sezione seguente illustra le procedure ottimali per ottimizzare le query in e
 
    Assicurarsi che la `where` clausola sia dello stesso tipo del campo.
 
-   Un errore comune è: `iBlocklist='3'` dove `iBlocklist` è un campo numerico e `3` indica un valore di testo.
+   Un errore comune è: `iBlacklist='3'` dove `iBlacklist` è un campo numerico e `3` indica un valore di testo.
 
    Verificare di conoscere il piano di esecuzione della query. Evitate analisi complete delle tabelle, in particolare per query in tempo reale o query in tempo quasi reale eseguite ogni minuto.
 
