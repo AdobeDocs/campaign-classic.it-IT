@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ Per configurare Azure Synapse su CentOS:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al elenco consentiti . A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al inserire nell&#39;elenco Consentiti di . A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 1. Nel caso di iptables, eseguire il comando seguente:
 
@@ -225,7 +225,7 @@ Per configurare Azure Synapse su Debian:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al elenco consentiti . A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
+   >Per consentire la comunicazione dal lato di Azure Synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al inserire nell&#39;elenco Consentiti di . A tal fine, fare riferimento alla documentazione [di](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules)Azure.
 
 ## Configurare l&#39;accesso al Snowflake  {#configure-access-to-snowflake}
 
