@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -47,38 +47,38 @@ Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#
 
 Se il problema persiste, contattate i servizi commerciali o di recapito,  Adobe Campaign Client Care o  supporto Adobe Campaign.
 
-## elenco Bloccati  contro quarantena {#block-list-versus-quarantine}
+## elenco Bloccati e quarantena {#denylist-versus-quarantine}
 
-* **Qual è la differenza tra un indirizzo e-mail nel elenco Bloccati  e un indirizzo e-mail in quarantena?**
+* **Qual è la differenza tra un indirizzo e-mail elenco Bloccati e un indirizzo e-mail in quarantena?**
 
-   * Lo stato **[!UICONTROL On block list]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
+   * Lo stato **[!UICONTROL Denylisted]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
    * Lo stato **[!UICONTROL Quarantined]** è il risultato di un rimbalzo morbido o duro.
-   Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-block-list).
+   Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
 
-   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, indirizzo  elenco Bloccati, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
+   I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, al elenco Bloccati, rifiutato, errore ignorato, irraggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
    For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
 
-## Rimozione da  elenco Bloccati {#remove-from-block-list}
+## Rimozione dal elenco Bloccati {#remove-from-denylist}
 
-* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati  per errore. Come posso rimuoverli dal elenco Bloccati  in modo da poter iniziare a inviare nuovamente i messaggi?**
+* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati per errore. Come posso rimuoverli dal negyist in modo da poter iniziare a inviare loro di nuovo messaggi?**
 
    * Vai a **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nei dettagli del record corrispondente, impostare il valore del **[!UICONTROL Status]** campo su **[!UICONTROL Valid]**.
    * Salvare il record.
 
-* **Come posso sapere se uno dei miei IP è su un elenco Bloccati ? Come posso rimuovere i miei IP da un elenco Bloccati ?**
+* **Come posso sapere se uno dei miei IP è su un elenco Bloccati? Come posso rimuovere i miei IP da un elenco Bloccati?**
 
-   Per verificare se l&#39;indirizzo IP si trova su un elenco Bloccati , potete utilizzare vari siti Web per verificarlo, ad esempio:
+   Per verificare se l&#39;indirizzo IP si trova su un elenco Bloccati, potete utilizzare vari siti Web per verificarlo, ad esempio:
    * [Toolbox MX](https://mxtoolbox.com/)
    * [Qual è il mio indirizzo IP?](https://whatismyipaddress.com)
 
-   In genere, il risultato della verifica dell&#39;indirizzo IP restituirà un elenco contenente i dettagli del elenco Bloccati  e anche il nome del sito Web che ha bloccato l&#39;indirizzo IP.
+   In genere, il risultato del controllo dell&#39;indirizzo IP restituirà un elenco contenente i dettagli del elenco Bloccati e anche il nome del sito Web che ha negato l&#39;indirizzo IP.
 
-   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il vostro sito Web venga eliminato dal sito Web che ha aggiunto l&#39;indirizzo IP al suo elenco Bloccati .
+   Facendo clic sul collegamento corrispondente, potete accedere ai dettagli del sito Web. Quindi, potete richiedere che il sito Web venga eliminato dal sito Web che ha aggiunto l&#39;indirizzo IP al suo elenco Bloccati.
 
    >[!NOTE]
    >
