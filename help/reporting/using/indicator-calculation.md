@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -564,7 +564,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Reclami<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo aggiunto al elenco Bloccati ".<br /> </td> 
+   <td> Conteggio di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo sul elenco Bloccati".<br /> </td> 
    <td> Count(@status=2 e msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ Questo rapporto è basato sulla **[!UICONTROL Delivery]** tabella (nms:delivery)
   <tr> 
    <td> Messaggi rifiutati dalla regola<br /> </td> 
    <td> @rifiutare<br /> </td> 
-   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, messo in quarantena, aggiunto al elenco Bloccati , ecc.<br /> </td> 
+   <td> Numero di indirizzi ignorati durante l'analisi in conformità con le regole di tipologia: indirizzo non specificato, messo in quarantena, al elenco Bloccati, ecc.<br /> </td> 
    <td> sum([proprietà/@rifiuto])<br /> </td> 
   </tr> 
   <tr> 
