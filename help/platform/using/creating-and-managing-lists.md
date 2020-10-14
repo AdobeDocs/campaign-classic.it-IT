@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 5%
+source-wordcount: '792'
+ht-degree: 8%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 5%
 ## Informazioni sugli elenchi in  Adobe Campaign {#about-lists-in-adobe-campaign}
 
 Un elenco è un set statico di profili che possono essere mirati nelle azioni di consegna o aggiornati durante le operazioni di importazione o durante l&#39;esecuzione del flusso di lavoro. Ad esempio, una popolazione estratta dal database tramite una query può fornire un elenco.
-
-
 
 Gli elenchi vengono creati e gestiti tramite il **[!UICONTROL Lists]** collegamento presente nella **[!UICONTROL Profiles and targets]** scheda.
 
@@ -41,6 +39,8 @@ In  Adobe Campaign sono disponibili due tipi di elenchi:
 * **[!UICONTROL List]** type: Gli elenchi dei **[!UICONTROL List]** tipi consentono di utilizzare i flussi di lavoro per creare e gestire gli elenchi. Si tratta di elenchi specifici risultanti dalle importazioni di dati, che possono essere aggiornati tramite l&#39;attività dedicata al **[!UICONTROL List update]** flusso di lavoro.
 
    A differenza dell&#39;elenco dei **[!UICONTROL Group]** tipi, questo elenco di tipi può essere aggiornato automaticamente con un&#39; **[!UICONTROL Scheduler]** attività. Si noti che per un esempio su come creare elenchi di **[!UICONTROL List]** tipi, fare riferimento a [questa pagina](../../workflow/using/list-update.md).
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-list-video)
 
 ## Creazione di un elenco di profili da un gruppo {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ Per rimuovere un profilo da un elenco, potete:
 >
 >Quando eliminate un elenco, i profili presenti nell’elenco non vengono modificati, ma i dati nel relativo profilo vengono aggiornati.
 
+## Come creare un elenco di destinatari {#create-list-video}
+
+Un elenco è un set statico di destinatari che possono essere targetizzati nelle azioni di consegna o aggiornati durante le operazioni di importazione o l’esecuzione di un flusso di lavoro. Un elenco di destinatari è anche detto audience.
+
+Scopri come creare un pubblico configurando un elenco di destinatari da Esplora risorse.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## Come creare un elenco di destinatari con un flusso di lavoro
+
+Scoprite come creare un flusso di lavoro per indirizzare i destinatari e come renderlo ricorrente prima di utilizzare l&#39;elenco in una destinazione e-mail.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**Vedi anche**
+
+* 
+
+* 
