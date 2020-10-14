@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ Gli ambiti definiti nell&#39;account esterno della campagna devono essere un sot
 
 **URL richiamata**
 
-L’URL **di** callback deve essere aggiunto all’elenco consentiti  e iniziare con &quot;https://&quot;. Verificate che l’URL **di** callback sia collegato all’istanza corrispondente. Ad esempio, l&#39;istanza di produzione deve reindirizzare all&#39;URL di produzione.
+L’URL **di** callback deve essere aggiunto al inserire nell&#39;elenco Consentiti  e iniziare con &quot;https://&quot;. Verificate che l’URL **di** callback sia collegato all’istanza corrispondente. Ad esempio, l&#39;istanza di produzione deve reindirizzare all&#39;URL di produzione.
 
 **ID client e segreto**
 
