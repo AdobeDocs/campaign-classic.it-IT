@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Secondo uno studio sul percorso di ritorno, le campagne di reimpegno sono uscite
 ### Fase 1 {#phase-1}
 
 * Il primo passaggio consiste nell&#39;identificare gli abbonati che hanno un&#39;attività che non può essere aperta o fare clic su un elemento molto piccolo, e quindi segmentare il gruppo in base a un intervallo di tempo impostato. La regola del pollice consiste nel rivedere gli utenti che non hanno aperto o fatto clic su un&#39;e-mail negli ultimi 90 giorni. Tuttavia, questo varia a seconda della natura dell&#39;attività (ad esempio, l&#39;invio stagionale).
-* Un altro punto da tenere a mente durante la definizione dei tempi è che i provider di servizi Internet e le aziende  elenchi Bloccati considerano l&#39;impegno un luogo da 1,5 a 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
+* Un altro punto da tenere a mente durante la definizione dei tempi è che i provider di servizi Internet e le aziende elenchi Bloccati considerano l&#39;impegno un luogo da 1,5 a 1,8 anni. Inoltre, attività comportamentali come acquisti e attività sul sito Web o altri punti di contatto, come le preferenze durante la fase di registrazione o il primo punto di contatto.
 
 ### Fase 2 {#phase-2}
 
