@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ Seguono alcune linee guida aggiuntive sul monitoraggio della recapito:
 * Controllate ogni throughput di distribuzione per assicurarvi che sia coerente con la validità del contenuto di distribuzione (ad es. Le vendite flash devono essere consegnate in minuti, non in giorni).
 * Quando si utilizzano [le onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verificare che ogni onda disponga di tempo sufficiente per terminare prima che venga attivata la successiva.
 * Verificate che il numero di errori e di nuove [quarantena](../../delivery/using/understanding-quarantine-management.md) siano coerenti con altre consegne.
-* Consultate attentamente i registri [di](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) consegna per verificare il tipo di errori evidenziati (elenchi Bloccati , problemi DNS, regole anti-spam, ecc.).
+* Consultate attentamente i registri [di](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) consegna per verificare il tipo di errori evidenziati (elenco Bloccati, problemi DNS, regole anti-spam, ecc.).
 
 ## Spam segnale {#signal-spam}
 
@@ -68,7 +68,7 @@ Signal Spam è un servizio francese che offre un report anonimo sul loop di feed
 
 ## 250 ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di recapito del Adobe  che forniscono elenchi Bloccati IP e di dominio  e indicatori di reputazione.
+[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di recapito del Adobe  che forniscono elenco Bloccati di IP e dominio e indicatori di reputazione.
 
 Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza proattiva.
 
@@ -92,7 +92,7 @@ Nella relazione sono utilizzati i seguenti indicatori:
 
 * **[!UICONTROL DomainKeys]** : Un servizio sviluppato da Yahoo e destinato a certificare l&#39;identità di un mittente di posta elettronica.
 
-* **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni  elenco Bloccati per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro gli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
+* **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni elenchi Bloccati per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro gli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
 
