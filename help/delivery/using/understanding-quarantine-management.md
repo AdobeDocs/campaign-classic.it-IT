@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2571'
 ht-degree: 15%
 
 ---
@@ -34,21 +34,21 @@ ht-degree: 15%
 
 I profili con indirizzi e-mail o numeri di telefono in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedi [Identificazione degli indirizzi messi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
 
-Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare di essere aggiunta a un elenco Bloccati  da parte di questi fornitori.
+Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. Quarantine quindi consente di evitare di essere aggiunti al elenco Bloccati da questi provider.
 
 Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](../../delivery/using/delivery-best-practices.md) .
 
-### Quarantena e elenco Bloccati  {#quarantine-vs-block-list}
+### Quarantena e elenco Bloccati {#quarantine-vs-denylist}
 
 La **quarantena** si applica solo a un indirizzo, non a tutto il profilo. Ciò significa che se due profili hanno lo stesso indirizzo e-mail, vengono entrambi coinvolti se l’indirizzo viene messo in quarantena.
 
 Allo stesso modo, un profilo con un indirizzo e-mail messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene aggiunto al elenco Bloccati  come nel processo di rifiuto dell&#39;e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
+>Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; al fine di rifiutare le consegne degli SMS, il suo profilo non viene aggiunto al elenco Bloccati come nel processo di rifiuto dell&#39;e-mail. Il numero di telefono del profilo viene inviato in quarantena, in modo che l&#39;utente continui a ricevere i messaggi e-mail.
 
 ## Identificazione degli indirizzi messi in quarantena {#identifying-quarantined-addresses}
 
@@ -107,9 +107,7 @@ Per rimuovere manualmente un indirizzo dall&#39;elenco di quarantena:
 
    ![](assets/tech_quarant_error_status.png)
 
-* Potete anche modificarne lo stato in **[!UICONTROL On allow list]**. In questo caso, l&#39;indirizzo rimane nell&#39;elenco di quarantena, ma sarà mirato sistematicamente, anche se si verifica un errore.
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* Potete anche modificarne lo stato in **[!UICONTROL Allowlisted]**. In questo caso, l&#39;indirizzo rimane nell&#39;elenco di quarantena, ma sarà mirato sistematicamente, anche se si verifica un errore.
 
 Gli indirizzi vengono rimossi automaticamente dall&#39;elenco di quarantena nei seguenti casi:
 
@@ -120,7 +118,7 @@ Gli indirizzi vengono rimossi automaticamente dall&#39;elenco di quarantena nei 
 Il loro stato diventa **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-I destinatari con un indirizzo **[!UICONTROL Quarantine]** o **[!UICONTROL On block list]** uno stato non verranno mai rimossi, anche se ricevono un&#39;e-mail.
+I destinatari con un indirizzo **[!UICONTROL Quarantine]** o **[!UICONTROL On denylist]** uno stato non verranno mai rimossi, anche se ricevono un&#39;e-mail.
 
 È possibile modificare il numero di errori e il periodo compreso tra due errori. A questo scopo, modificate le impostazioni corrispondenti nella procedura guidata di distribuzione (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
