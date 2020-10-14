@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
 
 # Crescita reputazione{#improve-reputation}
 
-Per evitare di esaurire i destinatari, elimina gli indirizzi e-mail duplicati dalla destinazione. Questo passaggio protegge la tua reputazione di invio e assicura una buona gestione della quarantena.  Adobe Campaign offre gli strumenti necessari per attuare queste raccomandazioni ed evitare il rischio di essere aggiunti a un elenco Bloccati  dal provider di servizi Internet.
+Per evitare di esaurire i destinatari, elimina gli indirizzi e-mail duplicati dalla destinazione. Questo passaggio protegge la tua reputazione di invio e assicura una buona gestione della quarantena.  Adobe Campaign offre gli strumenti necessari per attuare queste raccomandazioni ed evitare il rischio di essere aggiunto al elenco Bloccati dal provider.
 
 Per evitare il più possibile duplicazioni, è necessario eseguire le azioni seguenti:
 
@@ -42,7 +42,7 @@ La presenza di indirizzi e-mail duplicati può avere molteplici conseguenze:
 * Lo stesso messaggio viene inviato più di una volta. Anche se Campaign esegue una procedura di deduplicazione per impostazione predefinita prima dell&#39;invio, non c&#39;è nulla che fermi l&#39;invio dello stesso messaggio da parte di azioni diverse con lo stesso contenuto quando una destinazione viene divisa.
 * Richieste di annullamento sottoscrizione non rispettate. Se un destinatario annulla la sottoscrizione dopo aver ricevuto un messaggio, il profilo duplicato sarà comunque idoneo per i messaggi futuri.
 
-Oltre a questo passo a margine delle procedure di opt-in, questa situazione probabilmente porterà gli utenti a considerare i messaggi come spam e ad avviare una procedura di elenco Bloccati  presso l&#39;ISP.
+Oltre a questa procedura di opt-in, questa situazione porterà probabilmente gli utenti a considerare i messaggi come spam e ad avviare una procedura di elenco Bloccati presso l&#39;ISP.
 
 È necessario essere particolarmente prudenti quando si eseguono operazioni sul database:
 
