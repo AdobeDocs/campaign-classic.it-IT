@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -51,11 +51,11 @@ I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nel database  elenco Bloccati. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello ai destinatari di destinazione che si trovano nel elenco Bloccati .
+1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nel elenco Bloccati del database. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello per i destinatari a elenco Bloccati.
 
    A tale scopo, fare clic sulla **[!UICONTROL Exclusions]** scheda.
 
-1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** opzione.
+1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** opzione.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -109,10 +109,10 @@ Per farlo, segui la procedura indicata di seguito:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   La prima **[!UICONTROL Script]** attività aggiungerà i destinatari al elenco Bloccati  fino a quando non avranno confermato la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
+   La prima **[!UICONTROL Script]** attività aggiungerà i destinatari al elenco Bloccati fino a quando non avranno confermato la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
 
    ```
-   ctx.recipient.@blockList=1
+   ctx.recipient.@blackList=1
    ```
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
@@ -120,7 +120,7 @@ Per farlo, segui la procedura indicata di seguito:
    La seconda **[!UICONTROL Script]** attività autorizza l&#39;invio agli utenti e la sottoscrizione alla newsletter. Le ultime due righe dello script consentiranno di trasferire i destinatari dalla cartella temp a un&#39;altra cartella e di riconciliarsi con i profili esistenti non appena avranno confermato l&#39;iscrizione.
 
    ```
-   ctx.recipient.@blockList=0
+   ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>
    nms.subscription.Unsubscribe("TEMP", ctx.recipient)
@@ -172,7 +172,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   L’utente viene aggiunto al database Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo viene aggiunto al elenco Bloccati  fino a quando non conferma la propria iscrizione tramite e-mail.
+   L’utente viene aggiunto al database Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo è elenco Bloccati fino a quando non conferma la propria iscrizione tramite e-mail.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -186,7 +186,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    In  Adobe Campaign, il profilo utente viene aggiornato:
 
-   * non si trovano più nel elenco Bloccati ,
+   * non sono più elenco Bloccati,
    * sono iscritti al servizio informazioni.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
