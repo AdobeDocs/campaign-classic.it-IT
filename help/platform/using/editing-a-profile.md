@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '474'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 
 >[!NOTE]
 >
->Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo si trova sul elenco Bloccati , ovvero che il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
+>Quando l’ **[!UICONTROL No longer contact (by any channel)]** opzione è selezionata, ciò significa che il profilo è elenco Bloccati, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’iscrizione in una newsletter). Non saranno più indirizzati da invii su canali (e-mail, posta diretta, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
 ## Informazioni di contatto, scheda {#contact-information-tab}
 
