@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '7859'
+source-wordcount: '7857'
 ht-degree: 5%
 
 ---
@@ -572,8 +572,8 @@ Per ulteriori informazioni, vedere [Limitazione dei comandi](../../installation/
  </thead> 
  <tbody> 
   <tr> 
-   <td> blocklistFile<br /> </td> 
-   <td> Percorso del file contenente i comandi da aggiungere al elenco consentiti . <br /> </td> 
+   <td> blacklistFile<br /> </td> 
+   <td> Percorso del file contenente i comandi da aggiungere al inserire nell'elenco Consentiti . <br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
@@ -3076,7 +3076,7 @@ Per ulteriori informazioni, vedere Protezione [dinamica delle pagine, relè](../
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono 'normal' (esecuzione normale), ' inserii nell'elenco Bloccati' (url aggiunto al elenco Bloccati  in caso di errore 404) e 'spare' (caricamento di file sul server di riserva, se esistente).<br /> </td> 
+   <td> Stato di sincronizzazione di una risorsa pubblica (enumerazione). I valori possibili sono "normal" (esecuzione normale), "blacklist" (url aggiunto al elenco Bloccati in caso di errore 404) e "spare" (caricamento di file sul server di riserva, se esistente).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3134,19 +3134,19 @@ Configurazione predefinita:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
