@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1101'
 ht-degree: 2%
 
 ---
@@ -153,7 +153,7 @@ Per registrare i destinatari per un servizio di informazione, potete:
 
 per legge, le consegne e-mail devono contenere un collegamento per annullare l&#39;iscrizione. I destinatari possono fare clic su questo collegamento per aggiornare il proprio profilo ed essere esclusi dagli obiettivi delle consegne future.
 
-Il collegamento predefinito per l’annullamento dell’iscrizione viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti disponibile nella procedura guidata di distribuzione (consultate [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al elenco Bloccati  (rinuncia), il che significa che il destinatario non sarà più preso di mira da alcuna azione di consegna.
+Il collegamento predefinito per l’annullamento dell’iscrizione viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti disponibile nella procedura guidata di distribuzione (consultate [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più preso di mira da alcuna azione di consegna.
 
 I destinatari possono tuttavia scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. A tal fine, è possibile utilizzare un modulo Web (fare riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento personalizzato senza iscrizione (vedere Blocchi [di](../../delivery/using/personalization-blocks.md)personalizzazione).
 
