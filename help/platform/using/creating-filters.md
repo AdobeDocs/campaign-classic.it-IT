@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1976'
 ht-degree: 0%
 
 ---
@@ -276,8 +276,8 @@ I filtri predefiniti sono:
    <td> Seleziona i destinatari che hanno fatto clic su una consegna almeno X volte negli ultimi Y mesi.<br /> </td> 
   </tr> 
   <tr> 
- <td> Indirizzo e-mail nel elenco Bloccati<br /> </td> 
-    <td> Seleziona i destinatari il cui indirizzo e-mail si trova nel elenco Bloccati .<br/> </td>
+ <td> Indirizzo e-mail Inserita nell'elenco Bloccati<br /> </td> 
+    <td> Seleziona i destinatari il cui indirizzo e-mail è sul elenco Bloccati.<br/> </td>
   </tr> 
   <tr> 
    <td> Indirizzo e-mail in quarantena<br /> </td> 
