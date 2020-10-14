@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -151,6 +151,7 @@ Potete inoltre consultare i [suggerimenti e le limitazioni note per Gmail](https
 Attualmente puoi provare a inviare un messaggio e-mail AMP in due passaggi:
 
 1.  Adobe Campaign consente di testare la distribuzione di un&#39;e-mail dinamica basata su AMP a indirizzi e-mail selezionati configurati in modo appropriato, al fine di verificarne il contenuto e il comportamento. Consultate [Verifica della consegna di e-mail AMP per gli indirizzi](#testing-amp-delivery-for-selected-addresses)selezionati.
+
 1. Una volta verificato, è possibile inviare una consegna o una campagna come parte del programma AMP per e-mail registrandosi presso i provider di posta elettronica pertinenti per fare in modo che il dominio del mittente venga aggiunto al elenco consentiti . Consultate [Distribuzione di e-mail AMP tramite registrazione presso un provider](#delivering-amp-emails-by-registering)di posta elettronica.
 
 ### Verifica della consegna di e-mail AMP per gli indirizzi selezionati {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ Attualmente puoi provare a inviare un messaggio e-mail AMP in due passaggi:
 >
 >Attualmente solo Gmail, Outlook e Mail.ru supportano il test del formato AMP.
 
-Per Gmail e Outlook, è innanzitutto necessario aggiungere gli indirizzi del mittente che si sta utilizzando al elenco consentiti  per distribuire da  Adobe Campaign per gli account Gmail e Outlook di destinazione.
+Per Gmail e Outlook, è innanzitutto necessario aggiungere gli indirizzi del mittente che si sta utilizzando al inserire nell&#39;elenco Consentiti di  per distribuire da  Adobe Campaign per gli account Gmail e Outlook di destinazione.
 
 Per eseguire questa operazione:
 1. Verificate che l&#39;opzione che attiva l&#39;e-mail dinamica sia selezionata per i provider e-mail pertinenti.
