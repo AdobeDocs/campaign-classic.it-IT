@@ -1,7 +1,7 @@
 ---
 title: Progettazione di campagne di marketing
 seo-title: Progettazione di campagne di marketing
-description: Definizione, ottimizzazione, esecuzione e analisi delle campagne di marketing.
+description: Definisci, ottimizza, esegui e analizza campagne di marketing.
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
