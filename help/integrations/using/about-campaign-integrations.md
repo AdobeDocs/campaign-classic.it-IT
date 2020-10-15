@@ -1,6 +1,6 @@
 ---
 title: Informazioni sulle integrazioni di Campaign
-description: Usa altre soluzioni  Adobe e unisci le loro diverse funzionalità con Campaign.
+description: Usa altre soluzioni Adobe e combina le loro diverse funzionalità con Campaign.
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
