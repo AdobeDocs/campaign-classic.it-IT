@@ -1,6 +1,6 @@
 ---
-title: Rilascio Gold Standard
-description: Rilascio Gold Standard
+title: Versione Gold Standard
+description: Versione Gold Standard
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
 
-# Rilascio Gold Standard{#gold-standard}
+# Versione Gold Standard{#gold-standard}
 
 In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
 
