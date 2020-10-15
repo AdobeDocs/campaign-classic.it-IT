@@ -1,7 +1,7 @@
 ---
 title: Informazioni su Adobe Campaign Classic
 seo-title: Informazioni su Adobe Campaign Classic
-description: Scopri le funzionalità chiave, l'interfaccia utente e le linee guida globali.
+description: Scopri le funzionalità chiave, l’interfaccia utente e le linee guida globali.
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
