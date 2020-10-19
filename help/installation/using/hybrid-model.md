@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: f5244ab8-2421-4d76-bcf6-3574e68ea4e9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '131'
 ht-degree: 6%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 6%
 
 # Modello ibrido{#hybrid-model}
 
-Di seguito sono riportati i passaggi di installazione e configurazione applicabili ai modelli di hosting ibridi:
+In qualità di cliente ospitato, la maggior parte dei passaggi di installazione e configurazione sono eseguiti da  Adobe. Potete accedere alle seguenti sezioni per personalizzare l’implementazione:
 
-* Configurazione dei messaggi transazionali: fare riferimento a questa [sezione](../../message-center/using/transactional-messaging-architecture.md).
-* Configurazione degli URL di tracciamento e di pagina mirror per marchio. Per i messaggi transazionali, consulta questa [sezione](../../message-center/using/configuring-multibranding.md).
-* Installazione della console client: fare riferimento a questa [sezione](../../installation/using/installing-the-client-console.md).
-* Installazione dei pacchetti: fare riferimento a questa [sezione](../../installation/using/installing-campaign-standard-packages.md).
-* Trasparenza: configurazione di regole [MX e formati](../../installation/using/email-deliverability.md#mx-configuration) [](../../installation/using/email-deliverability.md#managing-email-formats)e-mail. Scopri di più sugli strumenti di recapito e sulle best practice leggendo la guida [introduttiva e la documentazione](../../delivery/using/deliverability-key-points.md) [](../../delivery/using/about-deliverability.md)dettagliata.
-* Configurazione delle opzioni della campagna: fare riferimento a questa [sezione](../../installation/using/configuring-campaign-options.md).
-* Configurazione di un database esterno (FDA): fare riferimento a questa [sezione](../../platform/using/about-fda.md).
-* Configurazione dei connettori CRM: fare riferimento a questa [sezione](../../platform/using/crm-connectors.md).
-* Per ulteriori informazioni sui principi di distribuzione mid-sourcing, consulta questa [sezione](../../installation/using/mid-sourcing-deployment.md).
+* Configura i messaggi transazionali: fare riferimento [a questa sezione](../../message-center/using/transactional-messaging-architecture.md).
+* Configurare gli URL di tracciamento e pagina mirror per marchio. Per i messaggi transazionali, fare riferimento [a questa sezione](../../message-center/using/configuring-multibranding.md).
+* Installare la console client: fare riferimento [a questa sezione](../../installation/using/installing-the-client-console.md).
+* Installare pacchetti incorporati: fare riferimento [a questa sezione](../../installation/using/installing-campaign-standard-packages.md).
+* Trasparenza: configurare regole [](../../installation/using/email-deliverability.md#mx-configuration) MX e formati [di](../../installation/using/email-deliverability.md#managing-email-formats)posta elettronica. Scopri di più sugli strumenti di recapito e sulle best practice leggendo la guida [introduttiva e la documentazione](../../delivery/using/deliverability-key-points.md) [](../../delivery/using/about-deliverability.md)dettagliata.
+* Configurare le opzioni della campagna: fare riferimento [a questa sezione](../../installation/using/configuring-campaign-options.md).
+* Configurare un database esterno (Federated Data Access): fare riferimento [a questa sezione](../../platform/using/about-fda.md).
+* Configurazione dei connettori CRM: fare riferimento [a questa sezione](../../platform/using/crm-connectors.md).
+* Per ulteriori informazioni sui principi di distribuzione mid-sourcing, consulta [questa sezione](../../installation/using/mid-sourcing-deployment.md).
 
