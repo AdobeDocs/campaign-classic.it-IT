@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 10%
+source-wordcount: '325'
+ht-degree: 11%
 
 ---
 
@@ -36,11 +36,11 @@ Se si dispone di una o più istanze di esecuzione registrate, nell&#39;istanza d
 
 ![](assets/messagecenter_archiving_002.png)
 
-**Architettura minima**
+<!--**Minimal architecture**
 
-Una volta che i moduli di controllo e di esecuzione sono installati nella stessa istanza, è necessario creare il flusso di lavoro di archiviazione utilizzando la procedura guidata di distribuzione. Fate clic sul **[!UICONTROL Create the archiving workflow]** pulsante per creare e avviare il flusso di lavoro.
+Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)
+![](assets/messagecenter_archiving_001.png)-->
 
 ## Flussi di lavoro per le istanze di esecuzione {#execution-instance-workflows}
 
