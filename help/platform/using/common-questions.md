@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Puoi ottenere l’elenco di tutti i sistemi e i componenti supportati per la bui
 
 Puoi accedere alle note sulla versione più recente di Campaign Classic [su questa pagina](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. Qual è la procedura per la delega del dominio? {#what-is-the-procedure-for-domain-delegation-}
+## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
 
 Un sottodominio è una divisione del dominio che può essere utilizzata per isolare i brand o vari tipi di traffico (messaggi transazionali, informazioni di marketing, ecc.).
 Adobe prende in considerazione il DNS (Domain Name System) per la consegna delle e-mail, il che consente al cliente di mantenere l’immagine del proprio brand utilizzando un alias DNS con i relativi nomi di dominio e ad Adobe di implementare autonomamente tutte le best practice tecniche che consentono di ottimizzare il recapito messaggi durante l’invio delle e-mail.
