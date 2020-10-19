@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2130'
 ht-degree: 94%
 
 ---
@@ -577,17 +577,16 @@ ht-degree: 94%
       + [Esempi di app Facebook](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Installazione di Campaign Classic {#installing-campaign-classic}
-   + Architettura e modelli di hosting {#architecture-and-hosting-models}
-      + [Prima della lettura](installation/using/before-reading.md)
+   + Principi di architettura {#architecture-and-hosting-models}
       + [Architettura generale](installation/using/general-architecture.md)
-      + [Modelli di hosting](installation/using/hosting-models.md)
-   + Modelli ibridi e in hosting {#hybrid-and-hosted-models}
-      + [Informazioni sui modelli ibridi e in hosting](installation/using/about-hybrid-and-hosted-models.md)
-      + [Modello ibrido](installation/using/hybrid-model.md)
-      + [Modello in hosting](installation/using/hosted-model.md)
-   + Prerequisiti e raccomandazioni {#prerequisites-and-recommendations-}
-      + [Prima di iniziare](installation/using/before-starting.md)
-      + [Database](installation/using/database.md)
+      + Modelli di hosting{#hosting-models-lp}
+         + [Informazioni sui modelli di hosting](installation/using/hosting-models.md)
+         + [Modello ibrido](installation/using/hybrid-model.md)
+         + [Modello in hosting](installation/using/hosted-model.md)
+         + [Matrice di capacità](installation/using/capability-matrix.md)
+   + Linee guida per la distribuzione {#deployment-guidelines}
+      + [Prerequisiti](installation/using/before-starting.md)
+      + [Server database](installation/using/database.md)
       + [Server dell’applicazione](installation/using/application-server.md)
       + [Server di messaggistica](installation/using/messaging-server.md)
       + [Configurazione di rete](installation/using/network-configuration.md)
