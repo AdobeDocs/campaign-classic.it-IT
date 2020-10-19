@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: web-forms
 discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3e1896ac4ccd1099bd50e279762c2fbff5cd8eba
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 2%
@@ -55,7 +55,7 @@ I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a
 
    A tale scopo, fare clic sulla **[!UICONTROL Exclusions]** scheda.
 
-1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** opzione.
+1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted]** opzione.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
