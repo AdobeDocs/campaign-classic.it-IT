@@ -1,6 +1,6 @@
 ---
 title: Invio di un’e-mail con Adobe Campaign Classic
-description: Informazioni sui parametri specifici per la distribuzione di e-mail in Adobe Campaign Classic.
+description: Informazioni sui parametri di consegna delle e-mail
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 8%
 
 ---
 
@@ -29,25 +29,25 @@ La procedura dettagliata per la convalida e l&#39;invio di una consegna è descr
 
 Le sezioni seguenti descrivono i parametri specifici per la distribuzione delle e-mail.
 
-## Archiviazione di e-mail {#archiving-emails}
+## Ccn e-mail {#archiving-emails}
 
  Adobe Campaign consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Una volta attivata l&#39;opzione, per questa consegna viene conservata una copia esatta di tutti i messaggi inviati.
 
-Per ulteriori informazioni sulla configurazione di Email BCC, consulta [questa sezione](../../installation/using/email-archiving.md).
+Per ulteriori informazioni sulla configurazione e sulle procedure ottimali di CCN per e-mail, consulta [questa sezione](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Questa funzione è facoltativa. Controlla il contratto di licenza e contatta il responsabile dell’account per attivarla.
+>Ccn e-mail è una funzionalità opzionale. Controlla il contratto di licenza e contatta il responsabile dell’account per attivarla.
 
-Quando si crea un nuovo modello di consegna o consegna, Ccn e-mail non è abilitato per impostazione predefinita, anche se l&#39;opzione è stata acquistata. È necessario attivarlo manualmente in ogni consegna o modello in cui si desidera utilizzarlo.
+Quando si crea un nuovo modello di consegna o consegna, per impostazione predefinita CCN e-mail non è attivato. È necessario attivarlo manualmente a livello di consegna e-mail o di modello di consegna.
 
-Per farlo, segui la procedura indicata di seguito:
+Per abilitare Ccn e-mail per un modello di consegna e-mail, effettuate le seguenti operazioni:
 
 1. Vai a **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** o **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
 1. Selezionate la consegna desiderata o duplicate il modello di consegna **** e-mail fornito con il prodotto, quindi selezionate il modello duplicato.
 1. Click the **Properties** button.
 1. Seleziona la scheda **[!UICONTROL Delivery]**.
-1. Selezionate la casella **Archivia e-mail** per conservare una copia di tutti i messaggi inviati per la consegna o per ogni consegna basata su questo modello.
+1. Selezionate l’opzione Ccn **e-mail** . Una copia di tutti i messaggi inviati per ogni consegna basata su questo modello verrà inviata all&#39;indirizzo CCN e-mail configurato.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
