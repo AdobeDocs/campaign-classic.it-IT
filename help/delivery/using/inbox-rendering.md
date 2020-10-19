@@ -1,8 +1,6 @@
 ---
-title: Rendering della casella in entrata
-seo-title: Rendering della casella in entrata
-description: Rendering della casella in entrata
-seo-description: null
+title: Rendering in entrata in Campaign
+description: Scoprite come acquisire i rendering delle e-mail e renderli disponibili in un rapporto dedicato
 page-status-flag: never-activated
 uuid: 2025f5e9-8a19-407c-9e0a-378ba5a76208
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 9%
+source-wordcount: '813'
+ht-degree: 8%
 
 ---
 
