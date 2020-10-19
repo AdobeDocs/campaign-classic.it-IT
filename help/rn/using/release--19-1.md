@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2625'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,6 @@ _15 settembre 2020_
 
 * È stato migliorato nlsrvmod per l&#39;utilizzo di thread Apache 2.4 per correggere gli arresti anomali di nlsrvmod.
 * È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;attività Trasferimento file con un account esterno di Azure e una crittografia SSL. La connessione è stata eseguita tramite HTTP invece che mediante HTTPS. (NEO-26720)
-* Nelle proprietà di consegna, l&#39; **[!UICONTROL Archive emails]** opzione è stata rinominata **[!UICONTROL Email BCC]** per migliorare l&#39;esperienza utente.
 * È stato risolto un problema con il meccanismo di cache URL che non recuperava l&#39;etichetta o la categoria.
 * È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
 * L&#39;elenco jarsToSkip in catalina.properties è stato aggiornato per rimuovere il riferimento a un file jar non più utilizzato (notifiche iOS).
