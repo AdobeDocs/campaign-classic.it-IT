@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2147'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Area di lavoro di Adobe Campaign{#adobe-campaign-workspace}
 
-## About Adobe Campaign interface {#about-adobe-campaign-interface}
+## Esplorazione  interfaccia Adobe Campaign {#about-adobe-campaign-interface}
 
 Una volta che siete connessi al database, potrete accedere alla home page  Adobe Campaign, che è una dashboard: è costituito da collegamenti e collegamenti che consentono di accedere alle funzionalità, a seconda dell&#39;installazione e delle configurazioni generali della piattaforma.
 
@@ -30,7 +30,7 @@ Dalla sezione centrale della home page, potete utilizzare i collegamenti per acc
 
 ![](assets/d_ncs_user_interface_home.png)
 
-Lo screenshot qui sopra è un esempio della home page per un utente Adobe Campaign . Per ulteriori informazioni, guarda il video [sulla panoramica dell’interfaccia](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html)Adobe Campaign.
+![](assets/do-not-localize/how-to-video.png) [Scopri lo spazio di lavoro della campagna nel video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Con l&#39;accesso Web, invece, le opzioni consentiranno principalmente la visual
 
 ### Lingue {#languages}
 
-La lingua viene selezionata durante l’installazione dell’istanza Adobe Campaign Classic e non può essere modificata in seguito. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+La lingua viene selezionata al momento dell&#39;installazione dell&#39;istanza Adobe Campaign Classic.
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Potete scegliere tra cinque lingue diverse:
 * Giapponese
 
 La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influenzare i formati di data e ora. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
+For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>La lingua non può essere modificata dopo la creazione dell&#39;istanza.
 
 ## Nozioni di base sulla navigazione {#navigation-basics}
 
@@ -174,9 +180,9 @@ Nella finestra di configurazione elenco, fare clic su &quot;Parametri avanzati&q
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### Configurazione degli elenchi {#configuring-lists}
+## Configurazione degli elenchi {#configuring-lists}
 
-#### Add columns {#add-columns}
+### Add columns {#add-columns}
 
 Esistono due modi per aggiungere una colonna a un elenco.
 
@@ -222,14 +228,14 @@ Un altro modo per aggiungere colonne, ad esempio se si desidera visualizzare i d
 
 1. Fate clic **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
 
-#### Creare una nuova colonna {#create-a-new-column}
+### Creare una nuova colonna {#create-a-new-column}
 
 È possibile creare nuove colonne per visualizzare campi aggiuntivi nell&#39;elenco. Per eseguire questa operazione:
 
 1. Fare clic **[!UICONTROL Configure the list]** in basso e a destra dell&#39;elenco.
 1. Fare clic **[!UICONTROL Add]** per visualizzare un nuovo campo nell&#39;elenco.
 
-#### Rimozione di una colonna {#remove-a-column}
+### Rimozione di una colonna {#remove-a-column}
 
 È possibile mascherare una o più colonne in un elenco di record utilizzando la **[!UICONTROL Configure list]** posizione al di sotto e a destra dell&#39;elenco.
 
@@ -241,11 +247,11 @@ Nella finestra di configurazione dell’elenco, selezionate la colonna da masche
 
 Ripetere la procedura per ogni colonna da mascherare. Fate clic **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
 
-#### Regola larghezza colonna {#adjust-column-width}
+### Regola larghezza colonna {#adjust-column-width}
 
 Quando un elenco è attivo, ossia se è selezionata almeno una riga, è possibile utilizzare F9 per regolare la larghezza delle colonne in modo che tutte le colonne possano essere visualizzate sullo schermo.
 
-#### Visualizzare i record delle sottocartelle {#display-sub-folders-records}
+### Visualizzare i record delle sottocartelle {#display-sub-folders-records}
 
 Gli elenchi possono essere visualizzati:
 
@@ -286,7 +292,7 @@ Fate clic su **[!UICONTROL Save]** nella finestra delle proprietà della cartell
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### Esportazione di un elenco {#exporting-a-list}
+## Esportazione di un elenco {#exporting-a-list}
 
 Per esportare i dati da un elenco, è necessario utilizzare una procedura guidata di esportazione. Per accedervi, selezionate gli elementi da esportare dall’elenco, fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Export...]**.
 
@@ -296,7 +302,7 @@ L&#39;utilizzo delle funzioni di importazione ed esportazione è spiegato in Imp
 >
 >Gli elementi di un elenco non devono essere esportati mediante la funzione Copia/Incolla.
 
-### Ordinamento di un elenco {#sorting-a-list}
+## Ordinamento di un elenco {#sorting-a-list}
 
 Gli elenchi possono contenere una grande quantità di dati. Potete ordinare questi dati o applicare filtri semplici o avanzati. L&#39;ordinamento consente di visualizzare i dati in ordine crescente o decrescente. I filtri consentono di definire e combinare i criteri per visualizzare solo i dati selezionati.
 
@@ -321,7 +327,7 @@ Potete anche configurare l’ordinamento o combinare criteri di ordinamento. Per
 
 1. Fare clic **[!UICONTROL Ok]** per confermare la configurazione e visualizzare il risultato nell&#39;elenco.
 
-### Esecuzione di una ricerca {#running-a-search}
+### Ricerca di elementi {#running-a-search}
 
 È possibile eseguire una ricerca dei campi disponibili in un editor utilizzando il **[!UICONTROL Search]** campo situato sopra l&#39;elenco di campi. Premere **Invio** sulla tastiera o scorrere l&#39;elenco. I campi che corrispondono alla ricerca avranno etichette in grassetto.
 
@@ -388,4 +394,3 @@ Nei campi che esprimono una durata (ad esempio periodo di validità delle risors
 * **[!UICONTROL d]** per giorni.
 
 ![](assets/enter_unit_sample.png)
-
