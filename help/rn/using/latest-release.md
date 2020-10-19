@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2188'
 ht-degree: 76%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 76%
 
 # Ultima versione{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Nuovo rilascio** di ottobre Pannello di controllo Campaign con configurazione di dominio tramite CNAME e nuove funzionalità di monitoraggio del database. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Versione 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
@@ -57,6 +57,8 @@ _22 luglio 2020_
 * È stato risolto un problema che impediva la preparazione della consegna dopo l&#39;aggiornamento postaggiornato.
 * Dopo il passaggio al [nuovo meccanismo](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)ID sequenza, tutte le applicazioni Web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
 * Risolto un problema di potenziale vulnerabilità XSS nel contenuto di distribuzione. (NEO-17987, NEO-26073)
+
+![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
