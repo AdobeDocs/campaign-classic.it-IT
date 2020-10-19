@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 5%
@@ -52,7 +52,7 @@ Prima di inviare la consegna, potete definire i parametri di invio nelle proprie
    >
    >Per ulteriori informazioni sulla configurazione di un server SMTP, consultare [questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 Una volta che la consegna è configurata e pronta per l&#39;invio, accertatevi di aver eseguito l&#39;analisi [](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)Consegna. Al termine, fai clic **[!UICONTROL Confirm delivery]** per avviare la distribuzione dei messaggi.
 
