@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: hybrid-and-hosted-models
 discoiquuid: ada27825-42bd-48c7-bc03-a619f1fa9463
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '88'
 ht-degree: 9%
 
 ---
@@ -22,12 +22,11 @@ ht-degree: 9%
 
 # Modello in hosting{#hosted-model}
 
-Di seguito sono riportati i passaggi di installazione e configurazione applicabili ai modelli ospitati:
+In qualità di cliente ospitato, la maggior parte dei passaggi di installazione e configurazione sono eseguiti da  Adobe. Potete accedere alle seguenti sezioni per personalizzare l’implementazione:
 
-* Configurazione degli URL di tracciamento e di pagina mirror per marchio. Per i messaggi transazionali, consulta questa [sezione](../../message-center/using/configuring-multibranding.md).
-* Installazione della console client: fare riferimento a questa [sezione](../../installation/using/installing-the-client-console.md).
-* Installazione dei pacchetti: fare riferimento a questa [sezione](../../installation/using/installing-campaign-standard-packages.md).
+* Configurare gli URL di tracciamento e pagina mirror per marchio. Per i messaggi transazionali, fare riferimento [a questa sezione](../../message-center/using/configuring-multibranding.md).
+* Installare la console client: fare riferimento [a questa sezione](../../installation/using/installing-the-client-console.md).
 * Scopri di più sugli strumenti di recapito e sulle best practice leggendo la guida [introduttiva e la documentazione](../../delivery/using/deliverability-key-points.md) [](../../delivery/using/about-deliverability.md)dettagliata.
-* Configurazione delle opzioni della campagna: fare riferimento a questa [sezione](../../installation/using/configuring-campaign-options.md).
-* Configurazione dei connettori CRM: fare riferimento a questa [sezione](../../platform/using/crm-connectors.md).
+* Configurare le opzioni della campagna: fare riferimento [a questa sezione](../../installation/using/configuring-campaign-options.md).
+* Configurare i connettori CRM: fare riferimento [a questa sezione](../../platform/using/crm-connectors.md).
 
