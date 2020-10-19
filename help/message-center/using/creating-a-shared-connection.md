@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    >[!NOTE]
    >
-   >Quando si utilizza FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database Postgres. MSSQL o database Oracle non sono supportati.
+   >Tenere presente che quando si utilizza FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database PostgreSQL. MSSQL o database Oracle non sono supportati.
 
    Il secondo metodo è consigliato se l&#39;istanza di controllo ha accesso diretto al database delle istanze di esecuzione. In caso contrario, scegliete l&#39;accesso al servizio Web. L&#39;account FDA da specificare coincide con la connessione ai database delle varie istanze di esecuzione create nell&#39;istanza di controllo.
 
