@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 3%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
 
-# Archiviazione di e-mail{#email-archiving}
+# Ccn e-mail {#email-archiving}
 
 Potete configurare  Adobe Campaign per mantenere una copia dei messaggi e-mail inviati dalla piattaforma in uso.
 
@@ -30,15 +30,15 @@ A tal fine, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a 
 
 ## Recommendations e limitazioni {#recommendations-and-limitations}
 
-* La funzione di archiviazione delle e-mail è opzionale. Controlla il contratto di licenza.
-* Per architetture **** ospitate e ibride, contattate il vostro responsabile commerciale per attivarla. L&#39;indirizzo CCN scelto deve essere fornito al team di Adobi  che lo configurerà per voi.
-* Per le installazioni **** locali, seguite le linee guida riportate di seguito per attivarle. Consultate le sezioni [Attivazione dell&#39;archiviazione delle e-mail (in sede)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail CCN (in sede)](#configuring-the-bcc-email-address--on-premise-) .
+* La funzionalità CCN e-mail è opzionale. Controlla il contratto di licenza.
+* Per architetture **** ospitate e ibride, contattate il vostro responsabile commerciale per attivarla. L&#39;indirizzo e-mail CCN di tua scelta deve essere fornito al team del Adobe  che lo configurerà per te.
+* Per le installazioni **** locali, seguite le linee guida riportate di seguito per attivarle. Consultate le sezioni [Attivazione e-mail in sede (CCN)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail CCN (locale)](#configuring-the-bcc-email-address--on-premise-) .
 * È possibile utilizzare un solo indirizzo e-mail CCN.
-* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Archive emails]** opzione. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39; **[!UICONTROL Email BCC]** opzione. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 * Solo le e-mail inviate con successo vengono prese in considerazione, i messaggi non vengono visualizzati.
-* Il sistema di archiviazione delle e-mail è cambiato con  Adobe Campaign 17.2 (build 8795). Se si utilizza già l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema di archiviazione delle e-mail (CCN). Per ulteriori informazioni, consulta la sezione [Aggiornato sistema di archiviazione delle e-mail (CCN)](#updated-email-archiving-system--bcc-) .
+* Il sistema di archiviazione delle e-mail è cambiato con  Adobe Campaign 17.2 (build 8795). Se si stava già utilizzando l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema e-mail BCC. Per ulteriori informazioni, consulta la sezione [Passaggio alla nuova sezione Ccn](#updated-email-archiving-system--bcc-) e-mail.
 
-## Attivazione dell&#39;archiviazione delle e-mail (in sede) {#activating-email-archiving--on-premise-}
+## Attivazione Ccn e-mail (in sede) {#activating-email-archiving--on-premise-}
 
 Per attivare l&#39;archiviazione delle e-mail in CCN quando  Adobe Campaign è installato in sede, attenetevi alla procedura indicata di seguito.
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->In un&#39;istanza mid-sourcing, la directory per le e-mail archiviate si trova sul server mid-sourcing.
+>In un&#39;istanza mid-sourcing, la directory per le e-mail CCN si trova sul server mid-sourcing.
 >
 >L’ID di distribuzione e l’ID di trasmissione provengono dal server di mid-sourcing quando lo stato delle e-mail non viene inviato. Una volta cambiato lo stato in **[!UICONTROL Sent]**, questi ID provengono dal server di marketing.
 
@@ -128,7 +128,7 @@ Nel file **config-`<instance name>.xml`** , utilizzate i seguenti parametri per 
 >
 >Inoltre, il relay assegna uno **[!UICONTROL Sent]** stato a tutte le e-mail, incluse quelle che non vengono inviate. Pertanto, tutti i messaggi vengono archiviati.
 
-## Sistema di archiviazione e-mail aggiornato (CCN) {#updated-email-archiving-system--bcc-}
+## Passaggio al nuovo CCN di e-mail {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ A questo scopo, apportare le seguenti modifiche al **`config-<instance>.xml`** f
 1. Impostate il parametro **compressioneFormat** su **1** , se necessario.
 1. Impostare il parametro **archiveType** su **1**.
 
-Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; **[!UICONTROL Archive emails]** opzione nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39; **[!UICONTROL Email BCC]** opzione nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Best practice {#best-practices}
+## Best practice per BCC e-mail {#best-practices}
 
 * **Cassetta postale** indirizzi CCN: verificare che la capacità di ricezione sia sufficiente per archiviare tutte le e-mail inviate dall&#39;MTA.
 * **Mutualizzazione** MTA: la funzione di archiviazione CCN funziona a livello di MTA. Consente di duplicare ogni e-mail inviata dall&#39;MTA. Poiché il MTA può essere mutualizzato in più istanze (ad esempio dev, test o prod) o anche tra più client (in un ambiente mid-sourcing), l&#39;impostazione di questa funzione influisce sulla sicurezza:
