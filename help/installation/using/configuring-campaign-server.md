@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 7d0a00f4ef49a48014735de36786a48c31b76804
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 4%
@@ -592,7 +592,7 @@ Ogni processo configurato in questo file ha un attributo **processRestartTime** 
 
 ## Limitazione dei file caricati {#limiting-uploadable-files}
 
-Un nuovo attributo **uploadAllowList** consente di limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign .
+Un nuovo attributo **uploadWhiteList** consente di limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign .
 
 Questo attributo è disponibile nell&#39;elemento **dataStore** del file **serverConf.xml** . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -600,7 +600,7 @@ Il valore predefinito di questo attributo è **.+** e consente di caricare quals
 
 Per limitare i possibili formati, è necessario sostituire il valore dell&#39;attributo con un&#39;espressione regolare Java valida. È possibile immettere diversi valori separandoli con una virgola.
 
-Ad esempio: **uploadAllowList=&quot;.*.png,.*.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
+Ad esempio: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
 
 >[!IMPORTANT]
 >
