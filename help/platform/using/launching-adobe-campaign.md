@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '501'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ Potete avviare  Adobe Campaign selezionando **[!UICONTROL Start / All Programs /
 
 La finestra di connessione della console client consente di selezionare o configurare i database esistenti e di collegarli utilizzando un nome utente e una password:
 
-![](assets/acc-logon-screen.png)
+![](assets/s_ncs_user_login.png)
 
 ## Connessione a  Adobe Campaign {#connecting-to-adobe-campaign}
 
@@ -86,18 +86,18 @@ Per disconnettersi da  Adobe Campaign, utilizzate la prima icona nella barra del
 >
 >È inoltre possibile chiudere l&#39;applicazione senza prima disconnettersi.
 
-## Ottenimento della versione di Campaign {#getting-your-campaign-version}
+## Ottenimento della versione Adobe Campaign  {#getting-your-campaign-version}
 
 Il **[!UICONTROL Help > About...]** menu consente di accedere alle informazioni seguenti:
 
-* **numero versione**
-* **numero build**
+* **numero di versione** per la console client di Campaign e il server applicazione
+* **numero di build** per la console client di Campaign e il server applicazione
 * un collegamento per contattare &#39;Assistenza clienti del Adobe
 * collegamenti  Informativa sulla privacy del Adobe, Termini d&#39;uso e Informativa sui cookie
 
 ![](assets/about-acc.png)
 
-Ogni volta che contattate  team di supporto del Adobe, dovete fornire il numero di versione e il numero di build della console client e del server applicazione di Campaign.
+Ogni volta che contattate  team di assistenza clienti di Adobe, dovete fornire il numero di versione e il numero di build della console client e del server applicazione di Campaign.
 
 Se si è in esecuzione sulla versione [](../../rn/using/gold-standard.md)Campaign Gold Standard, è inoltre necessario condividere i caratteri SHA/1 visualizzati nella **[!UICONTROL About]** casella. Ad esempio, per la versione **Gold** Standard 10, il numero di build mostrerà la **build 9032@efd8a94**, come illustrato di seguito:
 
