@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 86%
+source-wordcount: '3764'
+ht-degree: 85%
 
 ---
 
@@ -25,6 +25,10 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## Ottobre 2020 {#oct-2020}
+
+I modelli di hosting on-premise, ospitati e ibridi per le campagne sono ora descritti in una sezione dedicata. [Leggi tutto](../../installation/using/hosting-models.md)
+
+La matrice delle funzionalità della campagna per modello di hosting è stata aggiornata e spostata nella guida all&#39;installazione. [Leggi tutto](../../installation/using/capability-matrix.md)
 
 La sezione sulle funzionalità avanzate di Report delle campagne è stata migliorata per specificare come utilizzare i parametri URL e le variabili nei rapporti personalizzati. [Leggi tutto](../../reporting/using/advanced-functionalities.md)
 
