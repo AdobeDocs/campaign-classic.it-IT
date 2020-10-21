@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3752'
 ht-degree: 85%
 
 ---
@@ -226,7 +226,7 @@ La guida [Invio di notifiche push](../../delivery/using/about-mobile-app-channel
 
 Il nuovo parametro per la configurazione dei report URL è stato documentato [qui](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
 
-La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html)
+La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](../../installation/using/capability-matrix.md).
 
 La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
 
@@ -380,7 +380,7 @@ La documentazione sulla Gestione delle offerte è stata aggiornata con una nuova
 
 La sezione Attività del flusso di lavoro secondario è stata migliorata con un esempio di utilizzo. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html) Knowledge base article has been updated with information relating to Email BCC.
+La pagina della matrice [delle funzionalità](../../installation/using/capability-matrix.md) Campaign Classic locale e ospitata è stata aggiornata con le informazioni relative a Ccn e-mail.
 
 La documentazione relativa alla messaggistica transazionale è stata aggiornata con una nota riguardante la pubblicazione di modelli. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
