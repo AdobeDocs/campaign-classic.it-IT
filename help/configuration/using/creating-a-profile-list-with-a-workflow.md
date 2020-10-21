@@ -1,8 +1,6 @@
 ---
 title: Creazione di un elenco di profili con un flusso di lavoro
-seo-title: Creazione di un elenco di profili con un flusso di lavoro
-description: Creazione di un elenco di profili con un flusso di lavoro
-seo-description: null
+description: Scopri come creare un elenco di profili in un flusso di lavoro
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
 contentOwner: sauviat
@@ -12,17 +10,23 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 19%
+source-wordcount: '183'
+ht-degree: 7%
 
 ---
 
 
 # Creazione di un elenco di profili con un flusso di lavoro{#creating-a-profile-list-with-a-workflow}
 
-Per creare un elenco di **[!UICONTROL List]** tipi basato sulla nuova tabella destinatari, è necessario creare un flusso di lavoro di targeting che genererà l&#39;elenco. Per ulteriori informazioni sugli elenchi in Campaign, consulta [questa sezione](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Per creare un elenco di **[!UICONTROL List]** tipi basato sulla nuova tabella destinatari, è necessario creare un flusso di lavoro di targeting che genererà l&#39;elenco.
+
+Per ulteriori informazioni sugli elenchi in Campaign, consulta [questa sezione](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+
+Per creare un flusso di lavoro di targeting e aggiornare i destinatari in una tabella di destinatari personalizzata, effettua le operazioni seguenti:
 
 1. Passate al **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nodo dell&#39;esploratore.
 1. Create un nuovo flusso di lavoro di targeting.
@@ -46,7 +50,4 @@ Per creare un elenco di **[!UICONTROL List]** tipi basato sulla nuova tabella de
 
    ![](assets/mapping_list_view.png)
 
->[!NOTE]
->
->Potete anche fare riferimento a [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) .
 
