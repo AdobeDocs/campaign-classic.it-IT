@@ -1,8 +1,6 @@
 ---
-title: Aggiornamento
-seo-title: Aggiornamento
-description: Aggiornamento
-seo-description: null
+title: Aggiornamento a una nuova build
+description: Scopri i passaggi tecnici per effettuare l'aggiornamento a una nuova build
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1136'
 ht-degree: 1%
 
 ---
 
 
-# Aggiornamento{#upgrading}
+# Aggiornamento a una nuova build (locale){#upgrading}
 
 Prima di avviare il processo di aggiornamento, determinare e confermare la versione di  Adobe Campaign in fase di aggiornamento e consultare le [Note](../../rn/using/latest-release.md) sulla versione.
 
