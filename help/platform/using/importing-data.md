@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '4142'
-ht-degree: 1%
+source-wordcount: '4138'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 1%
 >È possibile importare i dati senza mapparli con i dati del database utilizzando la **[!UICONTROL Import a list]** funzione.
 >
 >I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro attraverso l&#39; **[!UICONTROL Read list]** oggetto. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/read-list.md).
->
->Per ulteriori informazioni, guardate il video sull’ [importazione dei profili](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/importing-profiles.html) .
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Struttura dei dati da importare {#structure-of-the-data-to-import}
 
