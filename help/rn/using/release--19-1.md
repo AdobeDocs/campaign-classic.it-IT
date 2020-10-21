@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '2625'
-ht-degree: 6%
+source-wordcount: '2623'
+ht-degree: 5%
 
 ---
 
@@ -122,11 +122,11 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete al Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete al Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
-   <td> <p>In qualità di amministratore, aumentate la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
+   <td> <p>In qualità di amministratore, aumentate la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robustezza e scalabilità<br /> </td> 
