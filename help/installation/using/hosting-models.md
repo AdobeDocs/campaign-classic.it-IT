@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Per  Adobe gli ambienti ospitati, i passaggi di installazione e configurazione principali possono essere eseguiti solo da  Adobe, ad esempio la configurazione del server e la personalizzazione dei file di configurazione dell&#39;istanza. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, consultate [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
+>Per  Adobe gli ambienti ospitati, i passaggi di installazione e configurazione principali possono essere eseguiti solo da  Adobe, ad esempio la configurazione del server e la personalizzazione dei file di configurazione dell&#39;istanza. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, consultate [questa pagina](../../installation/using/capability-matrix.md).
 
 * **Managed Services (ospitato)**
 
