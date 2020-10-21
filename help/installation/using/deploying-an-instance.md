@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3063'
+source-wordcount: '3058'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o [questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione Modelli [di](../../installation/using/hosting-models.md) hosting o a [questa pagina](../../installation/using/capability-matrix.md).
 
 ## Procedura guidata di distribuzione {#deployment-wizard}
 
