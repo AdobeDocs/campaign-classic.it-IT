@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '195'
+ht-degree: 10%
 
 ---
 
@@ -38,5 +38,5 @@ Puoi anche integrare Campaign con diversi altri sistemi, ad esempio:
 
 >[!NOTE]
 >
->La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fate riferimento alla matrice [delle capacità on-pre/ospitate di](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html)Campaign.
+>La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fate riferimento alla matrice [delle funzionalità in sede di](../../installation/using/capability-matrix.md)Campaign.
 
