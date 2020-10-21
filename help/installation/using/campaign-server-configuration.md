@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Configurazioni aggiuntive sono disponibili in [Configurazione del server](../../
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consultate la sezione Modelli [di](../../installation/using/hosting-models.md) hosting o questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-on-prem-vs-hosted.html).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione Modelli [di](../../installation/using/hosting-models.md) hosting o alla matrice [](../../installation/using/capability-matrix.md)delle funzionalità.
 
 ## Identificatore interno {#internal-identifier}
 
