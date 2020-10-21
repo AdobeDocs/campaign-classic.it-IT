@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 84%
 
 ---
 
@@ -29,17 +29,22 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console del cl
 
 ## Come si importano i profili? {#how-to-import-profiles-}
 
-Scopri dei facili casi d’uso per [importare profili](../../platform/using/importing-data.md#generic-import-samples) nel tuo database. Inoltre, puoi guardare [questo video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/importing-profiles.html).
+Scopri dei facili casi d’uso per [importare profili](../../platform/using/importing-data.md#generic-import-samples) nel tuo database.
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
 ## Come posso definire la popolazione target per una campagna di marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Puoi [utilizzare i flussi di lavoro per creare una popolazione target](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) per una campagna di marketing. Scopri come creare un flusso di lavoro di targeting in una campagna tramite [questo video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html).
+Puoi [utilizzare i flussi di lavoro per creare una popolazione target](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) per una campagna di marketing.
+
 
 ## Come si crea un elenco di profili? {#how-can-i-create-a-list-of-profiles-}
 
 Un elenco è un set statico di destinatari che possono essere oggetto di targeting nelle azioni di consegna, aggiornato durante le operazioni di importazione o l’esecuzione di un flusso di lavoro. Ad esempio, una popolazione estratta dal database tramite una query può fornire un elenco.
 
-[Fai clic qui per ulteriori informazioni](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Inoltre, puoi guardare [questo video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) su come creare manualmente un elenco e [questo altro video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) per creare e aggiornare automaticamente un elenco di destinatari in un flusso di lavoro.
+[Fai clic qui per ulteriori informazioni](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
+
+![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [in questo altro video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Come posso deduplicare una popolazione prima di inviare un messaggio? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
