@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ L’analisi della consegna è la fase in cui viene calcolata la popolazione targ
 
 Adobe consiglia vivamente di creare messaggi di prova per testare la consegna su un gruppo di approvazione prima di inviarla al target principale. Puoi quindi convalidare contenuto dei messaggi, personalizzazione e parametri di consegna.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Inoltre, puoi guardare [questo video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html).
+[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Come si utilizzano gli indirizzi di seed in Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
