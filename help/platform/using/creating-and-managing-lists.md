@@ -1,8 +1,6 @@
 ---
 title: Creazione e gestione di elenchi
-seo-title: Creazione e gestione di elenchi
-description: Creazione e gestione di elenchi
-seo-description: null
+description: Scopri come creare e gestire gli elenchi
 page-status-flag: never-activated
 uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 8%
+source-wordcount: '791'
+ht-degree: 7%
 
 ---
 
@@ -139,7 +137,7 @@ Scopri come creare un pubblico configurando un elenco di destinatari da Esplora 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## Come creare un elenco di destinatari con un flusso di lavoro
+## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Scoprite come creare un flusso di lavoro per indirizzare i destinatari e come renderlo ricorrente prima di utilizzare l&#39;elenco in una destinazione e-mail.
 
