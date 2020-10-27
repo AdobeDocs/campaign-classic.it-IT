@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -209,10 +209,10 @@ Per sostituire tutti i file con la nuova versione, è necessario che tutte le is
 
 Nel computer in cui è installato il server applicazioni Adobe Campaign  (nlserverweb), scaricate e copiate il file:
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    &quot;
-    Setup-client-7.xxxx.exe in [percorso dell&#39;applicazione]\datakit\nl\en\jsp
-    &quot;
 
 Alla successiva connessione delle console client, una finestra informerà gli utenti della disponibilità di un nuovo aggiornamento e offrirà loro la possibilità di scaricarlo e installarlo.
 
@@ -344,7 +344,7 @@ Esistono tre opzioni per risolvere i conflitti: **Accettate la nuova versione**,
 * L&#39;oggetto non verrà aggiornato
 * Impatto a lungo termine: incompatibilità delle versioni, il cliente non trarrà alcun beneficio dalle correzioni dei bug.
 
->[!CAUTION]
+>[!IMPORTANT]
 >Si consiglia vivamente di risolvere i conflitti.
 
 
@@ -408,7 +408,7 @@ Di seguito sono riportati i passaggi per eseguire un&#39;unione complessa:
 1. Eseguire in ambiente di test
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >Le competenze di sviluppo sono necessarie per eseguire complesse operazioni di unione.
 
 
