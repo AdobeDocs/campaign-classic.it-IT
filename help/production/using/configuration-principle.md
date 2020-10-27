@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Per un determinato server, esistono due elementi comuni a tutte  istanze Adobe C
 
 * La password **interna** : questa è la password dell&#39;amministratore generale. È comune a tutte le istanze di un particolare server applicazione.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Per accedere con l&#39;identificatore **Interno** , è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
