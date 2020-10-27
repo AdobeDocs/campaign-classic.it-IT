@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Per ricreare questo caso di utilizzo, abbiamo creato un&#39;applicazione Web com
 
 ## Come acquisire i dati del ventilatore? {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Seguite i passaggi di configurazione descritti in [Creazione di un’applicazione](../../social/using/creating-a-facebook-application.md)Facebook.
 
@@ -250,7 +250,7 @@ Se il profilo non esiste nel database e l&#39;indirizzo e-mail dell&#39;utente F
 
 1. Nel **[!UICONTROL Mapping]** campo selezionare lo schema su cui si desidera eseguire la riconciliazione.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Verificate che i campi della **[!UICONTROL Social networks]** scheda siano immessi correttamente nel mapping di consegna. Le mappature di consegna sono accessibili tramite il **[!UICONTROL Administration > Campaign management > Target mappings]** nodo.
 
