@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
@@ -31,42 +31,14 @@ Supporta inoltre volumi elevati di traffico senza influire sulle prestazioni del
 
 ## [!DNL Triggers] architettura {#triggers-architecture}
 
-### Cos&#39;è Pipeline? {#pipeline-explanation}
-
->[!CAUTION]
->
->Solo  soluzioni Adobe Cloud possono produrre e utilizzare eventi dai servizi pipeline  Adobe. I sistemi esterni  Adobe non possono.
-
-Pipeline è un sistema di messaggistica ospitato nel Experience Cloud  che utilizza [Apache Kafka](http://kafka.apache.org/). È un modo per trasmettere facilmente i dati tra le soluzioni. Inoltre, Pipeline è una coda di messaggi anziché un database. I produttori spingono gli eventi in preparazione e i consumatori ascoltano il flusso e fanno ciò che vogliono con l&#39;evento. Gli eventi vengono conservati per alcuni giorni, ma non più. Lo scopo è quello di ascoltare 24 ore su 24, 7 giorni su 7 e di elaborare gli eventi immediatamente.
-
-![](assets/triggers_1.png)
-
-### Come funziona Pipeline? {#how-pipeline-work}
-
 Il [!DNL pipelined] processo è sempre in esecuzione sul server di marketing Adobe Campaign . Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
 
 ![](assets/triggers_2.png)
 
-Il [!DNL pipelined] processo accede al Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi. [!DNL Triggers] vengono recuperati da un servizio Web REST utilizzando una semplice richiesta di GET. La risposta è in formato JSON. I parametri della richiesta includono il nome dell&#39;attivatore e un puntatore che indica l&#39;ultimo messaggio recuperato. Il [!DNL pipelined] processo lo gestisce automaticamente.
+Il [!DNL pipelined] processo accede al Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi.
 
-## Utilizzo dell&#39;integrazione di Adobe Experience Cloud Triggers con Adobe Campaign Classic
+For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
 
-Di seguito sono riportate alcune [!DNL Triggers] best practice:
-
-* I [!DNL Trigger] dati devono essere memorizzati nel momento in cui sono inclusi in Campaign. Non deve essere elaborato direttamente in quanto creerebbe latenza.
-* La marca temporale deve essere controllata dal messaggio e non dalla base dati.
-* Utilizzare TriggerTimestamp e Trigger ID per rimuovere i duplicati.
-
->[!CAUTION]
+>[!NOTE]
 >
->L&#39;esempio seguente non è fornito out-of-box. Questo è un esempio specifico tratto da diverse possibili implementazioni.
-
-Gli eventi della pipeline vengono scaricati automaticamente. Questi eventi possono essere monitorati utilizzando un modulo.
-
-![](assets/triggers_3.png)
-
-Il nodo Evento pipeline non è integrato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta le sezioni seguenti: [Gerarchia](../../configuration/using/about-navigation-hierarchy.md) di navigazione e [modifica dei moduli](../../configuration/using/editing-forms.md).
-
-Un flusso di lavoro di campagna periodico esegue query sugli attivatori e, se corrispondono ai criteri di marketing, avvia una consegna.
-
-![](assets/triggers_4.png)
+>L&#39;ulteriore elaborazione degli eventi viene effettuata nell&#39;ambito del pacchetto ACX fornito al di fuori dell&#39;implementazione predefinita. L&#39;evento ricevuto viene elaborato immediatamente utilizzando il codice JavaScript. Viene salvata in una tabella di database senza ulteriore elaborazione in tempo reale. Le attivazioni vengono utilizzate per il targeting tramite un flusso di lavoro della campagna che invia e-mail. La campagna è configurata in modo che il cliente che ha attivato l&#39;evento riceva un&#39;e-mail.
