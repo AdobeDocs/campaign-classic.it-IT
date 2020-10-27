@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### Panoramica {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se non si dispone dell&#39;accesso al server e al database (ambienti ospitati), non sarà possibile eseguire le procedure descritte di seguito. Contatta  Adobe.
 
@@ -49,14 +49,14 @@ A questo scopo, eseguire i seguenti passaggi:
    >Nel contesto di  Adobe Campaign, una **cauterizzazione** combina azioni che consentono di interrompere l’interazione con l’esterno di tutti i processi: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
    >Questo passaggio è necessario per evitare di inviare messaggi più volte (una volta dall&#39;ambiente nominale e una dall&#39;ambiente duplicato).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Un ambiente può contenere diverse istanze. Ogni istanza di Adobe Campaign  è soggetta a un contratto di licenza. Controllate il contratto di licenza per verificare quanti ambienti è possibile utilizzare.\
    >La procedura seguente consente di trasferire un ambiente senza influire sul numero di ambienti e istanze installati.
 
 ### Prima di iniziare {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >È consigliabile eseguire un backup completo dei database per tutte le istanze degli ambienti di origine e di destinazione prima di avviare il processo di trasferimento. In questo modo, se si verifica un problema, sarà possibile ripristinare i backup e tornare alla configurazione iniziale.
 
@@ -70,7 +70,7 @@ Questa sezione illustra i passaggi necessari per trasferire un ambiente di origi
 
 I seguenti passaggi devono essere eseguiti con grande attenzione: alcuni processi potrebbero essere ancora in corso quando i database dell&#39;ambiente di origine vengono copiati. La cauterizzazione (passaggio 3 qui sotto) impedisce l&#39;invio di messaggi due volte e assicura la coerenza dei dati.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* La seguente procedura è valida in linguaggio PostgreSQL. Se il linguaggio SQL è diverso (ad esempio Oracle), le query SQL devono essere adattate.
 >* I comandi seguenti si applicano nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
@@ -218,7 +218,7 @@ Controllare l&#39;accesso alle funzioni della console client.
 
 ### Passaggio 8 - Importa opzioni e account esterni nell&#39;ambiente di destinazione (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >A questo punto dovrebbe essere avviato solo il processo Web. In caso contrario, interrompere gli altri processi in esecuzione prima di continuare
 
