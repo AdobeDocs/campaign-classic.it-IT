@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ Per creare un fattore di ponderazione in un’offerta, effettuate le seguenti op
 
    ![](assets/offer_weight_create_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Se non viene inserito alcun fattore di ponderazione (0), l&#39;obiettivo non sarà considerato idoneo per l&#39;offerta.
 
@@ -116,7 +116,7 @@ Per creare un fattore di ponderazione in un’offerta, effettuate le seguenti op
    >
    >Se una destinazione è idonea per più pesi per un&#39;offerta selezionata, il motore mantiene il peso massimo (massimo). Quando si richiama il motore delle offerte, viene selezionata un&#39;offerta al massimo una volta per ogni contatto.
 
-### Un riepilogo delle regole di idoneità per le offerte {#a-summary-of-offer-eligibility-rules}
+### Riepilogo delle regole di idoneità per le offerte {#a-summary-of-offer-eligibility-rules}
 
 Una volta completata la configurazione, un riepilogo delle regole di idoneità sarà disponibile nel dashboard delle offerte.
 
