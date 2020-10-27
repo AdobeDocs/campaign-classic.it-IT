@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -70,7 +70,7 @@ I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazio
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Il `<script>` tag non deve chiudersi automaticamente.
 
@@ -214,7 +214,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
    </srcSchema>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Ogni elemento deve essere definito due volte. Gli elementi di tipo CDATA (&quot;_jst&quot;) possono contenere campi di personalizzazione.
    >
@@ -264,7 +264,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
    ![](assets/interaction_xmlmode_form_001.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >I campi del modulo ( `<input>`) devono puntare agli elementi del tipo CDATA definiti nello schema creato.
 
