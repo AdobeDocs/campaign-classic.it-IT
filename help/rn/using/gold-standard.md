@@ -1,6 +1,6 @@
 ---
 title: Versione Gold Standard
-description: Versione Gold Standard
+description: Note sulla versione Campaign Classic Gold Standard
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '820'
 ht-degree: 15%
 
 ---
@@ -20,15 +20,13 @@ ht-degree: 15%
 
 # Versione Gold Standard{#gold-standard}
 
-In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione.
+Gold Standard è il rilascio di supporto Campaign Classic a lungo termine. In qualità di utente Gold Standard, potete beneficiare automaticamente dell&#39;aggiornamento Gold Standard con l&#39;ultima versione stabile senza alcuna azione. I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
 
-I clienti interni e ibridi possono inoltre beneficiare dei rilasci Gold Standard.
-
-Questa è la nostra versione di supporto a lungo termine. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
+Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l&#39;aggiornamento a questa versione.
 
 In questa pagina sono elencate le versioni di Gold Standard.
 
-Per ulteriori informazioni sull&#39;aggiornamento Gold Standard, consultate questo [articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+Per ulteriori informazioni sul programma Campaign Gold Standard, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
 ## ![](assets/do-not-localize/green_2.png) Rilascio Gold Standard 10{#gs-10}
 
@@ -40,7 +38,7 @@ La build 9032@efd8a94 include la seguente correzione:
 
 >[!CAUTION]
 >
->È consigliabile aggiornare la console client con quella disponibile in questa versione. Refer to this [page](../../installation/using/installing-the-client-console.md)
+>È consigliabile aggiornare la console client con quella disponibile in questa versione. Refer [to this page](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Release Gold Standard 9{#gs-9}
 
@@ -50,7 +48,7 @@ La build 9032@800be2e include le seguenti correzioni:
 
 * Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903, NEO-25799)
 
-Le seguenti correzioni sono correlate al meccanismo di sicurezza dei collegamenti di tracciamento (vedere l&#39;elenco di controllo [](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Sicurezza e Privacy):
+Le seguenti correzioni sono correlate al meccanismo di sicurezza dei collegamenti di tracciamento (per ulteriori informazioni, consulta l’elenco [di controllo](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)Sicurezza e Privacy):
 
 * È stato risolto un problema che impediva il monitoraggio dei &quot;clic di notifica&quot; (notifiche push iOS e Android). (NEO-25965)
 * È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracciamento quando si utilizzavano alcune versioni precedenti di Outlook.  (NEO-25688)
@@ -68,7 +66,7 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 
 >[!CAUTION]
 >
->In caso di problemi con le notifiche push tramite i collegamenti di tracciamento o le consegne tramite i tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per il tracciamento dei collegamenti. La procedura è dettagliata in questa [pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>In caso di problemi con le notifiche push tramite i collegamenti di tracciamento o le consegne tramite i tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per il tracciamento dei collegamenti. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini sulle consegne di linea. (NEO-23207)
 * È stato risolto un problema con l’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
