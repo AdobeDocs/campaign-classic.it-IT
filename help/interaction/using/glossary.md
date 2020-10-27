@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: interaction-overview
 discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 
 * **Spazio** offerta: cartella che definisce il percorso in cui l’offerta viene esposta. La definizione di uno spazio consente di specificare il canale utilizzato, specificare se può essere utilizzato o meno in modalità unitaria (per impostazione predefinita: solo in modalità batch), create il contenuto dell&#39;offerta utilizzando le funzioni di rendering e specificate l&#39;offerta delle offerte presentate. Uno spazio è un&#39;interfaccia tra il canale e il motore di offerte.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Uno spazio di offerta non è un canale di comunicazione, ma coincide con una specifica posizione di esposizione sul canale. Ad esempio, le offerte esposte su un sito Web possono occupare due spazi sulla stessa pagina. In questo caso, avremo due spazi per lo stesso canale.
    >
