@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -96,7 +96,7 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >*  Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
->*  Adobe riordina l&#39;aggiunta delle tabelle specifiche del modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
+>*  Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
 >* I comandi **sottovuoto** e **reindicizzati** bloccheranno la tabella, che mette in pausa alcuni processi durante la manutenzione.
 >* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
 >* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
@@ -369,7 +369,7 @@ Contattare l&#39;amministratore del database per conoscere le procedure più ada
 
 >[!NOTE]
 >
->Per Microsoft SQL Server, potete utilizzare il piano di manutenzione descritto [in questa pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Per Microsoft SQL Server, potete utilizzare il piano di manutenzione dettagliato in [questa pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra versione, contattate l’amministratore del database per informazioni sulle procedure di manutenzione.
 
@@ -421,7 +421,7 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra v
 
    Un oggetto è stato creato nella **[!UICONTROL SQL Server Agent > Jobs]** cartella. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio esiste un solo oggetto, in quanto tutte le attività di manutenzione fanno parte dello stesso piano.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Affinché l&#39;oggetto possa essere eseguito, è necessario che l&#39;agente di Microsoft SQL Server sia abilitato.
 
