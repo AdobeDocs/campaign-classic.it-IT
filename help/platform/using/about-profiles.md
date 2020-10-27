@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -114,7 +114,7 @@ Potete avere una panoramica del **[!UICONTROL Number of active profiles]** menu 
 
 ## Come creare e gestire i profili {#create-profiles-video}
 
-Scopri come accedere ai dati del profilo, ordinare e filtrare i profili e come creare e gestire manualmente i profili.
+Scopri come accedere ai dati di profilo, ordinare e filtrare i profili e come crearli e gestirli manualmente.
 
 Questo video spiega anche la conformità di Adobe Campaign Classic alle normative generali sulla protezione dei dati.
 
