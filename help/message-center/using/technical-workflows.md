@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '309'
 ht-degree: 11%
 
 ---
@@ -28,13 +28,11 @@ I vari flussi di lavoro tecnici relativi ai messaggi transazionali (Centro messa
 
 ## Flussi di lavoro delle istanze di controllo {#control-instance-workflows}
 
-Nell&#39;istanza di controllo è necessario creare un flusso di lavoro di archiviazione per istanza di esecuzione. I flussi di lavoro di archiviazione sono quindi accessibili dalla cartella **Amministrazione > Produzione > Centro** messaggi. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
-
-**Architettura distribuita**
-
-Se si dispone di una o più istanze di esecuzione registrate, nell&#39;istanza di controllo è necessario creare un flusso di lavoro di archiviazione per ciascun account **[!UICONTROL Message Center execution instance]** esterno. Fate clic sul **[!UICONTROL Create the archiving workflow]** pulsante per creare e avviare il flusso di lavoro.
+Nell&#39;istanza di controllo, indipendentemente dalla presenza di una o più istanze di esecuzione registrate, è necessario creare un flusso di lavoro di archiviazione per ciascun account **[!UICONTROL Message Center execution instance]** esterno. Fate clic sul **[!UICONTROL Create the archiving workflow]** pulsante per creare e avviare il flusso di lavoro.
 
 ![](assets/messagecenter_archiving_002.png)
+
+Questi flussi di lavoro sono quindi accessibili dalla cartella **Amministrazione > Produzione > Centro** messaggi. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
 
 <!--**Minimal architecture**
 
