@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
@@ -56,7 +56,7 @@ I file di registro delle istanze mono sono elencati nella tabella seguente:
 | inMail.log | Registro del modulo di posta elettronica |
 | logins.log | Registra tutti i tentativi di accesso per  Adobe Campaign (successo o meno) |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >La directory **di reindirizzamento** esiste solo sui server di reindirizzamento. La sottodirectory **url** contiene le corrispondenze degli URL da reindirizzare e il **registro** della sottodirectory contiene i registri di tracciamento. Per generare i registri di tracciamento, il modulo **trackinglogd** deve essere in esecuzione.
 
@@ -68,4 +68,4 @@ Tuttavia, potete conservare file di dimensioni maggiori. Per attivare questo par
 
 Se desiderate mantenere ulteriori livelli di dettaglio nei registri, potete avviare i moduli Adobe Campaign  con il parametro **-verbose** :
 
-**nlserver start`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver start `<MODULE>`@`<INSTANCE>` -verbose**
