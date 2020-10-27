@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 247d73933991047603b8d61c7489d976c448dd52
+source-git-commit: 6ca61b4e927b7443815f0337b8e661c8ec126001
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1850'
 ht-degree: 8%
 
 ---
@@ -151,11 +151,11 @@ Le richieste **di accesso** ed **eliminazione** vengono presentate in [questa pa
 
 Grazie alle sue funzionalità di tracciamento,  Adobe Campaign permette di monitorare la navigazione dei destinatari della consegna utilizzando tre tipi di cookie: un cookie di sessione e due cookie permanenti.
 
-* A **session cookie**: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Viene aggiunto quando il contatto fa clic su un URL incluso in un’e-mail inviata da Adobe Campaign e ti consente di tracciarne il comportamento sul web. Questo cookie di sessione viene cancellato automaticamente alla chiusura del browser. Il contatto può configurare il browser per rifiutare i cookie.
+* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). Viene aggiunto quando il contatto fa clic su un URL incluso in un’e-mail inviata da Adobe Campaign e ti consente di tracciarne il comportamento sul web. Questo cookie di sessione viene cancellato automaticamente alla chiusura del browser. Il contatto può configurare il browser per rifiutare i cookie.
 
-* Un cookie **** permanente: il cookie **UUID** (Universal Unique IDentifier) è condiviso tra le soluzioni Adobe Experience Cloud. Viene impostata una volta fino a quando non viene visualizzata dal browser client quando viene generato un nuovo valore. Questo cookie consente di identificare gli utenti che interagiscono con le soluzioni del Experience Cloud  quando visitano un sito Web. Può essere depositato da una pagina di destinazione (per associare attività cliente sconosciute a un destinatario) o da una consegna. La descrizione di questo cookie è disponibile [qui](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
-
-<!--The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.-->
+* Due cookie **permanenti** :
+   * Il cookie **UUID** (Universal Unique IDentifier) è condiviso tra le soluzioni Adobe Experience Cloud. Viene impostata una volta fino a quando non viene visualizzata dal browser client quando viene generato un nuovo valore. Questo cookie consente di identificare gli utenti che interagiscono con le soluzioni del Experience Cloud  quando visitano un sito Web. Può essere depositato da una pagina di destinazione (per associare attività cliente sconosciute a un destinatario) o da una consegna. La descrizione di questo cookie è disponibile [in questa pagina](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-mc.html).
+   * Il cookie **nllastdelid** (introdotto nel Campaign Classic 20.3) è un cookie permanente che contiene l&#39; **ID** consegna dell&#39;ultima consegna da cui l&#39;utente ha fatto clic sul collegamento. Questo cookie viene utilizzato - quando manca il cookie di sessione - per identificare la tabella di tracciamento che verrà utilizzata.
 
 Regolamenti come il Regolamento generale sulla protezione dei dati (General Data Protection Regulation, GDPR) affermano che le aziende richiedono l&#39;accordo degli utenti del sito Web prima di installare qualsiasi cookie.
 
