@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 7a92bc51-24cf-4ce6-bd50-a315f8f6e34e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 Per creare un ambiente di test (modalità sandbox), effettuate le seguenti operazioni:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Utilizzare questo metodo di creazione dell&#39;ambiente solo per gli ambienti di test. In tutti gli altri casi, utilizzate la procedura guidata di mappatura della destinazione. Per ulteriori informazioni, consultate [Creazione di un ambiente](../../interaction/using/live-design-environments.md#creating-an-offer-environment)di offerte.
 
