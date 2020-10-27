@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Per supportare la scalabilità e fornire un servizio 24 ore su 24, 7 giorni su 7
 
 La sincronizzazione dell&#39;offerta viene eseguita tramite pacchetti. Nelle istanze di esecuzione, tutti gli oggetti catalogo hanno il prefisso del nome account esterno. Ciò significa che diverse istanze di controllo (ad esempio, istanze di sviluppo e produzione) possono essere supportate in una stessa istanza di esecuzione.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >È consigliabile utilizzare nomi interni brevi ed espliciti.
 
@@ -112,7 +112,7 @@ Se, per motivi di ottimizzazione, solo una parte del database di marketing viene
 
 Elenco delle opzioni di manutenzione disponibili nell’istanza di controllo:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Queste opzioni devono essere utilizzate solo per casi di manutenzione specifici.
 
@@ -128,7 +128,7 @@ L&#39;opzione seguente è disponibile per le istanze di esecuzione:
 
 Se l’istanza non aveva in precedenza il pacchetto Interaction, non è necessaria alcuna migrazione. Per impostazione predefinita, la tabella delle proposte sarà in 64 bit dopo l&#39;installazione dei pacchetti.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >A seconda del volume di proposizioni esistenti nell’istanza, questa operazione potrebbe richiedere del tempo.
 
