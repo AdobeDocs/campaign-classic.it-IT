@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 12f13b8d-afc3-4b55-a31b-080d31f84fc9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -40,7 +40,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 È necessario creare la variabile di ambiente **TRACE_ADDR.** con il valore **localhost** : **`<listening port="" />`**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >È consigliabile eseguire alcuni test per verificare che la piattaforma funzioni correttamente dopo la creazione di questa variabile di ambiente.
 
@@ -51,4 +51,3 @@ Ogni operatore deve essere collegato a una zona per accedere a un&#39;istanza e 
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla configurazione delle aree di protezione, consultare [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
-
