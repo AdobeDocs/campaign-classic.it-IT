@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 85%
+source-wordcount: '3882'
+ht-degree: 83%
 
 ---
 
@@ -25,6 +25,31 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## Ottobre 2020 {#oct-2020}
+
+**Nuove funzionalità incluse nella release 20.3**
+
+Miglioramenti delle notifiche push per iOS - [Leggi tutto](../../delivery/using/configuring-the-mobile-application.md)
+
+Miglioramenti delle notifiche push per Android - [Leggi tutto](../../delivery/using/configuring-the-mobile-application-android.md)
+
+**Altri aggiornamenti alla documentazione in arrivo con la versione**
+
+La Matrice di compatibilità è stata aggiornata. [Leggi tutto](../../rn/using/compatibility-matrix.md)
+
+La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../rn/using/deprecated-features.md)
+
+Le note sulla versione e la matrice di compatibilità per la versione Gold Standard sono ora disponibili in una sezione dedicata.
+[Ulteriori informazioni](../../rn/using/gold-standard.md#gs-10).
+
+**Altri aggiornamenti**
+
+Le pagine della documentazione sono state aggiornate per riflettere l&#39;aggiornamento Tomcat 8.
+
+I dettagli sono stati aggiunti nella descrizione della casella &#39;Informazioni su&#39; nella sezione &#39;Ottenere la versione Adobe Campaign &#39;. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+
+Le linee guida per eseguire un aggiornamento della build sono state aggiunte alla sezione &#39;Aggiornamento Adobe Campaign Classic&#39;. Leggi tutto [Leggi tutto](../../production/using/build-upgrade.md)
+
+Domande frequenti sull&#39;aggiornamento della build di Campaign sono state aggiunte alle domande più frequenti su Campaign. Leggi tutto [Leggi tutto](../../platform/using/faq-build-upgrade.md)
 
 I modelli di hosting on-premise, ospitati e ibridi per le campagne sono ora descritti in una sezione dedicata. [Leggi tutto](../../installation/using/hosting-models.md)
 
