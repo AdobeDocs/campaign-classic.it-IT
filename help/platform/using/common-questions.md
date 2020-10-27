@@ -1,7 +1,6 @@
 ---
 title: Domande comuni
-seo-title: Domande comuni
-description: Domande frequenti su Campaign Classic
+description: Domande frequenti su Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -11,17 +10,23 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 87%
 
 ---
 
 
 # Domande comuni{#common-questions}
 
-Hai bisogno di assistenza mentre lavori con Campaign Classic? Leggi le 10 domande più comuni riportate di seguito e altre domande frequenti in quella pagina. Puoi inoltre [guardare i video tutorial](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html) e leggere le [guide introduttive](../../platform/using/tutorials.md#step-by-step-guides) di Campaign per scoprire le funzionalità principali. Non trovi la risposta? [Chiedi alla community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign).
+Hai bisogno di assistenza mentre lavori con Campaign Classic? Leggi le 10 domande più comuni riportate di seguito e altre domande frequenti in quella pagina. Puoi inoltre:
+
+* [Video di esercitazione](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html)
+* [Opzioni di supporto autonomo](../../platform/using/tutorials.md#how-to-videos)
+* [Leggi la sezione iniziale e casi d’uso](../../platform/using/tutorials.md#step-by-step-guides)
+* Non trovi la risposta? [Chiedi all&#39;esperto](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* Hai bisogno di supporto? [Consulta la Guida e le opzioni di supporto per le campagne](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Come posso aggiornare Campaign alla versione più recente? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -29,7 +34,7 @@ Hai bisogno di assistenza mentre lavori con Campaign Classic? Leggi le 10 domand
 
 Se utilizzi Adobe Managed Services, puoi usufruire dell’aggiornamento Gold Standard di Campaign. Per ulteriori informazioni a riguardo, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
-[Consulta questo articolo](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html) per scoprire come aggiornare il tuo ambiente e leggi le [Domande comuni](https://helpx.adobe.com/it/campaign/kb/build-upgrade-faq.html) su questo argomento specifico.
+[Leggi questa sezione](../../production/using/build-upgrade.md) per apprendere come aggiornare l&#39;ambiente e leggi [Domande](../../platform/using/faq-build-upgrade.md) comuni su questo argomento specifico.
 
 ## 2. Cos’è il flusso di lavoro di pulizia del database? {#what-is-the-database-cleanup-workflow-}
 
