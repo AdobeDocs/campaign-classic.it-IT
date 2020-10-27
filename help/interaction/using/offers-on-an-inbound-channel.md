@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: case-study
 discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 1%
@@ -79,7 +79,7 @@ Verrà visualizzata una struttura ad albero contenente il nuovo ambiente:
        }   
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >La funzione di rendering deve denominare i campi utilizzati per lo spazio nell&#39;ordine in cui erano stati selezionati in precedenza, in modo che le offerte vengano visualizzate correttamente.
 
@@ -223,7 +223,7 @@ Per creare uno spazio di offerta che corrisponda alla categoria **Migliore offer
 
    ![](assets/offer_inbound_fallback_example_025.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >La funzione di rendering deve denominare i campi utilizzati per lo spazio nell&#39;ordine in cui erano stati selezionati in precedenza, in modo che le offerte vengano visualizzate correttamente.
 
