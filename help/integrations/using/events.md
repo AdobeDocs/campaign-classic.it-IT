@@ -12,15 +12,25 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
 
 
-# Eventi di trigger {#events}
+# Configurazione di eventi per l&#39;implementazione personalizzata {#events}
+
+Parti di questa configurazione sono uno sviluppo personalizzato e richiedono quanto segue:
+
+* Conoscenza di base delle analisi di JSON, XML e Javascript in  Adobe Campaign.
+* Conoscenza operativa delle API QueryDef e Writer.
+* Nozioni di funzionamento di crittografia e autenticazione utilizzando chiavi private.
+
+Poiché la modifica del codice JS richiede competenze tecniche, non tentare di farlo senza la comprensione corretta.
+
+L&#39;ulteriore elaborazione degli eventi viene effettuata nell&#39;ambito del pacchetto ACX fornito al di fuori dell&#39;implementazione predefinita. L&#39;evento ricevuto viene elaborato immediatamente utilizzando il codice JavaScript. Viene salvata in una tabella di database senza ulteriore elaborazione in tempo reale. Le attivazioni vengono utilizzate per il targeting tramite un flusso di lavoro della campagna che invia e-mail. La campagna è configurata in modo che il cliente che ha attivato l&#39;evento riceva un&#39;e-mail.
 
 ## Eventi di elaborazione in JavaScript {#events-javascript}
 
@@ -48,16 +58,16 @@ Deve restituire come
 <undefined/>
 ```
 
-Riavviate [!DNL pipelined] dopo la modifica del JS.
+Riavviare [!DNL pipelined] dopo la modifica del JS.
 
 ### Attiva formato dati {#trigger-format}
 
-I [!DNL trigger] dati vengono passati alla funzione JS. È in formato XML.
+I [!DNL trigger] dati vengono passati alla funzione JS in formato XML.
 
 * L&#39; **[!UICONTROL @triggerId]** attributo contiene il nome dell&#39; [!DNL trigger].
-* L&#39;elemento **di arricchimento** in formato JSON contiene i dati generati da Analytics ed è collegato al trigger.
+* L&#39;elemento **di arricchimento** in formato JSON contiene i dati generati da  Adobe Analytics ed è collegato al trigger.
 * **[!UICONTROL @offset]** è il &quot;puntatore&quot; del messaggio. Indica l’ordine del messaggio all’interno della coda.
-* **[!UICONTROL @partitio]**n è un contenitore di messaggi all&#39;interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni in coda.
+* **[!UICONTROL @partition]** è un contenitore di messaggi all&#39;interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni in coda.
 
 Esempio:
 
@@ -68,18 +78,18 @@ Esempio:
  </trigger>
 ```
 
-### Formato dati di arricchimento {#enrichment-format}
+### Arricchimento del formato dei dati {#enrichment-format}
 
 >[!NOTE]
 >
 >Si tratta di un esempio specifico ricavato da diverse possibili implementazioni.
 
-Il contenuto è definito in Analytics per ciascun trigger. È in formato JSON.
+Il contenuto è definito in formato JSON in  Adobe Analytics per ciascun trigger.
 Ad esempio, in un trigger LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** può contenere l&#39;ID acquirente che viene utilizzato per riconciliare con i destinatari della campagna. È in formato stringa. <br>Deve essere riconciliato per trovare l&#39;ID acquirente, che è la chiave primaria.
+* **[!UICONTROL eVar01]** può contenere l&#39;ID acquirente in formato stringa, utilizzato per riconciliarsi con  destinatari Adobe Campaign. <br>Deve essere riconciliato per trovare l&#39;ID acquirente, che è la chiave primaria.
 
-* **[!UICONTROL timeGMT]** può contenere l&#39;ora del trigger sul lato Analytics. È in formato Epoch UTC (secondi a partire dall&#39;1/01/1970 UTC).
+* **[!UICONTROL timeGMT]** può contenere l&#39;ora dell&#39;attivatore sul lato Adobe Analytics  in formato Epoch UTC (secondi dall&#39;1/01/1970 UTC).
 
 Esempio:
 
@@ -105,7 +115,7 @@ Esempio:
  }
 ```
 
-### Ordine di elaborazione degli eventi {#order-events}
+### Eventi ordine di elaborazione{#order-events}
 
 Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread del [!DNL pipelined] processo elabora una partizione diversa.
 
@@ -113,16 +123,16 @@ L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. P
 
 Questo puntatore è specifico per ogni istanza e per ogni consumatore. Pertanto, quando molti casi accedono alla stessa pipeline con consumatori diversi, ciascuno riceve tutti i messaggi e nello stesso ordine.
 
-Il parametro &quot;consumer&quot; dell&#39;opzione pipeline identifica l&#39;istanza chiamante.
+Il parametro **consumer** dell&#39;opzione pipeline identifica l&#39;istanza chiamante.
 
 Al momento, non è possibile avere code diverse per ambienti separati come &#39;staging&#39; o &#39;dev&#39;.
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al [!DNL pipelined] registro. Errori come logError() vengono scritti nel [!DNL pipelined] registro e l&#39;evento viene inserito in una coda di tentativi. Controllare il registro tubato.
+I registri come logInfo() vengono indirizzati al [!DNL pipelined] registro. Errori come logError() vengono scritti nel [!DNL pipelined] registro e l&#39;evento viene inserito in una coda di tentativi. In questo caso, controllare il registro tubato.
 I messaggi di errore vengono ripetuti più volte nella durata impostata nelle [!DNL pipelined] opzioni.
 
-A scopo di debug e monitoraggio, i dati dell&#39;attivatore completo vengono scritti nella tabella dell&#39;attivatore. Si trova nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati di attivazione ha lo stesso scopo.
+A scopo di debug e monitoraggio, i dati di attivazione completi sono scritti nella tabella dell&#39;attivatore nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati di attivazione ha lo stesso scopo.
 
 ### Analisi dei dati {#data-parsing}
 
@@ -172,13 +182,13 @@ function processPipelineMessage(xmlTrigger)
  data = {xmlTrigger.toXMLString()}
  />
  xtk.session.Write(event)
- return <undef/>; 
+ return <undef/>;
  }
 ```
 
 ### Vincoli {#constraints}
 
-Le prestazioni di questo codice devono essere ottimali in quanto viene eseguito a frequenze elevate. Ci sono potenziali effetti negativi per altre attività di marketing. Soprattutto se l&#39;elaborazione di più di un milione di eventi di attivazione all&#39;ora sul server Marketing. Oppure se non è sintonizzato correttamente.
+Le prestazioni di questo codice devono essere ottimali in quanto viene eseguito a frequenze elevate e potrebbe causare potenziali effetti negativi per altre attività di marketing. Soprattutto se l&#39;elaborazione di più di un milione di eventi di attivazione all&#39;ora sul server Marketing o se non viene sintonizzata correttamente.
 
 Il contesto di questo Javascript è limitato. Non tutte le funzioni dell&#39;API sono disponibili. Ad esempio, getOption() o getCurrentdate() non funzionano.
 
@@ -192,7 +202,7 @@ Per accelerare l&#39;elaborazione, diversi thread di questo script vengono esegu
 
 ### Schema evento pipeline {#pipeline-event-schema}
 
-Gli eventi sono memorizzati in una tabella di database. Viene utilizzato dalle campagne di marketing per indirizzare i clienti e arricchire le e-mail tramite attivatori.
+Gli eventi sono memorizzati in una tabella di database. Viene utilizzato dalle campagne di marketing per indirizzare i clienti e arricchire le e-mail mediante i trigger.
 Anche se ogni trigger può avere una struttura dati distinta, tutti i trigger possono essere mantenuti in una singola tabella.
 Il campo triggerType identifica da quale trigger provengono i dati.
 
@@ -223,20 +233,20 @@ Gli eventi possono essere visualizzati con un semplice modulo basato sullo schem
 
 ### Flusso di lavoro di riconciliazione {#reconciliation-workflow}
 
-La riconciliazione è il processo di corrispondenza del cliente da Analytics al database Campaign. Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
+Riconciliazione è il processo di corrispondenza del cliente da  Adobe Analytics al database Adobe Campaign . Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
 
 Per motivi di prestazioni, la corrispondenza deve essere eseguita in modalità batch tramite un flusso di lavoro.
 La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lavoro. Di conseguenza, il ritardo tra la ricezione di un evento in  Adobe Campaign e la relativa elaborazione da parte di un flusso di lavoro di marketing è di 15 minuti.
 
 ### Opzioni per la riconciliazione di unità in JavaScript {#options-unit-reconciliation}
 
-In teoria, è possibile eseguire la query di riconciliazione per ogni trigger in JavaScript. Ha un impatto maggiore sulle prestazioni e offre risultati più rapidi. Potrebbe essere richiesto per casi d&#39;uso specifici quando è necessaria la reattività.
+È possibile eseguire la query di riconciliazione per ogni trigger in JavaScript. Ha un impatto maggiore sulle prestazioni e offre risultati più rapidi. Potrebbe essere richiesto per casi d&#39;uso specifici quando è necessaria la reattività.
 
-Può essere difficile farlo se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato da quello di marketing, utilizza un collegamento al database con prestazioni insufficienti.
+Può essere difficile da implementare se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato da quello di marketing, utilizza un collegamento al database con prestazioni insufficienti.
 
 ### Flusso di lavoro di eliminazione {#purge-workflow}
 
-Gli attivatori vengono elaborati entro l&#39;ora, quindi non c&#39;è motivo di mantenerli per molto tempo. Il volume può essere di circa 1 milione di attivatori all&#39;ora. Questo spiega perché è necessario implementare un flusso di lavoro di eliminazione. L&#39;eliminazione elimina tutti i trigger con durata superiore a tre giorni ed è eseguita una volta al giorno.
+Gli attivatori vengono elaborati entro l&#39;ora. Il volume può essere di circa 1 milione di attivatori all&#39;ora. Questo spiega perché è necessario implementare un flusso di lavoro di eliminazione. L&#39;eliminazione viene eseguita una volta al giorno ed elimina tutti i trigger che sono più vecchi di tre giorni.
 
 ### Flusso di lavoro campagna {#campaign-workflow}
 
