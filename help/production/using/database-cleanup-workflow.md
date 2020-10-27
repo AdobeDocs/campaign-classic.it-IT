@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Per impostazione predefinita, il **[!UICONTROL Database cleanup]** flusso di lav
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Affinché il flusso di lavoro possa iniziare alla data e all&#39;ora definite nel pianificatore, è necessario avviare il motore del flusso di lavoro (wfserver). **[!UICONTROL Database cleanup]** In caso contrario, la pulizia del database non verrà eseguita fino all&#39;avvio successivo del motore del flusso di lavoro.
 
@@ -84,7 +84,7 @@ Tutte le attività eseguite dal **[!UICONTROL Database cleanup]** flusso di lavo
 
 Alla data e all&#39;ora definite nel pianificatore del flusso di lavoro (vedere [l&#39;Utilità di pianificazione](#the-scheduler)), il motore del flusso di lavoro avvia il processo di pulizia del database. La pulizia del database si collega al database ed esegue le attività nella sequenza mostrata di seguito.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se una di queste attività ha esito negativo, non saranno eseguite le seguenti.\
 >Le query SQL con un attributo **LIMIT** verranno eseguite ripetutamente fino all&#39;elaborazione di tutte le informazioni.
