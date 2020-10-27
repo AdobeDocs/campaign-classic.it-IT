@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Si tratta di riavviare i processi con un livello più elevato di registri.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Questa procedura annulla i servizi in corso su questo modulo.
 
@@ -62,7 +62,7 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
 Di seguito è riportato un esempio specifico per il modulo Web. Gli altri moduli funzionano come indicato sopra.
@@ -88,7 +88,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 >[!NOTE]
 La modalità **Tracefile** consente di salvare i file di registro. Negli esempi riportati sopra, i file di registro vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** .
 
->[!CAUTION]
+>[!IMPORTANT]
 In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il seguente comando è sufficiente:\
 nlserver web -tomcat -verbose -tracefilter:*
 
