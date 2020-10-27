@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 7%
 
 ---
@@ -142,9 +142,3 @@ Scopri come creare un pubblico configurando un elenco di destinatari da Esplora 
 Scoprite come creare un flusso di lavoro per indirizzare i destinatari e come renderlo ricorrente prima di utilizzare l&#39;elenco in una destinazione e-mail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
-
-**Vedi anche**
-
-* 
-
-* 
