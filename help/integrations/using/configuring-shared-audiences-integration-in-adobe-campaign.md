@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d567cb7dbc55d9c124d1cc83b7a5a9e2dfb5ab61
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,10 @@ Dopo aver inviato questa richiesta,  Adobe procederà al provisioning dell&#39;i
 1. [Passaggio 3: Configurare il server di tracciamento campagna](#step-3--configure-campaign-tracking-server)
 1. [Passaggio 4: Configurare il servizio ID visitatori](#step-4--configure-the-visitor-id-service)
 
+>[!IMPORTANT]
+>
+>Se utilizzate il dominio demdex e seguite la sintassi **ftp-out.demdex.com** per l&#39;account esterno di importazione e **ftp-in.demdex.com** per l&#39;account esterno di esportazione, dovete adattare la vostra implementazione di conseguenza e passare  connettore Amazon Simple Storage Service (S3) per importare o esportare i dati. Per ulteriori informazioni su come configurare gli account esterni con  Amazon S3, consulta questa [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+
 ## Passaggio 1: Configurare o controllare gli account esterni in  Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 In primo luogo, è necessario configurare o controllare gli account esterni in  Adobe Campaign come segue:
@@ -36,26 +40,35 @@ In primo luogo, è necessario configurare o controllare gli account esterni in  
 1. Fate clic sull&#39; **[!UICONTROL Explorer]** icona.
 1. Vai a **[!UICONTROL Administration > Platform > External accounts]**. I suddetti account SFTP dovrebbero essere stati configurati dal  Adobe e le informazioni necessarie avrebbero dovuto essere comunicate all&#39;utente.
 
-   * **[!UICONTROL importSharedAudience]** : Account SFTP dedicato all&#39;importazione di audience.
-   * **[!UICONTROL exportSharedAudience]** : Account SFTP dedicato all&#39;esportazione dei tipi di pubblico.
+   * **[!UICONTROL importSharedAudience]**: account dedicato all&#39;importazione di audience.
+   * **[!UICONTROL exportSharedAudience]**: account dedicato all&#39;esportazione dei tipi di pubblico.
 
    ![](assets/aam_config_1.png)
 
-1. Compila il **[!UICONTROL Server]** campo: **dominio ftp-out.demdex.com** per l’account esterno da importare e il dominio **ftp-in.demdex.com** per l’account esterno da esportare.
+1. Select the **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** external account.
 
-   Ricorda che un&#39;esportazione da Campaign è un&#39;importazione per  servizio di base Audience Manager o Persone.
+1. From the **[!UICONTROL Type]** drop-down, select **[!UICONTROL AWS S3]**.
 
-   >[!NOTE]
-   >
-   >Se si utilizza S3, immettere la sintassi **[!UICONTROL AWS S3 Account Server]** seguente:
-   >
-   >`<S3bucket name>.s3.amazonaws.com/<s3object path>`
-   >
-   >Per ulteriori informazioni su come configurare il tuo account S3, consulta questa [pagina](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+1. Fornire i seguenti dettagli:
 
+   * **[!UICONTROL AWS S3 Account Server]**
+L’URL del server deve essere compilato come segue:
+
+      ```
+      <S3bucket name>.s3.amazonaws.com/<s3object path>
+      ```
+
+   * **[!UICONTROL AWS access key ID]**
+Per sapere dove trovare l&#39;ID della chiave di accesso AWS, fai riferimento a questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+
+   * **[!UICONTROL Secret access key to AWS]**
+Per sapere dove trovare la chiave di accesso segreta per AWS, fare riferimento a questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+
+   * **[!UICONTROL AWS Region]**
+Per ulteriori informazioni sull&#39;area AWS, fare riferimento a questa [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
    ![](assets/aam_config_2.png)
 
-1. Aggiungete il **[!UICONTROL Account]** e **[!UICONTROL Password]** fornito dal Adobe .
+1. Fate clic **[!UICONTROL Save]** e configurate l&#39;account **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** esterno come descritto nei passaggi precedenti.
 
 Gli account esterni sono ora configurati.
 
