@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 12%
@@ -34,7 +34,6 @@ Definizione del tipo di evento nelle proprietà del modello di messaggio:
 
 Per impostazione predefinita, il routing si basa sulle seguenti informazioni:
 
-* il tipo di evento,
-* il canale da utilizzare (per impostazione predefinita: email),
-* il modello di consegna più recente, in base alla data di pubblicazione.
-
+* Il tipo di evento
+* Canale da utilizzare (per impostazione predefinita: email)
+* Modello di consegna più recente, in base alla data di pubblicazione
