@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Assicuratevi che la manutenzione del database sia pianificata ed eseguita corret
 
 Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se si utilizza una configurazione mid-sourcing, è essenziale che i database vengano mantenuti regolarmente. Quando si analizza una consegna sulla piattaforma di marketing, l&#39;istanza di marketing invia informazioni all&#39;istanza mid-sourcing. Se il processo è rallentato, l&#39;istanza di marketing verrà influenzata.
 
@@ -69,7 +69,7 @@ Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano un
 * interrompere o eliminare flussi di lavoro in pausa a causa di un errore,
 * arresta tutti i flussi di lavoro utilizzati per i test che non contengono un&#39; **[!UICONTROL End]** attività e il cui stato rimane pertanto **[!UICONTROL Paused]** .
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Se l&#39;operazione richiede molto tempo e libera molto spazio, ciò significa che è necessaria una manutenzione approfondita (ricostruzione dell&#39;indice, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
