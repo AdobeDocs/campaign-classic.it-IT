@@ -12,24 +12,24 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 2%
 
 ---
 
 
 # Risoluzione dei problemi relativi alla pipeline {#pipeline-troubleshooting}
 
-**Impossibile eseguire la tubazione con errore &quot;Nessuna attività corrisponde alla maschera tubata@&quot;**
+**Impossibile eseguire la tubazione con errore &quot;Nessuna attività corrisponde alla maschera tubata@&lt; istanza >&quot;**
 
 La versione di Adobe Campaign Classic non supporta la pipeline.
 
 1. Verificate la presenza dell&#39; [!DNL pipelined] elemento nel file di configurazione. In caso contrario, significa che non è supportato.
 1. Aggiornamento alla versione 6.11 build 8705 o successiva.
 
-**Il tubo si guasta con &#39;&#39; aurait du commencer par`[`ou`{`(iRc=16384)&quot;**
+**Il tubo si guasta con &#39;&#39; aurait du commencer par `[` ou `{` (iRc=16384)&quot;**
 
 L&#39;opzione **NmsPipeline_Config** non è impostata. In realtà è un errore di analisi JSON.
 Impostate la configurazione JSON nell’opzione **NmsPipeline_Config**. Vedere &quot;opzione di routing&quot; in questa pagina.
@@ -49,7 +49,7 @@ Il parametro @authPrivateKey del file di configurazione dell&#39;istanza non è 
 1. Verificare che authPrivateKey sia impostato.
 1. Controlla che authPrivateKey: inizia con @, termina con =, ed è lungo circa 4000 caratteri.
 1. Cercare la chiave originale e verificare che sia: in formato RSA, 4096 bit di lunghezza e inizia con —BEGIN RSA PRIVATE KEY—.
-   <br> Se necessario, ricreate la chiave e registratela su  Adobe Analytics. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
+   <br> Se necessario, ricreate la chiave e registratela su  Adobe Analytics.
 1. Verificate che la chiave sia stata codificata all’interno della stessa istanza di [!DNL pipelined]. <br>Se necessario, ripetete la codifica utilizzando il codice JavaScript o il flusso di lavoro di esempio.
 
 **Impossibile leggere il token durante l&#39;autenticazione**
@@ -91,42 +91,3 @@ Generalmente, un attivatore può richiedere 15-90 minuti per avviare una campagn
 1. Controllate la pagina di [!DNL pipelined] stato per conoscere la dimensione della coda. Se la dimensione della coda è grande, migliorare le prestazioni del JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura gli attivatori in Analytics con un numero minore di messaggi.
 Annessi
-
-**Come utilizzare il codice JavaScript di crittografia Key**
-
-Eseguire un JavaScript per crittografare la chiave privata. È necessaria per la configurazione della pipeline.
-
-Di seguito è riportato un esempio di codice che è possibile utilizzare per eseguire la funzione cryptString:
-
-```
-/*
-USAGE:
-  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-*/
- 
-function usage()
-{
-  return "USAGE:\n" +
-    '  nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js\n'
-}
- 
-var fn = application.arg;
-if( fn == "" )
-  logError("Missing key file file\n" + usage());
- 
-//open the pem file
-plaintext = loadFile(fn)
- 
-if( !plaintext.match(/^-----BEGIN RSA PRIVATE KEY-----/) )
-  logError("File should be an rsa private key")
- 
-logInfo("Encrypted key:\n" + cryptString(plaintext, <xtkSecretKey>))
-```
-
-Sul server, eseguite il codice JavaScript:
-
-```
-nlserver javascript -instance:<instancename> -file -arg:"<private_key.pem file>" -file encryptKey.js
-```
-
-Copiate e incollate la chiave codificata dall’output alla console.
