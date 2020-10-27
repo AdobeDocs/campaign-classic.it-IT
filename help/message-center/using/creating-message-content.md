@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 1f420652-c9af-4a49-8d5c-a640e960aced
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 4%
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in  Adobe Campaign. Ad esempio, per la consegna tramite e-mail potete creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l&#39;oggetto di consegna. Per ulteriori informazioni, consulta il capitolo sulla consegna [delle e-](../../delivery/using/about-email-channel.md)mail.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Le immagini incluse nel messaggio devono essere accessibili al pubblico.  Adobe Campaign non fornisce alcun meccanismo di caricamento delle immagini per i messaggi transazionali.\
 >A differenza di JSSP o webApp, non `<%=` dispone di escape predefinito.
