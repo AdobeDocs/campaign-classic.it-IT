@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Il contenuto di un&#39;offerta ha una rappresentazione per spazio. Poiché ciasc
 
 Potete scegliere di approvare il contenuto dell&#39;offerta su alcuni spazi disponibili e rifiutarlo su altri.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Una volta approvati il contenuto e l&#39;idoneità di un&#39;offerta, il flusso di lavoro di pubblicazione (notifica dell&#39;offerta) viene eseguito automaticamente e l&#39;offerta viene resa live e disponibile su tutti gli spazi attivati.
 
@@ -62,7 +62,7 @@ Per approvare il contenuto dell&#39;offerta, eseguite i seguenti passaggi:
 
 Per approvare l&#39;idoneità dell&#39;offerta si intendono accettare o rifiutare i pesi dell&#39;offerta e le regole di idoneità configurate anche nell&#39;offerta o ereditate dalle regole create nella categoria principale.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Una volta approvati il contenuto e l&#39;idoneità di un&#39;offerta, il flusso di lavoro di pubblicazione (notifica dell&#39;offerta) viene eseguito automaticamente e l&#39;offerta viene resa live e disponibile su tutti gli spazi attivati.
 
