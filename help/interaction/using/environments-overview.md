@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: managing-environments
 discoiquuid: c7b4103d-99b2-4e64-a457-ee0e3326b172
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 8%
@@ -26,7 +26,7 @@ Questo capitolo descrive come gestire gli ambienti delle offerte in Interaction.
 
 Diversi profili utente sono coinvolti nella gestione e nell&#39;utilizzo delle offerte. Il primo passo consiste quindi nel garantire che tali profili esistano e, in caso contrario, crearli.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Le seguenti configurazioni devono essere eseguite da un amministratore **** tecnico.
 
