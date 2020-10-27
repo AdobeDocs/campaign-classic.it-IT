@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 * eliminazione dei record orfani e reinizializzazione dello stato per gli oggetti scaduti,
 * aggiornamento delle statistiche del database.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >L&#39;attività di pulizia si occupa principalmente della manutenzione del livello dell&#39;applicazione, non della manutenzione del livello RDBMS (ad eccezione dell&#39;aggiornamento statistico). Tuttavia, le operazioni di manutenzione saranno necessarie nel database. Anche se il flusso di lavoro di pulizia del database viene eseguito correttamente, ciò non significa che il database sia ottimamente sintonizzato.
 
