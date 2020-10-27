@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '193'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 11%
 
 L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, inviare una prova e testare la personalizzazione dei messaggi prima dell&#39;invio tramite e-mail o SMS. Gli indirizzi dei semi sono collegati alla consegna e non possono essere utilizzati per altre consegne.
 
-## Creazione di un indirizzo e-mail {#creating-a-seed-address}
+## Creazione di indirizzi di seed {#creating-a-seed-address}
 
 1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
 
@@ -46,13 +46,12 @@ L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, in
 
    ![](assets/messagecenter_create_custo_001.png)
 
-## Creazione di più indirizzi di prova {#creating-several-seed-addresses}
-
+   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
 1. Fate clic sul **[!UICONTROL Add other seed addresses]** collegamento, quindi fate clic sul **[!UICONTROL Add]** pulsante.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. Attenetevi alla procedura di configurazione per un indirizzo seed, descritta nella sezione [Creazione di un indirizzo](#creating-a-seed-address) seed.
+   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
 1. Ripetete il processo per creare tutti gli indirizzi necessari.
 
    ![](assets/messagecenter_create_seedaddr_008.png)
