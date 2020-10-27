@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 4%
@@ -242,7 +242,7 @@ Una volta definite le zone e configurata l&#39; **[!UICONTROL Security zone]** e
 
 ### Porta predefinita per Tomcat {#default-port-for-tomcat}
 
-Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una gratuita (ad esempio 8090). Per modificarlo, modificate il file **server.xml** salvato nella directory **/tomcat-7/conf** della cartella di installazione di Adobe Campaign .
+Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una gratuita (ad esempio 8090). Per modificarlo, modificate il file **server.xml** salvato nella directory **/tomcat-8/conf** della cartella di installazione di Adobe Campaign .
 
 Quindi modificate la porta delle pagine dei relè JSP. A questo scopo, modificate il file **serverConf.xml** salvato nella directory **/conf** della directory di installazione di Adobe Campaign . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -255,7 +255,7 @@ Quindi modificate la porta delle pagine dei relè JSP. A questo scopo, modificat
 
 ### Mapping di una cartella in Tomcat {#mapping-a-folder-in-tomcat}
 
-Per definire le impostazioni specifiche per il cliente, potete creare un file **user_contexts.xml** nella cartella **/tomcat-7/conf** , che contiene anche il file **contexts.xml** .
+Per definire le impostazioni specifiche per il cliente, potete creare un file **user_contexts.xml** nella cartella **/tomcat-8/conf** , che contiene anche il file **contexts.xml** .
 
 Questo file conterrà il seguente tipo di informazioni:
 
