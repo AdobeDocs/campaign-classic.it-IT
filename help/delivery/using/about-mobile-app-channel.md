@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -59,14 +59,14 @@ Potete definire il comportamento dell&#39;applicazione quando l&#39;utente attiv
 
 Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le sottoscrizioni di notifica sui dispositivi mobili. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
 
- Adobe Campaign è compatibile sia con APNS binario che con HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta [Configurazione di un’applicazione mobile nella sezione  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+ Adobe Campaign è compatibile con APN binari e HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta [Configurazione di un’applicazione mobile nella sezione  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 
 ## Percorso dati {#data-path}
 
 Gli schemi seguenti descrivono i passaggi che consentono a un&#39;applicazione mobile di scambiare dati con  Adobe Campaign. Questo processo coinvolge tre entità:
 
 * l’applicazione mobile
-* il servizio di notifica: APNS (Apple Push Notification Service) per Apple e FCM (Firebase Cloud Messaging) per Android
+* il servizio di notifica: APN (Apple Push Notification Service) per Apple e FCM (Firebase Cloud Messaging) per Android
 * Adobe Campaign
 
 Le tre fasi principali del processo di notifica sono: registrazione dell&#39;applicazione in  Adobe Campaign (raccolta di iscrizioni), consegne e tracciamento.
@@ -88,10 +88,14 @@ Le seguenti informazioni sono disponibili in  Adobe Campaign:
 
 ![](assets/nmac_delivery_view.png)
 
-Il server Adobe Campaign  deve essere in grado di contattare il server APNS sulle seguenti porte:
+Il server Adobe Campaign  deve essere in grado di contattare il server APN sulle seguenti porte:
 
 * 2195 (invio) e 2186 (servizio di feedback) per connettore binario iOS
 * 443 per il connettore iOS HTTP/2
+
+   >[!NOTE]
+   >
+   > A partire dalla release Campaign 20.3, il connettore binario legacy iOS è obsoleto. Se si utilizza questo connettore, è necessario adattare l&#39;implementazione di conseguenza. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
 
 Per verificare che funzioni correttamente, usate i seguenti comandi:
 
@@ -107,7 +111,7 @@ Per verificare che funzioni correttamente, usate i seguenti comandi:
    telnet gateway.push.apple.com
    ```
 
-Se viene utilizzato un connettore binario iOS, MTA e il server Web devono essere in grado di contattare APNS sulla porta 2195 (invio), il server del flusso di lavoro deve essere in grado di contattare APNS sulla porta 2196 (servizio di feedback).
+Se viene utilizzato un connettore binario iOS, MTA e il server Web devono essere in grado di contattare i APN sulla porta 2195 (invio), il server del flusso di lavoro deve essere in grado di contattare i APN sulla porta 2196 (servizio di feedback).
 
-Se si utilizza un connettore iOS HTTP/2, MTA, server Web e server di workflow devono essere in grado di contattare APNS sulla porta 443.
+Se si utilizza un connettore iOS HTTP/2, MTA, server Web e server di workflow devono essere in grado di contattare i servizi APN sulla porta 443.
 
