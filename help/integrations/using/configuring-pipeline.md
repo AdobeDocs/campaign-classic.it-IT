@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 3%
+source-wordcount: '901'
+ht-degree: 2%
 
 ---
 
@@ -23,147 +23,142 @@ ht-degree: 3%
 # Configurazione della pipeline {#configuring-pipeline}
 
 I parametri di autenticazione come l&#39;ID cliente, la chiave privata e l&#39;endpoint di autenticazione sono configurati nei file di configurazione dell&#39;istanza.
-L&#39;elenco di attivatori da elaborare è configurato in un&#39;opzione. È in formato JSON.
-Il trigger viene elaborato immediatamente utilizzando il codice JavaScript. Viene salvata in una tabella di database senza ulteriore elaborazione in tempo reale.
+L&#39;elenco di attivatori da elaborare è configurato in un&#39;opzione in formato JSON.
 I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della campagna che invia e-mail. La campagna è impostata in modo che un cliente con entrambi gli eventi di attivazione riceva un’e-mail.
+
+>[!CAUTION]
+>
+>In caso di distribuzione ibrida, accertati che la pipeline sia configurata su un&#39;istanza intermedia.
 
 ## Prerequisiti {#prerequisites}
 
 L&#39;utilizzo [!DNL Experience Cloud Triggers] in Campaign richiede:
 
-*  Adobe Campaign versione 6.11 build 8705 o successiva.
-* Adobe Analytics Ultimate, Premium, Foundation, OD, Select, Prime, Mobile Apps, Select o Standard.
+*  versione Adobe Campaign 19.1.9 o 20.3.1. e sopra.
+* Versione di Analytics Standard.
 
 Le configurazioni preliminari sono:
 
-* Creazione di un file di chiave privata e quindi creazione dell&#39;applicazione Auth registrata con quella chiave.
+*  autenticazione progetto IO Adobe
+* IMSOrgId, l’identificatore del cliente del Experience Cloud  con  aggiunto Adobe Analytics.
+* Il team di provisioning deve disporre dei privilegi di amministratore di sistema per l&#39;organizzazione IMS del cliente
 * Configurazione degli attivatori in  Adobe Analytics.
-
-La configurazione Adobe Analytics  non rientra nell&#39;ambito di questo documento.
-
- Adobe Campaign richiede le seguenti informazioni da  Adobe Analytics:
-
-* Nome dell&#39;applicazione Auth.
-* IMSOrgId, l’identificatore del cliente del Experience Cloud .
-* I nomi degli attivatori configurati in Analytics.
-* Nome e formato dei campi di dati da riconciliare con il database Marketing.
-
-Parte di questa configurazione è uno sviluppo personalizzato e richiede quanto segue:
-
-* Conoscenza di base delle analisi di JSON, XML e Javascript in  Adobe Campaign.
-* Conoscenza operativa delle API QueryDef e Writer.
-* Nozioni di funzionamento di crittografia e autenticazione utilizzando chiavi private.
-
->[!NOTE]
->
->Poiché la modifica del codice JS richiede competenze tecniche, non provate a farlo senza una comprensione adeguata. <br>Gli attivatori vengono salvati in una tabella di database. Pertanto, i dati di attivazione possono essere utilizzati dagli operatori di marketing nei flussi di lavoro di targeting.
 
 ## File di autenticazione e configurazione {#authentication-configuration}
 
-L&#39;autenticazione è necessaria in quanto la pipeline è ospitata nell&#39;Adobe Experience Cloud.
-Se il server Marketing è ospitato in sede, quando accede alla pipeline, deve autenticarsi per disporre di una connessione protetta.
-Utilizza un paio di chiavi pubbliche e private. Questa procedura è la stessa funzione di utente/password, solo più sicura.
+L&#39;autenticazione è necessaria perché la pipeline è ospitata nell&#39;Adobe Experience Cloud.
+Utilizza un paio di chiavi pubbliche e private. Questa procedura ha la stessa funzione di utente/password ma è più sicura.
+L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto IO Adobe.
 
-### IMSOrgId {#imsorgid}
+## Passaggio 1: Creazione/aggiornamento  progetto IO Adobe {#creating-adobe-io-project}
 
-IMSOrgId è l’identificatore del cliente sull’Adobe Experience Cloud.
-Impostatelo nel file instance serverConf.xml, sotto l’attributo IMSOrgId.
-Esempio:
+Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token di account tecnici I/O di Adobe per l&#39;integrazione Triggers.
+
+Per i clienti interni, consultate la pagina [Configurazione di I/O Adobe per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Durante l&#39;aggiunta di API alla credenziale I/O del Adobe  è necessario selezionare **[!UICONTROL Adobe Analytics]** .
+
+## Passaggio 2: Configurazione dell&#39;opzione pipeline NmsPipeline_Config {#configuring-nmspipeline}
+
+Una volta impostata l&#39;autenticazione, la pipeline recupererà gli eventi. Vengono elaborati solo gli attivatori configurati in  Adobe Campaign. Il trigger deve essere stato generato da  Adobe Analytics e inviato alla pipeline che elaborerà solo gli attivatori configurati in  Adobe Campaign.
+L&#39;opzione può essere configurata anche con un carattere jolly per intercettare tutti i trigger, indipendentemente dal nome.
+
+1. In  Adobe Campaign, accedere al menu delle opzioni in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in **[!UICONTROL Explorer]**.
+
+1. Selezionate l’ **[!UICONTROL NmsPipeline_Config]** opzione.
+
+1. Nel **[!UICONTROL Value (long text)]** campo potete incollare il seguente codice JSON, che specifica due attivatori. È necessario assicurarsi di rimuovere i commenti.
+
+   ```
+   {
+   "topics": [ // list of "topics" that the pipelined is listening to.
+      {
+           "name": "triggers", // Name of the first topic: triggers.
+           "consumer": "customer_dev", // Name of the instance that listens.  This value can be found on the monitoring page of Adobe Campaign.
+           "triggers": [ // Array of triggers.
+               {
+                   "name": "3e8a2ba7-fccc-49bb-bdac-33ee33cf02bf", // TriggerType ID from Analytics 
+                   "jsConnector": "cus:triggers.js" // Javascript library holding the processing function.
+               }, {
+                   "name": "2da3fdff-13af-4c51-8ed0-05802a572e94", // Second TriggerType ID 
+                   "jsConnector": "cus:triggers.js" // Can use the same JS for all.
+               },
+           ]
+       }
+   ]
+   }
+   ```
+
+1. Potete anche scegliere di incollare il seguente codice JSON che cattura tutti i trigger.
+
+   ```
+   {
+   "topics": [
+     {
+       "name": "triggers",
+       "consumer":  "customer_dev",
+       "triggers": [
+         {
+           "name": "*",
+           "jsConnector": "cus:pipeline.js"
+         }
+       ]
+     }
+   ]
+   }
+   ```
+
+### Il parametro Consumer {#consumer-parameter}
+
+La tubazione funziona come un modello di fornitore e consumatore. I messaggi vengono consumati solo per un singolo consumatore: ogni consumatore riceve la propria copia dei messaggi.
+
+Il parametro **Consumer** identifica l’istanza come uno di questi consumatori. L&#39;identità dell&#39;istanza chiamerà la pipeline. Potete compilarlo con il nome dell&#39;istanza che si trova nella pagina Monitoraggio della console client.
+
+Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. L’utilizzo di consumatori diversi per diverse istanze consente di verificare che ogni messaggio venga inviato a ogni istanza.
+
+### Consigli sulle opzioni pipeline {#pipeline-option-recommendation}
+
+Per configurare l&#39;opzione pipeline, attenersi alle seguenti raccomandazioni:
+
+* Aggiungi o modifica attivatori in **[!UICONTROL Triggers]**, non devi modificare il resto.
+* Assicurati che il JSON sia valido. Potete utilizzare una funzione di convalida JSON, ad esempio fare riferimento a questo [sito Web](http://jsonlint.com/) .
+* &quot;name&quot; corrisponde all&#39;ID attivatore. Un carattere jolly &quot;*&quot; intercetta tutti i trigger.
+* &quot;Consumer&quot; corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
+* Pipeline supporta anche l&#39;argomento &quot;alias&quot;.
+* Dopo aver apportato le modifiche, riavviare sempre la pipeline.
+
+## Passaggio 3: Configurazione opzionale {#step-optional}
+
+È possibile modificare alcuni parametri interni in base ai requisiti di carico, ma assicurarsi di verificarli prima di metterli in produzione.
+
+L&#39;elenco dei parametri opzionali è riportato di seguito:
+
+| Opzione | Descrizione |
+|:-:|:-:|
+| appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione giuramento legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| authGatewayEndpoint(Legacy) | URL per ottenere token gateway. Predefinito: ```https://api.omniture.com``` |
+| authPrivateKey(Legacy) | La chiave privata, parte pubblica caricata nell’applicazione Legacy Oath, AES crittografata con l’opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| disableAuth(Legacy) | Disattiva l&#39;autenticazione. La connessione senza token gateway verrà accettata solo da alcuni endpoint pipeline di sviluppo. |
+| findPipelineEndpoint | URL per trovare l&#39;endpoint di Pipeline Services da utilizzare per questo tenant. Predefinito: ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | Il periodo tra due discariche del processo di stato interno nello stato ```var/INSTANCE/pipelined.json.``` <br> interno è accessibile anche su richiesta: ```http://INSTANCE:7781/pipelined/status``` |
+| forzatoPipelineEndpoint | Disabilitare il rilevamento di PipelineServicesEndpoint per forzarlo |
+| monitorServerPort | Il processo condotto sarà in ascolto su questa porta per fornire il processo di stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
+| puntatoreFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset verranno salvati nel database. <br> Il valore predefinito è 1000 |
+| puntatoreFlushPeriodSec | Dopo questo periodo, gli offset verranno salvati nel database. <br>Il valore predefinito è 5 (secondi) |
+| processingJSThread | Numero di messaggi di elaborazione thread dedicati con connettori JS personalizzati. <br> Il valore predefinito è 4 |
+| processingThread | Numero di messaggi di elaborazione thread dedicati con codice incorporato. <br>Il valore predefinito è 4 |
+| tryPeriodSec | Ritardo tra i tentativi in caso di errori di elaborazione. <br>Il valore predefinito è 30 (secondi) |
+| tryValiditySec | Ignora il messaggio se non è stato elaborato correttamente dopo questo periodo (troppi tentativi). <br>Il valore predefinito è 300 (secondi) |
+
+### Avvio automatico processo tubato {#pipelined-process-autostart}
+
+Il processo tubato deve essere avviato automaticamente.
+
+Per questo, impostate l&#39;elemento &lt; pipeline > nel file di configurazione su autostart=&quot;true&quot;:
 
 ```
-<redirection IMSOrgId="C5E715(…)98A4@AdobeOrg" (…)
+ <pipelined autoStart="true" ... "/>
 ```
 
-### Generazione di chiavi {#key-generation}
-
-La chiave è un paio di file. È in formato RSA e dura 4096 byte. Può essere generato con uno strumento open source come OpenSSL. Ogni volta che lo strumento viene eseguito, viene generata una nuova chiave in modo casuale.
-Per comodità, i passaggi sono elencati di seguito:
-
-* ```openssl genrsa -out <private_key.pem> 4096```
-
-* ```openssl rsa -pubout -in <private_key.pem> -out <public_key.pem>```
-
-Esempio di file private_key.pem:
-
-```
-----BEGIN RSA PRIVATE KEY----
-MIIEowIBAAKCAQEAtqcYzt5WGGABxUJSfe1Xy8sAALrfVuDYURpdgbBEmS3bQMDb
-(…)
-64+YQDOSNFTKLNbDd+bdAA+JoYwUCkhFyvrILlgvlSBvwAByQ2Lx
-----END RSA PRIVATE KEY----
-```
-
-Esempio di file public_key.pem:
-
-```
-----BEGIN PUBLIC KEY----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtqcYzt5WGGABxUJSfe1X
-(…)
-EwIDAQAB
-----END PUBLIC KEY----
-```
-
->[!NOTE]
->
->Le chiavi non devono essere generate da PuttyGen, OpenSSL è la scelta migliore.
-
-### Creazione di client di autenticazione in Adobe Experience Cloud {#oauth-client-creation}
-
-È necessario creare un&#39;applicazione di tipo JWT effettuando l&#39;accesso all&#39;Adobe Analytics  nell&#39;account organizzazione corretto in **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Legacy Oath application]**.
-
-Effettuate le seguenti operazioni:
-
-1. Seleziona **[!UICONTROL Service Account (JWT Assertion)]**.
-1. Inserire il **[!UICONTROL Application Name]**.
-1. Registra il **[!UICONTROL Public key]**.
-1. Selezionare l&#39;attivatore **[!UICONTROL Scopes]**.
-
-   ![](assets/triggers_5.png)
-
-1. Fate clic su **[!UICONTROL Create]** e controllate il **[!UICONTROL Application ID]** e **[!UICONTROL Application Secret]** create.
-
-   ![](assets/triggers_6.png)
-
-### Registrazione del nome dell&#39;applicazione in Adobe Campaign Classic {#application-name-registration}
-
-L&#39;ID applicazione del client Auth creato deve essere configurato in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo appName.
-
-Esempio:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Cifratura chiave {#key-encription}
-
-Per essere utilizzata da [!DNL pipelined], la chiave privata deve essere crittografata. La cifratura viene eseguita utilizzando la funzione cryptString Javascript e deve essere eseguita sulla stessa istanza di [!DNL pipelined].
-
-Un esempio di crittografia di chiave privata con JavaScript è disponibile in questa [pagina](../../integrations/using/pipeline-troubleshooting.md).
-
-La chiave privata crittografata deve essere registrata in  Adobe Campaign. Potete farlo modificando il file di configurazione dell&#39;istanza nell&#39; [!DNL pipelined] elemento, in particolare l&#39;attributo authPrivateKey.
-
-Esempio:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Avvio automatico processo tubato {#pipelined-auto-start}
-
-Il [!DNL pipelined] processo deve essere avviato automaticamente.
-Per eseguire questa operazione, impostate l’elemento nel file di configurazione su autostart=&quot;true&quot;:
-
-```
-<pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
-```
-
-### Riavvio processo tubato {#pipelined-restart}
-
-Può anche essere avviata manualmente utilizzando la riga di comando:
-
-```
-nlserver start pipelined@instance
-```
+### Riavvio processo tubato {#pipelined-process-restart}
 
 Per rendere effettive le modifiche è necessario riavviare il sistema:
 
@@ -171,23 +166,10 @@ Per rendere effettive le modifiche è necessario riavviare il sistema:
 nlserver restart pipelined@instance
 ```
 
-In caso di errori, cercate gli errori nell’output standard (se avviato manualmente) o nel file di [!DNL pipelined] registro. Per ulteriori informazioni sulla risoluzione dei problemi, consultare la sezione Risoluzione dei problemi del documento.
+## Passaggio 4: Convalida {#step-validation}
 
-### Opzioni di configurazione pipeline {#pipelined-configuration-options}
+Per convalidare la configurazione della pipeline per il provisioning, attenetevi alla procedura seguente:
 
-| Opzione | Descrizione |
-|:-:|:-:|
-| appName | ID dell’applicazione OAuth (ID applicazione) registrata in  Adobe Analytics (dove è stata caricata la chiave pubblica): Admin (Amministratore) > User Management (Gestione utente) > Legacy Oath application (Applicazione giurata legacy). Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
-| authGatewayEndpoint | URL per ottenere i &quot;token gateway&quot;. <br> Valore predefinito: https://api.omniture.com |
-| authPrivateKey | Chiave privata (parte pubblica caricata in  Adobe Analytics (consultare questa sezione). AES crittografato con l&#39;opzione XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
-| disableAuth | Disattiva autenticazione (la connessione senza token gateway è accettata solo da alcuni endpoint pipeline di sviluppo) |
-| findPipelineEndpoint | URL per scoprire l&#39;endpoint di Pipeline Services da utilizzare per questo tenant. Valore predefinito: https://producer-pipeline-pnw.adobe.net |
-| dumpStatePeriodSec | Il periodo compreso tra 2 discariche dello stato interno del processo nello stato var/INSTANCE/pipelined.json è accessibile anche on-demand all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
-| forzatoPipelineEndpoint | Disabilitare l&#39;individuazione di PipelineServicesEndpoint e forzarla |
-| monitorServerPort | Il [!DNL pipelined] processo è in ascolto di questa porta per fornire lo stato interno del processo all&#39;indirizzo http://INSTANCE/pipelined/status (porta 7781). |
-| puntatoreFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. Il valore predefinito è 1000 |
-| puntatoreFlushPeriodSec | Dopo questo periodo, gli offset verranno salvati nel database. Il valore predefinito è 5 (secondi) |
-| processingJSThread | Numero di messaggi di elaborazione thread dedicati con connettori JS personalizzati. Il valore predefinito è 4 |
-| processingThread | Numero di messaggi di elaborazione thread dedicati con codice incorporato. Il valore predefinito è 4 |
-| tryPeriodSec | Ritardo tra i tentativi (in presenza di errori di elaborazione). Il valore predefinito è 30 (secondi) |
-| tryValiditySec | Ignora il messaggio se non è stato elaborato correttamente dopo questo periodo (troppi tentativi). Il valore predefinito è 300 (secondi) |
+* Verificare che il [!DNL pipelined] processo sia in esecuzione.
+* Controllate i registri di connessione della pipeline nel file pipelining.log.
+* Verificare la connessione e se i ping sono ricevuti. I clienti ospitati possono utilizzare il monitoraggio dalla console client.
