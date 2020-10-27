@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 Questo capitolo descrive i vari possibili parametri avanzati in Interazione.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Il capitolo seguente è destinato agli amministratori **** tecnici.
 
@@ -33,4 +33,3 @@ Questo capitolo descrive i vari possibili parametri avanzati in Interazione.
 * La creazione di un ambiente di test è dettagliata nella sezione [Creazione di un ambiente](../../interaction/using/creating-a-test-environment.md) di test.
 * È possibile modificare il comportamento standard del motore utilizzando gli ganci. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
 * Infine, l&#39;utilizzo di Interaction con un&#39;architettura distribuita è descritto nella sezione [Architetture](../../interaction/using/distributed-architectures.md) distribuite.
-
