@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 4%
 
 ---
@@ -46,11 +46,11 @@ Per creare una categoria aggiuntiva, attenetevi alla seguente procedura:
 
    Quindi, in base alle esigenze, potete:
 
-   * assegnare le date di idoneità dalla **[!UICONTROL Eligibility]** scheda.
+   * Assegnare le date di idoneità dalla **[!UICONTROL Eligibility]** scheda.
 
       ![](assets/offer_cat_create_004.png)
 
-   * immettete le parole chiave che possono essere utilizzate per selezionare offerte dall&#39;interno di questa categoria, utilizzando il **[!UICONTROL Themes]** campo.
+   * Inserite le parole chiave che possono essere utilizzate per selezionare offerte dall&#39;interno di questa categoria, utilizzando il **[!UICONTROL Themes]** campo.
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ Per creare una categoria aggiuntiva, attenetevi alla seguente procedura:
       >
       >Quando si richiama il motore delle offerte, viene selezionata solo la parte del catalogo in cui i temi o le categorie corrispondono ai parametri.
 
-   * È possibile &quot;aumentare&quot; temporaneamente il peso dell&#39;offerta di una categoria per un determinato periodo tramite il **[!UICONTROL Multiplier weight]** campo.
+   * &quot;aumentare&quot; temporaneamente il peso dell&#39;offerta di una categoria per un dato periodo attraverso il **[!UICONTROL Multiplier weight]** campo.
 
       ![](assets/offer_cat_create_006.png)
 
