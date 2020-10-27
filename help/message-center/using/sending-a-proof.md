@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 8%
@@ -26,8 +26,8 @@ ht-degree: 8%
 
 L&#39;invio di una prova implica lo stesso processo previsto per una consegna regolare (per ulteriori informazioni, consultare [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)). Tuttavia, per inviare una prova all&#39;interno di Centro messaggi è necessario eseguire prima le seguenti operazioni:
 
-* creare uno o più indirizzi iniziali (fare riferimento a [Gestione degli indirizzi iniziali nei messaggi](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)transazionali) con dati di test (fare riferimento ai dati [di](../../message-center/using/personalization-data.md)personalizzazione),
-* create il contenuto del messaggio (consultate [Creazione del contenuto](../../message-center/using/creating-message-content.md)del messaggio).
+* Create uno o più indirizzi iniziali (consultate [Gestione degli indirizzi iniziali nei messaggi](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)transazionali) con i dati di test (consultate i dati [di](../../message-center/using/personalization-data.md)personalizzazione).
+* Crea il contenuto del messaggio (consulta [Creazione del contenuto](../../message-center/using/creating-message-content.md)del messaggio).
 
 Per inviare la prova:
 
