@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Esistono tre soglie diverse:
 
    * Lato Tomcat: tutte le query in arrivo sul client Adobe Campaign Tomcat .
 
-      Questa soglia è configurata nel file **nl6/tomcat-7/conf/server.xml** . L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
+      Questa soglia è configurata nel file **nl6/tomcat-8/conf/server.xml** . L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
