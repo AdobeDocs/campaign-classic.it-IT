@@ -1,8 +1,6 @@
 ---
-title: Installazione dei pacchetti standard di Campaign Classic
-seo-title: Installazione dei pacchetti standard di Campaign Classic
-description: Installazione dei pacchetti standard di Campaign Classic
-seo-description: null
+title: Installazione di pacchetti Campaign Classic incorporati
+description: Scopri come installare i pacchetti predefiniti per Campaign
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 6%
+source-wordcount: '1154'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +50,7 @@ I pacchetti ora sono installati.
 
 ### Elenco dei pacchetti out-of-the-box {#list-of-standard-packages}
 
-Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa descrizione, il tipo di istanza su cui possono essere installati (Marketing, Mid, ecc.) e informazioni aggiuntive.
+Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
 
 <table> 
  <thead> 
@@ -80,17 +78,17 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
   </tr> 
   <tr> 
    <td> Motore di offerta (interazione)<br /> </td> 
-   <td> Risponde in tempo reale durante un'interazione con un dato contatto (un cliente o un target), rendendogli una o più offerte adattate.  Facoltativo. <a href="../../interaction/using/interaction-and-offer-management.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Risponde in tempo reale durante un'interazione con un dato contatto (un cliente o un target), rendendogli una o più offerte adattate.  Facoltativo. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
    <td> Controllo del motore di offerta con istanza di esecuzione. Facoltativo.<br /> </td> 
-   <td> </td> 
+   <td> Pacchetto da installare sull'istanza di controllo per il motore di offerta (interazione). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Ulteriori informazioni</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
    <td> Motore di offerta per le istanze di esecuzione. Facoltativo.<br /> </td> 
-   <td> </td> 
+   <td> Pacchetto da installare sulle istanze di esecuzione per il motore di offerta (interazione). <a href="../../interaction/using/distributed-architectures.md">Ulteriori informazioni</a> </td> 
    <td> Mid, Execution <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integrazione dell'audience condivisa Adobe Marketing Cloud<br /> </td> 
+   <td> Integrazione dell'audience condivisa Adobe Experience Cloud<br /> </td> 
    <td> Consente di scambiare e condividere audience/segmenti con le soluzioni Adobe Experience Cloud e i servizi di base. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integrazione con Adobe Marketing Cloud<br /> </td> 
-   <td> Consente di importare ed esportare audience/segmenti da diverse soluzioni Adobe Marketing Cloud in  Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Consente di importare ed esportare audience/segmenti da diverse soluzioni Adobe Experience Cloud in  Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ Nella tabella seguente sono elencati tutti i pacchetti standard con la relativa 
    <td> Piattaforma di mid-sourcing<br /> </td> 
    <td> Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l'internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di "mid-sourcing" ospitato  Adobe Campaign. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Media-sourcing </td> 
+  </tr> 
+  <tr> 
+   <td> Supporto AMP<br /> </td> 
+   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e inviare e-mail dinamiche. Facoltativo. <a href="../../delivery/using/defining-interactive-content.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Tutto </td> 
   </tr> 
   <tr> 
    <td> Connettore ACS<br /> </td> 
