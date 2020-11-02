@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Definizione del contenuto interattivo{#defining-interactive-content}
 
- Adobe Campaign consente di provare il nuovo formato [AMP per e-mail](https://amp.dev/about/email/) interattivo, che consente di inviare e-mail dinamiche, a determinate condizioni.
+ Adobe Campaign consente di utilizzare il nuovo formato [AMP interattivo per e-mail](https://amp.dev/about/email/) , che consente di inviare e-mail dinamiche a determinate condizioni.
 
-Attualmente con AMP per e-mail potete:
+Con AMP per e-mail potete:
 * Test della distribuzione di e-mail AMP a indirizzi specifici configurati in modo appropriato.
 * Dopo la registrazione con i provider corrispondenti, inviate e-mail AMP agli indirizzi Gmail, Outlook o Mail.ru.
 
