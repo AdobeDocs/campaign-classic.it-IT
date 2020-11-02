@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 8f295058-5a78-4512-9bdf-d5f022457e10
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -22,20 +22,22 @@ ht-degree: 0%
 
 # Sharing audiences with Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
->[!NOTE]
->
->L&#39;utilizzo di questa integrazione richiede l&#39;implementazione di IMS. Consultate la sezione su [IMS](../../integrations/using/about-adobe-id.md).
-
- Adobe Campaign consente di scambiare e condividere audience/segmenti con le soluzioni e i servizi di base di Adobe Experience Cloud. A tal fine, è necessario integrare **Adobe Campaign** con il servizio **di base** Persone (noto anche come servizio **di base** Profili e pubblico) o Adobe Audience Manager. Potrete quindi:
-
-* Importa audience/segmenti condivisi da diverse soluzioni Adobe Experience Cloud in  Adobe Campaign. Le audience possono essere importate tramite elenchi in  Adobe Campaign.
-* Esportare gli elenchi sotto forma di audience condivise Adobe Experience Cloud. Queste audience possono essere utilizzate nelle diverse soluzioni Adobe Experience Cloud che utilizzate. Le audience possono essere esportate dopo il targeting in un flusso di lavoro, utilizzando un&#39;attività dedicata **[!UICONTROL Update shared audience]** .
-
 >[!CAUTION]
 >
->A seconda del tipo di dati, l&#39;importazione di audience in  Adobe Campaign potrebbe essere soggetta a restrizioni legali.
+>Per condividere i tipi di pubblico con le soluzioni Adobe Experience Cloud, è necessario implementare  Adobe  Identity Management System. [Ulteriori informazioni su IMS](../../integrations/using/about-adobe-id.md).
 
-L&#39;integrazione supporta due tipi di ID Adobe Experience Cloud:
+Con  Adobe Campaign, puoi condividere audience e segmenti con le soluzioni e i servizi di base di Adobe Experience Cloud. Sono disponibili due opzioni:
+
+1. Invia i dati dei segmenti Adobe Experience Platform a  Adobe Campaign. Per implementare questa integrazione, devi collegare la tua piattaforma dati cliente in tempo reale a Campaign (RTCDP). [Ulteriori informazioni in questa sezione](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+
+
+1. Integrare **Adobe Campaign** con il servizio **di base** Persone (noto anche come servizio **di base** Profili e pubblico) o Adobe Audience Manager. Potrete quindi:
+
+   * Importa audience/segmenti condivisi da diverse soluzioni Adobe Experience Cloud in  Adobe Campaign. Le audience possono essere importate tramite elenchi in  Adobe Campaign.
+
+   * Esportare gli elenchi sotto forma di audience condivise Adobe Experience Cloud. Queste audience possono essere utilizzate nelle diverse soluzioni Adobe Experience Cloud che utilizzate. Le audience possono essere esportate dopo il targeting in un flusso di lavoro, utilizzando un&#39;attività dedicata **[!UICONTROL Update shared audience]** .
+
+Questa integrazione supporta due tipi di ID Adobe Experience Cloud:
 
 * **ID** visitatore: questo tipo di identificatore riunisce i visitatori di Adobe Experience Cloud con  destinatari Adobe Campaign.
 * **ID** dichiarato: questo tipo di identificatore riunisce tutti i tipi di dati con gli elementi del database Adobe Campaign . È rappresentata in  Adobe Campaign come chiave di riconciliazione predefinita.
