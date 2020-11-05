@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite token JWT o autenticazione Auth, **devi passare  Adobe I/O come descritto di seguito**. Le modalità di autenticazione JWT e Auth ora sono obsolete. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis)
+>Se utilizzi una versione precedente dell&#39;integrazione Triggers attraverso l&#39;autenticazione Auth, **devi passare  I/O Adobe come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
