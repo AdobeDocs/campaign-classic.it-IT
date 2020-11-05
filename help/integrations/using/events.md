@@ -1,8 +1,6 @@
 ---
-title: Configurazione dell’integrazione
-seo-title: Configurazione dell’integrazione
-description: Configurazione dell’integrazione
-seo-description: null
+title: Configurazione degli eventi
+description: Scoprite come configurare gli eventi per l'implementazione personalizzata
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
 
-# Configurazione di eventi per l&#39;implementazione personalizzata {#events}
+# Configurazione di eventi per l’implementazione personalizzata {#events}
 
 Parti di questa configurazione sono uno sviluppo personalizzato e richiedono quanto segue:
 
@@ -28,9 +26,7 @@ Parti di questa configurazione sono uno sviluppo personalizzato e richiedono qua
 * Conoscenza operativa delle API QueryDef e Writer.
 * Nozioni di funzionamento di crittografia e autenticazione utilizzando chiavi private.
 
-Poiché la modifica del codice JS richiede competenze tecniche, non tentare di farlo senza la comprensione corretta.
-
-L&#39;ulteriore elaborazione degli eventi viene effettuata nell&#39;ambito del pacchetto ACX fornito al di fuori dell&#39;implementazione predefinita. L&#39;evento ricevuto viene elaborato immediatamente utilizzando il codice JavaScript. Viene salvata in una tabella di database senza ulteriore elaborazione in tempo reale. Le attivazioni vengono utilizzate per il targeting tramite un flusso di lavoro della campagna che invia e-mail. La campagna è configurata in modo che il cliente che ha attivato l&#39;evento riceva un&#39;e-mail.
+Poiché la modifica del codice Javascript richiede competenze tecniche, non tentare senza la comprensione corretta.
 
 ## Eventi di elaborazione in JavaScript {#events-javascript}
 
@@ -40,7 +36,7 @@ Pipeline utilizza una funzione JavaScript per elaborare ciascun messaggio. Quest
 
 È configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione sotto l&#39;attributo &quot;JSConnector&quot;. Questo javascript viene chiamato ogni volta che viene ricevuto un evento. È gestito dal [!DNL pipelined] processo.
 
-Il file JS di esempio è cus:triggers.js.
+Il file Javascript di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
@@ -58,7 +54,7 @@ Deve restituire come
 <undefined/>
 ```
 
-Riavviare [!DNL pipelined] dopo la modifica del JS.
+Riavviate [!DNL pipelined] dopo la modifica del codice JavaScript.
 
 ### Attiva formato dati {#trigger-format}
 
@@ -136,7 +132,7 @@ A scopo di debug e monitoraggio, i dati di attivazione completi sono scritti nel
 
 ### Analisi dei dati {#data-parsing}
 
-Questo esempio di codice JS analizza il  eVar01 negli arricchimenti.
+Questo esempio di codice Javascript analizza il  eVar01 negli arricchimenti.
 
 ```
 function processPipelineMessage(xmlTrigger)
