@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 87%
 
 Hai bisogno di assistenza mentre lavori con Campaign Classic? Leggi le 10 domande più comuni riportate di seguito e altre domande frequenti in quella pagina. Puoi inoltre:
 
-* [Video di esercitazione](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html)
+* [Video tutorial](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html)
 * [Opzioni di supporto autonomo](../../platform/using/tutorials.md#how-to-videos)
-* [Leggi la sezione iniziale e casi d’uso](../../platform/using/tutorials.md#step-by-step-guides)
-* Non trovi la risposta? [Chiedi all&#39;esperto](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* Hai bisogno di supporto? [Consulta la Guida e le opzioni di supporto per le campagne](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Leggi l’introduzione e i casi d’uso](../../platform/using/tutorials.md#step-by-step-guides)
+* Non trovi la risposta? [Chiedi all’esperto](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+* Hai bisogno di supporto? [Consulta la Guida e le opzioni di supporto per Campaign](https://helpx.adobe.com/it/campaign/kb/ac-support.html#acc-support)
 
 ## 1. Come posso aggiornare Campaign alla versione più recente? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
@@ -34,7 +34,7 @@ Hai bisogno di assistenza mentre lavori con Campaign Classic? Leggi le 10 domand
 
 Se utilizzi Adobe Managed Services, puoi usufruire dell’aggiornamento Gold Standard di Campaign. Per ulteriori informazioni a riguardo, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
-[Leggi questa sezione](../../production/using/build-upgrade.md) per apprendere come aggiornare l&#39;ambiente e leggi [Domande](../../platform/using/faq-build-upgrade.md) comuni su questo argomento specifico.
+[Consulta questa sezione](../../production/using/build-upgrade.md) per scoprire come aggiornare il tuo ambiente e leggi le [Domande comuni](../../platform/using/faq-build-upgrade.md) su questo argomento specifico.
 
 ## 2. Cos’è il flusso di lavoro di pulizia del database? {#what-is-the-database-cleanup-workflow-}
 
@@ -72,7 +72,7 @@ Puoi ottenere l’elenco di tutti i sistemi e i componenti supportati per la bui
 
 Puoi accedere alle note sulla versione più recente di Campaign Classic [su questa pagina](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
+## 9. Qual è la procedura per la configurazione del dominio? {#what-is-the-procedure-for-domain-delegation-}
 
 Un sottodominio è una divisione del dominio che può essere utilizzata per isolare i brand o vari tipi di traffico (messaggi transazionali, informazioni di marketing, ecc.).
 Adobe prende in considerazione il DNS (Domain Name System) per la consegna delle e-mail, il che consente al cliente di mantenere l’immagine del proprio brand utilizzando un alias DNS con i relativi nomi di dominio e ad Adobe di implementare autonomamente tutte le best practice tecniche che consentono di ottimizzare il recapito messaggi durante l’invio delle e-mail.
