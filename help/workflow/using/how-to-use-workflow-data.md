@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -108,7 +108,7 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
 1. Generate una coppia di chiavi GPG (pubblica/privata) utilizzando un&#39;utility GPG, quindi installate la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella documentazione [dell&#39;](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)Pannello di controllo Campaign.
 
-1. In Campaign Classic, genera un flusso di lavoro per esportare i dati ed esportarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
+1. In Campaign Classic, creare un flusso di lavoro per esportare i dati e cifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -147,4 +147,3 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
 1. Ora puoi eseguire il flusso di lavoro. Una volta eseguita, la destinazione dei dati dalla query verrà esportata nel server SFTP in un file .gpg crittografato.
 
-   ![](assets/gpg-sftp-encrypt.png)
