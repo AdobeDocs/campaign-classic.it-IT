@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 translation-type: tm+mt
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 0%
@@ -272,8 +272,6 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
    ![](assets/gpg_generate.png)
 
 1. Nel sistema esterno, utilizzare la chiave pubblica scaricata dal Pannello di controllo Campaign per cifrare i dati da importare in Campaign Classic.
-
-   ![](assets/gpg_external.png)
 
 1. In Campaign Classic, creare un flusso di lavoro per importare i dati crittografati e decifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 
