@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1444'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
    <tr>
   <td>Connettori SMS<br></td>
-  <td><p> A partire dalla release Campaign 20.2, i seguenti connettori SMS sono obsoleti.<p>
+  <td><p> A partire dalla versione Campaign 20.2, i seguenti connettori SMS sono diventati obsoleti.<p>
    <ul>
    <li>NetSize</li>
    <li>SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)</li>
@@ -66,7 +66,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
  </tr>
   <tr>  
    <td>Canale fax<br></td>
-   <td><p>A partire dalla release Campaign 20.2, il canale Fax è diventato obsoleto.</p> 
+   <td><p>A partire dalla versione Campaign 20.2, il canale fax è diventato obsoleto.</p> 
    <p>Se utilizzi questo canale, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a> sui canali di Campaign.</p>
    <p><em>Data effettiva di rimozione: 2021</em></p></td>
   </tr>
@@ -129,10 +129,10 @@ I seguenti sistemi sono obsoleti per Campaign Classic. Consulta la [Matrice di c
 
 ### Adobe Campaign versione 20.2 {#compat-20-2-release}
 
-A partire dalla versione 20.2, i seguenti sistemi sono obsoleti per Campaign Classic. La compatibilità terminerà con la release 20.3 - ottobre 2020.
+A partire dalla versione 20.2, per Campaign Classic i seguenti sistemi operativi sono diventati obsoleti. La compatibilità terminerà con la versione 20.3 a ottobre 2020.
 
 * Console del client: Windows 7
-* Connettori SMS precedenti - vedere Funzioni [obsolete](#deprecated-features)
+* Connettori SMS legacy - consulta [Funzioni obsolete](#deprecated-features)
 * DB2 UDB 10.5 per Federated Data Access (FDA)
 
 ### Adobe Campaign versione 19.2 {#compat-19-2-release}
