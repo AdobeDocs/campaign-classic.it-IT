@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 91%
+source-wordcount: '2151'
+ht-degree: 99%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 91%
 + [Documentazione del prodotto](campaign-classic-home.md)
 + [Ultimi aggiornamenti](rn/using/documentation-updates.md)
 + Note sulla versione {#release-notes}
-   + [Guida introduttiva agli aggiornamenti](rn/using/rn-overview.md)
+   + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
    + [Ultima versione](rn/using/latest-release.md)
-   + Gold Standard Release {#gs-release}
-      + [Note sulla versione di Gold Standard](rn/using/gold-standard.md)
-      + [Matrice compatibilità standard Gold](rn/using/compatibility-matrix-gs.md)
+   + Versione Gold Standard {#gs-release}
+      + [Note sulla versione Gold Standard](rn/using/gold-standard.md)
+      + [Matrice di compatibilità Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Versioni precedenti {#previous-releases}
       + [Versione 20.2](rn/using/release--20-2.md)
       + [Versione 20.1](rn/using/release--20-1.md)
@@ -38,14 +38,14 @@ ht-degree: 91%
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
 + Guida introduttiva {#getting-started}
    + Introduzione ad Adobe Campaign {#starting-with-adobe-campaign}
-      + [Guida introduttiva ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+      + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Avvio di Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Area di lavoro di Adobe Campaign](platform/using/adobe-campaign-workspace.md)
       + Domande frequenti {#faq}
          + [Domande comuni](platform/using/common-questions.md)
          + [Concetti chiave](platform/using/faq-key-concepts.md)
-         + [Aggiornamento build](platform/using/faq-build-upgrade.md)
+         + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
          + [Pubblici](platform/using/faq-audiences.md)
          + [Progettare messaggi](platform/using/faq-designing.md)
          + [Inviare messaggi](platform/using/faq-messages.md)
@@ -53,7 +53,7 @@ ht-degree: 91%
          + [Configurazione](platform/using/faq-campaign-config.md)
          + [Rapporti](platform/using/faq-reporting.md)
          + [Sviluppo](platform/using/faq-developers.md)
-      + [Esercitazioni](platform/using/tutorials.md)
+      + [Tutorial](platform/using/tutorials.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modifica di un profilo](platform/using/editing-a-profile.md)
@@ -83,7 +83,7 @@ ht-degree: 91%
    + Accesso a un database esterno (FDA){#accessing-external-database}
       + [Informazioni sull’FDA](platform/using/about-fda.md)
       + [Configurazione dei connettori FDA](platform/using/specific-configuration-database.md)
-      + [Connettori precedenti](platform/using/legacy-connectors.md)
+      + [Connettori legacy](platform/using/legacy-connectors.md)
       + [Diritti di accesso al database remoto](platform/using/remote-database-access-rights.md)
       + [Connessione al database](platform/using/connecting-to-database.md)
       + [Creazione dello schema dati](platform/using/creating-data-schema.md)
@@ -95,15 +95,15 @@ ht-degree: 91%
       + [Connettori di gestione delle relazioni con i clienti](platform/using/crm-connectors.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Invio di messaggi {#sending-messages}
-   + [Guida introduttiva ai messaggi](delivery/using/communication-channels.md)
-   + Best practice di distribuzione {#delivery-bestpractices}
+   + [Introduzione ai messaggi](delivery/using/communication-channels.md)
+   + Best practice di consegna{#delivery-bestpractices}
       + [Scopri le buone pratiche](delivery/using/delivery-best-practices.md)
-      + [Ottimizzazione della distribuzione](delivery/using/optimize-delivery.md)
+      + [Ottimizzare la consegna](delivery/using/optimize-delivery.md)
       + [Utilizzare i modelli](delivery/using/use-templates.md)
-      + [Creazione di contenuti personalizzati](delivery/using/design-and-personalize.md)
+      + [Creare contenuti personalizzati](delivery/using/design-and-personalize.md)
       + [Definire il pubblico adatto](delivery/using/define-the-right-audience.md)
-      + [Controlla prima dell&#39;invio](delivery/using/check-before-sending.md)
-      + [Monitoraggio e monitoraggio](delivery/using/track-and-monitor.md)
+      + [Controllare prima dell’invio](delivery/using/check-before-sending.md)
+      + [Tracciare e monitorare](delivery/using/track-and-monitor.md)
    + Passaggi chiave durante la creazione di una consegna {#key-steps-when-creating-a-delivery}
       + [Introduzione alle consegne](delivery/using/steps-about-delivery-creation-steps.md)
       + [Creazione e identificazione della consegna](delivery/using/steps-create-and-identify-the-delivery.md)
@@ -123,8 +123,8 @@ ht-degree: 91%
    + Invio di notifiche push {#sending-push-notifications}
       + [Informazioni sul canale app mobile](delivery/using/about-mobile-app-channel.md)
       + [Integrazione dell’SDK Campaign nell’app mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + Configuring the mobile application{#configure-the-mobile-app}
-         + [Guida introduttiva alla configurazione dell&#39;app](delivery/using/get-started-app-config.md)
+      + Configurazione dell’app mobile{#configure-the-mobile-app}
+         + [Introduzione alla configurazione dell’app](delivery/using/get-started-app-config.md)
          + [Passaggi di configurazione per iOS](delivery/using/configuring-the-mobile-application.md)
          + [Passaggi di configurazione per Android](delivery/using/configuring-the-mobile-application-android.md)
       + [Creazione di notifiche](delivery/using/creating-notifications.md)
@@ -271,7 +271,7 @@ ht-degree: 91%
       + [Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Progettazione di contenuto web {#designing-content}
    + Applicazioni web {#web-applications}
-      + [Guida introduttiva alle applicazioni Web](web/using/about-web-applications.md)
+      + [Introduzione alle applicazioni Web](web/using/about-web-applications.md)
       + [Creazione di una nuova applicazione web](web/using/creating-a-new-web-application.md)
       + [Progettazione di un’applicazione web](web/using/designing-a-web-application.md)
       + [Casi di utilizzo: creazione di panoramiche](web/using/use-cases--creating-overviews.md)
@@ -310,39 +310,39 @@ ht-degree: 91%
 + Integrazione con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Informazioni sulle integrazioni di Campaign](integrations/using/about-campaign-integrations.md)
    + Condivisione del pubblico {#audience-sharing}
-      + [Condivisione di audience con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Condivisione di tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Invio di una richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Configurazione dell&#39;integrazione dell&#39;audience condivisa in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Configurazione dell’integrazione dei pubblici condivisi in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Risoluzione dei problemi](integrations/using/troubleshooting.md)
       + [Importazione ed esportazione di pubblici](integrations/using/importing-and-exporting-audiences.md)
    + Condivisione di risorse {#asset-sharing}
       + [Condivisione delle risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Configurazione dell&#39;accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [Configurazione dell’accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Inserimento di una risorsa condivisa](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Informazioni su [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurazione dell’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creazione di [!DNL Experience Manager] una newsletter](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creazione di una [!DNL Experience Manager] newsletter](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Integrazione con [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [Configurazione dell&#39;integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Configurazione dell’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserimento di un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + Collegamento tramite un Adobe ID {#connecting-via-an-adobe-id}
       + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configurazione [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Configurazione della [!DNL IMS]](integrations/using/configuring-ims.md)
       + [Implementazione [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Risoluzione dei problemi di IMS](integrations/using/ims-troubleshooting.md)
    + Connettore ACS {#acs-connector}
-      + [[!DNL ACS Connector] principi e ciclo dei dati](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + Principi e ciclo dei dati di [[!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzazione dei profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzazione dei pubblici](integrations/using/synchronizing-audiences.md)
       + [Sincronizzazione delle applicazioni web](integrations/using/synchronizing-web-applications.md)
-      + [Risoluzione dei problemi [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Risoluzione dei problemi di  [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Trigger di Experience Cloud {#experience-triggers}
-      + [Informazioni su [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Guida introduttiva [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurazione della pipeline](integrations/using/configuring-pipeline.md)
       + [Configurazione  I/O Adobe per Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)
-      + [Configurazione di eventi per l&#39;implementazione personalizzata](integrations/using/events.md)
+      + [Configurazione di eventi per l’implementazione personalizzata](integrations/using/events.md)
       + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
       + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
 + Automazione con flussi di lavoro {#automating-with-workflows}
@@ -439,7 +439,7 @@ ht-degree: 91%
          + [Creazione di un elenco di riepilogo](workflow/using/creating-a-summary-list.md)
          + [Arricchimento dei dati](workflow/using/enriching-data.md)
          + [Utilizzo di aggregati](workflow/using/using-aggregates.md)
-         + [Aggiornamento dell&#39;elenco trimestrale tramite una query incrementale](workflow/using/quarterly-list-update.md)
+         + [Aggiornamento dell’elenco trimestrale tramite una query incrementale](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
          + [Query della tabella dei destinatari](workflow/using/querying-recipient-table.md)
          + [Query delle informazioni di consegna](workflow/using/querying-delivery-information.md)
@@ -483,7 +483,7 @@ ht-degree: 91%
       + [Trasferisci a mid-sourcing](workflow/using/transfer-to-mid-sourcing.md)
       + [Piattaforma di mid-sourcing](workflow/using/mid-sourcing-platform.md)
 + Gestione delle offerte {#managing-offers}
-   + Introduzione all&#39;interazione {#interaction-overview}
+   + Introduzione all’interazione {#interaction-overview}
       + [Gestione dell’interazione e dell’offerta](interaction/using/interaction-and-offer-management.md)
       + [Glossario](interaction/using/glossary.md)
       + [Best practice di interazione](interaction/using/interaction-best-practices.md)
@@ -535,7 +535,7 @@ ht-degree: 91%
       + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
 + Messaggistica transazionale {#transactional-messaging}
    + Introduzione {#introduction}
-      + [Introduzione ai messaggi transazionali](message-center/using/about-transactional-messaging.md)
+      + [Introduzione alla messaggistica transazionale](message-center/using/about-transactional-messaging.md)
       + [Architettura della messaggistica transazionale](message-center/using/transactional-messaging-architecture.md)
       + [Descrizione di un evento](message-center/using/event-description.md)
    + Configurazione di un’istanza {#instance-configuration}
@@ -603,13 +603,13 @@ ht-degree: 91%
       + [Distribuzione aziendale](installation/using/enterprise-deployment.md)
       + [Distribuzione mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster e Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campaign on Windows {#installing-campaign-in-windows-}
-      + [Prima di installare Campaign in Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Campaign su Windows {#installing-campaign-in-windows-}
+      + [Prima di installare Campaign su Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installazione del server](installation/using/installing-the-server.md)
       + [Integrazione in un server web per Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Disponibilità della console del client per Windows](installation/using/client-console-availability-for-windows.md)
       + [Installazione della console del client](installation/using/installing-the-client-console.md)
-   + Campaign on Linux  {#installing-campaign-in-linux-}
+   + Campaign su Linux  {#installing-campaign-in-linux-}
       + [Prima di installare Campaign su Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installazione di pacchetti con Linux](installation/using/installing-packages-with-linux.md)
       + [Integrazione in un server web per Linux](installation/using/integration-into-a-web-server-for-linux.md)
@@ -659,7 +659,7 @@ ht-degree: 91%
    + Aggiornamento di Adobe Campaign {#updating-adobe-campaign}
       + [Introduzione](production/using/introduction.md)
       + [Esecuzione di un aggiornamento della build](production/using/build-upgrade.md)
-      + [Procedura di aggiornamento (in sede)](production/using/upgrading.md)
+      + [Procedura di aggiornamento (on-premise)](production/using/upgrading.md)
       + [Passaggio a Unicode](production/using/switching-to-unicode.md)
       + [Procedure di migrazione](production/using/migration-procedures.md)
    + Manutenzione del database {#database-maintenance}
