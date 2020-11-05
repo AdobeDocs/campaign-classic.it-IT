@@ -10,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -47,8 +47,8 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><strong>Sostituzione</strong></td>
   </tr>
   <tr>
-  <td>Connettori CRM<br></td>
-   <td><p>A partire dalla release Campaign 20.3, i seguenti connettori CRM sono obsoleti:</p>
+  <td>Connettori di gestione delle relazioni con i clienti<br></td>
+   <td><p>A partire dalla versione Campaign 20.3, i seguenti connettori di gestione delle relazioni con i clienti sono diventati obsoleti:</p>
    <ul>
    <li>API Soap - On-premise: 2007, 2015, 2016</li>
    <li>API Soap - Online: 2015, 2016</li>
@@ -59,29 +59,29 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </td>
  </tr>
   <tr>
-  <td>binario legacy iOS<br></td>
-  <td><p>A partire dalla release Campaign 20.3, il connettore binario legacy iOS è obsoleto.<p>
-  <p> Se si utilizza questo connettore, è necessario adattare l'implementazione di conseguenza.
-  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">Ulteriori informazioni</a></p>
+  <td>iOS legacy binario<br></td>
+  <td><p>A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto.<p>
+  <p> Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione.
+ <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-http2.html">Ulteriori informazioni</a></p>
   <p><em>Data effettiva di rimozione: 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Dominio demdex<br></td>
-  <td><p> A partire dalla versione di Campaign 20.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico nell'Adobe Experience Cloud è obsoleto.<p>
-  <p>Se utilizzate il dominio demdex per gli account esterni di importazione/esportazione, dovete adattare di conseguenza l'implementazione. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
+  <td><p> A partire dalla versione di Campaign 20.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto.<p>
+  <p>Se utilizzi il dominio demdex per l’importazione/esportazione degli account esterni, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
   <p><em>Data effettiva di rimozione: 2021</em></p>
   </td>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
-  <td><p> A partire dalla versione di Campaign 20.3, l'autenticazione dell'integrazione attivata originariamente in base alla configurazione dell'autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata nell'I/O  Adobe. <p>
-  <p>Se utilizzi l’integrazione Triggers, devi adattare di conseguenza la tua implementazione. <a href="../../integrations/using/about-triggers.md">Ulteriori informazioni</a></p> 
-  <p>Per ulteriori informazioni sull'ammortamento autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <p><em>Data di rimozione destinazione: Aprile 2021</em></p>
+  <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger originariamente basata sulle impostazioni OAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. <p>
+  <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
+  <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
+  <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
   </tr>
   <td>Connettori SMS<br></td>
-  <td><p> A partire dalla release Campaign 20.2, i seguenti connettori SMS sono obsoleti.<p>
+  <td><p> A partire dalla versione Campaign 20.2, i seguenti connettori SMS sono diventati obsoleti.<p>
    <ul>
    <li>NetSize</li>
    <li>SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)</li>
@@ -98,7 +98,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
  </tr>
   <tr>  
    <td>Canale fax<br></td>
-   <td><p>A partire dalla release Campaign 20.2, il canale Fax è diventato obsoleto.</p> 
+   <td><p>A partire dalla versione Campaign 20.2, il canale fax è diventato obsoleto.</p> 
    <p>Se utilizzi questo canale, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a> sui canali di Campaign.</p>
    <p><em>Data effettiva di rimozione: 2021</em></p></td>
   </tr>
@@ -117,7 +117,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   </tr> 
    <tr> 
    <td>Autenticazione Windows NT<br></td>
-   <td><p>A partire dalla versione di Campaign 20.3, l'autenticazione di Windows NT è stata rimossa dai metodi di autenticazione disponibili durante la configurazione di un nuovo database con Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Ulteriori informazioni</a></p></td>
+   <td><p>A partire dalla versione 20.3 di Campaign, l’autenticazione con Windows NT è stata rimossa dai metodi di autenticazione disponibili per la configurazione di un nuovo database con Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Ulteriori informazioni</a></p></td>
   </tr>
    <tr> 
    <td>Archiviazione di e-mail basata su file<br></td>
@@ -165,7 +165,7 @@ I seguenti sistemi sono obsoleti per Campaign Classic. Consulta la [Matrice di c
 
 ### Adobe Campaign versione 20.2 {#compat-20-2-release}
 
-A partire dalla release 20.2, i connettori SMS precedenti sono obsoleti. Vedere Sezione Funzioni [obsolete](#deprecated-features)
+A partire dalla versione 20.2, i seguenti connettori legacy SMS sono diventati obsoleti. Consulta la [sezione Funzioni obsolete](#deprecated-features)
 
 ## Fine della compatibilità {#end-of-compatibility}
 
@@ -188,7 +188,7 @@ A partire dalla release 20.2, i connettori SMS precedenti sono obsoleti. Vedere 
 
 A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.
 
-* CentOS 6 [Per saperne di più](https://wiki.centos.org/Download)
+* CentOS 6 [Ulteriori informazioni](https://wiki.centos.org/Download)
 * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
@@ -216,7 +216,7 @@ Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di co
 
 **FEDERATED DATA ACCESS (FDA)**
 
-A partire dalla versione 20.2,  Adobe Campaign non è più compatibile con il seguente server FDA:
+A partire dalla versione 20.2, Adobe Campaign non è più compatibile con i seguenti server FDA:
 
 * DB2 UDB 10.5
 
