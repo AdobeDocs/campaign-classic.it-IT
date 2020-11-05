@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3905'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 
 ## Ottobre 2020 {#oct-2020}
 
-**Nuove funzionalità incluse nella release 20.3**
+**Nuove funzionalità incluse nella versione 20.3**
 
 Miglioramenti delle notifiche push per iOS - [Leggi tutto](../../delivery/using/configuring-the-mobile-application.md)
 
@@ -41,45 +41,45 @@ La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../r
 Le note sulla versione e la matrice di compatibilità per la versione Gold Standard sono ora disponibili in una sezione dedicata.
 [Ulteriori informazioni](../../rn/using/gold-standard.md#gs-10).
 
-L&#39;integrazione Triggers originariamente basata sulla configurazione dell&#39;autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata  I/O Adobe. [Leggi tutto](../../integrations/using/about-triggers.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
 **Altri aggiornamenti**
 
-Le pagine della documentazione sono state aggiornate per riflettere l&#39;aggiornamento Tomcat 8.
+Le pagine della documentazione sono state rinnovate per riflettere l’aggiornamento Tomcat 8.
 
-I dettagli sono stati aggiunti nella descrizione della casella &#39;Informazioni su&#39; nella sezione &#39;Ottenere la versione Adobe Campaign &#39;. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+Sono stati aggiunti dettagli nella descrizione della casella “Informazioni su” nella sezione “Ottenere la versione corretta di Adobe Campaign”. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Le linee guida per eseguire un aggiornamento della build sono state aggiunte alla sezione &#39;Aggiornamento Adobe Campaign Classic&#39;. Leggi tutto [Leggi tutto](../../production/using/build-upgrade.md)
+Nella sezione “Aggiornamento Adobe Campaign Classic” sono state aggiunte le linee guida per eseguire un aggiornamento della build. Leggi tutto [Leggi tutto](../../production/using/build-upgrade.md)
 
-Domande frequenti sull&#39;aggiornamento della build di Campaign sono state aggiunte alle domande più frequenti su Campaign. Leggi tutto [Leggi tutto](../../platform/using/faq-build-upgrade.md)
+Alle domande comuni su Campaign è stata aggiunta una sezione di domande frequenti sull’aggiornamento della build. Leggi tutto [Leggi tutto](../../platform/using/faq-build-upgrade.md)
 
-I modelli di hosting on-premise, ospitati e ibridi per le campagne sono ora descritti in una sezione dedicata. [Leggi tutto](../../installation/using/hosting-models.md)
+Ora è presente una sezione dedicata dove sono descritti i modelli di Campaign on-premise, in hosting e ibridi. [Leggi tutto](../../installation/using/hosting-models.md)
 
-La matrice delle funzionalità della campagna per modello di hosting è stata aggiornata e spostata nella guida all&#39;installazione. [Leggi tutto](../../installation/using/capability-matrix.md)
+La matrice delle funzionalità di Campaign per il modello in hosting è stata aggiornata e spostata nella Guida all’installazione. [Leggi tutto](../../installation/using/capability-matrix.md)
 
-La sezione sulle funzionalità avanzate di Report delle campagne è stata migliorata per specificare come utilizzare i parametri URL e le variabili nei rapporti personalizzati. [Leggi tutto](../../reporting/using/advanced-functionalities.md)
+La sezione sulle funzionalità avanzate di reportistica delle campagne è stata migliorata con l’aggiunta di specifiche su come utilizzare i parametri URL e le variabili nei report personalizzati. [Leggi tutto](../../reporting/using/advanced-functionalities.md)
 
 La pagina delle proprietà del report è stata riorganizzata e arricchita per facilitare la configurazione. [Leggi tutto](../../reporting/using/properties-of-the-report.md)
 
-È stata creata una nuova nota tecnica con dettagli sulla migrazione dal protocollo binario legacy all&#39;API provider APN basata su HTTP/2. [Leggi tutto](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+È stata creata una nuova nota tecnica con dettagli su come migrare dal protocollo binario legacy all’API APNs provider basata su HTTP/2. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
 ## Settembre 2020 {#september-2020}
 
 È stata aggiunta una nota per specificare che il conteggio dei profili attivi è disponibile solo per le istanze Marketing. [Leggi tutto](../../platform/using/about-profiles.md#active-profiles)
 
-È stato aggiunto un nuovo esempio sull&#39;edizione dello schema per collegare un campo a una tabella di riferimento esistente. [Leggi tutto](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+È stato aggiunto un nuovo esempio sull’utilizzo dell’editor dello schema per collegare un campo a una tabella di riferimento esistente. [Leggi tutto](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-È stata aggiunta una nota relativa all&#39;utilizzo di dati aggiuntivi con indirizzi iniziali nelle consegne. [Leggi tutto](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+È stata aggiunta una nota relativa all’utilizzo di dati aggiuntivi con indirizzi iniziali nelle consegne. [Leggi tutto](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## Agosto 2020 {#aug-2020}
 
-Scopri le best practice relative alla progettazione e all&#39;invio di contenuti con Campaign in una sezione dedicata. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
+Un’intera sezione è dedicata alla scoperta delle best practice relative alla progettazione e all’invio di contenuti con Campaign. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
-La pagina di destinazione Best practice per la distribuzione è stata migliorata per facilitare l’accesso alle sottosezioni. [Leggi tutto](../../delivery/using/deliverability-key-points.md)
+La pagina di destinazione Best practice per il recapito di messaggi è stata migliorata per facilitare l’accesso alle sottosezioni. [Leggi tutto](../../delivery/using/deliverability-key-points.md)
 
-I video introduttivi sono ora disponibili sui seguenti argomenti:
+Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
-* [Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign/using/about-campaign-typologies.md)
+* [Come impostare la gestione dell’affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign/using/about-campaign-typologies.md)
 
 * [Come creare un messaggio e-mail in una campagna](../../campaign/using/marketing-campaign-deliveries.md)
 
@@ -93,40 +93,40 @@ I video introduttivi sono ora disponibili sui seguenti argomenti:
 
 * [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
 
-* [Come gestire sementi e prove in un&#39;e-mail](../../delivery/using/steps-defining-the-target-population.md)
+* [Come gestire seed e bozze in un’e-mail](../../delivery/using/steps-defining-the-target-population.md)
 
 * [Come impostare una consegna ricorrente](../../workflow/using/recurring-delivery.md)
 
 * [Come impostare una consegna continua](../../workflow/using/continuous-delivery.md)
 
-Sono state aggiunte informazioni sui controlli e sulle azioni da eseguire quando viene visualizzato l&#39;errore &quot;Impossibile risolvere il nome host&quot; dopo la connessione a un server FTP. [Leggi tutto](../../platform/using/sftp-server-usage.md)
+Sono state aggiunte informazioni sui controlli e sulle azioni da eseguire quando viene visualizzato l’errore “Impossibile risolvere il nome host” dopo la connessione a un server FTP. [Leggi tutto](../../platform/using/sftp-server-usage.md)
 
-Nell’elenco dei casi di utilizzo del [flusso di lavoro è stato fatto riferimento a nuovi casi](../../workflow/using/about-workflow-use-cases.md)di utilizzo:
+Nell’elenco dei [casi di utilizzo del flusso di lavoro](../../workflow/using/about-workflow-use-cases.md) sono stati inseriti nuovi esempi:
 
-* Automazione della creazione, edizione e pubblicazione di contenuti
-* Impostazione di un processo di approvazione del destinatario prima dell&#39;invio
+* Automazione di creazione, edizione e pubblicazione di contenuti
+* Impostazione di un processo di approvazione del destinatario prima di avviare una consegna
 * Chiamata di una variabile di istanza in una query
 * Applicazione di una percentuale divisa su una popolazione
 
-La sezione **[!UICONTROL AND-join]** Attività è stata arricchita da informazioni aggiuntive sull&#39;utilizzo di questa funzionalità, nonché da una nota sull&#39;utilizzo delle variabili. [Leggi tutto](../../workflow/using/and-join.md)
+La sezione **[!UICONTROL AND-join]** Attività è stata arricchita da informazioni aggiuntive sull’utilizzo, nonché da una nota sull’impiego delle variabili. [Leggi tutto](../../workflow/using/and-join.md)
 
 ## Luglio 2020 {#july-2020}
 
-Ai casi di utilizzo del flusso di lavoro è stato aggiunto un caso di utilizzo per l’aggiornamento automatico di un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
+Ai casi di utilizzo del flusso di lavoro è stato aggiunto un esempio che spiega come aggiornare in automatico un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
-Le note [di](../../rn/using/latest-release.md) rilascio sono state riorganizzate: è stata aggiunta una pagina [di](../../rn/using/latest-release.md) panoramica con informazioni sugli stati di creazione, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata per le release [](../../rn/using/gold-standard.md) Gold Standard e la matrice [di](../../rn/using/compatibility-matrix.md) compatibilità è stata integrata.
+Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle [release Gold Standard](../../rn/using/gold-standard.md) ed è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
-È stata aggiunta una nuova sezione con linee guida relative al monitoraggio Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
+È stata aggiunta una nuova sezione con le linee guida relative al monitoraggio di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
-La sezione Privacy e Consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md).
+La sezione Privacy e consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md).
 
-La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo &#39;regolamentazione&#39; che ora è disponibile quando si utilizza l&#39;API che consente di configurare il processo di richiesta della privacy automatica. [Leggi tutto](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo “regolamentazione” che ora è disponibile quando si utilizza l’API per configurare il processo automatico di richiesta di accesso a dati personali. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 La Panoramica sulla Gestione della privacy è stata aggiornata con informazioni sulla Legge tailandese sulla protezione dei dati personali (PDPA) e sulla Lei Geral de Proteção de Dados (LGPD) brasiliana. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
-Sono state aggiunte informazioni sui registri dei flussi di lavoro secondari e sul comportamento in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
+Sono state aggiunte informazioni sui registri e sul comportamento dei flussi di lavoro secondari in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
-Le best practice sono state aggiunte nella sezione **[!UICONTROL Scheduler]** Attività. [Leggi tutto](../../workflow/using/scheduler.md)
+Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTROL Scheduler]**. [Leggi tutto](../../workflow/using/scheduler.md)
 
 ## Giugno 2020 {#june-2020}
 
@@ -134,11 +134,11 @@ La sezione Rimozione di un indirizzo in quarantena è stata aggiornata. Ciò inc
 
 Sono stati aggiunti casi di utilizzo su come [cifrare](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) e [decrittare](../../workflow/using/importing-data.md#use-case-gpg-decrypt) dati tramite il Pannello di controllo Campaign e i flussi di lavoro di Campaign.
 
-The Experience Cloud Triggers and Adobe Campaign Classic integration page has been moved [here](../../integrations/using/about-triggers.md).
+La pagina di integrazione dei trigger di Experience Cloud e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
 
-## july 2020 {#release-20-2}
+## luglio 2020 {#release-20-2}
 
-**Nuove funzionalità incluse nella release 20.2**
+**Nuove funzionalità incluse nella versione 20.2**
 
 Supporto delle emoticon. [Leggi tutto](../../delivery/using/customizing-emoticon-list.md)
 
@@ -225,7 +225,7 @@ La sezione Archiviazione di e-mail è stata migliorata. [Leggi tutto](../../inst
 
 ## Gennaio 2020 {#release-20-1}
 
-**Nuove funzionalità incluse nella release 20.1**
+**Nuove funzionalità incluse nella versione 20.1**
 
 Connettore FDA Snowflake. [Leggi tutto](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
@@ -293,7 +293,7 @@ La pagina della matrice dei diritti di accesso è stata spostata [qui](https://d
 
 La sezione che descrive come definire il contenuto interattivo con AMP è stata spostata. [Leggi tutto](../../delivery/using/defining-interactive-content.md)
 
-**Nuove funzionalità incluse nella release 19.2**
+**Nuove funzionalità incluse nella versione 19.2**
 
 California Consumer Privacy Act (CCPA). [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html)
 
@@ -365,7 +365,7 @@ Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e con
 
 ## Maggio 2019 {#release-19-1}
 
-**Nuove funzionalità incluse nella release 19.1**
+**Nuove funzionalità incluse nella versione 19.1**
 
 Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
@@ -407,7 +407,7 @@ La documentazione sulla Gestione delle offerte è stata aggiornata con una nuova
 
 La sezione Attività del flusso di lavoro secondario è stata migliorata con un esempio di utilizzo. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
-La pagina della matrice [delle funzionalità](../../installation/using/capability-matrix.md) Campaign Classic locale e ospitata è stata aggiornata con le informazioni relative a Ccn e-mail.
+La pagina della [matrice delle funzionalità per Campaign Classic on-premise e in hosting](../../installation/using/capability-matrix.md) è stata aggiornata con le informazioni relative al campo CCN dell’e-mail.
 
 La documentazione relativa alla messaggistica transazionale è stata aggiornata con una nota riguardante la pubblicazione di modelli. [Leggi tutto](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
