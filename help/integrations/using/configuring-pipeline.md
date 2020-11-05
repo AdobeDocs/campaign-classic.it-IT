@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ L&#39;utilizzo [!DNL Experience Cloud Triggers] in Campaign richiede:
 
 Le configurazioni preliminari sono:
 
-*  autenticazione progetto IO Adobe
+*  autenticazione progetto I/O Adobe
 * IMSOrgId, l’identificatore del cliente del Experience Cloud  con  aggiunto Adobe Analytics.
 * Il team di provisioning deve disporre dei privilegi di amministratore di sistema per l&#39;organizzazione IMS del cliente
 * Configurazione degli attivatori in  Adobe Analytics.
@@ -48,13 +48,13 @@ Le configurazioni preliminari sono:
 
 L&#39;autenticazione è necessaria perché la pipeline è ospitata nell&#39;Adobe Experience Cloud.
 Utilizza un paio di chiavi pubbliche e private. Questa procedura ha la stessa funzione di utente/password ma è più sicura.
-L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto IO Adobe.
+L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto I/O Adobe.
 
-## Passaggio 1: Creazione/aggiornamento  progetto IO Adobe {#creating-adobe-io-project}
+## Passaggio 1: Creazione/aggiornamento  progetto I/O Adobe {#creating-adobe-io-project}
 
-Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token di account tecnici I/O di Adobe per l&#39;integrazione Triggers.
+Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici I/O di Adobe per l&#39;integrazione Triggers.
 
-Per i clienti interni, consultate la pagina [Configurazione di I/O Adobe per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Durante l&#39;aggiunta di API alla credenziale I/O del Adobe  è necessario selezionare **[!UICONTROL Adobe Analytics]** .
+Per i clienti interni, consultate la pagina [Configurazione  I/O Adobe per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Durante l&#39;aggiunta di API alla credenziale I/O del Adobe  è necessario selezionare **[!UICONTROL Adobe Analytics]** .
 
 ## Passaggio 2: Configurazione dell&#39;opzione pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
