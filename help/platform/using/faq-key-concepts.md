@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Verifica il [numero della versione e della build](../../platform/using/launching
 
 ## Quali sono le differenze quando si lavora on-premise rispetto a un ambiente in hosting? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
- Adobe Campaign Classic include una serie di moduli e opzioni. The availability of these modules and their configuration can depend on the [type of deployment](../../installation/using/hosting-models.md) of your installation: hosted (Managed Services), hybrid or on-premise.
+ Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di tali moduli e la loro configurazione possono dipendere dal [tipo di distribuzione](../../installation/using/hosting-models.md) dell’installazione: in hosting (Managed Services), ibrida oppure on-premise.
 
 [Fai clic qui per ulteriori informazioni](../../installation/using/capability-matrix.md).
 
@@ -65,7 +65,7 @@ Consulta [questo documento](https://helpx.adobe.com/it/campaign/kb/campaign-priv
 
 Consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md) per ulteriori informazioni sulle nozioni di base sull’area di lavoro di Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri lo spazio di lavoro della campagna nel video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Come posso selezionare il pubblico dei miei messaggi? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -87,7 +87,7 @@ Un flusso di lavoro può inoltre coinvolgere uno o più operatori da avvisare o 
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questo in un video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Come si inviano i messaggi SMS? {#how-to-send-sms-messages-}
 
