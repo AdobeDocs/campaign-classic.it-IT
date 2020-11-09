@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
 workflow-type: tm+mt
 source-wordcount: '2956'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
 
 ## Creazione di consegne {#creating-deliveries}
 
