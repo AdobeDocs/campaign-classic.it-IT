@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Documentazione di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 78%
+source-wordcount: '274'
+ht-degree: 77%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 78%
 
 ## Novità
 
-* **[Aggiornamento dell&#39;integrazione](integrations/using/configuring-adobe-io.md)**<br/>di Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  I/O Adobe.
+* **[Aggiornamento dell&#39;integrazione](integrations/using/configuring-adobe-io.md)**<br/> di Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  I/O Adobe.
 
-* **[Passa all&#39;API](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> provider APN basato su HTTP/2008Scopri come migrare dal protocollo binario legacy all&#39;API del provider APN basata su HTTP/2.
+* **[Passaggio all&#39;API](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> del provider APN basata su HTTP/2008 Informazioni sulla migrazione dal protocollo binario legacy all&#39;API del provider APN basata su HTTP/2.
 
-* **[Aggiungere icone ai messaggi](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>È ora possibile inserire icone nei messaggi e nell’oggetto
+* **[Aggiungere icone ai messaggi](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> È ora possibile inserire icone nei messaggi e nell’oggetto
 
 * **[Ottenere assistenza](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/>
 Accedi a domande frequenti, best practice e risorse di assistenza e richiedi assistenza
@@ -29,7 +29,7 @@ Accedi a domande frequenti, best practice e risorse di assistenza e richiedi ass
 * **[Funzionalità di tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html)**<br/>
 Comprendi le funzionalità e i processi di tracking in Campaign
 
-[Fai clic qui per ulteriori aggiornamenti](/help/rn/using/documentation-updates.md)
+[Altri aggiornamenti](/help/rn/using/documentation-updates.md)
 
 ## Pagine principali
 
