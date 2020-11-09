@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: bdc09e1b6e037e1b21573b8624a947e30f8ad1fc
+source-git-commit: 48176ebb19689855f3ee5e61fa6492be5a682291
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 5%
@@ -77,7 +77,6 @@ Potete aggiungere tutte le connessioni necessarie per collegarvi ai vostri ambie
 >[!NOTE]
 >
 >Il **[!UICONTROL Add]** pulsante consente di creare **[!UICONTROL folders]** per organizzare tutte le connessioni. È sufficiente trascinare ogni connessione in una cartella.
-
 
 ## Accedere a  Adobe Campaign
 
