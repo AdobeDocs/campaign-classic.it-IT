@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
@@ -175,10 +175,10 @@ A questo scopo, eseguite il comando seguente:
 >
 >* Lo script potrebbe essere denominato **httpd** invece di **apache**.
 >* È NECESSARIO eseguire questo comando fino a ottenere la seguente risposta:
-   >Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
 
->
-
+   >
+   >   
+   Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
 
 
 Quindi riavviate Apache:
