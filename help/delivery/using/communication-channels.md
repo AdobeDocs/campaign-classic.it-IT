@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 Con  Adobe Campaign, puoi inviare campagne tra canali, inclusi e-mail, SMS, messaggi LINE, notifiche push e indirizzi diretti, e misurarne l&#39;efficacia utilizzando vari [rapporti](../../reporting/using/delivery-reports.md)dedicati. Questi messaggi sono progettati e inviati tramite le consegne e possono essere personalizzati per ogni destinatario.
 
-Le funzionalità principali includono il targeting, la definizione e la personalizzazione dei messaggi, l&#39;esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Questo punto di accesso porta a diverse funzionalità coperte da  Adobe Campaign.
+Le funzionalità principali includono il targeting, la definizione e la personalizzazione dei messaggi, l&#39;esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Questo punto di accesso porta a molteplici funzionalità coperte da  Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ L&#39;invio può essere automatizzato mediante la preparazione di una consegna e
 
    >[!NOTE]
    >
-   >L’utilizzo di più canali dipende dal pacchetto. Controlla il contratto di licenza.
+   >Il numero di canali disponibili dipende dal contratto. Controlla il contratto di licenza.
 
 Le consegne possono essere effettuate **online** (tramite e-mail, uno dei canali mobili e notifiche push) e **offline** (canale di posta diretta).
 
