@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui flussi di lavoro
-description: Automatizza i processi con flussi di lavoro, gestisci dati e audience, invia messaggi e molto altro.
+description: Automatizza i processi con i flussi di lavoro, gestisci dati e tipi di pubblico, invia messaggi e altro ancora.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 20%
 
 ---
 
@@ -32,9 +32,9 @@ I flussi di lavoro si verificano in vari contesti e fasi del processo di gestion
 
  Adobe Campaign utilizza i flussi di lavoro per:
 
-* Eseguire campagne di targeting. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Creare campagne: per ogni campagna, la **[!UICONTROL Workflow]** scheda consente di creare la destinazione e creare le consegne. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Eseguire processi tecnici: pulizia, raccolta delle informazioni di tracciamento o calcoli provvisori. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Eseguire campagne di targeting. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* Creare campagne: per ogni campagna, la **[!UICONTROL Workflow]** scheda consente di creare la destinazione e creare le consegne. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Eseguire processi tecnici: pulizia, raccolta delle informazioni di tracciamento o calcoli provvisori. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Un flusso di lavoro può significare sia una definizione del processo (il modello del flusso di lavoro, che è una rappresentazione di ciò che dovrebbe accadere) che un&#39;istanza di questo processo (un&#39;istanza del flusso di lavoro, che è una rappresentazione di ciò che sta effettivamente accadendo).
 
