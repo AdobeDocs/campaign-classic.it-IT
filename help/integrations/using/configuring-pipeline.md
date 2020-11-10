@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 4f949d8db3aa3082acf1765bf66080b270cc6db4
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 ## Prerequisiti {#prerequisites}
 
-Prima di avviare la configurazione, verificare di disporre di:
+Prima di avviare la configurazione, verificare che:
 
-* una versione recente di  Adobe Campaign (20.2.1 e versioni successive),
+*  rilascio minimo di Adobe Campaign 20.3
 *  versione Adobe Analytics Standard
 
 Sarà inoltre necessario:
