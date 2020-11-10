@@ -1,8 +1,6 @@
 ---
 title: Flusso di lavoro di consegna cross-channel
-seo-title: Flusso di lavoro di consegna cross-channel
-description: Flusso di lavoro di consegna cross-channel
-seo-description: null
+description: Ulteriori informazioni sui flussi di lavoro per la distribuzione tra canali
 page-status-flag: never-activated
 uuid: 02d51b13-656f-48f3-b744-5968ffa94b3e
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 2fe907da-ef37-46e2-a8fb-6ad4e18be486
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
