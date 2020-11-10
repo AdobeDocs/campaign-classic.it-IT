@@ -1,8 +1,6 @@
 ---
 title: Workflow HeatMap
-seo-title: Workflow HeatMap
-description: Workflow HeatMap
-seo-description: null
+description: Monitorate i flussi di lavoro delle campagne con Workflow HeatMap
 page-status-flag: never-activated
 uuid: 4d215ff4-a61d-4294-8f15-17c612022577
 contentOwner: sauviat
@@ -12,17 +10,17 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 5%
+source-wordcount: '1328'
+ht-degree: 3%
 
 ---
 
 
 # Workflow HeatMap {#workflow-heatmap}
 
-La Workflow HeatMap di Adobe Campaign consiste in una rappresentazione grafica codificata per colori di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
+ Adobe Campaign Workflow HeatMap consiste in una rappresentazione grafica con colori diversi di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per gli amministratori di istanza.
 
 In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
 
