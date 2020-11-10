@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
+source-git-commit: 160af30e13bb6a81672477f4f801dbd5cc3c767c
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Se utilizzi una versione precedente dell&#39;integrazione Triggers attraverso l&#39;autenticazione Auth, **devi passare  I/O Adobe come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
+>Se utilizzi una versione precedente dell&#39;integrazione Triggers attraverso l&#39;autenticazione Auth, **devi passare  I/O Adobe come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
