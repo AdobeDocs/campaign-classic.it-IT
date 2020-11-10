@@ -1,8 +1,6 @@
 ---
 title: Codice SQL e codice JavaScript
-seo-title: Codice SQL e codice JavaScript
-description: Codice SQL e codice JavaScript
-seo-description: null
+description: Ulteriori informazioni sulle attività del flusso di lavoro relative ai codici SQL e JavaScript
 page-status-flag: never-activated
 uuid: 20a39bbf-c6b0-4697-97b4-c07609cfb048
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 1afa75c2-7377-4d03-9105-11bcc9e3206c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 9%
+source-wordcount: '200'
+ht-degree: 5%
 
 ---
 
