@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: 7af0d17450ea2bee757e54dd4861f11ad023b700
 workflow-type: tm+mt
-source-wordcount: '3905'
-ht-degree: 99%
+source-wordcount: '3924'
+ht-degree: 98%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 99%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Novembre 2020 {#nov-2020}
+
+La sezione Privacy è stata spostata e arricchita con due nuove sezioni: [Gestione](../../platform/using/privacy-management.md) della privacy e [gestione delle richieste](../../platform/using/privacy-requests.md)di privacy.
 
 ## Ottobre 2020 {#oct-2020}
 
