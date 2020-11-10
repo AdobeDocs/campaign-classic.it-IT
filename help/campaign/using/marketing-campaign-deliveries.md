@@ -1,8 +1,6 @@
 ---
 title: Distribuzione di campagne di marketing
-seo-title: Distribuzione di campagne di marketing
-description: Distribuzione di campagne di marketing
-seo-description: Ulteriori informazioni sulle consegne delle campagne di marketing
+description: Ulteriori informazioni sulle consegne delle campagne di marketing
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 2%
+source-wordcount: '2917'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,9 @@ ht-degree: 2%
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
 
-![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
+Una volta create da una campagna, le consegne saranno collegate a questa campagna e consolidate a livello di campagna.
+
+![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#create-email-video)
 
 ## Creazione di consegne {#creating-deliveries}
 
@@ -32,29 +32,21 @@ Per creare una consegna collegata a una campagna, fate clic sul **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-Le configurazioni consigliate sono adatte ai diversi tipi di distribuzione: posta diretta, e-mail, canali mobili.
-
->[!NOTE]
->
->Per ulteriori informazioni sulla creazione e la configurazione delle consegne, consulta la sezione [Invio di messaggi](../../delivery/using/steps-about-delivery-creation-steps.md) .
+Le configurazioni consigliate sono adatte ai diversi tipi di distribuzione: posta diretta, e-mail, canali mobili. [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Selezione della popolazione di destinazione {#selecting-the-target-population}
 
-Per ogni consegna, il manager della campagna definirà:
+Per ogni consegna puoi definire:
 
-* L&#39;obiettivo principale. Per ulteriori informazioni, vedere [Creazione della destinazione principale in un flusso di lavoro](#building-the-main-target-in-a-workflow) e [Selezione della popolazione](#selecting-the-target-population)di destinazione.
-* Gruppo di controllo. Per ulteriori informazioni, vedere [Definizione di un gruppo](#defining-a-control-group)di controllo.
-* Gli indirizzi seed. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
+* Il pubblico: ulteriori informazioni sulla [creazione del pubblico in un flusso di lavoro](#building-the-main-target-in-a-workflow) e sulla [selezione della popolazione](#selecting-the-target-population)di destinazione.
+* Un gruppo di controllo - Ulteriori informazioni sulla [definizione di un gruppo](#defining-a-control-group)di controllo.
+* Indirizzi dei semi - Ulteriori informazioni in [questa sezione](../../delivery/using/about-seed-addresses.md).
 
-Alcune di queste informazioni vengono ereditate dal modello.
+Alcune di queste informazioni possono essere ereditate dal [modello](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
->[!NOTE]
->
->I modelli delle campagne sono presentati nei modelli [delle](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
+Per generare la destinazione di consegna, potete definire criteri di filtraggio per i destinatari nel database. Questa modalità di selezione destinatari viene presentata in [questa sezione](../../delivery/using/steps-defining-the-target-population.md).
 
-Per generare la destinazione di consegna, potete definire criteri di filtraggio per i destinatari nel database. Questa modalità di selezione del destinatario viene presentata nella sezione [Invio di messaggi](../../delivery/using/steps-defining-the-target-population.md) .
-
-### Esempio: consegna a un gruppo di destinatari {#example--delivering-to-a-group-of-recipients}
+**Esempio: inviare messaggi a un gruppo**
 
 È possibile importare una popolazione in un elenco, quindi eseguire il targeting di tale elenco nelle consegne.
 
@@ -68,24 +60,15 @@ Per generare la destinazione di consegna, potete definire criteri di filtraggio 
 
 ![](assets/s_user_target_group_next.png)
 
-### Creazione della destinazione principale in un flusso di lavoro {#building-the-main-target-in-a-workflow}
+### Creazione dell&#39;audience in un flusso di lavoro {#building-the-main-target-in-a-workflow}
 
-La destinazione principale di una consegna può essere definita anche nel flusso di lavoro di targeting: questo ambiente grafico consente di creare una destinazione utilizzando query, test e operatori: unione, deduplicazione, condivisione, ecc.
-
-La guida [Automazione con i flussi di lavoro](../../workflow/using/architecture.md) include una descrizione dettagliata del funzionamento del modulo del flusso di lavoro.
+La destinazione principale di una consegna può essere definita anche nel flusso di lavoro di targeting: questo ambiente grafico consente di creare una destinazione utilizzando query, test e operatori: unione, deduplicazione, condivisione, ecc. [Ulteriori informazioni](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->Nella stessa campagna, non potete impostare più di 28 flussi di lavoro. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
+>Non potete creare più di 28 flussi di lavoro in una campagna. Oltre questo limite, i flussi di lavoro aggiuntivi non sono visibili nell&#39;interfaccia e possono generare errori.
 
-### Come creare un messaggio e-mail in una campagna {#create-email-video}
-
-In questo video viene illustrato come creare una campagna e un messaggio e-mail in Adobe Campaign Classic.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### Creazione di un flusso di lavoro di targeting {#creating-a-targeting-workflow}
+#### Creare il flusso di lavoro {#creating-a-targeting-workflow}
 
 Il targeting può essere creato tramite una combinazione di condizioni di filtraggio in una sequenza grafica in un flusso di lavoro. Potete creare popolazioni e sottopopolazioni che verranno indirizzate in base alle vostre esigenze. Per visualizzare l’editor del flusso di lavoro, fate clic sulla **[!UICONTROL Targeting and workflows]** scheda nel dashboard della campagna.
 
@@ -124,7 +107,7 @@ Potete creare diversi flussi di lavoro di targeting per una singola campagna. Pe
 1. Selezionate il **[!UICONTROL New workflow]** modello e denominate il flusso di lavoro.
 1. Fate clic **[!UICONTROL OK]** per confermare la creazione del flusso di lavoro, quindi create il diagramma per il flusso di lavoro.
 
-#### Esecuzione di un flusso di lavoro {#executing-a-workflow}
+#### Esecuzione del flusso di lavoro {#executing-a-workflow}
 
 I flussi di lavoro di targeting possono essere avviati manualmente tramite il **[!UICONTROL Start]** pulsante nella barra degli strumenti, a condizione che disponiate dei diritti appropriati.
 
@@ -275,7 +258,7 @@ Questa configurazione è equivalente a un&#39;attività di condivisione nel flus
 
 ## Avvio di una consegna {#starting-a-delivery}
 
-Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne tramite e-mail o canali mobili, consultate [Avvio di una consegna](#starting-an-online-delivery)online e per le consegne tramite posta diretta, consultate [Avvio di una consegna](#starting-an-offline-delivery)offline.
+Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne tramite e-mail o canali mobili, consultate [Avvio di una consegna](#starting-an-online-delivery)online e, per le consegne tramite posta diretta, consultate [Avvio di una consegna](#starting-an-offline-delivery)offline.
 
 ### Avvio di una consegna online {#starting-an-online-delivery}
 
@@ -476,3 +459,9 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 >[!NOTE]
 >
 >Per ulteriori informazioni sulle esportazioni, consultare la sezione [Guida introduttiva](../../platform/using/generic-imports-and-exports.md) .
+
+#### Come creare un messaggio e-mail in una campagna {#create-email-video}
+
+In questo video viene illustrato come creare una campagna e un messaggio e-mail in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
