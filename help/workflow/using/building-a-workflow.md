@@ -1,8 +1,6 @@
 ---
 title: Creazione di un flusso di lavoro
-seo-title: Creazione di un flusso di lavoro
-description: Creazione di un flusso di lavoro
-seo-description: null
+description: Scopri come creare un flusso di lavoro
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -28,7 +26,7 @@ Questa sezione descrive i principi chiave e le procedure ottimali per creare un 
 * Progettare il diagramma del flusso di lavoro, vedere [Aggiunta e collegamento di attività](#adding-and-linking-activities)
 * Accedere ai parametri e alle proprietà delle attività, vedere [Configurazione delle attività](#configuring-activities)
 * Progettazione di flussi di lavoro di targeting, vedi Flussi di lavoro [di targeting](#targeting-workflows)
-* Utilizza il flusso di lavoro per eseguire una campagna, vedi Flussi di lavoro [campagna](#campaign-workflows)
+* Utilizza i flussi di lavoro per eseguire una campagna, vedi Flussi di lavoro [campagna](#campaign-workflows)
 * Accesso e creazione di flussi di lavoro tecnici, consulta Flussi di lavoro [tecnici](#technical-workflows)
 * Utilizzare i modelli per creare flussi di lavoro, vedere Modelli di [flusso di lavoro](#workflow-templates)
 
@@ -145,13 +143,13 @@ I flussi di lavoro di targeting possono essere creati e modificati tramite il **
 
 I flussi di lavoro di targeting nel quadro di una campagna vengono memorizzati con tutti i flussi di lavoro delle campagne.
 
-### Passaggi di implementazione {#implementation-steps-}
+### Passaggi chiave per creare un flusso di lavoro di targeting {#implementation-steps-}
 
-Le fasi di generazione dei dati di destinazione sono le seguenti:
+I passaggi per creare un flusso di lavoro di targeting sono descritti in dettaglio nelle seguenti sezioni:
 
-1. Per identificare i dati nel database, fare riferimento a [Creazione di query](../../workflow/using/targeting-data.md#creating-queries).
-1. Per preparare i dati in base alle esigenze di consegna, fare riferimento a [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
-1. Per utilizzare i dati per eseguire aggiornamenti o per eseguire una consegna, fare riferimento a [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
+1. **Identificare** i dati nel database - Vedere [Creazione di query](../../workflow/using/targeting-data.md#creating-queries)
+1. **Preparare** i dati per soddisfare le esigenze di distribuzione - Vedere [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Utilizzare** i dati per eseguire aggiornamenti o all&#39;interno di una consegna - Vedere [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 I risultati di tutti gli arricchimenti e tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili in campi di personalizzazione, in particolare per la creazione di messaggi personalizzati. For more on this, refer to [Target data](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ Per ogni campagna, puoi creare flussi di lavoro da eseguire dalla **[!UICONTROL 
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-Questa scheda contiene le stesse attività di tutti i flussi di lavoro. Sono presentati nella sezione [Implementazione](#implementation-steps-) .
+Questa scheda contiene le stesse attività di tutti i flussi di lavoro. [Ulteriori informazioni](#implementation-steps-)
 
-Oltre alle campagne di targeting, i flussi di lavoro delle campagne consentono di creare e configurare le consegne per tutti i canali disponibili. Una volta creati nel flusso di lavoro, questi invii sono disponibili dal dashboard della campagna.
+Oltre alle campagne di targeting, i flussi di lavoro delle campagne consentono di creare e configurare le consegne per tutti i canali disponibili. Una volta creati nel flusso di lavoro, questi invii sono disponibili dal dashboard della campagna. [Ulteriori informazioni](../../campaign/using/marketing-campaign-deliveries.md)
 
 Tutti i flussi di lavoro delle campagne sono centralizzati sotto il **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** nodo.
 
 ![](assets/campaigns_wf.png)
 
-I flussi di lavoro delle campagne e gli esempi di implementazione sono descritti in dettaglio in questa [pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+I flussi di lavoro delle campagne e gli esempi di implementazione sono descritti in [questa pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Flussi di lavoro tecnici {#technical-workflows}
 
@@ -205,7 +203,7 @@ La **[!UICONTROL Campaign process]** sottocartella centralizza i flussi di lavor
 
 Puoi creare altri flussi di lavoro tecnici nel **[!UICONTROL Administration > Production > Technical workflows]** nodo della struttura ad albero. Tuttavia, questo processo è riservato agli utenti esperti.
 
-Le attività offerte sono le stesse che per i flussi di lavoro di targeting. For more on this, refer to [Implementation steps](#implementation-steps-).
+Le attività offerte sono le stesse che per i flussi di lavoro di targeting. [Ulteriori informazioni](#implementation-steps-)
 
 ## Modelli per flussi di lavoro {#workflow-templates}
 
