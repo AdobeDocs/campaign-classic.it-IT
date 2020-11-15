@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 Questa sezione descrive i passaggi preliminari per le configurazioni necessari prima di installare  Adobe Campaign.
 
-La configurazione tecnica e software necessaria per l&#39;installazione  Adobe Campaign è dettagliata nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
+La configurazione tecnica e software necessaria per l&#39;installazione  Adobe Campaign è dettagliata nella matrice [di](../../rn/using/compatibility-matrix.md)compatibilità.
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
-* Apache, fare riferimento a [Matrice](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)di compatibilità,
+* Apache, fare riferimento a [Matrice](../../rn/using/compatibility-matrix.md)di compatibilità,
 * Java JDK e OpenJDK, fare riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Librerie, fare riferimento a [Librerie](#libraries),
 * livelli di accesso al database, fare riferimento ai livelli [di accesso al](#database-access-layers)database,
@@ -169,7 +169,7 @@ Con CentOS sono necessarie le seguenti configurazioni:
 
 I livelli di accesso per il motore di database utilizzato devono essere installati sul server e accessibili tramite l&#39;account Adobe Campaign . Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
-La versione pilota supportata è dettagliata nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
+La versione pilota supportata è dettagliata nella matrice [di](../../rn/using/compatibility-matrix.md)compatibilità.
 
 Consultare anche la sezione [Database](../../installation/using/database.md) generale.
 
