@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -41,7 +41,7 @@ Per i client ospitati e ibridi, il rendering della Casella in entrata è configu
 Per le installazioni locali, seguite i passaggi descritti di seguito per configurare il rendering Inbox.
 
 1. Installate il **[!UICONTROL Inbox rendering (IR)]** pacchetto dal **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** menu. Per ulteriori informazioni, consultate [Installazione di pacchetti](../../installation/using/installing-campaign-standard-packages.md)Campaign Classic standard.
-1. Configurate un account esterno del tipo HTTP tramite il nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Per ulteriori informazioni, consultate [Creazione di un account](../../platform/using/external-accounts.md#creating-an-external-account)esterno.
+1. Configurate un account esterno del tipo HTTP tramite il nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . Per ulteriori informazioni, consultate [Creazione di un account](../../installation/using/external-accounts.md#creating-an-external-account)esterno.
 1. Impostate i parametri del conto esterno come segue:
    * **[!UICONTROL Label]**: Informazioni sul server di distribuzione
    * **[!UICONTROL Internal name]**: deliverabilityInstance
