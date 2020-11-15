@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 8%
@@ -35,7 +35,7 @@ _07 febbraio 2020_
 
 _02 dicembre 2019_
 
-**Novità?**
+**Novità**
 
 <table> 
  <thead> 
@@ -107,7 +107,7 @@ _02 dicembre 2019_
 
 * Ottimizzazione del consumo di memoria per le notifiche push.
 * Per l&#39;ottimizzazione delle prestazioni e dell&#39;archiviazione, è stata migliorata la gestione del file **logins.log** . Ora il file viene suddiviso in più file, uno ogni giorno con un massimo di 365 file conservati. [Leggi tutto](../../production/using/log-files.md)
-* È ora possibile configurare l&#39;account esterno di Microsoft Dynamics CRM utilizzando le credenziali della password (password + nome utente) o il certificato (chiave privata). [Leggi tutto](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* È ora possibile configurare l&#39;account esterno di Microsoft Dynamics CRM utilizzando le credenziali della password (password + nome utente) o il certificato (chiave privata). [Leggi tutto](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Sono stati aggiunti alcuni miglioramenti al connettore FDA Hadoop per migliorare l&#39;affidabilità
 * È stato aggiunto un particolare carrello per controllare lo spazio su disco prima di consentire il caricamento di risorse pubbliche sul server.
 * Sono state aggiunte nuove opzioni [](../../installation/using/configuring-campaign-options.md) campagna:
