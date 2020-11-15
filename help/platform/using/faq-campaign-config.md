@@ -10,10 +10,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '759'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -59,11 +59,11 @@ Campaign ti consente di impostare processi di approvazione per i passaggi princi
 
 Adobe Campaign offre l’opzione Federated Data Access (FDA) per elaborare le informazioni archiviare in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
 
-[Fai clic qui per ulteriori informazioni](../../platform/using/connecting-to-database.md).
+[Fai clic qui per ulteriori informazioni](../../installation/using/connecting-to-database.md).
 
 ## A quali database esterni posso collegare Campaign? {#which-external-databases-can-i-connect-campaign-to-}
 
-I database esterni compatibili con Campaign tramite Federated Data Access (FDA) sono elencati nella [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+I database esterni compatibili con Campaign tramite Federated Data Access (FDA) sono elencati nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 ## Adobe Campaign può integrarsi con il protocollo LDAP? {#can-adobe-campaign-integrate-with-ldap-}
 
