@@ -1,6 +1,6 @@
 ---
-title: Informazioni sul modello dati Adobe Campaign Classic
-description: Scopri come estendere il modello dati di Campaign, modificare gli schemi, utilizzare le API e altro ancora.
+title: Introduzione al modello dati Campaign Classic
+description: Scopri come estendere il modello dati di Campaign, modificare gli schemi, utilizzare le API e altro ancora
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,35 +10,21 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '983'
 ht-degree: 6%
 
 ---
 
 
-# About the Campaign data model{#about-data-model}
+# Guida introduttiva al modello dati di Campaign {#about-data-model}
 
-Questa sezione descrive le basi del modello dati Adobe Campaign Classic, per una migliore comprensione delle tabelle integrate di Campaign e della loro interazione.
-
-Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione.
-
-Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla **[!UICONTROL Documentation]** scheda.
-
-![](assets/data-model_documentation-tab.png)
-
-Per ulteriori informazioni sulla descrizione del modello dati Campaign Classic predefinito, consultare [questa sezione](../../configuration/using/data-model-description.md).
-
-La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione. Le tabelle principali e i concetti sono elencati in questa pagina.
 
 ## Panoramica {#data-model-overview}
 
  Adobe Campaign si basa su un database relazionale contenente tabelle collegate tra loro. La struttura di base del modello dati Adobe Campaign  può essere descritta come segue.
-
->[!NOTE]
->
->Per ulteriori informazioni sull&#39;architettura del modello dati Campaign e sulle relative best practice, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).
 
 ### Tabella destinatari {#recipient-table}
 
@@ -100,7 +86,7 @@ Per ulteriori informazioni sulla configurazione degli schemi di estensione per e
 
 ## Using a custom recipient table {#custom-recipient-table}
 
-Durante la progettazione del modello di dati Adobe Campaign , puoi utilizzare la tabella [](#default-recipient-table)out-of-the-box Recipient o decidere di creare una tabella di destinatari non standard per memorizzare i profili di marketing.
+Durante la progettazione del modello dati Adobe Campaign , puoi utilizzare la tabella [](#default-recipient-table)out-of-the-box Recipient o decidere di creare una tabella [di destinatari](../../configuration/using/about-custom-recipient-table.md) personalizzata per memorizzare i profili di marketing.
 
 In effetti, se il modello dati non soddisfa la struttura incentrata sui destinatari, è possibile impostare altre tabelle come dimensione di targeting all&#39;interno  Adobe Campaign. Ad esempio, questo può essere rilevante quando è necessario rivolgersi a famiglie, account (come telefoni cellulari) e società/siti invece che semplicemente a destinatari.
 
@@ -112,22 +98,29 @@ Tutti i principi e i passaggi necessari per utilizzare una tabella di destinatar
 
 I vantaggi derivanti dall&#39;utilizzo di una tabella Destinatario personalizzata sono i seguenti:
 
-### Modello dati flessibile {#flexible-data-model}
+* **Modello** dati flessibile: la tabella del destinatario out-of-the-box è inutile se non è necessaria la maggior parte dei campi della tabella del destinatario o se il modello dati non è incentrato sul destinatario.
 
-La tabella del destinatario out-of-the-box è inutile se non hai bisogno della maggior parte dei campi della tabella Recipient o se il modello dati non è incentrato sul destinatario.
+* **Scalabilità** - I grandi volumi richiedono una tabella ottimizzata con pochi campi per una progettazione efficiente. La tabella dei destinatari out-of-the-box contiene troppi campi inutili, che possono avere un impatto sulle prestazioni e una scarsa efficienza.
 
-### Scalabilità {#scalability}
+* **Percorso** dati: se i dati risiedono in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella dei destinatari out-of-the-box. Creare una nuova struttura basata su una struttura esistente è più semplice.
 
-I grandi volumi richiedono una tabella semplificata con pochi campi per una progettazione efficiente. La tabella dei destinatari out-of-the-box contiene troppi campi inutili, che possono avere un impatto sulle prestazioni e una scarsa efficienza.
-
-### Posizione dati {#data-location}
-
-Se i dati si trovano in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella dei destinatari out-of-the-box. Creare una nuova struttura basata su una struttura esistente è più semplice.
-
-### Migrazione semplice {#easy-migration}
-
-Non è necessaria alcuna manutenzione per verificare che tutte le estensioni siano ancora valide al momento dell&#39;aggiornamento.
+* **Migrazione** semplice: non è necessaria alcuna manutenzione per verificare che tutte le estensioni siano ancora valide dopo l&#39;aggiornamento.
 
 >[!IMPORTANT]
 >
 >L&#39;utilizzo di una tabella di destinatari personalizzata è riservato agli utenti avanzati ed è soggetto a alcune limitazioni. Per ulteriori informazioni, consulta [questa sezione](../../configuration/using/about-custom-recipient-table.md).
+
+## Argomenti correlati
+
+Ulteriori informazioni sul modello di dati Campaign sono disponibili nelle seguenti sezioni:
+
+* **Descrizione delle tabelle** principali - Per ulteriori informazioni sulla descrizione del modello di dati Campaign Classic predefinito, fare riferimento a [questa sezione](../../configuration/using/data-model-description.md).
+
+* **Descrizione completa di ciascuna tabella** - Per accedere alla descrizione completa di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla **[!UICONTROL Documentation]** scheda.
+
+   ![](assets/data-model_documentation-tab.png)
+
+
+* **Schemi** campagna - La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+
+* **Best practice** per i modelli di dati - Scopri l’architettura del modello di dati Campaign e le relative best practice, in [questa sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).
