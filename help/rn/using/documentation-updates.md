@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3932'
 ht-degree: 98%
@@ -148,7 +148,7 @@ La pagina di integrazione dei trigger di Experience Cloud e Adobe Campaign Class
 
 Supporto delle emoticon. [Leggi tutto](../../delivery/using/customizing-emoticon-list.md)
 
-Connettore FDA per Azure Synapse. [Leggi tutto](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Connettore FDA per Azure Synapse. [Leggi tutto](../../installation/using/configure-fda-synapse.md)
 
 Leggi sulla privacy in Thailandia e Brasile. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -189,7 +189,7 @@ La sezione sulle best practice relative ai pacchetti dati è stata spostata e ag
 
 ## Aprile 2020 {#april-2020}
 
-La tabella delle autorizzazioni FDA è stata spostata nella documentazione Accesso a un database esterno (FDA). [Leggi tutto](../../platform/using/remote-database-access-rights.md)
+La tabella delle autorizzazioni FDA è stata spostata nella documentazione Accesso a un database esterno (FDA). [Leggi tutto](../../installation/using/remote-database-access-rights.md)
 
 Le domande frequenti sono state aggiornate con suggerimenti su come eseguire la cancellazione di soft cache e hard cache. [Leggi tutto](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -233,9 +233,9 @@ La sezione Archiviazione di e-mail è stata migliorata. [Leggi tutto](../../inst
 
 **Nuove funzionalità incluse nella versione 20.1**
 
-Connettore FDA Snowflake. [Leggi tutto](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Connettore FDA Snowflake. [Leggi tutto](../../installation/using/configure-fda-snowflake.md)
 
-Miglioramenti del connettore FDA Hadoop. [Leggi tutto](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Miglioramenti del connettore FDA Hadoop. [Leggi tutto](../../installation/using/configure-fda-hadoop.md)
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
@@ -293,7 +293,7 @@ La guida al reporting è stata aggiornata e riorganizzata. [Leggi tutto](../../r
 
 L’opzione “WdbcOptions_TempDbName” è stata aggiunta all’elenco delle opzioni di Campaign. [Leggi tutto](../../installation/using/configuring-campaign-options.md)
 
-La pagina della matrice FDA è stata spostata [qui](../../platform/using/remote-database-access-rights.md).
+La pagina della matrice FDA è stata spostata [qui](../../installation/using/remote-database-access-rights.md).
 
 La pagina della matrice dei diritti di accesso è stata spostata [qui](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf).
 
