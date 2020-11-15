@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 13%
 
 ---
@@ -170,7 +170,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 >
 >PostgreSQL è il server di database predefinito per gli ambienti ospitati.
 
-## CRM connectors{#CRMconnectors}
+## Connettori di gestione delle relazioni con i clienti{#CRMconnectors}
 
 <table>
 <tbody>
@@ -342,4 +342,4 @@ Internet Explorer 11 è supportato.
 * [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 * [Guida all&#39;installazione](../../installation/using/general-architecture.md)
 * [Funzioni e sistemi obsoleti](../../rn/using/deprecated-features.md)
-* [Procedura di aggiornamento build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)
+* [Procedura di aggiornamento build](../../production/using/build-upgrade.md)
