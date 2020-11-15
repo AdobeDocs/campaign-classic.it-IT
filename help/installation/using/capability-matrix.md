@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 582f7ac6-cebe-4b47-8730-bbc16fd6b1bd
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -46,11 +46,11 @@ I diversi modelli di hosting sono introdotti [in questa sezione](../../installat
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [Ulteriori informazioni](../../platform/using/about-fda.md)
+Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data. [Ulteriori informazioni](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->L&#39;accesso a un database esterno tramite FDA è possibile solo per installazioni locali o ibride, ad eccezione del connettore [di Snowflake](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+>L&#39;accesso a un database esterno tramite FDA è possibile solo per installazioni locali o ibride, ad eccezione del connettore [di Snowflake](../../installation/using/configure-fda-snowflake.md).
 
 
 **Vedi anche**
