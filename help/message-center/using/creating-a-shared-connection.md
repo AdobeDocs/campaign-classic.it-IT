@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 3%
@@ -84,7 +84,7 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Per ulteriori informazioni su Federated Data Access (FDA), vedere [Accesso a un database](../../platform/using/about-fda.md)esterno.
+   Per ulteriori informazioni su Federated Data Access (FDA), vedere [Accesso a un database](../../installation/using/about-fda.md)esterno.
 
 1. Fare clic **[!UICONTROL Test the connection]** per assicurarsi che l&#39;istanza di controllo e l&#39;istanza di esecuzione siano collegate.
 
