@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: administration-basics
 discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 2%
@@ -103,7 +103,7 @@ Una volta creato il profilo dell&#39;operatore, è possibile aggiungerne o aggio
 
 >[!NOTE]
 >
->Il **[!UICONTROL Session timeout]** campo consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../platform/using/about-fda.md).
+>Il **[!UICONTROL Session timeout]** campo consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
 
 ### Fuso orario dell&#39;operatore {#time-zone-of-the-operator}
 
