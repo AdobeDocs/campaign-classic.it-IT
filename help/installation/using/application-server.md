@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Il generatore dinamico di pagine Web utilizza la tecnologia JSP 1.2. Per questo,
 
 L&#39;applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per **OpenJDK**.
 
-Le versioni supportate sono dettagliate nella matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
+Le versioni supportate sono dettagliate nella matrice [](../../rn/using/compatibility-matrix.md)Compatibilità campagna.
 
 >[!NOTE]
 >
