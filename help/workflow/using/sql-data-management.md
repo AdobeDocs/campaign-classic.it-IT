@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: action-activities
 discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ L&#39;attività **SQL Data Management** consente di creare script SQL personaliz
 
 Prima di configurare l&#39;attività, accertatevi che siano soddisfatti i seguenti prerequisiti:
 
-* L&#39;attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell&#39;istanza (vedere [questa sezione](../../platform/using/about-fda.md)).
-* Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA (per ulteriori informazioni sugli schemi di dati, consultare [questa sezione](../../configuration/using/about-schema-reference.md)).
-* L&#39;operatore che esegue il flusso di lavoro deve avere il **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nome right. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
+* L&#39;attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell&#39;istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
+* Lo schema in uscita deve essere presente nel database e collegato a un database FDA. [Ulteriori informazioni](../../configuration/using/about-schema-reference.md).
+* L&#39;operatore che esegue il flusso di lavoro deve avere il **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nome right. [Ulteriori informazioni](../../platform/using/access-management.md#named-rights).
 
 ## Configurazione dell&#39;attività di gestione dati SQL {#configuring-the-sql-data-management-activity}
 
