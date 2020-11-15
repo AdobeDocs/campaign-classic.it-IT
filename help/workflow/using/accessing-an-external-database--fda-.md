@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: advanced-management
 discoiquuid: 1ca7ec80-18d1-4e94-bfe6-16ecd094fdf3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 55%
@@ -31,4 +31,4 @@ Più attività consentono di interagire con i dati provenienti da un database es
 * Enrichment
 * Caricamento dei dati
 
-L&#39;utilizzo dell&#39;opzione FDA dipende dalla licenza Adobe Campaign . La configurazione di questa opzione, nonché le procedure ottimali e i limiti associati all’utilizzo di questa sono descritti in dettaglio in questa [sezione](../../platform/using/about-fda.md).
+L&#39;utilizzo dell&#39;opzione FDA dipende dalla licenza Adobe Campaign . La configurazione di questa opzione, nonché le procedure ottimali e i limiti associati all’utilizzo di questa sono descritti in dettaglio in questa [sezione](../../installation/using/about-fda.md).
