@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 _6 maggio 2020_
 
-* È stato risolto un problema con l’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
+* È stato risolto un problema dell’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 20.1.2 - Build 9123{#release-20-1-2-build-9123}
 
@@ -36,7 +36,7 @@ _13 marzo 2020_
 
 _17 febbraio 2020_
 
-**Novità?**
+**Novità**
 
 <table> 
  <thead> 
@@ -47,7 +47,7 @@ _17 febbraio 2020_
  <tbody> 
   <tr> 
    <td> <p> Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza  Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da  Adobe.</p>
-    <p>For more information, refer to the <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -62,7 +62,7 @@ _17 febbraio 2020_
  <tbody> 
   <tr> 
    <td> <p>Il connettore FDA Hadoop è stato migliorato per supportare Hadoop 3.0 e Cloudera.</p>
-    <p>Per ulteriori informazioni, consulta la <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">documentazione dettagliata</a>.</p>
+    <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-hadoop.md">documentazione dettagliata</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -100,7 +100,7 @@ _17 febbraio 2020_
 
 * In Linux, l&#39;avvio del servizio di nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installate il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile, ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più dispendiose sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Sono state migliorate le prestazioni delle query che potrebbero essere influenzate da connessioni di database non necessarie.
 
@@ -194,7 +194,7 @@ _17 febbraio 2020_
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
