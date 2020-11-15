@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 7c28c179-eb18-437e-baf2-25829566c766
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 1%
+source-wordcount: '1336'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ La tipica implementazione  soluzione Adobe Campaign consiste dei seguenti compon
 
 >[!CAUTION]
 >
->Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni Adobe Campaign e la conformità con la [Matrice](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) di compatibilità tra i componenti.
+>Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni Adobe Campaign e la conformità alla matrice [di](../../rn/using/compatibility-matrix.md) compatibilità delle campagne tra i componenti.
 
 ## Livello presentazione {#presentation-layer}
 
