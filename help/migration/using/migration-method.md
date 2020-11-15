@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 3ac779a7-1f91-4c1c-a439-10d01697326a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ In v6.02, la modalità &quot;multi timezone&quot; era disponibile solo per i mot
 >
 >Alcune versioni software supportate in  Adobe Campaign 5.11 e 6.02 non sono più supportate in  Adobe Campaign v7.
 >
->Per ulteriori informazioni sulle versioni supportate da  Adobe Campaign, consultate la matrice [di](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)compatibilità.
+>Per ulteriori informazioni sulle versioni supportate da  Adobe Campaign, consultate la matrice [di](../../rn/using/compatibility-matrix.md)compatibilità.
 
 ## Primi passi di migrazione {#key-migration-steps}
 
