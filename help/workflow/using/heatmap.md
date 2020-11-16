@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Più precisamente, consente agli amministratori di piattaforma di:
 
 L’utilizzo di HeatMap del flusso di lavoro richiede una buona comprensione dei seguenti concetti: [Best practice](../../workflow/using/about-workflows.md)per flussi di lavoro, [attività](../../workflow/using/about-activities.md) e [flussi di lavoro](../../workflow/using/workflow-best-practices.md).
 
-Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti del](https://support.neolane.net/) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per capire come installarlo.
+Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattate l&#39;Assistenza [clienti del](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe e seguite le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per capire come installarlo.
 
 Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. Questo accordo consente il trasferimento e lo stoccaggio negli Stati Uniti, consentendo  Adobe Campaign di:
 
