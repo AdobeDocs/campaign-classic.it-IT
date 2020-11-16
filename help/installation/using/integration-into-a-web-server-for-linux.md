@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 752ba848-aee9-4bb0-b2c5-490f3124f74e
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 6d6f63fb6ac99c3a9e58a8670bc9bc59e6cfd420
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -249,4 +249,4 @@ Vengono visualizzate le informazioni seguenti:
 Connection closed by foreign host.
 ```
 
-Potete anche richiedere l’URL [`https://<computer>`](https://machine/r/test) da un browser Web.
+Potete anche richiedere l’URL [`https://<computer>`](https://myserver.adobe.com/r/test) da un browser Web.
