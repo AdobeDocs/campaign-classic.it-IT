@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 1%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Per eseguire il file di aggiornamento, procedere come segue:
 
 1. Eseguire **setup.exe**.
 
-   Per scaricare questo file, accedete alla  pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
+   Per scaricare questo file, collegatevi al portale [di distribuzione del](https://experience.adobe.com/downloads) software utilizzando le credenziali utente. Ulteriori informazioni sulla distribuzione del software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Selezionate la modalità di installazione: scegli **[!UICONTROL Update or repair]**
 1. Fai clic su **[!UICONTROL Next]** .
@@ -127,7 +127,7 @@ Per informazioni su come aggiornare la console client, consulta [questa sezione]
 
 ### Ottenere pacchetti aggiornati {#obtain-updated-packages}
 
-Iniziate recuperando entrambi i pacchetti aggiornati di  Adobe Campaign: andate alla  pagina Assistenza Adobe Campaign ( [https://support.neolane.net/](https://support.neolane.net/)) tramite il collegamento **Centro** download.
+Iniziate recuperando entrambi i pacchetti aggiornati di  Adobe Campaign: connettersi al portale [di distribuzione](https://experience.adobe.com/downloads) Software utilizzando le credenziali utente. Ulteriori informazioni sulla distribuzione del software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Il file è **nlserver6-v7-XXX.rpm**
 
