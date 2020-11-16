@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -157,7 +157,8 @@ Gli elementi messi in quarantena sono token dispositivo.
 **Per iOS - connettore binario**
 
 >[!NOTE]
-A partire dalla release Campaign 20.3, il connettore binario legacy iOS è obsoleto. Se si utilizza questo connettore, è necessario adattare l&#39;implementazione di conseguenza. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione.
+ [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
 Per ogni notifica,  Adobe Campaign riceve gli errori sincroni e asincroni dal server APN. Per i seguenti errori sincroni,  Adobe Campaign genera errori software:
 
