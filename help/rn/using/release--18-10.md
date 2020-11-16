@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 8%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+>Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Miglioramenti**
 
@@ -87,7 +87,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+>Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Miglioramenti**
 
@@ -109,9 +109,9 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettuare l&#39; [aggiornamento alla build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) più recente o contattare il supporto [](https://support.neolane.net/)tecnico.
+>Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
-**Novità?**
+**Novità**
 
 <table> 
  <thead> 
@@ -122,7 +122,7 @@ ht-degree: 8%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Miglioramenti delle notifiche push<br /> </td> 
+   <td> Push notification improvements<br /> </td> 
    <td> Sono stati implementati diversi miglioramenti per le notifiche push in  Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Tenere traccia delle notifiche silenziose in iOS </p> </li> 
@@ -151,7 +151,7 @@ ht-degree: 8%
 
 **Miglioramenti**
 
-* Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
+* Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 ora sono supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
 * Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * L&#39;opzione di formula **di calcolo della** data è ora disponibile nelle proprietà di consegna quando si crea un singolo recapito utilizzando il modello di consegna diretta per posta. (NEO-9792)
