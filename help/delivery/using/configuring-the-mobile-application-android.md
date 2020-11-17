@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1593'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,14 @@ Una volta installato il pacchetto, potete definire le impostazioni dell&#39;app 
 >
 >Per informazioni su come configurare l&#39;app per iOS e su come creare una consegna per iOS, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application.md).
 
+I passaggi chiave sono:
+
+1. [Configurare l&#39;account esterno Android](#configuring-external-account-android)
+1. [Configurare il servizio Android](#configuring-android-service)
+1. [Creare l&#39;app mobile in Campaign](#creating-android-app)
+1. [Estendi lo schema dell&#39;app con dati aggiuntivi](#extend-subscription-schema)
+
+Potrete quindi [creare una notifica](#creating-android-delivery)Android avanzata.
 
 ## Configurazione dell&#39;account esterno Android {#configuring-external-account-android}
 
@@ -94,23 +102,17 @@ Dopo aver creato il servizio, è ora necessario creare l&#39;applicazione Androi
    >
    > L’ **[!UICONTROL Integration key]** impostazione è completamente personalizzabile con il valore stringa, ma deve corrispondere esattamente a quella specificata nell’SDK.
 
-1. Selezionate una delle **[!UICONTROL API version]**:
-   * HTTP. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-   * HTTPV1. For more information refer to this [section](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+1. Seleziona **[!UICONTROL API version]**:
 
-1. Fill in the **[!UICONTROL Firebase Cloud Messaging settings for the Android connection]** fields.
+   * HTTPV1. La configurazione è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+   * HTTP (precedente). La configurazione è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+
+
+1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. Fai clic su **[!UICONTROL Finish]**, quindi su **[!UICONTROL Save]**. L&#39;applicazione Android ora è pronta per essere utilizzata in Campaign Classic.
 
 Per impostazione predefinita,  Adobe Campaign salva una chiave nel campo **[!UICONTROL User identifier]** (@userKey) della **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabella. Questa chiave consente di collegare un&#39;iscrizione a un destinatario. Per raccogliere dati aggiuntivi (ad esempio una chiave di riconciliazione complessa), è necessario applicare la seguente configurazione:
-
-1. Create un&#39;estensione dello **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema e definite i nuovi campi.
-
-1. Definite la mappatura nella **[!UICONTROL Subscription parameters]** scheda.
-
-   >[!CAUTION]
-   >
-   >Accertatevi che i nomi di configurazione nella **[!UICONTROL Subscription parameters]** scheda siano identici a quelli nel codice dell&#39;applicazione mobile. Fai riferimento all&#39;SDK [Integrating Campaign nella sezione dell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) mobile.
 
 ### Selezionate la versione API{#select-api-version}
 
@@ -126,7 +128,7 @@ Per configurare la versione dell&#39;API HTTP v1, attenetevi alla seguente proce
 
 1. Fai clic **[!UICONTROL Load project json file to extract projet details...]** per caricare direttamente il file della chiave JSON. Per ulteriori informazioni su come estrarre il file JSON, consulta questa [pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
-1. Potete anche immettere manualmente i seguenti dettagli:
+   Potete anche immettere manualmente i seguenti dettagli:
    * **[!UICONTROL Project Id]**
    * **[!UICONTROL Private Key]**
    * **[!UICONTROL Client Email]**
@@ -179,6 +181,19 @@ Di seguito sono riportati i nomi dei payload FCM per personalizzare ulteriorment
 | messaggio di notifica | titolo, corpo, android_channel_id, icona, suono, tag, colore, click_action <br> | dryRun |
 
 <br>
+
+## Estendi lo schema appsubscriptionRcp {#extend-subscription-schema}
+
+È necessario estendere **appsubscriptionRcp** per definire nuovi campi aggiuntivi per memorizzare i parametri dall&#39;app nel database di Campaign. Questi campi verranno utilizzati ad esempio per la personalizzazione. Per eseguire questa operazione:
+
+1. Create un&#39;estensione dello **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema e definite i nuovi campi. Ulteriori informazioni sull&#39;estensione dello schema in [questa pagina](../../configuration/using/about-schema-edition.md)
+
+1. Definite la mappatura nella **[!UICONTROL Subscription parameters]** scheda.
+
+   >[!CAUTION]
+   >
+   >Accertatevi che i nomi di configurazione nella **[!UICONTROL Subscription parameters]** scheda siano identici a quelli nel codice dell&#39;applicazione mobile. Fai riferimento all&#39;SDK [Integrating Campaign nella sezione dell&#39;applicazione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) mobile.
+
 
 ## Creazione di una notifica Android rich {#creating-android-delivery}
 
