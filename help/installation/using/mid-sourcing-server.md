@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Questa sezione descrive l&#39;installazione e la configurazione di un server di 
 L&#39;architettura &quot;mid-sourcing&quot; viene presentata nella distribuzione [](../../installation/using/mid-sourcing-deployment.md)mid-sourcing.
 
 L&#39;installazione di un server mid-sourcing segue lo stesso processo dell&#39;installazione di un server nel modo normale (fare riferimento alla configurazione standard). Si tratta di un&#39;istanza indipendente con un proprio database che può essere utilizzata per eseguire le consegne. In poche parole, contiene una configurazione aggiuntiva per consentire alle istanze remote di eseguire le consegne attraverso di esso in modalità mid-sourcing.
+
+>[!CAUTION]
+>
+>Dopo che il server di mid-sourcing è stato configurato e i flussi di lavoro [di](../../workflow/using/transfer-to-mid-sourcing.md) sincronizzazione sono stati eseguiti per la prima volta, accertatevi di non aggiornare il nome interno degli account esterni di mid-sourcing.
 
 ## Passaggi per l’installazione e la configurazione di un’istanza {#steps-for-installing-and-configuring-an-instance}
 
