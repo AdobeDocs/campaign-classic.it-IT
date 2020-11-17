@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 * Questa sezione contiene informazioni generali sulla gestione della privacy e sulle funzioni fornite da  Adobe Campaign per gestire il [Diritto di accesso e il Diritto di essere Dimenticato](#right-access-forgotten).
 
-* Contiene inoltre informazioni su importanti funzioni per la gestione della privacy ([consenso, conservazione dei dati e ruoli](#consent-retention-roles)utente), nonché procedure ottimali per l&#39;utilizzo di  Adobe Campaign da parte dell&#39;utente, al fine di garantire la conformità alla privacy.
+* Contiene inoltre informazioni su importanti funzioni per la gestione della privacy ([Consenso, Mantenimento e Ruoli](#consent-retention-roles)), nonché procedure ottimali per l&#39;utilizzo di  Adobe Campaign in conformità alla privacy.
 
 ## Regolamenti sulla gestione della privacy {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Le funzioni per gestire alcuni aspetti del consenso sono state fondamentali per 
 
 Per ulteriori informazioni sulla gestione del consenso, consulta la documentazione [](../../delivery/using/managing-subscriptions.md)dettagliata.
 
-Oltre agli strumenti di gestione del consenso forniti da  Adobe Campaign, è possibile verificare se un consumatore ha optato per la vendita di Dati Personali. Fai riferimento a [questa sezione](../../platform/using/privacy-requests.md#sale-of-personal-information).
+Oltre agli strumenti di gestione del consenso forniti da  Adobe Campaign, è possibile verificare se un consumatore ha optato per la vendita di Dati Personali. Fai riferimento a [questa sezione](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Conservazione dei dati {#data-retention}
 
