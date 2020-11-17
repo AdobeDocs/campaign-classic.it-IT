@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 title: Documentazione di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 70%
@@ -17,9 +17,9 @@ ht-degree: 70%
 
 ## Novità
 
-* **[Aggiornamento dell&#39;integrazione](integrations/using/configuring-adobe-io.md)**<br/> di Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  I/O Adobe.
+* **[Aggiornamento dell&#39;integrazione](integrations/using/configuring-adobe-io.md)**<br/> di Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scopri come effettuare la migrazione a  I/O Adobe
 
-* **[Passaggio all&#39;API](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> del provider APN basata su HTTP/2008 Informazioni sulla migrazione dal protocollo binario legacy all&#39;API del provider APN basata su HTTP/2.
+* **[Passaggio all&#39;API](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> del provider APN basata su HTTP/2008 Informazioni sulla migrazione dal protocollo binario precedente all&#39;API del provider APN basata su HTTP/2
 
 * **[Aggiungere icone ai messaggi](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> È ora possibile inserire icone nei messaggi e nell’oggetto
 
