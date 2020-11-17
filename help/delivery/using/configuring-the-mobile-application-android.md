@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
+source-git-commit: a69c9132a776eac5591bbbac0c89d6374047bb17
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 2%
@@ -102,11 +102,7 @@ Dopo aver creato il servizio, è ora necessario creare l&#39;applicazione Androi
    >
    > L’ **[!UICONTROL Integration key]** impostazione è completamente personalizzabile con il valore stringa, ma deve corrispondere esattamente a quella specificata nell’SDK.
 
-1. Seleziona **[!UICONTROL API version]**:
-
-   * HTTPV1. La configurazione è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-   * HTTP (precedente). La configurazione è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-
+1. Selezionate **[!UICONTROL API version]**: HTTP v1 o HTTP (precedente). Queste configurazioni sono dettagliate in [questa sezione](#select-api-version)
 
 1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
@@ -118,9 +114,10 @@ Per impostazione predefinita,  Adobe Campaign salva una chiave nel campo **[!UIC
 
 Dopo aver creato un servizio e una nuova applicazione mobile, è necessario configurare l&#39;applicazione mobile in base alla versione API scelta.
 
-Per ulteriori informazioni sulle creazioni di servizi e applicazioni mobili, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service)
+* **La configurazione HTTP v1** è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+* **La configurazione HTTP (precedente)** è dettagliata in questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
 
-#### Usa versione API HTTP v1{#android-service-httpv1}
+#### Configurare l&#39;API HTTP v1{#android-service-httpv1}
 
 Per configurare la versione dell&#39;API HTTP v1, attenetevi alla seguente procedura:
 
@@ -157,7 +154,7 @@ Di seguito sono riportati i nomi dei payload FCM per personalizzare ulteriorment
 <br>
 <br>
 
-#### Versione API HTTP{#android-service-http}
+#### Configurare l&#39;API HTTP (precedente){#android-service-http}
 
 Per configurare la versione API HTTP (precedente), attenetevi alla procedura seguente:
 
