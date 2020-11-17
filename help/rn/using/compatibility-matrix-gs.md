@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
+source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# Matrice di compatibilità standard Gold{#compatibility-matrix-gs}
+# Gold Standard Compatibility matrix{#compatibility-matrix-gs}
 
 Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic Gold Standard** 19.1. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con  Adobe Campaign.
 
@@ -165,7 +165,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 >
 >PostgreSQL è il server di database predefinito per gli ambienti ospitati.
 
-## CRM connectors{#CRMconnectors-gs}
+## Connettori di gestione delle relazioni con i clienti{#CRMconnectors-gs}
 
 <table>
 <tbody>
@@ -308,8 +308,8 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 12</p>
-<p>con build SDK per dispositivi mobili 1.0.25, compatibile con le versioni a 32 e a 64 bit.</p>
+<p>iOS 9 - 14</p>
+<p>con build SDK per dispositivi mobili 1.0.26, compatibile con le versioni a 32 e a 64 bit.</p>
 </td>
 </tr>
 </tbody>
