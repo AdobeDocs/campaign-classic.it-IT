@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 98%
+source-wordcount: '3528'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,9 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 
 [La versione](../../rn/using/release--20-2.md#release-20-2-3-build-9182) di Campaign 20.2.3 è stata spostata in General Availability (GA).
 
-La sezione Privacy è stata spostata e arricchita con due nuove sezioni: [Gestione](../../platform/using/privacy-management.md) della privacy e [gestione delle richieste](../../platform/using/privacy-requests.md)di privacy.
+La sezione Privacy è stata spostata e arricchita con due nuove pagine: [Gestione](../../platform/using/privacy-management.md) della privacy e [gestione delle richieste](../../platform/using/privacy-requests.md)di privacy.
+
+Nella pagina di configurazione del server di mid-sourcing è stata aggiunta una nota per specificare che il nome interno dell&#39;account esterno non deve essere aggiornato una volta che il server è stato configurato. [Leggi tutto](../../installation/using/mid-sourcing-server.md)
 
 ## Ottobre 2020 {#oct-2020}
 
