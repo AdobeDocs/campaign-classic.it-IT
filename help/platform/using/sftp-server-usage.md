@@ -10,21 +10,37 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: ebec481d5a018d06e47c782627e9a9064cb0dd64
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '1086'
+ht-degree: 9%
 
 ---
 
 
 # Best practice e risoluzione dei problemi per il server SFTP {#sftp-server-usage}
 
-## Best practice per i server SFTP {#sftp-server-best-practices}
+## Raccomandazioni globali per il server SFTP {#global-recommendations}
 
-Quando gestisci file e dati per un processo di ETL, questi file vengono memorizzati in un server SFTP in hosting fornito da Adobe. Questo SFTP è progettato per essere uno spazio di archiviazione temporaneo su cui puoi controllare la conservazione e l’eliminazione dei file.
+Quando gestisci file e dati per un processo di ETL, questi file vengono memorizzati in un server SFTP in hosting fornito da Adobe. Accertatevi di seguire le raccomandazioni riportate di seguito quando utilizzate i server SFTP.
 
-Se non utilizzato o monitorato correttamente, questo spazio può riempire rapidamente lo spazio fisico disponibile sul server e causare il troncamento dei file nei successivi caricamenti. Una volta saturo lo spazio, la rimozione automatica può attivare e cancellare i file più vecchi dallo storage SFTP.
+* Per evitare la scadenza della password, utilizzare l&#39;autenticazione basata sulle chiavi anziché l&#39;autenticazione tramite password (le password hanno un periodo di validità di 90 giorni). Inoltre, l&#39;autenticazione basata sulle chiavi consente di generare più chiavi, ad esempio per la gestione di più entità. Al contrario, l&#39;autenticazione tramite password richiede la condivisione della password con tutte le entità gestite.
+
+   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix). Per poter caricare le chiavi sul server Campaign, è necessario fornire la chiave pubblica per  team di supporto del Adobe tramite l&#39;Assistenza [clienti di](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe.
+
+* Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
+
+* Gestisci gli errori/le eccezioni.
+
+* Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l’identificatore. Quando create delle cartelle a cui Campaign deve accedere, accertatevi di configurarle con diritti di lettura/scrittura per l&#39;intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
+
+* Gli IP pubblici da cui si sta tentando di avviare la connessione SFTP devono essere aggiunti al inserire nell&#39;elenco Consentiti  nell&#39;istanza Campaign. L&#39;aggiunta di indirizzi IP al inserire nell&#39;elenco Consentiti  può essere richiesta tramite l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
+
+## Best practice di utilizzo del database {#sftp-server-best-practices}
+
+I server SFTP sono progettati per essere spazi di archiviazione temporanei in cui è possibile controllare la conservazione e l&#39;eliminazione dei file.
+
+Se non utilizzati o monitorati correttamente, questi spazi possono riempire rapidamente lo spazio fisico disponibile sul server e causare il troncamento dei file nei successivi caricamenti. Una volta saturo lo spazio, la rimozione automatica può attivare e cancellare i file più vecchi dallo storage SFTP.
 
 Per evitare tali problemi,  Adobe raccomanda di seguire le best practice riportate di seguito.
 
@@ -35,21 +51,21 @@ Per evitare tali problemi,  Adobe raccomanda di seguire le best practice riporta
 >Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://docs.adobe.com/content/help/it-IT/control-panel/using/faq.html#ims-org-id) .
 
 * Le dimensioni del server variano a seconda della licenza. In ogni caso, mantenete i dati minimi possibili e mantenete i dati per tutto il tempo necessario (15 giorni è il limite massimo).
-* Per evitare la scadenza della password, utilizzare l&#39;autenticazione basata sulle chiavi anziché l&#39;autenticazione tramite password (le password hanno un periodo di validità di 90 giorni). Inoltre, l&#39;autenticazione basata sulle chiavi consente di generare più chiavi, ad esempio per la gestione di più entità. Al contrario, l&#39;autenticazione tramite password richiede la condivisione della password con tutte le entità gestite.
-
-   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix). Per poter caricare le chiavi sul server Campaign, è necessario fornire la chiave pubblica per  team di supporto del Adobe tramite l&#39;Assistenza [clienti di](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe.
 
 * Utilizza i flussi di lavoro per eliminare correttamente i dati (gestisci la conservazione dai flussi di lavoro che consumano i dati).
-* Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
-* Gestisci gli errori/le eccezioni.
-* Di tanto in tanto, effettua l’accesso a SFTP per verificare direttamente ciò che vi si trova.
-* Ricorda che la gestione del disco SFTP è principalmente una tua responsabilità.
-* Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l’identificatore. Quando create delle cartelle a cui Campaign deve accedere, accertatevi di configurarle con diritti di lettura/scrittura per l&#39;intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
-* Gli IP pubblici da cui si sta tentando di avviare la connessione SFTP devono essere aggiunti al inserire nell&#39;elenco Consentiti  nell&#39;istanza Campaign. L&#39;aggiunta di indirizzi IP al inserire nell&#39;elenco Consentiti  può essere richiesta tramite l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
->[!CAUTION]
->
->Se utilizzate il vostro server SFTP, accertatevi di seguire il più possibile le raccomandazioni sopra riportate.
+* Di tanto in tanto, effettua l’accesso a SFTP per verificare direttamente ciò che vi si trova.
+
+* Ricorda che la gestione del disco SFTP è principalmente una tua responsabilità.
+
+## Utilizzo server SFTP esterno {#external-SFTP-server}
+
+Se utilizzate il vostro server SFTP personale, accertatevi di seguire il più possibile le raccomandazioni di cui sopra.
+
+Inoltre, quando si specifica in Campaign Classic un percorso a un server SFTP esterno, la sintassi del percorso è diversa a seconda del sistema operativo del server SFTP:
+
+* Se il server SFTP è in **Windows**, usa sempre un percorso relativo.
+* Se il server STP si trova su **Linux**, utilizzare sempre un percorso relativo alla home (a partire da &quot;~/&quot;) o un percorso assoluto (a partire da &quot;/&quot;).
 
 ## Problemi di connessione con  server SFTP ospitato dal Adobe {#sftp-server-troubleshooting}
 
