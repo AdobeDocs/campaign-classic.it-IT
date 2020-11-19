@@ -1,6 +1,6 @@
 ---
-title: Configurare l'accesso a Hadoop
-description: Scoprite come configurare l'accesso a Hadoop in FDA
+title: Configurare l'accesso ad Hadoop
+description: Scoprite come configurare l'accesso ad Hadoop in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Configurare l&#39;accesso a Hadoop {#configure-access-to-hadoop}
+# Configurare l&#39;accesso ad Hadoop {#configure-access-to-hadoop}
 
-Utilizzate l&#39;opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso a Hadoop.
+Utilizzate l&#39;opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso ad Hadoop.
 
 1. Configurare il database [Hadoop](#configuring-hadoop)
 1. Configurare l&#39;account [](#hadoop-external) esterno Hadoop in Campaign
@@ -42,7 +42,7 @@ La connessione a un database esterno Hadoop in FDA richiede le seguenti configur
 
 1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Hadoop] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta [questa sezione](#hadoop-external).
 
-## Account esterno Hadoop {#hadoop-external}
+## Account esterno hadoop {#hadoop-external}
 
 L&#39;account [!DNL Hadoop] esterno consente di collegare l&#39;istanza Campaign al database esterno di Hadoop.
 
@@ -87,7 +87,7 @@ Il connettore supporta anche le seguenti opzioni Hive:
 
 ## Configurazione di Hadoop 2.1 {#configure-access-hadoop-2}
 
-Se dovete connettervi a Hadoop 2.1, seguite i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
+Se dovete connettervi ad Hadoop 2.1, seguite i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
 
 ### Hadoop 2.1 per Windows {#for-windows}
 
