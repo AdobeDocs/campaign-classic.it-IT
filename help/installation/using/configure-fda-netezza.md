@@ -1,6 +1,6 @@
 ---
-title: Configurare l'accesso a Netezza
-description: Scopri come configurare l'accesso a Netezza in FDA
+title: Configurare l'accesso ad Netezza
+description: Scoprite come configurare l'accesso ad Netezza in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,14 +18,14 @@ ht-degree: 0%
 ---
 
 
-# Configurare l&#39;accesso a Netezza {#configure-access-to-netezza}
+# Configurare l&#39;accesso ad Netezza {#configure-access-to-netezza}
 
-Utilizzate l&#39;opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso a Netezza.
+Utilizzate l&#39;opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso ad Netezza.
 
-1. Installare e configurare driver [Netezza](#netezza-config)
+1. Installare e configurare i driver [Netezza](#netezza-config)
 1. Configurare l&#39;account [](#netezza-external) esterno Netezza in Campaign
 
-## Configurazione Netezza {#netezza-config}
+## Configurazione netezza {#netezza-config}
 
 La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive nel server Adobe Campaign :
 
@@ -72,9 +72,9 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: posizione del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
-## Account esterno Netezza {#netezza-external}
+## Account esterno netezza {#netezza-external}
 
-L&#39;account esterno di Netezza consente di collegare l&#39;istanza di Campaign al database esterno di Netezza.
+L&#39;account esterno di Netezza consente di collegare l&#39;istanza Campaign al database esterno di Netezza.
 
 1. Da Campaign **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -96,4 +96,4 @@ L&#39;account esterno di Netezza consente di collegare l&#39;istanza di Campaign
 >
 >Non vengono prese in considerazione le operazioni sugli schemi contenenti chiavi primarie generate automaticamente.
 >
->Nella tabella verrà utilizzata la clausola **Organizza su** sul primo indice definito nello schema. Poiché questa clausola è limitata a 1-4 colonne con Netezza, l&#39;indice non può contenere più di 4 colonne.
+>Nella tabella verrà utilizzata la clausola **Organizza su** sul primo indice definito nello schema. Poiché con Netezza questa clausola è limitata a 1-4 colonne, l&#39;indice non può contenere più di 4 colonne.
