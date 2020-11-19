@@ -1,6 +1,6 @@
 ---
-title: Configurare l'accesso a Oracle
-description: Informazioni su come configurare l'accesso a Oracle in FDA
+title: Configurare l'accesso a  Oracle
+description: Scopri come configurare l'accesso a  Oracle in FDA
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Configurare l&#39;accesso a Oracle {#configure-access-to-oracle}
+# Configurare l&#39;accesso a  Oracle {#configure-access-to-oracle}
 
-Utilizzate l&#39;opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguire i passaggi riportati di seguito per configurare l&#39;accesso a Oracle.
+Utilizzate l&#39;opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Per configurare l&#39;accesso a  Oracle, effettuate le operazioni riportate di seguito.
 
-1. Configurare Oracle su [Linux](#oracle-linux) o [Windows](#azure-windows)
-1. Configurare l&#39;account [](#oracle-external) esterno Oracle in Campaign
+1. Configurare  Oracle su [Linux](#oracle-linux) o [Windows](#azure-windows)
+1. Configurare l&#39;account [](#oracle-external) esterno  Oracle in Campaign
 
-## Oracle su Linux {#oracle-linux}
+##  Oracle su Linux {#oracle-linux}
 
-La connessione a un database Oracle esterno in FDA richiede configurazioni aggiuntive nel server Adobe Campaign .
+La connessione a un database esterno  Oracle in FDA richiede configurazioni aggiuntive nel server Adobe Campaign .
 
-1. Installare il client completo Oracle corrispondente alla versione di Oracle in uso.
-1. Aggiungete le definizioni TNS all&#39;installazione. Per eseguire questa operazione, specificateli in un file **tnsnames.ora** nell&#39;archivio /etc/oracle. Se il repository non esiste, crearlo.
+1. Installate il client Oracle  corrispondente alla versione di  Oracle in uso.
+1. Aggiungete le definizioni TNS all&#39;installazione. A tal fine, specificateli in un file **tnsnames.ora** nell&#39;archivio di oracle /etc/. Se il repository non esiste, crearlo.
 
-   Quindi create una nuova variabile di ambiente TNS_ADMIN: esportare TNS_ADMIN=/etc/oracle e riavviare il computer.
+   Quindi create una nuova variabile di ambiente TNS_ADMIN: esportare TNS_ADMIN=/etc/ oracle e riavviare il computer.
 
-1. Integrare Oracle nel server Adobe Campaign  (nlserver). A questo scopo, verificate che il file **customer.sh** sia presente nella cartella &quot;nl6&quot; della struttura ad albero del server Adobe Campaign  e che includa i collegamenti alle librerie Oracle.
+1. Integrare  Oracle nel server Adobe Campaign  (nlserver). A questo scopo, verificate che il file **customer.sh** sia presente nella cartella &quot;nl6&quot; della struttura ad albero del server Adobe Campaign  e che includa i collegamenti alle librerie Oracle .
 
    Ad esempio, per un client nella versione 11.2:
 
@@ -46,9 +46,9 @@ La connessione a un database Oracle esterno in FDA richiede configurazioni aggiu
 
    >[!NOTE]
    >
-   >Questi valori (in particolare ORACLE_HOME) dipendono dai repository di installazione. Prima di fare riferimento a tali valori, verificate la struttura ad albero.
+   >Questi valori (in particolare  ORACLE_HOME) dipendono dai repository di installazione. Prima di fare riferimento a tali valori, verificate la struttura ad albero.
 
-1. Installare le librerie necessarie per Oracle:
+1. Installate le librerie necessarie per  Oracle:
 
    * **libclntsh.so**
 
@@ -67,21 +67,21 @@ La connessione a un database Oracle esterno in FDA richiede configurazioni aggiu
 
 1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Oracle] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta [questa sezione](#oracle-external).
 
-## Oracle su Windows {#oracle-windows}
+##  Oracle in Windows {#oracle-windows}
 
-La connessione a un database Oracle esterno in FDA richiede configurazioni aggiuntive nel server Adobe Campaign .
+La connessione a un database esterno  Oracle in FDA richiede configurazioni aggiuntive nel server Adobe Campaign .
 
-1. Installare il client Oracle.
+1. Installate il client Oracle .
 
-1. Nella cartella C:Oracle, create un file **tnsnames.ora** contenente la definizione TNS.
+1. Nella cartella Oracle C:, create un file **tnsnames.ora** contenente la definizione TNS.
 
-1. Aggiungere una variabile di ambiente TNS_ADMIN con C:Oracle come valore e riavviare il computer.
+1. Aggiungete una variabile di ambiente TNS_ADMIN con C: Oracle come valore e riavviate il computer.
 
 1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Oracle] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta [questa sezione](#oracle-external).
 
-## Conto esterno Oracle {#oracle-external}
+##  account esterno Oracle {#oracle-external}
 
-L&#39;account [!DNL Oracle] esterno consente di collegare l&#39;istanza Campaign al database Oracle esterno.
+L&#39;account [!DNL Oracle] esterno consente di collegare l&#39;istanza Campaign al database esterno  Oracle.
 
 1. Da Campaign **[!UICONTROL Explorer]**, selezionare **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
@@ -91,7 +91,7 @@ L&#39;account [!DNL Oracle] esterno consente di collegare l&#39;istanza Campaign
 
 1. Configurate l&#39;account **[!UICONTROL Oracle]** esterno, dovete specificare:
 
-   * **[!UICONTROL Type]**: Oracle
+   * **[!UICONTROL Type]**:  Oracle
 
    * **[!UICONTROL Server]**: Nome del DNS
 
