@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati Campaign Classic
-page-status-flag: never-activated
-uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -38,7 +35,7 @@ Questo documento contiene esempi di utilizzo comuni e procedure ottimali per app
 
 ### Metodo incentrato sul cliente {#customer-centric-approach}
 
-Mentre la maggior parte dei provider di servizi e-mail comunica ai clienti tramite un approccio incentrato sugli elenchi,  Adobe Campaign si affida a un database relazionale per sfruttare una visione più ampia dei clienti e dei loro attributi.
+Mentre la maggior parte dei provider di servizi e-mail comunica ai clienti tramite un approccio incentrato sugli elenchi,  Adobe Campaign si avvale di un database relazionale per sfruttare una visione più ampia dei clienti e dei loro attributi.
 
 Questo approccio incentrato sul cliente è riportato nel grafico seguente. La tabella **Destinatario** in grigio rappresenta la tabella cliente principale intorno alla quale viene creato tutto:
 
