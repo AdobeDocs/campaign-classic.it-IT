@@ -157,7 +157,7 @@ A livello di consegna, abbiamo i seguenti risultati:
 
 * **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su di essi): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (utenti che hanno fatto clic su): 6
-* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 3
+* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 1
 
 La reattività grezza e la stima dei forward sono calcolate come segue:
 
