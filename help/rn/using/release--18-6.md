@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versione 18.6
-seo-title: Versione 18.6
 description: Versione 18.6
-seo-description: null
-page-status-flag: never-activated
-uuid: 72941f8f-0b84-4868-a768-8aa972459ef2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 6%
 
 ---
@@ -42,7 +37,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td> Banda query<br /> </td> 
-   <td> <p>Quando più utenti di Campaign si connettono allo stesso account esterno FDA Teradata, ora puoi passare una banda di query (coppie chiave/valore) specifica per ciascun utente. Ogni volta che un utente di Campaign esegue una query sul database Teradata,  Adobe Campaign è ora in grado di inviare i metadati associati all'utente. Tali dati, composti da un elenco di chiavi e valori, possono essere utilizzati dagli amministratori Teradata a scopo di audit o per gestire, ad esempio, i diritti di accesso.</p><p>Per ulteriori informazioni, consulta la <a href="../../installation/using/external-accounts.md">documentazione dettagliata</a>.</p> </td>
+   <td> <p>Quando più utenti di Campaign si connettono allo stesso account esterno di FDA Teradata, ora puoi passare una banda di query (coppie chiave/valore) specifica per ciascun utente. Ogni volta che un utente di Campaign esegue una query sul database Teradata,  Adobe Campaign è ora in grado di inviare i metadati associati all'utente. Tali dati, composti da un elenco di chiavi e valori, possono essere utilizzati dagli amministratori Teradata a scopo di controllo o per gestire, ad esempio, i diritti di accesso.</p><p>Per ulteriori informazioni, consulta la <a href="../../installation/using/external-accounts.md">documentazione dettagliata</a>.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -65,12 +60,12 @@ ht-degree: 6%
 
 Banda query
 
-Una chiave specifica (PROXYUSER o PROXYROLE) viene utilizzata per associare un utente Teradata o un ruolo a un utente Campaign. È stata aggiunta una nuova autorizzazione per utilizzare questo utente/ruolo proxy. È necessario aggiungere il diritto di accesso GRANT CONNECT THROUGH all&#39;account del database (quello definito nell&#39;account esterno di Teradata).
+Una chiave specifica (PROXYUSER o PROXYROLE) viene utilizzata per associare un utente Teradata o un ruolo a un utente di Campaign. È stata aggiunta una nuova autorizzazione per utilizzare questo utente/ruolo proxy. È necessario aggiungere il diritto di accesso GRANT CONNECT THROUGH all&#39;account del database (quello definito nell&#39;account esterno di Teradata).
 
-È stata aggiunta una nuova scheda nei conti esterni Teradata. La **[!UICONTROL Query banding]** scheda include le seguenti opzioni:
+È stata aggiunta una nuova scheda agli account esterni di Teradata. La **[!UICONTROL Query banding]** scheda include le seguenti opzioni:
 
 * **[!UICONTROL Active]**: selezionare questa casella per attivare la funzione.
-* **[!UICONTROL Default]**: immettete un banding di query predefinito che verrà utilizzato se un utente non dispone di bande di query associate. Se non è definita alcuna banding di query predefinita, gli utenti che non dispongono di bande di query associate non potranno utilizzare Teradata.
+* **[!UICONTROL Default]**: immettete un banding di query predefinito che verrà utilizzato se un utente non dispone di bande di query associate. Se non è stata definita alcuna bande di query predefinita, gli utenti che non dispongono di bande di query associate non potranno utilizzare Teradata.
 * **[!UICONTROL Users]**: per ogni utente, specificate una bendatura di query. È possibile aggiungere tutte le coppie chiave/valore necessarie. Ad esempio: &quot;priorità=1;carico di lavoro=alto;&quot;
 
 Per ulteriori informazioni sulla bendatura delle query, fare riferimento ai seguenti articoli:
