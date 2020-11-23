@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Tipi di manutenzione
-seo-title: Tipi di manutenzione
 description: Tipi di manutenzione
-seo-description: null
-page-status-flag: never-activated
-uuid: 44faee3d-0549-4f63-8fdc-b24e6de47bc4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '494'
 ht-degree: 2%
 
 ---
@@ -72,7 +67,7 @@ Sono disponibili diverse strategie:
    <td> Deframmentazione online<br /> </td> 
    <td> La maggior parte dei motori di database fornisce metodi di deframmentazione.<br /> </td> 
    <td> È sufficiente utilizzare il metodo di deframmentazione del database. Questi metodi in genere si occupano dei problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
-   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (Oracle) e non sono sempre il modo più efficiente per gestire tabelle più grandi.<br /> </td> 
+   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS ( Oracle) e non sono sempre il modo più efficiente per gestire tabelle più grandi.<br /> </td> 
   </tr> 
   <tr> 
    <td> Discesa e ripristino<br /> </td> 
