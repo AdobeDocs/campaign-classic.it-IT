@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Informazioni sulle attività azione
-seo-title: Informazioni sulle attività azione
 description: Informazioni sulle attività azione
-seo-description: null
-page-status-flag: never-activated
-uuid: f7da73e0-0661-440e-8e69-f92290b69415
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-discoiquuid: d31c094e-c4c2-4948-b7f6-148dae2b5434
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 3%
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
@@ -37,5 +32,5 @@ ht-degree: 3%
 * **Gestione** dati SQL: consente di scrivere query SQL personalizzate per creare e compilare tabelle di lavoro. Fare riferimento a [SQL Data Management](../../workflow/using/sql-data-management.md).
 * **modulo** nlserver: avvia un modulo nlserver con i relativi argomenti. Fare riferimento al modulo [Server](../../workflow/using/nlserver-module.md).
 * **Importazione ed esportazione (compatibile con v4)**: Le attività di importazione ed esportazione (compatibilità v4) consentono di importare ed esportare dati utilizzando il modello (importazione o esportazione) specificato nell&#39;attività.
-* **Microsoft CRM, Salesforce, Oracle CRM On Demand**: consente di connettersi  Adobe Campaign in modo specifico a uno dei CRM preconfigurati. Queste attività sono simili al connettore CRM presentato in [questa sezione](../../workflow/using/crm-connector.md), con opzioni più specifiche. In particolare, potete scegliere il tipo di campagna da eseguire per la sincronizzazione.
+* **Microsoft CRM, Salesforce,  Oracle CRM On Demand**: consente di connettersi  Adobe Campaign in modo specifico a uno dei CRM preconfigurati. Queste attività sono simili al connettore CRM presentato in [questa sezione](../../workflow/using/crm-connector.md), con opzioni più specifiche. In particolare, potete scegliere il tipo di campagna da eseguire per la sincronizzazione.
 * **Aggiorna aggregazione**: consente di selezionare la modalità di aggiornamento aggregato (completo o parziale). Refer to [Update aggregate](../../workflow/using/update-aggregate.md).
