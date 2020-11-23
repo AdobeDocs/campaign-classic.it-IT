@@ -1,21 +1,18 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Informazioni sui casi di utilizzo dei flussi di lavoro
 description: Ulteriori informazioni sui casi di utilizzo che puoi eseguire utilizzando i flussi di lavoro Campaign Classic.
-page-status-flag: never-activated
-uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/STANDARD
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
-discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 46%
+ht-degree: 66%
 
 ---
 
@@ -36,7 +33,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Caricamento del contenuto di una consegna](../../workflow/using/loading-delivery-content.md)
 * [Flusso di lavoro di consegna cross-channel](../../workflow/using/cross-channel-delivery-workflow.md)
 * [Arricchimento delle e-mail con campi data personalizzati](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [Automazione della creazione, edizione e pubblicazione di contenuti](../../delivery/using/automating-via-workflows.md#examples)
+* [Automazione di creazione, edizione e pubblicazione di contenuti](../../delivery/using/automating-via-workflows.md#examples)
 
 ## Monitoraggio {#monitoring}
 
@@ -45,7 +42,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Invio di un report a un elenco](../../workflow/using/sending-a-report-to-a-list.md)
 * [Supervisione dei flussi di lavoro](../../workflow/using/supervising-workflows.md)
 * [Invio di avvisi personalizzati agli operatori](../../workflow/using/sending-personalized-alerts-to-operators.md)
-* [Impostazione di un processo di approvazione del destinatario prima dell&#39;invio](../../workflow/using/using-the-local-approval-activity.md)
+* [Impostazione di un processo di approvazione del destinatario prima di avviare una consegna](../../workflow/using/using-the-local-approval-activity.md)
 
 ## Gestione dati {#management}
 
@@ -57,7 +54,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Utilizzo di aggregati](../../workflow/using/using-aggregates.md)
 * [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Aggiornamento dell&#39;elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
+* [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
 
 ## Targeting {#designing-queries}
 
