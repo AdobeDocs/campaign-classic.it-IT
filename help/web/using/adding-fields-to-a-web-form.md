@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Aggiunta di campi a un modulo web
-seo-title: Aggiunta di campi a un modulo web
 description: Aggiunta di campi a un modulo web
-seo-description: null
-page-status-flag: never-activated
-uuid: 33c6ab85-b021-422a-a224-c9eff27e6fc0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: web-forms
-discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
@@ -246,7 +241,7 @@ Il numero di pulsanti di scelta in ciascuna riga della griglia corrisponde al nu
 
 >[!NOTE]
 >
->Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A questo scopo, andate alla **[!UICONTROL Advanced]** scheda, il **[!UICONTROL Label position]** display è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A tal fine, andate alla **[!UICONTROL Advanced]** scheda, il **[!UICONTROL Label position]** display è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Aggiunta di date e numeri {#adding-dates-and-numbers}
 
@@ -384,7 +379,7 @@ Per impostazione predefinita, i file caricati sono memorizzati in file di risors
 >
 >* Questo tipo di file deve essere riservato ai moduli con accesso protetto (utilizzando le credenziali).
 >*  Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto di utilizzare i campi di caricamento solo per i siti Intranet di tipo protetto.
->* Se più server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
+>* Se diversi server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
 >* Queste implementazioni richiedono l&#39;assistenza del team  Adobe Campaign Consulting.
 
 >
