@@ -1,16 +1,17 @@
 ---
 audience: end-user
-user-guide-title: Guida ad Adobe Campaign Classic
-breadcrumb-title: Guida a Campaign Classic
+breadcrumb-title: Campaign Classic
+product: campaign
+title: Guida a Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Progetta, pianifica, esegui, gestisci e ottimizza campagne di marketing cross-channel che offrono un alto ritorno sugli investimenti di marketing.
-product: adobe campaign
+solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2169'
 ht-degree: 97%
 
 ---
