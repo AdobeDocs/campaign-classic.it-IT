@@ -114,7 +114,7 @@ Durante la migrazione, la struttura ad albero viene automaticamente riorganizzat
 
 * Nome interno: NlMigration_KeepFolderStructure
 * Tipo di dati: Integer
-* Valore (testo): 3
+* Valore (testo): 1
 
 Se utilizzate questa opzione, dopo la migrazione dovrete eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.
 
