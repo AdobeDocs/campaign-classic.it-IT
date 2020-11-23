@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Aggiornamento elenco
-seo-title: Aggiornamento elenco
 description: Aggiornamento elenco
-seo-description: null
-page-status-flag: never-activated
-uuid: 1446f115-3f64-4b95-8e04-6426ab1b8dab
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +56,7 @@ Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segu
 
    L&#39;elenco dei destinatari corrispondenti viene quindi creato o aggiornato.
 
-Per ulteriori informazioni, consultate [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
+Per ulteriori informazioni, consultate [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/it/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
 
 ## Parametri di input {#input-parameters}
 
