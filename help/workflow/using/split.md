@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Divisione
 description: Ulteriori informazioni sull'attività del flusso di lavoro Dividi
-page-status-flag: never-activated
-uuid: 00dc3436-e271-4512-8f29-71a55213afc3
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: 9eadfda0-0614-4e4e-aed0-26f0b9222fbd
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -216,7 +213,7 @@ Check the **[!UICONTROL Generate complement]** option if you wish to exploit the
 
 Affinché questa opzione funzioni correttamente, i dati in entrata devono avere una chiave primaria.
 
-Ad esempio, se i dati vengono letti direttamente da un database esterno come Netezza (che non supporta la nozione di indice) tramite un&#39; **[!UICONTROL Data loading (RDBMS)]** attività, il complemento generato dall&#39; **[!UICONTROL Split]** attività sarà errato.
+Ad esempio, se i dati vengono letti direttamente da un database esterno come Netezza (che non supporta la nozione di indice) tramite un&#39; **[!UICONTROL Data loading (RDBMS)]** attività, il complemento generato dall&#39; **[!UICONTROL Split]** attività non sarà corretto.
 
 Per evitare questo problema, potete trascinare un&#39; **[!UICONTROL Enrichment]** attività appena prima dell&#39; **[!UICONTROL Split]** attività. Nell&#39; **[!UICONTROL Enrichment]** attività, controllate **[!UICONTROL Keep all additional data from the main set]** e specificate nei dati aggiuntivi le colonne da utilizzare per configurare i filtri dell&#39; **[!UICONTROL Split]** attività. I dati della transizione in ingresso dell&#39; **[!UICONTROL Split]** attività vengono quindi memorizzati localmente in una tabella temporanea sul server Adobe Campaign  e il complemento può essere generato correttamente.
 
