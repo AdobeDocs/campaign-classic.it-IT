@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Approvazione di campagne di marketing
-seo-title: Approvazione di campagne di marketing
 description: Approvazione di campagne di marketing
-seo-description: null
-page-status-flag: never-activated
-uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2476'
 ht-degree: 1%
 
 ---
@@ -48,7 +43,7 @@ Gli operatori del revisore possono quindi scegliere se approvare o meno il passa
 
 ![](assets/s_user_validation_page_confirm.png)
 
-Una volta che l&#39;operatore approva la scelta, l&#39;approvazione o il rifiuto del processo viene inoltrato al dashboard di distribuzione.
+Una volta che l&#39;operatore approva la scelta, l&#39;approvazione o il rifiuto del processo viene inoltrato al dashboard di consegna.
 
 ![](assets/s_user_validation_link_in_op_board.png)
 
