@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versione 20.1
 description: Versione 20.1
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 6%
@@ -46,7 +43,7 @@ _17 febbraio 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p> Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza  Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da  Adobe.</p>
+   <td> <p>Il Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza del Snowflake per eseguire la segmentazione Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da  Adobe.</p>
     <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
    </td> 
   </tr> 
@@ -56,12 +53,12 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Miglioramenti del connettore Hadoop FDA</strong><br /> </th> 
+   <th> <strong>Miglioramenti del connettore hadoop FDA</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Il connettore FDA Hadoop è stato migliorato per supportare Hadoop 3.0 e Cloudera.</p>
+   <td> <p>Il connettore Hadoop FDA è stato migliorato per supportare Hadoop 3.0 e Cloudera.</p>
     <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-hadoop.md">documentazione dettagliata</a>.</p>
    </td> 
   </tr> 
