@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versione 18.10
-seo-title: Versione 18.10
 description: Versione 18.10
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -96,7 +91,7 @@ ht-degree: 7%
 * È stato risolto un problema di esaurimento ID quando si utilizzavano gli indirizzi iniziali in una consegna. (NEO-11842)
 * È stato corretto un problema di blocco dei client che poteva verificarsi quando si utilizzavano flussi di lavoro complessi. (NEO-11847)
 * È stato corretto un problema di visualizzazione quando si utilizzava una distribuzione di valori con un collegamento 1:N. (NEO-11820)
-* È stato corretto un errore Oracle in Worflow Heatmap.
+* È stato corretto un errore  Oracle in Worflow Heatmap.
 * È stato risolto un problema corretto quando si aggiungeva una proposta di offerta in un&#39;attività di arricchimento.
 * È stato risolto un problema di connessione di gestione dati SQL.
 * È stato risolto un problema con la generazione di nomi di tabella del flusso di lavoro temporaneo in caso di ID negativi.
@@ -152,7 +147,7 @@ ht-degree: 7%
 **Miglioramenti**
 
 * Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
-* PostgreSQL 10, Debian 9 e Teradata 16.20 ora sono supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
+* PostgreSQL 10, Debian 9 e Teradata 16.20 sono ora supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
 * Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
 * L&#39;opzione di formula **di calcolo della** data è ora disponibile nelle proprietà di consegna quando si crea un singolo recapito utilizzando il modello di consegna diretta per posta. (NEO-9792)
 * La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e per le applicazioni Web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot; di seguito.
@@ -225,9 +220,9 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 * È stato risolto un problema che poteva impedire la ricerca di un destinatario nella schermata **Profili e Target** . (NEO-8228)
 * È stato risolto un problema che poteva causare un errore di timeout durante l&#39;accesso alla cartella Cronologia eventi nel caso di un numero elevato di record. (NEO-11738)
 * È stato risolto un problema che poteva causare la restituzione errata dei destinatari della distribuzione LINE come &quot;Non raggiungibile&quot;. (NEO-10833)
-* È stato risolto un problema che si verificava durante l&#39;esecuzione di una query del flusso di lavoro con una colonna aggiuntiva in Oracle. (NEO-11615)
+* È stato risolto un problema che si verificava durante l&#39;esecuzione di una query del flusso di lavoro con una colonna aggiuntiva su  Oracle. (NEO-11615)
 * È stato migliorato il sistema per garantire che le connessioni chiuse non vengano mantenute nel pool di connessioni troppo a lungo. (NEO-11392)
-* È stato risolto un problema che si verificava durante l&#39;utilizzo di un&#39;attività del flusso di lavoro di targeting (query, caricamento dei dati (RDBMS), ecc.) collegato tramite FDA a una tabella Oracle esterna che conteneva caratteri UTF8 (nel nome della tabella, nel nome del campo, ecc.) e che conteneva anche un vincolo di chiave primaria con un nome di vincolo predefinito generato dal sistema. (NEO-10714)
+* È stato risolto un problema che si verificava durante l&#39;utilizzo di un&#39;attività del flusso di lavoro di targeting (query, caricamento dei dati (RDBMS), ecc.) collegato tramite FDA a una tabella Oracle  esterna che conteneva caratteri UTF8 (nel nome della tabella, nel nome del campo, ecc.) e che conteneva anche un vincolo di chiave primaria con un nome di vincolo predefinito generato dal sistema. (NEO-10714)
 * È stato risolto un problema che poteva impedire l&#39;eliminazione del contenuto HTML di una consegna. (NEO-11327)
 * È stato risolto un problema relativo all&#39;anteprima dei file XML e CSV in un messaggio di posta diretta dopo l&#39;esecuzione di una campagna. (NEO-11290)
 * È stato risolto un problema che si verificava durante l&#39;ordinamento dei dati in un&#39;attività di flusso di lavoro di arricchimento. (NEO-11394)
@@ -238,11 +233,11 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 * È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;attività di caricamento dei dati per importare una colonna con il tipo di dati &quot;ora&quot;: il separatore di tempo viene reimpostato anche dopo la rimozione. (NEO-10743)
 * È stato risolto un problema che impediva la visualizzazione della cartella Consegne dall&#39;elenco delle cartelle Esecuzione nelle proprietà Consegna durante la modifica di un recapito periodico. (NEO-11094)
 * È stato risolto un problema che impediva alla finestra Visualizza popolazione di visualizzare più di 200 record come destinazione risultante di un&#39;attività Query in un flusso di lavoro. (NEO-11195)
-* È stato risolto un problema in Oracle che impediva l&#39;esecuzione di una query DELETE con più di 1000 elementi selezionati. (NEO-11171)
+* È stato risolto un problema in  Oracle che impediva l&#39;esecuzione di una query DELETE con più di 1000 elementi selezionati. (NEO-11171)
 * È stato risolto un problema che causava la codifica degli URL come URL tracciati nei parametri aggiuntivi di una notifica push Android. (NEO-11468)
 * È stato corretto un errore di script che si verificava nel report Attività utente quando si impostavano i parametri su &quot;Intervalli di un giorno&quot; e &quot;Apre&quot;. (NEO-11655)
 * È stato risolto un problema che si verificava durante la connessione al server di mid-sourcing o al Centro messaggi tramite un proxy Web autenticato. (NEO-11309)
-* È stato corretto un errore Oracle che si verificava durante il salvataggio di una nuova composizione di consegna dopo la selezione di un elemento di uno schema specifico **basato su una vista** SQL. (NEO-11682)
+* È stato corretto un errore Oracle  che si verificava quando una nuova composizione di consegna veniva salvata dopo la selezione di un elemento di uno schema specifico **basato su una vista** SQL. (NEO-11682)
 * È stato risolto un problema che causava la generazione di file di rifiuto contenenti falsi positivi durante l&#39;elaborazione di un file zip contenente un .csv tramite un&#39;attività di caricamento tramite l&#39;opzione Decompressione.
 * xtkjoblog è ora eliminato dalla pulizia.
 
