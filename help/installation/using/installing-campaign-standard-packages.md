@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Installazione di pacchetti Campaign Classic incorporati
 description: Scopri come installare i pacchetti predefiniti per Campaign
-page-status-flag: never-activated
-uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 5%
@@ -183,7 +180,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> CRM connectors<br /> </td> 
+   <td> Connettori di gestione delle relazioni con i clienti<br /> </td> 
    <td> Fornisce diversi connettori CRM per collegare la tua piattaforma Adobe Campaign  ai tuoi sistemi di terze parti.  <a href="../../platform/using/crm-connectors.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
