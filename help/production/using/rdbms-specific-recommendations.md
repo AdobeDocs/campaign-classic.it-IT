@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Raccomandazioni specifiche per RDBMS
-seo-title: Raccomandazioni specifiche per RDBMS
 description: Raccomandazioni specifiche per RDBMS
-seo-description: null
-page-status-flag: never-activated
-uuid: 637c1b5a-0484-4734-a012-eb4ba8036263
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 1%
+source-wordcount: '1087'
+ht-degree: 0%
 
 ---
 
@@ -96,7 +91,7 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >*  Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
->*  Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
+>*  Adobe riordina l&#39;aggiunta delle tabelle specifiche del modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
 >* I comandi **sottovuoto** e **reindicizzati** bloccheranno la tabella, che mette in pausa alcuni processi durante la manutenzione.
 >* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
 >* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
@@ -361,9 +356,9 @@ function sqlGetMemo(strSql)
  // ... other tables here
 ```
 
-## Oracle {#oracle}
+##  Oracle {#oracle}
 
-Contattare l&#39;amministratore del database per conoscere le procedure più adatte alla versione di Oracle in uso.
+Contattate l&#39;amministratore del database per informazioni sulle procedure più adatte alla versione di  Oracle in uso.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
