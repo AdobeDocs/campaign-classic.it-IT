@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Distribuzione autonoma
-seo-title: Distribuzione autonoma
 description: Distribuzione autonoma
-seo-description: null
-page-status-flag: never-activated
-uuid: 48ce793e-cb9f-4102-898f-758512cb9bf2
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -75,7 +70,7 @@ Con la crescita del volume, una variante di questa architettura sposta il server
    * il primo esposto al pubblico per il monitoraggio e l&#39;puntamento al computer sul suo IP pubblico;
    * il secondo alias esposto agli utenti interni per l&#39;accesso alla console e indirizzato allo stesso computer.
 
-* Firewall configurato per aprire SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere Configurazione [](../../installation/using/network-configuration.md)di rete.
+* Firewall configurato per aprire SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per  Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere Configurazione [](../../installation/using/network-configuration.md)di rete.
 
 Nei seguenti esempi, i parametri dell&#39;istanza sono:
 
