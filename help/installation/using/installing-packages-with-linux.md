@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Installazione di pacchetti con Linux
-seo-title: Installazione di pacchetti con Linux
 description: Installazione di pacchetti con Linux
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -61,7 +56,7 @@ Per installare  Adobe Campaign su un sistema operativo RPM (RHEL, CentOS e SUSE)
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   Il file rpm ha dipendenze su pacchetti che è possibile trovare sulle distribuzioni CentOS/Red Hat. Se non si desidera utilizzare alcune di queste dipendenze (ad esempio, se si desidera utilizzare Oracle JDK invece di OpenJDK), potrebbe essere necessario utilizzare l&#39;opzione &quot;nodeps&quot; di rpm:
+   Il file rpm ha dipendenze su pacchetti che è possibile trovare sulle distribuzioni CentOS/Red Hat. Se non si desidera utilizzare alcune di queste dipendenze (ad esempio, se si desidera utilizzare  Oracle JDK invece di OpenJDK), potrebbe essere necessario utilizzare l&#39;opzione &quot;nodeps&quot; di rpm:
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -187,7 +182,7 @@ Alcune combinazioni richiedono modifiche all&#39;ambiente utilizzato per eseguir
 
 Se necessario, modificate il file **customer.sh** utilizzando il comando **vi customer.sh** e adattate la configurazione o aggiungete le righe mancanti:
 
-* Per il client Oracle:
+* Per il client Oracle :
 
    ```
    export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -195,7 +190,7 @@ Se necessario, modificate il file **customer.sh** utilizzando il comando **vi cu
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   Il contenuto della variabile di ambiente ORACLE_HOME corrisponde alla directory di installazione di Oracle.
+   Il contenuto della variabile di ambiente  ORACLE_HOME corrisponde alla directory di installazione  Oracle.
 
    Il contenuto della variabile TNS_ADMIN deve corrispondere alla posizione del file **tnsnames.ora** .
 
@@ -257,9 +252,9 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Client Oracle in Linux {#oracle-client-in-linux}
+###  Oracle Client in Linux {#oracle-client-in-linux}
 
-Quando si utilizza Oracle con  Adobe Campaign, è necessario configurare i livelli client Oracle in Linux.
+Quando si utilizza  Oracle con  Adobe Campaign, è necessario configurare i livelli client  Oracle in Linux.
 
 * Utilizza il client completo
 * Definizione TNS
@@ -279,7 +274,7 @@ Quando si utilizza Oracle con  Adobe Campaign, è necessario configurare i livel
 
 * Configurazione per  Adobe Campaign
 
-   Per completare l&#39;installazione del client Oracle per  Adobe Campaign, è necessario creare un collegamento simbolico per il file **.so** utilizzato da  Adobe Campaign.
+   Per completare l&#39;installazione del client Oracle  per  Adobe Campaign, è necessario creare un collegamento simbolico per il file **.so** utilizzato da  Adobe Campaign.
 
    A questo scopo, utilizzate i seguenti comandi:
 
@@ -288,7 +283,7 @@ Quando si utilizza Oracle con  Adobe Campaign, è necessario configurare i livel
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Se si verifica un problema, verificare che i pacchetti elencati nella documentazione [di installazione di](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) Oracle siano correttamente installati.
+Se si verifica un problema, accertatevi che i pacchetti elencati nella documentazione [di installazione di Oracle](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) siano correttamente installati.
 
 ## Controlli di installazione {#installation-checks}
 
