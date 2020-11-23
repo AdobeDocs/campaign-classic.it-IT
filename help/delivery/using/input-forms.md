@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Moduli di input
-seo-title: Moduli di input
 description: Moduli di input
-seo-description: null
-page-status-flag: never-activated
-uuid: f7537707-3ea9-4afb-a4c1-4a985f62dbdf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: content-management
-discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 2%
 
 ---
@@ -134,7 +129,7 @@ I moduli di modifica negli elenchi vengono utilizzati nei casi seguenti:
 
 * Per semplificare l&#39;immissione delle informazioni,
 * Presenza di un controllo a più linee,
-* Le colonne nell&#39;elenco contengono solo i campi principali e il modulo visualizza tutti i campi dell&#39;elemento raccolta.
+* Le colonne dell&#39;elenco contengono solo i campi principali e il modulo visualizza tutti i campi dell&#39;elemento della raccolta.
 
 ![](assets/d_ncs_content_form7.png)
 
