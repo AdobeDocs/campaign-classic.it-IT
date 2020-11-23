@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Matrice di compatibilità
 description: Matrice di compatibilità Campaign Classic
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 13%
@@ -105,7 +102,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per OpenJDK.</p>
+<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da  Oracle e per OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -132,7 +129,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 <table>
 <tbody>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>19c</p>
 <p>18c</p>
@@ -187,7 +184,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 <p>API versione 15</p>
 </td>
 </tr>
-<tr><td>API Oracle On Demand</td>
+<tr><td> Oracle On Demand API</td>
 <td>
 <p>API Web Services v1.0</p>
 </td>
@@ -206,7 +203,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 <table>
 <tbody>
 <tr>
-<td>Analisi sinapsi di Microsoft Azure</td>
+<td>Microsoft  Azure synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -215,7 +212,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 </td>
 </tr>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>18c</p>
 <p>12c</p>
@@ -283,7 +280,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 </td>
 </tr>
 <tr>
-<td>Snowflake </td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
