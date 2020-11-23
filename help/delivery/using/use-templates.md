@@ -1,18 +1,14 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Utilizzare i modelli di consegna
-seo-title: Utilizzare i modelli di consegna
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 I modelli di distribuzione consentono una maggiore efficienza fornendo scenari pronti per la maggior parte dei tipi di attività più comuni. Grazie ai modelli, gli esperti di marketing possono distribuire nuove campagne con una personalizzazione minima in tempi più brevi.
 
-Ulteriori informazioni sui modelli di consegna in [questa sezione](../../delivery/using/creating-a-delivery-template.md).
+Learn more about delivery templates in [this section](../../delivery/using/creating-a-delivery-template.md).
 
 ## Guida introduttiva ai modelli di distribuzione {#gs-templates}
 
