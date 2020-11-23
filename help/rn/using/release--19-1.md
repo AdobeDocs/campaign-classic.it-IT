@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versione 19.1
-seo-title: Versione 19.1
 description: Versione 19.1
-seo-description: null
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2623'
-ht-degree: 5%
+source-wordcount: '2622'
+ht-degree: 7%
 
 ---
 
@@ -62,8 +57,8 @@ _3 ottobre 2019_
 
 **Miglioramenti**
 
-* È stato risolto un problema durante l&#39;utilizzo del connettore CRM per Salesforce. (NEO-17712)
-* È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l&#39;invio di messaggi transazionali.
+* È stato risolto un problema che si verificava con l’utilizzo del connettore di gestione delle relazioni con i clienti per Salesforce. (NEO-17712)
+* È stato risolto un problema di indice che poteva causare problemi di prestazioni durante l’invio di messaggi transazionali.
 * È stato risolto un problema di prestazioni durante l&#39;invio dei messaggi. (NEO-17558)
 * È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di origine mid-Sourcing. (NEO-12395)
 * È stato risolto un problema che impediva l&#39;uso completo dell&#39;attività di gestione dati SQL (manca la &quot;gestione dati SQL&quot; denominata right).
@@ -80,7 +75,7 @@ _13 agosto 2019_
 * È stato risolto un problema relativo all&#39;installazione del pacchetto midEmitter tramite la riga di comando.
 * È stata aggiunta una nuova opzione di autenticazione per supportare le credenziali OAuth nel connettore CA con Microsoft Dynamics. (NEO-11982)
 * È stato risolto un problema con la gestione UUID (Unique Universal Identifier) che causava il fallimento delle attività del flusso di lavoro di caricamento di query e dati con Hive FDA.
-* Risolto un problema di regressione su Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
+* Risolto un problema di regressione su  Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
 * È stata corretta una regressione che causava la selezione di un fuso orario non corretto durante l&#39;impostazione dell&#39;ora in un&#39;attività del flusso di lavoro dell&#39;Utilità di pianificazione.
 
 ## ![](assets/do-not-localize/green_2.png) Versione 19.1.4 - Build 9032{#release-19-1-4-build-9032}
@@ -110,7 +105,7 @@ _21 giugno 2019_
 
 _30 maggio 2019_
 
-**Novità?**
+**Novità**
 
 <table> 
  <thead> 
@@ -122,7 +117,7 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete al Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete al Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
@@ -136,7 +131,7 @@ _30 maggio 2019_
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
    <td> Con questa nuova versione,  Adobe Campaign ora supporta i seguenti sistemi di database. Refer to the <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Compatibility Matrix</a>.<br /> 
     <ul> 
-     <li> <p>Oracle 18c</p> </li> 
+     <li> <p> Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
      <li> <p>Teradata 16 (FDA)</p> </li> 
@@ -211,7 +206,7 @@ _30 maggio 2019_
 * È stato risolto un problema che impediva l&#39;eliminazione di un&#39;applicazione Web anche se disponeva dei diritti di accesso corretti. (NEO-12072)
 * È stato risolto un problema che poteva causare la sovrascrittura di alcuni valori durante l&#39;esportazione e l&#39;importazione di un oggetto tramite XML. È stata aggiunta l’opzione XtkExport_IncludeDefaultValues. Se è impostata su True (comportamento predefinito), vengono esportati tutti i valori. Se è impostata su False, le modifiche vengono sovrascritte con il valore predefinito. (NEO-11979)
 * È stato risolto un problema che causava il fallimento dell&#39;attività del **[!UICONTROL Alert]** flusso di lavoro quando un&#39;attività di arricchimento veniva aggiunta dopo una query. (NEO-12132)
-* È stato risolto un problema nelle impostazioni Oracle in cui gli offset della pipeline (trigger) non venivano recuperati correttamente dal database causando duplicati. (NEO-12121)
+* È stato risolto un problema  impostazioni Oracle in cui gli offset della pipeline (trigger) non venivano recuperati correttamente dal database causando duplicati. (NEO-12121)
 * È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot quando si utilizzava l&#39;integrazione di Analytics (NEO-12103)
 * È stato risolto un problema relativo al report Analisi descrittiva. (NEO-11414)
 * È stato risolto un problema con i connettori CRM quando la tabella remota conteneva un campo con un carattere di sottolineatura nel nome.
