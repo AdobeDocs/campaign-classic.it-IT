@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Gestione del fuso orario
-seo-title: Gestione del fuso orario
 description: Gestione del fuso orario
-seo-description: null
-page-status-flag: never-activated
-uuid: b8926761-65e2-48fd-8689-2ae6b0596e72
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-discoiquuid: b9846eda-eeca-433e-b961-6dfc2aa2708b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 1%
 
 ---
@@ -73,7 +68,7 @@ Selezionare l&#39; **[!UICONTROL UTC database (date fields with time zone)]** op
 
 >[!IMPORTANT]
 >
->Se si utilizza **Oracle**, i file timezone (.dat) dei livelli client Oracle devono essere compatibili con i file timezones installati sul server.
+>Se utilizzate **Oracle**, i file del fuso orario (.dat) dei livelli client  Oracle devono essere compatibili con i file timezones installati sul server.
 
 Se il database non è UTC, è possibile selezionare uno dei fusi orari disponibili nell&#39;elenco a discesa. È inoltre possibile utilizzare il fuso orario del server o selezionare l&#39;opzione UTC (Coordinated Universal Time).
 
