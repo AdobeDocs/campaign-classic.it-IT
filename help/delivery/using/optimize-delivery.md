@@ -1,24 +1,20 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Ottimizzazione della distribuzione dei messaggi
-seo-title: Ottimizzazione della distribuzione dei messaggi
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 6%
 
 ---
 
 
-# Ottimizzazione della distribuzione {#optimize-delivery}
+# Ottimizzare la consegna {#optimize-delivery}
 
 Prima ancora di iniziare a creare le consegne, puoi intraprendere diverse azioni per proteggere e ottimizzare il processo di invio a monte.
 
@@ -28,7 +24,7 @@ La sezione seguente illustra le procedure ottimali e consigliate per una configu
 
 Diversi fattori possono influire direttamente sulle prestazioni del server e rallentare la piattaforma:
 
-* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, questo aumenta la quantità di dati necessari per preparare la consegna.  Ulteriori informazioni sulla personalizzazione in [questa sezione](../../delivery/using/about-personalization.md)
+* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, questo aumenta la quantità di dati necessari per preparare la consegna.  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
 
 * Caricamento del server: quando il server di marketing gestisce contemporaneamente diverse attività, può rallentare le prestazioni. Il server di marketing deve coordinare tutti i dati in entrata e in uscita per tutte le consegne, per garantire che i dati siano corretti e puntuali.
 
