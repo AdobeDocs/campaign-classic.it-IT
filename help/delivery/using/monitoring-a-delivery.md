@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Monitoraggio di una consegna
-seo-title: Monitoraggio di una consegna
 description: Monitoraggio di una consegna
-seo-description: null
-page-status-flag: never-activated
-uuid: 7cb409eb-a01c-4b4d-bb62-760e0bafdc8a
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2559'
 ht-degree: 2%
 
 ---
@@ -28,7 +23,7 @@ Il dashboard **di** distribuzione è fondamentale per monitorare le consegne e g
 
 * [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
 * [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md)
-* [Best practice di distribuzione](../../delivery/using/delivery-best-practices.md)
+* [Best practice di consegna](../../delivery/using/delivery-best-practices.md)
 * [Gestione delle consegne](../../delivery/using/about-deliverability.md)
 
 ## Pannello consegna {#delivery-dashboard}
