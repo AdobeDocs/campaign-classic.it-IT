@@ -1,24 +1,20 @@
 ---
-title: Creazione di contenuti personalizzati
-seo-title: Creazione di contenuti personalizzati
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: Creare contenuti personalizzati
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 7%
 
 ---
 
 
-# Creazione di contenuti personalizzati {#build-personalized-content}
+# Creare contenuti personalizzati {#build-personalized-content}
 
 Durante la progettazione del contenuto del messaggio, cercate di evitare problemi comuni che potrebbero impedire l&#39;esecuzione della distribuzione. Nella maggior parte dei casi, eventuali errori sono correlati a [personalizzazione](../../delivery/using/about-personalization.md), [formattazione](../../delivery/using/defining-the-email-content.md#message-content) e [immagini](../../delivery/using/defining-the-email-content.md#adding-images).
 
@@ -99,7 +95,7 @@ Verificare eventuali modifiche prima dell&#39;invio finale
 
 Per impostazione predefinita, il numero di caratteri in un SMS soddisfa gli standard GSM (Global System for Mobile Communications). I messaggi SMS che utilizzano la codifica GSM sono limitati a 160 caratteri o 153 caratteri per SMS per messaggi inviati in più parti.
 
-La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. L&#39;inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. È possibile autorizzare la traslazione dei caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della corrispondente **[!UICONTROL External account]**.
+La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM.  È possibile autorizzare la traslazione dei caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della corrispondente **[!UICONTROL External account]**.
 Ulteriori informazioni [in questa sezione](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
 **Suggerimenti**:
