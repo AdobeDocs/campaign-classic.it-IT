@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Il canale delle app mobili in Adobe Campaign Classic
 description: Questa sezione fornisce informazioni generali specifiche per il canale dell'app mobile in Adobe Campaign Classic.
-page-status-flag: never-activated
-uuid: e8d26b33-dc7c-4abd-956a-92f419a117e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 5%
@@ -95,8 +92,7 @@ Il server Adobe Campaign  deve essere in grado di contattare il server APN sulle
 
    >[!NOTE]
    >
-   > A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione.
- [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
+   > A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
 Per verificare che funzioni correttamente, usate i seguenti comandi:
 
