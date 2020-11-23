@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Account esterni
 description: Scopri come creare account esterni
-page-status-flag: never-activated
-uuid: e06e7a36-b449-4ab0-a4f6-fa82dbb8de11
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 10%
@@ -37,7 +34,7 @@ Puoi impostare i seguenti tipi di account esterni:
 * [Account esterno Adobe Experience Manager](#adobe-experience-manager-external-account)
 * [Account esterno  Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Account esterno di Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Account esterno Oracle on demand](#oracle-on-demand-external-account)
+* [account esterno Oracle su richiesta](#oracle-on-demand-external-account)
 * [Account esterno di Salesforce CRM](#salesforce-crm-external-account)
 
 ## Creazione di un account esterno {#creating-an-external-account}
@@ -151,14 +148,14 @@ I database esterni compatibili con Campaign sono elencati nella matrice [Compati
 
 Le impostazioni di configurazione dell&#39;account esterno dipendono dal motore del database. Ulteriori informazioni nelle sezioni seguenti:
 
-* Configurare l&#39;accesso alla sinapsi di [Azure](../../installation/using/configure-fda-synapse.md)
-* Configurare l&#39;accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
-* Configurare l&#39;accesso a [Oracle](../../installation/using/configure-fda-oracle.md)
-* Configurare l&#39;accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
-* Configurare l&#39;accesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-* Configurare l&#39;accesso al Snowflake [](../../installation/using/configure-fda-snowflake.md)
-* Configurare l&#39;accesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
-* Configurare l&#39;accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
+* Configurare l&#39;accesso ad [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Configurare l&#39;accesso ad [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Configurare l&#39;accesso ad [Oracle](../../installation/using/configure-fda-oracle.md)
+* Configurare l&#39;accesso ad [Netezza](../../installation/using/configure-fda-netezza.md)
+* Configurare l&#39;accesso ad [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
+* Configurare l&#39;accesso al [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Configurare l&#39;accesso ad [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Configurare l&#39;accesso ad [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ## Account esterno di Web Analytics {#web-analytics-external-account}
 
@@ -410,25 +407,25 @@ Con **[!UICONTROL Web API]** il tipo di distribuzione e **[!UICONTROL Certificat
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
 
-## Account esterno Oracle on demand {#oracle-on-demand-external-account}
+##  account esterno Oracle su richiesta {#oracle-on-demand-external-account}
 
-Il conto **[!UICONTROL Oracle on demand]** esterno consente di importare ed esportare i dati Oracle in  Adobe Campaign.
+L’account **[!UICONTROL Oracle on demand]** esterno consente di importare ed esportare  dati Oracle in  Adobe Campaign.
 
 ![](assets/ext_account_18.png)
 
-Per configurare l&#39;account esterno Oracle on demand per l&#39;utilizzo con  Adobe Campaign, è necessario fornire i seguenti dettagli:
+Per configurare l&#39;account esterno  Oracle su richiesta per l&#39;utilizzo con  Adobe Campaign, dovete fornire i seguenti dettagli:
 
 * **[!UICONTROL Account]**
 
-   Account utilizzato per accedere a Oracle CRM su richiesta.
+   Account utilizzato per accedere a  Oracle CRM su richiesta.
 
 * **[!UICONTROL Server]**
 
-   URL del server Oracle CRM su richiesta.
+   URL del server Oracle CRM  su richiesta.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per accedere a Oracle CRM su richiesta.
+   Password utilizzata per accedere a  Oracle CRM su richiesta.
 
 For more information on this configuration, refer to this [page](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
 
