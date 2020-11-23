@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Creazione e gestione di elenchi
 description: Scopri come creare e gestire gli elenchi
-page-status-flag: never-activated
-uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: profile-management
-discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
