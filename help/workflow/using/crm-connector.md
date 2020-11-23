@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Connettore di gestione delle relazioni con i clienti
 description: Ulteriori informazioni sul connettore CRM e configurare la sincronizzazione dei dati
-page-status-flag: never-activated
-uuid: b3856a82-b1dc-4e36-a2d0-14edc5b66b3b
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: af7c0d1d-10ac-427b-8d12-b97eb91b30a1
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -92,7 +89,7 @@ Puoi specificare il campo CRM remoto da prendere in considerazione per identific
 Per impostazione predefinita, vengono utilizzati i campi seguenti (nell&#39;ordine specificato):
 
 * Per Microsoft Dynamics: **modifiedon**,
-* Per Oracle On Demand: **LastUpdated**, **ModifiedDate**, **LastLoggedIn**,
+* Per  Oracle On Demand: **LastUpdated**, **ModifiedDate**, **LastLoggedIn**,
 * Per Salesforce.com: **LastModifiedDate**, **SystemModestamp**.
 
 Attivando l&#39; **[!UICONTROL Automatic index]** opzione vengono generate tre variabili che possono essere utilizzate nel flusso di lavoro di sincronizzazione tramite un&#39;attività di **[!UICONTROL JavaScript code]** tipo. Tali attività sono:
@@ -204,7 +201,7 @@ Anche quando l&#39; **[!UICONTROL Process rejects]** opzione non è abilitata, v
 
 La transizione **[!UICONTROL Reject]** in uscita consente di accedere allo schema di output che contiene le colonne specifiche relative ai messaggi di errore e ai codici. Queste colonne sono:
 
-* Per Oracle On Demand: **errorLogFilename** (nome del file di registro sul lato Oracle), **errorCode** (codice di errore), **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto di errore).
+* Per  Oracle On Demand: **errorLogFilename** (nome del file di registro sul lato Oracle ), **errorCode** (codice di errore), **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto di errore).
 * Per Salesforce.com: **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto dell&#39;errore).
 
 ## Importazione di oggetti eliminati in CRM {#importing-objects-deleted-in-the-crm}
@@ -235,7 +232,7 @@ Anche quando l&#39; **[!UICONTROL Process rejects]** opzione è disabilitata, vi
 
 ## Esempio di configurazione di un&#39;importazione di contatti {#example-of-how-to-configure-a-contact-import}
 
-Nell&#39;esempio seguente, l&#39;attività è configurata per importare contatti da un CRM Oracle On Demand. Prima di essere importati, i campi CRM vengono selezionati in modo che coincidano con quelli già esistenti nel database Adobe Campaign .
+Nell&#39;esempio seguente, l&#39;attività è configurata per importare contatti da un Oracle On Demand CRM . Prima di essere importati, i campi CRM vengono selezionati in modo che coincidano con quelli già esistenti nel database Adobe Campaign .
 
 ![](assets/crm_connectors_ood_6.png)
 
