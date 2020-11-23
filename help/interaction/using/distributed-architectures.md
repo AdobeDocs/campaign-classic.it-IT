@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Architetture distribuite
-seo-title: Architetture distribuite
 description: Architetture distribuite
-seo-description: null
-page-status-flag: never-activated
-uuid: f672446f-18e6-4fff-81a1-01ee22792755
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 translation-type: tm+mt
-source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 1%
 
 ---
@@ -169,7 +164,7 @@ ALTER TABLE nmspropositionrcp
   ALTER COLUMN iinteractionid TYPE bigint;
 ```
 
-### Oracle {#oracle}
+###  Oracle {#oracle}
 
 La modifica delle dimensioni di un tipo **Number** non comporta la riscrittura di valori o indice. È quindi immediata.
 
