@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Definizione di contenuti interattivi in Adobe Campaign Classic
 description: Scoprite come definire contenuti e-mail interattivi e dinamici con AMP in Adobe Campaign Classic.
-page-status-flag: never-activated
-uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
