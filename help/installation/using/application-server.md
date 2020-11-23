@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Server dell’applicazione
-seo-title: Server dell’applicazione
 description: Server dell’applicazione
-seo-description: null
-page-status-flag: never-activated
-uuid: 837c6a5c-53a4-4d1b-a084-9cf77e7a0eee
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -30,7 +25,7 @@ Il generatore dinamico di pagine Web utilizza la tecnologia JSP 1.2. Per questo,
 
 È innanzitutto necessario installare un JDK sui computer in cui si desidera eseguire il server applicazione Adobe Campaign  (processo Web **** nlserver), perché include un contenitore servlet, Apache Tomcat, utilizzato per generare pagine Web dinamiche (rapporti, moduli Web, ecc.).
 
-L&#39;applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per **OpenJDK**.
+L&#39;applicazione è stata approvata per Java Development Kit (JDK) sviluppato da  Oracle e per **OpenJDK**.
 
 Le versioni supportate sono dettagliate nella matrice [](../../rn/using/compatibility-matrix.md)Compatibilità campagna.
 
