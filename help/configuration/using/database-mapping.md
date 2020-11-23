@@ -351,7 +351,7 @@ Un collegamento descrive l&#39;associazione tra una tabella e l&#39;altra.
 
 I vari tipi di associazioni (note come &quot;cardinalità&quot;) sono i seguenti:
 
-* Cardinality 1-1: one occurrence of the source table can have at most one corresponding occurrence of the target table.
+* Cardinalità 1-1: una occorrenza della tabella di origine può avere al massimo una occorrenza corrispondente della tabella di destinazione.
 * Cardinalità 1-N: una occorrenza della tabella di origine può avere diverse occorrenze corrispondenti della tabella di destinazione, ma una occorrenza della tabella di destinazione può avere al massimo una occorrenza corrispondente della tabella di origine.
 * Cardinalità N-N: una occorrenza della tabella di origine può avere diverse occorrenze corrispondenti della tabella di destinazione e viceversa.
 
