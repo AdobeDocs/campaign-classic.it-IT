@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Definizione delle condizioni di filtro
-seo-title: Definizione delle condizioni di filtro
 description: Definizione delle condizioni di filtro
-seo-description: null
-page-status-flag: never-activated
-uuid: 2ed5d0bd-88fd-4eff-baf0-ed1b097269da
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-discoiquuid: 8e575da0-c51a-4106-a826-3e1771e63649
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '3232'
+source-wordcount: '3229'
 ht-degree: 37%
 
 ---
@@ -790,7 +785,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
 
 >[!NOTE]
 >
->La funzione **Dateonly** tiene conto del fuso orario del server, non dell&#39;operatore.
+>La funzione **Dateonly** tiene conto del fuso orario del server, non di quello dell&#39;operatore.
 
 **Numeriche**
 
