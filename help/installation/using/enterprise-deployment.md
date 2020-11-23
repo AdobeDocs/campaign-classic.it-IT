@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Distribuzione aziendale
-seo-title: Distribuzione aziendale
 description: Distribuzione aziendale
-seo-description: null
-page-status-flag: never-activated
-uuid: 2c2b5cef-86cb-4cb5-801a-ca6afeae90bb
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -66,7 +61,7 @@ Costi hardware e amministrativi più elevati.
    * il primo esposto al pubblico per il monitoraggio e l&#39;indicazione del sistema di bilanciamento del carico su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
    * il secondo è esposto agli utenti interni per l&#39;accesso tramite la console e indica un sistema di bilanciamento del carico su un indirizzo IP virtuale (VIP), che viene quindi distribuito ai due server applicazione.
 
-* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione Accesso al [database](../../installation/using/network-configuration.md#database-access).
+* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per  Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione Accesso al [database](../../installation/using/network-configuration.md#database-access).
 
 >[!CAUTION]
 >
