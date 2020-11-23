@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Blocchi di personalizzazione
-seo-title: Blocchi di personalizzazione
 description: Blocchi di personalizzazione
-seo-description: null
-page-status-flag: never-activated
-uuid: f9867f8d-f6ce-4a5f-b6b4-fd8056d28576
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 2%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +19,7 @@ ht-degree: 2%
 
 I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che potete inserire nelle consegne. Ad esempio, potete aggiungere un logo, un messaggio di saluto o un collegamento a una pagina mirror. Consultate [Inserimento di blocchi](#inserting-personalization-blocks)di personalizzazione.
 
-![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [nel video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#personalization-blocks-video)
 
 I blocchi di personalizzazione sono accessibili tramite il **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Adobe Campaign Explorer . Per impostazione predefinita sono disponibili diversi blocchi (consultate Blocchi [di personalizzazione](#out-of-the-box-personalization-blocks)predefiniti).
 
