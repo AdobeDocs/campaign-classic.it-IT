@@ -1,26 +1,23 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Domande frequenti sull'aggiornamento della build
 description: Domande comuni relative agli aggiornamenti delle build di Campaign
-page-status-flag: never-activated
-uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # Domande frequenti sull&#39;aggiornamento build {#build-upgrade-faq}
 
- Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con le nostre note [sulla](../../rn/using/rn-overview.md)versione pubblicate, probabilmente sei a conoscenza del fatto che in media 2/3 versioni secondarie con nuove funzioni, miglioramenti e correzioni vengono rilasciati ogni anno. Inoltre, rilasciamo periodicamente build con solo correzioni cumulative. Questa cadenza regolare di aggiornamenti mira a ottenere l&#39;ultimo e più grande nelle vostre mani, mantenendo il vostro ambiente completamente sicuro e ovviamente migliorando la vostra esperienza con il nostro prodotto.
+ Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con le nostre note [sulla](../../rn/using/rn-overview.md)versione pubblicate, probabilmente sei a conoscenza del fatto che in media 2/3 versioni secondarie con nuove funzioni, miglioramenti e correzioni vengono rilasciati ogni anno. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa cadenza regolare di aggiornamenti mira a ottenere l&#39;ultimo e più grande nelle vostre mani, mantenendo il vostro ambiente completamente sicuro e ovviamente migliorando la vostra esperienza con il nostro prodotto.
 
 È fondamentale che i nostri clienti eseguano la versione più recente di  Adobe Campaign. Permette anche  Adobe di aiutare molto più efficacemente in caso di problemi - identificare, riprodurre e risolvere un problema su una vecchia build richiede generalmente più tempo, per non parlare del fatto che alcuni problemi che si possono incontrare possono essere già stati risolti in una recente build.
 
