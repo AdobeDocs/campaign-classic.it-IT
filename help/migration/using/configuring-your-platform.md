@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Configurazione della piattaforma
-seo-title: Configurazione della piattaforma
 description: Configurazione della piattaforma
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +27,7 @@ Elementi di esempio da verificare:
 * L&#39;attributo **tablespace** recupera i valori per impostazione predefinita, in altre parole quelli definiti nella procedura guidata di distribuzione.
 * Se hai aggiunto una visualizzazione di riferimento alla tabella NmsRecipient, devi eliminarla prima di eseguire la migrazione.
 
-Questo avviso riguarda anche gli utenti Oracle: se è stata aggiunta l&#39;opzione **usetimestamptz:1** durante un post aggiornamento (vedere Fusi [](../../migration/using/general-configurations.md#time-zones)orari), tutte le tabelle contenenti almeno un campo **data+ora** vengono ricreate.
+Questo avviso riguarda anche  utenti Oracle: se è stata aggiunta l&#39;opzione **usetimestamptz:1** durante un post aggiornamento (vedere Fusi [](../../migration/using/general-configurations.md#time-zones)orari), tutte le tabelle contenenti almeno un campo **data+ora** vengono ricreate.
 
 ## Prima della migrazione {#before-the-migration}
 
@@ -44,7 +39,7 @@ Durante la migrazione ad  Adobe Campaign v7, è necessario configurare i seguent
 
    Se desiderate utilizzare la modalità &quot;multi timezone&quot;, consultate la sezione Fusi [orari](../../migration/using/general-configurations.md#time-zones) .
 
-   Se si utilizza Oracle come database, verificare che i file del fuso orario Oracle siano stati sincronizzati correttamente tra il server dell&#39;applicazione e il server del database. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
+   Se utilizzate  Oracle come database, verificate che i file  fuso orario Oracle siano stati sincronizzati correttamente tra il server dell&#39;applicazione e il server del database. For more on this, refer to the [Oracle](../../migration/using/general-configurations.md#oracle) section.
 
 * Zone di protezione
 
