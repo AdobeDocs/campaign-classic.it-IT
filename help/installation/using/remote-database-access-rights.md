@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Autorizzazioni per l'accesso a un database esterno
 description: Autorizzazioni di accesso al database esterno
-page-status-flag: never-activated
-uuid: b84359b9-c584-431d-80d5-71146d9b6854
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 1%
@@ -32,7 +29,7 @@ In primo luogo, affinché l&#39;utente possa eseguire operazioni su un database 
 
       >[!NOTE]
       >
-      >La parte **:base** è facoltativa in Oracle.
+      >La parte **:base** è facoltativa in  Oracle.
 
 1. Salvate il nome a destra e collegatelo all&#39;utente scelto dal **[!UICONTROL Administration > Access Management > Operators]** nodo di Adobe Campaign Explorer .
 
@@ -52,7 +49,7 @@ L&#39;amministratore del database deve far corrispondere questi diritti ai dirit
 
 ## Diritti FDA {#fda-rights}
 
-|   | Snowflake  | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
+|   | Snowflake | Redshift |  Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Connessione al database remoto** | UTILIZZO IN MAGAZZINO, UTILIZZO SUL DATABASE E UTILIZZO SUI privilegi DELLO SCHEMA | Creazione di un utente collegato all&#39;account AWS | CREA privilegio SESSION | Autorizzazione CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI |
 | **Creazione di tabelle** | CREA IL privilegio TABELLA SU SCHEMA | CREA privilegio | CREATE TABLE, privilegio | CREA autorizzazione TABELLA | CREA privilegio | CREA privilegio |
@@ -66,7 +63,7 @@ L&#39;amministratore del database deve far corrispondere questi diritti ai dirit
 | **Accesso ai dati del client** | SELECT on (FUTURE) TABLE(S) o VIEW(S) Privilegi | SELECT, privilegio | SELEZIONARE O SELEZIONARE QUALSIASI privilegio TABELLA | SELECT, autorizzazione | SELECT, privilegio | SELECT, privilegio |
 | **Accesso ai metadati** | Selezionare il privilegio INFORMATION_SCHEMA SCHEMA | SELECT, privilegio | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione DESCRIBE | VISUALIZZA autorizzazione DEFINIZIONE | Nessun privilegio richiesto per l&#39;utilizzo del comando &quot;\d table&quot; | SELECT, privilegio |
 
-|   | DB2 UDB | TeraData | InfiniDB | IQ Sybase / Sybase ASE | Netezza | Greenplum | AsterData |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ / Sybase ASE | Netezza | Greenplum | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Connessione al database remoto** | autorità CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione CONNECT | Nessun privilegio richiesto | privilegio CONNECT | privilegio CONNECT |
 | **Creazione di tabelle** | Autorità CREATETAB | CREA TABELLA o TABELLA, parola chiave | CREA privilegio | Autorità di RISORSA e autorizzazione CREATE | TABLE, privilegio | CREA privilegio | CREA privilegio |
