@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versione 18.4
-seo-title: Versione 18.4
 description: Versione 18.4
-seo-description: null
-page-status-flag: never-activated
-uuid: d132570e-20e6-4550-95bd-176701f43b19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2262'
 ht-degree: 7%
 
 ---
@@ -39,7 +34,7 @@ ht-degree: 7%
 * È stato risolto un problema di prestazioni durante l&#39;invio delle notifiche push. (NEO-11787)
 * È stato risolto un problema che impediva il monitoraggio Web per i domini &quot;com.au&quot; (NEO-4385).
 * È stato corretto un problema di blocco dei client che poteva verificarsi quando si utilizzavano flussi di lavoro complessi. (NEO-11847)
-* È stato corretto un errore Oracle durante il salvataggio di una nuova consegna dopo la selezione di un elemento di uno schema specifico (NEO-11682).
+* È stato corretto un errore Oracle  durante il salvataggio di una nuova consegna dopo la selezione di un elemento di uno schema specifico (NEO-11682).
 * È stato risolto un problema che si verificava durante la query in un campo contenente caratteri con accenti (FDA/Teradata). L&#39;account esterno ora consente di modificare la codifica utilizzata per comunicare con il driver Teradata. (NEO-11818).
 * È stato risolto un problema di tracciamento durante il passaggio di URL in variabili aggiuntive in una notifica push che poteva causare la mancata formattazione o la mancata ricezione di dati non corretti da parte dell&#39;applicazione mobile. (NEO-11468, NEO-11960)
 * È stato risolto un problema che causava un problema di visualizzazione quando si utilizzava una distribuzione di valori con un collegamento 1:N. (NEO-11820)
@@ -95,7 +90,7 @@ ht-degree: 7%
 
 24 aprile 2018
 
-**Novità?**
+**Novità**
 
 <table> 
  <thead> 
