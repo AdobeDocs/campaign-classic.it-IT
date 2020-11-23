@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Connettori di gestione delle relazioni con i clienti
-seo-title: Connettori di gestione delle relazioni con i clienti
 description: Connettori di gestione delle relazioni con i clienti
-seo-description: null
-page-status-flag: never-activated
-uuid: ef3d88a1-b0fd-4790-b6e8-63fa339ef991
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: connectors
-discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 translation-type: tm+mt
-source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2539'
 ht-degree: 4%
 
 ---
@@ -57,17 +52,17 @@ Le versioni supportate sono dettagliate nella matrice [](../../rn/using/compatib
 
 * **Oracle On Demand**
 
-   Fare riferimento a [questa sezione](#example-for-oracle-on-demand) per apprendere come impostare la connessione con Oracle On Demand.
+   Fare riferimento a [questa sezione](#example-for-oracle-on-demand) per apprendere come impostare la connessione con  Oracle On Demand.
 
    >[!IMPORTANT]
    >
-   >Quando si collega  Adobe Campaign a Oracle On Demand, le limitazioni sono:
+   >Per la connessione  Adobe Campaign con  Oracle On Demand, i limiti sono:
    >
    >    
    >    
-   >    *  Adobe Campaign può sincronizzare qualsiasi oggetto disponibile nei modelli standard di Oracle On Demand. Se in Oracle On Demand sono state aggiunte tabelle personalizzate, queste non verranno recuperate in  Adobe Campaign.
+   >    *  Adobe Campaign può sincronizzare qualsiasi oggetto disponibile nei modelli standard  Oracle On Demand. Se hai aggiunto tabelle personalizzate in  Oracle On Demand, queste non verranno recuperate in  Adobe Campaign.
    >    * La versione API v1.0 consente di ordinare o filtrare i dati durante una query, ma non di eseguire entrambe le operazioni contemporaneamente.
-   >    * Le date inviate da Oracle On Demand non contengono informazioni sul fuso orario.
+   >    * Le date inviate da  Oracle On Demand non contengono informazioni sul fuso orario.
    >    * Le enumerazioni di selezione multiple non sono supportate da  Adobe Campaign.
 
 
@@ -141,15 +136,15 @@ Per configurare il connettore **Salesforce.com** con  Adobe Campaign, procedere 
 
    ![](assets/crm_connectors_sfdc_wf.png)
 
-### Esempio per Oracle On Demand {#example-for-oracle-on-demand}
+### Esempio per  Oracle On Demand {#example-for-oracle-on-demand}
 
-Per configurare il connettore **Oracle On Demand** in modo che funzioni con  Adobe Campaign, procedere come segue:
+Per configurare il **connettore Oracle On Demand** in modo che funzioni con  Adobe Campaign, effettuate le seguenti operazioni:
 
 1. Create un nuovo account esterno tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura di Adobe Campaign .
 
    ![](assets/crm_connectors_ood_1.png)
 
-1. Aprire la procedura guidata di configurazione:  Adobe Campaign mostra automaticamente le tabelle del modello dati Oracle. Selezionare le tabelle da raccogliere.
+1. Aprire la procedura guidata di configurazione:  Adobe Campaign mostra automaticamente le tabelle del modello dati Oracle . Selezionare le tabelle da raccogliere.
 
    ![](assets/crm_connectors_ood_2.png)
 
@@ -159,25 +154,25 @@ Per configurare il connettore **Oracle On Demand** in modo che funzioni con  Ado
 
    ![](assets/crm_connectors_ood_3.png)
 
-1. Avviare la sincronizzazione delle enumerazioni tra  Adobe Campaign e Oracle On Demand.
+1. Avvia la sincronizzazione delle enumerazioni tra  Adobe Campaign e  Oracle On Demand.
 
    ![](assets/crm_connectors_ood_4.png)
 
-1. Per importare i dati di Oracle On Demand in  Adobe Campaign, creare il seguente tipo di flusso di lavoro:
+1. Per importare  dati Oracle On Demand in  Adobe Campaign, create il seguente tipo di flusso di lavoro:
 
    ![](assets/crm_connectors_ood_5.png)
 
-   Questo flusso di lavoro importa i contatti tramite Oracle On Demand, li sincronizza con i dati Adobe Campaign  esistenti, elimina i contatti duplicati e aggiorna il database Adobe Campaign .
+   Questo flusso di lavoro importa i contatti tramite  Oracle On Demand, li sincronizza con i dati Adobe Campaign  esistenti, elimina i contatti duplicati e aggiorna il database Adobe Campaign .
 
    L&#39; **[!UICONTROL CRM Connector]** attività deve essere configurata come illustrato di seguito:
 
    ![](assets/crm_connectors_ood_6.png)
 
-1. Per esportare  dati Adobe Campaign in Oracle On Demand, creare il seguente flusso di lavoro:
+1. Per esportare  dati Adobe Campaign in  Oracle On Demand, create il seguente flusso di lavoro:
 
    ![](assets/crm_connectors_ood_7.png)
 
-   Questo flusso di lavoro raccoglie i dati pertinenti utilizzando le query, quindi li esporta nella tabella dei contatti di Oracle On Demand.
+   Questo flusso di lavoro raccoglie i dati pertinenti utilizzando le query, quindi li esporta nella tabella dei contatti Oracle On Demand .
 
 ### Esempio per Microsoft Dynamics {#example-for-microsoft-dynamics}
 
@@ -315,7 +310,7 @@ Puoi specificare il campo CRM remoto da prendere in considerazione per identific
 Per impostazione predefinita, vengono utilizzati i campi seguenti (nell&#39;ordine specificato):
 
 * Per Microsoft Dynamics: **modifiedon**,
-* Per Oracle On Demand: **LastUpdated**, **ModifiedDate**, **LastLoggedIn**,
+* Per  Oracle On Demand: **LastUpdated**, **ModifiedDate**, **LastLoggedIn**,
 * Per Salesforce.com: **LastModifiedDate**, **SystemModestamp**.
 
 Attivando l&#39; **[!UICONTROL Automatic index]** opzione vengono generate tre variabili che possono essere utilizzate nel flusso di lavoro di sincronizzazione tramite un&#39;attività di **[!UICONTROL JavaScript code]** tipo. Tali attività sono:
@@ -439,7 +434,7 @@ I rifiuti vengono raccolti con il relativo codice di errore e il relativo messag
 
 La transizione **[!UICONTROL Reject]** di output consente di accedere allo schema di output che contiene le colonne specifiche relative ai messaggi di errore e ai codici. Queste colonne sono:
 
-* Per Oracle On Demand: **errorLogFilename** (nome del file di registro sul lato Oracle), **errorCode** (codice di errore), **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto di errore).
+* Per  Oracle On Demand: **errorLogFilename** (nome del file di registro sul lato Oracle ), **errorCode** (codice di errore), **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto di errore).
 * Per Salesforce.com: **errorSymbol** (simbolo di errore, diverso dal codice di errore), **errorMessage** (descrizione del contesto dell&#39;errore).
 
 ### Importazione di oggetti eliminati in CRM {#importing-objects-deleted-in-the-crm}
