@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Definizione della popolazione target
-seo-title: Definizione della popolazione target
 description: Definizione della popolazione target
-seo-description: null
-page-status-flag: never-activated
-uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1572'
 ht-degree: 2%
 
 ---
@@ -230,7 +225,7 @@ Potete utilizzare **[!UICONTROL Seed addresses]** come destinazione le prove: qu
 
 È possibile combinare la definizione di una destinazione di prova specifica e l&#39;uso di indirizzi di prova utilizzando l&#39; **[!UICONTROL Specific target and Seed addresses]** opzione. Le configurazioni correlate vengono quindi definite in due sottoschede separate.
 
-## How to manage seed and proofs in an email {#seeds-and-proofs-video}
+## Come gestire seed e bozze in un’e-mail {#seeds-and-proofs-video}
 
 Questo video illustra come aggiungere sementi e prove a un&#39;e-mail esistente e come inviarla.
 
