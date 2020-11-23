@@ -1,24 +1,20 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Best practice per la distribuzione delle campagne
-seo-title: Best practice di distribuzione
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 7%
+source-wordcount: '94'
+ht-degree: 25%
 
 ---
 
 
-# Best practice di distribuzione {#delivery-best-practices}
+# Best practice di consegna{#delivery-best-practices}
 
 Scopri le best practice relative alla progettazione e all&#39;invio di materiale  Adobe Campaign. Utilizzate i collegamenti di seguito per navigare tra gli argomenti e trovare istruzioni.
 
@@ -30,7 +26,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Ottimizzazione della distribuzione</strong>
+    <strong>Ottimizzare la consegna</strong>
     </a>
     </div>
     <p>
@@ -84,7 +80,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Controlla prima dell'invio</strong>
+    <strong>Controllare prima dell’invio</strong>
     </a>
     </div>
     <p>
@@ -97,7 +93,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Monitoraggio e monitoraggio</strong>
+    <strong>Tracciare e monitorare</strong>
     </a>
     </div>
     <p>
