@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Configurazioni generali
-seo-title: Configurazioni generali
 description: Configurazioni generali
-seo-description: null
-page-status-flag: never-activated
-uuid: 317a145d-36b0-40fe-a272-ad5e35b0b190
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
 translation-type: tm+mt
-source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -47,9 +42,9 @@ Per utilizzare la modalità TIMESTAMP WITH TIMEZONE, è inoltre necessario aggiu
 >
 >Per ulteriori informazioni sulla gestione del fuso orario, consulta [questa sezione](../../installation/using/time-zone-management.md).
 
-### Oracle {#oracle}
+###  Oracle {#oracle}
 
-Se durante l&#39;aggiornamento successivo viene visualizzato un errore **ORA 01805** , i file del fuso orario Oracle tra il server dell&#39;applicazione e il server del database non sono sincronizzati. Per sincronizzarli nuovamente, effettuate le seguenti operazioni:
+Se durante l&#39;aggiornamento successivo viene visualizzato un errore **ORA 01805** , i file del fuso orario Oracle  tra il server dell&#39;applicazione e il server del database non sono sincronizzati. Per sincronizzarli nuovamente, effettuate le seguenti operazioni:
 
 1. Per identificare il file del fuso orario utilizzato, eseguire il comando seguente:
 
@@ -63,7 +58,7 @@ Se durante l&#39;aggiornamento successivo viene visualizzato un errore **ORA 018
 
 Per maggiori informazioni, visita: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Un disallineamento del fuso orario tra client e server può anche causare dei ritardi. Per questo motivo, si consiglia di utilizzare la stessa versione di Oracle library sui lati client e server, entrambi i fusi orari devono essere identici.
+Un disallineamento del fuso orario tra client e server può anche causare dei ritardi. È per questo che consigliamo di utilizzare la stessa versione della libreria Oracle  lato client e lato server, entrambi i fusi orari devono essere identici.
 
 Per verificare se entrambi i lati si trovano negli stessi fusi orari:
 
@@ -73,7 +68,7 @@ Per verificare se entrambi i lati si trovano negli stessi fusi orari:
    genezi -v
    ```
 
-   genezi è un file binario trovato nella directory archivio **$ORACLE_HOME/bin** .
+   genezi è un file binario trovato nella directory archivio **$ ORACLE_HOME/bin** .
 
 1. Controllare la versione del file del fuso orario sul lato server eseguendo il comando seguente:
 
