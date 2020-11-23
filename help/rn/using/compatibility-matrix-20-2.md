@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Matrice di compatibilità
 description: Matrice di compatibilità
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3402212bc6904dd5587d3b5a16fca7f4857fb908
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -98,7 +95,7 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 <td>
 <p>8</p>
 <p>9</p>
-<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per OpenJDK.</p>
+<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da  Oracle e per OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -120,9 +117,9 @@ Per ulteriori informazioni sugli elementi obsoleti, visitare [questa pagina](../
 
 Sono supportati i seguenti driver RDBMS:
 
-* Oracle SQL*Net 11
+*  Oracle SQL*Net 11
 
-* Oracle SQL*Net 12
+*  Oracle SQL*Net 12
 
 * PostgreSQL (libpq)
 
@@ -140,7 +137,7 @@ Sono supportati i seguenti driver RDBMS:
 <table>
 <tbody>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>11 g R2</p>
 <p>12c</p>
@@ -176,7 +173,7 @@ Sono supportati i seguenti driver RDBMS:
 >
 >PostgreSQL è il server di database predefinito per gli ambienti ospitati.
 
-## CRM connectors{#CRMconnectors}
+## Connettori di gestione delle relazioni con i clienti{#CRMconnectors}
 
 <table>
 <tbody>
@@ -193,7 +190,7 @@ Sono supportati i seguenti driver RDBMS:
 <p>API versione 21</p>
 </td>
 </tr>
-<tr><td>API Oracle On Demand</td>
+<tr><td> Oracle On Demand API</td>
 <td>
 <p>API Web Services v1.0</p>
 </td>
@@ -214,7 +211,7 @@ Sono supportati i seguenti driver RDBMS:
 <table>
 <tbody>
 <tr>
-<td>Analisi sinapsi di Microsoft Azure</td>
+<td>Microsoft  Azure synapse Analytics</td>
 <td> </td>
 </tr>
 <tr>
@@ -223,7 +220,7 @@ Sono supportati i seguenti driver RDBMS:
 </td>
 </tr>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>11g</p>
 <p>12c</p>
@@ -289,7 +286,7 @@ Sono supportati i seguenti driver RDBMS:
 </td>
 </tr>
 <tr>
-<td>Snowflake </td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
