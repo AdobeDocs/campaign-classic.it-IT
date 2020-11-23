@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Aggiunta di ulteriori funzioni SQL
-seo-title: Aggiunta di ulteriori funzioni SQL
 description: Aggiunta di ulteriori funzioni SQL
-seo-description: null
-page-status-flag: never-activated
-uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: api
-discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1021'
 ht-degree: 1%
 
 ---
@@ -132,7 +127,7 @@ Il campo **@name** fa riferimento al nome della funzione, e &quot;args&quot; è 
 * Infine, l&#39;elemento **providerPart** fornisce l&#39;implementazione della funzione.
 
    * L&#39;attributo **provider** è obbligatorio, specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come illustrato nell&#39;esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
-   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione, nella lingua del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(selezionare la colonna dalla tabella dove...)&quot;) che restituiscono solo un singolo valore. Ad esempio, questo è il caso in Oracle (la query deve essere scritta tra parentesi).
+   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione, nella lingua del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(selezionare la colonna dalla tabella dove...)&quot;) che restituiscono solo un singolo valore. Ad esempio, questo è il caso in  Oracle (la query deve essere scritta tra parentesi).
 
    >[!NOTE]
    >
