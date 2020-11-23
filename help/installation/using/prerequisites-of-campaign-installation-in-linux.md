@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
 description: Prerequisiti per l’installazione di Campaign in Linux
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -179,31 +176,31 @@ Consultare anche la sezione [Database](../../installation/using/database.md) gen
 
 L&#39;utilizzo di PostgreSQL con  Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
 
-### Oracle {#oracle}
+###  Oracle {#oracle}
 
 Recuperate la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
-È possibile ottenere un pacchetto Linux RPM da Oracle Technology Network.
+È possibile ottenere un pacchetto Linux RPM dalla  Oracle Technology Network.
 
 >[!NOTE]
 >
->Se il client Oracle è già installato ma l&#39;ambiente globale (ad esempio: /etc/profile) non è configurato correttamente. È possibile aggiungere informazioni mancanti allo script **nl6/customer.sh** . Per ulteriori informazioni, vedere le variabili [di](../../installation/using/installing-packages-with-linux.md#environment-variables)ambiente.
+>Se avete già installato il client Oracle  ma l&#39;ambiente globale (ad esempio: /etc/profile) non è configurato correttamente. È possibile aggiungere informazioni mancanti allo script **nl6/customer.sh** . Per ulteriori informazioni, vedere le variabili [di](../../installation/using/installing-packages-with-linux.md#environment-variables)ambiente.
 
 **Risoluzione dei problemi e procedure ottimali**
 
-I problemi possono presentarsi dopo un aggiornamento di Oracle client o server, una modifica di versione o alla prima installazione dell&#39;istanza.
+I problemi possono verificarsi dopo un  client Oracle o un aggiornamento del server, una modifica della versione o alla prima installazione dell&#39;istanza.
 
-Se nella console client si nota che nei registri sono presenti ritardi di tempo imprevisti (una o più ore), l&#39;ultima elaborazione del flusso di lavoro, l&#39;elaborazione successiva e così via, potrebbe verificarsi un problema tra la libreria del client Oracle e Oracle Server. Per evitare tali problemi
+Se nella console client si notano ritardi imprevisti (una o più ore) nei registri, l&#39;ultima elaborazione del flusso di lavoro, l&#39;elaborazione successiva e così via, potrebbe verificarsi un problema tra la libreria del client Oracle  e il server Oracle . Per evitare tali problemi
 
 1. Accertatevi di utilizzare il client **** completo.
 
-   Sono stati individuati diversi problemi durante l&#39;utilizzo della versione di Oracle Instant Client. Inoltre, è impossibile modificare il file Timezone sul client istantaneo.
+   Sono stati identificati diversi problemi quando si utilizza la versione  Oracle Instant Client. Inoltre, è impossibile modificare il file Timezone sul client istantaneo.
 
 1. Verificate che la versione **** client e la versione **del server di** database siano **uguali**.
 
-   È noto che il mixaggio delle versioni nonostante la matrice di compatibilità e la raccomandazione di Oracle per allineare le versioni client e server causa problemi.
+   È noto che il mixaggio delle versioni nonostante  matrice di compatibilità Oracle e la raccomandazione per allineare le versioni client e server causa problemi.
 
-   Controllare inoltre il valore ORACLE_HOME per essere certi che punti alla versione client prevista (nel caso in cui sul computer siano installate più versioni).
+   Controllate anche  valore ORACLE_HOME per essere certi che punti alla versione client prevista (nel caso in cui sul computer siano installate più versioni).
 
 1. Accertatevi che il client e il server utilizzino lo stesso file **** timezone.
 
