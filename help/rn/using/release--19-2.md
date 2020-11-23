@@ -24,7 +24,7 @@ _07 febbraio 2020_
 **Miglioramenti**
 
 * È stato risolto un problema di regressione a causa dell&#39;implementazione della certificazione SSL che causava un errore di connessione utente sul server Windows. (NEO-20629)
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni** .
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 19.2 - Build 9080 {#release-19-2-build-9080}
 
@@ -157,7 +157,7 @@ _Campaign Mobile SDK_
 * È stato risolto un problema che interessava il connettore CRM con Salesforce. (NEO-17712)
 * È stato risolto un problema di timeout durante l&#39;importazione di dati da un SFTP esterno. (NEO-19723)
 * È stato risolto un problema durante l&#39;accesso ai modelli predittivi. (NEO-19713)
-* È stato risolto un problema che interessava il campionamento casuale nell&#39;attività del flusso di lavoro **Dividi** con il database Hadoop FDA. (NEO-16636)
+* È stato risolto un problema che interessava il campionamento casuale nell&#39;attività del flusso di lavoro **Dividi** con il database FDA di Hadoop. (NEO-16636)
 * Risolto un problema di regressione su  Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
 
 
