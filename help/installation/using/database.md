@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Suggerimenti per il database Campaign Classic
 description: Raccomandazioni del database
-page-status-flag: never-activated
-uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -40,7 +37,7 @@ Le DLL di accesso si trovano nel sito Web di Microsoft.
 >
 >L&#39;accesso a Microsoft SQL Server da un server applicazione in esecuzione in Linux non è supportato.
 
-## Oracle {#oracle}
+##  Oracle {#oracle}
 
 >[!NOTE]
 >
@@ -48,7 +45,7 @@ Le DLL di accesso si trovano nel sito Web di Microsoft.
 
 Affinché il database funzioni in modalità Unicode o ANSI, i parametri **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** devono essere configurati correttamente.
 
- Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altre codifiche potrebbe causare problemi di compatibilità: in questo caso, contattare l&#39;assistenza tecnica.
+ Adobe Campaign utilizza  codifica Oracle predefinita. L’utilizzo di altre codifiche potrebbe causare problemi di compatibilità: in questo caso, contattare l&#39;assistenza tecnica.
 
 Per informazioni sulla codifica, utilizzate il seguente **comando sqlplus** :
 
@@ -69,7 +66,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Per accedere a **sqlplus**, utilizzare il profilo utente Oracle:
+Per accedere a **sqlplus**, utilizzate il profilo utente Oracle :
 
 ```
 su - oracle 
