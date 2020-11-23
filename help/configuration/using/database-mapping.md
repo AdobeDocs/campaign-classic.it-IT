@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Mappatura del database
-seo-title: Mappatura del database
 description: Mappatura del database
-seo-description: null
-page-status-flag: never-activated
-uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1974'
 ht-degree: 0%
 
 ---
@@ -356,7 +351,7 @@ Un collegamento descrive l&#39;associazione tra una tabella e l&#39;altra.
 
 I vari tipi di associazioni (note come &quot;cardinalità&quot;) sono i seguenti:
 
-* Cardinalità 1-1: una occorrenza della tabella di origine può avere al massimo una occorrenza corrispondente della tabella di destinazione.
+* Cardinality 1-1: one occurrence of the source table can have at most one corresponding occurrence of the target table.
 * Cardinalità 1-N: una occorrenza della tabella di origine può avere diverse occorrenze corrispondenti della tabella di destinazione, ma una occorrenza della tabella di destinazione può avere al massimo una occorrenza corrispondente della tabella di origine.
 * Cardinalità N-N: una occorrenza della tabella di origine può avere diverse occorrenze corrispondenti della tabella di destinazione e viceversa.
 
