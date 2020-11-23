@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Modelli di ipotesi
-seo-title: Modelli di ipotesi
 description: Modelli di ipotesi
-seo-description: null
-page-status-flag: never-activated
-uuid: 080417c2-1c45-4404-961e-2e660d8f0436
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -128,7 +123,7 @@ Questa scheda contiene i vari campi e tabelle che consentono di salvare la crono
 * **[!UICONTROL Transaction date]**: questo campo è facoltativo ma consigliato in quanto consente di definire un ambito per il calcolo delle ipotesi.
 * **[!UICONTROL Measurement period]**: consente di configurare le date di inizio e fine durante le quali vengono eseguite le ipotesi e le linee di acquisto vengono recuperate.
 
-   Quando l&#39;ipotesi è collegata a una consegna, la misurazione viene attivata automaticamente alcuni giorni dopo la data di contatto per le consegne per corrispondenza diretta o dopo la data di consegna per le consegne via e-mail o SMS.
+   Quando l&#39;ipotesi è collegata a una consegna, la misurazione viene attivata automaticamente alcuni giorni dopo la data di contatto per le consegne per corrispondenza diretta, o dopo la data di consegna per le consegne via e-mail o SMS.
 
    ![](assets/response_measurement_001.png)
 
