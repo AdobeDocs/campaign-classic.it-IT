@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Area di lavoro di Adobe Campaign
-seo-title: Area di lavoro di Adobe Campaign
 description: Area di lavoro di Adobe Campaign
-seo-description: null
-page-status-flag: never-activated
-uuid: ed954f73-6456-4fa3-b284-9b2d865c2afb
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 2%
+source-wordcount: '2144'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +25,7 @@ Dalla sezione centrale della home page, potete utilizzare i collegamenti per acc
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Scopri lo spazio di lavoro della campagna nel video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
