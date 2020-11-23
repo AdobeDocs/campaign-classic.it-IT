@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Creazione di una connessione condivisa
-seo-title: Creazione di una connessione condivisa
 description: Creazione di una connessione condivisa
-seo-description: null
-page-status-flag: never-activated
-uuid: 30d6d23b-72c6-4454-8d6b-a10102f89262
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 3%
+source-wordcount: '998'
+ht-degree: 2%
 
 ---
 
@@ -78,7 +73,7 @@ Per creare un account esterno di tipo istanza di esecuzione, procedere come segu
 
    >[!NOTE]
    >
-   >Tenere presente che quando si utilizza FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database PostgreSQL. MSSQL o database Oracle non sono supportati.
+   >Tenere presente che quando si utilizza FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database PostgreSQL. MSSQL o  database Oracle non sono supportati.
 
    Il secondo metodo è consigliato se l&#39;istanza di controllo ha accesso diretto al database delle istanze di esecuzione. In caso contrario, scegliete l&#39;accesso al servizio Web. L&#39;account FDA da specificare coincide con la connessione ai database delle varie istanze di esecuzione create nell&#39;istanza di controllo.
 
