@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Query
 description: Ulteriori informazioni sull'attività del flusso di lavoro Query
-page-status-flag: never-activated
-uuid: 32f4f467-5083-414f-8616-1aa4bf2b5867
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 translation-type: tm+mt
-source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 0%
@@ -27,7 +24,7 @@ Per ulteriori informazioni sugli esempi di query, consultare [questa sezione](..
 
 >[!NOTE]
 >
->Le attività di query non sono compatibili con i campi CLOB quando si utilizza Oracle.
+>Le attività di query non sono compatibili con i campi CLOB quando si utilizza  Oracle.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
