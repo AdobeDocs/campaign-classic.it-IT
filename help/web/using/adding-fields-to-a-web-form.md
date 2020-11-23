@@ -241,7 +241,7 @@ Il numero di pulsanti di scelta in ciascuna riga della griglia corrisponde al nu
 
 >[!NOTE]
 >
->Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A tal fine, andate alla **[!UICONTROL Advanced]** scheda, il **[!UICONTROL Label position]** display è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A questo scopo, andate alla **[!UICONTROL Advanced]** scheda, il **[!UICONTROL Label position]** display è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Aggiunta di date e numeri {#adding-dates-and-numbers}
 
