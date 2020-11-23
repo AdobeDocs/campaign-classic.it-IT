@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Matrice di compatibilità standard Gold
 description: Matrice di compatibilità Campaign Classic per la versione Gold Standard
-page-status-flag: never-activated
-uuid: 269d590c-5a6d-40b9-a879-02f5033863fd
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
 translation-type: tm+mt
-source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 15%
@@ -94,7 +91,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <td>Java Development Kit (JDK)</td>
 <td>
 <p>8</p>
-<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per OpenJDK.</p>
+<p>L'applicazione è stata approvata per Java Development Kit (JDK) sviluppato da  Oracle e per OpenJDK.</p>
 </td>
 </tr>
 <tr>
@@ -121,7 +118,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <table>
 <tbody>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>18c</p>
 <p>12c</p>
@@ -182,7 +179,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <p>API versione 15</p>
 </td>
 </tr>
-<tr><td>API Oracle On Demand</td>
+<tr><td> Oracle On Demand API</td>
 <td>
 <p>API Web Services v1.0</p>
 </td>
@@ -203,7 +200,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <table>
 <tbody>
 <tr>
-<td>Oracle</td>
+<td> Oracle</td>
 <td>
 <p>12c</p>
 <p>11g</p>
@@ -266,7 +263,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 </td>
 </tr>
 <tr>
-<td>Snowflake </td>
+<td>Snowflake</td>
 <td> </td>
 </tr>
 </tbody>
