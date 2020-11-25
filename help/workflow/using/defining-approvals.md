@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ I gruppi di operatori per le approvazioni devono essere designati come ruoli o f
 
 ## Scadenza {#expirations}
 
-Le scadenze sono transizioni specifiche utilizzate in diversi tipi di attività, in particolare nelle approvazioni. Una scadenza può essere utilizzata per attivare un’azione dopo un determinato lasso di tempo in assenza di una risposta o per proseguire il flusso di lavoro (e assegnare un’approvazione a un altro gruppo, ad esempio).
+Le scadenze sono transizioni specifiche utilizzate in diversi tipi di attività, in particolare nelle approvazioni. Potete utilizzare una scadenza per attivare un’azione dopo un determinato periodo di tempo senza ricevere risposta. Può essere utilizzato, ad esempio, per proseguire il flusso di lavoro e assegnare un’approvazione a un altro gruppo.
 
 La seconda scheda nelle proprietà di approvazione dell&#39;attività consente di definire una o più scadenze. In realtà, potete definire più tipi di scadenza.
 
