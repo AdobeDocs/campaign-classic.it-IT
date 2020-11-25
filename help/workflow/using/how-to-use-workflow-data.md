@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 2%
@@ -97,7 +97,7 @@ Potete quindi utilizzare i comandi o il codice nella **[!UICONTROL Script]** sch
 
 In questo caso, verrà creato un flusso di lavoro per la cifratura e l&#39;esportazione dei dati tramite una chiave installata sul Pannello di controllo Campaign.
 
-In [questa sezione](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)è disponibile anche un video di esercitazione che mostra come utilizzare una chiave GPG per cifrare i dati.
+In [questa sezione](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/using-a-gpg-key-to-encrypt-data.html?lang=en#instance-settings)è disponibile anche un video di esercitazione che mostra come utilizzare una chiave GPG per cifrare i dati.
 
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
