@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '343'
 ht-degree: 2%
 
 ---
@@ -50,36 +50,31 @@ I motivi di un problema di connessione possono essere molteplici e dipendono da 
     &lt;pre>
     &lt;redir status=&#39;OK&#39; date=&#39;AAAA/MM/GG HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
     &lt;/pre>
-    
-    Se non ottenete questo risultato, controllate che l&#39;integrazione sia presa in considerazione nella configurazione del server Web.&lt;/td>
+Se non si ottiene questo risultato, verificare nella configurazione del server Web che l&#39;integrazione viene presa in considerazione.</td>
 </tr>
   <tr> 
    <td>È stato avviato il modulo Web  Adobe Campaign?</td> 
    <td>Connettiti al seguente URL: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Se viene visualizzato un errore Java Tomcat:
 
-    L&#39;integrazione JAVA viene eseguita correttamente?  Adobe Campaign richiede un JDK SOLE.
-    
-    È integrato nel file [percorso dell&#39;applicazione]/nl6/customer.sh
+L&#39;integrazione JAVA viene eseguita correttamente?  Adobe Campaign richiede un JDK SOLE.
+
+È integrato nel [percorso file dell&#39;applicazione]/nl6/customer.sh
 
 * Se ottenete una pagina vuota:
 
-       È stato avviato il modulo Web  Adobe Campaign? È necessario ottenere:
-       
-       &lt;pre>
-     nlserver pdump
-     HH:MM:SS > Application server per Adobe Campaign Classic (build 7.X AA.R XXX@SHA1) di DD/MM/YYYYY
-     [...]
- web@default (27515) - 55.2 Mb     
-     
-     [...]Anteprima&lt;/pre>
-   
+È stato avviato il modulo Web  Adobe Campaign? È necessario ottenere:
+
+<pre>
+nlserver pdumpHH:MM:SS &gt; Application server per Adobe Campaign Classic (build 7.X AA.R XXX@SHA1) di DD/MM/YYYYY[...]web@default (27515) - 55.2 Mb[...]
+</pre>
+
 * In caso contrario, riavviarlo utilizzando il comando seguente:
 
-       &lt;pre>
- nlserver avviare il Web     
- &lt;/pre>     
-     &lt;/td>
-   </tr>
+<pre>        
+web di avvio del server
+</pre>
+</td>
+</tr>
   <tr>
   	<td>Controllare la configurazione generale delle zone di protezione.</td>
   	<td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consultate [questa sezione](../../installation/using/configuring-campaign-server.md#Defining-security-zone)</td>
