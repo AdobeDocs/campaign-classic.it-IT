@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 96%
+source-wordcount: '3631'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,10 @@ La sezione Privacy è stata spostata e arricchita con due nuove pagine: [Gestion
 Nella pagina di configurazione del server di mid-sourcing è stata aggiunta una nota per specificare che il nome interno dell&#39;account esterno non deve essere aggiornato una volta che il server è stato configurato. [Leggi tutto](../../installation/using/mid-sourcing-server.md)
 
 Sono state aggiunte informazioni sulla sintassi da utilizzare per specificare il percorso di un server SFTP esterno. [Leggi tutto](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+La sezione Dati personali e Personas è stata aggiornata con uno scenario relativo al caso d’uso per illustrare l’interazione delle diverse persone in materia di privacy. [Leggi tutto](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+È stata aggiunta una nuova sezione in cui sono elencate le Domande frequenti sulla privacy. [Leggi tutto](../../platform/using/privacy-faq.md)
 
 ## Ottobre 2020 {#oct-2020}
 
