@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 6%
+source-wordcount: '2043'
+ht-degree: 5%
 
 ---
 
@@ -78,6 +78,8 @@ Durante la gestione della privacy, è importante definire quali dati devono esse
 * **Dati** personali sono informazioni che possono identificare direttamente o indirettamente un individuo vivente.
 * **Dati** personali sensibili sono informazioni relative alla razza, alle opinioni politiche, alle convinzioni religiose, al contesto penale, alle informazioni genetiche, ai dati sulla salute, alla preferenza sessuale, alle informazioni biometriche, nonché all’appartenenza a un sindacato.
 
+Quando si integra Campaign con altre soluzioni  Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all&#39;altro, come [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager o il servizio](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)di base Persone, [Campaign Standard](../../integrations/using/synchronizing-audiences.md)o con altre soluzioni tramite i connettori [](../../platform/using/crm-connectors.md)CRM, è necessario prestare maggiore attenzione alla protezione dei dati personali.
+
 I [principali regolamenti](#privacy-regulations) si riferiscono alle diverse entità che gestiscono i dati come segue:
 * Un **titolare del trattamento** dei dati è l&#39;autorità che determina i mezzi e lo scopo della raccolta, dell&#39;uso e della condivisione dei dati personali.
 * Un **processore** dati è qualsiasi individuo o parte che raccoglie, utilizza o condivide dati personali come indicato dal Titolare del trattamento.
@@ -85,7 +87,31 @@ I [principali regolamenti](#privacy-regulations) si riferiscono alle diverse ent
 
 Pertanto, in quanto azienda che raccoglie e condivide dati personali, sei il Titolare del trattamento dei dati, i tuoi clienti sono i Soggetti dati e  Adobe Campaign agisce come un Processore dei dati quando tratta i loro dati personali come da te diretto. In quanto titolare del trattamento dei dati, è responsabilità dell&#39;utente gestire la relazione con gli interessati, ad esempio per la gestione delle richieste [di](#privacy-requests)privacy.
 
-Quando si integra Campaign con altre soluzioni  Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all&#39;altro, come [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager o il servizio](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)di base Persone, [Campaign Standard](../../integrations/using/synchronizing-audiences.md)o con altre soluzioni tramite i connettori [](../../platform/using/crm-connectors.md)CRM, è necessario prestare maggiore attenzione alla protezione dei dati personali.
+### Scenario di utilizzo {#use-case-scenario}
+
+Per illustrare il modo in cui le diverse persone interagiscono, ecco un esempio di un caso d’uso di esperienza cliente GDPR di alto livello.
+
+In questo esempio, una compagnia aerea è il cliente Adobe Campaign . Questa società è il **Titolare** dei Dati e tutti i clienti della compagnia aerea sono **Oggetto** Dati. Laura in questo caso particolare è cliente della compagnia aerea.
+
+Di seguito sono elencate le diverse personalità utilizzate in questo esempio:
+
+* **Laura** è l&#39; **oggetto** Data. È il destinatario che riceve messaggi dalla compagnia aerea. Laura può essere un volantino frequente, ma può decidere ad un certo punto che non vuole messaggi pubblicitari o di marketing personalizzati da parte della compagnia aerea. Chiederà alla compagnia aerea (sulla base del loro processo) di cancellare il suo numero frequente di volantino.
+
+* **Anne** è il **Titolare** dei Dati della compagnia aerea. Riceve la richiesta di Laura, recupera gli ID utili richiesti per identificare l’oggetto dati e invia la richiesta in  Adobe Campaign.
+
+* **Adobe Campaign** è il **processore** dati.
+
+![](assets/privacy-gdpr-flow.png)
+
+Di seguito è riportato il flusso generale relativo a questo caso di utilizzo:
+
+1. L&#39; **Oggetto** dati (Laura) invia una richiesta GDPR al Titolare del trattamento **dei** dati via e-mail, assistenza clienti o tramite un portale web.
+
+1. Il **Data Controller** (Anne) invia la richiesta GDPR a Campaign tramite l&#39;interfaccia o tramite un&#39;API.
+
+1. Una volta che il **Data Processor** ( Adobe Campaign) riceve le informazioni, interviene sulla richiesta GDPR e invia una risposta o un avviso al **Data Controller** (Anne).
+
+1. Il **Titolare** dei Dati (Anne) rivede quindi le informazioni e le invia nuovamente al **Data Subject** (Laura).
 
 ## Acquisizione dati {#data-acquisition}
 
@@ -125,19 +151,9 @@ Per ulteriori informazioni su queste funzionalità e su come gestirle in  Adobe 
 
 * Il **Diritto di essere Dimenticato** (richiesta di cancellazione) autorizza l&#39;interessato a far cancellare i propri dati personali.
 
->[!NOTE]
->
->Questo set di strumenti è disponibile qui per aiutarti a rispettare la privacy per GDPR, CCPA, PDPA e LGPD. Per ulteriori informazioni su queste diverse normative, consulta [questa pagina](../../platform/using/privacy-management.md#privacy-management-regulations).
+Le richieste **di accesso** ed **eliminazione** sono presentate in [questa sezione](../../platform/using/privacy-management.md#right-access-forgotten).
 
-<!--* **GDPR** (General Data Protection Regulation) is the European Union’s (EU) privacy law that harmonizes and modernizes data protection requirements. GDPR applies to Adobe Campaign customers who hold data for Data Subjects residing in the EU.
-
-* **CCPA** (California Consumer Privacy Act) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
-
-* **Thailand's PDPA** (Personal Data Protection Act) is the new privacy law that harmonizes and modernizes data protection requirements for Thailand. This regulation applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.
-
-Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug, 16 for all companies collecting or processing personal data in Brazil. This regulation also applies to Adobe Campaign customers who hold data for Data Subjects residing in this country.-->
-
-Le richieste **di accesso** ed **eliminazione** vengono presentate in [questa pagina](../../platform/using/privacy-management.md#right-access-forgotten). I passaggi di implementazione per creare queste richieste sono descritti in [questa sezione](../../platform/using/privacy-requests.md). <!--Tutorials are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).-->
+I passaggi di implementazione per creare queste richieste sono descritti in [questa sezione](../../platform/using/privacy-requests.md).
 
 ## Funzionalità di tracciamento {#tracking-capabilities}
 
