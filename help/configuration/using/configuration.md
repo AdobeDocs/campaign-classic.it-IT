@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -162,7 +162,7 @@ L&#39; **`<nodemodel>`** elemento contiene la descrizione del tipo di cartella c
 * **name**: nome interno
 * **label**: etichetta utilizzata nel **[!UICONTROL Add new folder]** menu e come etichetta predefinita quando si inserisce una cartella.
 * **img**: immagine predefinita nell’inserimento della cartella.
-* **hiddenCommands**: elenco di comandi (separati da virgola) da mascherare. Valori possibili: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; e &quot;duplicate&quot;.
+* **hiddenCommands**: elenco di comandi (separati da virgola) da mascherare. Valori possibili: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; e &quot;adbdup&quot;.
 * **newFolderShortCuts**: elenco di scelte rapide da tastiera per i modelli (**`<nodemodel>`** separate da virgola) per la creazione di cartelle.
 * **insertRight**, **editRight**, **deleteRight**: diritti per l’inserimento, la modifica e l’eliminazione di cartelle.
 
