@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: affc541c480ad7e618120fe90270841add06b711
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,7 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Offer
    <tr> 
    <td> <span class="uicontrol">Calcolo aggregato completo di MessageCenter</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
+   <td> Questo flusso di lavoro aggiorna l'aggregazione <strong>Completa</strong> per il cubo <strong>Message Center</strong> . Viene attivato ogni giorno alle 3 del mattino per impostazione predefinita. Questo aggregato acquisisce le dimensioni seguenti: Canale, Data, Stato ed Evento.<br /> Il cubo Centro <strong></strong> messaggi viene quindi utilizzato per generare rapporti basati sugli eventi. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/about-cubes.md">questa sezione</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
