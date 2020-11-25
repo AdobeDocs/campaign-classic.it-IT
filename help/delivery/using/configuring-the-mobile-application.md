@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '820'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ Il connettore iOS è ora configurato. Potete iniziare a creare il servizio.
 >
 >L&#39;applicazione deve essere stata configurata per le azioni push PRIMA di qualsiasi integrazione  Adobe Campaign SDK.
 >
->In caso contrario, fare riferimento a [questa pagina](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+>In caso contrario, fare riferimento a [questa pagina](https://developer.apple.com/documentation/usernotifications).
 
 1. Vai al **[!UICONTROL Profiles and Targets > Services and subscriptions]** nodo e fai clic su **[!UICONTROL New]**.
 
