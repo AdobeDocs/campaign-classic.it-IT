@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,29 @@ ht-degree: 1%
 
 # Gestione della privacy {#privacy-management}
 
- Adobe Campaign offre una serie di strumenti per aiutarti a rispettare le normative sulla privacy (tra cui GDPR, CCPA, PDPA, LGPD).
+Adobe Campaign offers a set of tools to help you comply with [Privacy regulations](#privacy-management-regulations) (including GDPR, CCPA, PDPA, LGPD).
 
-* Questa sezione contiene informazioni generali sulla gestione della privacy e sulle funzioni fornite da  Adobe Campaign per gestire il [Diritto di accesso e il Diritto di essere Dimenticato](#right-access-forgotten).
+Di seguito sono riportate le cinque funzionalità principali offerte da  Adobe Campaign per garantire la conformità ai requisiti GDPR e alle altre normative sulla privacy:
 
-* Contiene inoltre informazioni su importanti funzioni per la gestione della privacy ([Consenso, Mantenimento e Ruoli](#consent-retention-roles)), nonché procedure ottimali per l&#39;utilizzo di  Adobe Campaign in conformità alla privacy.
+![](assets/privacy-gdpr-use-cases.png)
+
+* **Diritto di accesso**
+
+* **Right to Delete**
+
+Per ulteriori informazioni, vedere [Diritto di accesso e Diritto di essere Dimenticato](#right-access-forgotten).
+
+* **Gestione del consenso**
+
+* **Conservazione dei dati**
+
+* **Gestione dei diritti**
+
+Per ulteriori informazioni, consulta [Consenso, Mantenimento e ruoli](#consent-retention-roles).
+
+<!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
+
+It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
 
 ## Regolamenti sulla gestione della privacy {#privacy-management-regulations}
 
