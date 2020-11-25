@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 2cc4ab52f3cbdd00831d0b5104690b7adf6091ce
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -61,13 +61,11 @@ L&#39;integrazione JAVA viene eseguita correttamente?  Adobe Campaign richiede u
 È integrato nel [percorso file dell&#39;applicazione]/nl6/customer.sh
 
 * Se ottenete una pagina vuota:
-
 È stato avviato il modulo Web  Adobe Campaign? È necessario ottenere:
 
 <pre>
 nlserver pdumpHH:MM:SS &gt; Application server per Adobe Campaign Classic (build 7.X AA.R XXX@SHA1) di DD/MM/YYYYY[...]web@default (27515) - 55.2 Mb[...]
 </pre>
-
 * In caso contrario, riavviarlo utilizzando il comando seguente:
 
 <pre>        
