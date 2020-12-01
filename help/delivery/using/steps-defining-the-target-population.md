@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,16 @@ Potete utilizzare **[!UICONTROL Seed addresses]** come destinazione le prove: qu
 
 È possibile combinare la definizione di una destinazione di prova specifica e l&#39;uso di indirizzi di prova utilizzando l&#39; **[!UICONTROL Specific target and Seed addresses]** opzione. Le configurazioni correlate vengono quindi definite in due sottoschede separate.
 
-## Come gestire seed e bozze in un’e-mail {#seeds-and-proofs-video}
+Vedi anche:
+
+* [Selezione della destinazione di prova](#selecting-the-proof-target)
+* [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md)
+* [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## Video di esercitazione {#seeds-and-proofs-video}
 
 Questo video illustra come aggiungere sementi e prove a un&#39;e-mail esistente e come inviarla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Vedi anche:
-* [Selezione della destinazione di prova](#selecting-the-proof-target)
-
-* [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md)
-
-* [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
