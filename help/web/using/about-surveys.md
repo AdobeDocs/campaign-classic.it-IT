@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Informazioni sui sondaggi
-description: Informazioni sui sondaggi
+title: Introduzione ai sondaggi
+description: Introduzione ai sondaggi di Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
 
-# Informazioni sui sondaggi{#about-surveys}
+# Get started with surveys{#about-surveys}
 
  Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una rete extranet, o moduli di notifica, inclusi i dati del database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
 
@@ -31,7 +31,7 @@ La gestione delle applicazioni Web è dettagliata in [questa sezione](../../web/
 >
 >Per motivi di privacy, si consiglia di utilizzare HTTPS per tutte le risorse esterne.
 
-## Ambito sondaggi campagna {#campaign-surveys-scope}
+## Ambito delle funzioni {#campaign-surveys-scope}
 
 In  Adobe Campaign, le applicazioni Web in generale consentono di accedere alle seguenti funzionalità:
 
