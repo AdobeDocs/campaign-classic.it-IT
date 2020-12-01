@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
@@ -25,4 +25,4 @@ Diversi profili utente sono coinvolti nella gestione e nell&#39;utilizzo delle o
 >
 >Le seguenti configurazioni devono essere eseguite da un amministratore **** tecnico.
 
-Guardate questo [video](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) per scoprire l&#39;architettura dell&#39;interazione Campaign e vedere come funziona il motore delle offerte.
+![](assets/do-not-localize/how-to-video.png) Guardate questo [video](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) per scoprire l&#39;architettura dell&#39;interazione Campaign e vedere come funziona il motore delle offerte.
