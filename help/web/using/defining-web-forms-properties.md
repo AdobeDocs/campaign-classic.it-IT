@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Il modello di modulo viene scelto durante la creazione del modulo. Non può esse
 
 Per impostazione predefinita, i campi dei moduli Web sono memorizzati nella tabella dei destinatari. È possibile modificare la tabella utilizzata selezionando una nuova tabella dal **[!UICONTROL Document type]** campo. L&#39; **[!UICONTROL Zoom]** icona consente di visualizzare il contenuto della tabella selezionata.
 
-Per impostazione predefinita, le risposte sono memorizzate nella **[!UICONTROL Answer to a recipient form]** tabella.
+Per impostazione predefinita, le risposte sono memorizzate nella tabella **Risposta a un modulo** destinatario.
 
 ## Configurazione di una pagina di errore {#setting-up-an-error-page}
 
