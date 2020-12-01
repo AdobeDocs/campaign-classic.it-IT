@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Per creare una campagna per la quale non è stata definita alcuna configurazione
 
 La creazione e la configurazione di modelli di campagna sono presentati nei modelli [di](#campaign-templates)campagna.
 
-Per ulteriori informazioni sulla creazione di campagne, consultate [questo video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) Per ulteriori informazioni sulla creazione di campagne, consultate [questo video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Configurazione dei moduli disponibili {#configuration-of-the-available-modules}
 
