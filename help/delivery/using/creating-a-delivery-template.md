@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6335c1cd327a83dbc8c4d43c4ab795b84531c3e1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '378'
 ht-degree: 6%
 
 ---
@@ -68,20 +68,24 @@ Per configurare un modello di consegna, eseguite i seguenti passaggi:
 >
 >Per evitare errori di configurazione, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
 
-## Come configurare un modello di consegna {#delivery-template-video}
+## Video tutorial {#delivery-template-video}
+
+### Come configurare un modello di consegna
 
 Il seguente video illustra come configurare un modello per una distribuzione ad hoc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
-## Come impostare le proprietà dei modelli di consegna
+### Come impostare le proprietà dei modelli di consegna
 
 Il seguente video mostra come impostare le proprietà del modello di consegna e spiega in dettaglio ciascuna proprietà.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## Come distribuire un modello di consegna ad hoc
+### Come distribuire un modello di consegna ad hoc
 
 Questo video spiega come distribuire un modello di consegna e-mail ad hoc e spiega la differenza tra una consegna e-mail e un flusso di lavoro per la consegna.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
