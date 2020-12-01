@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Guida introduttiva ai sondaggi
-description: Guida introduttiva ai sondaggi
+title: Passaggi chiave per creare un sondaggio
+description: Crea il tuo primo sondaggio con Campaign
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 0%
 
 ---
 
 
-# Guida introduttiva ai sondaggi{#getting-started-with-surveys}
+# Passaggi chiave per creare un sondaggio{#getting-started-with-surveys}
 
 Di seguito viene fornita una rapida panoramica dei passaggi principali per creare un sondaggio semplice, utilizzando il seguente modello:
 
