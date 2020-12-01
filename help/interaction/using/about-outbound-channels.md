@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 Le offerte possono essere presentate in vari spazi utilizzando canali in entrata o in uscita. Questo capitolo descrive i canali in uscita.
 
->[!NOTE]
->
->È inoltre possibile guardare questo [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) che descrive come distribuire un&#39;offerta su un canale in uscita.
+![](assets/do-not-localize/how-to-video.png) È inoltre possibile guardare questo [video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) che descrive come distribuire un&#39;offerta su un canale in uscita.
 
 Affinché un&#39;offerta possa essere selezionata dal motore di offerte, deve essere stata approvata ed essere disponibile in un ambiente live. Per ulteriori informazioni, consultate [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md).
 
