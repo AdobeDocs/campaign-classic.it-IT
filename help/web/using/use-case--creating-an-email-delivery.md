@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"Caso d’uso: creazione di una consegna e-mail"'
-description: '"Caso d’uso: creazione di una consegna e-mail"'
+title: 'Caso di utilizzo: creazione di una consegna tramite e-mail'
+description: Creazione di un caso di utilizzo per la consegna tramite e-mail
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Il nostro obiettivo finale è quello di creare una consegna con un modello perso
 >
 >Prima di iniziare, dovete avere almeno un modello **** HTML configurato per ospitare il contenuto delle consegne future.
 >
->Nella consegna **[!UICONTROL Properties]** , assicurarsi che **[!UICONTROL Content editing mode]** (nella **[!UICONTROL Advanced]** scheda) sia impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell&#39;editor, consultare le best practice per la modifica dei [contenuti](../../web/using/content-editing-best-practices.md).
+>Nella consegna **[!UICONTROL Properties]**, accertatevi che **[!UICONTROL Content editing mode]** (nella **[!UICONTROL Advanced]** scheda) sia impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell&#39;editor, consultare le best practice per la modifica dei [contenuti](../../web/using/content-editing-best-practices.md).
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
