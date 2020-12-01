@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '952'
 ht-degree: 18%
 
 ---
@@ -107,13 +107,15 @@ I profili esclusi durante la preparazione della consegna (regole di tipologia, q
 
 Potete avere una panoramica del **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . Il conteggio effettivo viene eseguito dal flusso di lavoro **[!UICONTROL Number of active billing profiles]****[!UICONTROL billingActiveContactCount]**( [)](../../workflow/using/deliveries.md)tecnico, che viene eseguito ogni giorno e aggiunge i nuovi dati al rapporto esistente per il periodo corrente nel **[!UICONTROL Customer metrics]** menu. Ogni periodo dura 12 mesi.
 
-## Come creare e gestire i profili {#create-profiles-video}
+## Video di esercitazione {#create-profiles-video}
 
 Scopri come accedere ai dati di profilo, ordinare e filtrare i profili e come crearli e gestirli manualmente.
 
 Questo video spiega anche la conformità di Adobe Campaign Classic alle normative generali sulla protezione dei dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Vedi anche**
 
