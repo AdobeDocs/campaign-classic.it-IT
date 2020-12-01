@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ Per utilizzare l&#39;opzione, le tabelle specifiche in questione devono essere s
 
 In genere, il salvataggio di una destinazione in un elenco indica la fine di un flusso di lavoro. Per impostazione predefinita, l&#39; **[!UICONTROL List update]** attività non ha pertanto una transizione in uscita. Selezionare l&#39; **[!UICONTROL Generate an outbound transition]** opzione per aggiungerne una.
 
+![](assets/do-not-localize/how-to-video.png) [Scoprite come creare un elenco di destinatari da Esplora risorse nel video](#video)
+
 ## Esempio: Aggiornamento elenco {#example--list-update}
 
 Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segue una query che riguarda gli uomini che vivono in Francia oltre 30 anni. L&#39;elenco verrà creato inizialmente dai risultati della query. Viene quindi aggiornato ogni volta che viene avviato dal flusso di lavoro. Ad esempio, può essere utilizzato regolarmente per offerte promozionali mirate per le campagne.
@@ -56,8 +58,6 @@ Nell&#39;esempio seguente, l&#39;attività di aggiornamento dell&#39;elenco segu
 
    L&#39;elenco dei destinatari corrispondenti viene quindi creato o aggiornato.
 
-Per ulteriori informazioni, consultate [Creazione di un elenco di video dei destinatari](https://docs.adobe.com/content/help/it/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) .
-
 ## Parametri di input {#input-parameters}
 
 * tableName
@@ -68,3 +68,11 @@ Identifica la popolazione da salvare nel gruppo.
 ## Parametri di output {#output-parameters}
 
 * groupId: Identificatore gruppo.
+
+## Video di esercitazione {#video}
+
+In questo video viene illustrato come creare un elenco di destinatari da Esplora risorse.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
