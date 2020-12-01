@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '805'
 ht-degree: 8%
 
 ---
@@ -126,7 +126,9 @@ Per rimuovere un profilo da un elenco, potete:
 >
 >Quando eliminate un elenco, i profili presenti nell’elenco non vengono modificati, ma i dati nel relativo profilo vengono aggiornati.
 
-## Come creare un elenco di destinatari {#create-list-video}
+## Video di esercitazione {#create-list-video}
+
+### Come creare un elenco di destinatari
 
 Un elenco è un set statico di destinatari che possono essere targetizzati nelle azioni di consegna o aggiornati durante le operazioni di importazione o l’esecuzione di un flusso di lavoro. Un elenco di destinatari è anche detto audience.
 
@@ -134,8 +136,10 @@ Scopri come creare un pubblico configurando un elenco di destinatari da Esplora 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+### How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Scoprite come creare un flusso di lavoro per indirizzare i destinatari e come renderlo ricorrente prima di utilizzare l&#39;elenco in una destinazione e-mail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
