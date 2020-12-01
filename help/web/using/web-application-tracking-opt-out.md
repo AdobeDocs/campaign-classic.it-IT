@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Per scrivere un JSSP, sono disponibili le API lato server:
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Restituisce true se il banner di rinuncia deve essere visualizzato dopo che l&#39;amministratore ha selezionato un banner di rinuncia
+   Restituisce &quot;true&quot; se il banner di rinuncia deve essere visualizzato dopo che l&#39;amministratore ha selezionato un banner di rinuncia
 
    Questo codice viene chiamato quando l&#39;amministratore ha già scelto di utilizzare il banner di rifiuto del tracciamento Web.
 
