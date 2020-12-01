@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ Per farlo, segui la procedura indicata di seguito:
 
 1. Configurare l&#39; **[!UICONTROL Storage]** attività per salvare le informazioni immesse nella pagina del modulo.
 
-   Questa attività consente di creare i profili dei destinatari in un temporaneo dedicato per impostarli separatamente dai profili nel database a cui possono essere inviate le comunicazioni.
+   Questa attività consente di creare i profili dei destinatari in una cartella temporanea dedicata per distinguerli dai profili del database a cui è possibile inviare la comunicazione.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
