@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Per impostare questo caso di utilizzo, abbiamo creato il seguente flusso di lavo
 
 Questo flusso di lavoro (esecuzione giornaliera) seleziona tutti i destinatari la cui data di nascita è la data corrente.
 
-Questo caso di utilizzo si trova anche sotto forma di video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
+![](assets/do-not-localize/how-to-video.png) Questo caso di utilizzo si trova anche sotto forma di video. For more on this, refer to the [Creating a workflow](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) video.
 
 A questo scopo, create una campagna e fate clic sulla **[!UICONTROL Targeting and workflows]** scheda. Per ulteriori informazioni, vedere [Creazione della destinazione principale in una sezione del flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) .
 
