@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1626'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <li>API Web - Microsoft Dynamics CRM locale: Aggiornamento 1 del 2016 del 2016</li>
    <li>API Web - Microsoft Dynamics CRM Online: Aggiornamento 1 del 2016 del 2016</li>
    </ul>
-  <p><em>Data effettiva di rimozione: 2021</em></p>
+  <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -62,14 +62,14 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td><p>A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto.<p>
   <p> Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione.
   <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html">Ulteriori informazioni</a></p>
-  <p><em>Data effettiva di rimozione: 2021</em></p>
+  <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Dominio demdex<br></td>
   <td><p> A partire dalla versione di Campaign 20.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto.<p>
   <p>Se utilizzi il dominio demdex per l’importazione/esportazione degli account esterni, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
-  <p><em>Data effettiva di rimozione: 2021</em></p>
+  <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
@@ -92,14 +92,14 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    </ul>
   <p>Se utilizzi uno di questi connettori, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a></p> 
   <p>Scopri come effettuare la migrazione dei connettori legacy in <a href="https://helpx.adobe.com/it/campaign/kb/sms-connector.html">questa nota tecnica</a>.</p>
-  <p><em>Data effettiva di rimozione: 2021</em></p>
+  <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Canale fax<br></td>
    <td><p>A partire dalla versione Campaign 20.2, il canale fax è diventato obsoleto.</p> 
    <p>Se utilizzi questo canale, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a> sui canali di Campaign.</p>
-   <p><em>Data effettiva di rimozione: 2021</em></p></td>
+   <p><em>Data effettiva di rimozione: aprile 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
