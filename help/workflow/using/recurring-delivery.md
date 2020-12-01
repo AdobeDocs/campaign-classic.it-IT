@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 7%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 7%
 # Consegna ricorrente{#recurring-delivery}
 
 Un&#39; **[!UICONTROL Recurring delivery]** attività consente di configurare un&#39;occorrenza del modello di consegna specifica per una campagna.
+
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#recurring-delivery-video)
 
 Questa attività è disponibile solo dalla **[!UICONTROL Targeting and workflows]** scheda trovata in una campagna.
 
@@ -39,11 +41,16 @@ Una consegna **** periodica crea una nuova istanza di consegna ogni volta che vi
 
 ![Consegna ricorrente](assets/delivery_recurring.jpg)
 
-In questo video viene illustrato come configurare un&#39;attività di consegna periodica e un&#39;attività di pianificazione.
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >Non è possibile inviare una prova da un&#39;attività di **[!UICONTROL Recurring delivery]** tipo.\
 >Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizzate le attività specifiche del canale preconfigurate (ad es. **[!UICONTROL Email delivery]**).
+
+## Video di esercitazione (#periodico-delivery-video)
+
+In questo video viene illustrato come configurare un&#39;attività di consegna periodica e un&#39;attività di pianificazione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
