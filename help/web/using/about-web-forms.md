@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Informazioni sui moduli web
-description: Informazioni sui moduli web
+title: Guida introduttiva ai moduli Web
+description: Guida introduttiva ai moduli Web in Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
 
-# Informazioni sui moduli web{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
  Adobe Campaign integra un modulo grafico per definire e pubblicare moduli Web per creare pagine contenenti campi di input e di selezione e che possono includere dati nel database. Consente di progettare e pubblicare pagine Web a cui gli utenti possono accedere per visualizzare o immettere informazioni.
 
