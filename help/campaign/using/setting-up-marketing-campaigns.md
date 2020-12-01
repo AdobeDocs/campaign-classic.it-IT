@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 1%
 # Setting up marketing campaigns{#setting-up-marketing-campaigns}
 
 Le campagne includono azioni (consegne) e processi (importazione o estrazione di file), nonché risorse (documenti di marketing, linee di consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
+
+![](assets/do-not-localize/how-to-video.png) Scopri come creare un piano di marketing, programmi e campagne [in video](#video)
 
 Per creare una campagna di marketing:
 
@@ -230,3 +232,11 @@ Una campagna periodica è una campagna basata su un modello specifico che consen
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
 Ogni campagna periodica contiene gli stessi elementi. Una volta creata, viene gestita come una campagna standard.
+
+## Video di esercitazione {#video}
+
+Questo video mostra come creare un piano di marketing, programmi e campagne.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
