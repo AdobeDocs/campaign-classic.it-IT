@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ I pulsanti di scelta consentono di offrire all’utente una serie di opzioni esc
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-È possibile creare pulsanti di scelta individualmente (pulsanti di unità) o tramite un elenco a scelta multipla, ma poiché il punto dei pulsanti di scelta è quello di selezionare una o più opzioni, sarà sempre possibile creare almeno una coppia di pulsanti di scelta, mai un solo pulsante.
+È possibile creare pulsanti di scelta individualmente (pulsanti unitari) o tramite un elenco a scelta multipla, ma poiché il punto dei pulsanti di scelta è quello di selezionare una o più opzioni, sarà sempre possibile creare almeno un paio di pulsanti di scelta, mai un solo pulsante.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ Il contenuto dei campi modulo può essere formattato in modo che corrisponda ai 
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Per consentire all&#39;utente di immettere una data in una pagina del modulo, selezionare **[!UICONTROL Add input field > Date...]** nella barra degli strumenti o nell&#39;editor pagina.
+Per consentire all&#39;utente di immettere una data in una pagina del modulo, aggiungere un campo di immissione e selezionare il tipo **[!UICONTROL Date...]**.
 
 Immettere un&#39;etichetta per il campo e configurare la modalità di memorizzazione dei dati.
 
@@ -388,11 +388,13 @@ Per impostazione predefinita, i file caricati sono memorizzati in file di risors
 
 ## Inserimento di una costante nascosta {#inserting-a-hidden-constant}
 
-È possibile evidenziare un campo quando l&#39;utente passa una delle pagine del modulo. A tal fine, inserire una costante nella pagina e specificare il valore e la posizione di archiviazione.
+Quando l&#39;utente convalida una delle pagine del modulo, è possibile impostare un valore specifico su un campo del suo profilo o su una variabile.
 
 Questo campo non è visibile all’utente, ma può essere utilizzato per arricchire i dati nel profilo utente.
 
-Nell&#39;esempio seguente, il file di **origine** del profilo del destinatario viene compilato automaticamente ogni volta che un utente approva la pagina. La costante non viene visualizzata sulla pagina.
+A tal fine, inserire una **costante** nella pagina e specificare il valore e la posizione di archiviazione.
+
+Nell&#39;esempio seguente, il campo di **origine** del profilo del destinatario viene compilato automaticamente ogni volta che un utente approva la pagina. La costante non viene visualizzata sulla pagina.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
