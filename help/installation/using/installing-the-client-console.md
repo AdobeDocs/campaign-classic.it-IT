@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '489'
 ht-degree: 5%
 
 ---
@@ -24,6 +24,8 @@ Prima di iniziare, è necessario verificare la matrice [di](https://helpx.adobe.
 >[!CAUTION]
 >
 >La console Client campagna e il server applicazione Campaign devono essere eseguiti sulla stessa versione del prodotto.  Adobe consiglia inoltre di utilizzare la stessa build di prodotto.
+
+![](assets/do-not-localize/how-to-video.png) Scoprite come installare e configurare il client Adobe Campaign  in [video](#video)
 
 ## Scaricare la console{#download-the-client-console}
 
@@ -93,4 +95,11 @@ Per accedere a un&#39;istanza esistente, procedere come segue:
 
 * [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
-* [Installazione e configurazione del client](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/install-and-setup-the-adobe-campaign-client.html) Adobe Campaign  (video)
+
+## Video di esercitazione
+
+In questo video viene illustrato come installare e configurare il client Adobe Campaign .
+
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
