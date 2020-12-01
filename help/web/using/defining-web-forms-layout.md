@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -39,9 +39,9 @@ Nell&#39;esempio precedente, il rendering sarà il seguente:
 
 ## Posizionamento dei campi sulla pagina {#positioning-the-fields-on-the-page}
 
-Il layout del modulo Web è definito pagina per pagina in ciascun contenitore e può essere sovraccaricato per ogni controllo.
+Il layout del modulo Web è definito pagina per pagina in ciascun contenitore e può essere sovraccaricato, se necessario.
 
-Le pagine sono suddivise in colonne: ogni pagina contiene un certo numero di colonne. Ogni campo della pagina occupa **una** cella. I contenitori occupano anche un certo numero di colonne e i campi che contengono occupano un certo numero di celle
+Le pagine sono suddivise in colonne: ogni pagina contiene un certo numero di colonne. Ogni campo della pagina occupa **una** cella. I contenitori occupano anche un certo numero di colonne e i campi che contengono occupano un certo numero di celle.
 
 Per impostazione predefinita, le pagine sono create su una singola colonna e ogni elemento occupa una cella. Ciò significa che i campi sono visualizzati uno sotto l&#39;altro, ciascuno dei quali occupa un&#39;intera linea, come mostrato di seguito:
 
