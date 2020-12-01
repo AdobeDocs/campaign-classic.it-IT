@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '497'
 ht-degree: 12%
 
 ---
@@ -63,17 +63,21 @@ I passaggi per creare e applicare una tipologia alle consegne sono elencati di s
 
 Durante la preparazione della consegna, i destinatari sono esclusi quando il criterio è soddisfatto. Per monitorare le esclusioni, puoi controllare i registri. Esempi di utilizzo delle regole di tipo pressione sono disponibili in [questa pagina](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia {#typologies-video}
+## Video tutorial {#typologies-video}
+
+### Come impostare la gestione dell&#39;affaticamento utilizzando le regole di tipologia
 
 Questo video spiega come implementare la gestione della fatica in Adobe Campaign Classic sfruttando le regole della tipologia.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## Come impostare la gestione della fatica utilizzando filtri predefiniti
+### Come impostare la gestione della fatica utilizzando filtri predefiniti
 
 La gestione della fatica controlla la frequenza e la quantità di messaggi per evitare un eccesso di richieste da parte dei destinatari. Se nell’istanza della campagna non è presente il modulo di ottimizzazione della campagna, potete configurare un filtro predefinito che filtrerà la popolazione di destinazione in base al numero di messaggi ricevuti. In questo video viene illustrato come implementare la gestione dell’affaticamento in Adobe Campaign Classic utilizzando i filtri.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Argomento correlato**
 
