@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Sono possibili i seguenti metodi di identificazione:
    > 
    >Questa funzione è particolarmente utile per le applicazioni Web, ma non è consigliata per i moduli pubblici. L&#39;opzione di controllo di accesso selezionata deve essere &quot;Abilita controllo di accesso&quot;.
 
-L’ **[!UICONTROL Skip preloading if identification is empty]** opzione deve essere selezionata se non si desidera aggiornare i profili. In questo caso, ogni profilo immesso verrà aggiunto al database dopo l&#39;approvazione del modulo. Questa opzione è utilizzata, ad esempio, quando il modulo viene pubblicato su un sito Web.
+L’ **[!UICONTROL Skip preloading if no ID]** opzione deve essere selezionata se non si desidera aggiornare i profili. In questo caso, ogni profilo immesso verrà aggiunto al database dopo l&#39;approvazione del modulo. Questa opzione è utilizzata, ad esempio, quando il modulo viene pubblicato su un sito Web.
 
 L&#39; **[!UICONTROL Auto-load data referenced in the form]** opzione consente di precaricare automaticamente i dati corrispondenti ai campi di input e di unione del modulo. Tuttavia, i dati cui si fa riferimento nelle **[!UICONTROL Script]** attività e nelle attività **[!UICONTROL Test]** non sono pertinenti. Se questa opzione non è selezionata, è necessario definire i campi utilizzando l&#39; **[!UICONTROL Load additional data]** opzione.
 
