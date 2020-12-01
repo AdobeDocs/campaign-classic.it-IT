@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
@@ -36,7 +36,7 @@ I principali miglioramenti introdotti in questa versione sono i seguenti:
 
    * **Tasso** di conversione: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
    * **Frequenza** rimbalzo: numero di persone che hanno visualizzato solo il primo passo
-   * **Tunnel** di conversione: tasso di perdita tra ciascun passaggio.
+   * **Imbuto** di conversione: tasso di perdita tra ciascun passaggio.
 
    Inoltre, un grafico di tipo **Settore** mostra la popolazione in base all&#39;origine.
 
