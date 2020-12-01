@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 97%
+source-wordcount: '2179'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
-      + [Richieste sulla privacy](platform/using/privacy-requests.md)
+      + [Richieste di accesso ai dati personali](platform/using/privacy-requests.md)
       + [Domande frequenti sulla privacy](platform/using/privacy-faq.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
@@ -90,7 +90,7 @@ ht-degree: 97%
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Invio di messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
-   + Best practice di consegna{#delivery-bestpractices}
+   + Best practice di consegna {#delivery-bestpractices}
       + [Scopri le buone pratiche](delivery/using/delivery-best-practices.md)
       + [Ottimizzare la consegna](delivery/using/optimize-delivery.md)
       + [Utilizzare i modelli](delivery/using/use-templates.md)
@@ -273,7 +273,7 @@ ht-degree: 97%
       + [Tracking di un’applicazione web](web/using/tracking-a-web-application.md)
       + [Rinuncia al tracking delle applicazioni web](web/using/web-application-tracking-opt-out.md)
    + Modifica del contenuto HTML {#editing-html-content}
-      + [Informazioni sull’editor HTML di Campaign](web/using/about-campaign-html-editor.md)
+      + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
       + [Gestione dei modelli](web/using/template-management.md)
       + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
       + [Modifica del contenuto](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 97%
       + [Creazione di una pagina di destinazione](web/using/creating-a-landing-page.md)
       + [Caso di utilizzo: creazione di una consegna e-mail](web/using/use-case--creating-an-email-delivery.md)
    + Moduli web {#web-forms}
-      + [Informazioni sui moduli web](web/using/about-web-forms.md)
+      + [Guida introduttiva ai moduli Web](web/using/about-web-forms.md)
       + [Utilizzo di un modello di modulo web](web/using/using-a-web-form-template.md)
       + [Aggiunta di campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
       + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 97%
       + [Traduzione di un modulo web](web/using/translating-a-web-form.md)
       + [Casi di utilizzo: moduli web](web/using/use-cases--web-forms.md)
    + Sondaggi online {#online-surveys}
-      + [Informazioni sui sondaggi](web/using/about-surveys.md)
-      + [Guida introduttiva ai sondaggi](web/using/getting-started-with-surveys.md)
-      + [Creazione di un sondaggio](web/using/building-a-survey.md)
+      + [Introduzione ai sondaggi](web/using/about-surveys.md)
+      + [Passaggi chiave per creare un sondaggio](web/using/getting-started-with-surveys.md)
+      + [Progettazione di un sondaggio](web/using/building-a-survey.md)
       + [Gestione delle risposte](web/using/managing-answers.md)
       + [Pubblicare, tracciare e utilizzare i dati raccolti](web/using/publish--track-and-use-collected-data.md)
       + [Configurazione dei sondaggi](web/using/configuring-surveys.md)
@@ -327,7 +327,7 @@ ht-degree: 97%
       + [Implementazione [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Risoluzione dei problemi di IMS](integrations/using/ims-troubleshooting.md)
    + Connettore ACS {#acs-connector}
-      + Principi e ciclo dei dati di [[!DNL ACS Connector] ](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] principi e ciclo dei dati](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzazione dei profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzazione dei pubblici](integrations/using/synchronizing-audiences.md)
       + [Sincronizzazione delle applicazioni web](integrations/using/synchronizing-web-applications.md)
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Trigger di Experience Cloud {#experience-triggers}
       + [Guida introduttiva a [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurazione della pipeline](integrations/using/configuring-pipeline.md)
-      + [Configurazione  I/O Adobe per Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)
+      + [Configurazione di Adobe I/O per i trigger Adobe Experience Cloud](integrations/using/configuring-adobe-io.md)
       + [Configurazione di eventi per l’implementazione personalizzata](integrations/using/events.md)
       + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
       + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
