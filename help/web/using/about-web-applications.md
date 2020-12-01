@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Informazioni sulle applicazioni web
-description: Crea e condividi applicazioni web, pagine di destinazione e sondaggi dinamici.
+title: Introduzione alle applicazioni Web
+description: Crea e condividi applicazioni web, pagine di destinazione e sondaggi dinamici
 audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '689'
 ht-degree: 21%
 
 ---
