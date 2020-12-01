@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1269'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Elementi statici in un modulo web{#static-elements-in-a-web-form}
 
-È possibile includere nelle pagine del modulo elementi con i quali l&#39;utente non interagisce; si tratta di elementi statici quali immagini, contenuto HTML, barra orizzontale o collegamento ipertestuale. Questi elementi vengono creati mediante il primo pulsante nella barra degli strumenti, facendo clic sul **[!UICONTROL Add static element]** menu.
+È possibile includere nelle pagine del modulo elementi con i quali l&#39;utente non interagisce; si tratta di elementi statici quali immagini, contenuto HTML, barra orizzontale o collegamento ipertestuale. Questi elementi vengono creati mediante il primo pulsante nella barra degli strumenti, selezionando **[!UICONTROL Static elements]**.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ Sono disponibili i seguenti tipi di campo:
 
 È possibile includere il contenuto HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, oggetti video o Flash, ecc.
 
-L&#39;editor HTML consente di inserire il contenuto da inserire nella pagina del modulo. Per aprire l’editor, passate a **[!UICONTROL Static elements>HTML]** .
+L&#39;editor HTML consente di inserire il contenuto da inserire nella pagina del modulo. Per aprire l’editor, fate clic su **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 Potete immettere e formattare il contenuto direttamente oppure visualizzare la finestra del codice sorgente da incollare in alcuni contenuti esterni. Per passare alla modalità &quot;codice sorgente&quot;, fate clic sulla prima icona nella barra degli strumenti:
 
@@ -54,7 +54,7 @@ Per inserire un campo di database, utilizzate il pulsante di personalizzazione.
 
 Compila i campi nella finestra di modifica come illustrato nell’esempio seguente:
 
-Per aggiungere un collegamento ipertestuale, passare a **[!UICONTROL Static elements>Link]**.
+Per aggiungere un collegamento ipertestuale, passate a **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Utilizzate i campi di personalizzazione per reinserire il nome utente e il march
 
 >[!NOTE]
 >
->Per motivi di sicurezza, il valore immesso nella **`<%=`** formula viene sostituito con caratteri escape. Per evitare questo problema, e solo se necessario, utilizzate la sintassi seguente: **`<%=`**.
+>Per motivi di sicurezza, il valore immesso nella **`<%=`** formula viene sostituito con caratteri di escape.
 
 Nel nostro esempio, il nome e il cognome del destinatario sono memorizzati in un campo del database, mentre il marchio della loro auto è memorizzato in una variabile. La sintassi del messaggio personalizzato a pagina 2 sarà la seguente:
 
@@ -210,19 +210,19 @@ Ad esempio, potete creare un campo **Contatto** che vi consentirà di visualizza
 
    >[!CAUTION]
    >
-   >Se immettete questi caratteri nell&#39;editor HTML, i campi **&lt;** e **>** verranno sostituiti con i relativi caratteri escape. In questo caso, è necessario correggere il codice sorgente facendo clic sull&#39; **[!UICONTROL Display source code]** icona dell&#39;editor di testo HTML.
+   >Se immettete questi caratteri nell&#39;editor HTML, i campi **&lt;** e **>** verranno sostituiti con i relativi caratteri di escape. In questo caso, è necessario correggere il codice sorgente facendo clic sull&#39; **[!UICONTROL Display source code]** icona dell&#39;editor di testo HTML.
 
 1. Aprire l&#39; **[!UICONTROL Preview]** etichetta del modulo per visualizzare il valore immesso nel codice HTML:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Questa modalità operativa consente di fattorizzare il testo dei moduli Web e di gestire le traduzioni mediante lo strumento di traduzione integrato. Per ulteriori informazioni, vedere [Traduzione di un modulo](../../web/using/translating-a-web-form.md)Web.
+Questa modalità operativa consente di definire il testo dei moduli Web una sola volta e di gestire le traduzioni utilizzando lo strumento di traduzione integrato. Per ulteriori informazioni, vedere [Traduzione di un modulo](../../web/using/translating-a-web-form.md)Web.
 
 ## Inserimento di immagini {#inserting-images}
 
 Per poter essere incluse nei moduli, le immagini devono essere salvate in un server accessibile dall&#39;esterno.
 
-Selezionare il **[!UICONTROL Static elements>Image]** menu.
+Selezionate il menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]** .
 
 Selezionate la sorgente dell’immagine da inserire: può provenire dalla libreria delle risorse pubbliche o essere memorizzato in un server esterno accessibile dall&#39;esterno.
 
