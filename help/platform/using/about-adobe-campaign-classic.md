@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 94%
 
 ---
 
@@ -25,6 +25,8 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 >
 > Adobe Campaign Classic è disponibile nelle versioni v6.11 e v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Le schermate rappresentano l’interfaccia utente di Campaign Classic v7.
 
+![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità e le caratteristiche principali del video](#video)
+
 ## Funzionalità principali {#key-capabilities}
 
  Adobe Campaign fornisce una piattaforma per la progettazione di customer experience cross-channel e fornisce un ambiente per l’orchestrazione visiva delle campagne, la gestione delle interazioni in tempo reale e l’esecuzione cross-channel.
@@ -32,8 +34,6 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 Il ciclo della campagna di marketing in Adobe Campaign illustra le principali aree di funzionalità del prodotto:
 
 ![](assets/d_ncs_user_emarketing.png)
-
-![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità e le caratteristiche principali del video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Profilo cliente integrato {#integrated-customer-profile}
 
@@ -87,3 +87,10 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 * [Servizi web](../../configuration/using/about-web-services.md): utilizzare Campaign tramite API/servizi web,
 * [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md): accedere ai report integrati, analizzare i dati e progettare report personalizzati.
 
+## Video di esercitazione {#video}
+
+Questo video presenta le caratteristiche e le funzionalità principali dei Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+
+Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
