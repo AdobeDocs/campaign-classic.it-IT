@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Definizione della sequenza di pagine dei moduli web{#defining-web-forms-page-sequencing}
 
-Il modulo può contenere una o più pagine. È costruito tramite un diagramma che consente di sequenziare pagine e test, esecuzione di script e fasi di registrazione di salto di pagina. La modalità di costruzione del diagramma è la stessa di un flusso di lavoro.
+Il modulo può contenere una o più pagine. È costruito tramite un diagramma che consente di sequenziare pagine, test, esecuzione di script, salto di pagina e fasi di registrazione. La modalità di progettazione del diagramma globale è la stessa di un flusso di lavoro Campaign.
 
 ## La pagina precedente e la pagina successiva {#about-previous-page-and-next-page}
 
