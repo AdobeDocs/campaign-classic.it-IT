@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 
 ## File di estrazione {#extraction-file}
 
-Il nome del file che contiene i dati estratti è definito nel **[!UICONTROL File]** campo. Il pulsante a destra del campo consente di utilizzare i campi di personalizzazione per creare il nome del file.
+Il nome del file che contiene i dati estratti è definito nel campo **[!UICONTROL File]**. Il pulsante a destra del campo consente di utilizzare i campi di personalizzazione per creare il nome del file.
 
-Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. Puoi salvarlo sul tuo computer. Per fare questo, controlla il **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di memorizzazione locale e il nome del file.
+Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. Puoi salvarlo sul tuo computer. A questo scopo, controllare il **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di memorizzazione locale e il nome del file.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Per la consegna diretta per posta, il contenuto dell&#39;estrazione è definito in **[!UICONTROL Edit the extraction file format...]** collegamento.
+Per la consegna diretta per posta, il contenuto dell&#39;estrazione è definito nel collegamento **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -33,8 +33,8 @@ Questo collegamento consente di accedere alla procedura guidata di estrazione e 
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-È possibile inserire un URL personalizzato nel file di estrazione. For more on this, refer to [Web functionality](../../web/using/publishing-a-web-form.md).
+È possibile inserire un URL personalizzato nel file di estrazione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
->Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti in dettaglio nella sezione [Guida introduttiva](../../platform/using/exporting-data.md#export-wizard) .
+>Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti nella sezione [Guida introduttiva](../../platform/using/exporting-data.md#export-wizard).
