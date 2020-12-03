@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,14 +41,14 @@ La tipica implementazione  soluzione Adobe Campaign consiste dei seguenti compon
 
 >[!CAUTION]
 >
->Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni Adobe Campaign e la conformità alla matrice [di](../../rn/using/compatibility-matrix.md) compatibilità delle campagne tra i componenti.
+>Se non specificato diversamente, l&#39;installazione, gli aggiornamenti e la manutenzione su tutti i componenti di una piattaforma Adobe Campaign  sono responsabilità dell&#39;amministratore del computer che li ospita. Ciò include l&#39;implementazione dei prerequisiti per  applicazioni Adobe Campaign e la conformità con Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md) tra i componenti.
 
 ## Livello presentazione {#presentation-layer}
 
 L&#39;accesso all&#39;applicazione può essere effettuato in diversi modi, a seconda delle esigenze degli utenti: Integrazione con client Rich, Thin Client o API.
 
 * **Client** avanzato: L&#39;interfaccia utente principale dell&#39;applicazione è un client avanzato, in altre parole un&#39;applicazione nativa (Windows) che comunica con il server applicazione Adobe Campaign  esclusivamente con protocolli Internet standard (SOAP, HTTP, ecc.). Questa console offre una grande facilità di utilizzo per la produttività, utilizza una larghezza di banda molto ridotta (attraverso l&#39;utilizzo di una cache locale) ed è progettata per una facile installazione. Questa console può essere implementata da un browser Internet, può essere aggiornata automaticamente e non richiede alcuna configurazione di rete specifica, perché genera solo traffico HTTP(S).
-* **Thin client**: Alcune parti dell&#39;applicazione sono accessibili tramite un semplice browser Web utilizzando un&#39;interfaccia utente HTML, tra cui il modulo di reporting, le fasi di approvazione della consegna, le funzionalità del modulo Distributed Marketing (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere  funzionalità Adobe Campaign in una rete Intranet o in una rete Intranet.
+* **Thin client**: Alcune parti dell&#39;applicazione sono accessibili tramite un semplice browser web che utilizza un&#39;interfaccia utente HTML, tra cui il modulo di segnalazione, le fasi di approvazione della consegna, le funzionalità del modulo Distributed Marketing (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere  funzionalità Adobe Campaign in una rete Intranet o in una rete Intranet.
 * **Integrazione tramite le API**: In alcuni casi, il sistema può essere chiamato da un&#39;applicazione esterna utilizzando le API dei servizi Web esposte tramite il protocollo SOAP.
 
 ## Livello applicazione logico {#logical-application-layer}
@@ -59,11 +59,11 @@ L&#39;accesso all&#39;applicazione può essere effettuato in diversi modi, a sec
 
 I processi principali sono:
 
-**Server** applicazioni (web nlserver)
+**Server**  applicazioni (web nlserver)
 
 Questo processo espone l&#39;intera gamma di funzionalità di  Adobe Campaign tramite le API dei servizi Web (SOAP - HTTP + XML). Inoltre, può generare in modo dinamico le pagine Web utilizzate per l&#39;accesso basato su HTML (rapporti, moduli Web, ecc.). A tal fine, questo processo include un server Apache Tomcat JSP. Questo è il processo a cui la console si collega.
 
-**Motore** del flusso di lavoro (nlserver wfserver)
+**Motore**  flusso di lavoro (nlserver wfserver)
 
 Esegue i processi del flusso di lavoro definiti nell&#39;applicazione.
 
@@ -73,13 +73,13 @@ Gestisce inoltre flussi di lavoro tecnici eseguiti periodicamente, tra cui:
 * Pulizia: Pulizia del database. Utilizzato per eliminare i vecchi record ed evitare la crescita esponenziale del database.
 * Fatturazione: Invio automatico di un report di attività per la piattaforma (dimensione del database, numero di azioni di marketing, ecc.).
 
-**Server** di consegna (mta nlserver)
+**Server**  di consegna (mta nlserver)
 
  Adobe Campaign dispone di funzionalità di trasmissione e-mail native. Questo processo funziona come agente di trasferimento di posta SMTP (MTA). Esegue la personalizzazione &quot;one-to-one&quot; dei messaggi e gestisce la loro consegna fisica. Funziona utilizzando i processi di consegna e gestisce i tentativi automatici. Inoltre, quando il tracciamento è abilitato, sostituisce automaticamente gli URL in modo che puntino al server di reindirizzamento.
 
 Questo processo può gestire la personalizzazione e l&#39;invio automatico a un router di terze parti per SMS, fax e posta diretta.
 
-**Server** di reindirizzamento (webmdl nlserver)
+**Server**  di reindirizzamento (webmdl nlserver)
 
 Per le e-mail,  Adobe Campaign gestisce automaticamente il tracciamento aperto e dei clic (il monitoraggio transazionale a livello di sito Web è un&#39;ulteriore possibilità). A tal fine, gli URL incorporati nei messaggi e-mail vengono riscritti in modo da puntare a questo modulo, che registra il passaggio dell&#39;utente Internet prima di reindirizzarli all&#39;URL richiesto.
 
@@ -87,33 +87,33 @@ Per garantire la massima disponibilità, questo processo è completamente indipe
 
 Sono disponibili anche altri processi più tecnici:
 
-**Gestione delle e-mail** rimbalzate (nlserver inMail)
+**Gestione delle e-mail**  rimbalzate (nlserver inMail)
 
 Questa procedura consente di raccogliere automaticamente le e-mail dalle cassette postali configurate per ricevere i messaggi rimbalzati che vengono restituiti in caso di mancata consegna. Questi messaggi vengono quindi elaborati in base a regole per determinare i motivi della mancata consegna (destinatari sconosciuti, quota superata, ecc.) e per aggiornare lo stato di consegna nel database.
 
 Tutte queste operazioni sono completamente automatiche e preconfigurate.
 
-**Stato** di consegna SMS (nlserver sms)
+**Stato**  di consegna SMS (nlserver sms)
 
 Questo processo controlla il router SMS per raccogliere lo stato di avanzamento e aggiornare il database.
 
-**Scrittura dei messaggi** di registro (slogd nlserver)
+**Scrittura dei messaggi**  di registro (slogd nlserver)
 
 Questo processo tecnico acquisisce i messaggi di registro e traccia generati dagli altri processi e li scrive sul disco rigido. Questo rende disponibili ampie informazioni per la diagnosi in caso di problemi.
 
-**Scrittura dei registri** di tracciamento (nlserver trackinglogd)
+**Scrittura dei registri**  di tracciamento (nlserver trackinglogd)
 
 Questo processo consente di salvare su disco i registri di monitoraggio generati dal processo di reindirizzamento.
 
-**Scrittura di eventi** in entrata (interazioni nlserver)
+**Scrittura di eventi**  in ingresso (nlserver interattivo)
 
 Questo processo assicura la registrazione sul disco di eventi in ingresso, nel quadro di Interaction.
 
-**Moduli** di supervisione (controllo nlserver)
+**Moduli**  di supervisione (controllo nlserver)
 
 Questo processo tecnico agisce come un processo primario che genera gli altri. Inoltre, li controlla e li riavvia automaticamente in caso di incidenti, mantenendo il massimo tempo di attività del sistema.
 
-**Server** delle statistiche (stato nlserver)
+**Server**  delle statistiche (stato nlserver)
 
 In questo modo vengono mantenute le statistiche sul numero di connessioni, sui messaggi inviati per ogni server di posta a cui vengono inviati i messaggi e sui loro limiti (numero massimo di connessioni simultanee, messaggi per ora/ e/o connessione). Consente inoltre di raggruppare più istanze o computer se condividono gli stessi indirizzi IP pubblici.
 
