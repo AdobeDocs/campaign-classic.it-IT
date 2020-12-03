@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Creazione di una campagna locale{#creating-a-local-campaign}
 
-Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimento nell&#39;elenco di **[!UICONTROL campaign packages]** con una pianificazione **di esecuzione** specifica. L&#39;obiettivo è soddisfare le esigenze di comunicazione locale utilizzando un modello di campagna configurato e configurato dall&#39;entità centrale. Le fasi principali per l&#39;attuazione di un&#39;operazione locale sono le seguenti:
+Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimento nell&#39;elenco di **[!UICONTROL campaign packages]** con un **programma di esecuzione specifico**. L&#39;obiettivo è soddisfare le esigenze di comunicazione locale utilizzando un modello di campagna configurato e configurato dall&#39;entità centrale. Le fasi principali per l&#39;attuazione di un&#39;operazione locale sono le seguenti:
 
 **Per l&#39;entità centrale**
 
@@ -31,11 +31,11 @@ Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimen
 1. Ordinare la campagna.
 1. Esecuzione di campagne.
 
-## Creating a local campaign template {#creating-a-local-campaign-template}
+## Creazione di un modello di campagna locale {#creating-a-local-campaign-template}
 
-Per creare un pacchetto di campagna, dovete innanzitutto creare il modello **di** campagna tramite il **[!UICONTROL Resources > Templates]** nodo.
+Per creare un pacchetto di campagna, è innanzitutto necessario creare il modello **campagna** tramite il nodo **[!UICONTROL Resources > Templates]**.
 
-Per creare un nuovo modello locale, duplicate il **[!UICONTROL Local campaign (opLocal)]** modello predefinito.
+Per creare un nuovo modello locale, duplicate il modello predefinito **[!UICONTROL Local campaign (opLocal)]**.
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -43,17 +43,17 @@ Denominate il modello di campagna e completate i campi disponibili.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Nella finestra della campagna, fai clic sulla **[!UICONTROL Edit]** scheda, quindi sul **[!UICONTROL Advanced campaign settings...]** collegamento.
+Nella finestra della campagna, fare clic sulla scheda **[!UICONTROL Edit]**, quindi sul collegamento **[!UICONTROL Advanced campaign settings...]**.
 
 ![](assets/mkt_distr_4.png)
 
 ### Interfaccia Web {#web-interface}
 
-Nella scheda Marketing **distribuito** è possibile scegliere il tipo di interfaccia Web e specificare i valori e i parametri predefiniti da immettere quando un&#39;entità locale inserisce un ordine.
+Nella scheda **Distributed marketing** è possibile scegliere il tipo di interfaccia Web e specificare i valori e i parametri predefiniti da immettere quando un&#39;entità locale inserisce un ordine.
 
 L&#39;interfaccia Web corrisponde a un modulo che deve essere compilato dall&#39;entità locale al momento dell&#39;ordine della campagna.
 
-Selezionare il tipo di interfaccia Web da applicare alle campagne create dal modello:
+Selezionate il tipo di interfaccia Web da applicare alle campagne create dal modello:
 
 ![](assets/mkt_distr_1.png)
 
@@ -63,39 +63,39 @@ Sono disponibili quattro tipi di interfacce Web:
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : l&#39;entità locale ha accesso a un modulo Web in cui, a seconda del modello utilizzato, può modificare il contenuto, la destinazione, le dimensioni massime, nonché le date di creazione ed estrazione utilizzando i campi di personalizzazione. L&#39;entità locale può valutare il contenuto di destinazione e visualizzare l&#39;anteprima dal modulo Web.
+* **[!UICONTROL By form]** : l&#39;entità locale ha accesso a un modulo Web in cui, a seconda del modello utilizzato, può modificare il contenuto, la destinazione, le dimensioni massime, nonché le date di creazione ed estrazione utilizzando i campi di personalizzazione. L&#39;entità locale può valutare il contenuto di destinazione e visualizzare l&#39;anteprima da questo modulo Web.
 
    ![](assets/mkt_distr_8.png)
 
-   Il modulo offerto è specificato in un&#39;applicazione Web che deve essere selezionata in un elenco a discesa dal **[!UICONTROL Web Interface]** campo nel **[!UICONTROL Advanced campaign settings...]** collegamento del modello. Fare riferimento a [Creazione di una campagna locale (per modulo)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+   Il modulo offerto è specificato in un&#39;applicazione Web che deve essere selezionata in un elenco a discesa dal campo **[!UICONTROL web Interface]** nel collegamento **[!UICONTROL Advanced campaign settings...]** del modello. Fare riferimento a [Creazione di una campagna locale (per modulo)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >L&#39;applicazione Web utilizzata in questo esempio è un esempio. Per utilizzare un modulo è necessario creare una specifica app Web. Fate riferimento a [API](../../configuration/using/about-web-services.md).
+   >L&#39;applicazione Web utilizzata in questo esempio è un esempio. Per utilizzare un modulo è necessario creare un&#39;app Web specifica. Fare riferimento a [API](../../configuration/using/about-web-services.md).
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : l&#39;entità locale ha accesso ai parametri della campagna nella propria extranet (non  Adobe Campaign). Questi parametri sono identici a quelli di una campagna **locale (per modulo)**.
+* **[!UICONTROL By external form]** : l&#39;entità locale ha accesso ai parametri della campagna nella propria extranet (non  Adobe Campaign). Questi parametri sono identici a quelli di una **campagna locale (per modulo)**.
 * **[!UICONTROL Pre-set]** : l&#39;entità locale ordina la campagna utilizzando il modulo predefinito, senza localizzarlo.
 
    ![](assets/mkt_distr_5.png)
 
 ### Valori predefiniti {#default-values}
 
-Selezionare l&#39;entità **[!UICONTROL Default values]** da completare per le entità locali. Ad esempio:
+Selezionare la **[!UICONTROL Default values]** da completare per le entità locali. Ad esempio:
 
 * date di contatto ed estrazione,
 * caratteristiche target (segmento di età, ecc.).
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-Completare i campi **[!UICONTROL Parent marketing program]** e **[!UICONTROL Charge]** .
+Completare i campi **[!UICONTROL Parent marketing program]** e **[!UICONTROL Charge]**.
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### Approvazioni {#approvals}
 
-Dal **[!UICONTROL Advanced parameters for campaign entry]** collegamento, potete specificare il numero massimo di revisori.
+Dal collegamento **[!UICONTROL Advanced parameters for campaign entry]** potete specificare il numero massimo di revisori.
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
@@ -107,7 +107,7 @@ Se non desiderate assegnare un nome ai revisori per una campagna, immettete 0.
 
 ### Documenti {#documents}
 
-Potete consentire agli operatori di entità locali di collegare i documenti (file di testo, fogli di calcolo, immagini, descrizioni delle campagne, ecc.) alla campagna locale al momento della creazione dell&#39;ordine. Il **[!UICONTROL Advanced parameters for campaign entry...]** collegamento consente di limitare il numero di documenti. A questo scopo, è sufficiente immettere il numero massimo consentito nel **[!UICONTROL Number of documents]** campo.
+Potete consentire agli operatori di entità locali di collegare i documenti (file di testo, fogli di calcolo, immagini, descrizioni delle campagne, ecc.) alla campagna locale al momento della creazione dell&#39;ordine. Il collegamento **[!UICONTROL Advanced parameters for campaign entry...]** consente di limitare il numero di documenti. A tal fine, è sufficiente immettere il numero massimo consentito nel campo **[!UICONTROL Number of documents]**.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -115,31 +115,31 @@ Quando si ordina un pacchetto campagna, il modulo suggerisce di collegare tutti 
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-Se non desiderate visualizzare un campo di caricamento del documento, immettete **[!UICONTROL 0]** il campo **[!UICONTROL Number of documents]** .
+Se non si desidera visualizzare un campo di caricamento del documento, immettere **[!UICONTROL 0]** nel campo **[!UICONTROL Number of documents]**.
 
 >[!NOTE]
 >
->È **[!UICONTROL Advanced parameters for campaign entry]** possibile disattivare l&#39;opzione selezionando **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
+>È possibile disattivare **[!UICONTROL Advanced parameters for campaign entry]** selezionando **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### Flusso di lavoro {#workflow}
 
-Nella **[!UICONTROL Targeting and workflows]** scheda, crea il flusso di lavoro della campagna che raccoglie le **[!UICONTROL Default values]** informazioni specificate in **[!UICONTROL Advanced campaign settings...]** e crea le consegne.
+Nella scheda **[!UICONTROL Targeting and workflows]**, create il flusso di lavoro della campagna che raccoglie le **[!UICONTROL Default values]** specificate in **[!UICONTROL Advanced campaign settings...]** e crea le consegne.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-Fate doppio clic sull&#39; **[!UICONTROL Query]** attività per configurarla in base a quanto specificato **[!UICONTROL Default values]**.
+Fare doppio clic sull&#39;attività **[!UICONTROL Query]** per configurarla in base alla **[!UICONTROL Default values]** specificata.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### Consegna {#delivery}
 
-Nella **[!UICONTROL Audit]** scheda, fai clic sull&#39; **[!UICONTROL Detail...]** icona per visualizzare la consegna **[!UICONTROL Scheduling]** selezionata.
+Nella scheda **[!UICONTROL Audit]**, fare clic sull&#39;icona **[!UICONTROL Detail...]** per visualizzare la **[!UICONTROL Scheduling]** per la consegna selezionata.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-L&#39; **[!UICONTROL Scheduling]** icona consente di configurare la data di contatto e di esecuzione della consegna.
+L&#39;icona **[!UICONTROL Scheduling]** consente di configurare la data di contatto e di esecuzione della consegna.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
@@ -147,32 +147,32 @@ Se necessario, configurate la dimensione massima della consegna:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Individua il codice HTML della consegna. Ad esempio, in **[!UICONTROL Delivery > Current order > Additional fields]**, utilizzate il **[!UICONTROL Age segment]** campo per individuare la consegna in base all&#39;età della destinazione.
+Individua il codice HTML della consegna. Ad esempio, in **[!UICONTROL Delivery > Current order > Additional fields]**, utilizzare il campo **[!UICONTROL Age segment]** per individuare la consegna in base all&#39;età della destinazione.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Salvate il modello di campagna. Ora puoi utilizzarlo dalla visualizzazione dei pacchetti **** Campaign nell&#39;universo **Campagne** facendo clic sul **[!UICONTROL Create]** pulsante.
+Salvate il modello di campagna. È ora possibile utilizzarlo dalla vista **Pacchetti campagna** nell&#39;universo **Campagne**, facendo clic sul pulsante **[!UICONTROL Create]**.
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->I modelli delle campagne e la relativa configurazione generale sono descritti in dettaglio nei modelli [delle](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagne.
+>I modelli delle campagne e la relativa configurazione generale sono descritti in [Modelli delle campagne](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-## Creazione del pacchetto della campagna {#creating-the-campaign-package}
+## Creazione del pacchetto campagna {#creating-the-campaign-package}
 
 Affinché il modello di campagna diventi disponibile per le entità locali, deve essere aggiunto all&#39;elenco. Per fare questo, l&#39;agenzia centrale deve creare un nuovo pacchetto.
 
 Effettuate le seguenti operazioni:
 
-1. Nella **[!UICONTROL Navigation]** sezione della pagina **Campagne** fare clic sul **[!UICONTROL Campaign packages]** collegamento.
+1. Nella sezione **[!UICONTROL Navigation]** della pagina **Campagne** fare clic sul collegamento **[!UICONTROL Campaign packages]**.
 1. Fai clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. La sezione sopra la finestra consente di selezionare il modello di pacchetto della campagna [specificato in precedenza](#creating-a-local-campaign-template) .
+1. La sezione sopra la finestra consente di selezionare il modello di pacchetto della campagna [precedente](#creating-a-local-campaign-template) specificato.
 
-   Per impostazione predefinita, il **[!UICONTROL New local campaign package (localEmpty)]** modello viene utilizzato per le campagne locali.
+   Per impostazione predefinita, il modello **[!UICONTROL New local campaign package (localEmpty)]** viene utilizzato per le campagne locali.
 
 1. Specificate l&#39;etichetta, la cartella e la pianificazione di esecuzione per il pacchetto della campagna.
 
@@ -192,35 +192,35 @@ Queste informazioni sono contenute nel messaggio di notifica inviato alle agenzi
 
 ### Pubblico {#audience}
 
-Per una campagna locale, l&#39;entità centrale può specificare le entità locali coinvolte controllando l&#39;evento **[!UICONTROL Limit the package to a set of local entities]**.
+Per una campagna locale, l&#39;entità centrale può specificare le entità locali coinvolte controllando la **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### Impostazioni aggiuntive {#additional-settings}
 
-Una volta salvato il pacchetto, l&#39;entità centrale può modificarlo dalla **[!UICONTROL Edit]** scheda.
+Una volta salvato il pacchetto, l&#39;entità centrale può modificarlo dalla scheda **[!UICONTROL Edit]**.
 
 ![](assets/mkg_dist_edit_kit.png)
 
-Dalla **[!UICONTROL General]** scheda, l&#39;entità centrale può:
+Dalla scheda **[!UICONTROL General]**, l&#39;entità centrale può:
 
-* configura i revisori dei pacchetti della campagna dal **[!UICONTROL Approval parameters...]** collegamento,
+* configurare i revisori dei pacchetti della campagna dal collegamento **[!UICONTROL Approval parameters...]**,
 * rivedere il programma di esecuzione,
 * aggiungere o eliminare entità locali.
 
 >[!NOTE]
 >
->Per impostazione predefinita, ogni entità può ordinare una campagna **** locale una sola volta.
+>Per impostazione predefinita, ogni entità può ordinare una **campagna locale** solo una volta.
 >   
->Selezionate l&#39; **[!UICONTROL Enable multiple creation]** opzione per consentire la creazione di più campagne locali dal pacchetto della campagna.
+>Selezionate l&#39;opzione **[!UICONTROL Enable multiple creation]** per consentire la creazione di diverse campagne locali dal pacchetto della campagna.
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
-### Notifications {#notifications}
+### Notifiche {#notifications}
 
-Quando una campagna diventa disponibile o quando viene raggiunta la scadenza di registrazione, viene inviato un messaggio agli operatori del gruppo di notifiche locale. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+Quando una campagna diventa disponibile o quando viene raggiunta la scadenza di registrazione, viene inviato un messaggio agli operatori del gruppo di notifiche locale. Per ulteriori informazioni, fare riferimento a [Entità organizzative](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
-## Ordinamento di una campagna {#ordering-a-campaign}
+## Ordinare una campagna {#ordering-a-campaign}
 
 I pacchetti campagna diventano accessibili alle entità locali dopo che sono stati approvati e il periodo di implementazione è iniziato. Le entità locali ricevono un messaggio e-mail mediante il quale vengono informate che è disponibile un nuovo pacchetto di campagne (non appena viene raggiunta la data di disponibilità).
 
@@ -234,15 +234,15 @@ Per utilizzare una campagna offerta dall&#39;entità centrale, l&#39;entità loc
 
 Per ordinare una campagna:
 
-1. Fate clic **[!UICONTROL Order campaign]** nel messaggio di notifica o sul pulsante corrispondente in  Adobe Campaign.
+1. Fate clic su **[!UICONTROL Order campaign]** nel messaggio di notifica o sul pulsante corrispondente in  Adobe Campaign.
 
    Immettete il vostro ID e la password per ordinare la campagna. L&#39;interfaccia è composta da un set di pagine definite in un&#39;applicazione Web.
 
    >[!NOTE]
    >
-   >Le applicazioni Web sono dettagliate nella guida alle funzionalità [](../../web/using/about-web-applications.md) Web.
+   >Le applicazioni Web sono dettagliate in [questa sezione](../../web/using/about-web-applications.md).
 
-1. Immettete le informazioni necessarie nella prima pagina (etichetta dell’ordine e commento) e fate clic **[!UICONTROL Next]**.
+1. Immettete le informazioni necessarie nella prima pagina (etichetta dell&#39;ordine e commento) e fate clic su **[!UICONTROL Next]**.
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
@@ -260,7 +260,7 @@ Per ordinare una campagna:
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   La **[!UICONTROL Edit]** scheda contiene le informazioni immesse dall&#39;entità locale al momento dell&#39;ordine della campagna.
+   La scheda **[!UICONTROL Edit]** contiene le informazioni immesse dall&#39;entità locale al momento dell&#39;ordine della campagna.
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
@@ -268,11 +268,11 @@ Per ordinare una campagna:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   For more on this, refer to the [Approval process](#approval-process) section.
+   Per ulteriori informazioni, consultare la sezione [Processo di approvazione](#approval-process).
 
-1. L&#39;operatore locale riceve una notifica della disponibilità della campagna: la disponibilità delle campagne è disponibile nell&#39;elenco dei pacchetti delle campagne all&#39;interno dell&#39;universo **Campagne** . La campagna può quindi essere utilizzata. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+1. L&#39;operatore locale riceve una notifica della disponibilità della campagna: la disponibilità della campagna si trova nell&#39;elenco dei pacchetti di campagna all&#39;interno dell&#39;universo **Campaigns**. La campagna può quindi essere utilizzata. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md).
 
-   L&#39; **[!UICONTROL Start targeting with order approval]** opzione consente all&#39;entità locale di eseguire la campagna non appena l&#39;ordine è stato approvato.
+   L&#39;opzione **[!UICONTROL Start targeting with order approval]** consente all&#39;entità locale di eseguire la campagna non appena l&#39;ordine è stato approvato.
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
@@ -280,7 +280,7 @@ Per ordinare una campagna:
 
 Per confermare un ordine di campagna, l&#39;entità centrale deve approvarlo.
 
-La **[!UICONTROL Campaign orders]** panoramica, a cui si accede tramite l&#39;universo **Campagne** , consente di visualizzare lo stato degli ordini delle campagne e di approvarli.
+La panoramica **[!UICONTROL Campaign orders]**, accessibile tramite l&#39;universo **Campaigns**, consente di visualizzare lo stato degli ordini delle campagne e di approvarli.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Quando una campagna viene ordinata da un&#39;entità locale, i relativi revisori
 
 >[!NOTE]
 >
->La selezione dei revisori viene presentata nella sezione [Revisori](#reviewers) . Possono accettare o rifiutare l&#39;ordine.
+>La selezione dei revisori viene presentata nella sezione [Revisori](#reviewers). Possono accettare o rifiutare l&#39;ordine.
 
 ![](assets/mkg_dist_command_valid_web.png)
 
@@ -308,7 +308,7 @@ L’ordine può essere approvato anche tramite la console, nella panoramica dell
 
 >[!NOTE]
 >
->La campagna può essere ancora modificata e riconfigurata fino alla data di disponibilità della campagna. Le entità locali possono inoltre rifiutare la campagna facendo clic sul **[!UICONTROL Cancel]** pulsante .
+>La campagna può essere ancora modificata e riconfigurata fino alla data di disponibilità della campagna. Le entità locali possono inoltre rifiutare la campagna facendo clic sul pulsante **[!UICONTROL Cancel]**.
 
 #### Creazione di una campagna {#creating-a-campaign}
 
@@ -316,7 +316,7 @@ Una volta approvato, l&#39;ordine di campagna può essere configurato ed eseguit
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md).
 
 ### Rifiuto di un&#39;approvazione {#rejecting-an-approval}
 
@@ -330,7 +330,7 @@ Le informazioni vengono visualizzate nella pagina dell&#39;elenco dei pacchetti 
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Possono visualizzare il relativo commento nella **[!UICONTROL Edit]** scheda del pacchetto della campagna.
+Possono visualizzare il commento correlato nella scheda **[!UICONTROL Edit]** del pacchetto della campagna.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
@@ -338,7 +338,7 @@ Possono visualizzare il relativo commento nella **[!UICONTROL Edit]** scheda del
 
 Ogni volta che viene richiesta l’approvazione, i revisori ricevono una notifica via e-mail.
 
-Per ogni entità locale, i revisori vengono selezionati per l&#39;approvazione dell&#39;ordine di campagna e per l&#39;approvazione della campagna. Per ulteriori informazioni sulla selezione dei revisori locali, fare riferimento alle entità [](../../campaign/using/about-distributed-marketing.md#organizational-entities)organizzative.
+Per ogni entità locale, i revisori vengono selezionati per l&#39;approvazione dell&#39;ordine di campagna e per l&#39;approvazione della campagna. Per ulteriori informazioni sulla selezione dei revisori locali, fare riferimento a [Entità organizzative](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >
@@ -346,8 +346,8 @@ Per ogni entità locale, i revisori vengono selezionati per l&#39;approvazione d
 
 ### Annullamento di un ordine {#canceling-an-order}
 
-L&#39;ente centrale può annullare un ordine utilizzando il **[!UICONTROL Delete]** pulsante, situato sul dashboard dell&#39;ordine.
+L&#39;ente centrale può annullare un ordine utilizzando il pulsante **[!UICONTROL Delete]**, situato sul dashboard dell&#39;ordine.
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-In questo modo la campagna viene annullata nella **[!UICONTROL Campaign orders]** vista.
+In questo modo la campagna viene annullata nella visualizzazione **[!UICONTROL Campaign orders]**.
