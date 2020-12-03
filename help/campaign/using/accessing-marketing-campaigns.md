@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
  Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
-## Nozioni di base sull’area di lavoro {#workspace-basics}
+## Nozioni di base sull&#39;area di lavoro {#workspace-basics}
 
 ### Pagina Home {#home-page}
 
@@ -29,30 +29,30 @@ Una volta effettuata la connessione a  Adobe Campaign, verrà visualizzata la ho
 
 Fate clic sui collegamenti nella barra di navigazione per accedere ai vari universi.
 
-Gli elementi della campagna si trovano nell&#39; **[!UICONTROL Campaigns]** universo: qui puoi vedere una panoramica dei programmi e delle campagne di marketing e dei loro sottoinsiemi. Un programma di marketing è costituito da campagne, costituite da consegne, attività, risorse collegate, ecc. Nel contesto della gestione delle campagne di marketing tramite Campaign, le informazioni relative a consegne, budget, revisori e documenti collegati sono reperibili nelle campagne.
+Gli elementi della campagna si trovano nell&#39;universo **[!UICONTROL Campaigns]**: qui puoi vedere una panoramica dei programmi e delle campagne di marketing e dei loro sottoinsiemi. Un programma di marketing è costituito da campagne, costituite da consegne, attività, risorse collegate, ecc. Nel contesto della gestione delle campagne di marketing tramite Campaign, le informazioni relative a consegne, budget, revisori e documenti collegati sono reperibili nelle campagne.
 
-Il blocco di navigazione dell&#39; **[!UICONTROL Campaigns]** universo offre varie voci, a seconda dei moduli installati nell&#39;istanza. Ad esempio, potete accedere a:
+Il blocco di navigazione dell&#39;universo **[!UICONTROL Campaigns]** offre varie voci, a seconda dei moduli installati nell&#39;istanza. Ad esempio, potete accedere a:
 
-* **Calendario** campagna: calendario di piani, programmi di marketing, consegne e campagne. Fate riferimento al calendario [](#campaign-calendar)della campagna.
+* **Calendario** campagna: calendario di piani, programmi di marketing, consegne e campagne. Fare riferimento a [Calendario campagna](#campaign-calendar).
 * **Campagne**: accesso alle campagne contenute in tutti i programmi di marketing.
 * **Consegne**: accesso alle consegne collegate alle campagne.
 * **Applicazioni** Web: accesso alle applicazioni Web (moduli, sondaggi, ecc.).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;ergonomia generale  Adobe Campaign, sulle autorizzazioni e sulle funzionalità di gestione dei profili, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md).
+>Per ulteriori informazioni sull&#39;ergonomia generale  Adobe Campaign, sulle autorizzazioni e sulle funzionalità di gestione dei profili, consultare [questa sezione](../../platform/using/adobe-campaign-workspace.md).
 >
 >Tutte le funzionalità relative ai canali e alle consegne sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Calendario campagna {#campaign-calendar}
 
-Ogni campagna appartiene a un programma che a sua volta appartiene a un piano. I piani, i programmi e le campagne sono accessibili tramite il **[!UICONTROL Campaign calendar]** menu nell&#39;universo **Campagne** .
+Ogni campagna appartiene a un programma che a sua volta appartiene a un piano. I piani, i programmi e le campagne sono accessibili tramite il menu **[!UICONTROL Campaign calendar]** nell&#39;universo **Campaigns**.
 
-Per modificare un piano, un programma, una campagna o una consegna, fai clic sul nome corrispondente nel calendario e quindi su **[!UICONTROL Open...]**. Viene quindi visualizzato in una nuova scheda, come illustrato di seguito:
+Per modificare un piano, un programma, una campagna o una consegna, fare clic sul nome corrispondente nel calendario e quindi su **[!UICONTROL Open...]**. Viene quindi visualizzato in una nuova scheda, come illustrato di seguito:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Potete filtrare le informazioni visualizzate nel calendario della campagna. A questo scopo, fate clic sul **[!UICONTROL Filter]** collegamento e selezionate i criteri di filtro.
+Potete filtrare le informazioni visualizzate nel calendario della campagna. A questo scopo, fate clic sul collegamento **[!UICONTROL Filter]** e selezionate i criteri di filtro.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -60,7 +60,7 @@ Potete filtrare le informazioni visualizzate nel calendario della campagna. A qu
 >
 >Quando si applica un filtro a una data, vengono visualizzate tutte le campagne con una data di inizio successiva alla data specificata e/o con una data di fine precedente a quella specificata. Le date devono essere selezionate utilizzando i calendari a destra di ciascun campo.
 
-È inoltre possibile utilizzare il **[!UICONTROL Search]** campo per filtrare gli elementi visualizzati.
+È inoltre possibile utilizzare il campo **[!UICONTROL Search]** per filtrare gli elementi visualizzati.
 
 Le icone collegate a ciascun elemento consentono di visualizzarne lo stato: finito, in corso, in corso di modifica, ecc.
 
@@ -72,21 +72,21 @@ Campaign consente di gestire una serie di programmi composti da diverse campagne
 
 Durante la modifica di un programma, utilizzare le schede descritte di seguito per sfogliare e configurarlo.
 
-* Nella scheda **Pianificazione** viene visualizzato il calendario dei programmi per un mese, una settimana o un giorno, a seconda della scheda su cui si fa clic nell&#39;intestazione del calendario.
+* La scheda **Schedule** visualizza il calendario dei programmi per un mese, una settimana o un giorno, a seconda della scheda su cui si fa clic nell&#39;intestazione del calendario.
 
    Se necessario, potete creare una campagna, un programma o un&#39;attività tramite questa pagina.
 
    ![](assets/s_ncs_user_interface_campaign02.png)
 
-* La scheda **Modifica** consente di personalizzare il programma: nome, date di inizio e fine, budget, documenti collegati, ecc.
+* La scheda **Edit** consente di personalizzare il programma: nome, date di inizio e fine, budget, documenti collegati, ecc.
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### Esplorazione di campagne {#browsing-campaigns}
+#### Campagne di ricerca {#browsing-campaigns}
 
-Per accedere alle campagne è possibile utilizzare il calendario delle campagne, la **[!UICONTROL Schedule]** scheda del programma o l&#39;elenco delle campagne.
+Per accedere alle campagne è possibile utilizzare il calendario delle campagne, la scheda **[!UICONTROL Schedule]** del programma o l&#39;elenco delle campagne.
 
-1. Mediante il calendario della campagna, selezionate la campagna da visualizzare, quindi fate clic sul **[!UICONTROL Open]** collegamento.
+1. Mediante il calendario della campagna, selezionate la campagna da visualizzare, quindi fate clic sul collegamento **[!UICONTROL Open]**.
 
    ![](assets/campaign_planning_edit_op.png)
 
@@ -94,8 +94,8 @@ Per accedere alle campagne è possibile utilizzare il calendario delle campagne,
 
    ![](assets/campaign_op_edit.png)
 
-1. Tramite la **[!UICONTROL Schedule]** scheda del programma, la modalità di modifica è la stessa utilizzata per il calendario della campagna.
-1. Attraverso il **[!UICONTROL Campaigns]** collegamento dell&#39; **[!UICONTROL Campaigns]** universo, fate clic sul nome della campagna da modificare.
+1. Tramite la scheda **[!UICONTROL Schedule]** del programma, la modalità di modifica è la stessa utilizzata per il calendario della campagna.
+1. Tramite il collegamento **[!UICONTROL Campaigns]** dell&#39;universo **[!UICONTROL Campaigns]**, fare clic sul nome della campagna da modificare.
 
    ![](assets/campaign_edit_from_list.png)
 
@@ -115,7 +115,7 @@ Con  Adobe Campaign è possibile impostare processi collaborativi per la creazio
 
 >[!NOTE]
 >
->La configurazione dei modelli di campagna viene presentata nei modelli [di](../../campaign/using/marketing-campaign-templates.md#campaign-templates)campagna.
+>La configurazione dei modelli di campagna è presentata in [Modelli di campagna](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 #### Pianificazione {#schedule}
 
@@ -127,31 +127,31 @@ Una campagna centralizza un insieme di consegne. Per ogni campagna, la pianifica
 
 Per ogni campagna, gli operatori possono scambiare messaggi tramite un forum dedicato.
 
-For more on this, refer to [Discussion forums](../../campaign/using/discussion-forums.md).
+Per ulteriori informazioni, consultare [Forum di discussione](../../campaign/using/discussion-forums.md).
 
 #### Rapporti {#reports}
 
-Il **[!UICONTROL Reports]** collegamento consente di accedere ai rapporti della campagna.
+Il collegamento **[!UICONTROL Reports]** consente di accedere ai rapporti delle campagne.
 
 ![](assets/campaign_reporting_tab.png)
 
 >[!NOTE]
 >
->I rapporti sono descritti in [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+>I report sono descritti in [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
 #### Configurazione {#configuration}
 
 Le campagne vengono create tramite modelli di campagna. Potete configurare modelli riutilizzabili per i quali sono selezionate alcune opzioni e altre impostazioni sono già salvate. Per ogni campagna, sono disponibili le seguenti funzionalità:
 
-* Riferimento a documenti e risorse: potete associare i documenti alla campagna (breve, rapporto, immagini ecc.). Sono supportati tutti i formati di documento. Consultate [Gestione dei documenti](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)associati.
-* Definizione dei costi: per ogni campagna,  Adobe Campaign consente di definire le voci di costo e le strutture di calcolo dei costi da utilizzare per la creazione della campagna di marketing. Ad esempio: spese di stampa, utilizzo di un&#39;agenzia esterna, noleggio di camere, ecc. Vedere [Definizione delle categorie](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories)di costi.
+* Riferimento a documenti e risorse: potete associare i documenti alla campagna (breve, rapporto, immagini ecc.). Sono supportati tutti i formati di documento. Vedere [Gestione dei documenti associati](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+* Definizione dei costi: per ogni campagna,  Adobe Campaign consente di definire le voci di costo e le strutture di calcolo dei costi da utilizzare per la creazione della campagna di marketing. Ad esempio: spese di stampa, utilizzo di un&#39;agenzia esterna, noleggio di camere, ecc. Vedere [Definizione delle categorie di costi](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
 * Definizione degli obiettivi: potete definire obiettivi quantificabili per una campagna, ad esempio numero di abbonati, volume di affari, ecc. Tali informazioni vengono successivamente utilizzate nei rapporti sulle campagne.
-* Gestione degli indirizzi iniziali (per ulteriori informazioni, fare riferimento a [questa sezione](../../delivery/using/about-seed-addresses.md)) e dei gruppi di controllo (fare riferimento a [Definizione di un gruppo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)di controllo).
-* Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. Consulta [Controllo e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Gestione degli indirizzi iniziali (per ulteriori informazioni, fare riferimento a [questa sezione](../../delivery/using/about-seed-addresses.md)) e ai gruppi di controllo (fare riferimento a [Definizione di un gruppo di controllo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
+* Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. Vedere [Controllo e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
->Per accedere alle configurazioni della campagna e apportarvi modifiche, fate clic sul **[!UICONTROL Advanced campaign parameters...]** collegamento nella **[!UICONTROL Edit]** scheda. Per ulteriori informazioni sull&#39;impostazione dei parametri a livello di campagna in modo che le consegne ereditino automaticamente i valori, vedi [la nostra Technote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Per accedere alle configurazioni della campagna e apportarvi modifiche, fate clic sul collegamento **[!UICONTROL Advanced campaign parameters...]** nella scheda **[!UICONTROL Edit]**. Per ulteriori informazioni sull&#39;impostazione dei parametri a livello di campagna in modo che le consegne ereditino automaticamente i valori, vedere [la nostra Technote](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
 ## Utilizzo dell&#39;interfaccia Web {#using-the-web-interface-}
 
@@ -162,7 +162,7 @@ Potete accedere alle schermate della console  Adobe Campaign tramite un browser 
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Le approvazioni (ad esempio, di un target o di un contenuto di consegna) possono essere eseguite tramite accesso Web.
+Le approvazioni (ad esempio, di un target o di un contenuto di consegna) possono essere effettuate tramite accesso Web.
 
 ![](assets/campaign_web_interface_validation.png)
 
