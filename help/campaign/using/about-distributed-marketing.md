@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 1%
@@ -25,11 +25,11 @@ L&#39;entità centrale fornisce campagne che gli enti locali possono utilizzare.
 
 >[!CAUTION]
 >
->Il modulo Distributed Marketing è un&#39;opzione **Campaign** . Controlla il contratto di licenza.
+>Il modulo Distributed Marketing è un&#39;opzione **Campaign**. Controlla il contratto di licenza.
 
 ## Terminologia {#terminology}
 
-### Enti centrali {#central-entities}
+### Entità centrali {#central-entities}
 
 Le entità centrali sono composte da operatori di marketing incaricati di specificare le comunicazioni e assistere gli enti locali nell&#39;esecuzione della loro campagna di marketing.
 
@@ -60,22 +60,22 @@ Modello (o istanza di campagna) creato da un&#39;entità centrale e reso disponi
 
 ### Campagna locale {#local-campaign}
 
-Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimento nell&#39;elenco di **[!UICONTROL campaign packages]** con una pianificazione **di esecuzione** specifica. L&#39;obiettivo è soddisfare le esigenze di comunicazione locale utilizzando un modello di campagna configurato e configurato dall&#39;entità centrale.
+Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimento nell&#39;elenco di **[!UICONTROL campaign packages]** con un **programma di esecuzione specifico**. L&#39;obiettivo è soddisfare le esigenze di comunicazione locale utilizzando un modello di campagna configurato e configurato dall&#39;entità centrale.
 
 Il grado di autonomia dell&#39;entità locale dipende dall&#39;attuazione utilizzata.
 
-Fate riferimento a [Creazione di una campagna](../../campaign/using/creating-a-local-campaign.md)locale.
+Fare riferimento a [Creazione di una campagna locale](../../campaign/using/creating-a-local-campaign.md).
 
 ### Campagna collaborativa {#collaborative-campaign}
 
-Una campagna collaborativa è una campagna la cui pianificazione di **esecuzione è definita** dall&#39;entità centrale, che può essere utilizzata dall&#39;entità locale. Il contenuto rimane lo stesso per ogni entità locale, ma i costi vengono condivisi. Per partecipare, gli enti locali si iscrivono alla campagna collaborativa.
+Una campagna collaborativa è una campagna il cui **programma di esecuzione è definito** dall&#39;entità centrale, che l&#39;entità locale può utilizzare. Il contenuto rimane lo stesso per ogni entità locale, ma i costi vengono condivisi. Per partecipare, gli enti locali si iscrivono alla campagna collaborativa.
 
 * **[!UICONTROL Collaborative campaign (by form)]**: consigliato per campagne che coinvolgono fino a 300 entità locali. L&#39;entità locale può immettere parametri predefiniti per il targeting e la personalizzazione del contenuto in un modulo Web. Il modulo può essere un modulo Adobe Campaign  o un modulo esterno (client extranet). Un amministratore funzionale può definire e configurare il modulo in base a un modello di modulo definito dall&#39;integratore. Per ordinare la campagna, l&#39;entità locale ha solo bisogno dell&#39;accesso Web.
-* **[!UICONTROL Collaborative campaign (by campaign)]**: consigliato per campagne indirizzate a dozzine di entità locali. Questo tipo di campagna crea campagne figlio per ogni entità locale. Una volta **[!UICONTROL collaborative campaign (by campaign)]** approvata dall&#39;entità centrale, la campagna viene resa disponibile all&#39;entità locale, che può modificarla. L&#39;esecuzione viene sincronizzata automaticamente tra le campagne padre e figlio. L&#39;entità locale deve avere accesso a un&#39;istanza per ordinare una campagna e parteciparvi.
+* **[!UICONTROL Collaborative campaign (by campaign)]**: consigliato per campagne indirizzate a dozzine di entità locali. Questo tipo di campagna crea campagne figlio per ogni entità locale. Una volta che l&#39; **[!UICONTROL collaborative campaign (by campaign)]** viene approvato dall&#39;entità centrale, la campagna viene resa disponibile all&#39;entità locale, che può modificarla. L&#39;esecuzione viene sincronizzata automaticamente tra le campagne padre e figlio. L&#39;entità locale deve avere accesso a un&#39;istanza per ordinare una campagna e parteciparvi.
 * **[!UICONTROL Collaborative campaign (by target approval)]**: consigliato per campagne indirizzate a diverse migliaia di enti locali. L&#39;entità locale riceve un elenco di contatti predefinito dall&#39;entità centrale. L&#39;entità locale decide se mantenere o meno determinati contatti in base al contenuto della campagna, tramite un modulo Web. Le entità locali sono dedotte dall&#39;elenco dei contatti selezionati. Per partecipare alla campagna, l&#39;entità locale ha solo bisogno dell&#39;accesso Web.
 * **[!UICONTROL Collaborative campaign (simple)]**: questa modalità assicura la compatibilità con i processi di esecuzione specifici delle versioni precedenti.
 
-Fate riferimento a [Creazione di una campagna](../../campaign/using/creating-a-collaborative-campaign.md)collaborativa.
+Fare riferimento a [Creazione di una campagna collaborativa](../../campaign/using/creating-a-collaborative-campaign.md).
 
 ### Ordinare pacchetti campagna {#ordering-campaign-packages}
 
@@ -83,7 +83,7 @@ Se un&#39;entità locale si registra per una campagna, questo viene trasformato 
 
 ## Area di lavoro {#workspace}
 
-È possibile accedere all&#39;elenco dei pacchetti campagna dall&#39;universo **Campagne** : fare clic sul **[!UICONTROL Campaign packages]** collegamento.
+È possibile accedere all&#39;elenco dei pacchetti campagna dall&#39;universo **Campaigns**: fare clic sul collegamento **[!UICONTROL Campaign packages]**.
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -93,7 +93,7 @@ Nel caso delle agenzie centrali, questa finestra visualizza tutti i pacchetti di
 
 ## Operatori ed entità {#operators-and-entities}
 
-Iniziate specificando gli operatori di entità centrale e locale tramite la **[!UICONTROL Access management]** cartella.
+Iniziate specificando gli operatori di entità centrale e locale tramite la cartella **[!UICONTROL Access management]**.
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
@@ -101,19 +101,19 @@ Iniziate specificando gli operatori di entità centrale e locale tramite la **[!
 
 È necessario creare operatori centrali e locali.
 
-Gli operatori centrali devono appartenere al gruppo di **[!UICONTROL Central management]** operatori o avere il diritto **[!UICONTROL CENTRAL]** denominato.
+Gli operatori centrali devono appartenere al gruppo di operatori **[!UICONTROL Central management]** o avere il diritto di **[!UICONTROL CENTRAL]** specificato.
 
-Gli operatori locali devono appartenere al gruppo di **[!UICONTROL Local management]** operatori o avere il diritto **[!UICONTROL LOCAL]** denominato. Devono anche essere collegati alla loro entità locale.
+Gli operatori locali devono appartenere al gruppo di operatori **[!UICONTROL Local management]** o avere il diritto di **[!UICONTROL LOCAL]** specificato. Devono anche essere collegati alla loro entità locale.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Entità organizzative {#organizational-entities}
 
-Per creare un&#39;entità organizzativa, fate clic sul **[!UICONTROL Administration > Access management > Organizational entities]** nodo e fate clic sull&#39; **[!UICONTROL New]** icona sopra l&#39;elenco delle entità.
+Per creare un&#39;entità organizzativa, fare clic sul nodo **[!UICONTROL Administration > Access management > Organizational entities]** e fare clic sull&#39;icona **[!UICONTROL New]** sopra l&#39;elenco delle entità.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Ogni entità organizzativa contiene informazioni di identificazione (etichetta, nome interno, informazioni di contatto, ecc.) e i gruppi coinvolti nel processo di approvazione dell&#39;ordine. Questi sono definiti nella **[!UICONTROL Notifications and approvals]** sezione trovata nella **[!UICONTROL General]** scheda.
+Ogni entità organizzativa contiene informazioni di identificazione (etichetta, nome interno, informazioni di contatto, ecc.) e i gruppi coinvolti nel processo di approvazione dell&#39;ordine. Questi sono definiti nella sezione **[!UICONTROL Notifications and approvals]** della scheda **[!UICONTROL General]**.
 
 * Definire un gruppo di notifiche di pacchetto: gli operatori di questo gruppo riceveranno una notifica ogni volta che un nuovo pacchetto viene aggiunto all&#39;elenco dei pacchetti campagna e ogni volta che una campagna diventa disponibile.
 * Selezionare il gruppo di revisori incaricati di approvare gli ordini, ovvero quelli incaricati di approvare le campagne ordinate dall&#39;entità locale.
@@ -121,7 +121,7 @@ Ogni entità organizzativa contiene informazioni di identificazione (etichetta, 
 
 >[!NOTE]
 >
->Il processo di approvazione viene presentato nella sezione Processo [di](../../campaign/using/creating-a-local-campaign.md#approval-process) approvazione.
+>Il processo di approvazione viene presentato nella sezione [Processo di approvazione](../../campaign/using/creating-a-local-campaign.md#approval-process).
 
 ## Implementazione {#implementation}
 
@@ -141,14 +141,14 @@ La procedura di implementazione dipende dal tipo di pacchetto campagna utilizzat
 
    * definizione del target e dimensione massima,
    * definizione del contenuto,
-   * programma di esecuzione (data di contatto e data di estrazione), solo **** per gli operatori locali,
+   * programma di esecuzione (data di contatto e data di estrazione), **solo per gli operatori locali**,
    * estensione dello schema di ordine con tutti i campi aggiuntivi necessari.
 
 1. Creare un modulo Web ( Adobe o extranet) che consenta di visualizzare i parametri di localizzazione, valutare la destinazione e il budget, nonché visualizzare in anteprima il contenuto e approvare l&#39;ordine.
 
-   Per campagne **collaborative (per approvazione target)**, create la tabella in cui verranno salvate le approvazioni per ogni entità locale.
+   Per **campagne collaborative (per approvazione target)**, creare la tabella in cui verranno salvate le approvazioni per ogni entità locale.
 
-### lato amministratore funzionale {#functional-administrator-side}
+### Lato amministratore funzionale {#functional-administrator-side}
 
 Questi passaggi devono essere eseguiti durante la creazione di ogni campagna.
 
