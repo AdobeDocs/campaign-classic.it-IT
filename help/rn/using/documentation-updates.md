@@ -6,11 +6,11 @@ description: In questa pagina sono elencate tutte le nuove funzioni e gli aggior
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3631'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 
 La panoramica del modello dati della campagna è stata migliorata e riorganizzata. [Ulteriori informazioni](../../configuration/using/about-data-model.md).
 
-La configurazione dell&#39;account esterno è stata spostata in [questa sezione](../../installation/using/external-accounts.md).
+La configurazione dell’account esterno è stata spostata in [questa sezione](../../installation/using/external-accounts.md).
 
-La documentazione di Campaign Federated Data Access (FDA) è stata migliorata con i dettagli per ogni configurazione di database esterno e spostata in [questa sezione](../../installation/using/about-fda.md).
+La documentazione di Federated Data Access (FDA) per Campaign è stata migliorata con i dettagli di ogni configurazione di database esterno e spostata in [questa sezione](../../installation/using/about-fda.md).
 
-[La versione](../../rn/using/release--20-2.md#release-20-2-3-build-9182) di Campaign 20.2.3 è stata spostata in General Availability (GA).
+[La versione](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 di Campaign è stata spostata in General Availability (GA).
 
-La sezione Privacy è stata spostata e arricchita con due nuove pagine: [Gestione](../../platform/using/privacy-management.md) della privacy e [gestione delle richieste](../../platform/using/privacy-requests.md)di privacy.
+La sezione Dati personali è stata spostata e arricchita con due nuove pagine: [Gestione della privacy](../../platform/using/privacy-management.md) e [Gestione delle richieste di accesso ai dati personali](../../platform/using/privacy-requests.md).
 
-Nella pagina di configurazione del server di mid-sourcing è stata aggiunta una nota per specificare che il nome interno dell&#39;account esterno non deve essere aggiornato una volta che il server è stato configurato. [Leggi tutto](../../installation/using/mid-sourcing-server.md)
+Nella pagina di configurazione del server di midsourcing è stata aggiunta una nota per specificare che il nome interno dell’account esterno non deve essere aggiornato una volta che il server è stato configurato. [Leggi tutto](../../installation/using/mid-sourcing-server.md)
 
 Sono state aggiunte informazioni sulla sintassi da utilizzare per specificare il percorso di un server SFTP esterno. [Leggi tutto](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-La sezione Dati personali e Personas è stata aggiornata con uno scenario relativo al caso d’uso per illustrare l’interazione delle diverse persone in materia di privacy. [Leggi tutto](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+La sezione Dati personali e Persone è stata aggiornata con uno scenario di utilizzo che illustra l’interazione delle diverse persone in materia di dati personali. [Leggi tutto](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-È stata aggiunta una nuova sezione in cui sono elencate le Domande frequenti sulla privacy. [Leggi tutto](../../platform/using/privacy-faq.md)
+È stata aggiunta una nuova sezione in cui sono elencate le domande frequenti sui dati personali. [Leggi tutto](../../platform/using/privacy-faq.md)
 
 ## Ottobre 2020 {#oct-2020}
 
@@ -58,7 +58,7 @@ La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../r
 Le note sulla versione e la matrice di compatibilità per la versione Gold Standard sono ora disponibili in una sezione dedicata.
 [Ulteriori informazioni](../../rn/using/gold-standard.md#gs-10).
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+L’integrazione dei trigger, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
 **Altri aggiornamenti**
 
