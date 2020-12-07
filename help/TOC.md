@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -57,8 +57,8 @@ ht-degree: 96%
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
-      + [Richieste di accesso ai dati personali](platform/using/privacy-requests.md)
-      + [Domande frequenti sulla privacy](platform/using/privacy-faq.md)
+      + [Richieste di accesso a dati personali](platform/using/privacy-requests.md)
+      + [Domande frequenti sui dati personali](platform/using/privacy-faq.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modifica di un profilo](platform/using/editing-a-profile.md)
@@ -576,7 +576,7 @@ ht-degree: 96%
    + Annessi {#annexes}
       + [Esempi di app Facebook](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
-+ Guida all&#39;installazione e alla configurazione {#installing-campaign-classic}
++ Guida all’installazione e alla configurazione {#installing-campaign-classic}
    + Principi di architettura {#architecture-and-hosting-models}
       + [Architettura generale](installation/using/general-architecture.md)
       + Modelli di hosting{#hosting-models-lp}
@@ -626,18 +626,18 @@ ht-degree: 96%
       + [Interazione: buffer dati](installation/using/interaction---data-buffer.md)
       + [Configurazione di account esterni](installation/using/external-accounts.md)
    + Accesso a un database esterno {#accessing-external-database}
-      + [Introduzione all&#39;FDA](installation/using/about-fda.md)
+      + [Introduzione a FDA](installation/using/about-fda.md)
       + Linee guida per la configurazione {#config-databases}
          + [Passaggi di configurazione](installation/using/configure-fda.md)
-         + [Configura Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Configurare  Azure synapse](installation/using/configure-fda-synapse.md)
+         + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
+         + [Configurare Azure Synapse](installation/using/configure-fda-synapse.md)
          + [Configurare Hadoop](installation/using/configure-fda-hadoop.md)
-         + [Configurare  Oracle](installation/using/configure-fda-oracle.md)
+         + [Configurare Oracle](installation/using/configure-fda-oracle.md)
          + [Configurare Netezza](installation/using/configure-fda-netezza.md)
          + [Configurare Sybase IQ](installation/using/configure-fda-sybase.md)
          + [Configurare Teradata](installation/using/configure-fda-teradata.md)
          + [Configurare SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [Diritti di accesso remoto](installation/using/remote-database-access-rights.md)
+      + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
       + [Connessione al database](installation/using/connecting-to-database.md)
       + [Creazione dello schema dati](installation/using/creating-data-schema.md)
       + [Definizione della mappatura dei dati](installation/using/defining-data-mapping.md)
