@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: b78c9dc9112893f2b203eccf0bd2d92fa299425d
+source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
 workflow-type: tm+mt
-source-wordcount: '2182'
+source-wordcount: '2179'
 ht-degree: 98%
 
 ---
@@ -697,8 +697,6 @@ ht-degree: 98%
       + [Password persa](production/using/lost-password.md)
       + [Comportamento JSP](production/using/jsp-behavior.md)
 + Guida per gli sviluppatori {#configuring-campaign-classic}
-+ 
-   + [Informazioni sulla configurazione della campagna](configuration/using/about-config-guide.md)
    + Modello dati {#data-model}
       + [Informazioni sul modello dati](configuration/using/about-data-model.md)
       + [Descrizione del modello dati](configuration/using/data-model-description.md)
