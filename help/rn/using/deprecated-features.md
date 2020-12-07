@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <ul>
    <li>API Soap - On-premise: 2007, 2015, 2016</li>
    <li>API Soap - Online: 2015, 2016</li>
-   <li>API Web - Microsoft Dynamics CRM locale: Aggiornamento 1 del 2016 del 2016</li>
-   <li>API Web - Microsoft Dynamics CRM Online: Aggiornamento 1 del 2016 del 2016</li>
+   <li>API web - Microsoft Dynamics CRM on-premise: 2016, 2016 aggiornamento 1</li>
+   <li>API web - Microsoft Dynamics CRM online: 2016, 2016 aggiornamento 1</li>
    </ul>
   <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
@@ -73,7 +73,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </td>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
-  <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger originariamente basata sulle impostazioni OAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. <p>
+  <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger, originariamente basata su OAuth per accedere alla pipeline, ora è stata modificata e spostata in Adobe I/O. <p>
   <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
   <p><em>Data effettiva di rimozione: aprile 2021</em></p>
@@ -211,7 +211,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 Adobe non supporta i seguenti motori di database in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono queste versioni devono effettuare l’aggiornamento alla versione più recente o passare a un’altra versione.
 
-Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di compatibilità di Campaign ](../../rn/using/compatibility-matrix.md).
+Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
 
 **FEDERATED DATA ACCESS (FDA)**
 
