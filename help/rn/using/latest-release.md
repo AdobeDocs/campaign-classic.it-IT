@@ -6,9 +6,9 @@ description: Note sulla versione più recente di Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ _27 ottobre 2020_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Le notifiche push in Android sono state migliorate per supportare l’API FCM HTTP v1 per l’autenticazione dei canali push Android.</a> </p>
+<td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Le notifiche push in Android</a> sono state migliorate per supportare l’API FCM HTTP v1 per l’autenticazione dei canali push Android. </p>
 <p>Con il supporto della nuova versione API, ora è possibile inviare messaggi di notifica FCM che forniscono funzionalità avanzate di messaggistica push. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Ulteriori informazioni</a></p> 
 <p>Scopri come configurare l’API FCM HTTP v1 API per Android in Adobe Campaign in <a href="../../delivery/using/configuring-the-mobile-application-android.md">questa sezione</a> .</p>
 </td> 
@@ -109,7 +109,7 @@ Ulteriori informazioni sui cookie in [questa sezione](../../platform/using/priva
 * L’autenticazione Windows NT è stata rimossa dai metodi di autenticazione disponibili durante la configurazione di un nuovo database con Microsoft SQL Server. [Leggi tutto](../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine)
 * Il flusso di lavoro di pulizia del database è stato ottimizzato per Teradata al fine di migliorare le prestazioni. (NEO-19959)
 * È stato migliorato il messaggio di errore visualizzato durante l’inserimento di un’immagine da Adobe Target che lasciava il nome del tenant vuoto nell’account esterno.
-* Nelle proprietà di consegna, l’**[!UICONTROL Archive emails]** opzione è stata rinominata **[!UICONTROL Email BCC]**.
+* Nelle proprietà di consegna, l’opzione **[!UICONTROL Archive emails]** è stata rinominata **[!UICONTROL Email BCC]**.
 * Per migliorare la robustezza, ora vengono rifiutate le query selectAll con nodi non validi. In caso di necessità si può disattivare il controllo e tornare al comportamento precedente, impostando XtkSecurity_Disable_QueryCheck su 0.
 
 **Evoluzioni tecniche**
