@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '3660'
 ht-degree: 99%
@@ -340,7 +340,7 @@ La nuova opzione **Maximum personalization run time** nelle proprietà di conseg
 
 Gli esempi per le chiamate API che utilizzano una **HttpServletRequest** con logon() e query() sono stati aggiornati. [Ulteriori informazioni](../../configuration/using/web-service-calls.md).
 
-È stata aggiunta una raccomandazione per l’attributo **sqlDefault** nella definizione dello schema. [Ulteriori informazioni](../../configuration/using/elements-and-attributes.md#attribute-description).
+È stata aggiunta una raccomandazione per l’attributo **sqlDefault** nella definizione dello schema. [Leggi tutto](../../configuration/using/schema/attribute.md)).
 
 L’integrazione tra Adobe Campaign e Adobe Real-time Customer Data Platform è ora indicata nella guida **Integrazione con Adobe Experience Cloud**. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md).
 
