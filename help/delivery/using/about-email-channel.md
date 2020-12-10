@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 12%
@@ -22,8 +22,8 @@ ht-degree: 12%
 Prima di iniziare a inviare i messaggi e-mail:
 
 * Assicurati che i profili dei destinatari contengano almeno un indirizzo e-mail.
-* Ulteriori informazioni sulle procedure ottimali per la [distribuzione di Adobe Campaign](../../delivery/using/delivery-best-practices.md).
-* Informazioni sulla [recapito](../../delivery/using/about-deliverability.md) e sulla [gestione della recapito](https://helpx.adobe.com/campaign/kb/acc-deliverability.html).
+* Ulteriori informazioni sulle  procedure ottimali per la distribuzione di Adobe Campaign [](../../delivery/using/delivery-best-practices.md).
+* Leggi [Consegna](../../delivery/using/about-deliverability.md) e [Gestione della recapito](https://helpx.adobe.com/campaign/kb/acc-deliverability.html).
 
 I passaggi principali per inviare un messaggio e-mail sono i seguenti:
 
@@ -31,6 +31,6 @@ I passaggi principali per inviare un messaggio e-mail sono i seguenti:
 * [Definizione della popolazione target](../../delivery/using/steps-defining-the-target-population.md)
 * [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
 * [Invio del messaggio e-mail](../../delivery/using/sending-messages.md)
-* [Monitoraggio della consegna](../../delivery/using/monitoring-a-delivery.md)
+* [Monitoraggio della consegna](../../delivery/using/about-delivery-monitoring.md)
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale e-mail. Per informazioni globali su come creare una consegna, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale e-mail. Per informazioni globali su come creare una consegna, fare riferimento a [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
