@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -54,7 +54,7 @@ La presenza dell&#39;attributo &quot;static&quot; (con il valore &quot;true&quot
 
 Un metodo &quot;const&quot; contiene implicitamente un documento XML nel formato del relativo schema associato come input.
 
-Una descrizione completa dell&#39;elemento `<method>` di uno schema Adobe Campaign  è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    element.
+Una descrizione completa dell&#39;elemento `<method>` di uno schema Adobe Campaign  è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in [Metodo](../../configuration/using/schema/method.md)
 
 Esempio del metodo &quot;const&quot; di tipo &quot;ExecuteQuery&quot; dallo schema &quot;xtk:queryDef&quot;:
 
