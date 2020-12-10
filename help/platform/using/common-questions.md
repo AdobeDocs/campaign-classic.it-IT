@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
@@ -49,7 +49,7 @@ L’interfaccia autonoma delle aree di protezione può essere utilizzata per ges
 
  Adobe Campaign dispone di una serie di dashboard e strumenti per monitorare le consegne delle e-mail.
 
-[Fai clic qui per scoprire](../../delivery/using/monitoring-a-delivery.md) come assicurarti che i tuoi messaggi siano inviati, come monitorare l’esecuzione e intervenire in caso di errore.
+[Fai clic qui per scoprire](../../delivery/using/about-delivery-monitoring.md) come assicurarti che i tuoi messaggi siano inviati, come monitorare l’esecuzione e intervenire in caso di errore.
 
 ## 5. Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution}
 
