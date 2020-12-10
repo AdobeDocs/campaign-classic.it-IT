@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -27,11 +27,11 @@ I servizi Web consentono di creare molte applicazioni da un sistema di terze par
 * sviluppo di interfacce speciali con funzionalità semplificate (interfacce Web, ecc.),
 * Alimentazione e ricerca di dati nella banca dati, osservando le regole commerciali e restando isolati dal modello fisico sottostante.
 
-## Definizione dei servizi Web {#definition-of-web-services}
+## Definizione di servizi Web {#definition-of-web-services}
 
 La definizione dei servizi Web implementati sul server applicazioni Adobe Campaign  è disponibile dagli schemi di dati.
 
-Un servizio Web è descritto nella grammatica degli schemi di dati ed è disponibile dall&#39; **`<methods>`** elemento .
+Un servizio Web è descritto nella grammatica degli schemi di dati ed è disponibile dall&#39;elemento **`<methods>`**.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Un servizio Web è descritto nella grammatica degli schemi di dati ed è disponi
 </methods>
 ```
 
-Di seguito è riportato un esempio della definizione del metodo **GenerateForm**.
+Di seguito è riportato un esempio della definizione del metodo denominato **GenerateForm**.
 
-La descrizione del servizio inizia con l&#39; `<method>` elemento . L&#39;elenco dei parametri del metodo viene completato dall&#39; `<parameters>` elemento . Ogni parametro è specificato da un nome, un tipo (booleano, stringa, DOMElement, ecc.) e una descrizione. L&#39;attributo &quot;inout&quot; con il valore &quot;out&quot; consente di specificare che il parametro &quot;result&quot; si trova nell&#39;output di chiamata SOAP.
+La descrizione del servizio inizia con l&#39;elemento `<method>`. L&#39;elenco dei parametri del metodo è completato dall&#39;elemento `<parameters>`. Ogni parametro è specificato da un nome, un tipo (booleano, stringa, DOMElement, ecc.) e una descrizione. L&#39;attributo &quot;inout&quot; con il valore &quot;out&quot; consente di specificare che il parametro &quot;result&quot; si trova nell&#39;output di chiamata SOAP.
 
 La presenza dell&#39;attributo &quot;static&quot; (con il valore &quot;true&quot;) descrive questo metodo come statico, il che significa che tutti i parametri del metodo devono essere dichiarati.
 
 Un metodo &quot;const&quot; contiene implicitamente un documento XML nel formato del relativo schema associato come input.
 
-Una descrizione completa dell&#39; `<method>` elemento di uno schema Adobe Campaign  è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    element.
+Una descrizione completa dell&#39;elemento `<method>` di uno schema Adobe Campaign  è disponibile nel capitolo &quot;Riferimenti allo schema&quot; in <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    element.
 
 Esempio del metodo &quot;const&quot; di tipo &quot;ExecuteQuery&quot; dallo schema &quot;xtk:queryDef&quot;:
 
@@ -77,7 +77,7 @@ Per ciascun servizio è disponibile un file WSDL (Web Service Description Librar
 
 Per generare un file WSDL, è necessario immettere il seguente URL da un browser Web:
 
-https://`<server>`?/nl/jsp/schemawsdl.jsp?schema=`<schema>`
+https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 Con:
 
@@ -128,9 +128,9 @@ Le definizioni dei tipi si basano sugli schemi XML. Nel nostro esempio, il metod
   </s:element>
 ```
 
-#### Messages {#messages}
+#### Messaggi {#messages}
 
-La `<message>` descrizione descrive i nomi e i tipi di un insieme di campi da inviare. Il metodo utilizza due messaggi per passare come parametro (&quot;ExecuteQueryIn&quot;) e il valore restituito (&quot;ExecuteQueryOut&quot;).
+La sezione `<message>` descrive i nomi e i tipi di un insieme di campi da inviare. Il metodo utilizza due messaggi per passare come parametro (&quot;ExecuteQueryIn&quot;) e il valore restituito (&quot;ExecuteQueryOut&quot;).
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ La `<message>` descrizione descrive i nomi e i tipi di un insieme di campi da in
 
 #### PortType {#porttype}
 
-Associa `<porttype>` i messaggi nell&#39;operazione &quot;ExecuteQuery&quot; attivata dalla query (&quot;input&quot;) che genera una risposta (&quot;output&quot;).
+L&#39; `<porttype>` associa i messaggi nell&#39;operazione &quot;ExecuteQuery&quot; attivata dalla query (&quot;input&quot;) che genera una risposta (&quot;output&quot;).
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ Associa `<porttype>` i messaggi nell&#39;operazione &quot;ExecuteQuery&quot; att
 
 #### Binding {#binding}
 
-La `<binding>` parte specifica il protocollo di comunicazione SOAP ( `<soap:binding>` ), il trasporto dei dati in HTTP (valore dell&#39;attributo &quot;trasporto&quot;) e il formato dei dati per l&#39;operazione &quot;ExecuteQuery&quot;. Il corpo della busta SOAP contiene direttamente i segmenti di messaggio senza trasformazione.
+La parte `<binding>` specifica il protocollo di comunicazione SOAP ( `<soap:binding>` ), il trasporto dei dati in HTTP (valore dell&#39;attributo &quot;trasporto&quot;) e il formato dei dati per l&#39;operazione &quot;ExecuteQuery&quot;. Il corpo della busta SOAP contiene direttamente i segmenti di messaggio senza trasformazione.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ La `<binding>` parte specifica il protocollo di comunicazione SOAP ( `<soap:bind
 
 #### Servizio {#service}
 
-La `<service>` parte descrive il servizio &quot;XtkQueryDef&quot; con il relativo URI sull&#39;URL del server dell&#39;applicazione Adobe Campaign .
+La parte `<service>` descrive il servizio &quot;XtkQueryDef&quot; con il relativo URI sull&#39;URL del server dell&#39;applicazione Adobe Campaign .
 
 ```
 <service name="XtkQueryDef">
@@ -188,7 +188,7 @@ La `<service>` parte descrive il servizio &quot;XtkQueryDef&quot; con il relativ
 
 ## Connettività {#connectivity}
 
- Adobe Campaign ha aumentato la sicurezza per i meccanismi di autenticazione introducendo le aree di sicurezza (vedere il capitolo **Definizione delle aree** di sicurezza in [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones)) e le impostazioni di gestione delle sessioni.
+ Adobe Campaign ha aumentato la sicurezza per i meccanismi di autenticazione introducendo le aree di protezione (fare riferimento al capitolo **Defining security zone** in [this section](../../installation/using/configuring-campaign-server.md#defining-security-zones)) e le impostazioni di gestione delle sessioni.
 
 Sono disponibili due modalità di autenticazione:
 
@@ -196,7 +196,7 @@ Sono disponibili due modalità di autenticazione:
 
 o
 
-* **tramite il  login di Adobe Campaign + password** che crea un token sessione. Il token di sessione scade automaticamente dopo un determinato periodo. Questa modalità non è consigliata e richiede di ridurre le impostazioni di protezione dell’applicazione per alcune impostazioni di area (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
+* **tramite il  login di Adobe Campaign +** password che crea un token sessione. Il token di sessione scade automaticamente dopo un determinato periodo. Questa modalità non è consigliata e richiede di ridurre le impostazioni di protezione dell’applicazione per alcune impostazioni di area (allowUserPassword=&quot;true&quot; e sessionTokenOnly=&quot;true&quot;).
 
 ### Caratteristiche del token di sessione {#session-token-characteristics}
 
@@ -209,7 +209,7 @@ Il token sessione ha le seguenti caratteristiche:
    * il token di sessione diventa un token permanente, non viene distrutto dopo la chiusura del browser
    * viene inserito in un cookie HTTP-ONLY (i cookie devono essere attivati per gli operatori)
 
-### Caratteristiche token di protezione {#security-token-characteristics}
+### Caratteristiche del token di sicurezza {#security-token-characteristics}
 
 Il token di protezione ha le seguenti caratteristiche:
 
@@ -277,7 +277,7 @@ Da una chiamata SOAP:
 
 >[!NOTE]
 >
->Gli URL utilizzati nelle seguenti chiamate **HttpServletRequest** devono trovarsi  elenco Consentiti nella sezione delle autorizzazioni URL del file **serverConf.xml** . Ciò vale anche per l&#39;URL del server stesso.
+>Gli URL utilizzati nelle seguenti chiamate **HttpServletRequest** devono trovarsi  elenco Consentiti nella sezione delle autorizzazioni URL del file **serverConf.xml**. Ciò vale anche per l&#39;URL del server stesso.
 
 Esecuzione di accesso():
 
