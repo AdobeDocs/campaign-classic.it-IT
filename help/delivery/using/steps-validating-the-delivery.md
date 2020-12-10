@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 5%
@@ -23,9 +23,9 @@ Per eseguire questa operazione:
 
 1. **Analizzare la consegna**: questo passaggio consente di preparare i messaggi da inviare. Fare riferimento a [Analisi della consegna](#analyzing-the-delivery).
 
-   Le regole applicate durante l&#39;analisi sono presentate in [questa sezione](#validation-process-with-typologies). Le modalità di convalida disponibili sono descritte in dettaglio nella sezione [Modifica della modalità](#changing-the-approval-mode) di approvazione.
+   Le regole applicate durante l&#39;analisi sono presentate in [questa sezione](#validation-process-with-typologies). Le modalità di convalida disponibili sono descritte dettagliatamente nella sezione [Modifica della modalità di approvazione](#changing-the-approval-mode).
 
-1. **Invia prove**: questo passaggio consente di approvare contenuti, URL, campi di personalizzazione, ecc. Fare riferimento a [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) e [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)di prova specifica.
+1. **Invia prove**: questo passaggio consente di approvare contenuti, URL, campi di personalizzazione, ecc. Fare riferimento a [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) e [Definizione di un target di prova specifico](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
@@ -37,12 +37,12 @@ L&#39;analisi è la fase in cui viene calcolata la popolazione di destinazione e
 
 ### Avvio dell&#39;analisi {#launching-the-analysis}
 
-1. Per avviare l&#39;analisi di consegna, fai clic su **[!UICONTROL Send]**.
+1. Per avviare l&#39;analisi di consegna, fare clic su **[!UICONTROL Send]**.
 1. Seleziona **[!UICONTROL Deliver as soon as possible]**.
 
    ![](assets/s_ncs_user_email_del_send.png)
 
-1. Fate clic **[!UICONTROL Analyze]** per avviare l&#39;analisi manualmente.
+1. Fare clic su **[!UICONTROL Analyze]** per avviare l&#39;analisi manualmente.
 
    La barra di avanzamento mostra l’avanzamento dell’analisi.
 
@@ -50,9 +50,9 @@ L&#39;analisi è la fase in cui viene calcolata la popolazione di destinazione e
 
    >[!NOTE]
    >
-   >Le regole di convalida utilizzate durante l&#39;analisi sono descritte nella sezione Processo di [convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) .
+   >Le regole di convalida utilizzate durante l&#39;analisi sono descritte nella sezione [Processo di convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
-1. Puoi interrompere l’analisi in qualsiasi momento facendo clic su **[!UICONTROL Stop]**.
+1. È possibile interrompere l&#39;analisi in qualsiasi momento facendo clic su **[!UICONTROL Stop]**.
 
    ![](assets/s_ncs_user_wizard_email01_16.png)
 
@@ -71,53 +71,53 @@ L&#39;analisi è la fase in cui viene calcolata la popolazione di destinazione e
 
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
-1. Fate clic **[!UICONTROL Close]** per correggere gli eventuali errori.
+1. Fare clic su **[!UICONTROL Close]** per correggere gli eventuali errori.
 
-1. Dopo aver apportato le modifiche, riavviate l’analisi facendo clic **[!UICONTROL Analyze]**.
+1. Dopo aver apportato le modifiche, riavviare l&#39;analisi facendo clic su **[!UICONTROL Analyze]**.
 
-Dopo aver controllato il risultato dell&#39;analisi, potrai fare clic **[!UICONTROL Confirm delivery]** per inviare il messaggio alla destinazione specificata. Un messaggio di conferma consente di avviare la consegna.
+Dopo aver controllato il risultato dell&#39;analisi, sarà possibile fare clic su **[!UICONTROL Confirm delivery]** per inviare il messaggio alla destinazione specificata. Un messaggio di conferma consente di avviare la consegna.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
 >[!NOTE]
 >
->Fai clic sul **[!UICONTROL Change the main delivery target]** collegamento se il numero di messaggi da inviare non corrisponde alla configurazione. Questo consente di modificare la definizione della popolazione di destinazione e di riavviare l&#39;analisi.
+>Fate clic sul collegamento **[!UICONTROL Change the main delivery target]** se il numero di messaggi da inviare non corrisponde alla configurazione. Questo consente di modificare la definizione della popolazione di destinazione e di riavviare l&#39;analisi.
 
 ### Parametri di analisi {#analysis-parameters}
 
-La **[!UICONTROL Analysis]** scheda delle proprietà di consegna consente di definire un insieme di informazioni relative alla preparazione dei messaggi durante la fase di analisi.
+La scheda **[!UICONTROL Analysis]** delle proprietà di consegna consente di definire una serie di informazioni relative alla preparazione dei messaggi durante la fase di analisi.
 
 ![](assets/s_ncs_user_email_del_analyze_adv_param.png)
 
 Questa scheda consente di accedere alle seguenti opzioni:
 
-* **[!UICONTROL Label and code of the delivery]** : le opzioni di questa sezione sono utilizzate per calcolare i valori di questi campi durante la fase di analisi del recapito. Il **[!UICONTROL Compute the execution folder during the delivery analysis]** campo calcola il nome della cartella che conterrà l’azione di consegna durante la fase di analisi.
-* **[!UICONTROL Approval mode]** : questo campo consente di definire la consegna manuale o automatica una volta completata l&#39;analisi. Le modalità di convalida vengono presentate nella sezione [Modifica della modalità](#changing-the-approval-mode) di approvazione.
+* **[!UICONTROL Label and code of the delivery]** : le opzioni di questa sezione sono utilizzate per calcolare i valori di questi campi durante la fase di analisi del recapito. Il campo **[!UICONTROL Compute the execution folder during the delivery analysis]** calcola il nome della cartella che conterrà l&#39;azione di consegna durante la fase di analisi.
+* **[!UICONTROL Approval mode]** : questo campo consente di definire la consegna manuale o automatica una volta completata l&#39;analisi. Le modalità di convalida sono presentate nella sezione [Modifica della modalità di approvazione](#changing-the-approval-mode).
 * **[!UICONTROL Prepare the delivery parts in the database]** : questa opzione consente di migliorare le prestazioni dell&#39;analisi della distribuzione. Per ulteriori informazioni, consulta [questa sezione](#improving-delivery-analysis).
-* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico, che può consentirvi di ottenere un significativo aumento delle prestazioni per l&#39;esecuzione della personalizzazione. Per ulteriori informazioni, consulta [Ottimizzazione della personalizzazione](../../delivery/using/personalization-fields.md#optimizing-personalization).
+* **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella distribuzione in un flusso di lavoro automatico, che può consentirvi di ottenere un significativo aumento delle prestazioni per l&#39;esecuzione della personalizzazione. Per ulteriori informazioni, vedere [Ottimizzazione della personalizzazione](../../delivery/using/personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : questa opzione consente di avviare l&#39;analisi della consegna in un processo separato. Per impostazione predefinita, la funzione di analisi utilizza il processo del server applicazione Adobe Campaign  (web nlserver). Selezionando questa opzione, l&#39;analisi verrà completata anche in caso di errore del server applicazione.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : questa opzione aggiunge i registri query SQL al giornale di registrazione consegna durante la fase di analisi.
-* **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di bypassare l&#39;interpretazione delle direttive JavaScript presenti nel contenuto HTML. Vengono visualizzati così come sono nei contenuti consegnati. Queste direttive vengono introdotte con il tag **&lt;%=** ).
+* **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di bypassare l&#39;interpretazione delle direttive JavaScript presenti nel contenuto HTML. Vengono visualizzati così come sono nei contenuti consegnati. Queste direttive vengono introdotte con il tag **&lt;%=**.
 
-### Miglioramento delle prestazioni dell&#39;analisi dei risultati {#improving-delivery-analysis}
+### Miglioramento delle prestazioni dell&#39;analisi di distribuzione {#improving-delivery-analysis}
 
-Per accelerare la preparazione della consegna, potete selezionare l&#39; **[!UICONTROL Prepare the delivery parts in the database]** opzione prima di avviare l&#39;analisi.
+Per accelerare la preparazione della consegna, potete selezionare l&#39;opzione **[!UICONTROL Prepare the delivery parts in the database]** prima di avviare l&#39;analisi.
 
 Quando questa opzione è attivata, la preparazione della consegna viene eseguita direttamente all&#39;interno del database, il che può accelerare notevolmente l&#39;analisi.
 
 Al momento, questa opzione è disponibile solo se sono soddisfatte le seguenti condizioni:
 * La consegna deve essere un&#39;e-mail. Per il momento, gli altri canali non sono supportati.
-* Non è necessario utilizzare il routing mid-sourcing o esterno, ma solo il tipo di routing della consegna in blocco. È possibile controllare il ciclo utilizzato nella **[!UICONTROL General]** scheda del **[!UICONTROL Delivery properties]**.
-* Non è possibile eseguire il targeting di una popolazione proveniente da un file esterno. Per una singola consegna, fate clic sul **[!UICONTROL To]** collegamento dal menu **[!UICONTROL Email parameters]** e verificate che l&#39; **[!UICONTROL Defined in the database]** opzione sia selezionata. Per una consegna utilizzata in un flusso di lavoro, verificate che i destinatari siano **[!UICONTROL Specified by the inbound event(s)]** nella **[!UICONTROL Delivery]** scheda.
+* Non è necessario utilizzare il routing mid-sourcing o esterno, ma solo il tipo di routing della consegna in blocco. È possibile controllare il routing utilizzato nella scheda **[!UICONTROL General]** di **[!UICONTROL Delivery properties]**.
+* Non è possibile eseguire il targeting di una popolazione proveniente da un file esterno. Per una singola consegna, fare clic sul collegamento **[!UICONTROL To]** dal **[!UICONTROL Email parameters]** e verificare che l&#39;opzione **[!UICONTROL Defined in the database]** sia selezionata. Per una consegna utilizzata in un flusso di lavoro, verificate che i destinatari siano **[!UICONTROL Specified by the inbound event(s)]** nella scheda **[!UICONTROL Delivery]**.
 * È necessario utilizzare un database PostgreSQL.
 
 ### Configurazione della priorità di analisi {#analysis-priority-}
 
-Quando la consegna fa parte di una campagna, nella **[!UICONTROL Advanced]** scheda è disponibile un&#39;opzione aggiuntiva. Questo consente di organizzare l&#39;ordine di elaborazione per le consegne nella stessa campagna.
+Quando la consegna fa parte di una campagna, la scheda **[!UICONTROL Advanced]** offre un&#39;opzione aggiuntiva. Questo consente di organizzare l&#39;ordine di elaborazione per le consegne nella stessa campagna.
 
 Prima dell&#39;invio, ogni consegna viene analizzata. La durata dell&#39;analisi dipende dal file di estrazione del recapito. Maggiore è la dimensione del file, maggiore sarà il tempo necessario per l&#39;analisi, con l&#39;attesa delle seguenti consegne.
 
-Le opzioni per il flusso di lavoro della campagna **[!UICONTROL Message preparation by the scheduler]** consentono di assegnare priorità all&#39;analisi della distribuzione.
+Le opzioni per **[!UICONTROL Message preparation by the scheduler]** ti permettono di assegnare priorità all&#39;analisi della distribuzione in un flusso di lavoro della campagna.
 
 ![](assets/delivery_analysis_priority.png)
 
@@ -125,7 +125,7 @@ Se la consegna è troppo grande, è meglio assegnarvi una priorità bassa per ev
 
 >[!NOTE]
 >
->Per fare in modo che le analisi di distribuzione più grandi non rallentino l&#39;avanzamento dei flussi di lavoro, puoi pianificare le loro esecuzioni scegliendo il **[!UICONTROL Schedule execution for a time of low activity]** pulsante.
+>Per fare in modo che le analisi di distribuzione più grandi non rallentino l&#39;avanzamento dei flussi di lavoro, puoi pianificare le loro esecuzioni scegliendo **[!UICONTROL Schedule execution for a time of low activity]**.
 
 ## Invio di una bozza {#sending-a-proof}
 
@@ -133,8 +133,8 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 >[!NOTE]
 >
->* Le modalità di convalida disponibili sono descritte in [Modifica della modalità](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)di approvazione.
->* La configurazione della destinazione della prova è spiegata in [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)della prova specifica.
+>* Le modalità di convalida disponibili sono descritte in [Modifica della modalità di approvazione](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
+>* La configurazione della destinazione della prova è spiegata in [Definizione di una destinazione della prova specifica](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >
 
@@ -142,15 +142,15 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 Per inviare una prova, effettuate le seguenti operazioni:
 
-1. Verificate che la destinazione della prova sia stata configurata come descritto in [Definizione di una destinazione](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)di prova specifica.
-1. Fate clic **[!UICONTROL Send a proof]** sulla barra superiore della procedura guidata di consegna.
+1. Verificate che la destinazione della prova sia stata configurata come descritto in [Definizione di una destinazione di prova specifica](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. Fate clic su **[!UICONTROL Send a proof]** nella barra superiore della procedura guidata di consegna.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
-1. Avvia l&#39;analisi dei messaggi. Consultate [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
-1. Ora puoi inviare la consegna (vedi [Invio della consegna](../../delivery/using/steps-sending-the-delivery.md)).
+1. Avvia l&#39;analisi dei messaggi. Vedere [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. È ora possibile inviare la consegna (vedere [Invio della consegna](../../delivery/using/steps-sending-the-delivery.md)).
 
-   Una volta inviata la consegna, la prova verrà visualizzata nell&#39;elenco di consegna e verrà automaticamente creata e numerata. Può essere modificato se desiderate accedere al contenuto e alle proprietà. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   Una volta inviata la consegna, la prova verrà visualizzata nell&#39;elenco di consegna e verrà automaticamente creata e numerata. Può essere modificato se desiderate accedere al contenuto e alle proprietà. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/about-delivery-monitoring.md).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -162,26 +162,26 @@ Per inviare una prova, effettuate le seguenti operazioni:
 
 È possibile modificare il contenuto della consegna a seguito di eventuali commenti del gruppo di convalida che riceve la prova. Dopo aver apportato le modifiche, è necessario riavviare l&#39;analisi e inviare un&#39;altra prova. Ogni nuova prova è numerata e registrata nel giornale di registrazione consegna.
 
-Una volta analizzata la consegna, potete visualizzare le varie prove inviate tramite la **[!UICONTROL Proofs]** sottoscheda del registro (**[!UICONTROL Audit]** scheda).
+Una volta analizzata la consegna, è possibile visualizzare le varie prove inviate tramite la sottoscheda **[!UICONTROL Proofs]** del registro (**[!UICONTROL Audit]**).
 
 ![](assets/s_ncs_user_delivery_validation_cycle_03.png)
 
 È necessario inviare tutte le prove necessarie fino al completamento del contenuto della consegna. Successivamente, è possibile inviare la consegna alla destinazione principale e chiudere il ciclo di convalida.
 
-La **[!UICONTROL Advanced]** scheda delle proprietà di consegna consente di definire le proprietà della prova. Se necessario, puoi ignorare le regole di esclusione dei destinatari.
+La scheda **[!UICONTROL Advanced]** delle proprietà di consegna consente di definire le proprietà della prova. Se necessario, puoi ignorare le regole di esclusione dei destinatari.
 
 ![](assets/s_ncs_user_wizard_email01_145.png)
 
 Sono disponibili le seguenti opzioni:
 
 * La prima opzione consente di mantenere raddoppiata la prova.
-* Entrambe le opzioni seguenti consentono di mantenere in quarantena i destinatari elenco Bloccati e gli indirizzi. Consultate la descrizione di queste opzioni per la destinazione principale in [Personalizzazione delle impostazioni](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings)di esclusione. A differenza del target di una consegna, in cui questi indirizzi sono esclusi per impostazione predefinita, vengono mantenuti per impostazione predefinita per la destinazione di una prova.
-* L&#39; **[!UICONTROL Keep the delivery code for the proof]** opzione consente di assegnare alla prova lo stesso codice di consegna definito per la consegna cui si riferisce. Questo codice è specificato nel primo passaggio della procedura guidata di consegna.
-* Per impostazione predefinita, l&#39;oggetto della prova ha il prefisso &quot;Proof #&quot;, dove # è il numero della prova. È possibile modificare questo prefisso nel **[!UICONTROL Label prefix]** campo.
+* Entrambe le opzioni seguenti consentono di mantenere in quarantena i destinatari elenco Bloccati e gli indirizzi. Vedere la descrizione di queste opzioni per la destinazione principale in [Personalizzazione delle impostazioni di esclusione](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). A differenza del target di una consegna, in cui questi indirizzi sono esclusi per impostazione predefinita, vengono mantenuti per impostazione predefinita per la destinazione di una prova.
+* L&#39;opzione **[!UICONTROL Keep the delivery code for the proof]** consente di assegnare alla prova lo stesso codice di consegna definito per la consegna cui si riferisce. Questo codice è specificato nel primo passaggio della procedura guidata di consegna.
+* Per impostazione predefinita, l&#39;oggetto della prova ha il prefisso &quot;Proof #&quot;, dove # è il numero della prova. È possibile modificare questo prefisso nel campo **[!UICONTROL Label prefix]**.
 
 ## Processo di convalida con tipologie {#validation-process-with-typologies}
 
-Prima di inviare qualsiasi messaggio, è necessario analizzare la campagna per approvarne il contenuto e la configurazione. The checking rules applied during the analysis phase are defined in a **typology**. Per impostazione predefinita, per le e-mail l&#39;analisi copre i seguenti punti:
+Prima di inviare qualsiasi messaggio, è necessario analizzare la campagna per approvarne il contenuto e la configurazione. Le regole di controllo applicate durante la fase di analisi sono definite in una **tipologia**. Per impostazione predefinita, per le e-mail l&#39;analisi copre i seguenti punti:
 
 * Approvazione dell&#39;oggetto
 * Approvazione di URL e immagini
@@ -191,19 +191,19 @@ Prima di inviare qualsiasi messaggio, è necessario analizzare la campagna per a
 * Controllo del periodo di validità
 * Controllo della programmazione delle onde
 
-La tipologia da applicare per ogni consegna è selezionata nella **[!UICONTROL Typologies]** scheda dei parametri di consegna.
+La tipologia da applicare per ogni consegna è selezionata nella scheda **[!UICONTROL Typologies]** nei parametri di consegna.
 
-È possibile visualizzare e modificare le regole di approvazione, il relativo contenuto, l&#39;ordine di esecuzione e la descrizione completa attraverso il **[!UICONTROL Administration > Campaign execution > Typology management > Typology rules]** nodo.
+È possibile visualizzare e modificare le regole di approvazione, il relativo contenuto, l&#39;ordine di esecuzione e la descrizione completa attraverso il nodo **[!UICONTROL Administration > Campaign execution > Typology management > Typology rules]**.
 
 È possibile creare nuove regole e definire nuove tipologie da questo nodo. Tali attività sono tuttavia riservate agli utenti esperti che conoscono JavaScript.
 
-Per ulteriori informazioni sulle regole di tipologia, vedere [Informazioni sulle tipologie](../../campaign/using/about-campaign-typologies.md)delle campagne.
+Per ulteriori informazioni sulle regole di tipologia, vedere [Informazioni sulle tipologie di campagna](../../campaign/using/about-campaign-typologies.md).
 
-Per modificare la tipologia corrente, fare clic sull&#39; **[!UICONTROL Edit link]** icona a destra del **[!UICONTROL Typology]** campo.
+Per modificare la tipologia corrente, fare clic sull&#39;icona **[!UICONTROL Edit link]** a destra del campo **[!UICONTROL Typology]**.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 
-Nella **[!UICONTROL Rule]** scheda è riportato un elenco delle regole di tipologia da applicare. Selezionate una regola e fate clic sull&#39; **[!UICONTROL Detail...]** icona per visualizzarne la configurazione:
+La scheda **[!UICONTROL Rule]** fornisce un elenco delle regole di tipologia da applicare. Selezionate una regola e fate clic sull&#39;icona **[!UICONTROL Detail...]** per visualizzarne la configurazione:
 
 ![](assets/s_ncs_user_email_del_typo_rules_edit.png)
 
@@ -213,7 +213,7 @@ Nella **[!UICONTROL Rule]** scheda è riportato un elenco delle regole di tipolo
 
 ## Modifica della modalità di approvazione {#changing-the-approval-mode}
 
-La **[!UICONTROL Analysis]** scheda delle proprietà di consegna consente di selezionare la modalità di convalida. Se durante l&#39;analisi vengono generati avvisi (ad esempio, se alcuni caratteri vengono accentuati nell&#39;oggetto della consegna, ecc.), è possibile configurare la consegna per definire se deve essere ancora eseguita o meno. Per impostazione predefinita, l&#39;utente deve confermare l&#39;invio di messaggi alla fine della fase di analisi: si tratta di convalida **manuale** .
+La scheda **[!UICONTROL Analysis]** relativa alle proprietà di consegna consente di selezionare la modalità di convalida. Se durante l&#39;analisi vengono generati avvisi (ad esempio, se alcuni caratteri vengono accentuati nell&#39;oggetto della consegna, ecc.), è possibile configurare la consegna per definire se deve essere ancora eseguita o meno. Per impostazione predefinita, l&#39;utente deve confermare l&#39;invio di messaggi alla fine della fase di analisi: si tratta della convalida **manual**.
 
 Selezionare un&#39;altra modalità di approvazione dall&#39;elenco a discesa nel campo appropriato.
 
@@ -221,6 +221,6 @@ Selezionare un&#39;altra modalità di approvazione dall&#39;elenco a discesa nel
 
 Sono disponibili le seguenti modalità di approvazione:
 
-* **[!UICONTROL Manual]**: Al termine della fase di analisi, l&#39;utente deve confermare la consegna per iniziare l&#39;invio. A questo scopo, fate clic sul **[!UICONTROL Start]** pulsante per avviare la consegna.
+* **[!UICONTROL Manual]**: Al termine della fase di analisi, l&#39;utente deve confermare la consegna per iniziare l&#39;invio. A questo scopo, fate clic sul pulsante **[!UICONTROL Start]** per avviare la consegna.
 * **[!UICONTROL Semi-automatic]**: L&#39;invio inizia automaticamente se la fase di analisi non genera messaggi di avviso.
 * **[!UICONTROL Automatic]**: L&#39;invio inizia automaticamente alla fine della fase di analisi, indipendentemente dal risultato.
