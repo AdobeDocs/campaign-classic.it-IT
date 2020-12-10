@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Hai fatto clic sul pulsante Invia? Vediamo cosa succede. Una volta inviata la co
 Per controllare le campagne, devi accertarti che il messaggio sia stato effettivamente recapitato ai destinatari.
 
 Dal dashboard di distribuzione della campagna, puoi controllare i messaggi elaborati e i registri di controllo della distribuzione.
-Puoi anche controllare lo stato dei messaggi nei registri di consegna. [Ulteriori informazioni](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+Puoi anche controllare lo stato dei messaggi nei registri di consegna. [Ulteriori informazioni](../../delivery/using/about-delivery-monitoring.md).
 
 Cosa succede se le consegne non vengono inviate e il loro stato rimane **In sospeso**?
 
@@ -43,11 +43,11 @@ Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia delle
 
 **Suggerimento**: Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, selezionate l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ciascun URL del messaggio, potete scegliere se attivare il tracciamento.
 
-Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](../../delivery/using/how-to-configure-tracked-links.md) e la descrizione degli indicatori [di](../../reporting/using/delivery-reports.md#tracking-indicators) tracciamento.
+Per ulteriori informazioni, consultare la sezione [Configuring tracking](../../delivery/using/how-to-configure-tracked-links.md) (Configurazione del tracciamento) e la descrizione [Tracking Indicators](../../reporting/using/delivery-reports.md#tracking-indicators) (Indicatori di tracciamento).
 
 ## Prestazioni di consegna {#delivery-performances}
 
-Per misurare la velocità di invio dei messaggi, puoi controllare la velocità di consegna. I criteri corrispondono al numero di messaggi inviati ogni ora e alla dimensione dei messaggi (in bit al secondo). Per ulteriori informazioni, consulta [Distribuzione effettiva](../../reporting/using/global-reports.md#delivery-throughput).
+Per misurare la velocità di invio dei messaggi, puoi controllare la velocità di consegna. I criteri corrispondono al numero di messaggi inviati ogni ora e alla dimensione dei messaggi (in bit al secondo). Per ulteriori informazioni, vedere [Trasmissione consegna](../../reporting/using/global-reports.md#delivery-throughput).
 
 **Suggerimenti**:
 
@@ -57,7 +57,7 @@ Per misurare la velocità di invio dei messaggi, puoi controllare la velocità d
 
 * Non provare a pianificare insieme consegne di grandi dimensioni. Si prega di notare che possono essere necessari da 5 a 10 minuti per distribuire uniformemente il carico sul sistema.
 
-## Risoluzione dei problemi di consegna {#delivery-troubleshooting}
+## Risoluzione dei problemi di distribuzione {#delivery-troubleshooting}
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 
@@ -65,6 +65,6 @@ Per misurare la velocità di invio dei messaggi, puoi controllare la velocità d
 
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 
-* [Problemi relativi alle prestazioni di distribuzione](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [Problemi relativi alle prestazioni di distribuzione](../../delivery/using/delivery-performances.md)
 
-* [Problemi relativi](../../production/using/temporary-files.md) ai file temporanei - solo per i clienti *interni*
+* [Problemi relativi](../../production/using/temporary-files.md)  ai file temporanei - solo clienti  *interni*
