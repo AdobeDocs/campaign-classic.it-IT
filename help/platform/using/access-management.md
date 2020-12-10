@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
 workflow-type: tm+mt
-source-wordcount: '2953'
+source-wordcount: '2950'
 ht-degree: 2%
 
 ---
@@ -31,12 +31,12 @@ Vengono completati da parametri di sicurezza collegati alla modalità di conness
 
 Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
-* Potete definire i gruppi di operatori a cui attribuire i diritti, quindi associarli a uno o più gruppi. Questo consente di riutilizzare i diritti e rendere più coerenti i profili degli operatori. Inoltre, facilita la gestione e la manutenzione dei profili. La creazione e la gestione dei gruppi sono presentati nei gruppi [](#operator-groups)di operatori.
-* Potete attribuire diritti denominati direttamente agli utenti, in alcuni casi per sovraccaricare i diritti assegnati tramite i gruppi. Questi diritti sono presentati in [Named rights](#named-rights).
+* Potete definire i gruppi di operatori a cui attribuire i diritti, quindi associarli a uno o più gruppi. Questo consente di riutilizzare i diritti e rendere più coerenti i profili degli operatori. Inoltre, facilita la gestione e la manutenzione dei profili. La creazione e la gestione dei gruppi sono presentati in [Gruppi di operatori](#operator-groups).
+* Potete attribuire diritti denominati direttamente agli utenti, in alcuni casi per sovraccaricare i diritti assegnati tramite i gruppi. Questi diritti sono presentati in [Diritti denominati](#named-rights).
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni,  Adobe consiglia di leggere l&#39;elenco [di controllo della configurazione di](https://helpx.adobe.com/it/campaign/kb/acc-security.html)protezione.
+>Prima di iniziare a definire le autorizzazioni,  Adobe consiglia di leggere l&#39; [elenco di controllo della configurazione di sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
 
 ## Operatori {#operators}
 
@@ -44,7 +44,7 @@ Esistono due tipi di autorizzazioni che potete concedere a un utente:
 
 Un operatore è un utente Adobe Campaign  che dispone delle autorizzazioni necessarie per accedere ed eseguire azioni.
 
-Per impostazione predefinita, gli operatori sono memorizzati nel **[!UICONTROL Administration > Access management > Operators]** nodo.
+Per impostazione predefinita, gli operatori sono memorizzati nel nodo **[!UICONTROL Administration > Access management > Operators]**.
 
 ![](assets/s_ncs_user_list_operators.png)
 
@@ -52,11 +52,11 @@ Gli operatori possono essere creati manualmente o mappati su una directory LDAP 
 
 La procedura completa per creare un operatore è descritta in [questa pagina](#creating-an-operator).
 
-Per ulteriori informazioni  integrazione con Adobe Campaign e LDAP, consultate [questa pagina](../../installation/using/connecting-through-ldap.md).
+Per ulteriori informazioni  integrazione con Adobe Campaign e LDAP, consultare [questa pagina](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
->Gli operatori devono essere collegati a un&#39;area di protezione per accedere a un&#39;istanza. Per ulteriori informazioni sulle aree di protezione in  Adobe Campaign, consultare [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>Gli operatori devono essere collegati a un&#39;area di protezione per accedere a un&#39;istanza. Per ulteriori informazioni sulle aree di protezione in  Adobe Campaign, fare riferimento a [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 Gli utenti possono inoltre connettersi direttamente a  Adobe Campaign utilizzando il proprio Adobe ID . Per ulteriori informazioni, consulta questa [pagina](../../integrations/using/about-adobe-id.md).
 
@@ -64,45 +64,45 @@ Gli utenti possono inoltre connettersi direttamente a  Adobe Campaign utilizzand
 
 Per creare un nuovo operatore e concedere le autorizzazioni, effettuate le seguenti operazioni:
 
-1. Fare clic sul **[!UICONTROL New]** pulsante situato sopra l&#39;elenco degli operatori e immettere i dettagli del nuovo operatore.
+1. Fare clic sul pulsante **[!UICONTROL New]** situato sopra l&#39;elenco di operatori e immettere i dettagli del nuovo operatore.
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Specificate il nome **[!UICONTROL Identification parameters]** dell’utente: login, password e nome. Il login e la password verranno utilizzati dall&#39;operatore per accedere a  Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può cambiare la password tramite il **[!UICONTROL Tools > Change password]** menu. L&#39;e-mail dell&#39;operatore è essenziale in quanto consente all&#39;operatore di ricevere notifiche, ad esempio durante l&#39;elaborazione delle approvazioni.
+1. Specificate la **[!UICONTROL Identification parameters]** dell&#39;utente: login, password e nome. Il login e la password verranno utilizzati dall&#39;operatore per accedere a  Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può cambiare la propria password tramite il menu **[!UICONTROL Tools > Change password]**. L&#39;e-mail dell&#39;operatore è essenziale in quanto consente all&#39;operatore di ricevere notifiche, ad esempio durante l&#39;elaborazione delle approvazioni.
 
-   Questa sezione consente inoltre di collegare un operatore a un&#39;entità organizzativa. For more on this, refer to the [this page](../../campaign/using/about-distributed-marketing.md).
+   Questa sezione consente inoltre di collegare un operatore a un&#39;entità organizzativa. Per ulteriori informazioni, fare riferimento alla pagina [corrente](../../campaign/using/about-distributed-marketing.md).
 
-1. Selezionare le autorizzazioni concesse all&#39;operatore nella **[!UICONTROL Operator access rights]** sezione.
+1. Selezionare le autorizzazioni concesse all&#39;operatore nella sezione **[!UICONTROL Operator access rights]**.
 
-   Per assegnare le autorizzazioni all&#39;operatore, fate clic sul **[!UICONTROL Add]** pulsante situato sopra l&#39;elenco dei diritti, quindi selezionate un gruppo di operatori dall&#39;elenco dei gruppi disponibili:
+   Per assegnare le autorizzazioni all&#39;operatore, fare clic sul pulsante **[!UICONTROL Add]** situato sopra l&#39;elenco dei diritti, quindi selezionare un gruppo di operatori dall&#39;elenco dei gruppi disponibili:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Potete anche selezionare uno o più diritti denominati (consultate [Diritti](#named-rights)denominati). A tal fine, fare clic sulla freccia a destra del **[!UICONTROL Folder]** campo, quindi selezionare **[!UICONTROL Named rights]**:
+   È inoltre possibile selezionare uno o più diritti denominati (fare riferimento a [Diritti denominati](#named-rights)). A tal fine, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]**, quindi selezionare **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   Selezionate i gruppi e/o i diritti denominati da assegnare e fate clic **[!UICONTROL OK]** per eseguire la convalida.
+   Selezionate i gruppi e/o i diritti denominati da assegnare e fate clic su **[!UICONTROL OK]** per eseguire la convalida.
 
-1. Fare clic **[!UICONTROL Ok]** per creare l&#39;operatore: il profilo viene aggiunto all&#39;elenco degli operatori esistenti.
+1. Fare clic su **[!UICONTROL Ok]** per creare l&#39;operatore: il profilo viene aggiunto all&#39;elenco degli operatori esistenti.
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->È possibile organizzare gli operatori in base alle proprie esigenze creando nuove cartelle di operatori. A tale scopo, fare clic con il pulsante destro del mouse sulla cartella dell&#39;operatore e selezionare **[!UICONTROL Add an 'Operators' folder]**.
+>È possibile organizzare gli operatori in base alle proprie esigenze creando nuove cartelle di operatori. A tal fine, fare clic con il pulsante destro del mouse sulla cartella dell&#39;operatore e selezionare **[!UICONTROL Add an 'Operators' folder]**.
 
-Una volta creato il profilo dell&#39;operatore, è possibile aggiungerne o aggiornarne le informazioni. A tale scopo, fare clic sulla **[!UICONTROL Edit]** scheda.
+Una volta creato il profilo dell&#39;operatore, è possibile aggiungerne o aggiornarne le informazioni. A questo scopo, fare clic sulla scheda **[!UICONTROL Edit]**.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->Il **[!UICONTROL Session timeout]** campo consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
+>Il campo **[!UICONTROL Session timeout]** consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
 
 ### Fuso orario dell&#39;operatore {#time-zone-of-the-operator}
 
-Nella **[!UICONTROL General]** scheda, è possibile selezionare il fuso orario dell&#39;operatore. Per impostazione predefinita, gli operatori lavorano nel fuso orario del server. Tuttavia, è possibile selezionare un altro fuso orario utilizzando l&#39;elenco a discesa.
+Nella scheda **[!UICONTROL General]** è possibile selezionare il fuso orario dell&#39;operatore. Per impostazione predefinita, gli operatori lavorano nel fuso orario del server. Tuttavia, è possibile selezionare un altro fuso orario utilizzando l&#39;elenco a discesa.
 
 La configurazione dei fusi orari è descritta in [questa pagina](../../installation/using/time-zone-management.md).
 
@@ -112,18 +112,18 @@ La configurazione dei fusi orari è descritta in [questa pagina](../../installat
 >
 >Vincoli e raccomandazioni associati a tali contesti sono presentati nelle sezioni correlate della documentazione Adobe Campaign .
 
-Inoltre, l&#39;elenco a **[!UICONTROL Regional settings]** discesa consente di selezionare il formato per visualizzare date e numeri.
+Inoltre, l&#39;elenco a discesa **[!UICONTROL Regional settings]** consente di selezionare il formato per visualizzare date e numeri.
 
-### Opzioni dei diritti di accesso {#access-rights-options}
+### Opzioni diritti di accesso {#access-rights-options}
 
-Utilizzate la **[!UICONTROL Access rights]** scheda per aggiornare i gruppi e i diritti denominati collegati all&#39;operatore.
+Utilizzate la scheda **[!UICONTROL Access rights]** per aggiornare i gruppi e i diritti denominati collegati all&#39;operatore.
 
 ![](assets/operator_profile_security_options.png)
 
-Il **[!UICONTROL Edit the access parameters...]** collegamento consente di accedere alle seguenti opzioni:
+Il collegamento **[!UICONTROL Edit the access parameters...]** consente di accedere alle seguenti opzioni:
 
-* L&#39; **[!UICONTROL Disable account]** opzione consente di disabilitare l&#39;account dell&#39;operatore: non accederà più  Adobe Campaign.
-* L&#39; **[!UICONTROL Forbid access from the rich client]** opzione consente di limitare l&#39;uso di  Adobe Campaign all&#39;accesso [](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) Web o tramite API: l&#39;accesso alla console client Adobe Campaign  non è più disponibile.
+* L&#39;opzione **[!UICONTROL Disable account]** consente di disabilitare l&#39;account dell&#39;operatore: non accederà più  Adobe Campaign.
+* L&#39;opzione **[!UICONTROL Forbid access from the rich client]** consente di limitare l&#39;uso di  Adobe Campaign a [Accesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l&#39;accesso alla console client Adobe Campaign  non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Potete anche definire una maschera IP affidabile utilizzando il collegamento appropriato.
 
@@ -137,7 +137,7 @@ Il **[!UICONTROL Edit the access parameters...]** collegamento consente di acced
    >
    >Per proteggere l&#39;accesso alla piattaforma, questa opzione deve essere utilizzata con attenzione.
 
-* L’ **[!UICONTROL Restrict to information found in sub-folders of:]** opzione consente di limitare i diritti attribuiti all’operatore di una cartella. Solo le sottocartelle del nodo specificato in questa opzione saranno visibili all&#39;utente:
+* L&#39;opzione **[!UICONTROL Restrict to information found in sub-folders of:]** consente di limitare i diritti attribuiti all&#39;operatore di una cartella. Solo le sottocartelle del nodo specificato in questa opzione saranno visibili all&#39;utente:
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -147,7 +147,7 @@ Il **[!UICONTROL Edit the access parameters...]** collegamento consente di acced
 
 ### Cartelle, approvazione e compiti di un operatore {#folders--approval-and-tasks-of-an-operator}
 
-La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relative all&#39;operatore. Le varie schede vengono aggiunte automaticamente in base alle impostazioni definite nell&#39;area di intervento dell&#39;operatore.
+La scheda **[!UICONTROL Audit]** consente di visualizzare le informazioni relative all&#39;operatore. Le varie schede vengono aggiunte automaticamente in base alle impostazioni definite nell&#39;area di intervento dell&#39;operatore.
 
 È possibile accedere a:
 
@@ -157,7 +157,7 @@ La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relati
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta Gestione dell’accesso alle [cartelle](#folder-access-management).
+   >Per ulteriori informazioni, consultare [Gestione dell&#39;accesso alle cartelle](#folder-access-management).
 
 * Registro di approvazione dell&#39;operatore.
 
@@ -179,15 +179,15 @@ La **[!UICONTROL Audit]** scheda consente di visualizzare le informazioni relati
 
 Per impostazione predefinita, l&#39;operatore tecnico &#39;webapp&#39; ha il diritto di amministrazione denominato, che può comportare rischi per la sicurezza. Per risolvere il problema, si consiglia di rimuovere questo diritto. Per eseguire questa operazione:
 
-1. Dal **[!UICONTROL Administration > Access management > Named rights]** nodo, fate clic **[!UICONTROL New]** per creare un diritto e denominarlo WEBAPP.
+1. Dal nodo **[!UICONTROL Administration > Access management > Named rights]**, fare clic su **[!UICONTROL New]** per creare un diritto e denominarlo WEBAPP.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   I diritti denominati sono descritti in dettaglio nella sezione [Diritti](#named-rights) denominati.
+   I diritti denominati sono descritti in dettaglio nella sezione [Diritti denominati](#named-rights).
 
-1. Dal **[!UICONTROL Administration > Access management > Operators]** nodo, selezionare l&#39;operatore agente applicazioni Web (&#39;webapp&#39;).
+1. Dal nodo **[!UICONTROL Administration > Access management > Operators]**, selezionare l&#39;operatore agente applicazione Web (&#39;webapp&#39;).
 
-   Selezionate la **[!UICONTROL Edit]** scheda, quindi la **[!UICONTROL Access rights]** scheda ed eliminate l&#39;AMMINISTRAZIONE denominata a destra dall&#39;elenco.
+   Selezionare la scheda **[!UICONTROL Edit]**, quindi la scheda **[!UICONTROL Access rights]** ed eliminare l&#39;AMMINISTRAZIONE denominata a destra dall&#39;elenco.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
@@ -199,35 +199,35 @@ Per impostazione predefinita, l&#39;operatore tecnico &#39;webapp&#39; ha il dir
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   La modifica dei diritti nelle cartelle ad albero è descritta in dettaglio nella sezione Gestione [accesso alle](#folder-access-management) cartelle.
+   La modifica dei diritti sulle cartelle ad albero è descritta in dettaglio nella sezione [Gestione dell&#39;accesso alle cartelle](#folder-access-management).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle linee guida relative alla sicurezza, vedere [elenco](https://helpx.adobe.com/it/campaign/kb/acc-security.html)di controllo della configurazione di Adobe Campaign Security.
+>Per ulteriori informazioni sulle linee guida relative alla sicurezza, consultare [ elenco di controllo della configurazione di Adobe Campaign Security](https://helpx.adobe.com/campaign/kb/acc-security.html).
 
 ## Gruppi di operatori {#operator-groups}
 
-I gruppi di operatori vengono creati tramite il **[!UICONTROL Administration > Access management > Operator groups]** nodo nella struttura ad albero.
+I gruppi di operatori vengono creati tramite il nodo **[!UICONTROL Administration > Access management > Operator groups]** nella struttura ad albero.
 
 ### Creazione di un nuovo gruppo di operatori {#creating-a-new-operator-group}
 
 Per creare un nuovo gruppo di operatori, attenersi alla procedura seguente:
 
-1. Fate clic sul **[!UICONTROL New]** pulsante a destra dell’elenco dei gruppi oppure fate clic con il pulsante destro del mouse sull’elenco e scegliete **[!UICONTROL New]**.
-1. Nella finestra inferiore della sezione, dalla **[!UICONTROL General]** scheda, immettete il nome e una descrizione per il gruppo nei campi corrispondenti.
+1. Fate clic sul pulsante **[!UICONTROL New]** a destra dell&#39;elenco dei gruppi oppure fate clic con il pulsante destro del mouse sull&#39;elenco e scegliete **[!UICONTROL New]**.
+1. Nella finestra inferiore della sezione, dalla scheda **[!UICONTROL General]**, immettete il nome e una descrizione per il gruppo nei campi corrispondenti.
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. Fate clic sulla **[!UICONTROL Content]** scheda per definire le autorizzazioni per questo gruppo.
-1. Fate clic sul **[!UICONTROL Add]** pulsante per selezionare un diritto designato o un operatore da associare al gruppo.
-1. Fare clic sull&#39;elenco a discesa o sulla cartella a destra del **[!UICONTROL Folder]** campo per individuare i diritti o gli operatori da associare a questo gruppo.
-1. Selezionare i diritti o gli operatori da aggiungere e fare clic **[!UICONTROL OK]** per eseguire la convalida.
+1. Fare clic sulla scheda **[!UICONTROL Content]** per definire le autorizzazioni per questo gruppo.
+1. Fare clic sul pulsante **[!UICONTROL Add]** per selezionare un diritto designato o un operatore da associare al gruppo.
+1. Fare clic sull&#39;elenco a discesa o sulla cartella a destra del campo **[!UICONTROL Folder]** per individuare i diritti o gli operatori da associare a questo gruppo.
+1. Selezionare i diritti o gli operatori da aggiungere e fare clic su **[!UICONTROL OK]** per eseguire la convalida.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    Ripetete questa operazione per aggiungere altri diritti o operatori.
 
-1. Fate clic sul **[!UICONTROL Save]** pulsante per aggiungere il gruppo all’elenco.
+1. Fate clic sul pulsante **[!UICONTROL Save]** per aggiungere il gruppo all&#39;elenco.
 
 ### Gruppi predefiniti {#default-groups}
 
@@ -235,7 +235,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Administrator]**
 
-   Gli operatori di questo gruppo hanno accesso completo all&#39;istanza. Gli amministratori sono utenti che possono accedere alle parti più tecniche dell&#39;interfaccia. Essi ricoprono il **[!UICONTROL Administration]** ruolo e si accertano che la piattaforma sia completamente impostata.
+   Gli operatori di questo gruppo hanno accesso completo all&#39;istanza. Gli amministratori sono utenti che possono accedere alle parti più tecniche dell&#39;interfaccia. Essi hanno il ruolo **[!UICONTROL Administration]** e si accertano che la piattaforma sia configurata completamente.
 
    Questo gruppo contiene il seguente diritto denominato:
 
@@ -252,7 +252,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Gli operatori di questo gruppo possono gestire le campagne di marketing: consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nel quadro di **[!UICONTROL Campaign]** (modulo Adobe Campaign opzionale ).
+   Gli operatori di questo gruppo possono gestire le campagne di marketing: consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nell&#39;ambito di **[!UICONTROL Campaign]** (modulo Adobe Campaign opzionale ).
 
    Questo gruppo contiene i seguenti diritti denominati:
 
@@ -265,7 +265,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Content contributors]**
 
-   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, all’interno del framework di **[!UICONTROL Content management]** (modulo Adobe Campaign  facoltativo). Questo gruppo non concede diritti aggiuntivi.
+   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto, nel framework di **[!UICONTROL Content management]** (modulo Adobe Campaign  facoltativo). Questo gruppo non concede diritti aggiuntivi.
 
 1. **[!UICONTROL Access to reports]**
 
@@ -285,7 +285,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Offer managers]**
 
-   Gli operatori di questo gruppo possono creare e gestire le offerte. For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
+   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, fare riferimento a questa [pagina](../../interaction/using/operator-profiles.md).
 Questo gruppo contiene i seguenti diritti denominati:
 
    * **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire cartelle nella struttura  Adobe Campaign (a condizione che si disponga dei diritti di modifica per i rami interessati),
@@ -293,15 +293,15 @@ Questo gruppo contiene i seguenti diritti denominati:
 
 ## Diritti denominati {#named-rights}
 
-Per impostazione predefinita,  Adobe Campaign propone un set di diritti denominati che consente di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati dal **[!UICONTROL Administration > Access management > Named rights]** nodo della struttura.
+Per impostazione predefinita,  Adobe Campaign propone un set di diritti denominati che consente di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati dal nodo **[!UICONTROL Administration > Access management > Named rights]** della struttura.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 Tali diritti sono i seguenti:
 
-* **[!UICONTROL ADMINISTRATION]**: Gli operatori con **[!UICONTROL ADMINISTRATION]** diritto di accesso all&#39;istanza. Gli utenti amministratori possono eseguire, creare, modificare o eliminare qualsiasi oggetto, ad esempio flusso di lavoro, distribuzione, script e così via.
+* **[!UICONTROL ADMINISTRATION]**: Gli operatori con il  **[!UICONTROL ADMINISTRATION]** diritto di accesso hanno accesso completo all&#39;istanza. Gli utenti amministratori possono eseguire, creare, modificare o eliminare qualsiasi oggetto, ad esempio flusso di lavoro, distribuzione, script e così via.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Puoi impostare più passaggi di approvazione all&#39;interno di flussi di lavoro e consegne per garantire che lo stato corrente sia stato approvato da un operatore o gruppo assegnato. Gli utenti con **[!UICONTROL APPROVAL ADMINISTRATION]** diritto possono impostare le fasi di approvazione e assegnare anche un operatore o un gruppo di operatori che deve approvare tali passaggi.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Puoi impostare più passaggi di approvazione all&#39;interno di flussi di lavoro e consegne per garantire che lo stato corrente sia stato approvato da un operatore o gruppo assegnato. Gli utenti con il diritto **[!UICONTROL APPROVAL ADMINISTRATION]** possono impostare i passaggi di approvazione e assegnare anche un operatore o un gruppo di operatori che deve approvare tali passaggi.
 
 * **[!UICONTROL CENTRAL]**: Right for central management (Distributed Marketing).
 
@@ -309,31 +309,31 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
 
-* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle istanze Adobe Campaign  in un file su un server o su un computer locale tramite l&#39;attività del **[!UICONTROL EXPORT]** flusso di lavoro.
+* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle istanze Adobe Campaign  in un file su un server o su un computer locale tramite l&#39;attività del  **[!UICONTROL EXPORT]** flusso di lavoro.
 
-* **[!UICONTROL FILES ACCESS]**: Diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nell&#39;attività del **[!UICONTROL JavaScript]** flusso di lavoro per leggere e scrivere i file su un server.
+* **[!UICONTROL FILES ACCESS]**: Diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nell&#39;attività del  **[!UICONTROL JavaScript]** flusso di lavoro per leggere e scrivere i file su un server.
 
-* **[!UICONTROL IMPORT]**: Esatto per l&#39;importazione di dati generici. **[!UICONTROL IMPORT]** consente di importare dati in qualsiasi altra tabella, mentre il **[!UICONTROL RECIPIENT IMPORT]** diritto consente l&#39;importazione solo nella tabella ricevente.
+* **[!UICONTROL IMPORT]**: Esatto per l&#39;importazione di dati generici. **[!UICONTROL IMPORT]** consente di importare dati in qualsiasi altra tabella, mentre il  **[!UICONTROL RECIPIENT IMPORT]** diritto consente l&#39;importazione solo nella tabella ricevente.
 
-* **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire le cartelle. Gli utenti con la **[!UICONTROL INSERT FOLDERS]** destra possono creare nuove cartelle nella struttura delle cartelle nella visualizzazione Esploratore.
+* **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire le cartelle. Gli utenti con la **[!UICONTROL INSERT FOLDERS]** destra possono creare nuove cartelle nella struttura delle cartelle nella visualizzazione Esplora risorse.
 
 * **[!UICONTROL LOCAL]**: Adatta alla gestione locale (Distributed Marketing).
 
-* **[!UICONTROL MERGE]**: Diritto di unire i record selezionati in un unico. Se i destinatari esistono come duplicati, la **[!UICONTROL MERGE]** destra consente all&#39;utente di selezionare i duplicati e di unirli in un destinatario principale.
+* **[!UICONTROL MERGE]**: Diritto di unire i record selezionati in un unico. Se i destinatari sono duplicati, il diritto **[!UICONTROL MERGE]** consente all&#39;utente di selezionare i duplicati e di unirli in un destinatario principale.
 
-* **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Gli utenti con **[!UICONTROL PREPARE DELIVERIES]** destra possono anche avviare il processo di analisi della consegna.
+* **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Gli utenti con la **[!UICONTROL PREPARE DELIVERIES]** destra possono anche avviare il processo di analisi della consegna.
 
 * **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare i dati sulla privacy. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
 * **[!UICONTROL PROGRAM EXECUTION]**: Diritto di eseguire comandi in vari linguaggi di programmazione.
 
-* **[!UICONTROL RECIPIENT IMPORT]**: Diritto di importare i destinatari. Gli utenti con **[!UICONTROL RECIPIENT IMPORT]** destra possono importare un file locale nella tabella dei destinatari.
+* **[!UICONTROL RECIPIENT IMPORT]**: Diritto di importare i destinatari. Gli utenti con il diritto **[!UICONTROL RECIPIENT IMPORT]** possono importare un file locale nella tabella dei destinatari.
 
 * **[!UICONTROL SQL SCRIPT EXECUTION]** Diritto di eseguire qualsiasi comando SQL direttamente sul database.
 
-* **[!UICONTROL START DELIVERIES]**: Diritto di approvare le consegne analizzate in precedenza. Dopo l&#39;analisi della consegna, la consegna verrà messa in pausa a vari passi di approvazione e dovrà essere approvata per riprendere. Gli utenti **[!UICONTROL START DELIVERIES]** autorizzati possono approvare le consegne.
+* **[!UICONTROL START DELIVERIES]**: Diritto di approvare le consegne analizzate in precedenza. Dopo l&#39;analisi della consegna, la consegna verrà messa in pausa a vari passi di approvazione e dovrà essere approvata per riprendere. Gli utenti con il diritto **[!UICONTROL START DELIVERIES]** possono approvare le consegne.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL, per creare e compilare tabelle di lavoro (vedere [questa sezione](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL, per creare e compilare tabelle di lavoro (vedere  [questa sezione](../../workflow/using/sql-data-management.md)).
 
 * **[!UICONTROL WORKFLOW]**: Diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
 
@@ -343,13 +343,13 @@ Tali diritti sono i seguenti:
 >
 >Questo elenco può variare a seconda dei componenti aggiuntivi installati sulla piattaforma.
 
-## Matrice diritti di accesso {#access-rights-matrix}
+## Matrice dei diritti di accesso {#access-rights-matrix}
 
 I gruppi predefiniti e i diritti denominati consentono agli operatori di accedere a determinate cartelle nella gerarchia di navigazione e concedono autorizzazioni di lettura, scrittura ed eliminazione.
 
- matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
+ matrice dei diritti di accesso Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
 
 ## Gestione dell&#39;accesso alle cartelle {#folder-access-management}
 
@@ -363,7 +363,7 @@ Per modificare le autorizzazioni per una cartella specifica della struttura, eff
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Fate clic sulla **[!UICONTROL Security]** scheda per visualizzare le autorizzazioni in questa cartella.
+1. Fate clic sulla scheda **[!UICONTROL Security]** per visualizzare le autorizzazioni presenti in questa cartella.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -375,15 +375,15 @@ Per modificare le autorizzazioni, potete:
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Autorizzate un gruppo o un operatore**. A questo scopo, fate clic sul **[!UICONTROL Add]** pulsante e selezionate il gruppo o l’operatore a cui desiderate assegnare le autorizzazioni per questa cartella.
-* **Impedire un gruppo o un operatore**. A questo scopo, fate clic su **[!UICONTROL Delete]** e selezionate il gruppo o l&#39;operatore da cui desiderate rimuovere l&#39;autorizzazione per questa cartella.
+* **Autorizzate un gruppo o un operatore**. A questo scopo, fate clic sul pulsante **[!UICONTROL Add]** e selezionate il gruppo o l&#39;operatore a cui desiderate assegnare le autorizzazioni per questa cartella.
+* **Impedire un gruppo o un operatore**. A tale scopo, fare clic su **[!UICONTROL Delete]** e selezionare il gruppo o l&#39;operatore da cui si desidera rimuovere l&#39;autorizzazione per questa cartella.
 * **Selezionare i diritti assegnati a un gruppo o a un operatore**. A tal fine, fate clic sul gruppo o sull’operatore interessato, quindi selezionate i diritti di accesso che desiderate concedere e deselezionate gli altri.
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Propagare le autorizzazioni {#propagate-permissions}
 
-Potete estendere le autorizzazioni e i diritti di accesso. A questo scopo, selezionate l’ **[!UICONTROL Propagate]** opzione nelle proprietà della cartella.
+Potete estendere le autorizzazioni e i diritti di accesso. A questo scopo, selezionate l&#39;opzione **[!UICONTROL Propagate]** nelle proprietà della cartella.
 
 Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte le sottocartelle del nodo corrente. Potete quindi sovraccaricare queste autorizzazioni per ciascuna sottocartella.
 
@@ -393,7 +393,7 @@ Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte 
 
 ### Concedere l&#39;accesso a tutti gli operatori {#grant-access-to-all-operators}
 
-Nella **[!UICONTROL Security]** scheda, se l&#39; **[!UICONTROL System folder]** opzione è selezionata, tutti gli operatori avranno accesso a questi dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, è necessario aggiungere esplicitamente l&#39;operatore (o il relativo gruppo) all&#39;elenco delle autorizzazioni per consentire loro l&#39;accesso.
+Nella scheda **[!UICONTROL Security]**, se è selezionata l&#39;opzione **[!UICONTROL System folder]**, tutti gli operatori avranno accesso a tali dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, è necessario aggiungere esplicitamente l&#39;operatore (o il relativo gruppo) all&#39;elenco delle autorizzazioni per consentire loro l&#39;accesso.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
 
@@ -401,11 +401,11 @@ Nella **[!UICONTROL Security]** scheda, se l&#39; **[!UICONTROL System folder]**
 
 ### Informazioni sulle cartelle {#about-folders}
 
-Le cartelle sono nodi  struttura di Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura, tramite il **[!UICONTROL Add new folder]** menu. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
+Le cartelle sono nodi  struttura di Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura, tramite il menu **[!UICONTROL Add new folder]**. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Potete concedere le autorizzazioni a queste cartelle come in tutte le altre cartelle della struttura. Consultate Gestione dell’accesso alle [cartelle](#folder-access-management).
+Potete concedere le autorizzazioni a queste cartelle come in tutte le altre cartelle della struttura. Vedere [Gestione dell&#39;accesso alle cartelle](#folder-access-management).
 
 ### Informazioni sulle viste {#about-views}
 
@@ -429,8 +429,8 @@ Per distinguere le viste dalle cartelle, il nome di ciascuna vista viene visuali
 
 Nell&#39;esempio seguente, verranno create nuove cartelle per visualizzare dati specifici:
 
-1. Create una nuova cartella di **[!UICONTROL Deliveries]** tipo e denominatela **Consegne Francia**.
-1. Fate clic con il pulsante destro del mouse su questa cartella e selezionate **[!UICONTROL Properties...]**.
+1. Create una nuova cartella di tipo **[!UICONTROL Deliveries]** e denominatela **Consegne France**.
+1. Fare clic con il pulsante destro del mouse su questa cartella e selezionare **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
