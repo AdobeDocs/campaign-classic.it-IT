@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 ---
 
 
-# Informazioni sui passaggi per la creazione di consegne {#about-delivery-creation}
+# Informazioni sui passaggi di creazione delle consegne {#about-delivery-creation}
 
 I passaggi principali per la creazione di una consegna sono i seguenti:
 
@@ -32,8 +32,8 @@ I passaggi principali per la creazione di una consegna sono i seguenti:
 
 1. **Invia la consegna**. [Leggi tutto](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](../../delivery/using/monitoring-a-delivery.md) e [Tracciamento delle consegne](../../delivery/using/about-message-tracking.md) .
+1. **Monitorare la consegna**  (monitoraggio, quarantena, rapporti, ecc.). Per ulteriori informazioni, consultare le sezioni [Monitoring delivery](../../delivery/using/about-delivery-monitoring.md) e [Tracking delivery](../../delivery/using/about-message-tracking.md).
 
 >[!NOTE]
 >
->I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, tranne nel caso di consegna esterna (vedere [Selezione di destinatari](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)esterni).
+>I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, tranne nel caso di consegna esterna (vedere [Selezione di destinatari esterni](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)).
