@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 854d509315f1d8585cb041575908df896468cc77
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 98%
+source-wordcount: '2196'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,12 @@ ht-degree: 98%
       + [Gestione delle sottoscrizioni](delivery/using/managing-subscriptions.md)
       + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
    + Monitoraggio delle consegne {#monitoring-deliveries}
-      + [Monitoraggio di una consegna](delivery/using/monitoring-a-delivery.md)
+      + [Introduzione al monitoraggio delle consegne](delivery/using/about-delivery-monitoring.md)
+      + [Accesso all&#39;elenco delle consegne](delivery/using/list-of-deliveries.md)
+      + [Pannello consegna](delivery/using/delivery-dashboard.md)
+      + [Best practice per la distribuzione](delivery/using/delivery-performances.md)
+      + [Risoluzione dei problemi di consegna](delivery/using/delivery-troubleshooting.md)
+      + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Informazioni sugli errori di consegna](delivery/using/understanding-delivery-failures.md)
       + [Informazioni sulla gestione della quarantena](delivery/using/understanding-quarantine-management.md)
    + Tracciamento dei messaggi {#tracking-messages}
