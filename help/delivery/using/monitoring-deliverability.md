@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 2%
@@ -26,36 +26,36 @@ Utilizzate le funzioni offerte da  Adobe Campaign per monitorare la recapito del
 Il pacchetto Deliverability consente di accedere a:
 
 * Rapporto di monitoraggio tecnico per le prestazioni quotidiane di recapito (monitoraggio tecnico). Questo rapporto, disponibile su richiesta, consente di ricevere un rapporto giornaliero via e-mail all&#39;indirizzo specificato. Per maggiori informazioni, contatta il team di assistenza clienti  Adobe.
-* Il rapporto [di rendering della](../../delivery/using/inbox-rendering.md) casella in entrata consente di visualizzare in anteprima i messaggi sui principali client e-mail al fine di acquisire il contenuto e la reputazione.
+* Il report [Inbox rendering report](../../delivery/using/inbox-rendering.md) che consente di visualizzare l&#39;anteprima dei messaggi sui principali client e-mail per eseguire la scansione del contenuto e della reputazione.
 * Panoramica della qualità del messaggio (inbox, spam).
 
 Potete anche usare i seguenti strumenti:
 
-* Il **[!UICONTROL Delivery throughput]** rapporto fornisce una panoramica dell&#39;intero throughput della piattaforma per un determinato periodo di tempo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
-* Il **[!UICONTROL Technical deliverability monitoring]** rapporto include una serie di indicatori di qualità della distribuzione per la piattaforma. Per ulteriori informazioni, consulta [questa sezione](#technical-deliverability-monitoring).
+* Il rapporto **[!UICONTROL Delivery throughput]** offre una panoramica dell&#39;intero throughput della piattaforma per un determinato periodo di tempo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+* Il rapporto **[!UICONTROL Technical deliverability monitoring]** include una serie di indicatori di qualità della distribuzione per la piattaforma in uso. Per ulteriori informazioni, consulta [questa sezione](#technical-deliverability-monitoring).
 * Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche sulla qualità dei dati e sulla reputazione che possono avere un impatto sulla tua recapito, inclusi i seguenti numeri:
    * **[!UICONTROL Hard bounces]** indicano la qualità dei dati. Tale numero dovrebbe essere inferiore al 2%.
    * **[!UICONTROL Soft bounces]** indica la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
 
-   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
-* Più in generale, il dashboard [di](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) distribuzione consente di accedere a:
-   * il riepilogo [della](../../delivery/using/monitoring-a-delivery.md#delivery-summary)consegna, che mostra i dettagli dell&#39;invio e il [numero di messaggi](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) da inviare, elaborare e inviare con esito positivo;
-   * i registri di [consegna e la cronologia](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), che mostrano quale obiettivo è stato escluso e perché;
-   * i registri [di](../../delivery/using/monitoring-a-delivery.md#tracking-logs)tracciamento, che mostrano informazioni di tracciamento come aperture e clic.
+   Per ulteriori informazioni, vedere la sezione [Statistiche di consegna](../../reporting/using/global-reports.md#delivery-statistics).
+* Più in generale, il [dashboard di consegna](../../delivery/using/about-delivery-monitoring.md) consente di accedere a:
+   * il [riepilogo delle consegne](../../delivery/using/delivery-dashboard.md#delivery-summary), che mostra i dettagli dell&#39;invio e il numero di messaggi da inviare, elaborare e inviare con esito positivo;
+   * i [registri di consegna e la cronologia](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history), che mostrano quale destinazione è stata esclusa e perché;
+   * i [registri di monitoraggio](../../delivery/using/delivery-dashboard.md#tracking-logs), che mostrano informazioni di tracciamento come aperture e clic.
 
 ## Linee guida per il monitoraggio {#monitoring-guidelines}
 
 Seguono alcune linee guida aggiuntive sul monitoraggio della recapito:
 
-* Controllate regolarmente il throughput [di](../../reporting/using/global-reports.md#delivery-throughput) consegna per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
-* Verificate che [i tentativi](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano impostati correttamente (30 minuti per il periodo di tentativi e più di 20 tentativi) nei modelli di consegna.
-* Verifica regolarmente che la cassetta postale [di rimbalzo](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
+* Controllare regolarmente la [velocità di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
+* Verificate che [i tentativi](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano impostati correttamente (30 minuti per il periodo dei tentativi e più di 20 tentativi) nei modelli di consegna.
+* Verificare regolarmente che la cassetta postale [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
 * Controllate ogni throughput di distribuzione per assicurarvi che sia coerente con la validità del contenuto di distribuzione (ad es. Le vendite flash devono essere consegnate in minuti, non in giorni).
-* Quando si utilizzano [le onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verificare che ogni onda disponga di tempo sufficiente per terminare prima che venga attivata la successiva.
-* Verificate che il numero di errori e di nuove [quarantena](../../delivery/using/understanding-quarantine-management.md) siano coerenti con altre consegne.
-* Consultate attentamente i registri [di](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) consegna per verificare il tipo di errori evidenziati (elenco Bloccati, problemi DNS, regole anti-spam, ecc.).
+* Quando si utilizza [onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verificare che ogni onda abbia tempo sufficiente per terminare prima che venga attivata la successiva.
+* Verificare che il numero di errori e le nuove [quarantena](../../delivery/using/understanding-quarantine-management.md) siano coerenti con altre consegne.
+* Consultate attentamente i [log di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) per verificare nel dettaglio il tipo di errori evidenziati (elenchi Bloccati, problemi DNS, regole anti-spam, ecc.).
 
-## Spam segnale {#signal-spam}
+## Spam di segnale {#signal-spam}
 
 Signal Spam è un servizio francese che offre un report anonimo sul loop di feedback per gli ISP francesi (Orange, SFR).
 
@@ -63,15 +63,15 @@ Signal Spam è un servizio francese che offre un report anonimo sul loop di feed
 
 * Il segnale Spam fornisce inoltre reclami diretti che gli utenti finali accedono attraverso un&#39;interfaccia dedicata. Tali reclami vengono quindi messi in quarantena dal database degli indirizzi e-mail.
 
-## 250 ok {#deliverability-250ok}
+## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) è una soluzione di monitoraggio complementare agli strumenti interni di recapito del Adobe  che forniscono elenco Bloccati di IP e dominio e indicatori di reputazione.
+[250](https://250ok.com/) okis è una soluzione di monitoraggio complementare agli strumenti interni di recapito del Adobe  che forniscono elenco Bloccati IP e dominio e indicatori di reputazione.
 
 Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza proattiva.
 
 ## Rapporto di monitoraggio sulla realizzazione tecnica {#technical-deliverability-monitoring}
 
-Il rapporto di monitoraggio della recapito tecnico viene aggiornato ogni giorno e disponibile accedendo a **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e facendo clic sul **[!UICONTROL Technical monitoring]** collegamento dalla scheda Adobe Campaign  **[!UICONTROL Home]** . Include una serie di indicatori di qualità della distribuzione per la piattaforma.
+Il rapporto di monitoraggio della recapito tecnico viene aggiornato ogni giorno e disponibile accedendo a **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e facendo clic sul collegamento **[!UICONTROL Technical monitoring]** dalla scheda  Adobe Campaign **[!UICONTROL Home]**. Include una serie di indicatori di qualità della distribuzione per la piattaforma.
 
 Questi indicatori vengono aggiornati ogni giorno alle 9.
 
@@ -91,7 +91,7 @@ Nella relazione sono utilizzati i seguenti indicatori:
 
 * **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni elenchi Bloccati per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro gli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
 
-* **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
+* **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio  [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
