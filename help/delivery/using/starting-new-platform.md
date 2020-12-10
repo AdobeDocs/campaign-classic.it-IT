@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 1%
@@ -27,17 +27,17 @@ Mantenere la reputazione del dominio e dell&#39;indirizzo IP è fondamentale qua
 
 Di seguito sono elencati i principi principali da seguire per l&#39;avvio di una nuova piattaforma:
 
-* Se si dispone di queste informazioni, **importare indirizzi non validi nella tabella**di quarantena.
+* Se si dispone di queste informazioni, **importare indirizzi non validi nella tabella di quarantena**.
 L&#39;avvio di una piattaforma spesso avviene quando si utilizza per la prima volta un elenco di indirizzi che potrebbero non essere completi. Se si inviano indirizzi non validi o a indirizzi in honeypot, ciò contribuirà a ridurre la reputazione della piattaforma.
 
-   * Se si dispone di un elenco di indirizzi non validi, è nell&#39;interesse dell&#39;utente importarlo nella tabella di quarantena (disponibile tramite il **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** menu) prima di inviarlo per la prima volta.
+   * Se si dispone di un elenco di indirizzi non validi, è nell&#39;interesse dell&#39;utente importarlo nella tabella di quarantena (disponibile tramite il menu **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**) prima di inviarlo per la prima volta.
    * Se, comunque, si desidera riqualificare gli indirizzi non validi, è di gran lunga preferibile farlo una volta che la reputazione della piattaforma è stabilita e un po&#39; alla volta, al fine di &quot;diluire&quot; l&#39;uso di indirizzi cattivi nel tempo.
 
-   Per ulteriori informazioni, consulta [Ottimizzazione della consegna tramite quarantena](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
-* **Limita la velocità** effettiva limitando il numero di schede. Per ulteriori informazioni sulla regolazione di tale impostazione tecnica, contattate il vostro amministratore  Adobe Campaign.
-* **Aumentare progressivamente i volumi inviati** per evitare di essere contrassegnati come spam. Non eseguite il targeting dell&#39;intero database fin dall&#39;inizio, ma aggiungete una frazione extra dell&#39;elenco ogni volta che inviate. Questo dovrebbe consentire di aumentare il volume in ogni fase, riducendo al contempo il tasso complessivo di indirizzi non validi. Per garantire uno sviluppo uniforme della fase di avvio, è possibile utilizzare le onde. Per ulteriori informazioni, consultate [Invio con più onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+   Per ulteriori informazioni, vedere [Ottimizzazione della consegna tramite quarantena](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
+* **Limita il** tasso di throughput limitando il numero di schede. Per ulteriori informazioni sulla regolazione di tale impostazione tecnica, contattate il vostro amministratore  Adobe Campaign.
+* **Aumentare progressivamente i volumi** inviati per evitare di essere contrassegnati come spam. Non eseguite il targeting dell&#39;intero database fin dall&#39;inizio, ma aggiungete una frazione extra dell&#39;elenco ogni volta che inviate. Questo dovrebbe consentire di aumentare il volume in ogni fase, riducendo al contempo il tasso complessivo di indirizzi non validi. Per garantire uno sviluppo uniforme della fase di avvio, è possibile utilizzare le onde. Per ulteriori informazioni, vedere [Invio tramite più onde](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 * **Invia regolarmente**. In una certa misura è meglio inviare regolarmente piccole riprese piuttosto che campagne di grandi dimensioni sporadicamente.
-* **Presta particolare attenzione ai rapporti** di consegna. Indicatori di errore elevati possono indicare che un&#39;impostazione tecnica è configurata male. Per ulteriori informazioni, consulta [Monitoraggio della distribuzione](../../delivery/using/monitoring-a-delivery.md).
+* **Presta particolare attenzione ai rapporti** di consegna. Indicatori di errore elevati possono indicare che un&#39;impostazione tecnica è configurata male. Per ulteriori informazioni, vedere [Monitoraggio di una consegna](../../delivery/using/about-delivery-monitoring.md).
 
 **Argomenti correlati**:
 * [Aumenta la tua reputazione di email con il riscaldamento IP](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
