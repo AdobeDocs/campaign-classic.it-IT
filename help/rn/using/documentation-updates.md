@@ -6,11 +6,11 @@ description: In questa pagina sono elencate tutte le nuove funzioni e gli aggior
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: ht
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: ht
-source-wordcount: '3631'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+workflow-type: tm+mt
+source-wordcount: '3663'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 100%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Dicembre 2020 {#dec-2020}
+
+La sezione relativa al monitoraggio dei risultati è stata riorganizzata in temi tematici. [Leggi tutto](../../delivery/using/about-delivery-monitoring.md)
+
+È stato aggiunto un caso di utilizzo per l&#39;aggiunta degli indirizzi IP dei mittenti ai registri di consegna. [Leggi tutto](../../delivery/using/delivery-dashboard.md#use-case)
 
 ## Novembre 2020 {#nov-2020}
 
@@ -39,7 +45,7 @@ Sono state aggiunte informazioni sulla sintassi da utilizzare per specificare il
 
 La sezione Dati personali e Persone è stata aggiornata con uno scenario di utilizzo che illustra l’interazione delle diverse persone in materia di dati personali. [Leggi tutto](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-È stata aggiunta una nuova sezione in cui sono elencate le domande frequenti sui dati personali. [Leggi tutto](../../platform/using/privacy-faq.md)
+È stata aggiunta una nuova sezione in cui sono elencate le domande frequenti sulla privacy. [Leggi tutto](../../platform/using/privacy-faq.md)
 
 ## Ottobre 2020 {#oct-2020}
 
@@ -254,7 +260,7 @@ Le guide di [installazione](../../installation/using/general-architecture.md), [
 
 La guida all’installazione è stata aggiornata e sincronizzata con la versione più recente della matrice di compatibilità. Sono stati aggiunti nuovi sistemi supportati. Sono state rimosse le occorrenze di sistemi obsoleti e non supportati. [Leggi tutto](../../installation/using/general-architecture.md)
 
-La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
+La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Nella guida all’installazione è stata aggiunta una best practice sull’affinità degli IP. [Leggi tutto](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -272,7 +278,7 @@ Il nuovo parametro per la configurazione dei report URL è stato documentato [qu
 
 La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](../../installation/using/capability-matrix.md).
 
-La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
+La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Il nuovo flusso di lavoro **[!UICONTROL Cleanup of Nmsaddress]** è stato documentato [qui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -322,7 +328,7 @@ Messaggi SMS protetti (TLS). [Leggi tutto](https://helpx.adobe.com/it/campaign/k
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
-La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html)
+La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 È stata aggiunta una nuova sezione su come risolvere eventuali problemi relativi a un flusso di lavoro nello stato “Avvia il prima possibile” all’interno di una campagna. [Leggi tutto](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -378,13 +384,13 @@ Le informazioni relative al monitoraggio dei flussi di lavoro sono state raccolt
 
 È stata aggiunta una nuova pagina sulle linee guida generali per il tracking in Adobe Campaign Classic. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html).
 
-Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e consegne sono state aggiornate. [Ulteriori informazioni sui flussi di lavoro](../../workflow/using/workflow-best-practices.md) e [sulle consegne](../../delivery/using/monitoring-a-delivery.md#best-practices-performance).
+Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e consegne sono state aggiornate. [Ulteriori informazioni sui flussi di lavoro](../../workflow/using/workflow-best-practices.md) e [sulle consegne](../../delivery/using/delivery-performances.md#best-practices-performance).
 
 ## Maggio 2019 {#release-19-1}
 
 **Nuove funzionalità incluse nella versione 19.1**
 
-Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
+Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
 Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
@@ -392,7 +398,7 @@ Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
 Sono state create nuove domande frequenti sull’aggiornamento della build. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/build-upgrade-faq.html)
 
-La [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) è stata aggiornata. L’elenco dei sistemi di database supportati è stato aggiornato, così come le versioni Android/iOS e gli SDK correlati. La [matrice di compatibilità 19.0](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix-19-0.html) è stata archiviata.
+La [Matrice di compatibilità](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) è stata aggiornata. L’elenco dei sistemi di database supportati è stato aggiornato, così come le versioni Android/iOS e gli SDK correlati. La [matrice di compatibilità 19.0](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix-19-0.html) è stata archiviata.
 
 La pagina “Funzioni obsolete e rimosse in Campaign Classic” è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html)
 
@@ -447,7 +453,7 @@ Sono state aggiunte informazioni sul report Fatturazione.
 La documentazione sull’integrazione Pubblici condivisi è stata aggiornata.
 [Leggi tutto](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Le seguenti note tecniche sono state aggiornate: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/it/campaign/kb/sms-connector-protocol-and-settings.html) e [Generazione automatica della sequenza](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Le seguenti note tecniche sono state aggiornate: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Generazione automatica della sequenza](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 La sezione Flussi di lavoro tecnici è stata aggiornata. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
 
