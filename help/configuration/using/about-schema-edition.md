@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1007'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ Per aggiungere un tipo completamente nuovo di dati che non esiste out-of-the-box
 
 ![](assets/schemaextension_getting_started_1.png)
 
-Dopo aver esteso o creato uno schema in cui lavorare, è consigliabile definirne gli elementi di contenuto XML nello stesso ordine in cui appaiono di seguito.
+Dopo aver esteso o creato uno schema in cui lavorare, è consigliabile definirne gli elementi di contenuto XML nello stesso ordine in cui vengono visualizzati di seguito.
 
 ## Enumerazione {#enumerations}
 
@@ -146,12 +146,13 @@ Esempio di definizione di un valore predefinito:
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
-`
+```
 
-Example of using a common attribute as a template for a field also marked as mandatory:
+Esempio di utilizzo di un attributo comune come modello per un campo contrassegnato come obbligatorio:
+
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
-"
+```
 
 Esempio di campo calcolato nascosto utilizzando l&#39;attributo **@advanced**:
 
