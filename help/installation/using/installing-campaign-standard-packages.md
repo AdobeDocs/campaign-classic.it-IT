@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 ---
 
 
-# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
+# Installazione di pacchetti Campaign Classic incorporati{#installing-campaign-standard-packages}
 
 ## Informazioni sui pacchetti incorporati {#campaign-standard-packages}
 
@@ -31,21 +31,21 @@ I pacchetti incorporati contengono un set di funzioni che possono essere install
 
 Per installare un pacchetto predefinito:
 
-1. Accedete alla procedura guidata di importazione dei pacchetti **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
+1. Accedete alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
 1. Seleziona **[!UICONTROL Install a standard package]**.
 1. Nell&#39;elenco dei pacchetti, verificate i pacchetti da installare.
    >[!NOTE]
    >
    >Quando un pacchetto è disattivato, significa che è già installato o che non è compatibile con l&#39;istanza. La compatibilità è illustrata nella tabella seguente.
-1. Fate clic **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
+1. Fate clic su **[!UICONTROL Next]**, quindi su **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
-   Una volta installati i pacchetti, la barra di avanzamento mostra il **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
+   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** la finestra di installazione.
 
 I pacchetti ora sono installati.
 
-### Elenco dei pacchetti out-of-the-box {#list-of-standard-packages}
+### Elenco di pacchetti out-of-the-box {#list-of-standard-packages}
 
 Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
 
@@ -60,7 +60,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
  <tbody> 
   <tr> 
    <td> Consegna<br /> </td> 
-   <td> Controlla le consegne e eventuali problemi riscontrati durante l'invio dei messaggi. <a href="../../delivery/using/monitoring-a-delivery.md">Ulteriori informazioni</a><br /> </td> 
+   <td> Controlla le consegne e eventuali problemi riscontrati durante l'invio dei messaggi. <a href="../../delivery/using/about-delivery-monitoring.md">Ulteriori informazioni</a><br /> </td> 
    <td> Tutto</td> 
   </tr> 
   <tr> 
@@ -69,7 +69,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketing resources (MRM)<br /> </td> 
+   <td> Risorse di marketing (MRM)<br /> </td> 
    <td> Controlla le azioni di marketing in modalità collaborativa fornendo la gestione e il tracciamento di attività, budget e risorse di marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -86,7 +86,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
   <tr> 
    <td> Motore di offerta per le istanze di esecuzione. Facoltativo.<br /> </td> 
    <td> Pacchetto da installare sulle istanze di esecuzione per il motore di offerta (interazione). <a href="../../interaction/using/distributed-architectures.md">Ulteriori informazioni</a> </td> 
-   <td> Mid, Execution <br /> </td>  
+   <td> Mid, esecuzione <br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -135,7 +135,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> </td>
   </tr> 
   <tr> 
-   <td> Indagini online (responsabile sondaggio)<br /> </td> 
+   <td> Indagini online (Survey Manager)<br /> </td> 
    <td> Crea e gestisce moduli online per aggiungere o modificare informazioni sul profilo, per iscriversi, per annullare la sottoscrizione o per un modulo di partecipazione al concorso. Facoltativo. <a href="../../web/using/about-surveys.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -150,7 +150,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Accesso ai dati esterni (accesso ai dati federati)<br /> </td> 
+   <td> Accesso a dati esterni (Federated Data Access)<br /> </td> 
    <td> Fornisce l'opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura  dati Adobe Campaign.  Facoltativo. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
@@ -160,7 +160,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Monitoraggio della realizzabilità (recapito e-mail)<br /> </td> 
+   <td> Monitoraggio della distribuzione (recapito tramite e-mail)<br /> </td> 
    <td> Misura il successo delle campagne che raggiungono la inbox dei destinatari senza rimbalzare o essere contrassegnate come spam. Facoltativo. <a href="../../delivery/using/about-deliverability.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto </td> 
   </tr> 
@@ -185,7 +185,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Connettori per analisi Web<br /> </td> 
+   <td> Connettori di analisi Web<br /> </td> 
    <td> Consente  Adobe Campaign e  Adobe Analytics di interagire attraverso il pacchetto di connettori di analisi Web. Non compatibile con i messaggi transazionali (pacchetto del centro messaggi). <a href="../../platform/using/adobe-analytics-data-connector.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -200,7 +200,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Integrazione con Adobe Experience Cloud<br /> </td> 
    <td> Consente di importare ed esportare audience/segmenti da diverse soluzioni Adobe Experience Cloud in  Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -210,7 +210,7 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
    <td> Tutto</td> 
   </tr> 
   <tr> 
-   <td> Transfer to Mid-Sourcing <br /> </td> 
+   <td> Trasferisci a origine media <br /> </td> 
    <td> Consente di specificare l'installazione e la configurazione di un server mid-sourcing, nonché la distribuzione di un'istanza che consente a terzi di inviare messaggi in modalità mid-sourcing. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -232,18 +232,18 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
  </tbody> 
 </table>
 
-### Pacchetto Message Center {#message-center-package}
+### Pacchetto del Centro messaggi {#message-center-package}
 
 Devi installare canali di distribuzione (E-mail, Canale mobile, Canale app mobile, ecc.) prima di installare i messaggi transazionali (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi e-mail e devi successivamente aggiungere un nuovo canale, devi seguire la procedura seguente:
 
-1. Installate il nuovo canale, ad esempio il canale **** Mobile, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
-1. Importa il file ( **[!UICONTROL Tools > Advanced > Import package > File]**), quindi seleziona:
+1. Installate il nuovo canale, ad esempio il **canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Importare il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. In **[!UICONTROL XML data content to import]**, mantenere solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il canale **** Mobile, tieni solo l’elemento **entità** corrispondente al modello **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto **Mobile App Channel**, mantieni solo i modelli di messaggi **transazionali** iOS (iosTriggerMessage) e i messaggi **transazionali** Android (androidTriggerMessage).
+1. In **[!UICONTROL XML data content to import]**, mantenere solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il **Canale mobile**, tieni solo l&#39;elemento **Entità** corrispondente al modello **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **Canale app mobile**, tieni solo i modelli di messaggio transazionale **iOS** (iosTriggerMessage) e **Messaggio transazionale Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
