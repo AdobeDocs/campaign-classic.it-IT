@@ -7,17 +7,49 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: dc345681e8d0085b4366be0afa2d8207170c716f
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 7%
+source-wordcount: '3061'
+ht-degree: 18%
 
 ---
 
 
 # Versione 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Versione 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/limited_2.png) Versione 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+
+_16 dicembre 2020_
+
+>[!CAUTION]
+>
+>Questa versione include un nuovo protocollo di connessione:  l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2020
+
+**Miglioramenti**
+
+* Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
+* Attiva l&#39;autenticazione dell&#39;integrazione originariamente basata sulla configurazione dell&#39;autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata in  Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* Dopo la fine del supporto per il protocollo binario legacy di APN iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
+* È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
+* È stato risolto un problema che causava la disattivazione del connettore SMPP in seguito a un errore di connessione, impedendo l&#39;invio di altri SMS e causando problemi di prestazioni.
+* È stato risolto un problema che causava la visualizzazione di percentuali errate durante la generazione di un rapporto descrittivo tramite un&#39;attività del flusso di lavoro. (NEO-14314)
+* È stato risolto un problema di preparazione della consegna quando l&#39;opzione **Escludi indirizzo duplicato durante la consegna** era deselezionata. (NEO-13240)
+* È stato risolto un problema che poteva causare un errore dei flussi di lavoro durante l’esecuzione di un’attività **Enrichment**. (NEO-17338)
+* È stato risolto un problema nei flussi di lavoro che si verificava recuperando i record da un database esterno e inserendoli nel database Campaign. (NEO-26359)
+* È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione.
+* È stato risolto un problema che impediva il funzionamento della funzione **NoNull**  database Oracle dopo l&#39;aggiornamento alla build 9032. (NEO-26488)
+* È stato risolto un problema che impediva la visualizzazione del pulsante **Salva** durante la modifica di una descrizione del modello della campagna con copia-incolla di simboli come, ad esempio, i caratteri giapponesi. (NEO-27071)
+* È stato risolto un problema che impediva il salvataggio della descrizione di una campagna o di un modello di campagna facendo clic all’esterno della finestra prima di fare clic sul pulsante **Salva**. (NEO-27449)
+* È stato risolto un problema a livello di configurazione proxy che impediva di accedere ad Adobe Campaign dopo l’ultimo aggiornamento di Windows 10. (NEO-27813)
+* È stato risolto un problema relativo alla gestione di righe vuote nei file di registro, che causava errori nel comportamento del processo MTA e causava un calo delle prestazioni nell&#39;invio della consegna.
+
+**Evoluzioni tecniche**
+
+Tomcat è stato aggiornato dalla versione 7 (7.0.103) alla versione 8 (8.5.57). La directory `tomcat-7` viene sostituita da una directory `tomcat-8`. In Windows, _iis_neolane_setup.vbs_ e _apache_neolane.conf_ ora sono installati nella directory `conf` (in precedenza era `tomcat-7/conf`). Su linux, _apache_neolane.conf_ è ora installato nella directory `conf`.
+
+In Linux, l&#39;avvio del servizio di nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installate il pacchetto 19.1.8. /etc/init.d/nlserver6 è ancora disponibile, ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
+
+## ![](assets/do-not-localize/red_2.png) Versione 19.1.7 - Build 9036 {#release-19-1-7-build-9036}
 
 _15 settembre 2020_
 
@@ -26,28 +58,28 @@ _15 settembre 2020_
 * È stato migliorato nlsrvmod per l&#39;utilizzo di thread Apache 2.4 per correggere gli arresti anomali di nlsrvmod.
 * È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;attività Trasferimento file con un account esterno di Azure e una crittografia SSL. La connessione è stata eseguita tramite HTTP invece che mediante HTTPS. (NEO-26720)
 * È stato risolto un problema con il meccanismo di cache URL che non recuperava l&#39;etichetta o la categoria.
-* È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
-* L&#39;elenco jarsToSkip in catalina.properties è stato aggiornato per rimuovere il riferimento a un file jar non più utilizzato (notifiche iOS).
+* È stato corretto un problema a causa del quale gli URL delle pagine speculari venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
+* È stato aggiornato l’elenco jarsToSkip in catalina.properties, con la rimozione del riferimento a un file jar non più utilizzato (notifiche iOS).
 * È stato risolto un problema di regressione che impediva dopo la pubblicazione dopo l&#39;aggiornamento post.
 * Risolto un problema di regressione con i report di consegna forniti con Scene7 che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
-* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracciamento (impatto sui caratteri giapponesi). (NEO-25637)
-* È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati quando questi dovevano essere consentiti. (NEO-25210)
-* È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro e causava un errore nel flusso di lavoro. (NEO-25194)
+* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracking (riguarda i caratteri giapponesi). (NEO-25637)
+* È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati in casi in cui dovevano essere consentiti. (NEO-25210)
+* È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro causandone un’interruzione anomala. (NEO-25194)
 * È stato risolto un problema di compatibilità con Microsoft Dynamics (dalla versione 8.2) che poteva impedire l&#39;esecuzione di alcune chiamate API (RetrieveAllEntities). (NEO-24528)
-* È stato risolto un problema di regressione quando si utilizzava la funzione di connettore ACS che impediva la connessione a un&#39;istanza Campaign Standard (gestione errata della connessione FOH/FOH2). (NEO-23433)
-* È stato risolto un problema di regressione della connessione al database che causava il riavvio costante del server Web a causa di un problema di codifica del database. Ciò potrebbe portare ad un consumo eccessivo. (NEO-23264)
+* È stato risolto un problema di regressione che, nell’utilizzo della funzione del connettore ACS, impediva la connessione a un’istanza Campaign Standard (gestione errata della connessione FOH/FOH2). (NEO-23433)
+* È stato risolto un problema di regressione della connessione al database che provocava il riavvio costante del server web a causa di un problema di codifica del database. Ciò poteva portare a un consumo eccessivo. (NEO-23264)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
-* Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece di uno per uno.
-* Dopo il passaggio al [nuovo meccanismo](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)ID sequenza, tutte le applicazioni Web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
+* Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
+* Dopo il passaggio al [nuovo meccanismo di sequenza ID](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
 * È stato risolto un problema che impediva l&#39;invio di e-mail in caso di codice JavaScript all&#39;esterno del tag di contenuto HTML. (NEO-18628)
 * È stato risolto un problema che impediva l&#39;aggiornamento degli indicatori di tracciamento dei messaggi transazionali dal flusso di lavoro Tracciamento. (NEO-17770)
 * Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
-* È stato risolto un problema di arresto anomalo della console che poteva verificarsi quando si deselezionavano gli URL tracciati in un messaggio e-mail dalla scheda Contenuto **** testo a causa di una variabile non inizializzata. (NEO-13545)
+* È stato risolto un problema di arresto anomalo della console che poteva verificarsi quando si deselezionavano gli URL tracciati in un messaggio e-mail, dalla scheda **Contenuto testo** a causa di una variabile non inizializzata. (NEO-13545)
 * È stato risolto un problema che impediva il caricamento di file in un&#39;attività di trasferimento file tramite un account esterno di Azure Blob Storage a causa di una variabile non inizializzata (m_pCurlReader). (NEO-13717)
-* È stato risolto un problema di post-aggiornamento che disattivava Apache e il server Web prima della ripubblicazione dell’applicazione Web. (NEO-27155)
-* È stata corretta una regressione che causava la selezione di un fuso orario non corretto durante l&#39;impostazione dell&#39;ora in un&#39;attività del flusso di lavoro **Scheduler** .
+* È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
+* È stata corretta una regressione che causava la selezione di un fuso orario non corretto durante l&#39;impostazione dell&#39;ora in un&#39;attività del flusso di lavoro **Scheduler**.
 
-## ![](assets/do-not-localize/orange_2.png) Versione 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Versione 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -71,7 +103,7 @@ _13 agosto 2019_
 
 * È stato risolto un problema con l&#39;istruzione SQL &#39;SELECT COUNT&#39; che è stata eseguita sul database predefinito anziché sul database FDA durante l&#39;estrazione dei dati nell&#39;attività Gestione dati.
 * Per migliorare le funzionalità dell&#39;infrastruttura del cliente, nel file di configurazione del server è ora disponibile una dichiarazione proxy SFTP.
-* È stato risolto un problema di arresto anomalo che si verificava quando il campo **Aggiungi tabella** collegata era vuoto nell&#39;attività del flusso di lavoro **Caricamento dati (RDBMS)** . (NEO-12213)
+* È stato risolto un problema di arresto anomalo che si verificava quando il campo **Aggiungi tabella collegata** era vuoto nell&#39;attività del flusso di lavoro **Caricamento dati (RDBMS)**. (NEO-12213)
 * È stato risolto un problema relativo all&#39;installazione del pacchetto midEmitter tramite la riga di comando.
 * È stata aggiunta una nuova opzione di autenticazione per supportare le credenziali OAuth nel connettore CA con Microsoft Dynamics. (NEO-11982)
 * È stato risolto un problema con la gestione UUID (Unique Universal Identifier) che causava il fallimento delle attività del flusso di lavoro di caricamento di query e dati con Hive FDA.
@@ -117,19 +149,19 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedete al Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per migliorare l'efficienza del lavoro di amministratore, gestisci le impostazioni dei tuoi server SFTP monitorando lo storage, aggiungi indirizzi IP al  di inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedere tramite il Experience Cloud  oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l'aggiornamento alla build Campaign più recente non è richiesto per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
-   <td> <p>In qualità di amministratore, aumentate la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>For more information, refer to the <a href="../../production/using/audit-trail.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">how-to video</a>.</p></td> 
+   <td> <p>In qualità di amministratore, aumentate la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di controllo registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Potete verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, fare riferimento alla <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">come fare per video</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robustezza e scalabilità<br /> </td> 
-   <td> Una serie di miglioramenti è stata aggiunta al Campaign Classic. I miglioramenti a livello di affidabilità, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
+   <td> Una serie di miglioramenti è stata aggiunta al Campaign Classic. I miglioramenti a livello di affidabilità e scalabilità sono elencati di seguito.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
-   <td> Con questa nuova versione,  Adobe Campaign ora supporta i seguenti sistemi di database. Refer to the <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Compatibility Matrix</a>.<br /> 
+   <td> Con questa nuova versione,  Adobe Campaign ora supporta i seguenti sistemi di database. Fare riferimento alla <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
     <ul> 
      <li> <p> Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -143,7 +175,7 @@ _30 maggio 2019_
 
 **Miglioramenti della sicurezza**
 
-* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza l&#39; **[!UICONTROL Pre-process the file]** opzione in un&#39;attività di **[!UICONTROL Data loading (file)]** flusso di lavoro. È ora disponibile un elenco a discesa che consente di selezionare tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di protezione XtkSecurity_Disable_Preproc. Per i nuovi clienti, questa opzione sarà impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 per il post-aggiornamento per mantenere il comportamento precedente. Refer to this [section](../../workflow/using/data-loading--file-.md).
+* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza l&#39;opzione **[!UICONTROL Pre-process the file]** in un&#39;attività del flusso di lavoro **[!UICONTROL Data loading (file)]**. È ora disponibile un elenco a discesa che consente di selezionare tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di protezione XtkSecurity_Disable_Preproc. Per i nuovi clienti, questa opzione sarà impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 per il post-aggiornamento per mantenere il comportamento precedente. Fare riferimento a questa sezione [](../../workflow/using/data-loading--file-.md).
 * È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account FDA esterno senza fuso orario impostato.
 * La libreria PDFBox è stata rimossa.
 * Tomcat è stato aggiornato alla versione 7.0.93.
@@ -159,7 +191,7 @@ _30 maggio 2019_
 
 **Miglioramenti a livello di affidabilità e scalabilità**
 
-* Lifespan - Ottimizzazione della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - Ottimizzazione della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA su HTTP v2: il protocollo FDA su HTTP è ampiamente utilizzato nelle distribuzioni ibride, in particolare per il recupero e la preparazione della distribuzione di ampiLog. La robustezza è stata migliorata per evitare problemi di rete e possibili errori durante il recupero o l&#39;invio dei dati. Ciò richiede che le build a entrambe le estremità della connessione siano aggiornate, altrimenti verrà utilizzato il vecchio protocollo.
 * Flusso di lavoro di tracciamento: la robustezza del flusso di lavoro di tracciamento è stata migliorata. Sono stati risolti diversi problemi relativi al tracciamento di inserimenti/aggiornamenti del registro e alla personalizzazione del tracciamento URL. Inoltre, il flusso di lavoro di tracciamento ora rileva i problemi del registro che potrebbero causare errori e interrompere il flusso di lavoro. Questi problemi vengono ora scartati e non elaborati.
 * Flusso di lavoro di pulizia: il flusso di lavoro di pulizia è stato migliorato per evitare potenziali errori e arresti. Questo ottimizza le dimensioni e le prestazioni del database.
@@ -174,7 +206,7 @@ _30 maggio 2019_
 
 * Notifiche push: ora è supportata l&#39;opzione Thread ID per il push iOS.
 * È stata migliorata la gestione degli indici dei nomi lunghi che potrebbero causare problemi di postaggiornamento.
-* Ora, durante l&#39;analisi di una consegna definitiva, se la modalità di pubblicazione è impostata **[!UICONTROL None]** nella procedura guidata di distribuzione, viene registrato un errore e l&#39;analisi viene arrestata: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul cellulare.&quot; (NEO-12208)
+* Ora, durante l&#39;analisi di una consegna definitiva, se la modalità di pubblicazione è impostata su **[!UICONTROL None]** nella procedura guidata di distribuzione, viene registrato un errore e l&#39;analisi viene arrestata: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul cellulare.&quot; (NEO-12208)
 * La gestione del broadcast è stata migliorata per i messaggi transazionali. Quando i log di trasmissione vengono sincronizzati dall&#39;istanza di esecuzione all&#39;istanza di controllo, il campo @lastModified viene aggiornato alla data corrente del sistema. Per le istanze di controllo è stata aggiunta l’opzione MC_Update_BlLastModified. True indica che la data corrente verrà utilizzata nell&#39;istanza di controllo (comportamento predefinito). False indica che utilizzeremo la data @lastModified dell&#39;istanza di esecuzione del registro di trasmissione. (NEO-12579)
 * Sono stati aggiunti indici nelle tabelle temporanee dei coupon per ottimizzare l&#39;invio delle consegne. (NEO-12437)
 * Nell&#39;integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
@@ -205,7 +237,7 @@ _30 maggio 2019_
 * È stato risolto un problema durante l&#39;installazione del pacchetto **Gestione dei social network** (Social Marketing). (NEO-12081)
 * È stato risolto un problema che impediva l&#39;eliminazione di un&#39;applicazione Web anche se disponeva dei diritti di accesso corretti. (NEO-12072)
 * È stato risolto un problema che poteva causare la sovrascrittura di alcuni valori durante l&#39;esportazione e l&#39;importazione di un oggetto tramite XML. È stata aggiunta l’opzione XtkExport_IncludeDefaultValues. Se è impostata su True (comportamento predefinito), vengono esportati tutti i valori. Se è impostata su False, le modifiche vengono sovrascritte con il valore predefinito. (NEO-11979)
-* È stato risolto un problema che causava il fallimento dell&#39;attività del **[!UICONTROL Alert]** flusso di lavoro quando un&#39;attività di arricchimento veniva aggiunta dopo una query. (NEO-12132)
+* È stato risolto un problema che causava il fallimento dell&#39;attività del flusso di lavoro **[!UICONTROL Alert]** quando un&#39;attività di arricchimento veniva aggiunta dopo una query. (NEO-12132)
 * È stato risolto un problema  impostazioni Oracle in cui gli offset della pipeline (trigger) non venivano recuperati correttamente dal database causando duplicati. (NEO-12121)
 * È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot quando si utilizzava l&#39;integrazione di Analytics (NEO-12103)
 * È stato risolto un problema relativo al report Analisi descrittiva. (NEO-11414)
