@@ -6,11 +6,11 @@ description: Versione 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,39 +23,39 @@ ht-degree: 80%
 
 _11 settembre 2020_
 
-* Risolto un problema di regressione che causava il blocco della preparazione della consegna a causa di una singola funzione errata sulla parte di consegna che generava un sovraccarico di memoria. (NEO-27346)
-* È stato risolto un problema di post-aggiornamento che disattivava Apache e il server Web prima della ripubblicazione dell’applicazione Web. (NEO-27155)
-* È stata corretta una regressione nella gestione dei modelli HTML che causava la visualizzazione degli URL di tracciamento a causa di un&#39;interpretazione errata delle schede. (NEO-25909)
+* È stato risolto un problema di regressione dovuto una singola funzione errata sulla parte di consegna, che generava un sovraccarico di memoria causando il blocco della preparazione della consegna. (NEO-27346)
+* È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
+* È stata corretta una regressione nella gestione dei modelli HTML che, a causa di un’interpretazione errata delle schede, rendeva visibili gli URL di tracking. (NEO-25909)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
-* Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece di uno per uno.
+* Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
 * È stata corretta una regressione che impediva di modificare il nome interno di un account esterno. (NEO-27323)
-* Correzione di una regressione durante l&#39;aggiornamento successivo che causava un avvio errato del server (log degli errori).
-* La gestione degli aggiornamenti per la memoria condivisa è stata migliorata. I passaggi aggiuntivi richiesti in 20.2 non sono più necessari.
+* È stata corretta una regressione che causava un avvio errato del modulo nlserver (log degli errori) durante il post-aggiornamento.
+* È stata migliorata la gestione degli aggiornamenti per la memoria condivisa. I passaggi aggiuntivi richiesti nella 20.2 non sono più necessari.
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _22 luglio 2020_
 
 * È stato risolto un problema che impediva il funzionamento del tracking quando la funzione di firma era disabilitata. (NEO-26411)
-* È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati quando questi dovevano essere consentiti. (NEO-25210)
+* È stato risolto un problema che causava il blocco dei collegamenti non firmati da domini personalizzati in casi in cui dovevano essere consentiti. (NEO-25210)
 * È stato risolto un problema che poteva impedire di aprire/fare clic sugli URL di tracking quando si utilizzavano alcune versioni precedenti di Outlook. (NEO-25688)
-* È stato corretto un problema a causa del quale gli URL delle pagine mirror venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
-* È stato risolto un problema con la gestione degli URL di codifica nel servizio di anti-phishing. (NEO-25283)
+* È stato corretto un problema a causa del quale gli URL delle pagine speculari venivano definiti in modo non corretto nelle comunicazioni e-mail (a causa di un controllo errato dei caratteri ASCII). (NEO-26084)
+* È stato risolto un problema relativo alla gestione degli URL di codifica nel servizio di anti-phishing. (NEO-25283)
 * È stato risolto un problema che impediva il funzionamento del tracking degli URL tramite frammenti nei parametri di personalizzazione (tag di ancoraggio con cancelletto). (NEO-25774)
 * È stato risolto un problema di tracking che si verificava con l’utilizzo di alcune formule personalizzate. (NEO-25277)
 * È stato risolto un problema che impediva il tracking dei “clic di notifica” (notifiche push iOS e Android). (NEO-25965)
-* È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro e causava un errore nel flusso di lavoro. (NEO-25194)
-* È stata corretta una regressione che impediva il funzionamento della creazione immediata di URL di tracciamento Web. (NEO-20999)
-* È stato risolto un problema di regressione con i rapporti di consegna forniti che venivano visualizzati troncati quando venivano esportati in PDF. (NEO-25757)
+* È stato corretto un problema di regressione che interessava i campi calcolati in un flusso di lavoro causandone un’interruzione anomala. (NEO-25194)
+* È stata corretta una regressione che impediva il funzionamento della creazione immediata di URL di tracking web. (NEO-20999)
+* È stato risolto un problema di regressione relativo ai rapporti di consegna forniti, la cui visualizzazione risultava troncata dopo l’esportazione in PDF. (NEO-25757)
 * È stato risolto un problema di arresto anomalo nella procedura guidata di distribuzione.
-* È stato risolto un problema che poteva impedire il corretto funzionamento del flusso di lavoro di notifica dell&#39;offerta dopo un post aggiornamento.
+* È stato risolto un problema che poteva impedire il corretto funzionamento del flusso di lavoro di notifica dell’offerta dopo un post-aggiornamento.
 * Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903)
-* L&#39;elenco jarsToSkip in catalina.properties è stato aggiornato per rimuovere il riferimento a un file jar non più utilizzato (notifiche iOS).
-* È stato risolto un problema che impediva la preparazione della consegna dopo l&#39;aggiornamento postaggiornato.
-* Dopo il passaggio al [nuovo meccanismo ID sequenza](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni Web che stanno aggiornando la tabella dei destinatari vengono ripubblicate durante l&#39;aggiornamento.
-* Risolto un problema di potenziale vulnerabilità XSS nel contenuto di distribuzione. (NEO-17987, NEO-26073)
+* È stato aggiornato l’elenco jarsToSkip in catalina.properties, con la rimozione del riferimento a un file jar non più utilizzato (notifiche iOS).
+* È stato risolto un problema che impediva la preparazione della consegna dopo un post-aggiornamento.
+* Dopo il passaggio al [nuovo meccanismo di sequenza ID](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
+* È stato risolto un problema di potenziale vulnerabilità XSS nel contenuto di consegna. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
@@ -102,7 +102,7 @@ _8 giugno 2020_
  <tbody> 
   <tr> 
    <td> <p>La Legge sulla Protezione dei Dati Personali (Personal Data Protection Act, PDPA) thailandese è la nuova legge sulla privacy che armonizza e modernizza i requisiti di protezione dei dati in Thailandia. </p>
-   <p>La società brasiliana Lei Geral de Proteção de Dados (LGPD) sarà attiva all'inizio del 2021 per tutte le aziende che raccolgono o trattano dati personali in Brasile.</p>
+   <p>La Legge Generale sulla Protezione dei Dati (Lei Geral de Proteção de Dados - LGPD) brasiliana entrerà in vigore all’inizio del 2021 per tutte le aziende che raccolgono o elaborano dati personali in Brasile.</p>
    <p>Queste normative si applicano ai clienti di Adobe Campaign che conservano dati per soggetti residenti in questi paesi. Oltre alle funzionalità relative alla privacy già disponibili in Campaign (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli degli utenti), stiamo sfruttando questa opportunità per includere funzionalità aggiuntive, al fine di aiutarti ad essere pronto per l’entrata in vigore di PDPA e LGPD:</p>
    <ul> 
      <li><p>Diritto di accesso e Diritto di eliminazione: stiamo sfruttando le funzionalità aggiunte per il GDPR e il CCPA. <a href="https://helpx.adobe.com/it/campaign/kb/acc-privacy.html">Leggi tutto</a></p></li> 
@@ -156,7 +156,7 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](https://hel
 
 * La gestione delle connessioni proxy HTTP è stata migliorata. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
-* Nuova opzione nelle attività dei flussi di lavoro **[!UICONTROL Javascript Code]** e **[!UICONTROL Advanced Javascript Code]** per interrompere l&#39;esecuzione dopo un limite. Il valore predefinito è 1 ora. [Ulteriori informazioni](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
+* Nuova opzione nelle attività dei flussi di lavoro **[!UICONTROL Javascript Code]** e **[!UICONTROL Advanced Javascript Code]** per interrompere l’esecuzione dopo un limite. Il valore predefinito è 1 ora. [Ulteriori informazioni](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Altre modifiche**
 
@@ -238,7 +238,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema che poteva interessare le notifiche push quando inviate con un’elevata frequenza. (NEO-20516)
 * È stato risolto un problema che causava l’inclusione di duplicati nei dati di tracking anche se i log di tracking non ne includevano. (NEO-20040)
 * È stato risolto un problema che causava l’invio di e-mail transazionali duplicate dopo la risoluzione di un errore di comunicazione del server di tracking. (NEO-23640)
-* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracciamento (impatto sui caratteri giapponesi). (NEO-25637)
+* È stato risolto un problema che eliminava il valore del parametro di codifica durante il reindirizzamento da un URL di tracking (riguarda i caratteri giapponesi). (NEO-25637)
 * È stato risolto un problema che poteva impedire il funzionamento di una query durante il confronto di numeri in virgola mobile. (NEO-23243)
 * È stato risolto un problema che poteva impedire la visualizzazione del contenuto della colonna **Modified by** dopo il riavvio di un flusso di lavoro. (NEO-23035)
 * È stato risolto un problema che causava un errore nel flusso di lavoro tecnico di tracking durante il download dei log da un secondo contenitore. (NEO-23159)
@@ -248,7 +248,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema relativo ai campi di archiviazione aggiuntivi durante la creazione di consegne tramite l’opzione **Computed by a script** nell’attività del flusso di lavoro **Script**. (NEO-20609)
 * È stato risolto un problema che impediva l’eliminazione dei flussi di lavoro fantasma nelle attività di pulizia del database.
 * È stato risolto un problema che causava un errore del flusso di lavoro tecnico di **fatturazione (profili attivi)**. (NEO-19777)
-* È stato risolto un problema di regressione quando si utilizzava la funzione di connettore ACS che impediva la connessione a un&#39;istanza Campaign Standard (gestione errata della connessione FOH/FOH2). (NEO-23433)
+* È stato risolto un problema di regressione che, nell’utilizzo della funzione del connettore ACS, impediva la connessione a un’istanza Campaign Standard (gestione errata della connessione FOH/FOH2). (NEO-23433)
 * È stato risolto un problema che impediva la creazione di un’estensione dello schema su una chiave primaria con più colonne con una tabella Hadoop. (NEO-17390)
 * È stato risolto un problema nell’attività **Loading (SOAP)** che poteva impedire il caricamento di file WSDL da un URL. (NEO-16924)
 * È stato risolto un problema che impediva l’esecuzione di un **arresto incondizionato** tramite la console in caso di bilanciamento del carico di più server del flusso di lavoro attivi. (NEO-19556)
@@ -262,4 +262,4 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema che poteva visualizzare un messaggio di errore quando si faceva clic su un collegamento di un’applicazione web all’interno di un messaggio Line.
 * È stato risolto un problema che eliminava la cronologia dell’attività **Incremental query** dopo l’esecuzione del flusso di lavoro di pulizia.
 * È stato risolto un problema che si verificava durante la creazione di un account esterno di mid-sourcing a causa del quale l’opzione NmsMidSourcing_LastBroadLog_&lt;InternalName> risultava mancante.
-* È stato risolto un problema di regressione della connessione al database che causava il riavvio costante del server Web a causa di un problema di codifica del database. Ciò potrebbe portare ad un consumo eccessivo. (NEO-23264)
+* È stato risolto un problema di regressione della connessione al database che provocava il riavvio costante del server web a causa di un problema di codifica del database. Ciò poteva portare a un consumo eccessivo. (NEO-23264)
