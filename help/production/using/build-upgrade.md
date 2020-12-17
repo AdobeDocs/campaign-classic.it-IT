@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -204,13 +204,12 @@ Per sostituire tutti i file con la nuova versione, è necessario che tutte le is
 
 ### Aggiornamento delle console client
 
-La console client deve trovarsi nella stessa build dell&#39;istanza server.
-
 Nel computer in cui è installato il server applicazioni Adobe Campaign  (nlserverweb), scaricate e copiate il file:
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
+
 
 Alla successiva connessione delle console client, una finestra informerà gli utenti della disponibilità di un nuovo aggiornamento e offrirà loro la possibilità di scaricarlo e installarlo.
 
