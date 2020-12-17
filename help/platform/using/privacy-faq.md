@@ -7,109 +7,111 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 9e31f69fde38dcdc7f4e6d3ba3fb17911f96ded8
+source-git-commit: a399adc47e4676fe2d001924c62019e829eea403
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '809'
+ht-degree: 97%
 
 ---
 
 
 # Domande frequenti sulla privacy {#privacy-faq}
 
-Di seguito sono riportate alcune delle Domande frequenti sulla privacy e il consenso quando si utilizza  Adobe Campaign.
+Di seguito sono riportate alcune delle domande frequenti sulla privacy e sul consenso relative all’utilizzo di Adobe Campaign.
 
 ## Termini chiave {#key-terms}
 
-**Quali sono i termini chiave della Privacy?**
+### Quali sono i termini chiave della privacy?
 
-Gli elementi elencati di seguito sono collegati ai termini e concetti chiave relativi a Privacy e Consenso in  Adobe Campaign:
+Gli elementi elencati di seguito rimandano ai termini e ai concetti chiave relativi alla privacy e al consenso in Adobe Campaign:
 
-* [Regolamenti sulla gestione della privacy](../../platform/using/privacy-management.md#privacy-management-regulations)
-* [Dati personali e personale](../../platform/using/privacy-and-recommendations.md#personal-data)
-* [Diritto di accesso e diritto di essere dimenticato](../../platform/using/privacy-management.md#right-access-forgotten)
-* [Consenso, mantenimento e ruoli](../../platform/using/privacy-management.md#consent-retention-roles)
+* [Normative sulla gestione della privacy](../../platform/using/privacy-management.md#privacy-management-regulations)
+* [Dati personali e utenti tipo](../../platform/using/privacy-and-recommendations.md#personal-data)
+* [Diritto di accesso e diritto all’oblio](../../platform/using/privacy-management.md#right-access-forgotten)
+* [Consenso, conservazione e ruoli](../../platform/using/privacy-management.md#consent-retention-roles)
 
-## Prontezza delle normative sulla privacy {#privacy-regulations-readiness}
+## Conformità alle normative sulla privacy {#privacy-regulations-readiness}
 
-**Qual è  suggerimento di Adobe Campaign di rispettare le più recenti normative sulla privacy?**
+### Cosa suggerisce Adobe Campaign in merito al rispetto delle normative sulla privacy più recenti?
 
- Adobe non fornisce consulenza legale. Devi collaborare con il tuo consulente legale per assicurarti che stiano facendo tutti i passi necessari verso il GDPR, l&#39;CCPA, il PDPA, la LGPD o qualsiasi altra preparazione normativa applicabile.
+ Adobe non fornisce consulenza legale. Collabora con il tuo reparto legale per assicurarti che vengano eseguiti tutti i passaggi per garantire il rispetto di GDPR, CCPA, PDPA, LGPD o di qualsiasi altra normativa applicabile.
 
-**Preparazione per le richieste di accesso ed eliminazione dei dati**
+**Prepararsi per le richieste di accesso ed eliminazione dei dati**
 
-* Identificare un processo per ricevere/rispondere alle richieste degli interessati, inclusa la nomina di un punto di contatto per la privacy.
+* Identifica un processo per ricevere/rispondere alle richieste degli interessati, inclusa la nomina di un punto di contatto per la privacy.
 
-* Rivedete i vari dati cliente memorizzati in  Adobe Campaign e stabilite identificatori univoci (probabilmente ce ne sarà più di uno).
+* Esamina i vari dati dei clienti memorizzati in Adobe Campaign e determina identificatori univoci (probabilmente ce ne sarà più di uno).
 
-* Determinare un criterio e un processo di convalida/autenticazione per la conferma dell&#39;identità dell&#39;oggetto dati.
+* Determina un criterio e un processo di convalida/autenticazione per confermare l’identità dell’interessato.
 
-* Assicurarsi che la risposta dell&#39;oggetto dati sia di facile comprensione.
+* Assicurati che la risposta dell’interessato sia chiara e comprensibile.
 
-**Considera il consenso**
+**Considerare il consenso**
 
-* Elenca e aggiorna, se necessario, tutti i punti di contatto per l’acquisizione dei dati per il GDPR (vale a dire la lingua, il meccanismo per il consenso e i registri di consenso).
+* Elenca e aggiorna, secondo necessità, tutti i punti di contatto per l’acquisizione dei dati per il GDPR (ovvero la lingua, il meccanismo per il consenso e i registri dei consensi).
 
-* Assicurati che tutte le e-mail di marketing includano i collegamenti per l’annullamento della sottoscrizione.
+* Assicurati che tutte le e-mail di marketing includano i collegamenti per annullare l’abbonamento.
 
-* Valuta la strategia globale per il marketing delle e-mail per determinare le implementazioni specifiche per le aree geografiche.
+* Valuta la strategia globale per l’e-mail marketing per determinare le implementazioni specifiche per le aree geografiche.
 
 **Comprendere i dati**
 
-* Controlla tutte le origini di importazione e acquisizione dei dati in cui i dati scorrono  Adobe Campaign e documenta quali campi vengono utilizzati per le tue attività di marketing.
+* Controlla tutte le origini di importazione e acquisizione dei dati da cui i dati fluiscono in Adobe Campaign e documenta quali campi vengono utilizzati per le attività di marketing.
 
-* Rimuovete eventuali attributi di dati inutilizzati dal database Adobe Campaign .
+* Rimuovi eventuali attributi di dati inutilizzati dal database Adobe Campaign.
 
-* Utilizza i dati disponibili in  Adobe Campaign per l&#39;intento che è stato acquisito e offri ai destinatari esperienze personalizzate migliori.
+* Utilizza i dati disponibili in Adobe Campaign con l’intento per cui sono stati acquisiti e offri ai destinatari esperienze personalizzate migliorate.
 
-* Rivedete e aggiornate le autorizzazioni di accesso ai dati per garantire che gli utenti di  Adobe Campaign possano sfruttare appieno solo i dati necessari per eseguire le campagne, ma non accedere ad altri dati.
+* Esamina e aggiorna le autorizzazioni di accesso ai dati per garantire che gli utenti di Adobe Campaign possano sfruttare pienamente solo i dati necessari per eseguire le campagne, ma non accedere ad altri dati non correlati.
 
-* Assicurati che ciascun utente di  Adobe Campaign disponga dei diritti di accesso appropriati per eseguire le attività richieste, ma non disponga di altri diritti per eseguire altre attività.
+* Assicurati che ciascun utente di Adobe Campaign disponga dei diritti di accesso appropriati per eseguire le attività richieste, ma non disponga dei diritti per eseguire altre attività non correlate.
 
-## Mantenimento del coinvolgimento degli utenti {#preserve-user-engagement}
+## Mantenere il coinvolgimento degli utenti {#preserve-user-engagement}
 
-**Come possono i Data Controller ottenere il consenso con un impatto minimo sul coinvolgimento degli utenti?**
+### In che modo i titolari del trattamento possono ottenere il consenso con un impatto minimo sul coinvolgimento degli utenti?
 
-Nei casi in cui il consenso sarà necessario per determinate attività di marketing, il consenso dei consumatori dovrà essere attivo (ossia nessun silenzio come consenso o caselle pre-controllate), disaggregato e non può essere subordinato all&#39;offerta dei servizi.
+Nei casi in cui si necessita il consenso per determinate attività di marketing, il consenso dei consumatori deve essere attivo (ovvero non può essere espresso in forma di silenzio-assenso o tramite caselle pre-selezionate), disaggregato e non può essere subordinato all’offerta dei servizi.
 
-Potrebbero addirittura verificarsi casi in cui è necessario aggiornare alcuni assetti per poter continuare a utilizzare i dati in corso di elaborazione.
+Possono verificarsi casi in cui è necessario aggiornare alcuni consensi per poter continuare a utilizzare i dati.
 
-Invece di considerare questi requisiti di consenso avanzati come un rischio per l&#39;universo commerciabile, gli esperti di marketing potrebbero adottarli come un vero indicatore di coinvolgimento e fedeltà del marchio, oltre alla soddisfazione e alla fiducia dei clienti.
+Invece di considerare tali requisiti di consenso avanzati come un rischio per l’universo commerciabile, gli esperti di marketing dovrebbero adottarli come indicatori del coinvolgimento e della fedeltà al marchio, oltre che della soddisfazione e della fiducia dei clienti.
 
-## Gestisci consenso {#manage-consent}
+## Gestire il consenso {#manage-consent}
 
-**Come possono i Data Controller gestire il consenso in  Adobe Campaign?**
+### In che modo i titolari del trattamento gestiscono il consenso in Adobe Campaign?
 
- Adobe Campaign offre già funzionalità per gestire il consenso a più livelli rispetto a quanto la maggior parte degli esperti di marketing sfrutta tramite campi dati personalizzati o attraverso uno o più servizi.
+ Adobe Campaign offre già funzionalità per gestire il consenso a più livelli rispetto a quanto sfruttato dalla maggior parte degli esperti di marketing tramite campi dati personalizzati o attraverso uno o più servizi.
 
-Gli esperti di marketing devono consultare il proprio consulente legale per informazioni su come procedere e sfruttare le funzionalità già integrate per  Adobe Campaign.
+Gli esperti di marketing devono consultare il proprio reparto legale per informazioni su come procedere e sfruttare le funzionalità già integrate in Adobe Campaign.
 
-Ad esempio, l&#39;estensione del modello dati in  Adobe Campaign per tenere traccia non solo di chi ha acconsentito, ma anche della marca temporale dell&#39;opt-in, e di un tipo di indicatore che acquisisca l&#39;ambito preciso del consenso.
+Ad esempio, estendere il modello dati in Adobe Campaign per monitorare non solo i consensi ricevuti, ma anche la marca temporale del consenso, e un tipo di indicatore che acquisisce l’ambito preciso del consenso.
 
 ## Eliminazione dei dati {#data-deletion}
 
-**Quali dati possono essere eliminati dai Data Controller in  Adobe Campaign in risposta a una richiesta del cliente da parte di un Oggetto dati?**
+### Quali dati possono essere eliminati dai titolari del trattamento in Adobe Campaign in risposta a una richiesta del cliente da parte di un interessato?
 
-Tutti i dati associati all&#39;oggetto dati verranno eliminati, incluse le tabelle pronte all&#39;uso e personalizzate.
+Tutti i dati associati all’interessato verranno eliminati, incluse le tabelle pronte all’uso e personalizzate.
 
-Tecnicamente, tutti i dati collegati all&#39;Oggetto dati con `integrity="own"` verranno eliminati.
+Tecnicamente, tutti i dati collegati all’interessato con `integrity="own"` verranno eliminati.
 
-In qualità di Data Controller, è possibile personalizzare questa funzione modificando l&#39;integrità dei collegamenti definiti negli schemi di dati (ad esempio, nel caso in cui si disponga di una giustificazione aziendale per non eliminare determinati dati).
+In qualità di titolare del trattamento, è possibile personalizzare questo passaggio modificando l’integrità dei collegamenti definiti negli schemi di dati (ad esempio, nel caso in cui si disponga di una giustificazione aziendale per non eliminare determinati dati).
 
-**In che modo vengono interessati i rapporti quando i registri di consegna e tracciamento vengono eliminati?**
+### Che effetto ha sui rapporti l’eliminazione dei registri di consegna e di tracciamento?
 
-I report in  Adobe Campaign si basano su indicatori calcolati in base ai dati aggregati ricavati dai log di consegna e tracciamento. Di conseguenza, la rimozione dei singoli file di registro non dovrebbe avere alcun impatto sulle metriche visualizzate nei report.
+I rapporti in Adobe Campaign si basano su indicatori calcolati in base ai dati aggregati ricavati dai registri di consegna e di tracciamento. Di conseguenza, la rimozione dei singoli registri non dovrebbe avere alcun effetto sulle metriche visualizzate nei rapporti.
 
-## Reimportazione di dati {#re-import-data}
+## Reimportare i dati {#re-import-data}
 
-**Spesso in  Adobe Campaign, i record vengono caricati da un&#39;origine dati esterna. Devo essere consapevole di poter reimportare i dati in un secondo momento?**
+### Devo prendere in considerazione una possibile reimportazione dei dati in un secondo momento?
 
-In qualità di Titolare del trattamento dei dati è necessario assicurarsi che, quando si riceve una richiesta di eliminazione, tutti i dati necessari relativi all&#39;Oggetto dati vengano eliminati da tutti i sistemi.
+Spesso in Adobe Campaign i record vengono caricati da un’origine dati esterna.
 
-## Accetta di nuovo {#opt-in-again}
+In qualità di titolare del trattamento assicurati che, quando ricevi una richiesta di eliminazione, tutti i dati necessari relativi all’interessato vengano eliminati da tutti i sistemi.
 
-**Un oggetto dati, i cui dati sono stati cancellati da  Adobe Campaign, può scegliere di nuovo in un secondo momento?**
+## Fornire nuovamente il consenso {#opt-in-again}
 
-È possibile che un soggetto a dati decida nuovamente di partecipare o che venga aggiunto come nuovo destinatario dopo che i suoi dati sono stati cancellati da  Adobe Campaign.
+**Un oggetto dati, i cui dati sono stati cancellati da  Adobe Campaign, può scegliere di nuovo in seguito?**
 
-È possibile utilizzare la traccia di controllo per specificare i dettagli relativi all&#39;eliminazione precedente e alla creazione del nuovo destinatario.
+È possibile che un interessato decida di fornire nuovamente il consenso o che venga aggiunto come nuovo destinatario dopo che i suoi dati sono stati eliminati da Adobe Campaign.
+
+Puoi utilizzare l’audit trail, che illustra quando è avvenuta l’eliminazione precedente e quando è stato creato il nuovo destinatario.
