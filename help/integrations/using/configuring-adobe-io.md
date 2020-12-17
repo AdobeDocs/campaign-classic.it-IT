@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Configurazione  I/O Adobe per Adobe Experience Cloud Triggers
-description: Scopri come configurare  I/O Adobe per Adobe Experience Cloud Triggers
+title: Configurazione di Adobe I/O per i trigger Adobe Experience Cloud
+description: Scopri come configurare  Adobe I/O per Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,23 +10,23 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
 
-# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Configurazione di Adobe I/O per i trigger Adobe Experience Cloud {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->Se utilizzi una versione precedente dell&#39;integrazione Triggers attraverso l&#39;autenticazione Auth, **devi passare  I/O Adobe come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione, **devi passare a  Adobe I/O come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
-Questa integrazione si applica solo a partire dalla release **Campaign Classic 20.3**.
+Questa integrazione si applica solo a partire dalle versioni **Campaign Classic 20.3 e Gold Standard 11**.
 
 Prima di avviare l&#39;implementazione, verifica di avere:
 
@@ -35,12 +35,12 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
 >[!NOTE]
 >
->Per richiedere i privilegi di amministratore di sistema dell&#39;organizzazione IMS, seguite la procedura descritta [in questa pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) per fornire questo accesso a tutti i profili di prodotto.
+>Per richiedere i privilegi di amministratore di sistema dell&#39;organizzazione IMS, seguite la procedura dettagliata [in questa pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) per fornire questo accesso a tutti i profili di prodotto.
 
 
-## Passaggio 1: Crea/aggiorna  progetto I/O Adobe {#creating-adobe-io-project}
+## Passaggio 1: Creare/aggiornare  progetto Adobe I/O {#creating-adobe-io-project}
 
-1. Accedete  I/O Adobe ed effettuate l&#39;accesso con il diritto di amministratore di sistema per IMSorg.
+1. Accedete  Adobe I/O ed effettuate l&#39;accesso con il diritto di amministratore di sistema per IMSorg.
 
    >[!NOTE]
    >
@@ -50,29 +50,29 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
    >[!NOTE]
    >
-   >Se l&#39;ID cliente è vuoto, puoi **[!UICONTROL Create a New project]** accedere direttamente  I/O Adobe.
+   >Se l&#39;ID client è vuoto, è possibile **[!UICONTROL Create a New project]** direttamente in  Adobe I/O.
 
 1. Identificate il progetto esistente utilizzando l&#39;ID client estratto. Cercate progetti esistenti con lo stesso ID client estratto nel passaggio precedente.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. Selezionate **[!UICONTROL + Add to Project]** e scegliete **[!UICONTROL API]**.
+1. Selezionare **[!UICONTROL + Add to Project]** e scegliere **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
+1. Nella finestra **[!UICONTROL Add an API]**, selezionare **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
-1. Scegliere **[!UICONTROL Service Account (JWT)]** come tipo di autenticazione.
+1. Scegliete **[!UICONTROL Service Account (JWT)]** come tipo di autenticazione.
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Se l&#39;ID client era vuoto, selezionate **[!UICONTROL Generate a key pair]** per creare una coppia di chiavi Pubblica e Privata.
+1. Se l&#39;ID client era vuoto, selezionare **[!UICONTROL Generate a key pair]** per creare una coppia di chiavi pubblica e privata.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. Caricate la chiave pubblica e fate clic su **[!UICONTROL Next]**.
+1. Caricate la vostra chiave pubblica e fate clic su **[!UICONTROL Next]**.
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
@@ -80,7 +80,7 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Dal progetto, selezionate **[!UICONTROL Service Account (JWT)]** e copiate le seguenti informazioni:
+1. Dal progetto, seleziona **[!UICONTROL Service Account (JWT)]** e copia le informazioni seguenti:
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
    * **[!UICONTROL Technical account ID]**
@@ -90,7 +90,7 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
 ## Passaggio 2: Aggiungere le credenziali del progetto in  Adobe Campaign {#add-credentials-campaign}
 
-Per aggiungere le credenziali di progetto in  Adobe Campaign, eseguite il comando seguente come utente &quot;neolane&quot; su tutti i contenitori dell&#39;istanza Adobe Campaign  per inserire le **[!UICONTROL Technical Account]** credenziali nel file di configurazione dell&#39;istanza.
+Per aggiungere le credenziali di progetto in  Adobe Campaign, eseguite il comando seguente come utente &quot;neolano&quot; su tutti i contenitori dell&#39;istanza Adobe Campaign  per inserire le credenziali **[!UICONTROL Technical Account]** nel file di configurazione dell&#39;istanza.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -102,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Passaggio 3: Aggiorna tag pipeline {#update-pipelined-tag}
 
-Per aggiornare [!DNL pipelined] il tag, è necessario aggiornare il tipo di autenticazione a  progetto I/O Adobe nel file di configurazione **config-&lt; instance-name >.xml** come segue:
+Per aggiornare il tag [!DNL pipelined], è necessario aggiornare il tipo di autenticazione per  progetto Adobe I/O nel file di configurazione **config-&lt; instance-name >.xml** come segue:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
