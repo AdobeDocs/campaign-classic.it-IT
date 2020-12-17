@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 97%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 97%
          + [Domande comuni](platform/using/common-questions.md)
          + [Concetti chiave](platform/using/faq-key-concepts.md)
          + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
+         + [Privacy](platform/using/privacy-faq.md)
          + [Pubblici](platform/using/faq-audiences.md)
          + [Progettare messaggi](platform/using/faq-designing.md)
          + [Inviare messaggi](platform/using/faq-messages.md)
@@ -57,8 +58,7 @@ ht-degree: 97%
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
-      + [Richieste di accesso a dati personali](platform/using/privacy-requests.md)
-      + [Domande frequenti sui dati personali](platform/using/privacy-faq.md)
+      + [Richieste di accesso ai dati personali](platform/using/privacy-requests.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modifica di un profilo](platform/using/editing-a-profile.md)
@@ -286,7 +286,7 @@ ht-degree: 97%
       + [Creazione di una pagina di destinazione](web/using/creating-a-landing-page.md)
       + [Caso di utilizzo: creazione di una consegna e-mail](web/using/use-case--creating-an-email-delivery.md)
    + Moduli web {#web-forms}
-      + [Guida introduttiva ai moduli Web](web/using/about-web-forms.md)
+      + [Introduzione ai moduli web](web/using/about-web-forms.md)
       + [Utilizzo di un modello di modulo web](web/using/using-a-web-form-template.md)
       + [Aggiunta di campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
       + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
