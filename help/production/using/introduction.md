@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '178'
 ht-degree: 1%
 
 ---
@@ -35,10 +35,6 @@ L&#39;aggiornamento deve essere applicato a tutti i server in cui è installato 
 * Server applicazioni (web nlserver)
 * Server di consegna (mta nlserver)
 * Server di reindirizzamento (webmdl)
-
->[!CAUTION]
->
->La console client deve trovarsi nella stessa build dell&#39;istanza del server.
 
 >[!NOTE]
 >
