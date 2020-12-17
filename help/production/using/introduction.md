@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,13 @@ L&#39;aggiornamento deve essere applicato a tutti i server in cui è installato 
 * Server di consegna (mta nlserver)
 * Server di reindirizzamento (webmdl)
 
+>[!CAUTION]
+>
+>La console client deve trovarsi nella stessa build dell&#39;istanza del server.
+
 >[!NOTE]
 >
->Per ulteriori informazioni sui vari processi  Adobe Campaign, consulta [questa sezione](../../installation/using/general-architecture.md#logical-application-layer).\
+>Per ulteriori informazioni sui vari processi Adobe Campaign , consultare [questa sezione](../../installation/using/general-architecture.md#logical-application-layer).\
 >Quando si utilizza l&#39;architettura Power Booster o Power Cluster, è necessario applicare questo processo a tutti i server Power Booster/Cluster.
 
 Se la nuova versione comporta una modifica della struttura del database, si consiglia di riavviare i server nell&#39;ordine seguente:
