@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7353abfe07bc177d103c83c7f2a5d57d7fb415a3
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '909'
 ht-degree: 1%
 
 ---
@@ -29,12 +29,12 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 Prima di avviare la configurazione, verificare che:
 
-*  rilascio minimo di Adobe Campaign 20.3
+*  rilascio minimo di Adobe Campaign 20.3 o Gold Standard 11
 *  versione Adobe Analytics Standard
 
 Sarà inoltre necessario:
 
-*  autenticazione progetto I/O Adobe
+*  autenticazione del progetto Adobe I/O
 * un IMSOrgID valido, l’identificatore del cliente del Experience Cloud  con  aggiunto Adobe Analytics
 * Accesso sviluppatore all&#39;organizzazione IMS
 * attiva la configurazione in  Adobe Analytics
@@ -43,13 +43,13 @@ Sarà inoltre necessario:
 
 L&#39;autenticazione è necessaria perché la pipeline è ospitata nell&#39;Adobe Experience Cloud.
 Utilizza un paio di chiavi pubbliche e private. Questa procedura ha la stessa funzione di utente/password ma è più sicura.
-L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto I/O Adobe.
+L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto Adobe I/O.
 
-## Passaggio 1: Creazione/aggiornamento  progetto I/O Adobe {#creating-adobe-io-project}
+## Passaggio 1: Creazione/aggiornamento  progetto Adobe I/O {#creating-adobe-io-project}
 
-Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici I/O di Adobe per l&#39;integrazione Triggers.
+Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici Adobe I/O per l&#39;integrazione Triggers.
 
-Per i clienti interni, consultate la pagina [Configurazione  I/O Adobe per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) . Durante l&#39;aggiunta di API alla credenziale I/O del Adobe  è necessario selezionare **[!UICONTROL Adobe Analytics]** .
+Per i clienti di On Premise, fare riferimento alla pagina [Configuring  Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** quando si aggiunge API alla credenziale Adobe I/O .
 
 ## Passaggio 2: Configurazione dell&#39;opzione pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
@@ -58,9 +58,9 @@ L&#39;opzione può essere configurata anche con un carattere jolly per intercett
 
 1. In  Adobe Campaign, accedere al menu delle opzioni in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in **[!UICONTROL Explorer]**.
 
-1. Selezionate l’ **[!UICONTROL NmsPipeline_Config]** opzione.
+1. Selezionare l&#39;opzione **[!UICONTROL NmsPipeline_Config]**.
 
-1. Nel **[!UICONTROL Value (long text)]** campo potete incollare il seguente codice JSON, che specifica due attivatori. È necessario assicurarsi di rimuovere i commenti.
+1. Nel campo **[!UICONTROL Value (long text)]** potete incollare il seguente codice JSON, che specifica due attivatori. È necessario assicurarsi di rimuovere i commenti.
 
    ```
    {
@@ -105,16 +105,16 @@ L&#39;opzione può essere configurata anche con un carattere jolly per intercett
 
 La tubazione funziona come un modello di fornitore e consumatore. I messaggi vengono consumati solo per un singolo consumatore: ogni consumatore riceve la propria copia dei messaggi.
 
-Il parametro **Consumer** identifica l’istanza come uno di questi consumatori. L&#39;identità dell&#39;istanza chiamerà la pipeline. Potete compilarlo con il nome dell&#39;istanza che si trova nella pagina Monitoraggio della console client.
+Il parametro **Consumer** identifica l&#39;istanza come uno di questi consumatori. L&#39;identità dell&#39;istanza chiamerà la pipeline. Potete compilarlo con il nome dell&#39;istanza che si trova nella pagina Monitoraggio della console client.
 
 Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. L’utilizzo di consumatori diversi per diverse istanze consente di verificare che ogni messaggio venga inviato a ogni istanza.
 
-### Consigli sulle opzioni pipeline {#pipeline-option-recommendation}
+### Suggerimenti per l&#39;opzione pipeline {#pipeline-option-recommendation}
 
 Per configurare l&#39;opzione pipeline, attenersi alle seguenti raccomandazioni:
 
-* Aggiungi o modifica attivatori in **[!UICONTROL Triggers]**, non devi modificare il resto.
-* Assicurati che il JSON sia valido. Potete utilizzare una funzione di convalida JSON, ad esempio fare riferimento a questo [sito Web](http://jsonlint.com/) .
+* Aggiungere o modificare attivatori in **[!UICONTROL Triggers]**, non modificare gli altri.
+* Assicurati che il JSON sia valido. È possibile utilizzare una Convalida JSON, fare riferimento a questo [sito Web](http://jsonlint.com/), ad esempio.
 * &quot;name&quot; corrisponde all&#39;ID attivatore. Un carattere jolly &quot;*&quot; intercetta tutti i trigger.
 * &quot;Consumer&quot; corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
 * Pipeline supporta anche l&#39;argomento &quot;alias&quot;.
@@ -133,7 +133,7 @@ L&#39;elenco dei parametri opzionali è riportato di seguito:
 | authPrivateKey(Legacy) | La chiave privata, parte pubblica caricata nell’applicazione Legacy Oath, AES crittografata con l’opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Disattiva l&#39;autenticazione. La connessione senza token gateway verrà accettata solo da alcuni endpoint pipeline di sviluppo. |
 | findPipelineEndpoint | URL per trovare l&#39;endpoint di Pipeline Services da utilizzare per questo tenant. Predefinito: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Il periodo tra due discariche del processo di stato interno nello stato ```var/INSTANCE/pipelined.json.``` <br> interno è accessibile anche su richiesta: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Periodo tra due discariche del processo di stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche su richiesta: ```http://INSTANCE:7781/pipelined/status``` |
 | forzatoPipelineEndpoint | Disabilitare il rilevamento di PipelineServicesEndpoint per forzarlo |
 | monitorServerPort | Il processo condotto sarà in ascolto su questa porta per fornire il processo di stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
 | puntatoreFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset verranno salvati nel database. <br> Il valore predefinito è 1000 |
@@ -165,6 +165,6 @@ nlserver restart pipelined@instance
 
 Per convalidare la configurazione della pipeline per il provisioning, attenetevi alla procedura seguente:
 
-* Verificare che il [!DNL pipelined] processo sia in esecuzione.
+* Assicurarsi che il processo [!DNL pipelined] sia in esecuzione.
 * Controllate i registri di connessione della pipeline nel file pipelining.log.
 * Verificare la connessione e se i ping sono ricevuti. I clienti ospitati possono utilizzare il monitoraggio dalla console client.
