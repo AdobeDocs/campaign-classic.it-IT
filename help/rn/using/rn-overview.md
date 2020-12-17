@@ -6,11 +6,11 @@ description: Ulteriori informazioni sugli aggiornamenti di Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '429'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,8 @@ L’**ultima build RC** è [Campaign Classic versione 20.3](../../rn/using/lates
 ## Raccomandazioni{#recommendations}
 
 Per garantire una configurazione stabile, si consiglia di installare la stessa build stabile su tutti i server in esecuzione sulla stessa configurazione client.
+
+Inoltre, la console client deve trovarsi nella stessa build dell&#39;istanza del server.
 
 Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
