@@ -6,11 +6,11 @@ description: Note sulla versione Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 494be84478f652dd5e1473dd98272056514f31c8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -24,6 +24,24 @@ Se effettui la migrazione da una build precedente, ti consigliamo di eseguire pr
 In questa pagina sono elencate le versioni Gold Standard.
 
 Per ulteriori informazioni sul programma Gold Standard per Campaign, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+
+## ![](assets/do-not-localize/limited_2.png) Versione Gold Standard 11{#gs-11}
+
+_15 dicembre 2020_
+
+>[!CAUTION]
+>
+>Questa versione include un nuovo protocollo di connessione: l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2020
+
+La build 9032@2a2a028 include i seguenti miglioramenti e correzioni:
+
+* Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
+
+* L’autenticazione dell’integrazione dei trigger, originariamente basata su OAUTH per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+
+* Dopo la fine del supporto per il protocollo binario legacy di APN iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
+
+* È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) Versione Gold Standard 10{#gs-10}
 
@@ -59,11 +77,11 @@ _29 aprile 2020_
 
 La build 9032@3a9dc9c include le seguenti correzioni:
 
-* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism).
+* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism)
+>In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini nelle consegne in Linea. (NEO-23207)
 * È stato risolto un problema dell’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
