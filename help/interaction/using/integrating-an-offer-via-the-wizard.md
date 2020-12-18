@@ -22,13 +22,13 @@ Durante la creazione di una consegna, sono disponibili due metodi per integrare 
 * Chiamata del motore di offerta nel corpo di una consegna.
 * Fare riferimento alle offerte tramite i contorni di distribuzione di una campagna. Questo metodo viene generalmente utilizzato per le campagne cartacee.
 
-## Eseguire una chiamata al motore delle offerte {#delivering-with-a-call-to-the-offer-engine}
+## Distribuzione con una chiamata al motore delle offerte {#delivering-with-a-call-to-the-offer-engine}
 
-Per presentare un&#39;offerta durante una campagna di marketing, create semplicemente un&#39;azione di consegna classica basata sul canale scelto. Il motore delle offerte viene richiamato quando il contenuto della distribuzione è definito, facendo clic sull&#39; **[!UICONTROL Offers]** icona disponibile nella barra degli strumenti.
+Per presentare un&#39;offerta durante una campagna di marketing, create semplicemente un&#39;azione di consegna classica basata sul canale scelto. Il motore delle offerte viene richiamato quando il contenuto della distribuzione è definito, facendo clic sull&#39;icona **[!UICONTROL Offers]** disponibile nella barra degli strumenti.
 
 ![](assets/offer_delivery_009.png)
 
-Per ulteriori informazioni sulle consegne e le campagne di marketing, consulta [Consegna](../../delivery/using/about-direct-mail-channel.md) e [Campagna](../../campaign/using/setting-up-marketing-campaigns.md).
+Per ulteriori informazioni sulle consegne e le campagne di marketing, fare riferimento a [Consegna](../../delivery/using/about-direct-mail-channel.md) e [Campagna](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Passaggi principali per l&#39;inserimento di un&#39;offerta in una consegna {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -52,11 +52,11 @@ Per inserire le proposte di offerta in una consegna, effettuate le seguenti oper
 
    ![](assets/offer_delivery_005.png)
 
-1. Se necessario, selezionate l’ **[!UICONTROL Exclude non-eligible recipients]** opzione. Per ulteriori informazioni, consulta [Parametri per la chiamata del motore](#parameters-for-calling-offer-engine)delle offerte.
+1. Se necessario, selezionare l&#39;opzione **[!UICONTROL Exclude non-eligible recipients]**. Per ulteriori informazioni, vedere [Parametri per la chiamata del motore di offerta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_006.png)
 
-1. Se necessario, selezionate l’ **[!UICONTROL Do not display anything if no offers are selected]** opzione. Per ulteriori informazioni, consulta [Parametri per la chiamata del motore](#parameters-for-calling-offer-engine)delle offerte.
+1. Se necessario, selezionare l&#39;opzione **[!UICONTROL Do not display anything if no offers are selected]**. Per ulteriori informazioni, vedere [Parametri per la chiamata del motore di offerta](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
@@ -68,7 +68,7 @@ Per inserire le proposte di offerta in una consegna, effettuate le seguenti oper
 
    ![](assets/offer_delivery_010.png)
 
-### Parametri per la chiamata del motore di offerta {#parameters-for-calling-offer-engine}
+### Parametri per il motore di offerta chiamante {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]** : spazio dell&#39;ambiente delle offerte che deve essere selezionato per attivare il motore delle offerte.
 * **[!UICONTROL Category]** : cartella specifica in cui vengono ordinate le offerte. Se non viene specificata alcuna categoria, tutte le offerte contenute nell&#39;ambiente verranno prese in considerazione dal motore delle offerte, a meno che non sia selezionato un tema.
@@ -85,15 +85,15 @@ La consegna può essere personalizzata utilizzando i campi dell&#39;offerta o, n
 
 ![](assets/offer_delivery_011.png)
 
-## Distribuzione con contorni di consegna {#delivering-with-delivery-outlines}
+## Distribuzione con i contorni di consegna {#delivering-with-delivery-outlines}
 
 Potete anche presentare le offerte in una consegna utilizzando i contorni di consegna.
 
-Per ulteriori informazioni sui contorni di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) .
+Per ulteriori informazioni sui contorni di consegna, consultare la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Create una nuova campagna o accedete a una campagna esistente.
-1. Accedete ai contorni di consegna tramite la scheda della campagna **[!UICONTROL Edit]** > **[!UICONTROL Documents]** .
-1. Aggiungi una struttura, quindi inserisci tutte le offerte che ti interessano facendo clic con il pulsante destro del mouse sulla struttura e selezionando **[!UICONTROL New]** > **[!UICONTROL Offer]**, quindi salva la campagna.
+1. Accedete ai contorni della distribuzione tramite la scheda **[!UICONTROL Edit]** > **[!UICONTROL Documents]** della campagna.
+1. Aggiungete una struttura, quindi inserite tutte le offerte al suo interno facendo clic con il pulsante destro del mouse sulla struttura e selezionando **[!UICONTROL New]** > **[!UICONTROL Offer]**, quindi salvate la campagna.
 
    ![](assets/int_compo_offre1.png)
 
@@ -106,11 +106,11 @@ Per ulteriori informazioni sui contorni di consegna, consulta la guida [Campaign
 
    ![](assets/int_compo_offre2.png)
 
-1. Con il **[!UICONTROL Offers]** pulsante potete quindi configurare lo spazio delle offerte e il numero di offerte da presentare nella consegna.
+1. Utilizzando il pulsante **[!UICONTROL Offers]**, potete quindi configurare lo spazio delle offerte e il numero di offerte da presentare nella consegna.
 
    ![](assets/int_compo_offre3.png)
 
-1. Aggiungete le proposte nel corpo di distribuzione utilizzando i campi di personalizzazione (per ulteriori informazioni, consultate [Inserimento di una proposta di offerta in una sezione di consegna](#inserting-an-offer-proposition-into-a-delivery) ), o nel caso di una consegna diretta per posta, modificando il formato del file di estrazione.
+1. Aggiungete le proposte nel corpo di distribuzione utilizzando i campi di personalizzazione (per ulteriori informazioni, consultate la sezione [Inserimento di una proposta di offerta in una sezione consegna](#inserting-an-offer-proposition-into-a-delivery)), o nel caso di una consegna diretta per posta, modificando il formato del file di estrazione.
 
    Le proposte verranno selezionate tra le offerte a cui viene fatto riferimento nel profilo di consegna.
 
