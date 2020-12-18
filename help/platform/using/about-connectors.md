@@ -21,9 +21,9 @@ ht-degree: 9%
 
 I connettori sono:
 
-* Il connettore FDA (**Federated Data Access**) consente di collegare Campaign a uno o più database esterni e di memorizzare informazioni sul processo in essi archiviate senza influire sui dati della campagna. [Ulteriori informazioni](../../installation/using/about-fda.md).
+* Il connettore FDA (**Federated Data Access**) consente di collegare Campaign a uno o più database esterni e di elaborare le informazioni archiviate al loro interno senza influire sui dati della campagna. [Ulteriori informazioni](../../installation/using/about-fda.md).
 * I connettori CRM consentono lo scambio di dati tra  soluzione Adobe Campaign e CRM utilizzando attività di flusso di lavoro dedicate. [Ulteriori informazioni](../../platform/using/crm-connectors.md).
-* Analytics Data Connectors (era **Adobe Genesis**) consente di condividere i dati tra  Adobe Campaign e  Adobe Analytics. [Ulteriori informazioni](../../platform/using/adobe-analytics-data-connector.md).
+* I Connettori dati di Analytics (era **Adobe Genesis**) consentono di condividere i dati tra  Adobe Campaign e  Adobe Analytics. [Ulteriori informazioni](../../platform/using/adobe-analytics-data-connector.md).
 
 Puoi anche integrare Campaign con diversi altri sistemi, ad esempio:
 
@@ -33,5 +33,5 @@ Puoi anche integrare Campaign con diversi altri sistemi, ad esempio:
 
 >[!NOTE]
 >
->La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fate riferimento alla matrice [delle funzionalità in sede di](../../installation/using/capability-matrix.md)Campaign.
+>La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. Fare riferimento a [Campaign on-premise - Hosting capabilities matrix](../../installation/using/capability-matrix.md).
 
