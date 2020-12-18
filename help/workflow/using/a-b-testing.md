@@ -37,11 +37,11 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 * [Passaggio 7: Avvio del flusso di lavoro](#step-7--starting-the-workflow)
 * [Passaggio 8: Analisi del risultato](#step-8--analyzing-the-result).
 
-## Step 1: Creating a targeting workflow {#step-1--creating-a-targeting-workflow}
+## Passaggio 1: Creazione di un flusso di lavoro di targeting {#step-1--creating-a-targeting-workflow}
 
-È necessario creare il flusso di lavoro nella **[!UICONTROL Targeting and Workflows]** scheda di una campagna. È composta da un&#39; **[!UICONTROL Query]** attività, un&#39; **[!UICONTROL Split]** attività collegata a due **[!UICONTROL Email delivery]** attività, un&#39; **[!UICONTROL Wait]** attività, un&#39; **[!UICONTROL JavaScript code]** attività e un&#39; **[!UICONTROL Delivery]** attività.
+È necessario creare il flusso di lavoro nella scheda **[!UICONTROL Targeting and Workflows]** di una campagna. È composta da un&#39;attività **[!UICONTROL Query]**, un&#39;attività **[!UICONTROL Split]** collegata a due attività **[!UICONTROL Email delivery]**, un&#39;attività **[!UICONTROL Wait]**, un&#39;attività **[!UICONTROL JavaScript code]** e un&#39;attività **[!UICONTROL Delivery]**.
 
-1. Se non lo avete ancora fatto, create una campagna (per ulteriori informazioni, consultate questa [sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Se non lo avete ancora fatto, create una campagna (per ulteriori informazioni, fate riferimento a questa [sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -49,37 +49,37 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Modificate l’etichetta del flusso di lavoro esistente o fate clic **[!UICONTROL Add]** per crearne uno nuovo (per ulteriori informazioni, consultate questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Modificate l&#39;etichetta del flusso di lavoro esistente o fate clic su **[!UICONTROL Add]** per crearne uno nuovo (per ulteriori informazioni, consultate questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Utilizzate il mouse per trascinare e rilasciare attività nel diagramma del flusso di lavoro, incluse **[!UICONTROL Query]** (**[!UICONTROL Target]** scheda), una **[!UICONTROL Split]** (**[!UICONTROL Target]** scheda), due **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** scheda), un&#39; **[!UICONTROL Wait]** attività (**[!UICONTROL Flow Control]** scheda), un&#39;attività ( **[!UICONTROL JavaScript code]****[!UICONTROL Actions]** **[!UICONTROL Delivery]****[!UICONTROL Actions]** scheda) e un&#39;attività (scheda) ).
+1. Utilizzare il mouse per trascinare le attività nel diagramma del flusso di lavoro, inclusa una **[!UICONTROL Query]** (**[!UICONTROL Target]** scheda), una **[!UICONTROL Split]** (**[!UICONTROL Target]** scheda), due **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** scheda), un&#39;attività **[!UICONTROL Wait]** (**[!UICONTROL Flow Control]** scheda), un&#39;attività **[!UICONTROL JavaScript code]** (**[!UICONTROL Actions]** scheda) e una &lt;a110/> attività (**[!UICONTROL Actions]** scheda).**[!UICONTROL Delivery]**
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-## Passaggio 2: Configurazione dei campioni di popolazione {#step-2--configuring-population-samples}
+## Passaggio 2: Configurazione dei campioni popolazione {#step-2--configuring-population-samples}
 
 ### Configurazione dell&#39;attività Query {#configuring-the-query-activity}
 
-* Double-click the **[!UICONTROL Query]** activity.
+* Fate doppio clic sull&#39;attività **[!UICONTROL Query]**.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Fai clic sul **[!UICONTROL Edit query]** collegamento e seleziona i destinatari a cui vuoi indirizzare.
+* Fare clic sul collegamento **[!UICONTROL Edit query]** e selezionare i destinatari desiderati.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Collegate l&#39; **[!UICONTROL Query]** attività all&#39; **[!UICONTROL Split]** attività.
+* Collegate l&#39;attività **[!UICONTROL Query]** all&#39;attività **[!UICONTROL Split]**.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-### Configurazione dell&#39;attività Split {#configuring-the-split-activity}
+### Configurazione dell&#39;attività divisa {#configuring-the-split-activity}
 
 Questa attività consente di creare diverse popolazioni: quella che riceve la consegna A, quella che riceve la consegna B, e la popolazione rimanente. Utilizzando la selezione casuale è possibile eseguire il targeting di una parte della popolazione di ciascuna consegna.
 
 1. Creazione popolazione A:
 
-   * Double-click the **[!UICONTROL Split]** activity.
+   * Fate doppio clic sull&#39;attività **[!UICONTROL Split]**.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -87,21 +87,21 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Selezionate l’ **[!UICONTROL Limit the selected records]** opzione.
+   * Selezionare l&#39;opzione **[!UICONTROL Limit the selected records]**.
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Fate clic sul **[!UICONTROL Edit]** collegamento, selezionate **[!UICONTROL Activate random sampling]**, quindi fate clic su **[!UICONTROL Next]**.
+   * Fare clic sul collegamento **[!UICONTROL Edit]**, selezionare **[!UICONTROL Activate random sampling]**, quindi fare clic su **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * Imposta la soglia su 10%, quindi fai clic su **[!UICONTROL Finish]**.
+   * Impostate la soglia su 10%, quindi fate clic su **[!UICONTROL Finish]**.
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. Creazione popolazione B:
 
-   * Fate clic **[!UICONTROL Add]** per creare una nuova scheda per la popolazione B.
+   * Fare clic su **[!UICONTROL Add]** per creare una nuova scheda per la popolazione B.
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -119,16 +119,16 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * Modificate l&#39;etichetta per specificare che la popolazione non include né A né B, quindi fate clic **[!UICONTROL OK]** per chiudere l&#39;attività.
+   * Modificate l&#39;etichetta per specificare che la popolazione non include né A né B, quindi fate clic su **[!UICONTROL OK]** per chiudere l&#39;attività.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
 ## Passaggio 3: Creazione di due modelli di consegna {#step-3--creating-two-delivery-templates}
 
-Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39; **[!UICONTROL Email delivery]** attività collegata all&#39; **[!UICONTROL Split]** attività. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
+Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39;attività **[!UICONTROL Email delivery]** collegata all&#39;attività **[!UICONTROL Split]**. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
 
-1. Go to the **[!UICONTROL Resources > Delivery template]** folder.
-1. Duplica il modello di **[!UICONTROL Email]** consegna.
+1. Andate alla cartella **[!UICONTROL Resources > Delivery template]**.
+1. Duplica il modello di consegna **[!UICONTROL Email]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
@@ -142,9 +142,9 @@ Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferim
 
 ## Passaggio 4: Configurazione delle consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Il passo successivo consiste nel configurare le consegne. Sono destinati alle tre popolazioni create nella fase precedente: [Passaggio 2: Configurazione dei campioni](#step-2--configuring-population-samples)di popolazione. Le prime due consegne consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è destinata alla popolazione che non ha ricevuto né A né B. Il contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale dei due avrà ottenuto il punteggio più alto. Dobbiamo configurare un periodo di attesa per la terza consegna, per conoscere il risultato delle consegne A e B. Per questo motivo la terza consegna include un&#39; **[!UICONTROL Wait]** attività.
+Il passo successivo consiste nel configurare le consegne. Sono destinati alle tre popolazioni create nella fase precedente: [Passaggio 2: Configurazione dei campioni popolazione](#step-2--configuring-population-samples). Le prime due consegne consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è destinata alla popolazione che non ha ricevuto né A né B. Il contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale dei due avrà ottenuto il punteggio più alto. Dobbiamo configurare un periodo di attesa per la terza consegna, per conoscere il risultato delle consegne A e B. Questo è il motivo per cui il terzo invio include un&#39;attività **[!UICONTROL Wait]**.
 
-1. Andate all&#39; **[!UICONTROL Split]** attività e collegate la transizione per la popolazione A a una delle consegne di e-mail già presenti nel flusso di lavoro.
+1. Andate all&#39;attività **[!UICONTROL Split]** e collegate la transizione per la popolazione A a una delle consegne di e-mail già presenti nel flusso di lavoro.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -153,11 +153,11 @@ Il passo successivo consiste nel configurare le consegne. Sono destinati alle tr
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. Fate clic **[!UICONTROL Continue]** per visualizzare la consegna, quindi salvatela.
+1. Fare clic su **[!UICONTROL Continue]** per visualizzare la consegna, quindi salvarla.
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Collegate la transizione dell&#39; **[!UICONTROL Split]** attività destinata alla popolazione B alla seconda consegna tramite e-mail.
+1. Collegate la transizione dell&#39;attività **[!UICONTROL Split]** destinata alla popolazione B alla seconda consegna tramite e-mail.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -165,15 +165,15 @@ Il passo successivo consiste nel configurare le consegne. Sono destinati alle tr
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. Collegare la transizione destinata alla popolazione rimanente all&#39; **[!UICONTROL Wait]** attività.
+1. Collegare la transizione destinata alla popolazione rimanente all&#39;attività **[!UICONTROL Wait]**.
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. Aprite l&#39; **[!UICONTROL Wait]** attività e configurate un periodo di attesa di 5 giorni.
+1. Aprite l&#39;attività **[!UICONTROL Wait]** e configurate un periodo di attesa di 5 giorni.
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Collegate l&#39; **[!UICONTROL Wait]** attività all&#39; **[!UICONTROL JavaScript code]** attività.
+1. Collegate l&#39;attività **[!UICONTROL Wait]** all&#39;attività **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
@@ -183,7 +183,7 @@ La scelta del contenuto di distribuzione destinato alla popolazione rimanente vi
 
 ### Esempio di script {#example-of-a-script}
 
-Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting. For more on this, refer to [Implementation](#implementation).
+Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting. Per ulteriori informazioni, vedere [Implementazione](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -233,12 +233,12 @@ Per una spiegazione dettagliata dello script, fare riferimento a [Dettagli dello
 
 ### Implementazione {#implementation}
 
-1. Aprite l&#39; **[!UICONTROL JavaScript code]** attività.
-1. Copiare lo script offerto in [Esempio di script](#example-of-a-script) nella **[!UICONTROL JavaScript code]** finestra.
+1. Aprite l&#39;attività **[!UICONTROL JavaScript code]**.
+1. Copiare lo script offerto in [Esempio di script](#example-of-a-script) nella finestra **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. Nel **[!UICONTROL Label]** campo, immettere il nome dello script, ovvero
+1. Nel campo **[!UICONTROL Label]**, immettere il nome dello script, ovvero
 
    ```
    <%= vars.deliveryId %>
@@ -246,14 +246,14 @@ Per una spiegazione dettagliata dello script, fare riferimento a [Dettagli dello
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Chiudete l&#39; **[!UICONTROL JavaScript code]** attività.
+1. Chiudere l&#39;attività **[!UICONTROL JavaScript code]**.
 1. Salva il flusso di lavoro.
 
 ### Dettagli dello script {#details-of-the-script}
 
 In questa sezione vengono descritte le varie parti dello script e la relativa modalità operativa.
 
-* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create eseguendo il flusso di lavoro di targeting e di ordinarle in base al tasso stimato di apertura, quindi le informazioni dalla consegna con il tasso più alto di aperture vengono recuperate.
+* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create mediante l&#39;esecuzione del flusso di lavoro di targeting e di ordinarle in base al tasso stimato di apertura, quindi le informazioni relative alla consegna con il tasso più alto di aperture vengono recuperate.
 
    ```
    // query the database to find the winner (best open rate)
@@ -282,7 +282,7 @@ In questa sezione vengono descritte le varie parti dello script e la relativa mo
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* L&#39;etichetta della consegna duplicata viene modificata e vi viene aggiunta la parola **finale** .
+* L&#39;etichetta della consegna duplicata viene modificata e vi viene aggiunta la parola **final**.
 
    ```
    // append 'final' to the delivery label
@@ -336,18 +336,18 @@ L&#39;esempio precedente consente di selezionare il contenuto di una consegna in
 
 Una volta creato lo script per selezionare il vincitore del test A/B, è possibile definire i parametri del recapito finale.
 
-1. Collegate l&#39; **[!UICONTROL JavaScript code]** attività all&#39; **[!UICONTROL Delivery]** attività rimanente.
-1. Aprite l&#39; **[!UICONTROL Delivery]** attività.
-1. Deselezionate l&#39; **[!UICONTROL Generate an outbound transition]** opzione per completare il flusso di lavoro con questa attività.
+1. Collegare l&#39;attività **[!UICONTROL JavaScript code]** all&#39;attività **[!UICONTROL Delivery]** rimanente.
+1. Aprite l&#39;attività **[!UICONTROL Delivery]**.
+1. Deselezionate l&#39;opzione **[!UICONTROL Generate an outbound transition]** per completare il flusso di lavoro con questa attività.
 1. Lasciate le altre opzioni ai valori predefiniti.
 
    ![](assets/ab_test_final_delivery.png)
 
-Preparando la consegna specificata nella transizione (definita tramite l&#39; **[!UICONTROL Javascript Code]** attività), potrai quindi approvarla e avviare l&#39;invio, come descritto nel passaggio successivo.
+Preparando la consegna specificata nella transizione (definita tramite l&#39;attività **[!UICONTROL Javascript Code]**), potrai quindi approvarla e avviare l&#39;invio, come descritto nel passaggio successivo.
 
 ## Passaggio 7: Avvio del flusso di lavoro {#step-7--starting-the-workflow}
 
-1. Fate clic **[!UICONTROL Start]** sul flusso di lavoro.
+1. Fare clic su **[!UICONTROL Start]** il flusso di lavoro.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
@@ -365,11 +365,11 @@ Preparando la consegna specificata nella transizione (definita tramite l&#39; **
 
 Una volta inviate le consegne di test, potete verificare a quali destinatari sono stati inviati e se sono stati aperti o meno.
 
-* Per scoprire quali destinatari sono stati assegnati, aprite un invio tramite il dashboard della campagna e fate clic sulla **[!UICONTROL Delivery]** scheda.
+* Per scoprire quali destinatari sono stati assegnati, apri una consegna tramite il dashboard della campagna e fai clic sulla scheda **[!UICONTROL Delivery]**.
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
-* Per verificare se la consegna è stata aperta, andate alla **[!UICONTROL Tracking]** scheda.
+* Per verificare se la consegna è stata aperta, andate alla scheda **[!UICONTROL Tracking]**.
 
    ![](assets/use_case_abtesting_analysis_002.png)
 
