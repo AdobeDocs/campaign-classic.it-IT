@@ -17,15 +17,15 @@ ht-degree: 8%
 
 # Celle{#cells}
 
-L&#39; **[!UICONTROL Cells]** attività fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Facilita la manipolazione di sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
+L&#39;attività **[!UICONTROL Cells]** fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Facilita la manipolazione di sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
 
 ![](assets/wf_split_cells.png)
 
-Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell&#39;utente. Per impostazione predefinita, il dettaglio di ciascun sottoinsieme è dettagliato in una finestra dedicata tramite le **[!UICONTROL Selection]** e **[!UICONTROL Advanced]** le schede. Nell&#39;esempio seguente, il modulo è stato modificato: è stata aggiunta una **[!UICONTROL Data]** scheda per abilitare l&#39;associazione di un&#39;offerta e un livello di priorità per ciascun sottoinsieme.
+Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell&#39;utente. Per impostazione predefinita, il dettaglio di ciascun sottoinsieme è dettagliato in una finestra dedicata tramite le schede **[!UICONTROL Selection]** e **[!UICONTROL Advanced]**. Nell&#39;esempio seguente, il modulo è stato modificato: è stata aggiunta una scheda **[!UICONTROL Data]** per abilitare l&#39;associazione di un&#39;offerta e un livello di priorità per ciascun sottoinsieme.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Per questa configurazione, al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** nodo della struttura di Adobe Campaign ) sono state aggiunte le seguenti informazioni:
+Per questa configurazione, al modulo del flusso di lavoro (nel nodo **[!UICONTROL Administration > Configurations > Input forms]** della struttura  Adobe Campaign) sono state aggiunte le seguenti informazioni:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
