@@ -21,13 +21,13 @@ ht-degree: 5%
 
 Sono disponibili i seguenti tipi di report:
 
-* Report sull&#39;intera piattaforma, consultate Report [globali](../../reporting/using/global-reports.md).
-* Rapporti sulla consegna, vedi [Rapporti](../../reporting/using/delivery-reports.md)sulla consegna.
-* Rapporti cumulati, consultate Rapporti [cumulativi](../../reporting/using/cumulative-reports.md).
+* Report sull&#39;intera piattaforma, consultate [Report globali](../../reporting/using/global-reports.md).
+* Rapporti sulla distribuzione, vedere [Rapporti sulla consegna](../../reporting/using/delivery-reports.md).
+* Rapporti cumulati, vedere [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
 
-Potete accedere ai rapporti dalla home page della console client, dal dashboard dei report o dall&#39;elenco di distribuzione. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L&#39;elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle vostre esigenze. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) .
+Potete accedere ai rapporti dalla home page della console client, dal dashboard dei report o dall&#39;elenco di distribuzione. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L&#39;elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle vostre esigenze. Per ulteriori informazioni, fare riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-## Utilizzo dei rapporti {#using-reports}
+## Utilizzo dei report {#using-reports}
 
 Un campo di ricerca è disponibile tramite il dashboard dei report per accedere rapidamente a uno dei report presenti nell&#39;elenco.
 
@@ -49,4 +49,4 @@ Puoi:
 >
 >Alcuni rapporti presentano grafici (curve, barre, funnel, ecc.). Sposta il cursore su un grafico per visualizzarne i valori.
 
-For more information on these options, refer to [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Per ulteriori informazioni su queste opzioni, consultare [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
