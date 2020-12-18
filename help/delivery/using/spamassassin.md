@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## SpamAssassin {#about-spamassassin}
 
- Adobe Campaign può essere configurato per lavorare con [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per filtrare gli spam via e-mail. Questo consente di segnare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
+ Adobe Campaign può essere configurato per l&#39;utilizzo di [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per il filtraggio dello spam via e-mail. Questo consente di segnare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
 SpamAssassin sfrutta una serie di tecniche di rilevamento dello spam, tra cui:
 
@@ -39,7 +39,7 @@ SpamAssassin sfrutta una serie di tecniche di rilevamento dello spam, tra cui:
 
 Dopo aver creato la consegna e-mail e definito il contenuto, effettuate le operazioni seguenti per valutare i rischi.
 
-Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md).
+Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consultare [questa sezione](../../delivery/using/about-email-channel.md).
 
 1. Vai alla scheda **[!UICONTROL Preview]**. 
 1. Seleziona un destinatario per visualizzare l&#39;anteprima della consegna.
@@ -54,12 +54,12 @@ Per ulteriori informazioni sulla creazione e la progettazione di una consegna, c
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Fate clic sul **[!UICONTROL More...]** collegamento accanto all’avviso.
+1. Fare clic sul collegamento **[!UICONTROL More...]** accanto all&#39;avviso.
 1. Seleziona la scheda **[!UICONTROL Anti-spam checking]**.
-1. Andate alla **[!UICONTROL Points / Rule / Description]** sezione per visualizzare i motivi di questo rischio.
+1. Andate alla sezione **[!UICONTROL Points / Rule / Description]** per vedere i motivi di questo rischio.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Ogni volta che si fa clic sul **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per il rilevamento anti-spam. Prima di eseguire nuovamente l&#39;analisi anti-spam, verificate di aver modificato il contenuto.
+>Ogni volta che si fa clic sul **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per il rilevamento di spam. Prima di eseguire nuovamente l&#39;analisi anti-spam, verificate di aver modificato il contenuto.
