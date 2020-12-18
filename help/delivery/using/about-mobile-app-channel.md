@@ -19,13 +19,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Questo documento descrive in dettaglio il processo di integrazione dell’applicazione mobile con la piattaforma Adobe Campaign . Non fornisce informazioni su come creare l’applicazione mobile o su come configurarla per la gestione delle notifiche. Per maggiori informazioni, consulta la [documentazione](https://developer.apple.com/) ufficiale Apple e la [documentazione](https://developer.android.com/index.html)Android.
+>Questo documento descrive in dettaglio il processo di integrazione dell’applicazione mobile con la piattaforma Adobe Campaign . Non fornisce informazioni su come creare l’applicazione mobile o su come configurarla per la gestione delle notifiche. Per ulteriori informazioni, fare riferimento alla documentazione ufficiale di Apple [](https://developer.apple.com/) e Android [documentation](https://developer.android.com/index.html).
 
 Le sezioni seguenti forniscono informazioni specifiche per il canale dell&#39;app mobile.
 
-Per informazioni globali su come creare una consegna, consulta[questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Per informazioni globali su come creare una consegna, fare riferimento a [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-Canale **app** mobile consente di utilizzare la piattaforma Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Sono disponibili due canali di consegna:
+**Mobile App Channel** consente di utilizzare la piattaforma Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Sono disponibili due canali di consegna:
 
 * Canale iOS che consente di inviare notifiche ai dispositivi mobili Apple.
 
@@ -54,9 +54,9 @@ Potete definire il comportamento dell&#39;applicazione quando l&#39;utente attiv
 >* Avviso: in alcuni paesi, la legge prevede che gli utenti siano informati del tipo di dati che utilizzano le applicazioni mobili e dello scopo della loro elaborazione. Devi controllare la legislazione.
 
 
-Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le sottoscrizioni di notifica sui dispositivi mobili. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le notifiche di annullamento delle sottoscrizioni sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, fare riferimento alla [Guida ai flussi di lavoro](../../workflow/using/mobile-app-channel.md).
 
- Adobe Campaign è compatibile con APN binari e HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta [Configurazione di un’applicazione mobile nella sezione  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+ Adobe Campaign è compatibile con APN binari e HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consultare la sezione [Configurazione di un&#39;applicazione mobile  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Percorso dati {#data-path}
 
