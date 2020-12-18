@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Selezione di una mappatura target{#selecting-a-target-mapping}
 
-Per impostazione predefinita, target dei modelli di consegna **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza pertanto i campi della tabella **nms:Recipient** .  Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle esigenze.
+Per impostazione predefinita, i modelli di consegna sono **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza pertanto i campi della tabella **nms:Recipient**.  Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle esigenze.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -35,4 +35,4 @@ Le mappature sono le seguenti:
 
 >[!NOTE]
 >
->Potete anche creare nuove mappature di destinazione. Questa operazione è riservata agli utenti esperti. For more information, refer to the [Configuration guide](../../configuration/using/target-mapping.md).
+>Potete anche creare nuove mappature di destinazione. Questa operazione è riservata agli utenti esperti. Per ulteriori informazioni, fare riferimento alla [Guida alla configurazione](../../configuration/using/target-mapping.md).
