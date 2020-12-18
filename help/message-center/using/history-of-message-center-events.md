@@ -17,12 +17,12 @@ ht-degree: 11%
 
 # Cronologia degli eventi del Centro messaggi{#history-of-message-center-events}
 
-Il **[!UICONTROL History of Message Center events]** rapporto fornisce una panoramica dell&#39;attività del Centro messaggi, ovvero il numero di eventi elaborati e consegnati come messaggi transazionali.
+Il rapporto **[!UICONTROL History of Message Center events]** fornisce una panoramica dell&#39;attività del Centro messaggi, ovvero il numero di eventi elaborati e consegnati come messaggi transazionali.
 
 Quando il rapporto viene aperto, le informazioni visualizzate per impostazione predefinita coincidono con la frequenza dei messaggi transazionali inviati correttamente. Per visualizzare più livelli, potete aprire i vari nodi e posizionare il cursore sul livello appropriato per selezionarli.
 
 ![](assets/messagecenter_reporting_001.png)
 
-È possibile visualizzare i dati specifici per ciascun tipo di evento, per periodo di tempo. La **[!UICONTROL Events]** colonna corrisponde al numero di eventi ricevuti per istanza di controllo. Il numero di eventi trasformati in messaggi transazionali personalizzati è riportato in dettaglio nella **[!UICONTROL Sent]** colonna.
+È possibile visualizzare i dati specifici per ciascun tipo di evento, per periodo di tempo. La colonna **[!UICONTROL Events]** corrisponde al numero di eventi ricevuti per istanza di controllo. Il numero di eventi trasformati in messaggi transazionali personalizzati è riportato in dettaglio nella colonna **[!UICONTROL Sent]**.
 
-Il **[!UICONTROL History of Message Center events]** rapporto è un rapporto di tipo tabella pivot. For more on this, refer to the [Analyzing populations](../../reporting/using/about-descriptive-analysis.md) section.
+Il rapporto **[!UICONTROL History of Message Center events]** è un rapporto di tipo tabella pivot. Per ulteriori informazioni, consultare la sezione [Analisi delle popolazioni](../../reporting/using/about-descriptive-analysis.md).
