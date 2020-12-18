@@ -19,13 +19,13 @@ ht-degree: 4%
 
 In qualità di cliente ospitato, la maggior parte dei passaggi di installazione e configurazione sono eseguiti da  Adobe. Potete accedere alle seguenti sezioni per personalizzare l’implementazione:
 
-* Configura i messaggi transazionali: fare riferimento [a questa sezione](../../message-center/using/transactional-messaging-architecture.md).
-* Configurare gli URL di tracciamento e pagina mirror per marchio. Per i messaggi transazionali, fare riferimento [a questa sezione](../../message-center/using/configuring-multibranding.md).
-* Installare la console client: fare riferimento [a questa sezione](../../installation/using/installing-the-client-console.md).
-* Installare pacchetti incorporati: fare riferimento [a questa sezione](../../installation/using/installing-campaign-standard-packages.md).
-* Trasparenza: configurare regole [](../../installation/using/email-deliverability.md#mx-configuration) MX e formati [di](../../installation/using/email-deliverability.md#managing-email-formats)posta elettronica. Scopri di più sugli strumenti di recapito e sulle best practice leggendo la guida [introduttiva e la documentazione](../../delivery/using/deliverability-key-points.md) [](../../delivery/using/about-deliverability.md)dettagliata.
-* Configurare le opzioni della campagna: fare riferimento [a questa sezione](../../installation/using/configuring-campaign-options.md).
-* Configurare un database esterno (Federated Data Access): fare riferimento [a questa sezione](../../installation/using/about-fda.md).
-* Configurazione dei connettori CRM: fare riferimento [a questa sezione](../../platform/using/crm-connectors.md).
-* Per ulteriori informazioni sui principi di distribuzione mid-sourcing, consulta [questa sezione](../../installation/using/mid-sourcing-deployment.md).
+* Configura i messaggi transazionali: fare riferimento a [in questa sezione](../../message-center/using/transactional-messaging-architecture.md).
+* Configurare gli URL di tracciamento e pagina mirror per marchio. Per i messaggi transazionali, fare riferimento a [in questa sezione](../../message-center/using/configuring-multibranding.md).
+* Installare la console client: fare riferimento a [in questa sezione](../../installation/using/installing-the-client-console.md).
+* Installare pacchetti incorporati: fare riferimento a [in questa sezione](../../installation/using/installing-campaign-standard-packages.md).
+* Trasparenza: configurare i formati [MX rules](../../installation/using/email-deliverability.md#mx-configuration) e [email](../../installation/using/email-deliverability.md#managing-email-formats). Per saperne di più sugli strumenti di recapito e sulle procedure ottimali, consulta la [guida introduttiva](../../delivery/using/deliverability-key-points.md) e la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
+* Configurare le opzioni della campagna: fare riferimento a [in questa sezione](../../installation/using/configuring-campaign-options.md).
+* Configurare un database esterno (Federated Data Access): fare riferimento a [in questa sezione](../../installation/using/about-fda.md).
+* Configurazione dei connettori CRM: fare riferimento a [in questa sezione](../../platform/using/crm-connectors.md).
+* Per ulteriori informazioni sui principi di distribuzione mid-sourcing, fare riferimento a [in questa sezione](../../installation/using/mid-sourcing-deployment.md).
 
