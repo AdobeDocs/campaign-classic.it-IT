@@ -23,7 +23,7 @@ Se un utente finale rinuncia al tracciamento del comportamento tramite cookie o 
 
 >[!NOTE]
 >
->Quando gli script seguono sempre le linee guida descritte nell&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Quando gli script seguono sempre le linee guida descritte nell&#39; [elenco di controllo Sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
@@ -35,7 +35,7 @@ Per essere visualizzato all&#39;interno di applicazioni Web o pagine di destinaz
 >
 >Per creare un banner personalizzato, dovete personalizzare il banner out-of-the-box.
 
-Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Fare riferimento alla sezione [Progettazione di un&#39;applicazione](../../web/using/designing-a-web-application.md) Web.
+Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Fare riferimento alla sezione [Progettazione di un&#39;applicazione Web](../../web/using/designing-a-web-application.md).
 
 Se il tracciamento Web è attivato, potete disporre di:
 
@@ -64,7 +64,7 @@ Il banner predefinito ha la struttura seguente:
       
 ```
 
-È necessario sostituire il messaggio **Inserire qui** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
+È necessario sostituire il **Inserire qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
 
 Il banner viene distribuito con un CSS specifico. Tuttavia, potete sovrascrivere gli stili durante la creazione e la configurazione di una pagina Web. Consulta [questa pagina](../../web/using/content-editor-interface.md).
 
