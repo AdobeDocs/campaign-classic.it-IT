@@ -23,17 +23,17 @@ Per ciascuna di queste versioni,  Adobe Campaign viene fornito con un pacchetto:
 
 I comandi di installazione consentono di:
 
-* Copiare i file in **/user/local/neolane**
-* Creare un account Adobe Campaign Linux  (e il gruppo associato), creato con **/usr/local/neolane** come directory principale
+* Copiare i file in **/usr/local/neolane**
+* Create un account Adobe Campaign Linux  (e il gruppo associato), creato con **/usr/local/neolane** come directory principale
 * Create uno script automatico **/etc/init.d/nlserver6** da utilizzare all&#39;avvio oppure create un&#39;unità di sistema (a partire dalla versione 20.1).
 
 >[!NOTE]
 >
->L&#39;utente del sistema **neolano** non deve essere stato creato prima dell&#39;esecuzione del comando. L&#39;utente **neolane** viene creato automaticamente durante l&#39;installazione.
+>L&#39;utente di sistema **neolane** non deve essere stato creato prima dell&#39;esecuzione del comando. L&#39;utente **neolane** viene creato automaticamente durante l&#39;installazione.
 >
->Viene creata automaticamente anche la directory **principale** collegata all&#39;utente del **neolane** in **[!UICONTROL /usr/local/neolane]**. Verificare che lo spazio sul **[!UICONTROL /usr/local]** disco sia sufficiente (diversi GB).
+>Anche la directory **home** collegata all&#39;utente **neolane** viene creata automaticamente in **[!UICONTROL /usr/local/neolane]**. Verificare che lo spazio disponibile sul disco **[!UICONTROL /usr/local]** (diversi GB) sia sufficiente.
 
-È possibile eseguire il **comando ping`hostname`** per essere certi che il server possa raggiungere se stesso.
+È possibile eseguire il comando **ping`hostname`** per essere certi che il server possa raggiungere se stesso.
 
 ## Distribuzione in base ai pacchetti RPM {#distribution-based-on-rpm--packages}
 
@@ -43,14 +43,14 @@ Per installare  Adobe Campaign su un sistema operativo RPM (RHEL, CentOS e SUSE)
 
    Il file è denominato come di seguito, dove **XXXX** è il numero  di build Adobe Campaign:
 
-   * **nlserver6-v7-XXXX-0.x86_64.rpm** per v7.
-   * **nlserver6-XXXX-0.x86_64.rpm** per v6.1.
+   * **nlserver6-v7-XXXX-0.x86_64.** rpmper v7.
+   * **nlserver6-XXXX-0.x86_64.** rpmfor v6.1.
 
    >[!CAUTION]
    >
    >Accertatevi di utilizzare il nome file corretto per la versione di  Adobe Campaign negli esempi di comando di questa sezione.
 
-1. Per installarlo, collegatevi come **root** ed eseguite il seguente comando (dove **XXXX** è il numero di build Adobe Campaign ):
+1. Per installarlo, collegarsi come **root** ed eseguire il comando seguente (dove **XXXX** è il numero  di build Adobe Campaign):
 
    ```
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
@@ -62,7 +62,7 @@ Per installare  Adobe Campaign su un sistema operativo RPM (RHEL, CentOS e SUSE)
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-Il comando &#39;bc&#39;, necessario per eseguire il netreport (fare riferimento a [questa sezione](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) per ulteriori informazioni), non è disponibile per impostazione predefinita in tutte le distribuzioni Linux. Per verificare se il comando è disponibile, eseguite il comando &#39;quale bc&#39;. In caso contrario, è necessario installarlo.
+Il comando &#39;bc&#39;, necessario per l&#39;esecuzione del netreport (fare riferimento a [questa sezione](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) per ulteriori informazioni), non è disponibile per impostazione predefinita in tutte le distribuzioni Linux. Per verificare se il comando è disponibile, eseguite il comando &#39;quale bc&#39;. In caso contrario, è necessario installarlo.
 
 Con CentOS, è necessario installare il pacchetto bc.x86_64: collegarsi come **root** ed eseguire il comando seguente:
 
@@ -78,16 +78,16 @@ Per installare  Adobe Campaign a 64 bit su un sistema operativo Debian a 64 bit,
 
 1. Dovete innanzitutto ottenere il pacchetto Adobe Campaign .
 
-   * **nlserver6-v7-XXXX-linux-2.6-amd64.deb** per v7.
-   * **nlserver6-XXXX-linux-2.6-amd64.deb** per v6.1.
+   * **nlserver6-v7-XXXX-linux-2.6-amd64.** debfor v7.
+   * **nlserver6-XXXX-linux-2.6-amd64.** debfor v6.1.
 
-   **XXXX** è il numero  di build Adobe Campaign.
+   **** XXXX è il numero  di build Adobe Campaign.
 
    >[!CAUTION]
    >
    >Accertatevi di utilizzare il nome file corretto per la versione di  Adobe Campaign negli esempi di comando di questa sezione.
 
-1. Per installarlo, collegatevi come **root** ed eseguite il seguente comando (dove **XXXX** è il numero di build Adobe Campaign ):
+1. Per installarlo, collegarsi come **root** ed eseguire il comando seguente (dove **XXXX** è il numero  di build Adobe Campaign):
 
    ```
    dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
@@ -132,7 +132,7 @@ Quando installate  Adobe Campaign su un sistema operativo Debian 8/9, considerat
 
 Alcuni parametri possono essere personalizzati tramite il file **customer.sh**
 
-Se si esegue l&#39;installazione per la prima volta, il file **customer.sh** potrebbe non esistere ancora sul server. Createla e accertatevi che disponga dei diritti di esecuzione. In caso contrario, digitate il comando seguente:
+Se si esegue l&#39;installazione per la prima volta, il file **customer.sh** potrebbe non essere ancora presente sul server. Createla e accertatevi che disponga dei diritti di esecuzione. In caso contrario, digitate il comando seguente:
 
 ```
 chmod +x /usr/local/neolane/nl6/customer.sh
@@ -146,7 +146,7 @@ Per impostazione predefinita, il server viene avviato in un ambiente iso8859-15.
 >
 >Questa modifica interessa le interazioni con il file system (file caricati tramite un flusso di lavoro o uno script JavaScript) e la codifica dei file. Si consiglia pertanto di utilizzare l&#39;ambiente predefinito.
 
-Tuttavia, per creare un&#39;istanza **** giapponese, è necessario utilizzare un ambiente UTF-8.
+Tuttavia, per creare un&#39;istanza **giapponese**, è necessario utilizzare un ambiente UTF-8.
 
 Per abilitare l&#39;ambiente UTF-8, utilizzare il comando seguente:
 
@@ -178,9 +178,9 @@ Per garantire la corretta lettura dei messaggi di sistema, le console devono tro
 
 Le seguenti variabili di ambiente devono essere definite correttamente.
 
-Alcune combinazioni richiedono modifiche all&#39;ambiente utilizzato per eseguire  Adobe Campaign. È possibile creare e modificare un file (`/usr/local/neolane/nl6/customer.sh`) specifico per aggiungere modifiche specifiche all&#39;ambiente Adobe Campaign .
+Alcune combinazioni richiedono modifiche all&#39;ambiente utilizzato per eseguire  Adobe Campaign. È possibile creare e modificare un file specifico (`/usr/local/neolane/nl6/customer.sh`) per aggiungere modifiche specifiche all&#39;ambiente Adobe Campaign .
 
-Se necessario, modificate il file **customer.sh** utilizzando il comando **vi customer.sh** e adattate la configurazione o aggiungete le righe mancanti:
+Se necessario, modificare il file **customer.sh** utilizzando il comando **vi customer.sh** e adattare la configurazione o aggiungere righe mancanti:
 
 * Per il client Oracle :
 
@@ -192,7 +192,7 @@ Se necessario, modificate il file **customer.sh** utilizzando il comando **vi cu
 
    Il contenuto della variabile di ambiente  ORACLE_HOME corrisponde alla directory di installazione  Oracle.
 
-   Il contenuto della variabile TNS_ADMIN deve corrispondere alla posizione del file **tnsnames.ora** .
+   Il contenuto della variabile TNS_ADMIN deve corrispondere alla posizione del file **tnsnames.ora**.
 
 * Per LibreOffice:
 
@@ -220,7 +220,7 @@ Se necessario, modificate il file **customer.sh** utilizzando il comando **vi cu
 
 * Per Java Development Kit (JDK):
 
-   Per impostazione predefinita, lo script di configurazione dell&#39;ambiente Adobe Campaign  (`~/nl6/env.sh`) cerca la directory di installazione JDK. Poiché questo comportamento non è affidabile al 100%, è necessario specificare quale JDK deve essere utilizzato. A questo scopo, potete applicare la variabile di ambiente **JDK_HOME** utilizzando il seguente comando:
+   Per impostazione predefinita, lo script di configurazione dell&#39;ambiente Adobe Campaign  (`~/nl6/env.sh`) cerca la directory di installazione JDK. Poiché questo comportamento non è affidabile al 100%, è necessario specificare quale JDK deve essere utilizzato. A tal fine, è possibile forzare la variabile di ambiente **JDK_HOME** utilizzando il seguente comando:
 
    ```
    export JDK_HOME=/usr/java/jdk1.6.0_07
@@ -252,7 +252,7 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-###  Oracle Client in Linux {#oracle-client-in-linux}
+###  client Oracle in Linux {#oracle-client-in-linux}
 
 Quando si utilizza  Oracle con  Adobe Campaign, è necessario configurare i livelli client  Oracle in Linux.
 
@@ -270,7 +270,7 @@ Quando si utilizza  Oracle con  Adobe Campaign, è necessario configurare i live
 
 * Variabili di ambiente
 
-   Fare riferimento a Variabili [di](../../installation/using/installing-packages-with-linux.md#environment-variables)ambiente.
+   Fare riferimento a [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 * Configurazione per  Adobe Campaign
 
@@ -283,7 +283,7 @@ Quando si utilizza  Oracle con  Adobe Campaign, è necessario configurare i live
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Se si verifica un problema, accertatevi che i pacchetti elencati nella documentazione [di installazione di Oracle](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) siano correttamente installati.
+In caso di problemi, accertatevi che i pacchetti elencati nella [ documentazione di installazione Oracle](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) siano installati correttamente.
 
 ## Controlli di installazione {#installation-checks}
 
@@ -320,9 +320,9 @@ Vengono quindi visualizzate le informazioni seguenti:
 17:11:08 >   Web server stop(pid=17546, tid=-151316352)...
 ```
 
-Questi comandi consentono di creare file di configurazione **config-default.xml** e **serverConf.xml** . Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+Questi comandi consentono di creare file di configurazione **config-default.xml** e **serverConf.xml**. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
-Premere **Ctrl+C** per interrompere il processo, quindi digitare il comando seguente:
+Premere **Ctrl+C** per arrestare il processo, quindi immettere il comando seguente:
 
 ```
 nlserver start web
@@ -355,8 +355,8 @@ Vengono quindi visualizzate le informazioni seguenti:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Password per l’identificatore interno {#password-for-the-internal-identifier}
+## Password per l&#39;identificatore interno {#password-for-the-internal-identifier}
 
-Il server Adobe Campaign  definisce un login tecnico denominato **interno** che dispone di tutti i diritti in tutte le istanze. Subito dopo l&#39;installazione, il login non dispone di una password. È obbligatorio definirne una.
+Il server Adobe Campaign  definisce un login tecnico denominato **internal** che dispone di tutti i diritti in tutte le istanze. Subito dopo l&#39;installazione, il login non dispone di una password. È obbligatorio definirne una.
 
-Vedere sezione Identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
+Vedere la sezione [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
