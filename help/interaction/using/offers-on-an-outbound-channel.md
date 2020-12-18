@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Offerte su un canale in uscita{#offers-on-an-outbound-channel}
 
-## Consegna offerta e-mail {#email-offer-delivery}
+## Invio offerta e-mail {#email-offer-delivery}
 
 Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Africa. L&#39;idoneità, i contesti e le rappresentazioni di ciascuna offerta sono stati configurati. Ora vogliamo creare una campagna per presentare le nostre offerte via e-mail.
 
@@ -25,7 +25,7 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Modificate la consegna e-mail e fate clic sull’ **[!UICONTROL Offers]** icona .
+1. Modificate la consegna e fate clic sull&#39;icona **[!UICONTROL Offers]**.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -53,18 +53,18 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Fate clic **[!UICONTROL Preview]** per visualizzare l&#39;anteprima delle offerte nella distribuzione, quindi selezionate un destinatario per visualizzare l&#39;anteprima delle offerte man mano che le riceveranno.
+1. Fate clic su **[!UICONTROL Preview]** per visualizzare l&#39;anteprima delle offerte, quindi selezionate un destinatario per visualizzare l&#39;anteprima delle offerte così come verranno ricevute.
 
    ![](assets/offer_delivery_example_009.png)
 
 1. Salvate la consegna e avviate il flusso di lavoro di targeting.
-1. Aprite la consegna e fate clic sulla **[!UICONTROL Audit]** scheda della consegna: potete vedere che il motore delle offerte ha selezionato le proposte da creare dalle varie offerte del catalogo.
+1. Aprite la consegna e fate clic sulla scheda **[!UICONTROL Audit]** della consegna: potete vedere che il motore delle offerte ha selezionato le proposte da creare dalle varie offerte del catalogo.
 
    ![](assets/offer_delivery_example_010.png)
 
-## Eseguire una simulazione di offerte {#perform-an-offer-simulation}
+## Eseguire una simulazione di offerta {#perform-an-offer-simulation}
 
-1. Nell&#39; **[!UICONTROL Profiles and Targets]** universo, fare clic sul **[!UICONTROL Simulations]** collegamento, quindi fare clic sul **[!UICONTROL Create]** pulsante.
+1. Nell&#39;universo **[!UICONTROL Profiles and Targets]** fare clic sul collegamento **[!UICONTROL Simulations]**, quindi fare clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
@@ -76,7 +76,7 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_simulation_example_003.png)
 
-1. Fare clic sulla **[!UICONTROL Edit]** scheda, quindi **[!UICONTROL Scope]**.
+1. Fare clic sulla scheda **[!UICONTROL Edit]**, quindi **[!UICONTROL Scope]**.
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -91,7 +91,7 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 1. Immettere le date di validità. È necessario immettere almeno una data di inizio. Questo consente al filtro del motore delle offerte di scegliere le offerte valide in una data specificata.
 1. Se necessario, specificate uno o più temi per limitare il numero di offerte a quelli che contengono questa parola chiave nelle relative impostazioni.
 
-   Nel nostro esempio, la categoria **Viaggi** contiene due sottocategorie con due temi separati. Vogliamo eseguire una simulazione per le offerte con il tema **Customers>1 anno** .
+   Nel nostro esempio, la categoria **Travel** contiene due sottocategorie con due temi separati. Vogliamo eseguire una simulazione per le offerte con il tema **Customers>1 year**.
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -105,17 +105,17 @@ Nel nostro database c&#39;è una categoria di offerte di viaggio per l&#39;Afric
 
    ![](assets/offer_simulation_example_009.png)
 
-1. Salvate le impostazioni, quindi fate clic **[!UICONTROL Start]** nella **[!UICONTROL Dashboard]** scheda per eseguire la simulazione.
+1. Salvate le impostazioni, quindi fate clic su **[!UICONTROL Start]** nella scheda **[!UICONTROL Dashboard]** per eseguire la simulazione.
 
    ![](assets/offer_simulation_example_010.png)
 
-1. Una volta terminata la simulazione, consultate **[!UICONTROL Results]** per una dettagliata suddivisione delle proposte per offerta.
+1. Una volta terminata la simulazione, consultate la sezione **[!UICONTROL Results]** per una descrizione dettagliata delle proposte per offerta.
 
    Nel nostro esempio, il motore delle offerte ha basato la suddivisione dell&#39;offerta su 3 proposte.
 
    ![](assets/offer_simulation_example_011.png)
 
-1. Visualizza l&#39;elenco **[!UICONTROL Breakdown of offers by rank]** delle offerte selezionate dal motore delle offerte.
+1. Visualizza la **[!UICONTROL Breakdown of offers by rank]** per visualizzare l&#39;elenco delle offerte selezionate dal motore delle offerte.
 
    ![](assets/offer_simulation_example_012.png)
 
