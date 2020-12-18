@@ -30,11 +30,11 @@ Verificare che la configurazione iniziale  piattaforma Adobe Campaign sia ancora
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Guida](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html) al dimensionamento di Adobe Campaign Harware.
+>Per ulteriori informazioni, fare riferimento a [ Guida alle dimensioni di Adobe Campaign Harware](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
 ## Configurazione della piattaforma {#platform-configuration}
 
-Una configurazione non appropriata potrebbe influire sulle prestazioni della piattaforma. È consigliabile controllare la configurazione di rete, le opzioni di recapito della piattaforma e la configurazione MTA nel file **serverConf.xml** .
+Una configurazione non appropriata potrebbe influire sulle prestazioni della piattaforma. È consigliabile controllare la configurazione di rete, le opzioni di recapito della piattaforma e la configurazione MTA nel file **serverConf.xml**.
 
 ## Manutenzione del database {#database-maintenance}
 
@@ -62,7 +62,7 @@ Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano un
 
 * interrompere o eliminare le consegne con i seguenti stati: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** o **[!UICONTROL Paused]** .
 * interrompere o eliminare flussi di lavoro in pausa a causa di un errore,
-* arresta tutti i flussi di lavoro utilizzati per i test che non contengono un&#39; **[!UICONTROL End]** attività e il cui stato rimane pertanto **[!UICONTROL Paused]** .
+* arresta tutti i flussi di lavoro utilizzati per i test che non contengono un&#39;attività **[!UICONTROL End]** e il cui stato rimane quindi **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -72,10 +72,10 @@ Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano un
 
 A seconda  impostazioni di installazione di Adobe Campaign, è possibile utilizzare due strumenti per il monitoraggio della piattaforma:
 
-* la pagina di produzione dell&#39;istanza. For more on this, refer to [Manual monitoring](../../production/using/monitoring-processes.md#manual-monitoring).
-* lo script netreport. Per ulteriori informazioni, vedere Monitoraggio [automatico tramite  script](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)Adobe Campaign.
+* la pagina di produzione dell&#39;istanza. Per ulteriori informazioni, consultare [Monitoraggio manuale](../../production/using/monitoring-processes.md#manual-monitoring).
+* lo script netreport. Per ulteriori informazioni, vedere [Monitoraggio automatico tramite  script Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
-## Specifics {#specifics}
+## Specifiche {#specifics}
 
 Potrebbe essere necessario eseguire una diagnosi in tempo reale per identificare la causa del problema. Per iniziare, controllate i file di registro di processo e piattaforma, quindi controllate l&#39;attività del database durante la ricreazione del problema. Prestare particolare attenzione ai seguenti elementi:
 
