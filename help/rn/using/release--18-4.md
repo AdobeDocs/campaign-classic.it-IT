@@ -53,12 +53,12 @@ ht-degree: 7%
 * I registri di archiviazione delle e-mail sono stati migliorati, il che rende più semplice e chiaro verificare quali e-mail sono state distribuite correttamente o hanno avuto esito negativo attraverso l&#39;archiviazione CCN. (NEO-10675)
 * È stato risolto un problema che causava la visualizzazione degli IP del sistema di bilanciamento del carico al posto degli IP dei clienti nei log di monitoraggio. (NEO-11295)
 * È stato corretto un errore con codifica LATIN1 quando si utilizzava una connessione FDA a un database PostgreSQL. (NEO-11299)
-* È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;opzione di **[!UICONTROL Prepare the personalization data with a workflow]** consegna. (NEO-11047, NEO-11301)
+* È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;opzione di consegna **[!UICONTROL Prepare the personalization data with a workflow]**. (NEO-11047, NEO-11301)
 * È stato risolto un problema casuale che causava la sovrascrittura errata delle proprietà di una consegna. (NEO-11015)
-* È stato risolto un problema che si verificava durante l&#39;utilizzo di campi calcolati in un&#39;attività di **[!UICONTROL Survey answers]** flusso di lavoro. (NEO-11382)
-* È stato risolto un problema che si verificava durante l&#39;utilizzo dei dati memorizzati in XML in un&#39;attività di **[!UICONTROL Survey answers]** workflow. (NEO-10816)
+* È stato risolto un problema che si verificava durante l&#39;utilizzo di campi calcolati in un&#39;attività del flusso di lavoro **[!UICONTROL Survey answers]**. (NEO-11382)
+* È stato risolto un problema che si verificava durante l&#39;utilizzo dei dati memorizzati in XML in un&#39;attività del flusso di lavoro **[!UICONTROL Survey answers]**. (NEO-10816)
 * È stato risolto un problema durante l&#39;esecuzione dell&#39;aggiornamento del server con build 8935.
-* È stato risolto un problema che causava errori inutili nel registro post-aggiornamento quando un&#39;attività del **[!UICONTROL Survey answers]** flusso di lavoro non era completamente configurata.
+* È stato risolto un problema che causava errori inutili nel registro post-aggiornamento quando un&#39;attività del flusso di lavoro **[!UICONTROL Survey answers]** non era completamente configurata.
 * FDA Teradata: è stato risolto un problema relativo ai campi e agli indici con incremento automatico nelle tabelle SQL.
 
 ## Versione 18.4.3 - Build 8935{#release-18-4-3-build-8935}
@@ -71,7 +71,7 @@ ht-degree: 7%
 * È stato risolto un problema con la personalizzazione dei collegamenti immagine nelle consegne LINE. (NEO-11077)
 * È stato risolto un problema che impediva il corretto funzionamento del meccanismo di generazione della sequenza ID. (NEO-11115)
 * È stato risolto un problema che impediva il funzionamento delle richieste di privacy (GDPR) quando si utilizzava uno spazio dei nomi personalizzato con una chiave di riconciliazione del tipo intero. (NEO-11123)
-* È stato corretto un errore che poteva verificarsi quando si utilizzava l&#39; **[!UICONTROL Distribution of values]** opzione nelle attività del **[!UICONTROL Query]** flusso di lavoro. (NEO-10958)
+* È stato corretto un errore che poteva verificarsi quando si utilizzava l&#39;opzione **[!UICONTROL Distribution of values]** nelle attività del flusso di lavoro **[!UICONTROL Query]**. (NEO-10958)
 * È stato risolto un problema che si verificava durante la sincronizzazione degli spazi di offerta dall&#39;istanza di marketing all&#39;istanza di interazione. (NEO-11162)
 * Miglioramento della gestione degli indici dei nomi lunghi durante il post-aggiornamento
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 **Miglioramenti**
 
 * È stato risolto un problema che impediva il corretto funzionamento dell&#39;aggiornamento di Windows Server.
-* È stato risolto un problema nell&#39; **[!UICONTROL Survey Result]** attività quando si utilizzavano i dati memorizzati in XML. Il rapporto veniva visualizzato in modo non corretto. (NEO-10816)
+* È stato risolto un problema nell&#39;attività **[!UICONTROL Survey Result]** quando si utilizzano i dati memorizzati in XML. Il rapporto veniva visualizzato in modo non corretto. (NEO-10816)
 * È stato risolto un problema di prestazioni che poteva verificarsi con il processo inMail quando si utilizzava un server di posta indesiderata. (NEO-10641)
 * È stato risolto un problema di aggiornamento del database che poteva verificarsi quando si aggiornavano più di 1000 schemi.
 
@@ -101,7 +101,7 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> EU General Data Protection Regulation (GDPR)<br /> </td> 
+   <td> Regolamento generale UE sulla protezione dei dati (GDPR)<br /> </td> 
    <td> <p>Il GDPR è la nuova legge dell’Unione europea sulla privacy che armonizza e aggiorna i requisiti di protezione dei dati in vigore dal 25 maggio 2018. Il GDPR si applica ai clienti di Adobe Campaign che conservano dati per soggetti che risiedono nell’Unione europea.</p> <p>Oltre alle funzionalità per la privacy già disponibili in  Adobe Campaign (compresa la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), stiamo sfruttando questa opportunità in qualità di processore dati per includere funzionalità aggiuntive, al fine di facilitare la tua disponibilità in qualità di Titolare dei Dati per determinate richieste GDPR:</p> 
     <ul> 
      <li> <p>Diritto di accesso: consente all'Oggetto dati di ricevere una copia dei propri dati personali acquisiti dai Controllori dati, che possono includere dati memorizzati in  Adobe Campaign.</p> </li> 
@@ -129,7 +129,7 @@ ht-degree: 7%
 **Miglioramenti**
 
 * **Canale LINE - Miglioramento** dell&#39;architettura: Come per tutti gli altri canali in  Adobe Campaign, il canale LINE ora è supportato in tutti i tipi di distribuzione: ospitato, ibrido e locale.
-* **Generazione** automatica della sequenza: Il meccanismo di generazione ID è stato migliorato per aumentare la durata delle istanze di Campaign con grandi volumi di oggetti. For more information, refer to this [technote](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
+* **Generazione** automatica della sequenza: Il meccanismo di generazione ID è stato migliorato per aumentare la durata delle istanze di Campaign con grandi volumi di oggetti. Per ulteriori informazioni, fare riferimento a questa [nota tecnica](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
 
 **Altre modifiche**
 
@@ -141,10 +141,10 @@ ht-degree: 7%
 * Sono state applicate restrizioni di accesso alla chiamata SOAP della procedura guidata di distribuzione (xtk:serverOptions#SaveOptions).
 * La libreria obsoleta weka.jar è stata rimossa e la libreria OpenSSL è stata aggiornata per l&#39;ottimizzazione della sicurezza.
 * È stato migliorato il flusso di lavoro tecnico di fatturazione per proteggere le prestazioni delle istanze.
-* È stata ripristinata la possibilità per gli amministratori di impostare o reimpostare la password di qualsiasi operatore. A questo scopo, fare clic con il pulsante destro del mouse su un operatore, selezionare **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** e impostare la nuova password dell&#39;operatore. È consigliabile che gli operatori cambino la password al primo riconnessione. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../production/using/lost-password.md).
+* È stata ripristinata la possibilità per gli amministratori di impostare o reimpostare la password di qualsiasi operatore. A tal fine, fare clic con il pulsante destro del mouse su un operatore, selezionare **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** e impostare la nuova password dell&#39;operatore. È consigliabile che gli operatori cambino la password al primo riconnessione. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../production/using/lost-password.md).
 * Per supportare la nuova funzione di multitenanza in  Adobe Target, ora è possibile aggiungere un nuovo parametro &quot;at_property&quot; agli URL quando si configurano le opzioni e gli account esterni per l&#39;integrazione con Target. Il valore da utilizzare per questo parametro può essere trovato in  Adobe Target e verrà utilizzato da Campaign per eseguire chiamate a Target. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../integrations/using/inserting-a-dynamic-image.md).
 * È ora possibile specificare una pagina di destinazione predefinita da aprire quando si fa clic su un&#39;immagine trasmessa da  Adobe Target. In precedenza, facendo clic su tale immagine si passava al set di immagini predefinito al momento della creazione del messaggio e-mail. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../integrations/using/inserting-a-dynamic-image.md).
-* Aggiunta della casella **Abilita tracce** SMPP nell&#39;account esterno per forzare l&#39;output delle tracce. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Aggiunta la casella di controllo **Abilita tracce SMPP** nell&#39;account esterno per forzare l&#39;output delle tracce. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
 **Evoluzioni tecniche**
 
@@ -185,7 +185,7 @@ La funzione JavaScript &#39;urlEncode&#39; non funzionava correttamente per i ca
 
 Importazione pacchetto - nuova modalità
 
-È disponibile una nuova modalità per l&#39;importazione di pacchetti utilizzando la riga di comando, che consente dipendenze circolari (non consigliato per i pacchetti di grandi dimensioni). La funzionalità esistente viene mantenuta. Per tali pacchetti con dipendenze circolari, all&#39;importazione del pacchetto della riga di comando è stato aggiunto un nuovo flag **-usejs** . Una volta eseguito, utilizzerà il motore JSEngine come quando l&#39;importazione del pacchetto viene eseguita dall&#39;interfaccia.
+È disponibile una nuova modalità per l&#39;importazione di pacchetti utilizzando la riga di comando, che consente dipendenze circolari (non consigliato per i pacchetti di grandi dimensioni). La funzionalità esistente viene mantenuta. Per tali pacchetti con dipendenze circolari, all&#39;importazione del pacchetto della riga di comando è stato aggiunto un nuovo flag **-usejs**. Una volta eseguito, utilizzerà il motore JSEngine come quando l&#39;importazione del pacchetto viene eseguita dall&#39;interfaccia.
 
 ```
 nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
@@ -196,14 +196,14 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * È stato risolto un problema di sincronizzazione durante la replica dei registri di consegna e tracciamento da  Adobe Campaign Standard ad Adobe Campaign Classic. (NEO-10023)
 * È stato risolto un problema relativo alla gestione delle tabelle Error e Log in Teradata quando un flusso di lavoro ETL veniva ripreso dopo un errore in un&#39;operazione di caricamento rapida. Le tabelle Errore e Registro ora vengono eliminate correttamente ogni volta che il flusso di lavoro riprende. (NEO-10672)
 * È stato risolto un problema di postaggiornamento per installare automaticamente il pacchetto Hive (necessario per Hadoop) se è installato il pacchetto FDA. (NEO-10592)
-* Risolto un errore che trattava domini non validi come errore **Non definito** . (NEO-10248)
+* È stato risolto un errore che trattava i domini non validi come un errore **Non definito**. (NEO-10248)
 * È stato risolto un problema che causava la duplicazione dei registri nella tabella deliveryLogStats durante l&#39;invio delle consegne push android. (NEO-10234)
 * È stato risolto un problema che poteva impedire la lettura di alcuni formati di codici a barre da parte degli scanner di codici a barre. (NEO-10125)
 * È stato risolto un problema relativo alla funzione JavaScript &#39;urlEncode&#39; quando si utilizzano caratteri non ASCII. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot;. (NEO-10123)
 * È stato risolto un problema durante l&#39;esecuzione di una query che includeva le funzioni sha256 nei database Teradata. (NEO-10119)
 * Correzione degli errori di memoria del flusso di lavoro che possono verificarsi nell&#39;attività SalesForce quando si utilizzano tabelle SalesForce molto grandi. (NEO-9900)
-* È stato risolto un problema con l&#39;opzione **Genera complemento** nelle attività del flusso di lavoro di targeting quando si utilizza FDA. (NEO-9878)
-* È stato risolto un problema che poteva causare l&#39;aggiornamento delle metriche **Elaborato** e **Successo** nell&#39;istanza di marketing quando si utilizzava il mid-sourcing. (NEO-9454)
+* È stato risolto un problema relativo all&#39;opzione **Genera complemento** nel targeting delle attività del flusso di lavoro quando si utilizza FDA. (NEO-9878)
+* È stato risolto un problema che poteva causare l&#39;assenza dell&#39;aggiornamento delle metriche **Processed** e **Success** nell&#39;istanza di marketing quando si utilizza il mid-sourcing. (NEO-9454)
 * Corrette le regole di non riproposta di interazione quando più di 10k offerte in totale nella piattaforma (NEO-9352)
 * È stato risolto un problema che poteva impedire di specificare la destinazione di una consegna quando si utilizzava un file XML esterno. (NEO-9312)
 * È stato risolto un problema che poteva causare errori di flusso di lavoro durante l&#39;esecuzione di un&#39;ipotesi su un&#39;offerta e l&#39;aggiornamento dello stato della proposta. (NEO-9304)
