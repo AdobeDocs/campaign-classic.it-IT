@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Troubleshooting the ACS Connector{#troubleshooting-the-acs-connector}
+# Risoluzione dei problemi relativi al connettore ACS{#troubleshooting-the-acs-connector}
 
 A seconda dell’implementazione, potete affrontare diversi problemi comuni.
 
@@ -32,8 +32,8 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
  </thead> 
  <tbody> 
   <tr> 
-   <td> destinatari (o qualsiasi altra dimensione di profilo)<br /> </td> 
-   <td> profiles<br /> </td> 
+   <td> destinatari (o qualsiasi altra dimensione del profilo)<br /> </td> 
+   <td> profile<br /> </td> 
   </tr> 
   <tr> 
    <td> list<br /> </td> 
@@ -41,23 +41,23 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
   </tr> 
   <tr> 
    <td> flussi di lavoro campagna, flussi di lavoro di targeting<br /> </td> 
-   <td> workflows<br /> </td> 
+   <td> workflow<br /> </td> 
   </tr> 
   <tr> 
-   <td> operazioni<br /> </td> 
-   <td> campaigns<br /> </td> 
+   <td> operations<br /> </td> 
+   <td> campagne<br /> </td> 
   </tr> 
   <tr> 
-   <td> web applications<br /> </td> 
-   <td> landing pages<br /> </td> 
+   <td> applicazioni Web<br /> </td> 
+   <td> pagine di destinazione<br /> </td> 
   </tr> 
   <tr> 
    <td> estensione personalizzata tabella e schema<br /> </td> 
-   <td> estensione di risorse personalizzate<br /> </td> 
+   <td> estensione risorse personalizzate<br /> </td> 
   </tr> 
   <tr> 
-   <td> sementi<br /> </td> 
-   <td> test profiles<br /> </td> 
+   <td> seed members<br /> </td> 
+   <td> profili di prova<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,27 +78,27 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
 
    Inoltre, tutti i dati associati ai destinatari e memorizzati nelle tabelle correlate a nms:Recipients non sono sincronizzati per impostazione predefinita con Campaign Standard.
 
-   Per poter ancora utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato nella sezione [Sincronizzazione dei tipi di pubblico](../../integrations/using/synchronizing-audiences.md) , oppure consultare il tuo consulente per esplorare le possibilità di personalizzazione.
+   Per poter ancora utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato nella sezione [Sincronizzazione dei tipi di pubblico](../../integrations/using/synchronizing-audiences.md), oppure consultare il tuo consulente per esplorare le possibilità di personalizzazione.
 
 * **Sto utilizzando un&#39;altra dimensione di profilo rispetto a quella predefinita di nms:destinatario in Campaign v7, come posso sincronizzarle con il Campaign Standard?**
 
-   Campaign Standard utilizza una risorsa di targeting univoca denominata **profili**. L&#39;implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili Campaign Standard.
+   Campaign Standard utilizza una risorsa di targeting univoca denominata **profile**. L&#39;implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili Campaign Standard.
 
    Se utilizzi un’altra dimensione di profilo in Campaign v7 o se ne utilizzi più, questi devono essere mappati con profili Campaign Standard. Per rispondere a questa particolare esigenza, fare riferimento al proprio consulente.
 
 * **Voglio condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro, ma non riesco a trovare il pubblico in Campaign Standard**.
 
-   Le audience si trovano nel **[!UICONTROL Audiences]** menu in Campaign Standard. Hanno l&#39;etichetta specificata nell&#39; **[!UICONTROL List update]** attività nel flusso di lavoro di Campaign v7. Sono soggetti alla mappatura delle cartelle definita durante l’implementazione.
+   Le audience si trovano nel menu **[!UICONTROL Audiences]** in Campaign Standard. Hanno l&#39;etichetta specificata nell&#39;attività **[!UICONTROL List update]** nel flusso di lavoro di Campaign v7. Sono soggetti alla mappatura delle cartelle definita durante l’implementazione.
 
-   La prima cosa da verificare è se il flusso di lavoro è terminato senza errori. Se notate un errore nell&#39; **[!UICONTROL List update]** attività, significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare maggiori dettagli su cosa è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene i flussi di lavoro di sincronizzazione attivati dall&#39;esecuzione dell&#39; **[!UICONTROL List update]** attività.
+   La prima cosa da verificare è se il flusso di lavoro è terminato senza errori. Se si nota un errore sull&#39;attività **[!UICONTROL List update]**, significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare maggiori dettagli su cosa è andato storto, andare a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene i flussi di lavoro di sincronizzazione attivati dall&#39;esecuzione dell&#39;attività **[!UICONTROL List update]**.
 
-   Inoltre, accertatevi che l&#39; **[!UICONTROL Share with ACS]** opzione sia selezionata nell&#39; **[!UICONTROL List update]** attività e che il flusso di lavoro sia stato eseguito correttamente.
+   Inoltre, accertatevi che l&#39;opzione **[!UICONTROL Share with ACS]** sia selezionata nell&#39;attività **[!UICONTROL List update]** e che il flusso di lavoro sia stato eseguito correttamente.
 
    I profili dei destinatari contenuti nell&#39;elenco devono essere stati sincronizzati con i Campaign Standard prima dell&#39;esecuzione del flusso di lavoro. Una volta condiviso con l&#39;Campaign Standard, i destinatari dell&#39;elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere. I destinatari dell&#39;elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
 
    Se condividete un elenco composto da profili e non ne viene sincronizzato nessuno con il Campaign Standard, viene creata un&#39;audience Query vuota nel Campaign Standard che non può essere utilizzata.
 
-* **Ho ricevuto una notifica in cui si informa che un flusso di lavoro di sincronizzazione è in stato di errore. Cosa dovrei fare?**
+* **Ho ricevuto una notifica in cui si informa che un flusso di lavoro di sincronizzazione è in stato di errore. Cosa devo fare?**
 
    Verifica la configurazione dell’account esterno sia in Campaign Standard che in Campaign v7 verificando la connessione:
 
