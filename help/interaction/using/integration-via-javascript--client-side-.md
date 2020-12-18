@@ -51,7 +51,8 @@ I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazio
 
    La pagina HTML deve includere un
 
-   con un attributo @id con il valore del nome interno dello spazio delle offerte creato (&quot;spazio dei nomi i_internal&quot;). L&#39;offerta verrà inserita in questo elemento tramite Interazione.
+   con un attributo @id con il valore del nome interno dello spazio delle offerte creato (&quot;spazio dei nomi i_internal&quot;). L&#39;offerta verrà inserita in questo
+per interazione.
 
    Nel nostro esempio, l&#39;attributo @id riceve il valore &quot;i_SPC12&quot;, dove &quot;SPC12&quot; è il nome interno dello spazio delle offerte creato in precedenza:
 
@@ -67,7 +68,7 @@ I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazio
 
    >[!IMPORTANT]
    >
-   >Il `<script>` tag non deve chiudersi automaticamente.
+   >Il tag `<script>` non deve chiudersi automaticamente.
 
    Questa chiamata statica genererà automaticamente una chiamata dinamica contenente tutti i parametri richiesti dal motore di interazione.
 
@@ -101,7 +102,7 @@ I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazio
 
 ### Presentazione di un&#39;offerta identificata {#presenting-an-identified-offer}
 
-Per presentare un&#39;offerta a un contatto identificato, il processo è simile a quello descritto qui: [Presentazione di un&#39;offerta](#presenting-an-anonymous-offer)anonima. Nel contenuto della pagina Web, è necessario aggiungere il seguente script che identificherà il contatto durante la chiamata al motore:
+Per presentare un&#39;offerta a un contatto identificato, il processo è simile a quello descritto qui: [Presentazione di un&#39;offerta anonima](#presenting-an-anonymous-offer). Nel contenuto della pagina Web, è necessario aggiungere il seguente script che identificherà il contatto durante la chiamata al motore:
 
 ```
 <script type="text/javascript">
@@ -129,9 +130,9 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
 
 Per generare automaticamente la rappresentazione dell&#39;offerta HTML, potete utilizzare una funzione di rendering.
 
-1. Andate nello spazio delle offerte e fate clic sul **[!UICONTROL Edit functions]** collegamento.
+1. Andate nello spazio delle offerte e fate clic sul collegamento **[!UICONTROL Edit functions]**.
 1. Seleziona **[!UICONTROL Overload the HTML rendering function]**.
-1. Andate alla **[!UICONTROL HTML rendering]** scheda e inserite le variabili che corrispondono ai campi definiti per il contenuto dell&#39;offerta nello spazio dell&#39;offerta.
+1. Andate alla scheda **[!UICONTROL HTML rendering]** e inserite le variabili che corrispondono ai campi definiti per il contenuto dell&#39;offerta nello spazio dell&#39;offerta.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -153,13 +154,13 @@ Il parametro &quot;**env**&quot; riceve il nome interno dell&#39;ambiente live.
 
 Il parametro &quot;**cb**&quot; riceve il nome della funzione che leggerà il nodo XML restituito dal motore contenente le proposizioni (callback). Questo parametro è facoltativo.
 
-Il parametro &quot;**t**&quot; riceve il valore del target, solo per un&#39;interazione identificata. Questo parametro può essere trasmesso anche con la variabile **interactiveTarget** . Questo parametro è facoltativo.
+Il parametro &quot;**t**&quot; riceve il valore della destinazione, solo per un&#39;interazione identificata. Questo parametro può essere trasmesso anche con la variabile **interactiveTarget**. Questo parametro è facoltativo.
 
 Il parametro &quot;**c**&quot; riceve l&#39;elenco dei nomi interni delle categorie. Questo parametro è facoltativo.
 
 Il parametro &quot;**th**&quot; riceve l&#39;elenco dei temi. Questo parametro è facoltativo.
 
-Il parametro &quot;**gctx**&quot; riceve i dati della chiamata globali (contestuali) sull’intera pagina. Questo parametro è facoltativo.
+Il parametro &quot;**gctx**&quot; riceve i dati della chiamata globali (contesto) per l’intera pagina. Questo parametro è facoltativo.
 
 Il nodo XML restituito è simile al seguente:
 
@@ -176,9 +177,9 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
 1. **Creazione di un ambiente e di uno spazio di offerta**
 
-   Per ulteriori informazioni sulla creazione di un ambiente, vedere Ambienti [](../../interaction/using/live-design-environments.md)Live/Design.
+   Per ulteriori informazioni sulla creazione di un ambiente, vedere [Live/Design environment](../../interaction/using/live-design-environments.md).
 
-   Per ulteriori informazioni sulla creazione di uno spazio per le offerte, consultate [Creazione di spazi](../../interaction/using/creating-offer-spaces.md)per le offerte.
+   Per ulteriori informazioni sulla creazione di uno spazio per le offerte, consultate [Creazione di spazi per le offerte](../../interaction/using/creating-offer-spaces.md).
 
 1. **Estensione dello schema delle offerte per aggiungere nuovi campi**
 
@@ -221,7 +222,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
 1. **Estensione della formula dell&#39;offerta per modificare nuovi campi e modificare un campo esistente**
 
-   Modificate il modulo di input **Offer (nsm)** .
+   Modificate il modulo di input **Offer (nsm)**.
 
    Nella sezione &quot;Viste&quot;, inserite i due nuovi campi con il seguente contenuto:
 
@@ -267,7 +268,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
    ![](assets/interaction_xmlmode_form.png)
 
-   I campi **[!UICONTROL Title 2]** e **[!UICONTROL Price]** sono stati aggiunti e il **[!UICONTROL Destination URL]** campo non viene più visualizzato.
+   I campi **[!UICONTROL Title 2]** e **[!UICONTROL Price]** sono stati aggiunti e il campo **[!UICONTROL Destination URL]** non viene più visualizzato.
 
 1. **Creazione di un’offerta**
 
@@ -312,9 +313,9 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
 È possibile utilizzare una funzione di rendering XML per creare una presentazione di offerta. Questa funzione modificherà il nodo XML che viene restituito alla pagina HTML durante la chiamata al motore.
 
-1. Andate nello spazio delle offerte e fate clic sul **[!UICONTROL Edit functions]** collegamento.
+1. Andate nello spazio delle offerte e fate clic sul collegamento **[!UICONTROL Edit functions]**.
 1. Seleziona **[!UICONTROL Overload the XML rendering function]**.
-1. Passare alla **[!UICONTROL XML rendering]** scheda e inserire la funzione desiderata.
+1. Fare clic sulla scheda **[!UICONTROL XML rendering]** e inserire la funzione desiderata.
 
    La funzione può essere simile alla seguente:
 
