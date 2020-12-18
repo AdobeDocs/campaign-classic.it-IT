@@ -24,4 +24,4 @@ ht-degree: 9%
 >Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: il primo contiene il nome e il cognome, le righe successive contengono l&#39;indirizzo postale (strada, ecc.), e l&#39;ultima riga contiene il codice postale ZIP e la città o città.\
 >Un indirizzo è considerato completo se il nome, il campo CAP e i campi città/città non sono vuoti.
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale di posta diretta. Per informazioni globali su come creare e inviare una consegna, consulta[questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale di posta diretta. Per informazioni globali su come creare e inviare una consegna, consultare [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
