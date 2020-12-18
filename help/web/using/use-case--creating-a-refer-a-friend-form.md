@@ -29,13 +29,13 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Il campo **Messaggio** dell&#39;utente può immettere un messaggio per l&#39;oggetto. Il referente deve anche inserire il **Cognome**, il **Nome** e l’ **E-mail**.
+   Il campo **Messaggio** consente di inserire un messaggio per l&#39;oggetto referee. Il referente deve inoltre inserire il proprio **Cognome**, **Nome** e **E-mail**.
 
    Le informazioni inserite nei campi sono memorizzate in una tabella specifica nota come tabella visitatore.
 
    >[!NOTE]
    >
-   >Fintanto che il destinatario non ha dato il proprio consenso, non è possibile archiviarli con i destinatari nel database. Saranno memorizzati temporaneamente nella tabella **visitatore** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene svuotata regolarmente grazie alle operazioni di **pulizia** .
+   >Fintanto che il destinatario non ha dato il proprio consenso, non è possibile archiviarli con i destinatari nel database. Saranno memorizzati temporaneamente nella tabella **visitor** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene eliminata regolarmente grazie alle operazioni di **pulizia**.
    >
    >In questo esempio, desideriamo indirizzare i destinatari affinché suggeriscano loro di partecipare al concorso raccomandato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se dispongono di un’iscrizione, possono essere memorizzati nel database.
 
@@ -65,7 +65,7 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Quindi create il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel **[!UICONTROL Choose scenario]** campo del servizio informazioni.
+1. Quindi create il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel campo **[!UICONTROL Choose scenario]** del servizio informazioni.
 
    Il modello di consegna utilizzato per creare il messaggio di offerta di riferimento contiene le informazioni seguenti:
 
@@ -83,12 +83,12 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
 
    * Questo modello contiene un collegamento al modulo per il concorso e il collegamento per l’iscrizione dell’utente a una newsletter.
 
-      Il collegamento di iscrizione viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, consente di effettuare la sottoscrizione dei profili al servizio **newsletter** . Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un altro servizio.
+      Il collegamento di iscrizione viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, consente di iscriversi al servizio **newsletter**. Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un altro servizio.
 
    * Il nome interno (&#39;referrer&#39; qui) verrà utilizzato nello script di distribuzione dei messaggi come mostrato di seguito.
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui modelli di consegna, consultate [questa pagina](../../delivery/using/about-templates.md) .
+   >Per ulteriori informazioni sui modelli di consegna, fare riferimento a [questa pagina](../../delivery/using/about-templates.md).
 
 1. Create il secondo script per la distribuzione dei messaggi di iscrizione.
 
@@ -117,11 +117,11 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
     </delivery>)
    ```
 
-1. Pubblicate il modulo del concorso e inviate un invito ai destinatari della destinazione iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello di offerta **di** riferimento.
+1. Pubblicate il modulo del concorso e inviate un invito ai destinatari della destinazione iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento**.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   L’oggetto viene aggiunto alla cartella del visitatore nel **[!UICONTROL Administration > Visitors node]**:
+   Il referee viene aggiunto alla cartella del visitatore in **[!UICONTROL Administration > Visitors node]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
