@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Consegna{#delivery}
 
-Un&#39;attività di tipo **Consegna** consente di creare un&#39;azione di consegna. Può essere costruito utilizzando elementi di input.
+Un&#39;attività di tipo **Delivery** consente di creare un&#39;azione di consegna. Può essere costruito utilizzando elementi di input.
 
 Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
@@ -27,7 +27,7 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
    Puoi:
 
-   * Agisci sulla consegna specificata nella transizione in entrata. A questo scopo, selezionare la prima opzione della **[!UICONTROL Delivery]** sezione della finestra.
+   * Agisci sulla consegna specificata nella transizione in entrata. A questo scopo, selezionare la prima opzione della sezione **[!UICONTROL Delivery]** della finestra.
 
       Questa opzione può essere utilizzata quando un&#39;attività di flusso di lavoro precedente ha già creato o specificato la consegna. Questo può essere stato fatto, come nell&#39;esempio seguente, da un&#39;attività dello stesso tipo che ha generato una transizione in uscita.
 
@@ -35,27 +35,27 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
       ![](assets/specified_transition_option_exemple.png)
 
-   * Selezionare direttamente la consegna interessata. A questo scopo, selezionate l&#39; **[!UICONTROL Explicit]** opzione e selezionate la consegna dall&#39;elenco a discesa del **[!UICONTROL Delivery]** campo.
+   * Selezionare direttamente la consegna interessata. A questo scopo, selezionare l&#39;opzione **[!UICONTROL Explicit]** e selezionare il recapito dall&#39;elenco a discesa del campo **[!UICONTROL Delivery]**.
 
-      Per impostazione predefinita, l’elenco mostra le consegne non completate contenute nella cartella **Consegne** . Per accedere ad altre campagne, fai clic sull’ **[!UICONTROL Select link]** icona .
+      L&#39;elenco mostra per impostazione predefinita le consegne non completate contenute nella cartella **Consegne**. Per accedere ad altre campagne, fai clic sull&#39;icona **[!UICONTROL Select link]**.
 
       ![](assets/diffusion_edit_1.png)
 
-      Selezionate la campagna dall&#39;elenco a discesa del **[!UICONTROL Folder]** campo oppure fate clic **[!UICONTROL Display sub-levels]** per visualizzare tutte le consegne contenute nelle sottocartelle:
+      Selezionate la campagna dall&#39;elenco a discesa del campo **[!UICONTROL Folder]** oppure fate clic su **[!UICONTROL Display sub-levels]** per visualizzare tutte le consegne contenute nelle sottocartelle:
 
       ![](assets/diffusion_edit_2.png)
 
-      Dopo aver selezionato l’azione di consegna, potete visualizzare il contenuto facendo clic sull’ **[!UICONTROL Edit link]** icona .
+      Dopo aver selezionato l&#39;azione di consegna, potete visualizzare il contenuto facendo clic sull&#39;icona **[!UICONTROL Edit link]**.
 
-   * Creare uno script per calcolare la consegna. A questo scopo, selezionare l&#39; **[!UICONTROL Computed by a script]** opzione e immettere lo script. Per aprire una finestra di input, fate clic sull’ **[!UICONTROL Edit...]** opzione. L&#39;esempio seguente recupera l&#39;identificatore della consegna:
+   * Creare uno script per calcolare la consegna. A questo scopo, selezionare l&#39;opzione **[!UICONTROL Computed by a script]** e immettere lo script. Per aprire una finestra di input, fare clic sull&#39;opzione **[!UICONTROL Edit...]**. L&#39;esempio seguente recupera l&#39;identificatore della consegna:
 
       ![](assets/diffusion_edit_3.png)
 
-   * Crea una nuova consegna. A questo scopo, selezionate l&#39; **[!UICONTROL New, created from a template]** opzione e il modello di consegna su cui verrà basato il recapito.
+   * Crea una nuova consegna. A questo scopo, selezionate l&#39;opzione **[!UICONTROL New, created from a template]** e selezionate il modello di consegna su cui verrà basato il recapito.
 
       ![](assets/diffusion_edit_4.png)
 
-      Fate clic sull&#39; **[!UICONTROL Select link]** icona per sfogliare le cartelle e fate clic sull&#39; **[!UICONTROL Edit link]** icona se desiderate visualizzare il contenuto del modello selezionato.
+      Fate clic sull&#39;icona **[!UICONTROL Select link]** per sfogliare le cartelle, quindi fate clic sull&#39;icona **[!UICONTROL Edit link]** per visualizzare il contenuto del modello selezionato.
 
 1. **Destinatari**
 
@@ -78,12 +78,12 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
    Selezionare il tipo di azione da eseguire:
 
    * **[!UICONTROL Save]**: questa opzione consente di creare la consegna e salvarla. Non lo analizzerà né lo fornirà.
-   * **[!UICONTROL Estimate the target]**: questa opzione consente di calcolare il target di consegna per valutarne il potenziale (prima fase di analisi). Questa azione equivale a selezionare l&#39; **[!UICONTROL Estimate the population to be targeted]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale tramite **[!UICONTROL Analyze]** Consegna ****.
-   * **[!UICONTROL Prepare]**: questa opzione consente di eseguire l&#39;intero processo di analisi (calcolo di destinazione e preparazione del contenuto). La consegna non viene inviata. Questa azione equivale a selezionare l&#39; **[!UICONTROL Deliver as soon as possible]** opzione e fare clic su quando si invia un&#39;operazione alla destinazione principale con **[!UICONTROL Analyze]** Consegna ****.
-   * **[!UICONTROL Send a proof]**: questa opzione consente di inviare una prova della consegna. Questa azione equivale a fare clic sul **[!UICONTROL Send a proof]** pulsante nella barra degli strumenti di una consegna con **consegna**
-   * **[!UICONTROL Prepare and start]**: questa opzione avvia l’intero processo di analisi (calcolo target e preparazione dei contenuti) e invia la distribuzione. Questa azione equivale a fare clic **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** scegliere quando si invia una consegna alla destinazione principale con **Consegna**.
+   * **[!UICONTROL Estimate the target]**: questa opzione consente di calcolare il target di consegna per valutarne il potenziale (prima fase di analisi). Questa azione equivale a selezionare l&#39;opzione **[!UICONTROL Estimate the population to be targeted]** e fare clic su **[!UICONTROL Analyze]** quando si invia una consegna alla destinazione principale tramite **Consegna**.
+   * **[!UICONTROL Prepare]**: questa opzione consente di eseguire l&#39;intero processo di analisi (calcolo di destinazione e preparazione del contenuto). La consegna non viene inviata. Questa azione equivale a selezionare l&#39;opzione **[!UICONTROL Deliver as soon as possible]** e fare clic su **[!UICONTROL Analyze]** quando si invia una consegna alla destinazione principale con **Consegna**.
+   * **[!UICONTROL Send a proof]**: questa opzione consente di inviare una prova della consegna. Questa azione equivale a fare clic sul pulsante **[!UICONTROL Send a proof]** nella barra degli strumenti di una consegna con **Consegna**
+   * **[!UICONTROL Prepare and start]**: questa opzione avvia l’intero processo di analisi (calcolo target e preparazione dei contenuti) e invia la distribuzione. Questa azione equivale a fare clic sull&#39;opzione **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** quando si invia una consegna alla destinazione principale con **Consegna**.
 
-   L&#39; **[!UICONTROL Act on a delivery]** attività ulteriormente utilizzata nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la distribuzione (calcolo della destinazione, preparazione dei contenuti, distribuzione). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
+   L&#39;attività **[!UICONTROL Act on a delivery]** utilizzata ulteriormente nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la distribuzione (calcolo della destinazione, preparazione dei contenuti, distribuzione). Per ulteriori informazioni, vedere [Controllo consegna](../../workflow/using/delivery-control.md).
 
    Sono inoltre disponibili le seguenti opzioni:
 
@@ -97,7 +97,7 @@ Per configurarlo, modificate l&#39;attività e immettete le opzioni di consegna.
 
    * **[!UICONTROL Processing errors]**
 
-      Fare riferimento al controllo [](../../workflow/using/delivery-control.md)Consegna.
+      Fare riferimento a [Controllo consegna](../../workflow/using/delivery-control.md).
    La scheda **Script** consente di modificare i parametri di consegna.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -108,34 +108,34 @@ Crea un nuovo flusso di lavoro e aggiungi attività come mostrato nell’immagin
 
 ![](assets/new-workflow-5.png)
 
-Aprite l&#39;attività **Consegna** e definite le proprietà come segue:
+Aprite l&#39;attività **Delivery** e definite le proprietà come segue:
 
-* Nella **[!UICONTROL Delivery]** sezione, selezionate **[!UICONTROL New, created from a template]** e selezionate un modello di consegna.
-* In the **[!UICONTROL Recipients]** section, select **[!UICONTROL Specified in the delivery]**.
-* In the **[!UICONTROL Action to execute]** section, keep the **[!UICONTROL Prepare]** option.
+* Nella sezione **[!UICONTROL Delivery]**, selezionare **[!UICONTROL New, created from a template]** e selezionare un modello di consegna.
+* Nella sezione **[!UICONTROL Recipients]**, selezionare **[!UICONTROL Specified in the delivery]**.
+* Nella sezione **[!UICONTROL Action to execute]**, mantenere l&#39;opzione **[!UICONTROL Prepare]**.
 
 ![](assets/new-workflow-param-delivery.png)
 
-Fare clic **[!UICONTROL OK]** per chiudere la finestra delle proprietà. Hai appena configurato un&#39;attività che consiste nella creazione e preparazione di una nuova consegna basata su un modello di consegna il cui target verrà specificato al suo interno.
+Fare clic su **[!UICONTROL OK]** per chiudere la finestra delle proprietà. Hai appena configurato un&#39;attività che consiste nella creazione e preparazione di una nuova consegna basata su un modello di consegna il cui target verrà specificato al suo interno.
 
-Aprite l&#39;attività **Approvazione** e definite le proprietà come segue:
+Aprite l&#39;attività **Approval** e definite le proprietà come segue:
 
-1. Nel **[!UICONTROL Assignment type]** campo, selezionate un gruppo in cui siete registrati. Se siete connessi utilizzando l&#39;account &#39;admin&#39;, selezionate il gruppo Amministrazione.
+1. Nel campo **[!UICONTROL Assignment type]**, selezionate un gruppo in cui siete registrati. Se siete connessi utilizzando l&#39;account &#39;admin&#39;, selezionate il gruppo Amministrazione.
 1. Quindi, immettete un titolo e inserite il testo seguente nel corpo del messaggio:
 
    ```
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: **[!UICONTROL vars.recCount]** rappresenta il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, fare riferimento a script e modelli [](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: **[!UICONTROL vars.recCount]** rappresenta il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, fare riferimento a [script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   L&#39;attività Approvazione è dettagliata in [Approvazione](../../workflow/using/approval.md).
+   L&#39;attività Approvazione è descritta in [Approvazione](../../workflow/using/approval.md).
 
 ## Parametri di input {#input-parameters}
 
-Identificatore di consegna, se l&#39; **[!UICONTROL Specified in the transition]** opzione è selezionata nella **[!UICONTROL Delivery]** sezione.
+Identificatore di consegna, se l&#39;opzione **[!UICONTROL Specified in the transition]** è selezionata nella sezione **[!UICONTROL Delivery]**.
 
 * deliveryId
 * tableName
@@ -145,15 +145,15 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 
 >[!NOTE]
 >
->Questo parametro viene visualizzato solo se l&#39; **[!UICONTROL Specified by inbound event(s)]** opzione è selezionata nella **[!UICONTROL Recipients]** sezione.
+>Questo parametro viene visualizzato solo se l&#39;opzione **[!UICONTROL Specified by inbound event(s)]** è selezionata nella sezione **[!UICONTROL Recipients]**.
 
 * nomefile
 
-   Nome completo del file generato se l&#39; **[!UICONTROL File(s) specified by inbound event(s)]** opzione è selezionata nella **[!UICONTROL Recipients]** sezione.
+   Nome completo del file generato se l&#39;opzione **[!UICONTROL File(s) specified by inbound event(s)]** è selezionata nella sezione **[!UICONTROL Recipients]**.
 
 * contentId
 
-   Identificatore del contenuto se l&#39; **[!UICONTROL Specified by inbound events]** opzione è selezionata nella **[!UICONTROL Content]** sezione.
+   Identificatore di contenuto se l&#39;opzione **[!UICONTROL Specified by inbound events]** è selezionata nella sezione **[!UICONTROL Content]**.
 
 ## Parametri di output {#output-parameters}
 
@@ -161,11 +161,11 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dalla consegna. **[!UICONTROL tableName]** è il nome della tabella che memorizza gli identificatori della destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dalla consegna. **[!UICONTROL tableName]** è il nome della tabella che memorizza gli identificatori della destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
 
 La transizione associata al complemento ha gli stessi parametri.
 
 >[!NOTE]
 >
->Non sono presenti parametri di output quando l&#39; **[!UICONTROL Do not recover target]** opzione è selezionata.
+>Non ci sono parametri di output quando l&#39;opzione **[!UICONTROL Do not recover target]** è selezionata.
 
