@@ -15,7 +15,7 @@ ht-degree: 31%
 ---
 
 
-# About Adobe ID{#about-adobe-id}
+# Informazioni su  Adobe ID{#about-adobe-id}
 
 Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizzando il proprio Adobe ID . Questa integrazione offre i seguenti vantaggi:
 
@@ -24,7 +24,7 @@ Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizza
 * Policy di gestione password più sicure.
 * Utilizzo di account Federated ID (provider di ID esterno).
 
- Adobe  Identity Management System (IMS) consente agli amministratori di creare e gestire l&#39;accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID Adobe, consultate [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
+ Adobe  Identity Management System (IMS) consente agli amministratori di creare e gestire l&#39;accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID Adobe, vedere [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
