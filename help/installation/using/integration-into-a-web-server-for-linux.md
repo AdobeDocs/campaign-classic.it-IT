@@ -52,7 +52,7 @@ Effettuate le seguenti operazioni:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Verificate che i moduli **alias**, **authz_host** e **mime** siano ancora abilitati. A questo scopo, utilizzate il comando seguente:
+   Assicurarsi che i moduli **alias**, **authz_host** e **mime** siano ancora attivati. A questo scopo, utilizzate il comando seguente:
 
    ```
    a2enmod  alias authz_host mime
@@ -78,13 +78,13 @@ Effettuate le seguenti operazioni:
     a2enmod nlsrv
    ```
 
-   Se utilizzate il modulo **mod_rewrite** per  pagine Adobe Campaign, dovete rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, eseguire il comando seguente:
+   Se si utilizza il modulo **mod_rewrite** per  pagine Adobe Campaign, è necessario rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, eseguire il comando seguente:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Modificate il file **/etc/apache2/envars** , aggiungete le seguenti righe:
+1. Modificate il file **/etc/apache2/envars**, aggiungete le seguenti righe:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Questa procedura si applica se avete installato e protetto Apache in un pacchett
 
 Effettuate le seguenti operazioni:
 
-1. Nel `httpd.conf` file, attivate i seguenti moduli Apache:
+1. Nel file `httpd.conf`, attivate i seguenti moduli Apache:
 
    ```
    alias
@@ -152,7 +152,7 @@ Effettuate le seguenti operazioni:
    ForceLanguagePriority
    ```
 
-1. Create un file di configurazione  Adobe Campaign specifico nella `/etc/httpd/conf.d/` cartella. Ad esempio `CampaignApache.conf`
+1. Create un file di configurazione  Adobe Campaign specifico nella cartella `/etc/httpd/conf.d/`. Ad esempio `CampaignApache.conf`
 
 1. Per **RHEL7**, aggiungete le seguenti istruzioni nel file:
 
@@ -163,7 +163,7 @@ Effettuate le seguenti operazioni:
 
 1. Per **RHEL7**:
 
-   Aggiungete il `/etc/systemd/system/httpd.service` file con il contenuto seguente:
+   Aggiungete il file `/etc/systemd/system/httpd.service` con il contenuto seguente:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ Vengono visualizzate le informazioni seguenti:
 Connection closed by foreign host.
 ```
 
-Potete anche richiedere l’URL [`https://<computer>`](https://myserver.adobe.com/r/test) da un browser Web.
+È inoltre possibile richiedere l&#39;URL [`https://<computer>`](https://myserver.adobe.com/r/test) da un browser Web.
