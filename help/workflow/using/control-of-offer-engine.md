@@ -17,7 +17,7 @@ ht-degree: 26%
 
 # Controllo del motore di offerta{#control-of-offer-engine}
 
-Il flusso di lavoro riportato di seguito viene installato con il **controllo del motore di offerta con il modulo di istanza** di esecuzione per impostazione predefinita.
+Il flusso di lavoro riportato di seguito viene installato con il **controllo del motore di offerte con il modulo di esecuzione instance** per impostazione predefinita.
 
 <table> 
  <tbody> 
