@@ -21,7 +21,7 @@ ht-degree: 2%
 
 I contenitori consentono di combinare i campi di una pagina e configurarne il layout; per organizzare gli elementi nella pagina.
 
-Per ciascuna pagina del modulo, i contenitori vengono creati mediante il **[!UICONTROL Containers]** pulsante della barra degli strumenti.
+Per ciascuna pagina del modulo, i contenitori vengono creati mediante il pulsante **[!UICONTROL Containers]** della barra degli strumenti.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -31,7 +31,7 @@ Ad esempio:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-La posizione delle etichette viene applicata agli elementi posizionati sotto il contenitore nella gerarchia. Può essere sovraccaricato per ogni elemento, se necessario. Aggiungete o rimuovete colonne per modificare il layout. Consultate [Posizionamento dei campi sulla pagina](#positioning-the-fields-on-the-page).
+La posizione delle etichette viene applicata agli elementi posizionati sotto il contenitore nella gerarchia. Può essere sovraccaricato per ogni elemento, se necessario. Aggiungete o rimuovete colonne per modificare il layout. Vedere [Posizionamento dei campi sulla pagina](#positioning-the-fields-on-the-page).
 
 Nell&#39;esempio precedente, il rendering sarà il seguente:
 
@@ -41,7 +41,7 @@ Nell&#39;esempio precedente, il rendering sarà il seguente:
 
 Il layout del modulo Web è definito pagina per pagina in ciascun contenitore e può essere sovraccaricato, se necessario.
 
-Le pagine sono suddivise in colonne: ogni pagina contiene un certo numero di colonne. Ogni campo della pagina occupa **una** cella. I contenitori occupano anche un certo numero di colonne e i campi che contengono occupano un certo numero di celle.
+Le pagine sono suddivise in colonne: ogni pagina contiene un certo numero di colonne. Ogni campo della pagina occupa le celle **n**. I contenitori occupano anche un certo numero di colonne e i campi che contengono occupano un certo numero di celle.
 
 Per impostazione predefinita, le pagine sono create su una singola colonna e ogni elemento occupa una cella. Ciò significa che i campi sono visualizzati uno sotto l&#39;altro, ciascuno dei quali occupa un&#39;intera linea, come mostrato di seguito:
 
@@ -69,7 +69,7 @@ Potete modificare la formattazione in ciascun contenitore. Nel nostro esempio, p
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Il titolo e l’elenco occupano una cella ciascuna (e quindi un’intera riga del contenitore) e la casella di controllo si estende su due celle. Il numero di celle attribuito al campo di input è definito nella **[!UICONTROL General]** scheda o nella **[!UICONTROL Advanced]** scheda, in base al tipo di campo:
+Il titolo e l’elenco occupano una cella ciascuna (e quindi un’intera riga del contenitore) e la casella di controllo si estende su due celle. Il numero di celle attribuito al campo di input è definito nella scheda **[!UICONTROL General]** o nella scheda **[!UICONTROL Advanced]**, in base al tipo di campo:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -79,11 +79,11 @@ Il titolo e l’elenco occupano una cella ciascuna (e quindi un’intera riga de
 
 Per impostazione predefinita, i parametri di visualizzazione per i campi e altro contenuto della pagina sono ereditati dalla configurazione generale del modulo, dalla configurazione della pagina o dalla configurazione del contenitore principale, se esistente.
 
-I parametri di visualizzazione globali per l&#39;intero modulo sono specificati nella casella delle proprietà del modulo. La **[!UICONTROL Rendering]** scheda consente di selezionare la posizione delle etichette.
+I parametri di visualizzazione globali per l&#39;intero modulo sono specificati nella casella delle proprietà del modulo. La scheda **[!UICONTROL Rendering]** consente di selezionare la posizione delle etichette.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-Questa posizione può essere sovraccaricata per ogni pagina, contenitore e campo tramite la **[!UICONTROL Advanced]** scheda.
+Questa posizione può essere sovraccaricata per ogni pagina, contenitore e campo, tramite la scheda **[!UICONTROL Advanced]**.
 
 Sono supportati i seguenti allineamenti:
 
