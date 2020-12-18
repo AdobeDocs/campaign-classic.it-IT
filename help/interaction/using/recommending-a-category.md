@@ -22,8 +22,8 @@ Può darsi che un destinatario non sia considerato idoneo per tutte le offerte. 
 Per includere sempre una categoria nelle raccomandazioni, effettuate le seguenti operazioni:
 
 1. Aprite l&#39;elenco di cartelle e fate clic su un catalogo di offerte dalla struttura ad albero.
-1. Fare clic sulla **[!UICONTROL Eligibility]** scheda e selezionare la **[!UICONTROL Always include this category in the recommendations]** casella.
-1. Per terminare e approvare, fai clic su **[!UICONTROL Save]**.
+1. Fare clic sulla scheda **[!UICONTROL Eligibility]** e selezionare la casella **[!UICONTROL Always include this category in the recommendations]**.
+1. Per completare e approvare, fare clic su **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)
 
