@@ -23,8 +23,8 @@ Un catalogo delle offerte fa parte di un unico ambiente, da specificare in antic
 
 La gestione delle offerte viene eseguita tramite una struttura di cartelle nell&#39;Adobe Campaign .
 
-Prima di creare le offerte, dovete specificare un ambiente (consultate Panoramica [](../../interaction/using/environments-overview.md)Ambienti). Conterrà tutte le caratteristiche (idoneità, vincoli sull&#39;obiettivo, regole di presentazione) di un insieme di offerte, suddivise in categorie, nonché l&#39;elenco dei loro spazi.
+Prima di creare le offerte, è necessario specificare innanzitutto un ambiente (vedere [Panoramica sugli ambienti](../../interaction/using/environments-overview.md)). Conterrà tutte le caratteristiche (idoneità, vincoli sull&#39;obiettivo, regole di presentazione) di un insieme di offerte, suddivise in categorie, nonché l&#39;elenco dei loro spazi.
 
 >[!IMPORTANT]
 >
->La creazione del catalogo delle offerte, vale a dire le categorie e le offerte, è responsabilità dell&#39; **[!UICONTROL Offer manager]**.
+>La creazione del catalogo delle offerte, ovvero delle categorie e delle offerte, è responsabilità della **[!UICONTROL Offer manager]**.
