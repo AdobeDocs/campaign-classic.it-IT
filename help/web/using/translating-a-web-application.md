@@ -19,11 +19,11 @@ ht-degree: 5%
 
 È possibile tradurre le pagine dell&#39;applicazione Web create con l&#39;editor di contenuti digitali  Adobe Campaign (DCE).
 
-Se si seleziona almeno una lingua aggiuntiva tramite la **[!UICONTROL Localization]** **[!UICONTROL Properties]** scheda di un&#39;applicazione Web, diventa disponibile una nuova opzione quando si aggiunge un blocco di contenuto HTML in una pagina modificata con DCE.
+Se si seleziona almeno una lingua aggiuntiva tramite la scheda **[!UICONTROL Localization]** di un&#39;applicazione Web, una nuova opzione diventa disponibile quando si aggiunge un blocco di contenuto HTML in una pagina modificata con DCE.**[!UICONTROL Properties]**
 
 Questa opzione consente di indicare se il contenuto del blocco deve essere convertito o meno.
 
-Le stringhe da convertire vengono raccolte nello stesso modo delle altre stringhe dell&#39;applicazione Web, tramite la **[!UICONTROL Translations]** scheda dell&#39;applicazione. Per ulteriori informazioni, consulta [questa pagina](../../web/using/translating-a-web-form.md).
+Le stringhe da convertire vengono raccolte nello stesso modo delle altre stringhe dell&#39;applicazione Web, tramite la scheda **[!UICONTROL Translations]** dell&#39;applicazione. Per ulteriori informazioni, consulta [questa pagina](../../web/using/translating-a-web-form.md).
 
 Per contrassegnare le stringhe da convertire:
 
@@ -32,7 +32,7 @@ Per contrassegnare le stringhe da convertire:
    ![](assets/dce_translation_3.png)
 
 1. Selezionare un blocco HTML.
-1. Nel blocco dei parametri a destra, l&#39; **[!UICONTROL Localization]** opzione consente di contrassegnare il contenuto del blocco selezionato. Per impostazione predefinita, solo il titolo della pagina deve essere convertito.
+1. Nel blocco dei parametri a destra, l&#39;opzione **[!UICONTROL Localization]** consente di contrassegnare il contenuto del blocco selezionato. Per impostazione predefinita, solo il titolo della pagina deve essere convertito.
 
    ![](assets/dce_translation_1.png)
 
@@ -51,7 +51,7 @@ Per contrassegnare le stringhe da convertire:
 
       ![](assets/dce_translation_2.png)
 
-1. Dopo aver contrassegnato le stringhe, tornare all&#39;applicazione Web e selezionare la **[!UICONTROL Translations]** scheda.
+1. Dopo aver contrassegnato le stringhe, tornare all&#39;applicazione Web e selezionare la scheda **[!UICONTROL Translations]**.
 1. Seleziona **[!UICONTROL Collect the strings to translate]**. Le stringhe contrassegnate in DCE vengono aggiunte alle stringhe dell&#39;applicazione Web.
 
    >[!NOTE]
@@ -60,5 +60,5 @@ Per contrassegnare le stringhe da convertire:
 
 1. Traduci e approva le stringhe.
 
-   Potete quindi visualizzare l&#39;anteprima delle traduzioni selezionando la lingua desiderata dalla **[!UICONTROL Preview]** scheda nell&#39;applicazione Web.
+   Potete quindi visualizzare l&#39;anteprima delle traduzioni selezionando la lingua desiderata dalla scheda **[!UICONTROL Preview]** dell&#39;applicazione Web.
 
