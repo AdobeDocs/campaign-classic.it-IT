@@ -23,21 +23,21 @@ Un&#39;unione raggruppa il risultato di diverse attività in entrata in un unico
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività dell&#39;Unione, fare riferimento a [Combinare più obiettivi (Unione)](../../workflow/using/targeting-data.md#combining-several-targets--union-).
+>Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività dell&#39;unione, fare riferimento a [Combining multiple Targeting (Union)](../../workflow/using/targeting-data.md#combining-several-targets--union-).
 
-## Esempio di unione {#union-example}
+## Esempio unione {#union-example}
 
 Nell&#39;esempio seguente, i risultati di due query sono stati combinati per aggiornare l&#39;elenco. Le due query vengono indirizzate ai destinatari. I risultati si basano pertanto sulla stessa tabella.
 
-1. Inserire un&#39;attività **[!UICONTROL Union]** -type subito dopo le due query e prima di un&#39;attività di tipo update dell&#39;elenco, quindi aprirla.
+1. Inserire un&#39;attività di tipo **[!UICONTROL Union]** subito dopo le due query e prima di un&#39;attività di tipo update dell&#39;elenco, quindi aprirla.
 1. È possibile immettere un&#39;etichetta.
-1. Selezionare il metodo di **[!UICONTROL Keys only]** riconciliazione perché, in questo esempio, la popolazione risultante dalle query contiene dati coerenti.
+1. Selezionare il metodo di riconciliazione **[!UICONTROL Keys only]** poiché, in questo esempio, la popolazione risultante dalle query contiene dati coerenti.
 1. Se avete aggiunto dati aggiuntivi per le query, potete decidere di conservare solo i dati condivisi.
-1. If you wish to limit the size of the final population, check the **[!UICONTROL Limit size of generated population]** box.
+1. Se si desidera limitare la dimensione della popolazione finale, selezionare la casella **[!UICONTROL Limit size of generated population]**.
 
    Specificate questo numero finale immettendo il numero massimo di destinatari e selezionando la query di cui la popolazione avrà priorità.
 
-1. Approvare l&#39;attività dell&#39;unione, quindi configurare l&#39;attività di aggiornamento dell&#39;elenco (vedere Aggiornamento [](../../workflow/using/list-update.md)elenco).
+1. Approvare l&#39;attività dell&#39;unione, quindi configurare l&#39;attività di aggiornamento dell&#39;elenco (vedere [Aggiornamento dell&#39;elenco](../../workflow/using/list-update.md)).
 1. Avvia il flusso di lavoro. Il numero di risultati viene visualizzato e l&#39;elenco definito nell&#39;attività di aggiornamento dell&#39;elenco viene creato o aggiornato. Questo elenco contiene l&#39;insieme di destinatari per entrambe le query o, se del caso, il numero definito nel passaggio precedente.
 
    ![](assets/union_example.png)
@@ -55,4 +55,4 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dall&#39;unione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dall&#39;unione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
