@@ -31,7 +31,7 @@ ht-degree: 6%
 
 ![](assets/architectural_options_diagram.png)
 
-## Domande ammissibili {#eligible-applications}
+## Applicazioni idonee {#eligible-applications}
 
 Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguenti applicazioni:
 
@@ -51,9 +51,9 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
   </tr> 
   <tr> 
    <td> Campagne e interazioni via e-mail<br /> </td> 
-   <td> Fino a circa 30 milioni di email al mese<br /> </td> 
+   <td> Fino a circa 30 milioni di e-mail al mese<br /> </td> 
    <td> Da 30 a 100 milioni di email al mese<br /> </td> 
-   <td> Oltre 100 milioni di email al mese<br /> </td> 
+   <td> Oltre 100 milioni di e-mail al mese<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi transazionali<br /> </td> 
@@ -63,15 +63,15 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
   </tr> 
   <tr> 
    <td> Disponibilità<br /> </td> 
-   <td> Quello del database primario<br /> </td> 
-   <td> 24/7 tranne finestre di manutenzione e tempi di inattività per l'istanza di esecuzione<br /> </td> 
-   <td> 24/7/365 possibile<br /> </td> 
+   <td> Quello del database principale<br /> </td> 
+   <td> 24/7 eccetto finestre di manutenzione e tempi di inattività per l'istanza di esecuzione<br /> </td> 
+   <td> 24/7/365 servizio possibile<br /> </td> 
   </tr> 
   <tr> 
-   <td> Sicurezza<br /> </td> 
+   <td> Security<br /> </td> 
    <td> Data mart è potenzialmente accessibile da Internet pubblico<br /> </td> 
-   <td> Data mart è isolato dai componenti frontali rivolti a Internet<br /> </td> 
-   <td> Data mart è isolato dai componenti frontali rivolti a Internet<br /> </td> 
+   <td> Data mart è isolato dai componenti frontali orientati a Internet<br /> </td> 
+   <td> Data mart è isolato dai componenti frontali orientati a Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Modello di distribuzione<br /> </td> 
@@ -84,7 +84,7 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
 
 ## Raccomandazioni {#recommendations}
 
-* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non potete installare un pacchetto per un servizio a cui non avete effettuato la sottoscrizione. Se, ad esempio, vi iscrivete all&#39;opzione **Power Booster** per il servizio **Message Center** , potete installare il **[!UICONTROL Execution of transactional messages]** pacchetto solo nell&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
-* Poiché le istanze dedicate (o cluster) sono  istanze Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. For more on this, refer to [this document](../../production/using/foreword.md).
+* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non potete installare un pacchetto per un servizio a cui non avete effettuato la sottoscrizione. Se, ad esempio, si sottoscrive l&#39;opzione **Power Booster** per il servizio **Message Center**, è possibile installare il pacchetto **[!UICONTROL Execution of transactional messages]** solo nell&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
+* Poiché le istanze dedicate (o cluster) sono  istanze Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. Per ulteriori informazioni, fare riferimento a [questo documento](../../production/using/foreword.md).
 * Per configurare correttamente l&#39;istanza dal punto di vista di un database o componenti hardware, contattare  Adobe Campaign Professional Services.
 
