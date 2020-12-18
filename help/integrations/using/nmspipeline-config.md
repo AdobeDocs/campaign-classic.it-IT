@@ -17,10 +17,10 @@ ht-degree: 2%
 
 # Opzione pipeline NmsPipeline_Config {#nmspipeline_config}
 
-Una volta eseguita l&#39;autenticazione, [!DNL pipelined] è possibile recuperare gli eventi ed elaborarli. Elabora solo attivatori configurati in  Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in anticipo alla pipeline.
+Una volta che l&#39;autenticazione funziona, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo attivatori configurati in  Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in anticipo alla pipeline.
 L&#39;opzione può essere configurata anche con un carattere jolly per intercettare tutti i trigger, indipendentemente dal nome.
 
-La configurazione dei trigger viene effettuata in un&#39;opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell&#39;opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
+La configurazione dei trigger viene eseguita in un&#39;opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell&#39;opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
 
 Questo esempio specifica due attivatori.
 
@@ -67,7 +67,7 @@ Questo secondo esempio intercetta tutti i trigger.
 
 >[!NOTE]
 >
->Il valore [!DNL Trigger] UID associato a un nome di attivatore specifico nell&#39;interfaccia di Analytics si trova come parte dei parametri della query URL nell&#39;interfaccia Triggers. L&#39;UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nella pipeline.JS per mappare l&#39;UID trigger a un&#39;etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
+>Il valore UID [!DNL Trigger] per un nome di attivatore specifico nell&#39;interfaccia di Analytics si trova come parte dei parametri della query URL nell&#39;interfaccia Triggers. L&#39;UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nella pipeline.JS per mappare l&#39;UID trigger a un&#39;etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
 
 ## Il parametro consumer {#consumer-parameter}
 
@@ -78,7 +78,7 @@ Il parametro &quot;consumer&quot; identifica l’istanza come uno di questi cons
 ## Come configurare l&#39;opzione pipeline {#configure-pipeline-option}
 
 Aggiungere o modificare  attivatori di Experience Cloud nell&#39;array &quot;triggers&quot;; non modificare il resto.
-Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito](http://jsonlint.com/).
+Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito Web](http://jsonlint.com/).
 
 * &quot;name&quot; è l&#39;ID attivatore. Un carattere jolly &quot;*&quot; rileva tutti i trigger.
 * &quot;Consumer&quot; è una qualsiasi stringa univoca che identifica in modo univoco l&#39;istanza nlserver. In genere può essere il nome dell&#39;istanza stesso. Per più ambienti (dev/stage/prod), accertatevi che sia univoco per ciascuno di essi in modo che ogni istanza ottenga una copia del messaggio.
