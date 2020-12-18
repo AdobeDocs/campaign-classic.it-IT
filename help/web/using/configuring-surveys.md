@@ -27,6 +27,6 @@ I parametri disponibili sono descritti in [questa sezione](../../web/using/defin
 
 ## Archiviazione dei dati del sondaggio {#survey-data-storage}
 
-Per impostazione predefinita, i campi modulo Web sono memorizzati nella tabella dei destinatari. Per utilizzare un&#39;altra tabella, selezionarla nel **[!UICONTROL Document type]** campo. L&#39; **[!UICONTROL Zoom]** icona consente di visualizzare il contenuto della tabella selezionata.
+Per impostazione predefinita, i campi modulo Web sono memorizzati nella tabella dei destinatari. Per utilizzare un&#39;altra tabella, selezionarla nel campo **[!UICONTROL Document type]**. L&#39;icona **[!UICONTROL Zoom]** consente di visualizzare il contenuto della tabella selezionata.
 
-Le risposte ai sondaggi forniti dagli utenti che non sono memorizzati nei campi (ma nelle variabili locali) sono memorizzate nella tabella **Risposte ai sondaggi** . È possibile modificare lo schema utilizzato in base al **[!UICONTROL Library]** campo. Questo campo è disponibile solo per **i sondaggi**.
+Le risposte ai sondaggi forniti dagli utenti che non sono memorizzati nei campi (ma nelle variabili locali) sono memorizzate nella tabella **Risposte alle indagini**. È possibile modificare lo schema utilizzato in base al campo **[!UICONTROL Library]**. Questo campo è disponibile solo per **sondaggi**.
