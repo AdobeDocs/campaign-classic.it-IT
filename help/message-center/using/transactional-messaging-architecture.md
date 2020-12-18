@@ -42,7 +42,7 @@ Le istanze di esecuzione ricevono gli eventi, li collegano a modelli di messaggi
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione necessaria, vedere [Uso di più istanze](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances)di controllo.
+>Per ulteriori informazioni sulla configurazione necessaria, fare riferimento a [Utilizzo di più istanze di controllo](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
 
 ## Installazione delle istanze {#installing-instances}
 
@@ -52,13 +52,13 @@ Durante l&#39;installazione dei pacchetti di messaggi transazionali è necessari
 >
 >L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
 
-Se devi usare più canali, devi installare e configurare i pacchetti correlati prima di installare i pacchetti di messaggi transazionali. Fare riferimento a [Aggiunta di un canale](#adding-a-delivery-channel)di consegna.
+Se devi usare più canali, devi installare e configurare i pacchetti correlati prima di installare i pacchetti di messaggi transazionali. Fare riferimento a [Aggiunta di un canale di consegna](#adding-a-delivery-channel).
 
-* Per installare l&#39;istanza di controllo sul computer, selezionare il **[!UICONTROL Transactional message control]** modulo.
+* Per installare l&#39;istanza di controllo sul computer, selezionare il modulo **[!UICONTROL Transactional message control]**.
 
    ![](assets/messagecenter_install_controlinstance_001.png)
 
-* Per installare l&#39;istanza di esecuzione sul computer, selezionare il **[!UICONTROL Transactional message execution]** modulo.
+* Per installare l&#39;istanza di esecuzione sul computer, selezionare il modulo **[!UICONTROL Transactional message execution]**.
 
    ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -66,9 +66,9 @@ Se devi usare più canali, devi installare e configurare i pacchetti correlati p
 
 Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) deve essere eseguito prima di installare il pacchetto di messaggi transazionali. Se hai avviato un progetto di messaggistica transazionale sul canale e-mail e poi hai deciso durante il progetto di aggiungere un nuovo canale, devi seguire la procedura seguente:
 
-1. Installa il canale necessario, ad esempio il canale **** Mobile, utilizzando la procedura guidata di importazione dei pacchetti ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
-1. Effettuate un&#39;importazione di file ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) e selezionate il file ****`[Your language]`**datakitnmspackagemessageCenter.xml** .
-1. In **[!UICONTROL XML content of the data to import]** , mantenere solo il modello di consegna che corrisponde al canale aggiunto. Ad esempio, se hai aggiunto il canale **** Mobile, tieni solo l&#39;elemento **entities** che corrisponde al **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto **Mobile App Channel**, mantieni solo il messaggio **transazionale** iOS (iosTriggerMessage) e il messaggio **transazionale** Android (androidTriggerMessage).
+1. Installate il canale necessario, ad esempio il **canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
+1. Effettuate un&#39;importazione di file ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) e selezionate il file **datakitnms **`[Your language]`**packagemessageCenter.xml**.
+1. In **[!UICONTROL XML content of the data to import]**, mantenere solo il modello di consegna che corrisponde al canale aggiunto. Ad esempio, se hai aggiunto il **Canale mobile**, tieni solo l&#39;elemento **entità** che corrisponde al **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **Canale app mobile**, mantieni solo il messaggio transazionale **iOS** (iosTriggerMessage) e il messaggio transazionale **Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -117,14 +117,14 @@ Se combinato con il modulo del canale delle app mobili, i messaggi transazionali
 
 Per utilizzare i moduli di messaggi transazionali con Mobile App Channel, è necessario applicare le seguenti configurazioni:
 
-1. Installa il pacchetto **Mobile App Channel** nelle istanze di controllo ed esecuzione.
-1. Replicare il tipo di applicazione **** Mobile  servizio Adobe Campaign e le applicazioni mobili che contiene sulle istanze di esecuzione.
+1. Installate il pacchetto **Mobile App Channel** nelle istanze di controllo ed esecuzione.
+1. Replicare il tipo di applicazione **Mobile**  servizio Adobe Campaign e le applicazioni mobili che contiene sulle istanze di esecuzione.
 
 L&#39;evento deve contenere i seguenti elementi:
 
-* L’ID del dispositivo mobile (**registrationId** per Android e **deviceToken** per iOS). Questo ID rappresenta l&#39;&quot;indirizzo&quot; a cui verrà inviata la notifica.
+* L&#39;ID del dispositivo mobile (**registrationId** per Android e **deviceToken** per iOS). Questo ID rappresenta l&#39;&quot;indirizzo&quot; a cui verrà inviata la notifica.
 * Il collegamento all&#39;applicazione mobile o alla chiave di integrazione (**uuid**) che consente di recuperare le informazioni di connessione specifiche per l&#39;applicazione.
-* Canale a cui verrà inviata la notifica (**DesiderateChannel**): 41 per iOS e 42 per Android
+* Canale a cui verrà inviata la notifica (**wishChannel**): 41 per iOS e 42 per Android
 * Tutti i dati utili per la personalizzazione
 
 Di seguito è riportato un esempio di evento che contiene le informazioni seguenti:
@@ -158,23 +158,23 @@ Di seguito è riportato un esempio di evento che contiene le informazioni seguen
 
 Insieme al canale LINE, i messaggi transazionali consentono di inviare messaggi in tempo reale sull&#39;app LINE installata nei dispositivi mobili consumer. Viene utilizzato per inviare il messaggio di benvenuto quando un utente LINE aggiunge la pagina del marchio.
 
-Per utilizzare il modulo di messaggi transazionali con LINE, sono necessari i seguenti elementi per la configurazione nell&#39;istanza di **marketing** e nell&#39;istanza di **esecuzione** :
+Per utilizzare il modulo di messaggi transazionali con LINE, sono necessari i seguenti elementi per la configurazione nell&#39;istanza **marketing** e nell&#39;istanza **execute**:
 
-* Installate il **[!UICONTROL LINE Connect]** pacchetto su entrambe le istanze.
-* Installate il **[!UICONTROL Transactional message control]** pacchetto nell&#39;istanza di marketing e il **[!UICONTROL Transactional message execution]** pacchetto nell&#39;istanza di esecuzione.
-* Creare un account **e un** servizio **** esterni LINE su entrambe le istanze con nomi identici per la sincronizzazione. Per ulteriori informazioni su come creare un account e un servizio LINE esterno, fare riferimento a questa [pagina](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Installate il pacchetto **[!UICONTROL LINE Connect]** in entrambe le istanze.
+* Installate il pacchetto **[!UICONTROL Transactional message control]** nell&#39;istanza di marketing e il pacchetto **[!UICONTROL Transactional message execution]** nell&#39;istanza di esecuzione.
+* Creare un account esterno LINE **** e **service** in entrambe le istanze con nomi identici per la sincronizzazione. Per ulteriori informazioni su come creare un account e un servizio LINE esterno, fare riferimento a questa [pagina](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
 
-Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , è necessario configurare account esterni diversi per entrambe le istanze:
+Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , è necessario configurare account esterni diversi in entrambe le istanze:
 
-1. Create un account **[!UICONTROL External database]** esterno nell’istanza di **esecuzione** con la seguente configurazione:
+1. Create un account esterno **[!UICONTROL External database]** nell&#39;istanza **di esecuzione** con la seguente configurazione:
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
-   * **[!UICONTROL Type]** : selezionate **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** e  **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
+   * **[!UICONTROL Type]** : selezionare  **[!UICONTROL External database]** .
    * **[!UICONTROL Enabled]** deve essere selezionata.
 
-   Dalla **[!UICONTROL Connection]** categoria:
+   Dalla categoria **[!UICONTROL Connection]**:
 
    * **[!UICONTROL Type]** : selezionate il server del database, ad esempio PostgresSQL.
    * **[!UICONTROL Server]** : immettete l’URL del server del database.
@@ -189,43 +189,43 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
    * **[!UICONTROL Target of an HTTP relay to remote database's account]** deve essere selezionata.
 
 
-1. Crea un **[!UICONTROL External Database]** account nella tua istanza **di marketing** con la seguente configurazione.
+1. Create un account **[!UICONTROL External Database]** nell&#39;istanza **marketing** con la seguente configurazione.
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
-   * **[!UICONTROL Type]** : selezionate **[!UICONTROL External database]** .
+   * **[!UICONTROL Label]** e  **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
+   * **[!UICONTROL Type]** : selezionare  **[!UICONTROL External database]** .
    * La casella attivata deve essere selezionata.
 
-   Dalla **[!UICONTROL Connection]** categoria:
+   Dalla categoria **[!UICONTROL Connection]**:
 
-   * **[!UICONTROL Type]** : selezionate **[!UICONTROL HTTP relay to remote Database]** .
+   * **[!UICONTROL Type]** : selezionare  **[!UICONTROL HTTP relay to remote Database]** .
    * **[!UICONTROL Server]** : immettete l&#39;URL del server della campagna per l&#39;istanza di esecuzione.
    * **[!UICONTROL Account]** : immettete l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
    * **[!UICONTROL Password]** : immettete la password per l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
-   * **[!UICONTROL Data Source]** : immettete la sintassi seguente **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** : immettere la sintassi seguente  **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
 
-1. Crea un account **[!UICONTROL Execution instance]** esterno nell’istanza di **marketing** utilizzando la seguente configurazione per creare il flusso di lavoro di sincronizzazione dei dati:
+1. Crea un account esterno **[!UICONTROL Execution instance]** nell&#39;istanza **marketing** utilizzando la seguente configurazione per creare il flusso di lavoro di sincronizzazione dei dati:
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** e **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
-   * **[!UICONTROL Type]** : selezionate **[!UICONTROL Execution instance]** .
+   * **[!UICONTROL Label]** e  **[!UICONTROL Internal name]** : assegnate un nome all’account esterno come necessario.
+   * **[!UICONTROL Type]** : selezionare  **[!UICONTROL Execution instance]** .
    * La casella attivata deve essere selezionata.
 
-   Dalla **[!UICONTROL Connection]** categoria:
+   Dalla categoria **[!UICONTROL Connection]**:
 
    * **[!UICONTROL URL]** : immettete l&#39;URL dell&#39;istanza di esecuzione.
    * **[!UICONTROL Account]** : immettete l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
    * **[!UICONTROL Password]** : immettete la password per l&#39;account utilizzato per accedere all&#39;istanza di esecuzione.
 
-   Dalla **[!UICONTROL Account connection method]** categoria:
+   Dalla categoria **[!UICONTROL Account connection method]**:
 
-   * **[!UICONTROL Method]** : selezionate **[!UICONTROL Federated Data Access (FDA)]** .
+   * **[!UICONTROL Method]** : selezionare  **[!UICONTROL Federated Data Access (FDA)]** .
    * **[!UICONTROL FDA account]** : selezionate il vostro account FDA dall&#39;elenco a discesa.
    * Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]**.
-   * Fare clic sul **[!UICONTROL Create data synchronization workflow]** pulsante per creare il flusso di lavoro di sincronizzazione dei dati LINE.
+   * Fare clic sul pulsante **[!UICONTROL Create data synchronization workflow]** per creare il flusso di lavoro di sincronizzazione dati LINE.
 
 
 
