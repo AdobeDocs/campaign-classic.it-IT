@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -66,4 +66,4 @@ Questo video mostra come configurare una consegna continua con una query increme
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
