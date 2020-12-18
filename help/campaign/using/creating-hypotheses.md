@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Esistono varie possibilità per creare/collegare ipotesi a un&#39;offerta o una consegna di campagna:
 
-* Tramite la **[!UICONTROL Measurement hypotheses]** cartella, potete creare una nuova ipotesi basata su un modello esistente e collegarla a una consegna esistente.
+* Tramite la cartella **[!UICONTROL Measurement hypotheses]**, potete creare una nuova ipotesi basata su un modello esistente e collegarla a una consegna esistente.
 * Tramite la scheda **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** in una campagna.
-* Tramite l&#39; **[!UICONTROL Measurement]** opzione di consegna creata da una campagna.
+* Tramite l&#39;opzione **[!UICONTROL Measurement]** di una consegna creata da una campagna.
 
-Le ipotesi possono essere calcolate solo dopo che la campagna di marketing è stata avviata e che i destinatari hanno ricevuto la consegna. Se l&#39;ipotesi si basa su una proposta di offerta, quest&#39;ultima deve essere almeno presentata e deve essere ancora attiva. Le ipotesi di offerta e di consegna vengono create tramite la **[!UICONTROL Measurement hypotheses]** cartella e si basano su un modello di ipotesi. Tuttavia, è possibile fare riferimento a un&#39;ipotesi direttamente nella consegna o nella campagna prima dell&#39;inizio della campagna. In questo caso, le ipotesi verranno calcolate automaticamente dopo l&#39;avvio della campagna di marketing, in base alle impostazioni di esecuzione (per ulteriori informazioni, vedere Impostazioni [di esecuzione dei modelli di](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)ipotesi).
+Le ipotesi possono essere calcolate solo dopo che la campagna di marketing è stata avviata e che i destinatari hanno ricevuto la consegna. Se l&#39;ipotesi si basa su una proposta di offerta, quest&#39;ultima deve essere almeno presentata e deve essere ancora attiva. Le ipotesi di offerta e consegna vengono create tramite la cartella **[!UICONTROL Measurement hypotheses]** e si basano su un modello di ipotesi. Tuttavia, è possibile fare riferimento a un&#39;ipotesi direttamente nella consegna o nella campagna prima dell&#39;inizio della campagna. In questo caso, le ipotesi verranno calcolate automaticamente dopo l&#39;avvio della campagna di marketing, in base alle impostazioni di esecuzione (per ulteriori informazioni, fare riferimento a [Impostazioni di esecuzione dei modelli di ipotesi](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)).
 
 ## Creazione di un&#39;ipotesi al volo su una consegna {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
@@ -33,12 +33,12 @@ Per creare un&#39;ipotesi su una consegna esistente, eseguite il seguente proces
 >
 >Questa operazione è possibile solo per le consegne in sospeso.
 
-1. Nella  albero di Adobe Campaign, andate a **[!UICONTROL Campaign management > Measurement hypotheses]**.
-1. Fare clic sul **[!UICONTROL New]** pulsante o fare clic con il pulsante destro del mouse sull&#39;elenco delle ipotesi e selezionare **[!UICONTROL New]** nell&#39;elenco a discesa.
+1. Nella struttura  Adobe Campaign, passare a **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Fare clic sul pulsante **[!UICONTROL New]** o fare clic con il pulsante destro del mouse sull&#39;elenco delle ipotesi e selezionare **[!UICONTROL New]** nell&#39;elenco a discesa.
 
    ![](assets/response_hypothesis_instance_creation_002.png)
 
-1. Nella finestra dell&#39;ipotesi, selezionare un modello creato in precedenza (fare riferimento a Modelli [di](../../campaign/using/hypothesis-templates.md)ipotesi).
+1. Nella finestra dell&#39;ipotesi, selezionare un modello creato in precedenza (fare riferimento a [Modelli di ipotesi](../../campaign/using/hypothesis-templates.md)).
 
    ![](assets/response_hypothesis_instance_creation_003.png)
 
@@ -54,14 +54,14 @@ Per creare un&#39;ipotesi su una consegna esistente, eseguite il seguente proces
 
    ![](assets/response_hypothesis_instance_creation_005.png)
 
-1. Potete personalizzare l&#39;ipotesi modificando le **[!UICONTROL General]**, **[!UICONTROL Transactions]** e **[!UICONTROL Scope]** le schede. Per ulteriori informazioni, vedere [Creazione di un modello](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)di ipotesi.
-1. Iniziate l&#39;ipotesi facendo clic **[!UICONTROL Start]**.
+1. Potete personalizzare l&#39;ipotesi modificando le schede **[!UICONTROL General]**, **[!UICONTROL Transactions]** e **[!UICONTROL Scope]**. Per ulteriori informazioni, vedere [Creazione di un modello di ipotesi](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Iniziare l&#39;ipotesi facendo clic su **[!UICONTROL Start]**.
 
    Viene creato automaticamente un flusso di lavoro per eseguire la misurazione. Il nome viene definito automaticamente in base alla configurazione dell&#39;ipotesi.
 
    >[!CAUTION]
    >
-   >È possibile accedervi se avete selezionato la **[!UICONTROL Keep execution workflow]** casella.\
+   >È possibile accedervi se è stata selezionata la casella **[!UICONTROL Keep execution workflow]**.\
    >Questa opzione deve essere attivata solo a scopo di debug, in caso di errore durante l&#39;esecuzione dell&#39;ipotesi. I flussi di lavoro generati automaticamente vengono salvati nella cartella **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** di  Adobe Campaign Explorer.
    > 
    >Inoltre, i flussi di lavoro generati automaticamente non devono essere modificati. Eventuali modifiche non saranno prese in considerazione altrove per ulteriori calcoli.
@@ -80,12 +80,12 @@ Per creare un&#39;ipotesi su una consegna esistente, eseguite il seguente proces
 
 Potete fare riferimento a un&#39;ipotesi in una campagna di marketing prima di avviarla. In questo caso, l&#39;ipotesi verrà avviata automaticamente dopo l&#39;invio della consegna, in base alle impostazioni di esecuzione definite nel modello di ipotesi. Per creare un&#39;ipotesi in una consegna, eseguite il seguente processo:
 
-1. A seconda delle esigenze, potete creare uno o più modelli di **[!UICONTROL Delivery]** tipo, come descritto in [Creazione di un modello di ipotesi](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)
+1. A seconda delle esigenze, è possibile creare uno o più modelli di tipo **[!UICONTROL Delivery]**, come descritto in [Creazione di un modello di ipotesi](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)
 1. Crea una campagna di marketing e flussi di lavoro di targeting.
-1. Nella finestra consegna, fate clic sull&#39; **[!UICONTROL Delivery measurement]** icona.
+1. Nella finestra consegna, fate clic sull&#39;icona **[!UICONTROL Delivery measurement]**.
 1. Selezionate il modello di ipotesi (la query configurata nel modello viene visualizzata nella finestra di ipotesi).
 
-   L&#39;ipotesi verrà calcolata automaticamente al termine della campagna, in base alle date configurate nel modello (consultate le impostazioni [di esecuzione dei modelli di](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)ipotesi).
+   L&#39;ipotesi verrà calcolata automaticamente al termine della campagna, in base alle date configurate nel modello (fare riferimento a [Impostazioni di esecuzione dei modelli di ipotesi](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)).
 
    ![](assets/response_hypothesis_instance_creation_008.png)
 
@@ -93,12 +93,12 @@ Potete fare riferimento a un&#39;ipotesi in una campagna di marketing prima di a
 
 Potete fare riferimento direttamente a un&#39;ipotesi a livello di campagna. In questo caso, l&#39;ipotesi sarà automaticamente collegata a tutte le consegne create nella campagna. Per eseguire questa operazione:
 
-1. Passate alla **[!UICONTROL Edit]** scheda della campagna.
-1. Nella sezione relativa alla misura, fare clic sulla **[!UICONTROL Default hypotheses]** scheda.
+1. Passate alla scheda **[!UICONTROL Edit]** della campagna.
+1. Nella sezione relativa alle misurazioni, fare clic sulla scheda **[!UICONTROL Default hypotheses]**.
 
    ![](assets/response_hypothesis_instance_creation_010.png)
 
-1. Fate clic su **[!UICONTROL Add]** e selezionate un modello di ipotesi.
+1. Fare clic su **[!UICONTROL Add]** e selezionare un modello di ipotesi.
 
    ![](assets/response_hypothesis_instance_creation_011.png)
 
@@ -106,17 +106,17 @@ Potete fare riferimento direttamente a un&#39;ipotesi a livello di campagna. In 
 
    ![](assets/response_hypothesis_instance_creation_012.png)
 
-I risultati dell&#39;ipotesi possono essere visualizzati nelle **[!UICONTROL General]** e **[!UICONTROL Reactions]** nelle schede dell&#39;ipotesi (fare riferimento al tracciamento [dell&#39;](../../campaign/using/hypothesis-tracking.md)ipotesi)
+I risultati dell&#39;ipotesi possono essere visualizzati nelle schede **[!UICONTROL General]** e **[!UICONTROL Reactions]** dell&#39;ipotesi (fare riferimento a [Tracciamento dell&#39;ipotesi](../../campaign/using/hypothesis-tracking.md))
 
-Per ulteriori informazioni, potete fare riferimento anche a [Esempio: creazione di un&#39;ipotesi collegata a una consegna](#example--creating-a-hypothesis-linked-to-a-delivery).
+Per ulteriori informazioni, fare riferimento anche a [Esempio: creazione di un&#39;ipotesi collegata a una consegna](#example--creating-a-hypothesis-linked-to-a-delivery).
 
 ## Creazione di un&#39;ipotesi su un&#39;offerta {#creating-a-hypothesis-on-an-offer}
 
 Creare un&#39;ipotesi su una proposta di offerta è simile a creare un&#39;ipotesi di consegna al volo. L&#39;ipotesi può essere eseguita finché l&#39;offerta è attiva. Il periodo di calcolo è basato sulla data di proposta dell&#39;offerta. Quando l&#39;ipotesi consente di collegare un destinatario a un acquisto, lo stato dell&#39;offerta che potrebbe essere accettata può essere modificato automaticamente (per ulteriori informazioni, fare riferimento a [Transazioni](../../campaign/using/hypothesis-templates.md#transactions)).
 
-1. Creare uno o più modelli di **[!UICONTROL Offer]** tipo come descritto in [Creazione di un modello](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model)di ipotesi.
-1. Go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node.
-1. Per creare un&#39;ipotesi di **[!UICONTROL Offers]** tipo, selezionate il modello creato in precedenza.
+1. Creare uno o più modelli di tipo **[!UICONTROL Offer]** come descritto in [Creazione di un modello di ipotesi](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Vai al nodo **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Create un&#39;ipotesi di tipo **[!UICONTROL Offers]** selezionando il modello creato in precedenza.
 
    ![](assets/response_hypothesis_instance_offer_001.png)
 
@@ -129,14 +129,14 @@ Creare un&#39;ipotesi su una proposta di offerta è simile a creare un&#39;ipote
    ![](assets/response_hypothesis_instance_offer_004.png)
 
 1. Se necessario, perfezionate la query.
-1. Fare clic **[!UICONTROL Start]** per eseguire l&#39;ipotesi.
-1. I risultati dell&#39;ipotesi possono essere visualizzati nelle relative **[!UICONTROL General]** e **[!UICONTROL Reactions]** schede (fare riferimento al tracciamento [dell&#39;](../../campaign/using/hypothesis-tracking.md)ipotesi).
+1. Fare clic su **[!UICONTROL Start]** per eseguire l&#39;ipotesi.
+1. I risultati dell&#39;ipotesi possono essere visualizzati nelle relative schede **[!UICONTROL General]** e **[!UICONTROL Reactions]** (fare riferimento a [Tracciamento ipotesi](../../campaign/using/hypothesis-tracking.md)).
 
-   Le ipotesi effettuate su un&#39;offerta sono indicate nella **[!UICONTROL Measurement]** scheda.
+   Le ipotesi effettuate su un&#39;offerta sono indicate nella scheda **[!UICONTROL Measurement]**.
 
    ![](assets/response_hypothesis_instance_offer_007.png)
 
-   Se l&#39; **[!UICONTROL Update offer proposition status]** opzione è stata attivata nel modello di ipotesi, lo stato della proposta di offerta viene modificato automaticamente, fornendo così un feedback sull&#39;impatto della campagna (per ulteriori informazioni, fare riferimento a [Transazioni](../../campaign/using/hypothesis-templates.md#transactions)).
+   Se l&#39;opzione **[!UICONTROL Update offer proposition status]** è stata abilitata nel modello di ipotesi, lo stato della proposta di offerta viene modificato automaticamente, fornendo così un feedback sull&#39;impatto della campagna (per ulteriori informazioni, fare riferimento a [Transazioni](../../campaign/using/hypothesis-templates.md#transactions)).
 
 ## Esempio: creazione di un&#39;ipotesi collegata a una consegna {#example--creating-a-hypothesis-linked-to-a-delivery}
 
@@ -152,9 +152,9 @@ In questo esempio, vogliamo creare un&#39;ipotesi collegata a una consegna. Ques
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, vedere [Definizione di un gruppo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)di controllo.
+   >Per ulteriori informazioni, vedere [Definizione di un gruppo di controllo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-1. Aprite l&#39;icona **[!UICONTROL Direct mail delivery]** e fate clic sull&#39; **[!UICONTROL Delivery measurement]** icona, quindi fate clic su **[!UICONTROL Add]**.
+1. Aprite la **[!UICONTROL Direct mail delivery]** e fate clic sull&#39;icona **[!UICONTROL Delivery measurement]**, quindi fate clic su **[!UICONTROL Add]**.
 
    ![](assets/response_hypothesis_delivery_example_002.png)
 
@@ -166,19 +166,19 @@ In questo esempio, vogliamo creare un&#39;ipotesi collegata a una consegna. Ques
 
    ![](assets/response_hypothesis_delivery_example_005.png)
 
-1. Fare clic **[!UICONTROL Edit query...]** e affinare la query immettendo il prodotto che l&#39;ipotesi riguarderà.
+1. Fare clic su **[!UICONTROL Edit query...]** e affinare la query immettendo il prodotto che l&#39;ipotesi riguarda.
 
    ![](assets/response_hypothesis_delivery_example_006.png)
 
-   Potete verificare che l&#39;ipotesi sia collegata alla distribuzione nella scheda **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** della campagna.
+   È possibile verificare che l&#39;ipotesi sia collegata alla distribuzione nella scheda **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** della campagna.
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Avviate il flusso di lavoro di targeting ed eseguite i controlli necessari fino al completamento della campagna (per ulteriori informazioni, consultate [Avvio di una distribuzione](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
+1. Avviate il flusso di lavoro di targeting ed eseguite i controlli necessari fino al termine della campagna (per ulteriori informazioni, consultate [Avvio di una consegna](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
-1. Nella struttura  Adobe Campaign, andare al **[!UICONTROL Campaign management > Measurement hypotheses]** nodo per verificare gli indicatori calcolati dall&#39;ipotesi.
+1. Nella struttura  di Adobe Campaign, andare al nodo **[!UICONTROL Campaign management > Measurement hypotheses]** per verificare gli indicatori calcolati dall&#39;ipotesi.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
 
