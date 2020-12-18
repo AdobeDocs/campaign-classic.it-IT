@@ -19,7 +19,7 @@ ht-degree: 6%
 
 È possibile utilizzare la procedura guidata di distribuzione per configurare per quanto tempo i dati devono essere memorizzati nel database.
 
-La rimozione degli eventi viene eseguita automaticamente dal **[!UICONTROL Database cleanup]** flusso di lavoro. Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e negli eventi archiviati in un&#39;istanza di controllo.
+La rimozione degli eventi viene eseguita automaticamente dal flusso di lavoro **[!UICONTROL Database cleanup]**. Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e negli eventi archiviati in un&#39;istanza di controllo.
 
 Utilizzate le frecce come appropriato per modificare le impostazioni di eliminazione.
 
@@ -31,4 +31,4 @@ Impostazioni di eliminazione eventi in un&#39;istanza di esecuzione:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consulta [questa sezione](../../production/using/database-cleanup-workflow.md).
+Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consultare [questa sezione](../../production/using/database-cleanup-workflow.md).
