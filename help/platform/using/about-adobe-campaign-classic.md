@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# Guida introduttiva ad Campaign Classic{#about-adobe-campaign-classic}
 
 Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, i brand devono creare customer journey coerenti ad ogni punto di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente campagne di marketing cross-channel, in modo tale da offrire un ritorno elevato sull’investimento marketing e promuovere la fidelizzazione.
 
@@ -23,7 +23,7 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 
 >[!NOTE]
 >
-> Adobe Campaign Classic è disponibile nelle versioni v6.11 e v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Le schermate rappresentano l’interfaccia utente di Campaign Classic v7.
+> Adobe Campaign Classic è disponibile nelle versioni v6.11 e v7. Ad eccezione di quanto indicato, i materiali della guida sono applicabili a entrambe le versioni, nella [build più recente](../../rn/using/latest-release.md). Le schermate rappresentano l’interfaccia utente di Campaign Classic v7.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità e le caratteristiche principali del video](#video)
 
@@ -93,4 +93,4 @@ Questo video presenta le caratteristiche e le funzionalità principali dei Campa
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
