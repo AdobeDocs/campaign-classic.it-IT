@@ -463,4 +463,4 @@ In questo video viene illustrato come creare una campagna e un messaggio e-mail 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
