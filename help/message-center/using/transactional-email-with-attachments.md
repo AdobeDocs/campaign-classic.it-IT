@@ -41,7 +41,7 @@ In questo scenario, gli allegati non vengono pre-creati, ma aggiunti al volo all
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, se includete come allegati immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Per evitare problemi di prestazioni, se includete come allegati immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ciascuna dimensione non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata da [l&#39;elenco di opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Raccomandazioni {#important-notes}
 
@@ -54,7 +54,7 @@ Prima di implementare questo scenario, leggi attentamente le linee guida seguent
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata dall&#39;elenco [delle opzioni](../../installation/using/configuring-campaign-options.md#delivery)Campaign Classic.
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [l&#39;elenco di opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementazione {#implementation}
 
@@ -70,11 +70,11 @@ Per aggiungere al volo un allegato e-mail a un messaggio transazionale, effettua
 
 1. Potete inviare le e-mail tramite un trigger di messaggio SOAP. Nella chiamata SOAP è presente un parametro URL (attachmentURL).
 
-   Per ulteriori informazioni sulle richieste SOAP, vedere la descrizione [dell&#39;](../../message-center/using/event-description.md)evento.
+   Per ulteriori informazioni sulle richieste SOAP, vedere [Descrizione evento](../../message-center/using/event-description.md).
 
 1. Durante la progettazione del messaggio e-mail, fate clic su **[!UICONTROL Attachment]**.
 
-1. Nella **[!UICONTROL Attachment definition]** schermata, immettere il parametro SOAP attachment:
+1. Nella schermata **[!UICONTROL Attachment definition]**, immettete il parametro SOAP attachment:
 
    ```
    <%= rtEvent.ctx.attachementUrl %>
