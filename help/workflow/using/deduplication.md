@@ -25,8 +25,8 @@ Durante la deduplicazione, i flussi in entrata vengono elaborati separatamente. 
 
 Questo problema deve essere affrontato come segue:
 
-* Crea un&#39;attività **dell&#39;Unione** per unificare ogni flusso in entrata.
-* Create un&#39;attività di **deduplicazione** dopo l&#39;attività **dell&#39;Unione** .
+* Create un&#39;attività **Union** per unificare ogni flusso in entrata.
+* Create un&#39;attività **Deduplicazione** dopo l&#39;attività **Union**.
 
 ![](assets/dedup_bonnepratique.png)
 
@@ -34,7 +34,7 @@ Questo problema deve essere affrontato come segue:
 
 Per configurare una deduplicazione, immettete l’etichetta, il metodo e i criteri di deduplicazione, nonché le opzioni relative al risultato.
 
-Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
+Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire la modalità di deduplicazione.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -46,9 +46,9 @@ Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire l
 
    >[!NOTE]
    >
-   >Se si utilizzano dati esterni come input, ad esempio da un file esterno, assicurarsi di selezionare l&#39; **[!UICONTROL Temporary schema]** opzione.
+   >Se utilizzate dati esterni come input, ad esempio da un file esterno, accertatevi di selezionare l&#39;opzione **[!UICONTROL Temporary schema]**.
    >
-   >Nel passaggio successivo, l’ **[!UICONTROL Other]** opzione consente di selezionare il criterio o i criteri da utilizzare:
+   >Nel passaggio successivo, l&#39;opzione **[!UICONTROL Other]** consente di selezionare il criterio o i criteri da utilizzare:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -72,7 +72,7 @@ Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire l
    * **[!UICONTROL Using an expression]**: consente di conservare i record con il valore più basso (o più alto) dell&#39;espressione data.
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   Fare clic **[!UICONTROL Finish]** per approvare il metodo di deduplicazione selezionato.
+   Fare clic su **[!UICONTROL Finish]** per approvare il metodo di deduplicazione selezionato.
 
    La sezione centrale della finestra riepiloga la configurazione definita.
 
@@ -80,7 +80,7 @@ Fare clic sul **[!UICONTROL Edit configuration...]** collegamento per definire l
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Check the **[!UICONTROL Generate complement]** option if you wish to exploit the remaining population. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
+   Selezionare l&#39;opzione **[!UICONTROL Generate complement]** se si desidera sfruttare la popolazione rimanente. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -96,17 +96,17 @@ I duplicati identificati saranno inoltre integrati in un elenco dedicato di dupl
 
 1. Aggiungete e collegate le varie attività necessarie per il funzionamento del flusso di lavoro, come mostrato sopra.
 
-   L&#39;attività dell&#39;unione viene utilizzata qui per &quot;unificare&quot; le tre query in un&#39;unica transizione. Di conseguenza, la deduplicazione non funziona per ogni query singolarmente ma per l’intera query. Per ulteriori informazioni su questo argomento, consulta [Best practice](#best-practices).
+   L&#39;attività dell&#39;unione viene utilizzata qui per &quot;unificare&quot; le tre query in un&#39;unica transizione. Di conseguenza, la deduplicazione non funziona per ogni query singolarmente ma per l’intera query. Per ulteriori informazioni su questo argomento, fare riferimento a [Best practice](#best-practices).
 
-1. Aprite l&#39;attività di deduplicazione, quindi fate clic sul **[!UICONTROL Edit configuration...]** collegamento per definire la modalità di deduplicazione.
+1. Aprite l&#39;attività di deduplicazione, quindi fate clic sul collegamento **[!UICONTROL Edit configuration...]** per definire la modalità di deduplicazione.
 1. Nella nuova finestra, selezionare **[!UICONTROL Database schema]**.
-1. Selezionate **Destinatari** come dimensioni di targeting e filtro.
-1. Selezionate il campo ID per i **[!UICONTROL Email]** duplicati, per inviare la consegna una sola volta a ogni indirizzo e-mail, quindi fate clic su **[!UICONTROL Next]**.
+1. Selezionate **Recipients** come dimensioni di destinazione e filtro.
+1. Selezionare il campo ID per i duplicati **[!UICONTROL Email]**, per inviare la consegna una sola volta a ogni indirizzo e-mail, quindi fare clic su **[!UICONTROL Next]**.
 
    Se desiderate basare gli ID duplicati su un campo specifico, selezionate **[!UICONTROL Other]** per accedere all&#39;elenco dei campi disponibili.
 
 1. Scegliete di mantenere una sola voce quando lo stesso indirizzo e-mail è identificato per più destinatari.
-1. Selezionare la modalità di **[!UICONTROL Choose for me]** deduplicazione in modo che i record salvati in caso di duplicati identificati vengano scelti in modo casuale, quindi fare clic **[!UICONTROL Finish]**.
+1. Selezionare la modalità di deduplicazione **[!UICONTROL Choose for me]** in modo che i record salvati in caso di duplicati identificati vengano scelti in modo casuale, quindi fare clic su **[!UICONTROL Finish]**.
 
 Durante l&#39;esecuzione del flusso di lavoro, tutti i destinatari identificati come duplicati vengono esclusi dal risultato (e quindi dalla consegna) e aggiunti all&#39;elenco dei duplicati. Questo elenco può essere utilizzato di nuovo anziché dover identificare nuovamente i duplicati.
 
@@ -123,6 +123,6 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 * schema
 * recCount
 
-Questo insieme di tre valori identifica la destinazione risultante dalla deduplicazione. **[!UICONTROL tableName]** è il nome della tabella che salva gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica la destinazione risultante dalla deduplicazione. **[!UICONTROL tableName]** è il nome della tabella che salva gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
 
 La transizione associata al complemento ha gli stessi parametri.
