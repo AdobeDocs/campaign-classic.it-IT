@@ -27,7 +27,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 1. Eseguire un backup del database dell&#39;ambiente di sviluppo.
 1. Arrestate tutti  processi Adobe Campaign nell&#39;istanza di sviluppo.
 1. Eseguire un backup del database dell&#39;ambiente di produzione e ripristinarlo come ambiente di sviluppo.
-1. Prima di avviare i servizi Adobe Campaign , eseguire lo script di **bloccoInstance.js** pruderization che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
+1. Prima di avviare i servizi Adobe Campaign , eseguire lo script di cauterizzazione **congelamentoInstance.js** che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
    >[!NOTE]
    >
-   >Il comando viene avviato per impostazione predefinita in modalità **secca** ed elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire richieste di cautela, utilizzate **run** nel comando.
+   >Il comando viene avviato per impostazione predefinita in modalità **dry** ed elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire richieste di cautela, utilizzare **run** nel comando.
 
 1. Verificare che i backup siano corretti cercando di ripristinarli. Assicuratevi di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verificare la procedura di migrazione nell&#39;ambiente di sviluppo.
 
-   Le procedure complete sono descritte nella sezione [Prerequisiti per la migrazione a  Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   Le procedure complete sono descritte nella sezione [Prerequisiti per la migrazione a  Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
 
 1. Se la migrazione dell&#39;ambiente di sviluppo ha esito positivo, è possibile migrare l&#39;ambiente di produzione.
 
@@ -50,13 +50,13 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
 >[!NOTE]
 >
->Il comando  Adobe Campaign update (**post-aggiornamento**) consente di sincronizzare le risorse e gli schemi di aggiornamento e il database. Questa operazione può essere eseguita solo una volta sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
+>Il comando  aggiornamento Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e gli schemi di aggiornamento e il database. Questa operazione può essere eseguita solo una volta sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
 ## Strumenti di migrazione {#migration-tools}
 
 Le varie opzioni consentono di misurare l’impatto di una migrazione e identificare i potenziali problemi. Devono essere eseguite le seguenti opzioni:
 
-* nel comando **config** :
+* nel comando **config**:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,9 +70,9 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 
 >[!NOTE]
 >
->È necessario utilizzare l&#39; **istanza:`<instanceame>`** opzione. Non si consiglia di utilizzare l&#39;opzione **Tutte le istanze** .
+>È necessario utilizzare l&#39;opzione **-instance:`<instanceame>`**. Non è consigliabile utilizzare l&#39;opzione **-allinstance**.
 
-### Opzioni -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities e -showDeletedEntities opzioni {#showcustomentities-and--showdeletedentities-options}
 
 * L&#39;opzione **-showCustomEntities** visualizza l&#39;elenco di tutti gli oggetti non standard:
 
@@ -117,7 +117,7 @@ Vengono cercate le seguenti espressioni (con distinzione tra maiuscole e minusco
 <table> 
  <thead> 
   <tr> 
-   <th> Espressione<br /> </th> 
+   <th> Expression<br /> </th> 
    <th> Codice errore<br /> </th> 
    <th> Tipo di registro<br /> </th> 
    <th> Commenti<br /> </th> 
@@ -140,13 +140,13 @@ Vengono cercate le seguenti espressioni (con distinzione tra maiuscole e minusco
    <td> access(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Avviso<br /> </td> 
-   <td> Questo metodo di connessione non deve più essere utilizzato. Fare riferimento alle applicazioni <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Web</a>identificate.<br /> </td> 
+   <td> Questo metodo di connessione non deve più essere utilizzato. Fare riferimento a <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Applicazioni Web identificate</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Avviso<br /> </td> 
-   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da una zona di sicurezza in modalità <strong>sessionTokenOnly</strong> .<br /> </td> 
+   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da una zona di sicurezza in modalità <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -158,7 +158,7 @@ Vengono cercate le seguenti espressioni (con distinzione tra maiuscole e minusco
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore genera un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ottenete i registri degli errori dell'applicazione Web di tipo panoramica (migrazione dalla versione 6.02), fate riferimento alle applicazioni <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank"></a>Web.<br /> </td> 
+   <td> Questo tipo di errore genera un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se si ottengono i registri di errore dell'applicazione Web di tipo panoramica (migrazione dalla versione 6.02), fare riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Applicazioni Web</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
