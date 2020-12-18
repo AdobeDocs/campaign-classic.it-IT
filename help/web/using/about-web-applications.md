@@ -29,7 +29,7 @@ Questo capitolo fornisce una panoramica della gestione delle applicazioni Web.
 
 >[!NOTE]
 >
->Per informazioni su come ottimizzare la sicurezza per le applicazioni Web, fare riferimento all&#39;elenco [di controllo](https://helpx.adobe.com/it/campaign/kb/acc-security.html) Sicurezza e privacy.
+>Per informazioni su come ottimizzare la sicurezza per le applicazioni Web, fare riferimento all&#39; [Elenco di controllo Sicurezza e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Le applicazioni Web in  Adobe Campaign consentono di accedere alle seguenti funz
 * Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. Per ulteriori informazioni, consulta questa [pagina](../../web/using/editing-content.md).
 * Monitoraggio delle risposte in tempo reale. Per ulteriori informazioni, consulta questa [pagina](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
-Il modulo di creazione **sondaggio** opzionale offre le seguenti funzionalità aggiuntive:
+Il modulo di creazione opzionale **Survey** offre le seguenti funzionalità aggiuntive:
 
 * Estensione dinamica del database: creazione di risposte non incluse nel modello dati iniziale. Per ulteriori informazioni, consulta questa [pagina](../../web/using/managing-answers.md#storing-collected-answers).
 * Generazione di rapporti dedicati. Per ulteriori informazioni, consulta questa [pagina](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
@@ -61,7 +61,7 @@ Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semp
 
 >[!NOTE]
 >
->Le indagini sono dettagliate in [questa sezione](../../web/using/about-surveys.md).
+>I sondaggi sono descritti in [questa sezione](../../web/using/about-surveys.md).
 >
 >Le funzionalità generali dei moduli Web in  Adobe Campaign sono descritte in [questa sezione](../../web/using/about-web-forms.md).
 
@@ -78,9 +78,9 @@ Per creare e pubblicare un&#39;applicazione Web, è necessario:
 
 ## Configurazione iniziale applicazione Web {#web-application-initial-configuration}
 
-L&#39;applicazione Web viene creata tramite il **[!UICONTROL Web Applications]** collegamento nelle **[!UICONTROL Campaigns]** schede e **[!UICONTROL Profiles and targets]** .
+L&#39;applicazione Web viene creata tramite il collegamento **[!UICONTROL Web Applications]** nelle schede **[!UICONTROL Campaigns]** e **[!UICONTROL Profiles and targets]**.
 
-Le applicazioni Web sono memorizzate nel **[!UICONTROL Resources > Online > Web Applications]** nodo della struttura di Adobe Campaign . Le configurazioni sono suddivise nelle cartelle seguenti:
+Le applicazioni Web sono memorizzate nel nodo **[!UICONTROL Resources > Online > Web Applications]** della struttura di Adobe Campaign . Le configurazioni sono suddivise nelle cartelle seguenti:
 
 * **[!UICONTROL Administration > Configuration > Form renderings]**: contiene i modelli di rendering per la presentazione del modulo Web (applicazioni e sondaggi). Il modello consente di generare il modulo. Utilizza anche un foglio di stile CSS. Questo foglio di stile può essere sovraccaricato a livello di modello. Per ulteriori informazioni, consulta [questa pagina](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contiene modelli di modulo. Per creare un modulo o un&#39;applicazione Web, è necessario iniziare da un modello.
@@ -93,7 +93,7 @@ Per impostazione predefinita,  Adobe Campaign fornisce un modello per l&#39;appl
 >
 >È possibile convertire un&#39;applicazione Web esistente in un modello. A tale scopo, selezionare il modulo e fare clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions > Save as template...]**.
 
-È possibile creare nuovi modelli tramite il **[!UICONTROL Resources > Templates > Web Application templates]** nodo della struttura ad albero di Adobe Campaign .
+È possibile creare nuovi modelli tramite il nodo **[!UICONTROL Resources > Templates > Web Application templates]** della struttura di Adobe Campaign .
 
 La procedura guidata di creazione consente di selezionare le opzioni che si desidera abilitare, come illustrato di seguito.
 
