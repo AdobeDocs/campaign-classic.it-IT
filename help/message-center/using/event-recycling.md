@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# Riciclaggio degli eventi{#event-recycling}
+# Riciclaggio eventi{#event-recycling}
 
 Se la consegna di un messaggio su un canale specifico ha esito negativo,  Adobe Campaign può inviare nuovamente il messaggio utilizzando un canale diverso. Ad esempio, se una consegna sul canale SMS ha esito negativo, il messaggio viene inviato utilizzando il canale e-mail.
 
-A questo scopo, dovete configurare un flusso di lavoro che ricrea tutti gli eventi con lo stato di errore **** di consegna e assegna loro un canale diverso.
+A tal fine, è necessario configurare un flusso di lavoro che ricrea tutti gli eventi con lo stato **Errore di consegna** e assegna loro un canale diverso.
 
 >[!CAUTION]
 >
