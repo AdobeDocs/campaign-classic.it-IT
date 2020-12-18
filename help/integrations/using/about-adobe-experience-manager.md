@@ -15,11 +15,11 @@ ht-degree: 0%
 ---
 
 
-# About Adobe Experience Manager{#about-adobe-experience-manager}
+# Informazioni su Adobe Experience Manager{#about-adobe-experience-manager}
 
 L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager consente di gestire il contenuto delle comunicazioni e-mail e dei moduli direttamente in Adobe Experience Manager.
 
-Potete anche inserire direttamente le risorse dalla libreria  AEM Assets durante la modifica di un messaggio e-mail o di una pagina di destinazione in  Adobe Campaign. Questa funzionalità è descritta nel capitolo [Risorse](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) .
+Potete anche inserire direttamente le risorse dalla libreria  AEM Assets durante la modifica di un messaggio e-mail o di una pagina di destinazione in  Adobe Campaign. Questa funzionalità è descritta nel capitolo [Risorse](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
 Ciò significa che potete sfruttare al meglio sia le funzionalità di modifica AEM contenuto che  capacità di distribuzione Adobe Campaign.
 
@@ -27,8 +27,8 @@ Ciò significa che potete sfruttare al meglio sia le funzionalità di modifica A
 
 Devono essere presenti i seguenti elementi:
 
-* Un’istanza di **authoring** Adobe Experience Manager.
-* Un’istanza di **pubblicazione** Adobe Experience Manager.
+* Un&#39;istanza Adobe Experience Manager **authoring**.
+* Un&#39;istanza di Adobe Experience Manager **publishing**.
 * Un&#39;istanza  Adobe Campaign.
 
  Adobe Campaign è compatibile con Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 e 6.5. Le sezioni seguenti presentano una panoramica dell&#39;integrazione.
