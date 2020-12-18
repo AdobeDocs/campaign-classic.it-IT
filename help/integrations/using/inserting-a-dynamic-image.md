@@ -37,7 +37,7 @@ A tal fine, è necessario eseguire i seguenti passaggi sia in  Adobe Campaign ch
 1. [Creazione di un&#39;attività Experience Targeting](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Anteprima e invio del messaggio e-mail](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## Inserimento dell’offerta dinamica in un messaggio e-mail {#inserting-dynamic-offer}
+## Inserimento dell&#39;offerta dinamica in un&#39;e-mail {#inserting-dynamic-offer}
 
 In  Adobe Campaign, dopo aver definito la destinazione e il contenuto dell&#39;e-mail, potete inserire un&#39;immagine dinamica da Target.
 
@@ -45,20 +45,20 @@ A questo scopo, specificate l&#39;URL dell&#39;immagine predefinita, il nome del
 
 In  Adobe Campaign, esistono due modi per inserire un&#39;immagine dinamica da Target in un messaggio e-mail:
 
-* Se utilizzate l’editor del contenuto digitale, scegliete un’immagine esistente e selezionate **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** dalla barra degli strumenti.
+* Se utilizzate l&#39;editor del contenuto digitale, scegliete un&#39;immagine esistente e selezionate **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** dalla barra degli strumenti.
 
    ![](assets/target_5.png)
 
-* Se usate l’editor standard, posizionate il cursore nel punto in cui desiderate inserire l’immagine e selezionate **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** dal menu a discesa Personalizzazione.
+* Se utilizzate l&#39;editor standard, posizionate il cursore nel punto in cui desiderate inserire l&#39;immagine e selezionate **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** dal menu a discesa Personalizzazione.
 
    ![](assets/target_12.png)
 
-### Definizione dei parametri immagine {#defining-image-parameters}
+### Definizione dei parametri dell&#39;immagine {#defining-image-parameters}
 
-* URL **[!UICONTROL Default image]** del sito: Immagine che verrà visualizzata quando nessuna delle condizioni è soddisfatta. Puoi anche selezionare un’immagine dalla libreria Risorse.
-* Il **[!UICONTROL Target location]** seguente indirizzo: Immettete un nome per la posizione dell&#39;offerta dinamica. Dovrai selezionare questa posizione nell&#39;attività Target.
-* Il **[!UICONTROL Landing Page]** seguente indirizzo: Se si desidera che l&#39;immagine predefinita venga reindirizzata a una pagina di destinazione predefinita. Questo URL è solo per i casi in cui l’immagine predefinita viene visualizzata nell’e-mail finale ed è facoltativa.
-* Il **[!UICONTROL Additional decision parameters]** seguente indirizzo: Specificate la mappatura tra i campi definiti nei segmenti Adobe Target  e i campi Adobe Campaign . I campi Adobe Campaign  utilizzati devono essere stati specificati nella rawbox. Nel nostro esempio, abbiamo aggiunto il campo Paese.
+* L&#39;URL di **[!UICONTROL Default image]**: Immagine che verrà visualizzata quando nessuna delle condizioni è soddisfatta. Puoi anche selezionare un’immagine dalla libreria Risorse.
+* Il **[!UICONTROL Target location]**: Immettete un nome per la posizione dell&#39;offerta dinamica. Dovrai selezionare questa posizione nell&#39;attività Target.
+* Il **[!UICONTROL Landing Page]**: Se si desidera che l&#39;immagine predefinita venga reindirizzata a una pagina di destinazione predefinita. Questo URL è solo per i casi in cui l’immagine predefinita viene visualizzata nell’e-mail finale ed è facoltativa.
+* Il **[!UICONTROL Additional decision parameters]**: Specificate la mappatura tra i campi definiti nei segmenti Adobe Target  e i campi Adobe Campaign . I campi Adobe Campaign  utilizzati devono essere stati specificati nella rawbox. Nel nostro esempio, abbiamo aggiunto il campo Paese.
 
 Se utilizzate le autorizzazioni Enterprise nelle impostazioni in  Adobe Target, aggiungete la proprietà corrispondente in questo campo. Ulteriori informazioni sulle autorizzazioni di Target Enterprise in [questa pagina](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/properties-overview.html).
 
@@ -70,7 +70,7 @@ In Target potete creare diverse versioni dell&#39;offerta. A seconda dell’espe
 
 Nel nostro caso, abbiamo bisogno di due offerte di reindirizzamento, la terza (quella predefinita) deve essere definita in  Adobe Campaign.
 
-1. Per creare una nuova offerta di reindirizzamento in Target Standard, fate clic su **[!UICONTROL Content]** nella **[!UICONTROL Code offers]** scheda.
+1. Per creare una nuova offerta di reindirizzamento in Target Standard, nella scheda **[!UICONTROL Content]** fate clic su **[!UICONTROL Code offers]**.
 
 1. Fai clic su **[!UICONTROL Create]**, quindi su **[!UICONTROL Redirect Offer]**.
 
@@ -86,7 +86,7 @@ Nel nostro caso, abbiamo bisogno di due offerte di reindirizzamento, la terza (q
 
 In Target, è necessario creare i due tipi di pubblico in cui le persone che visiteranno l&#39;offerta saranno classificate per i diversi contenuti da distribuire. Per ogni audience, aggiungete una regola per definire chi sarà in grado di visualizzare l&#39;offerta.
 
-1. Per creare una nuova audience in Target, dalla **[!UICONTROL Audiences]** scheda fai clic su **[!UICONTROL Create Audience]**.
+1. Per creare una nuova audience in Target, dalla scheda **[!UICONTROL Audiences]**, fai clic su **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
@@ -94,7 +94,7 @@ In Target, è necessario creare i due tipi di pubblico in cui le persone che vis
 
    ![](assets/audiences_2.png)
 
-1. Fate clic su **[!UICONTROL Add a rule]** e selezionate una categoria. La regola utilizza criteri specifici per eseguire il targeting dei visitatori. È possibile definire le regole aggiungendo condizioni o creando nuove regole in altre categorie.
+1. Fare clic su **[!UICONTROL Add a rule]** e selezionare una categoria. La regola utilizza criteri specifici per eseguire il targeting dei visitatori. È possibile definire le regole aggiungendo condizioni o creando nuove regole in altre categorie.
 
 1. Seguite la stessa procedura per i tipi di pubblico rimanenti.
 
@@ -104,13 +104,13 @@ In Target, dobbiamo creare un&#39;attività Experience Targeting (Targeting dell
 
 ### Definizione dell&#39;audience {#defining-the-audience}
 
-1. Per creare un&#39;attività Experience Targeting, dalla **[!UICONTROL Activities]** scheda fai clic su **[!UICONTROL Create Activity]** quindi **[!UICONTROL Experience Targeting]**.
+1. Per creare un&#39;attività Experience Targeting, dalla scheda **[!UICONTROL Activities]** fai clic su **[!UICONTROL Create Activity]**, quindi su **[!UICONTROL Experience Targeting]**.
 
    ![](assets/target_10.png)
 
 1. Selezionare **[!UICONTROL Form]** come **[!UICONTROL Experience Composer]**.
 
-1. Scegliete un&#39;audience facendo clic sul **[!UICONTROL Change audience]** pulsante.
+1. Scegliete un&#39;audience facendo clic sul pulsante **[!UICONTROL Change audience]**.
 
    ![](assets/target_10_2.png)
 
@@ -128,7 +128,7 @@ Aggiungete un contenuto per ogni audience:
 
    ![](assets/target_15.png)
 
-1. Fate clic sul pulsante a discesa e selezionate **[!UICONTROL Change Redirect Offer]**.
+1. Fare clic sul pulsante a discesa e selezionare **[!UICONTROL Change Redirect Offer]**.
 
    ![](assets/target_content.png)
 
@@ -140,19 +140,19 @@ Aggiungete un contenuto per ogni audience:
 
 ### Definizione dell&#39;attività {#defining-activity}
 
-La **[!UICONTROL Target]** finestra riepiloga l&#39;attività. Se necessario, potete aggiungere altre esperienze.
+La finestra **[!UICONTROL Target]** riepiloga l&#39;attività. Se necessario, potete aggiungere altre esperienze.
 
 ![](assets/target_experience.png)
 
-La **[!UICONTROL Goal & Settings]** finestra consente di personalizzare l&#39;attività impostando una priorità, un obiettivo o una durata.
+La finestra **[!UICONTROL Goal & Settings]** consente di personalizzare l&#39;attività impostando una priorità, un obiettivo o una durata.
 
-La **[!UICONTROL Reporting Settings]** sezione consente di selezionare un&#39;azione e di modificare i parametri che determinano quando viene raggiunto l&#39;obiettivo.
+La sezione **[!UICONTROL Reporting Settings]** consente di selezionare un&#39;azione e di modificare i parametri che determinano quando viene raggiunto l&#39;obiettivo.
 
 ![](assets/target_experience_2.png)
 
 ## Anteprima e invio del messaggio e-mail in Campaign Classic {#preview-send-email}
 
-In  Adobe Campaign, ora potete visualizzare l’anteprima dell’e-mail e verificarne il rendering su diversi destinatari. Noterete che l&#39;immagine cambia in base alle diverse esperienze create. To learn more on email creation, refer to this [page](../../delivery/using/defining-the-email-content.md).
+In  Adobe Campaign, ora potete visualizzare l’anteprima dell’e-mail e verificarne il rendering su diversi destinatari. Noterete che l&#39;immagine cambia in base alle diverse esperienze create. Per ulteriori informazioni sulla creazione di e-mail, fare riferimento a questa [pagina](../../delivery/using/defining-the-email-content.md).
 
 Ora è possibile inviare l&#39;e-mail con un&#39;offerta dinamica da Target.
 
