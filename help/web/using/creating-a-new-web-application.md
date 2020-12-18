@@ -19,19 +19,19 @@ ht-degree: 19%
 
 I tipi di applicazione Web sono selezionati durante la creazione.
 
-Passare alla scheda **Campagne** e selezionare il **[!UICONTROL Web Applications]** menu. Fai clic sul pulsante **[!UICONTROL Create]**. Selezionare il modello di applicazione Web che si desidera utilizzare:
+Fare clic sulla scheda **Campagne** e selezionare il menu **[!UICONTROL Web Applications]**. Fai clic sul pulsante **[!UICONTROL Create]**. Selezionare il modello di applicazione Web che si desidera utilizzare:
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->Proteggere sempre le pagine che possono contenere informazioni personali. Fare riferimento all&#39;elenco di controllo [Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Proteggere sempre le pagine che possono contenere informazioni personali. Fare riferimento all&#39; [Elenco di controllo Sicurezza e Privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Questo modello determina il tipo di applicazione Web. Potete creare:
 
 1. Moduli Web (+ modifica profilo)
 
-   I moduli Web consentono di offrire pagine Web con campi di input o di selezione: le informazioni immesse dagli utenti possono essere memorizzate nel database Adobe Campaign . For more on this, refer to [Web forms](../../web/using/about-web-forms.md).
+   I moduli Web consentono di offrire pagine Web con campi di input o di selezione: le informazioni immesse dagli utenti possono essere memorizzate nel database Adobe Campaign . Per ulteriori informazioni, consultare [Moduli Web](../../web/using/about-web-forms.md).
 
 1. Applicazioni web
 
@@ -43,18 +43,18 @@ Questo modello determina il tipo di applicazione Web. Potete creare:
 
 1. Sondaggi
 
-    Adobe Campaign consente, tramite l’opzione **Survey Manager** , di progettare e gestire i sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione del punteggio, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
+    Adobe Campaign consente, tramite l&#39;opzione **Survey Manager**, di progettare e gestire i sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione del punteggio, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
 
    >[!CAUTION]
    >
-   >**Survey Manager** è un modulo Adobe Campaign  facoltativo. Controlla il contratto di licenza.
+   >**Survey** Manager è un modulo Adobe Campaign  opzionale. Controlla il contratto di licenza.
 
 1. Applicazioni Facebook
 
-   Grazie all&#39;opzione **Social Marketing** ,  Adobe Campaign consente di pubblicare contenuti personalizzati in un&#39;applicazione Facebook. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../social/using/about-social-marketing.md).
+   Grazie all&#39;opzione **Social Marketing**,  Adobe Campaign consente di pubblicare contenuti personalizzati in un&#39;applicazione Facebook. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
-   >**Social Marketing** è un modulo Adobe Campaign  facoltativo. Controlla il contratto di licenza.
+   >**Social** Marketing è un modulo Adobe Campaign  facoltativo. Controlla il contratto di licenza.
 
 La modalità di configurazione della pagina e le configurazioni disponibili possono essere identiche per diversi tipi di applicazioni Web. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-web-forms.md).
