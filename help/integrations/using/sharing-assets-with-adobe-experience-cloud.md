@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Sharing assets with Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
+# Condivisione di risorse con Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
  Risorse Experience Cloud fornisce un archivio unico e centralizzato di risorse pronte per il marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
 
@@ -28,7 +28,7 @@ Quando modificate una consegna e-mail o una pagina di destinazione in  Adobe Cam
 
 Le diverse librerie disponibili sono dettagliate in [questo documento](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
 
-Consultate la sezione [Configurazione dell’accesso alle risorse](../../integrations/using/configuring-access-to-assets.md) per informazioni sulle specifiche collegate a ciascuna libreria.
+Consulta la sezione [Configurazione dell&#39;accesso a Risorse](../../integrations/using/configuring-access-to-assets.md) per informazioni sulle specifiche collegate a ciascuna libreria.
 
 >[!NOTE]
 >
