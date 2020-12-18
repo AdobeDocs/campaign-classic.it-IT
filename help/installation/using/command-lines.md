@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Le seguenti righe di comando richiedono la capacità di accedere al server dell&#39;applicazione. Per le distribuzioni ospitate da  Adobe, questi comandi possono essere eseguiti solo da  Adobe.
 
-## Creazione di un’istanza {#creating-an-instance}
+## Creazione di un&#39;istanza {#creating-an-instance}
 
 La creazione di istanza può essere eseguita utilizzando le righe di comando, con la sintassi seguente:
 
@@ -27,9 +27,9 @@ La creazione di istanza può essere eseguita utilizzando le righe di comando, co
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(dove **eng** e **fra** sono possibili valori per il `[lang]` parametro)
+(dove **eng** e **fra** sono valori possibili per il parametro `[lang]`)
 
-Il comando **nlserver config -addinstance:instance1/demo*/eng** consente di creare un&#39;istanza denominata **instance1** in inglese con la demo della maschera DNS*.
+Il comando **config -addinstance:instance1/demo*/eng** consente di creare un&#39;istanza denominata **instance1** in inglese con la demo della maschera DNS*.
 
 ## Dichiarazione di un database {#declaring-a-database}
 
@@ -39,14 +39,14 @@ Il comando **nlserver config -addinstance:instance1/demo*/eng** consente di crea
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-I seguenti valori sono possibili per il **`[rdbms]`** parametro:
+I seguenti valori sono possibili per il parametro **`[rdbms]`**:
 
 * **postgresql**: per PostgreSQL,
 * **oracle**: per  Oracle,
 * **mssql**: per Microsoft SQL Server,
 * **DB2**: per il motore DB2.
 
-Il seguente comando configura l&#39;istanza **demo** con il server di tipo SQL noto come **base6**, collegato all&#39;account **campagna** e alla relativa **password** sul server **dbsrv** :
+Il seguente comando configura l&#39;istanza **demo** con il server di tipo SQL noto come **base6**, collegata all&#39;account **campaign** e alla relativa **password** sul server **dbsrv**:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
