@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Utilizzo di un modello di modulo web{#using-a-web-form-template}
 
-I modelli di modulo sono configurazioni riutilizzabili che consentono di creare nuovi moduli. Per impostazione predefinita, i modelli di modulo sono memorizzati con i modelli di applicazione Web nel **[!UICONTROL Resources > Templates > Web application templates]** nodo.
+I modelli di modulo sono configurazioni riutilizzabili che consentono di creare nuovi moduli. Per impostazione predefinita, i modelli di modulo sono memorizzati con i modelli di applicazione Web nel nodo **[!UICONTROL Resources > Templates > Web application templates]**.
 
 Da qui è possibile creare nuovi modelli o convertire un modulo esistente in un modello.
 
@@ -31,14 +31,14 @@ Questa azione consente di aprire la finestra per la creazione di applicazioni We
 
 ## Creare un nuovo modello di modulo {#create-a-new-form-template}
 
-Per creare un modello di modulo Web, fare clic con il pulsante destro del mouse sull&#39;elenco dei modelli di applicazione Web e selezionare **[!UICONTROL New]**. È inoltre possibile utilizzare il **[!UICONTROL New]** pulsante situato sopra l&#39;elenco dei modelli.
+Per creare un modello di modulo Web, fare clic con il pulsante destro del mouse sull&#39;elenco dei modelli di applicazione Web e selezionare **[!UICONTROL New]**. È inoltre possibile utilizzare il pulsante **[!UICONTROL New]** sopra l&#39;elenco dei modelli.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Immettete il nome del modello. Nel **[!UICONTROL Instance folder]** campo selezionare la cartella in cui vengono salvati i moduli Web creati in base a questo modello. Il **[!UICONTROL Nature]** campo consente di aggiungere informazioni descrittive per ordinare e/o filtrare i vari modelli di applicazione Web.
+Immettete il nome del modello. Nel campo **[!UICONTROL Instance folder]** selezionare la cartella in cui vengono salvati i moduli Web creati in base a questo modello. Il campo **[!UICONTROL Nature]** consente di aggiungere informazioni descrittive per ordinare e/o filtrare i vari modelli di applicazioni Web.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 
-Fate clic sul **[!UICONTROL Save]** pulsante per creare il modello, quindi create il contenuto del modello e definirne i parametri.
+Fate clic sul pulsante **[!UICONTROL Save]** per creare il modello, quindi create il contenuto del modello e definirne i parametri.
 
 È ora possibile selezionare questo modello al momento della creazione di un nuovo modulo.
