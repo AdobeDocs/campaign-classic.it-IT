@@ -54,7 +54,7 @@ La comunicazione generale tra server e processi viene eseguita secondo il seguen
 >
 >Reindirizzamento e mid-sourcing sono elementi separati, ma il server di tracciamento sarà, in generale, condiviso con i server di mid-sourcing.
 
-## Procedura di installazione e configurazione {#installation-and-configuration-steps-}
+## Passaggi di installazione e configurazione {#installation-and-configuration-steps-}
 
 ### Prerequisiti {#prerequisites}
 
@@ -64,4 +64,4 @@ La comunicazione generale tra server e processi viene eseguita secondo il seguen
 
 ### Installazione e configurazione (distribuzione mid-sourcing) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Fare riferimento al server [](../../installation/using/mid-sourcing-server.md)mid-sourcing.
+Fare riferimento a [Server mid-sourcing](../../installation/using/mid-sourcing-server.md).
