@@ -23,11 +23,11 @@ Per creare una consegna basata su un modello esistente, selezionate il modello d
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-In caso contrario, fare clic sulla **[!UICONTROL Select link]** cartella a destra del campo per sfogliare la struttura ad albero.
+In caso contrario, fate clic sulla cartella **[!UICONTROL Select link]** a destra del campo per individuare la struttura ad albero.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Selezionate la directory desiderata dal **[!UICONTROL Folder]** campo, oppure fate clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
+Selezionate la directory desiderata dal campo **[!UICONTROL Folder]** oppure fate clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
 
 Selezionate il modello di consegna da utilizzare e fate clic su **[!UICONTROL Ok]**.
 
@@ -35,7 +35,7 @@ Selezionate il modello di consegna da utilizzare e fate clic su **[!UICONTROL Ok
 
 Potete avviare l&#39;esecuzione di un modello direttamente dall&#39;elenco dei modelli senza prima creare una consegna. A questo scopo, selezionate il modello da eseguire e fate clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
 
-Potete anche usare **[!UICONTROL File>Actions>Execute the delivery template...]**.
+È inoltre possibile utilizzare **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
@@ -45,4 +45,4 @@ Questa azione genera un recapito nella cartella associata al modello. Il nome di
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione della consegna, consultate [Definizione del contenuto](../../delivery/using/defining-the-email-content.md)dell&#39;e-mail.
+>Per ulteriori informazioni sulla configurazione della consegna, consultate [Definizione del contenuto dell&#39;e-mail](../../delivery/using/defining-the-email-content.md).
