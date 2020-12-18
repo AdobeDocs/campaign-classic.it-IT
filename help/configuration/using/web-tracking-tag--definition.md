@@ -51,7 +51,7 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                         </tr>
                         <tr>
                            <td>
-                              <p>uuid230</p> 
+                              <p>uid230</p> 
                            </td>
                            <td>
                               <p>Cookie permanente</p> 
@@ -79,7 +79,8 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Identificatore di consegna da utilizzare in assenza di cookie di sessione. Questo valore deve essere espresso in esadecimale.
+                              <p>Identificatore di consegna da utilizzare in assenza di cookie di sessione. Questo valore deve essere
+                                 espresso in esadecimale.
                               </p> 
                            </td> 
                         </tr>
@@ -91,7 +92,9 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Parametro utilizzato per identificare l’utente Internet. Il formato di questo parametro è "name=value", dove il nome è un campo dello schema del destinatario. Questo parametro ha la priorità rispetto all’identificatore contenuto nel cookie di sessione.
+                              <p>Parametro utilizzato per identificare l’utente Internet. Il formato di questo parametro è "name=value",
+                                 dove il nome è un campo dello schema del destinatario. Questo parametro ha la priorità
+                                 l’identificatore contenuto nel cookie di sessione.
                               </p> 
                            </td> 
                         </tr> 
@@ -128,6 +131,6 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
 
 Sono possibili i seguenti metodi:
 
-* Inserimento dell’URL nell’attributo **&quot;src&quot;** di un **`<img>`** tag HTML incorporato nella pagina Web da monitorare.
+* Inserimento dell&#39;URL nell&#39;attributo **&quot;src&quot;** di un tag HTML **`<img>`** incorporato nella pagina Web da monitorare.
 * Chiamata diretta al server di reindirizzamento quando viene generata la pagina Web da tracciare.
 
