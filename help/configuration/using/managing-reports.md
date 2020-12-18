@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # Gestione dei report{#managing-reports}
 
-I report basati su uno schema specifico per i destinatari predefiniti  Adobe Campaign (nm:destinatario o schema collegati) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite il mapping di destinazione (vedere la sezione Mappatura [di](../../configuration/using/target-mapping.md) Target).
+I report basati su uno schema specifico per i destinatari predefiniti  Adobe Campaign (nm:destinatario o schema collegato) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite il mapping di destinazione (vedere la sezione [Mappatura destinazione](../../configuration/using/target-mapping.md)).
 
-Per creare nuovi rapporti, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+Per creare nuovi rapporti, fare riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In alcuni casi, è necessario anche mettere nuovi cubi specifici di queste tabelle. I cubetti sono descritti in [questa sezione](../../reporting/using/about-cubes.md).
+In alcuni casi, è necessario anche mettere nuovi cubi specifici di queste tabelle. I cubi sono descritti in [questa sezione](../../reporting/using/about-cubes.md).
 
 Si tratta delle seguenti relazioni:
 
