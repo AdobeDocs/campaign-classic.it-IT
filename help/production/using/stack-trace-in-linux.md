@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Stack trace in Linux{#stack-trace-in-linux}
 
-Una traccia **** dello stack rappresenta una traccia contenuta in un file di tipo **core** . Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
+Una traccia dello stack **traccia** rappresenta una traccia contenuta in un file di tipo **core**. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
 >[!NOTE]
 >
->* Un file **di base** è denominato **core.`<num>`**.
->* **gdb - Il debugger** GNU deve essere installato nel computer.
+>* Un file **core** è denominato **core.`<num>`**.
+>* **gdb - Il** debugger GNU deve essere installato nel computer.
 
 >
 
 
 
- supporto tecnico Adobe Campaign può richiedere questa traccia **** dello stack. Per ottenerlo, immettete i seguenti comandi in Linux:
+ supporto tecnico Adobe Campaign può richiedere questa traccia **stack**. Per ottenerlo, immettete i seguenti comandi in Linux:
 
 ```
 su - neolane
