@@ -14,19 +14,19 @@ ht-degree: 4%
 ---
 
 
-# Esegui tutti i controlli prima dell&#39;invio {#perform-all-checks}
+# Eseguire tutti i controlli prima dell&#39;invio di {#perform-all-checks}
 
 Una volta che il messaggio è pronto, accertati che il contenuto sia visualizzato correttamente, su tutti i dispositivi, e non contenga errori quali personalizzazione errata o collegamenti interrotti.
 
 Prima di inviare il messaggio, assicurati anche che i parametri e la configurazione siano coerenti con la consegna.
 
-## Perché la convalida è fondamentale {#validation-is-key}
+## Perché la convalida è la chiave {#validation-is-key}
 
 Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare. A tal fine, devi convalidare il contenuto del messaggio e i parametri di consegna.
 
 Questo passaggio consente di rilevare eventuali errori e correggerli prima di inviarli alla destinazione principale.
 
-I passaggi per la convalida di una consegna sono descritti [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
+I passaggi per la convalida di una consegna sono presentati [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
 
 ## Rendering della casella in entrata {#inbox-and-email-rendering}
 
@@ -58,7 +58,7 @@ Se disponete di diversi contenuti per la consegna delle e-mail, potete utilizzar
 
 Ulteriori informazioni [in questa sezione](../../workflow/using/a-b-testing.md).
 
-## Assicurati che il messaggio sia stato recapitato {#make-sure-your-message-is-delivered}
+## Assicurati che il messaggio sia stato inviato {#make-sure-your-message-is-delivered}
 
 Come ultimo passo, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente recapitato ai destinatari interessati.
 
@@ -74,7 +74,7 @@ Potete aumentare progressivamente il volume inviato utilizzando le onde. In ques
 
 È possibile impostare l&#39;ordine di invio per le consegne specificando il livello di priorità. Per eseguire questa operazione:
 
-1. Modificate le proprietà di consegna e selezionate la **[!UICONTROL Delivery]** scheda.
+1. Modificate le proprietà di consegna e selezionate la scheda **[!UICONTROL Delivery]**.
 
 1. Definire il livello di priorità per la consegna su una scala da **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
 
@@ -92,7 +92,7 @@ Puoi:
 
 * Per ciascun elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Nella [tipologia](../../campaign/using/about-campaign-typologies.md) scelta, utilizza il **[!UICONTROL Managing affinities with IP addresses]** campo per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Nella [tipologia](../../campaign/using/about-campaign-typologies.md) di tua scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Una volta inviato il messaggio e-mail, controllate l&#39;intestazione per verificare da quale indirizzo IP è stato inviato il messaggio. L’amministratore dell’e-mail deve essere in grado di ottenere le informazioni di intestazione.
 
