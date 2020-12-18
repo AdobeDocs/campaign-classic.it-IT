@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Per  Adobe gli ambienti ospitati, i passaggi di installazione e configurazione principali possono essere eseguiti solo da  Adobe, ad esempio la configurazione del server e la personalizzazione dei file di configurazione dell&#39;istanza. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, consultate [questa pagina](../../installation/using/capability-matrix.md).
+>Per  Adobe gli ambienti ospitati, i passaggi di installazione e configurazione principali possono essere eseguiti solo da  Adobe, ad esempio la configurazione del server e la personalizzazione dei file di configurazione dell&#39;istanza. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, fare riferimento a [questa pagina](../../installation/using/capability-matrix.md).
 
 * **Managed Services (ospitato)**
 
-    Adobe Campaign può essere distribuito come servizio gestito: tutti i componenti di  Adobe Campaign, inclusa l&#39;interfaccia utente, il motore di gestione dell&#39;esecuzione e il database Campaign del cliente, sono ospitati completamente da  Adobe, tra cui l&#39;esecuzione dell&#39;e-mail, le pagine mirror, il server di tracciamento e componenti Web esterni come l&#39;annullamento dell&#39;iscrizione al centro pagina/preferenze e le pagine di destinazione.  Adobe alloca fino a tre istanze nel cloud: Sviluppo, Test/Stage e Produzione. I passaggi di installazione e configurazione per questo modello di hosting sono descritti [in questa sezione](../../installation/using/hosted-model.md).
+    Adobe Campaign può essere distribuito come servizio gestito: tutti i componenti di  Adobe Campaign, inclusa l&#39;interfaccia utente, il motore di gestione dell&#39;esecuzione e il database Campaign del cliente, sono ospitati completamente da  Adobe, tra cui l&#39;esecuzione dell&#39;e-mail, le pagine mirror, il server di tracciamento e componenti Web esterni come l&#39;annullamento dell&#39;iscrizione al centro pagina/preferenze e le pagine di destinazione.  Adobe alloca fino a tre istanze nel cloud: Sviluppo, Test/Stage e Produzione. I passaggi di installazione e configurazione per questo modello di hosting sono presentati [in questa sezione](../../installation/using/hosted-model.md).
 
    ![](assets/deployment_hosted.png)
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * **Ibrido**
 
-   Se implementato come modello ibrido, il software della soluzione Adobe Campaign  risiede in sede presso il sito del cliente, e la gestione dell&#39;esecuzione viene fornita come servizio cloud da  Adobe. &#39;istanza di marketing di Adobe Campaign è installata all&#39;interno del firewall del cliente, pertanto le informazioni personali (PII) rimangono interne e solo i dati richiesti per personalizzare le e-mail vengono inviati al Cloud per l&#39;esecuzione delle e-mail. L&#39;istanza di esecuzione, ospitata in Cloud, riceve le richieste dall&#39;istanza locale per inviare e-mail. Questa istanza personalizza tutte le e-mail e le distribuisce. Nessun dato di alcun tipo viene memorizzato in modo permanente nel cloud. I passaggi di installazione e configurazione per questo modello di hosting sono descritti [in questa sezione](../../installation/using/hybrid-model.md).
+   Se implementato come modello ibrido, il software della soluzione Adobe Campaign  risiede in sede presso il sito del cliente, e la gestione dell&#39;esecuzione viene fornita come servizio cloud da  Adobe. &#39;istanza di marketing di Adobe Campaign è installata all&#39;interno del firewall del cliente, pertanto le informazioni personali (PII) rimangono interne e solo i dati richiesti per personalizzare le e-mail vengono inviati al Cloud per l&#39;esecuzione delle e-mail. L&#39;istanza di esecuzione, ospitata in Cloud, riceve le richieste dall&#39;istanza locale per inviare e-mail. Questa istanza personalizza tutte le e-mail e le distribuisce. Nessun dato di alcun tipo viene memorizzato in modo permanente nel cloud. I passaggi di installazione e configurazione per questo modello di hosting sono presentati [in questa sezione](../../installation/using/hybrid-model.md).
 
    ![](assets/deployment_hybrid.png)
 
