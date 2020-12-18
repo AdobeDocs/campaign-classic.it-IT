@@ -33,7 +33,7 @@ A questo scopo, selezionate il menu appropriato:
 
    ![](assets/wf-right-click-display.png)
 
-   Per ulteriori informazioni, vedere [Tabelle di lavoro e schema](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema)del flusso di lavoro.
+   Per ulteriori informazioni, fare riferimento a [tabelle di lavoro e schema del flusso di lavoro](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Analisi della destinazione
 
@@ -41,7 +41,7 @@ A questo scopo, selezionate il menu appropriato:
 
    Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-I dati di destinazione vengono eliminati durante l&#39;esecuzione del flusso di lavoro. È accessibile solo l&#39;ultima tabella di lavoro. È possibile configurare il flusso di lavoro in modo che tutte le tabelle di lavoro rimangano accessibili: selezionate l’ **[!UICONTROL Keep the result of interim populations between two executions]** opzione nelle proprietà del flusso di lavoro.
+I dati di destinazione vengono eliminati durante l&#39;esecuzione del flusso di lavoro. È accessibile solo l&#39;ultima tabella di lavoro. È possibile configurare il flusso di lavoro in modo che tutte le tabelle di lavoro rimangano accessibili: selezionate l&#39;opzione **[!UICONTROL Keep the result of interim populations between two executions]** nelle proprietà del flusso di lavoro.
 
 Tuttavia, si consiglia di evitare di attivare questa opzione in caso di quantità significative di dati.
 
@@ -59,7 +59,7 @@ Questo consente di utilizzare i dati raccolti tramite un elenco o in base alle r
 
 **[!UICONTROL Target extension]** Gli elementi di personalizzazione di tipo (targetData) non sono disponibili per i flussi di lavoro di targeting. La destinazione di consegna deve essere integrata nel flusso di lavoro e specificata nella transizione in entrata della consegna.
 
-Se desiderate creare delle prove di consegna, il target di prova deve essere costruito in base alla **[!UICONTROL Address substitution]** modalità in modo da poter inserire i dati di personalizzazione. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se desiderate creare delle prove di consegna, la destinazione della prova deve essere costruita in base alla modalità **[!UICONTROL Address substitution]** in modo da poter inserire i dati di personalizzazione. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 Nell&#39;esempio seguente, raccoglieremo un elenco di informazioni sui clienti da utilizzare in un&#39;e-mail personalizzata.
 
@@ -85,23 +85,23 @@ Effettuate le seguenti operazioni:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configurare l&#39;attività del **[!UICONTROL Enrichment]** tipo per riconciliare i dati raccolti con quelli già presenti nel database Adobe Campaign .
+1. Configurate l&#39;attività di tipo **[!UICONTROL Enrichment]** per riconciliare i dati raccolti con quelli già presenti nel database Adobe Campaign .
 
    Qui, la chiave di riconciliazione è il numero di conto:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Quindi configurate i **[!UICONTROL Delivery]** seguenti parametri: viene creato in base a un modello e i destinatari sono specificati dalla transizione in entrata.
+1. Quindi configurate la **[!UICONTROL Delivery]**: viene creato in base a un modello e i destinatari sono specificati dalla transizione in entrata.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Per personalizzare la consegna possono essere utilizzati solo i dati contenuti nella transizione. **i campi di personalizzazione del tipo targetData** sono disponibili solo per la popolazione in entrata dell&#39; **[!UICONTROL Delivery]** attività.
+   >Per personalizzare la consegna possono essere utilizzati solo i dati contenuti nella transizione. **I campi di personalizzazione** targetDattype sono disponibili solo per la popolazione in entrata dell&#39; **[!UICONTROL Delivery]** attività.
 
 1. Nel modello di consegna, utilizzate i campi raccolti nel flusso di lavoro.
 
-   A tal fine, inserire **[!UICONTROL Target extension]** i campi di personalizzazione dei tipi.
+   A tal fine, inserire **[!UICONTROL Target extension]** digitare i campi di personalizzazione.
 
    ![](assets/wf-targetdata-sample-5.png)
 
