@@ -19,11 +19,11 @@ ht-degree: 16%
 
 Dopo aver creato uno o più indirizzi e il corpo del messaggio, puoi visualizzare l’anteprima del messaggio e controllarne la personalizzazione.
 
-1. Nel modello del messaggio, fai clic sulla **[!UICONTROL Preview]** scheda.
+1. Nel modello del messaggio, fai clic sulla scheda **[!UICONTROL Preview]**.
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Select **[!UICONTROL A seed address]** in the drop-down list.
+1. Selezionare **[!UICONTROL A seed address]** nell&#39;elenco a discesa.
 
    ![](assets/messagecenter_preview_002.png)
 
