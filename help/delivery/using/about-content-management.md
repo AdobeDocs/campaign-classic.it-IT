@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Informazioni sulla gestione dei contenuti{#about-content-management}
 
- modulo Adobe Campaign Content Manager è un pacchetto [](../../installation/using/installing-campaign-standard-packages.md) standard Campaign Classic specifico che potete installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+ modulo Adobe Campaign Content Manager è un Campaign Classic specifico [pacchetto standard](../../installation/using/installing-campaign-standard-packages.md) che potete installare per creare newsletter o siti Web periodici. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >
->Questa sezione fa riferimento al modulo Content Management. Per ulteriori informazioni su come progettare contenuti per le consegne tramite e-mail, consulta [questa sezione](../../delivery/using/defining-the-email-content.md).
+>Questa sezione fa riferimento al modulo Content Management. Per ulteriori informazioni su come progettare i contenuti delle comunicazioni e-mail, consultare [questa sezione](../../delivery/using/defining-the-email-content.md).
 
 Il modulo di gestione dei contenuti include funzionalità di gruppo di lavoro, flusso di lavoro e aggregazione dei contenuti. Questo consente di formattare automaticamente un messaggio: email, posta, SMS, web, ecc.
 
