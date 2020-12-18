@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Configurazioni specifiche nella versione v6.02{#specific-configurations-in-v6-02}
 
-Nella sezione seguente viene descritta la configurazione aggiuntiva richiesta per la migrazione dalla versione 6.02. È inoltre necessario configurare le impostazioni dettagliate nella sezione Configurazioni [](../../migration/using/general-configurations.md) generali.
+Nella sezione seguente viene descritta la configurazione aggiuntiva richiesta per la migrazione dalla versione 6.02. È inoltre necessario configurare le impostazioni dettagliate nella sezione [Configurazioni generali](../../migration/using/general-configurations.md).
 
 ## Applicazioni web {#web-applications}
 
@@ -37,13 +37,13 @@ Se non avete utilizzato queste applicazioni Web, eseguite lo script di pulizia s
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Se avete modificato queste applicazioni Web e desiderate continuare a utilizzarle in v7, dovete attivare l’opzione **allowSQLInjection** nelle diverse aree di sicurezza e riavviare il postaggiornamento. Per ulteriori informazioni, consulta la sezione [SQLData](../../migration/using/general-configurations.md#sqldata) .
+Se avete modificato queste applicazioni Web e desiderate continuare a utilizzarle in v7, dovete attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza e riavviare il postaggiornamento. Per ulteriori informazioni, fare riferimento alla sezione [SQLData](../../migration/using/general-configurations.md#sqldata).
 
 ## Facilità di utilizzo: Home page e navigazione {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Se desiderate continuare a utilizzare le applicazioni Web di tipo v6.02, è necessario attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di protezione prima dell&#39;aggiornamento successivo. Fare riferimento alle applicazioni [](#web-applications)Web.
+>Per continuare a utilizzare le applicazioni Web di tipo v6.02, è necessario attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza prima dell&#39;aggiornamento successivo. Fare riferimento a [Applicazioni Web](#web-applications).
 
 Dopo una migrazione dalla versione 6.02, la homepage  Adobe Campaign v6.02 non viene più visualizzata ma resta accessibile e compatibile con  Adobe Campaign v7.
 
@@ -51,9 +51,9 @@ Per continuare a utilizzare la homepage v6.02, dopo la migrazione dovete install
 
 A questo scopo, importate il pacchetto di compatibilità:
 
-Fate clic su **[!UICONTROL Tools > Advanced > Import package]** e scegliete il pacchetto **campaignMigration.xml** nel file **`\nl\datakit\nms\[Your language]\package\optional`**.
+Fare clic su **[!UICONTROL Tools > Advanced > Import package]** e scegliere il pacchetto **campaignMigration.xml** in **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Per consentire l&#39;accesso alle interfacce v6.02 per i tipi di applicazione Web, l&#39;opzione di configurazione del server **sessionTokenOnly** deve essere attivata nel file **serverConf.xml** :
+Per consentire l&#39;accesso alle interfacce dei tipi di applicazione Web v6.02, l&#39;opzione di configurazione del server **sessionTokenOnly** deve essere attivata nel file **serverConf.xml**:
 
 ```
 sessionTokenOnly="true"
@@ -65,11 +65,11 @@ Una volta installato il pacchetto, la home page di  Adobe Campaign v7 viene sost
 
 ![](assets/dashboards.png)
 
-Tutti i collegamenti presenti in questa homepage sono collegati alle schermate v7 ad eccezione degli elenchi (**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]** ecc.) collegamento alla panoramica v6.02 (applicazioni Web).
+Tutti i collegamenti in questa homepage collegamento alle schermate v7, ad eccezione degli elenchi (**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]**, ecc.) collegamento alla panoramica v6.02 (applicazioni Web).
 
 ![](assets/dashboards2.png)
 
-Per aggiungere un’altra panoramica configurata in v6.02, è necessario aggiungerla alla pagina principale dal dashboard. (**[!UICONTROL Administration > Access management > Dashboard]**)
+Per aggiungere un’altra panoramica configurata in v6.02, è necessario aggiungerla alla pagina principale dal dashboard. (**[!UICONTROL Administration > Access management > Dashboard]**).
 
 >[!NOTE]
 >
@@ -79,4 +79,4 @@ Per aggiungere un’altra panoramica configurata in v6.02, è necessario aggiung
 
 Dopo la migrazione dell&#39;istanza di controllo del Centro messaggi, devi ripubblicare i modelli dei messaggi transazionali per consentirne il funzionamento.
 
-In v7, i nomi dei modelli di messaggi transazionali sulle istanze di esecuzione sono cambiati. Sono attualmente contraddistinti dal nome dell&#39;operatore che corrisponde all&#39;istanza di controllo su cui sono creati, ad esempio **control1_template1_rt** (dove **control1** è il nome dell&#39;operatore). Se disponete di un volume significativo di modelli, è consigliabile eliminare vecchi modelli nelle istanze di controllo.
+In v7, i nomi dei modelli di messaggi transazionali sulle istanze di esecuzione sono cambiati. Sono attualmente contraddistinti dal nome dell&#39;operatore che corrisponde all&#39;istanza di controllo in cui sono stati creati, ad esempio **control1_template1_rt** (dove **control1** è il nome dell&#39;operatore). Se disponete di un volume significativo di modelli, è consigliabile eliminare vecchi modelli nelle istanze di controllo.
