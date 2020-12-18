@@ -27,12 +27,12 @@ Esistono due possibili scenari:
 
    ![](assets/operator-passwd.png)
 
-* **Perdita interna** della password (solo per i clienti interni).
+* **Perdita** di password interna (solo per i clienti interni).
 
    Se la password **interna** viene persa, è necessario reinizializzarla. A tal fine, attenersi alla procedura seguente:
 
-   1. Modificate il file **/usr/local/neolane/nl6/conf/serverConf.xml** .
-   1. Vai alla riga **internalPassword** .
+   1. Modificate il file **/usr/local/neolane/nl6/conf/serverConf.xml**.
+   1. Vai alla riga **internalPassword**.
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -61,5 +61,5 @@ Esistono due possibili scenari:
       Confirmation 
       ```
 
-   1. È ora possibile utilizzare la nuova password per connettersi in modalità **interna** .
+   1. È ora possibile utilizzare la nuova password per connettersi in modalità **Internal**.
 
