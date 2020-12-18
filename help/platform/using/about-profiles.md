@@ -35,7 +35,7 @@ I profili possono essere identificati in base allo spazio di archiviazione. Ciò
 
 I destinatari della distribuzione vengono memorizzati nel database come profili contenenti le informazioni ad essi collegate: cognome, nome, indirizzo, iscrizioni, consegne, ecc. Quando create le campagne, potete definire il target delle consegne per una selezione dei profili nella base in base a criteri semplici o avanzati.
 
-Potete anche creare campagne mirate ai destinatari i cui profili sono memorizzati non nel database, ma nei file. Tali consegne sono note come consegne &quot;esterne&quot;. Per ulteriori informazioni su questo tipo di consegna, consulta [questa pagina](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Potete anche creare campagne mirate ai destinatari i cui profili sono memorizzati non nel database, ma nei file. Tali consegne sono note come consegne &quot;esterne&quot;. Per ulteriori informazioni su questo tipo di consegna, fare riferimento a [questa pagina](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 I metodi principali per creare i profili dei destinatari sono i seguenti:
 
@@ -45,43 +45,43 @@ I metodi principali per creare i profili dei destinatari sono i seguenti:
 
 >[!NOTE]
 >
->Per informazioni sulle modalità di importazione di file e moduli Web, fare riferimento a Importazione ed esportazione [generica](../../platform/using/generic-imports-and-exports.md).
+>Per informazioni sull&#39;importazione di file e moduli Web, fare riferimento a [Importazione ed esportazione generiche](../../platform/using/generic-imports-and-exports.md).
 
 ## Profili e destinazioni {#profiles-and-targets}
 
-Il **[!UICONTROL Profiles and targets]** collegamento consente di visualizzare i destinatari memorizzati  database Adobe Campaign. Puoi creare un nuovo destinatario, modificare un destinatario esistente e accedere al suo profilo. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/editing-a-profile.md).
+Il collegamento **[!UICONTROL Profiles and targets]** consente di visualizzare i destinatari memorizzati  database Adobe Campaign. Puoi creare un nuovo destinatario, modificare un destinatario esistente e accedere al suo profilo. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 Consente inoltre di accedere a:
 
-* elenchi; consultate [Creazione e gestione di elenchi](../../platform/using/creating-and-managing-lists.md),
+* elenchi; vedere [Creazione e gestione di elenchi](../../platform/using/creating-and-managing-lists.md),
 * servizi di abbonamento; fare riferimento a [questa pagina](../../delivery/using/managing-subscriptions.md),
 * applicazioni web; fare riferimento a [questa pagina](../../web/using/about-web-applications.md),
-* importazioni ed esportazioni (posti di lavoro); fare riferimento alle importazioni e alle esportazioni [](../../platform/using/generic-imports-and-exports.md)generiche,
+* importazioni ed esportazioni (posti di lavoro); fare riferimento a [Importazioni ed esportazioni generiche](../../platform/using/generic-imports-and-exports.md),
 * flussi di lavoro di targeting; fare riferimento a [questa pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 La pagina dei destinatari consente di eseguire operazioni frequenti sui profili: modifiche, aggiornamenti, aggiunta, eliminazione, ordinamento.
 
-Per manipolazioni di profilo più avanzate, è necessario modificare la struttura  di Adobe Campaign. A tal fine, fate clic sul **[!UICONTROL Explorer]** collegamento nella home page di  Adobe Campaign.
+Per manipolazioni di profilo più avanzate, è necessario modificare la struttura  di Adobe Campaign. A tal fine, fate clic sul collegamento **[!UICONTROL Explorer]** nella home page di  Adobe Campaign.
 
-Per impostazione predefinita, i destinatari sono memorizzati nel **[!UICONTROL Profiles and Targets > Recipients]** nodo della struttura ad albero. Puoi creare i destinatari da questa vista, nonché:
+Per impostazione predefinita, i destinatari sono memorizzati nel nodo **[!UICONTROL Profiles and Targets > Recipients]** della struttura. Puoi creare i destinatari da questa vista, nonché:
 
-* ordinare e filtrare i profili della banca dati; consultate [Opzioni](../../platform/using/filtering-options.md)di filtro,
+* ordinare e filtrare i profili della banca dati; vedere [Opzioni di filtro](../../platform/using/filtering-options.md),
 * spostare, copiare o eliminare profili dal database; vedere [Gestione dei profili](../../platform/using/managing-profiles.md),
 * profili di aggiornamento; vedere [Aggiornamento dei dati](../../platform/using/updating-data.md),
-* i destinatari delle esportazioni; consultate [Esportazione e importazione di profili](../../platform/using/exporting-and-importing-profiles.md),
-* creare gruppi di destinatari; consultate [Creazione e gestione di elenchi](../../platform/using/creating-and-managing-lists.md).
+* i destinatari delle esportazioni; vedere [Esportazione e importazione di profili](../../platform/using/exporting-and-importing-profiles.md),
+* creare gruppi di destinatari; vedere [Creazione e gestione di elenchi](../../platform/using/creating-and-managing-lists.md).
 
-Per accedere a funzionalità e configurazioni avanzate, fai clic sull’ **[!UICONTROL Explorer]** icona .
+Per accedere a funzionalità e configurazioni avanzate, fai clic sull&#39;icona **[!UICONTROL Explorer]**.
 
 ![](assets/d_ncs_user_interface01.png)
 
-Il layout generale di  Adobe Campaign Explorer viene presentato in [Utilizzo  Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+Il layout generale di  Adobe Campaign Explorer è presentato in [Utilizzo  Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 
 >[!NOTE]
 >
->È inoltre possibile visualizzare una visualizzazione avanzata di questo elenco dalla struttura  Adobe Campaign facendo clic sul **[!UICONTROL Profiles and targets > Recipients]** collegamento. La visualizzazione elenco può essere configurata in base alle proprie esigenze. È possibile aggiungere o eliminare colonne, definire l&#39;ordine delle colonne, ordinare i dati e così via. La configurazione della visualizzazione dell&#39;elenco è descritta in [Utilizzo  Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>È inoltre possibile visualizzare una visualizzazione avanzata di questo elenco dalla struttura di Adobe Campaign  facendo clic sul collegamento **[!UICONTROL Profiles and targets > Recipients]**. La visualizzazione elenco può essere configurata in base alle proprie esigenze. È possibile aggiungere o eliminare colonne, definire l&#39;ordine delle colonne, ordinare i dati e così via. La configurazione della visualizzazione dell&#39;elenco è descritta in [Utilizzo  Adobe Campaign Explorer](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
 >
 >Puoi anche definire le visualizzazioni dei destinatari. Per ulteriori informazioni su questa funzionalità, consultare [Cartelle e viste](../../platform/using/access-management.md#folders-and-views).
 
@@ -91,13 +91,13 @@ I profili attivi sono i profili conteggiati a scopo di fatturazione.
 
 >[!NOTE]
 >
->Se siete ospitati su AWS e utilizzate Campaign Classic dalla build 8931, potete anche monitorare il numero di profili attivi utilizzati sulle istanze direttamente dal Pannello di controllo Campaign. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>Se siete ospitati su AWS e utilizzate Campaign Classic dalla build 8931, potete anche monitorare il numero di profili attivi utilizzati sulle istanze direttamente dal Pannello di controllo Campaign. Per ulteriori informazioni, consultare la [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 >
->Il conteggio dei profili attivi è disponibile solo per le istanze **di** Marketing. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid-sourcing) e RT (Message Center / Real-time messaging).
+>Il conteggio dei profili attivi è disponibile solo per **istanze di marketing**. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid-sourcing) e RT (Message Center / Real-time messaging).
 
-“**Profile**” means a record of information (e.g.: a record in the nmsRecipient table or an external table containing a cookie ID, Customer ID, mobile identifier or other information relevant to a particular channel) representing an end-customer, prospect, or lead.
+&quot;**Profilo**&quot; indica un record di informazioni (ad esempio: un record nella tabella nmsRecipient o una tabella esterna contenente un ID cookie, un ID cliente, un identificatore mobile o altre informazioni pertinenti a un canale specifico) che rappresenta un cliente finale, un potenziale o un lead.
 
-La fatturazione riguarda solo i profili **attivi**. Un profilo è considerato attivo se è stato eseguito il targeting o comunicato con il profilo negli ultimi 12 mesi tramite qualsiasi canale.
+La fatturazione riguarda solo i profili che sono **attivi**. Un profilo è considerato attivo se è stato eseguito il targeting o comunicato con il profilo negli ultimi 12 mesi tramite qualsiasi canale.
 
 I profili esclusi durante la preparazione della consegna (regole di tipologia, quarantena) non vengono presi in considerazione. Un profilo di destinazione per più consegne verrà conteggiato una sola volta.
 
@@ -105,7 +105,7 @@ I profili esclusi durante la preparazione della consegna (regole di tipologia, q
 >
 >I canali Facebook e Twitter non vengono presi in considerazione.
 
-Potete avere una panoramica del **[!UICONTROL Number of active profiles]** menu Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** . Il conteggio effettivo viene eseguito dal flusso di lavoro **[!UICONTROL Number of active billing profiles]****[!UICONTROL billingActiveContactCount]**( [)](../../workflow/using/deliveries.md)tecnico, che viene eseguito ogni giorno e aggiunge i nuovi dati al rapporto esistente per il periodo corrente nel **[!UICONTROL Customer metrics]** menu. Ogni periodo dura 12 mesi.
+È possibile avere una panoramica del menu **[!UICONTROL Number of active profiles]** dal Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]**. Il conteggio effettivo viene eseguito dal **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [flusso di lavoro tecnico](../../workflow/using/deliveries.md), che viene eseguito ogni giorno e aggiunge i nuovi dati al rapporto esistente per il periodo corrente nel menu **[!UICONTROL Customer metrics]**. Ogni periodo dura 12 mesi.
 
 ## Video di esercitazione {#create-profiles-video}
 
@@ -115,7 +115,7 @@ Questo video spiega anche la conformità di Adobe Campaign Classic alle normativ
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
 **Vedi anche**
 
