@@ -32,7 +32,7 @@ Di seguito sono elencati gli elementi importanti da tenere presenti durante l&#3
 * Il design del catalogo delle offerte ha un enorme impatto sulle prestazioni di Adobe Campaign Classic.
 * Quando ci sono molte offerte, dividetele in diversi cataloghi di offerte.
 
-### Regole di ammissibilità {#eligibility-rules}
+### Regole di idoneità {#eligibility-rules}
 
 Di seguito sono elencate alcune best practice relative alle regole di idoneità.
 
@@ -60,7 +60,7 @@ Di seguito sono elencate alcune best practice relative alla tabella delle propos
 
 Questa sezione contiene consigli più dettagliati sulla gestione delle offerte e sull&#39;utilizzo del modulo Interaction in Adobe Campaign Classic.
 
-### Utilizzo di più spazi di offerta in una distribuzione tramite e-mail {#multiple-offer-spaces}
+### Utilizzo di più spazi di offerta in una distribuzione di posta elettronica {#multiple-offer-spaces}
 
 Quando si includono le offerte nelle consegne, le offerte vengono generalmente selezionate a monte nel flusso di lavoro Campaign tramite un&#39;attività di arricchimento (o un&#39;altra attività simile).
 
@@ -78,7 +78,7 @@ Nell&#39;esempio seguente, la funzione di rendering HTML è disponibile nell&#39
 
 Questa funzione inserisce codice come: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-Quando si seleziona la proposta, il valore dell&#39; **[!UICONTROL view]** attributo è il seguente:
+Quando si seleziona la proposta, il valore dell&#39;attributo **[!UICONTROL view]** è il seguente:
 * &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering HTML.
 * &quot;offer/view/html&quot;: contenuto html. Non utilizza la funzione di rendering HTML. Include solo il campo HTML.
 
@@ -123,7 +123,7 @@ Quando si utilizza Interazione e si selezionano manualmente le offerte, l&#39;ut
 ### Estensione dello schema nms:offer {#extending-nms-offer-schema}
 
 Quando estendete lo schema nms:offer, accertatevi di seguire la struttura out-of-the-box già impostata:
-* Definire qualsiasi nuovo campo per la memorizzazione del contenuto in `<element name="view">`.
+* Definite qualsiasi nuovo campo per la memorizzazione del contenuto in `<element name="view">`.
 * Ogni nuovo campo deve essere definito due volte. Una volta come campo XML normale e una volta come campo CDATA XML con l&#39;aggiunta di &quot;_jst&quot; al nome. Ad esempio:
 
    ```
@@ -131,4 +131,4 @@ Quando estendete lo schema nms:offer, accertatevi di seguire la struttura out-of
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* Tutti i campi che contengono URL da tracciare devono essere inseriti in `<element name="trackedUrls">` cui si trova in `<element name="view" >`.
+* Tutti i campi che contengono URL da tracciare devono essere inseriti in `<element name="trackedUrls">` che si trova in `<element name="view" >`.
