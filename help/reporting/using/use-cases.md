@@ -25,7 +25,7 @@ Le fasi di implementazione sono descritte di seguito, mentre un elenco esaustivo
 
 ### Identificazione della popolazione da analizzare {#identifying-the-population-to-analyze}
 
-In questo esempio, vogliamo esplorare la popolazione di destinazione delle consegne incluse nella cartella **Newsletters** .
+In questo esempio, vogliamo esplorare la popolazione di destinazione delle consegne incluse nella cartella **Newsletters**.
 
 A tal fine, selezionare le consegne interessate, quindi fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Action > Explore the target...]**.
 
@@ -33,9 +33,9 @@ A tal fine, selezionare le consegne interessate, quindi fare clic con il pulsant
 
 ### Selezione di un tipo di analisi {#selecting-a-type-of-analysis}
 
-Nel primo passaggio dell&#39;assistente, potete selezionare il modello di analisi descrittiva da utilizzare. Per impostazione predefinita,  Adobe Campaign offre due modelli: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. For more on this refer to the [Configuring the qualitative distribution template](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template) section. I vari rendering sono presentati nella sezione [Informazioni sull&#39;analisi](../../reporting/using/about-descriptive-analysis.md) descrittiva.
+Nel primo passaggio dell&#39;assistente, potete selezionare il modello di analisi descrittiva da utilizzare. Per impostazione predefinita,  Adobe Campaign offre due modelli: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. Per ulteriori informazioni, consultare la sezione [Configurazione del modello di distribuzione qualitativa](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). I vari rendering sono presentati nella sezione [Informazioni sull&#39;analisi descrittiva](../../reporting/using/about-descriptive-analysis.md).
 
-Per questo esempio, selezionate il **[!UICONTROL Qualitative distribution]** modello e scegliete una visualizzazione con un grafico e una tabella (array). Assegna al rapporto un nome (&quot;Analisi descrittiva&quot;) e fai clic su **[!UICONTROL Next]**.
+Per questo esempio, selezionate il modello **[!UICONTROL Qualitative distribution]** e scegliete una visualizzazione con un grafico e una tabella (matrice). Assegna al rapporto un nome (&quot;Analisi descrittiva&quot;) e fai clic su **[!UICONTROL Next]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -43,17 +43,17 @@ Per questo esempio, selezionate il **[!UICONTROL Qualitative distribution]** mod
 
 Il passaggio successivo consente di selezionare i dati da visualizzare nella tabella.
 
-Fare clic sul **[!UICONTROL Add...]** collegamento per selezionare la variabile che contiene i dati da visualizzare. Qui vogliamo visualizzare le città dei nostri destinatari della consegna su una sola riga:
+Fare clic sul collegamento **[!UICONTROL Add...]** per selezionare la variabile che contiene i dati da visualizzare. Qui vogliamo visualizzare le città dei nostri destinatari della consegna su una sola riga:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
-Le colonne visualizzeranno il numero di acquisti per società. In questo esempio, gli importi sono aggregati nel campo **Acquisti** Web.
+Le colonne visualizzeranno il numero di acquisti per società. In questo esempio, gli importi sono aggregati nel campo **Acquisti Web**.
 
-Qui, vogliamo definire il binning dei risultati per chiarirne la visualizzazione. A tal fine, selezionare l&#39;opzione di **[!UICONTROL Manual]** binding e impostare le classi di calcolo per i segmenti da visualizzare:
+Qui, vogliamo definire il binning dei risultati per chiarirne la visualizzazione. A tal fine, selezionare l&#39;opzione di associazione **[!UICONTROL Manual]** e impostare le classi di calcolo per i segmenti da visualizzare:
 
 ![](assets/reporting_descriptive_quickstart_step_2a.png)
 
-Quindi, fate clic **[!UICONTROL Ok]** per approvare la configurazione.
+Quindi, fate clic su **[!UICONTROL Ok]** per approvare la configurazione.
 
 Una volta definite le righe e le colonne, è possibile modificarle, spostarle o eliminarle utilizzando la barra degli strumenti.
 
@@ -67,9 +67,9 @@ In questo caso, scegliete l’istogramma.
 
 ![](assets/reporting_descriptive_quickstart_step_3.png)
 
-Le possibili configurazioni dei diversi elementi grafici sono descritte dettagliatamente nella sezione Opzioni [del grafico del rapporto di](../../reporting/using/processing-a-report.md#analysis-report-chart-options) analisi.
+Le possibili configurazioni dei diversi elementi grafici sono descritte dettagliatamente nella sezione [Opzioni grafico per report di analisi](../../reporting/using/processing-a-report.md#analysis-report-chart-options).
 
-### Configurazione della statistica da calcolare {#configuring-the-statistic-to-calculate}
+### Configurazione della statistica per calcolare {#configuring-the-statistic-to-calculate}
 
 Specificare quindi i calcoli da applicare ai dati raccolti. Per impostazione predefinita, la procedura guidata di analisi descrittiva effettua un semplice conteggio dei valori.
 
@@ -77,13 +77,13 @@ Questa finestra consente di definire l&#39;elenco delle statistiche da calcolare
 
 ![](assets/reporting_descriptive_quickstart_step_4.png)
 
-Per creare una nuova statistica, fate clic sul **[!UICONTROL Add]** pulsante. For more on this, refer to [Statistics calculation](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
+Per creare una nuova statistica, fate clic sul pulsante **[!UICONTROL Add]**. Per ulteriori informazioni, fare riferimento a [Calcolo delle statistiche](../../reporting/using/using-the-descriptive-analysis-wizard.md#statistics-calculation).
 
-### Visualizzazione e utilizzo del rapporto {#viewing-and-using-the-report}
+### Visualizzazione e utilizzo del report {#viewing-and-using-the-report}
 
 Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabella e il grafico.
 
-È possibile memorizzare, esportare o stampare i dati utilizzando la barra degli strumenti sopra la tabella. Per ulteriori informazioni, vedere [Elaborazione di un rapporto](../../reporting/using/processing-a-report.md).
+È possibile memorizzare, esportare o stampare i dati utilizzando la barra degli strumenti sopra la tabella. Per ulteriori informazioni, vedere [Elaborazione di un report](../../reporting/using/processing-a-report.md).
 
 ![](assets/reporting_descriptive_quickstart_step_5.png)
 
@@ -93,19 +93,19 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Target**: genera un rapporto di analisi sulla posizione dei potenziali clienti o dei clienti.
 
-1. Aprite la procedura guidata di analisi descrittiva e selezionate **[!UICONTROL Chart]** solo.
+1. Aprite la procedura guidata di analisi descrittiva e selezionate solo **[!UICONTROL Chart]**.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
-   Fate clic **[!UICONTROL Next]** per approvare questo passaggio.
+   Fare clic su **[!UICONTROL Next]** per approvare questo passaggio.
 
-1. Selezionate quindi l’ **[!UICONTROL 2 variables]** opzione e specificate che **[!UICONTROL First variable (abscissa)]** farà riferimento allo stato del destinatario (clienti potenziali) e che la seconda variabile faccia riferimento al paese.
+1. Selezionare quindi l&#39;opzione **[!UICONTROL 2 variables]** e specificare che il **[!UICONTROL First variable (abscissa)]** farà riferimento allo stato del destinatario (potenziali/clienti) e che la seconda variabile faccia riferimento al paese.
 1. Selezionare **[!UICONTROL Cylinders]** come tipo.
 
    ![](assets/s_ncs_user_report_wizard_05.png)
 
-1. Fate clic **[!UICONTROL Next]** e lasciate la **[!UICONTROL Simple count]** statistica predefinita.
-1. Fate clic **[!UICONTROL Next]** per visualizzare il rapporto.
+1. Fare clic su **[!UICONTROL Next]** e lasciare la statistica predefinita **[!UICONTROL Simple count]**.
+1. Fare clic su **[!UICONTROL Next]** per visualizzare il rapporto.
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
@@ -119,20 +119,20 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Target**: analizza i domini e-mail della società.
 
-1. Aprite la procedura guidata di analisi descrittiva e selezionate solo la modalità di **[!UICONTROL Array]** visualizzazione.
+1. Aprite la procedura guidata di analisi descrittiva e selezionate solo la modalità di visualizzazione **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
-   Fate clic sul **[!UICONTROL Next]** pulsante per approvare questo passaggio.
+   Fare clic sul pulsante **[!UICONTROL Next]** per approvare questo passaggio.
 
-1. Selezionare la **[!UICONTROL Company]** variabile come colonna e la **[!UICONTROL Email domain]** variabile come riga.
-1. Mantenere l&#39; **[!UICONTROL By rows]** opzione per l&#39;orientamento delle statistiche: il calcolo statistico viene visualizzato a destra della **[!UICONTROL Email domain]** variabile.
+1. Selezionare la variabile **[!UICONTROL Company]** come colonna e la variabile **[!UICONTROL Email domain]** come riga.
+1. Mantenere l&#39;opzione **[!UICONTROL By rows]** per l&#39;orientamento delle statistiche: il calcolo statistico verrà visualizzato a destra della variabile **[!UICONTROL Email domain]**.
 
    ![](assets/s_ncs_user_report_wizard_03b.png)
 
-   Fate clic **[!UICONTROL Next]** per approvare questo passaggio.
+   Fare clic su **[!UICONTROL Next]** per approvare questo passaggio.
 
-1. Inserire quindi le statistiche da calcolare: mantenete il conteggio predefinito e create una nuova statistica. A questo scopo, fare clic **[!UICONTROL Add]** e selezionare **[!UICONTROL Total percentage distribution]** come operatore.
+1. Inserire quindi le statistiche da calcolare: mantenete il conteggio predefinito e create una nuova statistica. A questo scopo, fare clic su **[!UICONTROL Add]** e selezionare **[!UICONTROL Total percentage distribution]** come operatore.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -140,11 +140,11 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    ![](assets/s_ncs_user_report_wizard_014.png)
 
-1. Fate clic **[!UICONTROL Next]** per visualizzare il rapporto.
+1. Fare clic su **[!UICONTROL Next]** per visualizzare il rapporto.
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
-1. Una volta generato il rapporto di analisi, potete adattare lo schermo in base alle vostre esigenze senza modificare la configurazione. Ad esempio, è possibile cambiare gli assi: fare clic con il pulsante destro del mouse sui nomi di dominio e selezionare **[!UICONTROL Turn]** il menu di scelta rapida.
+1. Una volta generato il rapporto di analisi, potete adattare lo schermo in base alle vostre esigenze senza modificare la configurazione. Ad esempio, è possibile cambiare gli assi: fare clic con il pulsante destro del mouse sui nomi di dominio e selezionare **[!UICONTROL Turn]** dal menu di scelta rapida.
 
    ![](assets/s_ncs_user_report_wizard_07.png)
 
@@ -156,21 +156,21 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Target**: per generare un rapporto di analisi quantitativa sull&#39;età del destinatario
 
-1. Aprite la procedura guidata di analisi descrittiva e selezionate **[!UICONTROL Quantitative distribution]** dall’elenco a discesa.
+1. Aprite la procedura guidata di analisi descrittiva e selezionate **[!UICONTROL Quantitative distribution]** dall&#39;elenco a discesa.
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
-   Fate clic sul **[!UICONTROL Next]** pulsante per approvare questo passaggio.
+   Fare clic sul pulsante **[!UICONTROL Next]** per approvare questo passaggio.
 
-1. Selezionate la **[!UICONTROL Age]** variabile e immettete la relativa etichetta. Specificate se si tratta di un numero intero o meno, quindi fate clic **[!UICONTROL Next]**.
+1. Selezionate la variabile **[!UICONTROL Age]** e immettete la relativa etichetta. Specificare se si tratta di un numero intero, quindi fare clic su **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
-1. Eliminate le **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** e **[!UICONTROL Sum]** le statistiche: non sono necessari qui.
+1. Eliminate le statistiche **[!UICONTROL Deciles]**, **[!UICONTROL Distribution]** e **[!UICONTROL Sum]**: non sono necessari qui.
 
    ![](assets/s_ncs_user_report_wizard_012.png)
 
-1. Fate clic **[!UICONTROL Next]** per visualizzare il rapporto.
+1. Fare clic su **[!UICONTROL Next]** per visualizzare il rapporto.
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
@@ -184,11 +184,11 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. A questo punto potete selezionare l&#39; **[!UICONTROL Existing analyses and reports]** opzione e utilizzare i rapporti creati in precedenza (consultate [Riutilizzare i rapporti e le analisi](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)esistenti) oppure creare una nuova analisi descrittiva. Per eseguire questa operazione, lasciare l&#39; **[!UICONTROL New descriptive analysis from a template]** opzione selezionata per impostazione predefinita.
+1. A questo punto è possibile selezionare l&#39;opzione **[!UICONTROL Existing analyses and reports]** e utilizzare i report creati in precedenza (fare riferimento a [Riutilizzo di report e analisi esistenti](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oppure creare una nuova analisi descrittiva. A questo scopo, lasciate l&#39;opzione **[!UICONTROL New descriptive analysis from a template]** selezionata per impostazione predefinita.
 
    Il resto della configurazione è lo stesso di tutte le analisi descrittive.
 
-### Eseguire l&#39;analisi delle raccomandazioni {#target-analyze-recommendations}
+### Eseguire l&#39;analisi delle raccomandazioni di Target {#target-analyze-recommendations}
 
 L&#39;analisi di una popolazione in un flusso di lavoro richiede che la popolazione rimanga presente nella transizione. Se il flusso di lavoro viene avviato, il risultato relativo alla popolazione potrebbe essere eliminato dalla transizione. Per eseguire un&#39;analisi, potete:
 
@@ -196,7 +196,7 @@ L&#39;analisi di una popolazione in un flusso di lavoro richiede che la popolazi
 
    ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Modificate le proprietà del flusso di lavoro selezionando l&#39; **[!UICONTROL Keep the result of interim populations between two executions]** opzione. Questo consente di avviare un’analisi della transizione scelta, anche se il flusso di lavoro è terminato.
+* Modificate le proprietà del flusso di lavoro selezionando l&#39;opzione **[!UICONTROL Keep the result of interim populations between two executions]**. Questo consente di avviare un’analisi della transizione scelta, anche se il flusso di lavoro è terminato.
 
    ![](assets/s_ncs_user_report_wizard_020.png)
 
@@ -206,10 +206,10 @@ L&#39;analisi di una popolazione in un flusso di lavoro richiede che la popolazi
 
 >[!CAUTION]
 >
->L&#39; **[!UICONTROL Keep the result of interim populations between two executions]** opzione deve essere utilizzata solo nelle fasi di sviluppo, ma mai per un ambiente di produzione.\
->Le popolazioni intermedie vengono automaticamente eliminate una volta raggiunto il termine di conservazione. Tale scadenza è specificata nella **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro.
+>L&#39;opzione **[!UICONTROL Keep the result of interim populations between two executions]** deve essere utilizzata solo nelle fasi di sviluppo, ma non mai per un ambiente di produzione.\
+>Le popolazioni intermedie vengono automaticamente eliminate una volta raggiunto il termine di conservazione. Tale scadenza è specificata nella scheda delle proprietà del flusso di lavoro **[!UICONTROL Execution]**.
 
-## Analisi dei registri di tracciamento dei destinatari {#analyzing-recipient-tracking-logs}
+## Analisi dei registri di monitoraggio dei destinatari {#analyzing-recipient-tracking-logs}
 
 La procedura guidata di analisi descrittiva può generare rapporti su altre tabelle di lavoro. Questo significa che puoi analizzare i registri di consegna creando un rapporto dedicato.
 
@@ -217,11 +217,11 @@ In questo esempio, vogliamo analizzare il tasso di reattività dei destinatari d
 
 A questo scopo, eseguire i seguenti passaggi:
 
-1. Aprire la procedura guidata di analisi descrittiva dal **[!UICONTROL Tools > Descriptive analysis]** menu e modificare la tabella di lavoro predefinita. Selezionate **[!UICONTROL Recipient tracking log]** e aggiungete un filtro per escludere le prove di stampa e includere le newsletter.
+1. Aprire la procedura guidata di analisi descrittiva dal menu **[!UICONTROL Tools > Descriptive analysis]** e modificare la tabella di lavoro predefinita. Selezionate **[!UICONTROL Recipient tracking log]** e aggiungete un filtro per escludere le prove di stampa e includere le newsletter.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
-   Selezionare una visualizzazione di tabella e fare clic su **[!UICONTROL Next]**.
+   Selezionare la visualizzazione di una tabella e fare clic su **[!UICONTROL Next]**.
 
 1. Nella finestra successiva, specificare che l&#39;analisi riguarda le consegne.
 
@@ -233,11 +233,11 @@ A questo scopo, eseguire i seguenti passaggi:
 
    Qui, per ogni newsletter, la tabella mostrerà: il numero di aperture, il numero di clic, il tasso di reattività (in percentuale).
 
-1. Aggiungete una statistica per il conteggio del numero di clic: definire il filtro appropriato nella **[!UICONTROL Filter]** scheda.
+1. Aggiungete una statistica per il conteggio del numero di clic: definire il filtro appropriato nella scheda **[!UICONTROL Filter]**.
 
    ![](assets/reporting_descriptive_sample_tracking_3.png)
 
-1. Fate clic sulla **[!UICONTROL General]** scheda per rinominare l&#39;etichetta e l&#39;alias delle statistiche:
+1. Fate clic sulla scheda **[!UICONTROL General]** per rinominare l&#39;etichetta e l&#39;alias delle statistiche:
 
    ![](assets/reporting_descriptive_sample_tracking_4.png)
 
@@ -245,15 +245,15 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/reporting_descriptive_sample_tracking_5.png)
 
-1. Fate clic sulla **[!UICONTROL General]** scheda per rinominare l&#39;etichetta delle statistiche e il relativo alias:
+1. Fate clic sulla scheda **[!UICONTROL General]** per rinominare l&#39;etichetta delle statistiche e il relativo alias:
 
    ![](assets/reporting_descriptive_sample_tracking_6.png)
 
-1. Aggiungete la terza statistica e selezionate l&#39; **[!UICONTROL Calculated field]** operatore per misurare il tasso di reattività.
+1. Aggiungete la terza statistica e selezionate l&#39;operatore **[!UICONTROL Calculated field]** per misurare il tasso di reattività.
 
    ![](assets/reporting_descriptive_sample_tracking_7.png)
 
-   Passare al **[!UICONTROL User function]** campo e immettere la formula seguente:
+   Andate al campo **[!UICONTROL User function]** e immettete la seguente formula:
 
    ```
    @clic / @open * 100
@@ -263,17 +263,17 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/reporting_descriptive_sample_tracking_8.png)
 
-   Infine, specificate se i valori sono visualizzati come percentuale: per eseguire questa operazione, deselezionare l&#39; **[!UICONTROL Default formatting]** opzione nella **[!UICONTROL Advanced]** scheda e selezionare **[!UICONTROL Percentage]** senza un separatore decimale.
+   Infine, specificate se i valori sono visualizzati come percentuale: a tal fine, deselezionare l&#39;opzione **[!UICONTROL Default formatting]** nella scheda **[!UICONTROL Advanced]** e selezionare **[!UICONTROL Percentage]** senza un separatore decimale.
 
    ![](assets/reporting_descriptive_sample_tracking_10.png)
 
-1. Fate clic **[!UICONTROL Next]** per visualizzare il rapporto.
+1. Fare clic su **[!UICONTROL Next]** per visualizzare il rapporto.
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
 ## Analisi dei registri di esclusione della distribuzione {#analyzing-delivery-exclusion-logs}
 
-Se l&#39;analisi riguarda una consegna, potete analizzare la popolazione esclusa. A tal fine, selezionate le consegne da analizzare e fate clic con il pulsante destro del mouse per accedere al **[!UICONTROL Action > Explore exclusions]** menu.
+Se l&#39;analisi riguarda una consegna, potete analizzare la popolazione esclusa. A tal fine, selezionare le consegne da analizzare e fare clic con il pulsante destro del mouse per accedere al menu **[!UICONTROL Action > Explore exclusions]**.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
