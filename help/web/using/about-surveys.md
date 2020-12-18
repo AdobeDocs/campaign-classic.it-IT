@@ -10,20 +10,20 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Get started with surveys{#about-surveys}
+# Introduzione ai sondaggi{#about-surveys}
 
  Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una rete extranet, o moduli di notifica, inclusi i dati del database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
 
-Il modulo **Survey** opzionale consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni sul profilo, per iscriversi o annullare l’iscrizione a un servizio di informazioni o a un modulo di partecipazione al concorso. Una volta raccolte, le risposte vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente attraverso le risposte fornite ai questionari. Potete visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
+Il modulo opzionale **Survey** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare le informazioni sul profilo, per iscriversi o annullarne la sottoscrizione a un servizio di informazione o a un modulo di partecipazione al concorso. Una volta raccolte, le risposte vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente attraverso le risposte fornite ai questionari. Potete visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
 
-Questo capitolo descrive il metodo per la creazione e la gestione di **sondaggi**, gestione di campi e pagine, modalità di memorizzazione e record.
+Questo capitolo descrive il metodo per la creazione e la gestione di **Survey**, la gestione di campi e pagine, le modalità di memorizzazione e i record.
 
-La procedura per la creazione di un modulo Web standard è descritta in [questa sezione](../../web/using/about-web-forms.md).
+I passaggi per la creazione di un modulo Web standard sono descritti in [questa sezione](../../web/using/about-web-forms.md).
 
 La gestione delle applicazioni Web è dettagliata in [questa sezione](../../web/using/about-web-applications.md). Per ulteriori informazioni, consultare questo capitolo.
 
@@ -52,15 +52,15 @@ In  Adobe Campaign, le applicazioni Web in generale consentono di accedere alle 
 
 Il modulo opzionale per la creazione di sondaggi (**Survey**) offre le seguenti funzionalità aggiuntive:
 
-* Estensione dinamica del database: creazione di risposte che non fanno parte del modello dati iniziale. Per ulteriori informazioni, vedere [Memorizzazione delle risposte](../../web/using/managing-answers.md#storing-collected-answers)raccolte.
-* Gestione del punteggio. For more on this, refer to [Score management](../../web/using/managing-answers.md#score-management).
-* Visualizzazione casuale delle domande. For more on this, refer to [Adding questions](../../web/using/building-a-survey.md#adding-questions).
-* Tracciamento delle risposte in tempo reale. For more on this, refer to [Response tracking](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
-* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta [Rapporti sulle indagini](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Estensione dinamica del database: creazione di risposte che non fanno parte del modello dati iniziale. Per ulteriori informazioni, consultare [Memorizzazione delle risposte raccolte](../../web/using/managing-answers.md#storing-collected-answers).
+* Gestione del punteggio. Per ulteriori informazioni, consultare [Gestione punteggio](../../web/using/managing-answers.md#score-management).
+* Visualizzazione casuale delle domande. Per ulteriori informazioni, consultare [Aggiunta di domande](../../web/using/building-a-survey.md#adding-questions).
+* Tracciamento delle risposte in tempo reale. Per ulteriori informazioni, vedere [Tracciamento delle risposte](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Generazione di rapporti dedicati. Per ulteriori informazioni, fare riferimento a [Rapporti sulle indagini](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
 
-## Procedure di implementazione delle indagini {#surveys-implementation-steps}
+## Controlla i passaggi di implementazione {#surveys-implementation-steps}
 
 Per creare e distribuire un sondaggio ed elaborarne i risultati, effettuate le seguenti operazioni:
 
@@ -76,12 +76,12 @@ Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi
 
 ## Configurazione sondaggi {#surveys-configuration}
 
-I sondaggi sono memorizzati nel **[!UICONTROL Resources > Online > Web Applications]** nodo della struttura di Adobe Campaign . Le configurazioni si trovano nelle cartelle seguenti:
+I sondaggi sono memorizzati nel nodo **[!UICONTROL Resources > Online > Web Applications]** della struttura di Adobe Campaign . Le configurazioni si trovano nelle cartelle seguenti:
 
 * **[!UICONTROL Administration > Configuration > Form rendering]**: contiene i modelli di rendering per la presentazione di moduli Web (applicazioni e sondaggi).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contiene i modelli di modulo. Per creare un modulo, è necessario iniziare con un modello.
 
 >[!NOTE]
 >
->Le informazioni sulla configurazione sono disponibili in [questa sezione](../../web/using/about-web-forms.md).
+>Le informazioni di configurazione sono disponibili in [questa sezione](../../web/using/about-web-forms.md).
 
