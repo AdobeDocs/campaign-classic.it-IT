@@ -19,8 +19,8 @@ ht-degree: 8%
 
 Il compito principale di queste attività consiste nell&#39;attendere un evento. Può essere, ad esempio, la ricezione di un file, un&#39;e-mail o un segnale inviato dal programma.
 
-* Raccoglitore file: controlla l&#39;arrivo di uno o più file in una directory e abilita la transizione per ogni file ricevuto. Fare riferimento a Raccolta [file](../../workflow/using/file-collector.md).
-* Trasferimento file: trasferisce un file su un server. Fare riferimento a Trasferimento [](../../workflow/using/file-transfer.md)file.
-* Download Web: scarica un file dal Web. Fare riferimento al download [](../../workflow/using/web-download.md)Web.
-* Ricezione SMS ed e-mail: recupera ed elabora e-mail o SMS. Fare riferimento a SMS [in](../../workflow/using/inbound-sms.md) ingresso e e-mail in [ingresso](../../workflow/using/inbound-emails.md).
+* Raccoglitore file: controlla l&#39;arrivo di uno o più file in una directory e abilita la transizione per ogni file ricevuto. Fare riferimento a [Raccolta file](../../workflow/using/file-collector.md).
+* Trasferimento file: trasferisce un file su un server. Fare riferimento a [Trasferimento file](../../workflow/using/file-transfer.md).
+* Download Web: scarica un file dal Web. Fare riferimento a [Download Web](../../workflow/using/web-download.md).
+* Ricezione SMS ed e-mail: recupera ed elabora e-mail o SMS. Fare riferimento a [SMS in ingresso](../../workflow/using/inbound-sms.md) e [e-mail in ingresso](../../workflow/using/inbound-emails.md).
 
