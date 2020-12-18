@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -35,12 +35,12 @@ A questo scopo, eseguire i seguenti passaggi:
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Puoi scegliere se memorizzare le esclusioni (**escluso**), con i messaggi (**broadcast**) o in una tabella separata.
+   È possibile scegliere se memorizzare le esclusioni (**escludere**), con i messaggi (**broadcast**) o in una tabella separata.
 
-   Puoi anche scegliere se gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
+   Potete anche scegliere se gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
 
 1. Selezionare quindi le estensioni da prendere in considerazione. Il tipo di estensione dipende dai parametri e dalle opzioni della piattaforma (visualizzate il contratto di licenza).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Fate clic sul **[!UICONTROL Save]** pulsante per avviare la creazione della mappatura della consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
+   Fate clic sul pulsante **[!UICONTROL Save]** per avviare la creazione della mappatura della consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
