@@ -28,6 +28,6 @@ In caso di errore, accertatevi che i seguenti elementi siano configurati corrett
 
 * **Origine dati AMC**
 
-   In **[!UICONTROL Administration > Platform > AMC Data sources]**, verificate che l&#39;origine dati AMC sia impostata correttamente.
+   In **[!UICONTROL Administration > Platform > AMC Data sources]**, verificare che l&#39;origine dati AMC sia impostata correttamente.
 
 Può accadere che alcuni dati manchino durante la condivisione di un&#39;audience tramite il servizio di base Persone o durante l&#39;importazione di un&#39;audience. Vengono trasferiti solo i record per i quali l&#39;ID (&#39;ID visitatore&#39; o &#39;ID dichiarato&#39;) è stato riconciliato con la dimensione del profilo. Gli ID dai segmenti del servizio di base Persone che non sono riconosciuti da  Adobe Campaign non vengono importati.
