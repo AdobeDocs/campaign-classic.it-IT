@@ -60,7 +60,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    vi config-prod.xml
    ```
 
-   Aggiungete il **carattere u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
+   Aggiungete il carattere **u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
 
    ```
    <web>
