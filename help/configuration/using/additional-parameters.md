@@ -44,7 +44,7 @@ Per definire parametri aggiuntivi, è necessario estendere questo schema.
 
 Puoi visualizzare i valori di questi parametri configurando l&#39;elenco del registro di tracciamento (di una consegna o di un destinatario).
 
-## Configurazione server di reindirizzamento {#redirection-server-configuration}
+## Reindirizzamento della configurazione del server {#redirection-server-configuration}
 
 Nella configurazione del server, potete definire il numero massimo di caratteri da prendere in considerazione per i parametri di tracciamento Web.
 
@@ -52,11 +52,11 @@ Nella configurazione del server, potete definire il numero massimo di caratteri 
 >
 >L&#39;aumento del numero massimo di caratteri da prendere in considerazione può influenzare le prestazioni di monitoraggio Web della piattaforma.
 
-A tal fine, modificate l’attributo **webTrackingParamSize** dell’ **`<trackinglogd>`** elemento nel file **serverConf.xml** . Questo file viene salvato nella sottodirectory **conf** della directory di installazione di Adobe Campaign .
+A tal fine, modificate l&#39;attributo **webTrackingParamSize** dell&#39;elemento **`<trackinglogd>`** nel file **serverConf.xml**. Questo file viene salvato nella sottodirectory **conf** della directory di installazione di Adobe Campaign .
 
 **Esempio**:
 
-Il valore predefinito è 64 caratteri. Questo valore consente di tenere conto dei parametri standard **amount** and **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxxx&quot;).
+Il valore predefinito è 64 caratteri. Questo valore consente di tenere conto dei parametri standard **amount** e **article** (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxxxx&quot;).
 
 Tenendo conto di entrambi i parametri (dimensione del nome + dimensione del valore) indicati nell&#39;esempio dello schema di estensione sopra, potete modificare la configurazione in modo da prendere in considerazione 100 caratteri (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;).
 
@@ -74,14 +74,14 @@ Quando la configurazione è stata modificata, è necessario:
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **sistema arrestare il server**
 
-* In Linux, eliminate i segmenti di memoria condivisa utilizzando il comando **ipcrm** ,
+* In Linux, eliminate i segmenti di memoria condivisa utilizzando il comando **ipcrm**,
 * Riavviate il server Adobe Campaign : **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **system start nlserver**
+   >A partire da 20.1, si consiglia di utilizzare il seguente comando (per Linux): **sistema avviare il server**
 
 * Riavviate il server Web.
 
@@ -111,5 +111,5 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Per Linux, se si aumentano le dimensioni dei parametri **webTrackingParamSize** o **maxSharedLogs** , potrebbe essere necessario aumentare la dimensione della memoria condivisa (SHM).
+>Per Linux, se si aumentano le dimensioni dei parametri **webTrackingParamSize** o **maxSharedLogs**, potrebbe essere necessario aumentare le dimensioni della memoria condivisa (SHM).
 
