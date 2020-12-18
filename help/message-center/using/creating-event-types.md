@@ -17,10 +17,10 @@ ht-degree: 10%
 
 # Creazione di tipi di evento{#creating-event-types}
 
-I tipi di evento destinati ad essere elaborati da  Adobe Campaign devono essere creati nell&#39;istanza di controllo. Questa operazione può essere eseguita tramite la **[!UICONTROL Administration > Platform > Enumerations]** cartella della struttura ad albero. Ogni tipo di evento corrisponde a un valore nell&#39; **[!UICONTROL eventType]** enumerazione. Può trattarsi di una conferma dell&#39;ordine, una modifica alla password o alla consegna dell&#39;ordine, ecc.
+I tipi di evento destinati ad essere elaborati da  Adobe Campaign devono essere creati nell&#39;istanza di controllo. Questa operazione può essere eseguita tramite la cartella **[!UICONTROL Administration > Platform > Enumerations]** della struttura. Ogni tipo di evento corrisponde a un valore nell&#39;enumerazione **[!UICONTROL eventType]**. Può trattarsi di una conferma dell&#39;ordine, una modifica alla password o alla consegna dell&#39;ordine, ecc.
 
 ![](assets/messagecenter_eventtype_enum_001.png)
 
-Per ulteriori informazioni sugli elenchi dettagliati, vedere Gestione dell&#39; [enumerazione](../../platform/using/managing-enumerations.md).
+Per ulteriori informazioni sugli elenchi dettagliati, fare riferimento a [Gestione enumerazione](../../platform/using/managing-enumerations.md).
 
 Una volta creati i valori elenco dettagliati, disconnettetevi e tornate all’istanza per rendere effettiva la creazione.
