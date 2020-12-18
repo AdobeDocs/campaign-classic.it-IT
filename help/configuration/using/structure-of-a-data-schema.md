@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Struttura di uno schema di dati{#structure-of-a-data-schema}
 
-La struttura di uno schema dati è visualizzata sotto forma di struttura ad albero. Per visualizzarlo graficamente nella console client Adobe Campaign , selezionate lo schema di destinazione e fate clic sulla **[!UICONTROL Structure]** sottoscheda.
+La struttura di uno schema dati è visualizzata sotto forma di struttura ad albero. Per visualizzarlo graficamente nella console client Adobe Campaign , selezionate lo schema di destinazione e fate clic sulla sottoscheda **[!UICONTROL Structure]**.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
