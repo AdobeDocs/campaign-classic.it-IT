@@ -23,9 +23,9 @@ A tal fine, accedete a un database esistente e eseguite i seguenti passaggi:
 
 1. Dichiarare una nuova istanza
 
-   Accedere **[!UICONTROL Tools > Advanced > Declare a new instance...]** per avviare la procedura guidata.
+   Fare clic su **[!UICONTROL Tools > Advanced > Declare a new instance...]** per avviare la procedura guidata.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Specificate i parametri della nuova istanza. Per ulteriori informazioni, consultate [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+   Specificate i parametri della nuova istanza. Per ulteriori informazioni, fare riferimento a [Creazione di un&#39;istanza e accesso a](../../installation/using/creating-an-instance-and-logging-on.md).
 
