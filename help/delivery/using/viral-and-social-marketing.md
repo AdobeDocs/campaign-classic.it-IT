@@ -37,7 +37,7 @@ Per consentire ai destinatari della distribuzione di condividere il contenuto de
 
 >[!NOTE]
 >
->Per impostazione predefinita, questo collegamento non è disponibile nell&#39;elenco dei blocchi. È possibile accedervi facendo clic **[!UICONTROL Other...]** e selezionando il **[!UICONTROL Social network sharing links]** blocco.
+>Per impostazione predefinita, questo collegamento non è disponibile nell&#39;elenco dei blocchi. È possibile accedervi facendo clic su **[!UICONTROL Other...]** e selezionando il blocco **[!UICONTROL Social network sharing links]**.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -49,7 +49,7 @@ Quando il destinatario fa clic sull&#39;icona di uno dei social network visualiz
 
 >[!NOTE]
 >
->Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le vostre esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, andate al **[!UICONTROL Resources > Campaign management > Personalization blocks]** nodo della struttura di Adobe Campaign .
+>Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le tue esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, andate al nodo **[!UICONTROL Resources > Campaign management > Personalization blocks]** della struttura  Adobe Campaign.
 
 ## Marketing virtuale: inoltrare a un amico {#viral-marketing--forward-to-a-friend}
 
@@ -59,8 +59,8 @@ L&#39;inoltro dei messaggi si basa sugli stessi principi dei collegamenti dei so
 
 Applicate le seguenti fasi:
 
-1. Aggiungi il blocco di **[!UICONTROL Social network sharing links]** personalizzazione nel corpo del messaggio originale.
-1. Il destinatario del messaggio può fare clic sull&#39; **[!UICONTROL Email]** icona per inviare il messaggio a uno o più amici.
+1. Aggiungi il blocco di personalizzazione **[!UICONTROL Social network sharing links]** nel corpo del messaggio originale.
+1. Il destinatario del messaggio può fare clic sull&#39;icona **[!UICONTROL Email]** per inviare il messaggio a uno o più amici.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -68,13 +68,13 @@ Applicate le seguenti fasi:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   Il messaggio viene inviato quando il destinatario principale fa clic sul **[!UICONTROL Next]** pulsante.
+   Il messaggio viene inviato quando il destinatario principale fa clic sul pulsante **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
-   >Il contenuto di questo messaggio può essere personalizzato per soddisfare le tue esigenze. Viene creato in base al **[!UICONTROL Transfer of original message]** modello, memorizzato nel **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nodo.
+   >Il contenuto di questo messaggio può essere personalizzato per soddisfare le tue esigenze. Viene creato in base al modello **[!UICONTROL Transfer of original message]**, memorizzato nel nodo **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
    >
-   >È inoltre possibile modificare il modulo di inoltro del messaggio reso disponibile al referente. A tal fine, è necessario modificare l&#39;applicazione Web del modulo **** Viral memorizzata nel **[!UICONTROL Resources > Online > Web applications]** nodo.
+   >È inoltre possibile modificare il modulo di inoltro del messaggio reso disponibile al referente A tal fine, è necessario modificare l&#39;applicazione Web **Viral form** memorizzata nel nodo **[!UICONTROL Resources > Online > Web applications]**.
 
 1. Nel messaggio inoltrato, un collegamento consente al referente di salvare il proprio profilo nel database. A tal fine è previsto un modulo di iscrizione.
 
@@ -82,23 +82,23 @@ Applicate le seguenti fasi:
 
    >[!NOTE]
    >
-   >Questa configurazione può essere adattata. A tal fine, è necessario modificare l&#39;applicazione Web iscrizione **** Destinatario memorizzata nel **[!UICONTROL Resources > Online > Web applications]** nodo.
+   >Questa configurazione può essere adattata. A tal fine, è necessario modificare l&#39;applicazione Web **Recipient subscription** memorizzata nel nodo **[!UICONTROL Resources > Online > Web applications]**.
    >
-   >For more information on Web applications, refer to [this section](../../web/using/about-web-applications.md).
+   >Per ulteriori informazioni sulle applicazioni Web, consultare [questa sezione](../../web/using/about-web-applications.md).
 
-   Una volta convalidati, viene loro inviato un messaggio di conferma: verranno registrati per sempre solo dopo aver attivato il collegamento nel messaggio di conferma. Questo messaggio viene creato in base al **[!UICONTROL Registration confirmation]** modello, memorizzato nel **[!UICONTROL Administration > Campaign management > Technical delivery templates]** nodo.
+   Una volta convalidati, viene loro inviato un messaggio di conferma: verranno registrati per sempre solo dopo aver attivato il collegamento nel messaggio di conferma. Questo messaggio viene creato in base al modello **[!UICONTROL Registration confirmation]**, memorizzato nel nodo **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 
-   Il riferimento viene aggiunto alla cartella **Recipients** del database e viene sottoscritto (per impostazione predefinita) al servizio informazioni **Newsletter** .
+   Il riferimento viene aggiunto alla cartella **Recipients** del database e per impostazione predefinita viene iscritto al servizio di informazioni **Newsletter**.
 
 ## Tracciamento della condivisione social network {#tracking-social-network-sharing}
 
 La condivisione e l&#39;accesso alle informazioni condivise vengono tracciati. Queste informazioni raccolte da  Adobe Campaign sono accessibili in due punti:
 
-* nella **[!UICONTROL Tracking]** scheda della consegna (o singolarmente per ciascun destinatario):
+* nella scheda **[!UICONTROL Tracking]** della consegna (o singolarmente per ciascun destinatario):
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* in una relazione dedicata **[!UICONTROL Sharing to social networks]** :
+* in un rapporto dedicato **[!UICONTROL Sharing to social networks]**:
 
    ![](assets/s_ncs_user_viral_report.png)
 
