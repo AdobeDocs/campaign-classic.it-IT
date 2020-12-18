@@ -28,23 +28,23 @@ Per eseguire questa operazione:
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Create un nuovo flusso di lavoro, ad esempio da **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Aggiungete un&#39; **[!UICONTROL File transfer]** attività al flusso di lavoro e configuratela specificando
+1. Aggiungi un&#39;attività **[!UICONTROL File transfer]** nel flusso di lavoro e configurala specificando
 
    * L&#39;account esterno da utilizzare per connettersi al server S3 o (S)FTP.
    * Percorso del file sul server S3 o (S)FTP.
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Aggiungete un&#39; **[!UICONTROL Delivery]** attività e collegatela alla transizione in uscita dell&#39; **[!UICONTROL File transfer]** attività. Configuratelo come segue:
+1. Aggiungete un&#39;attività **[!UICONTROL Delivery]** e collegatela alla transizione in uscita dell&#39;attività **[!UICONTROL File transfer]**. Configuratelo come segue:
 
    * Consegna: A seconda delle esigenze, può trattarsi di una consegna specifica già creata nel sistema o di una nuova consegna basata su un modello esistente.
    * Destinatari: In questo esempio, si considera che la destinazione sia specificata nella consegna stessa.
-   * Contenuto: Anche se il contenuto viene importato nell&#39;attività precedente, selezionate **[!UICONTROL Specified in the delivery]**. Poiché il contenuto viene importato direttamente da un file ubicato in un server remoto, non dispone di alcun identificatore quando viene elaborato dal flusso di lavoro e non può essere identificato come proveniente dall&#39;evento in ingresso.
-   * Azione da eseguire: Selezionate **[!UICONTROL Save]** per salvare la consegna ed essere in grado di accedervi da **[!UICONTROL Campaign management]** > una volta **[!UICONTROL Deliveries]** eseguito il flusso di lavoro.
+   * Contenuto: Anche se il contenuto è importato nell&#39;attività precedente, selezionate **[!UICONTROL Specified in the delivery]**. Poiché il contenuto viene importato direttamente da un file ubicato in un server remoto, non dispone di alcun identificatore quando viene elaborato dal flusso di lavoro e non può essere identificato come proveniente dall&#39;evento in ingresso.
+   * Azione da eseguire: Selezionare **[!UICONTROL Save]** per salvare la consegna ed essere in grado di accedervi da **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** dopo l&#39;esecuzione del flusso di lavoro.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. Nella **[!UICONTROL Script]** scheda dell&#39; **[!UICONTROL Delivery]** attività, aggiungete il comando seguente per caricare il contenuto del file importato nel recapito:
+1. Nella scheda **[!UICONTROL Script]** dell&#39;attività **[!UICONTROL Delivery]**, aggiungere il comando seguente per caricare il contenuto del file importato nella consegna:
 
    ```
    delivery.content.md.source=loadFile(vars.filename)
@@ -56,4 +56,4 @@ Per eseguire questa operazione:
 
 >[!NOTE]
 >
->Le procedure ottimali e la risoluzione dei problemi relativi all&#39;utilizzo del server SFTP sono descritte [in dettaglio in questa pagina](../../platform/using/sftp-server-usage.md).
+>Le procedure ottimali e la risoluzione dei problemi relativi all&#39;utilizzo del server SFTP sono descritte in modo dettagliato [in questa pagina](../../platform/using/sftp-server-usage.md).
