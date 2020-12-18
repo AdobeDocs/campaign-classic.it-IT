@@ -31,16 +31,16 @@ Il ciclo di workflow presenta tre fasi principali.
 
    Un flusso di lavoro è &quot;Completato&quot; quando non sono più presenti attività in corso o quando un operatore ha esplicitamente arrestato l&#39;istanza.
 
-Ad esempio, le attività **Inizio** e **Consegna** sono descritte mentre l&#39;attività **Approvazione** lampeggia nel flusso di lavoro seguente.
+Ad esempio, le attività **Start** e **Delivery** vengono evidenziate mentre l&#39;attività **Approval** lampeggia nel flusso di lavoro sottostante.
 
 ![](assets/new-workflow-6.png)
 
 Ciò significa che le prime due attività sono state eseguite correttamente e che l&#39;approvazione è in corso, ovvero è stata creata ma non ancora completata.
 
-I caratteri **574 -Ok** visualizzati sopra la transizione dopo l&#39;attività **Consegna** indicano che la preparazione della consegna ha interessato 574 destinatari e che l&#39;operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
+I caratteri **574 -Ok** visualizzati sopra la transizione dopo l&#39;attività **Delivery** indicano che la preparazione della consegna ha interessato 574 destinatari e che l&#39;operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
 
-Il flusso di lavoro viene avviato e è in attesa che un operatore appartenente al gruppo specificato nell&#39;attività di **approvazione** prenda una decisione. Gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare ricevono una notifica.
+Il flusso di lavoro viene avviato e è in attesa che un operatore appartenente al gruppo specificato nell&#39;attività **Approval** prenda una decisione. Gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare ricevono una notifica.
 
-La gestione degli operatori è descritta in questa [sezione](../../platform/using/access-management.md).
+La gestione dell&#39;operatore è descritta in questa sezione [](../../platform/using/access-management.md).
 
-Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
+Per ulteriori informazioni su come monitorare i flussi di lavoro, consultare [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
