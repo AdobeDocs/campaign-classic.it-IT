@@ -43,7 +43,7 @@ Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è
 Le proprietà principali sono:
 
 * **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, pertanto non è possibile accedervi all&#39;interno di una visualizzazione schema, una selezione di colonne o un generatore di espressioni. Ma questo non nasconde alcun dato, se il nome del campo viene immesso manualmente in un&#39;espressione, il valore viene visualizzato.
-* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, allora ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
 
 Di seguito sono riportate le conseguenze dell&#39;utilizzo di questo attributo in Campaign:
 
@@ -58,7 +58,7 @@ Di seguito sono riportate le conseguenze dell&#39;utilizzo di questo attributo i
 
 ## Raccomandazioni {#recommendations}
 
-In ogni consegna, gli indirizzi e-mail vengono copiati nelle **[!UICONTROL broadLog]** e nelle **[!UICONTROL forecastLog]** tabelle: di conseguenza, anche questi campi devono essere protetti.
+In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: di conseguenza, anche questi campi devono essere protetti.
 
 Di seguito è riportato un esempio di estensione della tabella di registro per implementare quanto segue:
 
