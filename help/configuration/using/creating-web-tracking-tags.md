@@ -22,9 +22,9 @@ Ogni pagina del sito da monitorare deve essere indicata nella piattaforma Adobe 
 1. definizione manuale degli URL da tracciare,
 1. Creazione rapida di URL da tracciare.
 
-## Definizione degli URL da tracciare nell’applicazione {#defining-the-urls-to-be-tracked-in-the-application}
+## Definizione degli URL da tracciare nell&#39;applicazione {#defining-the-urls-to-be-tracked-in-the-application}
 
-Questo metodo consente di definire manualmente le pagine da tracciare e di generare un esempio del tag di tracciamento Web associato. Questa operazione è definita nel **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nodo della console client.
+Questo metodo consente di definire manualmente le pagine da tracciare e di generare un esempio del tag di tracciamento Web associato. Questa operazione è definita nel nodo **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -33,13 +33,13 @@ Per generare il codice HTML da inserire nella pagina:
 * Immettete l’etichetta del tag: sarà visualizzato nei registri di monitoraggio,
 * Indicate l’URL sorgente: questo campo è a scopo informativo e consente di indicare la pagina tracciata (facoltativo),
 * Se necessario, inserire un periodo di validità,
-* Fate clic su Codice **[!UICONTROL Generate]** HTML.
+* Fare clic su **[!UICONTROL Generate]** codice HTML.
 
 Quindi copiate il codice generato e incollatelo nella pagina da monitorare.
 
 ## Creazione rapida di URL da tracciare {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Potete creare al volo gli URL di tracciamento Web aggiungendo informazioni al valore del parametro **tagid** :
+Potete creare al volo gli URL di tracciamento Web aggiungendo informazioni al valore del parametro **tagid**:
 
 * Tipo di pagina tracciata: &#39;w&#39; per WEB o &#39;t&#39; per TRANSAZIONE,
 * Nome interno della cartella in cui deve essere creato l’URL.
