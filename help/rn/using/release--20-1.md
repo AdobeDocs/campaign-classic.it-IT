@@ -44,7 +44,7 @@ _17 febbraio 2020_
  <tbody> 
   <tr> 
    <td> <p>Il Snowflake è un data warehouse cloud completamente gestito, progettato per essere scalato sia a livello di storage che di calcolo. Con questo nuovo connettore,  Adobe Campaign ora può sfruttare la potenza del Snowflake per eseguire la segmentazione Big Data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da  Adobe.</p>
-    <p>For more information, refer to the <a href="../../installation/using/configure-fda-snowflake.md">detailed documentation</a> and <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">tutorial video</a>.</p>
+    <p>Per ulteriori informazioni, consultare la <a href="../../installation/using/configure-fda-snowflake.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">video di esercitazione</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -85,13 +85,13 @@ _17 febbraio 2020_
 
 * Miglioramento della gestione della quarantena e della pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disattivati ora vengono gestiti come per Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Leggi tutto](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* È stata aggiunta una nuova opzione nel codice **** JavaScript e nelle attività del flusso di lavoro del codice **JavaScript** avanzato per definire un periodo di timeout. Questo impedisce l&#39;esecuzione troppo lunga della fase di esecuzione di javascript. Se il periodo di timeout intercorre, il flusso di lavoro viene interrotto. Il timeout predefinito è 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nelle attività del flusso di lavoro **codice JavaScript** e **codice JavaScript avanzato** per definire un periodo di timeout. Questo impedisce l&#39;esecuzione troppo lunga della fase di esecuzione di javascript. Se il periodo di timeout intercorre, il flusso di lavoro viene interrotto. Il timeout predefinito è 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
 
 * L&#39;analisi di consegna ora viene arrestata quando non viene trovata alcuna affinità corrispondente nel server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
 * È ora supportato il failover del database per Postgres: quando il server del database si arresta in modo anomalo e si riavvia, Campaign ora si riconnette automaticamente ad esso.
 
-* La vista **Avvia in sospeso** è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro. Questo consente di monitorare tutti i flussi di lavoro sull&#39;istanza in attesa di essere avviati dal processo **operationMgt** . Questa visualizzazione viene fornita con il pacchetto Campagne di marketing. [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* La vista **Avvia in sospeso** è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro. Questo consente di monitorare tutti i flussi di lavoro sull&#39;istanza in attesa di essere avviati dal processo **operationMgt**. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing. [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Altre modifiche**
 
@@ -125,7 +125,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema di codifica durante l&#39;esecuzione di query tramite il connettore Netezza FDA. (NEO-19594)
 
-* È stato risolto un problema che causava un errore durante l&#39;utilizzo del metodo POST nell&#39;attività dell&#39;evento del flusso di lavoro Download **** Web.
+* È stato risolto un problema che causava un errore durante l&#39;utilizzo del metodo POST nell&#39;attività dell&#39;evento del flusso di lavoro **Download Web**.
 
 * È stato risolto un problema relativo alla generazione della proposta di offerta. (NEO-18176)
 
@@ -133,25 +133,25 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che causava l&#39;arresto anomalo dell&#39;analisi degli URL nel contenuto di consegne continue. (NEO-16910)
 
-* È stato risolto un problema che impediva il calcolo dei campi **Inizio** e **Fine** durante la creazione di una nuova campagna.
+* È stato risolto un problema che impediva il calcolo dei campi **Start** e **End** durante la creazione di una nuova campagna.
 
-* È stato risolto un problema relativo all&#39;attività del flusso di lavoro **File Download** quando si utilizzava un URL.
+* È stato risolto un problema relativo all&#39;attività del flusso di lavoro **File Download** quando si utilizza un URL.
 
 * È stato risolto un problema che si verificava durante l&#39;anteprima di un elenco importato in un&#39;attività di query di un report. (NEO-13119)
 
-* È stato risolto un problema che causava la visualizzazione di un&#39;immagine non aggiornata quando si selezionava il blocco **Power by Campaign** Personalization (Personalizzazione in funzione) nell&#39;editor e-mail.
+* È stato risolto un problema che causava la visualizzazione di un&#39;immagine obsoleta quando si selezionava il blocco di personalizzazione **Alimentato da Campaign** nell&#39;editor e-mail.
 
 * È stata migliorata la comunicazione di rete tra il client e il server.
 
 * È stato risolto un problema che si verificava quando troppi flussi di lavoro venivano creati nella stessa campagna. Ora non è possibile creare più di 28 flussi di lavoro. Viene visualizzato un avviso.
 
-* È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;opzione **Una selezione di colonne** riconciliazione in un&#39;attività del flusso di lavoro **Unione** .
+* È stato risolto un problema che si verificava durante l&#39;utilizzo dell&#39;opzione di riconciliazione **Una selezione di colonne** in un&#39;attività del flusso di lavoro **Union**.
 
 * È stato corretto un problema di arresto anomalo della console che si verificava quando si utilizzava un elenco di arricchimenti danneggiato in un flusso di lavoro. (NEO-18096)
 
 * Sono stati risolti diversi problemi di arresto anomalo della console che potevano verificarsi nei flussi di lavoro (NEO-18010, NEO-18032)
 
-* È stato risolto un problema che consentiva l&#39;esecuzione di un&#39;attività del flusso di lavoro del segnale **** esterno anche quando era disabilitata. (NEO-17524)
+* È stato risolto un problema che consentiva l&#39;esecuzione di un&#39;attività del flusso di lavoro **Segnale esterno** anche quando era disabilitata. (NEO-17524)
 
 * È stato risolto un problema durante la creazione di un nuovo schema.
 
@@ -169,7 +169,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava il costante errore del flusso di lavoro **Importa pubblico dal flusso di lavoro tecnico Adobe Experience Cloud** . (NEO-18463)
+* È stato risolto un problema che causava il costante errore dell&#39; **Importa pubblico dal flusso di lavoro tecnico Adobe Experience Cloud**. (NEO-18463)
 
 * È stato risolto un problema che impediva l&#39;invio di consegne quando si utilizzavano modelli importati da  Experience Manager. (NEO-17540)
 
@@ -181,17 +181,17 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che si verificava durante il tentativo di visualizzare la pagina mirror dai log di consegna di un messaggio inviato. (NEO-17976)
 
-* È stato risolto un problema che impediva la visualizzazione del blocco **Collegamento a pagina** speculare nella scheda Contenuto **** testo dopo aver fatto clic su **Importa HTML** in una consegna. (NEO-17568)
+* È stato risolto un problema che impediva la visualizzazione del blocco di personalizzazione **Collega a pagina mirror** nella scheda **Contenuto testo** dopo aver fatto clic su **Importa HTML** in una consegna. (NEO-17568)
 
 * Il messaggio di errore visualizzato quando si fa clic su un collegamento a una pagina mirror scaduta è stato chiarito. (NEO-17340)
 
-* È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nella schermata di creazione della distribuzione **dei** dati.
+* È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nella schermata di creazione **Distribuzione dati**.
 
 * È stato risolto un problema che si verificava durante la pianificazione di un&#39;attività di consegna in un&#39;istanza con Asia/Calcutta come fuso orario. (NEO-20001)
 
 * Ora viene visualizzato un errore quando un recapito presenta un problema di configurazione dell&#39;affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su**.
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare il conto di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
