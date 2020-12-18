@@ -17,9 +17,9 @@ ht-degree: 7%
 
 # Centro messaggi (Controllo){#message-center-control}
 
-Il flusso di lavoro descritto di seguito è pianificato per essere eseguito ogni ora. È installato con il modulo **Message Center - Control** per impostazione predefinita. For more on this module, refer to this [section](../../message-center/using/about-transactional-messaging.md).
+Il flusso di lavoro descritto di seguito è pianificato per essere eseguito ogni ora. È installato con il modulo **Message Center - Control** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../message-center/using/about-transactional-messaging.md).
 
-Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, consulta [questa pagina](../../message-center/using/technical-workflows.md).
+Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, fare riferimento a [questa pagina](../../message-center/using/technical-workflows.md).
 
 <table> 
  <tbody> 
