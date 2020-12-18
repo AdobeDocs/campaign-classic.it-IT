@@ -17,13 +17,13 @@ ht-degree: 10%
 
 # Tracking della simulazione{#simulation-tracking}
 
-Al termine della simulazione, potete analizzarne il risultato tramite la **[!UICONTROL Results]** scheda che viene aggiunta alla finestra della simulazione e al **[!UICONTROL Breakdown of offers by rank]** rapporto, disponibile tramite il dashboard della simulazione.
+Una volta terminata la simulazione, è possibile analizzarne il risultato tramite la scheda **[!UICONTROL Results]** aggiunta alla finestra della simulazione e al rapporto **[!UICONTROL Breakdown of offers by rank]**, disponibile tramite il dashboard della simulazione.
 
 I risultati della simulazione contengono una suddivisione delle proposizioni per rango e per destinatario. Anche gli assi di reporting vengono presi in considerazione e visualizzati in questa scheda.
 
 Potete salvare questi risultati ed esportarli, se necessario, creando un’analisi descrittiva dei risultati. A tale scopo, fare clic sul collegamento appropriato nella finestra dei risultati.
 
-Per ulteriori informazioni sulla procedura guidata di analisi descrittiva, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md) .
+Per ulteriori informazioni sulla procedura guidata di analisi descrittiva, fare riferimento a [questa sezione](../../reporting/using/about-descriptive-analysis.md).
 
 ![](assets/offer_simulation_012.png)
 
