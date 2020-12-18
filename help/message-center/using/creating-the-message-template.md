@@ -17,8 +17,8 @@ ht-degree: 9%
 
 # Creazione del modello di messaggio{#creating-the-message-template}
 
-1. Passate alla **[!UICONTROL Message Center >Transactional message templates]** cartella nella struttura di Adobe Campaign .
-1. Nell&#39;elenco dei modelli per messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa o fai clic sul **[!UICONTROL New]** pulsante sopra l&#39;elenco dei modelli per messaggi transazionali.
+1. Passate alla cartella **[!UICONTROL Message Center >Transactional message templates]** nella struttura di Adobe Campaign .
+1. Nell&#39;elenco dei modelli per messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa oppure fai clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco dei modelli per messaggi transazionali.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -31,13 +31,13 @@ ht-degree: 9%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   I tipi di evento devono essere creati in anticipo nella console. Per ulteriori informazioni, vedere [Creazione di tipi](../../message-center/using/creating-event-types.md)di evento.
+   I tipi di evento devono essere creati in anticipo nella console. Per ulteriori informazioni, vedere [Creazione di tipi di evento](../../message-center/using/creating-event-types.md).
 
    >[!NOTE]
    >
    >Un tipo di evento non deve mai essere collegato a più modelli.
 
-1. Immettete una natura e una descrizione, quindi fate clic **[!UICONTROL Continue]** per creare il corpo del messaggio (consultate [Creazione del contenuto](../../message-center/using/creating-message-content.md)del messaggio).
+1. Immettete una natura e una descrizione, quindi fate clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (fate riferimento a [Creazione di contenuto del messaggio](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
 
