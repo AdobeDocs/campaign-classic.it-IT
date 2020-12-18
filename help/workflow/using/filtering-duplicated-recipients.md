@@ -21,12 +21,12 @@ In questo esempio, vogliamo filtrare i destinatari che appaiono due o più volte
 
 Per creare questo esempio, procedere come segue:
 
-1. Trascinate e rilasciate un&#39; **[!UICONTROL Query]** attività in un flusso di lavoro e aprite l&#39;attività.
-1. Fate clic **[!UICONTROL Edit query]** e impostate le dimensioni di destinazione e di filtro su **[!UICONTROL Recipients]**.
+1. Trascinate e rilasciate un&#39;attività **[!UICONTROL Query]** in un flusso di lavoro e aprite l&#39;attività.
+1. Fare clic su **[!UICONTROL Edit query]** e impostare le dimensioni di destinazione e filtro su **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. Definite la seguente condizione di filtro per il destinatario presente nel registro di consegna. Scegliete il registro di consegna **del destinatario (log di trasmissione)** nella colonna **Espressione** , scegliete **esistente, ad esempio** nella colonna **Operatore** .
+1. Definite la seguente condizione di filtro per il destinatario presente nel registro di consegna. Scegliete **Registro consegna destinatari (log di trasmissione)** nella colonna **Espressione**, scegliete **esiste come** nella colonna **Operatore**.
 
    ![](assets/query_recipients_2.png)
 
@@ -35,7 +35,7 @@ Per creare questo esempio, procedere come segue:
 
    ![](assets/query_recipients_3.png)
 
-1. Con un **[!UICONTROL AND]** operatore, ripetere le stesse operazioni per altre consegne.
+1. Con un operatore **[!UICONTROL AND]**, ripetere le stesse operazioni per altre consegne.
 
    ![](assets/query_recipients_4.png)
 
