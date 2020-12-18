@@ -33,7 +33,7 @@ Per configurare l&#39;attività di multibranding, è necessario configurare sia 
 
    >[!NOTE]
    >
-   >La creazione di un account esterno di tipo istanza di esecuzione viene presentata nella sezione Istanza [di](../../message-center/using/creating-a-shared-connection.md#control-instance) controllo.
+   >La creazione di un account esterno di tipo istanza di esecuzione viene presentata nella sezione [Istanza di controllo](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 1. Estendi lo schema nms:extAccount per aggiungere l’URL di tracciamento:
 
@@ -44,7 +44,7 @@ Per configurare l&#39;attività di multibranding, è necessario configurare sia 
 
    >[!NOTE]
    >
-   >L&#39;estensione di uno schema esistente viene presentata nella sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md) .
+   >L&#39;estensione di uno schema esistente viene presentata nella sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md).
 
 1. Modificare il modulo nms:extAccount:
 
@@ -80,5 +80,5 @@ Nell&#39;istanza di controllo, è necessario collegare i modelli di consegna e g
 
 1. Create un account esterno per marchio con lo stesso nome interno definito al punto 1.
 1. Crea un modello di consegna predefinito per marchio.
-1. Nel modello di consegna **[!UICONTROL Properties]** , impostare il ciclo sul conto esterno del marchio.
+1. In **[!UICONTROL Properties]** del modello di consegna, impostare il routing sul conto esterno del marchio.
 
