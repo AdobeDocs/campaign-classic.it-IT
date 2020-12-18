@@ -59,7 +59,7 @@ Per il server di consegna (**nlserver mta**), devono essere aperte le seguenti p
 
 ### Posta in arrivo {#inbound-mail}
 
-Per il processo di recupero della posta in entrata (**nlserver inMail**), devono essere aperte le seguenti porte:
+Per il processo di recupero della posta in entrata (**nlserver inMail**), è necessario aprire le seguenti porte:
 
 <table> 
  <tbody> 
@@ -71,7 +71,7 @@ Per il processo di recupero della posta in entrata (**nlserver inMail**), devono
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> Server di posta interna<br /> </td> 
-   <td> Traffico POP3 per recuperare i messaggi di rimbalzo.<br /> </td> 
+   <td> Traffico POP3 per raccogliere i messaggi di rimbalzo.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -83,7 +83,7 @@ Per il processo di recupero della posta in entrata (**nlserver inMail**), devono
 
 ### Server dell’applicazione {#application-server}
 
-Per il server applicazione (**nlserver Web**), devono essere aperte le seguenti porte:
+Per il server applicazione (**nlserver web**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -104,7 +104,7 @@ Quando diversi server applicazioni di una piattaforma Adobe Campaign  devono com
 
 ### Stato consegna SMS {#sms-delivery-status}
 
-Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire la seguente porta:
+Per tenere traccia delle consegne di SMS (**nlserver sms**), è necessario aprire la seguente porta:
 
 <table> 
  <tbody> 
@@ -116,12 +116,12 @@ Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire l
   <tr> 
    <td> 38000/tcp (porta predefinita)<br /> </td> 
    <td> gateway SMS<br /> </td> 
-   <td> Interroga lo stato della coda di consegna gestita dal gateway NetSize SMS [opzione].<br /> </td> 
+   <td> Interrompe lo stato della coda di consegna gestita dal gateway SMS NetSize [opzione].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Client avanzato {#rich-client}
+### Client RTF {#rich-client}
 
 Per il client Adobe Campaign avanzato  (**nlclient**), devono essere aperte le seguenti porte:
 
@@ -154,7 +154,7 @@ Le porte predefinite sono le seguenti:
    <td> Destinazione<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Oracle</strong><br /> </td> 
+   <td> <strong> Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
    <td> Server database<br /> </td> 
   </tr> 
@@ -226,7 +226,7 @@ Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seg
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;in sede&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la documentazione [](../../integrations/using/about-adobe-experience-manager.md)dettagliata.
+L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;in sede&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consultare la [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
