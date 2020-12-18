@@ -21,9 +21,9 @@ Come per la tabella dei destinatari out-of-the-box fornita con  Adobe Campaign, 
 
 Questi filtri saranno disponibili nella finestra di selezione di destinazione con le stesse funzionalità dei segmenti per i destinatari (utilizzando moduli di immissione parametri, cartelle, ecc.).
 
-1. Go to the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
+1. Vai al nodo **[!UICONTROL Administration > Configuration > Predefined filters]**.
 1. Creare un nuovo filtro.
-1. Immettere il filtro **[!UICONTROL Label]** e quindi selezionare lo schema che corrisponde alla tabella del destinatario esterno nel **[!UICONTROL Document type]** campo.
-1. Creare le risorse **[!UICONTROL filtering conditions]** in base ai campi dello schema.
+1. Immettere la **[!UICONTROL Label]** del filtro, quindi selezionare lo schema che corrisponde alla tabella del destinatario esterno nel campo **[!UICONTROL Document type]**.
+1. Crea la tua **[!UICONTROL filtering conditions]** in base ai campi dello schema.
 1. Salvate il filtro.
 
