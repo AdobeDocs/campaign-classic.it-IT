@@ -28,7 +28,7 @@ Questo esempio si basa sullo scenario seguente:
 
 ### Passaggio 1 - Creazione di servizi di informazione {#step-1---creating-information-services}
 
-1. Create il servizio di iscrizione per la newsletter da offrire ai destinatari. Per ulteriori informazioni sulla creazione di una newsletter, consultate [questa sezione](../../delivery/using/about-services-and-subscriptions.md).
+1. Create il servizio di iscrizione per la newsletter da offrire ai destinatari. Per ulteriori informazioni sulla creazione di una newsletter, consultare [questa sezione](../../delivery/using/about-services-and-subscriptions.md).
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -40,17 +40,17 @@ Questo esempio si basa sullo scenario seguente:
 
 I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a cui viene fatto riferimento a livello di servizio temporaneo.
 
-1. In the **[!UICONTROL Explorer]** , select **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. In **[!UICONTROL Explorer]** , selezionare **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Create un modello di consegna per l&#39;invio dei messaggi di conferma dell&#39;iscrizione.
-1. Fate clic sul **[!UICONTROL To]** pulsante in **[!UICONTROL Email parameters]** per associare il modello di consegna alla mappatura di destinazione Iscrizioni anziché ai destinatari.
+1. Fate clic sul pulsante **[!UICONTROL To]** in **[!UICONTROL Email parameters]** per associare il modello di consegna al mapping della destinazione Iscrizioni anziché ai destinatari.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Poiché i destinatari della consegna non hanno confermato la loro approvazione, si trovano ancora nel elenco Bloccati del database. Affinché ricevano questa comunicazione, è necessario autorizzare le consegne basate su questo modello per i destinatari a elenco Bloccati.
 
-   A tale scopo, fare clic sulla **[!UICONTROL Exclusions]** scheda.
+   A questo scopo, fare clic sulla scheda **[!UICONTROL Exclusions]**.
 
-1. Fate clic sul **[!UICONTROL Edit...]** collegamento e deselezionate l’ **[!UICONTROL Exclude recipients who no longer want to be contacted]** opzione.
+1. Fare clic sul collegamento **[!UICONTROL Edit...]** e deselezionare l&#39;opzione **[!UICONTROL Exclude recipients who no longer want to be contacted]**.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -84,27 +84,27 @@ Per farlo, segui la procedura indicata di seguito:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. Nella **[!UICONTROL Edit]** scheda, è necessario configurare il flusso di lavoro esistente perché si desidera aggiungere un messaggio di conferma ai destinatari che desiderano iscriversi.
+1. Nella scheda **[!UICONTROL Edit]**, è necessario configurare il flusso di lavoro esistente perché si desidera aggiungere un messaggio di conferma ai destinatari che desiderano iscriversi.
 
-   A tale scopo, fate doppio clic sulla **[!UICONTROL Preloading]** casella e configuratela come segue.
+   A tal fine, fate doppio clic sulla casella **[!UICONTROL Preloading]** e configuratela come segue.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    Ciò significa che se l&#39;utente accede a questo modulo tramite il collegamento contenuto nel messaggio di conferma, le relative informazioni di profilo verranno caricate. Se accedono al modulo Web tramite una pagina del sito Web, non verrà caricata alcuna informazione.
 
-1. Aggiungete un&#39; **[!UICONTROL Test]** attività al flusso di lavoro.
+1. Aggiungete un&#39;attività **[!UICONTROL Test]** al flusso di lavoro.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   L&#39; **[!UICONTROL Test]** attività può riguardare l&#39;e-mail del destinatario. In questo caso, configuratelo come segue:
+   L&#39;attività **[!UICONTROL Test]** può riguardare l&#39;e-mail del destinatario. In questo caso, configuratelo come segue:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. Aggiungi due **[!UICONTROL Script]** attività al flusso di lavoro.
+1. Aggiungi due attività **[!UICONTROL Script]** al flusso di lavoro.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   La prima **[!UICONTROL Script]** attività aggiungerà i destinatari al elenco Bloccati fino a quando non avranno confermato la loro iscrizione alla newsletter. Il contenuto deve essere il seguente:
+   La prima **[!UICONTROL Script]** attività aggiungerà i destinatari al elenco Bloccati fino a quando non confermeranno la loro sottoscrizione alla newsletter. Il contenuto deve essere il seguente:
 
    ```
    ctx.recipient.@blackList=1
@@ -112,7 +112,7 @@ Per farlo, segui la procedura indicata di seguito:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   La seconda **[!UICONTROL Script]** attività autorizza l&#39;invio agli utenti e la sottoscrizione alla newsletter. Le ultime due righe dello script consentiranno di trasferire i destinatari dalla cartella temp a un&#39;altra cartella e di riconciliarsi con i profili esistenti non appena avranno confermato l&#39;iscrizione.
+   La seconda attività **[!UICONTROL Script]** autorizza l&#39;invio agli utenti e la sottoscrizione alla newsletter. Le ultime due righe dello script consentiranno di trasferire i destinatari dalla cartella temp a un&#39;altra cartella e di riconciliarsi con i profili esistenti non appena avranno confermato l&#39;iscrizione.
 
    ```
    ctx.recipient.@blackList=0
@@ -123,15 +123,15 @@ Per farlo, segui la procedura indicata di seguito:
 
    >[!NOTE]
    >
-   >La **[!UICONTROL Temp]** partizione può anche essere eliminata regolarmente utilizzando un flusso di lavoro.
+   >La partizione **[!UICONTROL Temp]** può essere eliminata anche regolarmente utilizzando un flusso di lavoro.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. Fate doppio clic sull&#39; **[!UICONTROL Subscription]** attività per personalizzare il modulo di iscrizione e collegate una casella di controllo con il servizio temporaneo creato in precedenza.
+1. Fate doppio clic sull&#39;attività **[!UICONTROL Subscription]** per personalizzare il modulo di iscrizione e collegate una casella di controllo con il servizio temporaneo creato in precedenza.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. Configurare l&#39; **[!UICONTROL Storage]** attività per salvare le informazioni immesse nella pagina del modulo.
+1. Configurare l&#39;attività **[!UICONTROL Storage]** per salvare le informazioni immesse nella pagina del modulo.
 
    Questa attività consente di creare i profili dei destinatari in una cartella temporanea dedicata per distinguerli dai profili del database a cui è possibile inviare la comunicazione.
 
@@ -141,9 +141,9 @@ Per farlo, segui la procedura indicata di seguito:
    >
    >Non è necessario definire opzioni di riconciliazione.
 
-1. Aggiungete due **[!UICONTROL End]** attività per visualizzare un messaggio per l&#39;utente.
+1. Aggiungete due attività **[!UICONTROL End]** per visualizzare un messaggio per l&#39;utente.
 
-   La seconda **[!UICONTROL End]** casella visualizza il messaggio di conferma al termine dell&#39;iscrizione.
+   La seconda casella **[!UICONTROL End]** visualizzerà il messaggio di conferma al termine dell&#39;iscrizione.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -167,7 +167,7 @@ L’iscrizione alla newsletter prevede i seguenti passaggi:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   L’utente viene aggiunto al database Adobe Campaign  nella **[!UICONTROL Temp]** cartella e il suo profilo è elenco Bloccati fino a quando non conferma la propria iscrizione tramite e-mail.
+   L&#39;utente viene aggiunto al database Adobe Campaign  nella cartella **[!UICONTROL Temp]** e il suo profilo è in elenco Bloccati fino a quando non conferma la propria iscrizione tramite e-mail.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
