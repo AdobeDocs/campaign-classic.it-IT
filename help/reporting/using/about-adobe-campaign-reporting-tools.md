@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # Introduzione al reporting {#about-adobe-campaign-reporting-tools}
 
-In addition to [built-in reports](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign lets you generate reports in various contexts and to meet different needs. I principi d&#39;uso e le modalità di attuazione sono descritti nel presente documento.
+Oltre ai [report incorporati](../../reporting/using/about-campaign-built-in-reports.md),  Adobe Campaign consente di generare report in vari contesti e per soddisfare esigenze diverse. I principi d&#39;uso e le modalità di attuazione sono descritti nel presente documento.
 
  Adobe Campaign non è uno strumento di reporting specializzato: i report creati in  Adobe Campaign consentono principalmente di visualizzare i dati aggregati.  report Adobe Campaign, dedicati all&#39;analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
