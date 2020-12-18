@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Database Elenco Bloccati{#denylist-databases}
+# elenco Bloccati database{#denylist-databases}
 
 Diverse organizzazioni gestiscono database di indirizzi IP e domini ritenuti utilizzati dagli spammers. La consultazione di questi siti può essere utile per capire perché alcuni messaggi sono stati rifiutati come spam. In genere è possibile richiedere la rimozione di un indirizzo inserito erroneamente in tali elenchi.
 
@@ -25,7 +25,7 @@ Questi database sono denominati RBL (Real-time Blackhole Lists) e vengono consul
 * Per dominio mittente: elenca i domini del mittente (dominio completo dell&#39;indirizzo e-mail di rimbalzo) che inviano spam o che non sono configurati correttamente.
 * Per dominio Web: elenca i domini (domini di alto livello registrati con i registrar) che si trovano negli URL dei collegamenti e delle immagini contenuti nel contenuto spam. In  Adobe Campaign, il dominio da prendere in considerazione è generalmente l&#39;indirizzo utilizzato per il tracciamento.
 
-Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più completo, fate riferimento a [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più completo, fare riferimento a [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
 * **Spamhaus**
 
