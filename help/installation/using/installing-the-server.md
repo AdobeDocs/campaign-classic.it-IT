@@ -38,7 +38,7 @@ I passaggi di installazione per il server Adobe Campaign  sono i seguenti:
    * **[!UICONTROL Installation of a client]** : Installazione dei componenti richiesti per il client Adobe Campaign .
    * **[!UICONTROL Custom installation]** : L&#39;utente sceglie gli elementi da installare.
 
-   Selezionate **Installazione di un server** applicazione e seguite i diversi passaggi come mostrato di seguito:
+   Selezionare **Installazione di un server applicazione** ed eseguire i diversi passaggi come illustrato di seguito:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ I passaggi di installazione per il server Adobe Campaign  sono i seguenti:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Fate clic **[!UICONTROL Finish]** per avviare l&#39;installazione:
+1. Fare clic su **[!UICONTROL Finish]** per avviare l&#39;installazione:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ I passaggi di installazione per il server Adobe Campaign  sono i seguenti:
    >
    >Una volta completata l&#39;installazione del server, è necessario riavviare il server per evitare possibili problemi di rete.
 
-   Una volta completata l&#39;installazione, avviate  Adobe Campaign per creare i file di configurazione. Fare riferimento al [primo avvio del server](#first-start-up-of-the-server).
+   Una volta completata l&#39;installazione, avviate  Adobe Campaign per creare i file di configurazione. Fare riferimento a [Primo avvio del server](#first-start-up-of-the-server).
 
 ## Test di installazione di riepilogo {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## Primo avvio del server {#first-start-up-of-the-server}
 
-Al termine del test di installazione, aprite un prompt dei comandi dal **[!UICONTROL Start > Programs > Adobe Campaign]** menu e immettete il comando seguente:
+Al termine del test di installazione, aprite un prompt dei comandi tramite il menu **[!UICONTROL Start > Programs > Adobe Campaign]** e immettete il comando seguente:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ Vengono visualizzate le informazioni seguenti:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Premere **Ctrl+C** per interrompere il processo, quindi digitare il comando seguente:
+Premere **Ctrl+C** per arrestare il processo, quindi immettere il comando seguente:
 
 ```
 nlserver start web
@@ -135,11 +135,11 @@ Vengono visualizzate le informazioni seguenti:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Password per l’identificatore interno {#password-for-the-internal-identifier}
+## Password per l&#39;identificatore interno {#password-for-the-internal-identifier}
 
-Il server Adobe Campaign  definisce un login tecnico denominato **interno** che dispone di tutti i diritti in tutte le istanze. Subito dopo l&#39;installazione, il login non dispone di una password. È obbligatorio definirne una.
+Il server Adobe Campaign  definisce un login tecnico denominato **internal** che dispone di tutti i diritti in tutte le istanze. Subito dopo l&#39;installazione, il login non dispone di una password. È obbligatorio definirne una.
 
-Vedere sezione Identificatore [](../../installation/using/campaign-server-configuration.md#internal-identifier)interno.
+Vedere la sezione [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 ## Avvio  servizi Adobe Campaign {#starting-adobe-campaign-services}
 
