@@ -25,7 +25,7 @@ Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &q
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità JavaScript utilizzate per la personalizzazione delle e-mail.
 
-È necessario attivare l’ **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opzione. Questa opzione è accessibile quando allegate il file all’e-mail di consegna. Per ulteriori informazioni sull&#39;associazione di un file calcolato, vedere la sezione [Allegati file](../../delivery/using/attaching-files.md) .
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando allegate il file all’e-mail di consegna. Per ulteriori informazioni sull&#39;associazione di un file calcolato, fare riferimento alla sezione [File allegati](../../delivery/using/attaching-files.md).
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -38,7 +38,7 @@ Per generare tabelle dinamiche o includere immagini tramite un URL, è necessari
 La procedura per la generazione di tabelle dinamiche è la seguente:
 
 * Creare una tabella con tre righe e tutte le colonne necessarie, quindi configurarne il layout (bordi, ecc.).
-* Posizionare il cursore sulla tabella e fare clic sul **[!UICONTROL Table > Table properties]** menu. Vai alla **[!UICONTROL Table]** scheda e immetti un nome che inizia con **NlJsTable**.
+* Posizionare il cursore sulla tabella e fare clic sul menu **[!UICONTROL Table > Table properties]**. Fare clic sulla scheda **[!UICONTROL Table]** e inserire un nome che inizia con **NlJsTable**.
 * Nella prima cella della prima riga, definire un ciclo (&quot;for&quot;, ad esempio) che consenta l&#39;iterazione sui valori che si desidera visualizzare nella tabella.
 * In ogni cella della seconda riga della tabella, inserire gli script che restituiscono i valori da visualizzare.
 * Chiudere il ciclo nella terza e ultima riga della tabella.
@@ -64,9 +64,9 @@ A tal fine, devi configurare un blocco di personalizzazione, quindi includere ne
 
 **Passaggio 2: create il blocco di personalizzazione:**
 
-* Dal **[!UICONTROL Resources > Campaign management > Personalization blocks]** menu della console Adobe Campaign .
+* Andate al menu **[!UICONTROL Resources > Campaign management > Personalization blocks]** della console Adobe Campaign .
 * Create un nuovo blocco di personalizzazione &quot;My Logo&quot; con &quot;My_Logo&quot; come nome interno.
-* Fate clic sul **[!UICONTROL Advanced parameters...]** collegamento, quindi selezionate l&#39; **[!UICONTROL "The content of the block is included in an attachment"]** opzione. Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
+* Fare clic sul collegamento **[!UICONTROL Advanced parameters...]**, quindi selezionare l&#39;opzione **[!UICONTROL "The content of the block is included in an attachment"]**. Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
