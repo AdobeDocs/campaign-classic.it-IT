@@ -26,7 +26,7 @@ ht-degree: 6%
 
 Per abilitare il tracciamento Web anonimo nell&#39;istanza, è necessario configurare i seguenti elementi:
 
-* Il parametro **trackWebVisitors** dell’elemento **redirection** del file **serverConf.xml** del server di tracciamento deve essere impostato su &#39;**true**&#39;, per inserire un cookie permanente (**uuid230**) nei browser di utenti Internet sconosciuti che visitano il sito.
+* Il parametro **trackWebVisitors** dell&#39;elemento **redirection** dell&#39;elemento **serverConf.xml** del server di tracciamento deve essere impostato su &#39;**true**&#39;, per inserire un cookie permanente (**uuid230**) nei browser di utenti Internet sconosciuti che visitano il sito.
 * La modalità **Anonymous Web Tracking** deve essere selezionata nella schermata di configurazione del tracciamento della distribuzione guidata.
 
    ![](assets/webtracking_anonymous_set.png)
