@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
 # Introduzione a Federated Data Access {#about-federated-data-access}
 
-Adobe Campaign provides the **Federated Data Access** (FDA) option in order to process information stored in one or more external databases: you can access external data without changing the structure of Adobe Campaign data.
+ Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: è possibile accedere ai dati esterni senza modificare la struttura  dati Adobe Campaign.
 
 ## Prerequisiti {#operating-principle}
 
@@ -25,9 +25,9 @@ L&#39;opzione FDA consente di estendere il modello dati in un database di terze 
 
 Per utilizzare questa funzionalità, i prerequisiti sono elencati di seguito:
 
-* **Configurazione**: ad Snowflake, per impostare Federated Data Access è necessario un modello di hosting **locale** o **ibrido** . [Ulteriori informazioni](../../installation/using/hosting-models.md)
-* **Versione** del database esterno: è necessario disporre di un database esterno compatibile con il modulo Adobe Campaign FDA . L&#39;elenco dei sistemi di database e delle versioni compatibili è dettagliato nella matrice [di](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)compatibilità delle campagne.
-* **Autorizzazioni**: gli utenti devono inoltre disporre delle autorizzazioni [](../../installation/using/remote-database-access-rights.md) necessarie in  Adobe Campaign e nel database esterno.
+* **Configurazione**: ad Snowflake, per configurare Federated Data Access è necessario un modello  **locale** o  **** ibrido. [Ulteriori informazioni](../../installation/using/hosting-models.md)
+* **Versione** del database esterno: è necessario disporre di un database esterno compatibile con il modulo Adobe Campaign FDA . L&#39;elenco dei sistemi di database e delle versioni compatibili è dettagliato in Campaign [Compatibilità matrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Autorizzazioni**: gli utenti devono inoltre disporre delle  [necessarie ](../../installation/using/remote-database-access-rights.md) autorizzazioni in  Adobe Campaign e sul database esterno.
 
 ## Limitazioni {#limitations}
 
@@ -57,20 +57,20 @@ L&#39;opzione FDA è soggetta ai limiti del sistema di database esterno utilizza
 
 ### Ottimizzazione della personalizzazione delle e-mail con dati esterni {#optimizing-email-personalization-with-external-data}
 
-Puoi pre-elaborare la personalizzazione dei messaggi in un flusso di lavoro dedicato. Per eseguire questa operazione, utilizzate l&#39; **[!UICONTROL Prepare the personalization data with a workflow]** opzione, disponibile nella **[!UICONTROL Analysis]** scheda delle proprietà di consegna.
+Puoi pre-elaborare la personalizzazione dei messaggi in un flusso di lavoro dedicato. Per eseguire questa operazione, utilizzare l&#39;opzione **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella scheda **[!UICONTROL Analysis]** delle proprietà di consegna.
 
 Durante l&#39;analisi della consegna, questa opzione crea ed esegue automaticamente un flusso di lavoro che memorizza tutti i dati collegati alla destinazione in una tabella temporanea, compresi i dati provenienti da tabelle collegate in un database esterno.
 
 Questa opzione migliora notevolmente le prestazioni durante l&#39;esecuzione del passaggio di personalizzazione.
 
-### Use data from an external database in a workflow {#using-data-from-an-external-database-in-a-workflow}
+### Utilizzare i dati di un database esterno in un flusso di lavoro {#using-data-from-an-external-database-in-a-workflow}
 
 In più attività  flusso di lavoro Adobe Campaign, potete utilizzare i dati memorizzati in un database esterno.
 
-* **Filtro su dati** esterni - L&#39;attività [Query](../../workflow/using/targeting-data.md#selecting-data) consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/targeting-data.md#selecting-data).
+* **Filtro su dati**  esterni - La  [](../../workflow/using/targeting-data.md#selecting-data) Queryactivity consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Creazione di sottoinsiemi** - L&#39;attività [Dividi](../../workflow/using/split.md) consente di creare sottoinsiemi. È possibile utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
+* **Crea sottoinsiemi**  - La  [](../../workflow/using/split.md) splitactivity consente di creare sottoinsiemi. È possibile utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
 
-* **Carica database** esterno - È possibile utilizzare i dati esterni nell&#39;attività di caricamento [](../../workflow/using/data-loading--rdbms-.md) dei dati (RDBMS). Ulteriori informazioni in [questa pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Carica database**  esterno: è possibile utilizzare i dati esterni nell&#39;attività di caricamento [ dei ](../../workflow/using/data-loading--rdbms-.md) dati (RDBMS). Ulteriori informazioni in [questa pagina](../../workflow/using/data-loading--rdbms-.md).
 
-* **Aggiunta di informazioni e collegamenti** - L&#39;attività [Arricchimento](../../workflow/using/enrichment.md) consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare i dati provenienti da un database esterno. Ulteriori informazioni in [questa pagina](../../workflow/using/enrichment.md).
+* **Aggiunta di informazioni e collegamenti**  - L&#39; [](../../workflow/using/enrichment.md) attività di arricchimento consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare i dati provenienti da un database esterno. Ulteriori informazioni in [questa pagina](../../workflow/using/enrichment.md).
