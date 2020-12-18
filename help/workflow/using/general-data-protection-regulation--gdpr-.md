@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Regolamento sulla protezione dei dati sulla privacy{#general-data-protection-regulation-gdpr}
 
-I flussi di lavoro descritti di seguito sono installati con il modulo **Privacy Data Protection Regulation** per impostazione predefinita. For more on this module, refer to this [article](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
+I flussi di lavoro descritti di seguito vengono installati con il modulo **Privacy Data Protection Regulation** per impostazione predefinita. Per ulteriori informazioni su questo modulo, fare riferimento a questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
