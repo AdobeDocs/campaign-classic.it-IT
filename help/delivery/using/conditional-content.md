@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,11 @@ Configurando i campi di contenuto condizionale, puoi creare una personalizzazion
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#conditionnal-content-video)
 
 
-## Utilizzo delle condizioni in un messaggio e-mail {#using-conditions-in-an-email}
+## Utilizzo delle condizioni in un&#39;e-mail {#using-conditions-in-an-email}
 
 Nell&#39;esempio seguente verrà illustrato come creare un messaggio, personalizzato in modo dinamico in base al genere e agli interessi del destinatario.
 
-* Display che mostra &quot;Mr&quot; o &quot;Ms.&quot; in base al valore del **[!UICONTROL Gender]** campo (M o F) nell&#39;origine dati,
+* Display che mostra &quot;Mr&quot; o &quot;Ms.&quot; in base al valore del campo **[!UICONTROL Gender]** (M o F) nell&#39;origine dati,
 * Assemblaggio personalizzato di una newsletter o di offerte promozionali in base agli interessi indicati o rilevati:
 
    * Interesse 1 — > Blocco 1
@@ -36,17 +36,17 @@ Nell&#39;esempio seguente verrà illustrato come creare un messaggio, personaliz
 
 Per creare contenuto condizionale in base al valore di un campo, procedere come segue:
 
-1. Fate clic sull&#39;icona della personalizzazione e selezionate **[!UICONTROL Conditional content > If]**.
+1. Fate clic sull&#39;icona di personalizzazione e selezionate **[!UICONTROL Conditional content > If]**.
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
    Gli elementi di personalizzazione vengono inseriti nel corpo del messaggio. È ora necessario configurarli.
 
-1. Quindi, inserite i parametri dell&#39;espressione **if** .
+1. Quindi, compilare i parametri dell&#39;espressione **if**.
 
    Per eseguire questa operazione:
 
-   * Selezionate il primo elemento dell&#39;espressione **`<field>`**(per impostazione predefinita, questo elemento viene evidenziato durante l&#39;inserimento dell&#39;espressione **if** ) e fate clic sull&#39;icona di personalizzazione per sostituirlo con il campo di prova.
+   * Selezionate il primo elemento dell&#39;espressione, **`<field>`** (per impostazione predefinita, questo elemento viene evidenziato durante l&#39;inserimento dell&#39;espressione **if**) e fate clic sull&#39;icona di personalizzazione per sostituirlo con il campo di prova.
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
@@ -55,7 +55,7 @@ Per creare contenuto condizionale in base al valore di un campo, procedere come 
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Fai clic sulla **[!UICONTROL Preview]** scheda per visualizzare il contenuto del messaggio in base al destinatario:
+1. Fare clic sulla scheda **[!UICONTROL Preview]** per visualizzare il contenuto del messaggio in base al destinatario:
 
    * Selezione di un destinatario per il quale la condizione è vera:
 
@@ -65,15 +65,15 @@ Per creare contenuto condizionale in base al valore di un campo, procedere come 
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-È possibile aggiungere altri casi e definire contenuti diversi in base ai valori di uno o più campi. Per fare ciò, utilizzare **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Queste espressioni sono configurate nello stesso modo dell&#39;espressione **if** .
+È possibile aggiungere altri casi e definire contenuti diversi in base ai valori di uno o più campi. A tal fine, utilizzare **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Queste espressioni sono configurate nello stesso modo dell&#39;espressione **if**.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->Per rispettare la sintassi JavaScript, i caratteri **%> &lt;%** devono essere eliminati dopo l&#39;aggiunta di condizioni **Else** e **Else if** .
+>Per rispettare la sintassi JavaScript, i caratteri **%> &lt;%** devono essere eliminati dopo l&#39;aggiunta delle condizioni **Else** e **Else if**.
 
-Fate clic su **[!UICONTROL Preview]** e selezionate un destinatario per visualizzare il contenuto condizionale.
+Fare clic su **[!UICONTROL Preview]** e selezionare un destinatario per visualizzare il contenuto condizionale.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
@@ -81,8 +81,8 @@ Fate clic su **[!UICONTROL Preview]** e selezionate un destinatario per visualiz
 
 Nell’esempio seguente, verrà illustrato come creare un’e-mail in più lingue. Il contenuto verrà visualizzato in una lingua o nell&#39;altra a seconda della lingua preferita del destinatario.
 
-1. Create un messaggio e-mail e selezionate la popolazione di destinazione. In questo esempio, la condizione per visualizzare una versione o l&#39;altra sarà basata sul valore **Lingua** del profilo del destinatario. In questo esempio, questi valori sono impostati su **EN**, **FR**, **ES**.
-1. Nel contenuto HTML dell&#39;e-mail, fate clic sulla **[!UICONTROL Source]** scheda e incollate il seguente codice:
+1. Create un messaggio e-mail e selezionate la popolazione di destinazione. In questo esempio, la condizione per visualizzare una versione o l&#39;altra sarà basata sul valore **Language** del profilo del destinatario. In questo esempio, questi valori sono impostati su **EN**, **FR**, **ES**.
+1. Nel contenuto HTML dell&#39;e-mail, fate clic sulla scheda **[!UICONTROL Source]** e incollate il seguente codice:
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ Nell’esempio seguente, verrà illustrato come creare un’e-mail in più lingu
    <% } %>
    ```
 
-1. Verifica il contenuto delle e-mail nella **[!UICONTROL Preview]** scheda selezionando i destinatari con lingue diverse tra loro preferite.
+1. Verificate il contenuto delle e-mail nella scheda **[!UICONTROL Preview]** selezionando i destinatari con diverse lingue preferite.
 
    >[!NOTE]
    >
@@ -115,4 +115,4 @@ Scoprite come aggiungere contenuti condizionali a una distribuzione, ad esempio 
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
-Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
