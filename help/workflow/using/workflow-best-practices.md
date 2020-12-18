@@ -21,19 +21,19 @@ ht-degree: 5%
 
 Di seguito sono elencate le linee guida generali sull&#39;ottimizzazione delle prestazioni di Campaign, comprese le best practice da applicare ai flussi di lavoro.
 
-In [questa sezione](../../production/using/workflow-execution.md)sono disponibili anche le linee guida per la risoluzione dei problemi relativi all&#39;esecuzione dei flussi di lavoro.
+Le linee guida per la risoluzione dei problemi relativi all&#39;esecuzione dei flussi di lavoro sono disponibili anche in [questa sezione](../../production/using/workflow-execution.md).
 
-### Logs {#logs}
+### Registri {#logs}
 
-Il metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debug di un flusso di lavoro. È utile, ma deve essere utilizzato con attenzione, soprattutto per le attività che vengono eseguite frequentemente: può sovraccaricare i registri e aumentare notevolmente la dimensione della tabella di registro. Ma potreste avere anche bisogno di più di **[!UICONTROL logInfo()]**.
+Il metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debug di un flusso di lavoro. È utile, ma deve essere utilizzato con attenzione, soprattutto per le attività che vengono eseguite frequentemente: può sovraccaricare i registri e aumentare notevolmente la dimensione della tabella di registro. Ma potrebbe essere necessario anche più di **[!UICONTROL logInfo()]**.
 
 Sono disponibili due soluzioni aggiuntive per:
 
 * **Mantenere il risultato di popolazioni provvisorie tra due esecuzioni**
 
-   Questa opzione consente di mantenere tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nella scheda delle proprietà del flusso di lavoro e può essere utilizzato per lo sviluppo e lo scopo del test per monitorare i dati e verificare i risultati. **[!UICONTROL General]** Questa opzione può essere utilizzata in ambienti di sviluppo, ma non in ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima istanza, il raggiungimento del limite di dimensioni. Inoltre, rallenterà il backup.
+   Questa opzione consente di mantenere tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nella scheda **[!UICONTROL General]** delle proprietà del flusso di lavoro e può essere utilizzata per lo sviluppo e lo scopo del test per monitorare i dati e verificare i risultati. Questa opzione può essere utilizzata in ambienti di sviluppo, ma non in ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima istanza, il raggiungimento del limite di dimensioni. Inoltre, rallenterà il backup.
 
-   Vengono mantenute solo le tabelle di lavoro dell&#39;ultima esecuzione del flusso di lavoro. Le tabelle di lavoro delle precedenti esecuzioni vengono eliminate dal **[!UICONTROL cleanup]** flusso di lavoro, che viene eseguito su base giornaliera.
+   Vengono mantenute solo le tabelle di lavoro dell&#39;ultima esecuzione del flusso di lavoro. Le tabelle di lavoro delle precedenti esecuzioni vengono eliminate dal flusso di lavoro **[!UICONTROL cleanup]**, che viene eseguito su base giornaliera.
 
    >[!CAUTION]
    >
@@ -41,10 +41,10 @@ Sono disponibili due soluzioni aggiuntive per:
 
 * **Registra query SQL nel giornale di registrazione**
 
-   Disponibile nella **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata in fase di produzione.
+   Disponibile nella scheda **[!UICONTROL Execution]** delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata in fase di produzione.
 
-Rimuovere i registri quando non sono più necessari. La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere eliminata dal **[!UICONTROL File > Actions]** menu o facendo clic sul pulsante Azioni nella barra degli strumenti sopra l&#39;elenco. Selezionare Elimina cronologia.
-Per informazioni su come eliminare i registri, consulta questa [documentazione](../../workflow/using/starting-a-workflow.md).
+Rimuovere i registri quando non sono più necessari. La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere eliminata dal menu **[!UICONTROL File > Actions]** o facendo clic sul pulsante Azioni nella barra degli strumenti sopra l&#39;elenco. Selezionare Elimina cronologia.
+Per informazioni su come eliminare i registri, consultare la [documentazione](../../workflow/using/starting-a-workflow.md).
 
 ### Pianificazione del flusso di lavoro {#workflow-planning}
 
@@ -52,27 +52,27 @@ Per informazioni su come eliminare i registri, consulta questa [documentazione](
 * Pianificare il caricamento dei dati in un giorno successivo per ridurre il contenzioso sulle risorse.
 * Flussi di lavoro lunghi possono avere un impatto potenziale sulle risorse del server e del database. Suddividere i flussi di lavoro più lunghi per ridurre i tempi di elaborazione.
 * Per ridurre i tempi di esecuzione complessivi, sostituisci le attività che richiedono tempo con attività semplificate e più veloci.
-* Evitate di eseguire più di 20 flussi di lavoro contemporaneamente. Se vengono eseguiti contemporaneamente troppi flussi di lavoro, il sistema può esaurire le risorse e diventare instabile. Per ulteriori informazioni sul motivo per cui il flusso di lavoro potrebbe non essere avviato, consultate questo [articolo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
+* Evitate di eseguire più di 20 flussi di lavoro contemporaneamente. Se vengono eseguiti contemporaneamente troppi flussi di lavoro, il sistema può esaurire le risorse e diventare instabile. Per ulteriori informazioni sul motivo per cui il flusso di lavoro potrebbe non avviarsi, fare riferimento a questo [articolo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
 ### Esecuzione di un flusso di lavoro {#workflow-execution}
 
 Si consiglia di non pianificare un flusso di lavoro per eseguire più di 15 minuti, in quanto potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
 
-Evitare di lasciare i flussi di lavoro in stato di pausa. Se create un flusso di lavoro temporaneo, accertatevi che sia in grado di terminare correttamente e non di rimanere in **[!UICONTROL paused]** stato. Se viene messa in pausa, significa che è necessario mantenere le tabelle temporanee e quindi aumentare la dimensione del database. Assegnare i supervisori del flusso di lavoro in Proprietà flusso di lavoro per inviare un avviso in caso di errore di un flusso di lavoro o pausa del sistema.
+Evitare di lasciare i flussi di lavoro in stato di pausa. Se create un flusso di lavoro temporaneo, accertatevi che sia in grado di completare correttamente e non di rimanere in uno stato **[!UICONTROL paused]**. Se viene messa in pausa, significa che è necessario mantenere le tabelle temporanee e quindi aumentare la dimensione del database. Assegnare i supervisori del flusso di lavoro in Proprietà flusso di lavoro per inviare un avviso in caso di errore di un flusso di lavoro o pausa del sistema.
 
 Per evitare che i flussi di lavoro vengano messi in pausa:
 
 * Controlla regolarmente i tuoi flussi di lavoro per evitare errori imprevisti.
-* Semplificate al massimo i flussi di lavoro, ad esempio suddividendo flussi di lavoro di grandi dimensioni in diversi flussi di lavoro. Puoi utilizzare **[!UICONTROL External signal]** le attività per attivarne l&#39;esecuzione in base all&#39;esecuzione di altri flussi di lavoro.
-* Evitare di disabilitare le attività con flussi di lavoro che consentono di lasciare i thread aperti e di generare numerose tabelle temporanee che richiedono molto spazio. Non mantenere attività **[!UICONTROL Do not enable]** o **[!UICONTROL Enable but do not execute]** stati nei flussi di lavoro.
+* Semplificate al massimo i flussi di lavoro, ad esempio suddividendo flussi di lavoro di grandi dimensioni in diversi flussi di lavoro. È possibile utilizzare le attività **[!UICONTROL External signal]** per attivarne l&#39;esecuzione in base all&#39;esecuzione di altri flussi di lavoro.
+* Evitare di disabilitare le attività con flussi di lavoro che consentono di lasciare i thread aperti e di generare numerose tabelle temporanee che richiedono molto spazio. Non mantenere attività negli stati **[!UICONTROL Do not enable]** o **[!UICONTROL Enable but do not execute]** dei flussi di lavoro.
 
 Inoltre, interrompete i flussi di lavoro inutilizzati. I flussi di lavoro che mantengono in esecuzione mantengono le connessioni al database.
 
 Utilizzate l&#39;interruzione non condizionale solo nei casi più rari. Non utilizzate questa azione su base regolare. La mancata chiusura delle connessioni generate dai flussi di lavoro al database ha un impatto sulle prestazioni.
 
-### Esegui nel motore, opzione {#execute-in-the-engine-option}
+### Esegui nell&#39;opzione del motore {#execute-in-the-engine-option}
 
-Nella **[!UICONTROL Workflow properties]** finestra, non selezionare mai l&#39; **[!UICONTROL Execute in the engine]** opzione. Quando questa opzione è attivata, il flusso di lavoro ha la priorità e tutti gli altri flussi di lavoro vengono interrotti dal motore del flusso di lavoro fino al termine.
+Nella finestra **[!UICONTROL Workflow properties]**, non selezionare mai l&#39;opzione **[!UICONTROL Execute in the engine]**. Quando questa opzione è attivata, il flusso di lavoro ha la priorità e tutti gli altri flussi di lavoro vengono interrotti dal motore del flusso di lavoro fino al termine.
 
 ![](assets/wf-execute-in-engine.png)
 
@@ -82,7 +82,7 @@ Nella **[!UICONTROL Workflow properties]** finestra, non selezionare mai l&#39; 
 
  Adobe consiglia di creare i flussi di lavoro in una cartella dedicata.
 
-Se il flusso di lavoro influisce sull’intera piattaforma (ad esempio, processi di pulizia), potete prendere in considerazione l’aggiunta di una sottocartella nella **[!UICONTROL Technical Workflows]** cartella incorporata.
+Se il flusso di lavoro influisce sull’intera piattaforma (ad esempio, processi di pulizia), potete prendere in considerazione l’aggiunta di una sottocartella nella cartella **[!UICONTROL Technical Workflows]** incorporata.
 
 ### Denominazione del flusso di lavoro {#workflow-naming}
 
@@ -100,7 +100,7 @@ Ad esempio:
 
 ### Gravità del flusso di lavoro {#workflow-severity}
 
-Puoi configurare la gravità di un flusso di lavoro nelle proprietà del flusso di lavoro, nella **[!UICONTROL Execution]** scheda:
+Puoi configurare la gravità di un flusso di lavoro nelle proprietà del flusso di lavoro, nella scheda **[!UICONTROL Execution]**:
 
 * Normale
 * Produzione
@@ -116,48 +116,48 @@ I flussi di lavoro delle campagne (flussi di lavoro creati nell’ambito di una 
 
 Tutti i flussi di lavoro pianificati in esecuzione in ambienti di produzione devono essere monitorati per essere avvisati in caso di errore.
 
-Nelle proprietà del flusso di lavoro, selezionare un gruppo di supervisori, il gruppo predefinito **[!UICONTROL Workflow supervisors]** o personalizzato. Accertatevi che almeno un operatore appartenga a questo gruppo, con un&#39;impostazione e-mail.
+Nelle proprietà del flusso di lavoro, selezionare un gruppo di supervisori, il gruppo predefinito **[!UICONTROL Workflow supervisors]** o un gruppo personalizzato. Accertatevi che almeno un operatore appartenga a questo gruppo, con un&#39;impostazione e-mail.
 
-Prima di iniziare a creare un flusso di lavoro, occorre definire le autorità di supervisione del flusso di lavoro. In caso di errori, riceveranno una notifica tramite e-mail. For more on this, refer to [Managing errors](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Prima di iniziare a creare un flusso di lavoro, occorre definire le autorità di supervisione del flusso di lavoro. In caso di errori, riceveranno una notifica tramite e-mail. Per ulteriori informazioni, vedere [Gestione degli errori](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Controllare regolarmente l&#39; **[!UICONTROL Monitoring]** universo per visualizzare lo stato complessivo dei flussi di lavoro attivi. For more on this, refer to [Instance supervision](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Controllare regolarmente l&#39;universo **[!UICONTROL Monitoring]** per visualizzare lo stato complessivo dei flussi di lavoro attivi. Per ulteriori informazioni, vedere [Sorveglianza istanza](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
-Workflow HeatMap consente agli amministratori  piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. For more on this, refer to [Workflow monitoring](../../workflow/using/heatmap.md).
+Workflow HeatMap consente agli amministratori  piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, vedere [Monitoraggio del flusso di lavoro](../../workflow/using/heatmap.md).
 
 ## Utilizzo delle attività {#using-activities}
 
 >[!CAUTION]
 >
->Potete copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, non è consigliabile copiare le attività Incolla tra flussi di lavoro diversi. Alcune impostazioni associate ad attività quali Consegne e Utilità di pianificazione potrebbero causare conflitti ed errori durante l&#39;esecuzione del flusso di lavoro di destinazione. È stato invece consigliato di **duplicare** i flussi di lavoro. Per ulteriori informazioni, vedere [Duplicazione dei flussi di lavoro](../../workflow/using/building-a-workflow.md#duplicating-workflows).
+>Potete copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, non è consigliabile copiare le attività Incolla tra flussi di lavoro diversi. Alcune impostazioni associate ad attività quali Consegne e Utilità di pianificazione potrebbero causare conflitti ed errori durante l&#39;esecuzione del flusso di lavoro di destinazione. È stato invece consigliato di eseguire flussi di lavoro **Duplica**. Per ulteriori informazioni, vedere [Duplicazione dei flussi di lavoro](../../workflow/using/building-a-workflow.md#duplicating-workflows).
 
 ### Nome dell&#39;attività {#name-of-the-activity}
 
 Durante lo sviluppo del flusso di lavoro, tutte le attività avranno un nome, così come tutti  oggetti Adobe Campaign. Mentre il nome viene generato dallo strumento, è consigliabile rinominarlo con un nome esplicito durante la configurazione. Il rischio di farlo in seguito è che interrompa il flusso di lavoro con le attività utilizzando il nome di un&#39;altra attività precedente. Sarebbe quindi difficile aggiornare i nomi successivamente.
 
-Il nome dell&#39;attività si trova nella **[!UICONTROL Advanced]** scheda. Non lasciare loro nomi **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, ma dare loro nomi espliciti come **[!UICONTROL querySubscribedRecipients]**. Questo nome verrà visualizzato nel giornale di registrazione, e se applicabile nei registri SQL, e questo aiuterà a eseguire il debug del flusso di lavoro durante la configurazione.
+Il nome dell&#39;attività si trova nella scheda **[!UICONTROL Advanced]**. Non lasciarle denominate **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, ma fornirle nomi espliciti come **[!UICONTROL querySubscribedRecipients]**. Questo nome verrà visualizzato nel giornale di registrazione, e se applicabile nei registri SQL, e questo aiuterà a eseguire il debug del flusso di lavoro durante la configurazione.
 
 ### Prima e ultima attività {#first-and-last-activities}
 
-* Avviate sempre il flusso di lavoro con un&#39; **[!UICONTROL Start]** attività o **[!UICONTROL Scheduler]** un&#39;attività. Se pertinente, potete anche utilizzare un&#39; **[!UICONTROL External signal]** attività.
-* When building your workflow, only use one **[!UICONTROL Scheduler]** activity per branch. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con una **[!UICONTROL Scheduling & History]** scheda. Ulteriori informazioni sulla [pianificazione](../../workflow/using/scheduler.md).
+* Avvia sempre il flusso di lavoro con un&#39;attività **[!UICONTROL Start]** o **[!UICONTROL Scheduler]**. Se necessario, potete anche utilizzare un&#39;attività **[!UICONTROL External signal]**.
+* Durante la creazione del flusso di lavoro, utilizzate una sola attività **[!UICONTROL Scheduler]** per ramo. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con una scheda **[!UICONTROL Scheduling & History]**. Ulteriori informazioni su [Scheduling](../../workflow/using/scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Utilizzate **[!UICONTROL End]** le attività per ogni flusso di lavoro. Questo consente  Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](../../workflow/using/start-and-end.md).
+* Utilizzate le attività **[!UICONTROL End]** per ogni flusso di lavoro. Questo consente  Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all&#39;interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](../../workflow/using/start-and-end.md).
 
 ### Javascript all&#39;interno di un&#39;attività {#javascript-within-an-activity}
 
-Potrebbe essere necessario aggiungere JavaScript durante l&#39;inizializzazione di un&#39;attività del flusso di lavoro. Questo può essere fatto nella **[!UICONTROL Advanced]** scheda di un&#39;attività.
+Potrebbe essere necessario aggiungere JavaScript durante l&#39;inizializzazione di un&#39;attività del flusso di lavoro. Questo può essere fatto nella scheda **[!UICONTROL Advanced]** di un&#39;attività.
 
 Per semplificare la ricerca del flusso di lavoro, si consiglia di utilizzare due trattini all&#39;inizio e alla fine dell&#39;etichetta dell&#39;attività, come segue: — La mia etichetta —
 
-### Signal {#signal}
+### Segnale {#signal}
 
-Nella maggior parte dei casi, non si sa da dove viene chiamato il segnale. Per evitare questo problema, utilizzare il **[!UICONTROL Comment]** campo all&#39;interno della **[!UICONTROL Advanced]** scheda dell&#39;attività del segnale per documentare l&#39;origine prevista di un segnale per questa attività.
+Nella maggior parte dei casi, non si sa da dove viene chiamato il segnale. Per evitare questo problema, utilizzare il campo **[!UICONTROL Comment]** all&#39;interno della scheda **[!UICONTROL Advanced]** dell&#39;attività del segnale per documentare l&#39;origine prevista di un segnale per questa attività.
 
 ![](assets/workflow-signal-bp.png)
 
-## Aggiornamento flusso di lavoro {#workflow-update}
+## Aggiornamento del flusso di lavoro {#workflow-update}
 
 Un flusso di lavoro di produzione non deve essere aggiornato direttamente. A meno che il processo non consista nella creazione di una campagna con flussi di lavoro basati su modelli, i processi devono essere prima testati in un ambiente di sviluppo. Dopo questa convalida, il flusso di lavoro può essere distribuito e avviato in produzione.
 
