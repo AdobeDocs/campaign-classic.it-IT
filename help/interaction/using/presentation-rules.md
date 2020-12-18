@@ -17,14 +17,14 @@ ht-degree: 1%
 
 # Regole di presentazione{#presentation-rules}
 
-## Creating a presentation rule {#creating-a-presentation-rule}
+## Creazione di una regola di presentazione {#creating-a-presentation-rule}
 
 Nel nostro database ci sono diverse offerte di viaggio per Europa, Africa, Stati Uniti e Canada. Desideriamo inviare offerte per un viaggio in Canada, ma se il destinatario rifiuta questo tipo di offerta, non vogliamo inviarle di nuovo
 
 Configureremo il nostro regolamento in modo che il viaggio in Canada venga offerto una sola volta per ogni destinatario e non venga offerto di nuovo se rifiutato.
 
-1. Nella struttura  di Adobe Campaign, passare al **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** nodo.
-1. Creare una nuova regola di **[!UICONTROL Offer presentation]** tipo.
+1. Nella struttura  di Adobe Campaign, passare al nodo **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**.
+1. Creare una nuova regola di tipo **[!UICONTROL Offer presentation]**.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -32,19 +32,19 @@ Configureremo il nostro regolamento in modo che il viaggio in Canada venga offer
 
    ![](assets/offer_typology_example_002.png)
 
-1. Scegliete l&#39; **[!UICONTROL All channels]** opzione per estendere la regola a tutti i canali.
+1. Scegliete l&#39;opzione **[!UICONTROL All channels]** per estendere la regola a tutti i canali.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Fate clic sul **[!UICONTROL Edit expression]** collegamento e scegliete il **[!UICONTROL Category]** nodo come espressione.
+1. Fare clic sul collegamento **[!UICONTROL Edit expression]** e scegliere il nodo **[!UICONTROL Category]** come espressione.
 
    ![](assets/offer_typology_example_004.png)
 
-1. Scegliete la categoria che corrisponde all’offerta di viaggio per il Canada e fate clic **[!UICONTROL OK]** per chiudere la finestra della query.
+1. Scegliete la categoria che corrisponde all&#39;offerta di viaggio per il Canada e fate clic su **[!UICONTROL OK]** per chiudere la finestra della query.
 
    ![](assets/offer_typology_example_005.png)
 
-1. Nella **[!UICONTROL Offer presentation]** scheda, scegliete le stesse dimensioni di quelle configurate nell&#39;ambiente.
+1. Nella scheda **[!UICONTROL Offer presentation]**, scegliete le stesse dimensioni di quelle configurate nell&#39;ambiente.
 
    ![](assets/offer_typology_example_006.png)
 
@@ -56,17 +56,17 @@ Configureremo il nostro regolamento in modo che il viaggio in Canada venga offer
 
    ![](assets/offer_typology_example_008.png)
 
-1. Selezionate il **[!UICONTROL Offers for the same category]** filtro per escludere tutte le offerte dalla categoria **Canada** .
+1. Selezionare il filtro **[!UICONTROL Offers for the same category]** per escludere tutte le offerte dalla categoria **Canada**.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Selezionare il **[!UICONTROL Rejected propositions]** filtro per tenere conto solo delle proposizioni rifiutate dal destinatario.
+1. Selezionare il filtro **[!UICONTROL Rejected propositions]** per tenere conto solo delle proposte rifiutate dal destinatario.
 
    ![](assets/offer_typology_example_021.png)
 
 1. Scegliete i destinatari per i quali applicare la regola.
 
-   Nel nostro esempio, sceglieremo i **Frequent Traveler** Recipients.
+   Nel nostro esempio, sceglieremo i **viaggiatori frequenti** destinatari.
 
    ![](assets/offer_typology_example_009.png)
 
@@ -74,7 +74,7 @@ Configureremo il nostro regolamento in modo che il viaggio in Canada venga offer
 
    ![](assets/offer_typology_example_013.png)
 
-1. Andate all&#39;ambiente delle offerte (**Ambiente - Destinatario** in questo caso) e fate riferimento alla nuova tipologia appena creata utilizzando l&#39;elenco a discesa nella **[!UICONTROL Eligibility]** scheda.
+1. Andate all&#39;ambiente delle offerte, (**Ambiente - Destinatario** in questo caso) e fate riferimento alla nuova tipologia appena creata utilizzando l&#39;elenco a discesa nella scheda **[!UICONTROL Eligibility]**.
 
    ![](assets/offer_typology_example_014.png)
 
@@ -84,20 +84,20 @@ Esempio di applicazione della regola di tipologia creata in precedenza.
 
 Vogliamo inviare una prima proposta di offerta appartenente alla categoria Canada. Se l&#39;offerta viene rifiutata una volta da uno dei destinatari, non verrà loro offerta di nuovo.
 
-1. Nella cartella dei destinatari dei **viaggiatori** frequenti, scegli uno dei profili per controllare le offerte per le quali sono idonei: fare clic sulla **[!UICONTROL Propositions]** scheda, quindi sulla **[!UICONTROL Preview]** scheda.
+1. Nella cartella **Viaggiatori frequenti**, scegli uno dei profili per controllare le offerte per le quali sono idonei: fare clic sulla scheda **[!UICONTROL Propositions]**, quindi sulla scheda **[!UICONTROL Preview]**.
 
-   Nel nostro esempio, **Tim Ramsey** è idoneo per un&#39;offerta che fa parte della categoria **America** .
+   Nel nostro esempio, **Tim Ramsey** è idoneo per un&#39;offerta che fa parte della categoria **Americhe**.
 
    ![](assets/offer_typology_example_015.png)
 
-1. Per iniziare, create un&#39;e-mail di consegna che verrà inviata ai destinatari **frequenti** con offerte.
+1. Per iniziare, crea un&#39;e-mail di consegna che sarà indirizzata ai destinatari **viaggiatori frequenti** con offerte.
 1. Selezionate i parametri di chiamata del motore di offerta.
 
-   Nel nostro esempio, la categoria **Viaggi in America** è selezionata, che contiene le sottocategorie **Canada** e Stati **** Uniti.
+   Nel nostro esempio, è selezionata la categoria **Viaggi in America**, che contiene le sottocategorie **Canada** e **Stati Uniti**.
 
    ![](assets/offer_typology_example_016.png)
 
-1. Inserite le offerte nel corpo del messaggio e inviate la consegna. Per ulteriori informazioni, vedere [Informazioni sui canali](../../interaction/using/about-outbound-channels.md)in uscita.
+1. Inserite le offerte nel corpo del messaggio e inviate la consegna. Per ulteriori informazioni, vedere [Informazioni sui canali in uscita](../../interaction/using/about-outbound-channels.md).
 
    Il destinatario ha ricevuto l&#39;offerta per la quale è idoneo.
 
