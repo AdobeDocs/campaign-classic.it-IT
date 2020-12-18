@@ -47,13 +47,13 @@ Le consegne di durata superiore a due anni dovrebbero essere eliminate dall&#39;
 
 Il numero di file sul disco del server dell&#39;applicazione non deve aumentare all&#39;infinito.
 
-I flussi di lavoro di importazione creano i file e causano quindi l’espansione del disco. Questo può essere impedito utilizzando l&#39;attività di raccolta [standard](../../workflow/using/file-collector.md) File. Il raccoglitore file sposta i file in una cartella temporanea e li elimina automaticamente.
+I flussi di lavoro di importazione creano i file e causano quindi l’espansione del disco. Ciò può essere impedito utilizzando l&#39;attività [Raccolta file ](../../workflow/using/file-collector.md) standard. Il raccoglitore file sposta i file in una cartella temporanea e li elimina automaticamente.
 
 Se un flusso di lavoro importa file e non utilizza le funzioni standard, deve essere eliminato per ridurre al minimo lo spazio su disco.
 
 ## Dati e registri transazionali {#transactional-data-and-logs}
 
-Ogni [flusso di lavoro](../../workflow/using/data-life-cycle.md#work-table) che importa i dati in  Adobe Campaign determina un aumento delle dimensioni del database.
+Ogni [flusso di lavoro](../../workflow/using/data-life-cycle.md#work-table) che importa i dati in  Adobe Campaign causa un aumento delle dimensioni del database.
 
 Verificate che i flussi di lavoro di pulizia o rimozione siano in esecuzione e che i record vengano eliminati in modo efficace. Tutti i dati e i registri transazionali devono essere eliminati. L&#39;attività di pulizia elimina solo le tabelle standard: tracking e log ampi. Le tabelle specifiche devono essere eliminate da flussi di lavoro specifici. Fai riferimento a [questa sezione](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
