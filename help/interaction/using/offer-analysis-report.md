@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Report di analisi dell’offerta{#offer-analysis-report}
 
-Il **[!UICONTROL Offer analysis]** rapporto fornisce una panoramica del numero di proposte accettate o rifiutate.
+Il rapporto **[!UICONTROL Offer analysis]** fornisce una panoramica del numero di proposte accettate o rifiutate.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Le statistiche sono ordinate in base a tre criteri:
 
    ![](assets/offer_report_perdeliveries.png)
 
-I dati possono essere filtrati in base ai vari criteri disponibili nella sezione superiore del rapporto. Dopo aver selezionato i criteri desiderati, fate clic sul **[!UICONTROL Refresh]** collegamento per applicarli al rapporto.
+I dati possono essere filtrati in base ai vari criteri disponibili nella sezione superiore del rapporto. Dopo aver selezionato i criteri desiderati, fate clic sul collegamento **[!UICONTROL Refresh]** per applicarli al rapporto.
 
 ![](assets/offer_report_criteria.png)
 
