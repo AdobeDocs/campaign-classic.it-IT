@@ -19,8 +19,8 @@ ht-degree: 0%
 
 Utilizzate l&#39;opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso ad Sybase IQ.
 
-1. Configurare il database [Sybase IQ](#configuring-sybase)
-1. Configurare l&#39;account [](#sybase-external) esterno Sybase IQ in Campaign
+1. Configurare [database Sybase IQ](#configuring-sybase)
+1. Configurare l&#39;account Sybase IQ [esterno](#sybase-external) in Campaign
 
 ## Configurazione sybase IQ {#configuring-sybase}
 
@@ -28,15 +28,15 @@ La connessione a un database esterno Sybase IQ in FDA richiede configurazioni ag
 
 >[!NOTE]
 >
->Prima di iniziare, accertatevi che il pacchetto **unixodbc** sia sul server.
+>Prima di iniziare, assicuratevi che il pacchetto **unixodbc** sia sul server.
 
-1. Installate **iq_odbc**. Un errore può verificarsi alla fine dell&#39;installazione. Questo errore può essere ignorato.
+1. Installare **iq_odbc**. Un errore può verificarsi alla fine dell&#39;installazione. Questo errore può essere ignorato.
 
-1. Installate **iq_client_common**. Alla fine dell&#39;installazione può verificarsi un errore Java. Questo errore può essere ignorato.
+1. Installare **iq_client_common**. Alla fine dell&#39;installazione può verificarsi un errore Java. Questo errore può essere ignorato.
 
 1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: /etc/odbc.ini per i parametri generali e /etc/odbcinst.ini per la dichiarazione dei driver:
 
-   * **/etc/odbc.ini** (sostituite valori come `<server_alias>` caratteri personalizzati):
+   * **/etc/odbc.ini** (sostituite valori come  `<server_alias>` caratteri personalizzati):
 
       ```
       [ODBC Data Sources]
@@ -72,9 +72,9 @@ L&#39;account esterno di Sybase IQ consente di collegare l&#39;istanza Campaign 
 
 1. Da Campaign **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Fate clic **[!UICONTROL New]** e selezionate **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
-1. Per configurare l&#39;account **[!UICONTROL Sybase IQ]** esterno, dovete specificare:
+1. Per configurare l&#39;account esterno **[!UICONTROL Sybase IQ]**, è necessario specificare:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
