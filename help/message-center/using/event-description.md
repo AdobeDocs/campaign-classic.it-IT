@@ -17,25 +17,25 @@ ht-degree: 0%
 
 # Descrizione di un evento{#event-description}
 
-## Informazioni sul modello dati di messaggistica transazionale {#about-transactional-messaging-datamodel}
+## Informazioni sul modello di dati di messaggistica transazionali {#about-transactional-messaging-datamodel}
 
-I messaggi transazionali si basano sul modello dati Adobe Campaign  e utilizzano due tabelle separate aggiuntive. Queste [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contengono gli stessi campi e consentono di gestire gli eventi in tempo reale da un lato e gli eventi batch dall&#39;altro.
+I messaggi transazionali si basano sul modello dati Adobe Campaign  e utilizzano due tabelle separate aggiuntive. Queste [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent** contengono gli stessi campi e consentono di gestire eventi in tempo reale da un lato e gli eventi batch dall&#39;altro.
 
 ## Metodi SOAP {#soap-methods}
 
 Questa sezione descrive i metodi SOAP associati agli schemi del modulo dei messaggi transazionali.
 
-Due metodi SOAP **PushEvent** o **PushEvents** sono collegati alle due classi di dati **nms:rtEvent** e **nms:BatchEvent** . È il sistema di informazioni che determina se un evento è di tipo &quot;batch&quot; o &quot;in tempo reale&quot;.
+Due metodi SOAP **PushEvent** o **PushEvents** sono collegati alle due classi di dati **nms:rtEvent** e **nms:BatchEvent**. È il sistema di informazioni che determina se un evento è di tipo &quot;batch&quot; o &quot;in tempo reale&quot;.
 
-* **PushEvent** consente di inserire un singolo evento nel messaggio,
-* **PushEvents** consente di inserire una serie di eventi nel messaggio.
+* **** PushEvent consente di inserire un singolo evento nel messaggio,
+* **** PushEventslets consente di inserire una serie di eventi nel messaggio.
 
 Il percorso WSDL per l&#39;accesso a entrambi i metodi è:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** per accedere allo schema del tipo in tempo reale.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** per accedere allo schema del tipo di batch.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** rtEventper accedere allo schema del tipo in tempo reale.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:** batchEventper accedere allo schema del tipo di batch.
 
-Entrambi i metodi contengono un **`<urn:sessiontoken>`** elemento per accedere al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP affidabili. Per recuperare il token di sessione, eseguite una chiamata SOAP di accesso, quindi un token get seguito da un logoff. Utilizzate lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo token sessione consigliato.
+Entrambi i metodi contengono un elemento **`<urn:sessiontoken>`** per accedere al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP affidabili. Per recuperare il token di sessione, eseguite una chiamata SOAP di accesso, quindi un token get seguito da un logoff. Utilizzate lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo token sessione consigliato.
 
 Se utilizzate un server con bilanciamento del carico, potete utilizzare l&#39;autenticazione utente/password (a livello del messaggio RT). Esempio:
 
@@ -51,9 +51,9 @@ Se utilizzate un server con bilanciamento del carico, potete utilizzare l&#39;au
 </PushEvent>
 ```
 
-Il metodo **PushEvent** è composto da un **`<urn:domevent>`** parametro che contiene l&#39;evento.
+Il metodo **PushEvent** è composto da un parametro **`<urn:domevent>`** che contiene l&#39;evento.
 
-Il metodo **PushEvents** è composto da un **`<urn:domeventcollection>`** parametro che contiene eventi.
+Il metodo **PushEvents** è composto da un parametro **`<urn:domeventcollection>`** che contiene eventi.
 
 Esempio di utilizzo di PushEvent:
 
@@ -77,7 +77,7 @@ Esempio di utilizzo di PushEvent:
 
 >[!NOTE]
 >
->In caso di chiamata al metodo **PushEvents** , è necessario aggiungere un elemento XML principale per conformarsi al codice XML standard. Questo elemento XML incornicia i vari **`<rtevent>`** elementi contenuti nell&#39;evento.
+>In caso di chiamata al metodo **PushEvents**, è necessario aggiungere un elemento XML principale per conformarsi al codice XML standard. Questo elemento XML incornicia i vari elementi **`<rtevent>`** contenuti nell&#39;evento.
 
 Esempio di utilizzo di PushEvents:
 
@@ -103,13 +103,13 @@ Esempio di utilizzo di PushEvents:
 </urn:PushEvents>
 ```
 
-Gli **`<rtevent>`** elementi e **`<batchevent>`** hanno una serie di attributi e un elemento figlio obbligatorio: **`<ctx>`** per l&#39;integrazione dei dati dei messaggi.
+Gli elementi **`<rtevent>`** e **`<batchevent>`** hanno un insieme di attributi e un elemento figlio obbligatorio: **`<ctx>`** per l&#39;integrazione dei dati dei messaggi.
 
 >[!NOTE]
 >
->L’ **`<batchevent>`** elemento consente di aggiungere l’evento alla coda &quot;batch&quot;. L’evento **`<rtevent>`** viene aggiunto alla coda &quot;in tempo reale&quot;.
+>L&#39;elemento **`<batchevent>`** consente di aggiungere l&#39;evento alla coda &quot;batch&quot;. L&#39; **`<rtevent>`** aggiunge l&#39;evento alla coda &quot;in tempo reale&quot;.
 
-Gli attributi obbligatori degli **`<rtevent>`** elementi e **`<batchevent>`** sono @type e @email. Il valore di @type deve corrispondere al valore elenco dettagliato definito al momento della configurazione dell&#39;istanza di esecuzione. Questo valore consente di definire il modello da collegare al contenuto dell&#39;evento durante la consegna.
+Gli attributi obbligatori degli elementi **`<rtevent>`** e **`<batchevent>`** sono @type e @email. Il valore di @type deve corrispondere al valore elenco dettagliato definito al momento della configurazione dell&#39;istanza di esecuzione. Questo valore consente di definire il modello da collegare al contenuto dell&#39;evento durante la consegna.
 
 `<rtevent> configuration example:`
 
@@ -117,17 +117,17 @@ Gli attributi obbligatori degli **`<rtevent>`** elementi e **`<batchevent>`** so
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In questo esempio vengono forniti due canali: l’indirizzo e-mail e il numero di telefono cellulare. Il canale **desiderato** consente di selezionare il canale da utilizzare per trasformare l&#39;evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile, ecc.
+In questo esempio vengono forniti due canali: l’indirizzo e-mail e il numero di telefono cellulare. Il **wishChannel** consente di selezionare il canale da utilizzare per trasformare l&#39;evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile, ecc.
 
-Se desiderate posticipare la consegna di un evento, aggiungete il **[!UICONTROL scheduled]** campo seguito dalla data desiderata. L’evento verrà trasformato in un messaggio a tale data.
+Se desiderate posticipare la consegna di un evento, aggiungete il campo **[!UICONTROL scheduled]** seguito dalla data desiderata. L’evento verrà trasformato in un messaggio a tale data.
 
 È consigliabile compilare gli attributi @wishChannel e @emailFormat con valori numerici. La tabella della funzione che collega valori numerici ed etichette si trova nella descrizione dello schema dati.
 
 >[!NOTE]
 >
->Una descrizione dettagliata di tutti gli attributi autorizzati e dei relativi valori è disponibile nella descrizione dello schema di dati **nms:rtEvent** e **nms:BatchEvent** .
+>Una descrizione dettagliata di tutti gli attributi autorizzati e dei relativi valori è disponibile nella descrizione dello schema di dati **nms:rtEvent** e **nms:BatchEvent**.
 
-L&#39; **`<ctx>`** elemento contiene i dati del messaggio. Il contenuto XML è aperto, il che significa che può essere configurato in base al contenuto da distribuire.
+L&#39;elemento **`<ctx>`** contiene i dati del messaggio. Il contenuto XML è aperto, il che significa che può essere configurato in base al contenuto da distribuire.
 
 >[!NOTE]
 >
