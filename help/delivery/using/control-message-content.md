@@ -27,7 +27,7 @@ Alcuni ISP controllano la validità dell&#39;indirizzo del mittente (Da) prima d
 
 Per impostazione predefinita, quando il messaggio viene analizzato, una regola di tipologia verifica se è stato incluso un collegamento di rinuncia e genera un avviso se risulta mancante. È possibile modificare questa regola in modo che venga generato un errore anziché un semplice avviso e impedire che una consegna venga eseguita senza questo collegamento.
 
-È necessario verificare che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando si invia la prova, verificare che il collegamento sia valido, che il modulo sia online e che la convalida di questo elemento modifichi il valore del **[!UICONTROL No longer contact this recipient]** campo in **[!UICONTROL Yes]**. È consigliabile eseguire questo controllo in modo sistematico perché l&#39;errore umano è sempre possibile quando si inserisce il collegamento o si modifica il modulo.
+È necessario verificare che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando si invia la prova, verificare che il collegamento sia valido, che il modulo sia in linea e che la convalida di questo elemento modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. È consigliabile eseguire questo controllo in modo sistematico perché l&#39;errore umano è sempre possibile quando si inserisce il collegamento o si modifica il modulo.
 
 Se viene rilevato un problema relativo all&#39;annullamento dell&#39;iscrizione dopo l&#39;avvio della consegna, è comunque possibile eseguire un&#39;annullamento dell&#39;iscrizione manualmente (utilizzando, ad esempio, la funzione di aggiornamento di massa) per i destinatari che fanno clic sul collegamento di annullamento dell&#39;iscrizione anche se non sono stati in grado di confermare la scelta.
 
@@ -39,4 +39,4 @@ Come regola generale, non cercate di ostacolare i destinatari che desiderano rif
 
 Prima di iniziare una consegna, la scheda Anteprima consente di valutare i rischi. Un messaggio di avviso fornisce il risultato del test.
 
-Ulteriori informazioni in questa [sezione](../../delivery/using/spamassassin.md).
+Ulteriori informazioni in questa sezione [](../../delivery/using/spamassassin.md).
