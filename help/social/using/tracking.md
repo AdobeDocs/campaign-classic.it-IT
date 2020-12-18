@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Tracking
-description: Tracking
+description: Tracciamento
 audience: social
 content-type: reference
 topic-tags: annexes
@@ -19,15 +19,15 @@ ht-degree: 4%
 
 Social Marketing fornisce report che consentono di misurare il tasso di reattività delle consegne di Facebook e Twitter e di analizzare l&#39;acquisizione dei profili di Facebook. Sono disponibili i seguenti rapporti:
 
-* Il **[!UICONTROL Reactivity rate]** rapporto, disponibile tramite la **[!UICONTROL Summary]** scheda di una distribuzione Facebook o Twitter.
+* Il report **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Summary]** di una distribuzione su Facebook o Twitter.
 
    ![](assets/social_report_3.png)
 
-* Il **[!UICONTROL Reactivity rate]** rapporto, disponibile tramite la **[!UICONTROL Dashboard]** scheda di un servizio Twitter o Facebook.
+* Il report **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Twitter o Facebook.
 
    ![](assets/social_report_2.png)
 
-* Il **[!UICONTROL Fan acquisition]** rapporto, disponibile tramite la **[!UICONTROL Dashboard]** scheda di un servizio Facebook.
+* Il report **[!UICONTROL Fan acquisition]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Facebook.
 
    ![](assets/social_report_1.png)
 
