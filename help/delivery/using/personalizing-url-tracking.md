@@ -17,11 +17,11 @@ ht-degree: 10%
 
 # Personalizzazione del tracking degli URL{#personalizing-url-tracking}
 
-Le impostazioni avanzate per il tracciamento dei messaggi sono accessibili tramite l’ **[!UICONTROL Tracking & Images]** icona nella barra degli strumenti della procedura guidata di consegna.
+Le impostazioni avanzate di tracciamento dei messaggi sono accessibili tramite l&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti della procedura guidata di consegna.
 
 >[!NOTE]
 >
->In questa finestra è anche configurata la gestione delle immagini nelle e-mail. Consultate [Aggiunta di immagini](../../delivery/using/defining-the-email-content.md#adding-images).
+>In questa finestra è anche configurata la gestione delle immagini nelle e-mail. Vedere [Aggiunta di immagini](../../delivery/using/defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -31,7 +31,7 @@ Puoi configurare le opzioni di tracciamento:
 
    >[!CAUTION]
    >
-   >Quando il tracciamento non è attivato su una consegna (ad es. **[!UICONTROL Activate tracking]** opzione non selezionata), i rapporti e i dati relativi al tracciamento non sono disponibili: I rapporti relativi alle aperture, agli hot click e agli URL tracciati non mostreranno alcun dato e **[!UICONTROL Tracking logs]** le schede non verranno visualizzate per la consegna.
+   >Quando il tracciamento non è attivato in una consegna (ad es. **[!UICONTROL Activate tracking]** opzione non selezionata), rapporti e dati relativi al tracciamento non sono disponibili: I rapporti sugli URL aperti, clic con il pulsante destro del mouse e tracciati non visualizzeranno alcun dato e **[!UICONTROL Tracking logs]** le schede non verranno visualizzate per la consegna.
 
 * Attiva/Disattiva il tracciamento per i messaggi.
 
@@ -41,7 +41,7 @@ Gli URL tracciati sono elencati nella finestra centrale del modulo ad albero.
 
 Puoi attivare o disattivare il tracciamento singolarmente per ogni URL del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/how-to-configure-tracked-links.md).
 
-La **[!UICONTROL Advanced]** scheda consente di personalizzare le formule di calcolo degli URL tracciati e l&#39;URL di apertura.
+La scheda **[!UICONTROL Advanced]** consente di personalizzare le formule di calcolo degli URL tracciati e l&#39;URL di apertura.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
