@@ -15,9 +15,9 @@ ht-degree: 2%
 ---
 
 
-# Monitoraggio della realizzabilità (recapito e-mail){#email-deliverability}
+# Monitoraggio della distribuzione (recapito tramite e-mail){#email-deliverability}
 
-Il flusso di lavoro dettagliato riportato di seguito è installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualifica della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il pacchetto **di monitoraggio della recapito (e-mail Deliverability)** , il flusso di lavoro viene eseguito di notte. For more on Deliverability monitoring, refer to this [section](../../delivery/using/about-deliverability.md).
+Il flusso di lavoro dettagliato riportato di seguito è installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualifica della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il pacchetto **Monitoraggio della recapito (recapito tramite e-mail)**, il flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio della realizzabilità, consultare la sezione [a1/>.](../../delivery/using/about-deliverability.md)
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Il flusso di lavoro dettagliato riportato di seguito è installato per impostazi
   <tr> 
    <td> <strong>Aggiornamento per la recapito</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  Una volta installato il pacchetto <strong>Deliverability Monitoring (Email Deliverability)</strong> , il flusso di lavoro viene eseguito ogni sera per aggiornare regolarmente l'elenco delle regole e consente di gestire attivamente la distribuzione della piattaforma.<br /> </td> 
+   <td>  Una volta installato il pacchetto <strong>Monitoraggio della recapito (Email Deliverability)</strong>, il flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l'elenco delle regole e consente di gestire attivamente la recapito della piattaforma.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
