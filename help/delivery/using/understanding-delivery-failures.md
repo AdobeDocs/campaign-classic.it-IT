@@ -164,13 +164,13 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non Raggiungibile </td> 
    <td> Soft/Hard </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Si è verificato un errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Rigido </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> L'indirizzo non esiste. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
   </tr> 
  </tbody> 
