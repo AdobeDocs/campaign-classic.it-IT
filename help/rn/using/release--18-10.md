@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
+>Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).[
 
 **Miglioramenti**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
+>Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).[
 
 **Miglioramenti**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. Effettua [l&#39;aggiornamento alla build](../../production/using/build-upgrade.md) più recente o contatta l&#39;Assistenza [clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
+>Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).[
 
 **Novità**
 
@@ -117,13 +117,13 @@ ht-degree: 7%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Push notification improvements<br /> </td> 
-   <td> Sono stati implementati diversi miglioramenti per le notifiche push in  Adobe Campaign:<br /> 
+   <td> Miglioramenti delle notifiche push<br /> </td> 
+   <td> Sono stati implementati diversi miglioramenti per la notifica push in  Adobe Campaign:<br /> 
     <ul> 
      <li> <p>Tenere traccia delle notifiche silenziose in iOS </p> </li> 
      <li> <p>Implementare il feedback sulle chiamate di registrazione in iOS</p> </li> 
      <li> <p>Miglioramento della velocità di preparazione della distribuzione iOS</p> </li> 
-    </ul> <p>Come parte dell'ammortamento GCM di Google, il connettore Android V2 ora consente le connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>. L'aggiornamento manuale a FCM è dettagliato in questo <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
+    </ul> <p>Come parte dell'ammortamento GCM di Google, il connettore Android V2 ora consente le connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>. L'aggiornamento manuale a FCM è descritto in questo <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> Attività di gestione dati SQL<br /> </td> 
@@ -131,7 +131,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> Monitoraggio del flusso di lavoro<br /> </td> 
-   <td> <p>Con la nuova  Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rapida rappresentazione grafica di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull'istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/heatmap.md">documentazione dettagliata</a>.</p> <p>Il pacchetto HeatMap del flusso di lavoro è disponibile anche su richiesta per le build precedenti alla 8977 (avvio build 8700). Per ulteriori informazioni sulla richiesta e l’installazione, consultare <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
+   <td> <p>Con la nuova  Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rapida rappresentazione grafica di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull'istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/heatmap.md">documentazione dettagliata</a>.</p> <p>Il pacchetto HeatMap del flusso di lavoro è disponibile anche su richiesta per le build precedenti alla 8977 (avvio build 8700). Per ulteriori informazioni sulla richiesta e l'installazione, fare riferimento a <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,8 +148,8 @@ ht-degree: 7%
 
 * Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 sono ora supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
-* Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. For more information, refer to the [detailed documentation](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
-* L&#39;opzione di formula **di calcolo della** data è ora disponibile nelle proprietà di consegna quando si crea un singolo recapito utilizzando il modello di consegna diretta per posta. (NEO-9792)
+* Quando si crea una connessione SFTP, ora è possibile utilizzare l&#39;autenticazione proxy. Per ulteriori informazioni, fare riferimento alla [documentazione dettagliata](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
+* L&#39;opzione **Formula di calcolo della data** è ora disponibile nelle proprietà di consegna quando si crea una singola consegna utilizzando il modello di consegna diretta per posta. (NEO-9792)
 * La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e per le applicazioni Web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot; di seguito.
 * L&#39;importazione di risorse condivise Adobe Marketing Cloud in una pagina di consegna o di destinazione è stata migliorata in termini di sicurezza e prestazioni.
 * Una nuova casella di controllo è disponibile nell&#39;account esterno del canale Mobile per abilitare tracce SMPP dettagliate nel file di registro, che rende questo output direttamente accessibile dall&#39;interfaccia Adobe Campaign .
@@ -197,8 +197,8 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 
 **Patch**
 
-* È stato corretto un errore che impediva il download dei file dall&#39;attività del flusso di lavoro di download **** Web. (NEO-11105)
-* È stato corretto un errore che a volte lasciava il flusso di lavoro **Invio di indicatori e attributi** della campagna in uno stato Non riuscito (NEO-10820).
+* È stato corretto un errore che impediva il download dei file dall&#39;attività del flusso di lavoro **Download Web**. (NEO-11105)
+* È stato corretto un errore che a volte lasciava il flusso di lavoro **Invio di indicatori e attributi della campagna** in stato Non riuscito (NEO-10820).
 * È stato risolto un problema che eliminava l&#39;elenco dei destinatari creato dopo l&#39;esecuzione dell&#39;attività di aggiornamento Elenco in un flusso di lavoro. (NEO-11696)
 * È stato risolto un problema che causava erroneamente la visualizzazione delle campagne un mese prima nel calendario Campaign (su un&#39;istanza giapponese). (NEO-11445)
 * È stato risolto un problema che impediva la visualizzazione della configurazione di Analytics nella scheda Analisi Web delle proprietà di consegna. (NEO-11619)
@@ -217,7 +217,7 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 * È stato risolto un problema che si verificava durante la configurazione di un account esterno di un canale mobile utilizzando il connettore SMPP generico esteso: se si specificavano parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente questi parametri invece dei propri.
 * È stato risolto un problema che causava il fallimento delle consegne programmate durante l&#39;impostazione di una frequenza per la regola di pressione, in quanto le consegne venivano continuamente ricalcolate dopo il primo arbitrato. (NEO-10016)
 * È stato risolto un problema che causava l&#39;arresto anomalo del server Web IIS durante il processo di riciclo del pool di applicazioni (nella libreria nlsrvmod.dll). (NEO-10862)
-* È stato risolto un problema che poteva impedire la ricerca di un destinatario nella schermata **Profili e Target** . (NEO-8228)
+* È stato risolto un problema che poteva impedire la ricerca di un destinatario nella schermata **Profili e Target**. (NEO-8228)
 * È stato risolto un problema che poteva causare un errore di timeout durante l&#39;accesso alla cartella Cronologia eventi nel caso di un numero elevato di record. (NEO-11738)
 * È stato risolto un problema che poteva causare la restituzione errata dei destinatari della distribuzione LINE come &quot;Non raggiungibile&quot;. (NEO-10833)
 * È stato risolto un problema che si verificava durante l&#39;esecuzione di una query del flusso di lavoro con una colonna aggiuntiva su  Oracle. (NEO-11615)
@@ -237,7 +237,7 @@ Queste modifiche all&#39;indice potrebbero determinare un aumento del tempo nece
 * È stato risolto un problema che causava la codifica degli URL come URL tracciati nei parametri aggiuntivi di una notifica push Android. (NEO-11468)
 * È stato corretto un errore di script che si verificava nel report Attività utente quando si impostavano i parametri su &quot;Intervalli di un giorno&quot; e &quot;Apre&quot;. (NEO-11655)
 * È stato risolto un problema che si verificava durante la connessione al server di mid-sourcing o al Centro messaggi tramite un proxy Web autenticato. (NEO-11309)
-* È stato corretto un errore Oracle  che si verificava quando una nuova composizione di consegna veniva salvata dopo la selezione di un elemento di uno schema specifico **basato su una vista** SQL. (NEO-11682)
+* È stato corretto un errore Oracle  che si verificava quando una nuova composizione di consegna veniva salvata dopo la selezione di un elemento di uno schema specifico **in base a una vista SQL**. (NEO-11682)
 * È stato risolto un problema che causava la generazione di file di rifiuto contenenti falsi positivi durante l&#39;elaborazione di un file zip contenente un .csv tramite un&#39;attività di caricamento tramite l&#39;opzione Decompressione.
 * xtkjoblog è ora eliminato dalla pulizia.
 
