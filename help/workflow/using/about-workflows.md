@@ -30,7 +30,7 @@ I flussi di lavoro si verificano in vari contesti e fasi del processo di gestion
  Adobe Campaign utilizza i flussi di lavoro per:
 
 * Eseguire campagne di targeting. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#implementation-steps-)
-* Creare campagne: per ogni campagna, la **[!UICONTROL Workflow]** scheda consente di creare la destinazione e creare le consegne. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Creare campagne: per ogni campagna, la scheda **[!UICONTROL Workflow]** consente di creare la destinazione e creare le consegne. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#campaign-workflows)
 * Eseguire processi tecnici: pulizia, raccolta delle informazioni di tracciamento o calcoli provvisori. [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Un flusso di lavoro può significare sia una definizione del processo (il modello del flusso di lavoro, che è una rappresentazione di ciò che dovrebbe accadere) che un&#39;istanza di questo processo (un&#39;istanza del flusso di lavoro, che è una rappresentazione di ciò che sta effettivamente accadendo).
@@ -43,7 +43,7 @@ Ogni flusso di lavoro contiene:
 
 * **[!UICONTROL Activities]**
 
-   Un&#39;attività descrive un modello di attività. Le varie attività disponibili sono rappresentate nel diagramma da icone. Ogni tipo ha proprietà comuni e proprietà specifiche. Ad esempio, mentre tutte le attività hanno un nome e un&#39;etichetta, solo l&#39; **[!UICONTROL Approval]** attività dispone di un&#39;assegnazione.
+   Un&#39;attività descrive un modello di attività. Le varie attività disponibili sono rappresentate nel diagramma da icone. Ogni tipo ha proprietà comuni e proprietà specifiche. Ad esempio, mentre tutte le attività hanno un nome e un&#39;etichetta, solo l&#39;attività **[!UICONTROL Approval]** dispone di un&#39;assegnazione.
 
    In un diagramma di flusso di lavoro, una determinata attività può produrre più attività, in particolare in presenza di un ciclo o di azioni ricorrenti (periodiche).
 
@@ -59,7 +59,7 @@ Ogni flusso di lavoro contiene:
    >
    >È comunque possibile eseguire un flusso di lavoro contenente transizioni non interrotte: viene generato un messaggio di avviso e il flusso di lavoro viene messo in pausa una volta raggiunta la transizione, ma non viene generato un errore. È quindi possibile avviare un flusso di lavoro senza completarlo e aggiungerlo man mano che si prosegue.
 
-   Per ulteriori informazioni sulla creazione di un flusso di lavoro, consulta [questa sezione](../../workflow/using/building-a-workflow.md).
+   Per ulteriori informazioni sulla creazione di un flusso di lavoro, consultare [questa sezione](../../workflow/using/building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
@@ -74,7 +74,7 @@ Per informazioni e procedure ottimali per automatizzare i processi con i flussi 
 * Ulteriori informazioni sulle attività del flusso di lavoro in [questa pagina](../../workflow/using/how-to-use-workflow-data.md).
 * Scopri come creare un flusso di lavoro in [questa sezione](../../workflow/using/building-a-workflow.md).
 * Scopri come utilizzare i flussi di lavoro per importare dati in Campaign in [questa sezione](../../workflow/using/importing-data.md).
-* Le best practice relative ai flussi di lavoro sono illustrate in [questa pagina](../../workflow/using/workflow-best-practices.md).
-* In [questa sezione](../../workflow/using/starting-a-workflow.md)troverai le istruzioni sull’esecuzione del flusso di lavoro.
+* Le best practice relative ai flussi di lavoro sono descritte in [questa pagina](../../workflow/using/workflow-best-practices.md).
+* Informazioni sull&#39;esecuzione del flusso di lavoro in [questa sezione](../../workflow/using/starting-a-workflow.md).
 * Scopri come monitorare i flussi di lavoro in [questa pagina](../../workflow/using/monitoring-workflow-execution.md).
-* Scopri come concedere l’accesso agli utenti per l’utilizzo dei flussi di lavoro in [questa pagina](../../workflow/using/managing-rights.md).
+* Scoprite come concedere l&#39;accesso agli utenti per l&#39;utilizzo dei flussi di lavoro in [questa pagina](../../workflow/using/managing-rights.md).
