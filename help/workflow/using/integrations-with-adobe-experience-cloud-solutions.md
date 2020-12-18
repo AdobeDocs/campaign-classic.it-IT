@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Integrazioni con le soluzioni Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono installati con il modulo **Integrazione con il modulo Adobe Experience Cloud** . For more on this module, refer to this [section](../../integrations/using/configuring-ims.md#installing-the-package).
+I flussi di lavoro descritti di seguito sono installati con il modulo **Integrazione con il modulo Adobe Experience Cloud** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono in
   <tr> 
    <td> <span class="uicontrol">Esportare audience nell'Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Questo flusso di lavoro esporta i tipi di pubblico come tipi di pubblico/segmenti condivisi. Queste audience possono essere utilizzate nelle diverse soluzioni Adobe Experience Cloud che utilizzate.<br /> </td> 
+   <td> Questo flusso di lavoro esporta i tipi di pubblico come tipi di pubblico/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud utilizzate.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
