@@ -21,7 +21,7 @@ ht-degree: 1%
 
 La creazione, la modifica e la pubblicazione di contenuti possono essere automatizzate utilizzando un flusso di lavoro configurato tramite l&#39;interfaccia client Adobe Campaign .
 
-L&#39;attività di gestione **dei** contenuti è accessibile dalla **[!UICONTROL Tools]** barra degli strumenti del diagramma del flusso di lavoro.
+L&#39;attività **Content management** è accessibile tramite la barra degli strumenti **[!UICONTROL Tools]** del diagramma del flusso di lavoro.
 
 Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
@@ -64,7 +64,7 @@ Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
 ### Azione da eseguire {#action-to-execute}
 
-* **Salva.**
+* **Salva**
 
    Salva il contenuto creato o modificato. L&#39;identificatore del contenuto salvato viene propagato nella variabile &quot;contentId&quot; dell&#39;evento in uscita.
 
@@ -74,11 +74,11 @@ Le proprietà dell&#39;attività sono suddivise in quattro fasi:
 
 ### Transition {#transition}
 
-L&#39;opzione **Genera una transizione** di output consente di aggiungere una transizione di output all&#39; **[!UICONTROL Content management]** attività per collegare una nuova attività all&#39;esecuzione del flusso di lavoro. Dopo aver selezionato questa opzione, immettete un&#39;etichetta per la transizione.
+L&#39;opzione **Genera una transizione di output** consente di aggiungere una transizione di output all&#39;attività **[!UICONTROL Content management]** per collegare una nuova attività all&#39;esecuzione del flusso di lavoro. Dopo aver selezionato questa opzione, immettete un&#39;etichetta per la transizione.
 
 ## Esempi {#examples}
 
-### Automazione della creazione e della distribuzione dei contenuti {#automating-content-creation-and-delivery}
+### Automazione della creazione e distribuzione dei contenuti {#automating-content-creation-and-delivery}
 
 L&#39;esempio seguente automatizza la creazione e la distribuzione di un blocco di contenuto.
 
@@ -90,7 +90,7 @@ Il contenuto è configurato tramite l&#39;attività &quot;Gestione dei contenuti
 
 Una nuova istanza di contenuto viene creata tramite il modello di pubblicazione e la cartella della stringa di contenuto.
 
-Nel nostro esempio, abbiamo sovraccaricato il soggetto di consegna. Verrà presa in considerazione al posto di quella inserita nel **[!UICONTROL Delivery]** modello.
+Nel nostro esempio, abbiamo sovraccaricato il soggetto di consegna. Verrà presa in considerazione al posto di quella inserita nel modello **[!UICONTROL Delivery]**.
 
 Il contenuto viene compilato automaticamente da un feed XML proveniente dall’URL immesso:
 
@@ -103,7 +103,7 @@ Il contenuto viene compilato automaticamente da un feed XML proveniente dall’U
 </book>
 ```
 
-Il formato dei dati non corrisponde allo schema di dati immesso nel modello di pubblicazione (**cus:book** nel nostro esempio); l&#39; **`<section>`** elemento deve essere sostituito con l&#39; **`<chapter>`** elemento . È necessario applicare il foglio di stile &quot;cus:book-workflow.xsl&quot; per apportare le modifiche necessarie.
+Il formato dei dati non corrisponde allo schema di dati immesso nel modello di pubblicazione (**cus:book** nel nostro esempio); l&#39;elemento **`<section>`** deve essere sostituito con l&#39;elemento **`<chapter>`**. È necessario applicare il foglio di stile &quot;cus:book-workflow.xsl&quot; per apportare le modifiche necessarie.
 
 Codice di origine del foglio di stile XSLT utilizzato:
 
@@ -142,11 +142,11 @@ Codice di origine del foglio di stile XSLT utilizzato:
 
 L&#39;azione finale dell&#39;attività consiste nel salvare l&#39;istanza di contenuto e passare all&#39;attività successiva.
 
-Il targeting viene eseguito tramite l&#39;attività **Query** .
+Il targeting viene eseguito tramite l&#39;attività **Query**.
 
-È stata aggiunta un&#39;attività **AND-join** per garantire che la consegna venga avviata solo una volta completate le query di destinazione e gli aggiornamenti dei contenuti.
+È stata aggiunta un&#39;attività **AND-join** per fare in modo che la consegna venga avviata solo una volta completate le query di destinazione e gli aggiornamenti dei contenuti.
 
-L&#39;azione di consegna è configurata tramite l&#39;attività **Consegna** :
+L&#39;azione di consegna è configurata tramite l&#39;attività **Delivery**:
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -160,19 +160,19 @@ Il contenuto della distribuzione viene popolato tramite l&#39;evento in entrata.
 
 L&#39;ultimo passaggio per completare l&#39;attività consiste nel preparare e avviare la consegna.
 
-### Creazione di contenuti e pubblicazione in un secondo momento {#creating-content-and-publishing-it-later}
+### Creazione di contenuti e pubblicazione in un secondo tempo {#creating-content-and-publishing-it-later}
 
 In questo esempio viene creato un blocco di contenuto e viene avviata la pubblicazione del file dopo un ritardo specifico.
 
 ![](assets/d_ncs_content_workflow5.png)
 
-La prima attività **di gestione** del contenuto crea un&#39;istanza di contenuto.
+La prima attività **Gestione dei contenuti** crea un&#39;istanza di contenuto.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->La **[!UICONTROL Publication]** scheda della finestra dei modelli di trasformazione deve essere compilata con la posizione della destinazione da generare.
+>La scheda **[!UICONTROL Publication]** della finestra dei modelli di trasformazione deve essere compilata con la posizione della destinazione da generare.
 
 Viene aggiunta un&#39;attività di attesa per mettere in pausa la transizione successiva per una settimana.
 
@@ -188,7 +188,7 @@ Il contenuto da pubblicare viene immesso tramite la transizione in entrata.
 
 L&#39;azione finale consiste nel generare questo contenuto forzando la directory di pubblicazione.
 
-L&#39;attività Codice **** JavaScript recupera il nome completo di ciascun file generato.
+L&#39;attività **codice JavaScript** recupera il nome completo di ciascun file generato.
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -202,7 +202,7 @@ La prima attività **Crea consegna** crea l&#39;azione di consegna.
 
 L&#39;attività fork consente di avviare contemporaneamente il calcolo della destinazione e la creazione dell&#39;istanza di contenuto.
 
-Una volta eseguite le attività, la casella di partecipazione AND attiva l&#39;attività **Consegna** per avviare la consegna precedentemente creata su contenuto e targeting.
+Una volta eseguite le attività, la casella di partecipazione AND attiva l&#39;attività **Delivery** per avviare la consegna precedentemente creata su contenuto e targeting.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,13 +214,13 @@ Il contenuto della distribuzione viene popolato tramite l&#39;evento in entrata.
 
 L&#39;azione finale dell&#39;attività consiste nel preparare e avviare la consegna.
 
-### Importazione di contenuti dall&#39;FTP {#importing-content-from-ftp}
+### Importazione di contenuto dall&#39;FTP {#importing-content-from-ftp}
 
-Se il contenuto di distribuzione è disponibile in un file HTML ubicato su server FTP o SFTP, potete facilmente caricare tale contenuto  consegne Adobe Campaign. Refer to [this example](../../workflow/using/loading-delivery-content.md).
+Se il contenuto di distribuzione è disponibile in un file HTML ubicato su server FTP o SFTP, potete facilmente caricare tale contenuto  consegne Adobe Campaign. Fare riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
 
-### Importazione di contenuti da  connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importazione di contenuti  connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se il contenuto di distribuzione si trova  bucket Amazon Simple Storage Service (S3), è possibile caricare facilmente tale contenuto  consegne Adobe Campaign. Refer to [this example](../../workflow/using/loading-delivery-content.md).
+Se il contenuto di distribuzione si trova  bucket Amazon Simple Storage Service (S3), è possibile caricare facilmente tale contenuto  consegne Adobe Campaign. Fare riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
 
 ## Aggiornamento semiautomatico {#semi-automatic-update}
 
@@ -228,11 +228,11 @@ I dati del contenuto possono essere aggiornati in modalità &quot;semi-automatic
 
 L&#39;attivazione del recupero dei dati viene eseguita manualmente tramite il modulo di input.
 
-Lo scopo è dichiarare un campo di tipo **editBtn** **`<input>`** nel modulo. Questo controllo comprende un&#39;area di modifica e un pulsante per avviare l&#39;elaborazione.
+L&#39;obiettivo è dichiarare un campo **editBtn** di tipo **`<input>`** nel modulo. Questo controllo comprende un&#39;area di modifica e un pulsante per avviare l&#39;elaborazione.
 
 La zona di modifica consente di compilare i dati variabili utilizzati per creare l&#39;URL del feed XML dei dati da recuperare.
 
-Il pulsante esegue il metodo **GetAndTransform** SOAP popolato sotto il **`<input>`** tag .
+Il pulsante esegue il metodo SOAP **GetAndTransform** popolato sotto il tag **`<input>`**.
 
 La dichiarazione di controllo nel modulo è la seguente:
 
@@ -248,7 +248,7 @@ La dichiarazione di controllo nel modulo è la seguente:
 </input>
 ```
 
-Il metodo **GetAndTransform** deve essere dichiarato sotto l&#39; **`<enter>`** elemento del **`<input>`** tag . Questo tag prende come parametri l&#39;URL del ripristino dei dati XML da un&#39;espressione costruita dinamicamente. Il secondo parametro della funzione è facoltativo e fa riferimento a un foglio di stile utilizzato per una trasformazione intermedia quando i dati XML in arrivo non sono nello stesso formato del contenuto.
+Il metodo **GetAndTransform** deve essere dichiarato sotto l&#39;elemento **`<enter>`** del tag **`<input>`**. Questo tag prende come parametri l&#39;URL del ripristino dei dati XML da un&#39;espressione costruita dinamicamente. Il secondo parametro della funzione è facoltativo e fa riferimento a un foglio di stile utilizzato per una trasformazione intermedia quando i dati XML in arrivo non sono nello stesso formato del contenuto.
 
 L&#39;output aggiorna il contenuto in base al percorso immesso nell&#39;ultimo parametro.
 
