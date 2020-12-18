@@ -17,7 +17,7 @@ ht-degree: 27%
 
 # Modulo Nlserver{#nlserver-module}
 
-Un&#39;attività del modulo **** nlserver avvia un modulo nlserver con i parametri specificati nella finestra centrale.
+Un&#39;attività **modulo nlserver** avvia un modulo nlserver con i parametri specificati nella finestra centrale.
 
 ![](assets/nlserver_module_edit.png)
 
