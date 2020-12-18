@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Canale LINE{#line-channel}
 
-I flussi di lavoro descritti di seguito vengono installati con il modulo canale **** LINE per impostazione predefinita. For more on this module, refer to this [section](../../delivery/using/line-channel.md).
+I flussi di lavoro descritti di seguito sono installati con il modulo **LINE channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo canale 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Eliminare gli utenti LINE bloccati</span> <br /> </td> 
-   <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
+   <td> <span class="uicontrol">deleteBlockLineUsersV2</span> <br /> </td> 
    <td> Questo flusso di lavoro assicura che i dati degli utenti LINE V2 vengano eliminati dopo che hanno bloccato l'account ufficiale LINE per 180 giorni.<br /> </td> 
   </tr> 
   <tr> 
