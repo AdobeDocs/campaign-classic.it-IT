@@ -33,7 +33,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### In Windows {#in-windows}
 
-È necessario creare la variabile di ambiente **TRACE_ADDR.** con il valore **localhost** : **`<listening port="" />`**.
+È necessario creare la variabile di ambiente **TRACE_ADDR** con il valore **localhost**: **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >
