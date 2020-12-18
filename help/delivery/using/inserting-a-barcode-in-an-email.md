@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Inserimento di codici a barre in un messaggio e-mail{#inserting-a-barcode-in-an-email}
+# Inserimento di codici a barre in un&#39;e-mail{#inserting-a-barcode-in-an-email}
 
 Il modulo di generazione dei codici a barre consente di creare diversi tipi di codici a barre conformi a molti standard comuni, inclusi i codici a barre 2D.
 
@@ -50,25 +50,25 @@ Quindi configurate i seguenti elementi in base alle vostre esigenze:
       ![](assets/barcode_insert_12.png)
 
 1. Immettere la dimensione del codice a barre che si desidera inserire nell&#39;e-mail: la configurazione della scala consente di aumentare o ridurre la dimensione del codice a barre, da x1 a x10.
-1. Il **[!UICONTROL Value]** campo consente di definire il valore del codice a barre. Un valore può corrispondere a un&#39;offerta speciale e può essere la funzione di un criterio, può essere il valore di un campo di database collegato ai clienti.
+1. Il campo **[!UICONTROL Value]** consente di definire il valore del codice a barre. Un valore può corrispondere a un&#39;offerta speciale e può essere la funzione di un criterio, può essere il valore di un campo di database collegato ai clienti.
 
-   Questo esempio mostra un codice a barre di tipo EAN-8 a cui è stato aggiunto il numero di account di un destinatario. Per aggiungere questo numero di account, fate clic sul pulsante di personalizzazione a destra del **[!UICONTROL Value]** campo e selezionate **[!UICONTROL Recipient > Account number]**.
+   Questo esempio mostra un codice a barre di tipo EAN-8 a cui è stato aggiunto il numero di account di un destinatario. Per aggiungere questo numero di account, fate clic sul pulsante di personalizzazione a destra del campo **[!UICONTROL Value]** e selezionate **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. Il **[!UICONTROL Height]** campo consente di configurare l&#39;altezza del codice a barre senza modificarne la larghezza, modificando la quantità di spazio tra ciascuna barra.
+1. Il campo **[!UICONTROL Height]** consente di configurare l&#39;altezza del codice a barre senza modificarne la larghezza, modificando la quantità di spazio tra ciascuna barra.
 
-   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se il valore di un codice a barre non è corretto, sarà visibile solo in modalità **Anteprima** , dove il codice a barre verrà barrato in rosso.
+   Non esiste alcun controllo di immissione restrittivo a seconda del tipo di codice a barre. Se il valore di un codice a barre non è corretto, sarà visibile solo in modalità **Anteprima**, dove il codice a barre verrà barrato in rosso.
 
    >[!NOTE]
    >
    >Il valore assegnato a un codice a barre dipende dal tipo. Ad esempio, un tipo EAN-8 deve avere esattamente 8 numeri.
    >
-   >Il pulsante di personalizzazione a destra del **[!UICONTROL Value]** campo consente di aggiungere dati oltre al valore stesso. Questo arricchisce i codici a barre, purché siano accettati dallo standard.
+   >Il pulsante di personalizzazione a destra del campo **[!UICONTROL Value]** consente di aggiungere dati oltre al valore stesso. Questo arricchisce i codici a barre, purché siano accettati dallo standard.
    >
    >Ad esempio, se si utilizza un codice a barre di tipo GS1-128 e si desidera immettere il numero di conto di un destinatario oltre al valore, fare clic sul pulsante di personalizzazione e selezionare **[!UICONTROL Recipient > Account number]**. Se il numero di conto del destinatario selezionato viene immesso correttamente, il codice a barre ne tiene conto.
 
-Una volta configurati questi elementi, potete finalizzare l’e-mail e inviarla. Per evitare errori, fate sempre clic sulla **[!UICONTROL Preview]** scheda per verificare che il contenuto sia visualizzato correttamente prima di eseguire una consegna.
+Una volta configurati questi elementi, potete finalizzare l’e-mail e inviarla. Per evitare errori, accertatevi sempre che il contenuto sia visualizzato correttamente prima di eseguire una consegna facendo clic sulla scheda **[!UICONTROL Preview]**.
 
 ![](assets/barcode_insert_10.png)
 
