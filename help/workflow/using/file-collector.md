@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Raccolta file{#file-collector}
 
-Il raccoglitore **** File controlla l&#39;arrivo di uno o più file in una directory e ne attiva la transizione per ogni file ricevuto. Per ogni evento, una **[!UICONTROL filename]** variabile contiene il nome completo del file ricevuto. I file raccolti vengono spostati in un&#39;altra directory a scopo di archiviazione e per essere certi che vengano conteggiati una sola volta.
+Il **File Collector** controlla l&#39;arrivo di uno o più file in una directory e ne attiva la transizione per ogni file ricevuto. Per ogni evento, una variabile **[!UICONTROL filename]** contiene il nome completo del file ricevuto. I file raccolti vengono spostati in un&#39;altra directory a scopo di archiviazione e per essere certi che vengano conteggiati una sola volta.
 
 Per impostazione predefinita, il raccoglitore file è un&#39;attività persistente che verifica la presenza di file nei momenti specificati dalla pianificazione.
 
@@ -25,7 +25,7 @@ I file devono trovarsi sul server in cui viene eseguito il modulo wfserver respo
 
 ## Properties {#properties}
 
-La prima scheda dell&#39; **[!UICONTROL File collector]** attività consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate in [Inbound Emails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** schede).
+La prima scheda dell&#39;attività **[!UICONTROL File collector]** consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate nelle schede [Inbound Emails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]**).
 
 ![](assets/file_collect_edit.png)
 
@@ -43,11 +43,11 @@ La prima scheda dell&#39; **[!UICONTROL File collector]** attività consente di 
 
       Se questa opzione è attivata, l&#39;attività termina dopo la ricezione del primo file. Se nella directory sono presenti più file corrispondenti al filtro, ne verrà preso in considerazione solo uno. Questa opzione garantisce che venga inviato un solo evento. Il file preso in considerazione è il primo nell&#39;elenco in ordine alfabetico.
 
-      Per un&#39;attività non pianificata, se nella directory specificata non viene trovato alcun file corrispondente al filtro e se l&#39; **[!UICONTROL Process file nonexistence]** opzione non è abilitata, viene generato un errore.
+      Per un&#39;attività non pianificata, se nella directory specificata non viene trovato alcun file corrispondente al filtro e se l&#39;opzione **[!UICONTROL Process file nonexistence]** non è abilitata, verrà generato un errore.
 
    * **[!UICONTROL Execution schedule]**
 
-      Determina la frequenza del controllo della presenza del file tramite i parametri della **[!UICONTROL Schedule]** scheda.
+      Determina la frequenza del controllo della presenza del file tramite i parametri della scheda **[!UICONTROL Schedule]**.
 
 1. **Gestione degli errori**
 
@@ -69,9 +69,9 @@ La prima scheda dell&#39; **[!UICONTROL File collector]** attività consente di 
 
 1. **Storizzazione**
 
-   Fare riferimento al **[!UICONTROL File historization]** passaggio qui: [Download](../../workflow/using/web-download.md)Web.
+   Fare riferimento al passaggio **[!UICONTROL File historization]** qui: [Download Web](../../workflow/using/web-download.md).
 
-Impossibile determinare l&#39;ordine di elaborazione del file. Per elaborare un set di file in sequenza, utilizzate l&#39; **[!UICONTROL Stop as soon as a file has been processed]** opzione e create un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. L’ **[!UICONTROL Process file nonexistence]** opzione consente di terminare l’iterazione.
+Impossibile determinare l&#39;ordine di elaborazione del file. Per elaborare un set di file in sequenza, utilizzate l&#39;opzione **[!UICONTROL Stop as soon as a file has been processed]** e create un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. L&#39;opzione **[!UICONTROL Process file nonexistence]** consente di terminare l&#39;iterazione.
 
 ![](assets/file_collect_loop.png)
 
