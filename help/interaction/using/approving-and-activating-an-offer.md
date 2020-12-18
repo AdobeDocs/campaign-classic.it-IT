@@ -23,7 +23,7 @@ Il banner nel dashboard delle offerte indica se l’offerta deve o meno attraver
 
 ![](assets/offer_validate_001.png)
 
-## Approvazione del contenuto delle offerte {#approving-offer-content}
+## Approvazione del contenuto dell&#39;offerta {#approving-offer-content}
 
 Per approvare i contenuti delle offerte, selezionate le rappresentazioni da rendere disponibili nell&#39;ambiente live.
 
@@ -37,7 +37,7 @@ Potete scegliere di approvare il contenuto dell&#39;offerta su alcuni spazi disp
 
 Per approvare il contenuto dell&#39;offerta, eseguite i seguenti passaggi:
 
-1. Fate clic sul **[!UICONTROL Approval]** pulsante e selezionate **[!UICONTROL Approve content]** a comparsa.
+1. Fare clic sul pulsante **[!UICONTROL Approval]** e selezionare **[!UICONTROL Approve content]** nella finestra a comparsa.
 
    ![](assets/offer_validate_002.png)
 
@@ -51,9 +51,9 @@ Per approvare il contenuto dell&#39;offerta, eseguite i seguenti passaggi:
 
    >[!NOTE]
    >
-   >La **[!UICONTROL Content approved]** menzione non significa che tutte le rappresentazioni delle offerte siano state abilitate e approvate. Indica che il processo di approvazione del contenuto è stato completato, indipendentemente dal fatto che tutte le offerte siano state abilitate/approvate o meno.
+   >La menzione **[!UICONTROL Content approved]** non significa che tutte le rappresentazioni dell&#39;offerta sono state abilitate e approvate. Indica che il processo di approvazione del contenuto è stato completato, indipendentemente dal fatto che tutte le offerte siano state abilitate/approvate o meno.
 
-## Approvazione dell&#39;idoneità delle offerte {#approving-offer-eligibility}
+## Approvazione idoneità offerta {#approving-offer-eligibility}
 
 Per approvare l&#39;idoneità dell&#39;offerta si intendono accettare o rifiutare i pesi dell&#39;offerta e le regole di idoneità configurate anche nell&#39;offerta o ereditate dalle regole create nella categoria principale.
 
@@ -61,11 +61,11 @@ Per approvare l&#39;idoneità dell&#39;offerta si intendono accettare o rifiutar
 >
 >Una volta approvati il contenuto e l&#39;idoneità di un&#39;offerta, il flusso di lavoro di pubblicazione (notifica dell&#39;offerta) viene eseguito automaticamente e l&#39;offerta viene resa live e disponibile su tutti gli spazi attivati.
 
-* Per visualizzare l&#39;elenco completo delle regole, fai clic su **[!UICONTROL Schedule and eligibility rules]**.
+* Per visualizzare l&#39;elenco completo delle regole, fare clic su **[!UICONTROL Schedule and eligibility rules]**.
 
    ![](assets/offer_validate_005.png)
 
-* Per modificare le regole di idoneità, fare clic su **[!UICONTROL Reject]**, quindi su **[!UICONTROL Eligibility approval]**.
+* Per modificare le regole di idoneità, fare clic su **[!UICONTROL Reject]**, quindi fare clic su **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_007.png)
 
@@ -77,7 +77,7 @@ Per approvare l&#39;idoneità dell&#39;offerta si intendono accettare o rifiutar
 
    ![](assets/offer_validate_008.png)
 
-   Approva idoneità, aggiungi un commento se necessario, quindi fai clic su **[!UICONTROL Eligibility approval]**.
+   Approvate l&#39;idoneità, aggiungete un commento se necessario, quindi fate clic su **[!UICONTROL Eligibility approval]**.
 
    ![](assets/offer_validate_009.png)
 
@@ -87,27 +87,27 @@ Per approvare l&#39;idoneità dell&#39;offerta si intendono accettare o rifiutar
 
 ## Tracciamento approvazione {#approval-tracking}
 
-Il tracciamento dell&#39;approvazione è disponibile nella dashboard delle offerte. Fate clic **[!UICONTROL Hide/display logs]** per accedervi.
+Il tracciamento dell&#39;approvazione è disponibile nella dashboard delle offerte. Fare clic su **[!UICONTROL Hide/display logs]** per accedervi.
 
 ![](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
->Il tracciamento è disponibile anche nella **[!UICONTROL Audit]** scheda dell&#39;offerta, con i dettagli dei commenti dei revisori.
+>Il tracciamento è disponibile anche nella scheda **[!UICONTROL Audit]** dell&#39;offerta, con i dettagli dei commenti dei revisori.
 
-## Riavvia l&#39;approvazione {#restart-the-approval}
+## Riavviate l&#39;approvazione {#restart-the-approval}
 
 Una volta avviata l&#39;approvazione, questa può essere riavviata. A questo scopo, attenetevi alle seguenti istruzioni:
 
-1. Fate clic **[!UICONTROL Content approved]** sul dashboard delle offerte.
-1. Nella **[!UICONTROL Edit]** finestra visualizzata, selezionare l&#39;approvazione da riavviare, quindi fare clic su **[!UICONTROL Re-initialize approval to submit it again]**.
-1. Conferma facendo clic su **[!UICONTROL Ok]**.
+1. Fate clic su **[!UICONTROL Content approved]** nel dashboard delle offerte.
+1. Nella finestra **[!UICONTROL Edit]** visualizzata, selezionare l&#39;approvazione da riavviare, quindi fare clic su **[!UICONTROL Re-initialize approval to submit it again]**.
+1. Confermate facendo clic su **[!UICONTROL Ok]**.
 
 ![](assets/offer_validate_013.png)
 
-## Pubblicazione dell’offerta {#publishing-the-offer}
+## Pubblicazione dell&#39;offerta {#publishing-the-offer}
 
-Una volta approvati il contenuto e l&#39;idoneità di un&#39;offerta, l&#39;offerta viene pubblicata tramite un flusso di lavoro che viene eseguito automaticamente per ogni offerta il cui ciclo di approvazione è terminato. Il **[!UICONTROL Offer notification]** flusso di lavoro viene eseguito anche ogni ora per sincronizzare (se necessario) gli spazi e le categorie contenuti nel catalogo delle offerte dall&#39;ambiente di progettazione all&#39;ambiente live.
+Una volta approvati il contenuto e l&#39;idoneità di un&#39;offerta, l&#39;offerta viene pubblicata tramite un flusso di lavoro che viene eseguito automaticamente per ogni offerta il cui ciclo di approvazione è terminato. Il flusso di lavoro **[!UICONTROL Offer notification]** viene eseguito anche ogni ora per sincronizzare (se necessario) gli spazi e le categorie contenuti nel catalogo delle offerte dall&#39;ambiente di progettazione all&#39;ambiente live.
 
 Il dashboard dell&#39;offerta disponibile nell&#39;ambiente di progettazione contiene informazioni sulla pubblicazione, incluso il nome dell&#39;offerta corrispondente nell&#39;ambiente live.
 
@@ -121,9 +121,9 @@ Per visualizzare l&#39;offerta disponibile nell&#39;ambiente live, fai clic sull
 
 Una volta approvata l&#39;offerta, potete disattivarla.
 
-A questo scopo, accedete al dashboard per un&#39;offerta online o un&#39;offerta in attesa di essere online, quindi fate clic **[!UICONTROL Disable offer]**.
+A questo scopo, accedete al dashboard per un&#39;offerta online o un&#39;offerta in attesa di essere online, quindi fate clic su **[!UICONTROL Disable offer]**.
 
-È inoltre possibile disattivare direttamente una categoria andando alla **[!UICONTROL Eligibility]** scheda e selezionando la **[!UICONTROL Enabled]** casella.
+È inoltre possibile disattivare direttamente una categoria andando alla scheda **[!UICONTROL Eligibility]** e selezionando la casella **[!UICONTROL Enabled]**.
 
 >[!NOTE]
 >
