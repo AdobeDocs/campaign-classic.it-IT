@@ -20,7 +20,7 @@ La popolazione mirata è la chiave: create con attenzione gli elenchi, verificat
 
 Ulteriori informazioni sulle popolazioni di destinazione [in questa sezione](../../delivery/using/steps-defining-the-target-population.md)
 
-## Targeting dell&#39;audience giusta {#target-the-right-audience}
+## Esegue il targeting dell&#39;audience giusta {#target-the-right-audience}
 
 Quando il contenuto è pronto, è necessario definire con attenzione chi riceverà il messaggio.
 
@@ -28,11 +28,11 @@ Per garantire il successo della distribuzione, è necessario inviare i contenuti
 
 ## Mappature di destinazione {#target-mappings}
 
-In Campaign Classic, per impostazione predefinita, i modelli di consegna sono destinati **ai destinatari**.  Adobe Campaign offre altre mappature di destinazione per le consegne, che potete modificare in base alle vostre esigenze.
+In Campaign Classic, per impostazione predefinita, i modelli di consegna sono destinati ai **Destinatari**.  Adobe Campaign offre altre mappature di destinazione per le consegne, che potete modificare in base alle vostre esigenze.
 
 Ad esempio, potete trasmettere ai visitatori i cui profili sono stati raccolti tramite social network o ai visitatori che hanno sottoscritto un servizio di informazione.
 
-Tali mappature vengono presentate [in questa sezione](../../delivery/using/selecting-a-target-mapping.md).
+Questi mapping sono presentati [in questa sezione](../../delivery/using/selecting-a-target-mapping.md).
 
 Potete anche creare e utilizzare una mappatura di destinazione personalizzata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/target-mapping.md).
 
@@ -49,9 +49,9 @@ Per inviare messaggi agli abbonati di una newsletter, potete indirizzare diretta
 
 Per verificare la consegna, utilizzate le prove prima di inviare alla destinazione principale.
 
-Accertarsi di aver selezionato i destinatari della prova appropriati, in quanto convalidano il modulo e il contenuto del messaggio. Le fasi per la definizione dei destinatari della prova sono illustrate [in questa sezione](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
+Accertarsi di aver selezionato i destinatari della prova appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della prova sono presentati [in questa sezione](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispondono i criteri di destinazione definiti, al fine di verificare la consegna prima dell&#39;invio alla destinazione principale. Sono presentati [in questa sezione](../../delivery/using/about-seed-addresses.md).
+Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispondono i criteri di destinazione definiti, al fine di verificare la consegna prima dell&#39;invio alla destinazione principale. Vengono presentati [in questa sezione](../../delivery/using/about-seed-addresses.md).
 
 ## Indirizzi di deduplicazione {#deduplicate-addresses}
 
@@ -63,7 +63,7 @@ Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispond
 
 Gli indirizzi di deduplicazione proteggono la reputazione dell&#39;invio e garantiscono una buona gestione della quarantena.
 
-Ulteriori informazioni [in questo caso](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery)di utilizzo.
+Ulteriori informazioni [in questo caso di utilizzo](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
 
 ## Indirizzi e-mail indice {#index-addresses}
 
