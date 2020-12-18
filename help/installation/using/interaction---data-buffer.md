@@ -19,15 +19,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Alcune configurazioni possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Ad esempio, per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione Modelli [di](../../installation/using/hosting-models.md) hosting o a [questa pagina](../../installation/using/capability-matrix.md).
+>Alcune configurazioni possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Ad esempio, per accedere ai file di configurazione del server e dell&#39;istanza. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione [Modelli di hosting](../../installation/using/hosting-models.md) o a [questa pagina](../../installation/using/capability-matrix.md).
 
-In  Adobe Campaign, nel modulo Interaction è stata introdotta una zona **del buffer** dati. Questo consente di **aumentare le prestazioni** dell&#39;interazione in entrata desincronizzando i calcoli di azioni e offerte.
+In  Adobe Campaign, nel modulo Interaction è stata introdotta una **zona buffer dati**. Questo consente di **aumentare le prestazioni** di Interazione in entrata desincronizzando i calcoli di azioni e offerte.
 
 Riguarda solo l&#39;interazione in ingresso, sia tramite una chiamata (con o senza dati di chiamata), sia tramite un aggiornamento dello stato (updateStatus).
 
-Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo W genera una zona **buffer** dati che consente di **scrivere le proposte in modo asincrono**. Questa zona del buffer dati viene letta e svuotata periodicamente. Il periodo predefinito si trova nello spazio di circa un secondo.La scrittura delle proposte è quindi raggruppata.
+Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo w genera una **zona buffer dati** che consente di scrivere le proposte in modo **asincrono**. Questa zona del buffer dati viene letta e svuotata periodicamente. Il periodo predefinito si trova nello spazio di circa un secondo.La scrittura delle proposte è quindi raggruppata.
 
-La **configurazione** della zona del buffer dati può essere effettuata nel file di configurazione dell&#39;istanza (config-Instance.xml).
+È possibile eseguire la zona del buffer dati **configuration** nel file di configurazione dell&#39;istanza (config-Instance.xml).
 
 >[!NOTE]
 >
