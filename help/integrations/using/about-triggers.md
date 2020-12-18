@@ -28,12 +28,12 @@ ht-degree: 16%
 Consente integrazioni più agili, poiché la configurazione è minima e non coinvolge una terza parte.
 Supporta inoltre volumi elevati di traffico senza influire sulle prestazioni delle attività di marketing. Ad esempio, l&#39;integrazione può elaborare un milione di attivatori all&#39;ora.
 
-## [!DNL Triggers] architettura {#triggers-architecture}
+## [!DNL Triggers] architettura  {#triggers-architecture}
 
-Il [!DNL pipelined] processo è sempre in esecuzione sul server di marketing Adobe Campaign . Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
+Il processo [!DNL pipelined] è sempre in esecuzione sul server di marketing Adobe Campaign . Si collega alla pipeline, recupera gli eventi e li elabora immediatamente.
 
 ![](assets/triggers_2.png)
 
-Il [!DNL pipelined] processo accede al Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi.
+Il processo [!DNL pipelined] effettua l&#39;accesso al Experience Cloud  utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l&#39;autenticazione al momento del recupero degli eventi.
 
-For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
+Per ulteriori informazioni sull&#39;autenticazione, fare riferimento a questa [pagina](../../integrations/using/configuring-adobe-io.md).
