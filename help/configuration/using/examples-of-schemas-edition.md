@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Estensione di una tabella {#extending-a-table}
 
-Per estendere la tabella dei destinatari dello schema **nms:destinatario** , attenersi alla procedura descritta di seguito.
+Per estendere la tabella dei destinatari dello schema **nms:destinatario**, attenersi alla procedura descritta di seguito.
 
 1. Create lo schema di estensione (**cus:extension**) utilizzando i dati seguenti:
 
@@ -42,13 +42,13 @@ Per estendere la tabella dei destinatari dello schema **nms:destinatario** , att
    </srcSchema>
    ```
 
-   In questo esempio, viene aggiunto un campo indicizzato (**fedeltà**) e l&#39;elemento **location** (che esisteva già nello schema **nms:destinatario** ) viene completato con un campo (**area**) enumerato.
+   In questo esempio, viene aggiunto un campo indicizzato (**fidelity**) e l&#39;elemento **location** (che esisteva già nello schema **nms:receive**) viene completato con un campo enumerato (**area**).
 
    >[!IMPORTANT]
    >
-   >Ricordare di aggiungere l&#39;attributo **ExtendedSchema** per fare riferimento allo schema di estensione.
+   >Ricordare di aggiungere l&#39;attributo **extendedSchema** per fare riferimento allo schema delle estensioni.
 
-1. Verificate che lo schema esteso sia lo schema **nms:destinatario** e che siano presenti i dati aggiuntivi:
+1. Verificare che lo schema esteso sia lo schema **nms:Recipients** e che siano presenti i dati aggiuntivi:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ Schema origine tabella ordine:
 </srcSchema>
 ```
 
-Il tipo di tabella è **automatico** al fine di creare una chiave primaria generata automaticamente da utilizzare per il join del collegamento alla tabella del destinatario.
+Il tipo di tabella è **autopk** al fine di creare una chiave primaria generata automaticamente da utilizzare per il join del collegamento alla tabella del destinatario.
 
 Schema generato:
 
@@ -149,7 +149,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >Il comando SQL INSERT INTO alla fine dello script consente di inserire un record di identificatore impostato su 0 per simulare i join esterni.
 
-## Tabella estensioni {#extension-table}
+## Tabella di estensione {#extension-table}
 
 Una tabella di estensione consente di estendere il contenuto di una tabella esistente in una tabella collegata di cardinalità 1-1.
 
@@ -199,7 +199,7 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Overflow, tabella {#overflow-table}
+## Tabella overflow {#overflow-table}
 
 Una tabella di overflow è una tabella di estensione (cardinalità 1-1), ma la dichiarazione del collegamento alla tabella da estendere viene compilata nello schema della tabella di overflow.
 
@@ -233,7 +233,7 @@ CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId I
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## Tabella relazioni {#relationship-table}
+## Tabella delle relazioni {#relationship-table}
 
 Una tabella di relazioni consente di collegare due tabelle con cardinalità N-N. Questa tabella contiene solo le chiavi esterne delle tabelle da collegare.
 
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Questo esempio illustra come utilizzare una tabella di riferimento esistente come alternativa ai meccanismi di enumerazione integrati  Adobe Campaign (enum, userEnum o dbEnum).
 
-È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l’attributo **displayAsField=&quot;true&quot;**.
+È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l&#39;attributo **displayAsField=&quot;true&quot;**.
 
 In questo esempio, la tabella di riferimento contiene un elenco di nomi bancari e identificatori:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In qualsiasi tabella che utilizza questa tabella di riferimento, definite un collegamento e aggiungete l’attributo **displayAsField=&quot;true&quot;** .
+In qualsiasi tabella che utilizza questa tabella di riferimento, definite un collegamento e aggiungete l&#39;attributo **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ L&#39;interfaccia utente non visualizza un collegamento ma un campo. Quando l&#3
 
 * Per completare automaticamente il componente, è necessario definire una stringa di calcolo nella tabella di riferimento.
 
-* Aggiungi l’attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire  Adobe Campaign di creare un indice sui valori memorizzati nella tabella di origine del collegamento.
+* Aggiungete l&#39;attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per evitare che  Adobe Campaign crei un indice sui valori memorizzati nella tabella di origine del collegamento.
 
 ## Argomenti correlati
 
