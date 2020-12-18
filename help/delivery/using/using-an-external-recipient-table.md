@@ -17,7 +17,7 @@ ht-degree: 18%
 
 # Utilizzo di una tabella dei destinatari esterna{#using-an-external-recipient-table}
 
-Se la tabella di consegna è una tabella esterna, sarà necessario effettuare configurazioni aggiuntive. Lo **[!UICONTROL nms:seedmember]** schema deve essere esteso. Agli indirizzi iniziali viene aggiunta una scheda per definire i campi adeguati, come illustrato di seguito:
+Se la tabella di consegna è una tabella esterna, sarà necessario effettuare configurazioni aggiuntive. Lo schema **[!UICONTROL nms:seedmember]** deve essere esteso. Agli indirizzi iniziali viene aggiunta una scheda per definire i campi adeguati, come illustrato di seguito:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,4 +25,4 @@ In questo caso, per aggiungere gli indirizzi iniziali alla consegna, immettete i
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-L&#39;estensione **dello schema nms:seedMember** è [questa sezione](../../configuration/using/seed-addresses.md).
+L&#39;estensione dello schema **nms:seedMember** è [questa sezione](../../configuration/using/seed-addresses.md).
