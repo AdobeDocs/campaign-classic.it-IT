@@ -19,7 +19,7 @@ ht-degree: 5%
 
 Esistono due tipi di operatori che utilizzano l&#39;interazione: gestori di offerte e gestori di distribuzione. Ciascuno di essi dispone di diritti specifici che consentono loro di accedere solo ad alcune parti dell&#39;albero e della piattaforma.
 
-* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se nel flusso di lavoro vengono utilizzate le offerte, per eseguire il flusso di lavoro l&#39;operatore dovrà essere nel gruppo **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** dell&#39;operatore.
+* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se nel flusso di lavoro vengono utilizzate le offerte, l&#39;operatore dovrà essere nel gruppo di operatori **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
 I passaggi per la creazione di operatori specifici di Interaction sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md#creating-an-operator). I diritti vengono configurati durante la creazione dell&#39;operatore.
@@ -27,14 +27,14 @@ I passaggi per la creazione di operatori specifici di Interaction sono identici 
 ## Gestione offerte {#offer-manager}
 
 1. Creare un nuovo operatore.
-1. Andate alla **[!UICONTROL Groups and named rights]** finestra, fate clic **[!UICONTROL Add]** e selezionate il **[!UICONTROL Offer manager]** gruppo.
+1. Passare alla finestra **[!UICONTROL Groups and named rights]**, fare clic su **[!UICONTROL Add]** e selezionare il gruppo **[!UICONTROL Offer manager]**.
 
    ![](assets/offer_operators_create_001.png)
 
 I diritti assegnati al manager dell&#39;offerta consentono loro di eseguire le seguenti attività:
 
-* Modificare **[!UICONTROL Design]** gli ambienti.
-* Visualizzare **[!UICONTROL Live]** gli ambienti.
+* Modificare gli ambienti **[!UICONTROL Design]**.
+* Visualizzare gli ambienti **[!UICONTROL Live]**.
 * Configurare le funzioni di amministrazione (spazi e filtri predefiniti).
 * Creare e modificare le categorie.
 * Creare offerte.
@@ -45,16 +45,16 @@ I diritti assegnati al manager dell&#39;offerta consentono loro di eseguire le s
    >
    >Il manager dell’offerta può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore, il secondo è se l&#39;operatore responsabile della creazione dei modelli (con il diritto di assegnare i revisori) lo ha specificato come revisore nel modello di offerta su cui si basa l&#39;offerta.
 
-## Direttore consegna {#delivery-manager}
+## Manager consegna {#delivery-manager}
 
 1. Creare un nuovo operatore.
-1. Andate alla **[!UICONTROL Groups and named rights]** finestra, fate clic **[!UICONTROL Add]** e selezionate il **[!UICONTROL Delivery manager]** gruppo.
+1. Passare alla finestra **[!UICONTROL Groups and named rights]**, fare clic su **[!UICONTROL Add]** e selezionare il gruppo **[!UICONTROL Delivery manager]**.
 
    ![](assets/offer_operators_create_002.png)
 
 I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i seguenti compiti:
 
-* Ambienti **[!UICONTROL Live]** di visualizzazione.
+* Visualizzare gli ambienti **[!UICONTROL Live]**.
 * Visualizzare e modificare le categorie delle offerte.
 * Approva offerte se s/he è specificato come uno dei suoi revisori.
 
@@ -62,7 +62,7 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
    >
    >Il manager consegna può approvare un&#39;offerta solo se è stato definito come revisore durante la configurazione dell&#39;offerta.
 
-## Recupero dei diritti secondo l&#39;operatore {#recap-of-rights-according-to-operator}
+## Recupero dei diritti in base all&#39;operatore {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
@@ -79,47 +79,47 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
   <tr> 
    <td> Offerte in corso di modifica / Offerte dal vivo<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatario - Ambiente<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Administration<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Spazi<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Filtri offerta predefiniti<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Tipologia<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Regole di tipologia<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Catalogo offerte<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Categoria offerta<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -139,15 +139,15 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
   <tr> 
    <td> Offerte in corso di modifica / Offerte dal vivo<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatario - Ambiente<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
-   <td> Administration<br /> </td> 
+   <td> Amministrazione<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -158,28 +158,28 @@ I diritti assegnati al responsabile consegna sono/consentono loro di eseguire i 
   </tr> 
   <tr> 
    <td> Filtri offerta predefiniti<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Tipologia<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Regole di tipologia<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Catalogo offerte<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
   <tr> 
    <td> Categoria offerta<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Read<br /> </td> 
   </tr> 
  </tbody> 
 </table>
