@@ -23,11 +23,11 @@ I vari flussi di lavoro tecnici relativi ai messaggi transazionali (Centro messa
 
 ## Flussi di lavoro delle istanze di controllo {#control-instance-workflows}
 
-Nell&#39;istanza di controllo, indipendentemente dalla presenza di una o più istanze di esecuzione registrate, è necessario creare un flusso di lavoro di archiviazione per ciascun account **[!UICONTROL Message Center execution instance]** esterno. Fate clic sul **[!UICONTROL Create the archiving workflow]** pulsante per creare e avviare il flusso di lavoro.
+Nell&#39;istanza di controllo, indipendentemente dalla presenza di una o più istanze di esecuzione registrate, è necessario creare un flusso di lavoro di archiviazione per ciascun account esterno **[!UICONTROL Message Center execution instance]**. Fate clic sul pulsante **[!UICONTROL Create the archiving workflow]** per creare e avviare il flusso di lavoro.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Questi flussi di lavoro sono quindi accessibili dalla cartella **Amministrazione > Produzione > Centro** messaggi. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
+Questi flussi di lavoro sono quindi accessibili dalla cartella **Amministrazione > Produzione > Message Center**. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
 
 <!--**Minimal architecture**
 
@@ -37,11 +37,11 @@ Once the control and execution modules are installed on the same instance, you m
 
 ## Flussi di lavoro per le istanze di esecuzione {#execution-instance-workflows}
 
-Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per i messaggi transazionali dalla cartella **Amministrazione > Produzione > Centro** messaggi. Dovete solo iniziare a farlo. I flussi di lavoro elencati sono:
+Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per i messaggi transazionali dalla cartella **Amministrazione > Produzione > Message Center**. Dovete solo iniziare a farlo. I flussi di lavoro elencati sono:
 
-* **[!UICONTROL Processing batch events]** (nome interno: **[!UICONTROL batchEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi batch in una coda prima che siano collegati a un modello di messaggio.
-* **[!UICONTROL Processing real time events]** (nome interno: **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi in tempo reale in una coda prima che siano collegati a un modello di messaggio.
-* **[!UICONTROL Update event status]** (nome interno: **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro consente di attribuire uno stato all’evento.
+* **[!UICONTROL Processing batch events]** (nome interno:  **[!UICONTROL batchEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi batch in una coda prima che siano collegati a un modello di messaggio.
+* **[!UICONTROL Processing real time events]** (nome interno:  **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi in tempo reale in una coda prima che siano collegati a un modello di messaggio.
+* **[!UICONTROL Update event status]** (nome interno:  **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro consente di attribuire uno stato all’evento.
 
    Sono disponibili i seguenti stati dell&#39;evento:
 
