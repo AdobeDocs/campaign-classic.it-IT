@@ -29,7 +29,7 @@ Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono
 
 ## L&#39;attributo view {#the-view-attribute}
 
-Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema** . Deve essere utilizzato quando  Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. Pertanto, all&#39;applicazione non è consentito sincronizzare la tabella, le relative colonne e i relativi indici con lo schema corrispondente.
+Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento **srcSchema** principale. Deve essere utilizzato quando  Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. Pertanto, all&#39;applicazione non è consentito sincronizzare la tabella, le relative colonne e i relativi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
@@ -37,8 +37,8 @@ Quando questo attributo è impostato su **true**, lo schema viene utilizzato sol
 
 Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle tabelle, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile imporre l&#39;uso dei nomi SQL immettendo i seguenti attributi:
 
-* **sqltable** all&#39;interno dell&#39;elemento principale dello schema, per specificare la tabella,
-* **sqlname** all&#39;interno di ciascun attributo, per specificare le colonne.
+* **** sqltable all&#39;interno dell&#39;elemento principale dello schema, per specificare la tabella,
+* **** sqlname all&#39;interno di ciascun attributo, per specificare le colonne.
 
 **Esempio**:
 
@@ -55,7 +55,7 @@ Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle 
 </element>
 ```
 
-In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati in modo esplicito, l&#39;applicazione avrebbe utilizzato **CusIndividuale** per la tabella, **lastName** e **firstName** per le colonne.
+In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati in modo esplicito, l&#39;applicazione avrebbe utilizzato **CusIndividuale** per le colonne, **lastName** e **firstName** per le colonne.
 
 In uno schema, è possibile compilare solo una parte delle colonne di una tabella esistente. Le colonne non popolate non saranno accessibili agli utenti.
 
@@ -77,7 +77,7 @@ In uno schema, un indice è definito come segue:
 
 Per questo è importante dichiarare gli indici esistenti della tabella personalizzata nello schema corrispondente.
 
-Un indice è implicitamente dichiarato per ogni dichiarazione di chiave e collegamento dello schema di origine. La dichiarazione dell&#39;indice può essere impedita specificando l&#39;attributo **noDbIndex=&quot;true&quot;** :
+Un indice è implicitamente dichiarato per ogni dichiarazione di chiave e collegamento dello schema di origine. La dichiarazione dell&#39;indice può essere evitata specificando l&#39;attributo **noDbIndex=&quot;true&quot;**:
 
 **Esempio**:
 
