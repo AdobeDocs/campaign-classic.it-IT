@@ -17,15 +17,15 @@ ht-degree: 4%
 
 # SMS in entrata{#inbound-sms}
 
-L&#39;attività SMS **** in entrata consente di scaricare ed elaborare messaggi di testo da un account esterno.
+L&#39;attività **Inbound SMS** consente di scaricare ed elaborare messaggi di testo da un account esterno.
 
 ## Properties {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-La prima scheda dell&#39;attività SMS **** in entrata consente di immettere i parametri di routing per i messaggi SMS e di immettere lo script da eseguire alla ricezione di ogni messaggio. La seconda scheda consente di assegnare una pianificazione all&#39;attività, mentre la terza scheda definisce le condizioni di scadenza dell&#39;attività.
+La prima scheda dell&#39;attività **Inbound SMS** consente di inserire i parametri di routing per i messaggi SMS e di inserire lo script da eseguire alla ricezione di ogni messaggio. La seconda scheda consente di assegnare una pianificazione all&#39;attività, mentre la terza scheda definisce le condizioni di scadenza dell&#39;attività.
 
-1. **[!UICONTROL SMS routing]**: Selezionare l&#39;account esterno da utilizzare per il recupero SMS. Gli account esterni sono configurati tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura.
+1. **[!UICONTROL SMS routing]**: Selezionare l&#39;account esterno da utilizzare per il recupero SMS. Gli account esterni sono configurati tramite il nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -33,4 +33,4 @@ La prima scheda dell&#39;attività SMS **** in entrata consente di immettere i p
 
 1. **[!UICONTROL Expiration]**
 
-Le **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** le schede sono dettagliate in [Inbound Emails](../../workflow/using/inbound-emails.md).
+Le schede **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** sono descritte in [Inbound Emails](../../workflow/using/inbound-emails.md).
