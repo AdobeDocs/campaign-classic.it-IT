@@ -27,7 +27,7 @@ Esistono tre soglie diverse:
 
    * Lato Tomcat: tutte le query in arrivo sul client Adobe Campaign Tomcat .
 
-      Questa soglia è configurata nel file **nl6/tomcat-8/conf/server.xml** . L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
+      Questa soglia è configurata nel file **nl6/tomcat-8/conf/server.xml**. L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ Esistono tre soglie diverse:
 
    * Database: insieme di tutte le connessioni aperte contemporaneamente sul database da un processo.
 
-      Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. L&#39;attributo **maxCnx** presente nel pool **di** origini dati consente di aumentare la soglia delle query elaborate simultaneamente.
+      Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. L&#39;attributo **maxCnx** situato in **pool di origini dati** consente di aumentare la soglia delle query elaborate simultaneamente.
 
       ```
           <!-- Data source
