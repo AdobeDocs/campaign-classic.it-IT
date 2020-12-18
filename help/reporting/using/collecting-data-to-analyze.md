@@ -27,13 +27,13 @@ Questa attività offre tre metodi diversi:
 
 La scelta del metodo dipende dal tipo di calcolo, dal volume dei dati e dalla loro durata, ecc. Tutti questi parametri devono essere esaminati attentamente per evitare il sovraccarico del database Adobe Campaign  e per ottimizzare la generazione e la manipolazione dei rapporti creati. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/best-practices.md#optimizing-report-creation).
 
-In tutti i casi, i dati vengono raccolti tramite un&#39;attività di **[!UICONTROL Query]** tipo.
+In tutti i casi, i dati vengono raccolti tramite un&#39;attività di tipo **[!UICONTROL Query]**.
 
 ![](assets/reporting_query_edit.png)
 
-Questa modalità di selezione dei dati è pertinente quando i dati nel rapporto devono essere raccolti o generati utilizzando i dati presenti nel database. In alcuni casi, potete anche selezionare i dati direttamente dagli elementi utilizzati nel rapporto. Ad esempio, quando si inserisce un grafico, è possibile selezionare direttamente i dati di origine. Per ulteriori informazioni, vedere [Uso del contesto](../../reporting/using/using-the-context.md).
+Questa modalità di selezione dei dati è pertinente quando i dati nel rapporto devono essere raccolti o generati utilizzando i dati presenti nel database. In alcuni casi, potete anche selezionare i dati direttamente dagli elementi utilizzati nel rapporto. Ad esempio, quando si inserisce un grafico, è possibile selezionare direttamente i dati di origine. Per ulteriori informazioni, fare riferimento a [Utilizzo del contesto](../../reporting/using/using-the-context.md).
 
-## Utilizzo dei dati di uno schema {#using-the-data-from-a-schema}
+## Utilizzo dei dati da uno schema {#using-the-data-from-a-schema}
 
 Per utilizzare i dati collegati a uno schema di database, selezionare l&#39;opzione appropriata nell&#39;editor di query e configurare la query da applicare.
 
@@ -45,11 +45,11 @@ L&#39;esempio seguente consente di raccogliere il numero di destinatari per cias
 
 Per creare un rapporto, puoi utilizzare i dati di un elenco di dati importati.
 
-A questo scopo, selezionate l’ **[!UICONTROL Use an imported list]** opzione nella casella di query e selezionate l’elenco interessato.
+A questo scopo, selezionare l&#39;opzione **[!UICONTROL Use an imported list]** nella casella di query e selezionare l&#39;elenco interessato.
 
 ![](assets/reporting_query_from_list.png)
 
-Fate clic sul **[!UICONTROL Edit query...]** collegamento per definire i dati da raccogliere tra gli elementi di questo elenco per la creazione del rapporto.
+Fate clic sul collegamento **[!UICONTROL Edit query...]** per definire i dati da raccogliere tra gli elementi in questo elenco per la creazione del rapporto.
 
 ## Utilizzo di un cubo {#using-a-cube}
 
@@ -57,9 +57,9 @@ Fate clic sul **[!UICONTROL Edit query...]** collegamento per definire i dati da
 
 ![](assets/reporting_query_from_cube.png)
 
-I cubi consentono di ampliare le capacità di esplorazione e analisi del database, semplificando la configurazione di report e tabelle per gli utenti finali: è sufficiente selezionare un cubo esistente completamente configurato e utilizzarne calcoli, misure e statistiche. For more on creating cubes, refer to [this section](../../reporting/using/about-cubes.md).
+I cubi consentono di ampliare le capacità di esplorazione e analisi del database, semplificando la configurazione di report e tabelle per gli utenti finali: è sufficiente selezionare un cubo esistente completamente configurato e utilizzarne calcoli, misure e statistiche. Per ulteriori informazioni sulla creazione di cubi, consultare [questa sezione](../../reporting/using/about-cubes.md).
 
-Fate clic sul **[!UICONTROL Edit query...]** collegamento e selezionate gli indicatori da visualizzare o utilizzare nel rapporto.
+Fare clic sul collegamento **[!UICONTROL Edit query...]** e selezionare gli indicatori che si desidera visualizzare o utilizzare nel rapporto.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -69,9 +69,9 @@ Per evitare di eseguire query sull&#39;intero database, i dati devono essere fil
 
 ### Filtro semplificato {#simplified-filter}
 
-Puoi selezionare l&#39; **[!UICONTROL Filter automatically with the context]** opzione per rendere il rapporto accessibile tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario o una consegna.
+È possibile selezionare l&#39;opzione **[!UICONTROL Filter automatically with the context]** per rendere il rapporto accessibile tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario o una consegna.
 
-L’ **[!UICONTROL Filter with the folder]** opzione consente di specificare una cartella e di tenerne conto solo del relativo contenuto. Questo consente di filtrare i dati del rapporto in modo da mostrare solo i dati di una delle cartelle della struttura, come illustrato di seguito:
+L&#39;opzione **[!UICONTROL Filter with the folder]** consente di specificare una cartella e di tenerne conto solo del relativo contenuto. Questo consente di filtrare i dati del rapporto in modo da mostrare solo i dati di una delle cartelle della struttura, come illustrato di seguito:
 
 ![](assets/reporting_control_folder.png)
 
