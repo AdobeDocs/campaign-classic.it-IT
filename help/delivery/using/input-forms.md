@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Di seguito sono riportati alcuni principi generali relativi all&#39;uso dei moduli di input in  Adobe Campaign.
 
-Forms è dettagliato in [questa sezione](../../configuration/using/identifying-a-form.md).
+Forms è descritto in [questa sezione](../../configuration/using/identifying-a-form.md).
 
 ## Struttura di un modulo {#form-structure}
 
-Il documento XML di un modulo di input deve contenere l&#39;elemento **`<form>`** principale con gli attributi **name** e **namespace** , rispettivamente per compilare il nome del modulo e il relativo spazio nomi.
+Il documento XML di un modulo di input deve contenere gli attributi **`<form>`** root con gli attributi **name** e **namespace** rispettivamente per compilare il nome del modulo e il relativo spazio dei nomi.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ Il documento XML di un modulo di input deve contenere l&#39;elemento **`<form>`*
 </form>
 ```
 
-Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio nomi. Per associare un modulo con un nome diverso, immettere la chiave dello schema nell&#39;attributo **entity-schema** dell&#39; **`<form>`** elemento.
+Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio nomi. Per associare un modulo con un nome diverso, immettere la chiave dello schema nell&#39;attributo **entity-schema** dell&#39;elemento **`<form>`**.
 
 Per illustrare la struttura di un modulo di input, viene descritta un&#39;interfaccia basata sullo schema di esempio &quot;cus:book&quot;:
 
@@ -49,7 +49,7 @@ Questo è il modulo di input corrispondente:
 
 La descrizione degli elementi di modifica inizia con l&#39;elemento **`<form>`** principale.
 
-Un controllo di modifica viene immesso in un **`<input>`** elemento con l&#39;attributo **xpath** che contiene il percorso del campo nello schema.
+Un controllo di modifica viene immesso in un elemento **`<input>`** con l&#39;attributo **xpath** contenente il percorso del campo nello schema.
 
 **Promemoria relativa alla sintassi XPath:**
 
@@ -71,7 +71,7 @@ Per impostazione predefinita, ogni campo viene visualizzato su una sola riga e o
 
 >[!CAUTION]
 >
->Il modulo di input deve fare riferimento a un attributo **type=&quot;contentForm&quot;** sull&#39; **`<form>`** elemento per aggiungere automaticamente la cornice necessaria per l&#39;immissione del contenuto.
+>Il modulo di input deve fare riferimento a un attributo **type=&quot;contentForm&quot;** sull&#39;elemento **`<form>`** per aggiungere automaticamente il frame necessario per l&#39;immissione del contenuto.
 
 ## Formattazione {#formatting}
 
@@ -96,13 +96,13 @@ Questo controllo visualizza un elenco di colonne modificabili con una barra degl
 </input>
 ```
 
-Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
+Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento della raccolta.
 
-Le colonne sono dichiarate dagli **`<input>`** elementi secondari dell&#39;elenco.
+Le colonne sono dichiarate dagli elementi secondari **`<input>`** dell&#39;elenco.
 
 >[!NOTE]
 >
->Le frecce di ordinamento su e giù vengono aggiunte automaticamente quando l&#39;attributo **ordered=&quot;true&quot;** è completato per l&#39;elemento di raccolta nello schema dati.
+>Le frecce di ordinamento verso l&#39;alto e il basso vengono aggiunte automaticamente quando l&#39;attributo **ordered=&quot;true&quot;** viene completato per l&#39;elemento di raccolta nello schema di dati.
 
 Per impostazione predefinita, i pulsanti della barra degli strumenti sono allineati verticalmente. Possono anche essere allineati orizzontalmente:
 
@@ -119,7 +119,7 @@ L&#39;attributo **toolbarCaption** forza l&#39;allineamento orizzontale della ba
 
 >[!NOTE]
 >
->Per evitare che l&#39;etichetta dell&#39;elemento di raccolta venga visualizzata a sinistra del controllo, aggiungete l&#39;attributo **nolabel=&quot;true&quot;** .
+>Per evitare che l&#39;etichetta dell&#39;elemento di raccolta venga visualizzata a sinistra del controllo, aggiungere l&#39;attributo **nolabel=&quot;true&quot;**.
 
 #### Zoom in un elenco {#zoom-in-a-list}
 
@@ -129,7 +129,7 @@ I moduli di modifica negli elenchi vengono utilizzati nei casi seguenti:
 
 * Per semplificare l&#39;immissione delle informazioni,
 * Presenza di un controllo a più linee,
-* Le colonne dell&#39;elenco contengono solo i campi principali e il modulo visualizza tutti i campi dell&#39;elemento della raccolta.
+* Le colonne nell&#39;elenco contengono solo i campi principali e il modulo visualizza tutti i campi dell&#39;elemento raccolta.
 
 ![](assets/d_ncs_content_form7.png)
 
@@ -146,13 +146,13 @@ I moduli di modifica negli elenchi vengono utilizzati nei casi seguenti:
 </input>
 ```
 
-La definizione del modulo di modifica viene specificata tramite l&#39; **`<form>`** elemento sotto l&#39;elemento elenco. La sua struttura è identica alla struttura di un modulo di input.
+La definizione del modulo di modifica viene specificata tramite l&#39;elemento **`<form>`** sotto l&#39;elemento elenco. La sua struttura è identica alla struttura di un modulo di input.
 
-Un **[!UICONTROL Detail]** pulsante viene aggiunto automaticamente quando l’attributo **zoom=&quot;true&quot;** viene immesso nella definizione dell’elenco. Questo consente di aprire il modulo di modifica sulla riga selezionata.
+Un pulsante **[!UICONTROL Detail]** viene aggiunto automaticamente quando l&#39;attributo **zoom=&quot;true&quot;** viene immesso nella definizione dell&#39;elenco. Questo consente di aprire il modulo di modifica sulla riga selezionata.
 
 >[!NOTE]
 >
->Se si aggiunge l’attributo **zoomOnAdd=&quot;true&quot;** , il modulo di modifica viene chiamato all’inserimento di un elemento dell’elenco.
+>Se si aggiunge l&#39;attributo **zoomOnAdd=&quot;true&quot;**, il modulo di modifica viene chiamato all&#39;inserimento di un elemento dell&#39;elenco.
 
 ### Elenco tabulazioni {#tab-list}
 
@@ -170,11 +170,11 @@ Questo elenco presenta la modifica degli elementi della raccolta sotto forma di 
 </container>
 ```
 
-Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;blocco appunti&quot;** , e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
+Il controllo elenco deve essere compilato con l&#39;attributo **type=&quot;blocco appunti&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento della raccolta.
 
-Il titolo della scheda contiene il valore dei dati immessi tramite l&#39;attributo **xpath-label** .
+Il titolo della scheda contiene il valore dei dati immessi tramite l&#39;attributo **xpath-label**.
 
-I controlli di modifica devono essere dichiarati sotto un **`<container>`** elemento secondario del controllo elenco.
+I controlli di modifica devono essere dichiarati sotto un elemento **`<container>`** secondario del controllo elenco.
 
 Utilizzare i pulsanti della barra degli strumenti per aggiungere o eliminare elementi dell&#39;elenco.
 
@@ -184,7 +184,7 @@ Utilizzare i pulsanti della barra degli strumenti per aggiungere o eliminare ele
 
 ## Contenitori {#containers}
 
-I contenitori consentono di raggruppare un set di controlli. Esistono tramite l&#39; **`<container>`** elemento . Sono già stati utilizzati per formattare i controlli in più colonne e per controllare l&#39;elenco delle schede.
+I contenitori consentono di raggruppare un set di controlli. Esistono tramite l&#39;elemento **`<container>`**. Sono già stati utilizzati per formattare i controlli in più colonne e per controllare l&#39;elenco delle schede.
 
 Per ulteriori informazioni sui contenitori e su come utilizzarli nei moduli di input, consultare [questa sezione](../../configuration/using/form-structure.md#containers).
 
@@ -194,6 +194,6 @@ La zona di modifica consente di inserire il contenuto XML del modulo di input:
 
 ![](assets/d_ncs_content_form12.png)
 
-La **[!UICONTROL Preview]** scheda consente di visualizzare il modulo di input:
+La scheda **[!UICONTROL Preview]** consente di visualizzare il modulo di input:
 
 ![](assets/d_ncs_content_form13.png)
