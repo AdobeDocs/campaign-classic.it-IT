@@ -21,14 +21,14 @@ Per creare un ambiente di test (modalità sandbox), effettuate le seguenti opera
 
 >[!IMPORTANT]
 >
->Utilizzare questo metodo di creazione dell&#39;ambiente solo per gli ambienti di test. In tutti gli altri casi, utilizzate la procedura guidata di mappatura della destinazione. Per ulteriori informazioni, consultate [Creazione di un ambiente](../../interaction/using/live-design-environments.md#creating-an-offer-environment)di offerte.
+>Utilizzare questo metodo di creazione dell&#39;ambiente solo per gli ambienti di test. In tutti gli altri casi, utilizzate la procedura guidata di mappatura della destinazione. Per ulteriori informazioni, vedere [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Avviate  Adobe Campaign Explorer e passate alla directory principale dell&#39;istanza.
-1. Fate clic con il pulsante destro del mouse e aggiungete un **[!UICONTROL Generic folder]** oggetto utilizzando i menu a discesa.
+1. Fare clic con il pulsante destro del mouse e aggiungere un **[!UICONTROL Generic folder]** utilizzando i menu a discesa.
 
    ![](assets/offer_env_creation_001.png)
 
-1. Quindi, passate alla cartella appena creata e aggiungete un **[!UICONTROL Offer environment]** mediante i menu di scelta rapida.
+1. Quindi, andate alla cartella appena creata e aggiungete un **[!UICONTROL Offer environment]** utilizzando i menu di scelta rapida.
 
    ![](assets/offer_env_creation_001bis.png)
 
