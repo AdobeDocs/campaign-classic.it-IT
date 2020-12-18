@@ -23,11 +23,11 @@ ht-degree: 1%
 
 ## Creazione di un elenco con un gruppo {#creating-a-list-with-group}
 
-Una **[!UICONTROL List with group]** tabella di tipo consente di raggruppare i dati nella tabella e di generare statistiche su di essa. Ad esempio, è possibile creare totali e subtotali per i dati. Ogni gruppo ha una propria riga di intestazione, dettaglio e piè di pagina.
+Una tabella di tipo **[!UICONTROL List with group]** consente di raggruppare i dati nella tabella e di generare statistiche su di essa. Ad esempio, è possibile creare totali e subtotali per i dati. Ogni gruppo ha una propria riga di intestazione, dettaglio e piè di pagina.
 
 >[!CAUTION]
 >
->L&#39; **[!UICONTROL Page]** attività che contiene la tabella deve essere preceduta da un&#39; **[!UICONTROL Query]** attività o **[!UICONTROL Script]** attività per raccogliere i dati da analizzare nel rapporto. Per ulteriori informazioni su queste attività, vedere [Raccolta di dati per l&#39;analisi](../../reporting/using/collecting-data-to-analyze.md) e l&#39;attività [](../../reporting/using/advanced-functionalities.md#script-activity)Script.
+>L&#39;attività **[!UICONTROL Page]** contenente la tabella deve essere preceduta da un&#39;attività **[!UICONTROL Query]** o **[!UICONTROL Script]** per raccogliere i dati da analizzare nel rapporto. Per ulteriori informazioni su queste attività, vedere [Raccolta di dati per l&#39;analisi di ](../../reporting/using/collecting-data-to-analyze.md) e [Attività script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Principio di funzionamento {#operating-principle}
 
@@ -35,26 +35,26 @@ Può accadere che sia necessario analizzare più categorie di dati contemporanea
 
 Nell&#39;esempio seguente, il gruppo mostra tutte le campagne nel database, le consegne e il numero di messaggi inviati per consegna e per campagna.
 
-Consente di elencare le campagne (**[!UICONTROL Label (Campaign)]**, l&#39;elenco delle consegne (**[!UICONTROL Label]** ) collegate alla campagna e di calcolare il numero di messaggi inviati per consegna (**[!UICONTROL Processed)]**, prima di aggiungerli per ogni campagna (**[!UICONTROL Sum(@processed)]** ).
+Consente di elencare le campagne (**[!UICONTROL Label (Campaign)]**, l&#39;elenco di consegne (**[!UICONTROL Label]**) collegate alla campagna e di calcolare il numero di messaggi inviati per consegna (**[!UICONTROL Processed)]**, prima di aggiungerli per ogni campagna (**[!UICONTROL Sum(@processed)]**).
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### Passaggi di implementazione {#implementation-steps}
 
-Un esempio completo di implementazione è fornito qui: [Caso di utilizzo: Creare un rapporto con un elenco](#use-case--create-a-report-with-a-group-list)di gruppi.
+Un esempio completo di implementazione è fornito qui: [Caso di utilizzo: Creare un rapporto con un elenco di gruppi](#use-case--create-a-report-with-a-group-list).
 
 Per creare una tabella di tipo &#39;Elenco con gruppo&#39;, attenersi alla procedura seguente:
 
-1. Passate al grafico del rapporto e inserite un&#39; **[!UICONTROL Query]** attività. Fare riferimento a [Raccolta di dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
+1. Andate al grafico dei report e inserite un&#39;attività **[!UICONTROL Query]**. Fare riferimento a [Raccolta di dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
 1. Compila la tabella di origine e seleziona i campi della tabella che saranno interessati dalle statistiche.
-1. Inserite un&#39; **[!UICONTROL Page]** attività nel grafico. For more on this, refer to [Static elements](../../reporting/using/creating-a-new-report.md#static-elements).
-1. Inserire una tabella **[!UICONTROL List with group]** di tipo nella pagina.
+1. Inserite un&#39;attività **[!UICONTROL Page]** nel grafico. Per ulteriori informazioni, fare riferimento a [Elementi statici](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Inserire una tabella di tipo **[!UICONTROL List with group]** nella pagina.
 1. Specificare il percorso dati o la tabella selezionata come origine dati nella query.
 
    Questo passaggio è obbligatorio se si desidera recuperare i campi nella tabella di origine in un secondo momento e inserirli nelle celle della tabella.
 
 1. Creazione della tabella e del relativo contenuto.
-1. Visualizza il rapporto finale nella **[!UICONTROL Preview]** scheda. Potete quindi pubblicare il rapporto ed esportarlo in un formato diverso, se necessario. Per ulteriori informazioni, vedere [Esportazione di un rapporto](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Visualizza il rapporto finale nella scheda **[!UICONTROL Preview]**. Potete quindi pubblicare il rapporto ed esportarlo in un formato diverso, se necessario. Per ulteriori informazioni, vedere [Esportazione di un report](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Aggiunta di righe e colonne {#adding-lines-and-columns}
 
@@ -84,11 +84,11 @@ Il gruppo può essere posizionato su qualsiasi riga della tabella e include righ
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-La natura della linea aggiunta dipende dalla posizione del cursore. Ad esempio, per aggiungere una riga di intestazione, posizionare i cursori su un&#39;intestazione, quindi fare clic **[!UICONTROL Add > A line above/below]**.
+La natura della linea aggiunta dipende dalla posizione del cursore. Ad esempio, per aggiungere una riga di intestazione, posizionare i cursori su un&#39;intestazione, quindi fare clic su **[!UICONTROL Add > A line above/below]**.
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-La larghezza delle colonne può essere modificata tramite l’ **[!UICONTROL Column format]** elemento.
+La larghezza delle colonne può essere modificata tramite l&#39;elemento **[!UICONTROL Column format]**.
 
 **Gruppo**: per aggiungere un gruppo, passate a una riga e selezionate l&#39;elemento corrispondente nel menu a discesa.
 
@@ -98,7 +98,7 @@ La larghezza delle colonne può essere modificata tramite l’ **[!UICONTROL Col
 
 Per modificare una cella della tabella e definirne il contenuto e il formato, passare alla cella e utilizzare il menu di scelta rapida.
 
-Utilizzate la voce di **[!UICONTROL Expression]** menu per selezionare i valori da visualizzare.
+Utilizzate la voce di menu **[!UICONTROL Expression]** per selezionare i valori da visualizzare.
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
@@ -110,36 +110,36 @@ Utilizzate la voce di **[!UICONTROL Expression]** menu per selezionare i valori 
 
 * Immettete un&#39;etichetta per una cella, ad esempio l&#39;intestazione.
 
-   A questo scopo, utilizzare lo stesso processo utilizzato per inserire un campo nel database, ma non selezionare un&#39;espressione. Enter the label in the **[!UICONTROL Label]** field. Verrà visualizzato così come è.
+   A questo scopo, utilizzare lo stesso processo utilizzato per inserire un campo nel database, ma non selezionare un&#39;espressione. Immettere l&#39;etichetta nel campo **[!UICONTROL Label]**. Verrà visualizzato così come è.
 
 * Calcolo di un aggregato (una media, una somma, ecc.) e visualizzarlo nella cella.
 
-   A questo scopo, utilizzate la voce di **[!UICONTROL Aggregates]** menu e selezionate la campagna desiderata.
+   A questo scopo, utilizzate la voce di menu **[!UICONTROL Aggregates]** e selezionate la campagna desiderata.
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Definizione del formato della cella {#defining-cell-format}
+### Definizione del formato di cella {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-Per definire il formato della cella, il **[!UICONTROL Cell format...]** menu consente di accedere a tutte le opzioni di formattazione disponibili per la cella selezionata.
+Per definire il formato della cella, il menu **[!UICONTROL Cell format...]** consente di accedere a tutte le opzioni di formattazione disponibili per la cella selezionata.
 
 Queste opzioni consentono di personalizzare il rendering finale del rapporto e semplificano la lettura delle informazioni.
 
-Utilizzare il **[!UICONTROL Carriage return]** campo durante l&#39;esportazione dei dati in Excel: selezionare il **[!UICONTROL Yes]** valore per forzare il ritorno a capo. Questo valore verrà mantenuto al momento dell&#39;esportazione. Per ulteriori informazioni, vedere [Esportazione di un rapporto](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Utilizzare il campo **[!UICONTROL Carriage return]** durante l&#39;esportazione dei dati in Excel: selezionare il valore **[!UICONTROL Yes]** per forzare il ritorno a capo. Questo valore verrà mantenuto al momento dell&#39;esportazione. Per ulteriori informazioni, vedere [Esportazione di un report](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-La **[!UICONTROL Cell format]** finestra consente di accedere alla scheda seguente:
+La finestra **[!UICONTROL Cell format]** consente di accedere alla scheda seguente:
 
-* La **[!UICONTROL Value]** scheda
-* La **[!UICONTROL Borders]** scheda
-* La **[!UICONTROL Click]** scheda
-* La **[!UICONTROL Extra]** scheda
+* Scheda **[!UICONTROL Value]**
+* Scheda **[!UICONTROL Borders]**
+* Scheda **[!UICONTROL Click]**
+* Scheda **[!UICONTROL Extra]**
 
-La **[!UICONTROL Value]** scheda consente di modificare il font e i vari attributi di valore o di definire un formato basato sulla loro natura.
+La scheda **[!UICONTROL Value]** consente di modificare il font e i vari attributi di valore o di definire un formato basato sulla loro natura.
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-Il formato modifica la visualizzazione dei dati: ad esempio, i **[!UICONTROL Number]** formati **[!UICONTROL Monetary]** e **[!UICONTROL Percentage]** consentono di allineare le cifre sulla destra e visualizzare i punti decimali.
+Il formato modifica la visualizzazione dei dati: ad esempio, i formati **[!UICONTROL Number]**, **[!UICONTROL Monetary]** e **[!UICONTROL Percentage]** consentono di allineare le cifre a destra e di visualizzare i punti decimali.
 
 Esempio di configurazione di un formato di valuta: è possibile specificare la valuta in cui sono espressi i valori, scegliere se separarli o meno e visualizzare valori negativi in rosso. La posizione del simbolo di valuta dipende dalla lingua dell&#39;operatore definita nel relativo profilo.
 
@@ -153,7 +153,7 @@ La scheda **Bordi** consente di aggiungere bordi alle righe e alle colonne della
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-Se necessario, è possibile definire i bordi nel modello di tabella (**[!UICONTROL Administration > Configuration > Form rendering]** ).
+Se necessario, è possibile definire i bordi nel modello di tabella (**[!UICONTROL Administration > Configuration > Form rendering]**).
 
 In questo caso, si avrà la sintassi seguente:
 
@@ -187,13 +187,13 @@ Nella scheda Excel:
  </style> 
 ```
 
-La **[!UICONTROL Click]** scheda consente di definire un&#39;azione quando l&#39;utente fa clic sul contenuto di una cella o di una tabella.
+La scheda **[!UICONTROL Click]** consente di definire un&#39;azione quando l&#39;utente fa clic sul contenuto di una cella o di una tabella.
 
 Nell&#39;esempio seguente, facendo clic sul valore nella cella è possibile visualizzare la seconda pagina del rapporto: conterrà informazioni sulla consegna nella cella.
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-La scheda **Extra** consente di collegare un elemento visivo ai dati, ad esempio un segno colorato o una barra dei valori. Il segno colorato viene utilizzato quando la tabella viene visualizzata come legenda in un grafico. Per ulteriori informazioni, consulta l’esempio di implementazione: [Passaggio 5 - Creare la seconda pagina](#step-5---create-the-second-page)
+La scheda **Extra** consente di collegare un elemento visivo ai dati, ad esempio un contrassegno colorato o una barra dei valori. Il segno colorato viene utilizzato quando la tabella viene visualizzata come legenda in un grafico. Per ulteriori informazioni, consulta l’esempio di implementazione: [Passo 5 - Creare la seconda pagina](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -203,13 +203,13 @@ In questo esempio, verrà creato un rapporto di due pagine: la prima pagina cont
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### Passaggio 1 - Creare un rapporto {#step-1---create-a-report}
+### Passaggio 1 - Creare un report {#step-1---create-a-report}
 
-Create un nuovo rapporto che riguardi lo schema della campagna, **[!UICONTROL Campaigns (nms)]**.
+Create un nuovo report che riguardi lo schema della campagna, **[!UICONTROL Campaigns (nms)]**.
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-Fate clic **[!UICONTROL Save]** per creare il rapporto.
+Fare clic su **[!UICONTROL Save]** per creare il rapporto.
 
 Passate al grafico e aggiungete i primi componenti da utilizzare per la progettazione del contenuto del rapporto: una prima query e una prima pagina.
 
@@ -221,8 +221,8 @@ La prima query consente di raccogliere le consegne collegate a ciascuna campagna
 
 Fate doppio clic sulla prima query per modificarla, quindi applicate i seguenti passaggi per configurarla:
 
-1. Per iniziare, modificare lo schema a cui viene applicata l&#39;origine della query: selezionare lo **[!UICONTROL Deliveries (nms)]** schema.
-1. Fare clic sul **[!UICONTROL Edit query]** collegamento e visualizzare i campi avanzati.
+1. Per iniziare, modificare lo schema a cui viene applicata l&#39;origine della query: selezionare lo schema **[!UICONTROL Deliveries (nms)]**.
+1. Fare clic sul collegamento **[!UICONTROL Edit query]** e visualizzare i campi avanzati.
 
    ![](assets/reporting_quick_start_query-1.png)
 
@@ -249,7 +249,7 @@ Fate doppio clic sulla prima query per modificarla, quindi applicate i seguenti 
    * Frequenza errori: **@errorRatio**
 
 
-1. Fate clic due volte sul **[!UICONTROL Next]** pulsante per passare al **[!UICONTROL Data filtering]** passaggio.
+1. Fare clic due volte sul pulsante **[!UICONTROL Next]** per passare al passaggio **[!UICONTROL Data filtering]**.
 
    Aggiungete una condizione di filtro per raccogliere solo le consegne collegate a una campagna.
 
@@ -257,13 +257,13 @@ Fate doppio clic sulla prima query per modificarla, quindi applicate i seguenti 
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. Fare clic **[!UICONTROL Finish]** per salvare queste condizioni, quindi fare clic **[!UICONTROL Ok]** per chiudere l&#39;editor di query.
+1. Fare clic su **[!UICONTROL Finish]** per salvare queste condizioni, quindi fare clic su **[!UICONTROL Ok]** per chiudere l&#39;editor di query.
 
 ### Passaggio 3: Creare la prima pagina {#step-3--create-the-first-page}
 
 In questo passaggio, configureremo la prima pagina del rapporto. Per configurarlo, effettua i seguenti passaggi:
 
-1. Aprite l&#39; **[!UICONTROL Page]** attività e immettete il relativo titolo, ad esempio **Consegne** in questo caso.
+1. Aprite l&#39;attività **[!UICONTROL Page]** e immettete il relativo titolo, ad esempio **Consegne** in questo caso.
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
@@ -271,11 +271,11 @@ In questo passaggio, configureremo la prima pagina del rapporto. Per configurarl
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. Fate clic sul **[!UICONTROL Table data XPath...]** collegamento e selezionate il collegamento di consegna, ad es. `[query/delivery]`.
+1. Fate clic sul collegamento **[!UICONTROL Table data XPath...]** e selezionate il collegamento di consegna, ad es. `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. Fare clic sulla **[!UICONTROL Data]** scheda e modificare il layout della tabella: aggiungere tre colonne a destra.
+1. Fare clic sulla scheda **[!UICONTROL Data]** e modificare il layout della tabella: aggiungere tre colonne a destra.
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
@@ -285,11 +285,11 @@ In questo passaggio, configureremo la prima pagina del rapporto. Per configurarl
 
    Questo gruppo consente di raggruppare le campagne e le consegne ad esse collegate.
 
-1. Nella finestra del gruppo, fate riferimento alla chiave **esterna del collegamento** &quot;Campagna&quot; e chiudete la finestra.
+1. Nella finestra del gruppo, fate riferimento alla **chiave esterna del collegamento &#39;Campaign&#39;** e chiudete la finestra.
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. Modificate la prima cella dell&#39;intestazione del gruppo e inserite il **[!UICONTROL Label]** campo delle campagne come espressione.
+1. Modificate la prima cella dell&#39;intestazione del gruppo e inserite il campo **[!UICONTROL Label]** delle campagne come espressione.
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
@@ -297,15 +297,15 @@ In questo passaggio, configureremo la prima pagina del rapporto. Per configurarl
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. Modificate il formato della cella e aprite la **[!UICONTROL Click]** scheda. Configurate le opzioni adeguate in modo che quando gli utenti fanno clic sul nome di una consegna, questa si apra nella stessa finestra.
+1. Modificate il formato di questa cella e aprite la scheda **[!UICONTROL Click]**. Configurate le opzioni adeguate in modo che quando gli utenti fanno clic sul nome di una consegna, questa si apra nella stessa finestra.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   A questo scopo, selezionate un’azione **[!UICONTROL Next page]** di tipo e **[!UICONTROL In the same window]** scegliete un’opzione aperta.
+   A tal fine, selezionare un&#39;azione di tipo **[!UICONTROL Next page]** e selezionare **[!UICONTROL In the same window]** come opzione aperta.
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. Nella sezione inferiore della finestra, fate clic su **[!UICONTROL Add]** e specificate il **`/vars/selectedDelivery`** percorso e l&#39; **[!UICONTROL @deliveryId]** espressione che corrispondono all&#39;alias della chiave primaria della consegna, come definito nella query creata in precedenza. Questa formula consente di accedere al recapito selezionato.
+1. Nella sezione inferiore della finestra, fare clic su **[!UICONTROL Add]** e specificare il percorso **`/vars/selectedDelivery`** e l&#39;espressione **[!UICONTROL @deliveryId]** che corrisponde all&#39;alias della chiave primaria della consegna, come definito nella query creata in precedenza. Questa formula consente di accedere al recapito selezionato.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
@@ -323,27 +323,27 @@ In questo passaggio, configureremo la prima pagina del rapporto. Per configurarl
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. Modificate la terza cella della riga piè di pagina del gruppo, selezionate l’indicatore di consegna elaborato e applicate l’ **[!UICONTROL Sum]** aggregazione.
+1. Modificate la terza cella della riga piè di pagina del gruppo, selezionate l&#39;indicatore di consegna elaborato e applicate l&#39;aggregazione **[!UICONTROL Sum]**.
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
-1. Modificate la quarta cella della riga di dettaglio e selezionate come espressione il tasso **di errore relativo alla distribuzione degli** errori.
+1. Modificate la quarta cella della riga di dettaglio e selezionate come espressione la **frequenza di errore di consegna errori**.
 
    ![](assets/s_advuser_report_listgroup_016.png)
 
 1. Selezionare questa cella per visualizzare una barra dei valori che rappresenta la frequenza degli errori di consegna.
 
-   A questo scopo, accedere al formato della cella, quindi passare alla **[!UICONTROL More]** scheda. Selezionate la **[!UICONTROL Value bar]** voce nell’elenco a discesa e selezionate l’ **[!UICONTROL Hide the cell value]** opzione.
+   A tal fine, accedere al formato della cella, quindi passare alla scheda **[!UICONTROL More]**. Selezionare la voce **[!UICONTROL Value bar]** nell&#39;elenco a discesa e selezionare l&#39;opzione **[!UICONTROL Hide the cell value]**.
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   Ora è possibile visualizzare un rendering del rapporto. Fate clic sulla **[!UICONTROL Preview]** scheda e selezionate l’ **[!UICONTROL Global]** opzione: viene visualizzato l&#39;elenco di tutte le consegne nel database Adobe Campaign  collegate a una campagna.
+   Ora è possibile visualizzare un rendering del rapporto. Fare clic sulla scheda **[!UICONTROL Preview]** e selezionare l&#39;opzione **[!UICONTROL Global]**: viene visualizzato l&#39;elenco di tutte le consegne nel database Adobe Campaign  collegate a una campagna.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   È consigliabile utilizzare la **[!UICONTROL Preview]** scheda per verificare che i dati nella tabella siano selezionati e configurati correttamente. Al termine, è possibile formattare la tabella.
+   È consigliabile utilizzare la scheda **[!UICONTROL Preview]** per verificare che i dati nella tabella siano selezionati e configurati correttamente. Al termine, è possibile formattare la tabella.
 
-1. Applica lo **[!UICONTROL Bold]** stile alle celle che mostrano il totale per campagna e il numero totale di messaggi elaborati.
+1. Applicate lo stile **[!UICONTROL Bold]** alle celle che mostrano il totale per campagna e il numero totale di messaggi elaborati.
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
@@ -363,7 +363,7 @@ In questo passaggio, configureremo la prima pagina del rapporto. Per configurarl
 
 Si desidera aggiungere una seconda query e una seconda pagina per visualizzare i dettagli di una consegna quando l&#39;utente del report fa clic su di essa. Prima di aggiungere la query, modificare la pagina creata e abilitare la transizione in uscita in modo che possa essere collegata alla query.
 
-1. Aggiungete una nuova query dopo l&#39; **[!UICONTROL Page]** attività e modificatene lo schema: selezionare lo **[!UICONTROL Recipient delivery logs]** schema.
+1. Aggiungete una nuova query dopo l&#39;attività **[!UICONTROL Page]** e modificatene lo schema: selezionare lo schema **[!UICONTROL Recipient delivery logs]**.
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -373,19 +373,19 @@ Si desidera aggiungere una seconda query e una seconda pagina per visualizzare i
 
       ![](assets/reporting_quick_start_query-2_count.png)
 
-   * raccoglie i domini e-mail dei destinatari e le informazioni sui gruppi in questo campo: a tal fine, selezionate l’ **[!UICONTROL Group]** opzione nella colonna del nome di dominio.
+   * raccoglie i domini e-mail dei destinatari e le informazioni sui gruppi in questo campo: a questo scopo, selezionate l&#39;opzione **[!UICONTROL Group]** nella colonna del nome di dominio.
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Collegare i seguenti alias ai campi:
 
    * count(chiave primaria): **@count**
-   * Dominio e-mail (destinatario): **@dominio**
+   * Dominio e-mail (destinatario): **@domain**
 
       ![](assets/reporting_quick_start_query-2_alias.png)
 
 
-1. Fate clic due volte sul **[!UICONTROL Next]** pulsante: questo ti porta al **[!UICONTROL Data filtering]** passo.
+1. Fare clic due volte sul pulsante **[!UICONTROL Next]**: per passare al passaggio **[!UICONTROL Data filtering]**.
 
    Aggiungi una condizione di filtro per raccogliere solo le informazioni collegate alla consegna selezionata.
 
@@ -397,50 +397,50 @@ Si desidera aggiungere una seconda query e una seconda pagina per visualizzare i
 
 ### Passaggio 5 - Creare la seconda pagina {#step-5---create-the-second-page}
 
-1. Modificate la pagina e immettete la relativa etichetta: **Domini** e-mail.
-1. Deselezionate l’ **[!UICONTROL Enable output transitions]** opzione: questa è l&#39;ultima pagina del rapporto e non sarà seguita da un&#39;altra attività.
+1. Modificate la pagina e immettete la relativa etichetta: **Domini e-mail**.
+1. Deselezionare l&#39;opzione **[!UICONTROL Enable output transitions]**: questa è l&#39;ultima pagina del rapporto e non sarà seguita da un&#39;altra attività.
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
-1. Aggiungi un nuovo elenco con un gruppo utilizzando il menu di scelta rapida e chiamalo domini **e-mail per destinatario**.
-1. Fai clic sul **[!UICONTROL Table data XPath...]** collegamento e seleziona il **[!UICONTROL Recipient delivery logs]** collegamento.
+1. Aggiungi un nuovo elenco con un gruppo utilizzando il menu di scelta rapida e chiamalo **Domini e-mail per destinatario**.
+1. Fare clic su **[!UICONTROL Table data XPath...]** e selezionare il collegamento **[!UICONTROL Recipient delivery logs]**.
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. Nella **[!UICONTROL Data]** scheda, adattare la tabella come segue:
+1. Nella scheda **[!UICONTROL Data]**, adattare la tabella come segue:
 
    * Aggiungete due colonne sul lato destro.
-   * Nella prima cella della riga di dettaglio, aggiungere l&#39; **[!UICONTROL rowNum()-1]** espressione per contare il numero di righe. Quindi, modificare il formato della cella: nella **[!UICONTROL Extra]** scheda, selezionare **[!UICONTROL Color tab]** e fare clic su **[!UICONTROL Ok]**.
+   * Nella prima cella della riga di dettaglio, aggiungere l&#39;espressione **[!UICONTROL rowNum()-1]** per contare il numero di righe. Quindi, modificare il formato della cella: nella scheda **[!UICONTROL Extra]**, selezionare **[!UICONTROL Color tab]** e fare clic su **[!UICONTROL Ok]**.
 
       ![](assets/s_advuser_report_listgroup_018.png)
 
       Questa configurazione consente di utilizzare la tabella come didascalia per il grafico.
 
-   * Nella seconda cella della riga di dettaglio, aggiungere l&#39; **[!UICONTROL Email domain(Recipient)]** espressione.
-   * Nella terza cella della riga di dettaglio, aggiungere l&#39; **[!UICONTROL count(primary key)]** espressione.
+   * Nella seconda cella della riga di dettaglio, aggiungere l&#39;espressione **[!UICONTROL Email domain(Recipient)]**.
+   * Nella terza cella della riga del dettaglio, aggiungere l&#39;espressione **[!UICONTROL count(primary key)]**.
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Aggiungi un grafico a torta alla pagina utilizzando il menu di scelta rapida e assegnandogli l’etichetta Domini **** e-mail. Per ulteriori informazioni, fare riferimento ai tipi di [grafico e alle varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
-1. Fate clic sul **[!UICONTROL Variants]** collegamento e deselezionate le opzioni **[!UICONTROL Display label]** e **[!UICONTROL Display caption]** .
+1. Aggiungere un grafico a torta alla pagina utilizzando il menu di scelta rapida e assegnare l&#39;etichetta **Domini e-mail**. Per ulteriori informazioni, fare riferimento a [Tipi di grafici e varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Fare clic sul collegamento **[!UICONTROL Variants]** e deselezionare le opzioni **[!UICONTROL Display label]** e **[!UICONTROL Display caption]**.
 1. Verificare che non sia configurato alcun ordinamento dei valori. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. Nella **[!UICONTROL Data]** scheda, modificare l&#39;origine dati: selezionare **[!UICONTROL Context data]** dall&#39;elenco a discesa.
+1. Nella scheda **[!UICONTROL Data]**, modificare l&#39;origine dati: selezionare **[!UICONTROL Context data]** dall&#39;elenco a discesa.
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. Quindi fai clic su **[!UICONTROL Advanced settings]** e seleziona il collegamento ai registri di distribuzione dei destinatari.
+1. Quindi fate clic su **[!UICONTROL Advanced settings]** e selezionate il collegamento ai registri di consegna destinatari.
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. In the **[!UICONTROL Chart type]** section, select the **[!UICONTROL Email domain]** variable.
+1. Nella sezione **[!UICONTROL Chart type]**, selezionare la variabile **[!UICONTROL Email domain]**.
 1. Aggiungere quindi il calcolo da eseguire: selezionare la somma come operatore.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
-1. Fate clic sul **[!UICONTROL Detail]** pulsante per selezionare il campo che verrà interessato dal conteggio, quindi chiudete la finestra di configurazione.
+1. Fare clic sul pulsante **[!UICONTROL Detail]** per selezionare il campo che verrà interessato dal conteggio, quindi chiudere la finestra di configurazione.
 
    ![](assets/s_advuser_report_listgroup_030.png)
 
@@ -448,9 +448,9 @@ Si desidera aggiungere una seconda query e una seconda pagina per visualizzare i
 
    La pagina è ora configurata.
 
-### Passaggio 6 - Visualizzazione del rapporto {#step-6---viewing-the-report}
+### Passaggio 6 - Visualizzazione del report {#step-6---viewing-the-report}
 
-Per visualizzare il risultato di questa configurazione, fare clic sulla **[!UICONTROL Preview]** scheda e selezionare l&#39; **[!UICONTROL Global]** opzione.
+Per visualizzare il risultato di questa configurazione, fare clic sulla scheda **[!UICONTROL Preview]** e selezionare l&#39;opzione **[!UICONTROL Global]**.
 
 Nella prima pagina del rapporto è riportato l&#39;elenco di tutte le consegne incluse nel database.
 
@@ -466,4 +466,4 @@ Questo tipo di tabella consente di visualizzare le statistiche calcolate sui dat
 
 La configurazione di questi tipi di report è simile a quella utilizzata per la procedura guidata di analisi descrittiva. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
-Per ulteriori informazioni sulla creazione di una tabella pivot, consultare [questa sezione](../../reporting/using/using-cubes-to-explore-data.md).
+Per ulteriori informazioni sulla creazione di una tabella pivot, fare riferimento a [questa sezione](../../reporting/using/using-cubes-to-explore-data.md).
