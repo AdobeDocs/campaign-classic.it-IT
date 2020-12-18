@@ -19,9 +19,9 @@ ht-degree: 7%
 
 Questo capitolo descrive come configurare gli schemi di estensione per estendere il modello di dati concettuali del database Adobe Campaign .
 
-Per una migliore comprensione delle tabelle integrate in Campaign e della loro interazione, fai riferimento al modello [dati](https://helpx.adobe.com/it/campaign/kb/acc-datamodel.html)Campaign Classic.
+Per una migliore comprensione delle tabelle integrate di Campaign e della loro interazione, fare riferimento al modello di dati Campaign Classic [](https://helpx.adobe.com/it/campaign/kb/acc-datamodel.html).
 
-La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. It obeys a grammar specific to Adobe Campaign, called a **schema**.
+La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Obbedisce a una grammatica specifica  Adobe Campaign, denominata **schema**.
 
 Uno schema è un documento XML associato a una tabella di database. Definisce la struttura dei dati e descrive la definizione SQL della tabella:
 
@@ -46,9 +46,9 @@ L&#39;illustrazione seguente mostra la posizione degli schemi nel sistema dati A
 
 ## Sintassi degli schemi {#syntax-of-schemas}
 
-L&#39;elemento principale dello schema è **`<srcschema>`**. Contiene i **`<element>`** sottoelementi e i **`<attribute>`** sottoelementi.
+L&#39;elemento principale dello schema è **`<srcschema>`**. Contiene i sottoelementi **`<element>`** e **`<attribute>`**.
 
-Il primo **`<element>`** sottoelemento coincide con il livello principale dell&#39;entità.
+Il primo sottoelemento **`<element>`** coincide con il livello principale dell&#39;entità.
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -68,13 +68,13 @@ Il primo **`<element>`** sottoelemento coincide con il livello principale dell&#
 
 ![](assets/s_ncs_configuration_schema_and_entity.png)
 
-I **`<element>`** tag definiscono i nomi degli elementi di entità. **`<attribute>`** i tag dello schema definiscono i nomi degli attributi nei **`<element>`** tag a cui sono stati collegati.
+I tag **`<element>`** definiscono i nomi degli elementi di entità. **`<attribute>`** i tag dello schema definiscono i nomi degli attributi nei  **`<element>`** tag a cui sono stati collegati.
 
 ## Identificazione di uno schema {#identification-of-a-schema}
 
 Uno schema dati è identificato dal nome e dallo spazio dei nomi.
 
-Uno spazio dei nomi consente di raggruppare un set di schemi per area di interesse. Ad esempio, lo spazio dei nomi **focus** viene utilizzato per la configurazione specifica del cliente (**clienti**).
+Uno spazio dei nomi consente di raggruppare un set di schemi per area di interesse. Ad esempio, lo spazio dei nomi **cus** viene utilizzato per la configurazione specifica del cliente (**Customers**).
 
 >[!IMPORTANT]
 >
