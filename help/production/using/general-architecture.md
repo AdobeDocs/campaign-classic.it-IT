@@ -45,9 +45,9 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 
 >[!NOTE]
 >
->For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
+>Per ulteriori informazioni sulle diverse architetture, fare riferimento a [questa sezione](../../installation/using/general-architecture.md).
 
-## Elenco delle porte aperte {#list-of-open-ports}
+## Elenco porte aperte {#list-of-open-ports}
 
 | Numero della porta | Modulo o applicazione Adobe Campaign interessati  | Configurabile |
 |---|---|---|
@@ -55,5 +55,5 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 | 6666/udp (locale) |  Adobe Campaign: Syslogd | SÌ |
 | 8005/tcp (locale) |  Adobe Campaign: modulo web | SÌ |
 | 8080/tcp |  Adobe Campaign: modulo web (tomcat) | SÌ |
-| 7777 | Server delle statistiche (server di stato) | SÌ |
+| 777 | Server delle statistiche (server di stato) | SÌ |
 
