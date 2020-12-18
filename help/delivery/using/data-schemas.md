@@ -23,7 +23,7 @@ Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati
 
 ## Struttura dello schema {#schema-structure}
 
-Il documento XML di uno schema dati deve contenere l&#39;elemento **`<srcschema>`** principale con gli attributi **name** e **namespace** per compilare il nome dello schema e il relativo spazio nomi.
+Il documento XML di uno schema dati deve contenere gli attributi **`<srcschema>`** root con gli attributi **name** e **namespace** per compilare il nome dello schema e il relativo spazio dei nomi.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,9 +39,9 @@ In uno schema di gestione del contenuto, l&#39;elemento principale è rappresent
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-L&#39;attributo **modello** immesso nell&#39;elemento principale consente di estendere lo schema con proprietà generiche a tutte le definizioni di contenuto quali nome, data di creazione, autore, stringa associata, ecc.
+L&#39;attributo **template** immesso nell&#39;elemento principale consente di estendere lo schema con proprietà generiche a tutte le definizioni di contenuto come nome, data di creazione, autore, stringa associata, ecc.
 
-Tali proprietà sono descritte nello schema **ncm:content** .
+Tali proprietà sono descritte nello schema **ncm:content**.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Esempio di uno schema di gestione del contenuto con i tipi compilati:
 
 ## Properties {#properties}
 
-Varie proprietà possono essere utilizzate per arricchire gli **`<element>`** elementi e **`<attribute>`** gli elementi dello schema di dati.
+È possibile utilizzare diverse proprietà per arricchire gli elementi **`<element>`** e **`<attribute>`** dello schema di dati.
 
 Le proprietà principali utilizzate nella gestione dei contenuti sono le seguenti:
 
@@ -110,7 +110,7 @@ Di seguito è riportato lo schema di esempio con le proprietà compilate:
 
 Una raccolta è un elenco di elementi con lo stesso nome e lo stesso livello gerarchico.
 
-Nel nostro esempio, gli **`<chapter>`** elementi e **`<page>`** sono elementi di raccolta. L’attributo **unbound** deve pertanto essere aggiunto alla definizione di questi elementi:
+Nel nostro esempio, gli elementi **`<chapter>`** e **`<page>`** sono elementi della raccolta. L&#39;attributo **unbound** deve pertanto essere aggiunto alla definizione di questi elementi:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -124,13 +124,13 @@ Nel nostro esempio, gli **`<chapter>`** elementi e **`<page>`** sono elementi di
 >
 >La presenza dell&#39;attributo **ordered=&quot;true&quot;** consente di ordinare gli elementi della raccolta inseriti.
 
-## Riferimento elemento {#element-referencing}
+## Elemento che fa riferimento a {#element-referencing}
 
-Il riferimento agli elementi viene utilizzato molto negli schemi di contenuto. Consente di fattorizzare la definizione di un **`<element>`** elemento in modo che possa essere utilizzato come riferimento su altri elementi con la stessa struttura.
+Il riferimento agli elementi viene utilizzato molto negli schemi di contenuto. Consente di fattorizzare la definizione di un elemento **`<element>`** in modo che possa essere utilizzato come riferimento su altri elementi con la stessa struttura.
 
 L&#39;attributo **ref** sull&#39;elemento a cui fare riferimento deve essere completato con il percorso (XPath) dell&#39;elemento di riferimento.
 
-**Esempio**: aggiunta di una sezione **Appendice** con la stessa struttura dell&#39; **`<chapter>`** elemento dello schema di esempio.
+**Esempio**: aggiunta di un&#39; **** appendice con la stessa struttura dell&#39; **`<chapter>`** elemento dello schema di esempio.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -154,9 +154,9 @@ La struttura del capitolo viene spostata nell&#39;elemento con il nome &quot;sez
 
 ## Stringa di calcolo {#compute-string}
 
-Una stringa **** Calcola è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un&#39;istanza di contenuto.
+Una **stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un&#39;istanza di contenuto.
 
-Di seguito è riportato lo schema di esempio con la stringa **** Calcola:
+Di seguito è riportato lo schema di esempio con la relativa **stringa di calcolo**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -177,4 +177,4 @@ Quando lo schema di origine viene salvato, la generazione dello schema esteso vi
 
 >[!NOTE]
 >
->Il controllo di modifica **Nome** consente di immettere la chiave dello schema, costituita dal nome e dallo spazio dei nomi. Gli attributi **name** e **namespace** dell&#39;elemento principale dello schema vengono aggiornati automaticamente nel campo di modifica XML dello schema.
+>Il controllo di modifica **Name** consente di immettere la chiave dello schema, costituita dal nome e dallo spazio dei nomi. Gli attributi **name** e **namespace** dell&#39;elemento principale dello schema vengono aggiornati automaticamente nel campo di modifica XML dello schema.
