@@ -83,7 +83,7 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2. Firma**
+**2. Signature**
 
 La firma della funzione deve includere un argomento per ogni parametro &#39;in&#39; o &#39;inout&#39; della dichiarazione.
 
