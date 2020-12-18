@@ -24,7 +24,7 @@ La sezione seguente illustra le procedure ottimali e consigliate per una configu
 
 Diversi fattori possono influire direttamente sulle prestazioni del server e rallentare la piattaforma:
 
-* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, questo aumenta la quantità di dati necessari per preparare la consegna.  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
+* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, questo aumenta la quantità di dati necessari per preparare la consegna.  Ulteriori informazioni sulla personalizzazione in [questa sezione](../../delivery/using/about-personalization.md)
 
 * Caricamento del server: quando il server di marketing gestisce contemporaneamente diverse attività, può rallentare le prestazioni. Il server di marketing deve coordinare tutti i dati in entrata e in uscita per tutte le consegne, per garantire che i dati siano corretti e puntuali.
 
@@ -32,13 +32,13 @@ Diversi fattori possono influire direttamente sulle prestazioni del server e ral
 
 * Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Seguire le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* In qualità di cliente ospitato, potete sfruttare le funzionalità [del Pannello di controllo](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) campagna per monitorare la vostra piattaforma, utilizzando le funzionalità di monitoraggio [delle](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) prestazioni.
+* In qualità di cliente ospitato, potete sfruttare le funzionalità [del pannello di controllo delle campagne](https://docs.adobe.com/content/help/en/control-panel/using/discover-control-panel/key-features.html) per monitorare la piattaforma, utilizzando le funzionalità [monitoraggio delle prestazioni](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html).
 
 ## Verifica della configurazione di rete {#network-config}
 
 Per ottimizzare la distribuzione quando si gestiscono e-mail in grandi volumi ed evitare errori per uno spammer, assicurarsi di disporre di una configurazione di rete legittima che non tenti di nascondere l&#39;identità del server.
 
-**Suggerimento**:  Utilizza un indirizzo mittente trasparente corrispondente al sito Web del tuo marchio. Ad esempio, la società TravelAgency gestisce la catena alberghiera di Valentino. Possiede il dominio valentino.com per il suo sito web. Per promuovere il Valentino hotel a Parigi, utilizza il sottodominio paris.valentino.com. Pertanto, un indirizzo mittente rilevante può essere hotel@paris.valentino.com.
+**Suggerimento**: Utilizza un indirizzo mittente trasparente corrispondente al sito Web del tuo marchio. Ad esempio, la società TravelAgency gestisce la catena alberghiera di Valentino. Possiede il dominio valentino.com per il suo sito web. Per promuovere il Valentino hotel a Parigi, utilizza il sottodominio paris.valentino.com. Pertanto, un indirizzo mittente rilevante può essere hotel@paris.valentino.com.
 
 ## Gestione del recapito messaggi {#deliverability-management}
 
@@ -48,7 +48,7 @@ Per raggiungere la casella in entrata dei destinatari senza rimbalzare o contras
 
    * Si riferisce ai fattori di un&#39;e-mail che ne determinano la capacità di essere accettata dal server del destinatario. I provider di servizi Internet (Internet Service Provider) escludono i messaggi e-mail che identificano come SPAM o impediscono il download di immagini. Se determinano che un determinato dominio sta inviando troppe e-mail, verrà impostato un limite al numero di e-mail che verranno accettate da quel mittente.
 
-   * Quando controlli la tua e-mail per verificare la recapito, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per informazioni più approfondite sull&#39;argomento, consulta [questa sezione](../../delivery/using/about-deliverability.md).
+   * Quando controlli la tua e-mail per verificare la recapito, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per informazioni più approfondite su questo argomento, consultare [questa sezione](../../delivery/using/about-deliverability.md).
 
 * Applicate le raccomandazioni dettagliate [in questo documento](../../delivery/using/deliverability-key-points.md).
 
@@ -73,8 +73,8 @@ Quando iniziate a inviare e-mail su una nuova piattaforma, potete utilizzare un 
 
 * La gestione delle scorte contribuirà anche a ridurre i costi di invio di SMS escludendo numeri di telefono errati dalle consegne.
 
-## Doppio meccanismo di consenso {#double-opt-in}
+## Doppio meccanismo di opt-in {#double-opt-in}
 
 Per evitare di inviare messaggi a indirizzi non validi, limitare le comunicazioni non corrette e migliorare la reputazione del mittente,  Adobe consiglia di implementare un meccanismo di doppio consenso per la conferma post-iscrizione. Questo aiuta a garantire che il destinatario si sia iscritto intenzionalmente.
 
-I dettagli per l&#39;attuazione di questo meccanismo sono descritti in [questa sezione](../../web/using/use-cases--web-forms.md).
+I dettagli per l&#39;implementazione di questo meccanismo sono descritti in [questa sezione](../../web/using/use-cases--web-forms.md).
