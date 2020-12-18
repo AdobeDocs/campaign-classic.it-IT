@@ -15,9 +15,9 @@ ht-degree: 2%
 ---
 
 
-# Rendering della inbox (IR){#inbox-rendering}
+# Rendering in entrata (IR){#inbox-rendering}
 
-Il flusso di lavoro riportato di seguito viene installato con il modulo di rendering **Inbox (IR)** per impostazione predefinita. For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
+Il flusso di lavoro riportato di seguito viene installato con il modulo **Inbox rendering (IR)** per impostazione predefinita. Per ulteriori informazioni sul rendering della casella in entrata, fare riferimento a questa sezione [](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
