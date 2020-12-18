@@ -23,22 +23,22 @@ In generale, gli operatori che agiscono sui flussi di lavoro devono accedere ai 
 
 Devono inoltre essere mappati sui diritti denominati che coincidono con le azioni eseguite dai flussi di lavoro che avranno effetto (importazione dei destinatari, accesso ai file, fusione, esecuzione di script SQL, ecc.).
 
-Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consulta questa [sezione](../../platform/using/access-management.md).
+Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consultare la sezione [](../../platform/using/access-management.md).
 
 ## Gruppi di operatori {#operator-groups}
 
 I seguenti gruppi di operatori sono associati al flusso di lavoro:
 
-* Il **[!UICONTROL Workflow execution]** gruppo consente di controllare l&#39;esecuzione e l&#39;approvazione dei flussi di lavoro di targeting: il FLUSSO di lavoro denominato right è mappato agli operatori di questo gruppo. È richiesto per tutte le azioni sui flussi di lavoro, oltre ai diritti di accesso ai file di dati. Per impostazione predefinita, il **[!UICONTROL Workflow execution]** gruppo dispone dell&#39;accesso in sola lettura ai file di flusso di lavoro di targeting standard e ai modelli di flusso di lavoro. Gli operatori di questo gruppo dispongono inoltre dell&#39;accesso in lettura e scrittura al file di approvazione in sospeso.
-* Il **[!UICONTROL Workflow supervisors]** gruppo consente agli operatori di gestire le approvazioni dei flussi di lavoro.
-* Il **[!UICONTROL Operation Managers]** gruppo per accedere ai flussi di lavoro delle campagne.
+* Il gruppo **[!UICONTROL Workflow execution]** consente di controllare l&#39;esecuzione e l&#39;approvazione dei flussi di lavoro di targeting: il FLUSSO di lavoro denominato right è mappato agli operatori di questo gruppo. È richiesto per tutte le azioni sui flussi di lavoro, oltre ai diritti di accesso ai file di dati. Per impostazione predefinita, il gruppo **[!UICONTROL Workflow execution]** dispone dell&#39;accesso in sola lettura ai file di flusso di lavoro di targeting standard e ai modelli di flusso di lavoro. Gli operatori di questo gruppo dispongono inoltre dell&#39;accesso in lettura e scrittura al file di approvazione in sospeso.
+* Il gruppo **[!UICONTROL Workflow supervisors]** consente agli operatori di gestire le approvazioni dei flussi di lavoro.
+* Il gruppo **[!UICONTROL Operation Managers]** per accedere ai flussi di lavoro delle campagne.
 
 ## Diritti denominati {#named-rights}
 
-Solo il FLUSSO di lavoro denominato right è specifico dei flussi di lavoro: consente di creare, avviare e interrompere flussi di lavoro. I diritti di lettura nel file del flusso di lavoro sono necessari per l&#39;applicazione del diritto denominato. Per i flussi di lavoro di targeting, è necessaria la lettura corretta del **[!UICONTROL Profiles and Targets]** file.
+Solo il FLUSSO di lavoro denominato right è specifico dei flussi di lavoro: consente di creare, avviare e interrompere flussi di lavoro. I diritti di lettura nel file del flusso di lavoro sono necessari per l&#39;applicazione del diritto denominato. Per i flussi di lavoro di targeting, è necessario leggere il file **[!UICONTROL Profiles and Targets]**.
 
-## Account esecuzione flusso di lavoro {#workflow-execution-account}
+## Account di esecuzione del flusso di lavoro {#workflow-execution-account}
 
 Potete configurare l&#39;account di esecuzione da utilizzare a livello di modello di workflow. L&#39;account di esecuzione consente di mappare direttamente le autorizzazioni al flusso di lavoro, indipendentemente dall&#39;operatore Adobe Campaign  che avvia l&#39;esecuzione. Per impostazione predefinita, ogni flusso di lavoro viene eseguito con i diritti dell&#39;operatore che l&#39;ha avviato.
 
-Per mappare un account di esecuzione a un flusso di lavoro, andate all&#39;elenco dei modelli di workflow e fate clic con il pulsante destro del mouse sul modello collegato al flusso di lavoro. Scegliete **[!UICONTROL Action > Change execution account...]** quindi l’account da utilizzare.
+Per mappare un account di esecuzione a un flusso di lavoro, andate all&#39;elenco dei modelli di workflow e fate clic con il pulsante destro del mouse sul modello collegato al flusso di lavoro. Scegliere **[!UICONTROL Action > Change execution account...]**, quindi selezionare l&#39;account da utilizzare.
