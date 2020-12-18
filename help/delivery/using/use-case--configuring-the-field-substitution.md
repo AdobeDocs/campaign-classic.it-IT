@@ -30,11 +30,11 @@ Il manager della distribuzione ha integrato nella sua e-mail un campo di persona
 Per utilizzare la sostituzione casuale dei campi è necessario disporre di:
 
 * una consegna con uno o più campi di personalizzazione,
-* indirizzi iniziali il cui schema **di** dati viene modificato in base ai campi di personalizzazione utilizzati nella consegna.
+* indirizzi iniziali i cui **schema di dati** vengono modificati in base ai campi di personalizzazione utilizzati nella distribuzione.
 
-## Creating a delivery {#step-1---creating-a-delivery}
+## Creazione di una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti in dettaglio nella sezione [Creazione di una consegna](../../delivery/using/creating-an-email-delivery.md) e-mail.
+I passaggi per la creazione di una consegna sono descritti nella sezione [Creazione di una consegna per e-mail](../../delivery/using/creating-an-email-delivery.md).
 
 In questo esempio, il manager consegna ha creato la newsletter.
 
@@ -53,19 +53,19 @@ In questo esempio, lo schema di dati degli indirizzi iniziali prende un valore c
 
 Questa enumerazione consente all&#39;utente di specificare il genere letterario preferito dei propri client.
 
-Affinché la modifica dello schema di dati possa essere visualizzata negli indirizzi iniziali Modulo **di** input, è necessario aggiornarla. Fare riferimento alla sezione [Aggiornamento del modulo](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) di input.
+Affinché la modifica dello schema di dati possa essere visualizzata negli indirizzi iniziali **Modulo di input**, è necessario aggiornarla. Fare riferimento alla sezione [Aggiornamento del modulo di input](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Configurazione della personalizzazione {#configuring-personalization}
 
 1. Aprite una consegna.
 
-   In questo esempio, la distribuzione ha due campi di personalizzazione: il **nome** del destinatario e il genere letterario **preferito** del destinatario.
+   In questo esempio, la distribuzione ha due campi di personalizzazione: il nome **del destinatario** e il genere letterario preferito **del destinatario**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configura l&#39;elenco di consegna e i tuoi indirizzi iniziali. Fare riferimento a [Identificazione delle popolazioni](../../delivery/using/steps-defining-the-target-population.md)bersaglio.
+1. Configura l&#39;elenco di consegna e i tuoi indirizzi iniziali. Fare riferimento a [Identificazione delle popolazioni di destinazione](../../delivery/using/steps-defining-the-target-population.md).
 
-   In questo esempio, l&#39;utente seleziona gli utenti il cui genere letterario **preferito** è Sci-Fi come popolazione di destinazione principale.
+   In questo esempio, l&#39;utente seleziona gli utenti il cui **genere letterario preferito** è Sci-Fi come popolazione di destinazione principale.
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -75,18 +75,18 @@ Affinché la modifica dello schema di dati possa essere visualizzata negli indir
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul **[!UICONTROL Edit the dynamic condition...]** collegamento, consulta Caso di [utilizzo: selezione degli indirizzi iniziali sui criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Per ulteriori informazioni sul collegamento **[!UICONTROL Edit the dynamic condition...]**, fare riferimento a [Caso di utilizzo: selezione di indirizzi iniziali su criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
-1. Fate clic sulla **[!UICONTROL Preview]** scheda, quindi selezionate un indirizzo e-mail per verificare la personalizzazione.
+1. Fate clic sulla scheda **[!UICONTROL Preview]**, quindi selezionate un indirizzo e-mail per verificare la personalizzazione.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
    Uno dei campi di personalizzazione è vuoto. Poiché l&#39;indirizzo seed non contiene dati per questo campo, l&#39;anteprima del contenuto HTML non può visualizzare un valore.
 
-   La sostituzione casuale dei campi viene effettuata **al momento della consegna**.
+   La sostituzione casuale dei campi viene eseguita **al momento della consegna**.
 
 1. Fai clic sul pulsante **[!UICONTROL Send]**.
-1. Analizzare la consegna e **confermare la consegna**.
+1. Analizzare la consegna, quindi **confermare la consegna**.
 
    Gli indirizzi iniziali ricevono la consegna nella loro casella in entrata.
 
