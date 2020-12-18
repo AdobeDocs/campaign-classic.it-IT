@@ -27,11 +27,11 @@ Combinando il documento XML con i fogli di stile XSL o JavaScript Template si ge
 
 Per la configurazione del contenuto sono necessarie le seguenti risorse:
 
-* Schemi di dati: descrizione della struttura del contenuto XML. For more on this, refer to [Data schemas](../../delivery/using/data-schemas.md).
-* Moduli di immissione dati: costruzione di schermate di immissione dati. For more on this, refer to [Input forms](../../delivery/using/input-forms.md).
-* Immagini: immagini utilizzate nei moduli di immissione dati. For more on this, refer to [Image management](../../delivery/using/formatting.md#image-management).
-* Fogli di stile: formattazione di documenti di output utilizzando il linguaggio XSLT. For more on this, refer to [Formatting](../../delivery/using/formatting.md).
-* Modelli JavaScript: formattazione di documenti di output utilizzando il linguaggio JavaScript. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* Codici JavaScript: Codici JavaScript per l&#39;aggregazione dei dati. For more on this, refer to [Aggregator](../../delivery/using/publication-templates.md#aggregator).
-* Modelli di pubblicazione: definizione di modelli di pubblicazione. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* Contenuto: le istanze di contenuto da creare e pubblicare. Per ulteriori informazioni, consultate [Utilizzo di un modello](../../delivery/using/using-a-content-template.md)di contenuto.
+* Schemi di dati: descrizione della struttura del contenuto XML. Per ulteriori informazioni, vedere [Schemi di dati](../../delivery/using/data-schemas.md).
+* Moduli di immissione dati: costruzione di schermate di immissione dati. Per ulteriori informazioni, fare riferimento a [Moduli di input](../../delivery/using/input-forms.md).
+* Immagini: immagini utilizzate nei moduli di immissione dati. Per ulteriori informazioni, vedere [Gestione delle immagini](../../delivery/using/formatting.md#image-management).
+* Fogli di stile: formattazione di documenti di output utilizzando il linguaggio XSLT. Per ulteriori informazioni, vedere [Formattazione](../../delivery/using/formatting.md).
+* Modelli JavaScript: formattazione di documenti di output utilizzando il linguaggio JavaScript. Per ulteriori informazioni, consultare [Modelli di pubblicazione](../../delivery/using/publication-templates.md).
+* Codici JavaScript: Codici JavaScript per l&#39;aggregazione dei dati. Per ulteriori informazioni, vedere [Aggregator](../../delivery/using/publication-templates.md#aggregator).
+* Modelli di pubblicazione: definizione di modelli di pubblicazione. Per ulteriori informazioni, consultare [Modelli di pubblicazione](../../delivery/using/publication-templates.md).
+* Contenuto: le istanze di contenuto da creare e pubblicare. Per ulteriori informazioni, vedere [Utilizzo di un modello di contenuto](../../delivery/using/using-a-content-template.md).
