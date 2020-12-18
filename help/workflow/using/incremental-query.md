@@ -30,22 +30,22 @@ La query è definita come per le query standard, ma la sua esecuzione è pianifi
 
 >[!CAUTION]
 >
->Se il risultato di una query incrementale è pari a **0** durante una delle sue esecuzioni, il flusso di lavoro viene messo in pausa fino alla successiva esecuzione programmata della query. Le transizioni e le attività che seguono la query incrementale non vengono pertanto elaborate prima dell&#39;esecuzione seguente.
+>Se il risultato di una query incrementale è uguale a **0** durante una delle sue esecuzioni, il flusso di lavoro viene messo in pausa fino alla successiva esecuzione programmata della query. Le transizioni e le attività che seguono la query incrementale non vengono pertanto elaborate prima dell&#39;esecuzione seguente.
 
 Per eseguire questa operazione:
 
-1. In the **[!UICONTROL Scheduling & History]** tab, select the **[!UICONTROL Schedule execution]** option. L&#39;attività rimane attiva una volta creata e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l&#39;opzione è disabilitata, la query viene eseguita immediatamente **e in una sola volta**.
+1. Nella scheda **[!UICONTROL Scheduling & History]**, selezionare l&#39;opzione **[!UICONTROL Schedule execution]**. L&#39;attività rimane attiva una volta creata e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l&#39;opzione è disabilitata, la query viene eseguita immediatamente **e in una sola volta**.
 1. Fai clic sul pulsante **[!UICONTROL Change]**.
 
-   Nella **[!UICONTROL Schedule editing wizard]** finestra potete configurare il tipo di frequenza, ricorrenza evento e periodo di validità dell’evento.
+   Nella finestra **[!UICONTROL Schedule editing wizard]** potete configurare il tipo di frequenza, la ricorrenza dell&#39;evento e il periodo di validità dell&#39;evento.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Click **[!UICONTROL Finish]** to save the schedule.
+1. Fare clic su **[!UICONTROL Finish]** per salvare la pianificazione.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. La sezione inferiore della **[!UICONTROL Scheduling & History]** scheda consente di selezionare il numero di giorni di cui tenere conto nella cronologia.
+1. La sezione inferiore della scheda **[!UICONTROL Scheduling & History]** consente di selezionare il numero di giorni di cui tenere conto nella cronologia.
 
    ![](assets/edit_request_inc.png)
 
@@ -67,4 +67,4 @@ Per eseguire questa operazione:
 * schema
 * recCount
 
-Questo insieme di tre valori identifica la popolazione oggetto della query. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica la popolazione oggetto della query. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
