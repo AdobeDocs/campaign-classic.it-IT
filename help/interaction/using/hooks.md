@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Hook{#hooks}
 
-I blocchi in Interazione consentono di modificare il comportamento **** standard del motore.
+Gli hooks in Interaction consentono di modificare il comportamento **standard del motore**.
 
-I **[!UICONTROL Target loading]** ganci e **[!UICONTROL Proposition post-processing]** i ganci sono configurati, in  Adobe Campaign, nello spazio delle offerte:
+Gli **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** ganci sono configurati, in  Adobe Campaign, nello spazio delle offerte:
 
 ![](assets/interaction_hooks_1.png)
 
-Il **[!UICONTROL Dynamic offer]** gancio è configurato con il peso dell&#39;offerta in  Adobe Campaign:
+Il gancio **[!UICONTROL Dynamic offer]** è configurato con il peso dell&#39;offerta in  Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 Questo gancio consente di effettuare una chiamata a un motore esterno per selezionare un elenco di prodotti collegati a un&#39;offerta. È configurato nell&#39;offerta dopo le regole di idoneità e prima dell&#39;applicazione delle regole di tipologia.
 
-In precedenza, l&#39;integratore dovrebbe estendere lo schema **PropositionRcp** con le informazioni aggiuntive sul prodotto. Per specificare dove memorizzare i dati, è disponibile un **[!UICONTROL Proposition being processed]** collegamento nella **[!UICONTROL Storage]** scheda dello spazio
+In precedenza, l&#39;integratore dovrebbe estendere lo schema delle proposizioni **PropositionRcp** con le informazioni aggiuntive sul prodotto. Per specificare dove memorizzare i dati, nella scheda **[!UICONTROL Storage]** dello spazio è disponibile un collegamento **[!UICONTROL Proposition being processed]**
 
 ![](assets/interaction_hooks_3.png)
 
