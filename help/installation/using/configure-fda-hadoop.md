@@ -19,8 +19,8 @@ ht-degree: 0%
 
 Utilizzate l&#39;opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso ad Hadoop.
 
-1. Configurare il database [Hadoop](#configuring-hadoop)
-1. Configurare l&#39;account [](#hadoop-external) esterno Hadoop in Campaign
+1. Configurare [database Hadoop](#configuring-hadoop)
+1. Configurare l&#39;account Hadoop [esterno](#hadoop-external) in Campaign
 
 ## Configurazione di Hadoop 3.0 {#configuring-hadoop}
 
@@ -37,19 +37,19 @@ La connessione a un database esterno Hadoop in FDA richiede le seguenti configur
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic, potete quindi configurare il vostro account [!DNL Hadoop] esterno. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consulta [questa sezione](#hadoop-external).
+1. In Campaign Classic, puoi quindi configurare il tuo account esterno [!DNL Hadoop]. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consultare [questa sezione](#hadoop-external).
 
 ## Account esterno hadoop {#hadoop-external}
 
-L&#39;account [!DNL Hadoop] esterno consente di collegare l&#39;istanza Campaign al database esterno di Hadoop.
+L&#39;account esterno [!DNL Hadoop] consente di collegare l&#39;istanza Campaign al database esterno di Hadoop.
 
-1. In Campaign Classic, configura il tuo account [!DNL Hadoop] esterno. From the **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, configura il tuo account esterno [!DNL Hadoop]. In **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Selezionate **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
+1. Selezionare **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
 
-1. Configurate l&#39;account **[!UICONTROL Hadoop]** esterno, dovete specificare:
+1. Configurate l&#39;account esterno **[!UICONTROL Hadoop]**, dovete specificare:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -70,7 +70,7 @@ Il connettore supporta le seguenti opzioni ODBC:
 | Nome | Valore |
 |---|---|
 | ODBCMgr | iODBC |
-| warehouse | 1/2/4 |
+| warehouse | 02/01/14 |
 
 Il connettore supporta anche le seguenti opzioni Hive:
 
@@ -84,11 +84,11 @@ Il connettore supporta anche le seguenti opzioni Hive:
 
 ## Configurazione di Hadoop 2.1 {#configure-access-hadoop-2}
 
-Se dovete connettervi ad Hadoop 2.1, seguite i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
+Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
 
 ### Hadoop 2.1 per Windows {#for-windows}
 
-1. Installare i driver ODBC e [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) per Windows.
+1. Installare driver ODBC e [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) per Windows.
 1. Creare il DSN (Nome origine dati) eseguendo lo strumento Amministratore origine dati ODBC. È disponibile un esempio DSN di sistema per Hive da modificare.
 
    ```
@@ -100,7 +100,7 @@ Se dovete connettervi ad Hadoop 2.1, seguite i passaggi descritti di seguito per
    User/Password: admin/<your password here>
    ```
 
-1. Create l&#39;account esterno Hadoop, come illustrato in [questa sezione](#hadoop-external).
+1. Create l&#39;account esterno Hadoop, come descritto in [questa sezione](#hadoop-external).
 
 ### Hadoop 2.1 per Linux {#for-linux}
 
@@ -155,7 +155,7 @@ Se dovete connettervi ad Hadoop 2.1, seguite i passaggi descritti di seguito per
    >
    >Il parametro **UseNativeQuery** è molto importante. Campaign è consapevole dell&#39;Hive e non funzionerà correttamente se non viene impostato UseNativeQuery. In genere, il driver o il connettore Hive SQL riscrive le query e altera l&#39;ordine delle colonne.
 
-   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizzate AuthMech=6 per l’autenticazione utente/password, come descritto [qui](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizzare AuthMech=6 per l&#39;autenticazione utente/password, come descritto [here](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Esportare le variabili.
 
@@ -187,5 +187,5 @@ Se dovete connettervi ad Hadoop 2.1, seguite i passaggi descritti di seguito per
    isql vorac -v
    ```
 
-1. Create l&#39;account esterno Hadoop, come illustrato in [questa sezione](#hadoop-external).
+1. Create l&#39;account esterno Hadoop, come descritto in [questa sezione](#hadoop-external).
 
