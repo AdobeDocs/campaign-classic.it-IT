@@ -21,15 +21,15 @@ Per creare un rapporto di analisi descrittivo, utilizzate la procedura guidata d
 
 ## Analisi dei dati nel database {#analyzing-data-in-the-database}
 
-La procedura guidata di analisi descrittiva può essere avviata dal **[!UICONTROL Tools > Descriptive analysis]** menu: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:Recipients**). Si applica a tutti i dati presenti nel database Adobe Campaign .
+La procedura guidata di analisi descrittiva può essere avviata dal menu **[!UICONTROL Tools > Descriptive analysis]**: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:Recipients**). Si applica a tutti i dati presenti nel database Adobe Campaign .
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Per analizzare una tabella diversa dai destinatari standard uno (**nms:destinatario**), fai clic sul **[!UICONTROL Advanced settings...]** collegamento nell’ultima fase della procedura guidata e seleziona la tabella che corrisponde alle impostazioni, in questo caso **focus:single**:
+Per analizzare una tabella diversa dai destinatari standard uno (**nms:destinatario**), fare clic sul collegamento **[!UICONTROL Advanced settings...]** nell&#39;ultima fase della procedura guidata e selezionare la tabella che corrisponde alle impostazioni, in questo caso **cus:single**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
-Se si desidera generare statistiche su parte dei dati, è possibile definire un filtro: a questo scopo, fate clic sul **[!UICONTROL Advanced settings...]** collegamento e definite il filtro da applicare, come illustrato di seguito:
+Se si desidera generare statistiche su parte dei dati, è possibile definire un filtro: a tal fine, fate clic sul collegamento **[!UICONTROL Advanced settings...]** e definite il filtro da applicare, come illustrato di seguito:
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
@@ -45,25 +45,25 @@ Aprite la procedura guidata di analisi descrittiva selezionando gli elementi e f
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* Per un set di **destinatari**, selezionate i destinatari da analizzare, quindi fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Actions > Explore...]**, come mostrato sopra. Se un filtro viene applicato all’elenco dei destinatari, verrà analizzato solo il relativo contenuto.
+* Per un set di **destinatari**, selezionare i destinatari da analizzare, quindi fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Actions > Explore...]**, come illustrato sopra. Se un filtro viene applicato all’elenco dei destinatari, verrà analizzato solo il relativo contenuto.
 
    Per selezionare tutti i destinatari nella cartella o nel filtro corrente, utilizzare la scelta rapida CTRL+A. Ciò significa che anche i destinatari non visualizzati verranno selezionati.
 
-   Per un esempio di analisi descrittiva dei destinatari, fare riferimento a: [Analisi](../../reporting/using/use-cases.md#qualitative-data-analysis)qualitativa dei dati.
+   Per un esempio di analisi descrittiva dei destinatari, fare riferimento a: [Analisi qualitativa dei dati](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* Nel contesto di un **flusso di lavoro**, posizionate il cursore su una transizione verso la tabella dei destinatari, fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Analyze target]**. Per ulteriori informazioni, consulta l’esempio in [Analisi di una destinazione di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
-* Per **gli elenchi**, selezionare uno o più elenchi e applicare lo stesso processo utilizzato per i destinatari.
-* Nel contesto di una **consegna**, selezionate le consegne di cui desiderate analizzare il target, fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Actions > Explore the target]**, come illustrato di seguito:
+* Nel contesto di un **flusso di lavoro**, posizionare il cursore su una transizione che punti verso la tabella dei destinatari, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Analyze target]**. Per ulteriori informazioni, fare riferimento all&#39;esempio in [Analisi di una destinazione di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* Per **elenchi**, selezionare uno o più elenchi e applicare lo stesso processo utilizzato per i destinatari.
+* Nel contesto di una **consegna**, selezionare le consegne di cui si desidera analizzare la destinazione, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Actions > Explore the target]**, come illustrato di seguito:
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Esempi di analisi descrittive per le consegne sono forniti qui: [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) ed effettuate le seguenti operazioni: [Analisi dei registri](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)di tracciamento dei destinatari.
+   Esempi di analisi descrittive per le consegne sono forniti qui: [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) e qui: [Analisi dei registri di monitoraggio dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Configurazione del modello di distribuzione qualitativa {#configuring-the-qualitative-distribution-template}
 
-Il **[!UICONTROL Qualitative distribution]** modello consente di creare statistiche su tutti i tipi di dati (ad esempio nome società, dominio e-mail).
+Il modello **[!UICONTROL Qualitative distribution]** consente di creare statistiche su tutti i tipi di dati (ad esempio nome società, dominio e-mail).
 
-Le opzioni di configurazione disponibili per un rapporto creato tramite il **[!UICONTROL Qualitative distribution]** modello sono descritte in [Visualizzazione dei dati nella tabella](#displaying-data-in-the-table). Un esempio completo è illustrato in [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population).
+Le opzioni di configurazione disponibili per un report creato tramite il modello **[!UICONTROL Qualitative distribution]** sono descritte in [Visualizzazione dei dati nella tabella](#displaying-data-in-the-table). Un esempio completo è illustrato in [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Quando si utilizza la procedura guidata di analisi descrittiva per analizzare i dati, le opzioni disponibili dipendono dalle impostazioni selezionate. Questi sono descritti di seguito.
 
@@ -75,7 +75,7 @@ Quando si selezionano le variabili da visualizzare, è possibile definire il bin
 
 >[!NOTE]
 >
->Quando il campo interessato dal calcolo viene calcolato utilizzando un aggregato, verificare **[!UICONTROL The data is already aggregated]** di migliorare le prestazioni.
+>Quando il campo interessato dal calcolo viene calcolato utilizzando un aggregato, controllare **[!UICONTROL The data is already aggregated]** per migliorare le prestazioni.
 
 Le opzioni variano a seconda del contenuto del campo:
 
@@ -86,9 +86,9 @@ Le opzioni variano a seconda del contenuto del campo:
    >Questa opzione deve essere utilizzata con attenzione: può avere un impatto importante sul report e sulle prestazioni della macchina.
 
 * **[!UICONTROL Auto]** : questa opzione consente di visualizzare gli n valori rappresentati più di frequente. Vengono calcolati automaticamente e ciascuna rappresenta una percentuale delle variabili rispetto al numero di raccoglitori. Per i valori numerici,  Adobe Campaign genera automaticamente n classi in cui ordinare i dati.
-* **[!UICONTROL Manual]** : questa opzione funziona come l’ **[!UICONTROL Auto]** opzione, ma potete impostare manualmente questi valori. A tale scopo, fare clic sul **[!UICONTROL Add]** pulsante a destra della tabella dei valori.
+* **[!UICONTROL Manual]** : questa opzione funziona come l’ **[!UICONTROL Auto]** opzione, ma potete impostare manualmente questi valori. A tale scopo, fare clic sul pulsante **[!UICONTROL Add]** a destra della tabella dei valori.
 
-   I valori possono essere inizializzati automaticamente da  Adobe Campaign prima della personalizzazione: a tal fine, immettete il numero di contenitori da generare e fate clic sul **[!UICONTROL Initialize with]** collegamento, come illustrato di seguito:
+   I valori possono essere inizializzati automaticamente da  Adobe Campaign prima della personalizzazione: a tal fine, immettete il numero di contenitori da generare e fate clic sul collegamento **[!UICONTROL Initialize with]**, come illustrato di seguito:
 
    ![](assets/reporting_descriptive_initialize.png)
 
@@ -116,7 +116,7 @@ Utilizzare la barra degli strumenti per personalizzare la visualizzazione delle 
 
 La sezione superiore della finestra consente di selezionare le impostazioni di visualizzazione.
 
-È possibile visualizzare o nascondere il nome delle statistiche e i totali parziali e scegliere l&#39;orientamento delle statistiche. Per ulteriori informazioni, consulta Impostazioni [di visualizzazione dei rapporti di](../../reporting/using/processing-a-report.md#analysis-report-display-settings)analisi.
+È possibile visualizzare o nascondere il nome delle statistiche e i totali parziali e scegliere l&#39;orientamento delle statistiche. Per ulteriori informazioni, fare riferimento a [Impostazioni di visualizzazione dei report di analisi](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
 ### Visualizzazione dei dati nel grafico {#displaying-data-in-the-chart}
 
@@ -130,9 +130,9 @@ Selezionare quindi il tipo di grafico desiderato.
 
 >[!NOTE]
 >
->È possibile visualizzare le variabili contemporaneamente in un grafico e una tabella. A questo scopo, immettete le variabili nella **[!UICONTROL Table configuration]** finestra. Fare clic **[!UICONTROL Next]** e selezionare il tipo di grafico nella finestra di configurazione del grafico. Se le dimensioni secondarie sono definite nella tabella, non vengono visualizzate nel grafico.
+>È possibile visualizzare le variabili contemporaneamente in un grafico e una tabella. A questo scopo, immettete le variabili nella finestra **[!UICONTROL Table configuration]**. Fare clic su **[!UICONTROL Next]** e selezionare il tipo di grafico nella finestra di configurazione del grafico. Se le dimensioni secondarie sono definite nella tabella, non vengono visualizzate nel grafico.
 
-Fare clic sul **[!UICONTROL Variants]** collegamento per modificare le proprietà del grafico.
+Fare clic sul collegamento **[!UICONTROL Variants]** per modificare le proprietà del grafico.
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
@@ -142,7 +142,7 @@ Le opzioni disponibili dipendono dal tipo di grafico selezionato. Per ulteriori 
 
 La procedura guidata di analisi descrittiva consente di calcolare diversi tipi di statistiche sui dati. Per impostazione predefinita, è configurato un solo conteggio semplice.
 
-Click **[!UICONTROL Add]** to create a new statistic.
+Fate clic su **[!UICONTROL Add]** per creare una nuova statistica.
 
 ![](assets/reporting_descriptive_create_stat.png)
 
@@ -160,7 +160,7 @@ Sono possibili le seguenti operazioni:
 
    ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Calculated field]** per creare un operatore personalizzato (disponibile solo per le tabelle). Il **[!UICONTROL User function]** campo consente di inserire il calcolo da applicare ai dati.
+* **[!UICONTROL Calculated field]** per creare un operatore personalizzato (disponibile solo per le tabelle). Il campo **[!UICONTROL User function]** consente di inserire il calcolo da applicare ai dati.
 
    Esempio: Calcolo dell&#39;importo medio dell&#39;acquisto per cliente in base al paese e all&#39;origine
 
@@ -174,15 +174,15 @@ Sono possibili le seguenti operazioni:
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Questa statistica non verrà visualizzata nella tabella. È necessario deselezionare l&#39; **[!UICONTROL Display in the table]** opzione della **[!UICONTROL Advanced]** scheda.
+   1. Questa statistica non verrà visualizzata nella tabella. È necessario deselezionare l&#39;opzione **[!UICONTROL Display in the table]** della scheda **[!UICONTROL Advanced]**.
 
       ![](assets/report_compute_data_sample3.png)
 
-   1. Create una nuova statistica di **[!UICONTROL Calculated field]** tipo e immettete la seguente formula nel **[!UICONTROL User function]** campo: **@purchase/@count**.
+   1. Create una nuova statistica di tipo **[!UICONTROL Calculated field]** e inserite la seguente formula nel campo **[!UICONTROL User function]**: **@purchase/@count**.
 
       ![](assets/report_compute_data_sample4.png)
 
-### Visualizzazione del rapporto {#displaying-the-report}
+### Visualizzazione del report {#displaying-the-report}
 
 L&#39;ultimo passaggio della procedura guidata consente di visualizzare il rapporto, ovvero la tabella o il grafico così come sono stati configurati.
 
@@ -200,11 +200,11 @@ Quando il rapporto include un grafico, le etichette della legenda consentono di 
 
 ## Configurazione del modello di distribuzione quantitativa {#configuring-the-quantitative-distribution-template}
 
-Per generare un’analisi descrittiva, selezionate l’opzione **Nuova analisi descrittiva da un modello** , se non è impostata per impostazione predefinita.
+Per generare un&#39;analisi descrittiva, selezionate l&#39;opzione **Nuova analisi descrittiva da un modello** se non è impostata per impostazione predefinita.
 
 Modello **[!UICONTROL Quantitative distribution]** che consente di generare statistiche sui dati misurabili o conteggiabili (ad esempio, importo fattura, età dei destinatari).
 
-La modalità di configurazione di un report di analisi creato tramite il **[!UICONTROL Quantitative distribution]** modello è dettagliata in un esempio di implementazione, l&#39;analisi [dei dati](../../reporting/using/use-cases.md#quantitative-data-analysis)quantitativi.
+La modalità di configurazione di un report di analisi creato tramite il modello **[!UICONTROL Quantitative distribution]** è descritta in un esempio di implementazione [Analisi quantitativa dei dati](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
 Le opzioni disponibili quando si utilizza la procedura guidata di analisi descrittiva per creare un rapporto quantitativo sono descritte di seguito.
 
@@ -226,7 +226,7 @@ Sono possibili le seguenti operazioni:
 * **[!UICONTROL Decile distribution]** distribuire i valori restituiti in modo che ciascuno rappresenti 1/10 dei valori in un campo numerico.
 * **[!UICONTROL Custom distribution]** per distribuire i valori restituiti in base alle soglie definite dall&#39;utente.
 
-   Il **[!UICONTROL Detail...]** pulsante consente di modificare una statistica e, se necessario, personalizzarne il calcolo o la visualizzazione:
+   Il pulsante **[!UICONTROL Detail...]** consente di modificare una statistica e, se necessario, personalizzarne il calcolo o la visualizzazione:
 
    ![](assets/s_ncs_user_report_wizard_030.png)
 
