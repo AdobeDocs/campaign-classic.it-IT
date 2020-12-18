@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # Livello di servizio del Centro messaggi{#message-center-service-level}
 
-Questo rapporto mostra le statistiche di consegna relative ai messaggi transazionali e la suddivisione degli errori. È possibile fare clic su un tipo di errore per visualizzarne i dettagli. Questo rapporto, rivolto agli amministratori tecnici, è accessibile anche attraverso l&#39; **[!UICONTROL Monitoring]** universo nell&#39;istanza di controllo.
+Questo rapporto mostra le statistiche di consegna relative ai messaggi transazionali e la suddivisione degli errori. È possibile fare clic su un tipo di errore per visualizzarne i dettagli. Questo rapporto, rivolto agli amministratori tecnici, è accessibile anche attraverso l&#39;universo **[!UICONTROL Monitoring]** nell&#39;istanza di controllo.
 
 ![](assets/mc_reports_1.png)
 
-In questo rapporto potete scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. È inoltre possibile filtrare i dati per canale e per un periodo specifico. Gli indicatori visualizzati nella **[!UICONTROL Indicators over the period]** sezione sono calcolati nel periodo selezionato:
+In questo rapporto potete scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. È inoltre possibile filtrare i dati per canale e per un periodo specifico. Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the period]** sono calcolati nel periodo selezionato:
 
 * **[!UICONTROL Incoming (throughput event/h)]** : numero medio orario di eventi immessi nella coda Centro messaggi.
 * **[!UICONTROL Incoming (event vol)]** : numero di eventi immessi nella coda Centro messaggi.
@@ -32,5 +32,5 @@ In questo rapporto potete scegliere di visualizzare le statistiche generali o qu
 
 >[!NOTE]
 >
->Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione. Fare riferimento alle soglie [di](../../message-center/using/monitoring-thresholds.md)monitoraggio.
+>Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione. Fare riferimento a [Soglie di monitoraggio](../../message-center/using/monitoring-thresholds.md).
 
