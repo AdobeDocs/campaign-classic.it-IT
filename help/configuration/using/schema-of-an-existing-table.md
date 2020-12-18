@@ -31,8 +31,8 @@ Quando l&#39;applicazione deve accedere ai dati di una tabella esistente, di una
 
 Per creare lo schema corrispondente, procedere come segue:
 
-1. Modificate il **[!UICONTROL Administration>Configuration>Data schemas]** nodo della struttura di Adobe Campaign  e fate clic su **[!UICONTROL New]** .
-1. Select the **[!UICONTROL Access data from an existing table or an SQL view]** option and click **[!UICONTROL Next]** .
+1. Modificate il nodo **[!UICONTROL Administration>Configuration>Data schemas]** della struttura  di Adobe Campaign e fate clic su **[!UICONTROL New]** .
+1. Selezionare l&#39;opzione **[!UICONTROL Access data from an existing table or an SQL view]** e fare clic su **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -44,7 +44,7 @@ Per creare lo schema corrispondente, procedere come segue:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Lo schema deve essere compilato con l&#39;attributo view=&quot;true&quot; sull&#39;elemento `<srcSchema>` principale per non generare uno script SQL per la creazione di tabelle.
+   Lo schema deve essere popolato con l&#39;attributo view=&quot;true&quot; sull&#39;elemento radice `<srcSchema>` per non generare uno script SQL per la creazione di tabelle.
 
 **Esempio** :
 
