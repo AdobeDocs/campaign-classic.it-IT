@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Filtri di sistema {#system-filters}
 
-È possibile filtrare l&#39;accesso allo schema per utenti specifici, a seconda delle relative autorizzazioni. I filtri di sistema consentono di gestire le autorizzazioni di lettura e scrittura delle entità dettagliate negli schemi, utilizzando i parametri **readAccess** e **writeAccess** .
+È possibile filtrare l&#39;accesso allo schema per utenti specifici, a seconda delle relative autorizzazioni. I filtri di sistema consentono di gestire le autorizzazioni di lettura e scrittura delle entità dettagliate negli schemi, utilizzando i parametri **readAccess** e **writeAccess**.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ ht-degree: 1%
 
 * **readAccess**: consente l&#39;accesso in sola lettura ai dati dello schema.
 
-   **Avvertenza** - Tutte le tabelle collegate devono essere impostate con la stessa limitazione. Questa configurazione può influire sulle prestazioni.
+   **Avvertenza** : tutte le tabelle collegate devono essere impostate con la stessa limitazione. Questa configurazione può influire sulle prestazioni.
 
 * **writeAccess**: fornisce l&#39;accesso in scrittura ai dati dello schema.
 
-Questi filtri vengono inseriti a livello di **elemento** principale degli schemi e, come illustrato negli esempi seguenti, possono essere formati per limitare l&#39;accesso.
+Questi filtri vengono inseriti al livello principale **dell&#39;elemento** degli schemi e, come mostrato negli esempi seguenti, possono essere formati per limitare l&#39;accesso.
 
 * Limita autorizzazioni di scrittura
 
@@ -45,7 +45,7 @@ Questi filtri vengono inseriti a livello di **elemento** principale degli schemi
 
 * Limitare le autorizzazioni di lettura e scrittura:
 
-   In questo caso, il filtro viene utilizzato per bloccare le autorizzazioni LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo l&#39;account **interno** , rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone di tali autorizzazioni.
+   In questo caso, il filtro viene utilizzato per bloccare le autorizzazioni LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo l&#39;account **internal**, rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone di tali autorizzazioni.
 
    ```
    <sysFilter name="readAccess"> 
@@ -100,7 +100,7 @@ Per impostazione predefinita, gli schemi predefiniti sono accessibili solo con a
 
 >[!IMPORTANT]
 >
->Le autorizzazioni LETTURA e SCRITTURA per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza Adobe Campaign .
+>Le autorizzazioni LETTURA e SCRITTURA per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza  Adobe Campaign.
 
 ## Modifica dei filtri di sistema degli schemi incorporati {#modifying-system-filters-of-built-in-schemas}
 
@@ -112,5 +112,5 @@ Per impostazione predefinita, gli schemi predefiniti sono accessibili solo con a
 
 1. Create un&#39;estensione per lo schema interessato o aprite un&#39;estensione esistente.
 1. Aggiungete un elemento secondario **`<sysfilter name="<filter name>" _operation="delete"/>`** nell&#39;elemento principale per eliminare l&#39;applicazione del filtro sotto lo stesso nello schema di origine.
-1. Se lo desiderate, potete aggiungere un nuovo filtro, come descritto in Filtri [di](#system-filters)sistema.
+1. Se lo desiderate, potete aggiungere un nuovo filtro, come descritto in [Filtri di sistema](#system-filters).
 
