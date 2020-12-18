@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Start ed End{#start-and-end}
 
-Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** consentono di contrassegnare graficamente l’inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
+Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** consentono di contrassegnare graficamente l&#39;inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
 
 * **[!UICONTROL Start]**
 
@@ -27,7 +27,7 @@ Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** consentono di contras
 
 * **[!UICONTROL End]**
 
-   Potete configurare l&#39; **[!UICONTROL End]** attività per interrompere tutte le attività in corso. A questo scopo, fate doppio clic sull&#39;attività per visualizzarne le proprietà, quindi selezionate l&#39;opzione appropriata.
+   È possibile configurare l&#39;attività **[!UICONTROL End]** per interrompere tutte le attività in corso. A questo scopo, fate doppio clic sull&#39;attività per visualizzarne le proprietà, quindi selezionate l&#39;opzione appropriata.
 
    ![](assets/s_user_segmentation_end.png)
 
