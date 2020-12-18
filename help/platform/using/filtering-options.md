@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Opzioni di filtro{#filtering-options}
 
-## Informazioni sui filtri {#about-filtering}
+## Informazioni sul filtro {#about-filtering}
 
 Per impostazione predefinita,  Adobe Campaign visualizza tutti i dati nel database per i quali l&#39;operatore interessato dispone di diritti di lettura.
 
@@ -27,14 +27,14 @@ Questi dati possono essere filtrati tramite le opzioni presenti nella sezione su
 
 Esistono diversi modi per filtrare i dati da visualizzare. Se necessario, possono essere utilizzati insieme:
 
-* Filtrare le cartelle, fare riferimento a [Filtra per cartella](#filter-by-folder),
-* Filtrare per stato, fare riferimento a [Filtra per stato](#filter-by-status),
-* Ordinamento dei dati, fare riferimento a [Ordine per](#order-by),
-* Consultate Ricerca [rapida](#quick-search).
+* Filtrare le cartelle, fare riferimento a [Filtrare per cartella](#filter-by-folder),
+* Filtrare per stato, fare riferimento a [Filtrare per stato](#filter-by-status),
+* Ordinamento dei dati, fare riferimento a [Order by](#order-by),
+* Cerca, fare riferimento a [Ricerca rapida](#quick-search).
 
 ## Filtrare per cartella {#filter-by-folder}
 
-Fate clic sull’ **[!UICONTROL Folder]** icona per selezionare la cartella contenente i dati da visualizzare.
+Fate clic sull&#39;icona **[!UICONTROL Folder]** per selezionare la cartella contenente i dati da visualizzare.
 
 ![](assets/filter_web_select_folder.png)
 
