@@ -27,7 +27,7 @@ Questo esempio aiuterà a comprendere la differenza tra una persona/una persona 
 
 >[!NOTE]
 >
->Questi indicatori sono utilizzati nella **[!UICONTROL Tracking indicators]** relazione. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Questi indicatori sono utilizzati nel report **[!UICONTROL Tracking indicators]**. Per ulteriori informazioni, fare riferimento a [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 A una consegna vengono aggiunti tre collegamenti. Viene inviato a 4 destinatari:
 
@@ -77,7 +77,7 @@ L&#39;apertura è assegnata a un destinatario: Marie.  Adobe Campaign aggiunge q
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Totale intermedio | 0 | 0 | 1 |
+| Totale intermedio | 0 | 0 | 3 |
 
 ## Passaggio 3: Florian {#step-3--florian}
 
@@ -100,7 +100,7 @@ Persone: Poiché il browser del destinatario accetta i cookie, è possibile vede
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Totale intermedio | 1 | 1 | 2 |
+| Totale intermedio | 3 | 1 | 2 |
 
 I registri seguenti coincidono con gli open e due clic effettuati dalla persona a cui Florian ha inviato l&#39;e-mail a:
 
@@ -110,7 +110,7 @@ I registri seguenti coincidono con gli open e due clic effettuati dalla persona 
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Persone**: per quanto riguarda i clic, lo stesso identificatore (UUID) è assegnato a tutti i registri: **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Una nuova persona viene quindi aggiunta al conteggio.
+**Persone**: per quanto riguarda i clic, lo stesso identificatore (UUID) è assegnato a tutti i registri:  **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Una nuova persona viene quindi aggiunta al conteggio.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -122,7 +122,7 @@ I registri seguenti coincidono con gli open e due clic effettuati dalla persona 
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Persona sconosciuta | - | +1 | - |
-| Totale intermedio | 1 | 2 | 2 |
+| Totale intermedio | 3 | 2 | 2 |
 
 ## Passaggio 4: Henry {#step-4--henry}
 
@@ -157,19 +157,19 @@ A livello di consegna, abbiamo i seguenti risultati:
 
 * **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su di essi): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (utenti che hanno fatto clic su): 6
-* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 1
+* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 3
 
 La reattività grezza e la stima dei forward sono calcolate come segue:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** = **B - A** (quindi 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** = **A / C** (quindi 2 / 3 = 66,67%)
+* **[!UICONTROL Estimation of forwards]** =  **B - A**  (quindi 6 - 2 = 4)
+* **[!UICONTROL Raw reactivity]** =  **A / C** (quindi 2 / 3 = 66,67%)
 
 >[!NOTE]
 >
 >Nelle formule seguenti:
 >
->* Un rappresenta l’ **[!UICONTROL Clicks]** indicatore (destinatari che hanno fatto clic su di esso).
->* B rappresenta l’ **[!UICONTROL Distinct clicks for the population reached]** indicatore (persone che hanno fatto clic su di esso).
->* C rappresenta l’ **[!UICONTROL Distinct opens for the population reached]** indicatore (destinatari che hanno aperto).
+>* A rappresenta l&#39;indicatore **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su di esso).
+>* B rappresenta l&#39;indicatore **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic).
+>* C rappresenta l&#39;indicatore **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto).
