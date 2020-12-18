@@ -27,7 +27,7 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
 
    * **[!UICONTROL Use an external account]**
 
-      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. Il **[!UICONTROL External account]** campo specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l&#39;opzione &quot;Usa un account esterno&quot;.
+      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. Il campo **[!UICONTROL External account]** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l&#39;opzione &quot;Usa un account esterno&quot;.
 
       Se questa opzione non è selezionata, è necessario specificare i seguenti parametri:
 
@@ -64,17 +64,17 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
    * 3 - Elimina il messaggio dal server.
    * 4 - Lascia il messaggio sul server.
 
-   Il contenuto del messaggio è accessibile dalla **[!UICONTROL mailMessage]** variabile globale.
+   Il contenuto del messaggio è accessibile dalla variabile globale **[!UICONTROL mailMessage]**.
 
 1. **[!UICONTROL Schedule]**
 
-   Per definire una pianificazione per l&#39;attività, fate clic sulla **[!UICONTROL Scheduling]** scheda e selezionate **[!UICONTROL Plan execution]**. Fate clic sul **[!UICONTROL Change]** pulsante per configurare la pianificazione.
+   Per definire una pianificazione per l&#39;attività, fate clic sulla scheda **[!UICONTROL Scheduling]** e selezionate **[!UICONTROL Plan execution]**. Fate clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
 
    La configurazione della pianificazione è la stessa dell&#39;attività di pianificazione. Fare riferimento a [Scheduler](../../workflow/using/scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   È possibile definire i ritardi di scadenza tramite la **[!UICONTROL Expiration]** scheda.
+   È possibile definire i ritardi di scadenza tramite la scheda **[!UICONTROL Expiration]**.
 
    ![](assets/email_rec_edit_3.png)
 
