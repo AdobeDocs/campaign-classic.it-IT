@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Risposte ai moduli web{#web-forms-answers}
 
-## Campi di memorizzazione di risposta {#response-storage-fields}
+## Campi di archiviazione risposta {#response-storage-fields}
 
-Le risposte ai moduli possono essere salvate in un campo del database o temporaneamente in una variabile locale. La modalità di memorizzazione delle risposte viene scelta durante la creazione del campo. Può essere modificato tramite il **[!UICONTROL Edit storage...]** collegamento.
+Le risposte ai moduli possono essere salvate in un campo del database o temporaneamente in una variabile locale. La modalità di memorizzazione delle risposte viene scelta durante la creazione del campo. Può essere modificato tramite il collegamento **[!UICONTROL Edit storage...]**.
 
 Per ciascun campo di immissione in un modulo sono disponibili le seguenti opzioni di memorizzazione:
 
@@ -31,17 +31,17 @@ Per ciascun campo di immissione in un modulo sono disponibili le seguenti opzion
 
 * **[!UICONTROL Variable]**
 
-   Se non si desidera memorizzare informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fare riferimento a [Memorizzazione dei dati in una variabile](#storing-data-in-a-local-variable)locale.
+   Se non si desidera memorizzare informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fare riferimento a [Memorizzazione dei dati in una variabile locale](#storing-data-in-a-local-variable).
 
 ### Memorizzazione dei dati nel database {#storing-data-in-the-database}
 
-Per salvare i dati in un campo esistente del database, fare clic sull&#39; **[!UICONTROL Edit expression]** icona e selezionarla dall&#39;elenco dei campi disponibili.
+Per salvare i dati in un campo esistente del database, fare clic sull&#39;icona **[!UICONTROL Edit expression]** e selezionarla dall&#39;elenco dei campi disponibili.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Il documento di riferimento predefinito è lo schema **nms:destinatario** . Per visualizzarlo o sceglierne uno nuovo, selezionare il modulo dall&#39;elenco e fare clic sul **[!UICONTROL Properties]** pulsante.
+>Il documento di riferimento predefinito è lo schema **nms:Recipients**. Per visualizzarlo o sceglierne uno nuovo, selezionare il modulo dall&#39;elenco e fare clic sul pulsante **[!UICONTROL Properties]**.
 
 ### Memorizzazione dei dati in una variabile locale {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ Ciò significa che è possibile utilizzare il valore di un campo non salvato per
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-È memorizzato in una variabile che deve essere selezionata al momento della creazione della casella di riepilogo o tramite il **[!UICONTROL Edit storage...]** collegamento.
+È memorizzato in una variabile che deve essere selezionata al momento della creazione della casella di riepilogo o tramite il collegamento **[!UICONTROL Edit storage...]**.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Puoi visualizzare le variabili esistenti e crearne di nuove tramite il **[!UICONTROL Edit variables...]** collegamento. Fate clic sul **[!UICONTROL Add]** pulsante per creare una nuova variabile.
+È possibile visualizzare le variabili esistenti e crearne di nuove tramite il collegamento **[!UICONTROL Edit variables...]**. Fate clic sul pulsante **[!UICONTROL Add]** per creare una nuova variabile.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,11 +63,11 @@ La variabile aggiunta sarà disponibile nell&#39;elenco delle variabili locali a
 
 >[!NOTE]
 >
->Per ciascun modulo è possibile creare variabili a monte. A tale scopo, selezionare il modulo e fare clic sul **[!UICONTROL Properties]** pulsante. La **[!UICONTROL Variables]** scheda contiene le variabili locali per il modulo.
+>Per ciascun modulo è possibile creare variabili a monte. A tal fine, selezionare il modulo e fare clic sul pulsante **[!UICONTROL Properties]**. La scheda **[!UICONTROL Variables]** contiene le variabili locali per il modulo.
 
 **Esempio di deposito locale con condizionamento**
 
-Nell&#39;esempio precedente, il contenitore che include i dati relativi ai veicoli privati viene visualizzato solo se l&#39; **[!UICONTROL Private]** opzione è selezionata dall&#39;elenco a discesa, come indicato nella condizione di visibilità:
+Nell&#39;esempio precedente, il contenitore che include i dati relativi ai veicoli privati viene visualizzato solo se l&#39;opzione **[!UICONTROL Private]** è selezionata dall&#39;elenco a discesa, come indicato nella condizione di visibilità:
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -107,9 +107,9 @@ Per ciascun modulo, le risposte fornite possono essere riutilizzate nei campi o 
 
    >[!NOTE]
    >
-   >A differenza degli altri campi per i quali `<%=` i caratteri vengono sostituiti con caratteri escape, il contenuto HTML viene salvato come accade utilizzando la `<%==` sintassi.
+   >A differenza degli altri campi per i quali i caratteri `<%=` vengono sostituiti con caratteri escape, il contenuto HTML viene salvato come accade utilizzando la sintassi `<%==`.
 
-## Salvataggio delle risposte ai moduli Web {#saving-web-forms-answers}
+## Salvataggio delle risposte dei moduli Web {#saving-web-forms-answers}
 
 Per salvare le informazioni raccolte nelle pagine di un modulo, è necessario inserire una casella di archiviazione nel diagramma.
 
@@ -117,9 +117,9 @@ Per salvare le informazioni raccolte nelle pagine di un modulo, è necessario in
 
 Questa casella può essere utilizzata in due modi:
 
-* Se l&#39;accesso al modulo Web è effettuato tramite un collegamento inviato tramite e-mail e se l&#39;utente che accede all&#39;applicazione è già presente nel database, è possibile selezionare l&#39; **[!UICONTROL Update the preloaded record]** opzione. Per ulteriori informazioni, vedere [Distribuzione di un modulo tramite e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Se l&#39;accesso al modulo Web è effettuato tramite un collegamento inviato in un&#39;e-mail e se l&#39;utente che accede all&#39;applicazione è già presente nel database, è possibile selezionare l&#39;opzione **[!UICONTROL Update the preloaded record]**. Per ulteriori informazioni, vedere [Distribuzione di un modulo tramite e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In questo caso,  Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da  Adobe Campaign. È necessario configurare le informazioni per il precaricamento tramite la casella di precaricamento. Per ulteriori informazioni, vedere [Precaricamento dei dati](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data)del modulo.
+   In questo caso,  Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da  Adobe Campaign. È necessario configurare le informazioni per il precaricamento tramite la casella di precaricamento. Per ulteriori informazioni, vedere [Precaricamento dei dati del modulo](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
@@ -129,7 +129,7 @@ Questa casella può essere utilizzata in due modi:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Per impostazione predefinita, i dati vengono importati nel database tramite un&#39; **[!UICONTROL Update or insertion]** operazione: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail immesso). Se non esiste, le informazioni vengono aggiunte.
+Per impostazione predefinita, i dati vengono importati nel database tramite un&#39;operazione **[!UICONTROL Update or insertion]**: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail immesso). Se non esiste, le informazioni vengono aggiunte.
 
 Potete tuttavia modificare questo comportamento. A questo scopo, selezionate la radice dell&#39;elemento e selezionate l&#39;operazione da eseguire dall&#39;elenco a discesa:
 
