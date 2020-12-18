@@ -21,7 +21,7 @@ ht-degree: 8%
 >
 >L&#39;MTA dà priorità all&#39;elaborazione dei messaggi transazionali rispetto a qualsiasi altra consegna.
 
-Nell’istanza di esecuzione, una volta completata la fase di arricchimento e collegato un modello di consegna all’evento, la consegna viene inviata. Tutte le consegne sono raggruppate nella **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
+Nell’istanza di esecuzione, una volta completata la fase di arricchimento e collegato un modello di consegna all’evento, la consegna viene inviata. Tutte le consegne sono raggruppate nella cartella **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -33,4 +33,4 @@ Questo ordinamento può essere modificato nelle proprietà del modello di messag
 
 >[!NOTE]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzata di Adobe Campaign  per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento MTA [avanzato di](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html) Adobe Campaign.
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzata di Adobe Campaign  per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento [ Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
