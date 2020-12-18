@@ -31,15 +31,15 @@ Prima di iniziare questo caso di utilizzo, è necessario avere accesso a un sond
 
 >[!NOTE]
 >
->Questo caso d’uso può essere implementato solo se avete acquisito l’opzione **Survey Manager** . Controlla il contratto di licenza.
+>Questo caso di utilizzo può essere implementato solo se avete acquisito l&#39;opzione **Survey Manager**. Controlla il contratto di licenza.
 
-## Passaggio 1 - Creazione del flusso di lavoro per la raccolta e l&#39;archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
+## Passaggio 1 - Creazione del flusso di lavoro di raccolta dati e archiviazione {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Per raccogliere le risposte al sondaggio, effettuate le seguenti operazioni:
 
-1. Create un flusso di lavoro e inserite un&#39; **[!UICONTROL Answers to a survey]** attività. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Create un flusso di lavoro e inserite un&#39;attività **[!UICONTROL Answers to a survey]**. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultare [questa sezione](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Modificate l&#39;attività e selezionate il sondaggio di cui desiderate analizzare le risposte.
-1. Abilitate l&#39; **[!UICONTROL Select all the answer data]** opzione per raccogliere tutte le informazioni.
+1. Abilitare l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -47,11 +47,11 @@ Per raccogliere le risposte al sondaggio, effettuate le seguenti operazioni:
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. Una volta configurata la casella di raccolta delle risposte, posizionare un&#39;attività di **[!UICONTROL List update]** tipo per salvare i dati.
+1. Una volta configurata la casella di raccolta delle risposte, posizionare un&#39;attività di tipo **[!UICONTROL List update]** per salvare i dati.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   In questa attività, specificate l&#39;elenco da aggiornare e deselezionate l&#39; **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** opzione: le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all&#39;elenco non verrà generato di nuovo per ogni aggiornamento, che garantisce l&#39;integrità del cubo che utilizza questo elenco.
+   In questa attività, specificate l&#39;elenco da aggiornare e deselezionate l&#39;opzione **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all&#39;elenco non verrà generato di nuovo per ogni aggiornamento, che garantisce l&#39;integrità del cubo che utilizza questo elenco.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -77,7 +77,7 @@ Definite le dimensioni e le misure da visualizzare nel rapporto. Qui, vogliamo v
 
 ![](assets/reporting_usecase_2_02.png)
 
-La **[!UICONTROL Preview]** scheda consente di controllare il rendering del rapporto.
+La scheda **[!UICONTROL Preview]** consente di controllare il rendering del rapporto.
 
 ## Passaggio 3 - Creazione del rapporto e configurazione del layout dei dati all&#39;interno della tabella {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
