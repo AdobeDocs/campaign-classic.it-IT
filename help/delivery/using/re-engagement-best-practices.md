@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Miglioramento della realizzabilità mediante il nuovo impegno{#re-engagement}
+# Miglioramento della realizzabilità mediante il nuovo coinvolgimento{#re-engagement}
 
 Durante l&#39;implementazione della funzionalità di recapito, alcune delle best practice consistono nel cercare di mantenere una base di abbonati sana e migliorare la recapito mediante strategie di ricoinvolgimento.
 
