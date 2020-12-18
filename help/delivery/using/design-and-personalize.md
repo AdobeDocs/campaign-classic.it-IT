@@ -18,7 +18,7 @@ ht-degree: 7%
 
 Durante la progettazione del contenuto del messaggio, cercate di evitare problemi comuni che potrebbero impedire l&#39;esecuzione della distribuzione. Nella maggior parte dei casi, eventuali errori sono correlati a [personalizzazione](../../delivery/using/about-personalization.md), [formattazione](../../delivery/using/defining-the-email-content.md#message-content) e [immagini](../../delivery/using/defining-the-email-content.md#adding-images).
 
-## Ottimizzare la personalizzazione {#optimize-personalization}
+## Ottimizzazione della personalizzazione {#optimize-personalization}
 
 Per evitare problemi comuni che potrebbero impedire l’esecuzione della consegna e migliorare l’esperienza dei destinatari,  Adobe Campaign consente di personalizzare i messaggi.
 
@@ -31,17 +31,17 @@ Assicurati che il contenuto del messaggio sia progettato correttamente per evita
 
 L’uso non corretto dei parametri nei blocchi di personalizzazione può rappresentare un problema. Ad esempio, le variabili in JavaScript devono essere utilizzate come segue:
 
-    &lt;%
-    
-    var brand = &quot;xxx&quot;
+    &lt;>var brand = &quot;xxx&quot;
     
     %>
 
-Per ulteriori informazioni sui blocchi di personalizzazione, consulta [questa sezione](../../delivery/using/personalization-blocks.md).
+    
+    
+Per ulteriori informazioni sui blocchi di personalizzazione, consultare la sezione [this](../../delivery/using/personalization-blocks.md).
 
 Puoi preparare i dati di personalizzazione in un flusso di lavoro per migliorare l’analisi della preparazione della distribuzione. Questo dovrebbe essere utilizzato specialmente se i dati di personalizzazione provengono da una tabella esterna tramite Federated Data Access (FDA). Questa opzione è descritta in questa [sezione](../../delivery/using/personalization-fields.md#optimizing-personalization)
 
-## Creare contenuto ottimizzato {#optimize-content}
+## Creazione di contenuto ottimizzato {#optimize-content}
 
 Durante la creazione delle e-mail, tieni presente le best practice generali riportate di seguito.
 
@@ -57,7 +57,7 @@ Durante la creazione delle e-mail, tieni presente le best practice generali ripo
 
 ### Riga oggetto
 
-Per migliorare i tassi di apertura, si [dovrà lavorare sulla linea](../../delivery/using/defining-the-email-content.md#message-content) oggetto:
+Lavorare sulla [linea oggetto](../../delivery/using/defining-the-email-content.md#message-content) per migliorare le tariffe aperte:
 
 * Evitare soggetti troppo lunghi. Utilizza un massimo di 50 caratteri
 
@@ -71,15 +71,15 @@ Includi sempre un collegamento della pagina mirror. La posizione preferita è la
 
 ### Collegamento di annullamento dell’abbonamento
 
-Il collegamento di annullamento della sottoscrizione è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una regola di [tipologia](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e genera un avviso se risulta mancante.
+Il collegamento di annullamento della sottoscrizione è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e genera un avviso se risulta mancante.
 
 **Suggerimento**: Poiché l’errore umano è sempre possibile, verificate che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, al momento dell&#39;invio della prova, verificare che il collegamento sia valido, che il modulo sia online e che il campo Destinatario non contatta più sia cambiato in Sì.
 
-Scoprite come inserire un collegamento di rifiuto [in questa sezione](../../delivery/using/personalization-blocks.md#personalization-blocks-example).
+Scoprite come inserire un collegamento di rinuncia [in questa sezione](../../delivery/using/personalization-blocks.md#personalization-blocks-example).
 
 ### Dimensione e-mail
 
-Per evitare problemi di prestazioni o di recapito, la dimensione massima consigliata per un messaggio e-mail è di circa **35 KB**. Per verificare la dimensione del messaggio, andate alla **[!UICONTROL Preview]** scheda e scegliete un profilo di prova. Una volta generata, la dimensione del messaggio verrà visualizzata nell&#39;angolo superiore destro.
+Per evitare problemi di prestazioni o di recapito, la dimensione massima consigliata per un messaggio e-mail è di circa **35 KB**. Per verificare la dimensione del messaggio, andate alla scheda **[!UICONTROL Preview]** e scegliete un profilo di prova. Una volta generata, la dimensione del messaggio verrà visualizzata nell&#39;angolo superiore destro.
 
 Per mantenere l’e-mail al di sotto del limite, tenete presente quanto segue:
 
@@ -95,7 +95,7 @@ Verificare eventuali modifiche prima dell&#39;invio finale
 
 Per impostazione predefinita, il numero di caratteri in un SMS soddisfa gli standard GSM (Global System for Mobile Communications). I messaggi SMS che utilizzano la codifica GSM sono limitati a 160 caratteri o 153 caratteri per SMS per messaggi inviati in più parti.
 
-La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. L&#39;inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. È possibile autorizzare la traslazione dei caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della corrispondente **[!UICONTROL External account]**.
+La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. L&#39;inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. È possibile autorizzare la traslazione dei caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della **[!UICONTROL External account]** corrispondente.
 Ulteriori informazioni [in questa sezione](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
 **Suggerimenti**:
@@ -106,15 +106,15 @@ Ulteriori informazioni [in questa sezione](../../delivery/using/sms-channel.md#c
 
 Ulteriori informazioni [in questa sezione](../../delivery/using/sms-channel.md#about-character-transliteration).
 
-## Operazioni di formattazione {#formatting}
+## Operazioni per la formattazione {#formatting}
 
 Per evitare errori di formattazione comuni, verificare quanto segue:
 
-* Correggi la formattazione **della** data:  Adobe Campaign fornisce funzioni di formattazione delle date per i modelli JavaScript e i fogli di stile XSL. [Ulteriori informazioni](../../delivery/using/formatting.md#date-display)
+* Correggi **formattazione data**:  Adobe Campaign fornisce funzioni di formattazione delle date per i modelli JavaScript e i fogli di stile XSL. [Ulteriori informazioni](../../delivery/using/formatting.md#date-display)
 
-* Utilizzo di caratteri **** autorizzati nelle e-mail: l&#39;elenco di caratteri validi per gli indirizzi e-mail è definito nell&#39;opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni Campagna [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali,  Adobe Campaign deve essere installato in Unicode.
+* Uso di **caratteri autorizzati** nelle e-mail: l&#39;elenco di caratteri validi per gli indirizzi e-mail è definito nell&#39;opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni Campagna [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali,  Adobe Campaign deve essere installato in Unicode.
 
-* Configurazione dell&#39;autenticazione **** e-mail: accertatevi che le intestazioni e-mail contengano la firma DKIM. L&#39;autenticazione DKIM (Domain Keys Identified Mail) consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato, e se il contenuto del messaggio sia stato modificato tra il momento dell&#39;invio originale (e DKIM &quot;signed&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
+* Configurazione di **Autenticazione e-mail**: accertatevi che le intestazioni e-mail contengano la firma DKIM. L&#39;autenticazione DKIM (Domain Keys Identified Mail) consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato, e se il contenuto del messaggio sia stato modificato tra il momento dell&#39;invio originale (e DKIM &quot;signed&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
 
 ### Progettazione e-mail reattiva
 
@@ -150,14 +150,14 @@ Per essere accessibili dall&#39;esterno, le immagini utilizzate nelle e-mail e n
 
 * È possibile verificare se la configurazione dell&#39;istanza abilita la gestione delle risorse pubbliche. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Dalla procedura guidata di distribuzione, potete importare una pagina HTML contenente immagini o inserire immagini direttamente mediante l’editor HTML tramite l’ **[!UICONTROL Image]** icona . [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#adding-images)
+* Dalla procedura guidata di distribuzione, potete importare una pagina HTML contenente immagini o inserire immagini direttamente mediante l&#39;editor HTML tramite l&#39;icona **[!UICONTROL Image]**. [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#adding-images)
 
 * Se le immagini non sono visualizzate, controllate che siano disponibili sul server. A questo scopo, fate clic sulla scheda Sorgente dalla consegna. Trovate le immagini e copiate l’URL di ciascuna immagine in un browser Web. Se le immagini non vengono visualizzate, contattate l’amministratore IT o il fornitore di terze parti che fornisce il contenuto per la distribuzione.
 
-## Anteprima del messaggio {#preview-msg}
+## Visualizza in anteprima il messaggio {#preview-msg}
 
  Adobe consiglia di visualizzare in anteprima il messaggio per verificarne la personalizzazione e vedere in che modo i destinatari vedranno la consegna.
 
-* Nella procedura di consegna, la **[!UICONTROL Preview]** sottoscheda consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#message-content)
+* Nella scheda della distribuzione, la scheda secondaria **[!UICONTROL Preview]** consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#message-content)
 
-* Durante ogni anteprima viene eseguito un controllo automatico dello spam. Nella **[!UICONTROL Preview]** sottoscheda, seleziona [SpamAssassin](../../delivery/using/spamassassin.md) spam Scoring.  Fare clic **[!UICONTROL More...]** per ulteriori informazioni sull&#39;avviso.  Prima di eseguire questa operazione, assicurarsi che SpamAssassin sia correttamente installato e configurato sul server  applicazione Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)
+* Durante ogni anteprima viene eseguito un controllo automatico dello spam. Nella scheda secondaria **[!UICONTROL Preview]**, selezionare [SpamAssassin](../../delivery/using/spamassassin.md) punteggio spam.  Fare clic su **[!UICONTROL More...]** per ulteriori informazioni sull&#39;avviso.  Prima di eseguire questa operazione, assicurarsi che SpamAssassin sia correttamente installato e configurato sul server  applicazione Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)
