@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # Trasferisci a mid-sourcing{#transfer-to-mid-sourcing}
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono installati con il modulo **Trasferisci a Medio Oriente** . For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+I flussi di lavoro descritti di seguito vengono installati con il modulo **Trasferisci a mid-Sourcing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
