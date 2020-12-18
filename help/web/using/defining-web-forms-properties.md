@@ -19,23 +19,23 @@ ht-degree: 1%
 
 I moduli Web sono completamente configurabili e personalizzabili per soddisfare le tue esigenze. I parametri devono essere inseriti nella finestra delle proprietà.
 
-La finestra delle proprietà è accessibile tramite il **[!UICONTROL Properties]** pulsante nella barra degli strumenti del modulo Web. Questa finestra consente di accedere a una serie di impostazioni specifiche del modulo Web. Alcune impostazioni possono derivare dalla configurazione del modello.
+La finestra delle proprietà è accessibile tramite il pulsante **[!UICONTROL Properties]** nella barra degli strumenti del modulo Web. Questa finestra consente di accedere a una serie di impostazioni specifiche del modulo Web. Alcune impostazioni possono derivare dalla configurazione del modello.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Proprietà modulo generali {#overall-form-properties}
 
-Nella **[!UICONTROL General]** scheda della finestra delle proprietà è possibile modificare l&#39; **etichetta** del modulo. Si consiglia vivamente di non modificare il nome **** interno.
+Nella scheda **[!UICONTROL General]** della finestra delle proprietà è possibile modificare l&#39; **Label** del modulo. Si consiglia vivamente di non modificare il **nome interno**.
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-Il modello di modulo viene scelto durante la creazione del modulo. Non può essere modificato in seguito. Per ulteriori informazioni sulla creazione e la gestione dei modelli di modulo, vedere [Uso di un modello](../../web/using/using-a-web-form-template.md)di modulo Web.
+Il modello di modulo viene scelto durante la creazione del modulo. Non può essere modificato in seguito. Per ulteriori informazioni sulla creazione e la gestione dei modelli di modulo, vedere [Uso di un modello di modulo Web](../../web/using/using-a-web-form-template.md).
 
 ## Archiviazione dati modulo {#form-data-storage}
 
-Per impostazione predefinita, i campi dei moduli Web sono memorizzati nella tabella dei destinatari. È possibile modificare la tabella utilizzata selezionando una nuova tabella dal **[!UICONTROL Document type]** campo. L&#39; **[!UICONTROL Zoom]** icona consente di visualizzare il contenuto della tabella selezionata.
+Per impostazione predefinita, i campi dei moduli Web sono memorizzati nella tabella dei destinatari. È possibile modificare la tabella utilizzata selezionando una nuova tabella dal campo **[!UICONTROL Document type]**. L&#39;icona **[!UICONTROL Zoom]** consente di visualizzare il contenuto della tabella selezionata.
 
-Per impostazione predefinita, le risposte sono memorizzate nella tabella **Risposta a un modulo** destinatario.
+Per impostazione predefinita, le risposte sono memorizzate nella tabella **Risposta a un modulo destinatario**.
 
 ## Configurazione di una pagina di errore {#setting-up-an-error-page}
 
@@ -47,19 +47,19 @@ Per impostazione predefinita, vengono visualizzate le informazioni seguenti:
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 
-Il contenuto delle stringhe visualizzate è definito nella **[!UICONTROL Error page]** scheda della finestra delle proprietà. La **[!UICONTROL HTML]** scheda visualizza il rendering e la **[!UICONTROL Texts]** scheda consente di modificare le stringhe di testo e aggiungere del testo, se necessario:
+Il contenuto delle stringhe visualizzate è definito nella scheda **[!UICONTROL Error page]** della finestra delle proprietà. La scheda **[!UICONTROL HTML]** visualizza il rendering e la scheda **[!UICONTROL Texts]** consente di modificare le stringhe di testo e aggiungere del testo, se necessario:
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
 ## Localizzazione del modulo {#form-localization}
 
-La **[!UICONTROL Localization]** scheda consente di selezionare le lingue di progettazione e visualizzazione del modulo Web.
+La scheda **[!UICONTROL Localization]** consente di selezionare le lingue di progettazione e visualizzazione del modulo Web.
 
-See [Translating a web form](../../web/using/translating-a-web-form.md).
+Vedere [Traduzione di un modulo Web](../../web/using/translating-a-web-form.md).
 
 ## Esplorazione e rendering dei moduli {#form-browsing-and-rendering}
 
-La **[!UICONTROL Rendering]** scheda consente di definire il tipo di esplorazione tra le pagine del modulo Web e il modello di rendering utilizzato.
+La scheda **[!UICONTROL Rendering]** consente di definire il tipo di esplorazione tra le pagine del modulo Web e il modello di rendering utilizzato.
 
 È possibile scegliere di spostarsi tramite collegamenti o pulsanti.
 
@@ -67,35 +67,35 @@ La **[!UICONTROL Rendering]** scheda consente di definire il tipo di esplorazion
 
 Per impostazione predefinita, i pulsanti sono gli elementi di navigazione. Consentono di eseguire le azioni seguenti:
 
-* Approva la pagina corrente e visualizza la pagina successiva facendo clic su **[!UICONTROL Next]**. Questo pulsante viene visualizzato su tutte le pagine tranne l&#39;ultima.
+* Approvare la pagina corrente e visualizzare la pagina successiva facendo clic su **[!UICONTROL Next]**. Questo pulsante viene visualizzato su tutte le pagine tranne l&#39;ultima.
 * Visualizzare la pagina precedente facendo clic su **[!UICONTROL Previous]**. Questo pulsante viene visualizzato su tutte le pagine tranne la prima.
-* Salvare le risposte del modulo facendo clic sul **[!UICONTROL Approve]** pulsante . Questo pulsante è visibile solo nell’ultima pagina.
+* Salvare le risposte del modulo facendo clic sul pulsante **[!UICONTROL Approve]**. Questo pulsante è visibile solo nell’ultima pagina.
 
 Questi elementi vengono visualizzati nella parte inferiore di ogni pagina. Le loro posizioni possono essere cambiate. A tal fine, è necessario modificare il foglio di stile.
 
 >[!NOTE]
 >
->È possibile nascondere il **[!UICONTROL Previous]** pulsante su alcune pagine. Per eseguire questa operazione, passare alla pagina interessata e selezionare l&#39; **[!UICONTROL Disallow returning to the previous page]** opzione. Questa opzione è accessibile quando è selezionato il livello principale della struttura delle pagine.
+>È possibile nascondere il pulsante **[!UICONTROL Previous]** su alcune pagine. A questo scopo, andare alla pagina interessata e selezionare l&#39;opzione **[!UICONTROL Disallow returning to the previous page]**. Questa opzione è accessibile quando è selezionato il livello principale della struttura delle pagine.
 
-Il **[!UICONTROL Template]** campo della **[!UICONTROL Rendering]** scheda consente di selezionare un tema tra quelli disponibili.
+Il campo **[!UICONTROL Template]** della scheda **[!UICONTROL Rendering]** consente di selezionare un tema tra quelli disponibili.
 
-I temi vengono salvati nel **[!UICONTROL Administration>Configuration>Form rendering]** nodo della struttura ad albero. Vedere [Selezione del modello di rendering del modulo](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+I temi vengono salvati nel nodo **[!UICONTROL Administration>Configuration>Form rendering]** della struttura. Vedere [Selezione del modello di rendering del modulo](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
 
-Nella parte inferiore della finestra delle proprietà viene visualizzato un rendering di esempio. L&#39; **[!UICONTROL Edit link]** icona consente di visualizzare la configurazione del tema selezionato.
+Nella parte inferiore della finestra delle proprietà viene visualizzato un rendering di esempio. L&#39;icona **[!UICONTROL Edit link]** consente di visualizzare la configurazione del tema selezionato.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## Testi nel modulo {#texts-in-the-form}
+## Testi in forma {#texts-in-the-form}
 
-La **[!UICONTROL Page]** scheda consente di definire il contenuto dell&#39;intestazione e del piè di pagina del modulo. Vedere [Definizione di intestazioni e piè di pagina](../../web/using/form-rendering.md#defining-headers-and-footers).
+La scheda **[!UICONTROL Page]** consente di definire il contenuto dell&#39;intestazione e del piè di pagina del modulo. Vedere [Definizione di intestazioni e piè di pagina](../../web/using/form-rendering.md#defining-headers-and-footers).
 
-Consente inoltre di gestire le traduzioni. See [Translating a web form](../../web/using/translating-a-web-form.md).
+Consente inoltre di gestire le traduzioni. Vedere [Traduzione di un modulo Web](../../web/using/translating-a-web-form.md).
 
 ## Accessibilità del modulo {#accessibility-of-the-form}
 
-Un modulo Web è accessibile agli utenti se lo è **[!UICONTROL Online]** e se la data corrente si trova entro il periodo di validità. Lo stato del modulo viene modificato durante la fase di pubblicazione (vedere [Pubblicazione di un modulo](../../web/using/publishing-a-web-form.md#publishing-a-form)). Lo stato viene visualizzato nella sezione **Progetto** della **[!UICONTROL General]** scheda della finestra delle proprietà.
+Un modulo Web è accessibile agli utenti se è **[!UICONTROL Online]** e se la data corrente si trova entro il periodo di validità. Lo stato del modulo viene modificato durante la fase di pubblicazione (vedere [Pubblicazione di un modulo](../../web/using/publishing-a-web-form.md#publishing-a-form)). Lo stato viene visualizzato nella sezione **Progetto** della scheda **[!UICONTROL General]** della finestra delle proprietà.
 
-Il periodo di validità va dalla **[!UICONTROL Start]** data alla **[!UICONTROL End date]**. Se in questi campi non sono specificate date, il modulo ha validità permanente.
+Il periodo di validità va dalla data **[!UICONTROL Start]** alla data **[!UICONTROL End date]**. Se in questi campi non sono specificate date, il modulo ha validità permanente.
 
 ![](assets/s_ncs_admin_survey_properties_date.png)
 
@@ -107,7 +107,7 @@ Il periodo di validità va dalla **[!UICONTROL Start]** data alla **[!UICONTROL 
 
 Per impostazione predefinita, l&#39;accesso ai moduli Web viene eseguito in modalità anonima: a tutti gli operatori che accedono al modulo vengono assegnati diritti di operatore WebApp.
 
-È possibile abilitare il controllo di accesso per la visualizzazione del modulo, ad esempio per la distribuzione di un modulo su un sito Intranet, al fine di autenticare gli utenti. A tal fine, visualizzare la **[!UICONTROL Properties]** finestra del modulo interessato e fare clic sull&#39; **[!UICONTROL Enable access control]** opzione, come illustrato di seguito:
+È possibile abilitare il controllo di accesso per la visualizzazione del modulo, ad esempio per la distribuzione di un modulo su un sito Intranet, al fine di autenticare gli utenti. A tal fine, visualizzare la finestra **[!UICONTROL Properties]** del modulo in questione e fare clic sull&#39;opzione **[!UICONTROL Enable access control]**, come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -117,7 +117,7 @@ Quando si accede alla pagina, viene visualizzato il seguente modulo di autentica
 
 Login e password sono quelli utilizzati dagli operatori  Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md).
 
-L&#39; **[!UICONTROL Use a specific account]** opzione consente di limitare l&#39;autorizzazione di lettura o scrittura dell&#39;operatore che accede al modulo. Utilizzare la casella a discesa per selezionare un operatore o un gruppo di operatori che si occuperà di concedere tali autorizzazioni.
+L&#39;opzione **[!UICONTROL Use a specific account]** consente di limitare l&#39;autorizzazione di lettura o scrittura dell&#39;operatore che accede al modulo. Utilizzare la casella a discesa per selezionare un operatore o un gruppo di operatori che si occuperà di concedere tali autorizzazioni.
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
@@ -131,28 +131,28 @@ Per impostazione predefinita,  Adobe Campaign offre parametri per la visualizzaz
 
 Per impostazione predefinita sono disponibili i seguenti parametri:
 
-* **id** per indicare l’identificatore crittografato.
-* **lang** per modificare la lingua di visualizzazione.
-* **origine** per specificare l&#39;origine del convenuto.
-* **_uuid** consente la visualizzazione del modulo prima della pubblicazione e il tracciamento degli errori. Questo parametro è per uso interno (creazione e debug): quando si accede al modulo Web tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). L&#39;origine viene forzata al **[!UICONTROL Adobe Campaign]** valore.
+* **idto** indica l&#39;identificatore crittografato.
+* **per** cambiare la lingua di visualizzazione.
+* **origine** per specificare l&#39;origine del rispondente.
+* **_** uidabilita la visualizzazione del modulo prima della pubblicazione e il tracciamento degli errori. Questo parametro è per uso interno (creazione e debug): quando si accede al modulo Web tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). L&#39;origine viene forzata al valore **[!UICONTROL Adobe Campaign]**.
 
    Viene utilizzato con i parametri **_preview** e/o **_debug**:
 
-   **_anteprima** per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di prova.
+   **_** Anteprima per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di prova.
 
-   **_debug** per visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, inclusa una volta che il modulo è stato pubblicato.
+   **_** debugper visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, inclusa una volta che il modulo è stato pubblicato.
 
    >[!CAUTION]
    >
-   >Quando il modulo viene visualizzato tramite un URL con il parametro **_uuid** , il valore del **[!UICONTROL origin]** parametro viene forzato a **Adobe Campaign**.
+   >Quando il modulo viene visualizzato tramite un URL con il parametro **_uuid**, il valore del parametro **[!UICONTROL origin]** viene forzato a **Adobe Campaign**.
 
 ## Aggiunta di parametri {#adding-parameters}
 
-I parametri possono essere aggiunti tramite la **[!UICONTROL Parameters...]** scheda nella finestra Proprietà del modulo. Possono essere resi obbligatori, come indicato di seguito:
+I parametri possono essere aggiunti tramite la scheda **[!UICONTROL Parameters...]** nella finestra Proprietà del modulo. Possono essere resi obbligatori, come indicato di seguito:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-È necessario specificare una posizione di memorizzazione dalla quale verrà recuperato il valore del parametro. A questo scopo, selezionare una delle opzioni di memorizzazione, quindi fare clic sulla **[!UICONTROL Storage]** scheda per selezionare il campo o la variabile interessata. Le opzioni di memorizzazione sono dettagliate nei campi [di archiviazione](../../web/using/web-forms-answers.md#response-storage-fields)Risposta.
+È necessario specificare una posizione di memorizzazione dalla quale verrà recuperato il valore del parametro. A questo scopo, selezionare una delle opzioni di memorizzazione, quindi fare clic sulla scheda **[!UICONTROL Storage]** per selezionare il campo o la variabile interessata. Le opzioni di memorizzazione sono dettagliate in [Campi di memorizzazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields).
 
 Lo stato dell&#39;utente che ha risposto (0, 1 o qualsiasi altro valore) può quindi essere aggiunto all&#39;URL per l&#39;accesso al modulo. Queste informazioni possono essere riutilizzate nelle pagine del modulo o in una casella di prova. Le pagine visualizzate possono essere condizionate in base al valore del contesto, come mostrato di seguito:
 
@@ -160,7 +160,7 @@ Lo stato dell&#39;utente che ha risposto (0, 1 o qualsiasi altro valore) può qu
 
    ![](assets/s_ncs_admin_survey_test_client.png)
 
-1. Pagina iniziale per potenziali clienti (**status=0**):
+1. Home page per i potenziali clienti (**status=0**):
 
    ![](assets/s_ncs_admin_survey_test_prospect.png)
 
