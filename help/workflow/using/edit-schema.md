@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # Modifica schema{#edit-schema}
 
-I dati possono essere trasformati, normalizzati e, se necessario, arricchiti nel flusso di lavoro tramite l&#39; **[!UICONTROL Edit schema]** attività. Viene generalmente utilizzato per normalizzare la struttura dei dati: è possibile rinominare le colonne di output o modificarne il contenuto, calcolando ad esempio i valori medi di un campo o di un aggregato.
+I dati possono essere trasformati, normalizzati e, se necessario, arricchiti nel flusso di lavoro utilizzando l&#39;attività **[!UICONTROL Edit schema]**. Viene generalmente utilizzato per normalizzare la struttura dei dati: è possibile rinominare le colonne di output o modificarne il contenuto, calcolando ad esempio i valori medi di un campo o di un aggregato.
 
 Questa attività non modifica i dati nella tabella di lavoro, modifica solo il relativo schema, ovvero la visualizzazione logica dei dati.
 
 ![](assets/wf_manipulation_box.png)
 
-È inoltre possibile creare join con altre tabelle di lavoro tramite la **[!UICONTROL Links]** scheda.
+È inoltre possibile creare join con altre tabelle di lavoro, tramite la scheda **[!UICONTROL Links]**.
 
 ![](assets/wf_manipulation_box_link_tab.png)
 
