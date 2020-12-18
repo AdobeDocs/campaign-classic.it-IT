@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Informazioni sui cubi{#about-cubes}
 
-L&#39;esplorazione dei dati nel database viene offerta tramite il modulo **Marketing Analytics** . Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare report e generare popolazioni target. Una volta identificati, vengono memorizzati in elenchi che possono essere utilizzati in  Adobe Campaign (targeting, segmentazione, ecc.).
+L&#39;esplorazione dei dati nel database viene offerta tramite il modulo **Marketing Analytics**. Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare report e generare popolazioni target. Una volta identificati, vengono memorizzati in elenchi che possono essere utilizzati in  Adobe Campaign (targeting, segmentazione, ecc.).
 
 I cubi vengono utilizzati per generare alcuni rapporti incorporati, inclusi i rapporti sulla consegna (tracciamento della consegna, clic, aperture ecc.). I report basati su cubi possono essere utilizzati come standard solo per volumi di dati inferiori a 5 milioni di linee di fatto.
 
@@ -27,7 +27,7 @@ Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query
 
 >[!CAUTION]
 >
->**Marketing Analytics** è un modulo Adobe Campaign . Deve essere installato nell’istanza in uso in modo da poter utilizzare le funzionalità descritte di seguito.
+>**Marketing** Analytics è un modulo Adobe Campaign . Deve essere installato nell’istanza in uso in modo da poter utilizzare le funzionalità descritte di seguito.
 
 Con il modulo Marketing Analytics, Campaign consente di:
 
@@ -37,7 +37,7 @@ Con il modulo Marketing Analytics, Campaign consente di:
    * ridurre il volume dei dati coinvolti nei vari calcoli utilizzati per i rapporti e le query, ottimizzando in modo significativo i tempi di calcolo degli indicatori,
    * semplificare l&#39;accesso ai dati, consentendo agli utenti di manipolare i dati (preaggregati o meno) in base a diverse dimensioni.
 
-   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
+   Per ulteriori informazioni, vedere [Creazione di indicatori](../../reporting/using/creating-indicators.md).
 
 1. Creare tabelle pivot in vista di:
 
@@ -81,33 +81,33 @@ Quando si utilizzano i cubi, è necessario conoscere i seguenti concetti:
 
    Le misure possono essere calcolate: ad esempio, il tasso di accettazione di un&#39;offerta è il rapporto tra il numero di volte in cui è stata presentata rispetto al numero di volte in cui è stata accettata.
 
-## Area di lavoro Cubo {#cube-workspace}
+## Area di lavoro cubo {#cube-workspace}
 
-I cubi sono memorizzati nel **[!UICONTROL Administration > Configuration > Cubes]** nodo.
+I cubi sono memorizzati nel nodo **[!UICONTROL Administration > Configuration > Cubes]**.
 
 ![](assets/s_advuser_cube_node.png)
 
 I principali contesti di utilizzo per i cubi sono i seguenti:
 
-* Le esportazioni di dati possono essere effettuate direttamente in un report, progettato nell&#39; **[!UICONTROL Reports]** universo della piattaforma Adobe Campaign .
+* Le esportazioni di dati possono essere effettuate direttamente in un report, progettato nell&#39;universo **[!UICONTROL Reports]** della piattaforma Adobe Campaign .
 
    A tal fine, creare un nuovo rapporto e selezionare il cubo che si desidera utilizzare.
 
    ![](assets/cube_create_new.png)
 
-   I cubi vengono visualizzati come modelli in base ai quali vengono creati i rapporti. Dopo aver scelto un modello, fate clic **[!UICONTROL Create]** per configurare e visualizzare il rapporto corrispondente.
+   I cubi vengono visualizzati come modelli in base ai quali vengono creati i rapporti. Dopo aver scelto un modello, fate clic su **[!UICONTROL Create]** per configurare e visualizzare il rapporto corrispondente.
 
    È possibile adattare le misure, modificare la modalità di visualizzazione o configurare la tabella, quindi visualizzare il rapporto utilizzando il pulsante principale.
 
    ![](assets/cube_display_new.png)
 
-* È inoltre possibile fare riferimento a un cubo nella **[!UICONTROL Query]** casella di un rapporto per utilizzarne gli indicatori, come illustrato di seguito:
+* È inoltre possibile fare riferimento a un cubo nella casella **[!UICONTROL Query]** di un rapporto per utilizzarne gli indicatori, come illustrato di seguito:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* È inoltre possibile inserire una tabella pivot basata su un cubo in qualsiasi pagina di un rapporto. A tal fine, fare riferimento al cubo da utilizzare nella **[!UICONTROL Data]** scheda della tabella pivot sulla pagina interessata.
+* È inoltre possibile inserire una tabella pivot basata su un cubo in qualsiasi pagina di un rapporto. A tal fine, fare riferimento al cubo da utilizzare nella scheda **[!UICONTROL Data]** della tabella pivot nella pagina interessata.
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Per ulteriori informazioni, vedere [Esplorazione dei dati in un rapporto](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Per ulteriori informazioni, vedere [Esplorazione dei dati in un report](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
 
