@@ -211,7 +211,7 @@ I costi sono suddivisi in tre categorie:
 
 ### Calcolo e ricarica {#calculation-and-charging}
 
-I costi sono calcolati tramite strutture di costo e addebitati ai bilanci selezionati nelle campagne, nelle consegne o nelle attività interessate.
+I costi sono calcolati tramite strutture di costo e addebitati ai bilanci selezionati nelle campagne, nelle consegne o nelle attività in questione.
 
 È possibile eseguire un controllo sugli importi impegnati nelle campagne tramite l&#39;approvazione del budget. In una campagna è possibile creare ulteriori attività in stile checkpoint per impostare altre approvazioni. Vedere [Tipi di attività](../../campaign/using/creating-and-managing-tasks.md#types-of-task).
 
