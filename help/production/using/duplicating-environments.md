@@ -41,7 +41,7 @@ A questo scopo, eseguire i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Nel contesto di  Adobe Campaign, una **cauterizzazione** combina azioni che consentono di interrompere l’interazione con l’esterno di tutti i processi: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
+   >Nel contesto di  Adobe Campaign, una **cauterizzazione** combina azioni che consentono di interrompere l&#39;interazione con l&#39;esterno di tutti i processi: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
    >Questo passaggio è necessario per evitare di inviare messaggi più volte (una volta dall&#39;ambiente nominale e una dall&#39;ambiente duplicato).
 
    >[!IMPORTANT]
@@ -61,14 +61,14 @@ Affinché questo processo funzioni, gli ambienti di origine e di destinazione de
 
 ### Procedura di trasferimento {#transfer-procedure}
 
-Questa sezione illustra i passaggi necessari per trasferire un ambiente di origine a un ambiente di destinazione tramite uno studio di casi: il nostro obiettivo è quello di ripristinare un ambiente di produzione (**prod** instance) in un ambiente di sviluppo (**dev** instance) per lavorare in un contesto il più vicino possibile alla piattaforma &quot;live&quot;.
+Questa sezione illustra i passaggi necessari per trasferire un ambiente di origine a un ambiente di destinazione tramite uno studio di casi: il nostro obiettivo è quello di ripristinare un ambiente di produzione (**prod**) in un ambiente di sviluppo (**dev** instance) per lavorare in un contesto il più vicino possibile alla piattaforma &quot;live&quot;.
 
 I seguenti passaggi devono essere eseguiti con grande attenzione: alcuni processi potrebbero essere ancora in corso quando i database dell&#39;ambiente di origine vengono copiati. La cauterizzazione (passaggio 3 qui sotto) impedisce l&#39;invio di messaggi due volte e assicura la coerenza dei dati.
 
 >[!IMPORTANT]
 >
 >* La seguente procedura è valida in linguaggio PostgreSQL. Se il linguaggio SQL è diverso ( Oracle, ad esempio), le query SQL devono essere adattate.
->* I comandi seguenti si applicano nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
+>* I comandi riportati di seguito si applicano nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
 
 >
 
@@ -97,7 +97,7 @@ Questa esportazione consente di mantenere la configurazione di sviluppo e aggior
 A tal fine, eseguite un&#39;esportazione di pacchetto per i due elementi seguenti:
 
 * Esportate la tabella **xtk:option** in un file &#39;options_dev.xml&#39;, senza i record con i seguenti nomi interni: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
-* In un file &#39;extaccount_dev.xml&#39;, esportate la tabella **nms:extAccount** per tutti i record con ID diverso da 0 (@id &lt;> 0).
+* In un file &#39;extaccount_dev.xml&#39;, esportate la tabella **nms:extAccount** per tutti i record il cui ID non è 0 (@id &lt;> 0).
 
 Verificare che il numero di opzioni/account esportati sia uguale al numero di righe da esportare in ciascun file.
 
@@ -111,7 +111,7 @@ Verificare che il numero di opzioni/account esportati sia uguale al numero di ri
 >
 >Quando la tabella nmsextaccount viene esportata, le password correlate agli account esterni (ad esempio password per Mid-sourcing, Esecuzione centro messaggi, SMPP, IMS e altri account esterni) non vengono esportate. Assicuratevi di avere accesso alle password corrette in anticipo, in quanto potrebbero dover essere reinserite dopo che gli account esterni sono stati reimportati nell&#39;ambiente.
 
-### Passo 3 - Arrestare l&#39;ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
+### Passaggio 3 - Arrestare l&#39;ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
 
 È necessario arrestare  processi Adobe Campaign su tutti i server dell&#39;ambiente di destinazione. Questa operazione dipende dal sistema operativo in uso.
 
@@ -139,16 +139,16 @@ nlserver pdump
 
 >[!NOTE]
 >
->In Windows, il processo **webmdl** può essere ancora attivo senza avere alcun impatto sulle altre operazioni.
+>In Windows, il processo **webmdl** può essere ancora attivo senza che ciò influisca sulle altre operazioni.
 
 È inoltre possibile verificare che non siano ancora in esecuzione processi di sistema.
 
 A tal fine, attenersi alla procedura seguente:
 
-* In Windows: aprire **Task Manager** e verificare che non siano presenti processi **nlserver.exe** .
-* In Linux: eseguire il **ps aux | grep nlserver** e verificare che non siano presenti processi **nlserver** .
+* In Windows: aprire il **Task Manager** e verificare che non siano presenti processi **nlserver.exe**.
+* In Linux: eseguire **ps aux | grep nlserver** e verificare che non siano presenti processi **nlserver**.
 
-### Passaggio 4 - Ripristino dei database nell&#39;ambiente di destinazione (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### Passaggio 4 - Ripristinare i database nell&#39;ambiente di destinazione (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
 Per ripristinare i database di origine nell&#39;ambiente di destinazione, utilizzare il comando seguente:
 
@@ -156,7 +156,7 @@ Per ripristinare i database di origine nell&#39;ambiente di destinazione, utiliz
 psql mydatabase < mydatabase.sql
 ```
 
-### Passo 5 - Cauterizzare l&#39;ambiente di destinazione (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Passaggio 5 - Ottimizzare l&#39;ambiente di destinazione (dev) {#step-5---cauterize-the-target-environment--dev-}
 
 Per evitare malfunzionamenti, i processi collegati all&#39;invio della distribuzione e all&#39;esecuzione del flusso di lavoro non devono essere eseguiti automaticamente quando l&#39;ambiente di destinazione è attivato.
 
@@ -193,7 +193,7 @@ Nell&#39;ambiente di destinazione, riavviare i processi Adobe Campaign  per tutt
 
 >[!NOTE]
 >
->Prima di riavviare  Adobe Campaign nell&#39;ambiente di **sviluppo** , potete applicare una procedura di sicurezza aggiuntiva: avviate solo il modulo **Web** .
+>Prima di riavviare  Adobe Campaign nell&#39;ambiente **dev**, è possibile applicare una procedura di sicurezza aggiuntiva: avviare solo il modulo **web**.
 >  
 >A questo scopo, modificate il file di configurazione dell&#39;istanza (**config-dev.xml**), quindi aggiungete il carattere &quot;_&quot; prima delle opzioni autoStart=&quot;true&quot; per ciascun modulo (mta, stat, ecc.).
 
@@ -211,7 +211,7 @@ nlserver pdump
 
 Controllare l&#39;accesso alle funzioni della console client.
 
-### Passaggio 8 - Importa opzioni e account esterni nell&#39;ambiente di destinazione (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
+### Passaggio 8 - Opzioni di importazione e account esterni nell&#39;ambiente di destinazione (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
 >[!IMPORTANT]
 >
@@ -224,11 +224,11 @@ Per importare la configurazione dal database dell&#39;ambiente di destinazione (
 1. Aprite la console di amministrazione del database ed eliminate gli account esterni (tabella nms:extAccount) il cui ID non è 0 (@id &lt;> 0).
 1. Nella console  Adobe Campaign, importate il pacchetto options_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione.
 
-   Verificare che le opzioni siano state effettivamente aggiornate nel **[!UICONTROL Administration > Platform > Options]** nodo.
+   Verificare che le opzioni siano state effettivamente aggiornate nel nodo **[!UICONTROL Administration > Platform > Options]**.
 
 1. Nella console  Adobe Campaign, importate il file extaccount_dev.xml creato in precedenza tramite la funzionalità del pacchetto di importazione
 
-   Verificate che le banche dati esterne siano state effettivamente importate nel **[!UICONTROL Administration > Platform > External accounts]** .
+   Verificate che i database esterni siano stati effettivamente importati in **[!UICONTROL Administration > Platform > External accounts]** .
 
 ### Passaggio 9 - Riavviate tutti i processi e modificate gli utenti (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
