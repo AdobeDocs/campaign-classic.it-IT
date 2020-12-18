@@ -17,13 +17,13 @@ ht-degree: 4%
 
 # Funzionalità avanzate{#advanced-functionalities}
 
-In qualità di utente tecnico, oltre alle proprietà [](../../reporting/using/properties-of-the-report.md)generali, potete utilizzare funzionalità avanzate per configurare i rapporti, ad esempio:
+In qualità di utente tecnico, oltre alle [proprietà generali](../../reporting/using/properties-of-the-report.md), puoi utilizzare funzionalità avanzate per configurare i rapporti, ad esempio:
 
-* Creare query complesse per elaborare i dati in un&#39;attività **Script** . [Ulteriori informazioni](#script-activity)
+* Create query complesse per elaborare i dati in un&#39;attività **Script**. [Ulteriori informazioni](#script-activity)
 
 * Aggiungere uno script esterno da eseguire sul lato server o client. [Ulteriori informazioni](#external-script)
 
-* Chiama un rapporto con un&#39;attività **Jump** . [Ulteriori informazioni](#calling-up-another-report)
+* Chiama un report con un&#39;attività **Jump**. [Ulteriori informazioni](#calling-up-another-report)
 
 * Aggiungete un parametro URL a un report per renderlo più accessibile. [Ulteriori informazioni](#calling-up-another-report)
 
@@ -37,8 +37,8 @@ Potete fare riferimento ai codici JavaScript che verranno eseguiti sul lato clie
 
 Per eseguire questa operazione:
 
-1. Modificate le proprietà [del](../../reporting/using/properties-of-the-report.md) rapporto e fate clic sul **[!UICONTROL Scripts]**.
-1. Fare clic **[!UICONTROL Add]** e selezionare lo script a cui fare riferimento.
+1. Modificare le proprietà del report [e fare clic su **[!UICONTROL Scripts]**.](../../reporting/using/properties-of-the-report.md)
+1. Fare clic su **[!UICONTROL Add]** e selezionare lo script a cui fare riferimento.
 1. Selezionate quindi la modalità di esecuzione.
 
    Se si aggiungono diversi script, utilizzare le frecce della barra degli strumenti per definire la sequenza di esecuzione.
@@ -47,11 +47,11 @@ Per eseguire questa operazione:
 
 Per una normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript e devono essere compatibili con i browser più comuni. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/web-forms-answers.md).
 
-### Aggiunta di un&#39;attività di script {#script-activity}
+### Aggiunta di un&#39;attività script {#script-activity}
 
-Durante la [progettazione del rapporto](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), utilizzate l&#39; **[!UICONTROL Script]** attività per elaborare i dati e creare facilmente query complesse che non abilitano SQL Language. È possibile immettere direttamente la query nella finestra dello script.
+Durante la [progettazione del report](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), utilizzare l&#39;attività **[!UICONTROL Script]** per elaborare i dati e creare facilmente query complesse che non abilitano SQL Language. È possibile immettere direttamente la query nella finestra dello script.
 
-La **[!UICONTROL Texts]** scheda consente di definire le stringhe di testo. Possono quindi essere utilizzati con la sintassi seguente: **$(Identifier)**. Per ulteriori informazioni sull&#39;uso dei testi, vedere [Aggiunta di un&#39;intestazione e di un piè di pagina](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+La scheda **[!UICONTROL Texts]** consente di definire le stringhe di testo. Possono quindi essere utilizzati con la sintassi seguente: **$(Identifier)**. Per ulteriori informazioni sull&#39;uso dei testi, vedere [Aggiunta di un&#39;intestazione e di un piè di pagina](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ In caso contrario verranno visualizzati solo i dati correnti.
 
 ## Aggiunta di un parametro URL {#defining-additional-settings}
 
-La **[!UICONTROL Parameters]** scheda delle proprietà [del](../../reporting/using/properties-of-the-report.md) rapporto consente di definire impostazioni aggiuntive per il rapporto: queste impostazioni verranno trasmesse all’URL durante la chiamata.
+La scheda **[!UICONTROL Parameters]** delle proprietà del report [consente di definire impostazioni aggiuntive per il report: queste impostazioni verranno trasmesse all’URL durante la chiamata.](../../reporting/using/properties-of-the-report.md)
 
 >[!CAUTION]
 >
@@ -75,25 +75,25 @@ La **[!UICONTROL Parameters]** scheda delle proprietà [del](../../reporting/usi
 
 Per creare una nuova impostazione:
 
-1. Fate clic sul **[!UICONTROL Add]** pulsante e immettete il nome dell’impostazione.
+1. Fare clic sul pulsante **[!UICONTROL Add]** e inserire il nome dell&#39;impostazione.
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. Se necessario, specificate se l&#39;impostazione sarà obbligatoria o meno.
 
-1. Select the type of setting you want to create: **[!UICONTROL Filter]** or **[!UICONTROL Variable]**.
+1. Selezionate il tipo di impostazione da creare: **[!UICONTROL Filter]** o **[!UICONTROL Variable]**.
 
-   L&#39; **[!UICONTROL Filter entities]** opzione consente di utilizzare un campo del database come parametro.
+   L&#39;opzione **[!UICONTROL Filter entities]** consente di utilizzare un campo del database come parametro.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
-   I dati vengono recuperati direttamente a livello di entità: **ctx/receive/@account**.
+   I dati vengono recuperati direttamente a livello di entità: **ctx/destinatario/@account**.
 
-   L&#39; **[!UICONTROL Variable]** opzione consente di creare o selezionare una variabile che verrà passata come parametro dell&#39;URL e che può essere utilizzata nei filtri.
+   L&#39;opzione **[!UICONTROL Variable]** consente di creare o selezionare una variabile che verrà passata come parametro dell&#39;URL e che potrà essere utilizzata nei filtri.
 
-Questo **[!UICONTROL Response HTTP headers]** consente di evitare il clic quando si inserisce la pagina del rapporto in una pagina HTML utilizzando iframe. Per evitare il clickjacking, potete scegliere il **[!UICONTROL X-Frame-options header]** comportamento:
+**[!UICONTROL Response HTTP headers]** consente di impedire il clickjacking quando si inserisce la pagina del report in una pagina HTML utilizzando iframe. Per evitare il clickjacking, potete scegliere il comportamento **[!UICONTROL X-Frame-options header]**:
 
-* **[!UICONTROL None]**: Il rapporto non avrà alcun risultato **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL None]**: Il rapporto non avrà alcun risultato  **[!UICONTROL X-Frame-options header]**.
 * **[!UICONTROL Same as origin]**: Impostato per impostazione predefinita per i nuovi rapporti e i rapporti ripubblicati. Il nome host sarà uguale all&#39;URL del report.
 * **[!UICONTROL Deny]**: Il rapporto non può essere incluso in una pagina HTML utilizzando iframe.
 
@@ -101,11 +101,11 @@ Questo **[!UICONTROL Response HTTP headers]** consente di evitare il clic quando
 
 ## Aggiunta di variabili {#adding-variables}
 
-La **[!UICONTROL Variables]** scheda contiene l&#39;elenco delle variabili configurate nel rapporto. Queste variabili sono esposte nel contesto del rapporto e possono essere utilizzate nei calcoli.
+La scheda **[!UICONTROL Variables]** contiene l&#39;elenco delle variabili configurate nel rapporto. Queste variabili sono esposte nel contesto del rapporto e possono essere utilizzate nei calcoli.
 
-Fate clic sul **[!UICONTROL Add]** pulsante per creare una nuova variabile.
+Fate clic sul pulsante **[!UICONTROL Add]** per creare una nuova variabile.
 
-Per visualizzare la definizione di una variabile, selezionatela e fate clic sul **[!UICONTROL Detail...]** pulsante.
+Per visualizzare la definizione di una variabile, selezionatela e fate clic sul pulsante **[!UICONTROL Detail...]**.
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
@@ -116,6 +116,6 @@ Nell’esempio seguente, scoprirete come aggiungere un parametro &quot;_type&quo
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## Chiamata di un altro rapporto {#calling-up-another-report}
+## Chiamata a un altro report {#calling-up-another-report}
 
 Un&#39;attività **Jump** è come una transizione senza una freccia: consente di passare da un&#39;attività all&#39;altra o di accedere a un altro rapporto.
