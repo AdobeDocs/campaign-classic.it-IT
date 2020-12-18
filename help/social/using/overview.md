@@ -23,6 +23,6 @@ Social Marketing consente di inviare le consegne alle varie pagine Facebook e ag
 >
 > Adobe Campaign chiede di rispettare i termini di servizio comunicati da Facebook e Twitter in merito alla consegna dei messaggi.
 >
->Prima di inviare le pubblicazioni, è necessario attenersi ai passaggi di configurazione descritti in [Avvio dei flussi di lavoro](../../social/using/starting-workflows.md).
+>Prima di inviare pubblicazioni, è necessario attenersi ai passaggi di configurazione descritti in [Avvio dei flussi di lavoro](../../social/using/starting-workflows.md).
 
 In questa sezione vengono descritti gli elementi specifici per la distribuzione su Facebook e Twitter. Tutti gli elementi identici alle comunicazioni e-mail sono descritti in [questa sezione](../../delivery/using/about-email-channel.md).
