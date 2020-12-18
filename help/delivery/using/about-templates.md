@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Per essere riutilizzata, è possibile salvare una configurazione di consegna in un modello di consegna. Il modello può contenere una configurazione completa o parziale della consegna.
 
-Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato in un determinato momento, all&#39;arrivo di un file presso un server, ecc.). I modelli di consegna possono essere configurati tramite il **[!UICONTROL Resources > Templates > Delivery templates]** nodo nella struttura.
+Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato in un determinato momento, all&#39;arrivo di un file presso un server, ecc.). I modelli di consegna possono essere configurati tramite il nodo **[!UICONTROL Resources > Templates > Delivery templates]** nella struttura.
 
 ![](assets/s_user_template_list.png)
 
@@ -35,4 +35,4 @@ Esistono due tipi di modello:
 
 >[!NOTE]
 >
->I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando create un servizio informazioni, potete collegare un modello di consegna per i messaggi di conferma: potete quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura delle sottoscrizioni. Per ulteriori informazioni, vedere [Selezione di una mappatura](../../delivery/using/selecting-a-target-mapping.md) di destinazione e [Informazioni su servizi e iscrizioni](../../delivery/using/about-services-and-subscriptions.md).
+>I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando create un servizio informazioni, potete collegare un modello di consegna per i messaggi di conferma: potete quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura delle sottoscrizioni. Per ulteriori informazioni, vedere [Selezione di una mappatura di destinazione](../../delivery/using/selecting-a-target-mapping.md) e [Informazioni su servizi e iscrizioni](../../delivery/using/about-services-and-subscriptions.md).
