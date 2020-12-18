@@ -19,9 +19,9 @@ ht-degree: 1%
 
 In questo documento vengono delineate le raccomandazioni chiave durante la progettazione del modello dati Adobe Campaign .
 
-Per una migliore comprensione delle tabelle integrate in Campaign e della loro interazione, fai riferimento alla sezione del modello [dati](../../configuration/using/about-data-model.md) Campaign Classic.
+Per una migliore comprensione delle tabelle integrate di Campaign e della loro interazione, fare riferimento alla sezione [Campaign Classic data model](../../configuration/using/about-data-model.md).
 
-Leggi [questa documentazione](../../configuration/using/about-schema-reference.md) per iniziare a usare gli schemi di Campaign. Scoprite come configurare gli schemi di estensione per estendere il modello di dati concettuali del database Adobe Campaign  in [questo documento](../../configuration/using/about-schema-edition.md).
+Leggi [questa documentazione](../../configuration/using/about-schema-reference.md) per iniziare a usare gli schemi delle campagne. Scoprite come configurare gli schemi di estensione per estendere il modello di dati concettuali del database Adobe Campaign  in [questo documento](../../configuration/using/about-schema-edition.md).
 
 ## Panoramica {#overview}
 
@@ -33,21 +33,21 @@ Questo documento contiene esempi di utilizzo comuni e procedure ottimali per app
 
  Adobe Campaign Standard è un potente sistema di gestione delle campagne multicanale che consente di allineare le strategie online e offline per creare esperienze cliente personalizzate.
 
-### Metodo incentrato sul cliente {#customer-centric-approach}
+### Approccio incentrato sul cliente {#customer-centric-approach}
 
-Mentre la maggior parte dei provider di servizi e-mail comunica ai clienti tramite un approccio incentrato sugli elenchi,  Adobe Campaign si avvale di un database relazionale per sfruttare una visione più ampia dei clienti e dei loro attributi.
+Mentre la maggior parte dei provider di servizi e-mail comunica ai clienti tramite un approccio incentrato sugli elenchi,  Adobe Campaign si affida a un database relazionale per sfruttare una visione più ampia dei clienti e dei loro attributi.
 
-Questo approccio incentrato sul cliente è riportato nel grafico seguente. La tabella **Destinatario** in grigio rappresenta la tabella cliente principale intorno alla quale viene creato tutto:
+Questo approccio incentrato sul cliente è riportato nel grafico seguente. La tabella **Recipient** in grigio rappresenta la tabella cliente principale intorno alla quale viene creato tutto:
 
 ![](assets/customer-centric-data-model.png)
 
-Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla **[!UICONTROL Documentation]** scheda.
+Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla scheda **[!UICONTROL Documentation]**.
 
-In [questo documento](../../configuration/using/data-model-description.md)viene presentato  modello dati predefinito Adobe Campaign.
+Il modello dati predefinito  Adobe Campaign è presentato in [questo documento](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Adobe Campaign Classic consente di creare una tabella cliente personalizzata. Tuttavia, nella maggior parte dei casi, si consiglia di utilizzare la tabella [](../../configuration/using/about-data-model.md#default-recipient-table) Destinatario standard che dispone già di tabelle e funzionalità aggiuntive precompilate.
+>Adobe Campaign Classic consente di creare una tabella cliente personalizzata. Tuttavia, nella maggior parte dei casi, si consiglia di utilizzare la [tabella destinatari](../../configuration/using/about-data-model.md#default-recipient-table) standard che dispone già di tabelle e funzionalità aggiuntive preconfigurate.
 
 ### Dati per  Adobe Campaign {#data-for-campaign}
 
@@ -59,9 +59,9 @@ Quali dati devono essere inviati a  Adobe Campaign? È fondamentale determinare 
 
 Per decidere se un attributo sarebbe necessario o meno in  Adobe Campaign, chiedetevi se rientrerebbe in una delle seguenti categorie:
 
-* Attributo utilizzato per la **segmentazione**
-* Attributo utilizzato per i processi **di gestione dei** dati (ad esempio, calcolo aggregato)
-* Attributo utilizzato per la **personalizzazione**
+* Attributo utilizzato per **segmentazione**
+* Attributo utilizzato per **processi di gestione dei dati** (ad esempio, per il calcolo aggregato)
+* Attributo utilizzato per **personalizzazione**
 
 Se non si rientra in nessuno di questi, molto probabilmente non sarà necessario questo attributo in  Adobe Campaign.
 
@@ -70,9 +70,9 @@ Se non si rientra in nessuno di questi, molto probabilmente non sarà necessario
 Per garantire una buona architettura e prestazioni del sistema, segui le best practice riportate di seguito per configurare i dati in  Adobe Campaign.
 
 * Una tabella di grandi dimensioni deve avere principalmente campi numerici e contenere collegamenti alle tabelle di riferimento (quando si utilizza un elenco di valori).
-* L&#39;attributo **espr** consente di definire un attributo di schema come campo calcolato anziché come valore di set fisico in una tabella. In questo modo è possibile accedere alle informazioni in un formato diverso (ad esempio per l’età e la data di nascita) senza dover memorizzare entrambi i valori. Questo è un buon modo per evitare la duplicazione di campi. Ad esempio, la tabella Destinatario utilizza un&#39;espressione per il dominio, già presente nel campo e-mail.
-* Tuttavia, quando il calcolo dell&#39;espressione è complesso, si consiglia di non utilizzare l&#39;attributo **espr** come calcolo al volo potrebbe avere un impatto sulle prestazioni delle query.
-* Il tipo **XML** è un metodo utile per evitare di creare troppi campi. ma occupa anche spazio su disco in quanto utilizza una colonna CLOB nel database. Può inoltre causare query SQL complesse e avere un impatto sulle prestazioni.
+* L&#39;attributo **expr** consente di definire un attributo di schema come campo calcolato anziché come valore di set fisico in una tabella. In questo modo è possibile accedere alle informazioni in un formato diverso (ad esempio per l’età e la data di nascita) senza dover memorizzare entrambi i valori. Questo è un buon modo per evitare la duplicazione di campi. Ad esempio, la tabella Destinatario utilizza un&#39;espressione per il dominio, già presente nel campo e-mail.
+* Tuttavia, quando il calcolo dell&#39;espressione è complesso, si consiglia di non utilizzare l&#39;attributo **expr** come calcolo al volo potrebbe influire sulle prestazioni delle query.
+* Il tipo **XML** è un modo corretto per evitare di creare troppi campi. ma occupa anche spazio su disco in quanto utilizza una colonna CLOB nel database. Può inoltre causare query SQL complesse e avere un impatto sulle prestazioni.
 * La lunghezza di un campo **stringa** deve essere sempre definita con la colonna. Per impostazione predefinita, la lunghezza massima in  Adobe Campaign è di 255, ma  Adobe consiglia di ridurre la lunghezza del campo se si è già certi che la dimensione non supererà una lunghezza inferiore.
 * È accettabile avere un campo più breve in  Adobe Campaign rispetto a quello nel sistema di origine, se si è certi che la dimensione nel sistema di origine è stata sopravvalutata e non sarebbe stato raggiunto. Ciò potrebbe significare una stringa più corta o un numero intero più piccolo in  Adobe Campaign.
 
@@ -82,15 +82,15 @@ Un campo deve essere memorizzato in una tabella se ha uno scopo di targeting o p
 
 Per le istanze ibride e locali, FDA (Federated Data Access, una funzione opzionale che consente di accedere ai dati esterni) copre la necessità di aggiungere un campo &quot;on-the-fly&quot; durante un processo della campagna. Non è necessario importare tutto se si dispone di FDA. Per ulteriori informazioni, vedere [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
 
-### Scelta delle chiavi {#choice-of-keys}
+### Scelta di tasti {#choice-of-keys}
 
-Oltre all&#39; **autopk** definito per impostazione predefinita nella maggior parte delle tabelle, è consigliabile aggiungere alcune chiavi logiche o aziendali (numero account, numero cliente e così via). Può essere utilizzato successivamente per le importazioni/riconciliazione o per i pacchetti di dati. For more on this, see [Identifiers](#identifiers).
+Oltre al **autopk** definito per impostazione predefinita nella maggior parte delle tabelle, è consigliabile aggiungere alcune chiavi logiche o aziendali (numero di conto, numero di cliente e così via). Può essere utilizzato successivamente per le importazioni/riconciliazione o per i pacchetti di dati. Per ulteriori informazioni, vedere [Identificatori](#identifiers).
 
 Le chiavi efficienti sono essenziali per le prestazioni. I tipi di dati numerici devono sempre essere preferiti come chiavi per le tabelle.
 
 Per il database SQLServer, è possibile utilizzare &quot;indice cluster&quot; se sono necessarie prestazioni. Poiché  Adobe non è in grado di gestire questo problema, è necessario crearlo in SQL.
 
-### tablespace dedicate {#dedicated-tablespaces}
+### Spazi da tavolo dedicati {#dedicated-tablespaces}
 
 L&#39;attributo tablespace nello schema consente di specificare una tablespace dedicata per una tabella.
 
@@ -106,11 +106,11 @@ La tabella seguente descrive questi identificatori e la loro funzione.
 
 | Identificatore | Descrizione | Best practice |
 |--- |--- |--- |
-| Id | <ul><li>L’ID è la chiave primaria fisica di una tabella Adobe Campaign . Per le tabelle pronte all&#39;uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign . </li><li>Un ID generato automaticamente può essere visibile in una definizione dello schema. Cercate l&#39;attributo *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o in una definizione di pacchetto.</li><li>Non si deve presumere che l&#39;ID sia sempre un numero crescente.</li><li>L’ID in una tabella out-of-the-box è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
-| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un&#39;altra istanza di  Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinominare il nome del record generato da  Adobe Campaign se l&#39;oggetto è destinato alla distribuzione da un ambiente a un altro.</li><li>Quando un oggetto ha un attributo spazio nomi (*schema* , ad esempio), lo spazio nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Quando un oggetto non ha uno spazio nomi (ad esempio,*flusso* di lavoro o *consegna* ), questa nozione dello spazio nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzate caratteri speciali come lo spazio &quot;&quot;, la semicolona &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri vengono sostituiti da un carattere di sottolineatura &quot;_&quot; (caratteri consentiti). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
+| Id | <ul><li>L’ID è la chiave primaria fisica di una tabella Adobe Campaign . Per le tabelle pronte all&#39;uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign . </li><li>Un ID generato automaticamente può essere visibile in una definizione dello schema. Cercare l&#39;attributo *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o in una definizione di pacchetto.</li><li>Non si deve presumere che l&#39;ID sia sempre un numero crescente.</li><li>L’ID in una tabella out-of-the-box è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
+| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un&#39;altra istanza di  Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinominare il nome del record generato da  Adobe Campaign se l&#39;oggetto è destinato alla distribuzione da un ambiente a un altro.</li><li>Quando un oggetto ha un attributo spazio nomi (*schema* ad esempio), lo spazio nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Se un oggetto non dispone di uno spazio dei nomi ( ad esempio *workflow* o *consegna*), questa nozione dello spazio dei nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzate caratteri speciali come lo spazio &quot;&quot;, la semicolona &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri vengono sostituiti da un carattere di sottolineatura &quot;_&quot; (caratteri consentiti). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
 | Etichetta | <ul><li>L&#39;etichetta è l&#39;identificatore aziendale di un oggetto o di un record in  Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Si tratta della soluzione più semplice da utilizzare per identificare un record o un oggetto per un utente Adobe Campaign .</li></ul> |
 
-## Chiavi interne personalizzate {#custom-internal-keys}
+## Tasti interni personalizzati {#custom-internal-keys}
 
 Le chiavi primarie sono necessarie per ogni tabella creata in  Adobe Campaign.
 
@@ -132,10 +132,10 @@ Quando si crea una tabella personalizzata, sono disponibili due opzioni:
 
  chiave primaria Adobe Campaign è un ID generato automaticamente per tutte le tabelle pronte all&#39;uso e può essere lo stesso per le tabelle personalizzate. Per ulteriori informazioni, consulta [questa sezione](#identifiers).
 
-Questo valore viene ricavato da quella che viene chiamata **sequenza**, ovvero un oggetto di database utilizzato per generare una sequenza numerica.
+Questo valore viene ricavato da una **sequenza**, ovvero da un oggetto di database utilizzato per generare una sequenza numerica.
 
 Esistono due tipi di sequenze:
-* **Condiviso**: più di una tabella sceglierebbe il proprio ID dalla stessa sequenza. Significa che se un id &#39;X&#39; viene utilizzato da una tabella, nessun&#39;altra tabella che condivide la stessa sequenza avrà un record con quell&#39;id &#39;X&#39;. **XtkNewId** è la sequenza condivisa predefinita disponibile in  Adobe Campaign.
+* **Condiviso**: più di una tabella sceglierebbe il proprio ID dalla stessa sequenza. Significa che se un id &#39;X&#39; viene utilizzato da una tabella, nessun&#39;altra tabella che condivide la stessa sequenza avrà un record con quell&#39;id &#39;X&#39;. **** XtkNewIdis la sequenza condivisa predefinita disponibile in  Adobe Campaign.
 * **Dedicato**: una sola tabella sta raccogliendo i relativi ID dalla sequenza. Il nome della sequenza in genere contiene il nome della tabella.
 
 >[!IMPORTANT]
@@ -151,8 +151,8 @@ Quando viene creata una tabella personalizzata in  Adobe Campaign con una chiave
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2.1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando ID negativi. Questo dovrebbe essere utilizzato con cura e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign Classic nelle query SQL generate.
 
 **Argomenti correlati:**
-* Per ulteriori informazioni sulla funzione di generazione **automatica della** sequenza, consultate [questo documento](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
-* Per ulteriori informazioni sull’esaurimento delle sequenze, guardate [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+* Per ulteriori informazioni sulla funzione di generazione automatica della sequenza **Sequenza**, vedere [questo documento](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
+* Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guardate [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -177,18 +177,18 @@ Tuttavia, tenete presente quanto segue:
 
 La gestione degli indici può diventare molto complessa, quindi è importante capire come funzionano. Per illustrare questa complessità, prendiamo un esempio di base, ad esempio la ricerca dei destinatari tramite filtro sul nome e il cognome. Per eseguire questa operazione:
 1. Passate alla cartella in cui sono elencati tutti i destinatari presenti nel database. Per ulteriori informazioni, consulta [Gestione dei profili di ](../../platform/using/managing-profiles.md).
-1. Fare clic con il pulsante destro del mouse sul **[!UICONTROL First name]** campo.
+1. Fare clic con il pulsante destro del mouse sul campo **[!UICONTROL First name]**.
 1. Seleziona **[!UICONTROL Filter on this field]**.
 
    ![](assets/data-model-index-example.png)
 
-1. Ripetere questa operazione per il **[!UICONTROL Last name]** campo.
+1. Ripetere questa operazione per il campo **[!UICONTROL Last name]**.
 
 I due filtri corrispondenti vengono aggiunti nella parte superiore dello schermo.
 
 ![](assets/data-model-index-search.png)
 
-Ora è possibile eseguire il filtro di ricerca sui **[!UICONTROL First name]** campi e **[!UICONTROL Last name]** in base alle diverse condizioni del filtro.
+Ora è possibile eseguire il filtraggio delle ricerche nei campi **[!UICONTROL First name]** e **[!UICONTROL Last name]** in base alle diverse condizioni del filtro.
 
 Ora, per velocizzare la ricerca su questi filtri, è possibile aggiungere indici. Ma quali indici dovrebbero essere utilizzati?
 
@@ -228,7 +228,7 @@ Per impostazione predefinita,  Adobe Campaign crea un collegamento utilizzando l
 
 Un indice verrà aggiunto agli attributi utilizzati in un collegamento.
 
-I collegamenti creati e modificati per ultimo sono presenti in molte tabelle. È possibile disattivare l&#39;indice utilizzando l&#39;attributo noDbIndex sul collegamento, se queste informazioni non vengono utilizzate dall&#39;azienda.
+Il   i collegamenti creati da e modificati da ultimo sono presenti in molte tabelle. È possibile disattivare l&#39;indice utilizzando l&#39;attributo noDbIndex sul collegamento, se queste informazioni non vengono utilizzate dall&#39;azienda.
 
 ### Cardinalità {#cardinality}
 
@@ -251,9 +251,9 @@ Per impostazione predefinita,  registri di consegna e tracciamento Adobe Campaig
 * Se si desidera mantenere i log più lunghi, questa decisione deve essere presa attentamente in base alle dimensioni del database e al volume dei messaggi inviati. Come promemoria,  sequenza Adobe Campaign è un numero intero a 32 bit.
 * Si raccomanda di non avere più di 1 miliardo di record alla volta in queste tabelle (circa il 50% dei 2,14 miliardi di ID disponibili) per limitare i rischi di consumo di tutti gli ID disponibili. Per ridurre la durata di conservazione al di sotto dei 180 giorni, è necessario che alcuni clienti utilizzino questa funzione.
 
-Ulteriori informazioni sulla conservazione dei dati sono disponibili nelle linee guida [sulla privacy e la sicurezza delle](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent)campagne.
+Ulteriori informazioni sulla conservazione dei dati sono disponibili in [Campaign Privacy and Security guidelines](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
 
-Ulteriori informazioni sul flusso di lavoro di pulizia della base dati delle campagne [in questa sezione](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul flusso di lavoro di pulizia della base dati della campagna [in questa sezione](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -302,12 +302,12 @@ Di seguito sono riportate alcune best practice comuni da seguire per la progetta
 
 La dimensione della tabella è una combinazione del numero di record e del numero di colonne per record. Entrambi possono influire sulle prestazioni delle query.
 
-* Una tabella di **piccole dimensioni** è simile alla tabella Consegna.
-* Una tabella di dimensioni **** medie corrisponde alla dimensione della tabella Destinatario. Ha un record per cliente.
-* Una tabella di **grandi dimensioni** è simile alla tabella di registro Ampio. Ha molti record per cliente.
+* Una tabella **di piccole dimensioni** è simile alla tabella Consegna.
+* Una tabella di **dimensioni medie** corrisponde alla dimensione della tabella Recipient. Ha un record per cliente.
+* Una tabella di **grandi dimensioni** è simile alla tabella di registro di grandi dimensioni. Ha molti record per cliente.
 Ad esempio, se il database contiene 10 milioni di destinatari, la tabella di registro Ampio contiene da 100 a 200 milioni di messaggi e la tabella Consegna contiene poche migliaia di record.
 
-In PostgreSQL, una riga non deve superare gli 8 KB per evitare il meccanismo [TOAST](https://wiki.postgresql.org/wiki/TOAST) . Pertanto, cercare di ridurre il più possibile il numero di colonne e la dimensione di ogni riga per mantenere le prestazioni ottimali del sistema (memoria e CPU).
+In PostgreSQL, una riga non deve superare gli 8 KB per evitare il meccanismo [TOAST](https://wiki.postgresql.org/wiki/TOAST). Pertanto, cercare di ridurre il più possibile il numero di colonne e la dimensione di ogni riga per mantenere le prestazioni ottimali del sistema (memoria e CPU).
 
 Anche il numero di righe influisce sulle prestazioni. Il database Adobe Campaign  non è progettato per memorizzare i dati storici non utilizzati attivamente per il targeting o la personalizzazione; si tratta di un database operativo.
 
@@ -325,9 +325,9 @@ Esempio:
 ![](assets/transaction-table-example.png)
 
 In questo esempio:
-* Le tabelle *Transazione* e Articolo ** Transazione sono grandi: più di 10 milioni.
-* Le tabelle *Prodotto* e *Store* sono più piccole: meno di 10.000.
-* L&#39;etichetta e il riferimento del prodotto sono stati inseriti nella tabella *Prodotto* .
-* La tabella Articolo ** transazione ha solo un collegamento alla tabella *Prodotto* , che è numerica.
+* Le tabelle *Transaction* e *Transaction Item* sono grandi: più di 10 milioni.
+* Le tabelle *Product* e *Store* sono più piccole: meno di 10.000.
+* L&#39;etichetta e il riferimento del prodotto sono stati inseriti nella tabella *Product*.
+* La tabella *Elemento transazione* ha solo un collegamento alla tabella *Prodotto*, che è numerica.
 
 <!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
