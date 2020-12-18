@@ -27,13 +27,13 @@ Una volta completato il modello di messaggio creato nell&#39;istanza di controll
 >
 >Quando si pubblicano modelli di messaggi transazionali, le regole di tipologia vengono automaticamente pubblicate sulle istanze di esecuzione.
 
-1. Nell&#39;istanza di controllo, passare alla **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
+1. Nell&#39;istanza di controllo, passare alla cartella **[!UICONTROL Message Center > Transactional message templates]** della struttura.
 1. Selezionate il modello da pubblicare sulle istanze di esecuzione.
 1. Fai clic su **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare agli eventi batch e di tipo in tempo reale vengono creati nella struttura dell&#39;istanza di produzione nella **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** cartella.
+Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare agli eventi batch e di tipo in tempo reale vengono creati nella struttura dell&#39;istanza di produzione nella cartella **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
