@@ -19,14 +19,14 @@ ht-degree: 2%
 
 I motivi di un problema di connessione possono essere molteplici e dipendono da diversi contesti.
 
-È possibile provare i seguenti test e se il problema di connessione persiste, contattare il supporto **Adobe Campaign**.
+È possibile provare i seguenti test e se il problema di connessione persiste, contattare il **supporto Adobe Campaign**.
 
 
 
 <table> 
 <thead> 
 <tr> 
-<th>Verifiche<br /> </th> 
+<th>Checks<br /> </th> 
 <th>Risoluzione<br /> </th> 
 </tr> 
 </thead> 
@@ -45,7 +45,8 @@ I motivi di un problema di connessione possono essere molteplici e dipendono da 
 </tr>
 <tr> 
 <td> Adobe Campaign è stato integrato correttamente?</td> 
-<td>Accedi a: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='AAAA/MM/GG HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione è presa in considerazione.</td>
+<td>Accedi a: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='AAAA/MM/GG HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione viene presa in considerazione.</td>
 </tr>
 <tr> 
 <td>Connettiti al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
