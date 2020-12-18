@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Best practice per i cubi{#concepts-and-methodology}
+# Procedure ottimali per i cubi{#concepts-and-methodology}
 
 ## Binding dei dati {#data-binning}
 
@@ -23,9 +23,9 @@ Il binding consente di semplificare la visualizzazione dei dati raggruppando i v
 
 Nel complesso, sono disponibili tre tipi di binding:
 
-1. Utilizzo di intervalli di valori definiti manualmente. Ad esempio, età, carrello acquisti medio, numero di consegne aperte, ecc.). For more on this, refer to [Defining each bin](#defining-each-bin).
-1. In modo dinamico, a seconda dei valori di un&#39;enumerazione: visualizza solo i valori contenuti nell&#39;enumerazione, tutti gli altri valori sono raggruppati in &#39;Others&#39;. Per ulteriori informazioni, vedere Gestione [dinamica dei](#dynamically-managing-bins)contenitori.
-1. Utilizzando intervalli di valori, tutti gli altri vengono raggruppati. Ad esempio, bambini dai 18 ai 25 anni, dai 26 ai 59 anni e gli altri. Per ulteriori informazioni, vedere [Creazione di intervalli](#creating-value-ranges)di valori.
+1. Utilizzo di intervalli di valori definiti manualmente. Ad esempio, età, carrello acquisti medio, numero di consegne aperte, ecc.). Per ulteriori informazioni, vedere [Definizione di ciascun bin](#defining-each-bin).
+1. In modo dinamico, a seconda dei valori di un&#39;enumerazione: visualizza solo i valori contenuti nell&#39;enumerazione, tutti gli altri valori sono raggruppati in &#39;Others&#39;. Per ulteriori informazioni, vedere [Gestione dinamica dei contenitori](#dynamically-managing-bins).
+1. Utilizzando intervalli di valori, tutti gli altri vengono raggruppati. Ad esempio, bambini dai 18 ai 25 anni, dai 26 ai 59 anni e gli altri. Per ulteriori informazioni, vedere [Creazione di intervalli di valori](#creating-value-ranges).
 
 Per abilitare il binning, selezionare la casella appropriata al momento della creazione della quota.
 
@@ -37,11 +37,11 @@ Per abilitare il binning, selezionare la casella appropriata al momento della cr
 
 ### Definizione di ciascun raccoglitore {#defining-each-bin}
 
-Per creare ciascun raccoglitore singolarmente, selezionate l&#39; **[!UICONTROL Define each bin]** opzione e utilizzate la tabella per creare i vari contenitori.
+Per creare ciascun raccoglitore singolarmente, selezionate l&#39;opzione **[!UICONTROL Define each bin]** e utilizzate la tabella per creare i vari contenitori.
 
 ![](assets/s_advuser_cube_class_01.png)
 
-Fate clic sul **[!UICONTROL Add]** pulsante per creare un nuovo raccoglitore ed elencare i valori che verranno raggruppati nel raccoglitore.
+Fate clic sul pulsante **[!UICONTROL Add]** per creare un nuovo raccoglitore ed elencare i valori che verranno raggruppati nel raccoglitore.
 
 ![](assets/s_advuser_cube_class_02.png)
 
@@ -49,9 +49,9 @@ Nell&#39;esempio seguente, le lingue sono raggruppate in tre categorie: Inglese/
 
 ![](assets/s_advuser_cube_class_03.png)
 
-Potete usare una maschera SQL per combinare più valori in un filtro. A questo scopo, controllate **[!UICONTROL Yes]** nella **[!UICONTROL Use an SQL mask]** colonna e immettete il filtro SQL da applicare nella **[!UICONTROL Value or expression]** colonna.
+Potete usare una maschera SQL per combinare più valori in un filtro. A questo scopo, selezionare **[!UICONTROL Yes]** nella colonna **[!UICONTROL Use an SQL mask]** e immettere il filtro SQL da applicare nella colonna **[!UICONTROL Value or expression]**.
 
-Nell&#39;esempio seguente, tutti i domini e-mail che iniziano con **yahoo** (yahoo.fr, yahoo.com, yahoo.be, ecc.), o con **ymail** (ymail.com, ymail.eu, ecc.) verranno raggruppati sotto l&#39;etichetta **YAHOO!**, nonché gli indirizzi con il dominio **rocketmail.com** .
+Nell&#39;esempio seguente, tutti i domini e-mail che iniziano con **yahoo** (yahoo.fr, yahoo.com, yahoo.be, ecc.) oppure con **ymail** (ymail.com, ymail.eu, ecc.) verranno raggruppati sotto l&#39;etichetta **YAHOO!**, nonché gli indirizzi con  **rocketmail.** comdomain.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -62,7 +62,7 @@ I valori possono essere gestiti in modo dinamico tramite enumerazioni. Ciò sign
 Per creare questo tipo di associazione di valori, procedere come segue:
 
 1. Crea una nuova dimensione e abilita il collegamento.
-1. Selezionare l&#39; **[!UICONTROL Dynamically link the values to an enumeration]** opzione e selezionare l&#39;enumerazione corrispondente.
+1. Selezionare l&#39;opzione **[!UICONTROL Dynamically link the values to an enumeration]** e selezionare l&#39;enumerazione corrispondente.
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -72,15 +72,15 @@ Per creare questo tipo di associazione di valori, procedere come segue:
 
 Potete raggruppare i valori in intervalli in base a un intervallo desiderato.
 
-Per definire manualmente gli intervalli, fate clic sul **[!UICONTROL Add]** pulsante e selezionate **[!UICONTROL Define a range]** :
+Per definire gli intervalli manualmente, fare clic sul pulsante **[!UICONTROL Add]** e selezionare **[!UICONTROL Define a range]** :
 
 ![](assets/s_advuser_cube_class_05.png)
 
-Quindi specificate i limiti inferiore e superiore e fate clic **[!UICONTROL Ok]** per confermare.
+Quindi specificate i limiti inferiore e superiore e fate clic su **[!UICONTROL Ok]** per confermare.
 
-### Generazione automatica dei raccoglitori {#generating-bins-automatically}
+### Generazione automatica di raccoglitori {#generating-bins-automatically}
 
-È inoltre possibile generare automaticamente i raccoglitori. A tale scopo, fare clic sul **[!UICONTROL Generate bins...]** collegamento.
+È inoltre possibile generare automaticamente i raccoglitori. A tale scopo, fare clic sul collegamento **[!UICONTROL Generate bins...]**.
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -96,7 +96,7 @@ Potete effettuare le seguenti operazioni:
 
 In questo caso, il filtro selezionato nello schema dei fatti viene ignorato.
 
-### Enumerazioni {#enumerations}
+### Enumerazione {#enumerations}
 
 Per migliorare la pertinenza e la leggibilità di un rapporto,  Adobe Campaign consente di creare enumerazioni specifiche per raggruppare valori diversi nello stesso raccoglitore. Queste enumerazioni, riservate al binning, fanno riferimento ai cubi visualizzati nei report.
 
@@ -108,17 +108,17 @@ Viene creato utilizzando il seguente modello:
 
 ![](assets/nmx_enum_domain.png)
 
-Per creare un rapporto utilizzando questa enumerazione, crea un cubo utilizzando la **[!UICONTROL Email domain]** dimensione. Choose the **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. Quindi selezionate l&#39;enumerazione **Domains** come mostrato sopra. Tutti i valori privi di alias specificato verranno raggruppati sotto l&#39;etichetta **Altri** .
+Per creare un rapporto utilizzando questa enumerazione, crea un cubo utilizzando la dimensione **[!UICONTROL Email domain]**. Scegliere l&#39;opzione **[!UICONTROL Enable binning]**, quindi **[!UICONTROL Dynamically link the values to an enumeration]**. Selezionare quindi l&#39;enumerazione **Domains** come illustrato sopra. Tutti i valori privi di alias specificato verranno raggruppati sotto l&#39;etichetta **Others**.
 
 ![](assets/nmx_add_dimension.png)
 
 Quindi, crea un rapporto basato su questo Cubo per visualizzare i valori.
 
-È sufficiente modificare l&#39;enumerazione per aggiornare il rapporto correlato. Ad esempio, create il valore **Adobe** e aggiungete l&#39;alias **adobe.com** ; il rapporto viene aggiornato automaticamente con il valore  Adobe a livello di enumerazione.
+È sufficiente modificare l&#39;enumerazione per aggiornare il rapporto correlato. Ad esempio, create il valore **Adobe** e aggiungete l&#39;alias **adobe.com**; il rapporto viene aggiornato automaticamente con il valore  Adobe a livello di enumerazione.
 
 ![](assets/nmx_add_alias.png)
 
-L&#39; **[!UICONTROL Domains]** enumerazione viene utilizzata per generare rapporti incorporati che visualizzano l&#39;elenco dei domini. Per adattare il contenuto di questi rapporti, potete modificare questo elenco.
+L&#39;enumerazione **[!UICONTROL Domains]** viene utilizzata per generare report incorporati che visualizzano l&#39;elenco dei domini. Per adattare il contenuto di questi rapporti, potete modificare questo elenco.
 
 Puoi creare altre enumerazioni riservate al binning e utilizzarle in altri Cubi: tutti i valori alias verranno raggruppati nei contenitori specificati nella prima scheda di enumerazione.
 
@@ -138,7 +138,7 @@ Gli aggregati sono definiti nella scheda pertinente di ciascun cubo.
 
 Per creare un nuovo aggregato, procedere come segue:
 
-1. Fare clic sulla **[!UICONTROL Aggregates]** scheda del cubo, quindi fare clic sul **[!UICONTROL Add]** pulsante.
+1. Fare clic sulla scheda **[!UICONTROL Aggregates]** del cubo, quindi fare clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -147,12 +147,12 @@ Per creare un nuovo aggregato, procedere come segue:
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. Selezionare una dimensione e un livello. Ripetete questo processo per ogni dimensione e livello.
-1. Fare clic sulla **[!UICONTROL Workflow]** scheda per creare il flusso di lavoro di aggregazione.
+1. Fare clic sulla scheda **[!UICONTROL Workflow]** per creare il flusso di lavoro di aggregazione.
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * L&#39; **[!UICONTROL Scheduler]** attività consente di definire la frequenza degli aggiornamenti di calcolo. Il pianificatore è dettagliato in [questa sezione](../../workflow/using/scheduler.md).
-   * L&#39; **[!UICONTROL Aggregate update]** attività consente di selezionare la modalità di aggiornamento da applicare: pieno o parziale.
+   * L&#39;attività **[!UICONTROL Scheduler]** consente di definire la frequenza degli aggiornamenti di calcolo. Il pianificatore è dettagliato in [questa sezione](../../workflow/using/scheduler.md).
+   * L&#39;attività **[!UICONTROL Aggregate update]** consente di selezionare la modalità di aggiornamento da applicare: pieno o parziale.
 
       Per impostazione predefinita, durante ogni calcolo viene eseguito un aggiornamento completo. Per abilitare un aggiornamento parziale, selezionate l&#39;opzione pertinente e definite le condizioni di aggiornamento.
 
@@ -160,49 +160,49 @@ Per creare un nuovo aggregato, procedere come segue:
 
 ## Definizione delle misure {#defining-measures}
 
-I tipi di misure sono definiti nella **[!UICONTROL Measures]** scheda del cubo. Potete calcolare somme, medie, deviazioni, ecc.
+I tipi di misure sono definiti nella scheda **[!UICONTROL Measures]** del cubo. Potete calcolare somme, medie, deviazioni, ecc.
 
-Potete creare tutte le misure necessarie: quindi selezionate la misura da visualizzare o nascondere nella tabella. For more on this, refer to [Displaying measures](#displaying-measures).
+Potete creare tutte le misure necessarie: quindi selezionate la misura da visualizzare o nascondere nella tabella. Per ulteriori informazioni, vedere [Visualizza misure](#displaying-measures).
 
 Per definire una nuova misura, procedere come segue:
 
-1. Fare clic sul **[!UICONTROL Add]** pulsante sopra l&#39;elenco delle misure e selezionare il tipo di misura e la formula da calcolare.
+1. Fare clic sul pulsante **[!UICONTROL Add]** sopra l&#39;elenco delle misure e selezionare il tipo di misura e la formula da calcolare.
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. Se necessario, e a seconda dell&#39;operatore, scegliere l&#39;espressione interessata dall&#39;operazione.
 
-   Il **[!UICONTROL Advanced selection]** pulsante consente di creare formule di calcolo complesse. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   Il pulsante **[!UICONTROL Advanced selection]** consente di creare formule di calcolo complesse. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. Il **[!UICONTROL Filter the measure data...]** collegamento consente di limitare il campo di calcolo e di applicarlo solo a dati specifici nel database.
+1. Il collegamento **[!UICONTROL Filter the measure data...]** consente di limitare il campo di calcolo e di applicarlo solo a dati specifici nel database.
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. Immettete l’etichetta della misura e aggiungete una descrizione, quindi fate clic **[!UICONTROL Finish]** per crearla.
+1. Immettete l&#39;etichetta della misura e aggiungete una descrizione, quindi fate clic su **[!UICONTROL Finish]** per crearla.
 
-## Visualizzazione delle misure {#displaying-measures}
+## Visualizza misure {#displaying-measures}
 
 Puoi configurare la visualizzazione delle misure nella tabella in base alle tue esigenze:
 
-* la sequenza di visualizzazione delle misure (fare riferimento alla sequenza [di](#display-sequence)visualizzazione),
-* le informazioni da visualizzare/nascondere nel rapporto (vedere [Configurazione della visualizzazione](#configuring-the-display))
-* quali misure visualizzare: percentuale, totale, numero di decimali, ecc. (vedere [Modifica del tipo di misura visualizzato](#changing-the-type-of-measure-displayed)).
+* la sequenza di visualizzazione delle misure (fare riferimento a [Sequenza di visualizzazione](#display-sequence)),
+* le informazioni da visualizzare/nascondere nel rapporto (fare riferimento a [Configurazione della visualizzazione](#configuring-the-display))
+* quali misure visualizzare: percentuale, totale, numero di decimali, ecc. (fare riferimento a [Modifica del tipo di misura visualizzata](#changing-the-type-of-measure-displayed)).
 
 ### Sequenza di visualizzazione {#display-sequence}
 
-Le misure calcolate nel cubo sono configurate tramite il **[!UICONTROL Measures]** pulsante.
+Le misure calcolate nel cubo sono configurate tramite il pulsante **[!UICONTROL Measures]**.
 
 Spostare le righe per cambiare la sequenza di visualizzazione. Nell&#39;esempio seguente, i dati francesi vengono spostati in fondo all&#39;elenco: questo significa che verrà visualizzato nell&#39;ultima colonna.
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Configurazione della visualizzazione {#configuring-the-display}
+### Configurazione del display {#configuring-the-display}
 
 La configurazione di misure, linee e colonne può essere effettuata individualmente per ogni misura o nel complesso. Un&#39;icona specifica consente di accedere alla finestra di selezione della modalità di visualizzazione.
 
-* Fate clic sull&#39; **[!UICONTROL Edit the configuration of the pivot table]** icona per accedere alla finestra di configurazione.
+* Fate clic sull&#39;icona **[!UICONTROL Edit the configuration of the pivot table]** per accedere alla finestra di configurazione.
 
    Potete scegliere se visualizzare o meno le etichette delle misure e configurarne il layout (righe o colonne).
 
@@ -218,15 +218,15 @@ All&#39;interno di ogni misura, è possibile definire l&#39;unità e la formatta
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Condivisione di un rapporto {#sharing-a-report}
+## Condivisione di un report {#sharing-a-report}
 
 Una volta configurato il rapporto, puoi salvarlo e condividerlo con altri operatori.
 
-A questo scopo, fate clic sull&#39; **[!UICONTROL Show the report properties]** icona e abilitate l&#39; **[!UICONTROL Share this report]** opzione.
+A questo scopo, fare clic sull&#39;icona **[!UICONTROL Show the report properties]** e attivare l&#39;opzione **[!UICONTROL Share this report]**.
 
 ![](assets/cube_share_option.png)
 
-Specifica la categoria a cui appartiene il rapporto e la sua rilevanza. Per ulteriori informazioni, vedere in [questa pagina](../../reporting/using/configuring-access-to-the-report.md#report-display-context) la **sequenza Visualizza** e **Definizione delle sezioni relative alle opzioni** di filtro.
+Specifica la categoria a cui appartiene il rapporto e la sua rilevanza. Per ulteriori informazioni, vedere [questa pagina](../../reporting/using/configuring-access-to-the-report.md#report-display-context) nelle sezioni **Sequenza di visualizzazione** e **Definizione delle opzioni di filtro**.
 
 Per confermare queste modifiche, è necessario salvare il rapporto.
 
@@ -238,7 +238,7 @@ Per confermare queste modifiche, è necessario salvare il rapporto.
 
 Per eseguire questa operazione:
 
-1. Fate clic sull&#39; **[!UICONTROL Add a filter]** icona.
+1. Fate clic sull&#39;icona **[!UICONTROL Add a filter]**.
 
    ![](assets/neolap_add_filter.png)
 
@@ -264,7 +264,7 @@ Per eseguire questa operazione:
 
 Ogni volta che un filtro viene modificato (aggiungi, rimuovi, modifica), il rapporto deve essere ricalcolato.
 
-I filtri possono essere creati anche in base a una selezione. A questo scopo, seleziona le celle, le linee e le colonne di origine, quindi fai clic sull&#39; **[!UICONTROL Add a filter]** icona .
+I filtri possono essere creati anche in base a una selezione. A tal fine, seleziona le celle, le righe e le colonne di origine, quindi fai clic sull&#39;icona **[!UICONTROL Add a filter]**.
 
 Per selezionare una riga, una colonna o una cella, fare clic su di essa con il pulsante sinistro del mouse. Per deselezionare, fate di nuovo clic.
 
