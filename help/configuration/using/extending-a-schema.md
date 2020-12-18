@@ -20,8 +20,8 @@ ht-degree: 5%
 >[!IMPORTANT]
 >
 >Alcuni schemi predefiniti non devono essere estesi: principalmente quelle per le quali sono definite le seguenti impostazioni:\
->**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
->I seguenti schemi non devono essere estesi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, ******************************************ncm:publishing, nl:monitoraggio, nms:calendario, nms:remoteTracking,  nmsAgentRules:userxtk:builder, xtk:connection, xtk:dbInit, xtk:funcList, xtk:fusion, xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext, xtk:session, xtk:sqlSchema, stringhe**************xtk:xtk:.
+>**dataSource=&quot;file&quot;** e  **mappingType=&quot;xmlFile&quot;**.\
+>I seguenti schemi non devono essere estesi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, &lt;a10/ ncm:publishing **,** nl:monitoring **,** nms:Calendar **,** nms:remoteTracking **,** nms:userAgentRules&lt;a1 9/>, **xtk:builder**, **xtk:Connections**, **xtk:dbInit**, **xtk:funcList**, a28/>xtk:fusion **,** xtk: jst **,** xtk:navtree **,** xtk:queryDef **,** xtk:resourceMenu **,** xtk:schema&lt;a3 9/>, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.********
 >Questo elenco non è esaustivo.
 
 Esistono due metodi per estendere uno schema esistente:
@@ -37,7 +37,7 @@ Esistono due metodi per estendere uno schema esistente:
    >
    >Non è consentito modificare gli schemi predefiniti dell&#39;applicazione, ma il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell&#39;applicazione. Ciò può causare malfunzionamenti nell&#39;uso di  Adobe Campaign.
 
-   **Esempio**: estensione dello schema **nms:destinatario** .
+   **Esempio**: estensione di  **nms:** targetSchema.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -47,7 +47,7 @@ Esistono due metodi per estendere uno schema esistente:
    </srcSchema>
    ```
 
-   Lo schema esteso **nms:destinatario** è compilato con il campo popolato nello schema di estensione:
+   Lo schema esteso **nms:Recipiente** è compilato con il campo popolato nello schema di estensione:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -57,12 +57,12 @@ Esistono due metodi per estendere uno schema esistente:
    </schema>
    ```
 
-   L&#39;attributo **differentSchemas** sull&#39;elemento principale dello schema fa riferimento alle dipendenze degli schemi di estensione.
+   L&#39;attributo **differentSchemas** nell&#39;elemento principale dello schema fa riferimento alle dipendenze negli schemi di estensione.
 
-   L&#39;attributo **membersTo** nel campo viene compilato nello schema in cui è dichiarato.
+   L&#39;attributo **membersTo** del campo completa lo schema in cui è dichiarato.
 
 >[!IMPORTANT]
 >
->Per tenere conto delle modifiche, è necessario rigenerare gli schemi. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
+>Per tenere conto delle modifiche, è necessario rigenerare gli schemi. Per ulteriori informazioni, consultare la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md).\
 >Se le modifiche influiscono sulla struttura del database, è necessario eseguire un aggiornamento. Per ulteriori informazioni, consulta la sezione [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md).
 
