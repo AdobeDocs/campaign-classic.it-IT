@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Progettazione di un’applicazione web{#designing-a-web-application}
 
-Le applicazioni Web vengono create e gestite secondo lo stesso principio dei sondaggi [](../../web/using/about-surveys.md)online.
+Le applicazioni Web vengono create e gestite secondo lo stesso principio dei [sondaggi online](../../web/using/about-surveys.md).
 
 Tuttavia, le differenze funzionali sono le seguenti:
 
@@ -27,7 +27,7 @@ Tuttavia, le differenze funzionali sono le seguenti:
 
 >[!CAUTION]
 >
->Si consiglia vivamente che le configurazioni applicate siano controllate continuamente al fine di rilevare eventuali errori in anticipo nel processo di costruzione dell&#39;applicazione Web. Per verificare il rendering di una modifica, salvate l’applicazione, quindi fate clic sulla **[!UICONTROL Preview]** sottoscheda.
+>Si consiglia vivamente che le configurazioni applicate siano controllate continuamente al fine di rilevare eventuali errori in anticipo nel processo di costruzione dell&#39;applicazione Web. Per verificare il rendering di una modifica, salvate l&#39;applicazione, quindi fate clic sulla sottoscheda **[!UICONTROL Preview]**.
 >
 >Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non possono essere visualizzate dall&#39;utente finale.
 
@@ -37,7 +37,7 @@ Tuttavia, le differenze funzionali sono le seguenti:
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-Potete anche selezionare il **[!UICONTROL Add a chart]** menu.
+È inoltre possibile selezionare il menu **[!UICONTROL Add a chart]**.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -57,9 +57,9 @@ L&#39;interfaccia  Adobe Campaign utilizza molte applicazioni Web per accedere, 
 
 Vengono visualizzate nell&#39;interfaccia sotto forma di dashboard con una sola pagina.
 
-Le applicazioni Web predefinite sono memorizzate nel **[!UICONTROL Administration > Configuration > Web applications]** nodo.
+Le applicazioni Web pronte all&#39;uso sono memorizzate nel nodo **[!UICONTROL Administration > Configuration > Web applications]**.
 
-## Modifica di applicazioni Web di tipo moduli {#edit-forms-type-web-applications}
+## Modifica di applicazioni Web di tipo form {#edit-forms-type-web-applications}
 
 Le applicazioni Web per la modifica di un extranet sono caratterizzate da:
 
@@ -72,4 +72,4 @@ Le applicazioni Web per la modifica di un extranet sono caratterizzate da:
 
    Mentre le applicazioni Web di tipo &quot;Panoramica&quot; dispongono tutte di una singola pagina, i moduli di modifica possono offrire una sequenza di pagine in base a criteri specifici (test, selezioni, profilo dell&#39;operatore connesso, ecc.).
 
-Il funzionamento di questo tipo di applicazione Web è simile a quello dei **sondaggi**, ma senza gestione della cronologia o archiviazione dei campi. Gli utenti di solito accedono tramite una pagina di login in cui devono identificarsi.
+Il funzionamento di questo tipo di applicazione Web è simile a **Survey**, ma senza gestione della cronologia o archiviazione dei campi. Gli utenti di solito accedono tramite una pagina di login in cui devono identificarsi.
