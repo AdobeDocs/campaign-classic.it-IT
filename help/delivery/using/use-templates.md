@@ -18,15 +18,15 @@ ht-degree: 0%
 
 I modelli di distribuzione consentono una maggiore efficienza fornendo scenari pronti per la maggior parte dei tipi di attività più comuni. Grazie ai modelli, gli esperti di marketing possono distribuire nuove campagne con una personalizzazione minima in tempi più brevi.
 
-Learn more about delivery templates in [this section](../../delivery/using/creating-a-delivery-template.md).
+Ulteriori informazioni sui modelli di consegna in [questa sezione](../../delivery/using/creating-a-delivery-template.md).
 
-## Guida introduttiva ai modelli di distribuzione {#gs-templates}
+## Guida introduttiva ai modelli di consegna {#gs-templates}
 
-Un modello [di](../../delivery/using/creating-a-delivery-template.md) consegna consente di definire una volta un insieme di proprietà tecniche e funzionali in base alle esigenze e che possono essere riutilizzate per le consegne future. È quindi possibile risparmiare tempo e standardizzare le consegne quando necessario.
+Un [modello di consegna](../../delivery/using/creating-a-delivery-template.md) consente di definire una volta un insieme di proprietà tecniche e funzionali in base alle esigenze e che possono essere riutilizzate per le consegne future. È quindi possibile risparmiare tempo e standardizzare le consegne quando necessario.
 
 Quando gestite diversi marchi in  Adobe Campaign,  Adobe consiglia di avere un sottodominio per marchio. Ad esempio, una banca può avere diversi sottodomini corrispondenti a ciascuna delle sue agenzie regionali. Se una banca possiede il dominio bluebank.com, i relativi sottodomini possono essere @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, ecc. La possibilità di disporre di un modello di consegna per sottodominio consente di utilizzare sempre i parametri preconfigurati corretti per ogni marchio, evitando errori e risparmiando tempo.
 
-**Suggerimento**:  Per evitare errori di configurazione in Campaign Standard, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
+**Suggerimento**: Per evitare errori di configurazione in Campaign Standard, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
 
 ## Configurare gli indirizzi
 
@@ -42,21 +42,21 @@ Quando gestite diversi marchi in  Adobe Campaign,  Adobe consiglia di avere un s
 
 Per configurare gli indirizzi nell&#39;interfaccia di Campaign, effettua le seguenti operazioni:
 
-1. Nel modello [di](../../delivery/using/creating-a-delivery-template.md)consegna, fate clic sul **[!UICONTROL From]** collegamento. Nella **[!UICONTROL Email header parameters]** finestra, compila i campi seguenti:
+1. Nel [modello di consegna](../../delivery/using/creating-a-delivery-template.md), fare clic sul collegamento **[!UICONTROL From]**. Nella finestra **[!UICONTROL Email header parameters]**, compila i campi seguenti:
 
    ![](assets/d_best_practices_email_header.png)
 
-1. Nel **[!UICONTROL Sender address]** campo, accertatevi che il dominio indirizzo sia lo stesso del sottodominio delegato al Adobe . È possibile modificare la parte che precede &#39;@&#39; ma non l&#39;indirizzo del dominio.
+1. Nel campo **[!UICONTROL Sender address]**, accertatevi che il dominio indirizzo sia lo stesso del sottodominio delegato al Adobe . È possibile modificare la parte che precede &#39;@&#39; ma non l&#39;indirizzo del dominio.
 
-1. Nel **[!UICONTROL From]** campo, utilizzare un nome facilmente identificabile dai destinatari, come il nome del marchio, per aumentare il tasso di apertura delle consegne. Per migliorare ulteriormente l&#39;esperienza del destinatario, è possibile aggiungere il nome di una persona, ad esempio &quot;Emma da Megastore&quot;.
+1. Nel campo **[!UICONTROL From]**, utilizzare un nome facilmente identificabile dai destinatari, come il nome del marchio, per aumentare il tasso di apertura delle consegne. Per migliorare ulteriormente l&#39;esperienza del destinatario, è possibile aggiungere il nome di una persona, ad esempio &quot;Emma da Megastore&quot;.
 
-1. Nei **[!UICONTROL Reply address text]** campi, l&#39;indirizzo del mittente viene utilizzato per impostazione predefinita per le risposte. Tuttavia,  Adobe consiglia di utilizzare un indirizzo reale esistente, come l&#39;assistenza clienti del marchio. In questo caso, se un destinatario invia una risposta, l&#39;assistenza clienti sarà in grado di gestirla.
+1. Nei campi **[!UICONTROL Reply address text]**, l&#39;indirizzo del mittente viene utilizzato per impostazione predefinita per le risposte. Tuttavia,  Adobe consiglia di utilizzare un indirizzo reale esistente, come l&#39;assistenza clienti del marchio. In questo caso, se un destinatario invia una risposta, l&#39;assistenza clienti sarà in grado di gestirla.
 
 ### Impostazione di un gruppo di controllo
 
-Una volta inviata la consegna, potete confrontare il comportamento dei destinatari esclusi con quello dei destinatari che hanno ricevuto la consegna. Potete quindi misurare l&#39;efficienza delle campagne. Ulteriori informazioni sui gruppi di controllo [in questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+Una volta inviata la consegna, potete confrontare il comportamento dei destinatari esclusi con quello dei destinatari che hanno ricevuto la consegna. Potete quindi misurare l&#39;efficienza delle campagne. Ulteriori informazioni sui gruppi di controllo [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-Per impostare un gruppo di controllo, fare clic sul **[!UICONTROL To]** collegamento. Nella **[!UICONTROL Select target]** finestra, selezionare la **[!UICONTROL Control group]** scheda. Potete estrarre una parte della destinazione, ad esempio un campione casuale del 5%.
+Per impostare un gruppo di controllo, fare clic sul collegamento **[!UICONTROL To]**. Nella finestra **[!UICONTROL Select target]**, selezionare la scheda **[!UICONTROL Control group]**. Potete estrarre una parte della destinazione, ad esempio un campione casuale del 5%.
 
 ![](assets/d_best_practices_control_group.png)
 
@@ -64,8 +64,8 @@ Per impostare un gruppo di controllo, fare clic sul **[!UICONTROL To]** collegam
 
 Una tipologia contiene le regole di controllo applicate durante la fase di analisi, prima di inviare qualsiasi messaggio.
 
-Nella **[!UICONTROL Typology]** scheda delle proprietà del modello, modificare la tipologia predefinita in base alle esigenze.
+Nella scheda **[!UICONTROL Typology]** delle proprietà del modello, modificare la tipologia predefinita in base alle esigenze.
 
 Ad esempio, per controllare meglio il traffico in uscita, potete definire gli indirizzi IP da utilizzare definendo un&#39;affinità per sottodominio e creando una tipologia per affinità. Le affinità sono definite nel file di configurazione dell&#39;istanza. Contattate l’amministratore  Adobe Campaign.
 
-For more on typologies, refer to [this section](../../campaign/using/about-campaign-typologies.md).
+Per ulteriori informazioni sulle tipologie, consultare [questa sezione](../../campaign/using/about-campaign-typologies.md).
