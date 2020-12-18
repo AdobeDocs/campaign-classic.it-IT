@@ -21,7 +21,7 @@ L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, in
 
 ## Creazione di indirizzi di seed {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. Nel modello dei messaggi transazionali, fai clic sulla scheda **[!UICONTROL Seed addresses]**.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -37,12 +37,12 @@ L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, in
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. Inserire i dati di prova (fare riferimento a Dati [di](../../message-center/using/personalization-data.md)personalizzazione).
+1. Inserire i dati di prova (fare riferimento a [Dati di personalizzazione](../../message-center/using/personalization-data.md)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Fate clic sul **[!UICONTROL Add other seed addresses]** collegamento, quindi fate clic sul **[!UICONTROL Add]** pulsante.
+1. Fare clic sul collegamento **[!UICONTROL Add other seed addresses]**, quindi fare clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -51,4 +51,4 @@ L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, in
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Una volta creati gli indirizzi, potete visualizzarne l’anteprima e la personalizzazione. Consultare [Anteprima](../../message-center/using/transactional-message-preview.md)messaggi transazionali.
+Una volta creati gli indirizzi, potete visualizzarne l’anteprima e la personalizzazione. Fare riferimento a [Anteprima messaggi transazionali](../../message-center/using/transactional-message-preview.md).
