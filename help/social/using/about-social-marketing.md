@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # Informazioni sul social marketing{#about-social-marketing}
 
-L&#39;applicazione **Gestione dei social network** (Social Marketing) progettata per la gestione dei social network consente di interagire con clienti e potenziali clienti tramite Facebook e Twitter.
+L&#39;applicazione **Managing social network** (Social Marketing) progettata per la gestione dei social network consente di interagire con clienti e potenziali clienti tramite Facebook e Twitter.
 
 1. **Invio di messaggi**
 
