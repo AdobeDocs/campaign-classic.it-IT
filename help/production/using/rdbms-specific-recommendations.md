@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Per facilitare l&#39;impostazione dei piani di manutenzione, questa sezione elen
 
 ### Manutenzione semplice {#simple-maintenance}
 
-In PostgreSQL, i comandi tipici che si possono utilizzare sono **vuoto pieno** e **reindicizzati**.
+In PostgreSQL, i comandi tipici che è possibile utilizzare sono **vuoto pieno** e **reindex**.
 
 Di seguito è riportato un esempio tipico di un piano di manutenzione SQL da eseguire regolarmente con i due comandi seguenti:
 
@@ -91,10 +91,10 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >*  Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
->*  Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
->* I comandi **sottovuoto** e **reindicizzati** bloccheranno la tabella, che mette in pausa alcuni processi durante la manutenzione.
->* Per le tabelle molto grandi (generalmente sopra 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiede molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx** .
->* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39; **[!UICONTROL SQL]** attività (per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
+>*  Adobe riordina l&#39;aggiunta delle tabelle specifiche del modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
+>* I comandi **vuoto** e **re-index** bloccheranno la tabella, mettendo in pausa alcuni processi durante la manutenzione.
+>* Per le tabelle molto grandi (generalmente sopra i 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiedere molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx**.
+>* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39;attività **[!UICONTROL SQL]** (per ulteriori informazioni, fare riferimento a [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
 
 >
 
@@ -102,10 +102,10 @@ vacuum full nmsdelivery;
 
 ### Ricreazione di un database {#rebuilding-a-database}
 
-PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, dal momento che il **vuoto intero** blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non è utilizzata. Potete effettuare le seguenti operazioni:
+PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, dal momento che **vuoto pieno** blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non è utilizzata. Potete effettuare le seguenti operazioni:
 
 * eseguire la manutenzione quando la piattaforma Adobe Campaign  viene arrestata,
-* arrestate i vari servizi secondari  Adobe Campaign che potrebbero scrivere nella tabella in fase di ricostruzione (**nlserver arresta wfserver instance_name** per arrestare il processo del flusso di lavoro).
+* interrompere i vari servizi secondari  Adobe Campaign che potrebbero scrivere nella tabella in fase di ricostruzione (**nlserver arrestare wfserver instance_name** per arrestare il processo del flusso di lavoro).
 
 Di seguito è riportato un esempio di deframmentazione delle tabelle che utilizza funzioni specifiche per generare la DDL necessaria. Il seguente SQL consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che possono essere utilizzati per generare il DDL necessario per ricreare una tabella.
 
@@ -327,7 +327,7 @@ Di seguito è riportato un esempio di deframmentazione delle tabelle che utilizz
  $$ LANGUAGE plpgsql;
 ```
 
-L&#39;esempio seguente può essere utilizzato in un flusso di lavoro per ricreare le tabelle necessarie anziché utilizzare il comando **vuoto/ricostruzione** :
+L&#39;esempio seguente può essere utilizzato in un flusso di lavoro per ricreare le tabelle necessarie anziché utilizzare il comando **vuoto/rebuild**:
 
 ```
 function sqlGetMemo(strSql)
@@ -356,7 +356,7 @@ function sqlGetMemo(strSql)
  // ... other tables here
 ```
 
-##  Oracle {#oracle}
+##  Oracle{#oracle}
 
 Contattate l&#39;amministratore del database per informazioni sulle procedure più adatte alla versione di  Oracle in uso.
 
@@ -364,23 +364,23 @@ Contattate l&#39;amministratore del database per informazioni sulle procedure pi
 
 >[!NOTE]
 >
->Per Microsoft SQL Server, potete utilizzare il piano di manutenzione dettagliato in [questa pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Per Microsoft SQL Server, è possibile utilizzare il piano di manutenzione dettagliato su [questa pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra versione, contattate l’amministratore del database per informazioni sulle procedure di manutenzione.
 
 1. Innanzitutto, collegatevi a Microsoft SQL Server Management Studio con un login con diritti di amministratore.
-1. Passate alla **[!UICONTROL Management > Maintenance Plans]** cartella, fate clic con il pulsante destro del mouse e scegliete **[!UICONTROL Maintenance Plan Wizard]**
-1. Fare clic **[!UICONTROL Next]** quando viene visualizzata la prima pagina.
-1. Selezionare il tipo di piano di manutenzione da creare (programmi separati per ogni attività o singola pianificazione per l&#39;intero piano), quindi fare clic sul **[!UICONTROL Change...]** pulsante.
-1. Nella **[!UICONTROL Job schedule properties]** finestra, selezionare le impostazioni di esecuzione desiderate e fare clic su **[!UICONTROL OK]** , quindi fare clic su **[!UICONTROL Next]** .
-1. Selezionate le attività di manutenzione da eseguire, quindi fate clic su **[!UICONTROL Next]** .
+1. Andate alla cartella **[!UICONTROL Management > Maintenance Plans]**, fate clic con il pulsante destro del mouse su di essa e scegliete **[!UICONTROL Maintenance Plan Wizard]**
+1. Fare clic su **[!UICONTROL Next]** quando viene visualizzata la prima pagina.
+1. Selezionare il tipo di piano di manutenzione da creare (programmi separati per ogni attività o singola pianificazione per l&#39;intero piano), quindi fare clic sul pulsante **[!UICONTROL Change...]**.
+1. Nella finestra **[!UICONTROL Job schedule properties]**, selezionare le impostazioni di esecuzione desiderate e fare clic su **[!UICONTROL OK]** , quindi fare clic su **[!UICONTROL Next]** .
+1. Selezionare le attività di manutenzione da eseguire, quindi fare clic su **[!UICONTROL Next]** .
 
    >[!NOTE]
    >
    >È consigliabile eseguire almeno le attività di manutenzione indicate di seguito. È anche possibile selezionare l&#39;attività di aggiornamento delle statistiche, anche se è già eseguita dal flusso di lavoro di pulizia del database.
 
-1. Nell&#39;elenco a discesa, selezionare il database sul quale si desidera eseguire l&#39; **[!UICONTROL Database Check Integrity]** attività.
-1. Selezionate il database e fate clic su **[!UICONTROL OK]** , quindi fate clic su **[!UICONTROL Next]** .
+1. Nell&#39;elenco a discesa, selezionare il database su cui si desidera eseguire l&#39;attività **[!UICONTROL Database Check Integrity]**.
+1. Selezionare il database e fare clic su **[!UICONTROL OK]** , quindi fare clic su **[!UICONTROL Next]** .
 1. Configura la dimensione massima allocata al database, quindi fai clic su **[!UICONTROL Next]** .
 
    >[!NOTE]
@@ -403,7 +403,7 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra v
 
       >[!NOTE]
       >
-      >Il processo di ricreazione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Fate clic sull&#39; **[!UICONTROL Keep index online while reindexing]** opzione se desiderate che l&#39;indice sia disponibile durante la ricostruzione.
+      >Il processo di ricreazione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Fare clic sull&#39;opzione **[!UICONTROL Keep index online while reindexing]** se si desidera che l&#39;indice sia disponibile durante la ricostruzione.
 
 1. Selezionate le opzioni che desiderate visualizzare nel rapporto attività, quindi fate clic su **[!UICONTROL Next]** .
 1. Controllare l&#39;elenco delle attività configurate per il piano di manutenzione, quindi fare clic su **[!UICONTROL Finish]** .
@@ -411,10 +411,10 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se usate un’altra v
    Viene visualizzato un riepilogo del piano di manutenzione e degli stati dei vari passaggi.
 
 1. Una volta completato il piano di manutenzione, fare clic su **[!UICONTROL Close]** .
-1. In Microsoft SQL Server Explorer, fate doppio clic sulla **[!UICONTROL Management > Maintenance Plans]** cartella.
+1. In Microsoft SQL Server Explorer, fate doppio clic sulla cartella **[!UICONTROL Management > Maintenance Plans]**.
 1. Selezionate il piano di manutenzione  Adobe Campaign: i vari passaggi sono descritti in dettaglio in un flusso di lavoro.
 
-   Un oggetto è stato creato nella **[!UICONTROL SQL Server Agent > Jobs]** cartella. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio esiste un solo oggetto, in quanto tutte le attività di manutenzione fanno parte dello stesso piano.
+   Tenere presente che un oggetto è stato creato nella cartella **[!UICONTROL SQL Server Agent > Jobs]**. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio esiste un solo oggetto, in quanto tutte le attività di manutenzione fanno parte dello stesso piano.
 
    >[!IMPORTANT]
    >
