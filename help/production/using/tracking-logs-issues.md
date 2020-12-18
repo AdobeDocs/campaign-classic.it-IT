@@ -19,15 +19,15 @@ ht-degree: 13%
 
 Possono essere presenti diversi motivi per non inoltrare i registri. È consigliabile verificare le informazioni seguenti:
 
-* Il flusso di lavoro **Tracciamento** presenta degli errori?
+* Il flusso di lavoro **Tracking** presenta degli errori?
 
-   Fare riferimento ai flussi di lavoro [tecnici di](../../workflow/using/monitoring-technical-workflows.md)monitoraggio.
+   Fare riferimento a [Flussi di lavoro tecnici di monitoraggio](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* Il modulo **di monitoraggio** è in esecuzione sul server?
+* Il modulo **trackinglogd** è in esecuzione sul server?
 
-   Fare riferimento a [File](../../production/using/log-files.md)di registro.
+   Fare riferimento a [File di registro](../../production/using/log-files.md).
 
 * Sono state apportate delle modifiche? Possono attivare una perdita di connessione ai server utilizzando l&#39;alias di tracciamento.
 
