@@ -25,5 +25,5 @@ In caso di configurazione su più computer, non è necessario utilizzare lo stes
 >
 >I passaggi di configurazione dell&#39;installazione principale possono essere eseguiti solo da  Adobe per le distribuzioni ospitate da  Adobe, ad esempio per configurare i file di configurazione del server e dell&#39;istanza.
 >
->Per ulteriori informazioni sulle differenze principali tra le distribuzioni, fare riferimento alla sezione Modelli [di](../../installation/using/hosting-models.md) hosting o alle differenze di [funzionalità per le distribuzioni](../../installation/using/capability-matrix.md)in hosting e in sede.
+>Per ulteriori informazioni sulle differenze principali tra le distribuzioni, fare riferimento alla sezione [Modelli di hosting](../../installation/using/hosting-models.md) o alle differenze di [Caratteristiche per le distribuzioni in hosting e in sede](../../installation/using/capability-matrix.md).
 
