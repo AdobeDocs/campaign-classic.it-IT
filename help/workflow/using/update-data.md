@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # Update data{#update-data}
 
-Un&#39;attività di tipo **Aggiorna dati** esegue un aggiornamento di massa dei campi nel database.
+Un&#39;attività di tipo **Update data** esegue un aggiornamento di massa dei campi nel database.
 
 ## Tipo di operazione {#operation-type}
 
-Il **[!UICONTROL Operation type]** campo consente di scegliere il processo da eseguire sui dati del database:
+Il campo **[!UICONTROL Operation type]** consente di scegliere il processo da eseguire sui dati del database:
 
 * **[!UICONTROL Insert or update]**: aggiungere dati o aggiornarli se sono già stati aggiunti.
 * **[!UICONTROL Insert]**: aggiungi solo dati.
@@ -31,15 +31,15 @@ Il **[!UICONTROL Operation type]** campo consente di scegliere il processo da es
 
 ![](assets/s_advuser_update_data_1.png)
 
-Il **[!UICONTROL Batch size]** campo consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Ad esempio, se specifichi 500, i primi 500 record trattati verranno aggiornati.
+Il campo **[!UICONTROL Batch size]** consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Ad esempio, se specifichi 500, i primi 500 record trattati verranno aggiornati.
 
 ## Identificazione del record {#record-identification}
 
 Specificare come identificare i record nel database:
 
-* Se le voci di dati si riferiscono a una dimensione di targeting esistente, selezionate l&#39; **[!UICONTROL By directly using the targeting dimension]** opzione e selezionatela nel **[!UICONTROL Updated dimension]** campo.
+* Se le voci di dati si riferiscono a una dimensione di targeting esistente, selezionare l&#39;opzione **[!UICONTROL By directly using the targeting dimension]** e selezionarla nel campo **[!UICONTROL Updated dimension]**.
 
-   È possibile visualizzare i campi per la dimensione selezionata utilizzando il pulsante della lente di **[!UICONTROL Edit this link]** ingrandimento.
+   È possibile visualizzare i campi per la dimensione selezionata utilizzando il pulsante lente di ingrandimento **[!UICONTROL Edit this link]**.
 
 * In caso contrario, specificare uno o più collegamenti che consentano l&#39;identificazione dei dati nel database o l&#39;uso diretto delle chiavi di riconciliazione.
 
@@ -47,11 +47,11 @@ Specificare come identificare i record nel database:
 
 ## Selezione dei campi da aggiornare {#selecting-the-fields-to-be-updated}
 
-Utilizzate l&#39; **[!UICONTROL Automatically associate fields with the same name]** opzione per  Adobe Campaign per identificare automaticamente i campi da aggiornare.
+Utilizzate l&#39;opzione **[!UICONTROL Automatically associate fields with the same name]** per  Adobe Campaign per identificare automaticamente i campi da aggiornare.
 
 ![](assets/s_advuser_update_data_3b.png)
 
-È inoltre possibile utilizzare l&#39; **[!UICONTROL Insert]** icona per selezionare manualmente i campi del database da aggiornare.
+È inoltre possibile utilizzare l&#39;icona **[!UICONTROL Insert]** per selezionare manualmente i campi del database da aggiornare.
 
 ![](assets/s_advuser_update_data_3.png)
 
@@ -59,22 +59,22 @@ Selezionate tutti i campi da aggiornare e, se necessario, aggiungete le condizio
 
 È possibile utilizzare lo stesso campo di destinazione più volte.
 
-All&#39;interno di un&#39; **[!UICONTROL Insert or update]** operazione, potete selezionare la campagna da applicare, singolarmente o per ciascun campo. A questo scopo, selezionate il valore desiderato nella **[!UICONTROL Operation]** colonna.
+All&#39;interno di un&#39;operazione **[!UICONTROL Insert or update]**, potete selezionare la campagna da applicare, singolarmente o per ciascun campo. A questo scopo, selezionate il valore desiderato nella colonna **[!UICONTROL Operation]**.
 
 ![](assets/s_advuser_update_data_5.png)
 
-I **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]****[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** i campi vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata specificatamente nella tabella di aggiornamento dei campi.
+I campi **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata specificatamente nella tabella di aggiornamento del campo.
 
 L&#39;aggiornamento dei record viene eseguito solo per i record contenenti almeno una differenza. Se i valori sono identici, non viene eseguito alcun aggiornamento.
 
-Il **[!UICONTROL Advanced parameters]** collegamento consente di specificare opzioni aggiuntive per l&#39;aggiornamento dei dati e la gestione dei duplicati. È inoltre possibile:
+Il collegamento **[!UICONTROL Advanced parameters]** consente di specificare opzioni aggiuntive per l&#39;aggiornamento dei dati e la gestione dei duplicati. È inoltre possibile:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Questa opzione è selezionata automaticamente per impostazione predefinita.
 * **[!UICONTROL Update all columns with matching names]**.
-* Specificare le condizioni che considerano gli elementi di origine mediante un&#39;espressione nel **[!UICONTROL Enabled if]** campo.
-* Specificare le condizioni che considerano i duplicati utilizzando un&#39;espressione. Se selezionate l&#39; **[!UICONTROL Ignore records which concern the same target]** opzione, verrà considerata solo la prima delle espressioni dell&#39;elenco.
+* Specificate le condizioni che considerano gli elementi di origine mediante un&#39;espressione nel campo **[!UICONTROL Enabled if]**.
+* Specificare le condizioni che considerano i duplicati utilizzando un&#39;espressione. Se si seleziona l&#39;opzione **[!UICONTROL Ignore records which concern the same target]**, verrà considerato solo il primo nell&#39;elenco di espressioni.
 
 **[!UICONTROL Generate an outbound transition]**
 
@@ -92,7 +92,7 @@ L&#39;aggiornamento dei dati e l&#39;unione delle raccolte consente di aggiornar
 >
 >Questa opzione consente inoltre di elaborare riferimenti a record secondari da tabelle di lavoro del flusso di lavoro (targetWorkflow), consegne (targetDelivery) ed elenchi (targetList). Se necessario, questi collegamenti vengono visualizzati nell&#39;elenco in cui si selezionano campi e raccolte.
 
-1. Selezionare l&#39; **[!UICONTROL Update and merge collections]** operazione.
+1. Selezionare l&#39;operazione **[!UICONTROL Update and merge collections]**.
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -116,9 +116,9 @@ L&#39;aggiornamento dei dati e l&#39;unione delle raccolte consente di aggiornar
 
 I dati per i record secondari sono associati al record principale se sono applicabili le regole definite. In base al tipo di aggiornamento selezionato, i record secondari possono essere eliminati.
 
-## Esempio: Aggiornamento dei dati a seguito di un arricchimento {#example--update-data-following-an-enrichment}
+## Esempio: Aggiornamento dei dati in seguito a un arricchimento {#example--update-data-following-an-enrichment}
 
-Il [passo 2: La scrittura di dati arricchiti nella sezione &quot;Acquisti&quot; della tabella](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) del caso d&#39;uso, in cui i dettagli relativi alla creazione di un elenco di ricap, offre un esempio di aggiornamento dei dati dopo un&#39;attività di arricchimento.
+Il [passo 2: La scrittura di dati arricchiti nella sezione &quot;Acquisti&quot; della tabella](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) del caso d&#39;uso che descrive in dettaglio la creazione di un elenco di ricap offre un esempio di aggiornamento dei dati dopo un&#39;attività di arricchimento.
 
 ## Parametri di input {#input-parameters}
 
