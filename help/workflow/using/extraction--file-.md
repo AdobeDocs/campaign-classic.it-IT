@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Estrazione dati (file){#extraction-file}
 
-Potete estrarre i dati da una tabella di un flusso di lavoro in un file esterno utilizzando l&#39; **[!UICONTROL Data extraction (file)]** attività.
+È possibile estrarre dati da una tabella di workflow in un file esterno utilizzando l&#39;attività **[!UICONTROL Data extraction (file)]**.
 
 >[!CAUTION]
 >
@@ -26,21 +26,21 @@ Potete estrarre i dati da una tabella di un flusso di lavoro in un file esterno 
 Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
 
 1. Specificate il nome del file di output: questo nome può contenere variabili, inserite tramite il pulsante di personalizzazione a destra del campo.
-1. Fare clic **[!UICONTROL Edit the file format...]** per selezionare i dati da estrarre.
+1. Fare clic su **[!UICONTROL Edit the file format...]** per selezionare i dati da estrarre.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   L&#39; **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** opzione aggiunge un passaggio aggiuntivo per filtrare il risultato finale dell&#39;aggregazione, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte e così via.
+   L&#39;opzione **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** aggiunge un passaggio aggiuntivo per filtrare il risultato finale dell&#39;aggregazione, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte e così via.
 
-1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio calcoli o risultati di elaborazione. A tale scopo, fare clic sull&#39; **[!UICONTROL Add]** icona.
+1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio calcoli o risultati di elaborazione. A tale scopo, fare clic sull&#39;icona **[!UICONTROL Add]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   Nella riga aggiuntiva, fate clic sull’ **[!UICONTROL Edit expression]** icona per definire il contenuto della nuova colonna.
+   Nella riga aggiuntiva, fate clic sull&#39;icona **[!UICONTROL Edit expression]** per definire il contenuto della nuova colonna.
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   Potrete quindi accedere alla finestra di selezione. Fare clic **[!UICONTROL Advanced selection]** per scegliere il processo da applicare ai dati.
+   Potrete quindi accedere alla finestra di selezione. Fare clic su **[!UICONTROL Advanced selection]** per scegliere il processo da applicare ai dati.
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
@@ -48,13 +48,13 @@ Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-È possibile definire un post-processo da eseguire durante l&#39;estrazione dei dati, consentendo di comprimere o cifrare i file. A questo scopo, il comando desiderato deve essere aggiunto nella **[!UICONTROL Script]** scheda dell&#39;attività.
+È possibile definire un post-processo da eseguire durante l&#39;estrazione dei dati, consentendo di comprimere o cifrare i file. A questo scopo, il comando desiderato deve essere aggiunto nella scheda **[!UICONTROL Script]** dell&#39;attività.
 
-Per ulteriori informazioni, consulta questa sezione: [Estrazione o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Per ulteriori informazioni, consulta questa sezione: [Zipping o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
-## List of aggregate functions {#list-of-aggregate-functions}
+## Elenco di funzioni aggregate {#list-of-aggregate-functions}
 
 Di seguito è riportato un elenco delle funzioni di aggregazione disponibili:
 
