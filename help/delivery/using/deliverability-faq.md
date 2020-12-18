@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1341'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,16 +29,16 @@ In  Adobe Campaign, è disponibile una configurazione relativa al numero di e-ma
 
 Ciò significa che una connessione può utilizzare una regola MX senza inviare correttamente un&#39;e-mail. In questo caso, una configurazione con un IP o un dominio con una reputazione ridotta dovrà provare diverse connessioni prima di inviare un&#39;e-mail. Per ogni tentativo, verrà utilizzato un messaggio all&#39;ora di credito. Di conseguenza, le prestazioni della campagna di marketing subiranno un impatto significativo.
 
-Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel registro [](../../production/using/monitoring-processes.md#smtp-errors-per-domain)SMTP.
+Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel [log SMTP](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
 
-For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
+Per ulteriori informazioni sulla configurazione MX, vedere [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
 
-## Stesso messaggio di errore per un ISP {#same-error-for-an-isp}
+## Stesso messaggio di errore per un provider Internet {#same-error-for-an-isp}
 
 **Perché ricevo sempre lo stesso messaggio di errore per un particolare ISP?**
 
 Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#39;IP potrebbe essere stato rilevato come difettoso dal provider di servizi Internet. Eseguite le seguenti raccomandazioni:
-* Verificate se ricevete una percentuale elevata di errori collegati a indirizzi e-mail inesistenti (errori **utente sconosciuti** ).
+* Verificate se ricevete una percentuale elevata di errori collegati a indirizzi e-mail inesistenti (**Utente sconosciuto** errori).
 * Aggiornare i moduli di iscrizione per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dalla destinazione.
 
@@ -57,14 +57,14 @@ Se il problema persiste, contattate i servizi commerciali o di recapito,  Adobe 
 
    I motivi possibili sono 10: non definito, utente sconosciuto, dominio non valido, al elenco Bloccati, rifiutato, errore ignorato, irraggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
-   For more on this, see [Understanding quarantine management](../../delivery/using/understanding-quarantine-management.md).
+   Per ulteriori informazioni, vedere [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
 
 ## Rimozione dal elenco Bloccati {#remove-from-denylist}
 
-* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati per errore. Come posso rimuoverli dal negyist in modo da poter iniziare a inviare loro di nuovo messaggi?**
+* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati per errore. Come posso rimuoverli dal negyist in modo da poter iniziare a inviare nuovamente loro i messaggi?**
 
    * Vai a **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
-   * Nei dettagli del record corrispondente, impostare il valore del **[!UICONTROL Status]** campo su **[!UICONTROL Valid]**.
+   * Nei dettagli del record corrispondente, impostare il valore del campo **[!UICONTROL Status]** su **[!UICONTROL Valid]**.
    * Salvare il record.
 
 * **Come posso sapere se uno dei miei IP è su un elenco Bloccati? Come posso rimuovere i miei IP da un elenco Bloccati?**
@@ -93,7 +93,7 @@ I seguenti elementi possono attirare la vostra attenzione:
 * Attività utente iscritto: aperture, clic e/o transazioni sono inferiori al normale.
 * Gli account di sementi mostrano gli invii filtrati o non consegnati.
 
-### Ipotefice potenziali cause {#potential-causes}
+### Le potenziali cause dell&#39;ipotetdimensioni {#potential-causes}
 
 Fai le seguenti domande per identificare le possibili cause del problema di recapito:
 
@@ -116,7 +116,7 @@ Se il problema di consegna è stato causato da reclami:
 * È necessario cercare di determinare il motivo per cui i destinatari si lamentano.
 * Potreste anche decidere di spostare il collegamento per l’annullamento della sottoscrizione nella parte superiore dell’e-mail. Questo incoraggerà gli abbonati a cancellare l&#39;iscrizione invece di lamentarsi con il pulsante dello spam.
 
-I mittenti possono ricavare una serie di informazioni dai loro reclami relativi al ciclo di [feedback](../../delivery/using/technical-recommendations.md#feedback-loop) :
+I mittenti possono ricavare una serie di informazioni dai loro [loop di feedback](../../delivery/using/technical-recommendations.md#feedback-loop) reclami:
 * È importante evitare i dati e cercare i pattern in cose come l&#39;origine di consenso, per quanto tempo l&#39;indirizzo è stato sottoscritto, o anche alcune caratteristiche demografiche comportamentali.
 * I reclami possono spesso identificare un&#39;origine dati o un segmento rischiosi all&#39;interno del file. Rischioso è definito come la maggior parte delle probabilità di lamentarsi, che può danneggiare la reputazione, e, a sua volta, le tariffe inbox.
 
@@ -127,19 +127,19 @@ I reclami provengono anche dagli abbonati che semplicemente non desiderano più 
 
 **Validità dei dati**
 
-**I rimbalzi** forti si verificano quando si invia a un **indirizzo** non consegnabile presso un ISP. Un indirizzo può non essere recapitato per diversi motivi, ad esempio:
+**I** rimbalzi forti si verificano quando si invia a un  **indirizzo non consegnabile a un** ISP. Un indirizzo può non essere recapitato per diversi motivi, ad esempio:
 * Indirizzo errato. Questo problema può essere risolto con un servizio di convalida dei dati in tempo reale, o richiedendo una scelta confermata prima di inviare e-mail di marketing a tale indirizzo.
 * Elenco o origine dati non valida. Se proviene da una nuova origine, controlla in che modo gli indirizzi sono stati raccolti e verifica che sia presente l&#39;autorizzazione.
 * Invio a un indirizzo che era in una volta attivo, ma che è stato chiuso o terminato dopo un periodo di inattività.
 
 **Coinvolgimento**
 
-Oltre ai reclami e alla validità dei dati, gli ISP si stanno concentrando più che mai sull&#39;impegno **** positivo per prendere decisioni sulla consegna. Stanno cercando di vedere se i vostri abbonati stanno aprendo le vostre e-mail, o se le stanno cancellando senza leggerle. Poiché non condividono questi dati con i mittenti, dobbiamo utilizzare le informazioni disponibili e tradurre aperture/clic/transazioni come coinvolgimento.
+Oltre ai reclami e alla validità dei dati, gli ISP si stanno concentrando più che mai su **coinvolgimento positivo** per prendere decisioni sulla consegna. Stanno cercando di vedere se i vostri abbonati stanno aprendo le vostre e-mail, o se le stanno cancellando senza leggerle. Poiché non condividono questi dati con i mittenti, dobbiamo utilizzare le informazioni disponibili e tradurre aperture/clic/transazioni come coinvolgimento.
 
-Come parte della manutenzione continua della reputazione, è importante comprendere in che modo gli abbonati coinvolti si trovano nell&#39;elenco e sviluppare una gerarchia **dei rischi di** recency per gli abbonati su ciascun file. Recency è definita come ultima data di apertura/clic/transazione o registrazione. Questo intervallo di tempo può essere diverso per verticale. Per eseguire questa operazione:
+Come parte della manutenzione continua della reputazione, è importante comprendere in che modo gli abbonati coinvolti si trovano nell&#39;elenco e sviluppare una **gerarchia dei rischi di recency** per gli abbonati su ciascun file. Recency è definita come ultima data di apertura/clic/transazione o registrazione. Questo intervallo di tempo può essere diverso per verticale. Per eseguire questa operazione:
 
 1. Determinare segmenti attivi (&quot;sicuri&quot;) per ogni verticale. Si tratta in genere di abbonati che sono stati attivi negli ultimi 3-6 mesi.
 1. Ridurre la frequenza agli inattivi.
-1. Crea una serie di [ri-coinvolgimento](../../delivery/using/re-engagement-best-practices.md) per ridurre i rischi. Di solito, questi sono 6-9 mesi senza impegno.
+1. Creare una serie [di riattivazione](../../delivery/using/re-engagement-best-practices.md) per ridurre al minimo i rischi. Di solito, questi sono 6-9 mesi senza impegno.
 1. Sviluppare una campagna di riconferma per inattivi a rischio più elevato. Generalmente si tratta di utenti che non hanno mai partecipato a un’e-mail per 9-12 mesi.
 1. Infine, impostate una regola di rilascio e rimuovete gli utenti che non hanno aperto le e-mail nei &#39;x&#39; mesi. In genere consigliamo 12 mesi, ma questo può variare in base al ciclo di vendita e di acquisto.
