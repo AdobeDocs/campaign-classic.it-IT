@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Elenco opzioni di Campaign Classic{#configuring-campaign-options}
 
-Il **[!UICONTROL Administration / Platform / Options]** nodo consente di configurare  opzioni Adobe Campaign.
+Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configurare  opzioni Adobe Campaign.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
-   <td> Data dell’ultimo wideLogMsg recuperato dall’istanza di recapito.<br /> </td> 
+   <td> Data dell'ultimo wideLogMsg recuperato dall'istanza di recapito.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
@@ -45,7 +45,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
-   <td> Identificatore dei rapporti di consegna. Per ottenere l'identificatore, contattate l'assistenza tecnica.<br /> </td> 
+   <td> Identificatore dei rapporti di consegna. Per ottenere l'identificatore, contattare il supporto tecnico.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
@@ -60,7 +60,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
-   <td> Numero minimo di destinatari affinché la consegna sia considerata la principale nel rapporto di fatturazione.<br /> </td> 
+   <td> Numero minimo di destinatari affinché la consegna sia considerata come principale nel rapporto di fatturazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_DefaultProvider</span> <br /> </td> 
@@ -88,11 +88,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> Immettendo "1" come valore potete escludere i destinatari che non desiderano più essere contattati.<br /> </td> 
+   <td> L'immissione di "1" come valore consente di escludere i destinatari che non desiderano più essere contattati.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
-   <td> Se si inserisce "1" come valore, è possibile ignorare automaticamente i doppi.<br /> </td> 
+   <td> L'immissione di "1" come valore consente di ignorare automaticamente i doppi.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span> <br /> </td> 
@@ -104,7 +104,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
-   <td> Consente di definire un limite di timeout (in secondi) per ricevere una risposta dal server durante il recupero di un'immagine scaricata da un URL personalizzato e collegata a un'e-mail. Se questo valore viene superato, il messaggio non può essere inviato. The default value is 60 seconds.<br /> </td> 
+   <td> Consente di definire un limite di timeout (in secondi) per ricevere una risposta dal server durante il recupero di un'immagine scaricata da un URL personalizzato e collegata a un'e-mail. Se questo valore viene superato, il messaggio non può essere inviato. Il valore predefinito è 60 secondi.<br /> </td> 
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadImageSize</span> <br /> </td> 
@@ -132,11 +132,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> Indirizzo e-mail 'error' predefinito a livello di istanza utilizzato per la consegna dell'e-mail se lasciato vuoto dall'utente.<br /> </td> 
+   <td> Indirizzo e-mail 'errore' predefinito a livello di istanza utilizzato per la consegna dell'e-mail se lasciato vuoto dall'utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
-   <td> Indirizzo e-mail predefinito 'from' a livello di istanza utilizzato per la consegna dell'e-mail se lasciato vuoto dall'utente.<br /> </td> 
+   <td> Indirizzo di posta elettronica 'from' predefinito a livello di istanza utilizzato per la consegna dell'e-mail se lasciato vuoto dall'utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
@@ -144,15 +144,15 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Nome comune del cliente. Utilizzata in alcuni messaggi di avviso visualizzati dai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con ***** o con una società affiliata. Per non ricevere più messaggi da *****".<br /> </td> 
+   <td> Nome comune del cliente. Utilizzata in alcuni messaggi di avviso visualizzati dai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con ***** o con una società affiliata. Per non ricevere più i messaggi da ****".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
-   <td> Etichetta di posta elettronica 'from' predefinita a livello di istanza utilizzata per la consegna dell'e-mail se lasciata vuota dall'utente.<br /> </td> 
+   <td> Etichetta di posta elettronica 'from' predefinita a livello di istanza utilizzata per la consegna delle e-mail se lasciata vuota dall'utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Etichetta e-mail 'reply' predefinita a livello di istanza utilizzata per la consegna dell'e-mail se lasciata vuota dall'utente.<br /> </td> 
+   <td> Etichetta e-mail 'risposta' predefinita a livello di istanza utilizzata per la consegna dell'e-mail se lasciata vuota dall'utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
@@ -180,7 +180,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> Sul canale "email" (usa come predefinito): Periodo minimo da trascorrere dopo il precedente errore SOFT di riferimento, prima di tenere conto di un nuovo errore SOFT.<br /> </td> 
+   <td> Sul canale "email" (usa come predefinito): Periodo minimo da trascorrere a partire dal precedente errore SOFT di riferimento, prima di prendere in considerazione un nuovo errore SOFT.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
@@ -188,7 +188,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> Sul canale "mobile" : Periodo minimo da trascorrere dopo il precedente errore SOFT di riferimento, prima di tenere conto di un nuovo errore SOFT.<br /> </td> 
+   <td> Sul canale "mobile" : Periodo minimo da trascorrere a partire dal precedente errore SOFT di riferimento, prima di prendere in considerazione un nuovo errore SOFT.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -200,11 +200,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Ritardo personalizzato (in minuti) dopo il quale una consegna viene considerata come "ritardata", impostazione predefinita di 30 minuti.<br /> </td> 
+   <td> Ritardo personalizzato (in minuti) dopo il quale una consegna viene considerata come "ritardata". Il valore predefinito è 30 minuti.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Questa opzione viene utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> al momento del conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
+   <td><p>Questa opzione è utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> durante il conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -236,19 +236,19 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
-   <td> Numero di tentativi durante l'invio di messaggi SMS.<br /> </td> 
+   <td> Numero di tentativi per l'invio di messaggi SMS.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span> <br /> </td> 
-   <td> Periodo durante il quale verranno eseguiti i tentativi di invio di SMS.<br /> </td> 
+   <td> Periodo durante il quale verranno eseguiti i tentativi di invio di messaggi SMS.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Data ultimo consolidamento per le statistiche <span class="uicontrol">NmsUserAgent</span> .<br /> </td> 
+   <td> Data ultimo consolidamento per le statistiche di <span class="uicontrol">NmsUserAgent</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
-   <td> Nome dell’opzione che contiene i segmenti Web e i relativi stati.<br /> </td> 
+   <td> Nome dell'opzione che contiene i segmenti Web e i relativi stati.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
@@ -260,7 +260,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Aggiungete questa opzione con il valore "0" per disabilitare l'edizione del codice XML delle consegne (fate clic con il pulsante destro del mouse / <span class="uicontrol">Edit XML source</span> (Modifica origine <span class="uicontrol">XML) o la scelta rapida</span> CTRL + F4).<br /> </td> 
+   <td> Aggiungete questa opzione con il valore "0" per disabilitare l'edizione del codice XML delle consegne (fate clic con il pulsante destro del mouse / <span class="uicontrol">Edit XML source</span> o <span class="uicontrol">CTRL + F4</span> scorciatoia).<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -299,7 +299,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Cartella in cui devono essere memorizzate le immagini sul server.<br /> </td> 
+   <td> Cartella in cui memorizzare le immagini sul server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -307,15 +307,15 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Cartella principale per le pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e di testo, consultate <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
+   <td> Cartella principale per le pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e di testo, consultate  <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Consente di definire il server in cui vengono memorizzate le immagini utilizzate nelle consegne per consentire al browser di ottenerle.<br /> Per le versioni di build &lt;= 5098, utilizziamo l’URL delle immagini caricate nell’istanza.<br /> Per le versioni di build &gt; 5098, utilizziamo invece l'URL pubblico del recapito o l'URL dell'opzione <span class="uicontrol">XtkFileRes_Public_URL</span> .<br /> </td> 
+   <td> Consente di definire il server in cui vengono memorizzate le immagini utilizzate nelle consegne per consentire al browser di ottenerle.<br /> Per le versioni build  &lt;&gt;<br /> Per le versioni di build &gt; 5098, utilizziamo invece l'URL pubblico del recapito o l'URL  <span class="uicontrol">XtkFileRes_Public_</span> URLoption.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
-   <td> Consente di configurare il nome dell’istanza per il caricamento delle immagini.<br /> </td> 
+   <td> Consente di configurare il nome dell'istanza per il caricamento delle immagini.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
@@ -331,12 +331,12 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> Nuovo URL per i file di risorse pubbliche.<br /> </td> 
+   <td> Nuovo URL per i file delle risorse pubbliche.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Gestione di campagne e flussi di lavoro {#campaign-e-workflow-management}
+## Gestione delle campagne e dei flussi di lavoro {#campaign-e-workflow-management}
 
 <table> 
  <thead> 
@@ -360,7 +360,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="../../workflow/using/campaign.md">operationMgt</a> . Quando attivate (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
+   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="../../workflow/using/campaign.md">operationMgt</a>. Quando attivate (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -372,7 +372,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkReport_Logo</span> <br /> </td> 
-   <td> Logo da visualizzare nell’angolo in alto a destra dei rapporti esportati.<br /> </td> 
+   <td> Logo da visualizzare nell'angolo superiore destro dei rapporti esportati.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
@@ -389,7 +389,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  </tbody> 
 </table>
 
-## Sicurezza {#security}
+## Protezione {#security}
 
 <table> 
  <thead> 
@@ -413,7 +413,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
-   <td> Se è selezionata l'opzione 1, questa opzione disattiva i controlli ACL durante il download di un file (tramite fileDownload.jsp).<br /> </td> 
+   <td> Se è selezionato 1, questa opzione disattiva i controlli ACL durante il download di un file (tramite fileDownload.jsp).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_JSFileSandbox</span> <br /> </td> 
@@ -425,11 +425,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
-   <td> Se è selezionata l'opzione 1, questa opzione consente di decrittografare alcune password utilizzando decifrptString.<br /> </td> 
+   <td> Se è selezionata l'opzione 1, questa opzione consente l'utilizzo di decryptString per decrittografare alcune password.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
-   <td> Immettete il valore "1" per tracciare l'eliminazione di elementi con informazioni traccia audit in mData, modificando il relativo campo "modificato da" prima dell'eliminazione del record.<br /> </td> 
+   <td> Immettete il valore "1" per tracciare l'eliminazione di elementi con informazioni traccia audit in mData, tramite la modifica del relativo campo "modificato da" prima dell'eliminazione del record.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -446,22 +446,22 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
-   <td> Libreria JavaScript da personalizzare per l'arricchimento degli eventi. Devono contenere l'attuazione di queste due funzioni:<br /> 
+   <td> Libreria JavaScript da personalizzare per l'arricchimento degli eventi. Deve contenere l'implementazione di queste due funzioni:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella degli eventi in tempo reale elaborati).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove <span class="uicontrol">aiEventId</span> corrisponde alla tabella ID degli eventi batch elaborati).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove  <span class="uicontrol"></span> aiEventIdis corrisponde alla tabella degli eventi in tempo reale elaborati).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : arricchisce e salva gli eventi nel database (dove  <span class="uicontrol"></span> aiEventIdis corrisponde alla tabella ID degli eventi batch elaborati).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_LastUpdateFromBL</span> <br /> </td> 
-   <td> Data dell’ultimo aggiornamento dello stato dell’evento tramite i registri di consegna.<br /> </td> 
+   <td> Data dell'ultimo aggiornamento dello stato dell'evento tramite i registri di consegna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
-   <td> Libreria JavaScript da personalizzare per gli eventi di routing. Devono contenere l'attuazione di queste due funzioni:<br /> 
+   <td> Libreria JavaScript da personalizzare per gli eventi di routing. Deve contenere l'implementazione di queste due funzioni:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">sendRtEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento in tempo reale (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento in tempo reale elaborato).</p> </li> 
-     <li> <p> <span class="uicontrol">sendBatchEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento batch (dove <span class="uicontrol">iEventId</span> corrisponde all'ID dell'evento batch elaborato).</p> </li> 
+     <li> <p> <span class="uicontrol">sendRtEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento in tempo reale (dove  <span class="uicontrol"></span> iEventIdl corrisponde all'ID dell'evento in tempo reale elaborato).</p> </li> 
+     <li> <p> <span class="uicontrol">sendBatchEvent(iEventId);</span> : restituisce il nome interno del messaggio di transazione selezionato per elaborare l'evento batch (dove  <span class="uicontrol"></span> iEventIdid corrisponde all'ID dell'evento batch elaborato).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -526,7 +526,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> Soglia prima dell'avviso per la coda degli eventi in sospeso in tempo reale.<br /> </td> 
+   <td> Soglia prima dell'avviso per la coda degli eventi in corso in tempo reale.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
@@ -534,7 +534,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputWarning</span> <br /> </td> 
-   <td> Soglia di avviso per il throughput degli eventi in tempo reale.<br /> </td> 
+   <td> Soglia di avviso per la velocità effettiva degli eventi in tempo reale.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span> <br /> </td> 
@@ -563,7 +563,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_LastCleanup</span> <br /> </td> 
-   <td> Definisce l’ultima volta che è stato eseguito il processo di pulizia.<br /> </td> 
+   <td> Definisce l'ultima volta che è stato eseguito il processo di pulizia.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_BroadLogPurgeDelay</span> <br /> </td> 
@@ -616,7 +616,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_AzureDw</span> <br /> </td> 
-   <td> Opzioni del connettore di Azure SQL Datawarehouse.<br /> </td> 
+   <td> Opzioni del connettore Azure SQL Datawarehouse.<br /> </td> 
   </tr>
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
@@ -627,19 +627,19 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere i dati delle tabelle standard Adobe Campaign .<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
+   <td> Nome della tablespace destinata a contenere i dati delle tabelle standard Adobe Campaign .<br />Consultate  <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere gli indici delle tabelle standard Adobe Campaign .<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
+   <td> Nome della tablespace destinata a contenere gli indici delle tabelle standard Adobe Campaign .<br />Consultate  <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere i dati delle tabelle di lavoro  Adobe Campaign.<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
+   <td> Nome della tablespace destinata a contenere i dati delle tabelle di lavoro  Adobe Campaign.<br />Consultate  <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Nome della tablespace destinata a contenere gli indici delle  tabelle di lavoro Adobe Campaign.<br />Consultate <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
+   <td> Nome della tablespace destinata a contenere gli indici delle  tabelle di lavoro Adobe Campaign.<br />Consultate  <a href="../../installation/using/creating-and-configuring-the-database.md">Creazione e configurazione del database</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
@@ -671,24 +671,27 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
-   <td> Tutti gli schemi personalizzati, creati successivamente, con autopk="true" e senza l'attributo "pkSequence" otterranno una sequenza generata automaticamente "auto_ &lt;schemanamespace&gt; &lt;schemaname&gt; _seq. 
+   <td> Tutti gli schemi personalizzati, creati successivamente, con autopk="true" e senza l'attributo "pkSequence" otterranno una sequenza generata automaticamente "auto_ 
+    &lt;schemanamespace&gt; 
+     &lt;schemaname&gt;
+       _seq. 
    </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> Durante la migrazione, la struttura ad albero viene automaticamente riorganizzata in base ai nuovi standard di versione.<br /> Questa opzione consente di disabilitare la migrazione automatica della struttura di navigazione. Se lo utilizzate, dopo la migrazione dovrete eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.<br /> 
+   <td> Durante la migrazione, la struttura ad albero viene automaticamente riorganizzata in base ai nuovi standard di versione.<br /> Questa opzione consente di disabilitare la migrazione automatica della struttura di navigazione. Se lo utilizzate, dopo la migrazione sarà necessario eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo di dati:</span> Integer</p> </li> 
-     <li> <p> <span class="uicontrol">Valore (testo)</span> : 1 </p> </li> 
+     <li> <p> <span class="uicontrol">Valore (testo)</span> : 3 </p> </li> 
     </ul> Questa opzione deve essere utilizzata solo se la struttura di navigazione out-of-the-box ha subito troppe modifiche.<br /> Per ulteriori informazioni al riguardo, consulta <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStateCoalesce</span> <br /> </td> 
-   <td> Data dell’ultima elaborazione della pulizia della tabella <span class="uicontrol">NmsEmailErrorState</span> .<br /> </td> 
+   <td> Data dell'ultima elaborazione della pulizia della tabella <span class="uicontrol">NmsEmailErrorState</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Informazioni relative all'errore che si è verificato in Postupgrade, seguendo la sintassi seguente:<br /> <strong>{Numero build}:{modalità: pre/post/...}:{L'errore 'lessThan'/'greaterOrEquelThan' in cui si è verificato l'errore + sub-step}</strong> </td> 
+   <td> Informazioni relative all'errore che si è verificato in Postupgrade, seguendo la sintassi seguente:<br /> <strong>{Numero build}:{mode: pre/post/...}:{L'errore 'lessThan'/'greaterOrEquelThan' in cui si è verificato + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -697,7 +700,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  </tbody> 
 </table>
 
-## Integration {#integration}
+## Integrazione {#integration}
 
 <table> 
  <thead> 
@@ -713,13 +716,13 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Consente di configurare  attivatori di Experience Cloud. Il tipo di dati è "testo lungo" e deve essere in formato JSON. Vedere <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Come utilizzare  attivatori di Experience Cloud con Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Consente di configurare  attivatori di Experience Cloud. Il tipo di dati è "testo lungo" e deve essere in formato JSON. Vedere <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Come utilizzare  trigger di Experience Cloud con Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
+   <td> <span class="uicontrol">LASTIMPORT_&lt;&gt;_&lt;&gt;</span> <br /> </td> 
    <td> Questa opzione viene utilizzata quando si importano dati da un sistema di terze parti tramite un connettore CRM. Abilitando l'opzione è possibile raccogliere solo gli oggetti modificati dall'ultima importazione. Questa opzione deve essere creata manualmente e compilata come segue: 
     <ul> 
-     <li> <p> <span class="uicontrol">Nome</span> interno: LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
+     <li> <p> <span class="uicontrol">Nome</span>  interno: LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
      <li> <p> <span class="uicontrol">Valore (campo)</span> : data dell’ultima importazione, con il formato yyyy/MM/dd hh:mm:ss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
@@ -745,12 +748,12 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
-   <td> Opzioni del connettore alveare.<br /> </td> 
+   <td> Opzioni di connessione dell'alveare.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Offers {#offers}
+## Offerte {#offers}
 
 <table> 
  <thead> 
@@ -799,7 +802,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> Identificatore istanza di esecuzione.<br /> </td> 
+   <td> Identificatore istanza esecuzione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
@@ -807,7 +810,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
-   <td> URL di base interno per accedere al server dell’applicazione.<br /> </td> 
+   <td> URL di base interno per accedere al server dell'applicazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
@@ -819,7 +822,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunctionsToRDBMS</span> <br /> </td> 
-   <td> Consente di continuare a utilizzare le vecchie funzioni SQL non dichiarate dopo la migrazione. Raccomandiamo vivamente di non utilizzare questa opzione a causa dei rischi per la sicurezza che introduce.<br /> </td> 
+   <td> Consente di continuare a utilizzare le vecchie funzioni SQL non dichiarate dopo la migrazione. Consigliamo vivamente di non utilizzare questa opzione a causa dei rischi di sicurezza che introduce.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -844,15 +847,15 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
-   <td> Consente di definire l’account esterno del server di tracciamento.<br /> </td> 
+   <td> Consente di definire l'account esterno del server di tracciamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> Consente di definire il nome dell’istanza sul server di tracciamento.<br /> </td> 
+   <td> Consente di definire il nome dell'istanza sul server di tracciamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
-   <td> L’ultima volta che le informazioni di tracciamento sono state consolidate con nuovi dati.<br /> </td> 
+   <td> L'ultima volta che le informazioni di tracciamento sono state consolidate con nuovi dati.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
@@ -913,11 +916,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_ConfirmDeletePendingDelay</span> <br /> </td> 
-   <td> Il ritardo tra le attese della richiesta per l'eliminazione della conferma e la richiesta viene annullata.<br /> </td> 
+   <td> Ritardo tra l'attesa della richiesta per l'eliminazione della conferma e la richiesta è annullata.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_MaxErrorAllowed</span> <br /> </td> 
-   <td> Il numero massimo di errori consentiti durante l'elaborazione/eliminazione di una richiesta di privacy.<br /> </td> 
+   <td> Numero massimo di errori consentiti durante l'elaborazione/eliminazione di una richiesta di privacy.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_PurgeDelay</span> <br /> </td> 
@@ -938,11 +941,11 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Active</span> <br /> </td> 
-   <td> Abilitate il server LDAP per l’autenticazione degli utenti e per fornire autorizzazioni agli utenti.<br /> </td> 
+   <td> Abilitare il server LDAP per l'autenticazione degli utenti e fornire autorizzazioni agli utenti.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppLogin</span> <br /> </td> 
-   <td> Login all'applicazione per contattare il server per diverse ricerche.<br /> </td> 
+   <td> Login dell'applicazione per contattare il server per diverse ricerche.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AppPassword</span> <br /> </td> 
@@ -950,7 +953,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_AutoOperator</span> <br /> </td> 
-   <td> Abilitare la creazione automatica di operatori e diritti in  Adobe Campaign.<br /> </td> 
+   <td> Abilita creazione automatica di operatori e diritti in  Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DN</span> <br /> </td> 
@@ -958,7 +961,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearch</span> <br /> </td> 
-   <td> Abilitare la ricerca DN nella directory.<br /> </td> 
+   <td> Abilita ricerca DN nella directory.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchBase</span> <br /> </td> 
@@ -982,7 +985,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
-   <td> Attributo LDAP contenente il nome dell’autorizzazione.<br /> </td> 
+   <td> Attributo LDAP contenente il nome dell'autorizzazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsBase</span> <br /> </td> 
@@ -990,7 +993,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsFilter</span> <br /> </td> 
-   <td> Filtro di ricerca per le autorizzazioni degli utenti.<br /> </td> 
+   <td> Filtro di ricerca per le autorizzazioni utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsMask</span> <br /> </td> 
@@ -1035,7 +1038,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURL</span> <br /> </td> 
-   <td> Elenco di indirizzi personalizzati dei server da contattare per l'annullamento della convalida del modulo Web (modalità "altri server").<br /> </td> 
+   <td> Elenco indirizzi personalizzato dei server da contattare per l'annullamento della convalida del modulo Web (modalità "altri server").<br /> </td> 
   </tr> 
  </tbody> 
 </table>
