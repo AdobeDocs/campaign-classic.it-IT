@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Campagna{#campaign}
 
-I flussi di lavoro descritti di seguito vengono installati con il modulo **Campaign** per impostazione predefinita. For more on this module, refer to this [section](../../campaign/using/designing-marketing-campaigns.md).
+I flussi di lavoro descritti di seguito vengono installati con il modulo **Campaign** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
