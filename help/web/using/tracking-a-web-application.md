@@ -38,9 +38,9 @@ I principali miglioramenti introdotti in questa versione sono i seguenti:
    * **Frequenza** rimbalzo: numero di persone che hanno visualizzato solo il primo passo
    * **Imbuto** di conversione: tasso di perdita tra ciascun passaggio.
 
-   Inoltre, un grafico di tipo **Settore** mostra la popolazione in base all&#39;origine.
+   Inoltre, un grafico di tipo **Sector** mostra la popolazione in base all&#39;origine.
 
-## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
+## Identificazione dell&#39;origine del traffico {#identifying-the-traffic-source}
 
 Per identificare da dove proviene il visitatore quando accede a un&#39;applicazione Web è possibile utilizzare due modalità diverse:
 
@@ -59,11 +59,11 @@ Per identificare l&#39;origine del traffico in un&#39;applicazione Web,  Adobe C
 >
 >Il tracciamento anonimo è possibile solo se l’opzione corrispondente è stata attivata nella procedura guidata di distribuzione.
 >
->For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
+>Per ulteriori informazioni, consultare la [Guida all&#39;installazione](../../installation/using/deploying-an-instance.md).
 
 ## Applicazioni Web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando si crea un&#39;applicazione Web utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla **[!UICONTROL Properties]** scheda dell&#39;editor. Per ulteriori informazioni su Digital Content Editor (DCE), consulta [questa sezione](../../web/using/about-campaign-html-editor.md).
+Quando viene creata un&#39;applicazione Web utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni su Digital Content Editor (DCE), consultare [questa sezione](../../web/using/about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -71,7 +71,7 @@ Quando si utilizza l&#39;interfaccia Web, i tag di tracciamento devono essere in
 
 ![](assets/trackers_3.png)
 
-L’ **[!UICONTROL Display blocks]** icona consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
+L&#39;icona **[!UICONTROL Display blocks]** consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
 
 ![](assets/trackers_4.png)
 
