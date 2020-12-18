@@ -19,11 +19,11 @@ ht-degree: 8%
 
 I flussi di lavoro tecnici devono essere monitorati e le azioni devono essere intraprese in caso di guasto.
 
-In [questa pagina](../../production/using/monitoring-guidelines.md)sono disponibili altri metodi per monitorare i diversi processi di Campaign.
+In [questa pagina](../../production/using/monitoring-guidelines.md) sono disponibili metodi aggiuntivi per monitorare i diversi processi di Campaign.
 
-## Pannello di controllo per le istanze {#instance-monitoring-dashboard}
+## Pannello di controllo per istanza {#instance-monitoring-dashboard}
 
-Il pannello di monitoraggio delle istanze è accessibile tramite l&#39; **[!UICONTROL Monitoring]** universo.
+È possibile accedere al dashboard di monitoraggio delle istanze tramite l&#39;universo **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -39,31 +39,31 @@ I flussi di lavoro tecnici sono disponibili da **[!UICONTROL Administration]** >
 
 A seconda del flusso di lavoro tecnico, seguite i passaggi descritti di seguito per assicurarvi che tutto funzioni come previsto.
 
-Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico dovrebbe eseguire, consultare questa [sezione](../../workflow/using/about-technical-workflows.md).
+Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico dovrebbe eseguire, fare riferimento a questa sezione [](../../workflow/using/about-technical-workflows.md).
 
-Ad **[!UICONTROL Database Cleanup workflow (‘cleanup’)]** esempio:
+Per **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verificate che il **[!UICONTROL Database Cleanup]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
+1. Verificare che il flusso di lavoro **[!UICONTROL Database Cleanup]** venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
 1. Esaminare il giornale di registrazione per verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
-1. Per ulteriori informazioni, consultate questa [pagina](../../production/using/database-cleanup-workflow.md).
+1. Per ulteriori informazioni, controllare la [pagina](../../production/using/database-cleanup-workflow.md).
 
-Ad **[!UICONTROL Tracking workflow (‘tracking’)]** esempio:
+Per **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 Verificare che il flusso di lavoro di tracciamento venga eseguito come pianificato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. Per ulteriori informazioni, consulta questa [sezione](../../workflow/using/delivery.md).
 
-Ad **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]** esempio:
+Per **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Verificate che il **[!UICONTROL Deliverability update]** flusso di lavoro venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
+1. Verificare che il flusso di lavoro **[!UICONTROL Deliverability update]** venga eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
 1. Verificare nel giornale di registrazione che le regole siano aggiornate regolarmente.
 
-Ad **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]** esempio:
+Per **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Controllate tutti i flussi di lavoro che si trovano sotto la **[!UICONTROL Campaign process]** cartella. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/campaign.md).
+1. Esaminate tutti i flussi di lavoro che si trovano nella cartella **[!UICONTROL Campaign process]**. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/campaign.md).
 1. Verificare che i flussi di lavoro vengano eseguiti come pianificato e che il giornale di registrazione non evidenzi gli errori ricorrenti.
 
 ## Controllo del flusso di lavoro {#workflow-supervision}
 
-Il **[!UICONTROL Workflow supervisors]** gruppo dovrebbe contenere operatori che devono essere informati dei fallimenti e che possono intervenire in tempo utile.
+Il gruppo **[!UICONTROL Workflow supervisors]** deve contenere operatori che devono essere informati dei guasti e che possono intervenire in tempo.
 
 ![](assets/monitoring_technical_workflows3.png)
 
