@@ -32,4 +32,4 @@ Connettore HTTP/2: è necessario consentire la comunicazione con e dai server se
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, vedere [Configurazione dell’applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+>Per ulteriori informazioni sui due connettori, vedere [Configurazione dell&#39;applicazione mobile in  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
