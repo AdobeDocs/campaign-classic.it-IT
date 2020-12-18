@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Regole di controllo{#control-rules}
 
-## Regole di analisi e di controllo dell&#39;arbitrato {#analysis-and-arbitration-control-rules}
+## Regole di analisi e controllo arbitrale {#analysis-and-arbitration-control-rules}
 
 Le regole di controllo consentono di garantire la validità e la qualità dei messaggi prima della consegna: visualizzazione del carattere, dimensioni dell&#39;SMS, formato dell&#39;indirizzo, ecc.
 
@@ -32,9 +32,9 @@ Una serie di regole pronte all&#39;uso consente di eseguire controlli consueti. 
 * **[!UICONTROL Wave scheduling check]** (e-mail): controlla che l&#39;ultima serie di consegne abbia inizio prima della fine del periodo di validità, se la consegna è suddivisa in più ondate.
 * **[!UICONTROL Unsubscription link approval]** (e-mail): verifica la presenza di almeno un URL di annullamento iscrizione (rinuncia) in ciascun contenuto (HTML e testo).
 
-## Creating a control rule {#creating-a-control-rule}
+## Creazione di una regola di controllo {#creating-a-control-rule}
 
-È possibile creare nuove regole di controllo in base alle proprie esigenze. A tal fine, create una regola di **[!UICONTROL Control]** tipologia e immettete la formula di controllo in SQL nella **[!UICONTROL Code]** scheda.
+È possibile creare nuove regole di controllo in base alle proprie esigenze. A questo scopo, creare una regola di tipo **[!UICONTROL Control]** e immettere la formula di controllo in SQL nella scheda **[!UICONTROL Code]**.
 
 **Esempio:**
 
@@ -42,11 +42,11 @@ Nell&#39;esempio seguente, creeremo una regola per impedire che un&#39;offerta S
 
 Effettuate le seguenti operazioni:
 
-1. Creare una regola di **[!UICONTROL Control]** tipologia. Selezionare un livello di **[!UICONTROL Warning]** avviso.
+1. Creare una regola di tipo **[!UICONTROL Control]**. Selezionare un livello di avviso **[!UICONTROL Warning]**.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. Nella **[!UICONTROL Code]** scheda, immettere lo script per applicare la soglia desiderata, come illustrato di seguito:
+1. Nella scheda **[!UICONTROL Code]**, inserire lo script per applicare la soglia desiderata, come illustrato di seguito:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,7 +70,7 @@ Effettuate le seguenti operazioni:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Al termine dell&#39;analisi, il **[!UICONTROL Confirm delivery]** pulsante non sarà disponibile.
+   Al termine dell&#39;analisi, il pulsante **[!UICONTROL Confirm delivery]** non sarà disponibile.
 
    ![](assets/campaign_opt_create_control_06.png)
 
