@@ -21,9 +21,9 @@ I flussi di lavoro descritti in questa sezione vengono installati con i diversi 
 
 >[!NOTE]
 >
->I flussi di lavoro tecnici relativi al modulo Centro messaggi sono disponibili per impostazione predefinita nel nodo **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
+>I flussi di lavoro tecnici relativi al modulo Centro messaggi sono disponibili per impostazione predefinita nel nodo **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**.
 
-Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consulta la sezione [](../../workflow/using/monitoring-technical-workflows.md)dedicata.
+Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consultare la sezione [dedicata](../../workflow/using/monitoring-technical-workflows.md).
 
 Questa sezione include informazioni sui flussi di lavoro tecnici che riguardano i seguenti pacchetti:
 
