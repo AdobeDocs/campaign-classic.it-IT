@@ -25,7 +25,7 @@ La barra degli strumenti consente, ad esempio, di esportare, stampare, archiviar
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Esportazione di un rapporto {#exporting-a-report}
+## Esportazione di un report {#exporting-a-report}
 
 Dall’elenco a discesa, selezionate il formato in cui desiderate esportare il rapporto. (.xls, .pdf o .ods).
 
@@ -35,15 +35,15 @@ Quando un rapporto contiene più pagine, è necessario ripetere l&#39;operazione
 
 È possibile configurare il rapporto per esportarlo in formato PDF, Excel o OpenOffice. Aprite  Adobe Campaign Explorer e selezionate il report interessato.
 
-Le opzioni di esportazione sono accessibili tramite le **[!UICONTROL Page]** attività del rapporto, nella **[!UICONTROL Advanced]** scheda.
+Le opzioni di esportazione sono accessibili tramite le attività **[!UICONTROL Page]** del report, nella scheda **[!UICONTROL Advanced]**.
 
-Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39; **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** opzione.
+Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39;opzione **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Esportazione in Microsoft Excel {#exporting-into-microsoft-excel}
 
-Per i report di **[!UICONTROL List with group]** tipo destinati all&#39;esportazione in Excel, si applicano le seguenti raccomandazioni e limitazioni:
+Per i report di tipo **[!UICONTROL List with group]** destinati all&#39;esportazione in Excel, si applicano le seguenti raccomandazioni e limitazioni:
 
 * Tali rapporti non devono contenere righe vuote.
 
@@ -53,10 +53,10 @@ Per i report di **[!UICONTROL List with group]** tipo destinati all&#39;esportaz
 
    ![](assets/export_limitations_hide_label.png)
 
-* I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** per definire il formato delle celle nella tabella. È **[!UICONTROL Form rendering]** possibile accedervi tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
+* I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** per definire il formato delle celle nella tabella. È possibile accedere a **[!UICONTROL Form rendering]** tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Non è consigliabile inserire contenuto HTML.
 * Se un rapporto contiene diverse tabelle, grafici e così via. gli elementi di tipo, verranno esportati uno sotto l’altro.
-* È possibile forzare il ritorno a capo in celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, vedere [Definizione del formato](../../reporting/using/creating-a-table.md#defining-cell-format)delle celle.
+* È possibile forzare il ritorno a capo in celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, fare riferimento a [Definizione del formato di cella](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Posticipare l&#39;esportazione {#postpone-the-export}
 
@@ -66,7 +66,7 @@ Potete posticipare l’esportazione di un rapporto, ad esempio per attendere le 
 document.nl_waitBeforeRender = true;
 ```
 
-Per attivare l’esportazione e iniziare la conversione in PDF, utilizzare la funzione **document.nl_renderizzazioneToPdf()** senza alcun parametro.
+Per attivare l&#39;esportazione e iniziare la conversione in PDF, utilizzare la funzione **document.nl_rendToPdf()** senza alcun parametro.
 
 ### Allocazione memoria {#memory-allocation}
 
@@ -78,13 +78,13 @@ In alcuni casi, il valore predefinito **maxMB** (**SKMS** per le istanze ospitat
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-Per applicare le modifiche apportate alla configurazione, è necessario riavviare il servizio **nlserver** .
+Per applicare le modifiche apportate alla configurazione, è necessario riavviare il servizio **nlserver**.
 
-Per ulteriori informazioni sul file **serverConf.xml** , consultare [questa sezione](../../production/using/configuration-principle.md).
+Per ulteriori informazioni sul file **serverConf.xml**, fare riferimento a [questa sezione](../../production/using/configuration-principle.md).
 
-Per ulteriori informazioni sul servizio **nlserver** , consultare [questa sezione](../../production/using/administration.md).
+Per ulteriori informazioni sul servizio **nlserver**, fare riferimento a [questa sezione](../../production/using/administration.md).
 
-## Stampa di un rapporto {#printing-a-report}
+## Stampa di un report {#printing-a-report}
 
 È possibile stampare il rapporto: a questo scopo, fare clic sull&#39;icona della stampante: si apre la finestra di dialogo.
 
@@ -92,7 +92,7 @@ Per ottenere un risultato migliore, modificate le opzioni di stampa di Internet 
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Creazione di archivi di rapporti {#creating-report-archives}
+## Creazione di archivi di report {#creating-report-archives}
 
 L&#39;archiviazione di un rapporto consente di creare una visualizzazione del rapporto in diversi periodi, ad esempio per mostrare le statistiche per un determinato periodo di tempo.
 
@@ -108,7 +108,7 @@ Le date dell&#39;archivio vengono visualizzate sotto l&#39;icona Mostra/Nascondi
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-È possibile eliminare un archivio di report. A tal fine, andate al nodo Adobe Campaign  in cui sono memorizzati i rapporti. Fare clic sulla **[!UICONTROL Archives]** scheda, selezionare quella da eliminare e fare clic su **[!UICONTROL Delete]**.
+È possibile eliminare un archivio di report. A tal fine, andate al nodo Adobe Campaign  in cui sono memorizzati i rapporti. Fare clic sulla scheda **[!UICONTROL Archives]**, selezionare quella da eliminare e fare clic su **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
