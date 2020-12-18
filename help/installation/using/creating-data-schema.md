@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Per creare uno schema su un database esterno:
 
-1. Fare clic sul **[!UICONTROL New]** pulsante sopra l&#39;elenco degli schemi di dati e scegliere **[!UICONTROL Access external data]**.
+1. Fare clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco degli schemi di dati e scegliere **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -27,9 +27,9 @@ Per creare uno schema su un database esterno:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Fate clic **[!UICONTROL OK]** per confermare.  Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico.  Adobe Campaign non genera collegamenti.
+1. Fare clic su **[!UICONTROL OK]** per confermare.  Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico.  Adobe Campaign non genera collegamenti.
 
-1. Fate clic **[!UICONTROL Save]** per confermare la creazione.
+1. Fate clic su **[!UICONTROL Save]** per confermare la creazione.
 
    >[!CAUTION]
    >
