@@ -19,15 +19,15 @@ ht-degree: 2%
 
 Le regole di filtro consentono di definire i messaggi da escludere in base ai criteri definiti in una query. Queste regole sono collegate a una dimensione di targeting.
 
-Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie o raggruppate in una specifica tipologia di **filtro** . Per ulteriori informazioni, vedere [Creazione e utilizzo di una tipologia](#creating-and-using-a-filtering-typology)di filtro.
+Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie o raggruppate in una **tipologia** dedicata. Per ulteriori informazioni, vedere [Creazione e utilizzo di una tipologia di filtro](#creating-and-using-a-filtering-typology).
 
-## Creating a filtering rule {#creating-a-filtering-rule}
+## Creazione di una regola di filtro {#creating-a-filtering-rule}
 
 Ad esempio, potete filtrare gli utenti iscritti alla newsletter in modo da impedire l’invio di comunicazioni ai destinatari minorenni.
 
 Per definire questo filtro, procedere come segue:
 
-1. Creare una regola di **[!UICONTROL Filtering]** tipologia applicabile a tutti i canali di comunicazione.
+1. Creare una regola di tipo **[!UICONTROL Filtering]** applicabile a tutti i canali di comunicazione.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
@@ -35,7 +35,7 @@ Per definire questo filtro, procedere come segue:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Create il filtro utilizzando il **[!UICONTROL Edit the query from the targeting dimension...]** collegamento.
+1. Create il filtro utilizzando il collegamento **[!UICONTROL Edit the query from the targeting dimension...]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -51,7 +51,7 @@ Quando questa regola viene utilizzata in una consegna, gli abbonati minorenni ve
 
 È possibile limitare il campo applicazione della regola di filtraggio in base al profilo di consegna o consegna collegato.
 
-A questo scopo, andate alla **[!UICONTROL General]** scheda della regola di tipologia, selezionate il tipo di restrizione da applicare e create il filtro, come illustrato di seguito:
+A questo scopo, andate alla scheda **[!UICONTROL General]** della regola di tipologia, selezionate il tipo di restrizione da applicare e create il filtro, come illustrato di seguito:
 
 ![](assets/campaign_opt_create_filter_06.png)
 
@@ -59,19 +59,19 @@ In questo caso, anche se la regola è collegata a tutte le consegne, verrà appl
 
 >[!NOTE]
 >
->Le tipologie e le regole di filtro possono essere utilizzate in un flusso di lavoro, in un&#39; **[!UICONTROL Delivery outline]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/delivery-outline.md).
+>Le tipologie e le regole di filtro possono essere utilizzate in un flusso di lavoro, nell&#39;attività **[!UICONTROL Delivery outline]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/delivery-outline.md).
 
-## Creazione e utilizzo di una tipologia di filtro {#creating-and-using-a-filtering-typology}
+## Creazione e utilizzo di un tipo di filtro {#creating-and-using-a-filtering-typology}
 
-È possibile creare **[!UICONTROL Filtering]** tipologie: contengono solo regole di filtro.
+È possibile creare tipi **[!UICONTROL Filtering]**: contengono solo regole di filtro.
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Queste tipologie specifiche possono essere collegate a una consegna quando la destinazione è selezionata: nella procedura guidata di consegna fare clic sul **[!UICONTROL To]** collegamento, quindi fare clic sulla **[!UICONTROL Exclusions]** scheda.
+Queste tipologie specifiche possono essere collegate a una consegna quando la destinazione è selezionata: nella procedura guidata di consegna fare clic sul collegamento **[!UICONTROL To]**, quindi fare clic sulla scheda **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Selezionate quindi la tipologia di filtro da applicare alla consegna. A questo scopo, fare clic sul **[!UICONTROL Add]** pulsante e selezionare le tipologie da applicare.
+Selezionate quindi la tipologia di filtro da applicare alla consegna. A questo scopo, fare clic sul pulsante **[!UICONTROL Add]** e selezionare le tipologie da applicare.
 
 Potete anche collegare le regole di filtro direttamente tramite questa scheda, senza raggrupparle in una tipologia. A tale scopo, utilizzare la sezione inferiore della finestra.
 
