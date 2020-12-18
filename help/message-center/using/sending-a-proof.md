@@ -21,12 +21,12 @@ ht-degree: 6%
 
 L&#39;invio di una prova implica lo stesso processo previsto per una consegna regolare (per ulteriori informazioni, consultare [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)). Tuttavia, per inviare una prova all&#39;interno di Centro messaggi è necessario eseguire prima le seguenti operazioni:
 
-* Create uno o più indirizzi iniziali (consultate [Gestione degli indirizzi iniziali nei messaggi](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)transazionali) con i dati di test (consultate i dati [di](../../message-center/using/personalization-data.md)personalizzazione).
-* Crea il contenuto del messaggio (consulta [Creazione del contenuto](../../message-center/using/creating-message-content.md)del messaggio).
+* Creare uno o più indirizzi iniziali (fare riferimento a [Gestione degli indirizzi iniziali nei messaggi transazionali](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) con i dati di prova (fare riferimento a [Dati di personalizzazione](../../message-center/using/personalization-data.md)).
+* Creare il contenuto del messaggio (fare riferimento a [Creazione di contenuto del messaggio](../../message-center/using/creating-message-content.md)).
 
 Per inviare la prova:
 
-1. Fate clic sul **[!UICONTROL Send a proof]** pulsante nella finestra di consegna.
+1. Fare clic sul pulsante **[!UICONTROL Send a proof]** nella finestra di consegna.
 1. Analizzare la consegna.
 1. Correggete eventuali errori e confermate la consegna.
 
@@ -36,7 +36,7 @@ Per inviare la prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-È possibile accedere alle prove in ciascun modello tramite la **[!UICONTROL Audit]** scheda.
+È possibile accedere alle prove in ciascun modello tramite la scheda **[!UICONTROL Audit]**.
 
 ![](assets/messagecenter_send_proof_003.png)
 
