@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # Salto (punto iniziale e punto finale){#jump-start-point-and-end-point}
 
-**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di uno con transizioni di attraversamento.
+**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare uno con transizioni di attraversamento.
 
 Gli jump sono transizioni senza frecce.
 
@@ -31,4 +31,4 @@ Potete inserire diversi ponti di inizio e fine nello stesso flusso di lavoro. So
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. See [Managing activity images](../../workflow/using/managing-activity-images.md).
+Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Vedere [Gestione delle immagini dell&#39;attività](../../workflow/using/managing-activity-images.md).
