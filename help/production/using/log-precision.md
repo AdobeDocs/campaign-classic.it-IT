@@ -39,7 +39,7 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. La modalità **TraceFilter** , che consente di salvare il maggior numero di registri. È attivata dal seguente comando:
+1. La modalità **TraceFilter**, che consente di salvare il maggior numero di registri. È attivata dal seguente comando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -47,9 +47,9 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
 
    >[!NOTE]
    >
-   >Se utilizzate **tracefilter:***, tutti i tipi di registro sono attivati: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, soap, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
+   >Se si utilizza **tracefilter:***, tutti i tipi di registro sono attivati: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, soap, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
    I tipi di registro più utili sono: **wdbc** (visualizza tutte le query SQL), **soap** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le query).\
-   Potete usarli singolarmente (ad esempio,**tracefilter:soap,wdbc** ). Potete anche attivarli tutti e escludere alcuni altri: **-tracefilter:*,!soap**
+   È possibile utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Potete anche attivarli tutti e escludere alcuni altri: **-tracefilter:*,!soap**
 
    Verificate che l&#39;errore si sia verificato, quindi riavviate il processo nel modo normale:
 
@@ -60,7 +60,7 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
 >[!IMPORTANT]
 I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
-Di seguito è riportato un esempio specifico per il modulo Web. Gli altri moduli funzionano come indicato sopra.
+Di seguito è riportato un esempio specifico del modulo Web. Gli altri moduli funzionano come indicato sopra.
 
 Prima di inviare questo comando, verificate che non venga interessato alcun processo in corso.
 
@@ -68,7 +68,7 @@ Prima di inviare questo comando, verificate che non venga interessato alcun proc
 nlserver pdump -who
 ```
 
-Quindi, arrestare e riavviare il modulo in modalità **TraceFilter** .
+Quindi, arrestare e riavviare il modulo in modalità **TraceFilter**.
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -81,7 +81,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-La modalità **Tracefile** consente di salvare i file di registro. Negli esempi riportati sopra, i file di registro vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** .
+La modalità **Tracefile** consente di salvare i file di registro. Negli esempi riportati sopra, i file di registro vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
 
 >[!IMPORTANT]
 In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il seguente comando è sufficiente:\
