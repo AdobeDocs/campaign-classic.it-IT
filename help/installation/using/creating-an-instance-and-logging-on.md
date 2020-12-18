@@ -25,37 +25,37 @@ Per creare una nuova istanza e  database Adobe Campaign, eseguite il seguente pr
 
 >[!NOTE]
 >
->Queste operazioni possono essere eseguite solo dall’identificatore **interno** . For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Solo l&#39;identificatore **internal** può eseguire queste operazioni. Per ulteriori informazioni, fare riferimento a [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 Quando viene avviata la console di Adobe Campaign , potete accedere a una pagina di login.
 
 Per creare una nuova istanza, effettuate le operazioni seguenti:
 
-1. Fare clic sul collegamento nell&#39;angolo superiore destro dei campi delle credenziali per accedere alla finestra di configurazione della connessione. Questo collegamento può essere uno **[!UICONTROL New...]** o un nome di istanza esistente.
+1. Fare clic sul collegamento nell&#39;angolo superiore destro dei campi delle credenziali per accedere alla finestra di configurazione della connessione. Questo collegamento può essere **[!UICONTROL New...]** o un nome di istanza esistente.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Fate clic su **[!UICONTROL Add > Connection]** e immettete l’etichetta e l’URL del server applicazione Adobe Campaign .
+1. Fare clic su **[!UICONTROL Add > Connection]** e immettere l&#39;etichetta e l&#39;URL del server dell&#39;applicazione Adobe Campaign .
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. Specificate una connessione al server  applicazione Adobe Campaign tramite un URL. Utilizzate un DNS o un alias del computer o il vostro indirizzo IP.
 
-   Ad esempio, potete utilizzare il [`https://<machine>.<domain>.com`](https://myserver.adobe.com) tipo URL.
+   Ad esempio, potete utilizzare l&#39;URL di tipo [`https://<machine>.<domain>.com`](https://myserver.adobe.com).
 
    >[!CAUTION]
    >
    >Per l&#39;URL di connessione, utilizzate solo i seguenti caratteri: `[a-z]`, `[A-Z]`, `[0-9]` e trattini (-) o arresti completi.
 
-1. Fate clic **[!UICONTROL Ok]** per confermare le impostazioni: ora potete iniziare con il processo di creazione dell&#39;istanza.
-1. Nella **[!UICONTROL Connection settings]** finestra, immettete il login **interno** e la relativa password per collegarvi al server dell’applicazione Adobe Campaign . Una volta connessi, potete accedere alla procedura guidata di creazione dell&#39;istanza per dichiarare una nuova istanza
-1. Nel **[!UICONTROL Name]** campo, immettete il nome **dell’** istanza. Poiché questo nome viene utilizzato per generare un file di configurazione **config-`<instance>`.xml** ed è utilizzato nei parametri della riga di comando per identificare l&#39;istanza, accertatevi di scegliere un nome breve senza caratteri speciali. Ad esempio: **eMarketing**.
+1. Fare clic su **[!UICONTROL Ok]** per confermare le impostazioni: ora potete iniziare con il processo di creazione dell&#39;istanza.
+1. Nella finestra **[!UICONTROL Connection settings]**, inserire il login **interno** e la relativa password per connettersi al server dell&#39;applicazione Adobe Campaign . Una volta connessi, potete accedere alla procedura guidata di creazione dell&#39;istanza per dichiarare una nuova istanza
+1. Nel campo **[!UICONTROL Name]**, immettere il **nome dell&#39;istanza**. Poiché questo nome viene utilizzato per generare un file di configurazione **config-`<instance>`.xml** e viene utilizzato nei parametri della riga di comando per identificare l&#39;istanza, accertatevi di scegliere un nome breve senza caratteri speciali. Ad esempio: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
    Il nome dell’istanza aggiunta al nome del dominio non deve superare i 40 caratteri. Questo consente di limitare la dimensione delle intestazioni &quot;Message-ID&quot; e impedisce che i messaggi vengano considerati come spam, in particolare da strumenti come SpamAssassin.
 
-1. Nei **[!UICONTROL DNS masks]** campi, immettete l&#39; **elenco delle maschere** DNS a cui deve essere associata l&#39;istanza. Il server Adobe Campaign  utilizza il nome host visualizzato nelle richieste HTTP per determinare quale istanza raggiungere.
+1. Nei campi **[!UICONTROL DNS masks]**, immettere l&#39; **elenco di maschere DNS** a cui l&#39;istanza deve essere associata. Il server Adobe Campaign  utilizza il nome host visualizzato nelle richieste HTTP per determinare quale istanza raggiungere.
 
    Il nome host è contenuto tra la stringa **https://** e il primo carattere barra **/** dell&#39;indirizzo del server.
 
@@ -69,7 +69,7 @@ Per creare una nuova istanza, effettuate le operazioni seguenti:
 
    Inoltre, il server deve essere in grado di connettersi a se stesso con questo nome e, se possibile, con un indirizzo di loopback - 127.0.0.1 -, in particolare per consentire l&#39;esportazione dei rapporti in formato PDF.
 
-1. Nell&#39;elenco a **[!UICONTROL Language]** discesa, selezionate la lingua **dell&#39;** istanza: Inglese (USA), inglese (Regno Unito), francese o giapponese.
+1. Nell&#39;elenco a discesa **[!UICONTROL Language]**, selezionare la **lingua dell&#39;istanza**: Inglese (USA), inglese (Regno Unito), francese o giapponese.
 
    Le differenze tra inglese americano e inglese britannico sono descritte in [questa sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
@@ -77,9 +77,9 @@ Per creare una nuova istanza, effettuate le operazioni seguenti:
    >
    >Dopo questo passaggio non è possibile modificare la lingua dell&#39;istanza.  istanze Adobe Campaign non sono multilingue: non è possibile passare da una lingua a un&#39;altra.
 
-1. Fate clic **[!UICONTROL Ok]** per confermare la dichiarazione dell&#39;istanza. Disconnettersi e tornare indietro per dichiarare il database.
+1. Fare clic su **[!UICONTROL Ok]** per confermare la dichiarazione dell&#39;istanza. Disconnettersi e tornare indietro per dichiarare il database.
 
    >[!NOTE]
    >
-   >L&#39;istanza può essere creata dalla riga di comando. For more on this, refer to [Command lines](../../installation/using/command-lines.md).
+   >L&#39;istanza può essere creata dalla riga di comando. Per ulteriori informazioni, vedere [Linee di comando](../../installation/using/command-lines.md).
 
