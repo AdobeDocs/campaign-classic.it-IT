@@ -35,7 +35,7 @@ Per ottimizzare la creazione, l&#39;utilizzo e la durata di un rapporto, è nece
    * Aggiungere indicatori a un report esistente. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizzare i dati nel database. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto sulla consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esportare dati dal database Adobe Campaign  (tramite un flusso di lavoro, fare riferimento a [questa sezione)](../../workflow/using/about-workflows.md)
+   * Esportare dati dal database Adobe Campaign  (tramite un flusso di lavoro, fare riferimento a [questa sezione](../../workflow/using/about-workflows.md)
    * Creare una tabella pivot. Ulteriori informazioni [in questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplora i dati aggregati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-cubes.md)
    * Utilizza una procedura guidata per analizzare i dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
@@ -62,7 +62,7 @@ Per ottimizzare la creazione, l&#39;utilizzo e la durata di un rapporto, è nece
 
    I problemi legati ai volumi di dati e agli aggiornamenti devono essere esaminati attentamente per evitare problemi di visualizzazione dei report, soprattutto in termini di tempo. È pertanto consigliabile creare aggregati per precalcolare alcuni dati al di fuori del rapporto. Le tabelle che contengono i registri di monitoraggio e consegna possono includere milioni di record: ciò significa che i dati devono essere aggregati tramite un flusso di lavoro da utilizzare in un report.
 
-## Ottimizzazione della creazione dei report{#optimizing-report-creation}
+## Ottimizzazione della creazione di report{#optimizing-report-creation}
 
 ### Volume dei dati {#data-volume}
 
@@ -102,7 +102,7 @@ Inoltre,  Adobe Campaign consiglia i seguenti miglioramenti:
 
    Per trovare rapidamente un campo indicizzato, osservare il nome della colonna nell’interfaccia Adobe Campaign : la freccia di ordinamento è sottolineata in rosso se il campo è indicizzato.
 
-   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+   Per ulteriori informazioni sugli indici, consultare [questa sezione](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Assicurati che il rapporto sia scalabile: il volume dei dati può aumentare notevolmente nel tempo.
 
@@ -110,8 +110,8 @@ Inoltre,  Adobe Campaign consiglia i seguenti miglioramenti:
 
    Infine, i ritardi nella rimozione dei dati devono essere noti e adattati quando necessario per una facile manipolazione dei dati.
 
-   Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
+   Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consultare [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Esportazione dei rapporti {#exporting-reports}
+### Esportazione di report {#exporting-reports}
 
-Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations specifico per l&#39;esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
