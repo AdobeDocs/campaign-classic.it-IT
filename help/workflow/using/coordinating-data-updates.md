@@ -27,12 +27,12 @@ Questo flusso di lavoro è composto da:
 
 * un&#39;attività **Scheduler** che esegue il flusso di lavoro su una frequenza specifica.
 * un&#39;attività **Test** che verifica se il flusso di lavoro è già in esecuzione.
-* **Attività di query** e **aggiornamento dati** nel caso in cui il flusso di lavoro non sia già in esecuzione, seguite da un&#39;attività **End** che reinizializza la variabile di istanza del flusso di lavoro su false.
+* **Attività** Query e  **Aggiorna** dati nel caso in cui il flusso di lavoro non sia già in esecuzione, seguite da un&#39;attività  **** Endactivity che reinizializza la variabile di istanza del flusso di lavoro su false.
 * Un&#39;attività **End** se il flusso di lavoro è già in esecuzione.
 
 Per generare il flusso di lavoro, effettuate le seguenti operazioni:
 
-1. Aggiungi un&#39;attività **Scheduler** , quindi configurane la frequenza in base alle tue esigenze.
+1. Aggiungi un&#39;attività **Scheduler**, quindi configurane la frequenza in base alle tue esigenze.
 1. Aggiungete un&#39;attività **Test** per verificare se il flusso di lavoro è già in esecuzione, quindi configuratela come di seguito.
 
    >[!NOTE]
@@ -41,13 +41,13 @@ Per generare il flusso di lavoro, effettuate le seguenti operazioni:
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Aggiungete un&#39;attività **End** al **fork No** . In questo modo, se il flusso di lavoro è già in esecuzione non verrà eseguito nulla.
-1. Aggiungete le attività desiderate al modulo **Sì** . Nel nostro caso, le attività **Query** e **Aggiorna dati** .
-1. Aprite la prima attività, quindi aggiungete il comando **instance.vars.isRunning = true** nella **[!UICONTROL Advanced]** scheda. In questo modo, la variabile di istanza viene impostata come in esecuzione.
+1. Aggiungete un&#39;attività **End** alla forchetta **No**. In questo modo, se il flusso di lavoro è già in esecuzione non verrà eseguito nulla.
+1. Aggiungete le attività desiderate al fork **Yes**. Nel nostro caso, le attività **Query** e **Aggiorna dati**.
+1. Aprite la prima attività, quindi aggiungete il comando **instance.vars.isRunning = true** nella scheda **[!UICONTROL Advanced]**. In questo modo, la variabile di istanza viene impostata come in esecuzione.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Aggiungete un&#39;attività **End** alla fine del **[!UICONTROL Yes]** fork, quindi aggiungete il comando **instance.vars.isRunning = false** nella **[!UICONTROL Advanced]** scheda.
+1. Aggiungete un&#39;attività **End** alla fine del fork **[!UICONTROL Yes]**, quindi aggiungete il comando **instance.vars.isRunning = false** nella scheda **[!UICONTROL Advanced]**.
 
    In questo modo, non verrà eseguita alcuna azione finché il flusso di lavoro sarà in esecuzione.
 
