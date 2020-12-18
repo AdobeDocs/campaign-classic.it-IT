@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # Piattaforma di mid-sourcing{#mid-sourcing-platform}
 
-Per impostazione predefinita, il flusso di lavoro riportato di seguito è installato con il modulo della piattaforma **** Mid-Sourcing. For more on this module, refer to this [section](../../installation/using/mid-sourcing-deployment.md).
+Il flusso di lavoro riportato di seguito viene installato con il modulo **Piattaforma Media Sourcing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
