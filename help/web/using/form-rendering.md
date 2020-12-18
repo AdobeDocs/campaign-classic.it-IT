@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Selezione del modello di rendering del modulo {#selecting-the-form-rendering-template}
 
-Le impostazioni del modulo consentono di selezionare il modello utilizzato per generare le pagine. Per accedervi, fare clic sul **[!UICONTROL Settings]** pulsante nella barra degli strumenti dei dettagli del modulo, quindi selezionare la **[!UICONTROL Rendering]** scheda. Per impostazione predefinita sono disponibili diversi modelli (fogli di stile).
+Le impostazioni del modulo consentono di selezionare il modello utilizzato per generare le pagine. Per accedervi, fare clic sul pulsante **[!UICONTROL Settings]** nella barra degli strumenti dei dettagli del modulo, quindi selezionare la scheda **[!UICONTROL Rendering]**. Per impostazione predefinita sono disponibili diversi modelli (fogli di stile).
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
@@ -29,7 +29,7 @@ La funzione di zoom consente di modificare il modello selezionato.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-Potete modificare o ignorare questi modelli. A tal fine, fate clic sul **[!UICONTROL Page layout...]** collegamento e personalizzate le informazioni.
+Potete modificare o ignorare questi modelli. A tal fine, fate clic sul collegamento **[!UICONTROL Page layout...]** e personalizzate le informazioni.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -38,25 +38,25 @@ Puoi:
 * Modificate l’immagine usata come logo e adattatene le dimensioni,
 * Specificate inoltre il percorso per accedere all&#39;immagine di anteprima quando gli utenti selezionano questo modello di rendering.
 
-La **[!UICONTROL Headers/Footers]** scheda consente di modificare le informazioni visualizzate nelle intestazioni e nei piè di pagina di ciascuna pagina del modulo utilizzando questo modello.
+La scheda **[!UICONTROL Headers/Footers]** consente di modificare le informazioni visualizzate nelle intestazioni e nei piè di pagina di ciascuna pagina del modulo utilizzando questo modello.
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Ogni riga della sezione **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corrisponde a una riga nella pagina HTML. Click **[!UICONTROL Add]** to create a new line.
+Ogni riga della sezione **[!UICONTROL Page headers]** e **[!UICONTROL Page footers]** corrisponde a una riga nella pagina HTML. Fare clic su **[!UICONTROL Add]** per creare una nuova riga.
 
-Selezionate una linea esistente e fate clic sul **[!UICONTROL Detail]** pulsante per personalizzarla.
+Selezionate una riga esistente e fate clic sul pulsante **[!UICONTROL Detail]** per personalizzarla.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
-È possibile modificare il contenuto della riga, aggiungere bordi e modificare gli attributi dei font tramite le relative schede. Fate clic **[!UICONTROL OK]** per confermare le modifiche.
+È possibile modificare il contenuto della riga, aggiungere bordi e modificare gli attributi dei font tramite le relative schede. Fare clic su **[!UICONTROL OK]** per confermare le modifiche.
 
-I **[!UICONTROL Position]** campi consentono di definire la posizione degli elementi nell’intestazione e nel piè di pagina della pagina.
+I campi **[!UICONTROL Position]** consentono di definire la posizione degli elementi nell&#39;intestazione e nel piè di pagina della pagina.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
->I modelli di rendering sono memorizzati nel **[!UICONTROL Administration > Configuration > Form rendering]** nodo.\
+>I modelli di rendering sono memorizzati nel nodo **[!UICONTROL Administration > Configuration > Form rendering]**.\
 >Per ulteriori informazioni, vedere [Personalizzazione del rendering del modulo](#customizing-form-rendering)
 
 ## Personalizzazione del rendering del modulo {#customizing-form-rendering}
@@ -65,20 +65,20 @@ I **[!UICONTROL Position]** campi consentono di definire la posizione degli elem
 
 È possibile sovraccaricare il foglio di stile per ciascun elemento del modulo (campi di input, immagini, pulsanti di scelta, ecc.).
 
-To do this, use the **[!UICONTROL Advanced]** tab.
+A tal fine, utilizzare la scheda **[!UICONTROL Advanced]**.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Consente di definire le seguenti proprietà:
 
-* **[!UICONTROL Label position]**: vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**: vedere  [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**: ritorno a capo automatico o senza ritorno a capo automatico,
-* **[!UICONTROL Number of cells]** : vedere [Posizionamento dei campi sulla pagina](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
-* **[!UICONTROL Horizontal alignment]** (A sinistra, A destra, Al centro) e **[!UICONTROL Vertical alignment]** (Alto, Basso, Centro),
+* **[!UICONTROL Number of cells]** : vedere  [Posizionamento dei campi sulla pagina](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Horizontal alignment]** (A sinistra, A destra, Al centro) e  **[!UICONTROL Vertical alignment]** (Alto, Basso, Centro),
 * **[!UICONTROL Width]** della zona: può essere espresso come percentuale o in em, punti o pixel (valore predefinito),
 * Massimo **[!UICONTROL Length]**: Numero massimo di caratteri consentiti (per i controlli di tipo Testo, Numero e Password),
-* **[!UICONTROL Lines]**: numero di righe per una zona di **[!UICONTROL Multi-line text]** tipo,
-* **[!UICONTROL Style inline]**: consente di sovraccaricare il foglio di stile CSS con impostazioni aggiuntive. Questi sono separati utilizzando **;** come illustrato nell&#39;esempio seguente:
+* **[!UICONTROL Lines]**: numero di righe per una zona  **[!UICONTROL Multi-line text]** tipo,
+* **[!UICONTROL Style inline]**: consente di sovraccaricare il foglio di stile CSS con impostazioni aggiuntive. Queste sono separate utilizzando i caratteri **;** come illustrato nell&#39;esempio seguente:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -86,13 +86,13 @@ Consente di definire le seguenti proprietà:
 
 I campi sono ordinati in sequenza in una struttura ad albero con il nome della radice uguale a quello della pagina. Selezionatela per modificare il nome.
 
-Il titolo della finestra deve essere immesso nella **[!UICONTROL Page]** scheda della finestra delle proprietà del modulo. È inoltre possibile aggiungere un set di contenuti all’intestazione e al piè di pagina della pagina (queste informazioni verranno visualizzate su ogni pagina). Il contenuto viene immesso nelle sezioni corrispondenti della **[!UICONTROL Texts]** scheda, come illustrato di seguito:
+Il titolo della finestra deve essere immesso nella scheda **[!UICONTROL Page]** della finestra delle proprietà del modulo. È inoltre possibile aggiungere un set di contenuti all’intestazione e al piè di pagina della pagina (queste informazioni verranno visualizzate su ogni pagina). Il contenuto viene immesso nelle sezioni corrispondenti della scheda **[!UICONTROL Texts]**, come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Aggiunta di elementi all&#39;intestazione HTML {#adding-elements-to-html-header}
 
-È possibile inserire elementi aggiuntivi da inserire nell&#39;intestazione HTML di una pagina del modulo. A tal fine, immettete gli elementi nella **[!UICONTROL Header]** scheda della pagina corrispondente.
+È possibile inserire elementi aggiuntivi da inserire nell&#39;intestazione HTML di una pagina del modulo. A tal fine, immettete gli elementi nella scheda **[!UICONTROL Header]** della pagina corrispondente.
 
 Questo consente di fare riferimento a un&#39;icona che verrà visualizzata, ad esempio, nella barra del titolo della pagina.
 
@@ -100,7 +100,7 @@ Questo consente di fare riferimento a un&#39;icona che verrà visualizzata, ad e
 
 ## Definizione delle impostazioni di controllo {#defining-control-settings}
 
-Quando l&#39;utente compila il modulo, viene automaticamente effettuato un controllo su alcuni campi, a seconda del formato o della configurazione. Questo consente di rendere obbligatori alcuni campi (fare riferimento a [Definizione di campi](#defining-mandatory-fields)obbligatori) o di controllare il formato dei dati immessi (fare riferimento a [Controllo del formato](#checking-data-format)dei dati). I controlli vengono eseguiti durante l&#39;approvazione della pagina (facendo clic su un collegamento o un pulsante che consente una transizione di output).
+Quando l&#39;utente compila il modulo, viene automaticamente effettuato un controllo su alcuni campi, a seconda del formato o della configurazione. Questo consente di rendere obbligatori alcuni campi (fare riferimento a [Definizione di campi obbligatori](#defining-mandatory-fields)) o di controllare il formato dei dati immessi (fare riferimento a [Controllo del formato dei dati](#checking-data-format)). I controlli vengono eseguiti durante l&#39;approvazione della pagina (facendo clic su un collegamento o un pulsante che consente una transizione di output).
 
 ### Definizione di campi obbligatori {#defining-mandatory-fields}
 
@@ -112,7 +112,7 @@ Se l&#39;utente approva la pagina senza aver inserito il campo, verrà visualizz
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
-Puoi personalizzare il messaggio facendo clic sul **[!UICONTROL Personalize this message]** collegamento.
+Puoi personalizzare il messaggio facendo clic sul collegamento **[!UICONTROL Personalize this message]**.
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
@@ -126,7 +126,7 @@ Per i controlli modulo i cui valori sono memorizzati in un campo esistente del d
 
 Per i controlli modulo i cui valori sono memorizzati in una variabile, le regole di approvazione dipendono dal formato della variabile.
 
-Ad esempio, se create un **[!UICONTROL Number]** controllo per memorizzare il numero client, come illustrato di seguito:
+Ad esempio, se create un controllo **[!UICONTROL Number]** per memorizzare il numero client, come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_choose_format.png)
 
@@ -136,7 +136,7 @@ L&#39;utente deve immettere un numero intero nel campo modulo.
 
 È possibile configurare la visualizzazione dei campi sulla pagina da visualizzare in base ai valori scelti dall&#39;utente. Questo può essere applicato a un campo o a un gruppo di campi (quando sono raggruppati in un contenitore).
 
-Per ciascun elemento della pagina, la **[!UICONTROL Visibility]** sezione consente di definire le condizioni di visualizzazione.
+Per ciascun elemento della pagina, la sezione **[!UICONTROL Visibility]** consente di definire le condizioni di visualizzazione.
 
 ![](assets/s_ncs_admin_survey_condition_edit.png)
 
@@ -150,15 +150,15 @@ Nella finestra di selezione del campo è possibile scegliere tra i dati seguenti
 
    Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
-* La struttura **[!UICONTROL Recipients]** secondaria contiene i campi di input inseriti nel modulo e memorizzati nel database.
+* La sottostruttura **[!UICONTROL Recipients]** contiene i campi di input inseriti nel modulo e memorizzati nel database.
 
    Per ulteriori informazioni, vedere [Memorizzazione dei dati nel database](../../web/using/web-forms-answers.md#storing-data-in-the-database).
 
-* La struttura **[!UICONTROL Variables]** secondaria contiene le variabili disponibili per il modulo. Per ulteriori informazioni, vedere [Memorizzazione dei dati in una variabile](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable)locale.
+* La sottostruttura **[!UICONTROL Variables]** contiene le variabili disponibili per questo modulo. Per ulteriori informazioni, vedere [Memorizzazione dei dati in una variabile locale](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
 
-Per ulteriori informazioni, consulta il caso d’uso qui: [Visualizzazione di opzioni diverse a seconda dei valori](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)selezionati.
+Per ulteriori informazioni, consulta il caso d’uso qui: [Visualizzazione di opzioni diverse a seconda dei valori selezionati](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-È inoltre possibile condizionare la visualizzazione delle pagine del modulo utilizzando l&#39; **[!UICONTROL Test]** oggetto. Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+È inoltre possibile condizionare la visualizzazione delle pagine del modulo utilizzando l&#39;oggetto **[!UICONTROL Test]**. Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Importazione di elementi da un modulo esistente {#importing-elements-from-an-existing-form}
 
@@ -166,7 +166,7 @@ Per ulteriori informazioni, consulta il caso d’uso qui: [Visualizzazione di op
 
 Per importare un elemento in un modulo, procedere come segue:
 
-1. Modificare la pagina in cui si desidera inserire uno o più elementi, quindi fare clic **[!UICONTROL Import an existing block]** sulla barra degli strumenti.
+1. Modificate la pagina in cui desiderate inserire uno o più elementi, quindi fate clic su **[!UICONTROL Import an existing block]** nella barra degli strumenti.
 
    ![](assets/s_ncs_admin_survey_import_block.png)
 
@@ -176,9 +176,9 @@ Per importare un elemento in un modulo, procedere come segue:
 
    >[!NOTE]
    >
-   >L&#39; **[!UICONTROL Edit link]** icona a destra del nome del modulo di origine consente di visualizzare il modulo Web selezionato.
+   >L&#39;icona **[!UICONTROL Edit link]** a destra del nome del modulo di origine consente di visualizzare il modulo Web selezionato.
 
-1. Fare clic **[!UICONTROL Ok]** per confermare l&#39;inserimento.
+1. Fare clic su **[!UICONTROL Ok]** per confermare l&#39;inserimento.
 
    ![](assets/s_ncs_admin_survey_import_block_rendering.png)
 
