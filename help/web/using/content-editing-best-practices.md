@@ -19,8 +19,8 @@ ht-degree: 6%
 
 Per garantire il funzionamento ottimale dell&#39;editor, si consiglia di osservare le seguenti linee guida:
 
-* Before **importing an HTML page template** in Adobe Campaign, please make sure the template opens and displays correctly in the various browsers.
-* If the HTML page contains **JavaScript scripts**, they need to execute **without errors** outside of the editor.
+* Prima di **importare un modello di pagina HTML** in  Adobe Campaign, assicurarsi che il modello si apra e venga visualizzato correttamente nei vari browser.
+* Se la pagina HTML contiene **script JavaScript**, è necessario eseguire **senza errori** all&#39;esterno dell&#39;editor.
 * Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e aiuteranno l&#39;utente a collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
    Esempio di codice HTML nel modello:
@@ -39,19 +39,19 @@ Per garantire il funzionamento ottimale dell&#39;editor, si consiglia di osserva
 
    ![](assets/dce_enchainement.png)
 
-* Accertatevi che sia presente solo una `<body> </body>` nella pagina.
+* Accertatevi che nella pagina sia presente un solo elemento `<body> </body>`.
 * Quando viene caricato un file CSS o JS, le immagini contenute nel file .zip non vengono caricate. I riferimenti a queste immagini presenti nel CSS non vengono quindi aggiornati.
 
 ## Formati supportati per l&#39;editor di contenuti {#content-editor-supported-formats}
 
-Digital Content Editor supporta il formato HTML: è possibile passare alla modalità **sorgente** in qualsiasi momento.
+Digital Content Editor supporta il formato HTML: è possibile passare alla modalità **source** in qualsiasi momento.
 
 La funzione di importazione di Digital Content Editor funziona come segue con i seguenti formati supportati:
 
 * CSS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini nel CSS non vengono aggiornati.
 * JS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini in JS non vengono aggiornati.
 * Iframe: le pagine collegate non vengono importate.
-* Pagine di destinazione e app Web: se manca un tag **modulo** , viene visualizzato un avviso. Un messaggio `<form> </form>` deve essere sempre presente nel corpo del messaggio.
+* Pagine di destinazione e app Web: se manca un tag **form**, viene visualizzato un avviso. Un `<form> </form>` deve essere sempre presente nel corpo del messaggio.
 
 Digital Content Editor funziona anche con le seguenti pagine di codice supportate:
 
@@ -71,7 +71,7 @@ Digital Content Editor funziona anche con le seguenti pagine di codice supportat
 >
 >La tabella codici HTML deve essere definita in un tag meta (HTML 4 o HTML 5) o nella distinta base. Se non è disponibile alcuna tabella codici, aprite il file in latin1.
 
-## Stati del contenuto HTML {#html-content-statuses}
+## Stati contenuto HTML {#html-content-statuses}
 
 Nella sezione superiore dell&#39;editor vengono visualizzati messaggi relativi allo stato del contenuto. I codici colore dei messaggi sono i seguenti:
 
