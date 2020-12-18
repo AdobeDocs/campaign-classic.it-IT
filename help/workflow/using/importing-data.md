@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 0%
 >
 >Durante l&#39;importazione dei dati, tieni presente i limiti di archiviazione SFTP, archiviazione di database e profilo attivo come previsto dal contratto Adobe Campaign .
 
-## Modalità di raccolta dei dati {#how-to-collect-data}
+## Come raccogliere i dati {#how-to-collect-data}
 
-### Utilizzo dei dati di un elenco: Leggi l&#39;elenco {#using-data-from-a-list--read-list}
+### Utilizzo dei dati di un elenco: Elenco di lettura {#using-data-from-a-list--read-list}
 
 I dati inviati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati preparati e strutturati in anticipo.
 
-Questo elenco potrebbe essere stato creato direttamente in  Adobe Campaign o importato dall’ **[!UICONTROL Import a list]** opzione. For more on this option, refer to this [page](../../platform/using/generic-imports-and-exports.md).
+Questo elenco potrebbe essere stato creato direttamente in  Adobe Campaign o importato dall&#39;opzione **[!UICONTROL Import a list]**. Per ulteriori informazioni su questa opzione, fare riferimento a [page](../../platform/using/generic-imports-and-exports.md).
 
-Per ulteriori informazioni sull&#39;utilizzo dell&#39;attività di lettura dell&#39;elenco in un flusso di lavoro, vedere [Elenco](../../workflow/using/read-list.md)di lettura.
+Per ulteriori informazioni sull&#39;utilizzo dell&#39;attività dell&#39;elenco di lettura in un flusso di lavoro, fare riferimento a [Read list](../../workflow/using/read-list.md).
 
 ### Caricamento di dati da un file {#loading-data-from-a-file}
 
 I dati elaborati in un flusso di lavoro possono essere estratti da un file strutturato in modo che possano essere importati in  Adobe Campaign.
 
-Una descrizione dell&#39;attività di caricamento dei dati è disponibile nella sezione Caricamento [dati (file)](../../workflow/using/data-loading--file-.md) .
+Una descrizione dell&#39;attività di caricamento dei dati è disponibile nella sezione [Caricamento dei dati (file)](../../workflow/using/data-loading--file-.md).
 
 Esempio di file strutturato da importare:
 
@@ -47,7 +47,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Procedure ottimali per l&#39;importazione dei dati {#best-practices-when-importing-data}
+## Best practice per l&#39;importazione di dati {#best-practices-when-importing-data}
 
 Essere cauti e seguire le poche semplici regole descritte di seguito aiuterà molto a garantire la coerenza dei dati all&#39;interno del database e ad evitare errori comuni durante l&#39;aggiornamento del database o le esportazioni di dati.
 
@@ -55,13 +55,13 @@ Essere cauti e seguire le poche semplici regole descritte di seguito aiuterà mo
 
 La maggior parte dei flussi di lavoro di importazione deve contenere le seguenti attività: **[!UICONTROL Data loading (file)]**, **[!UICONTROL Enrichment]**, **[!UICONTROL Split]**, **[!UICONTROL Deduplication]**, **[!UICONTROL Update data]**.
 
-Utilizzando i modelli di importazione è molto comodo preparare importazioni simili e garantire la coerenza dei dati all&#39;interno del database. Scopri come creare modelli di workflow nella sezione Modelli [di](../../workflow/using/building-a-workflow.md#workflow-templates) workflow.
+Utilizzando i modelli di importazione è molto comodo preparare importazioni simili e garantire la coerenza dei dati all&#39;interno del database. Scopri come creare i modelli di workflow nella sezione [Modelli di workflow](../../workflow/using/building-a-workflow.md#workflow-templates).
 
-In molti progetti, le importazioni vengono create senza **[!UICONTROL Deduplication]** attività perché i file utilizzati nel progetto non hanno duplicati. Talvolta i duplicati vengono visualizzati durante l’importazione di file diversi. La deduplicazione è quindi difficile. Pertanto, un passaggio di deduplicazione è una buona precauzione in tutti i flussi di lavoro di importazione.
+In molti progetti, le importazioni vengono create senza l&#39;attività **[!UICONTROL Deduplication]** perché i file utilizzati nel progetto non hanno duplicati. Talvolta i duplicati vengono visualizzati durante l’importazione di file diversi. La deduplicazione è quindi difficile. Pertanto, un passaggio di deduplicazione è una buona precauzione in tutti i flussi di lavoro di importazione.
 
 Non devi basarsi sul presupposto che i dati in arrivo siano coerenti e corretti, o che il reparto IT o  supervisore Adobe Campaign se ne occuperà. Durante il progetto, tenere presente la pulizia dei dati. Deduplicare, riconciliare e mantenere la coerenza quando si importano i dati.
 
-Un esempio di modello di importazione è disponibile nella sezione [Impostazione di una sezione di importazione](#setting-up-a-recurring-import) ricorrente.
+Un esempio di modello di importazione è disponibile nella sezione [Impostazione di un&#39;importazione ricorrente](#setting-up-a-recurring-import).
 
 ### Uso dei formati di file semplici {#using-flat-file-formats}
 
@@ -88,7 +88,7 @@ zcat nl6/var/vp/import/filename.gz
 
 È inoltre buona norma crittografare i file inviati in rete se non sono protetti. GPG può essere utilizzato per questo.
 
-### Caricamento dei dati in batch dai file {#loading-data-in-batch-from-files}
+### Caricamento di dati in batch da file {#loading-data-in-batch-from-files}
 
 Il caricamento di dati in batch da un file è più efficace rispetto al caricamento di una riga alla volta e in tempo reale (ad esempio tramite un servizio Web).
 
@@ -98,11 +98,11 @@ Le importazioni che utilizzano i servizi Web non sono efficienti. È consigliabi
 
 Se è necessario importare i dati, è meglio farlo in batch, utilizzando un flusso di lavoro, che in tempo reale, utilizzando un&#39;applicazione Web o un servizio Web.
 
-### Utilizzo della gestione dei dati {#using-data-management}
+### Utilizzo di Gestione dati {#using-data-management}
 
 Il caricamento in modalità iterativa (riga per riga) tramite JavaScript deve essere limitato a volumi di piccole dimensioni.
 
-Per una migliore efficienza, utilizza sempre l&#39; **[!UICONTROL Data Loading (File)]** attività nei flussi di lavoro di gestione dei dati.
+Per una maggiore efficienza, utilizza sempre l&#39;attività **[!UICONTROL Data Loading (File)]** nei flussi di lavoro di gestione dei dati.
 
 ### Importazione in modalità Delta {#importing-in-delta-mode}
 
@@ -117,7 +117,7 @@ Importa i dati utilizzando la gestione dei dati anziché JavaScript.
 Per mantenere la coerenza dei dati nel database Adobe Campaign , attenersi ai principi seguenti:
 
 * Se i dati importati corrispondono a una tabella di riferimento in  Adobe Campaign, è necessario riconciliarla con tale tabella nel flusso di lavoro. I record che non corrispondono devono essere rifiutati.
-* Assicurarsi che i dati importati siano sempre **&quot;normalizzati&quot;** (e-mail, numero di telefono, indirizzo e-mail diretto) e che la normalizzazione sia affidabile e non cambi nel corso degli anni. In caso contrario, è probabile che nel database vengano visualizzati dei duplicati, e poiché  Adobe Campaign non fornisce strumenti per effettuare la corrispondenza &quot;fuzzy&quot;, sarà molto difficile gestirli e rimuoverli.
+* Assicurarsi che i dati importati siano sempre **&quot;normalizzati&quot;** (indirizzo e-mail, numero di telefono, indirizzo di posta diretta) e che la normalizzazione sia affidabile e non cambi nel corso degli anni. In caso contrario, è probabile che nel database vengano visualizzati dei duplicati, e poiché  Adobe Campaign non fornisce strumenti per effettuare la corrispondenza &quot;fuzzy&quot;, sarà molto difficile gestirli e rimuoverli.
 * I dati transazionali devono avere una chiave di riconciliazione e devono essere riconciliati con i dati esistenti al fine di evitare la creazione di duplicati.
 * **Importa i file correlati in ordine**.
 
@@ -129,9 +129,9 @@ Per mantenere la coerenza dei dati nel database Adobe Campaign , attenersi ai pr
 
 L’utilizzo di un modello di importazione è una procedura consigliata se è necessario importare regolarmente file con la stessa struttura.
 
-Questo esempio mostra come impostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un CRM nel database Adobe Campaign . Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, consultate questa [sezione](../../workflow/using/about-activities.md).
+Questo esempio mostra come impostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un CRM nel database Adobe Campaign . Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, fare riferimento alla sezione [](../../workflow/using/about-activities.md).
 
-1. Crea un nuovo modello di workflow da **[!UICONTROL Resources > Templates > Workflow templates]**.
+1. Create un nuovo modello di workflow da **[!UICONTROL Resources > Templates > Workflow templates]**.
 1. Aggiungete le seguenti attività:
 
    * **[!UICONTROL Data loading (file)]**: Definire la struttura prevista del file contenente i dati da importare.
@@ -142,7 +142,7 @@ Questo esempio mostra come impostare un flusso di lavoro che può essere riutili
 
    ![](assets/import_template_example0.png)
 
-1. Configurare l&#39; **[!UICONTROL Data Loading (file)]** attività:
+1. Configurare l&#39;attività **[!UICONTROL Data Loading (file)]**:
 
    * Definite la struttura prevista caricando un file di esempio. Il file di esempio deve contenere solo poche righe, ma tutte le colonne necessarie per l&#39;importazione. Controllare e modificare il formato del file per essere certi che il tipo di ogni colonna sia impostato correttamente: testo, data, numero intero, ecc. Ad esempio:
 
@@ -151,30 +151,30 @@ Questo esempio mostra come impostare un flusso di lavoro che può essere riutili
       Smith;Hayden;23/05/1989;hayden.smith@mailtest.com;123456
       ```
 
-   * Nella **[!UICONTROL Name of the file to load]** sezione, selezionare **[!UICONTROL Upload a file from the local machine]** e lasciare il campo vuoto. Ogni volta che viene creato un nuovo flusso di lavoro da questo modello, potete specificare qui il file desiderato, purché corrisponda alla struttura definita.
+   * Nella sezione **[!UICONTROL Name of the file to load]**, selezionare **[!UICONTROL Upload a file from the local machine]** e lasciare vuoto il campo. Ogni volta che viene creato un nuovo flusso di lavoro da questo modello, potete specificare qui il file desiderato, purché corrisponda alla struttura definita.
 
-      Potete utilizzare una qualsiasi delle opzioni, ma dovete modificare di conseguenza il modello. Ad esempio, se selezionate **[!UICONTROL Specified in the transition]**, potete aggiungere un&#39; **[!UICONTROL File Transfer]** attività prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare dati di segmento in  Adobe Campaign con  piattaforma dati cliente in tempo reale del Adobe. For more on this, refer to this [documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+      Potete utilizzare una qualsiasi delle opzioni, ma dovete modificare di conseguenza il modello. Ad esempio, se selezionate **[!UICONTROL Specified in the transition]**, potete aggiungere un&#39;attività **[!UICONTROL File Transfer]** prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare dati di segmento in  Adobe Campaign con  piattaforma dati cliente in tempo reale del Adobe. Per ulteriori informazioni, consultare la [documentazione](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
-1. Configurare l&#39; **[!UICONTROL Enrichment]** attività. Lo scopo di questa attività in questo contesto è identificare i dati in arrivo.
+1. Configurare l&#39;attività **[!UICONTROL Enrichment]**. Lo scopo di questa attività in questo contesto è identificare i dati in arrivo.
 
-   * Nella **[!UICONTROL Enrichment]** scheda, selezionare **[!UICONTROL Add data]** e definire un collegamento tra i dati importati e la dimensione di targeting dei destinatari. In questo esempio, il campo personalizzato ID **** CRM viene utilizzato per creare la condizione di partecipazione. Utilizzare il campo o la combinazione di campi necessari, purché sia possibile identificare record univoci.
-   * Nella **[!UICONTROL Reconciliation]** scheda, lasciate l&#39; **[!UICONTROL Identify the document from the working data]** opzione deselezionata.
+   * Nella scheda **[!UICONTROL Enrichment]**, selezionare **[!UICONTROL Add data]** e definire un collegamento tra i dati importati e la dimensione di targeting dei destinatari. In questo esempio, il campo personalizzato **ID CRM** viene utilizzato per creare la condizione di partecipazione. Utilizzare il campo o la combinazione di campi necessari, purché sia possibile identificare record univoci.
+   * Nella scheda **[!UICONTROL Reconciliation]**, lasciare l&#39;opzione **[!UICONTROL Identify the document from the working data]** deselezionata.
 
    ![](assets/import_template_example2.png)
 
-1. Configurare l&#39; **[!UICONTROL Split]** attività per recuperare i destinatari riconciliati in una transizione e i destinatari che non possono essere riconciliati ma che dispongono di dati sufficienti in una seconda transizione.
+1. Configurate l&#39;attività **[!UICONTROL Split]** per recuperare i destinatari riconciliati in una transizione e i destinatari che non possono essere riconciliati ma che dispongono di dati sufficienti in una seconda transizione.
 
    La transizione con destinatari riconciliati può quindi essere utilizzata per aggiornare il database. La transizione con destinatari sconosciuti può quindi essere utilizzata per creare nuove voci di destinatari nel database se nel file è disponibile un insieme minimo di informazioni.
 
    I destinatari che non possono essere riconciliati e che non dispongono di dati sufficienti vengono selezionati in una transizione in uscita complementare e possono essere esportati in un file separato o semplicemente ignorati.
 
-   * Nella **[!UICONTROL General]** scheda dell&#39;attività, selezionate **[!UICONTROL Use the additional data only]** come impostazione di filtro e accertatevi che l&#39; **[!UICONTROL Targeting dimension]** impostazione sia automatica su **[!UICONTROL Enrichment]**.
+   * Nella scheda **[!UICONTROL General]** dell&#39;attività, selezionare **[!UICONTROL Use the additional data only]** come impostazione di filtraggio e assicurarsi che la **[!UICONTROL Targeting dimension]** sia impostata automaticamente su **[!UICONTROL Enrichment]**.
 
-      Selezionare l&#39; **[!UICONTROL Generate complement]** opzione per verificare se non è possibile inserire alcun record nel database. Se necessario, è possibile applicare ulteriore elaborazione ai dati complementari: esportazione di file, aggiornamento di elenchi, ecc.
+      Selezionare l&#39;opzione **[!UICONTROL Generate complement]** per verificare se non è possibile inserire alcun record nel database. Se necessario, è possibile applicare ulteriore elaborazione ai dati complementari: esportazione di file, aggiornamento di elenchi, ecc.
 
-   * Nel primo sottoinsieme della **[!UICONTROL Subsets]** scheda, aggiungi una condizione di filtro nella popolazione in entrata per selezionare solo i record per i quali la chiave primaria del destinatario non è uguale a 0. In questo modo, i dati del file riconciliati con i destinatari del database vengono selezionati in tale sottoinsieme.
+   * Nel primo sottoinsieme della scheda **[!UICONTROL Subsets]**, aggiungere una condizione di filtro nella popolazione in entrata per selezionare solo i record per i quali la chiave primaria del destinatario non è uguale a 0. In questo modo, i dati del file riconciliati con i destinatari del database vengono selezionati in tale sottoinsieme.
 
       ![](assets/import_template_example3.png)
 
@@ -184,51 +184,51 @@ Questo esempio mostra come impostare un flusso di lavoro che può essere riutili
 
       ![](assets/import_template_example3_2.png)
 
-   * Tutti i record non selezionati nei primi due sottoinsiemi sono selezionati nella **[!UICONTROL Complement]**.
+   * Tutti i record non selezionati nei primi due sottoinsiemi sono selezionati in **[!UICONTROL Complement]**.
 
-1. Configurate l&#39; **[!UICONTROL Update data]** attività che si trova dopo la prima transizione in uscita dell&#39; **[!UICONTROL Split]** attività configurata in precedenza.
+1. Configurare l&#39;attività **[!UICONTROL Update data]** situata dopo la prima transizione in uscita dell&#39;attività **[!UICONTROL Split]** configurata in precedenza.
 
-   * Selezionate **[!UICONTROL Update]** come **[!UICONTROL Operation type]** perché la transizione in entrata contiene solo i destinatari già presenti nel database.
-   * Nella **[!UICONTROL Record identification]** sezione, selezionate **[!UICONTROL Using reconciliation keys]** e definite una chiave tra la dimensione di targeting e il collegamento creato nella **[!UICONTROL Enrichment]**. In questo esempio, viene utilizzato il campo personalizzato ID **** CRM.
-   * Nella **[!UICONTROL Fields to update]** sezione, indicare i campi dalla dimensione destinatari da aggiornare con il valore della colonna corrispondente dal file. Se i nomi delle colonne del file sono identici o quasi identici ai nomi dei campi dimensione destinatari, è possibile utilizzare il pulsante bacchetta magica per far corrispondere automaticamente i diversi campi.
+   * Selezionare **[!UICONTROL Update]** come **[!UICONTROL Operation type]** poiché la transizione in entrata contiene solo i destinatari già presenti nel database.
+   * Nella sezione **[!UICONTROL Record identification]**, selezionare **[!UICONTROL Using reconciliation keys]** e definire una chiave tra la dimensione di targeting e il collegamento creato in **[!UICONTROL Enrichment]**. In questo esempio, viene utilizzato il campo personalizzato **ID CRM**.
+   * Nella sezione **[!UICONTROL Fields to update]**, indicare i campi dalla dimensione destinatari da aggiornare con il valore della colonna corrispondente dal file. Se i nomi delle colonne del file sono identici o quasi identici ai nomi dei campi dimensione destinatari, è possibile utilizzare il pulsante bacchetta magica per far corrispondere automaticamente i diversi campi.
 
       ![](assets/import_template_example6.png)
 
-1. Configurate l&#39; **[!UICONTROL Deduplication]** attività che si trova dopo la transizione che contiene i destinatari non riconciliati:
+1. Configurate l&#39;attività **[!UICONTROL Deduplication]** situata dopo la transizione contenente destinatari non riconciliati:
 
-   * Selezionate **[!UICONTROL Edit configuration]** e impostate la dimensione di targeting sullo schema temporaneo generato dall&#39; **[!UICONTROL Enrichment]** attività del flusso di lavoro.
+   * Selezionare **[!UICONTROL Edit configuration]** e impostare la dimensione di targeting sullo schema temporaneo generato dall&#39;attività **[!UICONTROL Enrichment]** del flusso di lavoro.
 
       ![](assets/import_template_example4.png)
 
    * In questo esempio, il campo e-mail viene utilizzato per trovare profili univoci. Potete utilizzare qualsiasi campo sicuramente compilato e parte di una combinazione univoca.
-   * Nella **[!UICONTROL Deduplication method]** schermata, selezionate **[!UICONTROL Advanced parameters]** e selezionate l&#39; **[!UICONTROL Disable automatic filtering of 0 ID records]** opzione per fare in modo che i record con una chiave primaria uguale a 0 (che dovrebbe essere tutti i record di questa transizione) non siano esclusi.
+   * Nella schermata **[!UICONTROL Deduplication method]**, selezionare **[!UICONTROL Advanced parameters]** e selezionare l&#39;opzione **[!UICONTROL Disable automatic filtering of 0 ID records]** per assicurarsi che i record con una chiave primaria uguale a 0 (che devono essere tutti record di questa transizione) non siano esclusi.
 
    ![](assets/import_template_example7.png)
 
-1. Configurate l&#39; **[!UICONTROL Update data]** attività che si trova dopo che l&#39; **[!UICONTROL Deduplication]** attività è stata configurata in precedenza.
+1. Configurate l&#39;attività **[!UICONTROL Update data]** situata dopo l&#39;attività **[!UICONTROL Deduplication]** configurata in precedenza.
 
-   * Selezionate **[!UICONTROL Insert]** come **[!UICONTROL Operation type]** perché la transizione in entrata contiene solo i destinatari non presenti nel database.
-   * Nella **[!UICONTROL Record identification]** sezione, selezionate **[!UICONTROL Directly using the targeting dimension]** e scegliete la **[!UICONTROL Recipients]** quota.
-   * Nella **[!UICONTROL Fields to update]** sezione, indicare i campi dalla dimensione destinatari da aggiornare con il valore della colonna corrispondente dal file. Se i nomi delle colonne del file sono identici o quasi identici ai nomi dei campi dimensione destinatari, è possibile utilizzare il pulsante bacchetta magica per far corrispondere automaticamente i diversi campi.
+   * Selezionare **[!UICONTROL Insert]** come **[!UICONTROL Operation type]** poiché la transizione in entrata contiene solo i destinatari non presenti nel database.
+   * Nella sezione **[!UICONTROL Record identification]**, selezionare **[!UICONTROL Directly using the targeting dimension]** e scegliere la dimensione **[!UICONTROL Recipients]**.
+   * Nella sezione **[!UICONTROL Fields to update]**, indicare i campi dalla dimensione destinatari da aggiornare con il valore della colonna corrispondente dal file. Se i nomi delle colonne del file sono identici o quasi identici ai nomi dei campi dimensione destinatari, è possibile utilizzare il pulsante bacchetta magica per far corrispondere automaticamente i diversi campi.
 
       ![](assets/import_template_example8.png)
 
-1. Dopo la terza transizione dell&#39; **[!UICONTROL Split]** attività, aggiungete un&#39; **[!UICONTROL Data extraction (file)]** attività e un&#39; **[!UICONTROL File transfer]** attività se desiderate tenere traccia dei dati non inseriti nel database. Configurate queste attività per esportare la colonna desiderata e per trasferire il file su un server FTP o SFTP in cui potete recuperarlo.
-1. Aggiungete un&#39; **[!UICONTROL End]** attività e salvate il modello di flusso di lavoro.
+1. Dopo la terza transizione dell&#39;attività **[!UICONTROL Split]**, aggiungete un&#39;attività **[!UICONTROL Data extraction (file)]** e un&#39;attività **[!UICONTROL File transfer]** se desiderate tenere traccia dei dati non inseriti nel database. Configurate queste attività per esportare la colonna desiderata e per trasferire il file su un server FTP o SFTP in cui potete recuperarlo.
+1. Aggiungete un&#39;attività **[!UICONTROL End]** e salvate il modello di workflow.
 
-Ora è possibile utilizzare il modello ed è disponibile per ogni nuovo flusso di lavoro. È quindi necessario specificare il file contenente i dati da importare nell&#39; **[!UICONTROL Data loading (file)]** attività.
+Ora è possibile utilizzare il modello ed è disponibile per ogni nuovo flusso di lavoro. È quindi necessario specificare il file contenente i dati da importare nell&#39;attività **[!UICONTROL Data loading (file)]**.
 
 ![](assets/import_template_example9.png)
 
-## Estrazione o decrittografia di un file prima dell&#39;elaborazione {#unzipping-or-decrypting-a-file-before-processing}
+## Estrazione o decrittografia di un file prima dell&#39;elaborazione di {#unzipping-or-decrypting-a-file-before-processing}
 
 ### Informazioni sulle fasi di pre-elaborazione {#about-pre-processing-stages}
 
- Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività di caricamento dei [dati (file)](../../workflow/using/data-loading--file-.md) , è possibile definire una pre-elaborazione per decomprimere o decrittografare il file.
+ Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](../../workflow/using/data-loading--file-.md), è possibile definire una pre-elaborazione per decomprimere o decrittografare il file.
 
 Per essere in grado di effettuare le seguenti operazioni:
 
-1. Utilizzate l&#39; [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
+1. Utilizzate [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
 
    >[!NOTE]
    >
@@ -239,8 +239,8 @@ Per essere in grado di effettuare le seguenti operazioni:
 
 Potete quindi usare i comandi di pre-elaborazione desiderati nei flussi di lavoro:
 
-1. Aggiungete e configurate un&#39; **[!UICONTROL File transfer]** attività nel flusso di lavoro.
-1. Aggiungete un&#39; **[!UICONTROL Data loading (file)]** attività e definite il formato del file.
+1. Aggiungi e configura un&#39;attività **[!UICONTROL File transfer]** nel flusso di lavoro.
+1. Aggiungete un&#39;attività **[!UICONTROL Data loading (file)]** e definite il formato del file.
 1. Seleziona l’opzione **[!UICONTROL Pre-process the file]**.
 1. Specificate il comando di pre-elaborazione da applicare.
 1. Aggiungere altre attività per gestire i dati provenienti dal file.
@@ -250,7 +250,7 @@ Un esempio è illustrato nel caso di utilizzo riportato di seguito.
 
 **Argomenti correlati:**
 
-* [Attività](../../workflow/using/data-loading--file-.md)di caricamento dei dati (file).
+* [Attività](../../workflow/using/data-loading--file-.md) di caricamento dei dati (file).
 * [Estrazione o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ### Caso di utilizzo: Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
@@ -261,7 +261,7 @@ In questo caso, verrà creato un flusso di lavoro per importare i dati crittogra
 
 Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
-1. Utilizzate il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella documentazione [dell&#39;](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)Pannello di controllo Campaign.
+1. Utilizzate il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
    * La chiave privata verrà utilizzata dal Campaign Classic per decrittografare i dati crittografati in arrivo.
@@ -277,15 +277,15 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
    * **[!UICONTROL File transfer]** activity: Trasferisce il file da un&#39;origine esterna a un Campaign Classic. In questo esempio, vogliamo trasferire il file da un server SFTP.
    * **[!UICONTROL Data loading (file)]** activity: Carica i dati dal file nel database e decrittografalo utilizzando la chiave privata generata nel Pannello di controllo Campaign.
 
-1. Aprite l&#39; **[!UICONTROL File transfer]** attività, quindi specificate l&#39;account esterno da cui desiderate importare il file .gpg crittografato.
+1. Aprite l&#39;attività **[!UICONTROL File transfer]**, quindi specificate l&#39;account esterno da cui desiderate importare il file .gpg crittografato.
 
    ![](assets/gpg_key_transfer.png)
 
-   Concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
+   I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
 
-1. Aprite l&#39; **[!UICONTROL Data loading (file)]** attività, quindi configuratela in base alle vostre esigenze. Concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/data-loading--file-.md).
+1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/data-loading--file-.md).
 
-   Aggiungete una fase di pre-elaborazione all&#39;attività, per decifrare i dati in arrivo. A questo scopo, selezionare l&#39; **[!UICONTROL Pre-process the file]** opzione, quindi copiare e incollare il comando di decrittazione nel **[!UICONTROL Command]** campo :
+   Aggiungete una fase di pre-elaborazione all&#39;attività, per decifrare i dati in arrivo. A questo scopo, selezionare l&#39;opzione **[!UICONTROL Pre-process the file]**, quindi copiare e incollare questo comando di decrittazione nel campo **[!UICONTROL Command]** :
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -297,7 +297,7 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
    >
    >Se in passato avete già installato chiavi GPG nell&#39;istanza tramite una richiesta dell&#39;Assistenza clienti, la passphrase potrebbe essere stata modificata e per impostazione predefinita è diversa da quella.
 
-1. Fate clic **[!UICONTROL OK]** per confermare la configurazione dell&#39;attività.
+1. Fate clic su **[!UICONTROL OK]** per confermare la configurazione dell&#39;attività.
 
 1. Ora puoi eseguire il flusso di lavoro. Una volta eseguita, potete controllare nei registri del flusso di lavoro che la decrittazione è stata eseguita e che i dati del file sono stati importati.
 
@@ -309,4 +309,4 @@ In questo video viene illustrato come utilizzare un codice GPG per decrittografa
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Ulteriori video Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
