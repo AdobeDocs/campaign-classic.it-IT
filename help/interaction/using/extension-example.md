@@ -17,9 +17,9 @@ ht-degree: 3%
 
 # Estensione esemplificativa{#extension-example}
 
-Nel caso di un contatto in entrata (call center o sito Web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere lo schema **nms:interactive** .
+Nel caso di un contatto in entrata (call center o sito Web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere lo schema **nms:interactive**.
 
-* Per aggiungere un nuovo contesto di interazione, estendere lo schema **nms:interactive** e creare tutti gli elementi **attributo** necessari nello schema.
+* Per aggiungere un nuovo contesto di interazione, estendere lo schema **nms:interactive** e creare tutti gli elementi **attribute** necessari nello schema.
 
    Nell’esempio seguente, i criteri aggiunti sono il codice del paese e l’ultima pagina visitata.
 
