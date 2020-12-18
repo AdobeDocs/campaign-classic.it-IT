@@ -41,17 +41,17 @@ Un operatore può rispondere in uno dei due modi seguenti: convalida mediante la
 
 È possibile ricevere un messaggio di approvazione contenente un collegamento a una pagina Web tramite la quale è possibile rispondere. Affinché l&#39;operatore di destinazione riceva un&#39;e-mail di approvazione, l&#39;indirizzo e-mail dell&#39;operatore deve essere completo. In caso contrario, l&#39;operatore deve utilizzare la console per rispondere
 
-La gestione degli operatori è descritta in questa [sezione](../../platform/using/access-management.md).
+La gestione dell&#39;operatore è descritta in questa sezione [](../../platform/using/access-management.md).
 
-Le e-mail di approvazione vengono inviate in modo continuo. Il modello di consegna predefinito è **[!UICONTROL notifyAssignee]**: Viene salvata nella **[!UICONTROL Administration > Campaign management > Technical delivery templates]** cartella. Questo scenario può essere personalizzato ed è anche consigliato di creare una copia e modificare i modelli per ogni attività.
+Le e-mail di approvazione vengono inviate in modo continuo. Il modello di consegna predefinito è **[!UICONTROL notifyAssignee]**: Viene salvata nella cartella **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Questo scenario può essere personalizzato ed è anche consigliato di creare una copia e modificare i modelli per ogni attività.
 
-Le consegne create tramite questo modello vengono memorizzate nella **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** cartella.
+Le consegne create tramite questo modello vengono memorizzate nella cartella **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
-## Approvazione tramite console {#approval-via-the-console}
+## Approvazione tramite la console {#approval-via-the-console}
 
 Nelle operazioni, gli elementi da approvare vengono visualizzati nel dashboard della campagna.
 
-Per i flussi di lavoro tecnici, è possibile accedere alle attività che l&#39;utente può approvare dalla struttura ad albero della **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** cartella.
+Per i flussi di lavoro tecnici, è possibile accedere alle attività che l&#39;utente può approvare dalla struttura ad albero nella cartella **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -60,7 +60,7 @@ Per i flussi di lavoro tecnici, è possibile accedere alle attività che l&#39;u
 Un&#39;approvazione è assegnata a un gruppo di operatori, un singolo operatore o un insieme di operatori selezionati tramite una condizione di filtraggio.
 
 1. Per la forma di approvazione più semplice, l&#39;attività è terminata non appena l&#39;operatore risponde. Tutti gli altri operatori che cercano di rispondere riceveranno una notifica che qualcuno l&#39;ha già fatto.
-1. Per approvazioni multiple, fare riferimento a [Approvazione](#multiple-approval)multipla.
+1. Per le approvazioni multiple, fare riferimento a [Più approvazioni](#multiple-approval).
 
 I gruppi di operatori per le approvazioni devono essere designati come ruoli o funzioni anziché come individui denominati. Ad esempio, un gruppo &quot;Budget campagna&quot; è preferibile a &quot;Gruppo Harry&quot;. Consigliamo di avere almeno due persone in un gruppo che possano approvare un compito. In questo modo, se uno è assente, l&#39;altro può rispondere.
 
@@ -72,16 +72,16 @@ La seconda scheda nelle proprietà di approvazione dell&#39;attività consente d
 
 ![](assets/expiration.png)
 
-Per aggiungere una nuova scadenza, fate clic su **[!UICONTROL Add]**. A ciascuna scadenza creata viene aggiunta una transizione. Puoi:
+Per aggiungere una nuova scadenza, fare clic su **[!UICONTROL Add]**. A ciascuna scadenza creata viene aggiunta una transizione. Puoi:
 
 * modificare i parametri tipici direttamente facendo clic su una cella nell&#39;elenco (o premendo F2),
-* oppure modificare l&#39;espressione facendo clic sul **[!UICONTROL Detail...]** pulsante.
+* oppure modificare l&#39;espressione facendo clic sul pulsante **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Non è necessario specificare un ordine per le scadenze in quanto elaborate in ordine cronologico.
 
-L&#39; **[!UICONTROL Do not terminate the task]** opzione lascia attiva l&#39;approvazione quando il ritardo viene superato. Questa modalità consente di gestire i promemoria lasciando attiva l’approvazione: gli operatori possono ancora rispondere. Questa opzione è disabilitata per impostazione predefinita, pertanto l&#39;attività viene considerata terminata alla scadenza e gli operatori potrebbero non rispondere più.
+L&#39;opzione **[!UICONTROL Do not terminate the task]** lascia attiva l&#39;approvazione quando il ritardo viene superato. Questa modalità consente di gestire i promemoria lasciando attiva l’approvazione: gli operatori possono ancora rispondere. Questa opzione è disabilitata per impostazione predefinita, pertanto l&#39;attività viene considerata terminata alla scadenza e gli operatori potrebbero non rispondere più.
 
 Potete creare quattro tipi di scadenza:
 
@@ -90,7 +90,7 @@ Potete creare quattro tipi di scadenza:
 * **Ritardo prima di una data** specificata: La scadenza viene calcolata sottraendo un periodo di tempo da una data specificata.
 * **Scadenza calcolata dallo script**: La scadenza viene calcolata utilizzando JavaScript.
 
-   L’esempio seguente calcola una scadenza 24 ore prima della data di inizio di una consegna (identificata da **vars.deliveryId**):
+   L&#39;esempio seguente calcola la scadenza 24 ore prima dell&#39;inizio della consegna (identificata da **vars.deliveryId**):
 
    ```
    var delivery = nms.delivery.get(vars.deliveryId)
