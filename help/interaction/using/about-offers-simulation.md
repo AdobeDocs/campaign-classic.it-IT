@@ -19,7 +19,7 @@ ht-degree: 5%
 
 Il modulo **Simulazione** consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
 
-La simulazione tiene conto dei contesti e delle regole di idoneità precedentemente applicate alle offerte (consultate Panoramica [del catalogo delle](../../interaction/using/offer-catalog-overview.md)offerte), nonché delle relative regole di presentazione (consultate [Gestione della presentazione](../../interaction/using/managing-offer-presentation.md)delle offerte). Questo consente di sottoporre a test e perfezionare diverse versioni della proposta di offerta senza utilizzare effettivamente un&#39;offerta o richiedere un oggetto in eccesso o in eccesso, poiché la simulazione non ha alcun impatto sui destinatari interessati.
+La simulazione tiene conto dei contesti e delle regole di idoneità precedentemente applicate alle offerte (fare riferimento a [Panoramica del catalogo delle offerte](../../interaction/using/offer-catalog-overview.md)), nonché delle relative regole di presentazione (fare riferimento a [Gestione della presentazione delle offerte](../../interaction/using/managing-offer-presentation.md)). Questo consente di sottoporre a test e perfezionare diverse versioni della proposta di offerta senza utilizzare effettivamente un&#39;offerta o richiedere un oggetto in eccesso o in eccesso, poiché la simulazione non ha alcun impatto sui destinatari interessati.
 
 Per imparare a simulare un&#39;offerta, leggi i passaggi descritti di seguito.
 
@@ -29,14 +29,14 @@ Per imparare a simulare un&#39;offerta, leggi i passaggi descritti di seguito.
 
 Per eseguire una simulazione delle offerte, effettuate le seguenti operazioni:
 
-1. Nell&#39; **[!UICONTROL Profiles and Targets]** universo, fare clic sul **[!UICONTROL Simulations]** collegamento, quindi fare clic sul **[!UICONTROL Create]** pulsante.
+1. Nell&#39;universo **[!UICONTROL Profiles and Targets]** fare clic sul collegamento **[!UICONTROL Simulations]**, quindi fare clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
 1. Salvate e modificate la simulazione appena creata.
-1. Passate alla **[!UICONTROL Edit]** scheda e specificate le impostazioni di esecuzione.
+1. Fare clic sulla scheda **[!UICONTROL Edit]** e specificare le impostazioni di esecuzione.
 
-   For more on this, refer to [Execution settings](../../interaction/using/execution-settings.md).
+   Per ulteriori informazioni, fare riferimento a [Impostazioni di esecuzione](../../interaction/using/execution-settings.md).
 
    ![](assets/offer_simulation_003.png)
 
@@ -46,23 +46,23 @@ Per eseguire una simulazione delle offerte, effettuate le seguenti operazioni:
 
 1. Specificate l’ambito di simulazione.
 
-   Per ulteriori informazioni, consulta [Definizione dell’ambito](../../interaction/using/simulation-scope.md#definition-of-the-scope).
+   Per ulteriori informazioni, vedere [Definizione dell&#39;ambito](../../interaction/using/simulation-scope.md#definition-of-the-scope).
 
    ![](assets/offer_simulation_004.png)
 
-1. Aggiungi assi di reporting per migliorare il **[!UICONTROL Offer distribution by rank]** rapporto (facoltativo).
+1. Aggiungete gli assi di reporting per migliorare il report **[!UICONTROL Offer distribution by rank]** (facoltativo).
 
-   Per ulteriori informazioni, vedere [Aggiunta di assi](../../interaction/using/simulation-scope.md#adding-reporting-axes)di reporting.
+   Per ulteriori informazioni, vedere [Aggiunta di assi di reporting](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
-1. Fate clic **[!UICONTROL Save]** per registrare le impostazioni di simulazione.
+1. Fate clic su **[!UICONTROL Save]** per registrare le impostazioni di simulazione.
 1. Avviate la simulazione tramite il dashboard.
 
    ![](assets/offer_simulation_006.png)
 
 1. Controllate il risultato della simulazione e visualizzate il rapporto di analisi.
 
-   For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+   Per ulteriori informazioni, vedere [Tracciamento simulazione](../../interaction/using/simulation-tracking.md).
 
    ![](assets/offer_simulation_007.png)
