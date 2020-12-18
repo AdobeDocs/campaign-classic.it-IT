@@ -14,7 +14,7 @@ ht-degree: 25%
 ---
 
 
-# Best practice di consegna{#delivery-best-practices}
+# Best practice di consegna {#delivery-best-practices}
 
 Scopri le best practice relative alla progettazione e all&#39;invio di materiale  Adobe Campaign. Utilizzate i collegamenti di seguito per navigare tra gli argomenti e trovare istruzioni.
 
