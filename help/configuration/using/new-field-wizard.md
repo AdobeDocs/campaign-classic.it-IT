@@ -35,7 +35,7 @@ Le schermate della procedura guidata contengono i seguenti passaggi:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Per confermare le modifiche, fate clic sul **[!UICONTROL Finish]** pulsante .
+1. Per confermare le modifiche, fare clic sul pulsante **[!UICONTROL Finish]**.
 
 Viene creato automaticamente un file di estensione, denominato &quot;cus:Recipient&quot; nel nostro esempio, e viene eseguito lo script SQL corrispondente:
 
