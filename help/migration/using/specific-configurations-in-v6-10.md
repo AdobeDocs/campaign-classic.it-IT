@@ -25,4 +25,4 @@ Se state eseguendo la migrazione da una piattaforma 6.10 e la console client è 
 >
 >Se rifiutate l&#39;aggiornamento, non potrete connettervi.
 
-Se state eseguendo la migrazione da una piattaforma v6.10 precedente alla build 8104, dovete consultare anche le [Nuove funzioni nella sezione v7](../../migration/using/general-configurations.md#new-features-in-v7) .
+Se state eseguendo la migrazione da una piattaforma v6.10 precedente alla build 8104, dovete consultare anche le [Nuove funzioni nella sezione v7](../../migration/using/general-configurations.md#new-features-in-v7).
