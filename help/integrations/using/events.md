@@ -31,13 +31,13 @@ Poiché la modifica del codice Javascript richiede competenze tecniche, non tent
 
 Pipeline utilizza una funzione JavaScript per elaborare ciascun messaggio. Questa funzione è definita dall&#39;utente.
 
-È configurato nell&#39; **[!UICONTROL NmsPipeline_Config]** opzione sotto l&#39;attributo &quot;JSConnector&quot;. Questo javascript viene chiamato ogni volta che viene ricevuto un evento. È gestito dal [!DNL pipelined] processo.
+È configurato nell&#39;opzione **[!UICONTROL NmsPipeline_Config]** sotto l&#39;attributo &quot;JSConnector&quot;. Questo javascript viene chiamato ogni volta che viene ricevuto un evento. È eseguito dal processo [!DNL pipelined].
 
 Il file Javascript di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
-Javascript deve iniziare con una funzione specifica. [!DNL pipelined]
+Il codice JavaScript [!DNL pipelined] deve iniziare con una funzione specifica.
 
 Questa funzione viene chiamata una volta per ogni evento:
 
@@ -51,14 +51,14 @@ Deve restituire come
 <undefined/>
 ```
 
-Riavviate [!DNL pipelined] dopo la modifica del codice JavaScript.
+Riavviare [!DNL pipelined] dopo la modifica del codice JavaScript.
 
-### Attiva formato dati {#trigger-format}
+### Formato dati trigger {#trigger-format}
 
-I [!DNL trigger] dati vengono passati alla funzione JS in formato XML.
+I dati [!DNL trigger] vengono passati alla funzione JS in formato XML.
 
-* L&#39; **[!UICONTROL @triggerId]** attributo contiene il nome dell&#39; [!DNL trigger].
-* L&#39;elemento **di arricchimento** in formato JSON contiene i dati generati da  Adobe Analytics ed è collegato al trigger.
+* L&#39;attributo **[!UICONTROL @triggerId]** contiene il nome dell&#39; [!DNL trigger].
+* L&#39;elemento **arricchments** in formato JSON contiene i dati generati da  Adobe Analytics ed è collegato al trigger.
 * **[!UICONTROL @offset]** è il &quot;puntatore&quot; del messaggio. Indica l’ordine del messaggio all’interno della coda.
 * **[!UICONTROL @partition]** è un contenitore di messaggi all&#39;interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni in coda.
 
@@ -110,7 +110,7 @@ Esempio:
 
 ### Eventi ordine di elaborazione{#order-events}
 
-Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread del [!DNL pipelined] processo elabora una partizione diversa.
+Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
 
 L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall&#39;ultimo messaggio. Questi dati vengono memorizzati nello schema integrato xtk:pipelineOffset.
 
@@ -122,8 +122,8 @@ Al momento, non è possibile avere code diverse per ambienti separati come &#39;
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al [!DNL pipelined] registro. Errori come logError() vengono scritti nel [!DNL pipelined] registro e l&#39;evento viene inserito in una coda di tentativi. In questo caso, controllare il registro tubato.
-I messaggi di errore vengono ripetuti più volte nella durata impostata nelle [!DNL pipelined] opzioni.
+I registri come logInfo() vengono indirizzati al registro [!DNL pipelined]. Errori come logError() vengono scritti nel registro [!DNL pipelined] e l&#39;evento viene messo in una coda di tentativi. In questo caso, controllare il registro tubato.
+I messaggi di errore vengono ripetuti più volte nella durata impostata nelle opzioni [!DNL pipelined].
 
 A scopo di debug e monitoraggio, i dati di attivazione completi sono scritti nella tabella dell&#39;attivatore nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati di attivazione ha lo stesso scopo.
 
@@ -218,7 +218,7 @@ Gli eventi possono essere visualizzati con un semplice modulo basato sullo schem
 
 >[!NOTE]
 >
->Il nodo Evento pipeline non è integrato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta le sezioni seguenti: [Gerarchia](../../configuration/using/about-navigation-hierarchy.md) di navigazione e [modifica dei moduli](../../configuration/using/editing-forms.md).
+>Il nodo Evento pipeline non è integrato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta le sezioni seguenti: [Gerarchia di navigazione](../../configuration/using/about-navigation-hierarchy.md) e [Modifica di moduli](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
@@ -231,13 +231,13 @@ Riconciliazione è il processo di corrispondenza del cliente da  Adobe Analytics
 Per motivi di prestazioni, la corrispondenza deve essere eseguita in modalità batch tramite un flusso di lavoro.
 La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lavoro. Di conseguenza, il ritardo tra la ricezione di un evento in  Adobe Campaign e la relativa elaborazione da parte di un flusso di lavoro di marketing è di 15 minuti.
 
-### Opzioni per la riconciliazione di unità in JavaScript {#options-unit-reconciliation}
+### Opzioni per la riconciliazione delle unità in JavaScript {#options-unit-reconciliation}
 
 È possibile eseguire la query di riconciliazione per ogni trigger in JavaScript. Ha un impatto maggiore sulle prestazioni e offre risultati più rapidi. Potrebbe essere richiesto per casi d&#39;uso specifici quando è necessaria la reattività.
 
 Può essere difficile da implementare se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato da quello di marketing, utilizza un collegamento al database con prestazioni insufficienti.
 
-### Flusso di lavoro di eliminazione {#purge-workflow}
+### Elimina flusso di lavoro {#purge-workflow}
 
 Gli attivatori vengono elaborati entro l&#39;ora. Il volume può essere di circa 1 milione di attivatori all&#39;ora. Questo spiega perché è necessario implementare un flusso di lavoro di eliminazione. L&#39;eliminazione viene eseguita una volta al giorno ed elimina tutti i trigger che sono più vecchi di tre giorni.
 
