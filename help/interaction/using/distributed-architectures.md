@@ -56,15 +56,15 @@ Viene creato un flusso di lavoro per ciascun ambiente e account esterno per la s
 
 ## Configurazione pacchetti {#packages-configuration}
 
-Eventuali estensioni dello schema direttamente collegate all&#39; **interazione** (offerte, proposte, destinatari ecc.) deve essere distribuito sulle istanze di esecuzione.
+Eventuali estensioni dello schema direttamente collegate a **Interazione** (offerte, proposte, destinatari ecc.) deve essere distribuito sulle istanze di esecuzione.
 
 Il pacchetto Interaction deve essere installato in tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare nelle istanze di controllo e un altro da installare in ogni istanza di esecuzione.
 
 >[!NOTE]
 >
->Durante l&#39;installazione del pacchetto, i campi di tipo **esteso** della tabella **nms:proposition** , ad esempio l&#39;ID proposta, diventano campi di tipo **int64** . Questo tipo di dati è dettagliato in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Durante l&#39;installazione del pacchetto, i campi di tipo **long** della tabella **nms:proposition** come l&#39;ID della proposizione diventano campi di tipo **int64**. Questo tipo di dati è dettagliato in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite la **[!UICONTROL Data purge]** finestra nella procedura guidata di distribuzione). Per le istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo di scorrimento) e delle regole di idoneità.
+La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Per le istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo di scorrimento) e delle regole di idoneità.
 
 Sulle istanze di controllo:
 
@@ -76,7 +76,7 @@ Sulle istanze di controllo:
    * Seleziona **[!UICONTROL Execution instance]**.
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
    * Completate i parametri di connessione per l&#39;istanza di esecuzione.
-   * Ogni istanza di esecuzione deve essere collegata a un ID. Questo ID viene assegnato quando si fa clic sul **[!UICONTROL Initialize connection]** pulsante.
+   * Ogni istanza di esecuzione deve essere collegata a un ID. L&#39;ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]**.
    * Verificare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
    * Immettere l&#39;account FDA utilizzato. Un operatore deve essere creato sulle istanze di esecuzione e deve avere i seguenti diritti di lettura e scrittura sul database dell&#39;istanza in questione:
 
@@ -164,7 +164,7 @@ ALTER TABLE nmspropositionrcp
   ALTER COLUMN iinteractionid TYPE bigint;
 ```
 
-###  Oracle {#oracle}
+###  Oracle{#oracle}
 
 La modifica delle dimensioni di un tipo **Number** non comporta la riscrittura di valori o indice. È quindi immediata.
 
