@@ -77,7 +77,7 @@ Di seguito è riportato un elenco degli operatori disponibili:
   <tr> 
    <td> <span class="uicontrol">Contiene</span> <br /> </td> 
    <td> Restituisce i risultati contenenti almeno il valore immesso.<br /> </td> 
-   <td> <strong>Il dominio e-mail (@dominio) contiene 'mail'</strong>, restituirà tutti i nomi di dominio che contengono 'mail'. Quindi verrà restituito anche il dominio 'gmail.com'.<br /> </td> 
+   <td> <strong>Il dominio e-mail (@dominio) contiene 'mail'</strong>, restituirà tutti i nomi di dominio che contengono 'mail'. Quindi, verrà restituito anche il dominio 'gmail.com'.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Non contiene</span> <br /> </td> 
@@ -87,7 +87,7 @@ Di seguito è riportato un elenco degli operatori disponibili:
   <tr> 
    <td> <span class="uicontrol">Simile</span> <br /> </td> 
    <td> <span class="uicontrol">Simile</span> è molto simile all’operatore <span class="uicontrol">Contains</span>. Consente di inserire un carattere jolly <span class="uicontrol">%</span> nel valore.<br /> </td> 
-   <td> <strong>Cognome (@lastName) come 'Jon%s'</strong>. Qui, il carattere jolly è usato come "scherzetto" per trovare il nome "Jones", se l'operatore ha dimenticato la lettera mancante tra 'n' e 's'.<br /> </td> 
+   <td> <strong>Cognome (@lastName) come 'Jon%s'</strong>. Qui, il carattere jolly è utilizzato come "scherzetto" per trovare il nome "Jones", se l'operatore ha dimenticato la lettera mancante tra 'n' e 's'.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Diverso</span> <br /> </td> 
@@ -97,21 +97,21 @@ Di seguito è riportato un elenco degli operatori disponibili:
   <tr> 
    <td> <span class="uicontrol">È vuoto</span> <br /> </td> 
    <td> In questo caso, il risultato che stiamo cercando corrisponde a un valore vuoto nella seconda colonna Valore.<br /> </td> 
-   <td> <strong>Mobile (@mobilePhone) è vuoto</strong> e restituisce tutti i destinatari che non dispongono di un numero mobile.<br /> </td> 
+   <td> <strong>Mobile (@mobilePhone) è </strong> vuoto e restituisce tutti i destinatari che non hanno un numero di cellulare.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Non è vuoto</span> <br /> </td> 
-   <td> Funziona in senso contrario all'operatore <span class="uicontrol">Is empty</span> . Non è necessario inserire i dati nella seconda colonna Valore.<br /> </td> 
+   <td> Funziona in senso contrario all'operatore <span class="uicontrol">Is empty</span>. Non è necessario inserire i dati nella seconda colonna Valore.<br /> </td> 
    <td> <strong>E-mail (@email) non è vuota</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">È incluso in</span> <br /> </td> 
    <td> Restituisce i risultati inclusi nei valori indicati. Questi valori devono essere separati da una virgola.<br /> </td> 
-   <td> <strong>La data di nascita (@nascitaDate) è inclusa nel '12/10/1979,12/10/1984'</strong>, restituirà i destinatari nati tra queste date. <br /> </td> 
+   <td> <strong>La data di nascita (@nascitaDate) è inclusa nel '12/10/1979,12/10/1984'</strong>, restituirà i destinatari nati tra queste date.  <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Non è incluso in</span> <br /> </td> 
-   <td> Funziona come l' <span class="uicontrol">oggetto Is incluso nell</span> 'operatore. Qui si desidera escludere i destinatari in base ai valori inseriti.<br /> </td> 
+   <td> Funziona come l'operatore <span class="uicontrol">Is incluso in</span>. Qui si desidera escludere i destinatari in base ai valori inseriti.<br /> </td> 
    <td> <strong>La data di nascita (@bornDate) non è inclusa nel documento '12/10/1979,12/10/1984'</strong>. A differenza dell'esempio precedente, i destinatari nati entro tali date non verranno restituiti.<br /> </td> 
   </tr> 
  </tbody> 
@@ -125,7 +125,7 @@ Per le query che utilizzano diverse condizioni di filtraggio, è necessario defi
 * **[!UICONTROL Or]** consente di offrire un&#39;alternativa,
 * **[!UICONTROL Except]** consente di definire un&#39;eccezione.
 
-Fate clic **[!UICONTROL And]** (opzione predefinita) e scegliete dall’elenco a discesa.
+Fare clic su **[!UICONTROL And]** (disponibile per impostazione predefinita) e scegliere dall&#39;elenco a discesa.
 
 ![](assets/query_condition_modif_01.png)
 
@@ -146,7 +146,7 @@ Questo esempio mostra un filtro che consente di visualizzare: destinatari che pa
 
 ![](assets/query_editor_nveau_31.png)
 
-## Definizione delle condizioni {#prioritizing-conditions}
+## Definizione delle priorità delle condizioni {#prioritizing-conditions}
 
 In questa sezione viene illustrato come assegnare priorità alle condizioni grazie alle frecce blu nella barra degli strumenti.
 
@@ -159,31 +159,31 @@ In questa sezione viene illustrato come assegnare priorità alle condizioni graz
 
 In questo esempio viene illustrato come utilizzare la freccia per eliminare un livello di parentesi. Iniziate dalla seguente condizione di filtro: **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
 
-Posizionare il cursore sulla condizione di **[!UICONTROL Gender (@gender) equal to Male]** filtro e fare clic sulla **[!UICONTROL Remove a parenthesis level]** freccia.
+Posizionare il cursore sulla condizione di filtro **[!UICONTROL Gender (@gender) equal to Male]** e fare clic sulla freccia **[!UICONTROL Remove a parenthesis level]**.
 
 ![](assets/query_editor_nveau_32.png)
 
-La **[!UICONTROL Gender (@gender) equal to Male]** condizione è stata tolta dalle parentesi. Si è spostato allo stesso livello della condizione &quot;Città uguale a Londra&quot;. Queste condizioni sono collegate tra loro (**[!UICONTROL And]**).
+La condizione **[!UICONTROL Gender (@gender) equal to Male]** è stata rimossa dalle parentesi. Si è spostato allo stesso livello della condizione &quot;Città uguale a Londra&quot;. Queste condizioni sono collegate insieme (**[!UICONTROL And]**).
 
 ## Selezione dei dati da estrarre {#selecting-data-to-extract}
 
 I campi disponibili variano da una tabella all’altra. Tutti i campi sono memorizzati in un nodo principale noto come **[!UICONTROL Main element]**. Nell&#39;esempio seguente, i campi disponibili si trovano nella tabella del destinatario. I campi sono sempre visualizzati in ordine alfabetico.
 
-Il dettaglio del campo selezionato è visibile nella parte inferiore della finestra. Ad esempio, il **[!UICONTROL Email domain]** campo è a **[!UICONTROL Calculated SQL field]** e la sua estensione è **[!UICONTROL (@domain)]**.
+Il dettaglio del campo selezionato è visibile nella parte inferiore della finestra. Ad esempio, il campo **[!UICONTROL Email domain]** è un **[!UICONTROL Calculated SQL field]** e la sua estensione è **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->Utilizzare lo **[!UICONTROL Search]** strumento per trovare un campo disponibile.
+>Utilizzare lo strumento **[!UICONTROL Search]** per trovare un campo disponibile.
 
-Fare doppio clic su un campo disponibile per aggiungerlo alle colonne di output. Alla fine della query, ogni campo selezionato crea una colonna nella **[!UICONTROL Data preview]** finestra.
+Fare doppio clic su un campo disponibile per aggiungerlo alle colonne di output. Alla fine della query, ogni campo selezionato crea una colonna nella finestra **[!UICONTROL Data preview]**.
 
 ![](assets/query_editor_nveau_01.png)
 
-I campi avanzati non sono visualizzati per impostazione predefinita. Fare clic **[!UICONTROL Display advanced fields]** nell&#39;angolo inferiore destro dei campi disponibili per visualizzare tutti gli elementi. Fate di nuovo clic per tornare alla visualizzazione precedente.
+I campi avanzati non sono visualizzati per impostazione predefinita. Fare clic su **[!UICONTROL Display advanced fields]** nell&#39;angolo inferiore destro dei campi disponibili per visualizzare tutti gli elementi. Fate di nuovo clic per tornare alla visualizzazione precedente.
 
-Ad esempio, nella tabella dei destinatari, i campi avanzati sono **booleani 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]** ecc.
+Ad esempio, nella tabella dei destinatari, i campi avanzati sono **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]**, ecc.
 
 L&#39;esempio seguente mostra i campi avanzati della tabella dei destinatari.
 
@@ -217,8 +217,8 @@ Le varie categorie di campi:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> Campo calcolato. Questo tipo di campo viene calcolato su richiesta utilizzando i valori nel database.<br /> </td> 
-   <td> Età, dominio e-mail, ecc.<br /> </td> 
+   <td> Campo calcolato. Questo tipo di campo viene calcolato su richiesta utilizzando i valori del database.<br /> </td> 
+   <td> Età, dominio e-mail, ecc<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_49.png" /> </td> 
@@ -252,17 +252,17 @@ Collegamento a una tabella e a un elemento raccolta:
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
    <td> Elemento della raccolta in una tabella specifica. Queste coppie coincidono con associazioni di tipo 1-N. Un'occorrenza della tabella di origine può coincidere con diverse occorrenze della tabella di destinazione, ma una occorrenza della tabella di destinazione può coincidere con una sola occorrenza della tabella di origine. Ad esempio, un destinatario può iscriversi a "n" lettere di iscrizione.<br /> </td> 
-   <td> Iscrizioni, elenchi, registri di esclusione ecc.<br /> </td> 
+   <td> Iscrizioni, elenchi, registri di esclusione, ecc.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->* Utilizzate il **[!UICONTROL Add]** pulsante (sopra la barra delle icone laterali) per aggiungere una colonna di output in cui modificare l&#39;espressione. Per ulteriori informazioni sulla modifica di un&#39;espressione, vedere [Creazione di espressioni](#building-expressions).
->* Per eliminare una colonna di output, fate clic sulla colonna rossa &quot;x&quot; (**Elimina**).
+>* Utilizzate il pulsante **[!UICONTROL Add]** (sopra la barra delle icone laterali) per aggiungere una colonna di output in cui modificare l&#39;espressione. Per ulteriori informazioni sulla modifica di un&#39;espressione, vedere [Creazione di espressioni](#building-expressions).
+>* Per eliminare una colonna di output, fate clic sul segno rosso &quot;x&quot; (**Elimina**).
 >* Modificare l&#39;ordine delle colonne di output utilizzando le frecce.
->* Questo **[!UICONTROL Distribution of values]** consente di visualizzare la distribuzione dei valori del campo selezionato (ad esempio, le distribuzioni collegate alle città destinatarie, alle lingue dei destinatari, ecc.).
+>* Il **[!UICONTROL Distribution of values]** serve come modo per visualizzare la distribuzione dei valori del campo selezionato (ad esempio, le distribuzioni collegate alle città destinatarie, alle lingue dei destinatari, ecc.).
 
 
 ## Creazione di campi calcolati {#creating-calculated-fields}
@@ -289,20 +289,20 @@ Esistono quattro tipi di campi calcolati:
 
    È possibile utilizzare il valore di origine di una colonna e assegnargli un valore di destinazione. Questo valore di destinazione verrà visualizzato nella nuova colonna di output.
 
-   È disponibile un esempio di aggiunta di un tipo di campo calcolato. **[!UICONTROL Enumerations]** Fare riferimento a [questa sezione](../../workflow/using/adding-enumeration-type-calculated-field.md).
+   È disponibile un esempio di aggiunta del tipo di campo calcolato **[!UICONTROL Enumerations]**, fare riferimento a [questa sezione](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
    ![](assets/query_editor_nveau_63.png)
 
-   Il campo **[!UICONTROL Enumerations]** di calcolo del tipo può includere 4 condizioni:
+   Il campo calcolato del tipo **[!UICONTROL Enumerations]** può includere 4 condizioni:
 
    * **[!UICONTROL Keep the source value]** ripristina il valore di origine nella destinazione senza modificarlo.
    * **[!UICONTROL Use the following value]** consente di inserire un valore di destinazione predefinito per i valori di origine non definiti.
    * **[!UICONTROL Generate a warning and continue]** avverte l&#39;utente che il valore di origine non può essere modificato.
    * **[!UICONTROL Generate an error and reject the line]** impedisce che la linea venga calcolata e importata.
 
-Fare clic sul pulsante **[!UICONTROL Detail of calculated field]** per visualizzare i dettagli del campo inserito.
+Fare clic su **[!UICONTROL Detail of calculated field]** per visualizzare i dettagli del campo inserito.
 
-Per rimuovere questo campo calcolato, fare clic sulla **[!UICONTROL Remove the calculated field]** croce.
+Per rimuovere questo campo calcolato, fare clic sulla croce **[!UICONTROL Remove the calculated field]**.
 
 ![](assets/query_editor_nveau_58.png)
 
@@ -314,11 +314,11 @@ L&#39;esempio seguente mostra come eseguire un conteggio su una chiave primaria.
 
 Effettuate le seguenti operazioni:
 
-1. Fate clic **[!UICONTROL Add]** nella **[!UICONTROL Data to extract]** finestra. Nella **[!UICONTROL Formula type]** finestra, selezionare un tipo di formula per immettere l&#39;espressione.
+1. Fare clic su **[!UICONTROL Add]** nella finestra **[!UICONTROL Data to extract]**. Nella finestra **[!UICONTROL Formula type]**, selezionare un tipo di formula per immettere l&#39;espressione.
 
    Sono disponibili diversi tipi di formule: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Select **[!UICONTROL Process on an aggregate function]**, and **[!UICONTROL Count]**. Click **[!UICONTROL Next]**.
+   Selezionare **[!UICONTROL Process on an aggregate function]** e **[!UICONTROL Count]**. Fare clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -326,11 +326,11 @@ Effettuate le seguenti operazioni:
 
    ![](assets/query_editor_nveau_88.png)
 
-Di seguito sono elencate le opzioni disponibili nella **[!UICONTROL Formula types]** finestra:
+Di seguito è riportata una visualizzazione dettagliata delle opzioni disponibili nella finestra **[!UICONTROL Formula types]**:
 
 ![](assets/query_editor_nveau_05.png)
 
-1. **[!UICONTROL Field only]** consente di tornare alla **[!UICONTROL Field to select]** finestra.
+1. **[!UICONTROL Field only]** consente di tornare alla  **[!UICONTROL Field to select]** finestra.
 1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Di seguito sono riportati alcuni esempi di utilizzo aggregato:
 
    * **[!UICONTROL Count]** consente di eseguire un conteggio delle chiavi primarie.
@@ -339,17 +339,17 @@ Di seguito sono elencate le opzioni disponibili nella **[!UICONTROL Formula type
    * **[!UICONTROL Minimum value]** consente di ordinare in base ai clienti e individuare quelli che hanno sottoscritto un’offerta più di recente.
    * **[!UICONTROL Average]**. Questa funzione consente di calcolare l&#39;età media dei destinatari.
 
-      La **[!UICONTROL Distinct]** casella consente di recuperare valori univoci e non-zero di una colonna. Ad esempio, puoi recuperare tutti i registri di tracciamento di un destinatario e questi registri di tracciamento vengono modificati in valore 1, poiché riguardano tutti lo stesso destinatario.
+      La casella **[!UICONTROL Distinct]** consente di recuperare valori univoci e non-zero di una colonna. Ad esempio, puoi recuperare tutti i registri di tracciamento di un destinatario e questi registri di tracciamento vengono modificati in valore 1, poiché riguardano tutti lo stesso destinatario.
 
-1. **[!UICONTROL Expression]** apre la **[!UICONTROL Edit the expression]** finestra. Questo consente di rilevare i numeri di telefono con troppe cifre, che potrebbero essere errori di input.
+1. **[!UICONTROL Expression]** apre la  **[!UICONTROL Edit the expression]** finestra. Questo consente di rilevare i numeri di telefono con troppe cifre, che potrebbero essere errori di input.
 
    ![](assets/query_editor_nveau_71.png)
 
-   Per un elenco di tutte le funzioni disponibili, fare riferimento a [Elenco delle funzioni](#list-of-functions).
+   Per un elenco di tutte le funzioni disponibili, fare riferimento a [Elenco di funzioni](#list-of-functions).
 
 ## Elenco delle funzioni {#list-of-functions}
 
-Se viene scelta una formula di **[!UICONTROL Expression]** tipo, verrà visualizzata la finestra &quot;Edit the expression&quot; (Modifica l&#39;espressione). Diverse categorie di funzioni possono essere associate ai campi disponibili: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** e **[!UICONTROL Others]**.
+Se viene scelta una formula di tipo **[!UICONTROL Expression]**, verrà visualizzata la finestra &quot;Edit the expression&quot; (Modifica l&#39;espressione). Diverse categorie di funzioni possono essere associate ai campi disponibili: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** e **[!UICONTROL Others]**.
 
 L&#39;editor di espressioni si presenta così:
 
@@ -368,32 +368,32 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Avg</strong><br /> </td> 
-   <td> Restituisce la media di una colonna di tipo numerico<br /> </td> 
+   <td> Restituisce la media di un tipo di numero colonna<br /> </td> 
    <td> Avg(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Count</strong><br /> </td> 
-   <td> Counts the non-null values of a column<br /> </td> 
+   <td> Conta i valori non-null di una colonna<br /> </td> 
    <td> Count(&lt;valore&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>CountAll</strong><br /> </td> 
-   <td> Conta i valori restituiti (tutti i campi)<br /> </td> 
+   <td> Conteggia i valori restituiti (tutti i campi)<br /> </td> 
    <td> CountAll()<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Countdistinte</strong><br /> </td> 
-   <td> Counts the distinct non-null values of a column<br /> </td> 
+   <td> Conta i valori non-null distinti di una colonna<br /> </td> 
    <td> Countdistinct(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Returns the maximum value of a number, string, or date type column<br /> </td> 
+   <td> Restituisce il valore massimo di una colonna numero, stringa o tipo di data<br /> </td> 
    <td> Max(&lt;valore&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Returns the minimum value of a number, string or date type column<br /> </td> 
+   <td> Restituisce il valore minimo di una colonna numero, stringa o tipo di data<br /> </td> 
    <td> Min(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -403,7 +403,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Sum</strong><br /> </td> 
-   <td> Restituisce la somma dei valori di una colonna numero, stringa o tipo di data<br /> </td> 
+   <td> Restituisce la somma dei valori di una colonna numero, stringa o tipo data<br /> </td> 
    <td> Sum(&lt;valore&gt;)<br /></td> 
   </tr> 
  </tbody> 
@@ -525,7 +525,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Extracts the substring starting at character n1 of the string and of length n2<br /> </td> 
+   <td> Estrae la sottostringa a partire dal carattere n1 della stringa e di lunghezza n2<br /> </td> 
    <td> Substring(&lt;stringa&gt;, &lt;offset&gt;, &lt;lunghezza&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -550,8 +550,8 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Returns the string size<br /> </td> 
-   <td> dataLength(&lt;string&gt;)<br /> </td>  
+   <td> Restituisce la dimensione della stringa<br /> </td> 
+   <td> dataLength(&lt;stringa&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -607,17 +607,17 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Returns the number of the day in the year of the date<br /> </td> 
+   <td> Restituisce il numero del giorno nell'anno della data<br /> </td> 
    <td> DayOfYear(&lt;data&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgo</strong><br /> </td> 
-   <td> Returns the date corresponding to the current date minus n days<br /> </td> 
+   <td> Restituisce la data corrispondente alla data corrente meno n giorni<br /> </td> 
    <td> DaysAgo(&lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Returns the date (integer yyyymmdd) corresponding to the current date minus n days<br /> </td> 
+   <td> Restituisce la data (numero intero yyyymmdd) corrispondente alla data corrente meno n giorni<br /> </td> 
    <td> DaysAgoInt(&lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -743,7 +743,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Arrotonda la parte dell’ora al secondo più vicino<br /> </td> 
-   <td> TruncTime(e&lt;data&gt;, &lt;numero di secondi&gt;)<br /> </td>  
+   <td> TruncTim(e&lt;data&gt;, &lt;numero di secondi&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -785,7 +785,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
 
 >[!NOTE]
 >
->La funzione **Dateonly** tiene conto del fuso orario del server, non di quello dell&#39;operatore.
+>Tenere presente che la funzione **Dateonly** prende in considerazione il fuso orario del server, non quello dell&#39;operatore.
 
 **Numeriche**
 
@@ -808,7 +808,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Returns the greatest integer greater than or equal to a number<br /> </td> 
+   <td> Restituisce il numero intero più grande maggiore o uguale a un numero<br /> </td> 
    <td> Floor(&lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -823,7 +823,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Returns the remainder of the integer division of n1 by n2<br /> </td> 
+   <td> Restituisce il resto della divisione del numero intero di n1 per n2<br /> </td> 
    <td> Mod(&lt;numero 1&gt;, &lt;numero 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -902,7 +902,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Distance</strong><br /> </td> 
-   <td> Returns the distance between two points defined by their longitude and latitude, expressed in degrees.<br /> </td> 
+   <td> Restituisce la distanza tra due punti definiti dalla longitudine e dalla latitudine, espressa in gradi.<br /> </td> 
    <td> Distance(&lt;Longitudine A&gt;, &lt;Latitudine A&gt;, &lt;Longitudine B&gt;, &lt;Latitudine B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -944,7 +944,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
-   <td> Extracts the domain from an e-mail address<br /> </td> 
+   <td> Estrae il dominio da un indirizzo e-mail<br /> </td> 
    <td> GetEmailDomain(&lt;valore&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -964,7 +964,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Returns value 2 if string 1 is empty, otherwise returns value 3<br /> </td> 
+   <td> Restituisce il valore 2 se la stringa 1 è vuota, altrimenti restituisce il valore 3<br /> </td> 
    <td> IsEmptyString(&lt;valore 1&gt;, &lt;valore 2&gt;, &lt;valore 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -989,7 +989,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> Restituisce il valore 1 se l'espressione è true. If not, it returns value 2 (may only be used as a parameter of the case function)<br /> </td> 
+   <td> Restituisce il valore 1 se l'espressione è true. In caso contrario restituisce il valore 2 (può essere utilizzato solo come parametro della funzione case)<br /> </td> 
    <td> When(&lt;condizione&gt;, &lt;valore 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 
