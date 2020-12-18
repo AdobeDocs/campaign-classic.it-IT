@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Richieste sulla privacy
+title: Richieste di accesso a dati personali
 description: Scopri come gestire le richieste di privacy
 audience: platform
 content-type: reference
@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 0%
+ht-degree: 21%
 
 ---
 
 
 # Gestione delle richieste di privacy {#privacy-requests}
 
-Per una presentazione generale sulla gestione della privacy, consultare [questa sezione](../../platform/using/privacy-management.md).
+Per una presentazione generale sulla gestione della privacy, consulta [questa sezione](../../platform/using/privacy-management.md).
 
-Queste informazioni si applicano a GDPR, CCPA, PDPA e LGPD. For more on these regulations, see [this section](../../platform/using/privacy-management.md#privacy-management-regulations).
+Queste informazioni si applicano alle normative GDPR, CCPA, PDPA e LGPD. Per ulteriori informazioni su tali normative, consulta [questa sezione](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-La rinuncia alla vendita di informazioni personali, che è specifica dell&#39;CCPA, è spiegata in [questa sezione](#sale-of-personal-information-ccpa).
+La rinuncia alla vendita di informazioni personali, specifica del CCPA, è spiegata in [questa sezione](#sale-of-personal-information-ccpa).
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ La rinuncia alla vendita di informazioni personali, che è specifica dell&#39;CC
 
 ## Informazioni sulle richieste di privacy {#about-privacy-requests}
 
-Per facilitare la preparazione alla privacy,  Adobe Campaign consente di gestire le richieste di accesso ed eliminazione. In **questa sezione** sono descritti il **Diritto di accesso** e il [Diritto di essere Dimenticato](../../platform/using/privacy-management.md#right-access-forgotten)(richiesta di eliminazione).
+Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campaign consente di gestire le richieste di accesso ed eliminazione. Il **diritto di accesso** e il **diritto all’oblio** (richiesta di eliminazione) sono illustrati in [questa sezione](../../platform/using/privacy-management.md#right-access-forgotten).
 
 Vediamo come creare le richieste di accesso ed eliminazione, nonché come  Adobe Campaign le elabora.
 
@@ -37,22 +37,22 @@ Vediamo come creare le richieste di accesso ed eliminazione, nonché come  Adobe
 
  Adobe Campaign offre ai Data Controller due possibilità per eseguire le richieste di accesso ed eliminazione alla privacy:
 
-* Tramite l&#39;interfaccia **** Adobe Campaign: per ogni richiesta di privacy, il Data Controller crea una nuova richiesta di privacy in  Adobe Campaign. Vedi [questa sezione](#create-privacy-request-ui).
-* Tramite l&#39; **API**:  Adobe Campaign fornisce un&#39;API che consente il processo automatico delle richieste di privacy utilizzando SOAP. Vedi [questa sezione](#automatic-privacy-request-api).
+* Tramite l&#39;interfaccia **Adobe Campaign**: per ogni richiesta di privacy, il Data Controller crea una nuova richiesta di privacy in  Adobe Campaign. Vedi [questa sezione](#create-privacy-request-ui).
+* Tramite **API**:  Adobe Campaign fornisce un&#39;API che consente il processo automatico delle richieste di privacy utilizzando SOAP. Vedi [questa sezione](#automatic-privacy-request-api).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui dati personali e sulle diverse entità che gestiscono i dati (Titolare del trattamento dei dati, Processore dati e Oggetto dati), consulta Dati [personali e Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Per ulteriori informazioni sui dati personali e sulle diverse entità che gestiscono i dati (titolare del trattamento, responsabile del trattamento e interessato), consulta [Dati personali e utenti tipo](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Prerequisiti {#prerequesites}
 
- Adobe Campaign offre strumenti per il controllo dei dati per creare ed elaborare richieste di privacy per i dati memorizzati  Adobe Campaign. È tuttavia responsabilità del Titolare del Trattamento dei Dati gestire il rapporto con l&#39;Oggetto dei Dati (e-mail, assistenza clienti o un portale Web).
+ Adobe Campaign offre ai titolari del trattamento strumenti per creare ed elaborare richieste di accesso a dati personali per i dati memorizzati in Adobe Campaign. La gestione del rapporto con l’interessato (tramite e-mail, assistenza clienti o un portale web) rimane tuttavia responsabilità del titolare del trattamento.
 
-È pertanto responsabilità dell&#39;utente in qualità di titolare del trattamento confermare l&#39;identità dell&#39;interessato che presenta la richiesta e confermare che i dati restituiti al richiedente riguardano l&#39;interessato.
+In qualità di titolare del trattamento, avrai pertanto la responsabilità di confermare l’identità dell’interessato che presenta la richiesta e confermare che i dati restituiti al richiedente riguardano l’interessato.
 
 ### Installazione del pacchetto Privacy {#install-privacy-package}
 
-Per utilizzare questa funzione, è necessario installare il **[!UICONTROL Privacy Data Protection Regulation]** pacchetto tramite il **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]** menu. Per ulteriori informazioni su come installare i pacchetti, consulta la documentazione [](../../installation/using/installing-campaign-standard-packages.md)dettagliata.
+Per utilizzare questa funzione, è necessario installare il pacchetto **[!UICONTROL Privacy Data Protection Regulation]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** > **[!UICONTROL Adobe Campaign Package]**. Per ulteriori informazioni su come installare i pacchetti, consultare la [documentazione dettagliata](../../installation/using/installing-campaign-standard-packages.md).
 
 In **[!UICONTROL Administration]** > **[!UICONTROL Platform]** vengono create due nuove cartelle, specifiche di Privacy:
 
@@ -69,29 +69,29 @@ In **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL
 * **[!UICONTROL Delete privacy requests data]**: questo flusso di lavoro elimina i dati del destinatario memorizzati in  Adobe Campaign.
 * **[!UICONTROL Privacy request cleanup]**: questo flusso di lavoro cancella i file di richiesta di accesso che hanno più di 90 giorni.
 
-In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]**, è stato aggiunto il **[!UICONTROL Privacy Data Right]** nome right. Questo diritto denominato è richiesto ai Controllori dei dati per poter utilizzare gli strumenti per la privacy. Questo consente loro di creare nuove richieste, tenere traccia della loro evoluzione, utilizzare l&#39;API, ecc.
+In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UICONTROL Named rights]** è stato aggiunto il **[!UICONTROL Privacy Data Right]** denominato right. Questo diritto denominato è richiesto ai Controllori dei dati per poter utilizzare gli strumenti per la privacy. Questo consente loro di creare nuove richieste, tenere traccia della loro evoluzione, utilizzare l&#39;API, ecc.
 
 ![](assets/privacy-right.png)
 
 ### Spazi dei nomi {#namesspaces}
 
-Prima di creare le richieste di privacy, è necessario definire lo spazio dei nomi che verrà utilizzato. Questa è la chiave che verrà utilizzata per identificare l&#39;oggetto dati nel database Adobe Campaign .
+Prima di creare le richieste di accesso a dati personali, è necessario definire lo spazio dei nomi che verrà utilizzato. Questa è la chiave che verrà utilizzata per identificare l&#39;oggetto dati nel database Adobe Campaign .
 
 Sono disponibili tre spazi di nomi out-of-the-box: email, telefono e cellulare. Se è necessario un altro spazio nomi (ad esempio un campo personalizzato del destinatario), è possibile crearne uno nuovo da **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Creating a Privacy request {#create-privacy-request-ui}
+## Creazione di una richiesta di accesso a dati personali {#create-privacy-request-ui}
 
-L&#39;interfaccia **Adobe Campaign** consente di creare le richieste sulla privacy e di seguirne l&#39;evoluzione. Per creare una nuova richiesta di privacy, segui le istruzioni seguenti:
+L&#39; **interfaccia Adobe Campaign** consente di creare le richieste sulla privacy e di seguirne l&#39;evoluzione. Per creare una nuova richiesta di privacy, segui le istruzioni seguenti:
 
-1. Accedete alla cartella della richiesta per la privacy in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Privacy Requests]**.
+1. Accedete alla cartella della richiesta relativa alla privacy in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Privacy Requests]**.
 
    ![](assets/privacy-requests-folder.png)
 
-1. Questa schermata consente di visualizzare tutte le richieste di privacy correnti, il relativo stato e i registri. Fate clic **[!UICONTROL New]** per creare una richiesta per la privacy.
+1. Questa schermata consente di visualizzare tutte le richieste di privacy correnti, il relativo stato e i registri. Fate clic su **[!UICONTROL New]** per creare una richiesta per la privacy.
 
    ![](assets/privacy-request-new.png)
 
-1. Selezionare **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA o LGPD), **[!UICONTROL Request type]** (Access o Delete), selezionare una **[!UICONTROL Namespace]** e immettere **[!UICONTROL Reconciliation value]**. Se si utilizza email come namespace, digitare nell&#39;e-mail dell&#39;oggetto dati.
+1. Selezionare **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA o LGPD), **[!UICONTROL Request type]** (Access or Delete), selezionare un **[!UICONTROL Namespace]** e inserire il **[!UICONTROL Reconciliation value]**. Se si utilizza email come namespace, digitare nell&#39;e-mail dell&#39;oggetto dati.
 
    ![](assets/privacy-request-properties.png)
 
@@ -102,9 +102,9 @@ I flussi di lavoro tecnici sulla privacy vengono eseguiti una volta al giorno ed
 
 ![](assets/privacy-request-download.png)
 
-### Elenco delle tabelle {#list-of-tables}
+### Elenco di tabelle {#list-of-tables}
 
-Durante l&#39;esecuzione di una richiesta di eliminazione o di accesso alla privacy,  Adobe Campaign cerca tutti i dati dell&#39;oggetto dati in base al contenuto **[!UICONTROL Reconciliation value]** in tutte le tabelle che hanno un collegamento alla tabella del destinatario (tipo proprio).
+Durante l&#39;esecuzione di una richiesta di eliminazione o di accesso alla privacy,  Adobe Campaign cerca tutti i dati dell&#39;oggetto dati in base alla **[!UICONTROL Reconciliation value]** in tutte le tabelle che hanno un collegamento alla tabella del destinatario (tipo proprio).
 
 Di seguito è riportato l&#39;elenco delle tabelle pronte all&#39;uso che vengono prese in considerazione per l&#39;esecuzione delle richieste di privacy:
 
@@ -114,7 +114,7 @@ Di seguito è riportato l&#39;elenco delle tabelle pronte all&#39;uso che vengon
 * Registro di consegna eventi archiviato (wideLogEventHisto)
 * Contenuto elenco destinatari (rcpGrpRel)
 * Proposta di offerta del visitatore (propositionVisitor)
-* Visitatori (visitatore)
+* Visitatori (visitor)
 * Cronologia iscrizioni (subHisto)
 * Iscrizioni (iscrizione)
 * Proposta di offerta del destinatario (propositionRcp)
@@ -126,30 +126,30 @@ Se sono state create tabelle personalizzate con un collegamento alla tabella dei
 >Se esegui richieste batch di privacy utilizzando i flussi di lavoro di eliminazione del profilo, prendi in considerazione le seguenti osservazioni:
 >* L&#39;eliminazione del profilo tramite flussi di lavoro non elabora le tabelle figlio.
 >* È necessario gestire l&#39;eliminazione per tutte le tabelle figlio.
->*  Adobe consiglia di creare un flusso di lavoro ETL che aggiunga le righe da eliminare nella tabella Accesso alla privacy e consenta al **[!UICONTROL Delete privacy requests data]** flusso di lavoro di eseguire l&#39;eliminazione. Suggeriamo di limitare a 200 profili al giorno da eliminare per motivi di prestazioni.
+>*  Adobe consiglia di creare un flusso di lavoro ETL che aggiunga le righe da eliminare nella tabella Accesso alla privacy e consenta al flusso di lavoro **[!UICONTROL Delete privacy requests data]** di eseguire l&#39;eliminazione. Suggeriamo di limitare a 200 profili al giorno da eliminare per motivi di prestazioni.
 
 
-### Stati della richiesta di privacy {#privacy-request-statuses}
+### Stati delle richieste di accesso a dati personali {#privacy-request-statuses}
 
-Di seguito sono riportati i diversi stati per le richieste di privacy:
+Di seguito sono riportati i diversi stati delle richieste di accesso a dati personali:
 
 * **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: in corso, il flusso di lavoro non ha ancora elaborato la richiesta.
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: il flusso di lavoro sta elaborando la richiesta.
 * **[!UICONTROL Delete pending]**: il flusso di lavoro ha identificato tutti i dati del destinatario da eliminare.
-* **[!UICONTROL Delete in progress]**: il flusso di lavoro sta elaborando l&#39;eliminazione.
+* **[!UICONTROL Delete in progress]**: il flusso di lavoro sta elaborando l’eliminazione.
 * **[!UICONTROL Delete Confirmation Pending]** (Elimina richiesta in modalità di processo in due fasi): il flusso di lavoro ha elaborato la richiesta di accesso. È richiesta la conferma manuale per eseguire l&#39;eliminazione. Il pulsante è disponibile per 15 giorni.
-* **[!UICONTROL Complete]**: l&#39;elaborazione della richiesta è terminata senza un errore.
-* **[!UICONTROL Error]**: errore rilevato dal flusso di lavoro. Il motivo compare nell’elenco delle richieste di privacy nella **[!UICONTROL Request status]** colonna. Ad esempio, **[!UICONTROL Error data not found]** significa che nel database non **[!UICONTROL Reconciliation value]** è stato trovato alcun dato destinatario corrispondente a quello dell&#39;oggetto dati.
+* **[!UICONTROL Complete]**: l’elaborazione della richiesta è andata a buon fine.
+* **[!UICONTROL Error]**: il flusso di lavoro ha rilevato un errore. Il motivo viene visualizzato nell&#39;elenco delle richieste di privacy nella colonna **[!UICONTROL Request status]**. Ad esempio, **[!UICONTROL Error data not found]** significa che nel database non è stato trovato nessun dato del destinatario corrispondente al **[!UICONTROL Reconciliation value]** dell’interessato.
 
 ### Processo in due fasi {#two-step-process}
 
-Per impostazione predefinita, viene attivato il processo **in** due fasi. Quando create una nuova richiesta di eliminazione in questa modalità,  Adobe Campaign esegue sempre prima una richiesta di accesso. Questo consente di controllare i dati prima di confermare l&#39;eliminazione.
+Per impostazione predefinita, il processo **a 2 fasi** è attivato. Quando create una nuova richiesta di eliminazione in questa modalità,  Adobe Campaign esegue sempre prima una richiesta di accesso. Questo consente di controllare i dati prima di confermare l&#39;eliminazione.
 
 Potete modificare questa modalità dalla schermata della versione per la richiesta della privacy. Fai clic su **[!UICONTROL Advanced settings]**.
 
 ![](assets/privacy-request-advanced-settings.png)
 
-Con la modalità a due fasi attivata, lo stato di una nuova richiesta di eliminazione cambia in **[!UICONTROL Confirm Delete Pending]**. Scaricate il file XML generato dalla schermata di richiesta della privacy e verificate i dati. Per confermare la cancellazione dei dati, fare clic sul **[!UICONTROL Confirm delete data]** pulsante.
+Con la modalità in due fasi attivata, lo stato di una nuova richiesta di eliminazione cambia in **[!UICONTROL Confirm Delete Pending]**. Scaricate il file XML generato dalla schermata di richiesta della privacy e verificate i dati. Per confermare la cancellazione dei dati, fare clic sul pulsante **[!UICONTROL Confirm delete data]**.
 
 ![](assets/privacy-request-delete-data.png)
 
@@ -163,7 +163,7 @@ Durante l&#39;elaborazione delle richieste di Access,  Adobe Campaign genera un 
 
 dove @id è l’ID della richiesta di privacy.
 
-Questo URL viene memorizzato nel **[!UICONTROL "File location" (@urlFile)]** campo dello **[!UICONTROL Privacy Requests (gdprRequest)]** schema.
+Questo URL viene memorizzato nel campo **[!UICONTROL "File location" (@urlFile)]** dello schema **[!UICONTROL Privacy Requests (gdprRequest)]**.
 
 Le informazioni sono disponibili nel database per 90 giorni. Una volta ripulita la richiesta dal flusso di lavoro tecnico, le informazioni vengono rimosse dal database e l’URL diventa obsoleto. Verificare che l&#39;URL sia ancora valido prima di scaricare i dati da una pagina Web.
 
@@ -175,7 +175,7 @@ I controller dei dati possono creare facilmente un&#39;applicazione Web con l&#3
 
 ![](assets/privacy-gdpr-jssp.png)
 
-Segue uno snippet di codice che potete utilizzare come esempio nell&#39;attività dell&#39;applicazione Web **[!UICONTROL Page]** .
+Di seguito è riportato un frammento di codice che puoi utilizzare come esempio nell&#39;attività dell&#39;applicazione Web **[!UICONTROL Page]**.
 
 ![](assets/privacy-page-activity.png)
 
@@ -211,25 +211,25 @@ Segue uno snippet di codice che potete utilizzare come esempio nell&#39;attivit�
 </body> </html>
 ```
 
-Poiché l&#39;accesso al file di dati dell&#39;oggetto dati è limitato, l&#39;accesso anonimo alla pagina Web deve essere disattivato. Solo l&#39;operatore con il **[!UICONTROL Privacy Data Right]** nome right può accedere alla pagina e scaricare i dati.
+Poiché l&#39;accesso al file di dati dell&#39;oggetto dati è limitato, l&#39;accesso anonimo alla pagina Web deve essere disattivato. Solo l&#39;operatore con il nome **[!UICONTROL Privacy Data Right]** a destra può accedere alla pagina e scaricare i dati.
 
-## Processo di richiesta della privacy automatica {#automatic-privacy-request-api}
+## Processo di richiesta privacy automatica {#automatic-privacy-request-api}
 
- Adobe Campaign fornisce un&#39; **API** che consente di impostare un processo automatico di richiesta della privacy.
+ Adobe Campaign fornisce un **API** che consente di impostare un processo automatico di richiesta della privacy.
 
-Con l&#39;API, il processo di privacy generale è lo stesso dell&#39; [utilizzo dell&#39;interfaccia](#create-privacy-request-ui). L&#39;unica differenza è la creazione della richiesta per la privacy. Invece di creare la richiesta in  Adobe Campaign, un POST contenente le informazioni sulla richiesta viene inviato a Campaign. Per ogni richiesta, viene aggiunta una nuova voce nella **[!UICONTROL Privacy Requests]** schermata. I flussi di lavoro tecnici sulla Privacy elaborano quindi la richiesta, allo stesso modo di una richiesta aggiunta utilizzando l&#39;interfaccia.
+Con l&#39;API, il processo di privacy generale è lo stesso di [utilizzando l&#39;interfaccia](#create-privacy-request-ui). L&#39;unica differenza è la creazione della richiesta per la privacy. Invece di creare la richiesta in  Adobe Campaign, un POST contenente le informazioni sulla richiesta viene inviato a Campaign. Per ogni richiesta, nella schermata **[!UICONTROL Privacy Requests]** viene aggiunta una nuova voce. I flussi di lavoro tecnici sulla Privacy elaborano quindi la richiesta, allo stesso modo di una richiesta aggiunta utilizzando l&#39;interfaccia.
 
-Se utilizzate l&#39;API per inviare richieste di privacy, vi consigliamo di lasciare attivata la procedura **in** 2 fasi per le prime richieste di eliminazione, al fine di verificare i dati restituiti. Al termine dei test, potete disattivare il processo in due fasi in modo che il processo di richiesta Delete possa essere eseguito automaticamente.
+Se utilizzate l&#39;API per inviare richieste di privacy, per verificare i dati restituiti è consigliabile lasciare attivata la procedura **2 fasi** per le prime richieste di eliminazione. Al termine dei test, potete disattivare il processo in due fasi in modo che il processo di richiesta Delete possa essere eseguito automaticamente.
 
-L&#39;API **[!UICONTROL CreateRequestByName]** JS è definita come segue.
+L&#39;API JS **[!UICONTROL CreateRequestByName]** è definita come segue.
 
 >[!NOTE]
 >
->Se utilizzate l&#39;API **gdprRequest** , potete comunque utilizzarla, ma si consiglia di utilizzare la nuova API **privacyRequest** .
+>Se si utilizza l&#39;API **gdprRequest**, è comunque possibile utilizzarla, ma si consiglia di utilizzare la nuova API **privacyRequest**.
 
 >[!IMPORTANT]
 >
->Per utilizzare l&#39;API è necessario il **[!UICONTROL Privacy Data Right]** diritto denominato.
+>Per utilizzare l&#39;API è necessario il diritto **[!UICONTROL Privacy Data Right]** denominato.
 
 ```
 <method library="nms:gdpr.js" name="CreateRequestByName" static="true">
@@ -253,11 +253,11 @@ L&#39;API **[!UICONTROL CreateRequestByName]** JS è definita come segue.
 
 ### Chiamata esterna dell&#39;API {#invoking-api-externally}
 
-Di seguito è riportato un esempio di come è possibile richiamare l&#39;API esternamente (autenticazione tramite l&#39;API e dettagli specifici sull&#39;API Privacy). Per ulteriori informazioni sull&#39;API Privacy, consulta la documentazione [](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html)API. È inoltre possibile consultare la documentazione relativa alle chiamate al servizio [Web](../../configuration/using/web-service-calls.md).
+Di seguito è riportato un esempio di come è possibile richiamare l&#39;API esternamente (autenticazione tramite l&#39;API e dettagli specifici sull&#39;API Privacy). Per ulteriori informazioni sull&#39;API Privacy, consultare la [documentazione API](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/s-nms-privacyRequest.html). È inoltre possibile consultare la [Documentazione sulle chiamate al servizio Web](../../configuration/using/web-service-calls.md).
 
 Innanzitutto, è necessario eseguire l&#39;autenticazione tramite l&#39;API:
 
-1. Scaricate il WSDL **xtk:session** tramite questo URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
+1. Scaricate il file WSDL **xtk:session** tramite questo URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
 1. Utilizzate il metodo &quot;Logon&quot; e passate un nome utente e una password come parametri nella richiesta. Riceverete una risposta contenente un token di sessione. Ecco un esempio che utilizza SoapUI.
 
@@ -269,16 +269,16 @@ Quindi richiamate l&#39;API Privacy:
 
 1. Scaricate il WSDL dall&#39;URL seguente: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**.
 
-1. Utilizzare **[!UICONTROL CreateRequestByName]** per creare una richiesta per la privacy specifica.
+1. Utilizzate **[!UICONTROL CreateRequestByName]** per creare una richiesta per la privacy specifica.
 
-   Di seguito è riportato un esempio che utilizza l&#39; **[!UICONTROL CreateRequestByName]**. Tenete presente che usiamo il token di sessione fornito sopra come autenticazione. La risposta è l’ID della richiesta creata.
+   Di seguito è riportato un esempio che utilizza il simbolo **[!UICONTROL CreateRequestByName]**. Tenete presente che usiamo il token di sessione fornito sopra come autenticazione. La risposta è l’ID della richiesta creata.
 
    ![](assets/privacy-api-2.png)
 
    Per facilitare l&#39;esecuzione dei passaggi descritti qui sopra, considera quanto segue:
 
-   * È possibile utilizzare una **queryDef** sullo schema **nms:gdprRequest** per controllare lo stato della richiesta di Access.
-   * Per ottenere il risultato della richiesta di Access, è possibile utilizzare un **queryDef** sullo schema **nms:gdprRequestData** .
+   * È possibile utilizzare uno schema **queryDef** nello schema **nms:gdprRequest** per verificare lo stato della richiesta di Access.
+   * È possibile utilizzare uno schema **queryDef** nello schema **nms:gdprRequestData** per ottenere il risultato della richiesta di Access.
    * Per poter scaricare il file XML da **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;**, è necessario aver effettuato l&#39;accesso e accedervi da un IP inserito nella lista bianca. A tal fine, create un&#39;applicazione Web che consenta di accedere al file generato dalla JSSP.
 
 ### Chiamata dell&#39;API da un JS {#invoking-api-from-js}
@@ -291,7 +291,7 @@ Di seguito è riportato un esempio di come richiamare l&#39;API da un JS all&#39
 >
 >Se state effettuando la migrazione alla versione 20.2 e se state già utilizzando l&#39;API, dovete aggiungere il campo &quot;Regulation&quot; (Regola). Se utilizzate una build precedente, potete continuare a utilizzare l&#39;API senza il campo &quot;Regulation&quot;.
 
-* Se state **utilizzando una build precedente (con il pacchetto GDPR)**, potete continuare a utilizzare l&#39;API senza il campo &quot;Regulation&quot; come mostrato di seguito:
+* Se utilizzi **una build precedente (con il pacchetto GDPR)**, puoi continuare a utilizzare l&#39;API senza il campo &quot;Regulation&quot; come mostrato di seguito:
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -316,7 +316,7 @@ Di seguito è riportato un esempio di come richiamare l&#39;API da un JS all&#39
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* Se state **eseguendo la migrazione alla versione 20.2** e se state già utilizzando l&#39;API, dovete aggiungere il campo &quot;Regulation&quot; come illustrato di seguito:
+* Se state eseguendo la migrazione a 20.2 **e se state già utilizzando l&#39;API, dovete aggiungere il campo &quot;Regulation&quot; come illustrato di seguito:**
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -347,7 +347,7 @@ Di seguito è riportato un esempio di come richiamare l&#39;API da un JS all&#39
    // User can use a simple queryDef with requestID as a parameter to check request status.
    ```
 
-* Se si **utilizza il Campaign Classic 20.2 (build 9178+) o versione successiva**, il campo &quot;Regulation&quot; è facoltativo, come illustrato di seguito:
+* Se si utilizza **Campaign Classic 20.2 (build 9178+) o superiore**, il campo &#39;Regulation&#39; è facoltativo, come illustrato di seguito:
 
    ```
    loadLibrary("nms:gdpr.js");
@@ -380,45 +380,45 @@ Di seguito è riportato un esempio di come richiamare l&#39;API da un JS all&#39
 
 ## Rinuncia alla vendita di informazioni personali (CCPA) {#sale-of-personal-information-ccpa}
 
-The **California Consumer Privacy Act** (CCPA) provides California residents new rights in regards to their personal information and imposes data protection responsibilities on certain entities whom conduct business in California.
+Il **California Consumer Privacy Act** (CCPA) fornisce ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
 
-La configurazione e l’utilizzo delle richieste di accesso ed eliminazione sono comuni sia al GDPR che all’APP. Questa sezione presenta la rinuncia alla vendita di dati personali, che è specifica dell&#39;CCPA.
+La configurazione e l’utilizzo delle richieste di accesso ed eliminazione sono comuni sia al GDPR che al CCPA. Questa sezione presenta la rinuncia alla vendita di dati personali, specifica del CCPA.
 
-Oltre agli strumenti di gestione [del](../../platform/using/privacy-management.md#consent-management) consenso forniti da  Adobe Campaign, è possibile verificare se un consumatore ha rinunciato alla vendita di Dati Personali.
+Oltre agli [Strumenti di gestione del consenso](../../platform/using/privacy-management.md#consent-management) forniti da  Adobe Campaign, è possibile verificare se un consumatore ha rinunciato alla vendita di Dati Personali.
 
-Un consumatore decide, attraverso il tuo sistema, di non consentire la vendita dei suoi dati personali a terzi. In  Adobe Campaign, potrete archiviare e tenere traccia di queste informazioni.
+Un consumatore decide, attraverso il tuo sistema, di non dare il consenso per la vendita dei propri dati personali a terzi. In Adobe Campaign, potrai archiviare e tenere traccia di questo tipo di informazioni.
 
-Affinché questo funzioni, è necessario estendere la tabella Profili e aggiungere un **[!UICONTROL Opt-Out for CCPA]** campo.
+Affinché questo funzioni, è necessario estendere la tabella Profili e aggiungere un campo **[!UICONTROL Opt-Out for CCPA]**.
 
 >[!IMPORTANT]
 >
->In qualità di titolare del trattamento è responsabilità dell&#39;utente ricevere la richiesta dell&#39;interessato e tenere traccia delle date della richiesta per l&#39;accordo CCPA. In qualità di fornitore di tecnologia, forniamo solo un modo per rifiutare. Per ulteriori informazioni sul tuo ruolo di Controller dati, consulta Dati [personali e Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>In qualità di titolare del trattamento è tua responsabilità ricevere la richiesta dell’interessato e tenere traccia delle date della richiesta in conformità con il CCPA. In qualità di fornitore di tecnologia, ci limitiamo a offrire un modo per esprimere la rinuncia. Per ulteriori informazioni sul tuo ruolo in quanto titolare del trattamento, consulta [Dati personali e utenti tipo](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Prerequisito {#ccpa-prerequisite}
 
-Per sfruttare queste informazioni, è necessario creare questo campo in Adobe Campaign Classic. A questo scopo, alla **[!UICONTROL Recipient]** tabella verrà aggiunto un campo booleano. Quando viene creato un nuovo campo, questo viene automaticamente supportato dall&#39;API Campaign.
+Per sfruttare queste informazioni, è necessario creare questo campo in Adobe Campaign Classic. A questo scopo, è possibile aggiungere un campo booleano alla tabella **[!UICONTROL Recipient]**. Quando viene creato un nuovo campo, questo viene automaticamente supportato dall’API di Campaign.
 
 Se utilizzi una tabella di destinatari personalizzata, devi eseguire anche questa operazione.
 
-Per informazioni più dettagliate su come creare un nuovo campo, consultare la documentazione [relativa all&#39;edizione](../../configuration/using/about-schema-edition.md)Schema.
+Per informazioni più dettagliate su come creare un nuovo campo, fare riferimento alla [Documentazione sull&#39;edizione dello schema](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
 >La modifica degli schemi è un’operazione sensibile che deve essere eseguita solo da utenti esperti.
 
-1. Vai a **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**, seleziona **[!UICONTROL Recipients]** come **[!UICONTROL Document type]** e fai clic su **[!UICONTROL Next]**. Per ulteriori informazioni sull&#39;aggiunta di campi a una tabella, vedere [questa sezione](../../configuration/using/new-field-wizard.md).
+1. Andate a **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**, selezionate **[!UICONTROL Recipients]** come **[!UICONTROL Document type]** e fate clic su **[!UICONTROL Next]**. Per ulteriori informazioni sull&#39;aggiunta di campi a una tabella, vedere [questa sezione](../../configuration/using/new-field-wizard.md).
 
    ![](assets/privacy-ccpa-1.png)
 
-1. Per l&#39;opzione **[!UICONTROL Field type]**, selezionare **[!UICONTROL SQL field]**. Per Etichetta, utilizzate **[!UICONTROL Opt-Out for CCPA]**. Selezionate il **[!UICONTROL 8-bit integer (boolean)]** tipo e definite le seguenti univoche **[!UICONTROL Relative path]**: @OPTOUTCCPA. Fai clic su **[!UICONTROL Finish]**.
+1. Per **[!UICONTROL Field type]**, selezionare **[!UICONTROL SQL field]**. Per l&#39;etichetta, utilizzare **[!UICONTROL Opt-Out for CCPA]**. Selezionare il tipo **[!UICONTROL 8-bit integer (boolean)]** e definire il seguente **[!UICONTROL Relative path]** univoco: @OPTOUTCCPA. Fai clic su **[!UICONTROL Finish]**.
 
    ![](assets/privacy-ccpa-2.png)
 
-   In questo modo si estende o si crea lo **[!UICONTROL Recipient (cus)]** schema. Fare clic su di esso per verificare che il campo sia stato aggiunto correttamente.
+   In questo modo si estende o si crea lo schema **[!UICONTROL Recipient (cus)]**. Fare clic su di esso per verificare che il campo sia stato aggiunto correttamente.
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Fate clic sul nodo **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dell&#39;elenco di cartelle. In **[!UICONTROL Recipient (nms)]**, in &quot;Pacchetto generale&quot;, aggiungete un `<input>` elemento e utilizzate, per il valore xpath, il percorso relativo definito al punto 2. Per ulteriori informazioni sull&#39;identificazione di un modulo, vedere [questa sezione](../../configuration/using/identifying-a-form.md).
+1. Fare clic sul nodo **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dell&#39;elenco di esplorazione. In **[!UICONTROL Recipient (nms)]**, in &quot;General Package&quot;, aggiungere un elemento `<input>` e utilizzare, per il valore xpath, il percorso relativo definito al punto 2. Per ulteriori informazioni sull&#39;identificazione di un modulo, vedere [questa sezione](../../configuration/using/identifying-a-form.md).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -430,24 +430,24 @@ Per informazioni più dettagliate su come creare un nuovo campo, consultare la d
 
 ### Utilizzo {#usage}
 
-È responsabilità del titolare del trattamento compilare il valore del campo e seguire le linee guida e le regole CCPA relative alla vendita dei dati.
+Compilare il valore del campo e seguire le linee guida e le regole del CCPA relative alla vendita dei dati è responsabilità del titolare del trattamento.
 
-Per compilare i valori, è possibile utilizzare diversi metodi:
+Sono disponibili diversi metodi per compilare i valori:
 
 * Utilizzo dell&#39;interfaccia di Campaign modificando i dettagli del destinatario
 * Utilizzo dell&#39;API
-* Mediante un flusso di lavoro di importazione dei dati
+* Mediante un flusso di lavoro di importazione dati
 
-Devi accertarti di non vendere mai a terzi le informazioni personali dei profili che hanno rinunciato.
+Accertati di non vendere mai a terzi le informazioni personali dei profili che hanno espresso la rinuncia.
 
-1. Per modificare lo stato di rifiuto, andate a **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selezionate un destinatario. Nella **[!UICONTROL General]** scheda viene visualizzato il campo configurato nella sezione precedente.
+1. Per modificare lo stato di rifiuto, andare su **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selezionare un destinatario. Nella scheda **[!UICONTROL General]** viene visualizzato il campo configurato nella sezione precedente.
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configurare l&#39;elenco destinatari per visualizzare la colonna a comparsa. Per informazioni su come configurare gli elenchi, consultare la documentazione [](../../platform/using/adobe-campaign-workspace.md#configuring-lists)dettagliata.
+1. Configurare l&#39;elenco destinatari per visualizzare la colonna a comparsa. Per informazioni su come configurare gli elenchi, fare riferimento alla [documentazione dettagliata](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Potete fare clic sulla colonna per ordinare i destinatari in base alle informazioni di rifiuto. Potete anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Potete anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sulla creazione di filtri, vedere [questa sezione](../../platform/using/creating-filters.md).
 
    ![](assets/privacy-ccpa-7.png)
