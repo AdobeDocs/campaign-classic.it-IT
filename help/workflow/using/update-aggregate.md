@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # Aggiorna aggregato{#update-aggregate}
 
-Gli aggregati sono definiti a livello di cubo ai fini del reporting. Quando si configura un aggregato è disponibile una **[!UICONTROL Workflow]** scheda.
+Gli aggregati sono definiti a livello di cubo ai fini del reporting. Quando si configura un&#39;aggregazione è disponibile una scheda **[!UICONTROL Workflow]**.
 
-Per ulteriori informazioni sui cubi e sull&#39;utilizzo degli aggregati in  Adobe Campaign, consultare la [sezione](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)dedicata.
+Per ulteriori informazioni sui cubi e sull&#39;utilizzo degli aggregati in  Adobe Campaign, fare riferimento alla sezione dedicata [](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-L&#39; **[!UICONTROL Update aggregate]** attività consente di selezionare la modalità di aggiornamento da applicare: pieno o parziale.
+L&#39;attività **[!UICONTROL Update aggregate]** consente di selezionare la modalità di aggiornamento da applicare: pieno o parziale.
 
 Per impostazione predefinita, durante ogni calcolo viene eseguito un aggiornamento completo. Per abilitare un aggiornamento parziale, selezionate l&#39;opzione pertinente e definite le condizioni di aggiornamento.
 
