@@ -32,7 +32,7 @@ Qui di seguito troverete informazioni sulla gestione dei duplicati e della quara
 
 È possibile monitorare il volume delle e-mail inviate per indirizzo IP. Per questo è necessaria un&#39;estensione dello schema. È necessario estendere la tabella dei registri di trasmissione per aggiungere l&#39;&quot;identificatore pubblico&quot; e creare un flusso di lavoro per estrarre e visualizzare i dati. Contatta  Adobe se ti serve.
 
-## Duplicati {#duplicates}
+## Duplica {#duplicates}
 
 La presenza di indirizzi e-mail duplicati può avere molteplici conseguenze:
 
@@ -50,7 +50,7 @@ Oltre a questa procedura di opt-in, questa situazione porterà probabilmente gli
 
 Ci sono, comunque, casi in cui i duplicati tra le diverse partizioni sono normali. Ad esempio, quando si inviano dati per terze parti o entità aziendali diverse, è logico che la stessa persona sia un destinatario per diversi motivi. Tuttavia, raramente è normale trovare duplicati all&#39;interno della stessa partizione.
 
-## Quarantena {#quarantines}
+## Quarantenne {#quarantines}
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari i cui indirizzi sono posti in quarantena sono esclusi per impostazione predefinita durante l&#39;analisi del recapito: non sono mirati. Un indirizzo e-mail può essere messo in quarantena, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. In tutti i casi, la quarantena corrisponde alle norme specifiche di seguito indicate.
 
