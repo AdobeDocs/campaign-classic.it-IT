@@ -25,7 +25,7 @@ Esistono due ambienti per ciascuna dimensione di targeting utilizzata per gestir
 
    Le categorie possono anche essere pubblicate manualmente nell’ambiente online.
 
-   La procedura di approvazione delle offerte è dettagliata nella sezione [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md) .
+   La procedura di approvazione delle offerte è dettagliata nella sezione [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md).
 
 * Un ambiente live in cui le offerte approvate dall&#39;ambiente di progettazione, così come i vari spazi di offerta, filtri, categorie e regole configurati nell&#39;ambiente di progettazione, sono tutti reperibili. Durante una chiamata al motore delle offerte, il motore utilizzerà sempre le offerte dall&#39;ambiente live.
 
@@ -37,7 +37,7 @@ Un&#39;offerta viene distribuita solo sugli spazi di offerta selezionati durante
 
 Esistono due possibili tipi di interazioni: interazioni in entrata (iniziate da un contatto) e interazioni in uscita (iniziate dal creatore dell&#39;offerta).
 
-Questi due tipi di interazioni possono essere eseguite in modalità unitaria (l&#39;offerta è calcolata per un singolo contatto), o in modalità batch (l&#39;offerta è calcolata per un insieme di contatti). Generalmente, le interazioni in entrata vengono eseguite in modalità unitaria e le interazioni in uscita vengono eseguite in modalità batch. Tuttavia, possono esservi alcune eccezioni, ad esempio per i messaggi transazionali, in cui l&#39;interazione in uscita viene eseguita in modalità unitaria (fare riferimento a [questa sezione](../../message-center/using/about-transactional-messaging.md)).
+Questi due tipi di interazioni possono essere eseguite in modalità unitaria (l&#39;offerta è calcolata per un singolo contatto), o in modalità batch (l&#39;offerta è calcolata per un insieme di contatti). Generalmente, le interazioni in entrata vengono eseguite in modalità unitaria e le interazioni in uscita vengono eseguite in modalità batch. Tuttavia, per i messaggi transazionali possono esserci alcune eccezioni, ad esempio, in cui l&#39;interazione in uscita viene eseguita in modalità unitaria (fare riferimento a [questa sezione](../../message-center/using/about-transactional-messaging.md)).
 
 Non appena un&#39;offerta può o deve essere presentata (secondo le configurazioni effettuate), il motore dell&#39;offerta svolge il ruolo di intermediario: calcola automaticamente la migliore offerta possibile per un contatto tra quelli disponibili combinando i dati ricevuti sul contatto e le diverse regole che possono essere applicate come specificato nell&#39;applicazione.
 
