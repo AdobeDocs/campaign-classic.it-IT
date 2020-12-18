@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Monitoraggio della pipeline {#pipeline-monitoring}
 
-Il servizio Web [!DNL pipelined] status fornisce informazioni sullo stato del [!DNL pipelined] processo.
+Il servizio Web [!DNL pipelined] stato fornisce informazioni sullo stato del processo [!DNL pipelined].
 
 È possibile accedervi manualmente utilizzando un browser o automaticamente con un&#39;applicazione di monitoraggio.
 
@@ -42,7 +42,7 @@ Gli indicatori raccomandati da monitorare sono evidenziati.
    * next-offsets-flush: tempo di attesa per il batch successivo, al termine.
    * processed-from-last-flush: numero di attivatori elaborati nell&#39;ultimo batch.
 * routing
-   * trigger: elenco di trigger recuperati. Configurata nell’ [!DNL pipelined] opzione.
+   * trigger: elenco di trigger recuperati. Configurato nell&#39;opzione [!DNL pipelined].
 * statistiche
    * tempo medio-rosso-rosso-ms: tempo di elaborazione medio per un batch di attivatori.
    * tempo medio di elaborazione-trigger-ms: tempo medio impiegato per l&#39;analisi dei dati dei trigger.
