@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign : gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nelle ipotesi contenute nei rapporti disponibili tramite campagne e consegne.
 
-## Risultati dell&#39;ipotesi {#hypothesis-results}
+## Risultati ipotesi {#hypothesis-results}
 
 ### Indicatori {#indicators}
 
-Una volta calcolata l&#39;ipotesi, diversi indicatori di misura vengono aggiornati automaticamente. Sono disponibili nella **[!UICONTROL General]** scheda dell&#39;ipotesi.
+Una volta calcolata l&#39;ipotesi, diversi indicatori di misura vengono aggiornati automaticamente. Sono disponibili nella scheda **[!UICONTROL General]** dell&#39;ipotesi.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -35,7 +35,7 @@ Questi indicatori sono:
 * **Tasso di risposta del gruppo** di controllo: numero di gruppi di controllo partecipanti / numero totale di gruppi di controllo della consegna.
 * **Numero di reazioni**: numero di record nella tabella che contiene il rapporto tra individui, l&#39;ipotesi e la tabella delle transazioni.
 
-Per l’elenco completo degli indicatori, fate clic sul **[!UICONTROL Display the list]** collegamento:
+Per l&#39;elenco completo degli indicatori, fare clic sul collegamento **[!UICONTROL Display the list]**:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -58,21 +58,21 @@ Gli indicatori forniscono le seguenti informazioni:
 
 ### Reazioni {#reactions}
 
-È possibile visualizzare le reazioni dei destinatari alle ipotesi tramite la **[!UICONTROL Reactions]** scheda.
+È possibile visualizzare le reazioni dei destinatari alle ipotesi tramite la scheda **[!UICONTROL Reactions]**.
 
-1. Una volta completato il calcolo dell&#39;ipotesi, passare al **[!UICONTROL Campaign management > Measurement hypotheses]** nodo della struttura  Adobe Campaign.
-1. Selezionate l&#39;ipotesi desiderata e fate clic sulla **[!UICONTROL Reactions]** scheda per visualizzare l&#39;elenco dei destinatari che probabilmente acquisteranno qualcosa dopo la campagna di marketing.
+1. Una volta completato il calcolo dell&#39;ipotesi, passare al nodo **[!UICONTROL Campaign management > Measurement hypotheses]** della struttura  Adobe Campaign.
+1. Selezionate l&#39;ipotesi desiderata e fate clic sulla scheda **[!UICONTROL Reactions]** per visualizzare l&#39;elenco dei destinatari che probabilmente acquisteranno qualcosa dopo la campagna di marketing.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Rapporti {#reports}
 
-Consente di **[!UICONTROL Hypothesis report]** visualizzare i risultati delle ipotesi eseguite su campagne e consegne. La relazione contiene gli indicatori calcolati in base all&#39;ipotesi (per ulteriori informazioni, fare riferimento a [indicatori](#indicators)).
+La sezione **[!UICONTROL Hypothesis report]** consente di visualizzare i risultati delle ipotesi eseguite su campagne e consegne. Questo rapporto contiene gli indicatori calcolati dall&#39;ipotesi (per ulteriori informazioni, fare riferimento a [Indicatori](#indicators)).
 
-* **A livello** di campagna: fate clic sul **[!UICONTROL Reports]** collegamento della campagna in questione e selezionate la campagna **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l&#39;elenco delle consegne della campagna e le ipotesi calcolate per ogni consegna.
+* **A livello** di campagna: fate clic sul  **[!UICONTROL Reports]** collegamento della campagna interessata e selezionate la campagna  **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l&#39;elenco delle consegne della campagna e le ipotesi calcolate per ogni consegna.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **A livello** di consegna: per accedere al rapporto, apri il recapito interessato, fai clic sul pulsante **[!UICONTROL Reports]** nella **[!UICONTROL Summary]** scheda e seleziona il **[!UICONTROL Hypothesis report]**. Se per la stessa consegna sono state calcolate diverse ipotesi, la relazione conterrà tutte le ipotesi.
+* **A livello** di consegna: per accedere al rapporto, apri il recapito interessato, fai clic sul pulsante  **[!UICONTROL Reports]** nella  **[!UICONTROL Summary]** scheda e seleziona il  **[!UICONTROL Hypothesis report]**. Se per la stessa consegna sono state calcolate diverse ipotesi, la relazione conterrà tutte le ipotesi.
 
    ![](assets/response_hypothesis_delivery_report_001.png)
