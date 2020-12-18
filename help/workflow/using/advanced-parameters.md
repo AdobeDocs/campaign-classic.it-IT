@@ -17,17 +17,17 @@ ht-degree: 2%
 
 # Parametri avanzati{#advanced-parameters}
 
-La schermata delle proprietà di un&#39;attività dispone di una **[!UICONTROL Advanced]** scheda che consente di definire un comportamento in caso di errori, il periodo di esecuzione dell&#39;attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
+La schermata delle proprietà di un&#39;attività ha una scheda **[!UICONTROL Advanced]** che consente di definire un comportamento in caso di errori, il periodo di esecuzione dell&#39;attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
 
-* una versione semplificata (ad esempio per **[!UICONTROL Start]** e **[!UICONTROL End]** per le attività)
+* una versione semplificata (ad esempio per le attività **[!UICONTROL Start]** e **[!UICONTROL End]**)
 
    ![](assets/wf-advanced-basic.png)
 
-* una versione più dettagliata (ad esempio per l&#39; **[!UICONTROL Query]** attività)
+* una versione più dettagliata (ad esempio per l&#39;attività **[!UICONTROL Query]**)
 
    ![](assets/wf-advanced-full.png)
 
-I campi da inserire nella **[!UICONTROL Advanced]** scheda sono descritti in dettaglio nelle sezioni seguenti.
+I campi da inserire nella scheda **[!UICONTROL Advanced]** sono descritti in dettaglio nelle sezioni seguenti.
 
 ## Nome {#name}
 
@@ -35,7 +35,7 @@ Questo campo contiene il nome interno dell&#39;attività.
 
 ## Immagine {#image}
 
-Questo campo consente di modificare l&#39;immagine collegata a un&#39;attività. Per ulteriori informazioni, consulta: [Gestione delle immagini](../../workflow/using/managing-activity-images.md)dell&#39;attività.
+Questo campo consente di modificare l&#39;immagine collegata a un&#39;attività. Per ulteriori informazioni, consulta: [Gestione delle immagini dell&#39;attività](../../workflow/using/managing-activity-images.md).
 
 ## Esecuzione {#execution}
 
@@ -49,11 +49,11 @@ Queste opzioni sono generalmente selezionate nel carrello facendo clic con il pu
 
 ## Affinità {#affinity}
 
-Questo campo consente di forzare l&#39;esecuzione di un&#39;attività su un computer specifico. For more on this, refer to: [Managing propensity](../../workflow/using/managing-propensity.md).
+Questo campo consente di forzare l&#39;esecuzione di un&#39;attività su un computer specifico. Per ulteriori informazioni, consulta: [Gestione della propensione](../../workflow/using/managing-propensity.md).
 
 ## Max periodo di esecuzione {#max--execution-period}
 
-Questo campo consente di impostare un avviso per il momento in cui l&#39;attività richiede troppo tempo. Non influirà sul flusso di lavoro. Se l’attività non è finita al termine del **[!UICONTROL Max. execution period]** test, nella **[!UICONTROL Instance monitoring]** pagina verrà visualizzato un avviso per il flusso di lavoro. Questa pagina è accessibile dalla **[!UICONTROL Monitoring]** scheda della home page.
+Questo campo consente di impostare un avviso per il momento in cui l&#39;attività richiede troppo tempo. Non influirà sul flusso di lavoro. Se l&#39;attività non viene completata entro il momento in cui **[!UICONTROL Max. execution period]** è finita, la pagina **[!UICONTROL Instance monitoring]** visualizzerà un avviso per il flusso di lavoro. A questa pagina è possibile accedere tramite la scheda **[!UICONTROL Monitoring]** della home page.
 
 ## Comportamento {#behavior}
 
@@ -75,8 +75,8 @@ Questo campo consente di definire l&#39;azione da eseguire quando l&#39;attivit�
 
 ## Script di inizializzazione {#initialization-script}
 
-Questo campo consente di inizializzare le variabili o di modificare le proprietà dell&#39;attività. Per ulteriori informazioni, consulta: [Script e modelli](../../workflow/using/javascript-scripts-and-templates.md)JavaScript.
+Questo campo consente di inizializzare le variabili o di modificare le proprietà dell&#39;attività. Per ulteriori informazioni, consulta: [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
 
 ## Commento {#comment}
 
-Il **[!UICONTROL Comment]** campo è un campo gratuito che consente di aggiungere una descrizione.
+Il campo **[!UICONTROL Comment]** è un campo gratuito che consente di aggiungere una descrizione.
