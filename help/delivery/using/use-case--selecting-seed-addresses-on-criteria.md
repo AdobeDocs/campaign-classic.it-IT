@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri{#use-case-selecting-seed-addresses-on-criteria}
 
-Nel quadro di una consegna o di una campagna, il **[!UICONTROL Edit the dynamic condition...]** collegamento consente di scegliere gli indirizzi iniziali in base a criteri di selezione specifici.
+Nel quadro di una consegna o di una campagna, il collegamento **[!UICONTROL Edit the dynamic condition...]** consente di scegliere gli indirizzi iniziali in base a criteri di selezione specifici.
 
 In questo caso d&#39;uso, il sito **My online library** vorrebbe personalizzare le sue newsletter in base ai gusti letterari dei suoi clienti.
 
@@ -32,7 +32,7 @@ Per utilizzare la condizione dinamica, è necessario disporre di:
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti in dettaglio nella sezione [Creazione di una consegna](../../delivery/using/creating-an-email-delivery.md) e-mail.
+I passaggi per la creazione di una consegna sono descritti nella sezione [Creazione di una consegna per e-mail](../../delivery/using/creating-an-email-delivery.md).
 
 In questo esempio, il manager consegna ha creato la newsletter e selezionato i destinatari.
 
@@ -40,18 +40,18 @@ In questo esempio, il manager consegna ha creato la newsletter e selezionato i d
 
 ## Passaggio 2 - Creazione di un valore comune {#step-2---creating-a-common-value}
 
-Per creare un valore comune come quello nel nostro esempio (reparto Acquisti), è necessario innanzitutto estendere lo schema **** dati degli indirizzi iniziali e modificare il modulo di input associato.
+Per creare un valore comune come quello nel nostro esempio (reparto Acquisti), è necessario estendere il **schema di dati** degli indirizzi iniziali e modificare il modulo di input associato.
 
-### Estensione dello schema dati {#extending-the-data-schema}
+### Estensione dello schema di dati {#extending-the-data-schema}
 
-Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla](../../configuration/using/data-schemas.md)configurazione.
+Per ulteriori dettagli sulle estensioni dello schema, fare riferimento alla [Guida alla configurazione](../../configuration/using/data-schemas.md).
 
-1. Nel **[!UICONTROL Administration > Configuration > Data schemas]** nodo fare clic sull&#39; **[!UICONTROL New]** icona.
-1. Nella **[!UICONTROL Creation of a data schema]** finestra, selezionate l’ **[!UICONTROL Extension of a schema]** opzione e fate clic su **[!UICONTROL Next]**.
+1. Nel nodo **[!UICONTROL Administration > Configuration > Data schemas]** fare clic sull&#39;icona **[!UICONTROL New]**.
+1. Nella finestra **[!UICONTROL Creation of a data schema]**, selezionare l&#39;opzione **[!UICONTROL Extension of a schema]** e fare clic su **[!UICONTROL Next]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Selezionare lo schema di **[!UICONTROL Seed addresses]** origine, immettere **doc** come **[!UICONTROL Namespace]** e fare clic su **[!UICONTROL Ok]**.
+1. Selezionare lo schema di origine **[!UICONTROL Seed addresses]**, immettere **doc** come **[!UICONTROL Namespace]** e fare clic su **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
@@ -69,7 +69,7 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   Copiate quindi le seguenti righe e incollatele sotto l’ **[!UICONTROL Seed to insert in the export files]** elemento .
+   Copiate quindi le seguenti righe e incollatele sotto l&#39;elemento **[!UICONTROL Seed to insert in the export files]**.
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -78,14 +78,14 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   In questo caso, state specificando che una nuova enumerazione denominata **[!UICONTROL Department]** è stata creata nella tabella degli indirizzi iniziali, e si basa sul modello di **[!UICONTROL @company]** enumerazione standard (etichettata sotto il nome **Società** nel modulo dell&#39;indirizzo e-mail).
+   In questo caso, si sta specificando che una nuova enumerazione denominata **[!UICONTROL Department]** è stata creata nella tabella degli indirizzi iniziali, e si basa sul modello di enumerazione standard **[!UICONTROL @company]** (etichettato con il nome **Company** nel modulo degli indirizzi iniziali).
 
 1. Fai clic su **[!UICONTROL Save]**.
-1. In the **[!UICONTROL Tools > Advanced]** menu, select the **[!UICONTROL Update database structure]** option.
+1. Nel menu **[!UICONTROL Tools > Advanced]**, selezionare l&#39;opzione **[!UICONTROL Update database structure]**.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. Quando viene visualizzata la procedura guidata di aggiornamento, fare clic sul **[!UICONTROL Next]** pulsante per accedere alla finestra Modifica tabelle: le modifiche effettuate nello schema di dati dell&#39;indirizzo di base richiedono un aggiornamento della struttura.
+1. Quando viene visualizzata la procedura guidata di aggiornamento, fate clic sul pulsante **[!UICONTROL Next]** per accedere alla finestra Modifica tabelle: le modifiche effettuate nello schema di dati dell&#39;indirizzo di base richiedono un aggiornamento della struttura.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
@@ -95,17 +95,17 @@ Per ulteriori dettagli sulle estensioni dello schema, consultare la guida [alla]
 
    Al termine dell&#39;aggiornamento, è possibile chiudere la procedura guidata.
 
-1. Disconnettetevi quindi di nuovo a  Adobe Campaign. Le modifiche apportate nello schema di dati dell&#39;indirizzo di base ora sono effettive. Affinché siano visibili dalla schermata dell&#39;indirizzo di base, è necessario aggiornare il relativo **[!UICONTROL Input form]**. Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-form) di input.
+1. Disconnettetevi quindi di nuovo a  Adobe Campaign. Le modifiche apportate nello schema di dati dell&#39;indirizzo di base ora sono effettive. Affinché siano visibili dalla schermata dell&#39;indirizzo di base, è necessario aggiornare la **[!UICONTROL Input form]** associata. Fare riferimento alla sezione [Aggiornamento del modulo di input](#updating-the-input-form).
 
 #### Estensione dello schema di dati da una tabella collegata {#extending-the-data-schema-from-a-linked-table}
 
 Lo schema di dati degli indirizzi iniziali può utilizzare valori provenienti da una tabella collegata allo schema di dati del destinatario - Recipient (nms).
 
-Ad esempio, l&#39;utente desidera integrare il contenuto **[!UICONTROL Internet Extension]** trovato nella **[!UICONTROL Country]** tabella collegata allo schema destinatari.
+Ad esempio, l&#39;utente desidera integrare la **[!UICONTROL Internet Extension]** trovata nella tabella **[!UICONTROL Country]** collegata allo schema dei destinatari.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-Devono pertanto estendere lo schema di dati degli indirizzi iniziali come descritto nella sezione. Tuttavia, le righe di codice da integrare al **punto 4** sono le seguenti:
+Devono pertanto estendere lo schema di dati degli indirizzi iniziali come descritto nella sezione. Tuttavia, le righe di codice da integrare al **passaggio 4** sono le seguenti:
 
 ```
 <element name="country">
@@ -118,28 +118,28 @@ Devono pertanto estendere lo schema di dati degli indirizzi iniziali come descri
 
 Esse indicano:
 
-* che l&#39;utente desidera creare un nuovo elemento denominato **[!UICONTROL Internet Extension]**,
-* che questo elemento proviene dalla **[!UICONTROL Country]** tabella.
+* che l&#39;utente desideri creare un nuovo elemento denominato **[!UICONTROL Internet Extension]**,
+* che questo elemento proviene dalla tabella **[!UICONTROL Country]**.
 
 >[!CAUTION]
 >
->Nel nome della tabella collegata, è necessario specificare l&#39; **xpath-dst** di tale tabella collegata.
+>Nel nome della tabella collegata, è necessario specificare la **xpath-dst** di tale tabella collegata.
 >
->Questo si trova nell&#39; **[!UICONTROL Country]** elemento nella tabella dei destinatari.
+>Questo si trova nell&#39;elemento **[!UICONTROL Country]** nella tabella dei destinatari.
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-L&#39;utente può quindi seguire il **passaggio 5** della sezione e aggiornare gli indirizzi **[!UICONTROL Input form]** di base.
+L&#39;utente può quindi seguire il **passaggio 5** della sezione e aggiornare gli **[!UICONTROL Input form]** degli indirizzi iniziali.
 
-Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-form) di input.
+Fare riferimento alla sezione [Aggiornamento del modulo di input](#updating-the-input-form).
 
 #### Aggiornamento del modulo di input {#updating-the-input-form}
 
-1. Nel **[!UICONTROL Administration > Configuration > Input forms]** nodo, individuare il modulo di immissione degli indirizzi iniziali.
+1. Nel nodo **[!UICONTROL Administration > Configuration > Input forms]**, individuare il modulo di immissione degli indirizzi iniziali.
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. Modificare il modulo e inserire la riga seguente nel **[!UICONTROL Recipient]** contenitore.
+1. Modificare il modulo e inserire la riga seguente nel contenitore **[!UICONTROL Recipient]**.
 
    ```
    <input xpath="@workField"/>
@@ -148,11 +148,11 @@ Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-for
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Salva le modifiche.
-1. Aprite un indirizzo seed. Il **[!UICONTROL Department]** campo viene visualizzato nella **[!UICONTROL Recipient]** tabella.
+1. Aprite un indirizzo seed. Il campo **[!UICONTROL Department]** viene visualizzato nella tabella **[!UICONTROL Recipient]**.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. Modificate gli indirizzi iniziali che desiderate utilizzare per la consegna e immettete **Purchasing** come valore nel **[!UICONTROL Department]** campo.
+1. Modificate gli indirizzi iniziali che desiderate utilizzare per la consegna e immettete **Purchasing** come valore nel campo **[!UICONTROL Department]**.
 
 ## Passaggio 3 - Definizione della condizione {#step-3---defining-the-condition}
 
@@ -162,36 +162,36 @@ Fare riferimento alla sezione [Aggiornamento del modulo](#updating-the-input-for
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. Fai clic sul **[!UICONTROL To]** collegamento, quindi sulla **[!UICONTROL Seed addresses]** scheda per accedere al **[!UICONTROL Edit the dynamic condition...]** collegamento.
+1. Fare clic sul collegamento **[!UICONTROL To]**, quindi sulla scheda **[!UICONTROL Seed addresses]** per accedere al collegamento **[!UICONTROL Edit the dynamic condition...]**.
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Selezionare l&#39;espressione che consente di scegliere gli indirizzi iniziali desiderati. Qui l&#39;utente seleziona l&#39; **[!UICONTROL Department (@workField)]** espressione.
+1. Selezionare l&#39;espressione che consente di scegliere gli indirizzi iniziali desiderati. Qui l&#39;utente seleziona l&#39;espressione **[!UICONTROL Department (@workField)]**.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
-1. Selezionare il valore desiderato. In questo esempio l&#39;utente seleziona il reparto **Acquisti** dall&#39;elenco a discesa dei valori.
+1. Selezionare il valore desiderato. In questo esempio l&#39;utente seleziona il reparto **Purchasing** dall&#39;elenco a discesa dei valori.
 
    ![](assets/dlv_seeds_usecase_17.png)
 
    >[!NOTE]
    >
-   >L&#39;estensione dello schema creata in precedenza proviene dallo schema **destinatario** . I valori visualizzati sullo schermo sopra provengono da un&#39;enumerazione dello schema **destinatario** .
+   >L&#39;estensione dello schema creata in precedenza proviene dallo schema **destinatario**. I valori visualizzati nella schermata qui sopra provengono da un&#39;enumerazione dello schema **destinatario**.
 
 1. Fai clic su **[!UICONTROL Ok]**.
 
-   La query viene visualizzata nella **[!UICONTROL Select target]** finestra.
+   La query viene visualizzata nella finestra **[!UICONTROL Select target]**.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Click **[!UICONTROL Ok]** to approve the query.
-1. Analizza la consegna, quindi fai clic sulla **[!UICONTROL Delivery]** scheda per accedere ai log di consegna.
+1. Fare clic su **[!UICONTROL Ok]** per approvare la query.
+1. Analizzare la consegna, quindi fare clic sulla scheda **[!UICONTROL Delivery]** per accedere ai log di consegna.
 
    Gli indirizzi iniziali del reparto acquisti vengono visualizzati come consegna in sospeso, come quelli dei destinatari o di altri indirizzi iniziali.
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Click the **[!UICONTROL Send]** button to start the delivery.
+1. Fare clic sul pulsante **[!UICONTROL Send]** per avviare la consegna.
 
    I membri del reparto acquisti fanno parte dei vostri indirizzi di base che riceveranno la consegna nella loro casella in entrata e-mail.
 
