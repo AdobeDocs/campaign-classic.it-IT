@@ -19,13 +19,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione Modelli [di](../../installation/using/hosting-models.md) hosting o a [questa pagina](../../installation/using/capability-matrix.md).
+>Le configurazioni lato server possono essere eseguite solo da  Adobe per le distribuzioni ospitate da  Adobe. Per ulteriori informazioni sulle diverse distribuzioni, fare riferimento alla sezione [Modelli di hosting](../../installation/using/hosting-models.md) o a [questa pagina](../../installation/using/capability-matrix.md).
 
-## Procedura guidata di distribuzione {#deployment-wizard}
+## Installazione guidata {#deployment-wizard}
 
 Una procedura guidata grafica, disponibile nella  console client Adobe Campaign, consente di definire i parametri dell’istanza a cui si desidera connettersi.
 
-Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Implementazione guidata**.
+Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Procedura guidata di distribuzione**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -53,7 +53,7 @@ La sezione inferiore della finestra consente di selezionare le opzioni da attiva
 
 * **[!UICONTROL Customer identifier used in billing]** : può essere il nome dell&#39;istanza e il numero di versione.
 * **[!UICONTROL Common name of the customer]** : Immettere una stringa di caratteri con il nome della società. Queste informazioni possono essere utilizzate nei collegamenti di annullamento dell&#39;iscrizione.
-* **[!UICONTROL Namespace]** : Inserite un identificatore breve in caratteri minuscoli. L&#39;obiettivo è quello di distinguere tra la configurazione specifica e la configurazione di fabbrica in caso di aggiornamento. Lo spazio dei nomi predefinito è **incentrato** - per il cliente.
+* **[!UICONTROL Namespace]** : Inserite un identificatore breve in caratteri minuscoli. L&#39;obiettivo è quello di distinguere tra la configurazione specifica e la configurazione di fabbrica in caso di aggiornamento. Lo spazio dei nomi predefinito è **cus** - per il cliente.
 
 ### Opzioni tecniche {#technical-options}
 
@@ -61,10 +61,10 @@ La sezione inferiore della finestra consente di selezionare le opzioni da attiva
 
 Sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Email channel]** : per attivare la consegna tramite e-mail. Fate riferimento ai parametri [del canale](#email-channel-parameters)e-mail.
-* **[!UICONTROL Tracking]** : Per abilitare il tracciamento della popolazione di destinazione (aperture e clic). Fare riferimento alla configurazione [](#tracking-configuration)Tracciamento.
-* **[!UICONTROL Managing bounced emails]** : Per definire l&#39;account POP utilizzato per recuperare la posta elettronica in arrivo. Fate riferimento a [Gestione delle e-mail](#managing-bounced-emails)rimbalzate.
-* **[!UICONTROL LDAP integration]** : Per configurare l’autenticazione utente tramite una directory LDAP. Fate riferimento a [Connessione mediante LDAP](../../installation/using/connecting-through-ldap.md).
+* **[!UICONTROL Email channel]** : per attivare la consegna tramite e-mail. Fare riferimento a [Parametri del canale e-mail](#email-channel-parameters).
+* **[!UICONTROL Tracking]** : Per abilitare il tracciamento della popolazione di destinazione (aperture e clic). Fare riferimento a [Configurazione tracciamento](#tracking-configuration).
+* **[!UICONTROL Managing bounced emails]** : Per definire l&#39;account POP utilizzato per recuperare la posta elettronica in arrivo. Fare riferimento a [Gestione delle e-mail rimbalzate](#managing-bounced-emails).
+* **[!UICONTROL LDAP integration]** : Per configurare l’autenticazione utente tramite una directory LDAP. Fare riferimento a [Connessione tramite LDAP](../../installation/using/connecting-through-ldap.md).
 
 ## Parametri del canale e-mail {#email-channel-parameters}
 
@@ -80,11 +80,11 @@ Indicate i seguenti parametri:
 
 * **[!UICONTROL Sender name]** : Nome del mittente,
 * **[!UICONTROL Sender address]** : L&#39;indirizzo del mittente,
-* **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
-* **[!UICONTROL Reply address]** : L&#39;indirizzo e-mail da utilizzare quando il destinatario fa clic sul **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
+* **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul  **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
+* **[!UICONTROL Reply address]** : L&#39;indirizzo e-mail da utilizzare quando il destinatario fa clic sul  **[!UICONTROL Reply]** pulsante nel software client di posta elettronica,
 * **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Questo è l&#39;indirizzo tecnico utilizzato per gestire i messaggi di rimbalzo, comprese le e-mail ricevute dal server Adobe Campaign  a causa di indirizzi di destinazione inesistenti.
 
-Inoltre, potete specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando una virgola. Questa configurazione è facoltativa. Quando si immettono i campi,  Adobe Campaign verifica al momento della consegna (durante l&#39;analisi, se l&#39;indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
+Inoltre, è possibile specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando una virgola. Questa configurazione è facoltativa. Quando si immettono i campi,  Adobe Campaign verifica al momento della consegna (durante l&#39;analisi, se l&#39;indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
 
 ### Caratteri autorizzati negli indirizzi {#characters-authorized-in-addresses}
 
@@ -94,11 +94,11 @@ Nel database Adobe Campaign , tutti gli indirizzi e-mail devono essere creati co
 
 È possibile definire qui i caratteri autorizzati (&#39;criteri dati&#39;) nel campo e-mail del database. I caratteri non inclusi nell&#39;elenco saranno vietati e quindi rifiutati quando si immettono informazioni nel database tramite l&#39;interfaccia, tramite un modulo Web e si importano anche dati.
 
-Sono disponibili due elenchi: **Solo** europea o solo **** USA. Se necessario, è possibile aggiungere altri caratteri.
+Sono disponibili due elenchi: **Solo europeo** o solo **US**. Se necessario, è possibile aggiungere altri caratteri.
 
 ### Parametri di consegna {#delivery-parameters}
 
-Parametri **avanzati...** collegamento consente di accedere alle opzioni di consegna, ai parametri collegati a tentativi e quarantena.
+I **parametri avanzati...Il collegamento** consente di accedere alle opzioni di consegna, ai parametri collegati a tentativi e quarantena.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -113,9 +113,9 @@ Sono disponibili le seguenti opzioni:
 
 ### Parametri del tentativo {#retry-parameters}
 
-Le informazioni sui recuperi sono fornite nei campi **Recupero** e **Numero di recuperi** : quando un destinatario non è raggiungibile, ad esempio se la propria inbox è piena, per impostazione predefinita il programma tenta di contattarli 5 volte, con un intervallo di un&#39;ora tra ogni tentativo (durante il tempo di consegna massimo). Questi valori possono essere modificati in base alle vostre esigenze.
+Le informazioni sui recuperi sono fornite nei campi **Periodi di recupero** e **Numero di recuperi**: quando un destinatario non è raggiungibile, ad esempio se la propria inbox è piena, per impostazione predefinita il programma tenta di contattarli 5 volte, con un intervallo di un&#39;ora tra ogni tentativo (durante il tempo di consegna massimo). Questi valori possono essere modificati in base alle vostre esigenze.
 
-### Quarantine parameters {#quarantine-parameters}
+### Parametri di quarantena {#quarantine-parameters}
 
 Le opzioni di configurazione per le quarantena sono le seguenti:
 
@@ -126,7 +126,7 @@ Le opzioni di configurazione per le quarantena sono le seguenti:
 
 Bounce mail è estremamente importante per qualificare gli errori di consegna. Questi errori vengono classificati nella NP@I dopo che le regole ne hanno determinato la causa.
 
-Questo passaggio è disponibile solo se nel primo passaggio della procedura guidata di distribuzione sono selezionate le opzioni di gestione della posta **e del canale** e-mail e **** rimbalzo. Fare riferimento ai parametri [](#general-parameters)generali.
+Questo passaggio è disponibile solo se le opzioni di gestione **Canale e-mail** e **Bounce mail** sono selezionate nella prima fase della procedura guidata di distribuzione. Fare riferimento a [Parametri generali](#general-parameters).
 
 Questa fase consente di definire le impostazioni per la gestione dei messaggi di rimbalzo.
 
@@ -138,16 +138,16 @@ Indicate i parametri per la connessione all&#39;account per il recupero delle e-
 
 * **[!UICONTROL Label]** : Nome che include tutti i parametri indicati di seguito,
 * **[!UICONTROL Server]** : Server utilizzato per recuperare la posta indesiderata (posta in arrivo),
-* **[!UICONTROL Security]** : Se necessario, selezionate **[!UICONTROL SSL]** dall&#39;elenco a discesa,
+* **[!UICONTROL Security]** : Se necessario, selezionare  **[!UICONTROL SSL]** dall&#39;elenco a discesa,
 * **[!UICONTROL Port]** : porta del server (generalmente 110),
 * **[!UICONTROL Account]** : Nome dell’account utilizzato per la posta indesiderata,
 * **[!UICONTROL Password]** : Password associata all&#39;account.
 
-Una volta specificate le impostazioni POP, fate clic su **Test** per verificare che siano corrette.
+Una volta specificate le impostazioni POP, fare clic su **Test** per verificare che siano corrette.
 
 ### Messaggi di rimbalzo non elaborati {#unprocessed-bounce-mails}
 
-Gli avvisi vengono gestiti automaticamente da  Adobe Campaign, applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non risultati finali > Qualificazione** del registro di consegna. Per ulteriori informazioni, consultare Gestione [della posta](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)rimbalzata.
+I budget vengono gestiti automaticamente da  Adobe Campaign, applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non consegnabili > Qualifica del registro di consegna**. Per ulteriori informazioni, fare riferimento a [Gestione della posta da rimbalzo](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia  Adobe Campaign. Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i seguenti campi:
 
@@ -157,15 +157,15 @@ I rimbalzi non elaborati non vengono visualizzati nell&#39;interfaccia  Adobe Ca
 
 >[!IMPORTANT]
 >
->Per inoltrare le e-mail di rimbalzo non elaborate,  Adobe consiglia di compilare solo il **[!UICONTROL Address for errors]** campo. Tuttavia, assicurarsi che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe mettere un carico pesante sul server di posta. Per ulteriori informazioni, contattate il vostro responsabile commerciale.
+>Per inoltrare le e-mail di rimbalzo non elaborate,  Adobe consiglia di compilare solo il campo **[!UICONTROL Address for errors]**. Tuttavia, assicurarsi che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe mettere un carico pesante sul server di posta. Per ulteriori informazioni, contattate il vostro responsabile commerciale.
 
-## Monitoraggio della configurazione {#tracking-configuration}
+## Configurazione tracciamento {#tracking-configuration}
 
 Il passaggio successivo consente di configurare il tracciamento per l’istanza. L’istanza deve essere dichiarata e registrata con i server di tracciamento.
 
-Questo passaggio è disponibile solo quando le opzioni Canale **e-** mail e **Tracciamento** sono selezionate nella prima pagina della procedura guidata di distribuzione. Fare riferimento ai parametri [](#general-parameters)generali.
+Questo passaggio è disponibile solo quando le opzioni **Canale e-mail** e **Tracciamento** sono selezionate nella prima pagina della procedura guidata di distribuzione. Fare riferimento a [Parametri generali](#general-parameters).
 
-Per informazioni più dettagliate sul tracciamento Web (modalità di tracciamento, creazione e inserimento di tag...), consultate [questo documento](../../configuration/using/about-web-tracking.md).
+Per informazioni più dettagliate sul tracciamento Web (modalità di tracciamento, creazione e inserimento di tag...), consultare [questo documento](../../configuration/using/about-web-tracking.md).
 
 ### Principio di funzionamento {#operating-principle}
 
@@ -177,11 +177,11 @@ Quando si attiva il tracciamento su un&#39;istanza, gli URL nelle consegne vengo
 
    Le informazioni sugli URL interni vengono utilizzate solo dal server applicazione Adobe Campaign  per contattare i server di tracciamento.
 
-   For more on this, refer to [Tracking server](#tracking-server).
+   Per ulteriori informazioni, vedere [Server di tracciamento](#tracking-server).
 
 * Una volta configurati gli URL, è necessario abilitare il tracciamento. A questo scopo, l’istanza deve essere registrata sui server di tracciamento.
 
-   For more on this, refer to [Saving tracking](#saving-tracking).
+   Per ulteriori informazioni, vedere [Salvataggio del tracciamento](#saving-tracking).
 
 ### Server di tracciamento {#tracking-server}
 
@@ -190,19 +190,19 @@ Quando si attiva il tracciamento su un&#39;istanza, gli URL nelle consegne vengo
 Per garantire l&#39;efficienza del tracciamento su questo caso, devono essere visualizzate le seguenti informazioni:
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
-* **[!UICONTROL External URL]** e/o **[!UICONTROL Secure external URL]** : Immettete l’URL di reindirizzamento da utilizzare nell’e-mail da inviare.
+* **[!UICONTROL External URL]** e/o  **[!UICONTROL Secure external URL]** : Immettete l’URL di reindirizzamento da utilizzare nell’e-mail da inviare.
 * **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server Adobe Campaign  per contattare i server di tracciamento per raccogliere i registri e caricare gli URL. Non è necessario associarlo all&#39;istanza.
 
    Se non specificate un URL, per impostazione predefinita verrà utilizzato l’URL di tracciamento.
 
 Con l&#39;architettura mid-sourcing, puoi esternalizzare la gestione del tracciamento. Per eseguire questa operazione:
 
-1. Selezionate l’opzione **[!UICONTROL Externalize tracking management]** : questo consente di utilizzare un server di mid-sourcing come server di tracciamento.
+1. Selezionare l&#39;opzione **[!UICONTROL Externalize tracking management]** : questo consente di utilizzare un server di mid-sourcing come server di tracciamento.
 1. Compilare i campi **[!UICONTROL External account]** e **[!UICONTROL Instance name]** per collegarsi al server di mid-sourcing.
 
-   Per ulteriori informazioni, fare riferimento al server [](../../installation/using/mid-sourcing-server.md)mid-sourcing.
+   Per ulteriori informazioni, fare riferimento a [Server mid-sourcing](../../installation/using/mid-sourcing-server.md).
 
-1. Fare clic sul **[!UICONTROL Enable the tracking instance]** pulsante per approvare la connessione al server.
+1. Fare clic sul pulsante **[!UICONTROL Enable the tracking instance]** per approvare la connessione al server.
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
@@ -210,7 +210,7 @@ Con l&#39;architettura mid-sourcing, puoi esternalizzare la gestione del traccia
 
 Dopo aver popolato gli URL, è necessario registrare il server di tracciamento.
 
-Fai clic sul collegamento **Registrazione sui server di tracciamento** e seleziona una delle opzioni disponibili.
+Fare clic sul collegamento **Registrazione sui server di tracciamento**, quindi selezionare una delle opzioni disponibili.
 
 ![](assets/s_ncs_install_deployment_wiz_09.png)
 
@@ -222,7 +222,7 @@ Esistono tre possibili tipi di architettura per implementare il tracciamento:
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
-   Per configurare l’istanza di tracciamento, immettete la password per l’account **interno** nei server di reindirizzamento.
+   Per configurare l&#39;istanza di tracciamento, immettete la password per l&#39;account **internal** nei server di reindirizzamento.
 
    >[!NOTE]
    >
@@ -236,7 +236,7 @@ Esistono tre possibili tipi di architettura per implementare il tracciamento:
 
    ![](assets/s_ncs_install_deployment_wiz_10.png)
 
-   Per configurare l’istanza di tracciamento, immettete la password per l’account **interno** nei server di reindirizzamento.
+   Per configurare l&#39;istanza di tracciamento, immettete la password per l&#39;account **internal** nei server di reindirizzamento.
 
    >[!NOTE]
    >
@@ -246,7 +246,7 @@ Esistono tre possibili tipi di architettura per implementare il tracciamento:
 
 1. **Convalida di un’istanza di tracciamento già preconfigurata**
 
-   Questa opzione viene utilizzata quando non si dispone della password per l&#39;account **interno** ; In questo caso, un account di tracciamento è preconfigurato nei server di tracciamento. Immettere la password dell&#39;account di tracciamento dei server di reindirizzamento per convalidare l&#39;istanza di tracciamento.
+   Questa opzione è utilizzata quando non si dispone della password per l&#39;account **interno**; In questo caso, un account di tracciamento è preconfigurato nei server di tracciamento. Immettere la password dell&#39;account di tracciamento dei server di reindirizzamento per convalidare l&#39;istanza di tracciamento.
 
    ![](assets/s_ncs_install_deployment_wiz_17.png)
 
@@ -258,7 +258,7 @@ Nella finestra precedente, un messaggio conferma la registrazione a livello di s
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-I parametri collegati alle ricerche URL non **devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contattare  Adobe.
+I parametri collegati alle ricerche URL **non devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contattare  Adobe.
 
 ## Parametri del canale mobile {#mobile-channel-parameters}
 
@@ -275,19 +275,19 @@ Il passaggio successivo ti consente di definire le impostazioni predefinite per 
 Inserite le seguenti informazioni:
 
 * **[!UICONTROL Label]** : Immettete un nome per questo account push SMS/Wap. Ad esempio, è possibile utilizzare il nome del router.
-* Per i **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** campi: Contattate il fornitore del servizio per conoscere le impostazioni richieste.
+* Per i campi **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]**: Contattate il fornitore del servizio per conoscere le impostazioni richieste.
 
 ### Parametri di SMS inviati {#parameters-of-sms-sent}
 
-Nell&#39;elenco a discesa **Priorità** : Selezionare &quot;Normal&quot;, &quot;High&quot; o &quot;Urgente&quot; per applicarlo ai messaggi da inviare.
+Nell&#39;elenco a discesa **Priorità**: Selezionare &quot;Normal&quot;, &quot;High&quot; o &quot;Urgente&quot; per applicarlo ai messaggi da inviare.
 
 ### Parametri avanzati {#advanced-parameters}
 
-Parametri **avanzati...** il collegamento consente di accedere alle opzioni relative a tentativi e quarantena.
+I **parametri avanzati...Il collegamento** consente di accedere alle opzioni relative a tentativi e quarantena.
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
-Le informazioni sui tentativi sono disponibili nei campi **Periodo di tentativi** e **Numero di tentativi** : Quando un dispositivo mobile non è raggiungibile, per impostazione predefinita il programma riproverà 5 volte a intervalli di almeno 15 minuti (per il periodo di consegna massimo). Questi valori possono essere adattati alle vostre esigenze.
+Le informazioni sui tentativi sono disponibili nei campi **Periodo di tentativi** e **Numero di tentativi**: Quando un dispositivo mobile non è raggiungibile, per impostazione predefinita il programma riproverà 5 volte a intervalli di almeno 15 minuti (per il periodo di consegna massimo). Questi valori possono essere adattati alle vostre esigenze.
 
 Le opzioni di configurazione per le quarantena sono le seguenti:
 
@@ -301,7 +301,7 @@ Questa fase consente di includere le preferenze per i criteri dei dati.
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
 * **[!UICONTROL Consider all phone numbers as international ones]** : Quando questa opzione è selezionata, l&#39;applicazione applica il formato internazionale ai numeri di telefono (il prefisso del paese è quindi obbligatorio perché il numero di cifre non sarà controllato prima di applicare la formattazione). Se questa opzione non è selezionata, è necessario preassegnare il numero di telefono internazionale con &quot;+&quot; o &quot;00&quot;.
-* **[!UICONTROL Store all phone numbers using the international format]** : Questa opzione riguarda solo i numeri di telefono **domestici** importati o modificati. Specificate se desiderate utilizzare un formato domestico (ad esempio 425 555 0150) o internazionale (ad esempio +1 425 555 0150)
+* **[!UICONTROL Store all phone numbers using the international format]** : Questa opzione riguarda solo i numeri di telefono  **** domestici importati o modificati. Specificate se desiderate utilizzare un formato domestico (ad esempio 425 555 0150) o internazionale (ad esempio +1 425 555 0150)
 
 ## Accesso da Internet {#access-from-the-internet}
 
@@ -339,11 +339,11 @@ Per essere visualizzate dall&#39;esterno, le immagini utilizzate nelle e-mail e 
 
 Per questo passaggio, dovete immettere:
 
-1. Il nuovo URL della risorsa pubblica. Per ulteriori informazioni, consultate la sezione URL [risorse](#public-resources-url) pubbliche.
-1. Modalità di rilevamento delle immagini in una distribuzione. Per ulteriori informazioni, consulta la sezione Rilevamento [immagini](#delivery-image-detection) consegna.
-1. Opzioni di pubblicazione. For more information, refer to the [Publication modes](#publication-modes) section.
+1. Il nuovo URL della risorsa pubblica. Per ulteriori informazioni, consultare la sezione [URL risorse pubbliche](#public-resources-url).
+1. Modalità di rilevamento delle immagini in una distribuzione. Per ulteriori informazioni, consultare la sezione [Rilevamento delle immagini di consegna](#delivery-image-detection).
+1. Opzioni di pubblicazione. Per ulteriori informazioni, consultare la sezione [Modalità di pubblicazione](#publication-modes).
 
-Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > Online > Risorse** pubbliche della struttura di Adobe Campaign . Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
+Le risorse pubbliche sono accessibili tramite il nodo **Amministrazione > Risorse > In linea > Risorse pubbliche** della struttura di Adobe Campaign . Vengono raccolti in una libreria e possono essere inclusi nelle e-mail, ma anche utilizzati in campagne o attività e nella gestione dei contenuti.
 
 ![](assets/install_pub_resources_view.png)
 
@@ -353,17 +353,17 @@ Il primo campo consente di specificare l’inizio dell’URL utilizzato per le r
 
 In una distribuzione, potete utilizzare le immagini memorizzate nella libreria delle risorse pubbliche o in qualsiasi altra immagine o immagine locale memorizzata in un server.
 
-* Per le immagini e-mail, l’URL **https://** server **/res/img** .
+* Per le immagini e-mail, l&#39;URL **https://** server **/res/img**.
 
    Questo valore può essere ignorato per ogni consegna.
 
-* Per le risorse pubbliche, l’URL **https://** server **/res/** instance ****in cui **instance**è il nome dell’istanza di tracciamento.
+* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** instance ****in cui **instance**è il nome dell&#39;istanza di tracciamento.
 
 ### Rilevamento delle immagini di distribuzione {#delivery-image-detection}
 
 In una distribuzione, potete utilizzare le immagini memorizzate nella libreria delle risorse pubbliche o in qualsiasi altra immagine o immagine locale memorizzata in un server.
 
-Le maschere **** URL dei campi consentono di specificare l’elenco di maschere URL da ignorare durante il caricamento automatico delle immagini. Ad esempio, se utilizzate immagini memorizzate in un sito accessibile dall’esterno, in particolare su un sito Internet, potete inserire l’URL del sito in questo campo.
+Il campo **Maschere URL** consente di specificare l&#39;elenco di maschere URL da ignorare durante il caricamento automatico delle immagini. Ad esempio, se utilizzate immagini memorizzate in un sito accessibile dall’esterno, in particolare su un sito Internet, potete inserire l’URL del sito in questo campo.
 
 ![](assets/s_ncs_install_deployment_wiz_img_mask.png)
 
@@ -380,7 +380,7 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
 * Server di monitoraggio
 
-   Le risorse verranno automaticamente copiate sui diversi server di tracciamento. Sono configurati nella configurazione [step](#tracking-configuration)Tracking.
+   Le risorse verranno automaticamente copiate sui diversi server di tracciamento. Sono configurati nel passaggio [Configurazione tracciamento](#tracking-configuration).
 
 * Altri server Adobe Campaign 
 
@@ -394,7 +394,7 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
    Quindi immettete la password.
 
-   I parametri dei server dedicati sono indicati nei **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]** campi.
+   I parametri del server dedicato sono indicati nei campi **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]**.
 
    ![](assets/s_ncs_install_images_upload_b.png)
 
@@ -417,17 +417,17 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
 Per le immagini, devono essere copiate dalla cartella &quot;immagini&quot; specificata tramite l&#39;opzione **NmsDelivery_ImageSubDirectory** su uno o più server frontali. Tali server memorizzeranno le immagini per renderle accessibili tramite il nuovo URL configurato.
 
-In caso di pubblicazione su un server Adobe Campaign  senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nel `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
+In caso di pubblicazione su un server Adobe Campaign  senza uno script di pubblicazione manuale, per impostazione predefinita le immagini di una distribuzione vengono memorizzate nella cartella `$(XTK_INSTALL_DIR)/var/res/img/ directory`. L’URL corrispondente è il seguente: **`https://server/res/img`**.
 
-`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. L’URL corrispondente è il seguente: **`https://server/res/instance`** dove instance è il nome dell’istanza di tracciamento.
+`XTK_INSTALL_DIR)/var/res/$(INSTANCE_NAME)`. L’URL corrispondente è il seguente: **`https://server/res/instance`** dove instance è il nome dell&#39;istanza di tracciamento.
 
 >[!NOTE]
 >
->È possibile modificare la directory di memorizzazione delle risorse pubbliche. Per ulteriori informazioni, vedere [Gestione delle risorse](#managing-public-resources)pubbliche.
+>È possibile modificare la directory di memorizzazione delle risorse pubbliche. Per ulteriori informazioni, vedere [Gestione delle risorse pubbliche](#managing-public-resources).
 
 ### Sincronizzazione delle risorse pubbliche {#synchronizing-public-resources}
 
-Questa funzionalità consente di **sincronizzare le risorse** pubbliche su più server di riserva.
+Questa funzionalità consente di **sincronizzare risorse pubbliche** su più server di riserva.
 
 Se una risorsa pubblica non è presente sul server di tracciamento o se la risorsa restituisce un errore 404, il server di tracciamento tenterà di trovare la risorsa su uno dei server di riserva.
 
@@ -443,7 +443,7 @@ La dichiarazione e la configurazione dei server di riserva devono essere eseguit
 
 **Configurazione**
 
-Per ogni risorsa pubblica che deve essere sincronizzata, è necessario aggiungere un attributo di stato all&#39; `<url>` elemento nella `<relay>` parte:
+Per ogni risorsa pubblica che deve essere sincronizzata, è necessario aggiungere un attributo di stato all&#39;elemento `<url>` nella parte `<relay>`:
 
 L&#39;attributo status può essere uno dei tre valori seguenti:
 
@@ -451,7 +451,7 @@ L&#39;attributo status può essere uno dei tre valori seguenti:
 
 * normal: Comportamento esistente (senza sincronizzazione)
 
-* blacklist: L’URL viene aggiunto al elenco Bloccati se restituisce un errore 404. La durata (in secondi) dell’URL che si trova nel elenco Bloccati è definita da un attributo di **timeout** il cui valore predefinito è 60 s.
+* blacklist: L’URL viene aggiunto al elenco Bloccati se restituisce un errore 404. La durata (in secondi) dell&#39;URL visualizzato nel elenco Bloccati è definita da un attributo **timeout** il cui valore predefinito è 60 s.
 
 La configurazione out-of-the-box della sincronizzazione è:
 
@@ -493,4 +493,4 @@ L’ultima fase della procedura guidata di distribuzione consente di configurare
 
 ![](assets/s_ncs_install_deployment_wiz_16.png)
 
-I dati vengono eliminati automaticamente tramite il flusso di lavoro di pulizia del database. Per ulteriori informazioni su come configurare e utilizzare questo flusso di lavoro e sui dettagli degli elementi eliminati, consulta questo [documento](../../production/using/database-cleanup-workflow.md).
+I dati vengono eliminati automaticamente tramite il flusso di lavoro di pulizia del database. Per ulteriori informazioni su come configurare e utilizzare questo flusso di lavoro e sui dettagli degli elementi eliminati, fare riferimento a questo [documento](../../production/using/database-cleanup-workflow.md).
