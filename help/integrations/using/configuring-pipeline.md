@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '909'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 Prima di avviare la configurazione, verificare che:
 
-*  rilascio minimo di Adobe Campaign 20.3
+*  rilascio minimo di Adobe Campaign 20.3 o Gold Standard 11
 *  versione Adobe Analytics Standard
 
 Sarà inoltre necessario:
