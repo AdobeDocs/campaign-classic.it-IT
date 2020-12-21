@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 100%
@@ -32,7 +32,7 @@ _11 settembre 2020_
 * È stata corretta una regressione che causava un avvio errato del modulo nlserver (log degli errori) durante il post-aggiornamento.
 * È stata migliorata la gestione degli aggiornamenti per la memoria condivisa. I passaggi aggiuntivi richiesti nella 20.2 non sono più necessari.
 
-## ![](assets/do-not-localize/orange_2.png) Versione 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/red_2.png) Versione 20.2.2 - Build 9180 {#release-20-2-2-build-9180}
 
 _22 luglio 2020_
 
@@ -57,7 +57,7 @@ _22 luglio 2020_
 
 ![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/orange_2.png) Versione 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/red_2.png) Versione 20.2.1 - Build 9178 {#release-20-2-1-build-9178}
 
 _8 giugno 2020_
 
