@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
@@ -78,7 +78,7 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 * È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema di regressione minore nei log del flusso di lavoro di pulizia.
 
-## ![](assets/do-not-localize/orange_2.png) Versione Gold Standard 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 6{#gs-6}
 
 _9 marzo 2020_
 
@@ -86,7 +86,7 @@ La build 9032@19f73c5 include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png) Versione Gold Standard 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 5{#gs-5}
 
 _17 dicembre 2019_
 
@@ -94,7 +94,7 @@ La build 9032@d6b8062 include la seguente correzione:
 
 * È stato risolto un problema di tracking sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png) Versione Gold Standard 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 4{#gs-4}
 
 _11 dicembre 2019_
 
@@ -102,7 +102,7 @@ La build 9032@bc4a935 include la seguente correzione:
 
 * È stato risolto un problema di prestazioni riguardante l’invio di messaggi con un database MSSQL. (NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png) Versione Gold Standard 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 3{#gs-3}
 
 _20 novembre 2019_
 
