@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2017'
 ht-degree: 3%
 
 ---
@@ -136,7 +136,7 @@ Sì. I clienti devono fornire  Adobe un punto di contatto disponibile durante o 
 
 ## Devo aggiornare la console client?
 
-Sì. La console client deve trovarsi nella stessa build o nella build più recente dell&#39;istanza del server. Una volta completato l&#39;aggiornamento, la console client deve richiedere di eseguire l&#39;aggiornamento alla build più recente per assicurarsi che rimanga allineata con la build del server.
+Sì. La console client deve trovarsi nella stessa build dell&#39;istanza server. Una volta completato l&#39;aggiornamento, la console client deve richiedere di eseguire l&#39;aggiornamento alla build più recente per assicurarsi che rimanga allineata con la build del server.
 
 ## Qual è il piano di ripristino? I backup dei dati personali vengono conservati?
 
