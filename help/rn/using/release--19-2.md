@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Versione 19.2{#release-19-2}
 
-## ![](assets/do-not-localize/orange_2.png) Versione 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/do-not-localize/red_2.png) Versione 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _07 febbraio 2020_
 
@@ -26,7 +26,7 @@ _07 febbraio 2020_
 * È stato risolto un problema di regressione a causa dell&#39;implementazione della certificazione SSL che causava un errore di connessione utente sul server Windows. (NEO-20629)
 * È stato risolto un problema che causava la visualizzazione di un numero di tag versione non corretto nel menu **Informazioni su**.
 
-## ![](assets/do-not-localize/orange_2.png) Versione 19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Versione 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _02 dicembre 2019_
 
