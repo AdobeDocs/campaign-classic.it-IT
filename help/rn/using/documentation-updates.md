@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '3660'
-ht-degree: 99%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,8 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 La sezione relativa al monitoraggio dei risultati è stata riorganizzata in temi tematici. [Leggi tutto](../../delivery/using/about-delivery-monitoring.md)
 
 È stato aggiunto un caso di utilizzo per l&#39;aggiunta degli indirizzi IP dei mittenti ai registri di consegna. [Leggi tutto](../../delivery/using/delivery-dashboard.md#use-case)
+
+Le domande frequenti sulla privacy sono state spostate in [questa sezione](../../platform/using/privacy-faq.md).
 
 ## Novembre 2020 {#nov-2020}
 
