@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '1089'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,29 @@ ht-degree: 10%
 # Deduplication{#deduplication}
 
 Deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
+
+L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righe duplicate da un set di dati. Ad esempio, i record riportati di seguito possono essere considerati duplicati in quanto hanno lo stesso indirizzo e-mail e lo stesso cellulare e/o telefono domestico.
+
+| Data ultima modifica | Nome | Cognome | E-mail | Cellulare | Telefono |
+-----|------------|-----------|-------|--------------|------
+| 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+
+L&#39;attività **[!UICONTROL Deduplication]** ha la capacità di mantenere un&#39;intera riga come record univoco dopo l&#39;identificazione dei duplicati. Ad esempio, nel caso di utilizzo precedente, se l&#39;attività è configurata per mantenere solo il record con il meno recente **[!UICONTROL Date]**, il risultato sarebbe:
+
+| Data | Nome | Cognome | E-mail | Cellulare | Telefono |
+-----|----------|------------|-------|--------------|------
+| 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+
+Il record master selezionato porterà i dati senza l&#39;unione dei dati del campo con altri dati pertinenti nelle righe duplicate.
+
+Complemento:
+
+| Data | Nome | Cognome | E-mail | Cellulare | Telefono |
+-----|------------|-----------|-------|--------------|------
+| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## Best practice {#best-practices}
 
@@ -34,15 +57,11 @@ Questo problema deve essere affrontato come segue:
 
 Per configurare una deduplicazione, immettete l’etichetta, il metodo e i criteri di deduplicazione, nonché le opzioni relative al risultato.
 
-Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire la modalità di deduplicazione.
+1. Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire la modalità di deduplicazione.
 
-![](assets/s_user_segmentation_dedup_param.png)
+   ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Selezione destinazione
-
-   Selezionare il tipo di target per questa attività (per impostazione predefinita, la deduplicazione riguarda i destinatari) e il criterio da utilizzare, ovvero il campo per il quale valori identici consentono di identificare duplicati: indirizzo e-mail, numero di cellulare o di telefono, numero di fax o indirizzo di posta diretta.
-
-   ![](assets/s_user_segmentation_dedup_param2.png)
+1. Selezionare il tipo di destinazione per l&#39;attività (per impostazione predefinita, la deduplicazione è collegata ai destinatari) e il criterio da utilizzare, ovvero il campo per il quale valori identici consentono di identificare duplicati.
 
    >[!NOTE]
    >
@@ -50,11 +69,13 @@ Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire l
    >
    >Nel passaggio successivo, l&#39;opzione **[!UICONTROL Other]** consente di selezionare il criterio o i criteri da utilizzare:
 
+   ![](assets/s_user_segmentation_dedup_param2.png)
+
+1. Nel passaggio successivo, l&#39;opzione **[!UICONTROL Other]** consente di selezionare il criterio o i criteri da utilizzare in caso di valori identici.
+
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. Metodi di deduplicazione
-
-   Dall’elenco a discesa, selezionate il metodo di deduplicazione da utilizzare e immettete il numero di duplicati da conservare.
+1. Dall’elenco a discesa, selezionate il metodo di deduplicazione da utilizzare e immettete il numero di duplicati da conservare.
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
@@ -72,7 +93,11 @@ Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire l
    * **[!UICONTROL Using an expression]**: consente di conservare i record con il valore più basso (o più alto) dell&#39;espressione data.
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   Fare clic su **[!UICONTROL Finish]** per approvare il metodo di deduplicazione selezionato.
+   >[!NOTE]
+   >
+   >La funzionalità **[!UICONTROL Merge]**, accessibile tramite il collegamento **[!UICONTROL Advanced parameters]**, consente di configurare un insieme di regole per unire un campo o un gruppo di campi in un unico record di dati risultante. Per ulteriori informazioni, vedere [Unione dei campi in un singolo record](#merging-fields-into-single-record).
+
+1. Fare clic su **[!UICONTROL Finish]** per approvare il metodo di deduplicazione selezionato.
 
    La sezione centrale della finestra riepiloga la configurazione definita.
 
@@ -80,7 +105,7 @@ Fare clic sul collegamento **[!UICONTROL Edit configuration...]** per definire l
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Selezionare l&#39;opzione **[!UICONTROL Generate complement]** se si desidera sfruttare la popolazione rimanente. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
+1. Selezionare l&#39;opzione **[!UICONTROL Generate complement]** se si desidera sfruttare la popolazione rimanente. Il complemento è costituito da tutti i duplicati. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione, come segue:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -109,6 +134,32 @@ I duplicati identificati saranno inoltre integrati in un elenco dedicato di dupl
 1. Selezionare la modalità di deduplicazione **[!UICONTROL Choose for me]** in modo che i record salvati in caso di duplicati identificati vengano scelti in modo casuale, quindi fare clic su **[!UICONTROL Finish]**.
 
 Durante l&#39;esecuzione del flusso di lavoro, tutti i destinatari identificati come duplicati vengono esclusi dal risultato (e quindi dalla consegna) e aggiunti all&#39;elenco dei duplicati. Questo elenco può essere utilizzato di nuovo anziché dover identificare nuovamente i duplicati.
+
+## Unione dei campi in un singolo record di dati {#merging-fields-into-single-record}
+
+La funzionalità **[!UICONTROL Merge]** consente di configurare un set di regole per la deduplicazione per definire un campo o un gruppo di campi da unire in un singolo record di dati risultante.
+
+Ad esempio, con un set di record duplicati, potete scegliere di mantenere il numero di telefono più vecchio o il nome più recente.
+
+Un esempio di utilizzo che sfrutta questa funzione è disponibile in [questa sezione](../../workflow/using/deduplication-merge.md).
+
+Per farlo, esegui questi passaggi:
+
+1. Nel passaggio di selezione **[!UICONTROL Deduplication method]**, fare clic sul collegamento **[!UICONTROL Advanced Parameters]**.
+
+   ![](assets/dedup1.png)
+
+1. Selezionare l&#39;opzione **[!UICONTROL Merge records]** per attivare la funzionalità.
+
+   Se si desidera raggruppare più campi dati in ciascuna condizione di unione, attivare l&#39;opzione **[!UICONTROL Use several record merging criteria]**.
+
+   ![](assets/dedup2.png)
+
+1. Dopo aver attivato la funzionalità, all&#39;attività **[!UICONTROL Deduplication]** viene aggiunta una scheda **[!UICONTROL Merge]**. Consente di definire i gruppi di campi da unire e le relative regole associate.
+
+   Per ulteriori informazioni, consultare il caso d&#39;uso dedicato disponibile in [questa sezione](../../workflow/using/deduplication-merge.md).
+
+   ![](assets/dedup3.png)
 
 ## Parametri di input {#input-parameters}
 
