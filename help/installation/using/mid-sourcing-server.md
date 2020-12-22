@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -25,7 +25,7 @@ L&#39;installazione di un server mid-sourcing segue lo stesso processo dell&#39;
 
 >[!CAUTION]
 >
->Una volta che il server di mid-sourcing è stato configurato e i [flussi di lavoro di sincronizzazione](../../workflow/using/transfer-to-mid-sourcing.md) sono stati eseguiti per la prima volta, accertatevi di non aggiornare il nome interno degli account esterni di mid-sourcing.
+>Una volta che il server di mid-sourcing è stato configurato e i [flussi di lavoro di sincronizzazione](../../workflow/using/about-technical-workflows.md) sono stati eseguiti per la prima volta, accertatevi di non aggiornare il nome interno degli account esterni di mid-sourcing.
 
 ## Passaggi per l&#39;installazione e la configurazione di un&#39;istanza {#steps-for-installing-and-configuring-an-instance}
 
