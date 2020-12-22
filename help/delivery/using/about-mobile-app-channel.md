@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -54,7 +54,7 @@ Potete definire il comportamento dell&#39;applicazione quando l&#39;utente attiv
 >* Avviso: in alcuni paesi, la legge prevede che gli utenti siano informati del tipo di dati che utilizzano le applicazioni mobili e dello scopo della loro elaborazione. Devi controllare la legislazione.
 
 
-Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le notifiche di annullamento delle sottoscrizioni sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, fare riferimento alla [Guida ai flussi di lavoro](../../workflow/using/mobile-app-channel.md).
+Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le notifiche di annullamento delle sottoscrizioni sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, fare riferimento all&#39; [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
  Adobe Campaign è compatibile con APN binari e HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consultare la sezione [Configurazione di un&#39;applicazione mobile  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
