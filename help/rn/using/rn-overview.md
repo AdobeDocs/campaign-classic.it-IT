@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 94%
@@ -29,7 +29,7 @@ A ogni build è associato uno stato. Di seguito sono riportati gli stati e le mo
 
 ![](assets/do-not-localize/green3.png) **Disponibilità generale** (GA): convalidata in produzione e raccomandata da Adobe.
 
-Le **ultime build** in GA sono: [Gold Standard 10](../../rn/using/gold-standard.md#gs-10) e [Campaign versione 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182)
+Le **ultime build** in GA sono: [Gold Standard 10](../../rn/using/gold-standard.md#gs-10) e [Campaign versione 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Disponibilità limitata** (LA): solo distribuzione su richiesta.
 
