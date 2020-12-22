@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3927'
 ht-degree: 1%
@@ -204,7 +204,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Questa opzione è utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> durante il conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
+   <td><p>Questa opzione è utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> durante il conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni al di sopra dei quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che saranno escluse le consegne non coerenti con gli ordini superiori a 7 giorni.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ Alcuni sono incorporati durante l&#39;installazione di Campaign, altri possono e
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="../../workflow/using/campaign.md">operationMgt</a>. Quando attivate (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
+   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Quando attivate (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
