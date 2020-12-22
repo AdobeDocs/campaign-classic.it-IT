@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2483'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Rilascio di ottobre del nuovo Pannello di controllo Campaign** con configurazione dei domini tramite CNAME e nuove funzionalità di monitoraggio del database. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Versione 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) Versione 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+
+_22 dicembre 2020_
+
+>[!CAUTION]
+>
+>Questa versione include un nuovo protocollo di connessione:  l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2020
+
+**Miglioramenti**
+
+* Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
+* Attiva l&#39;autenticazione dell&#39;integrazione originariamente basata sulla configurazione dell&#39;autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata in  Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* Dopo la fine del supporto per il protocollo binario legacy di APN iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
+* È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
+* È stato risolto un problema che causava la disattivazione del connettore SMPP in seguito a un errore di connessione, impedendo l&#39;invio di altri SMS e causando problemi di prestazioni. (NEO-28609)
+* È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
+* È stato risolto un problema che causava l’arresto anomalo del server durante la visualizzazione dei dati di destinazione del resto di un’attività **Split** in un flusso di lavoro.
+* È stato risolto un problema che poteva mostrare un messaggio di errore durante il tentativo di visualizzare l’anteprima dei messaggi SMS dopo una query su uno schema diverso da **Destinatario** (nms:recipient). (NEO-27517)
+* È stato risolto un problema che si verificava durante la richiesta di connessione HTTPS con il numero di porta esplicitamente definito nel nome host. La chiamata non riusciva con un errore del certificato. (NEO-29146)
+* È stato risolto un problema nella gestione dei thread POSIX che generava file di dump di grandi dimensioni nell&#39;istanza di marketing. (NEO-28117, NEO-29281)
+* Sono stati risolti dei problemi che potrebbero causare l&#39;arresto anomalo del processo Web durante la preparazione delle consegne o con un&#39;anteprima di consegna periodica. (NEO-27790, NEO-27517)
+* È stato corretto un problema a causa del quale le consegne o l&#39;invio della prova non venivano eseguiti se attivato da un operatore non amministratore. (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) Versione 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
 _11 settembre 2020_
 
