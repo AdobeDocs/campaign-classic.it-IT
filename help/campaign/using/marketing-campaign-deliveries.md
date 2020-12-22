@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2926'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ Una volta concesse tutte le approvazioni, lo stato di consegna cambia in **[!UIC
 
 >[!NOTE]
 >
->I flussi di lavoro tecnici relativi ai processi delle campagne vengono presentati in [Elenco dei flussi di lavoro dei processi delle campagne](../../workflow/using/campaign.md).
+>I flussi di lavoro tecnici relativi al pacchetto Campaign sono presentati in [Elenco di flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
 **Passaggio 1 - Approvazione file**
 
