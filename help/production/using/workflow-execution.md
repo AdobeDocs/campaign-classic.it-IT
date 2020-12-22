@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -32,7 +32,7 @@ In alcuni casi, i flussi di lavoro eseguiti da una campagna non iniziano quando 
 
 Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di seguito per risolverlo:
 
-1. Controllare lo stato del [**[!UICONTROL operationMgt]**](../../workflow/using/campaign.md) flusso di lavoro tecnico. Questo flusso di lavoro consente di gestire i processi o i flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non verranno avviati/interrotti. Riavviatelo per riprendere i flussi di lavoro delle campagne.
+1. Controllare lo stato del [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) flusso di lavoro tecnico. Questo flusso di lavoro consente di gestire i processi o i flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non verranno avviati/interrotti. Riavviatelo per riprendere i flussi di lavoro delle campagne.
 
    Per ulteriori informazioni sul monitoraggio dei flussi di lavoro tecnici, consultare [questa pagina](../../workflow/using/monitoring-technical-workflows.md).
 
