@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 66%
+source-wordcount: '201'
+ht-degree: 64%
 
 ---
 
@@ -55,6 +55,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
+* [Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](../../workflow/using/deduplication-merge.md)
 
 ## Targeting {#designing-queries}
 
