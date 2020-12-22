@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 97%
@@ -110,7 +110,7 @@ In qualità di titolare del trattamento assicurati che, quando ricevi una richie
 
 ## Fornire nuovamente il consenso {#opt-in-again}
 
-**Un oggetto dati, i cui dati sono stati cancellati da  Adobe Campaign, può scegliere di nuovo in seguito?**
+### Un oggetto dati, i cui dati sono stati cancellati da  Adobe Campaign, può scegliere di nuovo in seguito?
 
 È possibile che un interessato decida di fornire nuovamente il consenso o che venga aggiunto come nuovo destinatario dopo che i suoi dati sono stati eliminati da Adobe Campaign.
 
