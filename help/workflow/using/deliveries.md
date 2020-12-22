@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Consegne{#deliveries}
 
-I flussi di lavoro descritti di seguito sono installati per impostazione predefinita.
+I flussi di lavoro descritti di seguito vengono installati con il modulo **Consegne** per impostazione predefinita.
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ I flussi di lavoro descritti di seguito sono installati per impostazione predefi
    <td> Questo flusso di lavoro invia il rapporto sull'attività del sistema all'operatore di 'fatturazione' tramite e-mail. Viene attivato il 25 di ogni mese per impostazione predefinita.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Numero di profili di fatturazione attivi</span> <br /> </td> 
+   <td> <span class="uicontrol">Fatturazione (profili attivi)</span> <br /> </td> 
    <td> <span class="uicontrol">InvoiceActiveContactCount</span> <br /> </td> 
    <td> <p>Questo flusso di lavoro conta il numero di profili attivi. Viene attivato ogni notte all'una per impostazione predefinita.</p> <p>"<strong>Profilo</strong>" indica un record di informazioni (ad esempio: un record nella tabella nmsRecipient o una tabella esterna contenente un ID cookie, un ID cliente, un identificatore mobile o altre informazioni pertinenti a un canale specifico) che rappresenta un cliente finale, un potenziale o un lead. La fatturazione riguarda solo i profili che sono "attivi". Un profilo è considerato "attivo" se il profilo è stato preso di mira o comunicato negli ultimi 12 mesi tramite qualsiasi canale.</p> <p>I canali Facebook e Twitter non vengono presi in considerazione.</p> <p>È possibile ottenere una panoramica del <span class="uicontrol">numero di profili attivi</span> dal menu <span class="uicontrol">Amministrazione</span> &gt; <span class="uicontrol">Gestione campagna</span> &gt; <span class="uicontrol">Metriche cliente</span>.</p> </td> 
   </tr> 
@@ -67,7 +67,7 @@ I flussi di lavoro descritti di seguito sono installati per impostazione predefi
    <td> Questo flusso di lavoro distribuisce le offerte approvate nell'ambiente online, così come ogni categoria contenuta nel catalogo delle offerte.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Anteprima</span> <br /> </td> 
+   <td> <span class="uicontrol">Forecasting</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
    <td> Questo flusso di lavoro analizza le consegne salvate nel calendario provvisorio (crea i registri provvisori). Viene attivato ogni giorno alle 1 del mattino per impostazione predefinita.<br /> </td> 
   </tr> 
