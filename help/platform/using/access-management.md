@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2984'
 ht-degree: 2%
 
 ---
@@ -451,3 +451,7 @@ Nell&#39;esempio seguente, verranno create nuove cartelle per visualizzare dati 
 Vengono visualizzate le seguenti consegne:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
+
+>[!NOTE]
+>
+>Durante la gestione degli eventi [messaggi transazionali](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste sulle istanze di esecuzione, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sulla raccolta di eventi, vedere [questa sezione](../../message-center/using/event-collection.md).
