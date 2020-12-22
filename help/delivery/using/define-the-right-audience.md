@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '480'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,10 @@ Gli indirizzi dei semi vengono utilizzati per i destinatari a cui non corrispond
 
 Gli indirizzi di deduplicazione proteggono la reputazione dell&#39;invio e garantiscono una buona gestione della quarantena.
 
-Ulteriori informazioni [in questo caso di utilizzo](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+**Argomenti correlati:**
+
+* [Attività](../../workflow/using/deduplication.md) di deduplicazione.
+* [Caso di utilizzo: Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](../../workflow/using/deduplication-merge.md)
 
 ## Indirizzi e-mail indice {#index-addresses}
 
