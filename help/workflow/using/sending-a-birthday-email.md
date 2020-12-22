@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ Aggiungete un&#39;attività **consegna periodica** in base al modello di e-mail 
 
 >[!CAUTION]
 >
->Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al processo della campagna. Per ulteriori informazioni, consultare la sezione [Elenco dei flussi di lavoro dei processi delle campagne](../../workflow/using/campaign.md).
+>Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al pacchetto Campaign. Per ulteriori informazioni, consultare la sezione [Elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 >
 >Se per la campagna sono abilitati i passaggi di approvazione, le consegne verranno inviate solo dopo che tali passaggi saranno stati confermati. Per ulteriori informazioni, consultare la sezione [Scelta dei processi da approvare](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
