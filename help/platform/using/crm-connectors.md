@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: c511c1ac4b9fccff30f73fcfd0db650d860514d2
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 4%
@@ -186,13 +186,13 @@ Per configurare il connettore Microsoft Dynamics in modo che funzioni con  Adobe
 
    Adobe Campaign Classic supporta l&#39;interfaccia REST di Dynamics 365 con protocollo OAuth per l&#39;autenticazione.
 
-   Se si seleziona una distribuzione **[!UICONTROL WebAPI]**, è necessario registrare un&#39;app nella directory di Azure e ottenere l&#39; **clientId** dalla directory di Azure. La registrazione è documentata in [questa pagina](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
+   Se si seleziona una distribuzione **[!UICONTROL WebAPI]**, è necessario registrare un&#39;app nella directory di Azure e ottenere l&#39; **clientId** dalla directory di Azure. La registrazione è documentata in [questa pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
    >[!NOTE]
    >
    >Il parametro redirectURL non è richiesto da Adobe Campaign Classic.
 
-   Il valore **clientId** viene utilizzato con nome utente/password per recuperare il token del portatore utilizzando la password del tipo di sovvenzione. Questa opzione è denominata **Credenziali password proprietario risorsa Grant**. Per ulteriori informazioni, consulta [questa pagina](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
+   Il valore **clientId** viene utilizzato con nome utente/password per recuperare il token del portatore utilizzando la password del tipo di sovvenzione. Questa opzione è denominata **Credenziali password proprietario risorsa Grant**. Per ulteriori informazioni, consulta [questa pagina](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
