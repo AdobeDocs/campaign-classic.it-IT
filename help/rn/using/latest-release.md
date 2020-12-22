@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Su linux, _apache_neolane.conf_ è ora installato nella directory `conf`.
 * È stato risolto un problema che si verificava con l’utilizzo del connettore FDA Snowflake. Un utente con diritti di accesso FDA Snowflake non riusciva a eseguire una query su uno schema di Snowflake. Nei registri veniva visualizzato un errore di tipo “Password non trovata”. (NEO-23851)
 * È stato risolto un problema che si verificava quando, utilizzando un connettore FDA, il nome dello schema FDA collegato era una sottostringa del nome di un elemento dello schema corrente. Ciò si verificava, ad esempio, se lo schema FDA era “cust” e uno degli elementi nello schema Destinatario era “customer”. Nel recuperare la colonna all’interno dell’elemento “cliente”, aggiungendo una colonna dallo schema FDA “cust” mancava il valore per la colonna locale. (NEO-20193)
 * È stato risolto un problema nei flussi di lavoro che si verificava recuperando i record da un database esterno e inserendoli nel database Campaign. (NEO-26359)
-* È stato risolto un problema nel flusso di lavoro tecnico **Aggiorna stato evento**: per mantenere l’equivalenza dei campi corrispondenti in entrata nell’attività **Statistiche di consegna**, il dimensionamento di tre campi di destinazione nell’attività **Aggiorna stati di consegna** è stato modificato da 32 a 64 bit. (NEO-11557) Ulteriori informazioni sul flusso di lavoro **Aggiorna stato evento** in [questa sezione](../../workflow/using/message-center--execution-.md).
+* È stato risolto un problema nel flusso di lavoro tecnico **Aggiorna stato evento**: per mantenere l’equivalenza dei campi corrispondenti in entrata nell’attività **Statistiche di consegna**, il dimensionamento di tre campi di destinazione nell’attività **Aggiorna stati di consegna** è stato modificato da 32 a 64 bit. (NEO-11557) Ulteriori informazioni sul flusso di lavoro **Aggiorna stato evento** in [questa sezione](../../workflow/using/about-technical-workflows.md).
 * È stato risolto un problema nel report **Cronologia eventi del centro messaggi**, che causava errori di script durante il tentativo di applicazione dei filtri e rendeva impossibile il filtro per un intervallo di date. (NEO-23365)
 * È stato risolto un problema di interferenza tra i flussi di lavoro tecnici **Processi di Campaign** (operationMgt) e **Preview** (previsioni). Ciò si verificava quando le consegne programmate restavano nello stato “Target Ready” (Pronto per la destinazione) o “Ready to be delivered” (Pronto per essere consegnato). (NEO-20819)
 * È stato risolto un problema di analisi XML che impediva la presenza dell’identificatore XML nel campo mdata in xtkOperator. Ciò causava un errore di post aggiornamento. (NEO-26113)
