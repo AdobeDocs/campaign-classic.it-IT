@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 La versione di Adobe Campaign Classic non supporta la pipeline.
 
 1. Verificate che l&#39;elemento [!DNL pipelined] sia presente nel file di configurazione. In caso contrario, significa che non è supportato.
-1. Aggiornamento alla versione 6.11 build 8705 o successiva.
+1. Aggiornamento a Campaign 20.3 o Gold Standard 11.
 
 **Il tubo non funziona con &#39;&#39; aurait du commencer par  `[` ou  `{` (iRc=16384)&quot;**
 
@@ -31,7 +31,7 @@ Impostate la configurazione JSON nell&#39;opzione **NmsPipeline_Config**. Vedere
 
 **Pipelled non riesce con &quot;l&#39;oggetto deve essere un&#39;organizzazione o un client valido&quot;**
 
-La configurazione IMSOrgid non è valida.
+La configurazione dell&#39;identificatore dell&#39;organizzazione non è valida.
 
 1. Verificate che IMSOrgId sia impostato in serverConf.xml.
 1. Cercare un IMSOrgId vuoto nel file di configurazione dell&#39;istanza che può ignorare il valore predefinito. In tal caso, rimuoverlo.
@@ -85,4 +85,3 @@ Generalmente, un attivatore può richiedere 15-90 minuti per avviare una campagn
 1. Cercare gli errori in pipelified.log che possono causare nuovi tentativi. Correggete gli errori, se applicabile.
 1. Verificare la dimensione della coda nella pagina di stato [!DNL pipelined]. Se la dimensione della coda è grande, migliorare le prestazioni del JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura gli attivatori in Analytics con un numero minore di messaggi.
-Annessi
