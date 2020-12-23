@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 5%
 
 ---
 
@@ -30,29 +30,24 @@ Questa integrazione si applica solo a partire dalle versioni **Campaign Classic 
 
 Prima di avviare l&#39;implementazione, verifica di avere:
 
-* un IMSOrgID valido: l’identificatore dell’organizzazione  Identity Management System (IMS) è l’identificatore univoco all’interno dell’Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’SSO (IMS Single-Sign On),
-* un accesso sviluppatore all’organizzazione IMS.
-
->[!NOTE]
+* un **identificatore organizzazione** valido: l’identificatore dell’organizzazione  Identity Management System (IMS) è l’identificatore univoco all’interno dell’Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’SSO (IMS Single-Sign On). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* **Accesso sviluppatore** all&#39;organizzazione.  Per richiedere i privilegi di amministratore di sistema dell&#39;organizzazione IMS, seguite la procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) per fornire questo accesso a tutti i profili di prodotto.
 >
->Per richiedere i privilegi di amministratore di sistema dell&#39;organizzazione IMS, seguite la procedura dettagliata [in questa pagina](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) per fornire questo accesso a tutti i profili di prodotto.
-
-
 ## Passaggio 1: Creare/aggiornare  progetto Adobe I/O {#creating-adobe-io-project}
 
-1. Accedete  Adobe I/O ed effettuate l&#39;accesso con il diritto di amministratore di sistema per IMSorg.
+1. Accedete  Adobe I/O ed effettuate l&#39;accesso con il diritto di amministratore di sistema per l&#39;organizzazione IMS.
 
    >[!NOTE]
    >
-   > Assicurati di aver effettuato l’accesso al portale IMSorg corretto.
+   > Assicurarsi di aver eseguito l&#39;accesso al portale organizzazione corretto.
 
-1. Estrarre l&#39;ID client di integrazione esistente dal file di configurazione dell&#39;istanza ims/authIMSTAClientId. Attributo non esistente o vuoto che indica che l&#39;ID client non è configurato.
+1. Estrarre l&#39;ID client di integrazione esistente dal file di configurazione dell&#39;istanza ims/authIMSTAClientId. Attributo non esistente o vuoto che indica che l&#39;identificatore client non è configurato.
 
    >[!NOTE]
    >
-   >Se l&#39;ID client è vuoto, è possibile **[!UICONTROL Create a New project]** direttamente in  Adobe I/O.
+   >Se l&#39;identificatore client è vuoto, è possibile **[!UICONTROL Create a New project]** direttamente in  Adobe I/O.
 
-1. Identificate il progetto esistente utilizzando l&#39;ID client estratto. Cercate progetti esistenti con lo stesso ID client estratto nel passaggio precedente.
+1. Identificate il progetto esistente utilizzando l&#39;identificatore client estratto. Cercare progetti esistenti con lo stesso identificatore client estratto nel passaggio precedente.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
