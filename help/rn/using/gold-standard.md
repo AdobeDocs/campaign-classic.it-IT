@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 87d9196fac69b549014a8acb5f13b9bff97a846b
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 90%
@@ -31,7 +31,7 @@ _22 dicembre 2020_
 
 >[!CAUTION]
 >
->Questa versione include un nuovo protocollo di connessione: l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2020
+>Questa versione include un nuovo protocollo di connessione: l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2021.
 
 La build 9032@2a2a028 include i seguenti miglioramenti e correzioni:
 
