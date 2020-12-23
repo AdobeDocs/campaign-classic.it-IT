@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 98%
+source-wordcount: '1875'
+ht-degree: 97%
 
 ---
 
@@ -65,6 +65,10 @@ _27 ottobre 2020_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>Questa versione include un nuovo protocollo di connessione: l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2021.
+
 **Miglioramenti della sicurezza**
 
 * Caricamento sicuro delle librerie: per proteggere dagli attacchi di precaricamento delle DLL, Campaign ora carica le DLL di Windows solo dal percorso predefinito di sistema di Windows durante il caricamento del client Campaign (nlclient). [Ulteriori informazioni](https://support.microsoft.com/it-it/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 **Miglioramenti**
 
 * Sono stati apportati diversi miglioramenti alla **console Client**:
-   * Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
-
-      >[!CAUTION]
-      >
-      >In seguito all&#39;aggiornamento del protocollo di connessione, l&#39;aggiornamento è obbligatorio (server e console) per poter connettersi dal 21 marzo 2020.
+   * Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS. Per poter connettersi dopo il 21 marzo 2021, è necessario aggiornare la console server e client.
    * Per evitare l’incompatibilità con alcune limitazioni delle regole dell’oggetto Criteri di gruppo di protezione Internet, la schermata di accesso alla console del client Campaign è stata sostituita da un modulo Windows standard incorporato.
    * È stato risolto un problema che si verificava durante l’utilizzo di copia/incolla delle attività in un flusso di lavoro tramite la console Client a 64 bit. (NEO-27635)
    * Nel menu **Informazioni** sono state aggiunte informazioni per distinguere le console da 64 e da 32 bit.
