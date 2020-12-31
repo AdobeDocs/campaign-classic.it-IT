@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -75,23 +75,23 @@ Di seguito è riportato un elenco dei comandi di amministrazione standard access
    **riavvio Web**
 
    >[!NOTE]
-   > 
-   >    * Se l&#39;istanza non è specificata, verrà utilizzata l&#39;istanza &quot;predefinita&quot;.
-   >    * In caso di emergenza, utilizzare l&#39;opzione **-immediate** per interrompere immediatamente il processo (equivalente al comando Unix **kill -9**).
-   >    * Utilizzate l&#39;opzione **-noconsole** per fare in modo che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd**.
-   >    * Utilizzate l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
+   >
+   >* Se l&#39;istanza non è specificata, verrà utilizzata l&#39;istanza &quot;predefinita&quot;.
+   >* In caso di emergenza, utilizzare l&#39;opzione **-immediate** per interrompere immediatamente il processo (equivalente al comando Unix **kill -9**).
+   >* Utilizzate l&#39;opzione **-noconsole** per fare in modo che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd**.
+   >* Utilizzate l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
 
-      >    
-      >      
+      >
+      >   
       Esempio:
-      >    
-      >      
+      >
+      >   
       **nlserver riavvio web -verbose**
-      >    
-      >      
+      >
+      >   
       **nlserver start mta@myinstance -verbose**
-      >    
-      >      
+      >
+      >   
       Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
 
 
