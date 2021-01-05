@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 8%
+source-wordcount: '236'
+ht-degree: 4%
 
 ---
 
@@ -37,11 +37,17 @@ Per impostazione predefinita, sono ordinati in sottocartelle per mese di consegn
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzata di Adobe Campaign  per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento [ Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
 
-<!--## Transactional message monitoring {#transactional-message-monitoring}
+## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
-To monitor your transactional messages, check the delivery logs. Accessing the delivery logs is presented in [this section](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+Per monitorare i messaggi transazionali, controlla i registri di consegna. L&#39;accesso ai registri di consegna è presentato in [questa sezione](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+Le consegne transazionali inviate dall&#39;istanza di esecuzione vengono sincronizzate nuovamente nell&#39;istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
+
+>[!NOTE]
+>
+>Le consegne accumulano settimanalmente gli eventi in base all&#39;ultimo aggiornamento dell&#39;evento e non in base alla data di creazione dell&#39;evento. Di conseguenza, quando si estraggono i registri di consegna dei messaggi transazionali dall&#39;istanza di controllo, l&#39;ID di consegna associato a ciascun ID del registro di consegna potrebbe cambiare nel tempo mano a mano che il registro viene aggiornato (ad esempio, quando viene ricevuto un rimbalzo in entrata per l&#39;evento).
+
+<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
