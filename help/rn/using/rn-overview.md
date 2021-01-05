@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
+source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, �
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-In qualità di utente Gold Standard, potrai beneficiare automaticamente dell’aggiornamento Gold Standard con la [più recente build GA](../../rn/using/gold-standard.md#gs-10) senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+In qualità di utente in hosting Gold Standard, si beneficerà automaticamente dell&#39;aggiornamento Gold Standard con la [più recente build GA Gold Standard](../../rn/using/gold-standard.md#gs-10) senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >La matrice di compatibilità per Gold Standard è disponibile nella [Matrice di compatibilità GA](../../rn/using/compatibility-matrix-gs.md).
