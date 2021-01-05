@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1186'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ In questo esempio viene utilizzato lo stesso concetto del primo esempio, ma vien
 
 La prima attività **Crea consegna** crea l&#39;azione di consegna.
 
-L&#39;attività fork consente di avviare contemporaneamente il calcolo della destinazione e la creazione dell&#39;istanza di contenuto.
+L&#39;attività fork consente di avviare il calcolo della destinazione e la creazione dell&#39;istanza di contenuto in parallelo.
 
 Una volta eseguite le attività, la casella di partecipazione AND attiva l&#39;attività **Delivery** per avviare la consegna precedentemente creata su contenuto e targeting.
 
