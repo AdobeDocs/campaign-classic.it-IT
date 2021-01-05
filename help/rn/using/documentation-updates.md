@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3729'
-ht-degree: 98%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 98%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Gennaio 2021 {#jan,2021}
+
+La sezione **[!UICONTROL Fork]** dell&#39;attività è stata arricchita di informazioni aggiuntive. È stata aggiunta una nota per specificare che le transizioni in uscita non vengono eseguite simultaneamente e che pertanto l&#39;attività non deve essere utilizzata per migliorare le prestazioni dei flussi di lavoro. [Leggi tutto](../../workflow/using/fork.md)
+
+La sezione Individuazione versione Tomcat è stata spostata [qui](../../production/using/locate-tomcat-version.md).
+
+L&#39;elenco dei flussi di lavoro tecnici con i pacchetti associati è stato riorganizzato in una sola pagina. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
+
+La sezione per la risoluzione dei problemi della guida al monitoraggio è stata riorganizzata e migliorata con una pagina di destinazione. [Ulteriori informazioni](../../production/using/troubleshooting.md).
 
 ## Dicembre 2020 {#dec-2020}
 
@@ -149,7 +159,7 @@ Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizz
 
 È stata aggiunta una nuova sezione con le linee guida relative al monitoraggio di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
-La sezione Privacy e consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md).
+La sezione Privacy e consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Leggi tutto](../../platform/using/privacy-and-recommendations.md)
 
 La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo “regolamentazione” che ora è disponibile quando si utilizza l’API per configurare il processo automatico di richiesta di accesso a dati personali. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -167,7 +177,7 @@ Sono stati aggiunti casi di utilizzo su come [cifrare](../../workflow/using/how-
 
 La pagina di integrazione dei trigger di Experience Cloud e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
 
-## luglio 2020 {#release-20-2}
+## Luglio 2020 {#release-20-2}
 
 **Nuove funzionalità incluse nella versione 20.2**
 
