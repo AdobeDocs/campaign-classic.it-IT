@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,15 @@ Se devi usare più canali, devi installare e configurare i pacchetti correlati p
 
 ## Aggiunta di un canale di consegna {#adding-a-delivery-channel}
 
-Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) deve essere eseguito prima di installare il pacchetto di messaggi transazionali. Se hai avviato un progetto di messaggistica transazionale sul canale e-mail e poi hai deciso durante il progetto di aggiungere un nuovo canale, devi seguire la procedura seguente:
+Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) deve essere eseguito prima di installare il pacchetto di messaggi transazionali.
+
+ Adobe consiglia di aggiungere sempre il pacchetto del canale di consegna prima di installare il pacchetto dei messaggi transazionali.
+
+Tuttavia, se hai avviato un progetto di messaggistica transazionale sul canale e-mail e hai quindi deciso durante il progetto di aggiungere un nuovo canale, puoi seguire i passaggi descritti di seguito.
+
+>[!NOTE]
+>
+>Questa procedura si applica solo ai clienti che utilizzano un Windows NLServer installato sullo stesso computer in cui lavorano.
 
 1. Installate il canale necessario, ad esempio il **canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
 1. Effettuate un&#39;importazione di file ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) e selezionate il file **datakitnms **`[Your language]`**packagemessageCenter.xml**.
