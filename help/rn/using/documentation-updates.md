@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,9 +23,9 @@ Per ulteriori aggiornamenti, puoi inoltre consultare le [Note sulla versione di 
 
 ## Dicembre 2020 {#dec-2020}
 
-La sezione relativa al monitoraggio dei risultati è stata riorganizzata in temi tematici. [Leggi tutto](../../delivery/using/about-delivery-monitoring.md)
+La sezione relativa al monitoraggio della consegna è stata riorganizzata in argomenti tematici. [Leggi tutto](../../delivery/using/about-delivery-monitoring.md)
 
-È stato aggiunto un caso di utilizzo per l&#39;aggiunta degli indirizzi IP dei mittenti ai registri di consegna. [Leggi tutto](../../delivery/using/delivery-dashboard.md#use-case)
+È stato aggiunto un caso di utilizzo su come aggiungere gli indirizzi IP dei mittenti ai registri di consegna. [Leggi tutto](../../delivery/using/delivery-dashboard.md#use-case)
 
 Le domande frequenti sulla privacy sono state spostate in [questa sezione](../../platform/using/privacy-faq.md).
 
@@ -348,7 +348,7 @@ La nuova opzione **Maximum personalization run time** nelle proprietà di conseg
 
 Gli esempi per le chiamate API che utilizzano una **HttpServletRequest** con logon() e query() sono stati aggiornati. [Ulteriori informazioni](../../configuration/using/web-service-calls.md).
 
-È stata aggiunta una raccomandazione per l’attributo **sqlDefault** nella definizione dello schema. [Leggi tutto](../../configuration/using/schema/attribute.md)).
+È stata aggiunta una raccomandazione per l’attributo **sqlDefault** nella definizione dello schema. [Leggi tutto](../../configuration/using/schema/attribute.md).
 
 L’integrazione tra Adobe Campaign e Adobe Real-time Customer Data Platform è ora indicata nella guida **Integrazione con Adobe Experience Cloud**. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md).
 
