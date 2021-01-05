@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # Problemi relativi a prestazioni e velocità effettiva{#performance-and-throughput-issues}
 
->[!NOTE]
->
->Prima di tutto, verificate di disporre della build più recente installata. In questo modo avrete a disposizione le funzioni e le correzioni di bug più recenti. Per ulteriori informazioni sul contenuto di ciascuna versione, consultare le [Note sulla versione](../../rn/using/latest-release.md).
+Prima di tutto, verificate di disporre della build più recente installata. In questo modo avrete a disposizione le funzioni e le correzioni di bug più recenti.
+
+Per ulteriori informazioni sul contenuto di ciascuna versione, consultare le [Note sulla versione](../../rn/using/latest-release.md).
 
 ## Hardware e infrastruttura {#hardware-and-infrastructure}
 
-Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in questo [articolo](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
+Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in dettaglio in questa [pagina](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
 Il team di consulenza può fornire ai clienti ospitati uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Offre inoltre strumenti per la pulizia di dati non necessari. Contattate i team di consulenza o assistenza se avete bisogno di implementare questo strumento. Di seguito sono riportati alcuni elementi importanti da verificare utilizzando questo strumento:
 
@@ -33,7 +33,7 @@ Il team di consulenza può fornire ai clienti ospitati uno strumento che consent
 
  Adobe Campaign fornisce anche uno [strumento](../../production/using/monitoring-processes.md#manual-monitoring) per controllare l&#39;utilizzo di CPU e RAM. Utilizzate questo strumento e osservate indicatori specifici quali: **Memoria**, **Swap Memory**, **Disco**, **Processi attivi**. Se i valori sono troppo alti, puoi provare a ridurre il numero di flussi di lavoro o pianificare l&#39;avvio dei flussi di lavoro in momenti diversi.
 
-## Prestazioni del database {#database-performances}
+## Controllo database {#database-performances}
 
 Nella maggior parte dei casi, i problemi di prestazioni sono collegati alla manutenzione del database. Gli elementi principali da verificare sono i seguenti:
 
@@ -68,4 +68,3 @@ Di seguito è riportato un elenco delle best practice e degli articoli relativi 
 >[!NOTE]
 >
 >Vedere anche sezione [Punti chiave di recapito](../../delivery/using/deliverability-key-points.md).
-
