@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86dab2e03aa7a07d88d9a1df5e4015b001451d2e
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ Le **ultime build** in GA sono: [Gold Standard 10](../../rn/using/gold-standard.
 
 L’**ultima build RC** è [Campaign Classic versione 20.3](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **Obsoleto**  - Nessuna distribuzione. Le implementazioni esistenti devono essere aggiornate.
+![](assets/do-not-localize/red3.png) **Obsoleto**: nessuna distribuzione. Le implementazioni esistenti devono essere aggiornate.
 
 ## Raccomandazioni{#recommendations}
 
 Per garantire una configurazione stabile, si consiglia di installare la stessa build stabile su tutti i server in esecuzione sulla stessa configurazione client.
 
-Inoltre, la console client deve trovarsi nella stessa build dell&#39;istanza del server.
+Inoltre, la console client deve trovarsi nella stessa build dell’istanza del server.
 
 Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -51,7 +51,7 @@ Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pag
 
 In qualità di cliente in hosting (Managed Services o ibrido), devi contattare il team di assistenza clienti per aggiornare l’ambiente.
 
-In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/it/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
