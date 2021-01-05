@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ _22 dicembre 2020_
 
 La build 9032@2a2a028 include i seguenti miglioramenti e correzioni:
 
-* Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
+* Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
 
 * L’autenticazione dell’integrazione dei trigger, originariamente basata su OAUTH per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
