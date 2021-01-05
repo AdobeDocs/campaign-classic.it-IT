@@ -98,7 +98,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 **Miglioramenti**
 
 * Sono stati apportati diversi miglioramenti alla **console Client**:
-   * Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS. Per poter connettersi dopo il 21 marzo 2021, è necessario aggiornare la console server e client.
+   * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS. Per poter connettersi dopo il 21 marzo 2021, è necessario aggiornare la console server e client.
    * Per evitare l’incompatibilità con alcune limitazioni delle regole dell’oggetto Criteri di gruppo di protezione Internet, la schermata di accesso alla console del client Campaign è stata sostituita da un modulo Windows standard incorporato.
    * È stato risolto un problema che si verificava durante l’utilizzo di copia/incolla delle attività in un flusso di lavoro tramite la console Client a 64 bit. (NEO-27635)
    * Nel menu **Informazioni** sono state aggiunte informazioni per distinguere le console da 64 e da 32 bit.
