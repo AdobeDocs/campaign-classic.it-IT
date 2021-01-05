@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -19,15 +19,16 @@ ht-degree: 13%
 
 Possono essere presenti diversi motivi per non inoltrare i registri. È consigliabile verificare le informazioni seguenti:
 
-* Il flusso di lavoro **Tracking** presenta degli errori?
+* **Il flusso di lavoro di****tracciamento presenta degli errori?**
 
-   Fare riferimento a [Flussi di lavoro tecnici di monitoraggio](../../workflow/using/monitoring-technical-workflows.md).
+Fare riferimento a [Flussi di lavoro tecnici di monitoraggio](../../workflow/using/monitoring-technical-workflows.md).
 
-   ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
-* Il modulo **trackinglogd** è in esecuzione sul server?
+* **Il modulo è****in esecuzione sul server?**
 
-   Fare riferimento a [File di registro](../../production/using/log-files.md).
+Fare riferimento a [File di registro](../../production/using/log-files.md).
 
-* Sono state apportate delle modifiche? Possono attivare una perdita di connessione ai server utilizzando l&#39;alias di tracciamento.
+* **Sono state apportate delle modifiche?**
 
+Possono attivare una perdita di connessione ai server utilizzando l&#39;alias di tracciamento.
