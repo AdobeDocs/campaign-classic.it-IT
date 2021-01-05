@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
+source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 99%
+source-wordcount: '2202'
+ht-degree: 98%
 
 ---
 
@@ -669,23 +669,31 @@ ht-degree: 99%
       + [Tipi di manutenzione](production/using/types-of-maintenance.md)
       + [Raccomandazioni specifiche per RDBMS](production/using/rdbms-specific-recommendations.md)
       + [Oggetti di applicazione](production/using/application-objects.md)
-   + Risoluzione dei problemi {#troubleshooting}
-      + [Problemi relativi a prestazioni e velocità effettiva](production/using/performance-and-throughput-issues.md)
-      + [Immagini mancanti](production/using/images-missing.md)
-      + [Problemi relativi alla visualizzazione delle immagini](production/using/image-display-issues.md)
-      + [File temporanei](production/using/temporary-files.md)
-      + [Prestazioni del database](production/using/database-performances.md)
-      + [Moduli e problemi frequenti](production/using/modules-and-frequent-issues.md)
-      + [Precisione dei log](production/using/log-precision.md)
-      + [Tracking dei problemi dei log](production/using/tracking-logs-issues.md)
-      + [Esecuzione di un flusso di lavoro](production/using/workflow-execution.md)
-      + [Errore di connessione](production/using/failure-to-connect.md)
-      + [Soglie di connessione](production/using/connection-thresholds.md)
-      + [Stack trace in Linux](production/using/stack-trace-in-linux.md)
-      + [Codifica del database Oracle](production/using/encoding-of-the-oracle-database.md)
-      + [Aggiornamento della console](production/using/console-update.md)
-      + [Password persa](production/using/lost-password.md)
-      + [Comportamento JSP](production/using/jsp-behavior.md)
+   + Risoluzione dei problemi {#troubleshooting-toc}
+      + [Panoramica sulla risoluzione dei problemi di produzione](production/using/troubleshooting.md)
+      + Problemi comuni e generali {#common-general-issues-toc}
+         + [Moduli e problemi frequenti](production/using/modules-and-frequent-issues.md)
+         + [Esecuzione di un flusso di lavoro](production/using/workflow-execution.md)
+         + [Password persa](production/using/lost-password.md)
+         + [Aggiornamento della console](production/using/console-update.md)
+      + Risoluzione dei problemi relativi alle consegne {#delivery-troubleshooting-toc}
+         + [Problemi relativi a prestazioni e velocità effettiva](production/using/performance-and-throughput-issues.md)
+         + [Problemi relativi alla visualizzazione delle immagini](production/using/image-display-issues.md)
+         + [Immagini mancanti](production/using/images-missing.md)
+         + [File temporanei](production/using/temporary-files.md)
+      + Utilizzo dei registri {#working-with-log-toc}
+         + [Precisione dei log](production/using/log-precision.md)
+         + [Tracking dei problemi dei log](production/using/tracking-logs-issues.md)
+      + Problemi del database {#database-issues-toc}
+         + [Prestazioni del database](production/using/database-performances.md)
+         + [Codifica del database Oracle](production/using/encoding-of-the-oracle-database.md)
+      + Miglioramenti alla connessione {#connection-improvements-toc}
+         + [Errore di connessione](production/using/failure-to-connect.md)
+         + [Soglie di connessione](production/using/connection-thresholds.md)
+      + Risoluzione dei problemi tecnici {#technical-troubleshooting-toc}
+         + [Stack trace in Linux](production/using/stack-trace-in-linux.md)
+         + [Comportamento JSP](production/using/jsp-behavior.md)
+         + [Individuazione versione Tomcat](production/using/locate-tomcat-version.md)
 + Guida per gli sviluppatori {#configuring-campaign-classic}
    + Modello dati {#data-model}
       + [Informazioni sul modello dati](configuration/using/about-data-model.md)
