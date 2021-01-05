@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -155,11 +155,11 @@ ht-degree: 97%
       + [Gestione delle sottoscrizioni](delivery/using/managing-subscriptions.md)
       + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
    + Monitoraggio delle consegne {#monitoring-deliveries}
-      + [Introduzione al monitoraggio delle consegne](delivery/using/about-delivery-monitoring.md)
-      + [Accesso all&#39;elenco delle consegne](delivery/using/list-of-deliveries.md)
-      + [Pannello consegna](delivery/using/delivery-dashboard.md)
-      + [Best practice per la distribuzione](delivery/using/delivery-performances.md)
-      + [Risoluzione dei problemi di consegna](delivery/using/delivery-troubleshooting.md)
+      + [Guida introduttiva al monitoraggio della consegna](delivery/using/about-delivery-monitoring.md)
+      + [Accesso all’elenco delle consegne](delivery/using/list-of-deliveries.md)
+      + [Dashboard delle consegne](delivery/using/delivery-dashboard.md)
+      + [Best practice per la consegna](delivery/using/delivery-performances.md)
+      + [Risoluzione dei problemi relativi alle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Informazioni sugli errori di consegna](delivery/using/understanding-delivery-failures.md)
       + [Informazioni sulla gestione della quarantena](delivery/using/understanding-quarantine-management.md)
@@ -338,7 +338,7 @@ ht-degree: 97%
       + [Sincronizzazione dei profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzazione dei pubblici](integrations/using/synchronizing-audiences.md)
       + [Sincronizzazione delle applicazioni web](integrations/using/synchronizing-web-applications.md)
-      + [Risoluzione dei problemi di  [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Risoluzione dei problemi di  [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Trigger di Experience Cloud {#experience-triggers}
       + [Guida introduttiva a [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurazione della pipeline](integrations/using/configuring-pipeline.md)
@@ -636,7 +636,7 @@ ht-degree: 97%
       + [Endpoint di rete per Campaign](installation/using/campaign-network-endpoints.md)
       + [Righe di comando](installation/using/command-lines.md)
       + [Creazione di nuove istanze](installation/using/creating-new-instances.md)
-      + [Elenco opzioni di Campaign ](installation/using/configuring-campaign-options.md)
+      + [Elenco opzioni di Campaign](installation/using/configuring-campaign-options.md)
       + [Disinstallazione di Campaign](installation/using/uninstalling-campaign.md)
 + Guida al monitoraggio {#monitoring-campaign-classic}
    + Introduzione {#introduction}
@@ -702,11 +702,11 @@ ht-degree: 97%
          + [Condizione](configuration/using/schema/condition.md)
          + [Indice DB](configuration/using/schema/db-index.md)
          + [Elemento](configuration/using/schema/element.md)
-         + [Enumeration](configuration/using/schema/enumeration.md)
+         + [Enumerazione](configuration/using/schema/enumeration.md)
          + [Guida](configuration/using/schema/help.md)
-         + [Iscriviti](configuration/using/schema/join.md)
-         + [Key](configuration/using/schema/key.md)
-         + [Keyfield](configuration/using/schema/keyfield.md)
+         + [Iscriversi](configuration/using/schema/join.md)
+         + [Chiave](configuration/using/schema/key.md)
+         + [Campo chiave](configuration/using/schema/keyfield.md)
          + [Metodo](configuration/using/schema/method.md)
          + [Metodi](configuration/using/schema/methods.md)
          + [Param](configuration/using/schema/param.md)
