@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -21,11 +21,13 @@ Per i server sovraccarichi, la soglia di connessione potrebbe essere superata. I
 
 Esistono tre soglie diverse:
 
-1. La soglia di connessione Web, configurata nel server Web. Per modificarlo, contattare l&#39;amministratore di sistema.
-1. La soglia di connessione del database. Per modificarlo, contattate l&#39;amministratore del database.
-1. La soglia di connessione Adobe Campaign , disponibile in due posizioni:
+* La **soglia di connessione Web**, configurata nel server Web. Per modificarlo, contattare l&#39;amministratore di sistema.
 
-   * Lato Tomcat: tutte le query in arrivo sul client Adobe Campaign Tomcat .
+* La **soglia di connessione al database**. Per modificarlo, contattate l&#39;amministratore del database.
+
+* La **soglia di connessione Adobe Campaign**, disponibile in due posizioni:
+
+   * **Lato** inferiore: tutte le query in arrivo sul client Adobe Campaign Tomcat .
 
       Questa soglia è configurata nel file **nl6/tomcat-8/conf/server.xml**. L&#39;attributo **maxThread** consente di aumentare la soglia del numero di query elaborate alla volta. Può essere modificato a 250, ad esempio.
 
@@ -41,7 +43,7 @@ Esistono tre soglie diverse:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Database: insieme di tutte le connessioni aperte contemporaneamente sul database da un processo.
+   * **Database**: insieme di tutte le connessioni aperte contemporaneamente sul database da un processo.
 
       Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. L&#39;attributo **maxCnx** situato in **pool di origini dati** consente di aumentare la soglia delle query elaborate simultaneamente.
 
