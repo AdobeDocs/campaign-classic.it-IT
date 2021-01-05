@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 6%
+source-wordcount: '190'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,10 @@ Un join attiva la propria transizione in uscita solo quando vengono attivate tut
 Ad esempio, potete utilizzare un&#39;attività AND-join nel contesto della creazione di contenuto e dell&#39;automazione dell&#39;invio di contenuti, per fare in modo che una consegna venga avviata solo una volta completate le fasi di query di destinazione e di aggiornamento dei contenuti. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>Le transizioni in entrata configurate con dimensioni di targeting diverse non possono essere unite insieme utilizzando un&#39;attività **[!UICONTROL AND-join]**.
 
 La popolazione inviata in uscita dell&#39;attività è determinata scegliendo un set principale tra le transizioni in entrata nell&#39;attività.
 
