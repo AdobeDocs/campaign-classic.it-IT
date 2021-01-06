@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 86%
 
 ---
@@ -25,7 +25,7 @@ In questa pagina sono elencate le versioni Gold Standard.
 
 Per ulteriori informazioni sul programma Gold Standard per Campaign, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited_2.png) Versione Gold Standard 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png) Versione Gold Standard 11{#gs-11}
 
 _22 dicembre 2020_
 
@@ -33,7 +33,7 @@ _22 dicembre 2020_
 >
 >Questa versione include un nuovo protocollo di connessione: l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2021.
 
-La build 9032@2a2a028 include i seguenti miglioramenti e correzioni:
+La build 9032@d3b452f include i seguenti miglioramenti e correzioni:
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
 
@@ -43,7 +43,7 @@ La build 9032@2a2a028 include i seguenti miglioramenti e correzioni:
 
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
 
-## ![](assets/do-not-localize/green_2.png) Versione Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 10{#gs-10}
 
 _7 luglio 2020_
 
