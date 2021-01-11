@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 97%
+source-wordcount: '1911'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,14 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni a
 
 Per la versione Campaign Classic Gold Standard (ultima build GA), [fare riferimento a questa pagina](../../rn/using/gold-standard.md).
 
-## ![](assets/do-not-localize/blue_2.png) Versione 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/blue_2.png) Versione 20.3.3 - Build 9234 {#release-20-3-3-build-9234}
+
+_11 gennaio 2021_
+
+* È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
+* È stato risolto un problema di regressione relativo al processo di generazione del registro di trasmissione che poteva causare l&#39;arresto anomalo del processo MTA.
+
+## ![](assets/do-not-localize/red_2.png) Versione 20.3.1 - Build 9228 {#release-20-3-1-build-9228}
 
 _27 ottobre 2020_
 
