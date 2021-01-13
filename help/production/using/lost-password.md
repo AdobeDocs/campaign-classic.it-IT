@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: b7f44f4c18bef4cc412af878846b2c4305a17787
+source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 È possibile cambiare o recuperare una password persa.
 Esistono due possibili scenari:
 
-* **Password persa da un operatore Adobe Campaign**
+**Password persa da un operatore Adobe Campaign**
 
 In questo caso, è possibile modificare la password dell&#39;operatore interessato.
 Per farlo, segui la procedura indicata di seguito:
@@ -33,7 +33,7 @@ Per farlo, segui la procedura indicata di seguito:
 
 1. Impostare la nuova password dell&#39;operatore. È consigliabile che gli operatori modifichino la password al primo riconnessione.
 
-* **Perdita interna della password (solo per i clienti interni)**
+**Perdita interna della password (solo per i clienti interni)**
 
 Se la password interna viene persa, è necessario reinizializzarla.
 A tal fine, attenersi alla procedura seguente:
