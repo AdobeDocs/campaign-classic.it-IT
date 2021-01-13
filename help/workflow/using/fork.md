@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Ad esempio, potete utilizzare l&#39;attività dopo una query per eseguire due az
 
 Potete inoltre utilizzare l&#39;attività nel contesto della creazione di contenuto e dell&#39;automazione dell&#39;invio dei contenuti, per avviare in parallelo il calcolo di destinazione e la creazione di contenuto. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >Tenete presente che le transizioni in uscita aggiunte dopo un&#39;attività Fork non verranno eseguite contemporaneamente.
 >
