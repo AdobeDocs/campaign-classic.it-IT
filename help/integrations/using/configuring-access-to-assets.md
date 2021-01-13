@@ -7,7 +7,7 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5d5d4b87bae44ce0a93458f79179434a5bf315c3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 1%
@@ -68,5 +68,6 @@ Quando si inseriscono immagini nel contenuto di una distribuzione basata su ques
 
 >[!NOTE]
 >
->Se anche il pacchetto **[!UICONTROL Integration with the Adobe Experience Cloud]** è installato nell&#39;istanza di Adobe Campaign , sarà possibile utilizzare solo le risorse disponibili nella libreria Adobe Experience Cloud. Per accedere alle risorse anche nella libreria  AEM Assets, dovete sincronizzare  AEM Assets e Adobe Experience Cloud. Le risorse in  AEM Assets saranno quindi disponibili anche nella libreria Adobe Experience Cloud. In questo caso, non è necessario creare un modello di consegna specifico. Per ulteriori informazioni sulla sincronizzazione tra  AEM Assets e Adobe Experience Cloud, fare riferimento alla [documentazione dettagliata](https://docs.adobe.com/docs/en/aod/overview/collaborating/aem-assets-aod-sync.html).
+>Se anche il pacchetto **[!UICONTROL Integration with the Adobe Experience Cloud]** è installato nell&#39;istanza di Adobe Campaign , sarà possibile utilizzare solo le risorse disponibili nella libreria Adobe Experience Cloud. Per accedere alle risorse anche nella libreria  AEM Assets, dovete sincronizzare  AEM Assets e Adobe Experience Cloud. Le risorse in  AEM Assets saranno quindi disponibili anche nella libreria Adobe Experience Cloud. In questo caso, non è necessario creare un modello di consegna specifico. Per ulteriori informazioni sulla sincronizzazione tra  AEM Assets e Adobe Experience Cloud, fare riferimento alla [documentazione dettagliata](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration).
+
 
