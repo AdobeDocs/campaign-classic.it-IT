@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
+source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 93%
+source-wordcount: '887'
+ht-degree: 91%
 
 ---
 
@@ -20,22 +20,15 @@ ht-degree: 93%
 Adobe Campaign offre una serie di strumenti per aiutarti a rispettare le [normative sulla privacy](#privacy-management-regulations) (inclusi GDPR, CCPA, PDPA, LGPD).
 
 Di seguito sono riportate le cinque funzionalità principali offerte da Adobe Campaign per garantire la conformità al GDPR e alle altre normative sulla privacy:
+* **Diritto di accesso**
+* **Diritto di eliminazione**
+* **Gestione del consenso**
+* **Conservazione dei dati**
+* **Rights Management**
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-* **Diritto di accesso**
-
-* **Diritto di eliminazione**
-
-Per ulteriori informazioni, consulta [Diritto di accesso e diritto all’oblio](#right-access-forgotten).
-
-* **Gestione del consenso**
-
-* **Conservazione dei dati**
-
-* **Rights Management**
-
-Per ulteriori informazioni, consulta [Consenso, conservazione e ruoli](#consent-retention-roles).
+Per ulteriori informazioni, vedere [Diritto di accesso e Diritto da dimenticare](#right-access-forgotten) e [Consenso, Mantenimento e Ruoli](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
