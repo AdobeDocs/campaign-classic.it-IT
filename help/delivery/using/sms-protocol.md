@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 09a79330e1ff951898d1559d5765818c12dc497a
+source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
 workflow-type: tm+mt
 source-wordcount: '8424'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Nella modalità **Trasmettitore+ricevitore** separata, la connessione utilizzata
 
 Ad esempio, quando si invia un MT, viene utilizzata la connessione del trasmettitore e la `RESP` che riconosce che il MT viene inviato anche attraverso il canale del trasmettitore. Quando si riceve un MO (o un SR), la connessione del ricevitore viene utilizzata per ricevere il MO e inviare il `RESP` che riconosce il MO.
 
-![](assets/sms_protocol_1.png)
+![](assets/do-not-localize/sms_protocol_1.png)
 
 In Adobe Campaign Classic, per collegare SR con il corrispondente MT, l&#39;SMSC restituisce un ID con i passaggi `SUBMIT_SM_RESP` e `DELIVER_SM`. L&#39;identificatore è memorizzato nel campo `providerId` della tabella `nms::providerMsgId` ed è collegato a `broadLogId` e `deliveryId`. Questa operazione di corrispondenza viene eseguita dal processo SMS durante la scrittura nel database.
 
@@ -356,7 +356,7 @@ La dimensione massima di un messaggio dipende dalla codifica. Questa tabella ria
 | Codifica | Solito data_coding | Dimensione del messaggio (caratteri) | Dimensioni parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 set di caratteri di base + estensione (i caratteri estesi prendono 2 caratteri) |
-| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
 ## Parametri del conto esterno SMPP {#SMPP-parameters-external}
@@ -505,7 +505,7 @@ La finestra è il numero di `SUBMIT_SM PDU`s che possono essere inviati senza as
 
 Esempio di trasmissione con una finestra massima di 4:
 
-![](assets/sms_protocol_2.png)
+![](assets/do-not-localize/sms_protocol_2.png)
 
 La finestra consente di aumentare il throughput quando il collegamento di rete ha una latenza elevata.  Il valore della finestra deve essere almeno il numero di SMS/s moltiplicato per la latenza del collegamento
 in secondi, in modo che il connettore non sia mai in attesa di un `SUBMIT_SM_RESP` prima di inviare il messaggio successivo.
@@ -772,7 +772,7 @@ Il periodo di validità viene trasmesso nel campo `validity_period` della `SUBMI
 
 ## Connettore SMPP generico esteso {#acc-extended-connector}
 
-![](assets/sms_protocol_4.png)
+![](assets/do-not-localize/sms_protocol_4.png)
 
 Le frecce rappresentano i flussi di dati.
 
