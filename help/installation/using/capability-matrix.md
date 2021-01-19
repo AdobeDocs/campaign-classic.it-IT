@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 18%
@@ -33,8 +33,8 @@ I diversi modelli di hosting sono introdotti [in questa sezione](../../installat
 | Gestione della piattaforma Mid-sourcing | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../installation/using/mid-sourcing-server.md) |
 | Rendering in entrata tramite Litmus | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../delivery/using/inbox-rendering.md) |
 | Integrazione con IMS ( Adobe ID) | Su richiesta | Su richiesta | Su richiesta | [Ulteriori informazioni](../../integrations/using/about-adobe-id.md) |
-| Cifratura/decrittografia dei dati per i trasferimenti di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Zipping/decompressione di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Cifratura/decrittografia dei dati per i trasferimenti di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
+| Zipping/decompressione di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
 | Delega nome di dominio | Su richiesta | Su richiesta | Non disponibile | [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html) |
 | Installazione di SpamAssassin | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../delivery/using/spamassassin.md) |
 | Accesso ai rapporti sulla recapito | Disponibile | Su richiesta | Disponibile | [Ulteriori informazioni](../../delivery/using/monitoring-deliverability.md) |
