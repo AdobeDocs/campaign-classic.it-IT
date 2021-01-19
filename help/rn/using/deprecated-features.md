@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,12 +47,13 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
   <tr>
   <td>Connettori di gestione delle relazioni con i clienti<br></td>
-   <td><p>A partire dalla versione Campaign 20.3, i seguenti connettori di gestione delle relazioni con i clienti sono diventati obsoleti:</p>
+   <td><p>A partire dalla release Campaign 20.3, i seguenti connettori CRM sono obsoleti con Campaign:</p>
    <ul>
    <li>API Soap - On-premise: 2007, 2015, 2016</li>
    <li>API Soap - Online: 2015, 2016</li>
    <li>API web - Microsoft Dynamics CRM on-premise: 2016, 2016 aggiornamento 1</li>
    <li>API web - Microsoft Dynamics CRM online: 2016, 2016 aggiornamento 1</li>
+   <li> API Oracle On Demand</li>
    </ul>
   <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td>
