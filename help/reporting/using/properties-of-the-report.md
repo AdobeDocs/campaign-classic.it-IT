@@ -7,9 +7,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ La lingua di modifica è la lingua in cui si scrive. Quando aggiungete una lingu
 
 Nella scheda **[!UICONTROL Rendering]** è possibile personalizzare la modalità di visualizzazione dei dati per la pagina. Potete selezionare:
 
-* Il motore di rendering del grafico:  Adobe Campaign offre due diverse modalità per generare il rendering del grafico. Per impostazione predefinita, il motore di rendering è HTML 5. Se necessario, potete selezionare il rendering del Flash.
+* Il motore di rendering del grafico: per impostazione predefinita, il motore di rendering è HTML 5.
 * Tipo di navigazione nel rapporto: tramite pulsanti o collegamenti.
 * Posizione predefinita delle etichette per gli elementi del report. Questa posizione può essere sovraccaricata per ogni elemento.
 * Modello o tema utilizzato per generare le pagine dei rapporti.
