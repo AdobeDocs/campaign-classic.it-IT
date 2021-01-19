@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -35,7 +35,7 @@ La sezione superiore della finestra di configurazione per questa attività conse
 
 ![](assets/preprocessing-dataloading.png)
 
-Per ulteriori informazioni, consulta questa sezione: [Estrazione o decrittografia di un file prima di elaborare](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Per ulteriori informazioni, consulta questa sezione: [Estrazione o decrittografia di un file prima di elaborare](../../platform/using/unzip-decrypt.md).
 
 ## Definizione del formato di file {#defining-the-file-format}
 
@@ -113,7 +113,7 @@ L&#39;esempio seguente consente di raccogliere un file sul server ogni giorno, c
    * la prima colonna contiene un codice che coincide con l’evento: acquisto (più o meno di 3.000 euro), nessun acquisto o rimborso per uno o più acquisti.
    * le quattro colonne seguenti contengono nome, cognome, e-mail e numero di account del cliente.
 
-   La configurazione del formato del file da caricare coincide con quella definita durante l&#39;importazione di dati in  Adobe Campaign. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/importing-data.md#step-2---source-file-selection).
+   La configurazione del formato del file da caricare coincide con quella definita durante l&#39;importazione di dati in  Adobe Campaign. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Nell&#39;attività divisa, specificate i sottoinsiemi da creare, in base al valore della colonna **Event**.
 
