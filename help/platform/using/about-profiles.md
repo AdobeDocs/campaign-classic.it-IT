@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 18%
@@ -45,7 +45,7 @@ I metodi principali per creare i profili dei destinatari sono i seguenti:
 
 >[!NOTE]
 >
->Per informazioni sull&#39;importazione di file e moduli Web, fare riferimento a [Importazione ed esportazione generiche](../../platform/using/generic-imports-and-exports.md).
+>Per informazioni sull&#39;importazione di file e moduli Web, fare riferimento a [Importazione ed esportazione generiche](../../platform/using/get-started-data-import-export.md).
 
 ## Profili e destinazioni {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ Consente inoltre di accedere a:
 * elenchi; vedere [Creazione e gestione di elenchi](../../platform/using/creating-and-managing-lists.md),
 * servizi di abbonamento; fare riferimento a [questa pagina](../../delivery/using/managing-subscriptions.md),
 * applicazioni web; fare riferimento a [questa pagina](../../web/using/about-web-applications.md),
-* importazioni ed esportazioni (posti di lavoro); fare riferimento a [Importazioni ed esportazioni generiche](../../platform/using/generic-imports-and-exports.md),
+* importazioni ed esportazioni (posti di lavoro); fare riferimento a [Importazioni ed esportazioni generiche](../../platform/using/about-generic-imports-exports.md),
 * flussi di lavoro di targeting; fare riferimento a [questa pagina](../../workflow/using/building-a-workflow.md#implementation-steps-).
 
 La pagina dei destinatari consente di eseguire operazioni frequenti sui profili: modifiche, aggiornamenti, aggiunta, eliminazione, ordinamento.
