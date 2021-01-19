@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -616,11 +616,11 @@ Tutti i report standard attualmente utilizzano il motore di rendering v6.x. Se a
 
 ### Rapporti personalizzati {#personalized-reports}
 
-Se desiderate avere il banner blu dalla release v7 (che consenta di accedere agli universi), dovete ripubblicare i rapporti. In caso di problemi, potete forzare il motore di rendering v6.0. A questo scopo, andate a **[!UICONTROL Properties]** all&#39;interno del rapporto, fate clic su **[!UICONTROL Rendering]** e scegliete il motore di rendering **[!UICONTROL Version 6.0 (Flash & OpenOffice)]**.
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-Se desiderate beneficiare delle nuove funzionalità del rapporto, dovete selezionare il motore di rendering v.6.x. In questo caso, controllare tutti gli script e modificarli se necessario. Per quanto riguarda l&#39;esportazione PDF, se avevate aggiunto script specifici per OpenOffice, questo non funzionerà più con il nuovo motore di esportazione PDF (PhantomJS).
+-->
+Se desiderate sfruttare le nuove funzionalità del rapporto, dovete ripubblicare i rapporti. A questo scopo, modificate il rapporto **[!UICONTROL Properties]**, fate clic su **[!UICONTROL Rendering]** e selezionate il motore di rendering v.6.x. In questo caso, controllare tutti gli script e modificarli se necessario. Per quanto riguarda l&#39;esportazione PDF, se avevate aggiunto script specifici per Open Office, questo non funzionerà più con il nuovo motore di esportazione PDF (PhantomJS).
 
 ## Applicazioni web {#web-applications}
 
