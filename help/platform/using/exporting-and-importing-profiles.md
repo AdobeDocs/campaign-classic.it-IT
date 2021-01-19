@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 15%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 15%
 
 ## Utilizzare workflow{#use-workflows}
 
-Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro attraverso le attività **[!UICONTROL Import]** e **[!UICONTROL Export]**. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. [Ulteriori informazioni](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite attività di importazione ed esportazione. Possono essere ripetuti automaticamente in base a un programma, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi. [Ulteriori informazioni](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Se necessario, potete creare un processo di importazione o esportazione occasionale tramite la funzione **[!UICONTROL Generic imports and exports]** descritta di seguito.
 
 ## Creare processi{#create-jobs}
 
-Per configurare ed eseguire i processi di importazione ed esportazione dei dati, andate alla scheda **[!UICONTROL Profiles and targets]** e fate clic sul collegamento **[!UICONTROL Jobs]**. [Ulteriori informazioni](../../platform/using/generic-imports-and-exports.md)
+Per configurare ed eseguire i processi di importazione ed esportazione dei dati, andate alla scheda **[!UICONTROL Profiles and targets]** e fate clic sul collegamento **[!UICONTROL Jobs]**. [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
