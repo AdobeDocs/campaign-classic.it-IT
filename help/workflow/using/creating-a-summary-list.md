@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Questi dati sono contenuti in un file di testo &quot;Purchases.txt&quot;.
 
    L&#39;attività **Caricamento dati(file)** consente di arricchire la tabella di lavoro del flusso di lavoro con i dati raccolti.
 
-   Per ulteriori informazioni su questa attività, vedere [Caricamento di dati da un file](../../workflow/using/importing-data.md#loading-data-from-a-file).
+   Per ulteriori informazioni su questa attività, vedere [Caricamento di dati da un file](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Configurate l&#39;attività **Raccolta file** per raccogliere file di testo (*.txt) dalla directory selezionata.
 
