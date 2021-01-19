@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 2%
@@ -104,7 +104,7 @@ Per eseguire questa operazione:
 
 1. Quando importate i destinatari, fate clic sul collegamento **[!UICONTROL File format definition...]** per selezionare e configurare il file esterno.
 
-   Per ulteriori informazioni sull&#39;importazione dei dati, consultare [questa sezione](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Per ulteriori informazioni sull&#39;importazione dei dati, consultare [questa sezione](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Fai clic su **[!UICONTROL Finish]** e configura la consegna come consegna standard.
 
