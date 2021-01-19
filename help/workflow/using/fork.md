@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,9 @@ Potete inoltre utilizzare l&#39;attività nel contesto della creazione di conten
 
 >[!IMPORTANT]
 >
->Tenete presente che le transizioni in uscita aggiunte dopo un&#39;attività Fork non verranno eseguite contemporaneamente.
->
->L&#39;attività non deve pertanto essere utilizzata per migliorare le prestazioni del flusso di lavoro, ma per eseguire più attività in modo indipendente, e infine unirle prima di eseguire il resto del flusso di lavoro.
+>Le transizioni in uscita aggiunte dopo un&#39;attività **[!UICONTROL Fork]** **non verranno eseguite contemporaneamente**. Questo comportamento può avere un impatto sulle prestazioni del flusso di lavoro. Utilizzate questa attività se è necessario eseguire diverse attività in modo indipendente, e alla fine unirle prima di eseguire il resto del flusso di lavoro.
 
-Per configurare l&#39;attività, apritela e definite il numero e l&#39;etichetta delle transizioni in uscita desiderate.
+Per configurare l&#39;attività **[!UICONTROL Fork]**, aprirla e definire il numero e l&#39;etichetta delle transizioni in uscita.
 
 ![](assets/s_user_segmentation_fork.png)
 
