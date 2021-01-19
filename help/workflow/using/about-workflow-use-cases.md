@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 64%
+source-wordcount: '207'
+ht-degree: 62%
 
 ---
 
@@ -52,10 +52,11 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Creazione di un elenco di riepilogo](../../workflow/using/creating-a-summary-list.md)
 * [Arricchimento dei dati](../../workflow/using/enriching-data.md)
 * [Utilizzo di aggregati](../../workflow/using/using-aggregates.md)
-* [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
 * [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
 * [Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](../../workflow/using/deduplication-merge.md)
+* [Impostazione di un flusso di lavoro di importazione periodico](../../workflow/using/recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
 
