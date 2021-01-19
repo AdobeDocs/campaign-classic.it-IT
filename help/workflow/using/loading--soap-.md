@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 4%
@@ -43,7 +43,7 @@ L&#39;operazione è la seguente:
 
    Se si desidera aggiornare l&#39;esempio, selezionare **[!UICONTROL Re-analyze the example]**.
 
-   È inoltre possibile personalizzare il formato dei dati delle colonne tramite il collegamento **[!UICONTROL Advanced parameters]**. Per ulteriori informazioni sulla formattazione dei dati importati, vedere la sezione [](../../platform/using/importing-data.md#import-wizard).
+   È inoltre possibile personalizzare il formato dei dati delle colonne tramite il collegamento **[!UICONTROL Advanced parameters]**. Per ulteriori informazioni sulla formattazione dei dati importati, vedere la sezione [](../../platform/using/executing-import-jobs.md).
 
 1. È possibile utilizzare il numero di riga come identificatore e/o specificare che la chiamata SOAP restituisce diversi elementi.
 1. Immettere gli script di tabulazione seguenti in base alla funzione:
