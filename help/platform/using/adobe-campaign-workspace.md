@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 2%
@@ -291,7 +291,7 @@ Fate clic su **[!UICONTROL Save]** nella finestra delle proprietà della cartell
 
 Per esportare i dati da un elenco, è necessario utilizzare una procedura guidata di esportazione. Per accedervi, selezionate gli elementi da esportare dall&#39;elenco, fate clic con il pulsante destro del mouse e selezionate **[!UICONTROL Export...]**.
 
-L&#39;utilizzo delle funzioni di importazione ed esportazione è spiegato in [Importazioni ed esportazioni generiche](../../platform/using/generic-imports-and-exports.md).
+L&#39;utilizzo delle funzioni di importazione ed esportazione è spiegato in [Importazioni ed esportazioni generiche](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
