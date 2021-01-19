@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console del cl
 
 ## Come si importano i profili? {#how-to-import-profiles-}
 
-Scopri dei facili casi d’uso per [importare profili](../../platform/using/importing-data.md#generic-import-samples) nel tuo database.
+Scopri dei facili casi d’uso per [importare profili](../../platform/using/import-operations-samples.md) nel tuo database.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://docs.adobe.com/content/help/it/campaign-classic-learn/tutorials/getting-started/importing-profiles.html)
 
