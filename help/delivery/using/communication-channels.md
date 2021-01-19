@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1210'
 ht-degree: 12%
 
 ---
@@ -88,7 +88,11 @@ I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna su app
 
 ## Altri canali {#other-channels}
 
- Adobe Campaign offre modelli di consegna di agenzie o telefoni, che vengono utilizzati per creare consegne esterne. L&#39;utilizzo di questi canali implica la configurazione di metodologie dedicate per elaborare i file di output. I passaggi di configurazione sono gli stessi di [Canale di posta diretta](../../delivery/using/about-direct-mail-channel.md).
+ Adobe Campaign offre un modello di consegna telefonica, che consente di creare consegne esterne. L&#39;utilizzo di questo canale implica la configurazione di metodologie dedicate per elaborare i file di output. I passaggi di configurazione sono gli stessi di [Canale di posta diretta](../../delivery/using/about-direct-mail-channel.md).
+
+>[!NOTE]
+>
+>Il canale telefonico non è disponibile. La sua attuazione richiede  consulenza del Adobe o un partner  Adobe. Per maggiori informazioni, contattate il rappresentante del Adobe .
 
 Inoltre, le consegne di tipo &quot;Altro&quot; utilizzano un modello tecnico specifico che non esegue un processo: questo consente loro di gestire le azioni di marketing eseguite al di fuori della piattaforma Adobe Campaign .
 
