@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Scopri come orchestrare processi e attività con i flussi di lavoro di Adobe Cam
 
 ## Come posso importare dati in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Scopri le best practice per importare dati tramite un flusso di lavoro di Campaign [in questa sezione](../../workflow/using/importing-data.md).
+Scopri le best practice per importare i dati in [questa sezione](../../platform/using/import-export-best-practices.md).
 
 ## Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution-}
 
@@ -59,7 +59,7 @@ Scopri come dividere un target in diversi sottoinsiemi [in questa sezione](../..
 
 Puoi modificare alcuni campi in una tabella Campaign con valori provenienti da un file di testo esterno.
 
-[Fai clic qui per scoprire come](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file).
+[Fai clic qui per scoprire come](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
 ## Come posso identificare ed eseguire il targeting dei nuovi destinatari? {#how-can-i-identify-and-target-new-recipients-}
 
