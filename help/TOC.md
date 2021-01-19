@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
+source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2293'
+ht-degree: 94%
 
 ---
 
@@ -68,10 +68,22 @@ ht-degree: 98%
       + [Esportazione e importazione di profili](platform/using/exporting-and-importing-profiles.md)
       + [Creazione e gestione di elenchi](platform/using/creating-and-managing-lists.md)
    + Importazione ed esportazione di dati {#importing-and-exporting-data}
-      + [Importazioni ed esportazioni generiche](platform/using/generic-imports-and-exports.md)
-      + [Esportazione di dati](platform/using/exporting-data.md)
-      + [Importazione di dati](platform/using/importing-data.md)
-      + [Utilizzo di server SFTP](platform/using/sftp-server-usage.md)
+      + [Introduzione all&#39;importazione e all&#39;esportazione dei dati](platform/using/get-started-data-import-export.md)
+      + [Importazione ed esportazione di dati tramite flussi di lavoro](platform/using/import-export-workflows.md)
+      + Utilizzo di importazioni ed esportazioni generiche {generico-import-export}
+         + [Introduzione alle importazioni e alle esportazioni generiche](platform/using/about-generic-imports-exports.md)
+         + [Creazione di modelli di importazione ed esportazione](platform/using/creating-import-export-templates.md)
+         + [Creazione di processi di importazione ed esportazione](platform/using/creating-import-export-jobs.md)
+         + [Configurazione dei processi di importazione](platform/using/executing-import-jobs.md)
+         + [Configurazione dei processi di esportazione](platform/using/executing-export-jobs.md)
+         + [Monitoraggio dell’esecuzione dei processi](platform/using/monitoring-jobs-execution.md)
+         + [Esempi di importazione generici](platform/using/import-operations-samples.md)
+      + Gestione della crittografia dei dati e della compressione {managing-data-Encryption-compressione}
+         + [Estrazione o decrittografia di un file prima dell&#39;elaborazione](platform/using/unzip-decrypt.md)
+         + [Zipping o cifratura di un file prima dell&#39;elaborazione](platform/using/zip-encrypt.md)
+      + Procedure ottimali e risoluzione dei problemi {best practice}
+         + [Best practice di importazione ed esportazione](platform/using/import-export-best-practices.md)
+         + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
    + Filtrare dati {#filtering-data}
       + [Opzioni di filtro](platform/using/filtering-options.md)
       + [Creazione di filtri](platform/using/creating-filters.md)
@@ -86,7 +98,10 @@ ht-degree: 98%
       + [Gestione delle enumerazioni](platform/using/managing-enumerations.md)
    + Connettori {#connectors}
       + [Informazioni sui connettori](platform/using/about-connectors.md)
-      + [Connettori di gestione delle relazioni con i clienti](platform/using/crm-connectors.md)
+      + Connettori di gestione delle relazioni con i clienti{#crm-connectors}
+         + [Guida introduttiva ai connettori CRM](platform/using/crm-connectors.md)
+         + [Connetti con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Sincronizzare i dati con CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Invio di messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
@@ -115,7 +130,7 @@ ht-degree: 98%
       + [Canale SMS](delivery/using/sms-channel.md)
       + [Canale LINE](delivery/using/line-channel.md)
       + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
-      + [Risoluzione degli SMS](delivery/using/troubleshooting-sms.md)
+      + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
    + Invio di notifiche push {#sending-push-notifications}
       + [Informazioni sul canale app mobile](delivery/using/about-mobile-app-channel.md)
       + [Integrazione dell’SDK Campaign nell’app mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
@@ -347,13 +362,11 @@ ht-degree: 98%
       + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
       + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
 + Automazione con flussi di lavoro {#automating-with-workflows}
-   + Introduzione {#introduction}
-      + [Introduzione ai flussi di lavoro](workflow/using/about-workflows.md)
+   + Introduzione ai flussi di lavoro {#introduction}
+      + [Informazioni sui flussi di lavoro](workflow/using/about-workflows.md)
       + [Informazioni sulle attività](workflow/using/about-activities.md)
-   + Funzionamento generale {#general-operation}
       + [Creazione di un flusso di lavoro](workflow/using/building-a-workflow.md)
       + [Dati di targeting](workflow/using/targeting-data.md)
-      + [Importazione di dati](workflow/using/importing-data.md)
       + [Come utilizzare i dati dei flussi di lavoro](workflow/using/how-to-use-workflow-data.md)
       + [Procedure consigliate per i flussi di lavoro](workflow/using/workflow-best-practices.md)
    + Esecuzione di un flusso di lavoro {#executing-a-workflow}
@@ -441,6 +454,7 @@ ht-degree: 98%
          + [Arricchimento dei dati](workflow/using/enriching-data.md)
          + [Utilizzo di aggregati](workflow/using/using-aggregates.md)
          + [Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](workflow/using/deduplication-merge.md)
+         + [Impostazione di un flusso di lavoro di importazione periodico](workflow/using/recurring-import-workflow.md)
       + Progettazione di query {#designing-queries}
          + [Aggiornamento dell’elenco trimestrale tramite una query incrementale](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
