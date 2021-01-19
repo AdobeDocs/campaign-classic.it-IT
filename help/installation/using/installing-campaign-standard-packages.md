@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1173'
 ht-degree: 5%
 
 ---
@@ -122,6 +122,11 @@ Nella tabella seguente sono elencati tutti i pacchetti predefiniti per Campaign.
   <tr> 
    <td> Canale mobile (SMS) <br /> </td> 
    <td> Invia le consegne utilizzando il canale Mobile/SMS con  Adobe Campaign. Facoltativo. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Tutto<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> Canale telefonico<br /> </td> 
+   <td> Invia le consegne utilizzando il canale telefonico con  Adobe Campaign. Utilizzato per call center. Facoltativo. <a href="../../delivery/using/communication-channels.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
