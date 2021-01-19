@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -130,7 +130,7 @@ Per registrare i destinatari per un servizio di informazione, potete:
 * Iscriviti automaticamente a questo servizio un set di destinatari. L&#39;elenco dei destinatari può provenire da un&#39;operazione di filtro, un gruppo, una cartella, un&#39;importazione o una selezione diretta utilizzando il mouse. Per iscriverti a questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
 * Importa i destinatari e li iscrivi automaticamente a un servizio di informazione. A questo scopo, selezionate il servizio interessato nell’ultimo passaggio della procedura guidata di importazione.
 
-   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/importing-data.md#import-wizard).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
 
 * Utilizzare un modulo Web per consentire ai destinatari di iscriversi a un servizio.
 
