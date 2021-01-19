@@ -7,9 +7,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1266'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Sono disponibili i seguenti tipi di campo:
 
 ## Inserimento di contenuto HTML {#inserting-html-content}
 
-È possibile includere il contenuto HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, oggetti video o Flash, ecc.
+È possibile includere il contenuto HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, video e così via
 
 L&#39;editor HTML consente di inserire il contenuto da inserire nella pagina del modulo. Per aprire l&#39;editor, fare clic su **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
