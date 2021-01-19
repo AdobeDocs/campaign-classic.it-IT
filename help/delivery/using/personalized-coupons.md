@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -23,7 +23,7 @@ L&#39;aggiunta di buoni alle consegne consente di offrire ai destinatari un valo
 >
 >La gestione dei coupon è un pacchetto che deve essere installato. Per confermare di disporre della gestione del coupon, controllare **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->I dati coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consultare [questa sezione](../../platform/using/generic-imports-and-exports.md).
+>I dati coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consultare [questa sezione](../../platform/using/get-started-data-import-export.md).
 
 ## Creazione di un coupon {#creating-a-coupon}
 
@@ -58,7 +58,7 @@ Prima di seguire i passaggi descritti di seguito, accertatevi di conoscere il ti
 
    >[!NOTE]
    >
-   >I singoli coupon possono essere importati in massa. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consultare [questa sezione](../../platform/using/generic-imports-and-exports.md).
+   >I singoli coupon possono essere importati in massa. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consultare [questa sezione](../../platform/using/get-started-data-import-export.md).
 
 ### Configurazione di singoli coupon {#configuring-individual-coupons}
 
