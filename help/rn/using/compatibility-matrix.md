@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: ff3d18b104a8dba7cd813aa698f9c27b4e25e244
+source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 99%
 
 ---
 
@@ -178,19 +178,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </td>
 </tr>
 <tr>
-<td>API SFDC</td>
-<td>
-<p>API versione 21</p>
-<p>API versione 15</p>
-</td>
-</tr>
-<tr><td> API Oracle On Demand</td>
-<td>
-<p>API Web Services v1.0</p>
-</td>
-</tr>
-<tr>
-<td>MS Dynamics</td>
+<td>Connettore Microsoft Dynamics</td>
 <td>
 <p>API web - Dynamics 365 on-premise e online</p>
 </td>
