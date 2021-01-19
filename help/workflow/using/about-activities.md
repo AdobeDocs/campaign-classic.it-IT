@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 16%
+source-wordcount: '94'
+ht-degree: 14%
 
 ---
 
@@ -28,6 +28,5 @@ Nei flussi di lavoro della campagna, la scheda **[!UICONTROL Events]** viene sos
 Leggi tutto:
 
 * [Informazioni sulle attività di targeting](../../workflow/using/about-targeting-activities.md)
-* [Importazione di dati](../../workflow/using/importing-data.md)
 * [Esecuzione di un flusso di lavoro](../../workflow/using/starting-a-workflow.md)
 * [Procedure consigliate per i flussi di lavoro](../../workflow/using/workflow-best-practices.md)
