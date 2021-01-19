@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -46,7 +46,7 @@ Per le consegne per corrispondenza diretta, gli indirizzi iniziali vengono aggiu
 >Per le consegne per corrispondenza diretta, il formato del file di estrazione deve rispettare i seguenti limiti:
 >
 >* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39;opzione **[!UICONTROL Single row (expert user)]** non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39;opzione **[!UICONTROL Single row (expert user)]** non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 
 >
 
