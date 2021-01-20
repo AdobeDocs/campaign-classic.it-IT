@@ -70,7 +70,7 @@ ht-degree: 94%
    + Importazione ed esportazione di dati {#importing-and-exporting-data}
       + [Introduzione all&#39;importazione e all&#39;esportazione dei dati](platform/using/get-started-data-import-export.md)
       + [Importazione ed esportazione di dati tramite flussi di lavoro](platform/using/import-export-workflows.md)
-      + Utilizzo di importazioni ed esportazioni generiche {generico-import-export}
+      + Utilizzo di importazioni ed esportazioni generiche {generic-imports-exports}
          + [Introduzione alle importazioni e alle esportazioni generiche](platform/using/about-generic-imports-exports.md)
          + [Creazione di modelli di importazione ed esportazione](platform/using/creating-import-export-templates.md)
          + [Creazione di processi di importazione ed esportazione](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [Configurazione dei processi di esportazione](platform/using/executing-export-jobs.md)
          + [Monitoraggio dell’esecuzione dei processi](platform/using/monitoring-jobs-execution.md)
          + [Esempi di importazione generici](platform/using/import-operations-samples.md)
-      + Gestione della crittografia dei dati e della compressione {managing-data-Encryption-compressione}
+      + Gestione della crittografia dei dati e della compressione {managing-data-encryption-compression}
          + [Estrazione o decrittografia di un file prima dell&#39;elaborazione](platform/using/unzip-decrypt.md)
          + [Zipping o cifratura di un file prima dell&#39;elaborazione](platform/using/zip-encrypt.md)
-      + Procedure ottimali e risoluzione dei problemi {best practice}
+      + Procedure ottimali e risoluzione dei problemi {best-practices}
          + [Best practice di importazione ed esportazione](platform/using/import-export-best-practices.md)
          + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
    + Filtrare dati {#filtering-data}
