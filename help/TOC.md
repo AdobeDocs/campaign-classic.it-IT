@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 94%
+source-wordcount: '2290'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 94%
    + Importazione ed esportazione di dati {#importing-and-exporting-data}
       + [Introduzione all&#39;importazione e all&#39;esportazione dei dati](platform/using/get-started-data-import-export.md)
       + [Importazione ed esportazione di dati tramite flussi di lavoro](platform/using/import-export-workflows.md)
-      + Utilizzo di importazioni ed esportazioni generiche {generic-imports-exports}
+      + Operazioni con importazioni ed esportazioni generiche {#generic-imports-exports}
          + [Introduzione alle importazioni e alle esportazioni generiche](platform/using/about-generic-imports-exports.md)
          + [Creazione di modelli di importazione ed esportazione](platform/using/creating-import-export-templates.md)
          + [Creazione di processi di importazione ed esportazione](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 94%
          + [Configurazione dei processi di esportazione](platform/using/executing-export-jobs.md)
          + [Monitoraggio dell’esecuzione dei processi](platform/using/monitoring-jobs-execution.md)
          + [Esempi di importazione generici](platform/using/import-operations-samples.md)
-      + Gestione della crittografia dei dati e della compressione {managing-data-encryption-compression}
+      + Gestione della crittografia e della compressione dei dati {#managing-data-encryption-compression}
          + [Estrazione o decrittografia di un file prima dell&#39;elaborazione](platform/using/unzip-decrypt.md)
          + [Zipping o cifratura di un file prima dell&#39;elaborazione](platform/using/zip-encrypt.md)
-      + Procedure ottimali e risoluzione dei problemi {best-practices}
+      + Procedure ottimali e risoluzione dei problemi {#best-practices}
          + [Best practice di importazione ed esportazione](platform/using/import-export-best-practices.md)
          + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
    + Filtrare dati {#filtering-data}
@@ -453,7 +453,7 @@ ht-degree: 94%
          + [Creazione di un elenco di riepilogo](workflow/using/creating-a-summary-list.md)
          + [Arricchimento dei dati](workflow/using/enriching-data.md)
          + [Utilizzo di aggregati](workflow/using/using-aggregates.md)
-         + [Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](workflow/using/deduplication-merge.md)
+         + [Utilizzo della funzionalità di unione dell’attività Deduplicazione](workflow/using/deduplication-merge.md)
          + [Impostazione di un flusso di lavoro di importazione periodico](workflow/using/recurring-import-workflow.md)
       + Progettazione di query {#designing-queries}
          + [Aggiornamento dell’elenco trimestrale tramite una query incrementale](workflow/using/quarterly-list-update.md)
@@ -618,7 +618,7 @@ ht-degree: 94%
       + [Creazione e configurazione del database](installation/using/creating-and-configuring-the-database.md)
       + [Configurazione del server Campaign](installation/using/campaign-server-configuration.md)
       + [Distribuzione di un’istanza](installation/using/deploying-an-instance.md)
-      + [Installazione di pacchetti Campaign Classic incorporati](installation/using/installing-campaign-standard-packages.md)
+      + [Installazione dei pacchetti integrati di Campaign Classic](installation/using/installing-campaign-standard-packages.md)
    + Configurazioni aggiuntive {#additional-configurations}
       + [Configurazione del server Campaign](installation/using/configuring-campaign-server.md)
       + [Connessione tramite LDAP](installation/using/connecting-through-ldap.md)
@@ -705,9 +705,9 @@ ht-degree: 94%
          + [Errore di connessione](production/using/failure-to-connect.md)
          + [Soglie di connessione](production/using/connection-thresholds.md)
       + Risoluzione dei problemi tecnici {#technical-troubleshooting-toc}
-         + [Stack trace in Linux](production/using/stack-trace-in-linux.md)
+         + [Traccia dello stack in Linux](production/using/stack-trace-in-linux.md)
          + [Comportamento JSP](production/using/jsp-behavior.md)
-         + [Individuazione versione Tomcat](production/using/locate-tomcat-version.md)
+         + [Individuazione della versione Tomcat](production/using/locate-tomcat-version.md)
 + Guida per gli sviluppatori {#configuring-campaign-classic}
    + Modello dati {#data-model}
       + [Informazioni sul modello dati](configuration/using/about-data-model.md)
