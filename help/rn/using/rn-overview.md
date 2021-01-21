@@ -6,11 +6,11 @@ description: Ulteriori informazioni sugli aggiornamenti di Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ A ogni build è associato uno stato. Di seguito sono riportati gli stati e le mo
 
 ![](assets/do-not-localize/green3.png) **Disponibilità generale** (GA): convalidata in produzione e raccomandata da Adobe.
 
-Le **ultime build** in GA sono: [Gold Standard 11](../../rn/using/gold-standard.md#gs-11) e [Campaign versione 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+Le **ultime build GA** sono: [Gold Standard 11](../../rn/using/gold-standard.md#gs-11) e [Campaign versione 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Disponibilità limitata** (LA): solo distribuzione su richiesta.
 
@@ -55,7 +55,7 @@ In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, �
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-In qualità di utente in hosting Gold Standard, si beneficerà automaticamente dell&#39;aggiornamento Gold Standard con la [più recente build GA Gold Standard](../../rn/using/gold-standard.md#gs-10) senza alcuna azione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+In qualità di utente Gold Standard in hosting, potrai beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento Gold Standard con la [più recente build Gold Standard a disponibilità generale (GA)](../../rn/using/gold-standard.md#gs-10). [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >La matrice di compatibilità per Gold Standard è disponibile nella [Matrice di compatibilità GA](../../rn/using/compatibility-matrix-gs.md).
