@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
+source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -22,10 +22,12 @@ ht-degree: 0%
 Con Digital Content Editor è possibile inserire e formattare gli elementi della pagina e mappare i campi del database con gli elementi di una pagina HTML. Questo editor è disponibile quando si crea una pagina per un&#39;applicazione Web o quando si creano consegne basate su un modello DCE.
 
 >[!NOTE]
->>Per aggiungere codice JavaScript lato server, utilizzate i blocchi di personalizzazione. [Ulteriori informazioni](../../delivery/using/personalization-blocks.md).
 >
+>Per aggiungere codice JavaScript lato server, utilizzate i blocchi di personalizzazione. [Ulteriori informazioni](../../delivery/using/personalization-blocks.md).
+
 >[!CAUTION]
-È necessario fare riferimento a tutte le risorse esterne con un URL HTTPS.
+>
+>È necessario fare riferimento a tutte le risorse esterne con un URL HTTPS.
 
 ## Passaggi chiave per l&#39;utilizzo di Digital Content Editor {#content-editor-general-operation}
 
@@ -43,7 +45,8 @@ Per creare una semplice applicazione Web ****, è necessario:
 1. Pubblicare l&#39;applicazione Web - [Ulteriori informazioni](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-Un esempio di implementazione completo nel contesto di un&#39;applicazione Web è disponibile in [questa sezione](../../web/using/creating-a-landing-page.md).
+>
+>Un esempio di implementazione completo nel contesto di un&#39;applicazione Web è disponibile in [questa sezione](../../web/using/creating-a-landing-page.md).
 
 Per creare una **consegna di e-mail**, è necessario:
 
@@ -53,4 +56,5 @@ Per creare una **consegna di e-mail**, è necessario:
 1. Invia la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
-Un esempio di implementazione completo nel contesto di una distribuzione tramite e-mail è disponibile in [questo caso di utilizzo](../../web/using/use-case--creating-an-email-delivery.md).
+>
+>Un esempio di implementazione completo nel contesto di una distribuzione tramite e-mail è disponibile in [questo caso di utilizzo](../../web/using/use-case--creating-an-email-delivery.md).
