@@ -5,10 +5,10 @@ product: campaign
 title: Documentazione di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 66%
+source-wordcount: '291'
+ht-degree: 60%
 
 ---
 
@@ -19,13 +19,15 @@ ht-degree: 66%
 
 ## Novità
 
+* **[Connessione tramite IMS/ Adobe ID Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per collegarti a Campaign, devi effettuare l&#39;aggiornamento per poter connettersi a Campaign dopo il** 21 marzo 2021 **.
+
+* **[Bollettino ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> sulla sicurezza delle campagne: aggiorna le ultime build per proteggere la piattaforma Campaign.
+
 * **[Rimuovi ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione di Gmail
 
-* **[Aggiornamento dell’](integrations/using/configuring-adobe-io.md)**<br/> integrazione di Adobe Experience Cloud TriggersIl servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scopri come effettuare la migrazione a  Adobe I/O
+* **[Aggiornare l&#39;](integrations/using/configuring-adobe-io.md)**<br/> integrazione con Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  Adobe I/O.
 
 * **[Passa ad ](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> APIL del provider APN basato su HTTP/2008888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
-
-* **[Aggiungere icone ai ](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/> messaggiÈ ora possibile inserire icone nei messaggi e nell’oggetto
 
 * **[Ottenere assistenza](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/>
 Accedi a domande frequenti, best practice e risorse di assistenza e richiedi assistenza
