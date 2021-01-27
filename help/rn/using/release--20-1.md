@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 6%
+source-wordcount: '1429'
+ht-degree: 8%
 
 ---
 
@@ -23,10 +23,17 @@ _23 dicembre 2020_
 
 >[!CAUTION]
 >
->Questa versione include un nuovo protocollo di connessione:  l&#39;aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il 21 marzo 2021.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite  Adobe Identity Service (IMS), l&#39;aggiornamento è obbligatorio per il server e la console client di Campaign per poter connettersi a Campaign dopo il **21 marzo 2021**.
+   >
+   > 
+* Questa versione include una correzione di sicurezza: l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
 
-* Il protocollo di connessione è stato aggiornato per seguire il nuovo meccanismo di autenticazione IMS.
-* È stato risolto un problema di sicurezza per rafforzare la protezione contro i problemi SSRF (Server Side Request Forgery). (NEO-27777)
+>
+
+
+
+* Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
+* È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Versione 20.1.3 - Build 9124{#release-20-1-3-build-9124}
 
