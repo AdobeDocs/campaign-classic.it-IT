@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 9a104fdc7bed89f56178d5ab638e1440e6342efc
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '8424'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
@@ -819,7 +819,7 @@ Se avete più account sulla stessa istanza di Adobe Campaign  che si connettono 
 ### Abilitare tracce SMPP dettagliate durante i controlli {#enable-verbose}
 
 È sempre necessario abilitare le tracce SMPP dettagliate durante i controlli.
-Anche se non è possibile controllare personalmente i file di registro, sarà più semplice per il supporto di aiutarvi.
+Anche se non è possibile controllare personalmente i registri, sarà più semplice per [ assistenza clienti Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) aiutarti.
 
 ### Test dell&#39;SMS {#test}
 
