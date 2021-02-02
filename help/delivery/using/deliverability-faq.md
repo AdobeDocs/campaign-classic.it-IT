@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#
 * Aggiornare i moduli di iscrizione per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dalla destinazione.
 
-Se il problema persiste, contattate i servizi commerciali o di recapito,  Adobe Campaign Client Care o  supporto Adobe Campaign.
+Se il problema persiste, contattate l&#39;Assistenza clienti [ Adobe ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) del servizio commerciale o di recapito.
 
 ## elenco Bloccati e quarantena {#denylist-versus-quarantine}
 
