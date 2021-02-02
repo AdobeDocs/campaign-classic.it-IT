@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '171'
 ht-degree: 9%
 
 ---
@@ -29,4 +29,4 @@ In questa architettura specifica, la cella di esecuzione è separata dall&#39;is
 
 >[!NOTE]
 >
->Per creare nuovi utenti per le istanze di esecuzione del Centro messaggi ospitate  Adobe Cloud, è necessario contattare  Assistenza clienti del Adobe. Gli utenti del Centro messaggi sono operatori specifici che richiedono autorizzazioni dedicate per accedere alle cartelle &#39;Eventi in tempo reale&#39; (nmsRtEvent).
+>Per creare nuovi utenti per le istanze di esecuzione del Centro messaggi ospitate in  Adobe Cloud, è necessario contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). [ Gli utenti del Centro messaggi sono operatori specifici che richiedono autorizzazioni dedicate per accedere alle cartelle &#39;Eventi in tempo reale&#39; (nmsRtEvent).
