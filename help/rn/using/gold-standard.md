@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 92%
+source-wordcount: '1024'
+ht-degree: 86%
 
 ---
 
@@ -32,13 +32,12 @@ _22 dicembre 2020_
 >[!CAUTION]
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite  Adobe Identity Service (IMS), l&#39;aggiornamento è obbligatorio per il server e la console client di Campaign per poter connettersi a Campaign dopo il **21 marzo 2021**.
-   >
-   > 
-* Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
+> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
+> * Se utilizzate l&#39;integrazione Experience Cloud Triggers tramite l&#39;autenticazione Auth, dovete passare ad  Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione legacy verrà ritirata il **30 aprile 2021**.
+
 >
 >
 Ulteriori informazioni sono disponibili nelle [Domande frequenti sull&#39;aggiornamento di Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
-
 
 La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
@@ -46,7 +45,7 @@ La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
 * L’autenticazione dell’integrazione dei trigger per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAUTH, è ora stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
-* Con la fine del supporto del protocollo binario legacy del servizio APNs per iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
+* In seguito alla [fine del supporto per il protocollo binario precedente di iOS APN](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
 
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 
