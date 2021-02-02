@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1416'
 ht-degree: 9%
 
 ---
@@ -26,10 +26,7 @@ _23 dicembre 2020_
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite  Adobe Identity Service (IMS), l&#39;aggiornamento è obbligatorio per il server e la console client di Campaign per poter connettersi a Campaign dopo il **21 marzo 2021**.
    >
    > 
-* Questa versione include una correzione di sicurezza: l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
-
->
-
+* Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
 
 
 
@@ -145,7 +142,7 @@ Verificate di disporre delle versioni supportate di tutti i sistemi elencati nel
 
 _Campaign Mobile SDK_
 
-È ora disponibile la build 1.0.26 dell&#39;SDK iOS. In questa nuova build, abbiamo aggiunto il supporto di iOS 13. Questa nuova versione ora supporta la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell’SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta  Assistenza clienti di Adobe.
+È ora disponibile la build 1.0.26 dell&#39;SDK iOS. In questa nuova build, abbiamo aggiunto il supporto di iOS 13. Questa nuova versione ora supporta la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell’SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta l&#39;Assistenza clienti [ Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Patch**
 
