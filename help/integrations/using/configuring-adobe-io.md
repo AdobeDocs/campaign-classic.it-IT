@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Configurazione di Adobe I/O per i trigger Adobe Experience Cloud
-description: Scopri come configurare  Adobe I/O per Adobe Experience Cloud Triggers
+description: Scoprite come configurare  Adobe I/O per  Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 5%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -23,10 +23,12 @@ ht-degree: 5%
 >[!CAUTION]
 >
 >Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione, **devi passare a  Adobe I/O come descritto di seguito**. La modalità di autenticazione legacy verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>
+>Durante questo passaggio a  Adobe I/O, alcuni attivatori in arrivo potrebbero andare persi.
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
-Questa integrazione si applica solo a partire dalle versioni **Campaign Classic 20.3 e Gold Standard 11**.
+Questa integrazione si applica solo a partire dalle versioni **Campaign Classic 20.3, 20.2.4, 19.1.8 e Gold Standard 11**.
 
 Prima di avviare l&#39;implementazione, verifica di avere:
 
@@ -41,7 +43,7 @@ Prima di avviare l&#39;implementazione, verifica di avere:
    >
    > Assicurarsi di aver eseguito l&#39;accesso al portale organizzazione corretto.
 
-1. Estrarre l&#39;ID client di integrazione esistente dal file di configurazione dell&#39;istanza ims/authIMSTAClientId. Attributo non esistente o vuoto che indica che l&#39;identificatore client non è configurato.
+1. Estrarre l&#39;identificatore client di integrazione esistente (ID client) dal file di configurazione dell&#39;istanza ims/authIMSTAClientId. Attributo non esistente o vuoto che indica che l&#39;identificatore client non è configurato.
 
    >[!NOTE]
    >
@@ -83,17 +85,21 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
+>[!NOTE]
+>
+> certificato Adobe I/O scadrà dopo 12 mesi. È necessario generare una nuova coppia di chiavi ogni anno.
+
 ## Passaggio 2: Aggiungere le credenziali del progetto in  Adobe Campaign {#add-credentials-campaign}
 
 Per aggiungere le credenziali di progetto in  Adobe Campaign, eseguite il comando seguente come utente &quot;neolano&quot; su tutti i contenitori dell&#39;istanza Adobe Campaign  per inserire le credenziali **[!UICONTROL Technical Account]** nel file di configurazione dell&#39;istanza.
 
 ```
-nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
+nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
 >[!NOTE]
 >
->È necessario codificare la chiave privata in formato base64 UTF-8. Ricordare di rimuovere la nuova riga dalla chiave prima di codificarla, ad eccezione della chiave privata. La chiave privata deve essere la stessa utilizzata per creare l&#39;integrazione.
+>È necessario codificare la chiave privata in formato base64 UTF-8. Ricordare di rimuovere la nuova riga dalla chiave prima di codificarla, fatta eccezione per la chiave privata. La chiave privata deve essere la stessa utilizzata per creare l&#39;integrazione. Per verificare la codifica base64 della chiave privata, è possibile utilizzare [questo sito Web](https://www.base64encode.org/).
 
 ## Passaggio 3: Aggiorna tag pipeline {#update-pipelined-tag}
 
