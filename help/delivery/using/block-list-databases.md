@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
    Fare riferimento a [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e  supporto Adobe Campaign.
+   Il database è più importante. Essere classificato in questo elenco è generalmente una situazione grave. In tal caso, devi agire immediatamente e avvisare i servizi commerciali, la recapito e l&#39;assistenza clienti [ Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Di seguito è riportato un elenco degli URL più utilizzati. Per un elenco più 
 
    Fare riferimento a [https://www.uribl.com/](https://www.uribl.com/)
 
-   Questo elenco identifica i domini che vengono visualizzati regolarmente nei messaggi dichiarati come spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e  supporto Adobe Campaign.
+   Questo elenco identifica i domini che vengono visualizzati regolarmente nei messaggi dichiarati come spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e [ assistenza clienti di Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SURBL**
 
    Fare riferimento a [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifica i siti web che appaiono regolarmente nello spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e  supporto Adobe Campaign.
+   SURBL identifica i siti web che appaiono regolarmente nello spam. Se il dominio viene visualizzato in questo elenco, può influenzare in modo significativo la sua recapito. È necessario informare immediatamente i servizi di recapito e [ assistenza clienti di Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **Manitu iX**
 
