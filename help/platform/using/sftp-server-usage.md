@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 9%
+source-wordcount: '1102'
+ht-degree: 8%
 
 ---
 
@@ -66,7 +66,7 @@ Inoltre, quando si specifica in Campaign Classic un percorso a un server SFTP es
 
 ## Problemi di connessione con  server SFTP ospitato dal Adobe {#sftp-server-troubleshooting}
 
-La sezione seguente elenca le informazioni da verificare e fornire al team di assistenza  Adobe tramite l&#39;Assistenza clienti  Adobe[ quando si verificano problemi di connessione con  server SFTP ospitati Adobe.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+La sezione seguente elenca le informazioni da verificare e fornire al team di assistenza  Adobe tramite l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) quando si verificano problemi di connessione con  server SFTP ospitati Adobe.[
 
 1. Verificare che l&#39;istanza sia in esecuzione. A tal fine, aprite il browser, quindi effettuate una **[!UICONTROL GET]** chiamata all&#39;endpoint di istanza **[!UICONTROL /r/test]**:
 
@@ -98,11 +98,11 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di as
    >
    >Lo strumento Netcat consente di gestire facilmente le connessioni di rete su vari sistemi operativi (vedere [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Se la porta non è aperta, accertatevi di aprire le connessioni in uscita sul vostro lato, quindi riprovate. Se i problemi di connessione persistono, condividete l&#39;output del comando con  team di supporto del Adobe.
+   Se la porta non è aperta, accertatevi di aprire le connessioni in uscita sul vostro lato, quindi riprovate. Se si verificano ancora problemi di connessione, condividere l&#39;output del comando con il team [ assistenza clienti del Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 1. Verificare che l&#39;IP pubblico da cui si sta tentando di avviare la connessione SFTP sia quello fornito al supporto del Adobe  per il inserire nell&#39;elenco Consentiti .
 1. Se utilizzate un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). È quindi vivamente consigliato l&#39;utilizzo di un&#39;autenticazione basata sulle chiavi (vedere [Best practice per il server SFTP](#sftp-server-best-practices)).
-1. Se utilizzate un&#39;autenticazione basata su chiave, verificate che la chiave utilizzata sia la stessa fornita al team di supporto del Adobe  per la configurazione dell&#39;istanza.
+1. Se si utilizza un&#39;autenticazione basata su chiave, verificare che la chiave utilizzata sia la stessa fornita al team di [ assistenza clienti ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) del Adobe per la configurazione dell&#39;istanza.
 1. Se si utilizza FileZilla o uno strumento FTP equivalente, fornire i dettagli dei log di connessione nel ticket di supporto.
 
 ## Errore &quot;Impossibile risolvere il nome host&quot;
