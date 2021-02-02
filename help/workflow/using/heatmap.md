@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -41,23 +41,6 @@ Più precisamente, consente agli amministratori di piattaforma di:
 L’utilizzo di HeatMap del flusso di lavoro richiede una buona comprensione dei seguenti concetti: [Flussi di lavoro](../../workflow/using/about-workflows.md), [Attività](../../workflow/using/about-activities.md) e [Best practice per i flussi di lavoro](../../workflow/using/workflow-best-practices.md).
 
 Il HeatMap del flusso di lavoro è disponibile per impostazione predefinita in  Adobe Campaign a partire dalla release 18.10. Se disponete di una build compresa tra 8700 e 8977 (18.10), potete anche beneficiare di questa funzionalità. Per richiedere il pacchetto corrispondente, contattare l&#39;Assistenza clienti [ Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e seguire le istruzioni fornite in [questa pagina](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) per capire come installarlo.
-
-Quando accedete per la prima volta a Workfklow HeatMap, viene visualizzata la finestra a comparsa seguente. Questo accordo consente il trasferimento e lo stoccaggio negli Stati Uniti, consentendo  Adobe Campaign di:
-
-* monitorare le istanze per esaminare eventuali problemi di prestazioni.
-* raccogliere i dati per il rilevamento delle anomalie.
-
-Il trasferimento dei dati è disponibile solo per gli utenti che si connettono a  Adobe Campaign utilizzando il proprio Adobe ID .
-
-![](assets/wf_monitoring_agreement.png)
-
-Sono disponibili tre opzioni:
-
-* **[!UICONTROL Accept]** : Accettando questo contratto, l&#39;utente autorizza  Adobe Campaign a raccogliere i dati e a trasferirli negli Stati Uniti per essere in grado di fornire assistenza in caso di rilevamento di anomalie.
-* **[!UICONTROL Refuse]** : Rifiutando l&#39;accordo, i dati non verranno trasferiti ma puoi comunque utilizzare Workflow Heatmap.
-* **[!UICONTROL Do not show this message again]** : Facendo clic su  **[!UICONTROL Do not show this message again]** di essa, la finestra a comparsa si interrompe quando si accede a Workflow Heatmap ma resta disponibile dal  **[!UICONTROL Term of use]** pulsante.
-
-Questa scelta non è finale, è sempre possibile modificarla facendo clic sul pulsante **[!UICONTROL Term of use]**.
 
 ## Utilizzo di HeatMap {#using-the-heatmap}
 
