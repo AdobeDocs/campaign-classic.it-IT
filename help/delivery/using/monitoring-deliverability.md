@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 2%
 
 ---
@@ -71,17 +71,12 @@ Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza p
 
 ## Rapporto di monitoraggio sulla realizzazione tecnica {#technical-deliverability-monitoring}
 
-Il rapporto di monitoraggio della recapito tecnico viene aggiornato ogni giorno e disponibile accedendo a **[!UICONTROL Monitoring]** > **[!UICONTROL Overview]** e facendo clic sul collegamento **[!UICONTROL Technical monitoring]** dalla scheda  Adobe Campaign **[!UICONTROL Home]**. Include una serie di indicatori di qualità della distribuzione per la piattaforma.
+Il report **Technical Deliverability Monitoring** include una serie di indicatori di qualità della distribuzione per la piattaforma in uso. Puoi ricevere questo rapporto giornaliero via e-mail. Per richiederlo, aprite un [caso di supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) specifico e specificate:
 
-Questi indicatori vengono aggiornati ogni giorno alle 9.
+* il nome dell&#39;istanza
+* gli indirizzi e-mail a cui inviare il rapporto
 
->[!NOTE]
->
->Inoltre, potete ricevere un rapporto giornaliero via e-mail all&#39;indirizzo specificato. Inviateci l&#39;indirizzo e-mail richiesto tramite e-mail o tramite  Adobe Campaign Extranet.
-
-![](assets/s_tn_del_monitoring.png)
-
-Nella relazione sono utilizzati i seguenti indicatori:
+I rapporti contengono i seguenti indicatori:
 
 * **[!UICONTROL Reverse DNS]** :  Adobe Campaign verifica se per un indirizzo IP viene fornito un DNS inverso e che questo indichi correttamente l&#39;IP.
 
@@ -92,6 +87,9 @@ Nella relazione sono utilizzati i seguenti indicatori:
 * **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni elenchi Bloccati per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro gli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio  [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
+
+Questi indicatori vengono aggiornati ogni giorno alle 9.
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
