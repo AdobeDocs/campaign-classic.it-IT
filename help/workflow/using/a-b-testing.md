@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,7 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 * [Passaggio 3: Creazione di due modelli di consegna](#step-3--creating-two-delivery-templates)
 * [Passaggio 4: Configurazione delle consegne nel flusso di lavoro](#step-4--configuring-the-deliveries-in-the-workflow)
 * [Passaggio 5: Creazione dello script](#step-5--creating-the-script)
+* [Passaggio 6: Definizione della consegna finale](#step-6--defining-the-final-delivery)
 * [Passaggio 7: Avvio del flusso di lavoro](#step-7--starting-the-workflow)
 * [Passaggio 8: Analisi del risultato](#step-8--analyzing-the-result).
 
@@ -49,11 +50,11 @@ Per creare il test A/B, eseguite i seguenti passaggi:
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Modificate l&#39;etichetta del flusso di lavoro esistente o fate clic su **[!UICONTROL Add]** per crearne uno nuovo (per ulteriori informazioni, consultate questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Modificate l&#39;etichetta del flusso di lavoro esistente o fate clic su **[!UICONTROL Add]** per crearne uno nuovo.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Utilizzare il mouse per trascinare le attività nel diagramma del flusso di lavoro, inclusa una **[!UICONTROL Query]** (**[!UICONTROL Target]** scheda), una **[!UICONTROL Split]** (**[!UICONTROL Target]** scheda), due **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** scheda), un&#39;attività **[!UICONTROL Wait]** (**[!UICONTROL Flow Control]** scheda), un&#39;attività **[!UICONTROL JavaScript code]** (**[!UICONTROL Actions]** scheda) e una &lt;a110/> attività (**[!UICONTROL Actions]** scheda).**[!UICONTROL Delivery]**
+1. Utilizzare il mouse per trascinare le attività nel diagramma del flusso di lavoro, inclusa una **[!UICONTROL Query]** (**[!UICONTROL Target]** scheda), una **[!UICONTROL Split]** (**[!UICONTROL Target]** scheda), due **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** scheda), un&#39;attività **[!UICONTROL Wait]** (**[!UICONTROL Flow Control]** scheda), un&#39;attività **[!UICONTROL JavaScript code]** (**[!UICONTROL Actions]** scheda) e una **[!UICONTROL Delivery]** attività (**[!UICONTROL Actions]** scheda).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
@@ -183,7 +184,7 @@ La scelta del contenuto di distribuzione destinato alla popolazione rimanente vi
 
 ### Esempio di script {#example-of-a-script}
 
-Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting. Per ulteriori informazioni, vedere [Implementazione](#implementation).
+Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting (vedere [Configurazione dello script](../../workflow/using/a-b-testing.md#configuring-script)).
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ Lo script seguente può essere utilizzato come nel flusso di lavoro di targeting
    vars.deliveryId = delivery.id
 ```
 
-Per una spiegazione dettagliata dello script, fare riferimento a [Dettagli dello script](#details-of-the-script).
+Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione](../../workflow/using/a-b-testing.md#details-of-the-script).
 
-### Implementazione {#implementation}
+### Configurazione dello script {#configuring-script}
 
 1. Aprite l&#39;attività **[!UICONTROL JavaScript code]**.
-1. Copiare lo script offerto in [Esempio di script](#example-of-a-script) nella finestra **[!UICONTROL JavaScript code]**.
+1. Copiare lo script presentato [in precedenza](../../workflow/using/a-b-testing.md#example-of-a-script) nella finestra **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
