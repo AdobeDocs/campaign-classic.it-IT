@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '692'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Per ulteriori informazioni sul contenuto di ciascuna versione, consultare le [No
 
 Le linee guida generali per i requisiti hardware per i Campaign Classic locali sono descritte in dettaglio in questa [pagina](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
-Il team di consulenza può fornire ai clienti ospitati uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Offre inoltre strumenti per la pulizia di dati non necessari. Contattate i team di consulenza o assistenza se avete bisogno di implementare questo strumento. Di seguito sono riportati alcuni elementi importanti da verificare utilizzando questo strumento:
+Il team di consulenza può fornire ai clienti ospitati uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Offre inoltre strumenti per la pulizia di dati non necessari. Contatta l&#39;Assistenza clienti [ Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se hai bisogno di implementare questo strumento. Di seguito sono riportati alcuni elementi importanti da verificare utilizzando questo strumento:
 
 * Se la dimensione dell&#39;indice è maggiore della dimensione della tabella, è necessario un vuoto.
 * Controllare le tabelle con il numero massimo di caratteri jolly. Se queste tabelle vengono utilizzate frequentemente, devono essere svuotate.
