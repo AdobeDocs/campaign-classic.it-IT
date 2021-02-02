@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 16%
+source-wordcount: '2446'
+ht-degree: 15%
 
 ---
 
@@ -164,13 +164,13 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non Raggiungibile </td> 
    <td> Soft/Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Si è verificato un errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Rigido </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> L'indirizzo non esiste. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
   </tr> 
  </tbody> 
@@ -297,7 +297,7 @@ Per ulteriori informazioni sulla qualifica della posta indesiderata, vedere [que
 * È possibile scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome del dominio, ad esempio **Sender ID**, **DomainKeys**, **DKIM** e **S/MIME**.
 * I parametri **relay SMTP** consentono di configurare l&#39;indirizzo IP e la porta di un server relay per un determinato dominio. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurarsi di non firmare i messaggi con **ID mittente**, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è attivata, deselezionate la casella corrispondente e contattate il supporto Adobe Campaign . La sua recapito non verrà influenzata.
+Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurarsi di non firmare i messaggi con **ID mittente**, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deselezionare la casella corrispondente e contattare l&#39;Assistenza clienti del Adobe [](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). La sua recapito non verrà influenzata.
 
 >[!IMPORTANT]
 >
