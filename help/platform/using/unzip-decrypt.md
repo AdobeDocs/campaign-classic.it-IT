@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '661'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Per essere in grado di effettuare le seguenti operazioni:
    >
    >Il Pannello di controllo Campaign è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
 
-1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contatta  Assistenza clienti Adobe per avere installato sul server le utility necessarie.
+1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contattate l&#39;[ Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe per avere installato sul server le utility necessarie.
 1. Se l&#39;installazione di  Adobe Campaign è in sede, installate l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
 
 Potete quindi usare i comandi di pre-elaborazione desiderati nei flussi di lavoro:
