@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3019'
 ht-degree: 2%
 
 ---
@@ -123,6 +123,11 @@ Utilizzate la scheda **[!UICONTROL Access rights]** per aggiornare i gruppi e i 
 Il collegamento **[!UICONTROL Edit the access parameters...]** consente di accedere alle seguenti opzioni:
 
 * L&#39;opzione **[!UICONTROL Disable account]** consente di disabilitare l&#39;account dell&#39;operatore: non accederà più  Adobe Campaign.
+
+   >[!NOTE]
+   >
+   >Anche se l&#39;account è disattivato, l&#39;operatore può comunque ricevere avvisi o notifiche da Campaign. Per interrompere l&#39;invio delle notifiche Campaign a questo operatore,  Adobe consiglia di rimuovere l&#39;indirizzo e-mail dal suo profilo.
+
 * L&#39;opzione **[!UICONTROL Forbid access from the rich client]** consente di limitare l&#39;uso di  Adobe Campaign a [Accesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l&#39;accesso alla console client Adobe Campaign  non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Potete anche definire una maschera IP affidabile utilizzando il collegamento appropriato.
