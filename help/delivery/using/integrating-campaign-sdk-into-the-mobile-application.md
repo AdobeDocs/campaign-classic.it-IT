@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Gli SDK delle campagne per iOS e Android sono uno dei componenti del modulo Cana
 
 >[!NOTE]
 >
->Per ottenere l&#39;SDK di Campaign (precedentemente noto come Neolane SDK), contatta &#39;Assistenza clienti del Adobe.
+>Per ottenere l&#39;SDK di Campaign (precedentemente noto come Neolane SDK), contatta l&#39;Assistenza clienti del Adobe [](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 L’obiettivo dell’SDK è quello di facilitare l’integrazione di un’applicazione mobile nella piattaforma Adobe Campaign .
 
