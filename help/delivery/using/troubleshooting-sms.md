@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2751'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Con l&#39;espressione esadecimale, è possibile distinguere tra caratteri simili
 
 Per convertire Unicode in esadecimale, potete utilizzare strumenti online come il sito Web [Unicode code converter](https://r12a.github.io/app-conversion/). Digitare il testo desiderato, assicurarsi che non siano presenti PII, ad esempio i numeri di telefono, e fare clic su **Converti**. Verranno visualizzati i valori esadecimali nella parte inferiore (zona UTF-32).
 
-Quando aprite i biglietti per problemi di codifica, sia con il provider che con il supporto Adobe Campaign , includete sempre una versione esadecimale di ciò che digitate e ciò che visualizzate.
+Quando si aprono i biglietti per problemi di codifica, sia con il fornitore che con l&#39;Assistenza clienti di  ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), includete sempre una versione esadecimale di ciò che digitate e ciò che visualizzate.[
 
 **Passaggio 3: Sapere cosa inviare**
 
