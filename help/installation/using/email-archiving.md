@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Assicuratevi di regolare questi parametri in base al throughput di invio e-mail.
 
 ## Configurazione dell&#39;indirizzo e-mail CCN (in sede) {#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Per motivi di privacy, le e-mail in CCN devono essere elaborate da un sistema di archiviazione in grado di memorizzare informazioni personali (PII) sicure.
 
@@ -125,7 +125,7 @@ Nel file **config-`<instance name>.xml`**, utilizzate i seguenti parametri per d
 
 ## Passaggio alla nuova e-mail CCN {#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Il sistema di archiviazione delle e-mail (CCN) è stato modificato con  Adobe Campaign 17.2 (build 8795). Se state effettuando l’aggiornamento da una build precedente e state già utilizzando le funzionalità di archiviazione delle e-mail, dovete eseguire l’aggiornamento manuale al nuovo sistema di archiviazione delle e-mail (CCN).
 
