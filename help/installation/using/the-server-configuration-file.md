@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
 workflow-type: tm+mt
-source-wordcount: '7851'
+source-wordcount: '7846'
 ht-degree: 5%
 
 ---
@@ -1561,7 +1561,7 @@ Di seguito sono elencati i diversi parametri del nodo **mta**. Questa è la conf
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Se è impostato su "true", l'istanza utilizza l' <a href="https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">MTA</a> avanzata.<br /> </td> 
+   <td> Se è impostato su "true", l'istanza utilizza l' <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA</a> avanzata.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td>b 
   </tr>
