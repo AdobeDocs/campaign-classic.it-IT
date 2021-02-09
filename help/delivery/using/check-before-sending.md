@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -56,7 +56,7 @@ Se disponete di diversi contenuti per la consegna delle e-mail, potete utilizzar
 
 * Seleziona quella con il tasso di successo più elevato e inviala al resto della destinazione
 
-Ulteriori informazioni [in questa sezione](../../workflow/using/a-b-testing.md).
+Ulteriori informazioni [in questa sezione](../../delivery/using/get-started-a-b-testing.md).
 
 ## Assicurati che il messaggio sia stato inviato {#make-sure-your-message-is-delivered}
 
