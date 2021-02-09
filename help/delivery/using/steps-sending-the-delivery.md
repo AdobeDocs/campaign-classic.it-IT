@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -19,9 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Solo il proprietario della consegna può avviare una consegna. Affinché un altro operatore (o gruppo di operatori) possa avviare una consegna, è necessario aggiungerlo come revisori nel campo **[!UICONTROL Delivery start:]**.
->
->Per ulteriori informazioni, fare riferimento a [questa sezione](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+>Solo il proprietario della consegna può avviare una consegna. Affinché un altro operatore (o gruppo di operatori) possa avviare una consegna, è necessario aggiungerlo come revisori nel campo **[!UICONTROL Delivery start:]**. Per ulteriori informazioni, consultare [questa sezione](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Consegna parametri aggiuntivi {#delivery-additiona-parameters}
 
@@ -33,25 +31,29 @@ Prima di inviare la consegna, è possibile definire i parametri di invio nelle p
 
 * **[!UICONTROL Message batch quantity]**: Questa opzione consente di definire il numero di messaggi raggruppati nello stesso pacchetto di consegna XML. Se il parametro è impostato su 0, i messaggi vengono raggruppati automaticamente. La dimensione del pacchetto è definita dal calcolo `<delivery size>/1024`, con un minimo di 8 e un massimo di 256 messaggi per pacchetto.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Quando la consegna viene duplicata, il parametro viene reimpostato.
 
-* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, vedere  [Invio tramite più onde](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, vedere  [Invio con più onde](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l&#39;invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata.
 
    >[!NOTE]
    >
-   >L&#39;utilizzo di questa opzione non è consigliato durante l&#39;installazione tramite mid-sourcing per non chiamare i dati.
-   >
-   >Per ulteriori informazioni sulla configurazione di un server SMTP, vedere [in questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >L&#39;utilizzo di questa opzione non è consigliato durante l&#39;installazione tramite mid-sourcing per non chiamare i dati. Per ulteriori informazioni sulla configurazione di un server SMTP, vedere [in questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Email BCC]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Per ulteriori informazioni, consultare [la sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Questa opzione consente di memorizzare le e-mail in un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN alla destinazione del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 
-Una volta che la consegna è configurata e pronta per l&#39;invio, accertati di aver eseguito l&#39; [Analisi consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery). Al termine, fare clic su **[!UICONTROL Confirm delivery]** per avviare la distribuzione dei messaggi.
+## Conferma consegna {#confirming-delivery}
+
+Quando la consegna è configurata e pronta per l&#39;invio, accertatevi di aver eseguito l&#39;analisi della consegna.
+
+A questo scopo, fare clic su **[!UICONTROL Send]**, selezionare l&#39;azione desiderata e fare clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, vedere [Avvio dell&#39;analisi](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
+
+Al termine, fare clic su **[!UICONTROL Confirm delivery]** per avviare la distribuzione dei messaggi.
 
 Potete quindi chiudere la procedura guidata di consegna e monitorare l&#39;esecuzione della consegna dalla scheda **[!UICONTROL Delivery]**, accessibile tramite i dettagli della consegna o tramite l&#39;elenco delle consegne.
 
@@ -73,7 +75,7 @@ Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gest
 
 1. Potete quindi avviare l&#39;analisi della consegna, quindi confermare l&#39;invio. Tuttavia, l&#39;invio della consegna non inizia fino alla data indicata nel campo **[!UICONTROL Contact date]**.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Una volta avviata l&#39;analisi, la data di contatto definita è fissa. Se modificate questa data, dovrete riavviare l&#39;analisi in modo da tener conto delle modifiche apportate.
 
@@ -133,7 +135,7 @@ Per bilanciare il carico, è possibile suddividere le consegne in più batch. Co
       ![](assets/s_ncs_user_wizard_waves_create.png)
    Una regola di tipologia specifica, **[!UICONTROL Wave scheduling check]**, garantisce che l&#39;ultima onda sia pianificata prima del limite di validità della consegna. Le tipologie di campagna e le relative regole, configurate nella scheda **[!UICONTROL Typology]** delle proprietà di consegna, sono presentate in [Processo di convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Assicurarsi che le ultime onde non superino il termine di consegna, definito nella scheda **[!UICONTROL Validity]**. In caso contrario, alcuni messaggi potrebbero non essere inviati.
    >
@@ -169,18 +171,15 @@ I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più o
 
 I messaggi temporaneamente non inviati a causa di un errore **Soft** o **Ignorato** sono soggetti a un nuovo tentativo automatico. I tipi di errore di consegna e i motivi sono presentati in questa sezione [](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-La sezione centrale della scheda **[!UICONTROL Delivery]** per i parametri di consegna indica quanti tentativi devono essere eseguiti il giorno successivo alla consegna e il ritardo minimo tra i tentativi.
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le impostazioni dei tentativi nella distribuzione non vengono più utilizzate da Campaign. I tentativi di rimbalzo contenuti e il tempo che intercorre tra di essi sono determinati dall’MTA avanzata in base al tipo e alla gravità delle risposte di rimbalzo provenienti dal dominio e-mail del messaggio.
+
+Per le installazioni in sede e le installazioni ospitate/ibride che utilizzano l&#39;MTA campagna legacy, la sezione centrale della scheda **[!UICONTROL Delivery]** per i parametri di consegna indica quanti tentativi devono essere eseguiti il giorno successivo alla consegna e il ritardo minimo tra i tentativi.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Per impostazione predefinita, per il primo giorno della consegna sono pianificati cinque tentativi, con un intervallo minimo di un&#39;ora ripartito nelle 24 ore del giorno. Un nuovo tentativo al giorno viene programmato dopo e fino al termine di consegna, definito nella scheda **[!UICONTROL Validity]** (vedere [Definizione del periodo di validità](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
-
->[!NOTE]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, le impostazioni dei tentativi nella distribuzione non vengono più utilizzate da Campaign. I tentativi di rimbalzo contenuti e il tempo che intercorre tra di essi sono determinati dall’MTA avanzata in base al tipo e alla gravità delle risposte di rimbalzo provenienti dal dominio e-mail del messaggio.
->
->Tutti gli impatti sono descritti nel documento [ Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
-
+Per impostazione predefinita, per il primo giorno della consegna sono pianificati cinque tentativi, con un intervallo minimo di un&#39;ora ripartito nelle 24 ore del giorno. Un nuovo tentativo al giorno viene programmato dopo e fino al termine di consegna, definito nella scheda **[!UICONTROL Validity]** (vedere [Definizione del periodo di validità](#defining-validity-period)).
 
 ## Definizione del periodo di validità {#defining-validity-period}
 
@@ -192,12 +191,10 @@ Una volta avviata la consegna, i messaggi (e tutti i tentativi) possono essere i
 
    Potete anche scegliere di specificare le date. A questo scopo, selezionare **[!UICONTROL Explicitly set validity dates]**. In questo caso, le date limite di consegna e validità consentono anche di specificare l&#39;ora. L&#39;ora corrente è utilizzata per impostazione predefinita, ma è possibile modificarla direttamente nel campo di input.
 
+   >[!IMPORTANT]
+   >
+   >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, l&#39;impostazione **[!UICONTROL Delivery duration]** nelle consegne e-mail della campagna sarà utilizzata solo se impostata su **3,5 giorni o meno**. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
+
 * **Limite di validità delle risorse**: Il  **[!UICONTROL Validity limit]** campo viene utilizzato per le risorse caricate, principalmente per la pagina mirror e le immagini. Le risorse presenti in questa pagina sono valide per un periodo di tempo limitato (per risparmiare spazio su disco).
 
    I valori in questo campo possono essere espressi nelle unità elencate in [questa sezione](../../platform/using/adobe-campaign-workspace.md#default-units).
-
->[!NOTE]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, l&#39;impostazione **[!UICONTROL Delivery duration]** nelle consegne della campagna sarà utilizzata solo se impostata su **3.5** giorni o meno. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
->
->Tutti gli impatti sono descritti nel documento [ Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
