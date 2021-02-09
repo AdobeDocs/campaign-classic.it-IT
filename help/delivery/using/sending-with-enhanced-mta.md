@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 2%
@@ -147,7 +147,7 @@ Di conseguenza, è necessario attendere fino alla fine del periodo di validità 
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## Velocità effettiva di consegna
+### Velocità effettiva di consegna
 
 Il grafico del throughput di distribuzione delle campagne non visualizzerà più il throughput ai destinatari delle e-mail. Questo grafico ora mostra la velocità effettiva per il inoltro dei messaggi da Campaign all&#39;MTA avanzato.
 
@@ -163,7 +163,7 @@ Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 gio
 
 Per ulteriori informazioni sul periodo di validità, vedere [questa sezione](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
-## Firma DKIM
+### Firma DKIM
 
 La firma dell&#39;autenticazione tramite e-mail DKIM (DomainKeys Identified Mail) viene fatta dall&#39;MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della tabella di gestione del dominio come parte dell&#39;aggiornamento MTA avanzato.
 Per ulteriori informazioni su DKIM, vedere [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
