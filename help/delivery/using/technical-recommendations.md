@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2427'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ Va notato che i record effettuati a livello dei server DNS possono richiedere fi
 
 ### DKIM {#dkim}
 
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) Enhanced, la firma dell&#39;autenticazione tramite e-mail DKIM viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini.
+
 L&#39;autenticazione DKIM (DomainKeys Identified Mail) è un successore di SPF e utilizza la crittografia a chiave pubblica che consente al server di posta elettronica ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall&#39;entità da cui sostiene di essere stato inviato e se il contenuto del messaggio sia stato alterato tra il momento in cui è stato inviato originariamente (e DKIM &quot;firmato&quot;) e l&#39;ora in cui è stato ricevuto. In genere, questo standard utilizza il dominio nell’intestazione &quot;Da&quot; o &quot;Mittente&quot;. Per garantire il livello di protezione del DKIM, il formato 1024b è la dimensione consigliata per le best practice di cifratura. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso.
 
 DKIM proviene da una combinazione di DomainKeys, Yahoo! e Cisco Identificato principi di autenticazione della posta Internet e viene utilizzato per verificare l&#39;autenticità del dominio del mittente e garantire l&#39;integrità del messaggio.
@@ -87,10 +91,6 @@ L’utilizzo di DKIM richiede alcuni prerequisiti:
 >* Non è necessario abilitare sia DomainKeys che DKIM per lo stesso dominio di DKIM è una versione migliorata di DomainKeys.
 >* I seguenti domini convalidano attualmente DKIM: AOL, Gmail.
 
-
->[!IMPORTANT]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html) Enhanced, la firma dell&#39;autenticazione tramite e-mail DKIM viene fatta dall&#39;MTA avanzata per tutti i messaggi con tutti i domini.
 
 ### DMARC {#dmarc}
 
@@ -240,7 +240,7 @@ La regola deve contenere lo script che genera la riga di comando e deve essere i
 
 SMTP (Simple Mail Transfer Protocol) è uno standard Internet per la trasmissione di e-mail.
 
-Gli errori SMTP non controllati da una regola sono elencati nella cartella **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > &lt;a2/> > **[!UICONTROL Delivery log qualification]**. Questi messaggi di errore vengono interpretati per impostazione predefinita come errori non raggiungibili. Gli errori più comuni devono essere identificati e una regola corrispondente aggiunta in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** se si desidera qualificare correttamente il feedback dai server SMTP. In caso contrario, la piattaforma eseguirà tentativi non necessari (caso di utenti sconosciuti) o metterà erroneamente in quarantena alcuni destinatari dopo un determinato numero di test.
+Gli errori SMTP non controllati da una regola sono elencati nella cartella **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** >  > **[!UICONTROL Delivery log qualification]**. Questi messaggi di errore vengono interpretati per impostazione predefinita come errori non raggiungibili. Gli errori più comuni devono essere identificati e una regola corrispondente aggiunta in **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** se si desidera qualificare correttamente il feedback dai server SMTP. In caso contrario, la piattaforma eseguirà tentativi non necessari (caso di utenti sconosciuti) o metterà erroneamente in quarantena alcuni destinatari dopo un determinato numero di test.
 
 ### IP dedicati {#dedicated-ips}
 
