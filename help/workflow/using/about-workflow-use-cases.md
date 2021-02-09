@@ -9,10 +9,10 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
@@ -28,7 +28,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 * [Utilizzo dell’attività di approvazione locale](../../workflow/using/using-the-local-approval-activity.md)
-* [Test A/B](../../workflow/using/a-b-testing.md)
+* [Test A/B](../../delivery/using/a-b-testing-use-case.md)
 * [Invio di un’e-mail di compleanno](../../workflow/using/sending-a-birthday-email.md)
 * [Caricamento del contenuto di una consegna](../../workflow/using/loading-delivery-content.md)
 * [Flusso di lavoro di consegna cross-channel](../../workflow/using/cross-channel-delivery-workflow.md)
@@ -55,7 +55,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
 * [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
-* [Utilizzo della funzionalità di unione dell&#39;attività di deduplicazione](../../workflow/using/deduplication-merge.md)
+* [Utilizzo della funzionalità di unione dell’attività Deduplicazione](../../workflow/using/deduplication-merge.md)
 * [Impostazione di un flusso di lavoro di importazione periodico](../../workflow/using/recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
