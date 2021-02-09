@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 0%
@@ -131,15 +131,15 @@ Per impostazione predefinita, il server delle statistiche ascolta la porta 7777.
 
 ## Configurazione MX {#mx-configuration}
 
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le regole di throughput di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
+
+Le sezioni riportate di seguito si applicano solo alle installazioni locali e alle installazioni ospitate/ibride che utilizzano il MTA della campagna precedente.
+
 ### Informazioni sulle regole MX {#about-mx-rules}
 
 Le regole MX (Mail eXchanger) sono regole che gestiscono la comunicazione tra un server di invio e un server di ricezione.
-
->[!IMPORTANT]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a Enhanced MTA, le regole di throughput di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
->
->Per ulteriori informazioni sull&#39; Adobe Campaign Enhanced MTA, fare riferimento a questo [documento](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Queste regole vengono ricaricate automaticamente ogni mattina alle 6 del mattino (ora del server) per fornire regolarmente l&#39;istanza del client.
 
