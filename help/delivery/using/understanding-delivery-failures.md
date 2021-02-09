@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 15%
+source-wordcount: '2572'
+ht-degree: 14%
 
 ---
 
@@ -23,7 +23,9 @@ Quando un messaggio (e-mail, SMS, notifica push) non può essere inviato a un pr
 
 >[!NOTE]
 >
->I messaggi di errore e-mail (o &quot;rimbalzi&quot;) sono qualificati dal processo inMail. I messaggi di errore SMS (o &quot;SR&quot; per &quot;Report di stato&quot;) sono qualificati dal processo MTA.
+>I messaggi di errore **E-mail** (o &quot;mancati recapiti&quot;) sono qualificati dall’MTA avanzato (mancati recapiti sincroni) o dal processo inMail (mancati recapiti asincroni).
+>
+>I messaggi di errore **SMS** (o &quot;SR&quot; per &quot;Report di stato&quot;) sono qualificati dal processo MTA.
 
 Una volta inviato il messaggio, i registri di consegna consentono di visualizzare lo stato di consegna per ciascun profilo e il tipo e il motivo di errore associati.
 
@@ -164,7 +166,7 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non Raggiungibile </td> 
    <td> Soft/Hard </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Si è verificato un errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
   </tr> 
   <tr> 
@@ -184,9 +186,13 @@ Se un messaggio non riesce a causa di un errore **Soft** o **Ignorato** temporan
 >
 >I messaggi temporaneamente non inviati possono essere correlati solo a un errore **Soft** o **Ignorato**, ma non a un errore **Hard** (vedere [Tipi di errore di consegna e motivi](#delivery-failure-types-and-reasons)).
 
-Per modificare la durata di una consegna, passate ai parametri avanzati del modello di consegna o consegna e specificate la durata desiderata nel campo corrispondente. Le proprietà di consegna avanzate sono presentate in [questa sezione](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le impostazioni dei tentativi nella distribuzione non vengono più utilizzate da Campaign. I tentativi di rimbalzo contenuti e il tempo che intercorre tra di essi sono determinati dall’MTA avanzata in base al tipo e alla gravità delle risposte di rimbalzo provenienti dal dominio e-mail del messaggio.
 
-La configurazione predefinita consente cinque tentativi a intervalli di un&#39;ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contattare l&#39;amministratore tecnico  Adobe) o per ogni modello di consegna o consegna (vedere [questa sezione](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
+Per le installazioni in sede e le installazioni ospitate/ibride che utilizzano l&#39;MTA della campagna precedente, per modificare la durata di una consegna, andate ai parametri avanzati del modello di consegna o consegna e specificate la durata desiderata nel campo corrispondente. Vedere [Definizione del periodo di validità](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+
+La configurazione predefinita consente cinque tentativi a intervalli di un&#39;ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contattare l&#39;amministratore tecnico  Adobe) o per ogni modello di consegna o consegna (vedere [Configurazione di tentativi](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
 ## Errori sincroni e asincroni {#synchronous-and-asynchronous-errors}
 
@@ -207,17 +213,38 @@ Un messaggio può non riuscire immediatamente (errore sincrono), o successivamen
 
 ## Gestione della posta indesiderata {#bounce-mail-management}
 
-La piattaforma Adobe Campaign  consente di gestire gli errori di distribuzione delle e-mail mediante la funzionalità e-mail di rimbalzo. Quando un&#39;e-mail non può essere inviata a un destinatario, il server di messaggistica remota restituisce automaticamente un messaggio di errore (messaggio di rimbalzo) a una inbox tecnica progettata a tal fine. I messaggi di errore vengono raccolti dalla piattaforma Adobe Campaign  e qualificati dal processo inMail per arricchire l&#39;elenco delle regole di gestione delle e-mail
+La piattaforma Adobe Campaign  consente di gestire gli errori di distribuzione delle e-mail mediante la funzionalità e-mail di rimbalzo.
+
+Quando un&#39;e-mail non può essere inviata a un destinatario, il server di messaggistica remota restituisce automaticamente un messaggio di errore (messaggio di rimbalzo) a una inbox tecnica progettata a tal fine.
+
+Per le installazioni in sede e le installazioni ospitate/ibride che utilizzano il MTA della campagna precedente, i messaggi di errore vengono raccolti dalla piattaforma Adobe Campaign  e qualificati dal processo inMail per arricchire l&#39;elenco delle regole di gestione delle e-mail.
+
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, la maggior parte delle regole di gestione delle e-mail non vengono più utilizzate. Per ulteriori informazioni, consulta [questa sezione](#email-management-rules).
 
 ### Qualificazione di mail non recapitate {#bounce-mail-qualification}
 
-Quando la consegna di un&#39;e-mail non riesce, il server di consegna Adobe Campaign  riceve un messaggio di errore dal server di messaggistica o dal server DNS remoto. L&#39;elenco degli errori è costituito da stringhe contenute nel messaggio restituito dal server remoto. I tipi di errore e i motivi sono assegnati a ciascun messaggio di errore.
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) Enhanced:
+>
+>* I titoli di rimbalzo nella tabella **[!UICONTROL Delivery log qualification]** non vengono più utilizzati per i messaggi di errore di consegna **sincroni**. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
+   >
+   >
+* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, vedere [Regole di gestione e-mail](#email-management-rules).
+   >
+   >
+* Per le istanze che utilizzano l&#39;MTA avanzata **senza Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** verranno utilizzate anche per elaborare i messaggi di rimbalzo sincroni provenienti dall&#39;MTA avanzata, utilizzando lo stesso indirizzo e-mail utilizzato per i messaggi di rimbalzo asincrono.
+
+
+Per le installazioni in sede e le installazioni ospitate/ibride che utilizzano il MTA della campagna precedente, quando la consegna di un&#39;e-mail non riesce, il server di distribuzione Adobe Campaign  riceve un messaggio di errore dal server di messaggistica o dal server DNS remoto. L&#39;elenco degli errori è costituito da stringhe contenute nel messaggio restituito dal server remoto. I tipi di errore e i motivi sono assegnati a ciascun messaggio di errore.
 
 Questo elenco è disponibile tramite il nodo **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Contiene tutte le regole utilizzate da  Adobe Campaign per qualificare gli errori di consegna. Non è esaustivo, viene aggiornato regolarmente da  Adobe Campaign e può essere gestito anche dall&#39;utente.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-* Il messaggio restituito dal server remoto sulla prima occorrenza di questo tipo di errore viene visualizzato nella colonna **[!UICONTROL First text]** della tabella **[!UICONTROL Delivery log qualification]**. Se la colonna non è visualizzata, fare clic sul pulsante **[!UICONTROL Configure list]** nella parte destra dell&#39;elenco per selezionarla.
+Il messaggio restituito dal server remoto sulla prima occorrenza di questo tipo di errore viene visualizzato nella colonna **[!UICONTROL First text]** della tabella **[!UICONTROL Delivery log qualification]**. Se la colonna non è visualizzata, fare clic sul pulsante **[!UICONTROL Configure list]** nella parte destra dell&#39;elenco per selezionarla.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
@@ -237,22 +264,11 @@ I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 
 ![](assets/deliverability_qualif_status.png)
 
+### Regole di gestione e-mail {#email-management-rules}
+
 >[!IMPORTANT]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l’aggiornamento all’MTA avanzato:
->
->* I titoli di rimbalzo nella tabella **[!UICONTROL Delivery log qualification]** non vengono più utilizzati per i messaggi di errore di consegna sincrona. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
-   >
-   >
-* Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, vedere [Regole di gestione e-mail](#email-management-rules).
-   >
-   >
-* Per le istanze che utilizzano l&#39;MTA avanzata senza **Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** verranno utilizzate anche per elaborare i messaggi di rimbalzo sincroni provenienti dall&#39;MTA avanzata, utilizzando lo stesso indirizzo e-mail utilizzato per i messaggi di rimbalzo asincrono.
->
->
-Per ulteriori informazioni sull&#39; Adobe Campaign Enhanced MTA, fare riferimento a [questo documento](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
-
-### Regole di gestione e-mail {#email-management-rules}
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, la maggior parte delle regole di gestione delle e-mail non vengono più utilizzate. Per ulteriori dettagli, vedere le sezioni seguenti.
 
 Le regole della posta sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**. Le regole di gestione e-mail sono visualizzate nella parte inferiore della finestra.
 
@@ -272,7 +288,11 @@ Le regole predefinite sono le seguenti.
 
 #### E-mail in ingresso {#inbound-email}
 
-Tali regole contengono l’elenco di stringhe di caratteri che possono essere restituite dai server remoti e che ti consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) Enhanced e se l&#39;istanza dispone di funzionalità **Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+
+Per le installazioni in sede e le installazioni ospitate/ibride che utilizzano l&#39;MTA della campagna precedente, queste regole contengono l&#39;elenco delle stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l&#39;errore (**Hard**, **Soft** o **Ignorato**).
 
 Quando un&#39;e-mail ha esito negativo, il server remoto restituisce un messaggio di rimbalzo all&#39;indirizzo specificato nei parametri della piattaforma.  Adobe Campaign confronta il contenuto di ogni messaggio di rimbalzo con le stringhe nell&#39;elenco delle regole, quindi assegna uno dei tre [tipi di errore](#delivery-failure-types-and-reasons).
 
@@ -282,15 +302,13 @@ Quando un&#39;e-mail ha esito negativo, il server remoto restituisce un messaggi
 
 Per ulteriori informazioni sulla qualifica della posta indesiderata, vedere [questa sezione](#bounce-mail-qualification).
 
->[!IMPORTANT]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato e se l&#39;istanza dispone della funzionalità **Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
->
->Per ulteriori informazioni sull&#39; Adobe Campaign Enhanced MTA, fare riferimento a [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 #### Gestione del dominio {#domain-management}
 
- server di messaggistica Adobe Campaign applica una singola regola **Gestione dominio** a tutti i domini.
+>[!IMPORTANT]
+>
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le regole **[!UICONTROL Domain management]** non vengono più utilizzate. La firma di autenticazione dell’e-mail **DKIM (DomainKeys Identified Mail)** viene eseguita dall’MTA avanzato per tutti i messaggi di tutti i domini. La firma non viene eseguita con **ID mittente**, **DomainKeys** o **S/MIME**, a meno che non venga specificato diversamente a livello di MTA avanzato.
+
+Per le installazioni locali e le installazioni ospitate/ibride che utilizzano il MTA di Campaign legacy, il server di messaggistica Adobe Campaign  applica una singola regola **Gestione del dominio** a tutti i domini.
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
@@ -299,13 +317,13 @@ Per ulteriori informazioni sulla qualifica della posta indesiderata, vedere [que
 
 Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurarsi di non firmare i messaggi con **ID mittente**, che è lo standard obsoleto di autenticazione proprietaria delle e-mail di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deselezionare la casella corrispondente e contattare l&#39;Assistenza clienti del Adobe [](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). La sua recapito non verrà influenzata.
 
+#### Gestione MX {#mx-management}
+
 >[!IMPORTANT]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a Enhanced MTA, le regole **[!UICONTROL Domain management]** non vengono più utilizzate. La firma di autenticazione dell’e-mail **DKIM (DomainKeys Identified Mail)** viene eseguita dall’MTA avanzato per tutti i messaggi di tutti i domini. La firma non viene eseguita con **ID mittente**, **DomainKeys** o **S/MIME**, a meno che non venga specificato diversamente a livello di MTA avanzato.
->
->Per ulteriori informazioni sull&#39; Adobe Campaign Enhanced MTA, fare riferimento a [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le regole di throughput di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
 
-#### Gestione MX {#mx-management}
+Per le installazioni in sede e le installazioni ospitate/ibride utilizzando l&#39;MTA della campagna precedente:
 
 * Le regole di gestione MX vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi.
 
@@ -314,9 +332,3 @@ Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nel
 * Per configurare le regole di gestione MX, è sufficiente impostare una soglia e selezionare alcuni parametri SMTP. Un **threshold** è un limite calcolato come percentuale di errore oltre il quale tutti i messaggi verso un dominio specifico vengono bloccati. Ad esempio, nel caso generale, per un minimo di 300 messaggi, l&#39;invio di e-mail viene bloccato per tre ore se il tasso di errore raggiunge il 90%.
 
 Per ulteriori informazioni sulla gestione MX, consultare [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
-
->[!IMPORTANT]
->
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a Enhanced MTA, le regole di throughput di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
->
->Per ulteriori informazioni sull&#39; Adobe Campaign Enhanced MTA, fare riferimento a [questo documento](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
