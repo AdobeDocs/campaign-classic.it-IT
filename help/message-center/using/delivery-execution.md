@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 4%
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ Per impostazione predefinita, sono ordinati in sottocartelle per mese di consegn
 
 >[!NOTE]
 >
->Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento all&#39;MTA avanzato, tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzata di Adobe Campaign  per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli impatti sono gli stessi dei messaggi di marketing standard e sono descritti nel documento [ Adobe Campaign Enhanced MTA](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html).
+>Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) Enhanced, tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzato di Adobe Campaign  per migliorare la recapito, il throughput e la gestione dei bounce. Tutti gli effetti sono gli stessi dei messaggi di marketing standard.
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
