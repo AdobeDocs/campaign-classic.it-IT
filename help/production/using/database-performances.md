@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -46,9 +46,9 @@ Verificare che l&#39;attività di pulizia del database sia operativa. A questo s
 
 Assicuratevi che la manutenzione del database sia pianificata ed eseguita correttamente. A questo scopo, contattate l&#39;amministratore del database per ulteriori informazioni:
 
-* il programma di manutenzione,
-* piani di manutenzione eseguiti in precedenza,
-* visualizzare i registri di script.
+* Il programma di manutenzione
+* Piani di manutenzione precedentemente eseguiti
+* Visualizzazione dei registri di script
 
 Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
@@ -60,9 +60,9 @@ Per ulteriori informazioni al riguardo, consulta [questa sezione](../../producti
 
 Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano una certa dimensione, vengono compromesse le prestazioni del database. Queste tabelle vengono create da flussi di lavoro e consegne. Rimangono nel database mentre i flussi di lavoro e le consegne sono attive. Per limitare la dimensione delle tabelle di lavoro, è possibile eseguire le operazioni seguenti:
 
-* interrompere o eliminare le consegne con i seguenti stati: **[!UICONTROL Failed]** , **[!UICONTROL In progress]** , **[!UICONTROL Ready for delivery]** o **[!UICONTROL Paused]** .
-* interrompere o eliminare flussi di lavoro in pausa a causa di un errore,
-* arresta tutti i flussi di lavoro utilizzati per i test che non contengono un&#39;attività **[!UICONTROL End]** e il cui stato rimane quindi **[!UICONTROL Paused]**.
+* Interrompi o elimina le consegne con i seguenti stati: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** o **[!UICONTROL Paused]**.
+* Interrompi o elimina flussi di lavoro in pausa a causa di un errore.
+* Arrestate tutti i flussi di lavoro utilizzati per i test che non contengono un&#39;attività **[!UICONTROL End]** e il cui stato rimane quindi **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
@@ -72,14 +72,13 @@ Verificare il numero e la dimensione delle tabelle di lavoro. Quando superano un
 
 A seconda  impostazioni di installazione di Adobe Campaign, è possibile utilizzare due strumenti per il monitoraggio della piattaforma:
 
-* la pagina di produzione dell&#39;istanza. Per ulteriori informazioni, consultare [Monitoraggio manuale](../../production/using/monitoring-processes.md#manual-monitoring).
-* lo script netreport. Per ulteriori informazioni, vedere [Monitoraggio automatico tramite  script Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* La pagina di produzione dell&#39;istanza. Per ulteriori informazioni, consultare [Monitoraggio manuale](../../production/using/monitoring-processes.md#manual-monitoring).
+* Lo script *netreport*. Per ulteriori informazioni, vedere [Monitoraggio automatico tramite  script Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifiche {#specifics}
 
 Potrebbe essere necessario eseguire una diagnosi in tempo reale per identificare la causa del problema. Per iniziare, controllate i file di registro di processo e piattaforma, quindi controllate l&#39;attività del database durante la ricreazione del problema. Prestare particolare attenzione ai seguenti elementi:
 
-* il piano di esecuzione della manutenzione,
-* Query SQL in esecuzione,
-* se i processi esterni sono in esecuzione contemporaneamente (pulizia, importazioni, calcolo aggregato, ecc.).
-
+* Il piano di esecuzione della manutenzione
+* Query SQL eseguite
+* Se i processi esterni sono in esecuzione contemporaneamente (pulizia, importazioni, calcolo aggregato, ecc.).
