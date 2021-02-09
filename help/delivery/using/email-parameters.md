@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: e84387c7c396c60c429c3f625870a97a7fdaef5a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -32,11 +32,6 @@ Per ulteriori informazioni sulla configurazione e sulle procedure ottimali di CC
 >Ccn e-mail è una funzionalità opzionale. Controlla il contratto di licenza e contatta il responsabile dell’account per attivarla.
 
 Quando si crea un nuovo modello di consegna o consegna, per impostazione predefinita CCN e-mail non è attivato. È necessario attivarlo manualmente a livello di consegna e-mail o di modello di consegna.
-
-<!--
->[!IMPORTANT]
->
->If you have upgraded to the [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md), you can request to use Email BCC with Enhanced MTA for improved efficiency and less latency. In that case, all sent emails are automatically sent to the BCC address. You cannot enable it at the delivery or delivery template level, thus the steps below do not apply. For more on this, see [this section](../../installation/using/email-archiving.md).-->
 
 Per abilitare Ccn e-mail per un modello di consegna e-mail, effettuate le seguenti operazioni:
 
