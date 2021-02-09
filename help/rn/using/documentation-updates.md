@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 759346587e3ce98c408a0a17218341118dbceb82
+source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 94%
+source-wordcount: '3914'
+ht-degree: 93%
 
 ---
 
@@ -21,21 +21,29 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 
 Per gli aggiornamenti relativi alla versione, fare riferimento alle [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
+## Febbraio 2021 {#feb-2021}
+
+È stata aggiunta una nuova sezione con informazioni dettagliate su come eseguire test A/B utilizzando i flussi di lavoro. [Leggi tutto](../../delivery/using/get-started-a-b-testing.md)
+
+La sezione  MTA avanzata di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
+
+La sezione **Invio di un&#39;e-mail** è stata riorganizzata e chiarita con le nuove sottosezioni. [Leggi tutto](../../delivery/using/sending-messages.md)
+
 ## Gennaio 2021 {#jan-2021}
 
 La sezione **[!UICONTROL Fork]** dell&#39;attività è stata arricchita di best practice. [Leggi tutto](../../workflow/using/fork.md)
 
-La sezione **Connettori CRM** è stata aggiornata, migliorata e riorganizzata. [Ulteriori informazioni](../../platform/using/crm-connectors.md).
+La sezione **Connettori CRM** è stata aggiornata, migliorata e riorganizzata. [Leggi tutto](../../platform/using/crm-connectors.md).
 
-I passaggi per la connessione **Adobe Campaign e Microsoft Dynamics** sono ora descritti in una pagina dedicata. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md).
+I passaggi per la connessione **Adobe Campaign e Microsoft Dynamics** sono ora descritti in una pagina dedicata. [Leggi tutto](../../platform/using/crm-ms-dynamics.md).
 
- Oracle On Demand API ora è obsoleta come CRM connesso a Campaign. [Ulteriori informazioni](../../rn/using/deprecated-features.md).
+ Oracle On Demand API ora è obsoleta come CRM connesso a Campaign. [Leggi tutto](../../rn/using/deprecated-features.md).
 
 Scoprite come scoprire la versione corrente del servlet Web Tomcat incorporato utilizzato in un&#39;istanza  Adobe Campaign [here](../../production/using/locate-tomcat-version.md).
 
 L&#39;elenco dei flussi di lavoro tecnici con i pacchetti associati è stato migliorato e centralizzato in un&#39;unica pagina. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
 
-La sezione relativa alla risoluzione dei problemi della guida **Monitoring** è stata riorganizzata e migliorata con una pagina di destinazione. [Ulteriori informazioni](../../production/using/troubleshooting.md).
+La sezione relativa alla risoluzione dei problemi della guida **Monitoring** è stata riorganizzata e migliorata con una pagina di destinazione. [Leggi tutto](../../production/using/troubleshooting.md).
 
 È disponibile una nuova sezione **Importazione ed esportazione di dati** con nuove pagine correlate a flussi di lavoro, compressione dei dati, cifratura e procedure ottimali per l&#39;importazione. [Leggi tutto](../../platform/using/get-started-data-import-export.md)
 
@@ -197,8 +205,7 @@ Leggi sulla privacy in Thailandia e Brasile. [Leggi tutto](https://helpx.adobe.c
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
-La nuova opzione che consente di annullare la pubblicazione di un modello di messaggio transazionale è documentata in
-[questa sezione](../../message-center/using/template-unpublication.md).
+La nuova opzione che consente di annullare la pubblicazione di un modello di messaggio transazionale è documentata in [questa sezione](../../message-center/using/template-unpublication.md).
 
 Le nuove opzioni che consentono di impostare limitazioni durante l’invio di e-mail contenenti immagini scaricate da un URL personalizzato e allegati sono state aggiunte all’elenco delle opzioni di Campaign Classic. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
 
