@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 1%
@@ -251,7 +251,7 @@ Per impostazione predefinita,  registri di consegna e tracciamento Adobe Campaig
 * Se si desidera mantenere i log più lunghi, questa decisione deve essere presa attentamente in base alle dimensioni del database e al volume dei messaggi inviati. Come promemoria,  sequenza Adobe Campaign è un numero intero a 32 bit.
 * Si raccomanda di non avere più di 1 miliardo di record alla volta in queste tabelle (circa il 50% dei 2,14 miliardi di ID disponibili) per limitare i rischi di consumo di tutti gli ID disponibili. Per ridurre la durata di conservazione al di sotto dei 180 giorni, è necessario che alcuni clienti utilizzino questa funzione.
 
-Ulteriori informazioni sulla conservazione dei dati sono disponibili in [Campaign Privacy and Security guidelines](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#consent).
+Ulteriori informazioni sulla conservazione dei dati sono disponibili in [Campaign Privacy and Security guidelines](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#consent).
 
 Ulteriori informazioni sul flusso di lavoro di pulizia della base dati della campagna [in questa sezione](../../production/using/database-cleanup-workflow.md).
 
