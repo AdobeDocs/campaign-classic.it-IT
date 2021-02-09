@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: Centro Risorse
 product: campaign
 title: Guida a Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 95%
+source-wordcount: '2347'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 95%
       + [Creazione di una consegna e-mail](delivery/using/creating-an-email-delivery.md)
       + [Definizione del contenuto dell’e-mail](delivery/using/defining-the-email-content.md)
       + [Definizione del contenuto interattivo](delivery/using/defining-interactive-content.md)
-      + [Invio di messaggi](delivery/using/sending-messages.md)
+      + Invio di un&#39;e-mail {#sending-an-email}
+         + [Conferma della consegna del messaggio e-mail](delivery/using/sending-messages.md)
+         + [Parametri e-mail](delivery/using/email-parameters.md)
+         + [Invio con MTA avanzata](delivery/using/sending-with-enhanced-mta.md)
+         + [Invio su cellulari giapponesi](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [File allegati](delivery/using/attaching-files.md)
    + Invio di messaggi su dispositivi mobili {#sending-messages-on-mobiles}
       + [Canale SMS](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 95%
       + [Utilizzo di una tabella dei destinatari esterna](delivery/using/using-an-external-recipient-table.md)
       + [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Caso di utilizzo: configurazione della sostituzione del campo](delivery/using/use-case--configuring-the-field-substitution.md)
+   + Test A/B {#a-b-testing}
+      + [Introduzione ai test A/B](delivery/using/get-started-a-b-testing.md)
+      + [Configurazione del test A/B](delivery/using/configuring-a-b-testing.md)
+      + Caso d’uso {#use-case}
+         + [Informazioni su questo caso di utilizzo](delivery/using/a-b-testing-use-case.md)
+         + [Creazione di un flusso di lavoro di targeting](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [Configurazione dei campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
+         + [Creazione di modelli di consegna](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [Configurazione delle consegne](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [Creazione dello script](delivery/using/a-b-testing-uc-script.md)
+         + [Definizione della consegna finale](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [Avvio del flusso di lavoro](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Analisi del risultato](delivery/using/a-b-testing-uc-analyzing.md)
    + Abbonamenti e riferimenti {#subscriptions-and-referrals}
       + [Informazioni su servizi e abbonamenti](delivery/using/about-services-and-subscriptions.md)
       + [Gestione delle sottoscrizioni](delivery/using/managing-subscriptions.md)
@@ -195,7 +212,7 @@ ht-degree: 95%
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per ripetere il coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database dell’elenco Bloccati](delivery/using/block-list-databases.md)
+      + [Database Elenco Bloccati](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -439,7 +456,6 @@ ht-degree: 95%
       + [Informazioni sui casi di utilizzo dei flussi di lavoro](workflow/using/about-workflow-use-cases.md)
       + Consegne {#deliveries}
          + [Utilizzo dell’attività di approvazione locale](workflow/using/using-the-local-approval-activity.md)
-         + [Test A/B](workflow/using/a-b-testing.md)
          + [Invio di un’e-mail di compleanno](workflow/using/sending-a-birthday-email.md)
          + [Caricamento del contenuto di una consegna](workflow/using/loading-delivery-content.md)
          + [Flusso di lavoro di consegna cross-channel](workflow/using/cross-channel-delivery-workflow.md)
