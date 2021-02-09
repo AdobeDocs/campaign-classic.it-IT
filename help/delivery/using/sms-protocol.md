@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
 workflow-type: tm+mt
-source-wordcount: '8433'
+source-wordcount: '8432'
 ht-degree: 0%
 
 ---
@@ -483,7 +483,7 @@ La specifica del codice breve è utile per due funzioni:
 
 * Nell&#39;anteprima viene visualizzato il codice breve se non viene fornito alcun numero di origine. Rifletterà il comportamento reale sul cellulare.
 
-* L&#39;impostazione di inserire nell&#39;elenco Bloccati  della funzione di risposta automatica invia solo all&#39;utente la quarantena per un codice breve specifico.
+* L&#39;impostazione di elenco Bloccati della funzione di risposta automatica invia solo all&#39;utente la quarantena per un codice breve specifico.
 
 #### TON/NPI di origine, TON/NPI di destinazione {#ton-npi}
 
@@ -714,7 +714,7 @@ Questa impostazione consente solo di aggiungere un’opzione TLV per messaggio.
 >
 >In Adobe Campaign Classic e in un&#39;architettura ibrida, l&#39;applicazione della risposta automatica per il connettore SMPP esteso richiede l&#39;accesso in scrittura per l&#39;operatore mid nella cartella **Account esterno**.
 
-Questa funzione consente di rispondere rapidamente al testo su MO e di gestire per codice breve l&#39;invio al elenco Bloccati .
+Questa funzione consente di rispondere rapidamente al testo su MO e di gestire per codice breve l&#39;invio al elenco Bloccati.
 
 Le colonne **Parola chiave** e **Codice breve** definiscono le condizioni per attivare la risposta automatica. Se entrambi i campi corrispondono, l&#39;MO viene inviato e l&#39;azione aggiuntiva viene attivata. Per specificare un carattere jolly, lasciare vuoto il campo. La parola chiave corrisponde alla prima parola alfanumerica nel testo MO, ignorando la punteggiatura e gli spazi iniziali. Significa che il campo **Parola chiave** non può contenere spazi e deve essere una sola parola.
 
