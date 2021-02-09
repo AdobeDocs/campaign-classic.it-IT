@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -62,13 +62,13 @@ I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
 Di seguito è riportato un esempio specifico del modulo Web. Gli altri moduli funzionano come indicato sopra.
 
-Prima di inviare questo comando, verificate che non venga interessato alcun processo in corso.
+Prima di inviare questo comando, verificate che non venga interessato alcun processo in corso:
 
 ```
 nlserver pdump -who
 ```
 
-Quindi, arrestare e riavviare il modulo in modalità **TraceFilter**.
+Quindi, arrestare e riavviare il modulo in modalità **TraceFilter**:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
