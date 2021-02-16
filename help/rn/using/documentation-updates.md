@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3947'
 ht-degree: 93%
 
 ---
@@ -26,6 +26,10 @@ Per gli aggiornamenti relativi alla versione, fare riferimento alle [Note sulla 
 È stata aggiunta una nuova sezione con informazioni dettagliate su come eseguire test A/B utilizzando i flussi di lavoro. [Leggi tutto](../../delivery/using/get-started-a-b-testing.md)
 
 La sezione  MTA avanzata di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
+
+È stata aggiunta una nuova pagina per fornire una panoramica delle funzionalità di tracciamento in [!DNL Campaign Classic]. [Leggi tutto](../../delivery/using/about-message-tracking.md)
+
+È stata aggiunta una sezione per la risoluzione dei problemi comuni relativi al tracciamento. [Leggi tutto](../../delivery/using/tracking-troubleshooting.md)
 
 La sezione **Invio di un&#39;e-mail** è stata riorganizzata e chiarita con le nuove sottosezioni. [Leggi tutto](../../delivery/using/sending-messages.md)
 
