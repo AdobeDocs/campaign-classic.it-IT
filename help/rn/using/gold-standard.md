@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ _22 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite  Adobe Identity Service (IMS), l&#39;aggiornamento è obbligatorio affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
-> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
-> * Se utilizzate l&#39;integrazione Experience Cloud Triggers tramite l&#39;autenticazione Auth, dovete passare ad  Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione legacy verrà ritirata il **30 aprile 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
+> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
 
 >
 >
-Ulteriori informazioni sono disponibili nelle [Domande frequenti sull&#39;aggiornamento di Gold Standard 11](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
+Ulteriori informazioni sono disponibili nelle [Domande frequenti sull’aggiornamento a Gold Standard 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html).
 
 La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
@@ -45,7 +45,7 @@ La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
 * L’autenticazione dell’integrazione dei trigger per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAUTH, è ora stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
-* In seguito alla [fine del supporto per il protocollo binario precedente di iOS APN](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
+* Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 
