@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
 source-wordcount: '2349'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -68,21 +68,21 @@ ht-degree: 93%
       + [Esportazione e importazione di profili](platform/using/exporting-and-importing-profiles.md)
       + [Creazione e gestione di elenchi](platform/using/creating-and-managing-lists.md)
    + Importazione ed esportazione di dati {#importing-and-exporting-data}
-      + [Introduzione all&#39;importazione e all&#39;esportazione dei dati](platform/using/get-started-data-import-export.md)
+      + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
       + [Importazione ed esportazione di dati tramite flussi di lavoro](platform/using/import-export-workflows.md)
-      + Operazioni con importazioni ed esportazioni generiche {#generic-imports-exports}
-         + [Introduzione alle importazioni e alle esportazioni generiche](platform/using/about-generic-imports-exports.md)
+      + Importazioni ed esportazioni generiche {#generic-imports-exports}
+         + [Introduzione a importazioni ed esportazioni generiche](platform/using/about-generic-imports-exports.md)
          + [Creazione di modelli di importazione ed esportazione](platform/using/creating-import-export-templates.md)
          + [Creazione di processi di importazione ed esportazione](platform/using/creating-import-export-jobs.md)
          + [Configurazione dei processi di importazione](platform/using/executing-import-jobs.md)
          + [Configurazione dei processi di esportazione](platform/using/executing-export-jobs.md)
          + [Monitoraggio dell’esecuzione dei processi](platform/using/monitoring-jobs-execution.md)
-         + [Esempi di importazione generici](platform/using/import-operations-samples.md)
+         + [Esempi di importazione generica](platform/using/import-operations-samples.md)
       + Gestione della crittografia e della compressione dei dati {#managing-data-encryption-compression}
-         + [Estrazione o decrittografia di un file prima dell&#39;elaborazione](platform/using/unzip-decrypt.md)
-         + [Zipping o cifratura di un file prima dell&#39;elaborazione](platform/using/zip-encrypt.md)
-      + Procedure ottimali e risoluzione dei problemi {#best-practices}
-         + [Best practice di importazione ed esportazione](platform/using/import-export-best-practices.md)
+         + [Estrazione o decrittografia di un file prima dell’elaborazione](platform/using/unzip-decrypt.md)
+         + [Compressione o cifratura di un file prima dell’elaborazione](platform/using/zip-encrypt.md)
+      + Best practice e risoluzione dei problemi {#best-practices}
+         + [Best practice per l’importazione e l’esportazione](platform/using/import-export-best-practices.md)
          + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
    + Filtrare dati {#filtering-data}
       + [Opzioni di filtro](platform/using/filtering-options.md)
@@ -99,9 +99,9 @@ ht-degree: 93%
    + Connettori {#connectors}
       + [Informazioni sui connettori](platform/using/about-connectors.md)
       + Connettori di gestione delle relazioni con i clienti{#crm-connectors}
-         + [Guida introduttiva ai connettori CRM](platform/using/crm-connectors.md)
-         + [Connetti con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Sincronizzare i dati con CRM](platform/using/crm-data-sync.md)
+         + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
+         + [Connettersi con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Sincronizzare i dati con il sistema CMR](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
 + Invio di messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
@@ -471,7 +471,7 @@ ht-degree: 93%
          + [Arricchimento dei dati](workflow/using/enriching-data.md)
          + [Utilizzo di aggregati](workflow/using/using-aggregates.md)
          + [Utilizzo della funzionalità di unione dell’attività Deduplicazione](workflow/using/deduplication-merge.md)
-         + [Impostazione di un flusso di lavoro di importazione periodico](workflow/using/recurring-import-workflow.md)
+         + [Impostazione di un flusso di lavoro di importazione ricorrente](workflow/using/recurring-import-workflow.md)
       + Progettazione di query {#designing-queries}
          + [Aggiornamento dell’elenco trimestrale tramite una query incrementale](workflow/using/quarterly-list-update.md)
       + Targeting {#designing-queries}
