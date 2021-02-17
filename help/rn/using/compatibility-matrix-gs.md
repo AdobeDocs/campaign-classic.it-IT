@@ -6,18 +6,18 @@ description: Matrice di compatibilità di Campaign Classic per la versione Gold 
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Matrice di compatibilità Gold Standard{#compatibility-matrix-gs}
 
-Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic Gold Standard** 19.1. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con questa versione di  Adobe Campaign.
+Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic Gold Standard** 19.1. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
 
 ## Note importanti{#important-notes-gs}
 
@@ -206,7 +206,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <tr>
 <td> Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
