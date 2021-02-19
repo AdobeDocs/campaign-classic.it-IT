@@ -29,7 +29,7 @@ Le fasi di implementazione principali per questo caso di utilizzo sono:
 
 ## Passaggio 1: Creazione dell&#39;elenco destinatari {#step-1--creating-the-recipient-list}
 
-Passare all&#39;universo **[!UICONTROL Profiles and targets]**, fare clic sul collegamento **[!UICONTROL Lists]**, quindi sul pulsante **[!UICONTROL Create]**. Selezionare **[!UICONTROL New list]** e creare un nuovo elenco di destinatari a cui inviare il rapporto.
+Passare all&#39;universo **[!UICONTROL Profiles and targets]**, fare clic sul collegamento **[!UICONTROL Lists]**, quindi sul pulsante **[!UICONTROL Create]**. Selezionare **[!UICONTROL New list]** e creare un nuovo elenco di destinatari per il report a cui inviare.
 
 ![](assets/use_case_report_1.png)
 
