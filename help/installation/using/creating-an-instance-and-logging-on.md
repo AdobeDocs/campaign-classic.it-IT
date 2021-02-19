@@ -69,7 +69,7 @@ Per creare una nuova istanza, effettuate le operazioni seguenti:
 
    Inoltre, il server deve essere in grado di connettersi a se stesso con questo nome e, se possibile, con un indirizzo di loopback - 127.0.0.1 -, in particolare per consentire l&#39;esportazione dei rapporti in formato PDF.
 
-1. Nell&#39;elenco a discesa **[!UICONTROL Language]**, selezionare la **lingua dell&#39;istanza**: Inglese (USA), inglese (Regno Unito), francese o giapponese.
+1. Nell&#39;elenco a discesa **[!UICONTROL Language]**, selezionare il **linguaggio di istanza**: Inglese (USA), inglese (Regno Unito), francese o giapponese.
 
    Le differenze tra inglese americano e inglese britannico sono descritte in [questa sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
