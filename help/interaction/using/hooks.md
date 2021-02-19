@@ -64,7 +64,7 @@ Questo gancio consente di verificare la coerenza e la compatibilità delle propo
 Esempio di utilizzo di regole di coerenza:
 
 * Limitazione del numero di proposte nella stessa chiamata, collegate allo stesso prodotto o alla stessa categoria.
-* Presentare solo offerte correlate a un prodotto nella stessa interazione.
+* Presentare solo offerte relative a un prodotto nella stessa interazione.
 
 La post-elaborazione viene eseguita dopo l&#39;applicazione delle regole di tipologia e l&#39;ordinamento delle proposte idonee, e prima della fase di definizione delle priorità.
 
