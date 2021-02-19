@@ -154,7 +154,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistic
   <tr> 
    <td> Visitatori<br /> </td> 
    <td> @totalVisitors<br /> </td> 
-   <td> Numero totale di destinatari con targeting per questo browser che hanno fatto clic almeno una volta in una consegna.<br /> </td> 
+   <td> Numero totale di destinatari con targeting per questo browser che hanno fatto clic in una consegna almeno una volta.<br /> </td> 
    <td> Sum(@visitatori)<br /> </td> 
   </tr> 
   <tr> 
@@ -926,7 +926,7 @@ Se si verificano desincronizzazione o incoerenza per alcuni indicatori, selezion
 
 ## Aperture di tracciamento {#tracking-opens-}
 
-Affinché  Adobe Campaign possa rilevare le aperture dei messaggi, il destinatario deve scaricare le immagini contenute nell&#39;e-mail. HTML e e e-mail multiparte/alternative includono un&#39;immagine di 0 pixel che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione delle immagini.
+Affinché  Adobe Campaign possa rilevare le aperture dei messaggi, il destinatario deve scaricare le immagini contenute nell&#39;e-mail. Le e-mail HTML e multiparte/alternativa includono un&#39;immagine di 0 pixel che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base alle aperture dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione delle immagini.
 
 ## Destinatari / destinatari {#targeted-persons---recipients}
 
