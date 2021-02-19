@@ -33,7 +33,7 @@ Per configurazioni avanzate, come la gestione di campi e blocchi di personalizza
 
 È innanzitutto necessario installare il pacchetto **[!UICONTROL AEM integration]**.
 
-1. Nell&#39;istanza di Adobe Campaign , selezionare **[!UICONTROL Tools]** dalla barra degli strumenti superiore.
+1. Nell&#39;istanza Adobe Campaign , selezionare **[!UICONTROL Tools]** dalla barra degli strumenti superiore.
 1. Seleziona **[!UICONTROL Tools > Advanced > Import package...]**.
 
    ![](assets/aem_config_1.png)
