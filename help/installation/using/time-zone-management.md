@@ -68,7 +68,7 @@ Selezionare l&#39;opzione **[!UICONTROL UTC database (date fields with time zone
 
 >[!IMPORTANT]
 >
->Se si utilizza **Oracle**, i file del fuso orario (.dat) dei  livelli client Oracle devono essere compatibili con i file timezones installati sul server.
+>Se si utilizza **Oracle**, i file del fuso orario (.dat) dei livelli client  Oracle devono essere compatibili con i file timezones installati sul server.
 
 Se il database non è UTC, è possibile selezionare uno dei fusi orari disponibili nell&#39;elenco a discesa. È inoltre possibile utilizzare il fuso orario del server o selezionare l&#39;opzione UTC (Coordinated Universal Time).
 
