@@ -66,7 +66,7 @@ Esistono due metodi per specificare le proposte di offerta.
 
 ### Specifica di un&#39;offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Dopo aver configurato la query (consultare la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
+Dopo aver configurato la query (fare riferimento alla [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
 1. Aggiungere e aprire un&#39;attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
@@ -144,7 +144,7 @@ Questa attività funziona sullo stesso principio dell&#39;attività di arricchim
 
 ![](assets/int_offerengine_activity2.png)
 
-Dopo aver configurato la query (consultare la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
+Dopo aver configurato la query (fare riferimento alla [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
 1. Aggiungete e aprite un&#39;attività **[!UICONTROL Offer engine]**.
 1. Completate i vari campi disponibili per specificare i parametri del motore di chiamata (spazio di offerta, categoria o tema/i, data di contatto, numero di offerte da mantenere). Il motore calcolerà automaticamente le offerte da aggiungere in base a questi parametri.
