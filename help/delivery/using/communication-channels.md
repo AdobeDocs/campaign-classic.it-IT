@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # Canali di comunicazione{#communication-channels}
 
-Con  Adobe Campaign, puoi inviare campagne tra canali, inclusi e-mail, SMS, messaggi LINE, notifiche push e indirizzi diretti, e misurarne l&#39;efficacia utilizzando vari [report](../../reporting/using/delivery-reports.md) dedicati. Questi messaggi sono progettati e inviati tramite le consegne e possono essere personalizzati per ogni destinatario.
+Con  Adobe Campaign, puoi inviare campagne tra canali, inclusi e-mail, SMS, messaggi LINE, notifiche push e indirizzi diretti, e misurarne l&#39;efficacia utilizzando vari [report](../../reporting/using/delivery-reports.md) dedicati. Questi messaggi sono progettati e inviati attraverso le consegne e possono essere personalizzati per ogni destinatario.
 
 Le funzionalità principali includono il targeting, la definizione e la personalizzazione dei messaggi, l&#39;esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Questo punto di accesso porta a molteplici funzionalità coperte da  Adobe Campaign.
 
