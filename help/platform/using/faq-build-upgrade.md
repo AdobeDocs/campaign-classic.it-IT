@@ -49,7 +49,7 @@ Ulteriori informazioni [in questa sezione](../../rn/using/rn-overview.md).
 
 No. Un aggiornamento di build è un aggiornamento incrementale all&#39;interno di una determinata versione principale, mentre un aggiornamento di versione è un passaggio da una versione principale all&#39;altra. Gli aggiornamenti delle build sono semplici, in quanto non comportano in genere modifiche importanti dei modelli architettonici, tecnici o di dati.
 
-Gli aggiornamenti di versione, d&#39;altra parte, solitamente comportano modifiche tecniche significative e, a seconda della profondità della configurazione per un determinato cliente, possono richiedere modifiche significative della configurazione e/o una reimplementazione parziale.
+Gli aggiornamenti di versione, invece, solitamente comportano modifiche tecniche significative e, a seconda della profondità della configurazione per un determinato cliente, possono richiedere modifiche significative della configurazione e/o una reimplementazione parziale.
 
 Ad esempio, utilizzando le informazioni sul server dalla schermata nella sezione precedente:
 
