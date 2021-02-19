@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Esempi di importazione generici
+title: Esempi di importazione generica
 description: Ulteriori informazioni sulle importazioni generiche che potete eseguire tramite i processi di importazione.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Campioni di importazione generici {#import-operations-samples}
+# Esempi di importazione generica {#import-operations-samples}
 
 ## Importa da un elenco di destinatari {#example--import-from-a-list-of-recipients}
 
