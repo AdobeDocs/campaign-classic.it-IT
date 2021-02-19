@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 65%
+ht-degree: 68%
 
 ---
 
@@ -56,7 +56,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
 * [Utilizzo della funzionalità di unione dell’attività Deduplicazione](../../workflow/using/deduplication-merge.md)
-* [Impostazione di un flusso di lavoro di importazione periodico](../../workflow/using/recurring-import-workflow.md)
+* [Impostazione di un flusso di lavoro di importazione ricorrente](../../workflow/using/recurring-import-workflow.md)
 
 ## Targeting {#designing-queries}
 
