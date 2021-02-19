@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0f2986f88f72c191262248029ec620fad538c218
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 
@@ -63,6 +63,6 @@ In caso di problemi di connessione, è possibile risolvere i seguenti problemi:
 
 Per informazioni su problemi più specifici, consultate le sezioni seguenti:
 
-* [Stack trace in Linux](../../production/using/stack-trace-in-linux.md)
+* [Traccia dello stack in Linux](../../production/using/stack-trace-in-linux.md)
 * [Comportamento JSP](../../production/using/jsp-behavior.md)
-* [Individuazione versione Tomcat](../../production/using/locate-tomcat-version.md)
+* [Individuazione della versione Tomcat](../../production/using/locate-tomcat-version.md)
