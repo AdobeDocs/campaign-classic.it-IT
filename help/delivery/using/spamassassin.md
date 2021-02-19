@@ -26,7 +26,7 @@ SpamAssassin sfrutta una serie di tecniche di rilevamento dello spam, tra cui:
 * Rilevamento di spam basato su DNS e con checksum approssimativo
 * Filtro bayesiano
 * Programmi esterni
-* elenchi Bloccati
+* Elenchi Bloccati
 * Database online
 
 >[!NOTE]
