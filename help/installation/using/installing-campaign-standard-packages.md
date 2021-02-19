@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Installazione di pacchetti Campaign Classic incorporati
+title: Installazione dei pacchetti integrati di Campaign Classic
 description: Scopri come installare i pacchetti predefiniti per Campaign
 audience: installation
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# Installazione di pacchetti Campaign Classic incorporati{#installing-campaign-standard-packages}
+# Installazione dei pacchetti integrati di Campaign Classic{#installing-campaign-standard-packages}
 
 ## Informazioni sui pacchetti incorporati {#campaign-standard-packages}
 
