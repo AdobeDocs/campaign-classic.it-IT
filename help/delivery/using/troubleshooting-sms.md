@@ -119,7 +119,7 @@ Come risolvere i problemi di stabilità della connessione:
 
 * Verificare che la connessione sia stabile. Una connessione SMPP deve rimanere al massimo per almeno 1 ora in modo continuo, ad eccezione dei trasmettitori su Adobe Campaign Classic. Vedere la sezione [Problema con connessioni instabili](../../delivery/using/sms-protocol.md#issues-unstable-connection).
 
-* Se il riavvio dell&#39;MTA fa funzionare nuovamente MT per un breve periodo di tempo, probabilmente si ha la limitazione a causa di una connessione instabile. Vedere la sezione [Problema con connessioni instabili](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Se il riavvio dell&#39;MTA fa funzionare nuovamente MT per un piccolo periodo di tempo, probabilmente si ha la limitazione a causa di una connessione instabile. Vedere la sezione [Problema con connessioni instabili](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
 
 * Verificate che il registro ampio sia presente e nello stato corretto con le date corrette. In caso contrario, potrebbe trattarsi di un problema di consegna o di preparazione.
 
