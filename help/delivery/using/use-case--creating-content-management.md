@@ -102,43 +102,43 @@ Per creare uno schema dati, procedere come segue:
  <tbody> 
   <tr> 
    <td> Title<br /> </td> 
-   <td> Attribute<br /> </td> 
+   <td> Attributo<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> Title<br /> </td> 
   </tr> 
   <tr> 
    <td> Sottotitolo<br /> </td> 
-   <td> Attribute<br /> </td> 
+   <td> Attributo<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> Nome<br /> </td> 
   </tr> 
   <tr> 
    <td> Data evento<br /> </td> 
-   <td> Attribute<br /> </td> 
+   <td> Attributo<br /> </td> 
    <td> Data<br /> </td> 
    <td> Data<br /> </td> 
   </tr> 
   <tr> 
    <td> Introduzione a paragrafo<br /> </td> 
-   <td> Element<br /> </td> 
+   <td> Elemento<br /> </td> 
    <td> HTML<br /> </td> 
    <td> Panoramica<br /> </td> 
   </tr> 
   <tr> 
    <td> Foto dell'autore<br /> </td> 
-   <td> Attribute<br /> </td> 
+   <td> Attributo<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> URL<br /> </td> 
   </tr> 
   <tr> 
    <td> Autore<br /> </td> 
-   <td> Element<br /> </td> 
+   <td> Elemento<br /> </td> 
    <td> Memo<br /> </td> 
    <td> Autore<br /> </td> 
   </tr> 
   <tr> 
    <td> Logo intestazione (memorizzato  risorse pubbliche Adobe Campaign)<br /> </td> 
-   <td> Attribute<br /> </td> 
+   <td> Attributo<br /> </td> 
    <td> Collegamento<br /> </td> 
    <td> Immagine<br /> </td> 
   </tr> 
