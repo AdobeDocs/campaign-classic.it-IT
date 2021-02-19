@@ -148,7 +148,7 @@ Nel file **`config-<instance>.xml`**:
 
 ### Reti secondarie e proxy in una zona di sicurezza {#sub-networks-and-proxies-in-a-security-zone}
 
-Il parametro **proxy** può essere utilizzato in un elemento **subNetwork** per specificare l&#39;utilizzo del proxy in una zona di sicurezza.
+Il parametro **proxy** può essere utilizzato in un elemento **subNetwork** per specificare l&#39;utilizzo proxy in una zona di sicurezza.
 
 Quando si fa riferimento a un proxy e una connessione entra tramite questo proxy (visibile tramite l&#39;intestazione HTTP X-Forwarded-For), la zona verificata è quella dei client del proxy e non quella del proxy.
 
