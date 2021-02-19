@@ -223,7 +223,7 @@ Una volta identificati e preparati, i dati possono essere utilizzati nei seguent
 
    Per ulteriori informazioni, fare riferimento a [Aggiornamento elenco](../../workflow/using/list-update.md).
 
-* Puoi preparare o avviare direttamente le consegne nel flusso di lavoro.
+* Puoi preparare o avviare le consegne direttamente nel flusso di lavoro.
 
    Per ulteriori informazioni, vedere [Consegna](../../workflow/using/delivery.md), [Controllo consegna](../../workflow/using/delivery-control.md) e [Consegna continua](../../workflow/using/continuous-delivery.md).
 
