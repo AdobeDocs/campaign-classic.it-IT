@@ -90,7 +90,7 @@ ht-degree: 7%
 
 24 aprile 2018
 
-**Novità**
+**Scopri le novità**
 
 <table> 
  <thead> 
