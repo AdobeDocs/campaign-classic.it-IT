@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Stack trace in Linux
-description: Stack trace in Linux
+title: Traccia dello stack in Linux
+description: Traccia dello stack in Linux
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -15,7 +15,7 @@ ht-degree: 11%
 ---
 
 
-# Stack trace in Linux{#stack-trace-in-linux}
+# Traccia dello stack in Linux{#stack-trace-in-linux}
 
 Una traccia dello stack **traccia** rappresenta una traccia contenuta in un file di tipo **core**. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
