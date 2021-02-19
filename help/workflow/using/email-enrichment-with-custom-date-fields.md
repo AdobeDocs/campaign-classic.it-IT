@@ -95,7 +95,7 @@ Dopo l&#39;attività **[!UICONTROL Enrichment]**, potete aggiungere una consegna
 1. Fate clic su **[!UICONTROL Save]** per creare la consegna del messaggio e-mail.
 1. Controllare nella scheda **[!UICONTROL Approval]** della consegna dell&#39;e-mail **[!UICONTROL Properties]** che l&#39;elemento **[!UICONTROL Confirm delivery before sending option]** sia selezionato.
 
-   Quindi avviate il flusso di lavoro per arricchire la transizione in uscita con le informazioni di destinazione.
+   Quindi, avviate il flusso di lavoro per arricchire la transizione in uscita con le informazioni di destinazione.
 
    ![](assets/uc_enrichment_18.png)
 
