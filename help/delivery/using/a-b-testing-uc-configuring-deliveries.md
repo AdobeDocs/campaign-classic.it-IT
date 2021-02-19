@@ -32,7 +32,7 @@ Il passo successivo consiste nel configurare le consegne. Sono destinati alle tr
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Collegate la transizione dell&#39;attività **[!UICONTROL Split]** destinata alla popolazione B alla seconda consegna tramite e-mail.
+1. Collegate la transizione dell&#39;attività **[!UICONTROL Split]** destinata alla popolazione B alla seconda consegna di e-mail.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
