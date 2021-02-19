@@ -105,7 +105,7 @@ Nell&#39;esempio seguente, la consegna viene creata dalla home page. Per istruzi
 
    ![](assets/deliv_coup_09.png)
 
-1. Fate clic sull&#39;icona di personalizzazione per scegliere una delle opzioni seguenti in base al tipo di coupon:
+1. Fai clic sull’icona di personalizzazione per scegliere una delle opzioni seguenti in base al tipo di coupon:
 
    * Buono anonimo: **[!UICONTROL Coupon > Coupon code]**
 
