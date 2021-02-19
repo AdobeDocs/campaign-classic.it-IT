@@ -28,7 +28,7 @@ Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign.
 
 * Per le installazioni in sede, è necessario installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, vedere [Installazione di pacchetti Campaign Classic standard](../../installation/using/installing-campaign-standard-packages.md).
 
-In Adobe Campaign Classic, il **monitoraggio della recapito** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualificazione della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, il flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consente di gestire attivamente la distribuibilità della piattaforma.
+In Adobe Campaign Classic, il **monitoraggio della recapito** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualificazione della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consente di gestire attivamente la distribuibilità della piattaforma.
 
 ## Sfondo {#background}
 
