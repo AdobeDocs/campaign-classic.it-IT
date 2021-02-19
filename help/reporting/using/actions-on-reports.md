@@ -37,7 +37,7 @@ Quando un rapporto contiene più pagine, è necessario ripetere l&#39;operazione
 
 Le opzioni di esportazione sono accessibili tramite le attività **[!UICONTROL Page]** del report, nella scheda **[!UICONTROL Advanced]**.
 
-Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39;opzione **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
+Modificate le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle vostre esigenze. Potete inoltre autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deselezionare l&#39;opzione **[!UICONTROL Activate OpenOffice/Microsoft Excel export]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
