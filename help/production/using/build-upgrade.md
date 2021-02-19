@@ -40,7 +40,7 @@ Una volta che il sistema è pronto per essere aggiornato, un aggiornamento della
 
 Il processo di aggiornamento della build richiede le risorse seguenti:
 
-* un architetto  Adobe: per comprendere le strutture del database (schemi out-of-the-box ed eventuali schemi aggiuntivi aggiunti, le progettazioni delle campagne e tutte le funzionalità critiche del percorso che devono essere avviate e testate in un ordine specifico).
+* architetto  Adobe: per comprendere le strutture del database (schemi out-of-the-box ed eventuali schemi aggiuntivi aggiunti, le progettazioni delle campagne e qualsiasi funzionalità di percorso critico che deve essere avviata e testata in un ordine specifico).
 * un project manager: nel caso in cui l&#39;aggiornamento della build coinvolga molti casi diversi (produzione, staging, test) e altri server e applicazioni di terze parti (database, siti SFTP, provider di servizi di messaggistica), è consigliabile che un project manager coordini tutti i test.
 * un amministratore Adobe Campaign : l&#39;amministratore conosce la configurazione del server, che include, tra l&#39;altro: requisiti di sicurezza, layout delle cartelle, reporting e importazione\esportazione. Non eseguire un aggiornamento della build senza l&#39;amministratore.
 * operatore Adobe Campaign  (utente di marketing): un aggiornamento di successo dipende dalla capacità dell&#39;utente di eseguire le proprie attività quotidiane con successo. Per questo motivo, includete sempre almeno uno degli operatori giornalieri nel test dei server aggiornati.
@@ -105,7 +105,7 @@ Le procedure riportate di seguito sono eseguite solo dai clienti **locali**. Per
 
 ### Duplicare l&#39;ambiente
 
-Di seguito viene illustrato come duplicare un ambiente Adobe Campaign , al fine di ripristinare un ambiente di origine in un ambiente di destinazione, ottenendo due ambienti di lavoro identici.
+Di seguito viene illustrato come duplicare un ambiente Adobe Campaign  per ripristinare un ambiente di origine in un ambiente di destinazione, con la conseguente creazione di due ambienti di lavoro identici.
 
 Per farlo, segui la procedura indicata di seguito:
 
