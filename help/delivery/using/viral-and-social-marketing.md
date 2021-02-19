@@ -49,7 +49,7 @@ Quando il destinatario fa clic sull&#39;icona di uno dei social network visualiz
 
 >[!NOTE]
 >
->Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le tue esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, andate al nodo **[!UICONTROL Resources > Campaign management > Personalization blocks]** della struttura  Adobe Campaign.
+>Questo blocco di personalizzazione contiene tutti i collegamenti (per l&#39;invio e la condivisione di messaggi con tutti i social network). Può essere alterato per soddisfare le vostre esigenze. Tuttavia, la configurazione è riservata agli utenti avanzati. Per modificare il blocco di personalizzazione corrispondente, andate al nodo **[!UICONTROL Resources > Campaign management > Personalization blocks]** della struttura  Adobe Campaign.
 
 ## Marketing virtuale: inoltrare a un amico {#viral-marketing--forward-to-a-friend}
 
