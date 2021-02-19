@@ -145,7 +145,7 @@ La funzione di registrazione consente di:
 
 * **In Android**:
 
-   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (screenshot).
+   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (schermata).
 
    Per tenere traccia della visualizzazione delle notifiche (richiamando la funzione **notificationReceive** dell&#39;SDK), segui l&#39;implementazione indicata di seguito. Se utilizzate FCM (Firebase Cloud Messaging), consigliamo di utilizzare la funzione **notificationReceive** quando la funzione **onMessageReceived** viene chiamata dal sistema Android.
 
