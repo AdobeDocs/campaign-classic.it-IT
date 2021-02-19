@@ -155,7 +155,7 @@ I seguenti flussi di lavoro di replica sono disponibili come modelli &quot;pront
 
 ### Campi destinatario predefiniti {#default-recipient-fields}
 
-Se sono presenti campi aggiuntivi o tabelle personalizzate (ad esempio, tabella delle transazioni), non saranno replicate per impostazione predefinita. È necessario eseguire la configurazione avanzata. Vedere [Implementazione avanzata](#advanced-implementation).
+Se si dispone di campi aggiuntivi o tabelle personalizzate (ad esempio, tabella delle transazioni), queste non verranno replicate per impostazione predefinita. È necessario eseguire la configurazione avanzata. Vedere [Implementazione avanzata](#advanced-implementation).
 
 Di seguito è riportato l&#39;elenco dei campi dei destinatari replicati con l&#39;implementazione di base. Questi sono i campi predefiniti:
 
