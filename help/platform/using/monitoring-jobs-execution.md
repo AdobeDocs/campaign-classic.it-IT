@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Esecuzione dei processi di monitoraggio {#monitoring-job-execution}
+# Monitoraggio dell’esecuzione dei processi {#monitoring-job-execution}
 
 Potete tenere traccia dell’esecuzione dei processi di importazione ed esportazione direttamente dall’elenco dei processi di importazione/esportazione.
 
