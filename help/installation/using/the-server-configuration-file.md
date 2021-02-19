@@ -555,7 +555,7 @@ Per ulteriori informazioni, consultare la sezione [sezione](../../installation/u
 
 Di seguito sono elencati i diversi parametri del nodo **exec** (esecuzione del comando).
 
-Per ulteriori informazioni, fare riferimento a [Restrizione dei comandi esterni autorizzati](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
+Per ulteriori informazioni, fare riferimento a [Limitazione dei comandi esterni autorizzati](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
 
 <table> 
  <thead> 
@@ -2986,7 +2986,7 @@ Per ulteriori informazioni, consultare la sezione [sezione](../../installation/u
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Carattere(i) proibito(i) (Dominio): elenco di caratteri proibiti nella sezione "autorità" di un URI.<br /> </td> 
+   <td> Caratteri non consentiti (Dominio): elenco di caratteri proibiti nella sezione "autorità" di un URI.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
