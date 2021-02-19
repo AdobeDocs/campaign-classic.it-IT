@@ -378,7 +378,7 @@ I parametri sono i seguenti:
 * **indirizzo**: si tratta dell&#39;indirizzo IP del computer host MTA da utilizzare.
 * **heloHost**: questo identificatore rappresenta l&#39;indirizzo IP come verrà visualizzato dal server SMTP.
 
-* **publicId**: questa informazione è utile quando un indirizzo IP è condiviso da diversi  **** mtaser Adobe Campaign  un router NAT. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e invio tra il punto iniziale e il server di destinazione.
+* **publicId**: questa informazione è utile quando un indirizzo IP è condiviso da diversi  **** mtaser Adobe Campaign  un router NAT. Il server delle statistiche utilizza questo identificatore per memorizzare le statistiche di connessione e di invio tra il punto iniziale e il server di destinazione.
 * **peso**: consente di definire la frequenza relativa di utilizzo dell’indirizzo. Per impostazione predefinita, tutti gli indirizzi hanno uno spessore pari a 1.
 
 >[!NOTE]
