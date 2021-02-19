@@ -21,7 +21,7 @@ A seconda dell’implementazione, potete affrontare diversi problemi comuni.
 
 * **Quali sono le differenze di interfaccia tra Campaign Standard e Campaign v7?**
 
-   Campaign Standard e Campaign v7 funzionano in modo molto simile. La maggior parte dei concetti sono identici, ma in alcuni casi l&#39;approccio può essere leggermente diverso. Di seguito sono riportati alcuni dei concetti che possono essere diversi nel contesto del connettore ACS:
+   Campaign Standard e Campaign v7 funzionano in modo molto simile. La maggior parte dei concetti sono identici, ma in alcuni casi l&#39;approccio può essere leggermente diverso. Di seguito sono riportati alcuni dei concetti che potrebbero differire nel contesto del connettore ACS:
 
 <table> 
  <thead> 
