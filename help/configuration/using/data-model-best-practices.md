@@ -273,7 +273,7 @@ Per garantire prestazioni migliori in qualsiasi momento, segui le best practice 
 
 * Evitare di utilizzare operazioni come &quot;CONTAINS&quot; nelle query. Se sai cosa ci si aspetta e vuoi filtrare, applica la stessa condizione con &quot;EQUAL TO&quot; o altri operatori filtro specifici.
 * Evitare di unirsi a campi non indicizzati durante la creazione di dati nei flussi di lavoro.
-* Cercate di assicurarsi che i processi come l&#39;importazione e l&#39;esportazione avvengano al di fuori dell&#39;orario di lavoro.
+* Cercate di fare in modo che processi come l&#39;importazione e l&#39;esportazione avvengano al di fuori delle ore lavorative.
 * Assicurarsi che ci sia un programma per tutte le attività giornaliere e attenersi al programma.
 * Se uno o pochi processi giornalieri non riescono e se è obbligatorio eseguirli nello stesso giorno, assicurarsi che non siano in esecuzione processi in conflitto quando il processo manuale viene avviato, in quanto ciò potrebbe influire sulle prestazioni del sistema.
 * Accertatevi che nessuna delle campagne giornaliere venga eseguita durante il processo di importazione o quando viene eseguito un processo manuale.
@@ -282,7 +282,7 @@ Per garantire prestazioni migliori in qualsiasi momento, segui le best practice 
 
 ### Relazioni uno-a-molti {#one-to-many-relationships}
 
-* La progettazione dei dati influisce su usabilità e funzionalità. Se si progetta il modello dati con molte relazioni uno-a-molti, diventa più difficile per gli utenti costruire logiche significative nell&#39;applicazione. La logica del filtro uno-molti può essere difficile per gli addetti al marketing non tecnico da costruire e comprendere correttamente.
+* La progettazione dei dati influisce su usabilità e funzionalità. Se si progetta il modello dati con molte relazioni uno-a-molti, diventa più difficile per gli utenti costruire logiche significative nell&#39;applicazione. La logica del filtro uno-molti può essere difficile per gli esperti di marketing non tecnici da costruire e comprendere correttamente.
 * È utile avere tutti i campi essenziali in una tabella, perché semplifica la creazione di query da parte degli utenti. A volte è anche utile che le prestazioni di alcuni campi vengano duplicate tra le tabelle, se è possibile evitare un join.
 * Alcune funzionalità integrate non saranno in grado di fare riferimento a relazioni uno-molti, ad esempio, formula di ponderazione dell&#39;offerta e consegne.
 
