@@ -42,7 +42,7 @@ Specificare la modalità di memorizzazione della risposta: aggiornare un campo n
 
 >[!NOTE]
 >
->Per impostazione predefinita, il campo è inserito nella parte inferiore della struttura ad albero corrente. Utilizzate le frecce nella barra degli strumenti per spostarle verso l’alto o il basso.
+>Per impostazione predefinita, il campo è inserito nella parte inferiore della struttura ad albero corrente. Utilizzare le frecce nella barra degli strumenti per spostarle verso l&#39;alto o verso il basso.
 
 ## Creazione guidata campo {#field-creation-wizard}
 
