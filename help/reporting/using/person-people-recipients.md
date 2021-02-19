@@ -122,7 +122,7 @@ I registri seguenti coincidono con gli open e due clic effettuati dalla persona 
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
 | Persona sconosciuta | - | +1 | - |
-| Totale intermedio | 3 | 2 | 2 |
+| Totale intermedio | 1 | 2 | 2 |
 
 ## Passaggio 4: Henry {#step-4--henry}
 
@@ -147,7 +147,7 @@ L&#39;apertura e 4 clic effettuati da Henry appaiono nei seguenti registri:
 | Florian | +1 | +1 | +1 |
 | Persona sconosciuta | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| Totale intermedio | 2 | 6 | 3 |
+| Totale intermedio | 2 | 6 | 1 |
 
 ## Riepilogo {#summary}
 
@@ -157,7 +157,7 @@ A livello di consegna, abbiamo i seguenti risultati:
 
 * **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su di essi): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (utenti che hanno fatto clic su): 6
-* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 3
+* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 1
 
 La reattività grezza e la stima dei forward sono calcolate come segue:
 
