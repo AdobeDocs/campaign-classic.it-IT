@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Pannello consegna
+title: Dashboard delle consegne
 description: Scopri come utilizzare il dashboard di distribuzione per monitorare le consegne.
 audience: delivery
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Pannello consegna {#delivery-dashboard}
+# Dashboard delle consegne {#delivery-dashboard}
 
 Il **dashboard di consegna** è fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l&#39;invio dei messaggi.
 
@@ -71,7 +71,7 @@ La pagina mirror è disponibile solo per le consegne per le quali è stato defin
 
 ## Registri e cronologia di tracciamento della distribuzione{#tracking-logs}
 
-La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte  Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
+La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per la consegna. In questa scheda vengono visualizzati i dati di tracciamento dei messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte  Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
 
 >[!NOTE]
 >
