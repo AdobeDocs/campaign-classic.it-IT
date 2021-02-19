@@ -129,7 +129,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
 **Esempio 2**
 
-1. Prendete il flusso di lavoro dall&#39;esempio precedente e sostituite lo script dell&#39;attività **codice JavaScript** con il seguente script:
+1. Prendere il flusso di lavoro dall&#39;esempio precedente e sostituire lo script dell&#39;attività **codice JavaScript** con il seguente script:
 
    ```
    instance.vars.foo = "bar1"
