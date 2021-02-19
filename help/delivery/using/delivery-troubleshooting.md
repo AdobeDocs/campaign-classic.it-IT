@@ -24,7 +24,7 @@ Inoltre, assicurati di seguire le procedure ottimali e l&#39;elenco di controllo
 **Argomenti correlati:**
 
 * [Stati di consegna](../../delivery/using/delivery-statuses.md)
-* [Pannello consegna](../../delivery/using/delivery-dashboard.md)
+* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
 * [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
 
 ## Consegne lente {#slow-deliveries}
