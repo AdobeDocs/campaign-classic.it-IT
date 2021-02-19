@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Gestione degli indirizzi di seed nei messaggi transazionali{#managing-seed-addresses-in-transactional-messages}
 
-L&#39;indirizzo seed consente di visualizzare un&#39;anteprima del messaggio, inviare una prova e testare la personalizzazione dei messaggi prima dell&#39;invio tramite e-mail o SMS. Gli indirizzi dei semi sono collegati alla consegna e non possono essere utilizzati per altre consegne.
+Un indirizzo e-mail consente di visualizzare un&#39;anteprima del messaggio, inviare una prova e testare la personalizzazione dei messaggi prima dell&#39;invio tramite e-mail o SMS. Gli indirizzi dei semi sono collegati alla consegna e non possono essere utilizzati per altre consegne.
 
 ## Creazione di indirizzi di seed {#creating-a-seed-address}
 
