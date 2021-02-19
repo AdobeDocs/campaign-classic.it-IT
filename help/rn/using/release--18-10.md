@@ -106,7 +106,7 @@ ht-degree: 7%
 >
 >Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).[
 
-**Novità**
+**Scopri le novità**
 
 <table> 
  <thead> 
