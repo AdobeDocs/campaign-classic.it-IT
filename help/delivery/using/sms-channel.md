@@ -92,7 +92,7 @@ Per farlo, segui la procedura indicata di seguito:
 
 1. Nella scheda **[!UICONTROL SMSC specificities]**, l&#39;opzione **[!UICONTROL Send full phone number]** è disabilitata per impostazione predefinita. Non attivarla se si desidera rispettare il protocollo SMPP e trasferire solo cifre al server del provider SMS (SMSC).
 
-   Tuttavia, dato che alcuni provider richiedono l&#39;uso del prefisso &quot;+&quot;, si consiglia di controllare con il provider e si consiglia di abilitare questa opzione se necessario.
+   Tuttavia, dato che alcuni provider richiedono l&#39;uso del prefisso &quot;+&quot;, si consiglia di consultare il provider e si consiglia di abilitare questa opzione, se necessario.
 
    La casella di controllo **[!UICONTROL Enable TLS over SMPP]** consente di crittografare il traffico SMPP. Per ulteriori informazioni, consultare la [nota tecnica](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
@@ -137,7 +137,7 @@ Nella tabella seguente sono riportati i caratteri presi in considerazione dallo 
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
@@ -157,7 +157,7 @@ Nella tabella seguente sono riportati i caratteri presi in considerazione dallo 
    <td> mso </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
