@@ -24,7 +24,7 @@ Per questa configurazione sono necessari tre computer:
 
 I due server della rete perimetrale perimetrale DMZ, le pagine mirror e la consegna sono ridondanti per l&#39;elevata disponibilità.
 
-Il server applicazioni della LAN serve gli utenti finali ed esegue tutti i processi ricorrenti (motore del flusso di lavoro). Pertanto, quando i picchi di carico vengono raggiunti sui server frontali, gli utenti dell&#39;applicazione non vengono interessati.
+Il server applicazioni della LAN serve agli utenti finali ed esegue tutti i processi ricorrenti (motore del flusso di lavoro). Pertanto, quando i picchi di carico vengono raggiunti sui server frontali, gli utenti dell&#39;applicazione non vengono interessati.
 
 Il server del database può essere ospitato su un computer diverso da questi tre. In caso contrario, il server applicazioni e il server di database condividono lo stesso computer all&#39;interno della LAN, purché il sistema operativo sia supportato da  Adobe Campaign (Linux o Windows).
 
