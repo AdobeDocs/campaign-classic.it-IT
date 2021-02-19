@@ -250,7 +250,7 @@ Effettuate le seguenti operazioni:
 
       Poiché il server Adobe Campaign  viene utilizzato sia come server applicazione che come server di reindirizzamento, l’URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
 
-   * Gestione rimbalzi: Inserite i parametri per gestire la posta indesiderata (non prendete in considerazione la sezione **Messaggi di rimbalzo non elaborati**).
+   * Gestione rimbalzi: Immettete i parametri per gestire la posta di rimbalzo (non prendete in considerazione la sezione **Messaggi di rimbalzo non elaborati**).
    * Accesso da: Fornire i due URL per report, moduli Web e pagine mirror.
 
       ![](assets/d_ncs_install_web_url.png)
