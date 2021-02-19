@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ Per misurare la velocità di invio dei messaggi, puoi controllare la velocità d
 
 * Non provare a pianificare insieme consegne di grandi dimensioni. Si prega di notare che possono essere necessari da 5 a 10 minuti per distribuire uniformemente il carico sul sistema.
 
-## Risoluzione dei problemi di distribuzione {#delivery-troubleshooting}
+## Risoluzione dei problemi relativi alle consegne {#delivery-troubleshooting}
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 
