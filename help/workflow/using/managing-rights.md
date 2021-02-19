@@ -21,7 +21,7 @@ Se non si tratta di amministratori,  operatori Adobe Campaign devono disporre de
 
 In generale, gli operatori che agiscono sui flussi di lavoro devono accedere ai file contenenti i dati utilizzati durante le varie attività (destinatari, elenco destinatari, iscrizioni, consegne, ecc.) ed eventualmente ai relativi file secondari.
 
-Devono inoltre essere mappati sui diritti denominati che coincidono con le azioni eseguite dai flussi di lavoro che avranno effetto (importazione dei destinatari, accesso ai file, fusione, esecuzione di script SQL, ecc.).
+Devono inoltre essere mappati sui diritti denominati che coincidono con le azioni eseguite dai flussi di lavoro che avranno effetto (importazione dei destinatari, accesso ai file, fusione, esecuzione degli script SQL, ecc.).
 
 Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consultare la sezione [](../../platform/using/access-management.md).
 
