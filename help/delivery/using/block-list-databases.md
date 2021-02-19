@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# elenco Bloccati database{#denylist-databases}
+# Elenco Bloccati database{#denylist-databases}
 
 Diverse organizzazioni gestiscono database di indirizzi IP e domini ritenuti utilizzati dagli spammers. La consultazione di questi siti può essere utile per capire perché alcuni messaggi sono stati rifiutati come spam. In genere è possibile richiedere la rimozione di un indirizzo inserito erroneamente in tali elenchi.
 
