@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Introduzione al monitoraggio delle consegne
+title: Guida introduttiva al monitoraggio della consegna
 description: Ulteriori informazioni sulle funzionalità di monitoraggio della distribuzione Campaign Classic.
 audience: delivery
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 
-# Introduzione al monitoraggio della distribuzione {#about-delivery-monitoring}
+# Guida introduttiva al monitoraggio della consegna {#about-delivery-monitoring}
 
 Il monitoraggio delle consegne dopo l’invio è un passo fondamentale per garantire l’efficienza delle campagne marketing e la loro visibilità per i clienti.
 
@@ -29,8 +29,8 @@ L&#39;elenco delle consegne consente di visualizzare tutte le consegne create in
 
 Per ogni consegna è disponibile una dashboard dedicata. Consente di monitorare eventuali problemi riscontrati durante l&#39;invio e vari tipi di informazioni relative alla consegna: rapporti, pagine mirror, esclusioni, registri di tracciamento, rendering, ecc.
 
-* [Accesso all&#39;elenco delle consegne](../../delivery/using/list-of-deliveries.md)
-* [Pannello consegna](../../delivery/using/delivery-dashboard.md)
+* [Accesso all’elenco delle consegne](../../delivery/using/list-of-deliveries.md)
+* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
