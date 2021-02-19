@@ -347,7 +347,7 @@ In caso di problemi di codifica, è necessario verificare alcuni aspetti importa
 
 * UCS-2 e UTF-16 sono spesso mescolati dai telefoni. Questo è un problema quando si utilizzano emoji e altri caratteri non presenti nell&#39;UCS-2.
 
-* La maggior parte dei telefoni non dispone di glifi di font per tutti i caratteri UCS-2. Gli smartphone tendono ad essere in grado di visualizzare caratteri rari piuttosto facilmente, ma i cellulari con caratteristiche generalmente hanno un supporto limitato a ciò che è utile nella lingua nativa del paese in cui sono stati acquistati. Se desiderate utilizzare emoji o ASCII-art, testatela su un&#39;ampia varietà di telefoni prima di inviarla.  anteprima Adobe Campaign non simula i glifi mancanti e visualizzerà i simboli disponibili nel browser Web.
+* La maggior parte dei telefoni non dispone di glifi di font per tutti i caratteri UCS-2. Gli smartphone tendono ad essere in grado di visualizzare caratteri rari piuttosto facilmente, ma i telefoni cellulari con caratteristiche generalmente hanno un supporto limitato a ciò che è utile nella lingua nativa del paese in cui sono stati acquistati. Se desiderate utilizzare emoji o ASCII-art, testatela su un&#39;ampia varietà di telefoni prima di inviarla.  anteprima Adobe Campaign non simula i glifi mancanti e visualizzerà i simboli disponibili nel browser Web.
 
 Il campo `data_coding` indica la codifica utilizzata. Un problema importante è che il valore 0 indica la codifica SMSC predefinita nella specifica, che in genere si riferisce a GSM7. Verificare con il partner SMSC quale codifica è associata a `data_coding` = 0 che  solo Adobe Campaign supporta. Altri valori `data_coding` tendono a seguire la specifica, ma l&#39;unico modo per essere certi è di controllare con il provider SMSC.
 
@@ -356,7 +356,7 @@ La dimensione massima di un messaggio dipende dalla codifica. Questa tabella ria
 | Codifica | Solito data_coding | Dimensione del messaggio (caratteri) | Dimensioni parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 set di caratteri di base + estensione (i caratteri estesi prendono 2 caratteri) |
-| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
 ## Parametri del conto esterno SMPP {#SMPP-parameters-external}
