@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -25,9 +25,9 @@ _22 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite  Adobe Identity Service (IMS), l&#39;aggiornamento è obbligatorio affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
-> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l&#39;aggiornamento è obbligatorio per rafforzare la sicurezza dell&#39;ambiente.
-> * Se utilizzate l&#39;integrazione Experience Cloud Triggers tramite l&#39;autenticazione Auth, dovete passare ad  Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione legacy verrà ritirata il **30 aprile 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
+> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
 
 
 
@@ -35,7 +35,7 @@ _22 dicembre 2020_
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
 * Attiva l&#39;autenticazione dell&#39;integrazione originariamente basata sulla configurazione dell&#39;autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata in  Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
-* In seguito alla [fine del supporto per il protocollo binario precedente di iOS APN](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 durante l&#39;aggiornamento successivo.
+* Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 * È stato risolto un problema che causava la disattivazione del connettore SMPP in seguito a un errore di connessione, impedendo l&#39;invio di altri SMS e causando problemi di prestazioni. (NEO-28609)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
