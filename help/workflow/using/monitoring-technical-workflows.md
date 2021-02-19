@@ -9,8 +9,8 @@ topic-tags: use-cases
 translation-type: tm+mt
 source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ In [questa pagina](../../production/using/monitoring-guidelines.md) sono disponi
 
 ![](assets/monitoring_technical_workflows1.png)
 
-In Indicatori di sistema e file di base, verificare che nessun indicatore sia evidenziato in rosso. Se questo è il caso e alcuni sono, è necessario:
+In Indicatori di sistema e file di base, verificare che nessun indicatore sia evidenziato in rosso. In questo caso e in alcuni casi, è necessario:
 
 * Verificare che i processi necessari siano sempre in esecuzione,
 * Verificate che nessuno dei processi sia troppo vecchio,
