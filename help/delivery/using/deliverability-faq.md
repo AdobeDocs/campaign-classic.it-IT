@@ -44,7 +44,7 @@ Se si riceve sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#
 
 Se il problema persiste, contattate l&#39;Assistenza clienti [ Adobe ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) del servizio commerciale o di recapito.
 
-## elenco Bloccati e quarantena {#denylist-versus-quarantine}
+## Elenco Bloccati e quarantena {#denylist-versus-quarantine}
 
 * **Qual è la differenza tra un indirizzo e-mail elenco Bloccati e un indirizzo e-mail in quarantena?**
 
