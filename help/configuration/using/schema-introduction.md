@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 7%
+ht-degree: 27%
 
 ---
 
@@ -28,11 +28,11 @@ Elenco di riferimento:
 * [Condizione](schema/condition.md)
 * [Indice DB](schema/db-index.md)
 * [Elemento](schema/element.md)
-* [Enumeration](schema/enumeration.md)
+* [Enumerazione](schema/enumeration.md)
 * [Guida](schema/help.md)
-* [Iscriviti](schema/join.md)
-* [Key](schema/key.md)
-* [Keyfield](schema/keyfield.md)
+* [Iscriversi](schema/join.md)
+* [Chiave](schema/key.md)
+* [Campo chiave](schema/keyfield.md)
 * [Metodo](schema/method.md)
 * [Metodi](schema/methods.md)
 * [Param](schema/param.md)
