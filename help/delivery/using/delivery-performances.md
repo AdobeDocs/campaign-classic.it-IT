@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Best practice per la distribuzione
+title: Best practice per la consegna
 description: Ulteriori informazioni sulle prestazioni di distribuzione e sulle best practice.
 audience: delivery
 content-type: reference
@@ -10,19 +10,19 @@ translation-type: tm+mt
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# Best practice per la distribuzione {#delivery-performances}
+# Best practice per la consegna {#delivery-performances}
 
 Si consiglia di seguire le linee guida riportate di seguito per garantire il corretto svolgimento delle consegne, nonché i controlli eseguiti in caso di problemi di consegna.
 
 **Argomenti correlati:**
 
-* [Pannello consegna](../../delivery/using/delivery-dashboard.md)
-* [Risoluzione dei problemi di consegna](../../delivery/using/delivery-troubleshooting.md)
+* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
+* [Risoluzione dei problemi relativi alle consegne](../../delivery/using/delivery-troubleshooting.md)
 * [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
 
 ## Procedure ottimali per le prestazioni {#best-practices-performance}
