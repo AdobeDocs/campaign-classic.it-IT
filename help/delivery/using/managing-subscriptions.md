@@ -128,7 +128,7 @@ Per registrare i destinatari per un servizio di informazione, potete:
    Per ulteriori informazioni, consultare la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
 
 * Iscriviti automaticamente a questo servizio un set di destinatari. L&#39;elenco dei destinatari può provenire da un&#39;operazione di filtro, un gruppo, una cartella, un&#39;importazione o una selezione diretta utilizzando il mouse. Per iscriverti a questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
-* Importa i destinatari e li iscrivi automaticamente a un servizio di informazione. A questo scopo, selezionate il servizio interessato nell’ultimo passaggio della procedura guidata di importazione.
+* Importa i destinatari e li iscrivi automaticamente a un servizio di informazione. A questo scopo, selezionate il servizio in questione nell’ultimo passaggio della procedura guidata di importazione.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
 
