@@ -117,7 +117,7 @@ Di seguito è riportato l&#39;elenco delle tabelle pronte all&#39;uso che vengon
 * Visitatori (visitor)
 * Cronologia iscrizioni (subHisto)
 * Iscrizioni (iscrizione)
-* Proposta di offerta del destinatario (propositionRcp)
+* Proposta di offerta del destinatario (propostaRcp)
 
 Se sono state create tabelle personalizzate con un collegamento alla tabella dei destinatari (tipo proprio), verranno prese in considerazione. Ad esempio, se hai una tabella di transazione collegata alla tabella del destinatario e una tabella dei dettagli della transazione collegata alla tabella delle transazioni, entrambi vengono presi in considerazione.
 
