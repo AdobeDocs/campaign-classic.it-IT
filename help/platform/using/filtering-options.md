@@ -60,7 +60,7 @@ Ad esempio, è possibile ordinare le attività per priorità, data di creazione 
 
 ## Ricerca rapida {#quick-search}
 
-Utilizzate il campo di ricerca per accedere rapidamente all’elemento che state cercando: immettere i caratteri inclusi nell&#39;etichetta o nel nome interno dell&#39;elemento che si desidera visualizzare, quindi confermare di applicare un filtro automatico ai dati della pagina.
+Usate il campo di ricerca per accedere rapidamente all’elemento che state cercando: immettere i caratteri inclusi nell&#39;etichetta o nel nome interno dell&#39;elemento che si desidera visualizzare, quindi confermare di applicare un filtro automatico ai dati della pagina.
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 
