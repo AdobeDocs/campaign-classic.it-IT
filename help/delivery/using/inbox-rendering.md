@@ -31,7 +31,7 @@ I client per dispositivi mobili, messaggi e webmail disponibili per il rendering
 >
 >Il rendering della inbox non è necessario per testare la personalizzazione nelle consegne. È possibile verificare la personalizzazione con  strumenti Adobe Campaign quali **[!UICONTROL Preview]** e [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Attivazione del rendering in entrata {#activating-inbox-rendering}
+## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
 Per i client ospitati e ibridi, il rendering della Casella in entrata è configurato nell’istanza da  supporto tecnico e consulenti del Adobe. Per ulteriori informazioni, contattate l&#39;amministratore  account di Adobe.
 
