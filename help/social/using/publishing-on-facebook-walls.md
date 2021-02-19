@@ -31,7 +31,7 @@ Per iniziare, create un account Facebook e diverse pagine: verranno utilizzati p
 * Per creare un account Facebook, utilizzate il collegamento [https://www.facebook.com](https://www.facebook.com).
 * Per creare una pagina Facebook, utilizzate il collegamento [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create).
 
-   È consigliabile utilizzare lo stesso account Facebook per amministrare tutte le pagine. In questo modo, avrete bisogno solo di un&#39;applicazione Facebook e di un account esterno per scrivere su tutte le pagine dell&#39;account.
+   È consigliabile utilizzare lo stesso account Facebook per amministrare tutte le pagine. In questo modo sarà necessaria solo un&#39;applicazione Facebook e un account esterno per scrivere su tutte le pagine dell&#39;account.
 
    ![](assets/social_diagram_fb_external_account.png)
 
