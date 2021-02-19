@@ -36,7 +36,7 @@ Per l&#39;invio di e-mail che verranno lette su un cellulare gestito da un provi
 È pertanto necessario:
 
 * Usare solo immagini in formato JPEG o GIF
-* Create una distribuzione con sezioni di testo e HTML rigorosamente inferiori a 10 000 byte (per KDDI AU e DoCoMo)
+* Create una consegna con sezioni di testo e HTML rigorosamente inferiori a 10 000 byte (per KDDI AU e DoCoMo)
 * Usate immagini con una dimensione totale (prima della codifica) inferiore a 100 KB
 * Non utilizzare più di 20 immagini per messaggio
 * Utilizzate un formato HTML di dimensioni ridotte (per ogni operatore è disponibile un numero limitato di tag)
