@@ -47,7 +47,7 @@ L&#39;utilizzo di una tabella di destinatari esterna presenta le seguenti limita
 
    Consigliamo di:
 
-   * Dedicando gli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** all&#39;out-of-the-box **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate ad alcuna tabella di destinatari personalizzata aggiuntiva.
+   * Dedicare gli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** all&#39;out-of-the-box **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate ad alcuna tabella di destinatari personalizzata aggiuntiva.
    * Definizione di schemi di log e di trackinglog personalizzati dedicati per ogni nuovo schema di destinatari personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione della mappatura di destinazione, vedere [Mappatura di destinazione](../../configuration/using/target-mapping.md).
 
 * Non è possibile utilizzare la **[!UICONTROL Services and Subscriptions]** standard offerta nel prodotto.
