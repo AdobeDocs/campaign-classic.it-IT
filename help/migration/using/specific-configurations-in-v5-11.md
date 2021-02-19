@@ -27,7 +27,7 @@ Durante la migrazione verrà visualizzato automaticamente il seguente avviso:
 The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side javascript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
-Alcuni componenti delle applicazioni Web, ad esempio i vari campi formula, hanno gli attributi @id. Questi vengono utilizzati nel codice XML delle applicazioni Web e non vengono più generati allo stesso modo. Non sono visibili nell&#39;interfaccia e normalmente non è necessario utilizzarli. Tuttavia, in alcuni casi, gli attributi @id possono essere stati utilizzati per personalizzare il rendering delle applicazioni Web, ad esempio tramite un foglio di stile o utilizzando codice JavaScript.
+Alcuni componenti delle applicazioni Web, ad esempio i vari campi formula, hanno gli attributi @id. Questi vengono utilizzati nel codice XML delle applicazioni Web e non vengono più generati allo stesso modo. Non sono visibili nell&#39;interfaccia e normalmente non è necessario utilizzarli. Tuttavia, in alcuni casi, gli attributi @id possono essere stati utilizzati per personalizzare il rendering delle applicazioni Web, ad esempio tramite un foglio di stile o utilizzando il codice JavaScript.
 
 Durante la migrazione, **è necessario** controllare il percorso del file di registro specificato nell&#39;avviso:
 
