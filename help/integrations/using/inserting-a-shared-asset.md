@@ -23,7 +23,7 @@ Le risorse condivise da Adobe Experience Cloud possono essere utilizzate nelle e
 
    Se utilizzate risorse dalla libreria delle risorse Adobe Experience Manager, utilizzate un modello di consegna creato durante la [configurazione dell&#39;integrazione](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   Se non si dispone di questo modello specifico, assicurarsi che nella **Properties** di consegna, la scheda **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]**) sia impostata su **DCE** e che sia fornito l&#39;account esterno AEM che si desidera utilizzare per accedere alla  libreria delle risorse AEM Assets.
+   Se non si dispone di questo modello specifico, assicurarsi che nella consegna **Properties**, la scheda **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]**) sia impostata su **DCE** e che sia fornito l&#39;account esterno AEM che si desidera utilizzare per accedere alla  libreria delle risorse AEM Assets.
 
 1. Nella finestra di modifica, selezionate l’opzione per aggiungere un’immagine:
 
