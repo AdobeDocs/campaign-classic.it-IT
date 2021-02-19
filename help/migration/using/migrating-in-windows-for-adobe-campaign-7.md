@@ -311,7 +311,7 @@ In questa fase, il server IIS deve essere arrestato. Fare riferimento a [Arresto
 
       ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 
-   * Inserite il numero del sito Web creato in precedenza per  Adobe Campaign v7 e fate clic su **[!UICONTROL OK]**.
+   * Immettete il numero del sito Web creato in precedenza per  Adobe Campaign v7 e fate clic su **[!UICONTROL OK]**.
 
       ![](assets/s_ncs_install_iis7_parameters_step3_7.png)
 
