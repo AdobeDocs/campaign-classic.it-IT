@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '908'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 Prima di avviare la configurazione, verificare che:
 
-*  rilascio minimo di Adobe Campaign 20.3 o Gold Standard 11
+*  Adobe Campaign 20.3, 20.2.4, 19.1.8 o Gold Standard 11 minimo
 *  versione Adobe Analytics Standard
 
 Sarà inoltre necessario:
@@ -49,7 +49,7 @@ L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto Adob
 
 Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici Adobe I/O per l&#39;integrazione Triggers.
 
-Per i clienti di On Premise, fare riferimento alla pagina [Configuring  Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** quando si aggiunge API alla credenziale Adobe I/O .
+Per i clienti interni, consultare la pagina [Configuring  Adobe I/O for  Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** quando si aggiunge API alla credenziale Adobe I/O .
 
 ## Passaggio 2: Configurazione dell&#39;opzione pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
