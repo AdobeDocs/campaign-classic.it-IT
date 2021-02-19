@@ -43,7 +43,7 @@ Se avete modificato queste applicazioni Web e desiderate continuare a utilizzarl
 
 >[!IMPORTANT]
 >
->Per continuare a utilizzare le applicazioni Web di tipo v6.02, è necessario attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza prima dell&#39;aggiornamento successivo. Fare riferimento a [Applicazioni Web](#web-applications).
+>Se desiderate continuare a utilizzare le applicazioni Web di tipo v6.02, è necessario attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza prima dell&#39;aggiornamento successivo. Fare riferimento a [Applicazioni Web](#web-applications).
 
 Dopo una migrazione dalla versione 6.02, la homepage  Adobe Campaign v6.02 non viene più visualizzata ma resta accessibile e compatibile con  Adobe Campaign v7.
 
