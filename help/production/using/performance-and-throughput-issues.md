@@ -58,7 +58,7 @@ Di seguito è riportato un elenco degli articoli relativi alle procedure ottimal
 
 Di seguito è riportato un elenco delle best practice e degli articoli relativi alla recapito:
 
-* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Monitoraggio della realizzabilità** offre diversi strumenti per monitorare le prestazioni della piattaforma. Fare riferimento a questa [pagina](../../delivery/using/monitoring-deliverability.md).
+* reputazione IP: se la reputazione dell&#39;IP non è sufficiente, le prestazioni saranno influenzate. Il modulo **Monitoraggio della realizzabilità** offre diversi strumenti per monitorare le prestazioni di recapito della piattaforma. Fare riferimento a questa [pagina](../../delivery/using/monitoring-deliverability.md).
 * Riscaldamento IP: il riscaldamento dell&#39;IP viene eseguito dal team di recapito. Ciò comporta un aumento graduale del numero di e-mail attraverso nuovi IP in un periodo di poche settimane.
 * Impostazione affinità IP: un&#39;impostazione errata dell&#39;affinità IP può arrestare completamente le e-mail (nome di operatore/affinità errato nella configurazione) o ridurre il throughput (numero limitato di IP nell&#39;affinità). Fare riferimento a questa [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * Dimensione e-mail: la dimensione dell&#39;e-mail svolge un ruolo importante nella trasmissione. La dimensione massima consigliata per l’e-mail è 60 KB. Fare riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [Trasmissione consegna](../../reporting/using/global-reports.md#delivery-throughput) controllare il numero di byte trasferiti per ora.
