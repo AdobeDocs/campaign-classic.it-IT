@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 
 # ZIP o cifratura di un file {#zipping-or-encrypting-a-file}
 
- Adobe Campaign consente di esportare file compressi o crittografati. Quando si definisce un&#39;esportazione tramite un&#39;attività **[!UICONTROL Data extraction (file)]**, è possibile definire una post-elaborazione per comprimere o cifrare il file.
+ Adobe Campaign consente di esportare file compressi o crittografati. Quando definite un&#39;esportazione tramite un&#39;attività **[!UICONTROL Data extraction (file)]**, potete definire una post-elaborazione per creare un file ZIP o per cifrare il file.
 
 Per essere in grado di effettuare le seguenti operazioni:
 
@@ -34,7 +34,7 @@ Potete quindi utilizzare i comandi o il codice nella scheda **[!UICONTROL Script
 
 **Argomenti correlati:**
 
-* [Estrazione o decrittografia di un file prima dell&#39;elaborazione](../../platform/using/unzip-decrypt.md)
+* [Estrazione o decrittografia di un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md)
 * [Attività](../../workflow/using/extraction--file-.md) di estrazione dei dati (file).
 
 ## Caso di utilizzo: Cifratura ed esportazione di dati utilizzando una chiave installata nel Pannello di controllo Campaign {#use-case-gpg-encrypt}
