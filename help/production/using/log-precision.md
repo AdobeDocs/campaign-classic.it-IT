@@ -60,7 +60,7 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
 >[!IMPORTANT]
 I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
-Di seguito è riportato un esempio specifico del modulo Web. Gli altri moduli funzionano come indicato sopra.
+Di seguito è riportato un esempio specifico per il modulo Web. Gli altri moduli funzionano come indicato sopra.
 
 Prima di inviare questo comando, verificate che non venga interessato alcun processo in corso:
 
