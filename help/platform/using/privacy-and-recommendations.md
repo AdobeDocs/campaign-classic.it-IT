@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -124,7 +124,7 @@ Di seguito è riportato il flusso generale relativo a questo caso d’uso:
 
 ## Gestione della privacy {#privacy-management}
 
-La gestione della privacy si riferisce a tutti i processi e agli strumenti che possono aiutarti a rispettare le normative sulla privacy (GDPR, CCPA, ecc.). Ottenete una panoramica della gestione della privacy in [questa pagina](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html).
+La gestione della privacy si riferisce a tutti i processi e agli strumenti che possono aiutarti a rispettare le normative sulla privacy (GDPR, CCPA, ecc.). Per una panoramica sulla gestione della privacy, visita [questa pagina](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html).
 
  Adobe Campaign offre varie serie di funzioni dedicate alla gestione della privacy:
 * Gestione del consenso, conservazione dei dati e ruoli degli utenti. Vedi [questa sezione](#consent).
