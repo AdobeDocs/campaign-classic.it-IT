@@ -91,7 +91,7 @@ Per una spiegazione dettagliata dello script, fare riferimento a [Dettagli dello
 
 In questa sezione vengono descritte le varie parti dello script e la relativa modalità operativa.
 
-* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create mediante l&#39;esecuzione del flusso di lavoro di targeting e di ordinarle in base al tasso stimato di apertura, quindi le informazioni relative alla consegna con il tasso più alto di aperture vengono recuperate.
+* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create mediante l&#39;esecuzione del flusso di lavoro di targeting e di ordinarle in base al tasso stimato di aperture, quindi le informazioni dalla consegna con il tasso più alto di aperture vengono recuperate.
 
    ```
    // query the database to find the winner (best open rate)
