@@ -60,7 +60,7 @@ Il passo successivo consiste nel determinare la frequenza della campagna di reco
 
 ![](assets/deliverability_implementation_2.png)
 
-Gli iscritti che interagiscono con la campagna seguendo l&#39;attività aperta o di clic vengono aggiunti nuovamente all&#39;elenco degli utenti coinvolti.
+Gli iscritti che interagiscono con la campagna seguendo l&#39;attività aperta o di clic vengono aggiunti nuovamente all&#39;elenco degli iscritti coinvolti.
 
 ### Fase 4 {#phase-4}
 
