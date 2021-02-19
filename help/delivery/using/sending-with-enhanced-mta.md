@@ -88,7 +88,7 @@ No. L&#39;aggiornamento non richiede il passaggio a nuovi IP, pertanto puoi cont
 
 Tutte le consegne che erano state preparate prima dell&#39;aggiornamento dell&#39;istanza per l&#39;utilizzo dell&#39;MTA avanzato dovranno essere preparate nuovamente per poter utilizzare correttamente il nuovo MTA.
 
-Per i clienti che utilizzano  funzionalità di messaggistica transazionale di Adobe Campaign, qualsiasi chiamata API per attivare un&#39;e-mail verrà messa in coda durante i tempi di inattività dell&#39;aggiornamento molto brevi e tentata al termine dell&#39;aggiornamento.
+Per i clienti che utilizzano  funzionalità di messaggistica transazionale di Adobe Campaign, qualsiasi chiamata API per attivare un&#39;e-mail verrà messa in coda durante il breve periodo di inattività dell&#39;aggiornamento e tentata al termine dell&#39;aggiornamento.
 
 ## Specifiche MTA migliorate {#enhanced-mta-impacts}
 
