@@ -25,7 +25,7 @@ ht-degree: 6%
 >
 >Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare l&#39;Assistenza clienti  Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).[
 
-**Novità**
+**Scopri le novità**
 
 <table> 
  <thead> 
@@ -79,9 +79,9 @@ Per ulteriori informazioni sulla bendatura delle query, fare riferimento ai segu
 
 >[!CAUTION]
 >
->Questa costruzione è stata richiamata. [eseguire l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare il supporto tecnico [supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa costruzione è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare il supporto tecnico [supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-**Novità**
+**Scopri le novità**
 
 <table> 
  <thead> 
@@ -110,7 +110,7 @@ La funzione **decryptString** è obsoleta. Fare riferimento all&#39;articolo [Fu
 
 Per i nuovi clienti, questa funzione è ora utilizzata solo per decifrare l&#39;ID crittografato del destinatario nelle pagine di destinazione. Per decifrare le password memorizzate in un account esterno, utilizzare la nuova funzione **decrittografarePassword**.
 
-Per i clienti esistenti, il comportamento di questa funzione non viene modificato, ma si consiglia di utilizzare **decrittografarePassword** invece di **decrittareString**. L&#39;opzione di compatibilità **XtkSecurity_Unsafe_DecryptString** viene aggiunta dall&#39;aggiornamento successivo e attivata per impostazione predefinita, consentendo di continuare a utilizzare la funzione. Per disattivare **deryptString**, disattivate l&#39;opzione.
+Per i clienti esistenti, il comportamento di questa funzione non viene modificato, ma si consiglia di utilizzare **decrittografarePassword** invece di **decrittareString**. L&#39;opzione di compatibilità **XtkSecurity_Unsafe_DecryptString** viene aggiunta dal postaggiornamento e attivata per impostazione predefinita, consentendo di continuare a utilizzare la funzione. Per disattivare **deryptString**, disattivate l&#39;opzione.
 
 decryptPassword
 
