@@ -151,7 +151,7 @@ Alcuni schemi out-of-the-box sono stati modificati e ora sono accessibili solo p
 
 ### Parametro sessionToken {#sessiontoken-parameter}
 
-In v5, il parametro **session token** funzionava su entrambi i lati client (elenco di schermate tipo panoramica, editor collegamenti, ecc.) e lato server (applicazioni Web, rapporti, jsp, jssp, ecc.). In v7, funziona solo sul lato server. Se desiderate tornare alla funzionalità completa come in v5, dovete modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
+In v5, il parametro **session token** funzionava su entrambi i lati client (elenco di schermate tipo panoramica, editor collegamenti, ecc.) e lato server (applicazioni Web, rapporti, jsp, jssp, ecc.). In v7, funziona solo sul lato server. Se desiderate tornare alla funzionalità completa come in v5, dovete modificare i collegamenti utilizzando questo parametro e passare attraverso la pagina di connessione:
 
 Esempio di collegamento:
 
@@ -671,7 +671,7 @@ I passaggi per selezionare il motore di rendering sono gli stessi per la selezio
 
 ## Red Hat {#red-hat}
 
-Se gli schemi out-of-the-box sono stati eliminati in v6.02 o v5.11, dopo l’aggiornamento potrebbe non essere più possibile modificare gli schemi. In questo caso, eseguite il comando:
+Se gli schemi out-of-the-box sono stati eliminati in v6.02 o v5.11, non sarà più possibile modificare gli schemi dopo l&#39;aggiornamento postaggiornato. In questo caso, eseguite il comando:
 
 ```
 su - neolane
