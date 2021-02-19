@@ -91,7 +91,7 @@ vacuum full nmsdelivery;
 >[!NOTE]
 >
 >*  Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo ha esito negativo su tabelle di grandi dimensioni (dove il rischio di fallimento è più elevato), almeno una parte della manutenzione è stata completata.
->*  Adobe riordina l&#39;aggiunta delle tabelle specifiche del modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
+>*  Adobe riordina l&#39;aggiunta di tabelle specifiche al modello dati che possono essere soggette a aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dati giornalieri di grandi dimensioni.
 >* I comandi **vuoto** e **re-index** bloccheranno la tabella, mettendo in pausa alcuni processi durante la manutenzione.
 >* Per le tabelle molto grandi (generalmente sopra i 5 Gb), **vuoto pieno** può diventare abbastanza inefficiente e richiedere molto tempo.  Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx**.
 >* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign , utilizzando un&#39;attività **[!UICONTROL SQL]** (per ulteriori informazioni, fare riferimento a [questa sezione](../../workflow/using/architecture.md)). Accertatevi di pianificare la manutenzione per un periodo di attività basso che non entri in conflitto con la finestra di backup.
