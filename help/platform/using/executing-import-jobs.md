@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Configurazione di processi di importazione {#executing-import-jobs}
+# Configurazione dei processi di importazione {#executing-import-jobs}
 
  Adobe Campaign consente di importare dati nel database da uno o più file in formato testo, CSV, TAB o XML. Questi file sono associati a una tabella (principale o collegata) e ogni campo dei file di origine è associato a un campo del database.
 
@@ -229,7 +229,7 @@ evitare di scegliere un campo che potrebbe essere modificato durante l&#39;impor
 >
 >Un &#39;duplicato&#39; è un elemento presente sia nel file da importare che nel database.
 
-Il campo **[!UICONTROL Management of doubles]** consente di configurare la deduplicazione dei dati. La deduplicazione riguarda i record che vengono visualizzati più volte **nel file di origine** (o i file di origine nel caso di un&#39;importazione di più file), ovvero le righe per le quali i campi della chiave di riconciliazione sono identici.
+Il campo **[!UICONTROL Management of doubles]** consente di configurare la deduplicazione dei dati. Deduplicazione riguarda i record che vengono visualizzati più volte **nel file di origine** (o i file di origine nel caso di un&#39;importazione di più file), vale a dire righe per le quali i campi della chiave di riconciliazione sono identici.
 
 * La gestione duplicata in modalità **[!UICONTROL Update]** (modalità predefinita) non esegue la deduplicazione. L&#39;ultimo record ha quindi priorità (perché aggiorna i dati dei record precedenti). Il conteggio dei duplicati non viene eseguito in questa modalità.
 * La gestione duplicata in modalità **[!UICONTROL Ignore]** o **[!UICONTROL Reject entity]** esclude i duplicati dall&#39;importazione. In questo caso, non viene importato alcun record.
