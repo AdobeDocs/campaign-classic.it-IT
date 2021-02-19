@@ -9,8 +9,8 @@ topic-tags: online-surveys
 translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
