@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -29,8 +29,8 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
 
 **Argomenti correlati:**
 
-* [Pannello consegna](../../delivery/using/delivery-dashboard.md)
-* [Risoluzione dei problemi di consegna](../../delivery/using/delivery-troubleshooting.md)
+* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
+* [Risoluzione dei problemi relativi alle consegne](../../delivery/using/delivery-troubleshooting.md)
 * [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
 
 ## Elenco di stati di consegna {#list-delivery-statuses}
