@@ -305,7 +305,7 @@ Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza neg
 
 >[!NOTE]
 >
->Una sequenza cui viene fatto riferimento in uno schema Adobe Campaign  ( ad esempio, NmsTrackingLogId **) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole.** Questa funzione deve essere denominata **GetNew** XXX **Ids**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Per recuperare l&#39;esempio di un&#39;applicazione, vedere i file **postgres-nms.sql**, **mssql-nms.sql&lt;a2/> o** oracle-nms.sql **forniti con l&#39;applicazione nella directory** datakit/nms/sql/**creazione della sequenza msTrackingLogId per ogni motore di database.**
+>Una sequenza cui viene fatto riferimento in uno schema Adobe Campaign  ( ad esempio, NmsTrackingLogId **) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole.** Questa funzione deve essere denominata **GetNew** XXX **Ids**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Per recuperare l&#39;esempio di un&#39;applicazione, vedere i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/sql/** creazione della sequenza msTrackingLogId per ogni motore di database.
 
 Per dichiarare una chiave univoca, compilare l&#39;attributo **autopk** (con valore &quot;true&quot;) sull&#39;elemento principale dello schema dati.
 
@@ -496,7 +496,7 @@ In questo esempio, dichiareremo un collegamento verso la tabella dello schema &q
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Esempio 5 {#example-4}
+### Esempio 4 {#example-4}
 
 Collegare una cartella (&quot;schema xtk:folder&quot;):
 
