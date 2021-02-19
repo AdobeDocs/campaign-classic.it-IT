@@ -35,7 +35,7 @@ Il campo **[!UICONTROL Title]** consente di personalizzare l&#39;etichetta nell&
 
 Le opzioni **[!UICONTROL Display settings]** consentono di selezionare la posizione della didascalia di controllo all&#39;interno di una pagina di report e di definire il numero di colonne nella pagina. Per ulteriori informazioni sul layout di pagina, fare riferimento alla sezione **Layout elemento** di [questa sezione](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Selezionate le varie opzioni nella sezione **[!UICONTROL Browse]** per autorizzare la navigazione da una pagina del rapporto all&#39;altra. Se l&#39;opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** è selezionata, i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** scompaiono dalla pagina del rapporto.
+Selezionate le varie opzioni nella sezione **[!UICONTROL Browse]** per autorizzare la navigazione da una pagina del rapporto all&#39;altra. Se l&#39;opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** è selezionata, i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** vengono rimossi dalla pagina del rapporto.
 
 ## Aggiunta di un&#39;intestazione e un piè di pagina {#adding-a-header-and-a-footer}
 
