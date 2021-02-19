@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Aggiornamento della struttura del database{#updating-the-database-structure}
 
-Per applicare le modifiche apportate agli schemi, avviate la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **[!UICONTROL Tools > Advanced > Update database structure]**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL.
+Per applicare le modifiche apportate agli schemi, avviate la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **[!UICONTROL Tools > Advanced > Update database structure]** . Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
