@@ -166,7 +166,7 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non Raggiungibile </td> 
    <td> Soft/Hard </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Si è verificato un errore nella catena di distribuzione dei messaggi. Potrebbe essere un incidente sul relè SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà riprovato fino a quando il contatore di errori raggiunge 5, o verrà inviato direttamente alle quarantena.<br /> </td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ Questo processo consente di raggruppare tutti gli errori dello stesso tipo ed ev
 I messaggi di rimbalzo possono avere il seguente stato di qualifica:
 
 * **[!UICONTROL To qualify]** : impossibile qualificare il messaggio di rimbalzo. La qualifica deve essere assegnata al team di distribuzione per garantire una distribuzione efficiente della piattaforma. Finché non è qualificato, il messaggio di rimbalzo non viene utilizzato per arricchire l&#39;elenco delle regole di gestione delle e-mail.
-* **[!UICONTROL Keep]** : il messaggio di rimbalzo è qualificato e verrà utilizzato dal flusso di lavoro  **Aggiorna per la** recapito, per essere confrontato con le regole di gestione e-mail esistenti e arricchire l&#39;elenco.
+* **[!UICONTROL Keep]** : il messaggio di rimbalzo è stato qualificato e verrà utilizzato dal flusso di lavoro  **Aggiorna per la** recapito, per essere confrontato con le regole di gestione e-mail esistenti e arricchire l&#39;elenco.
 * **[!UICONTROL Ignore]** : il messaggio di rimbalzo viene ignorato dall&#39;MTA della campagna, il che significa che questo messaggio di rimbalzo non causerà mai la quarantena dell&#39;indirizzo del destinatario. Non verrà utilizzato dal flusso di lavoro **Aggiorna per la recapito** e non verrà inviato alle istanze client.
 
 ![](assets/deliverability_qualif_status.png)
@@ -323,7 +323,7 @@ Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nel
 >
 >Per le installazioni ospitate o ibride, se avete effettuato l&#39;aggiornamento a [MTA](../../delivery/using/sending-with-enhanced-mta.md) avanzata, le regole di throughput di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L&#39;MTA avanzata utilizza le proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
 
-Per le installazioni in sede e le installazioni ospitate/ibride utilizzando l&#39;MTA della campagna precedente:
+Per le installazioni in sede e le installazioni ospitate/ibride utilizzando il MTA della campagna precedente:
 
 * Le regole di gestione MX vengono utilizzate per regolare il flusso di e-mail in uscita per un dominio specifico. Se necessario, vengono campionati i messaggi di rimbalzo e l’invio di blocchi.
 
