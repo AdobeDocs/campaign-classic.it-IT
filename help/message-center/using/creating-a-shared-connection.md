@@ -32,7 +32,7 @@ Se si dispone di un&#39;architettura suddivisa, è necessario specificare le ist
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, fare riferimento a [Utilizzo di più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, fare riferimento a [Utilizzo di più istanze di controllo](#using-several-control-instances).
 
 Per creare un account esterno di tipo istanza di esecuzione, procedere come segue:
 
@@ -97,7 +97,7 @@ Per utilizzare una password vuota, andate alle istanze di esecuzione e definite 
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere divisi per cartella e per operatore. Per ulteriori informazioni, fare riferimento a [Utilizzo di più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, fare riferimento a [Utilizzo di più istanze di controllo](#using-several-control-instances).
 
 1. Passate alla cartella dell&#39;operatore nell&#39;istanza di esecuzione ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selezionare l&#39;agente **Message Center**.
