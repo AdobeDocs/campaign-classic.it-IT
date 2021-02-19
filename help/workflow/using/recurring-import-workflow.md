@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Impostazione di un flusso di lavoro di importazione periodico {#setting-up-a-recurring-import}
+# Impostazione di un flusso di lavoro di importazione ricorrente {#setting-up-a-recurring-import}
 
 L’utilizzo di un modello di flusso di lavoro è una procedura consigliata se è necessario importare regolarmente file con la stessa struttura.
 
