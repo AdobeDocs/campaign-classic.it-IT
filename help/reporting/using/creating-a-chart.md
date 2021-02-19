@@ -35,7 +35,7 @@ Per creare un grafico in un rapporto, effettua i seguenti passaggi:
 
 1. Fare clic sulla scheda **[!UICONTROL Data]** per definire l&#39;origine dati e la serie da calcolare.
 
-   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, ovvero i dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, fare riferimento a [Utilizzo dei dati contestuali](../../reporting/using/using-the-context.md#using-context-data)).
+   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, vale a dire i dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, fare riferimento a [Utilizzo dei dati contestuali](../../reporting/using/using-the-context.md#using-context-data)).
 
    * Fate clic sul collegamento **[!UICONTROL Filter data...]** per definire i criteri di filtro per i dati nel database.
 
