@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Accesso all'elenco delle consegne
+title: Accesso all’elenco delle consegne
 description: Scopri come accedere all'elenco delle consegne create.
 audience: delivery
 content-type: reference
@@ -9,13 +9,13 @@ topic-tags: monitoring-deliveries
 translation-type: tm+mt
 source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Accesso all&#39;elenco delle consegne {#list-of-deliveries}
+# Accesso all’elenco delle consegne {#list-of-deliveries}
 
 È possibile accedere alle consegne dall&#39;elenco di consegna tramite il nodo **[!UICONTROL Campaign Management > Deliveries]** della struttura.
 
@@ -33,5 +33,5 @@ Per impostazione predefinita, l&#39;elenco delle consegne contiene i nomi e gli 
 
 **Argomenti correlati:**
 
-* [Pannello consegna](../../delivery/using/delivery-dashboard.md)
+* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
 * [Stati di consegna](../../delivery/using/delivery-statuses.md)
