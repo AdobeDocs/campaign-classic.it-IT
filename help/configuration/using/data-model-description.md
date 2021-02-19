@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Descrizione del modello dati campagna{#data-model-description}
 
-Adobe Campaign viene fornito con un modello dati predefinito. In questa sezione sono riportati alcuni dettagli sulle tabelle integrate del modello dati Adobe Campaign  e la relativa interazione.
+Adobe Campaign viene fornito con un modello dati predefinito. In questa sezione vengono fornite informazioni dettagliate sulle tabelle integrate del modello dati Adobe Campaign  e sulla relativa interazione.
 
 Per accedere alla descrizione di ciascuna tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla scheda **[!UICONTROL Documentation]**.
 
