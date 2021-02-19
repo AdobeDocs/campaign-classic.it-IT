@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 59%
 
 * **[Connessione tramite IMS/ Adobe ID Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per collegarti a Campaign, devi effettuare l&#39;aggiornamento per poter connettersi a Campaign dopo il** 31 marzo 2021 **.
 
-* **[Proteggi ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> le istanze della campagnaAggiorna alle build più recenti per proteggere la piattaforma Campaign.
+* **[Proteggi ](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html)**<br/> le istanze della campagnaAggiorna alle build più recenti per proteggere la piattaforma Campaign.
 
-* **[Rimuovi ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione di Gmail
+* **[Rimuovi ](https://helpx.adobe.com/it/campaign/kb/update-bounce-qualification.html)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione di Gmail
 
 * **[Aggiornare l&#39;](integrations/using/configuring-adobe-io.md)**<br/> integrazione con Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  Adobe I/O.
 
