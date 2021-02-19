@@ -52,7 +52,7 @@ Di seguito è riportato un elenco dei comandi di amministrazione standard access
    >    * un altro valore in caso di errore.
 
 
-* Avviare/arrestare un modulo di istanza multipla o mono (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail&lt;a1/>):**
+* Avviare/arrestare un modulo di istanza multipla o mono (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
    **nlserver start`<module>[@<instance>]`**
 
