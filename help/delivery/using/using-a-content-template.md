@@ -25,7 +25,7 @@ Possono anche essere utilizzati per creare istanze di contenuto. Una volta creat
 
 ## Creazione di una distribuzione tramite la gestione dei contenuti {#creating-a-delivery-via-content-management}
 
-Potete fare riferimento a un modello di contenuto in una distribuzione per utilizzare i campi di input per immettere contenuto. Alla procedura guidata di consegna viene aggiunta una scheda aggiuntiva per la definizione del contenuto della consegna.
+Potete fare riferimento a un modello di contenuto in una distribuzione per utilizzare i campi di input per immettere contenuto. Nella procedura guidata di consegna viene aggiunta una scheda aggiuntiva per la definizione del contenuto della consegna.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
