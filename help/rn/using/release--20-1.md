@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 12%
@@ -24,8 +24,9 @@ _23 dicembre 2020_
 >[!CAUTION]
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
->
-> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
+   >
+   > 
+* Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
@@ -67,12 +68,12 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Miglioramenti del connettore hadoop FDA</strong><br /> </th> 
+   <th> <strong>Miglioramenti del connettore FDA Hadoop</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Il connettore Hadoop FDA è stato migliorato per supportare Hadoop 3.0 e Cloudera.</p>
+   <td> <p>Il connettore FDA Hadoop è stato migliorato per supportare l'Hadoop 3.0 e Cloudera.</p>
     <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-hadoop.md">documentazione dettagliata</a>.</p>
    </td> 
   </tr> 
@@ -131,13 +132,13 @@ _17 febbraio 2020_
 
 **Patch**
 
-* È stato risolto un problema di crittografia della chiave dell&#39;account quando si utilizzava il connettore Hadoop.
+* È stato risolto un problema di crittografia della chiave dell&#39;account quando si utilizzava il connettore del Hadoop.
 
 * È stato risolto un problema di regressione a causa dell&#39;implementazione della certificazione SSL che causava un errore di connessione utente sul server Windows. (NEO-20629)
 
 * È stato risolto un problema relativo all&#39;attività di query incrementale in caso di ID di flusso di lavoro negativi. (NEO-19779)
 
-* È stato risolto un problema di codifica durante l&#39;esecuzione di query tramite il connettore Netezza FDA. (NEO-19594)
+* È stato risolto un problema di codifica durante l&#39;esecuzione di query tramite il connettore FDA di Netezza. (NEO-19594)
 
 * È stato risolto un problema che causava un errore durante l&#39;utilizzo del metodo POST nell&#39;attività dell&#39;evento del flusso di lavoro **Download Web**.
 
