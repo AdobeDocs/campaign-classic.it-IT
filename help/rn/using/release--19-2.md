@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 14%
@@ -24,8 +24,9 @@ _23 dicembre 2020_
 >[!CAUTION]
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
->
-> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
+   >
+   > 
+* Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 
 
 
@@ -34,7 +35,7 @@ _23 dicembre 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Versione 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
-_07 febbraio 2020_
+_7 febbraio 2020_
 
 **Miglioramenti**
 
@@ -43,7 +44,7 @@ _07 febbraio 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Versione 19.2 - Build 9080 {#release-19-2-build-9080}
 
-_02 dicembre 2019_
+_2 dicembre 2019_
 
 **Scopri le novità**
 
@@ -118,7 +119,7 @@ _02 dicembre 2019_
 * Ottimizzazione del consumo di memoria per le notifiche push.
 * Per l&#39;ottimizzazione delle prestazioni e dell&#39;archiviazione, è stata migliorata la gestione del file **logins.log**. Ora il file viene suddiviso in più file, uno ogni giorno con un massimo di 365 file conservati. [Leggi tutto](../../production/using/log-files.md)
 * È ora possibile configurare l&#39;account esterno di Microsoft Dynamics CRM utilizzando le credenziali della password (password + nome utente) o il certificato (chiave privata). [Leggi tutto](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Sono stati aggiunti alcuni miglioramenti al connettore Hadoop FDA per migliorare l&#39;affidabilità
+* Sono stati aggiunti alcuni miglioramenti al connettore FDA del Hadoop per migliorare l&#39;affidabilità
 * È stato aggiunto un particolare carrello per controllare lo spazio su disco prima di consentire il caricamento di risorse pubbliche sul server.
 * Sono state aggiunte nuove [opzioni campagna](../../installation/using/configuring-campaign-options.md):
    * L&#39;opzione di configurazione **WdbcKillSessionPolicy** consente di influenzare il comportamento di **Arresto incondizionato** in tutti i flussi di lavoro e nelle query del database PostSQL.
@@ -147,11 +148,11 @@ _Campaign Mobile SDK_
 
 * È stato risolto un problema di arresto anomalo che si verificava quando il campo **Aggiungi tabella collegata** era vuoto nell&#39;attività del flusso di lavoro **Caricamento dati (RDBMS)**. (NEO-12213)
 * È stato risolto un problema che poteva impedire l&#39;elaborazione di alcuni messaggi da parte del server di origine mid-Sourcing. (NEO-12395)
-* È stato risolto un problema nel flusso di lavoro di pulizia del database quando si utilizzava l&#39;opzione di bande query con Teradata. (NEO-12399)
+* È stato risolto un problema nel flusso di lavoro di pulizia del database quando si utilizzava l&#39;opzione di bande query con Teradate. (NEO-12399)
 * È stato risolto un problema che interessava l&#39;analisi dei recapito con regola di tipologia, incluso il dominio ne.jp. (NEO-12609)
 * È stato risolto un problema relativo agli aggiornamenti SMS via TLS che implicavano l&#39;applicazione di criteri di certificato più restrittivi. Questi aggiornamenti potrebbero causare un errore di connessione tra server di marketing e server di mid-sourcing in caso di certificato non aggiornato. (NEO-17698)
 * È stato risolto un problema che si verificava durante l&#39;utilizzo del pulsante **Test connection** su un account esterno in un ambiente mid-sourcing con autenticazione Vault. (NEO-12722)
-* È stato risolto un problema relativo alle query che utilizzano le funzioni data con una connessione FDA Hadoop. (NEO-12847)
+* È stato risolto un problema relativo alle query che utilizzano le funzioni data con una connessione di Hadoop FDA. (NEO-12847)
 * È stato risolto un problema che si verificava durante la sostituzione di un’immagine nell’editor e-mail. (NEO-13098)
 * È stato risolto un problema che poteva causare errori successivi all&#39;aggiornamento nelle cartelle eliminate o spostate in un&#39;altra posizione. (NEO-13118)
 * È stato risolto un problema di visualizzazione dell&#39;immagine quando si utilizzava l&#39;opzione **Definisci immagine per dimensione schermo dispositivo** nei messaggi LINE. (NEO-13228)
@@ -172,7 +173,7 @@ _Campaign Mobile SDK_
 * È stato risolto un problema che interessava il connettore CRM con Salesforce. (NEO-17712)
 * È stato risolto un problema di timeout durante l&#39;importazione di dati da un SFTP esterno. (NEO-19723)
 * È stato risolto un problema durante l&#39;accesso ai modelli predittivi. (NEO-19713)
-* È stato risolto un problema che interessava il campionamento casuale nell&#39;attività del flusso di lavoro **Dividi** con il database Hadoop FDA. (NEO-16636)
-* Risolto un problema di regressione su  Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
+* È stato risolto un problema che interessava il campionamento casuale nell&#39;attività del flusso di lavoro **Dividi** con il database FDA Hadoop. (NEO-16636)
+* È stata corretta una regressione  Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
 
 
