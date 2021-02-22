@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
+source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
 workflow-type: tm+mt
-source-wordcount: '7846'
+source-wordcount: '7929'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ I primi parametri si trovano all&#39;interno del nodo **shared**. Sono correlate
 * [dnsConfig](#dnsconfig)
 * [exec](#exec)
 * [htmlToPdf](#htmltopdf)
+* [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
 * [module](#module)
@@ -336,7 +337,7 @@ Nel nodo **dataStore > dataSource > dbcnx**, configura le impostazioni di connes
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
-   <td> Tipo (enumerazione). I valori possibili sono ' Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' ( Amazon Redshift), 'ODBC' (ODBC, 'Sybase, Sybase IQ), ay' (inoltro HTTP al database remoto).<br /> </td> 
+   <td> Tipo (enumerazione). I valori possibili sono ' Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradate', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' ( Amazon Redshift), 'ODBC' (ODBC) (Sybase ASE, Sybase IQ)), 'Relay' (inoltro HTTP al database remoto).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> ' Oracle'<br /> </td> 
   </tr> 
@@ -637,6 +638,71 @@ Esempio di phantomjs:
 ```
 phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:{outPdf}' '-post:{postFile}' '-url:{originUrl}' -sessiontoken:{sessiontoken} -format:{format} -orientation:{orientation} -marginTop:{marginTop} -marginLeft:{marginLeft} -marginRight:{marginRight} -marginBottom:{marginBottom}
 ```
+
+## ims {#ims}
+
+Di seguito sono elencati i diversi parametri del nodo **ims**. Questa è la configurazione per Campaign che si collega a un altro servizio utilizzando [IMS](../../integrations/using/about-adobe-id.md).
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Parametro </th> 
+   <th> Descrizione </th> 
+   <th> Tipo </th> 
+   <th> Valore predefinito </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> authIMSClientId<br /> </td> 
+   <td> ID client<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSClientSecret<br /> </td> 
+   <td> Chiave segreta (crittografata in AES)<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSCode<br /> </td> 
+   <td> Codice di autorizzazione (cifrato in AES)<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSEndpoint<br /> </td> 
+   <td> URL del server IMS<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientId<br /> </td> 
+   <td> ID cliente account tecnico<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAClientSecret<br /> </td> 
+   <td> Chiave del segreto dell'account tecnico (crittografata in AES)<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAId<br /> </td> 
+   <td> ID account tecnico<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> authIMSTAPrivateKey<br /> </td> 
+   <td> Chiave privata account tecnico (crittografata in AES)<br /> </td> 
+   <td> Stringa<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ## javaScript {#javascript}
 
