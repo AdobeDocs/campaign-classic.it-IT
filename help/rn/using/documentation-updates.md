@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '3947'
-ht-degree: 98%
+source-wordcount: '4045'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,19 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
-## Febbraio 2021 {#feb-2021}
+## Febbraio 2021 {#release-21.1}
+
+**Aggiornamenti della documentazione in arrivo con la release 21.1**
+
+La nuova funzionalità **Email Feedback Service** (versione beta privata) è documentata [qui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+
+La sezione **File di configurazione del server** è stata aggiornata con i parametri di configurazione necessari affinché Campaign si connetta a un altro servizio utilizzando IMS. [Leggi tutto](../../installation/using/the-server-configuration-file.md#ims)
+
+Nell&#39;elenco degli stati di consegna, la descrizione di **Presa in considerazione dal provider di servizi** è stata aggiornata: questo stato viene ora utilizzato anche per le consegne e-mail inviate tramite il [Servizio di feedback e-mail](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leggi tutto](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+
+Sono ora documentate le scelte rapide da tastiera disponibili nella nuova schermata di accesso per  Adobe Campaign. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+
+**Altri aggiornamenti**
 
 È stata aggiunta una nuova sezione con informazioni dettagliate su come eseguire test A/B utilizzando i flussi di lavoro. [Leggi tutto](../../delivery/using/get-started-a-b-testing.md)
 
@@ -100,7 +112,7 @@ La Matrice di compatibilità è stata aggiornata. [Leggi tutto](../../rn/using/c
 La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../rn/using/deprecated-features.md)
 
 Le note sulla versione e la matrice di compatibilità per la versione Gold Standard sono ora disponibili in una sezione dedicata.
-[Ulteriori informazioni](../../rn/using/gold-standard.md#gs-10).
+[Ulteriori informazioni](../../rn/using/gold-standard.md#gs-11).
 
 L’integrazione dei trigger, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
