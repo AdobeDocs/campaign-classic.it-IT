@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 8%
+source-wordcount: '789'
+ht-degree: 4%
 
 ---
 
@@ -32,10 +32,6 @@ Per configurare questo connettore, procedere come segue:
 1. Vai a **[!UICONTROL Administration > Platform > External accounts]**.
 1. Selezionare l&#39;account esterno **[!UICONTROL iOS routing]**.
 1. Nella scheda **[!UICONTROL Connector]**, compilare il campo **[!UICONTROL Access URL of the connector]** con il seguente URL: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
-
-   >[!NOTE]
-   >
-   > A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
