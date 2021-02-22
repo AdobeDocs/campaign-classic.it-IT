@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
+source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,12 @@ Utilizzate le funzioni offerte da  Adobe Campaign per monitorare la recapito del
 
 Il pacchetto Deliverability consente di accedere a:
 
-* Rapporto di monitoraggio tecnico per le prestazioni quotidiane di recapito (monitoraggio tecnico). Questo rapporto, disponibile su richiesta, consente di ricevere un rapporto giornaliero via e-mail all&#39;indirizzo specificato. Per maggiori informazioni, contatta il team di assistenza clienti  Adobe.
 * Il report [Inbox rendering report](../../delivery/using/inbox-rendering.md) che consente di visualizzare l&#39;anteprima dei messaggi sui principali client e-mail per eseguire la scansione del contenuto e della reputazione.
 * Panoramica della qualità del messaggio (inbox, spam).
 
 Potete anche usare i seguenti strumenti:
 
 * Il rapporto **[!UICONTROL Delivery throughput]** offre una panoramica dell&#39;intero throughput della piattaforma per un determinato periodo di tempo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
-* Il rapporto **[!UICONTROL Technical deliverability monitoring]** include una serie di indicatori di qualità della distribuzione per la piattaforma in uso. Per ulteriori informazioni, consulta [questa sezione](#technical-deliverability-monitoring).
 * Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche sulla qualità dei dati e sulla reputazione che possono avere un impatto sulla tua recapito, inclusi i seguenti numeri:
    * **[!UICONTROL Hard bounces]** indicano la qualità dei dati. Tale numero dovrebbe essere inferiore al 2%.
    * **[!UICONTROL Soft bounces]** indica la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
@@ -68,28 +66,6 @@ Signal Spam è un servizio francese che offre un report anonimo sul loop di feed
 [250](https://250ok.com/) okis è una soluzione di monitoraggio complementare agli strumenti interni di recapito del Adobe  che forniscono elenco Bloccati IP e dominio e indicatori di reputazione.
 
 Le informazioni fornite sono in tempo reale, il che consente un&#39;assistenza proattiva.
-
-## Rapporto di monitoraggio sulla realizzazione tecnica {#technical-deliverability-monitoring}
-
-Il report **Technical Deliverability Monitoring** include una serie di indicatori di qualità della distribuzione per la piattaforma in uso. Puoi ricevere questo rapporto giornaliero via e-mail. Per richiederlo, aprite un [caso di supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) specifico e specificate:
-
-* il nome dell&#39;istanza
-* gli indirizzi e-mail a cui inviare il rapporto
-
-I rapporti contengono i seguenti indicatori:
-
-* **[!UICONTROL Reverse DNS]** :  Adobe Campaign verifica se per un indirizzo IP viene fornito un DNS inverso e che questo indichi correttamente l&#39;IP.
-
-* **[!UICONTROL SPF]** (Framework per i criteri di invio): Meccanismo di autenticazione che consente agli ISP e ai fornitori di cassette postali di verificare se il mittente e-mail è autorizzato nel dominio di invio.
-
-* **[!UICONTROL DomainKeys]** : Un servizio sviluppato da Yahoo e destinato a certificare l&#39;identità di un mittente di posta elettronica.
-
-* **[!UICONTROL IP and RBL domain]** (Elenco buchi neri in tempo reale): Un elenco di indirizzi IP e domini contrassegnati da organizzazioni elenchi Bloccati per cattiva reputazione nell&#39;invio di messaggi. Questi elenchi sono gestiti da organizzazioni dedicate come Spamhaus, Spampoliziotto, SURBL/URIBL, ecc.  Adobe Campaign elabora attualmente controlli contro gli URL che hanno un impatto significativo sulla recapito. Questi URL riflettono la reputazione dell&#39;invio e possono essere citati dagli ISP prima di accettare di ricevere le tue e-mail.
-
-* **[!UICONTROL SNDS]** (Smart Network Data Services): Un servizio  [Windows Live Hotmail anti-spam](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx). Hotmail è l&#39;unico ISP che fornisce questo tipo di informazioni. I punteggi di riferimento sono un risultato di filtro verde, un tasso di reclamo inferiore allo 0,1% e zero spam trap.
-
-Questi indicatori vengono aggiornati ogni giorno alle 9.
-
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
