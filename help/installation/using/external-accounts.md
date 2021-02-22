@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 11%
@@ -147,14 +147,14 @@ I database esterni compatibili con Campaign sono elencati nella [Matrice di comp
 
 Le impostazioni di configurazione dell&#39;account esterno dipendono dal motore del database. Ulteriori informazioni nelle sezioni seguenti:
 
-* Configurare l&#39;accesso a [ Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Configurare l&#39;accesso a [ Azure Synapse](../../installation/using/configure-fda-synapse.md)
 * Configurare l&#39;accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Configurare l&#39;accesso a [ Oracle](../../installation/using/configure-fda-oracle.md)
 * Configurare l&#39;accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
 * Configurare l&#39;accesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Configurare l&#39;accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Configurare l&#39;accesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
-* Configurare l&#39;accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
+* Configurare l&#39;accesso a [Sybasi IQ](../../installation/using/configure-fda-sybase.md)
+* Configurare l&#39;accesso a [Teradate](../../installation/using/configure-fda-teradata.md)
 
 ## Account esterno di Web Analytics {#web-analytics-external-account}
 
@@ -408,7 +408,7 @@ Per configurare l&#39;account esterno di Salesforce CRM in modo che funzioni con
 
 * **[!UICONTROL API version]**
 
-   Versione dell&#39;API compresa tra **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** o **[!UICONTROL Version 15]**.
+   Versione dell&#39;API compresa tra **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** o **[!UICONTROL Version 15]**.
 
 Per questo account esterno, devi configurare Salesforce CRM con la procedura guidata di configurazione.
 
