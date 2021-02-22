@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1880'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ L&#39;**Adobe Campaign Enhanced MTA** (Mail Transfer Agent) fornisce un&#39;infr
 Se dopo settembre 2018 vi è stata fornita un&#39;istanza Campaign Classic, utilizzate l&#39;MTA avanzata. Per tutti gli altri clienti Campaign Classic, consultare la sezione [Domande frequenti](#enhanced-mta-faq) riportata di seguito.
 
 L&#39;implementazione MTA avanzata potrebbe avere un impatto su alcune delle funzionalità di Campaign esistenti. Per ulteriori informazioni, vedere [Miglioramento delle specificità MTA](#enhanced-mta-impacts).
+
+>[!NOTE]
+>
+>Se sei un utente finale di  Adobe Campaign e vuoi sapere se l&#39;istanza è stata aggiornata all&#39;MTA avanzata, contatta il tuo amministratore interno della campagna.
 
 ## Domande frequenti {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ I titoli di rimbalzo nella tabella Campaign **[!UICONTROL Delivery log qualifica
 
 Per ulteriori informazioni sulla qualifica del rimbalzo, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
-### Stato inviato con MTA avanzata
-
-Nella **[!UICONTROL Summary]** visualizzazione di un&#39;e-mail di consegna [dashboard](../../delivery/using/delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente durante il periodo di validità [consegna](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), poiché i rimbalzi morbidi e duri vengono riportati dall&#39;MTA avanzata alla campagna.
-
-In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all&#39;MTA avanzato. Rimangono nello stato a meno che o fino a quando un [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non venga comunicato nuovamente dall&#39;MTA avanzato alla campagna.
-
-Quando i messaggi di rimbalzo rigido vengono segnalati dall&#39;MTA avanzata, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
-
-Quando i messaggi di rimbalzo soft vengono segnalati dall&#39;MTA avanzata, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [riprovati](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante il periodo di validità della consegna:
-
-* Se un tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio rimane **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** rimane invariata.
-
-* In caso contrario, lo stato cambia in **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene diminuita di conseguenza.
-
-Di conseguenza, è necessario attendere fino alla fine del periodo di validità per visualizzare la percentuale finale **[!UICONTROL Success]** e il numero finale di messaggi effettivi **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### Velocità effettiva di consegna
 
 Il grafico del throughput di distribuzione delle campagne non visualizzerà più il throughput ai destinatari delle e-mail. Questo grafico ora mostra la velocità effettiva per il inoltro dei messaggi da Campaign all&#39;MTA avanzato.
@@ -167,3 +153,78 @@ Per ulteriori informazioni sul periodo di validità, vedere [questa sezione](../
 
 La firma dell&#39;autenticazione tramite e-mail DKIM (DomainKeys Identified Mail) viene fatta dall&#39;MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della tabella di gestione del dominio come parte dell&#39;aggiornamento MTA avanzato.
 Per ulteriori informazioni su DKIM, vedere [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
+
+### Generazione di rapporti di successo
+
+Nella **[!UICONTROL Summary]** visualizzazione di un&#39;e-mail di consegna [dashboard](../../delivery/using/delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente durante il periodo di validità [consegna](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), poiché i rimbalzi morbidi e duri vengono riportati dall&#39;MTA avanzata alla campagna.
+
+In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all&#39;MTA avanzato. Rimangono nello stato a meno che o fino a quando un [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non venga comunicato nuovamente dall&#39;MTA avanzato alla campagna.
+
+Quando i messaggi di rimbalzo rigido vengono segnalati dall&#39;MTA avanzata, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
+
+Quando i messaggi di rimbalzo soft vengono segnalati dall&#39;MTA avanzata, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [riprovati](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante il periodo di validità della consegna:
+
+* Se un tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio rimane **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** rimane invariata.
+
+* In caso contrario, lo stato cambia in **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene diminuita di conseguenza.
+
+Di conseguenza, è necessario attendere fino alla fine del periodo di validità per visualizzare la percentuale finale **[!UICONTROL Success]** e il numero finale di messaggi effettivi **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### Servizio di feedback e-mail (beta) {#email-feedback-service}
+
+Grazie alla funzionalità EFS (Email Feedback Service), lo stato di ogni e-mail viene riportato con precisione, perché il feedback viene acquisito direttamente dall&#39;Enhanced MTA (Message Transfer Agent).
+
+>[!IMPORTANT]
+>
+>Il servizio e-mail di feedback è attualmente disponibile come funzionalità beta.
+>
+>Se sei interessato a partecipare a questo programma beta, compila [questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e ti contatteremo di nuovo.
+
+Una volta avviata la consegna, non si verifica alcuna modifica nella percentuale **[!UICONTROL Success]** quando il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata.
+
+<!--![](assets/efs-sending.png)-->
+
+I registri di consegna mostrano lo stato **[!UICONTROL Taken into account by the service provider]** per ciascun indirizzo di destinazione.
+
+<!--![](assets/efs-pending.png)-->
+
+Quando il messaggio viene effettivamente recapitato ai profili di destinazione e una volta che tali informazioni vengono riportate in tempo reale dall&#39;MTA avanzata, i registri di consegna mostrano lo stato **[!UICONTROL Sent]** per ogni indirizzo che ha ricevuto correttamente il messaggio. La percentuale **[!UICONTROL Success]** viene aumentata di conseguenza con ogni consegna completata correttamente.
+
+Quando i messaggi di rimbalzo rigido vengono segnalati dall&#39;MTA avanzata, lo stato del registro cambia da **[!UICONTROL Taken into account by the service provider]** a **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+
+Quando i messaggi di rimbalzo soft vengono segnalati dall&#39;MTA avanzata, lo stato del registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): viene aggiornato solo il [motivo di errore](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. La percentuale **[!UICONTROL Success]** rimane invariata. I messaggi di rimbalzo temporaneo vengono quindi ritentati durante il periodo di consegna [validità](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+
+* Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio cambia in **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** viene aumentata di conseguenza.
+
+* In caso contrario, lo stato diventa **[!UICONTROL Failed]**. La percentuale **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->rimane invariata.
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sui rimbalzi rigidi e morbidi, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Per ulteriori informazioni sui tentativi dopo un errore temporaneo di consegna, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+
+Le tabelle di seguito mostrano le modifiche apportate agli indicatori KPI e agli stati di invio dei log introdotti dalla funzionalità EFS.
+
+**Con servizio di feedback e-mail**
+
+| Passaggio nel processo di invio | Riepilogo KPI | Invio dello stato dei registri |
+|--- |--- |--- |
+| Il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata | **[!UICONTROL Success]** percentuale non visualizzata (inizia da 0%) | Presa in considerazione dal fornitore di servizi |
+| I messaggi di rimbalzo duro vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Operazione non riuscita |
+| I messaggi di rimbalzo temporaneo vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Presa in considerazione dal fornitore di servizi |
+| I tentativi di messaggi soft-bouncing hanno avuto esito positivo | **[!UICONTROL Success]** percentuale aumentata di conseguenza | Inviato |
+| Messaggi di rimbalzo temporaneo non riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Operazione non riuscita |
+
+**Senza servizio di feedback e-mail**
+
+| Passaggio nel processo di invio | Riepilogo KPI | Invio dello stato dei registri |
+|--- |--- |--- |
+| Il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata | **[!UICONTROL Success]** percentuale inizia al 100% | Inviato |
+| I messaggi di rimbalzo duro vengono segnalati nuovamente dall&#39;MTA avanzata | **[!UICONTROL Success]** percentuale diminuisce di conseguenza | Operazione non riuscita |
+| I messaggi di rimbalzo temporaneo vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato |
+| I tentativi di messaggi soft-bouncing hanno avuto esito positivo | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato | **[!UICONTROL Success]** percentuale aumentata di conseguenza | Inviato |
+| Messaggi di rimbalzo temporaneo non riusciti | **[!UICONTROL Success]** percentuale diminuisce di conseguenza | Operazione non riuscita |
