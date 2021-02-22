@@ -5,9 +5,8 @@ title: Configurazione della pipeline
 description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
+source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 1%
@@ -47,9 +46,9 @@ L&#39;autenticazione è supportata per il Marketing Cloud tramite  progetto Adob
 
 ## Passaggio 1: Creazione/aggiornamento  progetto Adobe I/O {#creating-adobe-io-project}
 
-Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici Adobe I/O per l&#39;integrazione Triggers.
+Per i clienti ospitati, puoi creare un ticket di assistenza clienti per abilitare la tua organizzazione con  Token account tecnici di Adobe I/O per l&#39;integrazione Triggers.
 
-Per i clienti interni, consultare la pagina [Configuring  Adobe I/O for  Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** quando si aggiunge API alla credenziale Adobe I/O .
+Per i clienti Premise, fare riferimento alla pagina [Configuring  Adobe I/O for  Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** durante l&#39;aggiunta di API alle credenziali del Adobe I/O .
 
 ## Passaggio 2: Configurazione dell&#39;opzione pipeline NmsPipeline_Config {#configuring-nmspipeline}
 
