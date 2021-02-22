@@ -137,7 +137,6 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo nei blocch
 >* Nuova finestra (_blank)
 >* Finestra corrente (_self)
 >* Comportamento browser predefinito
-
 >
 
 
@@ -203,9 +202,8 @@ Le opzioni disponibili sono le seguenti:
 >[!NOTE]
 >
 >* **Icona** Elimina: elimina il blocco e tutto il relativo contenuto.
-   >
-   >
-* **Icona** Duplicato: duplica il blocco e tutti gli stili correlati al blocco.
+>
+>* **Icona** Duplicato: duplica il blocco e tutti gli stili correlati al blocco.
 
 
 ## Gestione di immagini e animazioni {#managing-images-and-animations}

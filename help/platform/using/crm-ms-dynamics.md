@@ -56,10 +56,10 @@ In Campaign Classic:
 
 
 >[!CAUTION]
+>
 > Durante la connessione  Adobe Campaign con Microsoft Dynamics non è possibile:
 > * Installare i plug-in che possono modificare il comportamento di CRM e causare problemi di compatibilità con  Adobe Campaign
 > * Selezione di più enumerazioni
-
 >
 
 

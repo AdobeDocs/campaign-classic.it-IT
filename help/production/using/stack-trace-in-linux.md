@@ -23,7 +23,6 @@ Una traccia dello stack **traccia** rappresenta una traccia contenuta in un file
 >
 >* Un file **core** è denominato **core.`<num>`**.
 >* **gdb - Il** debugger GNU deve essere installato nel computer.
-
 >
 
 

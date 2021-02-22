@@ -80,7 +80,6 @@ Nelle sezioni seguenti viene illustrato come definire il contenuto e il layout d
 >
 >* Durante la progettazione della pagina, potete visualizzare il rendering finale nella scheda **[!UICONTROL Preview]**. Per visualizzare le modifiche, salvare prima il modulo. Eventuali errori vengono visualizzati nella scheda **[!UICONTROL Log]**.
 >* Per verificare che la visualizzazione della pagina e l&#39;archiviazione delle informazioni siano effettuate nella sequenza appropriata, attivare la modalità di debug nel modulo Web. A questo scopo, andate alla sottoscheda **[!UICONTROL Preview]** e selezionate la casella **[!UICONTROL Enable debug mode]**: tutte le informazioni raccolte e gli eventuali errori di esecuzione saranno visualizzati nella parte inferiore di ogni pagina.
-
 >
 
 

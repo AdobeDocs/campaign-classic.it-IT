@@ -84,7 +84,6 @@ Ogni volta che utilizzate la funzione **[!UICONTROL Inbox rendering]** in una di
 >
 >* Ogni volta che viene generato il rapporto di rendering Inbox, viene detratto un token per client di messaggistica: un token per il rendering di Outlook 2000, uno per il rendering di Outlook 2010, uno per il rendering di Apple Mail 9 e così via.
 >* Per la stessa consegna, se generate di nuovo il rendering in entrata, il numero di token disponibili viene nuovamente diminuito in base al numero di rendering generati.
-
 >
 
 

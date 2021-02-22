@@ -381,7 +381,6 @@ Per impostazione predefinita, i file caricati sono memorizzati in file di risors
 >*  Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto di utilizzare i campi di caricamento solo per i siti Intranet di tipo protetto.
 >* Se diversi server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
 >* Queste implementazioni richiedono l&#39;assistenza del team  Adobe Campaign Consulting.
-
 >
 
 

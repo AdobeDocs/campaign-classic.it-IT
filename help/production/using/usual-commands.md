@@ -29,7 +29,6 @@ Il parametro **`<command>`** corrisponde al modulo.
 >
 >* In ogni caso, è possibile aggiungere l&#39;argomento **-noconsole** per eliminare i commenti visualizzati dopo l&#39;avvio dei moduli.
 >* Al contrario, è possibile aggiungere l&#39;argomento **-verbose** per visualizzare ulteriori informazioni.
-
 >
 
 
@@ -163,8 +162,6 @@ Per modificare la password **interna**: **nlserver config -internalpassword**
 >* In generale, invece di modificare i file di configurazione a mano, è possibile utilizzare il comando **config**
 >* Per ottenere l&#39;elenco dei parametri, utilizzare il **-?** parameter:  **configurazione nlserver -?**
 >* Nel caso di un database Oracle , non è necessario specificare l&#39;account. La sintassi sarà la seguente:
-
 >
->  
-nlserver config -setdblogin: Oracle:test6@dbserver
+>  nlserver config -setdblogin: Oracle:test6@dbserver
 

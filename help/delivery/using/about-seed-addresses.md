@@ -47,7 +47,6 @@ Per le consegne per corrispondenza diretta, gli indirizzi iniziali vengono aggiu
 >
 >* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi iniziali, a meno che l&#39;opzione **[!UICONTROL Single row (expert user)]** non sia selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
-
 >
 
 

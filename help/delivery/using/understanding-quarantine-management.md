@@ -70,7 +70,7 @@ Per ogni indirizzo sono disponibili le seguenti informazioni:
 >L&#39;aumento delle quarantena è un effetto normale, legato all&#39;usura del database. Ad esempio, se la durata di un indirizzo e-mail è considerata di tre anni e la tabella dei destinatari aumenta del 50% ogni anno, l’aumento delle quarantena può essere calcolato come segue:
 >
 >Fine anno 1: (1*0.33)/(1+0.5)=22%.
-Fine anno 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32,5%.
+>Fine anno 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32,5%.
 
 ### Identificazione degli indirizzi in quarantena nei report di consegna {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -113,7 +113,8 @@ Gli indirizzi vengono rimossi automaticamente dall&#39;elenco di quarantena nei 
 Il relativo stato viene quindi modificato in **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-I destinatari con un indirizzo nello stato **[!UICONTROL Quarantine]** o **[!UICONTROL On denylist]** non verranno mai rimossi, anche se ricevono un&#39;e-mail.
+>
+>I destinatari con un indirizzo nello stato **[!UICONTROL Quarantine]** o **[!UICONTROL On denylist]** non verranno mai rimossi, anche se ricevono un&#39;e-mail.
 
 È possibile modificare il numero di errori e il periodo compreso tra due errori. A questo scopo, modificate le impostazioni corrispondenti nella procedura guidata di distribuzione (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Per ulteriori informazioni sulla procedura guidata di distribuzione, consultare [questa sezione](../../installation/using/deploying-an-instance.md).
 
@@ -152,7 +153,8 @@ Gli elementi messi in quarantena sono token dispositivo.
 **Per iOS - connettore binario**
 
 >[!NOTE]
-A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
+>
+>A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
 Per ogni notifica,  Adobe Campaign riceve gli errori sincroni e asincroni dal server APN. Per i seguenti errori sincroni,  Adobe Campaign genera errori software:
 
@@ -269,10 +271,11 @@ Il flusso di lavoro **[!UICONTROL mobileAppOptOutMgt]** viene eseguito ogni 6 or
 Durante l&#39;analisi della consegna, tutti i dispositivi esclusi dalla destinazione vengono automaticamente aggiunti alla tabella **excludeLogAppSubRcp**.
 
 >[!NOTE]
-Per i clienti che utilizzano il connettore Baidu, ecco i diversi tipi di errori:
-* Problema di connessione all&#39;inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo di errore **[!UICONTROL Unreachable]**, il tentativo viene eseguito.
-* Connessione persa durante la consegna: errore soft, motivo di errore **[!UICONTROL Refused]**, il tentativo viene eseguito.
-* Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
+>
+>Per i clienti che utilizzano il connettore Baidu, ecco i diversi tipi di errori:
+>* Problema di connessione all&#39;inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo di errore **[!UICONTROL Unreachable]**, il tentativo viene eseguito.
+>* Connessione persa durante la consegna: errore soft, motivo di errore **[!UICONTROL Refused]**, il tentativo viene eseguito.
+>* Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
 
  Adobe Campaign contatta il server di Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
@@ -492,7 +495,8 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
 Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del processo generale. Vedere [Informazioni sulle quarantena](#about-quarantines). Le specifiche per gli SMS sono elencate di seguito.
 
 >[!NOTE]
-La tabella **[!UICONTROL Delivery log qualification]** non si applica al connettore **SMPP** generico esteso.
+>
+>La tabella **[!UICONTROL Delivery log qualification]** non si applica al connettore **SMPP** generico esteso.
 
 <table> 
  <tbody> 
@@ -550,8 +554,9 @@ Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito u
 Prima che un nuovo tipo di errore sia qualificato, il motivo dell&#39;errore è sempre impostato su **Rifiutato** per impostazione predefinita.
 
 >[!NOTE]
-I tipi di errore e i motivi dell&#39;errore sono gli stessi utilizzati per le e-mail. Vedere [Tipi e motivi di mancata consegna](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-Chiedete al vostro fornitore un elenco di stati e codici di errore al fine di impostare i tipi di errore e i motivi corretti per l&#39;errore nella tabella delle qualifiche del registro di consegna.
+>
+>I tipi di errore e i motivi dell&#39;errore sono gli stessi utilizzati per le e-mail. Vedere [Tipi e motivi di mancata consegna](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Chiedete al vostro fornitore un elenco di stati e codici di errore al fine di impostare i tipi di errore e i motivi corretti per l&#39;errore nella tabella delle qualifiche del registro di consegna.
 
 Esempio di messaggio generato:
 

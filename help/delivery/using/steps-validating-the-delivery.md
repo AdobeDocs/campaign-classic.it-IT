@@ -135,7 +135,6 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 >
 >* Le modalità di convalida disponibili sono descritte in [Modifica della modalità di approvazione](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode).
 >* La configurazione della destinazione della prova è spiegata in [Definizione di una destinazione della prova specifica](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 

@@ -486,7 +486,6 @@ Gli elementi sono indicati dal nome e gli attributi sono designati dal nome prec
 >
 >* **location/@** city non valido; utilizzare  **`[location/@city]`**
 >* **`[@email]`** e  **@** emailare equivalente
-
 >
 
 

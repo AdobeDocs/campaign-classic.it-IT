@@ -80,19 +80,14 @@ Di seguito è riportato un elenco dei comandi di amministrazione standard access
    >* In caso di emergenza, utilizzare l&#39;opzione **-immediate** per interrompere immediatamente il processo (equivalente al comando Unix **kill -9**).
    >* Utilizzate l&#39;opzione **-noconsole** per fare in modo che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd**.
    >* Utilizzate l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
-
-      >
-      >   
-      Esempio:
-      >
-      >   
-      **nlserver riavvio web -verbose**
-      >
-      >   
-      **nlserver start mta@myinstance -verbose**
-      >
-      >   
-      Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
+   >
+   >   Esempio:
+   >
+   >   **nlserver riavvio web -verbose**
+   >
+   >   **nlserver start mta@myinstance -verbose**
+   >
+   >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
 
 
 * Avviare tutti  processi Adobe Campaign (equivalente all&#39;avvio del servizio **nlserver6**):

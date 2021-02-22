@@ -42,7 +42,7 @@ Per utilizzare la modalità TIMESTAMP WITH TIMEZONE, è inoltre necessario aggiu
 >
 >Per ulteriori informazioni sulla gestione del fuso orario, consultare [questa sezione](../../installation/using/time-zone-management.md).
 
-###  Oracle{#oracle}
+### Oracle{#oracle}
 
 Se durante il post-aggiornamento viene visualizzato un errore **ORA 01805**, significa che i file del fuso orario  Oracle tra il server dell&#39;applicazione e il server del database non sono sincronizzati. Per sincronizzarli nuovamente, effettuate le seguenti operazioni:
 
@@ -456,7 +456,8 @@ Esistono tre modi possibili per risolvere un conflitto:
 * **[!UICONTROL Keep the current version]**: indica che l&#39;aggiornamento viene rifiutato.
 
    >[!IMPORTANT]
-   Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che tale opzione non sia utilizzata o riservata solo agli operatori esperti.
+   >
+   >Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che tale opzione non sia utilizzata o riservata solo agli operatori esperti.
 
 Se scegliete di risolvere manualmente il conflitto, procedete come segue:
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 In v7, il contenuto dell’offerta è stato spostato. In v6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). In v7, il contenuto è ora nello schema delle offerte. Dopo l&#39;aggiornamento successivo, il contenuto non sarà quindi visibile nell&#39;interfaccia. Dopo l&#39;aggiornamento, è necessario ricreare il contenuto dell&#39;offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell&#39;offerta.
 
 >[!IMPORTANT]
-Se alcune consegne che utilizzano offerte configurate devono essere inviate dopo la migrazione, dovete eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non si desidera utilizzare tutte le nuove funzioni di Interaction v7. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per maggiori informazioni su questa modalità, contattateci.
+>
+>Se alcune consegne che utilizzano offerte configurate devono essere inviate dopo la migrazione, dovete eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non si desidera utilizzare tutte le nuove funzioni di Interaction v7. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per maggiori informazioni su questa modalità, contattateci.
 
 Un esempio di script di movimento (**interactiveTo610_full_XX.js**) è disponibile nella cartella **Migration** all&#39;interno della cartella  Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (i campi **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]**). Il contenuto presente nella tabella **NmsEmailOfferView** è stato spostato nella tabella delle offerte.
 
 >[!NOTE]
-L&#39;utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; e &quot;rendering delle funzioni&quot;. Per beneficiare di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
+>
+>L&#39;utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; e &quot;rendering delle funzioni&quot;. Per beneficiare di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ Di seguito viene illustrata la procedura da seguire dopo aver spostato il conten
 1. Eseguire test completi.
 
    >[!NOTE]
-   I nomi delle categorie e delle offerte online vengono modificati dopo essere andati in diretta. Sul canale in entrata, aggiornate tutti i riferimenti a offerte e categorie.
+   >
+   >I nomi delle categorie e delle offerte online vengono modificati dopo essere andati in diretta. Sul canale in entrata, aggiornate tutti i riferimenti a offerte e categorie.
 
 ## Rapporti {#reports}
 
@@ -634,7 +638,8 @@ Esistono due famiglie di applicazioni Web:
 Come per i report (vedere [Reports](#reports)), se è stato aggiunto JavaScript, è necessario controllare e adattare se necessario. Se desiderate usufruire del banner blu v7 (contenente gli universi), dovete ripubblicare l’applicazione Web. Se il codice JavaScript funziona correttamente, potete selezionare il motore di rendering v6.x. In caso contrario, potete utilizzare il motore di rendering v6.0 mentre adattate il codice, quindi utilizzare il motore di rendering v6.x.
 
 >[!NOTE]
-I passaggi per selezionare il motore di rendering sono gli stessi per la selezione dei report. Vedere [Report personalizzati](#personalized-reports).
+>
+>I passaggi per selezionare il motore di rendering sono gli stessi per la selezione dei report. Vedere [Report personalizzati](#personalized-reports).
 
 I metodi di connessione dell’applicazione Web sono stati modificati in v7. Se si verificano problemi di connessione nelle applicazioni Web identificate, è necessario attivare temporaneamente le opzioni **allowUserPassword** e **sessionTokenOnly** nel file **serverConf.xml**. Dopo l’aggiornamento, modificate i seguenti valori di opzione:
 
@@ -667,7 +672,8 @@ sessionTokenOnly="false"
 In caso di problemi, ripubblicate l’applicazione Web. Se il problema persiste, potete selezionare il motore di rendering v6.0. Se non avete aggiunto JavaScript, potete selezionare il motore di rendering v6.x e trarre vantaggio dalle sue nuove funzioni.
 
 >[!NOTE]
-I passaggi per selezionare il motore di rendering sono gli stessi per la selezione dei report. Vedere [Report personalizzati](#personalized-reports).
+>
+>I passaggi per selezionare il motore di rendering sono gli stessi per la selezione dei report. Vedere [Report personalizzati](#personalized-reports).
 
 ## Red Hat {#red-hat}
 

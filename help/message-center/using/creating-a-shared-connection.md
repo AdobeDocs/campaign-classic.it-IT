@@ -21,7 +21,6 @@ ht-degree: 2%
 >
 >* Le estensioni dello schema eseguite sugli schemi utilizzati dai flussi di lavoro tecnici [Message Center](../../message-center/using/technical-workflows.md) nelle istanze di controllo o di esecuzione devono essere duplicate sulle altre istanze utilizzate  modulo di messaggistica transazionale Adobe Campaign.
 >* L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
-
 >
 
 

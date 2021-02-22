@@ -69,7 +69,6 @@ I seguenti passaggi devono essere eseguiti con grande attenzione: alcuni process
 >
 >* La seguente procedura è valida in linguaggio PostgreSQL. Se il linguaggio SQL è diverso ( Oracle, ad esempio), le query SQL devono essere adattate.
 >* I comandi riportati di seguito si applicano nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
-
 >
 
 

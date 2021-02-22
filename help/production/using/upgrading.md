@@ -50,6 +50,7 @@ Per sostituire tutti i file con la nuova versione, è necessario chiudere tutte 
       **iisreset /stop**
 
    *  servizio Adobe Campaign: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >È inoltre necessario assicurarsi che il server di reindirizzamento (webmdl) sia arrestato, in modo che il file **nlsrvmod.dll** utilizzato da IIS possa essere sostituito con la nuova versione.
@@ -172,10 +173,8 @@ A questo scopo, eseguite il comando seguente:
 >
 >* Lo script potrebbe essere denominato **httpd** invece di **apache**.
 >* È NECESSARIO eseguire questo comando fino a ottenere la seguente risposta:
-
-   >
-   >   
-   Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
+>
+>   Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
 
 
 Quindi riavviate Apache:
