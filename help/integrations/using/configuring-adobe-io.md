@@ -5,12 +5,11 @@ title: Configurazione di Adobe I/O per i trigger Adobe Experience Cloud
 description: Scoprite come configurare  Adobe I/O per  Adobe Experience Cloud Triggers
 audience: integrations
 content-type: reference
-topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c5c881d6919a8715e6588fb39793f562a16873bb
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 6%
@@ -22,9 +21,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione, **devi passare a  Adobe I/O come descritto di seguito**. La modalità di autenticazione oAuth verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione, **devi passare al Adobe I/O  come descritto di seguito**. La modalità di autenticazione oAuth verrà ritirata il 30 aprile 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Durante questo passaggio a  Adobe I/O, alcuni attivatori in arrivo potrebbero andare persi.
+>Durante questo passaggio al Adobe I/O , alcuni attivatori in arrivo potrebbero andare persi.
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
@@ -35,7 +34,7 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 * un **identificatore organizzazione** valido: l’identificatore dell’organizzazione  Identity Management System (IMS) è l’identificatore univoco all’interno dell’Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’SSO (IMS Single-Sign On). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * **Accesso sviluppatore** all&#39;organizzazione.  Per richiedere i privilegi di amministratore di sistema dell&#39;organizzazione IMS, seguite la procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) per fornire questo accesso a tutti i profili di prodotto.
 
-## Passaggio 1: Creare/aggiornare  progetto Adobe I/O {#creating-adobe-io-project}
+## Passaggio 1: Crea/aggiorna  progetto di Adobe I/O {#creating-adobe-io-project}
 
 1. Accedete  Adobe I/O ed effettuate l&#39;accesso con il diritto di amministratore di sistema per l&#39;organizzazione IMS.
 
@@ -87,7 +86,7 @@ Prima di avviare l&#39;implementazione, verifica di avere:
 
 >[!CAUTION]
 >
-> certificato Adobe I/O scadrà dopo 12 mesi. È necessario generare una nuova coppia di chiavi ogni anno.
+> certificato di Adobe I/O scade dopo 12 mesi. È necessario generare una nuova coppia di chiavi ogni anno.
 
 ## Passaggio 2: Aggiungere le credenziali del progetto in  Adobe Campaign {#add-credentials-campaign}
 
@@ -103,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Passaggio 3: Aggiorna tag pipeline {#update-pipelined-tag}
 
-Per aggiornare il tag [!DNL pipelined], è necessario aggiornare il tipo di autenticazione per  progetto Adobe I/O nel file di configurazione **config-&lt; instance-name >.xml** come segue:
+Per aggiornare il tag [!DNL pipelined], è necessario aggiornare il tipo di autenticazione a  progetto di Adobe I/O nel file di configurazione **config-&lt; instance-name >.xml** come segue:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
