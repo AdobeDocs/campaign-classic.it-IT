@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Il protocollo stesso non è crittografato. La maggior parte dei provider impleme
 
  Adobe Campaign supporta il passaggio di un login e una password durante la fase di binding. Supporta inoltre SMPP su TLS. Va notato che i certificati sono richiesti per una sicurezza adeguata. Anche se il connettore SMPP consente di bypassare i controlli dei certificati, dovrebbe essere utilizzato solo per il test, dal momento che TLS senza certificati fornisce un livello di protezione significativamente inferiore.
 
-Il connettore utilizza i certificati predefiniti forniti dalla libreria di sistema `openssl`. Di solito è fornito dalla directory `/etc/ssl/certs` su Debian. Questa directory è fornita per impostazione predefinita dal pacchetto &quot;ca-certificates&quot;, ma può essere personalizzata.
+Il connettore utilizza i certificati predefiniti forniti dalla libreria di sistema `openssl`. Di solito è fornito dalla directory `/etc/ssl/certs` su Debian. Questa directory viene fornita per impostazione predefinita dal pacchetto &quot;ca-certificates&quot;, ma può essere personalizzata.
 
 ### Informazioni in ogni tipo di PDU {#information-pdu}
 
@@ -356,7 +356,7 @@ La dimensione massima di un messaggio dipende dalla codifica. Questa tabella ria
 | Codifica | Solito data_coding | Dimensione del messaggio (caratteri) | Dimensioni parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7 set di caratteri di base + estensione (i caratteri estesi prendono 2 caratteri) |
-| Latin-1 | 1 | 140 | 134 | ISO-8859-1 |
+| Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
 ## Parametri del conto esterno SMPP {#SMPP-parameters-external}
@@ -597,6 +597,12 @@ Quando TLS è abilitato, ignora tutti i controlli dei certificati.
 Se questa opzione è selezionata, la connessione non è più sicura e non deve essere abilitata in produzione.
 
 Può essere utile a scopo di debug o test.
+
+È possibile scegliere tra tre valori diversi per la convalida del certificato:
+
+* Controllo completo della certificazione (incluso il nome host), impostazione predefinita.
+* Ignora la verifica del nome host.
+* Ignora la verifica del certificato.
 
 #### Associazione TON/NPI {#bind-ton-npi}
 
