@@ -9,10 +9,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 99%
+source-wordcount: '1717'
+ht-degree: 94%
 
 ---
 
@@ -45,6 +45,14 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><strong>Funzionalità</strong></td>
    <td><strong>Sostituzione</strong></td>
   </tr>
+    <tr>
+  <td>Rapporto di monitoraggio sulla realizzazione tecnica<br></td>
+   <td><p>A partire dalla release Campaign 21.1, il report Technical Deliverability Monitoring (Monitoraggio della soddisfazione tecnica) è diventato obsoleto.</p>
+   <p>Se necessario, potete ricevere questo rapporto ogni giorno via e-mail fino alla data di rimozione della funzione. Per richiederlo, aprite un <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e specificate il nome dell'istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
+   <p> Adobe consiglia di collaborare con il team di recapito per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
+  <p><em>Data di rimozione destinazione: Fine 2021</em></p>
+  </td>
+ </tr>
   <tr>
   <td>Connettori di gestione delle relazioni con i clienti<br></td>
    <td><p>A partire dalla release Campaign 20.3, i seguenti connettori CRM sono obsoleti con Campaign:</p>
@@ -83,7 +91,6 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td>Connettori SMS<br></td>
   <td><p> A partire dalla versione Campaign 20.2, i seguenti connettori SMS sono diventati obsoleti.<p>
    <ul>
-   <li>NetSize</li>
    <li>SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)</li>
    <li>Sybase365 (SAP SMS 365)</li>
    <li>Comunicazioni CLX</li>
