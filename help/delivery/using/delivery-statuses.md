@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '617'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Preso in considerazione dal fornitore di servizi<br /> </td> 
-   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> </td> 
+   <td> Il provider del servizio SMS ha ricevuto la consegna.<br /> Per le installazioni ospitate o ibride, se avete effettuato l'aggiornamento all'MTA <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank"> </a>avanzata, il messaggio è stato inviato correttamente da Campaign all'MTA avanzata.</td> 
   </tr> 
   <tr> 
    <td> Ricevuto su dispositivo mobile<br /> </td> 
