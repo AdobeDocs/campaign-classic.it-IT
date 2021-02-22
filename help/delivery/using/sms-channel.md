@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Per inviare a un telefono cellulare, è necessario:
 
 1. Un account esterno che specifica un connettore e il tipo di messaggio.
 
-   I seguenti connettori saranno obsoleti a partire dalla release 20.2: NetSize, SMPP generico (SMPP versione 3.4 che supporta la modalità binaria), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Le funzionalità obsolete sono ancora disponibili, ma non verranno ulteriormente migliorate né supportate. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html).
+   I seguenti connettori saranno obsoleti a partire dalla release 20.2: SMPP (SMPP versione 3.4 che supporta la modalità binaria), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 e iOS. Le funzionalità obsolete sono ancora disponibili, ma non verranno ulteriormente migliorate né supportate. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html).
 
 1. Un modello di consegna in cui viene fatto riferimento a questo account esterno.
 
@@ -137,7 +137,7 @@ Nella tabella seguente sono riportati i caratteri presi in considerazione dallo 
    <td> £ </td> 
    <td> _ </td> 
    <td> ! </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> A </td> 
    <td> Q </td> 
    <td> a </td> 
