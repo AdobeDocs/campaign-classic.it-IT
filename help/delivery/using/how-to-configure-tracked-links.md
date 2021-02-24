@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '478'
 ht-degree: 11%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 11%
 
 Per ogni consegna, puoi tracciare la ricezione dei messaggi e l’attivazione dei collegamenti inseriti nel contenuto del messaggio. In questo modo puoi tracciare il comportamento dei destinatari in seguito alle azioni di consegna per le quali sono stati oggetto di targeting.
 
+Il tracciamento si applica ai messaggi, ma il tracciamento Web consente di monitorare il modo in cui i destinatari sfogliano un sito Web (pagine visitate, acquisti). La configurazione del tracciamento Web viene presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
+
 >[!NOTE]
 >
->Il tracciamento si applica ai messaggi, ma il tracciamento Web consente di monitorare il modo in cui i destinatari sfogliano un sito Web (pagine visitate, acquisti).
->
->La configurazione del tracciamento Web viene presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
+>I collegamenti nel contenuto dell&#39;e-mail che contengono la personalizzazione richiedono il tracciamento di una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consultare [questa sezione](../../delivery/using/tracking-personalized-links.md).
+
+
+
 
 Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettuate le seguenti operazioni:
 
