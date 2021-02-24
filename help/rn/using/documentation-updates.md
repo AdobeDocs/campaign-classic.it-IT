@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '4045'
-ht-degree: 96%
+source-wordcount: '4066'
+ht-degree: 95%
 
 ---
 
@@ -62,6 +62,8 @@ L’elenco dei flussi di lavoro tecnici con i pacchetti a essi associati è stat
 La sezione relativa alla risoluzione dei problemi nella guida **Monitoraggio** è stata riorganizzata e migliorata con una pagina di destinazione. [Leggi tutto](../../production/using/troubleshooting.md).
 
 È disponibile una nuova sezione **Importazione ed esportazione di dati** con nuove pagine su flussi di lavoro, compressione dei dati, cifratura e best practice per l’importazione. [Leggi tutto](../../platform/using/get-started-data-import-export.md)
+
+Sono state aggiunte informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Leggi tutto](../../delivery/using/tracking-personalized-links.md).
 
 ## Dicembre 2020 {#dec-2020}
 
