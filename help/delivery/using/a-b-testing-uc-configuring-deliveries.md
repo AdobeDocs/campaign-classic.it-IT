@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,5 @@ Il passo successivo consiste nel configurare le consegne. Sono destinati alle tr
 1. Collegate l&#39;attività **[!UICONTROL Wait]** all&#39;attività **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
+
+È ora possibile creare lo script (vedere [Passaggio 5: Creare lo script](../../delivery/using/a-b-testing-uc-script.md)).
