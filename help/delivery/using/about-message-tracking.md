@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 9%
 
 ---
 
@@ -57,7 +57,7 @@ Le opzioni di tracciamento possono essere configurate attivando o disattivando g
 
 **Personalizzazione dei collegamenti tracciati**
 
-Le funzionalità di tracciamento dei Campaign Classic consentono di aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Le funzionalità di tracciamento dei Campaign Classic consentono di aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Ulteriori informazioni](../../delivery/using/tracking-personalized-links.md)
 
 **Tracciamento dei registri**
 
