@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 9%
+source-wordcount: '136'
+ht-degree: 8%
 
 ---
 
@@ -34,3 +34,5 @@ ht-degree: 9%
 1. Utilizzare il mouse per trascinare le attività nel diagramma del flusso di lavoro, inclusa una **[!UICONTROL Query]** (**[!UICONTROL Target]** scheda), una **[!UICONTROL Split]** (**[!UICONTROL Target]** scheda), due **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** scheda), un&#39;attività **[!UICONTROL Wait]** (**[!UICONTROL Flow Control]** scheda), un&#39;attività **[!UICONTROL JavaScript code]** (**[!UICONTROL Actions]** scheda) e una **[!UICONTROL Delivery]** attività (**[!UICONTROL Actions]** scheda).
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+È ora possibile configurare i campioni della popolazione (vedere [Passaggio 2: Configurare i campioni popolazione](../../delivery/using/a-b-testing-uc-population-samples.md)).
