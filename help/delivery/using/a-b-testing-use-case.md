@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In questo caso di utilizzo, confronteremo due contenuti di distribuzione delle e
 
 La popolazione interessata è divisa in tre parti: due gruppi di test e la popolazione rimanente. A ogni gruppo di test viene inviata una versione diversa della consegna.
 
-Dopo la consegna, viene configurato un periodo di attesa di 5 giorni prima di raccogliere i risultati delle migliori tariffe aperte. Il contenuto della distribuzione con il punteggio più alto viene quindi recuperato da uno script e inviato alla popolazione non utilizzata come gruppo di test.
+Dopo la consegna, viene configurato un periodo di attesa di 5 giorni prima di raccogliere i risultati delle migliori tariffe aperte. Il contenuto della consegna con il punteggio più alto viene quindi recuperato da uno script e inviato alla popolazione non utilizzata come gruppo di test.
 
 Si prega di notare che i criteri che decideranno quale consegna è migliore possono essere modificati per soddisfare le vostre esigenze. Può trattarsi del tasso di apertura, del tasso di click-through, del tasso di sottoscrizione, della reattività, ecc.
 
@@ -29,13 +29,14 @@ Inoltre, il test dettagliato in questo caso d&#39;uso riguardava solo due conseg
 
 I passaggi principali per eseguire questo caso di utilizzo sono:
 
-* [Passaggio 1: Creare un flusso di lavoro di targeting](#step-1--creating-a-targeting-workflow)
-* [Passaggio 2: Configurare i campioni popolazione](#step-2--configuring-population-samples)
-* [Passaggio 3: Creare due modelli di consegna](#step-3--creating-two-delivery-templates)
-* [Passaggio 4: Configurare le consegne nel flusso di lavoro](#step-4--configuring-the-deliveries-in-the-workflow)
-* [Passaggio 5: Creare lo script](#step-5--creating-the-script)
-* [Passaggio 7: Avviare il flusso di lavoro](#step-7--starting-the-workflow)
-* [Passaggio 8: Analizzare il risultato](#step-8--analyzing-the-result).
+* [Passaggio 1: Creare un flusso di lavoro di targeting](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Passaggio 2: Configurare i campioni popolazione](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Passaggio 3: Creare due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [Passaggio 4: Configurare le consegne nel flusso di lavoro](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Passaggio 5: Creare lo script](../../delivery/using/a-b-testing-uc-script.md)
+* [Passaggio 6: Definire la consegna finale](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Passaggio 7: Avviare il flusso di lavoro](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Passaggio 8: Analizzare il risultato](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Argomenti correlati:**
 
