@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4066'
 ht-degree: 95%
@@ -45,6 +45,8 @@ La sezione  MTA avanzata di Adobe Campaign è stata spostata [qui](../../deliver
 
 La sezione **Invio di un&#39;e-mail** è stata riorganizzata e chiarita con le nuove sottosezioni. [Leggi tutto](../../delivery/using/sending-messages.md)
 
+Sono state aggiunte informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Leggi tutto](../../delivery/using/tracking-personalized-links.md).
+
 ## Gennaio 2021 {#jan-2021}
 
 La sezione dell’attività **[!UICONTROL Fork]** è stata arricchita con informazioni sulle best practice. [Leggi tutto](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ L’elenco dei flussi di lavoro tecnici con i pacchetti a essi associati è stat
 La sezione relativa alla risoluzione dei problemi nella guida **Monitoraggio** è stata riorganizzata e migliorata con una pagina di destinazione. [Leggi tutto](../../production/using/troubleshooting.md).
 
 È disponibile una nuova sezione **Importazione ed esportazione di dati** con nuove pagine su flussi di lavoro, compressione dei dati, cifratura e best practice per l’importazione. [Leggi tutto](../../platform/using/get-started-data-import-export.md)
-
-Sono state aggiunte informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Leggi tutto](../../delivery/using/tracking-personalized-links.md).
 
 ## Dicembre 2020 {#dec-2020}
 
