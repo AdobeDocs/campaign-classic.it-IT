@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -27,3 +27,5 @@ Una volta creato lo script per selezionare il vincitore del test A/B, è possibi
    ![](assets/ab_test_final_delivery.png)
 
 Preparando la consegna specificata nella transizione (definita tramite l&#39;attività **[!UICONTROL Javascript Code]**), potrai quindi approvarla e avviare l&#39;invio, come descritto nel passaggio successivo.
+
+È ora possibile avviare il flusso di lavoro (vedere [Passaggio 7: Avviare il flusso di lavoro](../../delivery/using/a-b-testing-uc-start-workflow.md)).
