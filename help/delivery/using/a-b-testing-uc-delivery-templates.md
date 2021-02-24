@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 8%
 
 ---
 
@@ -31,3 +31,5 @@ Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferim
 1. Ripetete questa procedura per creare un modello per la consegna B.
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
+
+È ora possibile configurare le consegne nel flusso di lavoro (vedere [Passaggio 4: Configurare le consegne nel flusso di lavoro](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
