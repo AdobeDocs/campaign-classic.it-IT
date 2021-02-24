@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Personalizzazione del tracking degli URL
-description: Personalizzazione del tracking degli URL
+title: Configurazione delle opzioni di tracciamento URL
+description: Configurazione delle opzioni di tracciamento URL
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
 
-# Personalizzazione del tracking degli URL{#personalizing-url-tracking}
+# Configurazione delle opzioni di tracciamento URL{#personalizing-url-tracking}
 
 Le impostazioni avanzate di tracciamento dei messaggi sono accessibili tramite l&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti della procedura guidata di consegna.
 
