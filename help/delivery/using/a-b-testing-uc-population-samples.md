@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 2%
 
 ---
 
@@ -80,3 +80,5 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
    * Modificate l&#39;etichetta per specificare che la popolazione non include né A né B, quindi fate clic su **[!UICONTROL OK]** per chiudere l&#39;attività.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
+
+È ora possibile creare i due modelli di consegna (vedere [Passaggio 3: Create due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
