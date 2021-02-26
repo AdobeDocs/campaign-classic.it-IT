@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
+source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '484'
 ht-degree: 6%
 
 ---
@@ -96,19 +96,9 @@ Per aggiungere le credenziali di progetto in  Adobe Campaign, eseguite il comand
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
-La chiave privata deve essere codificata in formato base64 UTF-8. Per eseguire questa operazione:
-
-1. Utilizzare la chiave privata generata nel [Passaggio 1: Crea/aggiorna  sezione Progetto Adobe I/O](#creating-adobe-io-project). La chiave privata deve essere la stessa utilizzata per creare l&#39;integrazione.
-
-1. Utilizzando questo [sito Web](https://www.base64encode.org/), copiate e incollate la chiave privata nel campo corrispondente.
-
-   >[!NOTE]
-   >
-   >Talvolta, quando si copia o incolla la chiave privata, è possibile aggiungere automaticamente una riga aggiuntiva. Ricorda di rimuoverlo prima di codificare la chiave privata.
-
-1. Fai clic su **[!UICONTROL Encode]**.
-
-1. Utilizzate la vostra chiave privata appena generata, codificata in formato base64 UTF-8 per eseguire il comando descritto sopra.
+>[!NOTE]
+>
+>È necessario codificare la chiave privata in formato base64 UTF-8. Ricordare di rimuovere la nuova riga dalla chiave prima di codificarla, fatta eccezione per la chiave privata. La chiave privata deve essere la stessa utilizzata per creare l&#39;integrazione. Per verificare la codifica base64 della chiave privata, è possibile utilizzare [questo sito Web](https://www.base64encode.org/).
 
 ## Passaggio 3: Aggiorna tag pipeline {#update-pipelined-tag}
 
