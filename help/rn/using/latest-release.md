@@ -48,7 +48,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 
 * Vengono ora acquisite tutte le categorie di feedback per la generazione di rapporti completi e precisi.
 * Il calcolo dell’indicatore Delivered è ora basato sul feedback in tempo reale dall’MTA avanzato per una maggiore precisione e reattività.
-* Il servizio EFS risolve il problema dei ritardi con la generazione sincrona di rapporti sui soft bounce.
+* Il servizio EFS risolve il problema dei ritardi nella generazione sincrona di rapporti sui soft bounce.
 
 Per ulteriori informazioni consulta la [documentazione dettagliata](../../delivery/using/sending-with-enhanced-mta.md#efs).
 Se sei interessato a partecipare a questa versione beta privata, compila questo [modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e ti contatteremo di nuovo.
