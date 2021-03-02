@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
+source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Configurazione{#configuration}
 
-I tipi di cartelle utilizzati dall&#39;elenco di navigazione sono descritti in un documento XML che segue la grammatica dello schema **xtk:navtree**.
+I tipi di cartelle utilizzati dall&#39;elenco di navigazione sono descritti in un documento XML che rispetta la grammatica dello schema **xtk:navtree**.
 
 Il documento XML è strutturato come segue:
 
@@ -49,7 +49,7 @@ La dichiarazione dei tipi di file è strutturata nel documento con i seguenti el
 
 ## Comandi globali {#global-commands}
 
-Un comando globale consente di avviare un’azione. Questa azione può essere un modulo di input o una chiamata SOAP.
+Un comando globale consente di avviare un&#39;azione. Questa azione può essere un modulo di input o una chiamata SOAP.
 
 I comandi globali sono accessibili dal menu principale **[!UICONTROL Tools]**.
 
@@ -78,22 +78,22 @@ La struttura di configurazione del comando è la seguente:
 
 La descrizione di un comando globale viene inserita nell&#39;elemento **`<command>`** con le seguenti proprietà:
 
-* **name**: nome interno del comando: il nome deve essere immesso e univoco
-* **label**: dell&#39;etichetta del comando.
+* **nome**: nome interno del comando: il nome deve essere immesso e univoco
+* **etichetta**: etichetta del comando.
 * **desc**: descrizione visibile dalla barra di stato della schermata principale.
-* **modulo**: modulo da avviare: il valore da immettere è la chiave di identificazione del modulo di input (ad es. &quot;cus:receive&quot;)
-* **diritti**: elenco di diritti denominati (separati da virgola) che consentono l&#39;accesso a questo comando. L&#39;elenco dei diritti disponibili è accessibile dalla cartella **[!UICONTROL Administration > Access management > Named rights]**.
+* **modulo**: modulo da avviare: il valore da inserire è la chiave di identificazione del modulo di input (ad es. &quot;cus:recipient&quot;)
+* **diritti**: elenco di diritti denominati (separati da una virgola) che consentono l&#39;accesso a questo comando. L’elenco dei diritti disponibili è accessibile dalla cartella **[!UICONTROL Administration > Access management > Named rights]** .
 * **promptLabel**: visualizza una casella di conferma prima dell&#39;esecuzione del comando.
 
-Un elemento **`<command>`** può contenere elementi secondari **`<command>`**. In questo caso, l&#39;elemento padre consente di visualizzare un sottomenu composto da questi elementi secondari.
+Un elemento **`<command>`** può contenere elementi secondari **`<command>`**. In questo caso, l’elemento padre ti consente di visualizzare un sottomenu composto da questi elementi secondari.
 
 I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel documento XML.
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API SOAP, fare riferimento alla [documentazione JSAPI della campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+La presenza opzionale del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull’API SOAP, consulta la [documentazione JSAPI per la campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione relativa ai moduli di input.
+Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag **`<enter>`** . Per ulteriori informazioni su questo tag, consulta la documentazione sui moduli di input.
 
 **Esempio**:
 
@@ -103,9 +103,9 @@ Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag *
    <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
    ```
 
-   Una scelta rapida da tastiera viene dichiarata sul carattere &quot;I&quot; dalla presenza di **&amp;** nell&#39;etichetta del comando.
+   Una scelta rapida da tastiera è dichiarata sul carattere &quot;I&quot; dalla presenza di **&amp;** nell&#39;etichetta del comando.
 
-* Esempio di sottomenu con un separatore:
+* Esempio di sottomenu con separatore:
 
    ![](assets/d_ncs_integration_navigation_exemple1.png)
 
@@ -131,7 +131,7 @@ Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag *
 
 ## Tipo di cartella {#folder-type}
 
-Un tipo di cartella consente di accedere ai dati di uno schema. La visualizzazione associata alla cartella è composta da un elenco e da un modulo di input.
+Un tipo di cartella consente di accedere ai dati di uno schema. La visualizzazione associata alla cartella è costituita da un elenco e da un modulo di input.
 
 La struttura di configurazione del tipo di cartella è la seguente:
 
@@ -153,35 +153,35 @@ La struttura di configurazione del tipo di cartella è la seguente:
 </model>
 ```
 
-La dichiarazione del tipo di cartella deve essere inserita in un elemento **`<model>`**. Questo elemento consente di definire un&#39;organizzazione gerarchica visibile dal menu **[!UICONTROL Add new folder]**. Un elemento **`<model>`** deve contenere elementi **`<nodemodel>`** e altri elementi **`<model>`**.
+La dichiarazione del tipo di cartella deve essere inserita in un elemento **`<model>`**. Questo elemento ti consente di definire un’organizzazione gerarchica visibile dal menu **[!UICONTROL Add new folder]** . Un elemento **`<model>`** deve contenere elementi **`<nodemodel>`** e altri elementi **`<model>`**.
 
-Gli attributi **name** e **label** popolano il nome interno dell&#39;elemento e l&#39;etichetta visualizzata nel menu **[!UICONTROL Add new folder]**.
+Gli attributi **name** e **label** compilano il nome interno dell&#39;elemento e l&#39;etichetta visualizzata nel menu **[!UICONTROL Add new folder]**.
 
 L&#39;elemento **`<nodemodel>`** contiene la descrizione del tipo di cartella con le seguenti proprietà:
 
-* **name**: nome interno
-* **label**: etichetta utilizzata nel  **[!UICONTROL Add new folder]** menu e come etichetta predefinita quando si inserisce una cartella.
-* **img**: immagine predefinita nell’inserimento della cartella.
-* **hiddenCommands**: elenco di comandi (separati da virgola) da mascherare. Valori possibili: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; e &quot;adbdup&quot;.
-* **newFolderShortCuts**: elenco di scelte rapide da tastiera per i modelli (**`<nodemodel>`** separate da virgola) per la creazione di cartelle.
-* **insertRight**,  **editRight**,  **deleteRight**: diritti per l’inserimento, la modifica e l’eliminazione di cartelle.
+* **nome**: nome interno
+* **etichetta**: etichetta utilizzata nel  **[!UICONTROL Add new folder]** menu e come etichetta predefinita durante l’inserimento di una cartella.
+* **img**: immagine predefinita all&#39;inserimento della cartella.
+* **hiddenCommand**: elenco di comandi (separati da una virgola) da mascherare. Valori possibili: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; e &quot;adbdup&quot;.
+* **newFolderShortCuts**: elenco di scelte rapide sui modelli (**`<nodemodel>`** separate da virgola) nella creazione di cartelle.
+* **insertRight**,  **editRight**,  **deleteRight**: diritti per l&#39;inserimento, la modifica e l&#39;eliminazione di cartelle.
 
-L&#39;elemento **`<view>`** sotto l&#39;elemento **`<nodemodel>`** contiene la configurazione dell&#39;elenco associato alla vista. Lo schema dell&#39;elenco viene immesso nell&#39;attributo **schema** dell&#39;elemento **`<view>`**.
+L’elemento **`<view>`** sotto l’elemento **`<nodemodel>`** contiene la configurazione dell’elenco associato alla visualizzazione. Lo schema dell&#39;elenco viene immesso nell&#39;attributo **schema** dell&#39;elemento **`<view>`**.
 
-Per modificare i record dell&#39;elenco, viene utilizzato in modo implicito il modulo di input con lo stesso nome dello schema dell&#39;elenco. L&#39;attributo **type** sull&#39;elemento **`<view>`** influisce sulla visualizzazione del modulo. I valori possibili sono:
+Per modificare i record dell’elenco, viene utilizzato in modo implicito il modulo di input con lo stesso nome dello schema dell’elenco. L’attributo **type** sull’elemento **`<view>`** influisce sulla visualizzazione del modulo. I valori possibili sono:
 
-* **list**: visualizza il modulo in fondo all&#39;elenco.
-* **elenco**: visualizza l&#39;elenco da solo. Il modulo viene avviato facendo doppio clic o mediante l&#39;opzione &quot;Apri&quot; nel menu alla selezione dell&#39;elenco.
+* **listdet**: visualizza il modulo in fondo all’elenco.
+* **elenco**: visualizza l’elenco da solo. Il modulo viene avviato facendo doppio clic o tramite l’opzione &quot;Apri&quot; nel menu che consente di selezionare l’elenco.
 * **modulo**: visualizza un modulo di sola lettura.
 * **editForm**: visualizza un modulo in modalità di modifica.
 
 >[!NOTE]
 >
->Il nome del modulo di input può essere sovraccaricato immettendo l&#39;attributo **form** nell&#39;elemento **`<view>`**.
+>Per sovrascrivere il nome del modulo di input, immetti l’attributo **form** nell’elemento **`<view>`** .
 
-La configurazione predefinita delle colonne dell&#39;elenco viene immessa tramite l&#39;elemento **`<columns>`**. Una colonna è dichiarata su un elemento **`<node>`** contenente l&#39;attributo **xpath** con il campo a cui verrà fatto riferimento nello schema come valore.
+La configurazione predefinita delle colonne dell’elenco viene immessa tramite l’elemento **`<columns>`** . Viene dichiarata una colonna su un elemento **`<node>`** contenente l&#39;attributo **xpath** con il campo a cui si fa riferimento nello schema come valore.
 
-**Esempio**: dichiarazione di un tipo di cartella sullo schema &quot;nms:destinatario&quot;.
+**Esempio**: dichiarazione di un tipo di cartella sullo schema &quot;nms:recipient&quot;.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -201,11 +201,11 @@ La configurazione predefinita delle colonne dell&#39;elenco viene immessa tramit
 </model>
 ```
 
-Il menu di inserimento della cartella corrispondente:
+Menu di inserimento cartelle corrispondente:
 
 ![](assets/d_ncs_integration_navigation_exemple2.png)
 
-Potete applicare il filtro e l&#39;ordinamento al caricamento dell&#39;elenco:
+È possibile applicare filtri e ordinamento quando l’elenco viene caricato:
 
 ```
 <view name="listdet" schema="nms:recipient" type="listdet">
@@ -224,9 +224,9 @@ Potete applicare il filtro e l&#39;ordinamento al caricamento dell&#39;elenco:
 
 ### Comandi di scelta rapida {#shortcut-commands}
 
-Un comando di scelta rapida consente di avviare un’azione per selezionare l’elenco. L&#39;azione può essere un modulo di input o una chiamata SOAP.
+Un comando di scelta rapida consente di avviare un’azione quando si seleziona l’elenco. L’azione può essere un modulo di input o una chiamata SOAP.
 
-I comandi sono accessibili dal menu **[!UICONTROL Action]** dell&#39;elenco o dal pulsante del menu associato.
+I comandi sono accessibili dal menu **[!UICONTROL Action]** dell’elenco o dal pulsante del menu associato.
 
 La struttura di configurazione del comando è la seguente:
 
@@ -245,28 +245,28 @@ La struttura di configurazione del comando è la seguente:
 </nodeModel>
 ```
 
-La descrizione di un comando viene inserita nell&#39;elemento **`<command>`** con le seguenti proprietà:
+La descrizione di un comando viene immessa sull&#39;elemento **`<command>`** con le seguenti proprietà:
 
-* **name**: nome interno del comando: il nome deve essere specificato e univoco.
-* **label**: dell&#39;etichetta del comando.
+* **nome**: nome interno del comando: il nome deve essere immesso e univoco.
+* **etichetta**: etichetta del comando.
 * **desc**: descrizione visibile dalla barra di stato della schermata principale.
-* **modulo**: modulo da avviare: il valore da immettere è la chiave di identificazione del modulo di input (ad es. &quot;cus:receive&quot;).
-* **diritti**: elenco di diritti denominati (separati da virgola) che consentono l&#39;accesso a questo comando. L&#39;elenco dei diritti disponibili è accessibile dalla cartella **[!UICONTROL Administration > Access management > Named rights]**.
+* **modulo**: modulo da avviare: il valore da inserire è la chiave di identificazione del modulo di input (ad es. &quot;cus:recipient&quot;).
+* **diritti**: elenco di diritti denominati (separati da una virgola) che consentono l&#39;accesso a questo comando. L’elenco dei diritti disponibili è accessibile dalla cartella **[!UICONTROL Administration > Access management > Named rights]** .
 * **promptLabel**: visualizza una casella di conferma prima dell&#39;esecuzione del comando
 * **monoSelection**: forza la selezione mono (selezione multipla per impostazione predefinita).
 * **refreshView**: forza il ricaricamento dell&#39;elenco dopo l&#39;esecuzione del comando.
 * **enabledIf**: attiva il comando in base all&#39;espressione immessa.
-* **img**: immette un&#39;immagine che consente di accedere al comando dalla barra degli strumenti dell&#39;elenco.
+* **img**: immette un’immagine che consente l’accesso al comando dalla barra degli strumenti dell’elenco.
 
-Un elemento **`<command>`** può contenere elementi secondari **`<command>`**. In questo caso, l&#39;elemento padre consente di visualizzare un sottomenu composto da questi elementi secondari.
+Un elemento **`<command>`** può contenere elementi secondari **`<command>`**. In questo caso, l’elemento padre ti consente di visualizzare un sottomenu composto da questi elementi secondari.
 
 I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel documento XML.
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, fare riferimento alla [documentazione JSAPI della campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+La presenza opzionale del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, consulta la [documentazione JSAPI per Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-Il contesto del modulo può essere aggiornato all&#39;inizializzazione tramite il tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input.
+Il contesto del modulo può essere aggiornato all’inizializzazione tramite il tag **`<enter>`** . Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input .
 
 **Esempio**:
 
@@ -289,18 +289,18 @@ Il contesto del modulo può essere aggiornato all&#39;inizializzazione tramite i
 
 Esistono due tipi di operazioni di gestione delle cartelle:
 
-1. La cartella è una visualizzazione: l&#39;elenco visualizza tutti i record associati allo schema, con la possibilità di filtrare il sistema immesso nelle proprietà della cartella.
-1. La cartella è collegata: i record elencati vengono filtrati implicitamente sul collegamento della cartella.
+1. La cartella è una visualizzazione: l&#39;elenco visualizza tutti i record associati allo schema, con la possibilità di filtrare il sistema inserito nelle proprietà della cartella.
+1. La cartella è collegata: i record nell’elenco vengono filtrati implicitamente sul collegamento della cartella.
 
 Per una cartella collegata, è necessario compilare l&#39;attributo **folderLink** sull&#39;elemento **`<nodemodel>`**. Questo attributo contiene il nome del collegamento nella cartella configurata nello schema dati.
 
 Esempio di dichiarazione di una cartella collegata nello schema dati:
 
 ```
-<element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
+<element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-La configurazione della **`<nodemodel>`** sul collegamento della cartella denominata &quot;folder&quot; è la seguente:
+La configurazione del **`<nodemodel>`** sul collegamento della cartella denominata &quot;cartella&quot; è la seguente:
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"
