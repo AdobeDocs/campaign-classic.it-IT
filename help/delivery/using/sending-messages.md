@@ -2,39 +2,39 @@
 solution: Campaign Classic
 product: campaign
 title: Invio di un’e-mail con Adobe Campaign Classic
-description: Scopri come confermare la consegna di un’e-mail e scoprire le specificità della distribuzione dei messaggi e-mail.
+description: Scopri come confermare la consegna di un’e-mail e scoprire le specificità della consegna di messaggi e-mail.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 
-# Conferma invio e-mail {#confirming-email-delivery}
+# Passaggi principali per inviare un messaggio e-mail {#confirming-email-delivery}
 
-Dopo aver creato e configurato l’e-mail, potete inviarla alla destinazione principale. Questa sezione illustra i passaggi principali per confermare la consegna di un messaggio e-mail.
+Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Questa sezione presenta i passaggi principali per controllare e confermare la consegna di un’e-mail.
 
-1. Verificate di aver configurato tutte le impostazioni specifiche per la distribuzione delle e-mail. Per ulteriori informazioni, vedere [Parametri e-mail](../../delivery/using/email-parameters.md).
-1. Quando l&#39;e-mail è pronta, prima di inviarla alla destinazione principale, si consiglia di rilevare eventuali errori inviando prove di errore. Per ulteriori informazioni, vedere [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+1. Assicurati di aver configurato tutte le impostazioni specifiche per la consegna delle e-mail. Per ulteriori informazioni, consulta [Parametri e-mail](../../delivery/using/email-parameters.md).
+1. Quando l’e-mail è pronta, prima di inviarla al target principale, si consiglia di rilevare eventuali errori potenziali inviando delle bozze. Per ulteriori informazioni, consulta [Invio di una bozza](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-1. Al termine, è necessario convalidare l’e-mail avviando l’analisi. A questo scopo, fare clic su **[!UICONTROL Send]**, selezionare un&#39;azione e fare clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, vedere [Avvio dell&#39;analisi](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Al termine, devi convalidare l’e-mail avviando l’analisi. A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona un’azione e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvio dell&#39;analisi](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. Al termine dell&#39;analisi, fate clic su **[!UICONTROL Confirm delivery]** per avviare la distribuzione dei messaggi ai destinatari di destinazione. Per ulteriori informazioni, vedere [Conferma della consegna](../../delivery/using/steps-sending-the-delivery.md#confirming-delivery).
+1. Al termine dell’analisi, fai clic su **[!UICONTROL Confirm delivery]** per avviare la consegna dei messaggi ai destinatari desiderati. Per ulteriori informazioni, consulta [Conferma della consegna](../../delivery/using/steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->L&#39;intero processo di convalida di una consegna è descritto in [questa sezione](../../delivery/using/steps-validating-the-delivery.md). I passaggi dettagliati per configurare e inviare una consegna sono descritti in [questa sezione](../../delivery/using/steps-sending-the-delivery.md).
+>L’intero processo per convalidare una consegna è descritto in [questa sezione](../../delivery/using/steps-validating-the-delivery.md). I passaggi dettagliati completi per la configurazione e l’invio di una consegna sono descritti in [questa sezione](../../delivery/using/steps-sending-the-delivery.md).
 
-Le seguenti sezioni descrivono le impostazioni e le configurazioni specifiche per la distribuzione dei messaggi e-mail:
+Le seguenti sezioni descrivono le impostazioni e le configurazioni specifiche per la consegna delle e-mail:
 <!--* [Generating the mirror page](../../delivery/using/generating-mirror-page.md)
 * [Email BCC](../../delivery/using/email-bcc.md)-->
 * [Parametri e-mail](../../delivery/using/email-parameters.md)
-* [Invio di e-mail con MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md)
-* [Invio di e-mail su cellulari giapponesi](../../delivery/using/sending-emails-on-japanese-mobiles.md)
+* [Invio di e-mail con l’MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md)
+* [Invio di e-mail su dispositivi mobili giapponesi](../../delivery/using/sending-emails-on-japanese-mobiles.md)
