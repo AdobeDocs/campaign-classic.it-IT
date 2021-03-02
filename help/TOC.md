@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 96%
 
 ---
@@ -125,11 +125,11 @@ ht-degree: 96%
       + [Creazione di una consegna e-mail](delivery/using/creating-an-email-delivery.md)
       + [Definizione del contenuto dell’e-mail](delivery/using/defining-the-email-content.md)
       + [Definizione del contenuto interattivo](delivery/using/defining-interactive-content.md)
-      + Invio di un&#39;e-mail {#sending-an-email}
-         + [Conferma della consegna del messaggio e-mail](delivery/using/sending-messages.md)
+      + Invio della consegna e-mail {#sending-an-email}
+         + [Passaggi principali per l’invio di un’e-mail](delivery/using/sending-messages.md)
          + [Parametri e-mail](delivery/using/email-parameters.md)
-         + [Invio con MTA avanzata](delivery/using/sending-with-enhanced-mta.md)
-         + [Invio su cellulari giapponesi](delivery/using/sending-emails-on-japanese-mobiles.md)
+         + [Invio con l’MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
+         + [Invio su dispositivi mobili giapponesi](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [File allegati](delivery/using/attaching-files.md)
    + Invio di messaggi su dispositivi mobili {#sending-messages-on-mobiles}
       + [Canale SMS](delivery/using/sms-channel.md)
@@ -171,12 +171,12 @@ ht-degree: 96%
       + [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Caso di utilizzo: configurazione della sostituzione del campo](delivery/using/use-case--configuring-the-field-substitution.md)
    + Test A/B {#a-b-testing}
-      + [Introduzione ai test A/B](delivery/using/get-started-a-b-testing.md)
+      + [Guida introduttiva al test A/B](delivery/using/get-started-a-b-testing.md)
       + [Configurazione del test A/B](delivery/using/configuring-a-b-testing.md)
       + Caso d’uso {#use-case}
-         + [Informazioni su questo caso di utilizzo](delivery/using/a-b-testing-use-case.md)
+         + [Informazioni sul caso d’uso](delivery/using/a-b-testing-use-case.md)
          + [Creazione di un flusso di lavoro di targeting](delivery/using/a-b-testing-uc-targeting-workflow.md)
-         + [Configurazione dei campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
+         + [Configurazione di campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
          + [Creazione di modelli di consegna](delivery/using/a-b-testing-uc-delivery-templates.md)
          + [Configurazione delle consegne](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Creazione dello script](delivery/using/a-b-testing-uc-script.md)
@@ -200,13 +200,13 @@ ht-degree: 96%
       + [Informazioni sul tracking dei messaggi](delivery/using/about-message-tracking.md)
       + [Come configurare collegamenti tracciati](delivery/using/how-to-configure-tracked-links.md)
       + Tracciamento dei collegamenti personalizzati {#tracking-personalized-links}
-         + [Introduzione al tracciamento dei collegamenti personalizzati](delivery/using/tracking-personalized-links.md)
+         + [Guida introduttiva al tracciamento dei collegamenti personalizzati](delivery/using/tracking-personalized-links.md)
          + [Rilevamento degli URL di tracciamento](delivery/using/detecting-tracking-urls.md)
          + [Istruzioni di pre-elaborazione per il tracciamento](delivery/using/pre-processing-instructions.md)
       + [Configurazione delle opzioni di tracciamento URL](delivery/using/personalizing-url-tracking.md)
       + [Accesso ai log di tracking](delivery/using/accessing-the-tracking-logs.md)
       + [Test del tracking](delivery/using/testing-tracking.md)
-      + [Tracciamento della risoluzione dei problemi](delivery/using/tracking-troubleshooting.md)
+      + [Risoluzione dei problemi di](delivery/using/tracking-troubleshooting.md)
    + Gestione del recapito messaggi {#deliverability-management}
       + [Informazioni sul recapito messaggi](delivery/using/about-deliverability.md)
       + [Punti chiave da verificare](delivery/using/deliverability-key-points.md)
@@ -218,7 +218,7 @@ ht-degree: 96%
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per ripetere il coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database Elenco Bloccati](delivery/using/block-list-databases.md)
+      + [Database Denylist](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
