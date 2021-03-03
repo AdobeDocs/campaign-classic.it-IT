@@ -7,30 +7,32 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 5%
+source-wordcount: '333'
+ht-degree: 4%
 
 ---
 
 
 # Disponibilità della console del client per Windows{#client-console-availability-for-windows}
 
-Affinché  utenti Adobe Campaign possano accedere all’istanza creata e configurata, devono utilizzare la console client.
+Affinché gli utenti di Adobe Campaign possano accedere all’istanza creata e configurata, devono utilizzare la console client.
 
-Quando il computer utilizzato per avviare un  server applicazioni Adobe Campaign (**nlserver web**) riceve connessioni utente dalla console client, potete configurarlo per rendere disponibile il programma di configurazione per il client Adobe Campaign  tramite un&#39;interfaccia HTML.
+## Rendi disponibile la console client
 
-A tal fine, è necessario:
+Quando il computer utilizzato per avviare un server applicazioni Adobe Campaign (**nlserver web**) riceve connessioni utente dalla console client, puoi configurarlo per rendere disponibile il programma di configurazione per il client avanzato Adobe Campaign tramite un’interfaccia HTML. Ogni volta che è disponibile una nuova versione della console client, gli utenti vengono invitati a scaricarla all’avvio della console client.
 
-1. Recuperare il pacchetto che contiene il programma di installazione della console.
+A questo scopo, devi:
 
-   Questo file è denominato `setup-client-7.X.XXXX.exe` per v7 o `setup-client-6.X.XXXX.exe` per v6.1, dove `X` è la versione secondaria di  Adobe Campaign e `XXXX` è il numero di build.
+1. Selezionare il pacchetto contenente il programma di installazione della console.
 
-1. Copiate e incollate il pacchetto nella cartella di installazione  Adobe Campaign, in **/datakit/nl/eng/jsp**.
-1. Avviate il server Adobe Campaign .
+   Questo file si chiama `setup-client-7.X.XXXX.exe` per v7 o `setup-client-6.X.XXXX.exe` per v6.1, dove `X` è la versione secondaria di Adobe Campaign e `XXXX` è il numero di build.
 
-Gli utenti finali possono quindi scaricare il programma di installazione della console tramite un browser Web grazie al seguente URL:
+1. Copia e incolla questo pacchetto nella cartella di installazione di Adobe Campaign (sul server di marketing per le installazioni ibride), alla voce **/datakit/nl/eng/jsp**.
+1. Avvia il server Adobe Campaign.
+
+Gli utenti di Campaign possono quindi scaricare il programma di installazione della console tramite un browser web grazie al seguente URL:
 
 ```
 https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
@@ -38,23 +40,22 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 Questa pagina richiede un login e una password definiti nell&#39;applicazione.
 
-Per scaricare e installare la console, fare riferimento a [Installazione della console client](../../installation/using/installing-the-client-console.md).
+Scopri come installare la console [in questa sezione](../../installation/using/installing-the-client-console.md).
 
-Ogni volta che è disponibile una nuova versione della console client, si invita a scaricarla.
+## Proporre agli utenti finali di aggiornare la propria console client
 
->[!NOTE]
->
->Nel prompt visualizzato,  Adobe consiglia di lasciare l&#39;opzione **[!UICONTROL No longer ask this question]** deselezionata per fare in modo che tutti gli utenti siano avvisati quando è disponibile una nuova versione della console.\
->Se selezionate questa opzione e scegliete di non scaricare la versione più recente, nessun altro utente verrà informato delle nuove versioni disponibili.
+Una volta che la console è disponibile nella cartella del server Campaign, gli utenti sono invitati a scaricare l’ultima versione della console client in una finestra dedicata al prompt. Adobe consiglia di deselezionare l’opzione **[!UICONTROL No longer ask this question]** per fare in modo che tutti gli utenti vengano avvisati quando è disponibile una nuova versione della console.
 
-Per ripristinare questo prompt, attenetevi alla procedura seguente (solo gli amministratori di sistema che hanno familiarità con la modifica del Registro di sistema devono effettuare le seguenti modifiche):
+Se selezioni questa opzione e scegli di non scaricare la versione più recente, nessun altro utente verrà informato delle nuove versioni disponibili.
 
-1. Aprire l&#39;Editor del Registro di sistema utilizzando il comando **regedit** dal menu **[!UICONTROL Start > Run]**.
+Se l’opzione è stata selezionata, è possibile reimpostare questo prompt. Solo gli amministratori di sistema che possono modificare il Registro di sistema di Windows devono apportare le seguenti modifiche:
+
+1. Apri l&#39;Editor del Registro di sistema utilizzando il comando **regedit** dal menu **[!UICONTROL Start > Run]**.
 1. Cercare il nodo ed espanderlo.
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. Eliminare la voce **confAdvisorUpgrade** e chiudere l&#39;Editor del Registro di sistema.
+1. Elimina la voce **confAdvisorUpgrade** e chiudi l&#39;Editor del Registro di sistema.
 
