@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 94%
@@ -27,24 +27,24 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
+> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
 
 
 
 **Miglioramenti**
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
-* Attiva l&#39;autenticazione dell&#39;integrazione originariamente basata sull&#39;impostazione dell&#39;autenticazione oAUTH per accedere alla pipeline è stata modificata e spostata  Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
-* È stato risolto un problema che causava la disattivazione del connettore SMPP in seguito a un errore di connessione, impedendo l&#39;invio di altri SMS e causando problemi di prestazioni. (NEO-28609)
+* È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni. (NEO-28609)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
 * È stato risolto un problema che causava l’arresto anomalo del server durante la visualizzazione dei dati di destinazione del resto di un’attività **Split** in un flusso di lavoro.
 * È stato risolto un problema che poteva mostrare un messaggio di errore durante il tentativo di visualizzare l’anteprima dei messaggi SMS dopo una query su uno schema diverso da **Destinatario** (nms:recipient). (NEO-27517)
-* È stato risolto un problema che si verificava durante la richiesta di connessione HTTPS con il numero di porta esplicitamente definito nel nome host. La chiamata non riusciva con un errore del certificato. (NEO-29146)
-* È stato risolto un problema nella gestione dei thread POSIX che generava file di dump di grandi dimensioni nell&#39;istanza di marketing. (NEO-28117, NEO-29281)
-* Sono stati risolti dei problemi che potrebbero causare l&#39;arresto anomalo del processo Web durante la preparazione delle consegne o con un&#39;anteprima di consegna periodica. (NEO-27790, NEO-27517)
-* È stato corretto un problema a causa del quale le consegne o l&#39;invio della prova non venivano eseguiti se attivato da un operatore non amministratore. (NEO-28597)
+* È stato risolto un problema che si verificava quando si effettuava una richiesta di connessione HTTPS con il numero di porta esplicitamente definito nel nome host, a causa del quale la chiamata non riusciva e si verificava un errore di certificato. (NEO-29146)
+* È stato risolto un problema nella gestione del thread POSIX che generava file di dump di grandi dimensioni sull&#39;istanza di marketing. (NEO-28117, NEO-29281)
+* Sono stati risolti dei problemi che potevano causare l’arresto anomalo del processo web durante la preparazione delle consegne o con un’anteprima ricorrente della consegna. (NEO-27790, NEO-27517)
+* È stato risolto un problema che causava un errore nell’invio di consegne o prove se attivato da un operatore non amministratore. (NEO-28597)
 
 ## ![](assets/do-not-localize/red_2.png) Versione 20.2.3 - Build 9182 {#release-20-2-3-build-9182}
 
