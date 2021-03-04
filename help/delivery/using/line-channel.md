@@ -7,33 +7,33 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1101'
 ht-degree: 3%
 
 ---
 
 
-# Canale LINE{#line-channel}
+# Crea consegne LINE{#line-channel}
 
-LINE è un&#39;applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su tutti gli smartphone (iPhone, Android, Windows Phone, Blackberry, Nokia) e su PC.  Adobe Campaign consente di inviare messaggi LINE.
+LINE è un&#39;applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su tutti gli smartphone (iPhone, Android, Windows Phone, Blackberry, Nokia) e su PC. Adobe Campaign ti consente di inviare messaggi LINE.
 
-LINE è disponibile solo per le installazioni di servizi locali o gestiti.
+LINE è disponibile solo per installazioni on-premise o di servizi gestiti.
 
-LINE può anche essere combinato con il modulo di messaggi transazionali per inviare messaggi in tempo reale sull&#39;app LINE installata nei dispositivi mobili consumer. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
+LINE può anche essere combinato con il modulo di messaggio transazionale per inviare messaggi in tempo reale sull&#39;app LINE installata nei dispositivi mobili consumer. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
 
 ![](assets/line_message.png)
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale LINE. Per informazioni globali su come creare una consegna, fare riferimento a [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale LINE. Per informazioni globali su come creare una consegna, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-I passaggi per utilizzare il canale LINE sono:
+I passaggi per utilizzare il canale LINE sono i seguenti:
 
 1. Creazione di una consegna
 1. Configurazione del contenuto del messaggio
-1. Selezione della popolazione di destinazione
+1. Selezione della popolazione target
 1. Invio dei messaggi
-1. Monitoraggio della consegna (tracciamento, quarantena, rapporti ecc.).
+1. Monitoraggio della consegna (tracciamento, quarantena, rapporti, ecc.).
 
 ## Impostazione del canale LINE {#setting-up-line-channel}
 
@@ -41,79 +41,79 @@ I passaggi per utilizzare il canale LINE sono:
 
 >[!NOTE]
 >
->Prima di creare un account LINE e un account esterno, è necessario installare il pacchetto LINE sull&#39;istanza. Per ulteriori informazioni, consultare la sezione [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) nella guida all&#39;installazione.
+>Prima di creare un account LINE e un account esterno, devi prima installare il pacchetto LINE nella tua istanza. Per ulteriori informazioni, consultare la sezione [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) nella guida all&#39;installazione.
 
-È innanzitutto necessario creare un account LINE, in modo da collegarlo a  Adobe Campaign. Quindi, puoi inviare messaggi LINE agli utenti che hanno aggiunto il tuo account LINE nella loro applicazione mobile. Gli account esterni e gli account LINE possono essere gestiti solo dall&#39;amministratore funzionale della piattaforma.
+Devi innanzitutto creare un account LINE, in modo da poterlo poi collegare ad Adobe Campaign. Quindi, puoi inviare messaggi LINE agli utenti che hanno aggiunto il tuo account LINE nella loro app mobile. Gli account esterni e l’account LINE possono essere gestiti solo dall’amministratore funzionale della piattaforma.
 
-Per creare e configurare un account LINE, vedere [https://developers.line.me/](https://developers.line.me/).
+Per creare e configurare un account LINE, consulta [https://developers.line.me/](https://developers.line.me/).
 
-Per creare e configurare un servizio LINE, vedere [Gestione delle sottoscrizioni](../../delivery/using/managing-subscriptions.md).
+Per creare e configurare un servizio LINE, consulta [Gestione delle sottoscrizioni](../../delivery/using/managing-subscriptions.md).
 
 ![](assets/line_service.png)
 
-Infine, per creare un account esterno su  Adobe Campaign:
+Infine, per creare un account esterno su Adobe Campaign:
 
-1. Nella struttura ad albero **Amministrazione** > **Piattaforma** fare clic sulla scheda **Account esterni**.
-1. Quindi fare clic sull&#39;icona **New**.
+1. Nella struttura ad albero **Amministrazione** > **Piattaforma**, fai clic sulla scheda **Account esterni** .
+1. Quindi fai clic sull&#39;icona **Nuovo** .
 
    ![](assets/line_config.png)
 
-1. Completare i campi **Label** e **Internal name**.
-1. Nel campo **[!UICONTROL Type]**, selezionare Routing e nel campo **Canale** selezionare LINE.
-1. Fare clic su **[!UICONTROL Save]** per creare l&#39;account esterno LINE.
-1. Un campo di personalizzazione **LINE** viene visualizzato sotto l&#39;icona **Generale** e compilare i campi seguenti:
+1. Compila i campi **Etichetta** e **Nome interno** .
+1. Nel campo **[!UICONTROL Type]** selezionare Indirizzamento e nel campo **Canale** selezionare LINE.
+1. Fai clic su **[!UICONTROL Save]** per creare il tuo account esterno LINE.
+1. Un campo di personalizzazione **LINE** viene visualizzato sotto l&#39;icona **Generale**, compila i campi seguenti:
 
    ![](assets/line_config_2.png)
 
-   * **Alias** canale: viene fornito tramite il tuo account LINE nella  **[!UICONTROL Channels]** >  **[!UICONTROL Technical configuration]** scheda.
-   * **ID** canale: viene fornito tramite il vostro account LINE nella scheda  **Canali** > Informazioni di  **base** del pannello.
-   * **Chiave** segreta canale: viene fornito tramite il vostro account LINE nella scheda  **Canali** > Informazioni di  **base** del pannello.
-   * **Token** di accesso: viene fornito tramite il tuo account LINE nel portale per sviluppatori o facendo clic sul  **[!UICONTROL Get access token]** pulsante.
-   * **Data** di scadenza token di accesso: consente di specificare la data di scadenza del token di accesso.
-   * **Servizio** di iscrizione LINE: consente di specificare i servizi ai quali gli utenti verranno sottoscritti.
+   * **Alias** canale: viene fornito tramite il tuo account LINE nella scheda  **[!UICONTROL Channels]** >  **[!UICONTROL Technical configuration]** .
+   * **ID** canale: viene fornito tramite il tuo account LINE nella scheda  **Canali**  > Informazioni  **di base** .
+   * **Chiave** segreto canale: viene fornito tramite il tuo account LINE nella scheda  **Canali**  > Informazioni  **di base** .
+   * **Token** di accesso: viene fornito tramite il tuo account LINE nel portale per sviluppatori o facendo clic sul  **[!UICONTROL Get access token]** pulsante .
+   * **Data** di scadenza del token di accesso: consente di specificare la data di scadenza del token di accesso.
+   * **Servizio** di abbonamento LINE: consente di specificare i servizi ai quali gli utenti verranno abbonati.
 
 >[!NOTE]
 >
->È necessario verificare che i flussi di lavoro **[!UICONTROL LINE access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** siano iniziati. In Esplora risorse, fate clic su **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** per verificare lo stato dei flussi di lavoro.
+>Verifica che i flussi di lavoro **[!UICONTROL LINE access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** siano stati avviati. Dall’elenco di cartelle, fai clic su **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** per controllare lo stato dei flussi di lavoro.
 
 ## Creazione della consegna {#creating-the-delivery}
 
-Per creare una consegna **LINE** è necessario eseguire la procedura seguente:
+Per creare una consegna **LINE** devi seguire questi passaggi:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono presentati in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione della consegna sono descritti in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Dalla scheda **[!UICONTROL Campaigns]**, selezionare **[!UICONTROL Deliveries]**, quindi fare clic sul pulsante **[!UICONTROL Create]**.
-1. Nella finestra visualizzata, selezionare **[!UICONTROL LINE V2 delivery]** modello di consegna.
+1. Dalla scheda **[!UICONTROL Campaigns]** , seleziona **[!UICONTROL Deliveries]** , quindi fai clic sul pulsante **[!UICONTROL Create]** .
+1. Nella finestra visualizzata, seleziona **[!UICONTROL LINE V2 delivery]** modello di consegna.
 
    ![](assets/line_message_01.png)
 
-1. Identifica la consegna con un&#39;etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Fate clic su **[!UICONTROL Continue]** per creare la consegna.
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Fai clic su **[!UICONTROL Continue]** per creare la consegna.
 
 ## Definizione del contenuto {#defining-the-content}
 
 Per definire il contenuto di una consegna LINE, devi prima aggiungere il tipo di messaggio alla consegna. Ogni consegna LINE può contenere fino a 5 messaggi.
 
-Puoi scegliere tra due tipi di messaggi:
+Puoi scegliere tra due tipi di messaggio:
 
 * Messaggio di testo
 * Immagine e collegamento
 
-### Configurazione della distribuzione di messaggi di testo {#configuring-a-text-message-delivery}
+### Configurazione della consegna di un messaggio di testo {#configuring-a-text-message-delivery}
 
-Un **Messaggio di testo** consegna LINE è un messaggio inviato ai destinatari in un modulo di testo.
+Una **Consegna di testo** LINE è un messaggio inviato ai destinatari in formato testo.
 
 ![](assets/line_message_02.png)
 
-La configurazione di questo tipo di messaggio è simile alla configurazione di **text** in un messaggio e-mail. Per ulteriori informazioni, fare riferimento a questa [pagina](../../delivery/using/defining-the-email-content.md#message-content).
+La configurazione di questo tipo di messaggio è simile alla configurazione di **text** in un messaggio e-mail. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#message-content).
 
-### Configurazione della distribuzione di immagini e collegamenti {#configuring-an-image-and-link-delivery}
+### Configurazione di un&#39;immagine e della consegna di un collegamento {#configuring-an-image-and-link-delivery}
 
-La distribuzione di **Immagine e collegamento** LINE è un messaggio inviato ai destinatari sotto forma di immagine che può contenere uno o più URL.
+Una consegna **Immagine e collegamento** LINE è un messaggio inviato ai destinatari sotto forma di immagine che può contenere uno o più URL.
 
-È possibile utilizzare:
+Puoi utilizzare:
 
 * a **Immagine personalizzata**,
 
@@ -127,7 +127,7 @@ La distribuzione di **Immagine e collegamento** LINE è un messaggio inviato ai 
 
    ![](assets/line_message_03.png)
 
-   Gli URL immagine consentono di usare diverse risoluzioni immagine per ottimizzare la visibilità della distribuzione sui dispositivi mobili. Sono supportate solo le immagini con la stessa altezza e larghezza.
+   Gli URL immagine consentono di utilizzare risoluzioni di immagine diverse per ottimizzare la visibilità della distribuzione sui dispositivi mobili. Sono supportate solo le immagini con la stessa altezza e larghezza.
 
    Le immagini possono essere definite in base alle dimensioni dello schermo:
 
@@ -139,51 +139,51 @@ La distribuzione di **Immagine e collegamento** LINE è un messaggio inviato ai 
 
    >[!NOTE]
    >
-   >La dimensione 1040x1040 px è obbligatoria per ogni immagine LINE con collegamento.
+   >Le dimensioni 1040x1040 px sono obbligatorie per ogni immagine LINE con collegamento.
 
-   È quindi necessario aggiungere del testo alternativo che verrà visualizzato sul dispositivo mobile del destinatario.
+   Devi quindi aggiungere del testo alternativo che comparirà sul dispositivo mobile del destinatario.
 
 * e **[!UICONTROL Links]**.
 
    ![](assets/line_message_05.png)
 
-   La sezione **[!UICONTROL Links]** consente di scegliere tra diversi layout che dividono l&#39;immagine in più aree selezionabili. Potete quindi assegnare a ciascuno di essi un collegamento dedicato.
+   La sezione **[!UICONTROL Links]** consente di scegliere tra diversi layout che consentono di dividere l’immagine in più aree selezionabili. Puoi quindi assegnare a ciascuno di essi un collegamento dedicato.
 
 >[!NOTE]
 >
->La sintassi &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> consente di includere in un messaggio LINE un collegamento a un&#39;app Web.
+>La sintassi &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> consente di includere un collegamento a un’app Web in un messaggio LINE.
 
 ### Raccomandazioni {#recommendations}
 
-* Quando si invia una consegna LINE a un nuovo destinatario per la prima volta, è necessario aggiungere il messaggio LINE ufficiale relativo ai termini di utilizzo e consenso alla consegna. Il messaggio ufficiale è disponibile al seguente link: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
+* Quando invii una consegna LINE a un nuovo destinatario per la prima volta, devi aggiungere nella consegna il messaggio LINE ufficiale relativo ai termini di utilizzo e di consenso. Il messaggio ufficiale è disponibile al seguente link: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
-## Selezione della popolazione di destinazione {#selecting-the-target-population}
+## Selezione della popolazione target {#selecting-the-target-population}
 
-La selezione dei destinatari di una consegna LINE è simile alla definizione dei destinatari della consegna tramite e-mail. Per ulteriori informazioni, fare riferimento a [Identificazione delle popolazioni di destinazione](../../delivery/using/steps-defining-the-target-population.md).
+La selezione dei destinatari di una consegna LINE è simile alla definizione dei destinatari della consegna e-mail. Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](../../delivery/using/steps-defining-the-target-population.md).
 
 Il targeting viene eseguito su **visitatori**.
 
 ## Invio di messaggi {#sending-messages}
 
-Quando la consegna viene creata e configurata correttamente, potete inviarla alla destinazione definita in precedenza.
+Quando la consegna viene creata e configurata correttamente, puoi inviarla alla destinazione definita in precedenza.
 
-L&#39;invio di consegne LINE è simile all&#39;invio di un&#39;e-mail. Per ulteriori informazioni sull&#39;invio di una consegna, fare riferimento a [Invio di messaggi](../../delivery/using/sending-messages.md).
+L’invio di consegne LINE è simile all’invio di una consegna e-mail. Per ulteriori informazioni sull’invio di una consegna, consulta [Invio di messaggi](../../delivery/using/sending-messages.md).
 
 ## Accesso ai report {#accessing-reports}
 
-Per visualizzare i rapporti sul servizio LINE, fare clic su **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** nell&#39;elenco di esplorazione. Fare clic sull&#39;icona **[!UICONTROL Reports]** nel servizio LINE.
+Per visualizzare i rapporti sul servizio LINE, fai clic su **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** nell’elenco delle cartelle. Quindi fai clic sull&#39;icona **[!UICONTROL Reports]** nel servizio LINE.
 
 ![](assets/line_reports.png)
 
-Per visualizzare i rapporti sulle consegne LINE, fare clic su **[!UICONTROL Campaign Management > Deliveries]**, quindi selezionare la consegna desiderata. I rapporti di tracciamento indicano la frequenza di click-through. LINE non tiene conto della tariffa aperta.
+Per visualizzare i rapporti sulle consegne LINE, fai clic su **[!UICONTROL Campaign Management > Deliveries]**, quindi seleziona la consegna desiderata. I rapporti di tracciamento indicano il tasso di click-through. LINE non tiene conto del tasso aperto.
 
 ![](assets/line_reports_01.png)
 
 ## Esempio: creare e inviare un messaggio LINE personalizzato {#example--create-and-send-a-personalized-line-message}
 
-In questo esempio, creeremo e configureremo un messaggio di testo e un&#39;immagine contenente dati che verranno personalizzati in base al destinatario.
+In questo esempio, creeremo e configureremo un messaggio di testo e un’immagine contenente dati che verranno personalizzati in base al destinatario.
 
-1. Crea la consegna LINE facendo clic sul pulsante **[!UICONTROL Create]** dalla scheda **[!UICONTROL Campaign]**.
+1. Crea la consegna LINE facendo clic sul pulsante **[!UICONTROL Create]** nella scheda **[!UICONTROL Campaign]** .
 
    ![](assets/line_usecase.png)
 
@@ -191,33 +191,33 @@ In questo esempio, creeremo e configureremo un messaggio di testo e un&#39;immag
 
    ![](assets/line_usecase_01.png)
 
-1. Nella finestra di configurazione della consegna, selezionate la popolazione di destinazione.
+1. Nella finestra di configurazione della consegna, seleziona il gruppo di destinazione.
 
    ![](assets/line_usecase_02.png)
 
-1. Fare clic su **[!UICONTROL Add]** per creare il messaggio e selezionare **[!UICONTROL Message type]**.
+1. Fai clic su **[!UICONTROL Add]** per creare il messaggio e seleziona il **[!UICONTROL Message type]**.
 
-   In questo caso, prima di tutto desideriamo creare un messaggio di testo.
+   In questo caso, desideriamo innanzitutto creare un messaggio di testo.
 
    ![](assets/line_usecase_03.png)
 
-1. Posizionare il cursore nel punto in cui si desidera inserire il testo personalizzato e fare clic sull&#39;icona a discesa, quindi selezionare **[!UICONTROL Visitor > First name]**.
+1. Posiziona il cursore nel punto in cui desideri inserire il testo personalizzato e fai clic sull’icona a discesa, quindi seleziona **[!UICONTROL Visitor > First name]**.
 
    ![](assets/line_usecase_05.png)
 
-1. Seguite la stessa procedura per aggiungere un&#39;immagine, selezionando **[!UICONTROL Image and links]** nel menu a discesa **[!UICONTROL Message type]**.
+1. Segui la stessa procedura per aggiungere un’immagine, selezionando **[!UICONTROL Image and links]** nel menu a discesa **[!UICONTROL Message type]** .
 
-   Aggiungete l’URL dell’immagine.
+   Aggiungi l&#39;URL dell&#39;immagine.
 
    ![](assets/line_usecase_07.png)
 
-1. Nella sezione **[!UICONTROL Links]**, selezionate il layout che consente di dividere l&#39;immagine in più aree selezionabili.
-1. Assegnate un URL a ciascuna area dell’immagine.
+1. Nella sezione **[!UICONTROL Links]** , seleziona il layout che consente di dividere l’immagine in più aree selezionabili.
+1. Assegna un URL a ogni area dell’immagine.
 
    ![](assets/line_usecase_08.png)
 
-1. Salva la consegna, quindi fai clic su **[!UICONTROL Send]** per analizzarla e inviarla alla destinazione.
+1. Salva la consegna, quindi fai clic su **[!UICONTROL Send]** per analizzarla e inviarla al target.
 
-   La consegna viene inviata alla destinazione.
+   La consegna viene inviata al target.
 
    ![](assets/line_usecase_06.png)
