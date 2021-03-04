@@ -7,81 +7,81 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 7%
+source-wordcount: '475'
+ht-degree: 5%
 
 ---
 
 
-# Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Caso di utilizzo: visualizzare un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-Le risposte  sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
+Le risposte ai sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
 
-Nell&#39;esempio seguente, vogliamo raccogliere le risposte a un sondaggio online e visualizzarle in una tabella pivot
+Nell’esempio seguente, vogliamo raccogliere le risposte a un sondaggio online e visualizzarle in una tabella pivot
 
-Effettuate le seguenti operazioni:
+Applica i seguenti passaggi:
 
-1. Creazione di un flusso di lavoro per recuperare le risposte al sondaggio e memorizzarle in un elenco.
+1. Creazione di un flusso di lavoro per recuperare le risposte al sondaggio e archiviarle in un elenco.
 1. Creazione di un cubo utilizzando i dati presenti nell&#39;elenco.
 1. Creazione di un rapporto con la tabella pivot e visualizzazione della suddivisione delle risposte.
 
-Prima di iniziare questo caso di utilizzo, è necessario avere accesso a un sondaggio e a una serie di risposte che è possibile analizzare.
+Prima di iniziare questo caso d’uso, è necessario avere accesso a un sondaggio e a una serie di risposte da analizzare.
 
 >[!NOTE]
 >
->Questo caso di utilizzo può essere implementato solo se avete acquisito l&#39;opzione **Survey Manager**. Controlla il contratto di licenza.
+>Questo caso d’uso può essere implementato solo se hai acquisito l’opzione **Survey Manager** . Controlla il contratto di licenza.
 
-## Passaggio 1 - Creazione del flusso di lavoro di raccolta dati e archiviazione {#step-1---creating-the-data-collection-and-storage-workflow}
+## Passaggio 1 - Creazione del flusso di lavoro di raccolta e archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
 
-Per raccogliere le risposte al sondaggio, effettuate le seguenti operazioni:
+Per raccogliere le risposte al sondaggio, effettua le seguenti operazioni:
 
-1. Create un flusso di lavoro e inserite un&#39;attività **[!UICONTROL Answers to a survey]**. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consultare [questa sezione](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
-1. Modificate l&#39;attività e selezionate il sondaggio di cui desiderate analizzare le risposte.
-1. Abilitare l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
+1. Crea un flusso di lavoro e inserisci un’attività **[!UICONTROL Answers to a survey]** . Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Modifica l’attività e seleziona il sondaggio di cui desideri analizzare le risposte.
+1. Attiva l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. Selezionare le colonne da estrarre (in questo caso: select: tutti i campi archiviati. Questi sono i campi che contengono le risposte.
+1. Seleziona le colonne da estrarre (in questo caso: seleziona: tutti i campi archiviati. Questi sono i campi che contengono le risposte.
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. Una volta configurata la casella di raccolta delle risposte, posizionare un&#39;attività di tipo **[!UICONTROL List update]** per salvare i dati.
+1. Una volta configurata la casella di raccolta delle risposte, posiziona un’attività di tipo **[!UICONTROL List update]** per salvare i dati.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   In questa attività, specificate l&#39;elenco da aggiornare e deselezionate l&#39;opzione **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all&#39;elenco non verrà generato di nuovo per ogni aggiornamento, che garantisce l&#39;integrità del cubo che utilizza questo elenco.
+   In questa attività, specifica l’elenco da aggiornare e deseleziona l’opzione **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** : le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all&#39;elenco non verrà rigenerato per ogni aggiornamento, il che garantisce l&#39;integrità del cubo che utilizza questo elenco.
 
    ![](assets/reporting_usecase_1_03.png)
 
-1. Avviate il flusso di lavoro per confermare la configurazione.
+1. Avvia il flusso di lavoro per confermare la configurazione.
 
    ![](assets/reporting_usecase_1_05.png)
 
    L’elenco specificato viene creato e include lo schema delle risposte al sondaggio.
 
-1. Aggiungete un pianificatore per automatizzare la raccolta giornaliera di risposte e l&#39;aggiornamento dell&#39;elenco.
+1. Aggiungi un programmatore per automatizzare la raccolta giornaliera di risposte e l’aggiornamento dell’elenco.
 
-   Le attività **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** sono descritte in dettaglio in .
+   Le attività **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** sono descritte in .
 
 ## Passaggio 2 - Creazione del cubo, delle sue misure e dei suoi indicatori {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-È quindi possibile creare il cubo e configurarne le misure: verranno utilizzati per creare gli indicatori che saranno mostrati nel rapporto. Per ulteriori informazioni sulla creazione e la configurazione dei cubi, vedere [Informazioni sui cubi](../../reporting/using/about-cubes.md).
+È quindi possibile creare il cubo e configurarne le misure: verranno utilizzati per creare gli indicatori che saranno visualizzati nel rapporto. Per ulteriori informazioni sulla creazione e la configurazione dei cubi, consulta [Informazioni sui cubi](../../reporting/using/about-cubes.md).
 
-In questo esempio, il cubo è basato sui dati presenti nell&#39;elenco, inviati dal flusso di lavoro creato in precedenza.
+In questo esempio, il cubo è basato sui dati presenti nell’elenco inviato dal flusso di lavoro creato in precedenza.
 
 ![](assets/reporting_usecase_2_01.png)
 
-Definite le dimensioni e le misure da visualizzare nel rapporto. Qui, vogliamo visualizzare la data del contratto e il paese del convenuto.
+Definisci le dimensioni e le misure da visualizzare nel rapporto. In questo caso, vogliamo visualizzare la data del contratto e il paese del convenuto.
 
 ![](assets/reporting_usecase_2_02.png)
 
-La scheda **[!UICONTROL Preview]** consente di controllare il rendering del rapporto.
+La scheda **[!UICONTROL Preview]** ti consente di controllare il rendering del rapporto.
 
-## Passaggio 3 - Creazione del rapporto e configurazione del layout dei dati all&#39;interno della tabella {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
+## Passaggio 3: creazione del rapporto e configurazione del layout dei dati all’interno della tabella {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
-È quindi possibile creare un rapporto basato su questo cubo ed elaborare i dati e le informazioni.
+È quindi possibile creare un report basato su questo cubo ed elaborare i dati e le informazioni.
 
 ![](assets/reporting_usecase_3_01.png)
 
