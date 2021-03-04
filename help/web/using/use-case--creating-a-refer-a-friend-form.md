@@ -7,43 +7,43 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
 
 
-# Caso di utilizzo: creazione di un modulo per invitare un amico{#use-case-creating-a-refer-a-friend-form}
+# Caso di utilizzo: crea un modulo di riferimento{#use-case-creating-a-refer-a-friend-form}
 
-In questo esempio, vogliamo offrire un concorso ai destinatari del database. Il modulo Web avrà una sezione per l&#39;immissione delle risposte e un&#39;altra per il riferimento a un amico immettendo il proprio indirizzo e-mail.
+In questo esempio, vogliamo offrire un concorso ai destinatari del database. Il modulo Web avrà una sezione per inserire le risposte e un&#39;altra per fare riferimento a un amico inserendo il suo indirizzo e-mail.
 
 ![](assets/s_ncs_admin_survey_viral_sample_0.png)
 
 I blocchi di identificazione e concorrenza vengono creati utilizzando i processi descritti in precedenza.
 
-Per configurare e creare il blocco di riferimento, procedere come segue:
+Per configurare e creare il blocco di riferimento, procedi come segue:
 
-1. Crea un modulo Web per la concorrenza con domande e un campo per l&#39;immissione delle informazioni di contatto di un amico, come mostrato di seguito:
+1. Crea un modulo web per la concorrenza con domande e un campo per inserire le informazioni di contatto di un amico come mostrato di seguito:
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Il campo **Messaggio** consente di inserire un messaggio per l&#39;oggetto referee. Il referente deve inoltre inserire il proprio **Cognome**, **Nome** e **E-mail**.
+   Il campo **Messaggio** ti consente di inserire un messaggio per il riferimento. Il referente deve inoltre inserire i propri **Cognome**, **Nome** e **E-mail**.
 
-   Le informazioni inserite nei campi sono memorizzate in una tabella specifica nota come tabella visitatore.
+   Le informazioni inserite nei campi vengono memorizzate in una tabella specifica nota come tabella dei visitatori.
 
    >[!NOTE]
    >
-   >Fintanto che il destinatario non ha dato il proprio consenso, non è possibile archiviarli con i destinatari nel database. Saranno memorizzati temporaneamente nella tabella **visitor** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene eliminata regolarmente grazie alle operazioni di **pulizia**.
+   >Se il destinatario non ha dato il proprio consenso, non puoi memorizzarli con i destinatari nel database. Saranno temporaneamente memorizzati nella tabella **visitor** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene eliminata regolarmente grazie alle operazioni di **pulizia**.
    >
-   >In questo esempio, desideriamo indirizzare i destinatari affinché suggeriscano loro di partecipare al concorso raccomandato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se dispongono di un’iscrizione, possono essere memorizzati nel database.
+   >In questo esempio, vogliamo indirizzare i destinatari affinché ti suggeriscano di partecipare al concorso consigliato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se si abbonano, possono essere memorizzati nel database.
 
    ![](assets/s_ncs_admin_survey_viral_sample_5.png)
 
-   Il contenuto dei campi che riguardano l&#39;arbitro verrà utilizzato nello script di creazione del profilo e nel messaggio a esso inviato.
+   Il contenuto dei campi che riguardano l’arbitro verrà utilizzato nello script di creazione del profilo e nel messaggio inviato loro.
 
-1. Iniziate creando uno script per collegare il referente all&#39;oggetto.
+1. Inizia creando uno script per collegare il referente all&#39;arbitro.
 
    Contiene le seguenti istruzioni:
 
@@ -57,40 +57,40 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
    ctx.recipient.visitor.@referrerLastName = ctx.recipient.@lastName
    ```
 
-   Il cognome, il nome e l’indirizzo e-mail immessi nel blocco di identificazione della pagina sono identificati come cognome, nome e indirizzo e-mail del referente. Questi campi verranno reinseriti nel corpo del messaggio inviato all&#39;arbitro.
+   Il cognome, il nome e l’indirizzo e-mail inseriti nel blocco di identificazione della pagina sono identificati come cognome, nome e indirizzo e-mail del referente. Questi campi verranno reinseriti nel corpo del messaggio inviato al referee.
 
-   Il valore APP5 corrisponde al nome interno del modulo Web: queste informazioni consentono di individuare l&#39;origine dell&#39;arbitro, ovvero collegare il visitatore al modulo Web in base al quale è stato creato.
+   Il valore APP5 corrisponde al nome interno del modulo Web: queste informazioni ti consentono di conoscere l’origine del referente, ovvero di collegare il visitatore al modulo web in base al quale è stato creato.
 
 1. La casella di archiviazione consente di raccogliere informazioni e archiviarle nel database.
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Quindi create il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel campo **[!UICONTROL Choose scenario]** del servizio informazioni.
+1. Quindi crea il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel campo **[!UICONTROL Choose scenario]** del servizio informazioni.
 
-   Il modello di consegna utilizzato per creare il messaggio di offerta di riferimento contiene le informazioni seguenti:
+   Il modello di consegna utilizzato per creare il messaggio di offerta di riferimento contiene le seguenti informazioni:
 
    ![](assets/s_ncs_admin_survey_viral_sample_7.png)
 
    Questo modello presenta le seguenti caratteristiche:
 
-   * Selezionate la tabella visitatore come mappatura di destinazione.
+   * Seleziona la tabella dei visitatori come mappatura di destinazione.
 
       ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
-   * Le informazioni di contatto dell&#39;arbitro e quelle relative al referente vengono ricavate dalla tabella del visitatore. Viene inserito utilizzando il pulsante di personalizzazione.
+   * Le informazioni di contatto dell’arbitro e quelle sul referente vengono ricavate dalla tabella dei visitatori. Viene inserito utilizzando il pulsante di personalizzazione .
 
       ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
-   * Questo modello contiene un collegamento al modulo per il concorso e il collegamento per l’iscrizione dell’utente a una newsletter.
+   * Questo modello contiene un collegamento al modulo di concorso e il collegamento di abbonamento per l’utente a cui effettuare l’abbonamento alla newsletter.
 
-      Il collegamento di iscrizione viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, consente di iscriversi al servizio **newsletter**. Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un altro servizio.
+      Il collegamento di abbonamento viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, ti consente di abbonarti al servizio **newsletter** . Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un servizio diverso.
 
-   * Il nome interno (&#39;referrer&#39; qui) verrà utilizzato nello script di distribuzione dei messaggi come mostrato di seguito.
+   * Il nome interno (&quot;referrer&quot; qui) verrà utilizzato nello script di consegna del messaggio come mostrato di seguito.
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui modelli di consegna, fare riferimento a [questa pagina](../../delivery/using/about-templates.md).
+   >Per ulteriori informazioni sui modelli di consegna, consulta [questa pagina](../../delivery/using/about-templates.md) .
 
-1. Create il secondo script per la distribuzione dei messaggi di iscrizione.
+1. Crea il secondo script per la consegna dei messaggi di abbonamento.
 
    ![](assets/s_ncs_admin_survey_viral_sample_7c.png)
 
@@ -117,13 +117,13 @@ Per configurare e creare il blocco di riferimento, procedere come segue:
     </delivery>)
    ```
 
-1. Pubblicate il modulo del concorso e inviate un invito ai destinatari della destinazione iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento**.
+1. Pubblica il modulo del concorso e invia un invito ai destinatari del target iniziale. Quando uno di essi invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento** .
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   Il referee viene aggiunto alla cartella del visitatore in **[!UICONTROL Administration > Visitors node]**:
+   L’arbitro viene aggiunto alla cartella del visitatore in **[!UICONTROL Administration > Visitors node]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
-   Il profilo contiene le informazioni inserite dal relativo referente. È memorizzato in base alle configurazioni immesse nello script del modulo. Se decidono di iscriversi alla newsletter, verranno salvati nella tabella dei destinatari.
+   Il profilo contiene le informazioni inserite dal relativo referente. Viene memorizzato in base alle configurazioni immesse nello script del modulo. Se decidono di iscriversi alla newsletter, vengono salvati nella tabella dei destinatari.
 
