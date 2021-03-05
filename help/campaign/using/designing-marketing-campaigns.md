@@ -1,73 +1,73 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Progettazione di campagne di marketing
+title: Progettazione ed esecuzione di campagne di marketing
 description: Definisci, ottimizza, esegui e analizza campagne di marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '443'
+ht-degree: 9%
 
 ---
 
 
-# Progettazione di campagne di marketing{#designing-marketing-campaigns}
+# Progettazione ed esecuzione di campagne di marketing{#designing-marketing-campaigns}
 
- Adobe Campaign consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing.  Adobe Campaign si comporta come un centro unificato di ordine ed esecuzione per le strategie di marketing. Per ulteriori informazioni, vedere [Accesso alle campagne](../../campaign/using/accessing-campaigns.md) e [Impostazione delle campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign agisce come un centro unificato per l’ordine e l’esecuzione delle strategie di marketing. Per ulteriori informazioni, consulta [Accedere a campagne](../../campaign/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Inoltre, il modulo **Marketing Resource Management (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e un monitoraggio in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
+Inoltre, il modulo **Gestione delle risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa, fornendo la gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Gestione delle risorse di marketing consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle funzionalità di base  Adobe Campaign, consultare la sezione [Guida introduttiva](../../platform/using/about-adobe-campaign-classic.md).\
->Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla distribuzione dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md) .\
+>Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
+![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing in un video](#video)
 
 ## Concetti di base {#core-concepts}
 
-Nel contesto di Campaign, è necessario conoscere i seguenti concetti:
+Nel contesto di Campaign è necessario conoscere i seguenti concetti:
 
 * **Campagna**
 
-   Una campagna centralizza tutti gli elementi relativi a una campagna di marketing: consegne, regole di targeting, costi, file di esportazione, documenti correlati, ecc. Ogni campagna è allegata a un programma.
+   Una campagna centralizza tutti gli elementi relativi a una campagna di marketing: consegne, regole di targeting, costi, file di esportazione, documenti correlati, ecc. Ogni campagna è associata a un programma.
 
-   Per ulteriori informazioni, vedere [Aggiunta di una campagna](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+   Per ulteriori informazioni, consulta [Aggiunta di una campagna](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programma**
 
-   Un programma consente di definire azioni di marketing per un periodo di calendario: lancio, tela, lealtà, ecc. Ogni programma contiene campagne collegate a un calendario, che fornisce una visualizzazione globale.
+   Un programma consente di definire azioni di marketing per un periodo di calendario: lancio, tela cerata, lealtà, ecc. Ogni programma contiene campagne collegate a un calendario, che fornisce una visualizzazione complessiva.
 
 * **Pianificare**
 
    Il piano di marketing può contenere più programmi. È collegato a un periodo di calendario, ha un bilancio assegnato e può anche essere collegato a documenti e obiettivi.
 
-   Per ulteriori informazioni, consultare [Calendario delle campagne](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   Per ulteriori informazioni, consulta [Calendario delle campagne](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Flusso di lavoro**
 
-   Un flusso di lavoro della campagna contiene le stesse attività di tutti i flussi di lavoro, ma è specifico per la campagna. Consente di creare e configurare le consegne per tutti i canali disponibili.
+   Un flusso di lavoro della campagna contiene le stesse attività di tutti i flussi di lavoro, ma è specifico per la campagna. Ti consente di creare e configurare consegne per tutti i canali disponibili.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Obiettivi**
 
-   All&#39;interno della campagna, del programma o del piano, potete specificare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente di confrontare gli obiettivi e i risultati in report dedicati.
+   All’interno della campagna, del programma o del piano, puoi specificare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente di confrontare gli obiettivi e i risultati in report dedicati.
 
 * **Profilo di consegna**
 
-   Un profilo di consegna è una descrizione strutturata di una consegna. Ogni consegna può fare riferimento a un profilo di consegna che contiene, ad esempio, le relative offerte, i documenti da allegare o un collegamento agli store. È possibile fare riferimento a un&#39;offerta nella consegna in base al profilo di consegna selezionato.
+   Un profilo di consegna è una descrizione strutturata di una consegna. Ogni consegna può fare riferimento a un profilo di consegna che contiene, ad esempio, le offerte correlate, i documenti da allegare o un collegamento ai negozi. È possibile fare riferimento a un’offerta nella consegna in base al profilo di consegna selezionato.
 
-   Per ulteriori informazioni, vedere [Associazione e strutturazione delle risorse collegate tramite un profilo di consegna](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-## Esercitazione {#video}
+## Tutorial {#video}
 
 Questo video presenta i concetti chiave delle campagne di marketing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili ulteriori video dimostrativi su Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
