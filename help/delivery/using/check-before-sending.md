@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
@@ -14,87 +14,87 @@ ht-degree: 4%
 ---
 
 
-# Eseguire tutti i controlli prima dell&#39;invio di {#perform-all-checks}
+# Esegui tutti i controlli prima di inviare {#perform-all-checks}
 
-Una volta che il messaggio è pronto, accertati che il contenuto sia visualizzato correttamente, su tutti i dispositivi, e non contenga errori quali personalizzazione errata o collegamenti interrotti.
+Quando il messaggio è pronto, accertati che il relativo contenuto sia visualizzato correttamente, su tutti i dispositivi, e non contenga errori quali personalizzazione errata o collegamenti interrotti.
 
 Prima di inviare il messaggio, assicurati anche che i parametri e la configurazione siano coerenti con la consegna.
 
-## Perché la convalida è la chiave {#validation-is-key}
+## Perché la convalida è una chiave {#validation-is-key}
 
-Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare. A tal fine, devi convalidare il contenuto del messaggio e i parametri di consegna.
+Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare loro. A questo scopo, devi convalidare il contenuto del messaggio e i parametri di consegna.
 
-Questo passaggio consente di rilevare eventuali errori e correggerli prima di inviarli alla destinazione principale.
+Questo passaggio ti consente di rilevare eventuali errori e correggerli prima di consegnarli al target principale.
 
-I passaggi per la convalida di una consegna sono presentati [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
+I passaggi per la convalida di una consegna sono descritti [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
 
 ## Rendering della casella in entrata {#inbox-and-email-rendering}
 
-Il rendering della casella in entrata consente di visualizzare l&#39;anteprima dei messaggi sui principali client e-mail, acquisire il contenuto e la reputazione, scoprire in che modo i destinatari leggono i messaggi.
+Il rendering della casella in entrata consente di visualizzare in anteprima i messaggi sui principali client e-mail, di eseguire la scansione del contenuto e della reputazione, di scoprire come i destinatari leggono i messaggi.
 
 **Suggerimenti**:
 
-* Puoi visualizzare il messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto: webmail, servizio messaggi, mobile, ecc.
+* Puoi visualizzare il messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto: webmail, servizio messaggi, dispositivi mobili, ecc.
 
-* Le funzionalità di rendering della inbox sono fondamentali per identificare se le campagne e-mail riescono a superare i filtri dei principali provider di servizi Internet (provider di servizi Internet) e dei servizi di posta elettronica. Tali strumenti inviano una copia pre-verifica di un messaggio e-mail a una rete di caselle in entrata di prova, in modo da visualizzare il modo in cui il messaggio verrà visualizzato, o renderizzato, tra questi servizi. Possono inoltre includere rapporti e opzioni di correzione del codice che consentono di identificare e correggere rapidamente i problemi di recapito.
+* Le funzionalità di rendering della casella in entrata sono fondamentali per identificare se le campagne e-mail sono riuscite a superare i filtri dei principali ISP (Internet Service Providers) e dei servizi di posta web. Tali strumenti inviano una copia pre-volo di un’e-mail a una rete di caselle in entrata di prova, in modo da visualizzare il messaggio o eseguirne il rendering in questi servizi. Possono anche includere rapporti e opzioni di correzione del codice che ti aiutano a identificare rapidamente e a risolvere i problemi che migliorano il recapito messaggi.
 
 Ulteriori informazioni [in questa sezione](../../delivery/using/inbox-rendering.md).
 
 ## Messaggi di prova {#proof-messages}
 
-L&#39;invio di prove consente di controllare il collegamento di rinuncia, la pagina mirror e qualsiasi altro collegamento, convalidare il messaggio, verificare che le immagini siano visualizzate, rilevare eventuali errori, ecc. È inoltre possibile controllare la progettazione e il rendering su diversi dispositivi.
+L’invio di bozze consente di controllare il collegamento di rinuncia, la pagina speculare e qualsiasi altro collegamento, convalidare il messaggio, verificare che le immagini siano visualizzate, rilevare eventuali errori e così via. Puoi anche controllare la progettazione e il rendering su diversi dispositivi.
 
 Ulteriori informazioni [in questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Configurare le consegne di test A/B {#a-b-testing-deliveries}
+## Impostare consegne di test A/B {#a-b-testing-deliveries}
 
-Se disponete di diversi contenuti per la consegna delle e-mail, potete utilizzare il test A/B per scoprire quale versione avrà il maggiore impatto sulla popolazione interessata.
+Se disponi di più contenuti per una consegna e-mail, puoi utilizzare il test A/B per scoprire quale versione avrà il maggiore impatto sulla popolazione target.
 
 **Suggerimenti**:
 
-* Inviare le diverse versioni ad alcuni dei destinatari
+* Inviare versioni diverse ad alcuni dei tuoi destinatari
 
-* Seleziona quella con il tasso di successo più elevato e inviala al resto della destinazione
+* Seleziona quella con il tasso di successo più alto e inviala al resto del target
 
 Ulteriori informazioni [in questa sezione](../../delivery/using/get-started-a-b-testing.md).
 
-## Assicurati che il messaggio sia stato inviato {#make-sure-your-message-is-delivered}
+## Assicurati che il messaggio sia consegnato {#make-sure-your-message-is-delivered}
 
-Come ultimo passo, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente recapitato ai destinatari interessati.
+Come passaggio finale, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente consegnato ai destinatari pertinenti.
 
-### Procedura di convalida
+### Eseguire un processo di convalida
 
-È possibile definire un processo di convalida completo, che coinvolga  operatori e gruppi Adobe Campaign, per convalidare sia la destinazione che il contenuto del messaggio. Ciò garantirà il pieno monitoraggio e controllo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una prova. A seconda delle autorizzazioni assegnate, gli utenti riceveranno una notifica, riceveranno prove di validità e potranno convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](../../campaign/using/marketing-campaign-approval.md#approval-process).
+Puoi definire un processo di convalida completo, che coinvolga gli operatori e i gruppi di Adobe Campaign, per convalidare sia il target che il contenuto del messaggio. In questo modo si garantirà il pieno controllo e controllo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle loro autorizzazioni, gli utenti riceveranno notifiche e bozze per convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](../../campaign/using/marketing-campaign-approval.md).
 
 ### Usa onde
 
-Potete aumentare progressivamente il volume inviato utilizzando le onde. In questo modo i messaggi non verranno contrassegnati come spam o se si desidera limitare il numero di messaggi al giorno. Utilizzando le onde è possibile dividere le consegne in più batch anziché inviare contemporaneamente volumi elevati di messaggi. Ulteriori informazioni [in questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+Puoi aumentare progressivamente il volume inviato utilizzando le onde. In questo modo si evita di contrassegnare i messaggi come spam o quando si desidera limitare il numero di messaggi al giorno. Utilizzando le ondate è possibile dividere le consegne in più batch invece di inviare volumi elevati di messaggi contemporaneamente. Ulteriori informazioni [in questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
-### Priorità dei messaggi
+### Assegnare priorità ai messaggi
 
-È possibile impostare l&#39;ordine di invio per le consegne specificando il livello di priorità. Per eseguire questa operazione:
+Puoi impostare l’ordine di invio per le consegne specificando il livello di priorità. Per eseguire questa operazione:
 
-1. Modificate le proprietà di consegna e selezionate la scheda **[!UICONTROL Delivery]**.
+1. Modifica le proprietà di consegna e seleziona la scheda **[!UICONTROL Delivery]** .
 
-1. Definire il livello di priorità per la consegna su una scala da **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
+1. Definisci il livello di priorità per la consegna su una scala da **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
 
 >[!NOTE]
 >
->Non è possibile definire l&#39;ordine di invio dei messaggi dall&#39;interno di una consegna.
+>Non è possibile definire l’ordine di invio dei messaggi dall’interno di una consegna.
 
 ### Impostazione delle affinità IP
 
-Per controllare meglio il traffico SMTP in uscita, puoi gestire le affinità definendo quali indirizzi IP specifici possono essere utilizzati per ogni affinità. Questo consente di limitare il numero di e-mail per consegne specifiche verso computer o indirizzi di output. Ad esempio, è possibile utilizzare un&#39;affinità per paese o sottodominio. Potete quindi creare una tipologia per paese e collegare ciascuna affinità alla tipologia corrispondente.
+Per controllare meglio il traffico SMTP in uscita, puoi gestire le affinità definendo quali indirizzi IP specifici possono essere utilizzati per ogni affinità. Ciò ti consente di limitare il numero di e-mail per consegne specifiche a computer o indirizzi di output. Ad esempio, puoi utilizzare un’affinità per paese o sottodominio. Puoi quindi creare una tipologia per paese e collegare ogni affinità alla tipologia corrispondente.
 
 Puoi:
 
-* Definite le affinità IP nel file di configurazione serverConf.xml. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* Definisci le affinità IP nel file di configurazione serverConf.xml. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* Per ciascun elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* Per ogni elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Nella [tipologia](../../campaign/using/about-campaign-typologies.md) di tua scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Nella [tipologia](../../campaign/using/about-campaign-typologies.md) scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
-* Una volta inviato il messaggio e-mail, controllate l&#39;intestazione per verificare da quale indirizzo IP è stato inviato il messaggio. L’amministratore dell’e-mail deve essere in grado di ottenere le informazioni di intestazione.
+* Una volta inviata l’e-mail, controlla l’intestazione per verificare da quale indirizzo IP è stata inviata la consegna. L’amministratore di e-mail deve essere in grado di ottenere le informazioni relative all’intestazione.
 
 >[!NOTE]
 >
@@ -102,8 +102,8 @@ Puoi:
 
 ### Utilizzare le tipologie
 
-Potete utilizzare le regole di tipologia per escludere parte della destinazione in base a criteri specifici. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, potete filtrare i destinatari meno recenti dalla destinazione della newsletter. Ulteriori informazioni [in questo esempio](../../campaign/using/filtering-rules.md).
+Puoi utilizzare le regole di tipologia per escludere parte del target in base a criteri specifici. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, puoi filtrare i destinatari meno recenti dal target della newsletter. Ulteriori informazioni [in questo esempio](../../campaign/using/filtering-rules.md).
 
-### Evitare gli allegati
+### Evitare allegati
 
-Gli allegati rimangono uno dei vettori più comuni per la proliferazione di malware, soprattutto quando sono inviati in massa. Includete un collegamento protetto al documento invece di allegarlo. Questo garantisce un ulteriore livello di sicurezza per impedire la ridistribuzione indesiderata e riduce notevolmente le possibilità che il messaggio venga rifiutato nei gateway e-mail in ingresso per motivi di dimensione o sicurezza del messaggio.
+Gli allegati rimangono uno dei vettori più comuni per la proliferazione del malware, soprattutto quando sono inviati alla rinfusa. Includi un collegamento sicuro al documento invece di allegarlo. Questo garantisce un ulteriore livello di sicurezza per evitare una ridistribuzione non intenzionale e riduce notevolmente le possibilità che il messaggio venga rifiutato nei gateway e-mail in entrata per motivi di dimensione o sicurezza dei messaggi.
