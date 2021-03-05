@@ -1,15 +1,15 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Informazioni sulla recapito in Campaign
-description: Best practice per la distribuzione
+title: Informazioni sul recapito messaggi in Campaign
+description: Scopri le best practice per il recapito messaggi
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -17,33 +17,33 @@ ht-degree: 0%
 
 # Informazioni sul recapito messaggi{#about-deliverability}
 
-**L&#39;** implementazione consiste nel misurare il successo delle campagne che raggiungono la inbox dei destinatari senza rimbalzare, o essere contrassegnate come spam.
+**** Il recapito messaggi consiste nel misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza rimbalzare o contrassegnare come spam.
 
- Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito della piattaforma. In questa sezione vengono inoltre evidenziati i principi principali da tenere a mente per la gestione e l&#39;ottimizzazione della recapito.
+Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito messaggi della piattaforma. Questa sezione evidenzia anche i principi principali da tenere a mente durante la gestione e l’ottimizzazione del recapito messaggi.
 
 ## Configurazione {#configuration}
 
-Questa funzione è disponibile tramite un pacchetto dedicato in  Adobe Campaign. Per utilizzarlo, il pacchetto deve essere installato. Al termine, riavviate il server per prendere in considerazione il pacchetto.
-* Per i client ospitati e ibridi, **Il monitoraggio della recapito** è configurato nell&#39;istanza dall&#39;assistenza tecnica e dai consulenti  Adobe. Per ulteriori informazioni, contattate l&#39;amministratore  account di Adobe.
+Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, è necessario installare questo pacchetto. Al termine, riavvia il server per tenere conto del pacchetto.
+* Per i client in hosting e ibridi, il **monitoraggio del recapito** è configurato nella tua istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
 
-* Per le installazioni in sede, è necessario installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, vedere [Installazione di pacchetti Campaign Classic standard](../../installation/using/installing-campaign-standard-packages.md).
+* Per le installazioni on-premise, devi installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Per ulteriori informazioni, consulta [Installazione dei pacchetti incorporati di Campaign](../../installation/using/installing-campaign-standard-packages.md).
 
-In Adobe Campaign Classic, il **monitoraggio della recapito** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita in tutte le istanze e consente di inizializzare l&#39;elenco delle regole di qualificazione della posta indesiderata, l&#39;elenco dei domini e l&#39;elenco di MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consente di gestire attivamente la distribuibilità della piattaforma.
+In Adobe Campaign, il **monitoraggio del recapito** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita su tutte le istanze e ti consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco delle MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.
 
 ## Sfondo {#background}
 
-La possibilità di distribuire e-mail rappresenta una grande sfida per gli addetti al marketing, che inviino migliaia di messaggi o diversi miliardi. Un messaggio su cinque non arriva mai alla inbox né al destinatario previsto.
+La consegna delle e-mail rappresenta una sfida importante per gli addetti al marketing, che inviino poche migliaia di messaggi o diversi miliardi. Un messaggio su cinque non raggiunge mai la casella in entrata o il destinatario desiderato.
 
-Una volta relegata come &quot;questione tecnica&quot; per il reparto IT, la possibilità di inviare e-mail continua a crescere nell&#39;agenda di marketing. Questo perché gli esperti di marketing esperti riconoscono che, sebbene molti dei suoi elementi siano di natura tecnica, la recapito è in definitiva un problema aziendale con importanti implicazioni di fatturato.
+Una volta relegata come &quot;problema tecnico&quot; per il reparto IT, il recapito messaggi e-mail continua a crescere nell’agenda di marketing. Questo perché gli esperti di marketing esperti riconoscono che, sebbene molti dei suoi elementi siano di natura tecnica, il recapito messaggi è in definitiva un problema aziendale con implicazioni significative sul fatturato.
 
-Considerate l&#39;imbuto di marketing delle e-mail. La recapito determina il numero di messaggi ricevuti, che a sua volta influisce su ogni fase successiva dell&#39;imbuto. Meno e-mail ricevute determinano un numero inferiore di aperture, meno clic e meno conversioni. **Per le aziende con un grande database, la differenza tra la media e la grande consegnabilità potrebbe letteralmente significare tra centinaia di migliaia e milioni di dollari di ricavi.**
+Considera il funnel di e-mail marketing. Il recapito di messaggi determina il numero di messaggi ricevuti, che a sua volta influisce su ogni fase successiva del funnel. Il minor numero di e-mail ricevute si traduce in meno aperture, meno clic e meno conversioni. **Per le aziende con un grande database, la differenza tra la media e la grande consegna potrebbe letteralmente significare tra centinaia di migliaia e milioni di dollari di ricavi.**
 
 ![](assets/deliverability_overview_1.png)
 
-Impostando la possibilità di una consegna media (80%), gli esperti di marketing stanno lasciando sul tavolo conversioni significative - e dollari -.
+Impostando la consegna media (80%), gli addetti al marketing stanno lasciando sul tavolo conversioni significative - e dollari -.
 
-Cos&#39;è esattamente la recapito delle e-mail? E come possono i professionisti del marketing migliorare i tassi di recapito per ampliare la bocca del funnel e ottenere più risultati dalle campagne e-mail?
+Cos’è esattamente il recapito messaggi e-mail? E in che modo gli esperti di marketing possono migliorare i tassi di consegna per ampliare la bocca del funnel e ottenere più risultati dalle loro campagne e-mail?
 
-Per &quot;recapito e-mail&quot; si intende l&#39;insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, entro breve tempo e con la qualità prevista in termini di contenuto e formato. Queste caratteristiche sono suddivise in quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Insieme, costituiscono la base di un programma di recapito e-mail di successo. Questa panoramica illustra i quattro principi fondamentali del successo della distribuzione delle e-mail e offre le best practice per raggiungere la inbox e incrementare i ricavi derivanti dai programmi di e-mail marketing.
+Il recapito messaggi e-mail si riferisce al set di caratteristiche che determinano la capacità di un messaggio di raggiungere la destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato. Queste caratteristiche rientrano in quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Insieme, costituiscono la base di un programma di recapito messaggi e-mail di successo. Questa panoramica illustra i quattro principi fondamentali del successo della consegna delle e-mail e offre le best practice per raggiungere la casella in entrata e incrementare i ricavi derivanti dai programmi di marketing per e-mail.
 
 <!--![](assets/deliverability_overview_2.png)-->
