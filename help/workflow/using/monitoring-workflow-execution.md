@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Le tabelle di lavoro del flusso di lavoro vengono eliminate automaticamente quan
 
 ## Gestione degli errori {#managing-errors}
 
-Quando si verifica un errore, il flusso di lavoro viene messo in pausa e l’attività che viene eseguita quando si è verificato l’errore lampeggia in rosso. Nella panoramica del flusso di lavoro (**[!UICONTROL Monitoring]** universo > **[!UICONTROL Workflows]** link) puoi visualizzare solo i flussi di lavoro con errori, come mostrato di seguito.
+Quando si verifica un errore, il flusso di lavoro viene messo in pausa e l’attività che viene eseguita quando si è verificato l’errore lampeggia in rosso. Nella panoramica del flusso di lavoro, sotto il collegamento **[!UICONTROL Monitoring]** scheda **[!UICONTROL Workflows]** , puoi visualizzare solo i flussi di lavoro con errori, come illustrato di seguito.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ Se possibile, consigliamo di riavviare completamente il flusso di lavoro dopo av
 
 La pagina **[!UICONTROL Instance supervision]** ti consente di visualizzare l’attività del server Adobe Campaign e l’elenco dei flussi di lavoro e delle consegne con errori.
 
-Per accedere a questa pagina, vai all&#39; **[!UICONTROL Monitoring]** universo e fai clic sul collegamento **[!UICONTROL General view]** .
+Per accedere a questa pagina, vai alla scheda **[!UICONTROL Monitoring]** e fai clic sul collegamento **[!UICONTROL General view]** .
 
 ![](assets/wf-monitoring_from-homepage.png)
 
