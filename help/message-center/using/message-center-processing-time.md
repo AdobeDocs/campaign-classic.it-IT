@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -17,20 +17,20 @@ ht-degree: 5%
 
 # Tempo di elaborazione del Centro messaggi{#message-center-processing-time}
 
-Questo rapporto mostra gli indicatori principali relativi alla coda in tempo reale. Questo rapporto, rivolto agli amministratori tecnici, è accessibile anche attraverso l&#39;universo **[!UICONTROL Monitoring]** nell&#39;istanza di controllo.
+Questo rapporto visualizza gli indicatori principali relativi alla coda in tempo reale. Questo rapporto, destinato agli amministratori tecnici, è accessibile anche tramite la scheda **[!UICONTROL Monitoring]** nell’istanza di controllo .
 
 ![](assets/mc_reports_2.png)
 
-Come per il report **[!UICONTROL Message Center service level]**, puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. È inoltre possibile filtrare i dati per canale e per un periodo specifico. Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the period]** sono calcolati nel periodo selezionato:
+Come per il rapporto **[!UICONTROL Message Center service level]**, puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. Puoi anche filtrare i dati per canale e per un periodo di tempo specifico. Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the period]** vengono calcolati nel periodo selezionato:
 
-* **[!UICONTROL Average queuing time]** : il tempo medio durante il quale gli eventi sono stati elaborati correttamente in Centro messaggi. Viene preso in considerazione solo il tempo di elaborazione.
-* **[!UICONTROL Average message sending time (s)]** : il tempo medio durante il quale gli eventi sono stati elaborati correttamente in Centro messaggi. Si tiene conto solo dei tempi di consegna più lunghi.
-* **[!UICONTROL Average processing time (s)]** : il tempo medio durante il quale gli eventi sono stati elaborati correttamente in Centro messaggi. Il calcolo prende in considerazione il tempo di elaborazione e il tempo di invio dei dati.
+* **[!UICONTROL Average queuing time]** : il tempo medio trascorso dall&#39;elaborazione degli eventi in Centro messaggi. Viene preso in considerazione solo il tempo di elaborazione.
+* **[!UICONTROL Average message sending time (s)]** : il tempo medio trascorso dall&#39;elaborazione degli eventi in Centro messaggi. Viene preso in considerazione solo il tempo di consegna mta.
+* **[!UICONTROL Average processing time (s)]** : il tempo medio trascorso dall&#39;elaborazione degli eventi in Centro messaggi. Il calcolo tiene conto del tempo di elaborazione e del tempo di invio mta.
 * **[!UICONTROL Maximum number of queued events]** : numero massimo di eventi presenti nella coda del Centro messaggi in un dato momento.
-* **[!UICONTROL Minimum number of queued events]** : numero minimo di eventi presenti nella coda Centro messaggi in un dato momento.
-* **[!UICONTROL Average number of queued events]** : numero medio di eventi presenti nella coda Centro messaggi in un dato momento.
+* **[!UICONTROL Minimum number of queued events]** : numero minimo di eventi presenti nella coda del Centro messaggi in un dato momento.
+* **[!UICONTROL Average number of queued events]** : numero medio di eventi presenti nella coda del Centro messaggi in un dato momento.
 
 >[!NOTE]
 >
->Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate  distribuzione guidata Adobe Campaign. Fare riferimento a [Soglie di monitoraggio](../../message-center/using/monitoring-thresholds.md).
+>Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione di Adobe Campaign. Fare riferimento a [Soglie di monitoraggio](../../message-center/using/monitoring-thresholds.md).
 
