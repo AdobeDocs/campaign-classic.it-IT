@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -37,11 +37,11 @@ Una volta concesse tutte le approvazioni, la consegna è pronta per essere avvia
 
 ### Avvio di una consegna online {#starting-an-online-delivery}
 
-Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore. Se appropriato, all’operatore di Adobe Campaign (o al gruppo di operatori) designato come revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
+Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore. Se del caso, all’operatore Adobe Campaign (o al gruppo di operatori) designato come revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
 
 >[!NOTE]
 >
->Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, puoi anche consentire all’operatore responsabile della consegna di confermare l’invio. A questo scopo, attiva l&#39;opzione **NMS_ActivateOwnerConfirmation** immettendo **1** come valore. Le opzioni vengono gestite dal nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** nell’explorer di Adobe Campaign.
+>Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, puoi anche consentire all’operatore responsabile della consegna di confermare l’invio. A questo scopo, attiva l&#39;opzione **NMS_ActivateOwnerConfirmation** immettendo **1** come valore. Le opzioni vengono gestite dal nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in Adobe Campaign explorer.
 >  
 >Per disattivare questa opzione, immetti **0** come valore. Il processo di conferma dell’invio funzionerà quindi come impostazione predefinita: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio.
 
@@ -118,7 +118,7 @@ L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle
 
 ## Gestione dei documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -136,7 +136,7 @@ I documenti possono essere associati a livello di campagna (documenti contestual
 
 La scheda **[!UICONTROL Documents]** contiene:
 
-* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori di Adobe Campaign con diritti adeguati,
+* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con diritti adeguati,
 * Documenti contenenti informazioni relative al router, se presenti.
 
 I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]** .
@@ -199,7 +199,7 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** dell’ **[!UICONTROL Campaigns]** universo.
+* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** della scheda **[!UICONTROL Campaigns]** .
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
