@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4092'
 ht-degree: 95%
@@ -41,7 +41,7 @@ Sono ora documentate le scelte rapide da tastiera disponibili nella nuova scherm
 
 È stata aggiunta una nuova sezione con informazioni dettagliate su come eseguire test A/B utilizzando i flussi di lavoro. [Leggi tutto](../../delivery/using/get-started-a-b-testing.md)
 
-La sezione sull’MTA avanzato di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
+La sezione MTA avanzato di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
 
 È stata aggiunta una nuova pagina per fornire una panoramica delle funzionalità di tracciamento in [!DNL Campaign Classic]. [Leggi tutto](../../delivery/using/about-message-tracking.md)
 
@@ -287,7 +287,7 @@ Nella home page della documentazione sono stati aggiunti altri collegamenti chia
 
 È ora disponibile una nuova sezione in cui sono elencate le diverse lingue disponibili in Adobe Campaign. [Leggi tutto](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Le linee guida per la gestione degli accessi sono state aggiornate con ulteriori informazioni sui diritti denominati. [Ulteriori informazioni](../../platform/using/access-management.md#named-rights)
+Le linee guida per la gestione degli accessi sono state aggiornate con ulteriori informazioni sui diritti denominati. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md)
 
 ## Febbraio 2020 {#february-2020}
 
@@ -405,7 +405,7 @@ L’integrazione tra Adobe Campaign e Adobe Real-time Customer Data Platform è 
 
 È stata aggiunta una nuova sezione per descrivere come forzare la codifica dei caratteri utilizzata durante l’invio di un’e-mail. [Leggi tutto](../../delivery/using/sending-messages.md#character-encoding)
 
-La sezione Gestione degli accessi è stata aggiornata con l’**autorizzazione per i dati sulla privacy**. [Leggi tutto](../../platform/using/access-management.md#named-rights)
+La sezione Gestione degli accessi è stata aggiornata con l’**autorizzazione per i dati sulla privacy**. [Leggi tutto](../../platform/using/access-management-named-rights.md)
 
 Sono state aggiunte informazioni per specificare che il contenuto dei campi di personalizzazione non può superare i 1.024 caratteri. [Leggi tutto](../../delivery/using/personalization-fields.md)
 
