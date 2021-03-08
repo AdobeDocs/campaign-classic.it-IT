@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -15,17 +15,17 @@ ht-degree: 2%
 ---
 
 
-# Limitazione della vista PII{#restricting-pii-view}
+# Limita visualizzazione PI{#restricting-pii-view}
 
 ## Panoramica {#overview}
 
-Alcuni clienti hanno bisogno che gli utenti di marketing siano in grado di accedere ai record di dati ma non desiderano che visualizzino informazioni personali (PII), come nome, cognome o indirizzo e-mail.  Adobe Campaign propone un modo per proteggere la privacy e impedire che i dati vengano utilizzati in modo improprio dagli operatori regolari delle campagne.
+Alcuni clienti hanno bisogno che gli utenti di marketing siano in grado di accedere ai record di dati ma non desiderano che visualizzino informazioni personali (PII, Personally Identifiable Information), come nome, cognome o indirizzo e-mail. Adobe Campaign propone un modo per proteggere la privacy e impedire che i dati vengano utilizzati in modo improprio dagli operatori regolari delle campagne.
 
 ## Implementazione {#implementation}
 
-Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è stato aggiunto agli schemi, completa l&#39;attributo esistente **[!UICONTROL visibleIf]** . Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un&#39;espressione XTK correlata al contesto utente corrente, può utilizzare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]** , ad esempio.
+Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è stato aggiunto agli schemi, integra l’attributo esistente **[!UICONTROL visibleIf]** . Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un&#39;espressione XTK correlata al contesto utente corrente, può, ad esempio, sfruttare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]** .
 
-È possibile trovare un esempio di estensione dello schema destinatario che mostra l&#39;uso seguente:
+Puoi trovare un esempio di estensione dello schema destinatario che mostra questo utilizzo:
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="nms:recipient"
@@ -42,25 +42,25 @@ Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è
 
 Le proprietà principali sono:
 
-* **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, pertanto non è possibile accedervi all&#39;interno di una visualizzazione schema, una selezione di colonne o un generatore di espressioni. Ma questo non nasconde alcun dato, se il nome del campo viene immesso manualmente in un&#39;espressione, il valore viene visualizzato.
-* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, pertanto non è possibile accedervi all&#39;interno di una visualizzazione schema, di una selezione di colonne o di un generatore di espressioni. Ma questo non nasconde alcun dato, se il nome del campo viene immesso manualmente in un&#39;espressione, il valore verrà visualizzato.
+* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, allora ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
 
-Di seguito sono riportate le conseguenze dell&#39;utilizzo di questo attributo in Campaign:
+Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in Campaign:
 
-* I dati non verranno visualizzati utilizzando un editor query generico nella console,
-* I dati non saranno visibili negli elenchi di panoramica e nell&#39;elenco di record (console).
+* I dati non verranno visualizzati utilizzando un editor di query generico nella console,
+* I dati non saranno visibili negli elenchi di panoramica e nell’elenco di record (console).
 * I dati diventeranno di sola lettura in visualizzazione dettagliata.
-* I dati saranno utilizzabili solo all&#39;interno di filtri (il che significa che utilizzando alcune strategie di dicotomia, è ancora possibile indovinare i valori).
-* Qualsiasi espressione creata utilizzando un campo con restrizioni diventa anch&#39;essa soggetta a restrizioni: lower(@email) diventa accessibile come @email.
-* In un flusso di lavoro, potete aggiungere la colonna con restrizioni alla popolazione di destinazione come una colonna aggiuntiva della transizione, ma resta inaccessibile per  utenti Adobe Campaign.
-* Quando si memorizza la popolazione di destinazione in un gruppo (elenco), le caratteristiche dei campi memorizzati sono le stesse dell&#39;origine dei dati.
+* I dati saranno utilizzabili solo all’interno di filtri (il che significa che utilizzando alcune strategie di dicotomia, è comunque possibile indovinare i valori).
+* Qualsiasi espressione creata utilizzando un campo con restrizioni viene sottoposta a restrizioni: lower(@email) diventa accessibile come @email.
+* In un flusso di lavoro, puoi aggiungere la colonna con restrizioni alla popolazione target come colonna aggiuntiva della transizione, ma rimane inaccessibile agli utenti di Adobe Campaign.
+* Quando si memorizza la popolazione target in un gruppo (elenco), le caratteristiche dei campi memorizzati sono le stesse dell&#39;origine dati.
 * Per impostazione predefinita, i dati non sono accessibili al codice JS.
 
 ## Raccomandazioni {#recommendations}
 
-In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: di conseguenza, anche questi campi devono essere protetti.
+In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]** : di conseguenza, anche questi campi devono essere protetti.
 
-Di seguito è riportato un esempio di estensione della tabella di registro per implementare quanto segue:
+Di seguito è riportato un esempio di estensione della tabella di registro per implementare questo:
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
@@ -91,5 +91,5 @@ Di seguito è riportato un esempio di estensione della tabella di registro per i
 
 >[!NOTE]
 >
->Questa limitazione si applica agli utenti non tecnici: un utente tecnico, con le relative autorizzazioni, sarà in grado di recuperare i dati. Questo metodo non è pertanto sicuro al 100%.
+>Questa restrizione si applica agli utenti non tecnici: un utente tecnico con le relative autorizzazioni sarà in grado di recuperare i dati. Questo metodo non è pertanto sicuro al 100%.
 
