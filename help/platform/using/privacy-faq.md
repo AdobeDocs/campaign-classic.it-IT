@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Privacy e consenso
-description: Ulteriori informazioni su Privacy e Consenso
+description: Ulteriori informazioni su Privacy e consenso
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ Nei casi in cui si necessita il consenso per determinate attività di marketing,
 
 Possono verificarsi casi in cui è necessario aggiornare alcuni consensi per poter continuare a utilizzare i dati.
 
-Invece di considerare tali requisiti di consenso avanzati come un rischio per l’universo commerciabile, gli esperti di marketing dovrebbero adottarli come indicatori del coinvolgimento e della fedeltà al marchio, oltre che della soddisfazione e della fiducia dei clienti.
+Gli addetti al marketing devono accettare questi requisiti di consenso avanzati come un vero indicatore di coinvolgimento e fedeltà del brand, oltre che di soddisfazione e fiducia dei clienti.
 
 ## Gestire il consenso {#manage-consent}
 
@@ -110,7 +110,7 @@ In qualità di titolare del trattamento assicurati che, quando ricevi una richie
 
 ## Fornire nuovamente il consenso {#opt-in-again}
 
-### Un oggetto dati, i cui dati sono stati cancellati da  Adobe Campaign, può scegliere di nuovo in seguito?
+### Un interessato, i cui dati sono stati cancellati da Adobe Campaign, può riaccettare in un secondo momento?
 
 È possibile che un interessato decida di fornire nuovamente il consenso o che venga aggiunto come nuovo destinatario dopo che i suoi dati sono stati eliminati da Adobe Campaign.
 
