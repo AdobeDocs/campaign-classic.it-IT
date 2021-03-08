@@ -7,7 +7,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query
 
 >[!CAUTION]
 >
->**Marketing** Analytics è un modulo di Adobe Campaign. Deve essere installato nell’istanza in modo da poter utilizzare le funzionalità descritte di seguito.
+>**Marketing** Analytics è un modulo Adobe Campaign. Deve essere installato nell’istanza in modo da poter utilizzare le funzionalità descritte di seguito.
 
 Con il modulo Marketing Analytics, Campaign ti consente di:
 
@@ -65,9 +65,9 @@ Quando si utilizzano i cubi, è necessario conoscere i seguenti concetti:
 
    Ad esempio, una tabella dei fatti può essere: la tabella del registro di trasmissione, la tabella degli acquisti, ecc.
 
-* Dimensione
+* Dimension
 
-   Le dimensioni consentono di segmentare i dati in gruppi: una volta create, le quote fungono da assi di analisi. Nella maggior parte dei casi, per una data dimensione, verranno definiti diversi livelli. Ad esempio, per una dimensione temporale, i livelli saranno mesi, giorni, ore, minuti, ecc. Questo insieme di livelli rappresenta la gerarchia delle dimensioni e consente diversi livelli di analisi dei dati.
+   I Dimension ti consentono di segmentare i dati in gruppi: una volta create, le quote fungono da assi di analisi. Nella maggior parte dei casi, per una data dimensione, verranno definiti diversi livelli. Ad esempio, per una dimensione temporale, i livelli saranno mesi, giorni, ore, minuti, ecc. Questo insieme di livelli rappresenta la gerarchia delle dimensioni e consente diversi livelli di analisi dei dati.
 
 * Binning
 
@@ -89,7 +89,7 @@ I cubi sono memorizzati nel nodo **[!UICONTROL Administration > Configuration > 
 
 I principali contesti d&#39;uso per i cubi sono i seguenti:
 
-* Le esportazioni di dati possono essere eseguite direttamente in un rapporto, progettato nell’ **[!UICONTROL Reports]** universo della piattaforma Adobe Campaign.
+* Le esportazioni di dati possono essere eseguite direttamente in un rapporto, progettato nella scheda **[!UICONTROL Reports]** della piattaforma Adobe Campaign.
 
    A questo scopo, crea un nuovo report e seleziona il cubo che desideri utilizzare.
 
