@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -616,7 +616,7 @@ Tutti i report standard attualmente utilizzano il motore di rendering v6.x. Se h
 
 ### Rapporti personalizzati {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ Ci sono due famiglie di applicazioni web:
 
 ### Applicazioni web identificate {#identified-web-applications}
 
-Come per i rapporti (vedi [Rapporti](#reports)), se hai aggiunto JavaScript, devi controllarlo e adattarlo se necessario. Se desideri sfruttare il banner blu v7 (contenente gli universi), devi ripubblicare l’applicazione web. Se il codice JavaScript funziona, puoi selezionare il motore di rendering v6.x. In caso contrario, è possibile utilizzare il motore di rendering v6.0 mentre si adatta il codice, quindi utilizzare il motore di rendering v6.x.
+Come per i rapporti ([ulteriori informazioni](#reports)), se hai aggiunto JavaScript, devi controllarlo e adattarlo se necessario. Se desideri sfruttare il banner blu v7 (contenente le schede blu), devi ripubblicare l’applicazione web. Se il codice JavaScript funziona, puoi selezionare il motore di rendering v6.x. In caso contrario, è possibile utilizzare il motore di rendering v6.0 mentre si adatta il codice, quindi utilizzare il motore di rendering v6.x.
 
 >[!NOTE]
 I passaggi per selezionare il motore di rendering sono gli stessi che per selezionare i rapporti. Consulta [Rapporti personalizzati](#personalized-reports).
