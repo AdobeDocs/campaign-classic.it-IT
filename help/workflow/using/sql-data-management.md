@@ -2,12 +2,12 @@
 solution: Campaign Classic
 product: campaign
 title: Gestione dati SQL
-description: Ulteriori informazioni sull'attività del flusso di lavoro di gestione dati SQL
+description: Ulteriori informazioni sull'attività del flusso di lavoro SQL Data Management
 audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -17,64 +17,64 @@ ht-degree: 3%
 
 # Gestione dati SQL{#sql-data-management}
 
-L&#39;attività **SQL Data Management** consente di creare script SQL personalizzati per creare e compilare tabelle di lavoro.
+L&#39;attività **SQL Data Management** consente di scrivere script SQL personalizzati per creare e popolare tabelle di lavoro.
 
 ## Prerequisiti {#prerequisites}
 
-Prima di configurare l&#39;attività, accertatevi che siano soddisfatti i seguenti prerequisiti:
+Prima di configurare l’attività, verifica che siano soddisfatti i seguenti prerequisiti:
 
-* L&#39;attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve pertanto essere installato nell&#39;istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
-* Lo schema in uscita deve essere presente nel database e collegato a un database FDA. [Ulteriori informazioni](../../configuration/using/about-schema-reference.md).
-* L&#39;operatore che esegue il flusso di lavoro deve avere il nome **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**. [Ulteriori informazioni](../../platform/using/access-management.md#named-rights).
+* L’attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell’istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
+* Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA. [Ulteriori informazioni](../../configuration/using/about-schema-reference.md).
+* L’operatore che esegue il flusso di lavoro deve avere il **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** con nome right. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).
 
-## Configurazione dell&#39;attività di gestione dati SQL {#configuring-the-sql-data-management-activity}
+## Configurazione dell&#39;attività SQL Data Management {#configuring-the-sql-data-management-activity}
 
-1. Specificate l&#39;attività **[!UICONTROL Label]**.
-1. Selezionare la **[!UICONTROL External account]** da utilizzare, quindi selezionare la **[!UICONTROL Outbound schema]** collegata a questo account esterno.
+1. Specifica l&#39;attività **[!UICONTROL Label]**.
+1. Seleziona il **[!UICONTROL External account]** da utilizzare, quindi seleziona il **[!UICONTROL Outbound schema]** collegato a questo account esterno.
 
    >[!CAUTION]
    >
    >Lo schema in uscita è fisso e non può essere modificato.
 
-1. Aggiungete lo script SQL.
+1. Aggiungi lo script SQL.
 
    >[!CAUTION]
    >
-   >È responsabilità del writer dello script SQL assicurarsi che lo script SQL sia funzionale e che i relativi riferimenti (nomi di campi, ecc.) sono conformi allo schema in uscita.
+   >È responsabilità dell&#39;autore dello script SQL assicurarsi che lo script SQL funzioni e che i relativi riferimenti (nomi di campi, ecc.) sono conformi allo schema in uscita.
 
    Se si desidera caricare un codice SQL esistente, selezionare l&#39;opzione **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Gli script SQL devono essere creati e memorizzati nel menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 
-   In caso contrario, digitare o copiare/incollare lo script SQL nell&#39;area dedicata.
+   In caso contrario, digitare o copiare-incollare lo script SQL nell&#39;area dedicata.
 
    ![](assets/sql_datamanagement.png)
 
-   L&#39;attività consente di utilizzare le seguenti variabili nello script:
+   L’attività ti consente di utilizzare le seguenti variabili nello script:
 
    * **activity.tableName**: Nome SQL della tabella di lavoro in uscita.
-   * **task.entrionTransitionByName(‘name’).tableName**: Nome SQL della tabella di lavoro gestita dalla transizione in entrata da utilizzare (la transizione è identificata dal nome).
+   * **task.entrionTransitionByName(‘name’).tableName**: Nome SQL della tabella di lavoro gestita dalla transizione in entrata da utilizzare (la transizione è identificata dal suo nome).
 
       >[!NOTE]
       >
       >Il valore (&#39;name&#39;) corrisponde al campo **[!UICONTROL Name]** delle proprietà di transizione.
 
-1. Se lo script SQL contiene già comandi per creare una tabella di lavoro in uscita, deselezionare l&#39;opzione **[!UICONTROL Automatically create work table]**. In caso contrario, una tabella di lavoro viene creata automaticamente dopo l&#39;esecuzione del flusso di lavoro.
-1. Fate clic su **[!UICONTROL Ok]** per confermare la configurazione dell&#39;attività.
+1. Se lo script SQL contiene già comandi per creare una tabella di lavoro in uscita, deselezionare l&#39;opzione **[!UICONTROL Automatically create work table]**. In caso contrario, una tabella di lavoro viene creata automaticamente una volta eseguito il flusso di lavoro.
+1. Fai clic su **[!UICONTROL Ok]** per confermare la configurazione dell’attività.
 
-L&#39;attività ora è configurata. È pronto per essere eseguito nel flusso di lavoro.
+L’attività è ora configurata. È pronto per essere eseguito nel flusso di lavoro.
 
 >[!CAUTION]
 >
->Una volta eseguita l&#39;attività, il conteggio dei record di transizione in uscita è solo indicativo. Può variare a seconda del livello di complessità dello script SQL.
+>Una volta eseguita l’attività, il conteggio dei record di transizione in uscita è indicativo solo. Può variare a seconda del livello di complessità dello script SQL.
 >  
->Se l&#39;attività viene riavviata, l&#39;intero script viene eseguito dall&#39;inizio, indipendentemente dal suo stato di esecuzione.
+>Se l’attività viene riavviata, l’intero script viene eseguito dall’inizio, indipendentemente dallo stato di esecuzione.
 
 ## Esempi di script SQL {#sql-script-samples}
 
 >[!NOTE]
 >
->Gli esempi di script in questa sezione sono destinati ad essere eseguiti in PostgreSQL.
+>Gli esempi di script in questa sezione devono essere eseguiti in PostgreSQL.
 
-Lo script seguente consente di creare una tabella di lavoro e di inserire dati in questa stessa tabella di lavoro:
+Lo script sottostante consente di creare una tabella di lavoro e inserire dati in questa stessa tabella di lavoro:
 
 ```
 CREATE UNLOGGED TABLE <%= activity.tableName %> (
@@ -91,7 +91,7 @@ FROM nmsRecipient
 GROUP BY iRecipientId, sFirstName, sMiddleName, sLastName, sEmail;
 ```
 
-Lo script seguente consente di eseguire un&#39;operazione CTAS (CREATE TABLE AS SELECT) e creare un indice della tabella di lavoro:
+Lo script sottostante consente di eseguire un&#39;operazione CTAS (CREATE TABLE AS SELECT) e creare un indice della tabella di lavoro:
 
 ```
 CREATE TABLE <%= activity.tableName %>
@@ -105,7 +105,7 @@ CREATE INDEX ON <%= activity.tableName %> (sEmail);
 ANALYZE <%= activity.tableName %> (sEmail);
 ```
 
-Lo script seguente consente di unire due tabelle di lavoro:
+Lo script sottostante consente di unire due tabelle di lavoro:
 
 ```
 CREATE TABLE <%= activity.tableName %>
