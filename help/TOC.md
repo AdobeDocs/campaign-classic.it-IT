@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 58%
+source-wordcount: '2412'
+ht-degree: 57%
 
 ---
 
@@ -94,7 +94,11 @@ ht-degree: 58%
       + [Passaggi per creare una query](platform/using/steps-to-create-a-query.md)
       + [Definire le condizioni del filtro](platform/using/defining-filter-conditions.md)
    + Autorizzazioni {#permissions}
-      + [Gestione degli accessi](platform/using/access-management.md)
+      + [Guida introduttiva alle autorizzazioni](platform/using/access-management.md)
+      + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
+      + [Creare e gestire gruppi](platform/using/access-management-groups.md)
+      + [Utilizzare i diritti denominati per impostare le autorizzazioni](platform/using/access-management-named-rights.md)
+      + [Gestire l’accesso alle cartelle](platform/using/access-management-folders.md)
    + Pacchetti di dati ed enumerazioni {#administration-basics}
       + [Pacchetti dati](platform/using/working-with-data-packages.md)
       + [Enumerazioni](platform/using/managing-enumerations.md)
@@ -353,7 +357,7 @@ ht-degree: 58%
    + [Informazioni sulle integrazioni di Campaign](integrations/using/about-campaign-integrations.md)
    + Condivisione del pubblico {#audience-sharing}
       + [Condividere tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-      + [Invia una richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
+      + [Invia richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Configurare l’integrazione dei tipi di pubblico condivisi in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Risoluzione dei problemi](integrations/using/troubleshooting.md)
       + [Importare ed esportare tipi di pubblico](integrations/using/importing-and-exporting-audiences.md)
@@ -369,10 +373,10 @@ ht-degree: 58%
       + [Integra con [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
-   + Connessione tramite un Adobe ID {#connecting-via-an-adobe-id}
+   + Connessione tramite Adobe ID {#connecting-via-an-adobe-id}
       + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configurazione di Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementare Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [Configura Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [Implementare un Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Risoluzione dei problemi di IMS](integrations/using/ims-troubleshooting.md)
    + Connettore ACS {#acs-connector}
       + [[!DNL ACS Connector] principi e ciclo dei dati](integrations/using/acs-connector-principles-and-data-cycle.md)
@@ -383,7 +387,7 @@ ht-degree: 58%
    + Trigger di Adobe Experience Cloud {#experience-triggers}
       + [Guida introduttiva a [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurare la pipeline](integrations/using/configuring-pipeline.md)
-      + [Configurazione di Adobe I/O per [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
+      + [Configura Adobe I/O per [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Configurare eventi per l’implementazione personalizzata](integrations/using/events.md)
       + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
       + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
