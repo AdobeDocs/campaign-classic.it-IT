@@ -7,7 +7,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -17,9 +17,9 @@ ht-degree: 5%
 
 # Gestione dei modelli{#template-management}
 
-Digital Content Editor offre **modelli standard** per applicazioni Web e consegne.
+L’editor dei contenuti digitali offre **modelli standard** per le applicazioni e le consegne web.
 
-Quando si crea un&#39;applicazione Web di tipo Pagina di destinazione, l&#39;utente può scegliere uno di questi modelli. Potete anche importare un modello HTML creato al di fuori di  Adobe Campaign.
+Quando si crea un’applicazione Web di tipo Pagina di destinazione, l’utente può scegliere uno di questi modelli. Puoi anche importare un modello HTML creato al di fuori di Adobe Campaign.
 
 ![](assets/dce_popup_templatechoice.png)
 
@@ -27,10 +27,10 @@ Per aggiungere un modello, fare riferimento a [Opzioni globali](../../web/using/
 
 ## Salvataggio di una consegna come modello {#saving-a-delivery-as-a-template}
 
-Dopo aver configurato una consegna, potete salvarla come modello per riutilizzarla per le consegne future.
+Dopo aver configurato una consegna, puoi salvarla come modello per riutilizzarla per le consegne future.
 
-Nell&#39;universo **Campaigns**, aprire la consegna scelta. Fare clic sul pulsante **Salva come modello**, assegnare un nome al modello e salvare.
+Nella scheda **Campagne** , apri la consegna scelta. Fai clic sul pulsante **Salva come modello** , assegna un nome al modello e salva.
 
 ![](assets/dce_save_model.png)
 
-Il nuovo modello viene salvato nel nodo **Risorse > Modelli > Modelli di contenuto** nell&#39;elenco delle cartelle.
+Il nuovo modello viene salvato sotto il nodo **Risorse > Modelli > Modelli di contenuto** nell&#39;elenco delle cartelle.
