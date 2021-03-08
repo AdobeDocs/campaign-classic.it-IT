@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Gestisci documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.).
+È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc).
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ I documenti possono essere associati a livello di campagna (documenti contestual
 
 La scheda **[!UICONTROL Documents]** contiene:
 
-* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori di Adobe Campaign con diritti adeguati,
+* Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con diritti adeguati,
 * Documenti contenenti informazioni relative al router, se presenti.
 
 I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]** .
@@ -98,7 +98,7 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** dell’ **[!UICONTROL Campaigns]** universo.
+* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** della scheda **[!UICONTROL Campaigns]** .
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
