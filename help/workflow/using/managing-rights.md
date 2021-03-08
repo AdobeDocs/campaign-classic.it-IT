@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Gestisci le autorizzazioni del flusso di lavoro{#managing-rights}
 
-Se non sono amministratori, gli operatori di Adobe Campaign devono disporre dei diritti di accesso per creare, eseguire o modificare i flussi di lavoro.
+Se non sono amministratori, gli operatori Adobe Campaign devono disporre dei diritti di accesso per creare, eseguire o modificare i flussi di lavoro.
 
 In generale, gli operatori che agiscono sui flussi di lavoro devono accedere ai file contenenti i dati utilizzati durante le varie attività (destinatari, elenco destinatari, abbonamenti, consegne, ecc.) ed eventualmente ai relativi sottofile.
 
@@ -25,7 +25,7 @@ Devono anche essere mappati ai diritti denominati che coincidono con le azioni e
 
 Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consulta questa [sezione](../../platform/using/access-management.md).
 
-## Gruppi di operatori {#operator-groups}
+## Gruppi di operatori {#operator-groups-wf}
 
 I seguenti gruppi di operatori sono associati al flusso di lavoro:
 
