@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
 
 
-# Configurazione{#configuration}
+# Configura la struttura di navigazione di Campaign Explorer{#configuration}
+
+In qualità di utente esperto, è possibile aggiungere cartelle nella struttura dell&#39;esploratore e personalizzarle.
+
+Ulteriori informazioni su Esplora campagne e gerarchia di navigazione [in questa sezione](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
 I tipi di cartelle utilizzati dall&#39;elenco di navigazione sono descritti in un documento XML che rispetta la grammatica dello schema **xtk:navtree**.
 
