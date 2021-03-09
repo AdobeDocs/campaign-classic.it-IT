@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 57%
+source-wordcount: '2457'
+ht-degree: 56%
 
 ---
 
@@ -42,20 +42,22 @@ ht-degree: 57%
    + Inizia con Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Avvia Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + [Area di lavoro di Adobe Campaign](platform/using/adobe-campaign-workspace.md)
-      + Domande frequenti {#faq}
-         + [Domande principali](platform/using/common-questions.md)
-         + [Concetti globali](platform/using/faq-key-concepts.md)
-         + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
-         + [Privacy](platform/using/privacy-faq.md)
-         + [Pubblici](platform/using/faq-audiences.md)
-         + [Progettare messaggi](platform/using/faq-designing.md)
-         + [Inviare messaggi](platform/using/faq-messages.md)
-         + [Flussi di lavoro](platform/using/faq-workflows.md)
-         + [Configurazione](platform/using/faq-campaign-config.md)
-         + [Rapporti](platform/using/faq-reporting.md)
-         + [Sviluppo](platform/using/faq-developers.md)
-      + [Tutorial](platform/using/tutorials.md)
+      + Area di lavoro di Adobe Campaign{#campaign-workspace}
+         + [Introduzione all’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
+         + [Sfogliare e personalizzare gli elenchi](platform/using/adobe-campaign-ui-lists.md)
+         + Domande frequenti {#faq}
+            + [Domande principali](platform/using/common-questions.md)
+            + [Concetti globali](platform/using/faq-key-concepts.md)
+            + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
+            + [Privacy](platform/using/privacy-faq.md)
+            + [Pubblici](platform/using/faq-audiences.md)
+            + [Progettare messaggi](platform/using/faq-designing.md)
+            + [Inviare messaggi](platform/using/faq-messages.md)
+            + [Flussi di lavoro](platform/using/faq-workflows.md)
+            + [Configurazione](platform/using/faq-campaign-config.md)
+            + [Rapporti](platform/using/faq-reporting.md)
+            + [Sviluppo](platform/using/faq-developers.md)
+         + [Tutorial](platform/using/tutorials.md)
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
@@ -140,6 +142,7 @@ ht-degree: 57%
       + [Canale SMS](delivery/using/sms-channel.md)
       + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
       + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
+      + [Migrazione al connettore SMPP generico esteso](delivery/using/unsupported-connector-migration.md)
    + [Invia messaggi LINE](delivery/using/line-channel.md)
    + Inviare notifiche push {#sending-push-notifications}
       + [Informazioni sul canale app mobile](delivery/using/about-mobile-app-channel.md)
@@ -674,6 +677,14 @@ ht-degree: 57%
       + [Connessione al database](installation/using/connecting-to-database.md)
       + [Creare lo schema dati](installation/using/creating-data-schema.md)
       + [Definire la mappatura dei dati](installation/using/defining-data-mapping.md)
+   + Lista di controllo protezione e privacy {#security-privacy}
+      + [Guida introduttiva a protezione e privacy](installation/using/get-started-security-privacy.md)
+      + [Privacy](installation/using/privacy.md)
+      + [Gestione degli accessi](installation/using/access-management.md)
+      + [Linee guida per lo scripting e la codifica](installation/using/scripting-coding-guidelines.md)
+      + [Rete, database e SSL/TLS](installation/using/network-database.md)
+      + [Configurazione del server](installation/using/server-configuration.md)
+      + [Configurazione server web](installation/using/web-server-configuration.md)
    + Appendici {#appendices}
       + [File di configurazione del server](installation/using/the-server-configuration-file.md)
       + [Endpoint di rete per Campaign](installation/using/campaign-network-endpoints.md)
@@ -790,9 +801,8 @@ ht-degree: 57%
       + [Metodi SOAP in JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Aggiunta di ulteriori funzioni SQL](configuration/using/adding-additional-sql-functions.md)
    + Gerarchia di navigazione {#navigation-hierarchy}
-      + [Informazioni sulla gerarchia di navigazione](configuration/using/about-navigation-hierarchy.md)
-      + [Configurazione](configuration/using/configuration.md)
-      + [Modifica](configuration/using/edition.md)
+      + [Configura la gerarchia di Esplora risorse](configuration/using/configuration.md)
+      + [Modificare la gerarchia di Esplora risorse](configuration/using/edition.md)
    + Utilizzare una tabella dei destinatari personalizzata {#use-a-custom-recipient-table}
       + [Informazioni sulla tabella dei destinatari personalizzata](configuration/using/about-custom-recipient-table.md)
       + [Caratteristiche di uno schema](configuration/using/schema-characteristics.md)
