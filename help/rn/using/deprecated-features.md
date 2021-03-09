@@ -9,9 +9,9 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1712'
 ht-degree: 94%
 
 ---
@@ -46,16 +46,16 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><strong>Sostituzione</strong></td>
   </tr>
     <tr>
-  <td>Rapporto di monitoraggio sulla realizzazione tecnica<br></td>
-   <td><p>A partire dalla release Campaign 21.1, il report Technical Deliverability Monitoring (Monitoraggio della soddisfazione tecnica) è diventato obsoleto.</p>
-   <p>Se necessario, potete ricevere questo rapporto ogni giorno via e-mail fino alla data di rimozione della funzione. Per richiederlo, aprite un <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e specificate il nome dell'istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
-   <p> Adobe consiglia di collaborare con il team di recapito per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
-  <p><em>Data di rimozione destinazione: Fine 2021</em></p>
+  <td>Rapporto di monitoraggio del recapito messaggi tecnico<br></td>
+   <td><p>A partire dalla versione 21.1 di Campaign, il rapporto di monitoraggio del recapito messaggi tecnico è diventato obsoleto.</p>
+   <p>Se necessario, puoi ricevere questo rapporto ogni giorno per e-mail fino alla data di rimozione della funzione. Per richiederlo, apri un <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e specifica il nome dell'istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
+   <p>L’Adobe consiglia di interagire con il team di recapito messaggi per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
+  <p><em>Data di rimozione target: Fine 2021</em></p>
   </td>
  </tr>
   <tr>
   <td>Connettori di gestione delle relazioni con i clienti<br></td>
-   <td><p>A partire dalla release Campaign 20.3, i seguenti connettori CRM sono obsoleti con Campaign:</p>
+   <td><p>A partire dalla versione Campaign 20.3, i seguenti connettori di gestione delle relazioni con i clienti sono diventati obsoleti con Campaign:</p>
    <ul>
    <li>API Soap - On-premise: 2007, 2015, 2016</li>
    <li>API Soap - Online: 2015, 2016</li>
@@ -99,7 +99,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <li>iOS</li>
    </ul>
   <p>Se utilizzi uno di questi connettori, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a></p> 
-  <p>Scopri come effettuare la migrazione dei connettori legacy in <a href="https://helpx.adobe.com/it/campaign/kb/sms-connector.html">questa nota tecnica</a>.</p>
+  <p>Scopri come effettuare la migrazione dei connettori legacy in <a href="../../delivery/using/unsupported-connector-migration.md">questa nota tecnica</a>.</p>
   <p><em>Data effettiva di rimozione: aprile 2021</em></p>
   </td> 
  </tr>
