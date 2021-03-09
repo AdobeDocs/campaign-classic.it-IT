@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Gestisci l&#39;accesso alle cartelle{#folder-access-management}
 
-A ogni cartella della struttura sono associati diritti di accesso di lettura, scrittura ed eliminazione. Per accedere a un file, un operatore o un gruppo di operatori deve avere almeno accesso in lettura ad esso.
+A ogni cartella della struttura di navigazione di Esplora risorse sono associati diritti di accesso di lettura, scrittura ed eliminazione. Per accedere a un file, un operatore o un gruppo di operatori deve avere almeno accesso in lettura ad esso.
 
 ## Autorizzazioni in una cartella
 
@@ -71,7 +71,7 @@ Le cartelle sono nodi nella struttura di Adobe Campaign. Per creare questi nodi,
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-È possibile concedere autorizzazioni a queste cartelle come in tutte le altre cartelle della struttura. Consulta [Gestione accesso alle cartelle](#folder-access-management).
+È possibile personalizzare la struttura di navigazione di Esplora risorse. Scopri i passaggi di configurazione e le best practice [in questa sezione](adobe-campaign-workspace.md).
 
 ### Informazioni sulle visualizzazioni {#about-views}
 
