@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4170'
 ht-degree: 93%
 
 ---
@@ -22,6 +22,8 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## Marzo 2021 {#march-2021}
+
+È stata aggiunta una nuova sezione con best practice e controlli da eseguire in materia di sicurezza e privacy. [Leggi tutto](../../installation/using/get-started-security-privacy.md)
 
 Il [capitolo sulla gestione delle autorizzazioni](../../platform/using/access-management.md) è stato migliorato e suddiviso in sezioni, inclusi dettagli su [Operatori](../../platform/using/access-management-operators.md) , [Gruppi di operatori](../../platform/using/access-management-groups.md) , [Diritti denominati](../../platform/using/access-management-named-rights.md) e [Gestione cartelle](../../platform/using/access-management-folders.md) .
 
