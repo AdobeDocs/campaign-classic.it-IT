@@ -5,10 +5,10 @@ product: campaign
 title: Documentazione di Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 60%
+source-wordcount: '312'
+ht-degree: 54%
 
 ---
 
@@ -19,15 +19,17 @@ ht-degree: 60%
 
 ## Novità
 
-* **[Connessione tramite IMS/ Adobe ID Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per collegarti a Campaign, devi effettuare l&#39;aggiornamento per poter connettersi a Campaign dopo il** 31 marzo 2021 **.
+* **[Aggiorna il ](technotes/ios-certificate-update.md)**<br/> certificato APNs Il 29 marzo 2021 un aggiornamento APN avrà un impatto sul canale iOS di Campaign. Devi aggiornare la configurazione per evitare l’interruzione del canale push iOS.
 
-* **[Proteggi ](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html)**<br/> le istanze della campagnaAggiorna alle build più recenti per proteggere la piattaforma Campaign.
+* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 31 marzo 2021 **.
 
-* **[Rimuovi ](https://helpx.adobe.com/it/campaign/kb/update-bounce-qualification.html)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione di Gmail
+* **[Proteggi le ](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html)**<br/> istanze CampaignAggiorna alle build più recenti per proteggere la piattaforma Campaign.
 
-* **[Aggiornare l&#39;](integrations/using/configuring-adobe-io.md)**<br/> integrazione con Adobe Experience Cloud Triggers Il servizio di autenticazione legacy ha raggiunto la fine del ciclo di vita. Scoprite come migrare  Adobe I/O.
+* **[Rimuovere i ](https://helpx.adobe.com/it/campaign/kb/update-bounce-qualification.html)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione di Gmail
 
-* **[Passa ad ](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> APIL del provider APN basato su HTTP/2008888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+* **[Aggiornare l’](integrations/using/configuring-adobe-io.md)**<br/> integrazione di Adobe Experience Cloud TriggersIl servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. Scopri come effettuare la migrazione all’Adobe I/O.
+
+* **[Passa al provider APN basato su HTTP/2 ](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> APILScopri come migrare dal protocollo binario legacy all’API APNs provider basato su HTTP/2
 
 * **[Ottenere assistenza](https://helpx.adobe.com/it/campaign/kb/ac-support.html)**<br/>
 Accedi a domande frequenti, best practice e risorse di assistenza e richiedi assistenza
@@ -87,7 +89,6 @@ Accedi a domande frequenti, best practice e risorse di assistenza e richiedi ass
 | [Note sulla versione](/help/rn/using/latest-release.md) | [Elenco dei messaggi di errore](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Video dimostrativi](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it) | [Modello dati di Campaign](configuration/using/about-data-model.md) |
 | [Matrice di compatibilità](rn/using/compatibility-matrix.md) | [JSAPI per Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Guida introduttiva a Campaign](platform/using/about-adobe-campaign-classic.md) | [Guida all’implementazione](https://helpx.adobe.com/it/campaign/kb/acc-implementation.html) |
 | [Aggiornamento Gold Standard](https://helpx.adobe.com/it/campaign/kb/gold-standard.html) | [Guida al tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html) |
 | [Funzioni obsolete](rn/using/deprecated-features.md) | [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html) |
 | [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
