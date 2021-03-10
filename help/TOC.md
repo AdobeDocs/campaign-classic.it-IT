@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Centro Risorse
+breadcrumb-title: Centro risorse
 product: campaign
 title: Guida a Campaign Classic
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: f170f554935700161c457bb34bace8c403f4262b
+source-git-commit: de017afc1e5d30b561ed2bb7485756f30ef8778a
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2461'
 ht-degree: 56%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 56%
    + [Funzioni obsolete](rn/using/deprecated-features.md)
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
    + [Note tecniche](technotes/technote.md)
+   + [Aggiornamento certificato iOS](technotes/ios-certificate-update.md)
 + Introduzione {#getting-started}
    + Inizia con Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
