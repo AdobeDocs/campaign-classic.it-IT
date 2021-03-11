@@ -6,10 +6,10 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 87844fae046dff69193d3462c802057499f406ef
+source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -69,23 +69,33 @@ IMS (Adobe Identity Service) cesserà di supportare le versioni precedenti di In
 
 **Siete interessati?**
 
-Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite Adobe Identity Service (IMS), l’aggiornamento a una delle nuove versioni elencate sopra è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite il servizio Adobe Identity (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate in precedenza. Questa versione include un nuovo protocollo di connessione: l’aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 
 **Come si aggiorna?**
 
 Come cliente in hosting, non è necessaria alcuna azione: Adobe ha già aggiornato le istanze a una versione più recente.
 
-In qualità di cliente on-premise/ibrido, è necessario eseguire l’aggiornamento a una delle versioni più recenti per beneficiare della nuova console client e garantire una transizione senza soluzione di continuità **prima del 31 marzo 2021**.
+In qualità di cliente on-premise/ibrido, è necessario eseguire l’aggiornamento a una delle versioni più recenti per beneficiare della nuova console client e garantire una transizione senza soluzione di continuità **prima del 30 giugno 2021**.
+
+Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console client a questa versione.
+
+* Scopri come accedere a [Distribuzione di software di Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+
+* [Scopri come installare la console](../installation/using/installing-the-client-console.md) client di Campaign.
 
 ## Integrazione con Experience Cloud Triggers
 
-Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita, verrà ritirato il 30 giugno 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il 30 giugno 2021. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Siete interessati?**
 
 Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth, **devi passare ad Adobe I/O**.
 
 **Come si aggiorna?**
+
+Una volta aggiornate le istanze a una versione più recente, tutti i clienti devono seguire la procedura [per passare alla nuova modalità di autenticazione](../integrations/using/configuring-adobe-io.md). Questo richiede la generazione del nuovo token di Adobe I/O e il suo utilizzo nell’implementazione.  
+
+Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline sia configurata sull’istanza di mid-sourcing. [Ulteriori informazioni](../integrations/using/configuring-pipeline.md).
 
 [Scopri come effettuare la migrazione ad Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
@@ -119,4 +129,4 @@ Come cliente in hosting, non è necessaria alcuna azione: Adobe ha già incorpor
 
 In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per garantire una transizione senza soluzione di continuità **prima del 29 marzo 2021**.
 
-[Scopri come incorporare il nuovo certificato](ios-certificate-update.md)
+[Scopri come incorporare il nuovo certificato](ios-certificate-update.md).
