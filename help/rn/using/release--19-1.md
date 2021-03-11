@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '3127'
-ht-degree: 22%
+ht-degree: 21%
 
 ---
 
@@ -23,16 +23,16 @@ _16 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
+> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
 
 
 
 **Miglioramenti**
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
-* L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L&#39;autenticazione dell&#39;integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata nell&#39;Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la fine del supporto del protocollo binario legacy del servizio APNs per iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 * È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni.
@@ -41,7 +41,7 @@ _16 dicembre 2020_
 * È stato risolto un problema che poteva causare un errore dei flussi di lavoro durante l’esecuzione di un’attività **Enrichment**. (NEO-17338)
 * È stato risolto un problema nei flussi di lavoro che si verificava recuperando i record da un database esterno e inserendoli nel database Campaign. (NEO-26359)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione.
-* È stato risolto un problema che impediva il funzionamento della funzione **NoNull** nei database Oracle dopo l&#39;aggiornamento alla build 9032. (NEO-26488)
+* È stato risolto un problema che impediva il funzionamento della funzione **NoNull** nei database di Oracle dopo l&#39;aggiornamento alla build 9032. (NEO-26488)
 * È stato risolto un problema che impediva la visualizzazione del pulsante **Salva** durante la modifica di una descrizione del modello della campagna con copia-incolla di simboli come, ad esempio, i caratteri giapponesi. (NEO-27071)
 * È stato risolto un problema che impediva il salvataggio della descrizione di una campagna o di un modello di campagna facendo clic all’esterno della finestra prima di fare clic sul pulsante **Salva**. (NEO-27449)
 * È stato risolto un problema a livello di configurazione proxy che impediva di accedere ad Adobe Campaign dopo l’ultimo aggiornamento di Windows 10. (NEO-27813)
@@ -111,7 +111,7 @@ _13 agosto 2019_
 * È stato risolto un problema relativo all’installazione del pacchetto midEmitter tramite la riga di comando.
 * È stata aggiunta una nuova opzione di autenticazione per supportare le credenziali OAuth all’interno del connettore AC con Microsoft Dynamics. (NEO-11982)
 * È stato risolto un problema nella gestione UID (Unique Universal Identifier) che causava il mancato funzionamento delle attività del flusso di lavoro di caricamento query e dati con Hive FDA.
-* È stata corretta una regressione su Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
+* È stata corretta una regressione sull’Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l’aggiornamento. (NEO-12759)
 * È stata corretta una regressione che portava a scegliere un fuso orario errato quando si impostava l’ora in un’attività del flusso di lavoro di pianificazione.
 
 ## ![](assets/do-not-localize/green_2.png) Versione 19.1.4 - Build 9032{#release-19-1-4-build-9032}
@@ -153,21 +153,21 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’elenco Consentiti e installi le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedi tramite Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedi tramite l'Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
-   <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all’interno dell’istanza Adobe Campaign Classic. La traccia di audit registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Puoi verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consulta la <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">video tutorial</a>.</p></td> 
+   <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di audit registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Puoi verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consulta la <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">video tutorial</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robustezza e scalabilità<br /> </td> 
-   <td> È stata aggiunta una serie di miglioramenti a Campaign Classic. Guardrail, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
+   <td> È stata aggiunta una serie di miglioramenti ad Campaign Classic. Guardrail, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
    <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fare riferimento alla <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
     <ul> 
-     <li> <p>Oracle 18c</p> </li> 
+     <li> <p>Oracle 18 quater</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
      <li> <p>SQL Server 2017</p> </li> 
      <li> <p>Teradata 16 (FDA)</p> </li> 
@@ -213,7 +213,7 @@ _30 maggio 2019_
 * Ora, durante l’analisi di una consegna definitiva, se la modalità di pubblicazione è impostata su **[!UICONTROL None]** nella procedura guidata di distribuzione, viene registrato un errore e l’analisi viene interrotta: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul telefono cellulare.&quot; (NEO-12208)
 * La gestione del registro di trasmissione è stata migliorata per la messaggistica transazionale. Quando i registri di trasmissione vengono sincronizzati dall’istanza di esecuzione all’istanza di controllo, il campo @lastModified viene aggiornato alla data corrente del sistema. L&#39;opzione MC_Update_BlLastModified è stata aggiunta per le istanze di controllo. True indica che la data corrente verrà utilizzata nell&#39;istanza di controllo (comportamento predefinito). False significa che utilizziamo la data @lastModified dell&#39;istanza di esecuzione del registro di trasmissione. (NEO-12579)
 * Sono stati aggiunti indici nelle tabelle temporanee del coupon per ottimizzare l’invio della consegna. (NEO-12437)
-* Nell’integrazione di Analytics, è ora consentito il recupero di dati del segmento AAM con carattere %. (NEO-12025)
+* Nell’integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
 * È stato rimosso il limite di 10.000 record in Workflow Heatmap per risolvere un problema di dati mancanti. (NEO-12329)
 * Open Office non è supportato ed è stato rimosso completamente dall&#39;applicazione. Se lo si stava ancora utilizzando, passare a Libre Office in quanto non funzionerà più a partire dal 19.1.
 * È ora possibile limitare l’accesso in scrittura all’attività Update data in Workflow utilizzando gli attributi sysfilter. [Leggi tutto](../../configuration/using/filtering-schemas.md)
@@ -242,7 +242,7 @@ _30 maggio 2019_
 * È stato risolto un problema che impediva l&#39;eliminazione di un&#39;applicazione Web anche se disponevi dei diritti di accesso corretti. (NEO-12072)
 * È stato risolto un problema che poteva causare la sovrascrittura di alcuni valori durante l’esportazione e l’importazione di un oggetto tramite XML. È stata aggiunta l’opzione XtkExport_IncludeDefaultValues . Se è impostato su True (comportamento predefinito), vengono esportati tutti i valori. Se è impostato su False, le modifiche vengono sovrascritte con il valore predefinito. (NEO-11979)
 * È stato risolto un problema che causava un errore dell’attività del flusso di lavoro **[!UICONTROL Alert]** in caso di aggiunta di un’attività di arricchimento dopo una query. (NEO-12132)
-* È stato risolto un problema nelle impostazioni Oracle a causa del quale gli offset della pipeline (trigger) non venivano recuperati correttamente dal database, causando duplicati. (NEO-12121)
+* È stato risolto un problema relativo alle impostazioni di Oracle a causa del quale gli offset della pipeline (trigger) non venivano recuperati correttamente dal database, causando duplicati. (NEO-12121)
 * È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot durante l’utilizzo dell’integrazione di Analytics (NEO-12103)
 * È stato risolto un problema relativo al rapporto Analisi descrittiva . (NEO-11414)
 * È stato risolto un problema relativo ai connettori di gestione delle relazioni con i clienti quando la tabella remota conteneva un campo con un trattino basso nel nome.
