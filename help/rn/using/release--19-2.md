@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 14%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ _23 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
    >
    > 
 * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
@@ -56,8 +56,8 @@ _2 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>CCPA è la nuova legge sulla privacy dello Stato della California che armonizza e modernizza i requisiti di protezione dei dati in vigore dal 1° gennaio 2020. Il CCPA si applica ai clienti di Adobe Campaign che conservano dati per soggetti residenti in California.</p>
-    <p>Oltre alle funzionalità per la privacy già disponibili (tra cui la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), Adobe Campaign ti aiuta a prepararti al CCPA:</p>
+   <td> <p>CCPA è la nuova legge sulla privacy dello Stato della California che armonizza e modernizza i requisiti di protezione dei dati in vigore dal 1° gennaio 2020. Il CCPA si applica ai clienti Adobe Campaign che detengono dati per soggetti residenti in California.</p>
+    <p>Oltre alle funzionalità per la privacy già disponibili (tra cui la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), Adobe Campaign facilita la conformità a CCPA:</p>
     <ul>
       <li>Diritto di accesso e diritto alla cancellazione: stiamo sfruttando le funzionalità aggiunte per il RGPD. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Leggi tutto</a></li>
       <li>Puoi verificare se un consumatore ha rinunciato alla vendita di Informazioni personali. A questo scopo, devi estendere la tabella Profili e aggiungere un campo <strong>Rinuncia per CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Leggi tutto</a></li></td> 
@@ -88,7 +88,7 @@ _2 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>Adobe Campaign ti consente di provare il nuovo formato interattivo <a href="https://amp.dev/about/email/">AMP per e-mail</a>, che consente agli esperti di marketing di includere componenti AMP all’interno dei messaggi, per migliorare l’esperienza e-mail con contenuti avanzati, dinamici e interattivi, direttamente utilizzabili all’interno del messaggio stesso.</p>
+<td> <p>Adobe Campaign consente di provare il nuovo formato interattivo <a href="https://amp.dev/about/email/">AMP per e-mail</a>, che consente agli esperti di marketing di includere componenti AMP all’interno dei messaggi, per migliorare l’esperienza e-mail con contenuti avanzati, dinamici e interattivi, direttamente utilizzabili all’interno del messaggio stesso.</p>
    <p>Questa funzionalità viene rilasciata come versione beta pubblica.</p>
    <p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/defining-interactive-content.md">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">video tutorial</a>.</p><br /></td> 
   </tr> 
@@ -119,7 +119,7 @@ _2 dicembre 2019_
 * Ottimizzazione del consumo di memoria per le notifiche push.
 * Per ottimizzare le prestazioni e lo storage, è stata migliorata la gestione del file **logins.log** . Il file viene ora suddiviso in più file, uno ogni giorno con un massimo di 365 file conservati. [Leggi tutto](../../production/using/log-files.md)
 * È ora possibile configurare l’account esterno di Microsoft Dynamics CRM utilizzando le credenziali password (password + nome utente) o il certificato (chiave privata). [Leggi tutto](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
-* Sono stati aggiunti alcuni miglioramenti al connettore FDA Hadoop per migliorare l’affidabilità
+* Sono stati aggiunti alcuni miglioramenti al connettore FDA del Hadoop per migliorare l&#39;affidabilità
 * È stata aggiunta una protezione specifica per controllare lo spazio su disco prima di consentire il caricamento di risorse pubbliche sul server.
 * Sono state aggiunte nuove [opzioni campagna](../../installation/using/configuring-campaign-options.md):
    * L&#39;opzione di configurazione **WdbcKillSessionPolicy** consente di influenzare il comportamento **Arresto incondizionato** su tutti i flussi di lavoro e le query del database PostgreSQL.
@@ -142,7 +142,7 @@ Verifica di disporre delle versioni supportate di tutti i sistemi elencati nella
 
 _SDK per Campaign Mobile_
 
-È ora disponibile la build 1.0.26 dell’SDK per iOS. In questa nuova build è stato aggiunto il supporto di iOS 13. Questa nuova versione supporta ora la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell&#39;SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta l&#39; [Assistenza clienti Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+È ora disponibile la build 1.0.26 dell’SDK per iOS. In questa nuova build è stato aggiunto il supporto di iOS 13. Questa nuova versione supporta ora la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell&#39;SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Patch**
 
@@ -152,7 +152,7 @@ _SDK per Campaign Mobile_
 * È stato risolto un problema che interessava l’analisi della consegna con la regola di tipologia, incluso il dominio ne.jp . (NEO-12609)
 * È stato risolto un problema relativo agli aggiornamenti SMS su TLS che implicavano un criterio di certificato più restrittivo. Questi aggiornamenti potrebbero causare un errore di connessione tra i server di marketing e di mid-sourcing in caso di certificato obsoleto. (NEO-17698)
 * È stato risolto un problema che si verificava quando si utilizzava il pulsante **Test connection** su un account esterno in un ambiente di mid-sourcing con autenticazione Vault. (NEO-12722)
-* È stato risolto un problema sulle query che utilizzano le funzioni data con una connessione FDA Hadoop. (NEO-12847)
+* È stato risolto un problema sulle query che utilizzano le funzioni data con una connessione al Hadoop FDA. (NEO-12847)
 * È stato risolto un problema che si verificava durante la sostituzione di un’immagine nell’editor e-mail. (NEO-13098)
 * È stato risolto un problema che poteva causare errori post-aggiornamento nelle cartelle che erano state eliminate o spostate in un altro percorso. (NEO-13118)
 * È stato risolto un problema nella visualizzazione dell&#39;immagine quando si utilizzava l&#39;opzione **Definisci immagine per dimensione schermo dispositivo** nei messaggi LINE. (NEO-13228)
@@ -167,13 +167,13 @@ _SDK per Campaign Mobile_
 * È stato risolto un problema relativo alle chiavi DKIM che non erano incorporate nelle e-mail. (NEO-16804)
 * È stato risolto un problema che visualizzava il codice di errore errato quando veniva utilizzato un token di sessione non valido nel contesto di chiamate API per attivare gli eventi. Il codice di errore era &quot;HTTP 200 OK&quot; invece di &quot;HTTP 403 Forbidden&quot;. (NEO-16826)
 * È stato risolto un problema che si verificava durante la visualizzazione dei rapporti di consegna tramite accesso web. (NEO-17015)
-* È stato risolto un problema di autenticazione IMS che si verificava all’accesso ad Adobe Campaign. (NEO-17312)
+* È stato risolto un problema di autenticazione IMS durante l’accesso ad Adobe Campaign. (NEO-17312)
 * È stato risolto un problema che impediva l’eliminazione delle e-mail messe in quarantena dal processo di gestione della privacy. (NEO-17314)
 * Sono stati risolti i problemi di throughput dopo l&#39;aggiornamento a 9031 con il database SQL. (NEO-17558)
 * È stato risolto un problema che interessava il connettore di gestione delle relazioni con i clienti con Salesforce. (NEO-17712)
 * È stato risolto un problema di timeout durante l’importazione di dati da un SFTP esterno. (NEO-19723)
 * È stato risolto un problema che si verificava all’accesso ai modelli Predictive. (NEO-19713)
-* È stato risolto un problema che interessava il campionamento casuale nell’attività del flusso di lavoro **Split** con il database FDA Hadoop. (NEO-16636)
-* È stata corretta una regressione su Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l&#39;aggiornamento. (NEO-12759)
+* È stato risolto un problema che interessava il campionamento casuale nell’attività del flusso di lavoro **Split** con database FDA di Hadoop. (NEO-16636)
+* È stata corretta una regressione sull’Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l’aggiornamento. (NEO-12759)
 
 
