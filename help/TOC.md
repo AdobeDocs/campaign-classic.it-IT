@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: de017afc1e5d30b561ed2bb7485756f30ef8778a
+source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2464'
 ht-degree: 56%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 56%
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
    + [Note tecniche](technotes/technote.md)
    + [Aggiornamento certificato iOS](technotes/ios-certificate-update.md)
+   + [Aggiornamenti alla configurazione di Campaign](technotes/acc-config-updates.md)
 + Introduzione {#getting-started}
    + Inizia con Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -228,7 +229,7 @@ ht-degree: 56%
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per ripetere il coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database Denylist](delivery/using/block-list-databases.md)
+      + [Database Elenco Bloccati](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
