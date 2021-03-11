@@ -1,13 +1,13 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Utilizza il tuo Adobe ID  in Campaign
-description: Scopri di più sull'integrazione  Adobe IMS
+title: Utilizza il tuo Adobe ID in Campaign
+description: Ulteriori informazioni sull’integrazione Adobe IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 24%
@@ -15,11 +15,11 @@ ht-degree: 24%
 ---
 
 
-# Informazioni su  Adobe ID{#about-adobe-id}
+# Informazioni su Adobe ID{#about-adobe-id}
 
- Adobe  Identity Management System (IMS) consente agli amministratori di creare e gestire l&#39;accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID Adobe, vedere [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) consente agli amministratori di creare e gestire l’accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID Adobe, consulta [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
-Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizzando il proprio Adobe ID . Questa integrazione offre i seguenti vantaggi:
+Gli utenti di Campaign possono connettersi alla console Adobe Campaign utilizzando il proprio Adobe ID. Questa integrazione offre i seguenti vantaggi:
 
 * Lo stesso ID può essere utilizzato per tutte le soluzioni Experience Cloud.
 * Il collegamento viene memorizzato quando si utilizza Adobe Campaign con diverse integrazioni.
@@ -29,7 +29,7 @@ Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizza
 
 >[!IMPORTANT]
 >
->Se ti connetti a Campaign tramite  Adobe Identity Service (IMS), devi eseguire l&#39;aggiornamento alla build più recente per poterti connettere a Campaign dopo il **31 marzo 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client. A seconda della versione corrente, è necessario effettuare l’aggiornamento a una delle seguenti versioni:
+>Se ti connetti a Campaign tramite Adobe Identity Service (IMS), devi effettuare l’aggiornamento alla build più recente per poterti connettere a Campaign dopo il **30 giugno 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client. A seconda della versione corrente, è necessario effettuare l’aggiornamento a una delle seguenti versioni:
 >
 > * [Campaign Gold Standard 11](../../rn/using/gold-standard.md)
 > * [Campaign 20.3.3](../../rn/using/latest-release.md)
@@ -37,6 +37,7 @@ Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizza
 > * [Campaign 20.1.4](../../rn/using/release--20-1.md)
 > * [Campaign 19.2.4](../../rn/using/release--19-2.md)
 > * [Campaign 19.1.8](../../rn/using/release--19-1.md)
+
 >
 
 
@@ -45,6 +46,6 @@ Gli utenti di Campaign possono connettersi alla console  Adobe Campaign utilizza
 
 | Pagine utili | Risorse aggiuntive |
 |---|---|
-| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti  Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti su Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementazione di IMS](../../integrations/using/implementing-ims.md) | [Gestione degli accessi](../../platform/using/access-management.md) |
-| [Risoluzione dei problemi IMS](../../integrations/using/ims-troubleshooting.md) | [Installazione di pacchetti Campaign](../../installation/using/installing-campaign-standard-packages.md) |
+| [Risoluzione dei problemi IMS](../../integrations/using/ims-troubleshooting.md) | [Installazione dei pacchetti Campaign](../../installation/using/installing-campaign-standard-packages.md) |
