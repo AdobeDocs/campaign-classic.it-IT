@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ _23 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **31 marzo 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
    >
    > 
 * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
@@ -58,7 +58,7 @@ _17 febbraio 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Snowflake è un data warehouse cloud completamente gestito costruito per scalare sia a livello di storage che di calcolo. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza di Snowflake per eseguire la segmentazione dei big data. Questo connettore è disponibile per tutti i clienti, incluso in hosting presso Adobe.</p>
+   <td> <p>Snowflake è un data warehouse cloud completamente gestito costruito per scalare sia a livello di storage che di calcolo. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza del Snowflake per eseguire la segmentazione dei big data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
     <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-snowflake.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">video tutorial</a>.</p>
    </td> 
   </tr> 
@@ -68,12 +68,12 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Miglioramenti del connettore FDA Hadoop</strong><br /> </th> 
+   <th> <strong>Miglioramenti al connettore FDA di hadoop</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Il connettore FDA Hadoop è stato migliorato per supportare Hadoop 3.0 e Cloudera.</p>
+   <td> <p>Il connettore FDA del Hadoop è stato migliorato per supportare il Hadoop 3.0 e Cloudera.</p>
     <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-hadoop.md">documentazione dettagliata</a>.</p>
    </td> 
   </tr> 
@@ -132,13 +132,13 @@ _17 febbraio 2020_
 
 **Patch**
 
-* È stato risolto un problema di crittografia della chiave dell’account quando si utilizzava il connettore Hadoop.
+* È stato risolto un problema di crittografia della chiave dell’account quando si utilizzava il connettore del Hadoop.
 
 * È stato risolto un problema di regressione a causa dell’implementazione della certificazione SSL che causava un errore della connessione utente sul server Windows. (NEO-20629)
 
 * È stato risolto un problema relativo all’attività di query incrementale in caso di ID flusso di lavoro negativi. (NEO-19779)
 
-* È stato risolto un problema di codifica durante l’esecuzione di query tramite il connettore Netezza FDA. (NEO-19594)
+* È stato risolto un problema di codifica durante l’esecuzione di query tramite il connettore FDA Netezza. (NEO-19594)
 
 * È stato risolto un problema che causava un errore durante l&#39;utilizzo del metodo POST nell&#39;attività dell&#39;evento del flusso di lavoro **Download Web** .
 
@@ -184,7 +184,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava il costante errore dell’ **Importazione di tipi di pubblico dal flusso di lavoro tecnico Adobe Experience Cloud** . (NEO-18463)
+* È stato risolto un problema che causava un costante errore del **Import audiences from the Adobe Experience Cloud** technical workflow tp. (NEO-18463)
 
 * È stato risolto un problema che impediva l’invio di consegne durante l’utilizzo di modelli importati da Experience Manager. (NEO-17540)
 
