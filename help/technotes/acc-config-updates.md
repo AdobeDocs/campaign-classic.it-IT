@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Gli utenti di Campaign devono effettuare l’aggiornamento a una delle versioni 
 
 Queste build garantiscono la continuità di alcuni servizi Campaign: Experience Cloud Triggers integrazione, autenticazione APN e il nuovo protocollo di connessione che influisce sul meccanismo di autenticazione di Adobe Identity Management Service (IMS).
 
-Come cliente in hosting, non è necessaria alcuna azione: Adobe è il proprietario degli aggiornamenti di configurazione e aggiornamento della build.
+In qualità di cliente in hosting, Adobe ti informerà a intervalli regolari degli aggiornamenti di build richiesti. Devi eseguire l’aggiornamento in conformità alle raccomandazioni per garantire la conformità.
 
 In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni elencate in precedenza. Inoltre, è necessario eseguire alcune attività manuali per garantire che l’ambiente sia sicuro e pronto per le imminenti modifiche da sistemi di Adobe o di terze parti.
 
