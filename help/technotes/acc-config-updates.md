@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '918'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # Aggiornamenti alla configurazione di Adobe Campaign - marzo 2021 {#acc-config-updates}
 
-È necessario aggiornare l’infrastruttura e le impostazioni con le build e le correzioni più recenti dei prodotti. Queste correzioni sono obbligatorie per garantire la continuità del servizio e la sicurezza.
+È necessario mantenere aggiornata l&#39;infrastruttura e le impostazioni con le build e le correzioni più recenti dei prodotti. Queste correzioni sono obbligatorie per garantire la continuità del servizio e la sicurezza.
 
 Gli utenti di Campaign devono effettuare l’aggiornamento a una delle versioni più recenti di seguito:
 
@@ -34,6 +34,10 @@ In qualità di cliente in hosting, Adobe ti informerà a intervalli regolari deg
 
 In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni elencate in precedenza. Inoltre, è necessario eseguire alcune attività manuali per garantire che l’ambiente sia sicuro e pronto per le imminenti modifiche da sistemi di Adobe o di terze parti.
 
+>[!NOTE]
+>
+>Per qualsiasi domanda su queste modifiche, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 ## Aggiornamenti di sicurezza
 
 Le versioni più recenti di Campaign presentano una correzione di sicurezza che rafforza la protezione contro i problemi SSRF (Server Side Request Forgery). Ulteriori informazioni [in questa pagina](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html).
@@ -48,7 +52,7 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 
 * In qualità di cliente ibrido, Adobe aggiornerà l’istanza di mid-sourcing alla nuova versione e ti consigliamo vivamente di aggiornare anche la propria istanza di marketing.
 
-   La nuova build è compatibile con almeno Campaign Classic versione 17.9, ma per evitare problemi di sicurezza, Adobe consiglia vivamente di aggiornare tutte le istanze a una nuova build. 
+   La nuova build è compatibile con almeno Campaign Classic 17.9, ma per evitare problemi di sicurezza, Adobe consiglia vivamente di aggiornare tutte le istanze a una nuova build. 
 
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare le istanze di marketing e mid-sourcing a una build più recente.
 
@@ -69,7 +73,7 @@ IMS (Adobe Identity Service) cesserà di supportare le versioni precedenti di In
 
 **Siete interessati?**
 
-Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite il servizio Adobe Identity (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate in precedenza. Questa versione include un nuovo protocollo di connessione: l’aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite il servizio Adobe Identity (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate in precedenza. Queste versioni sono dotate di un nuovo protocollo di connessione: l’aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 
 **Come si aggiorna?**
 
