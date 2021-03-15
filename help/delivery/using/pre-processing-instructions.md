@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,9 @@ Si applicano solo nel contesto del contenuto di consegna. È l’unico modo per 
 
 Sono disponibili tre tipi di istruzioni:
 
-* &quot;**include**&quot;: principalmente per fattorizzare un po&#39; di codice in opzioni, blocchi di personalizzazione, file esterni o pagine
-* &quot;**value**&quot;: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna
-* &quot;**foreach**&quot;: per eseguire il ciclo continuo di una matrice caricata come oggetto personalizzato.
+* **[!DNL include]**: principalmente per rendere fattoriale un certo codice in opzioni, blocchi di personalizzazione, file esterni o pagine. [Ulteriori informazioni](#include)
+* &quot;**[!DNL value]**&quot;: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
+* &quot;**[!DNL foreach]**&quot;: per eseguire il ciclo continuo di una matrice caricata come oggetto personalizzato. [Ulteriori informazioni](#foreach)
 
 Possono essere testati direttamente dalla procedura guidata di consegna. Si applicano nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
 
@@ -33,15 +33,33 @@ Possono essere testati direttamente dalla procedura guidata di consegna. Si appl
 
 Gli esempi seguenti sono tra i più utilizzati:
 
-* Incluso il collegamento alla pagina speculare: `<%@ include view="MirrorPage" %>`
-* URL pagina speculare: &quot;Visualizza come `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
-* URL di annullamento della sottoscrizione predefinito: `<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
-* Altri esempi:
-   * `<%@ include file='http://www.google.com' %>`
-   * `<%@ include file='file:///X:/france/service/test.html' %>`
-   * `<%@ include option='NmsServer_URL' %>`
+* Incluso il collegamento alla pagina speculare:
 
-Utilizza il pulsante di personalizzazione nella procedura guidata di consegna per ottenere la sintassi corretta.
+   ```
+   <%@ include view="MirrorPage" %>  
+   ```
+
+* URL pagina speculare:
+
+   ```
+   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+   ```
+
+* URL di annullamento della sottoscrizione predefinito:
+
+   ```
+   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+   ```
+
+* Altri esempi:
+
+   ```
+   <%@ include file='http://www.google.com' %>
+   <%@ include file='file:///X:/france/service/test.html' %>
+   <%@ include option='NmsServer_URL' %>
+   ```
+
+   Utilizza il pulsante di personalizzazione nella procedura guidata di consegna per ottenere la sintassi corretta.
 
 ## [!DNL value] {#value}
 
@@ -49,7 +67,9 @@ Questa istruzione fornisce l’accesso ai parametri della consegna costanti per 
 
 Sintassi:
 
-`<%@ value object="myObject" xpath="@myField" index="1" %>`
+```
+<%@ value object="myObject" xpath="@myField" index="1" %>
+```
 
 Dove:
 
@@ -66,19 +86,30 @@ L&#39;oggetto può essere:
 
 Per la personalizzazione delle e-mail, l’oggetto di consegna è accessibile in due modi:
 
-* In JavaScript. Ad esempio: `<%= delivery.myField %>`.
+* Utilizzando JavaScript:
+
+   ```
+   <%= delivery.myField %>`.
+   ```
 
    I campi personalizzati di consegna oggetti JavaScript non sono supportati. Funzionano nell’anteprima, ma non nell’MTA perché l’MTA può accedere solo allo schema di consegna predefinito.
 
-* Tramite la pre-elaborazione di `<%@ value object="delivery"`.
+* Utilizzo di una pre-elaborazione:
 
-Per l’istruzione `<%@ value object="delivery" xpath="@myCustomField" %>`, esiste un altro limite per le consegne inviate tramite mid-sourcing. Il campo personalizzato @myCustomField deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che di mid-sourcing.
+   ```
+   <%@ value object="delivery"
+   ```
+
 
 >[!NOTE]
 >
->Per i parametri/variabili di consegna, utilizza la sintassi seguente (utilizzando l’oggetto di consegna):
+>* Per l’istruzione `<%@ value object="delivery" xpath="@myCustomField" %>`, esiste un altro limite per le consegne inviate tramite mid-sourcing. Il campo personalizzato @myCustomField deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che di mid-sourcing.
+   >
+   >
+* Per i parametri/variabili di consegna, utilizza la sintassi seguente (utilizzando l’oggetto di consegna):
 >
->`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+>
+`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### [!DNL value] in una sezione Javascript  {#value-in-javascript}
 
@@ -100,14 +131,16 @@ Questa istruzione consente l’iterazione su un array di oggetti caricati nella 
 
 Sintassi:
 
-`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+```
+<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
+```
 
 Dove:
 
-* &quot;object&quot;: nome dell’oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
-* &quot;xpath&quot; (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l’oggetto è la matrice su cui eseguire il ciclo.
-* &quot;index&quot; (facoltativo): se xpath non è &quot;.&quot; e l&#39;oggetto è un array stesso, l&#39;indice dell&#39;elemento dell&#39;oggetto (inizia da 0).
-* &quot;item&quot; (facoltativo): nome di un nuovo oggetto accessibile con il valore &lt;%@ all&#39;interno del ciclo foreach. Impostazione predefinita con il nome del collegamento nello schema.
+* **[!DNL object]**: nome dell’oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
+* **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l’oggetto è la matrice su cui eseguire il ciclo.
+* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e l&#39;oggetto è un array stesso, l&#39;indice dell&#39;elemento dell&#39;oggetto (inizia da 0).
+* **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con  &lt;> Impostazione predefinita con il nome del collegamento nello schema.
 
 Esempio:
 
