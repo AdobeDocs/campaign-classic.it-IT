@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -24,8 +24,8 @@ Si applicano solo nel contesto del contenuto di consegna. È l’unico modo per 
 Sono disponibili tre tipi di istruzioni:
 
 * **[!DNL include]**: principalmente per rendere fattoriale un certo codice in opzioni, blocchi di personalizzazione, file esterni o pagine. [Ulteriori informazioni](#include)
-* &quot;**[!DNL value]**&quot;: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
-* &quot;**[!DNL foreach]**&quot;: per eseguire il ciclo continuo di una matrice caricata come oggetto personalizzato. [Ulteriori informazioni](#foreach)
+* **[!DNL value]**: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
+* **[!DNL foreach]**: per eseguire il ciclo continuo di una matrice caricata come oggetto personalizzato. [Ulteriori informazioni](#foreach)
 
 Possono essere testati direttamente dalla procedura guidata di consegna. Si applicano nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
 
@@ -75,8 +75,8 @@ Dove:
 
 * **[!DNL object]**: nome dell&#39;oggetto (esempio: consegna, fornitore e così via).
 L&#39;oggetto può essere:
-   * &quot;consegna&quot;: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
-   * &quot;provider&quot;: per il provider/indirizzamento di consegna corrente (nms:externalAccount).
+   * **[!DNL delivery]**: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
+   * **[!DNL provider]**: per il provider/indirizzamento di consegna corrente (nms:externalAccount).
    * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungi oggetti nel contesto di esecuzione**.
    * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
 * **[!DNL xpath]**: xpath del campo.
@@ -101,22 +101,28 @@ Per la personalizzazione delle e-mail, l’oggetto di consegna è accessibile in
    ```
 
 
->[!NOTE]
->
->* Per l’istruzione `<%@ value object="delivery" xpath="@myCustomField" %>`, esiste un altro limite per le consegne inviate tramite mid-sourcing. Il campo personalizzato @myCustomField deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che di mid-sourcing.
-   >
-   >
-* Per i parametri/variabili di consegna, utilizza la sintassi seguente (utilizzando l’oggetto di consegna):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**Attenzione**
+
+Se utilizzi le seguenti istruzioni per le consegne inviate tramite mid-sourcing, il campo personalizzato **@myCustomField** deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che di mid-sourcing:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+Per i parametri/variabili di consegna, utilizza la sintassi seguente (utilizzando l’oggetto di consegna):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] in una sezione Javascript  {#value-in-javascript}
 
-Per consentire l&#39;utilizzo del valore &lt;%@ nelle sezioni JavaScript, due oggetti speciali vengono sostituiti con &lt;% e %>:
+Per consentire l&#39;uso del valore &lt;%@ nelle sezioni Javascript, due oggetti speciali vengono sostituiti con &lt;% e %>:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 Ad esempio:
 
@@ -127,7 +133,7 @@ Ad esempio:
 
 ## [!DNL foreach] {#foreach}
 
-Questa istruzione consente l’iterazione su un array di oggetti caricati nella consegna per tenere traccia dei singoli collegamenti relativi agli oggetti.
+Questa istruzione consente l&#39;iterazione su un array di oggetti caricati nella distribuzione per tenere traccia dei singoli collegamenti correlati agli oggetti.
 
 Sintassi:
 
@@ -135,18 +141,18 @@ Sintassi:
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
 ```
 
-Dove:
+Se:
 
-* **[!DNL object]**: nome dell’oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
-* **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l’oggetto è la matrice su cui eseguire il ciclo.
-* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e l&#39;oggetto è un array stesso, l&#39;indice dell&#39;elemento dell&#39;oggetto (inizia da 0).
+* **[!DNL object]**: il nome dell&#39;oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
+* **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo continuo. Il valore predefinito è &quot;.&quot;, ovvero l&#39;oggetto è l&#39;array su cui eseguire il ciclo continuo.
+* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e object è un array stesso, l&#39;indice item dell&#39;oggetto (inizia da 0).
 * **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con  &lt;> Impostazione predefinita con il nome del collegamento nello schema.
 
 Esempio:
 
-Nelle proprietà/personalizzazione di consegna, carica un array di articoli e una tabella di relazione tra destinatario e articoli.
+Nelle proprietà di consegna/personalizzazione, caricare un array di articoli e una tabella di relazioni tra il destinatario e gli articoli.
 
-La visualizzazione di collegamenti a questi articoli può essere effettuata semplicemente con un JavaScript come segue:
+La visualizzazione dei collegamenti a questi articoli può essere effettuata semplicemente con un JavaScript nel modo seguente:
 
 ```
 <%
@@ -157,12 +163,12 @@ La visualizzazione di collegamenti a questi articoli può essere effettuata semp
 %>
 ```
 
-Con questa soluzione, i collegamenti a tutti gli articoli vengono tracciati senza distinzione. Puoi sapere che un destinatario ha fatto clic su un collegamento a un articolo, ma non puoi sapere su quale articolo.
+Con questa soluzione, i collegamenti a tutti gli articoli vengono tracciati senza distinzione. Puoi sapere che un destinatario ha fatto clic su un collegamento articolo, ma non sai su quale articolo.
 
 La soluzione è:
 
-1. Precaricare tutti gli articoli possibili in un array di script aggiuntivo della consegna - articleList[] - il che significa che deve esserci un numero finito di articoli possibili.
-1. Scrivi una funzione JavaScript all&#39;inizio del contenuto.
+1. Precaricare tutti gli articoli possibili in un array di script aggiuntivo del recapito - articleList[] - il che significa che deve essere presente un numero limitato di articoli possibili.
+1. Scrivere una funzione JavaScript all&#39;inizio del contenuto.
 
    ```
    <%@ value object='startScript' %>
@@ -179,7 +185,7 @@ La soluzione è:
    }
    <%@ value object='endScript' %>
    ```
-1. Visualizza l&#39;articolo chiamando la funzione .
+1. Visualizzare l&#39;articolo chiamando la funzione.
 
    ```
    <%
