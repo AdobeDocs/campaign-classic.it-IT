@@ -6,10 +6,10 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '974'
+ht-degree: 5%
 
 ---
 
@@ -63,22 +63,21 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 
 ## Aggiornamento della console client di Campaign
 
-La build Gold Standard 11 più recente corregge una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. L’aggiornamento della console è obbligatorio.
+La build Gold Standard 11 più recente corregge una regressione che impediva l’utilizzo di alcuni componenti della console client, come il selettore data e la gestione immagini nelle consegne. L’aggiornamento della console è obbligatorio.
 
 [Ulteriori informazioni](../rn/using/gold-standard.md).
 
-
 >[!NOTE]
 >
->Gli aggiornamenti per altre versioni saranno presto disponibili.
+>La nuova console client per altre versioni sarà presto disponibile.
 
 ## Connettersi a Campaign tramite IMS
 
-IMS (Adobe Identity Service) cesserà di supportare le versioni precedenti di Internet Explorer a partire dal 30 giugno 2021. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). La console Campaign è stata aggiornata per garantire la compatibilità con IMS.
+IMS (Adobe Identity Service) cesserà di supportare le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). La console client di Campaign è stata aggiornata per garantire la compatibilità con Adobe IMS.
 
 **Siete interessati?**
 
-Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite il servizio Adobe Identity (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate in precedenza. Queste versioni sono dotate di un nuovo protocollo di connessione: l’aggiornamento è obbligatorio sia per il server Campaign che per la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite il servizio Adobe Identity (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate in precedenza. Queste versioni sono dotate di un nuovo protocollo di connessione: l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 
 **Come si aggiorna?**
 
@@ -110,7 +109,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 ## API del provider APN basato su HTTP/2
 
-Il servizio APN (Apple Push Notification Service) non supporterà più il protocollo binario legacy a partire dal 31 marzo 2021. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
+Il servizio APN (Apple Push Notification Service) non supporterà più il protocollo binario legacy a partire dal **31 marzo 2021**. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sei interessato?**
 
@@ -139,3 +138,11 @@ Come cliente in hosting, non è necessaria alcuna azione: Adobe ha già incorpor
 In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per garantire una transizione senza soluzione di continuità **prima del 29 marzo 2021**.
 
 [Scopri come incorporare il nuovo certificato](ios-certificate-update.md).
+
+
+## Collegamenti utili
+
+* [Aggiornare l’ambiente](../production/using/build-upgrade.md)
+* [Domande frequenti sull’aggiornamento della build](../platform/using/faq-build-upgrade.md)
+* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Rendere la nuova console client disponibile agli utenti](../installation/using/client-console-availability-for-windows.md)
