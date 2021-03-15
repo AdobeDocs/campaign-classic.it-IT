@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '772'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Fai riferimento a [questa pagina](../../platform/using/privacy-management.md) per informazioni generali su cosa è Privacy Management e sui passaggi di implementazione in Adobe Campaign. Troverai inoltre le best practice e una panoramica del processo utente e dei singoli utenti.
 
-## Personalizzazione URL
+## Personalizzazione URL {#url-personalization}
 
 Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di avere alcuna personalizzazione nella parte dell’URL relativa al nome host per evitare potenziali lacune nella sicurezza. Gli esempi seguenti non devono mai essere utilizzati in tutti gli attributi URL &lt;`a href="">` o `<img src="">`:
 
@@ -57,7 +57,7 @@ Per migliorare la sicurezza, nella build 19.1.4 (9032@3a9dc9c) è stato introdot
 >
 >Quando fai clic su un URL firmato non valido, viene restituito il seguente errore: &quot;Impossibile trovare l&#39;URL richiesto &quot;..&quot;.
 
-Inoltre, i clienti in hosting e ibridi nei rapporti Build 19.1.4 (9032@3a9dc9c e 9032@800be2e) e Campaign 20.2 possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+Inoltre, a partire dalla versione Campaign 20.2 e Gold Standard, i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
 
 Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi passaggi su tutti i server Campaign:
 
@@ -65,7 +65,7 @@ Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi
 1. Riavvia il servizio **nlserver** .
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
-I clienti che eseguono Build 19.1.4 (9032@3a9dc9c) possono riscontrare problemi con le consegne di notifiche push utilizzando un collegamento di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, Adobe consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracciamento:
+I clienti che eseguono Gold Standard 19.1.4 possono rilevare problemi con le consegne di notifiche push utilizzando un collegamento di tracciamento o con consegne che utilizzano tag di ancoraggio. In tal caso, Adobe consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracciamento:
 
 **I** clienti in hosting e ibridi devono contattare  [Customer ](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) Careto per disattivare questo meccanismo.
 
