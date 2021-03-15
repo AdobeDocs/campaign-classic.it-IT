@@ -6,10 +6,10 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 6%
+source-wordcount: '1026'
+ht-degree: 7%
 
 ---
 
@@ -105,7 +105,15 @@ Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vit
 
 **Siete interessati?**
 
-Se le istanze sono in esecuzione su una versione **precedente a Campaign 19.1.8, 20.2.4, Gold Standard 11**, utilizza una versione precedente dell’integrazione Triggers tramite autenticazione oAuth: **è necessario passare ad Adobe I/O**.
+Se le istanze sono in esecuzione su una versione **precedente a Campaign 19.1.8, 20.2.4, Gold Standard 11**, utilizza una versione precedente dell’integrazione Triggers tramite autenticazione oAuth: **è necessario eseguire l&#39;aggiornamento a una versione più recente e passare ad Adobe I/O**.
+
+L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio:
+
+* Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
+* Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
+* Campaign versione 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
+* Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
+* Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
 **Come si aggiorna?**
 
