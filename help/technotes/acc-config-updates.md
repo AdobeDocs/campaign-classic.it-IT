@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Le versioni più recenti di Campaign presentano una correzione di sicurezza che 
 
 **Siete interessati?**
 
-Se l’ambiente si trova in una build inferiore a Campaign 21.1, l’utente è interessato.
+Se l’ambiente si trova in una build inferiore a Campaign 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 o Gold Standard 11, l’utente è interessato.
 
 **Come si aggiorna?**
 
@@ -66,6 +66,11 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 La build Gold Standard 11 più recente corregge una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. L’aggiornamento della console è obbligatorio.
 
 [Ulteriori informazioni](../rn/using/gold-standard.md).
+
+
+>[!NOTE]
+>
+>Gli aggiornamenti per altre versioni saranno presto disponibili.
 
 ## Connettersi a Campaign tramite IMS
 
@@ -93,7 +98,7 @@ Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vit
 
 **Siete interessati?**
 
-Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth, **devi passare ad Adobe I/O**.
+Se l’ambiente si trova in una build inferiore a Campaign 19.1.8, 20.2.4, Gold Standard 11, utilizza una versione precedente dell’integrazione Triggers tramite autenticazione oAuth: **è necessario passare ad Adobe I/O**.
 
 **Come si aggiorna?**
 
