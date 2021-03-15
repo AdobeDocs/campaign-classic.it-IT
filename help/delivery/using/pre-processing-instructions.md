@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 1%
 
 # Istruzioni per la preelaborazione {#pre-processing-instructions}
 
-Le istruzioni &lt;%@ non sono JavaScript, la sintassi è specifica di Adobe Campaign.
+Puoi utilizzare una sintassi specifica nel contenuto della consegna per aggiungere istruzioni e creare uno script per l’URL dell’e-mail tracciata. Le istruzioni &lt;%@ non sono JavaScript: questa sintassi è specifica di Adobe Campaign.
 
 Si applicano solo nel contesto del contenuto di consegna. È l’unico modo per creare uno script per l’URL di un’e-mail e tenerlo tracciato (oltre ai parametri URL). Possono essere visualizzati come una copia/incolla automatica applicata durante l’analisi della consegna prima di rilevare i collegamenti da tracciare.
 
 Sono disponibili tre tipi di istruzioni:
 
-* &quot;**include**&quot;: principalmente per fattorizzare alcuni codici in opzioni, blocchi di personalizzazione, file esterni o pagine
+* &quot;**include**&quot;: principalmente per fattorizzare un po&#39; di codice in opzioni, blocchi di personalizzazione, file esterni o pagine
 * &quot;**value**&quot;: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna
 * &quot;**foreach**&quot;: per eseguire il ciclo continuo di una matrice caricata come oggetto personalizzato.
 
 Possono essere testati direttamente dalla procedura guidata di consegna. Si applicano nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
 
-## &lt;>{#include}
+## [!DNL include] {#include}
 
 Gli esempi seguenti sono tra i più utilizzati:
 
@@ -43,7 +43,7 @@ Gli esempi seguenti sono tra i più utilizzati:
 
 Utilizza il pulsante di personalizzazione nella procedura guidata di consegna per ottenere la sintassi corretta.
 
-## &lt;>{#value}
+## [!DNL value] {#value}
 
 Questa istruzione fornisce l’accesso ai parametri della consegna costanti per tutti i destinatari.
 
@@ -53,18 +53,16 @@ Sintassi:
 
 Dove:
 
-* &quot;object&quot;: nome dell&#39;oggetto (esempio: consegna, fornitore e così via).
-* &quot;xpath&quot;: xpath del campo.
-* &quot;index&quot; (facoltativo): se &quot;object&quot; è una matrice (per oggetti script aggiuntivi), l&#39;indice di elemento nella matrice (Starts at 0).
-
+* **[!DNL object]**: nome dell&#39;oggetto (esempio: consegna, fornitore e così via).
 L&#39;oggetto può essere:
+   * &quot;consegna&quot;: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
+   * &quot;provider&quot;: per il provider/indirizzamento di consegna corrente (nms:externalAccount).
+   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungi oggetti nel contesto di esecuzione**.
+   * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
+* **[!DNL xpath]**: xpath del campo.
+* **[!DNL index]** (facoltativo): se  **[!DNL object]** è un array (per oggetti script aggiuntivi), l&#39;indice dell&#39;elemento nell&#39;array (Starts at 0).
 
-* &quot;consegna&quot;: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
-* &quot;provider&quot;: per il provider/indirizzamento di consegna corrente (nms:externalAccount).
-* Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungi oggetti nel contesto di esecuzione**.
-* Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
-
-### oggetto &quot;delivery&quot; {#delivery-object}
+### [!DNL delivery] oggetto {#delivery-object}
 
 Per la personalizzazione delle e-mail, l’oggetto di consegna è accessibile in due modi:
 
@@ -82,9 +80,9 @@ Per l’istruzione `<%@ value object="delivery" xpath="@myCustomField" %>`, esis
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#value-in-javascript}
+### [!DNL value] in una sezione Javascript  {#value-in-javascript}
 
-Per consentire l&#39;utilizzo del valore &lt;%@ nelle sezioni di script, due oggetti speciali vengono sostituiti con &lt;% e %>:
+Per consentire l&#39;utilizzo del valore &lt;%@ nelle sezioni JavaScript, due oggetti speciali vengono sostituiti con &lt;% e %>:
 
 * `<%@ value object='startScript' %>`
 * `<%@ value object='endScript' %>`
@@ -96,7 +94,7 @@ Ad esempio:
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#foreach}
+## [!DNL foreach] {#foreach}
 
 Questa istruzione consente l’iterazione su un array di oggetti caricati nella consegna per tenere traccia dei singoli collegamenti relativi agli oggetti.
 
