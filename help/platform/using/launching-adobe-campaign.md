@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 8%
 
 ---
@@ -17,66 +17,66 @@ ht-degree: 8%
 
 # Avvio di Adobe Campaign{#launching-adobe-campaign}
 
-La console Client campagna è un client avanzato che consente di connettersi ai server delle applicazioni Campaign. Scopri come scaricare e configurare la console client in [questa pagina](../../installation/using/installing-the-client-console.md).
+La console Client di Campaign è un client avanzato che consente di connettersi ai server delle applicazioni Campaign. Scopri come scaricare e configurare la console client in [questa pagina](../../installation/using/installing-the-client-console.md).
 
-## Avvio  Adobe Campaign {#starting-adobe-campaign}
+## Avvio di Adobe Campaign {#starting-adobe-campaign}
 
-È possibile avviare  Adobe Campaign selezionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+Puoi avviare Adobe Campaign selezionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
-La finestra di connessione della console client consente di selezionare o configurare i database esistenti e di collegarli utilizzando un nome utente e una password:
+La finestra di connessione della console client consente di selezionare o configurare i database esistenti e di connettersi ad essi utilizzando un nome utente e una password:
 
 ![](assets/acc-logon.png)
 
-## Connessione a  Adobe Campaign {#connecting-to-adobe-campaign}
+## Connessione ad Adobe Campaign {#connecting-to-adobe-campaign}
 
-È possibile connettersi a  Adobe Campaign utilizzando l&#39;Adobe ID . Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
+Puoi connetterti ad Adobe Campaign utilizzando il tuo Adobe ID. Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
 
-È inoltre possibile connettersi con un login/password dedicato:
+Puoi anche effettuare la connessione con un login/password dedicato:
 
-1. Immettere l&#39;identificatore dell&#39;account dell&#39;operatore nel campo **[!UICONTROL Login]**.
+1. Immetti l’identificatore dell’account operatore nel campo **[!UICONTROL Login]** .
 
-   L’identificatore viene fornito dall’amministratore della piattaforma  Adobe Campaign.
+   L’amministratore della piattaforma Adobe Campaign fornisce l’identificatore .
 
-1. Immettere la password nel campo **[!UICONTROL Password]**.
+1. Immetti la password nel campo **[!UICONTROL Password]** .
 
-   La prima volta che accedete al database, la password è quella fornita dall&#39;amministratore. Una volta connessi, è possibile cambiare la password tramite il menu **[!UICONTROL Tools > Change password...]**. Informazioni sugli operatori e le connessioni sono disponibili in [Gestione degli accessi](../../platform/using/access-management.md).
+   La prima volta che accedi al database, la password viene fornita dall&#39;amministratore. Una volta connesso, è possibile modificare la password tramite il menu **[!UICONTROL Tools > Change password...]**. I dettagli sugli operatori e le connessioni sono disponibili in [Gestione accessi](../../platform/using/access-management.md).
 
 1. Fare clic su **[!UICONTROL LOG IN]** per confermare.<!--You can also press the **Enter** key to launch connection.-->
 
-È ora possibile accedere a [ area di lavoro Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+Ora è possibile accedere a [Area di lavoro Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 
 Alcune scelte rapide da tastiera sono disponibili in **[!UICONTROL Sign in screen]**:
-* Tutti gli elementi attivabili sono selezionabili mediante il tasto **Tab** (dall&#39;alto verso il basso) o i tasti **Tab** + **Maiusc** (dal basso verso l&#39;alto).
-* Per avviare la connessione, è inoltre possibile premere il tasto **Invio**.
-* È possibile utilizzare il tasto **Escape** per ripristinare i campi **[!UICONTROL Login]** e **[!UICONTROL Password]** agli ultimi valori di connessione con esito positivo.
+* Tutti gli elementi utilizzabili sono selezionabili tramite i tasti **Tab** (dall&#39;alto verso il basso) o **Tab** + **Maiusc** (dal basso verso l&#39;alto).
+* Per avviare la connessione, puoi anche premere il tasto **Invio**.
+* Puoi usare il tasto **Esc** per reimpostare i campi **[!UICONTROL Login]** e **[!UICONTROL Password]** sugli ultimi valori di connessione riusciti.
 
 ## Configurazione delle connessioni {#setting-up-connections}
 
-È possibile accedere alle impostazioni di connessione del server tramite il collegamento situato sopra la zona di input.
+Puoi accedere alle impostazioni di connessione al server tramite il collegamento situato sopra la zona di input.
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Nella finestra **[!UICONTROL Connections]**, fare clic su **[!UICONTROL Add > Connection]**.
+Nella finestra **[!UICONTROL Connections]**, fai clic su **[!UICONTROL Add > Connection]**.
 
 È quindi necessario definire le impostazioni di connessione. Per eseguire questa operazione:
 
-1. Immettete un **[!UICONTROL Label]** per assegnare un nome alla connessione al database.
+1. Immettere un **[!UICONTROL Label]** per assegnare un nome alla connessione al database.
 
-1. Aggiungete l&#39;indirizzo del server applicazione nel campo **[!UICONTROL URL]**. Se non conoscete l’URL della connessione, rivolgetevi all’amministratore.
+1. Aggiungi l&#39;indirizzo dell&#39;application server nel campo **[!UICONTROL URL]** . Se non conosci l’URL di connessione, contatta l’amministratore.
 
-1. Verificare **[!UICONTROL Connect with an Adobe ID]** che gli operatori possano connettersi alla console utilizzando il proprio Adobe ID . Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
+1. Controlla **[!UICONTROL Connect with an Adobe ID]** che gli operatori si connettano alla console utilizzando il proprio Adobe ID. Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
 
-1. Fare clic su **[!UICONTROL OK]** per eseguire la convalida.
+1. Fai clic su **[!UICONTROL OK]** per convalidare.
 
 ## Operatori e autorizzazioni {#operators-and-permissions}
 
-Gli identificatori e le password degli operatori con accesso al software e le rispettive autorizzazioni sono definiti dall&#39;amministratore di sistema Adobe Campaign  nel nodo **[!UICONTROL Administration > Access management > Operators]** della struttura  Adobe Campaign.
+Gli identificatori e le password degli operatori con accesso al software e alle relative autorizzazioni sono definiti dall’amministratore di sistema di Adobe Campaign nel nodo **[!UICONTROL Administration > Access management > Operators]** della struttura Adobe Campaign.
 
-Questa funzionalità è dettagliata nella sezione [Gestione degli accessi](../../platform/using/access-management.md).
+Questa funzionalità è descritta nella sezione [Gestione accessi](../../platform/using/access-management.md) .
 
-## Disconnessione da  Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Disconnessione da Adobe Campaign {#disconnecting-from-adobe-campaign}
 
-Per disconnettersi da  Adobe Campaign, utilizzate la prima icona nella barra delle icone.
+Per disconnettersi da Adobe Campaign, utilizza la prima icona nella barra delle icone.
 
 ![](assets/s_ncs_user_deconnexion.png)
 
@@ -84,20 +84,20 @@ Per disconnettersi da  Adobe Campaign, utilizzate la prima icona nella barra del
 >
 >È inoltre possibile chiudere l&#39;applicazione senza prima disconnettersi.
 
-## Ottenimento della versione Adobe Campaign  {#getting-your-campaign-version}
+## Ottenere la versione Adobe Campaign {#getting-your-campaign-version}
 
-Il menu **[!UICONTROL Help > About...]** consente di accedere alle informazioni seguenti:
+Il menu **[!UICONTROL Help > About...]** ti consente di accedere alle seguenti informazioni:
 
-* **Numero di** versione per la console client Campaign e il server applicazione
-* **Numero** build per la console client di Campaign e il server applicazione
-* un collegamento per contattare &#39;Assistenza clienti del Adobe
-* collegamenti  Informativa sulla privacy del Adobe, Termini d&#39;uso e Informativa sui cookie
+* **Numero di versione** per la console del client Campaign e il server applicazioni
+* **Numero build** per la console del client Campaign e il server applicazioni
+* un collegamento per contattare l’Assistenza clienti Adobe
+* collegamenti ad Adobe Privacy Policy, Condizioni d&#39;uso e Politica sui cookie
 
 ![](assets/about-acc.png)
 
-Ogni volta che contattate  team di assistenza clienti di Adobe, dovete fornire il numero di versione e il numero di build della console client e del server applicazioni di Adobe Campaign .
+Ogni volta che ti rivolgi al team di assistenza clienti di Adobe, devi fornire il numero di versione e il numero di build della console client e del server applicazioni di Adobe Campaign.
 
-Se si è in esecuzione su [Campaign Gold Standard version](../../rn/using/gold-standard.md), è inoltre necessario condividere i caratteri SHA/1 visualizzati nella casella **[!UICONTROL About]**. Ad esempio, per Gold **Standard 10 release**, il numero di build mostrerà **build 9032@efd8a94**, come illustrato di seguito:
+Se utilizzi [Campaign Gold Standard versione](../../rn/using/gold-standard.md), devi anche condividere i caratteri SHA/1 visualizzati nella casella **[!UICONTROL About]**. Ad esempio, per la versione Gold **Standard 10**, il numero di build mostrerà **build 9032@efd8a94**, come illustrato di seguito:
 
 ![](assets/about-acc-gs.png)
 
@@ -105,6 +105,6 @@ Ulteriori informazioni su Gold Standard [in questo articolo](https://helpx.adobe
 
 **Argomenti correlati**:
 
-* [ opzioni di Guida e supporto di Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/ac-support.html#acc-support)
-* [Distribuzione  software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Guida e opzioni di supporto per Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
+* [Distribuzione di software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Sessioni Adobe Experience Cloud Support ed Expert](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
