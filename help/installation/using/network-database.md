@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ Quando è possibile, utilizza un canale sicuro: POP3S invece POP3 (o POP3 su TLS
 
 ## Database
 
-È fondamentale che tu segua la tua sicurezza del motore di database.
+È necessario applicare le best practice relative alla sicurezza del motore di database.
 
-### Configurazione SSL/TLS*
+## Configurazione SSL/TLS
 
 Per controllare il certificato, puoi utilizzare openssl. Per controllare i caratteri attivi, puoi utilizzare nmap:
 
