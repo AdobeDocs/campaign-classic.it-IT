@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
+source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1031'
 ht-degree: 7%
 
 ---
@@ -101,7 +101,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 ## Integrazione con Experience Cloud Triggers
 
-Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il **30 aprile 2021**. [Ulteriori informazioni](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAuth authentication setup per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il **30 aprile 2021**. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Siete interessati?**
 
