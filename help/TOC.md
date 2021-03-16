@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -182,10 +182,10 @@ ht-degree: 56%
       + [Caso di utilizzo: seleziona gli indirizzi di seed in base ai criteri](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Caso di utilizzo: configurare la sostituzione del campo](delivery/using/use-case--configuring-the-field-substitution.md)
    + Test A/B {#a-b-testing}
-      + [Guida introduttiva al test A/B](delivery/using/get-started-a-b-testing.md)
+      + [Introduzione ai test A/B](delivery/using/get-started-a-b-testing.md)
       + [Configurare il test A/B](delivery/using/configuring-a-b-testing.md)
       + Caso d’uso {#use-case}
-         + [Informazioni sul caso d’uso](delivery/using/a-b-testing-use-case.md)
+         + [Informazioni su questo caso d’uso](delivery/using/a-b-testing-use-case.md)
          + [Creare un flusso di lavoro di targeting](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Configurare i campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
          + [Creare i modelli di consegna](delivery/using/a-b-testing-uc-delivery-templates.md)
@@ -211,13 +211,13 @@ ht-degree: 56%
       + [Informazioni sul tracking dei messaggi](delivery/using/about-message-tracking.md)
       + [Come configurare collegamenti tracciati](delivery/using/how-to-configure-tracked-links.md)
       + Tracciare collegamenti personalizzati {#tracking-personalized-links}
-         + [Guida introduttiva al tracciamento dei collegamenti personalizzati](delivery/using/tracking-personalized-links.md)
+         + [Introduzione al tracciamento dei collegamenti personalizzati](delivery/using/tracking-personalized-links.md)
          + [Rilevare gli URL di tracciamento](delivery/using/detecting-tracking-urls.md)
          + [Istruzioni di pre-elaborazione per il tracciamento](delivery/using/pre-processing-instructions.md)
       + [Configurare le opzioni di tracciamento URL](delivery/using/personalizing-url-tracking.md)
       + [Accedere ai registri di tracciamento](delivery/using/accessing-the-tracking-logs.md)
       + [Tracciamento dei test](delivery/using/testing-tracking.md)
-      + [Risoluzione dei problemi di](delivery/using/tracking-troubleshooting.md)
+      + [Risoluzione dei problemi di tracciamento](delivery/using/tracking-troubleshooting.md)
    + Gestione del recapito messaggi {#deliverability-management}
       + [Informazioni sul recapito messaggi](delivery/using/about-deliverability.md)
       + [Punti chiave da verificare](delivery/using/deliverability-key-points.md)
@@ -229,7 +229,7 @@ ht-degree: 56%
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best practice per ripetere il coinvolgimento](delivery/using/re-engagement-best-practices.md)
-      + [Database Elenco Bloccati](delivery/using/block-list-databases.md)
+      + [Database Elenco bloccati](delivery/using/block-list-databases.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
    + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
