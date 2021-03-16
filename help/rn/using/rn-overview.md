@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ In qualità di utente Gold Standard in hosting, potrai beneficiare automaticamen
 
 ## Supporto e altri collegamenti utili{#support}
 
-* [Guida e supporto](https://helpx.adobe.com/it/campaign/kb/ac-support.html#acc-support)
+* [Guida e supporto](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
 * [Versioni del Pannello di controllo Campaign](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html)
 * [Ultimi aggiornamenti della documentazione](../../rn/using/documentation-updates.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
