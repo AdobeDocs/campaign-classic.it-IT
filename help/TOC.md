@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 57%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 57%
          + [Connettersi con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Sincronizzare i dati con il sistema CMR](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
+   + [Opzioni di assistenza e supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + Passaggi chiave durante la creazione di una consegna {#key-steps-when-creating-a-delivery}
