@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
 source-wordcount: '4170'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -40,27 +40,27 @@ Nella sezione dell&#39;attività **[!UICONTROL Advanced JavaScript]** sono state
 
 **Aggiornamenti alla documentazione in arrivo con la versione 21.1**
 
-La nuova funzionalità **Email Feedback Service** (versione beta privata) è documentata [qui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
+La documentazione della nuova funzionalità **Email Feedback Service** (versione beta privata) è disponibile [qui](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service).
 
-La sezione **File di configurazione del server** è stata aggiornata con i parametri di configurazione necessari affinché Campaign possa connettersi a un altro servizio utilizzando IMS. [Leggi tutto](../../installation/using/the-server-configuration-file.md#ims)
+La sezione sul **file di configurazione del server** è stata aggiornata con i parametri di configurazione necessari per la connessione di Campaign a un altro servizio utilizzando IMS. [Leggi tutto](../../installation/using/the-server-configuration-file.md#ims)
 
-Nell’elenco degli stati di consegna, la descrizione di **presa in considerazione dal provider di servizi** è stata aggiornata: questo stato viene ora utilizzato anche per le consegne e-mail inviate tramite il [Servizio feedback e-mail](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leggi tutto](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+Nell’elenco degli stati di consegna, la descrizione dello stato **Taken into account by the service provider** (Preso in considerazione dal fornitore di servizi) è stata aggiornata: questo stato viene ora utilizzato anche per le consegne e-mail inviate tramite il servizio di feedback e-mail, [Email Feedback Service](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service). [Leggi tutto](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
-Sono ora documentate le scelte rapide da tastiera disponibili nella nuova schermata di accesso per la connessione ad Adobe Campaign. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
+Sono ora documentate le scelte rapide da tastiera disponibili nella nuova schermata di accesso di Adobe Campaign. [Leggi tutto](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
 **Altri aggiornamenti**
 
 È stata aggiunta una nuova sezione con informazioni dettagliate su come eseguire test A/B utilizzando i flussi di lavoro. [Leggi tutto](../../delivery/using/get-started-a-b-testing.md)
 
-La sezione MTA avanzato di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
+La sezione sull’MTA avanzato di Adobe Campaign è stata spostata [qui](../../delivery/using/sending-with-enhanced-mta.md).
 
-È stata aggiunta una nuova pagina per fornire una panoramica delle funzionalità di tracciamento in [!DNL Campaign Classic]. [Leggi tutto](../../delivery/using/about-message-tracking.md)
+È stata aggiunta una nuova pagina che fornisce una panoramica delle funzionalità di tracciamento di [!DNL Campaign Classic]. [Leggi tutto](../../delivery/using/about-message-tracking.md)
 
 È stata aggiunta una sezione per la risoluzione dei problemi comuni relativi al tracciamento. [Leggi tutto](../../delivery/using/tracking-troubleshooting.md)
 
 La sezione **Invio di un messaggio e-mail** è stata riorganizzata e chiarita con nuove sottosezioni. [Leggi tutto](../../delivery/using/sending-messages.md)
 
-Sono state aggiunte informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Leggi tutto](../../delivery/using/tracking-personalized-links.md).
+Sono state aggiunte informazioni su come aggiungere alle e-mail collegamenti che possono essere personalizzati e che supportano il tracciamento. [Leggi tutto](../../delivery/using/tracking-personalized-links.md).
 
 ## Gennaio 2021 {#jan-2021}
 
