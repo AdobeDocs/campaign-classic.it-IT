@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Il flusso di lavoro di pulizia del database elimina i dati obsoleti per evitare 
 
 ## 3. Come posso configurare le aree di protezione? {#how-can-i-configure-security-zones-}
 
-L’interfaccia autonoma delle aree di protezione può essere utilizzata per gestire le voci nella configurazione della zona di protezione VPN di una distribuzione di Adobe Campaign Classic. Consulta [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones) per scoprire di più sulle aree di protezione in Campaign.
+L’interfaccia autonoma delle aree di protezione può essere utilizzata per gestire le voci nella configurazione della zona di protezione VPN di una distribuzione di Adobe Campaign Classic. Consulta [questa sezione](../../installation/using/security-zones.md) per scoprire di più sulle aree di protezione in Campaign.
 
 [Fai clic qui per ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/configuring-security-zones-self-service.html) sull’interfaccia utente autonoma delle aree di protezione.
 
