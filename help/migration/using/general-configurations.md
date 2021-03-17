@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Adobe Campaign v7 implica il concetto di **aree di sicurezza**. Per accedere a u
 
 **Dopo l&#39;aggiornamento**  (prima del riavvio del server), devi configurare le aree di protezione.
 
-La configurazione dell&#39;area di sicurezza si trova in [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+La configurazione dell&#39;area di sicurezza si trova in [questa sezione](../../installation/using/security-zones.md).
 
 ### Password utente {#user-passwords}
 
