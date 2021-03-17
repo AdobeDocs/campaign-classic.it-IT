@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 57%
+source-wordcount: '2470'
+ht-degree: 55%
 
 ---
 
@@ -380,11 +380,6 @@ ht-degree: 57%
       + [Integra con [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
-   + Connessione tramite Adobe ID {#connecting-via-an-adobe-id}
-      + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Configura Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementare un Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
-      + [Risoluzione dei problemi di IMS](integrations/using/ims-troubleshooting.md)
    + Connettore ACS {#acs-connector}
       + [[!DNL ACS Connector] principi e ciclo dei dati](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizza profili](integrations/using/synchronizing-profiles.md)
@@ -562,7 +557,7 @@ ht-degree: 57%
       + [Creare un ambiente di test](interaction/using/creating-a-test-environment.md)
       + [Hook](interaction/using/hooks.md)
       + [Architetture distribuite](interaction/using/distributed-architectures.md)
-      + [Zona buffer dati](interaction/using/data-buffer-zone.md)
+      + [Configurazione del buffer dati](installation/using/interaction---data-buffer.md)
    + Caso d’uso {#case-study}
       + [Regole di presentazione](interaction/using/presentation-rules.md)
       + [Offerte su un canale in entrata](interaction/using/offers-on-an-inbound-channel.md)
@@ -620,16 +615,8 @@ ht-degree: 57%
    + Principi di architettura {#architecture-and-hosting-models}
       + [Architettura generale](installation/using/general-architecture.md)
       + Modelli di hosting{#hosting-models-lp}
-         + [Informazioni sui modelli di hosting](installation/using/hosting-models.md)
-         + [Modello ibrido](installation/using/hybrid-model.md)
-         + [Modello in hosting](installation/using/hosted-model.md)
+         + [Modelli di hosting per campagne](installation/using/hosting-models.md)
          + [Matrice di capacità](installation/using/capability-matrix.md)
-   + Linee guida per la distribuzione {#deployment-guidelines}
-      + [Prerequisiti](installation/using/before-starting.md)
-      + [Server database](installation/using/database.md)
-      + [Server dell’applicazione](installation/using/application-server.md)
-      + [Server di messaggistica](installation/using/messaging-server.md)
-      + [Configurazione di rete](installation/using/network-configuration.md)
    + Tipi di distribuzione {#deployment-types-}
       + [Informazioni sui tipi di distribuzione](installation/using/about-deployment-types.md)
       + [Distribuzione autonoma](installation/using/standalone-deployment.md)
@@ -637,58 +624,70 @@ ht-degree: 57%
       + [Distribuzione aziendale](installation/using/enterprise-deployment.md)
       + [Distribuzione mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster e Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Campaign su Windows {#installing-campaign-in-windows-}
-      + [Prima di installare Campaign su Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
-      + [Installare il server](installation/using/installing-the-server.md)
-      + [Integrazione in un server web (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
-      + [Disponibilità della console del client per Windows](installation/using/client-console-availability-for-windows.md)
-      + [Installare la console client](installation/using/installing-the-client-console.md)
-   + Campaign su Linux  {#installing-campaign-in-linux-}
-      + [Prima di installare Campaign su Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
-      + [Installare i pacchetti](installation/using/installing-packages-with-linux.md)
-      + [Integrare in un server web (Linux)](installation/using/integration-into-a-web-server-for-linux.md)
-      + [Disponibilità della console del client per Linux](installation/using/client-console-availability-for-linux.md)
-   + Configurazione iniziale {#initial-configuration}
+   + Lista di controllo protezione e privacy {#security-privacy}
+      + [Guida introduttiva a protezione e privacy](installation/using/get-started-security-privacy.md)
+      + [Personalizzazione e privacy](installation/using/privacy.md)
+      + [Gestione sicura degli accessi](installation/using/access-management.md)
+      + [Linee guida per lo scripting e la codifica](installation/using/scripting-coding-guidelines.md)
+      + [Rete, database e SSL/TLS](installation/using/network-database.md)
+      + [Impostazioni di protezione del server](installation/using/server-configuration.md)
+      + [Impostazioni di protezione del server web](installation/using/web-server-configuration.md)
+   + Installa Campaign (on-premise){#install-campaign-on-prem}
+      + Linee guida per la distribuzione {#deployment-guidelines}
+         + [Server database](installation/using/database.md)
+         + [Server dell’applicazione](installation/using/application-server.md)
+         + [Server di messaggistica](installation/using/messaging-server.md)
+         + [Configurazione di rete](installation/using/network-configuration.md)
+      + Campaign su Windows {#installing-campaign-in-windows-}
+         + [Introduzione](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+         + [Installare il server](installation/using/installing-the-server.md)
+         + [Integrazione in un server web (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
+         + [Disponibilità della console del client per Windows](installation/using/client-console-availability-for-windows.md)
+      + Campaign su Linux {#installing-campaign-in-linux-}
+         + [Prerequisiti](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+         + [Installare i pacchetti](installation/using/installing-packages-with-linux.md)
+         + [Integrazione in un server web](installation/using/integration-into-a-web-server-for-linux.md)
+      + [Gestione del fuso orario](installation/using/time-zone-management.md)
+      + [Installare un server di mid-sourcing](installation/using/mid-sourcing-server.md)
+   + Distribuzione di Campaign (on-premise) {#initial-configuration}
       + [Informazioni sulla configurazione iniziale](installation/using/about-initial-configuration.md)
       + [Crea un&#39;istanza e accedi](installation/using/creating-an-instance-and-logging-on.md)
       + [Creare e configurare il database](installation/using/creating-and-configuring-the-database.md)
-      + [Configurazione del server Campaign](installation/using/campaign-server-configuration.md)
+      + [Configurare il server Campaign](installation/using/campaign-server-configuration.md)
       + [Distribuire un&#39;istanza](installation/using/deploying-an-instance.md)
-      + [Installare i pacchetti incorporati di Campaign Classic](installation/using/installing-campaign-standard-packages.md)
-   + Configurazioni aggiuntive {#additional-configurations}
-      + [Configurare il server Campaign](installation/using/configuring-campaign-server.md)
-      + [Connessione tramite LDAP](installation/using/connecting-through-ldap.md)
+      + [Installazione di pacchetti incorporati](installation/using/installing-campaign-standard-packages.md)
+   + Configura la campagna {#additional-configurations}
+      + [Impostazioni del server Campaign](installation/using/configuring-campaign-server.md)
+      + [Definire le aree di protezione](installation/using/security-zones.md)
       + [Configurazioni delle e-mail tecniche](installation/using/email-deliverability.md)
-      + [Archiviazione di e-mail](installation/using/email-archiving.md)
-      + [Gestione del fuso orario](installation/using/time-zone-management.md)
+      + [Configurare CCN e-mail](installation/using/email-archiving.md)
       + [Configurare SpamAssassin](installation/using/configuring-spamassassin.md)
-      + [Server di mid-sourcing](installation/using/mid-sourcing-server.md)
-      + [Interazione: buffer dati](installation/using/interaction---data-buffer.md)
+   + Connetti a Campaign{#connect-to-campaign}
+      + [Installare la console client](installation/using/installing-the-client-console.md)
+      + Connessione tramite Adobe ID {#connecting-via-an-adobe-id}
+         + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+         + [Configura Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
+         + [Implementare un Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
+         + [Risoluzione dei problemi di IMS](integrations/using/ims-troubleshooting.md)
+      + [Connessione tramite LDAP](installation/using/connecting-through-ldap.md)
+   + Collegare Campaign a sistemi esterni {#accessing-external-database}
       + [Configurare account esterni](installation/using/external-accounts.md)
-   + Accedere a un database esterno {#accessing-external-database}
-      + [Introduzione a FDA](installation/using/about-fda.md)
-      + Linee guida per la configurazione {#config-databases}
-         + [Passaggi di configurazione](installation/using/configure-fda.md)
-         + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
-         + [Configurare Azure Synapse](installation/using/configure-fda-synapse.md)
-         + [Configurare Hadoop](installation/using/configure-fda-hadoop.md)
-         + [Configurare Oracle](installation/using/configure-fda-oracle.md)
-         + [Configurare Netezza](installation/using/configure-fda-netezza.md)
-         + [Configurare Sybase IQ](installation/using/configure-fda-sybase.md)
-         + [Configurare Teradata](installation/using/configure-fda-teradata.md)
-         + [Configurare SAP HANA](installation/using/configure-fda-sap-hana.md)
-      + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
-      + [Connessione al database](installation/using/connecting-to-database.md)
-      + [Creare lo schema dati](installation/using/creating-data-schema.md)
-      + [Definire la mappatura dei dati](installation/using/defining-data-mapping.md)
-   + Lista di controllo protezione e privacy {#security-privacy}
-      + [Guida introduttiva a protezione e privacy](installation/using/get-started-security-privacy.md)
-      + [Privacy](installation/using/privacy.md)
-      + [Gestione degli accessi](installation/using/access-management.md)
-      + [Linee guida per lo scripting e la codifica](installation/using/scripting-coding-guidelines.md)
-      + [Rete, database e SSL/TLS](installation/using/network-database.md)
-      + [Configurazione del server](installation/using/server-configuration.md)
-      + [Configurazione server web](installation/using/web-server-configuration.md)
+      + Configurare Federated Data Access{#configure-fda}
+         + [Introduzione a Federated Data Access](installation/using/about-fda.md)
+         + Linee guida per la configurazione {#config-databases}
+            + [Passaggi di configurazione](installation/using/configure-fda.md)
+            + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Configurare Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [Configurare Hadoop](installation/using/configure-fda-hadoop.md)
+            + [Configurare Oracle](installation/using/configure-fda-oracle.md)
+            + [Configurare Netezza](installation/using/configure-fda-netezza.md)
+            + [Configurare Sybase IQ](installation/using/configure-fda-sybase.md)
+            + [Configurare Teradata](installation/using/configure-fda-teradata.md)
+            + [Configurare SAP HANA](installation/using/configure-fda-sap-hana.md)
+         + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
+         + [Connessione al database](installation/using/connecting-to-database.md)
+         + [Creare lo schema dati](installation/using/creating-data-schema.md)
+         + [Definire la mappatura dei dati](installation/using/defining-data-mapping.md)
    + Appendici {#appendices}
       + [File di configurazione del server](installation/using/the-server-configuration-file.md)
       + [Endpoint di rete per Campaign](installation/using/campaign-network-endpoints.md)
