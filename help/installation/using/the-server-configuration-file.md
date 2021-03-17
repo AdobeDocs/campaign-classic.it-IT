@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -21,7 +21,7 @@ La configurazione complessiva di Adobe Campaign è definita nel file **serverCon
 
 >[!NOTE]
 >
->Le configurazioni lato server possono essere eseguite solo da Adobe per le distribuzioni ospitate da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md). I passaggi di installazione e configurazione per i modelli in hosting e ibridi sono descritti in questa [sezione](../../installation/using/hosted-model.md).
+>Le configurazioni lato server possono essere eseguite solo da Adobe per le distribuzioni ospitate da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md). I passaggi di installazione e configurazione per i modelli in hosting e ibridi sono descritti in questa [sezione](../../installation/using/hosting-models.md).
 
 I primi parametri si trovano all&#39;interno del nodo **shared** . Sono correlati all’istanza. Sono potenzialmente utilizzati da tutti i comandi nlserver (nlserver web, nlserver wfserver, ecc.). Le altre sezioni sono correlate a un sottocomando nlserver specifico.
 
@@ -2193,7 +2193,7 @@ Di seguito sono riportati i diversi parametri del nodo **Repair** . Questa è la
 
 Di seguito sono riportati i diversi parametri del nodo **securityZone**.
 
-Per ulteriori informazioni, consulta [Definizione delle aree di sicurezza](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Per ulteriori informazioni, consulta [Definizione delle aree di sicurezza](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Di seguito è riportata la configurazione predefinita:
 
 Di seguito sono riportati i diversi parametri del nodo **securityZone > subNetwork** .
 
-Per ulteriori informazioni, consulta [Definizione delle aree di sicurezza](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Per ulteriori informazioni, consulta [Definizione delle aree di sicurezza](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
