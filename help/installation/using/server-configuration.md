@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
@@ -23,14 +23,12 @@ ht-degree: 3%
 >
 >A partire dalla build 8977, l&#39;interfaccia utente autonoma delle aree di protezione non è più disponibile.
 >
->* Se sei ospitato su AWS, l’aggiunta di IP all’elenco Consentiti deve essere eseguita nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
->* Se non sei in hosting su AWS, rivolgiti al team di supporto Adobe per aggiungere gli IP all’elenco Consentiti.
+>* Se sei ospitato su AWS, l’aggiunta di IP all’elenco consentiti deve essere eseguita in Pannello di controllo Campaign. Per ulteriori informazioni, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+>* Se non sei in hosting su AWS, rivolgiti al team di supporto Adobe per aggiungere IP all’elenco consentiti.
 
 >
 >
 Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
-
-Per informazioni su come utilizzare l&#39;interfaccia utente Self Service delle aree di protezione per gestire le voci nella configurazione della zona di sicurezza VPN, consulta [questa nota tecnica](https://helpx.adobe.com/it/campaign/kb/configuring-security-zones-self-service.html).
 
 * Assicurati che il proxy inverso non sia consentito in subNetwork. In tal caso, il traffico **all** verrà rilevato come proveniente da questo IP locale, pertanto sarà attendibile.
 
@@ -57,7 +55,7 @@ Per informazioni su come utilizzare l&#39;interfaccia utente Self Service delle 
 
 * Cookie HttpOnly/useSecurityToken: fai riferimento al flag **sessionTokenOnly** .
 
-* Ridurre al minimo gli IP aggiunti all’elenco Consentiti: In aree di sicurezza abbiamo aggiunto i 3 intervalli per le reti private. È improbabile che utilizzerai tutti questi indirizzi IP. Quindi tieni solo quelli di cui hai bisogno.
+* Minimizza gli IP aggiunti all’elenco consentiti: In aree di sicurezza abbiamo aggiunto i 3 intervalli per le reti private. È improbabile che utilizzerai tutti questi indirizzi IP. Quindi tieni solo quelli di cui hai bisogno.
 
 * Aggiorna l&#39;operatore webApp/interno per essere accessibile solo in localhost.
 
@@ -92,9 +90,9 @@ L’elenco predefinito di URL che possono essere richiamati tramite codici JavaS
 
 Esistono tre modalità di protezione della connessione:
 
-* **Blocco** : tutti gli URL che non appartengono all’elenco Consentiti vengono bloccati e viene visualizzato un messaggio di errore. Questa è la modalità predefinita dopo un aggiornamento successivo.
-* **Permissivo** : tutti gli URL che non appartengono all’elenco Consentiti sono consentiti.
-* **Avviso** : tutti gli URL non inclusi nell’elenco Consentiti sono consentiti, ma l’interprete JS invia un avviso in modo che l’amministratore possa raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
+* **Blocco** : tutti gli URL che non appartengono all’elenco consentiti vengono bloccati e viene visualizzato un messaggio di errore. Questa è la modalità predefinita dopo un aggiornamento successivo.
+* **Permissivo** : tutti gli URL che non appartengono all’elenco consentiti sono consentiti.
+* **Avviso** : tutti gli URL non nell’elenco consentiti sono consentiti, ma l’interprete JS invia un avviso in modo che l’amministratore possa raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -104,7 +102,7 @@ Esistono tre modalità di protezione della connessione:
 </urlPermission>
 ```
 
-I nuovi client utilizzeranno la modalità di blocco. Se desiderano consentire un nuovo URL, devono contattare il proprio amministratore per aggiungerlo all’elenco Consentiti.
+I nuovi client utilizzeranno la modalità di blocco. Se desiderano consentire un nuovo URL, devono contattare il proprio amministratore per aggiungerlo all’elenco consentiti.
 
 I clienti esistenti provenienti da una migrazione possono utilizzare la modalità di avviso per un po’ di tempo. Nel frattempo devono analizzare il traffico in uscita prima di autorizzare gli URL.
 
@@ -127,6 +125,6 @@ Adobe Campaign consente di impostare una password semplice nell’elemento `<dbc
 
 Per impostazione predefinita, Adobe Campaign non blocca una sessione a un IP specifico, ma la puoi attivare per evitare che la sessione venga rubata. Per farlo, nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md), imposta l&#39;attributo checkIPConsistent su **true** nel nodo `<authentication>`.
 
-Per impostazione predefinita, l’MTA di Adobe Campaign non utilizza una connessione protetta per inviare il contenuto al server SMTP. Devi abilitare questa funzione (può ridurre la velocità di consegna). A questo scopo, imposta enableTLS su tr**ue nel nodo `<smtp ...>` .
+Per impostazione predefinita, l’MTA di Adobe Campaign non utilizza una connessione protetta per inviare il contenuto al server SMTP. Devi abilitare questa funzione (può ridurre la velocità di consegna). A questo scopo, imposta **enableTLS** su **true** nel nodo `<smtp ...>`.
 
 Puoi ridurre la durata di una sessione nel nodo di autenticazione (attributo sessionTimeOutSec ).
