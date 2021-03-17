@@ -1,53 +1,53 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matrice di funzionalità locali, ibride e ospitate della campagna
-description: Scopri le principali differenze tra le distribuzioni in hosting e quelle in sede
+title: Matrice di funzionalità on-premise, ibrida e in hosting di Campaign
+description: Scopri le principali differenze tra distribuzioni in hosting e on-premise
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 19%
 
 ---
 
 
-# Matrice di capacità {#capability-matrix-per-model}
+# Matrice di funzionalità per modello{#capability-matrix-per-model}
 
- Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di implementazione dell&#39;installazione. In questo articolo vengono condivisi alcuni dettagli sulle differenze principali per alcune funzionalità tra distribuzioni in hosting completo (Managed Services) e in sede.
+ Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di distribuzione dell’installazione. Questo articolo condivide alcuni dettagli sulle differenze principali per alcune funzioni tra distribuzioni in hosting completo (Managed Services) e on-premise.
 
-Questa pagina mostra le principali differenze tra le distribuzioni in hosting (Managed Services) e quelle in sede. Le specifiche di distribuzione ibrida dipendono dagli elementi ospitati dal Adobe  e ospitati nella propria sede.
+Questa pagina mostra le differenze principali tra le distribuzioni in hosting (Managed Services) e on-premise. Le specificità delle implementazioni ibride dipendono dagli elementi ospitati da Adobe e ospitati nei tuoi locali.
 
 I diversi modelli di hosting sono introdotti [in questa sezione](../../installation/using/hosting-models.md).
 
 ## Disponibilità per modello di distribuzione {#capability-matrix}
 
-| Funzionalità | Ospitato | Ibrido | In sede | Dettagli |
+| Funzionalità | Ospitato | Ibrido | On-Premise | Dettagli |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurare il server Campaign | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/the-server-configuration-file.md) |
-| Ccn e-mail | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../installation/using/email-archiving.md) |
-| Gestisci istanza di esecuzione Centro messaggi | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md) |
-| Gestione della piattaforma Mid-sourcing | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../installation/using/mid-sourcing-server.md) |
-| Rendering in entrata tramite Litmus | Su richiesta | Su richiesta | Disponibile | [Ulteriori informazioni](../../delivery/using/inbox-rendering.md) |
-| Integrazione con IMS ( Adobe ID) | Su richiesta | Su richiesta | Su richiesta | [Ulteriori informazioni](../../integrations/using/about-adobe-id.md) |
-| Cifratura/decrittografia dei dati per i trasferimenti di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
-| Zipping/decompressione di file | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
-| Delega nome di dominio | Su richiesta | Su richiesta | Non disponibile | [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html) |
-| Installazione di SpamAssassin | Su richiesta | Disponibile | Disponibile | [Ulteriori informazioni](../../delivery/using/spamassassin.md) |
-| Accesso ai rapporti sulla recapito | Disponibile | Su richiesta | Disponibile | [Ulteriori informazioni](../../delivery/using/monitoring-deliverability.md) |
-| Configurazione dell’autenticazione LDAP | Non disponibile | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/connecting-through-ldap.md) |
+| Configurare il server Campaign | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/the-server-configuration-file.md) |
+| Ccn e-mail | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../installation/using/email-archiving.md) |
+| Gestisci istanza di esecuzione del Centro messaggi | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md) |
+| Gestione della piattaforma di mid-sourcing | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../installation/using/mid-sourcing-server.md) |
+| Rendering della casella in entrata tramite Litmus | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../delivery/using/inbox-rendering.md) |
+| Integrazione con IMS (Adobe ID) | On-demand | On-demand | On-demand | [Ulteriori informazioni](../../integrations/using/about-adobe-id.md) |
+| Crittografia/decrittografia dei dati per i trasferimenti di file | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
+| Zipping/decompressione di file | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
+| Delega nome di dominio | On-demand | On-demand | Non disponibile | [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html) |
+| Installazione di SpamAssassin | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../delivery/using/spamassassin.md) |
+| Accesso ai rapporti sul recapito messaggi | Disponibile | On-demand | Disponibile | [Ulteriori informazioni](../../delivery/using/monitoring-deliverability.md) |
+| Configurazione dell&#39;autenticazione LDAP | Non disponibile | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/connecting-through-ldap.md) |
 
 
 ## Federated Data Access{#fda}
 
- Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: è possibile accedere ai dati esterni senza modificare la struttura  dati Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
+Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->L&#39;accesso a un database esterno tramite FDA è possibile solo per installazioni locali o ibride, ad eccezione del [connettore di Snowflake](../../installation/using/configure-fda-snowflake.md).
+>L&#39;accesso a un database esterno tramite FDA è possibile solo per installazioni on-premise o ibride, ad eccezione del [connettore di Snowflake](../../installation/using/configure-fda-snowflake.md).
 
 
 **Vedi anche**
