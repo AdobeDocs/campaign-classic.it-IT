@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -93,7 +93,7 @@ Per creare un account esterno di tipo istanza di esecuzione, esegui i seguenti p
 
 Affinché l&#39;istanza di controllo possa connettersi all&#39;istanza di esecuzione senza dover fornire una password, è sufficiente inserire l&#39;indirizzo IP dell&#39;istanza di controllo nella sezione **Message Center** access rights . Tuttavia, le password vuote sono vietate per impostazione predefinita.
 
-Per utilizzare una password vuota, vai alle istanze di esecuzione e definisci una zona di sicurezza limitata all’indirizzo IP del sistema di informazioni che distribuisce gli eventi. Questa zona di sicurezza deve consentire password vuote e accettare connessioni di tipo `<identifier> / <password>`. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Per utilizzare una password vuota, vai alle istanze di esecuzione e definisci una zona di sicurezza limitata all’indirizzo IP del sistema di informazioni che distribuisce gli eventi. Questa zona di sicurezza deve consentire password vuote e accettare connessioni di tipo `<identifier> / <password>`. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Per utilizzare più istanze di controllo, questa configurazione deve essere eseg
 
    >[!NOTE]
    >
-   >**Gli operatori mc1** e  **mc2** devono disporre  **[!UICONTROL Message Center execution]** dei diritti e non possono accedere alla console client di Adobe Campaign. Un operatore deve sempre essere collegato a una zona di sicurezza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >**Gli operatori mc1** e  **mc2** devono disporre  **[!UICONTROL Message Center execution]** dei diritti e non possono accedere alla console client di Adobe Campaign. Un operatore deve sempre essere collegato a una zona di sicurezza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
 
 1. Per ciascun operatore, seleziona la casella **[!UICONTROL Restrict to information found in sub-folders of]** e la cartella corrispondente (**Cartella 1** per l&#39;operatore **mc1** e **Cartella 2** per l&#39;operatore **mc2**).
 
