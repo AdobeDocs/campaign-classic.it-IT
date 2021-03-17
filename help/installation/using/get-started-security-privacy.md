@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Guida introduttiva a protezione e privacy {#get-started-security-privacy}
 
-Questa sezione ti presenta gli elementi chiave da verificare in materia di sicurezza e privacy.
+Questa sezione ti presenta gli elementi chiave da verificare in materia di sicurezza e privacy. Alcune configurazioni possono essere eseguite solo dai clienti on-premise.
 
 ## Privacy
 
@@ -50,11 +50,11 @@ La gestione degli accessi è una parte importante dell&#39;irrigidimento della s
 
 Nello sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.), segui sempre le seguenti linee guida:
 
-* **Scripting**: cercare di evitare istruzioni SQL, utilizzare funzioni parametrizzate invece della concatenazione di stringhe, evitare l&#39;inserimento di SQL aggiungendo le funzioni SQL da utilizzare nell&#39;elenco Consentiti.
+* **Scripting**: cercare di evitare istruzioni SQL, utilizzare funzioni parametrizzate invece della concatenazione di stringhe, evitare l&#39;inserimento di SQL aggiungendo le funzioni SQL da utilizzare nell&#39;elenco consentiti.
 
-* **Protezione del modello** dati: utilizzare diritti denominati per limitare le azioni dell’operatore, aggiungere filtri di sistema (sysFilter)
+* **Proteggere il modello** dati: utilizzare diritti denominati per limitare le azioni dell’operatore, aggiungere filtri di sistema (sysFilter)
 
-* **Aggiunta di sottotitoli nelle applicazioni** web: scopri come aggiungere i sottotitoli nelle pagine di destinazione e nelle pagine di abbonamento pubbliche.
+* **Aggiungi i sottotitoli nelle applicazioni** web: scopri come aggiungere i sottotitoli nelle pagine di destinazione e nelle pagine di abbonamento pubbliche.
 
 [Leggi tutto](../../installation/using/scripting-coding-guidelines.md)
 
@@ -92,9 +92,9 @@ La configurazione deve essere eseguita su tutti i server. I file di configurazio
 
 Seguono diverse best practice per configurare il server web (Apache/IIS):
 
-* Disattiva la versione e i codici SSL precedenti:
-* Rimuovi il metodo TRACE:
-* Rimuovi il banner:
-* Limita le dimensioni della query per impedire il caricamento di file importanti:
+* Disattiva la versione e i codici SSL precedenti
+* Rimuovere il metodo TRACE
+* Rimuovi il banner
+* Limita le dimensioni della query per impedire il caricamento di file importanti
 
 [Leggi tutto](../../installation/using/web-server-configuration.md)
