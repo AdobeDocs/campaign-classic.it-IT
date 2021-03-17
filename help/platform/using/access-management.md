@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari ope
 
 Le autorizzazioni si applicano ai profili operatore o ai gruppi di operatori.
 
-Sono completati da parametri di sicurezza collegati alla modalità di connessione dell’operatore ad Adobe Campaign. Per ulteriori informazioni sulle aree di protezione in [questa pagina](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Sono completati da parametri di sicurezza collegati alla modalità di connessione dell’operatore ad Adobe Campaign. Per ulteriori informazioni sulle aree di protezione in [questa pagina](../../installation/using/security-zones.md).
 
 È possibile concedere a un utente due tipi di autorizzazioni:
 
