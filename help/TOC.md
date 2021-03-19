@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2474'
 ht-degree: 55%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 55%
    + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
    + [Ultima versione](rn/using/latest-release.md)
    + Versione Gold Standard {#gs-release}
+      + [Che cos’è Gold Standard](rn/using/gs-overview.md)
       + [Note sulla versione Gold Standard](rn/using/gold-standard.md)
       + [Matrice di compatibilità Gold Standard](rn/using/compatibility-matrix-gs.md)
    + Versioni precedenti {#previous-releases}
