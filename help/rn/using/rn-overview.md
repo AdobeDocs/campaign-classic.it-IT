@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Introduzione agli aggiornamenti
 description: Ulteriori informazioni sugli aggiornamenti di Campaign Classic
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Panoramica
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, �
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-In qualità di utente Gold Standard in hosting, potrai beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento Gold Standard con la [più recente build Gold Standard a disponibilità generale (GA)](../../rn/using/gold-standard.md#gs-11). [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+In qualità di utente Gold Standard in hosting, potrai beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento Gold Standard con la [più recente build Gold Standard a disponibilità generale (GA)](../../rn/using/gold-standard.md#gs-11). [Ulteriori informazioni](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >La matrice di compatibilità per Gold Standard è disponibile nella [Matrice di compatibilità GA](../../rn/using/compatibility-matrix-gs.md).
