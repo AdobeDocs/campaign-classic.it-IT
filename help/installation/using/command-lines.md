@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # Righe di comando{#command-lines}
 
-Le seguenti righe di comando richiedono la capacità di accedere al server dell&#39;applicazione. Per le distribuzioni ospitate da  Adobe, questi comandi possono essere eseguiti solo da  Adobe.
+Le seguenti righe di comando richiedono la possibilità di accedere al server dell&#39;applicazione. Per le distribuzioni ospitate da Adobe, questi comandi possono essere eseguiti solo per Adobe.
 
-## Creazione di un&#39;istanza {#creating-an-instance}
+## Creare un&#39;istanza {#creating-an-instance}
 
-La creazione di istanza può essere eseguita utilizzando le righe di comando, con la sintassi seguente:
+La creazione di un&#39;istanza può essere eseguita utilizzando le righe di comando, con la sintassi seguente:
 
 ```
 nlserver config -addinstance:instance/masques DNS[/lang]
@@ -29,9 +29,9 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 (dove **eng** e **fra** sono valori possibili per il parametro `[lang]`)
 
-Il comando **config -addinstance:instance1/demo*/eng** consente di creare un&#39;istanza denominata **instance1** in inglese con la demo della maschera DNS*.
+Il comando **nlserver config -addinstance:instance1/demo*/eng** consente di creare un&#39;istanza chiamata **instance1** in inglese con la demo della maschera DNS*.
 
-## Dichiarazione di un database {#declaring-a-database}
+## Dichiarare un database {#declaring-a-database}
 
 È possibile associare un database esistente a un&#39;istanza dalla riga di comando utilizzando la sintassi seguente:
 
@@ -42,7 +42,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 I seguenti valori sono possibili per il parametro **`[rdbms]`**:
 
 * **postgresql**: per PostgreSQL,
-* **oracle**: per  Oracle,
+* **oracle**: ad Oracle,
 * **mssql**: per Microsoft SQL Server,
 * **DB2**: per il motore DB2.
 
