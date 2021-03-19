@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Versione Gold Standard
-description: Note sulla versione Campaign Classic Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+title: Note sulla versione Gold Standard
+description: Note sulla versione per Campaign Classic Gold Standard
+feature: Panoramica
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 88%
+source-wordcount: '1055'
+ht-degree: 85%
 
 ---
 
 
 # Versioni Gold Standard{#gold-standard}
 
-Gold Standard è la versione con supporto a lungo termine di Campaign Classic. In qualità di utente Gold Standard in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento Gold Standard con la versione stabile più recente. Anche i clienti con implementazioni on-premise e ibride possono beneficiare delle versioni Gold Standard.
-
-Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l’aggiornamento a questa versione.
-
-In questa pagina sono elencate le versioni Gold Standard.
-
-Per ulteriori informazioni sul programma Gold Standard per Campaign, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/gold-standard.html).
+In questa pagina sono elencate le versioni Gold Standard. Ulteriori informazioni su Campaign Gold Standard [in questa pagina](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Versione Gold Standard 11{#gs-11}
 
@@ -46,7 +40,7 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth verrà ritirata il **30 aprile 2021**.
+> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
 
 >
 >
