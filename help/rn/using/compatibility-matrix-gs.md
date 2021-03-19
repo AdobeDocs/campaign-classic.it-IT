@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matrice di compatibilità Gold Standard
+title: Matrice di compatibilità per Campaign Gold Standard
 description: Matrice di compatibilità di Campaign Classic per la versione Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: Panoramica
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '520'
+ht-degree: 98%
 
 ---
 
