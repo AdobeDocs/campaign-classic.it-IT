@@ -6,7 +6,7 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
+source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 7%
@@ -47,7 +47,7 @@ Se l’ambiente si trova in una build inferiore a quelle elencate di seguito, è
 
 Devi eseguire l’aggiornamento a una delle build più recenti elencate in precedenza.
 
-* In qualità di cliente ibrido, Adobe aggiornerà l’istanza di mid-sourcing alla nuova versione e ti consigliamo vivamente di aggiornare anche la propria istanza di marketing.
+* In qualità di cliente ibrido, Adobe aggiornerà l’istanza di marketing alla nuova versione e ti consigliamo vivamente di aggiornare anche la propria istanza di marketing.
 
    La nuova build è compatibile con almeno Campaign Classic 17.9, ma per evitare problemi di sicurezza, Adobe consiglia vivamente di aggiornare tutte le istanze a una nuova build. 
 
