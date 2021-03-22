@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
+source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1068'
 ht-degree: 7%
 
 ---
@@ -43,6 +43,8 @@ Se l’ambiente si trova in una build inferiore a quelle elencate di seguito, è
 * Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
+Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Come si aggiorna?**
 
 Devi eseguire l’aggiornamento a una delle build più recenti elencate in precedenza.
@@ -60,13 +62,12 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 
 ## Aggiornamento della console client di Campaign
 
-La build Gold Standard 11 più recente corregge una regressione che impediva l’utilizzo di alcuni componenti della console client, come il selettore data e la gestione immagini nelle consegne. L’aggiornamento della console è obbligatorio.
+Le seguenti versioni correggono una regressione che impediva l’utilizzo di alcuni componenti della console client, come il selettore data e la gestione immagini nelle consegne. **Aggiornamenti** della console obbligatori.
 
-[Ulteriori informazioni](../rn/using/gold-standard.md).
-
->[!NOTE]
->
->Questa correzione è disponibile anche nelle versioni più recenti [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) e [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126).
+* Build Gold Standard 11 più recente 9032@10c2709. [Ulteriori informazioni](../rn/using/gold-standard.md)
+* Campaign versione 20.1.4. [Ulteriori informazioni](../rn/using/release--20-1.md)
+* Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
+* Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
 ## Aggiornamento Adobe Identity Management System (IMS)
 
@@ -87,6 +88,8 @@ Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adob
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
 Queste versioni sono dotate di un nuovo protocollo di connessione: l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+
+Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Come si aggiorna?**
 
@@ -116,6 +119,8 @@ L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio
 * Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
+Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 **Come si aggiorna?**
 
 Una volta aggiornate le istanze a una versione più recente, tutti i clienti devono seguire la procedura [per passare alla nuova modalità di autenticazione](../integrations/using/configuring-adobe-io.md). Questo richiede la generazione del nuovo token di Adobe I/O e il suo utilizzo nell’implementazione.  
@@ -133,6 +138,8 @@ Il servizio APN (Apple Push Notification Service) non supporterà più il protoc
 **Sei interessato?**
 
 Se le istanze sono in esecuzione su una versione **precedente a Campaign 21.1,** e inviano notifiche push con il protocollo binario Apple legacy, devi eseguire l’aggiornamento all’API del provider APN basata su HTTP/2.
+
+Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Come si aggiorna?**
 
@@ -157,7 +164,6 @@ Come cliente in hosting, non è necessaria alcuna azione: Adobe ha già incorpor
 In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per garantire una transizione senza soluzione di continuità **prima del 29 marzo 2021**.
 
 [Scopri come incorporare il nuovo certificato](ios-certificate-update.md).
-
 
 ## Collegamenti utili
 
