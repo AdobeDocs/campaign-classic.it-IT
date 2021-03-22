@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3200'
 ht-degree: 20%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 20%
 # Versione 19.1{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Versione 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+
+_22 marzo 2021_
+
+* È stata corretta una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. (NEO-31453, NEO-31454)
+
+**È obbligatorio solo l’aggiornamento della console. Non è richiesto alcun aggiornamento del server.**
+
+>[!NOTE]
+>
+> Connettiti a [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per scaricare la nuova versione. Scopri come proporre l’aggiornamento della console a tutti gli utenti finali [in questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _16 dicembre 2020_
 
