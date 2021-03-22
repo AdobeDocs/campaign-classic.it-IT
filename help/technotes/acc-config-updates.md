@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1035'
 ht-degree: 7%
 
 ---
@@ -66,7 +66,7 @@ La build Gold Standard 11 più recente corregge una regressione che impediva l�
 
 >[!NOTE]
 >
->La nuova console client per altre versioni sarà presto disponibile.
+>Questa correzione si trova anche nelle versioni più recenti [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) e [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126). La nuova console client per altre versioni sarà presto disponibile.
 
 ## Aggiornamento Adobe Identity Management System (IMS)
 
