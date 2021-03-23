@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Stati di consegna
-description: Ulteriori informazioni sugli stati disponibili nel dashboard di distribuzione.
+description: Ulteriori informazioni sugli stati disponibili nel dashboard di consegna.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 3%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 4%
 
 ajouter screenshot -->
 
-Una volta inviata la consegna, il dashboard di distribuzione visualizza uno stato che consente di controllare se l&#39;invio è andato a buon fine. Gli stati possibili sono descritti nella sezione seguente.
+Una volta inviata la consegna, il dashboard di consegna visualizza uno stato che ti consente di monitorare se l’invio è andato a buon fine. Gli stati possibili sono descritti in dettaglio nella sezione seguente.
 
 ![](assets/delivery-status.png)
 
-Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come risolverli, fare riferimento a [questa pagina](../../delivery/using/understanding-delivery-failures.md).
+Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come risolverli, consulta [questa pagina](../../delivery/using/understanding-delivery-failures.md).
 
 **Argomenti correlati:**
 
@@ -33,7 +33,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
 * [Risoluzione dei problemi relativi alle consegne](../../delivery/using/delivery-troubleshooting.md)
 * [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
 
-## Elenco di stati di consegna {#list-delivery-statuses}
+## Elenco degli stati di consegna {#list-delivery-statuses}
 
 <table> 
  <thead> 
@@ -49,19 +49,19 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Ignorato<br /> </td> 
-   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. Era elenco Bloccati, in quarantena, non fornito o un duplicato. <br /> </td> 
+   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. Era elenco Bloccati, messo in quarantena, non fornito o un duplicato. <br /> </td> 
   </tr> 
   <tr> 
-   <td> Operazione non riuscita<br /> </td> 
-   <td> Impossibile contattare il destinatario a causa di un indirizzo non valido o di una inbox completa, ad esempio. Può anche essere collegato a un problema con i blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della distribuzione. Vedere <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
+   <td> Non riuscito<br /> </td> 
+   <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Consulta <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
   </tr>
   <tr> 
-   <td> In sospeso<br /> </td> 
+   <td> Pending<br /> </td> 
    <td> La consegna è pronta per essere inviata e verrà elaborata dal server di consegna (MTA). Vedere <a href="#pending-status" target="_blank">Stato in sospeso</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non applicabile<br /> </td> 
-   <td> La consegna è stata presa in considerazione dal server (MTA) ma non elaborata.<br /> </td> 
+   <td> La consegna è stata presa in considerazione dal server (MTA) ma non è stata elaborata.<br /> </td> 
   </tr>  
   <tr> 
    <td> Consegna annullata<br /> </td> 
@@ -69,43 +69,43 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Preso in considerazione dal fornitore di servizi<br /> </td> 
-   <td> Il provider del servizio SMS ha ricevuto la consegna.<br /> Per le installazioni ospitate o ibride, se avete effettuato l'aggiornamento all'MTA <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank"> </a>avanzata, il messaggio è stato inviato correttamente da Campaign all'MTA avanzata.</td> 
+   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’MTA  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">avanzato</a>, il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato.</td> 
   </tr> 
   <tr> 
-   <td> Ricevuto su dispositivo mobile<br /> </td> 
+   <td> Ricevuto su mobile<br /> </td> 
    <td> Il destinatario ha ricevuto l'SMS sul proprio dispositivo mobile.<br /> </td> 
   </tr>
   <tr> 
    <td> Inviato al provider di servizi<br /> </td> 
-   <td> La consegna è stata inviata al provider di servizi SMS ma non ancora ricevuta.<br />
+   <td> La consegna è stata inviata al provider di servizi SMS ma non è ancora stata ricevuta.<br />
    </td> 
   </tr> 
   <tr> 
    <td> Preparato<br /> </td> 
-   <td> Stato intermedio utilizzato solo per connettori esterni come il canale mobile. Segue lo stato "In sospeso" ed è il connettore esterno che determinerà lo stato seguente.<br /> </td> 
+   <td> Stato intermedio utilizzato solo per connettori esterni, come il canale mobile. Segue lo stato "In sospeso" ed è il connettore esterno che determinerà il seguente stato.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per informazioni su come ottimizzare la recapito dei messaggi e-mail di  Adobe Campaign, consultare  guida alle best practice di recapito di Adobe Campaign [e [questa pagina](../../delivery/using/about-deliverability.md).](../../delivery/using/deliverability-key-points.md)
+Per scoprire come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, consulta [questa sezione](../../delivery/using/about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 ## Stato in sospeso {#pending-status}
 
-Dopo aver confermato la consegna, potete vedere che lo stato della consegna è **[!UICONTROL Pending]**. Questo stato significa che il processo di esecuzione è in attesa della disponibilità di alcune risorse.
+Dopo aver confermato la consegna, puoi vedere che lo stato della consegna è **[!UICONTROL Pending]**. Questo stato significa che il processo di esecuzione è in attesa della disponibilità di alcune risorse.
 
-Lo stato **[!UICONTROL Pending]** può innanzitutto indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consultare la sezione [Pianificazione consegna](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Lo stato **[!UICONTROL Pending]** può prima indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione delle consegne](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) .
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 
-* L&#39;agente MTA (Message Transfert Agent), che esegue moduli e processi sul server di consegna e che gestisce l&#39;invio di e-mail, potrebbe non essere stato avviato o deve essere riavviato.
+* MTA (Message Transfer Agent), che esegue moduli e processi sul server di consegna e che gestisce l’invio di e-mail, potrebbe non essere stato avviato o deve essere riavviato.
 
-   Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti passaggi:
+   Per verificare questo e per avviare il modulo, se necessario, esegui i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Questa operazione può essere eseguita con un modello di hosting **locale** o **ibrido** con accesso al server Campaign (vedere [modelli di hosting](../../installation/using/hosting-models.md)).
+   >Questa operazione può essere eseguita con un modello di hosting **on-premise** o **ibrido** con accesso al server Campaign (vedi [modelli di hosting](../../installation/using/hosting-models.md)).
 
-   1. Verificate che i moduli `mta@<instance>` siano avviati sui server MTA.
+   1. Verifica che i moduli `mta@<instance>` siano lanciati sui server MTA.
 
       ```
       nlserver pdump
@@ -115,7 +115,7 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
       [...]
       ```
 
-   1. Se l&#39;MTA non è elencato, avviarlo con il seguente comando:
+   1. Se l’MTA non è presente nell’elenco, avvialo con il seguente comando:
 
       ```
       nlserver start mta@<INSTANCENAME>
@@ -123,21 +123,21 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
       >[!NOTE]
       >
-      >Sostituire `<INSTANCENAME>` con il nome dell&#39;istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+      >Sostituisci `<INSTANCENAME>` con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
-* La consegna potrebbe utilizzare un&#39;affinità non configurata sul server di invio.
+* La consegna potrebbe utilizzare un’affinità non configurata sul server di invio.
 
-   In questo caso, controllate la configurazione della gestione del traffico (affinità IP) e utilizzate il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all&#39;MTA che gestisce l&#39;affinità. Per ulteriori informazioni sulle affinità, fare riferimento a [questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* Se sono in esecuzione troppe campagne, lo stato di consegna rimane in sospeso.
+* Quando sono in esecuzione troppe campagne, lo stato di consegna rimane in sospeso.
 
-   Il limite di campagne simultanee è definito nell&#39;opzione **[!UICONTROL NmsOperation_LimitConcurrency]**. Il valore predefinito è 10.
+   Il limite di campagne simultanee è definito nell’opzione **[!UICONTROL NmsOperation_LimitConcurrency]** . Il valore predefinito è 10.
 
    Ulteriori informazioni sulle opzioni in [questa pagina](../../installation/using/configuring-campaign-options.md).
 
 
 **Argomenti correlati:**
 
-* [Registri di consegna e cronologia](#delivery-logs-and-history)
+* [Log di consegna e cronologia](#delivery-logs-and-history)
 * [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
 * [Tipi e motivi di errori di consegna](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
