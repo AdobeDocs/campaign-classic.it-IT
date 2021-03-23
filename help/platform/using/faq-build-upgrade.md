@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2015'
+source-wordcount: '2034'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 È fondamentale che i nostri clienti eseguano la versione più recente di Adobe Campaign. Permette anche all&#39;Adobe di aiutare in modo molto più efficiente nel caso in cui si incontrano problemi - identificare, riprodurre e risolvere un problema su una build precedente richiede in genere più tempo, per non parlare del fatto che alcuni problemi che si possono incontrare possono essere già stati risolti in una build recente.
 
-Abbiamo quindi avviato il programma [Gold Standard](https://helpx.adobe.com/it/campaign/kb/gold-standard.html) per lavorare in collaborazione con i nostri clienti per aggiornare in modo proattivo e regolare i loro ambienti.
+[!DNL Gold Standard] è la versione di supporto a lungo termine di Campaign Classic. In qualità di utente in hosting [!DNL Gold Standard], puoi beneficiare automaticamente dell’ [!DNL Gold Standard] aggiornamento con l’ultima versione stabile senza alcuna azione. I clienti on-premise e ibridi possono inoltre beneficiare dei rilasci [!DNL Gold Standard] . Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l’aggiornamento a questa versione. [Ulteriori informazioni](../../rn/using/gs-overview.md).
 
 ## Cos’è un aggiornamento della build?
 
@@ -209,4 +209,4 @@ tutto il contenuto viene visualizzato e presente.
 * [Esecuzione di un aggiornamento della build](../../production/using/build-upgrade.md)
 * [Note sulla versione di Campaign Classic](../../rn/using/rn-overview.md)
 * [Opzioni di aiuto e supporto per Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
-* [Programma Gold Standard](https://helpx.adobe.com/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
