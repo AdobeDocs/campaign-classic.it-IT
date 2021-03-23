@@ -7,10 +7,10 @@ feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 96%
+source-wordcount: '4250'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,8 @@ Scopri come creare e gestire le campagne attraverso queste nuove pagine:
 * [Imposta e gestisci il processo di approvazione](../../campaign/using/marketing-campaign-approval.md)
 
 Nella sezione dell&#39;attività **[!UICONTROL Advanced JavaScript]** sono state aggiunte informazioni su come utilizzare il metodo task.setCompleted() per terminare l&#39;attività ed evitare richiami futuri. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+La sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) è stata aggiornata e ora include i collegamenti alla nuova [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Tutte le informazioni generiche relative al recapito messaggi che possono essere applicate a varie soluzioni di Adobe sono state spostate nell&#39; [Appendice alla Guida alle best practice](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Febbraio 2021 {#release-21.1}
 
@@ -130,8 +132,8 @@ La Matrice di compatibilità è stata aggiornata. [Leggi tutto](../../rn/using/c
 
 La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../rn/using/deprecated-features.md)
 
-Le note sulla versione e la matrice di compatibilità per la versione Gold Standard sono ora disponibili in una sezione dedicata.
-[Ulteriori informazioni](../../rn/using/gold-standard.md#gs-11).
+Le note sulla versione e la matrice di compatibilità per la versione [!DNL Gold Standard] sono ora disponibili in una sezione dedicata.
+[Leggi tutto](../../rn/using/gold-standard.md#gs-11).
 
 L’integrazione dei trigger, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
@@ -167,7 +169,7 @@ La pagina delle proprietà del report è stata riorganizzata e arricchita per fa
 
 Un’intera sezione è dedicata alla scoperta delle best practice relative alla progettazione e all’invio di contenuti con Campaign. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
-La pagina di destinazione Best practice per il recapito di messaggi è stata migliorata per facilitare l’accesso alle sottosezioni. [Leggi tutto](../../delivery/using/deliverability-key-points.md)
+La pagina di destinazione Best practice per il recapito di messaggi è stata migliorata per facilitare l’accesso alle sottosezioni. [Leggi tutto](../../delivery/using/about-deliverability.md)
 
 Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
@@ -206,7 +208,7 @@ La sezione **[!UICONTROL AND-join]** Attività è stata arricchita da informazio
 
 Ai casi di utilizzo del flusso di lavoro è stato aggiunto un esempio che spiega come aggiornare in automatico un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
-Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle [release Gold Standard](../../rn/using/gold-standard.md) ed è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle [[!DNL Gold Standard] release ](../../rn/using/gold-standard.md) ed è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 È stata aggiunta una nuova sezione con le linee guida relative al monitoraggio di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ La sezione Monitoraggio del recapito messaggi è stata spostata e migliorata. [L
 
 La sezione Risoluzione dei problemi di recapito messaggi è stata spostata e migliorata. [Leggi tutto](../../delivery/using/deliverability-faq.md)
 
-La sezione Linee guida sul recapito messaggi all’avvio di una nuova piattaforma è stata migliorata. [Leggi tutto](../../delivery/using/starting-new-platform.md)
+Sono state migliorate le linee guida sul recapito messaggi all’avvio di una nuova piattaforma. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ La descrizione del file di configurazione del server è stata aggiunta alla guid
 
 È stata aggiunta una sezione che descrive i passaggi per la disinstallazione del server Campaign. [Leggi tutto](../../installation/using/uninstalling-campaign.md)
 
-Le guide introduttive su [protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html), [recapito messaggi](../../delivery/using/deliverability-key-points.md) e [privacy](../../platform/using/privacy-management.md) sono state aggiornate.
+Le guide introduttive su [protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html), [recapito messaggi](../../delivery/using/about-deliverability.md) e [privacy](../../platform/using/privacy-management.md) sono state aggiornate.
 
 La descrizione dell’opzione del flusso di lavoro di pre-elaborazione è stata aggiornata per riflettere le modifiche apportate al prodotto. [Leggi tutto](../../workflow/using/data-loading--file-.md)
 
