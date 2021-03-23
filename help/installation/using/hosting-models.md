@@ -7,9 +7,9 @@ feature: Panoramica
 role: Architetto
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ In qualità di cliente in hosting, la maggior parte dei passaggi di installazion
 
 * Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/configuring-multibranding.md).
 * Installa la console client: fare riferimento a [a questa sezione](../../installation/using/installing-the-client-console.md).
-* Per ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice, consulta la [guida introduttiva](../../delivery/using/deliverability-key-points.md) e la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
+* Ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice leggendo la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
 * Configura le opzioni di Campaign: fare riferimento a [a questa sezione](../../installation/using/configuring-campaign-options.md).
 * Configurare i connettori di gestione delle relazioni con i clienti: fare riferimento a [a questa sezione](../../platform/using/crm-connectors.md).
 
@@ -65,7 +65,7 @@ In qualità di cliente ibrido, la maggior parte dei passaggi di installazione e 
 * Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/configuring-multibranding.md).
 * Installa la console client: fare riferimento a [a questa sezione](../../installation/using/installing-the-client-console.md).
 * Installa pacchetti incorporati: fare riferimento a [a questa sezione](../../installation/using/installing-campaign-standard-packages.md).
-* Consegna: configura [regole MX](../../installation/using/email-deliverability.md#mx-configuration) e [formati e-mail](../../installation/using/email-deliverability.md#managing-email-formats). Per ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice, consulta la [guida introduttiva](../../delivery/using/deliverability-key-points.md) e la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
+* Consegna: configura [regole MX](../../installation/using/email-deliverability.md#mx-configuration) e [formati e-mail](../../installation/using/email-deliverability.md#managing-email-formats). Ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice leggendo la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
 * Configura le opzioni di Campaign: fare riferimento a [a questa sezione](../../installation/using/configuring-campaign-options.md).
 * Configurare un database esterno (Federated Data Access): fare riferimento a [a questa sezione](../../installation/using/about-fda.md).
 * Configurazione dei connettori di gestione delle relazioni con i clienti: fare riferimento a [a questa sezione](../../platform/using/crm-connectors.md).
