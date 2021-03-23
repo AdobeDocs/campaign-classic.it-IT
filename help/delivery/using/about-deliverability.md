@@ -7,43 +7,112 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 0%
+source-wordcount: '716'
+ht-degree: 5%
 
 ---
 
 
-# Informazioni sul recapito messaggi{#about-deliverability}
+# Che cos&#39;è il recapito{#about-deliverability}
 
-**** Il recapito messaggi consiste nel misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza rimbalzare o contrassegnare come spam.
+Il recapito messaggi ti consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza rimbalzare o essere contrassegnate come spam. [Scopri perché il recapito messaggi è importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
-Adobe Campaign offre un certo numero di strumenti per monitorare le prestazioni di recapito messaggi della piattaforma. Questa sezione evidenzia anche i principi principali da tenere a mente durante la gestione e l’ottimizzazione del recapito messaggi.
+Più precisamente, il recapito messaggi e-mail si riferisce al set di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato.
 
-## Configurazione {#configuration}
+Per informazioni più approfondite sul recapito messaggi e per ulteriori informazioni su termini, concetti e approcci chiave per il recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
-Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, è necessario installare questo pacchetto. Al termine, riavvia il server per tenere conto del pacchetto.
-* Per i client in hosting e ibridi, il **monitoraggio del recapito** è configurato nella tua istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
+## Come migliorare il recapito messaggi {#deliverability-key-points}
 
-* Per le installazioni on-premise, devi installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Per ulteriori informazioni, consulta [Installazione dei pacchetti incorporati di Campaign](../../installation/using/installing-campaign-standard-packages.md).
+I problemi di recapito sono solitamente collegati a misure di protezione contro lo spam implementate da fornitori di servizi Internet e amministratori di server di posta.
 
-In Adobe Campaign, il **monitoraggio del recapito** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita su tutte le istanze e ti consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco delle MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.
+* Per raccomandazioni generali su come progettare campagne di marketing e-mail di successo, consulta [Strategia di recapito messaggi e definizione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html).
 
-## Sfondo {#background}
+* Per consigli più specifici su come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, Adobe consiglia di utilizzare le best practice elencate in questa sezione.
 
-La consegna delle e-mail rappresenta una sfida importante per gli addetti al marketing, che inviino poche migliaia di messaggi o diversi miliardi. Un messaggio su cinque non raggiunge mai la casella in entrata o il destinatario desiderato.
+>[!NOTE]
+>
+>Poiché gli ISP sono obbligati a sviluppare continuamente nuove tecniche di filtraggio sofisticate per proteggere i loro clienti dagli spammer, la consegna delle e-mail è caratterizzata da criteri e regole in continua evoluzione. Assicurati di fare riferimento alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) che viene aggiornata regolarmente.
 
-Una volta relegata come &quot;problema tecnico&quot; per il reparto IT, il recapito messaggi e-mail continua a crescere nell’agenda di marketing. Questo perché gli esperti di marketing esperti riconoscono che, sebbene molti dei suoi elementi siano di natura tecnica, il recapito messaggi è in definitiva un problema aziendale con implicazioni significative sul fatturato.
+### Tasso di consegna
 
-Considera il funnel di e-mail marketing. Il recapito di messaggi determina il numero di messaggi ricevuti, che a sua volta influisce su ogni fase successiva del funnel. Il minor numero di e-mail ricevute si traduce in meno aperture, meno clic e meno conversioni. **Per le aziende con un grande database, la differenza tra la media e la grande consegna potrebbe letteralmente significare tra centinaia di migliaia e milioni di dollari di ricavi.**
+Il tasso di recapito messaggi è il numero di messaggi che hanno colpito le caselle in entrata dei destinatari rispetto al numero di messaggi inviati. Per migliorare il recapito messaggi, puoi lavorare per aumentare questo tasso.
+
+Con Adobe Campaign, il tasso di consegna dipende da numerosi fattori, in particolare:
+
+* Configurazione corretta delle istanze: contatta il tuo rappresentante Adobe per assistenza.
+* Configurazione di rete legittima: consulta [questa sezione](../../delivery/using/optimize-delivery.md#network-config) e [Configurazione e strategia del dominio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* La reputazione del tuo indirizzo IP: consulta [Strategia IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
+* Qualità degli indirizzi interessati: consulta [Gestione della quarantena](../../delivery/using/optimize-delivery.md#quarantine-management).
+* Percentuali basse [reclami](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) e [mancate consegne](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
+* Contenuto del messaggio: consulta [Controllo del contenuto delle e-mail](../../delivery/using/control-message-content.md).
+* Autenticazione dei messaggi (SPF, DKIM, DMARC): vedere [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* reputazione del mittente: per scoprire come gli ISP principali valutano la reputazione di un mittente, consulta [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
+
+## Strumenti di consegna campagna {#deliverability-tools}
+
+<!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
+Adobe Campaign fornisce diversi strumenti per monitorare e migliorare le prestazioni di recapito messaggi della piattaforma. Questa pagina evidenzia anche i principi principali che dovresti tenere a mente per ottimizzare il recapito messaggi durante l’utilizzo di Campaign.
+
+### Crea il messaggio con attenzione
+
+Durante la configurazione, la progettazione e il test del messaggio, assicurati di seguire le best practice menzionate nelle sezioni elencate di seguito. L’utilizzo di tutte le funzioni fornite da Adobe Campaign consente di migliorare il recapito messaggi.
+
+* [Best practice di consegna](../../delivery/using/delivery-best-practices.md)
+* [Controllo di contenuti e-mail](../../delivery/using/control-message-content.md)
+* [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md)
+* [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+
+### Verifica il consenso tramite doppio consenso {#double-opt-in}
+
+Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni non corrette e migliorare la reputazione del mittente, l’Adobe consiglia di implementare un doppio meccanismo di consenso. Questo metodo ti consente di garantire che i destinatari si siano abbonati intenzionalmente.
+
+Per ulteriori informazioni, consulta [Creare un modulo di abbonamento con doppio consenso](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+
+Per ulteriori informazioni sulle best practice per la raccolta di dati dai clienti, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
+
+### Gestione della quarantena
+
+Adobe Campaign gestisce un elenco che raccoglie reclami di spam, rimbalzi duri e mancati rimbalzi morbidi che si verificano in modo coerente.
+
+Per proteggere il recapito messaggi, i destinatari i cui indirizzi si trovano in tale elenco vengono esclusi per impostazione predefinita da tutte le consegne future, in quanto l’invio a tali contatti potrebbe danneggiare la reputazione dell’invio.
+
+Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena ti consente quindi di evitare di essere aggiunta al elenco Bloccati da questi provider.
+
+Per ulteriori informazioni, consulta le sezioni seguenti:
+
+* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
+* [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md)
+* [Quarantena rispetto elenco Bloccati](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+
+### Utilizzare strumenti di monitoraggio e reporting
+
+Utilizza le funzioni offerte da Adobe Campaign per monitorare il recapito messaggi.
+
+Adobe Campaign ti consente di verificare le prestazioni delle consegne tramite un set di indicatori e rapporti in tempo reale incorporati per ottenere informazioni più approfondite sulle consegne.
+
+Per ulteriori informazioni, consulta le sezioni seguenti:
+
+* [Monitoraggio della consegna messaggi](../../delivery/using/monitoring-deliverability.md)
+* [Informazioni sul monitoraggio delle consegne](../../delivery/using/about-delivery-monitoring.md)
+* [Informazioni sui report incorporati di Campaign](../../reporting/using/about-campaign-built-in-reports.md)
+
+<!--TO REMOVE
+## Background {#background}
+
+Email deliverability presents a major challenge to marketers - whether they're sending a few thousand messages or several billion. One in five messages never reach the inbox, or their intended recipient.
+
+Once relegated as a "technical issue" for the IT department, email deliverability continues to move higher on the marketing agenda. That's because savvy marketers recognize that although many of its elements are technical in nature, deliverability is ultimately a business issue with significant revenue implications.
+
+Consider the email marketing funnel. Deliverability determines the number of messages received, which in turn impacts each subsequent stage of the funnel. Fewer emails received results in fewer opens, fewer clicks, and fewer conversions. **For companies with a large database, the difference between average and great deliverability could literally mean hundreds of thousands to millions of dollars in revenues.**
 
 ![](assets/deliverability_overview_1.png)
 
-Impostando la consegna media (80%), gli addetti al marketing stanno lasciando sul tavolo conversioni significative - e dollari -.
+By settling for average (80%) deliverability, marketers are leaving significant conversions - and dollars - on the table.
 
-Cos’è esattamente il recapito messaggi e-mail? E in che modo gli esperti di marketing possono migliorare i tassi di consegna per ampliare la bocca del funnel e ottenere più risultati dalle loro campagne e-mail?
+What exactly is email deliverability? And how can marketers improve deliverability rates to widen the mouth of the funnel and squeeze more results from their email campaigns?
 
-Il recapito messaggi e-mail si riferisce al set di caratteristiche che determinano la capacità di un messaggio di raggiungere la destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato. Queste caratteristiche rientrano in quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Insieme, costituiscono la base di un programma di recapito messaggi e-mail di successo. Questa panoramica illustra i quattro principi fondamentali del successo della consegna delle e-mail e offre le best practice per raggiungere la casella in entrata e incrementare i ricavi derivanti dai programmi di marketing per e-mail.
+Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal e-mail address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
 
-<!--![](assets/deliverability_overview_2.png)-->
+![](assets/deliverability_overview_2.png)-->
