@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Note sulla versione Gold Standard
-description: Note sulla versione per Campaign Classic Gold Standard
+title: '[!DNL Gold Standard] note sulla versione'
+description: Note sulla versione di Campaign Classic [!DNL Gold Standard]
 feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: 0ce968d8acdd0aea0211da248a085f05dfe70ae7
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 84%
+source-wordcount: '1026'
+ht-degree: 83%
 
 ---
 
 
-# Note sulla versione Gold Standard{#gold-standard}
+# [!DNL Gold Standard] note sulla versione{#gold-standard}
 
-In questa pagina sono elencate le versioni Gold Standard. Ulteriori informazioni su Campaign Gold Standard [in questa pagina](gs-overview.md).
+In questa pagina sono elencate le versioni [!DNL Gold Standard] . Ulteriori informazioni su Campaign [!DNL Gold Standard] [in questa pagina](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Versione Gold Standard 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] Versione 11{#gs-11}
 
 _2 marzo 2021_
 
@@ -44,7 +44,7 @@ _22 dicembre 2020_
 
 >
 >
-Ulteriori informazioni sono disponibili nelle [Domande frequenti sull’aggiornamento a Gold Standard 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html).
+Ulteriori informazioni sono disponibili nelle [[!DNL Gold Standard] Domande frequenti sull&#39;aggiornamento 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html).
 
 La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
@@ -58,7 +58,7 @@ La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
 * È stato risolto un problema che poteva causare un errore dei flussi di lavoro durante l’esecuzione di un’attività **Enrichment**. (NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] Versione 10{#gs-10}
 
 _7 luglio 2020_
 
@@ -70,7 +70,7 @@ La build 9032@efd8a94 include la seguente correzione:
 >
 >È consigliabile aggiornare la console client con quella disponibile in questa versione. Consulta [questa pagina](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 9{#gs-9}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 9 versione{#gs-9}
 
 _22 giugno 2020_
 
@@ -86,7 +86,7 @@ Le seguenti correzioni sono legate al meccanismo di sicurezza dei collegamenti d
 * È stato risolto un problema riguardante il servizio anti-phishing. (NEO-25283)
 * È stato risolto un problema di tracking che si verificava con l’utilizzo di alcune formule personalizzate. (NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 8{#gs-8}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 8 versione{#gs-8}
 
 _29 aprile 2020_
 
@@ -111,7 +111,7 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 * È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema di regressione minore nei log del flusso di lavoro di pulizia.
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 6 release{#gs-6}
 
 _9 marzo 2020_
 
@@ -119,7 +119,7 @@ La build 9032@19f73c5 include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 5 release{#gs-5}
 
 _17 dicembre 2019_
 
@@ -127,7 +127,7 @@ La build 9032@d6b8062 include la seguente correzione:
 
 * È stato risolto un problema di tracking sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 4 release{#gs-4}
 
 _11 dicembre 2019_
 
@@ -135,7 +135,7 @@ La build 9032@bc4a935 include la seguente correzione:
 
 * È stato risolto un problema di prestazioni riguardante l’invio di messaggi con un database MSSQL. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 3 release{#gs-3}
 
 _20 novembre 2019_
 
@@ -145,7 +145,7 @@ La build 9032@3468c7b include le seguenti correzioni:
 * È stato risolto un problema che si verificava durante la visualizzazione dei report cumulativi su più consegne. (NEO-18165)
 * È stato risolto un problema che poteva bloccare o arrestare il server Web.
 
-## ![](assets/do-not-localize/red_2.png) Versione Gold Standard 2{#gs-2}
+## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] 2 release{#gs-2}
 
 _19 settembre 2019_
 
