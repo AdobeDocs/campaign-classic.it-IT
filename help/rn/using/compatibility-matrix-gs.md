@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Matrice di compatibilità per Campaign Gold Standard
-description: Matrice di compatibilità di Campaign Classic per la versione Gold Standard
+title: Matrice di compatibilità per Campaign [!DNL Gold Standard]
+description: Matrice di compatibilità di Campaign Classic per la versione  [!DNL Gold Standard] di
 feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '512'
 ht-degree: 98%
 
 ---
 
 
-# Matrice di compatibilità Gold Standard{#compatibility-matrix-gs}
+# [!DNL Gold Standard] Matrice di compatibilità{#compatibility-matrix-gs}
 
-Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic Gold Standard** 19.1. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
+Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic[!DNL Gold Standard]** 19.1. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
 
 ## Note importanti{#important-notes-gs}
 
