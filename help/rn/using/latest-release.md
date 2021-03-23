@@ -7,10 +7,10 @@ feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 98%
+source-wordcount: '906'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati con l’**ultima versione di Campaign Classic Release Candidate**.
 
-Per la versione Campaign Classic Gold Standard (ultima build GA), [fare riferimento a questa pagina](../../rn/using/gold-standard.md).
+Per Campaign Classic [!DNL Gold Standard] versione (ultima build GA), [fare riferimento a questa pagina](../../rn/using/gold-standard.md).
 
 ## ![](assets/do-not-localize/blue_2.png) Versione 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
 
