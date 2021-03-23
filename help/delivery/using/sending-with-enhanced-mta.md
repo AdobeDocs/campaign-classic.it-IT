@@ -1,57 +1,57 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Invio con MTA avanzato in Adobe Campaign Classic
-description: Scopri l’ambito e le specificità dell’invio di e-mail con l’MTA avanzata di Adobe Campaign .
+title: Invio con l’MTA avanzato in Adobe Campaign Classic
+description: Scopri l’ambito e le specificità dell’invio di e-mail con l’MTA avanzato di Adobe Campaign.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 3%
 
 ---
 
 
-# Invio con MTA avanzata {#sending-with-enhanced-mta}
+# Invio con MTA avanzato {#sending-with-enhanced-mta}
 
-L&#39;**Adobe Campaign Enhanced MTA** (Mail Transfer Agent) fornisce un&#39;infrastruttura di invio aggiornata che consente una migliore recapito, reputazione, throughput, reporting, gestione delle rimbalzi, configurazione della rampa IP e gestione delle impostazioni di connessione.
+L&#39; **MTA avanzato Adobe Campaign** (Agente di trasferimento posta) fornisce un&#39;infrastruttura di invio aggiornata che consente di migliorare la consegna, la reputazione, il throughput, la generazione di rapporti, la gestione dei messaggi non recapitati, la rampa IP e la gestione delle impostazioni di connessione.
 
-È implementato per migliorare la scalabilità, aumentare il throughput di distribuzione e aiutare a inviare più e-mail più rapidamente. Ciò si ottiene con nuove tecniche di consegna adattiva che modificano le impostazioni di invio delle e-mail in tempo reale in base al feedback ricevuto dai provider di servizi Internet.
+È implementato per migliorare la scalabilità, aumentare il throughput di consegna e contribuire a inviare più e-mail più rapidamente. Questo si ottiene con nuove tecniche di consegna adattiva che modificano le impostazioni di invio delle e-mail in tempo reale in base al feedback ricevuto dai provider di servizi Internet.
 
 >[!IMPORTANT]
 >
->Il  Adobe Campaign Enhanced MTA è disponibile solo per i clienti Campaign Classic ospitati o ibridi. Impossibile aggiornare le installazioni Campaign Classic locali per utilizzare l&#39;MTA avanzato.
+>L’MTA avanzato di Adobe Campaign è disponibile solo per i clienti ospitati o ibridi di Campaign Classic. Impossibile aggiornare le installazioni on-premise di Campaign Classic per utilizzare l’MTA avanzato.
 
-Se dopo settembre 2018 vi è stata fornita un&#39;istanza Campaign Classic, utilizzate l&#39;MTA avanzata. Per tutti gli altri clienti Campaign Classic, consultare la sezione [Domande frequenti](#enhanced-mta-faq) riportata di seguito.
+Se dopo settembre 2018 ti è stato fornito un’istanza di Campaign Classic, utilizza l’MTA avanzato. Per tutti gli altri clienti Campaign Classic, consulta le [Domande frequenti](#enhanced-mta-faq) riportate di seguito.
 
-L&#39;implementazione MTA avanzata potrebbe avere un impatto su alcune delle funzionalità di Campaign esistenti. Per ulteriori informazioni, vedere [Miglioramento delle specificità MTA](#enhanced-mta-impacts).
+L’implementazione dell’MTA avanzato potrebbe influire su alcune delle funzionalità esistenti di Campaign. Per ulteriori informazioni, consulta [Specifiche MTA avanzate](#enhanced-mta-impacts).
 
 >[!NOTE]
 >
->Se sei un utente finale di  Adobe Campaign e vuoi sapere se l&#39;istanza è stata aggiornata all&#39;MTA avanzata, contatta il tuo amministratore interno della campagna.
+>Se sei un utente finale di Adobe Campaign e desideri sapere se l’istanza è stata aggiornata all’MTA avanzato, contatta il tuo amministratore interno di Campaign.
 
 ## Domande frequenti {#enhanced-mta-faq}
 
 ### Utilizzo e vantaggi
 
-**Cos&#39;è l&#39;MTA avanzato?**
+**Cos’è l’MTA avanzato?**
 
- Adobe Campaign può ora essere aggiornato per utilizzare un nuovo MTA (Mail Transfer Agent) che esegue l&#39;MTA commerciale di SparkPost denominato **Momentum**.
+È ora possibile aggiornare Adobe Campaign per utilizzare un nuovo MTA (Mail Transfer Agent) che esegue l’MTA commerciale di SparkPost denominato **Momentum**.
 
-Momentum rappresenta una tecnologia MTA innovativa e ad alte prestazioni, che include una gestione dei rimbalzi più intelligente e una funzionalità di ottimizzazione della recapito automatizzata che consente ai mittenti di raggiungere e mantenere i tassi di consegna ottimali della posta in arrivo. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+Momentum rappresenta una tecnologia MTA innovativa e ad alte prestazioni che include una gestione più intelligente dei messaggi non recapitati e una funzionalità di ottimizzazione automatizzata dei messaggi che aiuta i mittenti a raggiungere e mantenere tassi di consegna ottimali nella casella in entrata. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
 
-**Quali sono i benefici?**
+**Quali sono i vantaggi?**
 
-*  client Adobe Campaign che utilizzano l&#39;MTA Enhanced hanno visto un <!--300%-->aumento massiccio della velocità effettiva complessiva e una <!--90%+-->riduzione significativa dei rimbalzi morbidi.
-* L&#39;MTA avanzata utilizza la più recente tecnologia MTA per fornire la velocità di trasmissione ottimale per la distribuzione delle e-mail.
-* Grazie all&#39;adattamento immediato e automatico ai commenti ricevuti, l&#39;e-mail viene inviata in modo più preciso e intelligente, con dati di consegna in tempo reale.
+* I client Adobe Campaign che utilizzano l’MTA avanzato hanno visto un <!--300%-->aumento massiccio della velocità effettiva complessiva e una <!--90%+-->significativa riduzione dei mancati recapiti software.
+* L’MTA avanzato utilizza la tecnologia MTA più recente per fornire le velocità di throughput ottimali per la consegna delle e-mail.
+* Adattandosi in modo istantaneo e automatico al feedback ricevuto, assicura anche una consegna e-mail più accurata e intelligente con dati di consegna in tempo reale.
 
-**È possibile utilizzare  MTA nativo Adobe Campaign e MTA avanzata allo stesso tempo?**
+**Posso utilizzare contemporaneamente l’MTA nativo di Adobe Campaign e l’MTA avanzato?**
 
-No. Solo l&#39;MTA avanzata può essere utilizzato per le comunicazioni e-mail dopo l&#39;aggiornamento dell&#39;istanza.
+No. Solo l’MTA avanzato può essere utilizzato per le consegne e-mail dopo l’aggiornamento dell’istanza.
 
 <!--
 **Is there a fee associated with upgrading my instance to and subsequent use of the Enhanced MTA?**
@@ -64,167 +64,167 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 * For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
-### Aggiornamento all&#39;MTA avanzato
+### Aggiornamento all’MTA avanzato
 
-**Cosa è necessario per effettuare l&#39;aggiornamento all&#39;MTA avanzato?**
+**Cosa è necessario per eseguire l’aggiornamento all’MTA avanzato?**
 
-Se dopo settembre 2018 è stato eseguito il provisioning di un&#39;istanza Campaign Classic, non è richiesta alcuna azione, in quanto si sta già utilizzando l&#39;MTA avanzata.
+Se dopo settembre 2018 è stato eseguito il provisioning di un’istanza di Campaign Classic, non è necessaria alcuna azione, in quanto si utilizza già l’MTA avanzato.
 
-Per tutti gli altri clienti ospitati o parzialmente ospitati (ibridi), il team Adobe Campaign  cercherà di coordinare una data per la migrazione e fornirà dettagli sui passaggi necessari per effettuare la migrazione.
+Per tutti gli altri clienti in hosting o parzialmente ospitati (ibridi), il team Adobe Campaign si rivolgerà per coordinare una data di migrazione e fornirà dettagli sui passaggi appropriati necessari per effettuare la migrazione.
 
 >[!IMPORTANT]
 >
->L&#39;MTA avanzata non è disponibile per le installazioni locali.
+>L’MTA avanzato non è disponibile per le installazioni on-premise.
 
-**Qual è il processo per aggiornare la mia istanza all&#39;MTA avanzato?**
+**Qual è il processo per aggiornare la mia istanza all’MTA avanzato?**
 
-L&#39;intero processo per le istanze ospitate richiede alcuni minuti di inattività.  Adobe controllerà il throughput e la recapito delle e-mail fino a 24 ore dopo l&#39;aggiornamento per valutare l&#39;impatto sulle consegne delle e-mail.
+L&#39;intero processo per le istanze ospitate richiede alcuni minuti di inattività. Adobe controllerà il throughput delle e il recapito di messaggi e-mail per un massimo di 24 ore dopo l’aggiornamento per valutare l’impatto sulle consegne delle e-mail.
 
-In caso di problemi riscontrati,  Adobe può ripristinare rapidamente e temporaneamente l’istanza all’MTA  Adobe Campaign nativo.
+Se vengono rilevati problemi, Adobe può ripristinare rapidamente e temporaneamente l’istanza all’MTA nativo di Adobe Campaign.
 
-Attualmente, l’MTA avanzata interessa solo il canale e-mail. Le notifiche push e le consegne di SMS continueranno a utilizzare il MTA nativo della campagna e non saranno influenzate in alcun modo dall&#39;aggiornamento.
+Attualmente, l’MTA avanzato influisce solo sul canale e-mail. Le notifiche push e le consegne SMS continueranno a utilizzare l’MTA nativo di Campaign e non saranno influenzate in alcun modo dall’aggiornamento.
 
-**Devo affrontare nuovamente il riscaldamento IP dopo l&#39;aggiornamento all&#39;MTA avanzato?**
+**È necessario rivedere il riscaldamento dell’IP dopo l’aggiornamento all’MTA avanzato?**
 
-No. L&#39;aggiornamento non richiede il passaggio a nuovi IP, pertanto puoi continuare a utilizzare i tuoi IP e-mail esistenti e riscaldati.
+No. L’aggiornamento non richiede il passaggio a nuovi IP, pertanto puoi continuare a utilizzare gli IP e-mail esistenti e scaldati.
 
-**L&#39;aggiornamento all&#39;MTA avanzato avrà un impatto su eventuali campagne o consegne in corso?**
+**L’aggiornamento all’MTA avanzato influisce su eventuali campagne o consegne attualmente in corso?**
 
-Tutte le consegne che erano state preparate prima dell&#39;aggiornamento dell&#39;istanza per l&#39;utilizzo dell&#39;MTA avanzato dovranno essere preparate nuovamente per poter utilizzare correttamente il nuovo MTA.
+Eventuali consegne preparate prima dell’aggiornamento dell’istanza per l’utilizzo dell’MTA avanzato dovranno essere preparate nuovamente per utilizzare correttamente il nuovo MTA.
 
-Per i clienti che utilizzano  funzionalità di messaggistica transazionale di Adobe Campaign, qualsiasi chiamata API per attivare un&#39;e-mail verrà messa in coda durante il breve periodo di inattività dell&#39;aggiornamento e tentata al termine dell&#39;aggiornamento.
+Per i clienti che utilizzano la funzionalità di messaggistica transazionale di Adobe Campaign, tutte le chiamate API per attivare un’e-mail verranno messe in coda durante i tempi di inattività dell’aggiornamento molto brevi e verranno tentate al termine dell’aggiornamento.
 
 ## Specifiche MTA migliorate {#enhanced-mta-impacts}
 
 ### Intestazioni MTA migliorate
 
-Le ultime istanze di Campaign Classic includono il codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi  Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell&#39;istanza di marketing (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)).
+Le ultime istanze di Campaign Classic includono codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell’istanza di marketing (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) ).
 
-Tuttavia, se utilizzi un&#39;istanza precedente che non include questo codice, una nuova regola di tipologia denominata **[!UICONTROL Typology Rule for Enhanced MTAs]** deve essere aggiunta a tutti i tipi di tipologie esistenti nell&#39;istanza Campaign.
-Questa regola viene aggiunta da un pacchetto **[!UICONTROL Typology]** installato come parte dell&#39;aggiornamento all&#39;MTA avanzato.
-
->[!IMPORTANT]
->
->Se visualizzi questa regola di tipologia nelle tue tipologie, non eliminarla o modificarla in alcun modo. In caso contrario, le comunicazioni e-mail potrebbero essere influenzate negativamente.
-
-Questo pacchetto **[!UICONTROL Typology]** deve essere installato nell&#39;istanza di marketing di Adobe Campaign .
-
-Se sei un client ibrido, il team Adobe Campaign  ti fornirà istruzioni su come installare il pacchetto **[!UICONTROL Typology]** nell&#39;istanza di marketing come parte dell&#39;aggiornamento all&#39;MTA avanzato. Contattate il vostro responsabile commerciale per ottenere le istruzioni complete.
+Tuttavia, se utilizzi un’istanza precedente che non include questo codice, devi aggiungere una nuova regola di tipologia denominata **[!UICONTROL Typology Rule for Enhanced MTAs]** a tutte le tipologie esistenti nell’istanza Campaign.
+Questa regola viene aggiunta da un pacchetto **[!UICONTROL Typology]** installato come parte dell’aggiornamento all’MTA avanzato.
 
 >[!IMPORTANT]
 >
->Le istruzioni fornite dal team Adobe Campaign  su come installare il pacchetto **[!UICONTROL Typology]** devono essere seguite con attenzione. In caso contrario, potrebbero verificarsi problemi rilevanti con gli IP utilizzati per inviare e-mail.
+>Se trovi questa regola di tipologia nelle tipologie, non eliminarla o modificarla in alcun modo. In caso contrario, le consegne delle e-mail potrebbero essere influenzate negativamente.
 
-Per ulteriori informazioni sulle tipologie, vedere [questa sezione](../../campaign/using/about-campaign-typologies.md).
+Questo pacchetto **[!UICONTROL Typology]** deve essere installato nell&#39;istanza di marketing di Adobe Campaign.
+
+Se sei un client ibrido, il team Adobe Campaign ti fornirà istruzioni su come installare il pacchetto **[!UICONTROL Typology]** nella tua istanza di marketing come parte dell’aggiornamento all’MTA avanzato. Contatta il tuo account executive per ottenere le istruzioni complete.
+
+>[!IMPORTANT]
+>
+>Le istruzioni fornite dal team Adobe Campaign su come installare il pacchetto **[!UICONTROL Typology]** devono essere seguite con attenzione. In caso contrario, potresti riscontrare problemi gravi con gli IP utilizzati per inviare e-mail.
+
+Per ulteriori informazioni sulle tipologie, consulta [questa sezione](../../campaign/using/about-campaign-typologies.md).
 
 ### Nuove regole MX
 
-Le regole del throughput di gestione MX non vengono più utilizzate. L&#39;MTA avanzata dispone di regole MX specifiche che consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell&#39;e-mail e al feedback in tempo reale proveniente dai domini in cui invii le e-mail.
+Le regole della velocità effettiva di consegna della gestione MX non vengono più utilizzate. L’MTA avanzato dispone di proprie regole MX che le consentono di personalizzare il throughput in base al dominio in base alla reputazione storica dell’e-mail e al feedback in tempo reale proveniente dai domini in cui invii e-mail.
 
-Per ulteriori informazioni sulla configurazione MX, vedere [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
+Per ulteriori informazioni sulla configurazione MX, consulta [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
 
-### Qualifica di rifiuto
+### Qualificazione non recapitata
 
-I titoli di rimbalzo nella tabella Campaign **[!UICONTROL Delivery log qualification]** non vengono più utilizzati per i messaggi di errore di consegna **sincroni**. L&#39;MTA avanzata determina il tipo di rimbalzo e la qualifica e invia nuovamente tali informazioni a Campaign.
+Le qualifiche di mancato recapito nella tabella Campaign **[!UICONTROL Delivery log qualification]** non vengono più utilizzate per i messaggi di errore di consegna **sincrono**. L’MTA avanzato determina il tipo di messaggio non recapitato e la relativa qualifica e invia nuovamente tali informazioni a Campaign.
 
 >[!NOTE]
 >
->L&#39;MTA avanzata qualifica il rimbalzo SMTP e invia tale qualifica a Campaign sotto forma di codice di rimbalzo mappato a un motivo e a una qualifica di rimbalzo della campagna.
+>L’MTA avanzato qualifica il messaggio non recapitato SMTP e lo invia nuovamente a Campaign sotto forma di codice non recapitato mappato a un motivo e a una qualifica di mancato recapito della campagna.
 
-Per ulteriori informazioni sulla qualifica del rimbalzo, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+Per ulteriori informazioni sulla qualifica dei messaggi non recapitati, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
 ### Velocità effettiva di consegna
 
-Il grafico del throughput di distribuzione delle campagne non visualizzerà più il throughput ai destinatari delle e-mail. Questo grafico ora mostra la velocità effettiva per il inoltro dei messaggi da Campaign all&#39;MTA avanzato.
+Il grafico della velocità effettiva di consegna di Campaign non visualizzerà più la velocità effettiva ai destinatari delle e-mail. Questo grafico ora mostra la velocità effettiva per il relay dei messaggi da Campaign all’MTA avanzato.
 
-Per ulteriori informazioni sulla velocità di consegna, vedere [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+Per ulteriori informazioni sulla velocità effettiva di consegna, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
 
 ### Periodo di validità
 
-L&#39;impostazione del periodo di validità nelle consegne della campagna verrà utilizzata dall&#39;MTA avanzata solo se impostata su **3,5 giorni o meno**. Se in Campaign definisci un valore superiore a 3,5 giorni, non verrà preso in considerazione.
+L’impostazione del periodo di validità nelle consegne di Campaign viene utilizzata dall’MTA avanzato solo se è impostata su **3,5 giorni o meno**. Se definisci un valore superiore a 3,5 giorni in Campaign, non verrà preso in considerazione.
 
-Ad esempio, se il periodo di validità è impostato sul valore predefinito di 5 giorni in Campaign, i messaggi di rimbalzo temporaneo entreranno nella coda dei tentativi MTA avanzata e verranno ritentati per un massimo di 3,5 giorni a partire dal momento in cui il messaggio ha raggiunto l&#39;MTA avanzato. In tal caso, il valore impostato in Campaign non verrà utilizzato.
+Ad esempio, se il periodo di validità è impostato sul valore predefinito di 5 giorni in Campaign, i messaggi di rimbalzo soft entreranno nella coda dei nuovi tentativi dell’MTA avanzato e verranno ritentati per un massimo di 3,5 giorni a partire dal momento in cui il messaggio ha raggiunto l’MTA avanzato. In tal caso, il valore impostato in Campaign non verrà utilizzato.
 
 Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 giorni e la consegna non è riuscita, si verificherà un timeout e il suo stato verrà aggiornato da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** nei log di consegna.
 
-Per ulteriori informazioni sul periodo di validità, vedere [questa sezione](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
 ### Firma DKIM
 
-La firma dell&#39;autenticazione tramite e-mail DKIM (DomainKeys Identified Mail) viene fatta dall&#39;MTA avanzata. La firma DKIM da parte dell&#39;MTA della campagna nativa verrà disattivata all&#39;interno della tabella di gestione del dominio come parte dell&#39;aggiornamento MTA avanzato.
-Per ulteriori informazioni su DKIM, vedere [questa sezione](../../delivery/using/technical-recommendations.md#dkim).
+La firma dell’autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA di Campaign nativo verrà disattivata all’interno della tabella di gestione del dominio come parte dell’aggiornamento dell’MTA avanzato.
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
-### Generazione di rapporti di successo
+### Generazione rapporti di successo
 
-Nella **[!UICONTROL Summary]** visualizzazione di un&#39;e-mail di consegna [dashboard](../../delivery/using/delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente durante il periodo di validità [consegna](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), poiché i rimbalzi morbidi e duri vengono riportati dall&#39;MTA avanzata alla campagna.
+Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](../../delivery/using/delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente per tutto il periodo di validità della consegna [](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), in quanto i rimbalzi morbidi e rigidi vengono riportati dall’MTA avanzato a Campaign.
 
-In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all&#39;MTA avanzato. Rimangono nello stato a meno che o fino a quando un [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non venga comunicato nuovamente dall&#39;MTA avanzato alla campagna.
+Infatti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [rimbalzo](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato nuovamente dall’MTA avanzato a Campaign.
 
-Quando i messaggi di rimbalzo rigido vengono segnalati dall&#39;MTA avanzata, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
+Quando i messaggi di rimbalzo rigido vengono riportati dall’MTA avanzato, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
 
-Quando i messaggi di rimbalzo soft vengono segnalati dall&#39;MTA avanzata, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [riprovati](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante il periodo di validità della consegna:
+Quando i messaggi di rimbalzo soft vengono segnalati dall’MTA avanzato, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [ritentati](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) per tutto il periodo di validità della consegna:
 
-* Se un tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio rimane **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** rimane invariata.
+* Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio rimane **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** rimane invariata.
 
-* In caso contrario, lo stato cambia in **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene diminuita di conseguenza.
+* In caso contrario, lo stato cambia in **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
 
-Di conseguenza, è necessario attendere fino alla fine del periodo di validità per visualizzare la percentuale finale **[!UICONTROL Success]** e il numero finale di messaggi effettivi **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
+Di conseguenza, è necessario attendere fino alla fine del periodo di validità per visualizzare la percentuale finale **[!UICONTROL Success]** e il numero finale dei messaggi effettivamente **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### Servizio di feedback e-mail (beta) {#email-feedback-service}
+### Servizio feedback e-mail (beta) {#email-feedback-service}
 
-Grazie alla funzionalità EFS (Email Feedback Service), lo stato di ogni e-mail viene riportato con precisione, perché il feedback viene acquisito direttamente dall&#39;Enhanced MTA (Message Transfer Agent).
+Grazie alla funzionalità EFS (Email Feedback Service), lo stato di ogni e-mail viene riportato con precisione, in quanto il feedback viene acquisito direttamente dall’MTA avanzato (Message Transfer Agent).
 
 >[!IMPORTANT]
 >
->Il servizio e-mail di feedback è attualmente disponibile come funzionalità beta.
+>Il servizio e-mail e-mail e’ attualmente disponibile come funzionalità beta.
 >
->Se sei interessato a partecipare a questo programma beta, compila [questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e ti contatteremo di nuovo.
+>Se sei interessato a partecipare a questo programma beta, compila [questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e ti ritorneremo.
 
-Una volta avviata la consegna, non si verifica alcuna modifica nella percentuale **[!UICONTROL Success]** quando il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata.
+Una volta avviata la consegna, la percentuale **[!UICONTROL Success]** non subirà alcuna modifica quando il messaggio viene inoltrato correttamente da Campaign all’MTA avanzato.
 
 <!--![](assets/efs-sending.png)-->
 
-I registri di consegna mostrano lo stato **[!UICONTROL Taken into account by the service provider]** per ciascun indirizzo di destinazione.
+I registri di consegna mostrano lo stato **[!UICONTROL Taken into account by the service provider]** per ogni indirizzo di destinazione.
 
 <!--![](assets/efs-pending.png)-->
 
-Quando il messaggio viene effettivamente recapitato ai profili di destinazione e una volta che tali informazioni vengono riportate in tempo reale dall&#39;MTA avanzata, i registri di consegna mostrano lo stato **[!UICONTROL Sent]** per ogni indirizzo che ha ricevuto correttamente il messaggio. La percentuale **[!UICONTROL Success]** viene aumentata di conseguenza con ogni consegna completata correttamente.
+Quando il messaggio viene effettivamente recapitato ai profili di destinazione e una volta che tali informazioni sono state segnalate nuovamente in tempo reale dall’MTA avanzato, i registri di consegna mostrano lo stato **[!UICONTROL Sent]** per ogni indirizzo che ha ricevuto correttamente il messaggio. La percentuale **[!UICONTROL Success]** viene aumentata di conseguenza con ogni consegna riuscita.
 
-Quando i messaggi di rimbalzo rigido vengono segnalati dall&#39;MTA avanzata, lo stato del registro cambia da **[!UICONTROL Taken into account by the service provider]** a **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+Quando i messaggi di rimbalzo rigido vengono riportati dall’MTA avanzato, lo stato del registro cambia da **[!UICONTROL Taken into account by the service provider]** a **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando i messaggi di rimbalzo soft vengono segnalati dall&#39;MTA avanzata, lo stato del registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): viene aggiornato solo il [motivo di errore](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. La percentuale **[!UICONTROL Success]** rimane invariata. I messaggi di rimbalzo temporaneo vengono quindi ritentati durante il periodo di consegna [validità](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+Quando i messaggi di rimbalzo non recapitati vengono segnalati dall’MTA avanzato, lo stato del registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): viene aggiornato solo il [motivo errore](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. La percentuale **[!UICONTROL Success]** rimane invariata. I messaggi di rimbalzo morbido vengono quindi ritentati durante il periodo di validità della consegna [](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
 
 * Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio cambia in **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** viene aumentata di conseguenza.
 
-* In caso contrario, lo stato diventa **[!UICONTROL Failed]**. La percentuale **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->rimane invariata.
+* In caso contrario, lo stato cambia in **[!UICONTROL Failed]**. La percentuale **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->rimane invariata.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui rimbalzi rigidi e morbidi, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Per ulteriori informazioni sui rimbalzi rigidi e morbidi, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Per ulteriori informazioni sui tentativi dopo un errore temporaneo di consegna, vedere [questa sezione](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+>Per ulteriori informazioni sui nuovi tentativi dopo un errore temporaneo di consegna, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 
-Le tabelle di seguito mostrano le modifiche apportate agli indicatori KPI e agli stati di invio dei log introdotti dalla funzionalità EFS.
+Le tabelle riportate di seguito mostrano le modifiche apportate ai KPI e agli stati dei registri di invio introdotte dalla funzionalità EFS.
 
-**Con servizio di feedback e-mail**
+**Con il servizio di feedback via e-mail**
 
-| Passaggio nel processo di invio | Riepilogo KPI | Invio dello stato dei registri |
+| Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
-| Il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata | **[!UICONTROL Success]** percentuale non visualizzata (inizia da 0%) | Presa in considerazione dal fornitore di servizi |
-| I messaggi di rimbalzo duro vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Operazione non riuscita |
-| I messaggi di rimbalzo temporaneo vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Presa in considerazione dal fornitore di servizi |
-| I tentativi di messaggi soft-bouncing hanno avuto esito positivo | **[!UICONTROL Success]** percentuale aumentata di conseguenza | Inviato |
-| Messaggi di rimbalzo temporaneo non riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Operazione non riuscita |
+| Il messaggio viene inviato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale non visualizzata (inizia a 0%) | Presa in considerazione dal fornitore di servizi |
+| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Non riuscito |
+| I messaggi di rimbalzo morbido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Presa in considerazione dal fornitore di servizi |
+| I nuovi tentativi dei messaggi di rimbalzo non sono riusciti | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
+| Messaggi di rimbalzo morbido non riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Non riuscito |
 
-**Senza servizio di feedback e-mail**
+**Servizio senza feedback e-mail**
 
-| Passaggio nel processo di invio | Riepilogo KPI | Invio dello stato dei registri |
+| Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
-| Il messaggio viene inviato correttamente da Campaign all&#39;MTA avanzata | **[!UICONTROL Success]** percentuale inizia al 100% | Inviato |
-| I messaggi di rimbalzo duro vengono segnalati nuovamente dall&#39;MTA avanzata | **[!UICONTROL Success]** percentuale diminuisce di conseguenza | Operazione non riuscita |
-| I messaggi di rimbalzo temporaneo vengono segnalati nuovamente dall&#39;MTA avanzata | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato |
-| I tentativi di messaggi soft-bouncing hanno avuto esito positivo | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato | **[!UICONTROL Success]** percentuale aumentata di conseguenza | Inviato |
-| Messaggi di rimbalzo temporaneo non riusciti | **[!UICONTROL Success]** percentuale diminuisce di conseguenza | Operazione non riuscita |
+| Il messaggio viene inviato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale inizia al 100% | Inviato |
+| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Non riuscito |
+| I messaggi di rimbalzo morbido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato |
+| I nuovi tentativi dei messaggi di rimbalzo non sono riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
+| Messaggi di rimbalzo morbido non riusciti | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Non riuscito |
