@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '768'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Per migliorare la sicurezza, nella build 19.1.4 (9032@3a9dc9c) è stato introdot
 >
 >Quando fai clic su un URL firmato non valido, viene restituito il seguente errore: &quot;Impossibile trovare l&#39;URL richiesto &quot;..&quot;.
 
-Inoltre, a partire dalla versione Campaign 20.2 e Gold Standard, i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+Inoltre, a partire dalla versione Campaign 20.2 e [!DNL Gold Standard], i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
 
 Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi passaggi su tutti i server Campaign:
 
@@ -65,7 +65,7 @@ Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi
 1. Riavvia il servizio **nlserver** .
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
-I clienti che eseguono Gold Standard 19.1.4 possono rilevare problemi con le consegne di notifiche push utilizzando un collegamento di tracciamento o con consegne che utilizzano tag di ancoraggio. In tal caso, Adobe consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracciamento:
+I clienti in esecuzione su [!DNL Gold Standard] 19.1.4 possono riscontrare problemi con le consegne di notifiche push utilizzando un collegamento di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, Adobe consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracciamento:
 
 **I** clienti in hosting e ibridi devono contattare  [Customer ](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) Careto per disattivare questo meccanismo.
 
