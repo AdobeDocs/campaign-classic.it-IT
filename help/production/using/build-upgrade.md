@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 2%
 
 ---
@@ -415,4 +415,4 @@ Di seguito sono riportati i passaggi per eseguire un’unione complessa:
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 * [Note sulla versione di Campaign Classic](../../rn/using/rn-overview.md)
 * [Opzioni di aiuto e supporto per Campaign Classic](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
-* [Programma Gold Standard](https://helpx.adobe.com/it/campaign/kb/gold-standard.html)
+* [[!DNL Gold Standard] programma](../../rn/using/gs-overview.md)
