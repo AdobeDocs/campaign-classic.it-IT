@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla sezione [Configurazione del recapito messaggi](../../delivery/using/about-deliverability.md#configuration), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
+Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza al fine di massimizzare le funzionalità di consegna di Campaign.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/technical-recommendations.md).
+[Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 
 ## Come posso implementare l’approvazione dei contenuti? {#how-can-i-implement-content-approval-}
 
