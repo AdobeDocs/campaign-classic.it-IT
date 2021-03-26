@@ -6,7 +6,7 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 01f4e4ee841a797f4be61ffc01096b7f651ce963
+source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Per motivi di sicurezza, ora devi effettuare l’aggiornamento a una delle versi
 >Per qualsiasi domanda su queste modifiche, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
-## Aggiornamenti di sicurezza
+## Aggiornamenti di sicurezza {#acc-security-updates}
 
 Le versioni più recenti di Campaign presentano una correzione di sicurezza che rafforza la protezione contro i problemi di Server Side Request Forgery (SSRF). Ulteriori informazioni [in questa pagina](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html).
 
@@ -62,7 +62,7 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 >Se non è possibile eseguire l&#39;aggiornamento entro il periodo di tempo consigliato, **contatta il team di assistenza clienti Adobe per applicare una correzione manuale di sicurezza a breve termine alle istanze**.
 
 
-## Aggiornamento della console client di Campaign Classic
+## Aggiornamento della console client di Campaign Classic {#acc-cc-updates}
 
 Per risolvere una regressione identificata di recente, è necessario installare le versioni della console **ora disponibili** riportate di seguito. Questa regressione impediva l’utilizzo di alcuni componenti della console client, come il selettore data e la gestione delle immagini nelle consegne. **Aggiornamenti** della console obbligatori.
 
@@ -105,7 +105,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 * [Scopri come installare la console](../installation/using/installing-the-client-console.md) client di Campaign.
 
-## Integrazione con Experience Cloud Triggers
+## Integrazione con i trigger Experience Cloud {#acc-triggers-updates}
 
 Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il **30 novembre 2021**. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -131,7 +131,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 [Scopri come effettuare la migrazione ad Adobe I/O](../integrations/using/configuring-adobe-io.md).
 
-## Aggiornamenti APN
+## Aggiornamenti APN {#acc-apns-updates}
 
 ### API del provider APN basato su HTTP/2
 
