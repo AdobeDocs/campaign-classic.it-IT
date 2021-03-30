@@ -3,14 +3,11 @@ solution: Campaign Classic
 product: campaign
 title: 'Guida e opzioni di supporto per Campaign Classic '
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '771'
 ht-degree: 10%
 
 ---
@@ -45,7 +42,7 @@ Come effettuare l’aggiornamento a una nuova build? come monitorare l’esecuzi
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Concetti chiave</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Impostazioni di Campaign</a></li>
-        <li><a href="platform/using/faq-reporting.md">Generazione rapporti</a></li>
+        <li><a href="platform/using/faq-reporting.md">Generazione di rapporti</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Aggiornamento della build</a></li>
         <li><a href="platform/using/faq-messages.md">Verifica, invio e tracciamento dei messaggi</a></li>
         <li><a href="platform/using/faq-workflows.md">Flussi di lavoro</a></li>
@@ -97,8 +94,14 @@ Come effettuare l’aggiornamento a una nuova build? come monitorare l’esecuzi
 
 ### Cos&#39;è il Pannello di controllo Campaign?
 
-Il Pannello di controllo Campaign consente di migliorare l’efficienza del lavoro in qualità di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia degli utilizzi per ciascuna istanza.
+Il Pannello di controllo Campaign Campaign ti consente di aumentare l’efficienza del lavoro come amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia degli utilizzi per ciascuna istanza.
 [Fai clic ](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) qui per ulteriori informazioni.
+
+>[!NOTE]
+>
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all’amministratore l’accesso a un utente sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Come accedere al Pannello di controllo Campaign?
 
