@@ -7,20 +7,20 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8433'
 ht-degree: 0%
 
 ---
+
 
 # Protocollo e impostazioni del connettore SMS {#sms-connector-protocol}
 
 >[!NOTE]
 >
->Il protocollo e le impostazioni del **connettore SMS** per Adobe Campaign Standard si trovano in questa [pagina](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-sms/sms-protocol.html#administrating).
->
 >Attraverso questo documento, tutti i riferimenti ai dettagli relativi al protocollo, ai nomi e ai valori dei campi si riferiscono alla [specifica SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+
 
 ## Panoramica {#overview}
 
@@ -356,7 +356,7 @@ La dimensione massima di un messaggio dipende dalla relativa codifica. Questa ta
 | Codifica | Codifica_dati normale | Dimensioni del messaggio (caratteri) | Dimensione della parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi richiedono 2 caratteri) |
-| Latino-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latino-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
 ## Parametri account esterni SMPP {#SMPP-parameters-external}
