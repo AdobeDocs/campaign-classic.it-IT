@@ -7,9 +7,9 @@ feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4250'
+source-wordcount: '4275'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,9 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ## Marzo 2021 {#march-2021}
 
-È stata aggiunta una nuova pagina con linee guida e riferimenti per ottenere il supporto per Campaign Classic. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
+La [Guida introduttiva alla sezione SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora puoi imparare a [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare SMS](../../delivery/using/sms-send.md) nelle sezioni dedicate.
+
+La pagina &quot;Opzioni di aiuto e supporto&quot; per Campaign Classic è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
 
 È stata aggiunta una nuova sezione con best practice e controlli da eseguire in materia di sicurezza e privacy. [Leggi tutto](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ La guida introduttiva al GDPR è stata migliorata e arricchita. È ora diventata
 
 La guida introduttiva sulle best practice per le consegne è stata spostata e aggiornata. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
-È stata aggiunta una raccomandazione alla documentazione del canale SMS per evitare problemi quando si utilizzano più account esterni sfruttando il connettore SMPP generico esteso con l’account dello stesso provider. [Leggi tutto](../../delivery/using/sms-channel.md#automatic-reply)
+È stata aggiunta una raccomandazione alla documentazione del canale SMS per evitare problemi quando si utilizzano più account esterni sfruttando il connettore SMPP generico esteso con l’account dello stesso provider. [Leggi tutto](../../delivery/using/sms-set-up.md#automatic-reply)
 
 Nella documentazione dell’attività di pianificazione sono state aggiunte informazioni su come impedire l’esecuzione simultanea di un flusso di lavoro. [Leggi tutto](../../workflow/using/scheduler.md)
 
