@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 34%
 
 ---
 
 
-# Impostare il canale SMS {#setting-up-sms-channel}
+# Configura il canale SMS {#setting-up-sms-channel}
 
 Per inviare a un telefono cellulare, è necessario:
 
@@ -145,7 +145,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
    <td> # </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
@@ -286,7 +286,7 @@ CR: Carriage Return (ritorno a capo)
 
 ^ { } `[ ~ ]` | €
 
-## Informazioni sulle codifiche di testo {#about-text-encodings}
+## Codifiche di testo {#about-text-encodings}
 
 Al momento di inviare un messaggio SMS, Adobe Campaign può utilizzare una o più codifiche di testo. Ogni codifica ha un set di caratteri specifico e determina il numero di caratteri da includere in un messaggio SMS.
 
