@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -19,40 +19,40 @@ ht-degree: 11%
 
 ## Creazione della consegna {#creating-the-delivery}
 
-Potete creare una consegna tramite la panoramica o tramite il menu **[!UICONTROL Create > Delivery]**.
+Puoi creare una consegna tramite la panoramica o il menu **[!UICONTROL Create > Delivery]** .
 
 
-Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l&#39;elenco delle consegne. Quando create una nuova consegna, dovete indicare il canale di consegna utilizzato. A questo scopo, selezionate il modello di consegna appropriato dall&#39;elenco a discesa nel campo **[!UICONTROL Delivery template]**.
+Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco delle consegne. Quando crei una nuova consegna, devi indicare il canale di consegna utilizzato. A questo scopo, seleziona il modello di consegna appropriato dall’elenco a discesa nel campo **[!UICONTROL Delivery template]** .
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Per ciascun canale installato è disponibile un modello predefinito: posta diretta, email, fax, telefono, canale mobile (SMS), Facebook, Twitter, ecc.
+Per ogni canale installato viene fornito un modello predefinito: direct mailing, e-mail, fax, telefono, canale mobile (SMS), Facebook, Twitter, ecc.
 
 >[!NOTE]
 >
->I canali offerti nell&#39;elenco dipendono dal contratto di licenza.
+>I canali offerti nell’elenco dipendono dal contratto di licenza.
 
-Potete creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle vostre esigenze. Per ulteriori informazioni sui modelli, consultare [questa sezione](../../delivery/using/about-templates.md).
+Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle tue esigenze. Per ulteriori informazioni sui modelli, consulta [questa sezione](../../delivery/using/about-templates.md).
 
 ## Identificazione della consegna {#identifying-the-delivery}
 
 Devi completare i parametri per identificare la consegna. Per eseguire questa operazione:
 
-1. Immettete un nome per la consegna nel campo **[!UICONTROL Label]**.
+1. Immetti un nome per la consegna nel campo **[!UICONTROL Label]** .
 
-   Un codice di consegna può anche essere assegnato alla consegna. Il nome della consegna e il relativo codice vengono visualizzati nell&#39;elenco delle consegne, ma non possono essere visti dai destinatari.
+   Un codice di consegna può anche essere assegnato alla consegna. Il nome della consegna e il relativo codice vengono visualizzati nell’elenco delle consegne, ma non possono essere visualizzati dai destinatari.
 
-1. Aggiungete una descrizione nel campo **[!UICONTROL Description]**.
-1. Selezionare il tipo di consegna nel campo pertinente. Queste informazioni sono utili per il tracciamento della consegna: puoi filtrare in base a questo criterio nell&#39;elenco di consegna o creare query utilizzando questo criterio di selezione.
+1. Aggiungi una descrizione nel campo **[!UICONTROL Description]** .
+1. Selezionare la natura della consegna nel campo pertinente. Queste informazioni sono utili per il tracciamento delle consegne: puoi filtrare in base a questo criterio nell’elenco di consegna o creare query utilizzando questo criterio di selezione.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. Fare clic su **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
+1. Fai clic su **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
 
-Il contenuto di consegna è pronto per essere configurato. La definizione del contenuto di distribuzione è specifica per ciascun canale. Per maggiori informazioni, consulta la sezione dedicata:
+Il contenuto della consegna è pronto per essere configurato. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
 * [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
-* [Definizione del contenuto SMS](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [Definizione del contenuto dell’SMS](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [Definizione del contenuto della direct mail](../../delivery/using/defining-the-direct-mail-content.md)
 * [Notifiche push](../../delivery/using/about-mobile-app-channel.md)
 
