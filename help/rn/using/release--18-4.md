@@ -7,7 +7,7 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -144,7 +144,7 @@ ht-degree: 7%
 * È stata ripristinata la possibilità per gli amministratori di impostare o reimpostare la password di qualsiasi operatore. A questo scopo, fai clic con il pulsante destro del mouse su un operatore, seleziona **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** e imposta la nuova password dell’operatore. È consigliato agli operatori di modificare la password al primo riconnettersi. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../production/using/lost-password.md).
 * Per supportare la nuova funzione multitenancy in Adobe Target, è ora possibile aggiungere agli URL un nuovo parametro &quot;at_property&quot; durante la configurazione di opzioni e account esterni per l’integrazione con Target. Il valore da utilizzare per questo parametro può essere trovato in Adobe Target e verrà utilizzato da Campaign quando si eseguono chiamate a Target. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../integrations/using/inserting-a-dynamic-image.md).
 * È ora possibile specificare una pagina di destinazione predefinita da aprire quando si fa clic su un’immagine trasmessa da Adobe Target. Precedentemente, quando si faceva clic su tale immagine, veniva visualizzato il set di immagini predefinito al momento della creazione del messaggio e-mail. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../integrations/using/inserting-a-dynamic-image.md).
-* Aggiunta della casella di controllo **Abilita tracce SMPP** nell&#39;account esterno per forzare l&#39;output delle tracce. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Aggiunta della casella di controllo **Abilita tracce SMPP** nell&#39;account esterno per forzare l&#39;output delle tracce. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Evoluzioni tecniche**
 
