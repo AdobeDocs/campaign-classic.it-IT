@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1612'
 ht-degree: 11%
 
 ---
@@ -17,30 +17,31 @@ ht-degree: 11%
 
 # Account esterni{#external-accounts}
 
-Adobe Campaign è dotato di un set di account esterni predefiniti. Per configurare le connessioni con i sistemi esterni, potete creare nuovi account esterni.
+Adobe Campaign è dotato di un set di account esterni predefiniti. Per impostare connessioni con sistemi esterni, puoi creare nuovi account esterni.
 
 Gli account esterni sono utilizzati da processi tecnici quali flussi di lavoro tecnici o flussi di lavoro per campagne. Quando imposti un trasferimento di file in un flusso di lavoro o uno scambio di dati con un’altra applicazione (Adobe Target, Experience Manager, ecc.), devi selezionare un account esterno.
 
 Puoi impostare i seguenti tipi di account esterni:
 
-* [Routing account esterno](#routing-external-account)
+* [Routing dell&#39;account esterno](#routing-external-account)
 * [Account esterno FTP](#ftp-external-account)
-* [Account esterno del database esterno](#external-database-external-account)
+* [Account esterno database esterno esterno](#external-database-external-account)
 * [Account esterno di Web Analytics](#web-analytics-external-account)
 * [Account esterno di connessione Facebook](#facebook-connect-external-account)
-* [Account esterno dell&#39;istanza di esecuzione](#execution-instance-external-account)
+* [Account esterno dell’istanza di esecuzione](#execution-instance-external-account)
 * [Account esterno Adobe Experience Cloud](#adobe-experience-cloud-external-account)
 * [Account esterno SFTP](#sftp-external-account)
 * [Account esterno Adobe Experience Manager](#adobe-experience-manager-external-account)
-* [Account esterno  Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
-* [Account esterno di Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
-* [Account esterno di Salesforce CRM](#salesforce-crm-external-account)
+* [Account esterno Amazon Simple Storage Service (S3)](#amazon-simple-storage-service--s3--external-account)
+* [Account esterno Microsoft Dynamics CRM](#microsoft-dynamics-crm-external-account)
+* [Account esterno CRM Salesforce](#salesforce-crm-external-account)
+* [Account esterno archiviazione BLOB di Azure ](#azure-blob-external-account)
 
 ## Creazione di un account esterno {#creating-an-external-account}
 
-Per creare un nuovo account esterno, attenetevi alla procedura seguente. Le impostazioni dettagliate dipendono dal tipo di account esterno.
+Per creare un nuovo account esterno, effettua le seguenti operazioni. Le impostazioni dettagliate dipendono dal tipo di account esterno.
 
-1. Da Campaign **[!UICONTROL Explorer]**, selezionare **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, seleziona **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
    ![](assets/ext_account_1.png)
 
@@ -48,26 +49,26 @@ Per creare un nuovo account esterno, attenetevi alla procedura seguente. Le impo
 
    ![](assets/ext_account_2.png)
 
-1. Immettere un **[!UICONTROL Label]** e un **[!UICONTROL Internal Name]**.
-1. Selezionare l&#39;account esterno **[!UICONTROL Type]** che si desidera creare.
-1. Configurate l&#39;accesso all&#39;account specificando le credenziali in base al tipo di account esterno scelto.
+1. Immetti un **[!UICONTROL Label]** e un **[!UICONTROL Internal Name]**.
+1. Seleziona il tuo account esterno **[!UICONTROL Type]** che desideri creare.
+1. Configura l’accesso all’account specificando le credenziali in base al tipo di account esterno scelto.
 
    Le informazioni necessarie vengono in genere fornite dal provider del server a cui ti stai connettendo.
 
-1. Selezionare l&#39;opzione **[!UICONTROL Enabled]** per attivare la connessione.
+1. Seleziona l’opzione **[!UICONTROL Enabled]** per attivare la connessione.
 1. Fai clic su **[!UICONTROL Save]**.
 
-L&#39;account esterno viene creato e aggiunto all&#39;elenco dei conti esterni.
+L’account esterno viene creato e aggiunto all’elenco degli account esterni.
 
-## Account esterno di Bounce Mail {#bounce-mails-external-account}
+## Account esterno di mail non recapitate {#bounce-mails-external-account}
 
-L&#39;account esterno **Bounce mails** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, fare riferimento a questa [pagina](../../workflow/using/inbound-emails.md).
+L&#39;account esterno **Bounce mails** specifica l&#39;account POP3 esterno da utilizzare per la connessione al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta questa [pagina](../../workflow/using/inbound-emails.md).
 
 Tutti i server configurati per l&#39;accesso POP3 possono essere utilizzati per ricevere la posta di ritorno.
 
 ![](assets/ext_account_6.png)
 
-Per configurare l&#39;account esterno **[!UICONTROL Bounce mails (defaultPopAccount)]**:
+Per configurare l’account esterno **[!UICONTROL Bounce mails (defaultPopAccount)]**:
 
 * **[!UICONTROL Server]**
 
@@ -75,11 +76,11 @@ Per configurare l&#39;account esterno **[!UICONTROL Bounce mails (defaultPopAcco
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione POP3. La porta predefinita è 110.
+   Numero della porta di connessione POP3. La porta predefinita è 110.
 
 * **[!UICONTROL Account]**
 
-   Nome dell’utente.
+   Nome dell&#39;utente.
 
 * **[!UICONTROL Password]**
 
@@ -87,18 +88,18 @@ Per configurare l&#39;account esterno **[!UICONTROL Bounce mails (defaultPopAcco
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di cifratura scelta tra **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** o **[!UICONTROL POP3S]**.
+   Tipo di crittografia scelto tra **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** o **[!UICONTROL POP3S]**.
 
-## Routing account esterno {#routing-external-account}
+## Routing dell&#39;account esterno {#routing-external-account}
 
-L&#39;account **[!UICONTROL Routing]** esterno consente di configurare ogni canale disponibile in  Adobe Campaign a seconda dei pacchetti installati.
+L’account esterno **[!UICONTROL Routing]** ti consente di configurare ogni canale disponibile in Adobe Campaign in base ai pacchetti installati.
 
 ![](assets/ext_account_7.png)
 
 È possibile configurare i seguenti canali:
 
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Dispositivo mobile (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [Dispositivo mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -109,9 +110,9 @@ L&#39;account **[!UICONTROL Routing]** esterno consente di configurare ogni cana
 
 ## Account esterno FTP {#ftp-external-account}
 
-L&#39;account FTP esterno consente di configurare e testare l&#39;accesso a un server esterno  Adobe Campaign. Per configurare le connessioni con i sistemi esterni, come i server FTP 898, utilizzati per i trasferimenti di file, potete creare i vostri account esterni. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+L&#39;account esterno FTP ti consente di configurare e testare l&#39;accesso a un server esterno ad Adobe Campaign. Per impostare connessioni con sistemi esterni come i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
 
-A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
+Per farlo, specifica in questo account esterno l&#39;indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
 ![](assets/ext_account_8.png)
 
@@ -121,11 +122,11 @@ A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenzia
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione FTP. La porta predefinita è 21.
+   Numero di porta di connessione FTP. La porta predefinita è 21.
 
 * **[!UICONTROL Account]**
 
-   Nome dell’utente.
+   Nome dell&#39;utente.
 
 * **[!UICONTROL Password]**
 
@@ -133,42 +134,42 @@ A tal fine, specificate in questo account esterno l&#39;indirizzo e le credenzia
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di cifratura scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+   Tipo di crittografia scelto tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
 
-Per sapere dove individuare queste credenziali, fare riferimento a questa [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
+Per sapere dove individuare queste credenziali, consulta questa [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
-## Account esterno del database esterno {#external-database-external-account}
+## Account esterno database esterno {#external-database-external-account}
 
-Utilizzate il tipo di account esterno **Database esterno** per la connessione a un database esterno. Ulteriori informazioni sull&#39;opzione Federated Data Access (FDA) in [questa sezione](../../installation/using/about-fda.md).
+Utilizza il tipo di account esterno **Database esterno** per connettersi a un database esterno. Ulteriori informazioni sull&#39;opzione Federated Data Access (FDA) in [questa sezione](../../installation/using/about-fda.md).
 
 I database esterni compatibili con Campaign sono elencati nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
-Le impostazioni di configurazione dell&#39;account esterno dipendono dal motore del database. Ulteriori informazioni nelle sezioni seguenti:
+Le impostazioni di configurazione dell’account esterno dipendono dal motore di database. Ulteriori informazioni nelle sezioni seguenti:
 
-* Configurare l&#39;accesso a [ Azure Synapse](../../installation/using/configure-fda-synapse.md)
-* Configurare l&#39;accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
-* Configurare l&#39;accesso a [ Oracle](../../installation/using/configure-fda-oracle.md)
-* Configurare l&#39;accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
+* Configura l&#39;accesso a [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Configura l&#39;accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Configura l&#39;accesso a [Oracle](../../installation/using/configure-fda-oracle.md)
+* Configura l&#39;accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
 * Configurare l&#39;accesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-* Configurare l&#39;accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Configurare l&#39;accesso a [Sybasi IQ](../../installation/using/configure-fda-sybase.md)
-* Configurare l&#39;accesso a [Teradate](../../installation/using/configure-fda-teradata.md)
+* Configura l&#39;accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Configura l&#39;accesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Configura l&#39;accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
 
 ## Account esterno di Web Analytics {#web-analytics-external-account}
 
-L&#39;account **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** esterno consente di inoltrare i dati da  Adobe Analytics a  Adobe Campaign sotto forma di segmenti. Al contrario, invia indicatori e attributi delle campagne e-mail distribuite da  Adobe Campaign a  Adobe Analytics - Connettore dati.
+L’ account esterno **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** ti consente di inoltrare i dati da Adobe Analytics ad Adobe Campaign sotto forma di segmenti. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign ad Adobe Analytics - Data Connector.
 
 ![](assets/ext_account_10.png)
 
 Per questo account esterno, la formula di calcolo per gli URL tracciati deve essere arricchita e la connessione tra le due soluzioni deve essere approvata. Per ulteriori informazioni, consulta questa [pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
 
-## Account esterno di connessione Facebook {#facebook-connect-external-account}
+## Facebook collega account esterno {#facebook-connect-external-account}
 
-L&#39;account esterno **[!UICONTROL Facebook Connect]** consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, semplificando l&#39;acquisizione di potenziali clienti tramite questo social network.
+L’ account esterno **[!UICONTROL Facebook Connect]** consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, facilitando l’acquisizione di potenziali clienti tramite questo social network.
 
-Per ogni applicazione Facebook, è necessario creare un account esterno di tipo **[!UICONTROL Facebook Connect]**. Per ulteriori informazioni, vedere [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+Per ogni applicazione Facebook, devi creare un account esterno di tipo **[!UICONTROL Facebook Connect]**. Per ulteriori informazioni, consulta [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
@@ -182,15 +183,15 @@ Per ogni applicazione Facebook, è necessario creare un account esterno di tipo 
 
 * **[!UICONTROL Application secret]**
 
-   Segreto app dell’applicazione Facebook.
+   Segreto app della tua applicazione Facebook.
 
-Se si sceglie l&#39;hosting da questa modalità di istanza, l&#39;URL di Canvas protetto deve essere incollato nel campo **Giochi Web Facebook (https)** su Facebook
+Se si sceglie l&#39;ospitato da questa modalità di istanza, è necessario incollare l&#39;URL Canvas sicuro nel campo **Giochi web Facebook (https)** su Facebook
 
-Per sapere dove individuare queste credenziali, fare riferimento a questa [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
+Per sapere dove individuare queste credenziali, consulta questa [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Account esterno dell&#39;istanza di esecuzione {#execution-instance-external-account}
 
-Se si dispone di un&#39;architettura suddivisa, è necessario specificare le istanze di esecuzione collegate all&#39;istanza di controllo e collegarle. I modelli di messaggi transazionali vengono distribuiti nell&#39;istanza di esecuzione
+Se si dispone di un’architettura suddivisa, è necessario specificare le istanze di esecuzione collegate all’istanza di controllo e collegarle. I modelli di messaggio transazionali vengono distribuiti nell’istanza di esecuzione
 
 ![](assets/ext_account_13.png)
 
@@ -200,27 +201,27 @@ Se si dispone di un&#39;architettura suddivisa, è necessario specificare le ist
 
 * **[!UICONTROL Account]**
 
-   Il nome dell&#39;account deve corrispondere all&#39;agente del Centro messaggi come definito nella cartella dell&#39;operatore.
+   Nome dell&#39;account, deve corrispondere all&#39;agente del centro messaggi come definito nella cartella dell&#39;operatore.
 
 * **[!UICONTROL Password]**
 
-   La password dell&#39;account come definito nella cartella dell&#39;operatore.
+   Password dell’account definita nella cartella dell’operatore.
 
-Per ulteriori informazioni su questa configurazione, fare riferimento a [page](../../message-center/using/creating-a-shared-connection.md#control-instance).
+Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 ## Account esterno Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
-Per connettersi alla console  Adobe Campaign utilizzando un Adobe ID , è necessario configurare l&#39;account esterno **[!UICONTROL Adobe Experience Cloud (MAC)]**.
+Per connetterti alla console Adobe Campaign utilizzando un account Adobe ID, devi configurare l’ account esterno **[!UICONTROL Adobe Experience Cloud (MAC)]** .
 
 ![](assets/ext_account_9.png)
 
 * **[!UICONTROL IMS server]**
 
-   URL del server IMS. Accertatevi che le istanze di fase e produzione puntino allo stesso punto finale di produzione IMS.
+   URL del server IMS. Assicurati che entrambe le istanze di stage e produzione puntino allo stesso punto finale di produzione IMS.
 
 * **[!UICONTROL IMS scope]**
 
-   Gli ambiti qui definiti devono essere un sottoinsieme di quelli predisposti da IMS.
+   Gli ambiti qui definiti devono essere un sottoinsieme di quelli forniti da IMS.
 
 * **[!UICONTROL IMS client identifier]**
 
@@ -228,19 +229,19 @@ Per connettersi alla console  Adobe Campaign utilizzando un Adobe ID , è necess
 
 * **[!UICONTROL IMS client secret]**
 
-   Credenziali del segreto client IMS.
+   Credenziale del segreto client IMS.
 
 * **[!UICONTROL Callback server]**
 
-   URL di accesso dell’istanza di Adobe Campaign .
+   Accedi all’URL della tua istanza Adobe Campaign.
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID della tua organizzazione IMS. Per trovare l&#39;ID organizzazione, fare riferimento a questa [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Dove è possibile trovare l&#39;ID organizzazione IMS?**).
+   ID della tua organizzazione IMS. Per trovare l’ID organizzazione, fai riferimento a questa [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Dove posso trovare l’ID organizzazione IMS?**).
 
 * **[!UICONTROL Association mask]**
 
-   Sintassi che consentirà la sincronizzazione dei nomi di configurazione in Enterprise Dashboard con i gruppi in  Adobe Campaign.
+   Sintassi che consentirà la sincronizzazione dei nomi di configurazione in Enterprise Dashboard con i gruppi in Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
@@ -250,11 +251,11 @@ Per connettersi alla console  Adobe Campaign utilizzando un Adobe ID , è necess
 
    Nome del tenant Adobe Experience Cloud.
 
-Per ulteriori informazioni su questa configurazione, fare riferimento a [page](../../integrations/using/configuring-ims.md).
+Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../integrations/using/configuring-ims.md).
 
 ## Account esterno SFTP {#sftp-external-account}
 
-L&#39;account esterno SFTP consente di configurare e testare l&#39;accesso a un server esterno  Adobe Campaign. Per impostare connessioni con sistemi esterni come SFTP utilizzati per i trasferimenti di file, potete creare i vostri account esterni. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+L’account esterno SFTP ti consente di configurare e testare l’accesso a un server esterno ad Adobe Campaign. Per impostare connessioni con sistemi esterni come SFTP utilizzati per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -264,19 +265,19 @@ L&#39;account esterno SFTP consente di configurare e testare l&#39;accesso a un 
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione FTP. La porta predefinita è 22.
+   Numero di porta di connessione FTP. La porta predefinita è 22.
 
 * **[!UICONTROL Account]**
 
-   Nome account utilizzato per connettersi al server SFTP.
+   Nome account utilizzato per la connessione al server SFTP.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per connettersi al server SFTP.
+   Password utilizzata per la connessione al server SFTP.
 
 ## Account esterno Adobe Experience Manager {#adobe-experience-manager-external-account}
 
-L&#39;account esterno **[!UICONTROL AEM (AEM instance)]** consente di gestire direttamente in Adobe Experience Manager il contenuto delle comunicazioni e-mail e dei moduli.
+L’ account esterno **[!UICONTROL AEM (AEM instance)]** ti consente di gestire direttamente in Adobe Experience Manager il contenuto delle consegne e-mail e dei moduli.
 
 ![](assets/ext_account_5.png)
 
@@ -286,17 +287,17 @@ L&#39;account esterno **[!UICONTROL AEM (AEM instance)]** consente di gestire di
 
 * **[!UICONTROL Port]**
 
-   Nome account usato per connettersi all’istanza di creazione Adobe Experience Manager.
+   Nome account utilizzato per connettersi all’istanza di authoring di Adobe Experience Manager.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per connettersi all’istanza di creazione Adobe Experience Manager.
+   Password utilizzata per connettersi all’istanza di authoring di Adobe Experience Manager.
 
 Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/about-adobe-experience-manager.md).
 
-## Account esterno  Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
+## Account esterno Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Il connettore  Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in  Adobe Campaign. Può essere impostato in un&#39;attività del flusso di lavoro. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere configurato in un’attività del flusso di lavoro. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
@@ -304,7 +305,7 @@ Quando imposti questo nuovo account esterno, dovrai fornire i seguenti dettagli:
 
 * **[!UICONTROL AWS S3 Account Server]**
 
-   L’URL del server deve essere compilato come segue:
+   URL del server, deve essere compilato come segue:
 
    ```
    <S3bucket name>.s3.amazonaws.com/<s3object path>
@@ -312,31 +313,31 @@ Quando imposti questo nuovo account esterno, dovrai fornire i seguenti dettagli:
 
 * **[!UICONTROL AWS access key ID]**
 
-   Per sapere dove trovare l&#39;ID della chiave di accesso AWS, fare riferimento a questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+   Per sapere dove trovare il tuo ID chiave di accesso AWS, fai riferimento a questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Per sapere dove trovare la chiave di accesso segreta per AWS, fare riferimento a questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+   Per sapere dove trovare la chiave di accesso segreto per AWS, consulta questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Per ulteriori informazioni sull&#39;area AWS, fare riferimento a [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   Per ulteriori informazioni sull&#39;area geografica AWS, consulta questa [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
-* La casella di controllo **[!UICONTROL Use server side encryption]** consente di archiviare il file in modalità crittografata S3.
+* La casella di controllo **[!UICONTROL Use server side encryption]** consente di memorizzare il file in modalità crittografata S3.
 
-Per informazioni su dove trovare l&#39;ID chiave di accesso e la chiave di accesso segreta, fare riferimento  servizi Web Amazon [documentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Per scoprire dove trovare l&#39;ID chiave di accesso e la chiave di accesso segreto, consulta la documentazione dei servizi Web Amazon [](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
-## Account esterno di Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
+## Account esterno Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-L&#39;account **[!UICONTROL Microsoft Dynamics CRM]** esterno consente di importare ed esportare i dati di Microsoft Dynamics in  Adobe Campaign.
+L’account esterno **[!UICONTROL Microsoft Dynamics CRM]** ti consente di importare ed esportare dati di Microsoft Dynamics in Adobe Campaign.
 
 Ulteriori informazioni su Campaign - Connettore Microsoft Dynamics CRM in questa [pagina](../../platform/using/crm-ms-dynamics.md).
 
 >[!NOTE]
 >
-> **[!UICONTROL On-premise]** e i tipi di  **[!UICONTROL Office 365]** distribuzione ora non sono più supportati. [Ulteriori informazioni](../../rn/using/deprecated-features.md).
+> **[!UICONTROL On-premise]** i tipi di  **[!UICONTROL Office 365]** distribuzione e sono ora obsoleti. [Ulteriori informazioni](../../rn/using/deprecated-features.md).
 
-Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[!UICONTROL Password credentials]**, è necessario fornire i seguenti dettagli:
+Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[!UICONTROL Password credentials]**, devi fornire i seguenti dettagli:
 
 ![](assets/ext_account_14.png)
 
@@ -346,23 +347,23 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Server]**
 
-   URL del server Microsoft CRM.
+   URL del server Microsoft CRM in uso.
 
 * **[!UICONTROL Client identifier]**
 
-   ID client che si trova nel portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
+   ID client che si trova dal portale di gestione di Microsoft Azure nella categoria **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]** campo .
 
 * **[!UICONTROL CRM version]**
 
    Versione del CRM compresa tra **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** o **[!UICONTROL Dynamics CRM 2016]**.
 
-Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[!UICONTROL Certificate]**, è necessario fornire i seguenti dettagli:
+Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[!UICONTROL Certificate]**, devi fornire i seguenti dettagli:
 
 ![](assets/ext_account_22.png)
 
 * **[!UICONTROL Server]**
 
-   URL del server Microsoft CRM.
+   URL del server Microsoft CRM in uso.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
@@ -374,42 +375,62 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Client identifier]**
 
-   ID client che si trova nel portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
+   ID client che si trova dal portale di gestione di Microsoft Azure nella categoria **[!UICONTROL Update your code]**, **[!UICONTROL Client ID]** campo .
 
 * **[!UICONTROL CRM version]**
 
    Versione del CRM compresa tra **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** o **[!UICONTROL Dynamics CRM 2016]**.
 
-Per ulteriori informazioni su questa configurazione, fare riferimento a [page](../../platform/using/crm-connectors.md).
+Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../platform/using/crm-connectors.md).
 
-## Account esterno di Salesforce CRM {#salesforce-crm-external-account}
+## Account esterno CRM Salesforce {#salesforce-crm-external-account}
 
-L&#39;account esterno **[!UICONTROL Salesforce CRM]** consente di importare ed esportare i dati Salesforce in  Adobe Campaign.
+L’account esterno **[!UICONTROL Salesforce CRM]** ti consente di importare ed esportare dati Salesforce in Adobe Campaign.
 
 ![](assets/ext_account_17.png)
 
-Per configurare l&#39;account esterno di Salesforce CRM in modo che funzioni con  Adobe Campaign, devi fornire i seguenti dettagli:
+Per configurare l&#39;account esterno di gestione delle relazioni con i clienti Salesforce affinché funzioni con Adobe Campaign, devi fornire i seguenti dettagli:
 
 * **[!UICONTROL Account]**
 
-   Account utilizzato per accedere a Salesforce CRM.
+   Account utilizzato per accedere a CRM Salesforce.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per accedere a Salesforce CRM.
+   Password utilizzata per accedere a CRM Salesforce.
 
 * **[!UICONTROL Client identifier]**
 
-   Per sapere dove trovare l&#39;identificatore client, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   Per sapere dove trovare l&#39;identificatore client, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Per sapere dove trovare il token di protezione, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
-   Versione dell&#39;API compresa tra **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** o **[!UICONTROL Version 15]**.
+   Versione dell&#39;API tra **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** o **[!UICONTROL Version 15]**.
 
-Per questo account esterno, devi configurare Salesforce CRM con la procedura guidata di configurazione.
+Per questo account esterno, devi configurare il tuo CRM Salesforce con la procedura guidata di configurazione.
 
-Per ulteriori informazioni su questa configurazione, fare riferimento a [page](../../platform/using/crm-connectors.md).
+Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../platform/using/crm-connectors.md).
+
+## Account esterno archiviazione BLOB di Azure (#azure-blob-external-account)
+
+L&#39;account esterno **Azure Blob storage** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. Per ulteriori informazioni, consulta questa [sezione](../../workflow/using/file-transfer.md).
+
+![](assets/ext_account_23.png)
+
+Per configurare il **[!UICONTROL Azure external account]** in modo che funzioni con Adobe Campaign, devi fornire i seguenti dettagli:
+
+* **[!UICONTROL Server]**
+
+   URL del server di archiviazione BLOB di Azure.
+
+* **[!UICONTROL Encryption]**
+
+   Tipo di crittografia scelto tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+
+* **[!UICONTROL Access key]**
+
+   Per sapere dove trovare il tuo **[!UICONTROL Access key]**, fai riferimento a questa [pagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
