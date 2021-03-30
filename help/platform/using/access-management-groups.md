@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Creare e gestire gruppi di operatori
 description: Scopri come concedere l’accesso ai gruppi di operatori
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Gestione degli accessi
+role: Business Practices, amministratore
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ I gruppi di operatori predefiniti sono:
 
    * **[!UICONTROL INSERT FOLDERS]**: diritto di inserire cartelle nell’albero di Adobe Campaign (purché si disponga dei diritti di modifica per i rami interessati),
    * **[!UICONTROL WORKFLOW]**: diritto di utilizzare i flussi di lavoro.
-
    >[!NOTE]
    >
    >Questo gruppo non consente agli operatori di avviare le consegne.
@@ -100,6 +99,3 @@ Questo gruppo contiene i seguenti diritti denominati:
 
    * **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire cartelle nell&#39;albero di Adobe Campaign (purché si disponga dei diritti di modifica per i rami interessati),
    * **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
-
-
-
