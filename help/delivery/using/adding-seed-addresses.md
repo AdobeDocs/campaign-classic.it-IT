@@ -7,56 +7,56 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '335'
+ht-degree: 6%
 
 ---
 
 
-# Aggiunta di indirizzi di seed{#adding-seed-addresses}
+# Aggiungi indirizzi di seed{#adding-seed-addresses}
 
-## Indirizzi dei semi in una consegna {#seed-addresses-in-a-delivery}
+## Indirizzi di seed in una consegna {#seed-addresses-in-a-delivery}
 
-Per aggiungere indirizzi iniziali specifici per una consegna, fare clic sul collegamento **[!UICONTROL To]**, quindi selezionare la scheda **[!UICONTROL Seed addresses]**.
+Per aggiungere indirizzi di seed specifici per una consegna, fai clic sul collegamento **[!UICONTROL To]** , quindi seleziona la scheda **[!UICONTROL Seed addresses]** .
 
 ![](assets/s_ncs_user_edit_del_addresses_tab.png)
 
 Esistono tre possibili modalità di inserimento:
 
-1. Inserimento di indirizzi iniziali singoli.
+1. Inserimento di indirizzi di seed singoli.
 
-   A questo scopo, fare clic sul pulsante **[!UICONTROL Add]** e definire il contenuto dei campi indirizzo. Ripetere la procedura per ogni indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e definisci il contenuto dei campi indirizzo. Ripeti per ogni indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
 
-1. Importazione di modelli di indirizzo e loro adattamento in base alle esigenze.
+1. Importazione di modelli di indirizzi e loro adattamento in base alle tue esigenze.
 
-   A questo scopo, fate clic sul collegamento **[!UICONTROL Import seed templates...]** e selezionate la cartella che contiene i modelli di indirizzo. Per ulteriori informazioni, vedere [Creazione di modelli di indirizzi di base](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   A questo scopo, fai clic sul collegamento **[!UICONTROL Import seed templates...]** e seleziona la cartella che contiene i modelli di indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
-   Se necessario, una volta aggiunti, è possibile fare doppio clic su di essi o fare clic sul pulsante **[!UICONTROL Detail...]** per adattare il contenuto di ciascun indirizzo.
+   Se necessario, una volta aggiunti, puoi fare doppio clic su di essi o fare clic sul pulsante **[!UICONTROL Detail...]** per adattare il contenuto di ciascun indirizzo.
 
 1. Creazione di una condizione per selezionare dinamicamente gli indirizzi di controllo da inserire.
 
-   A questo scopo, fate clic sul collegamento **[!UICONTROL Edit the dynamic condition...]**, quindi immettete i parametri di selezione dell&#39;indirizzo di base. Ad esempio, potete includere tutti gli indirizzi iniziali contenuti in una cartella specifica, o gli indirizzi iniziali appartenenti a un reparto specifico della vostra organizzazione.
+   A questo scopo, fai clic sul collegamento **[!UICONTROL Edit the dynamic condition...]** , quindi immetti i parametri di selezione dell’indirizzo di seed. Ad esempio, puoi includere tutti gli indirizzi di seed contenuti in una cartella specifica o gli indirizzi di seed appartenenti a un reparto specifico dell’organizzazione.
 
-   Un esempio è illustrato in questa sezione: [Caso di utilizzo: selezione di indirizzi iniziali su criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Un esempio di ciò è illustrato in questa sezione: [Caso di utilizzo: seleziona indirizzi di seed in criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->Questa opzione viene utilizzata quando la tabella del destinatario utilizzata non è la tabella predefinita **nms:Recipients** e si utilizza la funzionalità di rendering della inbox fornita con  modulo Adobe Campaign **[!UICONTROL Deliverability]**.
+>Questa opzione viene utilizzata quando la tabella dei destinatari utilizzata non è la tabella predefinita **nms:recipient** e si utilizza la funzionalità Rendering della casella in entrata fornita con il modulo Adobe Campaign **[!UICONTROL Deliverability]**.
 >
->Per ulteriori informazioni, vedere [Utilizzo di una tabella di destinazione esterna](../../delivery/using/using-an-external-recipient-table.md) e la documentazione relativa al [rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
+>Per ulteriori informazioni, consulta [Utilizzare una tabella dei destinatari esterna](../../delivery/using/using-an-external-recipient-table.md) e la documentazione su [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
 
-Per le consegne, potete personalizzare il modo in cui gli indirizzi vengono inseriti nel file di estrazione. Per impostazione predefinita, vengono inseriti nell&#39;ordine di ordinamento del file di output, ma è possibile scegliere di inserirli alla fine o all&#39;inizio del file, oppure in modo casuale tra i destinatari della destinazione principale.
+Per le consegne, puoi anche personalizzare il modo in cui gli indirizzi vengono inseriti nel file di estrazione. Per impostazione predefinita, vengono inseriti nell’ordine di ordinamento del file di output, ma puoi scegliere di inserirli alla fine o all’inizio del file oppure in modo casuale tra i destinatari della destinazione principale.
 
 ![](assets/s_ncs_user_edit_del_addresses_sort.png)
 
-## Indirizzi dei semi in una campagna {#seed-addresses-in-a-campaign}
+## Indirizzi di seed in una campagna {#seed-addresses-in-a-campaign}
 
-Per aggiungere indirizzi iniziali a una destinazione per una campagna, selezionate l&#39;operazione e fate clic sulla scheda **[!UICONTROL Edit]**.
+Per aggiungere indirizzi di seed a una destinazione per una campagna, seleziona l’operazione e fai clic sulla scheda **[!UICONTROL Edit]** .
 
-Fare clic sul collegamento **[!UICONTROL Advanced campaign settings...]**, quindi sulla scheda **[!UICONTROL Seed addresses]**, come illustrato di seguito:
+Fai clic sul collegamento **[!UICONTROL Advanced campaign settings...]** e quindi sulla scheda **[!UICONTROL Seed addresses]** , come illustrato di seguito:
 
 ![](assets/s_ncs_user_edit_op_addresses_tab.png)
 
-Gli indirizzi iniziali inseriti dalla campagna saranno aggiunti alla destinazione di ogni consegna nella campagna.
+Gli indirizzi di seed inseriti dalla campagna verranno aggiunti al target di ogni consegna nella campagna.
