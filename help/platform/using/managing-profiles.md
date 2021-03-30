@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
-# Gestione dei profili{#managing-profiles}
+# Gestisci profili{#managing-profiles}
 
 ## Albero dei destinatari {#recipient-tree}
 
@@ -29,15 +29,15 @@ Ogni nodo coincide con una cartella. I dati di ciascuna cartella devono essere c
 >
 >Per visualizzare l’elenco di tutti i destinatari nel database, è necessario creare una visualizzazione. Ulteriori informazioni in [Cartelle e visualizzazioni](../../platform/using/access-management-folders.md).
 
-## Spostamento dei destinatari {#moving-recipients}
+## Sposta i destinatari {#moving-recipients}
 
 Puoi selezionare uno o più destinatari, trascinarli dall’elenco dei destinatari e rilasciarli nella cartella desiderata. Un messaggio di avviso ti chiede di confermare questa azione.
 
-## Copia di un destinatario {#copying-a-recipient}
+## Copia un destinatario {#copying-a-recipient}
 
 Puoi copiare un destinatario nella stessa cartella facendo clic con il pulsante destro del mouse sul destinatario desiderato e selezionando **[!UICONTROL Copy]**.
 
-## Eliminazione dei destinatari {#deleting-recipients}
+## Elimina destinatari {#deleting-recipients}
 
 Per eliminare i destinatari, spostali in una cartella specifica e quindi elimina il contenuto di questa cartella. In questo caso si consiglia vivamente **di non utilizzare l&#39;opzione** **[!UICONTROL Delete]**.
 
