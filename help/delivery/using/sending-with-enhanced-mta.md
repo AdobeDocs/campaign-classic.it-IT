@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -98,7 +98,7 @@ Per i clienti che utilizzano la funzionalità di messaggistica transazionale di 
 
 ### Intestazioni MTA migliorate
 
-Le ultime istanze di Campaign Classic includono codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell’istanza di marketing (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) ).
+Le ultime istanze di Campaign Classic includono codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi richiedere [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell&#39;istanza di esecuzione (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) ), che può essere la tua istanza di marketing, [istanza di mid-sourcing](../../installation/using/mid-sourcing-server.md) o [istanza di esecuzione dei messaggi transazionali](../../message-center/using/creating-a-shared-connection.md#execution-instance), a seconda della configurazione.
 
 Tuttavia, se utilizzi un’istanza precedente che non include questo codice, devi aggiungere una nuova regola di tipologia denominata **[!UICONTROL Typology Rule for Enhanced MTAs]** a tutte le tipologie esistenti nell’istanza Campaign.
 Questa regola viene aggiunta da un pacchetto **[!UICONTROL Typology]** installato come parte dell’aggiornamento all’MTA avanzato.
