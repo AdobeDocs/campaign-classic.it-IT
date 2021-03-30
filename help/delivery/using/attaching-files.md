@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
 
 
-# File allegati{#attaching-files}
+# Allega file a un&#39;e-mail{#attaching-files}
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
@@ -34,7 +34,7 @@ Esistono due casi possibili:
 >
 >Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. Per ulteriori informazioni, consulta [Informazioni sui modelli](../../delivery/using/about-templates.md).
 
-## Collegamento di un file locale {#attaching-a-local-file}
+## Allega un file locale {#attaching-a-local-file}
 
 Per allegare un file locale a una consegna, segui la procedura seguente.
 
@@ -117,7 +117,7 @@ Per questo tipo di allegato, applicare i seguenti passaggi di configurazione:
 >
 >Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
-### Allegare un file calcolato {#attach-a-calculated-file}
+### Allega un file calcolato {#attach-a-calculated-file}
 
 È possibile calcolare il nome dell&#39;allegato durante la preparazione della consegna. A questo scopo, seleziona l’opzione **[!UICONTROL The file name is calculated during delivery analysis (it cannot depend on the recipient)]**.
 
@@ -140,7 +140,7 @@ Per questo tipo di allegato, applicare i seguenti passaggi di configurazione:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
-### Allegare un file personalizzato {#attach-a-personalized-file}
+### Allega un file personalizzato {#attach-a-personalized-file}
 
 Quando si seleziona l&#39;allegato, è possibile scegliere l&#39;opzione **[!UICONTROL The file name is calculated during delivery for each recipient (it can depend on the recipient)]**. Puoi quindi mappare i dati di personalizzazione dei destinatari con il nome del file da inviare.
 
