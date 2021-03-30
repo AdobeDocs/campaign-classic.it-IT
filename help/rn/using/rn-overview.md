@@ -7,9 +7,9 @@ feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ In qualità di utente in hosting [!DNL Gold Standard], potrai beneficiare automa
 
 ## Supporto e altri collegamenti utili{#support}
 
-* [Guida e supporto](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
+* [Guida e supporto](../../support.md)
 * [Versioni del Pannello di controllo Campaign](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html)
 * [Ultimi aggiornamenti della documentazione](../../rn/using/documentation-updates.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
