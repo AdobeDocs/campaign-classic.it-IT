@@ -1,84 +1,86 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Decrittografare o decomprimere un file
-description: Scoprite come decomprimere o decrittografare un file in Campaign Classic prima dell'elaborazione.
+title: Decrittografia o decompressione di un file
+description: Scopri come decomprimere o decrittografare un file in Campaign Classic prima dell’elaborazione.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
 
 
-# Annullamento o decrittografia di un file {#unzipping-or-decrypting-a-file-before-processing}
+# Decrittografia o decompressione di un file {#unzipping-or-decrypting-a-file-before-processing}
 
- Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](../../workflow/using/data-loading--file-.md), è possibile definire una pre-elaborazione per decomprimere o decrittografare il file.
+Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](../../workflow/using/data-loading--file-.md), puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
-Per essere in grado di effettuare le seguenti operazioni:
+Per poterlo fare:
 
-1. Utilizzate [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
+1. Utilizza il [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
 
    >[!NOTE]
    >
-   >Il Pannello di controllo Campaign è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
+   >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all&#39;amministratore l&#39;accesso a un utente sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+   >
+   >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
-1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contattate l&#39;[ Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe per avere installato sul server le utility necessarie.
-1. Se l&#39;installazione di  Adobe Campaign è in sede, installate l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
+1. Se l&#39;installazione di Adobe Campaign è ospitata per Adobe, contatta l&#39; [Assistenza clienti di Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per avere le utility necessarie installate sul server.
+1. Se l&#39;installazione di Adobe Campaign è on-premise, installare l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
 
-Potete quindi usare i comandi di pre-elaborazione desiderati nei flussi di lavoro:
+Puoi quindi utilizzare i comandi di preelaborazione desiderati nei flussi di lavoro:
 
-1. Aggiungi e configura un&#39;attività **[!UICONTROL File transfer]** nel flusso di lavoro.
-1. Aggiungete un&#39;attività **[!UICONTROL Data loading (file)]** e definite il formato del file.
+1. Aggiungi e configura un’attività **[!UICONTROL File transfer]** nel flusso di lavoro.
+1. Aggiungi un’attività **[!UICONTROL Data loading (file)]** e definisci il formato del file.
 1. Seleziona l’opzione **[!UICONTROL Pre-process the file]**.
-1. Specificate il comando di pre-elaborazione da applicare.
-1. Aggiungere altre attività per gestire i dati provenienti dal file.
-1. Salvate ed eseguite il flusso di lavoro.
+1. Specificare il comando di pre-elaborazione che si desidera applicare.
+1. Aggiungi altre attività per gestire i dati provenienti dal file .
+1. Salva ed esegui il flusso di lavoro.
 
-Un esempio è illustrato nel caso di utilizzo riportato di seguito.
+Un esempio è presentato nel caso d’uso seguente.
 
 **Argomenti correlati:**
 
 * [Attività](../../workflow/using/data-loading--file-.md) di caricamento dei dati (file).
-* [Estrazione o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+* [ZIP o crittografare un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-## Caso di utilizzo: Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
+## Caso di utilizzo: Importa dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
 
-In questo caso, verrà creato un flusso di lavoro per importare i dati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo Campaign.
+In questo caso d’uso, creeremo un flusso di lavoro per importare i dati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo Campaign.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#video)
 
-Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
+I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Utilizzate il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
-   * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
-   * La chiave privata verrà utilizzata dal Campaign Classic per decrittografare i dati crittografati in arrivo.
+   * La chiave pubblica verrà condivisa con il sistema esterno, che lo utilizzerà per crittografare i dati da inviare a Campaign.
+   * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.
 
    ![](assets/gpg_generate.png)
 
-1. Nel sistema esterno, utilizzare la chiave pubblica scaricata dal Pannello di controllo Campaign per cifrare i dati da importare in Campaign Classic.
+1. Nel sistema esterno, utilizza la chiave pubblica scaricata dal Pannello di controllo Campaign per crittografare i dati da importare in Campaign Classic.
 
-1. In Campaign Classic, creare un flusso di lavoro per importare i dati crittografati e decifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
+1. In Campaign Classic, crea un flusso di lavoro per importare i dati crittografati e decrittografarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A questo scopo, verrà creato un flusso di lavoro come segue:
 
    ![](assets/gpg_import_workflow.png)
 
-   * **[!UICONTROL File transfer]** activity: Trasferisce il file da un&#39;origine esterna a un Campaign Classic. In questo esempio, vogliamo trasferire il file da un server SFTP.
-   * **[!UICONTROL Data loading (file)]** activity: Carica i dati dal file nel database e decrittografalo utilizzando la chiave privata generata nel Pannello di controllo Campaign.
+   * **[!UICONTROL File transfer]** attività: Trasferisce il file da un’origine esterna a Campaign Classic. In questo esempio, vogliamo trasferire il file da un server SFTP.
+   * **[!UICONTROL Data loading (file)]** attività: Carica i dati dal file nel database e decrittografalo utilizzando la chiave privata generata nel Pannello di controllo Campaign.
 
-1. Aprite l&#39;attività **[!UICONTROL File transfer]**, quindi specificate l&#39;account esterno da cui desiderate importare il file .gpg crittografato.
+1. Apri l’attività **[!UICONTROL File transfer]** , quindi specifica l’account esterno da cui vuoi importare il file .gpg crittografato.
 
    ![](assets/gpg_key_transfer.png)
 
    I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
 
-1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/data-loading--file-.md).
+1. Apri l’attività **[!UICONTROL Data loading (file)]** , quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/data-loading--file-.md).
 
-   Aggiungete una fase di pre-elaborazione all&#39;attività, per decifrare i dati in arrivo. A questo scopo, selezionare l&#39;opzione **[!UICONTROL Pre-process the file]**, quindi copiare e incollare questo comando di decrittazione nel campo **[!UICONTROL Command]** :
+   Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A questo scopo, seleziona l’opzione **[!UICONTROL Pre-process the file]** , quindi copia-incolla questo comando di decrittografia nel campo **[!UICONTROL Command]** :
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -88,18 +90,18 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
    >
    >In questo esempio, utilizziamo la passphrase utilizzata per impostazione predefinita dal Pannello di controllo Campaign, che è &quot;passphrase&quot;.
    >
-   >Se in passato avete già installato chiavi GPG nell&#39;istanza tramite una richiesta dell&#39;Assistenza clienti, la passphrase potrebbe essere stata modificata e per impostazione predefinita è diversa da quella.
+   >Se in passato hai già installato chiavi GPG nella tua istanza tramite una richiesta dell’Assistenza clienti, la passphrase potrebbe essere stata modificata ed essere diversa da quella di default.
 
-1. Fate clic su **[!UICONTROL OK]** per confermare la configurazione dell&#39;attività.
+1. Fai clic su **[!UICONTROL OK]** per confermare la configurazione dell’attività.
 
-1. Ora puoi eseguire il flusso di lavoro. Una volta eseguita, potete controllare nei registri del flusso di lavoro che la decrittazione è stata eseguita e che i dati del file sono stati importati.
+1. Ora puoi eseguire il flusso di lavoro. Una volta eseguito, puoi controllare nei registri del flusso di lavoro che la decrittografia è stata eseguita e che i dati del file sono stati importati.
 
    ![](assets/gpg_run.png)
 
-## Video di esercitazione {#video}
+## Video tutorial {#video}
 
-In questo video viene illustrato come utilizzare un codice GPG per decrittografare i dati.
+Questo video mostra come utilizzare una chiave GPG per decrittografare i dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili ulteriori video dimostrativi su Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
