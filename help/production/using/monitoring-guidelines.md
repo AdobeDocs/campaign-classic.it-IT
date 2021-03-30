@@ -7,21 +7,21 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 8%
+source-wordcount: '771'
+ht-degree: 7%
 
 ---
 
 
 # Linee guida per il monitoraggio {#monitoring-guidelines}
 
-## Pannello di controllo per istanza {#instance-monitoring-dashboard}
+## Dashboard di monitoraggio delle istanze {#instance-monitoring-dashboard}
 
-La scheda **[!UICONTROL Monitoring]**, accessibile dalla home page Campaign Classic, è il punto di ingresso principale per facilitare il monitoraggio dell&#39;istanza.
+La scheda **[!UICONTROL Monitoring]** , accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per aiutarti a monitorare l’istanza.
 
-Fornisce un dashboard di ciò che si verifica nell’istanza: stato (versione build, pacchetti installati, ecc.), indicatori di sistema, registri, flussi di lavoro attualmente in esecuzione, stato delle ultime consegne inviate, ecc.
+Fornisce un dashboard di ciò che sta accadendo sull&#39;istanza: il suo stato (versione build, pacchetti installati, ecc.), gli indicatori di sistema, i registri, i flussi di lavoro attualmente in esecuzione, lo stato delle ultime consegne inviate, ecc.
 
 Informazioni dettagliate sono disponibili [qui](../../production/using/monitoring-processes.md).
 
@@ -36,27 +36,29 @@ Informazioni dettagliate sono disponibili [qui](../../production/using/monitorin
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorare il database</a></p></td></tr>
 </table>
 
-Sono disponibili metodi aggiuntivi per monitorare i diversi processi di Campaign. Offrono diversi modi di monitorare le istanze per garantire la salute del sistema e, infine, per risolvere eventuali problemi che possono verificarsi durante la configurazione dei flussi di lavoro, l&#39;invio di consegne, ecc.
+Sono disponibili ulteriori modi per monitorare i diversi processi di Campaign. Forniscono diversi modi per monitorare le istanze in modo che il sistema sia sano e infine risolvere i problemi che possono verificarsi durante la configurazione dei flussi di lavoro, l’invio di consegne, ecc.
 
-### Monitoraggio dell&#39;istanza {#monitoring-instance}
+### Monitoraggio dell’istanza {#monitoring-instance}
 
 <img src="assets/do-not-localize/icon_system.svg" width="60px">
 
-**Strumenti di monitoraggio automatico**
+**Strumenti di monitoraggio automatici**
 
-Sono disponibili diversi metodi automatici. per monitorare l’istanza. Ad esempio, potete impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML, ecc. [Fate clic ](../../production/using/monitoring-processes.md#automatic-monitoring) qui per ulteriori informazioni.
+Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanza. Ad esempio, puoi impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML, ecc. [Fai clic ](../../production/using/monitoring-processes.md#automatic-monitoring) qui per ulteriori informazioni.
 
 **Audit trail**
 
-La traccia di controllo consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. [Fate clic ](../../production/using/audit-trail.md) qui per ulteriori informazioni.
+La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. [Fai clic ](../../production/using/audit-trail.md) qui per ulteriori informazioni.
 
 **Pannello di controllo Campaign**
 
-Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestire le autorizzazioni URL, controllare i dettagli dell&#39;istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. [Fate clic ](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) qui per ulteriori informazioni.
+Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. [Fai clic ](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) qui per ulteriori informazioni.
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile solo agli utenti Admin e disponibile per tutti i clienti che utilizzano i servizi gestiti Adobe.
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all&#39;amministratore l&#39;accesso a un utente sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Monitoraggio dei flussi di lavoro {#monitoring-workflows}
 
@@ -64,24 +66,24 @@ Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell�
 
 **Workflow HeatMap**
 
-Workflow HeatMap ha fornito una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. [Fate clic ](../../workflow/using/heatmap.md) qui per ulteriori informazioni.
+Il Workflow HeatMap ha fornito una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. [Fai clic ](../../workflow/using/heatmap.md) qui per ulteriori informazioni.
 
 **Audit trail**
 
-La traccia di controllo consente di visualizzare tutte le modifiche apportate ai flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](../../production/using/audit-trail.md).
+La traccia di audit consente di visualizzare tutte le modifiche apportate ai flussi di lavoro e i relativi stati correnti. [Fai clic qui](../../production/using/audit-trail.md).
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con l&#39;esecuzione di un flusso di lavoro. [Fai clic ](../../production/using/workflow-execution.md) qui per maggiori informazioni
+È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. [Fai clic ](../../production/using/workflow-execution.md) qui per ulteriori informazioni
 
 **Monitoraggio dello stato del flusso di lavoro**
 
-Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. [Fate clic ](../../workflow/using/supervising-workflows.md) qui per ulteriori informazioni.
+Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. [Fai clic ](../../workflow/using/supervising-workflows.md) qui per ulteriori informazioni.
 
 **Linee guida generali**
 
-Seguire le linee guida e le best practice per l&#39;utilizzo dei flussi di lavoro può migliorare le prestazioni. Per ulteriori informazioni, consultare le sezioni seguenti:
-* [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
+Le linee guida e le best practice per l’utilizzo dei flussi di lavoro consentono di migliorare le prestazioni. Per ulteriori informazioni, consulta queste sezioni:
+* [Best practice per l’utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
 * [Monitoraggio dell’esecuzione dei flussi di lavoro](../../workflow/using/monitoring-workflow-execution.md)
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
@@ -94,14 +96,14 @@ I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per domini
 
 **Best practice**
 
-[Le best practice per l&#39;invio e la ](../../delivery/using/delivery-best-practices.md) progettazione di consegne possono aiutarti a migliorare le prestazioni.
+[Le best practice per l’invio e la ](../../delivery/using/delivery-best-practices.md) progettazione delle consegne consentono di migliorare le prestazioni.
 
-**Risoluzione dei**
-problemi di distribuzioneÈ possibile eseguire azioni specifiche in caso di problemi relativi alle consegne:
-* [Problemi di realizzazione](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+****
+Risoluzione dei problemi di consegnaÈ possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
+* [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
-* [Problemi relativi alle prestazioni di distribuzione](../../delivery/using/delivery-performances.md)
-* [Problemi](../../production/using/temporary-files.md)  relativi ai file temporanei - solo modelli di hosting  *in sede*
+* [Problemi di prestazioni di consegna](../../delivery/using/delivery-performances.md)
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) : solo modelli di hosting  *on-premise*
 
 ### Monitoraggio del database {#monitoring-database}
 
@@ -109,47 +111,47 @@ problemi di distribuzioneÈ possibile eseguire azioni specifiche in caso di prob
 
 **Flusso di lavoro di pulizia del database**
 
-Il flusso di lavoro di pulizia del database consente di eliminare i dati obsoleti dal database. Si consiglia di evitare la crescita esponenziale del database. [Fate clic ](../../production/using/database-cleanup-workflow.md) qui per ulteriori informazioni.
+Il flusso di lavoro di pulizia del database consente di eliminare i dati obsoleti dal database. Si consiglia di evitare la crescita esponenziale del database. [Fai clic ](../../production/using/database-cleanup-workflow.md) qui per ulteriori informazioni.
 
-**Risoluzione delle prestazioni del database**
+**Risoluzione dei problemi di prestazioni del database**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con le prestazioni del database. [Fate clic ](../../production/using/database-performances.md) qui per ulteriori informazioni.
+È possibile eseguire azioni specifiche quando si verificano problemi con le prestazioni del database. [Fai clic ](../../production/using/database-performances.md) qui per ulteriori informazioni.
 
 **Manutenzione del database**
 
-*modelli di hosting interni e ibridi*
+*solo modelli di hosting on-premise e ibridi*
 
-È consigliabile eseguire la manutenzione del database su base regolare per evitare un eccessivo consumo di spazio su disco, con conseguente impatto sull&#39;accesso al database. [Fate clic ](../../production/using/recommendations.md) qui per ulteriori informazioni.
+Si consiglia di eseguire regolarmente la manutenzione del database per evitare un eccessivo consumo di spazio su disco, con conseguente impatto sull&#39;accesso al database. [Fai clic ](../../production/using/recommendations.md) qui per ulteriori informazioni.
 
 **Backup e ripristino**
 
-*modelli di hosting interni e ibridi*
+*solo modelli di hosting on-premise e ibridi*
 
-Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o legati al sistema) su una macchina. [Fate clic ](../../production/using/backup.md) qui per ulteriori informazioni. La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
+Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o relativi al sistema) su una macchina. [Fai clic ](../../production/using/backup.md) qui per ulteriori informazioni. La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
 
 ## Principi tecnici Campaign Classic {#campaign-classic-technical-principles}
 
-Le risorse tecniche sono disponibili nella documentazione Campaign Classic. È consigliabile acquisire familiarità con questi argomenti prima di eseguire qualsiasi operazione tecnica sull&#39;istanza.
+Le risorse tecniche sono disponibili nella documentazione di Campaign Classic. È consigliabile acquisire familiarità con questi argomenti prima di eseguire qualsiasi operazione tecnica sull’istanza.
 
 **Modelli e funzionalità di hosting**
 
 * [Modelli di hosting Campaign Classic](../../installation/using/hosting-models.md)
 * [Funzionalità del modello di hosting](../../installation/using/capability-matrix.md)
 
-**Configurazione server**
+**Configurazione del server**
 
-*Solo modelli di hosting locali e ibridi*
+*Solo modelli di hosting on-premise e ibridi*
 
 * [Configurazioni server obbligatorie](../../installation/using/campaign-server-configuration.md)
 * [Configurazione del file Serverconf.xml](../../installation/using/the-server-configuration-file.md)
-* [Configurazione del server per la recapito](../../installation/using/email-deliverability.md)
-* [Riga di comando per creare un&#39;istanza e dichiarare un database](../../installation/using/command-lines.md)
+* [Configurazione del server per il recapito messaggi](../../installation/using/email-deliverability.md)
+* [Righe di comando per creare un&#39;istanza e dichiarare un database](../../installation/using/command-lines.md)
 
 **Principi generali**
 
-* [architettura Campaign Classic](../../production/using/general-architecture.md)
-* [moduli Campaign Classic](../../production/using/operating-principle.md)
-* [Opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md)
+* [Architettura di Campaign Classic](../../production/using/general-architecture.md)
+* [Moduli Campaign Classic](../../production/using/operating-principle.md)
+* [Opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Come impostare l&#39;avvio automatico dei moduli](../../production/using/administration.md)
 * [Principio di configurazione della campagna](../../production/using/configuration-principle.md)
 * [Procedure di risoluzione dei problemi](../../production/using/performance-and-throughput-issues.md)
