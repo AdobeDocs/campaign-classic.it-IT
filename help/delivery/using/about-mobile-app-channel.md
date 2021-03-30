@@ -1,31 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Il canale delle app mobili in Adobe Campaign Classic
-description: Questa sezione fornisce informazioni generali specifiche per il canale dell'app mobile in Adobe Campaign Classic.
+title: Informazioni sul canale app mobile in Adobe Campaign Classic
+description: Questa sezione fornisce informazioni generali specifiche per il canale app mobile in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 
 ---
 
 
-# Informazioni sul canale app mobile{#about-mobile-app-channel}
+# Guida introduttiva al canale app mobile{#about-mobile-app-channel}
+
+Il **Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
 
 >[!CAUTION]
 >
->Questo documento descrive in dettaglio il processo di integrazione dell’applicazione mobile con la piattaforma Adobe Campaign . Non fornisce informazioni su come creare l’applicazione mobile o su come configurarla per la gestione delle notifiche. Per ulteriori informazioni, fare riferimento alla documentazione ufficiale di Apple [](https://developer.apple.com/) e Android [documentation](https://developer.android.com/index.html).
+>Questo documento descrive il processo di integrazione dell’app mobile con la piattaforma Adobe Campaign. Non fornisce informazioni su come creare l’app mobile o su come configurarla per la gestione delle notifiche. Per ulteriori informazioni, consulta la documentazione ufficiale di Apple [](https://developer.apple.com/) e Android [documentation](https://developer.android.com/index.html).
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale dell&#39;app mobile.
-
-Per informazioni globali su come creare una consegna, fare riferimento a [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
-
-**Mobile App Channel** consente di utilizzare la piattaforma Adobe Campaign  per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Sono disponibili due canali di consegna:
+Sono disponibili due canali di consegna:
 
 * Canale iOS che consente di inviare notifiche ai dispositivi mobili Apple.
 
@@ -35,59 +33,62 @@ Per informazioni globali su come creare una consegna, fare riferimento a [questa
 
    ![](assets/nmac_intro_1.png)
 
-In base a questi due canali, nei flussi di lavoro della campagna sono disponibili due attività di consegna:
+Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna:
 
 ![](assets/nmac_intro_3.png)
 
+
 >[!NOTE]
 >
->Per i messaggi transazionali sono inoltre disponibili due modelli di messaggio transazionali.
+>Per la messaggistica transazionale sono disponibili anche due modelli di messaggio transazionale.
 
-Potete definire il comportamento dell&#39;applicazione quando l&#39;utente attiva la notifica per visualizzare la schermata che corrisponde al contesto dell&#39;applicazione. Ad esempio:
+Puoi definire il comportamento dell’applicazione per quando l’utente attiva la notifica per visualizzare la schermata che corrisponde al contesto dell’applicazione. Ad esempio:
 
-* Viene inviata una notifica al cliente per informarlo che il suo pacco è uscito dal magazzino. Attivando la notifica si apre una pagina contenente informazioni relative alla consegna.
-* L&#39;utente ha aggiunto elementi al carrello, ma ha lasciato l&#39;applicazione senza completare l&#39;acquisto. Viene inviata una notifica in cui si informa che il carrello è stato abbandonato. Quando attivano la notifica, l’elemento viene visualizzato sullo schermo.
+* Viene inviata una notifica al cliente per comunicare che il suo pacco è uscito dal magazzino. Quando si attiva la notifica, viene aperta una pagina con informazioni relative alla consegna.
+* L’utente ha aggiunto elementi al carrello, ma ha lasciato l’applicazione senza completare l’acquisto. Viene inviata una notifica che dice loro che il loro carrello è stato abbandonato. Quando attivano la notifica, l’elemento viene visualizzato sullo schermo.
 
 >[!CAUTION]
 >
->* È necessario assicurarsi che le notifiche inviate a un&#39;applicazione mobile siano conformi ai prerequisiti e alle condizioni specificati da Apple (Apple Push Notification Service) e Google (Firebase Cloud Messaging).
->* Avviso: in alcuni paesi, la legge prevede che gli utenti siano informati del tipo di dati che utilizzano le applicazioni mobili e dello scopo della loro elaborazione. Devi controllare la legislazione.
+>* Devi accertarti che le notifiche inviate a un’app mobile siano conformi ai prerequisiti e alle condizioni specificati da Apple (Apple Push Notification Service) e Google (Firebase Cloud Messaging).
+>* Avviso: in alcuni paesi, la legge richiede che gli utenti siano informati del tipo di dati raccolti per le applicazioni mobili e dello scopo del loro trattamento. Devi controllare la legislazione.
 
 
-Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le notifiche di annullamento delle sottoscrizioni sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, fare riferimento all&#39; [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
+Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le sottoscrizioni di notifica sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta l’ [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
- Adobe Campaign è compatibile con le APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consultare la sezione [Configurazione di un&#39;applicazione mobile  Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign è compatibile con le APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta la sezione [presente sezione](../../delivery/using/configuring-the-mobile-application.md) .
+
+Per informazioni globali su come creare una consegna, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Percorso dati {#data-path}
 
-Gli schemi seguenti descrivono i passaggi che consentono a un&#39;applicazione mobile di scambiare dati con  Adobe Campaign. Questo processo coinvolge tre entità:
+Gli schemi seguenti descrivono i passaggi che consentono a un’app mobile di scambiare dati con Adobe Campaign. Questo processo coinvolge tre entità:
 
-* l’applicazione mobile
+* l&#39;applicazione mobile
 * il servizio di notifica: APN (Apple Push Notification Service) per Apple e FCM (Firebase Cloud Messaging) per Android
 * Adobe Campaign
 
-Le tre fasi principali del processo di notifica sono: registrazione dell&#39;applicazione in  Adobe Campaign (raccolta di iscrizioni), consegne e tracciamento.
+Le tre fasi principali del processo di notifica sono: registrazione dell’applicazione in Adobe Campaign (raccolta abbonamenti), consegne e tracciamento.
 
-### Passaggio 1: Raccolta di iscrizioni {#step-1--subscription-collection}
+### Passaggio 1: Raccolta di abbonamenti {#step-1--subscription-collection}
 
-L’applicazione mobile viene scaricata dall’utente dall’App Store o da Google Play. Questa applicazione contiene le impostazioni di connessione (certificato iOS e chiave di progetto per Android) e la chiave di integrazione. La prima volta che l&#39;applicazione viene aperta (a seconda della configurazione), all&#39;utente può essere chiesto di immettere le informazioni di registrazione (@userKey: indirizzo e-mail o numero di account, ad esempio). Allo stesso tempo, l&#39;applicazione contesta al servizio di notifica di raccogliere un ID di notifica (ID push). Tutte queste informazioni (impostazioni di connessione, chiave di integrazione, identificatore di notifica, userKey) vengono inviate a  Adobe Campaign.
+L’app mobile viene scaricata dall’utente dall’App Store o da Google Play. Questa applicazione contiene le impostazioni di connessione (certificato iOS e chiave di progetto per Android) e la chiave di integrazione. Alla prima apertura dell’applicazione (a seconda della configurazione), è possibile chiedere all’utente di inserire le informazioni di registrazione (@userKey: e-mail o numero di account, ad esempio). Allo stesso tempo, l&#39;applicazione chiede al servizio di notifica di raccogliere un ID di notifica (ID push). Tutte queste informazioni (impostazioni di connessione, chiave di integrazione, identificatore di notifica, userKey) vengono inviate ad Adobe Campaign.
 
 ![](assets/nmac_register_view.png)
 
 ### Passaggio 2: Consegna {#step-2--delivery}
 
-Gli addetti al marketing eseguono il targeting degli abbonati alle applicazioni. Il processo di consegna invia le impostazioni di connessione al servizio di notifica (certificato iOS e chiave di progetto per Android), all&#39;ID di notifica (ID push) e al contenuto della notifica. Il servizio di notifica invia notifiche ai terminali di destinazione.
+Gli addetti al marketing eseguono il targeting degli abbonati alle applicazioni. Il processo di consegna invia le impostazioni di connessione al servizio di notifica (certificato iOS e chiave di progetto per Android), all’ID di notifica (ID push) e al contenuto della notifica. Il servizio di notifica invia notifiche ai terminali di destinazione.
 
-Le seguenti informazioni sono disponibili in  Adobe Campaign:
+Le seguenti informazioni sono disponibili in Adobe Campaign:
 
 * Solo Android: numero di dispositivi che hanno visualizzato la notifica (impression)
 * Android e iOS: numero di clic sulla notifica
 
 ![](assets/nmac_delivery_view.png)
 
-Il server Adobe Campaign  deve essere in grado di contattare il server APN sulla porta 443 per il connettore iOS HTTP/2.
+Il server Adobe Campaign deve essere in grado di contattare il server APN sulla porta 443 per il connettore iOS HTTP/2.
 
-Per verificare che funzioni correttamente, usate i seguenti comandi:
+Per verificare che funzioni correttamente, utilizza i seguenti comandi:
 
 * Per le prove:
 
@@ -101,5 +102,5 @@ Per verificare che funzioni correttamente, usate i seguenti comandi:
    telnet gateway.push.apple.com
    ```
 
-Con il connettore iOS HTTP/2, il server MTA, il server Web e il server del flusso di lavoro devono essere in grado di contattare il servizio APN sulla porta 443.
+Con il connettore iOS HTTP/2, l&#39;MTA, il server web e il server di flusso di lavoro devono essere in grado di contattare gli APN sulla porta 443.
 
