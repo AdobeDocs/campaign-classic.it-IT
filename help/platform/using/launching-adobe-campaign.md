@@ -7,19 +7,19 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 7%
+source-wordcount: '543'
+ht-degree: 6%
 
 ---
 
 
-# Avvio di Adobe Campaign{#launching-adobe-campaign}
+# Avvia Adobe Campaign{#launching-adobe-campaign}
 
 La console Client di Campaign è un client avanzato che consente di connettersi ai server delle applicazioni Campaign. Scopri come scaricare e configurare la console client in [questa pagina](../../installation/using/installing-the-client-console.md).
 
-## Avvio di Adobe Campaign {#starting-adobe-campaign}
+## Avvia Adobe Campaign {#starting-adobe-campaign}
 
 Puoi avviare Adobe Campaign selezionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
 
@@ -50,7 +50,7 @@ Alcune scelte rapide da tastiera sono disponibili in **[!UICONTROL Sign in scree
 * Per avviare la connessione, puoi anche premere il tasto **Invio**.
 * Puoi usare il tasto **Esc** per reimpostare i campi **[!UICONTROL Login]** e **[!UICONTROL Password]** sugli ultimi valori di connessione riusciti.
 
-## Configurazione delle connessioni {#setting-up-connections}
+## Imposta connessioni {#setting-up-connections}
 
 Puoi accedere alle impostazioni di connessione al server tramite il collegamento situato sopra la zona di input.
 
@@ -74,7 +74,7 @@ Gli identificatori e le password degli operatori con accesso al software e alle 
 
 Questa funzionalità è descritta nella sezione [Gestione accessi](../../platform/using/access-management.md) .
 
-## Disconnessione da Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Disconnetti da Adobe Campaign {#disconnecting-from-adobe-campaign}
 
 Per disconnettersi da Adobe Campaign, utilizza la prima icona nella barra delle icone.
 
@@ -84,7 +84,7 @@ Per disconnettersi da Adobe Campaign, utilizza la prima icona nella barra delle 
 >
 >È inoltre possibile chiudere l&#39;applicazione senza prima disconnettersi.
 
-## Ottenere la versione Adobe Campaign {#getting-your-campaign-version}
+## Scarica la tua versione Adobe Campaign {#getting-your-campaign-version}
 
 Il menu **[!UICONTROL Help > About...]** ti consente di accedere alle seguenti informazioni:
 
@@ -105,6 +105,6 @@ Ulteriori informazioni su [!DNL Gold Standard] [in questo articolo](../../rn/usi
 
 **Argomenti correlati**:
 
-* [Guida e opzioni di supporto per Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/ac-support.html)
+* [Guida e opzioni di supporto per Adobe Campaign](../../support.md)
 * [Distribuzione di software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Sessioni Adobe Experience Cloud Support ed Expert](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
