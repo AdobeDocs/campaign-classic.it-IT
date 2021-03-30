@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
 
 
-# Configurazione dei processi di importazione {#executing-import-jobs}
+# Configurare i processi di importazione {#executing-import-jobs}
 
 Adobe Campaign consente di importare dati nel database da uno o più file in formato testo, CSV, TAB o XML. Questi file sono associati a una tabella (principale o collegata) e ogni campo dei file di origine è associato a un campo del database.
 
@@ -25,7 +25,7 @@ Adobe Campaign consente di importare dati nel database da uno o più file in for
 
 La procedura guidata di importazione consente di configurare un’importazione, di definirne le opzioni (ad esempio la trasformazione dei dati) e di avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
 
-La procedura guidata di importazione viene visualizzata dopo la creazione di un nuovo processo di importazione (vedere [Creazione di processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
+La procedura guidata di importazione viene visualizzata dopo la creazione di un nuovo processo di importazione (consulta [Creazione di processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ La procedura guidata di importazione viene visualizzata dopo la creazione di un 
 
 Nel file di origine, ogni riga coincide con un record. I dati contenuti nei record sono separati da delimitatori (spazio, tabulazione, carattere, ecc.). Ciò significa che i dati vengono recuperati sotto forma di colonne e che ogni colonna è associata a un campo del database.
 
-## Passaggio 1: scelta del modello di importazione {#step-1---choosing-the-import-template}
+## Passaggio 1: scegli il modello di importazione {#step-1---choosing-the-import-template}
 
 Quando si avvia la procedura guidata di importazione, è innanzitutto necessario selezionare un modello. Ad esempio, per configurare l’importazione dei destinatari che hanno ricevuto una newsletter, effettua le seguenti operazioni:
 
@@ -85,7 +85,7 @@ Il collegamento **[!UICONTROL Advanced parameters]** ti consente di accedere all
 
    * **[!UICONTROL Do not update enumerations]**
 
-      Selezionare questa opzione per evitare di arricchire l’elenco dei valori enumerati nel database. Consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md).
+      Selezionare questa opzione per evitare di arricchire l’elenco dei valori enumerati nel database. Consulta [Gestire le enumerazioni](../../platform/using/managing-enumerations.md).
 
 * **[!UICONTROL Variables]** scheda
 
@@ -115,7 +115,7 @@ Utilizza le opzioni offerte in questa visualizzazione per configurare l’import
 * **[!UICONTROL Auto-detect format]** viene utilizzato per reinizializzare il formato dell&#39;origine dati. Questa opzione consente di riapplicare i formati originali ai dati formattati tramite l’opzione **[!UICONTROL Click here to change the file format...]**.
 * Il collegamento **[!UICONTROL Advanced parameters]** ti consente di filtrare i dati sorgente e di accedere alle opzioni avanzate. Da questa schermata, puoi scegliere di importare solo una parte del file. Puoi anche definire un filtro, ad esempio per importare solo gli utenti di tipo &quot;Prospect&quot; o &quot;Customer&quot;, in base al valore della riga corrispondente. Queste opzioni devono essere utilizzate solo dagli utenti JavaScript esperti.
 
-### Modifica del formato del file {#changing-the-file-format}
+### Modificare il formato del file {#changing-the-file-format}
 
 L’opzione **[!UICONTROL Click here to change the file format...]** consente di formattare i dati del file di origine, in particolare per specificare il separatore di colonna e il tipo di dati per ciascun campo. Questa configurazione viene eseguita tramite la finestra seguente:
 
@@ -244,7 +244,7 @@ La deduplicazione riguarda un record presente sia nel file di origine che nel da
 
 Le opzioni **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** funzionano come indicato sopra.
 
-### Comportamento in caso di errore {#behavior-in-the-event-of-an-error}
+### In caso di errore {#behavior-in-the-event-of-an-error}
 
 La maggior parte delle operazioni di trasferimento dei dati genera vari tipi di errori (formato di riga non coerente, indirizzo di posta elettronica non valido, ecc.). Tutti gli errori e tutti gli avvisi generati dal motore di importazione vengono memorizzati e collegati all’istanza di importazione.
 
@@ -311,7 +311,7 @@ Il passaggio successivo della procedura guidata di importazione ti consente di s
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Puoi creare un nuovo elenco per questi destinatari facendo clic su **[!UICONTROL Select link]**, quindi **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [Creazione e gestione degli elenchi](../../platform/using/creating-and-managing-lists.md).
+      Puoi creare un nuovo elenco per questi destinatari facendo clic su **[!UICONTROL Select link]**, quindi **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [questa sezione](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -329,10 +329,10 @@ Il passaggio successivo della procedura guidata di importazione ti consente di s
 
 Fai clic su **[!UICONTROL Next]** per convalidare questo passaggio e visualizzare il passaggio seguente.
 
-## Passaggio 6 - Avvio dell&#39;importazione {#step-6---launching-the-import}
+## Passaggio 6: avvia l’importazione {#step-6---launching-the-import}
 
 L’ultimo passaggio della procedura guidata consente di avviare l’importazione dei dati. A questo scopo, fai clic sul pulsante **[!UICONTROL Start]** .
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Puoi quindi monitorare l’esecuzione del processo di importazione (consulta [Monitoraggio dell’esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).
+Puoi quindi monitorare l’esecuzione del processo di importazione (consulta [Monitorare l’esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).
