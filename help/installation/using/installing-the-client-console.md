@@ -7,17 +7,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 translation-type: tm+mt
-source-git-commit: 1b02c3870ddc01705f01ea992e734cf0810e003a
+source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '934'
+ht-degree: 4%
 
 ---
 
 
-# Installazione della console del client Campaign{#installing-the-client-console}
+# Installazione e aggiornamento della console del client Campaign{#installing-the-client-console}
 
-La console Client di Campaign è un client avanzato che consente di connettersi ai server delle applicazioni Campaign.
+
+Campaign Client Console è un client avanzato che ti consente di connettersi ai server delle applicazioni Campaign.
 
 Prima di iniziare, devi controllare l’ [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) di Campaign, ottenere l’URL del server Campaign e le credenziali utente.
 
@@ -27,9 +28,70 @@ Prima di iniziare, devi controllare l’ [Matrice di compatibilità](https://hel
 
 ![](assets/do-not-localize/how-to-video.png) Scopri come installare e configurare il client Adobe Campaign nel  [video](#video)
 
-## Scarica la console{#download-the-client-console}
+Il processo di installazione o aggiornamento della console client varia a seconda dell’implementazione di Adobe Campaign Classic.
+Controlla i dettagli riportati di seguito per capire cosa è necessario per la tua implementazione.
 
-Per scaricare e installare la console client di Adobe Campaign, segui i passaggi seguenti:
+
+## Adobe Implementazioni in hosting {#hosted-customers}
+
+Per installare o aggiornare le console client:
+
+1. Adobe può distribuire direttamente. Una volta aggiornata la console, agli utenti verrà richiesto di scaricare l’ultima versione della console client in una finestra a comparsa.
+
+1. È possibile scaricare nelle console client da [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+
+   **Per completare l’aggiornamento, gli utenti avranno bisogno dell’accesso dell’amministratore. Se gli utenti non dispongono di diritti di amministratore, un amministratore di sistema dovrà distribuire su tutte le console client**
+
+
+
+## Implementazioni ibride e complete {#hybrid-onprem-customers}
+
+Affinché gli utenti di Adobe Campaign possano accedere all’istanza creata e configurata, devono utilizzare la console client.
+
+### Rendere la console disponibile agli utenti {#make-console-available}
+
+Quando il computer utilizzato per avviare un server applicazioni Adobe Campaign (nlserver web) riceve connessioni utente dalla console client, puoi configurarlo per rendere disponibile il programma di installazione per il client avanzato Adobe Campaign tramite un&#39;interfaccia HTML. Ogni volta che è disponibile una nuova versione della console client, gli utenti vengono invitati a scaricarla all’avvio della console client.
+
+A questo scopo, devi:
+
+1. Selezionare il pacchetto contenente il programma di installazione della console.
+
+   Questo file si chiama setup-client-7.X.XXXX.exe per v7 o setup-client-6.X.XXXX.exe per v6.1, dove X è la sottoversione di Adobe Campaign e XXXX è la build   numero.
+
+1. Copia e incolla questo pacchetto nella cartella di installazione di Adobe Campaign (sul server di marketing per le installazioni ibride), in /datakit/nl/eng/jsp.
+
+1. Avvia il server Adobe Campaign.
+
+>[!CAUTION]
+>
+>  Adobe consiglia di lasciare l’opzione **[!UICONTROL No longer ask this question]** deselezionata per fare in modo che tutti gli utenti vengano avvisati quando è disponibile una nuova versione della console.  Se questa opzione è selezionata, l’utente non verrà informato delle nuove versioni disponibili.
+
+Se è stato selezionato **[!UICONTROL No longer ask this question]**, è possibile reimpostare questo prompt. Solo gli amministratori di sistema che possono modificare il Registro di sistema di Windows devono apportare le seguenti modifiche:
+
+1. Apri l&#39;Editor del Registro di sistema utilizzando il comando **regedit** dal menu **[!UICONTROL Start > Run]**.
+
+1. Cercare il nodo ed espanderlo.
+
+   ```
+   \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
+   ```
+
+1. Elimina la voce **confAdvisorUpgrade** e chiudi l&#39;Editor del Registro di sistema.
+
+>[!NOTE]
+>
+>Se applichi una console aggiornata a un’implementazione esistente, gli utenti riceveranno automaticamente un messaggio per aggiornare la console client. Se implementi Campaign per la prima volta, gli utenti dovranno scaricare la console. Per maggiori dettagli su entrambe le opzioni, vedere qui sotto
+
+### Aggiorna la console - implementazione esistente{#update-the-client-console}
+
+Quando la console è disponibile nella cartella del server Campaign, agli utenti verrà richiesto di scaricare l’ultima versione della console client in una finestra a comparsa.
+
+**Per completare l’aggiornamento, gli utenti avranno bisogno dell’accesso dell’amministratore. Se gli utenti non dispongono di diritti di amministratore, un amministratore di sistema dovrà distribuire su tutte le console client**
+
+
+### Scarica la console - nuova implementazione{#download-the-client-console}
+
+Gli utenti ora devono scaricare e installare la console seguendo i passaggi seguenti:
 
 1. Apri un browser web e scarica la console dal seguente indirizzo:
 
@@ -43,14 +105,9 @@ Per scaricare e installare la console client di Adobe Campaign, segui i passaggi
 
 1. Fai clic sul collegamento **[!UICONTROL Download]** nella pagina di installazione.
 1. Scarica e salva il file di installazione client.
-1. Esegui il file scaricato su un computer in Windows: L&#39;installazione viene avviata. Il percorso di installazione predefinito della console client è **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, dove &quot;X&quot; è &quot;6&quot; o &quot;7&quot;, in base alla versione di Adobe Campaign.
+1. Esegui il file scaricato su un computer in Windows: L&#39;installazione viene avviata. Il percorso di installazione predefinito della console client è **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, dove &#39;X&#39; è &#39;6&#39; o &#39;7&#39;, in base alla tua versione Adobe Campaign.
 
->[!NOTE]
->
->Puoi proporre l’aggiornamento alla versione più recente a tutti gli utenti della console del client Campaign copiando il file eseguibile della console in una cartella specifica del server Campaign Marketing. [Ulteriori informazioni](../../installation/using/client-console-availability-for-windows.md).
-
-
-## Crea la connessione{#create-the-connection}
+### Crea la connessione - solo per gli utenti della prima volta{#create-the-connection}
 
 Una volta installata la console del client, segui i passaggi seguenti per creare la connessione al server dell&#39;applicazione:
 
@@ -78,7 +135,7 @@ Puoi aggiungere tutte le connessioni necessarie per connettersi, ad esempio, agl
 >
 >Il pulsante **[!UICONTROL Add]** consente di creare **[!UICONTROL folders]** per organizzare tutte le connessioni. Trascina e rilascia ciascuna connessione in una cartella.
 
-## Accedi ad Adobe Campaign
+### Accedere ad Adobe Campaign
 
 Per accedere a un&#39;istanza esistente, segui i passaggi seguenti:
 
@@ -91,6 +148,8 @@ Per accedere a un&#39;istanza esistente, segui i passaggi seguenti:
 1. Fai clic su **[!UICONTROL Ok]**
 
 1. Immetti le credenziali di accesso dell&#39;utente e fai clic su **[!UICONTROL Log in]**
+
+
 
 **Argomenti correlati**
 
