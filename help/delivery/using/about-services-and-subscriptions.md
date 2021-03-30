@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -17,10 +17,10 @@ ht-degree: 8%
 
 # Informazioni su servizi e abbonamenti{#about-services-and-subscriptions}
 
- Adobe Campaign consente di creare e amministrare servizi informativi come le newsletter e di gestire le iscrizioni a tali servizi. In parallelo possono essere definiti diversi servizi, ad esempio: newsletter specializzate per determinate categorie di prodotti, temi o aree di un sito Web, abbonamenti a vari tipi di messaggi di avviso e notifiche in tempo reale. Fare riferimento a [Gestione delle sottoscrizioni](../../delivery/using/managing-subscriptions.md).
+Adobe Campaign consente di creare e amministrare servizi informativi come le newsletter e di gestire gli abbonamenti a questi servizi. È possibile definire in parallelo diversi servizi, ad esempio: newsletter specializzate per determinate categorie di prodotti, temi o aree di un sito web, abbonamenti a vari tipi di messaggi di avviso e notifiche in tempo reale. Fai riferimento a [Gestione abbonamenti](../../delivery/using/managing-subscriptions.md).
 
-Puoi anche consentire ai destinatari della distribuzione di condividerli con i membri della loro rete sociale o professionale. A tal fine, inserire i collegamenti rilevanti nella consegna. Potete quindi tenere traccia di questo processo di condivisione e del numero di visite alle pagine interessate. Per ulteriori informazioni, consultare [Viral and social marketing](../../delivery/using/viral-and-social-marketing.md).
+Puoi anche consentire ai destinatari della consegna di condividerli con i membri della loro rete sociale o professionale. A questo scopo, inserisci i collegamenti rilevanti nella consegna. Puoi quindi tenere traccia di questo processo di condivisione e del numero di visite alle pagine interessate. Per ulteriori informazioni, consulta [Marketing virale e social marketing](../../delivery/using/viral-and-social-marketing.md).
 
 >[!NOTE]
 >
->Questa funzionalità viene fornita come standard con  Adobe Campaign. L&#39;applicazione opzionale Social Marketing consente di contattare i clienti e i potenziali clienti tramite Facebook e Twitter.
+>Questa funzionalità viene fornita come standard con Adobe Campaign. L&#39;applicazione opzionale Social Marketing consente di contattare i clienti e i potenziali clienti tramite Facebook e Twitter.
