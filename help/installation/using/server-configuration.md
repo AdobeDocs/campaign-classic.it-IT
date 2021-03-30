@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 3%
 
 ## Configurazione delle aree di protezione
 
->[!IMPORTANT]
->
->A partire dalla build 8977, l&#39;interfaccia utente autonoma delle aree di protezione non è più disponibile.
->
->* Se sei ospitato su AWS, l’aggiunta di IP all’elenco consentiti deve essere eseguita in Pannello di controllo Campaign. Per ulteriori informazioni, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
->* Se non sei in hosting su AWS, rivolgiti al team di supporto Adobe per aggiungere IP all’elenco consentiti.
+A partire dalla build 8977, l&#39;interfaccia utente autonoma delle aree di protezione non è più disponibile. Se non sei in hosting su AWS, rivolgiti al team di supporto Adobe per aggiungere IP all’elenco consentiti. In caso contrario, l&#39;aggiunta di IP all&#39;elenco consentiti deve essere eseguita in [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
+Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+
+>[!NOTE]
+> 
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all’amministratore l’accesso a un utente sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->
-Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
 
 * Assicurati che il proxy inverso non sia consentito in subNetwork. In tal caso, il traffico **all** verrà rilevato come proveniente da questo IP locale, pertanto sarà attendibile.
 
