@@ -7,19 +7,19 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
 
-# Accesso ai log di tracking{#accessing-the-tracking-logs}
+# Accedi ai log di tracciamento{#accessing-the-tracking-logs}
 
-Quando la consegna è stata inviata e il tracciamento è attivato, il **[!UICONTROL Tracking]** flusso di lavoro tecnico ha il compito di recuperare i dati di tracciamento. Per impostazione predefinita viene eseguito ogni ora.
+Quando la consegna è stata inviata e il tracciamento è attivato, il flusso di lavoro tecnico **[!UICONTROL Tracking]** ha il compito di recuperare i dati di tracciamento. Viene eseguito ogni ora per impostazione predefinita.
 
-Queste informazioni vengono visualizzate nella scheda **[!UICONTROL Tracking]** del profilo dei destinatari per i quali è stata effettuata la consegna, come nell&#39;esempio seguente:
+Queste informazioni vengono visualizzate nella scheda **[!UICONTROL Tracking]** del profilo dei destinatari interessati dalla consegna, come nell’esempio seguente:
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
