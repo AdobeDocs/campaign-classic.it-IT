@@ -1,72 +1,74 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Zipping o cifratura di un file
-description: Scoprite come comprimere o crittografare un file in Campaign Classic prima di elaborarlo.
+title: ZIP o cifratura di un file
+description: Scopri come comprimere o crittografare un file in Campaign Classic prima dell’elaborazione.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 5%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
 
-# ZIP o cifratura di un file {#zipping-or-encrypting-a-file}
+# ZIP o crittografare un file {#zipping-or-encrypting-a-file}
 
- Adobe Campaign consente di esportare file compressi o crittografati. Quando definite un&#39;esportazione tramite un&#39;attività **[!UICONTROL Data extraction (file)]**, potete definire una post-elaborazione per creare un file ZIP o per cifrare il file.
+Adobe Campaign consente di esportare file compressi o crittografati. Quando definisci un’esportazione tramite un’attività **[!UICONTROL Data extraction (file)]**, puoi definire una post-elaborazione per lo zip o la cifratura del file.
 
-Per essere in grado di effettuare le seguenti operazioni:
+Per poterlo fare:
 
-1. Installate una coppia di chiavi GPG per la vostra istanza utilizzando il [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installa una coppia di chiavi GPG per la tua istanza utilizzando il [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
    >[!NOTE]
    >
-   >Il Pannello di controllo Campaign è disponibile per tutti i clienti ospitati su AWS (ad eccezione dei clienti che ospitano le proprie istanze di marketing in sede).
+   >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all&#39;amministratore l&#39;accesso a un utente sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+   >
+   >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
-1. Se l&#39;installazione di  Adobe Campaign è ospitata da  Adobe, contattate l&#39;[ Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Adobe per avere installato sul server le utility necessarie.
-1. Se l&#39;installazione di  Adobe Campaign è in sede, installate l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
+1. Se l&#39;installazione di Adobe Campaign è ospitata per Adobe, contatta l&#39; [Assistenza clienti di Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per avere le utility necessarie installate sul server.
+1. Se l&#39;installazione di Adobe Campaign è on-premise, installare l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
 
-Potete quindi utilizzare i comandi o il codice nella scheda **[!UICONTROL Script]** dell&#39;attività o in un&#39;attività **[!UICONTROL JavaScript code]**. Un esempio è illustrato nel caso di utilizzo riportato di seguito.
+Puoi quindi utilizzare i comandi o il codice nella scheda **[!UICONTROL Script]** dell’attività o in un’attività **[!UICONTROL JavaScript code]** . Un esempio è presentato nel caso d’uso seguente.
 
 **Argomenti correlati:**
 
-* [Estrazione o decrittografia di un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md)
+* [Decrittografia o decompressione di un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md)
 * [Attività](../../workflow/using/extraction--file-.md) di estrazione dei dati (file).
 
-## Caso di utilizzo: Cifratura ed esportazione di dati utilizzando una chiave installata nel Pannello di controllo Campaign {#use-case-gpg-encrypt}
+## Caso di utilizzo: Crittografa ed esporta i dati utilizzando una chiave installata sul Pannello di controllo Campaign {#use-case-gpg-encrypt}
 
-In questo caso, verrà creato un flusso di lavoro per la cifratura e l&#39;esportazione dei dati tramite una chiave installata sul Pannello di controllo Campaign.
+In questo caso d’uso, creeremo un flusso di lavoro per crittografare ed esportare i dati utilizzando una chiave installata sul Pannello di controllo Campaign.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#video)
 
-Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
+I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Generate una coppia di chiavi GPG (pubblica/privata) utilizzando un&#39;utility GPG, quindi installate la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Genera una coppia di chiavi GPG (pubblica/privata) utilizzando un&#39;utility GPG, quindi installa la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. In Campaign Classic, creare un flusso di lavoro per esportare i dati e cifrarlo utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
+1. In Campaign Classic, crea un flusso di lavoro per esportare i dati e cifrarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A questo scopo, verrà creato un flusso di lavoro come segue:
 
    ![](assets/gpg-workflow-encrypt.png)
 
-   * **[!UICONTROL Query]** activity: In questo esempio, si desidera eseguire una query per eseguire il targeting dei dati del database che si desidera esportare.
-   * **[!UICONTROL Data extraction (file)]** activity: Estrae i dati in un file.
-   * **[!UICONTROL JavaScript code]** activity: Cifra i dati da estrarre.
-   * **[!UICONTROL File transfer]** activity: Invia i dati a un&#39;origine esterna (in questo esempio, un server SFTP).
+   * **[!UICONTROL Query]** attività: In questo esempio, si desidera eseguire una query per eseguire il targeting dei dati del database che si desidera esportare.
+   * **[!UICONTROL Data extraction (file)]** attività: Estrae i dati in un file .
+   * **[!UICONTROL JavaScript code]** attività: Cifra i dati da estrarre.
+   * **[!UICONTROL File transfer]** attività: Invia i dati a un’origine esterna (in questo esempio, un server SFTP).
 
-1. Configurate l&#39;attività **[!UICONTROL Query]** per eseguire il targeting dei dati desiderati dal database. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/query.md).
+1. Configura l’attività **[!UICONTROL Query]** per eseguire il targeting dei dati desiderati dal database. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/query.md).
 
-1. Apri l&#39;attività **[!UICONTROL Data extraction (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/extraction--file-.md).
+1. Apri l’attività **[!UICONTROL Data extraction (file)]** e configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/extraction--file-.md).
 
    ![](assets/gpg-data-extraction.png)
 
-1. Aprite l&#39;attività **[!UICONTROL JavaScript code]**, quindi copiate e incollate il comando sottostante per cifrare i dati da estrarre.
+1. Apri l’attività **[!UICONTROL JavaScript code]** , quindi copia e incolla il comando sottostante per crittografare i dati da estrarre.
 
    >[!IMPORTANT]
    >
-   >Assicurarsi di sostituire il valore **impronte digitali** dal comando con l&#39;impronta digitale della chiave pubblica installata nel Pannello di controllo Campaign.
+   >Assicurati di sostituire il valore **impronta digitale** dal comando con l&#39;impronta digitale della chiave pubblica installata sul Pannello di controllo Campaign.
 
    ```
    var cmd='gpg ';
@@ -80,16 +82,16 @@ Le operazioni da eseguire per questo caso di utilizzo sono le seguenti:
 
    ![](assets/gpg-script.png)
 
-1. Aprite l&#39;attività **[!UICONTROL File transfer]**, quindi specificate il server SFTP al quale desiderate inviare il file. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
+1. Apri l’attività **[!UICONTROL File transfer]** , quindi specifica il server SFTP al quale vuoi inviare il file. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
 
    ![](assets/gpg-file-transfer.png)
 
-1. Ora puoi eseguire il flusso di lavoro. Una volta eseguita, la destinazione dei dati dalla query verrà esportata nel server SFTP in un file .gpg crittografato.
+1. Ora puoi eseguire il flusso di lavoro. Una volta eseguito, il target dei dati dalla query verrà esportato nel server SFTP in un file .gpg crittografato.
 
-## Video di esercitazione {#video}
+## Video tutorial {#video}
 
-Questo video mostra come utilizzare una chiave GPG per cifrare i dati è disponibile anche in
+Questo video mostra come utilizzare una chiave GPG per crittografare i dati è disponibile anche in
 
 >[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
-Ulteriori video dimostrativi sui Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili ulteriori video dimostrativi su Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
