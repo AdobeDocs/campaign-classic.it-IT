@@ -2,29 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Monitoraggio dell’esecuzione dei processi
-description: Scoprite come monitorare l’esecuzione dei processi di importazione ed esportazione.
+description: Scopri come monitorare l’esecuzione di processi di importazione ed esportazione.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '184'
 ht-degree: 3%
 
 ---
 
 
-# Monitoraggio dell’esecuzione dei processi {#monitoring-job-execution}
+# Monitorare l&#39;esecuzione di processi {#monitoring-job-execution}
 
-Potete tenere traccia dell’esecuzione dei processi di importazione ed esportazione direttamente dall’elenco dei processi di importazione/esportazione.
+Puoi tenere traccia dell’esecuzione dei processi di importazione ed esportazione direttamente dall’elenco dei processi di importazione/esportazione.
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* La scheda **[!UICONTROL Journal]** consente di esaminare i messaggi di registro relativi all&#39;esecuzione.
-* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Vedere [Comportamento in caso di errore](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* La scheda **[!UICONTROL Journal]** ti consente di esaminare i messaggi di log relativi all’esecuzione.
+* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Vedi [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
-Nella scheda **[!UICONTROL General]**, il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
+Nella scheda **[!UICONTROL General]** , il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
 
 Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e le relative icone sono elencati di seguito:
 
@@ -36,11 +36,11 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Esecuzione in corso**
 
-   Il processo è in esecuzione.
+   Esecuzione del processo in corso.
 
 * **Annulla**
 
-   Fare clic sul pulsante **[!UICONTROL Cancel]**: il processo in corso viene annullato.
+   Fai clic sul pulsante **[!UICONTROL Cancel]** : il processo in corso viene annullato.
 
 * **Annullamento in corso**
 
@@ -48,11 +48,11 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Pausa in corso**
 
-   Fare clic su **[!UICONTROL Pause]**: il lavoro è sospeso.
+   Fai clic su **[!UICONTROL Pause]**: il lavoro viene sospeso.
 
 * **In pausa**
 
-   Fare clic su **[!UICONTROL Pause]**: il lavoro è sospeso. È possibile riavviarlo facendo clic su **[!UICONTROL Start]**.
+   Fai clic su **[!UICONTROL Pause]**: il lavoro è sospeso. È possibile riavviarlo facendo clic su **[!UICONTROL Start]**.
 
 * **Completato**
 
@@ -64,4 +64,4 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Arresto del server in corso**
 
-   Il processo in corso viene interrotto perché il server Adobe Campaign  è stato arrestato.
+   Il processo in corso viene interrotto perché il server Adobe Campaign è stato arrestato.
