@@ -7,10 +7,10 @@ feature: Panoramica
 role: Professionista
 level: Principiante
 translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 92%
+source-wordcount: '2833'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,26 @@ ht-degree: 92%
 
 ![](assets/do-not-localize/cp-icon.png) **Rilascio di ottobre del nuovo Pannello di controllo Campaign** con configurazione dei domini tramite CNAME e nuove funzionalità di monitoraggio del database. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Versione 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) Versione 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+
+_31 marzo 2020_
+
+**Miglioramenti**
+
+* È stato migliorato il modo per evitare arresti anomali in caso di chiamate di sapone non valide. Questo potrebbe causare l’interruzione del funzionamento dell’istanza quando si tenta di eseguire query complesse specifiche. (NEO-28796, NEO-30553)
+* È stato risolto un problema di regressione che impediva l’invio di consegne SMS con TLS a causa della verifica del nome host. (NEO-29581)
+* È stato risolto un problema che impediva il funzionamento dei collegamenti di tracciamento firmati su alcuni client e-mail. (NEO-28414, NEO-29615)
+* È stata corretta una sequenza di ID di tracciamento quando si utilizzano i tag di tracciamento webApp che poteva causare conflitti con ID duplicati. (NEO-27931)
+* È stato risolto un problema che causava l’arresto dei flussi di lavoro in esecuzione a causa del riavvio giornaliero del server wfserver. (NEO-30047)
+* È stato risolto un problema di sicurezza relativo all’utilizzo delle chiamate API effettuate da utenti non amministratori che tentavano di sincronizzare i modelli Adobe Experience Manager. (NEO-32389, NEO-23487)
+* È stato risolto un problema che causava l’arresto anomalo della console durante la chiusura di una finestra di dialogo di consegna su una consegna creata con da un modello. (NEO-31547)
+* È stato risolto un problema che si verificava durante la creazione e il salvataggio di una consegna nella scheda **Targeting &amp; Workflow** di una campagna: l&#39;anteprima avrebbe esito negativo con il seguente errore. (NEO-29440)
+* È stato risolto un problema con l’invio di risposte non valide da parte di Tomcat 8.5 che causava errori nei registri di messaggistica transazionale. (NEO-30858)
+* È stato risolto un problema di regressione che causava il danneggiamento della memoria nella gestione dei thread esterni e un impatto sulle prestazioni.
+* È stato risolto un problema che poteva causare un errore del flusso di lavoro Fatturazione quando si utilizzava una mappatura di destinazione personalizzata. La chiave primaria dello schema personalizzato viene memorizzata nella colonna &quot;sourceId&quot;, che consentiva solo valori interi. Ora consente sia valori interi che valori stringa. (NEO-25914, NEO-28146)
+* È stata corretta una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. (NEO-31453)
+
+## ![](assets/do-not-localize/red_2.png) Versione 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
 
 _22 dicembre 2020_
 
@@ -28,7 +47,6 @@ _22 dicembre 2020_
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 > * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
-
 
 
 **Miglioramenti**
