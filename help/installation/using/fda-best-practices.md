@@ -6,14 +6,14 @@ description: Scopri le best practice e le limitazioni quando lavori con un datab
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
 
 ---
-
 
 # Best practice e limitazioni
 
@@ -60,4 +60,3 @@ Evita le operazioni che devono utilizzare il più possibile sia Adobe Campaign c
 Se desideri eseguire la personalizzazione nelle consegne utilizzando i dati del database esterno, raccogli i dati da utilizzare in un flusso di lavoro per renderli disponibili in una tabella temporanea. Quindi utilizza i dati della tabella temporanea per personalizzare la consegna.
 
 L’opzione FDA è soggetta alle limitazioni del sistema di database esterno utilizzato.
-
