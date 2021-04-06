@@ -6,55 +6,55 @@ description: Scopri i passaggi di configurazione per FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 7ce5a01b57092043b8d9b52761b243f771cf74f2
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 6%
+source-wordcount: '322'
+ht-degree: 5%
 
 ---
 
-
 # Configurazione dei connettori FDA {#specific-configurations-by-database-type}
 
-A seconda dei database esterni a cui si desidera accedere da  Adobe Campaign, sarà necessario eseguire determinate configurazioni specifiche. Tali configurazioni prevedono essenzialmente l&#39;installazione di driver e la dichiarazione di variabili di ambiente appartenenti a ciascun RDBMS sul server Adobe Campaign .
+A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai eseguire alcune configurazioni specifiche. Queste configurazioni richiedono essenzialmente l’installazione di driver e la dichiarazione di variabili di ambiente che appartengono a ogni RDBMS sul server Adobe Campaign.
 
-Come regola generale, è necessario installare il livello client corrispondente nel database esterno sul server Adobe Campaign .
+Come regola generale, devi installare il livello client corrispondente sul database esterno sul server Adobe Campaign.
 
 >[!NOTE]
 >
->Le versioni compatibili sono elencate in [Matrice di compatibilità delle campagne](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+>Le versioni compatibili sono elencate in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
 
 ## Passaggi di configurazione {#fda-configuration-steps}
 
-Per impostare l&#39;accesso a un database esterno con FDA, i passaggi di configurazione sono:
+Per impostare l&#39;accesso a un database esterno con FDA, i passaggi di configurazione sono i seguenti:
 
-1. Installate i driver corrispondenti al database sul server Adobe Campaign . I driver sono elencati nelle pagine specifiche del database [elencate di seguito](#fda-specific-configuration).
-1. [Create e configurate un ](../../installation/using/connecting-to-database.md) account esterno che consenta di stabilire la connessione tra  Adobe Campaign e il database esterno. Per ulteriori informazioni sugli account esterni in Campaign, fare riferimento a [questa pagina](../../installation/using/external-accounts.md).
-1. [Create lo ](../../installation/using/creating-data-schema.md) schema del database esterno in  Adobe Campaign. Questo consente di riconoscere la struttura dati del database esterno.
-1. Se necessario, [create una nuova mappatura di destinazione](../../installation/using/defining-data-mapping.md) dallo schema creato in precedenza. Questo è richiesto se i destinatari delle consegne provengono dal database esterno. Questa implementazione include limitazioni relative alla personalizzazione dei messaggi.
+1. Installa i driver e configura l&#39;account esterno corrispondente al database sul server Adobe Campaign. Fai riferimento alle pagine specifiche del database [elencate di seguito](#fda-specific-configuration)
+1. Verifica l’account esterno o crea una connessione temporanea tra Adobe Campaign e il database esterno. [Ulteriori informazioni](../../installation/using/connecting-to-database.md)
+1. Crea lo schema del database esterno in Adobe Campaign. Ciò ti consente di identificare la struttura dati del database esterno. [Ulteriori informazioni](../../installation/using/creating-data-schema.md)
+1. Se necessario, crea una nuova mappatura di destinazione dallo schema creato in precedenza. Questo è necessario se i destinatari delle consegne provengono dal database esterno. Questa implementazione include limitazioni relative alla personalizzazione dei messaggi. [Ulteriori informazioni](../../installation/using/defining-data-mapping.md)
 
-Una volta creato lo schema di dati, i dati possono essere elaborati  flussi di lavoro Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/accessing-an-external-database--fda-.md).
+Una volta creato lo schema di dati, i dati possono essere elaborati nei flussi di lavoro Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/accessing-an-external-database--fda-.md).
 
 ## Configurazione specifica del database {#fda-specific-configuration}
 
-A seconda dei database esterni a cui si desidera accedere da  Adobe Campaign, sarà necessario eseguire determinate configurazioni specifiche. Tali configurazioni prevedono essenzialmente l&#39;installazione di driver e la dichiarazione di variabili di ambiente appartenenti a ciascun RDBMS sul server Adobe Campaign .
+A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai eseguire alcune configurazioni specifiche. Queste configurazioni comportano essenzialmente l’installazione di driver e la dichiarazione di variabili di ambiente che appartengono a ogni RDBMS sul server Adobe Campaign e la configurazione dell’account esterno.
 
-Segui i collegamenti di seguito per saperne di più:
+Segui i collegamenti riportati di seguito per ulteriori informazioni:
 
-* [ Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Connetti campagna e [Azure synapse](../../installation/using/configure-fda-synapse.md)
 
-* [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Connetti campagna e [Snowflake](../../installation/using/configure-fda-snowflake.md)
 
-* [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Connetti campagna e [Hadoop](../../installation/using/configure-fda-hadoop.md)
 
-* [ Oracle](../../installation/using/configure-fda-oracle.md)
+* Connetti Campaign e [Oracle](../../installation/using/configure-fda-oracle.md)
 
-* [Netezza](../../installation/using/configure-fda-netezza.md)
+* Connetti campagna e [Netezza](../../installation/using/configure-fda-netezza.md)
 
-* [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Connetti campagna e [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 
-* [Teradata](../../installation/using/configure-fda-teradata.md)
+* Connetti campagna e [Teradata](../../installation/using/configure-fda-teradata.md)
 
-* [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
+* Connetti Campaign e [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
