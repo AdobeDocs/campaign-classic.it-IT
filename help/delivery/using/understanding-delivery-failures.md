@@ -6,14 +6,14 @@ description: Scopri come comprendere gli errori di consegna
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2614'
 ht-degree: 14%
 
 ---
-
 
 # Informazioni sugli errori di consegna{#understanding-delivery-failures}
 
@@ -166,7 +166,7 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non raggiungibile </td> 
    <td> Morbido/Duro </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Errore nella catena di consegna dei messaggi. Potrebbe essere un problema sul relay SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà ritentato finché il contatore degli errori non raggiunge 5, o verrà inviato direttamente alle quarantene.<br /> </td> 
   </tr> 
   <tr> 
@@ -264,6 +264,10 @@ Le mail non recapitate possono avere il seguente stato di qualifica:
 
 ![](assets/deliverability_qualif_status.png)
 
+>[!NOTE]
+>
+>In caso di interruzione di un ISP, le e-mail inviate tramite Campaign verranno erroneamente contrassegnate come mancate consegne. Per correggere questo problema, è necessario aggiornare la qualifica di mancato recapito. Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/update-bounce-qualification.md).
+
 ### Regole di gestione e-mail {#email-management-rules}
 
 >[!IMPORTANT]
@@ -315,7 +319,7 @@ Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando
 * Puoi scegliere se attivare o meno determinati standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **ID mittente**, **DomainKeys**, **DKIM** e **S/MIME**.
 * I parametri **relay SMTP** consentono di configurare l&#39;indirizzo IP e la porta di un server relay per un determinato dominio. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurati di non firmare le e-mail con **ID mittente**, che è lo standard obsoleto di autenticazione e-mail proprietario di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deseleziona la casella corrispondente e contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Il recapito messaggi non sarà interessato.
+Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurati di non firmare le e-mail con **ID mittente**, che è lo standard obsoleto di autenticazione e-mail proprietario di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deseleziona la casella corrispondente e contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Il recapito messaggi non sarà interessato.
 
 #### Gestione MX {#mx-management}
 
