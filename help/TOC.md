@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentazione
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2481'
 ht-degree: 54%
 
 ---
@@ -113,9 +113,10 @@ ht-degree: 54%
       + Connettori di gestione delle relazioni con i clienti{#crm-connectors}
          + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
          + [Connettersi con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizzare i dati con il sistema CMR](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
-   + [Opzioni di assistenza e supporto](support.md)
+   + [Guida e opzioni di supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + Passaggi chiave durante la creazione di una consegna {#key-steps-when-creating-a-delivery}
@@ -210,8 +211,9 @@ ht-degree: 54%
       + [Best practice per la consegna](delivery/using/delivery-performances.md)
       + [Risoluzione dei problemi relativi alle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
-      + [Comprendere gli errori di consegna](delivery/using/understanding-delivery-failures.md)
-      + [Comprendere la gestione della quarantena](delivery/using/understanding-quarantine-management.md)
+      + [Informazioni sugli errori di consegna](delivery/using/understanding-delivery-failures.md)
+      + [Aggiornare la qualifica di mancato recapito dopo un&#39;interruzione dell&#39;ISP](delivery/using/update-bounce-qualification.md)
+      + [Informazioni sulla gestione della quarantena](delivery/using/understanding-quarantine-management.md)
    + Tracciare i messaggi {#tracking-messages}
       + [Informazioni sul tracking dei messaggi](delivery/using/about-message-tracking.md)
       + [Come configurare collegamenti tracciati](delivery/using/how-to-configure-tracked-links.md)
@@ -398,7 +400,7 @@ ht-degree: 54%
       + [Creare un flusso di lavoro](workflow/using/building-a-workflow.md)
       + [Dati di Target](workflow/using/targeting-data.md)
       + [Utilizzare i dati del flusso di lavoro](workflow/using/how-to-use-workflow-data.md)
-      + [Procedure consigliate per i flussi di lavoro](workflow/using/workflow-best-practices.md)
+      + [Best practice per i flussi di lavoro](workflow/using/workflow-best-practices.md)
    + Eseguire un flusso di lavoro {#executing-a-workflow}
       + [Avviare un flusso di lavoro](workflow/using/starting-a-workflow.md)
       + [Ciclo di vita di un flusso di lavoro](workflow/using/workflow-life-cycle.md)
@@ -658,6 +660,7 @@ ht-degree: 54%
       + [Impostazioni del server Campaign](installation/using/configuring-campaign-server.md)
       + [Definire le aree di protezione](installation/using/security-zones.md)
       + [Configurazioni delle e-mail tecniche](installation/using/email-deliverability.md)
+      + [Utilizzo dei server MX con Campaign](installation/using/using-mx-servers.md)
       + [Configurare CCN e-mail](installation/using/email-archiving.md)
       + [Configurare SpamAssassin](installation/using/configuring-spamassassin.md)
    + Connetti a Campaign{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 54%
       + [Configurare account esterni](installation/using/external-accounts.md)
       + Configurare Federated Data Access{#configure-fda}
          + [Introduzione a Federated Data Access](installation/using/about-fda.md)
+         + [Best practice e limitazioni](installation/using/fda-best-practices.md)
          + Linee guida per la configurazione {#config-databases}
             + [Passaggi di configurazione](installation/using/configure-fda.md)
             + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
