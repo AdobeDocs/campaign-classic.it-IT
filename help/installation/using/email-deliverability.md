@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Consegna e-mail
-description: Consegna e-mail
+title: Configurazione e-mail tecnica
+description: Scopri come configurare Campaign per controllare l’output delle istanze durante la consegna delle e-mail.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3022'
 ht-degree: 0%
 
 ---
-
 
 # Configurazioni delle e-mail tecniche{#email-deliverability}
 
@@ -27,7 +27,7 @@ La sezione seguente fornisce una panoramica della configurazione necessaria per 
 
 Per ulteriori informazioni sui concetti e sulle best practice relativi al recapito messaggi con Adobe Campaign, consulta questa [sezione](../../delivery/using/about-deliverability.md).
 
-Per informazioni più approfondite sul recapito messaggi, incluse tutte le raccomandazioni tecniche relative all’invio e alla ricezione efficienti di e-mail da parte di una piattaforma di Adobe, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Per informazioni più approfondite sul recapito messaggi, incluse tutte le raccomandazioni tecniche relative all’invio e alla ricezione efficienti di e-mail da parte di una piattaforma di Adobe, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Principio di funzionamento {#operating-principle}
 
@@ -135,9 +135,11 @@ Per impostazione predefinita, il server di statistiche ascolta la porta 7777. Qu
 >
 >Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), le regole di velocità effettiva di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L’MTA avanzato utilizza le proprie regole MX che gli consentono di personalizzare il throughput in base al dominio in base alla reputazione cronologica dell’e-mail e al feedback in tempo reale proveniente dai domini in cui invii e-mail.
 
-Le sezioni seguenti si applicano solo alle installazioni on-premise e alle installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign.
-
 ### Informazioni sulle regole MX {#about-mx-rules}
+
+>[!NOTE]
+>
+>Questa sezione e le sezioni seguenti si applicano solo alle installazioni on-premise e alle installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign.
 
 Le regole MX (Mail eXchanger) sono regole che gestiscono la comunicazione tra un server di invio e un server di ricezione.
 
@@ -301,6 +303,10 @@ I seguenti parametri disponibili per ogni regola sono:
 Esempio di configurazione:
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sull&#39;utilizzo dei server MX con Adobe Campaign, consulta [questa sezione](../../installation/using/using-mx-servers.md).
 
 ### Gestione dei formati e-mail {#managing-email-formats}
 
