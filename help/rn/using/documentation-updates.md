@@ -4,16 +4,16 @@ product: campaign
 title: Aggiornamenti alla documentazione di Adobe Campaign Classic
 description: In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti presenti nella documentazione di Adobe Campaign Classic
 feature: Panoramica
-role: Professionista
-level: Principiante
+role: Business Practitioner
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '4275'
-ht-degree: 94%
+source-wordcount: '4272'
+ht-degree: 96%
 
 ---
-
 
 # Aggiornamenti alla documentazione{#documentation-updates}
 
@@ -29,16 +29,16 @@ La pagina &quot;Opzioni di aiuto e supporto&quot; per Campaign Classic è stata 
 
 È stata aggiunta una nuova sezione con best practice e controlli da eseguire in materia di sicurezza e privacy. [Leggi tutto](../../installation/using/get-started-security-privacy.md)
 
-Il [capitolo sulla gestione delle autorizzazioni](../../platform/using/access-management.md) è stato migliorato e suddiviso in sezioni, inclusi dettagli su [Operatori](../../platform/using/access-management-operators.md) , [Gruppi di operatori](../../platform/using/access-management-groups.md) , [Diritti denominati](../../platform/using/access-management-named-rights.md) e [Gestione cartelle](../../platform/using/access-management-folders.md) .
+Il [capitolo sulla gestione delle autorizzazioni](../../platform/using/access-management.md) è stato migliorato e suddiviso in sezioni, inclusi dettagli su [operatori](../../platform/using/access-management-operators.md), [gruppi di operatori](../../platform/using/access-management-groups.md), [diritti denominati](../../platform/using/access-management-named-rights.md) e [gestione delle cartelle](../../platform/using/access-management-folders.md).
 
 Scopri come creare e gestire le campagne attraverso queste nuove pagine:
 * [Creare e configurare modelli di campagna](../../campaign/using/marketing-campaign-templates.md)
 * [Consegne di campagne di marketing](../../campaign/using/marketing-campaign-deliveries.md)
 * [Selezionare il pubblico delle campagne](../../campaign/using/marketing-campaign-target.md)
-* [Gestione dei documenti associati](../../campaign/using/marketing-campaign-assets.md)
-* [Imposta e gestisci il processo di approvazione](../../campaign/using/marketing-campaign-approval.md)
+* [Gestire i documenti associati](../../campaign/using/marketing-campaign-assets.md)
+* [Impostare e gestire il processo di approvazione](../../campaign/using/marketing-campaign-approval.md)
 
-Nella sezione dell&#39;attività **[!UICONTROL Advanced JavaScript]** sono state aggiunte informazioni su come utilizzare il metodo task.setCompleted() per terminare l&#39;attività ed evitare richiami futuri. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Nella sezione dell’attività **[!UICONTROL Advanced JavaScript]** sono state aggiunte informazioni su come utilizzare il metodo task.setCompleted() per terminare l’attività ed evitare richiami futuri. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 La sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) è stata aggiornata e ora include i collegamenti alla nuova [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html). Tutte le informazioni generiche relative al recapito messaggi che possono essere applicate a varie soluzioni di Adobe sono state spostate nell&#39; [Appendice alla Guida alle best practice](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
