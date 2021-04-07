@@ -4,22 +4,22 @@ product: campaign
 title: '[!DNL Gold Standard] aggiornamento'
 description: 'Scopri cosa è Campaign Classic [!DNL Gold Standard] '
 feature: Panoramica
-role: Professionista
-level: Principiante
+role: Business Practitioner
+level: Beginner
+exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 12%
+source-wordcount: '556'
+ht-degree: 92%
 
 ---
-
 
 # [!DNL Gold Standard] release  {#gs-overviews}
 
 ## Cos’è [!DNL Gold Standard]?
 
-Adobe e Adobe Campaign si impegnano a fornire la migliore esperienza e valore attraverso le nostre soluzioni software. L&#39;organizzazione si impegna a garantire l&#39;accesso alle versioni più recenti della tecnologia correlata che le nostre soluzioni sfruttano per eseguire le proprie attività.
+Adobe e Adobe Campaign si impegnano a fornire la migliore esperienza e il maggior valore tramite soluzioni software. Ci impegniamo a garantire l’accesso alle versioni più recenti delle tecnologie correlate con cui interagiscono le nostre soluzioni al fine di eseguire le proprie attività.
 
  Adobe Campaign Classic, in particolare, utilizza una gamma di tecnologie per fornire valore. Questa combinazione di tecnologie richiede l’aggiornamento regolare delle istanze di Campaign Classic, così da assicurarti di utilizzare le versioni più aggiornate al fine di garantire la massima protezione, stabilità e prestazioni.
 
@@ -27,19 +27,19 @@ Adobe e Adobe Campaign si impegnano a fornire la migliore esperienza e valore at
 
 ## Perché la mia organizzazione ha bisogno di questo aggiornamento?
 
-In qualità di cliente in hosting, se il tuo account è stato identificato come che necessita di aggiornare una o più tecnologie correlate a Campaign Classic, nonché di aggiornare la build e/o la versione corrente, riceverai una notifica direttamente in Adobe.
+In qualità di cliente in hosting, se il tuo account necessita l’aggiornamento di una o più tecnologie correlate a Campaign Classic oppure di aggiornare la build e/o la versione corrente, riceverai una notifica direttamente da Adobe.
 
-In qualità di cliente on-premise o ibrido in esecuzione su una versione precedente, Adobe ti incoraggia a passare all’ultima [!DNL Gold Standard].
+In qualità di cliente on-premise o ibrido che utilizza una versione precedente, Adobe ti incoraggia a passare all’ultima [!DNL Gold Standard].
 
-In questo modo il tuo account sarà sicuro dalle vulnerabilità e sfrutterà la tecnologia di prestazioni aggiornata. Questo aggiornamento posizionerà anche il tuo account per gli aggiornamenti più semplici e regolari che richiedono meno lavoro manuale e intervento.
+In questo modo il tuo account sarà protetto da eventuali vulnerabilità e potrà sfruttare le prestazioni fornite dalle tecnologie aggiornate. Questo aggiornamento consentirà anche al tuo account di usufruire di aggiornamenti più semplici, regolari e meno laboriosi.
 
-## Qual è il processo e la cronologia di questo aggiornamento?
+## Quali sono il processo e tempistica di questo aggiornamento?
 
-Il team Adobe guiderà e guiderà la tua organizzazione attraverso questo percorso.
+Il team Adobe guiderà la tua organizzazione attraverso il percorso di aggiornamento.
 
-Abbiamo organizzato un team di responsabili dell’Assistenza clienti, responsabili prodotti, ingegneri e specialisti di TechOps e consulenti di prodotto per assistere e garantire che l’esperienza sia fluida.
+Abbiamo organizzato un team di responsabili dell’Assistenza cliente, Product Manager, tecnici, specialisti TechOps e consulenti di prodotto che potrà assisterti e garantire un’esperienza fluida.
 
-Ci impegniamo ad assicurarci che tu disponga del progetto e delle informazioni di contatto pertinenti.
+Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
 
 ## Vantaggi
 
@@ -50,9 +50,9 @@ Ci impegniamo ad assicurarci che tu disponga del progetto e delle informazioni d
     <strong>Maggiore sicurezza</strong>
     </div>
     <ul>
-    <li>Una combinazione di tecnologie utilizzate per alimentare Adobe Campaign Classic funziona insieme per offrire valore.</li>
+    <li>Diverse tecnologie utilizzate per alimentare Adobe Campaign Classic funzionano congiuntamente per offrire valore.</li>
     <li>Tutte le istanze devono essere aggiornate per garantire la sicurezza.</li>
-    <li>La sicurezza richiede una messa a fuoco costante e una manutenzione proattiva.</li>
+    <li>La sicurezza richiede attenzione costante e manutenzione proattiva.</li>
     <li>I rischi di sicurezza sono onnipresenti e non possono essere ignorati: ogni aggiornamento di Campaign Classic migliora la sicurezza.</li>
     </ul>
   </td>
@@ -63,9 +63,9 @@ Ci impegniamo ad assicurarci che tu disponga del progetto e delle informazioni d
     <strong>Supporto migliorato</strong>
     </div>
     <ul>
-    <li>La maggior parte dei problemi critici sono in realtà risolti con gli aggiornamenti e possono essere evitati.</li>
-    <li>Gli aggiornamenti regolari contribuiscono a ridurre le sfide e ad aumentare l'efficienza eliminando queste sfide.</li>
-    <li>Il volume dell'assistenza clienti sarà ridotto, consentendo risoluzioni più rapide e maggiore attenzione ai problemi che non sono correlati agli aggiornamenti.</li>
+    <li>La maggior parte dei problemi critici in realtà vengono risolti con gli aggiornamenti e possono essere evitati.</li>
+    <li>Gli aggiornamenti regolari contribuiscono a ridurre ed eliminare le difficoltà e di conseguenza aumentano l’efficienza.</li>
+    <li>La riduzione nel volume di richieste di assistenza determina risoluzioni più rapide e maggiore attenzione ai problemi che non sono correlati agli aggiornamenti.</li>
     </ul>
   </td>
 </tr>
@@ -77,9 +77,9 @@ Ci impegniamo ad assicurarci che tu disponga del progetto e delle informazioni d
     <strong>Manutenzione e stabilità migliorate</strong>
     </div>
     <ul>
-    <li>Nel tempo, il team Adobe Campaign identifica modi per migliorare la stabilità e le prestazioni del prodotto, nonché per risolvere i problemi noti.</li>
-    <li>L'aggiornamento aggiorna l'istanza con questi miglioramenti ed elimina le problematiche comuni riscontrate dalle organizzazioni che registrano una rapida crescita e/o complessità all'interno delle istanze Campaign Classic.</li>
-    <li>I miglioramenti implementati nello stack di tecnologia Campaign Classic saranno visibili sia nei team di marketing che IT della tua organizzazione.</li>
+    <li>Nel tempo, il team Adobe Campaign individua modi efficaci per migliorare la stabilità e le prestazioni del prodotto e per risolvere i problemi noti.</li>
+    <li>L’aggiornamento permette di usufruire di tali miglioramenti ed elimina le problematiche comuni riscontrate dalle organizzazioni che registrano una rapida crescita e/o complessità all’interno delle proprie istanze di Campaign Classic.</li>
+    <li>I team di marketing e IT dell’organizzazione coglieranno subito i miglioramenti implementati nello stack tecnologico di Campaign Classic.</li>
     </ul>
   </td>
 
@@ -90,9 +90,9 @@ Ci impegniamo ad assicurarci che tu disponga del progetto e delle informazioni d
     </a>
     </div>
     <ul>
-    <li>Lo sforzo e la complessità dell’aggiornamento dell’istanza Campaign Classic aumentano con la distanza tra 2 versioni (v5 —&gt; v7).</li>
-    <li>Più la tua organizzazione attende, più complessa è l’aggiornamento (e più vulnerabilità sei esposto a).</li>
-    <li>Aggiornamenti regolari riducono i tempi di inattività per l’aggiornamento e riducono il rischio di regressione.</li>
+    <li>L’aggiornamento dell’istanza di Campaign Classic risulta più complesso e laborioso se si salta una versione (passando da v5 a v7).</li>
+    <li>Più si rimanda l’aggiornamento, più complesso questo diventa (e più ci si espone a vulnerabilità).</li>
+    <li>Con aggiornamenti regolari si riducono sia i tempi di inattività associati alla procedura di aggiornamento, sia il rischio di regressione.</li>
     </ul>
   </td>
 </tr>
