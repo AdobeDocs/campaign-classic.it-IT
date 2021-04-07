@@ -4,16 +4,16 @@ product: campaign
 title: Introduzione agli aggiornamenti
 description: Ulteriori informazioni sugli aggiornamenti di Campaign Classic
 feature: Panoramica
-role: Professionista
-level: Principiante
+role: Business Practitioner
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 93%
 
 ---
-
 
 # Introduzione agli aggiornamenti{#rn-overview}
 
@@ -35,7 +35,7 @@ Le **ultime build GA** sono: [[!DNL Gold Standard]  11](../../rn/using/gold-stan
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** (RC): versione più recente con nuove funzionalità.
 
-L’**ultima build RC** è [Campaign Classic versione 21.1](../../rn/using/latest-release.md)
+L’**ultima build RC** è [Campaign Classic 21.1](../../rn/using/latest-release.md)
 
 ![](assets/do-not-localize/red3.png) **Obsoleto**: nessuna distribuzione. Le implementazioni esistenti devono essere aggiornate.
 
@@ -51,7 +51,7 @@ Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pag
 
 In qualità di cliente in hosting (Managed Services o ibrido), devi contattare il team di assistenza clienti per aggiornare l’ambiente.
 
-In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
