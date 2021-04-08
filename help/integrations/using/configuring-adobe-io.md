@@ -8,14 +8,14 @@ content-type: reference
 index: y
 internal: n
 snippet: y
+exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f3ca92325f70cb3b9cca1ec5f6b7ddb5a02f9159
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
-
 
 # Configurazione di Adobe I/O per i trigger Adobe Experience Cloud {#configuring-adobe-io}
 
@@ -74,9 +74,9 @@ Prima di avviare questa implementazione, controlla di avere:
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Scegli un **[!UICONTROL Product profile]** esistente o creane uno nuovo, se necessario. Quindi, fai clic su **[!UICONTROL Save configured API]**.
+1. Scegli un **[!UICONTROL Product profile]** esistente o creane uno nuovo, se necessario. Non è richiesta alcuna autorizzazione per questo **[!UICONTROL Product profile]**. Per ulteriori informazioni su [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
-   Per ulteriori informazioni su [!DNL Analytics] **[!UICONTROL Product Profiles]**, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
+   Quindi, fai clic su **[!UICONTROL Save configured API]**.
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
