@@ -4,16 +4,16 @@ product: campaign
 title: Informazioni sui profili
 description: Informazioni sui profili
 feature: Profili, pubblico
-role: Business Practices, architetto dati
-level: Principiante
+role: Business Practitioner, Data Architect
+level: Beginner
+exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 14%
+source-wordcount: '994'
+ht-degree: 16%
 
 ---
-
 
 # Guida introduttiva ai profili{#about-profiles}
 
@@ -79,11 +79,11 @@ Per accedere a funzionalità e configurazioni avanzate, fai clic sull’icona **
 
 ![](assets/d_ncs_user_interface01.png)
 
-Il layout generale di Adobe Campaign Explorer è presentato in [questa sezione](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+Il layout generale di Adobe Campaign Explorer è presentato in [questa pagina](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->Puoi anche visualizzare una visualizzazione avanzata di questo elenco dalla struttura di Adobe Campaign facendo clic sul collegamento **[!UICONTROL Profiles and targets > Recipients]** . La visualizzazione dell&#39;elenco può essere configurata in base alle tue esigenze. Puoi aggiungere o eliminare colonne, definire l’ordine delle colonne, ordinare dati e così via. La configurazione della visualizzazione dell&#39;elenco è descritta in [questa sezione](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer).
+>Puoi anche visualizzare una visualizzazione avanzata di questo elenco dalla struttura di Adobe Campaign facendo clic sul collegamento **[!UICONTROL Profiles and targets > Recipients]** . La visualizzazione dell&#39;elenco può essere configurata in base alle tue esigenze. Puoi aggiungere o eliminare colonne, definire l’ordine delle colonne, ordinare dati e così via. La configurazione della visualizzazione dell&#39;elenco è descritta in [questa pagina](../../platform/using/adobe-campaign-ui-lists.md).
 >
 >Puoi anche definire le visualizzazioni dei destinatari. Per ulteriori informazioni su questa funzionalità, consulta [questa sezione](../../platform/using/access-management-folders.md).
 
@@ -97,7 +97,7 @@ Se sei in hosting su AWS, puoi anche monitorare il numero di profili attivi util
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all’amministratore l’accesso a un utente sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all’amministratore l’accesso a un utente sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
 >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
