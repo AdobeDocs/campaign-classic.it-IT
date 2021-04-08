@@ -5,14 +5,14 @@ title: Nota tecnica
 description: Nota tecnica
 hide: true
 hidefromtoc: true
+exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: bdd746120f2162cf48eeb9d519513656bd4e75aa
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
-
 
 # Aggiornamenti alla configurazione di Adobe Campaign - marzo 2021 {#acc-config-updates}
 
@@ -26,7 +26,7 @@ Per motivi di sicurezza, ora devi effettuare l’aggiornamento a una delle versi
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per qualsiasi domanda su queste modifiche, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Aggiornamenti di sicurezza {#acc-security-updates}
@@ -118,7 +118,7 @@ L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio
 * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
 * Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
 * Campaign versione 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
-* Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
+* Campaign versione 20.2.5. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -147,7 +147,7 @@ Scopri come controllare la versione [in questa sezione](../platform/using/launch
 
 In qualità di cliente in hosting, se hai effettuato l’aggiornamento alla nuova build, Adobe ha già aggiornato le istanze all’API basata su HTTP/2.
 
-In qualità di cliente on-premise/ospitato, devi aggiornare la configurazione. [Scopri come migrare a HTTP/2](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
+In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione. [Scopri come migrare a HTTP/2](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
 
 ### Aggiornamenti dei certificati principali di APN
 
@@ -171,5 +171,5 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per 
 
 * [Aggiornare l’ambiente](../production/using/build-upgrade.md)
 * [Domande frequenti sull’aggiornamento della build](../platform/using/faq-build-upgrade.md)
-* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
 * [Rendere la nuova console client disponibile agli utenti](../installation/using/client-console-availability-for-windows.md)
