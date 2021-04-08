@@ -2,32 +2,32 @@
 solution: Campaign Classic
 product: campaign
 title: Best practice per i modelli di dati
-description: Scopri come utilizzare il modello dati Campaign Classic
+description: Scopri come utilizzare il modello dati di Campaign Classic
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
+exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6768e9ac518ab0c5642241d1fd2086de5b1e6892
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 1%
 
 ---
 
-
 # Best practice per i modelli di dati{#data-model-best-practices}
 
-Questo documento delinea i consigli chiave durante la progettazione del modello dati di Adobe Campaign.
+Questo documento delinea i consigli chiave durante la progettazione del modello dati Adobe Campaign.
 
 Per una migliore comprensione delle tabelle integrate di Campaign e della loro interazione, consulta [questa sezione](../../configuration/using/about-data-model.md) .
 
-Per iniziare a utilizzare gli schemi di Campaign, leggi [questa documentazione](../../configuration/using/about-schema-reference.md) . Scopri come configurare gli schemi di estensione per estendere il modello dati concettuale del database di Adobe Campaign in [questo documento](../../configuration/using/about-schema-edition.md).
+Per iniziare a utilizzare gli schemi di Campaign, leggi [questa documentazione](../../configuration/using/about-schema-reference.md) . Scopri come configurare gli schemi di estensione per estendere il modello dati concettuale del database Adobe Campaign in [questo documento](../../configuration/using/about-schema-edition.md).
 
 ## Panoramica {#overview}
 
-Il sistema Adobe Campaign è estremamente flessibile e può essere esteso oltre l’implementazione iniziale. Tuttavia, mentre le possibilità sono infinite, è fondamentale prendere decisioni sagge e creare solide basi per iniziare a progettare il modello dati.
+Il sistema Adobe Campaign è estremamente flessibile e può essere esteso oltre l&#39;implementazione iniziale. Tuttavia, mentre le possibilità sono infinite, è fondamentale prendere decisioni sagge e creare solide basi per iniziare a progettare il modello dati.
 
-Questo documento fornisce casi d’uso comuni e best practice per scoprire come architettare correttamente lo strumento Adobe Campaign.
+Questo documento fornisce casi d’uso comuni e best practice per imparare a progettare correttamente lo strumento Adobe Campaign.
 
 ## Architettura del modello dati {#data-model-architecture}
 
@@ -74,7 +74,7 @@ Per garantire una buona architettura e prestazioni del sistema, segui le best pr
 * Tuttavia, quando il calcolo dell&#39;espressione è complesso, si sconsiglia di utilizzare l&#39;attributo **expr** come calcolo on-the-fly può influire sulle prestazioni delle query.
 * Il tipo **XML** è un buon modo per evitare di creare troppi campi. Ma occupa anche spazio su disco in quanto utilizza una colonna CLOB nel database. Può anche portare a query SQL complesse e può influire sulle prestazioni.
 * La lunghezza di un campo **string** deve sempre essere definita con la colonna . Per impostazione predefinita, la lunghezza massima in Adobe Campaign è 255, ma Adobe consiglia di mantenere il campo più breve se sai già che la dimensione non supererà una lunghezza più breve.
-* È accettabile avere un campo più breve in Adobe Campaign rispetto al sistema di origine se sei sicuro che la dimensione nel sistema di origine è stata sopravvalutata e non verrebbe raggiunta. Ciò potrebbe significare una stringa più breve o un numero intero più piccolo in Adobe Campaign.
+* È accettabile avere un campo più breve in Adobe Campaign rispetto al sistema di origine se si è certi che la dimensione nel sistema di origine è stata sopravvalutata e non verrà raggiunta. Ciò potrebbe significare una stringa più breve o un numero intero più piccolo in Adobe Campaign.
 
 ### Scelta dei campi {#choice-of-fields}
 
@@ -88,7 +88,7 @@ Oltre al **autopk** definito per impostazione predefinita nella maggior parte de
 
 Le chiavi efficienti sono essenziali per le prestazioni. I tipi di dati numerici devono sempre essere preferiti come chiavi per le tabelle.
 
-Per il database SQLServer, è possibile utilizzare &quot;indice cluster&quot; se le prestazioni sono necessarie. Poiché Adobe non gestisce questo problema, è necessario crearlo in SQL.
+Per il database SQLServer, è possibile utilizzare &quot;indice cluster&quot; se le prestazioni sono necessarie. Poiché Adobe non gestisce questa operazione, è necessario crearla in SQL.
 
 ### Tablespace dedicate {#dedicated-tablespaces}
 
@@ -100,15 +100,15 @@ Le tablespace dedicate sono migliori per il partizionamento, le regole di sicure
 
 ## Identificatori {#identifiers}
 
-Le risorse di Adobe Campaign hanno tre identificatori ed è possibile aggiungere un identificatore aggiuntivo.
+Le risorse Adobe Campaign hanno tre identificatori ed è possibile aggiungere un identificatore aggiuntivo.
 
 Nella tabella seguente sono descritti questi identificatori e il loro scopo.
 
 | Identificatore | Descrizione | Best practice |
 |--- |--- |--- |
-| Id | <ul><li>L’id è la chiave primaria fisica di una tabella di Adobe Campaign. Per le tabelle pronte all’uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign. </li><li>Un id generato automaticamente può essere visibile in una definizione dello schema. Cerca l&#39;attributo *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o nella definizione di un pacchetto.</li><li>Non si deve presumere che l&#39;id sarà sempre un numero crescente.</li><li>L’ID in una tabella standard è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
-| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un’altra istanza di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinomina il nome del record generato da Adobe Campaign se l’oggetto è destinato a essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto dispone di un attributo namespace (*schema* ad esempio), questo spazio dei nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Quando un oggetto non dispone di uno spazio dei nomi (*workflow* o *delivery* ad esempio), questa nozione di spazio dei nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzare caratteri speciali come lo spazio &quot;&quot;, la semicolonna &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri verranno sostituiti da un carattere di sottolineatura &quot;_&quot; (carattere consentito). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
-| Etichetta | <ul><li>L’etichetta è l’identificatore aziendale di un oggetto o record in Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Questa è la soluzione più semplice da usare per identificare un record o un oggetto per un utente di Adobe Campaign.</li></ul> |
+| Id | <ul><li>L’id è la chiave primaria fisica di una tabella Adobe Campaign. Per le tabelle pronte all’uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign. </li><li>Un id generato automaticamente può essere visibile in una definizione dello schema. Cerca l&#39;attributo *autopk=&quot;true&quot;* .</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o nella definizione di un pacchetto.</li><li>Non si deve presumere che l&#39;id sarà sempre un numero crescente.</li><li>L’ID in una tabella standard è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
+| Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un’istanza diversa di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinomina il nome del record generato da Adobe Campaign se l’oggetto deve essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto dispone di un attributo namespace (*schema* ad esempio), questo spazio dei nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*.</li><li>Quando un oggetto non dispone di uno spazio dei nomi (*workflow* o *delivery* ad esempio), questa nozione di spazio dei nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzare caratteri speciali come lo spazio &quot;&quot;, la semicolonna &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri verranno sostituiti da un carattere di sottolineatura &quot;_&quot; (carattere consentito). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
+| Etichetta | <ul><li>L’etichetta è l’identificatore aziendale di un oggetto o record in Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Questa è la soluzione più semplice da usare per identificare un record o un oggetto per un utente Adobe Campaign.</li></ul> |
 
 ## Tasti interni personalizzati {#custom-internal-keys}
 
@@ -204,7 +204,7 @@ La tabella seguente mostra i casi in cui i tre indici descritti di seguito vengo
 | Il nome è uguale a &quot;Johnny&quot; E il cognome è uguale a &quot;Smith&quot; | Utilizzato | Non utilizzato | Non utilizzato | Poiché nella stessa query vengono cercati entrambi gli attributi, verrà utilizzato solo l’indice che combina entrambi gli attributi. |
 | Cognome uguale a &quot;Smith&quot; | Non utilizzato | Non utilizzato | Utilizzato | Si tiene conto dell&#39;ordine degli attributi nell&#39;indice. Se l&#39;ordine non corrisponde, l&#39;indice potrebbe non essere utilizzato. |
 | Il nome inizia con &quot;Joh&quot; | Utilizzato | Utilizzato | Non utilizzato | &quot;Ricerca a sinistra&quot; abilita gli indici. |
-| Il nome termina con &quot;nny&quot; | Non utilizzato | Non utilizzato | Non utilizzato | &quot;Ricerca corretta&quot; disabilita gli indici e viene eseguita una scansione completa. Alcuni tipi di indice specifici potrebbero gestire questo caso d’uso, ma non sono disponibili per impostazione predefinita in Adobe Campaign. |
+| Il nome termina con &quot;nny&quot; | Non utilizzato | Non utilizzato | Non utilizzato | &quot;Ricerca corretta&quot; disabilita gli indici e viene eseguita una scansione completa. Alcuni tipi di indice specifici possono gestire questo caso d’uso, ma non sono disponibili per impostazione predefinita in Adobe Campaign. |
 | Il nome contiene &quot;John&quot; | Non utilizzato | Non utilizzato | Non utilizzato | Questa è una combinazione di ricerche &quot;sinistra&quot; e &quot;destra&quot;. A causa di quest&#39;ultimo, disabiliterà gli indici e verrà eseguita una scansione completa. |
 | Nome uguale a &quot;john&quot; | Non utilizzato | Non utilizzato | Non utilizzato | Gli indici sono sensibili all&#39;uso di maiuscole e minuscole. Per evitare la distinzione tra maiuscole e minuscole, è necessario creare un indice specifico che includa una funzione SQL come &quot;Upper(firstname)&quot;. Dovresti fare lo stesso con altre trasformazioni di dati come &quot;unaccen(firstname)&quot;. |
 
@@ -251,7 +251,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 * Se desideri mantenere i registri più a lungo, questa decisione deve essere presa con attenzione in base alle dimensioni del database e al volume dei messaggi inviati. Come promemoria, la sequenza Adobe Campaign è un numero intero a 32 bit.
 * Si raccomanda di non avere più di 1 miliardo di record alla volta in queste tabelle (circa il 50% dei 2,14 miliardi di id disponibili) per limitare i rischi di consumo di tutti gli id disponibili. Alcuni clienti dovranno ridurre la durata di conservazione al di sotto dei 180 giorni.
 
-Ulteriori informazioni sulla conservazione dei dati nelle [linee guida per la privacy e la sicurezza delle campagne](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#consent).
+Ulteriori informazioni sulla conservazione dei dati in [Linee guida sulla privacy e la sicurezza delle campagne](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#consent).
 
 Ulteriori informazioni sul flusso di lavoro di pulizia della base dati di Campaign [in questa sezione](../../production/using/database-cleanup-workflow.md).
 
@@ -259,7 +259,7 @@ Ulteriori informazioni sul flusso di lavoro di pulizia della base dati di Campai
 >
 >Le tabelle personalizzate non vengono eliminate con il processo di pulizia standard. Anche se questo potrebbe non essere necessario il primo giorno, non dimenticare di creare un processo di eliminazione per le tabelle personalizzate in quanto ciò potrebbe portare a problemi di prestazioni.
 
-Ci sono alcune soluzioni per ridurre al minimo la necessità di record in Adobe Campaign:
+Sono disponibili alcune soluzioni per ridurre al minimo la necessità di record in Adobe Campaign:
 * Esporta i dati in un data warehouse esterno ad Adobe Campaign.
 * Genera valori aggregati che utilizzeranno meno spazio pur essendo sufficienti per le tue pratiche di marketing. Ad esempio, non è necessaria l’intera cronologia delle transazioni cliente in Adobe Campaign per tenere traccia degli ultimi acquisti.
 
@@ -309,7 +309,7 @@ Ad esempio, se il database contiene 10 milioni di destinatari, la tabella di reg
 
 Su PostgreSQL, una riga non deve superare gli 8 KB per evitare il meccanismo [TOAST](https://wiki.postgresql.org/wiki/TOAST). Pertanto, cerca di ridurre il più possibile il numero di colonne e la dimensione di ogni riga per preservare le prestazioni ottimali del sistema (memoria e CPU).
 
-Anche il numero di righe influisce sulle prestazioni. Il database di Adobe Campaign non è progettato per memorizzare dati storici che non sono utilizzati attivamente per scopi di targeting o personalizzazione, si tratta di un database operativo.
+Anche il numero di righe influisce sulle prestazioni. Il database Adobe Campaign non è progettato per memorizzare dati storici non utilizzati attivamente per il targeting o la personalizzazione, si tratta di un database operativo.
 
 Per evitare problemi di prestazioni relativi al numero elevato di righe, conservare solo i record necessari nel database. Qualsiasi altro record deve essere esportato in un data warehouse di terze parti e rimosso dal database operativo Adobe Campaign.
 
@@ -318,7 +318,7 @@ Di seguito sono riportate alcune best practice relative alle dimensioni delle ta
 * Progettazione di tabelle di grandi dimensioni con meno campi e più dati numerici.
 * Non utilizzare un numero elevato di colonne (ad esempio: Int64) per memorizzare numeri piccoli come valori booleani.
 * Rimuovere le colonne non utilizzate dalla definizione della tabella.
-* Non conservare i dati storici o inattivi nel database di Adobe Campaign (esportazione e pulizia).
+* Non conservare i dati storici o inattivi nel database Adobe Campaign (esportazione e pulizia).
 
 Ecco un esempio:
 
