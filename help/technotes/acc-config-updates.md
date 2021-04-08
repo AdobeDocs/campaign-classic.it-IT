@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1107'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,6 @@ L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio
 
 * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
 * Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
-* Campaign versione 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
 * Campaign versione 20.2.5. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 ### API del provider APN basato su HTTP/2
 
-Il servizio APN (Apple Push Notification Service) non supporterà più il protocollo binario legacy a partire dal **31 marzo 2021**. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
+A partire dal **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sei interessato?**
 
@@ -151,7 +150,7 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione. [Sc
 
 ### Aggiornamenti dei certificati principali di APN
 
-Il 29 marzo 2021, un aggiornamento dell’infrastruttura APN (Apple Push Notification Service) interesserà il canale Adobe Campaign Classic iOS. Una modifica alla configurazione del sistema operativo è **obbligatoria** per evitare l&#39;interruzione del canale push iOS.
+Il 29 marzo 2021, un aggiornamento dell’infrastruttura APN (Apple Push Notification Service) ha interessato il canale iOS Adobe Campaign Classic. Una modifica alla configurazione del sistema operativo è **obbligatoria** per evitare l&#39;interruzione del canale push iOS.
 
 Ulteriori informazioni sulle modifiche APN [in questa pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 
