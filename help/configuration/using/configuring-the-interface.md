@@ -6,14 +6,14 @@ description: Configurazione dell’interfaccia
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione dell’interfaccia{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui file di tipo **navtree**, consulta [questa pagina](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+   >Per ulteriori informazioni sui file di tipo **navtree**, consulta [questa pagina](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    Nell&#39;esempio corrente, il file **navtree** deve essere basato sullo schema **cus:Singolo** e quindi avere il seguente modulo:
 
@@ -91,4 +91,3 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
    ```
 
 1. Salva la creazione.
-
