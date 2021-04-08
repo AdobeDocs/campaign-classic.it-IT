@@ -6,20 +6,30 @@ description: Scopri come configurare le aree di protezione
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
 
 
-# Definire le aree di protezione {#defining-security-zones}
+# Definire le aree di sicurezza {#defining-security-zones}
 
 Ogni operatore deve essere collegato a una zona per accedere a un’istanza e l’IP dell’operatore deve essere incluso negli indirizzi o nei set di indirizzi definiti nella zona di sicurezza. La configurazione dell’area di sicurezza viene eseguita nel file di configurazione del server Adobe Campaign.
 
-Gli operatori sono collegati a una zona di sicurezza dal relativo profilo nella console ( **[!UICONTROL Administration > Access management > Operators]** nodo ). Scopri come collegare le aree agli operatori Campaign in [questa sezione](#linking-a-security-zone-to-an-operator).
+Gli operatori sono collegati a una zona di sicurezza dal relativo profilo nella console, accessibile nel nodo **[!UICONTROL Administration > Access management > Operators]** . [Ulteriori informazioni](#linking-a-security-zone-to-an-operator).
+
+>[!NOTE]
+>
+>Questa procedura è limitata alle distribuzioni **on-premise**.
+>
+>In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), puoi utilizzare l’interfaccia self-service della zona di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>
+>Altri clienti **ibridi/in hosting** devono contattare Adobe per configurare le aree di protezione per la loro istanza.
+
 
 ## Creare aree di protezione {#creating-security-zones}
 
