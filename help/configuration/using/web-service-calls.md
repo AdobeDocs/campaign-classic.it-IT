@@ -6,14 +6,14 @@ description: Chiamate per servizi web
 audience: configuration
 content-type: reference
 topic-tags: api
+exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
-
 
 # Chiamate per servizi web{#web-service-calls}
 
@@ -188,7 +188,7 @@ La parte `<service>` descrive il servizio &quot;XtkQueryDef&quot; con il relativ
 
 ## Connettività {#connectivity}
 
-Adobe Campaign ha aumentato la sicurezza dei meccanismi di autenticazione introducendo aree di sicurezza (consulta il capitolo **Definizione delle aree di sicurezza** in [questa sezione](../../installation/using/security-zones.md)) e le impostazioni di gestione delle sessioni.
+Adobe Campaign ha aumentato la sicurezza dei meccanismi di autenticazione introducendo [aree di sicurezza](../../installation/using/security-zones.md) e le impostazioni di gestione delle sessioni.
 
 Sono disponibili due modalità di autenticazione:
 
