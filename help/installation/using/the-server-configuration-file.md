@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -2814,7 +2814,7 @@ Di seguito sono riportati i diversi parametri del nodo **trackinglogd**. Questa 
 
 Ecco i diversi parametri del nodo **web**. Questa è la configurazione del modulo Web.
 
-Per ulteriori informazioni, consulta questa [sezione](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Per ulteriori informazioni, consulta questa [sezione](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Porta di controllo di ascolto Tomcat: fare riferimento a <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configurazione di Tomcat</a>.<br /> </td> 
+   <td> Porta di controllo di ascolto Tomcat: fare riferimento a <a href="configure-tomcat.md" target="_blank">Configura Tomcat</a>.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Porta di ascolto HTTP Tomcat: fare riferimento a <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configurazione di Tomcat</a>.<br /> </td> 
+   <td> Porta di ascolto HTTP Tomcat: fare riferimento a <a href="configure-tomcat.md" target="_blank">Configura Tomcat</a>.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ Per ulteriori informazioni, consulta [Sicurezza della pagina dinamica e relè](.
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL della pagina di destinazione: fare riferimento a <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Configurazione di Tomcat</a>.<br /> </td> 
+   <td> URL della pagina di destinazione: fare riferimento a <a href="configure-tomcat.md" target="_blank">Configura Tomcat</a>.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
