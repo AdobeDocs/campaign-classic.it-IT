@@ -6,14 +6,14 @@ description: Ulteriori informazioni sulle best practice principali per la config
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione server web {#web-server-configuration}
 
@@ -58,7 +58,7 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
    * Firma server **Off**
    * Token server **Prod**
 
-   **In IIS**  (consulta la  [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), esegui la seguente configurazione:
+   **In IIS**, esegui la seguente configurazione:
 
    * Installa **URLScan**.
    * Modifica il file **Urlscan.ini** per avere **RemoveServerHeader=1**
@@ -66,7 +66,7 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
 
 * Limita le dimensioni della query per impedire il caricamento di file importanti:
 
-   **Su Apache**  (consulta la  [documentazione](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody)), aggiungi la direttiva  **** LimitRequestBodyDirective (dimensione in byte) nella directory / .
+   **Su Apache**, aggiungi la direttiva  **** LimitRequestBodyDirective (dimensione in byte) nella directory /.
 
    ```
    <Directory />
