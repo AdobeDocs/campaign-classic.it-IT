@@ -4,16 +4,16 @@ product: campaign
 title: Note sulla versione 18.10 di Campaign
 description: Note sulla versione per Campaign 18.10
 feature: Panoramica
-role: Professionista
-level: Principiante
+role: Business Practitioner
+level: Beginner
+exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2372'
 ht-degree: 7%
 
 ---
-
 
 # Versione 18.10{#release-18-10}
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Miglioramenti**
 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
 * Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 sono ora supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
-* Quando crei una connessione SFTP, ora puoi utilizzare l’autenticazione proxy. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration) (NEO-9868)
+* Quando crei una connessione SFTP, ora puoi utilizzare l’autenticazione proxy. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../installation/using/file-res-management.md) (NEO-9868)
 * L’opzione **Formula di calcolo della data** è ora disponibile nelle proprietà di consegna quando crei una singola consegna utilizzando il modello di consegna della direct mailing. (NEO-9792)
 * La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e le applicazioni web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot;.
 * L’importazione di risorse condivise Adobe Marketing Cloud in una consegna o in una pagina di destinazione è stata migliorata in termini di sicurezza e prestazioni.
@@ -240,4 +240,3 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 * È stato corretto un errore di Oracle che si verificava quando si salvava una nuova composizione di consegna dopo aver selezionato un elemento di uno schema specifico **in base a una visualizzazione SQL**. (NEO-11682)
 * È stato risolto un problema che causava la generazione di file di rifiuto contenenti falsi positivi durante l’elaborazione di un file zip contenente un .csv tramite un’attività di caricamento file tramite l’opzione Decompression.
 * xtkjoblog viene eliminato dalla pulizia.
-
