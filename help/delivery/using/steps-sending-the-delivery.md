@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
 
    >[!NOTE]
    >
-   >L’utilizzo di questa opzione non è consigliato quando si installa utilizzando mid-sourcing per non chiamare mta. Per ulteriori informazioni sulla configurazione di un server SMTP, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#delivery-settings).
+   >L’utilizzo di questa opzione non è consigliato quando si installa utilizzando mid-sourcing per non chiamare mta. Per ulteriori informazioni sulla configurazione di un server SMTP, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
 
 * **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 
