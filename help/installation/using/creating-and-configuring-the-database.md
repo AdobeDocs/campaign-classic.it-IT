@@ -6,46 +6,46 @@ description: Creazione e configurazione del database
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
-
 # Creazione e configurazione del database{#creating-and-configuring-the-database}
 
-Quando create un database,  Adobe Campaign offre due opzioni diverse:
+Quando crei un database, Adobe Campaign fornisce due opzioni diverse:
 
-1. Creazione o riciclo di un database: scegliete questa opzione se desiderate creare un nuovo database o riutilizzarne uno esistente. Fare riferimento al [Caso 1: Creazione/riciclo di un database](#case-1--creating-recycling-a-database).
-1. Utilizzo di un database esistente: scegliete questa opzione se l’amministratore ha già creato un database vuoto e desiderate usarlo; o per estendere la struttura di un database esistente. Fare riferimento alla [Caso 2: Utilizzo di un database esistente](#case-2--using-an-existing-database).
+1. Creazione o riciclo di un database: scegliere questa opzione se si desidera creare un nuovo database o riutilizzarne uno esistente. Fare riferimento al [Caso 1: Creazione/riciclo di un database](#case-1--creating-recycling-a-database).
+1. Utilizzo di un database esistente: scegliere questa opzione se l&#39;amministratore ha già creato un database vuoto e desideri utilizzarlo; o di estendere la struttura di un database esistente. Fare riferimento al [caso 2: Utilizzo di un database esistente](#case-2--using-an-existing-database).
 
 I passaggi di configurazione sono descritti di seguito.
 
 >[!CAUTION]
 >
->I nomi di database, utenti e schemi non devono iniziare con un numero o includere caratteri speciali.
+>I nomi dei database, degli utenti e degli schemi non devono iniziare con un numero o includere caratteri speciali.
 >
->Solo l&#39;identificatore **internal** può eseguire queste operazioni. Per ulteriori informazioni, fare riferimento a [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Solo l&#39;identificatore **internal** può eseguire queste operazioni. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Caso 1: Creazione/riciclo di un database {#case-1--creating-recycling-a-database}
 
-Di seguito sono illustrati i passaggi per la creazione di un database o il riciclaggio di una base esistente. Alcune configurazioni dipendono dal motore di database utilizzato:
+Di seguito sono illustrati i passaggi per la creazione di un database o per il riciclaggio di una base esistente. Alcune configurazioni dipendono dal motore di database utilizzato:
 
 Sono previsti i seguenti passaggi:
 
-* [Passaggio 1 - Selezione del motore](#step-1---selecting-the-database-engine) del database
-* [Passaggio 2 - Connessione al server](#step-2---connecting-to-the-server),
+* [Passaggio 1: selezionare il motore](#step-1---selecting-the-database-engine) di database,
+* [Passaggio 2: connessione al server](#step-2---connecting-to-the-server),
 * [Fase 3 - Connessione e caratteristiche della banca dati](#step-3---connection-and-characteristics-of-the-database),
-* [Passo 4 - Pacchetti da installare](#step-4---packages-to-install),
-* [Passaggio 5 - Passaggi](#step-5---creation-steps) di creazione,
-* [Passaggio 6 - Creazione del database](#step-6---creating-the-database).
+* [Passaggio 4 - Pacchetti da installare](#step-4---packages-to-install),
+* [Passaggio 5: fasi](#step-5---creation-steps) di creazione,
+* [Passaggio 6: creazione del database](#step-6---creating-the-database).
 
-### Passaggio 1 - Selezione del motore del database {#step-1---selecting-the-database-engine}
+### Passaggio 1 - Selezione del motore di database {#step-1---selecting-the-database-engine}
 
-Selezionare il motore del database tra quelli presenti nell&#39;elenco a discesa.
+Selezionare il motore di database tra quelli nell&#39;elenco a discesa.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
@@ -57,97 +57,97 @@ Identificare il server e scegliere il tipo di operazione da eseguire. In questo 
 
 A seconda del motore di database selezionato, le informazioni di identificazione del server possono variare.
 
-* Per un motore **Oracle**, compilare il **nome TNS** definito per il server applicazioni.
+* Per un motore **Oracle**, compilare il **nome TNS** definito per l&#39;application server.
 * Per un motore **PostgreSQL** o **DB2**, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server dell&#39;applicazione per accedere al server del database.
-* Per un motore **Microsoft SQL Server**, è necessario definire: il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database: **DNS** o **DNS`\<instance>`** (modalità di istanza),
+* Per un motore **Microsoft SQL Server**, è necessario definire: nome DNS (o indirizzo IP) definito nel server dell&#39;applicazione per accedere al server del database: **DNS** o **DNS`\<instance>`** (modalità istanza),
 
    >[!CAUTION]
    >
-   > A partire dalla versione 20.3, l&#39;autenticazione di Windows NT è disattivata. **[!UICONTROL SQL Server authentication]** è ora l&#39;unica modalità di autenticazione disponibile per Microsoft SQL Server. [Leggi tutto](../../rn/using/deprecated-features.md)
+   > A partire dalla versione 20.3, l&#39;autenticazione Windows NT è disattivata. **[!UICONTROL SQL Server authentication]** è ora l&#39;unica modalità di autenticazione disponibile per Microsoft SQL Server. [Leggi tutto](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Passaggio 2 - Connessione al server {#step-2---connecting-to-the-server}
 
-Nella finestra **[!UICONTROL Server access]**, definire l&#39;accesso al server del database.
+Nella finestra **[!UICONTROL Server access]**, definisci l’accesso al server di database.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
-A tal fine, immettete il nome e la password di un account **del sistema di amministrazione** che dispone dell&#39;autorizzazione per accedere ai database, ovvero:
+A questo scopo, immetti il nome e la password di un **account di sistema di amministrazione** che dispone dell&#39;autorizzazione per accedere ai database, ovvero:
 
-* **** per un database Oracle ,
-* **per** un database di Microsoft SQL Server,
+* **** per un database di Oracle,
+* **** salvare un database di Microsoft SQL Server,
 * **** postgresper un database PostgreSQL,
 * **db2inst1** per un database DB2.
 
 ### Passaggio 3 - Connessione e caratteristiche del database {#step-3---connection-and-characteristics-of-the-database}
 
-La procedura seguente consente di configurare le impostazioni per l’accesso al database.
+Il passaggio seguente ti consente di configurare le impostazioni per l’accesso al database.
 
 ![](assets/s_ncs_install_db_oracle_creation03.png)
 
 È necessario definire le seguenti impostazioni:
 
-* Specificate il nome del database da creare.
+* Specificare il nome del database da creare.
 
    >[!NOTE]
    >
    >Per un database DB2, il nome del database non deve superare gli 8 caratteri.
 
 * Immettere la password dell&#39;account collegato al database.
-* Specificate se il database deve essere in Unicode o meno.
+* Indicare se il database deve essere in Unicode o meno.
 
-   L&#39;opzione **[!UICONTROL Unicode database]** consente di memorizzare tutti i tipi di caratteri in Unicode, indipendentemente dalla lingua.
+   L’opzione **[!UICONTROL Unicode database]** consente di memorizzare tutti i tipi di caratteri in Unicode, indipendentemente dalla lingua.
 
    >[!NOTE]
    >
-   >Con un database Oracle , l&#39;opzione **[!UICONTROL Unicode storage]** consente di utilizzare i campi di tipo **NCLOB** e **NVARCHAR**.
+   >Con un database di Oracle, l&#39;opzione **[!UICONTROL Unicode storage]** consente di utilizzare i campi di tipo **NCLOB** e **NVARCHAR**.
    > 
-   >Se non si seleziona questa opzione, il set di caratteri (charset) del database Oracle  deve abilitare la memorizzazione dei dati in tutte le lingue (SI consiglia AL32UTF8).
+   >Se non si seleziona questa opzione, il set di caratteri (charset) del database Oracle deve abilitare l’archiviazione dei dati in tutte le lingue (AL32UTF8 è consigliato).
 
-* Scegliete un fuso orario per il database e specificate se deve essere in UTC (se disponibile).
+* Scegliere un fuso orario per il database e specificare se si desidera che sia in UTC (se disponibile).
 
-   Per ulteriori informazioni, consultare [Gestione del fuso orario](../../installation/using/time-zone-management.md).
+   Per ulteriori informazioni, consulta [Gestione del fuso orario](../../installation/using/time-zone-management.md).
 
 ### Passaggio 4 - Pacchetti da installare {#step-4---packages-to-install}
 
-Selezionate i pacchetti da installare.
+Selezionare i pacchetti da installare.
 
-Fate riferimento al contratto di licenza per verificare quali soluzioni e opzioni sono autorizzate a installare, ad esempio &quot;Interazione&quot; o &quot;Social Marketing&quot;.
+Fai riferimento al contratto di licenza per verificare quali soluzioni e opzioni hai diritto di installare, ad esempio &quot;Interazione&quot; o &quot;Social Marketing&quot;.
 
 ![](assets/s_ncs_install_modules.png)
 
-### Passaggio 5 - Passaggi di creazione {#step-5---creation-steps}
+### Passaggio 5: passaggi di creazione {#step-5---creation-steps}
 
 La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificare lo script SQL utilizzato per creare le tabelle.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Per un database Oracle , Microsoft SQL Server o PostgreSQL, l&#39;amministratore può anche definire i **parametri di storage** da utilizzare per la creazione di oggetti di database.
+* Ad Oracle, un database Microsoft SQL Server o PostgreSQL, l&#39;amministratore può anche definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
 
-   Questi parametri ricevono i nomi esatti della tablespace (avviso: con distinzione tra maiuscole e minuscole). Sono rispettivamente memorizzati nel nodo **[!UICONTROL Administration > Platform > Options]** nelle seguenti opzioni (vedere [questa sezione](../../installation/using/configuring-campaign-options.md#database)):
+   Questi parametri ricevono i nomi esatti della tablespace (avviso: sensibile a maiuscole e minuscole). Sono rispettivamente memorizzati nel nodo **[!UICONTROL Administration > Platform > Options]** nelle seguenti opzioni (vedi [questa sezione](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: tabelle utente basate su uno schema
-   * **WdbcOptions_TableSpaceIndex**: indice di tabelle utente basate su uno schema
-   * **WdbcOptions_TableSpaceWork**: tabelle di lavoro senza schema
+   * **WdbcOptions_TableSpaceIndex**: indice delle tabelle utente basato su uno schema
+   * **WdbcOptions_TableSpaceWork**: tabelle di lavoro prive di schema
    * **WdbcOptions_TableSpaceWorkIndex**: indice di tabelle di lavoro senza schema
 
-* Per un database Oracle , l&#39;utente Adobe Campaign  deve avere accesso alle librerie Oracle , in genere come membro del gruppo **oinstall**.
-* L&#39;opzione **[!UICONTROL Set or change the administrator password]** consente di inserire la password collegata all&#39;operatore Adobe Campaign  con diritti di amministratore.
+* Per un database di Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie di Oracli, in genere come membro del gruppo **oinstall** .
+* L’opzione **[!UICONTROL Set or change the administrator password]** ti consente di inserire la password collegata all’operatore Adobe Campaign con diritti di amministratore.
 
-   È consigliabile definire una password amministratore  account Adobe Campaign a scopo di sicurezza.
+   È consigliabile definire una password per l’amministratore di un account Adobe Campaign a scopo di sicurezza.
 
 ### Passaggio 6 - Creazione del database {#step-6---creating-the-database}
 
-La fase finale della procedura guidata consente di creare il database. Fare clic su **[!UICONTROL Start]** per confermare.
+La fase finale della procedura guidata consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
-Una volta creato il database, potete riconnettervi per finalizzare la configurazione dell&#39;istanza.
+Una volta creato il database, puoi riconnettersi per finalizzare la configurazione dell&#39;istanza.
 
-È ora necessario avviare la procedura guidata di distribuzione per completare la configurazione dell&#39;istanza. Fare riferimento a [Installazione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Ora è necessario avviare la procedura guidata di distribuzione per completare la configurazione dell’istanza. Fare riferimento a [Procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign .
+Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
 
 Esempio di configurazione di Microsoft SQL Server nel database base61 collegato all&#39;account &#39;campaign&#39; con password crittografata:
 
@@ -157,40 +157,40 @@ Esempio di configurazione di Microsoft SQL Server nel database base61 collegato 
 
 ## Caso 2: Utilizzo di un database esistente {#case-2--using-an-existing-database}
 
-Il database, così come l&#39;utente, devono essere stati creati dall&#39;amministratore del database e i diritti di accesso devono essere stati configurati correttamente.
+Il database e l&#39;utente devono essere stati creati dall&#39;amministratore del database e i diritti di accesso devono essere configurati correttamente.
 
-Ad esempio, per un database Oracle , i diritti minimi richiesti sono: CONCEDERE CONNECT, RISORSE E TABLESPACE ILLIMITATI.
+Ad Oracle, per un database di , i diritti minimi richiesti sono: CONCEDERE CONNECT, RISORSE E TABLESPACE ILLIMITATO.
 
 Per utilizzare un database esistente, procedere come segue:
 
-* [Passaggio 1 - Scelta del motore](#step-1---choosing-the-database-engine) del database,
-* [Passaggio 2 - Impostazioni](#step-2---database-connection-settings) di connessione del database,
-* [Passo 3 - Pacchetti da installare](#step-3---packages-to-install),
-* [Passaggio 4 - Passaggi](#step-4---creation-steps) di creazione,
-* [Passaggio 5 - Creazione del database](#step-5---creating-the-database).
+* [Passaggio 1: scelta del motore](#step-1---choosing-the-database-engine) di database,
+* [Passaggio 2 - Impostazioni](#step-2---database-connection-settings) di connessione al database,
+* [Passaggio 3 - Pacchetti da installare](#step-3---packages-to-install),
+* [Passaggio 4: fasi](#step-4---creation-steps) di creazione,
+* [Passaggio 5: creazione del database](#step-5---creating-the-database).
 
-### Passaggio 1 - Scelta del motore del database {#step-1---choosing-the-database-engine}
+### Passaggio 1 - Scelta del motore di database {#step-1---choosing-the-database-engine}
 
-Scegliete il motore del database dall&#39;elenco a discesa.
+Scegliere il motore di database dall&#39;elenco a discesa.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Identificare il server e scegliere il tipo di operazione da eseguire. In questo caso, **[!UICONTROL Use an existing database]**.
+Identificare il server e scegliere il tipo di operazione che si desidera eseguire. In questo caso, **[!UICONTROL Use an existing database]**.
 
 ![](assets/s_ncs_install_db_oracle_exists_01.png)
 
 A seconda del motore di database selezionato, le informazioni di identificazione del server possono variare.
 
-* Per un motore **Oracle**, compilare il **nome TNS** definito per il server applicazioni.
+* Per un motore **Oracle**, compilare il **nome TNS** definito per l&#39;application server.
 * Per un motore **PostgreSQL** o **DB2**, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server dell&#39;applicazione per accedere al server del database.
 * Per un motore **Microsoft SQL Server**, è necessario definire:
 
-   1. il nome DNS (o indirizzo IP) definito sul server dell’applicazione per accedere al server del database,
+   1. il nome DNS (o indirizzo IP) definito sul server dell&#39;applicazione per accedere al server del database,
    1. metodo di protezione utilizzato per accedere a Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** o **[!UICONTROL Windows NT authentication]**.
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### Passaggio 2 - Impostazioni connessione database {#step-2---database-connection-settings}
+### Passaggio 2: impostazioni di connessione al database {#step-2---database-connection-settings}
 
 Nella finestra **[!UICONTROL Database]**, definire le impostazioni di connessione al database.
 
@@ -199,50 +199,49 @@ Nella finestra **[!UICONTROL Database]**, definire le impostazioni di connession
 È necessario definire le seguenti impostazioni:
 
 * Immettere il nome del database da utilizzare,
-* Immettere il nome e la password dell&#39;account associato al database,
+* Immettere il nome e la password dell&#39;account associato a questo database,
 
    >[!NOTE]
    >
-   >Accertatevi che il nome dello schema e il nome utente corrispondano. Il modo consigliato per creare il database è tramite il client della console della campagna.
-   >Per un database Oracle , non è necessario immettere il nome account.
+   >Assicurati che il nome dello schema e il nome utente corrispondano. Il modo consigliato per creare il database è tramite il client della console di Campaign.
+   >Per un database di Oracle, non è necessario immettere il nome dell&#39;account.
 
-* Specificate se il database deve essere Unicode o meno.
+* Indicare se il database deve essere Unicode o meno.
 
 ### Passaggio 3 - Pacchetti da installare {#step-3---packages-to-install}
 
-Selezionate i pacchetti da installare.
+Selezionare i pacchetti da installare.
 
-Fate riferimento al contratto di licenza per verificare quali soluzioni e opzioni avete diritto di installare, ad esempio &quot;Interazione&quot; o &quot;Lead&quot;.
+Fai riferimento al contratto di licenza per verificare quali soluzioni e opzioni hai diritto di installare, ad esempio &quot;Interazione&quot; o &quot;Lead&quot;.
 
 ![](assets/s_ncs_install_modules.png)
 
-### Passaggio 4 - Passaggi di creazione {#step-4---creation-steps}
+### Passaggio 4: passaggi di creazione {#step-4---creation-steps}
 
 La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificare lo script SQL utilizzato per creare le tabelle.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Per  database Oracle, Microsoft SQL Server o PostgreSQL, l&#39;amministratore può definire i **parametri di storage** da utilizzare per la creazione di oggetti di database.
-* Per un database Oracle , l&#39;utente Adobe Campaign  deve avere accesso alle librerie Oracle , in genere come membro del gruppo **oinstall**.
-* L&#39;opzione **[!UICONTROL Set or change the administrator password]** consente di inserire la password collegata all&#39;operatore Adobe Campaign  con diritti di amministratore.
+* Ad Oracle, i database Microsoft SQL Server o PostgreSQL, l&#39;amministratore può definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
+* Per un database di Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie di Oracli, in genere come membro del gruppo **oinstall** .
+* L’opzione **[!UICONTROL Set or change the administrator password]** ti consente di inserire la password collegata all’operatore Adobe Campaign con diritti di amministratore.
 
-   È consigliabile definire una password amministratore  account Adobe Campaign a scopo di sicurezza.
+   È consigliabile definire una password per l’amministratore di un account Adobe Campaign a scopo di sicurezza.
 
 ### Passaggio 5 - Creazione del database {#step-5---creating-the-database}
 
-La fase finale della procedura guidata consente di creare il database. Fare clic su **[!UICONTROL Start]** per confermare.
+La fase finale della procedura guidata consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
-Una volta completata la creazione del database, potete riconnettervi per finalizzare la configurazione dell&#39;istanza.
+Una volta completata la creazione del database, puoi riconnettersi per finalizzare la configurazione dell&#39;istanza.
 
-È ora necessario avviare la procedura guidata di distribuzione per completare la configurazione dell&#39;istanza. Fare riferimento a [Installazione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Ora è necessario avviare la procedura guidata di distribuzione per completare la configurazione dell’istanza. Fare riferimento a [Procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign .
+Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
 
 Esempio di configurazione di Microsoft SQL Server nel database base61 collegato all&#39;account &#39;campaign&#39; con password crittografata:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
