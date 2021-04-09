@@ -6,14 +6,14 @@ description: Distribuzione autonoma
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 1%
+source-wordcount: '1086'
+ht-degree: 2%
 
 ---
-
 
 # Distribuzione autonoma{#standalone-deployment}
 
@@ -112,7 +112,7 @@ Applica i seguenti passaggi:
    nlserver config -internalpassword
    ```
 
-   Per ulteriori informazioni, consulta [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 1. Crea l’istanza **demo** con le maschere DNS per il tracciamento (in questo caso, **tracking.campaign.net**) e l’accesso alle console client (in questo caso, **console.campaign.net**). Ci sono due modi per farlo:
 
@@ -120,7 +120,7 @@ Applica i seguenti passaggi:
 
       ![](assets/install_create_new_connexion.png)
 
-      Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+      Per ulteriori informazioni, consulta [Creare un’istanza e accedi](../../installation/using/creating-an-instance-and-logging-on.md).
 
       o
 
@@ -150,7 +150,7 @@ Applica i seguenti passaggi:
    </serverconf>
    ```
 
-   Per ulteriori informazioni, consulta [Abilitazione dei processi](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Modifica il file **serverConf.xml** e specifica il dominio di consegna, quindi specifica gli indirizzi IP (o host) dei server DNS utilizzati dal modulo MTA per rispondere alle query DNS di tipo MX.
 
@@ -162,7 +162,7 @@ Applica i seguenti passaggi:
    >
    >Il parametro **nameServers** viene utilizzato solo in Windows.
 
-   Per ulteriori informazioni, consulta [Configurazione del server Campaign](../../installation/using/campaign-server-configuration.md).
+   Per ulteriori informazioni, consulta [Configurazione del server Campaign](../../installation/using/configuring-campaign-server.md).
 
 1. Copia il programma di installazione della console client (**setup-client-7.XX**, **YYYY.exe** per v7 o **setup-client-6.XX**, **YYYY.exe** per v6.1) in **/datakit/nl/jg/s cartella jsp**. [Ulteriori informazioni](../../installation/using/client-console-availability-for-windows.md).
 
@@ -213,7 +213,7 @@ Applica i seguenti passaggi:
 
 1. Avvia la console del client Adobe Campaign (dalla pagina di download precedente o avviata direttamente sul server per un&#39;installazione di Windows), imposta l&#39;URL della connessione al server su https://console.campaign.net e connettiti utilizzando l&#39;accesso **internal** .
 
-   Fai riferimento a [Creazione di un&#39;istanza e accesso a](../../installation/using/creating-an-instance-and-logging-on.md) e [Identificatore interno](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Fare riferimento a [questa pagina](../../installation/using/creating-an-instance-and-logging-on.md) e [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
    La procedura guidata di creazione del database viene visualizzata al primo accesso:
 
@@ -244,4 +244,3 @@ Applica i seguenti passaggi:
    * Accesso da: Fornire i due URL per report, moduli web e pagine mirror.
 
       ![](assets/d_ncs_install_web_url.png)
-
