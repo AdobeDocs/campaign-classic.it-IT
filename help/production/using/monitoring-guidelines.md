@@ -6,14 +6,14 @@ description: Scopri le linee guida e le best practice per monitorare l’istanza
 audience: production
 content-type: reference
 topic-tags: introduction
+exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 7%
+source-wordcount: '770'
+ht-degree: 18%
 
 ---
-
 
 # Linee guida per il monitoraggio {#monitoring-guidelines}
 
@@ -44,19 +44,19 @@ Sono disponibili ulteriori modi per monitorare i diversi processi di Campaign. F
 
 **Strumenti di monitoraggio automatici**
 
-Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanza. Ad esempio, puoi impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML, ecc. [Fai clic ](../../production/using/monitoring-processes.md#automatic-monitoring) qui per ulteriori informazioni.
+Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanza. Ad esempio, puoi impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML, ecc. Per ulteriori informazioni, [fai clic qui](../../production/using/monitoring-processes.md#automatic-monitoring).
 
 **Audit trail**
 
-La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. [Fai clic ](../../production/using/audit-trail.md) qui per ulteriori informazioni.
+La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. Per ulteriori informazioni, [fai clic qui](../../production/using/audit-trail.md).
 
 **Pannello di controllo Campaign**
 
-Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. [Fai clic ](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html) qui per ulteriori informazioni.
+Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. Per ulteriori informazioni, [fai clic qui](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html).
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all&#39;amministratore l&#39;accesso a un utente sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
 >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
@@ -66,7 +66,7 @@ Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell�
 
 **Workflow HeatMap**
 
-Il Workflow HeatMap ha fornito una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. [Fai clic ](../../workflow/using/heatmap.md) qui per ulteriori informazioni.
+Il Workflow HeatMap ha fornito una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, [fai clic qui](../../workflow/using/heatmap.md).
 
 **Audit trail**
 
@@ -74,11 +74,11 @@ La traccia di audit consente di visualizzare tutte le modifiche apportate ai flu
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. [Fai clic ](../../production/using/workflow-execution.md) qui per ulteriori informazioni
+È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. Per ulteriori informazioni, [fai clic qui](../../production/using/workflow-execution.md)
 
 **Monitoraggio dello stato del flusso di lavoro**
 
-Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. [Fai clic ](../../workflow/using/supervising-workflows.md) qui per ulteriori informazioni.
+Oltre alla mappa di calore, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. Per ulteriori informazioni, [fai clic qui](../../workflow/using/supervising-workflows.md).
 
 **Linee guida generali**
 
@@ -111,23 +111,23 @@ Risoluzione dei problemi di consegnaÈ possibile eseguire azioni specifiche quan
 
 **Flusso di lavoro di pulizia del database**
 
-Il flusso di lavoro di pulizia del database consente di eliminare i dati obsoleti dal database. Si consiglia di evitare la crescita esponenziale del database. [Fai clic ](../../production/using/database-cleanup-workflow.md) qui per ulteriori informazioni.
+Il flusso di lavoro di pulizia del database consente di eliminare i dati obsoleti dal database. Si consiglia di evitare la crescita esponenziale del database. Per ulteriori informazioni, [fai clic qui](../../production/using/database-cleanup-workflow.md).
 
 **Risoluzione dei problemi di prestazioni del database**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con le prestazioni del database. [Fai clic ](../../production/using/database-performances.md) qui per ulteriori informazioni.
+È possibile eseguire azioni specifiche quando si verificano problemi con le prestazioni del database. Per ulteriori informazioni, [fai clic qui](../../production/using/database-performances.md).
 
 **Manutenzione del database**
 
 *solo modelli di hosting on-premise e ibridi*
 
-Si consiglia di eseguire regolarmente la manutenzione del database per evitare un eccessivo consumo di spazio su disco, con conseguente impatto sull&#39;accesso al database. [Fai clic ](../../production/using/recommendations.md) qui per ulteriori informazioni.
+Si consiglia di eseguire regolarmente la manutenzione del database per evitare un eccessivo consumo di spazio su disco, con conseguente impatto sull&#39;accesso al database. Per ulteriori informazioni, [fai clic qui](../../production/using/recommendations.md).
 
 **Backup e ripristino**
 
 *solo modelli di hosting on-premise e ibridi*
 
-Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o relativi al sistema) su una macchina. [Fai clic ](../../production/using/backup.md) qui per ulteriori informazioni. La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
+Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o relativi al sistema) su una macchina. Per ulteriori informazioni, [fai clic qui. ](../../production/using/backup.md) La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
 
 ## Principi tecnici Campaign Classic {#campaign-classic-technical-principles}
 
@@ -142,7 +142,7 @@ Le risorse tecniche sono disponibili nella documentazione di Campaign Classic. �
 
 *Solo modelli di hosting on-premise e ibridi*
 
-* [Configurazioni server obbligatorie](../../installation/using/campaign-server-configuration.md)
+* [Configurazioni server](../../installation/using/configuring-campaign-server.md)
 * [Configurazione del file Serverconf.xml](../../installation/using/the-server-configuration-file.md)
 * [Configurazione del server per il recapito messaggi](../../installation/using/email-deliverability.md)
 * [Righe di comando per creare un&#39;istanza e dichiarare un database](../../installation/using/command-lines.md)
