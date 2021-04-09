@@ -6,14 +6,14 @@ description: Configurazioni generali
 audience: migration
 content-type: reference
 topic-tags: configuration
+exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # Configurazioni generali{#general-configurations}
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->La password **interna** deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/campaign-server-configuration.md#internal-identifier) e [questa sezione](../../platform/using/access-management.md).
+>La password **interna** deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier) e [questa sezione](../../platform/using/access-management.md).
 
 ### Nuove funzioni nella versione v7 {#new-features-in-v7}
 
@@ -473,7 +473,7 @@ Se si sceglie di risolvere manualmente il conflitto, procedere come segue:
 
 ## Tomcat {#tomcat}
 
-Il server Tomcat integrato in Adobe Campaign v7 è stato modificato (Tomcat 7). Anche la sua cartella di installazione (tomcat-6) è quindi cambiata (tomcat 7). Dopo l&#39;aggiornamento, assicurati di verificare che i percorsi si colleghino alla cartella aggiornata (nel file **[!UICONTROL serverConf.xml]** ):
+Il server Tomcat integrato in Adobe Campaign v7 è stato modificato. Anche la sua cartella di installazione (tomcat-6) è quindi cambiata (tomcat 7). Dopo l&#39;aggiornamento, assicurati di verificare che i percorsi si colleghino alla cartella aggiornata (nel file **[!UICONTROL serverConf.xml]** ):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
