@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -127,7 +127,7 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
 * La consegna potrebbe utilizzare un’affinità non configurata sul server di invio.
 
-   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#delivery-settings).
+   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
 
 * Quando sono in esecuzione troppe campagne, lo stato di consegna rimane in sospeso.
 
