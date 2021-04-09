@@ -6,14 +6,14 @@ description: Note sulla versione di Campaign 19.2
 feature: null
 role: null
 level: null
+exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
-
 
 # Versione 19.2{#release-19-2}
 
@@ -27,13 +27,13 @@ _22 marzo 2021_
 
 >[!NOTE]
 >
-> Connettiti a [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per scaricare la nuova versione. Scopri come proporre l’aggiornamento della console a tutti gli utenti finali [in questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _23 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.
    >
    > 
 * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
@@ -138,7 +138,7 @@ _2 dicembre 2019_
    * L&#39;opzione **XtkCleanup_NoStats** è stata migliorata per PostgreSQL per controllare meglio il comportamento del passaggio di ottimizzazione dello storage del flusso di lavoro di pulizia del database. [Leggi tutto](../../production/using/database-cleanup-workflow.md#statistics-update)
 * È stato aggiunto un meccanismo di blocco dell’account all’API **logon()** . Impedisce ulteriori tentativi di accesso dopo un certo numero di tentativi di accesso consecutivi non riusciti entro un intervallo di tempo specificato.
 * Una nuova opzione **Maximum personalization run time** nelle proprietà di consegna ti consente di definire un periodo di timeout per il tempo di esecuzione della personalizzazione, al fine di evitare che la fase di personalizzazione venga eseguita troppo a lungo. [Leggi tutto](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* È stata aggiunta l’opzione **protocollo ftp** per consentire l’utilizzo di una configurazione proxy per le connessioni SFTP. [Leggi tutto](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* È stata aggiunta l’opzione **protocollo ftp** per consentire l’utilizzo di una configurazione proxy per le connessioni SFTP. [Leggi tutto](../../installation/using/file-res-management.md)
 * Nuovo supporto dell’accesso proxy a un server esterno SFTP per ambienti on-premise.
 * È stata aggiunta una protezioni specifica per impedire l’installazione di pacchetti non compatibili con l’istanza Campaign. [Leggi tutto](../../installation/using/installing-campaign-standard-packages.md)
 
@@ -152,7 +152,7 @@ Verifica di disporre delle versioni supportate di tutti i sistemi elencati nella
 
 _SDK per Campaign Mobile_
 
-È ora disponibile la build 1.0.26 dell’SDK per iOS. In questa nuova build è stato aggiunto il supporto di iOS 13. Questa nuova versione supporta ora la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell&#39;SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+È ora disponibile la build 1.0.26 dell’SDK per iOS. In questa nuova build è stato aggiunto il supporto di iOS 13. Questa nuova versione supporta ora la priorità delle notifiche e il nuovo processo di gestione dei token di registrazione per le notifiche push iOS 13. Se esegui applicazioni su una versione precedente dell&#39;SDK, devi ricompilare le applicazioni con il nuovo SDK. Per ottenere l&#39;SDK, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Patch**
 
@@ -185,5 +185,3 @@ _SDK per Campaign Mobile_
 * È stato risolto un problema che si verificava all’accesso ai modelli Predictive. (NEO-19713)
 * È stato risolto un problema che interessava il campionamento casuale nell’attività del flusso di lavoro **Split** con database FDA di Hadoop. (NEO-16636)
 * È stata corretta una regressione sull’Oracle che causava la visualizzazione di alcune funzioni come non valide dopo l’aggiornamento. (NEO-12759)
-
-
