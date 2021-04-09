@@ -6,76 +6,79 @@ description: Parametri avanzati
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
 
-
 # Parametri avanzati{#advanced-parameters}
 
-La schermata delle proprietà di un&#39;attività ha una scheda **[!UICONTROL Advanced]** che consente di definire un comportamento in caso di errori, il periodo di esecuzione dell&#39;attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
+La schermata delle proprietà di un’attività dispone di una scheda **[!UICONTROL Advanced]** che consente di definire un comportamento in caso di errori, il periodo di esecuzione dell’attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
 
-* una versione semplificata (ad esempio per le attività **[!UICONTROL Start]** e **[!UICONTROL End]**)
+* una versione semplificata (ad esempio per le attività **[!UICONTROL Start]** e **[!UICONTROL End]** )
 
    ![](assets/wf-advanced-basic.png)
 
-* una versione più dettagliata (ad esempio per l&#39;attività **[!UICONTROL Query]**)
+* una versione più dettagliata (ad esempio, per l’ attività **[!UICONTROL Query]** )
 
    ![](assets/wf-advanced-full.png)
 
-I campi da inserire nella scheda **[!UICONTROL Advanced]** sono descritti in dettaglio nelle sezioni seguenti.
+I campi da immettere nella scheda **[!UICONTROL Advanced]** sono descritti in dettaglio nelle sezioni seguenti.
 
 ## Nome {#name}
 
-Questo campo contiene il nome interno dell&#39;attività.
+Questo campo contiene il nome interno dell’attività.
 
 ## Immagine {#image}
 
-Questo campo consente di modificare l&#39;immagine collegata a un&#39;attività. Per ulteriori informazioni, consulta: [Gestione delle immagini dell&#39;attività](../../workflow/using/managing-activity-images.md).
+Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta: [Gestione delle immagini delle attività](../../workflow/using/managing-activity-images.md).
 
 ## Esecuzione {#execution}
 
-Questo campo consente di definire l&#39;azione da eseguire quando l&#39;attività viene attivata. Sono possibili tre opzioni:
+Questo campo ti consente di definire l’azione da eseguire quando l’attività viene attivata. Sono disponibili tre opzioni possibili:
 
-Queste opzioni sono generalmente selezionate nel carrello facendo clic con il pulsante destro del mouse sull&#39;attività.
+Queste opzioni sono generalmente selezionate nel carrello facendo clic con il pulsante destro del mouse sull’attività.
 
-* **[!UICONTROL Normal]**: l&#39;attività viene eseguita normalmente.
+* **[!UICONTROL Normal]**: l’attività viene eseguita come di consueto.
 * **[!UICONTROL Do not activate]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite.
-* **[!UICONTROL Activate but do not execute]**: questa attività e tutte le attività seguenti (nello stesso ramo) vengono automaticamente interrotte. Questa funzione può essere utile se si desidera essere presenti all’avvio dell’attività. Per eseguire l&#39;attività manualmente, fare clic con il pulsante destro del mouse sull&#39;attività e selezionare **[!UICONTROL Normal execution]**.
+* **[!UICONTROL Activate but do not execute]**: questa attività e tutte le attività seguenti (nello stesso ramo) vengono automaticamente interrotte. Questa funzione può essere utile se desideri essere presente all’avvio dell’attività. Per eseguire l’attività manualmente, fai clic con il pulsante destro del mouse sull’attività e seleziona **[!UICONTROL Normal execution]**.
 
 ## Affinità {#affinity}
 
-Questo campo consente di forzare l&#39;esecuzione di un&#39;attività su un computer specifico. Per ulteriori informazioni, consulta: [Gestione della propensione](../../workflow/using/managing-propensity.md).
+Puoi scegliere di forzare l’esecuzione di un flusso di lavoro o di un’attività del flusso di lavoro su un computer specifico. A questo scopo, devi definire una o più proprietà a livello del flusso di lavoro o dell’attività interessata.
+
+La configurazione del flusso di lavoro ad alta disponibilità è descritta in questa [sezione](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+
 
 ## Max periodo di esecuzione {#max--execution-period}
 
-Questo campo consente di impostare un avviso per il momento in cui l&#39;attività richiede troppo tempo. Non influirà sul flusso di lavoro. Se l&#39;attività non viene completata entro il momento in cui **[!UICONTROL Max. execution period]** è finita, la pagina **[!UICONTROL Instance monitoring]** visualizzerà un avviso per il flusso di lavoro. A questa pagina è possibile accedere tramite la scheda **[!UICONTROL Monitoring]** della home page.
+Questo campo consente di impostare un avviso per il momento in cui l’attività richiede troppo tempo. Non influisce sul funzionamento del flusso di lavoro. Se l&#39;attività non è terminata al termine del **[!UICONTROL Max. execution period]**, nella pagina **[!UICONTROL Instance monitoring]** verrà visualizzato un avviso per questo flusso di lavoro. Questa pagina è accessibile tramite la scheda **[!UICONTROL Monitoring]** della home page.
 
 ## Comportamento {#behavior}
 
-Questo campo consente di definire il comportamento da applicare per l&#39;utilizzo di attività asincrone. Sono disponibili due opzioni:
+Questo campo ti consente di definire il comportamento da applicare per l’utilizzo di attività asincrone. Sono disponibili due opzioni possibili:
 
 * **[!UICONTROL Several tasks authorized]**: è possibile eseguire diverse attività contemporaneamente, anche se la prima non è terminata.
-* **[!UICONTROL The current task has priority]**: I compiti in corso hanno la priorità. Finché un&#39;attività è in corso, non verrà eseguita alcuna altra attività.
+* **[!UICONTROL The current task has priority]**: I compiti in corso sono prioritari. Fino a quando un&#39;attività è in corso, nessun&#39;altra attività verrà eseguita.
 
 ## Fuso orario {#time-zone}
 
-Questo campo consente di selezionare il fuso orario dell&#39;attività. Per ulteriori informazioni: [Gestione dei fusi orari](../../workflow/using/managing-time-zones.md).
+Questo campo ti consente di selezionare il fuso orario dell’attività. Per ulteriori informazioni: [Gestione dei fusi orari](../../workflow/using/managing-time-zones.md).
 
 ## In caso di errori {#in-case-of-errors}
 
-Questo campo consente di definire l&#39;azione da eseguire quando l&#39;attività presenta errori. Sono disponibili due opzioni:
+Questo campo ti consente di definire l’azione da eseguire quando l’attività presenta errori. Sono disponibili due opzioni possibili:
 
-* **[!UICONTROL Stop the process]**: il flusso di lavoro viene arrestato automaticamente. Il suo stato cambia in **[!UICONTROL Failed]**. Una volta risolto il problema, riavviate il flusso di lavoro.
-* **[!UICONTROL Ignore]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite. Questa funzione può essere utile per le attività ricorrenti. Se il ramo dispone di un pianificatore posizionato a monte, verrà avviato come di consueto alla data di esecuzione successiva.
+* **[!UICONTROL Stop the process]**: il flusso di lavoro viene arrestato automaticamente. Il suo stato cambia in **[!UICONTROL Failed]**. Una volta risolto il problema, riavvia il flusso di lavoro.
+* **[!UICONTROL Ignore]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite. Può essere utile per le attività ricorrenti. Se il ramo ha una pianificazione posizionata a monte, inizia come di consueto alla data di esecuzione successiva.
 
 ## Script di inizializzazione {#initialization-script}
 
-Questo campo consente di inizializzare le variabili o di modificare le proprietà dell&#39;attività. Per ulteriori informazioni, consulta: [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
+Questo campo ti consente di inizializzare le variabili o modificare le proprietà dell’attività. Per ulteriori informazioni, consulta: [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
 
 ## Commento {#comment}
 
