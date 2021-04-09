@@ -2,63 +2,63 @@
 solution: Campaign Classic
 product: campaign
 title: Integrazione in un server web per Linux
-description: Scopri come integrare Campaign in un server Web (Linux)
+description: Scopri come integrare Campaign in un server web (Linux)
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 2%
 
 ---
 
-
 # Integrazione in un server web per Linux{#integration-into-a-web-server-for-linux}
 
- Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server dell’applicazione tramite HTTP (e SOAP).
+Adobe Campaign include Apache Tomcat che agisce come punto di ingresso nell’application server tramite HTTP (e SOAP).
 
-Potete utilizzare questo server Tomcat integrato per soddisfare le richieste HTTP.
+Puoi utilizzare questo server Tomcat integrato per distribuire le richieste HTTP.
 
 In questo caso:
 
-* la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [Configurazione di Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [questa sezione](configure-tomcat.md).
 * Le console client si connettono quindi utilizzando un URL come:
 
    ```
    http://<computer>:8080
    ```
 
-Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue  Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console all&#39;esterno della rete.
+Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console all&#39;esterno della rete.
 
 Un server Web consente inoltre di garantire la riservatezza dei dati con il protocollo HTTP.
 
-Analogamente, è necessario utilizzare un server Web quando si desidera utilizzare la funzionalità di tracciamento, disponibile solo come modulo di estensione per un server Web.
+Allo stesso modo, è necessario utilizzare un server Web quando si desidera utilizzare la funzionalità di tracciamento, disponibile solo come modulo di estensione per un server Web.
 
 >[!NOTE]
 >
->Se non utilizzate la funzionalità di tracciamento, potete eseguire un&#39;installazione standard di Apache o IIS con un reindirizzamento a Campaign. Il modulo di estensione del server Web di tracciamento non è richiesto.
+>Se non utilizzi la funzionalità di tracciamento, puoi eseguire un’installazione standard di Apache o IIS con un reindirizzamento a Campaign. Il modulo di estensione del server Web di tracciamento non è necessario.
 
-## Configurazione del server Web Apache con Debian {#configuring-the-apache-web-server-with-debian}
+## Configurazione del server web Apache con Debian {#configuring-the-apache-web-server-with-debian}
 
-Questo processo si applica se Apache è stato installato in una distribuzione basata su APT.
+Questo processo si applica se hai installato Apache sotto una distribuzione basata su APT.
 
-Effettuate le seguenti operazioni:
+Applica i seguenti passaggi:
 
-1. Per impostazione predefinita, disattivate i moduli caricati utilizzando il seguente comando:
+1. Disattiva i moduli caricati per impostazione predefinita utilizzando il seguente comando:
 
    ```
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Assicurarsi che i moduli **alias**, **authz_host** e **mime** siano ancora attivati. A questo scopo, utilizzate il comando seguente:
+   Assicurati che i moduli **alias**, **authz_host** e **mime** siano ancora abilitati. A questo scopo, utilizza il seguente comando:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Create il file **nlsrv.load** in **/etc/apache2/mods-available** e inserite il contenuto seguente:
+1. Crea il file **nlsrv.load** in **/etc/apache2/mods-available** e inserisci il seguente contenuto:
 
    In Debian 8:
 
@@ -66,25 +66,25 @@ Effettuate le seguenti operazioni:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Create il file **nlsrv.conf** in **/etc/apache2/mods-available** utilizzando il comando seguente:
+1. Crea il file **nlsrv.conf** in **/etc/apache2/mods-available** utilizzando il seguente comando:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
    ```
 
-1. Attivate questo modulo con il seguente comando:
+1. Attiva questo modulo con il seguente comando:
 
    ```
     a2enmod nlsrv
    ```
 
-   Se si utilizza il modulo **mod_rewrite** per  pagine Adobe Campaign, è necessario rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, eseguire il comando seguente:
+   Se utilizzi il modulo **mod_rewrite** per le pagine Adobe Campaign, devi rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, esegui il seguente comando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Modificate il file **/etc/apache2/envars**, aggiungete le seguenti righe:
+1. Modifica il file **/etc/apache2/envars**, aggiungi le seguenti righe:
 
    ```
    # Added Neolane
@@ -92,28 +92,28 @@ Effettuate le seguenti operazioni:
    export USERPATH=/usr/local/neolane
    ```
 
-   Salvare le modifiche.
+   Salva le modifiche.
 
-1. Quindi aggiungete  utenti Adobe Campaign al gruppo di utenti Apache e viceversa utilizzando il seguente tipo di comando:
+1. Quindi aggiungi gli utenti Adobe Campaign al gruppo di utenti Apache e viceversa utilizzando il seguente tipo di comando:
 
    ```
    usermod neolane -G www-data
    usermod www-data -G neolane
    ```
 
-1. Riavviate Apache:
+1. Riavvia Apache:
 
    ```
    invoke-rc.d apache2 restart
    ```
 
-## Configurazione del server Web Apache in RHEL {#configuring-apache-web-server-in-rhel}
+## Configurazione del server web Apache in RHEL {#configuring-apache-web-server-in-rhel}
 
-Questa procedura si applica se avete installato e protetto Apache in un pacchetto basato su RPM (RHEL, CentOS e Suse).
+Questa procedura si applica se hai installato e protetto Apache in un pacchetto basato su RPM (RHEL, CentOS e Suse).
 
-Effettuate le seguenti operazioni:
+Applica i seguenti passaggi:
 
-1. Nel file `httpd.conf`, attivate i seguenti moduli Apache:
+1. Nel file `httpd.conf` , attiva i seguenti moduli Apache:
 
    ```
    alias
@@ -121,7 +121,7 @@ Effettuate le seguenti operazioni:
    mime
    ```
 
-1. Disattivate i seguenti moduli:
+1. Disattiva i moduli seguenti:
 
    ```
    auth_basic
@@ -136,7 +136,7 @@ Effettuate le seguenti operazioni:
    userdir
    ```
 
-   Commentare le funzioni collegate ai moduli disattivati:
+   Commenta le funzioni collegate ai moduli disattivati:
 
    ```
    DirectoryIndex
@@ -152,9 +152,9 @@ Effettuate le seguenti operazioni:
    ForceLanguagePriority
    ```
 
-1. Create un file di configurazione  Adobe Campaign specifico nella cartella `/etc/httpd/conf.d/`. Ad esempio `CampaignApache.conf`
+1. Crea un file di configurazione specifico per Adobe Campaign nella cartella `/etc/httpd/conf.d/` . Ad esempio `CampaignApache.conf`
 
-1. Per **RHEL7**, aggiungete le seguenti istruzioni nel file:
+1. Per **RHEL7**, aggiungi le seguenti istruzioni nel file :
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -163,7 +163,7 @@ Effettuate le seguenti operazioni:
 
 1. Per **RHEL7**:
 
-   Aggiungete il file `/etc/systemd/system/httpd.service` con il contenuto seguente:
+   Aggiungi il file `/etc/systemd/system/httpd.service` con il seguente contenuto:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -172,13 +172,13 @@ Effettuate le seguenti operazioni:
    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
    ```
 
-   Aggiornare il modulo utilizzato dal sistema:
+   Aggiorna il modulo utilizzato dal sistema:
 
    ```
    systemctl daemon-reload
    ```
 
-1. Quindi, aggiungere  operatori Adobe Campaign al gruppo di operatori Apache e viceversa, eseguendo il comando:
+1. Quindi aggiungi gli operatori Adobe Campaign al gruppo di operatori Apache e viceversa, eseguendo il comando:
 
    ```
    usermod -a -G neolane apache
@@ -187,7 +187,7 @@ Effettuate le seguenti operazioni:
 
    I nomi dei gruppi da utilizzare dipendono dalla configurazione di Apache.
 
-1. Eseguite Apache e il server Adobe Campaign .
+1. Esegui Apache e il server Adobe Campaign.
 
    Per RHEL7:
 
@@ -196,15 +196,15 @@ Effettuate le seguenti operazioni:
    systemctl start nlserver
    ```
 
-## Avvio del server Web e verifica della configurazione{#launching-the-web-server-and-testing-the-configuration}
+## Avvio del server Web e verifica la configurazione{#launching-the-web-server-and-testing-the-configuration}
 
-È ora possibile verificare la configurazione avviando Apache. Il modulo Adobe Campaign  deve ora visualizzare il banner sulla console (due banner in alcuni sistemi operativi):
+Ora puoi testare la configurazione avviando Apache. Il modulo Adobe Campaign deve ora visualizzare il proprio banner sulla console (due banner su determinati sistemi operativi):
 
 ```
  /etc/init.d/apache start
 ```
 
-Vengono visualizzate le informazioni seguenti:
+Vengono visualizzate le seguenti informazioni:
 
 ```
 12:26:28 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -215,9 +215,9 @@ Vengono visualizzate le informazioni seguenti:
 12:26:28 >   Server started
 ```
 
-Verificate quindi che risponda inviando un URL di prova.
+Quindi controlla che risponda inviando un URL di test.
 
-È possibile eseguire la verifica dalla riga di comando eseguendo:
+Puoi eseguire il test dalla riga di comando eseguendo:
 
 ```
  telnet localhost 80  
@@ -231,13 +231,13 @@ Connected to localhost.localdomain.
 Escape character is '^]'.
 ```
 
-Quindi immettete:
+Quindi inserisci:
 
 ```
 GET /r/test
 ```
 
-Vengono visualizzate le informazioni seguenti:
+Vengono visualizzate le seguenti informazioni:
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
