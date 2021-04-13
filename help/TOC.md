@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [Risoluzione dei problemi relativi alle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Errori di consegna](delivery/using/understanding-delivery-failures.md)
-      + [Aggiornare la qualifica di mancato recapito dopo un&#39;interruzione dell&#39;ISP](delivery/using/update-bounce-qualification.md)
+      + [Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP](delivery/using/update-bounce-qualification.md)
       + [Gestione della quarantena](delivery/using/understanding-quarantine-management.md)
    + Tracciare i messaggi {#tracking-messages}
       + [Informazioni sul tracking dei messaggi](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [Configurare gli eventi per l’implementazione personalizzata](integrations/using/events.md)
       + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
       + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
+   + Origini e destinazioni Adobe Experience Platform {#aep-sources-destinations}
+      + [Guida introduttiva a Origini e Destinazioni](integrations/using/get-started-sources-destinations.md)
+      + [Inserire il pubblico di Adobe Experience Platform in Campaign](integrations/using/ingest-aep-data.md)
+      + [Esportare dati da Campaign a Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatizzare con i flussi di lavoro {#automating-with-workflows}
    + Introduzione ai flussi di lavoro {#introduction}
       + [Informazioni sui flussi di lavoro](workflow/using/about-workflows.md)
