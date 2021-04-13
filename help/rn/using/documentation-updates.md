@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 815648f97d2f5e15c1d5ddc340d384d440d0d6b2
+source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
 ht-degree: 97%
@@ -21,7 +21,7 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
-## 2° aprile {#april-2021}
+## Aprile 2021 {#april-2021}
 
 È stata aggiunta una nuova sezione su come lavorare con le origini e le destinazioni Adobe Experience Platform per condividere i dati tra Campaign Classic e Adobe Real-time Customer Data Platform (RTCDP). [Leggi tutto](../../integrations/using/get-started-sources-destinations.md)
 
