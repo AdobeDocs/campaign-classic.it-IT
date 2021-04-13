@@ -6,16 +6,16 @@ description: Scopri come personalizzare i messaggi e utilizzare il contenuto con
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
+exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: d3ef2783409a3a36badbd3f8248ba1bdf6acae7e
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 40%
 
 ---
 
-
-# Guida introduttiva alla personalizzazione con api{#about-personalization}
+# Guida introduttiva alla personalizzazione{#about-personalization}
 
 Il contenuto e l’aspetto dei messaggi consegnati da Adobe Campaign possono essere personalizzati in diversi modi. Tali modi possono essere combinati in base a criteri ottenuti in modo particolare dai profili dei destinatari. Per le consegne e-mail, puoi definire gli elementi e le condizioni di personalizzazione di una consegna direttamente in JavaScript dalla scheda **[!UICONTROL Source]** del messaggio. In generale, Adobe Campaign ti consente di:
 
