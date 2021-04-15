@@ -8,16 +8,26 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
-source-wordcount: '2830'
-ht-degree: 88%
+source-wordcount: '2970'
+ht-degree: 87%
 
 ---
 
 # Versione 20.2{#release-20-2}
 
 ## ![](assets/do-not-localize/green_2.png) Versione 20.2.5 - Build 9188 {#release-20-2-5-build-9188}
+
+_15 aprile 2021_
+
+* È stata corretta una regressione della console client che causava messaggi di errore persistenti nella schermata di connessione IMS. (NEO-34821)
+
+**È obbligatorio solo l’aggiornamento della console. Non è richiesto alcun aggiornamento del server.**
+
+>[!NOTE]
+>
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _31 marzo 2021_
 
@@ -37,6 +47,17 @@ _31 marzo 2021_
 * È stata corretta una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Versione 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
+
+_15 aprile 2021_
+
+* È stata corretta una regressione della console client che causava messaggi di errore persistenti nella schermata di connessione IMS. (NEO-34821)
+* È stata corretta una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. (NEO-31453, NEO-31454)
+
+**È obbligatorio solo l’aggiornamento della console. Non è richiesto alcun aggiornamento del server.**
+
+>[!NOTE]
+>
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 dicembre 2020_
 
