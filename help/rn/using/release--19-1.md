@@ -6,18 +6,28 @@ description: Note sulla versione per Campaign 19.1
 feature: null
 role: null
 level: null
+exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
 translation-type: tm+mt
-source-git-commit: 631e7a0f89a365626401a6157ef84442fa0fd59f
+source-git-commit: 5271a23f7d815d432cfec00c57555c18be1fd3c7
 workflow-type: tm+mt
-source-wordcount: '3198'
-ht-degree: 20%
+source-wordcount: '3256'
+ht-degree: 25%
 
 ---
-
 
 # Versione 19.1{#release-19-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Versione 19.1.8 - Build 9039 {#release-19-1-8-build-9039}
+
+_15 aprile 2021_
+
+* È stata corretta una regressione della console client che causava messaggi di errore persistenti nella schermata di connessione IMS. (NEO-34821)
+
+**È obbligatorio solo l’aggiornamento della console. Non è richiesto alcun aggiornamento del server.**
+
+>[!NOTE]
+>
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 marzo 2021_
 
@@ -27,15 +37,15 @@ _22 marzo 2021_
 
 >[!NOTE]
 >
-> Connettiti a [Distribuzione di software di Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per scaricare la nuova versione. Scopri come proporre l’aggiornamento della console a tutti gli utenti finali [in questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _16 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
 
 
 
