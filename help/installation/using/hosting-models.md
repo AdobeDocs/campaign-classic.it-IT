@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Modelli di hosting
 description: Scopri i modelli di hosting di Campaign
-feature: Panoramica
-role: Architetto
-level: Principiante
+feature: Overview
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt

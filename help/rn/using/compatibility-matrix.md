@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Matrice di compatibilità per Campaign Classic
 description: Matrice di compatibilità di Campaign Classic
-feature: Panoramica
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2

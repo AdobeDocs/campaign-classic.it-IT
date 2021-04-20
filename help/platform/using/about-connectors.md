@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Informazioni sui connettori
 description: Informazioni sui connettori
-feature: Panoramica
-role: Business Practices, architetto dati
-level: Principiante
+feature: Overview
+role: Business Practitioner, Data Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

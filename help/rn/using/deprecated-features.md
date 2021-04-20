@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Funzioni obsolete e rimosse di Campaign Classic
 description: In questa pagina sono elencate le funzioni obsolete e rimosse di Adobe Campaign Classic
-feature: Panoramica
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

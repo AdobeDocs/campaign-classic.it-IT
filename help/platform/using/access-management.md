@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Guida introduttiva alle autorizzazioni
 description: Scopri come concedere l’accesso alle funzionalità di Campaign
-feature: Gestione degli accessi
-role: Business Practices, amministratore
-level: Principiante
+feature: Access Management
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Aggiornamenti alla documentazione di Adobe Campaign Classic
 description: In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti presenti nella documentazione di Adobe Campaign Classic
-feature: Panoramica
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91

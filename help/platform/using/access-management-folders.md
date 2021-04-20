@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Gestire l’accesso alle cartelle di Campaign
 description: Scopri come concedere l’accesso alle cartelle Campaign e creare visualizzazioni
-feature: Impostazioni applicazione
-role: Business Practices, amministratore
-level: Principiante
+feature: Application Settings
+role: Business Practitioner, Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt

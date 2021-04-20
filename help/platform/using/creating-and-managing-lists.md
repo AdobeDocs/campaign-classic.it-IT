@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Creazione e gestione di elenchi
 description: Scopri come creare e gestire gli elenchi
-feature: Profili
-role: Professionista
-level: Principiante
+feature: Profiles
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
