@@ -6,9 +6,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
@@ -27,13 +27,13 @@ Per migliorare la sicurezza, il meccanismo di firma per i collegamenti di tracci
 
 Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, può essere interessato:
 
-* Gold Standard 7 - 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
-* Campaign 21.1.1 - 21.1.2 versioni. [Ulteriori informazioni](../rn/using/latest-release.md)
-* Campaign 20.3.1 - 20.3.3 versioni. [Ulteriori informazioni](../rn/using/release--20-3.md)
-* Campaign 20.2.1 - 20.2.3 versioni. [Ulteriori informazioni](../rn/using/release--20-2.md)
-* Campaign 20.1.1 - 21.1.3 versioni. [Ulteriori informazioni](../rn/using/release--20-1.md)
-* Campaign 19.2.2 - 19.2.3 versioni. [Ulteriori informazioni](../rn/using/release--19-2.md)
-* Campaign 19.1.5 - 19.1.7 versioni. [Ulteriori informazioni](../rn/using/release--19-1.md)
+* Gold Standard da 7 a 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
+* Versioni da Campaign 21.1.1 a 21.1.2. [Ulteriori informazioni](../rn/using/latest-release.md)
+* Versioni da Campaign 20.3.1 a 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
+* Versioni da Campaign 20.2.1 a 20.2.3. [Ulteriori informazioni](../rn/using/release--20-2.md)
+* Versioni da Campaign 20.1.1 a 21.1.3. [Ulteriori informazioni](../rn/using/release--20-1.md)
+* Versioni da Campaign 19.2.2 a 19.2.3. [Ulteriori informazioni](../rn/using/release--19-2.md)
+* Versioni di Campaign 19.1.5-19.1.7. [Ulteriori informazioni](../rn/using/release--19-1.md)
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
