@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 96%
+source-wordcount: '2519'
+ht-degree: 97%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 96%
    + [Note tecniche](technotes/technote.md)
    + [Aggiornamento del certificato iOS](technotes/ios-certificate-update.md)
    + [Aggiornamenti alla configurazione di Campaign](technotes/acc-config-updates.md)
+   + [Aggiornamento degli URL tracciati](technotes/tracked-urls.md)
 + Introduzione {#getting-started}
    + Iniziare a usare Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
