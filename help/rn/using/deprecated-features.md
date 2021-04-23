@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Funzioni obsolete e rimosse di Campaign Classic
 description: In questa pagina sono elencate le funzioni obsolete e rimosse di Adobe Campaign Classic
-feature: Overview
+feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <li>API web - Microsoft Dynamics CRM online: 2016, 2016 aggiornamento 1</li>
    <li>API Oracle On Demand</li>
    </ul>
-  <p><em>Data di rimozione target: Maggio 2021</em></p>
+  <p><em>Data prevista di rimozione: maggio 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -69,21 +69,21 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td><p>A partire dalla release Campaign 20.3, il connettore legacy binario per iOS è diventato obsoleto.<p>
   <p> Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione.
   <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html">Ulteriori informazioni</a></p>
-  <p><em>Data di rimozione target: Maggio 2021</em></p>
+  <p><em>Data prevista di rimozione: maggio 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Dominio demdex<br></td>
   <td><p> A partire dalla versione di Campaign 20.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto.<p>
   <p>Se utilizzi il dominio demdex per l’importazione/esportazione degli account esterni, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
-  <p><em>Data di rimozione target: Maggio 2021</em></p>
+  <p><em>Data prevista di rimozione: maggio 2021</em></p>
   </td>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
   <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger, originariamente basata su OAuth per accedere alla pipeline, ora è stata modificata e spostata in Adobe I/O. <p>
   <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <p><em>Data di rimozione target: Nov 2021</em></p>
+  <p><em>Data prevista di rimozione: novembre 2021</em></p>
   </td>
   </tr>
   <td>Connettori SMS<br></td>
@@ -98,14 +98,14 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    </ul>
   <p>Se utilizzi uno di questi connettori, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a></p> 
   <p>Per informazioni su come effettuare la migrazione dei connettori legacy, consulta <a href="../../delivery/using/unsupported-connector-migration.md">questa nota tecnica</a>.</p>
-  <p><em>Data di rimozione target: Maggio 2021</em></p>
+  <p><em>Data prevista di rimozione: maggio 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Canale fax<br></td>
    <td><p>A partire dalla versione Campaign 20.2, il canale fax è diventato obsoleto.</p> 
    <p>Se utilizzi questo canale, devi adattare di conseguenza la tua implementazione. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a> sui canali di Campaign.</p>
-   <p><em>Data di rimozione target: Maggio 2021</em></p></td>
+   <p><em>Data prevista di rimozione: maggio 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
