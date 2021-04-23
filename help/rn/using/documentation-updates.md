@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Aggiornamenti alla documentazione di Adobe Campaign Classic
 description: In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti presenti nella documentazione di Adobe Campaign Classic
-feature: Overview
+feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4304'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -27,9 +27,9 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ## Marzo 2021 {#march-2021}
 
-La [Guida introduttiva alla sezione SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora puoi imparare a [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare SMS](../../delivery/using/sms-send.md) nelle sezioni dedicate.
+La sezione [Guida introduttiva agli SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora trovi nelle sezioni dedicate per imparare a [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare gli SMS](../../delivery/using/sms-send.md).
 
-La pagina &quot;Opzioni di aiuto e supporto&quot; per Campaign Classic è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
+La pagina “Opzioni di aiuto e supporto” per Campaign Standard è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
 
 È stata aggiunta una nuova sezione con best practice e controlli da eseguire in materia di sicurezza e privacy. [Leggi tutto](../../installation/using/get-started-security-privacy.md)
 
@@ -214,7 +214,7 @@ La sezione **[!UICONTROL AND-join]** Attività è stata arricchita da informazio
 
 Ai casi di utilizzo del flusso di lavoro è stato aggiunto un esempio che spiega come aggiornare in automatico un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
-Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle [[!DNL Gold Standard] release ](../../rn/using/gold-standard.md) ed è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle versioni [[!DNL Gold Standard] ](../../rn/using/gold-standard.md)e è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 È stata aggiunta una nuova sezione con le linee guida relative al monitoraggio di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ La sezione Monitoraggio del recapito messaggi è stata spostata e migliorata. [L
 
 La sezione Risoluzione dei problemi di recapito messaggi è stata spostata e migliorata. [Leggi tutto](../../delivery/using/deliverability-faq.md)
 
-Sono state migliorate le linee guida sul recapito messaggi all’avvio di una nuova piattaforma. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+È stata migliorata la sezione Linee guida sul recapito messaggi per l’avvio di una nuova piattaforma. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it#transition-process)
 
 La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
 
