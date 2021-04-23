@@ -6,14 +6,14 @@ description: Ulteriori informazioni sulla gestione della privacy
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # Gestione della privacy {#privacy-management}
 
@@ -28,7 +28,7 @@ Di seguito sono riportate le cinque funzionalità principali offerte da Adobe Ca
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Per ulteriori informazioni, vedere [Diritto di accesso e Diritto da dimenticare](#right-access-forgotten) e [Consenso, Mantenimento e Ruoli](#consent-retention-roles).
+Per ulteriori informazioni, consulta [Diritto di accesso e diritto all’oblio](#right-access-forgotten) e [Consenso, conservazione e ruoli](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
@@ -80,9 +80,9 @@ Le funzioni per gestire alcuni aspetti del consenso sono da sempre funzioni core
 
 ![](assets/privacy-consent-management.png)
 
-Per ulteriori informazioni sulla gestione del consenso, consultare la [documentazione dettagliata](../../delivery/using/managing-subscriptions.md).
+Per ulteriori informazioni sulla gestione del consenso, consulta la [documentazione dettagliata](../../delivery/using/managing-subscriptions.md).
 
-Oltre a utilizzare gli strumenti di gestione del consenso forniti da Adobe Campaign, puoi verificare se un consumatore ha rinunciato alla vendita di informazioni personali. Fai riferimento a [questa sezione](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Oltre a utilizzare gli strumenti di gestione del consenso forniti da Adobe Campaign, puoi verificare se un consumatore ha negato il consenso alla vendita dei suoi dati personali. Fai riferimento a [questa sezione](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Conservazione dei dati {#data-retention}
 
@@ -90,17 +90,17 @@ Per quanto riguarda la conservazione, le tabelle di registro integrate in Campai
 
 Di seguito sono riportati i valori di conservazione predefiniti per le tabelle integrate. Ricorda che la configurazione della conservazione è impostata dagli amministratori tecnici di Adobe durante l’implementazione e che i valori possono variare per ciascuna implementazione, in base ai requisiti dei clienti.
 
-* **Tracciamento** consolidato: 1 anno
+* **Tracciamento consolidato**: 1 anno
 * **Registri di consegna**: 6 mesi
-* **Registri** di tracciamento: 1 anno
-* **Consegne** eliminate: 1 settimana
-* **Importa rifiuti**: 6 mesi
-* **Profili** visitatore: 1 mese
-* **Proposte** di offerta: 1 anno
+* **Registri di tracciamento**: 1 anno
+* **Consegne eliminate**: 1 settimana
+* **Rifiuti di importazione**: 6 mesi
+* **Profili dei visitatori**: 1 mese
+* **Proposte di offerta**: 1 anno
 * **Eventi**: 1 mese
-* **Statistiche sull&#39;elaborazione** degli eventi: 1 anno
-* **Eventi** archiviati: 1 anno
-* **Eventi pipeline ignorati**: 1 mese
+* **Statistiche sull’elaborazione degli eventi**: 1 anno
+* **Eventi archiviati**: 1 anno
+* **Eventi di pipeline ignorati**: 1 mese
 
 Analogamente all’eliminazione, quando utilizzi la funzionalità standard del flusso di lavoro puoi impostare periodi di conservazione per qualsiasi tabella personalizzata.
 
@@ -116,4 +116,4 @@ Allo stesso modo, questa funzionalità consente di configurare diverse funzional
 
 ![](assets/privacy-user-management.png)
 
-Per ulteriori informazioni sulla gestione degli accessi, consultare la [documentazione dettagliata](../../platform/using/access-management.md).
+Per ulteriori informazioni sulla gestione degli accessi, consulta la [documentazione dettagliata](../../platform/using/access-management.md).
