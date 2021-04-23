@@ -6,14 +6,14 @@ description: Ulteriori informazioni su Privacy e consenso
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Domande frequenti sulla privacy {#privacy-faq}
 
@@ -74,7 +74,7 @@ Nei casi in cui si necessita il consenso per determinate attività di marketing,
 
 Possono verificarsi casi in cui è necessario aggiornare alcuni consensi per poter continuare a utilizzare i dati.
 
-Gli addetti al marketing devono accettare questi requisiti di consenso avanzati come un vero indicatore di coinvolgimento e fedeltà del brand, oltre che di soddisfazione e fiducia dei clienti.
+Gli addetti al marketing devono accettare questi requisiti di consenso avanzati come un vero indicatore di brand engagement e fedeltà, oltre che di soddisfazione e fiducia dei clienti.
 
 ## Gestire il consenso {#manage-consent}
 
@@ -88,7 +88,7 @@ Ad esempio, estendere il modello dati in Adobe Campaign per monitorare non solo 
 
 ## Eliminazione dei dati {#data-deletion}
 
-### Quali dati possono essere eliminati dai titolari del trattamento in Adobe Campaign in risposta a una richiesta del cliente da parte di un interessato?
+### Quali dati possono essere eliminati dai titolari del trattamento in Adobe Campaign in risposta a una richiesta da parte del cliente interessato?
 
 Tutti i dati associati all’interessato verranno eliminati, incluse le tabelle pronte all’uso e personalizzate.
 
@@ -110,7 +110,7 @@ In qualità di titolare del trattamento assicurati che, quando ricevi una richie
 
 ## Fornire nuovamente il consenso {#opt-in-again}
 
-### Un interessato, i cui dati sono stati cancellati da Adobe Campaign, può riaccettare in un secondo momento?
+### Un interessato i cui dati sono stati eliminati da Adobe Campaign può fornire di nuovo il consenso in un secondo momento?
 
 È possibile che un interessato decida di fornire nuovamente il consenso o che venga aggiunto come nuovo destinatario dopo che i suoi dati sono stati eliminati da Adobe Campaign.
 
