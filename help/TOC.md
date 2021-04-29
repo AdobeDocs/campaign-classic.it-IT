@@ -26,8 +26,8 @@ ht-degree: 100%
    + [Ultima versione](rn/using/latest-release.md)
    + Versione [!DNL Gold Standard] {#gs-release}
       + [Cos’è [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + Note sulla versione [[!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + Matrice di compatibilità per [[!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
+      + [Note sulla versione [!DNL Gold Standard] ](rn/using/gold-standard.md)
+      + [Matrice di compatibilità per [!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
    + Versioni precedenti {#previous-releases}
       + [Versione 20.3](rn/using/release--20-3.md)
       + [Versione 20.2](rn/using/release--20-2.md)
