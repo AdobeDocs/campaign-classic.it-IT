@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,14 @@ ht-degree: 4%
 
 In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
 
-Il 26 aprile 2021, a causa di un problema globale ad Apple, alcuni messaggi e-mail inviati a indirizzi e-mail Apple validi venivano inseriti erroneamente come indirizzi e-mail non validi dai server Apple con la seguente risposta non recapitata: *&quot;550 5.1.1 <email address>: ricerca utente riuscita ma nessun record utente trovato.&quot;*Questo problema si è verificato il 26/4 e è durato 7.00 - 13.00 EST.
+Il 26 aprile 2021, a causa di un problema globale ad Apple, alcuni messaggi e-mail inviati a indirizzi e-mail Apple validi venivano inseriti erroneamente come indirizzi e-mail non validi dai server Apple con la seguente risposta non recapitata:
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+Questo problema si è verificato il 26/4 e è durato 7.00 - 13.00 EST.
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ In base al calendario dell’incidente, di seguito sono riportate le linee guida
 
 * Per le istanze Campaign con informazioni sulla risposta non recapitata SMTP nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;ricerca utente riuscita ma nessun record utente trovato&quot; E il testo di  **errore (testo di quarantena)** contiene &quot;support.apple.com&quot; **
+   * **Il testo di errore (testo di quarantena)** contiene &quot;user lookup success but no user record found&quot; E il testo di  **errore (testo di quarantena)** contiene &quot;support.apple.com&quot;
    * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00
    * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM
 
