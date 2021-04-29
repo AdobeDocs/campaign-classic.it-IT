@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -24,11 +24,11 @@ Il 26 aprile 2021, a causa di un problema globale ad Apple, alcuni messaggi e-ma
 
 Questo problema si è verificato il 26/4 e è durato 7.00 - 13.00 EST.
 
-In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
-
 >[!NOTE]
 >
 >È possibile controllare il dashboard di stato del sistema Apple su [questa pagina](https://www.apple.com/support/systemstatus/).
+
+In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
 
 Per logica standard di gestione dei messaggi non recapitati, Adobe Campaign ha aggiunto automaticamente questi destinatari all’elenco di quarantena con un’impostazione **[!UICONTROL Status]** di **[!UICONTROL Quarantine]**. Per correggere questo problema, devi aggiornare la tabella di quarantena in Campaign individuando e rimuovendo questi destinatari o modificando i relativi **[!UICONTROL Status]** in **[!UICONTROL Valid]** in modo che il flusso di lavoro di pulizia notturna li rimuova.
 
@@ -53,7 +53,7 @@ In base al calendario dell’incidente, di seguito sono riportate le linee guida
 * Per le istanze Campaign con informazioni sulla regola e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Dominio e-mail (@dominio)** uguale a icloud.com&quot; O Dominio e-mail (@dominio) uguale a me.com&quot; O Dominio e-mail (@dominio) uguale a mac.com&quot;
+   * **Dominio e-mail (@dominio)** uguale a icloud.com OR Dominio  **e-mail (@dominio)** uguale a me.com OR Dominio  **E-mail (@dominio)** uguale a mac.com
    * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00
    * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM
 
