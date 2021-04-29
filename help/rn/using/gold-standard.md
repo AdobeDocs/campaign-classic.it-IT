@@ -7,11 +7,11 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1058'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ La build 9032@10c2709 include la seguente correzione:
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 dicembre 2020_
 
@@ -99,11 +99,11 @@ _29 aprile 2020_
 
 La build 9032@3a9dc9c include le seguenti correzioni:
 
-* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini nelle consegne in Linea. (NEO-23207)
 * È stato risolto un problema dell’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
