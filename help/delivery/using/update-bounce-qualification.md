@@ -9,27 +9,22 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
+source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 4%
+source-wordcount: '425'
+ht-degree: 3%
 
 ---
 
-# Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio dell’ISP {#update-bounce-qualification.md}
+# Aggiorna i messaggi non corretti dopo l&#39;interruzione Apple {#update-bounce-qualification.md}
 
 ## Contesto
 
-In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
-
-Il 26 aprile 2021, a causa di un problema globale ad Apple, alcuni messaggi e-mail inviati a indirizzi e-mail Apple validi venivano inseriti erroneamente come indirizzi e-mail non validi dai server Apple con la seguente risposta non recapitata:
-
-
-```
-“550 5.1.1 <email address>: user lookup success but no user record found.”
-```
+Il 26 aprile 2021, a causa di un problema globale ad Apple, alcuni messaggi e-mail inviati a indirizzi e-mail Apple validi venivano inseriti erroneamente come indirizzi e-mail non validi dai server Apple con la seguente risposta non recapitata:  &quot;550 5.1.1 <email address>: ricerca utente riuscita ma nessun record utente trovato.&quot;
 
 Questo problema si è verificato il 26/4 e è durato 7.00 - 13.00 EST.
+
+In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
 
 >[!NOTE]
 >
