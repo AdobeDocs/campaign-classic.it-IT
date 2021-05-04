@@ -6,14 +6,14 @@ description: Monitoraggio dell’esecuzione dei flussi di lavoro
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
 
 ---
-
 
 # Monitoraggio dell’esecuzione dei flussi di lavoro {#monitoring-workflow-execution}
 
@@ -261,7 +261,7 @@ Sono disponibili le seguenti visualizzazioni:
 * **[!UICONTROL Running]**: elenca tutti i flussi di lavoro in esecuzione.
 * **[!UICONTROL Paused]**: elenca tutti i flussi di lavoro in pausa.
 * **[!UICONTROL Failed]**: elenca tutti i flussi di lavoro con errore.
-* **[!UICONTROL Start Pending]**: elenca tutti i flussi di lavoro in attesa di essere avviati dal processo operationMgt. Questa visualizzazione è disponibile solo con il pacchetto **Campagne di marketing** (consulta [Installazione dei pacchetti standard di Campaign](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start Pending]**: elenca tutti i flussi di lavoro in attesa di essere avviati dal processo operationMgt. Questa visualizzazione è disponibile solo con il pacchetto **Campagne di marketing** (consulta [Installazione dei pacchetti incorporati di Campaign](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
