@@ -1,19 +1,19 @@
 ---
-solution: Campaign Standard
+solution: Campaign Classic
 product: campaign
 title: Best practice per l’importazione e l’esportazione
 description: Ulteriori informazioni sulle best practice da seguire per l’importazione o l’esportazione di dati.
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
+exl-id: 03d35202-d221-4136-aad4-00704aabb356
 translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 2%
 
 ---
-
 
 # Best practice per l’importazione e l’esportazione {#import-export-best-practices}
 
