@@ -5,14 +5,14 @@ title: Tracciare e monitorare i messaggi
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '430'
 ht-degree: 3%
 
 ---
-
 
 # Tracciare e monitorare {#track-and-monitor}
 
@@ -39,7 +39,7 @@ Suggerimento: Controlla la configurazione della gestione del traffico (affinità
 
 ## Tracking {#tracking-deliveries}
 
-Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della loro reazione a una consegna: ricezione, apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracking dei destinatari target interessati dalla consegna e nella scheda Tracking della consegna. In Campaign Standard, viene visualizzato nella scheda Registri di tracciamento della consegna.
+Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della loro reazione a una consegna: ricezione, apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracking dei destinatari target interessati dalla consegna e nella scheda Tracking della consegna.
 
 **Suggerimento**: Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
