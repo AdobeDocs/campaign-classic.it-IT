@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 9781e313e03489d203e14ab0c426aa1001c7a257
 workflow-type: tm+mt
 source-wordcount: '4297'
 ht-degree: 99%
@@ -44,7 +44,7 @@ Scopri come creare e gestire le campagne attraverso queste nuove pagine:
 
 Nella sezione dell’attività **[!UICONTROL Advanced JavaScript]** sono state aggiunte informazioni su come utilizzare il metodo task.setCompleted() per terminare l’attività ed evitare richiami futuri. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-La sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) è stata aggiornata e ora include i collegamenti alla nuova [guida Adobe alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it). Tutte le informazioni generiche relative al recapito dei messaggi valide per varie soluzioni Adobe sono state spostate nell’[Appendice alla Guida alle best practice](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=it#additional-resources).
+La sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) è stata aggiornata e ora include i collegamenti alla nuova [guida Adobe alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it). Tutte le informazioni generiche relative al recapito dei messaggi valide per varie soluzioni Adobe sono state spostate nell’[Appendice alla Guida alle best practice](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources).
 
 ## Febbraio 2021 {#release-21.1}
 
