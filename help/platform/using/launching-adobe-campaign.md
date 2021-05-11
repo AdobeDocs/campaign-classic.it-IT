@@ -6,18 +6,23 @@ description: Avvio di Adobe Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 6%
+source-wordcount: '558'
+ht-degree: 7%
 
 ---
 
-
-# Avvia Adobe Campaign{#launching-adobe-campaign}
+# Avviare Adobe Campaign{#launching-adobe-campaign}
 
 La console Client di Campaign è un client avanzato che consente di connettersi ai server delle applicazioni Campaign. Scopri come scaricare e configurare la console client in [questa pagina](../../installation/using/installing-the-client-console.md).
+
+
+>[!CAUTION]
+>
+>Verifica la compatibilità del sistema e degli strumenti con la console client di Adobe Campaign nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Avvia Adobe Campaign {#starting-adobe-campaign}
 
@@ -107,4 +112,4 @@ Ulteriori informazioni su [!DNL Gold Standard] [in questo articolo](../../rn/usi
 
 * [Guida e opzioni di supporto per Adobe Campaign](../../support.md)
 * [Distribuzione di software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Sessioni Adobe Experience Cloud Support ed Expert](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Sessioni Adobe Experience Cloud Support ed Expert](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
