@@ -7,11 +7,11 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 91%
 
 ---
 
@@ -202,9 +202,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 </tr>
@@ -275,19 +275,25 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tbody>
 </table>
 
-## Sistemi operativi della console client{#ClientConsoleoperatingsystems}
+## Console client {#ClientConsoleoperatingsystems}
+
+Per utilizzare la console client di Campaign sono necessari i seguenti sistemi operativi e browser.
+
+### Sistemi operativi
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
 <p>8</p>
 <p>10 (consigliato per le istanze giapponesi)</p>
@@ -295,6 +301,30 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tr>
 </tbody>
 </table>
+
+### Browser
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Versione più recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## SDK per dispositivi mobili{#MobileSDK}
 
@@ -319,9 +349,53 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 ## Browser{#Browsers}
 
-È supportata la versione più recente dei seguenti browser: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+I seguenti browser sono compatibili con Campaign per Web Access.
 
-Internet Explorer 11 è supportato.
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Versione più recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>Versione più recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>Versione più recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>Versione più recente</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Articoli simili{#Morelikethis}
 
