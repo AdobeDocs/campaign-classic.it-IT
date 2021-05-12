@@ -496,7 +496,7 @@ Sono state aggiunte ulteriori informazioni sui metodi di autenticazione SOAP per
 
 I passaggi di configurazione di Apache sono stati aggiornati. [Leggi tutto](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-È stata aggiunta una nuova pagina con l’elenco degli endpoint per Classic. [Leggi tutto](../../installation/using/campaign-network-endpoints.md)
+È stata aggiunta una nuova pagina con l’elenco degli endpoint per Campaign Classic. [Leggi tutto](../../installation/using/campaign-network-endpoints.md)
 
 L’articolo sulle best practice relative ai pacchetti dati è stato aggiornato. [Leggi tutto](../../configuration/using/data-model-best-practices.md)
 
