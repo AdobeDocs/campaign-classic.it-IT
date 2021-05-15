@@ -8,16 +8,15 @@ user-guide-description: Progetta, pianifica, esegui, gestisci e ottimizza campag
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-translation-type: ht
-source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
-workflow-type: ht
-source-wordcount: '2519'
-ht-degree: 100%
+source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+workflow-type: tm+mt
+source-wordcount: '2521'
+ht-degree: 99%
 
 ---
 
 
-# Guida ad Adobe Campaign Classic {#using}
+# Guida a Adobe Campaign Classic v7 {#using}
 
 + [Documentazione del prodotto](campaign-classic-home.md)
 + [Ultimi aggiornamenti](rn/using/documentation-updates.md)
@@ -26,8 +25,8 @@ ht-degree: 100%
    + [Ultima versione](rn/using/latest-release.md)
    + Versione [!DNL Gold Standard] {#gs-release}
       + [Cos’è [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [Note sulla versione [!DNL Gold Standard] ](rn/using/gold-standard.md)
-      + [Matrice di compatibilità per [!DNL Gold Standard] ](rn/using/compatibility-matrix-gs.md)
+      + [Note sulla versione [!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [Matrice di compatibilità per [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
    + Versioni precedenti {#previous-releases}
       + [Versione 20.3](rn/using/release--20-3.md)
       + [Versione 20.2](rn/using/release--20-2.md)
@@ -67,13 +66,13 @@ ht-degree: 100%
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
-      + [Richieste di accesso ai dati personali](platform/using/privacy-requests.md)
+      + [Richieste di accesso a dati personali](platform/using/privacy-requests.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo](platform/using/editing-a-profile.md)
       + [Aggiungere profili](platform/using/adding-profiles.md)
       + [Gestire i profili](platform/using/managing-profiles.md)
-      + [Aggiornare dati](platform/using/updating-data.md)
+      + [Update data](platform/using/updating-data.md)
       + [Importare ed esportare profili](platform/using/exporting-and-importing-profiles.md)
       + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
    + Importare ed esportare dati {#importing-and-exporting-data}
@@ -138,7 +137,7 @@ ht-degree: 100%
    + Inviare e-mail {#sending-emails}
       + [Informazioni sul canale e-mail](delivery/using/about-email-channel.md)
       + [Creare una consegna e-mail](delivery/using/creating-an-email-delivery.md)
-      + [Definire il contenuto dell’e-mail](delivery/using/defining-the-email-content.md)
+      + [Definisci il contenuto dell’e-mail](delivery/using/defining-the-email-content.md)
       + [Definire il contenuto interattivo](delivery/using/defining-interactive-content.md)
       + Inviare la consegna e-mail {#sending-an-email}
          + [Passaggi principali per l’invio di un’e-mail](delivery/using/sending-messages.md)
@@ -167,7 +166,7 @@ ht-degree: 100%
    + Inviare direct mail {#sending-direct-mail}
       + [Informazioni sul canale direct mail](delivery/using/about-direct-mail-channel.md)
       + [Creare una consegna direct mailing](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definizione del contenuto della direct mail](delivery/using/defining-the-direct-mail-content.md)
+      + [Definizione del contenuto della direct mailing](delivery/using/defining-the-direct-mail-content.md)
       + [Convalida](delivery/using/validating.md)
    + Utilizzare i modelli di consegna {#using-delivery-templates}
       + [Informazioni sui modelli](delivery/using/about-templates.md)
@@ -200,7 +199,7 @@ ht-degree: 100%
          + [Configurare le consegne](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Creare lo script](delivery/using/a-b-testing-uc-script.md)
          + [Definire la consegna finale](delivery/using/a-b-testing-uc-final-delivery.md)
-         + [Avviare il flusso di lavoro](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Avvia il flusso di lavoro](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Analizzare il risultato](delivery/using/a-b-testing-uc-analyzing.md)
    + Servizi e abbonamenti {#subscriptions-and-referrals}
       + [Informazioni su servizi e abbonamenti](delivery/using/about-services-and-subscriptions.md)
@@ -425,14 +424,14 @@ ht-degree: 100%
       + [Celle](workflow/using/cells.md)
       + [Offerte per cella](workflow/using/offers-by-cell.md)
       + [Profilo di consegna](workflow/using/delivery-outline.md)
-      + [Arricchimento](workflow/using/enrichment.md)
+      + [Enrichment](workflow/using/enrichment.md)
       + [Modifica schema](workflow/using/edit-schema.md)
       + [Motore di offerta](workflow/using/offer-engine.md)
-      + [Deduplicazione](workflow/using/deduplication.md)
+      + [Deduplication](workflow/using/deduplication.md)
       + [Cambiare dimensione](workflow/using/change-dimension.md)
       + [Aggiornamento elenco](workflow/using/list-update.md)
-      + [Servizi sottoscrizione](workflow/using/subscription-services.md)
-      + [Aggiornare dati](workflow/using/update-data.md)
+      + [Subscription Services](workflow/using/subscription-services.md)
+      + [Update data](workflow/using/update-data.md)
       + [Connettore di gestione delle relazioni con i clienti](workflow/using/crm-connector.md)
    + Attività di controllo del flusso {#flow-control-activities}
       + [Informazioni sulle attività di controllo del flusso](workflow/using/about-flow-control-activities.md)
@@ -441,11 +440,11 @@ ht-degree: 100%
       + [AND-join](workflow/using/and-join.md)
       + [Scheduler](workflow/using/scheduler.md)
       + [Test](workflow/using/test.md)
-      + [Attendi](workflow/using/wait.md)
+      + [Wait](workflow/using/wait.md)
       + [Vincolo di tempo](workflow/using/time-constraint.md)
       + [Flusso di lavoro secondario](workflow/using/sub-workflow.md)
       + [Salto (punto iniziale e punto finale)](workflow/using/jump--start-point-and-end-point-.md)
-      + [Segnale esterno](workflow/using/external-signal.md)
+      + [External signal](workflow/using/external-signal.md)
       + [Approvazione](workflow/using/approval.md)
       + [Avviso](workflow/using/alert.md)
       + [Attività](workflow/using/task.md)
@@ -569,7 +568,7 @@ ht-degree: 100%
       + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
 + Messaggistica transazionale {#transactional-messaging}
    + Introduzione alla messaggistica transazionale {#introduction}
-      + [Informazioni sui messaggi transazionali](message-center/using/about-transactional-messaging.md)
+      + [Informazioni sulla messaggistica transazionale](message-center/using/about-transactional-messaging.md)
       + [Architettura della messaggistica transazionale](message-center/using/transactional-messaging-architecture.md)
       + [Descrizione di un evento](message-center/using/event-description.md)
    + Configurare l’istanza {#instance-configuration}
@@ -713,7 +712,7 @@ ht-degree: 100%
    + Procedure di produzione {#production-procedures}
       + [Principio di configurazione](production/using/configuration-principle.md)
       + [Principio di funzionamento](production/using/operating-principle.md)
-      + [Amministrazione](production/using/administration.md)
+      + [Administration](production/using/administration.md)
       + [Configurazione](production/using/configuration.md)
       + [File di log](production/using/log-files.md)
       + [Monitorare i processi](production/using/monitoring-processes.md)
@@ -778,7 +777,7 @@ ht-degree: 100%
          + [Indice DB](configuration/using/schema/db-index.md)
          + [Elemento](configuration/using/schema/element.md)
          + [Enumerazione](configuration/using/schema/enumeration.md)
-         + [Guida](configuration/using/schema/help.md)
+         + [Aiuto](configuration/using/schema/help.md)
          + [Iscriversi](configuration/using/schema/join.md)
          + [Chiave](configuration/using/schema/key.md)
          + [Campo chiave](configuration/using/schema/keyfield.md)
