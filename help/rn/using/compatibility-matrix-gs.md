@@ -7,11 +7,10 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +205,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <tr>
 <td> Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -334,7 +333,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 
 ## Browser{#Browsers}
 
-I seguenti browser sono compatibili con Campaign per Web Access.
+I seguenti browser sono compatibili con Campaign per accesso web.
 
 <table>
 <tbody>
@@ -381,9 +380,9 @@ I seguenti browser sono compatibili con Campaign per Web Access.
 </tbody>
 </table>
 
-## Articoli simili{#Morelikethis-gs}
+## Altri argomenti correlati{#Morelikethis-gs}
 
 * [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 * [Guida all’installazione](../../installation/using/general-architecture.md)
 * [Funzioni e sistemi obsoleti](../../rn/using/deprecated-features.md)
-* [Procedura di aggiornamento build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)
+* [Procedura di aggiornamento della versione](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)
