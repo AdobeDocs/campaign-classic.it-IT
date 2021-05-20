@@ -7,11 +7,10 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -167,7 +166,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 >
 >PostgreSQL è il server di database predefinito per gli ambienti in hosting.
 
-## Connettori di gestione delle relazioni con i clienti{#CRMconnectors}
+## Connettori CRM{#CRMconnectors}
 
 <table>
 <tbody>
@@ -180,7 +179,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td>Connettore Microsoft Dynamics</td>
 <td>
-<p>API web - Dynamics 365 on-premise e online</p>
+<p>API web: Dynamics 365 locale e online</p>
 </td>
 </tr>
 </tbody>
@@ -202,9 +201,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -339,7 +338,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 ## Browser{#Browsers}
 
-I seguenti browser sono compatibili con Campaign per Web Access.
+I seguenti browser sono compatibili con Campaign per accesso web.
 
 <table>
 <tbody>
@@ -387,9 +386,9 @@ I seguenti browser sono compatibili con Campaign per Web Access.
 </table>
 
 
-## Articoli simili{#Morelikethis}
+## Altri argomenti correlati{#Morelikethis}
 
 * [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 * [Guida all’installazione](../../installation/using/general-architecture.md)
 * [Funzioni e sistemi obsoleti](../../rn/using/deprecated-features.md)
-* [Procedura di aggiornamento build](../../production/using/build-upgrade.md)
+* [Procedura di aggiornamento versione](../../production/using/build-upgrade.md)
