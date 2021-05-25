@@ -8,17 +8,17 @@ user-guide-description: Progetta, pianifica, esegui, gestisci e ottimizza campag
 solution: Campaign Classic
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
+source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Guida a Adobe Campaign Classic v7 {#using}
+# Documentazione di Adobe Campaign Classic v7 {#using}
 
-+ [Documentazione del prodotto](campaign-classic-home.md)
++ [Documentazione di Campaign v7](campaign-classic-home.md)
 + [Ultimi aggiornamenti](rn/using/documentation-updates.md)
 + Note sulla versione {#release-notes}
    + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
