@@ -7,23 +7,24 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-translation-type: tm+mt
-source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
 workflow-type: tm+mt
-source-wordcount: '3927'
+source-wordcount: '3941'
 ht-degree: 1%
 
 ---
 
 # Elenco opzioni di Campaign Classic{#configuring-campaign-options}
 
-Il nodo **[!UICONTROL Administration / Platform / Options]** ti consente di configurare le opzioni Adobe Campaign.
+Il nodo **[!UICONTROL Administration / Platform / Options]** ti consente di configurare le opzioni Adobe Campaign. Alcune sono integrate durante l’installazione di Campaign, altre possono essere aggiunte manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con la tua istanza.
 
->[!NOTE]
+>[!CAUTION]
 >
->La modifica o l’aggiornamento delle opzioni di Adobe Campaign possono essere eseguite solo dagli utenti esperti.
+>* Le opzioni non elencate in questa pagina sono solo interne e **non devono essere modificate**.
+   >
+   >
+* La modifica o l’aggiornamento delle opzioni di Adobe Campaign possono essere eseguite solo dagli utenti esperti.
 
-Alcune sono integrate durante l’installazione di Campaign, altre possono essere aggiunte manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con la tua istanza.
 
 ## Consegna {#delivery}
 
@@ -682,7 +683,7 @@ Alcune sono integrate durante l’installazione di Campaign, altre possono esser
    <td> Durante la migrazione, la struttura ad albero viene riorganizzata automaticamente in base ai nuovi standard di versione.<br /> Questa opzione consente di disabilitare la migrazione automatica della struttura di navigazione. Se lo si utilizza, dopo la migrazione sarà necessario eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo di dati: </span> Integer</p> </li> 
-     <li> <p> <span class="uicontrol">Valore (testo)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Valore (testo)</span> : 1 </p> </li> 
     </ul> Questa opzione deve essere utilizzata solo se la struttura di navigazione preconfigurata ha subito troppe modifiche.<br /> Per ulteriori informazioni al riguardo, consulta <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
