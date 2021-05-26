@@ -7,10 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1541'
 ht-degree: 8%
 
 ---
@@ -87,7 +86,7 @@ L’account esterno **[!UICONTROL Routing]** ti consente di configurare ogni can
 * [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Dispositivo mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Direct mail](../../delivery/using/about-direct-mail-channel.md)
+* [Direct mailing](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
@@ -189,7 +188,7 @@ Le impostazioni di configurazione dell’account esterno dipendono dal motore di
 * Configura l&#39;accesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Configura l&#39;accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Connessione Facebook {#facebook-connect-external-account}
+### Connessione facebook {#facebook-connect-external-account}
 
 L’ account esterno **[!UICONTROL Facebook Connect]** consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, facilitando l’acquisizione di potenziali clienti tramite questo social network.
 
@@ -203,13 +202,13 @@ Per ogni applicazione Facebook, devi creare un account esterno di tipo **[!UICON
 
 * **[!UICONTROL Application ID]**
 
-   ID app dell’applicazione Facebook.
+   ID app della tua applicazione Facebook.
 
 * **[!UICONTROL Application secret]**
 
-   Segreto app della tua applicazione Facebook.
+   Segreto app dell’applicazione Facebook.
 
-Se si sceglie l&#39;ospitato da questa modalità di istanza, è necessario incollare l&#39;URL Canvas sicuro nel campo **Giochi web Facebook (https)** su Facebook
+Se si sceglie l&#39;ospitato da questa modalità di istanza, l&#39;URL dell&#39;area di lavoro protetta deve essere incollato nel campo **Giochi web Facebook (https)** in Facebook
 
 Per sapere dove individuare queste credenziali, consulta questa [pagina](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
@@ -243,7 +242,7 @@ Per connetterti alla console Adobe Campaign utilizzando un account Adobe ID, dev
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID della tua organizzazione IMS. Per trovare l’ID organizzazione, fai riferimento a questa [pagina](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) (**Dove posso trovare l’ID organizzazione IMS?**).
+   ID della tua organizzazione IMS. Per trovare l’ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Dove posso trovare il mio ID organizzazione IMS?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -257,7 +256,7 @@ Per connetterti alla console Adobe Campaign utilizzando un account Adobe ID, dev
 
    Nome del tenant Adobe Experience Cloud.
 
-Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../integrations/using/configuring-ims.md).
+Per ulteriori informazioni su questa configurazione, consulta [questa pagina](../../integrations/using/configuring-ims.md).
 
 ## Analisi web {#web-analytics-external-account}
 
@@ -269,7 +268,7 @@ Per questo account esterno, la formula di calcolo per gli URL tracciati deve ess
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
-L’ account esterno **[!UICONTROL AEM (AEM instance)]** ti consente di gestire direttamente in Adobe Experience Manager il contenuto delle consegne e-mail e dei moduli.
+L’ account esterno **[!UICONTROL AEM (AEM instance)]** ti consente di gestire il contenuto delle consegne e-mail e dei moduli direttamente in Adobe Experience Manager.
 
 ![](assets/ext_account_5.png)
 
