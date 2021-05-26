@@ -6,14 +6,13 @@ description: Condivisione di tipi di pubblico con Adobe Experience Cloud
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
+exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
-
 
 # Condivisione di tipi di pubblico con Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 Con Adobe Campaign puoi condividere tipi di pubblico e segmenti con le soluzioni e i servizi di base di Adobe Experience Cloud. Sono disponibili due opzioni:
 
-1. Invia i dati dei segmenti Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare la piattaforma dati cliente in tempo reale a Campaign (RTCDP). [Ulteriori informazioni in questa sezione](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+1. Invia i dati dei segmenti Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare la piattaforma dati cliente in tempo reale a Campaign (RTCDP). [Ulteriori informazioni in questa sezione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 
 1. Integra **Adobe Campaign** con **Servizio core persone** (noto anche come **Servizio principale Profili e pubblico**) o Adobe Audience Manager. Potrai quindi:
@@ -39,6 +38,6 @@ Questa integrazione supporta due tipi di ID Adobe Experience Cloud:
 
    >[!NOTE]
    >
-   > L’origine dati ID dichiarata può ora essere utilizzata anche con l’integrazione del servizio core People .
+   > L’origine dati Declared ID (ID dichiarato) può ora essere utilizzata anche con l’integrazione del servizio core People.
    >
    >Se utilizzi l’integrazione del servizio core Persone e desideri aggiungere l’integrazione di Audience Manager, ti servirà l’aiuto di un consulente Adobe Audience Manager per evitare di perdere tutte le sincronizzazioni ID raccolte durante la transizione all’utilizzo di questa origine dati Declared ID in un contesto Adobe Audience Manager.
