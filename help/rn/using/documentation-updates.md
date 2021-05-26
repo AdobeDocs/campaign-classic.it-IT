@@ -7,9 +7,9 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3413a54b1f45d23dcec9bf363bcf714a94642245
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4367'
 ht-degree: 98%
 
 ---
@@ -441,7 +441,7 @@ La sezione Gestione degli accessi è stata aggiornata con l’**autorizzazione p
 
 Sono state aggiunte informazioni per specificare che il contenuto dei campi di personalizzazione non può superare i 1.024 caratteri. [Leggi tutto](../../delivery/using/personalization-fields.md)
 
-La documentazione del Pannello di controllo Campaign è stata integrata nel nuovo set di documentazione collaborativa. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
+La documentazione del Pannello di controllo Campaign è stata integrata nel nuovo set di documentazione collaborativa. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 La guida introduttiva sulle best practice per le consegne è stata aggiornata. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
@@ -477,7 +477,7 @@ Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e con
 
 **Nuove funzionalità incluse nella versione 19.1**
 
-Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
+Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
 
 Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
