@@ -7,11 +7,10 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: ht
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +50,7 @@ Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pag
 
 In qualità di cliente in hosting (Managed Services o ibrido), devi contattare il team di assistenza clienti per aggiornare l’ambiente.
 
-In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md)e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
@@ -63,7 +62,7 @@ In qualità di utente [!DNL Gold Standard] in hosting, potrai beneficiare automa
 ## Supporto e altri collegamenti utili{#support}
 
 * [Guida e supporto](../../support.md)
-* [Versioni del Pannello di controllo Campaign](https://docs.adobe.com/content/help/it-IT/control-panel/using/release-notes.html)
+* [Versioni del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [Ultimi aggiornamenti della documentazione](../../rn/using/documentation-updates.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
 
