@@ -6,14 +6,13 @@ description: Domande frequenti su Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 99%
 
 ---
-
 
 # Concetti chiave {#key-concepts}
 
@@ -84,7 +83,7 @@ Un flusso di lavoro può inoltre coinvolgere uno o più operatori da avvisare o 
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Come si inviano i messaggi SMS? {#how-to-send-sms-messages-}
 
