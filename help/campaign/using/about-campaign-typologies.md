@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '483'
 ht-degree: 13%
 
 ---
@@ -89,6 +89,5 @@ Sono disponibili ulteriori video dimostrativi su Campaign [qui](https://experien
 
 * [Applicare regole di business automatiche alle consegne su qualsiasi canale](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
-* [Informazioni sulle tipologie di campagne](../../campaign/using/pressure-rules.md)
+* [Guida introduttiva alle tipologie e alla gestione dell’affaticamento](../../campaign/using/pressure-rules.md)
 
-* [Gestione dell’affaticamento del marketing con le regole di pressione](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
