@@ -6,14 +6,13 @@ description: Ulteriori informazioni sulle best practice e la risoluzione dei pro
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 6%
+source-wordcount: '1156'
+ht-degree: 14%
 
 ---
-
 
 # Best practice e risoluzione dei problemi per il server SFTP {#sftp-server-usage}
 
@@ -23,7 +22,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per evitare la scadenza della password (le password hanno un periodo di validità di 90 giorni), utilizza l’autenticazione basata sulle chiavi anziché l’autenticazione tramite password. Inoltre, l’autenticazione basata sulle chiavi consente di generare più chiavi, ad esempio quando gestisci più entità. Al contrario, l&#39;autenticazione tramite password richiede la condivisione della password con tutte le entità che stai gestendo.
 
-   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Per caricare le chiavi sul server Campaign, devi fornire la chiave pubblica al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Per caricare le chiavi sul server Campaign, devi fornire la chiave pubblica al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
 
 * Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
 
@@ -43,9 +42,9 @@ Per evitare tali problemi, l&#39;Adobe consiglia di seguire le best practice rip
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, puoi monitorare l&#39;archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l&#39;istanza è ospitata su AWS, segui i passaggi descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Se l&#39;istanza è ospitata su AWS, puoi monitorare l&#39;archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere all&#39;amministratore l&#39;accesso a un utente sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
 >Tieni presente che l’istanza deve essere aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
