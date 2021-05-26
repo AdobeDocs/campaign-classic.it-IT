@@ -6,20 +6,19 @@ description: Scopri i passaggi chiave per l’aggiornamento a una nuova build
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 1%
+source-wordcount: '2353'
+ht-degree: 2%
 
 ---
-
 
 # Esecuzione di un aggiornamento della build{#performing-a-build-upgrade}
 
 Questa sezione fornisce una descrizione dettagliata del processo di aggiornamento e dei passaggi per identificare e risolvere i conflitti.
 
-L&#39;aggiornamento della build deve essere effettuato con cautela, i suoi impatti devono essere considerati in anticipo e la procedura deve essere completata con un elevato livello di disciplina. Per garantire il successo dell’aggiornamento, assicurati che solo gli utenti esperti eseguano i passaggi descritti di seguito. Inoltre, consigliamo vivamente di contattare [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi aggiornamento.
+L&#39;aggiornamento della build deve essere effettuato con cautela, i suoi impatti devono essere considerati in anticipo e la procedura deve essere completata con un elevato livello di disciplina. Per garantire il successo dell’aggiornamento, assicurati che solo gli utenti esperti eseguano i passaggi descritti di seguito. Inoltre, consigliamo vivamente di contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi aggiornamento.
 
 Sono necessari i seguenti prerequisiti:
 
@@ -84,7 +83,7 @@ Prima di avviare l’aggiornamento della build, i clienti on-premise devono eseg
 
 1. Scarica la versione più recente del [file di configurazione del server](../../installation/using/the-server-configuration-file.md).
 
-1. [Scarica la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) più recente. [Ulteriori informazioni](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
+1. [Scarica la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) più recente. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 È inoltre necessario conoscere tutte le [utili righe di comando](../../installation/using/command-lines.md) prima di avviare un aggiornamento della build:
 
@@ -218,7 +217,7 @@ Alla successiva connessione delle console client, una finestra informa gli utent
 
 Alcune configurazioni richiedono attività aggiuntive specifiche per l&#39;aggiornamento a una nuova build.
 
-#### Messaggi transazionali
+#### Messaggistica transazionale
 
 Quando la messaggistica transazionale (Message Center) è abilitata nell’istanza Campaign, devi eseguire questi passaggi aggiuntivi per eseguire l’aggiornamento:
 
