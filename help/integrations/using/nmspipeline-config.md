@@ -1,12 +1,10 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione dell’integrazione
 description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -16,14 +14,14 @@ ht-degree: 2%
 
 # Opzione pipeline NmsPipeline_Config {#nmspipeline_config}
 
-Una volta che l&#39;autenticazione funziona, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo attivatori configurati in  Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in anticipo alla pipeline.
-L&#39;opzione può essere configurata anche con un carattere jolly per intercettare tutti i trigger, indipendentemente dal nome.
+Una volta che l&#39;autenticazione funziona, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo gli attivatori configurati in Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in anticipo alla pipeline.
+Puoi anche configurare l’opzione con un carattere jolly per individuare tutti i trigger, indipendentemente dal nome.
 
-La configurazione dei trigger viene eseguita in un&#39;opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell&#39;opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
+La configurazione dei trigger viene eseguita in un’opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell’opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
 
 Questo esempio specifica due attivatori.
 
-Incollate il codice JSON da questo modello nel valore dell&#39;opzione. Assicurarsi di rimuovere i commenti.
+Incolla il codice JSON da questo modello nel valore dell’opzione . Assicurati di rimuovere i commenti.
 
 ```
 {
@@ -45,7 +43,7 @@ Incollate il codice JSON da questo modello nel valore dell&#39;opzione. Assicura
 }
 ```
 
-Questo secondo esempio intercetta tutti i trigger.
+Questo secondo esempio cattura tutti i trigger.
 
 ```
 {
@@ -66,21 +64,21 @@ Questo secondo esempio intercetta tutti i trigger.
 
 >[!NOTE]
 >
->Il valore UID [!DNL Trigger] per un nome di attivatore specifico nell&#39;interfaccia di Analytics si trova come parte dei parametri della query URL nell&#39;interfaccia Triggers. L&#39;UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nella pipeline.JS per mappare l&#39;UID trigger a un&#39;etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
+>Il valore UID [!DNL Trigger] di un nome di trigger specifico nell’interfaccia di Analytics si trova come parte dei parametri della stringa di query URL nell’interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto in pipeline.JS per mappare l’UID trigger su un’etichetta semplice da usare che può essere memorizzata in una colonna Trigger Name nello schema pipelineEvents.
 
 ## Il parametro consumer {#consumer-parameter}
 
-La tubazione funziona con un modello &quot;fornitore e consumatore&quot;. Ci possono essere molti consumatori sulla stessa coda. I messaggi vengono &quot;consumati&quot; solo per un singolo consumatore. Ogni consumatore riceve la propria &quot;copia&quot; dei messaggi.
+La pipeline funziona con un modello &quot;fornitore e consumatore&quot;. Ci possono essere molti consumatori sulla stessa coda. I messaggi vengono &quot;consumati&quot; solo per un singolo consumatore. Ogni consumatore ottiene la propria &quot;copia&quot; dei messaggi.
 
-Il parametro &quot;consumer&quot; identifica l’istanza come uno di questi consumatori. È l&#39;identità dell&#39;istanza che chiama la pipeline. Potete riempirlo con il nome dell’istanza. Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. L&#39;utilizzo di consumatori diversi per istanze diverse garantisce che ogni messaggio venga inviato a ogni istanza.
+Il parametro &quot;consumer&quot; identifica l’istanza come uno di questi consumatori. È l’identità dell’istanza che chiama la pipeline. Puoi riempirlo con il nome dell’istanza. Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. Se utilizzi consumatori diversi per istanze diverse, ogni messaggio viene inviato a ogni istanza.
 
-## Come configurare l&#39;opzione pipeline {#configure-pipeline-option}
+## Come configurare l’opzione Pipeline {#configure-pipeline-option}
 
-Aggiungere o modificare  attivatori di Experience Cloud nell&#39;array &quot;triggers&quot;; non modificare il resto.
-Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito Web](http://jsonlint.com/).
+Aggiungere o modificare attivatori di Experience Cloud sotto l&#39;array &quot;triggers&quot;; non modificare il resto.
+Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito web](http://jsonlint.com/).
 
-* &quot;name&quot; è l&#39;ID attivatore. Un carattere jolly &quot;*&quot; rileva tutti i trigger.
-* &quot;Consumer&quot; è una qualsiasi stringa univoca che identifica in modo univoco l&#39;istanza nlserver. In genere può essere il nome dell&#39;istanza stesso. Per più ambienti (dev/stage/prod), accertatevi che sia univoco per ciascuno di essi in modo che ogni istanza ottenga una copia del messaggio.
-* [!DNL Pipelined] supporta anche l&#39;argomento &quot;alias&quot;.
+* &quot;name&quot; è l&#39;ID trigger. Un carattere jolly &quot;*&quot; cattura tutti i trigger.
+* &quot;Consumer&quot; è una stringa univoca che identifica in modo univoco l&#39;istanza nlserver. Di solito può essere il nome dell&#39;istanza stessa. Per più ambienti (dev/stage/prod), assicurati che sia univoco per ciascuno di essi in modo che ogni istanza ottenga una copia del messaggio.
+* [!DNL Pipelined] supporta anche l’argomento &quot;alias&quot;.
 
-Riavviate [!DNL pipelined] dopo aver apportato le modifiche.
+Riavvia [!DNL pipelined] dopo aver apportato modifiche.
