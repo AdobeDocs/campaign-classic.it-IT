@@ -1,47 +1,45 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione dei campioni di popolazione
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
+exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
+# Configurazione dei campioni di popolazione {#step-2--configuring-population-samples}
 
-# Configurazione dei campioni popolazione {#step-2--configuring-population-samples}
+## Configurazione dell’attività Query {#configuring-the-query-activity}
 
-## Configurazione dell&#39;attività Query {#configuring-the-query-activity}
-
-* Fate doppio clic sull&#39;attività **[!UICONTROL Query]**.
+* Fai doppio clic sull’attività **[!UICONTROL Query]** .
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Fare clic sul collegamento **[!UICONTROL Edit query]** e selezionare i destinatari desiderati.
+* Fai clic sul collegamento **[!UICONTROL Edit query]** e seleziona i destinatari desiderati.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Collegate l&#39;attività **[!UICONTROL Query]** all&#39;attività **[!UICONTROL Split]**.
+* Collega l’attività **[!UICONTROL Query]** all’attività **[!UICONTROL Split]** .
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Configurazione dell&#39;attività divisa {#configuring-the-split-activity}
+## Configurazione dell’attività Split {#configuring-the-split-activity}
 
-Questa attività consente di creare diverse popolazioni: quella che riceve la consegna A, quella che riceve la consegna B, e la popolazione rimanente. Utilizzando la selezione casuale è possibile eseguire il targeting di una parte della popolazione di ciascuna consegna.
+Questa attività ti consente di creare diverse popolazioni: quella che riceve la consegna A, quella che riceve la consegna B, e la popolazione rimanente. L’utilizzo di una selezione casuale consente di eseguire il targeting di solo una parte della popolazione di ciascuna consegna.
 
-1. Creazione popolazione A:
+1. Creazione della popolazione A:
 
-   * Fate doppio clic sull&#39;attività **[!UICONTROL Split]**.
+   * Fai doppio clic sull’attività **[!UICONTROL Split]** .
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
-   * Nella scheda esistente, modificare l&#39;etichetta nella popolazione A.
+   * Nella scheda esistente, modifica l’etichetta nel gruppo A.
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
@@ -49,17 +47,17 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Fare clic sul collegamento **[!UICONTROL Edit]**, selezionare **[!UICONTROL Activate random sampling]**, quindi fare clic su **[!UICONTROL Next]**.
+   * Fai clic sul collegamento **[!UICONTROL Edit]**, seleziona **[!UICONTROL Activate random sampling]** e fai clic su **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * Impostate la soglia su 10%, quindi fate clic su **[!UICONTROL Finish]**.
+   * Imposta la soglia al 10%, quindi fai clic su **[!UICONTROL Finish]**.
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
-1. Creazione popolazione B:
+1. Creazione della popolazione B:
 
-   * Fare clic su **[!UICONTROL Add]** per creare una nuova scheda per la popolazione B.
+   * Fai clic su **[!UICONTROL Add]** per creare una nuova scheda per il gruppo B.
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -77,8 +75,8 @@ Questa attività consente di creare diverse popolazioni: quella che riceve la co
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * Modificate l&#39;etichetta per specificare che la popolazione non include né A né B, quindi fate clic su **[!UICONTROL OK]** per chiudere l&#39;attività.
+   * Modifica l’etichetta per specificare che questa popolazione non include né A né B, quindi fai clic su **[!UICONTROL OK]** per chiudere l’attività.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-È ora possibile creare i due modelli di consegna (vedere [Passaggio 3: Create due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
+Ora puoi creare i due modelli di consegna (vedi [Passaggio 3: Crea due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
