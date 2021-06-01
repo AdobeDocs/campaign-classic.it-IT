@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Definizione della popolazione target
 description: Definizione della popolazione target
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
+exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 2%
 
 ---
-
 
 # Definizione della popolazione target {#defining-the-target-population}
 
@@ -228,7 +226,7 @@ Puoi combinare la definizione di un target di bozza specifico e l’utilizzo di 
 Vedi anche:
 
 * [Selezione della destinazione della bozza](#selecting-the-proof-target)
-* [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md)
+* [Informazioni sugli indirizzi seed](../../delivery/using/about-seed-addresses.md)
 * [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Video tutorial {#seeds-and-proofs-video}
