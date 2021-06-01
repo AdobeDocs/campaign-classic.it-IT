@@ -1,63 +1,60 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Interazioni anonime
 description: Interazioni anonime
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
 
 ---
 
-
 # Interazioni anonime{#anonymous-interactions}
 
-![](assets/do-not-localize/how-to-video.png) Guardate questo  [](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video per avere una panoramica di come le offerte vengono distribuite a target identificati e anonimi.
+![](assets/do-not-localize/how-to-video.png) Guarda questo  [](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video per avere una panoramica su come le offerte vengono consegnate a destinazioni identificate e anonime.
 
-## Targeting e memorizzazione di un ambiente per interazioni anonime {#targeting-and-storing-an-environment-for-anonymous-interactions}
+## Targeting e archiviazione di un ambiente per interazioni anonime {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Per impostazione predefinita, Interaction viene fornito con un ambiente preconfigurato per il targeting della tabella dei destinatari (offerte identificate). Se desiderate eseguire il targeting di un&#39;altra tabella (tabella visitatore per le offerte anonime o una tabella di destinazione specifica), dovete utilizzare la procedura guidata di mappatura della destinazione per creare l&#39;ambiente. Per ulteriori informazioni, vedere [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Per impostazione predefinita, l’interazione viene fornita con un ambiente preconfigurato per eseguire il targeting della tabella dei destinatari (offerte identificate). Se desideri eseguire il targeting di un’altra tabella (tabella dei visitatori per offerte anonime o tabella dei destinatari specifica), devi utilizzare la procedura guidata di mappatura di destinazione per creare l’ambiente. Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-Quando si crea un ambiente anonimo tramite la procedura guidata di creazione della mappatura, la casella **[!UICONTROL Environment dedicated to incoming anonymous interactions]** viene selezionata automaticamente nella scheda **[!UICONTROL General]** dell&#39;ambiente.
+Quando crei un ambiente anonimo tramite la procedura guidata di creazione della mappatura, la casella **[!UICONTROL Environment dedicated to incoming anonymous interactions]** viene selezionata automaticamente nella scheda **[!UICONTROL General]** dell’ambiente.
 
-Il **[!UICONTROL Targeting dimension]** viene completato automaticamente. Per impostazione predefinita, collega la tabella del visitatore.
+Il **[!UICONTROL Targeting dimension]** viene completato automaticamente. Per impostazione predefinita, si collega alla tabella dei visitatori.
 
-Viene visualizzato il campo **[!UICONTROL Visitor folder]**. Viene completato automaticamente il collegamento alla cartella **[!UICONTROL Visitors]**. Questo campo consente di scegliere dove memorizzare i profili dei visitatori.
+Viene visualizzato il campo **[!UICONTROL Visitor folder]** . Viene completato automaticamente il collegamento alla cartella **[!UICONTROL Visitors]**. Questo campo ti consente di scegliere dove memorizzare i profili dei visitatori.
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->Se desiderate filtrare diversi tipi di visitatori, ad esempio nel caso di offerte anonime presentate per uno o più marchi, dovete creare un ambiente per ciascun marchio e una cartella di tipo **[!UICONTROL Visitors]** per ciascun ambiente.
+>Se desideri filtrare diversi tipi di visitatori, ad esempio nel caso di offerte anonime presentate per uno o più marchi, devi creare un ambiente per ogni marchio e una cartella di tipo **[!UICONTROL Visitors]** per ogni ambiente.
 
-## Catalogo delle offerte per le interazioni anonime {#offer-catalog-for-anonymous-interactions}
+## Catalogo delle offerte per interazioni anonime {#offer-catalog-for-anonymous-interactions}
 
-Proprio come le interazioni in uscita, le interazioni in entrata sono organizzate in un catalogo di offerte, composto da categorie e offerte.
+Proprio come le interazioni in uscita, le interazioni in entrata sono organizzate in un catalogo di offerte composto da categorie e offerte.
 
-Per creare categorie e spazi, applicate lo stesso processo utilizzato per i visitatori identificati (consultate [Creazione di categorie di offerte](../../interaction/using/creating-offer-categories.md) e [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
+Per creare categorie e spazi, applica lo stesso processo applicato ai visitatori identificati (consulta [Creazione di categorie di offerta](../../interaction/using/creating-offer-categories.md) e [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
 
 ## Visitatori anonimi {#anonymous-visitors}
 
-I visitatori anonimi possono essere inviati a un processo di identificazione dei cookie quando si connettono. Questo riconoscimento implicito si basa sulla cronologia del browser del visitatore.
+I visitatori anonimi possono essere sottoposti a un processo di identificazione dei cookie al momento della connessione. Questo riconoscimento implicito si basa sulla cronologia del browser del visitatore.
 
-Durante questo passaggio, viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, il visitatore viene riconosciuto (viene quindi identificato implicitamente), in altri casi, non viene riconosciuto (e quindi rimane anonimo).
+Durante questo passaggio viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, il visitatore viene riconosciuto (viene quindi identificato implicitamente), in altri casi non viene riconosciuto (e quindi rimane anonimo).
 
-Per eseguire questa analisi, per lo spazio delle offerte, selezionate l&#39;opzione **[!UICONTROL Implicitly identify the individual based on their browser history]**.
+Per eseguire questa analisi, per lo spazio dell’offerta, seleziona l’opzione **[!UICONTROL Implicitly identify the individual based on their browser history]** .
 
 ![](assets/identification_anonymous_visitors.png)
 
 ## Elaborazione di visitatori anonimi non identificati {#processing-unidentified-anonymous-visitors}
 
-Dopo l&#39;analisi, se un visitatore anonimo non è identificato, puoi archiviare i dati in uno spazio specifico. In questo modo potrete suggerire offerte specificamente indirizzate a questo tipo di visitatore, in linea con le regole di tipologia specificate.
+Dopo l’analisi, se un visitatore anonimo non è identificato, puoi memorizzare i suoi dati in uno spazio specifico. Questo ti consente di suggerire offerte specificamente mirate a questo tipo di visitatore, che corrispondono alle regole di tipologia specificate.
 
-Se non esiste alcun elemento che consenta di identificare un contatto, o se non si desidera suggerire un&#39;offerta identificata a un contatto che possa essere implicitamente identificato, è possibile scegliere di eseguire un fallback su un ambiente anonimo.
+Se non esiste un elemento che ti consenta di identificare un contatto, o se non desideri suggerire un&#39;offerta identificata a un contatto che possa essere identificato implicitamente, puoi scegliere di eseguire un fallback su un ambiente anonimo.
 
-A questo scopo, controllate il **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**, quindi specificate l&#39;ambiente dedicato a questi visitatori non identificati nel **[!UICONTROL Linked anonymous space]** quando specificate uno spazio di offerta.
+A questo scopo, controlla **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**, quindi specifica l’ambiente dedicato a questi visitatori non identificati nel **[!UICONTROL Linked anonymous space]** quando specifichi uno spazio di offerta.
 
 ![](assets/anonymous_to_anonymous_environment.png)
-
