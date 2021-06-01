@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Guida introduttiva agli operatori Campaign
 description: Scopri come creare e gestire gli utenti delle campagne
-feature: Access Management
+feature: Gestione degli accessi
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 580282ce-ee30-422a-8724-9c328637cc39
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1148'
 ht-degree: 2%
 
 ---
-
 
 # Creare e gestire gli operatori {#operators}
 
