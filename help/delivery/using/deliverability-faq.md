@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Punti chiave nella gestione del recapito messaggi in Adobe Campaign Classic
 description: Quali sono i punti chiave da verificare durante la gestione del recapito messaggi in Adobe Campaign Classic?
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
+exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Risoluzione dei problemi di recapito{#deliverability-faq}
 
@@ -42,7 +40,7 @@ Se ricevi sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#39;
 * Aggiorna i moduli di abbonamento per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dal target.
 
-Se il problema persiste, contatta il servizio commerciale o di recapito messaggi [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Se il problema persiste, contatta il servizio commerciale o di recapito messaggi [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Elenco Bloccati a confronto {#denylist-versus-quarantine}
 
