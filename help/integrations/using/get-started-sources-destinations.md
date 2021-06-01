@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Guida introduttiva a Origini e Destinazioni
+title: Guida introduttiva a origini e destinazioni
 description: Ulteriori informazioni su Origini e Destinazioni Adobe Experience Platform.
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b4da54c122e75a175f6f586a05955b3dfed00c1e
+exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# Guida introduttiva a Origini e Destinazioni {#rtcdp}
+# Guida introduttiva a origini e destinazioni {#rtcdp}
 
 ## Informazioni su origini e destinazioni
 
@@ -44,4 +42,4 @@ Una volta configurati i connettori, puoi impostare un’importazione o un’espo
 Per ulteriori informazioni su come impostare questi processi di importazione ed esportazione, consulta le sezioni seguenti:
 
 * [Inserire segmenti Adobe Experience Platform in Campaign](../../integrations/using/ingest-aep-data.md)
-* [Esportare dati da Campaign a Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
+* [Esportare dati da Campaign ad Adobe Experience Platform](../../integrations/using/export-campaign-data.md)
