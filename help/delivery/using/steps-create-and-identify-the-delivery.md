@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione e identificazione della consegna
 description: Creazione e identificazione della consegna
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
 
 ---
-
 
 # Creazione e identificazione della consegna {#create-and-identify-the-delivery}
 
@@ -53,6 +51,5 @@ Il contenuto della consegna è pronto per essere configurato. La definizione del
 
 * [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
 * [Definizione del contenuto dell’SMS](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [Definizione del contenuto della direct mail](../../delivery/using/defining-the-direct-mail-content.md)
+* [Definizione del contenuto della direct mailing](../../delivery/using/defining-the-direct-mail-content.md)
 * [Notifiche push](../../delivery/using/about-mobile-app-channel.md)
-
