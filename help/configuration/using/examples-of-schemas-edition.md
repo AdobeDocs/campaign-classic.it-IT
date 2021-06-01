@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Esempi di modifica degli schemi
 description: Esempi di modifica degli schemi
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
 
 ---
 
-
 # Esempi di modifica degli schemi{#examples-of-schemas-edition}
 
 ## Estensione di una tabella {#extending-a-table}
 
-Per estendere la tabella dei destinatari dello schema **nms:destinatario**, attenersi alla procedura descritta di seguito.
+Per estendere la tabella dei destinatari dello schema **nms:recipient** , procedi come segue:
 
-1. Create lo schema di estensione (**cus:extension**) utilizzando i dati seguenti:
+1. Crea lo schema dell&#39;estensione (**cus:extension**) utilizzando i seguenti dati:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +40,13 @@ Per estendere la tabella dei destinatari dello schema **nms:destinatario**, atte
    </srcSchema>
    ```
 
-   In questo esempio, viene aggiunto un campo indicizzato (**fidelity**) e l&#39;elemento **location** (che esisteva già nello schema **nms:receive**) viene completato con un campo enumerato (**area**).
+   In questo esempio, viene aggiunto un campo indicizzato (**fidelity**) e l&#39;elemento **location** (già presente nello schema **nms:recipient**) viene completato con un campo enumerato (**area**).
 
    >[!IMPORTANT]
    >
-   >Ricordare di aggiungere l&#39;attributo **extendedSchema** per fare riferimento allo schema delle estensioni.
+   >Ricorda di aggiungere l&#39;attributo **ExtendedSchema** per fare riferimento allo schema dell&#39;estensione.
 
-1. Verificare che lo schema esteso sia lo schema **nms:Recipients** e che siano presenti i dati aggiuntivi:
+1. Controlla che lo schema esteso sia lo schema **nms:recipient** e che i dati aggiuntivi siano presenti:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -86,7 +84,7 @@ Per estendere la tabella dei destinatari dello schema **nms:destinatario**, atte
 
 ## Tabella raccolta collegata {#linked-collection-table}
 
-Questa sezione descrive come creare una tabella di ordine collegata alla tabella dei destinatari con cardinalità 1-N.
+Questa sezione descrive come creare una tabella dell’ordine collegata alla tabella dei destinatari con cardinalità 1-N.
 
 Schema origine tabella ordine:
 
@@ -103,7 +101,7 @@ Schema origine tabella ordine:
 </srcSchema>
 ```
 
-Il tipo di tabella è **autopk** al fine di creare una chiave primaria generata automaticamente da utilizzare per il join del collegamento alla tabella del destinatario.
+Il tipo di tabella è **autopk** per creare una chiave primaria generata automaticamente che deve essere utilizzata dal join del collegamento alla tabella dei destinatari.
 
 Schema generato:
 
@@ -136,7 +134,7 @@ Schema generato:
 </schema>
 ```
 
-Lo script SQL per la creazione di tabelle è il seguente:
+Lo script SQL per la creazione della tabella è il seguente:
 
 ```
 CREATE TABLE CusOrder(dTotal DOUBLE PRECISION NOT NULL Default 0, iOrderId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, sNumber VARCHAR(128), tsDate TIMESTAMP Default NULL);
@@ -147,13 +145,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->Il comando SQL INSERT INTO alla fine dello script consente di inserire un record di identificatore impostato su 0 per simulare i join esterni.
+>Il comando SQL INSERT INTO alla fine dello script consente di inserire un record di identificazione impostato su 0 per simulare i join esterni.
 
-## Tabella di estensione {#extension-table}
+## Tabella delle estensioni {#extension-table}
 
 Una tabella di estensione consente di estendere il contenuto di una tabella esistente in una tabella collegata di cardinalità 1-1.
 
-Lo scopo di una tabella di estensione è di evitare limitazioni al numero di campi supportati in una tabella, o di ottimizzare lo spazio occupato dai dati, che viene consumato su richiesta.
+Lo scopo di una tabella di estensione è quello di evitare limitazioni al numero di campi supportati in una tabella o di ottimizzare lo spazio occupato dai dati, che viene utilizzato su richiesta.
 
 Creazione dello schema della tabella di estensione (**cus:feature**):
 
@@ -167,7 +165,7 @@ Creazione dello schema della tabella di estensione (**cus:feature**):
 </srcSchema>
 ```
 
-Creazione di uno schema di estensione sulla tabella ricevente per aggiungere il collegamento della cardinalità 1-1:
+Creazione di uno schema di estensione nella tabella dei destinatari per aggiungere il collegamento della cardinalità 1-1:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipient" mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -179,7 +177,7 @@ Creazione di uno schema di estensione sulla tabella ricevente per aggiungere il 
 
 >[!NOTE]
 >
->La definizione del collegamento tra la tabella del destinatario e la tabella delle estensioni deve essere compilata dallo schema che contiene la chiave esterna.
+>La definizione del collegamento tra la tabella dei destinatari e la tabella delle estensioni deve essere compilata dallo schema contenente la chiave esterna.
 
 Lo script SQL per la creazione della tabella di estensione è il seguente:
 
@@ -189,7 +187,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-Lo script di aggiornamento SQL della tabella destinatari è il seguente:
+Lo script di aggiornamento SQL della tabella dei destinatari è il seguente:
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -199,9 +197,9 @@ ALTER TABLE NmsRecipient ALTER COLUMN iFeatureId SET Default 0;
 CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 ```
 
-## Tabella overflow {#overflow-table}
+## Tabella di overflow {#overflow-table}
 
-Una tabella di overflow è una tabella di estensione (cardinalità 1-1), ma la dichiarazione del collegamento alla tabella da estendere viene compilata nello schema della tabella di overflow.
+Una tabella di overflow è una tabella di estensione (cardinalità 1-1), ma la dichiarazione del collegamento alla tabella da estendere è compilata nello schema della tabella di overflow.
 
 La tabella di overflow contiene la chiave esterna della tabella da estendere. La tabella da estendere non è pertanto modificata. La relazione tra le due tabelle è il valore della chiave primaria della tabella da estendere.
 
@@ -224,9 +222,9 @@ Creazione dello schema della tabella di overflow (**cus:overflow**):
 
 >[!NOTE]
 >
->La chiave primaria della tabella di overflow è il collegamento alla tabella da estendere (&quot;schema nms:Recipient&quot; nel nostro esempio).
+>La chiave primaria della tabella di overflow è il collegamento alla tabella da estendere ( schema &quot;nms:recipient&quot; nel nostro esempio).
 
-Lo script SQL per la creazione di tabelle è il seguente:
+Lo script SQL per la creazione della tabella è il seguente:
 
 ```
 CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
@@ -235,11 +233,11 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 ## Tabella delle relazioni {#relationship-table}
 
-Una tabella di relazioni consente di collegare due tabelle con cardinalità N-N. Questa tabella contiene solo le chiavi esterne delle tabelle da collegare.
+Una tabella di relazione consente di collegare due tabelle con cardinalità N-N. Questa tabella contiene solo le chiavi esterne delle tabelle da collegare.
 
-Esempio di una tabella di relazione tra i gruppi (**nms:group**) e i destinatari (**nms:destinatario**).
+Esempio di tabella di relazione tra i gruppi (**nms:group**) e i destinatari (**nms:recipient**).
 
-Schema di origine della tabella di relazione:
+Schema di origine della tabella delle relazioni:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -291,7 +289,7 @@ Lo schema generato è il seguente:
 </schema>
 ```
 
-Lo script SQL per la creazione di tabelle è il seguente:
+Lo script SQL per la creazione della tabella è il seguente:
 
 ```
 CREATE TABLE CusRcpGrpRel( iRcpGroupId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0);
@@ -299,13 +297,13 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## Caso di utilizzo: collegare un campo a una tabella di riferimento esistente {#uc-link}
+## Caso d’uso: collegare un campo a una tabella di riferimento esistente {#uc-link}
 
-Questo esempio illustra come utilizzare una tabella di riferimento esistente come alternativa ai meccanismi di enumerazione integrati  Adobe Campaign (enum, userEnum o dbEnum).
+Questo caso d’uso illustra come utilizzare una tabella di riferimento esistente come alternativa ai meccanismi di enumerazione incorporati di Adobe Campaign (enum, userEnum o dbEnum).
 
 È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l&#39;attributo **displayAsField=&quot;true&quot;**.
 
-In questo esempio, la tabella di riferimento contiene un elenco di nomi bancari e identificatori:
+In questo esempio, la tabella di riferimento contiene un elenco di nomi e identificatori bancari:
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -321,24 +319,24 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In qualsiasi tabella che utilizza questa tabella di riferimento, definite un collegamento e aggiungete l&#39;attributo **displayAsField=&quot;true&quot;**.
+In qualsiasi tabella che utilizzi questa tabella di riferimento, definisci un collegamento e aggiungi l’attributo **displayAsField=&quot;true&quot;** .
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-L&#39;interfaccia utente non visualizza un collegamento ma un campo. Quando l&#39;utente seleziona tale campo, può selezionare un valore dalla tabella di riferimento o utilizzare la funzione di completamento automatico.
+L’interfaccia utente non visualizza un collegamento, ma un campo. Quando l’utente seleziona tale campo, può selezionare un valore dalla tabella di riferimento o utilizzare la funzione di completamento automatico.
 
 ![](assets/schema-edition-ex.png)
 
-* Per completare automaticamente il componente, è necessario definire una stringa di calcolo nella tabella di riferimento.
+* Per completare automaticamente la stringa, è necessario definire una stringa di calcolo nella tabella di riferimento.
 
-* Aggiungete l&#39;attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per evitare che  Adobe Campaign crei un indice sui valori memorizzati nella tabella di origine del collegamento.
+* Aggiungi l&#39;attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire ad Adobe Campaign di creare un indice sui valori memorizzati nella tabella sorgente del collegamento.
 
 ## Argomenti correlati
 
 * [Utilizzo delle enumerazioni](../../platform/using/managing-enumerations.md)
 
-* [Guida introduttiva agli schemi campagna](../../configuration/using/about-schema-edition.md)
+* [Guida introduttiva agli schemi di Campaign](../../configuration/using/about-schema-edition.md)
 
 * [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md)
