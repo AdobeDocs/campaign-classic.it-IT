@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Se utilizzi più istanze di esecuzione, devi creare un numero illimitato di acco
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Uso di più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Utilizzare diverse istanze di controllo](#using-several-control-instances).
 
 ### Creare un account esterno
 
@@ -91,7 +91,7 @@ Per creare un account esterno di tipo **[!UICONTROL Execution instance]**, appli
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Per ulteriori informazioni su Federated Data Access (FDA), consulta [Accesso a un database esterno](../../installation/using/about-fda.md).
+   Per ulteriori informazioni su Federated Data Access (FDA), consulta [questa sezione](../../installation/using/about-fda.md).
 
 1. Fai clic su **[!UICONTROL Test the connection]** per verificare che l’istanza di controllo e l’istanza di esecuzione siano collegate.
 
@@ -131,7 +131,7 @@ Per utilizzare una password vuota, vai alle istanze di esecuzione e definisci un
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Uso di più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Utilizzare diverse istanze di controllo](#using-several-control-instances).
 
 1. In un’istanza di esecuzione, passa alla cartella dell’operatore ( **[!UICONTROL Administration > Access management > Operators]** ).
 1. Selezionare l&#39;agente **Centro messaggi**.
@@ -162,7 +162,7 @@ Nella struttura di tutte le istanze di esecuzione, crea una cartella per operato
 >
 >I passaggi seguenti devono essere eseguiti **sulle istanze di controllo**.
 
-1. Nell&#39;istanza di controllo **Control 1**, crea un account esterno per istanza di esecuzione e immetti l&#39;operatore **mc1** in ciascun account esterno. L’operatore **mc1** verrà quindi creato su tutte le istanze di esecuzione (consulta [Configurare le istanze di esecuzione](#configuring-execution-instances)).
+1. Nell&#39;istanza di controllo **Control 1**, crea un account esterno per istanza di esecuzione e immetti l&#39;operatore **mc1** in ciascun account esterno. L’operatore **mc1** verrà in seguito creato su tutte le istanze di esecuzione (consulta [Configurare le istanze di esecuzione](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
