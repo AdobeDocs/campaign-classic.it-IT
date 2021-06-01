@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rete, database e SSL/TLS
 description: Ulteriori informazioni sulle best practice per la configurazione di rete, database e SSL/TLS.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
+exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
-
 # Rete, database e SSL/TLS {#network-database}
 
-## Configurazione di rete
+## Configurazione della rete
 
 Una cosa molto importante da verificare quando si distribuisce un tipo di architettura on-premise è la [configurazione di rete](../../installation/using/network-configuration.md). Assicurati che il server Tomcat NON sia direttamente accessibile all&#39;esterno del server:
 
