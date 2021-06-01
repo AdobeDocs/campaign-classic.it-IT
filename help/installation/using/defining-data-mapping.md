@@ -1,46 +1,44 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Accesso a un database esterno
 description: Accesso a un database esterno
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 5%
 
 ---
 
-
 # Definizione della mappatura dei dati {#defining-data-mapping}
 
- Adobe Campaign consente di definire la mappatura dei dati in una tabella esterna.
+Adobe Campaign ti consente di definire la mappatura dei dati in una tabella esterna.
 
-A tal fine, una volta creato lo schema della tabella esterna, è necessario creare una nuova mappatura di consegna per utilizzare i dati in questa tabella come destinazione di consegna.
+A questo scopo, una volta creato lo schema della tabella esterna, devi creare una nuova mappatura della consegna per utilizzare i dati presenti in questa tabella come destinazione della consegna.
 
-A questo scopo, eseguire i seguenti passaggi:
+A questo scopo, esegui i seguenti passaggi:
 
-1. Create una nuova mappatura di consegna e scegliete la dimensione di targeting, lo schema appena creato, ad esempio.
+1. Crea una nuova mappatura di consegna e scegli la dimensione di targeting, lo schema appena creato, ad esempio.
 
    ![](assets/wf_new_mapping_create_fda.png)
 
-1. Indicate i campi in cui sono memorizzate le informazioni di consegna (cognome, nome, e-mail, indirizzo, ecc.).
+1. Indica i campi in cui sono memorizzate le informazioni di consegna (cognome, nome, e-mail, indirizzo, ecc.).
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Specificate i parametri per l’archiviazione delle informazioni, compreso il suffisso degli schemi di estensione per facilitarne l’identificazione.
+1. Specifica i parametri per l’archiviazione delle informazioni, compreso il suffisso degli schemi di estensione, in modo che siano facilmente identificabili.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   È possibile scegliere se memorizzare le esclusioni (**escludere**), con i messaggi (**broadcast**) o in una tabella separata.
+   Puoi scegliere di memorizzare le esclusioni (**excludelog**), con i messaggi (**broadlog**) o in una tabella separata.
 
-   Potete anche scegliere se gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
+   Puoi anche scegliere di gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
 
-1. Selezionare quindi le estensioni da prendere in considerazione. Il tipo di estensione dipende dai parametri e dalle opzioni della piattaforma (visualizzate il contratto di licenza).
+1. Quindi seleziona le estensioni da prendere in considerazione. Il tipo di estensione dipende dai parametri e dalle opzioni della piattaforma (visualizza il contratto di licenza).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Fate clic sul pulsante **[!UICONTROL Save]** per avviare la creazione della mappatura della consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
+   Fai clic sul pulsante **[!UICONTROL Save]** per avviare la creazione della mappatura della consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
