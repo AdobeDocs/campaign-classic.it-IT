@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creare contenuti personalizzati
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
+exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
 
 ---
-
 
 # Creare contenuti personalizzati {#build-personalized-content}
 
@@ -106,7 +104,7 @@ Ulteriori informazioni [in questa sezione](../../delivery/using/sms-set-up.md#cr
 
 Ulteriori informazioni [in questa sezione](../../delivery/using/sms-set-up.md#about-character-transliteration).
 
-## Lavoro sulla formattazione {#formatting}
+## Operazioni di formattazione {#formatting}
 
 Per evitare errori di formattazione comuni, controlla i seguenti elementi:
 
