@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rilevamento degli URL di tracciamento
 description: Ulteriori informazioni sul pattern consigliato per il tracciamento degli URL
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Rilevamento degli URL di tracciamento
 
@@ -37,7 +35,7 @@ Dopo aver elaborato le istruzioni `<%@`, l’URL da tracciare ha la seguente sin
 
 ## Pattern non protetto
 
-Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di avere alcuna personalizzazione nella parte dell’URL relativa al nome host per evitare potenziali lacune nella sicurezza. Ulteriori informazioni in [questa pagina](../../installation/using/privacy.md#url-personalization).
+Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di avere alcuna personalizzazione nella parte dell’URL relativa al nome host per evitare potenziali lacune nella sicurezza. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/privacy.md#url-personalization).
 
 Ad esempio, la sintassi `<a href="http://<%=myURL%>">` è **non sicura** e deve essere evitata.
 
