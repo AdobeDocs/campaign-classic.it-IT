@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione delle opzioni di tracciamento URL
 description: Configurazione delle opzioni di tracciamento URL
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
+exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
-
 # Configurazione delle opzioni di tracciamento URL{#personalizing-url-tracking}
 
-Le impostazioni avanzate di tracciamento dei messaggi sono accessibili tramite l&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti della procedura guidata di consegna.
+Le impostazioni avanzate di tracciamento dei messaggi sono accessibili tramite l’ icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti della procedura guidata di consegna.
 
 >[!NOTE]
 >
->In questa finestra è anche configurata la gestione delle immagini nelle e-mail. Vedere [Aggiunta di immagini](../../delivery/using/defining-the-email-content.md#adding-images).
+>Anche la gestione delle immagini nelle e-mail è configurata in questa finestra. Consulta [Aggiunta di immagini](../../delivery/using/defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -31,17 +29,17 @@ Puoi configurare le opzioni di tracciamento:
 
    >[!CAUTION]
    >
-   >Quando il tracciamento non è attivato in una consegna (ad es. **[!UICONTROL Activate tracking]** opzione non selezionata), rapporti e dati relativi al tracciamento non sono disponibili: I rapporti sugli URL aperti, clic con il pulsante destro del mouse e tracciati non visualizzeranno alcun dato e **[!UICONTROL Tracking logs]** le schede non verranno visualizzate per la consegna.
+   >Quando il tracciamento non viene attivato su una consegna (ad es. **[!UICONTROL Activate tracking]** opzione non selezionata), rapporti e dati relativi al tracciamento non sono disponibili: I rapporti relativi alle aperture, agli hot click e agli URL tracciati non mostreranno alcun dato e **[!UICONTROL Tracking logs]** non verranno visualizzate le schede per questa consegna.
 
-* Attiva/Disattiva il tracciamento per i messaggi.
+* Attiva/Disattiva il tracciamento per le aperture dei messaggi.
 
 ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-Gli URL tracciati sono elencati nella finestra centrale del modulo ad albero.
+Gli URL tracciati sono elencati nella finestra centrale sotto forma di struttura.
 
 Puoi attivare o disattivare il tracciamento singolarmente per ogni URL del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/how-to-configure-tracked-links.md).
 
-La scheda **[!UICONTROL Advanced]** consente di personalizzare le formule di calcolo degli URL tracciati e l&#39;URL di apertura.
+La scheda **[!UICONTROL Advanced]** ti consente di personalizzare le formule di calcolo degli URL tracciati e dell’URL di apertura.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
