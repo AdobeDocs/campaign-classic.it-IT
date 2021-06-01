@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione e-mail tecnica
 description: Scopri come configurare Campaign per controllare l’output delle istanze durante la consegna delle e-mail.
@@ -7,15 +6,14 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-translation-type: tm+mt
-source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
 
 ---
 
-# Configurazioni delle e-mail tecniche{#email-deliverability}
+# Configurazioni tecniche delle e-mail{#email-deliverability}
 
 ## Panoramica {#overview}
 
