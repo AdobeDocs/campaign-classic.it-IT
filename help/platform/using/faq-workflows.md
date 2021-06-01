@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Domande frequenti sui flussi di lavoro
 description: Domande frequenti su Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
 
 ---
-
 
 # Domande frequenti sui flussi di lavoro {#workflows-faq}
 
@@ -25,7 +23,7 @@ Scopri come orchestrare processi e attività con i flussi di lavoro di Adobe Cam
 
 ## Come posso importare dati in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Scopri le best practice per importare i dati in [questa sezione](../../platform/using/import-export-best-practices.md).
+Scopri le best practice per importare dati in [questa sezione](../../platform/using/import-export-best-practices.md).
 
 ## Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution-}
 
