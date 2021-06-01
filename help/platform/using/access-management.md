@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Guida introduttiva alle autorizzazioni
+title: Introduzione alle autorizzazioni
 description: Scopri come concedere l’accesso alle funzionalità di Campaign
-feature: Access Management
+feature: Gestione degli accessi
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 2%
+source-wordcount: '255'
+ht-degree: 5%
 
 ---
 
-
-# Guida introduttiva alle autorizzazioni{#access-management}
+# Introduzione alle autorizzazioni{#access-management}
 
 Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
 
