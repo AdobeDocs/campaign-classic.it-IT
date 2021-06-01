@@ -1,37 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Cronologia delle proposte di offerta
 description: Cronologia delle proposte di offerta
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 480d49e7-0237-4c87-abe8-445b7bf91a30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 15%
 
 ---
 
-
 # Cronologia delle proposte di offerta{#offer-proposition-history}
 
-Una volta fatte le proposte di offerta, potete visualizzare la cronologia della presentazione.
+Una volta effettuate le proposte di offerta, puoi visualizzare la cronologia della presentazione.
 
 >[!NOTE]
 >
->Questa funzionalità è visibile solo online e solo per il responsabile della distribuzione.
+>Questa funzionalità è visibile solo online e solo per il gestore consegne.
 
-* A livello di offerta, nella scheda **[!UICONTROL Edit]** fare clic su **[!UICONTROL Propositions]**.
+* A livello di offerta, nella scheda **[!UICONTROL Edit]** fai clic su **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* Dal profilo di un destinatario, fare clic sulla scheda **[!UICONTROL Propositions]**.
+* Dal profilo di un destinatario, fai clic sulla scheda **[!UICONTROL Propositions]** .
 
    ![](assets/offer_followup_002.png)
 
-* A livello di spazio dell&#39;offerta, fate clic sulla scheda **[!UICONTROL Propositions]**.
+* A livello di spazio di offerta, fai clic sulla scheda **[!UICONTROL Propositions]** .
 
    ![](assets/offer_space_prop_001_b.png)
-
