@@ -1,44 +1,42 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Union
-description: Ulteriori informazioni sull'attività del flusso di lavoro dell'Unione
+title: Unione
+description: Ulteriori informazioni sull’attività del flusso di lavoro dell’Unione
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 1%
 
 ---
 
+# Unione{#union}
 
-# Union{#union}
-
-Un&#39;unione raggruppa il risultato di diverse attività in entrata in un unico obiettivo. La destinazione viene creata con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere portate a termine affinché l&#39;Unione possa essere esercitata.
+Un’unione raggruppa il risultato di diverse attività in entrata in un unico target. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere portate a termine affinché l&#39;unione sia eseguita.
 
 ![](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività dell&#39;unione, fare riferimento a [Combining multiple Targeting (Union)](../../workflow/using/targeting-data.md#combining-several-targets--union-).
+>Per ulteriori informazioni sulla configurazione e l’utilizzo dell’attività di unione, consulta [Combinazione di più destinazioni (Union)](../../workflow/using/targeting-data.md#combining-several-targets--union-).
 
-## Esempio unione {#union-example}
+## Esempio di unione {#union-example}
 
-Nell&#39;esempio seguente, i risultati di due query sono stati combinati per aggiornare l&#39;elenco. Le due query vengono indirizzate ai destinatari. I risultati si basano pertanto sulla stessa tabella.
+Nell’esempio seguente, i risultati di due query sono stati combinati per aggiornare l’elenco. Le due query hanno come target i destinatari. I risultati sono quindi basati sulla stessa tabella.
 
-1. Inserire un&#39;attività di tipo **[!UICONTROL Union]** subito dopo le due query e prima di un&#39;attività di tipo update dell&#39;elenco, quindi aprirla.
-1. È possibile immettere un&#39;etichetta.
-1. Selezionare il metodo di riconciliazione **[!UICONTROL Keys only]** poiché, in questo esempio, la popolazione risultante dalle query contiene dati coerenti.
-1. Se avete aggiunto dati aggiuntivi per le query, potete decidere di conservare solo i dati condivisi.
-1. Se si desidera limitare la dimensione della popolazione finale, selezionare la casella **[!UICONTROL Limit size of generated population]**.
+1. Inserisci un&#39;attività di tipo **[!UICONTROL Union]** subito dopo le due query e prima di un&#39;attività di tipo update dell&#39;elenco, quindi aprila.
+1. È possibile inserire un’etichetta.
+1. Seleziona il metodo di riconciliazione **[!UICONTROL Keys only]** poiché, in questo esempio, la popolazione risultante dalle query contiene dati coerenti.
+1. Se hai aggiunto dati aggiuntivi per le query, puoi decidere di conservare solo i dati condivisi.
+1. Se desideri limitare le dimensioni della popolazione finale, seleziona la casella **[!UICONTROL Limit size of generated population]** .
 
-   Specificate questo numero finale immettendo il numero massimo di destinatari e selezionando la query di cui la popolazione avrà priorità.
+   Specifica questo numero finale immettendo il numero massimo di destinatari e selezionando la query la cui popolazione avrà priorità.
 
-1. Approvare l&#39;attività dell&#39;unione, quindi configurare l&#39;attività di aggiornamento dell&#39;elenco (vedere [Aggiornamento dell&#39;elenco](../../workflow/using/list-update.md)).
-1. Avvia il flusso di lavoro. Il numero di risultati viene visualizzato e l&#39;elenco definito nell&#39;attività di aggiornamento dell&#39;elenco viene creato o aggiornato. Questo elenco contiene l&#39;insieme di destinatari per entrambe le query o, se del caso, il numero definito nel passaggio precedente.
+1. Approva l&#39;attività di unione e configura l&#39;attività di aggiornamento elenco (consulta [Aggiornamento elenco](../../workflow/using/list-update.md)).
+1. Avviare il flusso di lavoro. Viene visualizzato il numero di risultati e viene creato o aggiornato l’elenco definito nell’attività di aggiornamento elenco. Questo elenco contiene l’insieme di destinatari per entrambe le query o, se applicabile, il numero definito nel passaggio precedente.
 
    ![](assets/union_example.png)
 
@@ -47,7 +45,7 @@ Nell&#39;esempio seguente, i risultati di due query sono stati combinati per agg
 * tableName
 * schema
 
-Ogni evento in ingresso deve specificare una destinazione definita da questi parametri.
+Ogni evento in entrata deve specificare un target definito da questi parametri.
 
 ## Parametri di output {#output-parameters}
 
@@ -55,4 +53,4 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dall&#39;unione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:destinatario) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dall&#39;unione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema del gruppo (in genere nms:recipient) ed  **[!UICONTROL recCount]** è il numero di elementi della tabella.
