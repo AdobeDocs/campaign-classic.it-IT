@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione dell’accesso al report
 description: Configurazione dell’accesso al report
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
 
 ---
-
 
 # Configurazione dell’accesso al report{#configuring-access-to-the-report}
 
@@ -136,4 +134,3 @@ La pubblicazione del rapporto è obbligatoria al fine di condividerli con altri 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
 1. Fai clic sull’icona **[!UICONTROL Enlarge]** per aprire il rapporto in un browser web.
-
