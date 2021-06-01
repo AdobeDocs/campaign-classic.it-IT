@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione della piattaforma
 description: Configurazione della piattaforma
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
 
 ---
-
 
 # Configurazione della piattaforma{#configuring-your-platform}
 
@@ -119,7 +117,7 @@ Dopo aver eseguito **postupgrade**, è necessario tenere conto dei seguenti elem
 
    Se esegui la migrazione da una piattaforma v5.11, devi controllare la directory di runtime dei flussi di lavoro. Per ulteriori informazioni, consulta la sezione [Flussi di lavoro](../../migration/using/specific-configurations-in-v5-11.md#workflows) .
 
-* Tracking
+* Tracciamento
 
    Se esegui la migrazione da una piattaforma v5.11, devi configurare la modalità di tracciamento. Per ulteriori informazioni, consulta la sezione [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) .
 
@@ -130,4 +128,3 @@ Dopo aver eseguito **postupgrade**, è necessario tenere conto dei seguenti elem
 * Interazione
 
    Se utilizzi **Interazione**, devi regolare eventuali parametri dopo la migrazione. Per ulteriori informazioni, consulta la sezione [Interazione](../../migration/using/general-configurations.md#interaction) .
-
