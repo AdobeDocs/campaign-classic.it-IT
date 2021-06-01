@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aggiornamento a una nuova build
 description: Scopri i passaggi tecnici per l’aggiornamento a una nuova build
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: cb24bc78b5cc09307ca470470464f204d9f41278
+exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 2%
 
 ---
-
 
 # Aggiornamento a una nuova build (on-premise){#upgrading}
 
@@ -269,4 +267,3 @@ Alla successiva connessione delle console client, una finestra informa gli utent
 >[!NOTE]
 >
 >Assicurati che l&#39;utente Apache disponga dei diritti di lettura appropriati per questo file di installazione e fai riferimento alla [guida all&#39;installazione](../../installation/using/general-architecture.md) per ulteriori informazioni.
-
