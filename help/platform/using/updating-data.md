@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aggiornamenti dei dati
 description: Aggiornamenti dei dati
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
 
 ---
-
 
 # Update data{#updating-data}
 
@@ -127,4 +125,3 @@ Per verificare il processo, vai alla scheda **[!UICONTROL Subscriptions]** sui p
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla creazione e la configurazione di servizi di informazione, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
-
