@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Controllare prima dell’invio
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
-
 
 # Esegui tutti i controlli prima di inviare {#perform-all-checks}
 
@@ -60,11 +58,11 @@ Ulteriori informazioni [in questa sezione](../../delivery/using/get-started-a-b-
 
 ## Assicurati che il messaggio sia consegnato {#make-sure-your-message-is-delivered}
 
-Come passaggio finale, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente consegnato ai destinatari pertinenti.
+Come ultimo passo, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente consegnato ai destinatari pertinenti.
 
 ### Eseguire un processo di convalida
 
-Puoi definire un processo di convalida completo, che coinvolga gli operatori e i gruppi di Adobe Campaign, per convalidare sia il target che il contenuto del messaggio. In questo modo si garantirà il pieno controllo e controllo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle loro autorizzazioni, gli utenti riceveranno notifiche e bozze per convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](../../campaign/using/marketing-campaign-approval.md).
+È possibile definire un processo di convalida completo, che coinvolga gli operatori e i gruppi Adobe Campaign, per convalidare sia il target che il contenuto del messaggio. In questo modo si garantirà il pieno controllo e controllo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle loro autorizzazioni, gli utenti riceveranno notifiche e bozze per convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](../../campaign/using/marketing-campaign-approval.md).
 
 ### Usa onde
 
