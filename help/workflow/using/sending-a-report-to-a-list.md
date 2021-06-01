@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Invio di un report a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
 
 ---
-
 
 # Invio di un report a un elenco{#sending-a-report-to-a-list}
 
@@ -128,6 +126,4 @@ Il seguente flusso di lavoro è stato creato per questo caso d’uso. Ha tre att
    * Per i campi **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selezionare **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: seleziona  **[!UICONTROL Prepare and start]**.
    * Deseleziona **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
-
    ![](assets/use_case_report_11.png)
-
