@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Connettori di gestione delle relazioni con i clienti
+title: Connettori per sistemi CRM
 description: Guida introduttiva ai connettori di gestione delle relazioni con i clienti in Campaign
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
-# Connettori di gestione delle relazioni con i clienti{#crm-connectors}
+# Connettori per sistemi CRM{#crm-connectors}
 
 ## Guida introduttiva ai connettori di gestione delle relazioni con i clienti {#about-crm-connectors}
 
