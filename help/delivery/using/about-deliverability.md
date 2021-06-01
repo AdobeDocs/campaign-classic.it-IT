@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sul recapito messaggi in Campaign
 description: Scopri le best practice per il recapito messaggi
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
-
-# Che cos&#39;è il recapito{#about-deliverability}
+# Che cos’è il recapito messaggi{#about-deliverability}
 
 Il recapito messaggi ti consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza rimbalzare o essere contrassegnate come spam. [Scopri perché il recapito messaggi è importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
 Più precisamente, il recapito messaggi e-mail si riferisce al set di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato.
 
-Per informazioni più approfondite sul recapito messaggi e per ulteriori informazioni su termini, concetti e approcci chiave per il recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+Per informazioni più approfondite sul recapito messaggi e per ulteriori informazioni su termini, concetti e approcci chiave per il recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Come migliorare il recapito messaggi {#deliverability-key-points}
 
@@ -59,7 +57,7 @@ Adobe Campaign fornisce diversi strumenti per monitorare e migliorare le prestaz
 
 Durante la configurazione, la progettazione e il test del messaggio, assicurati di seguire le best practice menzionate nelle sezioni elencate di seguito. L’utilizzo di tutte le funzioni fornite da Adobe Campaign consente di migliorare il recapito messaggi.
 
-* [Best practice di consegna](../../delivery/using/delivery-best-practices.md)
+* [Best practice per la consegna](../../delivery/using/delivery-best-practices.md)
 * [Controllo di contenuti e-mail](../../delivery/using/control-message-content.md)
 * [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md)
 * [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
@@ -68,7 +66,7 @@ Durante la configurazione, la progettazione e il test del messaggio, assicurati 
 
 Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni non corrette e migliorare la reputazione del mittente, l’Adobe consiglia di implementare un doppio meccanismo di consenso. Questo metodo ti consente di garantire che i destinatari si siano abbonati intenzionalmente.
 
-Per ulteriori informazioni, consulta [Creare un modulo di abbonamento con doppio consenso](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+Per ulteriori informazioni, consulta [Creare un abbonamento con doppio consenso](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 Per ulteriori informazioni sulle best practice per la raccolta di dati dai clienti, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
 
@@ -94,7 +92,7 @@ Adobe Campaign ti consente di verificare le prestazioni delle consegne tramite u
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Monitoraggio della consegna messaggi](../../delivery/using/monitoring-deliverability.md)
+* [Monitoraggio del recapito messaggi](../../delivery/using/monitoring-deliverability.md)
 * [Informazioni sul monitoraggio delle consegne](../../delivery/using/about-delivery-monitoring.md)
 * [Informazioni sui report incorporati di Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
