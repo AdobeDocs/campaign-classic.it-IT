@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Note sulla versione [!DNL Gold Standard]
 description: Note sulla versione di Campaign Classic [!DNL Gold Standard]
@@ -7,9 +6,8 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-translation-type: ht
-source-git-commit: 113a3535cd197f9b654fc1e50e20886e76ee886a
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 100%
 
@@ -48,8 +46,10 @@ _22 dicembre 2020_
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 > * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
+
 >
->Ulteriori informazioni sono disponibili in Domande [[!DNL Gold Standard] frequenti sull’aggiornamento 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html).
+>
+Ulteriori informazioni sono disponibili in Domande [[!DNL Gold Standard] frequenti sull’aggiornamento 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html).
 
 La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
@@ -97,11 +97,11 @@ _29 aprile 2020_
 
 La build 9032@3a9dc9c include le seguenti correzioni:
 
-* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism).
+* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism)
+>In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini nelle consegne in Linea. (NEO-23207)
 * È stato risolto un problema dell’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
