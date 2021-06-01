@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Report di consegna
-description: Report di consegna
+title: Rapporti di consegna
+description: Rapporti di consegna
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
 
 ---
 
-
-# Report di consegna {#delivery-reports}
+# Rapporti di consegna {#delivery-reports}
 
 Puoi tracciare l’esecuzione delle consegne tramite vari rapporti accessibili dalla panoramica della consegna. Per visualizzare i rapporti, attenersi alla seguente procedura:
 
@@ -159,7 +157,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione presenta due indicatori:
 
 * **[!UICONTROL Initial population]** : Numero totale di destinatari interessati dalla consegna.
-* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l’analisi durante l’applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in elenco Bloccati, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l’analisi durante l’applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, al elenco Bloccati, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 
