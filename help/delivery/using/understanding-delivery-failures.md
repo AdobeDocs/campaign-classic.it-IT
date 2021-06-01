@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sugli errori di consegna
 description: Scopri come comprendere gli errori di consegna
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-translation-type: tm+mt
-source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -166,13 +164,13 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non raggiungibile </td> 
    <td> Morbido/Duro </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Errore nella catena di consegna dei messaggi. Potrebbe essere un problema sul relay SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà ritentato finché il contatore degli errori non raggiunge 5, o verrà inviato direttamente alle quarantene.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Duro </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> L'indirizzo non esiste. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
   </tr> 
  </tbody> 
