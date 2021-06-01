@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Panoramica del catalogo di offerta
+title: Panoramica del catalogo delle offerte
 description: Ulteriori informazioni sul catalogo delle offerte in Campaign
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 4%
 
 ---
 
+# Panoramica del catalogo delle offerte{#offer-catalog-overview}
 
-# Panoramica del catalogo di offerta{#offer-catalog-overview}
+Un catalogo di offerte è sempre composto da categorie che hanno poi sottocategorie o offerte direttamente.
 
-Un catalogo di offerte è sempre composto da categorie che poi hanno sottocategorie o offerte direttamente.
+Un catalogo di offerte fa parte di un unico ambiente, da specificare in precedenza. Le offerte contenute in questo catalogo possono essere associate solo agli spazi specificati in questo ambiente.
 
-Un catalogo delle offerte fa parte di un unico ambiente, da specificare in anticipo. Le offerte contenute in questo catalogo possono essere associate solo agli spazi specificati in questo ambiente.
+La gestione delle offerte viene eseguita tramite un albero di cartelle in Adobe Campaign.
 
-La gestione delle offerte viene eseguita tramite una struttura di cartelle nell&#39;Adobe Campaign .
-
-Prima di creare le offerte, è necessario specificare innanzitutto un ambiente (vedere [Panoramica sugli ambienti](../../interaction/using/environments-overview.md)). Conterrà tutte le caratteristiche (idoneità, vincoli sull&#39;obiettivo, regole di presentazione) di un insieme di offerte, suddivise in categorie, nonché l&#39;elenco dei loro spazi.
+Prima di creare le offerte, devi innanzitutto specificare un ambiente (consulta [Panoramica sugli ambienti](../../interaction/using/environments-overview.md)). Conterrà tutte le caratteristiche (idoneità, vincoli sul target, regole di presentazione) di un insieme di offerte, suddivise in categorie, nonché l’elenco dei relativi spazi.
 
 >[!IMPORTANT]
 >
->La creazione del catalogo delle offerte, ovvero delle categorie e delle offerte, è responsabilità della **[!UICONTROL Offer manager]**.
+>La creazione del catalogo delle offerte, ovvero le categorie e le offerte, è responsabilità della sezione **[!UICONTROL Offer manager]**.
