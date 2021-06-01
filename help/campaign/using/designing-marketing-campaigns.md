@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Progettazione ed esecuzione di campagne di marketing
 description: Definisci, ottimizza, esegui e analizza campagne di marketing.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 9%
+ht-degree: 19%
 
 ---
 
-
 # Progettazione ed esecuzione di campagne di marketing{#designing-marketing-campaigns}
 
-Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign agisce come un centro unificato per l’ordine e l’esecuzione delle strategie di marketing. Per ulteriori informazioni, consulta [Accedere a campagne](../../campaign/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign agisce come un centro unificato di ordine ed esecuzione per le strategie di marketing. Per ulteriori informazioni, consulta [Accedere a campagne](../../campaign/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Inoltre, il modulo **Gestione delle risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa, fornendo la gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Gestione delle risorse di marketing consente di ottimizzare e regolamentare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/about-marketing-resource-management.md).
 
@@ -28,7 +26,7 @@ Inoltre, il modulo **Gestione delle risorse di marketing (MRM)** consente di con
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing in un video](#video)
 
-## Concetti di base {#core-concepts}
+## Concetti principali {#core-concepts}
 
 Nel contesto di Campaign è necessario conoscere i seguenti concetti:
 
