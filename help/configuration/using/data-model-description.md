@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Descrizione del modello dati di Adobe Campaign Classic
+title: Descrizione del modello dati Adobe Campaign Classic
 description: Questo documento descrive il modello dati di Adobe Campaign.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
 
-
 # Descrizione del modello dati della campagna{#data-model-description}
 
-Adobe Campaign viene fornito con un modello dati predefinito. Questa sezione fornisce alcuni dettagli sulle tabelle integrate del modello dati di Adobe Campaign e sulla loro interazione.
+Adobe Campaign viene fornito con un modello dati predefinito. Questa sezione fornisce alcuni dettagli sulle tabelle integrate del modello dati Adobe Campaign e sulla loro interazione.
 
 Per accedere alla descrizione di ciascuna tabella, vai a **[!UICONTROL Admin > Configuration > Data schemas]**, seleziona una risorsa dall’elenco e fai clic sulla scheda **[!UICONTROL Documentation]** .
 
@@ -25,19 +23,19 @@ Per accedere alla descrizione di ciascuna tabella, vai a **[!UICONTROL Admin > C
 
 >[!NOTE]
 >
->La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
+>La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
 
 ## Descrizione delle tabelle principali {#description-main-tables}
 
 Adobe Campaign si basa su un database relazionale contenente tabelle collegate tra loro.
 
-Il diagramma seguente mostra i join tra le principali tabelle aziendali del modello dati di Adobe Campaign con i campi principali per ciascuna.
+Il diagramma seguente mostra i join tra le principali tabelle aziendali del modello dati Adobe Campaign con i campi principali per ciascuna tabella.
 
 <!--![](assets/data-model_diagram.png)-->
 
 ![](assets/data-model_simplified-diagram.png)
 
-Il modello dati predefinito di Adobe Campaign include le tabelle principali elencate di seguito.
+Il modello dati Adobe Campaign predefinito include le tabelle principali elencate di seguito.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -71,7 +69,7 @@ La tabella delle relazioni NmsRcpGrpRel contiene solo i due campi corrispondenti
 
 Questa tabella corrisponde allo schema **nms:service** .
 
-In Adobe Campaign, puoi creare e gestire gli abbonamenti ai servizi di informazione (argomenti). Nella tabella NmsService viene memorizzata la definizione dei servizi di informazione (argomenti) a cui i destinatari possono effettuare l’abbonamento (ad esempio una newsletter).
+In Adobe Campaign puoi creare e gestire gli abbonamenti ai servizi di informazione (argomenti). Nella tabella NmsService viene memorizzata la definizione dei servizi di informazione (argomenti) a cui i destinatari possono effettuare l’abbonamento (ad esempio una newsletter).
 
 I servizi sono entità simili ai gruppi (raggruppamenti di destinatari statici), con la differenza che forniscono più informazioni e consentono una facile gestione degli abbonamenti e dei loro annullamenti tramite i moduli.
 
@@ -147,7 +145,7 @@ Questo insieme di tabelle è collegato al modulo **Gestione risposte**, che cons
 
 ![](assets/data-model_response.png)
 
-### NmsRemaHypointesi {#NmsRemaHypothesis}
+### NmsRemaIpotesi {#NmsRemaHypothesis}
 
 Questa tabella coincide con lo schema **nms:remaHypothetic** . Contiene la definizione dell&#39;ipotesi di misurazione.
 
