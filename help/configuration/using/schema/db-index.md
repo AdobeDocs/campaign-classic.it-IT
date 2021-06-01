@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
 
 ---
 
-
 # elemento dbindex {#dbindex--element}
 
-## Modello di contenuto {#content-model-3}
+## Modello dei contenuti {#content-model-3}
 
 dbindex:==keyfield
 
@@ -27,50 +25,50 @@ dbindex:==keyfield
 * @applyIf (stringa)
 * @label (stringa)
 * @name (MNTOKEN)
-* @univoche (booleano)
+* @unique (booleano)
 
 ## Genitori {#parents-3}
 
 `<element>`
 
-## Bambini {#children-3}
+## Figli {#children-3}
 
 `<keyfield>`
 
 ## Descrizione {#description-3}
 
-Questo elemento consente di definire un indice collegato a una tabella.
+Questo elemento ti consente di definire un indice collegato a una tabella.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-3}
+## Uso e contesto di utilizzo {#use-and-context-of-use-3}
 
-È possibile definire diversi indici. Un indice può fare riferimento a uno o più campi della tabella. La dichiarazione dell&#39;indice in genere segue la definizione dell&#39;elemento dello schema principale.
+È possibile definire diversi indici. Un indice può fare riferimento a uno o più campi della tabella. La dichiarazione dell&#39;indice di solito segue la definizione dell&#39;elemento dello schema principale.
 
 L&#39;ordine degli elementi `<keyfield>` definiti in un `<dbindex>` è molto importante. Il primo `<keyfield>` deve essere il criterio di indicizzazione su cui si basano principalmente le query.
 
-Il nome dell&#39;indice nel database viene calcolato concatenando il nome della tabella e il nome dell&#39;indice. Ad esempio: Nome tabella &quot;Sample&quot;, spazio dei nomi &quot;Cus&quot;, nome indice &quot;MyIndex&quot;-> nome del campo indice durante la creazione dell&#39;indice durante la query: &quot;CusSample_myIndex&quot;.
+Il nome dell’indice nel database viene calcolato concatenando il nome della tabella e il nome dell’indice. Ad esempio: Nome della tabella &quot;Sample&quot;, spazio dei nomi &quot;Cus&quot;, nome dell&#39;indice &quot;MyIndex&quot;-> nome del campo dell&#39;indice durante la creazione dell&#39;indice che richiede: &quot;CusSample_myIndex&quot;.
 
-## Descrizione attributo {#attribute-description-3}
+## Descrizione dell&#39;attributo {#attribute-description-3}
 
-* **_operation (stringa)**: definisce il tipo di scrittura nel database.
+* **_operazione (stringa)**: definisce il tipo di scrittura nel database.
 
-   Questo attributo è utilizzato principalmente per estendere gli schemi out-of-the-box.
+   Questo attributo viene utilizzato principalmente per l’estensione degli schemi predefiniti.
 
    I valori accessibili sono:
 
-   * &quot;none&quot;: solo riconciliazione. Ciò significa che  Adobe Campaign recupererà l&#39;elemento senza aggiornarlo o generando un errore in caso contrario.
-   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o lo creerà se non esiste.
-   * &quot;insert&quot;: inserimento. Ciò significa che  Adobe Campaign inserirà l&#39;elemento senza verificarne l&#39;esistenza.
-   * &quot;update&quot;: update. Ciò significa che  Adobe Campaign aggiornerà l&#39;elemento o genererà un errore se non esiste.
-   * &quot;delete&quot;: eliminazione. Ciò significa che  Adobe Campaign recupererà ed eliminerà gli elementi.
+   * &quot;none&quot;: solo riconciliazione. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore se non esiste.
+   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.
+   * &quot;insert&quot;: inserimento. Ciò significa che Adobe Campaign inserirà l’elemento senza verificare se esiste.
+   * &quot;update&quot;: aggiornamento. Ciò significa che Adobe Campaign aggiornerà l’elemento o genererà un errore se non esiste.
+   * &quot;delete&quot;: eliminazione. Questo significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
-* **applyIf (stringa)**: condizione per tenere conto dell&#39;indice - riceve un&#39;espressione XTK.
-* **label (stringa)**: index label.
-* **name (MNTOKEN)**: nome di indice univoco.
-* **univoco (booleano)**: se questa opzione è attivata (@univoche=&quot;true&quot;), l&#39;attributo garantisce l&#39;univocità dell&#39;indice in tutti i campi.
+* **applyIf (string)**: condizione per tenere conto dell&#39;indice - riceve un&#39;espressione XTK.
+* **etichetta (stringa)**: etichetta dell&#39;indice.
+* **nome (MNTOKEN)**: nome di indice univoco.
+* **univoco (booleano)**: se questa opzione è attivata (@unique=&quot;true&quot;), l’attributo garantisce l’univocità dell’indice in tutti i campi.
 
 ## Esempi {#examples-3}
 
-Creazione di un indice nel campo &quot;id&quot;. (l&#39;attributo &quot;@Unique&quot; sull&#39;elemento `<dbindex>` attiva l&#39;aggiunta della parola chiave SQL &quot;UNIQUE&quot; quando l&#39;indice viene creato nel database (query)).
+Creazione di un indice sul campo &quot;id&quot;. (l&#39;attributo &quot;@unique&quot; sull&#39;elemento `<dbindex>` attiva l&#39;aggiunta della parola chiave SQL &quot;UNIQUE&quot; quando l&#39;indice viene creato nel database (query)).
 
 ```
 <element label="Sample" name="Sample">
