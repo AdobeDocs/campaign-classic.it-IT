@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-mail in entrata
-description: Ulteriori informazioni sull'attività del flusso di lavoro Posta elettronica in ingresso
+description: Ulteriori informazioni sull’attività del flusso di lavoro Inbound Emails
 audience: workflow
 content-type: reference
 topic-tags: event-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
 
 ---
 
-
 # E-mail in entrata{#inbound-emails}
 
-L&#39;attività **Inbound email** consente di scaricare ed elaborare i messaggi e-mail da un server di posta POP3.
+L’attività **Inbound emails** consente di scaricare ed elaborare messaggi e-mail da un server di posta POP3.
 
 ![](assets/email_rec_edit_1.png)
 
-La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i parametri del server POP3 e di inserire lo script da eseguire dopo la ricezione di ogni messaggio. La seconda scheda consente di assegnare una pianificazione all&#39;attività, mentre la terza scheda definisce le condizioni di scadenza dell&#39;attività.
+La prima scheda dell’attività **Inbound Emails** ti consente di immettere i parametri del server POP3 e inserire lo script da eseguire al ricevimento di ciascun messaggio. La seconda scheda ti consente di assegnare una pianificazione all’attività e la terza definisce le condizioni di scadenza dell’attività.
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. Il campo **[!UICONTROL External account]** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l&#39;opzione &quot;Usa un account esterno&quot;.
+      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. Il campo **[!UICONTROL External account]** specifica l’account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l’opzione &quot;Utilizza un account esterno&quot;.
 
       Se questa opzione non è selezionata, è necessario specificare i seguenti parametri:
 
@@ -39,7 +37,7 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
 
       * **[!UICONTROL POP3 account]**
 
-         Nome dell’utente.
+         Nome dell&#39;utente.
 
       * **[!UICONTROL Password]**
 
@@ -47,15 +45,15 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
 
       * **[!UICONTROL Port]**
 
-         Numero porta di connessione POP3. La porta predefinita è 110.
+         Numero della porta di connessione POP3. La porta predefinita è 110.
    * **[!UICONTROL Stop as soon as email is processed]**
 
-      Questa opzione consente di elaborare i messaggi e-mail uno per uno. L&#39;attività attiva la transizione una sola volta e termina l&#39;elaborazione, lasciando sul server i messaggi non elaborati.
+      Questa opzione ti consente di elaborare le e-mail una per una. L’attività attiva la relativa transizione una sola volta e quindi termina l’elaborazione, lasciando messaggi non elaborati sul server.
 
 
 1. **[!UICONTROL Script]**
 
-   Lo script consente di elaborare il messaggio ed eseguire varie operazioni che dipendono dal contenuto del messaggio. Lo script viene eseguito per ciascun messaggio e può determinare l&#39;operazione da eseguire sui messaggi (lasciare o eliminare il messaggio) e l&#39;attivazione della transizione in uscita.
+   Lo script consente di elaborare il messaggio ed eseguire varie operazioni in base al contenuto del messaggio. Lo script viene eseguito per ciascun messaggio e può determinare l’operazione da eseguire sui messaggi (lasciare o eliminare il messaggio) e l’attivazione della transizione in uscita.
 
    Il codice restituito deve essere uno dei seguenti valori:
 
@@ -64,19 +62,18 @@ La prima scheda dell&#39;attività **Inbound Emails** consente di inserire i par
    * 3 - Elimina il messaggio dal server.
    * 4 - Lascia il messaggio sul server.
 
-   Il contenuto del messaggio è accessibile dalla variabile globale **[!UICONTROL mailMessage]**.
+   Il contenuto del messaggio è accessibile dalla variabile globale **[!UICONTROL mailMessage]** .
 
 1. **[!UICONTROL Schedule]**
 
-   Per definire una pianificazione per l&#39;attività, fate clic sulla scheda **[!UICONTROL Scheduling]** e selezionate **[!UICONTROL Plan execution]**. Fate clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
+   Per definire una pianificazione per l’attività, fai clic sulla scheda **[!UICONTROL Scheduling]** e seleziona **[!UICONTROL Plan execution]**. Fai clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
 
-   La configurazione della pianificazione è la stessa dell&#39;attività di pianificazione. Fare riferimento a [Scheduler](../../workflow/using/scheduler.md).
+   La configurazione della pianificazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scheduler](../../workflow/using/scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   È possibile definire i ritardi di scadenza tramite la scheda **[!UICONTROL Expiration]**.
+   Puoi definire i ritardi di scadenza tramite la scheda **[!UICONTROL Expiration]** .
 
    ![](assets/email_rec_edit_3.png)
 
-   La configurazione è la stessa dell&#39;attività di pianificazione. Fare riferimento a [Scadenze](../../workflow/using/defining-approvals.md).
-
+   La configurazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scadenza](../../workflow/using/defining-approvals.md).
