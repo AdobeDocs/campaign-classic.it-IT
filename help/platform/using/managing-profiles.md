@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gestione dei profili
 description: Gestione dei profili
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# Gestisci profili{#managing-profiles}
+# Gestire i profili{#managing-profiles}
 
 ## Albero dei destinatari {#recipient-tree}
 
@@ -48,4 +46,3 @@ Per eliminare una cartella, utilizza il menu **[!UICONTROL Actions > Purge folde
 Fai clic su **[!UICONTROL Start]** per avviare l&#39;operazione. Nella sezione centrale della finestra viene visualizzato lo stato di avanzamento, come illustrato di seguito:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
-
