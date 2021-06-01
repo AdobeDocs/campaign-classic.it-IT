@@ -1,73 +1,71 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Subscription Services
-description: Ulteriori informazioni sull'attività del flusso di lavoro Servizi iscrizione
+title: Servizi di abbonamento
+description: Ulteriori informazioni sull’attività del flusso di lavoro Subscription Services
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
 
 ---
 
-
 # Subscription Services{#subscription-services}
 
-Un&#39;attività di tipo **Servizi di iscrizione** consente di creare o eliminare una sottoscrizione a un servizio di informazione per la popolazione specificata nella transizione.
+Un’attività di tipo **Subscription services** consente di creare o eliminare un abbonamento a un servizio di informazioni per la popolazione specificata nella transizione.
 
-Per configurarlo, modificate l&#39;attività e inseritene l&#39;etichetta, quindi selezionate l&#39;azione da eseguire (Iscrizione o Annulla sottoscrizione) e il servizio interessato, come nell&#39;esempio seguente:
+Per configurarlo, modifica l’attività e inserisci la relativa etichetta, quindi seleziona l’azione da eseguire (abbonamento o annullamento dell’abbonamento) e il servizio interessato, come nell’esempio seguente:
 
 ![](assets/edit_service_inscription.png)
 
-1. Immettete l&#39;etichetta dell&#39;attività.
-1. Selezionare **[!UICONTROL Generate an outbound transition]** se si desidera creare una transizione alla fine dell&#39;esecuzione.
+1. Immetti l’etichetta dell’attività.
+1. Seleziona **[!UICONTROL Generate an outbound transition]** se desideri creare una transizione alla fine dell’esecuzione.
 
-   In genere, l&#39;iscrizione di una destinazione a un servizio di informazioni segna la fine del flusso di lavoro di targeting, motivo per cui l&#39;opzione non è attivata per impostazione predefinita.
+   In genere, la sottoscrizione di una destinazione a un servizio di informazioni segna la fine del flusso di lavoro di targeting, motivo per cui l’opzione non viene attivata per impostazione predefinita.
 
-1. Fare clic su **[!UICONTROL Subscription]** o **[!UICONTROL Unsubscription]** se si desidera abbonarsi o annullare l&#39;iscrizione della popolazione specificata al servizio di informazioni selezionato.
-1. Selezionate **[!UICONTROL Send a confirmation message]** per notificare ai destinatari che sono iscritti o che non hanno più effettuato la sottoscrizione a un servizio.
+1. Fai clic su **[!UICONTROL Subscription]** o **[!UICONTROL Unsubscription]** se desideri abbonarti o annullare l’abbonamento della popolazione specificata al servizio informazioni selezionato.
+1. Seleziona **[!UICONTROL Send a confirmation message]** per informare i destinatari che sono abbonati o che hanno annullato l’abbonamento a un servizio.
 
    Il contenuto di questo messaggio viene specificato in un modello di consegna relativo al servizio informazioni. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/managing-subscriptions.md).
 
-## Esempio: Iscriviti a un elenco di destinatari per una newsletter {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Esempio: Iscriviti a una newsletter un elenco di destinatari {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-In un&#39;unica operazione, il seguente flusso di lavoro mira a rendere un elenco di destinatari idonei per una newsletter, destinata ai lavoratori che vivono a Parigi, al fine di consentire loro di iscriversi.
+In un&#39;unica operazione il seguente flusso di lavoro mira a rendere un elenco di destinatari idonei per una newsletter, destinata ai lavoratori che vivono a Parigi, al fine di ottenere loro l&#39;iscrizione.
 
-A tal fine, è necessario escludere anche i destinatari che hanno già effettuato la sottoscrizione.
+A questo scopo, devi anche escludere i destinatari che hanno già effettuato la sottoscrizione.
 
 >[!CAUTION]
 >
->Prima di iscriversi manualmente a un servizio, verifica che i destinatari accetti di ricevere le comunicazioni dall’utente.
+>Prima di effettuare manualmente l’abbonamento dei destinatari a un servizio, verifica che tali destinatari accettino di ricevere comunicazioni dall’utente.
 
 ![](assets/subscription_services_example.png)
 
-1. Aggiungete le seguenti tre query:
+1. Aggiungi le tre query seguenti:
 
-   * Un solo destinatario di età compresa tra i 18 e i 60 anni.
+   * Uno dei destinatari di targeting di età compresa tra i 18 e i 60 anni.
    * Un secondo targeting per i destinatari che vivono a Parigi.
-   * Un terzo destinatario che non è attualmente iscritto alla newsletter.
+   * Un terzo destinatario che al momento non è iscritto alla newsletter.
 
-1. Aggiungete un&#39;attività di intersezione per fare riferimento incrociato ai diversi risultati.
-1. Se lo desideri, inserisci un aggiornamento dell&#39;elenco per mantenere aggiornato l&#39;elenco degli ultimi utenti iscritti.
-1. Inserite un&#39;attività di servizi di iscrizione, quindi fate doppio clic su di essa per configurarla.
-1. Immettete l&#39;etichetta dell&#39;attività e selezionate **[!UICONTROL Subscription]**.
+1. Aggiungi un’attività di intersezione per fare riferimento incrociato ai diversi risultati.
+1. Se lo desideri, inserisci un aggiornamento dell’elenco per mantenere aggiornato l’elenco degli ultimi abbonati.
+1. Inserisci un’attività di servizi di abbonamento, quindi fai doppio clic su questa per configurarla.
+1. Immetti l’etichetta dell’attività e seleziona **[!UICONTROL Subscription]**.
 
-   Se lo desiderate, potete informare i destinatari della loro iscrizione alla newsletter selezionando la casella **[!UICONTROL Send a confirmation message]**.
+   Se lo desideri, puoi informare i destinatari della loro iscrizione alla newsletter selezionando la casella **[!UICONTROL Send a confirmation message]** .
 
-1. Selezionate la cartella in cui si trova la newsletter, quindi selezionate la newsletter dall’elenco visualizzato.
-1. Lasciate deselezionata l&#39;opzione **[!UICONTROL Generate outbound transition]** in modo che l&#39;attività contrassegni la fine del flusso di lavoro, quindi fate clic su **[!UICONTROL Ok]**.
+1. Seleziona la cartella in cui si trova la newsletter, quindi seleziona la newsletter dall’elenco visualizzato.
+1. Lascia **[!UICONTROL Generate outbound transition]** deselezionato in modo che questa attività contrassegni la fine del flusso di lavoro, quindi fai clic su **[!UICONTROL Ok]**.
 
-Durante l’esecuzione del flusso di lavoro, i destinatari corrispondenti a tutte e tre le query vengono aggiunti all’elenco e sottoscritti alla newsletter.
+Durante l’esecuzione del flusso di lavoro, i destinatari corrispondenti a tutte e tre le query vengono aggiunti all’elenco e abbonati alla newsletter.
 
-Per verificare che l&#39;iscrizione sia stata eseguita correttamente, andate alla scheda **[!UICONTROL Subscription]** dei destinatari.
+Puoi verificare che l’abbonamento sia stato eseguito correttamente accedendo alla scheda **[!UICONTROL Subscription]** dei destinatari.
 
 ## Parametri di input {#input-parameters}
 
 * tableName
 * schema
 
-Ogni evento in ingresso deve specificare una destinazione definita da questi parametri.
+Ogni evento in entrata deve specificare un target definito da questi parametri.
