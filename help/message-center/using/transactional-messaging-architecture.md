@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Ci sono diverse precauzioni da prendere quando installi i pacchetti di messaggi 
 >
 >L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
 
-Se devi utilizzare più canali, devi installare e configurare i pacchetti correlati prima di installare i pacchetti di messaggi transazionali. Per ulteriori informazioni, consulta [Aggiunta di un canale di consegna](#adding-a-delivery-channel).
+Se devi utilizzare più canali, devi installare e configurare i pacchetti correlati prima di installare i pacchetti di messaggi transazionali. Per ulteriori informazioni, consulta [Aggiungere un canale di consegna](#adding-a-delivery-channel).
 
 ## Istanza di controllo {#control-instance}
 
@@ -57,7 +57,7 @@ I passaggi dettagliati per la configurazione dell&#39;istanza di controllo sono 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione necessaria, consulta [Utilizzo di più istanze di controllo](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Per ulteriori informazioni sulla configurazione necessaria, consulta [Utilizzare diverse istanze di controllo](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
 ## Istanza di esecuzione {#execution-instance}
 
@@ -181,7 +181,7 @@ Per utilizzare il modulo di messaggio transazionale con LINE, sono necessari i s
 
 * Installa il pacchetto **[!UICONTROL LINE Connect]** su entrambe le istanze.
 * Installa il pacchetto **[!UICONTROL Transactional message control]** sulla tua istanza di marketing e il pacchetto **[!UICONTROL Transactional message execution]** sull&#39;istanza di esecuzione.
-* Crea un account esterno LINE **e** e **service** su entrambe le istanze con denominazione identica per sincronizzarle. Per ulteriori informazioni su come creare un account e un servizio esterni LINE, consulta questa [pagina](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Crea un account esterno LINE **e** e **service** su entrambe le istanze con denominazione identica per sincronizzarle. Per ulteriori informazioni su come creare un account e un servizio esterni LINE, consulta [questa sezione](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , è necessario configurare account esterni diversi per entrambe le istanze:
 
@@ -248,4 +248,4 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
 
 
 
-1. Ora puoi iniziare a creare messaggi transazionali. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/creating-the-message-template.md).
+1. Ora puoi iniziare [la creazione di messaggi transazionali](../../message-center/using/creating-the-message-template.md).
