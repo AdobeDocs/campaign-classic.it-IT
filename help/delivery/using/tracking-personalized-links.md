@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introduzione al tracciamento dei collegamenti personalizzati
 description: Scopri come scrivere collegamenti nelle e-mail che possono essere personalizzati e supportare il tracciamento in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
+exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
 
 ---
-
 
 # Introduzione al tracciamento dei collegamenti personalizzati {#tracking-personalized-links}
 
