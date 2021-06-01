@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Struttura di un modulo
 description: Struttura di un modulo
 audience: configuration
 content-type: reference
 topic-tags: input-forms
-translation-type: tm+mt
-source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
+exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
 
 ---
-
 
 # Struttura di un modulo{#form-structure}
 
@@ -670,4 +668,3 @@ L&#39;attributo **exprIn** contiene la posizione dei dati da trasmettere come pa
   </soapCall>
 </leave>
 ```
-
