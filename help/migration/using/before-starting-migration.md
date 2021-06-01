@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Prima di avviare la migrazione
 description: Prima di avviare la migrazione
@@ -7,8 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
@@ -45,7 +43,7 @@ Prima di avviare un processo di migrazione, devi eseguire il backup dei dati **e
 * Non è possibile modificare il tipo di motore di database (DBMS). Ad esempio, non è possibile passare da un motore PostgreSQL a un motore di Oracle. Tuttavia, è possibile passare da un motore di Oracle 8 a un motore di Oracle 10.
 * Impossibile passare da un database non Unicode a un database Unicode.
 
-### Raccomandazione {#recommendation}
+### Consiglio {#recommendation}
 
 Poiché la procedura di migrazione è sensibile, si consiglia vivamente di leggere attentamente questo documento prima di avviare la procedura.
 
