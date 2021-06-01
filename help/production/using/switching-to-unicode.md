@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Passaggio a Unicode
 description: Passaggio a Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
-
 # Passaggio a Unicode{#switching-to-unicode}
 
-Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
+Per un&#39;istanza esistente **prod** in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
 
-1. Arrestate i processi di scrittura nel database:
+1. Interrompere i processi di scrittura nel database:
 
    ```
    su - neolane
@@ -33,26 +31,26 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    pg_dump mydatabase > mydatabase.sql
    ```
 
-1. Creare un database Unicode:
+1. Crea un database Unicode:
 
    ```
    createdb -E UNICODE mydatabase_unicode
    ```
 
-1. Ripristinare il database:
+1. Ripristina il database:
 
    ```
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. Aggiornate l&#39;opzione per indicare che il database è Unicode:
+1. Aggiorna l&#39;opzione che indica che il database è Unicode:
 
    ```
    psql mydatabase_unicode
    update XtkOption set sStringValue = 'u'||sStringValue where sName='XtkDatabaseId' and sStringValue not like 'u%';
    ```
 
-1. Sui server di monitoraggio:
+1. Sui server di tracciamento:
 
    ```
    su - neolane
@@ -60,7 +58,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    vi config-prod.xml
    ```
 
-   Aggiungete il carattere **u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
+   Aggiungi il carattere **u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
 
    ```
    <web>
@@ -68,7 +66,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    </web>
    ```
 
-1. Sui server che chiamano il database:
+1. Nei server che chiamano il database:
 
    ```
    su - neolane
@@ -76,7 +74,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    vi config-prod.xml
    ```
 
-   Modificate il riferimento al database:
+   Modificare il riferimento al database:
 
    ```
    <dataSource name="default">
@@ -95,8 +93,7 @@ Per un&#39;istanza **prod** esistente in Linux/PostgreSQL, i passaggi per passar
    /etc/init.d/apache start
    ```
 
-1. Confermare l&#39;interruttore. A questo scopo, collegatevi tramite la  console Adobe Campaign e:
+1. Confermare l&#39;interruttore. A questo scopo, connettiti tramite la console Adobe Campaign e:
 
    * verificare che i dati siano visualizzati correttamente, in particolare i caratteri accentuati:
-   * avviare una consegna e verificare che il recupero del tracciamento funzioni.
-
+   * avvia una consegna e controlla che il recupero del tracciamento funzioni.
