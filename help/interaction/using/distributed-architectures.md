@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Architetture distribuite
 description: Architetture distribuite
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
 
 ---
 
-
 # Architetture distribuite{#distributed-architectures}
 
 ## Principio {#principle}
 
-Per supportare la scalabilità e fornire un servizio 24 ore su 24, 7 giorni su 7 sul canale in ingresso, è possibile utilizzare Interaction con un&#39;architettura distribuita. Questo tipo di architettura è già utilizzata con Centro messaggi ed è composta da diverse istanze:
+Per supportare la scalabilità e fornire un servizio 24 ore su 24 e 7 giorni su 7 sul canale in entrata, puoi utilizzare Interaction con un’architettura distribuita. Questo tipo di architettura è già utilizzato con Centro messaggi ed è costituito da diverse istanze:
 
-* una o più istanze di controllo dedicate al canale in uscita e contenenti la base di progettazione del marketing e dell&#39;ambiente
-* una o più istanze di esecuzione dedicate al canale in ingresso
+* una o più istanze di controllo dedicate al canale in uscita e contenenti la base di progettazione marketing e ambiente
+* una o più istanze di esecuzione dedicate al canale in entrata
 
 ![](assets/interaction_powerbooster_schema.png)
 
 >[!NOTE]
 >
->Le istanze di controllo sono dedicate al canale in ingresso e contengono la versione online del catalogo. Ogni istanza di esecuzione è indipendente e dedicata a un segmento di contatto (ad esempio, un&#39;istanza di esecuzione per paese). Le chiamate al motore di offerta devono essere eseguite direttamente sull&#39;esecuzione (un URL specifico per istanza di esecuzione). Poiché la sincronizzazione tra le istanze non è automatica, le interazioni dello stesso contatto devono essere inviate attraverso la stessa istanza.
+>Le istanze di controllo sono dedicate al canale in entrata e contengono la versione online del catalogo. Ogni istanza di esecuzione è indipendente e dedicata a un segmento di contatto (ad esempio, un’istanza di esecuzione per paese). Le chiamate al motore di offerta devono essere eseguite direttamente sull’esecuzione (un URL specifico per istanza di esecuzione). Poiché la sincronizzazione tra le istanze non è automatica, le interazioni dello stesso contatto devono essere inviate attraverso la stessa istanza.
 
-## Sincronizzazione proposta {#proposition-synchronization}
+## Sincronizzazione delle proposte {#proposition-synchronization}
 
-La sincronizzazione dell&#39;offerta viene eseguita tramite pacchetti. Nelle istanze di esecuzione, tutti gli oggetti catalogo hanno il prefisso del nome account esterno. Ciò significa che diverse istanze di controllo (ad esempio, istanze di sviluppo e produzione) possono essere supportate in una stessa istanza di esecuzione.
+La sincronizzazione delle offerte viene eseguita tramite pacchetti. Nelle istanze di esecuzione, tutti gli oggetti catalogo hanno il prefisso del nome dell’account esterno. Ciò significa che è possibile supportare più istanze di controllo (ad esempio istanze di sviluppo e produzione) in una stessa istanza di esecuzione.
 
 >[!IMPORTANT]
 >
@@ -40,44 +38,44 @@ La sincronizzazione dell&#39;offerta viene eseguita tramite pacchetti. Nelle ist
 
 Le offerte vengono distribuite automaticamente e quindi pubblicate sulle istanze di esecuzione e controllo.
 
-Le offerte eliminate nell&#39;ambiente di progettazione vengono disattivate in tutte le istanze online. Le proposte e le offerte obsolete vengono eliminate automaticamente su tutte le istanze dopo il periodo di eliminazione (specificato nell&#39;assistente di distribuzione di ciascuna istanza) e il periodo di scorrimento (specificato nelle regole di tipologia delle proposizioni in arrivo).
+Le offerte eliminate nell’ambiente di progettazione sono disabilitate in tutte le istanze online. Le proposte e le offerte obsolete vengono eliminate automaticamente su tutte le istanze dopo il periodo di eliminazione (specificato nell’assistente alla distribuzione di ogni istanza) e il periodo scorrevole (specificato nelle regole di tipologia delle proposizioni in arrivo).
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-Viene creato un flusso di lavoro per ciascun ambiente e account esterno per la sincronizzazione delle proposte. La frequenza di sincronizzazione può essere regolata per ogni ambiente e account esterno.
+Viene creato un flusso di lavoro per ogni ambiente e account esterno per la sincronizzazione delle proposte. La frequenza di sincronizzazione può essere regolata per ogni ambiente e account esterno.
 
 ## Limitazioni {#limitations}
 
-* Se si utilizza la funzione fall back da un ambiente anonimo a un ambiente identificato, questi due ambienti devono trovarsi nella stessa istanza di esecuzione.
-* La sincronizzazione tra più istanze di esecuzione non viene eseguita in tempo reale. Le interazioni dello stesso contatto devono essere inviate alla stessa istanza. L&#39;istanza di controllo deve essere dedicata al canale in uscita (nessun tempo reale).
+* Se utilizzi la funzione di ritorno da un ambiente anonimo a un ambiente identificato, questi due ambienti devono trovarsi nella stessa istanza di esecuzione.
+* La sincronizzazione tra più istanze di esecuzione non viene eseguita in tempo reale. Le interazioni dello stesso contatto devono essere inviate alla stessa istanza. L’istanza di controllo deve essere dedicata al canale in uscita (in tempo reale).
 * Il database di marketing non viene sincronizzato automaticamente. I dati di marketing utilizzati nei pesi e nelle regole di idoneità devono essere duplicati nelle istanze di esecuzione. Questo processo non è standard, è necessario svilupparlo durante il periodo di integrazione.
 * La sincronizzazione della proposta viene eseguita esclusivamente dalla connessione FDA.
-* Se utilizzate Interaction e Message Center nella stessa istanza, la sincronizzazione avverrà tramite il protocollo FDA in entrambi i casi.
+* Se utilizzi Interaction e Message Center nella stessa istanza, la sincronizzazione verrà eseguita tramite il protocollo FDA in entrambi i casi.
 
-## Configurazione pacchetti {#packages-configuration}
+## Configurazione dei pacchetti {#packages-configuration}
 
-Eventuali estensioni dello schema direttamente collegate a **Interazione** (offerte, proposte, destinatari ecc.) deve essere distribuito sulle istanze di esecuzione.
+Eventuali estensioni dello schema direttamente collegate a **Interazione** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
 
-Il pacchetto Interaction deve essere installato in tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare nelle istanze di controllo e un altro da installare in ogni istanza di esecuzione.
+Il pacchetto di interazione deve essere installato su tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare nelle istanze di controllo e un altro da installare in ogni istanza di esecuzione.
 
 >[!NOTE]
 >
->Durante l&#39;installazione del pacchetto, i campi di tipo **long** della tabella **nms:proposition** come l&#39;ID della proposizione diventano campi di tipo **int64**. Questo tipo di dati è dettagliato in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Durante l&#39;installazione del pacchetto, i campi del tipo **long** della tabella **nms:proposition**, come l&#39;ID della proposta, diventano campi di tipo **int64**. Questo tipo di dati è descritto in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Per le istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo di scorrimento) e delle regole di idoneità.
+La durata del periodo di conservazione dei dati deve essere configurata su ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, tale periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo scorrevole) e delle regole di idoneità.
 
 Sulle istanze di controllo:
 
-1. Create un account esterno tramite istanza di esecuzione:
+1. Crea un account esterno per istanza di esecuzione:
 
    ![](assets/interaction_powerbooster1.png)
 
-   * Completate l’etichetta e aggiungete un nome interno breve ed esplicito.
+   * Completare l’etichetta e aggiungere un nome interno breve ed esplicito.
    * Seleziona **[!UICONTROL Execution instance]**.
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
-   * Completate i parametri di connessione per l&#39;istanza di esecuzione.
-   * Ogni istanza di esecuzione deve essere collegata a un ID. L&#39;ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]**.
-   * Verificare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
+   * Completa i parametri di connessione per l’istanza di esecuzione.
+   * Ogni istanza di esecuzione deve essere collegata a un ID. L&#39;ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]** .
+   * Controllare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
    * Immettere l&#39;account FDA utilizzato. Un operatore deve essere creato sulle istanze di esecuzione e deve avere i seguenti diritti di lettura e scrittura sul database dell&#39;istanza in questione:
 
       ```
@@ -86,20 +84,20 @@ Sulle istanze di controllo:
       ```
    >[!NOTE]
    >
-   >L&#39;indirizzo IP dell&#39;istanza di controllo deve essere autorizzato sulle istanze di esecuzione.
+   >L’indirizzo IP dell’istanza di controllo deve essere autorizzato sulle istanze di esecuzione.
 
-1. Configurare l&#39;ambiente:
+1. Configura l’ambiente:
 
    ![](assets/interaction_powerbooster2.png)
 
-   * Aggiungete l&#39;elenco delle istanze di esecuzione.
-   * Per ciascuno di essi, specificate il periodo di sincronizzazione e i criteri del filtro (ad esempio, per paese).
+   * Aggiungi l’elenco delle istanze di esecuzione.
+   * Per ciascuno di essi, specifica il periodo di sincronizzazione e i criteri di filtro (ad esempio, per paese).
 
       >[!NOTE]
       >
-      >Se si verifica un errore, potete consultare i flussi di lavoro di sincronizzazione e le notifiche delle offerte. Questi sono reperibili nei flussi di lavoro tecnici dell&#39;applicazione.
+      >Se incontri un errore, puoi consultare i flussi di lavoro di sincronizzazione e le notifiche delle offerte. Questi sono disponibili nei flussi di lavoro tecnici dell’applicazione.
 
-Se, per motivi di ottimizzazione, solo una parte del database di marketing viene duplicata nelle istanze di esecuzione, è possibile specificare uno schema limitato collegato all&#39;ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Potete creare un&#39;offerta utilizzando dati non disponibili per le istanze di esecuzione. A tal fine, è necessario disattivare la regola sugli altri canali limitando questa regola sul canale in uscita (**[!UICONTROL Taken into account if]** campo).
+Se, per motivi di ottimizzazione, nelle istanze di esecuzione viene duplicata solo una parte del database di marketing, puoi specificare uno schema limitato collegato all’ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Puoi creare un’offerta utilizzando dati non disponibili nelle istanze di esecuzione. A questo scopo, devi disattivare la regola sugli altri canali limitando questa regola sul canale in uscita (**[!UICONTROL Taken into account if]** campo ).
 
 ![](assets/ita_filtering.png)
 
@@ -111,32 +109,32 @@ Elenco delle opzioni di manutenzione disponibili nell’istanza di controllo:
 >
 >Queste opzioni devono essere utilizzate solo per casi di manutenzione specifici.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: ultima data in cui un ambiente è stato sincronizzato in una determinata istanza.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: ultima data in cui le proposizioni da uno schema specificato sono state sincronizzate da un&#39;istanza all&#39;altra.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: l’ultima data in cui un ambiente è stato sincronizzato in una determinata istanza.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: l&#39;ultima data in cui le proposizioni da un dato schema sono state sincronizzate da un&#39;istanza all&#39;altra.
 * **`NmsInteraction_MapWorkflowId`**: un&#39;opzione contenente l&#39;elenco di tutti i flussi di lavoro di sincronizzazione generati.
 
-L&#39;opzione seguente è disponibile per le istanze di esecuzione:
+L’opzione seguente è disponibile nelle istanze di esecuzione:
 
-**NmsExecutionInstanceId**: contenente l’ID dell’istanza.
+**NmsExecutionInstanceId**: contenente l&#39;ID istanza.
 
-## Installazione pacchetti {#packages-installation}
+## Installazione dei pacchetti {#packages-installation}
 
-Se l’istanza non aveva in precedenza il pacchetto Interaction, non è necessaria alcuna migrazione. Per impostazione predefinita, la tabella delle proposte sarà in 64 bit dopo l&#39;installazione dei pacchetti.
+Se in precedenza l’istanza non aveva il pacchetto Interaction , non è necessaria alcuna migrazione. Per impostazione predefinita, la tabella delle proposte sarà in 64 bit dopo l&#39;installazione dei pacchetti.
 
 >[!IMPORTANT]
 >
->A seconda del volume di proposizioni esistenti nell’istanza, questa operazione potrebbe richiedere del tempo.
+>A seconda del volume di proposte esistenti nell’istanza, questa operazione potrebbe richiedere un po’ di tempo.
 
-* Se l&#39;istanza ha poche o nessuna proposta, non è necessaria alcuna modifica manuale della tabella di proposta. La modifica viene eseguita quando vengono installati i pacchetti.
+* Se l&#39;istanza ha poche o nessuna proposta, non è necessaria alcuna modifica manuale della tabella di proposta. La modifica verrà eseguita quando vengono installati i pacchetti.
 * Se l&#39;istanza ha molte proposte, è meglio modificare la struttura della tabella delle proposte prima di installare i pacchetti di controllo e di eseguirli. È consigliabile eseguire le query durante un periodo di bassa attività.
 
 >[!NOTE]
 >
->Se avete eseguito configurazioni specifiche nella tabella delle proposte, adattate le query di conseguenza.
+>Se hai eseguito configurazioni specifiche nella tabella delle proposte, adatta le query di conseguenza.
 
 ### PostgreSQL {#postgresql}
 
-Ci sono due metodi. Il primo (che utilizza una tabella di lavoro) è leggermente più veloce.
+Ci sono due metodi. La prima (utilizzando una tabella di lavoro) è leggermente più veloce.
 
 **Tabella di lavoro**
 
@@ -164,9 +162,9 @@ ALTER TABLE nmspropositionrcp
   ALTER COLUMN iinteractionid TYPE bigint;
 ```
 
-###  Oracle{#oracle}
+###  Oracle {#oracle}
 
-La modifica delle dimensioni di un tipo **Number** non comporta la riscrittura di valori o indice. È quindi immediata.
+La modifica delle dimensioni di un tipo **Number** non determina la riscrittura dei valori o dell&#39;indice. È quindi immediato.
 
 La query da eseguire è la seguente:
 
@@ -229,4 +227,3 @@ GO
 CREATE NONCLUSTERED INDEX NmsPropositionRcp_recipientId ON NmsPropositionRcp (iRecipientId)
 GO
 ```
-
