@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Arricchimento del contenuto
 description: Arricchimento del contenuto
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
 
 ---
-
 
 # Arricchimento del contenuto{#enriching-content}
 
@@ -21,11 +19,11 @@ Gli aggregati consentono di arricchire il contenuto con dati esterni. Questi dat
 
 ## Query generiche {#generic-queries}
 
-Le query sono configurate tramite il modello di pubblicazione nella scheda **[!UICONTROL Aggregator]**.
+Le query vengono configurate tramite il modello di pubblicazione nella scheda **[!UICONTROL Aggregator]** .
 
 I dati recuperati arricchiranno il documento di output XML tramite il relativo elemento principale.
 
-Esempio di restituzione da una query sullo schema del destinatario (**nms:destinatario**):
+Esempio di restituzione da una query sullo schema del destinatario (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -37,21 +35,21 @@ Esempio di restituzione da una query sullo schema del destinatario (**nms:destin
 </book>
 ```
 
-L&#39;elemento **`<collection-recipient>`** rappresenta l&#39;elemento di input del documento risultante da una query. I dati recuperati vengono restituiti sotto questo elemento; nel nostro esempio, un elenco di destinatari.
+L’elemento **`<collection-recipient>`** rappresenta l’elemento di input del documento risultante da una query. I dati recuperati vengono restituiti sotto questo elemento; nel nostro esempio, un elenco di destinatari.
 
 ### Aggiunta di una query {#adding-a-query}
 
-I parametri di query vengono modificati tramite una procedura guidata.
+I parametri della query vengono modificati mediante una procedura guidata.
 
-1. Nella prima pagina, specificare l&#39;etichetta e lo schema contenente i dati da recuperare.
+1. Nella prima pagina, specifica l’etichetta e lo schema contenente i dati da recuperare.
 
    ![](assets/d_ncs_content_query1.png)
 
    >[!NOTE]
    >
-   >Il campo di modifica **Path** viene utilizzato per rinominare l&#39;elemento di output della query.
+   >Il campo di modifica **Percorso** viene utilizzato per rinominare l&#39;elemento di output della query.
 
-1. La pagina successiva consente di selezionare i dati da recuperare.
+1. La pagina successiva ti consente di selezionare i dati da recuperare.
 
    ![](assets/d_ncs_content_query2.png)
 
@@ -59,30 +57,30 @@ I parametri di query vengono modificati tramite una procedura guidata.
 
    ![](assets/d_ncs_content_query3.png)
 
-1. L&#39;ultima pagina avvia un&#39;anteprima dei dati restituiti dalla query.
+1. L’ultima pagina avvia un’anteprima dei dati restituiti dalla query.
 
    ![](assets/d_ncs_content_query4.png)
 
 ## Tabelle collegate {#linked-tables}
 
-I collegamenti consentono di recuperare dati esterni collegati al contenuto.
+I collegamenti ti consentono di recuperare dati esterni collegati al contenuto.
 
 Esistono due tipi di dati collegati:
 
-* Collegamenti contenuto: questa è la modalità di gestione del contenuto nativa. Il contenuto del collegamento viene integrato automaticamente nel documento di output XML.
-* I collegamenti alle tabelle esterne consentono di accedere a tutte le altre tabelle del database con il vincolo di recuperare i dati del collegamento selezionato con un aggregatore.
+* Collegamenti al contenuto: è la modalità di gestione del contenuto nativa. Il contenuto del collegamento viene integrato automaticamente nel documento di output XML.
+* I collegamenti a tabelle esterne consentono di accedere a tutte le altre tabelle del database con il vincolo di recuperare i dati del collegamento selezionato con un aggregatore.
 
 ### Collegamento a uno schema di contenuto {#link-to-a-content-schema}
 
-Un collegamento contenuto è dichiarato nello schema dati come segue:
+Un collegamento di contenuto viene dichiarato nello schema dati come segue:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-La definizione del collegamento viene compilata su un **tipo** **`<element>`** e l&#39;attributo **espandereSchemaTarget** fa riferimento allo schema di destinazione (&quot;cus:Chapter&quot; nel nostro esempio). Lo schema di riferimento deve essere uno schema di contenuto.
+La definizione del collegamento viene compilata su un tipo **string** **`<element>`** e l&#39;attributo **expandSchemaTarget** fa riferimento allo schema di destinazione (&quot;cus:Chapter&quot; nel nostro esempio). Lo schema a cui si fa riferimento deve essere uno schema di contenuto.
 
-Il contenuto dell&#39;elemento di destinazione arricchisce l&#39;elemento di collegamento, ovvero l&#39;elemento **`<chapter>`** nello schema di esempio:
+Il contenuto dell’elemento di destinazione arricchisce l’elemento di collegamento, ovvero l’elemento **`<chapter>`** nel nostro schema di esempio:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -92,9 +90,9 @@ Il contenuto dell&#39;elemento di destinazione arricchisce l&#39;elemento di col
 
 >[!NOTE]
 >
->La **stringa di calcolo** del collegamento viene presentata dall&#39;attributo **computeString**.
+>La **stringa di calcolo** del collegamento viene presentata dall&#39;attributo **computeString** .
 
-Nel modulo di input, il controllo di modifica del collegamento è dichiarato come segue:
+Nel modulo di input, il controllo di modifica del collegamento viene dichiarato come segue:
 
 ```
 <input type="articleEdit" xpath="mainChapter"/>
@@ -102,17 +100,17 @@ Nel modulo di input, il controllo di modifica del collegamento è dichiarato com
 
 ![](assets/d_ncs_content_link.png)
 
-L&#39;icona **[!UICONTROL Magnifier]** consente di aprire il modulo di modifica dell&#39;elemento collegato.
+L’icona **[!UICONTROL Magnifier]** consente di aprire il modulo di modifica dell’elemento collegato.
 
-#### Raccolta di collegamenti {#link-collection}
+#### Raccolta collegamenti {#link-collection}
 
-Per compilare una raccolta di collegamenti, aggiungere l&#39;attributo **unbound=&quot;true&quot;** alla definizione dell&#39;elemento di collegamento nello schema dati:
+Per compilare una raccolta di collegamenti, aggiungi l&#39;attributo **unbound=&quot;true&quot;** alla definizione dell&#39;elemento di collegamento nello schema dati:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
 ```
 
-Il contenuto dell&#39;elemento di destinazione arricchisce ogni elemento di raccolta:
+Il contenuto dell’elemento di destinazione arricchisce ogni elemento di raccolta:
 
 ```
 <chapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -128,21 +126,21 @@ Nel modulo di input, il controllo elenco è dichiarato come segue:
 
 ![](assets/d_ncs_content_link2.png)
 
-Per visualizzare la **stringa di calcolo** degli elementi di destinazione, viene visualizzata una colonna predefinita.
+Viene visualizzata una colonna predefinita per visualizzare la **stringa di calcolo** degli elementi di destinazione.
 
-### Collegamenti alle tabelle esterne {#links-to-external-tables}
+### Collegamenti a tabelle esterne {#links-to-external-tables}
 
-Un collegamento a una tabella esterna viene dichiarato nello schema dati come segue:
+Nello schema dati viene dichiarato un collegamento a una tabella esterna come segue:
 
 ```
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-La definizione del collegamento viene compilata su un **collegamento** di tipo **`<element>`** e l&#39;attributo **target** fa riferimento allo schema di destinazione (&quot;nms:destinatario&quot; nel nostro esempio).
+La definizione del collegamento viene compilata su un tipo **link** **`<element>`** e l&#39;attributo **target** fa riferimento allo schema di destinazione (&quot;nms:recipient&quot; nel nostro esempio).
 
-Per convenzione, i collegamenti devono essere dichiarati dall&#39;elemento principale dello schema di dati.
+Per convenzione, i collegamenti devono essere dichiarati dall’elemento principale dello schema dati.
 
-La **stringa di calcolo** e la chiave dell&#39;elemento di destinazione arricchiscono gli attributi **`<name>-id`** e **`<name>-cs`** sull&#39;elemento principale.
+La **stringa di calcolo** e la chiave dell’elemento di destinazione arricchiscono gli attributi **`<name>-id`** e **`<name>-cs`** sull’elemento principale.
 
 Nel nostro esempio, il collegamento è popolato nello schema &quot;cus:book&quot;, il contenuto dei dati del collegamento è contenuto negli attributi &quot;mainContact-id&quot; e &quot;mainContact-cs&quot;:
 
@@ -150,7 +148,7 @@ Nel nostro esempio, il collegamento è popolato nello schema &quot;cus:book&quot
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
 ```
 
-Il controllo per la modifica dei collegamenti è dichiarato come segue:
+Il controllo della modifica del collegamento viene dichiarato come segue:
 
 ```
 <input xpath="mainContact"/>
@@ -158,7 +156,7 @@ Il controllo per la modifica dei collegamenti è dichiarato come segue:
 
 ![](assets/d_ncs_content_link3.png)
 
-È possibile limitare la scelta degli elementi di destinazione aggiungendo l&#39;elemento **`<sysfilter>`** tramite la definizione del collegamento nel modulo di input:
+Puoi limitare la scelta degli elementi di destinazione aggiungendo l’elemento **`<sysfilter>`** tramite la definizione del collegamento nel modulo di input:
 
 ```
 <input xpath="mainContact">
@@ -171,9 +169,9 @@ Il controllo per la modifica dei collegamenti è dichiarato come segue:
 
 >[!NOTE]
 >
->Questa limitazione si applica anche ai collegamenti di contenuto.
+>Questa restrizione si applica anche ai collegamenti di contenuto.
 
-#### Raccolta di collegamenti {#link-collection-1}
+#### Raccolta collegamenti {#link-collection-1}
 
 La definizione della raccolta è identica alla definizione di un elenco sugli elementi della raccolta:
 
@@ -195,22 +193,22 @@ Nel modulo di input, il controllo elenco è dichiarato come segue:
 
 >[!NOTE]
 >
->L’elenco è modificabile e consente di selezionare il collegamento da un controllo di tipo &quot;link&quot; illustrato sopra.
+>L’elenco è modificabile e consente di selezionare il collegamento da un controllo di tipo &quot;link&quot; presentato in precedenza.
 
-Il contenuto dell&#39;elemento di destinazione arricchisce ogni elemento di raccolta nel documento di output:
+Il contenuto dell’elemento di destinazione arricchisce ogni elemento di raccolta nel documento di output:
 
 ```
 <contact id="11504978621" recipient-cs="Doe John (john.doe@adobe.com)" recipient-id="3012"/>
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### Aggregazione dei collegamenti {#link-aggregation}
+#### Aggregazione collegamenti {#link-aggregation}
 
 Il contenuto di ciascun collegamento a cui si fa riferimento è limitato alla chiave interna e alla **stringa di calcolo** dell&#39;elemento di destinazione.
 
-Uno script JavaScript viene utilizzato per arricchire il contenuto dei collegamenti tramite query SOAP.
+Per arricchire il contenuto dei collegamenti tramite query SOAP viene utilizzato uno script JavaScript.
 
-**Esempio**: Aggiungendo il nome del destinatario al collegamento &quot;mainContact&quot; e i collegamenti della raccolta &quot;contact&quot;:
+**Esempio**: Aggiunta del nome del destinatario al link &quot;mainContact&quot; e ai link della raccolta &quot;contact&quot;:
 
 ```
 // Update <mainContact> link
@@ -248,7 +246,7 @@ for each(var contact in content.contact)
 }
 ```
 
-Il risultato ottenuto dopo l&#39;esecuzione dello script:
+Il risultato ottenuto dopo l’esecuzione dello script:
 
 ```
 <mainContact lastName="Doe"/>
@@ -257,7 +255,6 @@ Il risultato ottenuto dopo l&#39;esecuzione dello script:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-Il contenuto del codice JavaScript viene aggiunto tramite la cartella **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve essere popolato nel modello di pubblicazione per ogni trasformazione.
+Il contenuto del codice JavaScript viene aggiunto tramite la cartella **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve essere compilato nel modello di pubblicazione per ogni trasformazione.
 
 ![](assets/d_ncs_content_link5.png)
-
