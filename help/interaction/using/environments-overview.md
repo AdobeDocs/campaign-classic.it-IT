@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Panoramica sugli ambienti
 description: Panoramica sugli ambienti
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
-translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
 
 ---
 
-
 # Panoramica sugli ambienti{#environments-overview}
 
 Questo capitolo descrive come gestire gli ambienti delle offerte in Interaction.
 
-Diversi profili utente sono coinvolti nella gestione e nell&#39;utilizzo delle offerte. Il primo passo consiste quindi nel garantire che tali profili esistano e, in caso contrario, crearli.
+Diversi profili utente sono coinvolti nella gestione e nell’utilizzo delle offerte. Il primo passo, quindi, consiste nell’assicurarsi che questi profili esistano e, in caso contrario, crearli.
 
 >[!IMPORTANT]
 >
 >Le seguenti configurazioni devono essere eseguite da un **amministratore tecnico**.
 
-![](assets/do-not-localize/how-to-video.png) Guardate questo  [](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video per scoprire l&#39;architettura dell&#39;interazione Campaign e vedere come funziona il motore delle offerte.
+![](assets/do-not-localize/how-to-video.png) Guarda questo  [](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video per scoprire l’architettura dell’interazione con Campaign e come funziona il motore di offerte.
