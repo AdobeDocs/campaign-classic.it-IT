@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Informazioni sui casi di utilizzo dei flussi di lavoro
-description: Ulteriori informazioni sui casi di utilizzo che puoi eseguire utilizzando i flussi di lavoro Campaign Classic.
+title: Informazioni sui casi d’uso dei flussi di lavoro
+description: Ulteriori informazioni sui casi d’uso che è possibile eseguire utilizzando i flussi di lavoro di Campaign Classic.
 audience: workflow
 content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 68%
 
 ---
 
+# Informazioni sui casi d’uso dei flussi di lavoro {#about-workflow-use-cases}
 
-# Informazioni sui casi di utilizzo dei flussi di lavoro {#about-workflow-use-cases}
+In questa sezione troverai vari casi d’uso che sfruttano le funzionalità dei flussi di lavoro di Campaign.
 
-In questa sezione troverai diversi casi di utilizzo che sfruttano le funzionalità dei flussi di lavoro di Campaign.
-
-Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro possono essere utilizzati e a rispondere alle vostre esigenze.
+Ti aiuterà a scoprire i diversi contesti in cui i flussi di lavoro possono essere utilizzati e a rispondere alle tue esigenze.
 
 ## Consegne {#deliveries}
 
@@ -44,7 +42,7 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Invio di avvisi personalizzati agli operatori](../../workflow/using/sending-personalized-alerts-to-operators.md)
 * [Impostazione di un processo di approvazione del destinatario prima di avviare una consegna](../../workflow/using/using-the-local-approval-activity.md)
 
-## Gestione dati {#management}
+## Gestione dei dati {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
@@ -52,8 +50,8 @@ Questo vi aiuterà a scoprire i diversi contesti in cui i flussi di lavoro posso
 * [Creazione di un elenco di riepilogo](../../workflow/using/creating-a-summary-list.md)
 * [Arricchimento dei dati](../../workflow/using/enriching-data.md)
 * [Utilizzo di aggregati](../../workflow/using/using-aggregates.md)
-* [Importazione di dati crittografati con una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
-* [Cifratura ed esportazione di dati tramite una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [Importazione di dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
+* [Crittografia ed esportazione di dati utilizzando una chiave installata sul Pannello di controllo Campaign](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
 * [Utilizzo della funzionalità di unione dell’attività Deduplicazione](../../workflow/using/deduplication-merge.md)
 * [Impostazione di un flusso di lavoro di importazione ricorrente](../../workflow/using/recurring-import-workflow.md)
