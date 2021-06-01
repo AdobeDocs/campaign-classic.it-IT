@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Principio di funzionamento
 description: Principio di funzionamento
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
 
 ---
 
-
 # Principio di funzionamento{#operating-principle}
 
-Tecnicamente, la piattaforma Adobe Campaign  è basata su diversi moduli.
+Tecnicamente, la piattaforma Adobe Campaign è basata su diversi moduli.
 
-Ci sono molti moduli  Adobe Campaign. Alcuni funzionano in modo continuo, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio, per consolidare le informazioni di tracciamento).
+Ci sono molti moduli Adobe Campaign. Alcuni funzionano continuamente, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio per consolidare le informazioni di tracciamento).
 
-Esistono tre tipi di moduli Adobe Campaign :
+Esistono tre tipi di moduli Adobe Campaign:
 
-* Moduli a istanza multipla: viene eseguito un singolo processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività del file **config-default.xml**).
-* Moduli a istanza mono: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività del file **config-`<instance>`.xml**).
-* Moduli di utilità: si tratta di moduli che vengono eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**pulizia**, **config**, scaricamento dei registri di monitoraggio, ecc.).
+* Moduli a più istanze: viene eseguito un singolo processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività dal file **config-default.xml**).
+* Moduli di istanza mono: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività dal file **config-`<instance>`.xml**).
+* Moduli di utilità: si tratta di moduli che vengono eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**cleanup**, **config**, download dei log di tracciamento, ecc.).
 
 L&#39;amministrazione del modulo viene eseguita utilizzando lo strumento della riga di comando **nlserver** installato nella directory **bin** della cartella di installazione.
 
@@ -35,50 +33,50 @@ La sintassi generale dello strumento **nlserver** è la seguente:
 
 Per l&#39;elenco dei moduli disponibili, utilizzare il comando **nlserver**.
 
-I moduli disponibili sono descritti nella tabella seguente:
+I moduli disponibili sono descritti nella seguente tabella:
 
 | Comando | Descrizione |
 |---|---|
 | aliasCleansing | Standardizzazione dei valori di enumerazione |
-| fatturazione | Invio del rapporto sulle attività del sistema a billing@neolane.net |
-| pulizia | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;ottimizzatore del motore del database. |
+| fatturazione | Invio del rapporto sull’attività del sistema a billing@neolane.net |
+| pulizia | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;ottimizzatore del motore di database. |
 | config | Modifica della configurazione del server |
 | copybase | Copia di un database |
-| export | Esportazione alla riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client Adobe Campaign  |
+| esportare | Esportazione nella riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client di Adobe Campaign |
 | fileconvert | Conversione di un file di dimensioni impostate |
-| import | Importazione alla riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client Adobe Campaign . |
+| importare | Importazione nella riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client di Adobe Campaign. |
 | inMail | Analizzatore di posta in entrata |
-| installsetup | Disponibilità del file di installazione del cliente |
-| javascript | Esecuzione di script JavaScript, con accesso alle API SOAP. |
-| job | Elaborazione della riga di comando |
+| installazione | Disponibilità del file di installazione del cliente |
+| javascript | Esecuzione di script JavaScript con accesso alle API SOAP. |
+| lavoro | Elaborazione della riga di comando |
 | merge | Unione dei moduli |
 | midSourcing | Recupero delle informazioni di consegna in modalità mid-sourcing |
-| monitor | XML Visualizzazione dello stato dei processi server e delle attività pianificate, per istanza. |
-| mta | Messaggio di trasferimento agente principale |
-| package | Importazione o esportazione di file di pacchetto di entità |
-| pdump | Visualizzazione degli stati del processo del server |
-| prepara | Preparazione di un&#39;azione di consegna |
+| monitor | Visualizzazione XML dello stato dei processi server e delle attività pianificate, per istanza. |
+| mta | Messaggio di trasferimento dell&#39;agente principale |
+| pacchetto | Importazione o esportazione di file di pacchetto di entità |
+| scampo | Visualizzazione degli stati del processo del server |
+| prepara | Preparazione di un’azione di consegna |
 | riavvio | Riavvio parziale del server |
-| runwf | Esecuzione di un&#39;istanza di workflow |
-| arresto | Interruzione del sistema |
+| becco | Esecuzione di un’istanza di flusso di lavoro |
+| arresto | Spegnimento del sistema completo |
 | sms | Elaborazione delle notifiche SMS |
 | sql | Esecuzione script SQL |
-| start | Ulteriori avvii |
+| start | Inizio aggiuntivi |
 | stat | Mantiene le statistiche di connessione MTA |
-| stop | Chiusura parziale del sistema |
-| sottomissione | Invio di un&#39;azione di consegna |
-| syslogd | Server di registrazione e traccia per la scrittura |
+| stop | Spegnimento parziale del sistema |
+| sottomissione | Invio di un’azione di consegna |
+| syslogd | Server di registrazione e traccia |
 | tracking | Consolidamento e recupero dei registri di tracciamento |
-| trackinglogd | Tracciamento del registro di scrittura e rimozione del server |
-| cane da guardia | Avvio e monitoraggio dell’istanza |
-| web | Server applicazione (HTTP e SOAP) |
-| wfserver | Server flussi di lavoro |
+| trackinglogd | Tracking del server di scrittura e pulizia del registro |
+| cane da guardia | Avvio e monitoraggio dell&#39;istanza |
+| web | Server applicazioni (HTTP e SOAP) |
+| wfserver | Server flusso di lavoro |
 
 >[!IMPORTANT]
 >
->Esiste un ultimo modulo: il modulo di tracciamento e relay collegato al server applicazione che, per motivi di prestazioni, è integrato tramite meccanismi nativi in un server Web Apache o IIS tramite una libreria dinamica. Nessun comando Adobe Campaign  consente di avviare o amministrare il modulo. È pertanto necessario utilizzare i comandi del server Web stesso.
+>Esiste un ultimo modulo: il modulo di tracking e relay collegato al server applicativo che, per motivi di prestazioni, è integrato tramite meccanismi nativi in un server web Apache o IIS tramite una libreria dinamica. Nessun comando Adobe Campaign consente di avviare o amministrare questo modulo. È quindi necessario utilizzare i comandi del server Web stesso.
 
-L&#39;utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il seguente comando: **server `[module]` -?**
+L’utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il seguente comando: **nlserver `[module]` -?**
 
 Esempio:
 
@@ -126,4 +124,3 @@ Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
 -filter : applies the XTK filter contained in the file during loading of the schema entities.
 -setactivationkey : sets the activation key
 ```
-
