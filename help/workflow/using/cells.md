@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Celle
 description: Celle
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
 
 ---
 
-
 # Celle{#cells}
 
-L&#39;attività **[!UICONTROL Cells]** fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Facilita la manipolazione di sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
+L’attività **[!UICONTROL Cells]** fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Semplifica la manipolazione dei sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
 
 ![](assets/wf_split_cells.png)
 
-Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell&#39;utente. Per impostazione predefinita, il dettaglio di ciascun sottoinsieme è dettagliato in una finestra dedicata tramite le schede **[!UICONTROL Selection]** e **[!UICONTROL Advanced]**. Nell&#39;esempio seguente, il modulo è stato modificato: è stata aggiunta una scheda **[!UICONTROL Data]** per abilitare l&#39;associazione di un&#39;offerta e un livello di priorità per ciascun sottoinsieme.
+Puoi configurare questa attività per immettere parametri specifici in base alle esigenze degli utenti. Per impostazione predefinita, i dettagli di ciascun sottoinsieme sono descritti in una finestra dedicata tramite le schede **[!UICONTROL Selection]** e **[!UICONTROL Advanced]** . Nell’esempio seguente, il modulo è stato modificato: è stata aggiunta una scheda **[!UICONTROL Data]** per abilitare l’associazione di un’offerta e un livello di priorità per ciascun sottoinsieme.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Per questa configurazione, al modulo del flusso di lavoro (nel nodo **[!UICONTROL Administration > Configurations > Input forms]** della struttura  Adobe Campaign) sono state aggiunte le seguenti informazioni:
+Per questa configurazione, sono state aggiunte le seguenti informazioni al modulo del flusso di lavoro (nel nodo **[!UICONTROL Administration > Configurations > Input forms]** della struttura di Adobe Campaign):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -50,4 +48,4 @@ Per questa configurazione, al modulo del flusso di lavoro (nel nodo **[!UICONTRO
                 </container>
 ```
 
-La personalizzazione dei moduli di partecipazione in  Adobe Campaign è riservata agli utenti esperti. Per ulteriori informazioni, consulta questa [sezione](../../configuration/using/identifying-a-form.md).
+La personalizzazione dei moduli di ingresso in Adobe Campaign è riservata agli utenti esperti. Per ulteriori informazioni, consulta questa [sezione](../../configuration/using/identifying-a-form.md).
