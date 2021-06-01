@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di un’offerta
 description: Creazione di un’offerta
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
 
 ---
-
 
 # Creazione di un’offerta{#creating-an-offer}
 
@@ -186,4 +184,3 @@ Le ipotesi eseguite su una proposta di offerta sono riportate nella relativa sch
 La creazione di ipotesi è descritta in [questa pagina](../../campaign/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)
-
