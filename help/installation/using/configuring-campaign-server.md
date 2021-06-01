@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione del server Campaign
 description: Configurazione del server Campaign
@@ -7,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1578'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -22,11 +21,11 @@ Questo capitolo descrive le configurazioni lato server che possono essere esegui
 
 Queste procedure sono limitate alle distribuzioni **on-premise**/**ibride** e richiedono le autorizzazioni di amministrazione.
 
-Per le distribuzioni **in hosting**, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno di [Pannello di controllo Campaign di campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), come la gestione degli inserire nell&#39;elenco Consentiti IP o le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Per le distribuzioni **in hosting**, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno di [Pannello di controllo Campaign di campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), come la gestione degli inserire nell&#39;elenco Consentiti IP o le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
 
 Per ulteriori informazioni, consulta queste sezioni:
 
-* [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
 * [Matrice di funzionalità Campaign Classic on-premise e in hosting](../../installation/using/capability-matrix.md)
 
