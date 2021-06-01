@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introduzione ai test A/B
 description: Ulteriori informazioni sui test A/B in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-
 # Introduzione ai test A/B {#get-started-a-b-testing}
 
-I test A/B consentono di confrontare più versioni di una distribuzione tra loro, al fine di identificare quale avrà il maggiore impatto sulla popolazione interessata.
+Il test A/B ti consente di confrontare più versioni di una consegna rispetto alle altre, per identificare quale avrà il maggiore impatto sulla popolazione target.
 
-A questo scopo, è innanzitutto necessario definire più varianti della consegna. Ogni variante viene quindi inviata a campioni di popolazione per determinare quale funziona meglio a seconda dei criteri di scelta (aperture, spam reclami, clic su un collegamento specifico, ...).
+A questo scopo, devi innanzitutto definire più varianti della consegna. Ogni variante viene quindi inviata a campioni di popolazione per determinare quale funziona meglio a seconda dei criteri scelti (aperture, reclami di spam, clic su un collegamento specifico, ...).
 
-Nell&#39;esempio seguente, la destinazione di consegna è stata suddivisa in due gruppi, ciascuno dei quali rappresenta il 50% della popolazione mirata. Ogni gruppo riceve due versioni della consegna con due diverse offerte promozionali. Dopo l&#39;invio, si conclude che la variante A è stata eseguita meglio, in base al numero di clic sulle offerte promozionali.
+Nell’esempio seguente, il target di consegna è stato suddiviso in due gruppi, ciascuno dei quali rappresenta il 50% della popolazione target. Ogni gruppo riceve due versioni della consegna con due diverse offerte promozionali. Dopo l’invio della consegna, si conclude che la variante A ha ottenuto risultati migliori, in base al numero di clic sulle offerte promozionali.
 
 ![](assets/a-b-testing-schema.png)
 
-Con i Campaign Classic, i test A/B vengono implementati tramite flussi di lavoro, in cui è possibile specificare la popolazione di destinazione e i gruppi che riceveranno ciascuna variante (vedere [Configurazione dei test a/b](../../delivery/using/configuring-a-b-testing.md)).
+Con Campaign Classic, i test A/B vengono implementati tramite flussi di lavoro, in cui è possibile specificare il gruppo di destinazione e i gruppi che riceveranno ogni variante (consulta [Configurazione dei test a/b](../../delivery/using/configuring-a-b-testing.md)).
 
 Le fasi principali sono:
 
-1. **Si** rivolge alla popolazione desiderata.
-1. **Dividere la** popolazione in sottoinsiemi su cui verranno testate le varianti della consegna.
+1. **** Esegue il targeting della popolazione desiderata.
+1. **Dividi la** popolazione in sottoinsiemi in cui testerai le varianti della consegna.
 
-   Ad esempio, potete inviare una versione di una consegna a una piccola parte della popolazione di destinazione e un&#39;altra versione alla popolazione rimanente. Questo consente di testare una nuova versione di una consegna invece della consegna che viene solitamente inviata ai clienti. Potete anche dividere la popolazione di destinazione in 3 gruppi per inviarli tre diverse versioni di una consegna.
+   Ad esempio, puoi inviare una versione di una consegna a una piccola parte della popolazione target e un’altra versione alla popolazione rimanente. Ciò ti consente di testare una nuova versione di una consegna rispetto alla consegna che di solito viene inviata ai clienti. Puoi anche dividere la popolazione target in 3 gruppi per inviare loro tre diverse versioni di una consegna.
 
-1. **Create più** versioni della consegna corrispondente a ciascun sottoinsieme. La variante da verificare può essere l&#39;oggetto, il contenuto del messaggio, il nome del mittente e così via.
-1. Avviate il flusso di lavoro, quindi utilizzate i **log di consegna** per analizzare il comportamento dei sottoinsiemi con ciascuna variante.
+1. **Crea più** versioni della consegna corrispondenti a ciascun sottoinsieme. La variante da testare può essere l’oggetto, il contenuto del messaggio, il nome del mittente e così via.
+1. Avvia il flusso di lavoro, quindi utilizza i **registri di consegna** per analizzare il comportamento dei sottoinsiemi con ogni variante.
 
 >[!NOTE]
 >
->I flussi di lavoro consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha funzionato meglio e inviarla alla popolazione rimanente. Per ulteriori informazioni, fare riferimento a questo [caso d&#39;uso ](../../delivery/using/a-b-testing-use-case.md) dedicato.
+>I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questo [caso d’uso ](../../delivery/using/a-b-testing-use-case.md) dedicato.
