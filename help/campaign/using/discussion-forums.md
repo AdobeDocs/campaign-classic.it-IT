@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Forum di discussione
 description: Forum di discussione
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Forum di discussione{#discussion-forums}
 
@@ -111,6 +109,4 @@ Se gli operatori abbonati a un forum non ricevono le notifiche come previsto:
 
    * Nella home page di Adobe Campaign, vai a **[!UICONTROL Campaigns > Navigation > Deliveries]**, quindi apri la consegna **[!UICONTROL Discussion forum notification]**.
    * Nell&#39;elenco delle cartelle, vai su **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, quindi fai clic su **[!UICONTROL Discussion forum notifications]**.
-
    Nella casella **[!UICONTROL Discussion forum notifications]**, i registri di consegna si trovano nella scheda **[!UICONTROL Edit > Delivery]** . È inoltre possibile visualizzare le schede **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]** .
-
