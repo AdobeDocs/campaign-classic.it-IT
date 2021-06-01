@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Domande comuni
 description: Domande frequenti su Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 97%
 
 ---
-
 
 # Domande comuni{#common-questions}
 
@@ -75,4 +73,3 @@ Un sottodominio è una divisione del dominio che può essere utilizzata per isol
 Adobe prende in considerazione il DNS (Domain Name System) per la consegna delle e-mail, il che consente al cliente di mantenere l’immagine del proprio brand utilizzando un alias DNS con i relativi nomi di dominio e ad Adobe di implementare autonomamente tutte le best practice tecniche che consentono di ottimizzare il recapito messaggi durante l’invio delle e-mail.
 
 [Fai clic qui per ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html).
-
