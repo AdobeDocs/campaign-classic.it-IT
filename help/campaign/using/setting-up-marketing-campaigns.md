@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creare campagne di marketing
 description: Scopri come creare ed eseguire campagne di marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
+# Introduzione alle campagne di marketing{#setting-up-marketing-campaigns}
 
-# Guida introduttiva alle campagne di marketing{#setting-up-marketing-campaigns}
-
-Le campagne includono azioni (consegne), processi (importazione o estrazione di file) e risorse (documenti di marketing, linee di consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
+Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
 ![](assets/do-not-localize/how-to-video.png) Scopri come creare un piano di marketing, programmi e campagne  [nel video](#video)
 
@@ -31,7 +29,7 @@ Per creare una campagna di marketing:
 
 1. Approvare le consegne. [Ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md).
 
-1. Monitora le consegne. [Ulteriori informazioni](../../campaign/using/marketing-campaign-monitoring.md).
+1. Monitorare le consegne. [Ulteriori informazioni](../../campaign/using/marketing-campaign-monitoring.md).
 
 1. Pianificare campagne e costi associati. [Ulteriori informazioni](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
@@ -211,7 +209,7 @@ Una campagna periodica è una campagna basata su un modello specifico che consen
 
    >[!IMPORTANT]
    >
-   >I modelli di campagne periodiche creano nuove campagne in base alla pianificazione definita in precedenza. Deve pertanto essere completato con attenzione, per evitare di sovraccaricare il database di Adobe Campaign.
+   >I modelli di campagne periodiche creano nuove campagne in base alla pianificazione definita in precedenza. Deve pertanto essere completato con attenzione, per evitare di sovraccaricare il database Adobe Campaign.
 
 1. Una volta raggiunta la data di inizio dell’esecuzione, la campagna corrispondente viene creata automaticamente. Prende tutte le caratteristiche del suo modello.
 
