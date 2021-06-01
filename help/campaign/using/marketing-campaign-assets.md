@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Documenti e linee di consegna della campagna di marketing
 description: Ulteriori informazioni sui documenti e i profili di consegna delle campagne di marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Gestisci documenti associati {#managing-associated-documents}
+# Gestire i documenti associati {#managing-associated-documents}
 
 È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc).
 
