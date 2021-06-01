@@ -6,14 +6,13 @@ description: Scopri l’ambito e le specificità dell’invio di e-mail con l’
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 6eb29742d5884096f2d06b763823aede48f5dcb3
+exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
 
 ---
-
 
 # Invio con MTA avanzato {#sending-with-enhanced-mta}
 
@@ -98,7 +97,7 @@ Per i clienti che utilizzano la funzionalità di messaggistica transazionale di 
 
 ### Intestazioni MTA migliorate
 
-Le ultime istanze di Campaign Classic includono codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi richiedere [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell&#39;istanza di esecuzione (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) ), che può essere la tua istanza di marketing, [istanza di mid-sourcing](../../installation/using/mid-sourcing-server.md) o [istanza di esecuzione dei messaggi transazionali](../../message-center/using/creating-a-shared-connection.md#execution-instance), a seconda della configurazione.
+Le ultime istanze di Campaign Classic includono codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi richiedere [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell&#39;istanza di esecuzione (nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) ), che può essere la tua istanza di marketing, [istanza di mid-sourcing](../../installation/using/mid-sourcing-server.md) o [istanza di esecuzione dei messaggi transazionali](../../message-center/using/configuring-instances.md#execution-instance), a seconda della configurazione.
 
 Tuttavia, se utilizzi un’istanza precedente che non include questo codice, devi aggiungere una nuova regola di tipologia denominata **[!UICONTROL Typology Rule for Enhanced MTAs]** a tutte le tipologie esistenti nell’istanza Campaign.
 Questa regola viene aggiunta da un pacchetto **[!UICONTROL Typology]** installato come parte dell’aggiornamento all’MTA avanzato.
