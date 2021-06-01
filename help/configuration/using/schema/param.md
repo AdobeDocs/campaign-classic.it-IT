@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 6%
 
 ---
 
-
 # elemento param {#param--element}
 
-## Modello di contenuto {#content-model-12}
+## Modello dei contenuti {#content-model-12}
 
 param:==help
 
@@ -37,29 +35,29 @@ param:==help
 
 `<parameters>`
 
-## Bambini {#children-12}
+## Figli {#children-12}
 
 `<help>`
 
 ## Descrizione {#description-12}
 
-Questo elemento consente di definire un parametro per richiamare un metodo SOAP.
+Questo elemento ti consente di definire un parametro per la chiamata a un metodo SOAP.
 
-## Descrizione attributo {#attribute-description-12}
+## Descrizione dell&#39;attributo {#attribute-description-12}
 
-* **desc (stringa)**: descrizione relativa all’ `<param>` elemento.
-* **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all&#39;input (in) o all&#39;output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
-* **label (stringa)**:  `<param>` label
+* **desc (stringa)**: descrizione che riguarda l’ `<param>` elemento.
+* **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all’input (in) o all’output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
+* **etichetta (stringa)**:  `<param>` etichetta
 * **localizzabile (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
-* **name (MNTOKEN)**: nome interno del  `<param>`
-* **type (stringa)**: questo attributo definisce il tipo di  `<param>` elemento
+* **nome (MNTOKEN)**: nome interno  `<param>`
+* **tipo (stringa)**: questo attributo definisce il tipo di  `<param>` elemento
 
    Elenco dei tipi disponibili:
 
    * QUALSIASI
-   * bin
-   * blob
-   * boolean
+   * bidone
+   * macchia
+   * booleano
    * byte
    * CDATA
    * datetime
@@ -73,7 +71,7 @@ Questo elemento consente di definire un parametro per richiamare un metodo SOAP.
    * float
    * html
    * int64
-   * link
+   * collegamento
    * long
    * promemoria
    * MNTOKEN
@@ -82,12 +80,12 @@ Questo elemento consente di definire un parametro per richiamare un metodo SOAP.
    * short
    * string
    * orario
-   * periodo
+   * timespan
    * uuid
 
 ## Esempi {#examples-9}
 
-Definizione dell&#39;impostazione &quot;serviceName&quot; in entrata del tipo di stringa di caratteri:
+Definizione dell&#39;impostazione in entrata &quot;serviceName&quot; del tipo di stringa di caratteri:
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"
