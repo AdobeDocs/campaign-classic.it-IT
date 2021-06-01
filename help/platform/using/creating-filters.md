@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di filtri
 description: Creazione di filtri
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
 
 ---
 
-
-# Crea filtri{#creating-filters}
+# Creare i filtri{#creating-filters}
 
 Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explorer]** nella home page), i dati contenuti nel database vengono visualizzati in elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall’operatore . È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare i dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 
@@ -377,4 +375,3 @@ Fai clic sulla scheda **[!UICONTROL Settings]** per accedere alle seguenti opzio
    Questa opzione è abilitata per i filtri &quot;Destinatari di una consegna&quot; e &quot;Destinatari di consegne appartenenti a una cartella&quot; offerti nella procedura guidata di consegna che non possono essere sovraccaricati.
 
    ![](assets/s_ncs_user_filter_advanced_param.png)
-
