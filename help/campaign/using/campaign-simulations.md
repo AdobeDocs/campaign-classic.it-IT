@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Simulazioni delle campagne
 description: Simulazioni delle campagne
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
 
 ---
-
 
 # Simulazioni delle campagne{#campaign-simulations}
 
