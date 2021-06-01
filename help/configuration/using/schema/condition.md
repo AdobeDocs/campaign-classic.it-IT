@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 8%
 
 ---
 
-
 # elemento condizione {#condition--element}
 
-## Modello di contenuto {#content-model-2}
+## Modello dei contenuti {#content-model-2}
 
 condizione:==EMPTY
 
@@ -31,21 +29,21 @@ condizione:==EMPTY
 
 `<sysfilter>`
 
-## Bambini {#children-2}
+## Figli {#children-2}
 
-None
+Nessuno
 
 ## Descrizione {#description-2}
 
-Questo elemento consente di definire una condizione di filtro.
+Questo elemento ti consente di definire una condizione di filtro.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-2}
+## Uso e contesto di utilizzo {#use-and-context-of-use-2}
 
-Un elemento `<sysfiler>` può contenere diverse condizioni di filtraggio.
+Un elemento `<sysfiler>` può contenere diverse condizioni di filtro.
 
-## Descrizione attributo {#attribute-description-2}
+## Descrizione dell&#39;attributo {#attribute-description-2}
 
-* **boolOperator (stringa)**: se più  `<conditions>` sono definiti all&#39;interno dello stesso   `<sysfilter>` elemento, questo attributo consente di combinarli. Per impostazione predefinita, il collegamento logico è compreso tra `<condition>` elementi è &quot;AND&quot;. L&#39;attributo &quot;@boolOperator&quot; consente di combinare collegamenti di tipo &quot;OR&quot; e &quot;AND&quot;.
+* **boolOperator (stringa)**: se più  `<conditions>` sono definiti all’interno dello stesso   `<sysfilter>` elemento, questo attributo consente di combinarli. Per impostazione predefinita, il collegamento logico è tra gli elementi `<condition>` è &quot;AND&quot;. L’attributo &quot;@boolOperator&quot; consente di combinare collegamenti di tipo &quot;OR&quot; e &quot;AND&quot;.
 * **enabledIf (stringa)**: test di attivazione della condizione.
 * **expr (stringa)**: un&#39;espressione XTK.
 
