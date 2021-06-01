@@ -1,45 +1,43 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Report sulle consegne
 description: Report sulle consegne
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: dcbf280c-3040-4218-a453-1497662fef2e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 5%
 
 ---
 
-
 # Informazioni sui report sulle consegne{#reports-on-deliveries}
 
- Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console del cliente o da un browser Internet.
+Adobe Campaign offre diversi tipi di rapporti, accessibili tramite la console del cliente o un browser Internet.
 
-Sono disponibili i seguenti tipi di report:
+Sono disponibili i seguenti tipi di rapporto:
 
-* Report sull&#39;intera piattaforma, consultate [Report globali](../../reporting/using/global-reports.md).
-* Rapporti sulla distribuzione, vedere [Rapporti sulla consegna](../../reporting/using/delivery-reports.md).
-* Rapporti cumulati, vedere [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
+* Rapporti sull&#39;intera piattaforma, consulta [Rapporti globali](../../reporting/using/global-reports.md).
+* Rapporti di consegna, consulta [Rapporti di consegna](../../reporting/using/delivery-reports.md).
+* Rapporti cumulati, consulta [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
 
-Potete accedere ai rapporti dalla home page della console client, dal dashboard dei report o dall&#39;elenco di distribuzione. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L&#39;elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle vostre esigenze. Per ulteriori informazioni, fare riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L’elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) .
 
-## Utilizzo dei report {#using-reports}
+## Utilizzo dei rapporti {#using-reports}
 
-Un campo di ricerca è disponibile tramite il dashboard dei report per accedere rapidamente a uno dei report presenti nell&#39;elenco.
+È disponibile un campo di ricerca tramite il dashboard dei rapporti per accedere rapidamente a uno dei rapporti presenti nell’elenco.
 
 ![](assets/s_ncs_user_report_searchfield.png)
 
-Quando il rapporto viene generato, potete eseguire varie azioni utilizzando le icone nella barra degli strumenti a destra della finestra del rapporto.
+Quando il rapporto viene generato, puoi eseguire varie azioni utilizzando le icone sulla barra degli strumenti a destra della finestra del rapporto.
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
 Puoi:
 
-* Esportare il rapporto in Excel, PDF o Open Document,
+* Esporta il rapporto in Excel, PDF o Apri documento,
 * Stampa il rapporto,
 * Creare la cronologia del rapporto,
 * Visualizzare diverse cronologie dei rapporti,
@@ -47,6 +45,6 @@ Puoi:
 
 >[!NOTE]
 >
->Alcuni rapporti presentano grafici (curve, barre, funnel, ecc.). Sposta il cursore su un grafico per visualizzarne i valori.
+>Alcuni rapporti presentano grafici a linee (curva, barre, funnel, ecc.). Sposta il cursore su un grafico per visualizzarne i valori.
 
-Per ulteriori informazioni su queste opzioni, consultare [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Per ulteriori informazioni su queste opzioni, consulta [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
