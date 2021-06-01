@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Caso di utilizzo: creazione di un modulo per invitare un amico"'
 description: '"Caso di utilizzo: creazione di un modulo per invitare un amico"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Caso di utilizzo: crea un modulo di riferimento{#use-case-creating-a-refer-a-friend-form}
+# Caso d’uso: creare un modulo di riferimento{#use-case-creating-a-refer-a-friend-form}
 
 In questo esempio, vogliamo offrire un concorso ai destinatari del database. Il modulo Web avrà una sezione per inserire le risposte e un&#39;altra per fare riferimento a un amico inserendo il suo indirizzo e-mail.
 
@@ -126,4 +124,3 @@ Per configurare e creare il blocco di riferimento, procedi come segue:
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Il profilo contiene le informazioni inserite dal relativo referente. Viene memorizzato in base alle configurazioni immesse nello script del modulo. Se decidono di iscriversi alla newsletter, vengono salvati nella tabella dei destinatari.
-
