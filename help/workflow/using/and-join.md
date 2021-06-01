@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: AND-join
-description: AND-join
+title: Attività AND-join
+description: Attività AND-join
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
 
 ---
 
-
 # AND-join{#and-join}
 
-Un join attiva la propria transizione in uscita solo quando vengono attivate tutte le transizioni in entrata, ossia quando tutte le attività precedenti sono terminate. Questo consente di verificare che alcune attività siano state completate prima di continuare a eseguire il flusso di lavoro.
+Un join attiva la relativa transizione in uscita solo quando vengono attivate tutte le transizioni in entrata, ad esempio al termine di tutte le attività precedenti. Questo ti consente di verificare che alcune attività siano state completate prima di continuare a eseguire il flusso di lavoro.
 
-Ad esempio, potete utilizzare un&#39;attività AND-join nel contesto della creazione di contenuto e dell&#39;automazione dell&#39;invio di contenuti, per fare in modo che una consegna venga avviata solo una volta completate le fasi di query di destinazione e di aggiornamento dei contenuti. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+Ad esempio, puoi utilizzare un’attività AND-join nel contesto dell’automazione della creazione e dell’invio dei contenuti, per assicurarti che una consegna venga avviata solo una volta completati i passaggi di query di destinazione e aggiornamenti dei contenuti. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 
 ![](assets/and-join-usage.png)
 
 >[!NOTE]
 >
->Le transizioni in entrata configurate con dimensioni di targeting diverse non possono essere unite insieme utilizzando un&#39;attività **[!UICONTROL AND-join]**.
+>Tieni presente che le transizioni in entrata configurate con diverse dimensioni di targeting non possono essere unite utilizzando un’attività **[!UICONTROL AND-join]** .
 
-La popolazione inviata in uscita dell&#39;attività è determinata scegliendo un set principale tra le transizioni in entrata nell&#39;attività.
+La popolazione in uscita inviata dell’attività è determinata scegliendo un set principale tra le transizioni in entrata nell’attività.
 
-La transizione in uscita può contenere solo una delle popolazioni di transizione in entrata. Se l&#39;attività non è configurata, la transizione in uscita selezionerà in modo casuale una delle popolazioni in entrata.
+La transizione in uscita può contenere solo una delle popolazioni di transizione in entrata. Se l’attività non è configurata, la transizione in uscita selezionerà in modo casuale una delle popolazioni in entrata.
 
 >[!CAUTION]
 >
