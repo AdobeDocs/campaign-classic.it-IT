@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Fork
-description: Ulteriori informazioni sull'attività del flusso di lavoro Fork
+title: Attività Fork
+description: Ulteriori informazioni sull’attività del flusso di lavoro Fork
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
+exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
 
 ---
 
+# Attività Fork{#fork}
 
-# Fork{#fork}
+L’attività **[!UICONTROL Fork]** ti consente di creare più transizioni in uscita, al fine di eseguire diverse attività in modo indipendente all’interno dello stesso flusso di lavoro.
 
-L&#39;attività **[!UICONTROL Fork]** consente di creare più transizioni in uscita, al fine di eseguire diverse attività in modo indipendente all&#39;interno dello stesso flusso di lavoro.
+Ad esempio, puoi utilizzare l’attività dopo una query, per eseguire due azioni in parallelo:
 
-Ad esempio, potete utilizzare l&#39;attività dopo una query per eseguire due azioni in parallelo:
+* Salva il risultato della query in un pubblico,
+* Esegui una segmentazione sul risultato per inviare più consegne.
 
-* Salvate il risultato della query in un&#39;audience,
-* Eseguire una segmentazione sul risultato per inviare più consegne.
-
-Potete inoltre utilizzare l&#39;attività nel contesto della creazione di contenuto e dell&#39;automazione dell&#39;invio dei contenuti, per avviare in parallelo il calcolo di destinazione e la creazione di contenuto. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+Puoi inoltre utilizzare l’attività nel contesto dell’automazione della creazione e dell’invio dei contenuti, per avviare il calcolo di target e la creazione dei contenuti in parallelo. Un caso d&#39;uso dedicato è disponibile in [questa sezione](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
 
 >[!IMPORTANT]
 >
->Le transizioni in uscita aggiunte dopo un&#39;attività **[!UICONTROL Fork]** **non verranno eseguite contemporaneamente**. Questo comportamento può avere un impatto sulle prestazioni del flusso di lavoro. Utilizzate questa attività se è necessario eseguire diverse attività in modo indipendente, e alla fine unirle prima di eseguire il resto del flusso di lavoro.
+>Le transizioni in uscita aggiunte dopo un’attività **[!UICONTROL Fork]** **non verranno eseguite simultaneamente**. Questo comportamento può influire sulle prestazioni del flusso di lavoro. Utilizza questa attività se devi eseguire diverse attività in modo indipendente e alla fine uniscile prima di eseguire il resto del flusso di lavoro.
 
-Per configurare l&#39;attività **[!UICONTROL Fork]**, aprirla e definire il numero e l&#39;etichetta delle transizioni in uscita.
+Per configurare l’attività **[!UICONTROL Fork]** , aprila definendo il numero e l’etichetta delle transizioni in uscita.
 
 ![](assets/s_user_segmentation_fork.png)
 
-Potete quindi configurare ciascuna transizione in uscita, quindi unirli utilizzando un&#39;attività [AND-join](../../workflow/using/and-join.md), se necessario. In questo modo, il resto del flusso di lavoro verrà eseguito solo una volta completate le transizioni in uscita dell&#39;attività **[!UICONTROL Fork]**.
+Puoi quindi configurare ogni transizione in uscita, quindi unirle utilizzando un&#39;attività [AND-join](../../workflow/using/and-join.md) , se necessario. In questo modo, il resto del flusso di lavoro verrà eseguito solo una volta completate le transizioni in uscita dell’attività **[!UICONTROL Fork]**.
