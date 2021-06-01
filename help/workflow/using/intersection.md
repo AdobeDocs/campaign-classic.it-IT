@@ -1,49 +1,47 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Intersection
+title: Intersezione
 description: Intersezione
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f426bf02-9899-49eb-b699-728d51b57c64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
+# Intersezione{#intersection}
 
-# Intersection{#intersection}
+Un’attività di tipo **Intersection** crea un target dall’intersezione delle destinazioni ricevute.
 
-Un&#39;attività di tipo **Intersezione** crea una destinazione dall&#39;intersezione delle destinazioni ricevute.
-
-Un&#39;intersezione consente di estrarre solo la popolazione comune a tutti i risultati dell&#39;attività in entrata. La destinazione viene creata con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l&#39;intersezione. Per configurare questa attività, è necessario immettere un&#39;etichetta per essa e le opzioni relative al risultato.
+Un’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, fare riferimento a [Estrazione di dati di giunzione (Intersezione)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
+Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, consulta [Estrazione di dati di giunzione (Intersezione)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
 
-Selezionare l&#39;opzione **[!UICONTROL Generate complement]** se si desidera elaborare la popolazione rimanente. Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All&#39;attività verrà quindi aggiunta un&#39;ulteriore transizione in uscita, come segue:
+Se desideri elaborare la popolazione rimanente, seleziona l’opzione **[!UICONTROL Generate complement]** . Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All’attività verrà quindi aggiunta una transizione in uscita aggiuntiva, come segue:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
 ## Esempio di intersezione {#intersection-example}
 
-Nell&#39;esempio seguente, lo scopo dell&#39;intersezione è di calcolare i destinatari comuni a tre semplici query per creare un elenco.
+Nell’esempio seguente, lo scopo dell’intersezione è quello di calcolare i destinatari comuni a tre semplici query per creare un elenco.
 
-1. Dopo tre semplici query, inserire un&#39;attività di tipo **[!UICONTROL Intersection]**.
+1. Dopo tre semplici query, inserisci un&#39;attività di tipo **[!UICONTROL Intersection]**.
 
-   In questo esempio; le domande riguardano rispettivamente gli uomini, i beneficiari che vivono a Parigi e i beneficiari di età compresa tra i 18 e i 30 anni.
+   In questo esempio; le query riguardano rispettivamente gli uomini, i beneficiari che vivono a Parigi e i beneficiari di età compresa tra i 18 e i 30 anni.
 
-1. Configurare l&#39;intersezione. A tal fine, selezionare il metodo di riconciliazione **[!UICONTROL Keys only]**, dal momento che le popolazioni risultanti dalle query contengono dati coerenti.
-1. Se avete inserito dati aggiuntivi per le query, potete scegliere di mantenere solo quelli condivisi dai destinatari selezionando la casella corrispondente.
-1. Se si desidera utilizzare il resto dei dati (per quanto riguarda le query ma non la loro intersezione), selezionare la casella **[!UICONTROL Generate complement]**.
-1. Aggiungere un&#39;attività di aggiornamento elenco dopo il risultato dell&#39;intersezione. È inoltre possibile aggiungere un aggiornamento dell&#39;elenco al complemento se si desidera utilizzare anche questo.
-1. Eseguire il flusso di lavoro. In questo caso, due destinatari si applicano contemporaneamente a tutte e tre le query inserite. Il complemento è composto da cinque destinatari che si applicano solo a una o due delle tre query.
+1. Configura l&#39;intersezione. A questo scopo, seleziona il metodo di riconciliazione **[!UICONTROL Keys only]** in quanto le popolazioni risultanti dalle query contengono dati coerenti.
+1. Se hai inserito dati aggiuntivi per le query, puoi scegliere di mantenere solo quelli condivisi dai destinatari selezionando la casella corrispondente.
+1. Se desideri utilizzare il resto dei dati (per quanto riguarda le query ma non la loro intersezione), seleziona la casella **[!UICONTROL Generate complement]**.
+1. Aggiungi un’attività di aggiornamento elenco dopo il risultato dell’intersezione. È inoltre possibile aggiungere un aggiornamento dell’elenco al complemento, se lo si desidera.
+1. Esegui il flusso di lavoro. In questo caso, due destinatari si applicano a tutte e tre le query inserite contemporaneamente. Il complemento è composto da cinque destinatari che si applicano solo a una o due delle tre query.
 
-   Il risultato dell&#39;intersezione viene inviato al primo aggiornamento dell&#39;elenco. Se avete scelto di utilizzare il complemento, questo viene inviato anche al secondo aggiornamento dell&#39;elenco.
+   Il risultato dell’intersezione viene inviato al primo aggiornamento dell’elenco. Se hai scelto di utilizzare il complemento, questo viene inviato anche al secondo aggiornamento dell’elenco.
 
    ![](assets/intersection_example.png)
 
@@ -52,7 +50,7 @@ Nell&#39;esempio seguente, lo scopo dell&#39;intersezione è di calcolare i dest
 * tableName
 * schema
 
-Ogni evento in ingresso deve specificare una destinazione definita da questi parametri.
+Ogni evento in entrata deve specificare un target definito da questi parametri.
 
 ## Parametri di output {#output-parameters}
 
@@ -60,4 +58,4 @@ Ogni evento in ingresso deve specificare una destinazione definita da questi par
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema della popolazione (in genere  **[!UICONTROL nms:recipient]**) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema del gruppo (in genere  **[!UICONTROL nms:recipient]**) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
