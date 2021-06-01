@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Canale LINE
 description: Canale LINE
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 11%
@@ -17,7 +15,7 @@ ht-degree: 11%
 
 # Canale LINE{#line-channel}
 
-I flussi di lavoro descritti di seguito sono installati con il modulo **LINE channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../delivery/using/line-channel.md).
+I flussi di lavoro descritti di seguito sono installati con il modulo **LINE channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -32,14 +30,14 @@ I flussi di lavoro descritti di seguito sono installati con il modulo **LINE cha
    <td> Questo flusso di lavoro aggiorna il token di accesso a LINE V2.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Eliminare gli utenti LINE bloccati</span> <br /> </td> 
-   <td> <span class="uicontrol">deleteBlockLineUsersV2</span> <br /> </td> 
-   <td> Questo flusso di lavoro assicura che i dati degli utenti LINE V2 vengano eliminati dopo che hanno bloccato l'account ufficiale LINE per 180 giorni.<br /> </td> 
+   <td> <span class="uicontrol">Elimina utenti LINE bloccati</span> <br /> </td> 
+   <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
+   <td> Questo flusso di lavoro assicura che i dati degli utenti LINE V2 vengano cancellati dopo che hanno bloccato l'account ufficiale LINE per 180 giorni.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Migrazione da MID a LineUserID</span> <br /> </td> 
-   <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
-   <td> Questo flusso di lavoro genera l'ID degli utenti LINE V2 per la migrazione da LINE V1 a LINE V2.<br /> </td> 
+   <td> <span class="uicontrol">Migrazione MIDToUserIDM</span> <br /> </td> 
+   <td> Questo flusso di lavoro genera l’ID degli utenti LINE V2 per la migrazione da LINE V1 a LINE V2.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
