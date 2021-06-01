@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulle integrazioni di Campaign
 description: Usa altre soluzioni Adobe e combina le loro diverse funzionalità con Campaign.
@@ -7,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 9%
@@ -26,7 +25,7 @@ L&#39;elenco completo delle soluzioni e dei servizi di base di Adobe che possono
 
 >[!CAUTION]
 >
->La maggior parte di queste integrazioni richiede l’implementazione di Adobe Identity Management System (IMS) per accedere tramite un Adobe ID. [Ulteriori informazioni in questa pagina](../../integrations/using/about-adobe-id.md).
+>La maggior parte di queste integrazioni richiede l’implementazione di Adobe Identity Management System (IMS) per accedere tramite un Adobe ID. [Per ulteriori informazioni, consulta questa pagina](../../integrations/using/about-adobe-id.md).
 
 
 ## Collegamento delle soluzioni {#working-with-experience-cloud-solutions}
