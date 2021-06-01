@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filtraggio degli schemi
 description: Filtraggio degli schemi
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Filtra schemi{#filtering-schemas}
 
@@ -113,4 +111,3 @@ Per impostazione predefinita, gli schemi incorporati sono accessibili solo con a
 1. Crea un&#39;estensione per lo schema interessato o apri un&#39;estensione esistente.
 1. Aggiungi un elemento figlio **`<sysfilter name="<filter name>" _operation="delete"/>`** nell’elemento principale per eliminare l’applicazione del filtro nello stesso schema di origine.
 1. Se lo desideri, puoi aggiungere un nuovo filtro, come descritto in [Filtri di sistema](#system-filters).
-
