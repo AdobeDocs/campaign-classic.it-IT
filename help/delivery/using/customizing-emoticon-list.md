@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Personalizzazione dell’elenco delle emoticon
-description: Scoprite come personalizzare l’elenco delle icone quando si utilizza Adobe Campaign Classic.
+description: Scopri come personalizzare l’elenco degli emoticon quando utilizzi Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
 
 ---
 
-
 # Personalizzazione dell’elenco delle emoticon {#customize-emoticons}
 
-L&#39;elenco di icone visualizzato nella finestra a comparsa è controllato da un&#39;enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte che l&#39;utente ha per un dato campo.
-Potete personalizzare l’ordine degli elenchi di icone e aggiungere altre icone all’elenco.
-Le icone sono disponibili per le e-mail e per ulteriori informazioni, fate riferimento a questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+L’elenco di emoticon visualizzato nella finestra a comparsa è governato da un’enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte dell’utente per un dato campo.
+L&#39;ordine dell&#39;elenco degli emoticon può essere personalizzato, è anche possibile aggiungere altri emoticon alla tua lista.
+Le emoticon sono disponibili per e-mail e per ulteriori informazioni, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
-## Aggiunta di una nuova icona {#add-new-emoticon}
+## Aggiunta di un nuovo emoticon {#add-new-emoticon}
 
 >[!CAUTION]
 >
->L’elenco delle icone non può contenere più di 81 voci.
+>L’elenco delle emoticon non può visualizzare più di 81 voci.
 
-1. Scegliete la nuova icona da aggiungere da questa [pagina](https://unicode.org/emoji/charts/full-emoji-list.html). Tieni presente che deve essere compatibile con le diverse piattaforme come browser e sistema operativo.
+1. Scegli il nuovo emoticon da aggiungere da questa [pagina](https://unicode.org/emoji/charts/full-emoji-list.html). Tieni presente che deve essere compatibile con le diverse piattaforme quali browser e sistema operativo.
 
-1. In **[!UICONTROL Explorer]**, selezionare **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Enumerations]** e fare clic sull&#39;enumerazione **[!UICONTROL Emoticon list]** out-of-the-box.
+1. In **[!UICONTROL Explorer]**, seleziona **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Enumerations]** e fai clic sull&#39;enumerazione preconfigurata **[!UICONTROL Emoticon list]** .
 
    >[!NOTE]
    >
-   >Le enumerazioni pronte all’uso possono essere gestite solo da un amministratore della console Adobe Campaign Classic.
+   >Le enumerazioni predefinite possono essere gestite solo da un amministratore della console Adobe Campaign Classic.
 
    ![](assets/emoticon_1.png)
 
@@ -41,32 +39,32 @@ Le icone sono disponibili per le e-mail e per ulteriori informazioni, fate rifer
 
 1. Compila i campi:
 
-   * **[!UICONTROL U+]**: Codice della tua nuova icona. L&#39;elenco dei codici delle icone è disponibile in questa [pagina](https://unicode.org/emoji/charts/full-emoji-list.html).
-Per evitare problemi di compatibilità, consigliamo di scegliere le icone supportate sui browser e su ogni sistema operativo.
+   * **[!UICONTROL U+]**: Codice del tuo nuovo emoticon. L&#39;elenco dei codici degli emoticon è disponibile in questa [pagina](https://unicode.org/emoji/charts/full-emoji-list.html).
+Per evitare problemi di compatibilità, consigliamo di scegliere gli emoticon supportati sui browser e su ogni sistema operativo.
 
-   * **[!UICONTROL Label]**: Etichetta della nuova icona.
+   * **[!UICONTROL Label]**: Etichetta del tuo nuovo emoticon.
 
    ![](assets/emoticon_5.png)
 
-1. Fare clic su **[!UICONTROL Ok]**, quindi **[!UICONTROL Save]** al termine della configurazione.
-La nuova icona verrà automaticamente inserita nel negozio.
+1. Al termine della configurazione, fai clic su **[!UICONTROL Ok]** e quindi su **[!UICONTROL Save]** .
+Il nuovo emoticon verrà posizionato automaticamente nel negozio.
 
-1. Per visualizzarlo nella finestra **[!UICONTROL Insert emoticon]** delle consegne, selezionate l&#39;icona appena creata facendo doppio clic su di essa.
+1. Per visualizzarlo nella finestra **[!UICONTROL Insert emoticon]** delle consegne, seleziona l’emoticon appena creato facendo doppio clic su di esso.
 
-1. Scegliete nel menu a discesa **[!UICONTROL Display order]** in quale ordine verrà visualizzata la nuova icona. Selezionando un ordine di visualizzazione già assegnato, l&#39;icona esistente verrà automaticamente spostata nello store.
+1. Scegli nel menu a discesa **[!UICONTROL Display order]** in quale ordine verrà visualizzato il tuo nuovo emoticon. Selezionando un ordine di visualizzazione già assegnato, l’emoticon esistente verrà automaticamente spostato nello store.
 
-   <br>In questo esempio, abbiamo scelto l&#39;ordine di visualizzazione numero 61, il che significa che se una voce aveva già questo ordine sarà automaticamente spostata nello store e la nostra nuova voce avrà il suo posto nell&#39;elenco di enumerazione.
+   <br>In questo esempio, abbiamo scelto il numero di ordine di visualizzazione 61, il che significa che se una voce aveva già questo ordine verrà automaticamente spostata nello store e la nostra nuova voce avrà il suo posto nell&#39;elenco di enumerazione.
 
    ![](assets/emoticon_2.png)
 
-1. La nuova icona è stata aggiunta all&#39;enumerazione **[!UICONTROL Insert emoticon list]** out-of-the-box. È possibile cambiare la **[!UICONTROL Display order]** in qualsiasi momento o spostarla nello store se non ne ha più bisogno.
+1. Il nuovo emoticon è stato aggiunto all’enumerazione predefinita **[!UICONTROL Insert emoticon list]** . È possibile modificarne **[!UICONTROL Display order]** in qualsiasi momento o spostarlo nel negozio se non è più necessario.
 
-1. Per tenere conto delle modifiche, disconnettetevi e ricollegatevi da Adobe Campaign Classic. Se la nuova icona non viene visualizzata nella finestra a comparsa **[!UICONTROL Insert emoticon]**, potrebbe essere necessario cancellare la cache. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+1. Per tenere conto delle modifiche, disconnettiti e riconnettiti da Adobe Campaign Classic. Se il nuovo emoticon non viene ancora visualizzato nella finestra a comparsa **[!UICONTROL Insert emoticon]**, potrebbe essere necessario cancellare la cache. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. La nuova icona si trova ora nelle consegne nella **[!UICONTROL Insert emoticon]** finestra a comparsa nella 61a posizione, come configurato nei passaggi precedenti. Per ulteriori informazioni sull&#39;utilizzo delle icone nelle distribuzioni, fare riferimento a [page](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+1. Il nuovo emoticon si trova ora nelle consegne nella finestra a comparsa **[!UICONTROL Insert emoticon]** nella 61a posizione configurata nei passaggi precedenti. Per ulteriori informazioni su come utilizzare gli emoticon nelle consegne, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
-1. Se nella finestra a comparsa **[!UICONTROL Insert emoticon]** sono visualizzate le icone seguenti, significa che non sono state configurate correttamente. Controllare che il codice **[!UICONTROL U+]** o **[!UICONTROL Display order]** sia corretto nella cartella **[!UICONTROL Emoticon list]**.
+1. Se nella finestra a comparsa **[!UICONTROL Insert emoticon]** sono visualizzati i seguenti emoticon, significa che non sono stati configurati correttamente. Controlla se il tuo codice **[!UICONTROL U+]** o **[!UICONTROL Display order]** è corretto in **[!UICONTROL Emoticon list]**.
 
    ![](assets/emoticon_6.png)
