@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Flussi di lavoro della normativa sulla protezione dei dati
-description: Ulteriori informazioni sui flussi di lavoro relativi alla normativa sulla protezione dei dati
+title: Flussi di lavoro del Regolamento sulla protezione dei dati sulla privacy
+description: Ulteriori informazioni sui flussi di lavoro del Regolamento sulla protezione dei dati sulla privacy
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -17,7 +15,7 @@ ht-degree: 10%
 
 # Regolamento sulla protezione dei dati sulla privacy{#general-data-protection-regulation-gdpr}
 
-I flussi di lavoro descritti di seguito vengono installati con il modulo **Privacy Data Protection Regulation** per impostazione predefinita. Per ulteriori informazioni su questo modulo, fare riferimento a questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
+Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Privacy Data Protection Regulation** . Per ulteriori informazioni su questo modulo, consulta questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
@@ -27,19 +25,19 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Priva
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Raccolta di richieste di privacy</span> <br /> </td> 
+   <td> <span class="uicontrol">Raccogli richieste di privacy</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> Questo flusso di lavoro genera i dati del destinatario memorizzati in  Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di privacy.<br /> </td> 
+   <td> Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di privacy.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Eliminazione dei dati delle richieste di privacy</span> <br /> </td> 
+   <td> <span class="uicontrol">Eliminare i dati delle richieste di privacy</span> <br /> </td> 
    <td> <span class="uicontrol">deletePrivacyRequestsData</span> <br /> </td> 
-   <td> Questo flusso di lavoro elimina i dati del destinatario memorizzati in  Adobe Campaign.<br /> </td> 
+   <td> Questo flusso di lavoro elimina i dati del destinatario memorizzati in Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Pulizia richiesta privacy</span> <br /> </td> 
+   <td> <span class="uicontrol">Pulizia delle richieste di privacy</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPrivacyRequests</span> <br /> </td> 
-   <td> Questo flusso di lavoro cancella i file di richiesta di accesso che hanno più di 90 giorni.<br /> </td> 
+   <td> Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
