@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Esportazione e importazione di profili
 description: Esportazione e importazione di profili
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 15%
+ht-degree: 31%
 
 ---
 
-
-# Importa ed esporta profili{#exporting-and-importing-profiles}
+# Importare ed esportare i profili{#exporting-and-importing-profiles}
 
 Puoi [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database Adobe Campaign oppure impostare [importazioni generiche o processi di esportazione](#create-jobs).
 
