@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: ZIP o cifratura di un file
 description: Scopri come comprimere o crittografare un file in Campaign Classic prima dell’elaborazione.
@@ -7,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -24,7 +23,7 @@ Per poterlo fare:
 
    >[!NOTE]
    >
-   >Il Pannello di controllo Campaign è limitato agli utenti amministratori ed è disponibile solo per alcune versioni di Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >Il Pannello di controllo Campaign è limitato agli utenti amministratori ed è disponibile solo per alcune versioni di Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it)
 
 1. Se l&#39;installazione di Adobe Campaign è ospitata per Adobe, contatta l&#39; [Assistenza clienti di Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per avere le utility necessarie installate sul server.
 1. Se l&#39;installazione di Adobe Campaign è on-premise, installare l&#39;utility da utilizzare (ad esempio: GPG, GZIP) e le chiavi necessarie (chiave di crittografia) sul server dell&#39;applicazione.
