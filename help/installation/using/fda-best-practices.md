@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practice e limitazioni dell’FDA di Campaign
 description: Scopri le best practice e le limitazioni quando lavori con un database esterno (FDA)
@@ -7,11 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -43,9 +41,9 @@ In più attività del flusso di lavoro Adobe Campaign, puoi utilizzare i dati me
 
 * **Crea sottoinsiemi** : consente di creare sottoinsiemi  [](../../workflow/using/split.md) Splitactivity. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
 
-* **Carica database esterno** : è possibile utilizzare i dati esterni nell&#39;attività di caricamento  [dati](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Ulteriori informazioni in [questa pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Carica database esterno** : è possibile utilizzare i dati esterni nell&#39;attività di caricamento  [dati](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/data-loading--rdbms-.md).
 
-* **Aggiunta di informazioni e collegamenti**  - L’attività  [](../../workflow/using/enrichment.md) Enrichmentactivity ti consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Ulteriori informazioni in [questa pagina](../../workflow/using/enrichment.md).
+* **Aggiunta di informazioni e collegamenti**  - L’attività  [](../../workflow/using/enrichment.md) Enrichmentactivity ti consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/enrichment.md).
 
 ## Limiti FDA {#limitations}
 
