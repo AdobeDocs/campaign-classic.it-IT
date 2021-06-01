@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tracking di un’applicazione web
 description: Tracking di un’applicazione web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
+# Tracciare le visite in un’applicazione web{#tracking-a-web-application}
 
-# Tracciare le visite in un&#39;applicazione web{#tracking-a-web-application}
-
-Adobe Campaign ti consente di monitorare e misurare le visite sulle pagine delle applicazioni web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni web (moduli, sondaggi online, pagine web create utilizzando DCE, ecc.).
+Adobe Campaign consente di monitorare e misurare le visite sulle pagine delle applicazioni Web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni web (moduli, sondaggi online, pagine web create utilizzando DCE, ecc.).
 
 È quindi possibile definire diversi percorsi di navigazione e valutarne il successo. I dati recuperati sono quindi disponibili nei rapporti di ogni applicazione.
 
@@ -49,7 +47,7 @@ I principali miglioramenti descritti in questa versione sono i seguenti:
 
    ![](assets/trackers_6.png)
 
-Per identificare l’origine del traffico in un’applicazione Web, Adobe Campaign cerca in seguito le seguenti informazioni:
+Per identificare l&#39;origine del traffico in un&#39;applicazione Web, Adobe Campaign cerca in modo successivo le seguenti informazioni:
 
 1. l’identificatore di consegna di origine, se esiste (cookie nlId),
 1. l&#39;identificatore della consegna esterna definito nelle proprietà dell&#39;applicazione Web, se esiste,
@@ -74,4 +72,3 @@ Quando si utilizza l’interfaccia Web, i tag di tracciamento devono essere inse
 L’icona **[!UICONTROL Display blocks]** ti consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
 
 ![](assets/trackers_4.png)
-
