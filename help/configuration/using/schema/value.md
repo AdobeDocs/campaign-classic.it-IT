@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
 
 ---
 
-
 # elemento value {#value--element}
 
-## Modello di contenuto {#content-model-16}
+## Modello dei contenuti {#content-model-16}
 
 value:==help
 
@@ -35,23 +33,23 @@ value:==help
 
 `<enumeration>`
 
-## Bambini {#children-16}
+## Figli {#children-16}
 
 `<help>`
 
 ## Descrizione {#description-16}
 
-Questo elemento consente di definire i valori memorizzati in un&#39;enumerazione.
+Questo elemento ti consente di definire i valori memorizzati in un’enumerazione.
 
-## Descrizione attributo {#attribute-description-16}
+## Descrizione dell&#39;attributo {#attribute-description-16}
 
-* **applyIf (stringa)**: questo attributo consente di rendere facoltativo un valore di enumerazione. Riceve un&#39;espressione XTK.
+* **applyIf (string)**: questo attributo consente di rendere facoltativo un valore di enumerazione. Riceve un&#39;espressione XTK.
 * **desc (stringa)**: descrizione del valore di enumerazione.
 * **enabledIf (stringa)**: condizione per attivare il valore di enumerazione.
-* **img (stringa)**: immagine collegata all&#39;enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata nel server dell&#39;applicazione.
-* **label (stringa)**: dell&#39;etichetta del valore di enumerazione.
-* **name (stringa)**: nome interno del valore di enumerazione.
-* **value (stringa)**: del valore di enumerazione. Il tipo di valore è definito in base al tipo di enumerazione. Se l&#39;enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
+* **img (stringa)**: immagine collegata all’enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata sul server dell&#39;applicazione.
+* **etichetta (stringa)**: etichetta del valore di enumerazione.
+* **nome (stringa)**: nome interno del valore di enumerazione.
+* **value (stringa)**: valore del valore di enumerazione. Il tipo di valore viene definito in base al tipo di enumerazione. Se l&#39;enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
 
 ## Esempi {#examples-13}
 
