@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di modelli di importazione ed esportazione
 description: Scopri come creare modelli di importazione ed esportazione in Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
-
 
 # Creare modelli di importazione ed esportazione {#creating-import-export-templates}
 
