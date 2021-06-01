@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulla tabella dei destinatari personalizzata
 description: Informazioni sulla tabella dei destinatari personalizzata
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
+exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
-
 
 # Utilizzare una tabella dei destinatari personalizzata{#about-custom-recipient-table}
 
@@ -77,4 +75,3 @@ Ad esempio:
 * Il blocco di personalizzazione standard **[!UICONTROL Unsubscription link]** deve essere adattato.
 * È necessario modificare la mappatura di destinazione dei modelli di consegna standard.
 * I moduli V4 non sono compatibili per l’uso con una tabella dei destinatari esterna: è necessario utilizzare applicazioni web.
-
