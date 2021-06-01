@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulla creazione di report in Campaign
 description: Informazioni sulla creazione di report in Campaign
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 5%
 
 ---
-
 
 # Passaggi chiave per creare un report{#about-reports-creation-in-campaign}
 
@@ -31,4 +29,3 @@ Per creare, pubblicare e distribuire un rapporto di analisi sui dati, procedi co
 1. Configura le opzioni di visualizzazione: tipo di visualizzazione, rapporti condivisi: fare riferimento a [Contesto di visualizzazione del rapporto](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Definizione di un contenuto condizionale](../../reporting/using/defining-a-conditional-content.md) e [Configurazione dell&#39;accesso al rapporto](../../reporting/using/configuring-access-to-the-report.md),
 1. Pubblica il rapporto (procedura guidata di pubblicazione): fare riferimento a [Pubblicazione del rapporto](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
 1. Converti il rapporto: esportazione, cronologia, visualizzazione in un browser: fare riferimento a [Azioni sui report](../../reporting/using/actions-on-reports.md).
-
