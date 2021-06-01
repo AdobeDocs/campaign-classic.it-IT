@@ -1,78 +1,76 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione
 description: Configurazione
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
-
 # Configurazione{#configuration}
 
-Questa sezione è destinata alle persone responsabili della configurazione della gestione della risposta. Presuppone una certa quantità di conoscenze sull&#39;estensione degli schemi, sulla definizione dei flussi di lavoro e sulla programmazione SQL.
+Questa sezione è destinata alle persone responsabili della configurazione della gestione della risposta. Si presuppone una certa quantità di conoscenze sull&#39;estensione degli schemi, sulla definizione dei flussi di lavoro e sulla programmazione SQL.
 
-Questo consente di apprendere come adattare il modello dati standard alla natura specifica di una tabella di transazione esterna a  Adobe Campaign con il tabella dei singoli. Questa tabella di utenti può coincidere con la tabella di singoli utenti disponibili in  Adobe Campaign o con una tabella diversa
+Questo ti consente di comprendere come adattare il modello dati standard alla natura specifica di una tabella di transazioni esterna ad Adobe Campaign con la tabella dei singoli utenti. Questa tabella può coincidere con la tabella dei singoli utenti disponibile in Adobe Campaign o con una tabella diversa
 
-L&#39;ipotesi di misurazione viene avviata dal flusso di lavoro del processo di operazione ( **[!UICONTROL operationMgt]** ). Ogni ipotesi rappresenta un processo separato eseguito in modo asincrono con uno stato di esecuzione (In corso di modifica, In attesa, Completato, Non riuscito, ecc.) e controllata da un pianificatore che gestisce i vincoli di priorità, la limitazione del numero di processi simultanei, la pagina a bassa attività e l&#39;esecuzione automatica con frequenza.
+L&#39;ipotesi di misurazione viene avviata dal flusso di lavoro del processo di operazione ( **[!UICONTROL operationMgt]** ). Ciascuna ipotesi rappresenta un processo separato eseguito in modo asincrono con uno stato di esecuzione (In corso di modifica, In sospeso, Completato, Non riuscito, ecc.) e controllata da un programmatore che gestisce i vincoli di priorità, la limitazione del numero di processi simultanei, la pagina a bassa attività e l&#39;esecuzione automatica con frequenza.
 
 ## Configurazione degli schemi {#configuring-schemas}
 
 >[!CAUTION]
 >
->Non modificate gli schemi standard dell&#39;applicazione, ma utilizzate il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell&#39;applicazione. Ciò può causare malfunzionamenti durante l&#39;utilizzo  Adobe Campaign.
+>Non modificare gli schemi standard dell’applicazione, ma utilizzare il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento degli aggiornamenti futuri dell’applicazione. Questo può causare malfunzionamenti durante l’utilizzo di Adobe Campaign.
 
-L&#39;integrazione dell&#39;applicazione è necessaria prima di utilizzare il modulo di reazione, al fine di definire le varie tabelle (transazioni, dettagli della transazione) da misurare, nonché la loro relazione con consegne, offerte e individui.
+L’integrazione dell’applicazione è necessaria prima di utilizzare il modulo di reazione, al fine di definire le varie tabelle (transazioni, dettagli delle transazioni) da misurare e il loro rapporto con consegne, offerte e singoli individui.
 
 ### Schemi standard {#standard-schemas}
 
-Lo schema **[!UICONTROL nms:remaMatch]** out-of-the-box contiene la tabella del registro delle reazioni, ovvero la relazione tra singoli individui, ipotesi e tabella delle transazioni. Questo schema deve essere utilizzato come schema di ereditarietà per la tabella di destinazione finale dei registri di reazione.
+Lo schema predefinito **[!UICONTROL nms:remaMatch]** contiene la tabella del registro di reazione, ovvero la relazione tra singoli utenti, ipotesi e tabella delle transazioni. Questo schema deve essere utilizzato come schema di ereditarietà per la tabella di destinazione finale dei registri di reazione.
 
-Lo schema **[!UICONTROL nms:remaMatchRcp]** viene anche fornito come standard, contiene l&#39;archiviazione dei registri di reazione per  destinatari Adobe Campaign ( **[!UICONTROL nms:recipient]** ). Per essere utilizzato, dovrà essere esteso per essere mappato a una tabella delle transazioni (contenente acquisti, ecc.).
+Lo schema **[!UICONTROL nms:remaMatchRcp]** viene inoltre fornito come standard e contiene l&#39;archiviazione dei registri di reazione per i destinatari di Adobe Campaign ( **[!UICONTROL nms:recipient]** ). Per poter essere utilizzato, dovrà essere esteso per essere mappato a una tabella di transazione (contenente acquisti, ecc.).
 
 ### Tabelle di transazione e dettagli di transazione {#transaction-tables-and-transaction-details}
 
-La tabella delle transazioni deve includere collegamenti diretti verso individui.
+La tabella delle transazioni deve includere collegamenti diretti verso persone fisiche.
 
-È inoltre possibile aggiungere una tabella contenente i dettagli della transazione. Questo non è collegato direttamente ai singoli.
+Puoi anche aggiungere una tabella contenente i dettagli della transazione. Questo non è direttamente collegato agli individui.
 
-Se si accetta una ricevuta, ad esempio, una tabella di transazione è collegata a un contatto (tabella di incasso) e una tabella di linee di incasso è collegata solo alla tabella di incasso (tabella di dettaglio). È quindi possibile configurare l&#39;ipotesi direttamente al livello al quale la tabella della linea di ricezione è collegata alla tabella di ricezione.
+Se si accetta una ricevuta, ad esempio, una tabella di transazione è collegata a un contatto (tabella di ricezione) e una tabella di linee di ricezione è collegata solo alla tabella di ricezione (tabella di dettaglio). È quindi possibile configurare l&#39;ipotesi direttamente al livello a cui la tabella della linea di ricezione è collegata alla tabella di ricezione.
 
 >[!NOTE]
 >
->Se si desidera mantenere l&#39;identificatore di ricevuta che descrive il comportamento previsto nelle ipotesi, è possibile estendere il modello di tabella nms:remaMatchRcp per aggiungervi l&#39;identificatore (in questo caso, nessun calcolo ROI è collegato a questi campi).
+>Se si desidera mantenere l&#39;identificatore di ricezione che descrive il comportamento previsto nelle ipotesi, è possibile estendere il modello di tabella nms:remaMatchRcp per aggiungere l&#39;identificatore (in questo caso, nessun calcolo del ROI è collegato a questi campi).
 
-È vivamente consigliato aggiungere una data per l’evento.
+Si consiglia vivamente di aggiungere una data evento.
 
-Lo schema seguente mostra i join tra le diverse tabelle una volta completata la configurazione:
+Al termine della configurazione, lo schema seguente mostra i join tra le diverse tabelle:
 
 ![](assets/response_data_model.png)
 
-### Gestione delle risposte con  destinatari Adobe Campaign {#response-management-with-adobe-campaign-recipients}
+### Gestione della risposta con i destinatari di Adobe Campaign {#response-management-with-adobe-campaign-recipients}
 
-In questo esempio, integreremo una tabella di acquisti nel modulo di gestione delle risposte utilizzando la  tabella dei destinatari Adobe Campaign ( **[!UICONTROL nms:recipient]** ).
+In questo esempio, integreremo una tabella degli acquisti nel modulo di gestione delle risposte utilizzando la tabella dei destinatari di Adobe Campaign ( **[!UICONTROL nms:recipient]** ).
 
-La tabella dei log di risposta su un **[!UICONTROL nms:remaMatchRcp]** destinatario è estesa per aggiungere un collegamento allo schema della tabella di acquisto. Nell&#39;esempio seguente, la tabella di acquisto è denominata **demo:purchase**.
+La tabella dei registri di risposta su un destinatario **[!UICONTROL nms:remaMatchRcp]** viene estesa per aggiungere un collegamento allo schema della tabella di acquisto. Nell’esempio seguente, la tabella di acquisto è denominata **demo:purchase**.
 
-1. Mediante  Adobe Campaign Explorer, selezionare **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. Fare clic con il pulsante destro del mouse su **Recipient**, quindi selezionare **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. Tramite Adobe Campaign Explorer, seleziona **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. Fai clic con il pulsante destro del mouse su **Destinatario**, quindi seleziona **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. Potete personalizzare la **[!UICONTROL Extension namespace]** nella finestra successiva, quindi fare clic su **[!UICONTROL Next]**.
+1. Puoi personalizzare il **[!UICONTROL Extension namespace]** nella finestra successiva, quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. Nella categoria **[!UICONTROL Response management]**, assicurarsi che la casella **[!UICONTROL Generate a storage schema for reactions]** sia selezionata.
+1. Nella categoria **[!UICONTROL Response management]** , accertati che la casella **[!UICONTROL Generate a storage schema for reactions]** sia selezionata.
 
-   Fare clic su **[!UICONTROL Define additional fields...]** per selezionare le tabelle di transazione correlate e aggiungere i campi desiderati all&#39;estensione dello schema nms:remaMatchRcp.
+   Quindi fai clic su **[!UICONTROL Define additional fields...]** per selezionare le tabelle di transazione correlate e aggiungere i campi desiderati all&#39;estensione dello schema nms:remaMatchRcp.
 
    ![](assets/delivery_mapping3.png)
 
@@ -102,13 +100,13 @@ name="remaMatchRcp" namespace="cus">
 
 ### Gestione delle risposte con una tabella dei destinatari personalizzata {#response-management-with-a-personalized-recipient-table}
 
-In questo esempio, integreremo una tabella di acquisto nel modulo di gestione delle risposte utilizzando una tabella di utenti diversi dalla tabella di destinatari disponibile in  Adobe Campaign.
+In questo esempio, integreremo una tabella di acquisto nel modulo di gestione delle risposte utilizzando una tabella di singoli utenti diversa dalla tabella dei destinatari disponibile in Adobe Campaign.
 
-* Creazione di un nuovo schema del registro risposte derivato dallo schema **[!UICONTROL nms:remaMatch]**.
+* Creazione di un nuovo schema del registro di risposta derivato dallo schema **[!UICONTROL nms:remaMatch]**.
 
-   Poiché la tabella di singoli utenti è diversa dalla tabella  destinatari Adobe Campaign, è necessario creare un nuovo schema dei registri di risposta basato sullo schema **[!UICONTROL nms:remaMatch]**. Quindi completarlo con i link verso i registri di consegna e la tabella di acquisto.
+   Poiché la tabella dei singoli utenti è diversa dalla tabella dei destinatari di Adobe Campaign, è necessario creare un nuovo schema dei registri di risposta in base allo schema **[!UICONTROL nms:remaMatch]**. Quindi completalo con i collegamenti verso i registri di consegna e la tabella di acquisto.
 
-   Nell&#39;esempio seguente, verrà utilizzato lo schema **demo:wideLogPers** e la tabella delle transazioni **demo:purchase**:
+   Nell&#39;esempio seguente, utilizzeremo lo schema **demo:wideLogPers** e la tabella delle transazioni **demo:purchase**:
 
    ```
    <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -129,7 +127,7 @@ In questo esempio, integreremo una tabella di acquisto nel modulo di gestione de
 
 * Modifica del modulo di ipotesi nello schema **[!UICONTROL nms:remaHypothesis]**.
 
-   Per impostazione predefinita, l’elenco dei registri di risposta è visibile nei registri dei destinatari. È pertanto necessario modificare il modulo di ipotesi per visualizzare i nuovi registri di risposta creati durante il passaggio precedente.
+   Per impostazione predefinita, l’elenco dei registri di risposta è visibile nei registri dei destinatari. È quindi necessario modificare il modulo di ipotesi per visualizzare i nuovi registri di risposta creati durante il passaggio precedente.
 
    Ad esempio:
 
@@ -146,9 +144,9 @@ In questo esempio, integreremo una tabella di acquisto nel modulo di gestione de
 
 ## Gestione degli indicatori {#managing-indicators}
 
-Il modulo Response Manager include un elenco di indicatori predefiniti. Tuttavia, potete aggiungere altri indicatori di misura personalizzati.
+Il modulo Response Manager viene fornito con un elenco di indicatori predefiniti. Tuttavia, puoi aggiungere altri indicatori di misurazione personalizzati.
 
-A questo scopo, è necessario estendere la tabella di ipotesi inserendo due campi per ogni nuovo indicatore:
+A questo scopo, è necessario estendere la tabella delle ipotesi inserendo due campi per ogni nuovo indicatore:
 
 * il primo per la popolazione bersaglio,
 * il secondo per il gruppo di controllo.
@@ -167,4 +165,3 @@ md5="1D4DED54FF8EC2432AED6736EDE6F547" name="remaHypothesis" namespace="demo" xt
     </element>
 </srcSchema>
 ```
-
