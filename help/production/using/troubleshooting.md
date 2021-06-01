@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Risoluzione dei problemi di produzione
 description: Scopri le procedure di risoluzione dei problemi di produzione relative alla configurazione, al monitoraggio, al processo di aggiornamento, all’elaborazione dei dati e alla procedura di manutenzione del database di Adobe Campaign.
@@ -7,8 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -42,7 +40,7 @@ Questa sezione contiene procedure di risoluzione dei problemi relativi a problem
 
 Di seguito sono riportati alcuni suggerimenti per migliorare la tua esperienza con i registri:
 
-* [Precisione dei log](../../production/using/log-precision.md)
+* [Precisione dei registri](../../production/using/log-precision.md)
 * [Tracciamento dei problemi del registro](../../production/using/tracking-logs-issues.md)
 
 ## Problemi del database {#database-issues}
