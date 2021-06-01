@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulle query in Campaign
 description: Informazioni sulle query in Campaign
-feature: Query Editor
+feature: Editor query
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 81%
+source-wordcount: '179'
+ht-degree: 83%
 
 ---
-
 
 # Guida introduttiva alle query{#about-queries-in-campaign}
 
