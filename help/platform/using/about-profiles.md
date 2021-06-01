@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sui profili
 description: Informazioni sui profili
@@ -7,14 +6,14 @@ feature: Profili, tipi di pubblico
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
-# Guida introduttiva ai profili{#about-profiles}
+# Introduzione ai profili{#about-profiles}
 
 I profili sono centralizzati nel database di Adobe Campaign. Esistono molti possibili meccanismi per l’acquisizione di profili e la creazione di questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi di informazioni. Con Adobe Campaign, puoi incorporare la cronologia di marketing, le informazioni di acquisto, le preferenze, i dati CRM ed eventuali dati PI rilevanti in una vista consolidata per analizzare e intraprendere azioni.
 
