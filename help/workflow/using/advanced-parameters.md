@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Parametri avanzati
 description: Parametri avanzati
@@ -7,8 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -37,7 +35,7 @@ Questo campo contiene il nome interno dell’attività.
 
 Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta: [Gestione delle immagini delle attività](../../workflow/using/managing-activity-images.md).
 
-## Esecuzione {#execution}
+## Execution {#execution}
 
 Questo campo ti consente di definire l’azione da eseguire quando l’attività viene attivata. Sono disponibili tre opzioni possibili:
 
