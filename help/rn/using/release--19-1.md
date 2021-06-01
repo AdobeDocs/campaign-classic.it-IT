@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Note sulla versione di Campaign 19.1
 description: Note sulla versione per Campaign 19.1
@@ -7,11 +6,10 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-translation-type: tm+mt
-source-git-commit: 5271a23f7d815d432cfec00c57555c18be1fd3c7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3256'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -27,7 +25,7 @@ _15 aprile 2021_
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 marzo 2021_
 
