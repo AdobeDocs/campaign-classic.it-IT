@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Interazione: buffer dati'
 description: 'Interazione: buffer dati'
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 3%
 
 ---
-
 
 # Interazione: buffer dati{#interaction-data-buffer}
 
@@ -67,4 +65,3 @@ Dettagli argomento:
  runLevel: Priority at start Default: 10 
  targetKeySize: Max. number of characters stored in the shared memory for identifying individuals Default: 16 
 ```
-
