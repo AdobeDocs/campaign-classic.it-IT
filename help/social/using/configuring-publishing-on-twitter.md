@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione della pubblicazione su Twitter
 description: Configurazione della pubblicazione su Twitter
 audience: social
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione della pubblicazione su Twitter{#configuring-publishing-on-twitter}
 
@@ -28,13 +26,13 @@ Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi deleg
 
 ## Prerequisiti {#prerequisites}
 
-Per iniziare, crea uno o più account Twitter a cui inviare i tweet.
+Inizia creando uno o più account Twitter a cui inviare i tweet.
 
-Per creare un account Twitter, visita [https://twitter.com](https://twitter.com).
+Per creare un account Twitter, vai su [https://twitter.com](https://twitter.com).
 
-## Creazione di un account di prova su Twitter {#creating-a-test-account-on-twitter}
+## Creazione di un account di test su Twitter {#creating-a-test-account-on-twitter}
 
-Consigliamo inoltre di creare un account Twitter privato che possa essere utilizzato per inviare bozze su Twitter (per ulteriori informazioni, consulta [Invio della bozza](../../social/using/publishing-on-twitter.md#sending-the-proof)):
+Consigliamo inoltre di creare un account Twitter privato che possa essere utilizzato per inviare bozze su tweet (per ulteriori informazioni, consulta [Invio della bozza](../../social/using/publishing-on-twitter.md#sending-the-proof)):
 
 * Crea un nuovo account Twitter.
 * Fai clic sul menu nell’angolo in alto a destra e seleziona **[!UICONTROL Settings]**.
@@ -43,9 +41,9 @@ Consigliamo inoltre di creare un account Twitter privato che possa essere utiliz
 
 ![](assets/social_twitter_test_page.png)
 
-## Creazione di un&#39;applicazione su Twitter {#creating-an-application-on-twitter}
+## Creazione di un&#39;applicazione in Twitter {#creating-an-application-on-twitter}
 
-Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi creare un&#39;applicazione Twitter per account Twitter. A questo scopo, esegui i seguenti passaggi:
+Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi creare un’applicazione Twitter per account Twitter. A questo scopo, esegui i seguenti passaggi:
 
 1. Accedi al tuo account Twitter.
 1. Inserisci il seguente indirizzo nel browser Internet: [https://apps.twitter.com/](https://apps.twitter.com/).
@@ -79,7 +77,7 @@ Questo passaggio richiede l’accesso simultaneo alla console Adobe Campaign e a
 
    >[!NOTE]
    >
-   >L’opzione **[!UICONTROL Synchronize subscriptions]** è attivata per impostazione predefinita. Quando la casella è selezionata, il flusso di lavoro di sincronizzazione dell&#39;account Twitter (fare riferimento a [Sincronizzazione degli account Twitter](#synchronizing-twitter-accounts)) recupera l&#39;elenco dei follower Twitter in modo da inviarli direttamente (fare riferimento a [Invio di messaggi diretti agli abbonati](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Se non si desidera recuperare l&#39;elenco dei follower, deselezionare questa casella.
+   >L’opzione **[!UICONTROL Synchronize subscriptions]** è attivata per impostazione predefinita. Quando la casella è selezionata, il flusso di lavoro di sincronizzazione dell&#39;account Twitter (fare riferimento a [Sincronizzazione degli account Twitter](#synchronizing-twitter-accounts)) recupera l&#39;elenco dei follower di Twitter in modo da poter inviare loro messaggi diretti (fare riferimento a [Invio di messaggi diretti agli abbonati](../../social/using/publishing-on-twitter.md#sending-direct-messages-to-subscribers)). Se non si desidera recuperare l&#39;elenco dei follower, deselezionare questa casella.
 
 1. Immetti l’etichetta e il nome interno del servizio.
 
@@ -90,8 +88,8 @@ Questo passaggio richiede l’accesso simultaneo alla console Adobe Campaign e a
    >Il **[!UICONTROL Internal name]** del servizio deve essere identico al nome dell&#39;account Twitter. Per assicurarti che non ci siano errori di immissione, applica i seguenti passaggi.
 
    * Fai clic sul pulsante **[!UICONTROL Save]**.
-   * Nella panoramica dei servizi, fai clic sul servizio di tipo Twitter appena creato.
-   * Seleziona la scheda **[!UICONTROL Twitter page]**. Dovrebbe essere visualizzato l&#39;account Twitter.
+   * Nella panoramica dei servizi, fai clic sul servizio Twitter type appena creato.
+   * Seleziona la scheda **[!UICONTROL Twitter page]**. Deve essere visualizzato l’account Twitter .
 
       ![](assets/social_twitter_service_010.png)
 
@@ -99,11 +97,11 @@ Questo passaggio richiede l’accesso simultaneo alla console Adobe Campaign e a
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. Su Twitter, copia il contenuto dei campi **[!UICONTROL Consumer Key (API Key)]** e **[!UICONTROL Consumer Secret (API Secret)]** e incollalo nei campi **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** della console.
+1. In Twitter, copia il contenuto dei campi **[!UICONTROL Consumer Key (API Key)]** e **[!UICONTROL Consumer Secret (API Secret)]** e incollalo nei campi **[!UICONTROL Consumer key]** e **[!UICONTROL Consumer secret]** della console.
 
    ![](assets/social_twitter_service_012.png)
 
-1. Su Twitter, copia il contenuto dei campi **[!UICONTROL Access Token]** e **[!UICONTROL Access Token Secret]** e incollalo nei campi **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** della console.
+1. In Twitter, copia il contenuto dei campi **[!UICONTROL Access Token]** e **[!UICONTROL Access Token Secret]** e incollalo nei campi **[!UICONTROL Access token]** e **[!UICONTROL Access token secret]** della console.
 
    ![](assets/social_twitter_service_013.png)
 
@@ -129,4 +127,4 @@ Il flusso di lavoro **[!UICONTROL Twitter account synchronization]**, accessibil
 >
 >È possibile avviare il flusso di lavoro in qualsiasi momento eseguendo l&#39;elaborazione prevista delle attività. Puoi anche modificare la pianificazione per modificare la frequenza di attivazione del flusso di lavoro. Per ulteriori informazioni sulla pianificazione, consulta [questa sezione](../../workflow/using/scheduler.md).
 
-Ora puoi inviare tweet ai tuoi account Twitter e messaggi diretti ai tuoi follower. Per ulteriori informazioni, consulta: [Pubblicazione su Twitter](../../social/using/publishing-on-twitter.md).
+Ora puoi inviare tweet ai tuoi account Twitter e inviare messaggi diretti ai tuoi follower. Per ulteriori informazioni, consulta: [Pubblicazione su Twitter](../../social/using/publishing-on-twitter.md).
