@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Informazioni sulla guida alla configurazione
-description: Informazioni sulla guida alla configurazione
+title: Guida alla configurazione
+description: Guida alla configurazione
 audience: configuration
 content-type: reference
 topic-tags: about
-translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '10'
 ht-degree: 10%
@@ -15,8 +13,8 @@ ht-degree: 10%
 ---
 
 
-# Informazioni su Guida alla configurazione{#about}
+# Guida alla configurazione{#about}
 
-Test
+Attività Test
 
 
