@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Guida introduttiva al monitoraggio della consegna
+title: Introduzione al monitoraggio della consegna
 description: Ulteriori informazioni sulle funzionalità di monitoraggio della distribuzione di Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
+exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 14%
+ht-degree: 25%
 
 ---
 
+# Introduzione al monitoraggio della consegna {#about-delivery-monitoring}
 
-# Guida introduttiva al monitoraggio della consegna {#about-delivery-monitoring}
-
-Il monitoraggio delle consegne dopo l’invio è un passaggio chiave per garantire l’efficienza delle campagne di marketing e la disponibilità dei clienti.
+Il monitoraggio delle consegne dopo l’invio è un passaggio fondamentale per garantire l’efficienza delle campagne di marketing e l’effettivo raggiungimento dei clienti.
 
 In questa sezione troverai ulteriori informazioni sulle informazioni da monitorare dopo l’invio di una consegna, nonché su come vengono gestiti gli errori di consegna e le quarantena.
 
@@ -43,7 +41,7 @@ Per ogni consegna è disponibile un dashboard dedicato. Consente di monitorare e
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
-**Comprendere gli errori di consegna**
+**Errori di consegna**
 
 Quando un messaggio non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, rilevato dalla piattaforma Adobe Campaign e qualificato per determinare se l’indirizzo e-mail o il numero di telefono devono essere messi in quarantena o meno.
 
@@ -51,7 +49,7 @@ Quando un messaggio non può essere inviato a un profilo, il server remoto invia
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
-**Comprendere la gestione della quarantena**
+**Gestione della quarantena**
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting.
 
