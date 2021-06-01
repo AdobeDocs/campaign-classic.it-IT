@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Modelli di campagna di marketing
 description: Modelli di campagna di marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # Creare e configurare modelli di campagna {#campaign-templates}
 
@@ -25,7 +23,7 @@ Tutte le campagne di marketing si basano su un modello, che memorizza le caratte
 >
 >La struttura ad albero viene visualizzata quando fai clic sull&#39;icona **[!UICONTROL Explorer]** nella home page.
 
-Viene fornito un modello incorporato per creare una campagna per la quale non è stata definita alcuna configurazione specifica. Puoi creare e configurare i modelli delle campagne e quindi creare campagne a partire da questi modelli.
+Viene fornito un modello integrato al fine di creare una campagna per la quale non è stata definita alcuna configurazione specifica. Puoi creare e configurare i modelli della campagna e quindi creare campagne a partire da questi modelli.
 
 ![](assets/do-not-localize/how-to-video.png) Per ulteriori informazioni sulla creazione di campagne, consulta  [questo video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
