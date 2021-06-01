@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Accesso all’elenco delle consegne
-description: Scopri come accedere all'elenco delle consegne create.
+description: Scopri come accedere all’elenco delle consegne create.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: f2a126d0aa471831f84d4c8457cfd6f0fae7b14f
+exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
-
 # Accesso all’elenco delle consegne {#list-of-deliveries}
 
-È possibile accedere alle consegne dall&#39;elenco di consegna tramite il nodo **[!UICONTROL Campaign Management > Deliveries]** della struttura.
+Puoi accedere alle consegne dall’elenco di consegna tramite il nodo **[!UICONTROL Campaign Management > Deliveries]** della struttura.
 
 ![](assets/deliveries-list.png)
 
-Per impostazione predefinita, l&#39;elenco delle consegne contiene i nomi e gli stati delle consegne create nel nodo selezionato. Mostra anche il numero di messaggi da inviare, elaborare e inviare con esito positivo.
+Per impostazione predefinita, l’elenco delle consegne contiene i nomi e gli stati delle consegne create nel nodo selezionato. Mostra anche il numero di messaggi da inviare, elaborare e inviare con successo.
 
-* Il numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari interessati dopo l&#39;analisi e prima della consegna.
+* Il numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari interessati dopo l’analisi e prima della consegna.
 * Il numero di messaggi nella colonna **[!UICONTROL Success]** corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
-* Il numero di messaggi **[!UICONTROL Processed]** corrisponde al numero di messaggi ricevuti più il numero di messaggi con errori.
+* Il numero di messaggi **[!UICONTROL Processed]** corrisponde al numero di messaggi ricevuti e al numero di messaggi con errori.
 
 >[!NOTE]
 >
->Per le consegne di grandi dimensioni, potete aggiornare questi valori. A questo scopo, selezionate la consegna in questione e fate clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare la procedura guidata per aggiornare le informazioni.
+>Per le consegne di grandi dimensioni, è possibile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse sulla consegna. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare la procedura guidata per aggiornare queste informazioni.
 
 **Argomenti correlati:**
 
