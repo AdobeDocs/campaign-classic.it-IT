@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gestione delle sottoscrizioni
 description: Gestione delle sottoscrizioni
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
 
 ---
-
 
 # Gestione degli abbonamenti{#managing-subscriptions}
 
@@ -56,7 +54,7 @@ Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servi
 
    >[!NOTE]
    >
-   >Gli abbonamenti a Facebook e Twitter sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle applicazioni mobili sono descritti in [Informazioni sul canale app mobile](../../delivery/using/about-mobile-app-channel.md).
+   >Gli abbonamenti a facebook e Twitter sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle applicazioni mobili sono descritti in [Informazioni sul canale app mobile](../../delivery/using/about-mobile-app-channel.md).
 
 * Per un servizio di tipo Email, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
 * Puoi inviare **messaggi di conferma** per un abbonamento o il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dai campi **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** . Questi modelli devono essere configurati con una mappatura di destinazione di tipo **[!UICONTROL Subscription]**, senza un target definito. Consulta la sezione [Informazioni sul canale e-mail](../../delivery/using/about-email-channel.md).
@@ -148,7 +146,7 @@ Per registrare i destinatari per un servizio di informazione, puoi:
 
 Le consegne e-mail devono contenere un collegamento di annullamento dell’abbonamento, per legge. I destinatari possono fare clic su questo collegamento per aggiornare il proprio profilo ed essere esclusi dagli obiettivi delle consegne future.
 
-Il collegamento di annullamento dell’abbonamento predefinito viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti fornito nella procedura guidata di consegna (consulta [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto all’elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più oggetto di targeting da parte di alcuna azione di consegna.
+Il collegamento di annullamento dell’abbonamento predefinito viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti fornito nella procedura guidata di consegna (consulta [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al  di elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più oggetto di targeting da parte di alcuna azione di consegna.
 
 Tuttavia, i destinatari possono scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. Per fare ciò, puoi utilizzare un modulo web (consulta [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell’abbonamento personalizzato (consulta [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md)).
 
