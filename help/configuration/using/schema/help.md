@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 17%
 
 ---
 
-
 # elemento di aiuto {#help--element}
 
-## Modello di contenuto {#content-model-6}
+## Modello dei contenuti {#content-model-6}
 
-help:==EMPTY
+aiuto:==EMPTY
 
 ## Attributi {#attributes-6}
 
-None
+Nessuno
 
 ## Genitori {#parents-6}
 
 `<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
 
-## Bambini {#children-6}
+## Figli {#children-6}
 
-None
+Nessuno
 
 ## Descrizione {#description-6}
 
-Questo elemento consente di descrivere un elemento `<element>` o `<attribute>`   element. Può contenere solo testo ed è memorizzato in XML nel database.
+Questo elemento consente di descrivere un elemento `<element>` o `<attribute>`   elemento. Può contenere solo testo ed è memorizzato in XML nel database.
 
-## Descrizione attributo {#attribute-description-6}
+## Descrizione dell&#39;attributo {#attribute-description-6}
 
 Questo elemento non ha attributi.
 
