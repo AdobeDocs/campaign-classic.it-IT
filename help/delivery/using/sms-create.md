@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creare un SMS con Campaign
 description: Scopri come creare SMS con Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
+exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
 
 ---
-
 
 # Creare una consegna SMS {#creating-a-sms-delivery}
 
@@ -72,4 +70,3 @@ Il processo dettagliato durante la selezione della popolazione target di una con
 Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione, consulta [questa sezione](../../delivery/using/about-personalization.md).
 
 Per ulteriori informazioni sull&#39;inclusione di un elenco di seed, consulta [questa pagina](../../delivery/using/about-seed-addresses.md).
-
