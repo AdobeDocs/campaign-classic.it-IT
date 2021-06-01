@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Progettare modelli di messaggi transazionali
 description: Scopri come creare e progettare un modello di messaggio transazionale in Adobe Campaign Classic.
@@ -7,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -20,9 +19,9 @@ Per fare in modo che ogni evento possa essere modificato in un messaggio persona
 
 >[!IMPORTANT]
 >
->È necessario creare in anticipo i tipi di evento. Per ulteriori informazioni, consulta [Creazione di tipi di evento](../../message-center/using/creating-event-types.md).
+>È necessario creare in anticipo i tipi di evento. Per ulteriori informazioni, consulta [Creare tipi di evento](../../message-center/using/creating-event-types.md).
 
-I modelli di messaggi transazionali contengono le informazioni necessarie per personalizzare il messaggio transazionale. Puoi inoltre utilizzare i modelli per testare l’anteprima del messaggio e inviare bozze utilizzando gli indirizzi di seed prima di consegnarle al target finale. Per ulteriori informazioni, consulta [Verifica dei modelli di messaggi transazionali](../../message-center/using/testing-message-templates.md).
+I modelli di messaggi transazionali contengono le informazioni necessarie per personalizzare il messaggio transazionale. Puoi inoltre utilizzare i modelli per testare l’anteprima del messaggio e inviare bozze utilizzando gli indirizzi di seed prima di consegnarle al target finale. Per ulteriori informazioni, consulta [Test dei modelli di messaggio transazionali](../../message-center/using/testing-message-templates.md).
 
 ## Creare il modello di messaggio {#creating-message-template}
 
@@ -42,19 +41,19 @@ I modelli di messaggi transazionali contengono le informazioni necessarie per pe
 
    ![](assets/messagecenter_create_model_003.png)
 
-   I tipi di evento devono essere creati in precedenza nella console. Per ulteriori informazioni, consulta [Creazione di tipi di evento](../../message-center/using/creating-event-types.md).
+   I tipi di evento devono essere creati in precedenza nella console. Per ulteriori informazioni, consulta [Creare tipi di evento](../../message-center/using/creating-event-types.md).
 
    >[!IMPORTANT]
    >
    >Un tipo di evento non può essere collegato a più di un modello.
 
-1. Immetti una natura e una descrizione, quindi fai clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (consulta [Creazione del contenuto del messaggio](#creating-message-content)).
+1. Immetti una natura e una descrizione, quindi fai clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (consulta [Crea il contenuto del messaggio](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Crea il contenuto del messaggio {#creating-message-content}
 
-La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo su [Email delivery](../../delivery/using/about-email-channel.md).
+La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md) .
 
 >[!IMPORTANT]
 >
