@@ -1,45 +1,43 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Archiviazione di e-mail
 description: Archiviazione di e-mail
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
+exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 2%
 
 ---
 
-
 # Ccn e-mail {#email-archiving}
 
-Potete configurare  Adobe Campaign per mantenere una copia dei messaggi e-mail inviati dalla piattaforma in uso.
+Puoi configurare Adobe Campaign per mantenere una copia delle e-mail inviate dalla piattaforma.
 
-Tuttavia,  Adobe Campaign non gestisce i file archiviati. Consente di inviare i messaggi di vostra scelta a un indirizzo dedicato, da dove possono essere elaborati e archiviati utilizzando un sistema esterno.
+Tuttavia, Adobe Campaign non gestisce i file archiviati. Permette infatti di inviare i messaggi di tua scelta a un indirizzo dedicato, dal quale possono essere elaborati e archiviati utilizzando un sistema esterno.
 
-A tal fine, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a un server remoto, ad esempio un server di posta elettronica SMTP. La destinazione di archiviazione è un indirizzo e-mail CCN (invisibile ai destinatari della consegna) che è necessario specificare.
+A questo scopo, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a un server remoto, ad esempio un server e-mail SMTP. La destinazione di archiviazione è un indirizzo e-mail CCN (invisibile ai destinatari della consegna) che devi specificare.
 
 ## Recommendations e limitazioni {#recommendations-and-limitations}
 
-* La funzionalità CCN e-mail è opzionale. Controlla il contratto di licenza.
-* Per **architetture ospitate e ibride**, contattate il responsabile commerciale di riferimento per attivarla. L&#39;indirizzo e-mail CCN di tua scelta deve essere fornito al team del Adobe  che lo configurerà per te.
-* Per le **installazioni in sede**, seguite le linee guida riportate di seguito per attivarle. Consultate le sezioni [Attivazione dell&#39;e-mail in sede (in sede)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail in sede (in sede)](#configuring-the-bcc-email-address--on-premise-).
-* È possibile utilizzare un solo indirizzo e-mail CCN.
-* Una volta configurato il CCN dell&#39;e-mail, accertatevi che la funzione sia abilitata nel modello di consegna o nella consegna tramite l&#39;opzione **[!UICONTROL Email BCC]**. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
-* Solo le e-mail inviate con successo vengono prese in considerazione, i messaggi non vengono visualizzati.
-* Il sistema di archiviazione delle e-mail è cambiato con  Adobe Campaign 17.2 (build 8795). Se si stava già utilizzando l&#39;archiviazione delle e-mail, è necessario eseguire manualmente l&#39;aggiornamento al nuovo sistema e-mail BCC. Per ulteriori informazioni, vedere la sezione [Spostamento nella nuova sezione Ccn e-mail](#updated-email-archiving-system--bcc-).
+* La funzionalità CCN dell’e-mail è facoltativa. Controlla il contratto di licenza.
+* Per **architetture ospitate e ibride**, contatta l&#39;amministratore del tuo account per attivarlo. L’indirizzo e-mail CCN desiderato deve essere fornito al team di Adobe che lo configurerà per te.
+* Per le **installazioni on-premise**, segui le linee guida riportate di seguito per attivarle - consulta le sezioni [Attivazione di e-mail con indirizzi CCN (on-premise)](#activating-email-archiving--on-premise-) e [Configurazione dell’indirizzo e-mail CCN (on-premise)](#configuring-the-bcc-email-address--on-premise-) .
+* Puoi utilizzare un solo indirizzo e-mail CCN.
+* Una volta configurato il CCN dell’e-mail, accertati che la funzione sia abilitata nel modello di consegna o nella consegna tramite l’opzione **[!UICONTROL Email BCC]** . Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* Vengono prese in considerazione solo le e-mail inviate con successo. I messaggi non recapitati non lo sono.
+* Il sistema di archiviazione e-mail è stato modificato con Adobe Campaign 17.2 (build 8795). Se stavi già utilizzando l’archiviazione e-mail, devi eseguire manualmente l’aggiornamento al nuovo sistema CCN di posta elettronica. Per ulteriori informazioni, consulta la sezione [Passaggio alla nuova e-mail CCN](#updated-email-archiving-system--bcc-) .
 
-## Attivazione Ccn e-mail (in sede) {#activating-email-archiving--on-premise-}
+## Attivazione CCN e-mail (on-premise) {#activating-email-archiving--on-premise-}
 
-Per attivare l&#39;archiviazione delle e-mail in CCN quando  Adobe Campaign è installato in sede, attenetevi alla procedura indicata di seguito.
+Per attivare l’archiviazione delle e-mail in CCN quando Adobe Campaign è installato in locale, segui i passaggi riportati di seguito.
 
 ### Cartella locale {#local-folder}
 
-Per abilitare il trasferimento di e-mail inviate a un indirizzo e-mail CCN, è innanzitutto necessario salvare le copie originali esatte dei messaggi e-mail inviati come file .eml in una cartella locale.
+Per abilitare il trasferimento di e-mail inviate a un indirizzo e-mail CCN, le copie non elaborate esatte delle e-mail inviate devono prima essere salvate come file .eml in una cartella locale.
 
 Il percorso della cartella locale deve essere specificato nel file **config-`<instance>`.xml** dalla configurazione. Ad esempio:
 
@@ -49,15 +47,15 @@ Il percorso della cartella locale deve essere specificato nel file **config-`<in
 
 >[!NOTE]
 >
->È responsabilità del team che implementa il progetto garantire che le impostazioni di protezione consentano l&#39;accesso alla cartella definita tramite i parametri **dataLogPath**.
+>È responsabilità del team che implementa il progetto assicurarsi che le impostazioni di protezione consentano l&#39;accesso alla cartella definita tramite i parametri **dataLogPath** .
 
-Il percorso completo è il seguente: **`<datalogpath>  YYYY-MM-DDHHh`**. La data e l&#39;ora sono impostate in base all&#39;orologio del server MTA (UTC). Ad esempio:
+Il percorso completo è il seguente: **`<datalogpath>  YYYY-MM-DDHHh`**. La data e l’ora sono impostate in base all’orologio del server MTA (UTC). Ad esempio:
 
 ```
 C:\emails\2018-12-02\13h
 ```
 
-Il nome del file di archivio è **`<deliveryid>-<broadlogid>.eml`** quando lo stato delle e-mail non è **[!UICONTROL Sent]**. Una volta che lo stato è cambiato in **[!UICONTROL Sent]**, il nome del file diventa **`<deliveryid>-<broadlogid>-sent.eml`**. Ad esempio:
+Il nome del file di archivio è **`<deliveryid>-<broadlogid>.eml`** quando lo stato delle e-mail non è **[!UICONTROL Sent]**. Una volta che lo stato è stato modificato in **[!UICONTROL Sent]**, il nome del file diventa **`<deliveryid>-<broadlogid>-sent.eml`**. Ad esempio:
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -65,13 +63,13 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->In un&#39;istanza mid-sourcing, la directory per le e-mail CCN si trova sul server mid-sourcing.
+>In un’istanza di mid-sourcing , la directory per le e-mail CCN si trova sul server di mid-sourcing .
 >
->L’ID di distribuzione e l’ID di trasmissione provengono dal server di mid-sourcing quando lo stato delle e-mail non viene inviato. Una volta che lo stato è cambiato in **[!UICONTROL Sent]**, questi ID provengono dal server di marketing.
+>Il deliveryID e il broadlogID provengono dal server di mid-sourcing quando lo stato delle e-mail non viene inviato. Una volta che lo stato è stato modificato in **[!UICONTROL Sent]**, questi ID provengono dal server di marketing.
 
-### Parametri {#parameters}
+### Elemento “parameters” {#parameters}
 
-Una volta definito il percorso della cartella locale, aggiungere e modificare gli elementi seguenti come desiderato nel file **config-`<instance name>.xml`**. Di seguito sono riportati i valori predefiniti:
+Una volta definito il percorso della cartella locale, aggiungi e modifica i seguenti elementi nel file **config-`<instance name>.xml`**. Di seguito sono riportati i valori predefiniti:
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -79,7 +77,7 @@ Una volta definito il percorso della cartella locale, aggiungere e modificare gl
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
-* **compressioneFormat**: utilizzato per comprimere i file .eml. I valori possibili sono:
+* **compressioneFormato**: utilizzato per comprimere i file .eml. I valori possibili sono:
 
    **0**: nessuna compressione (valore predefinito)
 
@@ -88,25 +86,25 @@ Una volta definito il percorso della cartella locale, aggiungere e modificare gl
 * **compressBatchSize**: numero di file .eml aggiunti a un archivio (file .zip).
 * **archiveType**: strategia di archiviazione da utilizzare. I valori possibili sono:
 
-   **0**: le copie non elaborate dei messaggi e-mail inviati vengono salvate in formato .eml nella cartella  **** dataLogPathfolder (valore predefinito). Una copia di archiviazione del file **`<deliveryid>-<broadlogid>-sent.eml`** viene salvata nella cartella **dataLogPath/archives**. Il percorso del file e-mail inviato diventa **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+   **0**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml nella cartella  **** dataLogPathfolder (valore predefinito). Una copia di archiviazione del file **`<deliveryid>-<broadlogid>-sent.eml`** viene salvata nella cartella **dataLogPath/archives**. Il percorso del file e-mail inviato diventa **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-   **1**: le copie raw delle e-mail inviate vengono salvate in formato .eml nella cartella  **** dataLogPathfolder e inviate all&#39;indirizzo e-mail CCN tramite SMTP. Una volta inviate le copie e-mail all&#39;indirizzo CCN, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato nella cartella **dataLogPath/archives**. Il percorso del file di posta elettronica inviato e archiviato in CCN è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+   **1**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml nella cartella  **** dataLogPathfolder e inviate all’indirizzo e-mail CCN tramite SMTP. Una volta inviate le copie dell&#39;e-mail all&#39;indirizzo CCN, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato nella cartella **dataLogPath/archives**. Il percorso del file e-mail inviato e archiviato è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
-* **scadenzaRitardo**: numero di giorni in cui i file .eml vengono conservati per l&#39;archiviazione. Dopo tale ritardo, vengono automaticamente spostati nella cartella **dataLogPath/archives** per la compressione. Per impostazione predefinita, i file .eml scadono dopo due giorni.
-* **purgeArchivesDelay**: il numero di giorni in cui gli archivi vengono conservati nella  **cartella dataLogPath/`<archives>`** folder. Dopo tale periodo, vengono eliminati definitivamente. La rimozione inizia all&#39;avvio dell&#39;MTA. Per impostazione predefinita, viene eseguita ogni sette giorni.
-* **pollDelay**: verifica della frequenza (in secondi) per i nuovi messaggi e-mail inviati alla cartella  **** dataLogPathfolder. Ad esempio, se questo parametro è impostato su 60, significa che ogni minuto, il processo di archiviazione passa attraverso i file .eml all&#39;interno delle cartelle **dataLogPath/`<date and time>`**, applica una rimozione se necessario e invia copie e-mail all&#39;indirizzo CCN e/o comprime i file archiviati ogni volta che necessario.
-* **acquisitionLimit**: numero di file .eml elaborati contemporaneamente prima che il processo di archiviazione venga nuovamente applicato in base al parametro  **** pollDelayparameter. Ad esempio, se si imposta il parametro **acquisitionLimit** su 100 mentre il parametro **pollDelay** è impostato su 60, verranno elaborati 100 file .eml al minuto.
+* **expirationDelay**: numero di giorni in cui i file .eml vengono conservati per l&#39;archiviazione. Dopo tale ritardo, vengono automaticamente spostati nella cartella **dataLogPath/archives** per la compressione. Per impostazione predefinita, i file .eml scadono dopo due giorni.
+* **purgeArchivesDelay**: il numero di giorni in cui gli archivi vengono conservati nella cartella  **dataLogPath/`<archives>`** . Dopo tale periodo, vengono definitivamente cancellati. L&#39;eliminazione inizia all&#39;avvio dell&#39;MTA. Per impostazione predefinita viene eseguita ogni sette giorni.
+* **pollDelay**: verifica della frequenza (in secondi) per le nuove e-mail inviate alla cartella  **** dataLogPathfolder. Ad esempio, se questo parametro è impostato su 60, significa che ogni minuto, il processo di archiviazione passa attraverso i file .eml all&#39;interno delle cartelle **dataLogPath/`<date and time>`**, applica una pulizia se necessario e invia copie e-mail all&#39;indirizzo CCN e/o comprime i file archiviati ogni volta che necessario.
+* **acquisitionLimit**: numero di file .eml elaborati contemporaneamente prima che il processo di archiviazione venga nuovamente applicato in base al parametro  **** pollDelayparameter. Ad esempio, se imposti il parametro **acquisitionLimit** su 100 mentre il parametro **pollDelay** è impostato su 60, verranno elaborati 100 file .eml al minuto.
 * **smtpNbConnection**: numero di connessioni SMTP all&#39;indirizzo e-mail CCN.
 
-Assicuratevi di regolare questi parametri in base al throughput di invio e-mail. Ad esempio, in una configurazione in cui l&#39;MTA invia 30.000 e-mail all&#39;ora, è possibile impostare il parametro **pollDelay** su 600, il parametro **acquisitionLimit** su 5000 e il parametro **smtpNbConnection** su 2. Ciò significa che utilizzando 2 connessioni SMTP, 5.000 email verranno inviate all&#39;indirizzo CCN ogni 10 minuti.
+Assicurati di regolare questi parametri in base alla velocità effettiva di invio dell’e-mail. Ad esempio, in una configurazione in cui l’MTA invia 30.000 e-mail all’ora, puoi impostare il parametro **pollDelay** su 600, il parametro **acquisitionLimit** su 5000 e il parametro **smtpNbConnection** su 2. Ciò significa che utilizzando 2 connessioni SMTP, 5.000 e-mail verranno inviate all&#39;indirizzo CCN ogni 10 minuti.
 
-## Configurazione dell&#39;indirizzo e-mail CCN (in sede) {#configuring-the-bcc-email-address--on-premise-}
+## Configurazione dell’indirizzo e-mail CCN (on-premise) {#configuring-the-bcc-email-address--on-premise-}
 
 >[!IMPORTANT]
 >
->Per motivi di privacy, le e-mail in CCN devono essere elaborate da un sistema di archiviazione in grado di memorizzare informazioni personali (PII) sicure.
+>Per motivi di privacy, le e-mail CCN devono essere elaborate da un sistema di archiviazione in grado di memorizzare informazioni personali (PII) sicure.
 
-Nel file **config-`<instance name>.xml`**, utilizzate i seguenti parametri per definire il server di posta elettronica SMTP a cui verranno trasferiti i file memorizzati:
+Nel file **config-`<instance name>.xml`**, utilizza i seguenti parametri per definire il server di posta elettronica SMTP a cui verranno trasferiti i file memorizzati:
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
@@ -119,32 +117,31 @@ Nel file **config-`<instance name>.xml`**, utilizzate i seguenti parametri per d
 
 >[!NOTE]
 >
->Se si utilizza un relè SMTP, le modifiche apportate alle e-mail dal relè non vengono prese in considerazione nel processo di archiviazione.
+>Se utilizzi un relè SMTP, le modifiche alle e-mail apportate dal relay non vengono prese in considerazione nel processo di archiviazione.
 >
 >Inoltre, il relay assegna uno stato **[!UICONTROL Sent]** a tutte le e-mail, incluse quelle che non vengono inviate. Pertanto, tutti i messaggi vengono archiviati.
 
-## Passaggio alla nuova e-mail CCN {#updated-email-archiving-system--bcc-}
+## Passaggio al nuovo CCN e-mail {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
->Il sistema di archiviazione delle e-mail (CCN) è stato modificato con  Adobe Campaign 17.2 (build 8795). Se state effettuando l’aggiornamento da una build precedente e state già utilizzando le funzionalità di archiviazione delle e-mail, dovete eseguire l’aggiornamento manuale al nuovo sistema di archiviazione delle e-mail (CCN).
+>Il sistema di archiviazione delle e-mail (CCN) è stato modificato con Adobe Campaign 17.2 (build 8795). Se si esegue l’aggiornamento da una build precedente e si utilizzano già le funzionalità di archiviazione e-mail, è necessario eseguire l’aggiornamento manuale al nuovo sistema di archiviazione e-mail (CCN).
 
-A questo scopo, apportare le seguenti modifiche al file **`config-<instance>.xml`**:
+A questo scopo, apporta le seguenti modifiche al file **`config-<instance>.xml`** :
 
-1. Rimuovere il parametro **zipPath** dal nodo **`<archiving>`**.
-1. Impostate il parametro **compressioneFormat** su **1**, se necessario.
-1. Impostare il parametro **archiveType** su **1**.
+1. Rimuovi il parametro **zipPath** dal nodo **`<archiving>`**.
+1. Imposta il parametro **compressioneFormat** su **1** se necessario.
+1. Imposta il parametro **archiveType** su **1**.
 
-Una volta configurato il CCN dell&#39;e-mail, accertatevi di selezionare l&#39;opzione **[!UICONTROL Email BCC]** nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+Una volta configurato CCN e-mail, accertati di selezionare l’opzione **[!UICONTROL Email BCC]** nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Best practice CCN e-mail {#best-practices}
+## Best practice per gli indirizzi CCN e-mail {#best-practices}
 
-* **Cassetta postale** indirizzi CCN: verificare che la capacità di ricezione sia sufficiente per archiviare tutte le e-mail inviate dall&#39;MTA.
-* **Mutualizzazione** MTA: la funzione di archiviazione CCN funziona a livello di MTA. Consente di duplicare ogni e-mail inviata dall&#39;MTA. Poiché il MTA può essere mutualizzato in più istanze (ad esempio dev, test o prod) o anche tra più client (in un ambiente mid-sourcing), l&#39;impostazione di questa funzione influisce sulla sicurezza:
+* **Cassetta postale** indirizzi CCN: assicurati che disponga di una capacità di ricezione sufficiente per archiviare tutte le e-mail inviate dall’MTA.
+* **mutualizzazione** MTA: la funzione di archiviazione CCN funziona a livello di MTA. Ti consente di duplicare ogni e-mail inviata dall’MTA. Poiché l’MTA può essere mutualizzato tra più istanze (ad esempio sviluppo, test o prod) o anche tra più client (in un ambiente di mid-sourcing), l’impostazione di questa funzione influisce sulla sicurezza:
 
-   * Se condividete un MTA con più client e uno di essi ha attivato questa opzione, il client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizzate un MTA diverso per ciascun client.
-   * Se si utilizza lo stesso MTA per più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze saranno duplicati dall&#39;opzione dataLogPath.
+   * Se condividi un MTA con più client e questa opzione è attivata per uno di essi, questo client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizza un MTA diverso per ogni client.
+   * Se utilizzi lo stesso MTA su più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze verranno duplicati dall’opzione dataLogPath .
 
-* **E-mail per connessione**: L&#39;archiviazione delle e-mail CCN funziona aprendo una connessione e provando a inviare tutte le e-mail tramite quella connessione.  Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. Aumentare questo numero può avere un grande impatto sul throughput CCN.
-* **IP** invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP al inserire nell&#39;elenco Consentiti  della rete, a seconda della configurazione del server di posta elettronica.
-
+* **E-mail per connessione**: L’archiviazione delle e-mail CCN funziona aprendo una connessione e tentando di inviare tutte le e-mail tramite tale connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. L&#39;aumento di questo numero può avere un grande impatto sul throughput CCN.
+* **IP** di invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Al contrario, viene aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP all’inserire nell&#39;elenco Consentiti sulla rete, a seconda della configurazione del server e-mail.
