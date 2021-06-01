@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Il file di configurazione del server
 description: Il file di configurazione del server
@@ -7,8 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 5%
@@ -1720,7 +1718,7 @@ Per ulteriori informazioni, fare riferimento a [relay SMTP](../../installation/u
  </tbody> 
 </table>
 
-### master {#master}
+### maestro {#master}
 
 Nel nodo **mta > master**, configura i seguenti parametri. Questa è la configurazione del server principale.
 
@@ -1775,7 +1773,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
  </tbody> 
 </table>
 
-### figlio {#child}
+### bambino {#child}
 
 Nel nodo **mta > child**, configura i seguenti parametri. Configurazione dei server figlio.
 
@@ -2023,7 +2021,7 @@ Di seguito sono riportati i diversi parametri del nodo **nmac > relay** . Questo
  </tbody> 
 </table>
 
-## tubato {#pipelined}
+## condutturato {#pipelined}
 
 Di seguito sono riportati i diversi parametri del nodo **pipeline**. Questa è la configurazione del modulo di elaborazione degli eventi per Pipeline Services.
 
