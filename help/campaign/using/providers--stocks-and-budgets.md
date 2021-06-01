@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Fornitori, scorte e budget
 description: Fornitori, scorte e budget
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
 
 ---
-
 
 # Fornitori, scorte e budget{#providers-stocks-and-budgets}
 
@@ -292,4 +290,3 @@ In una campagna, quando selezioni il budget devi inserire l&#39;importo iniziale
 >[!NOTE]
 >
 >La procedura per la creazione di budget è illustrata in [Creazione di un budget](../../campaign/using/controlling-costs.md#creating-a-budget).
-
