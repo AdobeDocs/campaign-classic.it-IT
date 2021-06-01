@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Problemi relativi a prestazioni e velocità effettiva
 description: Problemi relativi a prestazioni e velocità effettiva
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # Problemi relativi a prestazioni e velocità effettiva{#performance-and-throughput-issues}
 
@@ -25,7 +23,7 @@ Per ulteriori informazioni sul contenuto di ciascuna versione, consulta le [Note
 
 Le linee guida generali sui requisiti hardware per Campaign Classic on-premise sono descritte in dettaglio in questa sezione [pagina](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
-Il team di consulenza può fornire ai clienti in hosting uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Fornisce inoltre strumenti per consentire la pulizia di dati non necessari. Contatta l’ [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se hai bisogno che questo strumento sia implementato. Di seguito sono riportati alcuni aspetti importanti da verificare utilizzando questo strumento:
+Il team di consulenza può fornire ai clienti in hosting uno strumento che consente di visualizzare facilmente lo spazio utilizzato da vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Fornisce inoltre strumenti per consentire la pulizia di dati non necessari. Contatta l’ [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se hai bisogno che questo strumento sia implementato. Di seguito sono riportati alcuni aspetti importanti da verificare utilizzando questo strumento:
 
 * Se la dimensione dell&#39;indice è superiore alla dimensione della tabella, è necessario un vuoto.
 * Controlla le tabelle che hanno il numero massimo di gonfiamenti. Se queste tabelle vengono utilizzate frequentemente, devono essere svuotate.
@@ -67,4 +65,4 @@ Elenco delle best practice e degli articoli relativi al recapito messaggi:
 
 >[!NOTE]
 >
->Vedi anche la sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) . Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+>Vedi anche la sezione [Recapito messaggi](../../delivery/using/about-deliverability.md) . Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
