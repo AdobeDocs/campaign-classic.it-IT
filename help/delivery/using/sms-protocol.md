@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Protocollo e impostazioni del connettore SMS
 description: Ulteriori informazioni sul connettore SMS e su come configurarlo.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: fded088a-11a2-4b87-a368-7b197334aca4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
 
 ---
-
 
 # Protocollo e impostazioni del connettore SMS {#sms-connector-protocol}
 
@@ -148,7 +146,7 @@ Campi di rilievo in a `BIND_* PDU`:
 
 `BIND_*_RESP` non dispone di un campo specifico e conferma se la connessione è riuscita o meno.
 
-#### UNBIND {#unbind}
+#### SBARCO {#unbind}
 
 Questa PDU deve essere inviata dal sistema prima della disconnessione. Deve attendere la `UNBIND_RESP` PDU corrispondente prima di chiudere la connessione.
 
@@ -704,7 +702,7 @@ Per acquisire questo valore, ora puoi impostare il seguente regex nel regex di e
 
 Se questa opzione è selezionata, il campo **Testo** viene mantenuto durante l&#39;elaborazione del testo di stato dell&#39;SR.
 
-Questa opzione è utile se il provider inserisce dati importanti in questo campo, ad esempio l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
+Questa opzione è utile se il provider inserisce dati importanti in questo campo, come l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
 
 Se abiliti questa opzione, potresti riscontrare un difetto di sicurezza molto piccolo se il `Extraction` regex dell’ID nel campo SR non è sufficientemente specifico. Il contenuto del campo **Testo** può essere analizzato come ID e un autore di attacchi può usarlo per inserire ID falsi, il che può portare a una situazione di rifiuto parziale del servizio.
 
@@ -825,9 +823,9 @@ Se disponi di più account sulla stessa istanza di Adobe Campaign che si connett
 ### Abilita tracce SMPP dettagliate durante i controlli {#enable-verbose}
 
 È sempre necessario abilitare tracce SMPP dettagliate durante i controlli.
-Anche se non riesci a controllare i registri da solo, sarà più semplice per [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) aiutarti.
+Anche se non riesci a controllare i registri da solo, sarà più semplice per [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) aiutarti.
 
-### Test dell&#39;SMS {#test}
+### Test dell’SMS {#test}
 
 * **Invia SMS con tutti i tipi di**
 caratteriSe devi inviare SMS con caratteri non GSM o non ASCII, prova a inviare alcuni messaggi con il maggior numero possibile di caratteri diversi. Se imposti una tabella di mappatura dei caratteri personalizzata, invia almeno un SMS per tutti i possibili 
@@ -850,7 +848,7 @@ Anche se i messaggi sembrano di successo, è importante verificare che le PDU si
 
 Questo passaggio è necessario quando ci si connette a un provider che non era collegato ad Adobe Campaign in precedenza.
 
-#### BIND {#bind}
+#### DIETRO {#bind}
 
 Verifica che `BIND_* PDUs` sia inviato correttamente. La cosa più importante da verificare è che il provider restituisce sempre con successo `BIND_*_RESP PDUs` (command_status = 0).
 
