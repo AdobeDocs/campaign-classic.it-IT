@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Casi di utilizzo: creazione di panoramiche"'
 description: '"Casi di utilizzo: creazione di panoramiche"'
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
 
 ---
-
 
 # Casi di utilizzo: creare pagine di panoramica{#use-cases-creating-overviews}
 
@@ -205,7 +203,7 @@ Questi due elementi verranno raggruppati nello stesso contenitore per essere rag
 
 >[!CAUTION]
 >
->L’utente dell’applicazione Web deve essere un operatore identificato con i diritti Adobe Campaign appropriati per accedere alle informazioni. Questo tipo di configurazione non funzionerà per le applicazioni Web anonime.
+>L&#39;utente dell&#39;applicazione Web deve essere un operatore identificato con i diritti Adobe Campaign appropriati per accedere alle informazioni. Questo tipo di configurazione non funzionerà per le applicazioni Web anonime.
 
 ### Creazione di un collegamento di aggiornamento {#creating-a-refresh-link}
 
@@ -224,4 +222,3 @@ Questi due elementi verranno raggruppati nello stesso contenitore per essere rag
 L&#39;applicazione Web è ora configurata. Puoi fare clic sulla scheda **[!UICONTROL Preview]** per visualizzarla in anteprima.
 
 ![](assets/s_ncs_configuration_webapp_result.png)
-
