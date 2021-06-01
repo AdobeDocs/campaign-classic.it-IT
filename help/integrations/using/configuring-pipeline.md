@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione della pipeline
 description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 1%
 
 ---
-
 
 # Configurazione della pipeline {#configuring-pipeline}
 
