@@ -1,45 +1,43 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Precisione dei log
-description: Precisione dei log
+title: Precisione dei registri
+description: Precisione dei registri
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
 
 ---
 
+# Precisione dei registri{#log-precision}
 
-# Precisione dei log{#log-precision}
+Puoi applicare questo processo a tutti i moduli Adobe Campaign per aumentare la precisione del registro.
 
-È possibile applicare questo processo a tutti  moduli Adobe Campaign per aumentare la precisione del registro.
-
-Si tratta di riavviare i processi con un livello più elevato di registri.
+Si tratta di riavviare i processi con un livello di log più elevato.
 
 >[!IMPORTANT]
 >
 >Questa procedura annulla i servizi in corso su questo modulo.
 
- Adobe Campaign può funzionare con due livelli di registro:
+Adobe Campaign può funzionare con due livelli di log:
 
-1. La modalità **Verbose** è il primo livello dopo il livello standard. Il seguente comando lo attiva:
+1. La modalità **Verbose** è il primo livello dopo il livello standard. Il comando seguente lo attiva:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
    ```
 
-   Verificate che l&#39;errore si sia verificato, quindi riavviate il processo nel modo normale:
+   Controlla che l&#39;errore si sia effettivamente verificato, quindi riavvia il processo nel modo normale:
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. La modalità **TraceFilter**, che consente di salvare il maggior numero di registri. È attivata dal seguente comando:
+1. La modalità **TraceFilter**, che consente di salvare il maggior numero di log. Viene attivato dal seguente comando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -47,29 +45,28 @@ Si tratta di riavviare i processi con un livello più elevato di registri.
 
    >[!NOTE]
    >
-   >Se si utilizza **tracefilter:***, tutti i tipi di registro sono attivati: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, soap, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
-   >I tipi di registro più utili sono: **wdbc** (visualizza tutte le query SQL), **soap** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le query).\
-   >È possibile utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Potete anche attivarli tutti e escludere alcuni altri: **-tracefilter:*,!soap**
+   >Se utilizzi **tracefilter:***, vengono attivati tutti i tipi di log: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, sapone, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
+   I tipi di log più utili sono: **wdbc** (visualizza tutte le query SQL), **soap** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le query def).\
+   Puoi utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Puoi anche attivarli tutti e scegliere di escluderne alcuni altri: **-tracefilter:*,!soap**
 
-   Verificate che l&#39;errore si sia verificato, quindi riavviate il processo nel modo normale:
+   Controlla che l&#39;errore si sia effettivamente verificato, quindi riavvia il processo nel modo normale:
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
 >[!IMPORTANT]
->
->I registri di questi comandi sono memorizzati nel file di registro del modulo.
+I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
-Di seguito è riportato un esempio specifico per il modulo Web. Gli altri moduli funzionano come indicato sopra.
+Ecco un esempio specifico del modulo Web. Gli altri moduli funzionano come indicato sopra.
 
-Prima di inviare questo comando, verificate che non venga interessato alcun processo in corso:
+Prima di inviare questo comando, controlla che non venga interessato alcun processo in corso:
 
 ```
 nlserver pdump -who
 ```
 
-Quindi, arrestare e riavviare il modulo in modalità **TraceFilter**:
+Quindi, arresta e riavvia il modulo in modalità **TraceFilter**:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -82,15 +79,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
->
->La modalità **Tracefile** consente di salvare i file di registro. Negli esempi riportati sopra, i file di registro vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
+La modalità **Tracefile** consente di salvare i registri. Negli esempi precedenti, i registri vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** .
 
 >[!IMPORTANT]
->
->In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il seguente comando è sufficiente:\
->nlserver web -tomcat -verbose -tracefilter:*
+In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il comando seguente è sufficiente:\
+nlserver web -tomcat -verbose -tracefilter:*
 
-Verificare che il problema si verifichi di nuovo, quindi riavviare il modulo:
+Verifica che il problema si verifichi di nuovo, quindi riavvia il modulo:
 
 ```
 nlserver restart web -tomcat -noconsole
