@@ -1,37 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Start ed End
-description: Ulteriori informazioni sulle attività di avvio e fine del flusso di lavoro
+title: Attività Start e End
+description: Ulteriori informazioni sulle attività del flusso di lavoro Start ed End
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
 
 ---
 
-
 # Start ed End{#start-and-end}
 
-Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** consentono di contrassegnare graficamente l&#39;inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
+Le attività **[!UICONTROL Start]** e **[!UICONTROL End]** ti consentono di contrassegnare graficamente l’inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
 
 * **[!UICONTROL Start]**
 
-   L&#39;esecuzione di un flusso di lavoro inizia con attività senza transizioni in entrata e attività di tipo Start.
+   L’esecuzione di un flusso di lavoro inizia con le attività senza una transizione in entrata e le attività di tipo Start .
 
    ![](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
-   È possibile configurare l&#39;attività **[!UICONTROL End]** per interrompere tutte le attività in corso. A questo scopo, fate doppio clic sull&#39;attività per visualizzarne le proprietà, quindi selezionate l&#39;opzione appropriata.
+   Puoi configurare l’attività **[!UICONTROL End]** per interrompere tutte le attività in corso. A questo scopo, fai doppio clic sull’attività per visualizzarne le proprietà e seleziona l’opzione appropriata.
 
    ![](assets/s_user_segmentation_end.png)
 
-   I dati nella tabella di lavoro vengono eliminati automaticamente quando l&#39;attività finale è abilitata. Se ciò non è necessario e per evitare carichi non necessari, potete scegliere di disabilitare la transizione all&#39;ultimo output dell&#39;attività. Ad esempio, in corrispondenza di un output di consegna, se non è pianificato alcun processo, deselezionate l&#39;opzione appropriata come illustrato di seguito:
+   I dati nella tabella di lavoro vengono eliminati automaticamente quando l’attività finale è abilitata. Se non è necessario e per evitare carichi non necessari, puoi scegliere di disabilitare la transizione all’ultimo output dell’attività. Ad esempio, in un output di consegna, se non è pianificato alcun processo, deseleziona l’opzione pertinente come mostrato di seguito:
 
    ![](assets/s_advuser_delivery_option_no_output.png)
-
