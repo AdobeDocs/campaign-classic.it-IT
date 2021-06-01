@@ -1,82 +1,80 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Moduli e problemi frequenti
 description: Moduli e problemi frequenti
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 5%
 
 ---
 
-
 # Moduli e problemi frequenti{#modules-and-frequent-issues}
 
-Di seguito è riportato un elenco di moduli interessati da problemi frequenti:
+Elenco dei moduli interessati da problemi frequenti:
 
 <table> 
  <thead> 
   <tr> 
    <th> Modulo </th> 
-   <th> Ambito esecuzione </th> 
+   <th> Ambito di esecuzione </th> 
    <th> Risoluzione dei problemi </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> export </td> 
+   <td> esportare </td> 
    <td> Esecuzione di un processo di esportazione<br /> </td> 
-   <td> L'operatore che ha pianificato l'esportazione deve riavviarla. Riavvio delta o completo.<br /> </td> 
+   <td> L’operatore che ha pianificato l’esportazione deve riavviarla. Delta o riavvio completo.<br /> </td> 
   </tr> 
   <tr> 
-   <td> import </td> 
+   <td> importare </td> 
    <td> Esecuzione di un processo di importazione<br /> </td> 
-   <td> L'operatore che ha pianificato l'esportazione deve riavviarla. Verificare la presenza di duplicati nel database.<br /> </td> 
+   <td> L’operatore che ha pianificato l’esportazione deve riavviarla. Controlla la presenza di duplicati nel database.<br /> </td> 
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> Lettura della casella di posta indesiderata<br /> </td> 
-   <td> Controllare questo modulo se i messaggi di rimbalzo non vengono più inoltrati.<br /> </td> 
+   <td> Lettura della casella di posta non recapitata<br /> </td> 
+   <td> Controlla questo modulo se le mail non recapitate non vengono più inoltrate.<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
    <td> Invia e-mail<br /> </td> 
-   <td> Controllare il modulo se le e-mail non vengono più inviate.<br /> </td> 
+   <td> Controlla questo modulo se le e-mail non vengono più inviate.<br /> </td> 
   </tr> 
   <tr> 
    <td> stat </td> 
    <td> Mantiene le statistiche di connessione MTA<br /> </td> 
-   <td> Controllare il modulo se le e-mail non vengono più inviate.<br /> </td> 
+   <td> Controlla questo modulo se le e-mail non vengono più inviate.<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> Scrittura del registro<br /> </td> 
-   <td> Se alcuni file di registro mancano, verificare che il modulo utilizzi la porta 6666. Fare riferimento a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Elenco delle porte aperte</a>.<br /> </td> 
+   <td> Scrittura dei log<br /> </td> 
+   <td> Se mancano alcuni log nei file di log, controlla che il modulo utilizzi la porta 6666. Fare riferimento a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Elenco delle porte aperte</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracking </td> 
    <td> Consolidamento e recupero dei registri di tracciamento<br /> </td> 
-   <td> Controllare questo modulo se i registri di monitoraggio non vengono più inoltrati.<br /> </td> 
+   <td> Controlla questo modulo se i log di tracciamento non sono più inoltrati.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> Tracciamento del registro scrittura ed eliminazione del server<br /> </td> 
-   <td> Controllare questo modulo se i registri di monitoraggio non vengono più inoltrati e non ci sono tracce di log nei file sul server. Fare riferimento a <a href="../../production/using/tracking-logs-issues.md" target="_blank">Problemi relativi ai registri di tracciamento</a>.<br /> </td> 
+   <td> Tracciamento della scrittura del registro e della pulizia del server<br /> </td> 
+   <td> Controlla questo modulo se i log di tracciamento non sono più inoltrati e non ci sono tracce di log nei file sul server. Fai riferimento a <a href="../../production/using/tracking-logs-issues.md" target="_blank">Problemi dei registri di tracciamento</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> cane da guardia </td> 
    <td> Avvio e monitoraggio dell'istanza<br /> </td> 
-   <td> Controllare questo modulo se non viene avviato alcun processo.<br /> </td> 
+   <td> Controlla questo modulo se non viene avviato alcun processo.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
-   <td> Server applicazione (HTTP e SOAP)<br /> </td> 
-   <td> Controllare questo modulo se la console e le connessioni Web non funzionano e attivare un errore di tipo <strong>xtk:session</strong><br /> </td> 
+   <td> Server applicazioni (HTTP e SOAP)<br /> </td> 
+   <td> Controlla questo modulo se la console e le connessioni web non funzionano e attiva un errore di tipo <strong>xtk:session</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
@@ -85,4 +83,3 @@ Di seguito è riportato un elenco di moduli interessati da problemi frequenti:
   </tr> 
  </tbody> 
 </table>
-
