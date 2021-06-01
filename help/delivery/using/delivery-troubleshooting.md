@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Risoluzione dei problemi
 description: Ulteriori informazioni sulle prestazioni di consegna e su come risolvere i problemi relativi al monitoraggio della consegna.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
-
 
 # Risoluzione dei problemi di invio della consegna {#delivery-troubleshooting}
 
