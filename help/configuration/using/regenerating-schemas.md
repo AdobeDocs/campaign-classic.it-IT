@@ -1,34 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Rigenerazione degli schemi
 description: Rigenerazione degli schemi
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
 
 ---
 
-
 # Rigenerazione degli schemi{#regenerating-schemas}
 
-Quando si modifica uno schema e si salvano le modifiche, lo schema esteso viene generato automaticamente. Tuttavia, potrebbe essere necessario rigenerare manualmente gli schemi per applicare le modifiche. Per eseguire questa operazione:
+Quando modifichi uno schema e salvi le modifiche, lo schema esteso viene generato automaticamente. Tuttavia, potrebbe essere necessario rigenerare manualmente gli schemi per applicare le modifiche. Per eseguire questa operazione:
 
-1. Selezionare gli schemi da rigenerare.
-1. Fare clic con il pulsante destro del mouse e scegliere **[!UICONTROL Actions > Regenerate selected schemas...]** .
-1. Fare clic su **[!UICONTROL OK]** per confermare e avviare il processo.
+1. Seleziona gli schemi da rigenerare.
+1. Fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Actions > Regenerate selected schemas...]** .
+1. Fai clic su **[!UICONTROL OK]** per confermare e avviare il processo.
 
-È quindi possibile controllare la struttura dello schema generato nelle schede Anteprima e Documentazione. Per ulteriori informazioni, consultare la sezione [Principi](../../configuration/using/data-schemas.md#principles).
+Puoi quindi controllare la struttura dello schema generato nelle schede Anteprima e Documentazione . Per ulteriori informazioni, consulta la sezione [Principi](../../configuration/using/data-schemas.md#principles) .
 
 >[!NOTE]
 >
->Se è necessario forzare la rigenerazione di tutti gli schemi, ad esempio per risolvere alcuni problemi di dipendenza nei collegamenti invertiti, è possibile avviare il comando seguente dal server applicazione Adobe Campaign :
+>Se è necessario forzare la rigenerazione di tutti gli schemi, ad esempio per risolvere alcuni problemi di dipendenza nei collegamenti inversi, è possibile avviare il seguente comando dal server dell&#39;applicazione Adobe Campaign:
 >
 >**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
 >
->È quindi necessario riavviare  server applicazioni Adobe Campaign e disconnettersi/riconnettersi alla console client.
+>È quindi necessario riavviare l&#39;application server di Adobe Campaign e disconnettersi/riconnettersi alla console client.
