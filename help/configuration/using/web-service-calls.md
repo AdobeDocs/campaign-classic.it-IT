@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Chiamate per servizi web
 description: Chiamate per servizi web
@@ -7,8 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -142,7 +140,7 @@ Il `<message>` descrive i nomi e i tipi di un insieme di campi da inviare. Il me
 </message> 
 ```
 
-#### PortType {#porttype}
+#### TipoPorta {#porttype}
 
 L’ `<porttype>` associa i messaggi sull’operazione &quot;ExecuteQuery&quot; attivata dalla query (&quot;input&quot;) che genera una risposta (&quot;output&quot;).
 
