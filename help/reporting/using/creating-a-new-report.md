@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di un nuovo report
 description: Scopri i passaggi chiave per creare un nuovo rapporto
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Crea un nuovo report{#creating-a-new-report}
+# Creare un nuovo rapporto{#creating-a-new-report}
 
 Per creare un rapporto, effettua le seguenti operazioni:
 
