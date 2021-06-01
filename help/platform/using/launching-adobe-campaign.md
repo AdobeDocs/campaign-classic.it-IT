@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Avvio di Adobe Campaign
 description: Avvio di Adobe Campaign
@@ -7,11 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: tm+mt
-source-git-commit: 2c275751ab86e98652820bf461c617442480c725
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -95,8 +93,8 @@ Il menu **[!UICONTROL Help > About...]** ti consente di accedere alle seguenti i
 
 * **Numero di versione** per la console del client Campaign e il server applicazioni
 * **Numero build** per la console del client Campaign e il server applicazioni
-* un collegamento per contattare l’Assistenza clienti Adobe
-* collegamenti ad Adobe Privacy Policy, Condizioni d&#39;uso e Politica sui cookie
+* un collegamento per contattare l’Assistenza clienti di Adobe
+* collegamenti alla Policy per i cookie, alle Condizioni d’uso e all’Informativa sulla privacy di Adobe
 
 ![](assets/about-acc.png)
 
