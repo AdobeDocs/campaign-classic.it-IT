@@ -1,68 +1,66 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Errore di connessione
 description: Errore di connessione
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-
 # Errore di connessione{#failure-to-connect}
 
-I motivi di un problema di connessione possono essere molteplici e dipendono da diversi contesti.
+I motivi di un problema di connessione possono essere molteplici e dipendere da vari contesti.
 
-È possibile provare i seguenti test e se il problema di connessione persiste, contattare l&#39;Assistenza clienti [ Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Puoi provare i seguenti test e se l&#39;errore di connessione persiste, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
 <table> 
 <thead> 
 <tr> 
-<th>Checks<br /> </th> 
+<th>Verifiche<br /> </th> 
 <th>Risoluzione<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td>Avete accesso a Internet dal vostro computer?</td> 
-<td>Verificate che sia possibile connettersi ai siti Web in Internet (ad esempio). Se non riuscite a connettervi, il problema è sul computer. Contattate l’amministratore di sistema.</td>
+<td>Hai accesso a Internet dal tuo computer?</td> 
+<td>Verificare che sia possibile connettersi ai siti web su Internet (ad esempio). Se non è possibile connettersi, il problema è sul computer. Contattare l'amministratore di sistema.</td>
 </tr>
 <tr> 
-<td>È possibile connettersi al server che ospita  Adobe Campaign tramite un altro servizio?</td> 
-<td>Connettersi al server tramite SSH o altri mezzi. Se questo non è possibile, la società ospitante ha un problema. Contattare l'amministratore di sistema.</td>
+<td>Puoi connetterti al server che ospita Adobe Campaign tramite un altro servizio?</td> 
+<td>Connettersi al server tramite SSH o qualsiasi altro mezzo. Se questo non è possibile, la società host ha un problema. Contattare l'amministratore di sistema.</td>
 </tr>
 <tr> 
-<td>Il server Web risponde?</td> 
-<td>Collegarsi all'URL di accesso  server Adobe Campaign utilizzando un browser Web: <b>http(s):// &lt;urlserver&gt;</b>. Se non risponde, il server Web viene arrestato sul computer. Per riavviare il servizio, contattare l'amministratore di sistema della società host.</td>
+<td>Il server web risponde?</td> 
+<td>Connettiti all’URL di accesso al server Adobe Campaign utilizzando un browser Web: <b>http(s):// &lt;urlserver&gt;</b>. Se non risponde, il server Web viene arrestato sul computer. Per riavviare il servizio, contatta l'amministratore di sistema della società host.</td>
 </tr>
 <tr> 
-<td> Adobe Campaign è stato integrato correttamente?</td> 
+<td>Adobe Campaign è stato integrato correttamente?</td> 
 <td>Accedi a: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='AAAA/MM/GG HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
-Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione viene presa in considerazione.</td>
+Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione è presa in considerazione.</td>
 </tr>
 <tr> 
-<td>Connettiti al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>Se viene visualizzato un errore Tomcat Java, verificate che l'integrazione JAVA sia stata eseguita correttamente. È integrato nel file [percorso dell'applicazione]/nl6/customer.sh</td>
+<td>Collegati al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Se ottieni un errore Tomcat Java, controlla se l'integrazione JAVA viene eseguita correttamente. È integrato nel file [percorso dell'applicazione]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>Connettiti al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>Se si ottiene una pagina vuota, verificare se il modulo Web  Adobe Campaign è avviato. Il comando nlserver pdump deve restituire Application Server per Adobe Campaign Classic (build 7.X AA.R XXX@SHA1) di DD/MM/YYYY. In caso contrario, riavviare il modulo con il comando nlserver avviare il Web</td>
+<td>Collegati al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Se si ottiene una pagina vuota, verificare se il modulo Web Adobe Campaign è avviato. Il comando nlserver pdump deve restituire Application Server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) di DD/MM/YYYY. In caso contrario, riavvia il modulo con il comando nlserver start web</td>
 </tr>
 <tr>
-<td>Controllare la configurazione generale delle zone di protezione.</td>
-<td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consultare <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>questa sezione.</a></td>
+<td>Controllare la configurazione generale delle aree di protezione.</td>
+<td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consulta <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>questa sezione.</a></td>
 </tr>
 <tr>
-<td>Il comando nlserver pdump restituisce <b>Nessuna attività</b></td>
-<td>È necessario riavviare l'intera applicazione  Adobe Campaign. A questo scopo, utilizzate il comando seguente: <b>nlserver watchdog -svc -noconsole</b></td>
+<td>Il comando nlserver pdump restituisce <b>Nessun task</b></td>
+<td>È necessario riavviare l'intera applicazione Adobe Campaign. A questo scopo, utilizza il seguente comando: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
 </table>
