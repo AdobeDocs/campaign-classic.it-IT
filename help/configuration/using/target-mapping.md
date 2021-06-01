@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Mappatura del target
-description: Scopri come creare una mappatura di destinazione
+description: Scopri come creare una mappatura target
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 38333669-5598-4811-a121-b677c1413f56
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
 
 ---
 
-
 # Mappatura del target{#target-mapping}
 
-La creazione del mapping di destinazione è necessaria in due casi:
+La creazione della mappatura di destinazione è necessaria in due casi:
 
-* se utilizzi una tabella di destinatari diversa da quella fornita da  Adobe Campaign,
-* se configurate una dimensione di filtro diversa dalla dimensione di targeting standard nella schermata di mappatura della destinazione.
+* se utilizzi una tabella dei destinatari diversa da quella fornita da Adobe Campaign,
+* se configuri una dimensione di filtro diversa dalla dimensione di targeting standard nella schermata di mappatura della destinazione.
 
-La procedura guidata per la creazione del mapping di destinazione consente di creare tutti gli schemi necessari per utilizzare la tabella personalizzata.
+La procedura guidata per la creazione della mappatura di destinazione consente di creare tutti gli schemi necessari per utilizzare la tabella personalizzata.
 
 ## Creazione e configurazione di schemi collegati alla tabella personalizzata {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Prima di creare una mappatura di destinazione, sono necessarie diverse configurazioni affinché  Adobe Campaign possa funzionare con un nuovo schema di dati del destinatario.
+Prima di creare una mappatura di destinazione, sono necessarie diverse configurazioni affinché Adobe Campaign possa funzionare con un nuovo schema di dati dei destinatari.
 
-A questo scopo, eseguire i seguenti passaggi:
+A questo scopo, esegui i seguenti passaggi:
 
-1. Creare un nuovo schema dati che integri i campi della tabella personalizzata che si desidera utilizzare.
+1. Crea un nuovo schema di dati che integra i campi della tabella personalizzata che desideri utilizzare.
 
-   Per ulteriori informazioni, fare riferimento a [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Per ulteriori informazioni, consulta [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   Nel nostro esempio, creeremo uno schema cliente, una tabella molto semplice contenente i seguenti campi: ID, nome, cognome, indirizzo e-mail, numero di telefono cellulare. L&#39;obiettivo è quello di poter inviare avvisi via e-mail o SMS alle persone memorizzate in questa tabella.
+   Nel nostro esempio, creeremo uno schema cliente, una tabella molto semplice contenente i campi seguenti: ID, nome, cognome, indirizzo e-mail, numero di telefono cellulare. L&#39;obiettivo è quello di poter inviare avvisi via e-mail o SMS alle persone memorizzate in questa tabella.
 
-   Schema di esempio (cus:single)
+   Esempio di schema (cus:individuale)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">
@@ -53,7 +51,7 @@ A questo scopo, eseguire i seguenti passaggi:
    </srcSchema>
    ```
 
-1. Dichiarare lo schema come visualizzazione esterna utilizzando l&#39;attributo =&quot;true&quot;. Fare riferimento a [L&#39;attributo view](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Dichiara lo schema come visualizzazione esterna utilizzando l’attributo =&quot;true&quot;. Fare riferimento a [L&#39;attributo di visualizzazione](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -61,7 +59,7 @@ A questo scopo, eseguire i seguenti passaggi:
     </srcSchema>
    ```
 
-1. Per aggiungere un indirizzo di posta diretta, utilizzare il seguente tipo di struttura:
+1. Se devi aggiungere un indirizzo di direct mailing, utilizza il seguente tipo di struttura:
 
    ```
    <element advanced="true" name="postalAddress" template="nms:common:postalAddress">
@@ -82,44 +80,44 @@ A questo scopo, eseguire i seguenti passaggi:
       </element>
    ```
 
-1. Fare clic sul nodo **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Fate clic sul pulsante **Nuovo** per aprire la procedura guidata per la creazione del mapping di destinazione.
-1. Immettere il campo **Label** e selezionare lo schema appena creato nel campo **Targeting Dimension**.
+1. Fai clic sul nodo **[!UICONTROL Administration > Campaign management > Target mappings]** .
+1. Fai clic sul pulsante **Nuovo** per aprire la procedura guidata per la creazione della mappatura di destinazione.
+1. Inserisci il campo **Etichetta** e seleziona lo schema appena creato nel campo **Dimensione di targeting** .
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Nella finestra **Modifica moduli indirizzo**, selezionare i campi dello schema che corrispondono ai vari indirizzi di consegna. Qui è possibile mappare i campi **@email** e **@mobile**.
+1. Nella finestra **Modifica moduli indirizzo**, seleziona i campi dello schema che corrispondono ai vari indirizzi di consegna. In questo caso, possiamo mappare i campi **@email** e **@mobile** .
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Nella seguente finestra **Storage**, immettete il suffisso **degli schemi di estensione** per distinguere i nuovi schemi dagli schemi forniti da  Adobe Campaign.
+1. Nella seguente finestra **Archiviazione**, immetti il suffisso **Suffisso del campo degli schemi di estensione** per distinguere i nuovi schemi dagli schemi predefiniti forniti da Adobe Campaign.
 
-   Fate clic su **[!UICONTROL Define new additional fields]** per selezionare la dimensione da destinare alla consegna.
+   Fai clic su **[!UICONTROL Define new additional fields]** per selezionare la dimensione di destinazione nella consegna.
 
-   Per impostazione predefinita, la gestione dell&#39;esclusione è memorizzata nelle stesse tabelle dei messaggi. Selezionare la casella **Genera uno schema di archiviazione per il tracciamento** se si desidera configurare la memorizzazione per il tracciamento collegato al mapping di destinazione.
+   Per impostazione predefinita, la gestione dell’esclusione viene memorizzata nelle stesse tabelle dei messaggi. Se desideri configurare lo spazio di archiviazione per il tracciamento collegato alla mappatura di destinazione, seleziona la casella **Genera uno schema di archiviazione per il tracciamento** .
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   > Adobe Campaign non supporta più schemi destinatari, noti come schemi di targeting, collegati agli stessi schemi di trasmissione e/o di trackinglog. In caso contrario si verificheranno successivamente delle anomalie nella riconciliazione dei dati. Per ulteriori informazioni, consultare la pagina [Raccomandazione e limitazioni](../../configuration/using/about-custom-recipient-table.md).
+   >Adobe Campaign non supporta più schemi di destinatari, noti come schemi di targeting, collegati agli stessi schemi di registro di trasmissione e/o di trackinglog. In caso contrario, si potrebbero verificare successivamente anomalie nella riconciliazione dei dati. Per ulteriori informazioni, consulta la pagina [Consiglio e limitazioni](../../configuration/using/about-custom-recipient-table.md) .
 
-1. Nella finestra **Estensioni**, selezionare gli schemi facoltativi che si desidera generare (l&#39;elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign ).
+1. Nella finestra **Estensioni**, seleziona gli schemi facoltativi che desideri generare (l’elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Fare clic sul pulsante **Salva** per chiudere la procedura guidata.
+1. Fai clic sul pulsante **Salva** per chiudere la procedura guidata.
 
-   La procedura guidata utilizza lo schema iniziale per creare tutti gli altri schemi necessari per il funzionamento del nuovo mapping di destinazione.
+   La procedura guidata utilizza lo schema di avvio per creare tutti gli altri schemi necessari per il funzionamento della nuova mappatura di destinazione.
 
    ![](assets/mapping_schema_list.png)
 
-## Utilizzo del mapping di destinazione {#using-target-mapping}
+## Utilizzo della mappatura target {#using-target-mapping}
 
 Esistono due modi per utilizzare il nuovo schema come destinazione di una consegna:
 
 * Creare uno o più modelli di consegna basati sulla mappatura
-* Selezionate la mappatura direttamente durante la selezione di destinazione durante la creazione di una consegna, come illustrato di seguito:
+* Seleziona la mappatura direttamente durante la selezione della destinazione durante la creazione di una consegna, come illustrato di seguito:
 
 ![](assets/mapping_selection_ciblage.png)
 
