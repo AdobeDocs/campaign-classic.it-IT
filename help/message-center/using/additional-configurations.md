@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '747'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## Monitorare le soglie {#monitoring-thresholds}
 
-È possibile configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei report **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (fare riferimento a [Informazioni sui report di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
+È possibile configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei rapporti **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (fare riferimento a [Accesso ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Per farlo, segui la procedura indicata di seguito:
 
@@ -109,7 +109,7 @@ Sulle istanze di esecuzione, segui i passaggi seguenti:
 
    >[!NOTE]
    >
-   >Scopri come creare un account esterno di tipo istanza di esecuzione nella sezione [Control instance](../../message-center/using/configuring-instances.md#control-instance) .
+   >Scopri come creare un account esterno di tipo istanza di esecuzione in [questa sezione](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Estendi lo schema nms:extAccount per aggiungere l&#39;URL di tracciamento:
 
