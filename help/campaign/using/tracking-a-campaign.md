@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tracking di una campagna
 description: Tracking di una campagna
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 2%
 
 ---
-
 
 # Tracking di una campagna{#tracking-a-campaign}
 
@@ -104,4 +102,3 @@ I pacchetti di campagna già pubblicati possono essere reinizializzati, modifica
 >[!NOTE]
 >
 >È inoltre possibile reinizializzare i pacchetti campagna annullati.
-
