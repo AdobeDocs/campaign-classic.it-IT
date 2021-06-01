@@ -1,44 +1,42 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Caratteristiche di uno schema
 description: Caratteristiche di uno schema
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 099161b4-b4cb-433c-aed6-71157269a536
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
 
 ---
 
-
 # Caratteristiche di uno schema{#schema-characteristics}
 
 Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono le seguenti:
 
-*  Adobe Campaign non deve modificare gli oggetti SQL relativi alle tabelle esistenti,
-* È necessario specificare esplicitamente i nomi delle tabelle e delle colonne,
+* Adobe Campaign non deve modificare gli oggetti SQL relativi alle tabelle esistenti,
+* I nomi delle tabelle e delle colonne devono essere specificati esplicitamente,
 * Gli indici devono essere dichiarati.
 
 >[!IMPORTANT]
 >
->Non eliminare i campi nella tabella dei destinatari standard, anche se inutili. Ciò potrebbe causare errori comportamentali nel database Adobe Campaign .
+>Non eliminare i campi nella tabella dei destinatari standard, anche se sono inutili. Questo può causare errori comportamentali nel database Adobe Campaign.
 
-## L&#39;attributo view {#the-view-attribute}
+## Attributo di visualizzazione {#the-view-attribute}
 
-Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento **srcSchema** principale. Deve essere utilizzato quando  Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. Pertanto, all&#39;applicazione non è consentito sincronizzare la tabella, le relative colonne e i relativi indici con lo schema corrispondente.
+Gli schemi di origine accettano l&#39;attributo **view** per l&#39;elemento principale **srcSchema**. Deve essere utilizzato quando Adobe Campaign viene manipolato nelle tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. È pertanto vietato all’applicazione sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
 ## Nomi di tabelle e colonne {#names-of-tables-and-columns}
 
-Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle tabelle, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile imporre l&#39;uso dei nomi SQL immettendo i seguenti attributi:
+Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle tabelle, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare i nomi SQL da utilizzare immettendo i seguenti attributi:
 
-* **** sqltable all&#39;interno dell&#39;elemento principale dello schema, per specificare la tabella,
-* **** sqlname all&#39;interno di ciascun attributo, per specificare le colonne.
+* **** sqltableentro l’elemento principale dello schema, per specificare la tabella,
+* **** sqlname all’interno di ciascun attributo, per specificare le colonne.
 
 **Esempio**:
 
@@ -55,17 +53,17 @@ Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle 
 </element>
 ```
 
-In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati in modo esplicito, l&#39;applicazione avrebbe utilizzato **CusIndividuale** per le colonne, **lastName** e **firstName** per le colonne.
+In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati esplicitamente, l&#39;applicazione avrebbe utilizzato **CusIndividuale** per le colonne **lastName** e **firstName** per le colonne.
 
-In uno schema, è possibile compilare solo una parte delle colonne di una tabella esistente. Le colonne non popolate non saranno accessibili agli utenti.
+In uno schema è possibile compilare solo una parte delle colonne di una tabella esistente. Le colonne non compilate non saranno accessibili all’utente.
 
 ## Campi indicizzati {#indexed-fields}
 
-Quando si ordinano i record di un elenco dalla console client, si ottengono prestazioni migliori ordinando i campi indicizzati. La dichiarazione di un indice in uno schema consente alla console di visualizzare i campi indicizzati con una linea rossa sotto la freccia dell&#39;ordinamento a sinistra dell&#39;etichetta della colonna, come illustrato di seguito:
+Quando si ordinano i record di un elenco dalla console client, si ottengono prestazioni migliori ordinando i campi indicizzati. La dichiarazione di un indice in uno schema fa sì che la console visualizzi i campi indicizzati con una linea rossa sotto la freccia dell’ordinamento a sinistra dell’etichetta della colonna, come illustrato di seguito:
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-In uno schema, un indice è definito come segue:
+In uno schema, un indice viene definito come segue:
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -75,9 +73,9 @@ In uno schema, un indice è definito come segue:
 </dbindex
 ```
 
-Per questo è importante dichiarare gli indici esistenti della tabella personalizzata nello schema corrispondente.
+Per questo motivo è importante dichiarare gli indici esistenti della tabella personalizzata nello schema corrispondente.
 
-Un indice è implicitamente dichiarato per ogni dichiarazione di chiave e collegamento dello schema di origine. La dichiarazione dell&#39;indice può essere evitata specificando l&#39;attributo **noDbIndex=&quot;true&quot;**:
+Viene implicitamente dichiarato un indice per ogni dichiarazione di chiave e collegamento dello schema di origine. La dichiarazione dell&#39;indice può essere impedita specificando l&#39;attributo **noDbIndex=&quot;true&quot;** :
 
 **Esempio**:
 
@@ -86,4 +84,3 @@ Un indice è implicitamente dichiarato per ogni dichiarazione di chiave e colleg
   <keyfield xpath="@customerId"/>
 </key>
 ```
-
