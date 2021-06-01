@@ -1,84 +1,82 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Utilizzo di aggregati
 description: Scopri come utilizzare gli aggregati
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
 
 ---
 
-
 # Utilizzo di aggregati{#using-aggregates}
 
 Questo caso d’uso descrive come identificare automaticamente gli ultimi destinatari aggiunti al database.
 
-Utilizzando la procedura seguente, la data di creazione dei destinatari nel database viene confrontata con l&#39;ultima data nota in cui un destinatario è stato creato utilizzando un aggregato. Vengono selezionati anche tutti i destinatari creati lo stesso giorno.
+Utilizzando il processo seguente, la data di creazione dei destinatari nel database viene confrontata con l’ultima data nota in cui un destinatario è stato creato utilizzando un aggregato. Verranno selezionati anche tutti i destinatari creati lo stesso giorno.
 
-Per eseguire un filtro di tipo **Data creazione = max (Data creazione)** sui destinatari, è necessario eseguire un flusso di lavoro per eseguire la procedura seguente:
+Per eseguire un filtro di tipo **Data di creazione = max (Data di creazione)** sui destinatari, è necessario eseguire un flusso di lavoro per seguire questi passaggi:
 
-1. Recuperare i destinatari del database utilizzando una query di base. Per ulteriori informazioni su questo passaggio, vedere [Creazione di una query](../../workflow/using/query.md#creating-a-query).
-1. Calcola l&#39;ultima data nota in cui è stato creato un destinatario utilizzando il risultato generato dalla funzione di aggregazione **max (Data creazione)**.
-1. Collega ciascun destinatario alla funzione di aggregazione e crea lo stesso schema.
-1. Filtrare i destinatari utilizzando l&#39;aggregazione tramite lo schema modificato.
+1. Recupera i destinatari del database utilizzando una query di base. Per ulteriori informazioni su questo passaggio, consulta [Creazione di una query](../../workflow/using/query.md#creating-a-query).
+1. Calcola l’ultima data nota in cui è stato creato un destinatario utilizzando il risultato generato dalla funzione di aggregazione **max (Data di creazione)**.
+1. Collega ogni destinatario alla funzione di aggregazione e genera lo stesso schema.
+1. Filtrare i destinatari utilizzando l’aggregato tramite lo schema modificato.
 
 ![](assets/datamanagement_usecase_1.png)
 
 ## Passaggio 1: Calcolo del risultato aggregato {#step-1--calculating-the-aggregate-result}
 
-1. Creare una query. Qui l&#39;obiettivo è calcolare l&#39;ultima data di creazione nota di tutti i destinatari nel database. La query non contiene pertanto un filtro.
+1. Crea una query. In questo caso, l’obiettivo è quello di calcolare l’ultima data di creazione nota tra tutti i destinatari del database. La query non contiene pertanto un filtro.
 1. Seleziona **[!UICONTROL Add data]**.
-1. Nelle finestre che si aprono, selezionare **[!UICONTROL Data linked to the filtering dimension]** quindi **[!UICONTROL Filtering dimension data]**.
-1. Nella finestra **[!UICONTROL Data to add]**, aggiungere una colonna che calcola il valore massimo per il campo **Data di creazione** nella tabella dei destinatari. È possibile utilizzare l&#39;editor di espressioni oppure immettere **max(@created)** direttamente in un campo della colonna **[!UICONTROL Expression]**. Quindi fare clic sul pulsante **[!UICONTROL Finish]**.
+1. Nelle finestre aperte, seleziona **[!UICONTROL Data linked to the filtering dimension]** e quindi **[!UICONTROL Filtering dimension data]**.
+1. Nella finestra **[!UICONTROL Data to add]**, aggiungi una colonna che calcola il valore massimo per il campo **Data di creazione** nella tabella dei destinatari. Puoi utilizzare l’editor espressioni o immettere **max(@created)** direttamente in un campo della colonna **[!UICONTROL Expression]**. Quindi fai clic sul pulsante **[!UICONTROL Finish]** .
 
    ![](assets/datamanagement_usecase_2.png)
 
 1. Fai clic su **[!UICONTROL Edit additional data]**, quindi su **[!UICONTROL Advanced parameters...]**. Seleziona l’opzione **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]**.
 
-   Questa opzione assicura che tutti i destinatari non vengano visualizzati come risultato e che i dati aggiunti in modo esplicito non vengano conservati. In questo caso, si riferisce all&#39;ultima data in cui è stato creato un destinatario.
+   Questa opzione assicura che tutti i destinatari non vengano visualizzati come risultato e che i dati aggiunti esplicitamente non vengano conservati. In questo caso, si riferisce all’ultima data di creazione di un destinatario.
 
    Lascia selezionata l’opzione **[!UICONTROL Remove duplicate rows (DISTINCT)]**.
 
 ## Passaggio 2: Collegamento dei destinatari e del risultato della funzione di aggregazione {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
-Per collegare la query relativa ai destinatari alla query che esegue il calcolo della funzione di aggregazione, è necessario utilizzare un&#39;attività di modifica dello schema.
+Per collegare la query relativa ai destinatari alla query che esegue il calcolo della funzione di aggregazione, è necessario utilizzare un’attività di modifica dello schema.
 
-1. Definire la query per i destinatari come set principale.
-1. Nella scheda **[!UICONTROL Links]**, aggiungi un nuovo collegamento e immetti le informazioni nella finestra che si apre come segue:
+1. Definisci la query per i destinatari come set principale.
+1. Nella scheda **[!UICONTROL Links]** , aggiungi un nuovo collegamento e inserisci le informazioni nella finestra che si apre come segue:
 
-   * Selezionare lo schema temporaneo relativo all&#39;aggregazione. I dati per questo schema verranno aggiunti ai membri del set principale.
-   * Selezionare **[!UICONTROL Use a simple join]** per collegare il risultato aggregato a tutti i destinatari del set principale.
-   * Infine, specificate che il collegamento è un **[!UICONTROL Type 11 simple link]**.
+   * Selezionare lo schema temporaneo relativo all&#39;aggregato. I dati per questo schema verranno aggiunti ai membri del set principale.
+   * Seleziona **[!UICONTROL Use a simple join]** per collegare il risultato aggregato a ogni destinatario del set principale.
+   * Infine, specifica che il collegamento è un **[!UICONTROL Type 11 simple link]**.
 
    ![](assets/datamanagement_usecase_3.png)
 
-Il risultato dell&#39;aggregazione è quindi collegato a ogni destinatario.
+Il risultato dell’aggregazione è quindi collegato a ogni destinatario.
 
-## Passaggio 3: Applicazione di filtri ai destinatari tramite l’aggregazione. {#step-3--filtering-recipients-using-the-aggregate-}
+## Passaggio 3: Filtrare i destinatari utilizzando l’aggregato . {#step-3--filtering-recipients-using-the-aggregate-}
 
-Una volta stabilito il collegamento, il risultato dell&#39;aggregazione e i destinatari fanno parte dello stesso schema temporaneo. È quindi possibile creare un filtro sullo schema per confrontare la data di creazione dei destinatari e l&#39;ultima data di creazione nota, rappresentata dalla funzione di aggregazione. Questo filtro viene eseguito utilizzando un&#39;attività divisa.
+Una volta stabilito il collegamento, il risultato aggregato e i destinatari fanno parte dello stesso schema temporaneo. È quindi possibile creare un filtro sullo schema per confrontare la data di creazione dei destinatari e l’ultima data di creazione nota, rappresentata dalla funzione di aggregazione. Questo filtro viene eseguito utilizzando un’attività di suddivisione.
 
-1. Nella scheda **[!UICONTROL General]**, selezionare **Recipients** come dimensione di destinazione e **Edit schema** come dimensione di filtro (per filtrare l&#39;attività dello schema di transizione in ingresso).
-1. Nella scheda **[!UICONTROL subsets]**, selezionare **[!UICONTROL Add a filtering condition on the inbound population]**, quindi fare clic su **[!UICONTROL Edit...]**.
-1. Utilizzando l&#39;editor di espressioni, aggiungete un criterio di uguaglianza tra la data di creazione dei destinatari e la data di creazione calcolata dall&#39;aggregazione.
+1. Nella scheda **[!UICONTROL General]** , seleziona **Destinatari** come dimensione di targeting e **Modifica schema** come dimensione di filtro (per filtrare l’attività schema di transizione in entrata).
+1. Nella scheda **[!UICONTROL subsets]** , seleziona **[!UICONTROL Add a filtering condition on the inbound population]** e fai clic su **[!UICONTROL Edit...]**.
+1. Utilizzando l’editor espressioni, aggiungi un criterio di uguaglianza tra la data di creazione dei destinatari e la data di creazione calcolata dall’aggregato.
 
-   I campi del tipo di data nel database vengono generalmente salvati in millisecondi. È pertanto necessario estendere tali valori per l&#39;intera giornata per evitare di recuperare i destinatari creati solo con lo stesso millisecondo.
+   I campi del tipo di data nel database vengono generalmente salvati in millisecondi. È pertanto necessario estenderle per l’intero giorno per evitare di recuperare i destinatari creati solo con lo stesso millisecondi.
 
-   A tal fine, utilizzare la funzione **ToDate**, disponibile nell&#39;editor delle espressioni, che converte date e ore in date semplici.
+   A questo scopo, utilizza la funzione **ToDate**, disponibile nell’editor di espressioni, che converte date e ore in date semplici.
 
    Le espressioni da utilizzare per i criteri sono pertanto:
 
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
-   * **[!UICONTROL Value]**:  `toDate([datemax/expr####])`, dove expr##### fa riferimento all&#39;aggregazione specificata nella query della funzione di aggregazione.
+   * **[!UICONTROL Value]**:  `toDate([datemax/expr####])`, dove expr#### fa riferimento all’aggregato specificato nella query della funzione di aggregazione.
 
    ![](assets/datamanagement_usecase_4.png)
 
-Il risultato della divisione dell&#39;attività è quindi relativo ai destinatari creati lo stesso giorno dell&#39;ultima data di creazione nota.
+Il risultato dell’attività di suddivisione si riferisce quindi ai destinatari creati lo stesso giorno dell’ultima data di creazione nota.
 
-Potete quindi aggiungere altre attività, ad esempio un aggiornamento dell&#39;elenco o una distribuzione per arricchire il flusso di lavoro.
+Puoi quindi aggiungere altre attività, ad esempio un aggiornamento dell’elenco o una consegna per arricchire il flusso di lavoro.
