@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Tempo di elaborazione del Centro messaggi
 description: Ulteriori informazioni sul report sull'ora di elaborazione del Centro messaggi.
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 3%
@@ -35,4 +34,4 @@ Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the peri
 
 >[!NOTE]
 >
->Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione di Adobe Campaign. Fare riferimento a [Soglie di monitoraggio](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione di Adobe Campaign. Fai riferimento a [Soglie di monitoraggio](../../message-center/using/additional-configurations.md#monitoring-thresholds).
