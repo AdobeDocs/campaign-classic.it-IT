@@ -1,62 +1,60 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aggiunta di campi a un modulo web
 description: Aggiunta di campi a un modulo web
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
+exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 1%
 
 ---
 
-
 # Aggiunta di campi a un modulo web{#adding-fields-to-a-web-form}
 
-In un modulo Web, i campi consentono agli utenti di immettere informazioni e selezionare opzioni. I moduli Web offrono campi di input, campi di selezione, contenuto statico e avanzato (didascalie, iscrizioni, ecc.).
+In un modulo Web, i campi consentono agli utenti di immettere informazioni e selezionare opzioni. I moduli web possono offrire campi di input, campi di selezione, contenuto statico e avanzato (didascalie, abbonamenti, ecc.).
 
-Quando si utilizza la procedura guidata per aggiungere i campi, il tipo di campo viene rilevato automaticamente in base al campo o alla variabile di memorizzazione selezionati. È possibile modificarlo utilizzando la casella a discesa **[!UICONTROL Type]** nella scheda **[!UICONTROL General]**.
+Quando si utilizza la procedura guidata per aggiungere campi, il tipo di campo viene rilevato automaticamente in base al campo o alla variabile di archiviazione selezionati. Puoi modificarlo utilizzando la casella a discesa **[!UICONTROL Type]** nella scheda **[!UICONTROL General]** .
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
 Quando si utilizzano i pulsanti nella barra degli strumenti, selezionare il tipo di campo da aggiungere.
 
-Sono disponibili i seguenti tipi di campo:
+Sono disponibili i seguenti tipi di campi:
 
-* Testo/numero immesso. Vedere [Aggiunta di campi di input](#adding-input-fields).
+* Inserimento testo/numero. Consulta [Aggiunta di campi di input](#adding-input-fields).
 * Selezione elenco a discesa. Vedere [Aggiunta di elenchi a discesa](#adding-drop-down-lists).
 * Scelta multipla tramite caselle di controllo. Vedere [Aggiunta di caselle di controllo](#adding-checkboxes).
 * Selezione esclusiva tramite pulsanti di scelta. Vedere [Aggiunta di pulsanti di scelta](#adding-radio-buttons).
-* Votate in una griglia di opzioni. Vedere [Aggiunta di griglie](#adding-grids).
+* Votate in una griglia di opzioni. Consulta [Aggiunta di griglie](#adding-grids).
 * Numeri e date. Vedere [Aggiunta di date e numeri](#adding-dates-and-numbers).
-* Iscrizione/annullamento dell’iscrizione a un servizio di informazioni. Vedere [Caselle di controllo dell&#39;iscrizione](#subscription-checkboxes).
+* Iscrizione/annullamento dell’abbonamento a un servizio informazioni. Vedere [Caselle di controllo della sottoscrizione](#subscription-checkboxes).
 * Convalida Captcha. Vedere [Inserimento di un captcha](#inserting-a-captcha).
-* Pulsante Scarica. [Caricamento di un file](#uploading-a-file).
+* Pulsante Scarica . [Caricamento di un file](#uploading-a-file).
 * Costante nascosta. Vedere [Inserimento di una costante nascosta](#inserting-a-hidden-constant).
 
-Specificare la modalità di memorizzazione della risposta: aggiornare un campo nel database (memorizza solo l&#39;ultimo valore salvato) o memorizzare in una variabile (la risposta non è memorizzata). Per ulteriori informazioni, fare riferimento a [Campi di archiviazione delle risposte](../../web/using/web-forms-answers.md#response-storage-fields).
+Specificare la modalità di archiviazione della risposta: aggiorna un campo nel database (memorizza solo l&#39;ultimo valore salvato) o lo archivia in una variabile (la risposta non viene memorizzata). Per ulteriori informazioni, consulta [Campi di archiviazione della risposta](../../web/using/web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
->Per impostazione predefinita, il campo è inserito nella parte inferiore della struttura ad albero corrente. Utilizzare le frecce nella barra degli strumenti per spostarle verso l&#39;alto o verso il basso.
+>Per impostazione predefinita, il campo viene inserito nella parte inferiore della struttura corrente. Utilizzare le frecce nella barra degli strumenti per spostarle verso l’alto o verso il basso.
 
 ## Creazione guidata campo {#field-creation-wizard}
 
-Per ciascuna pagina del modulo è possibile aggiungere un campo utilizzando il primo pulsante nella barra degli strumenti. A tale scopo, scegliere il menu **[!UICONTROL Add using the wizard]**.
+Per ogni pagina del modulo, è possibile aggiungere un campo tramite il primo pulsante nella barra degli strumenti. A questo scopo, vai al menu **[!UICONTROL Add using the wizard]** .
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-Selezionate il tipo di campo da creare: è possibile scegliere di aggiungere un campo nel database, una variabile o di importare un gruppo di campi creati in un altro modulo e raccolti in un contenitore.
+Selezionare il tipo di campo da creare: è possibile scegliere di aggiungere un campo nel database, una variabile o di importare un gruppo di campi creati in un altro modulo e raccolti in un contenitore.
 
-Fare clic su **[!UICONTROL Next]** e selezionare il campo di memorizzazione o la variabile o il contenitore da importare.
+Fare clic su **[!UICONTROL Next]** e selezionare il campo di archiviazione o la variabile o il contenitore da importare.
 
 ![](assets/s_ncs_admin_webform_wz_confirm_db.png)
 
-Fare clic su **[!UICONTROL Finish]** per inserire il campo selezionato nella pagina.
+Fai clic su **[!UICONTROL Finish]** per inserire il campo selezionato nella pagina.
 
 ![](assets/s_ncs_admin_webform_wz_insert_field.png)
 
@@ -68,39 +66,39 @@ Per aggiungere un campo di input, fare clic sul pulsante **[!UICONTROL Input con
 
 ### Tipi di campi di input {#types-of-input-fields}
 
-In una pagina del modulo è possibile inserire cinque tipi diversi di campi di testo:
+È possibile inserire in una pagina del modulo cinque diversi tipi di campi di testo:
 
-* **Testo**: consente all&#39;utente di inserire un testo su una riga.
+* **Testo**: consente all’utente di inserire un testo su una riga.
 
    ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Numero**: consente all&#39;utente di immettere un numero su una riga. per ulteriori informazioni, vedere [Aggiunta di numeri](#adding-numbers).
+* **Numero**: consente all’utente di immettere un numero su una riga. per ulteriori informazioni, consulta [Aggiunta di numeri](#adding-numbers).
 
-   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore immesso sia compatibile con il campo. Per ulteriori informazioni, vedere [Definizione delle impostazioni di controllo](../../web/using/form-rendering.md#defining-control-settings).
+   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore inserito sia compatibile con il campo. Per ulteriori informazioni, consulta [Definizione delle impostazioni di controllo](../../web/using/form-rendering.md#defining-control-settings).
 
-* **Password**: consente all&#39;utente di inserire il testo su una sola riga. Durante l&#39;immissione del testo, i caratteri vengono sostituiti da punti:
+* **Password**: consente all’utente di immettere il testo su una sola riga. Durante l’immissione del testo, i caratteri vengono sostituiti da punti:
 
    ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
    >[!CAUTION]
    >
-   >Le password sono memorizzate non crittografate nel database.
+   >Le password vengono memorizzate non crittografate nel database.
 
-* **Testo** multiriga: consente all&#39;utente di inserire il testo su più righe.
+* **Testo** su più righe: consente all’utente di inserire testo su più righe.
 
    ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
    >[!CAUTION]
    >
-   >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Lo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML. Per ulteriori informazioni sui tipi di dati negli schemi, fare riferimento al capitolo &quot;Riferimento schema&quot; in [questa sezione](../../configuration/using/about-schema-reference.md).
+   >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Lo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML. Per ulteriori informazioni sui tipi di dati negli schemi, consulta il capitolo &quot;Riferimento schema&quot; in [questa sezione](../../configuration/using/about-schema-reference.md).
    >   
-   >Se si utilizza il modulo **Survey**, è possibile memorizzare questo tipo di campo in un campo archiviato che si adatta automaticamente al formato. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
+   >Se utilizzi il modulo **Survey**, puoi memorizzare questo tipo di campo in un campo archiviato che si adatta automaticamente al formato. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
 
-* **Testo** multiriga con riciclo: consente all&#39;utente di immettere del testo con un layout che verrà memorizzato in formato HTML.
+* **Testo** arricchito su più righe: consente all’utente di inserire un testo con un layout che verrà memorizzato in formato HTML.
 
    ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   Potete selezionare il tipo di editor offerto agli utenti. A tal fine, utilizzare la casella a discesa del campo **[!UICONTROL HTML editor]** nella scheda **[!UICONTROL Advanced]**.
+   Puoi selezionare il tipo di editor offerto agli utenti. A questo scopo, utilizza la casella a discesa del campo **[!UICONTROL HTML editor]** nella scheda **[!UICONTROL Advanced]** .
 
    ![](assets/webapp_enrich_text_type.png)
 
@@ -108,124 +106,124 @@ In una pagina del modulo è possibile inserire cinque tipi diversi di campi di t
 
    ![](assets/webapp_enrich_text_max.png)
 
-### Configurare i campi di input {#configure-input-fields}
+### Configura i campi di input {#configure-input-fields}
 
 I campi di input sono tutti configurati in base alla stessa modalità, utilizzando le seguenti opzioni:
 
 ![](assets/s_ncs_admin_survey_txt_param.png)
 
-La scheda **[!UICONTROL General]** consente di inserire il nome del campo e di attribuire un valore predefinito al campo, se necessario.
+La scheda **[!UICONTROL General]** ti consente di immettere il nome del campo e, se necessario, di attribuire un valore predefinito.
 
-La modalità di memorizzazione delle risposte può essere modificata tramite il collegamento **[!UICONTROL Edit storage...]**. I valori possono essere memorizzati in un campo esistente del database; oppure potete scegliere di non salvare le informazioni nel database (usare una variabile locale).
+La modalità di archiviazione delle risposte può essere modificata tramite il collegamento **[!UICONTROL Edit storage...]** . I valori possono essere memorizzati in un campo esistente del database; oppure è possibile scegliere di non salvare le informazioni nel database (utilizzare una variabile locale).
 
 >[!NOTE]
 >
->Le modalità di storage sono descritte in [Campi di storage di risposta](../../web/using/web-forms-answers.md#response-storage-fields)
+>Le modalità di archiviazione sono descritte in [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields)
 
-La scheda **[!UICONTROL Advanced]** consente di definire i parametri di visualizzazione per il campo (posizione delle etichette, allineamento, ecc.). Vedere [Definizione del layout dei moduli Web](../../web/using/defining-web-forms-layout.md).
+La scheda **[!UICONTROL Advanced]** ti consente di definire i parametri di visualizzazione per il campo (posizione delle etichette, allineamento, ecc.). Consultare [Definizione del layout dei moduli web](../../web/using/defining-web-forms-layout.md).
 
 ## Aggiunta di elenchi a discesa {#adding-drop-down-lists}
 
-Potete inserire un elenco a discesa in una pagina di sondaggio. Questo consente all&#39;utente di selezionare un valore tra quelli disponibili in un menu a discesa.
+È possibile inserire un elenco a discesa in una pagina del sondaggio. Questo consente all’utente di selezionare un valore tra quelli in offerta in un menu a discesa.
 
 ![](assets/s_ncs_admin_survey_dropdown_sample.png)
 
-Per aggiungere una casella a discesa a una pagina del modulo, fare clic sul pulsante **[!UICONTROL Selection controls > Drop-down list]** nella barra degli strumenti dell&#39;Editor pagina.
+Per aggiungere una casella a discesa a una pagina del modulo, fare clic sul pulsante **[!UICONTROL Selection controls > Drop-down list]** nella barra degli strumenti dell’Editor pagina.
 
 ![](assets/s_ncs_admin_survey_create_dropdown.png)
 
-Selezionare la modalità di memorizzazione delle risposte e confermare la scelta.
+Selezionare la modalità di archiviazione delle risposte e confermare la scelta.
 
-Definire le etichette e i valori dell&#39;elenco nella sezione inferiore della scheda **[!UICONTROL General]**. Se le informazioni sono memorizzate in un campo esistente del database ed è un campo di enumerazione, è possibile compilare automaticamente i valori facendo clic su **[!UICONTROL Initialize the list of values from the database]** , come illustrato di seguito:
+Definisci le etichette e i valori dell’elenco nella sezione inferiore della scheda **[!UICONTROL General]** . Se le informazioni sono memorizzate in un campo esistente del database ed è un campo di enumerazione, è possibile compilare automaticamente i valori facendo clic su **[!UICONTROL Initialize the list of values from the database]** , come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 
 >[!NOTE]
 >
->Utilizzate le frecce a destra dell’elenco di valori per modificarne la sequenza.
+>Utilizzare le frecce a destra dell’elenco di valori per modificarne la sequenza.
 
-Se i dati sono memorizzati in una tabella collegata, è possibile selezionare il campo in cui vengono salvati i valori suggeriti nell&#39;elenco. Ad esempio, se si seleziona la tabella dei paesi, fare clic su **[!UICONTROL Initialize the list of values from the database...]** e selezionare il campo desiderato.
+Se i dati sono memorizzati in una tabella collegata, è possibile selezionare il campo in cui vengono salvati i valori da suggerire nell’elenco. Ad esempio, se selezioni la tabella dei paesi, fai clic su **[!UICONTROL Initialize the list of values from the database...]** e seleziona il campo desiderato.
 
 ![](assets/s_ncs_admin_survey_preload_values.png)
 
-Quindi, fate clic sul collegamento **[!UICONTROL Load]** per recuperare i valori:
+Quindi, fai clic sul collegamento **[!UICONTROL Load]** per recuperare i valori:
 
 ![](assets/s_ncs_admin_survey_load_button.png)
 
 >[!CAUTION]
 >
->Ripetete questa operazione ogni volta che l&#39;elenco viene aggiornato per aggiornare i valori dell&#39;offerta.
+>Ripeti questa operazione ogni volta che l’elenco viene aggiornato per aggiornare i valori dell’offerta.
 
 ## Aggiunta di caselle di controllo {#adding-checkboxes}
 
-Affinché l’utente possa selezionare un’opzione, è necessario utilizzare una casella di controllo.
+Per consentire all’utente di selezionare un’opzione, è necessario utilizzare una casella di controllo.
 
 ![](assets/s_ncs_admin_survey_check_box.png)
 
-Per aggiungere una casella di controllo a un modulo, fare clic sull&#39;icona **[!UICONTROL Selection controls > Checkbox...]** nella barra degli strumenti dell&#39;Editor pagina.
+Per aggiungere una casella di controllo a un modulo, fai clic sull’icona **[!UICONTROL Selection controls > Checkbox...]** nella barra degli strumenti dell’editor pagina.
 
-Selezionare la modalità di memorizzazione delle risposte e confermare la scelta.
+Selezionare la modalità di archiviazione delle risposte e confermare la scelta.
 
-Immettere l&#39;etichetta della casella nel campo **[!UICONTROL Label]** della scheda **[!UICONTROL General]**.
+Immetti l’etichetta della casella nel campo **[!UICONTROL Label]** della scheda **[!UICONTROL General]** .
 
 ![](assets/s_ncs_admin_survey_check_box_edit.png)
 
-Una casella di controllo consente di assegnare un valore al campo di memorizzazione (o valore) a seconda che la casella sia selezionata o meno. La sezione **[!UICONTROL Values]** consente di inserire il valore da assegnare se la casella è selezionata (nel campo **[!UICONTROL Value]**), e il valore da assegnare se non è selezionata (nel campo **[!UICONTROL Empty value]**). Questi valori dipendono dal formato di memorizzazione dei dati.
+Una casella di controllo consente di assegnare un valore al campo di archiviazione (o valore) a seconda che la casella sia selezionata o meno. La sezione **[!UICONTROL Values]** ti consente di immettere il valore da assegnare se la casella è selezionata (nel campo **[!UICONTROL Value]** ) e il valore da assegnare se non è selezionato (nel campo **[!UICONTROL Empty value]** ). Questi valori dipendono dal formato di archiviazione dei dati.
 
-Se il campo di memorizzazione (o variabile) è booleano, il valore da assegnare se la casella non è selezionata viene dedotto automaticamente. In questo caso, viene offerto solo il campo **[!UICONTROL Value if checked]**, come mostrato di seguito:
+Se il campo di archiviazione (o variabile) è booleano, il valore da assegnare se la casella non è selezionata verrà dedotto automaticamente. In questo caso, viene offerto solo il campo **[!UICONTROL Value if checked]** , come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Esempio: Assegnare un valore a un campo se è selezionata una casella {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Esempio: Assegna un valore a un campo se è selezionata una casella {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
-Inserire una casella di controllo in un modulo per inviare una richiesta di manutenzione, come illustrato di seguito:
+Desideriamo inserire una casella di controllo in un modulo per inviare una richiesta di manutenzione, come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_check_box_ex.png)
 
-Le informazioni verranno caricate nel database e in un campo esistente (in questo caso, il campo **[!UICONTROL Comment]**):
+Le informazioni verranno caricate nel database e in un campo esistente (in questo caso, il campo **[!UICONTROL Comment]** ):
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
-Se la casella &quot;Manutenzione richiesta&quot; è selezionata, la colonna **[!UICONTROL Comment]** conterrà &quot;Manutenzione richiesta&quot;. Se la casella non è selezionata, nella colonna viene visualizzato &quot;Manutenzione non necessaria&quot;. Per ottenere questo risultato, applicare la seguente configurazione alla casella di controllo nella pagina del modulo:
+Se la casella &quot;Manutenzione richiesta&quot; è selezionata, la colonna **[!UICONTROL Comment]** conterrà &quot;Manutenzione richiesta&quot;. Se la casella non è selezionata, nella colonna verrà visualizzato &quot;Manutenzione non necessaria&quot;. Per ottenere questo risultato, applicare la seguente configurazione alla casella di controllo nella pagina del modulo:
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
 ## Aggiunta di pulsanti di scelta {#adding-radio-buttons}
 
-I pulsanti di scelta consentono di offrire all’utente una serie di opzioni esclusive tra cui scegliere. Si tratta di valori diversi per lo stesso campo.
+I pulsanti di scelta consentono all’utente di scegliere tra una serie di opzioni esclusive. Si tratta di valori diversi per lo stesso campo.
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-È possibile creare pulsanti di scelta individualmente (pulsanti unitari) o tramite un elenco a scelta multipla, ma poiché il punto dei pulsanti di scelta è quello di selezionare una o più opzioni, sarà sempre possibile creare almeno un paio di pulsanti di scelta, mai un solo pulsante.
+È possibile creare pulsanti di scelta singolarmente (pulsanti unitari) o tramite un elenco a scelta multipla, ma poiché il punto dei pulsanti di scelta è quello di selezionare un’opzione o un’altra, si creerà sempre almeno una coppia di pulsanti di scelta, mai un solo pulsante.
 
 >[!CAUTION]
 >
->Per rendere la selezione obbligatoria, è necessario creare un elenco a scelta multipla.
+>Per rendere obbligatoria la selezione, è necessario creare un elenco di scelte multiple.
 
-### Aggiungi pulsanti singoli {#add-single-buttons}
+### Aggiungi singoli pulsanti {#add-single-buttons}
 
-Per aggiungere un pulsante di scelta a una pagina del modulo, andare al menu **[!UICONTROL Selection controls > Radio button]** nella barra degli strumenti dell&#39;editor pagina e scegliere una modalità di memorizzazione.
+Per aggiungere un pulsante di scelta a una pagina del modulo, passare al menu **[!UICONTROL Selection controls > Radio button]** nella barra degli strumenti dell’Editor pagina e scegliere una modalità di archiviazione.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-I pulsanti di scelta sono configurati in modo simile alle caselle di controllo (vedere [Aggiunta di caselle di controllo](#adding-checkboxes)). Tuttavia, non viene assegnato alcun valore se l&#39;opzione non è selezionata. Affinché diversi pulsanti siano interdipendenti, ossia selezionandone uno automaticamente deseleziona gli altri, è necessario memorizzarli nello stesso campo. Se non sono memorizzati nel database, la stessa variabile locale deve essere utilizzata per la memorizzazione temporanea. Vedere [Campi di archiviazione delle risposte](../../web/using/web-forms-answers.md#response-storage-fields).
+I pulsanti di scelta sono configurati in modo simile alle caselle di controllo (vedere [Aggiunta di caselle di controllo](#adding-checkboxes)). Tuttavia, non viene assegnato alcun valore se l’opzione non è selezionata. Affinché diversi pulsanti siano interdipendenti, ovvero selezionandone uno automaticamente deseleziona gli altri, è necessario memorizzarli nello stesso campo. Se non sono memorizzati nel database, è necessario utilizzare la stessa variabile locale per l&#39;archiviazione temporanea. Vedere [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields).
 
-### Aggiungere un elenco di pulsanti {#add-a-list-of-buttons}
+### Aggiungi un elenco di pulsanti {#add-a-list-of-buttons}
 
-Per aggiungere pulsanti di scelta tramite un elenco, scegliere il menu **[!UICONTROL Selection controls>Multiple choice]** nella barra degli strumenti dell&#39;Editor pagina.
+Per aggiungere pulsanti di scelta tramite un elenco, vai al menu **[!UICONTROL Selection controls>Multiple choice]** nella barra degli strumenti dell’editor di pagine.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-Aggiungete tutti i pulsanti di scelta quante sono le etichette. Il vantaggio di questa funzione è che è possibile importare valori da un campo esistente (nel caso di un campo dettagliato) e fare in modo che l&#39;utente scelga un&#39;opzione. Tuttavia, il layout dei pulsanti è meno flessibile.
+Aggiungi tutti i pulsanti di scelta quante etichette sono presenti. Il vantaggio di questa funzione è che è possibile importare valori da un campo esistente (in caso di un campo dettagliato) e fare in modo che l’utente scelga un’opzione. Tuttavia, il layout dei pulsanti è meno flessibile.
 
 >[!NOTE]
 >
->I moduli Web non autorizzano la selezione di diversi valori. La selezione multipla può essere attivata solo per i moduli di tipo **Survey**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).\
->È tuttavia possibile inserire un campo di tipo **[!UICONTROL Multiple choice]** in un&#39;applicazione Web; ma senza autorizzare la selezione di più valori: le opzioni offerte possono essere selezionate utilizzando i pulsanti di scelta.
+>I moduli web non autorizzano la selezione di più valori. È possibile attivare una selezione multipla solo per i moduli di tipo **Survey**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).\
+>È tuttavia possibile inserire un campo di tipo **[!UICONTROL Multiple choice]** in un&#39;applicazione Web; ma senza autorizzare la selezione di diversi valori: le opzioni offerte possono essere selezionate mediante pulsanti di scelta.
 
 ## Aggiunta di griglie {#adding-grids}
 
-Le griglie vengono utilizzate per progettare le pagine di voto nelle applicazioni Web. Questo consente di offrire elenchi di pulsanti di scelta per rispondere a un sondaggio o a un tipo di valutazione Moduli Web, come illustrato di seguito:
+Le griglie vengono utilizzate per progettare le pagine di voto nelle applicazioni Web. Questo consente di offrire elenchi di pulsanti di scelta per rispondere ai moduli Web del sondaggio o del tipo di valutazione, come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_vote_param.png)
 
@@ -233,7 +231,7 @@ Per utilizzare questo tipo di elemento in un modulo, creare una griglia semplice
 
 ![](assets/s_ncs_admin_survey_vote_sample.png)
 
-Il numero di pulsanti di scelta in ciascuna riga della griglia corrisponde al numero di valori definiti nella griglia semplice.
+Il numero di pulsanti di scelta in ogni riga della griglia corrisponde al numero di valori definiti nella griglia semplice.
 
 ![](assets/s_ncs_admin_survey_vote_ex.png)
 
@@ -241,19 +239,19 @@ Il numero di pulsanti di scelta in ciascuna riga della griglia corrisponde al nu
 
 >[!NOTE]
 >
->Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A tal fine, passare alla scheda **[!UICONTROL Advanced]**, il **[!UICONTROL Label position]** display è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A questo scopo, vai alla scheda **[!UICONTROL Advanced]** , il display **[!UICONTROL Label position]** è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Aggiunta di date e numeri {#adding-dates-and-numbers}
 
-Il contenuto dei campi modulo può essere formattato in modo che corrisponda ai dati memorizzati nel database o per soddisfare un requisito particolare. È possibile creare campi adatti per l&#39;immissione di numeri e date.
+Il contenuto dei campi modulo può essere formattato in modo da corrispondere ai dati memorizzati nel database o per soddisfare un requisito particolare. È possibile creare campi appropriati per l&#39;immissione di numeri e date.
 
 ### Aggiunta di date {#adding-dates}
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Per consentire all&#39;utente di immettere una data in una pagina del modulo, aggiungere un campo di immissione e selezionare il tipo **[!UICONTROL Date...]**.
+Per consentire all’utente di immettere una data in una pagina del modulo, aggiungere un campo di input e selezionare il tipo **[!UICONTROL Date...]**.
 
-Immettere un&#39;etichetta per il campo e configurare la modalità di memorizzazione dei dati.
+Immetti un’etichetta per il campo e configura la modalità di archiviazione dati.
 
 ![](assets/s_ncs_admin_survey_date_edit.png)
 
@@ -261,41 +259,41 @@ La sezione inferiore della finestra consente di selezionare i formati di data e 
 
 ![](assets/s_ncs_admin_survey_date_edit_values.png)
 
-Potete anche scegliere di non visualizzare la data (o l’ora).
+Puoi anche scegliere di non visualizzare la data (o l’ora).
 
-Le date possono essere selezionate tramite un calendario o caselle a discesa. È anche possibile inserirli direttamente nel campo, ma devono corrispondere al formato specificato nella schermata precedente.
+Le date possono essere selezionate tramite un calendario o caselle a discesa. Puoi anche immetterle direttamente nel campo , ma devono corrispondere al formato specificato nella schermata precedente.
 
 >[!NOTE]
 >
->Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. Vedere [Traduzione di un modulo Web](../../web/using/translating-a-web-form.md).
+>Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. Vedere [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
 
-Tuttavia, in alcuni casi (ad esempio per le date di nascita) può essere più semplice utilizzare elenchi a discesa.
+Tuttavia, in alcuni casi (ad esempio per le date di nascita) può essere più facile utilizzare elenchi a discesa.
 
 ![](assets/s_ncs_admin_survey_date_list_select.png)
 
-A questo scopo, fare clic sulla scheda **[!UICONTROL Advanced]** e scegliere la modalità di input utilizzando **[!UICONTROL Drop-down lists]**.
+A questo scopo, fai clic sulla scheda **[!UICONTROL Advanced]** e scegli la modalità di input utilizzando **[!UICONTROL Drop-down lists]**.
 
 ![](assets/s_ncs_admin_survey_date_selection.png)
 
-Potete quindi impostare dei limiti per i valori offerti nell&#39;elenco.
+È quindi possibile impostare limiti ai valori offerti nell’elenco.
 
 ![](assets/s_ncs_admin_survey_date_first_last_y.png)
 
 ### Aggiunta di numeri {#adding-numbers}
 
-È possibile creare campi adatti per l&#39;immissione di numeri.
+È possibile creare campi adatti per l’immissione di numeri.
 
 ![](assets/s_ncs_admin_survey_number.png)
 
-In un campo numerico, l&#39;utente può immettere solo numeri. Il controllo della voce viene applicato automaticamente quando la pagina viene approvata.
+In un campo numerico, l’utente può immettere solo numeri. Il controllo della voce viene applicato automaticamente quando la pagina viene approvata.
 
-A seconda del campo in cui sono memorizzati i dati nel database, è possibile applicare una formattazione speciale o alcune restrizioni. Potete inoltre specificare i valori massimo e minimo. Questo tipo di campo è configurato come segue:
+A seconda del campo in cui i dati vengono memorizzati nel database, è possibile applicare una formattazione speciale o alcune restrizioni. È inoltre possibile specificare valori massimi e minimi. Questo tipo di campo è configurato come segue:
 
 ![](assets/s_ncs_admin_survey_number_edit.png)
 
 Il valore predefinito è il valore visualizzato nel campo quando il modulo viene pubblicato. Può essere corretto dall’utente.
 
-È possibile aggiungere un prefisso e/o un suffisso al campo numerico tramite la scheda **[!UICONTROL Advanced]**, come illustrato di seguito:
+Puoi aggiungere un prefisso e/o un suffisso al campo numerico tramite la scheda **[!UICONTROL Advanced]** , come illustrato di seguito:
 
 ![](assets/s_ncs_admin_survey_number_ex_conf.png)
 
@@ -303,97 +301,97 @@ Nel modulo, il rendering sarà il seguente:
 
 ![](assets/s_ncs_admin_survey_number_ex.png)
 
-## Caselle di controllo dell&#39;iscrizione {#subscription-checkboxes}
+## Caselle di controllo della sottoscrizione {#subscription-checkboxes}
 
-Potete aggiungere controlli per consentire agli utenti di effettuare o annullare l’iscrizione a uno o più servizi di informazione (newsletter, avvisi, notifiche in tempo reale, ecc.). Per effettuare la sottoscrizione, l&#39;utente verifica il servizio corrispondente.
+È possibile aggiungere controlli per consentire agli utenti di effettuare o annullare l’iscrizione a uno o più servizi di informazione (newsletter, avvisi, notifiche in tempo reale, ecc.). Per effettuare l’abbonamento, l’utente controlla il servizio corrispondente.
 
-Per creare una casella di controllo per l&#39;iscrizione, fate clic su **[!UICONTROL Advanced controls>Subscription]**.
+Per creare una casella di controllo della sottoscrizione, fai clic su **[!UICONTROL Advanced controls>Subscription]**.
 
 ![](assets/s_ncs_admin_survey_subscription_edit.png)
 
-Indicate l&#39;etichetta della casella di controllo e selezionate il servizio di informazioni in questione utilizzando la casella a discesa **[!UICONTROL Service]**.
+Indicare l’etichetta della casella di controllo e selezionare il servizio informazioni interessato utilizzando la casella a discesa **[!UICONTROL Service]**.
 
 >[!NOTE]
 >
->I servizi di informazione sono descritti in [questa pagina](../../delivery/using/managing-subscriptions.md).
+>I servizi informativi sono descritti in [questa pagina](../../delivery/using/managing-subscriptions.md).
 
-L&#39;utente si iscrive al servizio selezionando l&#39;opzione appropriata.
+L’utente si abbona al servizio selezionando l’opzione pertinente.
 
 ![](assets/s_ncs_admin_survey_subscribe.png)
 
 >[!CAUTION]
 >
->Se l’utente ha già effettuato la sottoscrizione a un servizio informazioni e la casella collegata a questo servizio non è selezionata al momento dell’approvazione del modulo, verrà annullata la sottoscrizione.
+>Se l’utente è già iscritto a un servizio informazioni e la casella collegata a questo servizio non è selezionata al momento dell’approvazione del modulo, verrà annullata l’iscrizione.
 
-Esempi di iscrizioni e riferimenti sono disponibili in [questa sezione](../../web/using/about-surveys.md).
+Esempi di abbonamenti e riferimenti sono disponibili in [questa sezione](../../web/using/about-surveys.md).
 
 ## Inserimento di un captcha {#inserting-a-captcha}
 
-Lo scopo dei test **captcha** è di evitare l&#39;uso fraudolento dei moduli Web.
+Lo scopo dei test **captcha** è quello di impedire l’uso fraudolento dei moduli web.
 
 >[!CAUTION]
 >
->Se il modulo contiene più pagine, è necessario posizionare sempre il Captcha sull&#39;ultima pagina, subito prima della casella di archiviazione, per evitare qualsiasi elusione delle misure di sicurezza.
+>Se il modulo contiene più pagine, è necessario posizionare sempre Captcha sull’ultima pagina, immediatamente prima della casella di archiviazione, per evitare che le misure di sicurezza vengano eluse.
 
 Per inserire un Captcha in un modulo, fare clic sul primo pulsante sulla barra degli strumenti e selezionare **[!UICONTROL Advanced controls>Captcha]**.
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-Immettere l&#39;etichetta del campo. Questa etichetta verrà visualizzata davanti all&#39;area di visualizzazione Captcha. È possibile modificare la posizione di questa etichetta nella scheda **[!UICONTROL Advanced]**.
+Immetti l’etichetta del campo. Questa etichetta verrà visualizzata di fronte all&#39;area di visualizzazione Captcha. Puoi modificare la posizione di questa etichetta nella scheda **[!UICONTROL Advanced]** .
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
 >[!NOTE]
 >
->Per i controlli di tipo **[!UICONTROL captcha]**, non è necessario indicare un campo di memorizzazione o una variabile.
+>Per i controlli di tipo **[!UICONTROL captcha]** non è necessario indicare un campo di archiviazione o una variabile.
 
-Il Captcha viene inserito nella pagina con un campo di input posizionato sotto l’elemento visivo. Questi due elementi sono inseparabili e sono considerati come un elemento singolo ai fini del layout di pagina (occupano una singola cella).
+Il Captcha viene inserito nella pagina con un campo di input inserito sotto l’elemento visivo. Questi due elementi sono inseparabili e vengono considerati come un singolo elemento ai fini del layout di pagina (occupano una singola cella).
 
 ![](assets/s_ncs_admin_survey_captcha_sample.png)
 
-Quando la pagina viene confermata, il campo di immissione viene visualizzato in rosso se il contenuto del Captcha non è stato immesso correttamente.
+Quando la pagina viene confermata, il campo di input viene visualizzato in rosso se il contenuto del Captcha non è stato inserito correttamente.
 
 ![](assets/s_ncs_admin_survey_captcha_error.png)
 
-È possibile creare un messaggio di errore da visualizzare. A tal fine, utilizzare il collegamento **[!UICONTROL Personalize the message]** nella scheda **[!UICONTROL General]**.
+È possibile creare un messaggio di errore da visualizzare. A tale scopo, utilizza il collegamento **[!UICONTROL Personalize the message]** nella scheda **[!UICONTROL General]** .
 
 ![](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
 >[!NOTE]
 >
->Le didascalie sono sempre lunghe 8 caratteri. Non è possibile modificare questo valore.
+>I caratteri maiuscoli sono sempre lunghi 8 caratteri. Non è possibile modificare questo valore.
 
 ## Caricamento di un file {#uploading-a-file}
 
-Potete aggiungere un campo di caricamento a una pagina. Questa funzionalità può essere utile per la condivisione di file Intranet, ad esempio.
+Puoi aggiungere un campo di caricamento a una pagina. Questa funzionalità può essere utile, ad esempio, per la condivisione di file intranet.
 
 ![](assets/s_ncs_admin_survey_download_file.png)
 
-Per inserire un campo di caricamento in una pagina del modulo, selezionate il menu **[!UICONTROL Advanced controls > File...]** nella barra degli strumenti dell&#39;Editor pagina.
+Per inserire un campo di caricamento in una pagina del modulo, seleziona il menu **[!UICONTROL Advanced controls > File...]** nella barra degli strumenti dell’Editor pagina.
 
-Per impostazione predefinita, i file caricati sono memorizzati in file di risorse accessibili tramite il menu **[!UICONTROL Resources > Online > Public resources]**. È possibile utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella [documentazione JSAPI della campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html), incluse quelle relative alla manipolazione dei file.
+Per impostazione predefinita, i file caricati vengono memorizzati in file di risorse accessibili tramite il menu **[!UICONTROL Resources > Online > Public resources]** . È possibile utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html), comprese quelle relative alla manipolazione dei file.
 
-È possibile memorizzare il collegamento a questi file in una variabile locale o in un campo del database. Ad esempio, è possibile estendere lo schema del destinatario per aggiungere un collegamento a risorse basate su file.
+È possibile memorizzare il collegamento a questi file in una variabile locale o in un campo del database. Ad esempio, puoi estendere lo schema del destinatario per aggiungere un collegamento alle risorse basate su file.
 
 >[!CAUTION]
 >
 >* Questo tipo di file deve essere riservato ai moduli con accesso protetto (utilizzando le credenziali).
->*  Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto di utilizzare i campi di caricamento solo per i siti Intranet di tipo protetto.
->* Se diversi server sono collegati all&#39;istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo Web arrivino sullo stesso server.
->* Queste implementazioni richiedono l&#39;assistenza del team  Adobe Campaign Consulting.
+>* Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto vivamente di utilizzare i campi di caricamento solo per siti Intranet di tipo protetto.
+>* Se più server sono collegati all’istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo web arrivino sullo stesso server.
+>* Queste implementazioni richiedono l’assistenza del team di consulenza Adobe Campaign.
+
 >
 
 
 
 ## Inserimento di una costante nascosta {#inserting-a-hidden-constant}
 
-Quando l&#39;utente convalida una delle pagine del modulo, è possibile impostare un valore specifico su un campo del suo profilo o su una variabile.
+Quando l’utente convalida una delle pagine del modulo, è possibile impostare un valore specifico su un campo del profilo o su una variabile.
 
 Questo campo non è visibile all’utente, ma può essere utilizzato per arricchire i dati nel profilo utente.
 
-A questo scopo, inserire una **costante** nella pagina e specificare il valore e la posizione di archiviazione.
+A questo scopo, inserisci una **costante** nella pagina e specifica il valore e il percorso di archiviazione.
 
-Nell&#39;esempio seguente, il campo **origin** del profilo del destinatario viene compilato automaticamente ogni volta che un utente approva la pagina. La costante non viene visualizzata sulla pagina.
+Nell’esempio seguente, il campo **origin** del profilo del destinatario viene compilato automaticamente ogni volta che un utente approva la pagina. La costante non viene visualizzata nella pagina.
 
 ![](assets/s_ncs_admin_survey_constante.png)
-
