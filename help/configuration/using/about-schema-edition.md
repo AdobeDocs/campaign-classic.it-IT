@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulla modifica degli schemi
 description: Guida introduttiva all’edizione dello schema
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 7%
 
 ---
-
 
 # Informazioni sulla modifica degli schemi{#about-schema-edition}
 
@@ -29,7 +27,7 @@ Per una migliore comprensione delle tabelle integrate di Campaign e della loro i
 
 Per aggiungere un campo o un indice o un altro elemento a uno degli schemi di dati principali in Campaign, ad esempio la tabella dei destinatari (nms:recipient), devi estendere tale schema. Per ulteriori informazioni, consulta la sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md) .
 
-Per aggiungere un tipo completamente nuovo di dati che non esiste preconfigurato in Adobe Campaign (ad esempio, una tabella di contratti), puoi creare direttamente uno schema personalizzato. Per ulteriori informazioni, consulta la sezione [Schemi di dati](../../configuration/using/data-schemas.md) .
+Per aggiungere un tipo completamente nuovo di dati che non esistono preconfigurati in Adobe Campaign (ad esempio, una tabella di contratti), puoi creare direttamente uno schema personalizzato. Per ulteriori informazioni, consulta la sezione [Schemi di dati](../../configuration/using/data-schemas.md) .
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -91,7 +89,7 @@ L&#39;attributo **xpath** punta al campo nello schema che desideri indicizzare.
 
 Per ulteriori informazioni sugli indici, consulta la sezione [Campi indicizzati](../../configuration/using/database-mapping.md#indexed-fields) .
 
-## Tasti {#keys}
+## Chiavi {#keys}
 
 Ogni tabella deve avere almeno una chiave e spesso viene stabilita automaticamente nell&#39;elemento principale dello schema utilizzando l&#39;attributo **@autopk=true** impostato su &quot;true&quot;.
 
@@ -136,7 +134,7 @@ L’elenco completo degli attributi è disponibile nella sezione [`<attribute>` 
 * **@xml**
 * **@type**
 
-   Per visualizzare una tabella che elenca le mappature dei tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database, consulta la sezione [Mappatura dei tipi di dati Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
+   Per visualizzare una tabella in cui sono elencate le mappature dei tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database, consulta la sezione [Mappatura dei tipi di dati Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
 
 Per ulteriori informazioni su ciascun attributo, consulta la sezione [Descrizione attributo](../../configuration/using/schema/attribute.md) .
 
@@ -225,4 +223,3 @@ Per ulteriori informazioni, consulta la sezione [Aggiornamento della struttura d
 >[!NOTE]
 >
 >Quando le modifiche non influiscono sulla struttura del database, è sufficiente rigenerare gli schemi. A questo scopo, seleziona gli schemi da aggiornare, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Actions > Regenerate selected schemas...]** . Per ulteriori informazioni, consulta la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) .
-
