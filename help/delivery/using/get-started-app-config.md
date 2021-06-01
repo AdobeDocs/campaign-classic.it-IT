@@ -1,51 +1,49 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Configurazione dell’app mobile in Adobe Campaign '
-description: Scopri come iniziare con la configurazione dell’applicazione mobile
+description: Scopri come iniziare con la configurazione dell’app mobile
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
+exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
-
 # Introduzione alla configurazione dell’app
 
-In questa sezione potete trovare un esempio di configurazione basato su una società che vende pacchetti per le vacanze online. La sua applicazione mobile (Neotrips) è disponibile ai suoi clienti in due versioni: Neotrips per Android e Neotrips per iOS.
+In questa sezione puoi trovare un esempio di configurazione basato su un’azienda che vende pacchetti vacanza online. La sua applicazione mobile (Neotrips) è disponibile ai suoi clienti in due versioni: Suggerimenti per Android e Neotrips per iOS.
 
-Per inviare le notifiche push in  Adobe Campaign, è necessario:
+Per inviare notifiche push in Adobe Campaign, devi:
 
-* Create un servizio di informazioni di tipo **[!UICONTROL Mobile application]** per l&#39;applicazione mobile Neotrips. Fare riferimento a [questa sezione per iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
-* Aggiungete al servizio le versioni iOS e Android dell&#39;applicazione.
-* Create una consegna sia per iOS che per Android. [Consulta questa pagina](../../delivery/using/creating-notifications.md).
+* Crea un servizio di informazioni di tipo **[!UICONTROL Mobile application]** per l’app mobile Neotrips. Fai riferimento a [questa sezione per iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Aggiungi al servizio le versioni iOS e Android dell&#39;applicazione.
+* Crea una consegna per iOS e Android. [Consulta questa pagina](../../delivery/using/creating-notifications.md).
 
 ![](assets/nmac_service_diagram.png)
 
 >[!NOTE]
 >
->Passate alla scheda **[!UICONTROL Subscriptions]** del servizio per visualizzare l&#39;elenco degli abbonati al servizio, ovvero tutti gli utenti che hanno installato l&#39;applicazione sul proprio dispositivo mobile e hanno accettato di ricevere le notifiche.
+>Vai alla scheda **[!UICONTROL Subscriptions]** del servizio per visualizzare l&#39;elenco degli abbonati al servizio, ovvero tutte le persone che hanno installato l&#39;applicazione sul loro cellulare e hanno accettato di ricevere notifiche.
 
 ## Installazione del pacchetto {#installing-package-ios}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto dell’app mobile in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto dell’app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
 
-In qualità di cliente ibrido/ospitato, contatta il [ Adobe Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
+In qualità di cliente ibrido/ospitato, contatta il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
 
-In qualità di cliente locale, è necessario installare un pacchetto integrato.
+In qualità di cliente on-premise, devi installare un pacchetto integrato.
 
 >[!CAUTION]
 >
->Ulteriori informazioni sui pacchetti incorporati per Campaign, sulle best practice e sui suggerimenti in [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
+>Ulteriori informazioni sui pacchetti incorporati, sulle best practice e sui consigli di Campaign in [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 I passaggi di installazione sono:
 
-1. Accedete alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Package import...]** nella console client Adobe Campaign .
+1. Accedi alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Package import...]** nella console client di Adobe Campaign.
 
    ![](assets/package_ios.png)
 
@@ -55,16 +53,16 @@ I passaggi di installazione sono:
 
    ![](assets/package_ios_2.png)
 
-1. Fate clic su **[!UICONTROL Next]**, quindi su **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
+1. Fai clic su **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
-   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
+   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** e puoi visualizzare il seguente messaggio nei log di installazione: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
 1. **[!UICONTROL Close]** la finestra di installazione.
 
-Al termine di questo passaggio, potete configurare le app Android e iOS.
-Consultare le sezioni seguenti:
+Al termine di questo passaggio, puoi configurare le app Android e iOS.
+Fai riferimento a queste sezioni:
 
 * [Passaggi di configurazione per iOS](../../delivery/using/configuring-the-mobile-application.md)
 
