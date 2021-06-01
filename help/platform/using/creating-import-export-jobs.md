@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di processi di importazione ed esportazione
 description: Scopri come creare processi di importazione ed esportazione in Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-
-# Creazione di processi di importazione ed esportazione {#creating-import-export-jobs}
+# Creare processi di importazione ed esportazione {#creating-import-export-jobs}
 
 Una volta configurati i modelli, le operazioni di importazione ed esportazione possono essere avviate in diversi contesti in Adobe Campaign.
 
