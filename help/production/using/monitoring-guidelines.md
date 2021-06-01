@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Linee guida per il monitoraggio
 description: Scopri le linee guida e le best practice per monitorare l’istanza e i processi di Campaign.
@@ -7,10 +6,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -49,9 +48,9 @@ Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanz
 
 La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. Per ulteriori informazioni, [fai clic qui](../../production/using/audit-trail.md).
 
-**Pannello di controllo Campaign**
+**Pannello di controllo**
 
-Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html).
+Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it).
 
 >[!NOTE]
 >
