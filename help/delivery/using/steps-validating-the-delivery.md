@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Convalida della consegna
 description: Convalida della consegna
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: ba50892f7b9578cface142184a287d95c0e11370
+exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# Convalida la consegna {#validating-the-delivery}
+# Convalidare la consegna {#validating-the-delivery}
 
 Quando una consegna è stata creata e configurata, devi convalidarla prima di inviarla al target principale.
 
@@ -127,7 +125,7 @@ Se una consegna è troppo grande, è meglio assegnargli una priorità bassa in m
 >
 >Per evitare che le analisi di consegna più grandi rallentino l’avanzamento dei flussi di lavoro, puoi pianificare le esecuzioni selezionando **[!UICONTROL Schedule execution for a time of low activity]**.
 
-## Invia una bozza {#sending-a-proof}
+## Inviare una bozza {#sending-a-proof}
 
 Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia vivamente di impostare un ciclo di convalida della consegna. Accertati che il contenuto sia approvato con la frequenza necessaria inviando delle prove a destinatari di test. Per approvare il contenuto, deve essere inviata una prova ogni volta che viene apportata una modifica.
 
