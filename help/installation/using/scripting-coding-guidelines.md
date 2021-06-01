@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Linee guida per lo scripting e la codifica
+title: Linee guida per scripting e codifica
 description: Ulteriori informazioni sulle linee guida da seguire nello sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.).
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# Linee guida per lo scripting e la codifica {#scripting-coding-guidelines}
+# Linee guida per scripting e codifica {#scripting-coding-guidelines}
 
 ## Scripting
 
@@ -50,7 +48,7 @@ Se esegui lo script utilizzando workflow, applicazioni web, jssp, segui queste b
    cnx.dispose()
    ```
 
-Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all’elenco Consentiti da utilizzare in Adobe Campaign. Una volta aggiunti all’elenco Consentiti, diventano visibili agli operatori nell’editor espressioni. Consulta [questa pagina](../../configuration/using/adding-additional-sql-functions.md).
+Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all&#39;elenco consentiti da utilizzare in Adobe Campaign. Una volta aggiunti all’elenco consentiti, diventano visibili agli operatori nell’editor espressioni. Consulta [questa pagina](../../configuration/using/adding-additional-sql-functions.md).
 
 >[!IMPORTANT]
 >
@@ -228,6 +226,6 @@ Per usare JSON.parse devi includere &quot;shared/json2.js&quot; nella tua webApp
 
 ![](assets/scripting-captcha6.png)
 
-A partire dalla build 8797, per utilizzare l’URL dell’API di verifica, è necessario aggiungerlo all’elenco Consentiti nel file serverConf aggiungendo nel nodo urlPermission :
+A partire dalla build 8797, per utilizzare l’URL dell’API di verifica, è necessario aggiungerlo all’elenco consentiti nel file serverConf aggiungendo nel nodo urlPermission :
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`
