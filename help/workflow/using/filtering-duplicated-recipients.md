@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filtraggio dei destinatari duplicati
 description: Scopri come filtrare i destinatari duplicati
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
 
 ---
 
-
 # Filtraggio dei destinatari duplicati {#filtering-duplicated-recipients}
 
-In questo esempio, vogliamo filtrare i destinatari che appaiono due o più volte in una consegna per recuperare i profili duplicati.
+In questo esempio, vogliamo filtrare i destinatari che vengono visualizzati due o più volte in una consegna per recuperare i profili duplicati.
 
-Per creare questo esempio, procedere come segue:
+Per creare questo esempio, esegui i seguenti passaggi:
 
-1. Trascinate e rilasciate un&#39;attività **[!UICONTROL Query]** in un flusso di lavoro e aprite l&#39;attività.
-1. Fare clic su **[!UICONTROL Edit query]** e impostare le dimensioni di destinazione e filtro su **[!UICONTROL Recipients]**.
+1. Trascina e rilascia un’attività **[!UICONTROL Query]** in un flusso di lavoro e apri l’attività.
+1. Fai clic su **[!UICONTROL Edit query]** e imposta le dimensioni di destinazione e filtro su **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. Definite la seguente condizione di filtro per il destinatario presente nel registro di consegna. Scegliete **Registro consegna destinatari (log di trasmissione)** nella colonna **Espressione**, scegliete **esiste come** nella colonna **Operatore**.
+1. Definisci la seguente condizione di filtro per indirizzare il destinatario che esiste nel registro di consegna. Scegli **Registro consegne destinatario (broadlog)** nella colonna **Espressione** , scegli **esiste come** nella colonna **Operatore** .
 
    ![](assets/query_recipients_2.png)
 
-1. Definite la seguente condizione di filtro per eseguire il targeting della consegna. Scegliete **[!UICONTROL Internal name]** nella colonna Espressione e **[!UICONTROL equal to]** nella colonna Operatore.
-1. Nella colonna Valore, aggiungete il nome interno della consegna di destinazione.
+1. Definisci la seguente condizione di filtro per eseguire il targeting della consegna. Scegli **[!UICONTROL Internal name]** nella colonna Espressione e **[!UICONTROL equal to]** nella colonna Operatore .
+1. Nella colonna del valore , aggiungi il nome interno della consegna di destinazione.
 
    ![](assets/query_recipients_3.png)
 
-1. Con un operatore **[!UICONTROL AND]**, ripetere le stesse operazioni per altre consegne.
+1. Con un operatore **[!UICONTROL AND]** , ripeti le stesse operazioni per eseguire il targeting di altre consegne.
 
    ![](assets/query_recipients_4.png)
 
-La transizione in uscita contiene i destinatari duplicati assegnati alle consegne.
+La transizione in uscita contiene i destinatari duplicati interessati nelle consegne.
