@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gestione delle risorse di marketing
 description: Gestione delle risorse di marketing
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
 
 ---
-
 
 # Gestione delle risorse di marketing{#managing-marketing-resources}
 
@@ -223,4 +221,3 @@ Da questa visualizzazione puoi aggiungere le seguenti risorse:
 * HTML
 * Testo
 * URL
-
