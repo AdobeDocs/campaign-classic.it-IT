@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introduzione alla messaggistica transazionale
 description: 'Ulteriori informazioni sul principio operativo della messaggistica transazionale Adobe Campaign Classic e sui passaggi chiave. '
@@ -7,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 6%
@@ -41,7 +40,7 @@ Le funzionalità di messaggistica transazionale sono progettate per supportare l
 
 Il modulo di messaggistica transazionale di Adobe Campaign si integra in un sistema di informazioni che restituisce gli eventi da modificare in messaggi transazionali personalizzati. Questi messaggi possono essere inviati singolarmente o in batch tramite e-mail, SMS o notifiche push.
 
-Questa funzione si basa su un’architettura specifica, in cui l’ **istanza di esecuzione** è separata dall’ **istanza di controllo**. Questa distribuzione garantisce una maggiore disponibilità e una migliore gestione del carico. Per ulteriori informazioni, consulta [Istanze di messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md).
+Questa funzione si basa su un’architettura specifica, in cui l’ **istanza di esecuzione** è separata dall’ **istanza di controllo**. Questa distribuzione garantisce una maggiore disponibilità e una migliore gestione del carico. Per ulteriori informazioni, consulta [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
@@ -82,8 +81,8 @@ Nell&#39; **istanza di controllo** è necessario eseguire le azioni seguenti:
 
 Una volta progettato e pubblicato il modello di messaggio transazionale, se viene attivato un evento corrispondente, i passaggi principali seguenti vengono eseguiti sull&#39; **istanza di esecuzione**:
 
-1. Quando l’evento viene generato dal sistema di informazioni esterno, i dati pertinenti vengono inviati a Campaign tramite i metodi **PushEvent** e **PushEvents** . Vedere [Raccolta eventi](#event-collection).
-1. L’evento è collegato al modello di messaggio appropriato. Vedere [Instradamento verso un modello](#routing-towards-a-template).
+1. Quando l’evento viene generato dal sistema di informazioni esterno, i dati pertinenti vengono inviati a Campaign tramite i metodi **PushEvent** e **PushEvents** . Vedere [Raccolta eventi](../../message-center/using/about-event-processing.md#event-collection).
+1. L’evento è collegato al modello di messaggio appropriato. Vedere [Instradamento verso un modello](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. Una volta completata la fase di arricchimento, la consegna viene inviata. Consulta [Esecuzione della consegna](../../message-center/using/delivery-execution.md). Ogni destinatario con targeting riceve un messaggio personalizzato.
 
 ## Argomenti correlati {#related-topics}
@@ -91,4 +90,4 @@ Una volta progettato e pubblicato il modello di messaggio transazionale, se vien
 * [Guida introduttiva ai canali di comunicazione](../../delivery/using/communication-channels.md)
 * [Passaggi chiave per la creazione di consegne](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md)
-* [Informazioni sui rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)
+* [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)
