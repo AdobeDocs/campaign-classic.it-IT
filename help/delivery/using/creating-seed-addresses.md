@@ -1,63 +1,61 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di indirizzi di seed
-description: Scopri come creare e utilizzare gli indirizzi di base
+description: Scopri come creare e utilizzare gli indirizzi di seed
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
 
 ---
 
-
 # Creazione di indirizzi di seed{#creating-seed-addresses}
 
-Gli indirizzi dei semi non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia di Adobe Campaign  **[!UICONTROL Resources > Campaign management > Seed addresses]**.
+Gli indirizzi di seed non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Potete creare sottocartelle per organizzare gli indirizzi iniziali. A tal fine, fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL Seed addresses]** e selezionare **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** per eseguire la convalida. È ora possibile creare o copiare gli indirizzi iniziali in questa sottocartella. Per ulteriori informazioni, vedere [Definizione degli indirizzi](#defining-addresses).
+Puoi creare sottocartelle per organizzare gli indirizzi di seed. A questo scopo, fai clic con il pulsante destro del mouse sul nodo **[!UICONTROL Seed addresses]** e seleziona **[!UICONTROL Create a new 'Seed addresses' folder]**. Denomina la sottocartella e premi **[!UICONTROL Enter]** per eseguire la convalida. Ora puoi creare o copiare gli indirizzi di seed in questa sottocartella. Per ulteriori informazioni, consulta [Definizione degli indirizzi](#defining-addresses).
 
- Adobe Campaign consente inoltre di creare modelli di indirizzi di base che vengono importati nelle consegne o nelle campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fare riferimento a [Creazione di modelli di indirizzi iniziali](#creating-seed-address-templates).
+Adobe Campaign consente inoltre di creare modelli di indirizzi di seed importati in consegne o campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fai riferimento a [Creazione di modelli di indirizzi di seed](#creating-seed-address-templates).
 
 ## Definizione degli indirizzi {#defining-addresses}
 
-Per creare indirizzi iniziali, effettuate le seguenti operazioni:
+Per creare indirizzi di seed, segui i passaggi seguenti:
 
-1. Fare clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco degli indirizzi iniziali.
-1. Immettere i dati collegati all&#39;indirizzo nei campi corrispondenti dalla scheda **[!UICONTROL Recipient]**. I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (tabella nms:destinatario): nome, nome, e-mail, ecc.
+1. Fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco degli indirizzi di seed.
+1. Immetti i dati collegati all’indirizzo nei campi corrispondenti dalla scheda **[!UICONTROL Recipient]** . I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (tabella nms:recipient): nome, nome, e-mail, ecc.
 
    >[!NOTE]
    >
-   >L’etichetta dell’indirizzo viene compilata automaticamente con il cognome e il nome definiti dall’utente.
+   >L’etichetta dell’indirizzo viene automaticamente compilata con il cognome e il nome definiti.
    >
-   >Non è necessario immettere tutti i campi di ciascuna scheda al momento della creazione di un indirizzo seed. Eventuali elementi di personalizzazione mancanti vengono inseriti in modo casuale durante la distribuzione.
+   >Non è necessario inserire tutti i campi di ciascuna scheda durante la creazione di un indirizzo di seed. Eventuali elementi di personalizzazione mancanti vengono inseriti in modo casuale durante la distribuzione.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. Nella scheda **[!UICONTROL Seed fields]** immettere i valori che verranno inseriti nei registri di consegna durante la fase di analisi (nella tabella **[!UICONTROL nms:broadLog]**).
+1. Nella scheda **[!UICONTROL Seed fields]** , immetti i valori che verranno inseriti nei registri di consegna durante la fase di analisi (nella tabella **[!UICONTROL nms:broadLog]** ).
 
-1. Nella scheda **[!UICONTROL Additional data]**, immetti i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dei dati a cui vuoi assegnare un valore specifico.
+1. Nella scheda **[!UICONTROL Additional data]** , inserisci i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dei dati a cui desideri assegnare un valore specifico.
 
    >[!NOTE]
    >
-   >Accertatevi che siano stati definiti dati di destinazione aggiuntivi con un alias che inizia con &#39;@&#39; nell&#39;attività **[!UICONTROL Enrichment]**. In caso contrario, non potrai utilizzarli correttamente con i tuoi indirizzi iniziali nell&#39;attività di consegna.
+   >Assicurati che i dati di destinazione aggiuntivi siano stati definiti con un alias che inizia con &#39;@&#39; nell&#39;attività **[!UICONTROL Enrichment]**. In caso contrario, non potrai utilizzarli correttamente con gli indirizzi di seed nell’attività di consegna.
 
-## Creazione di modelli di indirizzi iniziali {#creating-seed-address-templates}
+## Creazione di modelli di indirizzi di seed {#creating-seed-address-templates}
 
-Per creare modelli di indirizzi che verranno importati e che potranno essere modificati per ogni consegna, il processo è lo stesso di quando si definisce un nuovo indirizzo. L&#39;unica differenza è che gli indirizzi dei modelli di indirizzi iniziali devono essere memorizzati in una cartella di tipo &#39;Modello&#39;.
+Per creare modelli di indirizzi da importare e modificare per ogni consegna, il processo è lo stesso di quando si definisce un nuovo indirizzo di seed. L’unica differenza consiste nel fatto che gli indirizzi dei modelli di indirizzo di seed devono essere memorizzati in una cartella di tipo &quot;Modello&quot;.
 
-Per definire una cartella di modelli, effettuate le seguenti operazioni:
+Per definire una cartella di modelli, applicare il seguente processo:
 
-1. Create una nuova cartella di tipo **[!UICONTROL Seed addresses]**, fate clic con il pulsante destro del mouse sulla cartella e selezionate **[!UICONTROL Properties...]**.
+1. Crea una nuova cartella di tipo **[!UICONTROL Seed addresses]**, fai clic con il pulsante destro del mouse sulla cartella e seleziona **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_seedlist_template_folder.png)
 
-1. Fare clic sulla scheda **[!UICONTROL Restriction]** e aggiungere la seguente condizione di filtro: **@isModel = true**.
+1. Fai clic sulla scheda **[!UICONTROL Restriction]** e aggiungi la seguente condizione di filtro: **@isModel = true**.
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Gli indirizzi memorizzati in questa cartella possono ora essere utilizzati come modelli di indirizzo. È possibile importarli nelle consegne o nelle campagne e adattarli in base alle esigenze specifiche delle consegne e delle campagne interessate (vedere [Aggiunta di indirizzi iniziali](../../delivery/using/adding-seed-addresses.md)).
+   Gli indirizzi memorizzati in questa cartella possono ora essere utilizzati come modelli di indirizzo. Puoi importarli in consegne o campagne e adattarli in base alle esigenze specifiche delle consegne e delle campagne interessate (consulta [Aggiunta di indirizzi di seed](../../delivery/using/adding-seed-addresses.md)).
