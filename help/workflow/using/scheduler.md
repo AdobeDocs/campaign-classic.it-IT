@@ -1,51 +1,49 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Scheduler
-description: Ulteriori informazioni sull'attività del flusso di lavoro dell'Utilità di pianificazione
+title: Attività Scheduler
+description: Ulteriori informazioni sull’attività del flusso di lavoro Scheduler
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 10%
 
 ---
 
+# Attività Scheduler {#scheduler}
 
-# Scheduler {#scheduler}
-
-**Scheduler** è un&#39;attività persistente che attiva la transizione nei momenti specificati dalla pianificazione.
+Il **Scheduler** è un&#39;attività persistente che attiva la relativa transizione nei momenti specificati dalla relativa pianificazione.
 
 Dovresti considerare l’attività **[!UICONTROL Scheduler]** come un inizio pianificato. Le regole di posizionamento dell’attività all’interno del grafico sono le stesse dell’attività **[!UICONTROL Start]**. Questa attività non deve avere una transizione in entrata.
 
 ## Best practice {#best-practices}
 
-* Non pianificare l&#39;esecuzione di un flusso di lavoro per più di 15 minuti, in quanto potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
+* Non pianificare l’esecuzione di un flusso di lavoro per più di 15 minuti in quanto potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
 
-* Non utilizzare mai più di un&#39;attività **[!UICONTROL Scheduler]** per ramo in un flusso di lavoro. Vedere [Utilizzo di attività](../../workflow/using/workflow-best-practices.md#using-activities).
+* Non utilizzare mai più di un’attività **[!UICONTROL Scheduler]** per ramo in un flusso di lavoro. Consulta [Utilizzo di attività](../../workflow/using/workflow-best-practices.md#using-activities).
 
-* L&#39;utilizzo di un&#39;attività del pianificatore potrebbe causare l&#39;esecuzione simultanea di diverse esecuzioni di un flusso di lavoro. Ad esempio, è possibile avere un pianificatore che attiva l&#39;esecuzione del flusso di lavoro ogni ora, ma a volte l&#39;esecuzione dell&#39;intero flusso di lavoro richiede più di un&#39;ora.
+* L’utilizzo di un’attività di pianificazione può causare l’esecuzione simultanea di diverse esecuzioni di un flusso di lavoro. Ad esempio, puoi avere una pianificazione che attiva l’esecuzione del flusso di lavoro ogni ora, ma a volte l’esecuzione dell’intero flusso di lavoro richiede più di un’ora.
 
-   È possibile saltare l&#39;esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come impedire l&#39;esecuzione simultanea di un flusso di lavoro, vedere [questa pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+   Puoi saltare l’esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come evitare esecuzioni simultanee di un flusso di lavoro, consulta [questa pagina](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* La transizione può essere attivata diverse ore dopo se il flusso di lavoro esegue un&#39;attività a lungo termine, ad esempio un&#39;importazione, o se il modulo wfserver è stato arrestato per un periodo di tempo. In questo caso, potrebbe essere necessario limitare l&#39;esecuzione dell&#39;attività attivata dal pianificatore a un determinato intervallo di tempo.
+* Tieni presente che la transizione può essere attivata diverse ore dopo se il flusso di lavoro esegue un’attività a lungo termine, ad esempio un’importazione, o se il modulo wfserver è stato arrestato per un periodo di tempo. In questo caso, potrebbe essere necessario limitare l&#39;esecuzione dell&#39;attività attivata dal programmatore a un determinato intervallo di tempo.
 
-## Configurazione dell&#39;attività dell&#39;utilità di pianificazione {#configuring-scheduler-activity}
+## Configurazione dell’attività Scheduler {#configuring-scheduler-activity}
 
-Il pianificatore definisce la pianificazione di attivazione della transizione. Per configurarlo, fare doppio clic sull&#39;oggetto grafico, quindi fare clic su **[!UICONTROL Change...]**
+La pianificazione definisce la pianificazione di attivazione della transizione. Per configurarlo, fai doppio clic sull’oggetto grafico, quindi fai clic su **[!UICONTROL Change...]**
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-Una procedura guidata consente di definire la frequenza e il periodo di validità dell&#39;attività. I passaggi di configurazione sono i seguenti:
+Una procedura guidata consente di definire la frequenza e il periodo di validità dell’attività. I passaggi di configurazione sono i seguenti:
 
-1. Selezionate la frequenza di attivazione e fate clic su **[!UICONTROL Next]**.
+1. Seleziona la frequenza di attivazione e fai clic su **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Indicate i tempi e i giorni di attivazione. I parametri di questo passaggio dipendono dalla frequenza selezionata nel passaggio precedente. Se scegliete di avviare l&#39;attività più volte al giorno, le opzioni di configurazione saranno le seguenti:
+1. Assegna tempi e giorni di attivazione. I parametri di questo passaggio dipendono dalla frequenza selezionata nel passaggio precedente. Se scegli di avviare l’attività diverse volte al giorno, le opzioni di configurazione saranno le seguenti:
 
    ![](assets/s_user_segmentation_scheduler3.png)
 
@@ -53,6 +51,6 @@ Una procedura guidata consente di definire la frequenza e il periodo di validit�
 
    ![](assets/s_user_segmentation_scheduler4.png)
 
-1. Controllare la configurazione e fare clic su **[!UICONTROL Finish]** per salvare.
+1. Controlla la configurazione e fai clic su **[!UICONTROL Finish]** per salvare.
 
    ![](assets/s_user_segmentation_scheduler5.png)
