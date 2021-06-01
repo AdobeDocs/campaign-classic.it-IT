@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Canale app mobile
 description: Canale app mobile
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 18%
@@ -17,7 +15,7 @@ ht-degree: 18%
 
 # Canale app mobile{#mobile-app-channel}
 
-Il flusso di lavoro riportato di seguito viene installato con il modulo **Mobile App Channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../delivery/using/about-mobile-app-channel.md).
+Il flusso di lavoro descritto di seguito è installato con il modulo **Canale app mobile** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 
@@ -27,9 +25,9 @@ Il flusso di lavoro riportato di seguito viene installato con il modulo **Mobile
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Gestione del rifiuto NMAC</span> <br /> </td> 
+   <td> <span class="uicontrol">Gestione delle rinunce NMAC</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna le sottoscrizioni di notifica sui dispositivi mobili. Viene attivato ogni 6 ore tra l’una e la mezzanotte. Per ulteriori dettagli, fare riferimento a questa sezione <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">sezione</a>.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna le sottoscrizioni di notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta questa <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">sezione</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
