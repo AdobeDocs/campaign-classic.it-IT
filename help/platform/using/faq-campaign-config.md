@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Domande frequenti sulle impostazioni di Campaign
 description: Domande frequenti su Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
-
 
 # Domande frequenti sulle impostazioni di Campaign {#settings-faq}
 
@@ -41,7 +39,7 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza al fine di massimizzare le funzionalità di consegna di Campaign.
+Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza al fine di massimizzare le funzionalità di consegna di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 
