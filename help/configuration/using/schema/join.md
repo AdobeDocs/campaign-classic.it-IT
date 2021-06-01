@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
 
 ---
 
-
 # elemento join {#join--element}
 
-## Modello di contenuto {#content-model-7}
+## Modello dei contenuti {#content-model-7}
 
 join:==EMPTY
 
@@ -31,33 +29,33 @@ join:==EMPTY
 
 `<element>`
 
-## Bambini {#children-7}
+## Figli {#children-7}
 
-None
+Nessuno
 
 ## Descrizione {#description-7}
 
 Consente di definire i campi che creano un join tra tabelle SQL.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-5}
+## Uso e contesto di utilizzo {#use-and-context-of-use-5}
 
-Un elemento `<join>` può essere utilizzato solo se l&#39;elemento `<element>` principale è di tipo &#39;link&#39;. Ciò significa che l&#39;elemento padre deve avere dichiarato l&#39;attributo &quot;@type=link&quot;.
+È possibile utilizzare un elemento `<join>` solo se l’elemento principale `<element>` è di tipo &quot;link&quot;. Ciò significa che l’attributo &quot;@type=link&quot; deve essere dichiarato per l’elemento padre.
 
-Non è necessario specificare il nome e lo spazio dei nomi della tabella remota nell&#39;elemento `<join>`. Devono essere specificati nella `<element>` padre.
+Non è necessario specificare il nome e lo spazio dei nomi della tabella remota nell&#39;elemento `<join>`. È necessario specificarli nell&#39;elemento padre `<element>`.
 
 Per convenzione, i collegamenti sono definiti alla fine dello schema.
 
-Se l&#39;elemento `<join>` non viene specificato quando l&#39;elemento del tipo di collegamento è definito, il collegamento viene posizionato automaticamente sulle chiavi primarie di entrambe le tabelle.
+Se l’elemento `<join>` non è specificato quando è definito l’elemento del tipo di collegamento, il collegamento verrà posizionato automaticamente sulle chiavi primarie di entrambe le tabelle.
 
-## Descrizione attributo {#attribute-description-7}
+## Descrizione dell&#39;attributo {#attribute-description-7}
 
 * **dstFilterExpr (stringa)**: questo attributo consente di limitare il numero di valori idonei nella tabella remota.
-* **xpath-dst (stringa)**: questo attributo riceve un attributo Xpath (@name attributo della tabella remota).
-* **xpath-src (stringa)**: questo attributo riceve un attributo Xpath (@name nello schema corrente).
+* **xpath-dst (stringa)**: questo attributo riceve un attributo Xpath (@name attribute of the remote table).
+* **xpath-src (stringa)**: questo attributo riceve un attributo Xpath (@name attribute nello schema corrente).
 
 ## Esempi {#examples-6}
 
-Collegamento tra il campo &#39;email&#39; della tabella corrente e il campo &quot;@anima-id&quot; della tabella remota:
+Collegamento tra il campo &quot;email&quot; della tabella corrente e il campo &quot;@interlocuty-id&quot; della tabella remota:
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
