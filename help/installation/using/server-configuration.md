@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione della sicurezza del server
 description: Ulteriori informazioni sulle best practice per la configurazione del server
@@ -7,11 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -28,7 +26,7 @@ Controlla con gli utenti operativi che tipo di file caricano sul server utilizza
 * ETL (txt, csv, tab, ...)
 * ecc.
 
-Aggiungi tutti in serverConf/shared/datastore/@uploadAllowlist (espressione regolare java valida). Ulteriori informazioni in [questa pagina](../../installation/using/file-res-management.md).
+Aggiungi tutti in serverConf/shared/datastore/@uploadAllowlist (espressione regolare java valida). Per ulteriori informazioni, consulta [questa pagina](../../installation/using/file-res-management.md).
 
 Adobe Campaign non limita la dimensione del file. Ma è possibile farlo configurando IIS/Apache. Ulteriori informazioni in [questa sezione](../../installation/using/web-server-configuration.md).
 
