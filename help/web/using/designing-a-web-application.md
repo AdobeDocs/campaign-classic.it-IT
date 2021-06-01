@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Progettazione di un’applicazione web
 description: Progettazione di un’applicazione web
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Progettazione di un&#39;applicazione web{#designing-a-web-application}
+# Progettare un’applicazione web{#designing-a-web-application}
 
 Le applicazioni web vengono create e gestite in base allo stesso principio dei [sondaggi online](../../web/using/about-surveys.md).
 
