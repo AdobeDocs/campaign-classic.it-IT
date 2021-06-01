@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
 
 ---
 
+# elemento parametri {#parameters--element}
 
-# parametro {#parameters--element}
+## Modello dei contenuti {#content-model-13}
 
-## Modello di contenuto {#content-model-13}
-
-parametri:==param
+parameters:==param
 
 ## Attributi {#attributes-13}
 
-None
+Nessuno
 
 ## Genitori {#parents-13}
 
 `<method>`
 
-## Bambini {#children-13}
+## Figli {#children-13}
 
 `<param>`
 
@@ -37,13 +35,13 @@ None
 
 Questo elemento definisce un gruppo di elementi `<parameter>`.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-8}
+## Uso e contesto di utilizzo {#use-and-context-of-use-8}
 
-Questo elemento è obbligatorio, anche per un singolo elemento secondario `<param>` dell&#39;elemento `<method>`.
+Questo elemento è obbligatorio, anche per un singolo elemento `<param>` figlio dell’elemento `<method>`.
 
-## Descrizione attributo {#attribute-description-13}
+## Descrizione dell&#39;attributo {#attribute-description-13}
 
-None
+Nessuno
 
 ## Esempi {#examples-10}
 
