@@ -1,68 +1,66 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Come configurare collegamenti tracciati
-description: Come configurare collegamenti tracciati
+title: Come configurare i collegamenti tracciati
+description: Come configurare i collegamenti tracciati
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
-
-# Come configurare collegamenti tracciati{#how-to-configure-tracked-links}
+# Come configurare i collegamenti tracciati{#how-to-configure-tracked-links}
 
 Per ogni consegna, puoi tracciare la ricezione dei messaggi e l’attivazione dei collegamenti inseriti nel contenuto del messaggio. In questo modo puoi tracciare il comportamento dei destinatari in seguito alle azioni di consegna per le quali sono stati oggetto di targeting.
 
-Il tracciamento si applica ai messaggi, ma il tracciamento Web consente di monitorare il modo in cui i destinatari sfogliano un sito Web (pagine visitate, acquisti). La configurazione del tracciamento Web viene presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
+Il tracciamento si applica ai messaggi, ma il web tracking consente di monitorare il modo in cui i destinatari navigano in un sito web (pagine visitate, acquisti). La configurazione del tracciamento web è descritta in [questa sezione](../../configuration/using/about-web-tracking.md).
 
 >[!NOTE]
 >
->I collegamenti nel contenuto dell&#39;e-mail che contengono la personalizzazione richiedono il tracciamento di una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consultare [questa sezione](../../delivery/using/tracking-personalized-links.md).
+>I collegamenti nel contenuto delle e-mail che contengono personalizzazioni devono essere tracciati con una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consulta [questa sezione](../../delivery/using/tracking-personalized-links.md).
 
 
 
 
-Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettuate le seguenti operazioni:
+Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettua le seguenti operazioni:
 
-1. Selezionate l&#39;opzione **[!UICONTROL Display URLs]** nella sezione inferiore della procedura guidata di consegna, sotto il contenuto del messaggio.
+1. Seleziona l’opzione **[!UICONTROL Display URLs]** nella sezione inferiore della procedura guidata di consegna, sotto il contenuto del messaggio.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
-   Quando selezionate un URL dall’elenco degli URL tracciati, questo viene evidenziato nel contenuto della distribuzione, ad eccezione del collegamento nella pagina mirror e del collegamento di annullamento dell’iscrizione fornito per impostazione predefinita.
+   Quando selezioni un URL dall’elenco degli URL tracciati, questo viene evidenziato nel contenuto della consegna, ad eccezione del collegamento nella pagina speculare e del collegamento di annullamento all’abbonamento fornito per impostazione predefinita.
 
    ![](assets/s_ncs_user_email_del_show_urls.png)
 
-1. Per ciascun URL del messaggio, seleziona se attivare o meno il tracciamento.
+1. Per ogni URL del messaggio, seleziona se attivare o meno il tracciamento.
 
    >[!IMPORTANT]
    >
    >Quando l’URL del collegamento viene utilizzato come etichetta, si consiglia di disattivare il tracciamento per evitare i rischi di rifiuto dovuti al phishing.
    >
-   >Ad esempio, se l’URL www.adobe.com viene inserito nel messaggio e vi viene attivato il tracciamento, il contenuto del collegamento ipertestuale viene modificato in https://nlt.adobe.net/r/?id=xxxxxx. Ciò significa che potrebbe essere considerato fraudolento dai client di messaggi dei destinatari.
+   >Ad esempio, se l’URL www.adobe.com viene inserito nel messaggio e viene attivato il tracciamento, il contenuto del collegamento ipertestuale verrà modificato in https://nlt.adobe.net/r/?id=xxxxxx. Ciò significa che potrebbe essere considerato fraudolento dai client di messaggi dei destinatari.
 
-1. Se necessario, modificate l’etichetta di tracciamento, fate doppio clic sull’etichetta e immettetene una nuova.
+1. Se necessario, modifica l’etichetta di tracciamento, fai doppio clic sull’etichetta e immetti una nuova.
 
    >[!NOTE]
    >
-   >Le etichette degli URL tracciati e delle etichette possono essere modificate per semplificare la lettura delle informazioni durante il tracciamento delle consegne. Nel calcolo del numero di clic verranno aggiunti due URL o due etichette con lo stesso nome.
+   >Le etichette degli URL tracciati e delle etichette possono essere modificate per semplificare la lettura delle informazioni durante il tracciamento delle consegne. Nel calcolo del numero di clic verranno aggiunti insieme due URL o due etichette con lo stesso nome.
 
-1. Se necessario, modificate la modalità di tracciamento, selezionate una nuova modalità nella colonna **[!UICONTROL Tracking]** che corrisponda al collegamento di destinazione, come illustrato di seguito:
+1. Se necessario, modifica la modalità di tracciamento, seleziona una nuova modalità nella colonna **[!UICONTROL Tracking]** che corrisponda al collegamento di destinazione, come illustrato di seguito:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
-   Per ciascun URL, potete impostare la modalità di tracciamento su uno dei seguenti valori:
+   Per ogni singolo URL, puoi impostare la modalità di tracciamento su uno dei seguenti valori:
 
    * **[!UICONTROL Enabled]** : attiva il tracciamento su questo URL.
-   * **[!UICONTROL Not tracked]** : disattiva il tracciamento di questo URL.
-   * **[!UICONTROL Always enabled]** : attiva sempre il tracciamento di questo URL. Queste informazioni vengono salvate in modo che la prossima volta, se l’URL viene nuovamente visualizzato in un contenuto messaggio futuro, il tracciamento verrà attivato automaticamente.
-   * **[!UICONTROL Never tracked]** : non attiva mai il tracciamento di questo URL. Queste informazioni vengono salvate in modo che la prossima volta, se l’URL viene nuovamente visualizzato in un messaggio futuro, il tracciamento venga disattivato automaticamente.
-   * **[!UICONTROL Opt-out]** : considera questo URL come un URL di rinuncia o di annullamento dell’iscrizione.
-   * **[!UICONTROL Mirror page]** : considera questo URL come un URL della pagina mirror.
+   * **[!UICONTROL Not tracked]** : disattiva il tracciamento su questo URL.
+   * **[!UICONTROL Always enabled]** : attiva sempre il tracciamento di questo URL. Queste informazioni vengono salvate in modo che la prossima volta, se l’URL viene visualizzato nuovamente in un contenuto di messaggio futuro, il relativo tracciamento venga attivato automaticamente.
+   * **[!UICONTROL Never tracked]** : non attiva mai il tracciamento di questo URL. Queste informazioni vengono salvate in modo che la prossima volta, se l’URL viene visualizzato di nuovo in un messaggio futuro, il relativo tracciamento venga disattivato automaticamente.
+   * **[!UICONTROL Opt-out]** : considera questo URL come un URL di rinuncia o di annullamento dell’abbonamento.
+   * **[!UICONTROL Mirror page]** : considera questo URL come un URL della pagina speculare.
 
-1. Inoltre, potete selezionare una categoria per ciascun URL tracciato nell&#39;elenco a discesa della colonna **[!UICONTROL Category]**. Queste categorie possono essere visualizzate come ad esempio in **[!UICONTROL URLs and click streams]** (vedere [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un&#39;enumerazione specifica: **[!UICONTROL urlCategory]** (vedere [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
+1. Inoltre, puoi selezionare una categoria per ogni URL tracciato nell’elenco a discesa della colonna **[!UICONTROL Category]** . Queste categorie possono essere visualizzate come ad esempio in **[!UICONTROL URLs and click streams]** (consulta [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un’enumerazione specifica: **[!UICONTROL urlCategory]** (consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
