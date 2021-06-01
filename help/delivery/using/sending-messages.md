@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Invio di un’e-mail con Adobe Campaign Classic
 description: Scopri come confermare la consegna di un’e-mail e scoprire le specificità della consegna di messaggi e-mail.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
-source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
+exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-
-# Passaggi principali per inviare un messaggio e-mail {#confirming-email-delivery}
+# Passaggi principali per l’invio di un’e-mail {#confirming-email-delivery}
 
 Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Questa sezione presenta i passaggi principali per controllare e confermare la consegna di un’e-mail.
 
