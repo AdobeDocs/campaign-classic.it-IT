@@ -1,34 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Salto (punto iniziale e punto finale)
-description: Salto (punto iniziale e punto finale)
+title: Oggetti Jump (punto iniziale e punto finale)
+description: Oggetti Jump (punto iniziale e punto finale)
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
 
 ---
 
+# Oggetti Jump (punto iniziale e punto finale){#jump-start-point-and-end-point}
 
-# Salto (punto iniziale e punto finale){#jump-start-point-and-end-point}
+**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di quello con transizioni di attraversamento.
 
-**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di uno con transizioni di attraversamento.
+I salti sono transizioni senza frecce.
 
-Gli jump sono transizioni senza frecce.
-
-Passano da un&#39;attività all&#39;altra, come nell&#39;esempio seguente:
+Passano da un’attività all’altra, come nell’esempio seguente:
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
-Per ogni transizione di tipo &quot;punto iniziale&quot;, deve essere inserita una transizione di tipo &quot;punto finale&quot;.
+Per ogni transizione di tipo &quot;punto iniziale&quot;, deve essere posizionata una transizione di tipo &quot;punto finale&quot;.
 
-Potete inserire diversi ponti di inizio e fine nello stesso flusso di lavoro. Sono identificati da un numero che deve essere immesso nei parametri:
+È possibile inserire diversi ponticelli di punto iniziale e punto finale nello stesso flusso di lavoro. Sono identificati da un numero che deve essere inserito nei parametri:
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Vedere [Gestione delle immagini dell&#39;attività](../../workflow/using/managing-activity-images.md).
+Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Consulta [Gestione delle immagini delle attività](../../workflow/using/managing-activity-images.md).
