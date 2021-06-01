@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 8%
 
 ---
 
-
 # elemento stringa di calcolo {#compute-string--element}
 
-## Modello di contenuto {#content-model-1}
+## Modello dei contenuti {#content-model-1}
 
 compute-string:==EMPTY
 
@@ -29,19 +27,19 @@ compute-string:==EMPTY
 
 `<element>`
 
-## Bambini {#children-1}
+## Figli {#children-1}
 
-None
+Nessuno
 
 ## Descrizione {#description-1}
 
-L&#39;elemento `<compute-string>` consente di generare una stringa basata su un&#39;espressione XTK per visualizzare un&#39;etichetta &quot;predefinita&quot; nell&#39;interfaccia in base a diversi valori.
+L’elemento `<compute-string>` consente di generare una stringa basata su un’espressione XTK per visualizzare un’etichetta &quot;generata&quot; nell’interfaccia in base a diversi valori.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-1}
+## Uso e contesto di utilizzo {#use-and-context-of-use-1}
 
-Se non è definito alcun elemento `<compute-string>`, per impostazione predefinita viene immesso un elemento `<compute-string>` con i valori della chiave primaria nello schema.
+Quando non viene definito alcun elemento `<compute-string>`, per impostazione predefinita viene inserito un elemento `<compute-string>` con i valori della chiave primaria nello schema.
 
-## Descrizione attributo {#attribute-description-1}
+## Descrizione dell&#39;attributo {#attribute-description-1}
 
 * **expr (stringa)**: Espressione XTK e/o Xpath
 
