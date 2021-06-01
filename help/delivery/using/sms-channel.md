@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Guida introduttiva al canale SMS
 description: Guida introduttiva al canale SMS
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # Guida introduttiva al canale SMS{#sms-channel}
 
@@ -43,4 +41,3 @@ Per informazioni globali su come creare una consegna, consulta [questa sezione](
 >Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite l&#39;opzione **Adobe Campaign Mobile App Channel (NMAC)**.
 > 
 >Per ulteriori informazioni, consulta la sezione [Introduzione al canale app mobile](../../delivery/using/about-mobile-app-channel.md) .
-
