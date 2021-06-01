@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Guida introduttiva a protezione e privacy
+title: Introduzione a sicurezza e privacy
 description: Ulteriori informazioni sugli elementi chiave da verificare in materia di sicurezza e privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
+exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
-
-# Guida introduttiva a protezione e privacy {#get-started-security-privacy}
+# Introduzione a sicurezza e privacy {#get-started-security-privacy}
 
 Questa sezione ti presenta gli elementi chiave da verificare in materia di sicurezza e privacy. Alcune configurazioni possono essere eseguite solo dai clienti on-premise.
 
@@ -44,7 +42,7 @@ La gestione degli accessi è una parte importante dell&#39;irrigidimento della s
 
 [Leggi tutto](../../installation/using/access-management.md)
 
-## Linee guida per lo scripting e la codifica
+## Linee guida per scripting e codifica
 
 <img src="assets/do-not-localize/icon_scripting.svg" width="60px">
 
