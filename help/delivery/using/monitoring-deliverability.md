@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Monitoraggio del recapito messaggi in Adobe Campaign Classic
 description: Scopri gli strumenti e le linee guida sul monitoraggio del recapito messaggi in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
+exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
 
 ---
 
-
-# Monitoraggio della consegna messaggi{#monitoring-deliverability}
+# Monitoraggio del recapito messaggi{#monitoring-deliverability}
 
 Di seguito sono riportati i dettagli sui diversi strumenti di monitoraggio forniti da Adobe Campaign, nonché alcune linee guida aggiuntive sull’utilizzo delle funzionalità offerte da Adobe Campaign per monitorare il recapito messaggi della piattaforma.
 
