@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -85,7 +85,7 @@ La **Cronologia eventi**, in **[!UICONTROL Message Center]** > **[!UICONTROL Eve
    * Un evento che è appena stato raccolto e che non è ancora stato elaborato. La colonna **[!UICONTROL Number of errors]** mostra il valore 0. Il modello e-mail non è ancora stato collegato.
    * Un evento elaborato ma la cui conferma è errata. La colonna **[!UICONTROL Number of errors]** mostra un valore diverso da 0. Per sapere quando verrà elaborato di nuovo questo evento, consulta la colonna **[!UICONTROL Process requested on]** .
 
-* **Consegna** in sospeso: L’evento è stato elaborato e il modello di consegna è collegato. L’e-mail è in attesa di consegna e viene applicato il processo di consegna classico . Per ulteriori informazioni, puoi aprire la [consegna](../../delivery/using/about-message-tracking.md).
+* **Consegna** in sospeso: L’evento è stato elaborato e il modello di consegna è collegato. L’e-mail è in attesa di consegna e viene applicato il processo di consegna classico . Per ulteriori informazioni, puoi aprire la consegna.
 * **Inviato**,  **** ignorato ed errore  **di consegna**: Questi stati di consegna vengono recuperati tramite il flusso di lavoro  **** updateEventsStatusworkflow. Per ulteriori informazioni, puoi aprire la consegna pertinente.
 * **Evento non trattato**: La fase di indirizzamento della messaggistica transazionale non è riuscita. Ad esempio, Adobe Campaign non ha trovato l’e-mail che funge da modello per l’evento.
 * **Evento scaduto**: È stato raggiunto il numero massimo di tentativi di invio. L&#39;evento è considerato nullo.
