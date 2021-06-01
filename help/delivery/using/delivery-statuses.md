@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Stati di consegna
 description: Ulteriori informazioni sugli stati disponibili nel dashboard di consegna.
@@ -7,8 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -30,7 +28,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
 **Argomenti correlati:**
 
 * [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
-* [Risoluzione dei problemi relativi alle consegne](../../delivery/using/delivery-troubleshooting.md)
+* [Risoluzione dei problemi nelle consegne](../../delivery/using/delivery-troubleshooting.md)
 * [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
 
 ## Elenco degli stati di consegna {#list-delivery-statuses}
