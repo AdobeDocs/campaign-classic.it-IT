@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Pubblico di destinazione della campagna di marketing
 description: Scopri come definire il pubblico delle campagne di marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Selezionare il pubblico delle campagne {#marketing-campaign-deliveries}
 
@@ -55,7 +53,7 @@ Il targeting può essere creato tramite una combinazione di condizioni di filtro
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-La popolazione target viene estratta dal database di Adobe Campaign tramite una o più query inserite in un flusso di lavoro. Per informazioni su come generare una query, consulta [questa sezione](../../workflow/using/query.md).
+La popolazione target viene estratta dal database Adobe Campaign tramite una o più query inserite in un flusso di lavoro. Per informazioni su come generare una query, consulta [questa sezione](../../workflow/using/query.md).
 
 Puoi avviare query e condividere popolazioni tramite caselle quali Unione, Intersezione, Condivisione, Esclusione, ecc.
 
@@ -235,7 +233,7 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 >[!NOTE]
 >
->L’editor delle query di Adobe Campaign è presentato in [questa sezione](../../workflow/using/query.md).
+>L&#39;editor delle query Adobe Campaign è presentato in [questa sezione](../../workflow/using/query.md).
 
 
 #### Video tutorial {#create-email-video}
