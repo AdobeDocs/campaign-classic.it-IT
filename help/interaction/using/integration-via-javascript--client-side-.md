@@ -1,29 +1,27 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integrazione tramite JavaScript (lato client)
 description: Integrazione tramite JavaScript (lato client)
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
 
 ---
 
-
 # Integrazione tramite JavaScript (lato client){#integration-via-javascript-client-side}
 
-Per chiamare il motore di interazione in una pagina Web, inserire una chiamata a un codice JavaScript direttamente nella pagina. Questa chiamata restituisce il contenuto dell&#39;offerta in un oggetto
+Per chiamare il motore di interazione in una pagina web, inserisci una chiamata a un codice JavaScript direttamente nella pagina. Questa chiamata restituisce il contenuto dell’offerta in un target
 
-element.
+elemento.
 
- Adobe consiglia di utilizzare il metodo di integrazione JavaScript.
+Adobe consiglia di utilizzare il metodo di integrazione JavaScript.
 
-Lo script che richiama l&#39;URL avrà l&#39;aspetto seguente:
+Lo script che richiama l’URL si presenta così:
 
 ```
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
@@ -31,36 +29,36 @@ Lo script che richiama l&#39;URL avrà l&#39;aspetto seguente:
 
 Il parametro &quot;**env**&quot; riceve il nome interno dell&#39;ambiente live dedicato alle interazioni anonime.
 
-Per presentare un&#39;offerta, è necessario creare un ambiente e uno spazio di offerta in  Adobe Campaign, quindi configurare la pagina HTML.
+Per presentare un’offerta, dobbiamo creare un ambiente e uno spazio di offerta in Adobe Campaign, quindi configurare la pagina HTML.
 
-I seguenti casi di utilizzo descrivono le possibili opzioni per l&#39;integrazione delle offerte tramite JavaScript.
+I seguenti casi d’uso descrivono le opzioni possibili per l’integrazione delle offerte tramite JavaScript.
 
 ## Modalità HTML {#html-mode}
 
-### Presentazione di un&#39;offerta anonima {#presenting-an-anonymous-offer}
+### Presentare un&#39;offerta anonima {#presenting-an-anonymous-offer}
 
 1. **Preparazione del motore di interazione**
 
-   Aprite l&#39;interfaccia Adobe Campaign  e preparate un ambiente anonimo.
+   Apri l’interfaccia Adobe Campaign e prepara un ambiente anonimo.
 
-   Create uno spazio di offerta collegato all&#39;ambiente anonimo.
+   Crea uno spazio di offerta collegato all’ambiente anonimo.
 
-   Create un&#39;offerta e la relativa rappresentazione collegata allo spazio dell&#39;offerta.
+   Crea un’offerta e la relativa rappresentazione collegata allo spazio dell’offerta.
 
 1. **Contenuto della pagina HTML**
 
    La pagina HTML deve includere un
 
-   con un attributo @id con il valore del nome interno dello spazio delle offerte creato (&quot;spazio dei nomi i_internal&quot;). L&#39;offerta verrà inserita in questo
+   elemento con un attributo @id con il valore del nome interno dello spazio di offerta creato (&quot;spazio nome interno&quot;). L’offerta verrà inserita in questo
 per interazione.
 
-   Nel nostro esempio, l&#39;attributo @id riceve il valore &quot;i_SPC12&quot;, dove &quot;SPC12&quot; è il nome interno dello spazio delle offerte creato in precedenza:
+   Nel nostro esempio, l’attributo @id riceve il valore &quot;i_SPC12&quot;, dove &quot;SPC12&quot; è il nome interno dello spazio di offerta creato in precedenza:
 
    ```
    <div id="i_SPC12"></div>
    ```
 
-   Nel nostro esempio, l&#39;URL per la chiamata dello script è il seguente (&quot;OE3&quot; è il nome interno dell&#39;ambiente live):
+   Nel nostro esempio, l’URL per la chiamata dello script è il seguente (&quot;OE3&quot; è il nome interno dell’ambiente live):
 
    ```
    <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
@@ -70,13 +68,13 @@ per interazione.
    >
    >Il tag `<script>` non deve chiudersi automaticamente.
 
-   Questa chiamata statica genererà automaticamente una chiamata dinamica contenente tutti i parametri richiesti dal motore di interazione.
+   Questa chiamata statica genera automaticamente una chiamata dinamica contenente tutti i parametri necessari al motore di interazione.
 
-   Questo comportamento consente di utilizzare diversi spazi di offerta sulla stessa pagina, da gestire con una singola chiamata al motore.
+   Questo comportamento ti consente di utilizzare più spazi di offerta sulla stessa pagina, per essere gestito da una singola chiamata al motore.
 
 1. **Risultati nella pagina HTML**
 
-   Il contenuto della rappresentazione dell&#39;offerta viene restituito alla pagina HTML dal motore di interazione:
+   Il contenuto della rappresentazione dell’offerta viene restituito alla pagina HTML dal motore di interazione:
 
    ```
    <div id="banner_header">
@@ -100,9 +98,9 @@ per interazione.
    </div>
    ```
 
-### Presentazione di un&#39;offerta identificata {#presenting-an-identified-offer}
+### Presentare un&#39;offerta identificata {#presenting-an-identified-offer}
 
-Per presentare un&#39;offerta a un contatto identificato, il processo è simile a quello descritto qui: [Presentazione di un&#39;offerta anonima](#presenting-an-anonymous-offer). Nel contenuto della pagina Web, è necessario aggiungere il seguente script che identificherà il contatto durante la chiamata al motore:
+Per presentare un&#39;offerta a un contatto identificato, il processo è simile a quello descritto qui: [Presentare un&#39;offerta anonima](#presenting-an-anonymous-offer). Nel contenuto della pagina web, devi aggiungere il seguente script che identificherà il contatto durante la chiamata al motore:
 
 ```
 <script type="text/javascript">
@@ -110,15 +108,15 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
 </script>
 ```
 
-1. Andate allo spazio delle offerte che verrà richiamato dalla pagina Web, fate clic su **[!UICONTROL Advanced parameters]** e aggiungete una o più chiavi di identificazione.
+1. Vai allo spazio di offerta che verrà richiamato dalla pagina web, fai clic su **[!UICONTROL Advanced parameters]** e aggiungi una o più chiavi di identificazione.
 
    ![](assets/interaction_htmlmode_001.png)
 
-   In questo esempio, la chiave di identificazione è composita in quanto si basa sia sull&#39;e-mail che sul nome del destinatario.
+   In questo esempio, la chiave di identificazione è composita in quanto si basa sia sull’e-mail che sul nome del destinatario.
 
-1. Durante la visualizzazione della pagina Web, la valutazione dello script consente di trasmettere l&#39;ID destinatario al motore delle offerte. Se l’ID è composito, i tasti vengono visualizzati nella stessa sequenza utilizzata nelle impostazioni avanzate e separati da un |
+1. Durante la visualizzazione della pagina web, la valutazione dello script ti consente di trasmettere l’ID destinatario al motore dell’offerta. Se l’ID è composito, i tasti vengono visualizzati nella stessa sequenza utilizzata nelle impostazioni avanzate e separati da un |
 
-   Nell&#39;esempio seguente, il contatto ha eseguito l&#39;accesso al sito Web ed è stato riconosciuto durante la chiamata al motore di interazione grazie alla propria e-mail e nome.
+   Nell’esempio seguente, il contatto ha effettuato l’accesso al sito web ed è stato riconosciuto durante la chiamata al motore di interazione grazie alla relativa e-mail e nome.
 
    ```
    <script type="text/javascript">
@@ -128,21 +126,21 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
 
 ### Utilizzo di una funzione di rendering HTML {#using-an-html-rendering-function}
 
-Per generare automaticamente la rappresentazione dell&#39;offerta HTML, potete utilizzare una funzione di rendering.
+Per generare automaticamente la rappresentazione dell’offerta HTML, puoi utilizzare una funzione di rendering.
 
-1. Andate nello spazio delle offerte e fate clic sul collegamento **[!UICONTROL Edit functions]**.
+1. Vai allo spazio di offerta e fai clic sul collegamento **[!UICONTROL Edit functions]** .
 1. Seleziona **[!UICONTROL Overload the HTML rendering function]**.
-1. Andate alla scheda **[!UICONTROL HTML rendering]** e inserite le variabili che corrispondono ai campi definiti per il contenuto dell&#39;offerta nello spazio dell&#39;offerta.
+1. Vai alla scheda **[!UICONTROL HTML rendering]** e inserisci le variabili che corrispondono ai campi definiti per il contenuto dell’offerta nello spazio dell’offerta.
 
    ![](assets/interaction_htmlmode_002.png)
 
-   In questo esempio, l&#39;offerta viene visualizzata sotto forma di banner in una pagina Web e comprende un&#39;immagine su cui è possibile fare clic e un titolo che corrisponde ai campi definiti nel contenuto dell&#39;offerta.
+   In questo esempio, l’offerta viene visualizzata sotto forma di banner in una pagina web, è composta da un’immagine su cui è possibile fare clic e da un titolo che corrisponde ai campi definiti nel contenuto dell’offerta.
 
 ## Modalità XML {#xml-mode}
 
-### Presentazione di un&#39;offerta {#presenting-an-offer}
+### Presentare un’offerta {#presenting-an-offer}
 
-L&#39;interazione consente di restituire un nodo XML alla pagina HTML che richiama il motore delle offerte. Questo nodo XML può essere elaborato da funzioni da sviluppare sul lato cliente.
+L’interazione ti consente di restituire un nodo XML alla pagina HTML che richiama il motore di offerta. Questo nodo XML può essere elaborato da funzioni da sviluppare sul lato cliente.
 
 La chiamata al motore di interazione si presenta così:
 
@@ -154,15 +152,15 @@ Il parametro &quot;**env**&quot; riceve il nome interno dell&#39;ambiente live.
 
 Il parametro &quot;**cb**&quot; riceve il nome della funzione che leggerà il nodo XML restituito dal motore contenente le proposizioni (callback). Questo parametro è facoltativo.
 
-Il parametro &quot;**t**&quot; riceve il valore della destinazione, solo per un&#39;interazione identificata. Questo parametro può essere trasmesso anche con la variabile **interactiveTarget**. Questo parametro è facoltativo.
+Il parametro &quot;**t**&quot; riceve il valore del target, solo per un&#39;interazione identificata. Questo parametro può essere trasmesso anche con la variabile **actionTarget** . Questo parametro è facoltativo.
 
 Il parametro &quot;**c**&quot; riceve l&#39;elenco dei nomi interni delle categorie. Questo parametro è facoltativo.
 
 Il parametro &quot;**th**&quot; riceve l&#39;elenco dei temi. Questo parametro è facoltativo.
 
-Il parametro &quot;**gctx**&quot; riceve i dati della chiamata globali (contesto) per l’intera pagina. Questo parametro è facoltativo.
+Il parametro &quot;**gctx**&quot; riceve i dati della chiamata globali (contestuali) all&#39;intera pagina. Questo parametro è facoltativo.
 
-Il nodo XML restituito è simile al seguente:
+Il nodo XML restituito si presenta così:
 
 ```
 <propositions>
@@ -173,13 +171,13 @@ Il nodo XML restituito è simile al seguente:
 </propositions>
 ```
 
-Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campaign per abilitare la modalità XML, quindi mostra il risultato della chiamata al motore nella pagina HTML.
+Il seguente caso d’uso descrive le configurazioni da eseguire in Adobe Campaign per abilitare la modalità XML, quindi mostra il risultato della chiamata al motore nella pagina HTML.
 
 1. **Creazione di un ambiente e di uno spazio di offerta**
 
-   Per ulteriori informazioni sulla creazione di un ambiente, vedere [Live/Design environment](../../interaction/using/live-design-environments.md).
+   Per ulteriori informazioni sulla creazione di un ambiente, consulta [Ambienti Live/Design](../../interaction/using/live-design-environments.md).
 
-   Per ulteriori informazioni sulla creazione di uno spazio per le offerte, consultate [Creazione di spazi per le offerte](../../interaction/using/creating-offer-spaces.md).
+   Per ulteriori informazioni sulla creazione di uno spazio di offerta, consulta [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md).
 
 1. **Estensione dello schema delle offerte per aggiungere nuovi campi**
 
@@ -218,13 +216,13 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
    >[!NOTE]
    >
-   >Potete estendere lo schema delle offerte per aggiungere nuovi campi sia in modalità batch che unitaria, nonché in qualsiasi formato (testo, HTML e XML).
+   >Puoi estendere lo schema delle offerte per aggiungere nuovi campi sia in modalità batch che unitaria, sia in qualsiasi formato (testo, HTML e XML).
 
-1. **Estensione della formula dell&#39;offerta per modificare nuovi campi e modificare un campo esistente**
+1. **Estensione della formula di offerta per modificare nuovi campi e modificare un campo esistente**
 
-   Modificate il modulo di input **Offer (nsm)**.
+   Modifica il modulo di input **Offerta (nsm)** .
 
-   Nella sezione &quot;Viste&quot;, inserite i due nuovi campi con il seguente contenuto:
+   Nella sezione &quot;Visualizzazioni&quot;, inserisci i due nuovi campi con il seguente contenuto:
 
    ```
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink"
@@ -256,7 +254,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
                  <input colspan="2" label="Prix" nolabel="true" type="number" xpath="price_jst"/>
    ```
 
-   Aggiungete un commento al campo URL di destinazione:
+   Aggiungi un commento al campo URL di destinazione:
 
    ![](assets/interaction_xmlmode_form_001.png)
 
@@ -264,7 +262,7 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
    >
    >I campi del modulo ( `<input>`) devono puntare agli elementi del tipo CDATA definiti nello schema creato.
 
-   Il rendering nel modulo delle rappresentazioni delle offerte è simile al seguente:
+   Il rendering nel modulo delle rappresentazioni dell’offerta si presenta così:
 
    ![](assets/interaction_xmlmode_form.png)
 
@@ -272,16 +270,16 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
 1. **Creazione di un’offerta**
 
-   Per ulteriori informazioni sulla creazione di offerte, consultate [Creazione di un&#39;offerta](../../interaction/using/creating-an-offer.md).
+   Per ulteriori informazioni sulla creazione di offerte, consulta [Creazione di un’offerta](../../interaction/using/creating-an-offer.md).
 
-   Nel caso di utilizzo seguente, l&#39;offerta è inserita come segue:
+   Nel seguente caso d’uso, l’offerta viene inserita come segue:
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. Approvare un&#39;offerta o farla approvare da qualcun altro, quindi attivarla nello spazio dell&#39;offerta creato all&#39;ultimo passaggio in modo che sia disponibile nell&#39;ambiente live collegato.
-1. **Chiamate del motore e risultati sulla pagina HTML**
+1. Approva un’offerta o fai in modo che venga approvata da un altro utente, quindi attivala nello spazio di offerta creato all’ultimo passaggio in modo che sia disponibile nell’ambiente live collegato.
+1. **Chiamate al motore e risultato sulla pagina HTML**
 
-   La chiamata al motore di interazione nella pagina HTML si presenta come segue:
+   La chiamata al motore di interazione nella pagina HTML si presenta così:
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -289,9 +287,9 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
    Il valore del parametro &quot;**env**&quot; è il nome interno dell&#39;ambiente live.
 
-   Il valore del parametro &quot;**cb**&quot; è il nome della funzione che deve interpretare il nodo XML restituito dal motore. Nel nostro esempio, la funzione richiamata apre una finestra modale (funzione alert()).
+   Il valore del parametro &quot;**cb**&quot; è il nome della funzione che deve interpretare il nodo XML restituito dal motore. Nel nostro esempio, la funzione chiamata apre una funzione finestra modale (alert() ).
 
-   Il nodo XML restituito dal motore di interazione ha l&#39;aspetto seguente:
+   Il nodo XML restituito dal motore di interazione si presenta così:
 
    ```
    <propositions>
@@ -311,13 +309,13 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
 
 ### Utilizzo di una funzione di rendering {#using-a-rendering-function-}
 
-È possibile utilizzare una funzione di rendering XML per creare una presentazione di offerta. Questa funzione modificherà il nodo XML che viene restituito alla pagina HTML durante la chiamata al motore.
+È possibile utilizzare una funzione di rendering XML per creare una presentazione di offerta. Questa funzione modificherà il nodo XML restituito alla pagina HTML durante la chiamata al motore.
 
-1. Andate nello spazio delle offerte e fate clic sul collegamento **[!UICONTROL Edit functions]**.
+1. Vai allo spazio di offerta e fai clic sul collegamento **[!UICONTROL Edit functions]** .
 1. Seleziona **[!UICONTROL Overload the XML rendering function]**.
-1. Fare clic sulla scheda **[!UICONTROL XML rendering]** e inserire la funzione desiderata.
+1. Passa alla scheda **[!UICONTROL XML rendering]** e inserisci la funzione desiderata.
 
-   La funzione può essere simile alla seguente:
+   La funzione può avere questo aspetto:
 
    ```
    function (proposition) {
@@ -327,4 +325,3 @@ Il seguente caso d’uso descrive le configurazioni da eseguire in  Adobe Campai
    ```
 
 ![](assets/interaction_xmlmode_001.png)
-
