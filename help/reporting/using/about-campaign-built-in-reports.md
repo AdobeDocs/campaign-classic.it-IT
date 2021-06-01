@@ -1,62 +1,60 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sui report incorporati di Campaign
 description: Informazioni sui report incorporati di Campaign
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
 
 ---
 
-
 # Informazioni sui report incorporati di Campaign{#about-campaign-built-in-reports}
 
-Questo capitolo contiene l&#39;elenco  report incorporati Adobe Campaign, il relativo contenuto e il relativo contesto. Le informazioni riportate di seguito consentono di evitare la creazione di rapporti già disponibili nella piattaforma.
+Questo capitolo fornisce l’elenco dei report incorporati di Adobe Campaign, il loro contenuto e il relativo contesto. Le informazioni seguenti consentono di evitare la creazione di rapporti già disponibili nella piattaforma.
 
 >[!NOTE]
 >
->È inoltre possibile apprendere come aggiungere i propri rapporti alla scheda **[!UICONTROL Reports]**. Per ulteriori informazioni, fare riferimento a questa [pagina](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
+>Puoi anche scoprire come aggiungere i tuoi rapporti alla scheda **[!UICONTROL Reports]** . Per ulteriori informazioni, consulta questa [pagina](../../reporting/using/configuring-access-to-the-report.md#defining-the-filtering-options).
 
-Tali rapporti e il relativo contenuto sono descritti in modo dettagliato nei documenti relativi alle funzionalità che essi riguardano.
+Tali rapporti e il loro contenuto sono descritti in dettaglio nei documenti relativi alle funzionalità che riguardano.
 
- Adobe Campaign offre diversi tipi di rapporti, accessibili dalla console del cliente o da un browser Internet.
+Adobe Campaign offre diversi tipi di rapporti, accessibili tramite la console del cliente o un browser Internet.
 
-Sono disponibili i seguenti tipi di report:
+Sono disponibili i seguenti tipi di rapporto:
 
-* Report sull&#39;intera piattaforma, consultate [Report globali](../../reporting/using/global-reports.md).
-* Rapporti sulla distribuzione, vedere [Rapporti sulla consegna](../../reporting/using/delivery-reports.md).
-* Rapporti cumulati, vedere [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
+* Rapporti sull&#39;intera piattaforma, consulta [Rapporti globali](../../reporting/using/global-reports.md).
+* Rapporti di consegna, consulta [Rapporti di consegna](../../reporting/using/delivery-reports.md).
+* Rapporti cumulati, consulta [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
 
-Potete accedere ai rapporti dalla home page della console client, dal dashboard dei report o dall&#39;elenco di distribuzione. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L&#39;elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle vostre esigenze. Per ulteriori informazioni, fare riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L’elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) .
 
-Per accedere ai rapporti predefiniti della campagna:
+Per accedere ai rapporti incorporati di Campaign:
 
-1. Selezionate la scheda **[!UICONTROL Reports]** dell&#39;interfaccia  Adobe Campaign.
+1. Seleziona la scheda **[!UICONTROL Reports]** dell’interfaccia di Adobe Campaign.
 
    ![](assets/reporting_access_from_home.png)
 
-1. Utilizzate i campi di ricerca per filtrare i rapporti visualizzati.
+1. Utilizza i campi di ricerca per filtrare i rapporti visualizzati.
 
-1. Quindi fate clic sul rapporto da visualizzare.
+1. Quindi fare clic sul rapporto che si desidera visualizzare.
 
    ![](assets/reporting_edit_a_report.png)
 
-1. Fai clic sul collegamento **[!UICONTROL Back]** nella parte superiore dello schermo per tornare all&#39;elenco dei report.
+1. Fai clic sul collegamento **[!UICONTROL Back]** nella parte superiore dello schermo per tornare all’elenco dei report.
 
    ![](assets/reporting_back_button.png)
 
-Altre possibili azioni su un report in corso di modifica sono descritte in [questa pagina](../../reporting/using/actions-on-reports.md).
+Altre possibili azioni su un rapporto in corso di modifica sono descritte in [questa pagina](../../reporting/using/actions-on-reports.md).
 
-I report specifici per una campagna o una distribuzione sono accessibili tramite le rispettive dashboard.
+I rapporti specifici per una campagna o una consegna sono accessibili tramite le rispettive dashboard.
 
 ![](assets/reporting_on_a_delivery.png)
 
-Il principio è lo stesso per elenchi, servizi, offerte, ecc. come mostrato di seguito:
+Il principio è lo stesso per gli elenchi, i servizi, le offerte, ecc. come mostrato di seguito:
 
 ![](assets/reporting_on_an_offer.png)
