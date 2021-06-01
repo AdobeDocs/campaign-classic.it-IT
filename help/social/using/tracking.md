@@ -1,33 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Tracking
+title: Tracciamento
 description: Tracciamento
 audience: social
 content-type: reference
 topic-tags: annexes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 83883ba3-e4dc-428c-a377-1986cfd1fe55
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 4%
 
 ---
 
+# Tracciamento{#tracking}
 
-# Tracking{#tracking}
+Social Marketing fornisce rapporti che ti consentono di misurare il tasso di reattività delle consegne di Facebook e Twitter e di analizzare l’acquisizione dei profili Facebook. Sono disponibili i seguenti rapporti:
 
-Social Marketing fornisce report che consentono di misurare il tasso di reattività delle consegne di Facebook e Twitter e di analizzare l&#39;acquisizione dei profili di Facebook. Sono disponibili i seguenti rapporti:
-
-* Il report **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Summary]** di una distribuzione su Facebook o Twitter.
+* Il rapporto **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Summary]** di una consegna Facebook o Twitter.
 
    ![](assets/social_report_3.png)
 
-* Il report **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Twitter o Facebook.
+* Il rapporto **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Twitter o Facebook.
 
    ![](assets/social_report_2.png)
 
-* Il report **[!UICONTROL Fan acquisition]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Facebook.
+* Il rapporto **[!UICONTROL Fan acquisition]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Facebook.
 
    ![](assets/social_report_1.png)
-
