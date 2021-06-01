@@ -6,16 +6,15 @@ description: Aggiunta di indirizzi di seed
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 5%
 
 ---
 
-
-# Aggiungi indirizzi di seed{#adding-seed-addresses}
+# Aggiungere indirizzi seed{#adding-seed-addresses}
 
 ## Indirizzi di seed in una consegna {#seed-addresses-in-a-delivery}
 
@@ -27,7 +26,7 @@ Esistono tre possibili modalità di inserimento:
 
 1. Inserimento di indirizzi di seed singoli.
 
-   A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e definisci il contenuto dei campi indirizzo. Ripeti per ogni indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e definisci il contenuto dei campi indirizzo. Ripeti per ogni indirizzo.
 
 1. Importazione di modelli di indirizzi e loro adattamento in base alle tue esigenze.
 
