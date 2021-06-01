@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gestione degli accessi
 description: Ulteriori informazioni sulle best practice per la gestione degli accessi.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
-
 
 # Gestione degli accessi {#access-management}
 
@@ -31,7 +29,7 @@ L’operatore webApp è un amministratore. Per migliorare la sicurezza, segui qu
 
    1. Immetti un nome per ogni duplicato. Ad esempio: webapp_brand, webapp_brand2, ecc.
 
-   1. Duplica un modello di applicazione web per avere un modello per marchio e modifica le proprietà per modificare l’operatore selezionando Usa un account specifico.  Ulteriori informazioni in [questa pagina](../../web/using/defining-web-forms-properties.md).
+   1. Duplica un modello di applicazione web per avere un modello per marchio e modifica le proprietà per modificare l’operatore selezionando Usa un account specifico.  Per ulteriori informazioni, consulta [questa pagina](../../web/using/defining-web-forms-properties.md).
 
 ## Gruppi di sicurezza e operatori di amministrazione
 
@@ -47,6 +45,6 @@ Adobe Campaign fornisce tre privilegi di alto livello tramite [diritti denominat
 
 * **ESECUZIONE PROGRAMMA**  (createProcess): consente l&#39;esecuzione di programmi esterni (sul server)
 
-* **SQL**: consente l&#39;esecuzione di script SQL nel database (in modo da poter ignorare il modello di sicurezza). Nota: se è necessario eseguire calcoli complessi (ad esempio il filtro), è possibile chiedere all&#39;amministratore del database di creare una funzione SQL e aggiungerla all&#39;elenco Consentiti. Ulteriori informazioni in [questa pagina](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: consente l&#39;esecuzione di script SQL nel database (in modo da poter ignorare il modello di sicurezza). Nota: se è necessario eseguire calcoli complessi (ad esempio il filtro), è possibile chiedere all&#39;amministratore del database di creare una funzione SQL e aggiungerla all&#39;elenco consentiti. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/scripting-coding-guidelines.md).
 
 * **Concedili a pochi operatori (e affidabili)**
