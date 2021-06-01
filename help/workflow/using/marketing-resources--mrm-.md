@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Risorse di marketing (MRM)
 description: Risorse di marketing (MRM)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 11%
@@ -17,7 +15,7 @@ ht-degree: 11%
 
 # Risorse di marketing (MRM){#marketing-resources-mrm}
 
-I flussi di lavoro descritti di seguito vengono installati con il modulo **Marketing resources (MRM)** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../campaign/using/designing-marketing-campaigns.md).
+I flussi di lavoro descritti di seguito sono installati con il modulo **Risorse di marketing (MRM)** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -27,7 +25,7 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Marke
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Notifiche sulle risorse di marketing</span> <br /> </td> 
+   <td> <span class="uicontrol">Notifiche di risorse di marketing</span> <br /> </td> 
    <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
    <td> Questo flusso di lavoro gestisce le notifiche collegate all’approvazione e alla pubblicazione delle risorse di marketing. <br /> </td> 
   </tr> 
@@ -39,7 +37,7 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Marke
   <tr> 
    <td> <span class="uicontrol">Processi del forum di discussione</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro gestisce la distribuzione delle notifiche dai forum di discussione. Viene attivato quando viene ricevuto un segnale di approvazione.<br /> </td> 
+   <td> Questo flusso di lavoro gestisce la trasmissione delle notifiche dai forum di discussione. Viene attivato quando viene ricevuto un segnale di approvazione.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
