@@ -3,19 +3,18 @@ solution: Campaign Classic
 product: campaign
 title: Gestire l’accesso alle cartelle di Campaign
 description: Scopri come concedere l’accesso alle cartelle Campaign e creare visualizzazioni
-feature: Application Settings
+feature: Impostazioni applicazione
 role: Business Practitioner, Administrator
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 0%
+source-wordcount: '753'
+ht-degree: 1%
 
 ---
 
-
-# Gestisci l&#39;accesso alle cartelle{#folder-access-management}
+# Gestire l’accesso alle cartelle{#folder-access-management}
 
 A ogni cartella della struttura di navigazione di Esplora risorse sono associati diritti di accesso di lettura, scrittura ed eliminazione. Per accedere a un file, un operatore o un gruppo di operatori deve avere almeno accesso in lettura ad esso.
 
@@ -76,9 +75,7 @@ Nella visualizzazione verranno visualizzate le seguenti consegne:
 
 >[!NOTE]
 >
->Quando gestisci eventi [messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come visualizzazioni sulle istanze di esecuzione, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](../../message-center/using/event-collection.md).
-
-
+>Quando gestisci eventi [messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come visualizzazioni sulle istanze di esecuzione, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](../../message-center/using/about-event-processing.md#event-collection).
 
 ## Autorizzazioni in una cartella
 
