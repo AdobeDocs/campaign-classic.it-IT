@@ -1,48 +1,46 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di una consegna da un modello
 description: Creazione di una consegna da un modello
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 10%
 
 ---
 
-
 # Creazione di una consegna da un modello{#creating-a-delivery-from-a-template}
 
 ## Collegamento del modello a una consegna {#linking-the-template-to-a-delivery}
 
-Per creare una consegna basata su un modello esistente, selezionate il modello dall&#39;elenco dei modelli di consegna disponibili.
+Per creare una consegna basata su un modello esistente, seleziona il modello dall’elenco dei modelli di consegna disponibili.
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-In caso contrario, fate clic sulla cartella **[!UICONTROL Select link]** a destra del campo per individuare la struttura ad albero.
+In caso contrario, fai clic sulla cartella **[!UICONTROL Select link]** a destra del campo per sfogliare la struttura.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Selezionate la directory desiderata dal campo **[!UICONTROL Folder]** oppure fate clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
+Seleziona la directory desiderata dal campo **[!UICONTROL Folder]** oppure fai clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
 
-Selezionate il modello di consegna da utilizzare e fate clic su **[!UICONTROL Ok]**.
+Seleziona il modello di consegna da utilizzare e fai clic su **[!UICONTROL Ok]**.
 
 ## Esecuzione del modello {#executing-the-template}
 
-Potete avviare l&#39;esecuzione di un modello direttamente dall&#39;elenco dei modelli senza prima creare una consegna. A questo scopo, selezionate il modello da eseguire e fate clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
+Puoi avviare l’esecuzione di un modello direttamente dall’elenco dei modelli senza prima creare una consegna. A questo scopo, seleziona il modello da eseguire e fai clic con il pulsante destro del mouse sul modello da eseguire. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
 
 È inoltre possibile utilizzare **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
-Immettete i parametri di consegna e fate clic su **[!UICONTROL Send]**.
+Immetti i parametri di consegna e fai clic su **[!UICONTROL Send]**.
 
-Questa azione genera un recapito nella cartella associata al modello. Il nome di questa consegna è il nome del modello di consegna da cui è stata creata.
+Questa azione genera una consegna nella cartella associata al modello. Il nome di questa consegna è il nome del modello di consegna da cui è stata creata.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione della consegna, consultate [Definizione del contenuto dell&#39;e-mail](../../delivery/using/defining-the-email-content.md).
+>Per ulteriori informazioni sulla configurazione di una consegna, consulta [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md).
