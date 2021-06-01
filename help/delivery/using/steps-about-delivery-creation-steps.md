@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign Classic
 description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
-
 
 # Informazioni sui passaggi di creazione delle consegne {#about-delivery-creation}
 
@@ -30,7 +28,7 @@ I passaggi chiave per la creazione di una consegna sono i seguenti:
 
 1. **Definire la popolazione** target. [Leggi tutto](../../delivery/using/steps-defining-the-target-population.md)
 
-1. **Invia la consegna**. [Leggi tutto](../../delivery/using/steps-sending-the-delivery.md)
+1. **Inviare la consegna**. [Leggi tutto](../../delivery/using/steps-sending-the-delivery.md)
 
 1. **Monitora la consegna**  (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](../../delivery/using/about-delivery-monitoring.md) e [Tracciamento delle consegne](../../delivery/using/about-message-tracking.md) .
 
