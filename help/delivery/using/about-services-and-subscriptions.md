@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni su servizi e abbonamenti
 description: Informazioni su servizi e abbonamenti
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
 
 ---
-
 
 # Informazioni su servizi e abbonamenti{#about-services-and-subscriptions}
 
@@ -23,4 +21,4 @@ Puoi anche consentire ai destinatari della consegna di condividerli con i membri
 
 >[!NOTE]
 >
->Questa funzionalità viene fornita come standard con Adobe Campaign. L&#39;applicazione opzionale Social Marketing consente di contattare i clienti e i potenziali clienti tramite Facebook e Twitter.
+>Questa funzionalità viene fornita come standard con Adobe Campaign. L&#39;applicazione opzionale Social Marketing consente di contattare clienti e potenziali clienti tramite Facebook e Twitter.
