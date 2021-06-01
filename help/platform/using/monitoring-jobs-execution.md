@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Monitoraggio dell’esecuzione dei processi
 description: Scopri come monitorare l’esecuzione di processi di importazione ed esportazione.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# Monitorare l&#39;esecuzione di processi {#monitoring-job-execution}
+# Monitorare l’esecuzione dei processi {#monitoring-job-execution}
 
 Puoi tenere traccia dell’esecuzione dei processi di importazione ed esportazione direttamente dall’elenco dei processi di importazione/esportazione.
 
