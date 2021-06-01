@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Domande frequenti su test e invio
 description: Domande frequenti su Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
 ---
-
 
 # Convalidare, inviare e tracciare messaggi {#validate-send-track}
 
