@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Architettura generale
 description: Architettura generale
 audience: production
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 4%
 
 ---
 
-
 # Architettura generale{#general-architecture}
 
 ## Architettura minima {#minimum-architecture}
 
-In una configurazione minima,  Adobe Campaign funziona con:
+In una configurazione minima, Adobe Campaign funziona con:
 
-*  server applicazioni Adobe Campaign,
+* il server dell’applicazione Adobe Campaign,
 * il database.
 
    ![](assets/formation_exploitation.png)
 
-Questo diagramma mostra che l&#39;unico traffico coinvolto nel contesto di un&#39;architettura minima è:
+Questo diagramma mostra che l’unico traffico coinvolto nel contesto di un’architettura minima è:
 
-1. traffico del protocollo HTTP verso il server Adobe Campaign  tramite Internet,
-1. Traffico del protocollo SMTP da e verso il server Adobe Campaign  tramite Internet.
+1. traffico del protocollo HTTP verso il server Adobe Campaign tramite Internet,
+1. Traffico del protocollo SMTP da e verso il server Adobe Campaign tramite Internet.
 
 ## Architettura distribuita {#distributed-architecture}
 
- Adobe Campaign è costituito da moduli multipli che possono essere suddivisi su più computer. Questa modalità operativa presenta diversi vantaggi:
+Adobe Campaign è costituito da più moduli che possono essere suddivisi su più macchine. Questa modalità operativa presenta diversi vantaggi:
 
 * bilanciamento del carico,
-* l&#39;impostazione della ridondanza del modulo,
-* creazione di un&#39;architettura suddivisa in più fornitori di servizi (segmentazione dei servizi forniti).
+* l&#39;impostazione della ridondanza dei moduli,
+* creazione di un’architettura suddivisa per diversi fornitori di servizi (segmentazione dei servizi forniti).
 
 ![](assets/architecturerepartie.png)
 
@@ -45,15 +43,14 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle diverse architetture, fare riferimento a [questa sezione](../../installation/using/general-architecture.md).
+>Per ulteriori informazioni sulle diverse architetture, consulta [questa sezione](../../installation/using/general-architecture.md).
 
-## Elenco porte aperte {#list-of-open-ports}
+## Elenco delle porte aperte {#list-of-open-ports}
 
-| Numero della porta | Modulo o applicazione Adobe Campaign interessati  | Configurabile |
+| Numero della porta | Modulo o applicazione Adobe Campaign interessati | Configurabile |
 |---|---|---|
-| 443/tcp o 80/tcp | Server Web (Apache/IIS) | SÌ |
-| 6666/udp (locale) |  Adobe Campaign: Syslogd | SÌ |
-| 8005/tcp (locale) |  Adobe Campaign: modulo web | SÌ |
-| 8080/tcp |  Adobe Campaign: modulo web (tomcat) | SÌ |
-| 777 | Server delle statistiche (server di stato) | SÌ |
-
+| 443/tcp o 80/tcp | Server web (Apache/IIS) | SÌ |
+| 6666/udp (locale) | Adobe Campaign: Slogd | SÌ |
+| 8005/tcp (locale) | Adobe Campaign: modulo web | SÌ |
+| 8080/tcp | Adobe Campaign: modulo web (tomcat) | SÌ |
+| 777 | Server statistiche (server stat) | SÌ |
