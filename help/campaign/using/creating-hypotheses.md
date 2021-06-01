@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di ipotesi
 description: Scopri come creare ipotesi in Campaign Response Manager
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
 
 ---
 
-
-# Crea ipotesi{#creating-hypotheses}
+# Creare ipotesi{#creating-hypotheses}
 
 Esistono varie possibilità per creare/collegare ipotesi a un’offerta o a una consegna di campagna:
 
@@ -33,7 +31,7 @@ Per creare un&#39;ipotesi su una consegna esistente, applica il seguente process
 >
 >Questa operazione è possibile solo per le consegne in sospeso.
 
-1. Nella struttura ad albero di Adobe Campaign, vai a **[!UICONTROL Campaign management > Measurement hypotheses]**.
+1. Nella struttura di Adobe Campaign, vai a **[!UICONTROL Campaign management > Measurement hypotheses]**.
 1. Fai clic sul pulsante **[!UICONTROL New]** o fai clic con il pulsante destro del mouse sull’elenco delle ipotesi e seleziona **[!UICONTROL New]** nell’elenco a discesa.
 
    ![](assets/response_hypothesis_instance_creation_002.png)
@@ -178,7 +176,6 @@ In questo esempio, vogliamo creare un&#39;ipotesi collegata a una consegna. Ques
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
-1. Nella struttura ad albero di Adobe Campaign, passa al nodo **[!UICONTROL Campaign management > Measurement hypotheses]** per controllare gli indicatori calcolati dall’ipotesi.
+1. Nella struttura di Adobe Campaign, vai al nodo **[!UICONTROL Campaign management > Measurement hypotheses]** per controllare gli indicatori calcolati dall&#39;ipotesi.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
-
