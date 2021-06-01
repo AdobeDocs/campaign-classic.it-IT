@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Supervisione dei flussi di lavoro
 description: Scopri come supervisionare i flussi di lavoro di Campaign
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
-
 
 # Caso di utilizzo: supervisiona i tuoi flussi di lavoro{#supervising-workflows}
 
@@ -181,4 +179,3 @@ Fai doppio clic sull&#39;attività **Consegna** e seleziona le seguenti opzioni:
 Una volta avviato il flusso di lavoro di monitoraggio, invia il seguente riepilogo al destinatario:
 
 ![](assets/uc_monitoring_workflow_mailfinal.png)
-
