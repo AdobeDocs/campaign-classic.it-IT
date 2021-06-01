@@ -1,71 +1,69 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: API orientate ai dati
 description: API orientate ai dati
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
 
 ---
 
-
 # API orientate ai dati{#data-oriented-apis}
 
-Le API orientate ai dati consentono di gestire l&#39;intero modello dati.
+Le API orientate ai dati consentono di gestire l’intero modello dati.
 
 ## Panoramica del modello dati {#overview-of-the-datamodel}
 
- Adobe Campaign non offre un&#39;API di lettura dedicata per entità (nessuna funzione getRecipient o getDelivery, ecc.). Utilizzare i metodi di lettura e modifica dei dati QUERY e WRITER per accedere ai dati del modello.
+Adobe Campaign non offre un’API di lettura dedicata per entità (nessuna funzione getRecipient o getDelivery, ecc.). Utilizza i metodi di lettura e modifica dei dati QUERY &amp; WRITER per accedere ai dati del modello.
 
- Adobe Campaign consente di gestire le raccolte: le query consentono di recuperare una serie di informazioni raccolte in tutta la base. A differenza dell&#39;accesso in modalità SQL,  API Adobe Campaign restituiscono una struttura XML invece delle colonne di dati.  Adobe Campaign crea quindi documenti compositi con tutti i dati raccolti.
+Adobe Campaign consente di gestire le raccolte: le query consentono di recuperare un insieme di informazioni raccolte in tutta la base. A differenza dell&#39;accesso in modalità SQL, le API di Adobe Campaign restituiscono una struttura XML anziché colonne di dati. Adobe Campaign crea quindi documenti compositi con tutti i dati raccolti.
 
 Questa modalità operativa non offre la mappatura uno-a-uno tra gli attributi e gli elementi dei documenti XML e le colonne delle tabelle nel database.
 
-I documenti XML sono memorizzati nei campi del tipo MEMO del database.
+I documenti XML sono memorizzati nei campi di tipo MEMO del database.
 
 ## Descrizione del modello {#description-of-the-model}
 
-È necessario avere familiarità con il  modello dati Adobe Campaign per poter indirizzare i campi del database negli script.
+È necessario avere familiarità con il modello dati Adobe Campaign per poter gestire i campi del database negli script.
 
-Per una presentazione del modello dati, fare riferimento alla [ descrizione del modello dati Adobe Campaign](../../configuration/using/data-model-description.md).
+Per una presentazione del modello dati, fare riferimento alla [descrizione del modello dati Adobe Campaign](../../configuration/using/data-model-description.md).
 
-Per generare la struttura, fare riferimento a questo articolo: [Come generare un modello dati o un dizionario dati](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
+Per generare la struttura, fai riferimento a questo articolo: [Come generare un modello dati o un dizionario dati](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
-## Query e scrittura {#query-and-writer}
+## Query e processo di scrittura {#query-and-writer}
 
-Lo schema di introduzione seguente descrive gli scambi di basso livello per la lettura (ExecuteQuery) e la scrittura (Writer) tra il database e il cliente (pagine Web o  console client Adobe Campaign).
+Lo schema di introduzione seguente descrive gli scambi di basso livello per la lettura (ExecuteQuery) e la scrittura (Writer) tra il database e il cliente (pagine web o console client Adobe Campaign).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
 ### ExecuteQuery {#executequery}
 
-Per le colonne e le condizioni, potete utilizzare Query.
+Per colonne e condizioni, è possibile utilizzare Query.
 
-Questo consente di isolare l&#39;SQL sottostante. La lingua della query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, che potrebbero generare diversi ordini SELECT SQL.
+Questo consente di isolare il SQL sottostante. Il linguaggio di query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, che potrebbero generare diversi ordini SELECT SQL.
 
-Per ulteriori informazioni, fare riferimento a [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Per ulteriori informazioni, consulta [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Il metodo **ExecuteQuery** viene presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
+Il metodo **ExecuteQuery** è presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### Scrivi {#write}
 
 I comandi di scrittura consentono di scrivere documenti semplici o complessi, con voci in una o più tabelle della base.
 
-Le API transazionali consentono di gestire le riconciliazioni tramite il comando **updateOrInsert**: un comando consente di creare o aggiornare i dati. È inoltre possibile configurare l&#39;unione delle modifiche (**merge**): questa modalità operativa consente di autorizzare aggiornamenti parziali.
+Le API transazionali consentono di gestire le riconciliazioni tramite il comando **updateOrInsert** : un comando consente di creare o aggiornare i dati. Puoi anche configurare l&#39;unione delle modifiche (**unisci**): questa modalità operativa consente di autorizzare aggiornamenti parziali.
 
-La struttura XML offre una visualizzazione logica dei dati e consente di separare la struttura fisica della tabella SQL.
+La struttura XML offre una visualizzazione logica dei dati e consente di analizzare la struttura fisica della tabella SQL.
 
 Il metodo Write è presentato in [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
-Questo metodo consente di eseguire query dai dati associati a uno schema. Richiede una stringa di autenticazione (deve essere eseguito il login) e un documento XML che descrive la query da inviare come parametri. Il parametro return è un documento XML che contiene il risultato della query nel formato dello schema a cui la query fa riferimento.
+Questo metodo consente di eseguire query dai dati associati a uno schema. Richiede una stringa di autenticazione (deve essere effettuato l&#39;accesso) e un documento XML che descrive la query da inviare come parametri. Il parametro return è un documento XML contenente il risultato della query nel formato dello schema a cui fa riferimento la query.
 
 Definizione del metodo &quot;ExecuteQuery&quot; nello schema &quot;xtk:queryDef&quot;:
 
@@ -115,7 +113,7 @@ La struttura del documento XML della query è descritta nello schema &quot;xtk:q
 </queryDef>
 ```
 
-Una sottoquery ( `<subquery>` ) può essere definita in un elemento `<condition> `. La sintassi di un   `<subquery> `   è basato sulla sintassi di un    `<querydef>`.
+È possibile definire una sottoquery ( `<subquery>` ) in un elemento `<condition> ` . La sintassi di un   `<subquery> `   si basa sulla sintassi di un    `<querydef>`.
 
 Esempio di un `<subquery>  : </subquery>`
 
@@ -133,20 +131,20 @@ Esempio di un `<subquery>  : </subquery>`
   
 ```
 
-Una query deve fare riferimento a uno schema iniziale dall&#39;attributo **schema**.
+Una query deve fare riferimento a uno schema iniziale dall&#39;attributo **schema** .
 
 Il tipo di operazione desiderata viene immesso nell&#39;attributo **operation** e contiene uno dei seguenti valori:
 
 * **get**: recupera un record dalla tabella e restituisce un errore se i dati non esistono,
 * **getIfExists**: recupera un record dalla tabella e restituisce un documento vuoto se i dati non esistono,
-* **selezionate**: crea un cursore per restituire più record e restituisce un documento vuoto in assenza di dati,
-* **count**: restituisce un conteggio di dati.
+* **seleziona**: crea un cursore per restituire più record e restituisce un documento vuoto in assenza di dati,
+* **conteggio**: restituisce un conteggio di dati.
 
-La sintassi **XPath** viene utilizzata per individuare i dati in base allo schema di input. Per ulteriori informazioni sugli XPath, fare riferimento a [Schemi di dati](../../configuration/using/data-schemas.md).
+La sintassi **XPath** viene utilizzata per individuare i dati in base allo schema di input. Per ulteriori informazioni su XPaths, fare riferimento a [Schemi di dati](../../configuration/using/data-schemas.md).
 
-#### Esempio con l&#39;operazione &#39;get&#39; {#example-with-the--get--operation}
+#### Esempio con l’operazione &quot;get&quot; {#example-with-the--get--operation}
 
-Recupera il cognome e il nome di un destinatario (&quot;schema nms:destinatario&quot;) con un filtro nell&#39;e-mail.
+Recupera il cognome e il nome di un destinatario ( schema &quot;nms:recipient&quot;) con un filtro sul messaggio di posta elettronica.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -165,7 +163,7 @@ Recupera il cognome e il nome di un destinatario (&quot;schema nms:destinatario&
 
 #### Esempio con l&#39;operazione &quot;select&quot; {#example-with-the--select--operation}
 
-Restituisce l’elenco dei destinatari filtrati in una cartella e nel dominio e-mail con un ordinamento decrescente in base alla data di nascita.
+Restituisce l’elenco dei destinatari filtrati in una cartella e il dominio di posta elettronica con un ordinamento decrescente in base alla data di nascita.
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -188,9 +186,9 @@ Restituisce l’elenco dei destinatari filtrati in una cartella e nel dominio e-
 </queryDef>
 ```
 
-Le espressioni possono essere campi semplici o espressioni complesse come operazioni aritmetiche o la concatenazione di stringhe.
+Le espressioni possono essere campi semplici o espressioni complesse come le operazioni aritmetiche o la concatenazione di stringhe.
 
-Per limitare il numero di record da restituire, aggiungere l&#39;attributo **lineCount** all&#39;elemento `<querydef>`.
+Per limitare il numero di record da restituire, aggiungi l&#39;attributo **lineCount** all&#39;elemento `<querydef>`.
 
 Per limitare a 100 il numero di record restituiti dalla query:
 
@@ -199,14 +197,14 @@ Per limitare a 100 il numero di record restituiti dalla query:
 ...
 ```
 
-Per recuperare i 100 record successivi, eseguire di nuovo la stessa query, aggiungendo l&#39;attributo **startLine**.
+Per recuperare i successivi 100 record, esegui nuovamente la stessa query, aggiungendo l&#39;attributo **startLine** .
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
 
-#### Esempio con l&#39;operazione &#39;count&#39; {#example-with-the--count--operation}
+#### Esempio con l’operazione &quot;count&quot; {#example-with-the--count--operation}
 
 Per contare il numero di record in una query:
 
@@ -221,11 +219,11 @@ Per contare il numero di record in una query:
 
 >[!NOTE]
 >
->Anche in questo caso utilizziamo la condizione dell&#39;esempio precedente. Le clausole `<select>` e non vengono utilizzate. `</select>`
+>Usiamo nuovamente la condizione dell’esempio precedente. Le clausole `<select>` e non vengono utilizzate. `</select>`
 
-#### Raggruppa di dati {#data-grouping}
+#### Raggruppamento dati {#data-grouping}
 
-Per recuperare gli indirizzi e-mail a cui si fa riferimento più volte:
+Per recuperare gli indirizzi di posta elettronica a cui si fa riferimento più volte:
 
 ```
 <queryDef schema="nms:recipient" operation="select">
@@ -247,7 +245,7 @@ Per recuperare gli indirizzi e-mail a cui si fa riferimento più volte:
 </queryDef>
 ```
 
-Per semplificare la query, aggiungere l&#39;attributo **groupBy** direttamente al campo da raggruppare:
+La query può essere semplificata aggiungendo l&#39;attributo **groupBy** direttamente al campo da raggruppare:
 
 ```
 <select>
@@ -259,11 +257,11 @@ Per semplificare la query, aggiungere l&#39;attributo **groupBy** direttamente a
 >
 >Non è più necessario compilare l&#39;elemento `<groupby>`.
 
-#### Fratturazione in condizioni {#bracketing-in-conditions}
+#### Bracketing in condizioni {#bracketing-in-conditions}
 
 Di seguito sono riportati due esempi di bracketing sulla stessa condizione.
 
-* La versione semplice in un&#39;unica espressione:
+* La versione semplice in un’unica espressione:
 
    ```
    <where>
@@ -271,7 +269,7 @@ Di seguito sono riportati due esempi di bracketing sulla stessa condizione.
    </where>
    ```
 
-* La versione strutturata con gli elementi `<condition>`:
+* Versione strutturata con elementi `<condition>`:
 
    ```
    <where>
@@ -286,7 +284,7 @@ Di seguito sono riportati due esempi di bracketing sulla stessa condizione.
    </where>
    ```
 
-È possibile sostituire l&#39;operatore &quot;OR&quot; con l&#39;operazione &quot;IN&quot; quando più condizioni si applicano allo stesso campo:
+È possibile sostituire l’operatore &quot;OR&quot; con l’operazione &quot;IN&quot; quando più condizioni si applicano allo stesso campo:
 
 ```
 <where>
@@ -301,7 +299,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
 
 #### Esempi su collegamenti {#examples-on-links}
 
-* Collegamenti 1-1 o N1: quando la tabella ha la chiave esterna (il collegamento inizia dalla tabella), i campi della tabella collegata possono essere filtrati o recuperati direttamente.
+* Link 1-1 o N1: quando la tabella ha la chiave esterna (il collegamento inizia dalla tabella), i campi della tabella collegata possono essere filtrati o recuperati direttamente.
 
    Esempio di filtro sull’etichetta della cartella:
 
@@ -311,7 +309,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
    </where>
    ```
 
-   Per recuperare i campi della cartella dallo schema &quot;nms:destinatario&quot;:
+   Per recuperare i campi della cartella dallo schema &quot;nms:recipient&quot;:
 
    ```
    <select>
@@ -322,9 +320,9 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
    </select>
    ```
 
-* Collegamenti raccolta (1N): il filtraggio sui campi di una tabella di raccolta deve essere eseguito tramite l&#39;operatore **EXISTS** o **NOT EXISTS**.
+* Collegamenti raccolta (1N): il filtraggio sui campi di una tabella di raccolta deve essere eseguito tramite l&#39;operatore **EXISTS** o **NOT EXISTS** .
 
-   Per filtrare i destinatari che hanno effettuato la sottoscrizione al servizio di informazione &quot;Newsletter&quot;:
+   Per filtrare i destinatari che si sono abbonati al servizio di informazione &quot;Newsletter&quot;:
 
    ```
    <where>
@@ -336,7 +334,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
 
    Il recupero diretto dei campi di un collegamento di raccolta dalla clausola `<select>` non è consigliato perché la query restituisce un prodotto cardinale. Viene utilizzato solo quando la tabella collegata contiene un solo record (ad esempio `<node expr="">`).
 
-   Esempio di collegamento alla raccolta &quot;subscription&quot;:
+   Esempio sul collegamento della raccolta &quot;abbonamento&quot;:
 
    ```
    <select>
@@ -344,11 +342,11 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
    </select>
    ```
 
-   È possibile recuperare un sotto-elenco contenente gli elementi di un collegamento di raccolta nella clausola `<select>`. Gli XPath dei campi di riferimento sono contestuali dall&#39;elemento collection.
+   È possibile recuperare un sotto-elenco contenente gli elementi di un collegamento di raccolta nella clausola `<select>`. Gli XPaths dei campi di riferimento sono contestuali dall&#39;elemento di raccolta.
 
-   Gli elementi di filtraggio ( `<orderby>` ) e di restrizione ( `<where>` ) possono essere aggiunti all&#39;elemento raccolta.
+   Gli elementi di filtro ( `<orderby>` ) e di restrizione ( `<where>` ) possono essere aggiunti all’elemento di raccolta.
 
-   In questo esempio, per ciascun destinatario la query restituisce l&#39;e-mail e l&#39;elenco dei servizi di informazione a cui il destinatario ha aderito:
+   In questo esempio, per ogni destinatario la query restituisce l&#39;e-mail e l&#39;elenco dei servizi di informazione a cui il destinatario si abbona:
 
    ```
    <queryDef schema="nms:recipient" operation="select">
@@ -370,11 +368,11 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
    </queryDef>
    ```
 
-#### Binding dei parametri della clausola &#39;where&#39; e &#39;select&#39; {#binding-the-parameters-of-the--where--and--select--clause}
+#### Binding dei parametri della clausola &quot;where&quot; e &quot;select&quot; {#binding-the-parameters-of-the--where--and--select--clause}
 
-Il binding dei parametri consente al motore di impostare i valori dei parametri utilizzati nella query. Questo è molto utile, dal momento che il motore è responsabile dell&#39;evasione dei valori, e c&#39;è il vantaggio aggiuntivo di una cache per i parametri da recuperare.
+Il binding dei parametri consente al motore di impostare i valori dei parametri utilizzati nella query. Questo è molto utile, in quanto il motore è responsabile dell&#39;escape dei valori, e c&#39;è il vantaggio aggiuntivo di una cache per i parametri da recuperare.
 
-Quando viene creata una query, i valori &quot;bound&quot; vengono sostituiti da un carattere (? in ODBC, `#[index]#` in postgres...) nel corpo della query SQL.
+Quando viene creata una query, i valori &quot;associati&quot; vengono sostituiti da un carattere (? in ODBC, `#[index]#` in postgres...) nel corpo della query SQL.
 
 ```
 <select>
@@ -385,33 +383,33 @@ Quando viene creata una query, i valori &quot;bound&quot; vengono sostituiti da 
 </select>
 ```
 
-Per evitare di eseguire il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; deve essere popolato con il valore &quot;true&quot;.
+Per evitare di eseguire il binding di un parametro, l&#39;attributo &quot;noSqlBind&quot; deve essere compilato con il valore &quot;true&quot;.
 
 >[!IMPORTANT]
 >
 >Se la query include istruzioni &quot;order-by&quot; o &quot;group-by&quot;, i motori di database non saranno in grado di &quot;eseguire il binding&quot; dei valori. È necessario inserire l&#39;attributo @noSqlBind=&quot;true&quot; nelle istruzioni &quot;select&quot; e/o &quot;where&quot; della query.
 
-#### Suggerimento per la creazione di query: {#query-building-tip-}
+#### Suggerimento per la creazione delle query: {#query-building-tip-}
 
-Per semplificare la sintassi di una query, è possibile scrivere la query utilizzando l&#39;editor query generico nella console client Adobe Campaign  (menu **[!UICONTROL Tools/ Generic query editor...]**). Per eseguire questa operazione:
+Per semplificare la sintassi di una query, puoi scrivere la query utilizzando l’editor di query generico nella console client di Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Per eseguire questa operazione:
 
 1. Selezionare i dati da recuperare:
 
    ![](assets/s_ncs_integration_webservices_queyr1.png)
 
-1. Definire la condizione del filtro:
+1. Definisci la condizione del filtro:
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. Eseguire la query e premere CTRL+F4 per visualizzare il codice sorgente della query.
+1. Esegui la query e premi CTRL+F4 per visualizzare il codice sorgente della query.
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Formato documento di output {#output-document-format}
+### Formato del documento di output {#output-document-format}
 
 Il parametro return è un documento XML nel formato dello schema associato alla query.
 
-Esempio di restituzione dallo schema &quot;nms:destinatario&quot; in un&#39;operazione &quot;get&quot;:
+Esempio di ritorno dallo schema &quot;nms:recipient&quot; in un&#39;operazione &quot;get&quot;:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -506,13 +504,13 @@ Invece di:
 
 ## Write / WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
-Questi servizi vengono utilizzati per inserire, aggiornare o eliminare un&#39;entità (&quot;metodo Write&quot;) o un insieme di entità (&quot;metodo WriteCollection&quot;).
+Questi servizi vengono utilizzati per inserire, aggiornare o eliminare un&#39;entità (&quot;metodo Write&quot;) o una raccolta di entità (&quot;metodo WriteCollection&quot;).
 
-Le entità da aggiornare sono associate a uno schema di dati. I parametri di input sono una stringa di autenticazione (deve essere eseguito il login) e un documento XML contenente i dati da aggiornare.
+Le entità da aggiornare sono associate a uno schema di dati. I parametri di input sono una stringa di autenticazione (deve essere eseguito l’accesso) e un documento XML contenente i dati da aggiornare.
 
 Questo documento è completato da istruzioni per la configurazione delle procedure di scrittura.
 
-La chiamata non restituisce alcun dato, tranne eventuali errori.
+La chiamata non restituisce alcun dato, tranne gli errori.
 
 Definizione dei metodi &quot;Write&quot; e &quot;WriteCollection&quot; nello schema &quot;xtk:session&quot;:
 
@@ -535,19 +533,19 @@ Definizione dei metodi &quot;Write&quot; e &quot;WriteCollection&quot; nello sch
 
 ### Panoramica {#overview}
 
-La riconciliazione dei dati funziona in base alla definizione delle chiavi inserite nello schema associato. La procedura di scrittura cerca la prima chiave idonea in base ai dati immessi nel documento di input. L&#39;entità viene inserita o aggiornata in base alla sua esistenza nel database.
+La riconciliazione dei dati funziona in base alla definizione delle chiavi immesse nello schema associato. La procedura di scrittura cerca la prima chiave idonea in base ai dati immessi nel documento di input. L’entità viene inserita o aggiornata in base alla sua esistenza nel database.
 
-La chiave dello schema dell&#39;entità da aggiornare è completata in base all&#39;attributo **xtkschema**.
+La chiave dello schema dell&#39;entità da aggiornare viene completata in base all&#39;attributo **xtkschema** .
 
 La chiave di riconciliazione può quindi essere forzata con l&#39;attributo **_key** contenente l&#39;elenco di XPaths che compongono la chiave (separati da virgole).
 
-È possibile forzare il tipo di operazione inserendo l&#39;attributo **_operation** con i seguenti valori:
+È possibile forzare il tipo di operazione popolando l&#39;attributo **_operation** con i seguenti valori:
 
 * **inserire**: forza l&#39;inserimento del record (la chiave di riconciliazione non è utilizzata),
 * **insertOrUpdate**: aggiorna o inserisce il record in base alla chiave di riconciliazione (modalità predefinita),
-* **update**: aggiorna il record; non fa nulla se i dati non esistono,
-* **delete**: elimina i record,
-* **none**: utilizzato solo per la riconciliazione dei collegamenti, senza aggiornamento o inserimento.
+* **aggiorna**: aggiorna il record; non fa nulla se i dati non esistono,
+* **elimina**: elimina i record,
+* **Nessuno**: utilizzato solo per la riconciliazione dei collegamenti, senza aggiornamento o inserimento.
 
 ### Esempio con il metodo &#39;Write&#39; {#example-with-the--write--method}
 
@@ -567,7 +565,7 @@ Eliminazione di un destinatario:
 
 >[!NOTE]
 >
->Per un&#39;operazione di eliminazione, il documento di input deve contenere solo i campi che costituiscono la chiave di riconciliazione.
+>Per un’operazione di eliminazione, il documento di input deve contenere solo i campi che costituiscono la chiave di riconciliazione.
 
 ### Esempio con il metodo &#39;WriteCollection&#39; {#example-with-the--writecollection--method}
 
@@ -593,9 +591,9 @@ Associazione della cartella a un destinatario in base al nome interno (@name).
 </recipient>
 ```
 
-Gli attributi &quot;_key&quot; e &quot;_operation&quot; possono essere inseriti in un elemento collegato. Il comportamento di questo elemento è lo stesso dell&#39;elemento principale dello schema di input.
+Gli attributi &quot;_key&quot; e &quot;_operation&quot; possono essere immessi in un elemento collegato. Il comportamento su questo elemento è lo stesso dell’elemento principale dello schema di input.
 
-La definizione della chiave dell&#39;entità principale (&quot;nms:Recipient&quot;) è costituita da un campo da una tabella collegata (elemento `<folder>` schema &quot;xtk:folder&quot;) e dall&#39;e-mail.
+La definizione della chiave dell’entità principale (&quot;nms:recipient&quot;) è costituita da un campo da una tabella collegata (elemento `<folder>` schema &quot;xtk:folder&quot;) e dall’e-mail.
 
 >[!NOTE]
 >
@@ -627,9 +625,9 @@ Aggiunta di un destinatario a un gruppo con la tabella di relazione del gruppo (
 >
 >La definizione della chiave non viene immessa nell&#39;elemento `<rcpgroup>` perché una chiave implicita basata sul nome del gruppo è definita nello schema &quot;nms:group&quot;.
 
-### Elementi della raccolta XML {#xml-collection-elements}
+### Elementi di raccolta XML {#xml-collection-elements}
 
-Per impostazione predefinita, tutti gli elementi della raccolta devono essere compilati per aggiornare gli elementi della raccolta XML. I dati del database verranno sostituiti con i dati del documento di input. Se il documento contiene solo gli elementi da aggiornare, è necessario compilare l&#39;attributo &quot;_operation&quot; su tutti gli elementi della raccolta da aggiornare per imporre l&#39;unione con i dati XML del database.
+Per impostazione predefinita, tutti gli elementi della raccolta devono essere compilati per aggiornare gli elementi della raccolta XML. I dati del database verranno sostituiti con i dati del documento di input. Se il documento contiene solo gli elementi da aggiornare, è necessario compilare l&#39;attributo &quot;_operation&quot; su tutti gli elementi di raccolta da aggiornare per forzare un&#39;unione con i dati XML del database.
 
 ### Esempio di messaggi SOAP {#example-of-soap-messages-1}
 
@@ -661,7 +659,7 @@ Per impostazione predefinita, tutti gli elementi della raccolta devono essere co
    </SOAP-ENV:Envelope>
    ```
 
-   Invio con errore:
+   Restituisce con errore:
 
    ```
    <?xml version='1.0'?>
@@ -675,4 +673,3 @@ Per impostazione predefinita, tutti gli elementi della raccolta devono essere co
      </SOAP-ENV:Body>
    </SOAP-ENV:Envelope>
    ```
-
