@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Note sulla versione di Campaign 20.3
 description: Note sulla versione di Campaign 20.3
-feature: Overview
+feature: Panoramica
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
+exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '1949'
+ht-degree: 98%
 
 ---
-
 
 # Versione 20.3{#release-20-3}
 
@@ -30,9 +28,9 @@ _27 ottobre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione dei trigger di Experience Cloud tramite autenticazione oAuth, devi passare all’Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
 
 
 **Novità**
