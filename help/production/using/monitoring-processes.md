@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -44,7 +44,8 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : indicatore specifico del  **Centro messaggi**. Per ulteriori informazioni, consulta [questa sezione](../../message-center/using/monitoring-thresholds.md) .
+* **[!UICONTROL Pending events queued]** : indicatore specifico del  **Centro messaggi**. Per ulteriori informazioni, consulta [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) .
+
 * **[!UICONTROL Memory]** : informazioni relative alla memoria fisica (RAM).
 
    **[!UICONTROL Current value]** : consumo effettivo di memoria.
@@ -101,7 +102,8 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : indicatore specifico del  **Centro messaggi**. Per ulteriori informazioni, consulta [questa sezione](../../message-center/using/monitoring-thresholds.md) .
+* **[!UICONTROL Pending events queued]** : indicatore specifico del  **Centro messaggi**. Per ulteriori informazioni, consulta [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) .
+
 * **[!UICONTROL Load average (1/5/15 minutes)]** : informazioni relative al carico, vale a dire il tasso di utilizzo del trasformatore da parte dei processi in esecuzione sulla macchina nell&#39;ultimo minuto, cinque minuti o quindici minuti
 
    **[!UICONTROL Current value]** : carico effettivo della macchina.
