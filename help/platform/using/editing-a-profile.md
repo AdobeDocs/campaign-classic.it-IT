@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Modifica di un profilo
 description: Modifica di un profilo
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # Modificare un profilo{#editing-a-profile}
 
@@ -98,4 +96,3 @@ L’elenco è configurabile e in genere contiene: l’URL che ha fatto clic, la 
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla funzionalità di tracciamento, consulta [questa pagina](../../delivery/using/delivery-dashboard.md).
-
