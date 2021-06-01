@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campagna
 description: Campagna
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -17,11 +15,11 @@ ht-degree: 3%
 
 # Campagna{#campaign}
 
-I flussi di lavoro descritti di seguito vengono installati con il modulo **Campaign** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../campaign/using/designing-marketing-campaigns.md).
+I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Campaign** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
->Questi flussi di lavoro DEVONO essere avviati per consentire l&#39;esecuzione dei processi della campagna a livello di campagna.
+>Questi flussi di lavoro DEVONO essere avviati affinché i processi della campagna vengano eseguiti a livello di campagna.
 
 <table> 
  <tbody> 
@@ -31,9 +29,9 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Campa
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Calcolo costi</span> <br /> </td> 
+   <td> <span class="uicontrol">Calcolo del costo</span> <br /> </td> 
    <td> <span class="uicontrol">budgetMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro avvia il calcolo delle linee di spesa e di costo per budget, piani, programmi, campagne, consegne e attività.<br /> </td> 
+   <td> Questo flusso di lavoro avvia il calcolo delle linee di spesa e di costo relative a budget, piani, programmi, campagne, consegne e attività.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Stock: Ordini e avvisi</span> <br /> </td> 
@@ -43,15 +41,15 @@ I flussi di lavoro descritti di seguito vengono installati con il modulo **Campa
   <tr> 
    <td> <span class="uicontrol">Processi sulle consegne nelle campagne</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro attiva le consegne approvate e avvia la post-elaborazione del provider di servizi per una consegna esterna. Invia inoltre notifiche di approvazione e promemoria.<br /> </td> 
+   <td> Questo flusso di lavoro attiva le consegne approvate e avvia la post-elaborazione del provider di servizi per una consegna esterna. Invia inoltre notifiche e promemoria di approvazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Processi campagna</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro gestisce i processi per le campagne di marketing (targeting di lancio, estrazione file, ecc.). Crea inoltre flussi di lavoro correlati a campagne ricorrenti e periodiche.<br /> </td> 
+   <td> Questo flusso di lavoro gestisce i lavori per le campagne di marketing (targeting di lanci, estrazione file, ecc.). Crea anche flussi di lavoro relativi a campagne ricorrenti e periodiche.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Processi relativi ai fornitori di servizi</span> <br /> </td> 
+   <td> <span class="uicontrol">Processi dei fornitori di servizi</span> <br /> </td> 
    <td> <span class="uicontrol">fornitoreMgt</span> <br /> </td> 
    <td> Questo flusso di lavoro avvia l'elaborazione del provider (e-mail al router e post-elaborazione) una volta che le consegne sono state approvate. <br /> </td> 
   </tr> 
