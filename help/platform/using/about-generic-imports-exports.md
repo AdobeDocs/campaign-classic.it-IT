@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sulle importazioni e sulle esportazioni generiche
 description: Ulteriori informazioni sulle importazioni e le esportazioni generiche.
-feature: Overview
+feature: Panoramica
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '118'
 ht-degree: 5%
 
 ---
-
 
 # Guida introduttiva ai processi di importazione ed esportazione {#about-generic-imports-exports}
 
@@ -29,5 +27,3 @@ Le operazioni generiche di importazione ed esportazione sono le seguenti:
 1. [Crea un processo](../../platform/using/creating-import-export-jobs.md) di importazione o esportazione.
 1. Configura ed esegui il processo [import](../../platform/using/executing-import-jobs.md) o [export](../../platform/using/executing-export-jobs.md) .
 1. [](../../platform/using/monitoring-jobs-execution.md) Monitora l&#39;esecuzione del lavoro.
-
-
