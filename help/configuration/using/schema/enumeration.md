@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
 
 ---
 
-
 # elemento di enumerazione {#enumeration--element}
 
-## Modello di contenuto {#content-model-5}
+## Modello dei contenuti {#content-model-5}
 
 enumerazione:==(help| valore)
 
@@ -34,29 +32,29 @@ enumerazione:==(help| valore)
 
 `<srcschema>`
 
-## Bambini {#children-5}
+## Figli {#children-5}
 
 * `<help>`
 * `<value>`
 
 ## Descrizione {#description-5}
 
-Questo elemento consente di definire un&#39;enumerazione di valori. Un&#39;enumerazione appartiene allo schema in cui è definita, ma è accessibile tramite un altro schema.
+Questo elemento ci consente di definire un’enumerazione di valori. Un&#39;enumerazione appartiene allo schema in cui è definita, ma è accessibile tramite un altro schema.
 
-## Utilizzo e contesto di utilizzo {#use-and-context-of-use-4}
+## Uso e contesto di utilizzo {#use-and-context-of-use-4}
 
-Le enumerazioni sono definite all&#39;inizio di uno schema (prima della definizione dell&#39;elemento principale).
+Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elemento principale sia definito).
 
-## Descrizione attributo {#attribute-description-5}
+## Descrizione dell&#39;attributo {#attribute-description-5}
 
 * **basetype (stringa)**: tipo dei valori memorizzati nell&#39;enumerazione.
 
    Elenco dei tipi disponibili:
 
    * QUALSIASI
-   * bin
-   * blob
-   * boolean
+   * bidone
+   * macchia
+   * booleano
    * byte
    * CDATA
    * datetime
@@ -70,7 +68,7 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima della definizi
    * float
    * html
    * int64
-   * link
+   * collegamento
    * long
    * promemoria
    * MNTOKEN
@@ -79,14 +77,14 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima della definizi
    * short
    * string
    * orario
-   * periodo
+   * timespan
    * uuid
 
-* **default (string)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
+* **predefinito (stringa)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
 * **desc (stringa)**: descrizione dell&#39;enumerazione.
-* **label (stringa)**: etichetta di enumerazione.
-* **name (stringa)**: nome interno dell&#39;enumerazione.
-* **template (stringa)**: questo attributo definisce un riferimento a un  `<enumeration>` elemento condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **etichetta (stringa)**: etichetta di enumerazione.
+* **nome (stringa)**: nome interno dell&#39;enumerazione.
+* **template (stringa)**: questo attributo definisce un riferimento a un  `<enumeration>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
 
 ## Esempi {#examples-4}
 
