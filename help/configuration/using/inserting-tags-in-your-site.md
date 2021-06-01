@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Inserimento di etichette nel sito
-description: Inserimento di etichette nel sito
+title: Inserimento di tag nel sito
+description: Inserimento di tag nel sito
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 5%
 
 ---
 
-
-# Inserimento di etichette nel sito{#inserting-tags-in-your-site}
+# Inserimento di tag nel sito{#inserting-tags-in-your-site}
 
 ## Metodo semplice {#simple-method}
 
-Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un tag HTML **`<img>`** nel codice sorgente HTML della pagina Web che si desidera tracciare.
+Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un tag HTML **`<img>`** nel codice sorgente HTML della pagina web che si desidera monitorare.
 
 >[!IMPORTANT]
 >
@@ -35,15 +33,15 @@ Il tag inserito contatta il server di reindirizzamento.
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-Quando definite una pagina da tracciare nella console, potete generare un tag di tracciamento Web di esempio da copiare e incollare nel codice sorgente della pagina Web.
+Quando definisci una pagina da tracciare nella console, puoi generare un tag di web tracking di esempio da copiare e incollare nel codice sorgente della pagina web.
 
-Quando si utilizzano i tag di tipo TRANSACTION, tuttavia, è necessario modificare il tag di esempio utilizzando JavaScript per inserire le informazioni sulla transazione (quantità, numero di elementi) e qualsiasi informazione definita da uno schema di estensione.
+Tuttavia, quando si utilizzano i tag di tipo TRANSAZIONE, è necessario modificare il tag di esempio utilizzando JavaScript per inserire le informazioni sulla transazione (quantità, numero di elementi) e qualsiasi informazione definita da uno schema di estensione.
 
 ### Inserimento statico dei tag {#static-insertion-of-tags}
 
-Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare i tag generati dalla console oppure creati manualmente nella sorgente della pagina Web.
+Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare i tag generati dalla console o creati manualmente nell’origine della pagina web.
 
-**Esempio**: inserimento di un tag di tracciamento Web in una pagina in cui è visualizzato un modulo.
+**Esempio**: inserimento di un tag di web tracking in una pagina in cui è visualizzato un modulo.
 
 ```
 <html>
@@ -65,7 +63,7 @@ Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare 
 </html>
 ```
 
-Inserimento di un tag di tracciamento Web di tipo TRANSACTION nella pagina di conferma (&quot;amount.md&quot;).
+Inserimento di un tag di web tracking di tipo TRANSAZIONE nella pagina di conferma (&quot;amount.md&quot;).
 
 ```
 <html>
@@ -87,11 +85,11 @@ Inserimento di un tag di tracciamento Web di tipo TRANSACTION nella pagina di co
 </html>
 ```
 
-### Generazione dinamica di tag di tracciamento Web {#dynamic-generation-of-web-tracking-tags}
+### Generazione dinamica di tag di web tracking {#dynamic-generation-of-web-tracking-tags}
 
-Quando le pagine Web vengono generate in modo dinamico, potete aggiungere il tag di tracciamento Web al momento della generazione della pagina.
+Quando le pagine web vengono generate in modo dinamico, puoi aggiungere il tag di web tracking in fase di generazione delle pagine.
 
-**Esempio**: Tracciamento Web aggiunto ai JSP.
+**Esempio**: Tracciamento Web aggiunto a JSP.
 
 ```
 <%@page import="java.util.Random" %>
@@ -134,9 +132,9 @@ L&#39;URL creato deve rispettare le regole di sintassi definite in [Tag di tracc
 
 >[!NOTE]
 >
->Il reindirizzamento e il monitoraggio Web utilizzano i cookie ed è importante che il server Web che esegue la chiamata HTTP sincrona si trovi nello stesso dominio del server di reindirizzamento. I vari scambi HTTP devono trasmettere i cookie &#39;id&#39;, &#39;uuid&#39; e &#39;uuid230&#39;.
+>Il reindirizzamento e il web tracking utilizzano i cookie ed è importante che il server web che esegue la chiamata HTTP sincrona si trovi nello stesso dominio del server di reindirizzamento. I vari scambi HTTP devono trasmettere i cookie &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
 
-**Esempio**: Generazione dinamica in Java, con autenticazione del destinatario utilizzando il numero di account.
+**Esempio**: Generazione dinamica in Java, con autenticazione dei destinatari utilizzando il loro numero di account.
 
 ```
 [...]
@@ -185,4 +183,3 @@ L&#39;URL creato deve rispettare le regole di sintassi definite in [Tag di tracc
   }
   [...]
 ```
-
