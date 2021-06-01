@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Sincronizzazione dei dati dei connettori di gestione delle relazioni con i clienti
 description: Gestione dei dati tra Campaign e il tuo CRM
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 0%
 
 ---
-
 
 # Sincronizzazione dei dati tra Campaign e CRM {#data-synchronization}
 
@@ -115,7 +113,7 @@ L’attivazione dell’opzione **[!UICONTROL Automatic index]** genera tre varia
    >
    >Queste date vengono visualizzate nel seguente formato: **aaaa/MM/gg hh:mm:ss**.
 
-### Filtra dati {#filtering-data}
+### Filtrare i dati {#filtering-data}
 
 Per garantire un funzionamento efficiente con le varie CRM, è necessario creare i filtri utilizzando le seguenti regole:
 
