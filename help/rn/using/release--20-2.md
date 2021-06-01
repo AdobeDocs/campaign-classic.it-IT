@@ -3,15 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Versione 20.2
 description: Versione 20.2
-feature: Overview
+feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: tm+mt
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -27,7 +26,7 @@ _15 aprile 2021_
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _31 marzo 2021_
 
@@ -202,7 +201,7 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](https://hel
 
 **Miglioramenti**
 
-* La messaggistica transazionale è stata migliorata per offrire una migliore user experience. Ora puoi annullare la pubblicazione di un modello di messaggio transazionale, eliminandolo dalle istanze di esecuzione. [Ulteriori informazioni](../../message-center/using/template-unpublication.md).
+* La messaggistica transazionale è stata migliorata per offrire una migliore user experience. Ora puoi annullare la pubblicazione di un modello di messaggio transazionale, eliminandolo dalle istanze di esecuzione. [Ulteriori informazioni](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Sono disponibili nuove opzioni per impostare limitazioni durante l’invio di e-mail che includono immagini o allegati. Tali protezioni possono evitare problemi di prestazioni, il che è particolarmente utile con la messaggistica transazionale. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
 
