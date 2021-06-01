@@ -1,53 +1,51 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Password persa
 description: Password persa
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 8%
 
 ---
 
-
 # Password persa{#lost-password}
 
-È possibile cambiare o recuperare una password persa.
+È possibile modificare o recuperare una password persa.
 Esistono due possibili scenari:
 
-* [Password persa da un operatore Adobe Campaign ](#password-lost-by-campaign-operator)
-* [Password interna persa](#internal-password-lost)  (solo per i clienti interni)
+* [Password persa da un operatore Adobe Campaign](#password-lost-by-campaign-operator)
+* [Password interna persa](#internal-password-lost)  (solo per clienti on-premise)
 
-## Password persa dall&#39;operatore di campagna {#password-lost-by-campaign-operator}
+## Password persa da un operatore Campaign {#password-lost-by-campaign-operator}
 
-Se un operatore Adobe Campaign  perde la password, è possibile modificarla.
+Se un operatore Adobe Campaign perde la password, puoi modificarla.
 Per farlo, segui la procedura indicata di seguito:
 
 1. Connessione tramite un operatore con diritti di amministratore.
-1. Fare clic con il pulsante destro del mouse su un operatore.
+1. Fai clic con il pulsante destro del mouse su un operatore.
 1. Seleziona **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
-1. Impostare la nuova password dell&#39;operatore. È consigliabile che l&#39;operatore cambi la password al primo riconnessione.
+1. Imposta la nuova password dell&#39;operatore. È consigliabile che l’operatore cambi la password al primo riconnettersi.
 
 ## Password interna persa {#internal-password-lost}
 
 >[!NOTE]
 >
->Questa sezione si applica solo ai clienti interni.
+>Questa sezione si applica solo ai clienti on-premise.
 
 Se la password interna viene persa, è necessario reinizializzarla.
-A tal fine, attenersi alla procedura seguente:
+A questo scopo, applicare la seguente procedura:
 
-1. Modificate il file **/usr/local/neolane/nl6/conf/serverConf.xml**.
+1. Modifica il file **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-1. Vai alla riga **internalPassword**.
+1. Vai alla riga **internalPassword** .
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -63,9 +61,9 @@ A tal fine, attenersi alla procedura seguente:
    <xtk internalPassword=""/
    ```
 
-1. Salvare le modifiche e chiudere il file.
+1. Salva le modifiche e chiudi il file.
 
-1. Configurare la nuova password. A tal fine, immettete i seguenti comandi:
+1. Configura la nuova password. A questo scopo, immetti i seguenti comandi:
 
    ```
    nlserver config -internalpassword
@@ -77,4 +75,4 @@ A tal fine, attenersi alla procedura seguente:
    Confirmation 
    ```
 
-1. È ora possibile utilizzare la nuova password per connettersi in modalità **Internal**.
+1. È ora possibile utilizzare la nuova password per connettersi in modalità **Interna**.
