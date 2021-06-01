@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '"Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"'
 description: '"Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"'
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
 
 ---
-
 
 # Caso di utilizzo: visualizzare un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -88,4 +86,3 @@ La scheda **[!UICONTROL Preview]** ti consente di controllare il rendering del r
 Adatta le informazioni da visualizzare in base alle tue esigenze.
 
 ![](assets/reporting_usecase_3_02.png)
-
