@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Guida introduttiva al tracciamento
 description: Ulteriori informazioni sulle linee guida generali per il tracciamento in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
+exl-id: 43779505-9917-4e99-af25-b00a9d29a645
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
 
 ---
-
 
 # Guida introduttiva al tracciamento dei messaggi {#get-started-tracking}
 
@@ -103,7 +101,7 @@ Questo rapporto combina gli indicatori chiave per il tracciamento del comportame
 
 Le diverse tabelle ti forniscono l’elenco degli indicatori utilizzati nei diversi rapporti e la relativa formula di calcolo a seconda del tipo di consegna. [Ulteriori informazioni](../../reporting/using/indicator-calculation.md)
 
-## Tracking della risoluzione dei problemi {#tracking-troubleshooting}
+## Risoluzione dei problemi di tracciamento {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
