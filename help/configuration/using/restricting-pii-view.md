@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Limitazione della vista PII
-description: Limitazione della vista PII
+title: Limitare la visualizzazione dei dati personali
+description: Limitare la visualizzazione dei dati personali
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
 
 ---
 
-
-# Limita visualizzazione PI{#restricting-pii-view}
+# Limitare visualizzazione PI{#restricting-pii-view}
 
 ## Panoramica {#overview}
 
@@ -92,4 +90,3 @@ Di seguito è riportato un esempio di estensione della tabella di registro per i
 >[!NOTE]
 >
 >Questa restrizione si applica agli utenti non tecnici: un utente tecnico con le relative autorizzazioni sarà in grado di recuperare i dati. Questo metodo non è pertanto sicuro al 100%.
-
