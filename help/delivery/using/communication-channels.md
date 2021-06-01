@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Canali di comunicazione
 description: Crea consegne per inviare messaggi personalizzati su canali diversi.
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 12%
+ht-degree: 19%
 
 ---
 
-
 # Canali di comunicazione{#communication-channels}
 
-Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mailing e misurarne l’efficacia utilizzando vari [report](../../reporting/using/delivery-reports.md) dedicati. Questi messaggi sono progettati e inviati tramite le consegne e possono essere personalizzati per ogni destinatario.
+Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mailing e misurarne l’efficacia utilizzando vari [report](../../reporting/using/delivery-reports.md) dedicati. Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
 
-Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione di comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Questo punto di accesso porta a più funzionalità coperte da Adobe Campaign.
+Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Permette di sfruttare diverse funzionalità incluse in Adobe Campaign.
 
 >[!NOTE]
 >
@@ -29,10 +27,10 @@ L’invio della consegna può essere automatizzato preparando una consegna e/o i
 
 Adobe Campaign offre i seguenti canali di consegna:
 
-1. **Canale** e-mail: Le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](../../delivery/using/about-email-channel.md).
-1. **Canale** direct mailing: le consegne di direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](../../delivery/using/about-direct-mail-channel.md).
+1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](../../delivery/using/about-email-channel.md).
+1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](../../delivery/using/about-direct-mail-channel.md).
 1. **Canale** mobile: le consegne sui canali mobili ti consentono di inviare messaggi SMS o LINE personalizzati alla popolazione target. Fai riferimento a [Canale SMS](../../delivery/using/sms-channel.md).
-1. **Canale** dell&#39;applicazione mobile: le consegne di app mobili ti consentono di inviare notifiche ai sistemi iOS e Android. Fai riferimento al capitolo [Canale app mobile](../../delivery/using/about-mobile-app-channel.md) .
+1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Fai riferimento al capitolo [Canale app mobile](../../delivery/using/about-mobile-app-channel.md) .
 
    Altri canali sono descritti in [questa pagina](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
 
