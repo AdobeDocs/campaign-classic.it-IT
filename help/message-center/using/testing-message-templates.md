@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -57,13 +57,13 @@ Una volta creati gli indirizzi, puoi visualizzarne l’anteprima e la personaliz
 
 ## Dati di personalizzazione {#personalization-data}
 
-È possibile utilizzare i dati nel modello di messaggio per testare la personalizzazione dei messaggi transazionali. Questa funzionalità viene utilizzata per generare un’anteprima o inviare una bozza. Puoi anche visualizzare il rendering del messaggio per vari provider di accesso a Internet. Per ulteriori informazioni, consulta [rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
+È possibile utilizzare i dati nel modello di messaggio per testare la personalizzazione dei messaggi transazionali. Questa funzionalità viene utilizzata per generare un’anteprima o inviare una bozza. Puoi anche visualizzare il rendering del messaggio per vari provider di accesso a Internet. Per ulteriori informazioni, consulta [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
 
 Lo scopo di questi dati è quello di testare i messaggi prima della loro consegna finale. Questi messaggi non coincidono con i dati effettivi da elaborare. Tuttavia, la struttura XML deve essere identica a quella dell&#39;evento memorizzato nell&#39;istanza di esecuzione, come illustrato di seguito:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Queste informazioni consentono di personalizzare il contenuto dei messaggi utilizzando i tag di personalizzazione (per ulteriori informazioni, consulta [Creazione del contenuto del messaggio](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Queste informazioni consentono di personalizzare il contenuto dei messaggi utilizzando i tag di personalizzazione (per ulteriori informazioni, consulta [Creare il contenuto del messaggio](../../message-center/using/creating-the-message-template.md#creating-message-content)).
 
 1. Seleziona il modello di messaggio transazionale.
 
@@ -91,7 +91,7 @@ Dopo aver creato uno o più indirizzi di seed e il corpo del messaggio, puoi vis
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Utilizzando gli indirizzi di seed, puoi anche visualizzare il rendering del messaggio per vari provider di accesso a Internet. Per ulteriori informazioni, consulta [rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
+Utilizzando gli indirizzi di seed, puoi anche visualizzare il rendering del messaggio per vari provider di accesso a Internet. Per ulteriori informazioni, consulta [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
 
 ## Inviare una bozza {#sending-a-proof}
 
