@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Privacy
 description: Ulteriori informazioni sulle best practice da seguire in materia di privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+exl-id: 0a3473bf-0528-486d-a799-8db86fece522
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # Privacy {#privacy}
 
@@ -57,7 +55,7 @@ Per migliorare la sicurezza, nella build 19.1.4 (9032@3a9dc9c) è stato introdot
 >
 >Quando fai clic su un URL firmato non valido, viene restituito il seguente errore: &quot;Impossibile trovare l&#39;URL richiesto &quot;..&quot;.
 
-Inoltre, a partire dalla versione Campaign 20.2 e [!DNL Gold Standard], i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+Inoltre, a partire dalla versione Campaign 20.2 e [!DNL Gold Standard], i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
 
 Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi passaggi su tutti i server Campaign:
 
