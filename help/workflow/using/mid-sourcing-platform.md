@@ -1,13 +1,11 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Piattaforma di mid-sourcing
 description: Piattaforma di mid-sourcing
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 15%
@@ -17,7 +15,7 @@ ht-degree: 15%
 
 # Piattaforma di mid-sourcing{#mid-sourcing-platform}
 
-Il flusso di lavoro riportato di seguito viene installato con il modulo **Piattaforma Media Sourcing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consultare la sezione [sezione](../../installation/using/mid-sourcing-deployment.md).
+Il flusso di lavoro descritto di seguito viene installato con il modulo **Mid-Sourcing platform** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -29,7 +27,7 @@ Il flusso di lavoro riportato di seguito viene installato con il modulo **Piatta
   <tr> 
    <td> <span class="uicontrol">Indicatori di consegna</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna gli indicatori di tracciamento della distribuzione per una distribuzione. Il flusso di lavoro viene attivato ogni ora per impostazione predefinita.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna gli indicatori di tracciamento della consegna per una consegna. Questo flusso di lavoro viene attivato ogni ora per impostazione predefinita.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
