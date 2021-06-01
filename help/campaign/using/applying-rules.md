@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Applicazione delle regole
 description: Applicazione delle regole
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 9%
 
 ---
 
-
 # Applicazione delle regole{#applying-rules}
 
 ## Applicazione di una tipologia a una consegna {#applying-a-typology-to-a-delivery}
 
-Per applicare le regole di tipologia create, è necessario associarle a una tipologia, quindi fare riferimento a questa tipologia nella distribuzione. Per eseguire questa operazione:
+Per applicare le regole di tipologia create, devi associarle a una tipologia e quindi fare riferimento a questa tipologia nella consegna. Per eseguire questa operazione:
 
 1. Creare una tipologia di campagna.
 
-   Le tipologie sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
+   Le tipologie sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** .
 
-1. Vai alla scheda **[!UICONTROL Rules]**, fai clic sul pulsante **[!UICONTROL Add]** e seleziona le regole da applicare con questa tipologia.
+1. Vai alla scheda **[!UICONTROL Rules]** , fai clic sul pulsante **[!UICONTROL Add]** e seleziona le regole da applicare a questa tipologia.
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. Salva la tipologia: viene aggiunto all&#39;elenco delle tipologie esistenti.
-1. Aprire la consegna a cui si desidera applicare le regole.
-1. Aprite le proprietà di consegna e accedete alla scheda **[!UICONTROL Typology]**.
-1. Selezionare la tipologia nell&#39;elenco a discesa.
+1. Salva la tipologia: viene aggiunto all’elenco delle tipologie esistenti.
+1. Apri la consegna a cui desideri applicare le regole.
+1. Apri le proprietà di consegna e accedi alla scheda **[!UICONTROL Typology]** .
+1. Seleziona la tipologia nell’elenco a discesa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
 
@@ -42,35 +40,35 @@ Per applicare le regole di tipologia create, è necessario associarle a una tipo
 
 ## Definizione delle condizioni dell&#39;applicazione {#defining-application-conditions}
 
-È possibile limitare il campo applicazione di una regola in base alle proprie esigenze (ad eccezione delle regole di controllo).
+Puoi limitare il campo di applicazione di una regola in base alle tue esigenze (ad eccezione delle regole di controllo).
 
-È possibile configurare le regole di tipologia in modo che riguardino solo alcune consegne a cui sono collegate, o alcuni destinatari tra le destinazioni di una consegna.
+È possibile configurare le regole di tipologia in modo che riguardino solo alcune consegne a cui sono collegate o alcuni destinatari tra il target di una consegna.
 
-Per definire le condizioni di applicazione di una regola, fare clic sul collegamento **[!UICONTROL Edit the rule application conditions...]** nella scheda **[!UICONTROL General]**.
+Per definire le condizioni di applicazione di una regola, fai clic sul collegamento **[!UICONTROL Edit the rule application conditions...]** nella scheda **[!UICONTROL General]** .
 
-Quindi utilizzate l&#39;editor di query per definire le condizioni di filtro. Nell&#39;esempio seguente, la regola della capacità riguarda solo le consegne con la parola &quot;offerta&quot; nell&#39;etichetta o nelle consegne create prima del 1° aprile 2013.
+Quindi utilizza l’editor delle query per definire le condizioni di filtro. Nell’esempio seguente, la regola della capacità riguarda solo le consegne con la parola &quot;offerta&quot; nell’etichetta o nelle consegne create prima del 1° aprile 2013.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
->Per le regole di filtro, potete selezionare la condizione di applicazione dei criteri di filtro: possono dipendere dalla consegna o dal profilo di consegna. Per ulteriori informazioni, vedere [Condizionamento di una regola di filtro](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule).
+>Per filtrare le regole, puoi selezionare la condizione di applicazione dei criteri di filtro: possono dipendere dalla consegna o dal profilo di consegna. Per ulteriori informazioni, consulta [Condizionamento di una regola di filtro](../../campaign/using/filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Regolazione della frequenza di calcolo {#adjusting-calculation-frequency}
 
-Gli arbitrati vengono eseguiti automaticamente ogni notte tramite il flusso di lavoro di pulizia del database. Tuttavia, i valori possono essere salvati oltre questo periodo.
+Gli arbitrati vengono rieseguiti automaticamente ogni notte tramite il flusso di lavoro di pulizia del database. Tuttavia, i valori possono essere salvati oltre questo periodo.
 
-In effetti, alcuni calcoli utilizzano valori che non cambiano su base giornaliera. Sarebbe pertanto irrilevante ricalcolare i dati ogni giorno e sovraccaricare il database per nulla. Ad esempio, se un processo arricchisce il database di marketing con punteggi di propensione dei clienti e informazioni di acquisto settimanali, non è necessario ricalcolare i dati basati su questi valori ogni giorno.
+In effetti, alcuni calcoli utilizzano valori che non cambiano su base giornaliera. Sarebbe quindi irrilevante ricalcolare i dati ogni giorno e sovraccaricare il database per nulla. Ad esempio, se un processo arricchisce il database di marketing con i punteggi di propensione del cliente e le informazioni di acquisto settimanalmente, i dati basati su questi valori non devono essere ricalcolati ogni giorno.
 
-A questo scopo, il campo **[!UICONTROL Frequency]** della scheda **[!UICONTROL General]** consente di definire un periodo massimo durante il quale viene salvato il targeting. Per impostazione predefinita, il valore **0** indica che il calcolo rimane valido fino alla successiva esecuzione del nuovo arbitrato giornaliero.
+A questo scopo, il campo **[!UICONTROL Frequency]** della scheda **[!UICONTROL General]** ti consente di definire un periodo massimo durante il quale viene salvato il targeting. Per impostazione predefinita, il valore **0** indica che il calcolo rimane valido fino alla successiva esecuzione del nuovo arbitrato giornaliero.
 
-Per salvare i risultati oltre questo periodo, immettere un valore maggiore di 12 nel campo **[!UICONTROL Frequency]**: una volta scaduto tale periodo, tutte le regole vengono applicate di nuovo.
+Per salvare i risultati oltre questo periodo, immetti un valore maggiore di 12 nel campo **[!UICONTROL Frequency]** : una volta scaduto questo periodo, tutte le regole vengono nuovamente applicate.
 
-L&#39;opzione **[!UICONTROL Re-apply the rule at the start of personalization]** consente di applicare la regola automaticamente durante la fase di personalizzazione, anche se il periodo indicato nel campo **[!UICONTROL Frequency]** è ancora valido.
+L’opzione **[!UICONTROL Re-apply the rule at the start of personalization]** ti consente di applicare la regola automaticamente durante la fase di personalizzazione, anche se il periodo indicato nel campo **[!UICONTROL Frequency]** è ancora valido.
 
-## Selezione della fase applicazione della regola {#selecting-the-rule-application-phase}
+## Selezione della fase di applicazione della regola {#selecting-the-rule-application-phase}
 
-Le regole di tipologia vengono applicate in una sequenza specifica durante le fasi di targeting, analisi e personalizzazione delle consegne a cui si riferiscono.
+Le regole di tipologia vengono applicate in una sequenza specifica durante le fasi di targeting, analisi e personalizzazione delle consegne interessate.
 
 ### Ordine di esecuzione {#execution-order}
 
@@ -79,27 +77,27 @@ Nella modalità operativa standard, le regole vengono applicate nella sequenza s
 1. Regole di controllo, se applicate all’inizio del targeting.
 1. Regole di filtro:
 
-   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo / non verificato / indirizzo sul elenco Bloccati / indirizzo messo in quarantena / qualità indirizzo / non verificato.
+   * Regole di applicazione native per la qualifica degli indirizzi: indirizzo definito / indirizzo non verificato / indirizzo sul  elenco Bloccati / indirizzo messo in quarantena / qualità indirizzo.
    * Regole di filtro definite dall’utente.
-   * Regola di deduplicazione sull&#39;indirizzo o sull&#39;identificatore (applicata se necessario).
+   * Regola di deduplicazione sull’indirizzo o sull’identificatore (applicata se necessario).
 
 1. Regole di pressione.
 1. Regole sulla capacità.
 1. Regole di controllo, se applicate alla fine del targeting.
-1. Regole di controllo, se applicate all’inizio della personalizzazione. Se le regole dell&#39;utente (filtro / pressione / capacitivo) sono scadute e devono essere ricalcolate, saranno applicate in questa fase.
+1. Regole di controllo, se applicate all’inizio della personalizzazione. Se le regole dell&#39;utente (filtro / pressione / capacitivo) sono scadute e devono essere ricalcolate, verranno applicate durante questo passaggio.
 1. Regole di controllo, se applicate al termine della personalizzazione.
 
 >[!NOTE]
 >
->Se state lavorando con il modulo Interazione campagna, le regole di idoneità delle offerte vengono applicate contemporaneamente alle regole di filtraggio (per le offerte trovate nei contorni di consegna) o durante la fase di personalizzazione, durante la chiamata al motore delle offerte.
+>Se lavori con il modulo di interazione di Campaign, le regole di idoneità delle offerte vengono applicate contemporaneamente alle regole di filtro (per le offerte che si trovano nei contorni di consegna) o durante la fase di personalizzazione, durante la chiamata al motore di offerta.
 
-È possibile adattare la sequenza di esecuzione delle regole che hanno lo stesso tipo utilizzando il campo appropriato nella scheda **[!UICONTROL General]** della regola. Quando più regole vengono eseguite durante la stessa fase di elaborazione dei messaggi, è possibile configurarne la sequenza di esecuzione nel campo **[!UICONTROL Execution sequence]**.
+Puoi adattare la sequenza di esecuzione delle regole che hanno lo stesso tipo utilizzando il campo appropriato nella scheda **[!UICONTROL General]** della regola. Quando più regole vengono eseguite durante la stessa fase di elaborazione dei messaggi, puoi configurarne la sequenza di esecuzione nel campo **[!UICONTROL Execution sequence]** .
 
-Ad esempio, una regola di pressione con un ordine di esecuzione pari a 20 verrà eseguita prima di una regola di pressione con un ordine di esecuzione pari a 30.
+Ad esempio, una regola di pressione con un ordine di esecuzione di 20 verrà eseguita prima di una regola di pressione con un ordine di esecuzione di 30.
 
 ### Regole di controllo {#control-rules}
 
-Per le regole **[!UICONTROL Control]**, puoi decidere in quale punto del ciclo di vita della distribuzione verrà applicata la regola (prima o dopo il targeting, all&#39;inizio della personalizzazione, alla fine dell&#39;analisi). Selezionare il valore da applicare nell&#39;elenco a discesa del campo **[!UICONTROL Phase]**, nella scheda **[!UICONTROL General]** della regola di tipologia.
+Per le regole **[!UICONTROL Control]**, puoi decidere in quale punto del ciclo di vita della consegna verrà applicata la regola (prima o dopo il targeting, all’inizio della personalizzazione, alla fine dell’analisi). Seleziona il valore da applicare nell’elenco a discesa del campo **[!UICONTROL Phase]** nella scheda **[!UICONTROL General]** della regola di tipologia.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -111,13 +109,13 @@ I valori possibili sono:
 
 * **[!UICONTROL After targeting]**
 
-   Se è necessario conoscere il volume del target per applicare la regola di controllo, selezionare questa fase.
+   Se devi conoscere il volume del target per applicare la regola di controllo, seleziona questa fase.
 
-   Ad esempio, la regola di controllo **[!UICONTROL Check proof size]** si applica dopo ogni fase di targeting: questa regola impedisce la personalizzazione dei messaggi in presenza di troppi destinatari di prova.
+   Ad esempio, la regola di controllo **[!UICONTROL Check proof size]** si applica dopo ogni fase di targeting: questa regola impedisce la personalizzazione dei messaggi se sono presenti troppi destinatari di bozza.
 
 * **[!UICONTROL At the start of personalization]**
 
-   Questa fase deve essere selezionata se il controllo riguarda l&#39;approvazione della personalizzazione dei messaggi. La personalizzazione dei messaggi viene effettuata durante la fase di analisi.
+   Questa fase deve essere selezionata se il controllo riguarda l’approvazione della personalizzazione dei messaggi. La personalizzazione dei messaggi viene eseguita durante la fase di analisi.
 
 * **[!UICONTROL At the end of the analysis]**
 
@@ -127,23 +125,22 @@ I valori possibili sono:
 
 ### Controllo del traffico SMTP in uscita {#control-outgoing-smtp-traffic}
 
-Come opzione, potete utilizzare il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) questa affinità. Questo consente di limitare il numero di e-mail per consegne specifiche verso computer o indirizzi di output.
+Come opzione, puoi utilizzare il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) questa affinità. Ciò ti consente di limitare il numero di e-mail per consegne specifiche a computer o indirizzi di output.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
->La gestione dell&#39;affinità non si applica alle tipologie **[!UICONTROL Filtering]**.\
->Le affinità sono definite nel file di configurazione dell&#39;istanza, sul server Adobe Campaign . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/about-initial-configuration.md).
+>La gestione dell’affinità non si applica alle tipologie **[!UICONTROL Filtering]**.\
+>Le affinità sono definite nel file di configurazione dell’istanza, sul server Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/about-initial-configuration.md).
 
 ### Ottimizzazione delle campagne e marketing distribuito {#campaign-optimization-and-distributed-marketing}
 
-La scheda **[!UICONTROL Distributed Marketing]** consente di definire la ricompilazione di tipologie e/o regole da applicare quando una campagna condivisa viene ordinata e/o riservata. Le tipologie/regole definite per un&#39;entità locale (collegate a quelle definite per l&#39;entità centrale) sostituiscono le regole/tipologie collegate all&#39;entità centrale. La nuova mappatura consente di adattare le regole di entità centrale alle entità locali che ordinano la campagna.
+La scheda **[!UICONTROL Distributed Marketing]** ti consente di definire la mappatura di nuove tipologie e/o regole che si applicano quando una campagna condivisa viene ordinata e/o riservata. Le tipologie/regole definite per un’entità locale (collegate a quelle definite per l’entità centrale) sostituiscono le regole/tipologie collegate all’entità centrale. La nuova mappatura consente di adattare le regole di entità centrale alle entità locali che ordinano la campagna.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
->Nelle regole di tipologia e tipologia, la scheda **[!UICONTROL Distributed Marketing]** viene aggiunta se la licenza include questa opzione: controllare il contratto di licenza.\
->Per ulteriori informazioni su Distributed Marketing, fare riferimento a [Informazioni su Distributed marketing](../../campaign/using/about-distributed-marketing.md).
-
+>Nelle tipologie e nelle regole di tipologia, la scheda **[!UICONTROL Distributed Marketing]** viene aggiunta se la licenza include questa opzione: controlla il contratto di licenza.\
+>Per ulteriori informazioni su Marketing distribuito, consulta [Informazioni sul marketing distribuito](../../campaign/using/about-distributed-marketing.md).
