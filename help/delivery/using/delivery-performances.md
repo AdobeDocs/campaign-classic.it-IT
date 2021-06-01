@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Best practice per la consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e sulle best practice.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Best practice per la consegna {#delivery-performances}
 
@@ -22,7 +20,7 @@ Per garantire le corrette prestazioni delle consegne, oltre ai controlli da eseg
 **Argomenti correlati:**
 
 * [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
-* [Risoluzione dei problemi relativi alle consegne](../../delivery/using/delivery-troubleshooting.md)
+* [Risoluzione dei problemi nelle consegne](../../delivery/using/delivery-troubleshooting.md)
 * [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
 
 ## Best practice per le prestazioni {#best-practices-performance}
@@ -53,6 +51,6 @@ Se le prestazioni di consegna sono sbagliate, puoi controllare:
 
 * **Dimensione della consegna**: Il completamento delle consegne di grandi dimensioni può richiedere più tempo. Gli elementi figlio MTA sono configurati per gestire una dimensione batch predefinita, che funziona per la maggior parte delle istanze, ma devono essere controllati quando le consegne sono costantemente lente.
 * **Destinazione della consegna**: Il divieto di prestazioni di consegna è influenzato da errori di mancato recapito, che vengono gestiti in base alla configurazione dei tentativi. Maggiore è il numero di errori, più sono necessari tentativi.
-* **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può essere interessata. Puoi anche verificare la reputazione dell’IP e i problemi di recapito messaggi. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-deliverability.md) e la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* **Il carico** complessivo della piattaforma: Quando vengono inviate diverse consegne di grandi dimensioni, la piattaforma globale può essere interessata. Puoi anche verificare la reputazione dell’IP e i problemi di recapito messaggi. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-deliverability.md) e la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 La manutenzione della piattaforma e del database può anche influire sulle prestazioni di invio della consegna. Per ulteriori informazioni, consulta [questa pagina](../../production/using/database-performances.md).
