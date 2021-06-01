@@ -1,18 +1,16 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurazione dell’integrazione con Adobe Experience Manager
 description: Scopri come configurare l’integrazione di Campaign-AEM
 audience: integrations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
-
 
 # Configurazione dell’integrazione{#configuring-the-integration}
 
@@ -26,7 +24,7 @@ Per avviare la configurazione in Adobe Campaign, effettua le seguenti operazioni
 1. [Configurare l’account esterno](#configure-the-external-account)
 1. [Configurare il filtro delle risorse AEM](#configure-aem-resources-filtering)
 
-Per configurazioni avanzate, ad esempio gestione di campi e blocchi di personalizzazione. Fare riferimento alla documentazione di Adobe Experience Manager [](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
+Per configurazioni avanzate, ad esempio gestione di campi e blocchi di personalizzazione. Consulta la documentazione di Adobe Experience Manager [](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
 ### Installa il pacchetto di integrazione AEM in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -54,12 +52,12 @@ Devi configurare una zona di sicurezza per questo operatore per la connessione a
 >
 >Consigliamo vivamente di creare una zona di sicurezza dedicata a AEM per evitare problemi di sicurezza. Per ulteriori informazioni, consulta la Guida all&#39;installazione [a1/>.](../../installation/using/security-zones.md)
 
-Se l’istanza Campaign è ospitata da Adobe, contatta il team [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) . Se utilizzi Campaign on-premise, segui i passaggi seguenti:
+Se l’istanza Campaign è ospitata da Adobe, contatta il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) . Se utilizzi Campaign on-premise, segui i passaggi seguenti:
 
 1. Apri il file di configurazione **serverConf.xml** .
 1. Accedi all&#39;attributo **allowUserPassword** della zona di sicurezza selezionata e impostalo su **true**.
 
-   Questo consentirà a Adobe Experience Manager di collegare Adobe Campaign tramite login/password.
+   Questo consentirà ad Adobe Experience Manager di collegare Adobe Campaign tramite login/password.
 
 ### Configurare l’account esterno {#configure-the-external-account}
 
@@ -123,11 +121,10 @@ Per avviare la configurazione in Adobe Experience Manager, effettua le seguenti 
 
    Per informazioni su come installare FeaturePack, consulta la documentazione [Adobe Experience Manager](https://helpx.adobe.com/experience-manager/aem-previous-versions.html).
 
-1. Collega Adobe Experience Manager ad Adobe Campaign configurando un **Cloud Service** dedicato.
+1. Connetti Adobe Experience Manager ad Adobe Campaign configurando un **Cloud Service** dedicato.
 
    Per informazioni su come collegare entrambe le soluzioni tramite Cloud Services, consulta la documentazione di Adobe Experience Manager [a1/> .](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager)
 
 1. Configura il **servizio Externalizer**.
 
    Per informazioni su come configurarlo, consulta la documentazione di Adobe Experience Manager [a1/>.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)
-
