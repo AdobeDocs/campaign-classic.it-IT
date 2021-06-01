@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Introduzione all’importazione e l’esportazione dei dati
 description: Ulteriori informazioni sull’importazione e l’esportazione di dati in Campaign Classic.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 12%
 
 ---
-
 
 # Introduzione all’importazione e l’esportazione dei dati {#get-started-data-import-export}
 
