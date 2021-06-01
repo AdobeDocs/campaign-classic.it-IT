@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Elenco dei report
-description: Elenco dei report
+title: Elenco dei rapporti
+description: Elenco dei rapporti
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
 
-
 # Elenco dei report{#list-of-reports}
 
 ## Report sulle consegne {#reports-on-deliveries}
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa sezione](../../reporting/using/delivery-reports.md).
+Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../reporting/using/delivery-reports.md).
 
 <table> 
  <tbody> 
@@ -31,73 +29,73 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
    <td> <strong>Schema</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Attività utente (attività destinatario)<br /> </td> 
+   <td> Attività utente (recipientActivity)<br /> </td> 
    <td> Suddivisione di aperture, clic e transazioni per periodo di tempo.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Velocità di consegna (throughput)<br /> </td> 
-   <td> Diametri di distribuzione, in messaggi/ora e Mbit/s.<br /> </td> 
+   <td> Velocità effettiva di consegna (throughput)<br /> </td> 
+   <td> Grafici a velocità effettiva di consegna, in messaggi/ora e Mbit/s.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Errori e rimbalzi (errori)<br /> </td> 
-   <td> Bounts e non-deliverables per causa e dominio.<br /> </td> 
+   <td> Errori e mancati recapiti (errori)<br /> </td> 
+   <td> Rimbalzi e non risultati finali per causa e dominio.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Indicatori di tracciamento (deliveryFeedback)<br /> </td> 
-   <td> Riepilogo degli indicatori chiave per tenere traccia del comportamento del destinatario.<br /> </td> 
+   <td> Riepilogo degli indicatori chiave per il tracciamento del comportamento dei destinatari.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Indicatori di tracciamento (mobileAppDeliveryFeedback)<br /> </td> 
-   <td> Indicatori di tracciamento della consegna a un'applicazione mobile.<br /> </td> 
+   <td> Indicatori di tracciamento di una consegna a un'applicazione mobile.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Browser (browserStatistics)<br /> </td> 
-   <td> Statistiche sui browser utilizzati dai destinatari che hanno fatto clic nei messaggi.<br /> </td> 
+   <td> Statistiche sui browser utilizzati dai destinatari che hanno fatto clic sui messaggi.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
    <td> Condivisione su social network (deliveryForward)<br /> </td> 
-   <td> Condivisione di dati statistici relativi all'attività e alla posta aperta.<br /> </td> 
+   <td> Condivisione di statistiche di apertura di attività e posta elettronica.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic a caldo (a sinistra)<br /> </td> 
+   <td> Hot click (foto)<br /> </td> 
    <td> Visualizza il messaggio e le percentuali di clic sovrapposte.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rapporto ipotesi (deliveryHypoeses)<br /> </td> 
+   <td> Rapporto di ipotesi (deliveryHypothetic)<br /> </td> 
    <td> Visualizza il riepilogo delle misure in base alle ipotesi di consegna.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Statistiche di consegna (statisticsPerDelivery)<br /> </td> 
-   <td> Statistiche (messaggi elaborati, messaggi inviati, rimbalzi rigidi, rimbalzi morbidi, clic, annullamento dell'iscrizione) per dominio e-mail.<br /> </td> 
+   <td> Statistiche (messaggi elaborati, messaggi inviati, rimbalzi rigidi, rimbalzi non recapitati, clic, annullamenti di abbonamenti) per dominio e-mail.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Condivisione di statistiche sulle attività (forwardActivities)<br /> </td> 
-   <td> Analisi delle attività di condivisione, delle aperture e delle sottoscrizioni per periodo di tempo.<br /> </td> 
+   <td> Analisi delle attività di condivisione, delle aperture e degli abbonamenti per periodo di tempo.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Statistiche di tracciamento (trackingStatistics)<br /> </td> 
-   <td> Apri, fai clic sul report tassi transazione.<br /> </td> 
+   <td> Apri, fai clic su e rapporto tassi di transazione.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Riepilogo consegna (deliverySending)<br /> </td> 
-   <td> Riepilogo degli indicatori di consegna: target, esclusione e messaggi inviati.<br /> </td> 
+   <td> Riepilogo consegne (deliverySending)<br /> </td> 
+   <td> Sintesi degli indicatori di consegna: target, esclusione e messaggi inviati.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> Riepilogo consegna (deliveryStatistics)<br /> </td> 
-   <td> Tabella di riepilogo per le consegne selezionate: Destinazioni, esclusioni e messaggi inviati.<br /> </td> 
+   <td> Riepilogo della consegna (deliveryStatistics)<br /> </td> 
+   <td> Tabella di riepilogo per le consegne selezionate: Target, esclusioni e messaggi inviati.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -107,12 +105,12 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
   </tr> 
   <tr> 
    <td> Tasso di reattività (deliveryFeedbackSocial)<br /> </td> 
-   <td> Tasso di reattività di distribuzione e disaggregazione della reazione.<br /> </td> 
+   <td> Tasso di reattività e disaggregazione della reazione.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL e fate clic su throughput (topUrlDelivery)<br /> </td> 
-   <td> URL più reattivi e flussi di clic associati.<br /> </td> 
+   <td> URL e throughput di clic (topUrlDelivery)<br /> </td> 
+   <td> URL reattivi e flussi di clic associati.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
  </tbody> 
@@ -120,11 +118,11 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
 
 ## Rapporti sulle campagne {#reports-on-campaigns}
 
-I report sulle campagne riguardano i dati nella tabella **nms:operation**.
+I rapporti sulle campagne riguardano i dati presenti nella tabella **nms:operation**.
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
+Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -137,53 +135,53 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
    <td> La suddivisione di aperture, clic e transazioni per periodo di tempo dipende da Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Velocità di consegna (operationThroughput)<br /> </td> 
-   <td> I grafici della velocità effettiva di distribuzione, in messaggi e-mail/ora e Mbit/s, dipendono da Campaign.<br /> </td> 
+   <td> Velocità effettiva di consegna (operationThroughput)<br /> </td> 
+   <td> I grafici dei throughput di consegna, in mail/ora e Mbit/s, dipendono da Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Spese campagna (budgetOperationExpenses)<br /> </td> 
-   <td> Visualizza in dettaglio gli elementi della linea della campagna, a seconda di Campaign.<br /> </td> 
+   <td> Visualizza in dettaglio le voci della campagna, a seconda di Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Errori e rimbalzi (operationErrors)<br /> </td> 
-   <td> I punteggi e i non risultati finali per causa e dominio dipendono da Campaign.<br /> </td> 
+   <td> Errori e mancati recapiti (operationErrors)<br /> </td> 
+   <td> I rimbalzi e i non consegnabili per causa e dominio dipendono da Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Esplorazione delle righe dei costi (budgetExplorerOperation)<br /> </td> 
-   <td> Analisi descrittiva delle linee di costo, dipende da MRM.<br /> </td> 
+   <td> Esplorazione delle linee dei costi (budgetExplorerOperation)<br /> </td> 
+   <td> L'analisi descrittiva delle linee di costo dipende da MRM.<br /> </td> 
   </tr> 
   <tr> 
    <td> Indicatori di tracciamento (operationFeedback)<br /> </td> 
-   <td> Panoramica degli indicatori di tracciamento chiave: Consente di aprire, fare clic e effettuare transazioni, a seconda della campagna.<br /> </td> 
+   <td> Panoramica degli indicatori di tracciamento chiave: Aperture, clic e transazioni dipendono da Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Condivisione tramite social network (operationForward)<br /> </td> 
-   <td> La condivisione di attività e le statistiche di posta aperta dipendono da Campaign.<br /> </td> 
+   <td> Condivisione sui social network (operationForward)<br /> </td> 
+   <td> La condivisione delle statistiche di apertura delle attività e della posta dipende da Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rapporto ipotesi (operationHypoeses)<br /> </td> 
-   <td> Visualizza il riepilogo delle misure di ipotesi per le consegne della campagna, a seconda di Campaign.<br /> </td> 
+   <td> Rapporto di ipotesi (operationHypothetic)<br /> </td> 
+   <td> Visualizza il riepilogo delle misurazioni delle ipotesi per le consegne della campagna, a seconda di Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Condivisione di statistiche attività (forwardActivityOpt)<br /> </td> 
-   <td> L'analisi delle attività di condivisione, delle aperture e delle sottoscrizioni per periodo di tempo, dipende da Campaign.<br /> </td> 
+   <td> Condivisione di statistiche di attività (forwardActivityOpt)<br /> </td> 
+   <td> L’analisi delle attività di condivisione, delle aperture e degli abbonamenti per periodo di tempo dipende da Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Riepilogo consegna (operationStatistics)<br /> </td> 
-   <td> Grafico di riepilogo delle consegne della campagna: Destinazioni, esclusioni e messaggi inviati.<br /> </td> 
+   <td> Riepilogo della consegna (operationStatistics)<br /> </td> 
+   <td> Grafico di riepilogo delle consegne della campagna: Target, esclusioni e messaggi inviati.<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL e fate clic su throughput (operationTopUrlDelivery)<br /> </td> 
-   <td> La maggior parte degli URL reattivi e dei flussi di clic associati dipendono da Campaign.<br /> </td> 
+   <td> URL e throughput di clic (operationTopUrlDelivery)<br /> </td> 
+   <td> La maggior parte degli URL reattivi e dei flussi di clic associati dipende da Campaign.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Rapporti sui servizi {#reports-on-services}
 
-I rapporti sui servizi riguardano i dati nella tabella **nms:service**.
+I rapporti sui servizi riguardano i dati presenti nella tabella **nms:service**.
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relative guide.
 
@@ -195,32 +193,32 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
   </tr> 
   <tr> 
    <td> Acquisizioni di ventole (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Quali applicazioni Web hanno permesso le acquisizioni potenziali? Dipende dal componente aggiuntivo Social marketing.<br /> </td> 
+   <td> Quali applicazioni web hanno permesso le acquisizioni potenziali? Dipende dal componente aggiuntivo Social marketing.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Suddivisione delle sottoscrizioni (mobileAppDistribution)<br /> </td> 
-   <td> La suddivisione delle iscrizioni attive per applicazione mobile dipende dal componente aggiuntivo per canale app mobile.<br /> </td> 
+   <td> Disaggregazione delle sottoscrizioni (mobileAppDistribution)<br /> </td> 
+   <td> La suddivisione degli abbonamenti attivi per applicazione mobile dipende dal componente aggiuntivo per canale app mobile.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tracciamento iscrizione (subscriptionsProgress)<br /> </td> 
-   <td> Evoluzione delle sottoscrizioni a servizi di informazione<br /> </td> 
+   <td> Tracciamento sottoscrizione (subscriptionsProgress)<br /> </td> 
+   <td> Evoluzione degli abbonamenti ai servizi di informazione<br /> </td> 
   </tr> 
   <tr> 
    <td> Tasso di reattività (socialReactionRate)<br /> </td> 
    <td> Quali sono i tassi di reattività per le ultime consegne? Dipende dal componente aggiuntivo Social marketing.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Velocità di reattività (mobileAppReactivityRate)<br /> </td> 
+   <td> Tasso di reattività (mobileAppReactivityRate)<br /> </td> 
    <td> Il tasso di reattività per le ultime consegne dipende dal componente aggiuntivo per canale app mobile.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Report budget {#budget-reports}
+## Rapporti di bilancio {#budget-reports}
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
+Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -230,38 +228,38 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
    <td> <strong>Schema</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Costi collegati ai programmi (budgetProgramCost)<br /> </td> 
+   <td> Costi collegati al programma o ai programmi (budgetProgramCost)<br /> </td> 
    <td> Ripartizione dei costi del programma.<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
-   <td> Evoluzione budget (budgetEvolution)<br /> </td> 
+   <td> Evoluzione del budget (budgetEvolution)<br /> </td> 
    <td> Evoluzione dei costi di bilancio per livello di impegno.<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
    <td> Evoluzione cumulativa del budget (budgetCumulativeEvolution)<br /> </td> 
-   <td> Evoluzione dei costi di bilancio cumulati disaggregati per livello di importo commi<br />. </td> 
+   <td> Evoluzione dei costi di bilancio cumulati ripartiti per livello di commi<br /> tment. </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> Esplorazione delle righe dei costi (budgetExplorerBudget)<br /> </td> 
-   <td> Analisi descrittiva delle linee di costo.<br /> </td> 
+   <td> Esplorazione delle linee di costo (budgetExplorerBudget)<br /> </td> 
+   <td> Analisi descrittiva delle linee dei costi.<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> Esplorazione delle righe dei costi (budgetExplorer)<br /> </td> 
-   <td> Analisi descrittiva delle linee di costo.<br /> </td> 
+   <td> Esplorazione delle linee dei costi (budgetExplorer)<br /> </td> 
+   <td> Analisi descrittiva delle linee dei costi.<br /> </td> 
    <td> nms:costLine<br /> </td> 
   </tr> 
   <tr> 
-   <td> Esplorazione delle righe dei costi (budgetExplorerPlan)<br /> </td> 
-   <td> Analisi descrittiva delle linee di costo.<br /> </td> 
+   <td> Esplorazione delle linee di costo (budgetExplorerPlan)<br /> </td> 
+   <td> Analisi descrittiva delle linee dei costi.<br /> </td> 
    <td> nms:plan<br /> </td> 
   </tr> 
   <tr> 
-   <td> Esplorazione delle righe dei costi (budgetExplorerProgram)<br /> </td> 
-   <td> Analisi descrittiva delle linee di costo.<br /> </td> 
+   <td> Esplorazione delle linee di costo (budgetExplorerProgram)<br /> </td> 
+   <td> Analisi descrittiva delle linee dei costi.<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
@@ -274,9 +272,9 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
 
 ## Rapporti sulle simulazioni {#reports-on-simulations}
 
-I rapporti sulle simulazioni riguardano i dati nella tabella **nms:simulation**.
+I rapporti sulle simulazioni riguardano i dati presenti nella tabella **nms:simulation**.
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
 Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relative guide.
 
@@ -295,8 +293,8 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
    <td> Suddivisione delle offerte nella simulazione, per classificazione.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Riepilogo simulazione (dlvSimuLossesSummary)<br /> </td> 
-   <td> Riepilogo dei volumi di simulazione ed esclusioni.<br /> </td> 
+   <td> Riepilogo della simulazione (dlvSimuLossesSummary)<br /> </td> 
+   <td> Riepilogo dei volumi e delle esclusioni di simulazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> Statistiche di sovrapposizione (dlvSimuOverlapping)<br /> </td> 
@@ -309,13 +307,13 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
  </tbody> 
 </table>
 
-## Rapporti sulle applicazioni Web {#reports-on-web-applications}
+## Rapporti sulle applicazioni web {#reports-on-web-applications}
 
-I report sulle applicazioni Web riguardano i dati nella tabella **nms:WebApp**.
+I rapporti sulle applicazioni web riguardano i dati presenti nella tabella **nms:WebApp**.
 
-I report incorporati forniti da  Adobe Campaign sono disponibili nella tabella seguente.
+I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa sezione](../../web/using/about-web-applications.md).
+Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa sezione](../../web/using/about-web-applications.md).
 
 <table> 
  <tbody> 
@@ -328,7 +326,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
    <td> Descrizione della struttura del sondaggio, dipende dal componente aggiuntivo di Survey Manager.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Main (surveyProperties)<br /> </td> 
+   <td> Principale (surveyProperties)<br /> </td> 
    <td> Proprietà sondaggio<br /> </td> 
   </tr> 
   <tr> 
@@ -338,9 +336,9 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consultare [questa 
  </tbody> 
 </table>
 
-## Altri report ootb {#other-ootb-reports}
+## Altri rapporti ootb {#other-ootb-reports}
 
-Vengono forniti anche i seguenti rapporti incorporati. Per ulteriori informazioni, consultare il documento sulle funzionalità che interessano.
+Vengono inoltre forniti i seguenti rapporti incorporati. Per ulteriori informazioni, consulta il documento sulle funzionalità che riguardano.
 
 <table> 
  <tbody> 
@@ -351,24 +349,23 @@ Vengono forniti anche i seguenti rapporti incorporati. Per ulteriori informazion
   </tr> 
   <tr> 
    <td> Analisi delle offerte (offerAnalysis)<br /> </td> 
-   <td> Analisi delle offerte per data e canale, a seconda del componente aggiuntivo Interaction.<br /> </td> 
+   <td> L'analisi dell'offerta per data e canale dipende dal componente aggiuntivo Interaction.<br /> </td> 
    <td> nms:offer<br /> </td> 
   </tr> 
   <tr> 
    <td> Efficienza di ricommercializzazione (remarketingEffect)<br /> </td> 
-   <td> Misurazione dell'efficienza di remarketing<br /> </td> 
+   <td> Misurazione dell’efficienza di remarketing<br /> </td> 
    <td> nms:webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> Cronologia delle acquisizioni di prospettiva sociale (socialVisitorStatistics)<br /> </td> 
-   <td> La storia delle acquisizioni di potenziali su Twitter e Facebook dipende dal componente aggiuntivo Social marketing.<br /> </td> 
+   <td> Storia delle acquisizioni di prospettiva social (socialVisitorStatistics)<br /> </td> 
+   <td> La cronologia delle acquisizioni potenziali di Twitter e Facebook dipende dal componente aggiuntivo Social marketing.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tracciamento delle proposte recenti (RecentProposition)<br /> </td> 
-   <td> Tracciamento delle posizioni in tempo reale<br /> </td> 
+   <td> Tracking delle proposte recenti (recentiProposition)<br /> </td> 
+   <td> Tracciamento delle proposte in tempo reale<br /> </td> 
    <td> nms:propositionRcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>
-
