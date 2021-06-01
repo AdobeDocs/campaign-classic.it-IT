@@ -3,17 +3,16 @@ solution: Campaign Classic
 product: campaign
 title: Modelli di hosting
 description: Scopri i modelli di hosting di Campaign
-feature: Overview
+feature: Panoramica
 role: Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
+exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '624'
 ht-degree: 2%
 
 ---
-
 
 # Modelli di hosting{#hosting-models}
 
@@ -31,7 +30,7 @@ Adobe Campaign può essere implementato come servizio gestito: tutti i component
 
 In qualità di cliente in hosting, la maggior parte dei passaggi di installazione e configurazione viene eseguita per Adobe. Puoi accedere alle seguenti sezioni per personalizzare la tua implementazione:
 
-* Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/configuring-multibranding.md).
+* Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installa la console client: fare riferimento a [a questa sezione](../../installation/using/installing-the-client-console.md).
 * Ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice leggendo la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
 * Configura le opzioni di Campaign: fare riferimento a [a questa sezione](../../installation/using/configuring-campaign-options.md).
@@ -62,7 +61,7 @@ Quando viene implementato come modello ibrido, il software della soluzione Adobe
 In qualità di cliente ibrido, la maggior parte dei passaggi di installazione e configurazione viene eseguita per Adobe. Puoi accedere alle seguenti sezioni per personalizzare la tua implementazione:
 
 * Configurare i messaggi transazionali: fare riferimento a [a questa sezione](../../message-center/using/transactional-messaging-architecture.md).
-* Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/configuring-multibranding.md).
+* Configura il tracciamento e gli URL della pagina speculare per marchio. Per i messaggi transazionali, consulta [questa sezione](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installa la console client: fare riferimento a [a questa sezione](../../installation/using/installing-the-client-console.md).
 * Installa pacchetti incorporati: fare riferimento a [a questa sezione](../../installation/using/installing-campaign-standard-packages.md).
 * Consegna: configura [regole MX](../../installation/using/email-deliverability.md#mx-configuration) e [formati e-mail](../../installation/using/email-deliverability.md#managing-email-formats). Ulteriori informazioni sugli strumenti di recapito messaggi e sulle best practice leggendo la [documentazione dettagliata](../../delivery/using/about-deliverability.md).
