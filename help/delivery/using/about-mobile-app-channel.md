@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Informazioni sul canale app mobile in Adobe Campaign Classic
 description: Questa sezione fornisce informazioni generali specifiche per il canale app mobile in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Guida introduttiva al canale app mobile{#about-mobile-app-channel}
 
@@ -103,4 +101,3 @@ Per verificare che funzioni correttamente, utilizza i seguenti comandi:
    ```
 
 Con il connettore iOS HTTP/2, l&#39;MTA, il server web e il server di flusso di lavoro devono essere in grado di contattare gli APN sulla porta 443.
-
