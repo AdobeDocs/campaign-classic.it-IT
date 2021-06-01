@@ -7,11 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1462'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +25,7 @@ Gli operatori sono collegati a una zona di sicurezza dal relativo profilo nella 
 >
 >Questa procedura è limitata alle distribuzioni **on-premise**.
 >
->In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html), puoi utilizzare l’interfaccia self-service della zona di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service della zona di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it)
 >
 >Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’elenco consentiti.
 
@@ -98,7 +97,7 @@ Tutti i diritti che definiscono una zona sono i seguenti:
 >
 >In una definizione di zona, ogni attributo con il valore **true** riduce la sicurezza.
 
-Quando utilizzi Message Center (Centro messaggi), se sono presenti più istanze di esecuzione, devi creare una zona di sicurezza aggiuntiva con l’attributo **sessionTokenOnly** definito come **true**, in cui devono essere aggiunti solo gli indirizzi IP necessari. Per ulteriori informazioni sulla configurazione delle istanze, consulta [questo documento](../../message-center/using/creating-a-shared-connection.md).
+Quando utilizzi Message Center (Centro messaggi), se sono presenti più istanze di esecuzione, devi creare una zona di sicurezza aggiuntiva con l’attributo **sessionTokenOnly** definito come **true**, in cui devono essere aggiunti solo gli indirizzi IP necessari. Per ulteriori informazioni sulla configurazione delle istanze, consulta [questo documento](../../message-center/using/configuring-instances.md).
 
 ## Best practice per le aree di protezione {#best-practices-for-security-zones}
 
