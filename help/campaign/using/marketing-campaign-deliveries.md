@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Consegne di campagne di marketing
 description: Ulteriori informazioni sulle consegne delle campagne di marketing
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Consegne di campagne di marketing {#marketing-campaign-deliveries}
 
@@ -118,7 +116,7 @@ L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle
 
 ## Gestione dei documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, eccetera. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
