@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione e gestione di attività
 description: Creazione e gestione di attività
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3732'
 ht-degree: 0%
 
 ---
-
 
 # Creazione e gestione di attività{#creating-and-managing-tasks}
 
@@ -511,4 +509,3 @@ Di seguito sono riportate le fasi di un ciclo completo di vita dell&#39;attivit�
    >[!NOTE]
    >
    >Al termine di un&#39;attività, il suo ciclo di vita può essere reinizializzato dalla persona responsabile. A questo scopo, apri l’attività e fai clic sul collegamento **[!UICONTROL Reset task to execute it again...]** nella parte inferiore del dashboard.
-
