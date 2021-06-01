@@ -1,28 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Best practice per la distribuzione delle campagne
+title: Best practice per la consegna delle campagne
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 25%
 
 ---
 
-
 # Best practice di consegna {#delivery-best-practices}
 
-Scopri le best practice relative alla progettazione e all&#39;invio di materiale  Adobe Campaign. Utilizzate i collegamenti di seguito per navigare tra gli argomenti e trovare istruzioni.
+Scopri le best practice relative alla progettazione e all’invio delle consegne con Adobe Campaign. Utilizza i collegamenti seguenti per navigare tra gli argomenti e trovare indicazioni.
 
 <table>
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="Ottimizza" src="assets/do-not-localize/optimize.svg" width="60px"/>
+      <img alt="Ottimizzare" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
@@ -71,7 +69,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
     </a>
     </div>
     <p>
-    <em>La popolazione mirata è una chiave</em>
+    <em>La popolazione mirata è la chiave</em>
     <p>
   </td>
    <td>
@@ -89,7 +87,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
   </td>
   <td>
     <a href="track-and-monitor.md">
-      <img alt="Ottimizza" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
+      <img alt="Ottimizzare" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="track-and-monitor.md">
@@ -97,7 +95,7 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
     </a>
     </div>
     <p>
-    <em>Controllo dell'invio e risoluzione dei problemi</em>
+    <em>Controllare l’invio e la risoluzione dei problemi</em>
     <p>
   </td>
 </tr>
@@ -105,8 +103,8 @@ Scopri le best practice relative alla progettazione e all&#39;invio di materiale
 
 Vedi anche:
 
-* [Guida introduttiva all&#39;implementazione](../../delivery/using/about-deliverability.md)
+* [Introduzione al recapito messaggi](../../delivery/using/about-deliverability.md)
 
 * [Passaggi per la creazione di consegne](../../delivery/using/steps-about-delivery-creation-steps.md)
 
-* [Elenco di controllo sulla sicurezza e sulla privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
+* [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
