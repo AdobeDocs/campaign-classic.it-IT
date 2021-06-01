@@ -1,15 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Ottimizzare la consegna dei messaggi
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -31,7 +30,7 @@ Diversi fattori possono influenzare direttamente le prestazioni del server e ral
 
 * Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Segui le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Se sei idoneo, puoi sfruttare le funzionalità [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) per monitorare la piattaforma, utilizzando le funzionalità [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
+* Se sei idoneo, puoi sfruttare le funzionalità [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma, utilizzando le funzionalità [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
 
 ## Verifica della configurazione di rete {#network-config}
 
