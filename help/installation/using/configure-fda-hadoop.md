@@ -1,55 +1,53 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Configurare l'accesso ad Hadoop
-description: Scoprite come configurare l'accesso ad Hadoop in FDA
+title: Configurare l’accesso al Hadoop
+description: Scopri come configurare l’accesso al Hadoop in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
+# Configurare l&#39;accesso al Hadoop {#configure-access-to-hadoop}
 
-# Configurare l&#39;accesso ad Hadoop {#configure-access-to-hadoop}
+Utilizza l’opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi riportati di seguito per configurare l’accesso al Hadoop.
 
-Utilizzate l&#39;opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso ad Hadoop.
+1. Configura [database di Hadoop](#configuring-hadoop)
+1. Configura il Hadoop [account esterno](#hadoop-external) in Campaign
 
-1. Configurare [database Hadoop](#configuring-hadoop)
-1. Configurare l&#39;account Hadoop [esterno](#hadoop-external) in Campaign
+## Configurazione del Hadoop 3.0 {#configuring-hadoop}
 
-## Configurazione di Hadoop 3.0 {#configuring-hadoop}
+La connessione a un database esterno di Hadoop in FDA richiede le seguenti configurazioni sul server Adobe Campaign. Questa configurazione è disponibile sia per Windows che per Linux.
 
-La connessione a un database esterno Hadoop in FDA richiede le seguenti configurazioni sul server Adobe Campaign . Questa configurazione è disponibile per Windows e Linux.
-
-1. Scaricate i driver ODBC per Hadoop a seconda della versione del sistema operativo in uso. I driver si trovano in [questa pagina](https://www.cloudera.com/downloads.html).
+1. Scaricare i driver ODBC per Hadoop a seconda della versione del sistema operativo in uso. I driver si trovano in [questa pagina](https://www.cloudera.com/downloads.html).
 
 1. È quindi necessario installare i driver ODBC e creare un DSN per la connessione Hive. Le istruzioni sono disponibili in [questa pagina](https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/Cloudera-ODBC-Driver-for-Apache-Hive-Install-Guide.pdf)
 
-1. Dopo aver scaricato e installato i driver ODBC, è necessario riavviare il Campaign Classic. A questo scopo, eseguite il comando seguente:
+1. Dopo aver scaricato e installato i driver ODBC, è necessario riavviare Campaign Classic. A questo scopo, esegui il seguente comando:
 
    ```
    systemctl stop nlserver.service
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic, puoi quindi configurare il tuo account esterno [!DNL Hadoop]. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consultare [questa sezione](#hadoop-external).
+1. In Campaign Classic puoi quindi configurare l’account esterno [!DNL Hadoop]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#hadoop-external).
 
 ## Account esterno hadoop {#hadoop-external}
 
-L&#39;account esterno [!DNL Hadoop] consente di collegare l&#39;istanza Campaign al database esterno di Hadoop.
+L’account esterno [!DNL Hadoop] ti consente di collegare l’istanza Campaign al database esterno del Hadoop.
 
-1. In Campaign Classic, configura il tuo account esterno [!DNL Hadoop]. In **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, configura l’account esterno [!DNL Hadoop]. Dal menu **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Selezionare **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
 
-1. Configurate l&#39;account esterno **[!UICONTROL Hadoop]**, dovete specificare:
+1. Configura l’account esterno **[!UICONTROL Hadoop]** , devi specificare:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -67,29 +65,29 @@ L&#39;account esterno [!DNL Hadoop] consente di collegare l&#39;istanza Campaign
 
 Il connettore supporta le seguenti opzioni ODBC:
 
-| Nome | Valore |
+| Nome | Elemento “value” |
 |---|---|
 | ODBCMgr | iODBC |
-| warehouse | 02/01/14 |
+| magazzino | 02/01/04 |
 
 Il connettore supporta anche le seguenti opzioni Hive:
 
-| Nome | Valore | Descrizione |
+| Nome | Elemento “value” | Descrizione |
 |---|---|---|
-| bulkKey | BLOB di Azure o chiave di accesso DataLake | Per wasb:// o wasbs:// caricatori di massa (ad es. se lo strumento di caricamento di massa inizia con wasb:// o wasbs://). <br>È la chiave di accesso per il blob o DataLake bucket per il caricamento di massa. |
-| hdfsPort | numero di porta <br>impostato per impostazione predefinita su 8020 | Per il carico in massa HDFS (ad esempio, se lo strumento di caricamento in blocco inizia con webhdfs:// o webhdfss://). |
-| buketsNumber | 20 | Numero di bucket durante la creazione di una tabella cluster. |
-| fileFormat | PARQUET | Formato file predefinito per le tabelle di lavoro. |
+| bulkKey | Chiave di accesso BLOB di Azure o DataLake | Per caricatori di massa wasb:// o wasbs:// (ad esempio se lo strumento di caricamento di massa inizia con wasb:// o wasbs://). <br>È la chiave di accesso per il bucket BLOB o DataLake per il caricamento in serie. |
+| hdfsPort | numero di porta <br>impostato per impostazione predefinita su 8020 | Per il caricamento in serie HDFS (cioè se lo strumento di caricamento in serie inizia con webhdfs:// o webhdfss://). |
+| bubenNumber | 20 | Numero di bucket durante la creazione di una tabella cluster. |
+| fileFormat | PARQUET | Formato di file predefinito per le tabelle di lavoro. |
 
 
-## Configurazione di Hadoop 2.1 {#configure-access-hadoop-2}
+## Configurazione del Hadoop 2.1 {#configure-access-hadoop-2}
 
-Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
+Per connettersi al Hadoop 2.1, segui i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
 
 ### Hadoop 2.1 per Windows {#for-windows}
 
-1. Installare driver ODBC e [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) per Windows.
-1. Creare il DSN (Nome origine dati) eseguendo lo strumento Amministratore origine dati ODBC. È disponibile un esempio DSN di sistema per Hive da modificare.
+1. Installa i driver ODBC e [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886) per Windows.
+1. Creare il DSN (Data Source Name) eseguendo lo strumento Amministratore origine dati ODBC. È disponibile un esempio DSN di sistema per Hive da modificare.
 
    ```
    Description: vorac (or any name you like)
@@ -100,23 +98,23 @@ Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di segu
    User/Password: admin/<your password here>
    ```
 
-1. Create l&#39;account esterno Hadoop, come descritto in [questa sezione](#hadoop-external).
+1. Crea l&#39;account esterno del Hadoop, come descritto in [questa sezione](#hadoop-external).
 
 ### Hadoop 2.1 per Linux {#for-linux}
 
-1. Installate unixodbc per Linux.
+1. Installa unixodbc per Linux.
 
    ```
    apt-get install unixodbc
    ```
 
-1. Scaricare e installare driver ODBC per Apache Hive da HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
+1. Scarica e installa driver ODBC per Apache Hive da HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
    ```
 
-1. Controllare il percorso dei file ODBC.
+1. Controllare la posizione dei file ODBC.
 
    ```
    root@campadpac71:/tmp# odbcinst -j
@@ -130,9 +128,9 @@ Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di segu
    SQLSETPOSIROW Size.: 8
    ```
 
-1. Create il DSN (Nome origine dati) e modificate il file odbc.ini. Quindi, create un DSN per la connessione Hive.
+1. Crea il DSN (Data Source Name) e modifica il file odbc.ini. Quindi, crea un DSN per la tua connessione Hive.
 
-   Di seguito è riportato un esempio per HDInsight per impostare una connessione denominata &quot;viral&quot;:
+   Ecco un esempio per HDInsight per impostare una connessione chiamata &quot;virale&quot;:
 
    ```
    [ODBC Data Sources]
@@ -153,20 +151,20 @@ Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di segu
 
    >[!NOTE]
    >
-   >Il parametro **UseNativeQuery** è molto importante. Campaign è consapevole dell&#39;Hive e non funzionerà correttamente se non viene impostato UseNativeQuery. In genere, il driver o il connettore Hive SQL riscrive le query e altera l&#39;ordine delle colonne.
+   >Il parametro **UseNativeQuery** qui è molto importante. Campaign riconosce Hive e non funziona correttamente se non è impostato UseNativeQuery. In genere, il driver o il connettore Hive SQL riscriveranno le query e manometteranno l&#39;ordine delle colonne.
 
-   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizzare AuthMech=6 per l&#39;autenticazione utente/password, come descritto [here](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   La configurazione dell&#39;autenticazione dipende dalla configurazione Hive/Hadoop. Ad esempio, per HD Insight, utilizza AuthMech=6 per l&#39;autenticazione utente/password, come descritto [qui](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
-1. Esportare le variabili.
+1. Esporta le variabili.
 
    ```
    export ODBCINI=/etc/myodbc.ini
    export ODBCSYSINI=/etc/myodbcinst.ini
    ```
 
-1. Impostare i driver di Hortonworks tramite /usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini.
+1. Imposta i driver Hortonworks tramite /usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini.
 
-   Devi usare UTF-16 per poter connettersi con Campaign e unix-odbc (libodbcinst).
+   Devi utilizzare UTF-16 per connettersi con Campaign e unix-odbc (libodbcinst).
 
    ```
    [Driver]
@@ -187,5 +185,4 @@ Se è necessario connettersi ad Hadoop 2.1, seguire i passaggi descritti di segu
    isql vorac -v
    ```
 
-1. Create l&#39;account esterno Hadoop, come descritto in [questa sezione](#hadoop-external).
-
+1. Crea l&#39;account esterno del Hadoop, come descritto in [questa sezione](#hadoop-external).
