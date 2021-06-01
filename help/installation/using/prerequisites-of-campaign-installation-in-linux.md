@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
 description: Prerequisiti per l’installazione di Campaign in Linux
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
 
 ---
-
 
 # Prerequisiti per installare Campaign su Linux{#prerequisites-of-campaign-installation-in-linux}
 
@@ -176,7 +174,7 @@ Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla
 
 L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
 
-###  Oracle{#oracle}
+###  Oracle {#oracle}
 
 Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
