@@ -1,50 +1,48 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Esecuzione di un flusso di lavoro
 description: Esecuzione di un flusso di lavoro
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+exl-id: b5aa5663-1902-4f50-9202-783e73a28838
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
 
 ---
 
-
 # Esecuzione di un flusso di lavoro{#workflow-execution}
 
-La sezione seguente contiene informazioni su problemi comuni relativi all’esecuzione dei flussi di lavoro e su come risolverli.
+La sezione seguente presenta informazioni sui problemi comuni relativi all’esecuzione dei flussi di lavoro e su come risolverli.
 
-Per ulteriori informazioni sui flussi di lavoro, consulta le sezioni seguenti:
+Per ulteriori informazioni sui flussi di lavoro, consulta queste sezioni:
 
 * [Informazioni sui flussi di lavoro](../../workflow/using/about-workflows.md)
 * [Avvio di un flusso di lavoro](../../workflow/using/starting-a-workflow.md)
 * [Ciclo di vita di un flusso di lavoro](../../workflow/using/workflow-life-cycle.md)
-* [Best practice per l&#39;utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
+* [Best practice per l’utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
 
 ## Inizia il prima possibile nelle campagne {#start-as-soon-as-possible-in-campaigns}
 
-In alcuni casi, i flussi di lavoro eseguiti da una campagna non iniziano quando si fa clic sul pulsante **[!UICONTROL Start]**. Anziché iniziare, lo stato diventa &quot;Inizia il prima possibile&quot;.
+In alcuni casi, i flussi di lavoro eseguiti da una campagna non si avviano facendo clic sul pulsante **[!UICONTROL Start]** . Invece di iniziare, passa a uno stato &quot;Avvia il prima possibile&quot;.
 
-Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di seguito per risolverlo:
+Ci possono essere diverse cause per questo problema, segui i passaggi seguenti per risolverlo:
 
-1. Controllare lo stato del [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) flusso di lavoro tecnico. Questo flusso di lavoro consente di gestire i processi o i flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non verranno avviati/interrotti. Riavviatelo per riprendere i flussi di lavoro delle campagne.
+1. Controlla lo stato del flusso di lavoro tecnico [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) . Questo flusso di lavoro gestisce processi o flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non verranno avviati/interrotti. Riavvialo per riprendere l’esecuzione dei flussi di lavoro della campagna.
 
-   Per ulteriori informazioni sul monitoraggio dei flussi di lavoro tecnici, consultare [questa pagina](../../workflow/using/monitoring-technical-workflows.md).
+   Per ulteriori informazioni sul monitoraggio dei flussi di lavoro tecnici, consulta [questa pagina](../../workflow/using/monitoring-technical-workflows.md).
 
    >[!NOTE]
    >
-   >Una volta riavviato il flusso di lavoro, assicurarsi di eseguire le attività in sospeso (fare clic con il pulsante destro del mouse sull&#39;attività **[!UICONTROL Scheduler]** / **[!UICONTROL Execute pending task(s) now]**) per verificare se ha nuovamente esito negativo su una delle attività.
+   >Una volta riavviato il flusso di lavoro, assicurati di eseguire le attività in sospeso (fai clic con il pulsante destro del mouse sull’ **[!UICONTROL Scheduler]** attività / **[!UICONTROL Execute pending task(s) now]**) per verificare se non riesce di nuovo su una qualsiasi delle attività.
 
-   Se il flusso di lavoro continua a non riuscire, controllare il registro di controllo per verificare la presenza di errori specifici, risolvere i problemi di conseguenza, quindi riavviare il flusso di lavoro.
+   Se il flusso di lavoro continua a non riuscire, controlla il registro di controllo per individuare un errore specifico, risolvi di conseguenza, quindi riavvia il flusso di lavoro.
 
-1. Controllare lo stato del modulo **[!UICONTROL wfserver]** nella scheda **[!UICONTROL Monitoring]**, accessibile dalla home page Campaign Classic (vedere [Processi di monitoraggio](../../production/using/monitoring-processes.md)). Questo processo è responsabile dell&#39;esecuzione di tutti i flussi di lavoro.
+1. Controlla lo stato del modulo **[!UICONTROL wfserver]** nella scheda **[!UICONTROL Monitoring]**, accessibile dalla home page di Campaign Classic (consulta [Processi di monitoraggio](../../production/using/monitoring-processes.md)). Questo processo è responsabile dell&#39;esecuzione di tutti i flussi di lavoro.
 
-   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** sia avviato sul server applicazione principale utilizzando il comando seguente.
+   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** sia avviato sul server dell&#39;applicazione principale utilizzando il comando seguente.
 
    ```
    nlserver pdump
@@ -54,7 +52,7 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
    [...]
    ```
 
-   Se il modulo non è in esecuzione, contatta  Assistenza clienti di Adobe. Se disponete di un&#39;installazione locale, un utente amministratore deve riavviare il servizio utilizzando il comando seguente.
+   Se il modulo non è in esecuzione, contatta l’Assistenza clienti Adobe. Se disponi di un’installazione on-premise, un utente amministratore deve riavviare il servizio utilizzando il comando seguente.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -62,32 +60,32 @@ Il problema può essere dovuto a diverse cause, seguite i passaggi indicati di s
 
    >[!NOTE]
    >
-   >Sostituire **`<instancename>`** con il nome dell&#39;istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
+   >Sostituisci **`<instancename>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
    >`[path of application]nl6/conf/config-<instancename>.xml`
 
-   Per ulteriori informazioni su come riavviare i moduli, consultare [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
+   Per ulteriori informazioni su come riavviare i moduli, consulta [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
 
-1. Verificare che il numero **di processi di campagna in esecuzione** nell&#39;istanza sia superiore alla soglia. Esiste un limite definito dall&#39;opzione [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) per il numero di processi di campagna che possono essere eseguiti parallelamente sull&#39;istanza. Una volta raggiunto questo limite, il flusso di lavoro rimane nello stato &quot;Avvia il prima possibile&quot;, a condizione che il numero di flussi di lavoro in esecuzione sia superiore al limite.
+1. Controlla se il **numero di processi della campagna che eseguono** sull&#39;istanza è superiore alla soglia. Esiste un limite definito dall’opzione [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) per il numero di processi di campagna che possono essere eseguiti in parallelo sull’istanza. Al raggiungimento di questo limite, il flusso di lavoro rimane nello stato &quot;Avvia il prima possibile&quot; purché il numero di flussi di lavoro in esecuzione sia superiore al limite.
 
-   Per risolvere questo problema, interrompere i flussi di lavoro indesiderati ed eliminare le consegne non riuscite. Se la soglia è stata raggiunta, ciò consentirà l&#39;esecuzione di nuovi processi.
+   Per risolvere questo problema, interrompi i flussi di lavoro indesiderati ed elimina le consegne non riuscite. Se la soglia è stata raggiunta, questo consentirà l&#39;esecuzione di nuovi processi.
 
-   Per verificare il numero di flussi di lavoro in esecuzione dell&#39;istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Per controllare il numero di flussi di lavoro in esecuzione nell’istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]** . Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[!IMPORTANT]
    >
-   >Aumentare la soglia di opzione **[!UICONTROL NmsOperation_LimitConcurrency]** potrebbe causare problemi di prestazioni nell&#39;istanza. In ogni caso, non eseguire questa operazione autonomamente e contattare il vostro contatto Adobe Campaign .
+   >L’aumento della soglia di opzione **[!UICONTROL NmsOperation_LimitConcurrency]** può causare problemi di prestazioni nell’istanza. In ogni caso, non eseguire questa operazione da solo e contatta il tuo contatto Adobe Campaign.
 
-Per ulteriori informazioni su come monitorare i flussi di lavoro, consultare [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
+Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
 
 ## Inizio in corso {#start-in-progress}
 
-Se i flussi di lavoro non sono in esecuzione e il loro stato è **Inizia in corso**, ciò potrebbe significare che il modulo del flusso di lavoro non è avviato.
+Se i flussi di lavoro non sono in esecuzione e il loro stato è **Start in progress**, ciò potrebbe significare che il modulo del flusso di lavoro non viene avviato.
 
-Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti passaggi:
+Per verificare questo e per avviare il modulo, se necessario, esegui i seguenti passaggi:
 
-1. Controllare lo stato del modulo **[!UICONTROL wfserver]** nella scheda **[!UICONTROL Monitoring]**, accessibile dalla home page Campaign Classic (vedere [Processi di monitoraggio](../../production/using/monitoring-processes.md)).
+1. Controlla lo stato del modulo **[!UICONTROL wfserver]** nella scheda **[!UICONTROL Monitoring]**, accessibile dalla home page di Campaign Classic (consulta [Processi di monitoraggio](../../production/using/monitoring-processes.md)).
 
-   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** sia avviato sul server applicazione principale utilizzando il comando seguente.
+   Un utente amministratore può anche verificare che il modulo **wfserver@`<instance>`** sia avviato sul server dell&#39;applicazione principale utilizzando il comando seguente.
 
    ```
    nlserver pdump
@@ -97,9 +95,9 @@ Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti p
    [...]
    ```
 
-   Per ulteriori informazioni su come monitorare i moduli, consultare [questa sezione](../../production/using/usual-commands.md#monitoring-commands-).
+   Per ulteriori informazioni su come monitorare i moduli, consulta [questa sezione](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Se il modulo non è in esecuzione, contatta  Assistenza clienti di Adobe. Se disponete di un&#39;installazione locale, un amministratore deve riavviarla utilizzando il comando seguente.
+1. Se il modulo non è in esecuzione, contatta l’Assistenza clienti Adobe. Se disponi di un’installazione on-premise, un amministratore deve riavviarla utilizzando il comando seguente.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -107,15 +105,15 @@ Per controllare questo e avviare il modulo, se necessario, eseguire i seguenti p
 
    >[!NOTE]
    >
-   >Sostituire **`<instancename>`** con il nome dell&#39;istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
+   >Sostituisci **`<instancename>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
    >`[path of application]nl6/conf/config-<instancename>.xml`
 
-   Per ulteriori informazioni su come riavviare i moduli, consultare [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
+   Per ulteriori informazioni su come riavviare i moduli, consulta [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
 
 ## Flusso di lavoro non riuscito {#failed-workflow}
 
-Se un flusso di lavoro ha esito negativo, effettuate le seguenti operazioni:
+Se un flusso di lavoro non riesce, procedi come segue:
 
-1. Controllare il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, consultare le sezioni [Esecuzione del flusso di lavoro di monitoraggio](../../workflow/using/monitoring-workflow-execution.md) e [Visualizza registri](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
-1. Monitorare i flussi di lavoro tecnici. Per ulteriori informazioni, fare riferimento alla sezione [presente](../../workflow/using/monitoring-technical-workflows.md).
-1. Individuare eventuali errori nelle singole attività del flusso di lavoro.
+1. Controlla il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, consulta le sezioni [Esecuzione del flusso di lavoro di monitoraggio](../../workflow/using/monitoring-workflow-execution.md) e [Visualizza registri](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) .
+1. Monitorare i flussi di lavoro tecnici. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/monitoring-technical-workflows.md).
+1. Cerca gli errori nelle singole attività del flusso di lavoro.
