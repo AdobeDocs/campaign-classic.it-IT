@@ -1,24 +1,22 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Avviso
-description: Avviso
+title: Attività Alert
+description: Attività Alert
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 21698e85-7b58-4bde-bbd2-0ee06ac90307
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 3%
 
 ---
 
+# Attività Alert{#alert}
 
-# Avviso{#alert}
-
-Un&#39;attività **Alert** invia un messaggio a un gruppo di operatori. Funziona allo stesso modo di un&#39;attività di approvazione, ma in questo caso non è prevista alcuna risposta.
+Un&#39;attività **Alert** invia un messaggio a un gruppo di operatori. Funziona allo stesso modo di un’attività di approvazione, ma non è prevista alcuna risposta in questo caso.
 
 ![](assets/edit_alerte.png)
 
-Un avviso non è persistente e pertanto non è visibile dalla console. Gli operatori del gruppo assegnato devono avere un indirizzo e-mail completo per ricevere la notifica. La configurazione di questa attività è simile a quella di **Approval**. Il modello di consegna predefinito utilizzato per avvisare gli operatori è &#39;alertAssignee&#39;.
+Un avviso non è permanente e pertanto non è visibile dalla console. Per ricevere la notifica, gli operatori del gruppo assegnato devono disporre di un indirizzo e-mail completo. La configurazione di questa attività è simile a quella di un **Approvazione**. Il modello di consegna predefinito utilizzato per avvisare gli operatori è &quot;alertAssignee&quot;.
