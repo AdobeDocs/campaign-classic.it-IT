@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Inviare, monitorare e tracciare SMS
 description: Scopri come inviare, monitorare e tracciare gli SMS in Campaign
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Inviare, monitorare e tenere traccia delle consegne SMS{#sms-properties}
 
@@ -23,8 +21,8 @@ Per approvare il messaggio e inviarlo ai destinatari della consegna da creare, f
 
 Il processo dettagliato di convalida e invio di una consegna è presentato nelle sezioni seguenti:
 
-* [Convalida la consegna](../../delivery/using/steps-validating-the-delivery.md)
-* [Invia la consegna](../../delivery/using/steps-sending-the-delivery.md)
+* [Convalidare la consegna](../../delivery/using/steps-validating-the-delivery.md)
+* [Inviare la consegna](../../delivery/using/steps-sending-the-delivery.md)
 
 ## Parametri avanzati {#advanced-parameters}
 
@@ -63,8 +61,8 @@ Sono disponibili le seguenti opzioni:
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
 * [Monitorare una consegna](../../delivery/using/about-delivery-monitoring.md)
-* [Comprendere gli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sul tracking dei messaggi](../../delivery/using/about-message-tracking.md)
+* [Errori di consegna](../../delivery/using/understanding-delivery-failures.md)
+* [Informazioni sul tracciamento dei messaggi](../../delivery/using/about-message-tracking.md)
 
 ## Elabora messaggi in entrata {#processing-inbound-messages}
 
