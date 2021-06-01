@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Configurazione di rete
-description: Informazioni sulle linee guida per la comunicazione del sistema
+title: Configurazione della rete
+description: Scopri le linee guida per la comunicazione del sistema
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
 
 ---
 
-
-# Configurazione di rete{#network-configuration}
+# Configurazione della rete{#network-configuration}
 
 ## Comunicazione tra i processi {#communication-between-processes}
 
 Alcuni processi dell&#39;applicazione devono comunicare con altri o accedere alla LAN e a Internet. Ciò significa che alcune porte TCP devono essere aperte per questi processi.
 
-Utilizzate la porta Apache Tomcat incorporata come priorità (per impostazione predefinita 8080) per le comunicazioni interne tra i vari server applicazioni di una piattaforma Adobe Campaign .
+Utilizza la porta Apache Tomcat incorporata come priorità (8080 per impostazione predefinita) per le comunicazioni interne tra i vari server delle applicazioni di una piattaforma Adobe Campaign.
 
 ### Server di consegna {#delivery-server}
 
-Per il server di consegna (**nlserver mta**), devono essere aperte le seguenti porte:
+Per il server di consegna (**nlserver mta**), è necessario aprire le seguenti porte:
 
 <table> 
  <tbody> 
@@ -37,7 +35,7 @@ Per il server di consegna (**nlserver mta**), devono essere aperte le seguenti p
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> Traffico SMTP per la trasmissione di posta elettronica.<br /> </td> 
+   <td> Traffico SMTP per la trasmissione della posta elettronica.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (dominio)<br /> </td> 
@@ -46,11 +44,11 @@ Per il server di consegna (**nlserver mta**), devono essere aperte le seguenti p
   </tr> 
   <tr> 
    <td> 38000/tcp (porta predefinita)<br /> </td> 
-   <td> gateway SMS<br /> </td> 
-   <td> Utilizzato per inviare il traffico SMS al router NetSize SMS [opzione].<br /> </td> 
+   <td> Gateway SMS<br /> </td> 
+   <td> Utilizzato per inviare il traffico SMS al router SMS NetSize [opzione].<br /> </td> 
   </tr> 
   <tr> 
-   <td> 7777/udp<br /> </td> 
+   <td> 777/udp<br /> </td> 
    <td> Server di statistiche<br /> </td> 
    <td> Accesso al server di statistiche.<br /> </td> 
   </tr> 
@@ -71,19 +69,19 @@ Per il processo di recupero della posta in entrata (**nlserver inMail**), è nec
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> Server di posta interna<br /> </td> 
-   <td> Traffico POP3 per raccogliere i messaggi di rimbalzo.<br /> </td> 
+   <td> Traffico POP3 per raccogliere messaggi non recapitati.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Server di posta interna<br /> </td> 
-   <td> Traffico SMTP per inviare i messaggi di rimbalzo rimanenti che non vengono elaborati automaticamente dalle regole predefinite.<br /> </td> 
+   <td> Traffico SMTP per l'invio di messaggi non recapitati rimanenti che non vengono elaborati automaticamente dalle regole predefinite.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Server dell’applicazione {#application-server}
 
-Per il server applicazione (**nlserver web**), devono essere aperte le seguenti porte:
+Per l&#39;application server (**nlserver web**), è necessario aprire le seguenti porte:
 
 <table> 
  <tbody> 
@@ -95,16 +93,16 @@ Per il server applicazione (**nlserver web**), devono essere aperte le seguenti 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> Traffico HTTP o HTTPS (incluso per l'offerta di recapito).<br /> </td> 
+   <td> Traffico HTTP o HTTPS (incluso per l'offerta di recapito messaggi).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Quando diversi server applicazioni di una piattaforma Adobe Campaign  devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) invece di quella della porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
+Quando diversi server di applicazioni di una piattaforma Adobe Campaign devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) anziché la porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
 
-### Stato consegna SMS {#sms-delivery-status}
+### Stato della consegna SMS {#sms-delivery-status}
 
-Per tenere traccia delle consegne di SMS (**nlserver sms**), è necessario aprire la seguente porta:
+Per tenere traccia delle consegne SMS (**nlserver sms**), la seguente porta deve essere aperta:
 
 <table> 
  <tbody> 
@@ -115,15 +113,15 @@ Per tenere traccia delle consegne di SMS (**nlserver sms**), è necessario aprir
   </tr> 
   <tr> 
    <td> 38000/tcp (porta predefinita)<br /> </td> 
-   <td> gateway SMS<br /> </td> 
-   <td> Interrompe lo stato della coda di consegna gestita dal gateway SMS NetSize [opzione].<br /> </td> 
+   <td> Gateway SMS<br /> </td> 
+   <td> Esegue una query sullo stato della coda di consegna gestito dal gateway SMS NetSize [opzione].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Client RTF {#rich-client}
 
-Per il client Adobe Campaign avanzato  (**nlclient**), devono essere aperte le seguenti porte:
+Per il client rich Adobe Campaign (**nlclient**), le seguenti porte devono essere aperte:
 
 <table> 
  <tbody> 
@@ -142,7 +140,7 @@ Per il client Adobe Campaign avanzato  (**nlclient**), devono essere aperte le s
 
 ## Accesso al database {#database-access}
 
-Tutti i componenti che utilizzano il database devono essere in grado di connettersi ad esso. Questo è il caso della maggior parte dei componenti, ad eccezione del server di reindirizzamento, che può funzionare da solo, e del client Win32 sottile, che utilizza HTTP (o HTTPS) solo per comunicare con il server dell&#39;applicazione.
+Tutti i componenti che utilizzano il database devono essere in grado di connettersi ad esso. Questo è il caso della maggior parte dei componenti, ad eccezione del server di reindirizzamento, che può funzionare da solo, e del thin client Win32, che utilizza HTTP (o HTTPS) solo per comunicare con il server dell&#39;applicazione.
 
 Le porte predefinite sono le seguenti:
 
@@ -156,7 +154,7 @@ Le porte predefinite sono le seguenti:
   <tr> 
    <td> <strong> Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
-   <td> Server database<br /> </td> 
+   <td> Server del database<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
@@ -175,7 +173,7 @@ Le porte predefinite sono le seguenti:
 
 ## Accesso esterno {#external-access}
 
-Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in modo da poter visualizzare le campagne e-mail eseguite direttamente da  Adobe Campaign. Ciò significa che alcune porte devono essere aperte per i componenti.
+Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in modo da poter visualizzare le campagne e-mail eseguite direttamente da Adobe Campaign. Ciò significa che alcune porte devono essere aperte per i componenti.
 
 ### Server di reindirizzamento {#redirection-server}
 
@@ -194,7 +192,7 @@ Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in mod
 
 ### Server Web esterno {#external-web-server}
 
-Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seguenti porte:
+Questo server ospita moduli web, pagine mirror, ecc. È necessario aprire le seguenti porte:
 
 <table> 
  <tbody> 
@@ -204,12 +202,12 @@ Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seg
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Ovunque. Necessario quando i moduli Web vengono gestiti direttamente dalla piattaforma Adobe Campaign  o quando vengono utilizzate pagine mirror.<br /> </td> 
+   <td> Ovunque. Necessario quando i moduli web vengono gestiti direttamente dalla piattaforma Adobe Campaign o quando vengono utilizzate pagine mirror.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Server applicazione interno (Web) {#internal-application-server--web-}
+### Server applicazioni interno (Web) {#internal-application-server--web-}
 
 <table> 
  <tbody> 
@@ -219,14 +217,14 @@ Questo server ospita moduli Web, pagine mirror, ecc. Devono essere aperte le seg
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Tutti i computer che eseguono il client sottile o il client avanzato.<br /> </td> 
+   <td> Tutti i computer che eseguono il client thin o il client rich.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;in sede&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consultare la [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
+L&#39;integrazione tra Adobe Campaign e Adobe Experience Manager richiede l&#39;apertura di diverse porte se l&#39;installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -236,20 +234,20 @@ L&#39;integrazione tra  Adobe Campaign e Adobe Experience Manager richiede l&#39
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> Connessione AEM a  Adobe Campaign<br /> </td> 
+   <td> Connessione AEM ad Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td>  connessione Adobe Campaign a AEM istanze "authoring" e "pubblicazione". Le porte da aprire possono essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
+   <td> Connessione Adobe Campaign alle istanze "authoring" e "pubblicazione" AEM. Le porte da aprire possono essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Larghezza di banda {#bandwidth}
 
-Un altro parametro chiave della configurazione di rete da tenere in considerazione. È quasi sempre in uscita e molto richiesto durante le trasmissioni di posta elettronica. Di seguito sono riportati alcuni esempi di configurazioni basate sulla nostra esperienza:
+Un altro parametro chiave della configurazione di rete da prendere in considerazione. È quasi sempre in uscita e molto richiesto durante le trasmissioni di posta elettronica. Di seguito sono riportati alcuni esempi di configurazioni basate sulla nostra esperienza:
 
 * 1 Mb/s per 10.000 e-mail all&#39;ora (dimensione media di 30 Kb)
 * Da 8 a 10 Mb/s per 100.000 e-mail all&#39;ora (dimensione media di 30 Kb)
 
-In presenza di vincoli in termini di larghezza di banda, è possibile pianificare l&#39;esecuzione delle campagne durante la notte quando la domanda è inferiore.
+In presenza di vincoli in termini di larghezza di banda, è possibile pianificare l’esecuzione delle campagne durante la notte quando la domanda è inferiore.
