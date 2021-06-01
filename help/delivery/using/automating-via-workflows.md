@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Automazione tramite flussi di lavoro
 description: Automazione tramite flussi di lavoro
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Automatizzare con i flussi di lavoro{#automating-via-workflows}
 
