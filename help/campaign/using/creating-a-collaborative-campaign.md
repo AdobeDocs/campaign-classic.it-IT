@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Creazione di una campagna collaborativa
 description: Creazione di una campagna collaborativa
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
 
 ---
-
 
 # Creazione di una campagna collaborativa{#creating-a-collaborative-campaign-intro}
 
