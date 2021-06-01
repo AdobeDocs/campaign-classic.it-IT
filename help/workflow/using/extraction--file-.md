@@ -1,46 +1,44 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Estrazione dati (file)
-description: Ulteriori informazioni sull'attività del flusso di lavoro di estrazione dei dati (file)
+description: Ulteriori informazioni sull’attività del flusso di lavoro Estrazione dati (file)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
 
 ---
 
-
 # Estrazione dati (file){#extraction-file}
 
-È possibile estrarre dati da una tabella di workflow in un file esterno utilizzando l&#39;attività **[!UICONTROL Data extraction (file)]**.
+Puoi estrarre i dati da una tabella di flusso di lavoro in un file esterno utilizzando l’attività **[!UICONTROL Data extraction (file)]** .
 
 >[!CAUTION]
 >
->Questa attività deve sempre avere una transizione in entrata che contenga i dati da estrarre.
+>Questa attività deve sempre avere una transizione in entrata contenente i dati da estrarre.
 
-Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
+Per configurare l’estrazione dei dati, esegui i seguenti passaggi:
 
-1. Specificate il nome del file di output: questo nome può contenere variabili, inserite tramite il pulsante di personalizzazione a destra del campo.
-1. Fare clic su **[!UICONTROL Edit the file format...]** per selezionare i dati da estrarre.
+1. Specifica il nome del file di output: questo nome può contenere variabili, inserito tramite il pulsante di personalizzazione a destra del campo .
+1. Fai clic su **[!UICONTROL Edit the file format...]** per selezionare i dati da estrarre.
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   L&#39;opzione **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** aggiunge un passaggio aggiuntivo per filtrare il risultato finale dell&#39;aggregazione, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte e così via.
+   L’opzione **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** aggiunge un ulteriore passaggio per filtrare il risultato finale dell’aggregato, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte, ecc.
 
-1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio calcoli o risultati di elaborazione. A tale scopo, fare clic sull&#39;icona **[!UICONTROL Add]**.
+1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio i risultati di elaborazione o elaborazione. A questo scopo, fai clic sull&#39;icona **[!UICONTROL Add]** .
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   Nella riga aggiuntiva, fate clic sull&#39;icona **[!UICONTROL Edit expression]** per definire il contenuto della nuova colonna.
+   Nella riga aggiuntiva, fai clic sull’icona **[!UICONTROL Edit expression]** per definire il contenuto della nuova colonna.
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   Potrete quindi accedere alla finestra di selezione. Fare clic su **[!UICONTROL Advanced selection]** per scegliere il processo da applicare ai dati.
+   Accedi quindi alla finestra di selezione. Fai clic su **[!UICONTROL Advanced selection]** per scegliere il processo da applicare ai dati.
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
@@ -48,22 +46,21 @@ Per configurare l&#39;estrazione dei dati, effettua i seguenti passaggi:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-È possibile definire un post-processo da eseguire durante l&#39;estrazione dei dati, consentendo di comprimere o cifrare i file. A questo scopo, il comando desiderato deve essere aggiunto nella scheda **[!UICONTROL Script]** dell&#39;attività.
+Puoi definire un post-processo da eseguire durante l’estrazione dei dati, consentendoti di comprimere o crittografare i file. A questo scopo, è necessario aggiungere il comando desiderato nella scheda **[!UICONTROL Script]** dell’attività.
 
-Per ulteriori informazioni, consulta questa sezione: [Zipping o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Per ulteriori informazioni, consulta questa sezione: [ZIP o cifratura di un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
-## Elenco di funzioni aggregate {#list-of-aggregate-functions}
+## Elenco delle funzioni aggregate {#list-of-aggregate-functions}
 
 Di seguito è riportato un elenco delle funzioni di aggregazione disponibili:
 
-* **[!UICONTROL Count]** per contare tutti i valori non-null del campo da aggregare, compresi i valori duplicati (del campo aggregato),
+* **[!UICONTROL Count]** per contare tutti i valori non nulli del campo da aggregare, compresi i valori duplicati (del campo aggregato),
 
-   **[!UICONTROL Distinct]** per calcolare il numero totale di valori diversi e non-null del campo da aggregare (i valori duplicati sono esclusi prima del calcolo),
+   **[!UICONTROL Distinct]** per contare il numero totale di valori diversi e non nulli del campo da aggregare (i valori duplicati sono esclusi prima del calcolo),
 
 * **[!UICONTROL Sum]** per calcolare la somma dei valori di un campo numerico,
-* **[!UICONTROL Minimum value]** per calcolare i valori minimi di un campo (numerici o di altro tipo),
-* **[!UICONTROL Maximum value]** per calcolare i valori massimi di un campo (numerici o di altro tipo),
-* **[!UICONTROL Average]** per calcolare la media dei valori di un campo numerico.
-
+* **[!UICONTROL Minimum value]** calcolare i valori minimi di un campo (numerico o di altro tipo),
+* **[!UICONTROL Maximum value]** per calcolare i valori massimi di un campo (numerico o di altro tipo),
+* **[!UICONTROL Average]** calcolare la media dei valori di un campo numerico.
