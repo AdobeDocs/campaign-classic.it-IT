@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign - Connettore Microsoft Dynamics CRM
 description: Connetti Campaign e Microsoft Dynamics
@@ -7,11 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -73,7 +71,7 @@ Per ottenere l’ID client, è necessario registrare un’app in Azure Active Di
 
 Una volta salvato, ottieni un **ID applicazione** che è l’identificatore client per Campaign.
 
-Ulteriori informazioni in [questa pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+Per ulteriori informazioni, consulta [questa pagina](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
 ### Genera il segreto client di Microsoft Dynamics {#config-client-secret-microsoft}
 
@@ -131,7 +129,7 @@ L&#39;utente dell&#39;app è l&#39;utente che verrà utilizzato dall&#39;applica
 1. Assegna l&#39; **ID applicazione** per [l&#39;applicazione creata in precedenza](#get-client-id-microsoft).
 1. Fai clic su **Gestisci ruoli** e scegli il ruolo **Amministratore di sistema** per l&#39;utente.
 
-## Configura la campagna {#configure-acc-for-microsoft}
+## Configurare Campaign {#configure-acc-for-microsoft}
 
 Per collegare Microsoft Dynamics 365 e Campaign, devi creare e configurare un account esterno dedicato in Campaign.
 
