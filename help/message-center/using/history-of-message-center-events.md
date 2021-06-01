@@ -2,27 +2,26 @@
 solution: Campaign Classic
 product: campaign
 title: Cronologia degli eventi del Centro messaggi
-description: Cronologia degli eventi del Centro messaggi
+description: Ulteriori informazioni sul rapporto Cronologia eventi del Centro messaggi .
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 11%
+source-wordcount: '140'
+ht-degree: 7%
 
 ---
 
+# Cronologia degli eventi del Centro messaggi {#history-of-message-center-events}
 
-# Cronologia degli eventi del Centro messaggi{#history-of-message-center-events}
+Il rapporto **[!UICONTROL History of Message Center events]** fornisce una panoramica dell’attività del Centro messaggi, ovvero il numero di eventi elaborati e consegnati come messaggi transazionali.
 
-Il rapporto **[!UICONTROL History of Message Center events]** fornisce una panoramica dell&#39;attività del Centro messaggi, ovvero il numero di eventi elaborati e consegnati come messaggi transazionali.
-
-Quando il rapporto viene aperto, le informazioni visualizzate per impostazione predefinita coincidono con la frequenza dei messaggi transazionali inviati correttamente. Per visualizzare più livelli, potete aprire i vari nodi e posizionare il cursore sul livello appropriato per selezionarli.
+All’apertura del rapporto, le informazioni visualizzate per impostazione predefinita coincidono con la frequenza dei messaggi transazionali inviati correttamente. Per visualizzare più livelli, è possibile aprire i vari nodi e posizionare il cursore sul livello appropriato per selezionarli.
 
 ![](assets/messagecenter_reporting_001.png)
 
-È possibile visualizzare i dati specifici per ciascun tipo di evento, per periodo di tempo. La colonna **[!UICONTROL Events]** corrisponde al numero di eventi ricevuti per istanza di controllo. Il numero di eventi trasformati in messaggi transazionali personalizzati è riportato in dettaglio nella colonna **[!UICONTROL Sent]**.
+Puoi visualizzare i dati specifici per ogni tipo di evento, per periodo di tempo. La colonna **[!UICONTROL Events]** corrisponde al numero di eventi ricevuti per istanza di controllo. Il numero di eventi trasformati in messaggi transazionali personalizzati è descritto in dettaglio nella colonna **[!UICONTROL Sent]** .
 
-Il rapporto **[!UICONTROL History of Message Center events]** è un rapporto di tipo tabella pivot. Per ulteriori informazioni, consultare la sezione [Analisi delle popolazioni](../../reporting/using/about-descriptive-analysis.md).
+Il rapporto **[!UICONTROL History of Message Center events]** è un rapporto di tipo tabella pivot. Per ulteriori informazioni, consulta la sezione [Analisi delle popolazioni](../../reporting/using/about-descriptive-analysis.md) .
