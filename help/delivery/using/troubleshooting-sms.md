@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Risoluzione dei problemi relativi agli SMS
 description: Scopri come risolvere i problemi del canale SMS
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
 
 ---
-
 
 # Risoluzione dei problemi SMS {#troubleshooting-sms}
 
@@ -203,7 +201,7 @@ Con esadecimale, è possibile distinguere tra caratteri simili. Una L minuscola,
 
 Per convertire unicode in esadecimale, è possibile utilizzare strumenti online come il sito web [Unicode code converter](https://r12a.github.io/app-conversion/). Digita il testo, accertati che non vi siano dati PII, ad esempio i numeri di telefono, e fai clic su **Converti**. Verranno visualizzati i valori esadecimali nella parte inferiore (zona UTF-32).
 
-Quando apri i ticket per problemi di codifica, sia con il provider che con [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), includi sempre una versione esadecimale di ciò che digiti e ciò che vedi.
+Quando apri i ticket per problemi di codifica, sia con il provider che con [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), includi sempre una versione esadecimale di ciò che digiti e ciò che vedi.
 
 **Passaggio 3: Sapere cosa inviare**
 
