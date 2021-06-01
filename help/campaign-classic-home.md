@@ -1,13 +1,12 @@
 ---
-keywords: Campaign Classic;home;argomenti popolari
-solution: Campaign Classic
+keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -89,4 +88,4 @@ Accedi a domande frequenti, best practice e risorse di assistenza e richiedi ass
 | [Matrice di compatibilità](rn/using/compatibility-matrix.md) | [JSAPI per Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | Aggiornamento [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Guida al tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html) |
 | [Funzioni obsolete](rn/using/deprecated-features.md) | [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html) |
-| [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
+| [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
