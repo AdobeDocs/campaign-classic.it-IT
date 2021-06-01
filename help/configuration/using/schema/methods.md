@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elementi e attributi
 description: Elementi e attributi
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 20%
 
 ---
 
+# elemento dei metodi {#methods--element}
 
-# methods, elemento {#methods--element}
+## Modello dei contenuti {#content-model-11}
 
-## Modello di contenuto {#content-model-11}
-
-methods:==method
+metodi:==metodo
 
 ## Attributi {#attributes-11}
 
-None
+Nessuno
 
 ## Genitori {#parents-11}
 
 `<srcschema>`
 
-## Bambini {#children-11}
+## Figli {#children-11}
 
-method
+metodo
 
 ## Descrizione {#description-11}
 
-Questo elemento consente di definire un elemento `<method>`. È obbligatorio dichiarare un metodo.
+Questo elemento ti consente di definire un elemento `<method>`. È obbligatorio dichiarare un metodo.
 
-## Descrizione attributo {#attribute-description-11}
+## Descrizione dell&#39;attributo {#attribute-description-11}
 
 Questo elemento non ha attributi.
 
