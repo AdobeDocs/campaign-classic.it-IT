@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Accesso ai log di tracking
 description: Accesso ai log di tracking
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+exl-id: df494786-5950-4646-aa9c-4dde45845057
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
-
-# Accedi ai log di tracciamento{#accessing-the-tracking-logs}
+# Accedere ai registri di tracciamento{#accessing-the-tracking-logs}
 
 Quando la consegna è stata inviata e il tracciamento è attivato, il flusso di lavoro tecnico **[!UICONTROL Tracking]** ha il compito di recuperare i dati di tracciamento. Viene eseguito ogni ora per impostazione predefinita.
 
