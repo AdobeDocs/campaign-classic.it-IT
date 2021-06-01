@@ -1,16 +1,14 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Nota tecnica
 description: Nota tecnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -26,14 +24,14 @@ Per motivi di sicurezza, ora devi effettuare l’aggiornamento a una delle versi
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Aggiornamenti di sicurezza {#acc-security-updates}
 
 Le versioni più recenti di Campaign presentano una correzione di sicurezza che rafforza la protezione contro i problemi di Server Side Request Forgery (SSRF). Ulteriori informazioni [in questa pagina](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html).
 
-**Siete interessati?**
+**Sei interessato da questo problema?**
 
 Se l’ambiente si trova in una build inferiore a quelle elencate di seguito, è interessato:
 
@@ -47,7 +45,7 @@ Se l’ambiente si trova in una build inferiore a quelle elencate di seguito, è
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-**Come si aggiorna?**
+**Come si esegue l’aggiornamento?**
 
 Devi eseguire l’aggiornamento a una delle build più recenti elencate in precedenza.
 
@@ -77,7 +75,7 @@ Il servizio Adobe Identity (IMS) smetterà di supportare le versioni precedenti 
 
 È necessario un aggiornamento della console client di Campaign per garantire la compatibilità con Adobe IMS.
 
-**Siete interessati?**
+**Sei interessato da questo problema?**
 
 Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adobe-id.md), tramite Adobe Identity Management Service (IMS), è obbligatorio effettuare l’aggiornamento a una delle nuove versioni elencate di seguito:
 
@@ -93,7 +91,7 @@ Queste versioni sono dotate di un nuovo protocollo di connessione: l’aggiornam
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-**Come si aggiorna?**
+**Come si esegue l’aggiornamento?**
 
 In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente a breve.
 
@@ -109,7 +107,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il **30 novembre 2021**. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
-**Siete interessati?**
+**Sei interessato da questo problema?**
 
 Se le istanze sono in esecuzione su una versione **precedente a Campaign 19.1.8, 20.2.4, Gold Standard 11**, utilizza una versione precedente dell’integrazione Triggers tramite autenticazione oAuth: **è necessario eseguire l&#39;aggiornamento a una versione più recente e passare ad Adobe I/O**.
 
@@ -122,7 +120,7 @@ L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-**Come si aggiorna?**
+**Come si esegue l’aggiornamento?**
 
 Una volta aggiornate le istanze a una versione più recente, tutti i clienti devono seguire la procedura [per passare alla nuova modalità di autenticazione](../integrations/using/configuring-adobe-io.md). È necessario generare il nuovo token di Adobe I/O e utilizzarlo nell’implementazione.  
 
@@ -142,7 +140,7 @@ Se le istanze sono in esecuzione su una versione **precedente a Campaign 21.1,**
 
 Scopri come controllare la versione [in questa sezione](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
-**Come si aggiorna?**
+**Come si esegue l’aggiornamento?**
 
 In qualità di cliente in hosting, se hai effettuato l’aggiornamento alla nuova build, Adobe ha già aggiornato le istanze all’API basata su HTTP/2.
 
@@ -154,11 +152,11 @@ Il 29 marzo 2021, un aggiornamento dell’infrastruttura APN (Apple Push Notific
 
 Ulteriori informazioni sulle modifiche APN [in questa pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 
-**Siete interessati?**
+**Sei interessato da questo problema?**
 
 Se utilizzi Campaign per inviare notifiche push su dispositivi iOS, sei interessato.
 
-**Come si aggiorna?**
+**Come si esegue l’aggiornamento?**
 
 Come cliente in hosting, non è necessaria alcuna azione: Adobe ha già incorporato il nuovo certificato radice nell&#39;ambiente.
 
@@ -170,5 +168,5 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per 
 
 * [Aggiornare l’ambiente](../production/using/build-upgrade.md)
 * [Domande frequenti sull’aggiornamento della build](../platform/using/faq-build-upgrade.md)
-* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
+* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Rendere la nuova console client disponibile agli utenti](../installation/using/client-console-availability-for-windows.md)
