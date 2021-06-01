@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Utilizzo dei cubi per esplorare i dati
 description: Utilizzo dei cubi per esplorare i dati
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
 
 ---
-
 
 # Utilizzo dei cubi per esplorare i dati{#using-cubes-to-explore-data}
 
@@ -169,4 +167,3 @@ Per creare una tabella ed esplorare i dati di un cubo, eseguire i seguenti passa
    ![](assets/s_advuser_cube_in_report_02.png)
 
    In questo modo puoi creare il rapporto da visualizzare. Per ulteriori informazioni, consulta [Passaggio 2 - Selezione di righe e colonne](#step-2---selecting-lines-and-columns).
-
