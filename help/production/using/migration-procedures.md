@@ -1,29 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Procedure di migrazione
 description: Procedure di migrazione
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 20%
 
 ---
 
-
 # Procedure di migrazione{#migration-procedures}
 
-Se esegui l’aggiornamento da  Adobe Campaign v6 a v7, consigliamo le seguenti linee guida.
+Se esegui l’aggiornamento da Adobe Campaign v6 a v7, ti consigliamo le seguenti linee guida.
 
-* In Windows, per l’aggiornamento client e server, disinstallate  Adobe Campaign v6 prima di installare v7. Non dimenticare di eseguire prima il backup dei file di registro e di configurazione.
-* In Linux, per l&#39;aggiornamento del server, rimuovete il pacchetto Adobe Campaign v6  prima di installare v7.
+* Su Windows, sia per l&#39;aggiornamento del client che per quello del server, disinstalla Adobe Campaign v6 prima di installare v7. Non dimenticare di eseguire in anticipo il backup dei file di registro e di configurazione.
+* Su Linux, per l&#39;aggiornamento del server, rimuovi il pacchetto Adobe Campaign v6 prima di installare v7.
 
-Per maggiori informazioni sulle procedure di migrazione e sulle migliori pratiche, consulta:
+Per ulteriori informazioni sulle procedure di migrazione e sulle best practice, consulta:
 
 * [Esecuzione di un aggiornamento della build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html)
 * [Panoramica sulla migrazione](../../migration/using/about-migration.md)
-
