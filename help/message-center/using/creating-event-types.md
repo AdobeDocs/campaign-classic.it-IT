@@ -1,26 +1,49 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Creazione di tipi di evento
-description: Creazione di tipi di evento
+title: Creare tipi di evento
+description: Scopri come creare tipi di evento corrispondenti ai messaggi transazionali che desideri inviare in Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 10%
+source-wordcount: '169'
+ht-degree: 3%
 
 ---
 
+# Creare tipi di evento {#creating-event-types}
 
-# Creazione di tipi di evento{#creating-event-types}
+Per assicurarti che ogni evento possa essere modificato in un messaggio personalizzato, devi innanzitutto creare **tipi di evento**.
 
-I tipi di evento destinati ad essere elaborati da  Adobe Campaign devono essere creati nell&#39;istanza di controllo. Questa operazione può essere eseguita tramite la cartella **[!UICONTROL Administration > Platform > Enumerations]** della struttura. Ogni tipo di evento corrisponde a un valore nell&#39;enumerazione **[!UICONTROL eventType]**. Può trattarsi di una conferma dell&#39;ordine, una modifica alla password o alla consegna dell&#39;ordine, ecc.
+Quando [crei un modello di messaggio](../../message-center/using/creating-the-message-template.md), selezioni il tipo di evento che corrisponde al messaggio che desideri inviare.
 
-![](assets/messagecenter_eventtype_enum_001.png)
+>[!IMPORTANT]
+>
+>È necessario creare tipi di evento prima di poterli utilizzare nei modelli di messaggio.
 
-Per ulteriori informazioni sugli elenchi dettagliati, fare riferimento a [Gestione enumerazione](../../platform/using/managing-enumerations.md).
+Per creare tipi di evento che verranno elaborati da Adobe Campaign, segui i passaggi seguenti:
 
-Una volta creati i valori elenco dettagliati, disconnettetevi e tornate all’istanza per rendere effettiva la creazione.
+1. Accedi all&#39; **istanza di controllo**.
+
+1. Vai alla cartella **[!UICONTROL Administration > Platform > Enumerations]** della struttura.
+
+1. Seleziona **[!UICONTROL Event type]** dall’elenco.
+
+1. Fare clic su **[!UICONTROL Add]** per creare un valore di enumerazione. Può trattarsi di una conferma dell’ordine, una modifica della password, una modifica della consegna dell’ordine, ecc.
+
+   ![](assets/messagecenter_eventtype_enum_001.png)
+
+   >[!IMPORTANT]
+   >
+   >Ogni tipo di evento deve corrispondere a un valore nell&#39;enumerazione **[!UICONTROL Event type]**.
+
+1. Una volta creati i valori elenco dettagliati, disconnettiti e torna all’istanza per rendere effettiva la creazione.
+
+>[!NOTE]
+>
+>Ulteriori informazioni sugli elenchi dettagliati in [Gestione enumerazione](../../platform/using/managing-enumerations.md).
+
+
