@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Domande frequenti sull’aggiornamento della build
 description: Domande comuni relative agli aggiornamenti della build di Campaign
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Domande frequenti sull&#39;aggiornamento della build {#build-upgrade-faq}
 
@@ -21,7 +19,7 @@ ht-degree: 3%
 
 È fondamentale che i nostri clienti eseguano la versione più recente di Adobe Campaign. Permette anche all&#39;Adobe di aiutare in modo molto più efficiente nel caso in cui si incontrano problemi - identificare, riprodurre e risolvere un problema su una build precedente richiede in genere più tempo, per non parlare del fatto che alcuni problemi che si possono incontrare possono essere già stati risolti in una build recente.
 
-[!DNL Gold Standard] è la versione di supporto a lungo termine di Campaign Classic. In qualità di utente in hosting [!DNL Gold Standard], puoi beneficiare automaticamente dell’ [!DNL Gold Standard] aggiornamento con l’ultima versione stabile senza alcuna azione. I clienti on-premise e ibridi possono inoltre beneficiare dei rilasci [!DNL Gold Standard] . Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l’aggiornamento a questa versione. [Ulteriori informazioni](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] è la versione con supporto a lungo termine di Campaign Classic. In qualità di utente [!DNL Gold Standard] in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento [!DNL Gold Standard] con la versione stabile più recente. Anche i clienti con implementazioni on-premise e ibride possono beneficiare delle versioni [!DNL Gold Standard]. Se effettui la migrazione da una build precedente, ti consigliamo di eseguire prima l’aggiornamento a questa versione. [Ulteriori informazioni](../../rn/using/gs-overview.md).
 
 ## Cos’è un aggiornamento della build?
 
@@ -166,7 +164,7 @@ Sì. Il server viene arrestato durante un aggiornamento per garantire che l’in
 
 ## Chi devo contattare per aprire il ticket di aggiornamento della build?
 
-Se si verificano problemi dopo un aggiornamento della build, contatta l’ [Assistenza clienti Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date della build e apre i ticket relativi all’aggiornamento della build.
+Se si verificano problemi dopo un aggiornamento della build, contatta l’ [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date della build e apre i ticket relativi all’aggiornamento della build.
 
 Ulteriori informazioni in [Opzioni di Aiuto e supporto per Campaign Classic](../../support.md)
 
