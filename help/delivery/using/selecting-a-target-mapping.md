@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Selezione di una mappatura target
 description: Selezione di una mappatura target
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
 
 ---
 
-
 # Selezione di una mappatura target{#selecting-a-target-mapping}
 
-Per impostazione predefinita, i modelli di consegna sono **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza pertanto i campi della tabella **nms:Recipient**.  Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle esigenze.
+Per impostazione predefinita, i modelli di consegna sono destinati a **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza quindi i campi della tabella **nms:recipient** . Adobe Campaign offre altre mappature target per le consegne, da utilizzare in base alle tue esigenze.
 
 ![](assets/delivery_select_mapping.png)
 
-Le mappature sono le seguenti:
+Queste mappature sono le seguenti:
 
-| Nome | Use | Schema standard |
+| Nome | Utilizzo | Schema standard |
 |---|---|---|
-| Destinatari | Consegna ai destinatari del database Adobe Campaign  | nms:destinatario |
-| Visitatori | Fornire ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, Twitter), ad esempio. | mns:visitatore |
-| Iscrizioni | Consegna ai destinatari che dispongono di un’iscrizione a un servizio di informazione, ad esempio una newsletter | nms:iscrizione |
-| Iscrizioni dei visitatori | Consegna ai visitatori che hanno sottoscritto un servizio di informazione | nms:visitorSub |
-| Servizio | Pubblicare su un account Twitter o una pagina Facebook | nms:servizio |
-| Operatori | Consegna agli operatori Adobe Campaign  | nms:operatore |
-| File esterno | Consegna tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione inserita |
+| Destinatari | Consegna a destinatari del database Adobe Campaign | nms:recipient |
+| Visitatori | Effettua la consegna ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, Twitter), ad esempio. | mns:visitatore |
+| Abbonamenti | Consegnare a destinatari abbonati a un servizio di informazione, ad esempio una newsletter | nms:abbonamento |
+| Abbonamenti ai visitatori | Consegna ai visitatori abbonati a un servizio di informazione | nms:visitorSub |
+| Servizio | Pubblicare su un account Twitter o su una pagina Facebook | nms:servizio |
+| Operatori | Consegna agli operatori Adobe Campaign | nms:operatore |
+| File esterno | Consegna tramite un file contenente tutte le informazioni necessarie per la consegna | Nessun schema collegato, nessuna destinazione immessa |
 
 >[!NOTE]
 >
->Potete anche creare nuove mappature di destinazione. Questa operazione è riservata agli utenti esperti. Per ulteriori informazioni, fare riferimento alla [Guida alla configurazione](../../configuration/using/target-mapping.md).
+>Puoi anche creare nuove mappature target. Questa operazione è riservata agli utenti esperti. Per ulteriori informazioni, consulta la [Guida alla configurazione](../../configuration/using/target-mapping.md).
