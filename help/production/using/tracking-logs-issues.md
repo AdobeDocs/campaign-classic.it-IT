@@ -1,34 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Tracking dei problemi dei log
-description: Tracking dei problemi dei log
+title: Problemi dei registri di tracciamento
+description: Problemi dei registri di tracciamento
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
 
 ---
 
+# Problemi dei registri di tracciamento{#tracking-logs-issues}
 
-# Tracking dei problemi dei log{#tracking-logs-issues}
+Ci possono essere diversi motivi per cui i registri di tracciamento non vengono inoltrati. Si consiglia di controllare le seguenti informazioni:
 
-Possono essere presenti diversi motivi per non inoltrare i registri. È consigliabile verificare le informazioni seguenti:
+* **Il flusso di lavoro di****tracciamento presenta errori?**
 
-* **Il flusso di lavoro di****tracciamento presenta degli errori?**
-
-   Fare riferimento a [Flussi di lavoro tecnici di monitoraggio](../../workflow/using/monitoring-technical-workflows.md).
+   Fai riferimento a [Monitoraggio dei flussi di lavoro tecnici](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* **Il modulo è****in esecuzione sul server?**
+* **Il modulo****trackinglogdrunning è sul server?**
 
    Fare riferimento a [File di registro](../../production/using/log-files.md).
 
-* **Sono state apportate delle modifiche?**
+* **Sono state apportate modifiche?**
 
-   Possono attivare una perdita di connessione ai server utilizzando l&#39;alias di tracciamento.
+   Possono attivare una perdita di connessione ai server utilizzando l’alias di tracciamento.
