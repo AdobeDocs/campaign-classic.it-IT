@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Configurare l'accesso a Synapse
-description: Scoprite come configurare l'accesso a Synapse in FDA
+description: Scopri come configurare l’accesso a Synapse in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
+# Configurare l&#39;accesso all&#39;Azure synapse {#configure-access-to-azure-synapse}
 
-# Configurare l&#39;accesso  Azure synapse {#configure-access-to-azure-synapse}
+Utilizza l’opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi riportati di seguito per configurare l’accesso a Microsoft Azure synapse Analytics.
 
-Utilizzate l&#39;opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Seguite i passaggi riportati di seguito per configurare l&#39;accesso a Microsoft  Azure synapse Analytics.
+1. Configura Azure synapse su [CentOS](#azure-centos), [Windows](#azure-windows) o [Debian](#azure-debian)
+1. Configura l’Azure synapse [account esterno](#azure-external) in Campaign
 
-1. Configurare  Azure synapse su [CentOS](#azure-centos), [Windows](#azure-windows) o [Debian](#azure-debian)
-1. Configurare  account Azure synapse [esterno](#azure-external) in Campaign
-
-##  Azure synapse su CentOS {#azure-centos}
+## azure synapse su CentOS {#azure-centos}
 
 >[!CAUTION]
 >
->* Per installare un driver ODBC è necessario disporre dei privilegi di root.
+>* Per installare un driver ODBC, è necessario disporre dei privilegi di radice.
 >* I driver ODBC Red Hat Enterprise forniti da Microsoft possono essere utilizzati anche con CentOS per connettersi a SQL Server.
->* La versione 13.0 funziona con Red Hat 6 e 7.
+>* La versione 13.0 funzionerà con Red Hat 6 e 7.
 
 
-Per configurare  Azure synapse su CentOS, attenetevi alla procedura seguente:
+Per configurare l’Azure synapse su CentOS, segui i passaggi seguenti:
 
-1. Innanzitutto, installare il driver ODBC. È possibile trovarlo in questa [pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Innanzitutto, installare il driver ODBC. Puoi trovarlo in questa [pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
    >[!NOTE]
    >
-   >Questo è esclusivo della versione 13 del driver ODBC.
+   >Questa versione è esclusiva della versione 13 del driver ODBC.
 
    ```
    sudo su
@@ -75,21 +73,21 @@ Per configurare  Azure synapse su CentOS, attenetevi alla procedura seguente:
    Server      = [insert your server here]
    ```
 
-1. Se necessario, è possibile installare intestazioni di sviluppo univxODBC eseguendo il comando seguente:
+1. Se necessario, è possibile installare intestazioni di sviluppo unixODBC eseguendo il seguente comando:
 
    ```
    sudo yum install unixODBC-devel
    ```
 
-1. Dopo aver installato i driver, è possibile verificare e verificare il driver ODBC ed eseguire una query sul database, se necessario. Eseguite il comando seguente:
+1. Dopo aver installato i driver, è possibile testare e verificare il driver ODBC ed eseguire query sul database, se necessario. Esegui il comando seguente:
 
    ```
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign, puoi quindi configurare il tuo account esterno [!DNL Azure Synapse]. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consultare [questa sezione](#azure-external).
+1. In Campaign, puoi quindi configurare il tuo account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
-1. Poiché  Azure synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta sul firewall. Usa il comando seguente:
+1. Poiché Azure synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta sul firewall. Usa il comando seguente:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -98,25 +96,25 @@ Per configurare  Azure synapse su CentOS, attenetevi alla procedura seguente:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione da  lato di Azure synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al inserire nell&#39;elenco Consentiti di . A tal fine, fare riferimento alla [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Per consentire la comunicazione dal lato di Azure synapse Analytics, potrebbe essere necessario aggiungere l’IP pubblico all’inserire nell&#39;elenco Consentiti. A tale scopo, consulta la [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-1. Nel caso di iptables, eseguire il comando seguente:
+1. In caso di tabelle, esegui il comando seguente:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-##  Azure synapse in Windows {#azure-windows}
+## azure synapse su Windows {#azure-windows}
 
 >[!NOTE]
 >
->Questa funzione è esclusiva della versione 13 del driver ODBC, ma Adobe Campaign Classic può anche utilizzare i driver client nativi di SQL Server 11.0 e 10.0.
+>Questa versione è esclusiva della versione 13 del driver ODBC, ma Adobe Campaign Classic può anche utilizzare i driver del client nativo di SQL Server 11.0 e 10.0.
 
-Per configurare  Azure synapse in Windows:
+Per configurare l&#39;Azure synapse su Windows:
 
-1. Innanzitutto, installare il driver Microsoft ODBC. È possibile trovarlo in [questa pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Innanzitutto, installare il driver ODBC Microsoft. Puoi trovarlo in [questa pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
-1. Scegliete i file seguenti da installare:
+1. Scegliere i file seguenti da installare:
 
    ```
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
@@ -124,24 +122,24 @@ Per configurare  Azure synapse in Windows:
 
 1. Una volta installato il driver ODBC, è possibile verificarlo se necessario. Per ulteriori informazioni, consulta questa [pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. In Campaign Classic, puoi quindi configurare il tuo account esterno [!DNL Azure Synapse]. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consultare [questa sezione](#azure-external).
+1. In Campaign Classic puoi quindi configurare l’account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
-1. Poiché  Azure synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta su Windows Defender Firewall. Per ulteriori informazioni, consultare la [documentazione di Windows](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Poiché Azure synapse Analytics comunica attraverso la porta TCP 1433, è necessario aprire questa porta su Windows Defender Firewall. Per ulteriori informazioni, consulta la [documentazione di Windows](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-##  Azure synapse su Debian {#azure-debian}
+## azure synapse su Debian {#azure-debian}
 
 **Prerequisiti:**
 
-* Per installare un driver ODBC è necessario disporre dei privilegi di root.
-* Curl è necessario per installare il pacchetto msobcsql. Se non è installato, eseguite il comando seguente:
+* Per installare un driver ODBC, è necessario disporre dei privilegi di radice.
+* Curl è necessario per installare il pacchetto msobcsql. Se non è installato, esegui il seguente comando:
 
    ```
    sudo apt-get install curl
    ```
 
-Per configurare  Azure synapse su Debian:
+Per configurare l&#39;Azure synapse su Debian:
 
-1. Innanzitutto, installate il driver Microsoft ODBC per SQL Server. Utilizzare i comandi seguenti per installare ODBC Driver 13.1 per SQL Server:
+1. Innanzitutto, installare il driver Microsoft ODBC per SQL Server. Utilizzare i seguenti comandi per installare ODBC Driver 13.1 per SQL Server:
 
    ```
    sudo su
@@ -152,13 +150,13 @@ Per configurare  Azure synapse su Debian:
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. Se viene visualizzato il seguente errore **&quot;Impossibile trovare il driver del metodo /usr/lib/apt/methods/https&quot;** durante la chiamata a **sudo apt-get update**, eseguire il comando:
+1. Se ottieni il seguente errore **&quot;Impossibile trovare il driver del metodo /usr/lib/apt/methods/https&quot;** quando chiami **sudo apt-get update**, esegui il comando:
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
    ```
 
-1. È ora necessario installare mssql-tools con i seguenti comandi. Gli strumenti Mssq sono necessari per utilizzare l&#39;utilità del programma di copia in blocco (o BCP) e per eseguire query.
+1. È ora necessario installare mssql-tools con i seguenti comandi. Gli strumenti Mssq sono necessari per utilizzare l&#39;utilità del programma di copia in serie (o BCP) e per eseguire le query.
 
    ```
    sudo ACCEPT_EULA=Y apt-get install mssql-tools
@@ -167,21 +165,21 @@ Per configurare  Azure synapse su Debian:
    source ~/.bashrc
    ```
 
-1. Se necessario, è possibile installare intestazioni di sviluppo univxODBC eseguendo il comando seguente:
+1. Se necessario, è possibile installare intestazioni di sviluppo unixODBC eseguendo il seguente comando:
 
    ```
    sudo yum install unixODBC-devel
    ```
 
-1. Dopo aver installato i driver, è possibile verificare e verificare il driver ODBC ed eseguire una query sul database, se necessario. Eseguite il comando seguente:
+1. Dopo aver installato i driver, è possibile testare e verificare il driver ODBC ed eseguire query sul database, se necessario. Esegui il comando seguente:
 
    ```
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign Classic, ora puoi configurare il tuo account esterno [!DNL Azure Synapse]. Per ulteriori informazioni sulla configurazione dell&#39;account esterno, consultare [questa sezione](#azure-external).
+1. In Campaign Classic è ora possibile configurare l’account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
-1. Per configurare iptables su Debian per garantire la connessione con  Azure synapse Analytics, abilita la porta TCP 1433 in uscita per il tuo nome host con il seguente comando:
+1. Per configurare le tabelle IP su Debian per garantire la connessione con Azure synapse Analytics, abilita la porta TCP 1433 in uscita per il tuo nome host con il seguente comando:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -189,32 +187,31 @@ Per configurare  Azure synapse su Debian:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione da  lato di Azure synapse Analytics, potrebbe essere necessario aggiungere l&#39;IP pubblico al inserire nell&#39;elenco Consentiti di . A tal fine, fare riferimento alla [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Per consentire la comunicazione dal lato di Azure synapse Analytics, potrebbe essere necessario aggiungere l’IP pubblico all’inserire nell&#39;elenco Consentiti. A tale scopo, consulta la [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 
-##  account esterno Azure synapse {#azure-external}
+## azure synapse account esterno {#azure-external}
 
-L&#39;account esterno [!DNL Azure Synapse] consente di collegare l&#39;istanza Campaign al database esterno  Azure synapse.
+L’account esterno [!DNL Azure Synapse] ti consente di collegare l’istanza Campaign al database esterno dell’Azure synapse.
 
-Per creare un account esterno [!DNL Azure Synapse], procedere come segue:
+Per creare l’account esterno [!DNL Azure Synapse], effettua le seguenti operazioni:
 
-1. Da Campaign **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Selezionare **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
 
    ![](assets/azure_1.png)
 
-1. Configurate l&#39;account esterno [!DNL Azure Synapse], dovete specificare:
+1. Configura l’account esterno [!DNL Azure Synapse] , devi specificare:
 
-   * **[!UICONTROL Type]**:  Azure synapse Analytics
+   * **[!UICONTROL Type]**: azure synapse Analytics
 
-   * **[!UICONTROL Server]**: URL del server Azure synapse
+   * **[!UICONTROL Server]**: URL del server di Azure synapse
 
    * **[!UICONTROL Account]**: Nome dell’utente
 
    * **[!UICONTROL Password]**: Password account utente
 
    * **[!UICONTROL Database]**: Nome del database
-
