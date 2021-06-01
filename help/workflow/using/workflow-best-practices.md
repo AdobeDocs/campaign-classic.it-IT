@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Procedure consigliate per i flussi di lavoro
+title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro per Campaign
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Best practice per i flussi di lavoro{#workflow-best-practices}
 
