@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Gestire e personalizzare gli elenchi
 description: Scopri come sfogliare e configurare gli elenchi
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
 
 ---
-
 
 # Gestire e personalizzare gli elenchi{#manage-and-customize-lists}
 
