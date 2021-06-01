@@ -7,7 +7,7 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4367'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Le domande frequenti sulla privacy sono state spostate in [questa sezione](../..
 
 Il protocollo del connettore SMS e la pagina delle sue impostazioni sono ora descritti [qui](../../delivery/using/sms-protocol.md).
 
-È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Leggi tutto](../../message-center/using/event-collection.md)
+È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Leggi tutto](../../message-center/using/about-event-processing.md#event-collection)
 
 ## Novembre 2020 {#nov-2020}
 
@@ -259,7 +259,7 @@ Leggi sulla privacy in Thailandia e Brasile. [Leggi tutto](https://helpx.adobe.c
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
-La nuova opzione che consente di annullare la pubblicazione di un modello di messaggio transazionale è documentata in [questa sezione](../../message-center/using/template-unpublication.md).
+La nuova opzione che consente di annullare la pubblicazione di un modello di messaggio transazionale è documentata in [questa sezione](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 Le nuove opzioni che consentono di impostare limitazioni durante l’invio di e-mail contenenti immagini scaricate da un URL personalizzato e allegati sono state aggiunte all’elenco delle opzioni di Campaign Classic. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -441,7 +441,7 @@ La sezione Gestione degli accessi è stata aggiornata con l’**autorizzazione p
 
 Sono state aggiunte informazioni per specificare che il contenuto dei campi di personalizzazione non può superare i 1.024 caratteri. [Leggi tutto](../../delivery/using/personalization-fields.md)
 
-La documentazione del Pannello di controllo Campaign è stata integrata nel nuovo set di documentazione collaborativa. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+La documentazione del Pannello di controllo Campaign è stata integrata nel nuovo set di documentazione collaborativa. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 
 La guida introduttiva sulle best practice per le consegne è stata aggiornata. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
@@ -519,7 +519,7 @@ La sezione Attività del flusso di lavoro secondario è stata migliorata con un 
 
 La pagina della [matrice delle funzionalità per Campaign Classic on-premise e in hosting](../../installation/using/capability-matrix.md) è stata aggiornata con le informazioni relative al campo CCN dell’e-mail.
 
-La documentazione relativa alla messaggistica transazionale è stata aggiornata con una nota riguardante la pubblicazione di modelli. [Leggi tutto](../../message-center/using/template-publication.md)
+La documentazione relativa alla messaggistica transazionale è stata aggiornata con una nota riguardante la pubblicazione di modelli. [Leggi tutto](../../message-center/using/publishing-message-templates.md#template-publication)
 
 La sezione Mail non recapitate non elaborate è stata aggiornata con ulteriori dettagli sui campi Indirizzo di inoltro e Indirizzo per gli errori. [Leggi tutto](../../installation/using/deploying-an-instance.md)
 
