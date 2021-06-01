@@ -1,29 +1,26 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Informazioni sui tipi di distribuzione
-description: Informazioni sui tipi di distribuzione
+title: Informazioni sui tipi di implementazione
+description: Informazioni sui tipi di implementazione
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 6%
 
 ---
 
+# Informazioni sui tipi di implementazione{#about-deployment-types}
 
-# Informazioni sui tipi di distribuzione{#about-deployment-types}
+Il design modulare di Adobe Campaign consente un&#39;ampia gamma di configurazioni di implementazione, dalle configurazioni standalone (tutti i componenti su un unico computer) alle implementazioni aziendali con architettura completamente ridondante e distribuita che utilizzano più server. Tutto dipende dal livello di prestazioni e sicurezza richiesto.
 
-Il design modulare di  Adobe Campaign consente un&#39;ampia gamma di configurazioni di implementazione, dalle configurazioni standalone (tutti i componenti su un solo computer) alle installazioni aziendali con un&#39;architettura completamente ridondante e distribuita che utilizzano più server. Tutto dipende dal livello di prestazioni e sicurezza richiesto.
-
-In caso di configurazione su più computer, non è necessario utilizzare lo stesso sistema operativo in tutti: ad esempio, è possibile utilizzare un server di reindirizzamento su Linux + Apache con server di consegna su Windows.
+In caso di configurazione su più computer, non è necessario utilizzare lo stesso sistema operativo in: ad esempio, puoi utilizzare un server di reindirizzamento su Linux + Apache con server di consegna su Windows.
 
 >[!NOTE]
 >
->I passaggi di configurazione dell&#39;installazione principale possono essere eseguiti solo da  Adobe per le distribuzioni ospitate da  Adobe, ad esempio per configurare i file di configurazione del server e dell&#39;istanza.
+>I passaggi di configurazione dell’installazione principale possono essere eseguiti solo da Adobe per le distribuzioni ospitate da Adobe, ad esempio per configurare i file di configurazione del server e dell’istanza.
 >
->Per ulteriori informazioni sulle differenze principali tra le distribuzioni, fare riferimento alla sezione [Modelli di hosting](../../installation/using/hosting-models.md) o alle differenze di [Caratteristiche per le distribuzioni in hosting e in sede](../../installation/using/capability-matrix.md).
-
+>Per ulteriori informazioni sulle differenze principali tra le distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o le differenze di funzionalità per le distribuzioni in hosting e on-premise](../../installation/using/capability-matrix.md).[
