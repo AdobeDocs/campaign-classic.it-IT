@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Accesso alle campagne
 description: Accesso alle campagne
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
 
 ---
 
-
 # Accesso alle campagne{#accessing-campaigns}
 
-Una volta ordinata una campagna, l&#39;ordine è stato approvato e la data di disponibilità raggiunta, può essere eseguito.
+Una volta ordinata una campagna, l’ordine è stato approvato e la data di disponibilità raggiunta può essere eseguito.
 
 A seconda del tipo di campagna e delle opzioni selezionate, la campagna viene eseguita localmente o centralmente.
 
@@ -29,11 +27,11 @@ Viene aggiunto al dettaglio dell’ordine corrispondente e può essere modificat
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-La campagna rimane accessibile nella panoramica della campagna, che si trova tramite il collegamento **[!UICONTROL Campaigns]** nella pagina principale.
+La campagna rimane accessibile nella panoramica Campaign, tramite il collegamento **[!UICONTROL Campaigns]** nella home page.
 
 ## Impostazioni disponibili {#available-settings}
 
-Le entità locali possono adattare il contenuto della campagna in base alle proprie esigenze, utilizzando tutti gli elementi del dashboard della campagna. Il compito principale sarà quello di adattare il flusso di lavoro di targeting ed eventualmente personalizzare il contenuto della distribuzione.
+Le entità locali possono adattare il contenuto della campagna alle proprie esigenze, utilizzando tutti gli elementi del dashboard della campagna. Il loro compito principale sarà adattare il flusso di lavoro di targeting ed eventualmente personalizzare il contenuto della consegna.
 
 ## Esecuzione della campagna {#campaign-execution}
 
