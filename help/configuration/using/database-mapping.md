@@ -494,7 +494,7 @@ Relazione 1-1 alla tabella dello schema &quot;cus:extension&quot;:
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Esempio 5 {#example-4}
+### Esempio 4 {#example-4}
 
 Collega a una cartella (&quot;schema xtk:folder&quot;):
 
@@ -504,7 +504,7 @@ Collega a una cartella (&quot;schema xtk:folder&quot;):
 
 Il valore predefinito restituisce l&#39;identificatore del primo file di tipo di parametro idoneo immesso nella funzione &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Esempio 5 {#example-5}
+### Esempio 4 {#example-5}
 
 In questo esempio, desideriamo creare una chiave su un collegamento (&quot;azienda&quot; a schema &quot;cus:company&quot;) con l&#39;attributo **xlink** e un campo della tabella (&quot;e-mail&quot;):
 
