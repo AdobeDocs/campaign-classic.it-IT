@@ -702,7 +702,7 @@ Per acquisire questo valore, ora puoi impostare il seguente regex nel regex di e
 
 Se questa opzione è selezionata, il campo **Testo** viene mantenuto durante l&#39;elaborazione del testo di stato dell&#39;SR.
 
-Questa opzione è utile se il provider inserisce dati importanti in questo campo, ad esempio l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
+Questa opzione è utile se il provider inserisce dati importanti in questo campo, come l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
 
 Se abiliti questa opzione, potresti riscontrare un difetto di sicurezza molto piccolo se il `Extraction` regex dell’ID nel campo SR non è sufficientemente specifico. Il contenuto del campo **Testo** può essere analizzato come ID e un autore di attacchi può usarlo per inserire ID falsi, il che può portare a una situazione di rifiuto parziale del servizio.
 
