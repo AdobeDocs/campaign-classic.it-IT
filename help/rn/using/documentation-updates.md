@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4396'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -29,15 +29,15 @@ La documentazione del rapporto Workflow Heatmap è stata aggiornata e migliorata
 
 I requisiti della console client di Campaign sono stati aggiornati nella matrice di compatibilità. [Leggi tutto](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-L’installazione della console client di Campaign per i passaggi è stata migliorata e chiarita. [Leggi tutto](../../installation/using/installing-the-client-console.md)
+La procedura di installazione della console client di Campaign è stata migliorata e chiarita. [Leggi tutto](../../installation/using/installing-the-client-console.md)
 
-È stata creata una nuova nota tecnica sul problema della firma degli URL tracciati. [Leggi tutto](../../technotes/tracked-urls.md)
+È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Leggi tutto](../../technotes/tracked-urls.md)
 
 ## Aprile 2021 {#april-2021}
 
 È stata aggiunta una nuova sezione su come lavorare con le origini e le destinazioni di Adobe Experience Platform per condividere i dati tra Campaign Classic e Adobe Real-time Customer Data Platform (RTCDP). [Leggi tutto](../../integrations/using/get-started-sources-destinations.md)
 
-È stata creata una nuova nota tecnica per scoprire come aggiornare la qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
+È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
 
 ## Marzo 2021 {#march-2021}
 
