@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ L’**ultima build RC** è [Campaign Classic 21.1](../../rn/using/latest-release
 
 ## Raccomandazioni{#recommendations}
 
-Per garantire una configurazione stabile, si consiglia di installare la stessa build stabile su tutti i server in esecuzione sulla stessa configurazione client.
+Per garantire una configurazione stabile, si consiglia di installare la stessa versione stabile su tutti i server in esecuzione sulla stessa configurazione client.
 
 Inoltre, la console client deve trovarsi nella stessa build dell’istanza del server.
 
@@ -61,8 +61,8 @@ In qualità di utente [!DNL Gold Standard] in hosting, potrai beneficiare automa
 ## Supporto e altri collegamenti utili{#support}
 
 * [Guida e supporto](../../support.md)
-* [Versioni del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [Versioni del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=it)
 * [Ultimi aggiornamenti della documentazione](../../rn/using/documentation-updates.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
 
-Per ricevere informazioni sulle nuove versioni della soluzione Experience Cloud, iscriviti ad [Adobe Priority Product Update](https://www.adobe.com/it/subscription/priority-product-update.html)(Aggiornamento prioritario sui prodotti).
+Per ricevere informazioni sulle nuove versioni della soluzione Experience Cloud, iscriviti ad [Adobe Priority Product Update](https://www.adobe.com/it/subscription/priority-product-update.html).
