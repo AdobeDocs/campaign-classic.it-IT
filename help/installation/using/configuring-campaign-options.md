@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
+source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3941'
 ht-degree: 1%
 
 ---
@@ -51,10 +51,6 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** ti consente di conf
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Elenco di schemi per i quali si desidera utilizzare gli indirizzi di test per il rendering della casella in entrata. (i nomi degli elementi sono separati da virgole) Ad esempio: custom_nms_recipient.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
-   <td> Indirizzo e-mail CCN a cui l’MTA avanzato invierà una copia non elaborata delle e-mail inviate. <br /> </td> 
-  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immetti "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come impostazione predefinita: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Vedi <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
