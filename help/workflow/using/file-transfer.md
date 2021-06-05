@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ La configurazione dipende dall’azione selezionata.
 
    ![](assets/file_transfert_edit.png)
 
-   Seleziona **[!UICONTROL Use an external account]** per selezionare un account dagli account S3, FTP o SFTP configurati nel nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura. Quindi specifica quale directory sul server contiene i file da scaricare.
+   Seleziona **[!UICONTROL Use an external account]** per selezionare un account dall’archiviazione BLOB di Azure, dagli account S3, FTP o SFTP configurati nel nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura. Quindi specifica quale directory sul server contiene i file da scaricare.
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ Il collegamento **[!UICONTROL Advanced parameters...]** ti consente di accedere 
 
 * **[!UICONTROL Display the session logs]**
 
-   Consente di recuperare i registri del trasferimento S3, FTP o SFTP e di includerli nei registri del flusso di lavoro.
+   Consente di recuperare i registri dell’archiviazione BLOB di Azure, del trasferimento S3, FTP o SFTP e di includerli nei registri del flusso di lavoro.
 
 * **[!UICONTROL Disable passive mode]**
 
