@@ -5,7 +5,7 @@ description: Ulteriori informazioni sul pacchetto Web Analytics
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Analisi web{#web-analytics}
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Connettori di Web Analytics** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../platform/using/adobe-analytics-data-connector.md).
+Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Connettori di Web Analytics** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 
@@ -27,12 +27,12 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito sono insta
   <tr> 
    <td> <span class="uicontrol">Invio di indicatori e attributi della campagna</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Questo flusso di lavoro consente di inviare gli indicatori delle campagne e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore di Genesis Adobe®. Gli indicatori interessati sono i seguenti: <strong>Inviato</strong> (Inviato), <strong>Numero totale di aperture</strong> (iTotalRecipientOpen), <strong>Numero totale di destinatari che hanno fatto clic su</strong> (iTotalRecipientClick), <strong>Errori</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
+   <td> Questo flusso di lavoro consente di inviare gli indicatori delle campagne e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: <strong>Inviato</strong> (Inviato), <strong>Numero totale di aperture</strong> (iTotalRecipientOpen), <strong>Numero totale di destinatari che hanno fatto clic su</strong> (iTotalRecipientClick), <strong>Errori</strong> (iError), <strong>Opt-Out</strong> (opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identificazione dei contatti convertiti</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Questo flusso di lavoro indicizza i visitatori del sito che hanno completato l’acquisto dopo una campagna di remarketing. I dati recuperati da questo flusso di lavoro sono accessibili nel <span class="uicontrol">Rapporto sull’efficienza di remarketing</span> (consulta questa <a href="../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign"> pagina</a>). <br /> </td> 
+   <td> Questo flusso di lavoro indicizza i visitatori del sito che hanno completato l’acquisto dopo una campagna di remarketing. I dati recuperati da questo flusso di lavoro sono accessibili nel <span class="uicontrol">Rapporto sull’efficienza di remarketing</span> (consulta questa <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> pagina</a>). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Eliminazione eventi</span> <br /> </td> 
