@@ -6,10 +6,10 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,144 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 >
 >Le build di Campaign **General Availability (GA)** sono: [[!DNL Gold Standard] 11](../../rn/using/gold-standard.md#gs-11) e [Campaign 20.2.5](../../rn/using/release--20-2.md).
 
-## ![](assets/do-not-localize/blue_2.png) Versione 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
+## ![](assets/do-not-localize/blue_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+
+_4 giugno 2021_
+
+**Novità**
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrazione Journey Orchestration</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>L'integrazione tra Journey Orchestration e Adobe Campaign Classic è ora GA. Consente al Journey Orchestration di inviare e-mail, notifiche push e SMS utilizzando le funzionalità di messaggistica transazionale Adobe Campaign Classic.</p>
+<p>La connessione tra le istanze Journey Orchestration e Campaign Classic viene impostata per Adobe al momento del provisioning.</p>
+<p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">documentazione del Journey Orchestration</a>. Un caso d'uso dettagliato è presentato in questa <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">sezione</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Miglioramento del canale LINE</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Sono stati aggiunti i seguenti miglioramenti al canale LINE:
+</p>
+<ul> 
+<li><p>Supporto per il tipo di messaggio video LINE</p></li>
+<li><p>Supporto per API di registrazione partner LINE</p></li>
+<li><p>Nuovo tentativo di supporto dell'invio del messaggio in caso di errore sul lato server LINE o di timeout della rete</p></li>
+</ul>
+<p>Per ulteriori informazioni consulta la <a href="../../delivery/using/line-channel.md">documentazione dettagliata</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Connettore Vertica FDA</strong><br/> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Ora puoi collegare l’istanza Adobe Campaign Classic al database esterno Vertica. Questa connessione viene gestita tramite un nuovo account esterno.</p>
+<p>Per ulteriori informazioni consulta la <a href="../../installation/using/configure-fda-vertica.md">documentazione dettagliata</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Connettore FDA Google Big Query</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Ora puoi collegare la tua istanza Adobe Campaign Classic al database esterno Google Big Query. Questa connessione viene gestita tramite un nuovo account esterno.
+</p>
+<p>Per ulteriori informazioni consulta la <a href="../../installation/using/configure-fda-google-big-query.md">documentazione dettagliata</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Miglioramenti della sicurezza**
+
+* L&#39;accesso al metodo API **xtk:session#GetCnxInfo** che restituisce i dettagli completi della connessione al database è ora limitato solo agli utenti amministratori. (NEO-27779)
+* La funzione decryptString obsoleta è stata sostituita con decryptPassword nei file JavaScript relativi a CRM.
+* La funzione di firma di tracciamento è stata migliorata per ridurre il rischio di errori di reindirizzamento quando strumenti di terze parti (client e-mail, browser Internet, strumenti di sicurezza dei collegamenti sicuri) modificano il collegamento tracciato.
+* È stato risolto un problema che poteva impedire il funzionamento degli URL tracciati quando contenevano caratteri maiuscoli. Il meccanismo di firma degli URL tracciati ora distingue tra maiuscole e minuscole. (NEO-28414)
+
+**Aggiornamenti della compatibilità**
+
+Campaign supporta ora i seguenti sistemi:
+* Connettore FDA Google Big Query
+* Connettore Vertica FDA
+* PostgreSQL 13
+
+Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
+
+**Funzioni obsolete**
+
+* A partire dalla versione 21.1 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione con il nuovo connettore Adobe Analytics Connector.
+Per ulteriori informazioni consulta la [documentazione dettagliata](../../platform/using/adobe-analytics-connector.md).
+* Il supporto per Debian 8 è ora obsoleto.
+* In seguito alla rimozione di Oracle CRM in 20.3, l’account esterno correlato è stato rimosso dall’interfaccia.
+
+Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md).
+
+**Miglioramenti**
+
+* Durante il salvataggio di un flusso di lavoro sono stati aggiunti ulteriori controlli per verificare che i nomi delle attività siano univoci e che le transizioni siano sempre seguite da un’attività.
+* Il flusso di lavoro tecnico **Fatturazione (fatturazione)** ora include le attività originariamente eseguite dal flusso di lavoro **Numero di profili di fatturazione attivi** (billingActiveContactCount), che è stato rimosso. Il rapporto e-mail inviato ogni mese dal flusso di lavoro fornisce ora informazioni sul numero di profili attivi nell’istanza. [Leggi tutto](../../workflow/using/about-technical-workflows.md).
+* È stato aggiunto il nuovo attributo **_keyOnMData** per poter utilizzare una chiave per le operazioni sui dati per memoria.
+
+**Altre modifiche**
+
+* La terza parte openssl per Windows è stata aggiornata alla versione 1.1.1h.
+* Nella descrizione del pacchetto Debian, nlserver è stato modificato in server Adobe Campaign Classic.
+
+**Patch**
+
+* È stato risolto un problema che si verificava durante la modifica del timeout sessione per disconnettersi dagli utenti dopo un periodo di tempo specifico in cui gli utenti rimanevano connessi anche dopo l’orario impostato.
+* È stato risolto un problema a causa del quale le consegne venivano visualizzate come di sola lettura ma potevano ancora essere modificate nelle proprietà delle consegne.
+* È stato corretto un errore che causava la scomparsa della barra degli strumenti di modifica durante la progettazione di un&#39;applicazione Web.
+* È stato corretto un errore che causava la visualizzazione della versione testuale di un’e-mail con intestazioni Adobe Campaign Classic durante l’aggiunta di un collegamento a un’e-mail. (NEO-29211
+* Quando si utilizza FDA tramite la connessione HTTP, il flusso di lavoro **Mid-sourcing (log di consegna)** (defaultMidSourcingLog) si è bloccato nell&#39;intervallo di tempo impostato dall&#39;opzione **NmsMidSourcing_LogsPeriodHour**. Questo impedirebbe l&#39;aggiornamento dei record con i dati che si sono verificati dopo questo intervallo di tempo impostato. (NEO-30833)
+* È stato risolto un problema che si verificava dopo l’esecuzione del flusso di lavoro di sincronizzazione del centro messaggi. Ogni volta che una cartella di oggetti di consegna veniva spostata in una cartella personalizzata, il flusso di lavoro riportava le consegne nella cartella **Cronologia dei messaggi transazionali** generica. (NEO-27445)
+* È stato risolto un problema che causava la visualizzazione di un messaggio di errore durante il tentativo di visualizzare i rapporti **Statistiche di trasmissione**, **Indicatori di tracciamento** e **Statistiche delle attività di condivisione** .
+* L&#39;attività del flusso di lavoro **Oracle On Demand** è stata rimossa dall&#39;interfaccia in seguito alla deprecazione del connettore di gestione delle relazioni con i clienti Oracle.
+* È stato risolto un problema che arrestava l’esecuzione dei flussi di lavoro di elaborazione dopo il riavvio giornaliero del modulo server del flusso di lavoro (wfserver). (NEO-30047)
+* È stato risolto un problema che impediva l’aggiornamento del documento di gestione MX, che poteva avere un impatto negativo sulla reputazione IP. (NEO-29897)
+* Sono stati risolti i problemi che causavano arresti anomali del processo Web durante la ricezione di una chiamata SOAP. (NEO-28796) (NEO-29600)
+* È stato risolto un problema che impediva la creazione dell&#39;indice FDA di SAP HANA. (NEO-29664)
+* È stato risolto un problema che poteva mantenere i messaggi transazionali in stato **Attesa** durante l’esecuzione di chiamate SOAP contenenti un’intestazione. (NEO-28737)
+* È stato risolto un problema che si verificava quando si utilizzava il connettore FDA Teradata: tutte le tabelle temporanee sono state create su un solo nodo del cluster, che potrebbe finire per consumare l&#39;intero spazio di spool e fare crash Teradata. Le tabelle temporanee vengono ora generate su molti nodi. (NEO-28230)
+* È stato risolto un problema che si verificava durante l’utilizzo di applicazioni web a causa del quale i tag di tracciamento generavano chiavi primarie non corrette nello schema **nms:trackingURL** . (NEO-27931)
+* La compatibilità con ODBC 3.x è stata migliorata per garantire la precisione dei messaggi di errore.
+* È stato risolto un problema che poteva causare arresti anomali della console in caso di utilizzo di modelli di contenuto personalizzati nelle consegne e-mail. (NEO-31547)
+* È stato risolto un problema che impediva a Tomcat di inviare risposte valide a causa di una connessione lenta o di dimensioni di risposta elevate.
+* È stato risolto un problema che poteva verificarsi durante la lettura di UUID da un database PostgreSQL.
+* È stato risolto un problema che poteva causare problemi di prestazioni durante la ricerca di dati di proposta collegati alle offerte. (NEO-27554)
+* È stato risolto un problema che causava la mancata risposta del processo Web quando il servizio IMS veniva attivato ma non rispondeva.
+* È stato risolto un problema che impediva l’invio di una consegna con un gruppo di bozze a causa di un meccanismo di unione specifico che non consentiva la personalizzazione della consegna. (NEO-14391)
+* È stato risolto un problema che impediva l’invio di un avviso con l’attività di avviso se una query e un’attività di arricchimento miravano alla tabella di consegna. (NEO-25157)
+
+## ![](assets/do-not-localize/red_2.png) Versione 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
 
 _15 aprile 2021_
 
