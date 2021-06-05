@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1540'
 ht-degree: 8%
 
 ---
@@ -259,11 +259,11 @@ Per ulteriori informazioni su questa configurazione, consulta [questa pagina](..
 
 ## Analisi web {#web-analytics-external-account}
 
-L’ account esterno **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** ti consente di inoltrare i dati da Adobe Analytics ad Adobe Campaign sotto forma di segmenti. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign ad Adobe Analytics - Data Connector.
+L’ account esterno **[!UICONTROL Web Analytics]** ti consente di inoltrare i dati da Adobe Analytics ad Adobe Campaign sotto forma di segmenti. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign al connettore Adobe Analytics.
 
 ![](assets/ext_account_10.png)
 
-Per questo account esterno, la formula di calcolo per gli URL tracciati deve essere arricchita e la connessione tra le due soluzioni deve essere approvata. Per ulteriori informazioni, consulta questa [pagina](../../platform/using/adobe-analytics-data-connector.md#step-2--create-the-external-account-in-campaign).
+Per questo account esterno, la formula di calcolo per gli URL tracciati deve essere arricchita e la connessione tra le due soluzioni deve essere approvata. Per ulteriori informazioni, consulta questa [pagina](../../platform/using/adobe-analytics-connector.md#external-account-classic).
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
