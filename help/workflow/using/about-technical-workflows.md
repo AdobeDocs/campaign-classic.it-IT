@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 5%
+source-wordcount: '1700'
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,6 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Mid-sourcing (contatori di consegna)**  (defaultMidSourcingDlv) | Trasferisci a mid-sourcing | Questo flusso di lavoro raccoglie le informazioni sul conteggio delle consegne sul server di mid-sourcing. Le informazioni sul conteggio includono indicatori generali di consegna come il numero di consegne inviate, ecc. Le informazioni di tracciamento come le aperture non sono incluse. Viene attivato ogni dieci minuti per impostazione predefinita. |
 | **Mid-sourcing (log di consegna)**  (defaultMidSourcingLog) | Trasferisci a mid-sourcing | Questo flusso di lavoro raccoglie i registri di consegna sul server di mid-sourcing. Viene attivato ogni ora per impostazione predefinita. |
 | **Gestione delle rinunce NMAC**  (mobileAppOptOutMgt) | Canale app mobile | Questo flusso di lavoro aggiorna le sottoscrizioni di notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
-| **Numero di profili di fatturazione attivi**  (billingActiveContactCount) | Consegna | Questo flusso di lavoro conta il numero di profili attivi. Viene attivato ogni notte all’1 per impostazione predefinita. Per “profilo” si intende un registro di informazioni (ad esempio un record nella tabella nmsRecipient o una tabella esterna contenente un ID cookie, un ID cliente, un identificatore mobile o altre informazioni pertinenti a un canale specifico) che rappresenta un cliente finale, potenziale o un lead. La fatturazione riguarda solo i profili &quot;attivi&quot;. Un profilo è considerato &quot;attivo&quot; se il profilo è stato oggetto di targeting o comunicato negli ultimi 12 mesi tramite qualsiasi canale. I canali Facebook e Twitter non vengono presi in considerazione. Puoi avere una panoramica del Numero di profili attivi dal menu Amministrazione > Gestione campagne > Metriche cliente . |
 | **Notifica di offerta**  (offerMgt) | Consegna | Questo flusso di lavoro distribuisce le offerte approvate nell’ambiente online, nonché in ogni categoria contenuta nel catalogo delle offerte. |
 | **Pulizia dei flussi di lavoro in pausa**  (cleanupPausedWorkflows) | Consegna | Questo flusso di lavoro analizza i flussi di lavoro in pausa con la gravità impostata su normale e attiva avvisi e notifiche quando sono stati messi in pausa per troppo tempo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro in pausa](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Pulizia delle richieste di privacy**  (cleanupPrivacyRequests) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni. |
@@ -69,7 +68,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Sincronizzazione della proposta**  (propositionSynch) | Controllo del motore di offerta con istanza di esecuzione | Questo flusso di lavoro sincronizza le proposizioni tra l’istanza di marketing e l’istanza di esecuzione utilizzata per le interazioni. |
 | **Recupero di eventi web**  (webAnalyticsGetWebEvents) | Connettori di Web Analytics | Ogni ora, questo flusso di lavoro scarica i segmenti sul comportamento degli utenti Internet su un dato sito, li inserisce nel database Adobe Campaign e avvia il flusso di lavoro di remarketing. |
 | **Aggregati per la generazione di rapporti**  (reportingAggregates) | Consegna | Questo flusso di lavoro aggiorna gli aggregati utilizzati nei rapporti. Viene attivato ogni giorno alle 2 per impostazione predefinita. |
-| **Invio di indicatori e attributi della campagna**  (webAnalyticsSendMetrics) | Connettori di Web Analytics | Questo flusso di lavoro consente di inviare gli indicatori delle campagne e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore di Genesis Adobe®. Gli indicatori interessati sono i seguenti: Inviato (Inviato), Numero totale di aperture (iTotalRecipientOpen), Numero totale di destinatari che hanno fatto clic su (iTotalRecipientClick), Errori (iError), Opt-Out (opt-out) (iOptOut). |
+| **Invio di indicatori e attributi della campagna**  (webAnalyticsSendMetrics) | Connettori di Web Analytics | Questo flusso di lavoro consente di inviare gli indicatori delle campagne e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: Inviato (Inviato), Numero totale di aperture (iTotalRecipientOpen), Numero totale di destinatari che hanno fatto clic su (iTotalRecipientClick), Errori (iError), Opt-Out (opt-out) (iOptOut). |
 | **Stock: Ordini e avvisi**  (stockMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro avvia il calcolo delle scorte sulle linee dell&#39;ordine e gestisce le soglie degli avvisi di avviso. |
 | **Sincronizzazione delle ventole di Facebook**  (syncFacebookFans) | Social network (Social Marketing) | Questo flusso di lavoro importa le ventole Facebook in Adobe Campaign ogni giorno alle 7. |
 | **Sincronizzazione delle pagine**  Facebook (syncFacebook) | Social network (Social Marketing) | Questo flusso di lavoro sincronizza le pagine Facebook con Adobe Campaign ogni giorno alle 7. |
