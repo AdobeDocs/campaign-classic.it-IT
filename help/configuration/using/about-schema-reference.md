@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '381'
 ht-degree: 7%
 
 ---
@@ -74,18 +74,13 @@ Uno schema di dati è identificato dal nome e dallo spazio dei nomi corrisponden
 
 Uno spazio dei nomi consente di raggruppare un set di schemi per area di interesse. Ad esempio, lo spazio dei nomi **cus** viene utilizzato per la configurazione specifica del cliente (**clienti**).
 
+La chiave di identificazione di uno schema è una stringa creata utilizzando lo spazio dei nomi e il nome separati da due punti; ad esempio: **cus:recipient**.
+
 >[!IMPORTANT]
 >
->Come standard, il nome dello spazio dei nomi deve essere conciso e deve contenere solo caratteri autorizzati in conformità alle regole di denominazione XML.
+>Il nome dello spazio dei nomi deve essere conciso e deve contenere solo caratteri autorizzati in conformità alle regole di denominazione XML.
 >
 >Gli identificatori non devono iniziare con caratteri numerici.
+>
+>I seguenti namespace sono riservati per le descrizioni delle entità di sistema necessarie per il funzionamento dell’applicazione Adobe Campaign e non devono essere utilizzati: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
 
-Alcuni namespace sono riservati per le descrizioni delle entità di sistema necessarie per il funzionamento dell’applicazione Adobe Campaign:
-
-* **xtk**: per quanto riguarda i dati del sistema di piattaforma,
-* **nl**: per quanto riguarda l&#39;utilizzazione globale della domanda,
-* **nms**: per quanto riguarda la consegna (destinatario, consegna, tracciamento, ecc.),
-* **ncm**: per quanto riguarda la gestione dei contenuti,
-* **temperatura**: riservato agli schemi temporanei.
-
-La chiave di identificazione di uno schema è una stringa creata utilizzando lo spazio dei nomi e il nome separati da due punti; ad esempio: **cus:recipient**.
