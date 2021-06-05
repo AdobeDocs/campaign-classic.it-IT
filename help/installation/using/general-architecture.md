@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Inoltre, gestisce periodicamente i flussi di lavoro tecnici eseguiti, tra cui:
 
 * Tracciamento: Recupero e consolidamento dei registri di tracciamento. Consente di recuperare i registri dal server di reindirizzamento e di creare gli indicatori aggregati utilizzati dal modulo di reporting.
 * Pulizia: Pulizia del database. Utilizzato per eliminare i vecchi record ed evitare la crescita esponenziale del database.
-* Fatturazione: Invio automatico di un rapporto di attività per la piattaforma (dimensioni del database, numero di azioni di marketing, ecc.).
+* Fatturazione: Invio automatico di un rapporto di attività per la piattaforma (dimensioni del database, numero di azioni di marketing, numero di profili attivi, ecc.).
 
 **Server di consegna**  (nlserver mta)
 
