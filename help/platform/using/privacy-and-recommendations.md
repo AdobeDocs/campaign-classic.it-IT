@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
 source-wordcount: '2038'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Nella gestione della privacy è importante definire quali dati devono essere ges
 * **I dati personali** sono informazioni che possono identificare direttamente o indirettamente un individuo.
 * **I dati personali riservati** sono informazioni relative alla razza, alle opinioni politiche, alle credenze religiose, ai precedenti penali, alle informazioni genetiche, ai dati sulla salute, alle preferenze sessuali e alle informazioni biometriche di un individuo, nonché alla sua appartenenza a un sindacato.
 
-È necessario prestare maggiore attenzione alla protezione dei dati personali durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, come [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager o il servizio core Persone](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) o con altre soluzioni quali [Connettori CRM](../../platform/using/crm-connectors.md).
+È necessario prestare maggiore attenzione alla protezione dei dati personali durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, come [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), [Audience Manager o il servizio core Persone](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) o con altre soluzioni quali [Connettori CRM](../../platform/using/crm-connectors.md).
 
 Le [normative principali](#privacy-regulations) si riferiscono alle diverse entità che gestiscono i dati come segue:
 * Il **titolare del trattamento** è l’autorità che determina i mezzi e lo scopo della raccolta, dell’utilizzo e della condivisione dei dati personali.
