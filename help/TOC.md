@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Progetta, pianifica, esegui, gestisci e ottimizza campagne di marketing cross-channel che offrono un alto ritorno sugli investimenti di marketing.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-      + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+      + [Connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
+      + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opzioni di assistenza e supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [Best practice e limitazioni](installation/using/fda-best-practices.md)
          + Linee guida per la configurazione {#config-databases}
             + [Passaggi di configurazione](installation/using/configure-fda.md)
+            + [Configurare Vertica](installation/using/configure-fda-vertica.md)
             + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Configura Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Configurare Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Configurare Hadoop](installation/using/configure-fda-hadoop.md)
             + [Configurare Oracle](installation/using/configure-fda-oracle.md)
