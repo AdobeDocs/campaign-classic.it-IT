@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '757'
 ht-degree: 9%
 
 ---
@@ -89,8 +89,8 @@ La tabella seguente fornisce l’accesso alla documentazione di integrazione di 
    <td> L'integrazione tra <strong>Triggers servizio core</strong> e Adobe Campaign consente di inviare e-mail personalizzate ai clienti per reagire a comportamenti specifici tracciati sul sito web da Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/it/campaign/kb/triggers-and-campaign.html">Ulteriori </a> informazioni su Adobe Campaign - Integrazione dei trigger Experience Cloud.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics - Data Connectors</strong><br /> </td> 
-   <td> <strong>I connettori dati</strong>  (precedentemente noti come Adobe Genesis) consentono ad Adobe Campaign e Adobe Analytics di interagire attraverso i segmenti relativi al comportamento degli utenti dopo una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign ad Adobe Analytics - Connettore dati.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Ulteriori </a> informazioni sull’integrazione di Campaign - Data Connectors.</p><br /> </td> 
+   <td> <strong>Connettore Adobe Analytics</strong><br /> </td> 
+   <td> <strong>Il </strong> connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso i segmenti relativi al comportamento degli utenti dopo una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign ad Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Ulteriori </a> informazioni sull’integrazione dei connettori di Campaign - Analytics.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
