@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 52%
+source-wordcount: '250'
+ht-degree: 58%
 
 ---
 
@@ -16,17 +16,15 @@ ht-degree: 52%
 
 ## Novità
 
+* **[Il rilascio di giugno è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
+
 * **[Rimuovere i ](delivery/using/update-bounce-qualification.md)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione Apple
 
-* **[Aggiorna il tuo ](technotes/ios-certificate-update.md)**<br/> certificato APNs Il 29 marzo 2021, un aggiornamento APNs ha interessato il canale iOS Campaign. Devi aggiornare la configurazione per evitare l’interruzione del canale push iOS.
+* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 30 giugno 2021 **
 
-* **[Connessione tramite IMS/Adobe ID? Effettua l’aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 30 giugno 2021 **.
-
-* **[Proteggi le ](technotes/acc-config-updates.md)**<br/> istanze CampaignAggiorna alle build più recenti per proteggere la piattaforma Campaign.
+* **[Proteggi le ](technotes/acc-config-updates.md)**<br/> istanze di CampaignAggiorna le build più recenti per proteggere la piattaforma Campaign
 
 * **[Aggiornare l’](integrations/using/configuring-adobe-io.md)**<br/> integrazione di Adobe Experience Cloud TriggersIl servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. Scopri come effettuare la migrazione all’Adobe I/O.
-
-* **[Passa al provider APN basato su HTTP/2 ](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)**<br/> APILScopri come migrare dal protocollo binario legacy all’API APNs provider basato su HTTP/2
 
 * **[Ottenere assistenza](support.md)**<br/>
 Accedi a domande frequenti, best practice e risorse di assistenza e richiedi assistenza
