@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '331'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,10 @@ Una volta creato lo schema di dati, i dati possono essere elaborati nei flussi d
 A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai eseguire alcune configurazioni specifiche. Queste configurazioni comportano essenzialmente l’installazione di driver e la dichiarazione di variabili di ambiente che appartengono a ogni RDBMS sul server Adobe Campaign e la configurazione dell’account esterno.
 
 Segui i collegamenti riportati di seguito per ulteriori informazioni:
+
+* Connetti campagna e [Vertica](../../installation/using/configure-fda-vertica.md)
+
+* Connetti Campaign e [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 
 * Connetti campagna e [Azure synapse](../../installation/using/configure-fda-synapse.md)
 
