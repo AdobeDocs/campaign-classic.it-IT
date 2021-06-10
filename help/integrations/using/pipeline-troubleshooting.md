@@ -5,9 +5,9 @@ description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -82,3 +82,9 @@ In genere, un trigger può richiedere 15-90 minuti per avviare una campagna di m
 1. Cerca gli errori in pipelined.log che possono causare nuovi tentativi. Correggi gli errori, se applicabile.
 1. Controlla la pagina di stato [!DNL pipelined] per le dimensioni della coda. Se le dimensioni della coda sono grandi, migliora le prestazioni del JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura gli attivatori su Analytics utilizzando meno messaggi.
+
+**Aggiornamento delle istanze dell’area di visualizzazione dall’autenticazione legacy all’autenticazione I/O di Adobe**
+
+La modifica dell’autenticazione dell’integrazione nell’istanza di stage non influisce sulla configurazione dell’istanza di produzione. È possibile scegliere di aggiornare l&#39;istanza di stage, quindi aggiornare l&#39;autenticazione per Adobe IO e testare i trigger sull&#39;istanza di stage.
+
+L’istanza di produzione continuerà a utilizzare l’autenticazione legacy e non sarà interessata da questa modifica.
