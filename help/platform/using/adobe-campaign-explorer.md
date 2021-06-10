@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Per una navigazione e un utilizzo ottimali, l&#39;Adobe consiglia di utilizzare 
 
 >[!CAUTION]
 >
->Le risoluzioni inferiori a 1600x900 pixel sono supportate da Adobe Campaign.
+>Le risoluzioni inferiori a 1600x900 pixel non sono supportate da Adobe Campaign.
 
 Nell’area di lavoro **[!UICONTROL Explorer]**, se alcune parti della zona **[!UICONTROL Details]** sembrano troncate, espandetela utilizzando la freccia posta sopra la zona o fai clic sul pulsante **[!UICONTROL Enlarge]** .
 
