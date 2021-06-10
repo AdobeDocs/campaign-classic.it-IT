@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -61,16 +61,16 @@ L’amministratore del database deve far corrispondere questi diritti con i diri
 | **Accesso ai dati client** | SELEZIONARE (FUTURO) TABELLA(I) o privilegio(i) VISUALIZZAZIONE(I) | Privilegio SELECT | Privilegi SELECT o SELECT ANY TABLE | Autorizzazione SELECT | Privilegio SELECT | Privilegio SELECT |
 | **Accesso ai metadati** | SELEZIONARE il privilegio SCHEMA INFORMATION_SCHEMA | Privilegio SELECT | Nessun privilegio necessario per utilizzare l&#39;istruzione DESCRIBE | Autorizzazione VIEW DEFINITION | Nessun privilegio richiesto per utilizzare il comando &quot;\d tabella&quot; | Privilegio SELECT |
 
-|   | DB2 UDB | teradata | InfiniDB | sybase IQ / SFONDO | Netezza | Grigio | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Connessione al database remoto** | autorità CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Non è richiesta alcuna autorizzazione per utilizzare l’istruzione CONNECT | Nessun privilegio richiesto | privilegio CONNECT | privilegio CONNECT |
-| **Creazione di tabelle** | AUTORIZZAZIONE CREATETAB | CREA TABELLA o TABELLA parola chiave | Privilegio CREATE | AUTORIZZAZIONE RISORSA e autorizzazione CREATE | Privilegio TABLE | Privilegio CREATE | Privilegio CREATE |
-| **Creazione degli indici** | Privilegio INDEX | CREARE una parola chiave INDEX o INDEX | Privilegio INDEX | AUTORIZZAZIONE RISORSA e autorizzazione CREATE | Privilegio INDEX | Privilegio CREATE | Privilegio CREATE |
-| **Creazione di funzioni** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA FUNZIONE o FUNZIONE, parola chiave | CREA privilegio ROUTINE | Autorità RISORSA o autorità DBA per le funzioni Java | Privilegio FUNCTION | Privilegio di utilizzo | CREA privilegio FUNCTION |
-| **Creazione di procedure** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA PROCEDURA o parola chiave PROCEDURA | CREA privilegio ROUTINE | RESPONSABILE DELLE RISORSE | privilegio PROCEDURA | Privilegio di utilizzo | CREA privilegio FUNCTION |
-| **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Privilegio DROPIN o privilegio CONTROL o proprietario dell&#39;oggetto | DROP &lt; oggetto > o parola chiave correlata all&#39;oggetto | Privilegio DROP | Proprietario dell’oggetto o dell’autorità DBA | Privilegio DROP | Proprietario dell&#39;oggetto | Proprietario dell&#39;oggetto |
-| **Monitoraggio delle esecuzioni** | AUTORIZZAZIONE SPIEGATA | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Privilegio SELECT | Solo l&#39;amministratore di sistema può eseguire sp_showplan | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN |
-| **Scrittura dei dati** | Privilegi di INSERT e UPDATE o autorità DATAACCESS | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE | Autorizzazioni INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE |
-| **Caricamento dei dati nelle tabelle** | AUTORIZZAZIONE DI CARICO | Privilegi SELECT e INSERT per utilizzare rispettivamente le istruzioni COPY TO e COPY FROM | Privilegio FILE | Proprietario della tabella o autorizzazione ALTER. A seconda dell’opzione -gl, LOAD TABLE può essere eseguito solo se l’utente dispone dell’autorità DBA | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT |
-| **Accesso ai dati client** | Privilegi INSERT/UPDATE o autorità DATAACCESS | Privilegio SELECT | Privilegio SELECT | Autorizzazione SELECT | Privilegio SELECT | Privilegio SELECT | Privilegio SELECT |
-| **Accesso ai metadati** | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | privilegio SHOW | Privilegio SELECT | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | Nessun privilegio richiesto per utilizzare il comando &quot;\d tabella&quot; | Nessun privilegio richiesto per utilizzare il comando &quot;\d tabella&quot; | Nessun privilegio richiesto per l&#39;utilizzo del comando SHOW |
+|   | DB2 UDB | teradata | InfiniDB | sybase IQ / SFONDO | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Connessione al database remoto** | autorità CONNECT | privilegio CONNECT | Creazione di un utente associato a un host remoto con TUTTI I PRIVILEGI | Non è richiesta alcuna autorizzazione per utilizzare l’istruzione CONNECT | Nessun privilegio richiesto | privilegio CONNECT |
+| **Creazione di tabelle** | AUTORIZZAZIONE CREATETAB | CREA TABELLA o TABELLA parola chiave | Privilegio CREATE | AUTORIZZAZIONE RISORSA e autorizzazione CREATE | Privilegio TABLE | Privilegio CREATE |
+| **Creazione degli indici** | Privilegio INDEX | CREARE una parola chiave INDEX o INDEX | Privilegio INDEX | AUTORIZZAZIONE RISORSA e autorizzazione CREATE | Privilegio INDEX | Privilegio CREATE |
+| **Creazione di funzioni** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA FUNZIONE o FUNZIONE, parola chiave | CREA privilegio ROUTINE | Autorità RISORSA o autorità DBA per le funzioni Java | Privilegio FUNCTION | CREA privilegio FUNCTION |
+| **Creazione di procedure** | Autorizzazione IMPLICIT_SCHEMA o privilegio CREATEIN | CREA PROCEDURA o parola chiave PROCEDURA | CREA privilegio ROUTINE | RESPONSABILE DELLE RISORSE | privilegio PROCEDURA | CREA privilegio FUNCTION |
+| **Rimozione di oggetti (tabelle, indici, funzioni, procedure)** | Privilegio DROPIN o privilegio CONTROL o proprietario dell&#39;oggetto | DROP &lt; oggetto > o parola chiave correlata all&#39;oggetto | Privilegio DROP | Proprietario dell’oggetto o dell’autorità DBA | Privilegio DROP | Proprietario dell&#39;oggetto |
+| **Monitoraggio delle esecuzioni** | AUTORIZZAZIONE SPIEGATA | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Privilegio SELECT | Solo l&#39;amministratore di sistema può eseguire sp_showplan | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN | Nessun privilegio richiesto per l&#39;utilizzo dell&#39;istruzione EXPLAIN |
+| **Scrittura dei dati** | Privilegi di INSERT e UPDATE o autorità DATAACCESS | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE | Autorizzazioni INSERT e UPDATE | Privilegi INSERT e UPDATE | Privilegi INSERT e UPDATE |
+| **Caricamento dei dati nelle tabelle** | AUTORIZZAZIONE DI CARICO | Privilegi SELECT e INSERT per utilizzare rispettivamente le istruzioni COPY TO e COPY FROM | Privilegio FILE | Proprietario della tabella o autorizzazione ALTER. A seconda dell’opzione -gl, LOAD TABLE può essere eseguito solo se l’utente dispone dell’autorità DBA | Privilegi SELECT e INSERT | Privilegi SELECT e INSERT |
+| **Accesso ai dati client** | Privilegi INSERT/UPDATE o autorità DATAACCESS | Privilegio SELECT | Privilegio SELECT | Autorizzazione SELECT | Privilegio SELECT | Privilegio SELECT |
+| **Accesso ai metadati** | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | privilegio SHOW | Privilegio SELECT | Nessuna autorizzazione necessaria per utilizzare l&#39;istruzione DESCRIBE | Nessun privilegio richiesto per utilizzare il comando &quot;\d tabella&quot; | Nessun privilegio richiesto per l&#39;utilizzo del comando SHOW |
