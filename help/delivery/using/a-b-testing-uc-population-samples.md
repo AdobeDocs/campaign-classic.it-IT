@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
-# Configurazione dei campioni di popolazione {#step-2--configuring-population-samples}
+# Configurare i campioni di popolazione {#step-2--configuring-population-samples}
 
-## Configurazione dell’attività Query {#configuring-the-query-activity}
+## Configurare l’attività Query {#configuring-the-query-activity}
 
 * Fai doppio clic sull’attività **[!UICONTROL Query]** .
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Configurazione dell’attività Split {#configuring-the-split-activity}
+## Configurare l’attività Split {#configuring-the-split-activity}
 
 Questa attività ti consente di creare diverse popolazioni: quella che riceve la consegna A, quella che riceve la consegna B, e la popolazione rimanente. L’utilizzo di una selezione casuale consente di eseguire il targeting di solo una parte della popolazione di ciascuna consegna.
 
@@ -79,4 +79,4 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Ora puoi creare i due modelli di consegna (vedi [Passaggio 3: Crea due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
+Ora puoi creare i due modelli di consegna. [Ulteriori informazioni](a-b-testing-uc-delivery-templates.md)).
