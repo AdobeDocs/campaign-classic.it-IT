@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 4%
+source-wordcount: '656'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +19,18 @@ Una volta installato il pacchetto, puoi definire le impostazioni dell’app iOS 
 
 >[!NOTE]
 >
->Per scoprire come configurare l’app per Android e come creare una consegna per Android, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md).
+>Per scoprire come configurare l’app per Android e come creare una consegna per Android, consulta questa [sezione](configuring-the-mobile-application-android.md).
 
-## Configurazione dell&#39;account esterno iOS {#configuring-external-account-ios}
+I passaggi chiave sono i seguenti:
+
+1. [Configurare l’account esterno iOS](#configuring-external-account-ios)
+1. [Configurare il servizio iOS](#configuring-ios-service)
+1. [Integrare l’app mobile iOS in Campaign](#creating-ios-app)
+
+Potrai quindi [creare una notifica push per i dispositivi iOS](create-notifications-ios.md).
+
+
+## Configurare l&#39;account esterno iOS {#configuring-external-account-ios}
 
 Per iOS, il connettore iOS HTTP/2 invia notifiche al servizio APN HTTP/2.
 
@@ -37,7 +46,7 @@ Per configurare questo connettore, effettua le seguenti operazioni:
 
 Il connettore iOS è ora configurato. Puoi iniziare a creare il servizio.
 
-## Configurazione del servizio iOS {#configuring-ios-service}
+## Configura il servizio iOS {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -64,9 +73,9 @@ Il connettore iOS è ora configurato. Puoi iniziare a creare il servizio.
 
 1. Crea le tue applicazioni di sviluppo e produzione iOS. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
 
-## Creazione di un&#39;applicazione mobile iOS {#creating-ios-app}
+## Creare un&#39;app mobile iOS {#creating-ios-app}
 
-Dopo aver creato il servizio, è ora necessario creare l&#39;applicazione iOS:
+Dopo aver creato il servizio, crea l’applicazione iOS in Campaign. Segui i passaggi seguenti:
 
 1. Dal servizio appena creato, fai clic sul pulsante **[!UICONTROL Add]** per selezionare il tipo di applicazione.
 
@@ -118,40 +127,3 @@ Nell’esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare una 
 1. Fai clic su **[!UICONTROL Finish]**.
 
 L’applicazione iOS è ora pronta per essere utilizzata in Campaign Classic.
-
-## Creazione di una notifica potenziata iOS {#creating-ios-delivery}
-
-Con iOS 10 o versioni successive, è possibile generare notifiche potenziate. Adobe Campaign può inviare notifiche utilizzando variabili che consentiranno al dispositivo di visualizzare una notifica potenziata.
-
-Ora devi creare una nuova consegna e collegarla all’app mobile creata.
-
-1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
-
-1. Fai clic su **[!UICONTROL New]**.
-
-   ![](assets/nmac_android_3.png)
-
-1. Seleziona **[!UICONTROL Deliver on iOS (ios)]** nel menu a discesa **[!UICONTROL Delivery template]** . Aggiungi un **[!UICONTROL Label]** alla consegna.
-
-1. Fai clic su **[!UICONTROL To]** per definire il gruppo di destinazione. Per impostazione predefinita, viene applicata la mappatura di destinazione **[!UICONTROL Subscriber application]**. Fai clic su **[!UICONTROL Add]** per selezionare il servizio creato in precedenza.
-
-   ![](assets/nmac_ios_9.png)
-
-1. Nella finestra **[!UICONTROL Target type]**, seleziona **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** e fai clic su **[!UICONTROL Next]**.
-
-1. Nel menu a discesa **[!UICONTROL Service]** , seleziona il servizio creato in precedenza e quindi l’applicazione di destinazione, quindi fai clic su **[!UICONTROL Finish]**.
-I **[!UICONTROL Application variables]** vengono aggiunti automaticamente a seconda di ciò che è stato aggiunto durante i passaggi di configurazione.
-
-   ![](assets/nmac_ios_6.png)
-
-1. Modifica le notifiche potenziate.
-
-   ![](assets/nmac_ios_7.png)
-
-1. Seleziona la casella **[!UICONTROL Mutable content]** nella finestra di notifica di modifica per consentire all’app mobile di scaricare contenuti multimediali.
-
-1. Fai clic su **[!UICONTROL Save]** e invia la consegna.
-
-L’immagine e la pagina web devono essere visualizzati nella notifica push quando vengono ricevuti sui dispositivi iOS mobili degli abbonati.
-
-![](assets/nmac_ios_8.png)
