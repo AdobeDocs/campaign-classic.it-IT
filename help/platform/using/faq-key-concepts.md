@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 99%
@@ -90,7 +90,7 @@ Scopri come configurare la piattaforma e inviare messaggi SMS [in questa sezione
 
 ## Come si inviano le notifiche push? {#how-to-send-push-notifications-}
 
-Scopri come utilizzare Adobe Campaign per [inviare una notifica push personalizzata](../../delivery/using/creating-notifications.md) ai dispositivi iOS e Android tramite app.
+Scopri come utilizzare Adobe Campaign per [inviare una notifica push personalizzata](../../delivery/using/create-notifications-ios.md) ai dispositivi iOS e Android tramite app.
 
 ## Come si progetta e si condivide un sondaggio online? {#how-to-design-and-share-an-online-survey-}
 
