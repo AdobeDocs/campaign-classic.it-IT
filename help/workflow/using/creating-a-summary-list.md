@@ -6,14 +6,14 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
 
 ---
 
-# Creazione di un elenco di riepilogo{#creating-a-summary-list}
+# Creare un elenco di riepilogo{#creating-a-summary-list}
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che, dopo la raccolta dei file e dopo diversi arricchimenti, consente di creare un elenco di riepilogo. L&#39;esempio si basa su un elenco di contatti che hanno effettuato acquisti in un negozio.
 
@@ -37,7 +37,7 @@ Per creare un elenco di riepilogo, segui questi passaggi:
 1. Arricchimento dei dati &quot;Contatti&quot; con un calcolo aggregato dalla tabella &quot;Acquisti&quot;
 1. Creazione di un elenco di riepilogo
 
-## Passaggio 1: Caricamento del file e riconciliazione dei dati importati {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Passaggio 1: Carica il file e riconcilia i dati importati {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 I dati da caricare sono dati relativi all’acquisto con il seguente formato:
 
@@ -59,7 +59,7 @@ Questi dati sono contenuti in un file di testo &quot;Purchases.txt&quot;.
 
    L’attività **Caricamento dati(file)** ti consente di arricchire la tabella di lavoro del flusso di lavoro con i dati raccolti.
 
-   Per ulteriori informazioni su questa attività, consulta [Caricamento di dati da un file](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
+   Per ulteriori informazioni su questa attività, consulta [Caricare dati da un file](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Configura l&#39;attività **Raccolta file** per raccogliere file di testo (*.txt) dalla directory selezionata.
 
@@ -110,7 +110,7 @@ I dati nella tabella di lavoro del flusso di lavoro dopo tale arricchimento sara
 
 ![](assets/uc2_enrich_population1.png)
 
-## Passaggio 2: Scrittura di dati arricchiti nella tabella &quot;Acquisti&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Passaggio 2: Scrivi dati arricchiti nella tabella &quot;Acquisti&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 Questo passaggio descrive come scrivere i dati importati e arricchiti nella tabella &quot;Acquisti&quot;. A questo scopo, è necessario utilizzare un&#39;attività **Update data** .
 
@@ -134,7 +134,7 @@ Nell&#39;attività **Aggiorna dati** è necessaria la seguente configurazione:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Passaggio 3: Arricchimento dei dati di &quot;contatto&quot; {#step-3--enriching--contact--data-}
+## Passaggio 3: Arricchisci i dati di &quot;contatto&quot; {#step-3--enriching--contact--data-}
 
 Lo schema &quot;Contatti&quot; è fisicamente collegato allo schema &quot;Acquisti&quot;. Questo significa che puoi utilizzare un’altra opzione dell’opzione &quot;Enrichment&quot;: aggiunta di dati collegati alla dimensione di filtro.
 
@@ -170,7 +170,7 @@ Per preparare l’elenco di riepilogo, è necessario aggiungere campi dai campi 
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Passaggio 4: Creazione e aggiunta di un elenco di riepilogo {#step-4--creating-and-adding-to-a-summary-list}
+## Passaggio 4: Crea e aggiungi a un elenco di riepilogo {#step-4--creating-and-adding-to-a-summary-list}
 
 L’ultimo passaggio consiste nel scrivere tutti i dati arricchiti in un elenco.
 
