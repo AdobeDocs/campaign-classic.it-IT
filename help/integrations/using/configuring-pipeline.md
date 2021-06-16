@@ -5,9 +5,9 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '914'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,11 @@ I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della 
 
 Prima di avviare questa configurazione, controlla che stai utilizzando:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 o [!DNL Gold Standard] 11 minimo
+* Almeno una delle seguenti build Adobe Campaign:
+   * 19.1.8.9039
+   * 19.1.4.9032.GS.11
+   * 20.2.4.9187
+   * 20.3.1
 * Versione Adobe Analytics Standard
 
 Sarà inoltre necessario:
