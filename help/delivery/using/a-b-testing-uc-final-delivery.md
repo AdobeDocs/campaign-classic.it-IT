@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 7%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
-# Definizione della consegna finale {#step-6--defining-the-final-delivery}
+# Definire la consegna finale {#step-6--defining-the-final-delivery}
 
 Una volta creato lo script per selezionare il vincitore del test A/B, puoi definire i parametri della consegna finale.
 
@@ -26,4 +26,4 @@ Una volta creato lo script per selezionare il vincitore del test A/B, puoi defin
 
 Preparando la consegna specificata nella transizione (definita tramite l’attività **[!UICONTROL Javascript Code]** ), potrai quindi approvarla e avviare l’invio, come descritto nel passaggio successivo.
 
-Ora puoi avviare il flusso di lavoro (vedi [Passaggio 7: Avvia il flusso di lavoro](../../delivery/using/a-b-testing-uc-start-workflow.md)).
+Ora puoi avviare il flusso di lavoro. [Ulteriori informazioni](a-b-testing-uc-start-workflow.md).
