@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Configurazione delle consegne
-description: Scopri come eseguire test A/B tramite un caso d’uso dedicato.
+title: Configurare le consegne
+description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
-# Configurazione delle consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
+# Configurare le consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Il passaggio successivo consiste nel configurare le consegne. Sono destinati alle tre popolazioni create nel corso della fase precedente: [Passaggio 2: Configurazione dei campioni di popolazione](#step-2--configuring-population-samples). Le prime due consegne consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è destinata alla popolazione che non ha ricevuto né A né B. Il relativo contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale ha ottenuto il più alto tasso di apertura. È necessario configurare un periodo di attesa per la terza consegna per individuare il risultato delle consegne A e B. Per questo motivo la terza consegna include un’attività **[!UICONTROL Wait]**.
+Una volta create le [popolazioni](a-b-testing-uc-population-samples.md), puoi configurare le consegne. In questo caso d’uso, le prime due consegne consentono di inviare contenuti diversi ai gruppi A e B. La terza consegna è la consegna di ritorno: verrà inviato ai destinatari che non appartengono a A né B. Il relativo contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale ha ottenuto il punteggio di apertura più alto. È necessario configurare un periodo di attesa per la terza consegna per individuare il risultato delle consegne A e B. Per questo motivo la terza consegna include un’attività **[!UICONTROL Wait]**.
 
 1. Vai all’ attività **[!UICONTROL Split]** e collega la transizione destinata alla popolazione A a una delle consegne e-mail già presenti nel flusso di lavoro.
 
@@ -50,4 +50,4 @@ Il passaggio successivo consiste nel configurare le consegne. Sono destinati all
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-È ora possibile creare lo script (vedere [Passaggio 5: Crea lo script](../../delivery/using/a-b-testing-uc-script.md)).
+Ora puoi creare lo script. [Ulteriori informazioni](a-b-testing-uc-script.md).
