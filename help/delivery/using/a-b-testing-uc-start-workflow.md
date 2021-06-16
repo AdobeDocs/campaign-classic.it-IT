@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 6%
+source-wordcount: '85'
+ht-degree: 9%
 
 ---
 
-# Avvio del flusso di lavoro {#step-7--starting-the-workflow}
+# Avviare il flusso di lavoro {#step-7--starting-the-workflow}
 
 1. Fai clic su **[!UICONTROL Start]** il flusso di lavoro.
 
@@ -29,4 +29,4 @@ ht-degree: 6%
 
 1. Una volta determinato il contenuto della terza consegna, approva il target e il contenuto.
 
-Ora puoi analizzare il risultato (vedi [Passaggio 8: Analizzare il risultato](../../delivery/using/a-b-testing-uc-analyzing.md)).
+Ora puoi analizzare il risultato. [Ulteriori informazioni](a-b-testing-uc-analyzing.md).
