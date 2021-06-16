@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 8%
 
 ---
 
 # Consegne cross-channel{#cross-channel-deliveries}
 
 Le consegne cross-channel sono disponibili nella scheda **[!UICONTROL Deliveries]** delle attività del flusso di lavoro della campagna.
-
-Consentono di creare una consegna specifica per un particolare canale. Puoi specificare il modello su cui basare la consegna e il relativo contenuto, esattamente come con una procedura guidata di consegna classica.
 
 I vari canali disponibili sono:
 
@@ -26,12 +24,14 @@ I vari canali disponibili sono:
 * [Mobile](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [per Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [per Android](../../delivery/using/create-notifications-android.md)
+
+Seleziona il modello su cui desideri basare la consegna e definirne il contenuto.
 
 Puoi specificare un target per la consegna a monte del flusso di lavoro utilizzando le diverse attività di targeting.
 
-Ad esempio, in questo caso creeremo un flusso di lavoro per inviare un’e-mail o un SMS per gli abbonati alle notifiche push e quindi una notifica push una settimana dopo. Per eseguire questa operazione:
+Nell’esempio seguente, creeremo un flusso di lavoro per inviare un’e-mail o un SMS per gli abbonati alle notifiche push e quindi una notifica push una settimana dopo. Per eseguire questa operazione:
 
 1. Creare una campagna.
 1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un **[!UICONTROL Query]** al flusso di lavoro.
@@ -39,7 +39,7 @@ Ad esempio, in questo caso creeremo un flusso di lavoro per inviare un’e-mail 
 
    >[!NOTE]
    >
-   >Per le notifiche push, ricorda di utilizzare la dimensione di destinazione **applicazioni utente con sottoscrizione**.
+   >Per le notifiche push, utilizza la dimensione di destinazione **applicazioni utente con sottoscrizione**.
 
    ![](assets/cross_channel_delivery_1.png)
 
