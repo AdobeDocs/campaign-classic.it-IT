@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati avanzati sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2512'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,9 @@ ht-degree: 97%
          + [Introduzione alla configurazione dell’app](delivery/using/get-started-app-config.md)
          + [Passaggi di configurazione per iOS](delivery/using/configuring-the-mobile-application.md)
          + [Passaggi di configurazione per Android](delivery/using/configuring-the-mobile-application-android.md)
-      + [Creare notifiche](delivery/using/creating-notifications.md)
+      + Creare una notifica push{#create-a-push-msg}
+         + [Creare un messaggio push per iOS](delivery/using/create-notifications-ios.md)
+         + [Creare un messaggio push per Android](delivery/using/create-notifications-android.md)
       + [Risoluzione dei problemi](delivery/using/troubleshooting.md)
    + Inviare direct mail {#sending-direct-mail}
       + [Informazioni sul canale direct mail](delivery/using/about-direct-mail-channel.md)
