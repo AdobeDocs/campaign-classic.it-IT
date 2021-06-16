@@ -6,20 +6,20 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
-# Creazione dello script {#step-5--creating-the-script}
+# Creare lo script {#step-5--creating-the-script}
 
 La scelta del contenuto di consegna destinato alla popolazione rimanente viene calcolata da uno script. Questo script recupera le informazioni relative alla consegna con il tasso di apertura più elevato e copia il contenuto nella consegna finale.
 
 ## Esempio di script {#example-of-a-script}
 
-Il seguente script può essere utilizzato così come è nel flusso di lavoro di targeting. Per ulteriori informazioni, consulta [Implementazione](#implementation).
+Il seguente script può essere utilizzato così come è nel flusso di lavoro di targeting. Per ulteriori informazioni al riguardo, consulta [questa sezione](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ Il seguente script può essere utilizzato così come è nel flusso di lavoro di 
    vars.deliveryId = delivery.id
 ```
 
-Per una spiegazione dettagliata dello script, fare riferimento a [Dettagli dello script](#details-of-the-script).
+Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione](#details-of-the-script).
 
 ## Implementazione {#implementation}
 
@@ -168,4 +168,4 @@ L’esempio precedente ti consente di selezionare il contenuto di una consegna i
 * Tasso minimo di annullamento sottoscrizione: `[indicators/@optOutRatio]`
 * Importo transazione: `[indicators/@amount]`.
 
-Ora puoi definire la consegna finale (vedi [Passaggio 6: Definisci la consegna finale](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Ora puoi definire la consegna finale. [Ulteriori informazioni](a-b-testing-uc-final-delivery.md).
