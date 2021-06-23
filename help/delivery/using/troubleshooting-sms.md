@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Risoluzione dei problemi SMS {#troubleshooting-sms}
 
-## Conflitto tra diversi account esterni {#external-account-conflict}
+## Conflitto tra account esterni diversi {#external-account-conflict}
 
 Se l’istanza dispone di più account esterni SMS, è necessario verificare che i problemi non siano causati da un conflitto tra account esterni.
 
@@ -45,7 +45,7 @@ Sarà necessario contattare il provider per diagnosticare potenziali conflitti d
    * Alcuni account esterni condividono la stessa combinazione di login/password.
 Il provider non ha modo di sapere da quale account esterno proviene il `BIND PDU`, quindi tratta tutte le connessioni dai più account come un unico account. Avrebbero potuto instradare casualmente MO e SR nei due account, causando problemi.
 Se il provider supporta più codici brevi per la stessa combinazione di login/password, dovrai chiedere loro dove inserire quel codice breve nel `BIND PDU`. Tieni presente che questa informazione deve essere inserita all&#39;interno di `BIND PDU` e non in `SUBMIT_SM`, in quanto `BIND PDU` è l&#39;unico posto che consentirà di indirizzare correttamente i MO.
-Per sapere quale campo è disponibile nella sezione `BIND PDU`, in genere si aggiunge il codice breve in `address_range`, ma questo richiede un supporto speciale da parte del provider, consulta la sezione [Informazioni in ogni tipo di PDU](../../delivery/using/sms-protocol.md#information-pdu) di cui sopra. Contattateli per sapere come si aspettano di indirizzare più codici brevi in modo indipendente.
+Per sapere quale campo è disponibile nella sezione `BIND PDU`, in genere si aggiunge il codice breve in `address_range`, ma questo richiede un supporto speciale da parte del provider, consulta la sezione [Informazioni in ogni tipo di PDU](sms-protocol.md#information-pdu) di cui sopra. Contattateli per sapere come si aspettano di indirizzare più codici brevi in modo indipendente.
 Adobe Campaign supporta la gestione di più codici brevi sullo stesso account esterno.
 
 ## Problema con l’account esterno in generale {#external-account-issues}
@@ -83,7 +83,7 @@ Adobe Campaign supporta la gestione di più codici brevi sullo stesso account es
 
 * Controlla le impostazioni di **Account esterno**. Chiedi al provider il valore dei campi.
 
-* Se la connessione ha esito positivo ma è instabile, controlla la sezione [Problema con connessioni instabili](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) .
+* Se la connessione ha esito positivo ma è instabile, controlla la sezione [Problema con connessioni instabili](troubleshooting-sms.md#issues-unstable-connection) .
 
 * In caso di problemi di connessione difficili da diagnosticare, un&#39;acquisizione di rete può fornire informazioni. Assicurati che l&#39;acquisizione di rete venga eseguita simultaneamente mentre il problema appare per essere analizzato in modo efficiente. Si dovrebbe anche notare l&#39;ora esatta in cui appare il problema.
 
@@ -115,9 +115,9 @@ Come risolvere i problemi di stabilità della connessione:
 
 ## Problema durante l’invio di un MT (SMS regolare inviato a un utente finale){#issue-MT}
 
-* Verificare che la connessione sia stabile. Una connessione SMPP deve rimanere in attività per almeno 1 ora in modo continuo, ad eccezione dei trasmettitori su Adobe Campaign Classic. Vedi la sezione [Problema con connessioni instabili](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Verificare che la connessione sia stabile. Una connessione SMPP deve rimanere in attività per almeno 1 ora in modo continuo, ad eccezione dei trasmettitori su Adobe Campaign Classic. Vedi la sezione [Problema con connessioni instabili](sms-protocol.md#issues-unstable-connection).
 
-* Se il riavvio dell&#39;MTA fa sì che l&#39;invio di MT funzioni di nuovo per un breve periodo di tempo, probabilmente si ha la limitazione a causa di una connessione instabile. Vedi la sezione [Problema con connessioni instabili](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Se il riavvio dell&#39;MTA fa sì che l&#39;invio di MT funzioni di nuovo per un breve periodo di tempo, probabilmente si ha la limitazione a causa di una connessione instabile. Vedi la sezione [Problema con connessioni instabili](troubleshooting-sms.md#issues-unstable-connection).
 
 * Verificare che il log ampio sia presente e nello stato corretto con le date corrette. In caso contrario, potrebbe trattarsi di un problema di preparazione della consegna o della consegna.
 
@@ -139,7 +139,7 @@ I duplicati sono spesso causati da nuovi tentativi. È normale avere duplicati q
 
 * Se vedi duplicati inviati esattamente 60 secondi di distanza, probabilmente si tratta di un problema sul lato provider, non inviano un `SUBMIT_SM_RESP` abbastanza rapidamente.
 
-* Se ne visualizzano molti `BIND/UNBIND`, si dispone di una connessione instabile. Consulta la sezione[Problema con connessioni instabili](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) per le soluzioni prima di tentare di risolvere i problemi dei messaggi duplicati.
+* Se ne visualizzano molti `BIND/UNBIND`, si dispone di una connessione instabile. Consulta la sezione[Problema con connessioni instabili](troubleshooting-sms.md#issues-unstable-connection) per le soluzioni prima di tentare di risolvere i problemi dei messaggi duplicati.
 
 Riduzione della quantità di duplicati in caso di nuovi tentativi:
 
@@ -159,11 +159,11 @@ Se il `DELIVER_SM PDU` non viene riconosciuto correttamente, è necessario verif
 
 * Verifica che il provisioning degli errori sia corretto nella tabella `broadLogMsg`.
 
-Se il `DELIVER_SM PDU` è stato riconosciuto dal connettore SMPP esteso Adobe Campaign Classic ma l&#39;ampio registro non è aggiornato correttamente, controlla il processo di riconciliazione ID descritto nella sezione [Corrispondenza voci MT, SR e voci di registro di trasmissione](../../delivery/using/sms-protocol.md#matching-mt).
+Se il `DELIVER_SM PDU` è stato riconosciuto dal connettore SMPP esteso Adobe Campaign Classic ma l&#39;ampio registro non è aggiornato correttamente, controlla il processo di riconciliazione ID descritto nella sezione [Corrispondenza voci MT, SR e voci di registro di trasmissione](sms-protocol.md#matching-mt).
 
 Se hai corretto tutto ma alcuni SR non validi si trovano ancora nei buffer del provider, puoi ignorarli utilizzando l&#39;opzione &quot;Numero di riconoscimenti ID non valido&quot;. Questo deve essere utilizzato con cura e reimpostato a 0 il più rapidamente possibile dopo che i buffer sono puliti.
 
-## Problema durante l&#39;elaborazione di MO (e blacklist/risposta automatica){#issue-process-MO}
+## Problema durante l’elaborazione di MO (e blacklist/risposta automatica){#issue-process-MO}
 
 * Abilitare le tracce SMPP durante i test. Se non abiliti TLS, devi eseguire un&#39;acquisizione di rete durante la risoluzione dei problemi di MO per verificare che le PDU contengano le informazioni corrette e siano formattate correttamente.
 
@@ -179,7 +179,7 @@ Se hai corretto tutto ma alcuni SR non validi si trovano ancora nei buffer del p
 
 ## Problema durante la preparazione della consegna che non esclude i destinatari in quarantena (messi in quarantena dalla funzione di risposta automatica) {#issue-delivery-preparation}
 
-* Verifica che il formato del numero di telefono sia esattamente lo stesso nella tabella di quarantena e nel registro di consegna. In caso contrario, consultare la sezione [sezione](../../delivery/using/sms-protocol.md#automatic-reply) se si verificano problemi con il prefisso più del formato del numero di telefono internazionale.
+* Verifica che il formato del numero di telefono sia esattamente lo stesso nella tabella di quarantena e nel registro di consegna. In caso contrario, consultare la sezione [sezione](sms-protocol.md#automatic-reply) se si verificano problemi con il prefisso più del formato del numero di telefono internazionale.
 
 * Controlla i codici brevi. Le esclusioni possono verificarsi se il codice breve del destinatario è lo stesso definito nell’account esterno o se è vuoto (vuoto = eventuale codice scorrevole). Se viene utilizzato un solo codice breve per l&#39;intera istanza di Adobe Campaign, è più facile lasciare vuoti tutti i campi **short code**.
 
@@ -213,7 +213,7 @@ Sarà necessario l&#39;output di debug del connettore per vedere esattamente qua
 
 Invia diversi tipi di caratteri speciali durante il test. Ad esempio, la codifica GSM7 presenta caratteri estesi molto distinti nella forma esadecimale, facili da individuare in quanto non compaiono in nessun’altra codifica.
 
-## Elementi da includere durante la comunicazione su un problema SMS {#element-include}
+## Elementi da includere nella comunicazione su un problema SMS {#element-include}
 
 Ogni volta che cerchi assistenza su un problema SMS, sia che si tratti di aprire un ticket di supporto ad Adobe Campaign, al provider SMS, o qualsiasi tipo di comunicazione sul problema, dovrai includere le seguenti informazioni per essere sicuro che sarà correttamente qualificato. Problemi qualificati sono fondamentali per risolvere i problemi più rapidamente.
 
@@ -237,7 +237,7 @@ Ogni volta che cerchi assistenza su un problema SMS, sia che si tratti di aprire
 
 * Includi eventuali modifiche o modifiche apportate sulla piattaforma. Inoltre, includi qualsiasi modifica che il fornitore potrebbe aver apportato sul suo lato.
 
-### Acquisizione di rete {#network-capture}
+### Acquisizione in rete {#network-capture}
 
 Non è sempre necessaria un&#39;acquisizione di rete, in genere i messaggi SMPP sono sufficienti. Di seguito sono riportate alcune linee guida che consentono di determinare se è necessaria un’acquisizione di rete:
 
@@ -289,7 +289,7 @@ Nel file `config-instance.xml`, imposta i seguenti parametri:
 <sms args="-tracefilter:SMPP"/>
 ```
 
-## Controllo del numero di connessioni aperte su un contenitore {#open-connections}
+## Controllo del numero di connessioni aperte in un contenitore {#open-connections}
 
 Per controllare il numero di connessioni aperte su un contenitore, è possibile utilizzare questo comando:
 
