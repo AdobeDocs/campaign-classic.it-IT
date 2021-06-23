@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 5%
@@ -41,13 +41,13 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
    >
    >L’utilizzo di questa opzione non è consigliato quando si installa utilizzando mid-sourcing per non chiamare mta. Per ulteriori informazioni sulla configurazione di un server SMTP, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
 
-* **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](sending-messages.md#archiving-emails).
 
 ## Conferma della consegna {#confirming-delivery}
 
 Una volta configurata la consegna e pronta per l’invio, assicurati di aver eseguito l’analisi della consegna.
 
-A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvio dell&#39;analisi](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvio dell&#39;analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -57,9 +57,9 @@ Puoi quindi chiudere la procedura guidata di consegna e monitorare l’esecuzion
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
-* [Monitoraggio di una consegna](../../delivery/using/about-delivery-monitoring.md)
-* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sul tracciamento dei messaggi](../../delivery/using/about-message-tracking.md)
+* [Monitoraggio di una consegna](about-delivery-monitoring.md)
+* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Informazioni sul tracciamento dei messaggi](about-message-tracking.md)
 
 ## Pianificazione dell’invio della consegna {#scheduling-the-delivery-sending}
 
@@ -131,15 +131,15 @@ Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il 
       Nell’esempio seguente, la prima ondata rappresenta il 25% del numero totale di messaggi inclusi nella consegna e inizierà immediatamente. Le due ondate successive completano la consegna e sono impostate per iniziare a intervalli di sei ore.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   Una regola di tipologia specifica, **[!UICONTROL Wave scheduling check]**, assicura che l’ultima ondata sia pianificata prima del limite di validità della consegna. Le tipologie di campagna e le relative regole, configurate nella scheda **[!UICONTROL Typology]** delle proprietà di consegna, sono presentate in [Processo di convalida con tipologie](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   Una regola di tipologia specifica, **[!UICONTROL Wave scheduling check]**, assicura che l’ultima ondata sia pianificata prima del limite di validità della consegna. Le tipologie di campagna e le relative regole, configurate nella scheda **[!UICONTROL Typology]** delle proprietà di consegna, sono presentate in [Processo di convalida con tipologie](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
    >
    >Assicurati che le ultime ondate non superino la scadenza di consegna, definita nella scheda **[!UICONTROL Validity]** . In caso contrario, alcuni messaggi potrebbero non essere inviati.
    >
-   >È inoltre necessario disporre di tempo sufficiente per i nuovi tentativi durante la configurazione delle ultime ondate. Vedi [questa sezione](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >È inoltre necessario disporre di tempo sufficiente per i nuovi tentativi durante la configurazione delle ultime ondate. Vedi [questa sezione](steps-sending-the-delivery.md#configuring-retries).
 
-1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](delivery-dashboard.md#delivery-logs-and-history).
 
    Puoi visualizzare le consegne già inviate nelle ondate elaborate (**[!UICONTROL Sent]** stato) e le consegne da inviare nelle onde rimanenti (**[!UICONTROL Pending]** stato ).
 
@@ -167,11 +167,11 @@ I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più o
 
 ## Configurazione dei nuovi tentativi {#configuring-retries}
 
-I messaggi temporaneamente non consegnati a causa di un errore **Soft** o **Ignored** sono soggetti a un nuovo tentativo automatico. I tipi e i motivi di errori di consegna sono descritti in questa sezione [sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I messaggi temporaneamente non consegnati a causa di un errore **Soft** o **Ignored** sono soggetti a un nuovo tentativo automatico. I tipi e i motivi di errori di consegna sono descritti in questa sezione [sezione](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), le impostazioni dei nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito e il periodo di tempo che li separa sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte non recapitate provenienti dal dominio e-mail del messaggio.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), le impostazioni dei nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito e il periodo di tempo che li separa sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte non recapitate provenienti dal dominio e-mail del messaggio.
 
 Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA di Campaign legacy, la sezione centrale della scheda **[!UICONTROL Delivery]** per i parametri di consegna indica quanti tentativi devono essere eseguiti il giorno successivo alla consegna e il ritardo minimo tra nuovi tentativi.
 
@@ -191,7 +191,7 @@ Quando la consegna è stata avviata, i messaggi (ed eventuali tentativi) possono
 
    >[!IMPORTANT]
    >
-   >Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), l’impostazione **[!UICONTROL Delivery duration]** nelle consegne e-mail di Campaign verrà utilizzata solo se è impostata su **3,5 giorni o meno**. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
+   >Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), l’impostazione **[!UICONTROL Delivery duration]** nelle consegne e-mail di Campaign verrà utilizzata solo se è impostata su **3,5 giorni o meno**. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
 
 * **Limite di validità delle risorse**: Il  **[!UICONTROL Validity limit]** campo viene utilizzato per le risorse caricate, principalmente per la pagina speculare e per le immagini. Le risorse presenti in questa pagina sono valide per un periodo di tempo limitato (per risparmiare spazio su disco).
 
