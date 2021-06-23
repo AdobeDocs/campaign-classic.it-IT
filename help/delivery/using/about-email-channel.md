@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -25,10 +25,10 @@ Prima di iniziare a inviare le e-mail:
 
 I passaggi chiave per l’invio di un’e-mail sono i seguenti:
 
-* [Creare una consegna e-mail](../../delivery/using/creating-an-email-delivery.md)
-* [Definire la popolazione target](../../delivery/using/steps-defining-the-target-population.md)
-* [Definire il contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
-* [Invia l’e-mail](../../delivery/using/sending-messages.md)
-* [Monitorare la consegna](../../delivery/using/about-delivery-monitoring.md)
+* [Creare una consegna e-mail](creating-an-email-delivery.md)
+* [Definire la popolazione target](steps-defining-the-target-population.md)
+* [Definire il contenuto dell’e-mail](defining-the-email-content.md)
+* [Invia l’e-mail](sending-messages.md)
+* [Monitorare la consegna](about-delivery-monitoring.md)
 
 Le sezioni seguenti forniscono informazioni specifiche per il canale e-mail. Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
