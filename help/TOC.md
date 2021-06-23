@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati avanzati sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 97%
+source-wordcount: '2518'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,11 @@ ht-degree: 97%
    + [Funzioni obsolete](rn/using/deprecated-features.md)
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
    + [Note tecniche](technotes/technote.md)
+   + [Domande frequenti sul connettore Adobe Analytics](technotes/aa-connector-migration.md)
    + [Aggiornamento del certificato iOS](technotes/ios-certificate-update.md)
    + [Aggiornamenti alla configurazione di Campaign](technotes/acc-config-updates.md)
    + [Aggiornamento degli URL tracciati](technotes/tracked-urls.md)
+   + [Aggiornamenti IMS](technotes/ims-updates.md)
 + Introduzione {#getting-started}
    + Iniziare a usare Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
