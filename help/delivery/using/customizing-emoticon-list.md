@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 L’elenco di emoticon visualizzato nella finestra a comparsa è governato da un’enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte dell’utente per un dato campo.
 L&#39;ordine dell&#39;elenco degli emoticon può essere personalizzato, è anche possibile aggiungere altri emoticon alla tua lista.
-Le emoticon sono disponibili per e-mail e per ulteriori informazioni, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+Le emoticon sono disponibili per e-mail e per ulteriori informazioni, consulta questa [pagina](defining-the-email-content.md#inserting-emoticons).
 
 ## Aggiunta di un nuovo emoticon {#add-new-emoticon}
 
@@ -61,7 +61,7 @@ Il nuovo emoticon verrà posizionato automaticamente nel negozio.
 
 1. Per tenere conto delle modifiche, disconnettiti e riconnettiti da Adobe Campaign Classic. Se il nuovo emoticon non viene ancora visualizzato nella finestra a comparsa **[!UICONTROL Insert emoticon]**, potrebbe essere necessario cancellare la cache. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Il nuovo emoticon si trova ora nelle consegne nella finestra a comparsa **[!UICONTROL Insert emoticon]** nella 61a posizione configurata nei passaggi precedenti. Per ulteriori informazioni su come utilizzare gli emoticon nelle consegne, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+1. Il nuovo emoticon si trova ora nelle consegne nella finestra a comparsa **[!UICONTROL Insert emoticon]** nella 61a posizione configurata nei passaggi precedenti. Per ulteriori informazioni su come utilizzare gli emoticon nelle consegne, consulta questa [pagina](defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
