@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 4%
@@ -32,10 +32,10 @@ Di seguito sono riportate le informazioni che è possibile monitorare utilizzand
 
 **Argomenti correlati:**
 
-* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md)
-* [Best practice per la consegna](../../delivery/using/delivery-best-practices.md)
-* [Gestione delle consegne](../../delivery/using/about-deliverability.md)
+* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
+* [Best practice per la consegna](delivery-best-practices.md)
+* [Gestione delle consegne](about-deliverability.md)
 
 ## Riepilogo consegne {#delivery-summary}
 
@@ -53,7 +53,7 @@ Il contenuto di questa scheda può essere configurato in base alle tue esigenze.
 
 La scheda **[!UICONTROL Delivery]** fornisce una cronologia delle occorrenze di questa consegna. Contiene i registri di consegna, ovvero l’elenco dei messaggi inviati e il loro stato e i messaggi associati.
 
-Per una consegna, puoi visualizzare (ad esempio) solo i destinatari con una consegna non riuscita o un indirizzo in quarantena. A questo scopo, fai clic sul pulsante **[!UICONTROL Filters]** e seleziona **[!UICONTROL By state]**. Quindi seleziona lo stato nell’elenco a discesa. Vari stati sono elencati in [questa pagina](../../delivery/using/delivery-statuses.md).
+Per una consegna, puoi visualizzare (ad esempio) solo i destinatari con una consegna non riuscita o un indirizzo in quarantena. A questo scopo, fai clic sul pulsante **[!UICONTROL Filters]** e seleziona **[!UICONTROL By state]**. Quindi seleziona lo stato nell’elenco a discesa. Vari stati sono elencati in [questa pagina](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Per una consegna, puoi visualizzare (ad esempio) solo i destinatari con una cons
 
 Il collegamento **[!UICONTROL Display the mirror page for this message...]** ti consente di visualizzare la pagina speculare per il contenuto della consegna selezionata dall’elenco in una nuova finestra.
 
-La pagina speculare è disponibile solo per le consegne per le quali è stato definito il contenuto HTML. Per ulteriori informazioni, consulta [Generazione della pagina speculare](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+La pagina speculare è disponibile solo per le consegne per le quali è stato definito il contenuto HTML. Per ulteriori informazioni, consulta [Generazione della pagina speculare](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Log e cronologia di tracciamento della consegna {#tracking-logs}
+## Log e cronologia di tracciamento delle consegne {#tracking-logs}
 
 La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per questa consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti al tracciamento da parte di Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
 
@@ -75,7 +75,7 @@ La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per que
 >
 >Se il tracciamento non è abilitato per una consegna, questa scheda non viene visualizzata.
 
-La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. Consulta [Come configurare i collegamenti tracciati](../../delivery/using/how-to-configure-tracked-links.md).
+La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. Consulta [Come configurare i collegamenti tracciati](how-to-configure-tracked-links.md).
 
 **[!UICONTROL Tracking]** i dati vengono interpretati nei rapporti di consegna. Vedi [questa sezione](../../reporting/using/delivery-reports.md).
 
@@ -87,17 +87,17 @@ La scheda **[!UICONTROL Inbox rendering]** ti consente di visualizzare un’ante
 
 In questo modo, puoi assicurarti che il messaggio venga visualizzato ai destinatari in modo ottimale su diversi client web, e-mail e dispositivi web.
 
-Per ulteriori informazioni sul rendering della casella in entrata, consulta [questa pagina](../../delivery/using/inbox-rendering.md)
+Per ulteriori informazioni sul rendering della casella in entrata, consulta [questa pagina](inbox-rendering.md)
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-## Controllo della consegna {#delivery-audit-}
+## Audit di consegna {#delivery-audit-}
 
 La scheda **[!UICONTROL Audit]** contiene il registro di consegna e tutti i messaggi relativi alle bozze.
 
 Il pulsante **[!UICONTROL Refresh]** ti consente di aggiornare i dati. Utilizza il pulsante **[!UICONTROL Filters]** per definire un filtro per i dati.
 
-Le icone speciali consentono di identificare errori o avvisi. Consulta [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Le icone speciali consentono di identificare errori o avvisi. Consulta [Analisi della consegna](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 La sottoscheda **[!UICONTROL Proofs]** ti consente di visualizzare l’elenco delle bozze inviate.
 
@@ -105,7 +105,7 @@ La sottoscheda **[!UICONTROL Proofs]** ti consente di visualizzare l’elenco de
 
 Puoi modificare le informazioni visualizzate in questa finestra (e nelle schede **[!UICONTROL Delivery]** e **[!UICONTROL Tracking]** ) selezionando le colonne da visualizzare. A questo scopo, fai clic sull’icona **[!UICONTROL Configure list]** situata nell’angolo in basso a destra. Per ulteriori informazioni sulla configurazione della visualizzazione degli elenchi, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## Sincronizzazione dashboard di consegna {#delivery-dashboard-synchronization}
+## Sincronizzazione del dashboard di consegna {#delivery-dashboard-synchronization}
 
 Dal dashboard di consegna, desideri controllare i messaggi elaborati e i registri di consegna per assicurarti che la consegna sia stata inviata correttamente.
 
