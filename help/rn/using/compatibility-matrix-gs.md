@@ -6,14 +6,14 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 9703e9d5cf0dba91d3f38d265756bdae69267c28
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '514'
 ht-degree: 100%
 
 ---
 
-# Matrice di compatibilità per [!DNL Gold Standard]{#compatibility-matrix-gs}
+# [!DNL Gold Standard] Matrice di compatibilità{#compatibility-matrix-gs}
 
 Questo documento elenca tutti i sistemi e i componenti supportati per le build **Adobe Campaign Classic[!DNL Gold Standard]** 19.1. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
 
@@ -159,7 +159,7 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 >
 >PostgreSQL è il server di database predefinito per gli ambienti in hosting.
 
-## Connettori di gestione delle relazioni con i clienti{#CRMconnectors-gs}
+## Connettori CRM{#CRMconnectors-gs}
 
 <table>
 <tbody>
@@ -174,11 +174,6 @@ Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elenca
 <td>
 <p>API versione 21</p>
 <p>API versione 15</p>
-</td>
-</tr>
-<tr><td> API Oracle On Demand</td>
-<td>
-<p>API Web Services v1.0</p>
 </td>
 </tr>
 <tr>
