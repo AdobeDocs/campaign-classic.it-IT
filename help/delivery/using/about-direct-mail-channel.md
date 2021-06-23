@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 9%
@@ -22,4 +22,4 @@ Adobe Campaign consente di produrre file per inviare in massa lettere personaliz
 >Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: la prima contiene il nome e il cognome, le righe successive contengono l&#39;indirizzo postale (strada, ecc.) e l&#39;ultima riga contiene il codice postale o ZIP e la città o città.\
 >Un indirizzo viene considerato completo se i campi nome, CAP e città non sono vuoti.
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
