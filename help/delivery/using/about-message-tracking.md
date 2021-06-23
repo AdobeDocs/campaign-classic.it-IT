@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 9%
@@ -19,7 +19,7 @@ Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di mon
 
 Queste informazioni vengono recuperate nella scheda **[!UICONTROL Tracking]** del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e su cui il destinatario è stato selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui hai fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/delivery-dashboard.md).
+Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
 
 Il diagramma seguente mostra le fasi della finestra di dialogo tra l’utente e i vari server.
 
@@ -47,25 +47,25 @@ Una volta configurato il tracciamento e popolati gli URL, il server di tracciame
 
 **Collegamenti tracciati**
 
-Puoi tenere traccia della ricezione dei messaggi e dell’attivazione dei collegamenti inseriti nel contenuto del messaggio per comprendere meglio il comportamento dei destinatari. [Ulteriori informazioni](../../delivery/using/how-to-configure-tracked-links.md)
+Puoi tenere traccia della ricezione dei messaggi e dell’attivazione dei collegamenti inseriti nel contenuto del messaggio per comprendere meglio il comportamento dei destinatari. [Ulteriori informazioni](how-to-configure-tracked-links.md)
 
 **Tracciamento URL**
 
-Le opzioni di tracciamento possono essere configurate attivando o disattivando gli URL tracciati. [Ulteriori informazioni](../../delivery/using/personalizing-url-tracking.md)
+Le opzioni di tracciamento possono essere configurate attivando o disattivando gli URL tracciati. [Ulteriori informazioni](personalizing-url-tracking.md)
 
 **Personalizzazione dei collegamenti tracciati**
 
-Le funzionalità di tracciamento di Campaign Classic ti consentono di aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Ulteriori informazioni](../../delivery/using/tracking-personalized-links.md)
+Le funzionalità di tracciamento di Campaign Classic ti consentono di aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento. [Ulteriori informazioni](tracking-personalized-links.md)
 
 **Registri di tracciamento**
 
-Il flusso di lavoro tecnico di tracciamento recupera i dati di tracciamento dopo l’invio della consegna e l’attivazione del tracciamento. Questi dati si trovano nella scheda Tracking della consegna. [Ulteriori informazioni](../../delivery/using/accessing-the-tracking-logs.md)
+Il flusso di lavoro tecnico di tracciamento recupera i dati di tracciamento dopo l’invio della consegna e l’attivazione del tracciamento. Questi dati si trovano nella scheda Tracking della consegna. [Ulteriori informazioni](accessing-the-tracking-logs.md)
 
 **Test del tracking**
 
-Prima di inviare i messaggi con il tracciamento, puoi testare il tracciamento sulla pagina speculare, i registri e i collegamenti e-mail. [Ulteriori informazioni](../../delivery/using/testing-tracking.md)
+Prima di inviare i messaggi con il tracciamento, puoi testare il tracciamento sulla pagina speculare, i registri e i collegamenti e-mail. [Ulteriori informazioni](testing-tracking.md)
 
-## Tracciamento applicazione web {#web-application-tracking}
+## Tracciamento delle applicazioni web {#web-application-tracking}
 
 <img src="assets/do-not-localize/icon-web-app.svg" width="60px">
 
@@ -105,7 +105,7 @@ Le diverse tabelle ti forniscono l’elenco degli indicatori utilizzati nei dive
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere i problemi più comuni che si verificano durante l’utilizzo del tracciamento in Adobe Campaign Classic. Per una risoluzione dei problemi più avanzata, consulta [questa sezione](../../delivery/using/tracking-troubleshooting.md).
+I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere i problemi più comuni che si verificano durante l’utilizzo del tracciamento in Adobe Campaign Classic. Per una risoluzione dei problemi più avanzata, consulta [questa sezione](tracking-troubleshooting.md).
 
 * Verifica che il processo trackinglogd sia in esecuzione
 
