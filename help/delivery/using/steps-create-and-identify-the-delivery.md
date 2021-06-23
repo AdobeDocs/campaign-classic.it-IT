@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Per ogni canale installato viene fornito un modello predefinito: direct mailing,
 >
 >I canali offerti nell’elenco dipendono dal contratto di licenza.
 
-Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle tue esigenze. Per ulteriori informazioni sui modelli, consulta [questa sezione](../../delivery/using/about-templates.md).
+Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle tue esigenze. Per ulteriori informazioni sui modelli, consulta [questa sezione](about-templates.md).
 
 ## Identificazione della consegna {#identifying-the-delivery}
 
@@ -49,7 +49,7 @@ Devi completare i parametri per identificare la consegna. Per eseguire questa op
 
 Il contenuto della consegna è pronto per essere configurato. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
-* [Definizione del contenuto dell’e-mail](../../delivery/using/defining-the-email-content.md)
-* [Definizione del contenuto dell’SMS](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [Definizione del contenuto della direct mailing](../../delivery/using/defining-the-direct-mail-content.md)
-* [Notifiche push](../../delivery/using/about-mobile-app-channel.md)
+* [Definizione del contenuto dell’e-mail](defining-the-email-content.md)
+* [Definizione del contenuto dell’SMS](sms-create.md#defining-the-sms-content)
+* [Definizione del contenuto del direct mailing](defining-the-direct-mail-content.md)
+* [Notifiche push](about-mobile-app-channel.md)
