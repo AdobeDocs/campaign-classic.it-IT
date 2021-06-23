@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
 
 ---
 
-# Risoluzione dei problemi di recapito{#deliverability-faq}
+# Risoluzione dei problemi di recapito messaggi{#deliverability-faq}
 
 Si verifica un problema di recapito messaggi? Puoi trovare la soluzione qui.
 
@@ -42,20 +42,20 @@ Se ricevi sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#39;
 
 Se il problema persiste, contatta il servizio commerciale o di recapito messaggi [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-## Elenco Bloccati a confronto {#denylist-versus-quarantine}
+## Elenco Bloccati e quarantena {#denylist-versus-quarantine}
 
 * **Qual è la differenza tra un indirizzo e-mail elenco Bloccati e un indirizzo e-mail messo in quarantena?**
 
    * Lo stato **[!UICONTROL Denylisted]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
    * Lo stato **[!UICONTROL Quarantined]** è il risultato di un messaggio non recapitato morbido o rigido.
-   Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
+   Per ulteriori informazioni, consulta [questa sezione](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
 
    Ecco 10 possibili ragioni: non definito, utente sconosciuto, dominio non valido, al elenco Bloccati, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
-   Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
+   Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
 
 ## Rimozione dal elenco Bloccati {#remove-from-denylist}
 
