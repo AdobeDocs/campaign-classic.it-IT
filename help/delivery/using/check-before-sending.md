@@ -5,26 +5,26 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 4%
 
 ---
 
-# Esegui tutti i controlli prima di inviare {#perform-all-checks}
+# Esegui tutti i controlli prima dell’invio {#perform-all-checks}
 
 Quando il messaggio è pronto, accertati che il relativo contenuto sia visualizzato correttamente, su tutti i dispositivi, e non contenga errori quali personalizzazione errata o collegamenti interrotti.
 
 Prima di inviare il messaggio, assicurati anche che i parametri e la configurazione siano coerenti con la consegna.
 
-## Perché la convalida è una chiave {#validation-is-key}
+## Perché la convalida è fondamentale {#validation-is-key}
 
 Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricevano il messaggio che si desidera inviare loro. A questo scopo, devi convalidare il contenuto del messaggio e i parametri di consegna.
 
 Questo passaggio ti consente di rilevare eventuali errori e correggerli prima di consegnarli al target principale.
 
-I passaggi per la convalida di una consegna sono descritti [in questa sezione](../../delivery/using/steps-validating-the-delivery.md).
+I passaggi per la convalida di una consegna sono descritti [in questa sezione](steps-validating-the-delivery.md).
 
 ## Rendering della casella in entrata {#inbox-and-email-rendering}
 
@@ -36,15 +36,15 @@ Il rendering della casella in entrata consente di visualizzare in anteprima i me
 
 * Le funzionalità di rendering della casella in entrata sono fondamentali per identificare se le campagne e-mail sono riuscite a superare i filtri dei principali ISP (Internet Service Providers) e dei servizi di posta web. Tali strumenti inviano una copia pre-volo di un’e-mail a una rete di caselle in entrata di prova, in modo da visualizzare il messaggio o eseguirne il rendering in questi servizi. Possono anche includere rapporti e opzioni di correzione del codice che ti aiutano a identificare rapidamente e a risolvere i problemi che migliorano il recapito messaggi.
 
-Ulteriori informazioni [in questa sezione](../../delivery/using/inbox-rendering.md).
+Ulteriori informazioni [in questa sezione](inbox-rendering.md).
 
 ## Messaggi di prova {#proof-messages}
 
 L’invio di bozze consente di controllare il collegamento di rinuncia, la pagina speculare e qualsiasi altro collegamento, convalidare il messaggio, verificare che le immagini siano visualizzate, rilevare eventuali errori e così via. Puoi anche controllare la progettazione e il rendering su diversi dispositivi.
 
-Ulteriori informazioni [in questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Ulteriori informazioni [in questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 
-## Impostare consegne di test A/B {#a-b-testing-deliveries}
+## Configurare le consegne di test A/B {#a-b-testing-deliveries}
 
 Se disponi di più contenuti per una consegna e-mail, puoi utilizzare il test A/B per scoprire quale versione avrà il maggiore impatto sulla popolazione target.
 
@@ -54,9 +54,9 @@ Se disponi di più contenuti per una consegna e-mail, puoi utilizzare il test A/
 
 * Seleziona quella con il tasso di successo più alto e inviala al resto del target
 
-Ulteriori informazioni [in questa sezione](../../delivery/using/get-started-a-b-testing.md).
+Ulteriori informazioni [in questa sezione](get-started-a-b-testing.md).
 
-## Assicurati che il messaggio sia consegnato {#make-sure-your-message-is-delivered}
+## Assicurati che il messaggio sia stato recapitato {#make-sure-your-message-is-delivered}
 
 Come ultimo passo, massimizza le tue possibilità e sfrutta la potenza di Adobe Campaign Classic per garantire che il messaggio venga effettivamente consegnato ai destinatari pertinenti.
 
@@ -66,7 +66,7 @@ Come ultimo passo, massimizza le tue possibilità e sfrutta la potenza di Adobe 
 
 ### Usa onde
 
-Puoi aumentare progressivamente il volume inviato utilizzando le onde. In questo modo si evita di contrassegnare i messaggi come spam o quando si desidera limitare il numero di messaggi al giorno. Utilizzando le ondate è possibile dividere le consegne in più batch invece di inviare volumi elevati di messaggi contemporaneamente. Ulteriori informazioni [in questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+Puoi aumentare progressivamente il volume inviato utilizzando le onde. In questo modo si evita di contrassegnare i messaggi come spam o quando si desidera limitare il numero di messaggi al giorno. Utilizzando le ondate è possibile dividere le consegne in più batch invece di inviare volumi elevati di messaggi contemporaneamente. Ulteriori informazioni [in questa sezione](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Assegnare priorità ai messaggi
 
