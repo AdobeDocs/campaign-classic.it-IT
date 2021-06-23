@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 3%
@@ -21,14 +21,14 @@ Per creare una nuova consegna SMS, segui i passaggi seguenti:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono descritti in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione della consegna sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 
 1. Crea una nuova consegna, ad esempio dal dashboard Consegna .
 1. Seleziona il modello di consegna **Inviato a dispositivi mobili (SMPP)** creato in precedenza. Per ulteriori informazioni, consulta la sezione [Modifica il modello di consegna](sms-set-up.md#changing-the-delivery-template) .
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Fai clic su **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
 
 ## Definisci il contenuto dell’SMS {#defining-the-sms-content}
@@ -39,7 +39,7 @@ Per creare il contenuto dell’SMS, segui i passaggi seguenti:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   L’utilizzo dei campi di personalizzazione è presentato nella sezione [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md) .
+   L’utilizzo dei campi di personalizzazione è presentato nella sezione [Informazioni sulla personalizzazione](about-personalization.md) .
 
 1. Fai clic su **[!UICONTROL Preview]** nella parte inferiore della pagina per visualizzare il rendering del messaggio con la relativa personalizzazione. Per avviare l’anteprima, seleziona un destinatario utilizzando il pulsante **[!UICONTROL Test personalization]** nella barra degli strumenti. Puoi selezionare un destinatario dalle destinazioni definite o scegliere un altro destinatario.
 
@@ -65,8 +65,8 @@ Per creare il contenuto dell’SMS, segui i passaggi seguenti:
 
 ## Selezionare la popolazione target {#selecting-the-target-population}
 
-Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in [questa sezione](../../delivery/using/steps-defining-the-target-population.md).
+Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in [questa sezione](steps-defining-the-target-population.md).
 
-Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione, consulta [questa sezione](../../delivery/using/about-personalization.md).
+Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione, consulta [questa sezione](about-personalization.md).
 
-Per ulteriori informazioni sull&#39;inclusione di un elenco di seed, consulta [questa pagina](../../delivery/using/about-seed-addresses.md).
+Per ulteriori informazioni sull&#39;inclusione di un elenco di seed, consulta [questa pagina](about-seed-addresses.md).
