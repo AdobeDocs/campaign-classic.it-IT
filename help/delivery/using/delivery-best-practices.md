@@ -5,14 +5,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 25%
 
 ---
 
-# Best practice di consegna {#delivery-best-practices}
+# Best practice per la consegna {#delivery-best-practices}
 
 Scopri le best practice relative alla progettazione e all’invio delle consegne con Adobe Campaign. Utilizza i collegamenti seguenti per navigare tra gli argomenti e trovare indicazioni.
 
@@ -103,8 +103,8 @@ Scopri le best practice relative alla progettazione e all’invio delle consegne
 
 Vedi anche:
 
-* [Introduzione al recapito messaggi](../../delivery/using/about-deliverability.md)
+* [Introduzione al recapito messaggi](about-deliverability.md)
 
-* [Passaggi per la creazione di consegne](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Passaggi per la creazione di consegne](steps-about-delivery-creation-steps.md)
 
 * [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
