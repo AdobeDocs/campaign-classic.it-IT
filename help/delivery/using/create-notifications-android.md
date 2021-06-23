@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Creare notifiche per Android{#create-notificaations-android}
 
-Utilizza Adobe Campaign per inviare notifiche push sui dispositivi Android. I concetti globali sulla creazione della consegna sono descritti in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Utilizza Adobe Campaign per inviare notifiche push sui dispositivi Android. I concetti globali sulla creazione della consegna sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 
 Inizia creando una nuova consegna.
 
@@ -70,7 +70,7 @@ L’immagine e la pagina web devono essere visualizzati nella notifica push quan
 
 >[!NOTE]
 >
->Ulteriori opzioni per il messaggio di notifica sono disponibili solo con la configurazione dell’API HTTP v1. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+>Ulteriori opzioni per il messaggio di notifica sono disponibili solo con la configurazione dell’API HTTP v1. Per ulteriori informazioni, consulta questa [sezione](configuring-the-mobile-application-android.md#android-service-httpv1).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
