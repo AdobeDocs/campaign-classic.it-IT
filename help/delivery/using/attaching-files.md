@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
 
 ---
 
-# Allega file a un&#39;e-mail{#attaching-files}
+# Allegare file a un’e-mail{#attaching-files}
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
@@ -30,7 +30,7 @@ Esistono due casi possibili:
 
 >[!NOTE]
 >
->Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. Per ulteriori informazioni, consulta [Informazioni sui modelli](../../delivery/using/about-templates.md).
+>Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. Per ulteriori informazioni, consulta [Informazioni sui modelli](about-templates.md).
 
 ## Allega un file locale {#attaching-a-local-file}
 
