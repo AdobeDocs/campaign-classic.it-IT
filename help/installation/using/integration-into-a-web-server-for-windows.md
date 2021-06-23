@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -101,13 +101,16 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### Avvio del server Web e verifica la configurazione {#launching-the-web-server-and-testing-the-configuration}
+### Avvio del server Web e verifica della configurazione {#launching-the-web-server-and-testing-the-configuration}
 
 Ora devi verificare se la configurazione è corretta.
 
 A questo scopo, applicare la seguente procedura:
 
 1. Riavvia il server IIS utilizzando la riga di comando **iisreset**.
+
+1. Avvia il servizio Adobe Campaign, quindi assicurati che sia in esecuzione.
+
 1. Verifica il modulo di tracciamento inserendo il seguente URL in un browser Web:
 
    ```
