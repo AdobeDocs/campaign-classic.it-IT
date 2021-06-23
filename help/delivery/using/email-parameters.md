@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -71,13 +71,13 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla definizione del contenuto dell’e-mail, consulta [questa sezione](../../delivery/using/defining-the-email-content.md).
+>Per ulteriori informazioni sulla definizione del contenuto dell’e-mail, consulta [questa sezione](defining-the-email-content.md).
 
 ## Generazione della pagina speculare {#generating-mirror-page}
 
 La pagina speculare è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico all’e-mail.
 
-Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto della posta. Per ulteriori informazioni sull’inserimento dei blocchi di personalizzazione, consulta [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md).
+Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto della posta. Per ulteriori informazioni sull’inserimento dei blocchi di personalizzazione, consulta [Blocchi di personalizzazione](personalization-blocks.md).
 
 Nelle proprietà di consegna, il campo **[!UICONTROL Mode]** della scheda **[!UICONTROL Validity]** ti consente di modificare la modalità di generazione di questa pagina.
 
@@ -117,7 +117,7 @@ Per impostazione predefinita, le e-mail rimbalzate vengono ricevute nella casell
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Per ulteriori informazioni sulla gestione della posta non recapitata, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Per ulteriori informazioni sulla gestione della posta non recapitata, consulta [questa sezione](understanding-delivery-failures.md#bounce-mail-management).
 
 ## Aggiunta di intestazioni SMTP {#adding-smtp-headers}
 
