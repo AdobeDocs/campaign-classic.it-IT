@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 3%
@@ -129,7 +129,7 @@ Le qualifiche di mancato recapito nella tabella Campaign **[!UICONTROL Delivery 
 >
 >L’MTA avanzato qualifica il messaggio non recapitato SMTP e lo invia nuovamente a Campaign sotto forma di codice non recapitato mappato a un motivo e a una qualifica di mancato recapito della campagna.
 
-Per ulteriori informazioni sulla qualifica dei messaggi non recapitati, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+Per ulteriori informazioni sulla qualifica dei messaggi non recapitati, consulta [questa sezione](understanding-delivery-failures.md#bounce-mail-qualification).
 
 ### Velocità effettiva di consegna
 
@@ -145,7 +145,7 @@ Ad esempio, se il periodo di validità è impostato sul valore predefinito di 5 
 
 Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 giorni e la consegna non è riuscita, si verificherà un timeout e il suo stato verrà aggiornato da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** nei log di consegna.
 
-Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](steps-sending-the-delivery.md#defining-validity-period).
 
 ### Firma DKIM
 
@@ -154,13 +154,13 @@ Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il
 
 ### Generazione rapporti di successo
 
-Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](../../delivery/using/delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente per tutto il periodo di validità della consegna [](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period), in quanto i rimbalzi morbidi e rigidi vengono riportati dall’MTA avanzato a Campaign.
+Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](delivery-dashboard.md), la percentuale **[!UICONTROL Success]** inizia al 100% e poi scende progressivamente per tutto il periodo di validità della consegna [](steps-sending-the-delivery.md#defining-validity-period), in quanto i rimbalzi morbidi e rigidi vengono riportati dall’MTA avanzato a Campaign.
 
-Infatti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [rimbalzo](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato nuovamente dall’MTA avanzato a Campaign.
+Infatti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nel [log di invio](delivery-dashboard.md#delivery-logs-and-history) non appena vengono correttamente inviati da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [rimbalzo](understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato nuovamente dall’MTA avanzato a Campaign.
 
 Quando i messaggi di rimbalzo rigido vengono riportati dall’MTA avanzato, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale **[!UICONTROL Success]** viene ridotta di conseguenza.
 
-Quando i messaggi di rimbalzo soft vengono segnalati dall’MTA avanzato, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [ritentati](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) per tutto il periodo di validità della consegna:
+Quando i messaggi di rimbalzo soft vengono segnalati dall’MTA avanzato, vengono comunque visualizzati come **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** non è ancora aggiornata. I messaggi di rimbalzo temporaneo vengono quindi [ritentati](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) per tutto il periodo di validità della consegna:
 
 * Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio rimane **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** rimane invariata.
 
@@ -170,7 +170,7 @@ Di conseguenza, è necessario attendere fino alla fine del periodo di validità 
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### Servizio feedback e-mail (beta) {#email-feedback-service}
+### Servizio di feedback e-mail (versione beta) {#email-feedback-service}
 
 Grazie alla funzionalità EFS (Email Feedback Service), lo stato di ogni e-mail viene riportato con precisione, in quanto il feedback viene acquisito direttamente dall’MTA avanzato (Message Transfer Agent).
 
@@ -192,7 +192,7 @@ Quando il messaggio viene effettivamente recapitato ai profili di destinazione e
 
 Quando i messaggi di rimbalzo rigido vengono riportati dall’MTA avanzato, lo stato del registro cambia da **[!UICONTROL Taken into account by the service provider]** a **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Quando i messaggi di rimbalzo non recapitati vengono segnalati dall’MTA avanzato, lo stato del registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): viene aggiornato solo il [motivo errore](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. La percentuale **[!UICONTROL Success]** rimane invariata. I messaggi di rimbalzo morbido vengono quindi ritentati durante il periodo di validità della consegna [](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period):
+Quando i messaggi di rimbalzo non recapitati vengono segnalati dall’MTA avanzato, lo stato del registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): viene aggiornato solo il [motivo errore](understanding-delivery-failures.md#delivery-failure-types-and-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. La percentuale **[!UICONTROL Success]** rimane invariata. I messaggi di rimbalzo morbido vengono quindi ritentati durante il periodo di validità della consegna [](steps-sending-the-delivery.md#defining-validity-period):
 
 * Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio cambia in **[!UICONTROL Sent]** e la percentuale **[!UICONTROL Success]** viene aumentata di conseguenza.
 
@@ -200,9 +200,9 @@ Quando i messaggi di rimbalzo non recapitati vengono segnalati dall’MTA avanza
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui rimbalzi rigidi e morbidi, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Per ulteriori informazioni sui rimbalzi rigidi e morbidi, consulta [questa sezione](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Per ulteriori informazioni sui nuovi tentativi dopo un errore temporaneo di consegna, consulta [questa sezione](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+>Per ulteriori informazioni sui nuovi tentativi dopo un errore temporaneo di consegna, consulta [questa sezione](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 
 Le tabelle riportate di seguito mostrano le modifiche apportate ai KPI e agli stati dei registri di invio introdotte dalla funzionalità EFS.
