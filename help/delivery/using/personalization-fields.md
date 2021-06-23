@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -75,7 +75,7 @@ Creiamo un’e-mail in cui inseriremo prima il nome del destinatario e quindi la
 
 ## Ottimizzazione della personalizzazione {#optimizing-personalization}
 
-Puoi ottimizzare la personalizzazione utilizzando un’opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella scheda **[!UICONTROL Analysis]** delle proprietà di consegna. Per ulteriori informazioni sull’analisi della consegna, consulta [questa sezione](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Puoi ottimizzare la personalizzazione utilizzando un’opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella scheda **[!UICONTROL Analysis]** delle proprietà di consegna. Per ulteriori informazioni sull’analisi della consegna, consulta [questa sezione](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante l’analisi della consegna, questa opzione crea ed esegue automaticamente un flusso di lavoro che memorizza in una tabella temporanea tutti i dati collegati alla destinazione, inclusi i dati provenienti da tabelle collegate in FDA.
 
