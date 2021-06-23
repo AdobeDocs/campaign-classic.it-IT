@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -27,11 +27,12 @@ Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. 
 
 >[!NOTE]
 >
-> Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, inclusi il [server di mid-sourcing](../../installation/using/mid-sourcing-server.md) e l&#39; [istanza di esecuzione](../../message-center/using/configuring-instances.md#execution-instance). Contatta il tuo account executive.
+> Per le architetture ibride e ospitate, il pacchetto deve essere installato su tutti i server, inclusi il [server di mid-sourcing](../../installation/using/mid-sourcing-server.md) e l&#39; [istanza di esecuzione](../../message-center/using/configuring-instances.md#execution-instance).
+
 
 ## Informazioni su AMP per e-mail {#about-amp-for-email}
 
-Il nuovo formato **AMP per e-mail** consente di includere componenti AMP all’interno dei messaggi per migliorare l’esperienza e-mail con contenuti avanzati e fruibili. Grazie alle funzionalità moderne dell’app disponibili direttamente nelle e-mail, i destinatari possono interagire in modo dinamico con il contenuto all’interno del messaggio stesso.
+Il nuovo formato **AMP per e-mail** consente di includere componenti AMP all’interno dei messaggi per migliorare l’esperienza e-mail con contenuti avanzati e fruibili. Integrando direttamente nelle e-mail le funzionalità tipiche delle app, i destinatari possono interagire in modo dinamico con il contenuto stesso del messaggio.
 
 Ad esempio:
 * Le e-mail scritte con AMP possono contenere elementi interattivi quali caroselli di immagini.
@@ -141,7 +142,7 @@ In particolare, devono essere soddisfatti i seguenti requisiti:
 
 È inoltre possibile consultare i [Suggerimenti e limitazioni note per Gmail](https://developers.google.com/gmail/ampemail/tips) e le [Best practice AMP per Outlook](https://docs.microsoft.com/en-gb/outlook/amphtml/best-practices).
 
-## Esecuzione del targeting di un messaggio e-mail AMP {#targeting-amp-email}
+## Targeting di un’e-mail AMP {#targeting-amp-email}
 
 Attualmente puoi provare a inviare un’e-mail AMP in due passaggi:
 
@@ -181,7 +182,7 @@ Una volta testato con alcuni indirizzi, è possibile inviare e-mail AMP a qualsi
 
 Per inviare e-mail AMP agli indirizzi Mail.ru, segui i requisiti e i passaggi elencati nella sezione [Documentazione per gli sviluppatori Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Se sei un mittente e-mail** ).
 
-## Invio di un&#39;e-mail AMP {#sending-amp-email}
+## Invio di un’e-mail AMP {#sending-amp-email}
 
 Una volta che il contenuto e il fallback AMP sono pronti e una volta definito un target compatibile, puoi inviare l’e-mail come faresti normalmente.
 
