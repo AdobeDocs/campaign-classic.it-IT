@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -73,7 +73,7 @@ I valori per **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL a
 
 ## Inserimento di un coupon in una consegna e-mail {#inserting-a-coupon-into-an-email-delivery}
 
-Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzioni dettagliate su come creare una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md). Puoi anche aggiungere un coupon a una consegna in un flusso di lavoro.
+Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzioni dettagliate su come creare una consegna, consulta [questa sezione](about-email-channel.md). Puoi anche aggiungere un coupon a una consegna in un flusso di lavoro.
 
 1. Vai a **[!UICONTROL Campaigns]** e scegli **[!UICONTROL Deliveries]**.
 1. Fai clic su **[!UICONTROL Create]**.
