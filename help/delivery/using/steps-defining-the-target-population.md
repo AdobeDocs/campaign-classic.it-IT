@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 2%
@@ -19,14 +19,14 @@ ht-degree: 2%
 
 Per ogni consegna, puoi definire diversi tipi di popolazioni target:
 
-* **Pubblico** principale: i profili che riceveranno i messaggi. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Prova**: destinatari di messaggi di prova, coinvolti nel ciclo di convalida. [Ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **Indirizzi** di seed: destinatari che non rientrano nel target di consegna ma lo riceveranno (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](../../delivery/using/about-seed-addresses.md)
+* **Pubblico** principale: i profili che riceveranno i messaggi. [Ulteriori informazioni](steps-defining-the-target-population.md#selecting-the-main-target)
+* **Prova**: destinatari di messaggi di prova, coinvolti nel ciclo di convalida. [Ulteriori informazioni](steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Indirizzi** di seed: destinatari che non rientrano nel target di consegna ma lo riceveranno (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](about-seed-addresses.md)
 * **Gruppi** di controllo: popolazione che non riceverà la consegna, utilizzata per monitorare il comportamento e l’impatto della campagna (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Selezione dei destinatari principali della consegna {#selecting-the-main-target}
 
-Nella maggior parte dei casi, la destinazione principale viene estratta dal database Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Ulteriori informazioni in [questa sezione](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Nella maggior parte dei casi, la destinazione principale viene estratta dal database Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Ulteriori informazioni in [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
 
 Per selezionare i destinatari di una consegna, effettua le seguenti operazioni:
 
@@ -37,7 +37,7 @@ Per selezionare i destinatari di una consegna, effettua le seguenti operazioni:
 
 1. Seleziona la mappatura della destinazione nell’elenco a discesa **[!UICONTROL Target mapping]** . La mappatura di destinazione predefinita di Adobe Campaign è **[!UICONTROL Recipients]**, basata sullo schema **nms:recipient** .
 
-   Sono disponibili altre mappature di destinazione e alcune possono essere correlate alla configurazione specifica. Per ulteriori informazioni sulle mappature target, consulta [Selezione di una mappatura target](../../delivery/using/selecting-a-target-mapping.md).
+   Sono disponibili altre mappature di destinazione e alcune possono essere correlate alla configurazione specifica. Per ulteriori informazioni sulle mappature target, consulta [Selezione di una mappatura target](selecting-a-target-mapping.md).
 
 1. Fai clic sul pulsante **[!UICONTROL Add]** per definire i filtri con restrizioni.
 
@@ -96,7 +96,7 @@ Per eseguire questa operazione:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Per impostazione predefinita, i destinatari vengono importati nel database. È necessario selezionare **[!UICONTROL Target mapping]**. Per ulteriori informazioni sulle mappature target, consulta [Selezione di una mappatura target](../../delivery/using/selecting-a-target-mapping.md)
+1. Per impostazione predefinita, i destinatari vengono importati nel database. È necessario selezionare **[!UICONTROL Target mapping]**. Per ulteriori informazioni sulle mappature target, consulta [Selezione di una mappatura target](selecting-a-target-mapping.md)
 
    Puoi anche scegliere **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -150,11 +150,11 @@ Sono disponibili le seguenti opzioni:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla gestione della quarantena, consulta [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
+   >Per ulteriori informazioni sulla gestione della quarantena, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** a un determinato numero di messaggi. Questa opzione ti consente di immettere il numero massimo di messaggi da inviare. Se il contenuto del target supera il numero di messaggi indicati, al target viene applicata una selezione casuale.
 
-### Riduzione delle dimensioni della popolazione target {#reducing-the-size-of-the-target-population}
+### Ridurre le dimensioni della popolazione bersaglio {#reducing-the-size-of-the-target-population}
 
 È possibile ridurre le dimensioni della popolazione target. A questo scopo, specifica il numero di destinatari da esportare nel campo **[!UICONTROL Requested quantity]** .
 
@@ -181,13 +181,13 @@ Per selezionare il target delle bozze, segui i passaggi seguenti:
 
 Quando selezioni il target della bozza, l’opzione **[!UICONTROL Definition of a specific proof target]** ti consente di selezionare i destinatari della bozza dai profili nel database.
 
-Seleziona questa opzione per scegliere i destinatari utilizzando il pulsante **[!UICONTROL Add]** , come nel caso di definizione del target principale. Vedere [Selezione del target principale](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+Seleziona questa opzione per scegliere i destinatari utilizzando il pulsante **[!UICONTROL Add]** , come nel caso di definizione del target principale. Vedere [Selezione del target principale](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Per ulteriori informazioni sull’invio di prove, consulta [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Per ulteriori informazioni sull’invio di prove, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 
-### Utilizzo della sostituzione dell&#39;indirizzo nella bozza {#using-address-substitution-in-proof}
+### Utilizzo della sostituzione dell’indirizzo nella bozza {#using-address-substitution-in-proof}
 
 Invece di selezionare i destinatari dedicati nel database, puoi utilizzare l’opzione **[!UICONTROL Substitution of the address]** .
 
@@ -211,7 +211,7 @@ La configurazione viene eseguita come segue:
 
    È possibile definire tutti gli indirizzi di sostituzione necessari.
 
-## Uso degli indirizzi di seed come prova {#using-seed-addresses-as-proof}
+## Utilizzo degli indirizzi di seed come prova {#using-seed-addresses-as-proof}
 
 Puoi utilizzare **[!UICONTROL Seed addresses]** come destinazione delle bozze: questa opzione ti consente di utilizzare o importare un elenco di indirizzi di seed esistenti.
 
@@ -219,15 +219,15 @@ Puoi utilizzare **[!UICONTROL Seed addresses]** come destinazione delle bozze: q
 
 >[!NOTE]
 >
->Gli indirizzi di seed sono visualizzati in [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md).
+>Gli indirizzi di seed sono visualizzati in [Informazioni sugli indirizzi di seed](about-seed-addresses.md).
 
 Puoi combinare la definizione di un target di bozza specifico e l’utilizzo di indirizzi di seed utilizzando l’opzione **[!UICONTROL Specific target and Seed addresses]** . Le configurazioni correlate vengono quindi definite in due schede secondarie separate.
 
 Vedi anche:
 
 * [Selezione della destinazione della bozza](#selecting-the-proof-target)
-* [Informazioni sugli indirizzi seed](../../delivery/using/about-seed-addresses.md)
-* [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Informazioni sugli indirizzi seed](about-seed-addresses.md)
+* [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Video tutorial {#seeds-and-proofs-video}
 
