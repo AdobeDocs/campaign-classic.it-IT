@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 19%
@@ -21,18 +21,18 @@ Le funzionalità di base includono il targeting, la definizione e la personalizz
 
 >[!NOTE]
 >
->Adobe Campaign offre una serie di strumenti per monitorare il recapito messaggi e ottimizzare l’invio delle e-mail. Ulteriori informazioni in [questa sezione](../../delivery/using/about-deliverability.md).
+>Adobe Campaign offre una serie di strumenti per monitorare il recapito messaggi e ottimizzare l’invio delle e-mail. Ulteriori informazioni in [questa sezione](about-deliverability.md).
 
 L’invio della consegna può essere automatizzato preparando una consegna e/o inviandola nel processo di un flusso di lavoro. Per ulteriori informazioni sulle attività di tipo consegna nei flussi di lavoro, consulta [questa sezione](../../workflow/using/about-action-activities.md).
 
 Adobe Campaign offre i seguenti canali di consegna:
 
-1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](../../delivery/using/about-email-channel.md).
-1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](../../delivery/using/about-direct-mail-channel.md).
-1. **Canale** mobile: le consegne sui canali mobili ti consentono di inviare messaggi SMS o LINE personalizzati alla popolazione target. Fai riferimento a [Canale SMS](../../delivery/using/sms-channel.md).
-1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Fai riferimento al capitolo [Canale app mobile](../../delivery/using/about-mobile-app-channel.md) .
+1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](about-email-channel.md).
+1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](about-direct-mail-channel.md).
+1. **Canale** mobile: le consegne sui canali mobili ti consentono di inviare messaggi SMS o LINE personalizzati alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
+1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Fai riferimento al capitolo [Canale app mobile](about-mobile-app-channel.md) .
 
-   Altri canali sono descritti in [questa pagina](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels).
+   Altri canali sono descritti in [questa pagina](steps-about-delivery-creation-steps.md#other-channels).
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Gli account esterni sono configurati tramite il nodo **[!UICONTROL Administratio
 
 ## Consegne e-mail {#email-deliveries}
 
-Il [canale e-mail](../../delivery/using/about-email-channel.md) è uno dei canali principali di Adobe Campaign, che consente di pianificare e inviare e-mail personalizzate a destinazioni specifiche.
+Il [canale e-mail](about-email-channel.md) è uno dei canali principali di Adobe Campaign, che consente di pianificare e inviare e-mail personalizzate a destinazioni specifiche.
 
 Puoi inviare diversi tipi di e-mail:
 
@@ -57,13 +57,13 @@ Puoi inviare diversi tipi di e-mail:
 * E-mail ricorrenti: in una campagna, invia regolarmente la stessa e-mail e aggrega ogni invio e i relativi rapporti su base periodica. La stessa e-mail viene inviata, ma di solito a un target diverso, in base al target idoneo per il giorno dell’invio. Un esempio comune è rappresentato da un’e-mail di compleanno. Per ulteriori informazioni, consulta [Consegne ricorrenti](../../workflow/using/recurring-delivery.md).
 * E-mail transazionali: e-mail unitarie attivate in base al comportamento dei clienti. Fai riferimento a [Messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
 
-Per informazioni sull’utilizzo della consegna e sui consigli, consulta le best practice per la consegna [Campaign](../../delivery/using/delivery-best-practices.md).
+Per informazioni sull’utilizzo della consegna e sui consigli, consulta le best practice per la consegna [Campaign](delivery-best-practices.md).
 
 Per ulteriori informazioni sui diversi tipi di consegne, consulta [questa sezione](#types-of-deliveries).
 
-## Consegne mobili {#mobile-deliveries}
+## Consegne mobile {#mobile-deliveries}
 
-Adobe Campaign consente di inviare messaggi [SMS](../../delivery/using/sms-channel.md) e [LINE](../../delivery/using/line-channel.md) sui dispositivi mobili.
+Adobe Campaign consente di inviare messaggi [SMS](sms-channel.md) e [LINE](line-channel.md) sui dispositivi mobili.
 
 Per i messaggi SMS, puoi creare, modificare e personalizzare i messaggi solo in formato testo. Puoi anche visualizzare in anteprima i messaggi SMS prima di inviarli.
 
@@ -76,17 +76,17 @@ Per inviare messaggi SMS o LINE a un cellulare è necessario:
 
 ## Notifiche push {#push-notifications}
 
-Adobe Campaign ti consente di inviare notifiche push personalizzate e segmentate [su dispositivi mobili iOS e Android, tramite app dedicate. ](../../delivery/using/about-mobile-app-channel.md) Una volta eseguiti i passaggi di configurazione e integrazione, è possibile creare e inviare le consegne iOS e Android. Puoi anche progettare notifiche avanzate con immagini o video.
+Adobe Campaign ti consente di inviare notifiche push personalizzate e segmentate [su dispositivi mobili iOS e Android, tramite app dedicate. ](about-mobile-app-channel.md) Una volta eseguiti i passaggi di configurazione e integrazione, è possibile creare e inviare le consegne iOS e Android. Puoi anche progettare notifiche avanzate con immagini o video.
 
-## Direct mailing {#direct-mail}
+## Direct mail {#direct-mail}
 
-[La direct mailing è un canale offline che ti consente di personalizzare e generare il file richiesto dai provider di direct mailing. ](../../delivery/using/about-direct-mail-channel.md) Offre la possibilità di combinare i canali online e offline all’interno dei percorsi dei clienti.
+[La direct mailing è un canale offline che ti consente di personalizzare e generare il file richiesto dai provider di direct mailing. ](about-direct-mail-channel.md) Offre la possibilità di combinare i canali online e offline all’interno dei percorsi dei clienti.
 
 I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna su app mobili e così via) e di inviarli al tuo pubblico direttamente da Adobe Campaign. Con i canali offline, la situazione è diversa. Quando prepari una consegna di direct mailing, Adobe Campaign genera un file contenente tutti i profili target e le informazioni del contatto selezionato, ad esempio l’indirizzo postale. Potrai quindi inviare questo file al provider di direct mailing, che si occuperà dell’invio effettivo.
 
 ## Altri canali {#other-channels}
 
-Adobe Campaign offre il modello di consegna telefonica, utilizzato per creare consegne esterne. L&#39;utilizzo di questo canale implica la configurazione di metodologie dedicate per elaborare i file di output. I passaggi di configurazione sono gli stessi del [Canale direct mailing](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign offre il modello di consegna telefonica, utilizzato per creare consegne esterne. L&#39;utilizzo di questo canale implica la configurazione di metodologie dedicate per elaborare i file di output. I passaggi di configurazione sono gli stessi del [Canale direct mailing](about-direct-mail-channel.md).
 
 >[!NOTE]
 >
