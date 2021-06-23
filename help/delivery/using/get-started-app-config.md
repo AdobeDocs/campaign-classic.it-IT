@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 10%
@@ -19,7 +19,7 @@ In questa sezione puoi trovare un esempio di configurazione basato su un’azien
 
 Per inviare notifiche push in Adobe Campaign, devi:
 
-* Crea un servizio di informazioni di tipo **[!UICONTROL Mobile application]** per l’app mobile Neotrips. Fai riferimento a [questa sezione per iOS](../../delivery/using/configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](../../delivery/using/configuring-the-mobile-application-android.md#configuring-android-service).
+* Crea un servizio di informazioni di tipo **[!UICONTROL Mobile application]** per l’app mobile Neotrips. Fai riferimento a [questa sezione per iOS](configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Aggiungi al servizio le versioni iOS e Android dell&#39;applicazione.
 * Crea una consegna per [iOS](create-notifications-ios.md) e [Android](create-notifications-android.md).
 
@@ -64,6 +64,6 @@ I passaggi di installazione sono:
 Al termine di questo passaggio, puoi configurare le app Android e iOS.
 Fai riferimento a queste sezioni:
 
-* [Passaggi di configurazione per iOS](../../delivery/using/configuring-the-mobile-application.md)
+* [Passaggi di configurazione per iOS](configuring-the-mobile-application.md)
 
-* [Passaggi di configurazione per Android](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Passaggi di configurazione per Android](configuring-the-mobile-application-android.md)
