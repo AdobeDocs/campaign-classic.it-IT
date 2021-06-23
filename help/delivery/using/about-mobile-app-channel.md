@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -53,9 +53,9 @@ Puoi definire il comportamento dell’applicazione per quando l’utente attiva 
 
 Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna le sottoscrizioni di notifica sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta l’ [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign è compatibile con le APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta la sezione [presente sezione](../../delivery/using/configuring-the-mobile-application.md) .
+Adobe Campaign è compatibile con le APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta la sezione [presente sezione](configuring-the-mobile-application.md) .
 
-Per informazioni globali su come creare una consegna, consulta [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
 
 ## Percorso dati {#data-path}
 
@@ -67,7 +67,7 @@ Gli schemi seguenti descrivono i passaggi che consentono a un’app mobile di sc
 
 Le tre fasi principali del processo di notifica sono: registrazione dell’applicazione in Adobe Campaign (raccolta abbonamenti), consegne e tracciamento.
 
-### Passaggio 1: Raccolta di abbonamenti {#step-1--subscription-collection}
+### Passaggio 1: Raccolta abbonamenti {#step-1--subscription-collection}
 
 L’app mobile viene scaricata dall’utente dall’App Store o da Google Play. Questa applicazione contiene le impostazioni di connessione (certificato iOS e chiave di progetto per Android) e la chiave di integrazione. Alla prima apertura dell’applicazione (a seconda della configurazione), è possibile chiedere all’utente di inserire le informazioni di registrazione (@userKey: e-mail o numero di account, ad esempio). Allo stesso tempo, l&#39;applicazione chiede al servizio di notifica di raccogliere un ID di notifica (ID push). Tutte queste informazioni (impostazioni di connessione, chiave di integrazione, identificatore di notifica, userKey) vengono inviate ad Adobe Campaign.
 
