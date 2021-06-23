@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Esistono tre possibili modalità di inserimento:
 
 1. Importazione di modelli di indirizzi e loro adattamento in base alle tue esigenze.
 
-   A questo scopo, fai clic sul collegamento **[!UICONTROL Import seed templates...]** e seleziona la cartella che contiene i modelli di indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   A questo scopo, fai clic sul collegamento **[!UICONTROL Import seed templates...]** e seleziona la cartella che contiene i modelli di indirizzo. Per ulteriori informazioni al riguardo, consulta [questa sezione](creating-seed-addresses.md#creating-seed-address-templates).
 
    Se necessario, una volta aggiunti, puoi fare doppio clic su di essi o fare clic sul pulsante **[!UICONTROL Detail...]** per adattare il contenuto di ciascun indirizzo.
 
@@ -37,13 +37,13 @@ Esistono tre possibili modalità di inserimento:
 
    A questo scopo, fai clic sul collegamento **[!UICONTROL Edit the dynamic condition...]** , quindi immetti i parametri di selezione dell’indirizzo di seed. Ad esempio, puoi includere tutti gli indirizzi di seed contenuti in una cartella specifica o gli indirizzi di seed appartenenti a un reparto specifico dell’organizzazione.
 
-   Un esempio di ciò è illustrato in questa sezione: [Caso di utilizzo: seleziona indirizzi di seed in criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Un esempio di ciò è illustrato in questa sezione: [Caso di utilizzo: seleziona indirizzi di seed in criteri](use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
 >Questa opzione viene utilizzata quando la tabella dei destinatari utilizzata non è la tabella predefinita **nms:recipient** e si utilizza la funzionalità Rendering della casella in entrata fornita con il modulo Adobe Campaign **[!UICONTROL Deliverability]**.
 >
->Per ulteriori informazioni, consulta [Utilizzare una tabella dei destinatari esterna](../../delivery/using/using-an-external-recipient-table.md) e la documentazione su [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
+>Per ulteriori informazioni, consulta [Utilizzare una tabella dei destinatari esterna](using-an-external-recipient-table.md) e la documentazione su [Rendering della casella in entrata](inbox-rendering.md).
 
 Per le consegne, puoi anche personalizzare il modo in cui gli indirizzi vengono inseriti nel file di estrazione. Per impostazione predefinita, vengono inseriti nell’ordine di ordinamento del file di output, ma puoi scegliere di inserirli alla fine o all’inizio del file oppure in modo casuale tra i destinatari della destinazione principale.
 
