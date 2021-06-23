@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la p
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definizione del contenuto delle e-mail](../../delivery/using/defining-the-email-content.md) e [Creazione di contenuti personalizzati](../../delivery/using/design-and-personalize.md).
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definizione del contenuto delle e-mail](defining-the-email-content.md) e [Creazione di contenuti personalizzati](design-and-personalize.md).
 
 ## Indirizzo mittente {#sender-address}
 
@@ -37,23 +37,23 @@ Alcuni ISP controllano la validità dell&#39;indirizzo del mittente (**[!UICONTR
 
 Devi accertarti che l’indirizzo corretto sia indicato a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
 
-Per ulteriori informazioni, consulta [Definizione del mittente](../../delivery/using/defining-the-email-content.md).
+Per ulteriori informazioni, consulta [Definizione del mittente](defining-the-email-content.md).
 
 ## Personalizzazione {#personalization}
 
 Per migliorare l’esperienza dei destinatari e farli aprire l’e-mail, Adobe Campaign ti consente di personalizzare i messaggi.
 
-Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](../../delivery/using/personalization-fields.md).
+Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](personalization-fields.md).
 
-Alcuni suggerimenti per ottimizzare la personalizzazione durante la creazione dei contenuti sono presentati in [questa sezione](../../delivery/using/design-and-personalize.md#optimize-personalization).
+Alcuni suggerimenti per ottimizzare la personalizzazione durante la creazione dei contenuti sono presentati in [questa sezione](design-and-personalize.md#optimize-personalization).
 
 ## Collegamento e modulo di rinuncia {#opt-out}
 
-Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) controlla se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza. Puoi modificare questa regola in modo che venga generato un errore invece di un semplice avviso e impedire che una consegna venga interrotta senza questo collegamento.
+Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza. Puoi modificare questa regola in modo che venga generato un errore invece di un semplice avviso e impedire che una consegna venga interrotta senza questo collegamento.
 
 Devi verificare che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia online e che la convalida di questo modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. È necessario eseguire questo controllo sistematicamente perché l’errore umano è sempre possibile quando si inserisce il collegamento o si modifica il modulo.
 
-Scopri come inserire un collegamento di rinuncia [in questa sezione](../../delivery/using/personalization-blocks.md#personalization-blocks-example).
+Scopri come inserire un collegamento di rinuncia [in questa sezione](personalization-blocks.md#personalization-blocks-example).
 
 Se viene rilevato un problema relativo all’annullamento dell’abbonamento dopo l’avvio della consegna, è comunque possibile eseguire manualmente un’annullamento dell’abbonamento (utilizzando, ad esempio, la funzione di aggiornamento di massa) per i destinatari che fanno clic sul collegamento di rinuncia anche se non sono stati in grado di confermare la scelta.
 
@@ -67,7 +67,7 @@ Prima di inviare il messaggio, puoi verificarne la reattività controllando l’
 
 Per ottenere questo risultato, Adobe Campaign acquisisce il rendering e lo rende disponibile in un report dedicato. Ciò ti permette di visualizzare in anteprima il messaggio inviato nei vari contesti in cui potrebbe essere ricevuto.
 
-Per ulteriori informazioni, consulta [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md).
+Per ulteriori informazioni, consulta [Rendering della casella in entrata](inbox-rendering.md).
 
 ## SpamAssassin {#spamassassin}
 
@@ -75,4 +75,4 @@ Adobe Campaign può essere configurato per lavorare con SpamAssassin. Questo con
 
 Prima di avviare una consegna, la scheda **[!UICONTROL Preview]** ti consente di valutare i rischi. Un messaggio di avviso fornisce il risultato del test.
 
-Ulteriori informazioni in questa sezione [sezione](../../delivery/using/spamassassin.md).
+Ulteriori informazioni in questa sezione [sezione](spamassassin.md).
