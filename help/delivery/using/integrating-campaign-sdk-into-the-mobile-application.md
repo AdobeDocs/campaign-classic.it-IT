@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funziona
 
    >[!NOTE]
    >
-   >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all’app mobile. Consulta [Configurazione di un’app mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all’app mobile. Consulta [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md).
 
 * **Un URL** di tracciamento: che corrisponde all’indirizzo del server di tracciamento di Adobe Campaign.
 * **Un URL** di marketing: per abilitare la raccolta degli abbonamenti.
@@ -530,7 +530,7 @@ Per implementare il delegato **registerDeviceStatus**, procedi come segue:
 
 ## Variabili {#variables}
 
-Le variabili ti consentono di definire il comportamento dell’app mobile dopo aver ricevuto una notifica. Queste variabili devono essere definite nel codice dell’app mobile e nella console Adobe Campaign, nella scheda **[!UICONTROL Variables]** nel servizio dedicato per le applicazioni mobili (consulta [Configurazione di un’app mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Ecco un esempio di codice che consente a un’app mobile di raccogliere tutte le variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
+Le variabili ti consentono di definire il comportamento dell’app mobile dopo aver ricevuto una notifica. Queste variabili devono essere definite nel codice dell’app mobile e nella console Adobe Campaign, nella scheda **[!UICONTROL Variables]** nel servizio dedicato per le applicazioni mobili (consulta [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md)). Ecco un esempio di codice che consente a un’app mobile di raccogliere tutte le variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
 
 * **In Android**:
 
