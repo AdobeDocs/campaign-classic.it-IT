@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Gestione delle sottoscrizioni
-description: Gestione delle sottoscrizioni
+title: Gestione degli abbonamenti
+description: Gestione degli abbonamenti
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
@@ -54,10 +54,10 @@ Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servi
 
    >[!NOTE]
    >
-   >Gli abbonamenti a facebook e Twitter sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle applicazioni mobili sono descritti in [Informazioni sul canale app mobile](../../delivery/using/about-mobile-app-channel.md).
+   >Gli abbonamenti a facebook e Twitter sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle applicazioni mobili sono descritti in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
 
 * Per un servizio di tipo Email, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
-* Puoi inviare **messaggi di conferma** per un abbonamento o il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dai campi **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** . Questi modelli devono essere configurati con una mappatura di destinazione di tipo **[!UICONTROL Subscription]**, senza un target definito. Consulta la sezione [Informazioni sul canale e-mail](../../delivery/using/about-email-channel.md).
+* Puoi inviare **messaggi di conferma** per un abbonamento o il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dai campi **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** . Questi modelli devono essere configurati con una mappatura di destinazione di tipo **[!UICONTROL Subscription]**, senza un target definito. Consulta la sezione [Informazioni sul canale e-mail](about-email-channel.md).
 * Per impostazione predefinita, gli abbonamenti sono illimitati. Puoi deselezionare l’opzione **[!UICONTROL Unlimited]** per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
 
 Una volta salvato, il servizio viene aggiunto all’elenco Servizi e iscrizioni: Fare clic sul nome per modificarlo. Sono disponibili diverse schede. La scheda **[!UICONTROL Subscriptions]** ti consente di visualizzare l’elenco degli abbonati al servizio informazioni (**[!UICONTROL Active subscriptions]** scheda ) o la cronologia dell’abbonamento o del suo annullamento (**[!UICONTROL History]** scheda ). Puoi anche aggiungere ed eliminare gli abbonati da questa scheda. Consulta [Aggiunta ed eliminazione di abbonati](#adding-and-deleting-subscribers).
@@ -104,7 +104,7 @@ Seleziona il servizio di informazioni di destinazione e fai clic su **[!UICONTRO
 
 La scheda **[!UICONTROL Preview]** ti consente di visualizzare l’elenco dei sottoscrittori del servizio informazioni selezionato.
 
-## Meccanismi di abbonamento e annullamento dell’abbonamento {#subscription-and-unsubscription-mechanisms}
+## Meccanismi di abbonamento e di annullamento dell’abbonamento {#subscription-and-unsubscription-mechanisms}
 
 Puoi impostare meccanismi di abbonamento e annullamento dell’abbonamento per automatizzare i processi e la gestione degli abbonati.
 
@@ -140,15 +140,15 @@ Per registrare i destinatari per un servizio di informazione, puoi:
 
    I flussi di lavoro e le relative modalità di utilizzo sono descritti in [questa sezione](../../workflow/using/about-workflows.md).
 
-### Annullamento dell&#39;iscrizione di un destinatario da un servizio {#unsubscribing-a-recipient-from-a-service}
+### Annullamento dell’iscrizione di un destinatario da un servizio {#unsubscribing-a-recipient-from-a-service}
 
-#### Annullamento manuale della sottoscrizione {#manual-unsubscribing}
+#### Annullamento manuale dell’abbonamento {#manual-unsubscribing}
 
 Le consegne e-mail devono contenere un collegamento di annullamento dell’abbonamento, per legge. I destinatari possono fare clic su questo collegamento per aggiornare il proprio profilo ed essere esclusi dagli obiettivi delle consegne future.
 
-Il collegamento di annullamento dell’abbonamento predefinito viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti fornito nella procedura guidata di consegna (consulta [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al  di elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più oggetto di targeting da parte di alcuna azione di consegna.
+Il collegamento di annullamento dell’abbonamento predefinito viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti fornito nella procedura guidata di consegna (consulta [Informazioni sulla personalizzazione](about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al  di elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più oggetto di targeting da parte di alcuna azione di consegna.
 
-Tuttavia, i destinatari possono scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. Per fare ciò, puoi utilizzare un modulo web (consulta [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell’abbonamento personalizzato (consulta [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md)).
+Tuttavia, i destinatari possono scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. Per fare ciò, puoi utilizzare un modulo web (consulta [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell’abbonamento personalizzato (consulta [Blocchi di personalizzazione](personalization-blocks.md)).
 
 Puoi anche annullare manualmente l’iscrizione di un destinatario dal profilo del destinatario. A questo scopo, fare clic sulla scheda **[!UICONTROL Subscriptions]** del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 
@@ -162,7 +162,7 @@ Un servizio di informazione può avere una durata limitata. I destinatari verran
 
 Puoi anche impostare un flusso di lavoro di annullamento dell’abbonamento per una popolazione. A questo scopo, segui la stessa procedura utilizzata per un flusso di lavoro di abbonamento, ma seleziona l’opzione **[!UICONTROL Unsubscription]** . Consulta [Iscrizione di un destinatario a un servizio](#subscribing-a-recipient-to-a-service).
 
-### Tracciamento del sottoscrittore {#subscriber-tracking}
+### Tracciamento dei sottoscrittori {#subscriber-tracking}
 
 Puoi tenere traccia delle modifiche negli abbonamenti ai servizi di informazione utilizzando il collegamento **[!UICONTROL Reports]** nel dashboard.
 
