@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 4%
 
 ---
 
@@ -47,27 +47,35 @@ Esempio:
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### Meccanismo di firma
+### Firma URL
 
-Per migliorare la sicurezza, nella build 19.1.4 (9032@3a9dc9c) è stato introdotto un nuovo meccanismo di firma per il tracciamento dei collegamenti nelle e-mail ed è disponibile nelle Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2. Questa opzione è abilitata per impostazione predefinita per tutti i clienti.
+Per migliorare la sicurezza, è stato introdotto un meccanismo di firma per il tracciamento dei collegamenti nelle e-mail. È disponibile nelle Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2. Questa funzione è abilitata per impostazione predefinita.
 
 >[!NOTE]
 >
->Quando fai clic su un URL firmato non valido, viene restituito il seguente errore: &quot;Impossibile trovare l&#39;URL richiesto &quot;..&quot;.
+>Quando si fa clic su un URL firmato non valido, viene restituito questo errore: &quot;Impossibile trovare l&#39;URL richiesto &#39;..&#39;.&quot;
 
-Inoltre, a partire dalla versione Campaign 20.2 e [!DNL Gold Standard], i clienti in hosting e ibridi possono utilizzare un miglioramento per disabilitare gli URL generati dalle build precedenti. Questa opzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+Inoltre, a partire da Campaign 20.2 e dalla versione [!DNL Gold Standard], puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
 
-Per attivare questo nuovo meccanismo, i clienti on-premise devono seguire questi passaggi su tutti i server Campaign:
+Se esegui [!DNL Gold Standard] 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push che utilizzano collegamenti di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
+
+Se esegui Campaign localmente o in un’architettura ibrida, devi contattare l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disattivare la firma URL.
+
+Se esegui Campaign in un’architettura ibrida, prima di abilitare la firma URL, assicurati che l’istanza di mid-sourcing in hosting sia stata aggiornata come segue:
+* Prima dell’istanza di marketing locale
+* Alla stessa versione dell’istanza di marketing locale o a una versione leggermente superiore
+
+In caso contrario, potrebbero sorgere alcuni dei seguenti problemi:
+* Prima dell’aggiornamento dell’istanza di mid-sourcing , gli URL vengono inviati senza firma tramite questa istanza.
+* Dopo l’aggiornamento dell’istanza di mid-sourcing e l’abilitazione della firma URL in entrambe le istanze, gli URL precedentemente inviati senza firma vengono rifiutati. Il motivo è che i file di tracciamento forniti dall’istanza di marketing richiedono una firma.
+
+Per disabilitare gli URL generati nelle build precedenti, segui questi passaggi su tutti i server Campaign allo stesso tempo:
 
 1. Nel file di configurazione del server (serverConf.xml), cambia **blockRedirectForUnsignedTrackingLink** in **true**.
 1. Riavvia il servizio **nlserver** .
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
-I clienti in esecuzione su [!DNL Gold Standard] 19.1.4 possono riscontrare problemi con le consegne di notifiche push utilizzando un collegamento di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, Adobe consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracciamento:
-
-**I** clienti in hosting e ibridi devono contattare  [Customer ](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) Careto per disattivare questo meccanismo.
-
-**I** clienti on-premise possono eseguire la scansione seguendo il passaggio seguente:
+Per abilitare la firma URL, segui questi passaggi su tutti i server Campaign contemporaneamente:
 
 1. Nel file di configurazione del server (serverConf.xml), cambia **signEmailLinks** in **false**.
 1. Riavvia il servizio **nlserver** .
