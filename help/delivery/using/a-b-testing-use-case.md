@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -27,16 +27,16 @@ Inoltre, il test descritto in questo caso d’uso riguardava solo due consegne, 
 
 I passaggi principali per eseguire questo caso d’uso sono i seguenti:
 
-* [Passaggio 1: Creare un flusso di lavoro di targeting](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [Passaggio 2: Configurare i campioni di popolazione](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [Passaggio 3: Creare due modelli di consegna](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [Passaggio 4: Configurare le consegne nel flusso di lavoro](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [Passaggio 5: Creare lo script](../../delivery/using/a-b-testing-uc-script.md)
-* [Passaggio 6: Definire la consegna finale](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [Passaggio 7: Avvia il flusso di lavoro](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [Passaggio 8: Analizzare il risultato](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [Passaggio 1: Creare un flusso di lavoro di targeting](a-b-testing-uc-targeting-workflow.md)
+* [Passaggio 2: Configurare i campioni di popolazione](a-b-testing-uc-population-samples.md)
+* [Passaggio 3: Creare due modelli di consegna](a-b-testing-uc-delivery-templates.md)
+* [Passaggio 4: Configurare le consegne nel flusso di lavoro](a-b-testing-uc-configuring-deliveries.md)
+* [Passaggio 5: Creare lo script](a-b-testing-uc-script.md)
+* [Passaggio 6: Definire la consegna finale](a-b-testing-uc-final-delivery.md)
+* [Passaggio 7: Avvia il flusso di lavoro](a-b-testing-uc-start-workflow.md)
+* [Passaggio 8: Analizzare il risultato](a-b-testing-uc-analyzing.md)
 
 **Argomenti correlati:**
 
-* [Introduzione ai test A/B](../../delivery/using/get-started-a-b-testing.md)
-* [Configurare il test A/B](../../delivery/using/configuring-a-b-testing.md)
+* [Introduzione ai test A/B](get-started-a-b-testing.md)
+* [Configurare il test A/B](configuring-a-b-testing.md)
