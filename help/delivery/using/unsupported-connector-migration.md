@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 1%
@@ -43,9 +43,9 @@ I vecchi connettori SMS utilizzano il connettore SMS Java che sovraccarica il pr
 
 >[!CAUTION]
 >
->Anche se è possibile trasporre i parametri, la configurazione del connettore **[!UICONTROL Extended Generic SMPP]** richiede di parlare con il provider che ti fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/sms-protocol.md).
+>Anche se è possibile trasporre i parametri, la configurazione del connettore **[!UICONTROL Extended Generic SMPP]** richiede di parlare con il provider che ti fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](sms-protocol.md).
 
-Innanzitutto, dovrai creare un nuovo account esterno **[!UICONTROL Extended Generic SMPP]** e quindi potresti essere in grado di trasporre alcuni dei parametri. Puoi trovare i passaggi dettagliati in questa [pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Innanzitutto, dovrai creare un nuovo account esterno **[!UICONTROL Extended Generic SMPP]** e quindi potresti essere in grado di trasporre alcuni dei parametri. Puoi trovare i passaggi dettagliati in questa [pagina](sms-set-up.md#creating-an-smpp-external-account).
 
 È ora necessario compilare i parametri dalla scheda **[!UICONTROL Mobile]** dell’account esterno appena creato **[!UICONTROL Extended Generic SMPP]** a seconda del connettore precedente.
 
@@ -111,7 +111,7 @@ Nella scheda **[!UICONTROL Connection Settings]** :
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-### Dal connettore CLX {#from-clx}
+### Da connettore CLX {#from-clx}
 
 Dal connettore **[!UICONTROL CLX]** puoi trasporre all&#39;account **[!UICONTROL Extended SMPP]** appena creato:
 
