@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio dell’ISP
+title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
 description: Scopri come aggiornare la qualifica del mancato recapito dopo un'interruzione dell'ISP.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -45,18 +45,18 @@ In base al calendario dell’incidente, di seguito sono riportate le linee guida
 * Per le istanze Campaign con informazioni sulla risposta non recapitata SMTP nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
    * **Il testo di errore (testo di quarantena)** contiene &quot;user lookup success but no user record found&quot; E il testo di  **errore (testo di quarantena)** contiene &quot;support.apple.com&quot;
-   * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00
-   * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM
+   * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00 AM
+   * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM o prima
 
 * Per le istanze Campaign con informazioni sulla regola e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
    * **Dominio e-mail (@dominio)** uguale a icloud.com OR Dominio  **e-mail (@dominio)** uguale a me.com OR Dominio  **E-mail (@dominio)** uguale a mac.com
-   * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00
-   * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM
+   * **Stato dell&#39;aggiornamento (@lastModified)** il o dopo il 26/04/2021 07:00:00 AM
+   * **Stato dell&#39;aggiornamento (@lastModified)** il 26/04/2021 01:00:00 PM o prima
 
 Una volta visualizzato l’elenco dei destinatari interessati, puoi impostarli su uno stato **[!UICONTROL Valid]** in modo che vengano rimossi dall’elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
 
 **Argomenti correlati:**
-* [Comprendere gli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Qualificazione di mail non recapitate](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [Comprendere gli errori di consegna](understanding-delivery-failures.md)
+* [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)
