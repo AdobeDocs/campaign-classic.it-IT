@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 100%
@@ -69,7 +69,7 @@ In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UI
 
 ![](assets/privacy-right.png)
 
-### Spazi dei nomi {#namesspaces}
+### Namespace {#namesspaces}
 
 Prima di creare le richieste di accesso a dati personali, è necessario definire lo spazio dei nomi che verrà utilizzato. Questa chiave verrà utilizzata per identificare l’interessato nel database di Adobe Campaign.
 
@@ -165,7 +165,7 @@ Le informazioni sono disponibili nel database per 90 giorni. Una volta pulita la
 
 Ecco un esempio del file di dati dell’interessato:
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 I titolari del trattamento dei dati possono creare facilmente un’applicazione web che includa l’URL JSSP corrispondente per rendere disponibile il file di dati dell’interessato da una pagina web.
 
@@ -257,7 +257,7 @@ Innanzitutto, devi eseguire l’autenticazione tramite l’API:
 
 1. Utilizza il metodo “Logon” e passa un nome utente e una password come parametri nella richiesta. Riceverai una risposta contenente un token di sessione. Ecco un esempio che utilizza SoapUI.
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. Utilizza il Token di sessione restituito come autenticazione per tutte le chiamate API successive. Scade dopo 24 ore.
 
@@ -269,7 +269,7 @@ Quindi invoca l’API Privacy:
 
    Di seguito è riportato un esempio che utilizza **[!UICONTROL CreateRequestByName]**. Osserva come viene utilizzato il token di sessione fornito in precedenza come autenticazione. La risposta è l’ID della richiesta creata.
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    Per aiutarti a eseguire i passaggi precedenti, considera quanto segue:
 
