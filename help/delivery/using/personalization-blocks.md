@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ A questo scopo, è necessario inserire i seguenti blocchi di personalizzazione:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](sending-messages.md#generating-the-mirror-page).
 
 1. Crea una nuova consegna o apri una consegna di tipo e-mail esistente.
 1. Nella procedura guidata di consegna, fai clic su **[!UICONTROL Subject]** per modificare l’oggetto del messaggio e inserire un oggetto.
@@ -100,24 +100,12 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+   >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : inserisce un collegamento alla pagina speculare: &quot;Se non riesci a visualizzare correttamente questo messaggio, fai clic qui&quot;.
 * **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l’iscrizione a tutte le consegne (elenco Bloccati).
-* **[!UICONTROL Formatting function for proper nouns]** : genera la funzione  **[!UICONTROL toSmartCase]** Javascript, che cambia la prima lettera di ogni parola in maiuscolo. Questo blocco deve essere inserito nel codice sorgente della consegna, nei tag **`<script>...</script>`** .
-
-   Nell’esempio seguente, la funzione viene utilizzata per sostituire l’elemento &quot;Intestazione personale&quot; con &quot;Nuova intestazione&quot; con lettere maiuscole a ogni parola:
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Registration page URL]** : inserisce un URL di abbonamento (consulta  [Informazioni su servizi e abbonamenti](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatting function for proper nouns]** : genera la funzione  **[!UICONTROL toSmartCase]** Javascript, che cambia la prima lettera di ogni parola in maiuscolo.
+* **[!UICONTROL Registration page URL]** : inserisce un URL di abbonamento (consulta  [Informazioni su servizi e abbonamenti](about-services-and-subscriptions.md)).
 * **[!UICONTROL Registration link]** : inserisce un collegamento di abbonamento. che è stato definito durante la configurazione dell’istanza.
 * **[!UICONTROL Registration link (with referrer)]** : inserisce un collegamento di abbonamento, che consente di identificare il visitatore e la consegna. Il collegamento è stato definito durante la configurazione dell’istanza.
 
@@ -126,7 +114,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
    >Questo blocco può essere utilizzato solo nelle consegne che hanno come target i visitatori.
 
 * **[!UICONTROL Registration confirmation]** : inserisce un collegamento che consente di confermare l’abbonamento.
-* **[!UICONTROL Social network sharing links]** : inserisce dei pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, Facebook, Twitter e LinkedIn (consulta  [Marketing virale: inoltrare ad un amico](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : inserisce dei pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, Facebook, Twitter e LinkedIn (consulta  [Marketing virale: inoltrare ad un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e  **[!UICONTROL Notification style]** : genera codice che formatta un’e-mail con stili HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nella sezione **[!UICONTROL ...]**, nei tag **`<style>...</style>`** .
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un’offerta di interazione su  **[!UICONTROL Accepted]** (consulta  [questa sezione](../../interaction/using/offer-analysis-report.md)).
 
