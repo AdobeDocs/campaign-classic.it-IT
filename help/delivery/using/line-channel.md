@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 2%
 
 ---
 
-# Crea consegne LINE{#line-channel}
+# Creare consegne LINE{#line-channel}
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ I passaggi per utilizzare il canale [!DNL LINE] sono i seguenti:
 1. [Configurare il tipo di contenuto](#defining-the-content)
 1. [Monitoraggio della consegna (tracciamento, quarantena, rapporti, ecc.)](#accessing-reports)
 
-## Impostare il canale LINE {#setting-up-line-channel}
+## Imposta canale LINE {#setting-up-line-channel}
 
 Prima di creare un account [!DNL LINE] e un account esterno, devi prima installare il pacchetto LINE nella tua istanza. Per ulteriori informazioni, consultare la sezione [LINE](../../installation/using/installing-campaign-standard-packages.md#line-package) nella guida all&#39;installazione.
 
@@ -58,7 +58,7 @@ Per creare il servizio [!DNL LINE]:
 
 1. Fai clic su **[!UICONTROL Save]**.
 
-Per ulteriori informazioni su abbonamenti e servizi, consulta [Gestione degli abbonamenti](../../delivery/using/managing-subscriptions.md).
+Per ulteriori informazioni su abbonamenti e servizi, consulta [Gestione degli abbonamenti](managing-subscriptions.md).
 
 ### Configurare l’account esterno LINE {#configure-line-external}
 
@@ -103,13 +103,13 @@ Per creare una consegna [!DNL LINE] devi seguire questi passaggi:
 
    ![](assets/line_message_01.png)
 
-1. Identifica la consegna con **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
 1. Fai clic su **[!UICONTROL Continue]** per creare la consegna.
 
 1. Nell’editor delle consegne, seleziona **[!UICONTROL To]** per eseguire il targeting dei destinatari della consegna [!DNL LINE]. Il targeting viene eseguito il **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](../../delivery/using/steps-defining-the-target-population.md).
+   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
@@ -131,7 +131,7 @@ Per creare una consegna [!DNL LINE] devi seguire questi passaggi:
 
 1. Quando la consegna viene creata e configurata correttamente, puoi inviarla alla destinazione definita in precedenza.
 
-   Per ulteriori informazioni sull’invio di una consegna, consulta [Inviare messaggi](../../delivery/using/sending-messages.md).
+   Per ulteriori informazioni sull’invio di una consegna, consulta [Inviare messaggi](sending-messages.md).
 
 1. Dopo aver inviato il messaggio, accedi al rapporto per misurare l’efficacia della consegna.
 
@@ -157,9 +157,9 @@ Una consegna **[!UICONTROL Text message]** [!DNL LINE] è un messaggio inviato a
 
 ![](assets/line_message_02.png)
 
-La configurazione di questo tipo di messaggio è simile alla configurazione di **[!UICONTROL Text]** in un messaggio e-mail. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/defining-the-email-content.md#message-content).
+La configurazione di questo tipo di messaggio è simile alla configurazione di **[!UICONTROL Text]** in un messaggio e-mail. Per ulteriori informazioni, consulta questa [pagina](defining-the-email-content.md#message-content).
 
-### Configurazione di un&#39;immagine e della consegna di un collegamento {#configuring-an-image-and-link-delivery}
+### Configurazione di un’immagine e della consegna del collegamento {#configuring-an-image-and-link-delivery}
 
 Una consegna **[!UICONTROL Image and link]** [!DNL LINE] è un messaggio inviato ai destinatari sotto forma di immagine che può contenere uno o più URL.
 
@@ -211,7 +211,7 @@ Tieni presente che i video grandi o alti possono essere ritagliati quando vengon
 
 ![](assets/line_message_06.png)
 
-## Accesso ai report {#accessing-reports}
+## Accesso ai rapporti {#accessing-reports}
 
 Dopo aver inviato la consegna, puoi visualizzare i rapporti [!DNL LINE] tramite il menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** dalla sezione **[!UICONTROL Explorer]**.
 
@@ -239,7 +239,7 @@ In questo esempio, creeremo e configureremo un messaggio di testo e un’immagin
 
 1. Nella finestra di configurazione della consegna, seleziona il gruppo di destinazione.
 
-   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](../../delivery/using/steps-defining-the-target-population.md).
+   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
