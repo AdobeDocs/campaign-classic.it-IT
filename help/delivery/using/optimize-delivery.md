@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 8%
@@ -22,7 +22,7 @@ La sezione seguente illustra le best practice e le procedure consigliate per una
 
 Diversi fattori possono influenzare direttamente le prestazioni del server e rallentare la piattaforma:
 
-* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, ciò aumenta la quantità di dati necessari per preparare la consegna.  Ulteriori informazioni sulla personalizzazione in [questa sezione](../../delivery/using/about-personalization.md)
+* Numero e tipo di elementi di personalizzazione: la personalizzazione nelle e-mail estrae i dati dal database per ciascun destinatario. Se sono presenti molti elementi di personalizzazione, ciò aumenta la quantità di dati necessari per preparare la consegna.  Ulteriori informazioni sulla personalizzazione in [questa sezione](about-personalization.md)
 
 * Caricamento server: quando il server di marketing gestisce contemporaneamente diverse attività, può rallentare le prestazioni. Il server di marketing deve coordinare tutti i dati in entrata e in uscita per tutte le consegne per garantire che i dati siano corretti e puntuali.
 
@@ -46,9 +46,9 @@ Per raggiungere la casella in entrata dei destinatari senza rimbalzare o contras
 
    * Si riferisce ai fattori di un’e-mail che determinano la sua capacità di essere accettata dal server di un destinatario. Gli ISP (Internet Service Provider) filtrano le e-mail che identificano come SPAM o impediscono il download delle immagini. Se determinano che un determinato dominio sta inviando troppe e-mail, imposteranno un limite al numero di e-mail che accetteranno da quel mittente.
 
-   * Quando controlli l&#39;e-mail per il recapito messaggi, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per informazioni più approfondite su questo argomento, consulta [questa sezione](../../delivery/using/about-deliverability.md).
+   * Quando controlli l&#39;e-mail per il recapito messaggi, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per informazioni più approfondite su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica le raccomandazioni dettagliate [in questo documento](../../delivery/using/about-deliverability.md).
+* Applica le raccomandazioni dettagliate [in questo documento](about-deliverability.md).
 
 * Contatta il tuo rappresentante Adobe per assistenza.
 
@@ -64,7 +64,7 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 * I destinatari i cui indirizzi sono messi in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna: non sono mirati. In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. È possibile mettere in quarantena un indirizzo e-mail, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md).
+* Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](understanding-quarantine-management.md).
 
 
 * Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena ti consente quindi di evitare di essere aggiunta al elenco Bloccati da questi provider.
