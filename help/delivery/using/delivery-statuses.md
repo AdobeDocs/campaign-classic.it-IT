@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
@@ -23,13 +23,13 @@ Una volta inviata la consegna, il dashboard di consegna visualizza uno stato che
 
 ![](assets/delivery-status.png)
 
-Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come risolverli, consulta [questa pagina](../../delivery/using/understanding-delivery-failures.md).
+Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come risolverli, consulta [questa pagina](understanding-delivery-failures.md).
 
 **Argomenti correlati:**
 
-* [Dashboard delle consegne](../../delivery/using/delivery-dashboard.md)
-* [Risoluzione dei problemi nelle consegne](../../delivery/using/delivery-troubleshooting.md)
-* [Informazioni sul recapito messaggi](../../delivery/using/about-deliverability.md)
+* [Dashboard delle consegne](delivery-dashboard.md)
+* [Risoluzione dei problemi nelle consegne](delivery-troubleshooting.md)
+* [Informazioni sul recapito messaggi](about-deliverability.md)
 
 ## Elenco degli stati di consegna {#list-delivery-statuses}
 
@@ -51,7 +51,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Non riuscito<br /> </td> 
-   <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Consulta <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
+   <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Consulta <a href="understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
   </tr>
   <tr> 
    <td> Pending<br /> </td> 
@@ -67,7 +67,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Preso in considerazione dal fornitore di servizi<br /> </td> 
-   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’MTA  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">avanzato</a>, il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato.</td> 
+   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’MTA  <a href="sending-with-enhanced-mta.md" target="_blank">avanzato</a>, il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato.</td> 
   </tr> 
   <tr> 
    <td> Ricevuto su mobile<br /> </td> 
@@ -85,13 +85,13 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
  </tbody> 
 </table>
 
-Per scoprire come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, consulta [questa sezione](../../delivery/using/about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Per scoprire come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, consulta [questa sezione](about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Stato in sospeso {#pending-status}
 
 Dopo aver confermato la consegna, puoi vedere che lo stato della consegna è **[!UICONTROL Pending]**. Questo stato significa che il processo di esecuzione è in attesa della disponibilità di alcune risorse.
 
-Lo stato **[!UICONTROL Pending]** può prima indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione delle consegne](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) .
+Lo stato **[!UICONTROL Pending]** può prima indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione delle consegne](steps-sending-the-delivery.md#scheduling-the-delivery-sending) .
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 
@@ -137,5 +137,5 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 **Argomenti correlati:**
 
 * [Log di consegna e cronologia](#delivery-logs-and-history)
-* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Tipi e motivi di errori di consegna](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
