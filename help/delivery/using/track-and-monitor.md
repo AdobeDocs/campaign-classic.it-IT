@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Hai fatto clic sul pulsante **Invia**? Vediamo cosa succede. Una volta inviata l
 Per controllare le campagne, assicurati che il messaggio sia stato effettivamente consegnato ai destinatari.
 
 Dal dashboard di consegna Campaign, puoi controllare i messaggi elaborati e i registri di controllo della consegna.
-Puoi anche controllare lo stato dei messaggi nei registri di consegna. [Ulteriori informazioni](../../delivery/using/about-delivery-monitoring.md).
+Puoi anche controllare lo stato dei messaggi nei registri di consegna. [Ulteriori informazioni](about-delivery-monitoring.md).
 
 Cosa succede se le consegne non vengono inviate e il loro stato rimane **In sospeso**?
 
@@ -41,7 +41,7 @@ Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della
 
 **Suggerimento**: Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
-Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](../../delivery/using/how-to-configure-tracked-links.md) e la descrizione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) .
+Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](how-to-configure-tracked-links.md) e la descrizione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) .
 
 ## Prestazioni di consegna {#delivery-performances}
 
@@ -55,7 +55,7 @@ Per misurare la velocità di consegna dei messaggi, puoi controllare la velocit�
 
 * Non provare a pianificare insieme consegne di grandi dimensioni. Si prega di notare che possono essere necessari da 5 a 10 minuti per distribuire uniformemente il carico sul sistema.
 
-## Risoluzione dei problemi relativi alle consegne {#delivery-troubleshooting}
+## Risoluzione dei problemi nelle consegne {#delivery-troubleshooting}
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 
@@ -63,6 +63,6 @@ Per misurare la velocità di consegna dei messaggi, puoi controllare la velocit�
 
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 
-* [Problemi di prestazioni di consegna](../../delivery/using/delivery-performances.md)
+* [Problemi di prestazioni di consegna](delivery-performances.md)
 
 * [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) : solo per i clienti  *on-premise*
