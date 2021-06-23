@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 5%
@@ -30,7 +30,7 @@ I passaggi chiave sono i seguenti:
 Potrai quindi [creare una notifica push per i dispositivi iOS](create-notifications-ios.md).
 
 
-## Configurare l&#39;account esterno iOS {#configuring-external-account-ios}
+## Configurare un account esterno iOS {#configuring-external-account-ios}
 
 Per iOS, il connettore iOS HTTP/2 invia notifiche al servizio APN HTTP/2.
 
@@ -46,7 +46,7 @@ Per configurare questo connettore, effettua le seguenti operazioni:
 
 Il connettore iOS è ora configurato. Puoi iniziare a creare il servizio.
 
-## Configura il servizio iOS {#configuring-ios-service}
+## Configurazione del servizio iOS {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -71,9 +71,9 @@ Il connettore iOS è ora configurato. Puoi iniziare a creare il servizio.
 
    ![](assets/nmac_service_2.png)
 
-1. Crea le tue applicazioni di sviluppo e produzione iOS. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
+1. Crea le tue applicazioni di sviluppo e produzione iOS. Per ulteriori informazioni, consulta questa [sezione](configuring-the-mobile-application.md#creating-ios-app).
 
-## Creare un&#39;app mobile iOS {#creating-ios-app}
+## Creare un’app mobile iOS {#creating-ios-app}
 
 Dopo aver creato il servizio, crea l’applicazione iOS in Campaign. Segui i passaggi seguenti:
 
@@ -100,7 +100,7 @@ Nell’esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare una 
 
 1. Fai clic su **[!UICONTROL Next]** per iniziare a configurare l&#39;applicazione di sviluppo.
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni, consulta: [Integrazione dell’SDK Campaign nell’app mobile](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni, consulta: [Integrazione dell’SDK Campaign nell’app mobile](integrating-campaign-sdk-into-the-mobile-application.md). Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
 
    >[!NOTE]
    >
