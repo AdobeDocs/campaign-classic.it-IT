@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 9%
@@ -19,13 +19,13 @@ Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatar
 
 Una delle ragioni principali per utilizzarli è **la tua mailing list protection**. L’inserimento di indirizzi di seed nella mailing list consente di notare se viene utilizzato da terze parti, in quanto gli indirizzi di seed in essa contenuti riceveranno le consegne inviate alla mailing list.
 
-Inoltre, gli indirizzi di seed ti consentono di **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima dell’invio, inviandole le bozze (consulta [Utilizzare gli indirizzi di seed come bozza](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+Inoltre, gli indirizzi di seed ti consentono di **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima dell’invio, inviandole le bozze (consulta [Utilizzare gli indirizzi di seed come bozza](steps-defining-the-target-population.md#using-seed-addresses-as-proof).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 La funzione degli indirizzi di seed presenta i seguenti vantaggi:
 
-* Sostituzione casuale di campi con dati provenienti dai profili dei destinatari: questo ti consente di inserire solo l’indirizzo e-mail, ad esempio nella sezione dell’indirizzo di seed, e di consentire a Campaign di compilare automaticamente gli altri campi del profilo (consulta [Caso di utilizzo: configura la sostituzione del campo](../../delivery/using/use-case--configuring-the-field-substitution.md)).
+* Sostituzione casuale di campi con dati provenienti dai profili dei destinatari: questo ti consente di inserire solo l’indirizzo e-mail, ad esempio nella sezione dell’indirizzo di seed, e di consentire a Campaign di compilare automaticamente gli altri campi del profilo (consulta [Caso di utilizzo: configura la sostituzione del campo](use-case--configuring-the-field-substitution.md)).
 * Quando utilizzi un flusso di lavoro con funzionalità di gestione dati, i dati aggiuntivi elaborati nelle consegne possono essere immessi a livello di indirizzo di seed per forzare i valori: questo elimina la sostituzione casuale di valori.
 * Gli indirizzi di seed vengono automaticamente esclusi dai rapporti relativi alle seguenti statistiche di consegna: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
@@ -35,7 +35,7 @@ Gli indirizzi di seed vengono aggiunti al target delle consegne importando o cre
 >
 >Gli indirizzi di seed non appartengono alla tabella dei destinatari, ma vengono creati in una tabella separata. Se estendi la tabella dei destinatari con nuovi dati, devi estendere anche la tabella degli indirizzi di seed con gli stessi dati. In caso contrario, i campi estesi non saranno presi in considerazione per gli indirizzi di seed.
 >
->Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso di utilizzo: seleziona gli indirizzi di seed in criteri](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+>Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso di utilizzo: seleziona gli indirizzi di seed in criteri](use-case--selecting-seed-addresses-on-criteria.md)
 
 Per le consegne di direct mailing, gli indirizzi di seed vengono aggiunti durante l’estrazione e mescolati nel documento di output.
 
