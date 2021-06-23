@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -21,8 +21,8 @@ Per approvare il messaggio e inviarlo ai destinatari della consegna da creare, f
 
 Il processo dettagliato di convalida e invio di una consegna è presentato nelle sezioni seguenti:
 
-* [Convalidare la consegna](../../delivery/using/steps-validating-the-delivery.md)
-* [Inviare la consegna](../../delivery/using/steps-sending-the-delivery.md)
+* [Convalidare la consegna](steps-validating-the-delivery.md)
+* [Inviare la consegna](steps-sending-the-delivery.md)
 
 ## Parametri avanzati {#advanced-parameters}
 
@@ -60,9 +60,9 @@ Sono disponibili le seguenti opzioni:
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
-* [Monitorare una consegna](../../delivery/using/about-delivery-monitoring.md)
-* [Errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sul tracciamento dei messaggi](../../delivery/using/about-message-tracking.md)
+* [Monitorare una consegna](about-delivery-monitoring.md)
+* [Errori di consegna](understanding-delivery-failures.md)
+* [Informazioni sul tracciamento dei messaggi](about-message-tracking.md)
 
 ## Elabora messaggi in entrata {#processing-inbound-messages}
 
@@ -165,6 +165,6 @@ Il nome del mittente di questo tipo di messaggio è un codice breve solitamente 
 
 >[!IMPORTANT]
 >
->Questo tipo di messaggi automatici non mantiene una cronologia. Pertanto, non vengono visualizzate nel dashboard di consegna. [Ulteriori informazioni](../../delivery/using/delivery-dashboard.md).
+>Questo tipo di messaggi automatici non mantiene una cronologia. Pertanto, non vengono visualizzate nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
 >
 >Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. [Ulteriori informazioni](../../campaign/using/pressure-rules.md).
