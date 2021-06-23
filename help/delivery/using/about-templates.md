@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 2%
@@ -33,4 +33,4 @@ Esistono due tipi di modelli:
 
 >[!NOTE]
 >
->I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: potrai quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura della sottoscrizione. Per ulteriori informazioni, consulta [Selezionare una mappatura target](../../delivery/using/selecting-a-target-mapping.md) e [Informazioni su servizi e abbonamenti](../../delivery/using/about-services-and-subscriptions.md).
+>I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: potrai quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura della sottoscrizione. Per ulteriori informazioni, consulta [Selezionare una mappatura target](selecting-a-target-mapping.md) e [Informazioni su servizi e abbonamenti](about-services-and-subscriptions.md).
