@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 13%
+source-wordcount: '582'
+ht-degree: 10%
 
 ---
 
@@ -21,10 +21,17 @@ Il tracciamento si applica ai messaggi, ma il web tracking consente di monitorar
 
 >[!NOTE]
 >
->I collegamenti nel contenuto delle e-mail che contengono personalizzazioni devono essere tracciati con una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consulta [questa sezione](../../delivery/using/tracking-personalized-links.md).
+>I collegamenti nel contenuto delle e-mail che contengono personalizzazioni devono essere tracciati con una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consulta [questa sezione](tracking-personalized-links.md).
 
+Prima di applicare la formula di tracciamento, consigliamo vivamente di allegare gli URL nei delimitatori nella scheda **[!UICONTROL Text content]** . I delimitatori URL immessi in questa scheda vengono utilizzati da Adobe Campaign per identificare gli URL all’interno delle stringhe di caratteri. È possibile utilizzare queste coppie di delimitatori:
+* Parentesi ( )
+* Parentesi graffa [ ]
+* Bracce { }
 
-
+In questo esempio, l’URL https://www.adobe.com è seguito da un punto e virgola (;). Il punto e virgola può essere interpretato dai client e-mail dei destinatari come parte dell’URL. Di conseguenza, il collegamento potrebbe non funzionare. Per evitare questo problema, puoi racchiudere l’URL nei delimitatori in uno dei seguenti modi:
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettua le seguenti operazioni:
 
