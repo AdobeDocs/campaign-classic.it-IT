@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Per definire il nome e l’indirizzo del mittente che verranno visualizzati nell
 
 Questa finestra ti consente di inserire tutte le informazioni necessarie per creare le intestazioni dei messaggi e-mail. Queste informazioni possono essere personalizzate. A tal fine, utilizza i pulsanti a destra dei campi di input per inserire i campi di personalizzazione.
 
-Per scoprire come inserire e utilizzare i campi di personalizzazione, consulta la sezione [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md) .
+Per scoprire come inserire e utilizzare i campi di personalizzazione, consulta la sezione [Informazioni sulla personalizzazione](about-personalization.md) .
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Ad esempio, nel messaggio precedente, l’oggetto del messaggio viene personaliz
 
 >[!NOTE]
 >
->L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md).
+>L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](about-personalization.md).
 
 È inoltre possibile inserire emoticon nella riga dell&#39;oggetto tramite la finestra a comparsa **[!UICONTROL Insert emoticon]**.
 
@@ -91,7 +91,7 @@ I messaggi vengono inviati in formato HTML o testo per impostazione predefinita,
 
    >[!NOTE]
    >
-   >L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](../../delivery/using/about-personalization.md).
+   >L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](about-personalization.md).
 
    Le schede nella parte inferiore della pagina ti consentono di visualizzare il codice HTML della pagina che stai creando e di visualizzare il rendering del messaggio con la sua personalizzazione. Per avviare questa visualizzazione, fai clic su **[!UICONTROL Preview]** e seleziona un destinatario utilizzando il pulsante **[!UICONTROL Test personalization]** nella barra degli strumenti. Puoi selezionare un destinatario dalla destinazione o dalle destinazioni definite o scegliere un altro destinatario.
 
@@ -137,7 +137,7 @@ Select the format of the email in the lower section of the window:
 
 Adobe Campaign consente di provare il nuovo formato interattivo [AMP per e-mail](https://amp.dev/about/email/), che consente di inviare e-mail dinamiche a determinate condizioni.
 
-Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/defining-interactive-content.md).
+Per ulteriori informazioni, consulta [questa sezione](defining-interactive-content.md).
 
 ## Utilizzo della gestione dei contenuti {#using-content-management}
 
@@ -151,7 +151,7 @@ Una scheda aggiuntiva consente di inserire contenuto che verrà integrato e form
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla gestione dei contenuti in Adobe Campaign, consulta [questa sezione](../../delivery/using/about-content-management.md).
+>Per ulteriori informazioni sulla gestione dei contenuti in Adobe Campaign, consulta [questa sezione](about-content-management.md).
 
 ## Inserimento di emoticon {#inserting-emoticons}
 
@@ -164,7 +164,7 @@ Puoi inserire emoticon nel contenuto dell’e-mail.
 
 1. Al termine, fai clic sul pulsante **[!UICONTROL Close]** .
 
-Per personalizzare l’elenco degli emoticon, consulta questa [pagina](../../delivery/using/customizing-emoticon-list.md).
+Per personalizzare l’elenco degli emoticon, consulta questa [pagina](customizing-emoticon-list.md).
 
 ## Aggiunta di immagini {#adding-images}
 
@@ -215,7 +215,7 @@ Quando apri un contenuto HTML con immagini incluse nella procedura guidata di co
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come [allegato](../../delivery/using/attaching-files.md), per impostazione predefinita ogni dimensione dell&#39;immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come [allegato](attaching-files.md), per impostazione predefinita ogni dimensione dell&#39;immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Ecco un esempio di consegna con quattro immagini:
 
