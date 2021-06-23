@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 6%
@@ -37,7 +37,7 @@ SpamAssassin sfrutta una varietà di tecniche di rilevamento dello spam, tra cui
 
 Dopo aver creato la consegna e-mail e averne definito il contenuto, segui la procedura seguente per valutare i rischi.
 
-Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md).
+Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](about-email-channel.md).
 
 1. Vai alla scheda **[!UICONTROL Preview]**. 
 1. Seleziona un destinatario per visualizzare l’anteprima della consegna.
