@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Sia le riconoscenze che l&#39;SR possono attivare gli errori, distinguendo tra i
 
 Un SMS trasporta più informazioni del testo. Ecco un elenco di ciò che ci si aspetta di trovare in un SMS:
 
-* Il testo, che è limitato a 140 byte, ovvero tra 70 e 160 caratteri a seconda della codifica. Per informazioni dettagliate e limitazioni, consulta [Codifica testo SMS](../../delivery/using/sms-protocol.md#sms-text-encoding) di seguito.
+* Il testo, che è limitato a 140 byte, ovvero tra 70 e 160 caratteri a seconda della codifica. Per informazioni dettagliate e limitazioni, consulta [Codifica testo SMS](sms-protocol.md#sms-text-encoding) di seguito.
 
 * Un indirizzo destinatario, talvolta denominato `ADC` o `MSISDN`. È il numero del cellulare che riceverà l&#39;SMS.
 
@@ -176,7 +176,7 @@ Campi di rilievo in una PDU `SUBMIT_SM`:
 
 * **raccomandata_consegna**: indica se una SR è richiesta o meno. Adobe Campaign imposta sempre questo flag ad eccezione delle risposte automatiche. Per i messaggi multiparte, il flag viene impostato solo per la prima parte. Tutte le versioni hanno lo stesso comportamento.
 
-* **data_coding**: indica la codifica utilizzata nel campo di testo. Per ulteriori informazioni, consulta la sezione [Codifica testo SMS](../../delivery/using/sms-protocol.md#sms-text-encoding) .
+* **data_coding**: indica la codifica utilizzata nel campo di testo. Per ulteriori informazioni, consulta la sezione [Codifica testo SMS](sms-protocol.md#sms-text-encoding) .
 
 * **short_message**: il testo del messaggio. Se viene utilizzato UDH, contiene anche l’intestazione UHD.
 
@@ -208,7 +208,7 @@ La maggior parte dei campi ha lo stesso significato della loro controparte `SUBM
 
 * **esm_class**: utilizzato per indicare se la PDU è un MO o un SR.
 
-* **short_message**: testo del messaggio. Per SR, questo contiene i dati descritti nell&#39;appendice B della specifica del protocollo SMPP. Per ulteriori informazioni, consulta [Gestione degli errori SR](../../delivery/using/sms-protocol.md#sr-error-management) .
+* **short_message**: testo del messaggio. Per SR, questo contiene i dati descritti nell&#39;appendice B della specifica del protocollo SMPP. Per ulteriori informazioni, consulta [Gestione degli errori SR](sms-protocol.md#sr-error-management) .
 
 Adobe Campaign è in grado di leggere l&#39;ID del messaggio nel campo opzionale `receipted_message_id` con alcune configurazioni.
 
@@ -230,7 +230,7 @@ Questa PDU riconosce che la connessione è attiva.
 
 ### SMS multiparte (SMS lungo) {#multipart}
 
-Gli SMS multiparte, o SMS lunghi, sono SMS inviati in più parti. A causa di limitazioni tecniche nel protocollo di rete mobile, un SMS non può essere più grande di 140 byte o dovrà essere diviso. Per ulteriori informazioni sul numero di caratteri che possono essere inclusi in un SMS, consulta la sezione [Codifica testo SMS](../../delivery/using/sms-protocol.md#sms-text-encoding) .
+Gli SMS multiparte, o SMS lunghi, sono SMS inviati in più parti. A causa di limitazioni tecniche nel protocollo di rete mobile, un SMS non può essere più grande di 140 byte o dovrà essere diviso. Per ulteriori informazioni sul numero di caratteri che possono essere inclusi in un SMS, consulta la sezione [Codifica testo SMS](sms-protocol.md#sms-text-encoding) .
 
 Ogni parte di un messaggio lungo è un singolo SMS. Queste parti viaggiano in modo indipendente sulla rete e sono assemblate dal telefono cellulare ricevente. Per gestire i nuovi tentativi e i problemi di connettività, Adobe Campaign invia queste parti in ordine inverso e richiede un SR solo nella prima parte del messaggio, l’ultima inviata. Poiché il telefono cellulare visualizza un messaggio solo quando viene ricevuta la sua prima parte, i nuovi tentativi su parti aggiuntive non produrranno duplicati sul telefono cellulare.
 
@@ -242,13 +242,13 @@ Ci sono 2 modi per inviare SMS lunghi:
 
 * **message_payload**: il modo per inviare l&#39;intero messaggio lungo in un solo  `SUBMIT_SM PDU`. Il provider dovrà dividerlo, il che significa che è impossibile per Adobe Campaign sapere esattamente quante parti sono state inviate. Alcuni fornitori richiedono questa modalità, ma consigliamo di utilizzarla solo se non supportano UDH.
 
-Per ulteriori informazioni sul protocollo e i formati, vedere la descrizione dei campi `esm_class`, `short_message` e `message_payload` della PDU [SUBMIT_SM](../../delivery/using/sms-protocol.md#information-pdu).
+Per ulteriori informazioni sul protocollo e i formati, vedere la descrizione dei campi `esm_class`, `short_message` e `message_payload` della PDU [SUBMIT_SM](sms-protocol.md#information-pdu).
 
-### Limite di velocità e finestre di Throughput {#throughput-capping}
+### Limitazione del carico e finestre {#throughput-capping}
 
-La maggior parte dei provider richiede un limite di throughput per ogni connessione SMPP. Questo può essere ottenuto impostando un numero di SMS nell’account esterno. Tieni presente che la limitazione della velocità effettiva avviene per connessione, il throughput effettivo totale corrisponde al limite per connessione moltiplicato per il numero totale di connessioni. Questo è descritto nella sezione [Connessioni simultanee](../../delivery/using/sms-protocol.md#connection-settings) .
+La maggior parte dei provider richiede un limite di throughput per ogni connessione SMPP. Questo può essere ottenuto impostando un numero di SMS nell’account esterno. Tieni presente che la limitazione della velocità effettiva avviene per connessione, il throughput effettivo totale corrisponde al limite per connessione moltiplicato per il numero totale di connessioni. Questo è descritto nella sezione [Connessioni simultanee](sms-protocol.md#connection-settings) .
 
-Per raggiungere il massimo throughput possibile, è necessario ottimizzare la finestra di invio massima. La finestra di invio è il numero di `SUBMIT_SM PDU`s che possono essere inviati senza attendere un `SUBMIT_SM_RESP`. Per ulteriori informazioni, consulta la sezione [Impostazione della finestra di invio](../../delivery/using/sms-protocol.md#throughput-timeouts) .
+Per raggiungere il massimo throughput possibile, è necessario ottimizzare la finestra di invio massima. La finestra di invio è il numero di `SUBMIT_SM PDU`s che possono essere inviati senza attendere un `SUBMIT_SM_RESP`. Per ulteriori informazioni, consulta la sezione [Impostazione della finestra di invio](sms-protocol.md#throughput-timeouts) .
 
 ### SR e gestione degli errori (&quot;Appendice B&quot;) {#sr-error-management}
 
@@ -354,20 +354,20 @@ La dimensione massima di un messaggio dipende dalla relativa codifica. Questa ta
 | Codifica | Codifica_dati normale | Dimensioni del messaggio (caratteri) | Dimensione della parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi richiedono 2 caratteri) |
-| Latino-1 | 1 | 140 | 134 | ISO-8859-1 |
+| Latino-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
-## Parametri account esterni SMPP {#SMPP-parameters-external}
+## Parametri dell’account esterno SMPP {#SMPP-parameters-external}
 
 Ogni implementazione del protocollo SMPP ha molte varianti. Per migliorare la compatibilità e l&#39;adattabilità, sono disponibili molte impostazioni per modificare il comportamento del connettore SMPP. Questa sezione descrive ogni parametro e i relativi effetti sul connettore.
 
-### Parametri generali e indirizzamento {#general-parameters-routing}
+### Parametri generali e ciclo di produzione {#general-parameters-routing}
 
 **Limita le istanze MTA per questo account**
 
 È possibile impostare un limite al numero di istanze MTA consentite per la connessione al provider SMPP. Se questa opzione è selezionata, è possibile specificare il numero massimo di MTA utilizzabili.
 
-Questa opzione consente un controllo più preciso del numero di connessioni, vedere [Connessioni simultanee](../../delivery/using/sms-protocol.md#connection-settings).
+Questa opzione consente un controllo più preciso del numero di connessioni, vedere [Connessioni simultanee](sms-protocol.md#connection-settings).
 
 Se imposti un valore maggiore del numero di MTA in esecuzione, tutti gli MTA verranno eseguiti normalmente: questa opzione è solo un limite e non può generare ulteriori MTA.
 
@@ -377,7 +377,7 @@ Se è necessario controllare con precisione il numero di connessioni, ad esempio
 
 #### Nome implementazione SMSC {#smsc-implementation-name}
 
-Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del provider. Contatta l’amministratore o il team di recapito per sapere cosa aggiungere in questo campo. Il ruolo di questo campo è descritto nella sezione [Gestione errori SR](../../delivery/using/sms-protocol.md#sr-error-management) .
+Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del provider. Contatta l’amministratore o il team di recapito per sapere cosa aggiungere in questo campo. Il ruolo di questo campo è descritto nella sezione [Gestione errori SR](sms-protocol.md#sr-error-management) .
 
 #### Server {#server}
 
@@ -415,7 +415,7 @@ Come suggerito in precedenza, il processo SMS di Adobe Campaign Classic apre pi�
 
 Se si impostano le risposte automatiche, il processo SMS aprirà coppie trasmettitore/ricevitore, aumentando il numero di connessioni del trasmettitore. Se non hai impostato alcuna risposta automatica, aprirà solo le connessioni del ricevitore.
 
-#### Abilita TLS su SMPP {#enable-TLS}
+#### Abilitare TLS su SMPP {#enable-TLS}
 
 Utilizza TLS per connetterti al provider. La connessione verrà crittografata. La connessione TLS è gestita dalla libreria OpenSSL : tutto ciò che è applicabile a OpenSSL è vero per questa connessione.
 
@@ -449,7 +449,7 @@ Se questa casella è deselezionata, la codifica del testo avrà esito negativo s
 
 Quando questa casella è selezionata, la codifica del testo tenterà di convertire la stringa in una versione approssimativa, anziché generare un errore. Se alcuni caratteri non hanno un equivalente nella codifica di destinazione, la codifica del testo non riuscirà.
 
-Per una spiegazione più generale del processo di codifica, vedi [Definire una mappatura specifica dell&#39;impostazione delle codifiche](../../delivery/using/sms-protocol.md#SMSC-specifics) .
+Per una spiegazione più generale del processo di codifica, vedi [Definire una mappatura specifica dell&#39;impostazione delle codifiche](sms-protocol.md#SMSC-specifics) .
 
 #### Archiviare MO in ingresso nel database {#incoming-mo-storing}
 
@@ -483,7 +483,7 @@ Indica il codice breve principale dell&#39;account. Se per questo account vengon
 
 * L&#39;impostazione di elenco Bloccati della funzione di risposta automatica invia solo all&#39;utente la quarantena per un codice breve specifico.
 
-#### Origine TON/NPI, TON/NPI di destinazione {#ton-npi}
+#### Origine TON/NPI, destinazione TON/NPI {#ton-npi}
 
 TON (Tipo di numero) e NPI (Indicatore del piano di numerazione) sono descritti nella sezione 5.2.5 della [specifica SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Questi valori devono essere impostati sulle esigenze del provider.
 
@@ -535,7 +535,7 @@ Quando la connessione TCP viene persa, il connettore attenderà questo numero di
 
 Timeout tra `SUBMIT_SM` e la corrispondente `SUBMIT_SM_RESP`. Se la `RESP` non viene ricevuta in tempo, il messaggio verrà considerato come non riuscito e verranno applicati i criteri di esecuzione di nuovi tentativi globali dell’MTA.
 
-#### Timeout binding {#bind-timeout}
+#### Timeout del binding {#bind-timeout}
 
 Timeout tra il tentativo di connessione TCP e la risposta `BIND_*_RESP`. Quando si verifica un timeout, la connessione viene chiusa dal connettore Adobe Campaign e attenderà Tempo prima di riconnettersi prima di riprovare.
 
@@ -549,7 +549,7 @@ Queste impostazioni sono impostazioni avanzate che adattano il connettore Adobe 
 
 **Definire una mappatura specifica delle codifiche**
 
-Per informazioni dettagliate sulla codifica del testo, consulta la sezione [Codifica testo SMS](../../delivery/using/sms-protocol.md#sms-text-encoding) .
+Per informazioni dettagliate sulla codifica del testo, consulta la sezione [Codifica testo SMS](sms-protocol.md#sms-text-encoding) .
 
 Questa impostazione consente di definire una mappatura di codifica personalizzata, diversa dalla specifica. Sarà possibile dichiarare un elenco di codifiche, insieme al relativo valore `data_coding`.
 
@@ -576,11 +576,11 @@ Se il messaggio non può essere codificato in GSM, verrà codificato in UCS-2 e 
 
 Se questa opzione è deselezionata, l’SMS lungo viene suddiviso dall’MTA e inviato in più `SUBMIT_SM PDU`s con UDH. Il messaggio sarà ricomposto dal cellulare in base ai dati UDH.
 
-Se questa opzione è selezionata, l’SMS lungo verrà inviato in una delle PDU SUBMIT_SM, inserendo il testo nel campo opzionale message_payload . Per ulteriori informazioni, consulta la [specifica SMPP](../../delivery/using/sms-protocol.md#ACS-SMPP-connector) .
+Se questa opzione è selezionata, l’SMS lungo verrà inviato in una delle PDU SUBMIT_SM, inserendo il testo nel campo opzionale message_payload . Per ulteriori informazioni, consulta la [specifica SMPP](sms-protocol.md#ACS-SMPP-connector) .
 
 Se questa funzione è abilitata, Adobe Campaign non sarà in grado di contare le parti SMS singolarmente: tutti i messaggi saranno conteggiati come inviati in una parte.
 
-#### Inviare il numero di telefono completo {#send-full-phone-number}
+#### Invia il numero di telefono completo {#send-full-phone-number}
 
 Quando questa casella di controllo non è selezionata, vengono inviate al provider solo le cifre del numero di telefono (`destination_addr` del campo `SUBMIT_SM` ). Questo è il comportamento predefinito, in quanto l’indicatore del numero internazionale, solitamente un prefisso +, viene sostituito dai campi TON e NPI in SMPP.
 
@@ -588,7 +588,7 @@ Quando la casella di controllo è selezionata, il numero di telefono viene invia
 
 Questa funzione ha anche un effetto sul comportamento della funzione di elenco Bloccati di risposta automatica: se la casella di controllo non è selezionata, ai numeri di telefono inseriti nella tabella di quarantena verrà aggiunto un prefisso + per compensare la rimozione del prefisso + dal numero di telefono da parte del protocollo SMPP stesso.
 
-#### Ignora il controllo del certificato TLS {#skip-tls}
+#### Ignora controllo certificato TLS {#skip-tls}
 
 Quando TLS è abilitato, salta tutti i controlli sui certificati.
 
@@ -602,13 +602,13 @@ Per la convalida del certificato è possibile scegliere tra tre valori diversi:
 * Ignora la verifica del nome host.
 * Ignora la verifica del certificato.
 
-#### Associazione TON/NPI {#bind-ton-npi}
+#### Bind TON/NPI {#bind-ton-npi}
 
 TON (Tipo di numero) e NPI (Indicatore del piano di numerazione) descritti nella sezione 5.2.5 della [specifica SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Questi valori devono essere impostati in base alle esigenze del provider.
 
 Vengono trasmesse così come sono nei campi `addr_ton` e `addr_npi` della PDU BIND.
 
-#### Intervallo di indirizzi {#address-range}
+#### Intervallo indirizzi {#address-range}
 
 Inviato come nel campo address_range della PDU BIND. Questo valore deve essere impostato su qualsiasi esigenza del provider.
 
@@ -638,9 +638,9 @@ Impostando questo campo su 0 si disabilita il meccanismo in cui viene sempre res
 
 Impostando questo campo su 1, il connettore risponde sempre &quot;OK&quot; anche se l’ID non è valido. Questo valore deve essere impostato su 1 solo sotto controllo, per la risoluzione dei problemi e per il periodo minimo di tempo, ad esempio per recuperare da un problema sul lato del fornitore.
 
-#### Regex di estrazione dell&#39;ID nell&#39;SR {#regex-extraction}
+#### Regex di estrazione dell’ID nell’SR {#regex-extraction}
 
-Il formato SR non è rigorosamente applicato dalla specifica del protocollo SMPP. Si tratta solo di una raccomandazione descritta nell&#39; [Appendice B](../../delivery/using/sms-protocol.md#sr-error-management) (pagina 167) della specifica. Alcuni implementatori SMPP formattano questo campo in modo diverso, pertanto Adobe Campaign ha bisogno di un modo per estrarre il campo corretto.
+Il formato SR non è rigorosamente applicato dalla specifica del protocollo SMPP. Si tratta solo di una raccomandazione descritta nell&#39; [Appendice B](sms-protocol.md#sr-error-management) (pagina 167) della specifica. Alcuni implementatori SMPP formattano questo campo in modo diverso, pertanto Adobe Campaign ha bisogno di un modo per estrarre il campo corretto.
 
 Per impostazione predefinita, acquisisce fino a 10 caratteri alfanumerici dopo `id:`.
 
@@ -654,9 +654,9 @@ L&#39;assenza di un contesto sufficiente nel regex può introdurre un piccolo di
 
 Quando si incontrano messaggi con una combinazione di campi stat/err sconosciuta, questi regex vengono applicati sul campo stat per determinare se l’SR è stato un successo o un errore. L’SR con valori stat che non corrispondono a nessuno di questi regex viene ignorato.
 
-Per impostazione predefinita, i valori stat che iniziano con `DELIV`, ad esempio `DELIVRD` nell&#39; [Appendice B](../../delivery/using/sms-protocol.md#sr-error-management) sarà considerato come consegnato con successo e tutti i valori stat che corrispondono a errori, ad esempio `REJECTED`, `UNDELIV` sono considerati errori.
+Per impostazione predefinita, i valori stat che iniziano con `DELIV`, ad esempio `DELIVRD` nell&#39; [Appendice B](sms-protocol.md#sr-error-management) sarà considerato come consegnato con successo e tutti i valori stat che corrispondono a errori, ad esempio `REJECTED`, `UNDELIV` sono considerati errori.
 
-#### Formato ID nella conferma MT {#id-format-mt}
+#### Formato ID nella convalida MT {#id-format-mt}
 
 Indica il formato dell&#39;ID restituito nel campo `message_id` di `SUBMIT_SM_RESP PDU`.
 
@@ -702,7 +702,7 @@ Per acquisire questo valore, ora puoi impostare il seguente regex nel regex di e
 
 Se questa opzione è selezionata, il campo **Testo** viene mantenuto durante l&#39;elaborazione del testo di stato dell&#39;SR.
 
-Questa opzione è utile se il provider inserisce dati importanti in questo campo, come l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
+Questa opzione è utile se il provider inserisce dati importanti in questo campo, ad esempio l’ID o lo stato . Di solito questo campo può essere ignorato in modo sicuro, poiché potrebbe contenere testo con una codifica non ASCII e interrompere l’elaborazione regex.
 
 Se abiliti questa opzione, potresti riscontrare un difetto di sicurezza molto piccolo se il `Extraction` regex dell’ID nel campo SR non è sufficientemente specifico. Il contenuto del campo **Testo** può essere analizzato come ID e un autore di attacchi può usarlo per inserire ID falsi, il che può portare a una situazione di rifiuto parziale del servizio.
 
@@ -738,7 +738,7 @@ Tutte le voci nella tabella vengono elaborate nell’ordine specificato, fino a 
 
 Alcuni parametri possono essere impostati per modello di consegna.
 
-### Dal campo {#from-field}
+### Campo Da {#from-field}
 
 Questo campo è facoltativo. Consente di ignorare l’indirizzo del mittente (oADC). Il contenuto di questo campo viene inserito nel campo `source_addr` del percorso `SUBMIT_SM PDU`.
 
@@ -814,7 +814,7 @@ Ogni elemento figlio MTA crea una quantità configurabile di connessioni, pertan
 
 Questa lista di controllo fornisce un elenco degli elementi da controllare prima di essere live. Una configurazione incompleta può causare molti problemi.
 
-### Verifica conflitti account esterni {#external-account-conflict}
+### Verifica conflitti di account esterni {#external-account-conflict}
 
 Verifica di non disporre di vecchi account esterni SMS. Se l&#39;account di test viene disattivato, correte il rischio che venga riabilitato nel sistema di produzione e generato potenziali conflitti.
 
@@ -852,7 +852,7 @@ Questo passaggio è necessario quando ci si connette a un provider che non era c
 
 Verifica che `BIND_* PDUs` sia inviato correttamente. La cosa più importante da verificare è che il provider restituisce sempre con successo `BIND_*_RESP PDUs` (command_status = 0).
 
-Verifica che non siano presenti troppi `BIND_* PDU`s. Se ce ne sono troppi, potrebbe indicare che la connessione è instabile. Per ulteriori informazioni, consulta la sezione [Problemi con connessioni instabili](../../delivery/using/sms-protocol.md#issues-unstable-connection) .
+Verifica che non siano presenti troppi `BIND_* PDU`s. Se ce ne sono troppi, potrebbe indicare che la connessione è instabile. Per ulteriori informazioni, consulta la sezione [Problemi con connessioni instabili](sms-protocol.md#issues-unstable-connection) .
 
 #### INQUIRE_LINK {#enquire-link-pdus}
 
@@ -889,6 +889,6 @@ Con il `DELIVER_SM_RESP PDU`:
 
 Anche se l’SMS ha esito positivo, contatta il provider per vedere se tutto è in ordine.
 
-### Disabilita tracce SMPP dettagliate {#disable-verbose}
+### Disattiva tracce SMPP dettagliate {#disable-verbose}
 
 Una volta completati tutti i controlli, l&#39;ultima cosa è **Disabilita tracce SMPP dettagliate** per non generare troppi log. Puoi riabilitarli per la risoluzione dei problemi anche sui sistemi di produzione.
