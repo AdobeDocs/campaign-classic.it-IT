@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -79,9 +79,9 @@ Per scegliere il connettore da utilizzare, effettua le seguenti operazioni:
 
    ![](assets/nmac_service_2.png)
 
-1. Crea la tua applicazione Android. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/configuring-the-mobile-application-android.md#creating-android-app).
+1. Crea la tua applicazione Android. Per ulteriori informazioni al riguardo, consulta [questa sezione](configuring-the-mobile-application-android.md#creating-android-app).
 
-## Creare l&#39;applicazione mobile Android {#creating-android-app}
+## Creare l’app mobile Android {#creating-android-app}
 
 Dopo aver creato il servizio, è ora necessario creare l&#39;applicazione Android:
 
@@ -93,7 +93,7 @@ Dopo aver creato il servizio, è ora necessario creare l&#39;applicazione Androi
 
    ![](assets/nmac_android.png)
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. Per ulteriori informazioni al riguardo, consulta [questa sezione](integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -111,10 +111,10 @@ Per impostazione predefinita, Adobe Campaign salva una chiave nel campo **[!UICO
 
 Dopo aver creato un servizio e una nuova app mobile, devi configurare la tua app mobile in base alla versione API selezionata.
 
-* **La** configurazione HTTP v1 è descritta in  [questa sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
-* **La configurazione HTTP (legacy)** è descritta in  [questa sezione](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
+* **La** configurazione HTTP v1 è descritta in  [questa sezione](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **La configurazione HTTP (legacy)** è descritta in  [questa sezione](configuring-the-mobile-application-android.md#android-service-http).
 
-#### Configura l&#39;API HTTP v1{#android-service-httpv1}
+#### Configurare l’API HTTP v1{#android-service-httpv1}
 
 Per configurare la versione dell’API HTTP v1, segui i passaggi seguenti:
 
@@ -151,7 +151,7 @@ Di seguito sono riportati i nomi dei payload FCM per personalizzare ulteriorment
 <br>
 <br>
 
-#### Configura l&#39;API HTTP (legacy){#android-service-http}
+#### Configurare l’API HTTP (legacy){#android-service-http}
 
 Per configurare la versione dell’API HTTP (legacy), segui la procedura seguente:
 
@@ -176,7 +176,7 @@ Di seguito sono riportati i nomi dei payload FCM per personalizzare ulteriorment
 
 <br>
 
-## Estendi lo schema appsubscriptionRcp {#extend-subscription-schema}
+## Estendere lo schema appsubscriptionRcp {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri come estendere lo schema appsubscriptionRcp nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
@@ -188,4 +188,4 @@ Di seguito sono riportati i nomi dei payload FCM per personalizzare ulteriorment
 
    >[!CAUTION]
    >
-   >Assicurati che i nomi di configurazione nella scheda **[!UICONTROL Subscription parameters]** siano gli stessi nel codice dell&#39;applicazione mobile. Fai riferimento a [questa sezione](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+   >Assicurati che i nomi di configurazione nella scheda **[!UICONTROL Subscription parameters]** siano gli stessi nel codice dell&#39;applicazione mobile. Fai riferimento a [questa sezione](integrating-campaign-sdk-into-the-mobile-application.md).
