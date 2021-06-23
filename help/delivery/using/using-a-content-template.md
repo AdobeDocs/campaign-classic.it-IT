@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Puoi fare riferimento ai modelli di contenuto e utilizzarli direttamente nelle c
 
 Possono anche essere utilizzati per creare istanze di contenuto. Una volta create, queste istanze sono pronte per essere distribuite (consulta [Consegna di un&#39;istanza di contenuto](#delivering-a-content-instance)) o esportate (consulta [Creazione di un&#39;istanza di contenuto](#creating-a-content-instance)).
 
-## Creazione di una consegna tramite gestione dei contenuti {#creating-a-delivery-via-content-management}
+## Creazione di una consegna tramite la gestione dei contenuti {#creating-a-delivery-via-content-management}
 
 È possibile fare riferimento a un modello di contenuto in una consegna per utilizzare i campi di input per immettere il contenuto. Nella procedura guidata di consegna viene aggiunta una scheda aggiuntiva per la definizione del contenuto della consegna.
 
@@ -31,9 +31,9 @@ Il layout viene applicato automaticamente in base alle impostazioni selezionate.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Per ulteriori informazioni, consulta l’esempio di implementazione completo: [Creazione di contenuto nella procedura guidata di consegna](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Per ulteriori informazioni, consulta l’esempio di implementazione completo: [Creazione di contenuto nella procedura guidata di consegna](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
-## Creazione di un&#39;istanza di contenuto {#creating-a-content-instance}
+## Creazione di un’istanza di contenuto {#creating-a-content-instance}
 
 Puoi creare contenuti direttamente nella struttura di Adobe Campaign da utilizzare nei flussi di lavoro, esportarli o inserirli direttamente nelle nuove consegne.
 
@@ -69,13 +69,13 @@ Applica i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Puoi autorizzare la generazione di contenuti non approvati. A questo scopo, modifica l’opzione pertinente nel modello di pubblicazione. Per ulteriori informazioni, consulta [Creazione e configurazione del modello](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
+   >Puoi autorizzare la generazione di contenuti non approvati. A questo scopo, modifica l’opzione pertinente nel modello di pubblicazione. Per ulteriori informazioni, consulta [Creazione e configurazione del modello](publication-templates.md#creating-and-configuring-the-template).
 
    I contenuti HTML e testo vengono generati per impostazione predefinita nella cartella **publishing** dell’istanza Adobe Campaign. È possibile modificare la cartella della pubblicazione tramite l&#39;opzione **NcmPublishingDir** .
 
-## Distribuzione di un&#39;istanza di contenuto {#delivering-a-content-instance}
+## Distribuzione di un’istanza di contenuto {#delivering-a-content-instance}
 
-Per creare un’istanza di contenuto e consegnarla, è necessario collegare un modello di consegna al modello di pubblicazione utilizzato per generare il contenuto. Per ulteriori informazioni, consulta [Consegna](../../delivery/using/publication-templates.md#delivery).
+Per creare un’istanza di contenuto e consegnarla, è necessario collegare un modello di consegna al modello di pubblicazione utilizzato per generare il contenuto. Per ulteriori informazioni, consulta [Consegna](publication-templates.md#delivery).
 
 Inoltre, la cartella di archiviazione dei contenuti deve essere dedicata ai contenuti estratti da questo modello di pubblicazione (quando una cartella di contenuto consente di generare diversi tipi di contenuto, le consegne non possono essere create automaticamente).
 
