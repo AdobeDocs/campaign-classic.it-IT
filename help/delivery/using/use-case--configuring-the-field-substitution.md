@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -32,13 +32,13 @@ Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 
 ## Creazione di una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti in dettaglio nella sezione [Creazione di una consegna e-mail](../../delivery/using/creating-an-email-delivery.md) .
+I passaggi per la creazione di una consegna sono descritti in dettaglio nella sezione [Creazione di una consegna e-mail](creating-an-email-delivery.md) .
 
 In questo esempio, il gestore consegne ha creato la newsletter.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Modifica dello schema di dati degli indirizzi di seed {#editing-the-seed-addresses-data-schema}
+## Modifica dello schema dati degli indirizzi di seed {#editing-the-seed-addresses-data-schema}
 
 Le istruzioni su come modificare uno schema di dati sono descritte in dettaglio nella sezione .
 
@@ -51,7 +51,7 @@ In questo esempio, lo schema dati degli indirizzi di seed prende un valore creat
 
 Questa enumerazione consente all’utente di specificare il genere letterario preferito dei propri client.
 
-Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi di seed **Modulo di input**, è necessario aggiornarla. Consulta la sezione [Aggiornamento del modulo di input](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) .
+Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi di seed **Modulo di input**, è necessario aggiornarla. Consulta la sezione [Aggiornamento del modulo di input](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) .
 
 ## Configurazione della personalizzazione {#configuring-personalization}
 
@@ -61,7 +61,7 @@ Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi d
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configura l’elenco di consegna e gli indirizzi di seed. Fare riferimento a [Identificazione delle popolazioni target](../../delivery/using/steps-defining-the-target-population.md).
+1. Configura l’elenco di consegna e gli indirizzi di seed. Fare riferimento a [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
    In questo esempio, l&#39;utente seleziona gli utenti il cui **genere letterario preferito** è Sci-Fi come popolazione target principale.
 
@@ -73,7 +73,7 @@ Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi d
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul collegamento **[!UICONTROL Edit the dynamic condition...]**, consulta [Caso di utilizzo: selezione degli indirizzi di seed in criteria](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Per ulteriori informazioni sul collegamento **[!UICONTROL Edit the dynamic condition...]**, consulta [Caso di utilizzo: selezione degli indirizzi di seed in criteria](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Fai clic sulla scheda **[!UICONTROL Preview]** , quindi seleziona un indirizzo di seed per testare la personalizzazione.
 
