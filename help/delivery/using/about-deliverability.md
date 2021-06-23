@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 9%
@@ -40,15 +40,15 @@ Il tasso di recapito messaggi è il numero di messaggi che hanno colpito le case
 Con Adobe Campaign, il tasso di consegna dipende da numerosi fattori, in particolare:
 
 * Configurazione corretta delle istanze: contatta il tuo rappresentante Adobe per assistenza.
-* Configurazione di rete legittima: consulta [questa sezione](../../delivery/using/optimize-delivery.md#network-config) e [Configurazione e strategia del dominio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* Configurazione di rete legittima: consulta [questa sezione](optimize-delivery.md#network-config) e [Configurazione e strategia del dominio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
 * La reputazione del tuo indirizzo IP: consulta [Strategia IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
-* Qualità degli indirizzi interessati: consulta [Gestione della quarantena](../../delivery/using/optimize-delivery.md#quarantine-management).
+* Qualità degli indirizzi interessati: consulta [Gestione della quarantena](optimize-delivery.md#quarantine-management).
 * Percentuali basse [reclami](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) e [mancate consegne](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
-* Contenuto del messaggio: consulta [Controllo del contenuto delle e-mail](../../delivery/using/control-message-content.md).
+* Contenuto del messaggio: consulta [Controllo del contenuto delle e-mail](control-message-content.md).
 * Autenticazione dei messaggi (SPF, DKIM, DMARC): vedere [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 * reputazione del mittente: per scoprire come gli ISP principali valutano la reputazione di un mittente, consulta [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
-## Strumenti di consegna campagna {#deliverability-tools}
+## Strumenti per il recapito messaggi di Campaign {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
 Adobe Campaign fornisce diversi strumenti per monitorare e migliorare le prestazioni di recapito messaggi della piattaforma. Questa pagina evidenzia anche i principi principali che dovresti tenere a mente per ottimizzare il recapito messaggi durante l’utilizzo di Campaign.
@@ -57,10 +57,10 @@ Adobe Campaign fornisce diversi strumenti per monitorare e migliorare le prestaz
 
 Durante la configurazione, la progettazione e il test del messaggio, assicurati di seguire le best practice menzionate nelle sezioni elencate di seguito. L’utilizzo di tutte le funzioni fornite da Adobe Campaign consente di migliorare il recapito messaggi.
 
-* [Best practice per la consegna](../../delivery/using/delivery-best-practices.md)
-* [Controllo di contenuti e-mail](../../delivery/using/control-message-content.md)
-* [Rendering della casella in entrata](../../delivery/using/inbox-rendering.md)
-* [Invio di una prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [Best practice per la consegna](delivery-best-practices.md)
+* [Controllo dei contenuti dell’e-mail](control-message-content.md)
+* [Rendering della casella in entrata](inbox-rendering.md)
+* [Invio di una prova](steps-validating-the-delivery.md#sending-a-proof)
 
 ### Verifica il consenso tramite doppio consenso {#double-opt-in}
 
@@ -80,9 +80,9 @@ Alcuni provider di accesso a Internet considerano automaticamente le e-mail come
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
-* [Informazioni sulla gestione della quarantena](../../delivery/using/understanding-quarantine-management.md)
-* [Quarantena rispetto elenco Bloccati](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
+* [Quarantena rispetto elenco Bloccati](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Utilizzare strumenti di monitoraggio e reporting
 
@@ -92,8 +92,8 @@ Adobe Campaign ti consente di verificare le prestazioni delle consegne tramite u
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Monitoraggio del recapito messaggi](../../delivery/using/monitoring-deliverability.md)
-* [Informazioni sul monitoraggio delle consegne](../../delivery/using/about-delivery-monitoring.md)
+* [Monitoraggio del recapito messaggi](monitoring-deliverability.md)
+* [Informazioni sul monitoraggio delle consegne](about-delivery-monitoring.md)
 * [Informazioni sui report incorporati di Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
