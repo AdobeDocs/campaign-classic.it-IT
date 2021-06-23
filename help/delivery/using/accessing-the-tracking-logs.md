@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 17%
@@ -27,4 +27,4 @@ Queste informazioni vengono visualizzate nella scheda **[!UICONTROL Tracking]** 
 
 >[!NOTE]
 >
->Se non è possibile visualizzare la scheda **[!UICONTROL Tracking]** di una consegna, significa che il tracciamento non è stato attivato. Fai riferimento a [questa sezione](../../delivery/using/how-to-configure-tracked-links.md).
+>Se non è possibile visualizzare la scheda **[!UICONTROL Tracking]** di una consegna, significa che il tracciamento non è stato attivato. Fai riferimento a [questa sezione](how-to-configure-tracked-links.md).
