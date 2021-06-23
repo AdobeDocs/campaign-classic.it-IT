@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -364,7 +364,7 @@ Questo esempio include i seguenti passaggi:
 
 1. Puoi quindi utilizzare questo modello di contenuto nelle consegne.
 
-   Per ulteriori informazioni, consulta [Utilizzo di un modello di contenuto](../../delivery/using/using-a-content-template.md).
+   Per ulteriori informazioni, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).
 
 ## Schede di stile XSL {#xsl-stylesheets}
 
@@ -513,7 +513,7 @@ Per generare un’anteprima del documento di output in qualsiasi momento, selezi
 
 ## Gestione delle immagini {#image-management}
 
-### Immagine che fa riferimento a {#image-referencing}
+### Riferimento immagine {#image-referencing}
 
 È possibile fare riferimento alle immagini inserite nel documento di output HTML con riferimenti assoluti o relativi.
 
@@ -538,7 +538,7 @@ Esempio di utilizzo dell’opzione di posizionamento dell’immagine e del relat
 >
 >Si consiglia di dichiarare una variabile contenente il riferimento del server in cui vengono memorizzate le immagini (&quot;resPath&quot; nel nostro esempio).
 
-### Utilizzo di risorse pubbliche {#using-public-resources}
+### Utilizzo delle risorse pubbliche {#using-public-resources}
 
 È inoltre possibile utilizzare **[!UICONTROL Public resources]** per dichiarare le immagini e caricarle sul server a seconda delle impostazioni di istanza immesse nella procedura guidata di distribuzione.
 
@@ -562,7 +562,7 @@ Nel modulo, il campo per la selezione dell’immagine verrà aggiunto tramite la
 >
 >Per ulteriori informazioni su **[!UICONTROL Public resources]** e su come configurarli e utilizzarli, consulta [questa sezione](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-## Visualizzazione della data {#date-display}
+## Visualizzazione data {#date-display}
 
 Nel documento di input XML, le date sono memorizzate nel formato XML interno: **AAAA/MM/GG HH:MM:SS** (esempio 2018/10/01 12:23:30).
 
