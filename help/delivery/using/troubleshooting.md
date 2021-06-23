@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
@@ -28,4 +28,4 @@ Connettore HTTP/2: è necessario consentire la comunicazione da e verso i server
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, consulta [Configurazione dell’app mobile in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+>Per ulteriori informazioni sui due connettori, consulta [Configurazione dell’app mobile in Adobe Campaign](configuring-the-mobile-application.md).
