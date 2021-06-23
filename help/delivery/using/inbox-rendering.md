@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -27,9 +27,9 @@ I client per dispositivi mobili, di messaggistica e di posta sul web disponibili
 
 >[!NOTE]
 >
->Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere controllata con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [bozze](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere controllata con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [bozze](steps-validating-the-delivery.md#sending-a-proof).
 
-## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
+## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
 Per i client in hosting e ibridi, il rendering della casella in entrata è configurato sulla tua istanza da parte del supporto tecnico e dei consulenti Adobe. Per ulteriori informazioni, contatta il tuo Adobe Account Executive.
 
@@ -97,14 +97,14 @@ In genere, la funzione di rendering della casella in entrata viene utilizzata pe
 
 Dopo aver creato la consegna e-mail e averne definito il contenuto e la popolazione target, effettua le seguenti operazioni.
 
-Per ulteriori informazioni sulla creazione, la progettazione e il targeting di una consegna, consulta [questa sezione](../../delivery/using/about-email-channel.md).
+Per ulteriori informazioni sulla creazione, la progettazione e il targeting di una consegna, consulta [questa sezione](about-email-channel.md).
 
 1. Nella barra superiore della consegna, fai clic sul pulsante **[!UICONTROL Inbox rendering]** .
 1. Selezionare **[!UICONTROL Analyze]** per avviare il processo di acquisizione.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Viene inviata una prova. Le miniature di rendering sono accessibili in tale bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio delle bozze, consulta [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Viene inviata una prova. Le miniature di rendering sono accessibili in tale bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio delle bozze, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Dopo l’invio, la bozza viene visualizzata nell’elenco di consegna. Fai doppio clic su di esso.
 
