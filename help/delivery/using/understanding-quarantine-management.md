@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 15%
@@ -29,9 +29,9 @@ I profili con indirizzi e-mail o numeri di telefono in quarantena vengono automa
 
 Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena ti consente quindi di evitare di essere aggiunta al elenco Bloccati da questi provider.
 
-Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](../../delivery/using/delivery-best-practices.md) .
+Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne. Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](delivery-best-practices.md) .
 
-### Quarantena rispetto a elenco Bloccati {#quarantine-vs-denylist}
+### Quarantena rispetto elenco Bloccati {#quarantine-vs-denylist}
 
 La **quarantena** si applica solo a un indirizzo, non a tutto il profilo. Ciò significa che se due profili hanno lo stesso indirizzo e-mail, vengono entrambi coinvolti se l’indirizzo viene messo in quarantena.
 
@@ -49,7 +49,7 @@ Il fatto di essere sul **elenco Bloccati**, d&#39;altra parte, fa sì che il pro
 
 ### Identificazione di indirizzi messi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
 
-Gli indirizzi messi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (consulta [Log di consegna e cronologia](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)).
+Gli indirizzi messi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (consulta [Log di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### Identificazione degli indirizzi messi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
 
@@ -90,7 +90,7 @@ Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A quest
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Rimozione di un indirizzo in quarantena {#removing-a-quarantined-address}
+### Rimozione di un indirizzo messo in quarantena {#removing-a-quarantined-address}
 
 Se necessario, è possibile rimuovere manualmente un indirizzo dall’elenco di quarantena. Inoltre, gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall’elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** .
 
@@ -117,7 +117,7 @@ I destinatari con un indirizzo in uno stato **[!UICONTROL Quarantine]** o **[!UI
 
 ## Condizioni per la messa in quarantena di un indirizzo {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (consulta [Qualificazione di mail non recapitate](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) e [Tipi e motivi di consegna non riuscita](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)) e [Tipi e motivi di consegna non riuscita](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Errore ignorato**: gli errori ignorati non mettono un indirizzo in quarantena.
 * **Errore rigido**: l’indirizzo e-mail corrispondente viene messo immediatamente in quarantena.
@@ -135,7 +135,7 @@ Al contrario degli errori rigidi, gli errori morbidi non mettono immediatamente 
 
 * Quando il contatore degli errori raggiunge la soglia limite, l’indirizzo viene messo in quarantena.
 * Nella configurazione predefinita, la soglia è impostata a cinque errori, dove due errori sono significativi se si verificano almeno a 24 ore di distanza. L’indirizzo viene messo in quarantena al quinto errore.
-* È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+* È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Il contatore degli errori viene reinizializzato se l’ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo cambia in **Valido** e viene eliminato dall&#39;elenco delle quarantene dal flusso di lavoro **Database cleanup**.
 
@@ -525,14 +525,14 @@ La tabella **[!UICONTROL Delivery log qualification]** non si applica al connett
 
 **Per il connettore SMPP generico esteso**
 
-Quando si utilizza il protocollo SMPP per inviare messaggi SMS, la gestione degli errori viene gestita in modo diverso. Per ulteriori informazioni sul connettore SMPP generico esteso, consulta [questa pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Quando si utilizza il protocollo SMPP per inviare messaggi SMS, la gestione degli errori viene gestita in modo diverso. Per ulteriori informazioni sul connettore SMPP generico esteso, consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
 Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito utilizzando espressioni regolari (regexes) per filtrare il contenuto. Questi dati vengono quindi confrontati con le informazioni presenti nella tabella **[!UICONTROL Delivery log qualification]** (disponibile tramite il menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** ).
 
 Prima che un nuovo tipo di errore sia qualificato, il motivo dell’errore è sempre impostato su **Rifiutato** per impostazione predefinita.
 
 >[!NOTE]
-I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Consulta [Tipi e motivi di errori di consegna](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Consulta [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Chiedi al tuo provider di un elenco di stati e codici di errore per impostare i tipi di errori e i motivi corretti per un errore nella tabella di qualificazione del registro di consegna.
 
 Esempio di messaggio generato:
@@ -542,13 +542,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Tutti i messaggi di errore iniziano con **SR** per distinguere i codici di errore SMS dai codici di errore e-mail.
-* La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell’implementazione SMSC, come definito nel campo **[!UICONTROL SMSC implementation name]** dell’account esterno SMS. Consulta [questa pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+* La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell’implementazione SMSC, come definito nel campo **[!UICONTROL SMSC implementation name]** dell’account esterno SMS. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    Poiché lo stesso codice di errore può avere un significato diverso per ogni provider, questo campo ti consente di sapere quale provider ha generato il codice di errore. Puoi quindi trovare l’errore nella documentazione del provider pertinente.
 
 * La terza parte (**DELIVRD** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dall’SR utilizzando il regex di estrazione dello stato definito nell’account esterno SMS.
 
-   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -556,10 +556,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * La quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dall’SR utilizzando il regex di estrazione del codice di errore definito nell’account esterno SMS.
 
-   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    Per impostazione predefinita, il regex estrae il campo **err:** come definito dalla sezione **Appendice B** della specifica **SMPP 3.4**.
 
-* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nella colonna **[!UICONTROL First text]** della tabella **[!UICONTROL Delivery log qualification]**. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di avere più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione di mail non recapitate](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
+* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nella colonna **[!UICONTROL First text]** della tabella **[!UICONTROL Delivery log qualification]**. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di avere più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification).
 
 Il connettore SMPP generico esteso applica un euristico per trovare valori predefiniti ragionevoli: se lo stato inizia con **DELIV**, viene considerato un successo perché corrisponde agli stati comuni **DELIVRD** o **DELIVERED** utilizzati dalla maggior parte dei provider. Qualsiasi altro stato causa un errore grave.
