@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Creare notifiche per iOS{#create-notifications-ios}
 
-Questa sezione descrive gli elementi specifici per la consegna delle notifiche iOS. I concetti globali sulla creazione della consegna sono descritti in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+Questa sezione descrive gli elementi specifici per la consegna delle notifiche iOS. I concetti globali sulla creazione della consegna sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 
 Inizia creando una nuova consegna.
 
@@ -37,7 +37,7 @@ Per creare una notifica push per dispositivi iOS, segui i passaggi seguenti:
    >
    >Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione, consulta [questa sezione](about-personalization.md).
    >
-   >Per ulteriori informazioni sull&#39;inclusione di un elenco di seed, consulta [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md).
+   >Per ulteriori informazioni sull&#39;inclusione di un elenco di seed, consulta [Informazioni sugli indirizzi di seed](about-seed-addresses.md).
 
 1. Seleziona **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**, seleziona il servizio pertinente alla tua app mobile (in questo caso Neotrips), quindi seleziona la versione iOS dell&#39;applicazione.
 
@@ -63,7 +63,7 @@ Per creare una notifica push per dispositivi iOS, segui i passaggi seguenti:
    >
    >**[!UICONTROL Badge]** le notifiche di  **[!UICONTROL Alert and badge]** tipo e ti consentono di modificare il valore del badge (il numero sopra il logo dell’app mobile). Per aggiornare il badge, è sufficiente immettere 0 come valore. Se il campo è vuoto, il valore del badge non viene modificato.
 
-1. Fai clic sull’icona **[!UICONTROL Insert emoticon]** per inserire gli emoticon nella notifica push. Per personalizzare l’elenco degli emoticon, consulta [questa sezione](../../delivery/using/customizing-emoticon-list.md)
+1. Fai clic sull’icona **[!UICONTROL Insert emoticon]** per inserire gli emoticon nella notifica push. Per personalizzare l’elenco degli emoticon, consulta [questa sezione](customizing-emoticon-list.md)
 
 1. Il **[!UICONTROL Action button]** ti consente di definire un’etichetta per il pulsante di azione visualizzato nel campo notifiche di avviso (**action_loc_key** del payload). Se l&#39;applicazione iOS gestisce stringhe localizzabili (**Localizable.strings**), immetti la chiave corrispondente in questo campo. Se l&#39;applicazione non gestisce il testo localizzabile, immettere l&#39;etichetta che si desidera visualizzare sul pulsante dell&#39;azione. Per ulteriori informazioni sulle stringhe localizzabili, consulta la [documentazione Apple](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. Nel campo **[!UICONTROL Play a sound]** , seleziona il suono che deve essere riprodotto dal terminale mobile quando viene ricevuta la notifica.
@@ -92,9 +92,9 @@ Per inviare una bozza e la consegna finale, utilizza lo stesso processo delle co
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
-* [quarantene di notifiche push](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Monitoraggio di una consegna](../../delivery/using/about-delivery-monitoring.md)
-* [Informazioni sugli errori di consegna](../../delivery/using/understanding-delivery-failures.md)
+* [quarantene di notifiche push](understanding-quarantine-management.md#push-notification-quarantines)
+* [Monitoraggio di una consegna](about-delivery-monitoring.md)
+* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
 
 
 ## Creare una notifica potenziata iOS {#creating-ios-delivery}
