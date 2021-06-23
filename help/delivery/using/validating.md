@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Convalida{#validating}
 
-I concetti globali durante la convalida di una consegna sono descritti in [questa sezione](../../delivery/using/steps-validating-the-delivery.md).
+I concetti globali durante la convalida di una consegna sono descritti in [questa sezione](steps-validating-the-delivery.md).
 
-Il file di output di una consegna direct mailing viene generato durante l’analisi della consegna. Il contenuto del file dipende dalle colonne di output selezionate (fare riferimento a [File di estrazione](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)).
+Il file di output di una consegna direct mailing viene generato durante l’analisi della consegna. Il contenuto del file dipende dalle colonne di output selezionate (fare riferimento a [File di estrazione](defining-the-direct-mail-content.md#extraction-file)).
 
 >[!NOTE]
 >
->La fase di analisi è descritta in [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+>La fase di analisi è descritta in [Analisi della consegna](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante la fase di analisi, il file viene generato ma le informazioni relative ai destinatari (ad esempio i registri di consegna) non vengono aggiornate. È quindi possibile annullare il processo senza correre rischi.
 
