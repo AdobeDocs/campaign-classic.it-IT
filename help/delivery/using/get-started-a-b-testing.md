@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Nell’esempio seguente, il target di consegna è stato suddiviso in due gruppi,
 
 ![](assets/a-b-testing-schema.png)
 
-Con Campaign Classic, i test A/B vengono implementati tramite flussi di lavoro, in cui è possibile specificare il gruppo di destinazione e i gruppi che riceveranno ogni variante (consulta [Configurazione dei test a/b](../../delivery/using/configuring-a-b-testing.md)).
+Con Campaign Classic, i test A/B vengono implementati tramite flussi di lavoro, in cui è possibile specificare il gruppo di destinazione e i gruppi che riceveranno ogni variante (consulta [Configurazione dei test a/b](configuring-a-b-testing.md)).
 
 Le fasi principali sono:
 
@@ -37,4 +37,4 @@ Le fasi principali sono:
 
 >[!NOTE]
 >
->I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questo [caso d’uso ](../../delivery/using/a-b-testing-use-case.md) dedicato.
+>I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questo [caso d’uso ](a-b-testing-use-case.md) dedicato.
