@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Sono disponibili le seguenti opzioni di pubblicazione:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla generazione dei contenuti, consulta [Creazione di un’istanza di contenuto](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
+   >Per ulteriori informazioni sulla generazione dei contenuti, consulta [Creazione di un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
 
 ### Consegna {#delivery}
 
@@ -95,7 +95,7 @@ Questa scheda ti consente di selezionare uno scenario per avviare una consegna d
 
 >[!NOTE]
 >
->Per un esempio di creazione di consegne basata su un contenuto, consulta [Consegna di un&#39;istanza di contenuto](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
+>Per un esempio di creazione di consegne basata su un contenuto, consulta [Consegna di un&#39;istanza di contenuto](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregatore {#aggregator}
 
