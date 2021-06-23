@@ -7,22 +7,26 @@ feature: Panoramica
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 46e5cac1df419de933d96a3f35f7ac491a1defa5
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
 
 # Connettore Adobe Analytics{#adobe-analytics-connector}
 
-## Informazioni sull&#39;integrazione del connettore Adobe Analytics {#about-analytics-connector-integration}
+## Informazioni sull’integrazione con Adobe Analytics Connector {#about-analytics-connector-integration}
+
+Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]** . Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne e-mail inviate da Adobe Campaign.
 
 >[!CAUTION]
 >
->Il connettore Adobe Analytics non è compatibile con i messaggi transazionali (Centro messaggi).
+>* Il connettore Adobe Analytics non è compatibile con i messaggi transazionali (Centro messaggi).
+   >
+   >
+* Prima di iniziare, assicurati che Adobe Identity Management System (IMS) sia implementato in Campaign. [Per ulteriori informazioni, consulta questa pagina](../../integrations/using/about-adobe-id.md).
 
-Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]** . Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne e-mail inviate da Adobe Campaign.
 
 Utilizzando il connettore Adobe Analytics, Adobe Campaign ha un modo di misurare il pubblico Internet (Web Analytics). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
 
@@ -39,7 +43,7 @@ I campi di azione per ogni strumento sono i seguenti:
    1. recupera e analizza i segmenti,
    1. attiva una campagna di ricommercializzazione.
 
-## Configurazione dell&#39;integrazione {#setting-up-the-integration}
+## Configurazione dell’integrazione {#setting-up-the-integration}
 
 Per impostare il connettore dati, è necessario connettersi all’istanza Adobe Campaign ed eseguire le operazioni seguenti:
 
@@ -47,7 +51,7 @@ Per impostare il connettore dati, è necessario connettersi all’istanza Adobe 
 1. [Configurare le variabili di conversione e gli eventi di successo](#configure-conversion-success)
 1. [Configurare l’account esterno in Adobe Campaign Classic](#external-account-classic)
 
-### Crea la tua suite di rapporti in Adobe Analytics {#report-suite-analytics}
+### Creare la suite di rapporti in Adobe Analytics {#report-suite-analytics}
 
 Per impostare l’integrazione Adobe Analytics/Adobe Campaign Classic, è necessario connettersi all’istanza [!DNL Adobe Analytics] ed eseguire le operazioni seguenti:
 
@@ -79,7 +83,7 @@ Per impostare l’integrazione Adobe Analytics/Adobe Campaign Classic, è necess
 
 1. Una volta configurato, fai clic su **[!UICONTROL Create report suite]**.
 
-### Configura le variabili di conversione e gli eventi di successo {#configure-conversion-success}
+### Configurare le variabili di conversione e gli eventi di successo {#configure-conversion-success}
 
 Dopo aver creato il **[!UICONTROL Report suite]**, è necessario configurare i **[!UICONTROL Conversion variables]** e **[!UICONTROL Success events]** come segue:
 
