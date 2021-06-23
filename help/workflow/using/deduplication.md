@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Deduplicazione
+title: Deduplica
 description: Ulteriori informazioni sull’attività del flusso di lavoro Deduplication
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
 
 ---
 
-# Deduplicazione{#deduplication}
+# Deduplica{#deduplication}
 
 La deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
 
@@ -107,7 +107,7 @@ Per configurare una deduplicazione, immetti la relativa etichetta, il metodo e i
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Esempio: Identifica i duplicati prima di una consegna {#example--identify-the-duplicates-before-a-delivery}
+## Esempio: Identificare i duplicati prima di una consegna {#example--identify-the-duplicates-before-a-delivery}
 
 Nell’esempio seguente, la deduplicazione riguarda l’unione di tre query.
 
