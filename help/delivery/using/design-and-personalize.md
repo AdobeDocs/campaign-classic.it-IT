@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 7%
@@ -14,18 +14,18 @@ ht-degree: 7%
 
 # Creare contenuti personalizzati {#build-personalized-content}
 
-Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedire l’esecuzione della consegna. Nella maggior parte dei casi, eventuali errori sono correlati a [personalizzazione](../../delivery/using/about-personalization.md), [formattazione](../../delivery/using/defining-the-email-content.md#message-content) e [immagini](../../delivery/using/defining-the-email-content.md#adding-images).
+Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedire l’esecuzione della consegna. Nella maggior parte dei casi, eventuali errori sono correlati a [personalizzazione](about-personalization.md), [formattazione](defining-the-email-content.md#message-content) e [immagini](defining-the-email-content.md#adding-images).
 
 ## Ottimizzare la personalizzazione {#optimize-personalization}
 
 Per evitare problemi comuni che potrebbero impedire l’esecuzione della consegna e migliorare l’esperienza dei destinatari, Adobe Campaign ti consente di personalizzare i messaggi.
 
 Puoi utilizzare i dati dei destinatari memorizzati nel database di Adobe Campaign o raccolti tramite tracciamento, pagine di destinazione, abbonamenti, ecc.
-Le nozioni di base sulla personalizzazione sono presentate in [questa sezione](../../delivery/using/personalization-fields.md).
+Le nozioni di base sulla personalizzazione sono presentate in [questa sezione](personalization-fields.md).
 
 Assicurati che il contenuto del messaggio sia progettato correttamente per evitare errori, generalmente correlati alla personalizzazione.
 
-**Suggerimenti**: Nei campi di personalizzazione provenienti da file esterni forniti da fornitori terzi, il contenuto HTML esterno può essere errato. Per evitare questo problema, controlla la sintassi, l’uso di tag, caratteri, ecc. Ad esempio, un tag di personalizzazione Adobe Campaign ha sempre il seguente modulo: &lt;%=table.field%>. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-personalization.md).
+**Suggerimenti**: Nei campi di personalizzazione provenienti da file esterni forniti da fornitori terzi, il contenuto HTML esterno può essere errato. Per evitare questo problema, controlla la sintassi, l’uso di tag, caratteri, ecc. Ad esempio, un tag di personalizzazione Adobe Campaign ha sempre il seguente modulo: &lt;%=table.field%>. Per ulteriori informazioni, consulta [questa sezione](about-personalization.md).
 
 Un problema può essere rappresentato dall’uso errato dei parametri nei blocchi di personalizzazione. Ad esempio, le variabili in JavaScript devono essere utilizzate come segue:
 
@@ -35,9 +35,9 @@ Un problema può essere rappresentato dall’uso errato dei parametri nei blocch
 
     
     
-Per ulteriori informazioni sui blocchi di personalizzazione, consulta [questa sezione](../../delivery/using/personalization-blocks.md).
+Per ulteriori informazioni sui blocchi di personalizzazione, consulta [questa sezione](personalization-blocks.md).
 
-Puoi preparare i dati di personalizzazione in un flusso di lavoro per migliorare l’analisi della preparazione della consegna. Questo dovrebbe essere utilizzato specialmente se i dati di personalizzazione provengono da una tabella esterna tramite Federated Data Access (FDA). Questa opzione è descritta in questa [sezione](../../delivery/using/personalization-fields.md#optimizing-personalization)
+Puoi preparare i dati di personalizzazione in un flusso di lavoro per migliorare l’analisi della preparazione della consegna. Questo dovrebbe essere utilizzato specialmente se i dati di personalizzazione provengono da una tabella esterna tramite Federated Data Access (FDA). Questa opzione è descritta in questa [sezione](personalization-fields.md#optimizing-personalization)
 
 ## Creare contenuti ottimizzati {#optimize-content}
 
@@ -55,7 +55,7 @@ Quando crei le e-mail, ricorda le best practice generali riportate di seguito.
 
 ### Linea oggetto
 
-Lavora sulla [riga oggetto](../../delivery/using/defining-the-email-content.md#message-content) per migliorare i tassi di apertura:
+Lavora sulla [riga oggetto](defining-the-email-content.md#message-content) per migliorare i tassi di apertura:
 
 * Evita soggetti troppo lunghi. Utilizza un massimo di 50 caratteri
 
@@ -65,15 +65,15 @@ Lavora sulla [riga oggetto](../../delivery/using/defining-the-email-content.md#m
 
 ### Pagina speculare
 
-Includi sempre un collegamento alla pagina speculare. La posizione preferita è la parte superiore dell’e-mail. [Ulteriori informazioni](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+Includi sempre un collegamento alla pagina speculare. La posizione preferita è la parte superiore dell’e-mail. [Ulteriori informazioni](sending-messages.md#generating-the-mirror-page)
 
 ### Collegamento di annullamento dell’abbonamento
 
-Il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) controlla se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza.
+Il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza.
 
 **Suggerimento**: Poiché l’errore umano è sempre possibile, controlla che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia online e che il campo Destinatario non venga più contattato sia stato modificato in Sì.
 
-Scopri come inserire un collegamento di rinuncia [in questa sezione](../../delivery/using/personalization-blocks.md#personalization-blocks-example).
+Scopri come inserire un collegamento di rinuncia [in questa sezione](personalization-blocks.md#personalization-blocks-example).
 
 ### Dimensione e-mail
 
@@ -94,7 +94,7 @@ Verifica eventuali modifiche prima dell’invio finale
 Per impostazione predefinita, il numero di caratteri in un SMS soddisfa gli standard GSM (Global System for Mobile Communications). I messaggi SMS che utilizzano la codifica GSM sono limitati a 160 caratteri o 153 caratteri per SMS per messaggi inviati in più parti.
 
 La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. Tieni presente che l’inserimento di campi di personalizzazione nel contenuto del messaggio SMS può introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. Puoi autorizzare la traslitterazione dei caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della **[!UICONTROL External account]** corrispondente.
-Ulteriori informazioni [in questa sezione](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Ulteriori informazioni [in questa sezione](sms-set-up.md#creating-an-smpp-external-account).
 
 **Suggerimenti**:
 
@@ -102,13 +102,13 @@ Ulteriori informazioni [in questa sezione](../../delivery/using/sms-set-up.md#cr
 
 * Tuttavia, se i messaggi SMS contengono molti caratteri che non vengono presi in considerazione dallo standard GSM, abilita la traslitterazione per limitare i costi di invio dei messaggi.
 
-Ulteriori informazioni [in questa sezione](../../delivery/using/sms-set-up.md#about-character-transliteration).
+Ulteriori informazioni [in questa sezione](sms-set-up.md#about-character-transliteration).
 
 ## Operazioni di formattazione {#formatting}
 
 Per evitare errori di formattazione comuni, controlla i seguenti elementi:
 
-* Correggi **formattazione data**: Adobe Campaign fornisce funzioni di formattazione della data per i modelli JavaScript e i fogli di stile XSL. [Ulteriori informazioni](../../delivery/using/formatting.md#date-display)
+* Correggi **formattazione data**: Adobe Campaign fornisce funzioni di formattazione della data per i modelli JavaScript e i fogli di stile XSL. [Ulteriori informazioni](formatting.md#date-display)
 
 * Uso di **caratteri autorizzati** nelle e-mail: l’elenco dei caratteri validi per gli indirizzi e-mail è definito nell’opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni di Campaign [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali, Adobe Campaign deve essere installato in Unicode.
 
@@ -148,7 +148,7 @@ Per essere accessibile dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 * Puoi verificare se la configurazione dell’istanza abilita la gestione delle risorse pubbliche. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Dalla procedura guidata di consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l’editor HTML tramite l’icona **[!UICONTROL Image]** . [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#adding-images)
+* Dalla procedura guidata di consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l’editor HTML tramite l’icona **[!UICONTROL Image]** . [Ulteriori informazioni](defining-the-email-content.md#adding-images)
 
 * Se le immagini non vengono visualizzate, controlla che siano disponibili sul server. A questo scopo, fai clic sulla scheda Origine dalla consegna. Trova le immagini e copia-incolla l’URL di ciascuna immagine in un browser web. Se le immagini non vengono visualizzate, contatta l’amministratore IT o il fornitore di terze parti che fornisce il contenuto della consegna.
 
@@ -156,6 +156,6 @@ Per essere accessibile dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 Adobe consiglia di visualizzare l’anteprima del messaggio per verificarne la personalizzazione e il modo in cui i destinatari visualizzeranno la consegna.
 
-* Nella procedura guidata di consegna, la sottoscheda **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](../../delivery/using/defining-the-email-content.md#message-content)
+* Nella procedura guidata di consegna, la sottoscheda **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](defining-the-email-content.md#message-content)
 
-* Durante ogni anteprima viene eseguito un controllo automatico anti-spam. Nella sottoscheda **[!UICONTROL Preview]** , controlla il punteggio [SpamAssassin](../../delivery/using/spamassassin.md) relativo allo spam.  Fai clic su **[!UICONTROL More...]** per ulteriori informazioni sull’avviso.  Prima di eseguire questa operazione, assicurati che SpamAssassin sia installato e configurato correttamente sul server dell&#39;applicazione Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)
+* Durante ogni anteprima viene eseguito un controllo automatico anti-spam. Nella sottoscheda **[!UICONTROL Preview]** , controlla il punteggio [SpamAssassin](spamassassin.md) relativo allo spam.  Fai clic su **[!UICONTROL More...]** per ulteriori informazioni sull’avviso.  Prima di eseguire questa operazione, assicurati che SpamAssassin sia installato e configurato correttamente sul server dell&#39;applicazione Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)
