@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -31,13 +31,13 @@ I messaggi possono essere esclusi anche durante la preparazione della consegna s
 
 **Argomenti correlati:**
 
-* [Log di consegna e cronologia](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)
-* [Stato non riuscito](../../delivery/using/delivery-performances.md#failed-status)
+* [Log di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history)
+* [Stato non riuscito](delivery-performances.md#failed-status)
 * [Tipi e motivi di errori di consegna](#delivery-failure-types-and-reasons)
 
 ## Tipi e motivi di errori di consegna {#delivery-failure-types-and-reasons}
 
-Quando un messaggio non riesce, si possono verificare tre tipi di errore. Ogni tipo di errore determina se un indirizzo viene inviato alla quarantena. Per ulteriori informazioni, consulta [Condizioni per l’invio di un indirizzo in quarantena](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+Quando un messaggio non riesce, si possono verificare tre tipi di errore. Ogni tipo di errore determina se un indirizzo viene inviato alla quarantena. Per ulteriori informazioni, consulta [Condizioni per l’invio di un indirizzo in quarantena](understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **Rigido**: un errore &quot;rigido&quot; indica un indirizzo non valido. Ciò comporta un messaggio di errore che indica esplicitamente che l’indirizzo non è valido, ad esempio: &quot;Utente sconosciuto&quot;.
 * **Morbido**: potrebbe trattarsi di un errore temporaneo o di un errore che non è stato possibile classificare, ad esempio: &quot;Dominio non valido&quot; o &quot;Casella in entrata piena&quot;.
@@ -164,13 +164,13 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non raggiungibile </td> 
    <td> Morbido/Duro </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> Errore nella catena di consegna dei messaggi. Potrebbe essere un problema sul relay SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà ritentato finché il contatore degli errori non raggiunge 5, o verrà inviato direttamente alle quarantene.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Duro </td> 
-   <td> 1 </td> 
+   <td> 3 </td> 
    <td> L'indirizzo non esiste. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
   </tr> 
  </tbody> 
@@ -186,11 +186,11 @@ Se un messaggio non riesce a causa di un errore **Morbido** o **Ignorato** tempo
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), le impostazioni dei nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito e il periodo di tempo che li separa sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte non recapitate provenienti dal dominio e-mail del messaggio.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), le impostazioni dei nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito e il periodo di tempo che li separa sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte non recapitate provenienti dal dominio e-mail del messaggio.
 
-Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, per modificare la durata di una consegna, passa ai parametri avanzati della consegna o del modello di consegna e specifica la durata desiderata nel campo corrispondente. Vedere [Definizione del periodo di validità](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, per modificare la durata di una consegna, passa ai parametri avanzati della consegna o del modello di consegna e specifica la durata desiderata nel campo corrispondente. Vedere [Definizione del periodo di validità](steps-sending-the-delivery.md#defining-validity-period).
 
-La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico di Adobe) o per ogni consegna o modello di consegna (consulta [Configurazione di nuovi tentativi](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
+La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico di Adobe) o per ogni consegna o modello di consegna (consulta [Configurazione di nuovi tentativi](steps-sending-the-delivery.md#configuring-retries)).
 
 ## Errori sincroni e asincroni {#synchronous-and-asynchronous-errors}
 
@@ -207,9 +207,9 @@ Un messaggio può non riuscire immediatamente (errore sincrono) o in seguito, do
 
    >[!NOTE]
    >
-   >La gestione dei reclami è descritta nella sezione [Gestione del recapito messaggi](../../delivery/using/about-deliverability.md) .
+   >La gestione dei reclami è descritta nella sezione [Gestione del recapito messaggi](about-deliverability.md) .
 
-## Gestione delle mail non recapitate {#bounce-mail-management}
+## Gestione della posta non recapitata {#bounce-mail-management}
 
 La piattaforma Adobe Campaign consente di gestire gli errori di consegna delle e-mail tramite la funzionalità mail non recapitata.
 
@@ -219,13 +219,13 @@ Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), la maggior parte delle regole di gestione delle e-mail non viene più utilizzata. Per ulteriori informazioni, consulta [questa sezione](#email-management-rules).
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), la maggior parte delle regole di gestione delle e-mail non viene più utilizzata. Per ulteriori informazioni, consulta [questa sezione](#email-management-rules).
 
 ### Qualificazione di mail non recapitate {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md):
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](sending-with-enhanced-mta.md):
 >
 >* Le qualifiche di mancato recapito nella tabella **[!UICONTROL Delivery log qualification]** non vengono più utilizzate per i messaggi di errore di consegna **sincrono**. L’MTA avanzato determina il tipo di messaggio non recapitato e la relativa qualifica e invia nuovamente tali informazioni a Campaign.
    >
@@ -264,13 +264,13 @@ Le mail non recapitate possono avere il seguente stato di qualifica:
 
 >[!NOTE]
 >
->In caso di interruzione di un ISP, le e-mail inviate tramite Campaign verranno erroneamente contrassegnate come mancate consegne. Per correggere questo problema, è necessario aggiornare la qualifica di mancato recapito. Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/update-bounce-qualification.md).
+>In caso di interruzione di un ISP, le e-mail inviate tramite Campaign verranno erroneamente contrassegnate come mancate consegne. Per correggere questo problema, è necessario aggiornare la qualifica di mancato recapito. Per ulteriori informazioni, consulta [questa pagina](update-bounce-qualification.md).
 
 ### Regole di gestione e-mail {#email-management-rules}
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), la maggior parte delle regole di gestione delle e-mail non viene più utilizzata. Per ulteriori dettagli, consulta le sezioni seguenti.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), la maggior parte delle regole di gestione delle e-mail non viene più utilizzata. Per ulteriori dettagli, consulta le sezioni seguenti.
 
 Le regole di posta sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** . Le regole di gestione e-mail vengono visualizzate nella parte inferiore della finestra.
 
@@ -292,7 +292,7 @@ Le regole predefinite sono le seguenti.
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md) e se l’istanza dispone della funzionalità **Webhooks/EFS** , le regole **[!UICONTROL Inbound email]** non vengono più utilizzate per i messaggi di errore di consegna sincrono. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](sending-with-enhanced-mta.md) e se l’istanza dispone della funzionalità **Webhooks/EFS** , le regole **[!UICONTROL Inbound email]** non vengono più utilizzate per i messaggi di errore di consegna sincrono. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
 
 Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA legacy di Campaign, queste regole contengono l’elenco delle stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
 
@@ -308,7 +308,7 @@ Per ulteriori informazioni sulla qualifica della posta non recapitata, consulta 
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), le regole **[!UICONTROL Domain management]** non vengono più utilizzate. La firma di autenticazione dell’e-mail **DKIM (DomainKeys Identified Mail)** viene eseguita dall’MTA avanzato per tutti i messaggi di tutti i domini. La firma non viene eseguita con **ID mittente**, **DomainKeys** o **S/MIME**, a meno che non venga specificato diversamente a livello di MTA avanzato.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’ [MTA avanzato](sending-with-enhanced-mta.md), le regole **[!UICONTROL Domain management]** non vengono più utilizzate. La firma di autenticazione dell’e-mail **DKIM (DomainKeys Identified Mail)** viene eseguita dall’MTA avanzato per tutti i messaggi di tutti i domini. La firma non viene eseguita con **ID mittente**, **DomainKeys** o **S/MIME**, a meno che non venga specificato diversamente a livello di MTA avanzato.
 
 Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, il server di messaggistica Adobe Campaign applica una singola regola **Gestione dei domini** a tutti i domini.
 
@@ -323,7 +323,7 @@ Se i messaggi sono visualizzati in Outlook con **[!UICONTROL on behalf of]** nel
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), le regole di velocità effettiva di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L’MTA avanzato utilizza le proprie regole MX che gli consentono di personalizzare il throughput in base al dominio in base alla reputazione cronologica dell’e-mail e al feedback in tempo reale proveniente dai domini in cui invii e-mail.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](sending-with-enhanced-mta.md), le regole di velocità effettiva di consegna **[!UICONTROL MX management]** non vengono più utilizzate. L’MTA avanzato utilizza le proprie regole MX che gli consentono di personalizzare il throughput in base al dominio in base alla reputazione cronologica dell’e-mail e al feedback in tempo reale proveniente dai domini in cui invii e-mail.
 
 Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign:
 
