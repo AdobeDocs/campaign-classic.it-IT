@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a9120e2db43fcb035e9760819e9c53148979da4f
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 50%
@@ -20,9 +20,9 @@ ht-degree: 50%
 
 * **[Domande ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html)**<br/> frequenti sulla protezione della privacy di Apple MailTrova le linee guida iniziali in risposta all&#39;annuncio di Apple riguardo iOS 15
 
-* **[Rimuovere i ](delivery/using/update-bounce-qualification.md)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione Apple
+* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](technotes/ims-updates.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 30 giugno 2021 **
 
-* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](integrations/using/about-adobe-id.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 30 giugno 2021 **
+* **[Rimuovere i ](delivery/using/update-bounce-qualification.md)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione Apple
 
 * **[Proteggi le ](technotes/acc-config-updates.md)**<br/> istanze di CampaignAggiorna le build più recenti per proteggere la piattaforma Campaign
 
