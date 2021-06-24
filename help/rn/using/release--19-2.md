@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1544'
 ht-degree: 21%
 
 ---
@@ -41,7 +41,7 @@ _23 dicembre 2020_
 
 >[!CAUTION]
 >
-> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.
+> * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/ims-updates.md)
    >
    > 
 * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
@@ -122,7 +122,7 @@ _2 dicembre 2019_
  </thead> 
  <tbody> 
   <tr> 
-<td> <p>SMS protetti è ora supportato tramite il connettore generico esteso SMPP. Ciò consente una connessione crittografata al provider.</p> <p><strong></strong> AvvisoQuesta funzione richiede un certificato aggiornato su tutti i server. I certificati non validi, revocati o scaduti generano errori che influiscono sulle funzionalità di invio complessivo degli SMS.</p><p>Per ulteriori informazioni, consulta la <a href="https://helpx.adobe.com/it/campaign/kb/sms-connector-protocol-and-settings.html">documentazione dettagliata</a>. </p> </td> 
+<td> <p>SMS protetti è ora supportato tramite il connettore generico esteso SMPP. Ciò consente una connessione crittografata al provider.</p> <p><strong></strong> AvvisoQuesta funzione richiede un certificato aggiornato su tutti i server. I certificati non validi, revocati o scaduti generano errori che influiscono sulle funzionalità di invio complessivo degli SMS.</p><p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=it">documentazione dettagliata</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
