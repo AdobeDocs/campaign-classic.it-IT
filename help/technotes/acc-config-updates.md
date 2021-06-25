@@ -5,9 +5,9 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ Per motivi di sicurezza, ora devi effettuare l’aggiornamento a una delle versi
 
 ## Aggiornamenti di sicurezza {#acc-security-updates}
 
-Le versioni più recenti di Campaign presentano una correzione di sicurezza che rafforza la protezione contro i problemi di Server Side Request Forgery (SSRF). Ulteriori informazioni [in questa pagina](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html).
+Le versioni più recenti di Campaign presentano una correzione di sicurezza che rafforza la protezione contro i problemi di Server Side Request Forgery (SSRF). Per ulteriori informazioni, consulta [questa pagina](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html).
 
 **Sei interessato da questo problema?**
 
@@ -37,7 +37,6 @@ Se l’ambiente si trova in una build inferiore a quelle elencate di seguito, è
 
 * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
 * Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
-* Campaign versione 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
 * Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 20.1.4. [Ulteriori informazioni](../rn/using/release--20-1.md)
 * Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ Devi eseguire l’aggiornamento a una delle build più recenti elencate in prece
 >Se non è possibile eseguire l&#39;aggiornamento entro il periodo di tempo consigliato, **contatta il team di assistenza clienti Adobe per applicare una correzione manuale di sicurezza a breve termine alle istanze**.
 
 
-## Aggiornamento della console client di Campaign Classic {#acc-cc-updates}
+## Aggiornamento della console client di Campaign Classic  {#acc-cc-updates}
 
 Per risolvere una regressione identificata di recente, è necessario installare le versioni della console **ora disponibili** riportate di seguito. Questa regressione impediva l’utilizzo di alcuni componenti della console client, come il selettore data e la gestione delle immagini nelle consegne. **Aggiornamenti** della console obbligatori.
 
@@ -81,7 +80,6 @@ Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adob
 
 * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
 * Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
-* Campaign versione 20.3.3. [Ulteriori informazioni](../rn/using/release--20-3.md)
 * Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 20.1.4. [Ulteriori informazioni](../rn/using/release--20-1.md)
 * Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
@@ -103,7 +101,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 * [Scopri come installare la console](../installation/using/installing-the-client-console.md) client di Campaign.
 
-## Integrazione con i trigger Experience Cloud {#acc-triggers-updates}
+## Integrazione con Experience Cloud Triggers {#acc-triggers-updates}
 
 Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Sarà ritirato il **30 novembre 2021**. [Ulteriori informazioni](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -132,7 +130,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 ### API del provider APN basato su HTTP/2
 
-A partire dal **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
+A partire dal **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Ulteriori informazioni](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sei interessato?**
 
