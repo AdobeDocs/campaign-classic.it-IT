@@ -6,10 +6,10 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '4470'
-ht-degree: 97%
+source-wordcount: '4466'
+ht-degree: 99%
 
 ---
 
@@ -21,11 +21,11 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ## Giugno 2021 {#june-2021}
 
-La sezione **Messaggistica transazionale** è stata riorganizzata e chiarita con una nuova sezione Introduzione, che include uno [schema avanzato](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) per una migliore comprensione del processo. [Leggi tutto](../../message-center/using/about-transactional-messaging.md)
+La sezione **Messaggistica transazionale** è stata riorganizzata e chiarita con una nuova sezione Introduzione, che include uno [schema avanzato](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) per una migliore comprensione del processo. [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md)
 
 **Aggiornamenti alla documentazione in arrivo con la versione 21.1.3**
 
-Integrazione con il Journey Orchestration Adobe - [Ulteriori informazioni](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Un caso d’uso dettagliato è presentato in [questa pagina](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html)
+Integrazione con il Journey Orchestration Adobe - [Ulteriori informazioni](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=it). Un caso d’uso dettagliato è presentato in [questa pagina](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=it)
 
 Miglioramenti al canale LINE - [Ulteriori informazioni](../../delivery/using/line-channel.md)
 
@@ -33,7 +33,7 @@ Nuovo connettore FDA Vertica - [Ulteriori informazioni](../../installation/using
 
 Nuovo connettore FDA Google Big Query - [Ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md)
 
-La descrizione del flusso di lavoro tecnico &quot;Fatturazione (fatturazione)&quot; include ora le attività originariamente eseguite dal &quot;Numero di profili di fatturazione attivi (billingActiveContactCount)&quot;. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
+La descrizione del flusso di lavoro tecnico “Fatturazione (fatturazione” include ora le attività originariamente eseguite dal “Numero di profili di fatturazione attivi (billingActiveContactCount)”. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
 
 ## Maggio 2021 {#may-2021}
 
@@ -43,13 +43,13 @@ I requisiti della console client di Campaign sono stati aggiornati nella matrice
 
 La procedura di installazione della console client di Campaign è stata migliorata e chiarita. [Leggi tutto](../../installation/using/installing-the-client-console.md)
 
-È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Leggi tutto](../../technotes/tracked-urls.md)
+È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Ulteriori informazioni](../../technotes/tracked-urls.md)
 
 ## Aprile 2021 {#april-2021}
 
 È stata aggiunta una nuova sezione su come lavorare con le origini e le destinazioni di Adobe Experience Platform per condividere i dati tra Campaign Classic e Adobe Real-time Customer Data Platform (RTCDP). [Leggi tutto](../../integrations/using/get-started-sources-destinations.md)
 
-È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
+È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Ulteriori informazioni](../../delivery/using/update-bounce-qualification.md)
 
 ## Marzo 2021 {#march-2021}
 
@@ -128,7 +128,7 @@ Le domande frequenti sulla privacy sono state spostate in [questa sezione](../..
 
 Il protocollo del connettore SMS e la pagina delle sue impostazioni sono ora descritti [qui](../../delivery/using/sms-protocol.md).
 
-È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Leggi tutto](../../message-center/using/about-event-processing.md#event-collection)
+È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Ulteriori informazioni](../../message-center/using/about-event-processing.md#event-collection)
 
 ## Novembre 2020 {#nov-2020}
 
@@ -252,7 +252,7 @@ La Panoramica sulla Gestione della privacy è stata aggiornata con informazioni 
 
 Sono state aggiunte informazioni sui registri e sul comportamento dei flussi di lavoro secondari in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
-Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTROL Scheduler]**. [Leggi tutto](../../workflow/using/scheduler.md)
+Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTROL Scheduler]**. [Ulteriori informazioni](../../workflow/using/scheduler.md)
 
 ## Giugno 2020 {#june-2020}
 
@@ -304,7 +304,7 @@ La sezione Risoluzione dei problemi di recapito messaggi è stata spostata e mig
 
 La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
 
-La sezione sulle best practice relative ai pacchetti dati è stata spostata e aggiornata. [Leggi tutto](../../platform/using/working-with-data-packages.md#data-package-best-practices)
+La sezione sulle best practice relative ai pacchetti dati è stata spostata e aggiornata. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## Aprile 2020 {#april-2020}
 
@@ -492,7 +492,7 @@ Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e con
 
 **Nuove funzionalità incluse nella versione 19.1**
 
-Pannello di controllo Campaign. [Leggi tutto](https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html)
+Pannello di controllo Campaign. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
@@ -599,4 +599,4 @@ La sezione “Monitoraggio del flusso di lavoro” è stata aggiornata con una n
 
 È stato aggiunto un caso di utilizzo su come inviare un’e-mail con campi dati personalizzati tramite l’attività di arricchimento in un flusso di lavoro. [Leggi tutto](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-I video delle funzioni sono stati spostati [qui](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html).
+I video delle funzioni sono stati spostati [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
