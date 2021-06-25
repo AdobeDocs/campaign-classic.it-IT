@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 8%
+source-wordcount: '394'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ Inizia a usare Adobe Campaign consultando le nostre intuitive guide dettagliate.
 
 * [Modifica del contenuto delle e-mail con Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): scopri le nozioni di base per iniziare a utilizzare l’integrazione tra Adobe Campaign e Experience Manager.
 * [Gestione](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html) della privacy: scopri cosa offre Adobe Campaign Classic per aiutarti con la conformità in materia di privacy quando utilizzi il nostro servizio.
-* [Integrazione del contenuto dinamico in un messaggio e-mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): scopri le nozioni di base per iniziare a utilizzare l’integrazione tra Campaign Classic e Target Standard.
+* [Integrazione del contenuto dinamico in un messaggio e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): scopri le nozioni di base per iniziare a utilizzare l’integrazione tra Campaign Classic e Target Standard.
 * [Gestione del recapito messaggi](../../delivery/using/about-deliverability.md): scopri i concetti e le best practice relativi al recapito messaggi e gli strumenti offerti da Adobe Campaign Classic per ottimizzare l’invio delle consegne.
 * [Best practice](../../delivery/using/delivery-best-practices.md) per le consegne: scopri le best practice relative alla progettazione e all’invio di consegne con Adobe Campaign Classic.
 * [Esecuzione di un aggiornamento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) della build: questa guida descrive i passaggi chiave e le best practice per eseguire un aggiornamento della build con Campaign Classic.
@@ -41,12 +41,12 @@ Oltre alla documentazione del prodotto, puoi accedere alle risorse di supporto a
 
 ### Video tutorial
 
-Scopri le funzioni principali di Adobe Campaign nel video. [Ulteriori informazioni](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/overview.html)
+Scopri le funzioni principali di Adobe Campaign nel video. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it)
 
 ### Sessioni di formazione e video
 
 Oltre a questi brevi e dettagliati video, è possibile trovare [corsi di formazione](https://learning.adobe.com/catalog.html) e guardare la funzione [video di presentazione](https://www.adobe.com/training/video.html) su Adobe.com.
 
-### Corsi Experience League
+### Corsi di Experience League
 
 È inoltre possibile visitare i [Corsi consigliati](https://experienceleague.adobe.com/?lang=en#dashboard/learning) per Adobe Campaign Classic: i corsi sono raccolte di lezioni curate con competenza che ti aiutano a acquisire rapidamente competenze e conoscenze.
