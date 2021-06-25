@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Per ottenere il pubblico finale e i relativi dati aggiuntivi:
 
 1. Salva il flusso di lavoro. La sezione successiva mostra come condividere la popolazione con ACS.
 
-## Condividi la destinazione con Campaign Standard {#share-the-target-with-campaign-standard}
+## Condividere la destinazione con Campaign Standard {#share-the-target-with-campaign-standard}
 
 Una volta definita la popolazione target, puoi condividerla con ACS tramite un’attività **[!UICONTROL List update]** .
 
@@ -121,7 +121,7 @@ Creando un flusso di lavoro di consegna in Campaign Standard, è quindi possibil
 
    Questa attività viene utilizzata per recuperare i dati del pubblico selezionato. Puoi anche applicare un valore aggiuntivo **[!UICONTROL Source Filtering]** se necessario utilizzando la scheda corrispondente di questa attività.
 
-1. Aggiungi un’attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra attività [di consegna e-mail](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Aggiungi un’attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra attività [di consegna e-mail](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Apri il contenuto della consegna.
 1. Aggiungi un campo di personalizzazione. Dalla finestra a comparsa, individua il nodo **[!UICONTROL Additional data (targetData)]** . Questo nodo contiene i dati aggiuntivi del pubblico calcolati nel flusso di lavoro di targeting iniziale. Puoi utilizzarli come qualsiasi altro campo di personalizzazione.
 
