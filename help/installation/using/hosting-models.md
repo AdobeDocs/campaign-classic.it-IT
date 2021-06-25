@@ -6,7 +6,7 @@ feature: Panoramica
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Adobe Campaign può essere implementato on-premise: tutti i componenti di Adobe 
 
 ![](assets/deployment_onpremise.png)
 
-In qualità di cliente on-premise, prima di iniziare la distribuzione di Campaign Classic, è necessario assicurarsi dei prerequisiti e dei consigli seguenti:
+In qualità di cliente on-premise, prima di iniziare la distribuzione di Campaign Classic, è necessario soddisfare i seguenti prerequisiti e consigli:
 
 * Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md) che elenca tutte le versioni dei sistemi e dei componenti supportati per Adobe Campaign.
 * A seconda dell&#39;ambiente, leggi i [prerequisiti per Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) e [prerequisiti per Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
