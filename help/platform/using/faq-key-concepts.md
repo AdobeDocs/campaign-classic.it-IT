@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '881'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Consulta [questo documento](https://helpx.adobe.com/it/campaign/kb/campaign-priv
 
 Consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md) per ulteriori informazioni sulle nozioni di base sull’area di lavoro di Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Come posso selezionare il pubblico dei miei messaggi? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -128,6 +128,6 @@ Adobe valuta costantemente le funzionalità del prodotto e nel tempo pianifica l
 
 ## Vengono rilasciati nuovi aggiornamenti della documentazione e materiali di supporto? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://docs.adobe.com/content/help/it-IT/campaign-classic/using/documentation-updates.html).
+Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Puoi inoltre consultare le note tecniche più recenti elencate [in questa pagina](https://helpx.adobe.com/it/campaign/kb/article-list.html).
