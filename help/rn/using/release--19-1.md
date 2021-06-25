@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3252'
 ht-degree: 26%
 
 ---
@@ -171,11 +171,11 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedi tramite l'Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://docs.adobe.com/content/help/it-IT/control-panel/using/control-panel-home.html">documentazione dettagliata</a> e il <a href="https://docs.adobe.com/content/help/it-IT/campaign-classic-learn/control-panel/control-panel-overview.html">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedi tramite l'Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it">documentazione dettagliata</a> e il <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=it">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
-   <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di audit registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Puoi verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consulta la <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/monitoring/audit-trail.html">video tutorial</a>.</p></td> 
+   <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di audit registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Puoi verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consulta la <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">video tutorial</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Guardrail, robustezza e scalabilità<br /> </td> 
@@ -213,16 +213,16 @@ _30 maggio 2019_
 
 **Miglioramenti a livello di sicurezza, robustezza e scalabilità**
 
-* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA su HTTP v2: il protocollo FDA su HTTP è ampiamente utilizzato nelle implementazioni ibride, soprattutto per il recupero e la preparazione di consegne wideLog. La robustezza è stata migliorata per evitare problemi di rete e possibili errori durante il recupero o il push dei dati. Ciò richiede che le build a entrambe le estremità della connessione siano aggiornate, altrimenti verrà comunque utilizzato il vecchio protocollo.
 * Flusso di lavoro di tracciamento: la robustezza del flusso di lavoro di tracciamento è stata migliorata. Sono stati risolti diversi problemi relativi al tracciamento degli inserimenti/aggiornamenti dei log e alla personalizzazione del tracciamento degli URL. Inoltre, il flusso di lavoro di tracciamento ora rileva i problemi del registro di tracciamento che potrebbero causare errori e arrestare il flusso di lavoro. Questi problemi vengono ora scartati e non elaborati.
 * Flusso di lavoro di pulizia: il flusso di lavoro di pulizia è stato migliorato per evitare potenziali errori e arresti. Questo ottimizza le dimensioni e le prestazioni del database.
 * Immagini incorporate nei messaggi transazionali: abbiamo aggiunto il supporto completo delle immagini incorporate nei messaggi transazionali, per evitare possibili arresti anomali o immagini mancanti.
 * Dimensione del database - XtkJobLog: a questa tabella è stato aggiunto un meccanismo di eliminazione. Questo ha un impatto positivo sulle dimensioni del database.
-* Archiviazione CCN: i parametri predefiniti per l&#39;archiviazione CCN sono stati modificati per aumentare la velocità di archiviazione. [Leggi tutto](../../installation/using/email-archiving.md#parameters)
+* Archiviazione CCN: i parametri predefiniti per l&#39;archiviazione CCN sono stati modificati per aumentare la velocità di archiviazione. [Ulteriori informazioni](../../installation/using/email-archiving.md#parameters)
 * Aggiornamento della struttura del database: Le richieste SQL generate dall&#39;aggiornamento guidato della struttura del database sono state migliorate per un&#39;esecuzione più rapida.
 * Guardrail per le azioni dell&#39;operatore: sono state implementate diverse protezioni per impedire agli operatori di eseguire azioni che potrebbero influire sull&#39;integrità della piattaforma. Gli schemi incorporati non possono più essere eliminati tramite l’interfaccia . Inoltre, l’XML di origine del flusso di lavoro non può più essere modificato da utenti non amministratori.
-* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (ti consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (ti consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Leggi tutto](../../installation/using/configuring-campaign-options.md)
+* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (ti consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (ti consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md)
 
 **Altre modifiche**
 
@@ -234,7 +234,7 @@ _30 maggio 2019_
 * Nell’integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
 * È stato rimosso il limite di 10.000 record in Workflow Heatmap per risolvere un problema di dati mancanti. (NEO-12329)
 * Open Office non è supportato ed è stato rimosso completamente dall&#39;applicazione. Se lo si stava ancora utilizzando, passare a Libre Office in quanto non funzionerà più a partire dal 19.1.
-* È ora possibile limitare l’accesso in scrittura all’attività Update data in Workflow utilizzando gli attributi sysfilter. [Leggi tutto](../../configuration/using/filtering-schemas.md)
+* È ora possibile limitare l’accesso in scrittura all’attività Update data in Workflow utilizzando gli attributi sysfilter. [Ulteriori informazioni](../../configuration/using/filtering-schemas.md)
 
 **Patch**
 
