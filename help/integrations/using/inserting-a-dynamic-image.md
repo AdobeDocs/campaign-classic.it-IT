@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ In Adobe Campaign, esistono due modi per inserire un’immagine dinamica da Targ
 
    ![](assets/target_12.png)
 
-### Definizione dei parametri immagine {#defining-image-parameters}
+### Definizione dei parametri dell’immagine {#defining-image-parameters}
 
 * L&#39;URL di **[!UICONTROL Default image]**: Immagine che verrà visualizzata quando non viene soddisfatta alcuna condizione. Puoi anche selezionare un’immagine dalla libreria Risorse.
 * Il **[!UICONTROL Target location]**: Immetti un nome per la posizione dell’offerta dinamica. Dovrai selezionare questa posizione nell’attività di Target.
@@ -78,7 +78,7 @@ Nel nostro caso, sono necessarie due offerte di reindirizzamento, la terza (quel
 
    ![](assets/target_6.png)
 
-1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html).
+1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html).
 
 ## Creazione di tipi di pubblico {#audiences-target}
 
@@ -148,7 +148,7 @@ La sezione **[!UICONTROL Reporting Settings]** ti consente di selezionare un’a
 
 ![](assets/target_experience_2.png)
 
-## Anteprima e invio dell’e-mail in Campaign Classic {#preview-send-email}
+## Anteprima e invio del messaggio e-mail in Campaign Classic {#preview-send-email}
 
 In Adobe Campaign, ora puoi visualizzare l’anteprima del messaggio e-mail e testarne il rendering su destinatari diversi. Noterai che l’immagine cambia in base alle diverse esperienze create. Per ulteriori informazioni sulla creazione di e-mail, consulta questa [pagina](../../delivery/using/defining-the-email-content.md).
 
