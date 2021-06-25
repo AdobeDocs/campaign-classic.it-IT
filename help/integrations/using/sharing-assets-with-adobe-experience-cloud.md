@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ I servizi delle risorse includono:
 
 Quando modifichi una consegna e-mail o una pagina di destinazione in Adobe Campaign, puoi inserire le risorse dalle librerie Adobe Experience Cloud. A seconda delle soluzioni che utilizzi, queste risorse possono essere memorizzate nel servizio core Assets o in Adobe Experience Manager Assets.
 
-Le diverse librerie disponibili sono descritte in [questo documento](https://docs.adobe.com/content/help/en/core-services/interface/assets/experience-cloud-assets.html).
+Le diverse librerie disponibili sono descritte in [questo documento](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html).
 
 Consulta la sezione [Configurazione dell’accesso alle risorse](../../integrations/using/configuring-access-to-assets.md) per ulteriori informazioni sulle specifiche collegate a ciascuna libreria.
 
