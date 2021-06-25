@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1195'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamen
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Conferma che il nuovo destinatario sia stato aggiunto a Campaign Standard. Durante la revisione del profilo, assicurati che i dati immessi in Campaign v7 siano disponibili anche in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://docs.adobe.com/content/help/it-IT/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Conferma che il nuovo destinatario sia stato aggiunto a Campaign Standard. Durante la revisione del profilo, assicurati che i dati immessi in Campaign v7 siano disponibili anche in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=it).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -59,7 +59,7 @@ I passaggi seguenti per modificare un singolo punto di dati offrono un esempio s
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Conferma che il nome del destinatario sia stato aggiornato in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Conferma che il nome del destinatario sia stato aggiornato in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -156,7 +156,7 @@ Segui i passaggi seguenti per aggiungere una consegna e-mail a un flusso di lavo
 
    ![](assets/acs_connect_profile_sync_19.png)
 
-## Verifica del servizio di annullamento dell&#39;abbonamento {#verifying-the-unsubscription-service}
+## Verifica del servizio di annullamento dell’abbonamento {#verifying-the-unsubscription-service}
 
 Segui le istruzioni riportate in [Creazione di un flusso di lavoro](#creating-a-workflow) e [Creazione di una consegna](#creating-a-delivery) prima di passare ai passaggi seguenti.
 
@@ -172,6 +172,6 @@ Segui le istruzioni riportate in [Creazione di un flusso di lavoro](#creating-a-
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vai a Campaign Standard e apri i dettagli del profilo del destinatario. Conferma che venga visualizzata una casella di controllo accanto a **[!UICONTROL No longer contact (by any channel)]**. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vai a Campaign Standard e apri i dettagli del profilo del destinatario. Conferma che venga visualizzata una casella di controllo accanto a **[!UICONTROL No longer contact (by any channel)]**. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
