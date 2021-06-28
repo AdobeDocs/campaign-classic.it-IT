@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 97%
@@ -94,7 +94,7 @@ Scopri come utilizzare Adobe Campaign per [inviare una notifica push personalizz
 
 ## Come si progetta e si condivide un sondaggio online? {#how-to-design-and-share-an-online-survey-}
 
-Scopri come [creare un sondaggio online](../../web/using/getting-started-with-surveys.md) con passaggi chiave per progettarlo e pubblicarlo con Campaign Classic.
+Scopri come [creare un sondaggio online](../../surveys/using/getting-started-with-surveys.md) con passaggi chiave per progettarlo e pubblicarlo con Campaign Classic.
 
 ## Come si crea una pagina di destinazione? {#how-to-create-landing-page-}
 
