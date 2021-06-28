@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Queste attività ti consentono di creare uno o più target definendo i set e sud
 * **Divisione**: consente di dividere un target in più sottoinsiemi. Consulta la sezione [Dividi](../../workflow/using/split.md) .
 * **Celle**: fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati e facilita la manipolazione di tali sottoinsiemi in presenza di molti di essi. Per ulteriori informazioni, consulta la sezione [Celle](../../workflow/using/cells.md) .
 * **Offerte per cella**: consente di collegare offerte diverse a ciascun sottoinsieme di una popolazione. Consulta la sezione [Offerte per cella](../../workflow/using/offers-by-cell.md) .
-* **Il sondaggio risponde**: consente di recuperare le informazioni raccolte durante un sondaggio. Per ulteriori informazioni, consulta questa [sezione](../../web/using/getting-started-with-surveys.md).
+* **Il sondaggio risponde**: consente di recuperare le informazioni raccolte durante un sondaggio. Per ulteriori informazioni, consulta questa [sezione](../../surveys/using/getting-started-with-surveys.md).
 * **Profilo** di consegna: consente di aggiungere un profilo di consegna. Consulta la sezione [Profilo di consegna](../../workflow/using/delivery-outline.md) .
 * **Arricchimento**: consente di aggiungere colonne a una tabella di lavoro o a un flusso di lavoro. Consulta la sezione [Enrichment](../../workflow/using/enrichment.md) .
 * **Modifica schema**: consente di trasformare, standardizzare e, se necessario, arricchire i dati. Per ulteriori informazioni, consulta la sezione [Modifica schema](../../workflow/using/edit-schema.md) .
