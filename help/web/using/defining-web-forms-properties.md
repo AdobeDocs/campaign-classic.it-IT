@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 1%
@@ -27,9 +27,9 @@ Nella scheda **[!UICONTROL General]** della finestra delle proprietà è possibi
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-Il modello di modulo viene scelto durante la creazione del modulo. Non può essere modificato in un secondo momento. Per ulteriori informazioni sulla creazione e la gestione dei modelli di modulo, vedere [Uso di un modello di modulo web](../../web/using/using-a-web-form-template.md).
+Il modello di modulo viene scelto durante la creazione del modulo. Non può essere modificato in un secondo momento. Per ulteriori informazioni sulla creazione e la gestione dei modelli di modulo, vedere [Uso di un modello di modulo web](using-a-web-form-template.md).
 
-## Archiviazione dei dati del modulo {#form-data-storage}
+## Archiviazione dati modulo {#form-data-storage}
 
 Per impostazione predefinita, i campi dei moduli web sono memorizzati nella tabella dei destinatari. È possibile modificare la tabella utilizzata selezionando una nuova tabella dal campo **[!UICONTROL Document type]** . L’icona **[!UICONTROL Zoom]** ti consente di visualizzare il contenuto della tabella selezionata.
 
@@ -49,11 +49,11 @@ Il contenuto delle stringhe visualizzate è definito nella scheda **[!UICONTROL 
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
-## Localizzazione del modulo {#form-localization}
+## Localizzazione dei moduli {#form-localization}
 
 La scheda **[!UICONTROL Localization]** consente di selezionare le lingue di progettazione e visualizzazione del modulo Web.
 
-Vedere [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+Vedere [Traduzione di un modulo web](translating-a-web-form.md).
 
 ## Navigazione e rendering dei moduli {#form-browsing-and-rendering}
 
@@ -77,21 +77,21 @@ Questi elementi vengono visualizzati nella parte inferiore di ogni pagina. Le lo
 
 Il campo **[!UICONTROL Template]** della scheda **[!UICONTROL Rendering]** ti consente di selezionare un tema tra quelli disponibili.
 
-I temi vengono salvati nel nodo **[!UICONTROL Administration>Configuration>Form rendering]** della struttura. Vedere [Selezione del modello di rendering del modulo](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+I temi vengono salvati nel nodo **[!UICONTROL Administration>Configuration>Form rendering]** della struttura. Vedere [Selezione del modello di rendering del modulo](form-rendering.md#selecting-the-form-rendering-template)
 
 Un esempio di rendering viene visualizzato nella parte inferiore della finestra delle proprietà. L’icona **[!UICONTROL Edit link]** ti consente di visualizzare la configurazione del tema selezionato.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
-## Testi del modulo {#texts-in-the-form}
+## Testi in forma {#texts-in-the-form}
 
-La scheda **[!UICONTROL Page]** consente di definire il contenuto dell’intestazione e del piè di pagina del modulo. Vedere [Definizione di intestazioni e piè di pagina](../../web/using/form-rendering.md#defining-headers-and-footers).
+La scheda **[!UICONTROL Page]** consente di definire il contenuto dell’intestazione e del piè di pagina del modulo. Vedere [Definizione di intestazioni e piè di pagina](form-rendering.md#defining-headers-and-footers).
 
-Permette inoltre di gestire le traduzioni. Vedere [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+Permette inoltre di gestire le traduzioni. Vedere [Traduzione di un modulo web](translating-a-web-form.md).
 
 ## Accessibilità del modulo {#accessibility-of-the-form}
 
-Un modulo Web è accessibile agli utenti se è **[!UICONTROL Online]** e se la data corrente si trova entro il periodo di validità. Lo stato del modulo viene modificato durante la fase di pubblicazione (vedere [Pubblicazione di un modulo](../../web/using/publishing-a-web-form.md#publishing-a-form)). Lo stato viene visualizzato nella sezione **Progetto** della scheda **[!UICONTROL General]** della finestra delle proprietà.
+Un modulo Web è accessibile agli utenti se è **[!UICONTROL Online]** e se la data corrente si trova entro il periodo di validità. Lo stato del modulo viene modificato durante la fase di pubblicazione (vedere [Pubblicazione di un modulo](publishing-a-web-form.md#publishing-a-form)). Lo stato viene visualizzato nella sezione **Progetto** della scheda **[!UICONTROL General]** della finestra delle proprietà.
 
 Il periodo di validità va dalla data **[!UICONTROL Start]** alla data **[!UICONTROL End date]**. Se in questi campi non sono specificate date, il modulo ha validità permanente.
 
@@ -101,7 +101,7 @@ Il periodo di validità va dalla data **[!UICONTROL Start]** alla data **[!UICON
 >
 >Se il modulo è chiuso e quindi il relativo periodo di validità non è stato raggiunto o è scaduto oppure se è stato chiuso dall’operatore Adobe Campaign, viene visualizzato un messaggio quando l’utente tenta di accedervi. Puoi personalizzare il messaggio facendo clic su **[!UICONTROL Personalize the message displayed if the form is closed...]**.
 
-## Controllo accessi modulo {#form-access-control}
+## Controllo dell’accesso al modulo {#form-access-control}
 
 Per impostazione predefinita, l’accesso ai moduli web viene eseguito in modalità anonima: a tutti gli operatori che accedono al modulo vengono assegnati diritti di operatore WebApp.
 
@@ -150,7 +150,7 @@ I parametri possono essere aggiunti tramite la scheda **[!UICONTROL Parameters..
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-È necessario specificare un percorso di archiviazione dal quale verrà recuperato il valore del parametro. A questo scopo, selezionare una delle opzioni di archiviazione, quindi fare clic sulla scheda **[!UICONTROL Storage]** per selezionare il campo o la variabile interessata. Le opzioni di archiviazione sono descritte in [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields).
+È necessario specificare un percorso di archiviazione dal quale verrà recuperato il valore del parametro. A questo scopo, selezionare una delle opzioni di archiviazione, quindi fare clic sulla scheda **[!UICONTROL Storage]** per selezionare il campo o la variabile interessata. Le opzioni di archiviazione sono descritte in [Campi di archiviazione di risposta](web-forms-answers.md#response-storage-fields).
 
 Lo stato corrispondente (0, 1 o qualsiasi altro valore) può quindi essere aggiunto all’URL per accedere al modulo. Queste informazioni possono essere riutilizzate nelle pagine del modulo o in una casella di test. Le pagine visualizzate possono essere condizionate in base al valore del contesto, come illustrato di seguito:
 
