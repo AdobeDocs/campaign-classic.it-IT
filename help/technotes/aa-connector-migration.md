@@ -4,9 +4,9 @@ title: Migrazione al connettore Adobe Analytics
 description: Campaign - Domande frequenti sul connettore Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
+source-git-commit: 41478c656ffd4e113788149e6cca9ed00602789e
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '836'
 ht-degree: 5%
 
 ---
@@ -71,9 +71,9 @@ In qualità di utente on-premise, puoi implementare la modalità dettagliata com
 * Per attivare la modalità dettagliata per l&#39;interfaccia utente: eseguire nuovamente il processo `web` in modalità dettagliata.
 * Per abilitare la modalità dettagliata per i flussi di lavoro **webAnalytics**: seleziona l’opzione **Esegui nel motore** dalle proprietà del flusso di lavoro, quindi esegui nuovamente `wfserver` in modalità dettagliata.
 
-**Cosa significa l’errore &quot;Integration Owner Not Admin&quot; (Proprietario integrazione non amministratore)?**
+**Che cosa significa l&#39;errore &quot;Integration Owner Not Admin&quot; (Proprietario integrazione non amministratore)?**
 
-Ulteriori informazioni sull&#39;errore &quot;Integration Owner Not Admin&quot; dei Data Connectors in [questa pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Ulteriori informazioni sull&#39;errore dei Data Connectors `Integration Owner Not Admin` in [questa pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Una volta effettuata la migrazione al nuovo connettore, cosa succede ai dati e alle suite di rapporti precedenti?**
 
