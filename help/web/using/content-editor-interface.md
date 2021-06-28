@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
@@ -21,9 +21,9 @@ La finestra di modifica DCE è suddivisa in tre diverse sezioni. Consentono di v
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. La sezione **top** è un&#39;area di visualizzazione per i messaggi inviati all&#39;utente. Questi messaggi indicano lo stato dell’applicazione Web o la consegna in fase di creazione, nonché gli avvisi e i messaggi di errore relativi al contenuto. Per ulteriori informazioni, consulta [Stato del contenuto HTML](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. La sezione a **sinistra** della finestra è l’area da modificare. Da quest’area, l’utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti a comparsa: inserire un collegamento in un’immagine, modificare il font, eliminare un campo, ecc. Per ulteriori informazioni, consulta [Modifica di moduli](../../web/using/editing-content.md#editing-forms).
-1. La sezione a **destra** della finestra è l&#39;area del pannello di controllo. Quest’area raggruppa le diverse opzioni per l’editor, in particolare quelle relative alla configurazione dell’intestazione di pagina e delle opzioni generali per un blocco: aggiungere un bordo, collegare un campo di database con un&#39;area di input, accedere alle proprietà della pagina Web, ecc. Per ulteriori informazioni, consulta le sezioni [Opzioni globali](#global-options) e [Modifica del contenuto](../../web/using/editing-content.md) .
+1. La sezione **top** è un&#39;area di visualizzazione per i messaggi inviati all&#39;utente. Questi messaggi indicano lo stato dell’applicazione Web o la consegna in fase di creazione, nonché gli avvisi e i messaggi di errore relativi al contenuto. Per ulteriori informazioni, consulta [Stato del contenuto HTML](content-editing-best-practices.md#html-content-statuses).
+1. La sezione a **sinistra** della finestra è l’area da modificare. Da quest’area, l’utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti a comparsa: inserire un collegamento in un’immagine, modificare il font, eliminare un campo, ecc. Per ulteriori informazioni, consulta [Modifica di moduli](editing-content.md#editing-forms).
+1. La sezione a **destra** della finestra è l&#39;area del pannello di controllo. Quest’area raggruppa le diverse opzioni per l’editor, in particolare quelle relative alla configurazione dell’intestazione di pagina e delle opzioni generali per un blocco: aggiungere un bordo, collegare un campo di database con un&#39;area di input, accedere alle proprietà della pagina Web, ecc. Per ulteriori informazioni, consulta le sezioni [Opzioni globali](#global-options) e [Modifica del contenuto](editing-content.md) .
 
 ## Opzioni globali {#global-options}
 
@@ -63,7 +63,7 @@ Sono disponibili quattro icone:
    >
    >Le parole chiave devono essere separate da virgole.
 
-## Opzioni blocco {#block-options}
+## Opzioni di blocco {#block-options}
 
 La sezione a destra dell’editor raggruppa le opzioni principali che ti consentono di agire in base al contenuto. Per visualizzare queste opzioni, è necessario selezionare un blocco: la natura di queste opzioni dipende dal blocco selezionato.
 
@@ -71,12 +71,12 @@ La sezione a destra dell’editor raggruppa le opzioni principali che ti consent
 
 Puoi:
 
-* Determinare la visualizzazione di uno o più blocchi, fare riferimento a [Definizione di una condizione di visibilità](../../web/using/editing-content.md#defining-a-visibility-condition),
-* Definire bordi e fotogrammi, fare riferimento a [Aggiunta di un bordo e uno sfondo](../../web/using/editing-content.md#adding-a-border-and-background),
-* Definire gli attributi immagine (dimensione, didascalia), fare riferimento a [Modifica delle proprietà immagine](../../web/using/editing-content.md#editing-image-properties),
-* Collegare il database a un elemento del modulo (area di input, casella di controllo), fare riferimento a [Modifica delle proprietà dei dati per un modulo](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Rendere obbligatoria una parte di un modulo, fare riferimento a [Modifica delle proprietà dei dati per un modulo](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Definire un&#39;azione per un pulsante, fare riferimento a [Aggiunta di un&#39;azione a un pulsante](../../web/using/editing-content.md#adding-an-action-to-a-button).
+* Determinare la visualizzazione di uno o più blocchi, fare riferimento a [Definizione di una condizione di visibilità](editing-content.md#defining-a-visibility-condition),
+* Definire bordi e fotogrammi, fare riferimento a [Aggiunta di un bordo e uno sfondo](editing-content.md#adding-a-border-and-background),
+* Definire gli attributi immagine (dimensione, didascalia), fare riferimento a [Modifica delle proprietà immagine](editing-content.md#editing-image-properties),
+* Collegare il database a un elemento del modulo (area di input, casella di controllo), fare riferimento a [Modifica delle proprietà dei dati per un modulo](editing-content.md#changing-the-data-properties-for-a-form),
+* Rendere obbligatoria una parte di un modulo, fare riferimento a [Modifica delle proprietà dei dati per un modulo](editing-content.md#changing-the-data-properties-for-a-form),
+* Definire un&#39;azione per un pulsante, fare riferimento a [Aggiunta di un&#39;azione a un pulsante](editing-content.md#adding-an-action-to-a-button).
 
 ## Barra dei contenuti {#content-toolbar}
 
