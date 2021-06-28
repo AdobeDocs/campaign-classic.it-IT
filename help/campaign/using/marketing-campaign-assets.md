@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -25,7 +25,7 @@ In una campagna puoi anche fare riferimento ad altri articoli, come coupon promo
 
 >[!NOTE]
 >
->Se utilizzi il modulo Gestione risorse di marketing per Campaign, puoi anche gestire una libreria di risorse di marketing disponibili per diversi utenti per il lavoro collaborativo. [Ulteriori informazioni](../../campaign/using/managing-marketing-resources.md).
+>Se utilizzi il modulo Gestione risorse di marketing per Campaign, puoi anche gestire una libreria di risorse di marketing disponibili per diversi utenti per il lavoro collaborativo. [Ulteriori informazioni](../../mrm/using/managing-marketing-resources.md).
 
 ## Aggiungi documenti {#adding-documents}
 
@@ -102,9 +102,9 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulle risorse di marketing, consulta [questa sezione](../../campaign/using/managing-marketing-resources.md).
+   >Per ulteriori informazioni sulle risorse di marketing, consulta [questa sezione](../../mrm/using/managing-marketing-resources.md).
 
-### Seleziona un profilo {#selecting-an-outline}
+### Selezionare una struttura {#selecting-an-outline}
 
 Per ogni consegna, puoi selezionare il profilo da associare dalla sezione riservata al profilo di estrazione, come nell’esempio seguente:
 
