@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe Campaign viene fornito con un banner di esempio che devi adattare alle tue
 >
 >Per creare un banner personalizzato, devi personalizzare il banner preconfigurato.
 
-Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un&#39;applicazione web](../../web/using/designing-a-web-application.md) .
+Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un&#39;applicazione web](designing-a-web-application.md) .
 
 Se è attivato il tracciamento Web, è possibile disporre di:
 
@@ -64,7 +64,7 @@ Il banner predefinito ha la seguente struttura:
 
 Devi sostituire il **Inserisci qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
 
-Il banner viene fornito con un CSS specifico. Tuttavia, puoi sovrascrivere gli stili durante la creazione e la configurazione di una pagina web. Consulta [questa pagina](../../web/using/content-editor-interface.md).
+Il banner viene fornito con un CSS specifico. Tuttavia, puoi sovrascrivere gli stili durante la creazione e la configurazione di una pagina web. Consulta [questa pagina](content-editor-interface.md).
 
 ## Impostazione del cookie di rinuncia tramite API {#setting-the-opt-out-cookie-using-api}
 
