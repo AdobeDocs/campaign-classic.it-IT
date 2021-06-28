@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Il blocco **[!UICONTROL Browsing]** della scheda **[!UICONTROL Campaigns]** offr
 * **Calendario** campagna: calendario di piani, programmi di marketing, consegne e campagne. Fai riferimento a [Calendario delle campagne](#campaign-calendar).
 * **Campagne**: accesso alle campagne contenute in tutti i programmi di marketing.
 * **Consegne**: accesso alle consegne collegate alle campagne.
-* **Applicazioni** Web: accesso alle applicazioni web (moduli, sondaggi, ecc.).
+* **Applicazioni** Web: accesso ad applicazioni web (moduli, pagine di destinazione, ecc.).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Puoi inoltre utilizzare il campo **[!UICONTROL Search]** per filtrare gli elemen
 
 Le icone collegate a ciascun elemento consentono di visualizzarne lo stato: finito, in corso, in corso, in corso di modifica, ecc.
 
-### Navigazione in un programma di marketing {#browsing-in-a-marketing-program}
+### Esplorazione di un programma di marketing {#browsing-in-a-marketing-program}
 
 Campaign ti consente di gestire un set di programmi composti da varie campagne di marketing. Ogni campagna contiene consegne, processi e risorse associati.
 
@@ -125,7 +125,7 @@ Una campagna centralizza un insieme di consegne. Per ogni campagna, la pianifica
 
 Per ogni campagna, gli operatori possono scambiare messaggi tramite un forum dedicato.
 
-Per ulteriori informazioni, consulta [Forum di discussione](../../campaign/using/discussion-forums.md).
+Per ulteriori informazioni, consulta [Forum di discussione](../../mrm/using/discussion-forums.md).
 
 #### Rapporti {#reports}
 
@@ -151,7 +151,7 @@ Le campagne vengono create tramite modelli di campagna. Puoi configurare modelli
 >
 >Per accedere alle configurazioni della campagna e apportare loro modifiche, fai clic sul collegamento **[!UICONTROL Advanced campaign parameters...]** nella scheda **[!UICONTROL Edit]** . Per ulteriori informazioni sull’impostazione dei parametri a livello di campagna in modo che le consegne ereditino automaticamente i valori, consulta [la nostra nota tecnica](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
-## Utilizzo dell&#39;interfaccia Web {#using-the-web-interface-}
+## Utilizzo dell’interfaccia web {#using-the-web-interface-}
 
 Puoi accedere alle schermate della console Adobe Campaign tramite un browser Internet per visualizzare tutte le campagne e le consegne, nonché i rapporti e le informazioni sui profili nel database. L&#39;accesso non consente la creazione di record. A seconda dei diritti dell’operatore, è possibile visualizzare e/o intervenire sui dati nel database. Ad esempio, puoi approvare il contenuto e il targeting della campagna, riavviare o interrompere una consegna, ecc.
 
