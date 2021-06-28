@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Quando configuri un elenco nella panoramica, puoi scegliere di visualizzare ulte
 >
 >L&#39;aggiornamento delle librerie JavaScript richiede cinque minuti sul server. È possibile riavviare il server per evitare di attendere questo ritardo.
 
-## Filtro e aggiornamento dell&#39;elenco {#filtering-and-updating-the-list}
+## Filtrare e aggiornare l’elenco {#filtering-and-updating-the-list}
 
 In questa sezione verrà creato un filtro per la visualizzazione della panoramica delle applicazioni Web create da un operatore specifico. Questo filtro viene creato con un editor di collegamenti. Dopo aver selezionato un operatore, aggiorna l’elenco per applicare il filtro; questo richiede la creazione di un collegamento di aggiornamento.
 
@@ -169,7 +169,7 @@ Questi due elementi verranno raggruppati nello stesso contenitore per essere rag
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Per informazioni sul layout degli elementi, consulta [questa sezione](../../web/using/about-web-forms.md).
+   Per informazioni sul layout degli elementi, consulta [questa sezione](about-web-forms.md).
 
 1. Applica **dottedFilter**.
 
