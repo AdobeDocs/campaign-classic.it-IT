@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -57,22 +57,22 @@ Per definire la configurazione e il contenuto del modulo Web, attenersi alla seg
 
 * Definisci la sequenza delle pagine e condiziona la visualizzazione.
 
-   Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli web](../../web/using/defining-web-forms-page-sequencing.md).
+   Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
 
 * Traduci il contenuto se necessario.
 
-   Questo passaggio è descritto in [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+   Questo passaggio è descritto in [Traduzione di un modulo web](translating-a-web-form.md).
 
-## Informazioni sulla progettazione di moduli web {#about-web-forms-designing}
+## Informazioni sulla progettazione dei moduli web {#about-web-forms-designing}
 
-Le pagine del modulo vengono create tramite un editor specifico che consente di definire e configurare aree di input (testo), campi di selezione (elenchi, caselle di controllo, ecc.) ed elementi statici (immagini, contenuti HTML, ecc.). Possono essere raggruppati in contenitori e il loro layout viene modificato in base alle tue esigenze (per ulteriori informazioni, consulta [Creazione di contenitori](../../web/using/defining-web-forms-layout.md#creating-containers)).
+Le pagine del modulo vengono create tramite un editor specifico che consente di definire e configurare aree di input (testo), campi di selezione (elenchi, caselle di controllo, ecc.) ed elementi statici (immagini, contenuti HTML, ecc.). Possono essere raggruppati in contenitori e il loro layout viene modificato in base alle tue esigenze (per ulteriori informazioni, consulta [Creazione di contenitori](defining-web-forms-layout.md#creating-containers)).
 
 Nelle sezioni seguenti viene illustrato come definire il contenuto e il layout delle schermate dei moduli:
 
-* [Aggiunta di campi a un modulo web](../../web/using/adding-fields-to-a-web-form.md),
-* [Inserimento di contenuto](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) HTML,
-* [Elementi statici in un modulo web](../../web/using/static-elements-in-a-web-form.md),
-* [Definizione del layout dei moduli web](../../web/using/defining-web-forms-layout.md).
+* [Aggiunta di campi a un modulo web](adding-fields-to-a-web-form.md),
+* [Inserimento di contenuto](static-elements-in-a-web-form.md#inserting-html-content) HTML,
+* [Elementi statici in un modulo web](static-elements-in-a-web-form.md),
+* [Definizione del layout dei moduli web](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
