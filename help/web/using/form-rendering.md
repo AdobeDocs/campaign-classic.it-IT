@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -69,9 +69,9 @@ A questo scopo, utilizza la scheda **[!UICONTROL Advanced]** .
 
 Consente di definire le seguenti proprietà:
 
-* **[!UICONTROL Label position]**: vedere  [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Label position]**: vedere  [Definizione della posizione delle etichette](defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Label format]**: Ritorno a capo o senza ritorno a capo,
-* **[!UICONTROL Number of cells]** : vedere  [Posizionamento dei campi nella pagina](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Number of cells]** : vedere  [Posizionamento dei campi nella pagina](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** (A sinistra, A destra, Al centro) e  **[!UICONTROL Vertical alignment]** (Alto, Basso, Medio),
 * **[!UICONTROL Width]** della zona: può essere espresso in percentuale o in em, punti o pixel (valore predefinito),
 * Massimo **[!UICONTROL Length]**: Numero massimo di caratteri consentiti (per i controlli di tipo Testo, Numero e Password),
@@ -146,17 +146,17 @@ Nella finestra di selezione del campo è possibile scegliere tra i seguenti dati
 
 * La struttura ad albero principale contiene i parametri del contesto del modulo. I parametri predefiniti sono l’identificatore (che corrisponde all’identificatore crittografato del destinatario), la lingua e l’origine.
 
-   Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-properties.md#form-url-parameters).
 
 * La sottostruttura **[!UICONTROL Recipients]** contiene i campi di input inseriti nel modulo e memorizzati nel database.
 
-   Per ulteriori informazioni, consulta [Memorizzazione dei dati nel database](../../web/using/web-forms-answers.md#storing-data-in-the-database).
+   Per ulteriori informazioni, consulta [Memorizzazione dei dati nel database](web-forms-answers.md#storing-data-in-the-database).
 
-* La sottostruttura **[!UICONTROL Variables]** contiene le variabili disponibili per questo modulo. Per ulteriori informazioni, consulta [Memorizzazione dei dati in una variabile locale](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+* La sottostruttura **[!UICONTROL Variables]** contiene le variabili disponibili per questo modulo. Per ulteriori informazioni, consulta [Memorizzazione dei dati in una variabile locale](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Per ulteriori informazioni, consulta il caso d’uso disponibile qui: [Visualizzazione di opzioni diverse a seconda dei valori selezionati](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Per ulteriori informazioni, consulta il caso d’uso disponibile qui: [Visualizzazione di opzioni diverse a seconda dei valori selezionati](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-È inoltre possibile condizionare la visualizzazione delle pagine dei moduli utilizzando l’oggetto **[!UICONTROL Test]** . Per ulteriori informazioni, consulta questa [pagina](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+È inoltre possibile condizionare la visualizzazione delle pagine dei moduli utilizzando l’oggetto **[!UICONTROL Test]** . Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Importazione di elementi da un modulo esistente {#importing-elements-from-an-existing-form}
 
