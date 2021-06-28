@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Sono disponibili i seguenti tipi di campi:
 * Pulsante Scarica . [Caricamento di un file](#uploading-a-file).
 * Costante nascosta. Vedere [Inserimento di una costante nascosta](#inserting-a-hidden-constant).
 
-Specificare la modalità di archiviazione della risposta: aggiorna un campo nel database (memorizza solo l&#39;ultimo valore salvato) o lo archivia in una variabile (la risposta non viene memorizzata). Per ulteriori informazioni, consulta [Campi di archiviazione della risposta](../../web/using/web-forms-answers.md#response-storage-fields).
+Specificare la modalità di archiviazione della risposta: aggiorna un campo nel database (memorizza solo l&#39;ultimo valore salvato) o lo archivia in una variabile (la risposta non viene memorizzata). Per ulteriori informazioni, consulta [Campi di archiviazione della risposta](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Per aggiungere un campo di input, fare clic sul pulsante **[!UICONTROL Input con
 
 * **Numero**: consente all’utente di immettere un numero su una riga. per ulteriori informazioni, consulta [Aggiunta di numeri](#adding-numbers).
 
-   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore inserito sia compatibile con il campo. Per ulteriori informazioni, consulta [Definizione delle impostazioni di controllo](../../web/using/form-rendering.md#defining-control-settings).
+   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore inserito sia compatibile con il campo. Per ulteriori informazioni, consulta [Definizione delle impostazioni di controllo](form-rendering.md#defining-control-settings).
 
 * **Password**: consente all’utente di immettere il testo su una sola riga. Durante l’immissione del testo, i caratteri vengono sostituiti da punti:
 
@@ -90,9 +90,7 @@ Per aggiungere un campo di input, fare clic sul pulsante **[!UICONTROL Input con
 
    >[!CAUTION]
    >
-   >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Lo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML. Per ulteriori informazioni sui tipi di dati negli schemi, consulta il capitolo &quot;Riferimento schema&quot; in [questa sezione](../../configuration/using/about-schema-reference.md).
-   >   
-   >Se utilizzi il modulo **Survey**, puoi memorizzare questo tipo di campo in un campo archiviato che si adatta automaticamente al formato. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
+   >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Lo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML.
 
 * **Testo** arricchito su più righe: consente all’utente di inserire un testo con un layout che verrà memorizzato in formato HTML.
 
@@ -106,7 +104,7 @@ Per aggiungere un campo di input, fare clic sul pulsante **[!UICONTROL Input con
 
    ![](assets/webapp_enrich_text_max.png)
 
-### Configura i campi di input {#configure-input-fields}
+### Configurare i campi di input {#configure-input-fields}
 
 I campi di input sono tutti configurati in base alla stessa modalità, utilizzando le seguenti opzioni:
 
@@ -118,9 +116,9 @@ La modalità di archiviazione delle risposte può essere modificata tramite il c
 
 >[!NOTE]
 >
->Le modalità di archiviazione sono descritte in [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields)
+>Le modalità di archiviazione sono descritte in [Campi di archiviazione di risposta](web-forms-answers.md#response-storage-fields)
 
-La scheda **[!UICONTROL Advanced]** ti consente di definire i parametri di visualizzazione per il campo (posizione delle etichette, allineamento, ecc.). Consultare [Definizione del layout dei moduli web](../../web/using/defining-web-forms-layout.md).
+La scheda **[!UICONTROL Advanced]** ti consente di definire i parametri di visualizzazione per il campo (posizione delle etichette, allineamento, ecc.). Consultare [Definizione del layout dei moduli web](defining-web-forms-layout.md).
 
 ## Aggiunta di elenchi a discesa {#adding-drop-down-lists}
 
@@ -174,7 +172,7 @@ Se il campo di archiviazione (o variabile) è booleano, il valore da assegnare s
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Esempio: Assegna un valore a un campo se è selezionata una casella {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Esempio: Assegnare un valore a un campo se è selezionata una casella {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 Desideriamo inserire una casella di controllo in un modulo per inviare una richiesta di manutenzione, come illustrato di seguito:
 
@@ -200,15 +198,15 @@ I pulsanti di scelta consentono all’utente di scegliere tra una serie di opzio
 >
 >Per rendere obbligatoria la selezione, è necessario creare un elenco di scelte multiple.
 
-### Aggiungi singoli pulsanti {#add-single-buttons}
+### Aggiungi pulsanti singoli {#add-single-buttons}
 
 Per aggiungere un pulsante di scelta a una pagina del modulo, passare al menu **[!UICONTROL Selection controls > Radio button]** nella barra degli strumenti dell’Editor pagina e scegliere una modalità di archiviazione.
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-I pulsanti di scelta sono configurati in modo simile alle caselle di controllo (vedere [Aggiunta di caselle di controllo](#adding-checkboxes)). Tuttavia, non viene assegnato alcun valore se l’opzione non è selezionata. Affinché diversi pulsanti siano interdipendenti, ovvero selezionandone uno automaticamente deseleziona gli altri, è necessario memorizzarli nello stesso campo. Se non sono memorizzati nel database, è necessario utilizzare la stessa variabile locale per l&#39;archiviazione temporanea. Vedere [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields).
+I pulsanti di scelta sono configurati in modo simile alle caselle di controllo (vedere [Aggiunta di caselle di controllo](#adding-checkboxes)). Tuttavia, non viene assegnato alcun valore se l’opzione non è selezionata. Affinché diversi pulsanti siano interdipendenti, ovvero selezionandone uno automaticamente deseleziona gli altri, è necessario memorizzarli nello stesso campo. Se non sono memorizzati nel database, è necessario utilizzare la stessa variabile locale per l&#39;archiviazione temporanea. Vedere [Campi di archiviazione di risposta](web-forms-answers.md#response-storage-fields).
 
-### Aggiungi un elenco di pulsanti {#add-a-list-of-buttons}
+### Aggiungere un elenco di pulsanti {#add-a-list-of-buttons}
 
 Per aggiungere pulsanti di scelta tramite un elenco, vai al menu **[!UICONTROL Selection controls>Multiple choice]** nella barra degli strumenti dell’editor di pagine.
 
@@ -218,8 +216,8 @@ Aggiungi tutti i pulsanti di scelta quante etichette sono presenti. Il vantaggio
 
 >[!NOTE]
 >
->I moduli web non autorizzano la selezione di più valori. È possibile attivare una selezione multipla solo per i moduli di tipo **Survey**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).\
->È tuttavia possibile inserire un campo di tipo **[!UICONTROL Multiple choice]** in un&#39;applicazione Web; ma senza autorizzare la selezione di diversi valori: le opzioni offerte possono essere selezionate mediante pulsanti di scelta.
+>Non è possibile abilitare la selezione multipla in un&#39;applicazione Web.
+>È tuttavia possibile inserire un campo di tipo **[!UICONTROL Multiple choice]** in un&#39;applicazione Web, ma questo non consente all&#39;utente di selezionare più valori.
 
 ## Aggiunta di griglie {#adding-grids}
 
@@ -239,7 +237,7 @@ Il numero di pulsanti di scelta in ogni riga della griglia corrisponde al numero
 
 >[!NOTE]
 >
->Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A questo scopo, vai alla scheda **[!UICONTROL Advanced]** , il display **[!UICONTROL Label position]** è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>Nel nostro esempio, l&#39;etichetta della griglia è nascosta. A questo scopo, vai alla scheda **[!UICONTROL Advanced]** , il display **[!UICONTROL Label position]** è definito come **[!UICONTROL Hidden]** . Vedere [Definizione della posizione delle etichette](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Aggiunta di date e numeri {#adding-dates-and-numbers}
 
@@ -265,7 +263,7 @@ Le date possono essere selezionate tramite un calendario o caselle a discesa. Pu
 
 >[!NOTE]
 >
->Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. Vedere [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+>Per impostazione predefinita, le date utilizzate nei moduli vengono immesse tramite un calendario. Per i moduli multilingue, verificare che i calendari siano disponibili in tutte le lingue utilizzate. Vedere [Traduzione di un modulo web](translating-a-web-form.md).
 
 Tuttavia, in alcuni casi (ad esempio per le date di nascita) può essere più facile utilizzare elenchi a discesa.
 
@@ -322,8 +320,6 @@ L’utente si abbona al servizio selezionando l’opzione pertinente.
 >[!CAUTION]
 >
 >Se l’utente è già iscritto a un servizio informazioni e la casella collegata a questo servizio non è selezionata al momento dell’approvazione del modulo, verrà annullata l’iscrizione.
-
-Esempi di abbonamenti e riferimenti sono disponibili in [questa sezione](../../web/using/about-surveys.md).
 
 ## Inserimento di un captcha {#inserting-a-captcha}
 
