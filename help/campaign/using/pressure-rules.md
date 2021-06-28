@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '3253'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Regole di pressione{#pressure-rules}
 
-## Informazioni sulla fatica di marketing {#about-marketing-fatigue}
+## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
 L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne al fine di inviare il messaggio migliore al pubblico di destinazione.
 
@@ -111,7 +111,7 @@ Puoi indicizzare il numero di messaggi autorizzati in base al segmento a cui app
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Per definire la soglia, puoi utilizzare una dimensione collegata alla dimensione di targeting: ad esempio, per includere i messaggi inviati ai profili dei destinatari memorizzati nella tabella dei visitatori (per ulteriori informazioni sulla tabella dei visitatori, consulta [questa sezione](../../web/using/use-case--creating-a-refer-a-friend-form.md)) o per evitare di inviare più di un messaggio alla settimana alla stessa famiglia (che può fare riferimento a più indirizzi e-mail) identificati in una dimensione collegata a quella dei destinatari.
+Per definire la soglia, puoi utilizzare una dimensione collegata alla dimensione di targeting: ad esempio, per includere i messaggi inviati ai profili dei destinatari memorizzati nella tabella dei visitatori (per ulteriori informazioni sulla tabella dei visitatori, consulta [questa sezione](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) o per evitare di inviare più di un messaggio alla settimana alla stessa famiglia (che può fare riferimento a più indirizzi e-mail) identificati in una dimensione collegata a quella dei destinatari.
 
 A questo scopo, seleziona l’opzione **[!UICONTROL Count messages on a linked dimension]** , quindi seleziona il visitatore o la tabella dei contatti.
 
@@ -214,7 +214,7 @@ Se questo numero supera la soglia, vengono applicate le regole di arbitrato defi
 >
 >Se più consegne hanno lo stesso punteggio, viene inviata la campagna pianificata per la prima data.
 
-## Casi di utilizzo sulle regole di pressione {#use-cases-on-pressure-rules}
+## Casi d’uso sulle regole di pressione {#use-cases-on-pressure-rules}
 
 ### Adeguamento della soglia in base al criterio {#adapting-the-threshold-based-on-criterion}
 
