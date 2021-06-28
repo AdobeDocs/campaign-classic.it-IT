@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Quando si aggiungono lingue di traduzione per un&#39;applicazione Web (o quando 
 
 Adobe Campaign include uno strumento per la traduzione e la gestione delle traduzioni multilingue. Questo editor ti consente di visualizzare le stringhe da tradurre o approvare, di immettere le traduzioni direttamente nell’interfaccia o di importare/esportare le stringhe di caratteri per esternalizzare le traduzioni.
 
-## Gestione delle traduzioni nell&#39;editor {#managing-translations-in-the-editor}
+## Gestione delle traduzioni nell’editor {#managing-translations-in-the-editor}
 
 ### Raccolta di stringhe {#collecting-strings}
 
@@ -51,7 +51,7 @@ La scheda **[!UICONTROL Translations]** consente di immettere le traduzioni per 
 
 La prima volta che apri questa scheda non conterrà alcun dato. Fare clic sul collegamento **[!UICONTROL Collect the strings to translate]** per aggiornare le stringhe nell&#39;applicazione Web.
 
-Adobe Campaign raccoglie le etichette dei campi e delle stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: Blocchi HTML, JavaScript e così via Gli elementi statici sono descritti in [Elementi statici in un modulo web](../../web/using/static-elements-in-a-web-form.md).
+Adobe Campaign raccoglie le etichette dei campi e delle stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: Blocchi HTML, JavaScript e così via Gli elementi statici sono descritti in [Elementi statici in un modulo web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -67,7 +67,7 @@ Quando il processo di raccolta rileva che una traduzione esiste già, questa tra
 
 Per le stringhe di caratteri che non sono mai state tradotte, il campo **[!UICONTROL Text]** è vuoto e lo stato è **[!UICONTROL To translate]**.
 
-### Filtraggio delle stringhe {#filtering-strings}
+### Filtrare le stringhe {#filtering-strings}
 
 Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell&#39;applicazione Web. Sono disponibili due filtri predefiniti: lingua e stato. Fai clic sul pulsante **[!UICONTROL Filters]** , quindi fai clic su **[!UICONTROL By language or status]** per visualizzare le caselle a discesa corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
@@ -93,7 +93,7 @@ Per visualizzare solo le stringhe non tradotte, selezionare **[!UICONTROL To tra
 
    Le traduzioni non approvate vengono visualizzate come **[!UICONTROL Translated]**. Le traduzioni approvate vengono visualizzate come **[!UICONTROL Approved]**.
 
-## Esternalizzazione della traduzione {#externalizing-translation}
+## Esternazione della traduzione {#externalizing-translation}
 
 È possibile esportare e importare le stringhe di caratteri per tradurle utilizzando uno strumento diverso da Adobe Campaign.
 
