@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2222'
 ht-degree: 1%
 
 ---
@@ -297,7 +297,7 @@ La schermata **[!UICONTROL Activities]** della pagina dei dettagli di un visitat
    >
    >Per consentire ad Adobe Campaign di raccogliere i check-in di una ventola, è necessario fare clic sul pulsante **[!UICONTROL Subscribe]** nella schermata di configurazione del servizio. Per ulteriori informazioni, consulta [Configurazione di account esterni](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-## Come precaricare i campi di un modulo utilizzando i dati di profilo di Facebook {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## Come precaricare un modulo utilizzando i dati del profilo di Facebook {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 L’applicazione **[!UICONTROL Social Marketing]** consente inoltre di aggiungere un pulsante a un modulo per precaricare i campi utilizzando le informazioni sul profilo di Facebook. Questa opzione, disponibile in tutti i modelli di applicazione web (**[!UICONTROL Page]** attività di tipo ), è descritta in [questa sezione](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -306,3 +306,55 @@ L’applicazione **[!UICONTROL Social Marketing]** consente inoltre di aggiunger
 >[!NOTE]
 >
 >Prima di iniziare a utilizzare questa funzione, è necessario creare un&#39;applicazione Facebook e un account esterno di tipo **[!UICONTROL Facebook Connect]**. Per ulteriori informazioni, consulta [Configurazione di account esterni](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+**Caricare preventivamente i campi del modulo con i dati provenienti dal profilo Facebook**
+
+Creare un modulo web e includere nelle pagine del modulo gli elementi con i quali l’utente non interagisce; si tratta di elementi statici quali immagini, contenuto HTML, barra orizzontale o collegamento ipertestuale. Ulteriori informazioni sugli elementi statici in un modulo web in [questa pagina](../../web/using/static-elements-in-a-web-form.md).
+
+Quando si inserisce un elemento statico, l’opzione **[!UICONTROL Preload with Facebook]** consente di inserire un pulsante in un modulo per precaricare i campi utilizzando le informazioni sul profilo Facebook.
+
+![](assets/web_social_webapp_037.png)
+
+Quando un utente fa clic sul pulsante **[!UICONTROL Fill in automatically]**, viene visualizzata la finestra di richiesta di autorizzazione di Facebook.
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>Puoi modificare l’elenco dei diritti estesi durante la configurazione dell’account esterno. Se non sono configurati diritti estesi, Facebook inoltra le informazioni di profilo di base per impostazione predefinita.\
+>Per visualizzare l&#39;elenco dei diritti estesi e la relativa sintassi, [consulta la documentazione di Facebook](https://developers.facebook.com/docs/reference/api/permissions).
+
+Se l’utente accetta di condividere le proprie informazioni, i campi del modulo vengono precaricati.
+
+![](assets/web_social_webapp_030.png)
+
+Per questo caso d’uso, abbiamo creato un’applicazione Web composta dai seguenti elementi:
+
+* una pagina contenente il modulo
+* un’attività **[!UICONTROL Record]**
+* un&#39;attività **[!UICONTROL End]**
+
+![](assets/social_webapp_031.png)
+
+Per aggiungere un pulsante di precaricamento, effettua le seguenti operazioni:
+
+1. Creare un modulo.
+
+   ![](assets/social_webapp_032.png)
+
+1. Passa allo stesso livello dei campi del modulo e aggiungi un collegamento.
+
+   ![](assets/social_webapp_033.png)
+
+1. Immetti l’etichetta e seleziona il tipo **[!UICONTROL Button]** .
+
+   ![](assets/social_webapp_034.png)
+
+1. Vai al campo **[!UICONTROL Action]** e seleziona **[!UICONTROL Preload with Facebook]**.
+
+   ![](assets/social_webapp_035.png)
+
+1. Vai al campo **[!UICONTROL Application]** e seleziona il tipo di account esterno **[!UICONTROL Facebook Connect]** creato in precedenza. Per ulteriori informazioni, consulta [questa pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+   ![](assets/social_webapp_036.png)
+
