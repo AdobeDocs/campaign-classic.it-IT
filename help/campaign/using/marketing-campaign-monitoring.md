@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Per ogni campagna, la scheda **[!UICONTROL Tracking]** ti consente di visualizza
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* La sottoscheda **[!UICONTROL Tasks]** raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritti in [questa sezione](../../campaign/using/creating-and-managing-tasks.md).
+* La sottoscheda **[!UICONTROL Tasks]** raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritti in [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -35,7 +35,7 @@ Per ogni campagna, la scheda **[!UICONTROL Tracking]** ti consente di visualizza
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
-## Tracciamento consegna {#delivery-tracking}
+## Tracciamento delle consegne {#delivery-tracking}
 
 L’elenco delle consegne è disponibile tramite il collegamento **[!UICONTROL Deliveries]** del nodo Campaign.
 
