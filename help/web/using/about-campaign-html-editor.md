@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: cbfaf6a2c187ad62f7b6c9042b69f5e522fcfd02
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Con Digital Content Editor è possibile inserire e formattare gli elementi di pa
 >
 >È necessario fare riferimento a tutte le risorse esterne con un URL HTTPS.
 
-## Passaggi fondamentali per l’utilizzo dell’editor di contenuti digitali {#content-editor-general-operation}
+## Passaggi fondamentali per l’utilizzo dell’Editor di contenuti digitali {#content-editor-general-operation}
 
 Questa sezione presenta i passaggi chiave per modificare e caricare il contenuto modificato con il DCE, nel contesto di un’applicazione web e di una progettazione di consegna.
 
@@ -37,22 +37,22 @@ L&#39;operazione generale è la seguente:
 
 Per creare una semplice **applicazione web**, è necessario:
 
-1. Creare un&#39;applicazione web - [Ulteriori informazioni](../../web/using/creating-a-landing-page.md)
-1. Seleziona il contenuto esistente o crea contenuto da un modello standard - [Ulteriori informazioni](../../web/using/template-management.md)
-1. Modifica e configura il contenuto - [Ulteriori informazioni](../../web/using/editing-content.md)
-1. Pubblica l&#39;applicazione Web - [Ulteriori informazioni](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
+1. Creare un&#39;applicazione web - [Ulteriori informazioni](creating-a-landing-page.md)
+1. Seleziona il contenuto esistente o crea contenuto da un modello standard - [Ulteriori informazioni](template-management.md)
+1. Modifica e configura il contenuto - [Ulteriori informazioni](editing-content.md)
+1. Pubblica l&#39;applicazione Web - [Ulteriori informazioni](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->Un esempio di implementazione completo nel contesto di un&#39;applicazione web è disponibile in [questa sezione](../../web/using/creating-a-landing-page.md).
+>Un esempio di implementazione completo nel contesto di un&#39;applicazione web è disponibile in [questa sezione](creating-a-landing-page.md).
 
 Per creare una **consegna e-mail**, è necessario:
 
-1. Creare una consegna da un modello DCE - [Ulteriori informazioni](../../web/using/use-case--creating-an-email-delivery.md)
-1. Seleziona un contenuto esistente o creane uno da un [modello standard](../../web/using/template-management.md)
+1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case--creating-an-email-delivery.md)
+1. Seleziona un contenuto esistente o creane uno da un [modello standard](template-management.md)
 1. Modifica e configurazione del contenuto online
 1. Invia la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Un esempio di implementazione completo nel contesto di una consegna e-mail è disponibile in [questo caso d’uso](../../web/using/use-case--creating-an-email-delivery.md).
+>Un esempio di implementazione completo nel contesto di una consegna e-mail è disponibile in [questo caso d’uso](use-case--creating-an-email-delivery.md).
