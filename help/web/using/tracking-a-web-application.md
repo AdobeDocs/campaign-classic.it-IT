@@ -6,16 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # Tracciare le visite in un’applicazione web{#tracking-a-web-application}
 
-Adobe Campaign consente di monitorare e misurare le visite sulle pagine delle applicazioni Web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni web (moduli, sondaggi online, pagine web create utilizzando DCE, ecc.).
+Adobe Campaign consente di monitorare e misurare le visite sulle pagine delle applicazioni Web inserendo tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni Web (moduli, pagine web, ecc.).
 
 È quindi possibile definire diversi percorsi di navigazione e valutarne il successo. I dati recuperati sono quindi disponibili nei rapporti di ogni applicazione.
 
@@ -38,7 +38,7 @@ I principali miglioramenti descritti in questa versione sono i seguenti:
 
    Inoltre, un grafico di tipo **Settore** mostra la popolazione in base alla relativa origine.
 
-## Identificazione dell&#39;origine del traffico {#identifying-the-traffic-source}
+## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
 
 È possibile utilizzare due modalità diverse per identificare la provenienza del visitatore all’accesso a un’applicazione Web:
 
@@ -55,13 +55,11 @@ Per identificare l&#39;origine del traffico in un&#39;applicazione Web, Adobe Ca
 
 >[!NOTE]
 >
->Il tracciamento anonimo è possibile solo se l’opzione corrispondente è stata attivata nella procedura guidata di distribuzione.
->
->Per ulteriori informazioni, consulta la [Guida all’installazione](../../installation/using/deploying-an-instance.md).
+>Il tracciamento anonimo è disponibile solo se l’opzione è stata attivata nella procedura guidata di distribuzione durante l’installazione di Campaign.
 
 ## Applicazioni web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni sull&#39;editor di contenuti digitali (DCE), consulta [questa sezione](../../web/using/about-campaign-html-editor.md).
+Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni sull&#39;editor di contenuti digitali (DCE), consulta [questa sezione](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
