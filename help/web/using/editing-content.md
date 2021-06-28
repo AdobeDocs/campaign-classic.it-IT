@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Puoi aggiungere un **bordo** a un blocco selezionato. I bordi sono definiti util
 
 ## Modifica dei moduli {#editing-forms}
 
-### Modifica delle proprietà dei dati per un modulo {#changing-the-data-properties-for-a-form}
+### Modifica delle proprietà dei dati di un modulo {#changing-the-data-properties-for-a-form}
 
 È possibile collegare i campi del database con aree di input, pulsanti di scelta o blocchi di tipo casella di controllo.
 
@@ -91,7 +91,7 @@ Ciò significa che puoi:
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
-## Aggiunta di un&#39;azione a un pulsante {#adding-an-action-to-a-button}
+## Aggiunta di un’azione a un pulsante {#adding-an-action-to-a-button}
 
 Quando l’utente fa clic su un pulsante, è possibile definire un’azione associata. A questo scopo, seleziona l’azione da eseguire dall’elenco a discesa.
 
@@ -158,7 +158,7 @@ Selezionare l&#39;applicazione Web dal campo corrispondente.
 
 L&#39;elenco delle applicazioni Web suggerite corrisponde alle applicazioni disponibili nel nodo **[!UICONTROL Resources > Online > Web Applications]**.
 
-### Collegamento a un&#39;azione {#link-to-an-action}
+### Collegamento a un’azione {#link-to-an-action}
 
 L&#39;opzione **Collegamento che definisce un&#39;azione** ti consente di configurare un&#39;azione quando fai clic su un elemento sorgente.
 
@@ -179,7 +179,7 @@ Quando è stato inserito un collegamento, la barra degli strumenti offre due nuo
 >
 >Se il collegamento viene eliminato, il contenuto viene comunque mantenuto.
 
-## Modifica degli attributi dei font {#changing-font-attributes}
+## Modifica degli attributi del font {#changing-font-attributes}
 
 Quando si seleziona un elemento di testo, è possibile modificare gli attributi del font (stile, formato).
 
@@ -193,7 +193,7 @@ Le opzioni disponibili sono le seguenti:
 * **** Icona corsivo: rende il testo selezionato in corsivo (con il   `<em> </em>` tag)
 * **** Icona di sottolineatura: rende sottolineato il testo selezionato (applica al testo il  `<span style="text-decoration: underline;">` tag)
 * **Allinea** a sinistra: allinea il testo a sinistra del blocco selezionato (aggiungi style=&quot;text-align: sinistra;&quot;)
-* **** Centroicona: centra il testo per il blocco selezionato (aggiungi style=&quot;text-align: centrale;&quot;)
+* **** Icona centrale: centra il testo per il blocco selezionato (aggiungi style=&quot;text-align: centrale;&quot;)
 * **Allinea a** destra: allinea il testo a destra del blocco selezionato (aggiungi style=&quot;text-align: a destra;&quot;)
 * **Modifica l’** icona del colore di sfondo: consente di modificare il colore di sfondo del blocco selezionato (aggiungi style=&quot;background-color: rgba(170, 86, 255, 0.87))
 * **Cambia** colore del testo: consente di modificare il colore del testo del blocco selezionato o solo del testo selezionato (`<span style="color: #CODE">`)
@@ -214,7 +214,7 @@ L’editor di contenuti digitali consente di lavorare su **qualsiasi tipo di imm
 >
 >Non è necessario richiamare file esterni in un tag **script** della pagina HTML. Questi file non verranno importati sul server Adobe Campaign.
 
-### Aggiunta/eliminazione/duplicazione di un&#39;immagine {#adding---deleting---duplicating-an-image}
+### Aggiunta/eliminazione/duplicazione di un’immagine {#adding---deleting---duplicating-an-image}
 
 Per inserire un&#39;immagine, seleziona un blocco di tipo Immagine e fai clic sull&#39;icona **Immagine**.
 
@@ -253,7 +253,7 @@ Per impostazione predefinita, i campi offerti provengono dalla tabella **[!UICON
 
 Il nome del campo viene visualizzato nell’editor, evidenziato in giallo. Al momento della generazione della personalizzazione (ad esempio, durante l’anteprima di una pagina di destinazione), questa viene sostituita dal profilo del destinatario con targeting.
 
-Un esempio è presentato nella sezione [Inserimento di un campo di personalizzazione](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) .
+Un esempio è presentato nella sezione [Inserimento di un campo di personalizzazione](creating-a-landing-page.md#inserting-a-personalization-field) .
 
 ### Inserimento di un blocco di personalizzazione {#inserting-a-personalization-block}
 
@@ -263,4 +263,4 @@ L’opzione **Blocco di personalizzazione** consente di inserire blocchi dinamic
 
 Una volta inserito, il nome del blocco di personalizzazione viene visualizzato nell’editor, evidenziato in giallo. Viene automaticamente adattato al profilo del destinatario quando viene generata la personalizzazione.
 
-Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire blocchi di personalizzazione personalizzati, consulta [questa pagina](../../delivery/using/personalization-blocks.md).
+Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire i blocchi di personalizzazione personalizzati, consulta [questa pagina](../../delivery/using/personalization-blocks.md).
