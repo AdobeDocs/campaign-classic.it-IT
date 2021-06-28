@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -68,7 +68,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Risorse di marketing (MRM)<br /> </td> 
-   <td> Controlla le azioni di marketing in modalità collaborativa fornendo la gestione e il tracciamento delle attività, dei budget e delle risorse di marketing. <a href="../../campaign/using/about-marketing-resource-management.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Controlla le azioni di marketing in modalità collaborativa fornendo la gestione e il tracciamento delle attività, dei budget e delle risorse di marketing. <a href="../../mrm/using/about-marketing-resource-management.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Sondaggi online (Gestore sondaggi)<br /> </td> 
-   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni sul profilo, per effettuare l’abbonamento, per annullare l’iscrizione o per creare un modulo di partecipazione al concorso. Facoltativo. <a href="../../web/using/about-surveys.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni sul profilo, per effettuare l’abbonamento, per annullare l’iscrizione o per creare un modulo di partecipazione al concorso. Facoltativo. <a href="../../surveys/using/about-surveys.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
