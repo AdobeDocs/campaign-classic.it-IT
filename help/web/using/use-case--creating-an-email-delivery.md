@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Il nostro obiettivo finale è quello di creare una consegna con un modello perso
 >
 >Prima di iniziare, è necessario disporre di almeno un **modello HTML** configurato per ospitare il contenuto delle consegne future.
 >
->Nella consegna **[!UICONTROL Properties]**, accertati che **[!UICONTROL Content editing mode]** (nella scheda **[!UICONTROL Advanced]** ) sia impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell&#39;editor, consulta le [best practice per la modifica dei contenuti](../../web/using/content-editing-best-practices.md).
+>Nella consegna **[!UICONTROL Properties]**, accertati che **[!UICONTROL Content editing mode]** (nella scheda **[!UICONTROL Advanced]** ) sia impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell&#39;editor, consulta le [best practice per la modifica dei contenuti](content-editing-best-practices.md).
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
@@ -54,13 +54,13 @@ Puoi anche importare un contenuto HTML creato al di fuori di Adobe Campaign sele
 
 ![](assets/dce_select_from_file_template.png)
 
-Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato un modello di contenuto personalizzato, puoi visualizzarlo in anteprima dall’elenco dei modelli. Per ulteriori informazioni, consulta [Gestione dei modelli](../../web/using/template-management.md).
+Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato un modello di contenuto personalizzato, puoi visualizzarlo in anteprima dall’elenco dei modelli. Per ulteriori informazioni, consulta [Gestione dei modelli](template-management.md).
 
 >[!CAUTION]
 >
 >Se utilizzi l&#39; **interfaccia Web Adobe Campaign**, devi importare un file .zip contenente il contenuto HTML e le immagini correlate.
 
-## Passaggio 4 - Progettazione del messaggio {#step-4---designing-the-message}
+## Passaggio 4: progettare il messaggio {#step-4---designing-the-message}
 
 * Visualizza il nome e il secondo nome dei destinatari
 
@@ -70,7 +70,7 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
 * Inserire un collegamento in un’immagine
 
-   Per portare i destinatari a un indirizzo esterno tramite un’immagine, fai clic sull’immagine corrispondente per visualizzare la barra degli strumenti a comparsa, posiziona il cursore sulla prima icona e fai clic su **[!UICONTROL Link to an external URL]**. Per ulteriori informazioni, consulta [Aggiunta di un collegamento](../../web/using/editing-content.md#adding-a-link).
+   Per portare i destinatari a un indirizzo esterno tramite un’immagine, fai clic sull’immagine corrispondente per visualizzare la barra degli strumenti a comparsa, posiziona il cursore sulla prima icona e fai clic su **[!UICONTROL Link to an external URL]**. Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -80,7 +80,7 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
 * Inserire un collegamento nel testo
 
-   Per integrare un collegamento esterno nel testo della consegna, seleziona un testo o un blocco di testo, quindi fai clic sulla prima icona nella barra degli strumenti a comparsa. Fai clic su **[!UICONTROL Link to an external URL]**, immetti l’indirizzo del collegamento nel campo **[!UICONTROL URL]** . Per ulteriori informazioni, consulta [Aggiunta di un collegamento](../../web/using/editing-content.md#adding-a-link).
+   Per integrare un collegamento esterno nel testo della consegna, seleziona un testo o un blocco di testo, quindi fai clic sulla prima icona nella barra degli strumenti a comparsa. Fai clic su **[!UICONTROL Link to an external URL]**, immetti l’indirizzo del collegamento nel campo **[!UICONTROL URL]** . Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
 
    Il collegamento può essere modificato in qualsiasi momento utilizzando la sezione a destra della finestra.
 
@@ -102,7 +102,7 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
 * Integrare un collegamento a un’applicazione Web
 
-   L’editor di contenuti digitali consente di integrare i collegamenti alle applicazioni Web dalla console Adobe Campaign, ad esempio una pagina di destinazione o una pagina del modulo. Per ulteriori informazioni, consulta [Collegamento a un&#39;applicazione Web](../../web/using/editing-content.md#link-to-a-web-application).
+   L’editor di contenuti digitali consente di integrare i collegamenti alle applicazioni Web dalla console Adobe Campaign, ad esempio una pagina di destinazione o una pagina del modulo. Per ulteriori informazioni, consulta [Collegamento a un&#39;applicazione Web](editing-content.md#link-to-a-web-application).
 
    Selezionare un campo di testo per il collegamento a un&#39;applicazione Web, quindi fare clic sulla prima icona. Scegli **[!UICONTROL Link to a Web application]**, quindi seleziona l&#39;applicazione desiderata facendo clic sull&#39;icona alla fine del campo **Applicazione web**.
 
