@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Campaign ti consente di definire i provider di servizi che saranno coinvolti nei lavori svolti all’interno delle campagne. Dal punto di vista principale, l’amministratore di Adobe Campaign definisce le informazioni relative ai fornitori di servizi e alle relative strutture di costo. Il fornitore di servizi è indicato dalla consegna e le sue strutture di costo consentono il calcolo dei costi associati a tale consegna e la gestione delle scorte in questione.
 
-## Creazione di fornitori di servizi e relative strutture dei costi {#creating-service-providers-and-their-cost-structures}
+## Creazione di fornitori di servizi e relative strutture di costo {#creating-service-providers-and-their-cost-structures}
 
 Ogni provider di servizi viene salvato in un file con i dati di contatto, i modelli di servizio e i relativi processi.
 
@@ -221,7 +221,7 @@ Per creare un nuovo stock, effettuate le seguenti operazioni:
    >
    >Per ulteriori informazioni, consulta [Creazione di provider di servizi e relative strutture di costo](#creating-service-providers-and-their-cost-structures).
 
-#### Aggiunta di linee di scorta {#adding-stock-lines}
+#### Aggiunta di linee di materiale {#adding-stock-lines}
 
 Una scorta comprende varie linee di scorta. Una linea di magazzino contiene una quantità iniziale di risorse che verranno utilizzate dalle consegne. Ciascuna linea di magazzino indica la quantità consumata, la quantità in magazzino e la quantità ordinata.
 
@@ -241,7 +241,7 @@ Fai clic sul pulsante **[!UICONTROL Create]** per definire i parametri di stock.
 
 * Indicare la soglia dalla quale gli operatori devono essere avvisati per ordinare le scorte nel campo **[!UICONTROL Alert level]**. Una volta raggiunto il livello di avviso, nella finestra di approvazione delle consegne che utilizzano questo stock viene visualizzato un messaggio di avviso.
 
-#### Associazione di un titolo alle categorie di costo {#associating-a-stock-with-cost-categories}
+#### Associazione di un titolo a categorie di costo {#associating-a-stock-with-cost-categories}
 
 Per un determinato fornitore di servizi, in un servizio, una linea di magazzino può essere referenziata da una delle categorie di costi, come segue:
 
@@ -249,7 +249,7 @@ Per un determinato fornitore di servizi, in un servizio, una linea di magazzino 
 
 ### Tracciamento delle scorte {#stock-tracking}
 
-#### Avvisi agli operatori {#alerting-operators}
+#### Operatori di avvisi {#alerting-operators}
 
 Viene visualizzato un avviso quando una scorta a cui si fa riferimento in una consegna è insufficiente. Ad esempio, quando un file di estrazione viene approvato viene visualizzato il seguente avviso:
 
@@ -285,8 +285,8 @@ I costi di consegna di una campagna sono consolidati a livello di campagna e i c
 
 ### Implementazione {#implementation}
 
-In una campagna, quando selezioni il budget devi inserire l&#39;importo iniziale. I costi calcolati saranno aggiornati automaticamente in base al livello di impegno degli importi inseriti (spese effettuate, attese, riservate, impegnate). Vedere [Calcolo degli importi](../../campaign/using/controlling-costs.md#calculating-amounts).
+In una campagna, quando selezioni il budget devi inserire l&#39;importo iniziale. I costi calcolati saranno aggiornati automaticamente in base al livello di impegno degli importi inseriti (spese effettuate, attese, riservate, impegnate). Vedere [Calcolo degli importi](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->La procedura per la creazione di budget è illustrata in [Creazione di un budget](../../campaign/using/controlling-costs.md#creating-a-budget).
+>La procedura per la creazione di budget è illustrata in [Creazione di un budget](../../mrm/using/controlling-costs.md#creating-a-budget).
