@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 2%
+source-wordcount: '965'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Sono possibili i seguenti metodi di identificazione:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   I campi possono essere aggiunti alle proprietà del modulo tramite la scheda **[!UICONTROL Parameters]** (consulta [Aggiunta di parametri](../../web/using/defining-web-forms-properties.md#adding-parameters)). Vengono inseriti nell’URL del modulo o nelle aree di input.
+   I campi possono essere aggiunti alle proprietà del modulo tramite la scheda **[!UICONTROL Parameters]** (consulta [Aggiunta di parametri](defining-web-forms-properties.md#adding-parameters)). Vengono inseriti nell’URL del modulo o nelle aree di input.
 
    >[!CAUTION]
    >
@@ -71,7 +71,7 @@ Ad esempio, puoi precaricare il genere del destinatario e indirizzarlo automatic
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
-## Gestione della consegna e del tracking dei moduli web {#managing-web-forms-delivery-and-tracking}
+## Gestione della consegna e del tracciamento dei moduli web {#managing-web-forms-delivery-and-tracking}
 
 Una volta creato, configurato e pubblicato il modulo, è possibile consegnarlo e tenere traccia delle risposte dell’utente.
 
@@ -81,7 +81,7 @@ Il ciclo di vita di un modulo prevede tre fasi:
 
 1. **Modulo in corso di modifica**
 
-   Questa è la fase di progettazione iniziale. Quando viene creato un nuovo modulo, questo si trova nella fase di modifica. L’accesso al modulo, solo a scopo di test, richiede l’utilizzo del parametro **[!UICONTROL __uuid]** nel relativo URL. Questo URL è accessibile nella sottoscheda **[!UICONTROL Preview]** . Consulta [Parametri URL del modulo](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Questa è la fase di progettazione iniziale. Quando viene creato un nuovo modulo, questo si trova nella fase di modifica. L’accesso al modulo, solo a scopo di test, richiede l’utilizzo del parametro **[!UICONTROL __uuid]** nel relativo URL. Questo URL è accessibile nella sottoscheda **[!UICONTROL Preview]** . Consulta [Parametri URL del modulo](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -123,9 +123,9 @@ Per essere accessibile agli utenti, il modulo deve essere in produzione e deve e
 
 * Fai clic sul collegamento **[!UICONTROL Personalize the message displayed if the form is closed...]** per definire il messaggio di errore da visualizzare se l’utente tenta di accedere al modulo quando non è valido.
 
-   Vedere [Accessibilità del modulo](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Vedere [Accessibilità del modulo](defining-web-forms-properties.md#accessibility-of-the-form).
 
-### Invio di un modulo tramite e-mail {#delivering-a-form-via-email}
+### Distribuzione di un modulo tramite e-mail {#delivering-a-form-via-email}
 
 Quando invii un invito tramite e-mail, puoi utilizzare l’opzione **[!UICONTROL Adobe Campaign Encryption]** per la riconciliazione dei dati. A questo scopo, passa alla procedura guidata di consegna e adatta il collegamento al modulo aggiungendo il seguente parametro:
 
@@ -135,7 +135,7 @@ Quando invii un invito tramite e-mail, puoi utilizzare l’opzione **[!UICONTROL
 
 In questo caso, la chiave di riconciliazione per l’archiviazione dei dati deve essere l’identificatore crittografato del destinatario. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](#pre-loading-the-form-data).
 
-In questo caso, devi selezionare l’opzione **[!UICONTROL Update the preloaded record]** nella casella di record. Per ulteriori informazioni, consulta [Salvataggio delle risposte ai moduli web](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+In questo caso, devi selezionare l’opzione **[!UICONTROL Update the preloaded record]** nella casella di record. Per ulteriori informazioni, consulta [Salvataggio delle risposte ai moduli web](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
@@ -154,7 +154,3 @@ Seleziona un destinatario e fai clic sul pulsante **[!UICONTROL Detail...]** per
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 È possibile elaborare i registri di risposta forniti nelle query, ad esempio per eseguire il targeting solo per i non rispondenti durante l’invio di promemoria o per offrire comunicazioni specifiche solo ai rispondenti.
-
->[!NOTE]
->
->Per un tracciamento completo delle risposte fornite, esporta le risposte e visualizza o crea rapporti dedicati, utilizza il modulo opzionale **Survey** . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-surveys.md).
