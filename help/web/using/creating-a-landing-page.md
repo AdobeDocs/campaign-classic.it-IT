@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -47,9 +47,9 @@ Verrà quindi visualizzata la seguente sequenza:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione di un&#39;applicazione Web, consulta [questa sezione](../../web/using/creating-a-new-web-application.md).
+>Per ulteriori informazioni sulla creazione di un&#39;applicazione Web, consulta [questa sezione](creating-a-new-web-application.md).
 
-## Passaggio 1 - Selezione e caricamento dei modelli {#step-1---selecting-and-loading-templates}
+## Passaggio 1: selezionare e caricare i modelli {#step-1---selecting-and-loading-templates}
 
 In questa sezione verrà illustrato come **importare contenuto HTML** per ogni pagina dell&#39;applicazione Web.
 
@@ -90,7 +90,7 @@ Applicare questi passaggi per ogni pagina inserita nell&#39;applicazione Web.
 >
 >**Il DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello HTML che possono apparire nell&#39;interfaccia Adobe Campaign. Questi errori non sono correlati all&#39;editor. Per verificare che non ci siano errori nei file importati, si consiglia di testarli in un browser (Internet Explorer / Firefox / Chrome) prima di importare i file nel DCE.
 
-## Passaggio 2 - Configurazione del contenuto {#step-2---configuring-the-content}
+## Passaggio 2: configurazione del contenuto {#step-2---configuring-the-content}
 
 In questa sezione verrà regolato il contenuto importato e verranno collegati i campi del database al modulo della pagina web. L&#39;applicazione Web creata in precedenza è:
 
@@ -153,7 +153,7 @@ Il campo di personalizzazione ha uno sfondo giallo nell’editor.
 
 ![](assets/dce_uc1_edit_champperso.png)
 
-## Passaggio 3: pubblicazione dei contenuti {#step-3---publishing-content}
+## Passaggio 3 - Pubblicazione del contenuto {#step-3---publishing-content}
 
 Il contenuto viene pubblicato dal dashboard dell&#39;applicazione Web. Fai clic sul pulsante **[!UICONTROL Publish]** per eseguirlo.
 
