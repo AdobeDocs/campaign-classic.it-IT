@@ -6,14 +6,14 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 6%
 
 ---
 
-# Guida introduttiva al modello dati di Campaign {#about-data-model}
+# Introduzione al modello dati di Campaign {#about-data-model}
 
 Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione. Le tabelle principali e i concetti sono elencati in questa pagina.
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni sulla tabella Destinatario, consulta [questa sezione]
 
 Il modello dati include anche una parte dedicata all’archiviazione di tutte le attività di marketing. Di solito si tratta della tabella Consegna (**NmsDelivery**). Ogni record in questa tabella rappresenta un&#39;azione di consegna o un modello di consegna. Contiene tutti i parametri necessari per eseguire consegne quali target, contenuto e così via.
 
-### Registra tabelle {#log-tables}
+### Tabelle dei registri {#log-tables}
 
 Un’altra parte del modello dati consente di memorizzare temporaneamente tutti i registri associati all’esecuzione delle campagne.
 
@@ -43,13 +43,13 @@ I registri di consegna e di tracciamento vengono eliminati dopo un certo periodo
 
 Infine, parte del modello dati è costituita da dati tecnici utilizzati per il processo applicativo, inclusi gli operatori e i diritti utente (**NmsGroup**), cartelle (**XtkFolder**).
 
-## Utilizzo della tabella Destinatario predefinita {#default-recipient-table}
+## Utilizzo della tabella Destinatario incorporata {#default-recipient-table}
 
-La tabella dei destinatari predefinita in Adobe Campaign fornisce un buon punto di partenza per la creazione del modello dati. Dispone di una serie di campi predefiniti e di collegamenti alle tabelle che possono essere facilmente estesi. Questa funzione è particolarmente utile quando esegui principalmente il targeting dei destinatari, perché si adatta a un semplice modello dati incentrato sui destinatari.
+La tabella Destinatario incorporata in Adobe Campaign fornisce un buon punto di partenza per la creazione del modello dati. Dispone di una serie di campi predefiniti e di collegamenti alle tabelle che possono essere facilmente estesi. Questa funzione è particolarmente utile quando esegui principalmente il targeting dei destinatari, perché si adatta a un semplice modello dati incentrato sui destinatari.
 
-I vantaggi dell’utilizzo della tabella Destinatario standard sono i seguenti:
+I vantaggi dell’utilizzo della tabella Destinatario incorporata sono i seguenti:
 
-* Utilizzo standard di funzionalità quali abbonamenti, elenchi di seed, sondaggi, social e così via.
+* Utilizzo di funzionalità integrate quali abbonamenti, elenchi di seed e altro ancora.
 * Fornire un database di marketing con un modello dati incentrato sul destinatario.
 * Implementazione più rapida.
 * Facile manutenzione da parte del supporto e dei partner.
