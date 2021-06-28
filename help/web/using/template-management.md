@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Quando si crea un’applicazione Web di tipo Pagina di destinazione, l’utente 
 
 ![](assets/dce_popup_templatechoice.png)
 
-Per aggiungere un modello, fare riferimento a [Opzioni globali](../../web/using/content-editor-interface.md#global-options).
+Per aggiungere un modello, fare riferimento a [Opzioni globali](content-editor-interface.md#global-options).
 
 ## Salvataggio di una consegna come modello {#saving-a-delivery-as-a-template}
 
