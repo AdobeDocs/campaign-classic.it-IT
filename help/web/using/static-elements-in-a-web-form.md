@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 4%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Sono disponibili i seguenti tipi di campi:
    >
    >Sul lato server, lo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-## Inserimento di contenuto HTML {#inserting-html-content}
+## Inserisci contenuto HTML {#inserting-html-content}
 
 È possibile includere il contenuto HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, video e così via
 
@@ -46,9 +46,9 @@ Per inserire un campo di database, utilizza il pulsante di personalizzazione.
 
 >[!NOTE]
 >
->Le stringhe immesse nell’editor HTML vengono tradotte solo se sono definite nella sottoscheda **[!UICONTROL Texts]** . Altrimenti non saranno raccolti. Per ulteriori informazioni, consulta [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+>Le stringhe immesse nell’editor HTML vengono tradotte solo se sono definite nella sottoscheda **[!UICONTROL Texts]** . Altrimenti non saranno raccolti. Per ulteriori informazioni, consulta [Traduzione di un modulo web](translating-a-web-form.md).
 
-### Inserimento di un collegamento {#inserting-a-link}
+### Inserire un collegamento {#inserting-a-link}
 
 Compila i campi nella finestra di modifica come mostrato nell’esempio seguente:
 
@@ -85,7 +85,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questa [pagina](../../web/using/defining-web-forms-page-sequencing.md).
+   È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questa [pagina](defining-web-forms-page-sequencing.md).
 
    Il collegamento sostituirà il pulsante **[!UICONTROL Next]** utilizzato per impostazione predefinita.
 
@@ -107,68 +107,15 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla sequenza di pagine in un modulo web, consulta [Definizione della sequenza di pagine dei moduli web](../../web/using/defining-web-forms-page-sequencing.md).
+   >Per ulteriori informazioni sulla sequenza di pagine in un modulo web, consulta [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
 
-* Caricare preventivamente i campi del modulo con i dati provenienti dal profilo Facebook
-
-   >[!CAUTION]
-   >
-   >Questa funzione è disponibile solo se è stata installata l&#39;applicazione **[!UICONTROL Social Marketing]**. Per utilizzare questa opzione, devi creare un’applicazione Facebook insieme a un account esterno di tipo **[!UICONTROL Facebook Connect]**. Per ulteriori informazioni, consulta [questa pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-   L’opzione **[!UICONTROL Preload with Facebook]** ti consente di inserire un pulsante in un modulo per precaricare i campi utilizzando le informazioni di profilo di Facebook.
-
-   ![](assets/web_social_webapp_037.png)
-
-   Quando un utente fa clic sul pulsante **[!UICONTROL Fill in automatically]**, viene visualizzata la finestra di richiesta di autorizzazione di Facebook.
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >È possibile modificare l’elenco dei diritti estesi durante la configurazione dell’account esterno. Se non si immettono diritti estesi, Facebook inoltra le informazioni di profilo di base per impostazione predefinita.\
-   >Per visualizzare l&#39;elenco dei diritti estesi e la relativa sintassi, fai clic qui: [https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   Se l’utente accetta di condividere le proprie informazioni, i campi del modulo vengono precaricati.
-
-   ![](assets/web_social_webapp_030.png)
-
-Per questo caso d’uso, abbiamo creato un’applicazione Web composta dai seguenti elementi:
-
-* una pagina contenente il modulo
-* un’attività **[!UICONTROL Record]**
-* un&#39;attività **[!UICONTROL End]**
-
-![](assets/social_webapp_031.png)
-
-Per aggiungere un pulsante di precaricamento, effettua le seguenti operazioni:
-
-1. Creare un modulo.
-
-   ![](assets/social_webapp_032.png)
-
-1. Passa allo stesso livello dei campi del modulo e aggiungi un collegamento.
-
-   ![](assets/social_webapp_033.png)
-
-1. Immetti l’etichetta e seleziona il tipo **[!UICONTROL Button]** .
-
-   ![](assets/social_webapp_034.png)
-
-1. Vai al campo **[!UICONTROL Action]** e seleziona **[!UICONTROL Preload with Facebook]**.
-
-   ![](assets/social_webapp_035.png)
-
-1. Vai al campo **[!UICONTROL Application]** e seleziona il tipo di account esterno **[!UICONTROL Facebook Connect]** creato in precedenza. Per ulteriori informazioni, consulta [questa pagina](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-   ![](assets/social_webapp_036.png)
-
-### Personalizzazione del contenuto HTML {#personalizing-html-content}
+### Personalizzare il contenuto HTML {#personalizing-html-content}
 
 È possibile personalizzare il contenuto HTML di una pagina del modulo con i dati registrati in una pagina precedente. Ad esempio, è possibile creare un modulo Web di assicurazione auto la cui prima pagina consente di fornire informazioni di contatto e il marchio dell&#39;auto.
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Utilizza i campi di personalizzazione per inserire nuovamente il nome utente e il marchio selezionato nella pagina successiva. La sintassi da utilizzare dipende dalla modalità di archiviazione delle informazioni. Per ulteriori informazioni, consulta [Utilizzo delle informazioni raccolte](../../web/using/web-forms-answers.md#using-collected-information).
+Utilizza i campi di personalizzazione per inserire nuovamente il nome utente e il marchio selezionato nella pagina successiva. La sintassi da utilizzare dipende dalla modalità di archiviazione delle informazioni. Per ulteriori informazioni, consulta [Utilizzo delle informazioni raccolte](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
@@ -187,11 +134,11 @@ Questo produce il seguente risultato:
 
 ![](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
-### Uso delle variabili di testo {#using-text-variables}
+### Usa variabili di testo {#using-text-variables}
 
 La scheda **[!UICONTROL Text]** ti consente di creare campi variabili che possono essere utilizzati nell’HTML tra i caratteri &lt;%= e %> con la seguente sintassi: **$(IDENTIFIER)**.
 
-Utilizza questo metodo per localizzare facilmente le stringhe. Vedere [Traduzione di un modulo web](../../web/using/translating-a-web-form.md)
+Utilizza questo metodo per localizzare facilmente le stringhe. Vedere [Traduzione di un modulo web](translating-a-web-form.md)
 
 Ad esempio, puoi creare un campo **Contact** che ti consente di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto HTML. Per farlo, segui la procedura indicata di seguito:
 
@@ -214,9 +161,9 @@ Ad esempio, puoi creare un campo **Contact** che ti consente di visualizzare la 
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Questa modalità operativa consente di definire il testo dei moduli web una sola volta e di gestire le traduzioni utilizzando lo strumento di traduzione integrato. Per ulteriori informazioni, consulta [Traduzione di un modulo web](../../web/using/translating-a-web-form.md).
+Questa modalità operativa consente di definire il testo dei moduli web una sola volta e di gestire le traduzioni utilizzando lo strumento di traduzione integrato. Per ulteriori informazioni, consulta [Traduzione di un modulo web](translating-a-web-form.md).
 
-## Inserimento di immagini {#inserting-images}
+## Inserisci immagini {#inserting-images}
 
 Affinché le immagini possano essere incluse nei moduli, è necessario salvarle su un server accessibile dall’esterno.
 
