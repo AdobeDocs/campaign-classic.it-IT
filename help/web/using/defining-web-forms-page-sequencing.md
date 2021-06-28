@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Per ogni pagina è possibile eliminare i pulsanti **[!UICONTROL Next]** o **[!UI
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-È possibile sostituire questi pulsanti con i collegamenti. Consulta [Inserimento di contenuto HTML](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+È possibile sostituire questi pulsanti con i collegamenti. Consulta [Inserimento di contenuto HTML](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## Inserimento di un salto {#inserting-a-jump}
 
@@ -47,7 +47,7 @@ La destinazione può essere:
 
    ![](assets/s_ncs_admin_survey_jump_comment.png)
 
-## Esempio: accesso a un altro modulo in base a un parametro dell&#39;URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
+## Esempio: accesso a un altro modulo in base a un parametro dell’URL {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
 Nell’esempio seguente, si desidera configurare un modulo Web che, una volta approvato, visualizzerà un altro modulo designato da un parametro dell’URL. A questo scopo, esegui i seguenti passaggi:
 
@@ -55,7 +55,7 @@ Nell’esempio seguente, si desidera configurare un modulo Web che, una volta ap
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Nelle proprietà del modulo, aggiungere un parametro (**next**) memorizzato in una variabile locale (**next**). Le variabili locali sono descritte in [Memorizzazione dei dati in una variabile locale](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+1. Nelle proprietà del modulo, aggiungere un parametro (**next**) memorizzato in una variabile locale (**next**). Le variabili locali sono descritte in [Memorizzazione dei dati in una variabile locale](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -73,7 +73,7 @@ Nell’esempio seguente, si desidera configurare un modulo Web che, una volta ap
 
 ## Inserimento di un collegamento a un’altra pagina del modulo {#inserting-a-link-to-another-page-of-the-form}
 
-È possibile inserire collegamenti ad altre pagine del modulo. A questo scopo, aggiungi alla pagina un elemento statico di tipo **[!UICONTROL Link]** . Per ulteriori informazioni, consulta [Inserimento di un collegamento](../../web/using/static-elements-in-a-web-form.md#inserting-a-link).
+È possibile inserire collegamenti ad altre pagine del modulo. A questo scopo, aggiungi alla pagina un elemento statico di tipo **[!UICONTROL Link]** . Per ulteriori informazioni, consulta [Inserimento di un collegamento](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Visualizzazione della pagina condizionale {#conditional-page-display}
 
@@ -89,7 +89,7 @@ Ad esempio, puoi visualizzare una pagina diversa per i clienti che hanno già or
 
 >[!NOTE]
 >
->Le modalità di archiviazione sono descritte in [Campi di archiviazione di risposta](../../web/using/web-forms-answers.md#response-storage-fields).
+>Le modalità di archiviazione sono descritte in [Campi di archiviazione di risposta](web-forms-answers.md#response-storage-fields).
 
 Nel nostro esempio, vogliamo utilizzare una variabile:
 
@@ -107,7 +107,7 @@ Quindi, definisci la sequenza di pagine quando una o più condizioni sono soddis
 
 ### Visualizzazione in base ai parametri {#display-based-on-parameters}
 
-È inoltre possibile personalizzare la sequenza delle pagine in base ai parametri di inizializzazione del modulo Web o ai valori memorizzati nel database. Consulta [Parametri URL del modulo](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+È inoltre possibile personalizzare la sequenza delle pagine in base ai parametri di inizializzazione del modulo Web o ai valori memorizzati nel database. Consulta [Parametri URL del modulo](defining-web-forms-properties.md#form-url-parameters).
 
 ## Aggiunta di script {#adding-scripts}
 
