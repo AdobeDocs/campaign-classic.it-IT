@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -31,11 +31,11 @@ Prima di iniziare questo caso d’uso, è necessario avere accesso a un sondaggi
 >
 >Questo caso d’uso può essere implementato solo se hai acquisito l’opzione **Survey Manager** . Controlla il contratto di licenza.
 
-## Passaggio 1 - Creazione del flusso di lavoro di raccolta e archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
+## Passaggio 1: creazione del flusso di lavoro di raccolta e archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Per raccogliere le risposte al sondaggio, effettua le seguenti operazioni:
 
-1. Crea un flusso di lavoro e inserisci un’attività **[!UICONTROL Answers to a survey]** . Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Crea un flusso di lavoro e inserisci un’attività **[!UICONTROL Answers to a survey]** . Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Modifica l’attività e seleziona il sondaggio di cui desideri analizzare le risposte.
 1. Attiva l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 
