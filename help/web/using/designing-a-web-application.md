@@ -6,30 +6,24 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 4%
 
 ---
 
 # Progettare un’applicazione web{#designing-a-web-application}
 
-Le applicazioni web vengono create e gestite in base allo stesso principio dei [sondaggi online](../../web/using/about-surveys.md).
-
-Tuttavia, le differenze funzionali sono le seguenti:
-
-* Le applicazioni Web non utilizzano campi archiviati. I dati possono pertanto essere memorizzati solo nei campi del database o nelle variabili locali.
-* Non sono presenti report incorporati nelle applicazioni Web.
-* Sono disponibili campi aggiuntivi, principalmente per la creazione di tabelle e grafici.
+Le applicazioni web vengono create e gestite in base allo stesso principio di [moduli web](about-web-forms.md).
 
 >[!CAUTION]
 >
->Si consiglia vivamente di controllare continuamente le configurazioni applicate al fine di rilevare eventuali errori nella fase iniziale del processo di costruzione dell&#39;applicazione Web. Per controllare il rendering di una modifica, salva l&#39;applicazione, quindi fai clic sulla sottoscheda **[!UICONTROL Preview]** .
+>Utilizza la sottoscheda **[!UICONTROL Preview]** per controllare gli errori durante la progettazione di applicazioni web.
 >
->Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non possono essere visualizzate dall&#39;utente finale.
+>Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
 
-## Inserimento di grafici in un&#39;applicazione Web {#inserting-charts-in-a-web-application}
+## Inserimento di grafici in un’applicazione Web {#inserting-charts-in-a-web-application}
 
 È possibile includere grafici nelle applicazioni Web. A questo scopo, utilizzare l’elenco a discesa dei grafici nella barra delle attività per selezionare il tipo di grafico da inserire.
 
@@ -49,7 +43,7 @@ Per aggiungere una tabella, utilizzare l’elenco a discesa delle tabelle nella 
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## Applicazioni Web di tipo Panoramica {#overview-type-web-applications}
+## Applicazioni web di tipo Panoramica {#overview-type-web-applications}
 
 L’interfaccia di Adobe Campaign utilizza molte applicazioni web per accedere, gestire e interagire con destinatari, consegne, campagne, stock, ecc.
 
@@ -57,7 +51,7 @@ Vengono visualizzate nell’interfaccia sotto forma di dashboard con una sola pa
 
 Le applicazioni Web predefinite sono memorizzate nel nodo **[!UICONTROL Administration > Configuration > Web applications]**.
 
-## Modifica di applicazioni Web di tipo form {#edit-forms-type-web-applications}
+## Modifica di applicazioni Web di tipo modulo {#edit-forms-type-web-applications}
 
 Le applicazioni Web di modifica per un extranet sono caratterizzate da:
 
@@ -70,4 +64,3 @@ Le applicazioni Web di modifica per un extranet sono caratterizzate da:
 
    Mentre le applicazioni Web di tipo &quot;Panoramica&quot; dispongono tutte di una singola pagina, i moduli di modifica possono offrire una sequenza di pagine in base a criteri specifici (test, selezioni, profilo dell’operatore connesso, ecc.).
 
-Il funzionamento di questo tipo di applicazione Web è simile a **Sondaggi**, ma senza gestione della cronologia o archiviazione dei campi. Gli utenti di solito vi accedono tramite una pagina di accesso in cui devono identificarsi.
