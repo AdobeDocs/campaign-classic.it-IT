@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3048'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Sono disponibili le seguenti opzioni:
 * **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, elenco Bloccati i destinatari non verranno contattati,
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non viene eseguita su indirizzi duplicati.
 
-### Parametri del tentativo {#retry-parameters}
+### Parametri del nuovo tentativo {#retry-parameters}
 
 Le informazioni sui recuperi sono fornite nei campi **Periodi di recupero** e **Numero di recuperi**: quando un destinatario non è raggiungibile, ad esempio se la casella in entrata è piena, per impostazione predefinita il programma tenta di contattarli 5 volte, con un intervallo di un&#39;ora tra ogni tentativo (durante il tempo massimo di consegna). Questi valori possono essere modificati in base alle tue esigenze.
 
@@ -143,7 +143,7 @@ Indica i parametri per la connessione all’account per il recupero delle e-mail
 
 Una volta specificate le impostazioni POP, fare clic su **Test** per assicurarsi che siano corrette.
 
-### Mail non recapitate non elaborate {#unprocessed-bounce-mails}
+### Messaggi non recapitati non elaborati {#unprocessed-bounce-mails}
 
 I rimbalzi vengono gestiti automaticamente da Adobe Campaign, applicando le regole elencate nel nodo **Amministrazione > Gestione campagna > Gestione non consegnabili > Qualificazione del registro di consegna** . Per ulteriori informazioni, consulta [Gestione della posta non recapitata](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
@@ -157,7 +157,7 @@ I messaggi non recapitati non elaborati non vengono visualizzati nell’interfac
 >
 >Per inoltrare le e-mail non recapitate non elaborate, l’Adobe consiglia di compilare solo il campo **[!UICONTROL Address for errors]** . Tuttavia, assicurati che l&#39;indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe comportare un carico pesante sul server di posta. Per ulteriori informazioni, contatta il tuo account executive.
 
-## Tracking della configurazione {#tracking-configuration}
+## Configurazione del tracciamento {#tracking-configuration}
 
 Il passaggio successivo ti consente di configurare il tracciamento per l’istanza. L&#39;istanza deve essere dichiarata e registrata con i server di tracciamento.
 
@@ -372,7 +372,7 @@ Potete specificare più maschere URL utilizzando una virgola per separarle.
 
 ### Modalità di pubblicazione {#publication-modes}
 
-La sezione inferiore della procedura guidata consente di selezionare le opzioni di pubblicazione delle risorse pubbliche e delle immagini. Queste opzioni sono disponibili anche per i moduli web e i sondaggi.
+La sezione inferiore della procedura guidata consente di selezionare le opzioni di pubblicazione delle risorse pubbliche e delle immagini.
 
 Sono disponibili le seguenti modalità di pubblicazione:
 
