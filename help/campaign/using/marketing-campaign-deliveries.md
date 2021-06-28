@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 3%
@@ -116,7 +116,7 @@ L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle
 
 ## Gestione dei documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, eccetera. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -126,7 +126,7 @@ In una campagna puoi anche fare riferimento ad altri articoli, come coupon promo
 
 >[!NOTE]
 >
->Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per lavori collaborativi. Consulta [Gestione delle risorse di marketing](../../campaign/using/managing-marketing-resources.md).
+>Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per lavori collaborativi. Consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
 ### Aggiunta di documenti {#adding-documents}
 
@@ -203,7 +203,7 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulle risorse di marketing, consulta [Gestione delle risorse di marketing](../../campaign/using/managing-marketing-resources.md).
+   >Per ulteriori informazioni sulle risorse di marketing, consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
 #### Selezione di una struttura {#selecting-an-outline}
 
