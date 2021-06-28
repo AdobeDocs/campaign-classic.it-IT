@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati avanzati sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 96%
          + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-      + [Connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
       + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opzioni di assistenza e supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
@@ -261,12 +261,6 @@ ht-degree: 96%
       + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
       + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
       + [Fornitori, scorte e budget](campaign/using/providers--stocks-and-budgets.md)
-   + Attività, risorse e budget {#tasks--resources-and-budgets}
-      + [Informazioni sulla gestione delle risorse di marketing](campaign/using/about-marketing-resource-management.md)
-      + [Creare e gestire le attività](campaign/using/creating-and-managing-tasks.md)
-      + [Controllare i costi](campaign/using/controlling-costs.md)
-      + [Gestire le risorse di marketing](campaign/using/managing-marketing-resources.md)
-      + [Forum di discussione](campaign/using/discussion-forums.md)
    + Ottimizzazione di Campaign{#campaign-optimization}
       + [Informazioni sulle tipologie di campagne](campaign/using/about-campaign-typologies.md)
       + [Regole di pressione](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 96%
       + [Regole di filtro](campaign/using/filtering-rules.md)
       + [Applicare le regole](campaign/using/applying-rules.md)
       + [Simulazioni delle campagne](campaign/using/campaign-simulations.md)
-   + Marketing distribuito {#distributed-marketing}
-      + [Informazioni sul marketing distribuito](campaign/using/about-distributed-marketing.md)
-      + [Creare una campagna locale](campaign/using/creating-a-local-campaign.md)
-      + [Creare una campagna collaborativa](campaign/using/creating-a-collaborative-campaign.md)
-      + [Pubblicare il pacchetto della campagna](campaign/using/publishing-the-campaign-package.md)
-      + [Accedere alle campagne](campaign/using/accessing-campaigns.md)
-      + [Tracciare una campagna](campaign/using/tracking-a-campaign.md)
-      + [Casi d’uso](campaign/using/examples.md)
-   + Gestione risposte {#response-manager}
-      + [Introduzione a Gestione risposte](campaign/using/about-response-manager.md)
-      + [Configurazione](campaign/using/configuration.md)
-      + [Modelli di ipotesi](campaign/using/hypothesis-templates.md)
-      + [Creare ipotesi](campaign/using/creating-hypotheses.md)
-      + [Tracciamento delle ipotesi](campaign/using/hypothesis-tracking.md)
++ Gestione delle risorse marketing {#mrm}
+   + [Informazioni sulla gestione delle risorse di marketing](mrm/using/about-marketing-resource-management.md)
+   + [Creare e gestire le attività](mrm/using/creating-and-managing-tasks.md)
+   + [Controllare i costi](mrm/using/controlling-costs.md)
+   + [Gestire le risorse di marketing](mrm/using/managing-marketing-resources.md)
+   + [Forum di discussione](mrm/using/discussion-forums.md)
++ Marketing distribuito {#distributed-marketing}
+   + [Informazioni sul marketing distribuito](campaign/using/about-distributed-marketing.md)
+   + [Creare una campagna locale](campaign/using/creating-a-local-campaign.md)
+   + [Creare una campagna collaborativa](campaign/using/creating-a-collaborative-campaign.md)
+   + [Pubblicare il pacchetto della campagna](campaign/using/publishing-the-campaign-package.md)
+   + [Accedere alle campagne](campaign/using/accessing-campaigns.md)
+   + [Tracciare una campagna](campaign/using/tracking-a-campaign.md)
+   + [Casi d’uso](campaign/using/examples.md)
++ Gestione risposte {#response-manager}
+   + [Introduzione a Gestione risposte](campaign/using/about-response-manager.md)
+   + [Configurazione](campaign/using/configuration.md)
+   + [Modelli di ipotesi](campaign/using/hypothesis-templates.md)
+   + [Creare ipotesi](campaign/using/creating-hypotheses.md)
+   + [Tracciamento delle ipotesi](campaign/using/hypothesis-tracking.md)
 + Progettare e condividere i rapporti {#reporting}
    + Introduzione alla generazione di rapporti {#reporting-in-adobe-campaign}
       + [Strumenti di reporting](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 96%
       + [Creare indicatori](reporting/using/creating-indicators.md)
       + [Usare i cubi per esplorare i dati](reporting/using/using-cubes-to-explore-data.md)
       + [Concetti e metodologia](reporting/using/concepts-and-methodology.md)
-      + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Progettare contenuti web {#designing-content}
    + Applicazioni web {#web-applications}
       + [Introduzione alle applicazioni web](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 96%
       + [Definire le proprietà dei moduli web](web/using/defining-web-forms-properties.md)
       + [Pubblicare un modulo web](web/using/translating-a-web-form.md)
       + [Casi d’uso: moduli web](web/using/use-cases--web-forms.md)
-   + Sondaggi online {#online-surveys}
-      + [Introduzione ai sondaggi](web/using/about-surveys.md)
-      + [Passaggi chiave per creare un sondaggio](web/using/getting-started-with-surveys.md)
-      + [Progettare un sondaggio](web/using/building-a-survey.md)
-      + [Gestire le risposte](web/using/managing-answers.md)
-      + [Pubblicare, tracciare e utilizzare i dati raccolti](web/using/publish--track-and-use-collected-data.md)
-      + [Configurare i sondaggi](web/using/configuring-surveys.md)
-      + [Caso d’uso: creare un modulo di riferimento](web/using/use-case--creating-a-refer-a-friend-form.md)
++ Creazione di sondaggi online {#online-surveys}
+   + [Introduzione ai sondaggi](surveys/using/about-surveys.md)
+   + [Passaggi chiave per creare un sondaggio](surveys/using/getting-started-with-surveys.md)
+   + [Progettare un sondaggio](surveys/using/building-a-survey.md)
+   + [Gestire le risposte](surveys/using/managing-answers.md)
+   + [Pubblicare, tracciare e utilizzare i dati raccolti](surveys/using/publish--track-and-use-collected-data.md)
+   + [Configurare i sondaggi](surveys/using/configuring-surveys.md)
+   + [Caso d’uso: creare un modulo di riferimento](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Integrare con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Informazioni sulle integrazioni di Campaign](integrations/using/about-campaign-integrations.md)
    + Condivisione del pubblico {#audience-sharing}
@@ -586,7 +586,7 @@ ht-degree: 96%
       + [Elaborazione di eventi](message-center/using/about-event-processing.md)
       + [Esecuzione della consegna](message-center/using/delivery-execution.md)
    + Rapporti {#reports}
-      + [Accedere ai rapporti di messaggistica transazionale](message-center/using/about-transactional-messaging-reports.md)
+      + [Rapporti sui rapporti di messaggistica transazionale](message-center/using/about-transactional-messaging-reports.md)
       + [Cronologia degli eventi del Centro messaggi](message-center/using/history-of-message-center-events.md)
       + [Livello di servizio del Centro messaggi](message-center/using/message-center-service-level.md)
       + [Tempo di elaborazione del Centro messaggi](message-center/using/message-center-processing-time.md)
