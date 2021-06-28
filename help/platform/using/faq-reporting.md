@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Scopri come [esplorare i tuoi dati](../../reporting/using/using-cubes-to-explore
 
 ## Posso creare un report dalle risposte a un sondaggio online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Per scoprire come progettare un report per visualizzare le risposte di un sondaggio online, leggi [questo caso d’uso](../../reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md).
+Per scoprire come progettare un report per visualizzare le risposte di un sondaggio online, leggi [questo caso d’uso](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md).
 
 ## Come posso condividere l’accesso al mio report nell’interfaccia di Campaign? {#how-can-i-share-access-to-my-report}
 
