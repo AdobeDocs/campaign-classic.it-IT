@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -115,9 +115,9 @@ Per salvare le informazioni raccolte nelle pagine di un modulo, è necessario in
 
 Esistono due modi per utilizzare questa casella:
 
-* Se l’accesso al modulo web è effettuato tramite un collegamento inviato in un messaggio e-mail e se l’utente che accede all’applicazione è già nel database, è possibile selezionare l’opzione **[!UICONTROL Update the preloaded record]**. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Se l’accesso al modulo web è effettuato tramite un collegamento inviato in un messaggio e-mail e se l’utente che accede all’applicazione è già nel database, è possibile selezionare l’opzione **[!UICONTROL Update the preloaded record]**. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. Devi configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. Devi configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
