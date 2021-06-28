@@ -6,7 +6,7 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
@@ -33,7 +33,7 @@ Il ciclo della campagna di marketing in Adobe Campaign illustra le principali ar
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Profilo cliente integrato {#integrated-customer-profile}
+### Integrated Customer Profile {#integrated-customer-profile}
 
 I profili (clienti, potenziali clienti, abbonati a newsletter, ecc.) sono centralizzati nel database di Adobe Campaign. Esistono molti possibili meccanismi per l’acquisizione di profili e la creazione di questo database: raccolta on-line tramite moduli web, importazione manuale o automatica di file di testo, replica con database aziendali o altri sistemi di informazioni. Con Adobe Campaign, puoi incorporare la cronologia di marketing, le informazioni di acquisto, le preferenze, i dati di gestione delle relazioni con i clienti ed eventuali dati PII rilevanti in una vista consolidata per analizzare e intraprendere azioni.
 
@@ -53,7 +53,7 @@ La funzionalità avanzata di gestione dei dati estende le funzionalità di elabo
 
 ### Personalizzazione e interazione in tempo reale {#personalization-and-real-time-interaction}
 
-Attira l’attenzione dei clienti e migliora i tassi di risposta grazie alla personalizzazione avanzata dei contenuti dei messaggi e delle intestazioni in base ai profili e alle preferenze dei clienti. Per ulteriori informazioni sulla gestione e la personalizzazione del contenuto dei messaggi, consulta [questa pagina](../../delivery/using/about-personalization.md). La gestione collaborativa dei contenuti, le notifiche e i circuiti di approvazione sono descritti in [questa sezione](../../campaign/using/about-marketing-resource-management.md).
+Attira l’attenzione dei clienti e migliora i tassi di risposta grazie alla personalizzazione avanzata dei contenuti dei messaggi e delle intestazioni in base ai profili e alle preferenze dei clienti. Per ulteriori informazioni sulla gestione e la personalizzazione del contenuto dei messaggi, consulta [questa pagina](../../delivery/using/about-personalization.md). La gestione collaborativa dei contenuti, le notifiche e i circuiti di approvazione sono descritti in [questa sezione](../../mrm/using/about-marketing-resource-management.md).
 
 ### Analisi e reporting {#analysis-and-reporting}
 
@@ -71,13 +71,13 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 
 * [Canali](../../delivery/using/steps-about-delivery-creation-steps.md): progettare e inviare consegne su vari canali: e-mail, SMS, Line, app mobile, direct mail,
 * [Campagna](../../campaign/using/designing-marketing-campaigns.md): orchestrare campagne cross-channel,
-* [MRM](../../campaign/using/about-marketing-resource-management.md): gestire risorse di marketing e budget,
+* [MRM](../../mrm/using/about-marketing-resource-management.md): gestire risorse di marketing e budget,
 * [Interazione](../../interaction/using/interaction-and-offer-management.md): gestione delle offerte con Campaign,
 * [Centro messaggi](../../message-center/using/about-transactional-messaging.md): inviare messaggi transazionali tramite e-mail, SMS o su app mobili,
 * [Social marketing](../../social/using/about-social-marketing.md): comunicare sui social media: Facebook, Twitter,
 * [Flusso di lavoro](../../workflow/using/about-workflows.md) / Gestione dati: automatizzare i processi e gestire i dati con i flussi di lavoro,
 * [Applicazioni web](../../web/using/about-web-applications.md): creare pagine e moduli web,
-* [Gestione dei sondaggi](../../web/using/about-surveys.md): creare sondaggi e votazioni online,
+* [Gestione dei sondaggi](../../surveys/using/about-surveys.md): creare sondaggi e votazioni online,
 * [Gestione dei contenuti](../../delivery/using/about-content-management.md): gestire il contenuto delle e-mail,
 * [Marketing distribuito](../../campaign/using/about-distributed-marketing.md): campagne coordinate per enti centrali e locali,
 * [Gestione della risposta](../../campaign/using/about-response-manager.md): gestire la risposta dei clienti,
