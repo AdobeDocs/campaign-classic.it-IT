@@ -117,7 +117,7 @@ ht-degree: 97%
          + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
       + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opzioni di assistenza e supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
@@ -579,14 +579,14 @@ ht-degree: 97%
    + Modelli di messaggio {#message-templates}
       + [Creare tipi di evento](message-center/using/creating-event-types.md)
       + [Progettare modelli di messaggio](message-center/using/creating-the-message-template.md)
-      + [Test dei modelli di messaggio](message-center/using/testing-message-templates.md)
+      + [Testare modelli di messaggio](message-center/using/testing-message-templates.md)
       + [Pubblicare modelli di messaggio](message-center/using/publishing-message-templates.md)
    + Elaborazione di eventi transazionali {#processing}
       + [Descrizione di un evento](message-center/using/event-description.md)
       + [Elaborazione di eventi](message-center/using/about-event-processing.md)
       + [Esecuzione della consegna](message-center/using/delivery-execution.md)
    + Rapporti {#reports}
-      + [Rapporti sui rapporti di messaggistica transazionale](message-center/using/about-transactional-messaging-reports.md)
+      + [Accedere ai rapporti di messaggistica transazionale](message-center/using/about-transactional-messaging-reports.md)
       + [Cronologia degli eventi del Centro messaggi](message-center/using/history-of-message-center-events.md)
       + [Livello di servizio del Centro messaggi](message-center/using/message-center-service-level.md)
       + [Tempo di elaborazione del Centro messaggi](message-center/using/message-center-processing-time.md)
@@ -677,7 +677,7 @@ ht-degree: 97%
             + [Passaggi di configurazione](installation/using/configure-fda.md)
             + [Configurare Vertica](installation/using/configure-fda-vertica.md)
             + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
-            + [Configura Google BigQuery](installation/using/configure-fda-google-big-query.md)
+            + [Configurare Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Configurare Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Configurare Hadoop](installation/using/configure-fda-hadoop.md)
             + [Configurare Oracle](installation/using/configure-fda-oracle.md)
