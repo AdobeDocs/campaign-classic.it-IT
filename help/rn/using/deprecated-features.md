@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><p>A partire dalla versione 21.1 di Campaign, il rapporto tecnico di monitoraggio della consegna e-mail è diventato obsoleto.</p>
    <p>Se necessario, puoi ricevere per e-mail questo rapporto ogni giorno, fino alla data in cui la funzione verrà rimossa. Per richiederlo, apri un <a href="https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e indica il nome dell’istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
    <p>Adobe consiglia di interagire con il team Deliverability per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
-  <p><em>Data di rimozione target: fine 2021</em></p>
+  <p><em>Data prevista di rimozione: fine 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -82,7 +82,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
    <td><p>A partire dalla versione Campaign 21.1.3, il canale fax non è più disponibile. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Ulteriori informazioni</a></p>
   <tr>
   <td>Dominio demdex<br></td>
-  <td><p> A partire dalla versione 21.1.3 di Campaign, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud non è più disponibile. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
+  <td><p> A partire dalla versione di Campaign 21.1.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
   </td>
   </td>
   </tr>
@@ -230,7 +230,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 ### Connettori SMS {#sms-eol}
 
-Adobe Campaign non è compatibile con i seguenti connettori SMS:
+ Adobe Campaign non è compatibile con i seguenti connettori SMS:
 
 * SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)
 * Sybase365 (SAP SMS 365)
