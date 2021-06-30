@@ -69,7 +69,7 @@ In **[!UICONTROL Administration]** > **[!UICONTROL Access Management]** > **[!UI
 
 ![](assets/privacy-right.png)
 
-### Namespace {#namesspaces}
+### Spazi dei nomi {#namesspaces}
 
 Prima di creare le richieste di accesso a dati personali, è necessario definire lo spazio dei nomi che verrà utilizzato. Questa chiave verrà utilizzata per identificare l’interessato nel database di Adobe Campaign.
 
