@@ -6,9 +6,9 @@ feature: Panoramica
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4466'
+source-wordcount: '4456'
 ht-degree: 99%
 
 ---
@@ -33,7 +33,7 @@ Nuovo connettore FDA Vertica - [Ulteriori informazioni](../../installation/using
 
 Nuovo connettore FDA Google Big Query - [Ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md)
 
-La descrizione del flusso di lavoro tecnico “Fatturazione (fatturazione” include ora le attività originariamente eseguite dal “Numero di profili di fatturazione attivi (billingActiveContactCount)”. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
+La descrizione del flusso di lavoro tecnico “Fatturazione (billing)” include ora le attività originariamente eseguite dal “Numero di profili di fatturazione attivi (billingActiveContactCount)”. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
 
 ## Maggio 2021 {#may-2021}
 
@@ -43,13 +43,13 @@ I requisiti della console client di Campaign sono stati aggiornati nella matrice
 
 La procedura di installazione della console client di Campaign è stata migliorata e chiarita. [Leggi tutto](../../installation/using/installing-the-client-console.md)
 
-È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Ulteriori informazioni](../../technotes/tracked-urls.md)
+È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Leggi tutto](../../technotes/tracked-urls.md)
 
 ## Aprile 2021 {#april-2021}
 
 È stata aggiunta una nuova sezione su come lavorare con le origini e le destinazioni di Adobe Experience Platform per condividere i dati tra Campaign Classic e Adobe Real-time Customer Data Platform (RTCDP). [Leggi tutto](../../integrations/using/get-started-sources-destinations.md)
 
-È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Ulteriori informazioni](../../delivery/using/update-bounce-qualification.md)
+È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
 
 ## Marzo 2021 {#march-2021}
 
@@ -128,7 +128,7 @@ Le domande frequenti sulla privacy sono state spostate in [questa sezione](../..
 
 Il protocollo del connettore SMS e la pagina delle sue impostazioni sono ora descritti [qui](../../delivery/using/sms-protocol.md).
 
-È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Ulteriori informazioni](../../message-center/using/about-event-processing.md#event-collection)
+È stata aggiunta una nota alla sezione **Messaggistica transazionale** per segnalare che, onde evitare problemi di diritti di accesso, le cartelle degli eventi non devono essere impostate come viste nelle istanze di esecuzione. [Leggi tutto](../../message-center/using/about-event-processing.md#event-collection)
 
 ## Novembre 2020 {#nov-2020}
 
@@ -252,7 +252,7 @@ La Panoramica sulla Gestione della privacy è stata aggiornata con informazioni 
 
 Sono state aggiunte informazioni sui registri e sul comportamento dei flussi di lavoro secondari in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
-Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTROL Scheduler]**. [Ulteriori informazioni](../../workflow/using/scheduler.md)
+Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTROL Scheduler]**. [Leggi tutto](../../workflow/using/scheduler.md)
 
 ## Giugno 2020 {#june-2020}
 
@@ -304,7 +304,7 @@ La sezione Risoluzione dei problemi di recapito messaggi è stata spostata e mig
 
 La sezione Invio di e-mail transazionali con allegati è stata spostata e aggiornata. [Leggi tutto](../../message-center/using/transactional-email-with-attachments.md)
 
-La sezione sulle best practice relative ai pacchetti dati è stata spostata e aggiornata. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#data-package-best-practices)
+La sezione sulle best practice relative ai pacchetti dati è stata spostata e aggiornata. [Leggi tutto](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## Aprile 2020 {#april-2020}
 
@@ -334,7 +334,7 @@ Nella home page della documentazione sono stati aggiunti altri collegamenti chia
 
 È ora disponibile una nuova sezione in cui sono elencate le diverse lingue disponibili in Adobe Campaign. [Leggi tutto](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Le linee guida per la gestione degli accessi sono state aggiornate con ulteriori informazioni sui diritti denominati. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md)
+Le linee guida per la gestione degli accessi sono state aggiornate con ulteriori informazioni sui diritti denominati. [Leggi tutto](../../platform/using/access-management-named-rights.md)
 
 ## Febbraio 2020 {#february-2020}
 
@@ -462,13 +462,13 @@ La guida introduttiva sulle best practice per le consegne è stata aggiornata. [
 
 ## Ottobre 2019 {#october-2019}
 
-L’elenco dei messaggi di errore per Campaign è stato aggiornato. [Leggi tutto](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+L’elenco dei messaggi di errore per Campaign è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 La guida introduttiva al GDPR è stata migliorata e arricchita. È ora diventata una documentazione sulla gestione della privacy che include GDPR e CCPA. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)
 
 È stata aggiunta una nuova pagina per la risoluzione dei problemi relativi al tracking in Campaign Classic. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/classic-tracking-troubleshooting.html).
 
-È stata aggiunta una nuova pagina di best practice per Adobe Analytics Connector. [Ulteriori informazioni su Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
+È stata aggiunta una nuova pagina di best practice per il connettore Adobe Analytics. [Ulteriori informazioni sul connettore Adobe Analytics](../../platform/using/adobe-analytics-connector.md)
 
 La guida introduttiva sulle best practice per le consegne è stata spostata e aggiornata. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
@@ -516,7 +516,7 @@ La descrizione dell’opzione del flusso di lavoro di pre-elaborazione è stata 
 
 La nota tecnica Trigger di Marketing Cloud è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
 
-L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Sono state aggiunte ulteriori informazioni sui metodi di autenticazione SOAP per la messaggistica transazionale. [Leggi tutto](../../message-center/using/event-description.md)
 
