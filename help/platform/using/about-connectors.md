@@ -3,17 +3,17 @@ product: campaign
 title: Informazioni sui connettori
 description: Informazioni sui connettori
 feature: Panoramica
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 8%
 
 ---
 
-# Guida introduttiva ai connettori{#about-connectors}
+# Introduzione ai connettori{#about-connectors}
 
 Adobe Campaign fornisce diversi connettori che consentono di comunicare con applicazioni esterne, connettersi ai motori di database e integrarsi con Adobe Analytics per condividere i dati.
 
