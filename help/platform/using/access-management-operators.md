@@ -3,10 +3,10 @@ product: campaign
 title: Guida introduttiva agli operatori Campaign
 description: Scopri come creare e gestire gli utenti delle campagne
 feature: Gestione degli accessi
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Creare e gestire gli operatori {#operators}
 
-## Guida introduttiva agli operatori Campaign {#about-operators}
+## Guida introduttiva agli operatori Campaign  {#about-operators}
 
 Un operatore è un utente Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni sull&#39;integrazione di Adobe Campaign e LDAP, consu
 
 Gli utenti possono anche connettersi direttamente ad Adobe Campaign utilizzando il proprio Adobe ID. Per ulteriori informazioni, consulta questa [pagina](../../integrations/using/about-adobe-id.md).
 
-## Crea un operatore {#creating-an-operator}
+## Creare un operatore {#creating-an-operator}
 
 Per creare un nuovo operatore e concedere autorizzazioni, segui i passaggi seguenti:
 
