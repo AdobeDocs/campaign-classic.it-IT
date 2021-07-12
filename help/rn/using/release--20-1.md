@@ -3,10 +3,10 @@ product: campaign
 title: Versione 20.1
 description: Versione 20.1
 feature: Panoramica
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1560'
 ht-degree: 20%
@@ -116,21 +116,21 @@ _17 febbraio 2020_
 
 * iOS 13 è ora supportato con il connettore HTTP2.
 
-* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disattivati vengono ora gestiti come per Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Ulteriori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disattivati vengono ora gestiti come per Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Leggi tutto](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* È stata aggiunta una nuova opzione nelle attività del flusso di lavoro **Codice JavaScript** e **Codice JavaScript avanzato** per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di javascript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Ulteriori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nelle attività del flusso di lavoro **Codice JavaScript** e **Codice JavaScript avanzato** per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di javascript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
 
 * L’analisi della consegna viene ora interrotta quando non viene trovata alcuna affinità corrispondente sul server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
 * È ora supportato il failover del database per Postgres: quando il server di database si blocca e si riavvia, Campaign ora si riconnette automaticamente a esso.
 
-* La vista **Avvia in sospeso** è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro . Questo ti consente di monitorare tutti i flussi di lavoro sull&#39;istanza che sono in attesa di essere avviati dal processo **operationMgt**. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing . [Ulteriori informazioni](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* La vista **Avvia in sospeso** è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro . Questo ti consente di monitorare tutti i flussi di lavoro sull&#39;istanza che sono in attesa di essere avviati dal processo **operationMgt**. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing . [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Altre modifiche**
 
 * Su Linux, l&#39;avvio del servizio nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installi il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Prestazioni query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
 
@@ -140,7 +140,7 @@ _17 febbraio 2020_
 
 * La robustezza del pool di connessioni è stata migliorata, il che potrebbe impedire che si verifichino errori di connessione imprevisti troppo spesso.
 
-* Le regole di convalida dell’indirizzo e-mail per inviare un indirizzo in quarantena in caso di errore soft sono state migliorate. [Ulteriori informazioni](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Le regole di convalida dell’indirizzo e-mail per inviare un indirizzo in quarantena in caso di errore soft sono state migliorate. [Leggi tutto](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * Per Debian, Campaign ora utilizza le librerie PCRE di sistema quando sono disponibili.
 
