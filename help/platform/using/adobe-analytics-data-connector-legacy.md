@@ -3,12 +3,12 @@ product: campaign
 title: Connettore dati Adobe Analytics
 description: Connettore dati Adobe Analytics
 feature: Panoramica
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
 ht-degree: 99%
@@ -25,26 +25,26 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Connettore dati Adobe Analytics non è compatibile con i messaggi transazionali (Centro messaggi).
+>Connettore dati Adobe Analytics non è compatibile con la messaggistica transazionale (Centro messaggi).
 
-Il connettore dati (precedentemente noto come Adobe Genesis) consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **Connettori di Web Analytics**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign ad Adobe Analytics - Connettore dati.
+Il connettore dati (precedentemente noto come Adobe Genesis) consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **Connettori di analisi web**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign al connettore dati di Adobe Analytics.
 
-Utilizzando il connettore dati, Adobe Campaign ha un modo di misurare il pubblico Internet (Web Analytics). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
+Utilizzando il connettore dati, Adobe Campaign ha un modo di misurare il pubblico Internet (analisi web). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
 
-Per ulteriori informazioni sull’implementazione dell’integrazione Adobe Analytics con Adobe Campaign, consulta questa [documentazione](https://helpx.adobe.com/marketing-cloud/how-to/analytics-ac.html).
+Per ulteriori informazioni sull’implementazione dell’integrazione Adobe Analytics con Adobe Campaign, consulta questa [documentazione](https://helpx.adobe.com/it/marketing-cloud/how-to/analytics-ac.html).
 
 I campi di azione per ogni strumento sono i seguenti:
 
 * Ruolo di analisi web:
 
    1. contrassegna le campagne e-mail avviate con Adobe Campaign,
-   1. salva il comportamento del destinatario, sotto forma di segmenti, sul sito visualizzato dopo aver fatto clic sull’e-mail della campagna. I segmenti riguardano prodotti abbandonati (visualizzati ma non aggiunti al carrello o acquistati), acquisti o abbandono del carrello.
+   1. salva sotto forma di segmenti il comportamento del destinatario sul sito visualizzato dopo aver fatto clic sull’e-mail della campagna. I segmenti riguardano prodotti abbandonati (visualizzati ma non aggiunti al carrello o acquistati), acquisti o abbandoni del carrello.
 
 * Ruolo di Adobe Campaign:
 
    1. invia gli indicatori e gli attributi della campagna al connettore, che a sua volta li inoltra allo strumento di analisi web,
    1. recupera e analizza i segmenti,
-   1. attiva una campagna di ricommercializzazione.
+   1. attiva una campagna di remarketing.
 
 ## Configurazione dell’integrazione {#setting-up-the-integration}
 
@@ -52,7 +52,7 @@ Per impostare il connettore dati, è necessario connettersi all’istanza Adobe 
 
 * [Passaggio 1: configurare l’integrazione in Analytics](#step-1--configure-integration-in-analytics)
 * [Passaggio 2: creare l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign)
-* [Passaggio 3: sincronizzazione di Adobe Campaign e Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
+* [Passaggio 3: sincronizzare Adobe Campaign e Adobe Analytics](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
 ### Passaggio 1: configurare l’integrazione in Analytics {#step-1--configure-integration-in-analytics}
 
@@ -70,8 +70,8 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
 
    Per accedere al menu **[!UICONTROL Data Connectors]** è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
    * Integrazioni (Crea)
-   * Integrazioni (aggiornamento)
-   * Integrazioni (elimina)
+   * Integrazioni (Aggiorna)
+   * Integrazioni (Elimina)
 
    ![](assets/adobe_genesis_install_002.png)
 
@@ -80,18 +80,18 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
    ![](assets/adobe_genesis_install_014.png)
 
 1. Nella scheda **[!UICONTROL Add integration]**, fai clic su **[!UICONTROL Activate]**.
-1. Controlla **[!UICONTROL I accept these terms and conditions]**, seleziona il **[!UICONTROL Report suite]** collegato a questa integrazione e immetti l’etichetta del connettore.
+1. Spunta **[!UICONTROL I accept these terms and conditions]**, seleziona la **[!UICONTROL Report suite]** collegata a questa integrazione e immetti l’etichetta del connettore.
 
    Al termine, fai clic su **[!UICONTROL Create and configure this integration]**.
 
    ![](assets/adobe_genesis_install_015.png)
 
-1. Immetti l’indirizzo e-mail che riceverà le notifiche per conto del connettore, quindi copia il **[!UICONTROL Account ID]** così come viene visualizzato nell’account Adobe Campaign esterno (per ulteriori informazioni, consulta il [Passaggio 2: crea l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign)).
+1. Immetti l’indirizzo e-mail che riceverà le notifiche per conto del connettore, quindi copia il **[!UICONTROL Account ID]** così come viene visualizzato nell’account Adobe Campaign esterno (per ulteriori informazioni, consulta il [Passaggio 2: creare l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign)).
 
    ![](assets/adobe_genesis_install_005.png)
 
 1. Specifica gli identificatori necessari per misurare l’impatto della campagna e-mail, ovvero il nome della campagna interna (cid) e l’ID della tabella iNmsBroadlog (bid). È inoltre necessario specificare gli indicatori per gli eventi da raccogliere.
-Assicurati che i **[!UICONTROL Events]** siano di tipo Numerico, altrimenti non verranno visualizzati nel menu a discesa.
+Assicurati che gli **[!UICONTROL Events]** siano di tipo Numerico, altrimenti non verranno visualizzati nel menu a discesa.
 
    ![](assets/adobe_genesis_install_006.png)
 
@@ -119,9 +119,9 @@ Assicurati che i **[!UICONTROL Events]** siano di tipo Numerico, altrimenti non 
 
 ### Passaggio 2: creare l’account esterno in Campaign {#step-2--create-the-external-account-in-campaign}
 
-L’integrazione di Adobe Campaign nelle piattaforme Analytics viene eseguita utilizzando un connettore. Per sincronizzare le applicazioni, applicare il seguente processo:
+L’integrazione di Adobe Campaign nelle piattaforme Analytics viene eseguita utilizzando un connettore. Per sincronizzare le applicazioni, applica il seguente processo:
 
-1. Installa il pacchetto **Connettori di Web Analytics** in Adobe Campaign.
+1. Installa il pacchetto **Connettori di analisi web** in Adobe Campaign.
 1. Vai alla cartella **[!UICONTROL Administration > Platform > External accounts]** della struttura Adobe Campaign.
 1. Fai clic con il pulsante destro del mouse sull’elenco degli account esterni e seleziona **[!UICONTROL New]** nel menu a discesa (oppure fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco degli account esterni).
 1. Utilizza l’elenco a discesa per selezionare il tipo **[!UICONTROL Web Analytics]**.
@@ -129,7 +129,7 @@ L’integrazione di Adobe Campaign nelle piattaforme Analytics viene eseguita ut
 
    ![](assets/webanalytics_ext_account_create_001.png)
 
-1. Fai clic sul collegamento **[!UICONTROL Enrich the formula...]** per modificare la formula di calcolo dell’URL per specificare le informazioni sull’integrazione dello strumento di analisi web (ID campagna) e i domini dei siti di cui è necessario tenere traccia dell’attività.
+1. Fai clic sul collegamento **[!UICONTROL Enrich the formula...]** per modificare la formula di calcolo dell’URL per specificare le informazioni sull’integrazione dello strumento di analisi web (ID campagna) e i domini dei siti di cui è necessario monitorare l’attività.
 1. Specifica i nomi di dominio dei siti.
 
    ![](assets/webanalytics_tracking_001.png)
@@ -148,14 +148,14 @@ L’integrazione di Adobe Campaign nelle piattaforme Analytics viene eseguita ut
 
 1. La scheda **[!UICONTROL Advanced]** ti consente di configurare o modificare le impostazioni tecniche.
 
-   * **[!UICONTROL Lifespan]**: consente di specificare il ritardo (in giorni_ dopo il quale gli eventi web vengono recuperati in Adobe Campaign dai flussi di lavoro tecnici. Predefinito: 180 giorni.
+   * **[!UICONTROL Lifespan]**: consente di specificare il ritardo (in giorni) dopo il quale gli eventi web vengono recuperati in Adobe Campaign dai flussi di lavoro tecnici. Predefinito: 180 giorni.
    * **[!UICONTROL Persistence]**: consente di specificare il periodo durante il quale tutti gli eventi web (ad esempio, un acquisto) possono essere attribuiti a una campagna di remarketing, predefinito: 7 giorni.
 
 >[!NOTE]
 >
->Se utilizzi diversi strumenti di misurazione del pubblico, puoi selezionare **[!UICONTROL Other]** nell’elenco a discesa **[!UICONTROL Partners]** durante la creazione dell’account esterno. Puoi fare riferimento a un solo account esterno nelle proprietà di consegna: sarà quindi necessario adattare la formula degli URL tracciati aggiungendo i parametri previsti dall’Adobe e tutti gli altri strumenti di misurazione utilizzati.
+>Se utilizzi diversi strumenti di misurazione del pubblico, puoi selezionare **[!UICONTROL Other]** nell’elenco a discesa **[!UICONTROL Partners]** durante la creazione dell’account esterno. Puoi fare riferimento a un solo account esterno nelle proprietà di consegna: sarà quindi necessario adattare la formula degli URL tracciati aggiungendo i parametri previsti dallo strumento di misurazione Adobe e da tutti gli altri strumenti di misurazione utilizzati.
 
-### Passaggio 3: sincronizzazione di Adobe Campaign e Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
+### Passaggio 3: sincronizzare Adobe Campaign e Adobe Analytics {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 Dopo aver creato l’account esterno, devi sincronizzare entrambe le applicazioni.
 
@@ -176,13 +176,13 @@ Dopo aver creato l’account esterno, devi sincronizzare entrambe le applicazion
    ![](assets/webanalytics_ext_account_setting_003.png)
 
 1. Segui i passaggi descritti nella guida alla procedura guidata Connettore dati, quindi torna all’account esterno in Adobe Campaign.
-1. Fai clic su **[!UICONTROL Next]** per lo scambio di dati tra Adobe Campaign e Adobe Analytics - Connettore dati.
+1. Fai clic su **[!UICONTROL Next]** per avviare lo scambio di dati tra Adobe Campaign e il connettore dati di Adobe Analytics.
 
    Al termine della sincronizzazione, viene visualizzato l’elenco dei segmenti.
 
    ![](assets/webanalytics_ext_account_setting_004.png)
 
-Quando la sincronizzazione dei dati tra Adobe Campaign e Adobe Analytics - Connettore dati è effettiva, i tre segmenti predefiniti definiti nella procedura guidata Connettore dati vengono recuperati da Adobe Campaign e diventano accessibili nella scheda **[!UICONTROL Segments]** dell’account esterno Adobe Campaign.
+Quando la sincronizzazione dei dati tra Adobe Campaign e il connettore dati di Adobe Analytics è effettiva, i tre segmenti predefiniti definiti nella procedura guidata Connettore dati vengono recuperati da Adobe Campaign e diventano accessibili nella scheda **[!UICONTROL Segments]** dell’account esterno Adobe Campaign.
 
 ![](assets/webanalytics_segments.png)
 
@@ -192,23 +192,23 @@ Se nella procedura guidata Connettore dati sono stati configurati altri segmenti
 
 ### Flussi di lavoro tecnici dei processi di analisi web {#technical-workflows-of-web-analytics-processes}
 
-Scambio di dati tra Adobe Campaign e Adobe Analytics: il connettore dati è gestito da quattro flussi di lavoro tecnici che vengono eseguiti come attività in background.
+Lo scambio di dati tra Adobe Campaign e il connettore dati di Adobe Analytics è gestito da quattro flussi di lavoro tecnici che vengono eseguiti come attività in background.
 
 Sono disponibili nella struttura Adobe Campaign, nella cartella **[!UICONTROL Administration > Production > Technical workflows > Web analytics process]**.
 
 ![](assets/webanalytics_workflows.png)
 
 * **[!UICONTROL Recovering of web events]**: una volta all’ora, questo flusso di lavoro scarica segmenti sul comportamento degli utenti su un dato sito, li include nel database di Adobe Campaign e avvia il flusso di lavoro di remarketing.
-* **[!UICONTROL Event purge]**: questo flusso di lavoro ti consente di eliminare tutti gli eventi dal database a seconda del periodo configurato nel **[!UICONTROL Lifespan]** campo. Per ulteriori informazioni, consulta [Passaggio 2: Crea l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign).
+* **[!UICONTROL Event purge]**: questo flusso di lavoro ti consente di eliminare tutti gli eventi dal database a seconda del periodo configurato nel campo **[!UICONTROL Lifespan]**. Per ulteriori informazioni, consulta [Passaggio 2: creare l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign).
 * **[!UICONTROL Identification of converted contacts]**: directory dei visitatori che hanno effettuato un acquisto in seguito a una campagna di remarketing. I dati raccolti da questo flusso di lavoro sono accessibili nel rapporto **[!UICONTROL Re-marketing efficiency]**, fai riferimento a questa [pagina](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Sending of indicators and campaign attributes]**: consente di inviare gli indicatori della campagna e-mail tramite Adobe Campaign a Adobe Experience Cloud utilizzando Adobe Analytics - Connettore dati. Questo flusso di lavoro viene attivato alle 4 del mattino ogni giorno e può essere necessario 24 ore per l’invio dei dati ad Analytics.
+* **[!UICONTROL Sending of indicators and campaign attributes]**: consente di inviare gli indicatori della campagna e-mail tramite Adobe Campaign a Adobe Experience Cloud utilizzando il connettore dati di Adobe Analytics. Questo flusso di lavoro viene attivato alle 4 del mattino ogni giorno e possono essere necessarie 24 ore per l’invio dei dati ad Analytics.
 
    Tieni presente che questo flusso di lavoro non deve essere riavviato altrimenti invierà nuovamente tutti i dati precedenti che possono distorcere i risultati di Analytics.
 
    Gli indicatori interessati sono i seguenti:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
-   * **[!UICONTROL Processed]** (@elaborati)
+   * **[!UICONTROL Processed]** (@processed)
    * **[!UICONTROL Success]** (@success)
    * **[!UICONTROL Total count of opens]** (@totalRecipientOpen)
    * **[!UICONTROL Recipients who have opened]** (@recipientOpen)
@@ -231,7 +231,7 @@ Sono disponibili nella struttura Adobe Campaign, nella cartella **[!UICONTROL Ad
    * **[!UICONTROL Tag 1]** (webAnalytics/@tag1)
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
-   * **[!UICONTROL Contact date]** (programmazione/@contactDate)
+   * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
 
 
@@ -244,17 +244,17 @@ Affinché Adobe Experience Cloud sia in grado di monitorare l’attività sui si
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Apri le proprietà di consegna.
-1. Vai alla scheda **[!UICONTROL Web Analytics]** e seleziona l’account esterno creato in precedenza. Fai riferimento a [Passaggio 2: crea l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign).
+1. Vai alla scheda **[!UICONTROL Web Analytics]** e seleziona l’account esterno creato in precedenza. Consulta [Passaggio 2: creare l’account esterno in Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. Ora puoi inviare la consegna e accedere al rapporto in Adobe Analytics.
+1. Ora puoi inviare la consegna e accedere al relativo rapporto in Adobe Analytics.
 
 ## Creazione di una campagna di remarketing {#creating-a-re-marketing-campaign}
 
 Per preparare la campagna di remarketing, è sufficiente creare modelli di consegna da utilizzare per campagne di tipo remarketing. Quindi configura la tua campagna di remarketing e collegala a un segmento. Ogni segmento deve avere una campagna di remarketing diversa.
 
-Le campagne di ricommercializzazione vengono avviate automaticamente una volta che Adobe Campaign ha completato il recupero dei segmenti analizzando il comportamento delle persone target della campagna iniziale. In caso di abbandono del carrello o di visualizzazione del prodotto senza acquisto, viene inviata una consegna ai destinatari interessati affinché la loro navigazione sul sito finisca in un acquisto.
+Le campagne di remarketing vengono avviate automaticamente una volta che Adobe Campaign ha completato il recupero dei segmenti analizzando il comportamento delle persone target della campagna iniziale. In caso di abbandono del carrello o di visualizzazione del prodotto senza acquisto, viene inviata una consegna ai destinatari interessati affinché la loro navigazione sul sito finisca con un acquisto.
 
 Adobe Campaign fornisce modelli di consegna personalizzati su cui puoi utilizzare o creare un database per preparare le campagne.
 
@@ -283,6 +283,6 @@ Adobe Campaign fornisce modelli di consegna personalizzati su cui puoi utilizzar
 
 1. Fai clic su **[!UICONTROL OK]** per chiudere la finestra della campagna.
 
-Il rapporto **[!UICONTROL Re-marketing efficiency]** è accessibile tramite la pagina dei report globali. Ti consente di visualizzare il numero di contatti convertiti (ovvero che hanno acquistato qualcosa) in relazione al numero di abbandoni del carrello a seguito della campagna di remarketing Adobe Campaign. Il tasso di conversione viene calcolato per settimana, mese o dall’inizio della sincronizzazione tra gli strumenti di Adobe Campaign e Web analytics.
+Il rapporto **[!UICONTROL Re-marketing efficiency]** è accessibile tramite la pagina dei report globali. Ti consente di visualizzare il numero di contatti convertiti (ovvero che hanno acquistato qualcosa) in relazione al numero di abbandoni del carrello a seguito della campagna di remarketing Adobe Campaign. Il tasso di conversione viene calcolato per settimana, mese o dall’inizio della sincronizzazione tra gli strumenti di Adobe Campaign e analisi web.
 
 ![](assets/remarketing_reporting.png)
