@@ -3,12 +3,12 @@ product: campaign
 title: Note sulla versione 18.10 di Campaign
 description: Note sulla versione per Campaign 18.10
 feature: Panoramica
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2370'
 ht-degree: 7%
 
 ---
@@ -138,7 +138,7 @@ ht-degree: 7%
 
 * È stato risolto un problema di sicurezza che poteva causare vulnerabilità agli attacchi SSRF (Server Side Request Forgery) e attacchi di negazione del servizio (DoS). (NEO-11453)
 * Contenuto (reindirizzamento di tracciamento, pagine mirror, sondaggi, ecc.) verrà ora servito da Campaign con il tag X-Robots: intestazione nocache. Questo impedisce l’indicizzazione di questo contenuto da parte dei motori di ricerca Internet. (NEO-11101)
-* È stato risolto un problema di iniezione XTK nell’API di abbonamento (nms:subscription:Unsubscription e nms:subscription:Subscribe).
+* È stato risolto un problema di iniezione XTK nell’API di abbonamento (nms:subscription:Annulla sottoscrizione e nms:subscription:Abbonati).
 * È stato risolto un problema di iniezione XTK nell’applicazione Web di annullamento dell’abbonamento.
 * Sono state rimosse le password che erano visualizzate in modo non corretto in alcuni registri SMS.
 
