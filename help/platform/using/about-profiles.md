@@ -3,10 +3,10 @@ product: campaign
 title: Informazioni sui profili
 description: Informazioni sui profili
 feature: Profili, tipi di pubblico
-role: Business Practitioner, Data Architect
+role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 15%
@@ -31,7 +31,7 @@ Ogni profilo corrisponde a una voce del database. Contengono tutte le informazio
 
 I profili possono essere identificati in base allo spazio di archiviazione. Ciò significa che un profilo può corrispondere a: un destinatario, un visitatore, un operatore, un abbonato, un potenziale, ecc.
 
-## Profili destinatario {#recipient-profiles}
+## Profili dei destinatari {#recipient-profiles}
 
 I destinatari della consegna vengono memorizzati nel database come profili contenenti le informazioni ad essi collegate: cognome, nome, indirizzo, abbonamenti, consegne, ecc. Quando crei campagne, puoi definire il target delle consegne per una selezione di profili nella base in base a criteri semplici o avanzati.
 
@@ -107,7 +107,7 @@ Il conteggio dei profili attivi è disponibile solo per **istanze di marketing**
 
 ## Video tutorial {#create-profiles-video}
 
-Scopri come accedere ai dati di profilo, ordinare e filtrare i profili e come crearli e gestirli manualmente.
+Scopri come accedere ai dati, ordinare e filtrare i profili e come crearli e gestirli manualmente.
 
 Questo video spiega anche la conformità di Adobe Campaign Classic alle normative generali sulla protezione dei dati.
 
