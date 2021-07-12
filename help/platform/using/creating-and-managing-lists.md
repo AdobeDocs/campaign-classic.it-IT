@@ -3,10 +3,10 @@ product: campaign
 title: Creazione e gestione di elenchi
 description: Scopri come creare e gestire gli elenchi
 feature: Profili
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 9%
@@ -116,7 +116,7 @@ Per rimuovere un profilo da un elenco, puoi:
 
    ![](assets/recipient_remove_a_list.png)
 
-## Elimina un elenco di profili {#deleting-a-list-of-profiles}
+## Eliminare un elenco di profili {#deleting-a-list-of-profiles}
 
 È possibile eliminare uno o più elenchi dall’elenco dei gruppi nella struttura di Adobe Campaign. A questo scopo, modifica la struttura tramite il collegamento **[!UICONTROL Advanced > Explorer]** nella home page di Adobe Campaign. Selezionare il gruppo o i gruppi interessati e fare clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Delete]**. Un messaggio di avviso richiede di confermare l’eliminazione.
 
@@ -134,7 +134,7 @@ Scopri come creare un pubblico configurando un elenco di destinatari da Esplora 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Come utilizzare un flusso di lavoro per creare un elenco di destinatari {#create-list-in-a-wf-video}
+### Utilizzare un flusso di lavoro per creare un elenco di destinatari {#create-list-in-a-wf-video}
 
 Scopri come creare un flusso di lavoro per eseguire il targeting dei destinatari e come renderlo ricorrente prima di utilizzare l’elenco in una destinazione e-mail.
 
