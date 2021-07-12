@@ -3,10 +3,10 @@ product: campaign
 title: Gestire l’accesso alle cartelle di Campaign
 description: Scopri come concedere l’accesso alle cartelle Campaign e creare visualizzazioni
 feature: Impostazioni applicazione
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Nella visualizzazione verranno visualizzate le seguenti consegne:
 
 ## Autorizzazioni in una cartella
 
-### Modifica le autorizzazioni in una cartella {#edit-permissions-on-a-folder}
+### Modificare le autorizzazioni in una cartella {#edit-permissions-on-a-folder}
 
 Per modificare le autorizzazioni su una cartella specifica della struttura, segui i passaggi seguenti:
 
@@ -90,7 +90,7 @@ Per modificare le autorizzazioni su una cartella specifica della struttura, segu
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Modifica autorizzazioni {#modify-permissions}
+### Modificare le autorizzazioni {#modify-permissions}
 
 Per modificare le autorizzazioni, puoi:
 
@@ -114,7 +114,7 @@ Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte 
 >
 >Se si deseleziona questa opzione per una cartella, questa non viene cancellata automaticamente per le sottocartelle. È necessario cancellarlo esplicitamente per ciascuna sottocartella.
 
-### Concedi l&#39;accesso a tutti gli operatori {#grant-access-to-all-operators}
+### Concedere l’accesso a tutti gli operatori {#grant-access-to-all-operators}
 
 Nella scheda **[!UICONTROL Security]** , se è selezionata l’opzione **[!UICONTROL System folder]** , tutti gli operatori avranno accesso a tali dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, devi aggiungere esplicitamente l’operatore (o il loro gruppo) all’elenco delle autorizzazioni per consentire loro l’accesso.
 
