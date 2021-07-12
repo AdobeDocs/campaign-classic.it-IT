@@ -3,10 +3,10 @@ product: campaign
 title: Informazioni su Adobe Campaign Classic
 description: Scopri le funzionalità chiave, l’interfaccia utente e le linee guida globali.
 feature: Panoramica
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 95%
@@ -43,7 +43,7 @@ Le nozioni di base sulla gestione dei profili sono illustrate in [Informazioni s
 
 ### Segmentazione mirata {#targeted-segmentation}
 
- Adobe Campaign dispone di funzioni di segmentazione e targeting potenti e intuitive che ti consentono di creare offerte altamente mirate e differenziate. La funzionalità di analisi descrittiva ti consente di analizzare le informazioni a monte e a valle delle campagne di marketing, e la funzionalità di gestione dei filtri e di [editor di query grafiche](../../platform/using/about-queries-in-campaign.md) ti consente di filtrare la popolazione degli abbonati e di campionare o creare gruppi target in base a un numero illimitato di criteri. Le funzioni di analisi e di targeting sono descritte in [questa pagina](../../reporting/using/about-descriptive-analysis.md) e nella sezione [Creazione di filtri](../../platform/using/creating-filters.md).
+Adobe Campaign dispone di funzioni di segmentazione e targeting potenti e intuitive che ti consentono di creare offerte altamente mirate e differenziate. La funzionalità di analisi descrittiva ti consente di analizzare le informazioni a monte e a valle delle campagne di marketing, e la funzionalità di gestione dei filtri e di [editor di query grafiche](../../platform/using/about-queries-in-campaign.md) ti consente di filtrare la popolazione degli abbonati e di campionare o creare gruppi target in base a un numero illimitato di criteri. Le funzioni di analisi e di targeting sono descritte in [questa pagina](../../reporting/using/about-descriptive-analysis.md) e nella sezione [Creazione di filtri](../../platform/using/creating-filters.md).
 
 La funzionalità avanzata di gestione dei dati estende le funzionalità di elaborazione dei dati. Semplifica e ottimizza il processo di targeting includendo dati non modellati nel data mart. Questa funzionalità è descritta in [questa pagina](../../workflow/using/targeting-data.md#data-management).
 
