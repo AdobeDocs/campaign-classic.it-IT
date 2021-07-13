@@ -6,10 +6,10 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 95%
 
 ---
 
@@ -24,19 +24,19 @@ _14 aprile 2021_
 La build 9032@d030c36 include la seguente correzione:
 
 * È stata corretta una regressione della console client che causava messaggi di errore persistenti nella schermata di connessione IMS. (NEO-34821)
+* Questa build della console è necessaria per mantenere l’ [accesso IMS](../../technotes/ims-updates.md).
 
 **È obbligatorio solo l’aggiornamento della console. Non è richiesto alcun aggiornamento del server.**
 
 >[!CAUTION]
 >
-> * Se ti connetti a Campaign con il tuo Adobe ID, tramite Adobe Identity Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/ims-updates.md)
+> * Se ti connetti a Campaign con il tuo Adobe ID, tramite Adobe Identity Management Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 > * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
 
 >
 >
 Ulteriori informazioni sono disponibili in Domande [[!DNL Gold Standard] frequenti sull’aggiornamento 11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html)
-
 
 _2 marzo 2021_
 
