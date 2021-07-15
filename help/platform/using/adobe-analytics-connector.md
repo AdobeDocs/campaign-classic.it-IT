@@ -10,7 +10,7 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di in
 >* Il connettore Adobe Analytics non è compatibile con la messaggistica transazionale (Centro messaggi).
    >
    >
-* Prima di iniziare, assicurati che Adobe Identity Management System (IMS) sia implementato in Campaign. [Per ulteriori informazioni, consulta questa pagina](../../integrations/using/about-adobe-id.md).
+* Prima di iniziare, assicurati che in Campaign sia implementato Adobe Identity Management System (IMS). [Per ulteriori informazioni, consulta questa pagina](../../integrations/using/about-adobe-id.md).
 
 
 Utilizzando il connettore Adobe Analytics, Adobe Campaign ha un modo di misurare il pubblico Internet (analisi web). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
@@ -43,7 +43,7 @@ I campi di azione per ogni strumento sono i seguenti:
    1. recupera e analizza i segmenti,
    1. attiva una campagna di remarketing.
 
-## Configurazione dell’integrazione {#setting-up-the-integration}
+## Configurare l’integrazione {#setting-up-the-integration}
 
 Per impostare il connettore dati, è necessario connettersi all’istanza Adobe Campaign ed eseguire le operazioni seguenti:
 
