@@ -17,7 +17,7 @@ ht-degree: 95%
 
 In questa pagina sono elencate le versioni [!DNL Gold Standard]. Per ulteriori informazioni su Campaign [!DNL Gold Standard], visita [questa pagina](gs-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Versione [!DNL Gold Standard] 11{#gs-11}
+## ![](assets/do-not-localize/green_2.png)Versione [!DNL Gold Standard] 11{#gs-11}
 
 _14 aprile 2021_
 
@@ -73,7 +73,7 @@ La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
 * È stato risolto un problema che poteva causare un errore dei flussi di lavoro durante l’esecuzione di un’attività **Enrichment**. (NEO-17338)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 10{#gs-10}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 10{#gs-10}
 
 _7 luglio 2020_
 
@@ -85,7 +85,7 @@ La build 9032@efd8a94 include la seguente correzione:
 >
 >È consigliabile aggiornare la console client con quella disponibile in questa versione. Consulta [questa pagina](../../installation/using/installing-the-client-console.md)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 9{#gs-9}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 9{#gs-9}
 
 _22 giugno 2020_
 
@@ -101,7 +101,7 @@ Le seguenti correzioni sono legate al meccanismo di sicurezza dei collegamenti d
 * È stato risolto un problema riguardante il servizio anti-phishing. (NEO-25283)
 * È stato risolto un problema di tracking che si verificava con l’utilizzo di alcune formule personalizzate. (NEO-25277)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 8{#gs-8}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 8{#gs-8}
 
 _29 aprile 2020_
 
@@ -126,7 +126,7 @@ La build 9032@3a9dc9c include le seguenti correzioni:
 * È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema di regressione minore nei log del flusso di lavoro di pulizia.
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 6{#gs-6}
 
 _9 marzo 2020_
 
@@ -134,7 +134,7 @@ La build 9032@19f73c5 include la seguente correzione:
 
 * È stato risolto un problema con gli account esterni che utilizzavano FTP su SSL. (NEO-20498)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 5{#gs-5}
 
 _17 dicembre 2019_
 
@@ -142,7 +142,7 @@ La build 9032@d6b8062 include la seguente correzione:
 
 * È stato risolto un problema di tracking sui seguenti canali di comunicazione: mobile (SMS, MMS), push (iOS, Android) e social network (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 4{#gs-4}
 
 _11 dicembre 2019_
 
@@ -150,7 +150,7 @@ La build 9032@bc4a935 include la seguente correzione:
 
 * È stato risolto un problema di prestazioni riguardante l’invio di messaggi con un database MSSQL. (NEO-17558)
 
-## ![](assets/do-not-localize/red_2.png) Versione [!DNL Gold Standard] 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png)Versione [!DNL Gold Standard] 3{#gs-3}
 
 _20 novembre 2019_
 
