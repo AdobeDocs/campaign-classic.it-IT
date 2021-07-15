@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p>Attenzione: Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
+<p>Avvertenza: Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
 </td>
 </tr>
 </tbody>
