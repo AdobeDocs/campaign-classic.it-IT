@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td>Connettore dati Adobe Analytics<br></td>
    <td><p>A partire dalla versione 21.1.3 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto.</p>
    <p>Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <a href="../../platform/using/adobe-analytics-connector.md">Ulteriori informazioni</a></p>
-  <p><em>Data di rimozione target: 1 marzo 2022</em></p>
+  <p><em>Data di rimozione prevista: 1 marzo 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -144,7 +144,7 @@ A partire dalla versione 20.2, i seguenti connettori legacy SMS sono diventati o
 >
 >Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md). Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni: vengono classificate come obsolete e quindi rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
 
-### Console del client {#client-console-eol}
+### Console client {#client-console-eol}
 
  La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data effettiva di rimozione. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
