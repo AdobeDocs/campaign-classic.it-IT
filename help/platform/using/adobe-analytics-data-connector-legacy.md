@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 99%
 >
 >Connettore dati Adobe Analytics è diventato obsoleto. Le funzionalità obsolete sono ancora disponibili, ma non saranno ulteriormente migliorate né supportate. Per ulteriori informazioni, consulta [questa pagina](../../rn/using/deprecated-features.md).
 
-## Informazioni sull’integrazione del connettore dati {#about-data-connector-integration}
+## Informazioni sull’integrazione di Data Connector {#about-data-connector-integration}
 
 >[!IMPORTANT]
 >
->Connettore dati Adobe Analytics non è compatibile con la messaggistica transazionale (Centro messaggi).
+>Adobe Analytics Data Connector non è compatibile con la messaggistica transazionale (Centro messaggi).
 
-Il connettore dati (precedentemente noto come Adobe Genesis) consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **Connettori di analisi web**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign al connettore dati di Adobe Analytics.
+Data Connector (precedentemente noto come Adobe Genesis) consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **Connettori di analisi web**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign al connettore dati di Adobe Analytics.
 
 Utilizzando il connettore dati, Adobe Campaign ha un modo di misurare il pubblico Internet (analisi web). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
 
@@ -46,7 +46,7 @@ I campi di azione per ogni strumento sono i seguenti:
    1. recupera e analizza i segmenti,
    1. attiva una campagna di remarketing.
 
-## Configurazione dell’integrazione {#setting-up-the-integration}
+## Configurare l’integrazione {#setting-up-the-integration}
 
 Per impostare il connettore dati, è necessario connettersi all’istanza Adobe Campaign ed eseguire le operazioni seguenti:
 
@@ -68,7 +68,7 @@ I passaggi seguenti descrivono la configurazione del connettore dati utilizzando
 
 1. Dalla sezione **[!UICONTROL Admin]**, seleziona **[!UICONTROL Data Connectors]**.
 
-   Per accedere al menu **[!UICONTROL Data Connectors]** è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html)
+   Per accedere al menu **[!UICONTROL Data Connectors]** è necessario disporre delle seguenti autorizzazioni per gli strumenti di Analytics. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=it)
    * Integrazioni (Crea)
    * Integrazioni (Aggiorna)
    * Integrazioni (Elimina)
