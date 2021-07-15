@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -462,7 +462,7 @@ La guida introduttiva sulle best practice per le consegne è stata aggiornata. [
 
 ## Ottobre 2019 {#october-2019}
 
-L’elenco dei messaggi di errore per Campaign è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+L’elenco dei messaggi di errore per Campaign è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=it)
 
 La guida introduttiva al GDPR è stata migliorata e arricchita. È ora diventata una documentazione sulla gestione della privacy che include GDPR e CCPA. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/campaign-privacy.html)
 
