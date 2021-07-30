@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Utilizzo di server SFTP
-description: Ulteriori informazioni sulle best practice e la risoluzione dei problemi del server SFTP.
+description: Ulteriori informazioni sulle best practice e sulla risoluzione dei problemi del server SFTP.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 14%
@@ -45,7 +45,7 @@ Per evitare tali problemi, l&#39;Adobe consiglia di seguire le best practice rip
 >
 >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Tieni presente che l’istanza deve essere aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1.3)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Le capacità del server variano a seconda della licenza. In ogni caso, mantieni i dati minimi possibili e conserva i dati solo per il tempo richiesto (15 giorni è il limite massimo di tempo).
 
