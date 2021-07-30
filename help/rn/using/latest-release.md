@@ -6,22 +6,22 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: f2fae5954fbbab4b8a4f9444404316ff1576d5e4
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
 # Ultima versione{#latest-release}
 
-In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign Classic Release Candidate**.
+In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati con la **versione più recente di Campaign Classic**.
 
 >[!NOTE]
 >
->Le build di Campaign **General Availability (GA)** sono: [[!DNL Gold Standard] 11](../../rn/using/gold-standard.md#gs-11) e [Campaign 20.2.5](../../rn/using/release--20-2.md).
+>Le build di Campaign **General Availability (GA)** sono: [[!DNL Gold Standard] 11](../../rn/using/gold-standard.md#gs-11) e [Campaign 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330).
 
-## ![](assets/do-not-localize/blue_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
 _5 giugno 2021_
 
