@@ -6,10 +6,10 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 23d22283df418bb32eb7d2cb226bb7926e73bd0c
+source-git-commit: 4420aab0067048d1fb47b184ede579235dcd9819
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 100%
+source-wordcount: '1649'
+ht-degree: 99%
 
 ---
 
@@ -236,7 +236,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 ### Connettori CRM {#crm-connectors}
 
-A partire da Campaign 21.1, i seguenti connettori per sistemi CRM sono diventati obsoleti:
+A partire dalla versione Campaign 21.1, i seguenti connettori di gestione delle relazioni con i clienti non sono più compatibili con Campaign:
 
 * API Soap - On-premise: 2007, 2015, 2016
 * API Soap - Online: 2015, 2016
