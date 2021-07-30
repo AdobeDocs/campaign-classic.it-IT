@@ -6,9 +6,9 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 23d22283df418bb32eb7d2cb226bb7926e73bd0c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1647'
 ht-degree: 100%
 
 ---
@@ -212,11 +212,6 @@ Campaign Classic non è compatibile con i seguenti server in Federated Data Acce
 * AsterData 5.0. AsterData ha raggiunto la fine del ciclo di vita. [Ulteriori informazioni](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0. Versioni più recenti di Sybase sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic continuerà a supportare le versioni elencate di Hadoop tramite HiveSQL attraverso Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
-* API Soap - On-premise: 2007, 2015, 2016
-* API Soap - Online: 2015, 2016
-* API web - Microsoft Dynamics CRM on-premise: 2016, 2016 aggiornamento 1
-* API web - Microsoft Dynamics CRM online: 2016, 2016 aggiornamento 1
-* API Oracle On Demand&lt;
 
 **SERVER RDBMS**
 
@@ -238,3 +233,13 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 * Tele2
 * O2
 * iOS
+
+### Connettori CRM {#crm-connectors}
+
+A partire da Campaign 21.1, i seguenti connettori per sistemi CRM sono diventati obsoleti:
+
+* API Soap - On-premise: 2007, 2015, 2016
+* API Soap - Online: 2015, 2016
+* API web - Microsoft Dynamics CRM on-premise: 2016, 2016 aggiornamento 1
+* API web - Microsoft Dynamics CRM online: 2016, 2016 aggiornamento 1
+* API Oracle On Demand
