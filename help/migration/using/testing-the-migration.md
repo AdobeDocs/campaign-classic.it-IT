@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -156,7 +156,13 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ottieni i log degli errori dell'applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Applicazioni web</a>.<br /> </td> 
+   <td> Questo tipo di errore causa un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ottieni i registri di errore dell’applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configura campagna</a>.<br /> </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> Errore<br /> </td> 
+   <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM locale e Office 365 è stato dichiarato obsoleto</a>. Per passare alla distribuzione API Web, fare riferimento a <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni Web</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
