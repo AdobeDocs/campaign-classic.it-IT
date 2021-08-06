@@ -6,10 +6,10 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8a14afd25b03cea38cbfc2277fc9e51cf08658db
+source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
 workflow-type: tm+mt
-source-wordcount: '1959'
-ht-degree: 98%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/us
 **Funzioni obsolete**
 
 * A partire dalla versione 21.1 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione con il nuovo connettore Adobe Analytics.
-Per ulteriori informazioni consulta la [documentazione dettagliata](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-connector.html).
+Per ulteriori informazioni consulta la [documentazione dettagliata](../../technotes/aa-connector-migration.md).
 * Il supporto per Debian 8 è ora obsoleto.
 * In seguito alla rimozione di Oracle CRM in 20.3, l’account esterno correlato è stato rimosso dall’interfaccia.
 
