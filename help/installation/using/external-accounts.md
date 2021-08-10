@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 7%
@@ -92,7 +92,6 @@ L’account esterno **[!UICONTROL Routing]** ti consente di configurare ogni can
 * [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### Istanza di esecuzione  {#execution-instance-external-account}
 
 Se si dispone di un’architettura suddivisa, è necessario specificare le istanze di esecuzione collegate all’istanza di controllo e collegarle. I modelli di messaggio transazionali vengono distribuiti nell’istanza di esecuzione
@@ -112,7 +111,6 @@ Se si dispone di un’architettura suddivisa, è necessario specificare le istan
    Password dell’account definita nella cartella dell’operatore.
 
 Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../message-center/using/configuring-instances.md#control-instance).
-
 
 ## Accesso agli account esterni dei sistemi esterni
 
