@@ -5,7 +5,7 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 11%
@@ -80,7 +80,7 @@ Se ti connetti a Campaign [tramite un Adobe ID](../integrations/using/about-adob
 
 * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
 * Campaign versione 21.1.1. [Ulteriori informazioni](../rn/using/latest-release.md)
-* Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
+* Campaign versione 20.2.5. [Ulteriori informazioni](../rn/using/release--20-2.md)
 * Campaign versione 20.1.4. [Ulteriori informazioni](../rn/using/release--20-1.md)
 * Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
 * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
@@ -130,7 +130,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 ### API del provider APN basato su HTTP/2
 
-A partire dal **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Ulteriori informazioni](https://developer.apple.com/news/?id=c88acm2b).
+A partire dal **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sei interessato?**
 
@@ -166,5 +166,5 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per 
 
 * [Aggiornare l’ambiente](../production/using/build-upgrade.md)
 * [Domande frequenti sull’aggiornamento della build](../platform/using/faq-build-upgrade.md)
-* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
 * [Rendere la nuova console client disponibile agli utenti](../installation/using/client-console-availability-for-windows.md)
