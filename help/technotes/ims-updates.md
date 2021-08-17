@@ -4,7 +4,7 @@ title: Aggiorna l’ambiente per connetterti ad Adobe Campaign con IMS
 description: Campaign - Aggiornamenti IMS
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
@@ -39,7 +39,7 @@ Se è già stato eseguito l&#39;aggiornamento ma si utilizza una versione preced
 
    * Gold Standard 11. [Ulteriori informazioni](../rn/using/gold-standard.md)
    * Campaign versione 21.1.3. [Ulteriori informazioni](../rn/using/latest-release.md)
-   * Campaign versione 20.2.4. [Ulteriori informazioni](../rn/using/release--20-2.md)
+   * Campaign versione 20.2.5. [Ulteriori informazioni](../rn/using/release--20-2.md)
    * Campaign versione 20.1.4. [Ulteriori informazioni](../rn/using/release--20-1.md)
    * Campaign versione 19.2.4. [Ulteriori informazioni](../rn/using/release--19-2.md)
    * Campaign versione 19.1.8. [Ulteriori informazioni](../rn/using/release--19-1.md)
@@ -93,4 +93,4 @@ Se viene visualizzato un avviso di questo tipo, assicurarsi di installare gli ag
 * [Rendere la nuova console client disponibile agli utenti](../installation/using/client-console-availability-for-windows.md)
 * [Installare la console client di Campaign](../installation/using/installing-the-client-console.md)
 * [Accedere alla distribuzione software di Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en)
-* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Scarica la build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
