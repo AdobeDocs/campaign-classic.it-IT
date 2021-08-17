@@ -5,9 +5,9 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Prima di avviare questa configurazione, controlla che stai utilizzando:
 
 * Almeno una delle seguenti build Adobe Campaign:
    * 19.1.8.9039
-   * 19.1.4.9032.GS.11
+   * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
    * 20.3.1
 * Versione Adobe Analytics Standard
@@ -110,7 +110,7 @@ Il parametro **Consumer** identifica l&#39;istanza come uno di questi consumator
 
 Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. L’utilizzo di consumatori diversi per istanze diverse consente di assicurarti che ogni messaggio venga inviato a ogni istanza.
 
-### Raccomandazioni sulle opzioni della pipeline {#pipeline-option-recommendation}
+### Raccomandazioni per l’opzione Pipeline {#pipeline-option-recommendation}
 
 Per configurare l’opzione Pipeline, segui questi consigli:
 
@@ -154,7 +154,7 @@ Per questo, imposta l&#39;elemento &lt; pipelined > nel file di configurazione s
  <pipelined autoStart="true" ... "/>
 ```
 
-### Riavvio processo pipeline {#pipelined-process-restart}
+### Riavvio del processo pipeline {#pipelined-process-restart}
 
 Per rendere effettive le modifiche è necessario riavviare il sistema:
 
