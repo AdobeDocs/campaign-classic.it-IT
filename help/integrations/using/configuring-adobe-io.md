@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
-Questa integrazione si applica solo a partire da **Campaign Classic 20.3, 20.2.4, 19.1.8 e [!DNL Gold Standard] 11 versioni**.
+Questa integrazione si applica solo a partire da **Campaign Classic 20.3, 19.1.8 e [!DNL Gold Standard] 11 versioni**.
 
 Prima di avviare questa implementazione, controlla di avere:
 
@@ -96,7 +96,7 @@ procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/admi
 >
 >Il certificato di Adobe I/O scade dopo 12 mesi. Devi generare una nuova coppia di chiavi ogni anno.
 
-## Passaggio 2: Aggiungi le credenziali del progetto in Adobe Campaign {#add-credentials-campaign}
+## Passaggio 2: Aggiungere le credenziali del progetto in Adobe Campaign {#add-credentials-campaign}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ La chiave privata deve essere codificata in formato UTF-8 base64. Per eseguire q
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-## Passaggio 3: Aggiorna il tag pipeline {#update-pipelined-tag}
+## Passaggio 3: Aggiorna tag pipeline {#update-pipelined-tag}
 
 >[!NOTE]
 >
