@@ -6,10 +6,10 @@ feature: Panoramica
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 95%
+source-wordcount: '1077'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ La build 9032@d030c36 include la seguente correzione:
 >
 > * Se ti connetti a Campaign con il tuo Adobe ID, tramite Adobe Identity Management Service (IMS), l’aggiornamento è obbligatorio per il server Campaign e la console client per poter connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **18 agosto 2021** per gli ambienti ibridi e on-premise e il **30 novembre 2021** per gli ambienti in hosting.
 
 >
 >
