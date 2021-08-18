@@ -6,10 +6,10 @@ feature: null
 role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 26%
+source-wordcount: '3263'
+ht-degree: 25%
 
 ---
 
@@ -25,7 +25,7 @@ _15 aprile 2021_
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 marzo 2021_
 
@@ -43,7 +43,7 @@ _16 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **30 novembre 2021**.
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **18 agosto 2021** per gli ambienti ibridi e on-premise e il **30 novembre 2021** per gli ambienti in hosting.
 
 
 
@@ -213,16 +213,16 @@ _30 maggio 2019_
 
 **Miglioramenti a livello di sicurezza, robustezza e scalabilità**
 
-* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Ulteriori informazioni](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA su HTTP v2: il protocollo FDA su HTTP è ampiamente utilizzato nelle implementazioni ibride, soprattutto per il recupero e la preparazione di consegne wideLog. La robustezza è stata migliorata per evitare problemi di rete e possibili errori durante il recupero o il push dei dati. Ciò richiede che le build a entrambe le estremità della connessione siano aggiornate, altrimenti verrà comunque utilizzato il vecchio protocollo.
 * Flusso di lavoro di tracciamento: la robustezza del flusso di lavoro di tracciamento è stata migliorata. Sono stati risolti diversi problemi relativi al tracciamento degli inserimenti/aggiornamenti dei log e alla personalizzazione del tracciamento degli URL. Inoltre, il flusso di lavoro di tracciamento ora rileva i problemi del registro di tracciamento che potrebbero causare errori e arrestare il flusso di lavoro. Questi problemi vengono ora scartati e non elaborati.
 * Flusso di lavoro di pulizia: il flusso di lavoro di pulizia è stato migliorato per evitare potenziali errori e arresti. Questo ottimizza le dimensioni e le prestazioni del database.
 * Immagini incorporate nei messaggi transazionali: abbiamo aggiunto il supporto completo delle immagini incorporate nei messaggi transazionali, per evitare possibili arresti anomali o immagini mancanti.
 * Dimensione del database - XtkJobLog: a questa tabella è stato aggiunto un meccanismo di eliminazione. Questo ha un impatto positivo sulle dimensioni del database.
-* Archiviazione CCN: i parametri predefiniti per l&#39;archiviazione CCN sono stati modificati per aumentare la velocità di archiviazione. [Ulteriori informazioni](../../installation/using/email-archiving.md#parameters)
+* Archiviazione CCN: i parametri predefiniti per l&#39;archiviazione CCN sono stati modificati per aumentare la velocità di archiviazione. [Leggi tutto](../../installation/using/email-archiving.md#parameters)
 * Aggiornamento della struttura del database: Le richieste SQL generate dall&#39;aggiornamento guidato della struttura del database sono state migliorate per un&#39;esecuzione più rapida.
 * Guardrail per le azioni dell&#39;operatore: sono state implementate diverse protezioni per impedire agli operatori di eseguire azioni che potrebbero influire sull&#39;integrità della piattaforma. Gli schemi incorporati non possono più essere eliminati tramite l’interfaccia . Inoltre, l’XML di origine del flusso di lavoro non può più essere modificato da utenti non amministratori.
-* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (ti consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (ti consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md)
+* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (ti consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (ti consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Leggi tutto](../../installation/using/configuring-campaign-options.md)
 
 **Altre modifiche**
 
@@ -234,7 +234,7 @@ _30 maggio 2019_
 * Nell’integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
 * È stato rimosso il limite di 10.000 record in Workflow Heatmap per risolvere un problema di dati mancanti. (NEO-12329)
 * Open Office non è supportato ed è stato rimosso completamente dall&#39;applicazione. Se lo si stava ancora utilizzando, passare a Libre Office in quanto non funzionerà più a partire dal 19.1.
-* È ora possibile limitare l’accesso in scrittura all’attività Update data in Workflow utilizzando gli attributi sysfilter. [Ulteriori informazioni](../../configuration/using/filtering-schemas.md)
+* È ora possibile limitare l’accesso in scrittura all’attività Update data in Workflow utilizzando gli attributi sysfilter. [Leggi tutto](../../configuration/using/filtering-schemas.md)
 
 **Patch**
 
