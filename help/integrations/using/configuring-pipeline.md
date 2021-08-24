@@ -5,9 +5,9 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 1%
 I parametri di autenticazione come l’ID cliente, la chiave privata e l’endpoint di autenticazione sono configurati nei file di configurazione dell’istanza.
 L’elenco dei trigger da elaborare è configurato in un’opzione in formato JSON.
 I trigger vengono utilizzati per il targeting tramite un flusso di lavoro della campagna che invia e-mail. La campagna è configurata in modo che un cliente con entrambi gli eventi di attivazione riceva un’e-mail.
-
->[!CAUTION]
->
->In caso di distribuzione ibrida, assicurati che la pipeline sia configurata in un’istanza intermedia.
 
 ## Prerequisiti {#prerequisites}
 
