@@ -2,11 +2,8 @@
 product: campaign
 title: Versione 19.2
 description: Note sulla versione di Campaign 19.2
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 21%
@@ -25,7 +22,7 @@ _15 aprile 2021_
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 marzo 2021_
 
@@ -77,8 +74,8 @@ _2 dicembre 2019_
    <td> <p>CCPA è la nuova legge sulla privacy dello Stato della California che armonizza e modernizza i requisiti di protezione dei dati in vigore dal 1° gennaio 2020. Il CCPA si applica ai clienti Adobe Campaign che detengono dati per soggetti residenti in California.</p>
     <p>Oltre alle funzionalità per la privacy già disponibili (tra cui la gestione del consenso, le impostazioni di conservazione dei dati e i ruoli utente), Adobe Campaign facilita la conformità a CCPA:</p>
     <ul>
-      <li>Diritto di accesso e diritto alla cancellazione: stiamo sfruttando le funzionalità aggiunte per il RGPD. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Ulteriori informazioni</a></li>
-      <li>Puoi verificare se un consumatore ha rinunciato alla vendita di Informazioni personali. A questo scopo, devi estendere la tabella Profili e aggiungere un campo <strong>Rinuncia per CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Ulteriori informazioni</a></li></td> 
+      <li>Diritto di accesso e diritto alla cancellazione: stiamo sfruttando le funzionalità aggiunte per il RGPD. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Leggi tutto</a></li>
+      <li>Puoi verificare se un consumatore ha rinunciato alla vendita di Informazioni personali. A questo scopo, devi estendere la tabella Profili e aggiungere un campo <strong>Rinuncia per CCPA</strong> . <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Leggi tutto</a></li></td> 
   </tr> 
  </tbody> 
 </table>
@@ -135,20 +132,20 @@ _2 dicembre 2019_
 **Miglioramenti**
 
 * Ottimizzazione del consumo di memoria per le notifiche push.
-* Per ottimizzare le prestazioni e lo storage, è stata migliorata la gestione del file **logins.log** . Il file viene ora suddiviso in più file, uno ogni giorno con un massimo di 365 file conservati. [Ulteriori informazioni](../../production/using/log-files.md)
-* È ora possibile configurare l’account esterno di Microsoft Dynamics CRM utilizzando le credenziali password (password + nome utente) o il certificato (chiave privata). [Ulteriori informazioni](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* Per ottimizzare le prestazioni e lo storage, è stata migliorata la gestione del file **logins.log** . Il file viene ora suddiviso in più file, uno ogni giorno con un massimo di 365 file conservati. [Leggi tutto](../../production/using/log-files.md)
+* È ora possibile configurare l’account esterno di Microsoft Dynamics CRM utilizzando le credenziali password (password + nome utente) o il certificato (chiave privata). [Leggi tutto](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Sono stati aggiunti alcuni miglioramenti al connettore FDA del Hadoop per migliorare l&#39;affidabilità
 * È stata aggiunta una protezione specifica per controllare lo spazio su disco prima di consentire il caricamento di risorse pubbliche sul server.
 * Sono state aggiunte nuove [opzioni campagna](../../installation/using/configuring-campaign-options.md):
    * L&#39;opzione di configurazione **WdbcKillSessionPolicy** consente di influenzare il comportamento **Arresto incondizionato** su tutti i flussi di lavoro e le query del database PostgreSQL.
    * L&#39;opzione **NmsOperation_DeliveryPreparationWindow** ti consente di definire il numero di giorni oltre i quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.
-   * L&#39;opzione **WdbcOptions_TempDbName** consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server. Questo ottimizza i backup e la replica. [Ulteriori informazioni](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * L&#39;opzione **XtkCleanup_NoStats** è stata migliorata per PostgreSQL per controllare meglio il comportamento del passaggio di ottimizzazione dello storage del flusso di lavoro di pulizia del database. [Ulteriori informazioni](../../production/using/database-cleanup-workflow.md#statistics-update)
+   * L&#39;opzione **WdbcOptions_TempDbName** consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server. Questo ottimizza i backup e la replica. [Leggi tutto](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * L&#39;opzione **XtkCleanup_NoStats** è stata migliorata per PostgreSQL per controllare meglio il comportamento del passaggio di ottimizzazione dello storage del flusso di lavoro di pulizia del database. [Leggi tutto](../../production/using/database-cleanup-workflow.md#statistics-update)
 * È stato aggiunto un meccanismo di blocco dell’account all’API **logon()** . Impedisce ulteriori tentativi di accesso dopo un certo numero di tentativi di accesso consecutivi non riusciti entro un intervallo di tempo specificato.
-* Una nuova opzione **Maximum personalization run time** nelle proprietà di consegna ti consente di definire un periodo di timeout per il tempo di esecuzione della personalizzazione, al fine di evitare che la fase di personalizzazione venga eseguita troppo a lungo. [Ulteriori informazioni](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* È stata aggiunta l’opzione **protocollo ftp** per consentire l’utilizzo di una configurazione proxy per le connessioni SFTP. [Ulteriori informazioni](../../installation/using/file-res-management.md)
+* Una nuova opzione **Maximum personalization run time** nelle proprietà di consegna ti consente di definire un periodo di timeout per il tempo di esecuzione della personalizzazione, al fine di evitare che la fase di personalizzazione venga eseguita troppo a lungo. [Leggi tutto](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* È stata aggiunta l’opzione **protocollo ftp** per consentire l’utilizzo di una configurazione proxy per le connessioni SFTP. [Leggi tutto](../../installation/using/file-res-management.md)
 * Nuovo supporto dell’accesso proxy a un server esterno SFTP per ambienti on-premise.
-* È stata aggiunta una protezioni specifica per impedire l’installazione di pacchetti non compatibili con l’istanza Campaign. [Ulteriori informazioni](../../installation/using/installing-campaign-standard-packages.md)
+* È stata aggiunta una protezioni specifica per impedire l’installazione di pacchetti non compatibili con l’istanza Campaign. [Leggi tutto](../../installation/using/installing-campaign-standard-packages.md)
 
 _Sistemi obsoleti_
 
@@ -156,7 +153,7 @@ I seguenti sistemi sono ora [obsoleti](https://helpx.adobe.com/it/campaign/kb/de
 * Apache 2.2
 * Centos 6
 
-Verifica di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità di Campaign più recente. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
+Verifica di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità di Campaign più recente. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
 
 _SDK per Campaign Mobile_
 
