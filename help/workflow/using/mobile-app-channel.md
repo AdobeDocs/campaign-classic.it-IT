@@ -5,7 +5,7 @@ description: Canale app mobile
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 18%
@@ -14,6 +14,8 @@ ht-degree: 18%
 
 
 # Canale app mobile{#mobile-app-channel}
+
+![](../../assets/common.svg)
 
 Il flusso di lavoro descritto di seguito è installato con il modulo **Canale app mobile** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/about-mobile-app-channel.md).
 

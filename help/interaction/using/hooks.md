@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Hook{#hooks}
+
+![](../../assets/v7-only.svg)
 
 I blocchi in Interazione consentono di modificare il comportamento **del motore standard**.
 
@@ -25,7 +27,7 @@ Il gancio **[!UICONTROL Dynamic offer]** è configurato con il peso dell&#39;off
 
 ![](assets/interaction_hooks_2.png)
 
-## Caricamento della destinazione {#target-loading}
+## Caricamento di Target {#target-loading}
 
 Questo gancio ti consente di arricchire il profilo del contatto (caricato dalla query preconfigurata) con dati aggiuntivi provenienti da un sistema esterno.
 
@@ -55,7 +57,7 @@ I dati raccolti devono essere inseriti nel nodo di dati della chiamata (nodo di 
   interaction.@additionalData = additionalData;
 ```
 
-## Post-elaborazione della proposta {#proposition-post-processing-}
+## Proposizione post-elaborazione {#proposition-post-processing-}
 
 Questo gancio consente di verificare la coerenza e la compatibilità delle proposte idonee in una determinata interazione. Consente inoltre di definire una nuova funzionalità di calcolo del punteggio o della probabilità.
 

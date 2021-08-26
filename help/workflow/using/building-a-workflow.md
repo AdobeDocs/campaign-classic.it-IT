@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Creazione di un flusso di lavoro {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 Questa sezione descrive i principi chiave e le best practice per creare un flusso di lavoro in Campaign.
 
@@ -55,10 +57,10 @@ Devi ora definire le varie attività e collegarle nel diagramma. A questo punto 
 
 Le attività sono raggruppate per categoria all’interno delle diverse schede della palette. Le schede e le attività disponibili possono variare a seconda del tipo di flusso di lavoro (tecnico, di targeting o del flusso di lavoro della campagna).
 
-* La prima scheda contiene attività di targeting e di manipolazione dei dati. Queste attività sono descritte in [Attività di targeting](../../workflow/using/about-targeting-activities.md).
-* La seconda scheda contiene le attività di pianificazione, utilizzate principalmente per coordinare altre attività. Queste attività sono descritte in [Attività di controllo del flusso](../../workflow/using/about-flow-control-activities.md).
-* La terza scheda contiene strumenti e azioni che possono essere utilizzati nel flusso di lavoro. Queste attività sono descritte in [Attività azione](../../workflow/using/about-action-activities.md).
-* La quarta scheda contiene attività che dipendono da un determinato evento, ad esempio la ricezione di un’e-mail o l’arrivo di un file su un server. Queste attività sono descritte in [Attività evento](../../workflow/using/about-event-activities.md).
+* La prima scheda contiene attività di targeting e di manipolazione dei dati. Queste attività sono descritte in [Attività di targeting](about-targeting-activities.md).
+* La seconda scheda contiene le attività di pianificazione, utilizzate principalmente per coordinare altre attività. Queste attività sono descritte in [Attività di controllo del flusso](about-flow-control-activities.md).
+* La terza scheda contiene strumenti e azioni che possono essere utilizzati nel flusso di lavoro. Queste attività sono descritte in [Attività azione](about-action-activities.md).
+* La quarta scheda contiene attività che dipendono da un determinato evento, ad esempio la ricezione di un’e-mail o l’arrivo di un file su un server. Queste attività sono descritte in [Attività evento](about-event-activities.md).
 
 Per creare il diagramma
 
@@ -104,7 +106,7 @@ Per creare il diagramma
 
 * **Gestione delle immagini**
 
-   Puoi personalizzare l’immagine di sfondo del diagramma e quelle relative alle varie attività. Fai riferimento a [Gestione delle immagini delle attività](../../workflow/using/managing-activity-images.md).
+   Puoi personalizzare l’immagine di sfondo del diagramma e quelle relative alle varie attività. Fai riferimento a [Gestione delle immagini delle attività](managing-activity-images.md).
 
 ## Configurazione delle attività {#configuring-activities}
 
@@ -112,7 +114,7 @@ Fai doppio clic su un’attività per configurarla o fai clic con il pulsante de
 
 >[!NOTE]
 >
->Le attività del flusso di lavoro della campagna sono descritte in [questa sezione](../../workflow/using/about-activities.md).
+>Le attività del flusso di lavoro della campagna sono descritte in [questa sezione](about-activities.md).
 
 La prima scheda contiene la configurazione di base. La scheda **[!UICONTROL Advanced]** contiene i parametri aggiuntivi, utilizzati in particolare per definire il comportamento in caso di errore, specificare la durata di esecuzione per un&#39;attività e per immettere uno script di inizializzazione.
 
@@ -124,13 +126,13 @@ Per una migliore comprensione delle attività e per migliorare la leggibilità d
 
 I flussi di lavoro di targeting consentono di creare diversi target di consegna. Puoi creare query, definire sindacati o esclusioni in base a criteri specifici, aggiungere la pianificazione, grazie alle attività del flusso di lavoro. Il risultato di questo targeting può essere trasferito automaticamente in un elenco che può fungere da target delle azioni di consegna
 
-Oltre a queste attività, le opzioni di gestione dati ti consentono di manipolare i dati e di accedere a funzioni avanzate per soddisfare problemi di targeting complessi. Per ulteriori informazioni, consulta [Gestione dati](../../workflow/using/targeting-data.md#data-management).
+Oltre a queste attività, le opzioni di gestione dati ti consentono di manipolare i dati e di accedere a funzioni avanzate per soddisfare problemi di targeting complessi. Per ulteriori informazioni, consulta [Gestione dati](targeting-data.md#data-management).
 
 Tutte queste attività si trovano nella prima scheda del flusso di lavoro.
 
 >[!NOTE]
 >
->Le attività di targeting sono descritte in [questa sezione](../../workflow/using/about-activities.md).
+>Le attività di targeting sono descritte in [questa sezione](about-activities.md).
 
 I flussi di lavoro di targeting possono essere creati e modificati tramite il nodo **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** della struttura di Adobe Campaign o tramite il menu **[!UICONTROL Profiles and Targets > Targeting workflows]** della home page.
 
@@ -142,11 +144,11 @@ I flussi di lavoro di targeting nel quadro di una campagna vengono memorizzati c
 
 I passaggi per creare un flusso di lavoro di targeting sono descritti in dettaglio in queste sezioni:
 
-1. **** Identificare i dati nel database - Vedere  [Creazione di query](../../workflow/using/targeting-data.md#creating-queries)
-1. **** Preparazione dei dati per soddisfare le esigenze di consegna - Consulta  [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **** Dati utilizzati per eseguire aggiornamenti o all’interno di una consegna - Consulta  [Aggiornamento del database](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **** Identificare i dati nel database - Vedere  [Creazione di query](targeting-data.md#creating-queries)
+1. **** Preparazione dei dati per soddisfare le esigenze di consegna - Consulta  [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data)
+1. **** Dati utilizzati per eseguire aggiornamenti o all’interno di una consegna - Consulta  [Aggiornamento del database](how-to-use-workflow-data.md#updating-the-database)
 
-I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili nei campi di personalizzazione, in particolare per l’utilizzo durante la creazione di messaggi personalizzati. Per ulteriori informazioni, consulta [Dati di destinazione](../../workflow/using/data-life-cycle.md#target-data)
+I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili nei campi di personalizzazione, in particolare per l’utilizzo durante la creazione di messaggi personalizzati. Per ulteriori informazioni, consulta [Dati di destinazione](data-life-cycle.md#target-data)
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
@@ -166,7 +168,7 @@ Mentre per **Applicazioni web**, l&#39;elenco conterrà le seguenti dimensioni d
 
 ![](assets/query_filter_target_dimensions_2.png)
 
-## Flussi di lavoro delle campagne {#campaign-workflows}
+## Flussi di lavoro di Campaign {#campaign-workflows}
 
 Per ogni campagna, puoi creare flussi di lavoro da eseguire dalla scheda **[!UICONTROL Targeting and workflows]** . Questi flussi di lavoro sono specifici per la campagna.
 
@@ -194,7 +196,7 @@ La sottocartella **[!UICONTROL Campaign process]** centralizza i flussi di lavor
 
 >[!NOTE]
 >
->L&#39;elenco dei flussi di lavoro tecnici installati con ciascun modulo è disponibile in una sezione [dedicata](../../workflow/using/about-technical-workflows.md).
+>L&#39;elenco dei flussi di lavoro tecnici installati con ciascun modulo è disponibile in una sezione [dedicata](about-technical-workflows.md).
 
 Puoi creare altri flussi di lavoro tecnici nel nodo **[!UICONTROL Administration > Production > Technical workflows]** della struttura ad albero. Tuttavia, questo processo è riservato agli utenti esperti.
 

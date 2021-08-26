@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Caso di utilizzo: Inviare e-mail transazionali con allegati {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 Lo scopo di questo caso d’uso è quello di aggiungere al volo allegati e-mail a messaggi in uscita.
 
@@ -75,7 +77,7 @@ Per aggiungere istantaneamente un allegato e-mail a un messaggio sulle transazio
 1. Nella schermata **[!UICONTROL Attachment definition]**, immetti il parametro di attacco SOAP:
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. Quando il messaggio viene elaborato, il sistema riceve il file dalla posizione remota (server di terze parti) e lo allega al singolo messaggio.

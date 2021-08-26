@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
 
 ---
 
-# Descrizione del modello dati della campagna{#data-model-description}
+# Descrizione del modello dati di Campaign{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign viene fornito con un modello dati predefinito. Questa sezione fornisce alcuni dettagli sulle tabelle integrate del modello dati Adobe Campaign e sulla loro interazione.
 
@@ -25,7 +27,7 @@ Per accedere alla descrizione di ciascuna tabella, vai a **[!UICONTROL Admin > C
 >
 >La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
 
-## Descrizione delle tabelle principali {#description-main-tables}
+## Descrizione delle principali tabelle {#description-main-tables}
 
 Adobe Campaign si basa su un database relazionale contenente tabelle collegate tra loro.
 
@@ -103,7 +105,7 @@ Le cartelle vengono digitate: il valore del campo sModel specifica il tipo di da
 
 La struttura ad albero è gestita dai campi iParentId e iChildCount . Il campo sFullName fornisce il percorso completo della cartella nella struttura. Infine, nel campo è presente un indice univoco che rappresenta il nome interno della cartella sName.
 
-## Consegna e tracking {#delivery-and-tracking}
+## Consegna e tracciamento {#delivery-and-tracking}
 
 Questo insieme di tabelle è collegato al modulo **Delivery** , che consente di monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [Monitoraggio delle consegne](../../delivery/using/about-delivery-monitoring.md). Per ulteriori informazioni sul tracciamento, consulta [Tracciamento dei messaggi](../../delivery/using/about-message-tracking.md).
 
@@ -129,7 +131,7 @@ Questo insieme di tabelle è collegato al modulo **Campagne di marketing** , che
 
 ## Coerenza delle comunicazioni {#communication-consistency}
 
-Questo set di tabelle è collegato al modulo **Ottimizzazione campagna** , che consente di controllare, filtrare e monitorare l’invio di consegne. Per ulteriori informazioni, consulta [Informazioni sulle tipologie di campagne](../../campaign/using/about-campaign-typologies.md).
+Questo set di tabelle è collegato al modulo **Ottimizzazione campagna** , che consente di controllare, filtrare e monitorare l’invio di consegne. Per ulteriori informazioni, consulta [Informazioni sulle tipologie di campagne](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -141,7 +143,7 @@ Questo set di tabelle è collegato al modulo **Ottimizzazione campagna** , che c
 
 ## Gestione della risposta {#response-management}
 
-Questo insieme di tabelle è collegato al modulo **Gestione risposte**, che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerta per tutti i canali di comunicazione. Per ulteriori informazioni, consulta [Informazioni sul gestore delle risposte](../../campaign/using/about-response-manager.md).
+Questo insieme di tabelle è collegato al modulo **Gestione risposte**, che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerta per tutti i canali di comunicazione. Per ulteriori informazioni, consulta [Informazioni sul gestore delle risposte](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
@@ -221,7 +223,7 @@ Questo insieme di tabelle è collegato al modulo **Interaction**, che consente d
 * **NmsOfferCategory**: Questa tabella corrisponde a  **nms:offerCategory**. Contiene le categorie di offerta.
 * **NmsOfferEnv**: Questa tabella corrisponde a  **nms:offerEnv**. Contiene gli ambienti delle offerte.
 
-## Modulo del Centro messaggi {#message-center-module}
+## Modulo del centro messaggi {#message-center-module}
 
 Il seguente set di tabelle è collegato al modulo **Messaggistica transazionale** (Centro messaggi), che consente di gestire comunicazioni singole e univoche inviate a un utente e generate da eventi attivati dai sistemi informativi. Per ulteriori informazioni, consulta [Informazioni sulla messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
 

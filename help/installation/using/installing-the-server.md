@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Installazione del server{#installing-the-server}
+
+![](../../assets/v7-only.svg)
 
 ## Esecuzione del programma di installazione {#executing-the-installation-program}
 
@@ -62,7 +64,7 @@ I passaggi di installazione per il server Adobe Campaign sono i seguenti:
 
    Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fare riferimento a [Primo avvio del server](#first-start-up-of-the-server).
 
-## Test di installazione di riepilogo {#summary-installation-testing}
+## Riepilogo del test di installazione {#summary-installation-testing}
 
 Puoi verificare l’installazione iniziale utilizzando il seguente comando:
 
@@ -133,7 +135,7 @@ Vengono visualizzate le seguenti informazioni:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Password per l&#39;identificatore interno {#password-for-the-internal-identifier}
+## Password per l’identificatore interno {#password-for-the-internal-identifier}
 
 Il server Adobe Campaign definisce un accesso tecnico denominato **internal** che dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
 

@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migrazione in Windows per Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+
+![](../../assets/v7-only.svg)
 
 ## Procedura generale {#general-procedure}
 
@@ -26,7 +28,7 @@ Per Windows, i passaggi di migrazione sono i seguenti:
 1. Servizio di riavvio: fare riferimento a [Riavvio dei servizi](#re-starting-the-services).
 1. Elimina e cancella la versione precedente di Adobe Campaign: fare riferimento a [Eliminazione e pulizia della versione precedente di Adobe Campaign](#deleting-and-cleansing-adobe-campaign-previous-version).
 
-## Arresto del servizio {#service-stop}
+## Interruzione del servizio {#service-stop}
 
 In primo luogo, interrompere tutti i processi con accesso al database su tutti i computer interessati.
 

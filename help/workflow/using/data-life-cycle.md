@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Ciclo di vita dei dati {#data-life-cycle}
+
+![](../../assets/common.svg)
 
 ## Tabella di lavoro {#work-table}
 
@@ -31,7 +33,7 @@ A questo scopo, seleziona il menu corrispondente:
 
    ![](assets/wf-right-click-display.png)
 
-   Per ulteriori informazioni, consulta [Tabelle di lavoro e schema del flusso di lavoro](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
+   Per ulteriori informazioni, consulta [Tabelle di lavoro e schema del flusso di lavoro](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Analisi del target
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Inviare, monitorare e tenere traccia delle consegne SMS{#sms-properties}
+
+![](../../assets/common.svg)
 
 ## Inviare messaggi SMS {#sending-sms-messages}
 
@@ -167,4 +169,4 @@ Il nome del mittente di questo tipo di messaggio è un codice breve solitamente 
 >
 >Questo tipo di messaggi automatici non mantiene una cronologia. Pertanto, non vengono visualizzate nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
 >
->Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. [Ulteriori informazioni](../../campaign/using/pressure-rules.md).
+>Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. [Ulteriori informazioni](../../campaign-opt/using/pressure-rules.md).

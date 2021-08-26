@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
 
 ---
 
-# Principi e ciclo dei dati del connettore ACS{#acs-connector-principles-and-data-cycle}
+# Principi del connettore ACS e ciclo dei dati{#acs-connector-principles-and-data-cycle}
+
+![](../../assets/v7-only.svg)
 
 ## Introduzione {#introduction}
 
@@ -151,7 +153,7 @@ I seguenti flussi di lavoro di replica sono disponibili come modelli &quot;pront
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri ampi delle e-mail e i registri di tracciamento delle e-mail da Campaign Standard a Campaign v7. Prende in considerazione solo le consegne inviate da Campaign Standard a profili che fanno parte della tabella nms:recipients di Campaign v7.
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri ampi delle e-mail e i registri di tracciamento delle e-mail da Campaign Standard a Campaign v7. Prende in considerazione solo le consegne inviate da Campaign Standard a profili che fanno parte di una tabella specifica (per definire, diversa da nms:recipients) di Campaign v7.
 
-### Campi dei destinatari predefiniti {#default-recipient-fields}
+### Campi destinatari predefiniti {#default-recipient-fields}
 
 Se si dispone di campi o tabelle personalizzate aggiuntivi (ad esempio, tabella delle transazioni), questi non verranno replicati per impostazione predefinita. È necessario eseguire la configurazione avanzata. Consulta [Implementazione avanzata](#advanced-implementation).
 

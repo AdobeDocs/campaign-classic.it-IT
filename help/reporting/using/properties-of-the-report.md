@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Proprietà del rapporto{#properties-of-the-report}
+
+![](../../assets/common.svg)
 
 Puoi personalizzare e configurare completamente il rapporto in base alle tue esigenze. A questo scopo, modificane le proprietà. Le proprietà dei rapporti sono accessibili tramite il pulsante **[!UICONTROL Properties]** sopra il grafico a sequenza di attività.
 
@@ -35,7 +37,7 @@ Nella scheda **[!UICONTROL General]** delle proprietà del rapporto puoi modific
 
 * I parametri **Controllo di accesso**. Queste impostazioni sono descritte di seguito.
 
-## Controllo dell&#39;accesso al report {#report-accessibility}
+## Controllo dell’accesso al report {#report-accessibility}
 
 Un rapporto è accessibile dalla console Adobe Campaign o da un browser web. In questo caso, può essere necessario configurare il controllo di accesso al report come mostrato di seguito.
 

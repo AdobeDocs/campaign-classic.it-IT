@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Sincronizzazione delle applicazioni web{#synchronizing-web-applications}
+
+![](../../assets/v7-only.svg)
 
 In questo caso d’uso, invieremo una comunicazione, utilizzando Campaign Standard, che include un collegamento a un’applicazione web Campaign v7. Quando il destinatario fa clic sul collegamento nell’e-mail, l’applicazione Web visualizza un modulo contenente diversi campi precaricati con i dati del destinatario e un collegamento di abbonamento a una newsletter. Il destinatario può aggiornare i propri dati e iscriversi al servizio. Il suo profilo verrà aggiornato in Campaign v7 e le informazioni saranno replicate in Campaign Standard.
 
@@ -27,7 +29,7 @@ A questo scopo, è necessario:
 * un servizio e un’applicazione web creati e pubblicati in Campaign v7.
 * l&#39;applicazione web deve contenere un&#39;attività **[!UICONTROL Pre-loading]** utilizzando il metodo di identificazione **[!UICONTROL Adobe Campaign encryption]**.
 
-## Creazione dell&#39;applicazione Web e del servizio {#creating-the-web-application-and-service}
+## Creazione dell&#39;applicazione e del servizio Web {#creating-the-web-application-and-service}
 
 In Campaign v7, puoi creare applicazioni web che consentono ai destinatari di abbonarsi a un servizio. L’applicazione web e il servizio sono progettati e memorizzati in Campaign v7 e puoi aggiornare il servizio tramite una comunicazione Campaign Standard. Per ulteriori informazioni sulle applicazioni web in Campaign v7, consulta [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -80,7 +82,7 @@ Per verificare che i dati siano stati replicati correttamente, segui questi pass
 
    ![](assets/acs_connect_lp_10.png)
 
-## Progettazione e invio dell&#39;e-mail {#designing-and-sending-the-email}
+## Progettazione e invio dell’e-mail {#designing-and-sending-the-email}
 
 In questa parte, vedremo come includere un collegamento, in un’e-mail di Campaign Standard, alla pagina di destinazione replicata da un’applicazione web Campaign v7.
 

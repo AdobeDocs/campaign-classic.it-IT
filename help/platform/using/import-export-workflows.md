@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 5%
@@ -15,11 +15,13 @@ ht-degree: 5%
 
 # Importare ed esportare dati utilizzando i flussi di lavoro {#import-export-workflows}
 
+![](../../assets/common.svg)
+
 ## Raccolta di dati {#collecting-data-workflows}
 
 I flussi di lavoro possono essere un modo utile per automatizzare alcuni dei processi di importazione. Sia che importi dati da un file locale o da un SFTP, puoi utilizzare i flussi di lavoro per standardizzare le procedure di gestione dei dati.
 
-### Utilizzare i dati di un elenco: Leggi l&#39;elenco {#using-data-from-a-list--read-list}
+### Utilizzare i dati di un elenco: Leggi elenco {#using-data-from-a-list--read-list}
 
 I dati inviati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati predisposti e strutturati.
 
@@ -45,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Una volta raccolti i dati, puoi utilizzarli nei flussi di lavoro, ad esempio per arricchire una consegna o aggiornare il database. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/how-to-use-workflow-data.md).
 
-## Esporta dati {#exporting-data-via-a-workflow}
+## Esportare i dati {#exporting-data-via-a-workflow}
 
 I flussi di lavoro possono essere un modo utile per automatizzare alcuni dei processi di esportazione o per esportare set precisi di dati dopo aver utilizzato alcune delle attività di gestione dei dati disponibili per trasformare i dati.
 

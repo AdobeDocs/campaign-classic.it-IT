@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
 
 ---
 
-# Configurazione dell&#39;integrazione dei tipi di pubblico condivisi in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+
+![](../../assets/common.svg)
 
 Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione per te e ti contatterà per fornire i dettagli e le informazioni necessarie per completare la configurazione:
 
@@ -26,7 +28,7 @@ Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’inte
 >
 >Se utilizzi il dominio demdex e segui la sintassi **ftp-out.demdex.com** per l’account esterno di importazione e **ftp-in.demdex.com** per l’account esterno di esportazione, devi adattare di conseguenza la tua implementazione e passare al connettore Amazon Simple Storage Service (S3) per importare o esportare i dati. Per ulteriori informazioni su come configurare gli account esterni con Amazon S3, consulta questa [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-## Passaggio 1: Configura o controlla gli account esterni in Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Passaggio 1: Configurare o controllare gli account esterni in Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Innanzitutto, dobbiamo configurare o controllare gli account esterni in Adobe Campaign come segue:
 
@@ -65,7 +67,7 @@ Per ulteriori informazioni sull’area geografica AWS, consulta questa  [pagina]
 
 Gli account esterni sono ora configurati.
 
-## Passaggio 2: Configura l&#39;origine dati {#step-2--configure-the-data-source}
+## Passaggio 2: Configurare l&#39;origine dati {#step-2--configure-the-data-source}
 
 Il **Destinatario - ID visitatore** viene creato all&#39;interno di Audience Manager. Si tratta di un’origine dati preconfigurata configurata configurata configurata per l’ID visitatore per impostazione predefinita. I segmenti creati da Campaign faranno parte di questa origine dati.
 

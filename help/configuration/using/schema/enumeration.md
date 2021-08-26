@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # elemento di enumerazione {#enumeration--element}
 
-## Modello dei contenuti {#content-model-5}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-5}
 
 enumerazione:==(help| valore)
 
@@ -32,7 +34,7 @@ enumerazione:==(help| valore)
 
 `<srcschema>`
 
-## Figli {#children-5}
+## Bambini {#children-5}
 
 * `<help>`
 * `<value>`
@@ -45,7 +47,7 @@ Questo elemento ci consente di definire un’enumerazione di valori. Un&#39;enum
 
 Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elemento principale sia definito).
 
-## Descrizione dell&#39;attributo {#attribute-description-5}
+## Descrizione attributo {#attribute-description-5}
 
 * **basetype (stringa)**: tipo dei valori memorizzati nell&#39;enumerazione.
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Utilizzo dell’attività di approvazione locale{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 L’attività **[!UICONTROL Local approval]** integrata in un flusso di lavoro di targeting ti consente di impostare un processo di approvazione del destinatario prima che la consegna venga inviata.
 
@@ -51,7 +53,7 @@ Le fasi principali del processo di approvazione locale sono:
 
 Il modello di distribuzione dei dati ti consente di limitare la popolazione risultante dal targeting in base al raggruppamento dei dati, consentendo al contempo di assegnare ogni valore a un supervisore locale. In questo esempio, abbiamo definito il campo **[!UICONTROL Email address domain]** come campo di distribuzione e assegnato un dominio a ogni supervisore locale
 
-Per ulteriori informazioni sulla creazione di un modello di distribuzione dei dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Per ulteriori informazioni sulla creazione di un modello di distribuzione dei dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Per creare il modello di distribuzione dati, vai al nodo **[!UICONTROL Resources > Campaign management > Data distribution]** e fai clic su **[!UICONTROL New]**.
 
@@ -106,7 +108,7 @@ Sono state aggiunte le seguenti attività:
 
 Il targeting a monte è costituito da due query, una intersezione e una divisione. La popolazione risultante dal targeting può essere limitata utilizzando un’attività **[!UICONTROL Split]** utilizzando un modello di distribuzione dati.
 
-Per ulteriori informazioni sulla configurazione di un’attività di suddivisione, consulta [Dividi](../../workflow/using/split.md). La creazione di un modello di distribuzione dei dati è descritta in [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Per ulteriori informazioni sulla configurazione di un’attività di suddivisione, consulta [Dividi](split.md). La creazione di un modello di distribuzione dei dati è descritta in [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 Se non si desidera limitare la popolazione dalla query, non è necessario utilizzare le attività **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. In questo caso, completa il modello di distribuzione dati nella prima attività **[!UICONTROL Local approval]**.
 
@@ -134,7 +136,7 @@ Nel modello di distribuzione, abbiamo scelto di limitare la popolazione al 10% p
 
 L’attività **[!UICONTROL Local approval]** ti consente di inviare una notifica a ogni supervisore locale.
 
-Per ulteriori informazioni sulla configurazione dell&#39;attività **[!UICONTROL Local approval]**, consulta [Approvazione locale](../../workflow/using/local-approval.md).
+Per ulteriori informazioni sulla configurazione dell&#39;attività **[!UICONTROL Local approval]**, consulta [Approvazione locale](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 
@@ -158,7 +160,7 @@ L’attività di attesa ti consente di posticipare l’inizio della seconda atti
 
 ![](assets/local_validation_workflow_3.png)
 
-### Notifica del feedback {#feedback-notification}
+### Notifica di feedback {#feedback-notification}
 
 La seconda attività **[!UICONTROL Local approval]** ti consente di inviare una notifica di feedback sulla consegna a ogni supervisore locale.
 
@@ -174,7 +176,7 @@ Una volta raggiunta la scadenza configurata nell’attività di attesa, la secon
 
 ![](assets/local_validation_intro_3.png)
 
-### Tracciamento approvazione da parte dell&#39;amministratore {#approval-tracking-by-the-administrator}
+### Monitoraggio dell’approvazione da parte dell’amministratore {#approval-tracking-by-the-administrator}
 
 Ogni volta che viene avviata l&#39;attività di approvazione locale, viene creata un&#39;attività di approvazione. L&#39;amministratore può controllare ciascuna di queste attività di approvazione.
 

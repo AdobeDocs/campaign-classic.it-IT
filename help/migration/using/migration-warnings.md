@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 46b46fc9-c7c9-4c74-b5f3-7935d5368520
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Avvisi di migrazione{#migration-warnings}
+
+![](../../assets/v7-only.svg)
 
 * Il processo di migrazione è riservato agli utenti esperti. Devi essere assistito da almeno un esperto di database, un amministratore di sistema e uno sviluppatore di applicazioni di Adobe Campaign.
 * Prima di avviare la migrazione, verifica che i sistemi e i componenti di sistema utilizzati siano in realtà compatibili con v7. Consultare la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Raccolta file{#file-collector}
+
+![](../../assets/common.svg)
 
 Il **File Collector** controlla l&#39;arrivo di uno o più file in una directory e attiva la relativa transizione per ogni file ricevuto. Per ogni evento, una variabile **[!UICONTROL filename]** contiene il nome completo del file ricevuto. I file raccolti vengono spostati in un&#39;altra directory a scopo di archiviazione e per assicurarsi che vengano conteggiati una sola volta.
 
@@ -23,7 +25,7 @@ I file devono trovarsi sul server in cui viene eseguito il modulo wfserver respo
 
 ## Properties {#properties}
 
-La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate nelle schede [E-mail in entrata](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** ).
+La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate nelle schede [E-mail in entrata](inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** ).
 
 ![](assets/file_collect_edit.png)
 
@@ -67,7 +69,7 @@ La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di 
 
 1. **Storizzazione**
 
-   Fai riferimento al passaggio **[!UICONTROL File historization]** qui: [Download Web](../../workflow/using/web-download.md).
+   Fai riferimento al passaggio **[!UICONTROL File historization]** qui: [Download Web](web-download.md).
 
 Impossibile determinare l&#39;ordine di elaborazione dei file. Per elaborare un set di file in sequenza, utilizza l&#39;opzione **[!UICONTROL Stop as soon as a file has been processed]** e crea un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. L’opzione **[!UICONTROL Process file nonexistence]** ti consente di terminare l’iterazione.
 

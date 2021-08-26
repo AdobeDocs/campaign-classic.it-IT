@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # Intersezione{#intersection}
 
+![](../../assets/common.svg)
+
 Un’attività di tipo **Intersection** crea un target dall’intersezione delle destinazioni ricevute.
 
 Un’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, consulta [Estrazione di dati di giunzione (Intersezione)](../../workflow/using/targeting-data.md#extracting-joint-data--intersection-).
+Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, consulta [Estrazione di dati di giunzione (Intersezione)](targeting-data.md#extracting-joint-data--intersection-).
 
 Se desideri elaborare la popolazione rimanente, seleziona l’opzione **[!UICONTROL Generate complement]** . Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All’attività verrà quindi aggiunta una transizione in uscita aggiuntiva, come segue:
 

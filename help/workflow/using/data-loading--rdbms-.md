@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 3%
@@ -15,9 +15,11 @@ ht-degree: 3%
 
 # Caricamento dati (RDBMS){#data-loading-rdbms}
 
+![](../../assets/common.svg)
+
 L’attività **[!UICONTROL Data loading (RDBMS)]** ti consente di accedere direttamente a questo database esterno e di raccogliere solo i dati necessari per il targeting.
 
-Per migliorare le prestazioni, si consiglia di utilizzare l’attività query (in cui è possibile utilizzare i dati di un database esterno). Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+Per migliorare le prestazioni, si consiglia di utilizzare l’attività query (in cui è possibile utilizzare i dati di un database esterno). Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database--fda-.md).
 
 Operazione:
 

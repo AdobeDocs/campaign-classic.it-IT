@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Cambiare dimensione{#change-dimension}
+
+![](../../assets/common.svg)
 
 L’attività modifica dimensione ti consente di modificare la dimensione di targeting durante il ciclo di costruzione di destinazione. Lo spostamento dell’asse dipende dal modello di dati e dalla dimensione di input. Questo consente ad esempio di passare dalla dimensione &quot;contratti&quot; alla dimensione &quot;clienti&quot;.
 
@@ -55,7 +57,7 @@ Per configurare l’attività di modifica della dimensione, esegui i seguenti pa
 
       >[!NOTE]
       >
-      >Per informazioni sulla creazione e la gestione di colonne aggiuntive, consulta [Aggiunta di dati](../../workflow/using/query.md#adding-data).
+      >Per informazioni sulla creazione e la gestione di colonne aggiuntive, consulta [Aggiunta di dati](query.md#adding-data).
 
    * Seleziona la dimensione di targeting precedente (prima dell’interruttore dell’asse) e seleziona il sottoalbero **[!UICONTROL Zip Code]** del destinatario, quindi fai clic su **[!UICONTROL Edit expression]**.**[!UICONTROL Location]**
 

@@ -6,7 +6,7 @@ description: Scopri come configurare l’accesso a Google BigQuery in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -15,6 +15,8 @@ ht-degree: 2%
 
 
 # Configurare l&#39;accesso a Google BigQuery {#configure-fda-google-big-query}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l&#39;opzione Adobe Campaign Classic **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Google BigQuery].
 
@@ -30,7 +32,7 @@ Utilizza l&#39;opzione Adobe Campaign Classic **Federated Data Access** (FDA) pe
 
 ## Google BigQuery su Windows {#google-windows}
 
-### Driver impostato su Windows {#driver-window}
+### Driver configurato su Windows {#driver-window}
 
 1. Scaricare il driver [ODBC per Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
@@ -82,7 +84,7 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 ## Google BigQuery su Linux {#google-linux}
 
-### Driver impostato su Linux {#driver-linux}
+### Driver configurato su Linux {#driver-linux}
 
 1. Prima di installare il driver ODBC, è necessario aggiornare il sistema. Su Linux o CentOS, esegui il seguente comando:
 

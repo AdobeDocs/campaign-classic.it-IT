@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # elemento attributo {#attribute--element}
 
-## Modello dei contenuti {#content-model}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model}
 
 attributo:==help
 
@@ -41,7 +43,7 @@ _operation (stringa), advanced (booleano), applyIf (stringa), autoIncrement (boo
 
 La sequenza in cui gli elementi `<attribute>` sono definiti in un `<srcschema>` non influisce sulla sequenza di creazione del campo nel database. La sequenza di creazione sarà alfabetica.
 
-## Descrizione dell&#39;attributo {#attribute-description}
+## Descrizione attributo {#attribute-description}
 
 * **_operazione (stringa)**: definisce il tipo di scrittura nel database.
 

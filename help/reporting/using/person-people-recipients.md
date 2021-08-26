@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Persone e destinatari {#person-people-and-recipients}
+
+![](../../assets/common.svg)
 
 Questo esempio ti aiuterà a comprendere la differenza tra una persona/a e un destinatario in Adobe Campaign. Invieremo una consegna a più persone per evidenziare la differenza tra persone e destinatari, specificando al tempo stesso il metodo di calcolo per i seguenti indicatori:
 

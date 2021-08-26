@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Configurare i processi di esportazione {#executing-export-jobs}
+
+![](../../assets/common.svg)
 
 I processi di esportazione consentono di accedere ed estrarre dati dal database: contatti, client, elenchi, segmenti, ecc.
 
@@ -83,7 +85,7 @@ Seleziona i campi da esportare. Per eseguire questa operazione:
 
 1. Fai clic sul pulsante **[!UICONTROL Add]** per attivare le funzioni. Per ulteriori informazioni, consulta [Elenco di funzioni](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-## Passaggio 5: ordinare le colonne {#step-5---sorting-columns}
+## Passaggio 5 - Ordinare le colonne {#step-5---sorting-columns}
 
 Selezionare l’ordinamento delle colonne.
 
@@ -95,7 +97,7 @@ Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La c
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-## Passaggio 7: formattazione dei dati {#step-7---data-formatting}
+## Passaggio 7 - Formattazione dei dati {#step-7---data-formatting}
 
 È possibile modificare l’ordine e l’etichetta dei campi per il file di output e applicare le trasformazioni ai dati di origine.
 
@@ -115,7 +117,7 @@ Se esporti una raccolta di elementi (ad esempio le sottoscrizioni dei destinatar
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## Passaggio 8: anteprima dati {#step-8---data-preview}
+## Passaggio 8: anteprima dei dati {#step-8---data-preview}
 
 Fai clic su **[!UICONTROL Start the preview of the data]** per un&#39;anteprima del risultato dell&#39;esportazione. Per impostazione predefinita, vengono visualizzate le prime 200 righe. Per modificare questo valore, fai clic sulle frecce a destra del campo **[!UICONTROL Lines to display]** .
 
@@ -123,7 +125,7 @@ Fai clic su **[!UICONTROL Start the preview of the data]** per un&#39;anteprima 
 
 Fai clic sulle schede nella parte inferiore della procedura guidata per passare dall’anteprima dei risultati in colonne ai risultati in XML. È inoltre possibile visualizzare le query SQL generate.
 
-## Passaggio 9 - Avvia l&#39;esportazione {#step-9---launching-the-export}
+## Passaggio 9: avviare l’esportazione {#step-9---launching-the-export}
 
 Fai clic su **[!UICONTROL Start]** per avviare l’esportazione dei dati.
 

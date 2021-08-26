@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 5%
 
 ---
 
-# Passaggi chiave per creare un report{#about-reports-creation-in-campaign}
+# Passaggi fondamentali per creare un rapporto{#about-reports-creation-in-campaign}
+
+![](../../assets/common.svg)
 
 Per produrre statistiche sui dati nel database Campaign, puoi creare rapporti e adattarne il contenuto e il layout in base alle tue esigenze. Tali rapporti possono essere condivisi con altri operatori.
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Schemi di dati{#data-schemas}
+
+![](../../assets/common.svg)
 
 Di seguito sono riportati alcuni principi generali relativi all’utilizzo degli schemi di dati in Adobe Campaign.
 
@@ -122,7 +124,7 @@ Nel nostro esempio, gli elementi **`<chapter>`** e **`<page>`** sono elementi di
 >
 >La presenza dell&#39;attributo **ordered=&quot;true&quot;** consente di ordinare gli elementi della raccolta inseriti.
 
-## Elemento che fa riferimento a {#element-referencing}
+## Riferimento a un elemento {#element-referencing}
 
 Il riferimento agli elementi viene utilizzato molto negli schemi di contenuto. Consente di fattorizzare la definizione di un elemento **`<element>`** in modo che possa essere referenziato su altri elementi con la stessa struttura.
 
@@ -150,7 +152,7 @@ L&#39;attributo **ref** sull&#39;elemento a cui si fa riferimento deve essere co
 
 La struttura del capitolo viene spostata nell’elemento con il nome &quot;sezione&quot; al di fuori dell’elemento principale. Il capitolo e la sezione fanno riferimento all&#39;elemento &quot;sezione&quot;.
 
-## Elemento “compute-string”{#compute-string}
+## Elemento “compute-string” {#compute-string}
 
 Una **stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un&#39;istanza di contenuto.
 

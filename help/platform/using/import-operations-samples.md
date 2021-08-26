@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Esempi di importazione generica {#import-operations-samples}
+
+![](../../assets/common.svg)
 
 ## Importa da un elenco di destinatari {#example--import-from-a-list-of-recipients}
 
@@ -67,7 +69,7 @@ Per importare nel database Adobe Campaign i nuovi profili dei destinatari memori
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. Reconciliation
+1. Attività Reconciliation
 
    * Vai alla tabella **Destinatari (nms:recipient)** .
    * Seleziona l’operazione **[!UICONTROL Insertion]** e lascia i valori predefiniti negli altri campi.
@@ -118,7 +120,7 @@ Vogliamo aggiornare i record esistenti nel database e crearne di nuovi da un fil
 
    Applicare la procedura di cui all&#39;esempio 2 precedente.
 
-1. Reconciliation
+1. Attività Reconciliation
 
    * Mantieni **[!UICONTROL Update or insert]** selezionato per impostazione predefinita.
    * Mantieni l&#39;opzione **[!UICONTROL Management of duplicates]** in modalità **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
@@ -168,7 +170,7 @@ Applica i seguenti passaggi:
 
    Nell&#39;anteprima delle prime righe del file, puoi vedere che il file contiene aggiornamenti per alcuni record.
 
-1. Reconciliation
+1. Attività Reconciliation
 
    * Vai alla tabella e seleziona l&#39;operazione **[!UICONTROL Update]**.
    * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il campo **[!UICONTROL Management of doubles]**.
@@ -189,7 +191,7 @@ Applica i seguenti passaggi:
 
    Solo i valori vuoti sono stati sostituiti dai valori del file di testo, ma il valore esistente nel database non è stato sovrascritto dal valore del file di importazione.
 
-## Aggiornare e arricchire i valori da quelli contenuti in un file esterno {#example--update-and-enrich-the-values-from-those-in-an-external-file}
+## Aggiornare e arricchire i valori da quelli in un file esterno {#example--update-and-enrich-the-values-from-those-in-an-external-file}
 
 Vogliamo modificare alcuni campi di una tabella di database da un file di testo, dando priorità ai valori contenuti nel file di testo.
 
@@ -217,7 +219,7 @@ In questo esempio, alcuni campi nel file di testo hanno un valore vuoto, mentre 
 
    Applicare la procedura di cui all&#39;esempio 2 precedente.
 
-1. Reconciliation
+1. Attività Reconciliation
 
    * Vai alla tabella e seleziona **[!UICONTROL Update]**.
    * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il campo **[!UICONTROL Management of doubles]**.

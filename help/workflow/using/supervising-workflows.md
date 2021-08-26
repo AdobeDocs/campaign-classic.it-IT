@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# Caso di utilizzo: supervisiona i tuoi flussi di lavoro{#supervising-workflows}
+# Caso di utilizzo: supervisionare i flussi di lavoro{#supervising-workflows}
+
+![](../../assets/common.svg)
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro che vengono &quot;messi in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
 
@@ -31,9 +33,9 @@ Per monitorare lo stato di un set di flussi di lavoro, è necessario seguire que
 
 >[!NOTE]
 >
->Oltre al flusso di lavoro, Campaign **Workflow Heatmap** ti consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [dedicata](../../workflow/using/heatmap.md).
+>Oltre al flusso di lavoro, Campaign **Workflow Heatmap** ti consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [dedicata](heatmap.md).
 >
->Per ulteriori informazioni su come **monitorare l&#39;esecuzione dei flussi di lavoro**, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
+>Per ulteriori informazioni su come **monitorare l&#39;esecuzione dei flussi di lavoro**, consulta [questa sezione](monitoring-workflow-execution.md).
 
 ## Passaggio 1: Creazione del flusso di lavoro di monitoraggio {#step-1--creating-the-monitoring-workflow}
 
@@ -115,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Passaggio 3: Creazione dell&#39;attività &quot;Test&quot; {#step-3--creating-the--test--activity}
+## Passaggio 3: Creazione dell’attività &quot;Test&quot; {#step-3--creating-the--test--activity}
 
 L’attività &quot;Test&quot; ti consente di determinare se una consegna deve essere inviata o se il flusso di lavoro di monitoraggio deve eseguire un altro ciclo in base all’attività &quot;Wait&quot; (Attendi) .
 

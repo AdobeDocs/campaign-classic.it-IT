@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Invio di un report a un elenco{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 Questo caso d’uso descrive come generare un rapporto predefinito mensile **[!UICONTROL Tracking indicators]** in formato PDF e come inviarlo a un elenco di destinatari.
 
@@ -25,7 +27,7 @@ I passaggi principali per l’implementazione di questo caso d’uso sono:
 * Creazione di un modello di consegna che ti consentirà di generare una nuova consegna ogni volta che il flusso di lavoro viene eseguito (consulta: [Passaggio 2: Creazione del modello di consegna](#step-2--creating-the-delivery-template)).
 * Creazione di un flusso di lavoro che ti consentirà di generare il rapporto in formato PDF e di inviarlo all’elenco dei destinatari (consulta: [Passaggio 3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
 
-## Passaggio 1: Creazione dell&#39;elenco dei destinatari {#step-1--creating-the-recipient-list}
+## Passaggio 1: Creazione dell’elenco dei destinatari {#step-1--creating-the-recipient-list}
 
 Vai alla scheda **[!UICONTROL Profiles and targets]** , fai clic sul collegamento **[!UICONTROL Lists]** , quindi sul pulsante **[!UICONTROL Create]** . Seleziona **[!UICONTROL New list]** e crea un nuovo elenco di destinatari per il rapporto a cui inviare.
 
@@ -89,7 +91,7 @@ Il seguente flusso di lavoro è stato creato per questo caso d’uso. Ha tre att
 
    ![](assets/use_case_report_9.png)
 
-   Per ulteriori informazioni sulla configurazione dello scheduler, consulta [Scheduler](../../workflow/using/scheduler.md).
+   Per ulteriori informazioni sulla configurazione dello scheduler, consulta [Scheduler](scheduler.md).
 
 1. Quindi aggiungi un’attività di tipo **[!UICONTROL JavaScript code]** .
 

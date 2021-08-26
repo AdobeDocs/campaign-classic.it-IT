@@ -4,7 +4,7 @@ title: Configurazione dell’integrazione
 description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 
 
 # Opzione pipeline NmsPipeline_Config {#nmspipeline_config}
+
+![](../../assets/common.svg)
 
 Una volta che l&#39;autenticazione funziona, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo gli attivatori configurati in Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in anticipo alla pipeline.
 Puoi anche configurare l’opzione con un carattere jolly per individuare tutti i trigger, indipendentemente dal nome.

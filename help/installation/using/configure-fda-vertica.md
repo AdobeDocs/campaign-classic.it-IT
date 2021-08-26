@@ -6,7 +6,7 @@ description: Scopri come configurare l’accesso a Vertica in FDA
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 4%
@@ -15,6 +15,8 @@ ht-degree: 4%
 
 
 # Configurare l&#39;accesso a Vertica {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l’opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Vertica].
 
@@ -144,7 +146,7 @@ Per configurare [!DNL Vertica] su CentOS, segui i passaggi seguenti:
 
 1. In Adobe Campaign puoi quindi configurare l’account esterno [!DNL Vertica]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#vertica-external).
 
-## Account esterno Vertica {#vertica-external}
+## Conto esterno Vertica {#vertica-external}
 
 Devi creare un account esterno [!DNL Vertica] per collegare l’istanza Campaign al database esterno [!DNL Vertica].
 

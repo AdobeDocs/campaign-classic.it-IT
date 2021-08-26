@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Configurazioni specifiche nella versione v5.11{#specific-configurations-in-v5-11}
+
+![](../../assets/v7-only.svg)
 
 Questa sezione descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v5.11. È inoltre necessario configurare le impostazioni descritte nella sezione [Configurazioni generali](../../migration/using/general-configurations.md) .
 
@@ -104,7 +106,7 @@ Sono disponibili tre modalità:
 >
 >Per ulteriori informazioni su queste tre modalità, consulta [questa sezione](../../configuration/using/about-web-tracking.md).
 
-## Struttura ad albero Adobe Campaign v7 {#campaign-vseven-tree-structure}
+## Struttura ad albero di Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
 Durante la migrazione, la struttura ad albero viene riorganizzata automaticamente in base agli standard v7. Le nuove cartelle vengono aggiunte, le cartelle obsolete vengono eliminate e il loro contenuto viene inserito nella cartella &quot;Per spostare&quot;. Tutti gli elementi in questa cartella devono essere controllati dopo la migrazione e il consulente deve decidere di mantenerli o eliminarli. Gli oggetti da conservare devono quindi essere spostati nel posto giusto.
 

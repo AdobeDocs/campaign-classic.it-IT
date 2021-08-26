@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Aggiornare un elenco{#list-update}
+
+![](../../assets/common.svg)
 
 Un&#39;attività **Aggiornamento elenco** memorizza la popolazione specificata nella transizione in un elenco di destinatari.
 
@@ -41,7 +43,7 @@ Nell&#39;esempio seguente, l&#39;attività di aggiornamento elenco segue una que
 
 1. Aggiungi un **[!UICONTROL list update activity]** direttamente dopo una query, quindi aprila per modificarla.
 
-   Per ulteriori informazioni sulla creazione di una query in un flusso di lavoro, consulta [Query](../../workflow/using/query.md).
+   Per ulteriori informazioni sulla creazione di una query in un flusso di lavoro, consulta [Query](query.md).
 
 1. Puoi selezionare un’etichetta per l’attività.
 1. Seleziona l’opzione **[!UICONTROL Create the list if necessary (Calculated name)]** per mostrare che l’elenco verrà creato dopo l’esecuzione del primo flusso di lavoro, quindi aggiornato con le esecuzioni seguenti.

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Invio di un’e-mail di compleanno{#sending-a-birthday-email}
+
+![](../../assets/common.svg)
 
 ## Introduzione {#introduction}
 
@@ -31,7 +33,7 @@ A questo scopo, crea una campagna e fai clic sulla scheda **[!UICONTROL Targetin
 
 Quindi segui questi passaggi:
 
-## Pianificazione dell&#39;invio {#configuring-the-scheduler}
+## Pianificazione dell’invio {#configuring-the-scheduler}
 
 1. Innanzitutto, aggiungi un **Scheduler** per attivare l’invio della consegna ogni giorno. Nell’esempio seguente, la consegna viene creata ogni giorno alle 6.
 
@@ -96,7 +98,7 @@ A questo scopo, esegui i seguenti passaggi:
 
 Collega il risultato dell’attività **[!UICONTROL Query]** a un’attività **[!UICONTROL Email delivery]** per inviare un’e-mail all’elenco di tutti i destinatari al momento del loro compleanno.
 
-## Inclusi i destinatari nati il 29 febbraio (facoltativo) {#including-recipients-born-on-february-29th--optional-}
+## Compresi i destinatari nati il 29 febbraio (facoltativo) {#including-recipients-born-on-february-29th--optional-}
 
 Se desideri includere tutti i destinatari nati il 29 febbraio, questo caso d’uso illustra come pianificare l’invio di un’e-mail ricorrente a un elenco di destinatari per il loro compleanno, che si tratti di un anno bisestile o meno.
 
@@ -124,7 +126,7 @@ Dopo aver configurato l’attività **[!UICONTROL Scheduler]** in modo che il fl
 
 La selezione dei destinatari il cui compleanno corrisponde alla data corrente viene presentata nella sezione [Identificazione dei destinatari il cui compleanno è](#identifying-recipients-whose-birthday-it-is).
 
-### Passaggio 2: Seleziona se si tratta di un anno bisestile {#step-2--select-whether-or-not-it-is-a-leap-year}
+### Passaggio 2: Seleziona se si tratta di un anno bisestile o meno {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 L’attività **[!UICONTROL Test]** ti consente di verificare se si tratta di un anno bisestile o meno e se la data corrente è il 1° marzo.
 
@@ -202,7 +204,7 @@ Aggiungi un’attività **Consegna ricorrente** in base al modello di e-mail di 
 
 >[!CAUTION]
 >
->Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al pacchetto Campaign. Per ulteriori informazioni, consulta la sezione [Elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md) .
+>Affinché i flussi di lavoro possano essere eseguiti, è necessario avviare i flussi di lavoro tecnici relativi al pacchetto Campaign. Per ulteriori informazioni, consulta la sezione [Elenco dei flussi di lavoro tecnici](about-technical-workflows.md) .
 >
 >Se per la campagna sono abilitati i passaggi di approvazione, le consegne vengono inviate solo dopo la conferma di questi passaggi. Per ulteriori informazioni, consulta la sezione [Scelta dei processi da approvare](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) .
 

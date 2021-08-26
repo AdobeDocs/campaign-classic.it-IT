@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 6%
@@ -15,6 +15,8 @@ ht-degree: 6%
 
 
 # Introduzione alla messaggistica transazionale {#about-transactional-messaging}
+
+![](../../assets/v7-only.svg)
 
 ## Panoramica {#overview}
 
@@ -87,7 +89,7 @@ Una volta progettato e pubblicato il modello di messaggio transazionale, se vien
 
 ## Argomenti correlati {#related-topics}
 
-* [Guida introduttiva ai canali di comunicazione](../../delivery/using/communication-channels.md)
+* [Introduzione ai canali di comunicazione](../../delivery/using/communication-channels.md)
 * [Passaggi chiave per la creazione di consegne](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md)
 * [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)

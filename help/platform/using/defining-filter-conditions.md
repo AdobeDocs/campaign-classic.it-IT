@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 37%
@@ -15,7 +15,9 @@ ht-degree: 37%
 
 # Definire le condizioni del filtro{#defining-filter-conditions}
 
-## Scegli l&#39;operatore {#choosing-the-operator}
+![](../../assets/common.svg)
+
+## Scegli l’operatore {#choosing-the-operator}
 
 All’interno delle condizioni di filtro, è necessario collegare due valori utilizzando un operatore .
 
@@ -115,7 +117,7 @@ Di seguito è riportato un elenco degli operatori disponibili:
  </tbody> 
 </table>
 
-## UTILIZZARE AND, OR, ECCETTO {#using-and--or--except}
+## UTILIZZARE E, O, ECCETTO {#using-and--or--except}
 
 Per le query che utilizzano diverse condizioni di filtro, è necessario definire collegamenti tra le condizioni. Esistono tre possibili collegamenti:
 
@@ -144,7 +146,7 @@ Questo esempio mostra un filtro che consente di visualizzare: destinatari che pa
 
 ![](assets/query_editor_nveau_31.png)
 
-## Assegnare priorità alle condizioni {#prioritizing-conditions}
+## Dare priorità alle condizioni {#prioritizing-conditions}
 
 Questa sezione spiega come assegnare priorità alle condizioni grazie alle frecce blu nella barra degli strumenti.
 
@@ -163,7 +165,7 @@ Posiziona il cursore sulla condizione di filtro **[!UICONTROL Gender (@gender) e
 
 La condizione **[!UICONTROL Gender (@gender) equal to Male]** è stata rimossa dalla parentesi. Si è spostata allo stesso livello della condizione &quot;City equal to London&quot;. Queste condizioni sono collegate tra loro (**[!UICONTROL And]**).
 
-## Seleziona i dati da estrarre {#selecting-data-to-extract}
+## Selezionare i dati da estrarre {#selecting-data-to-extract}
 
 I campi disponibili variano da una tabella all’altra. Tutti i campi sono memorizzati in un nodo principale noto come **[!UICONTROL Main element]**. Nell’esempio seguente, i campi disponibili si trovano nella tabella dei destinatari. I campi vengono sempre visualizzati in ordine alfabetico.
 
@@ -304,7 +306,7 @@ Per rimuovere questo campo calcolato, fare clic sulla croce **[!UICONTROL Remove
 
 ![](assets/query_editor_nveau_58.png)
 
-## Espressioni build {#building-expressions}
+## Creare espressioni {#building-expressions}
 
 Lo strumento di modifica delle espressioni consente di calcolare gli aggregati, generare una funzione o modificare una formula utilizzando un’espressione.
 
@@ -316,7 +318,7 @@ Applica i seguenti passaggi:
 
    Sono disponibili diversi tipi di formule: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Selezionare **[!UICONTROL Process on an aggregate function]** e **[!UICONTROL Count]**. Fare clic su **[!UICONTROL Next]**.
+   Selezionare **[!UICONTROL Process on an aggregate function]** e **[!UICONTROL Count]**. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 

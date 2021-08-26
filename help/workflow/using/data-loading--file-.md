@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # Caricamento dati (file){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## Utilizzo {#use}
 
@@ -88,7 +90,7 @@ L’esempio seguente consente di raccogliere un file sul server ogni giorno, car
 
    La scheda **[!UICONTROL Directory]** contiene informazioni sui file da recuperare. Nel nostro esempio, tutti i file in formato testo i cui nomi contengono la parola &#39;clienti&#39; e che sono memorizzati nella directory tmp/Adobe/Data/files del server verranno recuperati.
 
-   L&#39;utilizzo di **[!UICONTROL File collector]** è descritto nella sezione [Raccolta file](../../workflow/using/file-collector.md) .
+   L&#39;utilizzo di **[!UICONTROL File collector]** è descritto nella sezione [Raccolta file](file-collector.md) .
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ L’esempio seguente consente di raccogliere un file sul server ogni giorno, car
 
    A questo scopo, fai clic sul pulsante **[!UICONTROL Change...]** situato nella sezione in basso a destra dello strumento di modifica e configura la pianificazione.
 
-   Per ulteriori informazioni, consulta [Scheduler](../../workflow/using/scheduler.md).
+   Per ulteriori informazioni, consulta [Scheduler](scheduler.md).
 
 1. Quindi configura l’attività di caricamento dei dati (file) per indicare la modalità di lettura dei file raccolti. A questo scopo, selezionare un file di esempio con la stessa struttura dei file da caricare.
 
@@ -129,4 +131,4 @@ L’esempio seguente consente di raccogliere un file sul server ogni giorno, car
 
 1. Quindi specificare i processi da eseguire per ogni tipo di popolazione. Nel nostro esempio, andremo a **[!UICONTROL Update the data]** nel database. A questo scopo, inserisci un’attività **[!UICONTROL Update data]** alla fine di ogni transizione in uscita dall’attività di suddivisione.
 
-   L&#39;attività **[!UICONTROL Update data]** è descritta nella sezione [Aggiorna dati](../../workflow/using/update-data.md) .
+   L&#39;attività **[!UICONTROL Update data]** è descritta nella sezione [Aggiorna dati](update-data.md) .

@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Aggiornamento a una nuova build (on-premise){#upgrading}
+
+![](../../assets/v7-only.svg)
 
 Prima di avviare il processo di aggiornamento, determina e conferma quale versione di Adobe Campaign deve essere aggiornata a e consulta le [Note sulla versione](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ Prima di avviare il processo di aggiornamento, determina e conferma quale versio
 >* Leggi [questa sezione](../../installation/using/general-architecture.md) e il capitolo [build upgrade](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html) prima di iniziare.
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -38,7 +39,7 @@ In un ambiente Windows, segui i passaggi seguenti per aggiornare Adobe Campaign 
 
 Per informazioni su come aggiornare la console client, consulta [questa sezione](../../installation/using/client-console-availability-for-windows.md).
 
-### Spegnere i servizi {#shut-down-services}
+### Servizi di arresto {#shut-down-services}
 
 Per sostituire tutti i file con la nuova versione, è necessario arrestare tutte le istanze del servizio nlserver.
 
@@ -63,13 +64,13 @@ Per sostituire tutti i file con la nuova versione, è necessario arrestare tutte
 
    È possibile utilizzare Gestione attività di Windows per assicurarsi che tutti i processi siano interrotti.
 
-### Aggiorna l&#39;applicazione server Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
+### Aggiornare l’applicazione server Adobe Campaign {#upgrade-the-adobe-campaign-server-application}
 
 Per eseguire il file di aggiornamento, procedi come segue:
 
 1. Eseguire **setup.exe**.
 
-   Per scaricare questo file, connettiti al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) utilizzando le tue credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Per scaricare questo file, connettiti al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) utilizzando le tue credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it?lang=en).
 
 1. Seleziona la modalità di installazione: scegli **[!UICONTROL Update or repair]**
 1. Fai clic su **[!UICONTROL Next]** .
@@ -79,7 +80,7 @@ Per eseguire il file di aggiornamento, procedi come segue:
 
 1. Al termine dell’operazione, fai clic su **[!UICONTROL Finish]** .
 
-### Sincronizza le risorse {#synchronize-resources}
+### Sincronizzare le risorse {#synchronize-resources}
 
 Utilizzare la seguente riga di comando:
 
@@ -127,7 +128,7 @@ Inizia recuperando entrambi i pacchetti aggiornati di Adobe Campaign: connetters
 
 Il file è **nlserver6-v7-XXX.rpm**
 
-### Esegui un aggiornamento {#perform-an-update}
+### Eseguire un aggiornamento {#perform-an-update}
 
 * Distribuzione basata su RPM (RedHat, SuSe)
 
@@ -157,7 +158,7 @@ Il file è **nlserver6-v7-XXX.rpm**
 >
 >Le procedure di installazione complete sono descritte in [questa sezione](../../installation/using/installing-campaign-standard-packages.md). Le risorse vengono sincronizzate automaticamente, tuttavia è necessario assicurarsi che non si siano verificati errori. Per ulteriori informazioni, consulta [Risolvere i conflitti di aggiornamento](#resolving-upgrade-conflicts).
 
-### Riavviare il server Web {#reboot-the-web-server}
+### Riavviare il server web {#reboot-the-web-server}
 
 Per rendere applicabile la nuova libreria, è necessario arrestare Apache.
 
@@ -173,8 +174,7 @@ A questo scopo, esegui il seguente comando:
 >* È NECESSARIO eseguire questo comando finché non si ottiene la seguente risposta:
 
    >
-   >   
-   Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
+   >   Questa operazione è necessaria per consentire ad Apache di applicare la nuova libreria.
 
 
 Quindi riavvia Apache:
@@ -242,7 +242,7 @@ Se si sceglie di risolvere il conflitto manualmente, procedere come segue:
 
 Ad esempio, un database unicode non deve solo autorizzare l’archiviazione di dati LATIN1, ecc.
 
-## Avvisa le console client dell’ aggiornamento disponibile {#warn-the-client-consoles-of-the-available-update}
+## Avvisa le console client dell’aggiornamento disponibile {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

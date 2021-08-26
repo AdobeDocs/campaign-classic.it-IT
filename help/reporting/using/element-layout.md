@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Layout degli elementi{#element-layout}
+
+![](../../assets/common.svg)
 
 Oltre ai vari grafici qui descritti: [Tipi di grafico e varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del rapporto.
 
@@ -35,7 +37,7 @@ Le opzioni **[!UICONTROL Display settings]** consentono di selezionare la posizi
 
 Seleziona le varie opzioni nella sezione **[!UICONTROL Browse]** per autorizzare la navigazione da una pagina del rapporto all’altra. Se è selezionata l’opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** , i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** scompaiono dalla pagina del rapporto.
 
-## Aggiunta di un&#39;intestazione e di un piè di pagina {#adding-a-header-and-a-footer}
+## Aggiunta di un’intestazione e di un piè di pagina {#adding-a-header-and-a-footer}
 
 La finestra delle proprietà del report consente inoltre di definire gli elementi di layout, ad esempio: il titolo della finestra, il contenuto HTML delle intestazioni e dei piè di pagina.
 

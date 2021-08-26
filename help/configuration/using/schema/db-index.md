@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # elemento dbindex {#dbindex--element}
 
-## Modello dei contenuti {#content-model-3}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-3}
 
 dbindex:==keyfield
 
@@ -31,7 +33,7 @@ dbindex:==keyfield
 
 `<element>`
 
-## Figli {#children-3}
+## Bambini {#children-3}
 
 `<keyfield>`
 
@@ -47,7 +49,7 @@ L&#39;ordine degli elementi `<keyfield>` definiti in un `<dbindex>` è molto imp
 
 Il nome dell’indice nel database viene calcolato concatenando il nome della tabella e il nome dell’indice. Ad esempio: Nome della tabella &quot;Sample&quot;, spazio dei nomi &quot;Cus&quot;, nome dell&#39;indice &quot;MyIndex&quot;-> nome del campo dell&#39;indice durante la creazione dell&#39;indice che richiede: &quot;CusSample_myIndex&quot;.
 
-## Descrizione dell&#39;attributo {#attribute-description-3}
+## Descrizione attributo {#attribute-description-3}
 
 * **_operazione (stringa)**: definisce il tipo di scrittura nel database.
 

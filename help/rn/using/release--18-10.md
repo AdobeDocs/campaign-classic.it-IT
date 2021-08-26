@@ -2,18 +2,20 @@
 product: campaign
 title: Note sulla versione 18.10 di Campaign
 description: Note sulla versione per Campaign 18.10
-feature: Panoramica
+feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2369'
 ht-degree: 7%
 
 ---
 
 # Versione 18.10{#release-18-10}
+
+![](../../assets/v7-only.svg)
 
 ## Versione 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 

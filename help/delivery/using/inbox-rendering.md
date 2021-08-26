@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Rendering della casella in entrata{#inbox-rendering}
+
+![](../../assets/common.svg)
 
 ## Informazioni sul rendering della casella in entrata {#about-inbox-rendering}
 
@@ -84,7 +86,6 @@ Ogni volta che utilizzi la funzione **[!UICONTROL Inbox rendering]** in una cons
 >* Per la stessa consegna, se si genera nuovamente il rendering della casella in entrata, il numero di token disponibili viene nuovamente diminuito del numero di rendering generati.
 
 >
-
 
 
 Il numero di token disponibili rimanenti viene visualizzato nel **[!UICONTROL General summary]** del [rapporto di rendering della casella in entrata](#inbox-rendering-report).

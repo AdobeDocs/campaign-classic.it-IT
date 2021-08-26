@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Attività Fork{#fork}
+
+![](../../assets/common.svg)
 
 L’attività **[!UICONTROL Fork]** ti consente di creare più transizioni in uscita, al fine di eseguire diverse attività in modo indipendente all’interno dello stesso flusso di lavoro.
 
@@ -32,4 +34,4 @@ Per configurare l’attività **[!UICONTROL Fork]** , aprila definendo il numero
 
 ![](assets/s_user_segmentation_fork.png)
 
-Puoi quindi configurare ogni transizione in uscita, quindi unirle utilizzando un&#39;attività [AND-join](../../workflow/using/and-join.md) , se necessario. In questo modo, il resto del flusso di lavoro verrà eseguito solo una volta completate le transizioni in uscita dell’attività **[!UICONTROL Fork]**.
+Puoi quindi configurare ogni transizione in uscita, quindi unirle utilizzando un&#39;attività [AND-join](and-join.md) , se necessario. In questo modo, il resto del flusso di lavoro verrà eseguito solo una volta completate le transizioni in uscita dell’attività **[!UICONTROL Fork]**.

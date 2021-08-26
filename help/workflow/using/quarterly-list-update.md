@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -15,14 +15,16 @@ ht-degree: 5%
 
 # Aggiornamento dell’elenco trimestrale tramite una query incrementale {#quarterly-list-update}
 
-Nell&#39;esempio seguente, viene utilizzata una [query incrementale](../../workflow/using/incremental-query.md) per aggiornare automaticamente un elenco di destinatari. Questi destinatari vengono targetizzati come parte di campagne di marketing stagionali.
+![](../../assets/common.svg)
+
+Nell&#39;esempio seguente, viene utilizzata una [query incrementale](incremental-query.md) per aggiornare automaticamente un elenco di destinatari. Questi destinatari vengono targetizzati come parte di campagne di marketing stagionali.
 
 Poiché queste campagne vengono lanciate all&#39;inizio di ogni stagione per offrire attività sportive rilevanti, queste liste vengono aggiornate ogni trimestre. Tuttavia, un destinatario qui deve essere oggetto di targeting solo una volta ogni 9 mesi da questa campagna. Questo ti consente di definire la frequenza di idoneità del destinatario e di offrire attività per diverse stagioni nel corso degli anni.
 
 ![](assets/incremental_query_example.png)
 
 1. Aggiungi una query incrementale e un’attività di aggiornamento elenco in un nuovo flusso di lavoro.
-1. Configura la scheda **[!UICONTROL Incremental query]** dell&#39;attività come specificato in [Creazione di una query](../../workflow/using/query.md#creating-a-query).
+1. Configura la scheda **[!UICONTROL Incremental query]** dell&#39;attività come specificato in [Creazione di una query](query.md#creating-a-query).
 1. Seleziona la scheda **[!UICONTROL Scheduling & History]** e specifica una cronologia di 270 giorni. Un destinatario che è già stato oggetto di targeting non sarà più oggetto di targeting per un periodo di 270 giorni o circa 9 mesi.
 
    Quindi fai clic sul pulsante **[!UICONTROL Change...]** .
@@ -33,6 +35,6 @@ Poiché queste campagne vengono lanciate all&#39;inizio di ogni stagione per off
 
    ![](assets/incremental_query_example_2.png)
 
-1. Dopo aver approvato la query incrementale, configura l&#39;attività di aggiornamento elenco come spiegato in [Aggiornamento elenco](../../workflow/using/list-update.md).
+1. Dopo aver approvato la query incrementale, configura l&#39;attività di aggiornamento elenco come spiegato in [Aggiornamento elenco](list-update.md).
 
 Il flusso di lavoro verrà quindi avviato automaticamente immediatamente prima dell’inizio di ogni stagione. L’elenco verrà aggiornato con nuovi destinatari idonei per ricevere le offerte.

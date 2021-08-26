@@ -2,18 +2,20 @@
 product: campaign
 title: Aggiornamenti alla documentazione di Adobe Campaign Classic
 description: In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti presenti nella documentazione di Adobe Campaign Classic
-feature: Panoramica
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4465'
+source-wordcount: '4464'
 ht-degree: 100%
 
 ---
 
 # Aggiornamenti alla documentazione{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
@@ -48,7 +50,7 @@ I requisiti della console client di Campaign sono stati aggiornati nella matrice
 
 La procedura di installazione della console client di Campaign è stata migliorata e chiarita. [Leggi tutto](../../installation/using/installing-the-client-console.md)
 
-È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Leggi tutto](../../technotes/tracked-urls.md)
+È stata creata una nuova nota tecnica sul problema relativo alla firma degli URL tracciati. [Leggi tutto](../../technotes/using/tracked-urls.md)
 
 ## Aprile 2021 {#april-2021}
 
@@ -210,7 +212,7 @@ La pagina di destinazione Best practice per il recapito di messaggi è stata mig
 
 Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
-* [Come impostare la gestione dell’affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign/using/about-campaign-typologies.md)
+* [Come impostare la gestione dell’affaticamento utilizzando le regole di tipologia e i filtri predefiniti](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [Come creare un messaggio e-mail in una campagna](../../campaign/using/marketing-campaign-deliveries.md)
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Mappatura del database{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 La mappatura SQL dello schema di esempio fornisce il seguente documento XML:
 
@@ -287,7 +289,7 @@ Le chiavi obbediscono alle seguenti regole:
    </schema>
    ```
 
-### Chiave incrementale automatica {#auto-incremental-key}
+### Tasto incrementale automatico {#auto-incremental-key}
 
 La chiave primaria della maggior parte delle tabelle Adobe Campaign è un numero intero lungo 32 bit generato automaticamente dal motore di database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId**) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene immesso automaticamente all&#39;inserimento del record.
 
@@ -504,7 +506,7 @@ Collega a una cartella (&quot;schema xtk:folder&quot;):
 
 Il valore predefinito restituisce l&#39;identificatore del primo file di tipo di parametro idoneo immesso nella funzione &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
-### Esempio 4 {#example-5}
+### Esempio 5 {#example-5}
 
 In questo esempio, desideriamo creare una chiave su un collegamento (&quot;azienda&quot; a schema &quot;cus:company&quot;) con l&#39;attributo **xlink** e un campo della tabella (&quot;e-mail&quot;):
 

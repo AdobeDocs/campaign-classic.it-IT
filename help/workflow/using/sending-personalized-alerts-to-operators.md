@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Invio di avvisi personalizzati agli operatori{#sending-personalized-alerts-to-operators}
+
+![](../../assets/common.svg)
 
 In questo esempio, desideri inviare un avviso a un operatore che conterrà il nome dei profili che hanno aperto una newsletter ma non ha fatto clic sul collegamento in essa contenuto.
 
@@ -75,7 +77,7 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## Impostazione dell&#39;avviso {#setting-up-the-alert}
+## Impostazione dell’avviso {#setting-up-the-alert}
 
 Ora che la popolazione è stata aggiunta alla variabile di istanza con i campi desiderati, puoi aggiungere queste informazioni nell’attività **[!UICONTROL Alert]** .
 

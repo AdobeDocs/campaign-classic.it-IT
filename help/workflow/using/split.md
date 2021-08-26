@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -15,15 +15,17 @@ ht-degree: 0%
 
 # Divisione{#split}
 
+![](../../assets/common.svg)
+
 Un’attività di tipo **Split** consente di dividere un target in diversi sottoinsiemi. Il target viene costruito con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere state completate per poter eseguire questa attività.
 
 Questa attività non attiva un’unione di popolazioni in entrata. Se più transizioni arrivano in un’attività con una suddivisione, ti consigliamo di inserire davanti a essa un’attività **[!UICONTROL Union]** .
 
-Per un esempio dell&#39;attività divisa in uso, consulta [Creazione di sottoinsiemi tramite l&#39;attività Split](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity).
+Per un esempio dell&#39;attività divisa in uso, consulta [Creazione di sottoinsiemi tramite l&#39;attività Split](targeting-data.md#creating-subsets-using-the-split-activity).
 
-Un esempio che illustra come utilizzare l&#39;attività Split per segmentare il target in popolazioni diverse utilizzando condizioni di filtro è descritto in [questa sezione](../../workflow/using/cross-channel-delivery-workflow.md).
+Un esempio che illustra come utilizzare l&#39;attività Split per segmentare il target in popolazioni diverse utilizzando condizioni di filtro è descritto in [questa sezione](cross-channel-delivery-workflow.md).
 
-Un esempio che mostra come utilizzare una variabile di istanza in un&#39;attività Split è disponibile in [questa sezione](../../workflow/using/javascript-scripts-and-templates.md).
+Un esempio che mostra come utilizzare una variabile di istanza in un&#39;attività Split è disponibile in [questa sezione](javascript-scripts-and-templates.md).
 
 Per configurare questa attività, definisci il contenuto e l’etichetta del sottoinsieme nella scheda **[!UICONTROL Subsets]** , quindi scegli la dimensione di destinazione nella scheda **[!UICONTROL General]** .
 
@@ -124,7 +126,7 @@ Ad esempio, se selezioni il campo **[!UICONTROL Language]** come campo di gruppo
 
 Se i campi di raggruppamento contengono un numero eccessivo di valori o se desideri evitare di reimpostare valori per ogni nuova attività di suddivisione, Adobe Campaign ti consente di creare una limitazione per la distribuzione dei dati. Quando selezioni i valori di limitazione dei dati (per ulteriori informazioni sull&#39;oggetto consulta la sezione [Creazione di sottoinsiemi](#creating-subsets) ), seleziona l&#39;opzione **[!UICONTROL By data distribution]** e seleziona un modello dal menu a discesa. La creazione di un modello di distribuzione dei dati è illustrata di seguito.
 
-Per un esempio dell&#39;attività **[!UICONTROL Local approval]** con un modello di distribuzione, fai riferimento a [Utilizzo dell&#39;attività di approvazione locale](../../workflow/using/using-the-local-approval-activity.md).
+Per un esempio dell&#39;attività **[!UICONTROL Local approval]** con un modello di distribuzione, fai riferimento a [Utilizzo dell&#39;attività di approvazione locale](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ Il modello di distribuzione dei dati ti consente di limitare il numero di record
    * **[!UICONTROL Targeting dimension]**: immetti la dimensione di targeting a cui verrà applicata la distribuzione dei dati,  **[!UICONTROL Recipient]** ad esempio. Questo schema deve essere sempre compatibile con i dati utilizzati nel flusso di lavoro di targeting.
    * **[!UICONTROL Distribution field]**: seleziona un campo tramite la dimensione di targeting. Ad esempio, se selezioni il campo **[!UICONTROL Email domain]** , l’elenco dei destinatari verrà suddiviso per dominio.
    * **[!UICONTROL Distribution type]**: seleziona la modalità di suddivisione del valore di limitazione del target nella  **[!UICONTROL Distribution]** scheda :  **[!UICONTROL Percentage]** o  **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: selezionare il tipo di assegnazione distribuzione dati. È possibile scegliere tra assegnazione per gruppo o operatore o assegnazione per entità locale. L&#39;assegnazione per entità locale viene utilizzata in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: se utilizzi un’ **[!UICONTROL Local approval]** attività nel flusso di lavoro di targeting (consulta Approvazione  [locale](../../workflow/using/local-approval.md)), immetti lo schema in cui verranno memorizzati i risultati dell’approvazione. È necessario specificare uno schema di archiviazione per schema di targeting. Se utilizzi lo schema di targeting **[!UICONTROL Recipients]**, immetti lo schema di archiviazione **[!UICONTROL Local approval of recipients]** predefinito.
+   * **[!UICONTROL Assignment type]**: selezionare il tipo di assegnazione distribuzione dati. È possibile scegliere tra assegnazione per gruppo o operatore o assegnazione per entità locale. L&#39;assegnazione per entità locale viene utilizzata in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
+   * **[!UICONTROL Approval storage]**: se utilizzi un’ **[!UICONTROL Local approval]** attività nel flusso di lavoro di targeting (consulta Approvazione  [locale](local-approval.md)), immetti lo schema in cui verranno memorizzati i risultati dell’approvazione. È necessario specificare uno schema di archiviazione per schema di targeting. Se utilizzi lo schema di targeting **[!UICONTROL Recipients]**, immetti lo schema di archiviazione **[!UICONTROL Local approval of recipients]** predefinito.
 
       In caso di una semplice limitazione tramite raggruppamento di dati senza approvazione locale, non è necessario inserire il campo **[!UICONTROL Approvals storage]** .
 
-1. Se utilizzi un&#39;attività **[!UICONTROL Local approval]** (consulta [Approvazione locale](../../workflow/using/local-approval.md)), immetti il **[!UICONTROL Advanced settings]** per il modello di distribuzione:
+1. Se utilizzi un&#39;attività **[!UICONTROL Local approval]** (consulta [Approvazione locale](local-approval.md)), immetti il **[!UICONTROL Advanced settings]** per il modello di distribuzione:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ Il modello di distribuzione dei dati ti consente di limitare il numero di record
       Questa colonna è definita dal campo **[!UICONTROL Distribution type]** all’interno della scheda **[!UICONTROL General]** .
 
    * **[!UICONTROL Label]**: immetti l’etichetta collegata a ciascun valore.
-   * **[!UICONTROL Group or operator]**: se utilizzi un’ **[!UICONTROL Local approval]** attività (consulta Approvazione  [locale](../../workflow/using/local-approval.md)), seleziona l’operatore o il gruppo di operatori assegnati a ciascun valore di distribuzione.
+   * **[!UICONTROL Group or operator]**: se utilizzi un’ **[!UICONTROL Local approval]** attività (consulta Approvazione  [locale](local-approval.md)), seleziona l’operatore o il gruppo di operatori assegnati a ciascun valore di distribuzione.
 
       In caso di una semplice limitazione tramite raggruppamento di dati senza approvazione locale, non è necessario inserire il campo **[!UICONTROL Group or operator]** .
 
@@ -197,7 +199,7 @@ Il modello di distribuzione dei dati ti consente di limitare il numero di record
       >
       >Assicurati che agli operatori siano stati assegnati i diritti appropriati.
 
-   * **[!UICONTROL Local entity]**: selezionare l&#39;entità locale assegnata a ciascun valore di distribuzione. Le entità locali vengono utilizzate in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: selezionare l&#39;entità locale assegnata a ciascun valore di distribuzione. Le entità locali vengono utilizzate in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
 
 ## Parametri di filtro {#filtering-parameters}
 

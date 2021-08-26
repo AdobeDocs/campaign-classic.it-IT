@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Power Booster e Power Cluster{#power-booster-and-power-cluster}
+
+![](../../assets/v7-only.svg)
 
 ## Panoramica {#overview}
 
@@ -29,11 +31,11 @@ Adobe Campaign offre due set di opzioni architettoniche preconfigurate per la qu
 
 ![](assets/architectural_options_diagram.png)
 
-## Applicazioni ammissibili {#eligible-applications}
+## Domande ammissibili {#eligible-applications}
 
 Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguenti applicazioni:
 
-* Campagna
+* Campaign
 * Consegna
 * Centro messaggi
 

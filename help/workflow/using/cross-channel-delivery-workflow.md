@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # Flusso di lavoro di consegna cross-channel{#cross-channel-delivery-workflow}
 
-Questo caso d’uso presenta un esempio che coinvolge un flusso di lavoro di consegna cross-channel. Il concetto generale di consegne cross-channel è presentato in [questa sezione](../../workflow/using/cross-channel-deliveries.md).
+![](../../assets/common.svg)
+
+Questo caso d’uso presenta un esempio che coinvolge un flusso di lavoro di consegna cross-channel. Il concetto generale di consegne cross-channel è presentato in [questa sezione](cross-channel-deliveries.md).
 
 L’obiettivo è quello di segmentare un pubblico dai destinatari del database in gruppi diversi allo scopo di inviare un’e-mail a un gruppo e un messaggio SMS a un altro gruppo.
 
@@ -36,7 +38,7 @@ Le principali fasi di implementazione per questo caso d’uso sono le seguenti:
 Per definire il target, crea una query per identificare i destinatari.
 
 1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un’attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/query.md).
+1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un’attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](query.md).
 1. Definisci i destinatari che riceveranno le tue consegne. Ad esempio, selezionare i membri &quot;Gold&quot; come dimensione di destinazione.
 1. Aggiungi condizioni di filtro alla query. In questo esempio, seleziona i destinatari che hanno un indirizzo e-mail e un numero di cellulare.
 
@@ -69,7 +71,7 @@ Per definire il target, crea una query per identificare i destinatari.
 
 Una volta identificato il target e creata la prima consegna, devi segmentarlo in popolazioni diverse utilizzando condizioni di filtro.
 
-1. Aggiungi un&#39;attività **Split** al flusso di lavoro e aprila. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/split.md).
+1. Aggiungi un&#39;attività **Split** al flusso di lavoro e aprila. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](split.md).
 1. Crea tre segmenti dalla popolazione calcolata a monte nella query.
 
    ![](assets/wkf_cross-channel_6.png)

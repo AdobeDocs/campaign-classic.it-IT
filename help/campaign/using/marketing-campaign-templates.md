@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Creare e configurare modelli di campagna {#campaign-templates}
+
+![](../../assets/common.svg)
 
 Tutte le campagne di marketing si basano su un modello, che memorizza le caratteristiche e le funzionalità principali. I modelli di campagna sono centralizzati nel nodo **[!UICONTROL Resources > Templates > Campaign templates]** . Un modello predefinito viene fornito come standard. Ti consente di creare una nuova campagna utilizzando tutti i moduli disponibili (Documenti, Attività, Indirizzi di seed, ecc.), ma i moduli offerti dipendono dai tuoi diritti e dalla configurazione della piattaforma Adobe Campaign.
 
@@ -171,7 +173,7 @@ Il collegamento **[!UICONTROL Advanced campaign settings...]** ti consente di co
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
-## Tracciare l’esecuzione della campagna{#campaign-reverse-scheduling}
+## Tracciare l’esecuzione di una campagna{#campaign-reverse-scheduling}
 
 Puoi creare una pianificazione per una campagna e tenere traccia dei risultati, ad esempio per preparare una pianificazione dell’evento per una data specifica. I modelli di campagna ora consentono di calcolare la data di inizio di un’attività in base alla data di fine di una campagna.
 

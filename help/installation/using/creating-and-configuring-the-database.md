@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Creazione e configurazione del database{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 Quando crei un database, Adobe Campaign fornisce due opzioni diverse:
 
@@ -78,7 +80,7 @@ A questo scopo, immetti il nome e la password di un **account di sistema di ammi
 * **** postgresper un database PostgreSQL,
 * **db2inst1** per un database DB2.
 
-### Passaggio 3 - Connessione e caratteristiche del database {#step-3---connection-and-characteristics-of-the-database}
+### Passaggio 3 - Connessione e caratteristiche della banca dati {#step-3---connection-and-characteristics-of-the-database}
 
 Il passaggio seguente ti consente di configurare le impostazioni per l’accesso al database.
 
@@ -115,7 +117,7 @@ Fai riferimento al contratto di licenza per verificare quali soluzioni e opzioni
 
 ![](assets/s_ncs_install_modules.png)
 
-### Passaggio 5: passaggi di creazione {#step-5---creation-steps}
+### Passaggio 5: fasi di creazione {#step-5---creation-steps}
 
 La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificare lo script SQL utilizzato per creare le tabelle.
 
@@ -188,7 +190,7 @@ A seconda del motore di database selezionato, le informazioni di identificazione
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### Passaggio 2: impostazioni di connessione al database {#step-2---database-connection-settings}
+### Passaggio 2: impostazioni della connessione al database {#step-2---database-connection-settings}
 
 Nella finestra **[!UICONTROL Database]**, definire le impostazioni di connessione al database.
 
@@ -214,7 +216,7 @@ Fai riferimento al contratto di licenza per verificare quali soluzioni e opzioni
 
 ![](assets/s_ncs_install_modules.png)
 
-### Passaggio 4: passaggi di creazione {#step-4---creation-steps}
+### Passaggio 4: fasi di creazione {#step-4---creation-steps}
 
 La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificare lo script SQL utilizzato per creare le tabelle.
 

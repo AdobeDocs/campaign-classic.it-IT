@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Configurazione dell’accesso al report{#configuring-access-to-the-report}
 
-## Contesto di visualizzazione del rapporto {#report-display-context}
+![](../../assets/common.svg)
+
+## Contesto della visualizzazione del rapporto {#report-display-context}
 
 Definisci il contesto di visualizzazione del rapporto nella piattaforma Adobe Campaign utilizzando la scheda **[!UICONTROL Display]** . L’accesso a un rapporto dipende dal tipo di selezione, dalle condizioni di visualizzazione e dalle autorizzazioni di accesso.
 
@@ -75,7 +77,7 @@ Per definire la categoria di un rapporto, selezionalo tramite la scheda **[!UICO
 
 È possibile inserire una nuova categoria qui e aggiungerla all&#39;elenco delle categorie disponibili. L&#39;enumerazione corrispondente viene aggiornata automaticamente.
 
-## Creazione di un collegamento a un report {#creating-a-link-to-a-report-}
+## Creazione di un collegamento a un rapporto {#creating-a-link-to-a-report-}
 
 È possibile rendere un rapporto accessibile tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario, una consegna e così via. A questo scopo, crea semplicemente un collegamento al rapporto interessato e specifica l’entità in cui desideri renderlo disponibile.
 

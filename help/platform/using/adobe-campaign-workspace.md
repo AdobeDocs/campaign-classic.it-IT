@@ -2,20 +2,22 @@
 product: campaign
 title: Area di lavoro di Adobe Campaign
 description: Scopri come utilizzare e personalizzare l’area di lavoro di Campaign
-feature: Panoramica
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 4%
+source-wordcount: '825'
+ht-degree: 6%
 
 ---
 
 # Area di lavoro di Adobe Campaign{#adobe-campaign-workspace}
 
-## Esplorare l&#39;interfaccia Adobe Campaign {#about-adobe-campaign-interface}
+![](../../assets/common.svg)
+
+## Interfaccia di Adobe Campaign {#about-adobe-campaign-interface}
 
 Una volta connesso al database, potrai accedere alla home page di Adobe Campaign, che è un dashboard: è costituito da collegamenti e collegamenti che consentono di accedere alle funzionalità, a seconda dell’installazione e delle configurazioni generali della piattaforma.
 
@@ -65,11 +67,11 @@ Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagin
 
 >[!CAUTION]
 >
->La lingua non può essere modificata dopo la creazione dell’istanza.
+>Una volta creata l’istanza, non è possibile cambiare la lingua.
 
 ## Nozioni di base sulla navigazione {#navigation-basics}
 
-### Sfoglia le pagine {#browsing-pages}
+### Sfoglia pagine {#browsing-pages}
 
 Le varie funzionalità della piattaforma sono suddivise in funzionalità principali: utilizza i collegamenti visualizzati nella sezione superiore dell’interfaccia per accedervi.
 
@@ -93,7 +95,7 @@ Gli elenchi sono disponibili tramite il collegamento **[!UICONTROL Lists]** nell
 
    ![](assets/d_ncs_user_interface_tabs.png)
 
-### Crea un elemento {#creating-an-element}
+### Creare un elemento {#creating-an-element}
 
 Ogni sezione delle funzionalità di base consente di navigare tra gli elementi disponibili. A questo scopo, utilizza le scelte rapide nella sezione **[!UICONTROL Browsing]** . Il collegamento **[!UICONTROL Other choices]** ti consente di accedere a tutte le altre pagine, indipendentemente dall’ambiente.
 
@@ -118,7 +120,7 @@ Le principali differenze tra inglese americano e inglese britannico sono:
  <thead> 
   <tr> 
    <th> Formati<br /> </th> 
-   <th> Inglese (USA)<br /> </th> 
+   <th> Inglese (Stati Uniti)<br /> </th> 
    <th> Inglese (EN)<br /> </th> 
   </tr> 
  </thead> 
@@ -141,7 +143,7 @@ Le principali differenze tra inglese americano e inglese britannico sono:
  </tbody> 
 </table>
 
-### Aggiungi valori in un&#39;enumerazione {#add-values-in-an-enumeration}
+### Aggiungere valori in un’enumerazione {#add-values-in-an-enumeration}
 
 Utilizzando i campi di input con un elenco a discesa, puoi immettere un valore di enumerazione, che può essere memorizzato e quindi offerto come opzione nell’elenco a discesa. Ad esempio, nel campo **[!UICONTROL City]** della scheda **[!UICONTROL General]** di un profilo destinatario, puoi accedere a Londra. Quando si preme Invio per confermare questo valore, viene richiesto se si desidera salvare questo valore per l&#39;enumerazione associata al campo.
 

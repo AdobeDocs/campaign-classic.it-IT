@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
@@ -15,7 +15,9 @@ ht-degree: 3%
 
 # elemento del metodo {#method--element}
 
-## Modello dei contenuti {#content-model-10}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-10}
 
 metodo:==( help | parametri)
 
@@ -35,7 +37,7 @@ metodo:==( help | parametri)
 
 `<methods>`  ,  `<interface />`
 
-## Figli {#children-10}
+## Bambini {#children-10}
 
 * `<help>`
 * `<parameters>`
@@ -50,7 +52,7 @@ I metodi SOAP abilitano i processi applicativi.
 
 Il simbolo &quot;@library&quot; è necessario per dichiarare un nuovo metodo (non nativo): lo spazio dei nomi e il nome utilizzati per la libreria sono indipendenti dallo spazio dei nomi e dal nome dello schema in cui si trova la dichiarazione.
 
-## Descrizione dell&#39;attributo {#attribute-description-10}
+## Descrizione attributo {#attribute-description-10}
 
 * **access (stringa)**: questo attributo definisce il controllo di accesso per l’utilizzo del metodo . Se manca questo attributo, l&#39;identificazione è obbligatoria. I valori disponibili sono: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
 * **const (booleano)**: se è attivato, questo attributo significa che il metodo dichiarato modificherà l’entità

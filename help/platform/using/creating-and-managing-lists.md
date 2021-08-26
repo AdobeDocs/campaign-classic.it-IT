@@ -2,18 +2,20 @@
 product: campaign
 title: Creazione e gestione di elenchi
 description: Scopri come creare e gestire gli elenchi
-feature: Profili
+feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '804'
 ht-degree: 9%
 
 ---
 
 # Creare e gestire gli elenchi{#creating-and-managing-lists}
+
+![](../../assets/common.svg)
 
 ## Cos&#39;è una lista? {#about-lists-in-adobe-campaign}
 

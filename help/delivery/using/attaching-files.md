@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Allegare file a un’e-mail{#attaching-files}
+
+![](../../assets/common.svg)
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
@@ -40,7 +42,7 @@ Per allegare un file locale a una consegna, segui la procedura seguente.
 >
 >Puoi allegare più file a una consegna. Gli allegati possono essere in qualsiasi formato, incluso in formato compresso.
 
-1. Fai clic sul collegamento **[!UICONTROL Attachments]** .
+1. Fai clic sul collegamento **[!UICONTROL Attachments]**.
 1. Fai clic sul pulsante **[!UICONTROL Add]**.
 1. Fai clic su **[!UICONTROL File...]** per selezionare il file da allegare alla consegna.
 
@@ -62,7 +64,7 @@ Quando si crea un allegato calcolato, il nome dell&#39;allegato può essere calc
 
 Per creare un allegato personalizzato, effettua le seguenti operazioni:
 
-1. Fai clic sul collegamento **[!UICONTROL Attachments]** .
+1. Fai clic sul collegamento **[!UICONTROL Attachments]**.
 1. Fai clic sul pulsante **[!UICONTROL Add]** , quindi seleziona **[!UICONTROL Calculated attachment]**.
 1. Selezionare il tipo di calcolo dall&#39;elenco a discesa **[!UICONTROL Type]**:
 

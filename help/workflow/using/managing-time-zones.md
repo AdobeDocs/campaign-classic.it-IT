@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 3%
 
 ---
 
 # Gestione dei fusi orari{#managing-time-zones}
 
+![](../../assets/common.svg)
+
 Adobe Campaign consente di gestire i periodi di tempo tra diversi paesi interessati dalla stessa istanza. La configurazione applicata viene configurata durante la creazione dell&#39;istanza.
 
-Per ulteriori informazioni sulla configurazione dei fusi orari in Adobe Campaign, consulta questa [sezione](../../installation/using/time-zone-management.md).
+Per ulteriori informazioni sulla configurazione dei fusi orari in Adobe Campaign, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/time-zone-management.md).
 
 In un flusso di lavoro, puoi adattare i piani di esecuzione dell’attività e collegare un fuso orario specifico a un’attività o all’intero flusso di lavoro. Questa configurazione può essere utile durante l’importazione del file o nel quadro della pianificazione della consegna.
 
 ## Pianificazione esecuzione {#execution-scheduling}
 
-Puoi pianificare l&#39;esecuzione delle attività utilizzando lo scheduler (consulta [Scheduler](../../workflow/using/scheduler.md)). Puoi inoltre utilizzare le opzioni di pianificazione disponibili nelle attività che offrono questa funzionalità. Queste attività offrono una scheda **[!UICONTROL Schedule]** : **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, ecc.
+Puoi pianificare l&#39;esecuzione delle attività utilizzando lo scheduler (consulta [Scheduler](scheduler.md)). Puoi inoltre utilizzare le opzioni di pianificazione disponibili nelle attività che offrono questa funzionalità. Queste attività offrono una scheda **[!UICONTROL Schedule]** : **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, ecc.
 
 Per tutte le attività pianificate, ovvero tutte le attività con opzioni di pianificazione, è possibile selezionare il fuso orario da applicare. Il fuso orario viene selezionato tramite la scheda **[!UICONTROL Advanced]** dell’attività interessata:
 

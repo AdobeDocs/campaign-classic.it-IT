@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3022'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Configurazioni tecniche delle e-mail{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## Panoramica {#overview}
 
@@ -40,7 +42,7 @@ Questo è ciò che fa il modulo **stat**: inoltra tutte le richieste di connessi
 * Il server di statistiche (**stat**) è collegato a una base Adobe Campaign per caricare la configurazione.
 * I server di consegna (**mta**) utilizzano un UDP per contattare un server di statistiche che non appartiene sempre alla propria istanza.
 
-### Server di consegna {#delivery-servers}
+### Server di distribuzione {#delivery-servers}
 
 Il modulo **mta** distribuisce i messaggi ai relativi moduli figlio **mtachild**. Ogni **elemento secondario** prepara i messaggi prima di richiedere un&#39;autorizzazione dal server di statistiche e di inviarli.
 
@@ -97,7 +99,7 @@ Quando un messaggio viene inviato, ci sono 3 risultati possibili:
    >
    >Un **percorso** è una connessione tra Adobe Campaign **mta** e il target **mta**. Adobe Campaign **mta** può scegliere tra diversi IP iniziali e diversi IP di dominio di destinazione.
 
-### Abbandono messaggio {#message-abandonment}
+### Abbandono del messaggio {#message-abandonment}
 
 I messaggi abbandonati vengono restituiti al **mta** e non sono più gestiti dal **mtachild**.
 
@@ -119,7 +121,7 @@ Inizia definendo il database Adobe Campaign che ospiterà la configurazione.
 
 Per impostazione predefinita, il modulo **stat** viene avviato per ogni istanza. Quando le istanze vengono mutualizzate sullo stesso computer o quando le istanze condividono lo stesso indirizzo IP, viene utilizzato un singolo server di statistiche: gli altri devono essere disabilitati.
 
-### Definizione della porta del server {#definition-of-the-server-port}
+### Definizione della porta server {#definition-of-the-server-port}
 
 Per impostazione predefinita, il server di statistiche ascolta la porta 7777. Questa porta può essere modificata nel file **serverConf.xml**. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
@@ -335,11 +337,11 @@ Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-m
 
 ## Configurazione del server di consegna {#delivery-server-configuration}
 
-### Sincronizzazione orologio {#clock-synchronization}
+### Sincronizzazione dell&#39;orologio {#clock-synchronization}
 
 Gli orologi di tutti i server che compongono la piattaforma Adobe Campaign (incluso il database) devono essere sincronizzati e i relativi sistemi devono essere impostati sullo stesso fuso orario.
 
-### Coordinate del server delle statistiche {#coordinates-of-the-statistics-server}
+### Coordinate del server di statistiche {#coordinates-of-the-statistics-server}
 
 L&#39;indirizzo del server di statistiche deve essere fornito nel **mta**.
 
@@ -412,7 +414,7 @@ Se, ad esempio, il primo indirizzo non può essere utilizzato per un dato MX, i 
 
 L’architettura interna di Adobe Campaign **mta** ha un impatto sulla configurazione per l’ottimizzazione della consegna delle e-mail. Di seguito sono riportati alcuni suggerimenti su come migliorare le consegne.
 
-### Regola il parametro maxWaitingMessages {#adjust-the-maxwaitingmessages-parameter}
+### Regolare il parametro maxWaitingMessages {#adjust-the-maxwaitingmessages-parameter}
 
 Il parametro **maxWaitingMessages** indica il numero più alto di messaggi preparati in anticipo dal **mtachild**. I messaggi vengono cancellati dall’elenco solo una volta inviati o abbandonati.
 
@@ -422,6 +424,6 @@ Una volta raggiunta la soglia **maxWorkingSetMb** (256), il server di consegna s
 
 Il parametro **maxWorkingSetMb** viene calcolato empiricamente moltiplicando il numero massimo di messaggi per la dimensione media del messaggio e moltiplicando il risultato per 2,5. Ad esempio, se un messaggio ha una dimensione media di 50 kB e il parametro **maxWaitingMessages** è uguale a 1.000, la memoria utilizzata sarà media di 1 25 MB
 
-### Regola il numero di elementi secondari {#adjust-the-number-of-mtachild}
+### Regolare il numero di elementi figlio {#adjust-the-number-of-mtachild}
 
 Il numero di figli non deve superare il numero di processori presenti nella macchina (circa 1000 sessioni). È consigliabile non superare 8 **mtachild**. È quindi possibile aumentare il numero di messaggi per **figlio** (**maxMsgPerChild**) per ottenere una durata di vita sufficiente.

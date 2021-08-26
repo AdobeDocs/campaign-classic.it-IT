@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f2300b265fa97e5b208519ab2446927d14f5f91c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Definizione del contenuto dell’e-mail {#defining-the-email-content}
+
+![](../../assets/common.svg)
 
 ## Mittente {#sender}
 
@@ -187,9 +189,8 @@ Quando apri un contenuto HTML con immagini incluse nella procedura guidata di co
 >[!IMPORTANT]
 >
 >* I percorsi di accesso all’immagine vengono modificati durante il caricamento manuale o durante l’invio dei messaggi.
-   > 
-   >
-* Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come [allegato](attaching-files.md), per impostazione predefinita ogni dimensione dell&#39;immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+> 
+>* Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come [allegato](attaching-files.md), per impostazione predefinita ogni dimensione dell&#39;immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 
 **Caso di utilizzo: inviare un messaggio con immagini**

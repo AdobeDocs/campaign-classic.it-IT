@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Gestire e personalizzare gli elenchi{#manage-and-customize-lists}
+
+![](../../assets/common.svg)
 
 Puoi accedere agli elenchi di record nel database di Campaign utilizzando Explorer. È possibile filtrare gli elenchi, eseguire ricerche, aggiungere informazioni, filtrare e ordinare i dati.
 
@@ -27,7 +29,7 @@ Nella parte in basso a destra della schermata dell&#39;elenco, un **[!UICONTROL 
 
 Se un &quot;**?**&quot; viene visualizzato invece del numero a destra, fare clic sul contatore per avviare il calcolo.
 
-### Carica più record {#loading-more-records}
+### Carica altri record {#loading-more-records}
 
 Per caricare (e quindi visualizzare) record aggiuntivi (200 righe per impostazione predefinita), fai clic su **[!UICONTROL Continue loading]**.
 
@@ -49,7 +51,7 @@ Nella finestra di configurazione dell’elenco, fai clic su **[!UICONTROL Advanc
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Configura elenchi {#configuring-lists}
+## Configurare gli elenchi {#configuring-lists}
 
 ### Aggiungi colonne {#add-columns}
 
@@ -116,11 +118,11 @@ Nella finestra di configurazione dell’elenco, seleziona la colonna da maschera
 
 Ripetere la procedura per nascondere ogni colonna. Fai clic su **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
 
-### Regola la larghezza della colonna {#adjust-column-width}
+### Regolare la larghezza della colonna {#adjust-column-width}
 
 Quando un elenco è attivo, ovvero se è selezionata almeno una riga, è possibile utilizzare F9 per regolare la larghezza delle colonne in modo che tutte le colonne possano essere visualizzate sullo schermo.
 
-### Visualizzare i dati nelle sottocartelle {#display-sub-folders-records}
+### Visualizzazione dei dati nelle sottocartelle {#display-sub-folders-records}
 
 Gli elenchi possono essere visualizzati:
 
@@ -131,7 +133,7 @@ Per passare da una modalità di visualizzazione all’altra, fare clic su **[!UI
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## Salvare una configurazione elenco {#saving-a-list-configuration}
+## Salvare una configurazione di elenco {#saving-a-list-configuration}
 
 Le configurazioni dell’elenco sono definite localmente a livello di workstation. Quando la cache locale viene svuotata, le configurazioni locali vengono disabilitate.
 
@@ -171,7 +173,7 @@ L&#39;utilizzo delle funzioni di importazione ed esportazione è spiegato in [Im
 >
 >Gli elementi di un elenco non devono essere esportati utilizzando la funzione Copia/Incolla .
 
-## Ordina un elenco {#sorting-a-list}
+## Ordinare un elenco {#sorting-a-list}
 
 Gli elenchi possono contenere una grande quantità di dati. Puoi ordinare questi dati o applicare filtri semplici o avanzati. L’ordinamento consente di visualizzare i dati in ordine crescente o decrescente. I filtri ti consentono di definire e combinare criteri per visualizzare solo i dati selezionati.
 
@@ -196,7 +198,7 @@ Puoi anche configurare l’ordinamento o combinare criteri di ordinamento. Per f
 
 1. Fai clic su **[!UICONTROL Ok]** per confermare questa configurazione e visualizzare il risultato nell’elenco.
 
-### Ricerca di elementi {#running-a-search}
+### Ricerca degli elementi {#running-a-search}
 
 Puoi eseguire una ricerca dei campi disponibili in un editor utilizzando il campo **[!UICONTROL Search]** situato sopra l’elenco dei campi. Premere **Invio** sulla tastiera o sfogliare l&#39;elenco. I campi che corrispondono alla ricerca avranno etichette in grassetto.
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # Attività Approval{#approval}
 
+![](../../assets/common.svg)
+
 Un&#39;attività **Approvazione** richiede la partecipazione di un operatore. All’operatore viene assegnata un’attività e può rispondere tramite e-mail, utilizzando la pagina web collegata nel messaggio e-mail o tramite la console.
 
-## Assegnazione delle attività {#task-assignment}
+## Assegnazione attività {#task-assignment}
 
 Per impostazione predefinita, l’approvazione viene assegnata a un gruppo di operatori. Questo gruppo rappresenta un ruolo, ad esempio &quot;Gruppo di contenuti per newsletter&quot; o &quot;Gruppo di destinazione per newsletter&quot;. Ogni operatore del gruppo può rispondere, ma si tiene conto solo della prima risposta (salvo in caso di più approvazioni).
 
@@ -63,7 +65,7 @@ Fai clic sul collegamento **[!UICONTROL Advanced parameters...]** per selezionar
 
 È possibile modificare questo modello per personalizzare il layout del messaggio, ma è preferibile creare una copia. Il meccanismo di targeting (file esterno, mappatura target) non deve essere modificato perché è necessario per il corretto funzionamento delle notifiche.
 
-Un esempio di approvazione è mostrato in [Definizione delle approvazioni](../../workflow/using/defining-approvals.md).
+Un esempio di approvazione è mostrato in [Definizione delle approvazioni](defining-approvals.md).
 
 ## Parametri di output {#output-parameters}
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Best practice per i modelli di dati{#data-model-best-practices}
+
+![](../../assets/v7-only.svg)
 
 Questo documento delinea i consigli chiave durante la progettazione del modello dati Adobe Campaign.
 
@@ -80,7 +82,7 @@ Un campo deve essere memorizzato in una tabella se ha uno scopo di targeting o p
 
 Per le istanze ibride e on-premise, FDA (Federated Data Access, una funzione opzionale che consente di accedere ai dati esterni) copre la necessità di aggiungere un campo &quot;on-the-fly&quot; durante un processo di campagna. Non è necessario importare tutto se si dispone di FDA. Per ulteriori informazioni, consulta [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
 
-### Scelta dei tasti {#choice-of-keys}
+### Scelta di chiavi {#choice-of-keys}
 
 Oltre al **autopk** definito per impostazione predefinita nella maggior parte delle tabelle, è consigliabile aggiungere alcune chiavi logiche o aziendali (numero di account, numero di client e così via). Può essere utilizzato successivamente per le importazioni/riconciliazione o i pacchetti di dati. Per ulteriori informazioni, consulta [Identificatori](#identifiers).
 
@@ -108,7 +110,7 @@ Nella tabella seguente sono descritti questi identificatori e il loro scopo.
 | Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un’istanza diversa di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinomina il nome del record generato da Adobe Campaign se l’oggetto deve essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto dispone di un attributo namespace (*schema* ad esempio), questo spazio dei nomi comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando un oggetto non dispone di uno spazio dei nomi (*workflow* o *delivery* ad esempio), questa nozione di spazio dei nomi viene aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzare caratteri speciali come lo spazio &quot;&quot;, la semicolonna &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri verranno sostituiti da un carattere di sottolineatura &quot;_&quot; (carattere consentito). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
 | Etichetta | <ul><li>L’etichetta è l’identificatore aziendale di un oggetto o record in Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Questa è la soluzione più semplice da usare per identificare un record o un oggetto per un utente Adobe Campaign.</li></ul> |
 
-## Tasti interni personalizzati {#custom-internal-keys}
+## Chiavi interne personalizzate {#custom-internal-keys}
 
 Le chiavi primarie sono necessarie per ogni tabella creata in Adobe Campaign.
 

@@ -2,26 +2,31 @@
 product: campaign
 title: Informazioni su Adobe Campaign Classic
 description: Scopri le funzionalità chiave, l’interfaccia utente e le linee guida globali.
-feature: Panoramica
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 95%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
 # Guida introduttiva di Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, i brand devono creare customer journey coerenti ad ogni punto di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente campagne di marketing cross-channel, in modo tale da offrire un ritorno elevato sull’investimento marketing e promuovere la fidelizzazione.
 
  Adobe Campaign ti consente di coordinare la creazione di campagne di marketing conversazionali.  Adobe Campaign dispone di funzioni innovative per modellare, semplificare e automatizzare i processi di marketing e di comunicazione con i clienti.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
-> Adobe Campaign Classic è disponibile nelle versioni v6.11 e v7. Eccetto quando indicato, i materiali della guida si applicano a entrambe le versioni, nella [build più recente](../../rn/using/latest-release.md). Le schermate rappresentano l’interfaccia utente di Campaign Classic v7.
+>* I materiali della guida in questa raccolta si applicano ad Campaign Classic v7 nella [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
+>
+>* La documentazione di Adobe Campaign v8 è disponibile [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzioni e le funzionalità principali del video](#video)
 
@@ -79,8 +84,8 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 * [Applicazioni web](../../web/using/about-web-applications.md): creare pagine e moduli web,
 * [Gestione dei sondaggi](../../surveys/using/about-surveys.md): creare sondaggi e votazioni online,
 * [Gestione dei contenuti](../../delivery/using/about-content-management.md): gestire il contenuto delle e-mail,
-* [Marketing distribuito](../../campaign/using/about-distributed-marketing.md): campagne coordinate per enti centrali e locali,
-* [Gestione della risposta](../../campaign/using/about-response-manager.md): gestire la risposta dei clienti,
+* [Marketing distribuito](../../distributed/using/about-distributed-marketing.md): campagne coordinate per enti centrali e locali,
+* [Gestione della risposta](../../response/using/about-response-manager.md): gestire la risposta dei clienti,
 * [Connettori](../../platform/using/about-connectors.md): utilizzare i connettori per comunicare con soluzioni e motori di database esterni,
 * [Servizi web](../../configuration/using/about-web-services.md): utilizzare Campaign tramite API/servizi web,
 * [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md): accedere ai report integrati, analizzare i dati e progettare report personalizzati.

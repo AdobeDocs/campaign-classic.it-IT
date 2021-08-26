@@ -2,18 +2,20 @@
 product: campaign
 title: Modelli di hosting
 description: Scopri i modelli di hosting di Campaign
-feature: Panoramica
+feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 2%
 
 ---
 
 # Modelli di hosting{#hosting-models}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign offre una scelta di tre modelli di hosting, che offrono flessibilità e libertà nella scelta del modello migliore, o modelli adatti alle esigenze aziendali.
 

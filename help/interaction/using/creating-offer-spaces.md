@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Creazione di spazi di offerta{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 La creazione di spazio di offerta può essere eseguita solo da un **amministratore tecnico** con accesso alla sottocartella spazio di offerta. Gli spazi di offerta possono essere creati solo nell’ambiente di progettazione e vengono automaticamente duplicati nell’ambiente live durante l’approvazione dell’offerta.
 
@@ -94,7 +96,7 @@ Questi valori non vengono applicati per impostazione predefinita: devono essere 
 >
 >Lo stato di una proposta di offerta viene automaticamente modificato in &quot;Presentato&quot; se l’offerta è collegata a una consegna con lo stato &quot;Inviato&quot;.
 
-### Configurazione dello stato di creazione della proposta {#configuring-the-status-when-the-proposition-is-created}
+### Configurazione dello stato al momento della creazione della proposta {#configuring-the-status-when-the-proposition-is-created}
 
 Quando una proposta di offerta viene creata dal motore di interazione, il suo stato viene modificato, sia che si tratti di un’interazione in entrata che in uscita. La scelta tra questi due valori dipende dal modo in cui gli spazi di offerta sono stati configurati nell’ambiente **[!UICONTROL Design]**
 

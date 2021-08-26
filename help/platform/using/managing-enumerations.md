@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
-# Gestisci enumerazioni{#managing-enumerations}
+# Gestire le enumerazioni{#managing-enumerations}
+
+![](../../assets/common.svg)
 
 Un&#39;enumerazione (nota anche come &quot;elenco dettagliato&quot;) è un elenco di valori suggeriti dal sistema per compilare alcuni campi. Le enumerazioni ti consentono di standardizzare i valori di questi campi e di utilizzare i dati immessi o utilizzati all’interno delle query.
 
@@ -42,7 +44,7 @@ I valori per questo tipo di campo sono definiti e l’amministrazione complessiv
 
 * Se è selezionata l’opzione **[!UICONTROL Closed]** , gli utenti non potranno creare nuovi valori, ma semplicemente scegliere tra quelli disponibili.
 
-## Dati standardizzati {#standardizing-data}
+## Standardizzazione dei dati {#standardizing-data}
 
 ### Informazioni sulla pulizia degli alias {#about-alias-cleansing}
 
@@ -62,7 +64,7 @@ Il valore immesso può quindi essere:
    >
    >Per utilizzare le funzionalità di pulizia dei dati, seleziona l’opzione **[!UICONTROL Alias cleansing]** nell’elenco dettagliato.
 
-### Uso degli alias {#using-aliases}
+### Utilizzo degli alias {#using-aliases}
 
 L’opzione **[!UICONTROL Alias cleansing]** consente di utilizzare gli alias per l’elenco di elementi selezionato. Quando questa opzione è selezionata, la scheda **[!UICONTROL Alias]** viene visualizzata nella parte inferiore della finestra.
 
@@ -152,7 +154,7 @@ A questo scopo, crea una copia del flusso di lavoro **[!UICONTROL Alias cleansin
 * **-** updateHitper aggiornare il numero di hit di alias,
 * **-updateHits:** completamente per ricalcolare tutti gli hit di alias.
 
-#### Flusso di lavoro di pulizia alias {#alias-cleansing-workflow}
+#### Flusso di lavoro di pulizia degli alias {#alias-cleansing-workflow}
 
 Il flusso di lavoro **Pulizia alias** esegue la pulizia dei valori delle enumerazioni. Per impostazione predefinita viene eseguito su base giornaliera.
 

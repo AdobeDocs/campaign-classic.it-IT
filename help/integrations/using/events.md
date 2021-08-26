@@ -5,7 +5,7 @@ description: Scopri come configurare eventi per l’implementazione personalizza
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Configurazione di eventi per l’implementazione personalizzata {#events}
+
+![](../../assets/common.svg)
 
 Parti di questa configurazione è uno sviluppo personalizzato e richiede quanto segue:
 
@@ -50,7 +52,7 @@ Dovrebbe tornare come
 
 Riavvia [!DNL pipelined] dopo aver modificato il codice JavaScript.
 
-### Formato dei dati del trigger {#trigger-format}
+### Formato dati del trigger {#trigger-format}
 
 I dati [!DNL trigger] vengono passati alla funzione JS in formato XML.
 
@@ -105,7 +107,7 @@ Esempio:
  }
 ```
 
-### Eventi ordine di elaborazione{#order-events}
+### Ordine di elaborazione degli eventi{#order-events}
 
 Gli eventi vengono elaborati uno alla volta, in base all’ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
 
@@ -221,7 +223,7 @@ Gli eventi possono essere visualizzati con un modulo semplice basato sullo schem
 
 ## Elaborazione degli eventi {#processing-the-events}
 
-### Workflow di riconciliazione {#reconciliation-workflow}
+### Flusso di lavoro di riconciliazione {#reconciliation-workflow}
 
 La riconciliazione è il processo di corrispondenza del cliente da Adobe Analytics al database Adobe Campaign. Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
 
@@ -234,11 +236,11 @@ La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lav
 
 Può essere difficile da implementare se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato dal server di marketing, utilizza un collegamento al database che presenta prestazioni scadenti.
 
-### Eliminare il flusso di lavoro {#purge-workflow}
+### Elimina flusso di lavoro {#purge-workflow}
 
 I trigger vengono elaborati entro l’ora specificata. Il volume può essere di circa 1 milione di trigger all&#39;ora. Questo spiega perché è necessario implementare un flusso di lavoro di eliminazione. L&#39;eliminazione viene eseguita una volta al giorno ed elimina tutti gli attivatori che sono più vecchi di tre giorni.
 
-### Flusso di lavoro della campagna {#campaign-workflow}
+### Flusso di lavoro di Campaign {#campaign-workflow}
 
 Il flusso di lavoro della campagna di attivazione è spesso simile ad altre campagne ricorrenti utilizzate.
 Ad esempio, può iniziare con una query sui trigger che cercano eventi specifici nell’ultimo giorno. Tale destinazione viene utilizzata per inviare l’e-mail. Arricchimenti o dati possono provenire dal trigger. Può essere utilizzato in modo sicuro da Marketing in quanto non richiede alcuna configurazione.

@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Pubblicazione su Facebook{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 Una volta completata la configurazione, Social Marketing consente di pubblicare pubblicazioni sulle pareti delle pagine Facebook.
 
@@ -30,11 +32,11 @@ Crea una nuova consegna utilizzando il modello di consegna **[!UICONTROL Publish
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Selezione della destinazione principale {#selecting-the-main-target}
+## Selezione del target principale {#selecting-the-main-target}
 
 È necessario selezionare le pagine sulle quali si desidera pubblicare la pubblicazione.
 
-1. Fai clic sul collegamento **[!UICONTROL To]** .
+1. Fai clic sul collegamento **[!UICONTROL To]**.
 
    ![](assets/social_facebook_delivery_010.png)
 

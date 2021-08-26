@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Gestione di file e risorse{#file-and-resmanagement}
+
+![](../../assets/v7-only.svg)
 
 ## Limita il formato del file di caricamento {#limiting-uploadable-files}
 
@@ -44,7 +46,6 @@ Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire 
 >È supportata solo la modalità di autenticazione di base. Autenticazione NTLM non supportata.
 >
 >I proxy SOCKS non sono supportati.
-
 
 È possibile utilizzare il comando seguente:
 

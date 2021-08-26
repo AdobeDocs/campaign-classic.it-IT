@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Esecuzione di un aggiornamento della build{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 Questa sezione fornisce una descrizione dettagliata del processo di aggiornamento e dei passaggi per identificare e risolvere i conflitti.
 
@@ -82,7 +84,7 @@ Prima di avviare l’aggiornamento della build, i clienti on-premise devono eseg
 
 1. Scarica la versione più recente del [file di configurazione del server](../../installation/using/the-server-configuration-file.md).
 
-1. [Scarica la build](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) più recente. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+1. [Scarica la build](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) più recente. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
 
 È inoltre necessario conoscere tutte le [utili righe di comando](../../installation/using/command-lines.md) prima di avviare un aggiornamento della build:
 
@@ -255,7 +257,6 @@ Nel contesto di un ambiente di mid-sourcing, devi eseguire questi passaggi aggiu
 >
 >Il server di mid-Sourcing deve sempre eseguire la stessa versione (o più recente) dei server di marketing.
 
-
 ## In caso di conflitti
 
 ### Identificare i conflitti
@@ -343,8 +344,7 @@ Sono disponibili tre opzioni per risolvere i conflitti: **Accetta la nuova versi
 >[!IMPORTANT]
 >Si consiglia vivamente di risolvere i conflitti.
 
-
-### Esegui un&#39;unione{#perform-a-merge}
+### Eseguire un&#39;unione{#perform-a-merge}
 
 Esistono diversi tipi di unione:
 
@@ -406,7 +406,6 @@ Di seguito sono riportati i passaggi per eseguire un’unione complessa:
 
 >[!IMPORTANT]
 >Le competenze di sviluppo sono necessarie per eseguire fusioni complesse.
-
 
 **Argomenti correlati**
 

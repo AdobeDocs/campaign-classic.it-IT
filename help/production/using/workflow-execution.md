@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Esecuzione di un flusso di lavoro{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 La sezione seguente presenta informazioni sui problemi comuni relativi all’esecuzione dei flussi di lavoro e su come risolverli.
 
@@ -77,7 +79,7 @@ Ci possono essere diverse cause per questo problema, segui i passaggi seguenti p
 
 Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](../../workflow/using/monitoring-workflow-execution.md).
 
-## Inizio in corso {#start-in-progress}
+## Inizia in corso {#start-in-progress}
 
 Se i flussi di lavoro non sono in esecuzione e il loro stato è **Start in progress**, ciò potrebbe significare che il modulo del flusso di lavoro non viene avviato.
 

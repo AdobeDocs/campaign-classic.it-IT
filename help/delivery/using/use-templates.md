@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Utilizzare i modelli {#use-templates}
+
+![](../../assets/common.svg)
 
 I modelli di consegna consentono una maggiore efficienza, fornendo scenari pronti per la maggior parte dei tipi di attività comuni. Con i modelli, gli esperti di marketing possono distribuire nuove campagne con una personalizzazione minima in un lasso di tempo più breve.
 
@@ -66,4 +68,4 @@ Nella scheda **[!UICONTROL Typology]** delle proprietà del modello, modifica la
 
 Ad esempio, per controllare meglio il traffico in uscita, puoi definire quali indirizzi IP possono essere utilizzati definendo un’affinità per sottodominio e creando una tipologia per affinità. Le affinità sono definite nel file di configurazione dell’istanza. Contatta il tuo amministratore Adobe Campaign.
 
-Per ulteriori informazioni sulle tipologie, consulta [questa sezione](../../campaign/using/about-campaign-typologies.md).
+Per ulteriori informazioni sulle tipologie, consulta [questa sezione](../../campaign-opt/using/about-campaign-typologies.md).

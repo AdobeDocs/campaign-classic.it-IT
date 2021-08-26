@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # E-mail in entrata{#inbound-emails}
+
+![](../../assets/common.svg)
 
 L’attività **Inbound emails** consente di scaricare ed elaborare messaggi e-mail da un server di posta POP3.
 
@@ -68,7 +70,7 @@ La prima scheda dell’attività **Inbound Emails** ti consente di immettere i p
 
    Per definire una pianificazione per l’attività, fai clic sulla scheda **[!UICONTROL Scheduling]** e seleziona **[!UICONTROL Plan execution]**. Fai clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
 
-   La configurazione della pianificazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scheduler](../../workflow/using/scheduler.md).
+   La configurazione della pianificazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scheduler](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
@@ -76,4 +78,4 @@ La prima scheda dell’attività **Inbound Emails** ti consente di immettere i p
 
    ![](assets/email_rec_edit_3.png)
 
-   La configurazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scadenza](../../workflow/using/defining-approvals.md).
+   La configurazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scadenza](defining-approvals.md).

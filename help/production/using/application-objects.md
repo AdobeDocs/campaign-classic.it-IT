@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Oggetti di applicazione{#application-objects}
 
+![](../../assets/v7-only.svg)
+
 Gli oggetti incorporati devono essere monitorati ed evitare che crescano troppo è importante.
 
-## Sequenza di ID {#sequence-of-ids}
+## Sequenza degli ID {#sequence-of-ids}
 
 Adobe Campaign utilizza una sequenza ID che deve essere utilizzata di conseguenza: **xtkNewId**. Se la sequenza viene consumata molto rapidamente (ovvero da 100.000 al giorno), devi verificare che sia coerente con i requisiti aziendali, ad esempio l’invio di milioni di e-mail al giorno. È possibile definire una sequenza dedicata per particolari tabelle. Puoi impostare un flusso di lavoro per monitorare l’utilizzo degli ID.
 
@@ -49,7 +51,7 @@ I flussi di lavoro di importazione creano file e quindi causano l&#39;espansione
 
 Se un flusso di lavoro importa file e non utilizza le funzioni standard, deve essere eliminato per ridurre al minimo lo spazio su disco.
 
-## Dati e registri sulle transazioni {#transactional-data-and-logs}
+## Dati e registri transazionali {#transactional-data-and-logs}
 
 Ogni [flusso di lavoro](../../workflow/using/data-life-cycle.md#work-table) che importa dati in Adobe Campaign determina un aumento delle dimensioni del database.
 

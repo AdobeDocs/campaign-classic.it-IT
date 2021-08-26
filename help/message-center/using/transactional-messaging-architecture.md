@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Architettura della messaggistica transazionale {#transactional-messaging-architecture}
+
+![](../../assets/v7-only.svg)
 
 La messaggistica transazionale si basa su un’architettura specifica, costituita da diverse istanze:
 
@@ -27,7 +29,7 @@ La messaggistica transazionale si basa su un’architettura specifica, costituit
 |--- |--- |
 | Gli utenti di Adobe Campaign accedono all’istanza di controllo per: <ul><li>Creare modelli di messaggi transazionali</li><li>Genera l’anteprima del messaggio utilizzando un elenco di seed</li><li>Visualizzare i rapporti</li><li>Monitorare le istanze di esecuzione</li></ul> | Le istanze di esecuzione sono disponibili qui per: <ul><li>Ricevi eventi</li><li>Collegali a modelli di messaggi transazionali</li><li>Invia un messaggio personalizzato a ciascun destinatario</li></ul> |
 
-## Installa le istanze {#installing-instances}
+## Installare le istanze {#installing-instances}
 
 Ci sono diverse precauzioni da prendere quando installi i pacchetti di messaggi transazionali. Adobe consiglia di lavorare in un ambiente di test prima di passare alla produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contatta il tuo responsabile dell&#39;account di Adobe.
 
@@ -45,7 +47,7 @@ Per installare l&#39;istanza di controllo sul computer, selezionare il pacchetto
 
 I passaggi dettagliati per la configurazione dell&#39;istanza di controllo sono descritti in [questa sezione](../../message-center/using/configuring-instances.md#control-instance).
 
-### Supporto di diverse istanze di controllo {#supporting-several-control-instances}
+### Supporto di più istanze di controllo {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -75,7 +77,7 @@ Il canale e-mail è disponibile per impostazione predefinita. Per inviare messag
 >
 >Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) deve essere eseguito prima di installare il pacchetto di messaggi transazionali.
 
-### Aggiungi un canale di consegna {#adding-a-delivery-channel}
+### Aggiungere un canale di consegna {#adding-a-delivery-channel}
 
 Adobe consiglia di **aggiungere sempre il pacchetto del canale di consegna prima di installare il pacchetto del messaggio transazionale**.
 

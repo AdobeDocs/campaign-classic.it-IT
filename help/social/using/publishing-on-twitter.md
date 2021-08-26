@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Pubblicazione su Twitter{#publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 ## Pubblicazione sugli account Twitter {#publishing-on-your-twitter-accounts}
 
@@ -32,11 +34,11 @@ Crea una nuova consegna basata sul modello di consegna **[!UICONTROL Tweet (twit
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Selezione della destinazione principale {#selecting-the-main-target}
+### Selezione del target principale {#selecting-the-main-target}
 
 Seleziona gli account a cui desideri inviare i tweet.
 
-1. Fai clic sul collegamento **[!UICONTROL To]** .
+1. Fai clic sul collegamento **[!UICONTROL To]**.
 
    ![](assets/social_twitter_delivery_002.png)
 
@@ -52,7 +54,7 @@ Seleziona gli account a cui desideri inviare i tweet.
 
    ![](assets/social_twitter_delivery_011.png)
 
-### Selezione della destinazione della bozza {#selecting-the-target-of-the-proof}
+### Selezione del target della bozza {#selecting-the-target-of-the-proof}
 
 La scheda **[!UICONTROL Target of the proofs]** ti consente di definire l’account Twitter da utilizzare per testare le consegne prima della consegna finale. È quindi consigliabile creare un account Twitter privato dedicato all’invio di bozze. Per ulteriori informazioni su come creare un account Twitter privato, consulta [Creazione di un account di test su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare il target della bozza sono gli stessi che per selezionare il target principale. Fai riferimento a [Creazione di un account di test su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
@@ -156,11 +158,11 @@ Crea una nuova consegna basata sul modello di consegna **[!UICONTROL Tweet (Dire
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Selezione della destinazione principale {#selecting-the-main-target-1}
+### Selezione del target principale {#selecting-the-main-target-1}
 
 Seleziona i follower a cui desideri inviare il messaggio diretto.
 
-1. Fai clic sul collegamento **[!UICONTROL To]** .
+1. Fai clic sul collegamento **[!UICONTROL To]**.
 
    ![](assets/social_twitter_delivery_016.png)
 
@@ -182,7 +184,7 @@ Seleziona i follower a cui desideri inviare il messaggio diretto.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Selezione della destinazione della bozza {#selecting-the-target-of-the-proof-1}
+### Selezione del target della bozza {#selecting-the-target-of-the-proof-1}
 
 La scheda **[!UICONTROL Target of the proofs]** ti consente di selezionare il follower che riceverà la bozza del messaggio diretto. Il processo di selezione è lo stesso del target principale. Fare riferimento a [Selezione della destinazione principale](#selecting-the-main-target).
 

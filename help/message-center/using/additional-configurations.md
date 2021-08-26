@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Configurazioni aggiuntive {#mc-additional-configurations}
+
+![](../../assets/v7-only.svg)
 
 ## Monitorare le soglie {#monitoring-thresholds}
 
@@ -72,7 +74,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-### Flussi di lavoro dell&#39;istanza di esecuzione {#execution-instance-workflows}
+### Flussi di lavoro dell’istanza di esecuzione {#execution-instance-workflows}
 
 Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per la messaggistica transazionale dalla cartella **Amministrazione > Produzione > Message Center** . Dovete solo cominciare a farlo. I flussi di lavoro nell’elenco sono:
 

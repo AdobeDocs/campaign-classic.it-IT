@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Integrazione tramite SOAP (lato server){#integration-via-soap-server-side}
+
+![](../../assets/v7-only.svg)
 
 I servizi Web SOAP forniti per la gestione delle offerte sono diversi da quelli generalmente utilizzati in Adobe Campaign. È possibile accedervi tramite l’URL di interazione descritto nella sezione precedente e consentire di presentare o aggiornare le offerte per un determinato contatto.
 
@@ -39,7 +41,7 @@ In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 * **actionId**: ID dell’interazione.
 * **proposte**: Elemento XML, contiene l&#39;elenco delle proposte, ciascuna con il proprio ID e la propria rappresentazione HTML.
 
-## Aggiornamento offerta {#offer-update}
+## Aggiornamento dell’offerta {#offer-update}
 
 Aggiungi il comando **nms:interface#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
 

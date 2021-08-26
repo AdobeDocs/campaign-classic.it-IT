@@ -6,20 +6,22 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # Gestione della presentazione delle offerte{#managing-offer-presentation}
 
+![](../../assets/v7-only.svg)
+
 ## Panoramica delle regole di presentazione {#presentation-rules-overview}
 
 L’interazione consente di controllare il flusso delle proposte di offerta utilizzando le regole di presentazione. Queste regole, specifiche dell’interazione, sono regole di tipologia. Ti consentono di escludere le offerte in base alla cronologia delle proposte già effettuate a un destinatario. Si fa riferimento ad essi nell’ambiente
 
-## Creazione e riferimento a una regola di presentazione delle offerte {#creating-and-referencing-an-offer-presentation-rule}
+## Creazione e riferimento a una regola di presentazione dell’offerta {#creating-and-referencing-an-offer-presentation-rule}
 
 1. Vai al nodo **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** .
 1. Crea una regola di tipologia e scegli il tipo **[!UICONTROL Offer presentation]** .
@@ -59,11 +61,11 @@ I criteri di applicazione disponibili nella scheda **[!UICONTROL General]** cons
 
    ![](assets/offer_typology_008.png)
 
-### Dimensioni offerta {#offer-dimensions}
+### Dimensioni dell’offerta {#offer-dimensions}
 
 Nella scheda **[!UICONTROL Offer presentation]** è necessario specificare le stesse dimensioni per la regola di presentazione di quelle configurate nell’ambiente.
 
-La **[!UICONTROL Targeting dimension]** coincide con la tabella dei destinatari (per impostazione predefinita: nms:destinatari) che riceveranno le proposte di offerta. Il **[!UICONTROL Storage dimension]** coincide con la tabella che contiene la cronologia delle proposte collegata alla dimensione di targeting (per impostazione predefinita:nms:propositionRcp).
+La **[!UICONTROL Targeting dimension]** coincide con la tabella dei destinatari (per impostazione predefinita: nms:destinatari) che riceveranno le proposte di offerta. La **[!UICONTROL Storage dimension]** coincide con la tabella che contiene la cronologia delle proposte collegata alla dimensione di targeting (per impostazione predefinita:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -96,7 +98,7 @@ Utilizza le frecce per modificare il numero di proposte di offerta.
 
 La sezione **[!UICONTROL Propositions to count]** ti consente di specificare sia i destinatari che le proposte che porteranno all’esclusione delle offerte definite nella scheda **[!UICONTROL General]** se compaiono un certo numero di volte nella cronologia delle proposte.
 
-### Filtrare le proposizioni {#filtering-propositions}
+### Proposizioni di filtro {#filtering-propositions}
 
 Puoi selezionare i criteri di filtro per escludere le proposte in base al canale, alle offerte interessate o allo stato delle proposte precedentemente assegnate.
 

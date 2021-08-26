@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Implementazione aziendale{#enterprise-deployment}
+
+![](../../assets/v7-only.svg)
 
 Questa è la configurazione più completa. Si basa sulla configurazione standard per una maggiore sicurezza e disponibilità:
 
@@ -37,7 +39,7 @@ Con questo tipo di configurazione, il throughput previsto può superare i 100.00
 
 Costi hardware e amministrativi più elevati.
 
-### Attrezzature consigliate {#recommended-equipment}
+### Apparecchiature consigliate {#recommended-equipment}
 
 * Server applicazioni: 2 Ghz CPU quad-core, 4 GB di RAM, software RAID 1 disco rigido SATA da 80 GB.
 * Server di reindirizzamento: 2 Ghz CPU quad-core, 4 GB di RAM, software RAID 1 disco rigido SATA da 80 GB.

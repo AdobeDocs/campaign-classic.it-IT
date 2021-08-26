@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Arricchimento del contenuto{#enriching-content}
+
+![](../../assets/common.svg)
 
 Gli aggregati consentono di arricchire il contenuto con dati esterni. Questi dati provengono da query generiche o tabelle collegate.
 
@@ -202,7 +204,7 @@ Il contenuto dell’elemento di destinazione arricchisce ogni elemento di raccol
 <contact id="11504982510" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/>
 ```
 
-#### Aggregazione collegamenti {#link-aggregation}
+#### Aggregazione dei collegamenti {#link-aggregation}
 
 Il contenuto di ciascun collegamento a cui si fa riferimento è limitato alla chiave interna e alla **stringa di calcolo** dell&#39;elemento di destinazione.
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Approvazione e attivazione di un’offerta{#approving-and-activating-an-offer}
+
+![](../../assets/v7-only.svg)
 
 Una volta completato il contenuto dell’offerta, devi approvarlo affinché venga duplicato nell’ambiente live e consegnato. L’approvazione riguarda il contenuto dell’offerta e la sua idoneità.
 
@@ -115,7 +117,7 @@ Per visualizzare l’offerta disponibile nell’ambiente live, fai clic sull’e
 
 ![](assets/offer_golive_002.png)
 
-## Disabilitazione di un&#39;offerta {#disabling-an-offer}
+## Disabilitazione di un’offerta {#disabling-an-offer}
 
 Una volta approvata l’offerta, puoi disabilitarla.
 

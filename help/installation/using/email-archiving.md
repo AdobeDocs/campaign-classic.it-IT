@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 2%
+source-wordcount: '1305'
+ht-degree: 3%
 
 ---
 
-# Ccn e-mail {#email-archiving}
+# Configurare CCN e-mail {#email-archiving}
+
+![](../../assets/v7-only.svg)
 
 Puoi configurare Adobe Campaign per mantenere una copia delle e-mail inviate dalla piattaforma.
 
@@ -31,7 +33,7 @@ A questo scopo, i file .eml corrispondenti alle e-mail inviate vengono trasferit
 * Vengono prese in considerazione solo le e-mail inviate con successo. I messaggi non recapitati non lo sono.
 * Il sistema di archiviazione e-mail è stato modificato con Adobe Campaign 17.2 (build 8795). Se stavi già utilizzando l’archiviazione e-mail, devi eseguire manualmente l’aggiornamento al nuovo sistema CCN di posta elettronica. Per ulteriori informazioni, consulta la sezione [Passaggio alla nuova e-mail CCN](#updated-email-archiving-system--bcc-) .
 
-## Attivazione CCN e-mail (on-premise) {#activating-email-archiving--on-premise-}
+## Attivazione di indirizzi Ccn e-mail (on-premise) {#activating-email-archiving--on-premise-}
 
 Per attivare l’archiviazione delle e-mail in CCN quando Adobe Campaign è installato in locale, segui i passaggi riportati di seguito.
 
@@ -121,7 +123,7 @@ Nel file **config-`<instance name>.xml`**, utilizza i seguenti parametri per def
 >
 >Inoltre, il relay assegna uno stato **[!UICONTROL Sent]** a tutte le e-mail, incluse quelle che non vengono inviate. Pertanto, tutti i messaggi vengono archiviati.
 
-## Passaggio al nuovo CCN e-mail {#updated-email-archiving-system--bcc-}
+## Passaggio al nuovo Ccn e-mail {#updated-email-archiving-system--bcc-}
 
 >[!IMPORTANT]
 >
@@ -135,7 +137,7 @@ A questo scopo, apporta le seguenti modifiche al file **`config-<instance>.xml`*
 
 Una volta configurato CCN e-mail, accertati di selezionare l’opzione **[!UICONTROL Email BCC]** nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Best practice per gli indirizzi CCN e-mail {#best-practices}
+## Best practice per indirizzi CCN e-mail {#best-practices}
 
 * **Cassetta postale** indirizzi CCN: assicurati che disponga di una capacità di ricezione sufficiente per archiviare tutte le e-mail inviate dall’MTA.
 * **mutualizzazione** MTA: la funzione di archiviazione CCN funziona a livello di MTA. Ti consente di duplicare ogni e-mail inviata dall’MTA. Poiché l’MTA può essere mutualizzato tra più istanze (ad esempio sviluppo, test o prod) o anche tra più client (in un ambiente di mid-sourcing), l’impostazione di questa funzione influisce sulla sicurezza:
@@ -145,3 +147,31 @@ Una volta configurato CCN e-mail, accertati di selezionare l’opzione **[!UICON
 
 * **E-mail per connessione**: L’archiviazione delle e-mail CCN funziona aprendo una connessione e tentando di inviare tutte le e-mail tramite tale connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. L&#39;aumento di questo numero può avere un grande impatto sul throughput CCN.
 * **IP** di invio CCN: attualmente, le e-mail CCN non vengono inviate attraverso i normali proxy MTA. Al contrario, viene aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP all’inserire nell&#39;elenco Consentiti sulla rete, a seconda della configurazione del server e-mail.
+
+<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+
+For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
+
+### Activating Email BCC with Enhanced MTA
+
+To activate this feature, you must contact your account executive to communicate the BCC email address to be used for archiving.
+
+>[!NOTE]
+>
+>If you were already using BCC email archiving, you can provide the same address as you were using before or use a new one. If you keep the same, you still have to contact your account executive to set it up for you.
+
+### Specificities and recommendations
+
+Email BCC with Enhanced MTA is not activated at the delivery level: once this feature is enabled, **all sent deliveries** are sent to the BCC email address. There is no need to select the **[!UICONTROL Email BCC]** option in the delivery template or in the delivery.
+
+If you were already using BCC and if you keep the same address, you could see a significant increase in the volumes sent to the BCC address.
+
+Consequently, make sure:
+* The BCC address has enough reception capacity to archive all the emails that are sent.
+* You have the required MTA infrastructure capacity to receive 100% of your email volume delivered to a single address.
+
+### Limitations
+
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

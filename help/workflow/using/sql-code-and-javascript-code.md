@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Codice SQL e codice JavaScript{#sql-code-and-javascript-code}
+
+![](../../assets/common.svg)
 
 ## Codice SQL {#sql-code}
 
@@ -27,13 +29,13 @@ Un&#39;attività **[!UICONTROL SQL code]** esegue uno script SQL. Lo script è u
 
 * **[!UICONTROL Processing errors]**
 
-   Fare riferimento a [Errori di elaborazione](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Fare riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ## Codice JavaScript e codice JavaScript avanzato {#javascript-code}
 
-**[!UICONTROL JavaScript code]** e  **[!UICONTROL Advanced JavaScript code]** le attività eseguono uno script JavaScript nel contesto di un flusso di lavoro. Per ulteriori informazioni sugli script, consulta la sezione [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md) .
+**[!UICONTROL JavaScript code]** e  **[!UICONTROL Advanced JavaScript code]** le attività eseguono uno script JavaScript nel contesto di un flusso di lavoro. Per ulteriori informazioni sugli script, consulta la sezione [Script e modelli JavaScript](javascript-scripts-and-templates.md) .
 
-### Ritardo di esecuzione {#exec-delay}
+### Ritardo esecuzione {#exec-delay}
 
 A partire dalla versione 20.2, alle attività **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** è stato aggiunto un ritardo di esecuzione. Per impostazione predefinita, la fase di esecuzione non può superare 1 ora. Dopo questo ritardo, il processo verrà interrotto con un messaggio di errore e l’esecuzione dell’attività avrà esito negativo.
 
@@ -47,7 +49,7 @@ Per ignorare questo limite, è necessario impostare il valore su **0**.
 
 * **[!UICONTROL Script]**: L’area centrale dell’editor contiene lo script da eseguire.
 
-* **[!UICONTROL Process errors]**: Fai riferimento agli errori  [di elaborazione](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Fai riferimento agli errori  [di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ### Codice JavaScript avanzato {#adv-js-code-desc}
 

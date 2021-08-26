@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Creare i filtri{#creating-filters}
+
+![](../../assets/common.svg)
 
 Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explorer]** nella home page), i dati contenuti nel database vengono visualizzati in elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall’operatore . È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare i dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 
@@ -92,7 +94,7 @@ Applica i seguenti passaggi:
    >
    >La finestra di definizione del filtro è dettagliata in [Crea un filtro avanzato](#creating-an-advanced-filter) e [Salva un filtro](#saving-a-filter).
 
-## Crea un filtro semplice {#creating-a-simple-filter}
+## Creare un filtro semplice {#creating-a-simple-filter}
 
 Per creare un **filtro semplice**, esegui i seguenti passaggi:
 
@@ -168,7 +170,7 @@ Per annullare questo filtro, fai clic sull’icona **[!UICONTROL Remove this fil
 
 Puoi salvare un filtro avanzato per conservarlo per utilizzi futuri. Per ulteriori informazioni su questo tipo di filtro, consulta [Salvare un filtro](#saving-a-filter).
 
-### Crea un filtro avanzato con funzioni {#creating-an-advanced-filter-with-functions}
+### Creare un filtro avanzato con funzioni {#creating-an-advanced-filter-with-functions}
 
 I filtri avanzati possono utilizzare funzioni; I filtri **con funzioni** vengono creati tramite un editor di espressioni che consente di creare formule utilizzando i dati del database e le funzioni avanzate. Per creare un filtro con funzioni, ripeti i passaggi 1, 2 e 3 della creazione del filtro avanzato, quindi procedi come segue:
 

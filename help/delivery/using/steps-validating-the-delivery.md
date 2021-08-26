@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Convalidare la consegna {#validating-the-delivery}
+
+![](../../assets/common.svg)
 
 Quando una consegna è stata creata e configurata, devi convalidarla prima di inviarla al target principale.
 
@@ -137,7 +139,6 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 >
 
 
-
 Per inviare una bozza, effettua le seguenti operazioni:
 
 1. Assicurati che il target della bozza sia stato configurato come descritto in [Definire un target della bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
@@ -195,7 +196,7 @@ Puoi visualizzare e modificare le regole di approvazione, il loro contenuto, l�
 
 Puoi creare nuove regole e definire nuove tipologie da questo nodo. Queste attività sono tuttavia riservate agli utenti esperti che conoscono JavaScript.
 
-Per ulteriori informazioni sulle regole di tipologia, consulta [questa pagina](../../campaign/using/about-campaign-typologies.md).
+Per ulteriori informazioni sulle regole di tipologia, consulta [questa pagina](../../campaign-opt/using/about-campaign-typologies.md).
 
 Per modificare la tipologia corrente, fai clic sull&#39;icona **[!UICONTROL Edit link]** a destra del campo **[!UICONTROL Typology]** .
 

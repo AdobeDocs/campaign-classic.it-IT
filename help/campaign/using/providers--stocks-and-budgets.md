@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Fornitori, scorte e budget{#providers-stocks-and-budgets}
+
+![](../../assets/common.svg)
 
 Adobe Campaign ti consente di definire i provider di servizi che saranno coinvolti nei lavori svolti all’interno delle campagne. Dal punto di vista principale, l’amministratore di Adobe Campaign definisce le informazioni relative ai fornitori di servizi e alle relative strutture di costo. Il fornitore di servizi è indicato dalla consegna e le sue strutture di costo consentono il calcolo dei costi associati a tale consegna e la gestione delle scorte in questione.
 

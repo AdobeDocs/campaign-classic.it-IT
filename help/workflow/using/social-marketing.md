@@ -5,17 +5,23 @@ description: Ulteriori informazioni sui flussi di lavoro tecnici di Social Marke
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 5%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
 
 
 # Social marketing{#social-marketing}
 
-I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Social Marketing** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../social/using/starting-workflows.md).
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: Questa funzionalità è disponibile solo in Campaign Classic v7. [Ulteriori informazioni](../../social/using/about-social-marketing.md)
+
+I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Social Marketing** .
 
 <table> 
  <tbody> 

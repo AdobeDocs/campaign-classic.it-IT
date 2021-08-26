@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 31%
@@ -15,17 +15,19 @@ ht-degree: 31%
 
 # Importare ed esportare i profili{#exporting-and-importing-profiles}
 
+![](../../assets/common.svg)
+
 Puoi [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database Adobe Campaign oppure impostare [importazioni generiche o processi di esportazione](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#import-profiles-video)
 
-## Utilizza flussi di lavoro{#use-workflows}
+## Utilizzare i flussi di lavoro{#use-workflows}
 
 Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite attività di importazione ed esportazione. Possono essere ripetuti automaticamente in base a una pianificazione, ad esempio per automatizzare lo scambio di dati tra diversi sistemi di informazione. [Ulteriori informazioni](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Se necessario, puoi creare un processo occasionale di importazione o esportazione tramite la funzione **[!UICONTROL Generic imports and exports]** descritta di seguito.
 
-## Crea lavori{#create-jobs}
+## Creazione di processi{#create-jobs}
 
 Per configurare ed eseguire i processi di importazione ed esportazione dei dati, passa alla scheda **[!UICONTROL Profiles and targets]** e fai clic sul collegamento **[!UICONTROL Jobs]** . [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
 

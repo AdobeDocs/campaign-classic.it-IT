@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Utilizzo di un rapporto di analisi{#processing-a-report}
 
-## Salvataggio di un report di analisi {#saving-an-analysis-report}
+![](../../assets/common.svg)
+
+## Salvataggio di un rapporto di analisi {#saving-an-analysis-report}
 
 Se disponi dei diritti appropriati, puoi salvare un rapporto di analisi creato da un modello o esportarlo in formato Excel, PDF o OpenOffice.
 
@@ -33,7 +35,7 @@ Una volta salvato, questo rapporto può essere riutilizzato per generare altri r
 
 Per apportare modifiche a questo rapporto, modifica il nodo **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** della struttura di Adobe Campaign (o la prima cartella di tipo &quot;Report&quot; per la quale l’operatore dispone dei diritti di modifica). Per ulteriori informazioni, consulta [Configurazione del layout di un rapporto di analisi descrittivo](#configuring-the-layout-of-a-descriptive-analysis-report).
 
-## Impostazioni aggiuntive del report di analisi {#analysis-report-additional-settings}
+## Impostazioni aggiuntive del rapporto di analisi {#analysis-report-additional-settings}
 
 Una volta salvato il rapporto di analisi descrittivo, puoi modificarne le proprietà e accedere a ulteriori opzioni.
 
@@ -45,7 +47,7 @@ Queste opzioni sono le stesse dei rapporti standard e sono descritte in [questa 
 
 Puoi personalizzare la visualizzazione e il layout dei dati nei grafici e nelle tabelle dell’analisi descrittiva. Tutte le opzioni sono accessibili tramite la struttura Adobe Campaign, nella scheda **[!UICONTROL Edit]** di ciascun rapporto.
 
-### Modalità di visualizzazione dei report di analisi {#analysis-report-display-mode}
+### Modalità di visualizzazione del rapporto di analisi {#analysis-report-display-mode}
 
 Quando crei un rapporto utilizzando il modello **[!UICONTROL qualitative distribution]**, le modalità di visualizzazione delle tabelle e dei grafici sono selezionate per impostazione predefinita. Se desideri una sola modalità di visualizzazione, deseleziona la casella appropriata. Ciò significa che sarà disponibile solo la scheda della modalità di visualizzazione selezionata.
 
@@ -81,7 +83,7 @@ Nell&#39;esempio seguente, le statistiche vengono visualizzate in colonne.
 
 ![](assets/s_ncs_advuser_report_wizard_035.png)
 
-### Layout dei dati del report di analisi {#analysis-report-data-layout}
+### Layout dei dati del rapporto di analisi {#analysis-report-data-layout}
 
 Puoi personalizzare il layout dei dati direttamente nelle tabelle di analisi descrittive. A questo scopo, fai clic con il pulsante destro del mouse sulla variabile con cui desideri lavorare. Seleziona le opzioni disponibili dal menu a discesa:
 
@@ -136,7 +138,7 @@ Per creare rapporti di analisi descrittivi, la procedura guidata di analisi desc
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Archiviazione dei report di analisi {#archiving-analysis-reports}
+## Report di analisi archiviazione {#archiving-analysis-reports}
 
 Quando crei un’analisi descrittiva basata su un’analisi esistente, puoi creare archivi per memorizzare i dati e confrontare i risultati del rapporto.
 

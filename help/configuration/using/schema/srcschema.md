@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # elemento srcschema {#srcschema--element}
 
-## Modello dei contenuti {#content-model-14}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-14}
 
 srcSchema:==(attribute) | createdBy | dati | elemento | enumerazione | aiuto | interfaccia | Metodi | modifiedBy)
 
@@ -27,7 +29,7 @@ creato (datetime), createdBy-id (long), desc (string), entitySchema (string), Ex
 
 Nessuno
 
-## Figli {#children-14}
+## Bambini {#children-14}
 
 * `<attribute>`
 * `<createdby>`
@@ -47,7 +49,7 @@ L’ `<srcschema>` è l’elemento principale di uno schema. È il punto di inpu
 
 La presentazione dello schema è disponibile in [Informazioni sul riferimento dello schema](../../../configuration/using/about-schema-reference.md) e [Struttura dello schema](../../../configuration/using/schema-structure.md).
 
-## Descrizione dell&#39;attributo {#attribute-description-14}
+## Descrizione attributo {#attribute-description-14}
 
 * **creato (datetime)**: questo attributo fornisce informazioni sulla data e l’ora della creazione dello schema. Ha un modulo &quot;Data e ora&quot;. I valori visualizzati vengono estratti dal server. L’ora viene visualizzata in formato UTC.
 * **createdBy-id (long)**: è l&#39;identificatore dell&#39;operatore che ha creato lo schema.

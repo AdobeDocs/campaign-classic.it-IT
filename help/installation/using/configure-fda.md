@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 5%
@@ -15,6 +15,8 @@ ht-degree: 5%
 
 # Configurazione dei connettori FDA {#specific-configurations-by-database-type}
 
+![](../../assets/v7-only.svg)
+
 A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai eseguire alcune configurazioni specifiche. Queste configurazioni richiedono essenzialmente l’installazione di driver e la dichiarazione di variabili di ambiente che appartengono a ogni RDBMS sul server Adobe Campaign.
 
 Come regola generale, devi installare il livello client corrispondente sul database esterno sul server Adobe Campaign.
@@ -22,7 +24,6 @@ Come regola generale, devi installare il livello client corrispondente sul datab
 >[!NOTE]
 >
 >Le versioni compatibili sono elencate in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
-
 
 ## Passaggi di configurazione {#fda-configuration-steps}
 

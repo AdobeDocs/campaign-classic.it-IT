@@ -6,20 +6,22 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 6%
 
 ---
 
 # Best practice per i flussi di lavoro{#workflow-best-practices}
 
+![](../../assets/common.svg)
+
 ## Esecuzione e prestazioni {#execution-and-performance}
 
 Di seguito sono elencate le linee guida generali sull’ottimizzazione delle prestazioni di Campaign, incluse le best practice da applicare ai flussi di lavoro.
 
-Le linee guida per la risoluzione dei problemi relativi all’esecuzione dei flussi di lavoro sono disponibili anche in [questa sezione](../../production/using/workflow-execution.md).
+Le linee guida per la risoluzione dei problemi relativi all’esecuzione dei flussi di lavoro sono disponibili anche in [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
 
 ### Registri {#logs}
 
@@ -42,7 +44,7 @@ Sono disponibili due soluzioni aggiuntive per:
    Disponibile nella scheda **[!UICONTROL Execution]** delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata in produzione.
 
 Elimina i log quando non sono più necessari. La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere eliminata dal menu **[!UICONTROL File > Actions]** o facendo clic sul pulsante Azioni nella barra degli strumenti sopra l’elenco. Selezionare Elimina cronologia.
-Per informazioni su come eliminare i registri, consulta questa [documentazione](../../workflow/using/starting-a-workflow.md).
+Per informazioni su come eliminare i registri, consulta questa [documentazione](starting-a-workflow.md).
 
 ### Pianificazione del flusso di lavoro {#workflow-planning}
 
@@ -68,7 +70,7 @@ Inoltre, interrompi i flussi di lavoro non utilizzati. I flussi di lavoro che co
 
 Utilizza l’arresto incondizionato solo nei casi più rari. Non utilizzare questa azione regolarmente. La mancata chiusura delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
 
-### Esegui nell&#39;opzione del motore {#execute-in-the-engine-option}
+### Esegui nell’opzione del motore {#execute-in-the-engine-option}
 
 Nella finestra **[!UICONTROL Workflow properties]** non selezionare mai l&#39;opzione **[!UICONTROL Execute in the engine]**. Quando questa opzione è abilitata, il flusso di lavoro ha la priorità e tutti gli altri flussi di lavoro vengono interrotti dal motore del flusso di lavoro fino al termine di questo.
 
@@ -116,17 +118,17 @@ Per ricevere avvisi in caso di errore, è necessario monitorare tutti i flussi d
 
 Nelle proprietà del flusso di lavoro, seleziona un gruppo di supervisori, il gruppo predefinito **[!UICONTROL Workflow supervisors]** o un gruppo personalizzato. Assicurati che almeno un operatore appartenga a questo gruppo, con un&#39;e-mail impostata.
 
-Prima di iniziare a creare un flusso di lavoro, ricorda di definire i supervisori del flusso di lavoro. Saranno informati via e-mail in caso di errori. Per ulteriori informazioni, consulta [Gestione degli errori](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
+Prima di iniziare a creare un flusso di lavoro, ricorda di definire i supervisori del flusso di lavoro. Saranno informati via e-mail in caso di errori. Per ulteriori informazioni, consulta [Gestione degli errori](monitoring-workflow-execution.md#managing-errors).
 
-Controlla regolarmente la scheda **[!UICONTROL Monitoring]** per visualizzare lo stato complessivo dei flussi di lavoro attivi. Per ulteriori informazioni, consulta [Sorveglianza istanza](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Controlla regolarmente la scheda **[!UICONTROL Monitoring]** per visualizzare lo stato complessivo dei flussi di lavoro attivi. Per ulteriori informazioni, consulta [Sorveglianza istanza](monitoring-workflow-execution.md#instance-supervision).
 
-Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, consulta [Monitoraggio del flusso di lavoro](../../workflow/using/heatmap.md).
+Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign di monitorare il carico sull&#39;istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, consulta [Monitoraggio del flusso di lavoro](heatmap.md).
 
 ## Utilizzo delle attività {#using-activities}
 
 >[!CAUTION]
 >
->Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Ti consigliamo invece di eseguire flussi di lavoro **Duplica**. Per ulteriori informazioni, consulta [Duplicazione dei flussi di lavoro](../../workflow/using/building-a-workflow.md#duplicating-workflows).
+>Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Ti consigliamo invece di eseguire flussi di lavoro **Duplica**. Per ulteriori informazioni, consulta [Duplicazione dei flussi di lavoro](building-a-workflow.md#duplicating-workflows).
 
 ### Nome dell’attività {#name-of-the-activity}
 
@@ -137,13 +139,13 @@ Il nome dell’attività si trova nella scheda **[!UICONTROL Advanced]** . Non l
 ### Prima e ultima attività {#first-and-last-activities}
 
 * Avvia sempre il flusso di lavoro con un’attività **[!UICONTROL Start]** o **[!UICONTROL Scheduler]** . Se necessario, puoi anche utilizzare un’attività **[!UICONTROL External signal]** .
-* Durante la creazione del flusso di lavoro, utilizza una sola attività **[!UICONTROL Scheduler]** per ramo. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con una scheda **[!UICONTROL Scheduling & History]** . Ulteriori informazioni su [Pianificazione](../../workflow/using/scheduler.md).
+* Durante la creazione del flusso di lavoro, utilizza una sola attività **[!UICONTROL Scheduler]** per ramo. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con una scheda **[!UICONTROL Scheduling & History]** . Ulteriori informazioni su [Pianificazione](scheduler.md).
 
    ![](assets/wf-scheduler.png)
 
-* Utilizza le attività **[!UICONTROL End]** per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all’interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Start ed End](../../workflow/using/start-and-end.md).
+* Utilizza le attività **[!UICONTROL End]** per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all’interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Start ed End](start-and-end.md).
 
-### Javascript all&#39;interno di un&#39;attività {#javascript-within-an-activity}
+### Javascript all’interno di un’attività {#javascript-within-an-activity}
 
 È possibile aggiungere JavaScript durante l’inizializzazione di un’attività del flusso di lavoro. Questo può essere fatto nella scheda **[!UICONTROL Advanced]** di un’attività.
 

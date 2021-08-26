@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -15,11 +15,13 @@ ht-degree: 3%
 
 # Flusso di lavoro HeatMap {#workflow-heatmap}
 
+![](../../assets/common.svg)
+
 La Workflow HeatMap di Campaign consiste in una rappresentazione grafica codificata per colori di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per **Amministratori di campagne**.
 
 Scopri altri modi per monitorare i processi di Campaign in [questa pagina](../../production/using/monitoring-guidelines.md).
 
-## Guida introduttiva a Workflow HeatMap {#about-the-workflow-heatmap}
+## Introduzione a Workflow HeatMap {#about-the-workflow-heatmap}
 
 Fornendo una rapida panoramica sul numero di flussi di lavoro simultanei, Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign di monitorare il carico sull’istanza e pianificare i flussi di lavoro di conseguenza.
 
@@ -29,16 +31,16 @@ Più precisamente, consente agli amministratori di piattaforma di:
 * Filtrare i flussi di lavoro per durata per vedere quali potrebbero presentare problemi
 * Filtrare le attività per durata per vedere quali attività possono incontrare problemi
 * Trovare facilmente singoli flussi di lavoro e le attività correlate ad essi (con la relativa durata)
-* Filtra per tipo di flusso di lavoro: [flussi di lavoro tecnici](../../workflow/using/building-a-workflow.md#technical-workflows) o [flussi di lavoro delle campagne](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Filtra per tipo di flusso di lavoro: [flussi di lavoro tecnici](building-a-workflow.md#technical-workflows) o [flussi di lavoro delle campagne](building-a-workflow.md#campaign-workflows)
 * Cercare un flusso di lavoro specifico da analizzare
 
 >[!NOTE]
 >
->Oltre alla **Workflow Heatmap**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. Per ulteriori informazioni, consulta la sezione [dedicata](../../workflow/using/supervising-workflows.md).
+>Oltre alla **Workflow Heatmap**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti alle autorità di vigilanza. Per ulteriori informazioni, consulta la sezione [dedicata](supervising-workflows.md).
 
-L&#39;utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti concetti: [Flussi di lavoro](../../workflow/using/about-workflows.md), [Attività](../../workflow/using/about-activities.md) e [Best practice per i flussi di lavoro](../../workflow/using/workflow-best-practices.md).
+L&#39;utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti concetti: [Flussi di lavoro](about-workflows.md), [Attività](about-activities.md) e [Best practice per i flussi di lavoro](workflow-best-practices.md).
 
-## Personalizza Workflow HeatMap {#using-the-heatmap}
+## Personalizzare Workflow HeatMap {#using-the-heatmap}
 
 >[!NOTE]
 >
@@ -75,14 +77,14 @@ L&#39;utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti 
 
 1. Puoi anche filtrare il **[!UICONTROL Workflow type]** :
 
-   * **[!UICONTROL Technical]** : Vengono visualizzati solo  [flussi di ](../../workflow/using/building-a-workflow.md#technical-workflows) lavoro preconfigurati e flussi di  [lavoro ](../../workflow/using/targeting-data.md#data-management) di gestione dei dati.
-   * **[!UICONTROL Marketing]** : Vengono visualizzati solo i flussi di lavoro collegati a una campagna di marketing, noti come flussi di lavoro per  [campagne](../../workflow/using/building-a-workflow.md#campaign-workflows).
+   * **[!UICONTROL Technical]** : Vengono visualizzati solo  [flussi di ](building-a-workflow.md#technical-workflows) lavoro preconfigurati e flussi di  [lavoro ](targeting-data.md#data-management) di gestione dei dati.
+   * **[!UICONTROL Marketing]** : Vengono visualizzati solo i flussi di lavoro collegati a una campagna di marketing, noti come flussi di lavoro per  [campagne](building-a-workflow.md#campaign-workflows).
 
 1. Per cercare un flusso di lavoro specifico per nome, puoi anche utilizzare il campo **[!UICONTROL Workflow name filter]** .
 
 1. Se hai modificato alcuni flussi di lavoro nel periodo di tempo tra , fai clic sul pulsante **[!UICONTROL Reload data]** per aggiornare i dati visualizzati nella griglia.
 
-## Interpreta Workflow HeatMap {#reading-the-heatmap}
+## Interpretare Workflow HeatMap {#reading-the-heatmap}
 
 La Workflow HeatMap di Campaign è una griglia leggibile in modo naturale dall’alto a sinistra verso il basso a destra, che consente di trovare le &quot;aree calde&quot; con una gamma di colori da verde a rosso.
 
@@ -110,7 +112,7 @@ Nell’esempio seguente, tra le 8 e le 8:05, sono in esecuzione tre flussi di la
 1. Fai clic sull’ID o sul nome del flusso di lavoro per aprire direttamente un flusso di lavoro.
 1. Per tornare alla visualizzazione **[!UICONTROL Campaign Workflow HeatMap]**, fai clic sul pulsante **[!UICONTROL Home]** .
 
-## Casi di utilizzo: utilizza HeatMap per eseguire azioni {#use-cases--using-the-heatmap-to-take-actions}
+## Casi di utilizzo: utilizza HeatMap per intraprendere azioni {#use-cases--using-the-heatmap-to-take-actions}
 
 Esistono due casi principali in cui la Workflow HeatMap di Campaign può essere utile.
 
@@ -129,7 +131,7 @@ In qualità di amministratore di Campaign, Workflow HeatMap può aiutarti a comp
    * Se si verificano problemi di prestazioni e se una o più celle rosse sono visualizzate nella griglia, è consigliabile modificare i tempi di avvio di diversi flussi di lavoro. Chiedi agli utenti di marketing di spostare manualmente i flussi di lavoro da periodi di attività (&quot;hot&quot;) a intervalli di tempo più disponibili. Questo dovrebbe mantenere un livello di attività stabile durante il giorno.
    * Per evitare picchi ed evitare che l’istanza si sovraccarichi, osserva HeatMap prima di pianificare i nuovi flussi di lavoro e scegli il momento migliore. Per avviare nuovi flussi di lavoro, prendi in considerazione intervalli di tempo corrispondenti a celle grigie o verdi nella griglia.
 
-### Trovare flussi di lavoro di lunga durata che influiscono sulle prestazioni {#finding-long-running-workflows-that-impact-performance}
+### Trovare flussi di lavoro a lungo termine che influiscono sulle prestazioni {#finding-long-running-workflows-that-impact-performance}
 
 In qualità di amministratore di Campaign, Workflow HeatMap ti consente di trovare i flussi di lavoro più lunghi che possono rallentare l’attività.
 

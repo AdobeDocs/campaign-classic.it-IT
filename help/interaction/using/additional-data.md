@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -15,13 +15,15 @@ ht-degree: 0%
 
 # Dati aggiuntivi{#additional-data}
 
+![](../../assets/v7-only.svg)
+
 Durante una chiamata al motore di interazione, puoi trasferire informazioni aggiuntive contestuali. Questi dati possono provenire dai dati di destinazione memorizzati nella tabella di lavoro di un flusso di lavoro (canale in uscita) o dai dati di chiamata inviati dal sito web durante la chiamata (canale in entrata). Puoi utilizzare questi dati aggiuntivi nelle regole di idoneità, nella personalizzazione delle offerte e anche memorizzarli in una tabella di proposte.
 
 Per il canale in entrata, può essere utile recuperare informazioni come la lingua del browser delle persone che consultano l’offerta o il nome dell’agente del call center, ad esempio. Puoi quindi utilizzare i dati di questa chiamata nelle regole di idoneità per presentare un’offerta solo alle persone che visualizzano la pagina web in francese o inglese.
 
 In un flusso di lavoro di targeting (canale in uscita), puoi utilizzare i dati di destinazione durante una chiamata al motore. Ad esempio, puoi arricchire il target con i dati provenienti da una transazione collegata al destinatario o da un database esterno tramite l’FDA.
 
-## Configurazione dati aggiuntivi {#additional-data-configuration}
+## Configurazione di dati aggiuntivi {#additional-data-configuration}
 
 È necessario estendere lo schema **nms:relation** collegato all&#39;ambiente e dichiarare l&#39;elenco dei campi aggiuntivi che verranno utilizzati durante una chiamata al motore di interazione. Durante la creazione della regola di idoneità o la personalizzazione di un&#39;offerta, questi campi diventeranno accessibili dal nodo **Interazione** (consulta [Utilizzo di dati aggiuntivi](#using-additional-data)).
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
 
 ---
 
-# Incremental query{#incremental-query}
+# Query incrementale{#incremental-query}
+
+![](../../assets/common.svg)
 
 Una query incrementale consente di selezionare periodicamente un target in base a un criterio, escludendo al contempo le persone già oggetto di targeting per questo criterio.
 
@@ -23,8 +25,8 @@ La query viene definita nello stesso modo delle query standard, ma l’esecuzion
 
 **Argomenti correlati:**
 
-* [Caso di utilizzo: Aggiornamento dell’elenco trimestrale tramite una query incrementale](../../workflow/using/quarterly-list-update.md)
-* [Creazione di una query](../../workflow/using/query.md#creating-a-query)
+* [Caso di utilizzo: Aggiornamento dell’elenco trimestrale tramite una query incrementale](quarterly-list-update.md)
+* [Creazione di una query](query.md#creating-a-query)
 
 >[!CAUTION]
 >

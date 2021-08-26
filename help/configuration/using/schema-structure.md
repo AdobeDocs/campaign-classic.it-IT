@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Struttura dello schema{#schema-structure}
+
+![](../../assets/v7-only.svg)
 
 La struttura di base di un `<srcschema>` è la seguente:
 
@@ -406,7 +408,7 @@ I valori di enumerazione sono dichiarati nell&#39;elemento **`<value>`** con i s
 * **nome**: nome del valore memorizzato internamente,
 * **etichetta**: viene visualizzata tramite l’interfaccia grafica.
 
-#### enumerazione dbenum {#dbenum-enumeration}
+#### enumerazione del dbenum {#dbenum-enumeration}
 
 * La proprietà **dbenum** consente di definire un&#39;enumerazione le cui proprietà sono simili a quelle della proprietà **enum** .
 
@@ -486,7 +488,6 @@ Gli elementi sono designati in base al loro nome e gli attributi sono designati 
 >* **`[@email]`** e  **@** emailare equivalente
 
 >
-
 
 
 È inoltre possibile definire espressioni complesse, ad esempio le seguenti operazioni aritmetiche:

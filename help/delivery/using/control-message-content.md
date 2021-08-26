@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Controllo del contenuto del messaggio{#control-message-content}
+
+![](../../assets/common.svg)
 
 Per essere sicuri che le e-mail raggiungano i destinatari e migliorino il tasso di recapito delle e-mail, devono rispettare una serie di regole. In caso contrario, il contenuto di alcuni messaggi può essere rilevato come spam. Adobe Campaign offre diversi strumenti per rendere i contenuti conformi a queste regole.
 

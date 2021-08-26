@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Passaggi per creare una query{#steps-to-create-a-query}
+
+![](../../assets/common.svg)
 
 I passaggi per creare una query in Adobe Campaign sono i seguenti:
 
@@ -29,13 +31,13 @@ I passaggi per creare una query in Adobe Campaign sono i seguenti:
 >Tutti questi passaggi sono disponibili nell’editor di query generico. Quando una query viene creata in un altro contesto, alcuni passaggi possono essere omessi.\
 >L’attività Query è presentata in [questa sezione](../../workflow/using/query.md).
 
-## Passaggio 1 - Scegliere una tabella {#step-1---choose-a-table}
+## Passaggio 1: scegliere una tabella {#step-1---choose-a-table}
 
 Selezionare la tabella contenente i dati da eseguire nella finestra **[!UICONTROL Document type]**. Se necessario, filtra i dati utilizzando il campo filtro o il pulsante **[!UICONTROL Filters]** .
 
 ![](assets/query_editor_nveau_21.png)
 
-## Passaggio 2 - Scegliere i dati da estrarre {#step-2---choose-data-to-extract}
+## Passaggio 2: scegliere i dati da estrarre {#step-2---choose-data-to-extract}
 
 Nella finestra **[!UICONTROL Data to extract]**, seleziona i dati da visualizzare: questi campi costituiranno le colonne di output.
 
@@ -57,7 +59,7 @@ Ad esempio, selezionare **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!
 
 * La funzione **[!UICONTROL Remove duplicate rows (DISTINCT)]** consente di deduplicare risultati identici ottenuti nella colonna di output. Ad esempio, se scegli un censimento selezionando i campi Cognome, Nome e E-mail nella colonna di output, quelli con dati identici verranno eliminati, poiché significa che lo stesso contatto è stato inserito più volte nel database: verrà preso in considerazione un solo risultato.
 
-## Passaggio 3: ordinare i dati {#step-3---sort-data}
+## Passaggio 3 - Ordinare i dati {#step-3---sort-data}
 
 La finestra **[!UICONTROL Sorting]** ti consente di ordinare il contenuto delle colonne. Utilizza le frecce per modificare l’ordine delle colonne:
 
@@ -125,7 +127,7 @@ La colonna **[!UICONTROL Transformation]** consente di modificare l’etichetta 
 
 ![](assets/query_editor_nveau_42.png)
 
-## Passaggio 6: visualizzare in anteprima i dati {#step-6---preview-data}
+## Passaggio 6 - Anteprima dei dati {#step-6---preview-data}
 
 La finestra **[!UICONTROL Data preview]** è l&#39;ultima fase. Fai clic su **[!UICONTROL Start the preview of the data]** per ottenere il risultato della query. È disponibile in colonne o in formato XML. Fare clic sulla scheda **[!UICONTROL Generated SQL queries]** per visualizzare la query in formato SQL.
 

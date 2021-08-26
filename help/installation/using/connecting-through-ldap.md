@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Connessione tramite LDAP{#connecting-through-ldap}
+
+![](../../assets/v7-only.svg)
 
 ## Configurazione di Campaign e LDAP {#configuring-campaign-and-ldap}
 
@@ -94,7 +96,7 @@ I sistemi compatibili dipendono dal meccanismo di autenticazione selezionato. Di
 
 ## Calcolo del nome distinto {#distinguished-name-calculation}
 
-Se si desidera calcolare gli identificatori del nome distinto (DN), il passaggio successivo della procedura guidata di distribuzione consente di configurare la modalità di calcolo.
+Se desideri calcolare gli identificatori del nome distintivo (DN), il passaggio successivo della procedura guidata di distribuzione ti consente di configurare la modalità di calcolo.
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_02.png)
 

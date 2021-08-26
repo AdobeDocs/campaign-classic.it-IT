@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
 
 ---
 
-# Passaggi chiave per configurare e distribuire la tua istanza{#about-initial-configuration}
+# Passaggi chiave per configurare e distribuire l’istanza{#about-initial-configuration}
+
+![](../../assets/v7-only.svg)
 
 Una volta completata l’installazione di Adobe Campaign, devi configurarla per assicurarti che funzioni in modo efficiente con i tuoi vincoli e l’architettura tecnica. I passaggi per la configurazione di un’istanza di Adobe Campaign sono descritti in questo capitolo, nella sequenza seguente:
 

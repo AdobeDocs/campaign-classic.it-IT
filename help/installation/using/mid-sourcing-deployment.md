@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Implementazione mid-sourcing{#mid-sourcing-deployment}
+
+![](../../assets/v7-only.svg)
 
 Questa configurazione è una soluzione intermedia ottimale tra una configurazione in hosting (ASP) e l’internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server &quot;mid-sourcing&quot; ospitato in Adobe Campaign.
 
@@ -43,7 +45,7 @@ La comunicazione generale tra server e processi viene eseguita secondo il seguen
 * Leggermente ritardato nella visualizzazione delle informazioni di esecuzione dei messaggi e per la funzionalità di reporting a causa del tempo necessario per recuperare le informazioni dal server di mid-sourcing.
 * I sondaggi e i moduli web rimangono sulla piattaforma client.
 
-### Attrezzature consigliate {#recommended-equipment}
+### Apparecchiature consigliate {#recommended-equipment}
 
 * Server applicazioni: 2 Ghz CPU quad-core, 4 GB di RAM, software RAID 1 disco rigido SATA da 80 GB.
 * Server di database: CPU biquadrupla da 3 GHz, almeno 4 GB di RAM, disco rigido SAS hardware RAID 10 15000 rpm, il numero a seconda delle dimensioni e delle prestazioni previste del database.

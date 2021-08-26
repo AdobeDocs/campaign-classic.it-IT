@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Struttura di un modulo{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema del modulo **xtk:form**.
 
@@ -156,11 +158,11 @@ Esempio con l’aggiunta di &quot;xpath&quot; all’elemento denominato &quot;lo
 </container>
 ```
 
-### Tipi di contenitore {#types-of-container}
+### Tipi di contenitori {#types-of-container}
 
 I contenitori vengono utilizzati per creare controlli complessi utilizzando un set di campi formattati nelle pagine.
 
-#### Contenitore di schede {#tab-container}
+#### Contenitore a schede {#tab-container}
 
 Un contenitore a schede formatta i dati in pagine accessibili dalle schede.
 
@@ -308,7 +310,7 @@ Puoi anche ordinare l’elenco con l’elemento **`<orderby>`** :
 * **noZoom**: nessun modulo di modifica sul collegamento (con il valore &quot;true&quot;)
 * **modulo**: sovraccarica il modulo di modifica dell’elemento di destinazione
 
-## Elenco di collegamenti {#list-of-links}
+## Elenco dei collegamenti {#list-of-links}
 
 Un collegamento inserito nello schema dati come elemento di raccolta (unbound=&quot;true&quot;) deve passare attraverso un elenco per visualizzare tutti gli elementi associati ad esso.
 
@@ -360,7 +362,7 @@ Il pulsante **[!UICONTROL Detail]** viene aggiunto automaticamente quando l&#39;
 </input>
 ```
 
-### Tabella delle relazioni {#relationship-table}
+### Tabella di relazione {#relationship-table}
 
 Una tabella di relazione consente di collegare due tabelle con cardinalità N-N. La tabella delle relazioni contiene solo i collegamenti alle due tabelle.
 
@@ -403,7 +405,7 @@ L&#39;attributo **xpathChoiceTarget** consente di avviare un modulo di selezione
 * **xpathEditTarget**: imposta la modifica del collegamento inserito
 * **xpathChoiceTarget**: inoltre, avvia il modulo di selezione sul collegamento inserito
 
-## Controlli dell&#39;elenco di memoria {#memory-list-controls}
+## Controlli per l&#39;elenco di memoria {#memory-list-controls}
 
 Gli elenchi di memoria consentono di modificare gli elementi della raccolta utilizzando il precaricamento dei dati dell’elenco. Impossibile filtrare o configurare l&#39;elenco.
 
@@ -516,7 +518,7 @@ Una casella di controllo riflette uno stato booleano (selezionato o meno). Per i
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Modifica gerarchia di navigazione {#navigation-hierarchy-edit}
+## Modifica della gerarchia di navigazione {#navigation-hierarchy-edit}
 
 Questo controllo crea una struttura ad albero in un insieme di campi da modificare.
 

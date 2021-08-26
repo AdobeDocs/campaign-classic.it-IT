@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Aggiornamento dei dati
+title: Attività Update data
 description: Ulteriori informazioni sull’attività del flusso di lavoro Update data
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
 
 ---
 
-# Update data{#update-data}
+# Attività Update data{#update-data}
+
+![](../../assets/common.svg)
 
 Un&#39;attività di tipo **Update data** esegue un aggiornamento di massa dei campi nel database.
 
@@ -116,7 +118,7 @@ I dati per i record secondari sono associati al record principale se sono applic
 
 ## Esempio: Aggiornare i dati dopo un arricchimento {#example--update-data-following-an-enrichment}
 
-Il [Passaggio 2: La scrittura di dati arricchiti nella sezione &quot;Purchases&quot; table](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) del caso d’uso che descrive la creazione di un elenco di ricap offre un esempio di aggiornamento dei dati dopo un’attività di arricchimento.
+Il [Passaggio 2: La scrittura di dati arricchiti nella sezione &quot;Purchases&quot; table](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) del caso d’uso che descrive la creazione di un elenco di ricap offre un esempio di aggiornamento dei dati dopo un’attività di arricchimento.
 
 ## Parametri di input {#input-parameters}
 

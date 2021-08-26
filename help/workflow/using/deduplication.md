@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Deduplica{#deduplication}
+
+![](../../assets/common.svg)
 
 La deduplicazione elimina i duplicati dai risultati delle attività in entrata. È possibile eseguire la deduplicazione sull&#39;indirizzo e-mail, sul numero di telefono o su un altro campo.
 
@@ -139,7 +141,7 @@ La funzionalità **[!UICONTROL Merge]** ti consente di configurare un set di reg
 
 Ad esempio, con un set di record duplicati, puoi scegliere di mantenere il numero di telefono più vecchio o il nome più recente.
 
-Un caso d&#39;uso che sfrutta questa funzione è disponibile in [questa sezione](../../workflow/using/deduplication-merge.md).
+Un caso d&#39;uso che sfrutta questa funzione è disponibile in [questa sezione](deduplication-merge.md).
 
 Per farlo, esegui questi passaggi:
 
@@ -155,7 +157,7 @@ Per farlo, esegui questi passaggi:
 
 1. Dopo aver attivato la funzionalità, all’attività **[!UICONTROL Deduplication]** viene aggiunta una scheda **[!UICONTROL Merge]** . Consente di definire gruppi di campi da unire e le relative regole associate.
 
-   Per ulteriori informazioni, consulta il caso d’uso dedicato disponibile in [questa sezione](../../workflow/using/deduplication-merge.md).
+   Per ulteriori informazioni, consulta il caso d’uso dedicato disponibile in [questa sezione](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

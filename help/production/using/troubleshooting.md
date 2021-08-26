@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 18%
@@ -14,6 +14,8 @@ ht-degree: 18%
 ---
 
 # Risoluzione dei problemi di produzione{#troubleshooting}
+
+![](../../assets/v7-only.svg)
 
 Questa sezione contiene procedure di risoluzione dei problemi relativi a problemi generali di produzione di Adobe Campaign, come consegna ed esecuzione di flussi di lavoro, monitoraggio, manutenzione del database, connessione, ecc.
 
@@ -24,7 +26,7 @@ Questa sezione contiene procedure di risoluzione dei problemi relativi a problem
 * Questa [pagina](../../production/using/lost-password.md) descrive in dettaglio come modificare o recuperare una password persa.
 * Questa [pagina](../../production/using/console-update.md) descrive come riattivare la richiesta di aggiornamento della console se hai disattivato l’opzione corrispondente.
 
-## Risoluzione dei problemi relativi alle consegne {#delivery-troubleshooting}
+## Risoluzione dei problemi nelle consegne {#delivery-troubleshooting}
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 * [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)

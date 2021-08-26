@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Definizione delle approvazioni
-description: Le approvazioni consentono agli operatori di prendere decisioni su un flusso di lavoro o di confermarne l’esecuzione continua
+description: Le approvazioni consentono agli operatori di prendere decisioni relative a un flusso di lavoro o di confermarne l’esecuzione
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Definizione delle approvazioni {#defining-approvals}
 
-Le approvazioni consentono agli operatori di prendere decisioni relative a un flusso di lavoro o di confermarne l’esecuzione continua.
+![](../../assets/common.svg)
+
+Le approvazioni consentono agli operatori di prendere decisioni relative a un flusso di lavoro o di confermarne l’esecuzione.
 
 Viene inviato un messaggio a un gruppo di operatori e il flusso di lavoro attende una risposta prima di riprendere. Il flusso di lavoro non viene interrotto e possono essere eseguite altre operazioni. Ad esempio, possono essere presenti più approvazioni simultanee in sospeso.
 

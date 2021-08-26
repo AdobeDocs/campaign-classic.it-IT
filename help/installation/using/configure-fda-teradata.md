@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
-# Configurare l&#39;accesso alla Teradata {#configure-access-to-teradata}
+# Configurare l’accesso alle Teradate {#configure-access-to-teradata}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l’opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi riportati di seguito per configurare l’accesso alle Teradate.
 
@@ -68,8 +70,7 @@ Per implementare la connessione a Campaign, devi installare i driver per la Tera
 >
 >La connessione a un database esterno di Teradata in FDA richiede passaggi di configurazione aggiuntivi sul server Adobe Campaign. [Ulteriori informazioni](#teradata-additional-configurations).
 
-
-## Account esterno Teradata{#teradata-external}
+## Account esterno teradata{#teradata-external}
 
 L’account esterno Teradata ti consente di collegare l’istanza Campaign al database esterno Teradata.
 
@@ -115,7 +116,7 @@ Per configurare la banding delle query, effettua le seguenti operazioni:
 
 1. Seleziona la casella **[!UICONTROL Active]** per attivare questa funzione
 
-#### Risoluzione dei problemi relativi all&#39;account esterno {#external-account-troubleshooting}
+#### Risoluzione dei problemi degli account esterni {#external-account-troubleshooting}
 
 Se durante il test della connessione viene visualizzato il seguente errore **TIM-030008 Date &#39;2&#39;: caratteri mancanti (iRc=-53)** assicurati che il driver ODBC sia installato correttamente e che LD_LIBRARY_PATH (Linux) / PATH (Windows) sia impostato per il server Campaign.
 

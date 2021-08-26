@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
 
 ---
 
-# External signal{#external-signal}
+# Attività External signal{#external-signal}
+
+![](../../assets/common.svg)
 
 L’attività **External signal** ti consente di attivare l’esecuzione di un set di attività in un flusso di lavoro per una pianificazione.
 
@@ -25,9 +27,9 @@ Puoi configurare questa attività per definire gli eventi se non viene ricevuto 
 
 ![](assets/edit_signal.png)
 
-La configurazione delle scadenze è descritta in [Scadenze](../../workflow/using/defining-approvals.md).
+La configurazione delle scadenze è descritta in [Scadenze](defining-approvals.md).
 
-Il campo **Ritardo** consente di specificare un ritardo di scadenza nelle unità scelte. Vedere [Wait](../../workflow/using/wait.md) .
+Il campo **Ritardo** consente di specificare un ritardo di scadenza nelle unità scelte. Vedere [Wait](wait.md) .
 
 Ogni riga rappresenta un tipo di scadenza e coincide con una transizione.
 

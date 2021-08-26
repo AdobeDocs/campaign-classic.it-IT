@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Creare e gestire le attività{#creating-and-managing-tasks}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente all’interno dell’applicazione. L’implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 
@@ -434,7 +436,6 @@ Un’attività può essere: **[!UICONTROL Scheduled]**, **[!UICONTROL In progres
 >* Anche se il periodo di validità è terminato, i compiti non chiusi sono ancora inclusi nell&#39;elenco dei compiti in corso. Un avviso avvisa gli operatori che l’attività è in ritardo.
 
 >
-
 
 
 ### Stato di avanzamento di un&#39;attività {#progress-status-of-a-task}

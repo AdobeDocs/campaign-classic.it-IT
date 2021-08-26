@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Definizione della popolazione target {#defining-the-target-population}
+
+![](../../assets/common.svg)
 
 ## Informazioni sulle popolazioni target {#about-target-populations}
 
@@ -169,7 +171,7 @@ La bozza è un messaggio speciale che ti consente di verificare una consegna pri
 
 Per selezionare il target delle bozze, segui i passaggi seguenti:
 
-1. Fai clic sul collegamento **[!UICONTROL To]** .
+1. Fai clic sul collegamento **[!UICONTROL To]**.
 1. Fai clic sulla scheda **[!UICONTROL Target of the proofs]** .
 1. Fai clic sul campo **[!UICONTROL Targeting mode]** per scegliere il metodo da applicare: **[!UICONTROL Definition of a specific proof target]** , **[!UICONTROL Substitution of the address]** , **[!UICONTROL Seed addresses]** o **[!UICONTROL Specific target and seed addresses]**.
 

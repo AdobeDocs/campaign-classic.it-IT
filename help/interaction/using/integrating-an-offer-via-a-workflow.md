@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Integrazione di un’offerta tramite un flusso di lavoro{#integrating-an-offer-via-a-workflow}
+
+![](../../assets/v7-only.svg)
 
 Al di fuori dell’attività di consegna stessa, diverse attività del flusso di lavoro ti consentono di definire il modo in cui vengono presentate le offerte:
 
@@ -62,7 +64,7 @@ Esistono due metodi per specificare le proposte di offerta.
 * Specifica di un&#39;offerta o di una chiamata al motore di offerta.
 * Riferimento a un collegamento a un’offerta.
 
-### Specifica di un&#39;offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
+### Specifica di un’offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
@@ -111,7 +113,7 @@ A questo scopo, utilizza il seguente processo:
    >
    >Il numero di proposte disponibili per l’anteprima dipende dalla configurazione eseguita nella consegna.
 
-### Memorizzazione delle classificazioni e dei pesi delle offerte {#storing-offer-rankings-and-weights}
+### Memorizzazione di ranking e pesi delle offerte {#storing-offer-rankings-and-weights}
 
 Per impostazione predefinita, quando un&#39;attività **Arricchimento** viene utilizzata per fornire offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
 

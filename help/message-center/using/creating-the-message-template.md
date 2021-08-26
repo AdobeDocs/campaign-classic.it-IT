@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Progettare modelli di messaggi transazionali {#creating-the-message-template}
+
+![](../../assets/v7-only.svg)
 
 Per fare in modo che ogni evento possa essere modificato in un messaggio personalizzato, devi creare un modello di messaggio per corrispondere a ciascun tipo di evento.
 
@@ -51,7 +53,7 @@ I modelli di messaggi transazionali contengono le informazioni necessarie per pe
 
    ![](assets/messagecenter_create_model_004.png)
 
-## Crea il contenuto del messaggio {#creating-message-content}
+## Creare il contenuto del messaggio {#creating-message-content}
 
 La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md) .
 

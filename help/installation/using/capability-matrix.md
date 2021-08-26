@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
-# Matrice di funzionalità per modello{#capability-matrix-per-model}
+# Matrice di capacità per modello{#capability-matrix-per-model}
+
+![](../../assets/v7-only.svg)
 
  Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di distribuzione dell’installazione. Questo articolo condivide alcuni dettagli sulle differenze principali per alcune funzioni tra distribuzioni in hosting completo (Managed Services) e on-premise.
 

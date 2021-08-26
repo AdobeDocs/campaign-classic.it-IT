@@ -5,7 +5,7 @@ description: Canale LINE
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 
 
 # Canale LINE{#line-channel}
+
+![](../../assets/common.svg)
 
 I flussi di lavoro descritti di seguito sono installati con il modulo **LINE channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/line-channel.md).
 

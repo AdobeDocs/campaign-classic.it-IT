@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
@@ -14,6 +14,8 @@ ht-degree: 27%
 ---
 
 # Riferimento schema {#schema-reference}
+
+![](../../assets/v7-only.svg)
 
 Durante la modifica di uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). È inoltre possibile individuare alcuni errori durante l&#39;aggiornamento del database utilizzando l&#39;&quot;aggiornamento della struttura del database...&quot; procedura guidata.
 

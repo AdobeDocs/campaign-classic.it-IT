@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -15,20 +15,21 @@ ht-degree: 4%
 
 # Introduzione ai sondaggi{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una extranet, o moduli di notifica, inclusi dati dal database con tabelle, grafici, moduli di input, ecc. Utilizza questa funzionalità per progettare e pubblicare pagine web in cui gli utenti possono cercare o immettere informazioni.
 
 Il componente aggiuntivo opzionale **Survey** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni sul profilo, per effettuare o annullare l’iscrizione a un servizio informazioni o a un modulo di partecipazione al concorso. Una volta raccolte le risposte, queste vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte fornite ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
 
 Questo capitolo descrive come creare e gestire **Sondaggi**, la gestione dei campi e delle pagine, le modalità di archiviazione e i record.
 
-[!DNL :bulb:] Scopri come creare il tuo primo sondaggio in  [questa pagina](getting-started-with-surveys.md).
+Scopri come creare il tuo primo sondaggio in [questa pagina](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
 >* I passaggi dettagliati per la creazione di un modulo web standard sono disponibili in [questo documento](../../web/using/about-web-forms.md).
-   >
-   >
-* La gestione delle applicazioni web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
+>
+>* La gestione delle applicazioni web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
 
 
 ## Ambito delle funzioni {#campaign-surveys-scope}

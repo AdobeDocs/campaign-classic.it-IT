@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Creare un elenco di riepilogo{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che, dopo la raccolta dei file e dopo diversi arricchimenti, consente di creare un elenco di riepilogo. L&#39;esempio si basa su un elenco di contatti che hanno effettuato acquisti in un negozio.
 
@@ -37,7 +39,7 @@ Per creare un elenco di riepilogo, segui questi passaggi:
 1. Arricchimento dei dati &quot;Contatti&quot; con un calcolo aggregato dalla tabella &quot;Acquisti&quot;
 1. Creazione di un elenco di riepilogo
 
-## Passaggio 1: Carica il file e riconcilia i dati importati {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Passaggio 1: Caricare il file e riconciliare i dati importati {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 I dati da caricare sono dati relativi all’acquisto con il seguente formato:
 
@@ -92,7 +94,7 @@ Aggiungi l’attività Enrichment e configurala come segue:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Per ulteriori informazioni sui vari tipi di collegamenti, consulta [Arricchimento e modifica dei dati](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
+Per ulteriori informazioni sui vari tipi di collegamenti, consulta [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data).
 
 Nella finestra seguente, è necessario creare una condizione di unione selezionando il campo di origine (nel set principale) e il campo di destinazione (appartenente allo schema &quot;Stores&quot;) per configurare la riconciliazione dei dati.
 
@@ -170,7 +172,7 @@ Per preparare l’elenco di riepilogo, è necessario aggiungere campi dai campi 
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Passaggio 4: Crea e aggiungi a un elenco di riepilogo {#step-4--creating-and-adding-to-a-summary-list}
+## Passaggio 4: Creare e aggiungere a un elenco di riepilogo {#step-4--creating-and-adding-to-a-summary-list}
 
 L’ultimo passaggio consiste nel scrivere tutti i dati arricchiti in un elenco.
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
 # Consegna ricorrente{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 Un’attività **[!UICONTROL Recurring delivery]** ti consente di configurare un’occorrenza del modello di consegna specifica per una campagna.
 
@@ -31,11 +33,11 @@ Per eseguire questa operazione:
 
 Il processo di configurazione per questa attività è simile a quello di creazione di un modello di consegna in termini di opzioni disponibili. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
 
-Per un esempio di utilizzo di questa attività, consulta questa [sezione](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Per un esempio di utilizzo di questa attività, consulta questa [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Come impostare una consegna ricorrente
 
-Una **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, si otterranno 52 consegne dopo un anno. Ciò significa anche che i registri di registro e di tracciamento ampi saranno separati da ogni istanza di consegna.
+Una **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, in un anno si otterranno 52 consegne. Ciò significa anche che i registri di registro e di tracciamento ampi saranno separati da ogni istanza di consegna.
 
 ![Consegna ricorrente](assets/delivery_recurring.jpg)
 

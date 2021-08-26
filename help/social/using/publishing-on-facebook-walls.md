@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Pubblicazione su bacheche Facebook{#publishing-on-facebook-walls}
+
+![](../../assets/v7-only.svg)
 
 Affinché Adobe Campaign possa inviare pubblicazioni alle pareti Facebook, è necessario delegare l’accesso in scrittura per queste pagine ad Adobe Campaign. Sono previsti i seguenti passaggi di configurazione:
 
@@ -74,7 +76,7 @@ Affinché Adobe Campaign possa pubblicare sulle pareti delle pagine, devi creare
 
    ![](assets/social_create_facebook_app_004.png)
 
-## Delega dell&#39;accesso in scrittura ad Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delega dell’accesso in scrittura ad Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Per delegare l’accesso in scrittura ad Adobe Campaign per la pubblicazione sulle pareti delle pagine, è necessario immettere i parametri dell’applicazione Facebook creata in precedenza.
 

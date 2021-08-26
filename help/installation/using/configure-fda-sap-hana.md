@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# Configurare l&#39;accesso a SAP HANA {#configure-access-to-sap-hana}
+# Configurare l’accesso a SAP HANA {#configure-access-to-sap-hana}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l’opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Per configurare l’accesso a SAP HANA, effettua le seguenti operazioni.
 
@@ -58,7 +60,7 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
    * **LD_LIBRARY_PATH**: Deve includere il collegamento al client SAP Hana (/usr/sap/hdbclient/libodbcHDB.so) per impostazione predefinita.
    * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
 
-## Account esterno SAP HANA{#sap-external}
+## account esterno SAP HANA{#sap-external}
 
 L’account esterno di SAP HANA ti consente di collegare l’istanza Campaign al database esterno di SAP HANA.
 

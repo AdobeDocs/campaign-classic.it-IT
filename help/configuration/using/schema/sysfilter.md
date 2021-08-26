@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: a0069688-fd05-42e9-91dd-adc10bea3461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 18%
@@ -15,7 +15,9 @@ ht-degree: 18%
 
 # elemento sysfilter {#sysfilter--element}
 
-## Modello dei contenuti {#content-model-15}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-15}
 
 sysFilter:==condition
 
@@ -27,7 +29,7 @@ Nessuno
 
 `<element>`
 
-## Figli {#children-15}
+## Bambini {#children-15}
 
 `<condition>`
 
@@ -35,7 +37,7 @@ Nessuno
 
 Questo elemento ti consente di definire un filtro.
 
-## Descrizione dell&#39;attributo {#attribute-description-15}
+## Descrizione attributo {#attribute-description-15}
 
 Questo elemento non ha attributi.
 

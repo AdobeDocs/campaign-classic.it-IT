@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Parametri avanzati{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 La schermata delle proprietà di un’attività dispone di una scheda **[!UICONTROL Advanced]** che consente di definire un comportamento in caso di errori, il periodo di esecuzione dell’attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
 
@@ -33,7 +35,7 @@ Questo campo contiene il nome interno dell’attività.
 
 ## Immagine {#image}
 
-Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta: [Gestione delle immagini delle attività](../../workflow/using/managing-activity-images.md).
+Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta: [Gestione delle immagini delle attività](managing-activity-images.md).
 
 ## Execution {#execution}
 
@@ -65,7 +67,7 @@ Questo campo ti consente di definire il comportamento da applicare per l’utili
 
 ## Fuso orario {#time-zone}
 
-Questo campo ti consente di selezionare il fuso orario dell’attività. Per ulteriori informazioni: [Gestione dei fusi orari](../../workflow/using/managing-time-zones.md).
+Questo campo ti consente di selezionare il fuso orario dell’attività. Per ulteriori informazioni: [Gestione dei fusi orari](managing-time-zones.md).
 
 ## In caso di errori {#in-case-of-errors}
 
@@ -76,7 +78,7 @@ Questo campo ti consente di definire l’azione da eseguire quando l’attività
 
 ## Script di inizializzazione {#initialization-script}
 
-Questo campo ti consente di inizializzare le variabili o modificare le proprietà dell’attività. Per ulteriori informazioni, consulta: [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
+Questo campo ti consente di inizializzare le variabili o modificare le proprietà dell’attività. Per ulteriori informazioni, consulta: [Script e modelli JavaScript](javascript-scripts-and-templates.md).
 
 ## Commento {#comment}
 

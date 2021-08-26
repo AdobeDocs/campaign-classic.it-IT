@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Query delle informazioni di consegna {#querying-delivery-information}
+
+![](../../assets/common.svg)
 
 ## Numero di clic per una consegna specifica {#number-of-clicks-for-a-specific-delivery}
 
@@ -177,7 +179,7 @@ L’esempio seguente mostra come eseguire il targeting dei profili che hanno ape
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Filtraggio del comportamento dei destinatari dopo una consegna {#filtering-recipients--behavior-folllowing-a-delivery}
+## Filtrare il comportamento dei destinatari dopo una consegna {#filtering-recipients--behavior-folllowing-a-delivery}
 
 In un flusso di lavoro, le caselle **[!UICONTROL Query]** e **[!UICONTROL Split]** consentono di selezionare un comportamento dopo una consegna precedente. Questa selezione viene eseguita tramite il filtro **[!UICONTROL Delivery recipient]** .
 

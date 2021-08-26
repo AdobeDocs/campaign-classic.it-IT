@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Creazione di un’app Facebook{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 Grazie alle applicazioni web, Social Marketing consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, facilitando l&#39;acquisizione di potenziali clienti tramite questo social network. Per ulteriori esempi di applicazioni web di tipo Facebook, consulta [Esempi di app Facebook](../../social/using/examples-of-facebook-apps.md).
 
@@ -90,7 +92,7 @@ Questo passaggio richiede l’accesso sia alla console Adobe Campaign che a un b
 
    ![](assets/social_webapp_fb_013.png)
 
-## Inserimento dei termini del servizio e dei collegamenti all’informativa sulla privacy {#entering-the-terms-of-service-and-privacy-policy-links}
+## Inserimento dei collegamenti ai termini del servizio e all’informativa sulla privacy {#entering-the-terms-of-service-and-privacy-policy-links}
 
 Si consiglia vivamente di aggiungere i collegamenti **[!UICONTROL Terms of service]** e **[!UICONTROL Privacy policy]** per visualizzarli nella schermata di richiesta delle autorizzazioni di Facebook.
 

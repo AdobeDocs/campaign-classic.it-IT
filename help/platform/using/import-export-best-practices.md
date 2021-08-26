@@ -6,14 +6,16 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
 
 # Best practice per l’importazione e l’esportazione {#import-export-best-practices}
+
+![](../../assets/common.svg)
 
 La cautela e il rispetto delle poche semplici regole descritte di seguito aiuteranno molto a garantire la coerenza dei dati all&#39;interno del database e ad evitare errori comuni durante l&#39;aggiornamento del database o le esportazioni di dati.
 
@@ -29,7 +31,7 @@ Non basarsi sul presupposto che i dati in arrivo siano coerenti e corretti o che
 
 Un esempio di modello di flusso di lavoro generico progettato per l’importazione di dati è disponibile nell’ [Esempio: Modello di flusso di lavoro per importare la sezione dati](../../platform/using/creating-import-export-templates.md) .
 
-## Usa formati di file flat {#using-flat-file-formats}
+## Utilizzare formati di file flat {#using-flat-file-formats}
 
 Il formato più efficiente per le importazioni è quello dei file piatti. I file Flat possono essere importati in modalità collettiva a livello di database.
 

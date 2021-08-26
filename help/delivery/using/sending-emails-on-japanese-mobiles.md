@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Invio di e-mail su dispositivi mobili giapponesi {#sending-emails-on-japanese-mobiles}
+
+![](../../assets/common.svg)
 
 ## Formati e-mail per dispositivi mobili giapponesi {#email-formats-for-japanese-mobiles}
 
@@ -48,7 +50,7 @@ Pertanto, devi:
 >* Per Softbank, fare riferimento a [questa pagina](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
 
-## Verifica del contenuto delle e-mail {#testing-the-email-content}
+## Verifica del contenuto dell’e-mail {#testing-the-email-content}
 
 ### Anteprima del messaggio {#previewing-the-message}
 

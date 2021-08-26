@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # API orientate alle aziende{#business-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto su:
 
@@ -40,7 +42,7 @@ Questa sezione descrive l’utilizzo dei servizi &quot;Subscribe&quot;, &quot;Un
 >
 >[La ](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) documentazione JSAPI di Campaign contiene informazioni aggiuntive sulle chiamate SOAP e sull’utilizzo di Javascript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell’applicazione.
 
-## Abbonati (nms:subscription) {#subscribe--nms-subscription-}
+## Iscrizione (nms:abbonamento) {#subscribe--nms-subscription-}
 
 Questo servizio ti consente di abbonare un destinatario a un servizio di informazioni e di aggiornare il profilo del destinatario.
 

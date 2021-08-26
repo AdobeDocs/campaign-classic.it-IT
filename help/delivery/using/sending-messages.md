@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Passaggi principali per l’invio di un’e-mail {#confirming-email-delivery}
+
+![](../../assets/common.svg)
 
 Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Questa sezione presenta i passaggi principali per controllare e confermare la consegna di un’e-mail.
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Automatizzare con i flussi di lavoro{#automating-via-workflows}
+
+![](../../assets/common.svg)
 
 ## Attività di gestione dei contenuti {#content-management-activity}
 
@@ -48,7 +50,7 @@ Le proprietà dell’attività sono suddivise in quattro passaggi:
 
    Crea un nuovo contenuto tramite un modello di pubblicazione. L’istanza di contenuto verrà salvata nella cartella &quot;String&quot; popolata.
 
-### Aggiorna il contenuto {#update-the-content}
+### Aggiornare il contenuto {#update-the-content}
 
 * **Oggetto**
 
@@ -212,7 +214,7 @@ Il contenuto della consegna viene popolato tramite l’evento in entrata.
 
 L’azione finale dell’attività consiste nel preparare e avviare la consegna.
 
-### Importa contenuto da FTP {#importing-content-from-ftp}
+### Importare contenuti da FTP {#importing-content-from-ftp}
 
 Se il contenuto di consegna è disponibile in un file HTML presente su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Fare riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
 

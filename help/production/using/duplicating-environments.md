@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Duplicazione di ambienti{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Introduzione {#introduction}
 
@@ -71,7 +73,6 @@ I seguenti passaggi devono essere eseguiti con grande attenzione: alcuni process
 >
 
 
-
 ### Passaggio 1: eseguire un backup dei dati dell’ambiente di origine (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Copiare i database
@@ -109,7 +110,7 @@ Verifica che il numero di opzioni/account esportati sia uguale al numero di righ
 >
 >Quando la tabella nmsextaccount viene esportata, le password relative agli account esterni (ad esempio password per Mid-sourcing, Message Center Execution, SMPP, IMS e altri account esterni) non vengono esportate. Assicurati di avere in anticipo l&#39;accesso alle password corrette, in quanto potrebbero dover essere reinserite dopo che gli account esterni sono stati importati di nuovo nell&#39;ambiente.
 
-### Passaggio 3 - Arrestare l’ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
+### Passaggio 3: interrompere l’ambiente di destinazione (dev) {#step-3---stop-the-target-environment--dev-}
 
 È necessario arrestare i processi Adobe Campaign su tutti i server dell’ambiente di destinazione. Questa operazione dipende dal sistema operativo in uso.
 
@@ -185,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Passaggio 7 - Riavviare il processo Web dell&#39;ambiente di destinazione (dev) {#step-7---restart-the-target-environment-web-process--dev-}
+### Passaggio 7: riavviare il processo Web dell&#39;ambiente di destinazione (dev) {#step-7---restart-the-target-environment-web-process--dev-}
 
 Nell’ambiente di destinazione, riavvia i processi Adobe Campaign per tutti i server.
 

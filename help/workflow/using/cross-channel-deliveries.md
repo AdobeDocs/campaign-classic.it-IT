@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
 
 # Consegne cross-channel{#cross-channel-deliveries}
+
+![](../../assets/common.svg)
 
 Le consegne cross-channel sono disponibili nella scheda **[!UICONTROL Deliveries]** delle attività del flusso di lavoro della campagna.
 
@@ -22,8 +24,8 @@ I vari canali disponibili sono:
 * [E-mail](../../delivery/using/about-email-channel.md)
 * [Direct mailing](../../delivery/using/about-direct-mail-channel.md)
 * [Mobile](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md)
-* [Facebook](../../social/using/publishing-on-facebook.md)
+* [Twitter](../../social/using/publishing-on-twitter.md)  (solo Campaign Classic v7)
+* [Facebook](../../social/using/publishing-on-facebook.md)  (solo Campaign Classic v7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [per Android](../../delivery/using/create-notifications-android.md)
 

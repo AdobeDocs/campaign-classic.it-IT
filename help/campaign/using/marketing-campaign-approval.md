@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Impostare e gestire il processo di approvazione {#approving-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 Ogni fase della consegna può essere soggetta ad approvazione per garantire il pieno monitoraggio e controllo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza.
 
@@ -73,7 +75,7 @@ Se non viene specificato alcun revisore, il responsabile della campagna sarà re
 
 ## Modalità di approvazione {#approval-modes}
 
-### Approvazione tramite il dashboard {#approval-via-the-dashboard}
+### Approvazione tramite dashboard {#approval-via-the-dashboard}
 
 Per approvare un processo tramite la console o l’interfaccia Web, fai clic sul collegamento appropriato nel dashboard della campagna. I processi possono essere approvati anche tramite il tracciamento della consegna o tramite il dashboard di consegna.
 
@@ -163,7 +165,7 @@ A questo scopo, modifica la finestra di approvazione del modello di campagna o c
 
 Il contenuto delle notifiche è definito in un modello specifico: **[!UICONTROL Notification of validations for the marketing campaign]**. Questo modello viene salvato nella cartella **[!UICONTROL Administration > Campaign management > Technical delivery templates]** della struttura di Adobe Campaign.
 
-## Rivedi e approva le consegne {#checking-and-approving-deliveries}
+## Revisione e approvazione delle consegne {#checking-and-approving-deliveries}
 
 Adobe Campaign consente di impostare processi di approvazione per le fasi principali della campagna di marketing in modalità collaborativa.
 
@@ -182,7 +184,6 @@ A questo punto, lo stato della campagna è **[!UICONTROL To validate]**.
 >[!NOTE]
 >
 >Per selezionare i processi che richiedono un’approvazione, modifica il modello della campagna. Per ulteriori informazioni, consulta [Modelli di campagna](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
-
 
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
@@ -255,7 +256,6 @@ Per selezionare un elenco di operatori, fai clic sul collegamento **[!UICONTROL 
 >
 
 
-
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
 Per ogni consegna, fai clic sul pulsante **[!UICONTROL Audit]** e sulla scheda **[!UICONTROL Approvals]** per visualizzare e modificare le date di approvazione e i promemoria automatici.
@@ -312,7 +312,7 @@ Per ogni consegna, fai clic sul pulsante **[!UICONTROL Audit]** e sulla scheda *
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
-#### Assegnare la modifica dei contenuti {#assign-content-editing}
+#### Assegnare la modifica del contenuto {#assign-content-editing}
 
 Questa opzione ti consente di definire un utente responsabile della modifica dei contenuti, ad esempio un webmaster. Se l’opzione **[!UICONTROL Assign content editing]** è selezionata nella finestra delle impostazioni di approvazione, vengono aggiunti diversi passaggi di approvazione tra la creazione della consegna e la consegna dell’e-mail di notifica alla persona responsabile del contenuto:
 
@@ -365,7 +365,7 @@ Questa opzione ti consente di definire un operatore esterno incaricato di approv
 
    ![](assets/s_user_validation_external_content.png)
 
-### Approva un file di estrazione {#approving-an-extraction-file}
+### Approvare un file di estrazione {#approving-an-extraction-file}
 
 Per le consegne offline, Adobe Campaign genera un file di estrazione che, a seconda della configurazione, viene inviato al router. Il relativo contenuto dipende dal modello di esportazione utilizzato.
 

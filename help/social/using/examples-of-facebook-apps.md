@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Esempi di app Facebook{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 Quando un utente fa clic sulla scheda di un&#39;applicazione Facebook, questa viene visualizzata in uno spazio largo 810 pixel. Adobe Campaign utilizza un’applicazione web di tipo Facebook per consentire di definire e personalizzare il contenuto visualizzato nell’applicazione Facebook, facilitando quindi l’acquisizione dei profili.
 

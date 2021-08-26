@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Azioni sui rapporti{#actions-on-reports}
+
+![](../../assets/common.svg)
 
 Quando visualizzi un rapporto, la barra degli strumenti ti consente di eseguire un certo numero di azioni. Questi sono descritti di seguito.
 
@@ -56,7 +58,7 @@ Per i report di tipo **[!UICONTROL List with group]** destinati all&#39;esportaz
 * Se un report contiene diverse tabelle, grafici e così via. gli elementi di tipo , saranno esportati uno sotto l’altro.
 * È possibile forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, consulta questo documento [Definizione del formato della cella](../../reporting/using/creating-a-table.md#defining-cell-format).
 
-### Posticipa l&#39;esportazione {#postpone-the-export}
+### Posticipare l&#39;esportazione {#postpone-the-export}
 
 Puoi posticipare l’esportazione di un rapporto, ad esempio per attendere le chiamate asincrone. A questo scopo, immetti il seguente parametro nello script di inizializzazione della pagina:
 
@@ -90,7 +92,7 @@ Per ottenere un risultato migliore, modificare le opzioni di stampa di Internet 
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Creazione di archivi di report {#creating-report-archives}
+## Creazione di archivi dei rapporti {#creating-report-archives}
 
 L’archiviazione di un rapporto consente di creare una visualizzazione del rapporto in diversi periodi, ad esempio per mostrare le statistiche per un determinato periodo di tempo.
 

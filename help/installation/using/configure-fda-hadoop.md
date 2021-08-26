@@ -6,21 +6,23 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
 
 ---
 
-# Configurare l&#39;accesso al Hadoop {#configure-access-to-hadoop}
+# Configurare l’accesso al Hadoop {#configure-access-to-hadoop}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l’opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi riportati di seguito per configurare l’accesso al Hadoop.
 
 1. Configura [database di Hadoop](#configuring-hadoop)
 1. Configura il Hadoop [account esterno](#hadoop-external) in Campaign
 
-## Configurazione del Hadoop 3.0 {#configuring-hadoop}
+## Configurazione di Hadoop 3.0 {#configuring-hadoop}
 
 La connessione a un database esterno di Hadoop in FDA richiede le seguenti configurazioni sul server Adobe Campaign. Questa configurazione è disponibile sia per Windows che per Linux.
 
@@ -37,7 +39,7 @@ La connessione a un database esterno di Hadoop in FDA richiede le seguenti confi
 
 1. In Campaign Classic puoi quindi configurare l’account esterno [!DNL Hadoop]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#hadoop-external).
 
-## Account esterno hadoop {#hadoop-external}
+## account esterno hadoop {#hadoop-external}
 
 L’account esterno [!DNL Hadoop] ti consente di collegare l’istanza Campaign al database esterno del Hadoop.
 
@@ -80,7 +82,7 @@ Il connettore supporta anche le seguenti opzioni Hive:
 | fileFormat | PARQUET | Formato di file predefinito per le tabelle di lavoro. |
 
 
-## Configurazione del Hadoop 2.1 {#configure-access-hadoop-2}
+## Configurazione di Hadoop 2.1 {#configure-access-hadoop-2}
 
 Per connettersi al Hadoop 2.1, segui i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Creazione di una tabella{#creating-a-table}
 
+![](../../assets/common.svg)
+
 È possibile aggiungere una tabella a un rapporto per visualizzare i dati. Può trattarsi di una tabella pivot creata in base a misurazioni del cubo, di un elenco con gruppo o di una tabella contenente una suddivisione dei valori.
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Creazione di un elenco con gruppo {#creating-a-list-with-group}
+## Creazione di un elenco con un gruppo {#creating-a-list-with-group}
 
 Una tabella di tipo **[!UICONTROL List with group]** consente di raggruppare i dati nella tabella e di produrre statistiche su di essa. Ad esempio, puoi creare totali e totali secondari per i dati. Ogni gruppo ha una propria riga di intestazione, dettaglio e piè di pagina.
 
@@ -257,7 +259,7 @@ Fai doppio clic sulla prima query per modificarla, quindi applica i seguenti pas
 
 1. Fai clic su **[!UICONTROL Finish]** per salvare queste condizioni, quindi fai clic su **[!UICONTROL Ok]** per chiudere l’editor delle query.
 
-### Passaggio 3: Crea la prima pagina {#step-3--create-the-first-page}
+### Passaggio 3: Creare la prima pagina {#step-3--create-the-first-page}
 
 In questo passaggio, configureremo la prima pagina del rapporto. Per configurarlo, esegui i seguenti passaggi:
 

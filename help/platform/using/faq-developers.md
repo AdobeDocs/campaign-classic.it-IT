@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Domande frequenti sugli sviluppatori {#dev-faq}
+
+![](../../assets/common.svg)
 
 In quanto soluzione aperta, Adobe Campaign è pronto alla personalizzazione e allo sviluppo di applicazioni avanzate.
 
@@ -39,7 +41,7 @@ Consulta le [guide introduttive per le tabelle e gli schemi](../../configuration
 
 Puoi creare e implementare una tabella dei destinatari non standard in Campaign per inviare i tuoi messaggi.
 
-[Fai clic qui per ulteriori informazioni](../../configuration/using/about-custom-recipient-table.md)
+[Per ulteriori informazioni, fai clic qui](../../configuration/using/about-custom-recipient-table.md)
 
 ## Quali sono le best practice per definire le query in Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
 

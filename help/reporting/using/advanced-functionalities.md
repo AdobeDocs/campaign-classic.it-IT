@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Funzionalità avanzate{#advanced-functionalities}
+
+![](../../assets/common.svg)
 
 In qualità di utente tecnico, oltre a [proprietà generali](../../reporting/using/properties-of-the-report.md), puoi sfruttare le funzionalità avanzate per configurare i rapporti, ad esempio:
 
@@ -45,7 +47,7 @@ Per eseguire questa operazione:
 
 Per una normale esecuzione sul lato client, gli script a cui si fa riferimento devono essere scritti in JavaScript e devono essere compatibili con i browser più comuni. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/web-forms-answers.md).
 
-### Aggiunta di un’attività script {#script-activity}
+### Aggiunta di un’attività Script {#script-activity}
 
 Durante la [progettazione del report](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), utilizza l&#39;attività **[!UICONTROL Script]** per elaborare i dati e creare facilmente query complesse che non abilitano SQL Language. È possibile immettere direttamente la query nella finestra dello script.
 
@@ -114,6 +116,6 @@ Nell’esempio video seguente, imparerai come aggiungere un parametro &quot;_typ
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## Chiamata di un altro report {#calling-up-another-report}
+## Chiamata di un altro rapporto {#calling-up-another-report}
 
 Un&#39;attività **Jump** è simile a una transizione senza una freccia: ti consente di passare da un’attività all’altra o di accedere a un altro rapporto.

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Coordinare gli aggiornamenti dei dati{#coordinating-data-updates}
+
+![](../../assets/common.svg)
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti dei concomitanti quando si utilizzano diverse esecuzioni di un flusso di lavoro.
 
@@ -53,5 +55,5 @@ Per creare il flusso di lavoro, segui i passaggi seguenti:
 
 **Argomenti correlati:**
 
-* [Impedire esecuzioni simultanee multiple](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
-* [Aggiorna attività dati](../../workflow/using/update-data.md)
+* [Impedire esecuzioni simultanee multiple](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
+* [Aggiorna attività dati](update-data.md)

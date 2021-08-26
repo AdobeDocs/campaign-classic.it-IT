@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Configurazione della pubblicazione su Twitter{#configuring-publishing-on-twitter}
+
+![](../../assets/v7-only.svg)
 
 Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi delegare l’accesso in scrittura ad Adobe Campaign per questi account. A questo scopo, applica i seguenti passaggi di configurazione:
 
@@ -41,7 +43,7 @@ Consigliamo inoltre di creare un account Twitter privato che possa essere utiliz
 
 ![](assets/social_twitter_test_page.png)
 
-## Creazione di un&#39;applicazione in Twitter {#creating-an-application-on-twitter}
+## Creazione di un’applicazione in Twitter {#creating-an-application-on-twitter}
 
 Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi creare un’applicazione Twitter per account Twitter. A questo scopo, esegui i seguenti passaggi:
 
@@ -57,7 +59,7 @@ Affinché Adobe Campaign possa inviare tweet ai tuoi account Twitter, devi crear
 
    ![](assets/social_create_twitter_app_002.png)
 
-## Delega dell&#39;accesso in scrittura ad Adobe Campaign {#delegating-write-access-to-adobe-campaign}
+## Delega dell’accesso in scrittura ad Adobe Campaign {#delegating-write-access-to-adobe-campaign}
 
 Per ogni applicazione Twitter, è necessario creare un servizio di tipo **[!UICONTROL Twitter]** diverso che includerà le impostazioni dell&#39;applicazione.
 

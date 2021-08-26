@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Creazione di tag di tracciamento web{#creating-web-tracking-tags}
+
+![](../../assets/v7-only.svg)
 
 Ogni pagina del sito che desideri monitorare deve essere referenziata nella tua piattaforma Adobe Campaign. Questo riferimento può essere eseguito in due modi:
 

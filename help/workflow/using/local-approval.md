@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Approvazione locale{#local-approval}
+
+![](../../assets/common.svg)
 
 Quando viene integrata in un flusso di lavoro di targeting, l’ attività **[!UICONTROL Local approval]** ti consente di impostare un processo di approvazione del destinatario prima che la consegna venga inviata.
 
@@ -23,7 +25,7 @@ Quando viene integrata in un flusso di lavoro di targeting, l’ attività **[!U
 >
 >Per utilizzare questa attività, è necessario aver acquistato il modulo Marketing distribuito , che è un’opzione Campaign. Controlla il contratto di licenza.
 
-Per un esempio dell&#39;attività **[!UICONTROL Local approval]** con un modello di distribuzione, fai riferimento a [Utilizzo dell&#39;attività di approvazione locale](../../workflow/using/using-the-local-approval-activity.md).
+Per un esempio dell&#39;attività **[!UICONTROL Local approval]** con un modello di distribuzione, fai riferimento a [Utilizzo dell&#39;attività di approvazione locale](using-the-local-approval-activity.md).
 
 Inizia immettendo un’etichetta per l’attività e il campo **[!UICONTROL Action to execute]** :
 
@@ -33,7 +35,7 @@ Inizia immettendo un’etichetta per l’attività e il campo **[!UICONTROL Acti
 
    ![](assets/local_validation_intro_2.png)
 
-* **Query** incrementale: consente di eseguire una query e pianificarne l’esecuzione. Consulta la sezione [Incremental query](../../workflow/using/incremental-query.md) .
+* **Query** incrementale: consente di eseguire una query e pianificarne l’esecuzione. Consulta la sezione [Incremental query](incremental-query.md) .
 
    ![](assets/local_validation_intro_3.png)
 
@@ -49,7 +51,7 @@ I campi da inserire nel caso di una notifica per l’approvazione del target son
 
 * **[!UICONTROL Distribution context]**: seleziona l’ **[!UICONTROL Specified in the transition]** opzione se utilizzi un’attività di  **[!UICONTROL Split]** tipo per limitare la popolazione target. In questo caso, il modello di distribuzione viene inserito nell’attività divisa. Se non stai limitando la popolazione target, seleziona l’opzione **[!UICONTROL Explicit]** qui e immetti il modello di distribuzione nel campo **[!UICONTROL Data distribution]** .
 
-   Per ulteriori informazioni sulla creazione di un modello di distribuzione dei dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+   Per ulteriori informazioni sulla creazione di un modello di distribuzione dei dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
@@ -83,7 +85,7 @@ Nel caso di un rapporto di feedback sulla consegna, devono essere inseriti i cam
 
 ## Esempio: Approvazione di una consegna del flusso di lavoro {#example--approving-a-workflow-delivery}
 
-Questo esempio mostra come impostare un processo di approvazione per una consegna di flusso di lavoro. Per ulteriori informazioni sulla creazione di flussi di lavoro di consegna, consulta l’ [Esempio: sezione workflow di consegna](../../workflow/using/delivery.md#example--delivery-workflow).
+Questo esempio mostra come impostare un processo di approvazione per una consegna di flusso di lavoro. Per ulteriori informazioni sulla creazione di flussi di lavoro di consegna, consulta l’ [Esempio: sezione workflow di consegna](delivery.md#example--delivery-workflow).
 
 Un operatore può approvare una consegna in uno dei due modi seguenti: utilizzare la pagina web collegata nel messaggio e-mail o tramite la console.
 

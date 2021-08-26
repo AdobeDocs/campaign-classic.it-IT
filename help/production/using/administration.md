@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Amministrazione{#administration}
+
+![](../../assets/v7-only.svg)
 
 Avvio automatico dei moduli Adobe Campaign (**web**, **mta**, **wfserver**, ecc.) è fornito dal server **nlserver** .
 
@@ -80,17 +82,13 @@ Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (com
    >* Utilizza l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
 
       >
-      >   
-      Esempio:
+      >   Esempio:
       >
-      >   
-      **nlserver riavvio web -verbose**
+      >   **nlserver riavvio web -verbose**
       >
-      >   
-      **avvio nlserver mta@myinstance -verbose**
+      >   **avvio nlserver mta@myinstance -verbose**
       >
-      >   
-      Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
+      >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
 
 
 * Avvia tutti i processi Adobe Campaign (equivalente all&#39;avvio del servizio **nlserver6** ):

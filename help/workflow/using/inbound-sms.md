@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # SMS in entrata{#inbound-sms}
+
+![](../../assets/common.svg)
 
 L’attività **Inbound SMS** ti consente di scaricare ed elaborare messaggi di testo da un account esterno.
 
@@ -31,4 +33,4 @@ La prima scheda dell’attività **Inbound SMS** ti consente di inserire i param
 
 1. **[!UICONTROL Expiration]**
 
-Le schede **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** sono descritte dettagliatamente in [E-mail in entrata](../../workflow/using/inbound-emails.md).
+Le schede **[!UICONTROL Script]**, **[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** sono descritte dettagliatamente in [E-mail in entrata](inbound-emails.md).

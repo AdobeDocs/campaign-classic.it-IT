@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Configurare i processi di importazione {#executing-import-jobs}
+
+![](../../assets/common.svg)
 
 Adobe Campaign consente di importare dati nel database da uno o più file in formato testo, CSV, TAB o XML. Questi file sono associati a una tabella (principale o collegata) e ogni campo dei file di origine è associato a un campo del database.
 
@@ -125,7 +127,7 @@ Puoi visualizzare il risultato della configurazione nella zona di anteprima nell
 
 Fai clic su **[!UICONTROL OK]** per salvare la formattazione, quindi fai clic su **[!UICONTROL Next]** per visualizzare il passaggio successivo.
 
-## Passaggio 3: mappatura dei campi {#step-3---field-mapping}
+## Passaggio 3 - Mappatura dei campi {#step-3---field-mapping}
 
 È quindi necessario selezionare lo schema di destinazione e mappare i dati di ciascuna colonna sui campi del database.
 
@@ -219,7 +221,7 @@ Evita di scegliere un campo che potrebbe essere modificato durante l&#39;importa
 >
 >La riconciliazione viene quindi eseguita solo su questa cartella (a meno che non sia selezionata alcuna cartella).
 
-### Deduplicazione {#deduplication}
+### Deduplica {#deduplication}
 
 >[!NOTE]
 >
@@ -271,7 +273,7 @@ Puoi generare un file contenente questi record tramite l’icona **[!UICONTROL E
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-## Passaggio 5: passaggio aggiuntivo durante l’importazione di destinatari {#step-5---additional-step-when-importing-recipients}
+## Passaggio 5: passaggio aggiuntivo durante l’importazione dei destinatari {#step-5---additional-step-when-importing-recipients}
 
 Il passaggio successivo della procedura guidata di importazione ti consente di selezionare o creare la cartella in cui verranno importati i dati, mappare automaticamente i destinatari importati con un elenco (nuovo o esistente) e abbonare i destinatari a un servizio.
 
@@ -327,7 +329,7 @@ Il passaggio successivo della procedura guidata di importazione ti consente di s
 
 Fai clic su **[!UICONTROL Next]** per convalidare questo passaggio e visualizzare il passaggio seguente.
 
-## Passaggio 6: avvia l’importazione {#step-6---launching-the-import}
+## Passaggio 6: avviare l’importazione {#step-6---launching-the-import}
 
 L’ultimo passaggio della procedura guidata consente di avviare l’importazione dei dati. A questo scopo, fai clic sul pulsante **[!UICONTROL Start]** .
 

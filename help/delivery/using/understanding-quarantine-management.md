@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2613'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
+
+![](../../assets/common.svg)
 
 ## Informazioni sulla quarantena {#about-quarantines}
 
@@ -255,7 +257,6 @@ Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i di
 * Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo errore **[!UICONTROL Unreachable]**, esecuzione di un nuovo tentativo.
 * Connessione persa durante una consegna: errore soft, motivo di errore **[!UICONTROL Refused]**, esecuzione di un nuovo tentativo.
 * Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
-
 Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**

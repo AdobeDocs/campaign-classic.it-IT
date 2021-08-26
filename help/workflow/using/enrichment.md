@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 1%
+source-wordcount: '1291'
+ht-degree: 2%
 
 ---
 
 # Arricchimento{#enrichment}
+
+![](../../assets/common.svg)
 
 L’attività **[!UICONTROL Enrichment]** ti consente di aggiungere informazioni a un elenco di profili e collegamenti a una tabella esistente (crea un nuovo join). È inoltre possibile definire criteri di riconciliazione con profili nel database.
 
@@ -50,15 +52,15 @@ Esistono quattro tipi di collegamenti:
 
 I casi d’uso che descrivono in dettaglio il funzionamento delle attività Enrichment nel loro contesto sono disponibili anche in queste sezioni:
 
-* [Arricchimento delle e-mail con campi data personalizzati](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Arricchimento dei dati](../../workflow/using/enriching-data.md)
-* [Creazione di un elenco di riepilogo](../../workflow/using/creating-a-summary-list.md)
+* [Arricchimento delle e-mail con campi data personalizzati](email-enrichment-with-custom-date-fields.md).
+* [Arricchimento dei dati](enriching-data.md)
+* [Creazione di un elenco di riepilogo](creating-a-summary-list.md)
 
 ## Aggiunta di informazioni {#adding-information}
 
 Utilizza l’attività **[!UICONTROL Enrichment]** per aggiungere colonne a una tabella di lavoro: questa attività può essere utilizzata come complemento a un’attività di query.
 
-La configurazione di colonne aggiuntive è descritta in [Aggiunta di dati](../../workflow/using/query.md#adding-data).
+La configurazione di colonne aggiuntive è descritta in [Aggiunta di dati](query.md#adding-data).
 
 Il campo **[!UICONTROL Primary set]** ti consente di selezionare la transizione in entrata: i dati della tabella di lavoro di questa attività saranno arricchiti.
 
@@ -151,13 +153,13 @@ Se sono specificate più condizioni di join, è necessario verificarle TUTTE in 
 
 L’attività di arricchimento ti consente di aggiungere offerte o collegamenti alle offerte per i destinatari della consegna.
 
-Per ulteriori informazioni sull&#39;attività di arricchimento, consulta questa sezione [sezione](../../workflow/using/enrichment.md).
+Per ulteriori informazioni sull&#39;attività di arricchimento, consulta questa sezione [sezione](enrichment.md).
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
 ![](assets/int_enrichment_offer1.png)
 
-Dopo aver configurato la query (consulta questa [sezione](../../workflow/using/query.md)):
+Dopo aver configurato la query (consulta questa [sezione](query.md)):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
@@ -176,7 +178,7 @@ Dopo aver configurato la query (consulta questa [sezione](../../workflow/using/q
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](../../workflow/using/cross-channel-deliveries.md).
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
 
    Il numero di proposte disponibili per l’anteprima dipende dalla configurazione effettuata nell’attività di arricchimento, anziché da qualsiasi configurazione possibile eseguita direttamente nella consegna.
 
@@ -198,13 +200,13 @@ Per eseguire questa operazione:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](../../workflow/using/cross-channel-deliveries.md).
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
    >Il numero di proposte disponibili per l’anteprima dipende dalla configurazione eseguita nella consegna.
 
-## Memorizzazione delle classificazioni e dei pesi delle offerte {#storing-offer-rankings-and-weights}
+## Memorizzazione di ranking e pesi delle offerte {#storing-offer-rankings-and-weights}
 
 Per impostazione predefinita, quando un&#39;attività **Arricchimento** viene utilizzata per fornire offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
 
@@ -212,7 +214,7 @@ L’attività **[!UICONTROL Offer engine]** memorizza tali informazioni per impo
 
 Tuttavia, è possibile memorizzare queste informazioni come segue:
 
-1. Crea una chiamata al motore di offerta in un’attività di arricchimento inserita dopo una query e prima di un’attività di consegna. Fare riferimento a questa sezione [sezione](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Crea una chiamata al motore di offerta in un’attività di arricchimento inserita dopo una query e prima di un’attività di consegna.
 1. Nella finestra principale dell’attività, seleziona **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)

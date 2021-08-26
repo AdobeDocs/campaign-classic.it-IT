@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -15,13 +15,15 @@ ht-degree: 2%
 
 # Utilizzo di aggregati{#using-aggregates}
 
+![](../../assets/common.svg)
+
 Questo caso d’uso descrive come identificare automaticamente gli ultimi destinatari aggiunti al database.
 
 Utilizzando il processo seguente, la data di creazione dei destinatari nel database viene confrontata con l’ultima data nota in cui un destinatario è stato creato utilizzando un aggregato. Verranno selezionati anche tutti i destinatari creati lo stesso giorno.
 
 Per eseguire un filtro di tipo **Data di creazione = max (Data di creazione)** sui destinatari, è necessario eseguire un flusso di lavoro per seguire questi passaggi:
 
-1. Recupera i destinatari del database utilizzando una query di base. Per ulteriori informazioni su questo passaggio, consulta [Creazione di una query](../../workflow/using/query.md#creating-a-query).
+1. Recupera i destinatari del database utilizzando una query di base. Per ulteriori informazioni su questo passaggio, consulta [Creazione di una query](query.md#creating-a-query).
 1. Calcola l’ultima data nota in cui è stato creato un destinatario utilizzando il risultato generato dalla funzione di aggregazione **max (Data di creazione)**.
 1. Collega ogni destinatario alla funzione di aggregazione e genera lo stesso schema.
 1. Filtrare i destinatari utilizzando l’aggregato tramite lo schema modificato.

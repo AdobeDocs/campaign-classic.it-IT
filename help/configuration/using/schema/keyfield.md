@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%
@@ -15,7 +15,9 @@ ht-degree: 7%
 
 # elemento chiave {#keyfield--element}
 
-## Modello dei contenuti {#content-model-9}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-9}
 
 keyfield:==EMPTY
 
@@ -28,7 +30,7 @@ keyfield:==EMPTY
 
 `<key>`  ,  `<dbindex />`
 
-## Figli {#children-9}
+## Bambini {#children-9}
 
 Nessuno
 
@@ -36,7 +38,7 @@ Nessuno
 
 Questo elemento definisce i campi da integrare in un indice o in una chiave.
 
-## Descrizione dell&#39;attributo {#attribute-description-9}
+## Descrizione attributo {#attribute-description-9}
 
 * **xlink (MNTOKEN)**: consente di fare riferimento automaticamente a chiavi esterne definite nel join per una tabella di relazione (collegamento N-N).
 * **xpath (MNTOKEN)**: definizione di un indice o di una chiave su un  `<attribute>`  elemento. Questo attributo riceve un percorso Xpath che definisce il percorso dell&#39;attributo dello schema che definisce la chiave o l&#39;indice.

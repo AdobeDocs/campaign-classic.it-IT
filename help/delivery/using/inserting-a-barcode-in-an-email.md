@@ -5,7 +5,7 @@ description: Inserimento di un codice a barre in un messaggio e-mail
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 
 
 # Inserimento di un codice a barre in un messaggio e-mail{#inserting-a-barcode-in-an-email}
+
+![](../../assets/common.svg)
 
 Il modulo di generazione dei codici a barre consente di creare diversi tipi di codici a barre conformi a numerosi standard comuni, inclusi i codici a barre 2D.
 

@@ -6,17 +6,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '532'
 ht-degree: 11%
 
 ---
 
 # Avviare Adobe Campaign{#launching-adobe-campaign}
 
-La console Client di Campaign è un client avanzato che consente di connettersi ai server delle applicazioni Campaign. Scopri come scaricare e configurare la console client in [questa pagina](../../installation/using/installing-the-client-console.md).
+![](../../assets/v7-only.svg)
 
+La console del client di Campaign è
 
 >[!CAUTION]
 >
@@ -30,7 +31,7 @@ La finestra di connessione della console client consente di selezionare o config
 
 ![](assets/acc-logon.png)
 
-## Connessione ad Adobe Campaign {#connecting-to-adobe-campaign}
+## Connettersi ad Adobe Campaign {#connecting-to-adobe-campaign}
 
 Puoi connetterti ad Adobe Campaign utilizzando il tuo Adobe ID. Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
 
@@ -53,7 +54,7 @@ Alcune scelte rapide da tastiera sono disponibili in **[!UICONTROL Sign in scree
 * Per avviare la connessione, puoi anche premere il tasto **Invio**.
 * Puoi usare il tasto **Esc** per reimpostare i campi **[!UICONTROL Login]** e **[!UICONTROL Password]** sugli ultimi valori di connessione riusciti.
 
-## Imposta connessioni {#setting-up-connections}
+## Configurare le connessioni {#setting-up-connections}
 
 Puoi accedere alle impostazioni di connessione al server tramite il collegamento situato sopra la zona di input.
 
@@ -87,7 +88,7 @@ Per disconnettersi da Adobe Campaign, utilizza la prima icona nella barra delle 
 >
 >È inoltre possibile chiudere l&#39;applicazione senza prima disconnettersi.
 
-## Scarica la tua versione Adobe Campaign {#getting-your-campaign-version}
+## Scarica la tua versione di Adobe Campaign {#getting-your-campaign-version}
 
 Il menu **[!UICONTROL Help > About...]** ti consente di accedere alle seguenti informazioni:
 
@@ -109,5 +110,5 @@ Ulteriori informazioni su [!DNL Gold Standard] [in questo articolo](../../rn/usi
 **Argomenti correlati**:
 
 * [Guida e opzioni di supporto per Adobe Campaign](../../support.md)
-* [Distribuzione di software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Distribuzione di software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
 * [Sessioni Adobe Experience Cloud Support ed Expert](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)

@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
 
 # Query{#query}
 
+![](../../assets/common.svg)
+
 ## Creazione di una query {#creating-a-query}
 
 Una query ti consente di selezionare un target in base ai criteri. Puoi associare un codice di segmento al risultato della query e inserire dati aggiuntivi al risultato.
-Per ulteriori informazioni sugli esempi di query, consulta questa [sezione](../../workflow/using/querying-recipient-table.md).
+Per ulteriori informazioni sugli esempi di query, consulta questa [sezione](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ Il collegamento **[!UICONTROL Edit query...]** ti consente di definire il tipo d
 
    La dimensione di filtro consente di raccogliere questi elementi, ad esempio informazioni relative alla persona oggetto del targeting (contratti, regolamenti completi e finali, ecc.).
 
-   Per ulteriori informazioni, consulta [Dimensioni di targeting e filtro](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+   Per ulteriori informazioni, consulta [Dimensioni di targeting e filtro](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ Il collegamento **[!UICONTROL Edit query...]** ti consente di definire il tipo d
 
 1. Se hai selezionato **[!UICONTROL Filtering conditions]** al passaggio 1 o utilizzando l&#39;opzione **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** , dovrai aggiungere manualmente i criteri di filtro in un secondo momento.
 
-   Puoi anche aggiungere condizioni di raggruppamento dei dati selezionando la casella corrispondente. A questo scopo, la dimensione di filtro deve essere diversa dalla dimensione di targeting della query. Per ulteriori informazioni sul raggruppamento, consulta questa sezione [a1/>.](../../workflow/using/querying-using-grouping-management.md)
+   Puoi anche aggiungere condizioni di raggruppamento dei dati selezionando la casella corrispondente. A questo scopo, la dimensione di filtro deve essere diversa dalla dimensione di targeting della query. Per ulteriori informazioni sul raggruppamento, consulta questa sezione [a1/>.](querying-using-grouping-management.md)
 
    È inoltre possibile aggiungere altri criteri utilizzando il generatore di espressioni e combinarli con le opzioni logiche AND, OR ed EXCEPT. Puoi quindi visualizzare in anteprima la **[!UICONTROL Corresponding SQL query...]** per la combinazione di criteri. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -73,7 +75,7 @@ Inizia selezionando il tipo di dati da aggiungere:
 ![](assets/wf_add_data_1st_option.png)
 
 * Seleziona **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database Adobe Campaign.
-* Selezionare **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se hai acquistato l’opzione **Federated Data Access** . Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+* Selezionare **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se hai acquistato l’opzione **Federated Data Access** . Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database--fda-.md).
 * Seleziona l’opzione **[!UICONTROL An offer proposition]** per aggiungere un set di colonne che ti consenta di memorizzare la proposta migliore generata dal motore di offerta. Questa opzione è disponibile solo se hai acquistato il modulo **Interaction** .
 
 Se sulla piattaforma non è installato alcun modulo opzionale, questa fase non viene visualizzata. Verrà portato direttamente al prossimo stadio.
@@ -90,10 +92,10 @@ Per aggiungere dati dal database Adobe Campaign:
 
    Puoi aggiungere:
 
-   * Campo calcolato in base ai dati provenienti dalla popolazione target o da un aggregato (numero di acquisti in sospeso nell’ultimo mese, importo medio di una ricevuta, ecc.). Ad esempio, vai a [Selezione dati](../../workflow/using/targeting-data.md#selecting-data).
+   * Campo calcolato in base ai dati provenienti dalla popolazione target o da un aggregato (numero di acquisti in sospeso nell’ultimo mese, importo medio di una ricevuta, ecc.). Ad esempio, vai a [Selezione dati](targeting-data.md#selecting-data).
    * Nuovo campo creato utilizzando il pulsante **[!UICONTROL Add]** a destra dell’elenco delle colonne di output.
 
-      Puoi anche aggiungere una raccolta di informazioni, ad esempio un elenco di contratti, le ultime 5 consegne, ecc. Le raccolte coincidono con i campi che possono avere più valori per lo stesso profilo (relazione 1-N). Per ulteriori informazioni, consulta [Modifica di dati aggiuntivi](../../workflow/using/targeting-data.md#editing-additional-data).
+      Puoi anche aggiungere una raccolta di informazioni, ad esempio un elenco di contratti, le ultime 5 consegne, ecc. Le raccolte coincidono con i campi che possono avere più valori per lo stesso profilo (relazione 1-N). Per ulteriori informazioni, consulta [Modifica di dati aggiuntivi](targeting-data.md#editing-additional-data).
 
 Per aggiungere una raccolta di informazioni collegate a una popolazione target:
 
@@ -123,13 +125,13 @@ Per aggiungere una raccolta di informazioni collegate a una popolazione target:
 
 1. Se hai selezionato l’opzione **[!UICONTROL Limit the line count]** , definisci l’ordine in cui i dati raccolti devono essere filtrati. Una volta che il numero di righe raccolte è superiore al numero di righe specificato per mantenere, l&#39;ordine di filtro consente di specificare quali righe mantenere.
 
-## Esempio: Esecuzione del targeting su attributi di destinatari semplici {#example--targeting-on-simple-recipient-attributes}
+## Esempio: Targeting su attributi di destinatari semplici {#example--targeting-on-simple-recipient-attributes}
 
 Nell&#39;esempio seguente, la query cerca di identificare gli uomini di età compresa tra i 18 e i 30 anni che vivono in Francia. Questa query verrà utilizzata in un flusso di lavoro che mira a renderli ad esempio un’offerta esclusiva.
 
 >[!NOTE]
 >
->Ulteriori esempi di query sono presentati in [questa sezione](../../workflow/using/querying-recipient-table.md).
+>Ulteriori esempi di query sono presentati in [questa sezione](querying-recipient-table.md).
 
 1. Denomina la query e seleziona il collegamento **[!UICONTROL Edit query...]**.
 1. Seleziona **[!UICONTROL Filtering conditions]** nell’elenco dei tipi di filtro disponibili.
@@ -184,7 +186,11 @@ La sezione seguente fornisce best practice per ottimizzare le query in esecuzion
 
    Assicurati di sapere quale sarà il piano di esecuzione della query. Evita l’esecuzione di analisi complete delle tabelle, in particolare per query in tempo reale o query quasi in tempo reale eseguite ogni minuto.
 
-Per ulteriori informazioni, consulta le sezioni[Best practice relative al modello dati](https://helpx.adobe.com/it/campaign/kb/acc-data-model-best-practices.html) e [Mappatura database](../../configuration/using/database-mapping.md) .
+   Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funzioni {#functions}
 
@@ -193,7 +199,7 @@ Per ulteriori informazioni, consulta le sezioni[Best practice relative al modell
 
    Per ulteriori informazioni sulle funzioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-### Dimensioni filtro {#filtering-dimensions}
+### Filtrare le dimensioni {#filtering-dimensions}
 
 Utilizza la dimensione di filtro della query invece di utilizzare l’operatore &quot;esiste come&quot;.
 
@@ -211,7 +217,7 @@ L&#39;equivalente della dimensione filtro in SQL è il join interno:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Per ulteriori informazioni sul filtro delle dimensioni, consulta [questa sezione](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Per ulteriori informazioni sul filtro delle dimensioni, consulta [questa sezione](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Architettura {#architecture}
 
@@ -230,4 +236,4 @@ Per ulteriori informazioni sul filtro delle dimensioni, consulta [questa sezione
 
 * Crea configurazioni corrispondenti ai volumi di destinazione. I grandi volumi richiedono configurazioni specifiche. Una configurazione che funzionava per 100.000 destinatari potrebbe non funzionare per 10.000.000 destinatari.
 
-   Considera come il sistema si svilupperà quando sarà attivo. Solo perché qualcosa funziona su piccola scala non significa che sarà adatto con volumi maggiori. Le prove devono essere effettuate con volumi simili al volume in produzione. È inoltre necessario valutare l’effetto delle modifiche dei volumi (numero di chiamate, dimensione del database) nelle ore di picco, nei giorni di picco e durante tutta la durata del progetto.
+   Considera come il sistema si svilupperà quando sarà attivo. Solo perché qualcosa funziona su piccola scala non significa che sarà adatto con volumi maggiori. Le prove devono essere effettuate con volumi simili al volume in produzione. È inoltre necessario valutare l’effetto delle modifiche dei volumi (numero di chiamate, dimensione del database) nelle ore di picco, nei giorni di picco e durante la durata del progetto.

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Offerte su un canale in entrata{#offers-on-an-inbound-channel}
 
-## Presentare un&#39;offerta a un visitatore anonimo {#presenting-an-offer-to-an-anonymous-visitor}
+![](../../assets/v7-only.svg)
+
+## Presentare un’offerta a un visitatore anonimo {#presenting-an-offer-to-an-anonymous-visitor}
 
 Il sito Neobank vuole presentare un&#39;offerta sul proprio sito web rivolta ai visitatori non identificati che navigano nella pagina.
 
@@ -127,7 +129,7 @@ Verrà visualizzata una struttura ad albero contenente il nuovo ambiente:
 1. Vai alla scheda **[!UICONTROL Eligibility]** e applica lo stesso peso della prima offerta.
 1. Esegui il ciclo di approvazione per ogni offerta al fine di renderle disponibili nell’ambiente online, così come i relativi spazi di offerta approvati.
 
-### Configura lo spazio di offerta web sul sito web {#configure-the-web-offer-space-on-the-website}
+### Configurare lo spazio di offerta web sul sito web {#configure-the-web-offer-space-on-the-website}
 
 Per rendere visibili le offerte appena configurate sul sito web, inserisci un codice JavaScript nella pagina HTML del sito per richiamare il motore di interazione (per ulteriori informazioni, consulta [Informazioni sui canali in entrata](../../interaction/using/about-inbound-channels.md)).
 
@@ -361,7 +363,7 @@ Vogliamo creare due offerte personalizzate per ogni categoria, ovvero quattro of
 1. Vai alla scheda **[!UICONTROL Eligibility]** e applica lo stesso peso applicato alla prima offerta in questa categoria in modo che le offerte vengano visualizzate successivamente sul sito web.
 1. Esegui il ciclo di approvazione per ogni offerta per iniziare ad aggiornarli. Durante l’approvazione dei contenuti, attiva gli spazi di offerta **Partner** o **Migliore offerta**.
 
-### Configurazione di spazi di offerta sulla pagina web {#configuring-offer-spaces-on-the-web-page}
+### Configurazione degli spazi di offerta nella pagina web {#configuring-offer-spaces-on-the-web-page}
 
 Il sito web della società Neobank ha tre spazi per le offerte: due per le offerte relative alle banche dalla categoria **Migliore offerta** e una per le offerte dalla categoria **Partner**.
 

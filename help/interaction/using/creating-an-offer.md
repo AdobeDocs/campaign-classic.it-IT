@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Creazione di un’offerta{#creating-an-offer}
+
+![](../../assets/v7-only.svg)
 
 ## Creazione dell’offerta {#creating-the-offer}
 
@@ -109,7 +111,7 @@ Per creare un peso in un’offerta, esegui i seguenti passaggi:
    >
    >Se un target è idoneo per più pesi per un’offerta selezionata, il motore mantiene il peso migliore (massimo). Quando si richiama il motore di offerta, un’offerta viene selezionata al massimo una volta per contatto.
 
-### Riepilogo delle regole di idoneità dell&#39;offerta {#a-summary-of-offer-eligibility-rules}
+### Riepilogo delle regole di idoneità delle offerte {#a-summary-of-offer-eligibility-rules}
 
 Al termine della configurazione, un riepilogo delle regole di idoneità sarà disponibile sul dashboard delle offerte.
 
@@ -181,6 +183,6 @@ Puoi creare ipotesi sulle proposte di offerta. Ciò consente di determinare l’
 
 Le ipotesi eseguite su una proposta di offerta sono riportate nella relativa scheda **[!UICONTROL Measure]** .
 
-La creazione di ipotesi è descritta in [questa pagina](../../campaign/using/about-response-manager.md).
+La creazione di ipotesi è descritta in [questa pagina](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

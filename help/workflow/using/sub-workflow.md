@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Flusso di lavoro secondario{#sub-workflow}
 
+![](../../assets/common.svg)
+
 L’attività **[!UICONTROL Sub-workflow]** ti consente di attivare l’esecuzione di un altro flusso di lavoro e di recuperare il risultato. Questa attività ti consente di utilizzare flussi di lavoro complessi utilizzando un’interfaccia semplificata.
 
 Puoi chiamare più flussi di lavoro secondari in un unico flusso di lavoro. I flussi di lavoro secondari vengono eseguiti in modo sincrono.
 
-Nell’esempio seguente, un flusso di lavoro primario chiama un flusso di lavoro secondario utilizzando i salti. Per ulteriori informazioni sugli oggetti grafici di tipo Jump, consulta [questa sezione](../../workflow/using/jump--start-point-and-end-point-.md).
+Nell’esempio seguente, un flusso di lavoro primario chiama un flusso di lavoro secondario utilizzando i salti. Per ulteriori informazioni sugli oggetti grafici di tipo Jump, consulta [questa sezione](jump--start-point-and-end-point-.md).
 
 1. Crea un flusso di lavoro da utilizzare come flusso di lavoro secondario in un altro flusso di lavoro.
 1. Inserisci un’attività **[!UICONTROL Jump (end point)]** con priorità 1 all’inizio del flusso di lavoro. Se hai più salti di tipo &quot;end point&quot;, Adobe Campaign utilizza il salto &quot;end point&quot; con il numero più basso.
@@ -59,7 +61,7 @@ Una volta eseguito, il flusso di lavoro chiamato come flusso di lavoro secondari
 >
 >Se si verifica un errore nel flusso di lavoro secondario, il flusso di lavoro principale viene messo in pausa e viene creata una copia del flusso di lavoro secondario.
 
-## Parametri di input (facoltativo) {#input-parameters--optional-}
+## Parametri di ingresso (facoltativo) {#input-parameters--optional-}
 
 * tableName
 * schema

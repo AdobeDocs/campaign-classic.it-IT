@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 5%
@@ -15,7 +15,9 @@ ht-degree: 5%
 
 # elemento value {#value--element}
 
-## Modello dei contenuti {#content-model-16}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-16}
 
 value:==help
 
@@ -33,7 +35,7 @@ value:==help
 
 `<enumeration>`
 
-## Figli {#children-16}
+## Bambini {#children-16}
 
 `<help>`
 
@@ -41,7 +43,7 @@ value:==help
 
 Questo elemento ti consente di definire i valori memorizzati in un’enumerazione.
 
-## Descrizione dell&#39;attributo {#attribute-description-16}
+## Descrizione attributo {#attribute-description-16}
 
 * **applyIf (string)**: questo attributo consente di rendere facoltativo un valore di enumerazione. Riceve un&#39;espressione XTK.
 * **desc (stringa)**: descrizione del valore di enumerazione.

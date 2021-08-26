@@ -2,18 +2,20 @@
 product: campaign
 title: Guida introduttiva agli operatori Campaign
 description: Scopri come creare e gestire gli utenti delle campagne
-feature: Gestione degli accessi
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1146'
 ht-degree: 2%
 
 ---
 
 # Creare e gestire gli operatori {#operators}
+
+![](../../assets/common.svg)
 
 ## Guida introduttiva agli operatori Campaign  {#about-operators}
 
@@ -45,7 +47,7 @@ Per creare un nuovo operatore e concedere autorizzazioni, segui i passaggi segue
 
 1. Specifica la **[!UICONTROL Identification parameters]** dell’utente: accesso, password e nome. L’operatore utilizzerà l’accesso e la password per accedere ad Adobe Campaign. Una volta effettuato l’accesso, l’utente può modificare la password tramite il menu **[!UICONTROL Tools > Change password]** . L’e-mail dell’operatore è essenziale in quanto consente all’operatore di ricevere notifiche, ad esempio durante l’elaborazione delle approvazioni.
 
-   Questa sezione consente anche di collegare un operatore a un’entità organizzativa. Per ulteriori informazioni, consulta [questa pagina](../../campaign/using/about-distributed-marketing.md).
+   Questa sezione consente anche di collegare un operatore a un’entità organizzativa. Per ulteriori informazioni, consulta [questa pagina](../../distributed/using/about-distributed-marketing.md).
 
 1. Seleziona le autorizzazioni concesse all’operatore nella sezione **[!UICONTROL Operator access rights]** .
 

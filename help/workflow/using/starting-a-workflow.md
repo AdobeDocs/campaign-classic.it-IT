@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Avvio di un flusso di lavoro {#starting-a-workflow}
 
-Un flusso di lavoro viene sempre avviato manualmente. Quando viene avviato, può tuttavia rimanere inattivo a seconda delle informazioni specificate tramite un programmatore (consulta [Scheduler](../../workflow/using/scheduler.md)) o la pianificazione delle attività.
+![](../../assets/common.svg)
+
+Un flusso di lavoro viene sempre avviato manualmente. Quando viene avviato, può tuttavia rimanere inattivo a seconda delle informazioni specificate tramite un programmatore (consulta [Scheduler](scheduler.md)) o la pianificazione delle attività.
 
 Azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono processi **asincroni**: l&#39;ordine viene registrato e avrà effetto non appena il server sarà disponibile ad applicarlo.
 
@@ -25,7 +27,7 @@ Di seguito è riportato un elenco dettagliato delle opzioni disponibili nel menu
 
 >[!IMPORTANT]
 >
->Tieni presente che quando un operatore esegue un’azione su un flusso di lavoro (avvio, arresto, pausa, ecc.), l’azione non viene eseguita immediatamente, ma inserita in una coda per essere elaborata dal modulo [flusso di lavoro](../../workflow/using/architecture.md).
+>Tieni presente che quando un operatore esegue un’azione su un flusso di lavoro (avvio, arresto, pausa, ecc.), l’azione non viene eseguita immediatamente, ma inserita in una coda per essere elaborata dal modulo [flusso di lavoro](architecture.md).
 
 ## Barra delle azioni {#actions-toolbar}
 
@@ -57,7 +59,7 @@ I pulsanti della barra degli strumenti sono descritti in questa sezione [sezione
 
 * **[!UICONTROL Purge history]**
 
-   Questa azione ti consente di eliminare la cronologia del flusso di lavoro. Per ulteriori informazioni, consulta [Rimozione dei registri](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Questa azione ti consente di eliminare la cronologia del flusso di lavoro. Per ulteriori informazioni, consulta [Rimozione dei registri](monitoring-workflow-execution.md#purging-the-logs).
 
 * **[!UICONTROL Start in simulation mode]**
 
@@ -91,7 +93,7 @@ Nel menu di scelta rapida sono disponibili le seguenti opzioni:
 
 **[!UICONTROL Open]**: questa opzione ti consente di accedere alle proprietà dell’attività.
 
-**[!UICONTROL Display logs:]** questa opzione ti consente di visualizzare il registro di esecuzione dell’attività per l’attività selezionata. Fare riferimento a [Visualizzazione dei registri](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Display logs:]** questa opzione ti consente di visualizzare il registro di esecuzione dell’attività per l’attività selezionata. Fare riferimento a [Visualizzazione dei registri](monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Execute pending task(s) now:]** questa azione consente di iniziare le attività in sospeso il prima possibile.
 
@@ -101,7 +103,7 @@ Nel menu di scelta rapida sono disponibili le seguenti opzioni:
 
 **[!UICONTROL Copy as bitmap:]** questa opzione ti consente di scattare una schermata di tutte le attività.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** queste opzioni sono disponibili anche nella  **[!UICONTROL Advanced]** scheda delle proprietà dell’attività. Sono descritti in [Execution](../../workflow/using/advanced-parameters.md#execution).
+**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** queste opzioni sono disponibili anche nella  **[!UICONTROL Advanced]** scheda delle proprietà dell’attività. Sono descritti in [Execution](advanced-parameters.md#execution).
 
 **[!UICONTROL Save / Cancel:]** consente di salvare o annullare le modifiche apportate a un flusso di lavoro.
 

@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
@@ -14,6 +14,8 @@ ht-degree: 14%
 ---
 
 # Informazioni sugli errori di consegna{#understanding-delivery-failures}
+
+![](../../assets/common.svg)
 
 ## Informazioni sugli errori di consegna {#about-delivery-failures}
 
@@ -164,13 +166,13 @@ I possibili motivi di un errore di consegna sono:
   <tr> 
    <td> Non raggiungibile </td> 
    <td> Morbido/Duro </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> Errore nella catena di consegna dei messaggi. Potrebbe essere un problema sul relay SMTP, un dominio temporaneamente irraggiungibile, ecc. In base all'errore, l'indirizzo verrà ritentato finché il contatore degli errori non raggiunge 5, o verrà inviato direttamente alle quarantene.<br /> </td> 
   </tr> 
   <tr> 
    <td> Utente sconosciuto </td> 
    <td> Duro </td> 
-   <td> 3 </td> 
+   <td> 1 </td> 
    <td> L'indirizzo non esiste. Per questo profilo non verranno tentate ulteriori consegne.<br /> </td> 
   </tr> 
  </tbody> 
@@ -228,12 +230,10 @@ Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando
 >Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento a [MTA avanzato](sending-with-enhanced-mta.md):
 >
 >* Le qualifiche di mancato recapito nella tabella **[!UICONTROL Delivery log qualification]** non vengono più utilizzate per i messaggi di errore di consegna **sincrono**. L’MTA avanzato determina il tipo di messaggio non recapitato e la relativa qualifica e invia nuovamente tali informazioni a Campaign.
-   >
-   >
-* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
-   >
-   >
-* Per le istanze che utilizzano l&#39;MTA avanzato **senza Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall&#39;MTA avanzato, utilizzando lo stesso indirizzo e-mail delle e-mail non recapitate asincrone.
+>
+>* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
+>
+>* Per le istanze che utilizzano l&#39;MTA avanzato **senza Webhooks/EFS**, le regole **[!UICONTROL Inbound email]** verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall&#39;MTA avanzato, utilizzando lo stesso indirizzo e-mail delle e-mail non recapitate asincrone.
 
 
 Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, quando la consegna di un’e-mail non riesce, il server di consegna Adobe Campaign riceve un messaggio di errore dal server di messaggistica o dal server DNS remoto. L&#39;elenco degli errori è costituito da stringhe contenute nel messaggio restituito dal server remoto. I tipi e i motivi di errore vengono assegnati a ogni messaggio di errore.

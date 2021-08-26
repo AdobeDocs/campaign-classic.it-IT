@@ -5,7 +5,7 @@ description: Ulteriori informazioni sulle integrazioni con i flussi di lavoro de
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 
 
 # Integrazioni con le soluzioni Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
+
+![](../../assets/common.svg)
 
 Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Integrazione con Adobe Experience Cloud** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
 

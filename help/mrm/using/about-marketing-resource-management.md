@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Guida introduttiva alla gestione delle risorse di marketing{#about-marketing-resource-management}
+
+![](../../assets/v7-only.svg)
 
 Il modulo **Gestione delle risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa, fornendo una gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte.
 

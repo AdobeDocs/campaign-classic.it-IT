@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 10%
 
 ---
 
-# Configurare l&#39;accesso al Snowflake {#configure-access-to-snowflake}
+# Configurare l’accesso al Snowflake {#configure-access-to-snowflake}
+
+![](../../assets/v7-only.svg)
 
 Utilizza l’opzione Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Snowflake].
 
@@ -76,7 +78,7 @@ Per configurare [!DNL Snowflake] su CentOS, segui i passaggi seguenti:
 
 1. In Campaign, puoi quindi configurare il tuo account esterno [!DNL Snowflake]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#snowflake-external).
 
-## Account esterno Snowflake {#snowflake-external}
+## account esterno Snowflake {#snowflake-external}
 
 Devi creare un account esterno [!DNL Snowflake] per collegare l’istanza Campaign al database esterno [!DNL Snowflake].
 

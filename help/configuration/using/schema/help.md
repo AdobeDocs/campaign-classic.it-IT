@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 17%
@@ -15,7 +15,9 @@ ht-degree: 17%
 
 # elemento di aiuto {#help--element}
 
-## Modello dei contenuti {#content-model-6}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-6}
 
 aiuto:==EMPTY
 
@@ -27,7 +29,7 @@ Nessuno
 
 `<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
 
-## Figli {#children-6}
+## Bambini {#children-6}
 
 Nessuno
 
@@ -35,7 +37,7 @@ Nessuno
 
 Questo elemento consente di descrivere un elemento `<element>` o `<attribute>`   elemento. Può contenere solo testo ed è memorizzato in XML nel database.
 
-## Descrizione dell&#39;attributo {#attribute-description-6}
+## Descrizione attributo {#attribute-description-6}
 
 Questo elemento non ha attributi.
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1688'
 ht-degree: 3%
 
 ---
 
 # Flussi di lavoro tecnici{#about-technical-workflows}
+
+![](../../assets/common.svg)
 
 ## Informazioni sui flussi di lavoro tecnici {#overview}
 
@@ -25,7 +27,7 @@ Per impostazione predefinita, i flussi di lavoro tecnici sono disponibili in una
 >
 >I flussi di lavoro tecnici relativi al modulo Centro messaggi sono disponibili per impostazione predefinita nel nodo **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** .
 
-Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consulta la sezione [dedicata](../../workflow/using/monitoring-technical-workflows.md).
+Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consulta la sezione [dedicata](monitoring-technical-workflows.md).
 
 ## Elenco dei flussi di lavoro tecnici {#list-technical-workflows}
 
@@ -33,7 +35,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 |------|--------|-----------|
 | **Pulizia alias**  (aliasCleansing) | Consegna | Questo flusso di lavoro standardizza i valori di enumerazione. Viene attivato ogni giorno alle 3 per impostazione predefinita. |
 | **Fatturazione**  (fatturazione) | Consegna | Questo flusso di lavoro invia il rapporto sull’attività del sistema all’operatore di &quot;fatturazione&quot; tramite e-mail. Viene attivato il 25 di ogni mese sull’istanza Marketing. |
-| **Calcolo delle statistiche di Twitter**  (statsTwitter) | Social network (Social Marketing) | Questo flusso di lavoro calcola le statistiche collegate ai retweet e alle visite in Twitter. |
+| **Calcolo delle statistiche di Twitter**  (statsTwitter) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro calcola le statistiche collegate ai retweet e alle visite in Twitter. |
 | **Processi campagna**  (operationMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro gestisce i lavori per le campagne di marketing (targeting di lanci, estrazione file, ecc.). Crea inoltre flussi di lavoro relativi a campagne ricorrenti e periodiche. |
 | **Raccogli i dati per il servizio HeatMap**  (collectDataHeatMapService) | Installato per impostazione predefinita | Questo flusso di lavoro recupera i dati richiesti dal servizio HeatMap . |
 | **Raccogli richieste di privacy**  (collectPrivacyRequests) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di accesso a dati personali. |
@@ -52,7 +54,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Importa tipi di pubblico da Adobe Experience Cloud**  (importSharedAudience) | Integrazione con Adobe Experience Cloud | Questo flusso di lavoro ti consente di importare tipi di pubblico/segmenti da diverse soluzioni Adobe Experience Cloud in Adobe Campaign. |
 | **Processi sulle consegne nelle campagne**  (deliveryMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro attiva le consegne approvate e avvia la post-elaborazione del provider di servizi per una consegna esterna. Invia inoltre notifiche e promemoria di approvazione. |
 | **Processi su fornitori di servizi**  (fornitoreMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro avvia l&#39;elaborazione del provider (e-mail al router e post-elaborazione) una volta che le consegne sono state approvate. |
-| **Aggiornamento token di accesso LINE V2**  (updateLineV2AccessToken) | Canale LINE | Questo flusso di lavoro aggiorna il token di accesso a LINE V2. |
+| **Aggiornamento token di accesso LINE V2**  (updateLineV2AccessToken) | Canale LINE - Solo Campaign v7 | Questo flusso di lavoro aggiorna il token di accesso a LINE V2. |
 | **Migrazione da MID a LineUserID**  (MIDToUserIDMigration) | Canale LINE | Questo flusso di lavoro genera l’ID degli utenti LINE V2 per la migrazione da LINE V1 a LINE V2. |
 | **Notifiche di risorse di marketing**  (assetMgt) | Risorse di marketing (MRM) | Questo flusso di lavoro gestisce le notifiche collegate all’approvazione e alla pubblicazione delle risorse di marketing. |
 | **Centro messaggi  &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Controllo dei messaggi transazionali (Centro messaggi - Controllo) | Questo flusso di lavoro: <ul><li>recupera l’elenco degli eventi elaborati dalle operazioni.</li><li>si sincronizza con la tabella NmsBroadLogMsg per recuperare i requisiti dei messaggi di consegna.</li><li>recupera i registri di consegna degli eventi non appena la sincronizzazione con la tabella NmsBroadLogMsg è stata completata.</li><li>si sincronizza con la tabella NmsTrackingUrl al fine di recuperare il tracciamento per gli URL di consegna.</li><li>recupera gli URL di tracciamento degli eventi non appena la sincronizzazione con la tabella NmsTrackingUrl è stata completata.</li><li>consente di recuperare tutti gli indirizzi e-mail messi in quarantena ogni tre ore dopo l’invio di una consegna.</li></ul> |
@@ -61,7 +63,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Mid-sourcing (log di consegna)**  (defaultMidSourcingLog) | Trasferisci a mid-sourcing | Questo flusso di lavoro raccoglie i registri di consegna sul server di mid-sourcing. Viene attivato ogni ora per impostazione predefinita. |
 | **Gestione delle rinunce NMAC**  (mobileAppOptOutMgt) | Canale app mobile | Questo flusso di lavoro aggiorna le sottoscrizioni di notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
 | **Notifica di offerta**  (offerMgt) | Consegna | Questo flusso di lavoro distribuisce le offerte approvate nell’ambiente online, nonché in ogni categoria contenuta nel catalogo delle offerte. |
-| **Pulizia dei flussi di lavoro in pausa**  (cleanupPausedWorkflows) | Consegna | Questo flusso di lavoro analizza i flussi di lavoro in pausa con la gravità impostata su normale e attiva avvisi e notifiche quando sono stati messi in pausa per troppo tempo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro in pausa](../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows). |
+| **Pulizia dei flussi di lavoro in pausa**  (cleanupPausedWorkflows) | Consegna | Questo flusso di lavoro analizza i flussi di lavoro in pausa con la gravità impostata su normale e attiva avvisi e notifiche quando sono stati messi in pausa per troppo tempo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro in pausa](monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Pulizia delle richieste di privacy**  (cleanupPrivacyRequests) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni. |
 | **Elaborazione di eventi batch**  (batchEventsProcessing) | Esecuzione di messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro consente di mettere gli eventi batch in una coda prima di associarli a un modello di messaggio. |
 | **Elaborazione di eventi**  in tempo reale (rtEventsProcessing) | Esecuzione di messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro consente di mettere gli eventi in tempo reale in una coda prima di associarli a un modello di messaggio. |
@@ -70,11 +72,10 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Aggregati per la generazione di rapporti**  (reportingAggregates) | Consegna | Questo flusso di lavoro aggiorna gli aggregati utilizzati nei rapporti. Viene attivato ogni giorno alle 2 per impostazione predefinita. |
 | **Invio di indicatori e attributi della campagna**  (webAnalyticsSendMetrics) | Connettori di Web Analytics | Questo flusso di lavoro consente di inviare gli indicatori delle campagne e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: Inviato (Inviato), Numero totale di aperture (iTotalRecipientOpen), Numero totale di destinatari che hanno fatto clic su (iTotalRecipientClick), Errori (iError), Opt-Out (opt-out) (iOptOut). |
 | **Stock: Ordini e avvisi**  (stockMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro avvia il calcolo delle scorte sulle linee dell&#39;ordine e gestisce le soglie degli avvisi di avviso. |
-| **Sincronizzazione delle ventole di Facebook**  (syncFacebookFans) | Social network (Social Marketing) | Questo flusso di lavoro importa le ventole Facebook in Adobe Campaign ogni giorno alle 7. |
-| **Sincronizzazione delle pagine**  Facebook (syncFacebook) | Social network (Social Marketing) | Questo flusso di lavoro sincronizza le pagine Facebook con Adobe Campaign ogni giorno alle 7. |
-| **Sincronizzazione delle pagine**  Twitter (syncTwitter) | Social network (Social Marketing) | Questo flusso di lavoro importa i follower di Twitter in Adobe Campaign ogni giorno alle 7. |
-| **Notifica attività**  (taskMgt) | Risorse di marketing (MRM) | Questo flusso di lavoro ti consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing. |
+| **Sincronizzazione delle ventole di Facebook**  (syncFacebookFans) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro importa le ventole Facebook in Adobe Campaign ogni giorno alle 7. |
+| **Sincronizzazione delle pagine**  Facebook (syncFacebook) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro sincronizza le pagine Facebook con Adobe Campaign ogni giorno alle 7. |
+| **Sincronizzazione delle pagine**  Twitter (syncTwitter) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro importa i follower di Twitter in Adobe Campaign ogni giorno alle 7. |
+| **Notifica attività**  (taskMgt) | Risorse di marketing (MRM) - Solo Campaign v7 | Questo flusso di lavoro ti consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing. |
 | **Tracking**  (tracciamento) | Consegna | Questo flusso di lavoro esegue il ripristino e il consolidamento delle informazioni di tracciamento. Assicura inoltre il ricalcolo delle statistiche di tracciamento e consegna, in particolare quelle utilizzate dai flussi di lavoro di archiviazione Message Center. Per impostazione predefinita viene attivato una volta all’ora. |
 | **Aggiorna lo stato**  dell&#39;evento (updateEventsStatus) | Esecuzione di messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro ti consente di assegnare uno stato a un evento. Gli stati dell’evento sono i seguenti:<ul><li>In sospeso: l’evento è in coda. Non è ancora stato associato alcun modello di messaggio.</li><li>Consegna in sospeso: l’evento è in coda, è stato associato un modello di messaggio ed è attualmente in fase di elaborazione da parte della consegna.</li><li>Inviato: questo stato viene copiato dai log di consegna. Significa che la consegna è stata inviata.</li><li>Ignorato dalla consegna: questo stato viene copiato dai log di consegna. Significa che la consegna è stata ignorata.</li><li>Errore di consegna: questo stato viene copiato dai log di consegna. Significa che la consegna non è riuscita.</li><li>Evento non trattato: impossibile associare l&#39;evento a un modello di messaggio. L’evento non verrà rielaborato.</li></ul> |
 | **Aggiornamento per il recapito messaggi**  (deliverabilityUpdate) | Consegna | Una volta installato il pacchetto di monitoraggio del recapito messaggi (Email Deliverability) , questo flusso di lavoro viene eseguito ogni notte e gestisce le regole di qualificazione delle e-mail non recapitate, nonché l’elenco dei domini e degli MX. Questo richiede che la porta HTTPS sia aperta sulla piattaforma |
-| **Aggiorna la rete di seed per Rendering della casella in entrata**  (updateRenderingSeeds) | Rendering della casella in entrata (IR) | Questo flusso di lavoro aggiorna gli indirizzi e-mail utilizzati per il rendering della casella in entrata e funziona solo se la porta HTTPS è aperta per deliverability.neolane.net. |

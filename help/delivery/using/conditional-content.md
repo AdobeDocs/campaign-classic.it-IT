@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # Contenuto condizionale{#conditional-content}
+
+![](../../assets/common.svg)
 
 Configurando i campi di contenuto condizionale, puoi creare una personalizzazione dinamica basata, ad esempio, sul profilo del destinatario. I blocchi di testo e/o le immagini vengono sostituiti quando viene soddisfatta una particolare condizione.
 
@@ -109,7 +111,7 @@ Nell’esempio seguente, imparerai a creare un’e-mail multilingue. Il contenut
 
 ## Video tutorial {#conditionnal-content-video}
 
-Scopri come aggiungere contenuto condizionale a una consegna, ad esempio una newsletter multilingue.
+Scopri come aggiungere contenuti condizionali a una consegna sull’esempio di una newsletter multilingue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 

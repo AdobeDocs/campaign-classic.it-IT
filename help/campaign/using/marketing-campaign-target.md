@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Selezionare il pubblico delle campagne {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 In una campagna di marketing, per ogni consegna, puoi definire:
 
@@ -47,7 +49,7 @@ Il target principale di una consegna può essere definito anche nel flusso di la
 >
 >Non devi aggiungere più di 28 flussi di lavoro in una campagna. Superato questo limite, nell’interfaccia non sono visibili flussi di lavoro aggiuntivi e possono generare errori.
 
-### Crea il flusso di lavoro {#creating-a-targeting-workflow}
+### Creare il flusso di lavoro {#creating-a-targeting-workflow}
 
 Il targeting può essere creato tramite una combinazione di condizioni di filtro in una sequenza grafica in un flusso di lavoro. Puoi creare popolazioni e sottopopolazioni che saranno oggetto di targeting in base alle tue esigenze. Per visualizzare l’editor del flusso di lavoro, fai clic sulla scheda **[!UICONTROL Targeting and workflows]** nel dashboard della campagna.
 
@@ -86,7 +88,7 @@ Puoi creare diversi flussi di lavoro di targeting per una singola campagna. Per 
 1. Seleziona il modello **[!UICONTROL New workflow]** e denomina questo flusso di lavoro.
 1. Fai clic su **[!UICONTROL OK]** per confermare la creazione del flusso di lavoro, quindi crea il diagramma per questo flusso di lavoro.
 
-### Esegui il flusso di lavoro {#executing-a-workflow}
+### Eseguire il flusso di lavoro {#executing-a-workflow}
 
 I flussi di lavoro di targeting possono essere avviati manualmente tramite il pulsante **[!UICONTROL Start]** nella barra degli strumenti, purché si disponga dei diritti appropriati.
 
@@ -173,7 +175,7 @@ Un gruppo di controllo è una popolazione che non riceverà la consegna; viene u
 
 Il gruppo di controllo può essere estratto dal target principale e/o provenire da un gruppo o query specifico.
 
-### Attiva il gruppo di controllo per una campagna {#activating-the-control-group-for-a-campaign}
+### Attivare il gruppo di controllo per una campagna {#activating-the-control-group-for-a-campaign}
 
 È possibile definire un gruppo di controllo a livello di campagna, nel qual caso il gruppo di controllo verrà applicato a ogni consegna della campagna interessata.
 
@@ -208,7 +210,7 @@ Per impostazione predefinita, la configurazione del gruppo di controllo definita
 
 La procedura di configurazione è presentata in [Estrazione del gruppo di controllo dalla destinazione principale](#extracting-the-control-group-from-the-main-target) e [Aggiunta di un gruppo di controllo](#adding-a-population).
 
-### Estrai il gruppo di controllo dalla destinazione principale {#extracting-the-control-group-from-the-main-target}
+### Estrarre il gruppo di controllo dal target principale {#extracting-the-control-group-from-the-main-target}
 
 Puoi estrarre i destinatari dal target principale della consegna. In questo caso, i destinatari verranno presi dal target delle azioni di consegna interessate da questa configurazione. Questa estrazione può essere casuale o essere il risultato dell’ordinamento dei destinatari.
 
@@ -225,7 +227,7 @@ Fai clic su **[!UICONTROL Next]** per definire l’ordinamento (se necessario) e
 
 Questa configurazione equivale a un’attività di condivisione nel flusso di lavoro, che consente di suddividere il target in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md) .
 
-### Utilizza una nuova popolazione come gruppo di controllo {#adding-a-population}
+### Utilizzare un nuovo gruppo come gruppo di controllo {#adding-a-population}
 
 È possibile definire una nuova popolazione da utilizzare come gruppo di controllo. Questa popolazione può provenire da un gruppo di destinatari o puoi crearla tramite una query specifica.
 

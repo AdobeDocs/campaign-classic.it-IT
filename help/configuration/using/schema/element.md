@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # elemento {#element--element}
 
-## Modello dei contenuti {#content-model-4}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-4}
 
 element:===(attribute | stringa di calcolo | dbindex | default | elemento | aiuto | join | chiave | sysFilter | tradottoPredefinito)
 
@@ -29,7 +31,7 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 
 `<element>`
 
-## Figli {#children-4}
+## Bambini {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -51,7 +53,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
 * Collegamento `<element>` : definisce un collegamento. Questi elementi devono includere l’attributo &quot;@type=link&quot;.
 * XML `<element>` : definisce un campo di tipo Testo &quot;mData&quot;. Questo elemento deve includere l&#39;attributo &quot;@type=xml&quot;.
 
-## Descrizione dell&#39;attributo {#attribute-description-4}
+## Descrizione attributo {#attribute-description-4}
 
 * **_operazione (stringa)**: definisce il tipo di scrittura nel database.
 

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 # Impostazione di un flusso di lavoro di importazione ricorrente {#setting-up-a-recurring-import}
 
+![](../../assets/common.svg)
+
 L’utilizzo di un modello di flusso di lavoro è una best practice per importare regolarmente file con la stessa struttura.
 
-Questo esempio mostra come impostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un sistema di gestione delle relazioni con i clienti nel database Adobe Campaign. Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, consulta questa [sezione](../../workflow/using/about-activities.md).
+Questo esempio mostra come impostare un flusso di lavoro che può essere riutilizzato per importare profili provenienti da un sistema di gestione delle relazioni con i clienti nel database Adobe Campaign. Per ulteriori informazioni su tutte le impostazioni possibili per ogni attività, consulta questa [sezione](about-activities.md).
 
 1. Crea un nuovo modello di flusso di lavoro da **[!UICONTROL Resources > Templates > Workflow templates]**.
 1. Aggiungi le seguenti attività:

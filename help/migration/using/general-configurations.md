@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2786'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
 
 # Configurazioni generali{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 Questa sezione descrive la configurazione da eseguire in Adobe Campaign v7 se stai eseguendo la migrazione da a v5.11 o a v6.02.
 
@@ -104,7 +106,7 @@ nlserver config -internalpassword
 >
 >La password **interna** deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier) e [questa sezione](../../platform/using/access-management.md).
 
-### Nuove funzioni nella versione v7 {#new-features-in-v7}
+### Nuove funzioni in v7 {#new-features-in-v7}
 
 * Gli utenti senza autorizzazioni non possono più connettersi ad Adobe Campaign. Le loro autorizzazioni devono essere aggiunte manualmente, ad esempio creando un&#39;autorizzazione denominata **connect**.
 
@@ -495,7 +497,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Contenuto dell&#39;offerta {#offer-content}
+### Contenuto dell’offerta {#offer-content}
 
 In v7, il contenuto dell’offerta è stato spostato. Nella versione 6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). In v7, il contenuto è ora nello schema delle offerte. Dopo l’aggiornamento, il contenuto non sarà quindi visibile nell’interfaccia di . Dopo l’aggiornamento, devi ricreare il contenuto dell’offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema di offerta.
 
@@ -667,7 +669,7 @@ In caso di problemi, ripubblica l&#39;applicazione web. Se il problema persiste,
 >[!NOTE]
 I passaggi per selezionare il motore di rendering sono gli stessi che per selezionare i rapporti. Consulta [Rapporti personalizzati](#personalized-reports).
 
-## Red Hat {#red-hat}
+## Cappello rosso {#red-hat}
 
 Se gli schemi predefiniti sono stati eliminati nelle versioni v6.02 o v5.11, potrebbe non essere più possibile modificare gli schemi dopo l’aggiornamento successivo. In questo caso, esegui il comando:
 

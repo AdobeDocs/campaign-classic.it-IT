@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Utilizzare i pacchetti di dati{#working-with-data-packages}
+
+![](../../assets/common.svg)
 
 ## Informazioni sui pacchetti di dati {#about-data-packages}
 
@@ -81,9 +83,9 @@ L’attributo **`operation`** con il valore &quot;none&quot; definisce un colleg
 
 Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. Assicurati semplicemente che la struttura del documento XML sia conforme allo schema dati &quot;xtk:navtree&quot;. La console Adobe Campaign dispone di un modulo di esportazione e importazione del pacchetto dati.
 
-## Esportare i pacchetti {#exporting-packages}
+## Pacchetti di esportazione {#exporting-packages}
 
-### Informazioni sull&#39;esportazione del pacchetto {#about-package-export}
+### Informazioni sull’esportazione dei pacchetti {#about-package-export}
 
 I pacchetti possono essere esportati in tre modi diversi:
 
@@ -247,7 +249,7 @@ Puoi quindi aggiungere entità alla definizione del pacchetto ed esportarla in u
 * [Configura la generazione delle definizioni dei pacchetti](#configuring-package-definitions-generation)
 * [Esportare pacchetti da una definizione di pacchetto](#exporting-packages-from-a-package-definition)
 
-### Aggiungi entità a una definizione di pacchetto {#adding-entities-to-a-package-definition}
+### Aggiungere entità a una definizione di pacchetto {#adding-entities-to-a-package-definition}
 
 Nella scheda **[!UICONTROL Content]** , fai clic sul pulsante **[!UICONTROL Add]** per selezionare le entità da esportare con il pacchetto. Le best practice per la selezione delle entità sono illustrate in [questa sezione](#exporting-a-set-of-objects-in-a-package) .
 
@@ -287,7 +289,7 @@ La generazione del pacchetto può essere configurata dalla scheda Definizione pa
    >
    >In tal caso, selezionando l’opzione **[!UICONTROL Include default values]** non sarà possibile unire le versioni, in quanto tutti gli attributi dell’istanza precedente verranno esportati con il pacchetto.
 
-### Esportare pacchetti dalla definizione di un pacchetto {#exporting-packages-from-a-package-definition}
+### Esportare pacchetti da una definizione di pacchetto {#exporting-packages-from-a-package-definition}
 
 Per esportare un pacchetto dalla definizione di un pacchetto, segui i passaggi seguenti:
 
@@ -297,7 +299,7 @@ Per esportare un pacchetto dalla definizione di un pacchetto, segui i passaggi s
 
    ![](assets/packagedefinition_packageexport.png)
 
-## Importa pacchetti {#importing-packages}
+## Pacchetti di importazione {#importing-packages}
 
 La procedura guidata di importazione del pacchetto è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Package import...]** della console client di Adobe Campaign.
 
@@ -317,7 +319,7 @@ Fai clic su **[!UICONTROL Next]** e **[!UICONTROL Start]** per avviare l’impor
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Installa un pacchetto integrato {#installing-a-standard-package}
+### Installare un pacchetto incorporato {#installing-a-standard-package}
 
 I pacchetti standard sono pacchetti incorporati, installati quando Adobe Campaign è configurato. A seconda delle autorizzazioni e del modello di distribuzione, è possibile importare nuovi pacchetti standard se si acquisiscono nuove opzioni o componenti aggiuntivi o se si esegue l’aggiornamento a una nuova offerta.
 
@@ -325,7 +327,7 @@ Fai riferimento al contratto di licenza per verificare quali pacchetti puoi inst
 
 Per ulteriori informazioni sui pacchetti incorporati, consulta [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
-## Best practice relative ai pacchetti dati {#data-package-best-practices}
+## Best practice per i pacchetti di dati {#data-package-best-practices}
 
 Questa sezione descrive come organizzare i pacchetti di dati in modo coerente per tutta la durata del progetto.
 

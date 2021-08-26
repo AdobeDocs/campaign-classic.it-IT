@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
 
 ---
 
-# Update data{#updating-data}
+# Attività Update data{#updating-data}
+
+![](../../assets/common.svg)
 
 I dati collegati al profilo di un destinatario possono essere aggiornati manualmente o automaticamente.
 
@@ -77,7 +79,7 @@ Fai clic su **[!UICONTROL Compute]** per visualizzare il risultato desiderato.
 
 Controllare le colonne **[!UICONTROL Result]** di entrambe le sezioni della finestra e fare clic su **[!UICONTROL Finish]** per eseguire l&#39;unione.
 
-## Esporta dati {#exporting-data}
+## Esportare i dati {#exporting-data}
 
 È possibile esportare il contenuto di un elenco. Per configurare ed eseguire l’esportazione:
 

@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Elaborazione di eventi {#about-event-processing}
+
+![](../../assets/v7-only.svg)
 
 Nel contesto della messaggistica transazionale, un evento viene generato da un sistema di informazioni esterno e inviato ad Adobe Campaign tramite i metodi **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]** (consulta [Descrizione evento](../../message-center/using/event-description.md)).
 
@@ -76,7 +78,7 @@ Per impostazione predefinita, il ciclo di produzione si basa sulle seguenti info
 * Il canale da utilizzare (per impostazione predefinita: e-mail)
 * Il modello di consegna più recente, in base alla data di pubblicazione
 
-## Stati dell&#39;evento {#event-statuses}
+## Stati degli eventi {#event-statuses}
 
 La **Cronologia eventi**, in **[!UICONTROL Message Center]** > **[!UICONTROL Event history]** , raggruppa tutti gli eventi elaborati in un’unica visualizzazione. Possono essere categorizzate per tipo di evento o per **stato**. Questi stati sono:
 
@@ -90,7 +92,7 @@ La **Cronologia eventi**, in **[!UICONTROL Message Center]** > **[!UICONTROL Eve
 * **Evento non trattato**: La fase di indirizzamento della messaggistica transazionale non è riuscita. Ad esempio, Adobe Campaign non ha trovato l’e-mail che funge da modello per l’evento.
 * **Evento scaduto**: È stato raggiunto il numero massimo di tentativi di invio. L&#39;evento è considerato nullo.
 
-## Riciclo eventi {#event-recycling}
+## Riciclaggio degli eventi {#event-recycling}
 
 Se la consegna di un messaggio su un canale specifico non riesce, Adobe Campaign può inviare nuovamente il messaggio utilizzando un canale diverso. Ad esempio, se una consegna sul canale SMS non riesce, il messaggio viene inviato nuovamente utilizzando il canale e-mail.
 

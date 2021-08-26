@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Profili operatore{#operator-profiles}
+
+![](../../assets/v7-only.svg)
 
 Esistono due tipi di operatori che utilizzano l’interazione: responsabili dell&#39;offerta e responsabili della consegna. Ognuno di essi ha diritti specifici che gli danno accesso solo ad alcune parti dell&#39;albero e della piattaforma.
 
@@ -43,7 +45,7 @@ I diritti assegnati al gestore delle offerte consentono loro di eseguire le segu
    >
    >Il gestore delle offerte può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore e il secondo se l’operatore responsabile della creazione di modelli (con il diritto di assegnare i revisori) lo ha specificato come revisore nel modello di offerta su cui si basa l’offerta.
 
-## Responsabile consegna {#delivery-manager}
+## Responsabile della consegna {#delivery-manager}
 
 1. Crea un nuovo operatore.
 1. Vai alla finestra **[!UICONTROL Groups and named rights]**, fai clic su **[!UICONTROL Add]** e seleziona il gruppo **[!UICONTROL Delivery manager]**.
@@ -60,7 +62,7 @@ I diritti assegnati al gestore della consegna sono/consentono loro di eseguire l
    >
    >Il gestore della consegna può approvare un’offerta solo se è stato definito come revisore durante la configurazione dell’offerta.
 
-## Recupero dei diritti in base all&#39;operatore {#recap-of-rights-according-to-operator}
+## Recupero dei diritti secondo l&#39;operatore {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 

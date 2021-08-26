@@ -5,7 +5,7 @@ description: Scopri come configurare l’integrazione di Campaign-AEM
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 ---
 
 # Configurazione dell’integrazione{#configuring-the-integration}
+
+![](../../assets/common.svg)
 
 ## Configurazione in Adobe Campaign {#configuring-in-adobe-campaign}
 
@@ -26,7 +28,7 @@ Per avviare la configurazione in Adobe Campaign, effettua le seguenti operazioni
 
 Per configurazioni avanzate, ad esempio gestione di campi e blocchi di personalizzazione. Consulta la documentazione di Adobe Experience Manager [](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
 
-### Installa il pacchetto di integrazione AEM in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
+### Installare il pacchetto di integrazione AEM in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
 Devi prima installare il pacchetto **[!UICONTROL AEM integration]** .
 
@@ -42,7 +44,7 @@ Devi prima installare il pacchetto **[!UICONTROL AEM integration]** .
 
 1. Nella finestra successiva, fai clic sul pulsante **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto. Al termine dell&#39;installazione, chiudere la finestra.
 
-### Configura la zona di sicurezza per AEM operatore {#configure-the-security-zone-for-aem-operator}
+### Configurare la zona di sicurezza per l’operatore AEM {#configure-the-security-zone-for-aem-operator}
 
 Il pacchetto **[!UICONTROL AEM integration]** imposta l’operatore **[!UICONTROL aemserver]** in Campaign. Questo operatore verrà utilizzato per collegare il server Adobe Experience Manager ad Adobe Campaign.
 
@@ -86,7 +88,7 @@ Per configurare l’account esterno AEM, segui i passaggi seguenti:
 1. Seleziona la casella **[!UICONTROL Enabled]** .
 1. Fai clic sul pulsante **[!UICONTROL Save]**.
 
-### Configurare AEM filtro delle risorse {#configure-aem-resources-filtering}
+### Configurare il filtro delle risorse AEM {#configure-aem-resources-filtering}
 
 L&#39;opzione **AEMResourceTypeFilter** viene utilizzata per filtrare i tipi di risorse di Experience Manager che possono essere utilizzate in Adobe Campaign. Questo consente ad Adobe Campaign di recuperare contenuti di Experience Manager progettati specificatamente per essere utilizzati solo in Adobe Campaign.
 

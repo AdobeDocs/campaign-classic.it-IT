@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Utilizzo dei cubi per esplorare i dati{#using-cubes-to-explore-data}
+
+![](../../assets/common.svg)
 
 Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione e la selezione dei dati dal database tramite cubi. Questo consente di:
 
@@ -27,13 +29,13 @@ Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione 
 
 ## Esplorazione dei dati in un rapporto {#exploring-the-data-in-a-report}
 
-### Passaggio 1 - Creazione di un report basato su un cubo {#step-1---creating-a-report-based-on-a-cube}
+### Passaggio 1: creazione di un report basato su un cubo {#step-1---creating-a-report-based-on-a-cube}
 
 Per creare un report basato su un cubo, fare clic sul pulsante **[!UICONTROL Create]** nella scheda **[!UICONTROL Reports]** e selezionare il cubo che si desidera utilizzare.
 
 Il processo è descritto di seguito: [Creazione di un report basato su un cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### Passaggio 2 - Selezione di linee e colonne {#step-2---selecting-lines-and-columns}
+### Passaggio 2: selezione di linee e colonne {#step-2---selecting-lines-and-columns}
 
 La visualizzazione predefinita mostra le prime due dimensioni del cubo (età e città, in questo caso).
 
@@ -154,7 +156,7 @@ Per raggruppare una popolazione in un elenco, effettua le seguenti operazioni:
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## Inserimento di una tabella pivot in un report {#inserting-a-pivot-table-into-a-report}
+## Inserimento di una tabella pivot in un rapporto {#inserting-a-pivot-table-into-a-report}
 
 Per creare una tabella ed esplorare i dati di un cubo, eseguire i seguenti passaggi:
 

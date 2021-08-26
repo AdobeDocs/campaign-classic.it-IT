@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Monitoraggio dei flussi di lavoro tecnici {#monitoring-technical-workflows}
+
+![](../../assets/common.svg)
 
 I flussi di lavoro tecnici devono essere monitorati e devono essere intraprese azioni in caso di guasto.
 
@@ -37,29 +39,29 @@ I flussi di lavoro tecnici sono disponibili da **[!UICONTROL Administration]** >
 
 A seconda del flusso di lavoro tecnico, segui i passaggi descritti di seguito per garantire che tutto funzioni come previsto.
 
-Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico deve eseguire, consulta questa [sezione](../../workflow/using/about-technical-workflows.md).
+Per comprendere meglio le operazioni che ogni flusso di lavoro tecnico deve eseguire, consulta questa [sezione](about-technical-workflows.md).
 
 Per **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verifica che il flusso di lavoro **[!UICONTROL Database Cleanup]** venga eseguito e terminato con successo ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
+1. Verifica che il flusso di lavoro **[!UICONTROL Database Cleanup]** venga eseguito e terminato con successo ogni giorno. Per ulteriori informazioni, consulta questa [pagina](delivery.md).
 1. Consultare il giornale di registrazione per verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
 1. Per ulteriori informazioni, controllare [page](../../production/using/database-cleanup-workflow.md).
 
 Per **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
-Controlla che il flusso di lavoro di tracciamento venga eseguito come programmato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. Per ulteriori informazioni, consulta questa [sezione](../../workflow/using/delivery.md).
+Controlla che il flusso di lavoro di tracciamento venga eseguito come programmato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. Per ulteriori informazioni, consulta questa [sezione](delivery.md).
 
 Per **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
 
-1. Verifica che il flusso di lavoro **[!UICONTROL Deliverability update]** venga eseguito e terminato con successo ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/delivery.md).
+1. Verifica che il flusso di lavoro **[!UICONTROL Deliverability update]** venga eseguito e terminato con successo ogni giorno. Per ulteriori informazioni, consulta questa [pagina](delivery.md).
 1. Verifica nel giornale di registrazione che le regole vengano aggiornate regolarmente.
 
 Per **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Osserva tutti i flussi di lavoro che si trovano sotto la cartella **[!UICONTROL Campaign process]** . Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/about-technical-workflows.md).
+1. Osserva tutti i flussi di lavoro che si trovano sotto la cartella **[!UICONTROL Campaign process]** . Per ulteriori informazioni, consulta questa [pagina](about-technical-workflows.md).
 1. Verificare che i flussi di lavoro vengano eseguiti come programmato e che il giornale di registrazione non evidenzi gli errori ricorrenti.
 
-## Sorveglianza del flusso di lavoro {#workflow-supervision}
+## Controllo del flusso di lavoro {#workflow-supervision}
 
 Il gruppo **[!UICONTROL Workflow supervisors]** deve contenere operatori che devono essere informati degli errori e che possono intervenire in tempo.
 

@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Introduzione alle campagne di marketing{#setting-up-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
@@ -57,7 +59,7 @@ Per configurare la gerarchia cartelle per piani e programmi di marketing:
 
 ## Creare una campagna {#creating-a-campaign}
 
-### Aggiungi una campagna {#adding-a-campaign}
+### Aggiungere una campagna {#adding-a-campaign}
 
 Puoi creare una campagna tramite l’elenco delle campagne. Per visualizzare questa visualizzazione, selezionare il menu **[!UICONTROL Campaigns]** nel dashboard **[!UICONTROL Campaigns]**.
 
@@ -140,7 +142,7 @@ La modalità di configurazione della pianificazione di esecuzione coincide con l
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
-#### Crea la campagna ricorrente {#create-the-recurring-campaign}
+#### Creare una campagna ricorrente {#create-the-recurring-campaign}
 
 Per creare la campagna ricorrente ed eseguire i relativi flussi di lavoro in base alla pianificazione definita nel modello, applica la procedura seguente:
 
@@ -183,7 +185,7 @@ Per creare la campagna ricorrente ed eseguire i relativi flussi di lavoro in bas
 
 Una campagna periodica è una campagna basata su un modello specifico che consente di creare istanze di campagna basate su una pianificazione di esecuzione. Le istanze di Campaign vengono create automaticamente in base a un modello di campagna periodica, a seconda della frequenza definita nella pianificazione del modello.
 
-#### Crea il modello della campagna {#creating-the-campaign-template-1}
+#### Creare il modello di campagna {#creating-the-campaign-template-1}
 
 1. Crea un modello di campagna **[!UICONTROL Periodic]**, preferibilmente duplicando un modello di campagna esistente.
 

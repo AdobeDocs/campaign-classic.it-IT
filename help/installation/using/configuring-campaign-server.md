@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Guida introduttiva alla configurazione del server Campaign{#gs-campaign-server-config}
+
+![](../../assets/v7-only.svg)
 
 Questo capitolo descrive le configurazioni lato server che possono essere eseguite in base alle esigenze e alle specificità dell’ambiente.
 
@@ -81,7 +83,7 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## Abilita processi {#enabling-processes}
+## Abilitare i processi {#enabling-processes}
 
 I processi Adobe Campaign sul server sono abilitati (e disabilitati) tramite i file **config-default.xml** e **`config-<instance>.xml`** .
 
@@ -136,7 +138,7 @@ Esistono due tipi di processi: istanza multipla e singola.
    Per ulteriori informazioni, consulta [Personalizzare i parametri](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
-## Sicurezza delle pagine dinamiche e relè {#dynamic-page-security-and-relays}
+## Sicurezza e relè delle pagine dinamiche {#dynamic-page-security-and-relays}
 
 Per impostazione predefinita, tutte le pagine dinamiche sono automaticamente correlate al server **locale** Tomcat del computer di cui è stato avviato il modulo Web. Questa configurazione viene immessa nella sezione **`<url>`** della configurazione del relay query per il file **ServerConf.xml**.
 
@@ -205,7 +207,7 @@ Per impostazione predefinita, tutte le intestazioni HTTP non vengono trasmesse. 
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Limita i comandi esterni autorizzati {#restricting-authorized-external-commands}
+## Limitare i comandi esterni autorizzati {#restricting-authorized-external-commands}
 
 Dalla build 8780, gli amministratori tecnici possono limitare l’elenco dei comandi esterni autorizzati che possono essere utilizzati in Adobe Campaign.
 

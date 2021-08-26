@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Installazione di pacchetti con Linux{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 Per una piattaforma Linux a 32 bit, installare Adobe Campaign a 32 bit. Per una piattaforma Linux a 64 bit, installare Adobe Campaign a 64 bit.
 
@@ -33,7 +35,7 @@ I comandi di installazione consentono di:
 
 È possibile eseguire il comando **ping`hostname`** per assicurarsi che il server possa raggiungere se stesso.
 
-## Distribuzione basata sui pacchetti RPM {#distribution-based-on-rpm--packages}
+## Distribuzione basata su pacchetti RPM {#distribution-based-on-rpm--packages}
 
 Per installare Adobe Campaign su un sistema operativo RPM (RHEL, CentOS e SUSE), esegui i seguenti passaggi:
 
@@ -353,7 +355,7 @@ Vengono quindi visualizzate le seguenti informazioni:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Password per l&#39;identificatore interno {#password-for-the-internal-identifier}
+## Password per l’identificatore interno {#password-for-the-internal-identifier}
 
 Il server Adobe Campaign definisce un accesso tecnico denominato **internal** che dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
 

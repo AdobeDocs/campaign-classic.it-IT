@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Best practice per i cubi{#concepts-and-methodology}
 
-## Unione dati {#data-binning}
+![](../../assets/common.svg)
+
+## Associazione dei dati {#data-binning}
 
 Il binding consente di semplificare la visualizzazione dei dati raggruppando i valori in base ai criteri. A seconda delle informazioni disponibili, puoi definire gruppi di età, raggruppare domini e-mail, limitare a un’enumerazione di valori, limitare esplicitamente i dati per visualizzare e raggruppare tutti gli altri dati in una riga o colonna dedicata, ecc.
 
@@ -76,7 +78,7 @@ Per definire manualmente gli intervalli, fai clic sul pulsante **[!UICONTROL Add
 
 Quindi specifica i limiti inferiore e superiore e fai clic su **[!UICONTROL Ok]** per confermare.
 
-### Generazione automatica dei contenitori {#generating-bins-automatically}
+### Generazione automatica dei bins {#generating-bins-automatically}
 
 È anche possibile generare automaticamente i bins. A questo scopo, fai clic sul collegamento **[!UICONTROL Generate bins...]** .
 

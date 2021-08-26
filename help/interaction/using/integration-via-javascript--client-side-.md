@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Integrazione tramite JavaScript (lato client){#integration-via-javascript-client-side}
+
+![](../../assets/v7-only.svg)
 
 Per chiamare il motore di interazione in una pagina web, inserisci una chiamata a un codice JavaScript direttamente nella pagina. Questa chiamata restituisce il contenuto dell’offerta in un target
 
@@ -35,7 +37,7 @@ I seguenti casi d’uso descrivono le opzioni possibili per l’integrazione del
 
 ## Modalità HTML {#html-mode}
 
-### Presentare un&#39;offerta anonima {#presenting-an-anonymous-offer}
+### Presentare un’offerta anonima {#presenting-an-anonymous-offer}
 
 1. **Preparazione del motore di interazione**
 
@@ -98,7 +100,7 @@ per interazione.
    </div>
    ```
 
-### Presentare un&#39;offerta identificata {#presenting-an-identified-offer}
+### Presentare un’offerta identificata {#presenting-an-identified-offer}
 
 Per presentare un&#39;offerta a un contatto identificato, il processo è simile a quello descritto qui: [Presentare un&#39;offerta anonima](#presenting-an-anonymous-offer). Nel contenuto della pagina web, devi aggiungere il seguente script che identificherà il contatto durante la chiamata al motore:
 
@@ -138,7 +140,7 @@ Per generare automaticamente la rappresentazione dell’offerta HTML, puoi utili
 
 ## Modalità XML {#xml-mode}
 
-### Presentare un’offerta {#presenting-an-offer}
+### Presentazione di un’offerta {#presenting-an-offer}
 
 L’interazione ti consente di restituire un nodo XML alla pagina HTML che richiama il motore di offerta. Questo nodo XML può essere elaborato da funzioni da sviluppare sul lato cliente.
 

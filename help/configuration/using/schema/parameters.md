@@ -6,16 +6,18 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 17%
 
 ---
 
-# elemento parametri {#parameters--element}
+# elemento parameters {#parameters--element}
 
-## Modello dei contenuti {#content-model-13}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-13}
 
 parameters:==param
 
@@ -27,7 +29,7 @@ Nessuno
 
 `<method>`
 
-## Figli {#children-13}
+## Bambini {#children-13}
 
 `<param>`
 
@@ -39,7 +41,7 @@ Questo elemento definisce un gruppo di elementi `<parameter>`.
 
 Questo elemento è obbligatorio, anche per un singolo elemento `<param>` figlio dell’elemento `<method>`.
 
-## Descrizione dell&#39;attributo {#attribute-description-13}
+## Descrizione attributo {#attribute-description-13}
 
 Nessuno
 

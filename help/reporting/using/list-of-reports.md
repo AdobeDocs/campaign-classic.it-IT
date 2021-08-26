@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 1%
 
 ---
 
-# Elenco dei report{#list-of-reports}
+# Elenco dei rapporti{#list-of-reports}
+
+![](../../assets/common.svg)
 
 ## Report sulle consegne {#reports-on-deliveries}
 
@@ -116,7 +118,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta [questa se
  </tbody> 
 </table>
 
-## Rapporti sulle campagne {#reports-on-campaigns}
+## Report sulle campagne {#reports-on-campaigns}
 
 I rapporti sulle campagne riguardano i dati presenti nella tabella **nms:operation**.
 
@@ -214,7 +216,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
  </tbody> 
 </table>
 
-## Rapporti di bilancio {#budget-reports}
+## Relazioni di bilancio {#budget-reports}
 
 I rapporti incorporati forniti da Adobe Campaign si trovano nella tabella seguente.
 

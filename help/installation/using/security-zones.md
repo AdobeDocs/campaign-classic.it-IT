@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 
 # Definire le aree di protezione (on-premise){#defining-security-zones}
+
+![](../../assets/v7-only.svg)
 
 Ogni operatore deve essere collegato a una zona per accedere a un’istanza e l’IP dell’operatore deve essere incluso negli indirizzi o nei set di indirizzi definiti nella zona di sicurezza. La configurazione dell’area di sicurezza viene eseguita nel file di configurazione del server Adobe Campaign.
 
@@ -27,7 +29,6 @@ Gli operatori sono collegati a una zona di sicurezza dal relativo profilo nella 
 >In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service della zona di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it)
 >
 >Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’elenco consentiti.
-
 
 ## Creare aree di protezione {#creating-security-zones}
 
@@ -181,7 +182,7 @@ Gli indirizzi IP dei proxy che possono accedere al server Adobe Campaign devono 
 </securityZone>
 ```
 
-## Collegare un’area di sicurezza a un operatore {#linking-a-security-zone-to-an-operator}
+## Collegamento di un’area di sicurezza a un operatore {#linking-a-security-zone-to-an-operator}
 
 Una volta definite le zone, ogni operatore deve essere collegato a uno di essi per poter accedere a un&#39;istanza e l&#39;indirizzo IP dell&#39;operatore deve essere incluso negli indirizzi o nell&#39;intervallo di indirizzi a cui si fa riferimento nella zona.
 

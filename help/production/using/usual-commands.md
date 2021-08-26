@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
 
 # Comandi abituali{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 In questa sezione sono elencati i comandi consueti in Adobe Campaign.
 
@@ -29,7 +31,6 @@ Il parametro **`<command>`** corrisponde al modulo .
 >* Al contrario, è possibile aggiungere l&#39;argomento **-verbose** per visualizzare ulteriori informazioni.
 
 >
-
 
 
 ## Comandi di monitoraggio {#monitoring-commands-}
@@ -90,7 +91,7 @@ nlserver stop <module>@<INSTANCE>
 >
 >**`<instance>`** corrisponde al nome dell’istanza come immesso nei file di configurazione, o  **** predefinito per i moduli mono-instance.
 
-## Spegnere i servizi {#shut-down-services}
+## Servizi di arresto {#shut-down-services}
 
 Per interrompere i servizi Adobe Campaign, utilizza uno dei seguenti comandi:
 
@@ -161,8 +162,5 @@ Per modificare la password **interna**: **nlserver config -internalpassword**
 >* In generale, invece di modificare i file di configurazione a mano, è possibile utilizzare il comando **config**
 >* Per ottenere l&#39;elenco dei parametri, utilizza il **-?** parametro:  **configurazione nlserver -?**
 >* Nel caso di un database di Oracle, non è necessario specificare l&#39;account. La sintassi sarà la seguente:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
-
+>  nlserver config -setdblogin:Oracle:test6@dbserver

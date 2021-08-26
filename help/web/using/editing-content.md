@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Modifica del contenuto{#editing-content}
+
+![](../../assets/common.svg)
 
 ## Definizione di una condizione di visibilità {#defining-a-visibility-condition}
 
@@ -139,7 +141,6 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo nei blocch
 >
 
 
-
 ### Collegamento a un URL {#link-to-a-url}
 
 L’opzione **Collega a un URL esterno** consente di aprire qualsiasi URL dal contenuto sorgente.
@@ -193,7 +194,7 @@ Le opzioni disponibili sono le seguenti:
 * **** Icona corsivo: rende il testo selezionato in corsivo (con il   `<em> </em>` tag)
 * **** Icona di sottolineatura: rende sottolineato il testo selezionato (applica al testo il  `<span style="text-decoration: underline;">` tag)
 * **Allinea** a sinistra: allinea il testo a sinistra del blocco selezionato (aggiungi style=&quot;text-align: sinistra;&quot;)
-* **** Icona centrale: centra il testo per il blocco selezionato (aggiungi style=&quot;text-align: centrale;&quot;)
+* **** Centroicona: centra il testo per il blocco selezionato (aggiungi style=&quot;text-align: centrale;&quot;)
 * **Allinea a** destra: allinea il testo a destra del blocco selezionato (aggiungi style=&quot;text-align: a destra;&quot;)
 * **Modifica l’** icona del colore di sfondo: consente di modificare il colore di sfondo del blocco selezionato (aggiungi style=&quot;background-color: rgba(170, 86, 255, 0.87))
 * **Cambia** colore del testo: consente di modificare il colore del testo del blocco selezionato o solo del testo selezionato (`<span style="color: #CODE">`)
@@ -201,9 +202,8 @@ Le opzioni disponibili sono le seguenti:
 >[!NOTE]
 >
 >* **** Icona Elimina: elimina il blocco e tutto il relativo contenuto.
-   >
-   >
-* **** Icona Duplicato: duplica il blocco e tutti gli stili correlati al blocco.
+>
+>* **** Icona Duplicato: duplica il blocco e tutti gli stili correlati al blocco.
 
 
 ## Gestione di immagini e animazioni {#managing-images-and-animations}

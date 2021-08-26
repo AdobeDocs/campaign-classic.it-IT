@@ -6,16 +6,18 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Consegna{#delivery}
 
-Un’attività di tipo **Consegna** ti consente di creare un’azione di consegna. Può essere costruito utilizzando elementi di input.
+![](../../assets/common.svg)
+
+Un’attività di tipo **Consegna** ti consente di creare un’azione di consegna. Può essere realizzata utilizzando elementi di input.
 
 Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
 
@@ -81,7 +83,7 @@ Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
    * **[!UICONTROL Send a proof]**: questa opzione ti consente di inviare una bozza della consegna. Questa azione equivale a fare clic sul pulsante **[!UICONTROL Send a proof]** nella barra degli strumenti di una consegna con **Consegna**
    * **[!UICONTROL Prepare and start]**: questa opzione avvia l’intero processo di analisi (calcolo di target e preparazione dei contenuti) e invia la consegna. Questa azione equivale a fare clic su **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** quando si invia una consegna alla destinazione principale con **Consegna**.
 
-   L’ attività **[!UICONTROL Act on a delivery]** utilizzata ulteriormente nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la consegna (calcolo di target, preparazione dei contenuti, consegna). Per ulteriori informazioni, consulta [Controllo della consegna](../../workflow/using/delivery-control.md).
+   L’ attività **[!UICONTROL Act on a delivery]** utilizzata ulteriormente nel flusso di lavoro consente di avviare tutti i passaggi rimanenti necessari per avviare la consegna (calcolo di target, preparazione dei contenuti, consegna). Per ulteriori informazioni, consulta [Controllo della consegna](delivery-control.md).
 
    Sono disponibili anche le seguenti opzioni:
 
@@ -95,7 +97,7 @@ Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
 
    * **[!UICONTROL Processing errors]**
 
-      Fare riferimento a [Controllo consegna](../../workflow/using/delivery-control.md).
+      Fare riferimento a [Controllo consegna](delivery-control.md).
    La scheda **Script** ti consente di modificare i parametri di consegna.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -125,11 +127,11 @@ Apri l&#39;attività **Approvazione** e definisci le proprietà come segue:
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: **[!UICONTROL vars.recCount]** rappresenta il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, consulta [Script e modelli JavaScript](../../workflow/using/javascript-scripts-and-templates.md).
+   Questo è un messaggio che include un&#39;espressione scritta in JavaScript: **[!UICONTROL vars.recCount]** rappresenta il numero di destinatari interessati dalla consegna dell&#39;attività precedente. Per ulteriori informazioni sulle espressioni JavaScript, consulta [Script e modelli JavaScript](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   L&#39;attività Approvazione è descritta in [Approvazione](../../workflow/using/approval.md).
+   L&#39;attività Approvazione è descritta in [Approvazione](approval.md).
 
 ## Parametri di input {#input-parameters}
 

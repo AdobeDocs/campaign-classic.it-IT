@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Configurazione della rete{#network-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Comunicazione tra i processi {#communication-between-processes}
 
@@ -119,7 +121,7 @@ Per tenere traccia delle consegne SMS (**nlserver sms**), la seguente porta deve
  </tbody> 
 </table>
 
-### Client RTF {#rich-client}
+### Client avanzato {#rich-client}
 
 Per il client rich Adobe Campaign (**nlclient**), le seguenti porte devono essere aperte:
 
@@ -190,7 +192,7 @@ Inoltre, alcuni componenti devono essere accessibili da Internet pubblico in mod
  </tbody> 
 </table>
 
-### Server Web esterno {#external-web-server}
+### Server web esterno {#external-web-server}
 
 Questo server ospita moduli web, pagine mirror, ecc. È necessario aprire le seguenti porte:
 

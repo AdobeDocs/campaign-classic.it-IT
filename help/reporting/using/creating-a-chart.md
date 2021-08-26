@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Creazione di un grafico{#creating-a-chart}
+
+![](../../assets/common.svg)
 
 È inoltre possibile raccogliere e visualizzare i dati del database in un grafico. Adobe Campaign fornisce una serie di rappresentazioni grafiche. La configurazione è descritta di seguito.
 

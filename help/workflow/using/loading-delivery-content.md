@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Caricamento del contenuto di una consegna{#loading-delivery-content}
+
+![](../../assets/common.svg)
 
 Se il contenuto di consegna è disponibile in un file HTML presente su server Amazon S3, FTP o SFTP, puoi facilmente caricare tale contenuto nelle consegne Adobe Campaign.
 

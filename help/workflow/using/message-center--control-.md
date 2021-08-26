@@ -5,19 +5,27 @@ description: Centro messaggi (Controllo)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 7%
+source-wordcount: '155'
+ht-degree: 10%
 
 ---
 
 
 # Centro messaggi (Controllo){#message-center-control}
 
-Il flusso di lavoro descritto di seguito è pianificato per l’esecuzione ogni ora. Per impostazione predefinita, è installato con il modulo **Centro messaggi - Control** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, consulta [questa pagina](../../message-center/using/technical-workflows.md).
+Il flusso di lavoro descritto di seguito è pianificato per l’esecuzione ogni ora. Per impostazione predefinita, è installato con il modulo **Centro messaggi - Control** .
+
+
+Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
+
+![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+
 
 <table> 
  <tbody> 

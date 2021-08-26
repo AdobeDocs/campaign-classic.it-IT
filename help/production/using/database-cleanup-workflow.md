@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Flusso di lavoro di pulizia del database{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## Introduzione {#introduction}
 
@@ -88,7 +90,7 @@ Alla data e all&#39;ora definite nella pianificazione del flusso di lavoro (cons
 >
 >Le sezioni seguenti che descrivono le attività eseguite dal flusso di lavoro Database cleanup sono riservate agli amministratori del database o agli utenti che hanno familiarità con SQL Language.
 
-### Elenchi per eliminare la pulizia {#lists-to-delete-cleanup}
+### Elenchi da eliminare {#lists-to-delete-cleanup}
 
 La prima attività eseguita dal flusso di lavoro **[!UICONTROL Database cleanup]** elimina tutti i gruppi con **deleteStatus != 0** attributo dal **NmsGroup**. Vengono inoltre eliminati i record collegati a tali gruppi e presenti in altre tabelle.
 
@@ -297,7 +299,7 @@ Questa attività elimina dal database tutte le tabelle di lavoro che corrispondo
    DROP TABLE wkDlv_15487_1;
    ```
 
-### Pulizia dei rifiuti generati dalle importazioni {#cleanup-of-rejects-generated-by-imports-}
+### Pulizia dei rifiuti prodotti dalle importazioni {#cleanup-of-rejects-generated-by-imports-}
 
 Questo passaggio ti consente di eliminare i record per i quali non sono stati elaborati tutti i dati durante l’importazione.
 
@@ -473,7 +475,7 @@ Questa attività ti consente di eliminare i registri di consegna memorizzati in 
 
    dove **$(option)** corrisponde alla data definita per l&#39;opzione **NmsCleanup_BroadLogPurgeDelay** (consulta [Procedura guidata di distribuzione](#deployment-wizard)).
 
-### Pulizia della tabella NmsEmailErrorState {#cleanup-of-the-nmsemailerrorstat-table-}
+### Pulizia della tabella NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
 Questa attività elimina la tabella **NmsEmailErrorStat** . Il programma principale (**coalesceErrors**) definisce due date:
 
@@ -569,7 +571,7 @@ Questa attività pulisce le tabelle di simulazione orfane (che non sono più col
    DROP TABLE wkSimu_456831_aggr
    ```
 
-### Pulizia della traccia di audit {#cleanup-of-audit-trail}
+### Pulizia della pista di controllo {#cleanup-of-audit-trail}
 
 Viene utilizzata la seguente query:
 

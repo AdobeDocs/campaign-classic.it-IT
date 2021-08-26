@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -14,7 +14,9 @@ ht-degree: 1%
 ---
 
 
-# Configura le istanze {#creating-a-shared-connection}
+# Configurare le istanze {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 Per utilizzare le funzionalità di messaggistica transazionale, devi configurare le istanze di controllo ed esecuzione. Puoi utilizzare:
 * [Un&#39;istanza di controllo ](#control-instance) associata a una o più istanze di esecuzione
@@ -32,7 +34,7 @@ Tutti i passaggi necessari per configurare e collegare le istanze di controllo e
 >
 >L&#39;istanza di controllo e le istanze di esecuzione devono essere installate su computer diversi. Non possono condividere la stessa istanza Campaign.
 
-## Configura l&#39;istanza di controllo {#control-instance}
+## Configurare l’istanza di controllo {#control-instance}
 
 Per collegare l&#39;istanza di controllo e le istanze di esecuzione, devi innanzitutto creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **sull&#39;istanza di controllo**. Pertanto, una volta [pubblicato](../../message-center/using/publishing-message-templates.md#template-publication), i modelli di messaggio transazionali possono essere distribuiti alle istanze di esecuzione.
 

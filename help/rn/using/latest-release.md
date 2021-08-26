@@ -2,18 +2,20 @@
 product: campaign
 title: Ultima versione
 description: Note sulla versione più recente di Campaign Classic
-feature: Panoramica
+feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: c59529a0a4d72ecb795569591d62a68f030a0ac7
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
 
 # Ultima versione{#latest-release}
+
+![](../../assets/v7-only.svg)
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati con la **versione più recente di Campaign Classic**.
 
@@ -115,7 +117,7 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/us
 **Funzioni obsolete**
 
 * A partire dalla versione 21.1 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione con il nuovo connettore Adobe Analytics.
-Per ulteriori informazioni consulta la [documentazione dettagliata](../../technotes/aa-connector-migration.md).
+Per ulteriori informazioni consulta la [documentazione dettagliata](../../technotes/using/aa-connector-migration.md).
 * Il supporto per Debian 8 è ora obsoleto.
 * In seguito alla rimozione di Oracle CRM in 20.3, l’account esterno correlato è stato rimosso dall’interfaccia.
 

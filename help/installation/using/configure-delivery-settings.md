@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # Configurare le impostazioni di consegna {#delivery-settings}
+
+![](../../assets/v7-only.svg)
 
 I parametri di consegna devono essere configurati nella cartella **serverConf.xml** .
 
@@ -55,7 +57,7 @@ In questo caso, questi parametri vengono impostati configurando il server SMTP n
 
 Consulta anche [Ottimizzazione dell&#39;invio di e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-## Gestire il traffico SMTP in uscita con affinità {#managing-outbound-smtp-traffic-with-affinities}
+## Gestire il traffico SMTP in uscita con le affinità {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >

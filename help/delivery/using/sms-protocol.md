@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 0%
@@ -15,10 +15,11 @@ ht-degree: 0%
 
 # Protocollo e impostazioni del connettore SMS {#sms-connector-protocol}
 
+![](../../assets/common.svg)
+
 >[!NOTE]
 >
 >Attraverso questo documento, tutti i riferimenti ai dettagli relativi al protocollo, ai nomi e ai valori dei campi si riferiscono alla [specifica SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
-
 
 ## Panoramica {#overview}
 
@@ -354,7 +355,7 @@ La dimensione massima di un messaggio dipende dalla relativa codifica. Questa ta
 | Codifica | Codifica_dati normale | Dimensioni del messaggio (caratteri) | Dimensione della parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi richiedono 2 caratteri) |
-| Latino-1 | 3 | 140 | 134 | ISO-8859-1 |
+| Latino-1 | 1 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
 ## Parametri dell’account esterno SMPP {#SMPP-parameters-external}

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Struttura di uno schema di dati{#structure-of-a-data-schema}
+
+![](../../assets/v7-only.svg)
 
 La struttura di uno schema dati viene visualizzata sotto forma di struttura ad albero. Per visualizzarlo graficamente nella console del client Adobe Campaign, seleziona lo schema di destinazione e fai clic sulla sottoscheda **[!UICONTROL Structure]** .
 

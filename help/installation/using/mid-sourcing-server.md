@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Server di mid-sourcing{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 Questa sezione descrive l&#39;installazione e la configurazione di un server di mid-sourcing, nonché la distribuzione di un&#39;istanza che consente a terze parti di inviare messaggi in modalità **mid-sourcing** .
 

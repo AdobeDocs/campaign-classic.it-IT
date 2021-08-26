@@ -5,7 +5,7 @@ description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
 exl-id: 84399496-33fd-4936-85e7-32de8503740f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Monitoraggio della pipeline {#pipeline-monitoring}
+
+![](../../assets/common.svg)
 
 Il servizio Web di stato [!DNL pipelined] fornisce informazioni sullo stato del processo [!DNL pipelined].
 
@@ -69,7 +71,7 @@ Queste statistiche vengono visualizzate per thread di elaborazione.
    * prova-validità-durata-ms: la durata dell&#39;elaborazione viene ritentata fino a quando il messaggio non viene eliminato.
    * Rapporto sui messaggi della pipeline
 
-## Rapporto sui messaggi della pipeline {#pipeline-report}
+## Rapporto messaggi pipeline {#pipeline-report}
 
 Questo rapporto visualizza il numero di messaggi all&#39;ora negli ultimi cinque giorni.
 

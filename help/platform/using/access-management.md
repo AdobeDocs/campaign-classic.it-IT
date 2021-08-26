@@ -2,18 +2,20 @@
 product: campaign
 title: Introduzione alle autorizzazioni
 description: Scopri come concedere l’accesso alle funzionalità di Campaign
-feature: Gestione degli accessi
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 6%
 
 ---
 
 # Introduzione alle autorizzazioni{#access-management}
+
+![](../../assets/common.svg)
 
 Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
 
@@ -51,7 +53,7 @@ Scopri come concedere l’accesso e impostare le autorizzazioni in queste sezion
 Vedi anche:
 
 * [Gestione delle autorizzazioni per i flussi di lavoro](../../workflow/using/managing-rights.md)
-* [Gestione delle autorizzazioni per il marketing distribuito](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [Gestione delle autorizzazioni per il marketing distribuito](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [Gestisci le autorizzazioni per il modulo di interazione](../../interaction/using/operator-profiles.md)
 * [Filtrare l’accesso agli schemi](../../configuration/using/filtering-schemas.md)
 * [Limitazione della visualizzazione PI](../../configuration/using/restricting-pii-view.md)

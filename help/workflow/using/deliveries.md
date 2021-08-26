@@ -5,7 +5,7 @@ description: Ulteriori informazioni sui flussi di lavoro di consegna predefiniti
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 
 
 # Consegne{#deliveries}
+
+![](../../assets/common.svg)
 
 I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Consegne** .
 
@@ -57,7 +59,7 @@ I flussi di lavoro descritti di seguito sono installati per impostazione predefi
   <tr> 
    <td> <span class="uicontrol">Pulizia dei flussi di lavoro in pausa</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Questo flusso di lavoro analizza i flussi di lavoro in pausa con la gravità impostata su normale e attiva avvisi e notifiche quando sono stati messi in pausa per troppo tempo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5.</p> <p>Per ulteriori informazioni, consulta <a href="../../workflow/using/monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Gestione dei flussi di lavoro in pausa</a>.</p></td> 
+   <td> <p>Questo flusso di lavoro analizza i flussi di lavoro in pausa con la gravità impostata su normale e attiva avvisi e notifiche quando sono stati messi in pausa per troppo tempo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5.</p> <p>Per ulteriori informazioni, consulta <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Gestione dei flussi di lavoro in pausa</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Notifica di offerta</span> <br /> </td> 

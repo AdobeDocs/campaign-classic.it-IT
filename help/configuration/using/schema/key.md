@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # elemento chiave {#key--element}
 
-## Modello dei contenuti {#content-model-8}
+![](../../../assets/v7-only.svg)
+
+## Modello di contenuto {#content-model-8}
 
 key:==keyfield
 
@@ -32,7 +34,7 @@ key:==keyfield
 
 `<element>`
 
-## Figli {#children-8}
+## Bambini {#children-8}
 
 `<keyfield>`
 
@@ -52,7 +54,7 @@ Se l&#39;elemento principale dello schema contiene l&#39;attributo &quot;@autopk
 
 I primi 1000 identificatori sono riservati; pertanto, se è necessario definire un intervallo di valori per le chiavi, inizia da 1000.
 
-## Descrizione dell&#39;attributo {#attribute-description-8}
+## Descrizione attributo {#attribute-description-8}
 
 * **allowEmptyPart (booleano)**: nel caso di una chiave composita, se questo attributo è attivato, la chiave viene considerata valida se almeno una delle chiavi non è vuota. In questo caso, il valore di nozione vuoto è &quot;0&quot; (booleano o per tutti i tipi di dati numerici). Per impostazione predefinita, è necessario immettere tutti i tasti che costituiscono una chiave composita.
 * **applyIf (string)**: questo attributo consente di rendere la chiave facoltativa. Definisce la condizione in base alla quale verrà applicata la definizione della chiave. Questo attributo riceve un&#39;espressione XTK.

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Modificare un profilo{#editing-a-profile}
+
+![](../../assets/common.svg)
 
 Per visualizzare le informazioni relative a un profilo, fai clic sul relativo nome nell’elenco dei profili.
 
@@ -41,7 +43,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 >
 >Quando l’opzione **[!UICONTROL No longer contact (by any channel)]** è selezionata, significa che il profilo è in elenco Bloccati, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di targeting per consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
-## Scheda Informazioni di contatto {#contact-information-tab}
+## Scheda Informazioni contatto {#contact-information-tab}
 
 Questa schermata contiene l’indirizzo direct mailing del profilo selezionato. Si presenta così:
 
@@ -49,7 +51,7 @@ Questa schermata contiene l’indirizzo direct mailing del profilo selezionato. 
 
 Questa schermata mostra l&#39;indice di qualità dell&#39;indirizzo, nonché quanti errori contiene l&#39;indirizzo. Queste informazioni vengono utilizzate direttamente dal gestore della posta in base al numero di errori riscontrati durante le consegne precedenti e non possono essere modificate manualmente.
 
-## Altra scheda {#other-tab}
+## Scheda Altro {#other-tab}
 
 Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. Puoi anche modificare i nomi dei campi e definirne il formato, tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
 

@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
 
 # Sincronizzazione dei dati tra Campaign e CRM {#data-synchronization}
+
+![](../../assets/common.svg)
 
 La sincronizzazione dei dati tra Adobe Campaign e il CRM viene eseguita tramite un’attività di flusso di lavoro dedicata: [Connettore CRM](../../workflow/using/crm-connector.md).
 
@@ -42,7 +44,7 @@ Seleziona l&#39;account esterno che corrisponde al CRM con cui desideri configur
 
 La configurazione di questa attività dipende dal processo da eseguire. Di seguito sono descritte diverse configurazioni.
 
-## Importa dal CRM {#importing-from-the-crm}
+## Importazione da CRM {#importing-from-the-crm}
 
 Per importare dati tramite il CRM in Adobe Campaign, devi creare il seguente tipo di flusso di lavoro:
 
@@ -151,7 +153,7 @@ Quindi seleziona i campi della popolazione in entrata che desideri importare, co
 
 ![](assets/crm_wf_import_calculated_population.png)
 
-## Esportazione in CRM {#exporting-to-the-crm}
+## Esportazione in CRM in corso {#exporting-to-the-crm}
 
 L&#39;esportazione di dati Adobe Campaign in CRM ti consente di copiare l&#39;intero contenuto in un database CRM.
 
@@ -202,7 +204,7 @@ Altre possibili conversioni sono:
 * **[!UICONTROL Without time offset]**: questa modalità annulla la gestione del fuso orario applicata nella modalità predefinita.
 * **[!UICONTROL Copy/Paste]**: questa modalità utilizza dati non elaborati come le stringhe (nessuna conversione).
 
-### Errore durante l&#39;elaborazione {#error-processing}
+### Elaborazione errore {#error-processing}
 
 Nel quadro delle importazioni o delle esportazioni di dati, puoi applicare un processo specifico a errori e rifiuti. A questo scopo, seleziona le opzioni **[!UICONTROL Process rejects]** e **[!UICONTROL Process errors]** nella scheda **[!UICONTROL Behavior]** .
 
@@ -240,7 +242,7 @@ A questo scopo, esegui i seguenti passaggi:
    >
    >Il periodo di eliminazione degli elementi deve coincidere con le limitazioni specifiche del CRM. Ciò significa che per Salesforce.com, ad esempio, gli elementi cancellati più di 30 giorni fa non possono essere recuperati.
 
-## Elimina gli oggetti nel CRM {#deleting-objects-in-the-crm}
+## Eliminare gli oggetti nel CRM {#deleting-objects-in-the-crm}
 
 Per eliminare gli oggetti dal lato CRM, è necessario specificare la chiave primaria degli elementi remoti da eliminare.
 
@@ -251,4 +253,3 @@ La scheda **[!UICONTROL Behavior]** ti consente di abilitare l’elaborazione de
 >[!NOTE]
 >
 >Anche quando l’opzione **[!UICONTROL Process rejects]** è disabilitata, viene generato un avviso per ogni colonna rifiutata.
-

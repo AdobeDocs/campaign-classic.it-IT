@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Configurazione di SpamAssassin{#configuring-spamassassin}
+
+![](../../assets/v7-only.svg)
 
 >[!NOTE]
 >
@@ -46,7 +48,7 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
 
 ### Installazione di SpamAssassin {#installing-spamassassin}
 
-1. Connettiti al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) utilizzando le tue credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+1. Connettiti al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) utilizzando le tue credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it?lang=en).
 1. Scarica il file **Neolane Spam Assassin (Installazione di Windows) (2.0)** (neolane_spamassassin.2.0.zip).
 1. Copia questo file sul server Adobe Campaign, quindi decomprimi il file.
 
@@ -151,7 +153,7 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
    /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
    ```
 
-### Passaggi per l&#39;installazione in RHEL/CentOS {#installation-steps-in-rhel-centos}
+### Passaggi per l’installazione in RHEL/CentOS {#installation-steps-in-rhel-centos}
 
 Se necessario, installare Perl e recuperare i pacchetti utilizzando CPAN:
 

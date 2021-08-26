@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Best practice di interazione{#interaction-best-practices}
+
+![](../../assets/v7-only.svg)
 
 ## Raccomandazioni generali {#general-recommendations}
 
@@ -44,7 +46,7 @@ Di seguito sono elencate alcune best practice relative alle regole di idoneità.
 * Si consiglia di avere un numero limitato di offerte per spazio di offerta. Questo garantisce un recupero più rapido delle offerte in qualsiasi spazio.
 * Utilizza gli indici, in particolare nelle colonne di ricerca più utilizzate.
 
-### Tabella delle proposte {#proposition-table}
+### Tavola delle proposte {#proposition-table}
 
 Di seguito sono elencate alcune best practice relative alla tabella delle proposte.
 
@@ -118,7 +120,7 @@ Quando utilizzi l’interazione e selezioni manualmente le offerte, l’utente p
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Estensione dello schema nms:offer {#extending-nms-offer-schema}
+### Estensione dello schema nms:offerta {#extending-nms-offer-schema}
 
 Quando estendi lo schema nms:offer, assicurati di seguire la struttura preconfigurata già configurata:
 * Definisci qualsiasi nuovo campo per l’archiviazione dei contenuti in `<element name="view">`.

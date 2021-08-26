@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
 # Gestione dati SQL{#sql-data-management}
+
+![](../../assets/common.svg)
 
 L&#39;attività **SQL Data Management** consente di scrivere script SQL personalizzati per creare e popolare tabelle di lavoro.
 
@@ -22,10 +24,17 @@ L&#39;attività **SQL Data Management** consente di scrivere script SQL personal
 Prima di configurare l’attività, verifica che siano soddisfatti i seguenti prerequisiti:
 
 * L’attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve quindi essere installato nell’istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
-* Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA. [Ulteriori informazioni](../../configuration/using/about-schema-reference.md).
+
+   Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA.
 * L’operatore che esegue il flusso di lavoro deve avere il **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** con nome right. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).
 
-## Configurazione dell&#39;attività SQL Data Management {#configuring-the-sql-data-management-activity}
+## Configurazione dell&#39;attività di gestione dati SQL {#configuring-the-sql-data-management-activity}
 
 1. Specifica l&#39;attività **[!UICONTROL Label]**.
 1. Seleziona il **[!UICONTROL External account]** da utilizzare, quindi seleziona il **[!UICONTROL Outbound schema]** collegato a questo account esterno.

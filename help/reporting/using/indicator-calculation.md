@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Calcolo indicatore {#indicator-calculation}
+
+![](../../assets/common.svg)
 
 ## Attività utente {#user-activities-1}
 
@@ -472,7 +474,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Services]** (nms:service).
    <td> sum(Iif(@action = 1 e @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abbonamenti non riusciti<br /> </td> 
+   <td> Abbonamenti annullati<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> numero di annullamenti di abbonamenti (azione = 0) il giorno precedente.<br /> </td> 
    <td> sum(Iif(@action = 0 e @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -795,7 +797,7 @@ Questo rapporto si basa sulle tabelle Delivery(nms:delivery) e **[!UICONTROL Con
 
 Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) con, su ogni collegamento, la percentuale di clic sui collegamenti. I blocchi di personalizzazione per i collegamenti di annullamento dell’abbonamento e i collegamenti alle pagine mirror vengono presi in considerazione nei clic cumulati totali, ma non vengono visualizzati nel rapporto.
 
-## Statistiche di tracciamento {#tracking-statistics-1}
+## Tracking delle statistiche {#tracking-statistics-1}
 
 Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
 
@@ -846,7 +848,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
  <tbody> 
   <tr> 
    <td> E-mail elaborate<br /> </td> 
-   <td> @elaborati<br /> </td> 
+   <td> @processed<br /> </td> 
    <td> Numero totale di messaggi con stato uguale a "Ready", "Sent" o "Failed".<br /> </td> 
    <td> @ready + @error + @success<br /> </td> 
   </tr> 
@@ -881,7 +883,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Abbonamenti non riusciti<br /> </td> 
+   <td> Abbonamenti annullati<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Numero totale di @ids per i quali la categoria URL è uguale a "Opt-out".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
@@ -926,7 +928,7 @@ Se si verifica una desincronizzazione o un’incoerenza per alcuni indicatori, s
 
 Affinché Adobe Campaign possa rilevare l’apertura dei messaggi, il destinatario deve scaricare le immagini nell’e-mail. Le e-mail HTML e multiparte/alternativa includono un’immagine da 0 pixel, che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base all&#39;apertura dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione dell&#39;immagine.
 
-## Persone/destinatari di destinazione {#targeted-persons---recipients}
+## Persone/destinatari interessati {#targeted-persons---recipients}
 
 In alcuni rapporti, Adobe Campaign distingue le persone mirate e i destinatari mirati.
 

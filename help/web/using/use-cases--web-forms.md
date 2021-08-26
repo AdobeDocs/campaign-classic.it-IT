@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -15,7 +15,9 @@ ht-degree: 1%
 
 # Casi d’uso: moduli web{#use-cases-web-forms}
 
-## Crea un modulo di abbonamento con doppio consenso {#create-a-subscription--form-with-double-opt-in}
+![](../../assets/common.svg)
+
+## Creare un modulo di abbonamento con doppio consenso {#create-a-subscription--form-with-double-opt-in}
 
 Quando offri servizi informativi, i destinatari devono abbonarsi per ricevere tutte le comunicazioni collegate. Per evitare comunicazioni non corrette e assicurarsi che il destinatario si sia iscritto intenzionalmente, si consiglia di inviare una richiesta di conferma dell’abbonamento per creare un doppio consenso. L’abbonamento avrà effetto solo dopo che l’utente farà clic sul collegamento incluso nel messaggio di conferma.
 
@@ -34,7 +36,7 @@ Questo esempio si basa sul seguente scenario:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
-### Passaggio 2 - Creazione di messaggi di conferma {#step-2---creating-confirmation-messages}
+### Passaggio 2: creare messaggi di conferma {#step-2---creating-confirmation-messages}
 
 I messaggi di conferma vengono inviati tramite un modello di consegna dedicato a cui si fa riferimento a livello di servizio temporaneo.
 

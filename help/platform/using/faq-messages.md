@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Convalidare, inviare e tracciare messaggi {#validate-send-track}
+
+![](../../assets/common.svg)
 
 ## Test e convalida {#test-and-validate-before-sending}
 
@@ -52,7 +54,7 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
-[Fai clic qui per ulteriori informazioni](../../campaign/using/about-campaign-typologies.md).
+[Fai clic qui per ulteriori informazioni](../../campaign-opt/using/about-campaign-typologies.md).
 
 ## Inviare i messaggi {#send-your-messages}
 

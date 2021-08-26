@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # API orientate ai dati{#data-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Le API orientate ai dati consentono di gestire l’intero modello dati.
 
@@ -161,7 +163,7 @@ Recupera il cognome e il nome di un destinatario ( schema &quot;nms:recipient&qu
 </queryDef>
 ```
 
-#### Esempio con l&#39;operazione &quot;select&quot; {#example-with-the--select--operation}
+#### Esempio con l’operazione &quot;select&quot; {#example-with-the--select--operation}
 
 Restituisce l’elenco dei destinatari filtrati in una cartella e il dominio di posta elettronica con un ordinamento decrescente in base alla data di nascita.
 
@@ -297,7 +299,7 @@ Di seguito sono riportati due esempi di bracketing sulla stessa condizione.
 
 Questa sintassi semplifica la query quando nella condizione vengono utilizzati più di due dati.
 
-#### Esempi su collegamenti {#examples-on-links}
+#### Esempi di collegamenti {#examples-on-links}
 
 * Link 1-1 o N1: quando la tabella ha la chiave esterna (il collegamento inizia dalla tabella), i campi della tabella collegata possono essere filtrati o recuperati direttamente.
 
@@ -547,7 +549,7 @@ La chiave di riconciliazione può quindi essere forzata con l&#39;attributo **_k
 * **elimina**: elimina i record,
 * **Nessuno**: utilizzato solo per la riconciliazione dei collegamenti, senza aggiornamento o inserimento.
 
-### Esempio con il metodo &#39;Write&#39; {#example-with-the--write--method}
+### Esempio con il metodo &quot;Write&quot; {#example-with-the--write--method}
 
 Aggiornamento o inserimento di un destinatario (operazione implicita &quot;insertOrUpdate&quot;) con indirizzo e-mail, data di nascita e città:
 

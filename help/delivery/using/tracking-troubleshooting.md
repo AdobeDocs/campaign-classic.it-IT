@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Risoluzione dei problemi di tracciamento {#tracking-troubleshooting}
+
+![](../../assets/common.svg)
 
 In questa sezione troverai le domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign Classic.
 
@@ -79,7 +81,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le linee danneggiate e riavviare il flusso di lavoro.
 
-## Errore intermittente dei collegamenti di tracciamento {#tracking-links-fail-intermittently}
+## Tracciamento dei collegamenti non riuscito a intermittenza {#tracking-links-fail-intermittently}
 
 Quando tenti di accedere ai collegamenti di tracciamento, viene visualizzato il seguente messaggio:
 
@@ -203,7 +205,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## Il recupero dei registri è troppo lento {#slow-retrieval}
+## Il recupero dei log di tracciamento è troppo lento {#slow-retrieval}
 
 Quando l’istanza non recupera direttamente i registri di tracciamento ma da un server Adobe Campaign Classic remoto, i registri vengono recuperati tramite la chiamata SOAP GetTrackingLogs definita nello schema remoteTracking.
 
@@ -211,7 +213,7 @@ Un&#39;opzione nel file serverConf.xml consente di impostare il numero di log re
 
 Il valore predefinito di logCountPerRequest è 1000, in alcuni casi potrebbe essere troppo piccolo. I valori accettati devono essere compresi tra 0 e 10.000.
 
-## Impossibile collegare i registri di tracciamento ai destinatari {#link-recipients}
+## Impossibile collegare i registri ai destinatari {#link-recipients}
 
 In Adobe Campaign Classic, una mappatura di destinazione dovrebbe essere univoca in termini di schema del destinatario rispetto a schemi di registro/registro di trasmissione.
 

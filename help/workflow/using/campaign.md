@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Campagna
-description: Campagna
+title: Campaign
+description: Campaign
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -13,7 +13,9 @@ ht-degree: 3%
 ---
 
 
-# Campagna{#campaign}
+# Campaign{#campaign}
+
+![](../../assets/common.svg)
 
 I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Campaign** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../campaign/using/designing-marketing-campaigns.md).
 

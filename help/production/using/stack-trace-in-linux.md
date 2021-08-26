@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Traccia dello stack in Linux{#stack-trace-in-linux}
+
+![](../../assets/v7-only.svg)
 
 Una traccia di stack **traccia di stack** rappresenta una traccia contenuta in un file di tipo **core**. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
@@ -23,7 +25,6 @@ Una traccia di stack **traccia di stack** rappresenta una traccia contenuta in u
 >* **gdb - Il** debugger GNU deve essere installato sul computer.
 
 >
-
 
 
 Il supporto tecnico di Adobe Campaign può richiedere questa **traccia dello stack**. Per ottenerlo, immetti i seguenti comandi in Linux:

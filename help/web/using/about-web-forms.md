@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Introduzione ai moduli web{#about-web-forms}
+
+![](../../assets/common.svg)
 
 Adobe Campaign integra un modulo grafico per definire e pubblicare i moduli Web, al fine di creare pagine contenenti campi di input e di selezione e che possono includere dati nel database. Consente di progettare e pubblicare pagine Web a cui gli utenti possono accedere per visualizzare o immettere informazioni.
 
@@ -80,7 +82,6 @@ Nelle sezioni seguenti viene illustrato come definire il contenuto e il layout d
 >* Per verificare che la visualizzazione della pagina e l&#39;archiviazione delle informazioni siano presenti nella sequenza appropriata, attivare la modalità di debug nel modulo Web. A questo scopo, passa alla sottoscheda **[!UICONTROL Preview]** e seleziona la casella **[!UICONTROL Enable debug mode]** : tutte le informazioni raccolte e gli eventuali errori di esecuzione verranno visualizzati nella parte inferiore di ogni pagina.
 
 >
-
 
 
 ### Utilizzo delle icone nella barra degli strumenti {#using-the-icons-in-the-toolbar}

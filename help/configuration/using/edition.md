@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Modifica albero di navigazione di Campaign Explorer{#edition}
+
+![](../../assets/v7-only.svg)
 
 La schermata per la creazione e la configurazione dei documenti di configurazione della gerarchia di navigazione è accessibile tramite il nodo **[!UICONTROL Administration > Configuration > Navigation hierarchies]** :
 

@@ -5,19 +5,25 @@ description: Centro messaggi (Esecuzione)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '229'
+ht-degree: 9%
 
 ---
 
 
 # Centro messaggi (Esecuzione){#message-center-execution}
 
-I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Centro messaggi - Esecuzione** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Per ulteriori informazioni su come configurare i flussi di lavoro tecnici relativi al modulo Centro messaggi, consulta [questa pagina](../../message-center/using/technical-workflows.md).
+Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il componente aggiuntivo **Message Center - Execution** .
+
+Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
+
+![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

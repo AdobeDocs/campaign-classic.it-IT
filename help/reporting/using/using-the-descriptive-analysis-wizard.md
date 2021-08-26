@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Utilizzo della procedura guidata di analisi descrittiva{#using-the-descriptive-analysis-wizard}
+
+![](../../assets/common.svg)
 
 Per creare un rapporto di analisi descrittivo, utilizza la procedura guidata dedicata. La configurazione dipende dai dati da analizzare e dal rendering desiderato.
 
@@ -65,7 +67,7 @@ Le opzioni di configurazione disponibili per un report creato tramite il modello
 
 Quando si utilizza la procedura guidata di analisi descrittiva per analizzare i dati, le opzioni disponibili dipendono dalle impostazioni selezionate. Questi sono descritti di seguito.
 
-### Unione dati {#data-binning}
+### Associazione dei dati {#data-binning}
 
 Quando selezioni le variabili da visualizzare, puoi definire il binding dei dati, in altre parole configurare i criteri di raggruppamento per i dati selezionati.
 

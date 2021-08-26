@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '905'
 ht-degree: 8%
 
 ---
 
 # Parametri e-mail {#email-parameters}
+
+![](../../assets/common.svg)
 
 Questa sezione presenta le opzioni e i parametri specifici per la consegna e-mail.
 
@@ -30,6 +32,10 @@ Per ulteriori informazioni sulla configurazione e sulle best practice di E-mail 
 >Ccn e-mail è una funzionalità opzionale. Controlla il contratto di licenza e contatta il responsabile dell’account per attivarla.
 
 Quando crei un nuovo modello di consegna o consegna, Ccn e-mail non è abilitato per impostazione predefinita. Devi attivarla manualmente a livello di consegna e-mail o di modello di consegna.
+
+>[!NOTE]
+>
+>Se utilizzi Ccn e-mail con MTA avanzato, questa opzione viene abilitata automaticamente per tutte le consegne.
 
 Per abilitare CCN e-mail per un modello di consegna e-mail, segui i passaggi seguenti:
 
@@ -91,7 +97,7 @@ Oltre alla modalità predefinita, sono disponibili anche le seguenti opzioni:
 
 * **[!UICONTROL Force the generation of the mirror page]**: anche se nella consegna non viene inserito alcun collegamento alla pagina speculare, verrà creata la pagina speculare.
 * **[!UICONTROL Do not generate the mirror page]**: non viene generata alcuna pagina speculare, anche se il collegamento è presente nella consegna.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: questa opzione ti consente di accedere al contenuto della pagina speculare, con informazioni sulla personalizzazione, nella finestra del registro di consegna. A questo scopo, dopo la fine della consegna, fai clic sulla scheda **[!UICONTROL Delivery]** e seleziona la riga del destinatario della pagina speculare di cui desideri visualizzare la pagina. Fai clic sul collegamento **[!UICONTROL Display the mirror page for this message...]** .
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: questa opzione ti consente di accedere al contenuto della pagina speculare, con informazioni sulla personalizzazione, nella finestra del registro di consegna. A questo scopo, dopo la fine della consegna, fai clic sulla scheda **[!UICONTROL Delivery]** e seleziona la riga del destinatario della pagina speculare di cui desideri visualizzare la pagina. Fai clic sul collegamento **[!UICONTROL Display the mirror page for this message...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 

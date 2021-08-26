@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Monitoraggio dei processi{#monitoring-processes}
+
+![](../../assets/v7-only.svg)
 
 Il server applicazioni e il server di reindirizzamento (**tracking**) possono essere monitorati manualmente o automaticamente.
 
@@ -31,7 +33,7 @@ La pagina visualizzata consente di visualizzare lo stato dell’istanza connessa
 
 In [questa pagina](../../production/using/monitoring-guidelines.md) sono descritti metodi aggiuntivi per monitorare i diversi processi di Campaign.
 
-### Giornale di registrazione del registro {#log-journal}
+### Giornale di registrazione log {#log-journal}
 
 È possibile visualizzare il giornale di registrazione del registro relativo a un processo. A questo scopo, fai clic sul processo, ad esempio **mta**, quindi fai clic su **[!UICONTROL Open the log journal]** .
 
@@ -257,7 +259,6 @@ Sono raggruppati in **Monitoraggio** > &quot;Monitoraggio SMTP&quot;.
 >* Le **[!UICONTROL SMTP sending statistics]** vengono offerte solo se il server di statistiche viene avviato sull&#39;istanza.
 
 >
-
 
 
 ### Statistiche di invio SMTP {#smtp-sending-statistics}
@@ -585,7 +586,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **nome**: Nome dell’istanza che verrà visualizzato nella prima parte dell’e-mail.
 * **recipientList**  (facoltativo): consente di inviare un rapporto di monitoraggio relativo a una particolare istanza tramite e-mail.
 
-#### Elemento &#39;Host&#39; {#host--element}
+#### Elemento &quot;Host&quot; {#host--element}
 
 Questo elemento configura il monitoraggio di un determinato server sull&#39;host, ovvero
 
@@ -625,7 +626,7 @@ Per configurarlo, modifica questo file e indica in quale directory è installato
 
 Per avviare il monitoraggio, esegui il file **netreport.bat** o **netreport.sh** a intervalli regolari tramite uno script. Un report viene inviato dopo la prima esecuzione e quindi solo in caso di cambiamento di stato.
 
-### Test del monitoraggio {#testing-monitoring}
+### Verifica del monitoraggio {#testing-monitoring}
 
 Per verificare il monitoraggio, esegui il file **netreport.bat** o **netreport.sh**.
 

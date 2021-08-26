@@ -5,7 +5,7 @@ description: Questa sezione descrive il flusso di lavoro tecnico installato con 
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 
 
 # Rendering della casella in entrata (IR){#inbox-rendering}
+
+![](../../assets/common.svg)
 
 Il flusso di lavoro descritto di seguito viene installato con il modulo **Rendering della casella in entrata (IR)** per impostazione predefinita. Per ulteriori informazioni sul rendering della casella in entrata, consulta questa [sezione](../../delivery/using/inbox-rendering.md).
 

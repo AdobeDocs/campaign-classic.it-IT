@@ -5,7 +5,7 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
+source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Configurazione della pipeline {#configuring-pipeline}
+
+![](../../assets/common.svg)
 
 I parametri di autenticazione come l’ID cliente, la chiave privata e l’endpoint di autenticazione sono configurati nei file di configurazione dell’istanza.
 L’elenco dei trigger da elaborare è configurato in un’opzione in formato JSON.

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Caso di utilizzo: visualizzare un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
+
+![](../../assets/v7-only.svg)
 
 Le risposte ai sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
 

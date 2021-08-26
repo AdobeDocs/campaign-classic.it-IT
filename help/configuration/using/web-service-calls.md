@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Chiamate per servizi web{#web-service-calls}
+
+![](../../assets/v7-only.svg)
 
 ## Informazioni generali {#general-information}
 
@@ -25,7 +27,7 @@ I servizi Web consentono di creare più applicazioni da un sistema di terze part
 * Sviluppo di interfacce speciali con funzionalità semplificate (interfacce web, ecc.),
 * L&#39;alimentazione e la ricerca dei dati nella banca dati, osservando le regole commerciali e rimanendo isolati dal modello fisico sottostante.
 
-## Definizione dei servizi Web {#definition-of-web-services}
+## Definizione dei servizi web {#definition-of-web-services}
 
 La definizione dei servizi Web implementati sul server applicazioni Adobe Campaign è disponibile dagli schemi di dati.
 
@@ -220,7 +222,7 @@ Il token di sicurezza ha le seguenti caratteristiche:
    * gli URL della pagina vengono aggiornati per aggiornare il token di sicurezza
    * i moduli vengono inoltre aggiornati tramite un campo nascosto contenente il token
 
-#### Spostamento token di sicurezza {#security-token-movement}
+#### Movimento token di sicurezza {#security-token-movement}
 
 Se accessibile tramite la console, è:
 
@@ -236,7 +238,7 @@ Da una chiamata SOAP:
 
 * viene aggiunto alle intestazioni di chiamata
 
-### Esempi di chiamate {#call-examples}
+### Esempi di chiamata {#call-examples}
 
 * Utilizzando **HttpSoapConnection/SoapService**:
 

@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Introduzione ai cubi{#about-cubes}
+
+![](../../assets/common.svg)
 
 L&#39;esplorazione dei dati nel database viene offerta tramite il modulo **Marketing Analytics** . Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare report e generare popolazioni target. Una volta identificati, vengono memorizzati in elenchi che possono essere utilizzati in Adobe Campaign (targeting, segmentazione, ecc.).
 
@@ -79,7 +81,7 @@ Quando si utilizzano i cubi, è necessario conoscere i seguenti concetti:
 
    Le misure possono essere calcolate: ad esempio, il tasso di accettazione di un&#39;offerta è il rapporto tra il numero di volte in cui è stata presentata rispetto al numero di volte in cui è stata accettata.
 
-## Area di lavoro del cubo {#cube-workspace}
+## Area di lavoro dei cubi {#cube-workspace}
 
 I cubi sono memorizzati nel nodo **[!UICONTROL Administration > Configuration > Cubes]** .
 
