@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 91%
+source-wordcount: '1160'
+ht-degree: 87%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 91%
 ![](../../assets/v7-only.svg)
 
 In questa pagina sono elencate le versioni [!DNL Gold Standard]. Per ulteriori informazioni su Campaign [!DNL Gold Standard], visita [questa pagina](gs-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) Versione [!DNL Gold Standard] 12{#gs-12}
+
+_27 agosto 2021_
+
+La build 9032@99a3894 include le seguenti correzioni:
+
+* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestire caratteri speciali. I parametri URL sono ora codificati.
+* È stato risolto un problema relativo ai selettori di date che poteva causare la visualizzazione di un messaggio di errore di blocco nella console. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png)Versione [!DNL Gold Standard] 11{#gs-11}
 
