@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 95%
@@ -169,4 +169,4 @@ Su linux, _apache_neolane.conf_ è ora installato nella directory `conf`.
 * È stato risolto un problema che causava l’arresto anomalo del server durante la visualizzazione dei dati di destinazione del resto di un’attività **Split** in un flusso di lavoro.
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
 * È stato risolto un problema nell’attività di arricchimento con variabili di istanza definite da utenti non amministratori. (NEO-25653)
-* È stata corretta una regressione che poteva bloccare l’esportazione dei dati del flusso di lavoro in un database FDA (Teradate, Snowflake).
+* È stata corretta una regressione che poteva bloccare l’esportazione dei dati del flusso di lavoro in un database FDA (Teradata, Snowflake).
