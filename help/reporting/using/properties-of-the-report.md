@@ -6,9 +6,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,6 @@ Il linguaggio di modifica è la lingua in cui si scrive. Quando aggiungi una lin
 
 Nella scheda **[!UICONTROL Rendering]** puoi personalizzare la modalità di visualizzazione dei dati per la pagina. Puoi selezionare:
 
-* Il motore di rendering del grafico: per impostazione predefinita, il motore di rendering è HTML 5.
 * Tipo di navigazione nel rapporto: tramite pulsanti o collegamenti.
 * Posizione predefinita delle etichette per gli elementi del report. Questa posizione può essere sovraccaricata per ogni elemento.
 * Il modello o il tema utilizzato per generare le pagine dei rapporti.

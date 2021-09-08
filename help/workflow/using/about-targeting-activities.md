@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,14 @@ Queste attività ti consentono di creare uno o più target definendo i set e sud
 * **Celle**: fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati e facilita la manipolazione di tali sottoinsiemi in presenza di molti di essi. Per ulteriori informazioni, consulta la sezione [Celle](cells.md) .
 * **Offerte per cella**: consente di collegare offerte diverse a ciascun sottoinsieme di una popolazione. Consulta la sezione [Offerte per cella](offers-by-cell.md) .
 * **Il sondaggio risponde**: consente di recuperare le informazioni raccolte durante un sondaggio. Per ulteriori informazioni, consulta questa [sezione](../../surveys/using/getting-started-with-surveys.md).
-* **Profilo** di consegna: consente di aggiungere un profilo di consegna. Consulta la sezione [Profilo di consegna](delivery-outline.md) .
-* **Arricchimento**: consente di aggiungere colonne a una tabella di lavoro o a un flusso di lavoro. Consulta la sezione [Enrichment](enrichment.md) .
-* **Modifica schema**: consente di trasformare, standardizzare e, se necessario, arricchire i dati. Per ulteriori informazioni, consulta la sezione [Modifica schema](edit-schema.md) .
-* **Motore** di offerta: consente di chiamare il motore di offerta Interazione in un flusso di lavoro. Consulta la sezione [Motore di offerta](offer-engine.md) .
-* **Deduplication**: consente di rimuovere i duplicati dalle attività in entrata. Consulta la sezione [Deduplication](deduplication.md) .
-* **Modifica dimensione**: consente di modificare la dimensione di targeting durante il ciclo di costruzione del flusso di lavoro. Consulta la sezione [Cambia dimensione](change-dimension.md) .
-* **Servizi** di abbonamento: consente di gestire gli abbonamenti e gli annullamenti degli abbonamenti a un servizio di informazioni. Consulta la sezione [Subscription Services](subscription-services.md) .
-* **Aggiornamento** elenco: registra il risultato delle attività in entrata in un elenco. Consulta la sezione [Aggiornamento elenco](list-update.md) .
-* **Aggiorna dati**: consente di aggiornare in modo massiccio i dati nel database. Consulta la sezione [Aggiorna dati](update-data.md) .
-* **Connettore** CRM: ti consente di configurare la sincronizzazione tra Adobe Campaign e un CRM. Consulta la sezione [Connettore di gestione delle relazioni con i clienti](crm-connector.md) .
+* **Profilo** di consegna: consente di aggiungere un profilo di consegna. Consulta la sezione [Profilo di consegna](../../workflow/using/delivery-outline.md) .
+* **Arricchimento**: consente di aggiungere colonne a una tabella di lavoro o a un flusso di lavoro. Consulta la sezione [Enrichment](../../workflow/using/enrichment.md) .
+* **Modifica schema**: consente di trasformare, standardizzare e, se necessario, arricchire i dati. Per ulteriori informazioni, consulta la sezione [Modifica schema](../../workflow/using/edit-schema.md) .
+* **Motore** di offerta: consente di chiamare il motore di offerta Interazione in un flusso di lavoro. Consulta la sezione [Motore di offerta](../../workflow/using/offer-engine.md) .
+* **Deduplication**: consente di rimuovere i duplicati dalle attività in entrata. Consulta la sezione [Deduplication](../../workflow/using/deduplication.md) .
+* **Modifica dimensione**: consente di modificare la dimensione di targeting durante il ciclo di costruzione del flusso di lavoro. Consulta la sezione [Cambia dimensione](../../workflow/using/change-dimension.md) .
+* **Servizi** di abbonamento: consente di gestire gli abbonamenti e gli annullamenti degli abbonamenti a un servizio di informazioni. Consulta la sezione [Subscription Services](../../workflow/using/subscription-services.md) .
+* **Aggiornamento** elenco: registra il risultato delle attività in entrata in un elenco. Consulta la sezione [Aggiornamento elenco](../../workflow/using/list-update.md) .
+* **Aggiorna dati**: consente di aggiornare in modo massiccio i dati nel database. Consulta la sezione [Aggiorna dati](../../workflow/using/update-data.md) .
+* **Connettore** CRM: ti consente di configurare la sincronizzazione tra Adobe Campaign e un CRM. Consulta la sezione [Connettore di gestione delle relazioni con i clienti](../../workflow/using/crm-connector.md) .
+* **[!UICONTROL Change data source]**: ti consente di modificare l’origine dati di un flusso di lavoro  **[!UICONTROL Working table]**. Questo offre maggiore flessibilità per gestire i dati tra diverse origini dati, come FDA, FFDA e database locale. Consulta la sezione [Connettore di gestione delle relazioni con i clienti](../../workflow/using/change-data-source.md) .

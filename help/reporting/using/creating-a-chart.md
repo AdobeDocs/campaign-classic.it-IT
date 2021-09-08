@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '522'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ Per creare un grafico in un rapporto, effettua le seguenti operazioni:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Per utilizzare i dati contestuali, seleziona questa opzione e fai clic sul collegamento **[!UICONTROL Advanced settings...]** . Quindi selezionare i dati che le statistiche riguarderanno.
+   * Per utilizzare i dati contestuali, seleziona **[!UICONTROL Context data]** dal menu a discesa **[!UICONTROL Source]** e fai clic sul collegamento **[!UICONTROL Advanced settings...]** . Quindi selezionare i dati che le statistiche riguarderanno.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Se necessario, è possibile invertire la sequenza di visualizzazione del valore.
 ### Conversione: imbuto {#conversion--funnel}
 
 Questo tipo di grafico consente di tenere traccia del tasso di conversazione degli elementi misurati.
-
-### Avanzamento: misuratore {#progress--gauge}
-
-Questo tipo di grafico consente di visualizzare l’avanzamento di un valore rispetto a un obiettivo definito. Nell’esempio seguente, il quadrante nero mostra il numero di consegne inviate correttamente (76) su un obiettivo di 100 consegne. Il misuratore è diviso in tre intervalli che corrispondono a stati specifici.
-
-![](assets/reporting_graph_type_gauge.png)
-
-Questi elementi vengono definiti durante la configurazione del grafico.
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* Il campo **[!UICONTROL Value]** è rappresentato da un quadrante nero nel grafico. Rappresenta l’elemento di cui si desidera calcolare l’avanzamento. Il valore da rappresentare deve essere già stato salvato per essere utilizzato.
-* Il campo **[!UICONTROL Goal]** rappresenta il valore massimo da raggiungere.
-* Utilizzando il campo **[!UICONTROL Other mark]** è possibile aggiungere un secondo indicatore al grafico.
-* I campi **[!UICONTROL Display range]** consentono di specificare i valori tra cui viene calcolato il rapporto.
-* Il campo **[!UICONTROL Value ranges]** consente di attribuire gli stati (Nessuno, Non valido, Accettabile, Buono) a un set di valori per illustrare meglio l’avanzamento.
-
-Nella sezione **[!UICONTROL Display settings]**, il **[!UICONTROL Change appearance...]** ti consente di configurare la modalità di visualizzazione del grafico.
-
-![](assets/reporting_graph_type_gauge2.png)
-
-L’opzione **[!UICONTROL Display the value below the gauge]** ti consente di visualizzare l’avanzamento del valore sotto il grafico.
-
-Il campo **[!UICONTROL Aperture ratio]** , che deve essere compreso tra 0 e 1, consente di modificare l’apertura del rapporto in un cerchio più o meno completo. Nell’esempio precedente, il valore 0,50 corrisponde a un semicerchio.
-
-Il campo **[!UICONTROL Width]** consente di modificare le dimensioni del grafico.
 
 ## Interazione con il grafico {#interaction-with-the-chart}
 

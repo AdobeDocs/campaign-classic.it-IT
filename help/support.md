@@ -4,7 +4,7 @@ title: 'Guida e opzioni di supporto per Campaign Classic '
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 71%
@@ -99,7 +99,7 @@ Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/do
 >
 >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1.3)](rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1.4)](rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Come accedere al Pannello di controllo Campaign?
 

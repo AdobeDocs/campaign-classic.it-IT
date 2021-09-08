@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 877ac37102a09a40ea59ef073afa00b9d9bd7dde
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 100%
+source-wordcount: '4542'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,19 @@ ht-degree: 100%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Agosto 2021{#aug-2021}
+
+È stata aggiunta una nuova attività del flusso di lavoro: Cambia origine dati - [Ulteriori informazioni](../../workflow/using/change-data-source.md)
+
+I badge di applicabilità sono stati aggiunti alle pagine della documentazione: **Si applica solo alla versione v7** per le funzionalità di Campaign Classic v7 e **si applica alle versioni v7 e v8** per le funzionalità comuni.
+
+È stata aggiunta una nota sull’integrazione tra Campaign e AEM Assets disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](../../integrations/using/configuring-access-to-assets.md)
+
+Le schermate e i parametri delle applicazioni web e dei rapporti sono stati aggiornati dopo la rimozione del Flash di Adobi.
+
+Il tipo di grafico **Gage** è stato rimosso.
+
 
 ## Luglio 2021 {#july-2021}
 
