@@ -6,16 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Domande frequenti sul reporting {#reporting-faq}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Come posso creare nuovi report? {#how-can-i-create-new-reports-}
 

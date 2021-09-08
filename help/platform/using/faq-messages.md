@@ -6,16 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Convalidare, inviare e tracciare messaggi {#validate-send-track}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Test e convalida {#test-and-validate-before-sending}
 
