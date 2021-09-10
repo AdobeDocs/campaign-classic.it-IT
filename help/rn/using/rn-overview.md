@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
+source-git-commit: 0c6e328087135fd9b35ca6cf0669090be0c93957
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 95%
@@ -35,9 +35,9 @@ Le **ultime build GA** sono: [[!DNL Gold Standard]  12](../../rn/using/gold-stan
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** (RC): versione più recente con nuove funzionalità.
 
-![](assets/do-not-localize/orange3.png) **Non più disponibile**  - Nessuna distribuzione. Nessuna correzione di bug. Si consiglia di eseguire l’aggiornamento a una build più recente.
+![](assets/do-not-localize/orange3.png) **Non più disponibile**  - Nessuna distribuzione. Nessun bug fix. Si consiglia di eseguire l’aggiornamento a una build più recente.
 
-![](assets/do-not-localize/red3.png) **Obsoleto**: nessuna distribuzione. Nessuna correzione di bug. Le implementazioni esistenti devono essere aggiornate.
+![](assets/do-not-localize/red3.png) **Obsoleto**: nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate.
 
 ## Raccomandazioni{#recommendations}
 
