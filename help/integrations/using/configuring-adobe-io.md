@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 >Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth, **devi passare all&#39;Adobe I/O come descritto di seguito**.
 >Durante questo passaggio a [!DNL Adobe I/O], alcuni trigger in arrivo potrebbero andare persi.
 >
->La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **18 agosto 2021**. Gli ambienti ospitati beneficiano di un’estensione fino al **30 novembre 2021**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino al 30 novembre 2021. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
+>La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **18 agosto 2021**. Gli ambienti ospitati beneficiano di un’estensione fino al **30 novembre 2021**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino al 30 novembre 2021. Devi [fornire ad Adobe l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
@@ -33,8 +33,7 @@ Questa integrazione si applica solo a partire da **Campaign Classic 20.3, 20.2.4
 Prima di avviare questa implementazione, controlla di avere:
 
 * un **identificatore organizzazione** valido: l’identificatore dell’organizzazione IMS (Identity Management System) è l’identificatore univoco all’interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’accesso singolo IMS (SSO). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Accesso sviluppatore** alla tua organizzazione. L’amministratore di sistema dell’organizzazione IMS deve seguire **Aggiungi gli sviluppatori a un singolo profilo di prodotto**
-procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) per fornire agli sviluppatori l&#39;accesso per il profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
+* a **Accesso sviluppatore** alla tua organizzazione. L’amministratore di sistema dell’organizzazione IMS deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) per fornire agli sviluppatori l’accesso per il profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato ai trigger.
 
 ## Passaggio 1: Crea/aggiorna progetto di Adobe I/O {#creating-adobe-io-project}
 
