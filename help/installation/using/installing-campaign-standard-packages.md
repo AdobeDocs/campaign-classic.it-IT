@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 6%
@@ -31,7 +31,7 @@ I pacchetti incorporati contengono un set di funzioni che possono essere install
 
 Per installare un pacchetto incorporato:
 
-1. Accedi alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Package import...]** nella console client di Adobe Campaign.
+1. Accedi alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 1. Seleziona **[!UICONTROL Install a standard package]**.
 1. Nell&#39;elenco dei pacchetti, seleziona i pacchetti da installare.
    >[!NOTE]
