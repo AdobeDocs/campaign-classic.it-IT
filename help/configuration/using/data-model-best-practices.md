@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4007'
 ht-degree: 1%
 
 ---
@@ -251,7 +251,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 * Se desideri mantenere i registri più a lungo, questa decisione deve essere presa con attenzione in base alle dimensioni del database e al volume dei messaggi inviati. Come promemoria, la sequenza Adobe Campaign è un numero intero a 32 bit.
 * Si raccomanda di non avere più di 1 miliardo di record alla volta in queste tabelle (circa il 50% dei 2,14 miliardi di id disponibili) per limitare i rischi di consumo di tutti gli id disponibili. Alcuni clienti dovranno ridurre la durata di conservazione al di sotto dei 180 giorni.
 
-Ulteriori informazioni sulla conservazione dei dati in [Linee guida sulla privacy e la sicurezza delle campagne](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-overview.html#consent).
+Ulteriori informazioni sulla conservazione dei dati in [Linee guida sulla privacy e la sicurezza delle campagne](../../platform/using/privacy-and-recommendations.md).
 
 Ulteriori informazioni sul flusso di lavoro di pulizia della base dati di Campaign [in questa sezione](../../production/using/database-cleanup-workflow.md).
 

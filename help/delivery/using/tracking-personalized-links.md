@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -26,7 +26,7 @@ L’utilizzo di JavaScript nel contenuto delle e-mail (HTML o testo) consente di
 
 Puoi aggiungere istruzioni specifiche di pre-elaborazione per creare uno script dell’URL e tenerne traccia. [Ulteriori informazioni](pre-processing-instructions.md)
 
-Per il rilevamento del tracciamento, Adobe Campaign incorpora [Tidy](http://www.html-tidy.org/) per analizzare l&#39;origine HTML e rilevare il pattern. Elenca tutti gli URL del contenuto in modo che possano essere tracciati singolarmente. Adobe Campaign utilizza di nuovo Tidy per sostituire l&#39;URL (`http://myurl.com`) con un URL che punta al server di reindirizzamento di Adobe Campaign.
+Per il rilevamento del tracciamento, Adobe Campaign incorpora [Tidy](https://www.html-tidy.org/) per analizzare l&#39;origine HTML e rilevare il pattern. Elenca tutti gli URL del contenuto in modo che possano essere tracciati singolarmente. Adobe Campaign utilizza di nuovo Tidy per sostituire l&#39;URL (`http://myurl.com`) con un URL che punta al server di reindirizzamento di Adobe Campaign.
 
 Ad esempio, nel contenuto iniziale: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` è sostituito per un particolare destinatario con: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 

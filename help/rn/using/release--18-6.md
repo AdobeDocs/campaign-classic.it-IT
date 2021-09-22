@@ -9,9 +9,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '794'
 ht-degree: 7%
 
 ---
@@ -105,11 +105,11 @@ Per ulteriori informazioni sul binding delle query, consulta questi articoli:
  </tbody> 
 </table>
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
 decryptString
 
-La funzione **decryptString** è obsoleta. Consulta l&#39;articolo [Funzioni obsolete e rimosse](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html) .
+La funzione **decryptString** è obsoleta. Consulta l&#39;articolo [Funzioni obsolete e rimosse](deprecated-features.md) .
 
 Per i nuovi clienti, questa funzione ora viene utilizzata solo per decifrare l’ID crittografato del destinatario nelle pagine di destinazione. Per decrittografare le password memorizzate in un account esterno, utilizza la nuova funzione **decryptPassword** .
 

@@ -4,9 +4,9 @@ title: Configurazione dell’integrazione
 description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Il parametro &quot;consumer&quot; identifica l’istanza come uno di questi cons
 ## Come configurare l’opzione Pipeline {#configure-pipeline-option}
 
 Aggiungere o modificare attivatori di Experience Cloud sotto l&#39;array &quot;triggers&quot;; non modificare il resto.
-Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito web](http://jsonlint.com/).
+Assicurati che il JSON sia valido con l&#39;aiuto di questo [sito web](https://jsonlint.com/).
 
 * &quot;name&quot; è l&#39;ID trigger. Un carattere jolly &quot;*&quot; cattura tutti i trigger.
 * &quot;Consumer&quot; è una stringa univoca che identifica in modo univoco l&#39;istanza nlserver. Di solito può essere il nome dell&#39;istanza stessa. Per più ambienti (dev/stage/prod), assicurati che sia univoco per ciascuno di essi in modo che ogni istanza ottenga una copia del messaggio.

@@ -3,9 +3,9 @@ product: campaign
 title: Versione 19.2
 description: Note sulla versione di Campaign 19.2
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 21%
 
 ---
@@ -125,7 +125,7 @@ _2 dicembre 2019_
  </tbody> 
 </table>
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
 * Sono state corrette le vulnerabilità di cross-site scripting memorizzate nell’interfaccia di Campaign: convalida dei dati di input e codifica dell’output. (NEO-16810)
 * È stato risolto un problema di sicurezza relativo all’autorizzazione del profilo che poteva consentire l’accesso a dati non autorizzati, rafforzando i criteri di restrizione dell’accesso. (NEO-14445)
@@ -150,7 +150,7 @@ _2 dicembre 2019_
 
 _Sistemi obsoleti_
 
-I seguenti sistemi sono ora [obsoleti](https://helpx.adobe.com/it/campaign/kb/deprecated-and-removed-features.html) per le implementazioni di Campaign Classic:
+I seguenti sistemi sono ora [obsoleti](deprecated-features.md) per le implementazioni di Campaign Classic:
 * Apache 2.2
 * Centos 6
 

@@ -5,10 +5,10 @@ description: Ulteriori informazioni sui flussi di lavoro di consegna predefiniti
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,6 @@ I flussi di lavoro descritti di seguito sono installati per impostazione predefi
    <td> <span class="uicontrol">Billing</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> Questo flusso di lavoro invia il rapporto sull’attività del sistema all’operatore di "fatturazione" tramite e-mail. Viene attivato il 25 di ogni mese per impostazione predefinita.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Fatturazione (profili attivi)</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>Questo flusso di lavoro conta il numero di profili attivi. Viene attivato ogni notte all’1 per impostazione predefinita.</p> <p>"<strong>Profilo</strong>" significa un record di informazioni (ad esempio: un record nella tabella nmsRecipient o una tabella esterna contenente un ID cookie, un ID cliente, un identificatore mobile o altre informazioni rilevanti per un particolare canale) che rappresenta un cliente finale, potenziale o lead. La fatturazione riguarda solo i profili "attivi". Un profilo è considerato "attivo" se il profilo è stato oggetto di targeting o comunicato negli ultimi 12 mesi tramite qualsiasi canale.</p> <p>I canali Facebook e Twitter non vengono presi in considerazione.</p> <p>Puoi avere una panoramica del <span class="uicontrol">Numero di profili attivi</span> dal menu <span class="uicontrol">Amministrazione</span> &gt; <span class="uicontrol">Gestione campagne</span> &gt; <span class="uicontrol">Metriche cliente</span> .</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Pulizia degli alias</span> <br /> </td> 

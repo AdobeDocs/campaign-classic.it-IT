@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 15%
+source-wordcount: '836'
+ht-degree: 16%
 
 ---
 
@@ -93,13 +93,11 @@ I profili attivi sono i profili conteggiati a scopo di fatturazione.
 
 La fatturazione riguarda solo i profili che sono **attivi**. Un profilo è considerato attivo se è stato eseguito il targeting del profilo o se è stato comunicato con esso negli ultimi 12 mesi tramite qualsiasi canale.
 
-I profili esclusi durante la preparazione della consegna (regole di tipologia, quarantena) non vengono presi in considerazione. Un profilo per il quale sono state eseguite le destinazioni da più consegne verrà conteggiato una sola volta.
+Un profilo per il quale sono state eseguite le destinazioni da più consegne viene conteggiato una sola volta.
 
 >[!NOTE]
 >
 >I canali Facebook e Twitter non vengono presi in considerazione.
-
-Da Esplora campagne, sfoglia **[!UICONTROL Administration > Campaign Management > Customer metrics]** per avere una panoramica del numero di profili attivi. Il conteggio effettivo viene eseguito dal **[!UICONTROL Number of active billing profiles]** ([!UICONTROL billingActiveContactCount]) [flusso di lavoro tecnico](../../workflow/using/about-technical-workflows.md). Questo flusso di lavoro viene eseguito ogni giorno e aggiunge i nuovi dati al rapporto esistente per il periodo corrente nella cartella **[!UICONTROL Customer metrics]** .
 
 Il conteggio dei profili attivi è disponibile solo per **istanze di marketing**. Non è disponibile per le istanze di esecuzione, ovvero le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
 

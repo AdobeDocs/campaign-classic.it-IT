@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2535'
 ht-degree: 99%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 99%
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
       + Connettore Adobe Analytics{#analytics-connector}
+         + [Provisioning del connettore Adobe Analytics](platform/using/adobe-analytics-provisioning.md)
          + [Integrazione con Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
          + [Come migrare al connettore Adobe Analytics](technotes/using/aa-connector-migration.md)
          + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)

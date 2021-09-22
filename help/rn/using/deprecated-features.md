@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   </tr> 
   <tr> 
    <td>Applicazioni web - Micrositi</td>
-   <td>A partire dalla versione 18.10 di Campaign, i micrositi non sono più disponibili. Puoi migliorare la protezione limitando l’accesso solo ai domini dedicati nei file di configurazione di Adobe Campaign e utilizzando URL personalizzati in Campaign tramite gli alias DNS. <a href="https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html">Ulteriori informazioni</a></td>
+   <td>A partire dalla versione 18.10 di Campaign, i micrositi non sono più disponibili. Puoi migliorare la protezione limitando l’accesso solo ai domini dedicati nei file di configurazione di Adobe Campaign e utilizzando URL personalizzati in Campaign tramite gli alias DNS.</td>
   </tr> 
   <tr> 
    <td>Notifiche push - Connettore binario iOS</td>
@@ -183,7 +183,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti strumenti.
 
-* Java JDK 7. [Ulteriori informazioni](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7. [Ulteriori informazioni](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5 / 4.3 / 5.x, tranne quando incorporato in un altro strumento. [Ulteriori informazioni](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Motori di database {#dbe-eol}
@@ -201,14 +201,14 @@ A partire dalla versione 20.2, Adobe Campaign non è più compatibile con i segu
 A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server FDA:
 
 * PostgreSQL 9.3. [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Ulteriori informazioni](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Ulteriori informazioni](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5. [Ulteriori informazioni](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Ulteriori informazioni](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 - 14.1. [Ulteriori informazioni](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic non è compatibile con i seguenti server in Federated Data Access (FDA).
 
-* DB2 UDB 9.5, 9.7. La versione più recente di DB2 è supportata tramite Federated Data Access (FDA). [Ulteriori informazioni](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Versioni più recenti di Oracle sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5, 9.7. La versione più recente di DB2 è supportata tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i, 10G R2. Versioni più recenti di Oracle sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Versioni più recenti di PostgreSQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. Versioni più recenti di SQL Server sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1044)
 * MySQL 5.1. Versioni più recenti di MySQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://en.wikipedia.org/wiki/InfiniDB)

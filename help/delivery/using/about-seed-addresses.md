@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatar
 
 Una delle ragioni principali per utilizzarli è **la tua mailing list protection**. L’inserimento di indirizzi di seed nella mailing list consente di notare se viene utilizzato da terze parti, in quanto gli indirizzi di seed in essa contenuti riceveranno le consegne inviate alla mailing list.
 
-Inoltre, gli indirizzi di seed ti consentono di **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima dell’invio, inviandole le bozze (consulta [Utilizzare gli indirizzi di seed come bozza](steps-defining-the-target-population.md#using-seed-addresses-as-proof).
+Inoltre, gli indirizzi di seed ti consentono di **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima dell’invio, inviandole prove (consulta [Utilizzare gli indirizzi di seed come prova](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
@@ -37,7 +37,7 @@ Gli indirizzi di seed vengono aggiunti al target delle consegne importando o cre
 >
 >Gli indirizzi di seed non appartengono alla tabella dei destinatari, ma vengono creati in una tabella separata. Se estendi la tabella dei destinatari con nuovi dati, devi estendere anche la tabella degli indirizzi di seed con gli stessi dati. In caso contrario, i campi estesi non saranno presi in considerazione per gli indirizzi di seed.
 >
->Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso di utilizzo: seleziona gli indirizzi di seed in criteri](use-case--selecting-seed-addresses-on-criteria.md)
+>Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso di utilizzo: seleziona indirizzi di seed in criteri](use-case--selecting-seed-addresses-on-criteria.md).
 
 Per le consegne di direct mailing, gli indirizzi di seed vengono aggiunti durante l’estrazione e mescolati nel documento di output.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -96,7 +96,9 @@ A questo scopo, esegui i seguenti passaggi:
 
    Fai clic su **[!UICONTROL Define new additional fields]** per selezionare la dimensione di destinazione nella consegna.
 
-   Per impostazione predefinita, la gestione dell’esclusione viene memorizzata nelle stesse tabelle dei messaggi. Se desideri configurare lo spazio di archiviazione per il tracciamento collegato alla mappatura di destinazione, seleziona la casella **Genera uno schema di archiviazione per il tracciamento** .
+   Per impostazione predefinita, la gestione dell’esclusione viene memorizzata nella stessa tabella dei messaggi.
+
+   Se desideri configurare lo spazio di archiviazione per il tracciamento collegato alla mappatura di destinazione, seleziona la casella **Genera uno schema di archiviazione per il tracciamento** .
 
    ![](assets/mapping_diffusion_wizard_3.png)
 

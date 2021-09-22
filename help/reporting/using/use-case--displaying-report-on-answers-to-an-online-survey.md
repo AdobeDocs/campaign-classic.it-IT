@@ -6,7 +6,7 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -41,23 +41,23 @@ Per raccogliere le risposte al sondaggio, effettua le seguenti operazioni:
 1. Modifica l’attività e seleziona il sondaggio di cui desideri analizzare le risposte.
 1. Attiva l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
 1. Seleziona le colonne da estrarre (in questo caso: seleziona: tutti i campi archiviati. Questi sono i campi che contengono le risposte.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
 1. Una volta configurata la casella di raccolta delle risposte, posiziona un’attività di tipo **[!UICONTROL List update]** per salvare i dati.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
    In questa attività, specifica l’elenco da aggiornare e deseleziona l’opzione **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** : le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all&#39;elenco non verrà rigenerato per ogni aggiornamento, il che garantisce l&#39;integrità del cubo che utilizza questo elenco.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
 1. Avvia il flusso di lavoro per confermare la configurazione.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
 
    L’elenco specificato viene creato e include lo schema delle risposte al sondaggio.
 
@@ -71,11 +71,11 @@ Per raccogliere le risposte al sondaggio, effettua le seguenti operazioni:
 
 In questo esempio, il cubo è basato sui dati presenti nell’elenco inviato dal flusso di lavoro creato in precedenza.
 
-![](assets/reporting_usecase_2_01.png)
+![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
 Definisci le dimensioni e le misure da visualizzare nel rapporto. In questo caso, vogliamo visualizzare la data del contratto e il paese del convenuto.
 
-![](assets/reporting_usecase_2_02.png)
+![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
 La scheda **[!UICONTROL Preview]** ti consente di controllare il rendering del rapporto.
 
@@ -83,8 +83,8 @@ La scheda **[!UICONTROL Preview]** ti consente di controllare il rendering del r
 
 È quindi possibile creare un report basato su questo cubo ed elaborare i dati e le informazioni.
 
-![](assets/reporting_usecase_3_01.png)
+![](../../surveys/using/assets/reporting_usecase_3_01.png)
 
 Adatta le informazioni da visualizzare in base alle tue esigenze.
 
-![](assets/reporting_usecase_3_02.png)
+![](../../surveys/using/assets/reporting_usecase_3_02.png)

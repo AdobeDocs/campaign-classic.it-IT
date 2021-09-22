@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -283,7 +283,7 @@ Quando utilizzi Oracle con Adobe Campaign, devi configurare i livelli client di 
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Se incontri un problema, assicurati che i pacchetti elencati nella [documentazione di installazione di Oracle](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) siano correttamente installati.
+Se incontri un problema, assicurati che i pacchetti elencati nella [documentazione di installazione di Oracle](https://docs.oracle.com/) siano correttamente installati.
 
 ## Controlli di installazione {#installation-checks}
 

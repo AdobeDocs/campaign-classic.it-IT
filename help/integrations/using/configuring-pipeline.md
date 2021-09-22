@@ -5,7 +5,7 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Il servizio pipeline tiene traccia dei messaggi recuperati da ogni consumatore. 
 Per configurare l’opzione Pipeline, segui questi consigli:
 
 * Aggiungi o modifica attivatori sotto **[!UICONTROL Triggers]**, non devi modificare il resto.
-* Assicurati che il JSON sia valido. È possibile utilizzare una convalida JSON, per esempio, fare riferimento a questo [sito Web](http://jsonlint.com/).
+* Assicurati che il JSON sia valido. È possibile utilizzare una convalida JSON, per esempio, fare riferimento a questo [sito Web](https://jsonlint.com/).
 * &quot;name&quot; corrisponde all’ID trigger. Un carattere jolly &quot;*&quot; rileva tutti gli attivatori.
 * &quot;Consumer&quot; corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
 * Pipelined supporta anche l’argomento &quot;alias&quot;.

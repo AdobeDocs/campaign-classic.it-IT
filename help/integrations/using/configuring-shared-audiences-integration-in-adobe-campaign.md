@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 3%
 
 ---
 
@@ -83,10 +83,10 @@ Per configurare l&#39;origine dati **[!UICONTROL Recipient - Visitor ID]**:
 
 Per la configurazione dell’integrazione con il servizio core Persone o Audience Manager, dobbiamo anche configurare il server di tracciamento delle campagne.
 
-Devi accertarti che Campaign Tracking Server sia registrato sul dominio (CNAME). Per ulteriori informazioni sulla delega dei nomi di dominio, consulta [questo articolo](https://helpx.adobe.com/it/campaign/kb/domain-name-delegation.html).
+Devi accertarti che Campaign Tracking Server sia registrato sul dominio (CNAME). Per ulteriori informazioni sulla delega dei nomi di dominio, consulta [questo articolo](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it).
 
 ## Passaggio 4: Configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
 
-Nel caso in cui il servizio ID visitatore non sia mai stato configurato sulle proprietà web o sui siti web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per informazioni su come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two) .
+Nel caso in cui il servizio ID visitatore non sia mai stato configurato sulle proprietà web o sui siti web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per informazioni su come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
 
 La configurazione e il provisioning sono completati. L’integrazione può ora essere utilizzata per importare ed esportare tipi di pubblico o segmenti.
