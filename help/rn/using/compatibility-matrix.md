@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ![](../../assets/v7-only.svg)
 
-Questo documento elenca tutti i sistemi e i componenti supportati per [la build più recente](../../rn/using/latest-release.md) di **Adobe Campaign Classic v7**. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con Adobe Campaign.
+Questo documento elenca tutti i sistemi e i componenti supportati dalla [versione più recente](../../rn/using/latest-release.md) di **Adobe Campaign Classic v7**. I prodotti e le versioni che non fanno parte di questo elenco non sono compatibili con Adobe Campaign.
 
 Se sei un utente della versione [!DNL Gold Standard], consulta [[!DNL Gold Standard] : matrice di compatibilità](../../rn/using/compatibility-matrix-gs.md).
 
@@ -210,9 +210,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
