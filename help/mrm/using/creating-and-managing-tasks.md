@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ Per creare un&#39;attività collegata direttamente a un programma:
 
 ### Disponibilità dell&#39;operatore {#operator-availability}
 
-Nel dashboard attività, un&#39;icona accanto al nome dell&#39;operatore indica che sta già lavorando su un&#39;altra attività o un altro evento durante il periodo coperto dall&#39;attività. (Attività che l&#39;operatore è responsabile o coinvolto in: viene visualizzato nel campo **[!UICONTROL Assigned to]** o nella casella attività **[!UICONTROL Resources]**.
+Nel dashboard attività, un&#39;icona accanto al nome dell&#39;operatore indica che sta già lavorando su un&#39;altra attività o un altro evento durante il periodo coperto dall&#39;attività. L&#39;attività a cui l&#39;operatore è responsabile o coinvolta viene visualizzata nel campo **[!UICONTROL Assigned to]** o nella casella attività **[!UICONTROL Resources]**.
 
 ![](assets/mrm_task_alert_operator_busy.png)
 

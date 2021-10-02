@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Per creare categorie e spazi, applica lo stesso processo applicato ai visitatori
 
 I visitatori anonimi possono essere sottoposti a un processo di identificazione dei cookie al momento della connessione. Questo riconoscimento implicito si basa sulla cronologia del browser del visitatore.
 
-Durante questo passaggio viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, il visitatore viene riconosciuto (viene quindi identificato implicitamente), in altri casi non viene riconosciuto (e quindi rimane anonimo).
+Durante questo passaggio viene effettuato un confronto tra i dati recuperati dai cookie e quelli presenti nel database. In alcuni casi, i visitatori vengono riconosciuti (sono quindi identificati implicitamente), in altri casi non vengono riconosciuti (e quindi rimangono anonimi).
 
 Per eseguire questa analisi, per lo spazio dell’offerta, seleziona l’opzione **[!UICONTROL Implicitly identify the individual based on their browser history]** .
 

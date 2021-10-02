@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Questa sostituzione consente di risparmiare tempo durante la creazione della con
 
 In questo caso d&#39;uso, il sito **La mia libreria online** vorrebbe inviare uno sconto ai suoi clienti, in base al loro genere letterario preferito.
 
-Il responsabile della consegna ha integrato nella sua e-mail un campo di personalizzazione collegato con il genere preferito. Vorrebbe usare alcuni indirizzi di seed. Questi indirizzi di seed presentano il campo di personalizzazione nella tabella, ma non vi è alcun valore salvato.
+Il responsabile della consegna ha integrato nella sua e-mail un campo di personalizzazione collegato con il genere preferito. L&#39;obiettivo è quello di utilizzare alcuni indirizzi di seed: questi indirizzi di seed presentano il campo di personalizzazione nella tabella, ma non vi è alcun valore salvato.
 
 Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 

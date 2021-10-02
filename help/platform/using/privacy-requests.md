@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '2415'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '2413'
+ht-degree: 99%
 
 ---
 
@@ -384,7 +384,7 @@ La configurazione e l’utilizzo delle richieste di accesso ed eliminazione sono
 
 Oltre a utilizzare gli strumenti di [gestione del consenso](../../platform/using/privacy-management.md#consent-management) forniti da Adobe Campaign, puoi verificare se un consumatore ha negato il consenso alla vendita dei suoi dati personali.
 
-Un consumatore decide, attraverso il tuo sistema, di non dare il consenso per la vendita dei propri dati personali a terzi. In Adobe Campaign, potrai archiviare e tenere traccia di questo tipo di informazioni.
+I contatti possono decidere, attraverso il sistema, che non consentono la vendita dei propri dati personali a terzi. In Adobe Campaign, potrai archiviare e tenere traccia di questo tipo di informazioni.
 
 Affinché ciò funzioni, devi estendere la tabella dei profili e aggiungere un campo **[!UICONTROL Opt-Out for CCPA]**.
 

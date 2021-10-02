@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 5%
 
 ---
@@ -52,15 +52,15 @@ I diritti assegnati al gestore delle offerte consentono loro di eseguire le segu
 
    ![](assets/offer_operators_create_002.png)
 
-I diritti assegnati al gestore della consegna sono/consentono loro di eseguire le seguenti attività:
+I diritti assegnati ai gestori della consegna consentono loro di svolgere i seguenti compiti:
 
 * Visualizzare gli ambienti **[!UICONTROL Live]**.
 * Visualizza e modifica le categorie di offerte.
-* Approva le offerte se s/he è specificato come uno dei suoi revisori.
+* Approva le offerte se questo delivery manager è specificato come uno dei suoi revisori.
 
    >[!NOTE]
    >
-   >Il gestore della consegna può approvare un’offerta solo se è stato definito come revisore durante la configurazione dell’offerta.
+   >I gestori di consegne possono approvare un’offerta solo se sono stati definiti come revisore durante la configurazione dell’offerta.
 
 ## Recupero dei diritti secondo l&#39;operatore {#recap-of-rights-according-to-operator}
 

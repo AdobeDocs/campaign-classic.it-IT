@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '207'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Le offerte possono essere presentate su vari spazi di offerta utilizzando un can
 
 Affinché un&#39;offerta possa essere selezionata dal motore di offerta, deve essere approvata e disponibile in un ambiente live. Per ulteriori informazioni, consulta [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md).
 
-Quando un contatto è in entrata, ci sono due possibili risultati. Il primo è che l’utente non è identificato dal sito su cui sta navigando e il secondo è identificato. Il motore di offerta presenta offerte diverse a seconda che l’utente sia identificato o meno.
+Quando un contatto è in entrata, ci sono due possibili risultati: l’utente che sta navigando nelle pagine può essere identificato dal sito web o meno. Il motore di offerta presenta offerte diverse a seconda che l’utente sia identificato o meno.
 
 Prima di poter presentare offerte su un canale in entrata, devi configurare la chiamata del motore di offerta in cui desideri presentare le offerte. Nella maggior parte dei casi, per un’interazione in entrata, si tratta della pagina web.
 

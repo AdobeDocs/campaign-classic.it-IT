@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ In Campaign v7, sono stati creati i seguenti oggetti:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Vai a **[!UICONTROL Profiles and Targets > Recipient]** e seleziona un destinatario. Come puoi vedere, non si è ancora iscritto al servizio.
+1. Vai a **[!UICONTROL Profiles and Targets > Recipient]** e seleziona un destinatario. Puoi vedere che questo profilo non si è ancora iscritto al servizio.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Per verificare che i dati siano stati replicati correttamente, segui questi pass
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Cerca il destinatario di Campaign v7 e verifica che sia presente in Campaign Standard.
+1. Cerca il destinatario di Campaign v7 e verifica che questo destinatario sia presente in Campaign Standard.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ I passaggi per creare, progettare e inviare l’e-mail sono gli stessi che per u
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Aggiunge un numero di telefono e controlla la casella di abbonamento alla newsletter.
+1. Il destinatario aggiunge un numero di telefono e controlla la casella di abbonamento alla newsletter.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ Quando il destinatario aggiorna i propri dati da tramite l’applicazione web, A
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Nella scheda **[!UICONTROL Subscriptions]** è possibile vedere che si è iscritto al servizio newsletter.
+1. Nella scheda **[!UICONTROL Subscriptions]** è inoltre possibile vedere che il destinatario si è iscritto al servizio newsletter.
 
    ![](assets/acs_connect_lp_18.png)
 

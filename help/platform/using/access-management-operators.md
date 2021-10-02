@@ -6,9 +6,9 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Utilizza la scheda **[!UICONTROL Access rights]** per aggiornare i gruppi e i di
 
 Il collegamento **[!UICONTROL Edit the access parameters...]** ti consente di accedere alle seguenti opzioni:
 
-* L’opzione **[!UICONTROL Disable account]** consente di disabilitare l’account dell’operatore: non accederà più ad Adobe Campaign.
+* L’opzione **[!UICONTROL Disable account]** consente di disabilitare l’account dell’operatore: questo utente non accederà più ad Adobe Campaign.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Il collegamento **[!UICONTROL Edit the access parameters...]** ti consente di ac
 
    >[!IMPORTANT]
    >
-   >Si tratta di una restrizione molto stretta e va usata con cautela. Un operatore connesso con questo tipo di diritti può visualizzare SOLO il contenuto della cartella specificata e non ha accesso a nessun altro nodo della struttura tramite l&#39;explorer. Tuttavia, a seconda delle funzionalità a cui ha accesso (ad esempio: workflow), può visualizzare i dati solitamente memorizzati in nodi che non può vedere.
+   >Si tratta di una restrizione molto stretta e va usata con cautela. Un operatore connesso con questo tipo di diritti può visualizzare SOLO il contenuto della cartella specificata e non ha accesso a nessun altro nodo della struttura tramite l&#39;explorer. Tuttavia, a seconda delle funzionalità a cui l’operatore ha accesso (ad esempio: workflow), l&#39;utente può visualizzare i dati solitamente memorizzati in nodi che non sono accessibili.
 
 ### Controlla le impostazioni {#check-settings}
 

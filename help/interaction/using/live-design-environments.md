@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Per impostazione predefinita, l’interazione viene fornita con un ambiente prec
 
    Questa opzione consente di attivare funzioni specifiche per l’interazione anonima, in particolare durante la configurazione degli spazi di offerta dell’ambiente. Puoi anche configurare le opzioni che ti consentono di passare da un ambiente &quot;identificato&quot; a un ambiente &quot;anonimo&quot;.
 
-   Ad esempio, puoi collegare uno spazio di offerta nell’ambiente destinatario (contatto identificato) con uno spazio di offerta corrispondente a un ambiente visitatore (contatto non identificato). In questo modo, verranno messe a disposizione del contatto diverse offerte a seconda che s/he sia identificato o meno. Per ulteriori informazioni, consulta [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md).
+   Ad esempio, puoi collegare uno spazio di offerta nell’ambiente destinatario (contatto identificato) con uno spazio di offerta corrispondente a un ambiente visitatore (contatto non identificato). In questo modo, il contatto potrà ricevere diverse offerte a seconda che il contatto sia identificato o meno. Per ulteriori informazioni, consulta [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_env_anonymous_003.png)
 
