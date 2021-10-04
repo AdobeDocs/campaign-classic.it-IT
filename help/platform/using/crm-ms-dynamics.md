@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -199,7 +199,7 @@ Campaign e Microsoft Dynamics sono ora connessi. È possibile impostare la sincr
 
 >[!NOTE]
 >
-> Devi accertarti di aggiungere all’elenco consentiti due URL: l&#39;URL del server e `login.microsoftonline.com` nella configurazione del server.
+> Assicurati di aggiungere all’inserire nell&#39;elenco Consentiti due URL: l&#39;URL del server e `login.microsoftonline.com` nella configurazione del server.
 
 ## Tipi di dati campo supportati {#ms-dyn-supported-types}
 

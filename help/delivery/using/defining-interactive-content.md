@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1572'
 ht-degree: 3%
 
 ---
@@ -150,7 +150,7 @@ Attualmente puoi provare a inviare un’e-mail AMP in due passaggi:
 
 1. Adobe Campaign consente di testare la distribuzione di un’e-mail dinamica basata su AMP a indirizzi e-mail selezionati configurati in modo appropriato, al fine di verificarne il contenuto e il comportamento. Consulta [Verifica della consegna e-mail AMP per gli indirizzi selezionati](#testing-amp-delivery-for-selected-addresses).
 
-1. Una volta effettuato il test, puoi inviare una consegna o una campagna come parte del programma AMP for Email registrandoti con i provider di posta elettronica pertinenti per far sì che il dominio del mittente venga aggiunto all’elenco consentiti. Consulta [Consegna di e-mail AMP effettuando la registrazione con un provider di posta elettronica](#delivering-amp-emails-by-registering).
+1. Una volta effettuato il test, puoi inviare una consegna o una campagna come parte del programma AMP for Email registrandoti con i provider di posta elettronica pertinenti per far sì che il dominio del mittente venga aggiunto all’inserire nell&#39;elenco Consentiti. Consulta [Consegna di e-mail AMP effettuando la registrazione con un provider di posta elettronica](#delivering-amp-emails-by-registering).
 
 ### Verifica della consegna e-mail AMP per gli indirizzi selezionati {#testing-amp-delivery-for-selected-addresses}
 
@@ -174,7 +174,7 @@ Per testare l’invio di un’e-mail AMP a un indirizzo Mail.ru, segui i passagg
 
 ### Invio di e-mail AMP tramite registrazione con un provider di posta elettronica {#delivering-amp-emails-by-registering}
 
-Puoi sperimentare la distribuzione di e-mail dinamiche registrandoti con i provider di posta elettronica supportati in modo da aggiungere il dominio del mittente all’elenco consentiti.
+Puoi sperimentare la distribuzione di e-mail dinamiche registrandoti con i provider di posta elettronica supportati in modo da aggiungere il dominio del mittente all’inserire nell&#39;elenco Consentiti.
 
 >[!NOTE]
 >

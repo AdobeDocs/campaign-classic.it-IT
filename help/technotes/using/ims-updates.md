@@ -2,9 +2,8 @@
 product: campaign
 title: Aggiorna l’ambiente per connetterti ad Adobe Campaign con IMS
 description: Campaign - Aggiornamenti IMS
-hide: true
-hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%

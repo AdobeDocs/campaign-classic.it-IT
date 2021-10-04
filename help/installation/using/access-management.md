@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 8%
 
 ---
@@ -47,6 +47,6 @@ Adobe Campaign fornisce tre privilegi di alto livello tramite [diritti denominat
 
 * **ESECUZIONE PROGRAMMA**  (createProcess): consente l&#39;esecuzione di programmi esterni (sul server)
 
-* **SQL**: consente l&#39;esecuzione di script SQL nel database (in modo da poter ignorare il modello di sicurezza). Nota: se è necessario eseguire calcoli complessi (ad esempio il filtro), è possibile chiedere all&#39;amministratore del database di creare una funzione SQL e aggiungerla all&#39;elenco consentiti. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: consente l&#39;esecuzione di script SQL nel database (in modo da poter ignorare il modello di sicurezza). Nota: se è necessario eseguire calcoli complessi (ad esempio il filtro), è possibile chiedere all&#39;amministratore del database di creare una funzione SQL e aggiungerla all&#39;inserire nell&#39;elenco Consentiti. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/scripting-coding-guidelines.md).
 
 * **Concedili a pochi operatori (e affidabili)**

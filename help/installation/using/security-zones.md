@@ -5,9 +5,9 @@ description: Scopri come configurare le aree di protezione
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Gli operatori sono collegati a una zona di sicurezza dal relativo profilo nella 
 >
 >In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service della zona di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it)
 >
->Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’elenco consentiti.
+>Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’inserire nell&#39;elenco Consentiti.
 
 ## Creare aree di protezione {#creating-security-zones}
 
@@ -225,7 +225,7 @@ Una volta definite le zone e configurata l&#39;enumerazione **[!UICONTROL Securi
 * Riduci al minimo l&#39;utilizzo di sessionTokenOnly=&quot;true&quot;:
 
    * Avviso: Se questo attributo è impostato su true, l&#39;operatore può essere esposto a un **attacco CRSF**.
-   * Inoltre, il cookie sessionToken non è impostato con un flag httpOnly, quindi alcuni codici javascript lato client possono leggerlo.
+   * Inoltre, il cookie sessionToken non è impostato con un flag httpOnly, quindi alcuni codici JavaScript lato client possono leggerlo.
    * Tuttavia, il Centro messaggi su più celle di esecuzione richiede sessionTokenOnly: crea una nuova zona di sicurezza con sessionTokenOnly impostato su &quot;true&quot; e aggiungi **solo gli IP necessari** in questa zona.
 
 * Quando possibile, imposta tutti allowHTTP, showErrors su false (non per localhost) e controllali.
@@ -245,6 +245,6 @@ Una volta definite le zone e configurata l&#39;enumerazione **[!UICONTROL Securi
 
 * Cookie HttpOnly/useSecurityToken: fai riferimento al flag **sessionTokenOnly** .
 
-* Minimizza gli IP aggiunti all’elenco consentiti: In aree di sicurezza abbiamo aggiunto i 3 intervalli per le reti private. È improbabile che utilizzerai tutti questi indirizzi IP. Quindi tieni solo quelli di cui hai bisogno.
+* Riduci al minimo gli IP aggiunti all’inserire nell&#39;elenco Consentiti: In aree di sicurezza abbiamo aggiunto i 3 intervalli per le reti private. È improbabile che utilizzerai tutti questi indirizzi IP. Quindi tieni solo quelli di cui hai bisogno.
 
 * Aggiorna l&#39;operatore webApp/interno per essere accessibile solo in localhost.

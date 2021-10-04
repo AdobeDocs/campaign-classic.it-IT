@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -132,7 +132,7 @@ Segui questi passaggi durante l’aggiornamento dell’opzione NmsTracking_Point
 
 Puoi personalizzare la formula di tracciamento dei clic e specificare una formula di tracciamento Adobe Analytics personalizzata.
 
-Questo tipo di personalizzazione deve essere effettuata con cautela per evitare di aggiungere caratteri di feed aggiuntivi. Tutti i caratteri di feed lineari presenti al di fuori dell’espressione javascript saranno presenti nella formula finale.
+Questo tipo di personalizzazione deve essere effettuata con cautela per evitare di aggiungere caratteri di feed aggiuntivi. Tutti i caratteri di feed lineari presenti al di fuori dell’espressione JavaScript saranno presenti nella formula finale.
 
 Questo tipo di carattere di feed aggiuntivo nell&#39;URL di tracciamento porterà a un problema in alcuni WebMail (AOL, GMail, ecc.).
 
@@ -159,7 +159,7 @@ Questo tipo di carattere di feed aggiuntivo nell&#39;URL di tracciamento porter�
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione javascript con una stringa fissa STRING.
+Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione JavaScript con una stringa fissa STRING.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione javascript con una stringa fissa STRING.
+Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione JavaScript con una stringa fissa STRING.
 
 ```
 // Incorrect

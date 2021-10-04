@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ Se esegui lo script utilizzando workflow, applicazioni web, jssp, segui queste b
    cnx.dispose()
    ```
 
-Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all&#39;elenco consentiti da utilizzare in Adobe Campaign. Una volta aggiunti all’elenco consentiti, diventano visibili agli operatori nell’editor espressioni. Consulta [questa pagina](../../configuration/using/adding-additional-sql-functions.md).
+Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all&#39;inserire nell&#39;elenco Consentiti da utilizzare in Adobe Campaign. Una volta aggiunti all’inserire nell&#39;elenco Consentiti, diventano visibili agli operatori nell’editor espressioni. Consulta [questa pagina](../../configuration/using/adding-additional-sql-functions.md).
 
 >[!IMPORTANT]
 >
@@ -228,6 +228,6 @@ Per usare JSON.parse devi includere &quot;shared/json2.js&quot; nella tua webApp
 
 ![](assets/scripting-captcha6.png)
 
-A partire dalla build 8797, per utilizzare l’URL dell’API di verifica, è necessario aggiungerlo all’elenco consentiti nel file serverConf aggiungendo nel nodo urlPermission :
+A partire dalla build 8797, per utilizzare l’URL dell’API di verifica, è necessario aggiungerlo all’inserire nell&#39;elenco Consentiti nel file serverConf aggiungendo nel nodo urlPermission :
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

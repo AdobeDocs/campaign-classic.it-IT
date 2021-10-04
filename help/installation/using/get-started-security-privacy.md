@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Introduzione a sicurezza e privacy
+title: Lista di controllo per sicurezza e privacy
 description: Ulteriori informazioni sugli elementi chiave da verificare in materia di sicurezza e privacy.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
-# Introduzione a sicurezza e privacy {#get-started-security-privacy}
+# Lista di controllo per sicurezza e privacy{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -30,7 +30,7 @@ La configurazione e l’indurimento della privacy è un elemento chiave dell’o
 * Assicurati che le password crittografate siano limitate.
 * Protect le pagine che possono contenere informazioni personali come pagine mirror, applicazioni web, ecc.
 
-[Leggi tutto](../../installation/using/privacy.md)
+[Ulteriori informazioni](../../installation/using/privacy.md)
 
 ## Gestione degli accessi
 
@@ -42,7 +42,7 @@ La gestione degli accessi è una parte importante dell&#39;irrigidimento della s
 * Verificare che ogni operatore disponga dei diritti di accesso appropriati
 * Evita di utilizzare l&#39;operatore amministratore ed evita di avere troppi operatori nel gruppo di amministrazione
 
-[Leggi tutto](../../installation/using/access-management.md)
+[Ulteriori informazioni](../../installation/using/access-management.md)
 
 ## Linee guida per scripting e codifica
 
@@ -50,13 +50,13 @@ La gestione degli accessi è una parte importante dell&#39;irrigidimento della s
 
 Nello sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.), segui sempre le seguenti linee guida:
 
-* **Scripting**: cercare di evitare istruzioni SQL, utilizzare funzioni parametrizzate invece della concatenazione di stringhe, evitare l&#39;inserimento di SQL aggiungendo le funzioni SQL da utilizzare nell&#39;elenco consentiti.
+* **Scripting**: cercare di evitare istruzioni SQL, utilizzare funzioni parametrizzate invece della concatenazione di stringhe, evitare l&#39;iniezione di SQL aggiungendo le funzioni SQL da utilizzare all&#39;inserire nell&#39;elenco Consentiti.
 
 * **Proteggere il modello** dati: utilizzare diritti denominati per limitare le azioni dell’operatore, aggiungere filtri di sistema (sysFilter)
 
 * **Aggiungi i sottotitoli nelle applicazioni** web: scopri come aggiungere i sottotitoli nelle pagine di destinazione e nelle pagine di abbonamento pubbliche.
 
-[Leggi tutto](../../installation/using/scripting-coding-guidelines.md)
+[Ulteriori informazioni](../../installation/using/scripting-coding-guidelines.md)
 
 ## Rete, database e SSL/TLS
 
@@ -66,7 +66,11 @@ Una cosa molto importante da verificare quando si implementa un tipo di architet
 
 È inoltre fondamentale che tu segua la tua sicurezza del motore di database.
 
-[Leggi tutto](../../installation/using/network-database.md)
+[Ulteriori informazioni](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>A partire dal 14 luglio 2021, tutti i sistemi client che non supportano il protocollo TLS 1.2 perderanno l’accesso a tutti i prodotti e i servizi di Adobe. Assicurati che tutti i sistemi utente e client siano conformi a TLS 1.2 prima di questa data. [Ulteriori informazioni](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
 
 ## Configurazione del server
 
@@ -84,7 +88,7 @@ La configurazione deve essere eseguita su tutti i server. I file di configurazio
 
 * Puoi anche aggiungere intestazioni HTTP aggiuntive, attivare checkIPConsistent, enableTLS, sessionTimeOutSec, ecc. Per ulteriori informazioni, consulta la [documentazione sulla configurazione del server Campaign](../../installation/using/configuring-campaign-server.md) e la [descrizione del file di configurazione del server](../../installation/using/the-server-configuration-file.md) .
 
-[Leggi tutto](../../installation/using/server-configuration.md)
+[Ulteriori informazioni](../../installation/using/server-configuration.md)
 
 ## Configurazione server web
 
@@ -97,4 +101,4 @@ Seguono diverse best practice per configurare il server web (Apache/IIS):
 * Rimuovi il banner
 * Limita le dimensioni della query per impedire il caricamento di file importanti
 
-[Leggi tutto](../../installation/using/web-server-configuration.md)
+[Ulteriori informazioni](../../installation/using/web-server-configuration.md)

@@ -4,10 +4,10 @@ title: 'Guida e opzioni di supporto per Campaign Classic '
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 71%
+source-wordcount: '799'
+ht-degree: 69%
 
 ---
 
@@ -111,7 +111,7 @@ Il Pannello di controllo Campaign è disponibile direttamente da Adobe Experienc
 
 ### Gestione SFTP
 
-Nel Pannello di controllo Campaign, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, nonché gestire gli indirizzi IP nell’elenco degli indirizzi consentiti e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Nel Pannello di controllo Campaign, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP nell’inserire nell&#39;elenco Consentiti e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 
@@ -123,7 +123,7 @@ Puoi monitorare i sottodomini e i relativi certificati. Ulteriori informazioni n
 ### Impostazioni delle istanze
 
 Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello di controllo Campaign. Ulteriori informazioni nelle seguenti pagine:
-* [Aggiungi IP nell’](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) elenco Consentiti per accedere alle istanze Campaign
+* [Aggiungi IP nell’elenco ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) Consentiti per accedere alle istanze Campaign
 * [Gestire le autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 * [Accedere ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
 * [Gestire le chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)

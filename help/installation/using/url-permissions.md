@@ -5,10 +5,10 @@ description: Scopri come configurare le autorizzazioni URL
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 28%
+source-wordcount: '337'
+ht-degree: 29%
 
 ---
 
@@ -26,7 +26,7 @@ Per impostazione predefinita, le istanze non possono connettersi a URL esterni. 
 >
 >In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service delle autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 >
->Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’elenco consentiti.
+>Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’inserire nell&#39;elenco Consentiti.
 
 Per le distribuzioni **Hybrid** e **On-Premise**, l&#39;amministratore deve fare riferimento a un nuovo **urlPermission** nel file **serverConf.xml**.
 

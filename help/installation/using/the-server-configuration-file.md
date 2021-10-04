@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 5%
@@ -704,7 +704,7 @@ Di seguito sono riportati i diversi parametri del nodo **ims**. Questa è la con
  </tbody> 
 </table>
 
-## javaScript {#javascript}
+## JavaScript {#javascript}
 
 Ecco i diversi parametri del nodo **javaScript** . Questa è la configurazione dell&#39;interprete JavaScript.
 

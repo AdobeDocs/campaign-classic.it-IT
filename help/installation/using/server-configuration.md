@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '621'
 ht-degree: 4%
 
 ---
@@ -48,9 +48,9 @@ L’elenco predefinito di URL che possono essere richiamati tramite codici JavaS
 
 Esistono tre modalità di protezione della connessione:
 
-* **Blocco** : tutti gli URL che non appartengono all’elenco consentiti vengono bloccati e viene visualizzato un messaggio di errore. Questa è la modalità predefinita dopo un aggiornamento successivo.
-* **Permissivo** : tutti gli URL che non appartengono all’elenco consentiti sono consentiti.
-* **Avviso** : tutti gli URL non nell’elenco consentiti sono consentiti, ma l’interprete JS invia un avviso in modo che l’amministratore possa raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
+* **Blocco** : tutti gli URL che non appartengono all&#39;inserire nell&#39;elenco Consentiti vengono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un aggiornamento successivo.
+* **Permissivo** : tutti gli URL che non appartengono all’inserire nell&#39;elenco Consentiti sono consentiti.
+* **Avviso** : tutti gli URL non nell’inserire nell&#39;elenco Consentiti sono consentiti, ma l’interprete JS invia un avviso in modo che l’amministratore possa raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -60,7 +60,7 @@ Esistono tre modalità di protezione della connessione:
 </urlPermission>
 ```
 
-I nuovi client utilizzeranno la modalità di blocco. Se desiderano consentire un nuovo URL, devono contattare il proprio amministratore per aggiungerlo all’elenco consentiti.
+I nuovi client utilizzeranno la modalità di blocco. Se desiderano consentire un nuovo URL, devono contattare il proprio amministratore per aggiungerlo all’inserire nell&#39;elenco Consentiti.
 
 I clienti esistenti provenienti da una migrazione possono utilizzare la modalità di avviso per un po’ di tempo. Nel frattempo devono analizzare il traffico in uscita prima di autorizzare gli URL.
 
