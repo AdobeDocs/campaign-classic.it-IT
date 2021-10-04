@@ -10,7 +10,7 @@ type: Documentation
 source-git-commit: aac596caf559b25ba3fff94aca410a66ecc08b27
 workflow-type: tm+mt
 source-wordcount: '2546'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 98%
          + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
       + Connettore Adobe Analytics{#analytics-connector}
          + [Provisioning del connettore Adobe Analytics](platform/using/adobe-analytics-provisioning.md)
-         + [Integrazione con Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Integrazione del connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
          + [Come migrare al connettore Adobe Analytics](technotes/using/aa-connector-migration.md)
          + [Connettore dati Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opzioni di assistenza e supporto](support.md)

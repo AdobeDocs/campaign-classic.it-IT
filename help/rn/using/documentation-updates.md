@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,18 +25,18 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 È stata aggiunta una nuova attività del flusso di lavoro: Cambia origine dati - [Ulteriori informazioni](../../workflow/using/change-data-source.md)
 
-I badge di applicabilità sono stati aggiunti alle pagine della documentazione: **Si applica solo alla versione v7** per le funzionalità di Campaign Classic v7 e **si applica alle versioni v7 e v8** per le funzionalità comuni.
+I badge di applicabilità sono stati aggiunti alle pagine della documentazione: **Applicabile solo alla versione v7** per le funzionalità di Campaign Classic v7 e **Applicabile alle versioni v7 e v8** per le funzionalità comuni.
 
-È stata aggiunta una nota sull’integrazione tra Campaign e AEM Assets disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](../../integrations/using/configuring-access-to-assets.md)
+È stata aggiunta una nota sull’integrazione tra Campaign e AEM Assets, dismessa a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](../../integrations/using/configuring-access-to-assets.md)
 
-Le schermate e i parametri delle applicazioni web e dei rapporti sono stati aggiornati dopo la rimozione del Flash di Adobi.
+Le schermate e i parametri delle applicazioni web e dei rapporti sono stati aggiornati in seguito alla rimozione di Adobe Flash.
 
-Il tipo di grafico **Gage** è stato rimosso.
+Il tipo di grafico **Misuratore** è stato rimosso.
 
 
 ## Luglio 2021 {#july-2021}
 
-[La versione](../../rn/using/latest-release.md#release-21-1-3-build-9330) 21.1.3 di Campaign è stata spostata in General Availability (GA).
+[La versione 21.1.3 di Campaign](../../rn/using/latest-release.md#release-21-1-3-build-9330) è stata spostata in General Availability (GA).
 
 
 ## Giugno 2021 {#june-2021}

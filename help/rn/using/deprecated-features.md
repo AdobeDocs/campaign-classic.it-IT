@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   </tr>
   <tr>  
    <td>Generazione rapporti<br></td>
-   <td><p>In seguito all’EOL del Flash Player di Adobe, il motore di rendering del report di Gage e del grafico non è più disponibile. <a href="../../reporting/using/creating-a-new-report.md">Ulteriori informazioni</a></p>
+   <td><p>In seguito alla fine del ciclo di vita di Adobe Flash Player, il rapporto si misurazione e il motore di rendering del grafico non sono più disponibili. <a href="../../reporting/using/creating-a-new-report.md">Ulteriori informazioni</a></p>
   </tr>
   <tr>  
    <td>Canale fax<br></td>
@@ -242,10 +242,10 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 
 ### Connettori CRM {#crm-connectors}
 
-A partire dalla versione Campaign 21.1, i seguenti connettori di gestione delle relazioni con i clienti non sono più compatibili con Campaign:
+A partire da Campaign 21.1, i seguenti connettori CRM non sono più compatibili con Campaign:
 
 * API Soap - On-premise: 2007, 2015, 2016
 * API Soap - Online: 2015, 2016
-* API Web - Microsoft Dynamics CRM 2016
-* API Web - Aggiornamento 1 di Microsoft Dynamics CRM 2016
+* API web: Microsoft Dynamics CRM 2016
+* API web: Microsoft Dynamics CRM 2016 aggiornamento 1
 * API Oracle On Demand

@@ -29,7 +29,7 @@ A ogni build è associato uno stato. Di seguito sono riportati gli stati e le mo
 
 ![](assets/do-not-localize/green3.png) **Disponibilità generale** (GA): convalidata in produzione e raccomandata da Adobe.
 
-Le **ultime build GA** sono: [[!DNL Gold Standard]  11](../../rn/using/gold-standard.md#gs-11) e [Campaign 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+Le **ultime build GA** sono: [[!DNL Gold Standard] versione 11](../../rn/using/gold-standard.md#gs-11) e [Campaign versione 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Disponibilità limitata** (LA): solo distribuzione su richiesta.
 
@@ -45,7 +45,7 @@ Per garantire una configurazione stabile, si consiglia di installare la stessa v
 
 Inoltre, la console client deve trovarsi nella stessa build dell’istanza del server.
 
-Per mantenere aggiornata l’implementazione, a ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 ## Processo di aggiornamento{#process-upgrade}
 

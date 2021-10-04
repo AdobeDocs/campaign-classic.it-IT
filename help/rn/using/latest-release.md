@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 83%
 
 ![](../../assets/v7-only.svg)
 
-In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati con la **versione più recente di Campaign Classic**.
+In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign Classic**.
 
-Comprendere gli stati della build di Campaign in [questa pagina](rn-overview.md).
+Per informazioni sugli stati della build di Campaign, consulta [questa pagina](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Versione 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
 
@@ -31,29 +31,29 @@ _7 settembre 2021_
 
 **Miglioramenti**
 
-* Al termine del suo ciclo di vita, il Flash è stato rimosso da tutte le funzioni e i componenti di Campaign correlati e sostituito con HTML5. Il tipo di grafico **Gage** è stato rimosso. (NEO-30330) [Ulteriori informazioni](../../reporting/using/creating-a-chart.md)
-* Durante l&#39;installazione della console client su Windows, il programma di installazione controlla ora se è presente un nodo del Registro di sistema padre e ne crea uno se è mancante. Questo evita potenziali problemi durante l’avvio della console. (NEO-34854)
-* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestire caratteri speciali. I parametri URL sono ora codificati.
+* Al termine del suo ciclo di vita, Flash è stato rimosso da tutte le funzioni e i componenti di Campaign correlati e sostituito con HTML5. Il tipo di grafico **Misuratore** è stato rimosso. (NEO-30330) [Ulteriori informazioni](../../reporting/using/creating-a-chart.md)
+* Durante l’installazione della console client su Windows, il programma di installazione ora controlla se è presente un nodo del registro principale e, se necessario, ne crea uno. Questo evita potenziali problemi durante l’avvio della console. (NEO-34854)
+* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
 
 **Altre modifiche**
 
-* I connettori di Microsoft CRM precedentemente obsoleti (distribuzioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Leggi tutto](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * In seguito alla migrazione a Tomcat 8, lo script di installazione di IIS è stato aggiornato per risolvere i problemi di integrazione di IIS. (NEO-31019)
-* È stata aggiunta una guardrail per consentire solo l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) sull’istanza di marketing.
+* È stata aggiunto un guardrail per consentire solo l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) sull’istanza di marketing.
 * L’identificazione dell’origine dati è stata migliorata nelle schede dati e schema della finestra **Visualizza popolazione** delle transizioni del flusso di lavoro.
 * Gli indici di database mancanti sono stati aggiunti ai seguenti schemi per evitare problemi di aggiornamento del database: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Patch**
 
 * È stato risolto un problema che impediva il funzionamento del rapporto Hot Click quando le offerte erano collegate alla consegna. (NEO-26295)
-* È stato risolto un problema relativo all&#39;attività **Sub-worfklow** quando l&#39;esecuzione non generava una tabella di output. (NEO-36242)
-* Sono stati risolti diversi problemi durante l’esportazione del rapporto **Analisi descrittiva** in PDF. (NEO-25847)
+* È stato risolto un problema a causa del quale l’attività **Flusso di lavoro secondario** non generava una tabella di output. (NEO-36242)
+* Sono stati risolti diversi problemi riguardanti l’esportazione PDF del rapporto **Analisi descrittiva**. (NEO-25847)
 * È stato risolto un problema che poteva causare un errore nelle consegne durante l’utilizzo di una consegna e-mail esterna. (NEO-37435)
-* È stato corretto un errore che si verificava durante la connessione a Microsoft CRM tramite API Web. Il messaggio di errore è stato rimosso perché le funzionalità non erano interessate.
-* È stato risolto un problema di deduplicazione del registro di tracciamento quando il server mid veniva impostato come relay tra i server di tracciamento e di marketing. (NEO-36285)
-* È stata corretta una regressione che impediva l&#39;utilizzo di Vault come archivio di codice specifico.
-* È stato risolto un problema che impediva l&#39;utilizzo di variabili in un&#39;attività del flusso di lavoro **Enrichment** quando la transizione in ingresso proveniva da un&#39;origine dati FDA.
-* È stato risolto un problema che poteva causare il blocco degli URL nei messaggi e-mail.
+* È stato corretto un errore che si verificava durante la connessione a Microsoft CRM tramite API web. Il messaggio di errore è stato rimosso perché le funzionalità non erano interessate.
+* È stato risolto un problema di deduplica del registro di tracciamento quando il server mid veniva impostato come relay tra i server di tracciamento e di marketing. (NEO-36285)
+* È stata corretta una regressione che impediva l’utilizzo di Vault come archivio di codice specifico.
+* È stato risolto un problema che impediva l’utilizzo di variabili in un’attività del flusso di lavoro **Enrichment** quando la transizione in ingresso proveniva da un’origine dati FDA.
+* È stato risolto un problema che poteva causare il mancato funzionamento degli URL nei messaggi e-mail.
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
@@ -71,7 +71,7 @@ _5 giugno 2021_
 <tbody>
 <tr>
 <td>
-<p>La nuova attività <b>Change Data Source</b> consente di cambiare l’origine dati della tabella di lavoro di un flusso di lavoro. Ciò offre una maggiore flessibilità nella gestione dei dati tra diverse origini dati (FDA e database locale).</p>
+<p>La nuova attività <b>Change Data Source</b> consente di cambiare l’origine dati della tabella di lavoro di un flusso di lavoro. Questa possibilità offre maggiore flessibilità nella gestione dei dati tra diverse origini dati (FDA e database locale).</p>
 <p>Nei flussi di lavoro di Adobe Campaign, i dati vengono gestiti utilizzando tabelle di lavoro (o temporanee). Durante l’esecuzione del flusso di lavoro, le tabelle di lavoro condividono i dati tra le varie attività del flusso di lavoro. Per impostazione predefinita, le tabelle di lavoro vengono create sullo stesso database dell’origine dei dati su cui si eseguono le query.</p>
 <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/change-data-source.md">documentazione dettagliata</a>.</p>
 </td>

@@ -44,7 +44,7 @@ Per gestire correttamente la privacy e i dati personali, attieniti alle normativ
 
 ### Privacy di Adobe Experience Cloud {#experience-cloud-privacy}
 
- Adobe Campaign fa parte delle soluzioni Adobe Experience Cloud. Il modo in cui viene gestita la privacy in Campaign rispetta i principi generali di Experience Cloud, come ad esempio quanto segue:
+Adobe Campaign fa parte delle soluzioni Adobe Experience Cloud. Il modo in cui viene gestita la privacy in Campaign rispetta i principi generali di Experience Cloud, come ad esempio quanto segue:
 
 * **Quali informazioni vengono raccolte durante l’utilizzo di Adobe Experience Cloud**
 
