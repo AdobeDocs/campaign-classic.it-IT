@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 77c7f1edc531509580c76f55dcb2809c18a04133
+source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2567'
 ht-degree: 98%
 
 ---
@@ -617,7 +617,7 @@ ht-degree: 98%
       + [Implementazione mid-sourcing](installation/using/mid-sourcing-deployment.md)
       + [Power Booster e Power Cluster](installation/using/power-booster-and-power-cluster.md)
    + Impostazioni di sicurezza e privacy {#security-privacy}
-      + [Introduzione a sicurezza e privacy](installation/using/get-started-security-privacy.md)
+      + [Lista di controllo per sicurezza e privacy](installation/using/get-started-security-privacy.md)
       + [Personalizzazione e privacy](installation/using/privacy.md)
       + [Gestione degli accessi sicuri](installation/using/access-management.md)
       + [Linee guida per scripting e codifica](installation/using/scripting-coding-guidelines.md)
