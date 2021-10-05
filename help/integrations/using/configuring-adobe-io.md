@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: ca2349abce07c890e9d87d07e26dbca4f13d2fb6
+source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 4%
+source-wordcount: '701'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 >Se utilizzi una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth, **devi passare all&#39;Adobe I/O come descritto di seguito**.
 >Durante questo passaggio a [!DNL Adobe I/O], alcuni trigger in arrivo potrebbero andare persi.
 >
->La modalità di autenticazione legacy oAuth con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **20 ottobre 2021**. Gli ambienti ospitati beneficiano di un&#39;estensione fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi [fornire ad Adobe l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
+>La modalità di autenticazione oAuth legacy con Campaign verrà ritirata il **20 ottobre 2021**. Gli ambienti ospitati beneficiano di un&#39;estensione fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi [fornire ad Adobe l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
