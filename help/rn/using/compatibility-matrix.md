@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 86%
+source-wordcount: '596'
+ht-degree: 85%
 
 ---
 
@@ -121,10 +121,6 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 ## Server RDBMS{#RDBMSservers}
 
->[!NOTE]
->
->Il driver RDBMS deve corrispondere alla versione del server RDBMS.
-
 <table>
 <tbody>
 <tr>
@@ -137,7 +133,10 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+<p>Server di database predefinito per ambienti ospitati</p>
+</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -165,7 +164,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 >[!NOTE]
 >
->PostgreSQL è il server di database predefinito per gli ambienti in hosting.
+>Il driver RDBMS deve corrispondere alla versione del server RDBMS.
 
 ## Connettori CRM{#CRMconnectors}
 
@@ -315,7 +314,6 @@ I seguenti sistemi operativi e browser sono **obbligatori** per utilizzare [Cons
 
 ### Browser
 
-[]
 <table>
 <tbody>
 <tr>
