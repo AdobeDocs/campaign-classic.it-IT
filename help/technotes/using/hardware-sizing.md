@@ -2,14 +2,14 @@
 product: campaign
 title: Raccomandazioni per il dimensionamento dell'hardware per Campaign Classic v7
 description: Raccomandazioni per il dimensionamento dell'hardware per Campaign Classic v7
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Raccomandazioni per il dimensionamento dell&#39;hardware per Campaign Classic v7 {#hardware-sizing-reco}
+# Raccomandazioni per il dimensionamento dell&#39;hardware{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Questa guida è fornita solo come guida di esempio generale. È necessario interagire con il Customer Success Manager di Adobe Campaign per misurare le dimensioni esatte della distribuzione prima di avviare il progetto Campaign. **Non** acquisire o distribuire alcuna infrastruttura o hardware fino a quando non viene fatto questo.
+>Questo articolo è fornito solo come guida di esempio generale. È necessario interagire con il Customer Success Manager di Adobe Campaign per misurare le dimensioni esatte della distribuzione prima di avviare il progetto Campaign. **Non** acquisire o distribuire alcuna infrastruttura o hardware fino a quando non viene fatto questo.
 
-Questo documento fornisce linee guida generali per la distribuzione di Adobe Campaign Classic v7 nel centro dati on-premise o nell’ambiente cloud virtualizzato. Questo tipo di distribuzione, noto come **ibrido** o **mid-sourcing**, posiziona l’istanza di marketing di Campaign e il database di marketing sotto il tuo controllo operativo, utilizzando i servizi Adobe Cloud Messaging per inviare e-mail, messaggi SMS o SMPP e raccogliere e-mail aperte, rimbalzate e dati di tracciamento dei clic.
+Questo documento fornisce raccomandazioni generali per la distribuzione di Adobe Campaign Classic v7 nel centro dati on-premise o nell’ambiente cloud virtualizzato. Questo tipo di distribuzione, noto come **ibrido** o **mid-sourcing**, posiziona l’istanza di marketing di Campaign e il database di marketing sotto il tuo controllo operativo, utilizzando i servizi Adobe Cloud Messaging per inviare e-mail, messaggi SMS o SMPP e raccogliere e-mail aperte, rimbalzate e dati di tracciamento dei clic.
 
 L’istanza di marketing è la parte dell’architettura di Adobe Campaign che guida tutte le attività di marketing e memorizza tutti i dati dei destinatari e i dati analitici restituiti dalle campagne. L’istanza di marketing è un set di server on-premise che eseguono i servizi Adobe Campaign e un database relazionale.
 
@@ -258,5 +258,6 @@ Adobe consiglia di eseguire test delle prestazioni per qualsiasi implementazione
 ## Argomenti correlati
 
 * [Processi di monitoraggio delle campagne](../../production/using/monitoring-processes.md)
+* [Architettura generale della campagna](../../installation/using/general-architecture.md)
 * [Prestazioni e problemi di velocità effettiva](../../production/using/performance-and-throughput-issues.md)
 * [Lista di controllo per sicurezza e privacy](../../installation/using/get-started-security-privacy.md)

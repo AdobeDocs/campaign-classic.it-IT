@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Aggiorna l’ambiente per connetterti ad Adobe Campaign con IMS
+title: 'Nota tecnica: aggiorna l’ambiente per collegarti ad Adobe Campaign con IMS'
 description: Campaign - Aggiornamenti IMS
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '591'
 ht-degree: 9%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 9%
 
 ![](../../assets/v7-only.svg)
 
-Il 30 giugno 2021 verranno apportate modifiche alle funzionalità di accesso [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) che potrebbero influire sulla capacità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
+Il 30 giugno 2021 sono state apportate modifiche alle funzionalità di accesso [Adobe Identity Management System](https://helpx.adobe.com/enterprise/using/identity.html) (IMS) che potrebbero influire sulla capacità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
 
 ## Cosa è cambiato?
 
-Adobe Identity Management Service (IMS) smetterà di supportare le versioni precedenti di Internet Explorer dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Il servizio Adobe Identity Management (IMS) ha cessato di supportare le vecchie versioni di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe intende preservare la funzionalità IMS per tutti i clienti a partire dal 30 giugno 2021. IMS fa parte del framework di sicurezza che consente agli utenti di accedere alla console client, quindi ad Adobe Campaign.
 
@@ -78,7 +78,7 @@ Gli utenti possono visualizzare il seguente messaggio di avviso se hanno bisogno
 
 Se viene visualizzato un avviso di questo tipo, assicurarsi di installare gli aggiornamenti più recenti del sistema operativo in uso. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
-**Dopo il 30 giugno 2021**, verrà visualizzato il seguente messaggio e non sarà più possibile connettersi ad Adobe Campaign:
+Se la versione di Internet Explorer non è stata aggiornata, viene visualizzato il seguente messaggio e non è più possibile connettersi ad Adobe Campaign:
 
 ![](../../integrations/using/assets/do-not-localize/errorUpdateReq.png)
 

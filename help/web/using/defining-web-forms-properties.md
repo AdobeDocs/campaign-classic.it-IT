@@ -6,9 +6,9 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-I moduli web sono completamente configurabili e personalizzabili per soddisfare le tue esigenze. I parametri devono essere immessi nella finestra delle proprietà.
+È possibile configurare e personalizzare completamente i moduli web per soddisfare le proprie esigenze. I parametri devono essere immessi nella finestra delle proprietà.
 
 La finestra delle proprietà è accessibile tramite il pulsante **[!UICONTROL Properties]** nella barra degli strumenti del modulo Web. Questa finestra consente di accedere a una serie di impostazioni specifiche del modulo Web. Alcune impostazioni possono derivare dalla configurazione del modello.
 

@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Con Adobe Campaign puoi condividere tipi di pubblico e segmenti con le soluzioni
 
 Questa integrazione supporta due tipi di ID Adobe Experience Cloud:
 
-* **ID** visitatore: questo tipo di identificatore riconcilia i visitatori di Adobe Experience Cloud con i destinatari di Adobe Campaign.
+* **ID** visitatore: questo tipo di identificatore concilia i visitatori di Adobe Experience Cloud con i destinatari di Adobe Campaign.
 * **ID** dichiarato: questo tipo di identificatore riconcilia tutti i tipi di dati con gli elementi del database Adobe Campaign. È rappresentato in Adobe Campaign come chiave di riconciliazione predefinita.
 
    >[!NOTE]

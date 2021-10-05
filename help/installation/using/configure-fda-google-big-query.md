@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 2%
@@ -69,7 +69,7 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 1. Scarica l&#39;archivio Windows a 64 bit (x86_64) da questo [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) ed estrarlo nella directory corrispondente.
 
-1. Esegui lo script `google-cloud-sdk\install.sh`. Devi accettare l&#39;impostazione della variabile di percorso.
+1. Esegui lo script `google-cloud-sdk\install.sh`. È necessario accettare l&#39;impostazione della variabile di percorso.
 
 1. Dopo l&#39;installazione, controlla che la variabile del percorso `...\google-cloud-sdk\bin` sia impostata. In caso contrario, aggiungilo manualmente.
 

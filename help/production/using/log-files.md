@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -49,7 +49,7 @@ I file di registro mono-instance sono elencati nella seguente tabella:
 | wfserver.log | Registri del modulo server del flusso di lavoro |
 | runwf.log | Registri di esecuzione del flusso di lavoro |
 | inMail.log | Registro del modulo di posta non recapitata |
-| logins.log | Registra tutti i tentativi di accesso ad Adobe Campaign (con successo o meno) |
+| logins.log | Registra tutti i tentativi di accesso ad Adobe Campaign (con o senza successo) |
 
 >[!IMPORTANT]
 >

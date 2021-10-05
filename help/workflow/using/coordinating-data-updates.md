@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti dei concomitanti quando si utilizzano diverse esecuzioni di un flusso di lavoro.
+Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti simultanei quando si utilizzano diverse esecuzioni di un flusso di lavoro.
 
 L’obiettivo è quello di verificare che il processo di aggiornamento sia terminato prima di eseguire un’altra operazione di aggiornamento. A questo scopo, imposteremo una variabile di istanza e lasceremo che il flusso di lavoro verifichi se l’istanza è in esecuzione per decidere se continuare o meno l’esecuzione del flusso di lavoro ed eseguire l’aggiornamento.
 

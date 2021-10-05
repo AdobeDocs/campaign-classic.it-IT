@@ -1,14 +1,12 @@
 ---
 product: campaign
-title: Nota tecnica
-description: Nota tecnica
-hide: true
-hidefromtoc: true
+title: Nota tecnica - Aggiornamenti alla configurazione di Adobe Campaign
+description: Aggiornamenti alla configurazione di Adobe Campaign
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 11%
+source-wordcount: '1137'
+ht-degree: 12%
 
 ---
 
@@ -103,7 +101,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 ## Integrazione con Experience Cloud Triggers {#acc-triggers-updates}
 
-Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **18 agosto 2021**. Gli ambienti ospitati beneficiano di un’estensione fino al **30 novembre 2021**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino al 30 novembre 2021. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
+Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **settembre 2021**. Gli ambienti ospitati beneficiano di un&#39;estensione fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 **Sei interessato da questo problema?**
 

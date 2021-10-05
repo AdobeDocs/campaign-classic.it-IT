@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -620,7 +620,7 @@ Tutti i report standard attualmente utilizzano il motore di rendering v6.x. Se h
 
 ![](assets/migration_reports_1.png)
 -->
-Se desideri sfruttare le nuove funzionalità del rapporto, devi ripubblicare i rapporti. A questo scopo, modifica il rapporto **[!UICONTROL Properties]**, fai clic su **[!UICONTROL Rendering]** e seleziona il motore di rendering v.6.x. In questo caso, controlla tutti gli script e modificali se necessario. Per quanto riguarda l’esportazione PDF, se hai aggiunto script specifici per Open Office, questo non funzionerà più con il nuovo motore di esportazione PDF (PhantomJS).
+Se desideri sfruttare le nuove funzionalità del rapporto, devi ripubblicare i rapporti. In questo caso, controlla tutti gli script e modificali se necessario. Per quanto riguarda l’esportazione PDF, se hai aggiunto script specifici per Open Office, questo non funzionerà più con il nuovo motore di esportazione PDF (PhantomJS).
 
 ## Applicazioni web {#web-applications}
 
@@ -631,10 +631,7 @@ Ci sono due famiglie di applicazioni web:
 
 ### Applicazioni web identificate {#identified-web-applications}
 
-Come per i rapporti ([ulteriori informazioni](#reports)), se hai aggiunto JavaScript, devi controllarlo e adattarlo se necessario. Se desideri sfruttare il banner blu v7 (contenente le schede blu), devi ripubblicare l’applicazione web. Se il codice JavaScript funziona, puoi selezionare il motore di rendering v6.x. In caso contrario, è possibile utilizzare il motore di rendering v6.0 mentre si adatta il codice, quindi utilizzare il motore di rendering v6.x.
-
->[!NOTE]
-I passaggi per selezionare il motore di rendering sono gli stessi che per selezionare i rapporti. Consulta [Rapporti personalizzati](#personalized-reports).
+Come per i rapporti ([ulteriori informazioni](#reports)), se hai aggiunto JavaScript, devi controllarlo e adattarlo se necessario. Se desideri sfruttare il banner blu v7 (contenente le schede blu), devi ripubblicare l’applicazione web.
 
 I metodi di connessione dell&#39;applicazione Web sono stati modificati nella versione v7. Se si verificano problemi di connessione nelle applicazioni web identificate, è necessario attivare temporaneamente le opzioni **serverConf.xml** e **sessionTokenOnly** nel file **serverConf.xml**. Dopo l’aggiornamento, modifica i seguenti valori di opzione:
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### Applicazioni web anonime {#anonymous-web-applications}
 
-In caso di problemi, ripubblica l&#39;applicazione web. Se il problema persiste, puoi selezionare il motore di rendering v6.0. Se non hai aggiunto JavaScript, puoi selezionare il motore di rendering v6.x e sfruttare le sue nuove funzioni.
-
->[!NOTE]
-I passaggi per selezionare il motore di rendering sono gli stessi che per selezionare i rapporti. Consulta [Rapporti personalizzati](#personalized-reports).
+In caso di problemi, ripubblica l&#39;applicazione web.
 
 ## Cappello rosso {#red-hat}
 

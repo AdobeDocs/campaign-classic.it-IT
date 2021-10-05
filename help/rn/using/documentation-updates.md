@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Aggiornamenti alla documentazione di Adobe Campaign Classic
+title: Aggiornamenti alla documentazione di Adobe Campaign Classic v7
 description: In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti presenti nella documentazione di Adobe Campaign Classic
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
-source-wordcount: '4513'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 98%
 
 ---
 
@@ -21,6 +21,22 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
+## Ottobre 2021{#oct-2021}
+
+Le note tecniche esistenti sono state raggruppate nella nuova sezione **Nota tecnica** .
+
+La pagina **Raccomandazioni per il dimensionamento dell&#39;hardware** è stata aggiornata e aggiunta alla sezione **Note tecniche** . [Ulteriori informazioni](../../technotes/using/hardware-sizing.md)
+
+## Settembre 2021{#sept-2021}
+
+**Aggiornamenti alla documentazione in arrivo con la versione 21.1.4**
+
+Il tipo di grafico **Misuratore** è stato rimosso.
+
+Le schermate e i parametri delle applicazioni web e dei rapporti sono stati aggiornati in seguito alla rimozione di Adobe Flash.
+
+La descrizione [del flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) è stata aggiornata con una nuova guardrail.
+
 ## Agosto 2021{#aug-2021}
 
 È stata aggiunta una nuova attività del flusso di lavoro: Cambia origine dati - [Ulteriori informazioni](../../workflow/using/change-data-source.md)
@@ -28,10 +44,6 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 I badge di applicabilità sono stati aggiunti alle pagine della documentazione: **Applicabile solo alla versione v7** per le funzionalità di Campaign Classic v7 e **Applicabile alle versioni v7 e v8** per le funzionalità comuni.
 
 È stata aggiunta una nota sull’integrazione tra Campaign e AEM Assets, dismessa a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](../../integrations/using/configuring-access-to-assets.md)
-
-Le schermate e i parametri delle applicazioni web e dei rapporti sono stati aggiornati in seguito alla rimozione di Adobe Flash.
-
-Il tipo di grafico **Misuratore** è stato rimosso.
 
 
 ## Luglio 2021 {#july-2021}

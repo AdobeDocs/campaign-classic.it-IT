@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ajouter screenshot -->
 
-Una volta inviata la consegna, il dashboard di consegna visualizza uno stato che ti consente di monitorare se l’invio è andato a buon fine. Gli stati possibili sono descritti in dettaglio nella sezione seguente.
+Una volta inviata la consegna, il dashboard di consegna visualizza uno stato che ti consente di monitorare se l’invio ha avuto esito positivo. Gli stati possibili sono descritti in dettaglio nella sezione seguente.
 
 ![](assets/delivery-status.png)
 
@@ -97,7 +97,7 @@ Lo stato **[!UICONTROL Pending]** può prima indicare che la consegna è stata p
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 
-* MTA (Message Transfer Agent), che esegue moduli e processi sul server di consegna e che gestisce l’invio di e-mail, potrebbe non essere stato avviato o deve essere riavviato.
+* L’MTA (Agente di trasferimento messaggi), che esegue moduli e processi sul server di consegna e gestisce l’invio di e-mail, potrebbe non essere stato avviato o potrebbe essere necessario riavviare.
 
    Per verificare questo e per avviare il modulo, se necessario, esegui i seguenti passaggi:
 

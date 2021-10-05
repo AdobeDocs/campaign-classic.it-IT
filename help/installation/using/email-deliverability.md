@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Inizia definendo il database Adobe Campaign che ospiterà la configurazione.
 
 ### Avvia la configurazione {#start-configuration}
 
-Per impostazione predefinita, il modulo **stat** viene avviato per ogni istanza. Quando le istanze vengono mutualizzate sullo stesso computer o quando le istanze condividono lo stesso indirizzo IP, viene utilizzato un singolo server di statistiche: gli altri devono essere disabilitati.
+Per impostazione predefinita, il modulo **stat** viene avviato per ogni istanza. Quando le istanze vengono raggruppate sullo stesso computer o quando le istanze condividono lo stesso indirizzo IP, viene utilizzato un singolo server di statistiche: gli altri devono essere disabilitati.
 
 ### Definizione della porta server {#definition-of-the-server-port}
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Il connettore supporta anche le seguenti opzioni Hive:
 
 ## Configurazione di Hadoop 2.1 {#configure-access-hadoop-2}
 
-Per connettersi al Hadoop 2.1, segui i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
+Se devi connetterti al Hadoop 2.1, segui i passaggi descritti di seguito per [Windows](#for-windows) o [Linux](#for-linux).
 
 ### Hadoop 2.1 per Windows {#for-windows}
 

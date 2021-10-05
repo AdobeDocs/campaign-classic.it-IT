@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -305,7 +305,7 @@ Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza neg
 
 >[!NOTE]
 >
->Una sequenza a cui si fa riferimento in uno schema Adobe Campaign (**NmsTrackingLogId** ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata **GetNew** XXX **Ids**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Per ripristinare l&#39;esempio di un&#39;applicazione nella directory **datakit/nms/sql/>, visualizzare i file** postgres-nms.sql **,** mssql-nms.sql **o** oracle-nms/sql/**Creazione della sequenza NmsTrackingLogId per ogni motore di database.**
+>Una sequenza a cui si fa riferimento in uno schema Adobe Campaign (**NmsTrackingLogId** ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere denominata **GetNew** XXX **Ids**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Per recuperare l&#39;esempio di un &#39;Nms/>, vedere i file **postgres-nms.sql**, **mssql-nms.sql**, **mssql-nms.sql** oracle-nms.sql **forniti con l&#39;applicazione nella directory** datakit/nms/nms/nms/s/s/en/s/s/s Creazione della sequenza TrackingLogId per ogni motore di database.
 
 Per dichiarare una chiave univoca, compila l&#39;attributo **autopk** (con valore &quot;true&quot;) sull&#39;elemento principale dello schema dati.
 
@@ -361,7 +361,7 @@ Per le relazioni di unione con una tabella/database della campagna:
 
 * ![](assets/join_with_campaign11.png) : Cardinalità 1-1. Ad esempio, tra un destinatario e un ordine corrente. Un destinatario può essere correlato a una sola occorrenza della tabella dell&#39;ordine corrente alla volta.
 * ![](assets/externaljoin11.png) : Cardinalità 1-1, unione esterna. Ad esempio, tra un destinatario e il proprio paese. Un destinatario può essere correlato a una sola occorrenza del paese della tabella. Il contenuto della tabella del paese non verrà salvato.
-* ![](assets/join_with_campaign1n.png) : Cardinalità 1-N. Ad esempio, tra un destinatario e la tabella Abbonamenti. Un destinatario può essere correlato a diverse occorrenze nella tabella Abbonamenti.
+* ![](assets/join_with_campaign1n.png) : Cardinalità 1-N. Ad esempio, tra un destinatario e la tabella Abbonamenti. Un destinatario può essere correlato a diverse occorrenze nella tabella delle sottoscrizioni.
 
 Per le relazioni di unione che utilizzano Federated Database Access:
 

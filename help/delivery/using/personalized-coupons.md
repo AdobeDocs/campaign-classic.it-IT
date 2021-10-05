@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,9 @@ Per confermare l’esito positivo della consegna:
 
 >[!NOTE]
 >
->Per impostazione predefinita, il modulo di gestione delle cedole utilizza una tabella **nms:recipient** . Per istruzioni sull’utilizzo di altre tabelle, vedere [Modifica di schemi](../../configuration/using/data-schemas.md).
+>Per impostazione predefinita, il modulo di gestione delle cedole utilizza una tabella **nms:recipient** . [Ulteriori informazioni](../../configuration/using/about-data-model.md#default-recipient-table).
+>
+>Scopri come utilizzare una tabella dei destinatari personalizzata [in questa pagina](../../configuration/using/about-custom-recipient-table.md).
 
 ## Gestione dei coupon insufficienti {#managing-insufficient-coupons}
 

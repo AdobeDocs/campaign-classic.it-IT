@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
+source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 98%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
          + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
          + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
-         + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
+         + [Sincronizzare i dati con CRM](platform/using/crm-data-sync.md)
       + Connettore Adobe Analytics{#analytics-connector}
          + [Provisioning del connettore Adobe Analytics](platform/using/adobe-analytics-provisioning.md)
          + [Integrazione del connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
@@ -213,7 +213,6 @@ ht-degree: 98%
       + [Risoluzione dei problemi nelle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Errori di consegna](delivery/using/understanding-delivery-failures.md)
-      + [Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio dell’ISP](delivery/using/update-bounce-qualification.md)
       + [Gestione della quarantena](delivery/using/understanding-quarantine-management.md)
    + Tracciare i messaggi {#tracking-messages}
       + [Informazioni sul tracciamento dei messaggi](delivery/using/about-message-tracking.md)
@@ -852,6 +851,7 @@ ht-degree: 98%
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Come aggiornare non corretti rimbalzi rigidi](delivery/using/update-bounce-qualification.md)
       + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
       + [Aggiornamento degli URL tracciati](technotes/using/tracked-urls.md)
    + Migrazione ad Adobe Managed Services{#dc-migration}

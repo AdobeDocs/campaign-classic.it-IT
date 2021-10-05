@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -105,7 +105,7 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
 * **[!UICONTROL Pending events queued]** : indicatore specifico del  **Centro messaggi**. Per ulteriori informazioni, consulta [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) .
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** : informazioni relative al carico, vale a dire il tasso di utilizzo del trasformatore da parte dei processi in esecuzione sulla macchina nell&#39;ultimo minuto, cinque minuti o quindici minuti
+* **[!UICONTROL Load average (1/5/15 minutes)]** : informazioni relative al carico, ossia il tasso di utilizzo del processore da parte dei processi in esecuzione sulla macchina nell&#39;ultimo minuto, cinque minuti o quindici minuti
 
    **[!UICONTROL Current value]** : carico effettivo della macchina.
 
@@ -605,7 +605,7 @@ Questo elemento configura il monitoraggio di un determinato server sull&#39;host
 
 * **tcp**: controlla se il server è attivo o inattivo. Immettere un numero di porta.
 * **http**: controlla l&#39;esistenza del server Web (il server applicazioni è operativo).
-* **ncs**: controlla i processi dell’istanza immessa nell’attributo &quot;instance&quot; (errori del flusso di lavoro, utilizzo della memoria, ecc.). L&#39;attributo **include** (obbligatorio) ti offre la possibilità di visualizzare i processi morti ( valori &#39;true&#39; o &#39;false&#39;).
+* **ncs**: controlla i processi dell’istanza immessa nell’attributo &quot;instance&quot; (errori del flusso di lavoro, utilizzo della memoria, ecc.). L&#39;attributo **incluso** (obbligatorio) ti offre la possibilità di visualizzare i valori dei processi morti (&quot;true&quot; o &quot;false&quot;).
 * **redir**: controlla il tracciamento.
 
 Nella maggior parte dei casi, è possibile mantenere solo i sottoelementi **ncs** e **redir** .

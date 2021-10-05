@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Una cosa molto importante da verificare quando si implementa un tipo di architet
 
 >[!CAUTION]
 >
->A partire dal 14 luglio 2021, tutti i sistemi client che non supportano il protocollo TLS 1.2 perderanno l’accesso a tutti i prodotti e i servizi di Adobe. Assicurati che tutti i sistemi utente e client siano conformi a TLS 1.2 prima di questa data. [Ulteriori informazioni](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)
+>A partire dal 14 luglio 2021, tutti i sistemi client che non supportano il protocollo TLS 1.2 perderanno l’accesso a tutti i prodotti e i servizi di Adobe. Assicurati che tutti i sistemi utente e client siano conformi a TLS 1.2 prima di questa data. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Configurazione del server
 

@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
+source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1714'
 ht-degree: 3%
 
 ---
@@ -80,4 +80,4 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Notifica attività**  (taskMgt) | Risorse di marketing (MRM) - Solo Campaign v7 | Questo flusso di lavoro ti consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing. |
 | **Tracking**  (tracciamento) | Consegna | Questo flusso di lavoro esegue il ripristino e il consolidamento delle informazioni di tracciamento. Assicura inoltre il ricalcolo delle statistiche di tracciamento e consegna, in particolare quelle utilizzate dai flussi di lavoro di archiviazione Message Center. Per impostazione predefinita viene attivato una volta all’ora. |
 | **Aggiorna lo stato**  dell&#39;evento (updateEventsStatus) | Esecuzione di messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro ti consente di assegnare uno stato a un evento. Gli stati dell’evento sono i seguenti:<ul><li>In sospeso: l’evento è in coda. Non è ancora stato associato alcun modello di messaggio.</li><li>Consegna in sospeso: l’evento è in coda, è stato associato un modello di messaggio ed è attualmente in fase di elaborazione da parte della consegna.</li><li>Inviato: questo stato viene copiato dai log di consegna. Significa che la consegna è stata inviata.</li><li>Ignorato dalla consegna: questo stato viene copiato dai log di consegna. Significa che la consegna è stata ignorata.</li><li>Errore di consegna: questo stato viene copiato dai log di consegna. Significa che la consegna non è riuscita.</li><li>Evento non trattato: impossibile associare l&#39;evento a un modello di messaggio. L’evento non verrà rielaborato.</li></ul> |
-| **Aggiornamento per il recapito messaggi**  (deliverabilityUpdate) | Consegna | Una volta installato il pacchetto di monitoraggio del recapito messaggi (Email Deliverability) , questo flusso di lavoro viene eseguito ogni notte e gestisce le regole di qualificazione delle e-mail non recapitate, nonché l’elenco dei domini e degli MX. Questo richiede che la porta HTTPS sia aperta sulla piattaforma |
+| **Aggiornamento per il recapito messaggi**  (deliverabilityUpdate) | Consegna | Una volta installato il pacchetto di monitoraggio del recapito messaggi (recapito messaggi e-mail), questo flusso di lavoro viene eseguito di notte e gestisce le regole di qualificazione delle e-mail non recapitate, nonché l’elenco dei domini e delle MX. Questo richiede che la porta HTTPS sia aperta sulla piattaforma. |

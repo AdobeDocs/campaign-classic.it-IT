@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -65,7 +65,7 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.  [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **18 agosto 2021**. Gli ambienti ospitati beneficiano di un’estensione fino al **30 novembre 2021**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino al 30 novembre 2021. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **settembre 2021**. Gli ambienti ospitati beneficiano di un&#39;estensione fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Miglioramenti**
@@ -91,7 +91,7 @@ _11 settembre 2020_
 
 * È stato risolto un problema di regressione dovuto una singola funzione errata sulla parte di consegna, che generava un sovraccarico di memoria causando il blocco della preparazione della consegna. (NEO-27346)
 * È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
-* È stata corretta una regressione nella gestione dei modelli HTML che, a causa di un’interpretazione errata delle schede, rendeva visibili gli URL di tracking. (NEO-25909)
+* È stato risolto un problema di regressione nella gestione dei modelli HTML che causava la visualizzazione degli URL di tracciamento a causa di un’interpretazione errata delle schede. (NEO-25909)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
 * Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
 * È stata corretta una regressione che impediva di modificare il nome interno di un account esterno. (NEO-27323)
@@ -321,7 +321,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema che poteva verificarsi durante la pubblicazione di un modello in un’istanza di esecuzione.
 * È stato risolto un problema che poteva impedire l’esecuzione del flusso di lavoro tecnico collectPrivacyRequests. (NEO-20513, NEO-25169)
-* Sono stati risolti dei problemi che potevano verificarsi quando si tentava di collegarsi a Audience Manager dopo l’aggiornamento alla build 9080. (NEO-20511, NEO-25167)
+* Sono stati risolti i problemi che potevano verificarsi durante il tentativo di connessione ad Audience Manager dopo l’aggiornamento alla build 9080. (NEO-20511, NEO-25167)
 * Sono stati risolti dei problemi che potevano verificarsi durante l’esportazione di report in formato PDF o XLS. (NEO-20982, NEO-23493, NEO-23348)
 * È stato risolto un problema che poteva far sì che una consegna fosse visualizzata due volte nell’elenco di consegna dopo l’invio.
 * È stato risolto un problema relativo alla preparazione delle consegne che poteva verificarsi quando la configurazione dell’indirizzamento era impostata per inviare la consegna tramite mid-sourcing.

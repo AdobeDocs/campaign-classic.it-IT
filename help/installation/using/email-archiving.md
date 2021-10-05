@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Una volta configurato CCN e-mail, accertati di selezionare l’opzione **[!UICON
 ## Best practice per indirizzi CCN e-mail {#best-practices}
 
 * **Cassetta postale** indirizzi CCN: assicurati che disponga di una capacità di ricezione sufficiente per archiviare tutte le e-mail inviate dall’MTA.
-* **mutualizzazione** MTA: la funzione di archiviazione CCN funziona a livello di MTA. Ti consente di duplicare ogni e-mail inviata dall’MTA. Poiché l’MTA può essere mutualizzato tra più istanze (ad esempio sviluppo, test o prod) o anche tra più client (in un ambiente di mid-sourcing), l’impostazione di questa funzione influisce sulla sicurezza:
+* **MTA pooling**: la funzione di archiviazione CCN funziona a livello di MTA. Ti consente di duplicare ogni e-mail inviata dall’MTA. Poiché l’MTA può essere raggruppato in più istanze (ad esempio dev, test o prod) o anche tra più client (in un ambiente di mid-sourcing), l’impostazione di questa funzione influisce sulla sicurezza:
 
    * Se condividi un MTA con più client e questa opzione è attivata per uno di essi, questo client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizza un MTA diverso per ogni client.
    * Se utilizzi lo stesso MTA su più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze verranno duplicati dall’opzione dataLogPath .

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 21%
@@ -21,7 +21,7 @@ ht-degree: 21%
 
 La scheda **[!UICONTROL Monitoring]** , accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per aiutarti a monitorare l’istanza.
 
-Fornisce un dashboard di ciò che sta accadendo sull&#39;istanza: il suo stato (versione build, pacchetti installati, ecc.), gli indicatori di sistema, i registri, i flussi di lavoro attualmente in esecuzione, lo stato delle ultime consegne inviate, ecc.
+Fornisce un dashboard di ciò che si verifica sull&#39;istanza: il suo stato (versione build, pacchetti installati, ecc.), gli indicatori di sistema, i registri, i flussi di lavoro attualmente in esecuzione, lo stato delle ultime consegne inviate, ecc.
 
 Informazioni dettagliate sono disponibili [qui](../../production/using/monitoring-processes.md).
 
@@ -31,7 +31,7 @@ Informazioni dettagliate sono disponibili [qui](../../production/using/monitorin
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitorare l’istanza</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Monitorare i flussi di lavoro</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Monitorare i flussi di lavoro</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorare le consegne</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorare il database</a></p></td></tr>
 </table>
@@ -50,7 +50,7 @@ Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanz
 
 La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. Per ulteriori informazioni, [fai clic qui](../../production/using/audit-trail.md).
 
-**Pannello di controllo**
+**Pannello di controllo Campaign**
 
 Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it).
 

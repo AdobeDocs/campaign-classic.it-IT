@@ -3,7 +3,7 @@ product: campaign
 title: Note sulla versione 18.4 di Campaign
 description: Note sulla versione per Campaign 18.4
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 7%
@@ -50,7 +50,7 @@ ht-degree: 7%
 * I registri di archiviazione delle e-mail sono stati migliorati, il che rende più semplice e chiaro il controllo delle e-mail consegnate correttamente o non riuscite tramite l’archiviazione CCN. (NEO-10675)
 * È stato risolto un problema che causava la visualizzazione degli IP del load balancer invece degli IP dei clienti nei log di monitoraggio dei broadcaster. (NEO-11295)
 * È stato corretto un errore di codifica LATIN1 durante l’utilizzo di una connessione FDA a un database PostgreSQL. (NEO-11299)
-* È stato risolto un problema che si verificava quando si utilizzava l’opzione di consegna **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047, NEO-11301)
+* È stato risolto un problema che si verificava durante l’utilizzo dell’opzione di consegna **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047, NEO-11301)
 * È stato risolto un problema casuale che causava la sovrascrittura errata delle proprietà di una consegna. (NEO-11015)
 * È stato risolto un problema che si verificava durante l’utilizzo dei campi calcolati in un’attività del flusso di lavoro **[!UICONTROL Survey answers]** . (NEO-11382)
 * È stato risolto un problema che si verificava durante l’utilizzo dei dati memorizzati in XML in un’attività del flusso di lavoro **[!UICONTROL Survey answers]** . (NEO-10816)
@@ -116,7 +116,7 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
 * L’espansione delle entità esterne è ora disabilitata per impedire potenziali attacchi da parte di utenti non autenticati. (NEO-10173)
 * Autorizzazioni estese per impedire agli utenti standard di modificare i parametri di configurazione dell&#39;istanza come URL di accesso all&#39;applicazione, impostazioni LDAP, ecc. (NEO-10171)
@@ -171,7 +171,7 @@ Viene implicitamente consegnato come (prima delle modifiche alla versione 18.4):
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```

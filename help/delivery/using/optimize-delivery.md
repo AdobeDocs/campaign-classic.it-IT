@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 8%
@@ -32,7 +32,7 @@ Diversi fattori possono influenzare direttamente le prestazioni del server e ral
 
 * Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Segui le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Se sei idoneo, puoi sfruttare le funzionalità [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma, utilizzando le funzionalità [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
+* Se sei idoneo, puoi sfruttare le funzionalità [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma utilizzando le funzionalità [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
 
 ## Verifica della configurazione di rete {#network-config}
 

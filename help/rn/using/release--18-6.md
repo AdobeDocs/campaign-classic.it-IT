@@ -9,7 +9,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 7%
@@ -54,7 +54,7 @@ ht-degree: 7%
 * È stato risolto un problema che si verificava durante l’utilizzo dei campi calcolati in un’attività del flusso di lavoro **[!UICONTROL Survey answers]** . (NEO-11382)
 * Tomcat è stato aggiornato per prevenire lo sfruttamento delle vulnerabilità. (NEO-11503)
 * È stato corretto un errore di codifica LATIN1 durante l’utilizzo di una connessione FDA a un database PostgreSQL. (NEO-11299)
-* È stato risolto un problema che si verificava quando si utilizzava l’opzione di consegna **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047)
+* È stato risolto un problema che si verificava durante l’utilizzo dell’opzione di consegna **[!UICONTROL Prepare the personalization data with a workflow]** . (NEO-11047)
 * È stato risolto un problema relativo al post aggiornamento che impediva l’invio di SMS quando si utilizzava un connettore esteso.
 * Importazione/esportazione del pacchetto migliorata (registro e area geografica aggiunti nell’interfaccia).
 * È stato risolto un problema che mostrava errori inutili nel registro post-aggiornamento quando un’attività del flusso di lavoro **[!UICONTROL Survey answers]** non era completamente configurata.

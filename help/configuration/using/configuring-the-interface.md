@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -39,7 +39,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
 1. Vai al nodo **Amministrazione > Configurazione > Moduli di input** dell&#39;esploratore.
 1. Crea un nuovo file **xtk:form** di tipo **form**.
-1. Descrivere tutti i controlli e i campi necessari a seconda del modello di tabella.
+1. Descrivi tutti i campi e di monitoraggio necessari a seconda del modello di tabella.
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
 1. Passa al nodo **[!UICONTROL Administration>Configuration>Navigation hierarchies]** .
 1. Crea un nuovo documento di tipo **xtk:navtree** **navtree**.
-1. Descrivere tutti i controlli e i campi necessari a seconda del modello di tabella.
+1. Descrivi tutti i campi e di monitoraggio necessari a seconda del modello di tabella.
 
    >[!NOTE]
    >

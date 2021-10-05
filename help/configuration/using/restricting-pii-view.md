@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Puoi trovare un esempio di estensione dello schema destinatario che mostra quest
 Le proprietà principali sono:
 
 * **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, pertanto non è possibile accedervi all&#39;interno di una visualizzazione schema, di una selezione di colonne o di un generatore di espressioni. Ma questo non nasconde alcun dato, se il nome del campo viene immesso manualmente in un&#39;espressione, il valore verrà visualizzato.
-* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, allora ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleSe è vuoto, ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
 
 Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in Campaign:
 

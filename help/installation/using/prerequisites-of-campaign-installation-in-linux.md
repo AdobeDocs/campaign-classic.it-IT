@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Con CentOS sono necessarie le seguenti configurazioni:
    yum install libreoffice-headless libreoffice-writer libreoffice-calc
    ```
 
-1. Installa i seguenti font (facoltativi ma altamente consigliati per le istanze giapponesi):
+1. Installa i seguenti font (facoltativi ma altamente raccomandati per le istanze giapponesi):
 
    ```
    yum install ipa-gothic-fonts ipa-mincho-fonts

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -120,7 +120,7 @@ Per configurare la versione dell’API HTTP v1, segui i passaggi seguenti:
 
 1. Nella finestra **[!UICONTROL Mobile application creation wizard]**, seleziona **[!UICONTROL HTTPV1]** nel menu a discesa **[!UICONTROL API version]**.
 
-1. Fai clic su **[!UICONTROL Load project json file to extract projet details...]** per caricare direttamente il file della chiave JSON. Per ulteriori informazioni su come estrarre il file JSON, consulta [questa pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. Fai clic su **[!UICONTROL Load project json file to extract project details...]** per caricare direttamente il file della chiave JSON. Per ulteriori informazioni su come estrarre il file JSON, consulta [questa pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    Puoi anche immettere manualmente i seguenti dettagli:
    * **[!UICONTROL Project Id]**

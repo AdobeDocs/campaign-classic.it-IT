@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '735'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Per ogni URL del messaggio, puoi scegliere se attivare o meno il tracking, cambi
 
 ### Dove posso accedere ai log di consegna e di tracking? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Scopri come tracciare le consegne e scoprire il comportamento dei destinatari [in questa pagina](../../delivery/using/delivery-dashboard.md).
+Scopri come tracciare le consegne e comprendere il comportamento dei destinatari [in questa pagina](../../delivery/using/delivery-dashboard.md).
 
 ### Dove posso ottenere i report di consegna? {#where-can-i-get-delivery-reports-}
 

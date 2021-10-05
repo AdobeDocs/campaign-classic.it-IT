@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
 ht-degree: 7%
@@ -136,7 +136,7 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
 * È stato risolto un problema di sicurezza che poteva causare vulnerabilità agli attacchi SSRF (Server Side Request Forgery) e attacchi di negazione del servizio (DoS). (NEO-11453)
 * Contenuto (reindirizzamento di tracciamento, pagine mirror, sondaggi, ecc.) verrà ora servito da Campaign con il tag X-Robots: intestazione nocache. Questo impedisce l’indicizzazione di questo contenuto da parte dei motori di ricerca Internet. (NEO-11101)

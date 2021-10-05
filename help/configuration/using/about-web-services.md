@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Prima di utilizzare le API di Adobe Campaign, è necessario avere familiarità c
 
 Adobe Campaign utilizza due tipi di API:
 
-* API di accesso ai dati generici per la query dei dati del modello dati. Consulta [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
+* API di accesso ai dati generiche per la query dei dati del modello dati. Consulta [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
 * API specifiche per le aziende che consentono di agire su ogni oggetto: consegne, flussi di lavoro, abbonamenti, ecc. Fai riferimento a [API orientate alle aziende](../../configuration/using/business-oriented-apis.md).
 
 Per sviluppare le API e interagire con Adobe Campaign, devi conoscere bene il tuo modello dati. Adobe Campaign consente di generare una descrizione completa della base. Fare riferimento a [Descrizione del modello](../../configuration/using/data-oriented-apis.md#description-of-the-model).

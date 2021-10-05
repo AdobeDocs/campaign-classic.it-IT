@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 9%
+source-wordcount: '180'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,13 @@ Per creare uno schema su un database esterno:
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Immetti un nome e una descrizione per lo schema e seleziona l’account esterno che abiliterà la connessione al database. Ciò consente l’accesso all’elenco delle tabelle disponibili nella base esterna. Scegliere la tabella contenente i dati da raccogliere.
+1. Immetti un **[!UICONTROL Namespace]** e **[!UICONTROL Name]** per lo schema e seleziona il **[!UICONTROL External account]** che abiliterà la connessione al database. Ciò consente l’accesso all’elenco delle tabelle disponibili nella base esterna.
+
+   ![](assets/wf_new_schema_select_table_fda.png)
+
+1. Dal campo **[!UICONTROL Table name]** , scegli la tabella che contiene i dati da raccogliere.
+
+   Con il Snowflake, è possibile selezionare qui le visualizzazioni se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le visualizzazioni, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta la [documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
