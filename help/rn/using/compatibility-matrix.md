@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,7 +119,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tbody>
 </table>
 
-## Server RDBMS{#RDBMSservers}
+## Sistemi di gestione del database delle relazioni (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>Server di database predefinito per ambienti ospitati</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>Nota: è inoltre possibile utilizzare Amazon RDS per PostgreSQL con le versioni sopra specificate.</p>
+<p><strong>Nota:</strong> puoi anche utilizzare Amazon RDS per PostgreSQL con le versioni specificate sopra.</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p>Avvertenza: Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
+<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 >[!NOTE]
 >
->Il driver RDBMS deve corrispondere alla versione del server RDBMS.
+>* Il driver RDBMS deve corrispondere alla versione del server RDBMS.
+>
+>* PostgreSQL è il RDBMS per gli ambienti ospitati.
+
 
 ## Connettori CRM{#CRMconnectors}
 
