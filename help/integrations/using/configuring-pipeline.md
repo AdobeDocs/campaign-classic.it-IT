@@ -5,7 +5,7 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -127,7 +127,7 @@ L&#39;elenco dei parametri facoltativi è disponibile di seguito:
 
 | Opzione | Descrizione |
 |:-:|:-:|
-| appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione Oath legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.) |
+| appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione Oath legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint(Legacy) | URL per ottenere token gateway. Predefinito: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | La chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografato con l&#39;opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Disattiva l’autenticazione, la connessione senza token gateway verrà accettata solo da alcuni endpoint della pipeline di sviluppo. |
