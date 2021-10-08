@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
+source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 98%
+source-wordcount: '2459'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ _8 ottobre 2021_
 
 **Patch**
 
-* È stato risolto un problema che poteva impedire il salvataggio delle proposte di offerta quando si utilizzava il modulo **Interazione** con l’opzione [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* È stato risolto un problema che poteva impedire la corretta gestione delle offerte quando si utilizzava il modulo **Interazione** con l’opzione [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
-* È stato corretto un errore &quot;Impossibile trovare l’ipaffinity xxx nel mid server xxx&quot; che poteva verificarsi quando si utilizza più di un’affinità IP nell’istanza di mid-sourcing. (NEO-37514)
+* È stato corretto un errore &quot;Impossibile trovare l’ipaffinity xxx nel mid server xxx&quot; che poteva verificarsi durante l’invio della consegna quando si utilizza più di un’affinità IP in un’istanza multi-mid-sourcing. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
