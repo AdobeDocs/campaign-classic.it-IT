@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 97%
          + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
          + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
-         + [Sincronizzare i dati con CRM](platform/using/crm-data-sync.md)
+         + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
       + Connettore Adobe Analytics{#analytics-connector}
          + [Provisioning del connettore Adobe Analytics](platform/using/adobe-analytics-provisioning.md)
          + [Integrazione del connettore Adobe Analytics](platform/using/adobe-analytics-connector.md)
@@ -843,17 +843,17 @@ ht-degree: 97%
       + [Configurazioni specifiche nella versione v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Procedura di ripristino](migration/using/about-rollback.md)
 + Note tecniche {#technotes}
-   + [Raccomandazioni per il dimensionamento dell&#39;hardware](technotes/using/hardware-sizing.md)
+   + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
    + Aggiornamenti e migrazioni{#technote-migration}
       + [Note tecniche](technotes/using/technote.md)
       + [Aggiornamenti alla configurazione di Campaign](technotes/using/acc-config-updates.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
-      + [Come aggiornare non corretti rimbalzi rigidi](delivery/using/update-bounce-qualification.md)
+      + [Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)
+      + [Come aggiornare errori permanenti di consegna non corretti](delivery/using/update-bounce-qualification.md)
       + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
       + [Aggiornamento degli URL tracciati](technotes/using/tracked-urls.md)
    + Migrazione ad Adobe Managed Services{#dc-migration}
-      + [Migrazione a Public Cloud](technotes/using/dc-migration.md)
+      + [Migrazione a cloud pubblico](technotes/using/dc-migration.md)
       + [Domande frequenti](technotes/using/dc-migration-faq.md)
