@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '600'
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tbody>
 </table>
 
-## Sistemi di gestione del database delle relazioni (RDBMS){#RDBMSservers}
+## Sistemi di gestione del database relazionale (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -142,7 +142,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p><strong>Nota:</strong> puoi anche utilizzare Amazon RDS per PostgreSQL con le versioni specificate sopra.</p>
+<p><strong>Nota:</strong> è inoltre possibile utilizzare Amazon RDS per PostgreSQL con le versioni sopra specificate.</p>
 </td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
+<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layer).</p>
 </td>
 </tr>
 </tbody>
@@ -163,12 +163,12 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 >
 >* Il driver RDBMS deve corrispondere alla versione del server RDBMS.
 >
->* PostgreSQL è il RDBMS per gli ambienti ospitati.
+>* PostgreSQL è il RDBMS per gli ambienti in hosting.
 
 
 ## Connettori CRM{#CRMconnectors}
 
-I sistemi di gestione delle relazioni con i clienti (CRM) compatibili con Adobe Campaign sono elencati di seguito. [Ulteriori ](../../platform/using/crm-connectors.md) informazioni sui connettori di gestione delle relazioni con i clienti di Campaign.
+I sistemi CRM per la gestione delle relazioni con i clienti compatibili con Adobe Campaign sono elencati di seguito. [Ulteriori informazioni](../../platform/using/crm-connectors.md) sui connettori CRM per Campaign.
 
 <table>
 <tbody>
@@ -189,7 +189,7 @@ I sistemi di gestione delle relazioni con i clienti (CRM) compatibili con Adobe 
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Di seguito sono elencati i database esterni compatibili con Adobe Campaign [Federated Data Access module](../../installation/using/about-fda.md) .
+Di seguito sono elencati i database esterni compatibili con il [modulo Federated Data Access](../../installation/using/about-fda.md) di Adobe Campaign.
 
 <table>
 <tbody>
@@ -213,9 +213,9 @@ Di seguito sono elencati i database esterni compatibili con Adobe Campaign [Fede
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -289,7 +289,7 @@ Di seguito sono elencati i database esterni compatibili con Adobe Campaign [Fede
 
 ## Console client {#ClientConsoleoperatingsystems}
 
-I seguenti sistemi operativi e browser sono **obbligatori** per utilizzare [Console client Campaign](../../installation/using/installing-the-client-console.md).
+Per utilizzare la [console client di Campaign](../../installation/using/installing-the-client-console.md) sono **necessari** i seguenti sistemi operativi e browser.
 
 ### Sistemi operativi
 
@@ -330,7 +330,7 @@ I seguenti sistemi operativi e browser sono **obbligatori** per utilizzare [Cons
 
 ## SDK per dispositivi mobili{#MobileSDK}
 
-Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) sui sistemi operativi elencati di seguito, utilizzando l’ [SDK mobile associato](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) sui sistemi operativi elencati di seguito, utilizzando l’[SDK mobile associato](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 
 ## Browser{#Browsers}
 
-I seguenti browser sono compatibili con Campaign per [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+I seguenti browser sono compatibili con Campaign per l’[accesso web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 <table>
 <tbody>
@@ -405,6 +405,6 @@ I seguenti browser sono compatibili con Campaign per [Web Access](../../campaign
 
 * [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 * [Architettura generale di Campaign](../../installation/using/general-architecture.md)
-* [Raccomandazioni per il dimensionamento dell&#39;hardware](../../technotes/using/hardware-sizing.md)
+* [Consigli sui requisiti hardware in base alle dimensioni](../../technotes/using/hardware-sizing.md)
 * [Funzioni e sistemi obsoleti](../../rn/using/deprecated-features.md)
 * [Procedura di aggiornamento versione](../../production/using/build-upgrade.md)
