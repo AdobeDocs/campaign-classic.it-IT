@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Le **ultime build GA** sono: [[!DNL Gold Standard] versione 11](../../rn/using/g
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** (RC): versione più recente con nuove funzionalità.
 
-![](assets/do-not-localize/orange3.png) **Non più disponibile**  - Nessuna distribuzione. Nessun bug fix. Si consiglia di eseguire l’aggiornamento a una build più recente.
+![](assets/do-not-localize/orange3.png) **Non più disponibile**: nessuna distribuzione. Nessun bug fix. Si consiglia di eseguire l’aggiornamento a una versione più recente.
 
 ![](assets/do-not-localize/red3.png) **Obsoleto**: nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate.
 
