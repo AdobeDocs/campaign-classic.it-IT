@@ -117,21 +117,21 @@ _17 febbraio 2020_
 
 * iOS 13 è ora supportato con il connettore HTTP2.
 
-* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disattivati vengono ora gestiti come per Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Ulteriori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo per il connettore HTTP2), i token disattivati vengono ora gestiti nello stesso modo di Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Leggi tutto](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* È stata aggiunta una nuova opzione nelle attività del flusso di lavoro **Codice JavaScript** e **Codice JavaScript avanzato** per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di JavaScript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Ulteriori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nel **Codice JavaScript** e **Codice JavaScript avanzato** attività del flusso di lavoro per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di JavaScript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Leggi tutto](../../workflow/using/sql-code-and-javascript-code.md)
 
 * L’analisi della consegna viene ora interrotta quando non viene trovata alcuna affinità corrispondente sul server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
 * È ora supportato il failover del database per Postgres: quando il server di database si blocca e si riavvia, Campaign ora si riconnette automaticamente a esso.
 
-* La vista **Avvia in sospeso** è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro . Questo ti consente di monitorare tutti i flussi di lavoro sull&#39;istanza che sono in attesa di essere avviati dal processo **operationMgt**. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing . [Ulteriori informazioni](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* La **Inizio in sospeso** la visualizzazione è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro . Questo ti consente di monitorare tutti i flussi di lavoro sull’istanza in attesa di essere avviati dalla **operationMgt** processo. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing . [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Altre modifiche**
 
 * Su Linux, l&#39;avvio del servizio nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installi il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più utilizzate sono state spostate dalla sequenza **xtkNewId** alle sequenze dedicate. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Le tabelle personalizzate più utilizzate sono state spostate dalla **xtkNewId** sequenza a sequenze dedicate. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Prestazioni query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
 
@@ -141,7 +141,7 @@ _17 febbraio 2020_
 
 * La robustezza del pool di connessioni è stata migliorata, il che potrebbe impedire che si verifichino errori di connessione imprevisti troppo spesso.
 
-* Le regole di convalida dell’indirizzo e-mail per inviare un indirizzo in quarantena in caso di errore soft sono state migliorate. [Ulteriori informazioni](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Le regole di convalida dell’indirizzo e-mail per inviare un indirizzo in quarantena in caso di errore soft sono state migliorate. [Leggi tutto](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * Per Debian, Campaign ora utilizza le librerie PCRE di sistema quando sono disponibili.
 
@@ -159,7 +159,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema di codifica durante l’esecuzione di query tramite il connettore FDA Netezza. (NEO-19594)
 
-* È stato risolto un problema che causava un errore durante l&#39;utilizzo del metodo POST nell&#39;attività dell&#39;evento del flusso di lavoro **Download Web** .
+* È stato risolto un problema che causava un errore durante l’utilizzo del metodo POST nel **Download Web** attività dell’evento del flusso di lavoro.
 
 * È stato risolto un problema relativo alla generazione di proposte di offerta. (NEO-18176)
 
@@ -167,25 +167,25 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che poteva causare l’arresto anomalo degli URL durante l’analisi del contenuto delle consegne continue. (NEO-16910)
 
-* È stato risolto un problema che impediva il calcolo dei campi **Start** e **End** durante la creazione di una nuova campagna.
+* È stato risolto un problema relativo alla **Inizio** e **Fine** campi che non vengono calcolati durante la creazione di una nuova campagna.
 
-* È stato risolto un problema relativo all&#39;attività del flusso di lavoro **File Download** quando si utilizza un URL.
+* È stato risolto un problema relativo alla **Download file** attività del flusso di lavoro quando utilizzi un URL.
 
 * È stato risolto un problema che si verificava durante l’anteprima di un elenco importato in un’attività query di un rapporto. (NEO-13119)
 
-* È stato risolto un problema che causava la visualizzazione di un&#39;immagine obsoleta durante la selezione del blocco di personalizzazione **Powered by Campaign** nell&#39;editor e-mail.
+* È stato risolto un problema che causava la visualizzazione di un&#39;immagine obsoleta durante la selezione della **Alimentato da campagna** blocco di personalizzazione nell’editor e-mail.
 
 * È stata migliorata la comunicazione di rete tra il client e il server.
 
 * È stato risolto un problema che si verificava quando nella stessa campagna venivano creati troppi flussi di lavoro. Ora non puoi creare più di 28 flussi di lavoro. Viene visualizzato un avviso.
 
-* È stato risolto un problema che si verificava durante l’utilizzo dell’opzione di riconciliazione **A selection of columns** in a2/>Union **in un’attività del flusso di lavoro.**
+* È stato risolto un problema che si verificava con l’utilizzo di **Selezione di colonne** opzione di riconciliazione in un **Union** attività del flusso di lavoro.
 
 * È stato risolto un problema di arresto anomalo della console che poteva verificarsi quando si utilizzava un elenco di arricchimento danneggiato in un flusso di lavoro. (NEO-18096)
 
 * Sono stati risolti diversi problemi di arresto anomalo della console che potevano verificarsi nei flussi di lavoro (NEO-18010, NEO-18032)
 
-* È stato risolto un problema che consentiva l&#39;esecuzione di un&#39;attività flusso di lavoro **External signal** anche quando è stata disabilitata. (NEO-17524)
+* È stato risolto un problema che consentiva l’esecuzione di un **Segnale esterno** attività del flusso di lavoro anche quando è stato disabilitato. (NEO-17524)
 
 * È stato risolto un problema che si verificava durante la creazione di un nuovo schema.
 
@@ -203,29 +203,29 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava un costante errore del **Import audiences from the Adobe Experience Cloud** technical workflow tp. (NEO-18463)
+* È stato risolto un problema che causava il **Importare tipi di pubblico da Adobe Experience Cloud** il workflow tecnico non riesce costantemente. (NEO-18463)
 
 * È stato risolto un problema che impediva l’invio di consegne durante l’utilizzo di modelli importati da Experience Manager. (NEO-17540)
 
 * È stato risolto un problema che si verificava dopo l’aggiornamento alla build 9032 e che impediva la connessione dell’istanza al server FTP tramite il protocollo SSL. (NEO-20498)
 
-* È stato risolto un problema che si verificava durante l’eliminazione, l’inserimento o l’aggiornamento di una grande quantità di dati con l’attività **Update data** in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
+* È stato risolto un problema che si verificava durante l&#39;eliminazione, l&#39;inserimento o l&#39;aggiornamento di una grande quantità di dati con il **Update data** in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
 
-* È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto HTML. (NEO-18628)
+* È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto di HTML. (NEO-18628)
 
 * È stato risolto un problema che si verificava durante il tentativo di visualizzazione della pagina speculare dai registri di consegna di un messaggio inviato. (NEO-17976)
 
-* È stato risolto un problema che impediva la visualizzazione del blocco di personalizzazione **Collega a pagina speculare** nella scheda **Contenuto testo** dopo aver fatto clic su **Importa HTML** in una consegna. (NEO-17568)
+* È stato risolto un problema che impediva la **Collegamento a una pagina speculare** blocco di personalizzazione da visualizzare nel **Contenuto testo** scheda dopo aver fatto clic **Importa HTML** in una consegna. (NEO-17568)
 
 * È stato chiarito il messaggio di errore visualizzato quando si fa clic su un collegamento a una pagina speculare scaduta. (NEO-17340)
 
-* È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nella schermata di creazione **Distribuzione dati** .
+* È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nel **Distribuzione dei dati** schermata di creazione.
 
 * È stato risolto un problema che si verificava durante la pianificazione di un’attività di consegna in un’istanza con Asia/Calcutta come fuso orario. (NEO-20001)
 
 * Ora viene visualizzato un errore quando una consegna presenta un problema di configurazione dell’affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag di versione errato nel menu **Informazioni su** .
+* È stato risolto un problema che causava la visualizzazione di un numero di tag di versione errato nel **Informazioni** menu.
 
 * È stato risolto un problema che si verificava durante il tentativo di aggiornare l&#39;account di indirizzamento dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 

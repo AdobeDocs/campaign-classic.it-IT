@@ -3,7 +3,7 @@ product: campaign
 title: Note sulla versione di Campaign 19.1
 description: Note sulla versione per Campaign 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '3308'
 ht-degree: 25%
@@ -43,23 +43,23 @@ _16 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **18 agosto 2021**. Gli ambienti ospitati beneficiano di un’estensione fino al **30 novembre 2021**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino al 30 novembre 2021. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) .
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). Modalità di autenticazione oAuth legacy con Campaign [è stato ritirato](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) su **Settembre 2021**. Gli ambienti in hosting beneficiano di un’estensione fino a  **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 
 **Miglioramenti**
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
-* L&#39;autenticazione dell&#39;integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata nell&#39;Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la fine del supporto del protocollo binario legacy del servizio APNs per iOS, tutte le istanze che utilizzano questo protocollo vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 * È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni.
 * È stato risolto un problema che visualizzava percentuali errate durante la generazione di un rapporto descrittivo tramite un’attività del flusso di lavoro. (NEO-14314)
-* È stato risolto un problema di preparazione della consegna quando l’opzione **Escludi indirizzo duplicato durante la consegna** era deselezionata. (NEO-13240)
+* È stato risolto un problema di preparazione della consegna quando **Escludere l’indirizzo duplicato durante la consegna** opzione deselezionata. (NEO-13240)
 * È stato risolto un problema che poteva causare un errore dei flussi di lavoro durante l’esecuzione di un’attività **Enrichment**. (NEO-17338)
 * È stato risolto un problema nei flussi di lavoro che si verificava recuperando i record da un database esterno e inserendoli nel database Campaign. (NEO-26359)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione.
-* È stato risolto un problema che impediva il funzionamento della funzione **NoNull** nei database di Oracle dopo l&#39;aggiornamento alla build 9032. (NEO-26488)
+* È stato risolto un problema che impediva la **NoNull** funzionamento nei database Oracle dopo l&#39;aggiornamento alla build 9032. (NEO-26488)
 * È stato risolto un problema che impediva la visualizzazione del pulsante **Salva** durante la modifica di una descrizione del modello della campagna con copia-incolla di simboli come, ad esempio, i caratteri giapponesi. (NEO-27071)
 * È stato risolto un problema che impediva il salvataggio della descrizione di una campagna o di un modello di campagna facendo clic all’esterno della finestra prima di fare clic sul pulsante **Salva**. (NEO-27449)
 * È stato risolto un problema a livello di configurazione proxy che impediva di accedere ad Adobe Campaign dopo l’ultimo aggiornamento di Windows 10. (NEO-27813)
@@ -93,13 +93,13 @@ _15 settembre 2020_
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
 * Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
 * Dopo il passaggio al [nuovo meccanismo di sequenza ID](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
-* È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto HTML. (NEO-18628)
+* È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto di HTML. (NEO-18628)
 * È stato risolto un problema che impediva agli indicatori di tracciamento dei messaggi transazionali di essere aggiornati dal flusso di lavoro Tracking. (NEO-17770)
 * Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
-* È stato risolto un problema di arresto anomalo della console che poteva verificarsi quando si deselezionavano gli URL tracciati in un messaggio e-mail dalla scheda **Contenuto testo** a causa di una variabile non inizializzata. (NEO-13545)
+* È stato risolto un problema di arresto anomalo della console che poteva verificarsi quando si deselezionavano gli URL tracciati in un messaggio e-mail dal **Contenuto testo** a causa di una variabile non inizializzata. (NEO-13545)
 * È stato risolto un problema che impediva il caricamento di file in un’attività File Transfer utilizzando un account esterno Azure Blob Storage a causa di una variabile non inizializzata (m_pCurlReader). (NEO-13717)
 * È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
-* È stata corretta una regressione che causava la selezione di un fuso orario errato durante l&#39;impostazione del tempo in un&#39;attività del flusso di lavoro **Scheduler** .
+* È stata corretta una regressione che causava la selezione di un fuso orario errato quando si impostava il tempo in un **Scheduler** attività del flusso di lavoro.
 
 ## ![](assets/do-not-localize/red_2.png) Versione 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
@@ -125,7 +125,7 @@ _13 agosto 2019_
 
 * È stato risolto un problema relativo all’istruzione SQL &quot;SELECT COUNT&quot; che veniva eseguita nel database predefinito anziché nel database FDA durante l’estrazione dei dati nell’attività di gestione dei dati.
 * Per migliorare le funzionalità dell’infrastruttura cliente, nel file di configurazione del server è ora disponibile una dichiarazione proxy SFTP.
-* È stato risolto un problema di arresto anomalo che si verificava quando il campo **Aggiungi tabella collegata** era vuoto nell&#39;attività del flusso di lavoro **Caricamento dati (RDBMS)** . (NEO-12213)
+* È stato risolto un problema di arresto anomalo quando **Aggiungi tabella collegata** il campo era vuoto nel **Caricamento dati (RDBMS)** attività del flusso di lavoro. (NEO-12213)
 * È stato risolto un problema relativo all’installazione del pacchetto midEmitter tramite la riga di comando.
 * È stata aggiunta una nuova opzione di autenticazione per supportare le credenziali OAuth all’interno del connettore AC con Microsoft Dynamics. (NEO-11982)
 * È stato risolto un problema nella gestione UID (Unique Universal Identifier) che causava il mancato funzionamento delle attività del flusso di lavoro di caricamento query e dati con Hive FDA.
@@ -136,14 +136,14 @@ _13 agosto 2019_
 
 >[!NOTE]
 >
->Le versioni 19.1.4 [!DNL Gold Standard] sono elencate in questa [pagina](../../rn/using/gold-standard.md).
+>19.1.4 [!DNL Gold Standard] le versioni sono elencate in [page](../../rn/using/gold-standard.md).
 
 
 ## ![](assets/do-not-localize/red_2.png) Versione 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
 _21 giugno 2019_
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
 * Per ottimizzare la sicurezza, la libreria Java (Netty) è stata aggiornata alla versione più recente (4.1.34). (NEO-12788)
 
@@ -171,19 +171,19 @@ _30 maggio 2019_
  <tbody> 
   <tr> 
    <td> Pannello di controllo Campaign<br /> </td> 
-   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Il Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedi tramite l'Experience Cloud oggi</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it">documentazione dettagliata</a> e il <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=it">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
+   <td> <p>Per aumentare l’efficienza del lavoro come utente amministratore, gestisci le impostazioni dei server SFTP monitorando l’archiviazione, aggiungi gli indirizzi IP all’inserire nell'elenco Consentiti e installa le chiavi SSH per ogni istanza. Pannello di controllo Campaign è disponibile solo per i clienti ospitati su AWS a partire da oggi (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">accedere all'Experience Cloud oggi stesso</a>).</p> <p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it">documentazione dettagliata</a> e il <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/control-panel-overview.html?lang=it">video tutorial</a>. </p><p>Nota: l’aggiornamento alla build Campaign più recente non è necessario per accedere al Pannello di controllo Campaign.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit trail<br /> </td> 
    <td> <p>In qualità di amministratore, aumenta la produttività monitorando e gestendo le modifiche apportate all'interno dell'istanza Adobe Campaign Classic. La traccia di audit registra le azioni eseguite sugli schemi di origine, sui flussi di lavoro e sulle opzioni. Puoi verificare rapidamente se un elemento è stato creato, modificato o eliminato.</p><p>Per ulteriori informazioni, consulta la <a href="../../production/using/audit-trail.md">documentazione dettagliata</a> e <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">video tutorial</a>.</p></td> 
   </tr> 
   <tr> 
-   <td> Guardrail, robustezza e scalabilità<br /> </td> 
+   <td> Sicurezza, robustezza e scalabilità<br /> </td> 
    <td> È stata aggiunta una serie di miglioramenti ad Campaign Classic. Guardrail, robustezza e scalabilità sono elencati di seguito.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
-   <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fare riferimento alla <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
+   <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fai riferimento a <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18 quater</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -195,9 +195,9 @@ _30 maggio 2019_
  </tbody> 
 </table>
 
-**Miglioramenti della sicurezza**
+**Miglioramenti di sicurezza**
 
-* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza l&#39;opzione **[!UICONTROL Pre-process the file]** in un&#39;attività del flusso di lavoro **[!UICONTROL Data loading (file)]**. È ora disponibile un elenco a discesa che consente di scegliere tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di sicurezza XtkSecurity_Disable_Preproc . Per i nuovi clienti, questa opzione è impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 dal post aggiornamento per mantenere il comportamento precedente. Fare riferimento a questa sezione [sezione](../../workflow/using/data-loading--file-.md).
+* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza il **[!UICONTROL Pre-process the file]** in un **[!UICONTROL Data loading (file)]** attività del flusso di lavoro. È ora disponibile un elenco a discesa che consente di scegliere tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di sicurezza XtkSecurity_Disable_Preproc . Per i nuovi clienti, questa opzione è impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 dal post aggiornamento per mantenere il comportamento precedente. Fai riferimento a questo [sezione](../../workflow/using/data-loading--file-.md).
 * È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account esterno FDA senza fuso orario impostato.
 * La libreria PDFBox è stata rimossa.
 * Tomcat è stato aggiornato alla versione 7.0.93.
@@ -222,13 +222,13 @@ _30 maggio 2019_
 * Archiviazione CCN: i parametri predefiniti per l&#39;archiviazione CCN sono stati modificati per aumentare la velocità di archiviazione. [Leggi tutto](../../installation/using/email-archiving.md#parameters)
 * Aggiornamento della struttura del database: Le richieste SQL generate dall&#39;aggiornamento guidato della struttura del database sono state migliorate per un&#39;esecuzione più rapida.
 * Guardrail per le azioni dell&#39;operatore: sono state implementate diverse protezioni per impedire agli operatori di eseguire azioni che potrebbero influire sull&#39;integrità della piattaforma. Gli schemi incorporati non possono più essere eliminati tramite l’interfaccia . Inoltre, l’XML di origine del flusso di lavoro non può più essere modificato da utenti non amministratori.
-* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (ti consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (ti consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Leggi tutto](../../installation/using/configuring-campaign-options.md)
+* Sono state rese disponibili due nuove opzioni: **XtkSecurity_Restrict_EditXML** (consente di disabilitare la modifica del codice XML delle consegne) e **NmsOperation_OperationMgtDebug** (consente di monitorare l’esecuzione del flusso di lavoro tecnico operationMgt). [Leggi tutto](../../installation/using/configuring-campaign-options.md)
 
 **Altre modifiche**
 
 * Notifiche push: ora è supportata l’opzione Thread ID per il push iOS.
 * È stata migliorata la gestione degli indici dei nomi lunghi che potrebbero causare problemi dopo l&#39;aggiornamento.
-* Ora, durante l’analisi di una consegna definitiva, se la modalità di pubblicazione è impostata su **[!UICONTROL None]** nella procedura guidata di distribuzione, viene registrato un errore e l’analisi viene interrotta: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul telefono cellulare.&quot; (NEO-12208)
+* Ora, durante l’analisi di una consegna definitiva, se la modalità di pubblicazione è impostata su **[!UICONTROL None]** nella procedura guidata di distribuzione viene registrato un errore e l’analisi viene interrotta: &quot;La modalità di pubblicazione è impostata su &#39;none&#39;: Impossibile incorporare l&#39;immagine. Le immagini non verranno visualizzate sul telefono cellulare.&quot; (NEO-12208)
 * La gestione del registro di trasmissione è stata migliorata per la messaggistica transazionale. Quando i registri di trasmissione vengono sincronizzati dall’istanza di esecuzione all’istanza di controllo, il campo @lastModified viene aggiornato alla data corrente del sistema. L&#39;opzione MC_Update_BlLastModified è stata aggiunta per le istanze di controllo. True indica che la data corrente verrà utilizzata nell&#39;istanza di controllo (comportamento predefinito). False significa che utilizziamo la data @lastModified dell&#39;istanza di esecuzione del registro di trasmissione. (NEO-12579)
 * Sono stati aggiunti indici nelle tabelle temporanee del coupon per ottimizzare l’invio della consegna. (NEO-12437)
 * Nell’integrazione di Analytics, è ora consentito il recupero di dati AAM segmento con carattere %. (NEO-12025)
@@ -256,10 +256,10 @@ _30 maggio 2019_
 * È stato risolto un problema relativo all’utilizzo dei temi nella gestione delle offerte. (NEO-11804)
 * È stato risolto un problema di prestazioni durante l’invio di notifiche push. (NEO-11787)
 * È stato risolto un problema durante l’anteprima di un file XML o CSV in uscita nella gestione delle offerte per una consegna direct mailing. (NEO-11290)
-* È stato risolto un problema durante l&#39;installazione del pacchetto **Gestione delle reti sociali** (Social Marketing) . (NEO-12081)
+* È stato risolto un problema che si verificava durante l’installazione di **Gestione dei social network** (Social marketing). (NEO-12081)
 * È stato risolto un problema che impediva l&#39;eliminazione di un&#39;applicazione Web anche se disponevi dei diritti di accesso corretti. (NEO-12072)
 * È stato risolto un problema che poteva causare la sovrascrittura di alcuni valori durante l’esportazione e l’importazione di un oggetto tramite XML. È stata aggiunta l’opzione XtkExport_IncludeDefaultValues . Se è impostato su True (comportamento predefinito), vengono esportati tutti i valori. Se è impostato su False, le modifiche vengono sovrascritte con il valore predefinito. (NEO-11979)
-* È stato risolto un problema che causava un errore dell’attività del flusso di lavoro **[!UICONTROL Alert]** in caso di aggiunta di un’attività di arricchimento dopo una query. (NEO-12132)
+* È stato risolto un problema che causava la **[!UICONTROL Alert]** l’attività del flusso di lavoro non riesce quando è stata aggiunta un’attività di arricchimento dopo una query. (NEO-12132)
 * È stato risolto un problema relativo alle impostazioni di Oracle a causa del quale gli offset della pipeline (trigger) non venivano recuperati correttamente dal database, causando duplicati. (NEO-12121)
 * È stato risolto un problema che poteva causare errori di visualizzazione nelle tabelle pivot durante l’utilizzo dell’integrazione di Analytics (NEO-12103)
 * È stato risolto un problema relativo al rapporto Analisi descrittiva . (NEO-11414)

@@ -40,7 +40,7 @@ _31 marzo 2021_
 * È stato risolto un problema che causava l’arresto dei flussi di lavoro in esecuzione a causa del riavvio giornaliero del server wfserver. (NEO-30047)
 * È stato risolto un problema di sicurezza relativo all’utilizzo delle chiamate API effettuate da utenti non amministratori che tentavano di sincronizzare i modelli Adobe Experience Manager. (NEO-32389, NEO-23487)
 * È stato risolto un problema che causava l’arresto anomalo della console durante la chiusura di una finestra di dialogo di consegna su una consegna creata con da un modello. (NEO-31547)
-* È stato risolto un problema che si verificava durante la creazione e il salvataggio di una consegna nella scheda **Targeting &amp; Workflow** di una campagna: l&#39;anteprima avrebbe esito negativo con il seguente errore. (NEO-29440)
+* È stato risolto un problema che si verificava durante la creazione e il salvataggio di una consegna all’interno di **Targeting e flusso di lavoro** scheda di una campagna: l&#39;anteprima avrebbe esito negativo con il seguente errore. (NEO-29440)
 * È stato risolto un problema con l’invio di risposte non valide da parte di Tomcat 8.5 che causava errori nei registri di messaggistica transazionale. (NEO-30858)
 * È stato risolto un problema di regressione che causava il danneggiamento della memoria nella gestione dei thread esterni e un impatto sulle prestazioni.
 * È stato risolto un problema che poteva causare un errore del flusso di lavoro Fatturazione quando si utilizzava una mappatura di destinazione personalizzata. La chiave primaria dello schema personalizzato viene memorizzata nella colonna &quot;sourceId&quot;, che consentiva solo valori interi. Ora consente sia valori interi che valori stringa. (NEO-25914, NEO-28146)
@@ -65,13 +65,13 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.  [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione oAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **settembre 2021**. Gli ambienti ospitati beneficiano di un&#39;estensione fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). Modalità di autenticazione oAuth legacy con Campaign [è stato ritirato](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) su **Settembre 2021**. Gli ambienti in hosting beneficiano di un’estensione fino a  **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Miglioramenti**
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
-* L&#39;autenticazione dell&#39;integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata nell&#39;Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 * È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni. (NEO-28609)
@@ -91,7 +91,7 @@ _11 settembre 2020_
 
 * È stato risolto un problema di regressione dovuto una singola funzione errata sulla parte di consegna, che generava un sovraccarico di memoria causando il blocco della preparazione della consegna. (NEO-27346)
 * È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
-* È stato risolto un problema di regressione nella gestione dei modelli HTML che causava la visualizzazione degli URL di tracciamento a causa di un’interpretazione errata delle schede. (NEO-25909)
+* È stato risolto un problema di regressione nella gestione dei modelli di HTML che causava la visualizzazione degli URL di tracciamento a causa di un’interpretazione errata delle schede. (NEO-25909)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
 * Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
 * È stata corretta una regressione che impediva di modificare il nome interno di un account esterno. (NEO-27323)

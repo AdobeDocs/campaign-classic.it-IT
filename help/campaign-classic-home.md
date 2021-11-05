@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: acb2c4e90c4ce349ea9c1ad53d703c13195872e1
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 50%
+ht-degree: 53%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 50%
 
 * **[La versione di settembre è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
 
-* **[Domande ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)** frequenti sulla protezione della privacy di Apple Mail e  **[](technotes/using/apple-mail-app-privacy-protection.md)**<br/> note tecnicheTrova le linee guida iniziali in risposta all’annuncio di Apple riguardo iOS 15
+* **[Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)** e **[nota tecnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Trova le linee guida iniziali in risposta all’annuncio di Apple su iOS 15
 
-* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](technotes/using/ims-updates.md)**<br/> Se utilizzi IMS per la connessione a Campaign, devi effettuare l’aggiornamento per poter connettersi a Campaign dopo il** 30 giugno 2021 **
+* **[Connessione tramite IMS/Adobe ID? Aggiornamento alle build più recenti](technotes/using/ims-updates.md)**<br/> Se utilizzi IMS per connetterti a Campaign, devi effettuare l’aggiornamento per poterti connettere a Campaign dopo** 30 giugno 2021 **
 
-* **[Rimuovere i ](delivery/using/update-bounce-qualification.md)**<br/> rimbalzi rigidi erratiScopri come aggiornare i rimbalzi rigidi errati dopo l&#39;interruzione Apple
+* **[Rimuovi rimbalzi rigidi errati](delivery/using/update-bounce-qualification.md)**<br/> Scopri come aggiornare i non corretti rimbalzi rigidi dopo l’interruzione di Apple
 
-* **[Proteggi le ](technotes/using/acc-config-updates.md)**<br/> istanze di CampaignAggiorna le build più recenti per proteggere la piattaforma Campaign
+* **[Proteggi le istanze Campaign](technotes/using/acc-config-updates.md)**<br/> Aggiornamento alle build più recenti per proteggere la piattaforma Campaign
 
-* **[Aggiorna l’](integrations/using/configuring-adobe-io.md)**<br/> integrazione di Adobe Experience Cloud TriggersIl servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita: devi effettuare la migrazione ad Adobe I/O.
+* **[Aggiornare l’integrazione di Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita: devi effettuare la migrazione ad Adobe I/O.
 
 [Altri aggiornamenti](rn/using/documentation-updates.md)
 

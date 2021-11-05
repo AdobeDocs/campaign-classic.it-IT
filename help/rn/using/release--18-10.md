@@ -58,7 +58,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md)  o contatti [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Miglioramenti**
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Miglioramenti**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. [effettuare l&#39;aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contattare [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novità**
 
@@ -122,16 +122,16 @@ ht-degree: 7%
     <ul> 
      <li> <p>Tracciare le notifiche silenziose in iOS </p> </li> 
      <li> <p>Implementazione del feedback sulle chiamate di registrazione in iOS</p> </li> 
-     <li> <p>Migliorare la velocità di preparazione delle consegne iOS</p> </li> 
+     <li> <p>Migliorare la velocità di preparazione delle consegne in iOS</p> </li> 
     </ul> <p>Come parte del deprezzamento del GCM da parte di Google, il connettore Android V2 ora permette connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>. L'aggiornamento manuale a FCM è descritto in questo <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> Attività di gestione dati SQL<br /> </td> 
-   <td> <p>È stata aggiunta una nuova attività del flusso di lavoro di gestione dati. L'attività <strong>SQL Data Management</strong> consente di scrivere o copiare-incollare i propri script SQL per creare e popolare tabelle di lavoro (solo FDA). </p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/sql-data-management.md">documentazione dettagliata</a>.</p></td> 
+   <td> <p>È stata aggiunta una nuova attività del flusso di lavoro di gestione dati. La <strong>Gestione dati SQL</strong> attività consente di scrivere o copiare-incollare i propri script SQL per creare e popolare tabelle di lavoro (solo FDA). </p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/sql-data-management.md">documentazione dettagliata</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Monitoraggio del flusso di lavoro<br /> </td> 
-   <td> <p>Con la nuova Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rapida rappresentazione grafica di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull’istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/heatmap.md">documentazione dettagliata</a>.</p> <p>Il pacchetto Workflow HeatMap è disponibile anche su richiesta per le build precedenti alla 8977 (a partire dalla build 8700). Per ulteriori informazioni sulla richiesta e l'installazione, consulta <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
+   <td> <p>Con la nuova Adobe Campaign Workflow HeatMap, gli amministratori della piattaforma dispongono di una rapida rappresentazione grafica di tutti i flussi di lavoro simultanei, che consente loro di monitorare il carico sull’istanza e pianificare i flussi di lavoro di conseguenza.</p> <p>Per ulteriori informazioni, consulta la <a href="../../workflow/using/heatmap.md">documentazione dettagliata</a>.</p> <p>Il pacchetto Workflow HeatMap è disponibile anche su richiesta per le build precedenti alla 8977 (a partire dalla build 8700). Per ulteriori informazioni su come richiederlo e installarlo, consulta <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">questa pagina</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +140,7 @@ ht-degree: 7%
 
 * È stato risolto un problema di sicurezza che poteva causare vulnerabilità agli attacchi SSRF (Server Side Request Forgery) e attacchi di negazione del servizio (DoS). (NEO-11453)
 * Contenuto (reindirizzamento di tracciamento, pagine mirror, sondaggi, ecc.) verrà ora servito da Campaign con il tag X-Robots: intestazione nocache. Questo impedisce l’indicizzazione di questo contenuto da parte dei motori di ricerca Internet. (NEO-11101)
-* È stato risolto un problema di iniezione XTK nell’API di abbonamento (nms:subscription:Annulla sottoscrizione e nms:subscription:Abbonati).
+* È stato risolto un problema di iniezione XTK nell’API di abbonamento (nms):subscription:Annulla sottoscrizione e nms:subscription:Iscriviti).
 * È stato risolto un problema di iniezione XTK nell’applicazione Web di annullamento dell’abbonamento.
 * Sono state rimosse le password che erano visualizzate in modo non corretto in alcuni registri SMS.
 
@@ -149,7 +149,7 @@ ht-degree: 7%
 * Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 sono ora supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
 * Quando crei una connessione SFTP, ora puoi utilizzare l’autenticazione proxy. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../installation/using/file-res-management.md) (NEO-9868)
-* L’opzione **Formula di calcolo della data** è ora disponibile nelle proprietà di consegna quando crei una singola consegna utilizzando il modello di consegna della direct mailing. (NEO-9792)
+* La **Formula di calcolo della data** è ora disponibile nelle proprietà di consegna quando crei una singola consegna utilizzando il modello di consegna direct mailing. (NEO-9792)
 * La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e le applicazioni web. Per ulteriori informazioni, consulta la sezione &quot;Evoluzioni tecniche&quot;.
 * L’importazione di risorse condivise Adobe Marketing Cloud in una consegna o in una pagina di destinazione è stata migliorata in termini di sicurezza e prestazioni.
 * Una nuova casella di controllo è disponibile nell&#39;account esterno del canale mobile per abilitare tracce SMPP dettagliate nel file di registro, che rende questo output direttamente accessibile dall&#39;interfaccia Adobe Campaign.
@@ -170,7 +170,7 @@ Gestione dei nomi di dominio
 
 La gestione dei nomi di dominio è stata migliorata per il tracciamento dei cookie e le applicazioni web.
 
-Ora, tutti i nomi di dominio di secondo livello a due lettere sono supportati per impostazione predefinita (ad esempio, .aa.com). Per nomi di dominio più complessi (ad esempio domini di secondo livello a tre lettere come .com.au), devi aggiungerli nell&#39;opzione **cookieDomains** del serverConf (sotto il tag di reindirizzamento). Ecco un esempio:
+Ora, tutti i nomi di dominio di secondo livello a due lettere sono supportati per impostazione predefinita (ad esempio, .aa.com). Per i nomi di dominio più complessi (ad esempio, domini di secondo livello a tre lettere come .com.au), devi aggiungerli nel **cookieDomains** dell&#39;opzione serverConf (sotto il tag di reindirizzamento). Ecco un esempio:
 
 ```
 <redirection cookiedomain="http://toureiffel.paris">
@@ -197,8 +197,8 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 
 **Patch**
 
-* È stato corretto un errore che impediva il download dei file dall&#39;attività del flusso di lavoro **Download Web** . (NEO-11105)
-* È stato corretto un errore che talvolta lasciava il flusso di lavoro **Invio di indicatori e attributi della campagna** in uno stato Non riuscito (NEO-10820).
+* È stato corretto un errore che impediva ai file di **Download Web** attività del flusso di lavoro da scaricare. (NEO-11105)
+* È stato corretto un errore che talvolta lasciava la variabile **Invio di indicatori e attributi della campagna** in uno stato Non riuscito (NEO-10820).
 * È stato risolto un problema che eliminava l’elenco dei destinatari creato dopo l’esecuzione dell’attività di aggiornamento Elenco in un flusso di lavoro. (NEO-11696)
 * È stato risolto un problema che visualizzava in modo errato le campagne un mese prima nel calendario Campaign (su un’istanza giapponese). (NEO-11445)
 * È stato risolto un problema che impediva la visualizzazione della configurazione di Analytics nella scheda Analisi web delle proprietà della consegna. (NEO-11619)
@@ -217,7 +217,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 * È stato risolto un problema che si verificava durante la configurazione di un account esterno di canale mobile utilizzando il connettore SMPP generico esteso: se si specificava l&#39;utilizzo di parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente tali parametri invece dei propri parametri.
 * È stato risolto un problema che causava un errore delle consegne programmate durante l’impostazione di una frequenza per la regola di pressione, perché le consegne venivano costantemente ricalcolate dopo il primo arbitrato. (NEO-10016)
 * È stato risolto un problema che causava l&#39;arresto anomalo del server Web IIS durante il processo di riciclo del pool di applicazioni (nella libreria nlsrvmod.dll). (NEO-10862)
-* È stato risolto un problema che poteva impedire la ricerca di un destinatario nella schermata **Profili e Target** . (NEO-8228)
+* È stato risolto un problema che poteva impedire la ricerca di un destinatario in **Profili e Target** schermo. (NEO-8228)
 * È stato risolto un problema che poteva causare un errore di timeout durante l’accesso alla cartella Cronologia eventi in caso di un numero elevato di record. (NEO-11738)
 * È stato risolto un problema che poteva causare la restituzione errata dei destinatari della consegna LINE come &quot;Non raggiungibile&quot;. (NEO-10833)
 * È stato risolto un problema che si verificava durante l’esecuzione di una query del flusso di lavoro con una colonna aggiuntiva all’Oracle. (NEO-11615)
@@ -237,6 +237,6 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 * È stato risolto un problema che portava a codificare gli URL come URL tracciati nei parametri aggiuntivi di una consegna di notifiche push Android. (NEO-11468)
 * È stato corretto un errore di script che si verificava nel report Attività utente quando i parametri venivano impostati su &quot;Intervalli di un giorno&quot; e &quot;Aperture&quot;. (NEO-11655)
 * È stato risolto un problema che si verificava durante la connessione al server di mid-sourcing o al Centro messaggi tramite un proxy web autenticato. (NEO-11309)
-* È stato corretto un errore di Oracle che si verificava quando si salvava una nuova composizione di consegna dopo aver selezionato un elemento di uno schema specifico **in base a una visualizzazione SQL**. (NEO-11682)
+* È stato corretto un errore di Oracle che si verificava quando una nuova composizione di consegna veniva salvata dopo la selezione di un elemento di uno schema specifico **basato su una vista SQL**. (NEO-11682)
 * È stato risolto un problema che causava la generazione di file di rifiuto contenenti falsi positivi durante l’elaborazione di un file zip contenente un .csv tramite un’attività di caricamento file tramite l’opzione Decompression.
 * xtkjoblog viene eliminato dalla pulizia.
