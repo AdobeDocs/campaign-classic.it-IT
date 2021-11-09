@@ -3,7 +3,7 @@ product: campaign
 title: Migrazione al connettore Adobe Analytics
 description: Campaign - Domande frequenti sul connettore Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
+source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 ## Come si esegue l’aggiornamento?
 
-Devi effettuare l’aggiornamento a Campaign 21.1.3 (o più) **prima del 1 marzo 2022**.
+Devi effettuare l’aggiornamento a Campaign 21.1.3 (o più) **prima di agosto 2022**.
 
 In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente. Potrai quindi utilizzare [Connettore Adobe Analytics](../../platform/using/adobe-analytics-connector.md).
 
