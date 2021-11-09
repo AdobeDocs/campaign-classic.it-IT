@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione.
 1. Esegui un backup del database dell&#39;ambiente di sviluppo.
 1. Interrompi tutti i processi Adobe Campaign nell’istanza di sviluppo.
 1. Esegui un backup del database dell&#39;ambiente di produzione e ripristinalo come ambiente di sviluppo.
-1. Prima di avviare i servizi Adobe Campaign, esegui lo script di avvertenza **frozenInstance.js** che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
+1. Prima di avviare i servizi Adobe Campaign, esegui la **frozenInstance.js** script di cauterizzazione che consente di cancellare il database degli oggetti in esecuzione all&#39;avvio del backup.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione.
 
    >[!NOTE]
    >
-   >Il comando viene avviato per impostazione predefinita in modalità **dry** ed elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire richieste di cautela, utilizza **run** nel comando .
+   >Il comando viene avviato per impostazione predefinita in **secco** e elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire richieste di cautela, utilizza **eseguire** nel comando .
 
 1. Assicurati che i backup siano corretti cercando di ripristinarli. Assicurati di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verifica la procedura di migrazione nell’ambiente di sviluppo.
 
-   Le procedure complete sono descritte in dettaglio nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   Le procedure complete sono descritte nel [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sezione .
 
 1. Se la migrazione dell’ambiente di sviluppo ha esito positivo, puoi eseguire la migrazione dell’ambiente di produzione.
 
@@ -50,13 +50,13 @@ Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione.
 
 >[!NOTE]
 >
->Il comando di aggiornamento di Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server dell&#39;applicazione. Dopo aver sincronizzato le risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
+>Comando di aggiornamento di Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, la **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
 ## Strumenti di migrazione {#migration-tools}
 
 Le varie opzioni consentono di misurare l’impatto di una migrazione e identificare i potenziali problemi. Queste opzioni devono essere eseguite:
 
-* nel comando **config** :
+* in **config** comando:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 
 >[!NOTE]
 >
->È necessario utilizzare l&#39;opzione **-instance:`<instanceame>`**. Si sconsiglia di utilizzare l&#39;opzione **-allinstances**.
+>È necessario utilizzare **-istanza:`<instanceame>`** opzione . Si sconsiglia di utilizzare **-allinstance** opzione .
 
 ### Opzioni -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
 
-* L&#39;opzione **-showCustomEntities** visualizza l&#39;elenco di tutti gli oggetti non standard:
+* La **-showCustomEntities** visualizza l’elenco di tutti gli oggetti non standard:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -86,7 +86,7 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
    xtk_migration:opsecurity2 xtk:entity
    ```
 
-* L&#39;opzione **-showDeletedEntities** visualizza l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante viene specificato il percorso.
+* La **-showDeletedEntities** visualizza l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante viene specificato il percorso.
 
    ```
    nlserver.exe config -showDeletedEntities -instance:<instanceName>
@@ -128,7 +128,7 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Avviso<br /> </td> 
-   <td> Questo tipo di sintassi non è più supportato nella personalizzazione della consegna. Fare riferimento a <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. In caso contrario, verifica che il tipo di valore sia corretto.<br /> </td> 
+   <td> Questo tipo di sintassi non è più supportato nella personalizzazione della consegna. Fai riferimento a <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. In caso contrario, verifica che il tipo di valore sia corretto.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -140,31 +140,33 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Avviso<br /> </td> 
-   <td> Questo metodo di connessione non deve più essere utilizzato. Fare riferimento a <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Applicazioni web identificate</a>.<br /> </td> 
+   <td> Questo metodo di connessione non deve più essere utilizzato. Fai riferimento a <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Applicazioni web identificate</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Avviso<br /> </td> 
-   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da una zona di sicurezza in modalità <strong>sessionTokenOnly</strong>.<br /> </td> 
+   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da una zona di sicurezza in <strong>sessionTokenOnly</strong> modalità.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fare riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ottieni i registri di errore dell’applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configura campagna</a>.<br /> </td> 
+   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ricevi log degli errori dell'applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configurare Campaign</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM locale e Office 365 è stato dichiarato obsoleto</a>. Per passare alla distribuzione API Web, fare riferimento a <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni Web</a>.<br /> </td>
+   <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM locale e Office 365 è stato dichiarato obsoleto. 
+   </br>Se utilizzi uno di questi tipi di distribuzione obsoleti in un account esterno, devi eliminare questo account esterno ed eseguire quindi il <b>postupgrade</b> comando. 
+   </br>Per passare alla distribuzione API Web, consulta <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni web</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

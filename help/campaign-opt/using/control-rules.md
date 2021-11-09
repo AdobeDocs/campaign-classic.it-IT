@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Regole di controllo{#control-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Regole di analisi e di controllo dell&#39;arbitrato {#analysis-and-arbitration-control-rules}
 
@@ -34,7 +34,7 @@ Una serie di regole predefinite ti consente di eseguire i consueti controlli. Qu
 
 ## Creazione di una regola di controllo {#creating-a-control-rule}
 
-È possibile creare nuove regole di controllo in base alle proprie esigenze. A questo scopo, crea una regola di tipologia **[!UICONTROL Control]** e immetti la formula di controllo in SQL nella scheda **[!UICONTROL Code]** .
+È possibile creare nuove regole di controllo in base alle proprie esigenze. A questo scopo, crea un **[!UICONTROL Control]** regola di tipologia e immettere la formula di controllo in SQL nel **[!UICONTROL Code]** scheda .
 
 **Esempio:**
 
@@ -42,11 +42,11 @@ Nell’esempio seguente, creeremo una regola per impedire l’invio di un’offe
 
 Applica i seguenti passaggi:
 
-1. Crea una regola di tipologia **[!UICONTROL Control]**. Selezionare un livello di avviso **[!UICONTROL Warning]**.
+1. Crea un **[!UICONTROL Control]** regola di tipologia. Seleziona una **[!UICONTROL Warning]** livello di avviso.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. Nella scheda **[!UICONTROL Code]** , immetti lo script per applicare la soglia desiderata, come illustrato di seguito:
+1. In **[!UICONTROL Code]** , immetti lo script per applicare la soglia desiderata, come illustrato di seguito:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -70,6 +70,6 @@ Applica i seguenti passaggi:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Al termine dell’analisi, il pulsante **[!UICONTROL Confirm delivery]** non sarà disponibile.
+   Al termine dell&#39;analisi, il **[!UICONTROL Confirm delivery]** questo pulsante non sarà disponibile.
 
    ![](assets/campaign_opt_create_control_06.png)
