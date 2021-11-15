@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 11%
 
 ## Creazione della consegna {#creating-the-delivery}
 
-Puoi creare una consegna tramite la panoramica o il menu **[!UICONTROL Create > Delivery]** .
+Puoi creare una consegna tramite la panoramica o tramite il **[!UICONTROL Create > Delivery]** menu.
 
 
-Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco delle consegne. Quando crei una nuova consegna, devi indicare il canale di consegna utilizzato. A questo scopo, seleziona il modello di consegna appropriato dall’elenco a discesa nel campo **[!UICONTROL Delivery template]** .
+Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco delle consegne. Quando crei una nuova consegna, devi indicare il canale di consegna utilizzato. A questo scopo, seleziona il modello di consegna appropriato dall’elenco a discesa nel **[!UICONTROL Delivery template]** campo .
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -38,11 +38,11 @@ Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in 
 
 Devi completare i parametri per identificare la consegna. Per eseguire questa operazione:
 
-1. Immetti un nome per la consegna nel campo **[!UICONTROL Label]** .
+1. Immetti un nome per la consegna nel **[!UICONTROL Label]** campo .
 
    Un codice di consegna può anche essere assegnato alla consegna. Il nome della consegna e il relativo codice vengono visualizzati nell’elenco delle consegne, ma non possono essere visualizzati dai destinatari.
 
-1. Aggiungi una descrizione nel campo **[!UICONTROL Description]** .
+1. Aggiungi una descrizione nel **[!UICONTROL Description]** campo .
 1. Selezionare la natura della consegna nel campo pertinente. Queste informazioni sono utili per il tracciamento delle consegne: puoi filtrare in base a questo criterio nell’elenco di consegna o creare query utilizzando questo criterio di selezione.
 
    ![](assets/s_ncs_user_email_del_nature.png)
@@ -51,7 +51,7 @@ Devi completare i parametri per identificare la consegna. Per eseguire questa op
 
 Il contenuto della consegna è pronto per essere configurato. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
-* [Definizione del contenuto dell’e-mail](defining-the-email-content.md)
-* [Definizione del contenuto dell’SMS](sms-create.md#defining-the-sms-content)
-* [Definizione del contenuto del direct mailing](defining-the-direct-mail-content.md)
+* [Definire il contenuto dell’e-mail](defining-the-email-content.md)
+* [Definisci il contenuto dell’SMS](sms-create.md#defining-the-sms-content)
+* [Definisci il contenuto della direct mailing](defining-the-direct-mail-content.md)
 * [Notifiche push](about-mobile-app-channel.md)

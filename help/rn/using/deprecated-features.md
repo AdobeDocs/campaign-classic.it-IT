@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+workflow-type: tm+mt
+source-wordcount: '1651'
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
    </tr>
    <tr>
    <td>Documentazione sulle API di Campaign - file jsapi.chm</td>
-   <td>A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">nuova versione online</a>.</td>
+   <td>A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">nuova versione online</a>.</td>
   </tr> 
   <tr> 
    <td>Orchestrazione delle campagne - Marketing predittivo</td>
@@ -123,7 +123,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>A partire dalla versione 18.6 di Campaign, per motivi di sicurezza, l’API <em>decryptString</em> non è più disponibile per impostazione predefinita per le nuove installazioni.</p> 
-   <p>Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>decryptPassword</em>. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Ulteriori informazioni</a></p></td>
+   <p>Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Ulteriori informazioni</a></p></td>
   </tr> 
    <tr> 
    <td>Canale mobile - Messaggi push MMS e WAP</td>

@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 100%
    + Inviare direct mail {#sending-direct-mail}
       + [Informazioni sul canale direct mail](delivery/using/about-direct-mail-channel.md)
       + [Creare una consegna direct mailing](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Definizione del contenuto della direct mailing](delivery/using/defining-the-direct-mail-content.md)
+      + [Definisci il contenuto della direct mailing](delivery/using/defining-the-direct-mail-content.md)
       + [Convalida](delivery/using/validating.md)
    + Utilizzare i modelli di consegna {#using-delivery-templates}
       + [Informazioni sui modelli](delivery/using/about-templates.md)

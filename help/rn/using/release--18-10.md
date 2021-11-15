@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2366'
 ht-degree: 7%
 
 ---
@@ -146,7 +146,7 @@ ht-degree: 7%
 
 **Miglioramenti**
 
-* Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
+* Le API di Campaign Classic sono ora disponibili in una [pagina dedicata](https://experienceleague.adobe.com/developer/campaign-api/api/index.html). Se stavi utilizzando il file jsapi.chm, ora devi fare riferimento alla nuova versione online.
 * PostgreSQL 10, Debian 9 e Teradata 16.20 sono ora supportati. Consulta la [Matrice di compatibilità](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html).
 * Quando crei una connessione SFTP, ora puoi utilizzare l’autenticazione proxy. Per ulteriori informazioni, consulta la [documentazione dettagliata](../../installation/using/file-res-management.md) (NEO-9868)
 * La **Formula di calcolo della data** è ora disponibile nelle proprietà di consegna quando crei una singola consegna utilizzando il modello di consegna direct mailing. (NEO-9792)

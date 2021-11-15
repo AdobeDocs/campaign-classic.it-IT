@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 5%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Scripting
 
-Per ulteriori informazioni, consulta la [documentazione JSAPI della campagna](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Per ulteriori informazioni, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 Se esegui lo script utilizzando workflow, applicazioni web, jssp, segui queste best practice:
 
@@ -54,9 +54,9 @@ Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all&#39;inse
 
 >[!IMPORTANT]
 >
->Se utilizzi una build precedente a 8140, l&#39;opzione **XtkPassUnknownSQLFunctionsToRDBMS** potrebbe essere impostata su &#39;1&#39;. Se desideri proteggere il database, elimina questa opzione (o impostala su &quot;0&quot;).
+>Se utilizzi una build precedente a 8140, la variabile **XtkPassUnknownSQLFunctionsToRDBMS** L&#39;opzione potrebbe essere impostata su &quot;1&quot;. Se desideri proteggere il database, elimina questa opzione (o impostala su &quot;0&quot;).
 
-Se utilizzi l’input dell’utente per creare filtri in query o istruzioni SQL, devi sempre eseguirne l’escape (consulta la [documentazione JSAPI di Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
+Se si utilizza l&#39;input dell&#39;utente per creare filtri in query o istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento a [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -76,7 +76,7 @@ Fai riferimento a queste pagine:
 
 Oltre al modello di sicurezza basato su cartelle, puoi utilizzare diritti denominati per limitare le azioni dell’operatore:
 
-* È possibile aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei dati (vedere [questa pagina](../../configuration/using/filtering-schemas.md)).
+* È possibile aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei dati (consulta [questa pagina](../../configuration/using/filtering-schemas.md)).
 
    ```
    <sysFilter name="writeAccess">    
@@ -108,15 +108,15 @@ L’entità completa viene caricata dalla schermata , ed è possibile visualizza
 
 ## Aggiunta di sottotitoli nelle applicazioni web
 
-È buona norma aggiungere un captcha nelle pagine di destinazione/nelle pagine di abbonamento pubbliche. Sfortunatamente, aggiungere un captcha nelle pagine DCE (Digital Content Editor) non è facile. Ti mostreremo come aggiungere un captcha v5 o un Google reCAPTCHA.
+È buona norma aggiungere un captcha nelle pagine di destinazione/nelle pagine di abbonamento pubbliche. Sfortunatamente, aggiungere un captcha nelle pagine DCE (Digital Content Editor) non è facile. Ti mostreremo come aggiungere un captcha v5 o un reCAPTCHA Google.
 
-Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco di personalizzazione per includerlo facilmente nel contenuto della pagina. Sarà necessario aggiungere un&#39;attività **Script** e un **Test**.
+Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco di personalizzazione per includerlo facilmente nel contenuto della pagina. Dovrai aggiungere un **Script** attività e **Test**.
 
 ### Blocco di personalizzazione
 
 1. Vai a **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** e creane uno nuovo.
 
-1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
+1. Utilizza la **[!UICONTROL Web application]** tipo di contenuto e controllo **[!UICONTROL Visible in the customization menus]**.
 
    Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/personalization-blocks.md).
 
@@ -146,17 +146,17 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
    * Prima di utilizzare Google reCAPTCHA, è necessario registrarsi su Google e creare un nuovo sito reCAPTCHA.
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   Dovresti essere in grado di disabilitare il pulsante di convalida, ma poiché non disponiamo di un pulsante/collegamento standard, è meglio farlo nell’HTML stesso. Per informazioni su come farlo, fai riferimento a [questa pagina](https://developers.google.com/recaptcha/).
+   Dovresti essere in grado di disabilitare il pulsante di convalida, ma poiché non disponiamo di un pulsante/collegamento standard, è meglio farlo in HTML stesso. Per scoprire come farlo, fai riferimento a [questa pagina](https://developers.google.com/recaptcha/).
 
 ### Aggiornamento dell&#39;applicazione web
 
-1. Accedi alle proprietà dell&#39;applicazione web per aggiungere una variabile booleana denominata **captchaValid**.
+1. Accedi alle proprietà dell’applicazione web per aggiungere una variabile booleana denominata **captchaValid**.
 
    ![](assets/scripting-captcha.png)
 
-1. Tra l’ultima pagina e l’attività **[!UICONTROL Storage]** , aggiungi un **[!UICONTROL Script]** e un **[!UICONTROL Test]**.
+1. Tra l’ultima pagina e il **[!UICONTROL Storage]** aggiungi un **[!UICONTROL Script]** e **[!UICONTROL Test]**.
 
-   Collega il ramo **[!UICONTROL True]** al **[!UICONTROL Storage]** e l’altro alla pagina che avrà il captcha.
+   Collegare il ramo **[!UICONTROL True]** al **[!UICONTROL Storage]** e l&#39;altro sulla pagina che avrà il captcha.
 
    ![](assets/scripting-captcha2.png)
 
@@ -164,7 +164,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
    ![](assets/scripting-captcha3.png)
 
-1. Modifica l’attività **[!UICONTROL Script]** . Il contenuto dipenderà dal motore captcha selezionato.
+1. Modifica le **[!UICONTROL Script]** attività. Il contenuto dipenderà dal motore captcha selezionato.
 
 1. Infine, puoi aggiungere il blocco personalizzato nella pagina: fare riferimento a [questa pagina](../../web/using/editing-content.md).
 
@@ -174,7 +174,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 >[!IMPORTANT]
 >
->Per l’integrazione reCAPTCHA, è necessario aggiungere JavaScript lato client nell’HTML (in `<head>...</head>`):
+>Per l’integrazione reCAPTCHA, è necessario aggiungere JavaScript lato client in HTML (in `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -196,9 +196,9 @@ else
 
 Linea 6: puoi inserire qualsiasi tipo di messaggio di errore.
 
-### Google ricontcha
+### Ricontcha Google
 
-Fare riferimento alla [documentazione ufficiale](https://developers.google.com/recaptcha/docs/verify).
+Fai riferimento alla [documentazione ufficiale](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

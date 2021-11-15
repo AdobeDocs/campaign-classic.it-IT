@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 3%
+source-wordcount: '1031'
+ht-degree: 2%
 
 ---
 
@@ -24,19 +24,19 @@ Nelle pagine del modulo è possibile includere elementi con i quali l’utente n
 Sono disponibili i seguenti tipi di campi:
 
 * Valore basato su risposte fornite in precedenza (nel contesto del modulo) o sul database.
-* Collegamento ipertestuale, HTML, barra orizzontale. Consulta [Inserimento di contenuto HTML](#inserting-html-content).
-* Immagine salvata nella libreria delle risorse o su un server accessibile dagli utenti. Consulta [Inserimento di immagini](#inserting-images).
+* Collegamento ipertestuale, HTML, barra orizzontale. Vedi [Inserimento di contenuto HTML](#inserting-html-content).
+* Immagine salvata nella libreria delle risorse o su un server accessibile dagli utenti. Vedi [Inserimento di immagini](#inserting-images).
 * Script eseguito sul lato client e/o sul lato server. Deve essere scritto in JavaScript ed essere compatibile con la maggior parte dei browser per garantire la corretta esecuzione sul lato client.
 
    >[!NOTE]
    >
-   >Sul lato server, lo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+   >Sul lato server, lo script può utilizzare le funzioni definite in [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 ## Inserisci contenuto HTML {#inserting-html-content}
 
-È possibile includere il contenuto HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, video e così via
+È possibile includere il contenuto di HTML in una pagina del modulo: collegamenti ipertestuali, immagini, paragrafi formattati, video e così via
 
-L’editor HTML consente di inserire il contenuto da inserire nella pagina del modulo. Per aprire l’editor, fai clic su **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
+L’editor di HTML consente di inserire il contenuto da inserire nella pagina del modulo. Per aprire l’editor, fai clic su **[!UICONTROL Static elements]** > **[!UICONTROL HTML]** .
 
 È possibile immettere e formattare il contenuto direttamente o visualizzare la finestra del codice sorgente da incollare in alcuni contenuti esterni. Per passare alla modalità &quot;codice sorgente&quot;, fai clic sulla prima icona nella barra degli strumenti:
 
@@ -48,7 +48,7 @@ Per inserire un campo di database, utilizza il pulsante di personalizzazione.
 
 >[!NOTE]
 >
->Le stringhe immesse nell’editor HTML vengono tradotte solo se sono definite nella sottoscheda **[!UICONTROL Texts]** . Altrimenti non saranno raccolti. Per ulteriori informazioni, consulta [Traduzione di un modulo web](translating-a-web-form.md).
+>Le stringhe immesse nell’editor di HTML vengono tradotte solo se sono definite nel **[!UICONTROL Texts]** sottoscheda . Altrimenti non saranno raccolti. Per ulteriori informazioni, consulta [Traduzione di un modulo web](translating-a-web-form.md).
 
 ### Inserire un collegamento {#inserting-a-link}
 
@@ -58,14 +58,14 @@ Per aggiungere un collegamento ipertestuale, vai a **[!UICONTROL Static elements
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
-* Il **[!UICONTROL Label]** è il contenuto del collegamento ipertestuale così come verrà visualizzato nella pagina del modulo.
-* L’ **[!UICONTROL URL]** è l’indirizzo desiderato, ad esempio: [https://www.adobe.com](https://www.adobe.com) per un sito web o [info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
-* Il campo **[!UICONTROL Window]** ti consente di selezionare la modalità di visualizzazione del collegamento nel caso di un sito. Puoi decidere di aprire il collegamento in una nuova finestra, nella finestra corrente o in un’altra finestra.
+* La **[!UICONTROL Label]** è il contenuto del collegamento ipertestuale visualizzato nella pagina del modulo.
+* La **[!UICONTROL URL]** è l’indirizzo desiderato, ad esempio: [https://www.adobe.com](https://www.adobe.com) per un sito web, oppure [info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
+* La **[!UICONTROL Window]** consente di selezionare la modalità di visualizzazione del collegamento nel caso di un sito. Puoi decidere di aprire il collegamento in una nuova finestra, nella finestra corrente o in un’altra finestra.
 * È possibile aggiungere una descrizione comandi, come illustrato di seguito:
 
    ![](assets/s_ncs_admin_survey_send_an_email.png)
 
-* Puoi scegliere di visualizzare il collegamento come pulsante o immagine. A questo scopo, seleziona il tipo di visualizzazione nel campo **[!UICONTROL Type]** .
+* Puoi scegliere di visualizzare il collegamento come pulsante o immagine. A questo scopo, seleziona il tipo di visualizzazione nel **[!UICONTROL Type]** campo .
 
 ### Tipi di collegamenti {#types-of-links}
 
@@ -77,29 +77,29 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
 * Aggiorna la pagina
 
-   A questo scopo, seleziona l’opzione **[!UICONTROL Refresh page]** nella casella a discesa del campo **[!UICONTROL Action]** .
+   A questo scopo, seleziona la **[!UICONTROL Refresh page]** nella casella a discesa della **[!UICONTROL Action]** campo .
 
    ![](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Visualizzare la pagina successiva/precedente
 
-   A questo scopo, seleziona l’opzione **[!UICONTROL Next page]** o **[!UICONTROL Previous page]** nella casella a discesa del campo **[!UICONTROL Action]** .
+   A questo scopo, seleziona la **[!UICONTROL Next page]** o **[!UICONTROL Previous page]** nella casella a discesa della **[!UICONTROL Action]** campo .
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questa [pagina](defining-web-forms-page-sequencing.md).
+   Puoi nascondere la **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questo [page](defining-web-forms-page-sequencing.md).
 
-   Il collegamento sostituirà il pulsante **[!UICONTROL Next]** utilizzato per impostazione predefinita.
+   Il collegamento sostituirà il **[!UICONTROL Next]** per impostazione predefinita.
 
    ![](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Visualizzare un’altra pagina
 
-   L’opzione **[!UICONTROL Enable a transition]** ti consente di visualizzare una pagina specifica associata alla transizione in uscita selezionata nel campo **[!UICONTROL Transition]** .
+   La **[!UICONTROL Enable a transition]** consente di visualizzare una pagina specifica associata alla transizione in uscita selezionata nel **[!UICONTROL Transition]** campo .
 
    ![](assets/s_ncs_admin_survey_link_viral.png)
 
-   Per impostazione predefinita, una pagina dispone di una sola transizione di output. Per creare nuove transizioni, seleziona la pagina e fai clic sul pulsante **[!UICONTROL Add]** nella sezione **[!UICONTROL Output transitions]** , come illustrato di seguito:
+   Per impostazione predefinita, una pagina dispone di una sola transizione di output. Per creare nuove transizioni, seleziona la pagina e fai clic sul pulsante **[!UICONTROL Add]** nel **[!UICONTROL Output transitions]** come illustrato di seguito:
 
    ![](assets/s_ncs_admin_survey_add_transition.png)
 
@@ -109,7 +109,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla sequenza di pagine in un modulo web, consulta [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
+   >Per ulteriori informazioni sulla sequenza delle pagine in un modulo Web, fare riferimento a [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
 
 ### Personalizzare il contenuto HTML {#personalizing-html-content}
 
@@ -121,7 +121,7 @@ Utilizza i campi di personalizzazione per inserire nuovamente il nome utente e i
 
 >[!NOTE]
 >
->Per motivi di sicurezza, il valore immesso nella formula **`<%=`** viene sostituito con caratteri di escape.
+>Per motivi di sicurezza, il valore immesso nel **`<%=`** La formula viene sostituita con caratteri di escape.
 
 Nel nostro esempio, il nome e il cognome del destinatario sono memorizzati in un campo del database, mentre il marchio della propria auto è memorizzato in una variabile. La sintassi del messaggio personalizzato a pagina 2 sarà la seguente:
 
@@ -138,28 +138,28 @@ Questo produce il seguente risultato:
 
 ### Usa variabili di testo {#using-text-variables}
 
-La scheda **[!UICONTROL Text]** ti consente di creare campi variabili che possono essere utilizzati nell’HTML tra i caratteri &lt;%= e %> con la seguente sintassi: **$(IDENTIFIER)**.
+La **[!UICONTROL Text]** tab consente di creare campi variabili che possono essere utilizzati in HTML tra i caratteri &lt;%= e %> con la sintassi seguente: **$(IDENTIFICATORE)**.
 
-Utilizza questo metodo per localizzare facilmente le stringhe. Vedere [Traduzione di un modulo web](translating-a-web-form.md)
+Utilizza questo metodo per localizzare facilmente le stringhe. Vedi [Traduzione di un modulo web](translating-a-web-form.md)
 
-Ad esempio, puoi creare un campo **Contact** che ti consente di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto HTML. Per farlo, segui la procedura indicata di seguito:
+Ad esempio, puoi creare una **Contatto** campo che consente di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto di HTML. Per farlo, segui la procedura indicata di seguito:
 
-1. Fai clic sulla scheda **[!UICONTROL Text]** del testo HTML.
-1. Fai clic sull&#39;icona **[!UICONTROL Add]** .
-1. Nella colonna **[!UICONTROL Identifier]** , immetti il nome della variabile
-1. Nella colonna **[!UICONTROL Text]**, immetti il valore predefinito.
+1. Fai clic sul pulsante **[!UICONTROL Text]** scheda del testo di HTML.
+1. Fai clic sul pulsante **[!UICONTROL Add]** icona.
+1. In **[!UICONTROL Identifier]** , immetti il nome della variabile
+1. In **[!UICONTROL Text]** , immetti il valore predefinito.
 
    ![](assets/s_ncs_admin_survey_html_text.png)
 
-1. Nel contenuto HTML, inserisci questa variabile di testo tramite la sintassi **&lt;%= $(Contact) %>**.
+1. Nel contenuto di HTML, inserisci questa variabile di testo tramite il **&lt;%= $(contatto) %>** sintassi.
 
    ![](assets/s_ncs_admin_survey_html_content.png)
 
    >[!CAUTION]
    >
-   >Se immetti questi caratteri nell’editor HTML, i campi **&lt;** e **** verranno sostituiti con i relativi caratteri di escape. In questo caso, è necessario correggere il codice sorgente facendo clic sull’ icona **[!UICONTROL Display source code]** dell’editor di testo HTML.
+   >Se immetti questi caratteri nell’editor di HTML, l’ **&lt;** e **>** i campi verranno sostituiti con i relativi caratteri di escape. In questo caso, è necessario correggere il codice sorgente facendo clic sul pulsante **[!UICONTROL Display source code]** dell’editor di testo di HTML.
 
-1. Apri l’etichetta **[!UICONTROL Preview]** del modulo per visualizzare il valore immesso nel codice HTML:
+1. Apri **[!UICONTROL Preview]** etichetta del modulo per visualizzare il valore immesso in HTML:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
@@ -169,7 +169,7 @@ Questa modalità operativa consente di definire il testo dei moduli web una sola
 
 Affinché le immagini possano essere incluse nei moduli, è necessario salvarle su un server accessibile dall’esterno.
 
-Selezionare il menu **[!UICONTROL Static elements]** > **[!UICONTROL Image]**.
+Seleziona la **[!UICONTROL Static elements]** > **[!UICONTROL Image]** menu.
 
 Seleziona l’origine dell’immagine da inserire: può provenire dalla libreria delle risorse pubbliche o essere memorizzato in un server esterno accessibile dall’esterno.
 

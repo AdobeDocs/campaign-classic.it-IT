@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1188'
 ht-degree: 6%
 
 ---
@@ -28,6 +28,8 @@ I pacchetti incorporati contengono un set di funzioni che possono essere install
 >L&#39;installazione di un nuovo pacchetto può avere un impatto su tutta la piattaforma: deve essere testato e convalidato prima della distribuzione finale.
 >
 >Una volta installato un pacchetto, non è possibile disinstallarlo.
+>
+>In qualità di cliente ospitato o ibrido, contatta l’Adobe per far sì che sia implementato un nuovo pacchetto integrato.
 
 Per installare un pacchetto incorporato:
 
@@ -86,7 +88,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   <tr> 
    <td> Motore di offerta per le istanze di esecuzione. Facoltativo.<br /> </td> 
    <td> Pacchetto da installare sulle istanze di esecuzione per il motore di offerta (interazione). <a href="../../interaction/using/distributed-architectures.md">Ulteriori informazioni</a> </td> 
-   <td> Mid, Esecuzione <br /> </td>  
+   <td> Mid, Execution <br /> </td>  
   </tr> 
   <!--tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
@@ -115,7 +117,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Canale direct mailing<br /> </td> 
+   <td> Canale Direct Mail<br /> </td> 
    <td> Invia consegne utilizzando il canale direct mailing con Adobe Campaign. Facoltativo. <a href="../../delivery/using/about-direct-mail-channel.md">Ulteriori informazioni</a><br /> </td> 
    <td> Tutto<br /> </td>
   </tr> 
@@ -135,17 +137,17 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Content Manager<br /> </td> 
+   <td> Gestione dei contenuti<br /> </td> 
    <td> Crea newsletter o siti web ricorrenti e quindi convalida e pubblica i messaggi. <a href="../../delivery/using/about-content-management.md">Ulteriori informazioni</a> <br /> </td> 
    <td> </td>
   </tr> 
   <tr> 
-   <td> Sondaggi online (Gestore sondaggi)<br /> </td> 
+   <td> Sondaggi online (Gestore dei sondaggi)<br /> </td> 
    <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni sul profilo, per effettuare l’abbonamento, per annullare l’iscrizione o per creare un modulo di partecipazione al concorso. Facoltativo. <a href="../../surveys/using/about-surveys.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing Analytics<br /> </td> 
+   <td> Analisi di marketing<br /> </td> 
    <td> Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, puoi creare rapporti e creare popolazioni target. Facoltativo. <a href="../../reporting/using/about-cubes.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -180,7 +182,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing centrale/locale (Distributed Marketing)<br /> </td> 
+   <td> Marketing centrale/locale (Marketing distribuito)<br /> </td> 
    <td> Implementa campagne di cooperazione tra enti centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="../../distributed/using/about-distributed-marketing.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -241,14 +243,14 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, ecc.) prima di installare i messaggi transazionali (pacchetto del centro messaggi). Se hai avviato un progetto del Centro messaggi per e-mail e successivamente devi aggiungere un nuovo canale, segui questi passaggi:
 
-1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Installa il nuovo canale, ad esempio il **Canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importa il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e seleziona:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. In **[!UICONTROL XML data content to import]**, mantieni solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il **Canale mobile**, mantieni solo l&#39;elemento **Entità** corrispondente al modello **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto i modelli **Canale app mobile**, mantieni solo i modelli **messaggio transazionale iOS** (iosTriggerMessage) e **Messaggio transazionale Android** (androidTriggerMessage).
+1. In **[!UICONTROL XML data content to import]**, mantieni solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il **Canale mobile**, mantieni solo **entità** corrispondente al **[!UICONTROL Mobile transactional message]** Modello (smsTriggerMessage). Se hai aggiunto il **Canale app mobile**, mantieni solo **Messaggio sulle transazioni iOS** modelli (iosTriggerMessage) e **Messaggio sulle transazioni Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 

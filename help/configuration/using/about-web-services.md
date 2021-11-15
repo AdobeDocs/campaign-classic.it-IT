@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Le API di Adobe Campaign vengono utilizzate in JavaScript all’interno dell’a
 >[!IMPORTANT]
 >
 >Il numero di chiamate al motore autorizzate al giorno varia in base al contratto di licenza. Per ulteriori informazioni, consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+>Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)
 
 ## Prerequisiti {#prerequisites}
 
@@ -40,10 +40,10 @@ Prima di utilizzare le API di Adobe Campaign, è necessario avere familiarità c
 
 Adobe Campaign utilizza due tipi di API:
 
-* API di accesso ai dati generiche per la query dei dati del modello dati. Consulta [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
+* API di accesso ai dati generiche per la query dei dati del modello dati. Fai riferimento a [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
 * API specifiche per le aziende che consentono di agire su ogni oggetto: consegne, flussi di lavoro, abbonamenti, ecc. Fai riferimento a [API orientate alle aziende](../../configuration/using/business-oriented-apis.md).
 
-Per sviluppare le API e interagire con Adobe Campaign, devi conoscere bene il tuo modello dati. Adobe Campaign consente di generare una descrizione completa della base. Fare riferimento a [Descrizione del modello](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Per sviluppare le API e interagire con Adobe Campaign, devi conoscere bene il tuo modello dati. Adobe Campaign consente di generare una descrizione completa della base. Fai riferimento a [Descrizione del modello](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## Chiamate SOAP {#soap-calls}
 
@@ -92,13 +92,13 @@ Per ulteriori informazioni, consulta [ExecuteQuery (xtk:queryDef)](../../configu
 </SOAP-ENV:Envelope>
 ```
 
-L’elemento `<soap-env:envelope>` è il primo elemento del messaggio che rappresenta l’inviluppo SOAP.
+La `<soap-env:envelope>` è il primo elemento del messaggio che rappresenta l’inviluppo SOAP.
 
-L’elemento `<soap-env:body>` è il primo elemento figlio dell’inviluppo. Contiene la descrizione del messaggio, ovvero il contenuto della query o della risposta.
+La `<soap-env:body>` è il primo elemento figlio dell’inviluppo. Contiene la descrizione del messaggio, ovvero il contenuto della query o della risposta.
 
-Il metodo da invocare viene immesso nell’elemento `<executequery>` dal corpo del messaggio SOAP.
+Il metodo da invocare viene immesso nella variabile `<executequery>` dal corpo del messaggio SOAP.
 
-In SOAP, i parametri vengono riconosciuti in base all’ordine di aspetto. Il primo parametro, `<__sessiontoken>`, prende la catena di autenticazione, il secondo parametro è la descrizione XML della query dall&#39;elemento `<querydef>`.
+In SOAP, i parametri vengono riconosciuti in base all’ordine di aspetto. Il primo parametro, `<__sessiontoken>`, prende la catena di autenticazione, il secondo parametro è la descrizione XML della query dal `<querydef>` elemento.
 
 ### Risposta SOAP {#soap-response}
 
@@ -115,7 +115,7 @@ In SOAP, i parametri vengono riconosciuti in base all’ordine di aspetto. Il pr
 </SOAP-ENV:Envelope>
 ```
 
-Il risultato della query viene immesso dall’elemento `<pdomoutput>` .
+Il risultato della query viene immesso dal `<pdomoutput>` elemento.
 
 ## Gestione degli errori {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-L’elemento `<soap-env:fault>` nel corpo del messaggio SOAP viene utilizzato per trasmettere i segnali di errore che si verificano durante l’elaborazione del servizio Web. È composto dai seguenti sottoelementi:
+La `<soap-env:fault>` l’elemento nel corpo del messaggio SOAP viene utilizzato per trasmettere i segnali di errore che emergono durante l’elaborazione del servizio Web. È composto dai seguenti sottoelementi:
 
 * `<faultcode>` : indica il tipo di errore. I tipi di errore sono:
 
@@ -147,7 +147,7 @@ L’elemento `<soap-env:fault>` nel corpo del messaggio SOAP viene utilizzato pe
 * `<faultstring>` : messaggio che descrive l’errore
 * `<detail>` : messaggio di errore lungo
 
-Il successo o l’errore della chiamata del servizio viene identificato quando l’elemento `<faultcode>` viene verificato.
+Il successo o il fallimento della chiamata del servizio viene identificato quando il `<faultcode>` è verificato.
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ L’URL del server è il seguente:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Con **`<server>`** il server applicazioni Adobe Campaign (**nlserver web**).
+Con **`<server>`** il server applicazioni Adobe Campaign (**web nlserver**).
