@@ -5,14 +5,14 @@ description: Guida introduttiva all’implementazione di Adobe Experience Cloud 
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 16%
 
 ---
 
-# Introduzione ad Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+# Utilizzo di Campaign e Triggers di Experienci Cloud{#about-adobe-experience-triggers}
 
 ![](../../assets/common.svg)
 
@@ -29,10 +29,10 @@ Supporta inoltre elevati volumi di traffico senza influire sulle prestazioni del
 
 ## [!DNL Triggers] architettura {#triggers-architecture}
 
-Il processo [!DNL pipelined] è sempre in esecuzione sul server di marketing Adobe Campaign. Si connette alla pipeline, recupera gli eventi ed elabora immediatamente.
+La [!DNL pipelined] Il processo è sempre in esecuzione sul server di marketing Adobe Campaign. Si connette alla pipeline, recupera gli eventi ed elabora immediatamente.
 
 ![](assets/triggers_2.png)
 
-Il processo [!DNL pipelined] accede all&#39;Experience Cloud utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l’autenticazione durante il recupero degli eventi.
+La [!DNL pipelined] elabora l&#39;accesso all&#39;Experience Cloud utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l’autenticazione durante il recupero degli eventi.
 
-Per ulteriori informazioni sull&#39;autenticazione, consulta questa [pagina](../../integrations/using/configuring-adobe-io.md).
+Per ulteriori informazioni sull’autenticazione, consulta questo [page](../../integrations/using/configuring-adobe-io.md).
