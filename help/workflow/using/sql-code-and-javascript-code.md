@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Codice SQL {#sql-code}
 
-Un&#39;attività **[!UICONTROL SQL code]** esegue uno script SQL. Lo script è un modello JST.
+Un **[!UICONTROL SQL code]** L&#39;attività esegue uno script SQL. Lo script è un modello JST.
 
 ![](assets/sql_code.png)
 
@@ -29,17 +29,20 @@ Un&#39;attività **[!UICONTROL SQL code]** esegue uno script SQL. Lo script è u
 
 * **[!UICONTROL Processing errors]**
 
-   Fare riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
+   Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ## Codice JavaScript e codice JavaScript avanzato {#javascript-code}
 
-**[!UICONTROL JavaScript code]** e  **[!UICONTROL Advanced JavaScript code]** le attività eseguono uno script JavaScript nel contesto di un flusso di lavoro. Per ulteriori informazioni sugli script, consulta la sezione [Script e modelli JavaScript](javascript-scripts-and-templates.md) .
+**[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** le attività eseguono uno script JavaScript nel contesto di un flusso di lavoro. Per ulteriori informazioni sugli script, consulta le sezioni seguenti:
+
+* [Script e modelli JavaScript](javascript-scripts-and-templates.md)
+* [Esempi di codice JavaScript nei flussi di lavoro](javascript-in-workflows.md)
 
 ### Ritardo esecuzione {#exec-delay}
 
-A partire dalla versione 20.2, alle attività **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** è stato aggiunto un ritardo di esecuzione. Per impostazione predefinita, la fase di esecuzione non può superare 1 ora. Dopo questo ritardo, il processo verrà interrotto con un messaggio di errore e l’esecuzione dell’attività avrà esito negativo.
+A partire dalla versione 20.2, è stato aggiunto un ritardo di esecuzione al **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** attività. Per impostazione predefinita, la fase di esecuzione non può superare 1 ora. Dopo questo ritardo, il processo verrà interrotto con un messaggio di errore e l’esecuzione dell’attività avrà esito negativo.
 
-Puoi modificare questo ritardo nel campo **[!UICONTROL Stop execution after]** disponibile in queste attività.
+Puoi modificare questo ritardo nella **[!UICONTROL Stop execution after]** campo disponibile in queste attività.
 
 Per ignorare questo limite, è necessario impostare il valore su **0**.
 
@@ -49,7 +52,7 @@ Per ignorare questo limite, è necessario impostare il valore su **0**.
 
 * **[!UICONTROL Script]**: L’area centrale dell’editor contiene lo script da eseguire.
 
-* **[!UICONTROL Process errors]**: Fai riferimento agli errori  [di elaborazione](monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**: Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ### Codice JavaScript avanzato {#adv-js-code-desc}
 
@@ -58,9 +61,9 @@ Per ignorare questo limite, è necessario impostare il valore su **0**.
 * **[!UICONTROL First call]**: La prima zona dell’editor contiene lo script da eseguire durante la prima chiamata.
 * **[!UICONTROL Next calls]**: La seconda zona dell’editor contiene lo script da eseguire durante le chiamate successive.
 * **[!UICONTROL Transitions]**: Puoi definire diverse transizioni di output dell’attività.
-* **[!UICONTROL Schedule]**: La  **[!UICONTROL Schedule]** scheda ti consente di pianificare quando attivare l’attività.
+* **[!UICONTROL Schedule]**: La **[!UICONTROL Schedule]** consente di pianificare quando attivare l’attività.
 
-Advanced JavaScript è un’attività persistente e viene richiamato periodicamente se non è stato contrassegnato come completato. Per terminare l&#39;attività ed evitare richiami futuri, è necessario utilizzare il metodo **task.setCompleted()** nella sezione **[!UICONTROL Next calls]** :
+Advanced JavaScript è un’attività persistente e viene richiamato periodicamente se non è stato contrassegnato come completato. Per terminare l&#39;attività e evitare richiami futuri, è necessario utilizzare il **task.setCompleted()** nel **[!UICONTROL Next calls]** sezione:
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch

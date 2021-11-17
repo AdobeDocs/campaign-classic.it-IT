@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1242'
 ht-degree: 2%
 
 ---
@@ -32,10 +32,10 @@ Gli script sono ovunque in un diagramma di flusso di lavoro:
 
 JavaScript eseguiti nel contesto di un flusso di lavoro accedono a una serie di oggetti globali aggiuntivi.
 
-* **istanza**: Rappresenta il flusso di lavoro in esecuzione. Lo schema di questo oggetto è **xtk:workflow**.
-* **attività**: Rappresenta le attività eseguite. Lo schema di questo oggetto è **xtk:workflowTask**.
-* **evento**: Rappresenta gli eventi che hanno attivato l&#39;attività in esecuzione. Lo schema di questo oggetto è **xtk:workflowEvent**. Questo oggetto non è inizializzato per le attività di tipo **AND-join** che sono state attivate da più transizioni.
-* **eventi**: Rappresenta l&#39;elenco degli eventi che hanno attivato l&#39;attività corrente. Lo schema di questo oggetto è **xtk:workflowEvent**. Questa tabella di solito contiene un elemento ma può contenere diversi per le attività di tipo **AND-join** che sono state attivate in base a diverse transizioni.
+* **istanza**: Rappresenta il flusso di lavoro in esecuzione. Lo schema dell&#39;oggetto è **xtk:workflow**.
+* **compito**: Rappresenta le attività eseguite. Lo schema dell&#39;oggetto è **xtk:workflowTask**.
+* **event**: Rappresenta gli eventi che hanno attivato l&#39;attività in esecuzione. Lo schema dell&#39;oggetto è **xtk:workflowEvent**. Questo oggetto non è inizializzato per **AND-join** attività di tipo che sono state attivate da più transizioni.
+* **events**: Rappresenta l&#39;elenco degli eventi che hanno attivato l&#39;attività corrente. Lo schema dell&#39;oggetto è **xtk:workflowEvent**. Questa tabella contiene in genere un elemento ma può contenere diversi **AND-join** attività di tipo che sono state attivate in base a diverse transizioni.
 * **attività**: Rappresenta il modello dell&#39;attività in esecuzione. Lo schema di questo oggetto dipende dal tipo di attività. Questo oggetto può essere modificato dallo script di inizializzazione, in altri script, le modifiche con effetti indeterminabili.
 
 Le proprietà disponibili per questi oggetti possono essere visualizzate in un elenco a discesa facendo clic sul pulsante a destra della barra degli strumenti script.
@@ -48,24 +48,24 @@ Le proprietà disponibili per questi oggetti possono essere visualizzate in un e
 
 **Esempio**
 
-In questo esempio e negli esempi seguenti, crea un flusso di lavoro che include un&#39;attività **Codice JavaScript** e un&#39;attività **End** come mostrato nel diagramma seguente.
+In questo esempio e negli esempi seguenti, crea un flusso di lavoro che include un **Codice JavaScript** attività e **Fine** come illustrato nel diagramma seguente.
 
 ![](assets/script-1.png)
 
-Fai doppio clic sull&#39;attività **Codice JavaScript** e inserisci il seguente script:
+Fai doppio clic sul pulsante **Codice JavaScript** e inserire il seguente script:
 
 ```
 logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-La funzione **[!UICONTROL logInfo(message)]** inserisce un messaggio nel registro.
+La **[!UICONTROL logInfo(message)]** inserisce un messaggio nel registro.
 
-Fai clic su **[!UICONTROL OK]** per chiudere la procedura guidata di creazione, quindi avvia il flusso di lavoro utilizzando i pulsanti di azione situati in alto a destra dell’elenco dei flussi di lavoro. Al termine dell&#39;esecuzione, consultare il registro. Dovresti visualizzare due messaggi corrispondenti allo script: una visualizza l’etichetta del flusso di lavoro, l’altra visualizza la data in cui lo script è stato attivato.
+Fai clic su **[!UICONTROL OK]** per chiudere la procedura guidata di creazione, avvia il flusso di lavoro utilizzando i pulsanti di azione situati in alto a destra dell’elenco dei flussi di lavoro. Al termine dell&#39;esecuzione, consultare il registro. Dovresti visualizzare due messaggi corrispondenti allo script: una visualizza l’etichetta del flusso di lavoro, l’altra visualizza la data in cui lo script è stato attivato.
 
 ## Variabili {#variables}
 
-Le variabili sono le proprietà gratuite degli oggetti **[!UICONTROL instance]**, **[!UICONTROL task]** e **[!UICONTROL event]** . I tipi JavaScript autorizzati per queste variabili sono **[!UICONTROL string]**, **[!UICONTROL number]** e **[!UICONTROL Date]**.
+Le variabili sono le proprietà libere del **[!UICONTROL instance]**, **[!UICONTROL task]** e **[!UICONTROL event]** oggetti. I tipi JavaScript autorizzati per queste variabili sono **[!UICONTROL string]**, **[!UICONTROL number]** e **[!UICONTROL Date]**.
 
 ### Variabili di istanza {#instance-variables}
 
@@ -73,25 +73,25 @@ Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili a
 
 ### Variabili di attività {#task-variables}
 
-Le variabili dell&#39;attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali. Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per scambiare dati tra i diversi script di una stessa attività.
+Variabili dell&#39;attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali. Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per scambiare dati tra i diversi script di una stessa attività.
 
 ### Variabili evento {#event-variables}
 
-Le variabili evento (**[!UICONTROL vars.xxx]**) abilitano lo scambio di dati tra le attività elementari di un processo di flusso di lavoro. Queste variabili vengono passate dall’attività che ha attivato l’attività in corso. È possibile modificarli e definirne di nuovi. Vengono quindi passate alle seguenti attività.
+Le variabili evento (**[!UICONTROL vars.xxx]**) abilita lo scambio di dati tra le attività elementari di un processo di flusso di lavoro. Queste variabili vengono passate dall’attività che ha attivato l’attività in corso. È possibile modificarli e definirne di nuovi. Vengono quindi passate alle seguenti attività.
 
 >[!CAUTION]
 >
->Nel caso di attività di tipo [AND-join](and-join.md), le variabili vengono unite ma se una stessa variabile viene definita due volte, si verifica un conflitto e il valore rimane indeterminato.
+>Nel caso di [AND-join](and-join.md) le attività di tipo , le variabili vengono unite ma se una stessa variabile viene definita due volte, si verifica un conflitto e il valore rimane indeterminato.
 
 Gli eventi sono le variabili più utilizzate e devono essere utilizzati in preferenza per le variabili di istanza.
 
-Alcune variabili di evento vengono modificate o lette dalle varie attività. Sono tutte variabili di tipo stringa. Ad esempio, un’esportazione imposta la variabile **[!UICONTROL vars.filename]** con il nome completo del file appena esportato. Tutte queste variabili lette o modificate sono documentate in [Informazioni sulle attività](about-activities.md), nelle sezioni **Parametri di input** e **Parametri di output** delle attività.
+Alcune variabili di evento vengono modificate o lette dalle varie attività. Sono tutte variabili di tipo stringa. Ad esempio, un’esportazione imposta il **[!UICONTROL vars.filename]** con il nome completo del file appena esportato. Tutte queste variabili lette o modificate sono documentate in [Informazioni sulle attività](about-activities.md)nelle sezioni **Parametri di input** e **Parametri di output** delle attività.
 
 ### Casi d’uso {#example}
 
 >[!NOTE]
 >
->Ulteriori casi di utilizzo del flusso di lavoro sono disponibili in [questa sezione](about-workflow-use-cases.md).
+>Sono disponibili ulteriori casi di utilizzo del flusso di lavoro in [questa sezione](about-workflow-use-cases.md).
 
 **Esempio 1**
 
@@ -105,7 +105,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
    ![](assets/js_ex1.png)
 
-1. Aggiungi un’attività Query e target a seconda delle tue esigenze.
+1. Aggiungi un’attività Query e target destinatari in base alle tue esigenze.
 
 1. Aggiungi un’attività Split e configurala per eseguire un campionamento casuale della popolazione in arrivo. La percentuale di campionamento può essere qualsiasi cosa di vostra scelta. In questo esempio viene impostato su 50%.
 
@@ -129,7 +129,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
 
 **Esempio 2**
 
-1. Prendi il flusso di lavoro dall&#39;esempio precedente e sostituisci lo script dell&#39;attività **Codice JavaScript** con il seguente script:
+1. Prendi il flusso di lavoro dall’esempio precedente e sostituisci lo script del **Codice JavaScript** attività con il seguente script:
 
    ```
    instance.vars.foo = "bar1"
@@ -137,7 +137,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
    task.vars.foo = "bar3"
    ```
 
-1. Aggiungi il seguente script allo script di inizializzazione dell&#39;attività **End** :
+1. Aggiungi il seguente script allo script di inizializzazione del **Fine** attività:
 
    ```
    logInfo("instance.vars.foo = " + instance.vars.foo)
@@ -155,7 +155,7 @@ In questo esempio, una variabile di istanza viene utilizzata per calcolare dinam
    Starting workflow (operator 'admin')
    ```
 
-Questo esempio mostra che l&#39;attività che segue **Codice JavaScript** accede alle variabili di istanza e di evento, ma le variabili di attività non sono accessibili dall&#39;esterno (&#39;non definito&#39;).
+Questo esempio mostra che l’attività seguente **Codice JavaScript** accede alle variabili di istanza e di evento, ma le variabili di attività non sono accessibili dall&#39;esterno (&#39;non definito&#39;).
 
 ### Chiamata di una variabile di istanza in una query {#calling-an-instance-variable-in-a-query}
 
@@ -165,7 +165,7 @@ Quindi, per chiamare una variabile **instance.vars.xxx = &quot;yyy&quot;** in un
 
 Ad esempio:
 
-1. Crea una variabile di istanza che definisce il nome interno di una consegna tramite **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
+1. Crea una variabile di istanza che definisce il nome interno di una consegna tramite il **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -173,7 +173,7 @@ Ad esempio:
 
    Come promemoria, queste informazioni vengono memorizzate nei registri di consegna.
 
-   Per fare riferimento alla variabile di istanza nella colonna **[!UICONTROL Value]**, immetti **$(instance/vars/@deliveryIN)**.
+   Per fare riferimento alla variabile di istanza nel **[!UICONTROL Value]** colonna, immettere **$(instance/vars/@deliveryIN)**.
 
    Il flusso di lavoro restituirà i destinatari della consegna DM42.
 
@@ -195,4 +195,7 @@ In determinate condizioni, puoi modificare la proprietà di un’attività al mo
 
 La maggior parte delle proprietà delle attività può essere calcolata dinamicamente, utilizzando un modello JavaScript o perché le proprietà del flusso di lavoro consentono esplicitamente di calcolare il valore da uno script.
 
-Per altre proprietà, tuttavia, è necessario utilizzare lo script di inizializzazione. Questo script viene valutato prima dell&#39;esecuzione dell&#39;attività. La variabile **[!UICONTROL activity]** fa riferimento all’attività corrispondente all’attività. Le proprietà di questa attività possono essere modificate e avranno effetto solo su questa attività.
+Per altre proprietà, tuttavia, è necessario utilizzare lo script di inizializzazione. Questo script viene valutato prima dell&#39;esecuzione dell&#39;attività. La **[!UICONTROL activity]** fa riferimento all’attività corrispondente all’attività. Le proprietà di questa attività possono essere modificate e avranno effetto solo su questa attività.
+
+**Argomenti correlati**
+[Esempi di codice JavaScript nei flussi di lavoro](javascript-in-workflows.md)
