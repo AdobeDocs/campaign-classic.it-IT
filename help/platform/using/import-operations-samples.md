@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -23,12 +23,12 @@ Per creare e fornire un elenco di destinatari dalla panoramica degli elenchi, ef
 
 1. Creazione dell’elenco
 
-   * Fai clic sul collegamento **[!UICONTROL Lists]** nel menu **[!UICONTROL Profiles and targets]** della home page di Adobe Campaign.
-   * Fare clic sul pulsante **[!UICONTROL Create]** e quindi sul pulsante **[!UICONTROL Import a list]**.
+   * Fai clic sul pulsante **[!UICONTROL Lists]** nel collegamento **[!UICONTROL Profiles and targets]** menu della home page di Adobe Campaign.
+   * Fai clic sul pulsante **[!UICONTROL Create]** e poi **[!UICONTROL Import a list]** pulsante .
 
 1. Selezione del file da importare
 
-   Fai clic sulla cartella a destra del campo **[!UICONTROL Local file]** e seleziona il file contenente l’elenco da importare.
+   Fai clic sulla cartella a destra del **[!UICONTROL Local file]** e selezionare il file contenente l’elenco da importare.
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -40,7 +40,7 @@ Per creare e fornire un elenco di destinatari dalla panoramica degli elenchi, ef
 
 1. Avvio dell’importazione
 
-   Fare clic su **[!UICONTROL Next]** e quindi su **[!UICONTROL Start]** per iniziare a importare l&#39;elenco.
+   Fai clic su **[!UICONTROL Next]** e poi **[!UICONTROL Start]** per iniziare a importare l’elenco.
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -50,29 +50,29 @@ Per importare nel database Adobe Campaign i nuovi profili dei destinatari memori
 
 1. Scelta di un modello
 
-   * Dalla home page di Adobe Campaign, fai clic sul collegamento **[!UICONTROL Profiles and targets]** , quindi **[!UICONTROL Jobs]**. Sopra l’elenco dei processi, fai clic su **[!UICONTROL New import]**.
-   * Mantieni il modello **[!UICONTROL New text import]** selezionato per impostazione predefinita.
+   * Dalla home page di Adobe Campaign, fai clic sul pulsante **[!UICONTROL Profiles and targets]** link, quindi **[!UICONTROL Jobs]**. Sopra l’elenco dei processi, fai clic su **[!UICONTROL New import]**.
+   * Mantieni la **[!UICONTROL New text import]** modello selezionato per impostazione predefinita.
    * Modifica l’etichetta e la descrizione.
    * Seleziona **[!UICONTROL Simple import]**.
    * Mantenere la cartella di lavoro predefinita.
-   * Fai clic su **[!UICONTROL Advanced parameters]** e seleziona l’opzione **[!UICONTROL Tracking mode]** per visualizzare i dettagli dell’importazione durante l’esecuzione.
+   * Fai clic su **[!UICONTROL Advanced parameters]** e seleziona la **[!UICONTROL Tracking mode]** per visualizzare i dettagli dell’importazione durante l’esecuzione.
 
 1. Selezione del file da importare
 
-   Fai clic sulla cartella a destra del campo **[!UICONTROL Local file]** e seleziona il file da importare.
+   Fai clic sulla cartella a destra del **[!UICONTROL Local file]** e selezionare il file da importare.
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. Associazione dei campi
 
-   Fai clic sull’icona **[!UICONTROL Guess the destination fields]** per mappare automaticamente gli schemi di origine e di destinazione. Controlla le informazioni in questa finestra prima di fare clic su **[!UICONTROL Next]**.
+   Fai clic sul pulsante **[!UICONTROL Guess the destination fields]** per mappare automaticamente gli schemi di origine e di destinazione. Controlla le informazioni in questa finestra prima di fare clic su **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. Attività Reconciliation
 
-   * Vai alla tabella **Destinatari (nms:recipient)** .
-   * Seleziona l’operazione **[!UICONTROL Insertion]** e lascia i valori predefiniti negli altri campi.
+   * Vai a **Destinatari (nms:recipient)** tabella.
+   * Seleziona la **[!UICONTROL Insertion]** lasciare i valori predefiniti negli altri campi.
 
       ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -90,7 +90,7 @@ Per importare nel database Adobe Campaign i nuovi profili dei destinatari memori
 
       ![](assets/s_ncs_user_import_example06_01.png)
 
-      La modalità **[!UICONTROL Tracking]** ti consente di tenere traccia dei dettagli dell’importazione per ogni record del file di origine. A questo scopo, dalla home page fai clic su **[!UICONTROL Profiles and Targets]** e quindi su **[!UICONTROL Processes]**, seleziona l’importazione pertinente e cerca le schede **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]**.
+      La **[!UICONTROL Tracking]** consente di tenere traccia dei dettagli dell’importazione per ogni record del file di origine. A questo scopo, dalla home page fai clic su **[!UICONTROL Profiles and Targets]** then **[!UICONTROL Processes]**, seleziona l’importazione rilevante e cerca il **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]** schede.
 
       * Verifica dell&#39;avanzamento dell&#39;importazione
 
@@ -123,8 +123,8 @@ Vogliamo aggiornare i record esistenti nel database e crearne di nuovi da un fil
 1. Attività Reconciliation
 
    * Mantieni **[!UICONTROL Update or insert]** selezionato per impostazione predefinita.
-   * Mantieni l&#39;opzione **[!UICONTROL Management of duplicates]** in modalità **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
-   * Seleziona i campi **[!UICONTROL Birth date]**, **[!UICONTROL Name]** e **[!UICONTROL Company]** e assegna loro una chiave di riconciliazione.
+   * Mantieni l’opzione **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
+   * Selezionare i campi **[!UICONTROL Birth date]**, **[!UICONTROL Name]** e **[!UICONTROL Company]** e assegna loro una chiave di riconciliazione.
 
       ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -172,12 +172,12 @@ Applica i seguenti passaggi:
 
 1. Attività Reconciliation
 
-   * Vai alla tabella e seleziona l&#39;operazione **[!UICONTROL Update]**.
-   * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il campo **[!UICONTROL Management of doubles]**.
-   * Mantieni l&#39;opzione **[!UICONTROL Management of duplicates]** in modalità **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
-   * Posizionare il cursore sul nodo **[!UICONTROL Last name (@lastName)]** e selezionare l&#39;opzione **[!UICONTROL Update only if destination is empty]**.
-   * Ripeti questa operazione per il nodo **[!UICONTROL Company (@company)]**.
-   * Assegna una chiave di riconciliazione ai campi **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** e **[!UICONTROL First name]**.
+   * Vai alla tabella e seleziona la **[!UICONTROL Update]** funzionamento.
+   * Seleziona l’opzione **[!UICONTROL Reject entity]** per **[!UICONTROL Management of doubles]** campo .
+   * Mantieni l’opzione **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
+   * Posizionare il cursore sul **[!UICONTROL Last name (@lastName)]** e seleziona il **[!UICONTROL Update only if destination is empty]** opzione .
+   * Ripeti questa operazione per **[!UICONTROL Company (@company)]** nodo.
+   * Assegnare una chiave di riconciliazione ai campi **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]**.
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -222,10 +222,10 @@ In questo esempio, alcuni campi nel file di testo hanno un valore vuoto, mentre 
 1. Attività Reconciliation
 
    * Vai alla tabella e seleziona **[!UICONTROL Update]**.
-   * Selezionare l&#39;opzione **[!UICONTROL Reject entity]** per il campo **[!UICONTROL Management of doubles]**.
-   * Lasciare l&#39;opzione **[!UICONTROL Management of duplicates]** in modalità **[!UICONTROL Update]** per modificare i record esistenti nel database con i dati del file di testo.
-   * Posizionare il cursore sul nodo **[!UICONTROL Account number (@account)]** e selezionare l&#39;opzione **[!UICONTROL Take empty values into account]**.
-   * Seleziona i campi **[!UICONTROL Birth date]**, **[!UICONTROL E-mail]** e **[!UICONTROL First name]** e assegna loro una chiave di riconciliazione.
+   * Seleziona l’opzione **[!UICONTROL Reject entity]** per **[!UICONTROL Management of doubles]** campo .
+   * Lascia l’opzione . **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** modalità per i record esistenti nel database da modificare con i dati del file di testo.
+   * Posizionare il cursore sul **[!UICONTROL Account number (@account)]** e seleziona l’opzione **[!UICONTROL Take empty values into account]**.
+   * Selezionare i campi **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]** e assegna loro una chiave di riconciliazione.
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
@@ -236,4 +236,4 @@ In questo esempio, alcuni campi nel file di testo hanno un valore vuoto, mentre 
 
       ![](assets/s_ncs_user_import_example06_06.png)
 
-      I valori del file di testo vuoto sono stati sovrascritti nel database. I valori esistenti nel database sono stati aggiornati con quelli nel file di importazione in linea con l’opzione **[!UICONTROL Update]** selezionata per i duplicati al passaggio 4.
+      I valori del file di testo vuoto sono stati sovrascritti nel database. I valori esistenti nel database sono stati aggiornati con quelli presenti nel file di importazione in linea con il **[!UICONTROL Update]** opzione selezionata per i duplicati al passaggio 4.

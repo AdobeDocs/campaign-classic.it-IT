@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Utilizza la porta Apache Tomcat incorporata come priorità (8080 per impostazion
 
 ### Server di consegna {#delivery-server}
 
-Per il server di consegna (**nlserver mta**), è necessario aprire le seguenti porte:
+Per il server di consegna (**mta nlserver**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -36,8 +36,8 @@ Per il server di consegna (**nlserver mta**), è necessario aprire le seguenti p
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Anywhere<br /> </td> 
-   <td> Traffico SMTP per la trasmissione della posta elettronica.<br /> </td> 
+   <td> Ovunque<br /> </td> 
+   <td> Traffico SMTP per la trasmissione delle e-mail.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (dominio)<br /> </td> 
@@ -50,16 +50,16 @@ Per il server di consegna (**nlserver mta**), è necessario aprire le seguenti p
    <td> Utilizzato per inviare il traffico SMS al router SMS NetSize [opzione].<br /> </td> 
   </tr> 
   <tr> 
-   <td> 777/udp<br /> </td> 
-   <td> Server di statistiche<br /> </td> 
-   <td> Accesso al server di statistiche.<br /> </td> 
+   <td> 7777/udp<br /> </td> 
+   <td> Server statistiche<br /> </td> 
+   <td> Accesso al server delle statistiche.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Posta in arrivo {#inbound-mail}
 
-Per il processo di recupero della posta in entrata (**nlserver inMail**), è necessario aprire le seguenti porte:
+Per il processo di recupero della posta in entrata (**nlserver inMail**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -76,14 +76,14 @@ Per il processo di recupero della posta in entrata (**nlserver inMail**), è nec
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Server di posta interna<br /> </td> 
-   <td> Traffico SMTP per l'invio di messaggi non recapitati rimanenti che non vengono elaborati automaticamente dalle regole predefinite.<br /> </td> 
+   <td> Traffico SMTP per l’invio di messaggi non recapitati rimanenti che non vengono elaborati automaticamente dalle regole predefinite.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Server dell’applicazione {#application-server}
 
-Per l&#39;application server (**nlserver web**), è necessario aprire le seguenti porte:
+Per l&#39;application server (**web nlserver**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -94,17 +94,17 @@ Per l&#39;application server (**nlserver web**), è necessario aprire le seguent
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
-   <td> Anywhere<br /> </td> 
-   <td> Traffico HTTP o HTTPS (incluso per l'offerta di recapito messaggi).<br /> </td> 
+   <td> Ovunque<br /> </td> 
+   <td> Traffico HTTP o HTTPS (incluso per l’offerta di recapito messaggi).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Quando diversi server di applicazioni di una piattaforma Adobe Campaign devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) anziché la porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
+Quando diversi server applicazioni di una piattaforma Adobe Campaign devono comunicare tra loro, si consiglia di utilizzare la porta del server Apache Tomcat (per impostazione predefinita: 8080) anziché la porta HTTP del server Web con cui è stata eseguita l&#39;integrazione del modulo di reindirizzamento. Ciò significa che la porta deve essere aperta tra questi server.
 
 ### Stato della consegna SMS {#sms-delivery-status}
 
-Per tenere traccia delle consegne SMS (**nlserver sms**), la seguente porta deve essere aperta:
+Per tenere traccia delle consegne SMS (**sms nlserver**), la seguente porta deve essere aperta:
 
 <table> 
  <tbody> 
@@ -123,7 +123,7 @@ Per tenere traccia delle consegne SMS (**nlserver sms**), la seguente porta deve
 
 ### Client avanzato {#rich-client}
 
-Per il client rich Adobe Campaign (**nlclient**), le seguenti porte devono essere aperte:
+Per il client rich Adobe Campaign (**nlclient**), devono essere aperte le seguenti porte:
 
 <table> 
  <tbody> 
@@ -247,7 +247,7 @@ L&#39;integrazione tra Adobe Campaign e Adobe Experience Manager richiede l&#39;
 
 ## Larghezza di banda {#bandwidth}
 
-Un altro parametro chiave della configurazione di rete da prendere in considerazione. È quasi sempre in uscita e molto richiesto durante le trasmissioni di posta elettronica. Di seguito sono riportati alcuni esempi di configurazioni basate sulla nostra esperienza:
+Un altro parametro chiave della configurazione di rete da prendere in considerazione. È quasi sempre in uscita e molto in richiesta durante le trasmissioni di e-mail. Di seguito sono riportati alcuni esempi di configurazioni basate sulla nostra esperienza:
 
 * 1 Mb/s per 10.000 e-mail all&#39;ora (dimensione media di 30 Kb)
 * Da 8 a 10 Mb/s per 100.000 e-mail all&#39;ora (dimensione media di 30 Kb)

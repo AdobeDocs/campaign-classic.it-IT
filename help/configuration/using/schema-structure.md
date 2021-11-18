@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-La struttura di base di un `<srcschema>` è la seguente:
+La struttura di base di un `<srcschema>` è il seguente:
 
 ```
 <srcSchema>
@@ -60,7 +60,7 @@ La struttura di base di un `<srcschema>` è la seguente:
 </srcSchema>
 ```
 
-Il documento XML di uno schema dati deve contenere gli attributi **`<srcschema>`** root con gli attributi **name** e **namespace** per popolare il nome dello schema e il relativo spazio dei nomi.
+Il documento XML di uno schema dati deve contenere **`<srcschema>`** elemento principale con **name** e **namespace** attributi per popolare il nome dello schema e il relativo spazio dei nomi.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -101,7 +101,7 @@ Nel nostro esempio, l’elemento principale è rappresentato dalla seguente riga
 <element name="recipient">
 ```
 
-Gli elementi **`<attribute>`** e **`<element>`** che seguono l&#39;elemento principale consentono di definire le posizioni e i nomi degli elementi dati nella struttura XML.
+Gli elementi **`<attribute>`** e **`<element>`** che seguono l&#39;elemento principale ti consentono di definire le posizioni e i nomi degli elementi dati nella struttura XML.
 
 Nel nostro schema di esempio, questi sono:
 
@@ -116,42 +116,42 @@ Nel nostro schema di esempio, questi sono:
 
 Devono essere rispettate le seguenti regole:
 
-* Ciascun **`<element>`** e **`<attribute>`** deve essere identificato per nome tramite l&#39;attributo **name**.
+* Ogni **`<element>`** e **`<attribute>`** deve essere identificato per nome tramite il **name** attributo.
 
    >[!IMPORTANT]
    >
    >Il nome dell’elemento deve essere conciso, preferibilmente in inglese, e includere solo caratteri autorizzati in conformità alle regole di denominazione XML.
 
-* Solo gli elementi **`<element>`** possono contenere elementi **`<attribute>`** e elementi **`<element>`** nella struttura XML.
-* Un elemento **`<attribute>`** deve avere un nome univoco all&#39;interno di un elemento **`<element>`**.
-* Si consiglia di utilizzare **`<elements>`** nelle stringhe di dati su più righe.
+* Solo **`<element>`** gli elementi possono contenere **`<attribute>`** e **`<element>`** elementi nella struttura XML.
+* Un **`<attribute>`** deve avere un nome univoco all&#39;interno di un **`<element>`**.
+* L&#39;uso di **`<elements>`** in stringhe di dati su più righe è consigliato.
 
 ## Tipi di dati {#data-types}
 
-Il tipo di dati viene immesso tramite l’attributo **type** negli elementi **`<attribute>`** e **`<element>`**.
+Il tipo di dati viene immesso tramite il **type** nella **`<attribute>`** e **`<element>`** elementi.
 
-È disponibile un elenco dettagliato nella descrizione dell’ elemento [`<attribute>`](../../configuration/using/schema/attribute.md) e dell’ elemento [`<element>`](../../configuration/using/schema/element.md)).
+È disponibile un elenco dettagliato nella descrizione del [`<attribute>` elemento](../../configuration/using/schema/attribute.md) e [`<element>` elemento](../../configuration/using/schema/element.md)).
 
-Quando questo attributo non viene popolato, **string** è il tipo di dati predefinito, a meno che l&#39;elemento non contenga elementi secondari. Se lo fa, viene utilizzato solo per strutturare gli elementi gerarchicamente (**`<location>`** nel nostro esempio).
+Quando questo attributo non è popolato, **string** è il tipo di dati predefinito, a meno che l’elemento non contenga elementi secondari. Se lo fa, viene utilizzato solo per strutturare gli elementi gerarchicamente (**`<location>`** nel nostro esempio).
 
 I seguenti tipi di dati sono supportati negli schemi:
 
-* **stringa**: stringa di caratteri. Esempi: un nome, una città, ecc.
+* **string**: stringa di caratteri. Esempi: un nome, una città, ecc.
 
-   La dimensione può essere specificata tramite l&#39;attributo **length** (facoltativo, valore predefinito &quot;255&quot;).
+   Le dimensioni possono essere specificate tramite il **length** (facoltativo, valore predefinito &quot;255&quot;).
 
 * **booleano**: Campo booleano. Esempio di possibili valori: true/false, 0/1, yes/no, ecc.
-* **byte**,  **short**,  **long**: numeri interi (1 byte, 2 byte, 4 byte). Esempi: un’età, un numero di conto, un numero di punti, ecc.
-* **doppio**: numero a virgola mobile a doppia precisione. Esempi: un prezzo, un tasso, ecc.
-* **data**,  **datetime**: date e date + ore. Esempi: una data di nascita, una data di acquisto, ecc.
+* **byte**, **short**, **long**: numeri interi (1 byte, 2 byte, 4 byte). Esempi: un’età, un numero di conto, un numero di punti, ecc.
+* **double**: numero a virgola mobile a doppia precisione. Esempi: un prezzo, un tasso, ecc.
+* **date**, **datetime**: date e date + ore. Esempi: una data di nascita, una data di acquisto, ecc.
 * **datetimenotz**: data + ora senza dati sul fuso orario.
 * **timespan**: durate. Esempio: anzianità.
-* **Memo**: campi di testo lunghi (righe multiple). Esempi: una descrizione, un commento, ecc.
-* **uuid**: campi &quot;uniqueidentifier&quot; per supportare un GUID (supportato solo in Microsoft SQL Server).
+* **promemoria**: campi di testo lunghi (righe multiple). Esempi: una descrizione, un commento, ecc.
+* **uuid**: Campi &quot;uniqueidentifier&quot; per supportare un GUID (supportato solo in Microsoft SQL Server).
 
    >[!NOTE]
    >
-   >Per contenere un campo **uuid** in motori diversi da Microsoft SQL Server, è necessario aggiungere e completare la funzione &quot;newuuid()&quot; con il relativo valore predefinito.
+   >Per contenere un **uuid** in motori diversi da Microsoft SQL Server, è necessario aggiungere e completare la funzione &quot;newuuuid()&quot; con il relativo valore predefinito.
 
 Di seguito è riportato lo schema di esempio con i tipi immessi:
 
@@ -186,33 +186,33 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> Stringa<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se unicode)<br /> </td> 
-   <td> VARCHAR (CARATTERE VARCHAR IMPOSTA UNICODE se Unicode)<br /> </td> 
+   <td> VARCHAR (CARATTERE VARCHAR IMPOSTA UNICODE SE Unicode)<br /> </td> 
    <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Booleano<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> NUMBER(3)<br /> </td> 
+   <td> SMALLINO<br /> </td> 
+   <td> NUMERO(3)<br /> </td> 
    <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
+   <td> SMALLINO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> NUMBER(3)<br /> </td> 
+   <td> SMALLINO<br /> </td> 
+   <td> NUMERO(3)<br /> </td> 
    <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
+   <td> SMALLINO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Breve<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> NUMBER(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
+   <td> SMALLINO<br /> </td> 
+   <td> NUMERO(5)<br /> </td> 
+   <td> SMALLINO<br /> </td> 
+   <td> SMALLINO<br /> </td> 
+   <td> SMALLINO<br /> </td> 
   </tr> 
   <tr> 
    <td> Doppio<br /> </td> 
@@ -223,20 +223,20 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Long<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> NUMBER(10)<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> INTEGER<br /> </td> 
+   <td> Lunga<br /> </td> 
+   <td> INTERO<br /> </td> 
+   <td> NUMERO(10)<br /> </td> 
+   <td> INTERO<br /> </td> 
+   <td> INTERO<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
-   <td> BIGINT<br /> </td> 
-   <td> NUMBER(20)<br /> </td> 
+   <td> BIGLIETTO<br /> </td> 
+   <td> NUMERO(20)<br /> </td> 
    <td> NUMERIC(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
-   <td> BIGINT<br /> </td> 
+   <td> BIGLIETTO<br /> </td> 
+   <td> BIGLIETTO<br /> </td> 
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
@@ -271,7 +271,7 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
-   <td> Timespan<br /> </td> 
+   <td> Intervallo temporale<br /> </td> 
    <td> DOPPIA PRECISIONE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
@@ -279,12 +279,12 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Memo<br /> </td> 
-   <td> TEXT<br /> </td> 
+   <td> Per memoria<br /> </td> 
+   <td> TESTO<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE se Unicode)<br /> </td> 
+   <td> CLOB (CLOB CHARACTER SET UNICODE, se Unicode)<br /> </td> 
    <td> CLOB(6M)<br /> </td> 
-   <td> TESTO (TESTO se Unicode)<br /> </td> 
+   <td> TESTO (NTEXT se Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
@@ -292,18 +292,18 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4M)<br /> </td> 
-   <td> IMAGE<br /> </td> 
+   <td> IMMAGINE<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Properties {#properties}
 
-Gli elementi **`<elements>`** e **`<attributes>`** dello schema dati possono essere arricchiti con varie proprietà. È possibile compilare un’etichetta per descrivere l’elemento corrente.
+La **`<elements>`** e **`<attributes>`** gli elementi dello schema dati possono essere arricchiti con varie proprietà. È possibile compilare un’etichetta per descrivere l’elemento corrente.
 
 ### Etichette e descrizioni {#labels-and-descriptions}
 
-* La proprietà **label** consente di inserire una breve descrizione.
+* La **etichetta** consente di inserire una breve descrizione.
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Gli elementi **`<elements>`** e **`<attributes>`** dello schema dati possono ess
 
    ![](assets/d_ncs_integration_schema_label.png)
 
-* La proprietà **desc** consente di inserire una descrizione lunga.
+* La **desc** consente di inserire una descrizione lunga.
 
    La descrizione può essere visualizzata dal modulo di input nella barra di stato della finestra principale della console client di Adobe Campaign.
 
@@ -335,7 +335,7 @@ Gli elementi **`<elements>`** e **`<attributes>`** dello schema dati possono ess
 
 ### Valori predefiniti {#default-values}
 
-La proprietà **default** consente di definire un&#39;espressione che restituisce un valore predefinito al momento della creazione del contenuto.
+La **default** consente di definire un&#39;espressione che restituisce un valore predefinito alla creazione del contenuto.
 
 Il valore deve essere un&#39;espressione conforme al linguaggio XPath. Per ulteriori informazioni, consulta [Riferimento con XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -344,13 +344,13 @@ Il valore deve essere un&#39;espressione conforme al linguaggio XPath. Per ulter
 * Data corrente: **default=&quot;GetDate()&quot;**
 * Contatore: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   In questo esempio, il valore predefinito viene costruito utilizzando la concatenazione di una stringa e chiamando la funzione **CounterValue** con un nome di contatore gratuito. Il numero restituito viene incrementato di uno a ogni inserimento.
+   In questo esempio, il valore predefinito viene costruito utilizzando la concatenazione di una stringa e chiamando il **CounterValue** funzione con un nome contatore gratuito. Il numero restituito viene incrementato di uno a ogni inserimento.
 
    >[!NOTE]
    >
-   >Nella console client di Adobe Campaign, il nodo **[!UICONTROL Administration>Counters]** viene utilizzato per gestire i contatori.
+   >Nella console del client Adobe Campaign, la **[!UICONTROL Administration>Counters]** viene utilizzato per gestire i contatori.
 
-Per collegare un valore predefinito a un campo, è possibile utilizzare il comando `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Per collegare un valore predefinito a un campo, puoi utilizzare la funzione `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
 `<default>` : consente di precompilare il campo con un valore predefinito durante la creazione di entità. Il valore non sarà un valore SQL predefinito.
 
@@ -360,7 +360,7 @@ Per collegare un valore predefinito a un campo, è possibile utilizzare il coman
 
 #### Enumerazione gratuita {#free-enumeration}
 
-La proprietà **userEnum** consente di definire un&#39;enumerazione gratuita per memorizzare e visualizzare i valori immessi tramite questo campo. La sintassi è la seguente:
+La **userEnum** consente di definire un&#39;enumerazione gratuita per memorizzare e visualizzare i valori immessi tramite questo campo. La sintassi è la seguente:
 
 **userEnum=&quot;nome dell&#39;enumerazione&quot;**
 
@@ -372,13 +372,13 @@ Questi valori vengono visualizzati in un elenco a discesa del modulo di input:
 
 >[!NOTE]
 >
->Nella console client di Adobe Campaign, il nodo **[!UICONTROL Administration > Enumerations]** viene utilizzato per gestire le enumerazioni.
+>Nella console del client Adobe Campaign, la **[!UICONTROL Administration > Enumerations]** viene utilizzato per gestire le enumerazioni.
 
 #### Imposta enumerazione {#set-enumeration}
 
-La proprietà **enum** consente di definire un&#39;enumerazione fissa utilizzata quando l&#39;elenco dei valori possibili è noto in anticipo.
+La **enum** consente di definire un&#39;enumerazione fissa utilizzata quando l&#39;elenco dei valori possibili è noto in anticipo.
 
-L&#39;attributo **enum** fa riferimento alla definizione di una classe di enumerazione compilata nello schema al di fuori dell&#39;elemento principale.
+La **enum** l’attributo si riferisce alla definizione di una classe di enumerazione compilata nello schema al di fuori dell’elemento principale.
 
 Le enumerazioni consentono all’utente di selezionare un valore da un elenco a discesa invece di immettere il valore in un campo di input regolare:
 
@@ -394,27 +394,27 @@ Esempio di dichiarazione di enumerazione nello schema dati:
 </enumeration>
 ```
 
-Un’enumerazione viene dichiarata al di fuori dell’elemento principale tramite l’elemento **`<enumeration>`** .
+Un’enumerazione viene dichiarata al di fuori dell’elemento principale tramite il **`<enumeration>`** elemento.
 
 Le proprietà di enumerazione sono le seguenti:
 
 * **baseType**: tipo di dati associati ai valori,
 * **etichetta**: descrizione dell&#39;enumerazione,
-* **nome**: nome dell&#39;enumerazione,
-* **predefinito**: valore predefinito dell&#39;enumerazione.
+* **name**: nome dell&#39;enumerazione,
+* **default**: valore predefinito dell&#39;enumerazione.
 
-I valori di enumerazione sono dichiarati nell&#39;elemento **`<value>`** con i seguenti attributi:
+I valori di enumerazione sono dichiarati nel **`<value>`** con i seguenti attributi:
 
-* **nome**: nome del valore memorizzato internamente,
+* **name**: nome del valore memorizzato internamente,
 * **etichetta**: viene visualizzata tramite l’interfaccia grafica.
 
 #### enumerazione del dbenum {#dbenum-enumeration}
 
-* La proprietà **dbenum** consente di definire un&#39;enumerazione le cui proprietà sono simili a quelle della proprietà **enum** .
+* La **dbenum** consente di definire un&#39;enumerazione le cui proprietà sono simili a quelle della **enum** proprietà.
 
-   Tuttavia, l&#39;attributo **name** non memorizza il valore internamente, ma memorizza un codice che consente di estendere le tabelle interessate senza modificarne lo schema.
+   Tuttavia, **name** l&#39;attributo non memorizza il valore internamente, ma memorizza un codice che consente di estendere le tabelle interessate senza modificarne lo schema.
 
-   I valori sono definiti tramite il nodo **[!UICONTROL Administration>Enumerations]** .
+   I valori vengono definiti tramite la **[!UICONTROL Administration>Enumerations]** nodo.
 
    Questa enumerazione viene utilizzata, ad esempio, per specificare la natura delle campagne.
 
@@ -447,9 +447,9 @@ Ecco il nostro schema di esempio con le proprietà inserite:
 
 Una raccolta è un elenco di elementi con lo stesso nome e lo stesso livello gerarchico.
 
-L&#39;attributo **unbound** con il valore &quot;true&quot; consente di popolare un elemento di raccolta.
+La **non legato** Attributo con il valore &quot;true&quot; consente di compilare un elemento di raccolta.
 
-**Esempio**: definizione dell&#39;elemento  **`<group>`** di raccolta nello schema.
+**Esempio**: definizione della **`<group>`** elemento di raccolta nello schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -475,24 +475,24 @@ Gli elementi sono designati in base al loro nome e gli attributi sono designati 
 **Esempio**:
 
 * **@email**: seleziona l’e-mail,
-* **location/@city**: seleziona l&#39;attributo &quot;city&quot; sotto l&#39; **`<location>`** elemento
+* **location/@city**: seleziona l&#39;attributo &quot;city&quot; sotto il **`<location>`** elemento
 * **../@email**: seleziona l’indirizzo e-mail dall’elemento padre dell’elemento corrente
-* **gruppo`[1]/@label`**: seleziona l’attributo &quot;label&quot; secondario del primo elemento  **`<group>`** di raccolta
-* **gruppo`[@label='test1']`**: seleziona l’attributo &quot;label&quot; secondario dell’ **`<group>`** elemento e contiene il valore &quot;test1&quot;
+* **gruppo`[1]/@label`**: seleziona l’attributo &quot;label&quot; che è l’elemento figlio del primo **`<group>`** elemento di raccolta
+* **gruppo`[@label='test1']`**: seleziona l&#39;attributo &quot;label&quot; che è l&#39;elemento figlio del **`<group>`** e contiene il valore &quot;test1&quot;
 
 >[!NOTE]
 >
 >Viene aggiunto un vincolo aggiuntivo quando il percorso attraversa un sottoelemento. In questo caso, è necessario inserire tra parentesi la seguente espressione:
 >
->* **location/@** cityis non valido; utilizzare  **`[location/@city]`**
->* **`[@email]`** e  **@** emailare equivalente
+>* **location/@city** non è valido; utilizzare **`[location/@city]`**
+>* **`[@email]`** e **@email** sono equivalenti
 
 >
 
 
 È inoltre possibile definire espressioni complesse, ad esempio le seguenti operazioni aritmetiche:
 
-* **@gender+1**: aggiunge 1 al contenuto dell&#39;attributo  **** genderattribute,
+* **@gender+1**: aggiunge 1 al contenuto del **genere** attributo,
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**: crea una stringa prendendo il valore dell&#39;indirizzo e-mail aggiunto alla data di creazione tra parentesi (per il tipo di stringa, inserire la costante tra virgolette).
 
 Sono state aggiunte funzioni di alto livello alle espressioni per arricchire il potenziale di questa lingua.
@@ -505,13 +505,13 @@ Puoi accedere all’elenco delle funzioni disponibili tramite qualsiasi editor d
 
 * **GetDate()**: restituisce la data corrente
 * **Year(@created)**: restituisce l&#39;anno della data contenuta nell&#39;attributo &quot;created&quot;.
-* **GetEmailDomain(@email)**: restituisce il dominio dell&#39;indirizzo di posta elettronica.
+* **GetEmailDomain(@email)**: restituisce il dominio dell’indirizzo e-mail.
 
 ## Creazione di una stringa tramite la stringa di calcolo {#building-a-string-via-the-compute-string}
 
-Una **stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un record in una tabella associata allo schema. **La** stringa di calcolo viene utilizzata principalmente nell&#39;interfaccia grafica per visualizzare l&#39;etichetta di un record selezionato.
+A **Stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un record in una tabella associata allo schema. **Stringa di calcolo** viene utilizzato principalmente nell’interfaccia grafica per visualizzare l’etichetta di un record selezionato.
 
-La **stringa di calcolo** viene definita tramite l&#39;elemento **`<compute-string>`** sotto l&#39;elemento principale dello schema dati. Un attributo **expr** contiene un&#39;espressione XPath per calcolare la visualizzazione.
+La **Stringa di calcolo** è definito tramite **`<compute-string>`** elemento sotto l’elemento principale dello schema dati. Un **expr** attributo contiene un&#39;espressione XPath per calcolare la visualizzazione.
 
 **Esempio**: stringa di calcolo della tabella dei destinatari.
 

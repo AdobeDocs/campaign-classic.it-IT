@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Campi di archiviazione della risposta {#response-storage-fields}
 
-Le risposte ai moduli possono essere salvate in un campo del database o temporaneamente in una variabile locale. La modalità di archiviazione delle risposte viene scelta durante la creazione del campo. Può essere modificato tramite il collegamento **[!UICONTROL Edit storage...]** .
+Le risposte ai moduli possono essere salvate in un campo del database o temporaneamente in una variabile locale. La modalità di archiviazione delle risposte viene scelta durante la creazione del campo. Può essere modificato tramite la **[!UICONTROL Edit storage...]** link.
 
 Per ciascun campo di input di un modulo sono disponibili le seguenti opzioni di archiviazione:
 
@@ -27,21 +27,21 @@ Per ciascun campo di input di un modulo sono disponibili le seguenti opzioni di 
 
 * **[!UICONTROL Edit a recipient]**
 
-   È possibile selezionare un campo del database: le risposte degli utenti verranno memorizzate in questo campo. Per ogni utente, viene salvato solo l’ultimo valore immesso: viene aggiunto al loro profilo: Fare riferimento a [Memorizzazione dei dati nel database](#storing-data-in-the-database).
+   È possibile selezionare un campo del database: le risposte degli utenti verranno memorizzate in questo campo. Per ogni utente, viene salvato solo l’ultimo valore immesso: viene aggiunto al loro profilo: Fai riferimento a [Memorizzazione dei dati nel database](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Se non si desidera memorizzare le informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fare riferimento a [Memorizzazione di dati in una variabile locale](#storing-data-in-a-local-variable).
+   Se non si desidera memorizzare le informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fai riferimento a [Memorizzazione di dati in una variabile locale](#storing-data-in-a-local-variable).
 
 ### Memorizzazione dei dati nel database {#storing-data-in-the-database}
 
-Per salvare i dati in un campo esistente del database, fai clic sull&#39;icona **[!UICONTROL Edit expression]** e selezionala dall&#39;elenco dei campi disponibili.
+Per salvare i dati in un campo esistente del database, fare clic sul pulsante **[!UICONTROL Edit expression]** e selezionala dall’elenco dei campi disponibili.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Il documento di riferimento predefinito è lo schema **nms:recipient** . Per visualizzarlo o sceglierne uno nuovo, selezionare il modulo dall&#39;elenco e fare clic sul pulsante **[!UICONTROL Properties]**.
+>Il documento di riferimento predefinito è il **nms:recipient** schema. Per visualizzarlo o sceglierne uno nuovo, selezionarlo dall’elenco e fare clic sul pulsante **[!UICONTROL Properties]** pulsante .
 
 ### Memorizzazione di dati in una variabile locale {#storing-data-in-a-local-variable}
 
@@ -51,11 +51,11 @@ Ciò significa che è possibile utilizzare il valore di un campo non salvato per
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-Viene memorizzato in una variabile che deve essere selezionata al momento della creazione della casella a discesa oppure tramite il collegamento **[!UICONTROL Edit storage...]** .
+Viene memorizzato in una variabile che deve essere selezionata al momento della creazione della casella a discesa oppure tramite la **[!UICONTROL Edit storage...]** link.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Puoi visualizzare le variabili esistenti e crearne di nuove tramite il collegamento **[!UICONTROL Edit variables...]** . Fai clic sul pulsante **[!UICONTROL Add]** per creare una nuova variabile.
+Puoi visualizzare le variabili esistenti e crearne di nuove tramite il **[!UICONTROL Edit variables...]** link. Fai clic sul pulsante **[!UICONTROL Add]** per creare una nuova variabile.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -63,11 +63,11 @@ La variabile aggiunta sarà disponibile nell’elenco delle variabili locali qua
 
 >[!NOTE]
 >
->Per ciascun modulo è possibile creare variabili a monte. A questo scopo, seleziona il modulo e fai clic sul pulsante **[!UICONTROL Properties]** . La scheda **[!UICONTROL Variables]** contiene le variabili locali del modulo.
+>Per ciascun modulo è possibile creare variabili a monte. A questo scopo, seleziona il modulo e fai clic sul pulsante **[!UICONTROL Properties]** pulsante . La **[!UICONTROL Variables]** contiene le variabili locali per il modulo.
 
 **Esempio di deposito locale con condizionamento**
 
-Nell’esempio precedente, il contenitore contenente i dati relativi ai veicoli privati viene visualizzato solo se l’opzione **[!UICONTROL Private]** è selezionata dall’elenco a discesa, come indicato nella condizione di visibilità:
+Nell&#39;esempio precedente, il contenitore che include i dati relativi ai veicoli privati è visualizzato solo se il **[!UICONTROL Private]** viene selezionata dall’elenco a discesa, come indicato nella condizione di visibilità:
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -99,7 +99,7 @@ Per ciascun modulo, le risposte fornite possono essere riutilizzate nei campi o 
    <%= ctx.vars.variable name %
    ```
 
-* Per un contenuto memorizzato in un campo di testo HTML:
+* Per un contenuto memorizzato in un campo di testo di HTML:
 
    ```
    <%== HTML field name %
@@ -107,7 +107,7 @@ Per ciascun modulo, le risposte fornite possono essere riutilizzate nei campi o 
 
    >[!NOTE]
    >
-   >A differenza degli altri campi per i quali i caratteri `<%=` vengono sostituiti con caratteri di escape, il contenuto HTML viene salvato così come è utilizzando la sintassi `<%==`.
+   >A differenza degli altri campi per i quali `<%=` i caratteri vengono sostituiti con caratteri di escape, il contenuto di HTML viene salvato così come lo è utilizzando `<%==` sintassi.
 
 ## Salvataggio delle risposte ai moduli web {#saving-web-forms-answers}
 
@@ -117,7 +117,7 @@ Per salvare le informazioni raccolte nelle pagine di un modulo, è necessario in
 
 Esistono due modi per utilizzare questa casella:
 
-* Se l’accesso al modulo web è effettuato tramite un collegamento inviato in un messaggio e-mail e se l’utente che accede all’applicazione è già nel database, è possibile selezionare l’opzione **[!UICONTROL Update the preloaded record]**. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](publishing-a-web-form.md#delivering-a-form-via-email).
+* Se l’accesso al modulo web è effettuato tramite un collegamento inviato in un messaggio e-mail e se l’utente che accede all’applicazione è già presente nel database, è possibile controllare il **[!UICONTROL Update the preloaded record]** opzione . Per ulteriori informazioni, consulta [Distribuzione di un modulo tramite e-mail](publishing-a-web-form.md#delivering-a-form-via-email).
 
    In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. Devi configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](publishing-a-web-form.md#pre-loading-the-form-data).
 
@@ -129,7 +129,7 @@ Esistono due modi per utilizzare questa casella:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Per impostazione predefinita, i dati vengono importati nel database tramite un&#39;operazione **[!UICONTROL Update or insertion]**: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail inserito). Se non esiste, vengono aggiunte le informazioni.
+Per impostazione predefinita, i dati vengono importati nel database da un **[!UICONTROL Update or insertion]** funzionamento: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail inserito). Se non esiste, vengono aggiunte le informazioni.
 
 È tuttavia possibile modificare tale comportamento. A questo scopo, seleziona la radice dell’elemento e seleziona l’operazione da eseguire dall’elenco a discesa:
 

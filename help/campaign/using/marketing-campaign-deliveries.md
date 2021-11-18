@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Una volta create da una campagna, le consegne saranno collegate a questa campagn
 
 ## Creazione di consegne {#creating-deliveries}
 
-Per creare una consegna collegata a una campagna, fai clic sul collegamento **[!UICONTROL Add a delivery]** nel dashboard della campagna.
+Per creare una consegna collegata a una campagna, fai clic sul pulsante **[!UICONTROL Add a delivery]** nel dashboard della campagna.
 
 ![](assets/campaign_op_add_delivery.png)
 
@@ -33,21 +33,21 @@ Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mail
 
 ## Avvio di una consegna {#starting-a-delivery}
 
-Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne e-mail o canale mobile, consulta [Avvio di una consegna online](#starting-an-online-delivery) e per le consegne di direct mail, consulta [Avvio di una consegna offline](#starting-an-offline-delivery).
+Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne e-mail o di canali mobili, consulta [Avvio di una consegna online](#starting-an-online-delivery), e per le consegne di direct mailing, vedi [Avvio di una consegna offline](#starting-an-offline-delivery).
 
 ### Avvio di una consegna online {#starting-an-online-delivery}
 
-Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore. Se del caso, all’operatore Adobe Campaign (o al gruppo di operatori) designato come revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
+Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore . Se del caso, all’operatore Adobe Campaign (o al gruppo di operatori) designato come revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
 
 >[!NOTE]
 >
->Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, puoi anche consentire all’operatore responsabile della consegna di confermare l’invio. A questo scopo, attiva l&#39;opzione **NMS_ActivateOwnerConfirmation** immettendo **1** come valore. Le opzioni vengono gestite dal nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in Adobe Campaign explorer.
+>Se un operatore o un gruppo specifico di operatori è designato per avviare una consegna nelle proprietà della consegna, puoi anche consentire all’operatore responsabile della consegna di confermare l’invio. Per eseguire questa operazione, attiva il **NMS_ActivateOwnerConfirmation** opzione immettendo **1** come valore. Le opzioni vengono gestite dal **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in Adobe Campaign Explorer.
 >  
 >Per disattivare questa opzione, immetti **0** come valore. Il processo di conferma dell’invio funzionerà quindi come impostazione predefinita: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-Le informazioni vengono visualizzate anche sul dashboard della campagna. Il collegamento **[!UICONTROL Confirm delivery]** ti consente di avviare la consegna.
+Le informazioni vengono visualizzate anche sul dashboard della campagna. La **[!UICONTROL Confirm delivery]** consente di avviare la consegna.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -69,7 +69,7 @@ Per ulteriori informazioni, consulta [Approvazione di un file di estrazione](../
 
 **Passaggio 2 - Approvazione del messaggio al provider di servizi**
 
-* Una volta approvato il file di estrazione, è possibile generare la bozza dell&#39;e-mail di notifica del router. Questo messaggio e-mail viene creato in base a un modello di consegna. Deve essere approvato.
+* Una volta approvato il file di estrazione, puoi generare la bozza dell’e-mail di notifica del router. Questo messaggio e-mail viene creato in base a un modello di consegna. Deve essere approvato.
 
    >[!NOTE]
    >
@@ -82,11 +82,11 @@ Per ulteriori informazioni, consulta [Approvazione di un file di estrazione](../
 
    Il target della bozza deve essere definito in anticipo.
 
-   Puoi creare tutte le prove necessarie. Sono accessibili tramite il collegamento **[!UICONTROL Direct mail...]** dei dettagli di consegna.
+   Puoi creare tutte le prove necessarie. Sono accessibili tramite il **[!UICONTROL Direct mail...]** collegamento dei dettagli di consegna.
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Lo stato della consegna cambia in **[!UICONTROL To submit]**. Fai clic sul pulsante **[!UICONTROL Submit proofs]** per avviare il processo di approvazione.
+* Lo stato di consegna cambia in **[!UICONTROL To submit]**. Fai clic sul pulsante **[!UICONTROL Submit proofs]** per avviare il processo di approvazione.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -104,21 +104,21 @@ Per ulteriori informazioni, consulta [Approvazione di un file di estrazione](../
 
 L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle scorte. Le voci di budget vengono aggiornate.
 
-* La scheda **[!UICONTROL Budget]** ti consente di gestire i budget per la campagna. Il totale delle voci di costo viene visualizzato nel campo **[!UICONTROL Calculates cost]** della scheda principale della campagna e nel relativo programma. Gli importi si riflettono anche nel bilancio della campagna.
+* La **[!UICONTROL Budget]** consente di gestire i budget per la campagna. Il totale delle voci di costo è indicato nella variabile **[!UICONTROL Calculates cost]** campo della scheda principale della campagna e del programma a cui appartiene. Gli importi si riflettono anche nel bilancio della campagna.
 
    Il costo reale sarà calcolato in base alle informazioni fornite dal router. Vengono fatturati solo i messaggi effettivamente inviati.
 
-* Le scorte sono definite nel nodo **[!UICONTROL Administration > Campaign management > Stocks]** dell&#39;albero e nelle strutture dei costi nel nodo **[!UICONTROL Administration > Campaign management > Service providers]**.
+* Le consistenze sono definite nella **[!UICONTROL Administration > Campaign management > Stocks]** nodo della struttura e strutture di costo nel **[!UICONTROL Administration > Campaign management > Service providers]** nodo.
 
    Le linee di scorta sono visibili nella sezione di scorta. Per definire il magazzino iniziale, aprire una linea di magazzino. Lo stock viene ridotto ogni volta che si verifica una consegna. Puoi definire un livello di avviso e le notifiche.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul calcolo dei costi e sulla gestione delle scorte, vedere [Fornitori, scorte e budget](../../campaign/using/providers--stocks-and-budgets.md).
+>Per ulteriori informazioni sul calcolo dei costi e sulla gestione delle scorte, vedi [Fornitori, scorte e budget](../../campaign/using/providers--stocks-and-budgets.md).
 
 ## Gestione dei documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -128,18 +128,18 @@ In una campagna puoi anche fare riferimento ad altri articoli, come coupon promo
 
 >[!NOTE]
 >
->Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per lavori collaborativi. Consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
+>Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per lavori collaborativi. Vedi [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
 ### Aggiunta di documenti {#adding-documents}
 
 I documenti possono essere associati a livello di campagna (documenti contestuali) o a livello di programma (documenti generali).
 
-La scheda **[!UICONTROL Documents]** contiene:
+La **[!UICONTROL Documents]** la scheda contiene:
 
 * Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con diritti adeguati,
 * Documenti contenenti informazioni relative al router, se presenti.
 
-I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]** .
+I documenti sono collegati al programma o alla campagna tramite il **[!UICONTROL Edit > Documents]** scheda .
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -147,11 +147,11 @@ Puoi anche aggiungere un documento a una campagna tramite il collegamento offert
 
 ![](assets/add_a_document_in_op.png)
 
-Fai clic sull’icona **[!UICONTROL Details]** per visualizzare il contenuto di un file e aggiungere informazioni:
+Fai clic sul pulsante **[!UICONTROL Details]** per visualizzare il contenuto di un file e aggiungere informazioni:
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-Nel dashboard, i documenti associati alla campagna sono raggruppati nella sezione **[!UICONTROL Document(s)]** , come nell’esempio seguente:
+Nel dashboard, i documenti associati alla campagna sono raggruppati nel **[!UICONTROL Document(s)]** come nell’esempio seguente:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -165,13 +165,13 @@ Nel dashboard, i documenti associati alla campagna sono raggruppati nella sezion
 
 Un profilo di consegna indica un insieme strutturato di elementi (documenti, filiali/negozi, promozionali coupon, ecc.) creato nell&#39;azienda e per una particolare campagna.
 
-Tali elementi sono raggruppati in profili di consegna e un particolare profilo di consegna sarà associato a una consegna; al file di estrazione inviato al **provider di servizi** per essere allegato alla consegna verrà fatto riferimento. Ad esempio, puoi creare una struttura di consegna che fa riferimento a un ramo e alle brochure di marketing utilizzate.
+Tali elementi sono raggruppati in profili di consegna e un particolare profilo di consegna sarà associato a una consegna; nel file di estrazione inviato al **fornitore di servizi** da allegare alla consegna. Ad esempio, puoi creare una struttura di consegna che fa riferimento a un ramo e alle brochure di marketing utilizzate.
 
 Per una campagna, i profili di consegna ti consentono di strutturare elementi esterni da associare alla consegna in base a determinati criteri: filiale correlata, offerta promozionale concessa, invito a un evento locale, ecc.
 
 #### Creazione di una struttura {#creating-an-outline}
 
-Per creare una struttura, fai clic sulla sottoscheda **[!UICONTROL Delivery outlines]** nella scheda **[!UICONTROL Edit > Documents]** della campagna interessata.
+Per creare una struttura, fai clic sul pulsante **[!UICONTROL Delivery outlines]** sottoscheda in **[!UICONTROL Edit > Documents]** scheda della campagna interessata.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Per creare una struttura, fai clic sulla sottoscheda **[!UICONTROL Delivery outl
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia dei profili per la campagna:
+Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia di profili per la campagna:
 
 1. Fare clic con il pulsante destro del mouse sulla radice dell&#39;albero e selezionare **[!UICONTROL New > Delivery outlines]**.
 1. Fai clic con il pulsante destro del mouse sul profilo appena creato e seleziona **[!UICONTROL New > Item]** o **[!UICONTROL New > Personalization fields]**.
@@ -191,15 +191,15 @@ Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia 
 Una struttura può contenere elementi e campi di personalizzazione, risorse e offerte:
 
 * Gli elementi possono essere documenti fisici, ad esempio, a cui viene fatto riferimento e descritto qui e che verranno allegati alla consegna.
-* I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono create in Adobe Campaign e importate nella struttura tramite il collegamento **[!UICONTROL Import personalization fields...]** .
+* I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in Adobe Campaign e importati nella struttura tramite il **[!UICONTROL Import personalization fields...]** link.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   È inoltre possibile crearli direttamente nel profilo facendo clic sull’icona **[!UICONTROL Add]** a destra della zona elenco.
+   È inoltre possibile crearli direttamente nel profilo facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** della scheda **[!UICONTROL Campaigns]** .
+* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il **[!UICONTROL Resources]** collegamento **[!UICONTROL Campaigns]** scheda .
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -217,7 +217,7 @@ Il profilo selezionato viene quindi visualizzato nella sezione inferiore della f
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-Anche la scheda **[!UICONTROL Summary]** della consegna visualizza queste informazioni:
+La **[!UICONTROL Summary]** La scheda della consegna visualizza anche queste informazioni:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -229,11 +229,11 @@ Nell’esempio seguente, l’etichetta, il costo stimato e la descrizione del pr
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna in questione. Vedere [Creazione di provider di servizi e relative strutture di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna in questione. Vedi [Creazione di fornitori di servizi e relative strutture di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle esportazioni, consulta la sezione [Guida introduttiva](../../platform/using/get-started-data-import-export.md) .
+>Per ulteriori informazioni sulle esportazioni, consulta la sezione [Introduzione](../../platform/using/get-started-data-import-export.md) sezione .
 
 #### Video tutorial {#create-email-video}
 
@@ -241,4 +241,4 @@ In questo video viene illustrato come creare una campagna e un messaggio e-mail 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Sono disponibili ulteriori video dimostrativi su Campaign [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili ulteriori video dimostrativi relativi a Campaign [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

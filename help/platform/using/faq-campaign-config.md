@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '758'
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza al fine di massimizzare le funzionalità di consegna di Campaign.
+Oltre al [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 
 ## Come posso implementare l’approvazione dei contenuti? {#how-can-i-implement-content-approval-}
 
-Campaign ti consente di impostare processi di approvazione per i passaggi principali della campagna di marketing, in modalità collaborativa. Per ogni campagna puoi approvare il target di consegna, i contenuti e i costi. Gli operatori di Adobe Campaign incaricati dell’approvazione possono ricevere una notifica tramite e-mail e accettare o rifiutare l’approvazione dalla console o tramite una connessione web.
+Campaign ti consente di impostare processi di approvazione per i passaggi principali della campagna di marketing, in modalità collaborativa. Per ogni campagna puoi approvare il target di consegna, i contenuti e i costi. Gli operatori Adobe Campaign incaricati dell’approvazione possono ricevere una notifica tramite e-mail e accettare o rifiutare l’approvazione dalla console o tramite una connessione web.
 
 [Fai clic qui per ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e per scoprire i passaggi per implementare l’approvazione dei contenuti della tua consegna in Campaign.
 

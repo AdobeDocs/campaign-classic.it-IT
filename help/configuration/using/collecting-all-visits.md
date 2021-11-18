@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -29,11 +29,11 @@ Un utente noto alla piattaforma è un destinatario che è già stato eseguito il
 
 ## Configurazione del server {#server-configuration}
 
-I server sono configurati sovraccaricando alcuni elementi del file **serverConf.xml**. Questi file vengono salvati nella sottodirectory **conf** della directory di installazione di Adobe Campaign.
+I server sono configurati sovraccaricando alcuni elementi del **serverConf.xml** file. Questi file vengono salvati nel **conf** sottodirectory della directory di installazione di Adobe Campaign.
 
 ### Server di reindirizzamento {#redirection-server}
 
-Per il server di reindirizzamento, imposta l&#39;attributo **trackWebVisitors** dell&#39;elemento **redirecting** su **true**.
+Per il server di reindirizzamento, imposta il **trackWebVisitors** dell&#39;attributo **reindirizzamento** elemento a **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Per visualizzare le informazioni di tracciamento tramite la console client, devi:
 
-* Crea una **consegna fittizia** (la mappatura della consegna deve essere identica alla mappatura dello schema di destinazione),
-* Immetti il **nome interno** di questa consegna nell&#39;opzione **NmsTracking_WebTrackingDelivery** .
+* Crea un **consegna fittizia** (la mappatura della consegna deve essere identica alla mappatura dello schema di destinazione),
+* Inserisci il **nome interno** di tale consegna **NmsTracking_WebTrackingDelivery** opzione .
 
-Tutte le informazioni di tracciamento del sito non direttamente successive a un clic in un messaggio di posta elettronica possono essere visualizzate nella consegna fittizia creata.
+Tutte le informazioni di tracciamento del sito non direttamente successive a un clic in un’e-mail possono essere visualizzate nella consegna fittizia creata.

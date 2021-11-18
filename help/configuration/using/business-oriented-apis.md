@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -71,7 +71,7 @@ Questa chiamata non restituisce alcun dato, tranne gli errori.
 
 ### Esempi {#examples}
 
-Iscrizione con chiave di riconciliazione dei destinatari sull&#39;indirizzo e-mail: il documento XML di input deve fare riferimento all&#39;indirizzo e-mail e alla definizione della chiave in questo campo.
+Iscrizione con chiave di riconciliazione dei destinatari sull’indirizzo e-mail: il documento XML di input deve fare riferimento all&#39;indirizzo e-mail e alla definizione della chiave in questo campo.
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
