@@ -80,15 +80,14 @@ Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (com
    >* In caso di emergenza, utilizza l&#39;opzione **-immediate** per forzare un arresto immediato del processo (equivalente al comando Unix **kill -9**).
    >* Utilizza l&#39;opzione **-noconsole** per assicurarti che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd**.
    >* Utilizza l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
-
-      >
-      >   Esempio:
-      >
-      >   **nlserver riavvio web -verbose**
-      >
-      >   **avvio nlserver mta@myinstance -verbose**
-      >
-      >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
+   >
+   >   Esempio:
+   >
+   >   **nlserver riavvio web -verbose**
+   >
+   >   **avvio nlserver mta@myinstance -verbose**
+   >
+   >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
 
 
 * Avvia tutti i processi Adobe Campaign (equivalente all&#39;avvio del servizio **nlserver6** ):
