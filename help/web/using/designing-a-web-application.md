@@ -17,11 +17,11 @@ ht-degree: 4%
 
 ![](../../assets/common.svg)
 
-Le applicazioni web vengono create e gestite in base allo stesso principio di [moduli web](about-web-forms.md).
+Le applicazioni web vengono create e gestite in base allo stesso principio [moduli web](about-web-forms.md).
 
 >[!CAUTION]
 >
->Utilizza la sottoscheda **[!UICONTROL Preview]** per controllare gli errori durante la progettazione di applicazioni web.
+>Utilizza la **[!UICONTROL Preview]** sottoscheda per verificare gli errori durante la progettazione di applicazioni web.
 >
 >Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
 
@@ -31,7 +31,7 @@ Le applicazioni web vengono create e gestite in base allo stesso principio di [m
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-Puoi anche selezionare il menu **[!UICONTROL Add a chart]** .
+Puoi anche selezionare la **[!UICONTROL Add a chart]** menu.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -51,7 +51,7 @@ L’interfaccia di Adobe Campaign utilizza molte applicazioni web per accedere, 
 
 Vengono visualizzate nell’interfaccia sotto forma di dashboard con una sola pagina.
 
-Le applicazioni Web predefinite sono memorizzate nel nodo **[!UICONTROL Administration > Configuration > Web applications]**.
+Le applicazioni web predefinite sono memorizzate nella **[!UICONTROL Administration > Configuration > Web applications]** nodo.
 
 ## Modifica di applicazioni Web di tipo modulo {#edit-forms-type-web-applications}
 

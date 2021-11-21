@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-I blocchi in Interazione consentono di modificare il comportamento **del motore standard**.
+I ganci nell’interazione consentono di modificare il **comportamento normale del motore**.
 
-Gli hook **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** sono configurati, in Adobe Campaign, nello spazio dell’offerta:
+La **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** gli hook sono configurati, in Adobe Campaign, nello spazio dell’offerta:
 
 ![](assets/interaction_hooks_1.png)
 
-Il gancio **[!UICONTROL Dynamic offer]** è configurato con il peso dell&#39;offerta in Adobe Campaign:
+La **[!UICONTROL Dynamic offer]** hook configurato con il peso dell’offerta in Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -46,7 +46,7 @@ I dati raccolti devono essere inseriti nel nodo di dati della chiamata (nodo di 
 
 >[!NOTE]
 >
->Il parametro **xmlInteraction** contiene sia i dati della chiamata che il profilo del contatto caricato dalla query preconfigurata.
+>La **xmlInteraction** Il parametro contiene sia i dati della chiamata che il profilo del contatto caricato dalla query preconfigurata.
 
 **Esempio:**
 
@@ -119,7 +119,7 @@ return aReturnedProps;
 
 Questo gancio consente di effettuare una chiamata a un motore esterno per selezionare un elenco di prodotti collegati a un’offerta. Viene configurato nell’offerta dopo le regole di idoneità e prima dell’applicazione delle regole di tipologia.
 
-In precedenza, l&#39;integratore dovrebbe estendere lo schema delle proposte **PropositionRcp** con le informazioni aggiuntive sul prodotto. Per specificare dove memorizzare questi dati, nella scheda **[!UICONTROL Storage]** dello spazio è disponibile un collegamento **[!UICONTROL Proposition being processed]**
+In precedenza, l’integratore dovrebbe estendere le proposte **PropositionRcp** schema con le informazioni aggiuntive sul prodotto. Per specificare la posizione di memorizzazione di questi dati, è necessario **[!UICONTROL Proposition being processed]** il collegamento è disponibile nella sezione **[!UICONTROL Storage]** scheda dello spazio
 
 ![](assets/interaction_hooks_3.png)
 

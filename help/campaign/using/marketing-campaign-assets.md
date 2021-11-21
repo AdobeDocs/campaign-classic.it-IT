@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc).
+È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.).
 
 >[!IMPORTANT]
 >
 >Questa funzionalità è riservata alle risorse e ai documenti di piccole dimensioni.
 
-In una campagna puoi anche fare riferimento ad altri articoli, come coupon promozionali, offerte speciali relative a uno specifico marchio o negozio, ecc. Quando questi elementi sono inclusi in una struttura, possono essere associati a una consegna direct mailing. Consulta [Associare e strutturare le risorse collegate tramite una struttura di consegna](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+In una campagna puoi anche fare riferimento ad altri articoli, come coupon promozionali, offerte speciali relative a uno specifico marchio o negozio, ecc. Quando questi elementi sono inclusi in una struttura, possono essere associati a una consegna direct mailing. Vedi [Associare e strutturare le risorse collegate tramite una struttura di consegna](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
@@ -33,12 +33,12 @@ In una campagna puoi anche fare riferimento ad altri articoli, come coupon promo
 
 I documenti possono essere associati a livello di campagna (documenti contestuali) o a livello di programma (documenti generali).
 
-La scheda **[!UICONTROL Documents]** contiene:
+La **[!UICONTROL Documents]** la scheda contiene:
 
 * Elenco di tutti i documenti richiesti per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con diritti adeguati,
 * Documenti contenenti informazioni relative al router, se presenti.
 
-I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]** .
+I documenti sono collegati al programma o alla campagna tramite il **[!UICONTROL Edit > Documents]** scheda .
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -46,11 +46,11 @@ Puoi anche aggiungere un documento a una campagna tramite il collegamento offert
 
 ![](assets/add_a_document_in_op.png)
 
-Fai clic sull’icona **[!UICONTROL Details]** per visualizzare il contenuto di un file e aggiungere informazioni:
+Fai clic sul pulsante **[!UICONTROL Details]** per visualizzare il contenuto di un file e aggiungere informazioni:
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-Nel dashboard, i documenti associati alla campagna sono raggruppati nella sezione **[!UICONTROL Document(s)]** , come nell’esempio seguente:
+Nel dashboard, i documenti associati alla campagna sono raggruppati nel **[!UICONTROL Document(s)]** come nell’esempio seguente:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -64,13 +64,13 @@ Nel dashboard, i documenti associati alla campagna sono raggruppati nella sezion
 
 Un profilo di consegna indica un insieme strutturato di elementi (documenti, negozi, promozionali coupon, ecc.) creato dalla società e per una campagna particolare.
 
-Tali elementi sono raggruppati in profili di consegna e ogni profilo di consegna sarà associato a una consegna; al file di estrazione inviato al **provider di servizi** per essere allegato alla consegna verrà fatto riferimento. Ad esempio, puoi creare una struttura di consegna che fa riferimento a un ramo e alle brochure di marketing utilizzate.
+Tali elementi sono raggruppati in profili di consegna e ogni profilo di consegna sarà associato a una consegna; nel file di estrazione inviato al **fornitore di servizi** da allegare alla consegna. Ad esempio, puoi creare una struttura di consegna che fa riferimento a un ramo e alle brochure di marketing utilizzate.
 
 Per una campagna, i profili di consegna ti consentono di strutturare elementi esterni da associare alla consegna in base a determinati criteri: filiale correlata, offerta promozionale concessa, invito a un evento locale, ecc.
 
 ### Creare una struttura {#creating-an-outline}
 
-Per creare una struttura, fai clic sulla sottoscheda **[!UICONTROL Delivery outlines]** nella scheda **[!UICONTROL Edit > Documents]** della campagna interessata.
+Per creare una struttura, fai clic sul pulsante **[!UICONTROL Delivery outlines]** sottoscheda in **[!UICONTROL Edit > Documents]** scheda della campagna interessata.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Per creare una struttura, fai clic sulla sottoscheda **[!UICONTROL Delivery outl
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia dei profili per la campagna:
+Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia di profili per la campagna:
 
 1. Fare clic con il pulsante destro del mouse sulla radice dell&#39;albero e selezionare **[!UICONTROL New > Delivery outlines]**.
 1. Fai clic con il pulsante destro del mouse sul profilo appena creato e seleziona **[!UICONTROL New > Item]** o **[!UICONTROL New > Personalization fields]**.
@@ -90,15 +90,15 @@ Quindi, fai clic su **[!UICONTROL Add a delivery outline]** e crea la gerarchia 
 Una struttura può contenere elementi e campi di personalizzazione, risorse e offerte:
 
 * Gli elementi possono essere documenti fisici, ad esempio, a cui viene fatto riferimento e descritto qui e che verranno allegati alla consegna.
-* I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono create in Adobe Campaign e importate nella struttura tramite il collegamento **[!UICONTROL Import personalization fields...]** .
+* I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in Adobe Campaign e importati nella struttura tramite il **[!UICONTROL Import personalization fields...]** link.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   È inoltre possibile crearli direttamente nel profilo facendo clic sull’icona **[!UICONTROL Add]** a destra della zona elenco.
+   È inoltre possibile crearli direttamente nel profilo facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il collegamento **[!UICONTROL Resources]** della scheda **[!UICONTROL Campaigns]** .
+* Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing accessibile tramite il **[!UICONTROL Resources]** collegamento **[!UICONTROL Campaigns]** scheda .
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -116,7 +116,7 @@ Il profilo selezionato viene quindi visualizzato nella sezione inferiore della f
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-Anche la scheda **[!UICONTROL Summary]** della consegna visualizza queste informazioni:
+La **[!UICONTROL Summary]** La scheda della consegna visualizza anche queste informazioni:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -132,4 +132,4 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle esportazioni, consulta [questa sezione](../../platform/using/get-started-data-import-export.md) .
+>Per ulteriori informazioni sulle esportazioni, consulta [questa sezione](../../platform/using/get-started-data-import-export.md) sezione .

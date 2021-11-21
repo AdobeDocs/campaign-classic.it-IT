@@ -71,12 +71,12 @@ Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione
 
 ## Implementazione {#implementation}
 
-1. Apri l’attività **[!UICONTROL JavaScript code]** .
-1. Copia lo script offerto in [Esempio di script](#example-of-a-script) nella finestra **[!UICONTROL JavaScript code]**.
+1. Apri il tuo **[!UICONTROL JavaScript code]** attività.
+1. Copia lo script offerto in [Esempio di script](#example-of-a-script) nel **[!UICONTROL JavaScript code]** finestra.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. Nel campo **[!UICONTROL Label]** , immetti il nome dello script, ovvero
+1. In **[!UICONTROL Label]** immettere il nome dello script, ovvero
 
    ```
    <%= vars.deliveryId %>
@@ -84,14 +84,14 @@ Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Chiudi l’attività **[!UICONTROL JavaScript code]**.
+1. Chiudi **[!UICONTROL JavaScript code]** attività.
 1. Salva il flusso di lavoro.
 
 ## Dettagli dello script {#details-of-the-script}
 
 Questa sezione descrive le varie parti dello script e la relativa modalità operativa.
 
-* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create eseguendo il flusso di lavoro di targeting e di ordinarle in base al tasso di apertura stimato, quindi vengono recuperate le informazioni dalla consegna con il tasso di apertura più elevato.
+* La prima parte dello script è una query. La **queryDef** consente di recuperare dal **NmsDelivery** tabella delle consegne create eseguendo il flusso di lavoro di targeting e per ordinarle in base al tasso di apertura stimato, vengono recuperate le informazioni dalla consegna con il tasso di apertura più elevato.
 
    ```
    // query the database to find the winner (best open rate)
@@ -120,7 +120,7 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
    delivery.Duplicate("nms:delivery|" + winner.@id)
    ```
 
-* L’etichetta della consegna duplicata viene modificata e la parola **final** viene aggiunta ad essa.
+* L’etichetta della consegna duplicata viene modificata e la parola **finale** viene aggiunto a esso.
 
    ```
    // append 'final' to the delivery label
@@ -162,12 +162,12 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
 
 L’esempio precedente ti consente di selezionare il contenuto di una consegna in base al tasso di apertura delle e-mail. Puoi adattarlo in base ad altri indicatori specifici per la consegna:
 
-* Velocità effettiva di clic migliore: `[indicators/@recipientClickRatio]`
-* Tasso di reattività più alto (apertura e-mail e clic nel messaggio): `[indicators/@reactivity]`
+* Velocità effettiva di clic migliore: `[indicators/@recipientClickRatio]`,
+* Tasso di reattività più alto (apertura e-mail e clic nel messaggio): `[indicators/@reactivity]`,
 * Tasso di reclamo inferiore: `[indicators/@refusedRatio]` (usa il valore false per l&#39;attributo sortDesc),
-* Tasso di conversione più alto: `[indicators/@transactionRatio]`
-* Numero di pagine visitate dopo la ricezione di un messaggio: `[indicators/@totalWebPage]`
-* Tasso minimo di annullamento sottoscrizione: `[indicators/@optOutRatio]`
+* Tasso di conversione più alto: `[indicators/@transactionRatio]`,
+* Numero di pagine visitate dopo la ricezione di un messaggio: `[indicators/@totalWebPage]`,
+* Tasso minimo di annullamento sottoscrizione: `[indicators/@optOutRatio]`,
 * Importo transazione: `[indicators/@amount]`.
 
 Ora puoi definire la consegna finale. [Ulteriori informazioni](a-b-testing-uc-final-delivery.md).

@@ -63,7 +63,7 @@ ht-degree: 7%
 
 Proiezione query
 
-Una chiave specifica (PROXYUSER o PROXYROLE) viene utilizzata per associare un utente o un ruolo di Teradata a un utente di Campaign. È stata aggiunta una nuova autorizzazione per utilizzare questo utente/ruolo proxy. È necessario aggiungere il diritto di accesso GRANT CONNECT THROUGH all&#39;account del database (quello definito nell&#39;account esterno Teradata).
+Una chiave specifica (PROXYUSER o PROXYROLE) viene utilizzata per associare un utente o un ruolo di Teradata a un utente di Campaign. È stata aggiunta una nuova autorizzazione per utilizzare questo utente/ruolo proxy. È necessario aggiungere il diritto di accesso GRANT CONNECT THROUGH all’account del database (quello definito nell’account esterno Teradata).
 
 È stata aggiunta una nuova scheda negli account esterni Teradata. La **[!UICONTROL Query banding]** La scheda include le seguenti opzioni:
 
@@ -123,7 +123,7 @@ API file
 
 Per le nuove installazioni, l’accesso alle cartelle tramite API di file è limitato alla **var**, **sftp** e cartelle temporanee di Adobe Campaign.
 
-Per i clienti esistenti, le API dei file non possono più accedere ai **conf** cartella di Adobe Campaign. La **XtkSecurity_Disable_JSFileSandboxing** l’opzione di compatibilità viene aggiunta dall’aggiornamento successivo e attivata per impostazione predefinita, consentendo di continuare ad accedere alle altre cartelle. Se desideri limitare l’accesso al **var**, **sftp** e cartelle temporanee di Adobe Campaign, disattiva l’opzione .
+Per i clienti esistenti, le API dei file non possono più accedere al **conf** cartella di Adobe Campaign. La **XtkSecurity_Disable_JSFileSandboxing** l’opzione di compatibilità viene aggiunta dall’aggiornamento successivo e attivata per impostazione predefinita, consentendo di continuare ad accedere alle altre cartelle. Se desideri limitare l’accesso al **var**, **sftp** e cartelle temporanee di Adobe Campaign, disattiva l’opzione .
 
 **Patch**
 

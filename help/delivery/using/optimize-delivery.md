@@ -8,7 +8,7 @@ exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -28,11 +28,11 @@ Diversi fattori possono influenzare direttamente le prestazioni del server e ral
 
 * Caricamento server: quando il server di marketing gestisce contemporaneamente diverse attività, può rallentare le prestazioni. Il server di marketing deve coordinare tutti i dati in entrata e in uscita per tutte le consegne per garantire che i dati siano corretti e puntuali.
 
-   **SUGGERIMENTO** : per evitare questo problema, coordina la pianificazione delle consegne con gli altri membri del team per garantire le migliori prestazioni.
+   **SUGGERIMENTO** - Per evitare questo problema, coordina la pianificazione delle consegne con gli altri membri del team per garantire le migliori prestazioni.
 
-* Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Segui le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
+* Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Seguire le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Se sei idoneo, puoi sfruttare le funzionalità [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma utilizzando le funzionalità [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html).
+* Se sei idoneo, puoi sfruttare [Funzionalità di Pannello di controllo Campaign di Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma, utilizzando [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=it) funzionalità.
 
 ## Verifica della configurazione di rete {#network-config}
 
@@ -48,9 +48,9 @@ Per raggiungere la casella in entrata dei destinatari senza rimbalzare o contras
 
    * Si riferisce ai fattori di un’e-mail che determinano la sua capacità di essere accettata dal server di un destinatario. Gli ISP (Internet Service Provider) filtrano le e-mail che identificano come SPAM o impediscono il download delle immagini. Se determinano che un determinato dominio sta inviando troppe e-mail, imposteranno un limite al numero di e-mail che accetteranno da quel mittente.
 
-   * Quando controlli l&#39;e-mail per il recapito messaggi, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per informazioni più approfondite su questo argomento, consulta [questa sezione](about-deliverability.md).
+   * Quando controlli l&#39;e-mail per il recapito messaggi, vuoi concentrarti su quattro categorie principali: qualità dei dati, messaggi e contenuti, infrastruttura di invio e reputazione. Per maggiori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica le raccomandazioni dettagliate [in questo documento](about-deliverability.md).
+* Applicare le raccomandazioni dettagliate [in questo documento](about-deliverability.md).
 
 * Contatta il tuo rappresentante Adobe per assistenza.
 
@@ -62,7 +62,7 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 **Suggerimenti**
 
-* Se disponi di un elenco di indirizzi non validi, Adobe consiglia di importarlo nella tabella di quarantena tramite **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
+* Se disponi di un elenco di indirizzi non validi, Adobe consiglia di importarlo nella tabella di quarantena, tramite **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
 * I destinatari i cui indirizzi sono messi in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna: non sono mirati. In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. È possibile mettere in quarantena un indirizzo e-mail, ad esempio se la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
 
@@ -77,4 +77,4 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni non corrette e migliorare la reputazione del mittente, l’Adobe consiglia di implementare un doppio meccanismo di consenso per la conferma post-abbonamento. In questo modo il destinatario si è iscritto intenzionalmente.
 
-I dettagli sull&#39;implementazione di questo meccanismo sono descritti in [questa sezione](../../web/using/use-cases--web-forms.md).
+I dettagli relativi all&#39;attuazione di tale meccanismo sono descritti in [questa sezione](../../web/using/use-cases--web-forms.md).

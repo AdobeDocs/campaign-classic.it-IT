@@ -19,21 +19,21 @@ ht-degree: 1%
 
 ## Contesto della visualizzazione del rapporto {#report-display-context}
 
-Definisci il contesto di visualizzazione del rapporto nella piattaforma Adobe Campaign utilizzando la scheda **[!UICONTROL Display]** . L’accesso a un rapporto dipende dal tipo di selezione, dalle condizioni di visualizzazione e dalle autorizzazioni di accesso.
+Definisci il contesto di visualizzazione del rapporto nella piattaforma Adobe Campaign utilizzando **[!UICONTROL Display]** scheda . L’accesso a un rapporto dipende dal tipo di selezione, dalle condizioni di visualizzazione e dalle autorizzazioni di accesso.
 
 ### Tipo di selezione {#selection-type}
 
-L’accesso al rapporto può essere limitato a un contesto specifico o a uno spazio di offerta, ad esempio una consegna, un destinatario, una selezione di destinatari e così via. Questo accesso è configurato nella sezione **[!UICONTROL Selection type]** della scheda **[!UICONTROL Display]** .
+L’accesso al rapporto può essere limitato a un contesto specifico o a uno spazio di offerta, ad esempio una consegna, un destinatario, una selezione di destinatari e così via. Questo accesso è configurato nella **[!UICONTROL Selection type]** della sezione **[!UICONTROL Display]** scheda .
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
 * **[!UICONTROL Single selection]** : il rapporto è accessibile solo quando è selezionata una specifica entità.
 * **[!UICONTROL Multiple selection]** : il rapporto è accessibile quando sono selezionate più entità.
-* **[!UICONTROL Global]** : il rapporto è accessibile tramite l’elenco dei rapporti disponibili nella  **[!UICONTROL Reports]** scheda .
+* **[!UICONTROL Global]** : il rapporto è accessibile tramite l’elenco dei rapporti disponibili nel **[!UICONTROL Reports]** scheda .
 
 ### Sequenza di visualizzazione {#display-sequence}
 
-Il campo **[!UICONTROL Sequence]** consente di immettere un valore numerico che specifica la sequenza di visualizzazione del rapporto nell’elenco.
+La **[!UICONTROL Sequence]** consente di inserire un valore numerico che specifica la sequenza di visualizzazione del rapporto nell’elenco.
 
 Per impostazione predefinita, i rapporti vengono visualizzati in base alla rilevanza: il valore inserito in questo campo ti consente di ordinare i rapporti dal valore più alto al minore (valore più basso) pertinente.
 
@@ -55,7 +55,7 @@ Ciò significa che se il canale principale della campagna è la direct mailing, 
 
 Il rapporto può essere condiviso con altri operatori.
 
-Per rendere il rapporto accessibile, seleziona l’opzione **[!UICONTROL Report shared with other operators]** . Se questa opzione non è selezionata, solo l’operatore che ha creato il rapporto può accedere al rapporto.
+Per rendere il rapporto accessibile, seleziona la **[!UICONTROL Report shared with other operators]** opzione . Se questa opzione non è selezionata, solo l’operatore che ha creato il rapporto può accedere al rapporto.
 
 Il rapporto può anche essere condiviso con specifici operatori o gruppi di operatori aggiunti tramite la finestra delle autorizzazioni.
 
@@ -63,7 +63,7 @@ Il rapporto può anche essere condiviso con specifici operatori o gruppi di oper
 
 ### Definizione delle opzioni di filtro {#defining-the-filtering-options}
 
-La scheda **[!UICONTROL Reports]** visualizza tutti i rapporti disponibili nella piattaforma e per i quali l’operatore connesso dispone di un diritto di accesso.
+La **[!UICONTROL Reports]** visualizza tutti i report disponibili nella piattaforma e per i quali l’operatore connesso dispone di un diritto di accesso.
 
 Per impostazione predefinita, sono ordinati per rilevanza, ma puoi applicare altri tipi di filtri: alfabetico, per età, ecc.
 
@@ -71,7 +71,7 @@ Puoi anche filtrare la visualizzazione in base alla categoria del rapporto:
 
 ![](assets/report_ovv_select_type.png)
 
-Per definire la categoria di un rapporto, selezionalo tramite la scheda **[!UICONTROL Display]** , come illustrato di seguito:
+Per definire la categoria di un rapporto, selezionalo tramite il **[!UICONTROL Display]** , come illustrato di seguito:
 
 ![](assets/report_select_category.png)
 
@@ -83,11 +83,11 @@ Per definire la categoria di un rapporto, selezionalo tramite la scheda **[!UICO
 
 Ad esempio, creeremo un collegamento a un rapporto per renderlo accessibile tramite un elenco di destinatari.
 
-1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL Create a link to an existing report]** nella procedura guidata di creazione del rapporto.
+1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL Create a link to an existing report]** nella procedura guidata di creazione dei rapporti.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. Seleziona il rapporto a cui desideri creare un collegamento utilizzando l’elenco a discesa . In questo esempio, selezioneremo il rapporto **Suddivisione per paese** .
+1. Seleziona il rapporto a cui desideri creare un collegamento utilizzando l’elenco a discesa . In questo esempio, selezioneremo il **Disaggregazione per paese** rapporto.
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -103,36 +103,36 @@ Ad esempio, creeremo un collegamento a un rapporto per renderlo accessibile tram
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. Pubblica il rapporto.
-1. Vai a uno degli elenchi dei destinatari e fai clic sul collegamento **[!UICONTROL Reports]** : il rapporto appena creato è accessibile.
+1. Vai a uno degli elenchi dei destinatari e fai clic su **[!UICONTROL Reports]** link: il rapporto appena creato è accessibile.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 
 ## Anteprima del rapporto {#preview-of-the-report}
 
-Prima di pubblicare il rapporto, accertati che sia visualizzato correttamente nella scheda **[!UICONTROL Preview]** .
+Prima di pubblicare il rapporto, accertati che sia visualizzato correttamente nel **[!UICONTROL Preview]** scheda .
 
 ![](assets/s_ncs_advuser_report_preview_01.png)
 
-Per visualizzare l’anteprima del rapporto, seleziona l’opzione **[!UICONTROL Global]** o **[!UICONTROL Selection]** .
+Per visualizzare l’anteprima del rapporto, seleziona la **[!UICONTROL Global]** o **[!UICONTROL Selection]** opzione .
 
-Queste due opzioni vengono selezionate in base alle impostazioni di visualizzazione del rapporto. Se l&#39;impostazione di visualizzazione è **[!UICONTROL Global]**, è necessario selezionare l&#39;opzione di anteprima **[!UICONTROL Global]**. Se le impostazioni di visualizzazione sono **[!UICONTROL Single selection]** o **[!UICONTROL Multiple selection]**, è necessario selezionare l&#39;opzione di anteprima **[!UICONTROL Selection]**.
+Queste due opzioni vengono selezionate in base alle impostazioni di visualizzazione del rapporto. Se l&#39;impostazione di visualizzazione è **[!UICONTROL Global]**, è necessario selezionare il **[!UICONTROL Global]** opzione di anteprima. Se le impostazioni di visualizzazione sono **[!UICONTROL Single selection]** o **[!UICONTROL Multiple selection]**, **[!UICONTROL Selection]** l’opzione anteprima deve essere selezionata.
 
-Per ulteriori informazioni, consulta [Contesto di visualizzazione del rapporto](#report-display-context).
+Per ulteriori informazioni, consulta [Contesto della visualizzazione del rapporto](#report-display-context).
 
-Le impostazioni specifiche consentono di controllare gli errori. L&#39;impostazione **_uuid** si trova nell&#39;URL del report. È possibile aggiungere le impostazioni **&amp;_preview** o **&amp;_debug**.
+Le impostazioni specifiche consentono di controllare gli errori. La **_uuid** si trova nell&#39;URL del report. Puoi aggiungere la **&amp;_preview** o **&amp;_debug** impostazioni.
 
-Per ulteriori informazioni su queste impostazioni, fare riferimento alla sezione **Proprietà dei moduli web predefiniti** del capitolo [Moduli web](../../web/using/about-web-forms.md).
+Per ulteriori informazioni su queste impostazioni, consulta **Definizione delle proprietà del modulo web** della sezione [Moduli web](../../web/using/about-web-forms.md) capitolo.
 
 ## Pubblicazione del rapporto {#publishing-the-report}
 
-La pubblicazione del rapporto è obbligatoria al fine di condividerli con altri operatori e visualizzarli nell’elenco dei rapporti disponibili (consulta anche [Contesto di visualizzazione del rapporto](#report-display-context)). Questa operazione deve essere eseguita nuovamente ogni volta che il rapporto viene modificato.
+La pubblicazione del rapporto è obbligatoria per condividerlo con altri operatori e visualizzarlo nell’elenco dei rapporti disponibili (consulta anche [Contesto della visualizzazione del rapporto](#report-display-context)). Questa operazione deve essere eseguita nuovamente ogni volta che il rapporto viene modificato.
 
 1. Apri la procedura guidata di pubblicazione facendo clic su **[!UICONTROL Publish]** nella barra degli strumenti.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. Fai clic su **[!UICONTROL Start]** per pubblicare.
+1. Fai clic su **[!UICONTROL Start]** da pubblicare.
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
-1. Fai clic sull’icona **[!UICONTROL Enlarge]** per aprire il rapporto in un browser web.
+1. Fai clic sul pulsante **[!UICONTROL Enlarge]** per aprire il rapporto in un browser web.

@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
-L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne al fine di inviare il messaggio migliore al pubblico di destinazione.
+L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne, al fine di inviare il messaggio migliore al pubblico di destinazione.
 
 **Pressione** regole, per gestire l’affaticamento del marketing, ad esempio, per limitare il numero di lettere da inviare a una popolazione a due, per selezionare la comunicazione che meglio corrisponde agli interessi di un gruppo di abbonati, per evitare di inviare un SMS a un cliente insoddisfatto, ecc.
 
@@ -88,7 +88,7 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
    * La sezione superiore di questa scheda ti consente di limitare i destinatari interessati.
    * La sezione inferiore di questa scheda ti consente di filtrare i messaggi da conteggiare.
 
-      In the following example, only recipients saved in the **NewContacts** folder are taken into account and deliveries starting with **Newsletter** are concerned.
+      Nell’esempio seguente, solo i destinatari salvati nel **NuoviContatti** vengono prese in considerazione e le consegne che iniziano con **Newsletter** sono preoccupati.
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. La **[!UICONTROL Typologies]** La scheda ti consente di visualizzare le tipologie di campagna che applicano questa regola o di collegare la regola a una o più tipologie esistenti. Per ulteriori informazioni, consulta [Applicazione delle tipologie](about-campaign-typologies.md#applying-typologies).
@@ -109,7 +109,7 @@ I valori di soglia possono essere costanti o calcolati da una formula con variab
 
 **Esempio:**
 
-You can index the number of authorized messages according to the segment to which the recipient belongs. Ciò significa che un destinatario appartenente al segmento web può ricevere più messaggi rispetto ad altri destinatari. Un **[!UICONTROL Iif (@origin='Web', 5, 3)]** la formula di tipo autorizza la consegna di 5 messaggi ai destinatari e di 3 per altri segmenti. La configurazione sarà la seguente:
+Puoi indicizzare il numero di messaggi autorizzati in base al segmento a cui appartiene il destinatario. Ciò significa che un destinatario appartenente al segmento web può ricevere più messaggi rispetto ad altri destinatari. Un **[!UICONTROL Iif (@origin='Web', 5, 3)]** la formula di tipo autorizza la consegna di 5 messaggi ai destinatari e di 3 per altri segmenti. La configurazione sarà la seguente:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
@@ -224,7 +224,7 @@ Per identificare clienti e potenziali clienti, utilizza la **[!UICONTROL Status]
 
 Per creare la regola, esegui i seguenti passaggi:
 
-1. Create a new **Pressure** type typology rule.
+1. Crea un nuovo **Pressione** digitare la regola di tipologia.
 1. Modifica le **[!UICONTROL Pressure]** scheda: in **[!UICONTROL Maximum number of messages]** vogliamo creare una formula per calcolare la soglia in base a ciascun destinatario. Seleziona la **[!UICONTROL Depends on the recipient]** nel **[!UICONTROL Threshold type]** campo , quindi fai clic su **[!UICONTROL Edit expression]** a destra del **[!UICONTROL Formula]** campo .
 
    Fai clic sul pulsante **[!UICONTROL Advanced parameters]** per definire la formula di calcolo.
@@ -356,9 +356,9 @@ Ora crea e configura un flusso di lavoro per ogni consegna su cui desideri appli
 
    ![](assets/campaign_opt_pressure_example_4.png)
 
-   Affinché le esclusioni della regola di pressione siano implementate correttamente, assicurati di impostare la data e l’ora di estrazione prima della data e dell’ora di contatto, nonché prima che l’arbitrato notturno venga riapplicato. For more on this, refer to [Exclusion after arbitration](#exclusion-after-arbitration).
+   Affinché le esclusioni della regola di pressione siano implementate correttamente, assicurati di impostare la data e l’ora di estrazione prima della data e dell’ora di contatto, nonché prima che l’arbitrato notturno venga riapplicato. Per ulteriori informazioni, consulta [Esclusione dopo arbitrato](#exclusion-after-arbitration).
 
-1. Unselect the **[!UICONTROL Confirm the delivery before sending]** option and save your changes.
+1. Deseleziona la **[!UICONTROL Confirm the delivery before sending]** e salva le modifiche.
 1. Procedi in modo simile per ogni consegna che desideri inviare. Assicurati di impostare il peso desiderato per ogni consegna.
 1. Esegui i flussi di lavoro pertinenti per preparare e inviare le consegne.
 
@@ -398,10 +398,10 @@ Dato che un’e-mail è già stata inviata ai destinatari interessati all’iniz
    <td> 10<br /> </td> 
    <td> 4 del pomeriggio<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 
-   <td> 2pm<br /> </td> 
-   <td> Nightly<br /> </td> 
+   <td> 2 del pomeriggio<br /> </td> 
+   <td> Notturno<br /> </td> 
    <td> Inviato<br /> </td> 
-   <td> 9am (next day)<br /> </td> 
+   <td> 9 (giorno successivo)<br /> </td> 
   </tr> 
  </tbody> 
 </table>

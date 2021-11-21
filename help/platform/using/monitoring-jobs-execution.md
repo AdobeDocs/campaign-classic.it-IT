@@ -21,10 +21,10 @@ Puoi tenere traccia dell’esecuzione dei processi di importazione ed esportazio
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* La scheda **[!UICONTROL Journal]** ti consente di esaminare i messaggi di log relativi all’esecuzione.
-* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Vedi [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* La **[!UICONTROL Journal]** La scheda ti consente di esaminare i messaggi di log relativi all’esecuzione.
+* La **[!UICONTROL Rejects]** contiene i record rifiutati. Vedi [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
-Nella scheda **[!UICONTROL General]** , il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
+In **[!UICONTROL General]** scheda **[!UICONTROL Status]** campo indica lo stato corrente di un processo.
 
 Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e le relative icone sono elencati di seguito:
 
@@ -40,7 +40,7 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Annulla**
 
-   Fai clic sul pulsante **[!UICONTROL Cancel]** : il processo in corso viene annullato.
+   Fai clic sul pulsante **[!UICONTROL Cancel]** pulsante: il processo in corso viene annullato.
 
 * **Annullamento in corso**
 

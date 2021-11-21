@@ -25,15 +25,15 @@ I flussi di lavoro possono essere un modo utile per automatizzare alcuni dei pro
 
 I dati inviati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati predisposti e strutturati.
 
-Questo elenco potrebbe essere stato creato direttamente in Adobe Campaign o importato dall’opzione **[!UICONTROL Import a list]** . Per ulteriori informazioni su questa opzione, consulta questa [pagina](../../platform/using/about-generic-imports-exports.md).
+Questo elenco potrebbe essere stato creato direttamente in Adobe Campaign o importato da **[!UICONTROL Import a list]** opzione . Per ulteriori informazioni su questa opzione, consulta questo [page](../../platform/using/about-generic-imports-exports.md).
 
-Per ulteriori informazioni sull&#39;utilizzo dell&#39;attività di lettura dell&#39;elenco in un flusso di lavoro, consulta [questa pagina](../../workflow/using/read-list.md).
+Per ulteriori informazioni sull’utilizzo dell’attività di lettura dell’elenco in un flusso di lavoro, consulta [questa pagina](../../workflow/using/read-list.md).
 
 ### Caricare dati da un file {#loading-data-from-a-file}
 
 I dati elaborati in un flusso di lavoro possono essere estratti da un file strutturato in modo che possano essere importati in Adobe Campaign.
 
-Una descrizione dell’attività di caricamento dei dati si trova nella sezione [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) .
+Una descrizione dell’attività di caricamento dei dati si trova nella sezione [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) sezione .
 
 Esempio di file strutturato da importare:
 
@@ -51,4 +51,4 @@ Una volta raccolti i dati, puoi utilizzarli nei flussi di lavoro, ad esempio per
 
 I flussi di lavoro possono essere un modo utile per automatizzare alcuni dei processi di esportazione o per esportare set precisi di dati dopo aver utilizzato alcune delle attività di gestione dei dati disponibili per trasformare i dati.
 
-Le operazioni di esportazione vengono eseguite utilizzando un **[!UICONTROL Data extraction (file) activity]**. Per ulteriori informazioni su come configurare e utilizzare l&#39;attività, consulta [questa pagina](../../workflow/using/extraction--file-.md).
+Le operazioni di esportazione vengono eseguite utilizzando un **[!UICONTROL Data extraction (file) activity]**. Per ulteriori informazioni su come configurare e utilizzare l’attività, consulta [questa pagina](../../workflow/using/extraction--file-.md).

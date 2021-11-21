@@ -23,7 +23,7 @@ Possono essere visualizzati messaggi di errore come i seguenti (in particolare n
 
 La causa è la seguente:
 
-Adobe Campaign genera file temporanei sotto **/tmp**, quindi li rinomina per spostarli in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico a **/var/nl6**) corrispondono a diversi dispositivi. Il comando **df** viene utilizzato per la verifica.
+Adobe Campaign genera file temporanei in **/tmp**, quindi rinomine per spostarle in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico con **/var/nl6**) corrispondono a dispositivi diversi. La **df** viene utilizzato per la verifica.
 
 Per risolvere questo problema, i file temporanei devono essere generati nello stesso dispositivo della destinazione.
 

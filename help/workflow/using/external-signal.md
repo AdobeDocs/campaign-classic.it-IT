@@ -17,19 +17,19 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-L’attività **External signal** ti consente di attivare l’esecuzione di un set di attività in un flusso di lavoro per una pianificazione.
+La **Segnale esterno** consente di attivare l’esecuzione di un insieme di attività in un flusso di lavoro in base a una pianificazione.
 
-Quando un&#39;attività &quot;External signal&quot; viene attivata, viene messa in pausa indefinitamente o fino alla fine del periodo di tempo specificato. La sua transizione è attivata dalla chiamata SOAP **PostEvent(sessionToken, workflowId, attività, transizione, parametri, complete).** Il  **[!UICONTROL complete]** parametro consente di completare l’attività, pertanto non reagisce alle chiamate successive.
+Quando un&#39;attività &quot;External signal&quot; viene attivata, viene messa in pausa indefinitamente o fino alla fine del periodo di tempo specificato. La relativa transizione è attivata dalla chiamata SOAP **PostEvent(sessionToken, workflowId, attività, transizione, parametri, completo).** La **[!UICONTROL complete]** consente di completare l’attività, pertanto non reagisce alle chiamate successive.
 
 Fare riferimento alla documentazione online relativa alle chiamate SOAP per ulteriori informazioni sulla funzione PostEvent.
 
-Puoi configurare questa attività per definire gli eventi se non viene ricevuto alcun segnale. A questo scopo, modifica l’attività e fai clic sulla scheda **[!UICONTROL Expiration]** . Fai clic sul pulsante **[!UICONTROL Insert]** per creare e configurare un evento.
+Puoi configurare questa attività per definire gli eventi se non viene ricevuto alcun segnale. A questo scopo, modifica l’attività e fai clic sul pulsante **[!UICONTROL Expiration]** scheda . Fai clic sul pulsante **[!UICONTROL Insert]** per creare e configurare un evento.
 
 ![](assets/edit_signal.png)
 
-La configurazione delle scadenze è descritta in [Scadenze](defining-approvals.md).
+La configurazione delle scadenze è descritta in [Scadenza](defining-approvals.md).
 
-Il campo **Ritardo** consente di specificare un ritardo di scadenza nelle unità scelte. Vedere [Wait](wait.md) .
+La **Ritardo** consente di specificare un ritardo di scadenza nelle unità scelte. Vedi [Wait](wait.md).
 
 Ogni riga rappresenta un tipo di scadenza e coincide con una transizione.
 

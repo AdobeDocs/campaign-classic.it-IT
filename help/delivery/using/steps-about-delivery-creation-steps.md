@@ -19,21 +19,21 @@ ht-degree: 9%
 
 I passaggi chiave per la creazione di una consegna sono i seguenti:
 
-1. **Crea e identifica la consegna**. [Leggi tutto](steps-create-and-identify-the-delivery.md)
+1. **Creare e identificare la consegna**. [Leggi tutto](steps-create-and-identify-the-delivery.md)
 
-1. **Definisci il contenuto** della consegna. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
+1. **Definire il contenuto della consegna**. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
    * [Canale e-mail](defining-the-email-content.md)
    * [Canale SMS](sms-create.md#defining-the-sms-content)
    * [Canale direct mailing](defining-the-direct-mail-content.md)
    * [Canale applicazione mobile](about-mobile-app-channel.md)
 
-1. **Definire la popolazione** target. [Leggi tutto](steps-defining-the-target-population.md)
+1. **Definire la popolazione target**. [Leggi tutto](steps-defining-the-target-population.md)
 
 1. **Inviare la consegna**. [Leggi tutto](steps-sending-the-delivery.md)
 
-1. **Monitora la consegna**  (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) .
+1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta la sezione [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) sezioni.
 
 >[!NOTE]
 >
->I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (consulta [Selezione di destinatari esterni](steps-defining-the-target-population.md#selecting-external-recipients)).
+>I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i loro profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi [Selezione di destinatari esterni](steps-defining-the-target-population.md#selecting-external-recipients)).

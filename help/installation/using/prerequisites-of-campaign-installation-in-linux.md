@@ -21,16 +21,16 @@ ht-degree: 1%
 
 Questa sezione descrive i passaggi preliminari delle configurazioni necessari prima di installare Adobe Campaign.
 
-La configurazione tecnica e software necessaria per l&#39;installazione di Adobe Campaign è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La configurazione tecnica e software necessaria per l’installazione di Adobe Campaign è descritta nella sezione [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
-* Apache, fare riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
-* Java JDK e OpenJDK, fai riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
-* Librerie, fare riferimento a [Librerie](#libraries),
+* Apache, fai riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
+* Java JDK e OpenJDK, fai riferimento a [Kit di sviluppo Java - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
+* Librerie, fai riferimento a [Librerie](#libraries),
 * Livelli di accesso al database, fare riferimento a [Livelli di accesso al database](#database-access-layers),
 * LibreOffice, fare riferimento a [Installazione di LibreOffice per Debian](#installing-libreoffice-for-debian) e [Installazione di LibreOffice per CentOS](#installing-libreoffice-for-centos),
-* Font, fai riferimento a [Font per statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
+* Font, fare riferimento a [Font per le statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
 
 >[!NOTE]
 >
@@ -42,17 +42,17 @@ Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie ri
 
 * La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, tranne per alcuni kernel per i quali il supporto Xen è stato disabilitato.
 
-   Per verificare questo, puoi utilizzare il **nome di annullamento -a | grep xen**, ad esempio.
+   Per verificare questo, puoi utilizzare il **uname -a | xen grep** ad esempio.
 
    Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
 
-* OpenSSL deve contenere la versione 0.9.8 **o** 1.0 **di OpenSSL.**
+* Devi avere **versione 0.9.8** o **1,0** di OpenSSL.
 
    Per le distribuzioni RHEL 7, è richiesta la versione 1.0 di OpenSSL.
 
-* Per utilizzare Adobe Campaign, è necessario che sia installata la libreria **libicu** .
+* Per utilizzare Adobe Campaign, è necessario disporre dei **libicu** libreria installata.
 
-   Sono supportate le seguenti versioni di **libicu** (32 bit o 64 bit):
+   Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
 
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
@@ -80,7 +80,7 @@ A questo scopo, accedi come root e immetti il seguente comando:
 echo 0 >/selinux/enforce
 ```
 
-Inoltre, nel file **/etc/sysconfig/httpd**, è stata aggiunta la seguente riga per fare riferimento allo script di configurazione dell&#39;ambiente Adobe Campaign:
+Oltre a ciò, nella **/etc/sysconfig/httpd** file, è stata aggiunta la riga seguente per fare riferimento allo script di configurazione dell’ambiente Adobe Campaign:
 
 ```
 . ~neolane/nl6/env.sh
@@ -90,7 +90,7 @@ In RHEL e CentOS, quando SELinux è abilitato, sono stati rilevati problemi di c
 
 **Applica il seguente processo:**
 
-* Modifica il file **/etc/selinux/config**
+* Modificare il file **/etc/selinux/config**
 
 * Modificare la linea SELINUX come segue:
 
@@ -166,15 +166,15 @@ Con CentOS sono necessarie le seguenti configurazioni:
 
 I livelli di accesso per il motore di database utilizzato devono essere installati sul server ed essere accessibili tramite l’account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
-La versione pilota supportata è descritta in [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La versione pilota supportata è descritta nel [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
-Controlla anche la sezione generale [Database](../../installation/using/database.md).
+Controlla anche il generale [Database](../../installation/using/database.md) sezione .
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
 
-L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
+L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione del corrispondente **pgcrypto** librerie.
 
 ###  Oracle {#oracle}
 
@@ -184,7 +184,7 @@ Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so*
 
 >[!NOTE]
 >
->Se hai già installato il client Oracle ma l’ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, è possibile aggiungere informazioni mancanti allo script **nl6/customer.sh** Per ulteriori informazioni, consulta [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Se hai già installato il client Oracle ma l’ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, puoi aggiungere informazioni mancanti al **nl6/customer.sh** script Per ulteriori informazioni, consulta [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Risoluzione dei problemi e best practice**
 
@@ -196,13 +196,13 @@ Se nella console client si notano ritardi imprevisti (una o più ore) nei regist
 
    Sono stati identificati vari problemi durante l’utilizzo della versione Oracle Instant Client . Inoltre, è impossibile modificare il file Timezone sul client istantaneo.
 
-1. Assicurati che le **versioni client** e la **versione del server di database** siano le **stesse**.
+1. Assicurati che il **versione client** e **versione del server di database** sono **stesso**.
 
    È noto che la combinazione di versioni nonostante la matrice di compatibilità di Oracle e la raccomandazione per l’allineamento delle versioni client e server causa problemi.
 
    Controlla anche il valore ORACLE_HOME per assicurarti che punti alla versione client prevista (nel caso in cui sul computer siano installate diverse versioni).
 
-1. Assicurati che il client e il server utilizzino lo stesso file **timezone**.
+1. Assicurati che il client e il server utilizzino lo stesso **file timezone**.
 
 ### DB2 {#db2}
 

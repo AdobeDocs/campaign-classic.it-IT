@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito viene installato con il modulo **Mid-Sourcing platform** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../installation/using/mid-sourcing-deployment.md).
+Il flusso di lavoro descritto di seguito è installato con **Piattaforma di mid-sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

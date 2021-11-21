@@ -19,7 +19,7 @@ ht-degree: 1%
 
 In questa sezione sono elencati i problemi comuni che potresti riscontrare durante l’invio delle consegne e come risolverli.
 
-Inoltre, assicurati di seguire le best practice e la checklist descritte in [questa pagina](delivery-performances.md) per garantire che le consegne funzionino correttamente.
+Inoltre, assicurati di seguire le best practice e la checklist dettagliata in [questa pagina](delivery-performances.md) per garantire il corretto svolgimento delle consegne.
 
 **Argomenti correlati:**
 
@@ -29,17 +29,17 @@ Inoltre, assicurati di seguire le best practice e la checklist descritte in [que
 
 ## Consegne lente {#slow-deliveries}
 
-Dopo aver fatto clic sul pulsante **[!UICONTROL Send]** , la consegna sembra richiedere più tempo del solito. Questo può essere causato da diversi elementi:
+Dopo aver fatto clic sul pulsante **[!UICONTROL Send]** pulsante, la consegna sembra richiedere più tempo del solito. Questo può essere causato da diversi elementi:
 
 * Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un elenco Bloccati. In questo caso, controlla i tuoi registri di trasmissione e consulta [questa sezione](about-deliverability.md).
 
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente, potrebbe verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Per informazioni sulle linee guida per i contenuti, consulta Adobe Campaign [Best practice per le consegne](delivery-best-practices.md) .
+* La consegna potrebbe essere troppo grande per essere elaborata rapidamente, potrebbe verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Consulta Adobe Campaign [Best practice per le consegne](delivery-best-practices.md) per informazioni sulle linee guida per i contenuti.
 
 * È possibile che si sia verificata una limitazione nell’MTA di Adobe Campaign. Ciò è causato da:
 
-   * Messaggi inviati (**[!UICONTROL quotas met]** messaggio): sono state soddisfatte le quote dichiarate dalle regole dichiarative MX definite in Campaign. Per ulteriori informazioni su questo messaggio, consulta [questa pagina](deliverability-faq.md). Per ulteriori informazioni sulle regole MX, consulta [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Messaggi aperti (**[!UICONTROL quotas met]** messaggio): sono state soddisfatte le quote dichiarate dalle regole dichiarative MX definite in Campaign. Per ulteriori informazioni su questo messaggio, consulta [questa pagina](deliverability-faq.md). Per ulteriori informazioni sulle regole MX, consulta [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
 
-   * Messaggi inviati (**[!UICONTROL dynamic flow control]** messaggio): L’MTA di Campaign ha rilevato errori durante il tentativo di inviare messaggi per un determinato ISP, il che causa un rallentamento per evitare una densità di errore troppo elevata e quindi un potenziale elenco Bloccati.
+   * Messaggi aperti (**[!UICONTROL dynamic flow control]** messaggio): L’MTA di Campaign ha rilevato errori durante il tentativo di inviare messaggi per un determinato ISP, il che causa un rallentamento per evitare una densità di errore troppo elevata e quindi un potenziale elenco Bloccati.
 
 * Un problema di sistema può impedire ai server di interagire tra loro: questo può rallentare l’intero processo di invio. Controlla i server per assicurarti che non ci siano problemi di memoria o di risorse che possono influenzare Campaign nel processo di ottenimento, ad esempio, dei dati di personalizzazione.
 
@@ -61,9 +61,9 @@ I registri di consegna sono la chiave per capire perché una consegna non è riu
    Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
    ```
 
-   La causa di questo problema è quasi sempre una personalizzazione all’interno dell’HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
+   La causa di questo problema è quasi sempre una personalizzazione all’interno di HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
 
-   Per correggere questo problema, è necessario rivedere il flusso di lavoro e il contenuto di consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, rimuovere la chiamata a questa tabella nell’HTML o fissare la mappatura alla consegna sarebbe il percorso della risoluzione.
+   Per correggere questo problema, è necessario rivedere il flusso di lavoro e il contenuto di consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, rimuovere la chiamata a questa tabella in HTML o correggere la mappatura alla consegna sarebbe il percorso della risoluzione.
 
 * Nel modello di distribuzione di mid-sourcing , il seguente messaggio può essere visualizzato nei log di consegna:
 
@@ -85,7 +85,7 @@ I registri di consegna sono la chiave per capire perché una consegna non è riu
 
    Di solito, questo errore significa che c&#39;è un campo o un blocco di personalizzazione all&#39;interno dell&#39;e-mail che ha più di un valore per il destinatario. Viene utilizzato un blocco di personalizzazione che recupera più record per un particolare destinatario.
 
-   Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per ciascuno di questi campi. Puoi anche utilizzare un’attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell’attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
+   Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per ciascuno di questi campi. È inoltre possibile utilizzare un **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell’attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
 
 * Alcune consegne possono non riuscire con un errore &quot;Non raggiungibile&quot; che indica:
 

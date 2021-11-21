@@ -19,7 +19,7 @@ ht-degree: 7%
 
 ## Ottimizzazione della personalizzazione delle e-mail con dati esterni {#optimizing-email-personalization-with-external-data}
 
-Puoi preelaborare la personalizzazione dei messaggi in un flusso di lavoro dedicato. Per eseguire questa operazione, utilizza l’opzione **[!UICONTROL Prepare the personalization data with a workflow]** , disponibile nella scheda **[!UICONTROL Analysis]** delle proprietà di consegna.
+Puoi preelaborare la personalizzazione dei messaggi in un flusso di lavoro dedicato. Per eseguire questa operazione, utilizza la **[!UICONTROL Prepare the personalization data with a workflow]** disponibile nella **[!UICONTROL Analysis]** scheda delle proprietà di consegna.
 
 Durante l’analisi della consegna, questa opzione crea ed esegue automaticamente un flusso di lavoro che memorizza in una tabella temporanea tutti i dati collegati alla destinazione, inclusi i dati provenienti da tabelle collegate in un database esterno.
 
@@ -29,13 +29,13 @@ Questa opzione migliora notevolmente le prestazioni durante l’esecuzione del p
 
 In più attività del flusso di lavoro Adobe Campaign, puoi utilizzare i dati memorizzati in un database esterno.
 
-* **Filtrare i dati esterni**  - La  [](../../workflow/using/targeting-data.md#selecting-data) Queryactivity ti consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/targeting-data.md#selecting-data).
+* **Filtrare dati esterni** - [Query](../../workflow/using/targeting-data.md#selecting-data) l’attività ti consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Crea sottoinsiemi** : consente di creare sottoinsiemi  [](../../workflow/using/split.md) Splitactivity. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
+* **Creare sottoinsiemi** - [Divisione](../../workflow/using/split.md) consente di creare sottoinsiemi. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
 
-* **Carica database esterno** : è possibile utilizzare i dati esterni nell&#39;attività di caricamento  [dati](../../workflow/using/data-loading--rdbms-.md)  (RDBMS). Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Carica database esterno** - Puoi utilizzare i dati esterni nella [Caricamento dati](../../workflow/using/data-loading--rdbms-.md) (RDBMS). Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/data-loading--rdbms-.md).
 
-* **Aggiunta di informazioni e collegamenti**  - L’attività  [](../../workflow/using/enrichment.md) Enrichmentactivity ti consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/enrichment.md).
+* **Aggiunta di informazioni e collegamenti** - [Arricchimento](../../workflow/using/enrichment.md) consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/enrichment.md).
 
 ## Limiti FDA {#limitations}
 

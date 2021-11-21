@@ -5,8 +5,8 @@ description: Scopri come utilizzare Campaign Explorer
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 L’elenco di esplorazione di Adobe Campaign è accessibile tramite l’icona della barra degli strumenti. Consente di accedere ad Adobe Campaign a tutte le funzionalità, alle schermate di configurazione e a una visualizzazione più dettagliata di alcuni degli elementi della piattaforma.
 
-L&#39;area di lavoro **[!UICONTROL Explorer]** è divisa in tre aree:
+La **[!UICONTROL Explorer]** l&#39;area di lavoro è divisa in tre aree:
 
 ![](assets/s_ncs_user_navigation.png)
 
@@ -37,11 +37,11 @@ La visualizzazione visualizzata è un elenco associato a uno schema e un modulo 
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Per aggiungere una nuova cartella alla struttura ad albero, fai clic con il pulsante destro del mouse sulla cartella del ramo in cui desideri inserire una cartella e seleziona **[!UICONTROL Add new folder]** . Nel menu di scelta rapida, selezionare il tipo di file da creare.
+Per aggiungere una nuova cartella alla struttura ad albero, fare clic con il pulsante destro del mouse sulla cartella del ramo in cui si desidera inserire una cartella e selezionare **[!UICONTROL Add new folder]** . Nel menu di scelta rapida, selezionare il tipo di file da creare.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-Scopri come configurare la struttura di navigazione Campaign [in questa sezione](../../configuration/using/configuration.md).
+Scopri come configurare la struttura di navigazione di Campaign [in questa sezione](../../configuration/using/configuration.md).
 
 Scopri come impostare le autorizzazioni sulle cartelle [in questa sezione](access-management-folders.md).
 
@@ -76,7 +76,7 @@ Per una navigazione e un utilizzo ottimali, l&#39;Adobe consiglia di utilizzare 
 >
 >Le risoluzioni inferiori a 1600x900 pixel non sono supportate da Adobe Campaign.
 
-Nell’area di lavoro **[!UICONTROL Explorer]**, se alcune parti della zona **[!UICONTROL Details]** sembrano troncate, espandetela utilizzando la freccia posta sopra la zona o fai clic sul pulsante **[!UICONTROL Enlarge]** .
+In **[!UICONTROL Explorer]** area di lavoro, se alcune parti **[!UICONTROL Details]** la zona sembra troncata, espandila utilizzando la freccia in alto nella zona o fai clic sul pulsante **[!UICONTROL Enlarge]** pulsante .
 
 ![](assets/s_ncs_user_resolution.png)
 

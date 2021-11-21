@@ -23,17 +23,17 @@ Oltre alle modalità di archiviazione standard comuni a tutti i moduli Web in Ad
 
 >[!CAUTION]
 >
->Questa opzione è disponibile solo per le applicazioni Web di tipo **Survey**. Non è disponibile per altri tipi di moduli web.
+>Questa opzione è disponibile per **Sondaggio** solo applicazioni Web di tipo. Non è disponibile per altri tipi di moduli web.
 
 ### Archiviazione in un campo archiviato {#storing-in-an-archived-field}
 
-È facile estendere il modello dati aggiungendo nuovi spazi di archiviazione per salvare le risposte fornite nei sondaggi. A questo scopo, seleziona l’opzione **[!UICONTROL Store answers to a question]** durante la creazione del campo di input. Fai clic sul collegamento **[!UICONTROL New field...]** e assegna le relative proprietà:
+È facile estendere il modello dati aggiungendo nuovi spazi di archiviazione per salvare le risposte fornite nei sondaggi. A questo scopo, seleziona la **[!UICONTROL Store answers to a question]** durante la creazione del campo di input. Fai clic sul pulsante **[!UICONTROL New field...]** collegare e assegnare le relative proprietà:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
 Immetti l’etichetta e il nome del campo e seleziona il tipo di campo: Testo, booleano, numero intero o decimale, data, ecc.
 
-Il tipo di campo selezionato comporta un controllo dei dati quando le risposte vengono inserite dagli utenti. Per i campi **text**, puoi aggiungere un vincolo (case, format) o un collegamento a un&#39;enumerazione esistente per forzare la selezione.
+Il tipo di campo selezionato comporta un controllo dei dati quando le risposte vengono inserite dagli utenti. Per **text** è possibile aggiungere un vincolo (case, format) o un collegamento a un&#39;enumerazione esistente per forzare la selezione.
 
 Per aggiungere un vincolo, selezionalo dall’elenco a discesa. Esistono due tipi di vincoli:
 
@@ -43,25 +43,25 @@ Per aggiungere un vincolo, selezionalo dall’elenco a discesa. Esistono due tip
 
 1. Formato dati
 
-Se questo campo viene utilizzato in un elenco, i valori dell’enumerazione possono essere recuperati automaticamente nella tabella dei valori utilizzando il collegamento **[!UICONTROL Initialize the list of values from the database]** sopra l’elenco dei valori.
+Se questo campo viene utilizzato in un elenco, i valori dell’enumerazione possono essere recuperati automaticamente nella tabella dei valori utilizzando **[!UICONTROL Initialize the list of values from the database]** sopra l’elenco dei valori.
 
-Ad esempio, puoi creare un elenco a discesa per consentire all’utente di selezionare la propria lingua nativa. Il campo archiviato corrispondente può essere associato all&#39;enumerazione **language** che contiene un elenco di lingue:
+Ad esempio, puoi creare un elenco a discesa per consentire all’utente di selezionare la propria lingua nativa. Il campo archiviato corrispondente può essere associato al **language** enumerazione contenente un elenco di lingue:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-L’icona **[!UICONTROL Edit link]** situata a destra del campo consente di modificare il contenuto di questa enumerazione:
+La **[!UICONTROL Edit link]** icona situata a destra del campo consente di modificare il contenuto di questa enumerazione:
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-Nella scheda **[!UICONTROL General]** del campo , il collegamento **[!UICONTROL Initialize the list of values from the database]** ti consente di inserire automaticamente l’elenco delle etichette offerte.
+In **[!UICONTROL General]** della scheda del campo, **[!UICONTROL Initialize the list of values from the database]** link ti consente di inserire automaticamente l&#39;elenco delle etichette offerte.
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Esempio**: immagazzinare i contratti di un destinatario in un campo
 
-Per memorizzare diversi tipi di contratti in un campo, crea un campo di input **[!UICONTROL Text]** e seleziona l’opzione **[!UICONTROL Store answers to a question]**.
+Per memorizzare diversi tipi di contratti in un campo, crea un **[!UICONTROL Text]** campo di input e seleziona la **[!UICONTROL Store answers to a question]** opzione .
 
-Fai clic sul collegamento **[!UICONTROL New field...]** e immetti le proprietà del campo . Selezionare l&#39;opzione **[!UICONTROL Multiple values]** per abilitare la memorizzazione di più valori.
+Fai clic sul pulsante **[!UICONTROL New field...]** collega e immetti le proprietà del campo . Seleziona la **[!UICONTROL Multiple values]** per abilitare la memorizzazione di più valori.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -69,7 +69,7 @@ Creare campi di ingresso per gli altri contratti e archiviare i dati nello stess
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
-Quando gli utenti approvano il sondaggio, le loro risposte saranno memorizzate nel campo **[!UICONTROL Contracts]** .
+Quando gli utenti approvano il sondaggio, le loro risposte saranno memorizzate nella **[!UICONTROL Contracts]** campo .
 
 Nel nostro esempio, per le seguenti risposte:
 
@@ -77,11 +77,11 @@ Nel nostro esempio, per le seguenti risposte:
 
 Il profilo del convenuto conterrà i quattro contratti stipulati.
 
-È possibile visualizzarli nella scheda **[!UICONTROL Answers]** del sondaggio visualizzando le colonne pertinenti.
+Possono essere visualizzati nella **[!UICONTROL Answers]** scheda del sondaggio visualizzando le colonne pertinenti.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Puoi anche filtrare i destinatari in base alle risposte per visualizzare solo gli utenti che ti interessano. A questo scopo, crea un flusso di lavoro di targeting e utilizza la casella **[!UICONTROL Survey responses]** .
+Puoi anche filtrare i destinatari in base alle risposte per visualizzare solo gli utenti che ti interessano. A questo scopo, crea un flusso di lavoro di targeting e utilizza il **[!UICONTROL Survey responses]** scatola.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -109,12 +109,12 @@ Per ciascun modulo, le risposte fornite possono essere utilizzate in campi o eti
 
 Per eseguire questa operazione:
 
-* Modifica le proprietà del sondaggio tramite il pulsante **[!UICONTROL Properties]** della scheda **[!UICONTROL Edit]** .
-* Fai clic sul collegamento **[!UICONTROL Advanced parameters]** e seleziona l’opzione **[!UICONTROL Save a copy of raw answers]** .
+* Modificare le proprietà del sondaggio tramite il **[!UICONTROL Properties]** pulsante **[!UICONTROL Edit]** scheda .
+* Fai clic sul pulsante **[!UICONTROL Advanced parameters]** e controlla il **[!UICONTROL Save a copy of raw answers]** opzione .
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-Per impostazione predefinita, è possibile abilitarla per tutti i sondaggi (questa opzione viene applicata quando il sondaggio viene pubblicato). A questo scopo, crea l’opzione **[!UICONTROL NmsWebApp_XmlBackup]** e assegnagli il valore **[!UICONTROL 1]** , come illustrato di seguito:
+Per impostazione predefinita, è possibile abilitarla per tutti i sondaggi (questa opzione viene applicata quando il sondaggio viene pubblicato). A questo scopo, crea la **[!UICONTROL NmsWebApp_XmlBackup]** opzione e assegna valore **[!UICONTROL 1]** come mostrato di seguito:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
@@ -124,7 +124,7 @@ Per impostazione predefinita, è possibile abilitarla per tutti i sondaggi (ques
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-I punteggi vengono accumulati e salvati sul lato server quando la pagina viene confermata, ad esempio quando l’utente fa clic sul pulsante **[!UICONTROL Next]** o **[!UICONTROL Finish]** .
+I punteggi vengono accumulati e salvati sul lato server quando la pagina viene confermata, ad esempio quando l’utente fa clic sul **[!UICONTROL Next]** o **[!UICONTROL Finish]** pulsante .
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ I punteggi possono essere utilizzati in test o script.
 >
 >I punteggi non possono essere utilizzati nelle condizioni di visibilità per i campi che si trovano sulla stessa pagina. Tuttavia, possono essere utilizzati nelle pagine successive.
 
-* Per utilizzare i punteggi nei test, utilizza il campo **[!UICONTROL Score]** nella formula di calcolo del test, come illustrato di seguito:
+* Per utilizzare i punteggi nei test, utilizza il **[!UICONTROL Score]** nella formula di calcolo del test, come illustrato di seguito:
 
    ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
@@ -152,7 +152,7 @@ I punteggi possono essere utilizzati in test o script.
 
    ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* Quando l&#39;utente fa clic sul pulsante **[!UICONTROL Next]**, i due valori vengono sommati.
+* Quando l&#39;utente fa clic sul pulsante **[!UICONTROL Next]** i due valori vengono sommati.
 
    ![](assets/s_ncs_admin_survey_score_exe.png)
 

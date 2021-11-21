@@ -21,7 +21,7 @@ In questo caso d’uso, confronteremo due contenuti di consegna e-mail tramite u
 
 La popolazione mirata è divisa in tre parti: due gruppi di test e la popolazione rimanente. A ogni gruppo di test viene inviata una versione diversa della consegna.
 
-Dopo la consegna, viene configurato un periodo di attesa di 5 giorni prima di raccogliere i risultati dei migliori tassi di apertura. Il contenuto della consegna con il punteggio più alto viene quindi recuperato da uno script e inviato alla popolazione che non è stata utilizzata come gruppo di test.
+Dopo la consegna, viene configurato un periodo di attesa di 5 giorni prima di raccogliere i risultati dei migliori tassi di apertura. Il contenuto della consegna con il punteggio più alto viene quindi recuperato da uno script e inviato alla popolazione non utilizzata come gruppo di test.
 
 Tieni presente che i criteri che decideranno quale consegna è la migliore possono essere modificati per soddisfare le tue esigenze. Può essere il tasso di apertura, il tasso di click-through, il tasso di abbonamento, la reattività, ecc.
 

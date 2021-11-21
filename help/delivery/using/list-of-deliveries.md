@@ -17,19 +17,19 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Puoi accedere alle consegne dall’elenco di consegna tramite il nodo **[!UICONTROL Campaign Management > Deliveries]** della struttura.
+Puoi accedere alle consegne dall’elenco di consegna tramite la **[!UICONTROL Campaign Management > Deliveries]** nodo dell&#39;albero.
 
 ![](assets/deliveries-list.png)
 
 Per impostazione predefinita, l’elenco delle consegne contiene i nomi e gli stati delle consegne create nel nodo selezionato. Mostra anche il numero di messaggi da inviare, elaborare e inviare con successo.
 
-* Il numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari interessati dopo l’analisi e prima della consegna.
-* Il numero di messaggi nella colonna **[!UICONTROL Success]** corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
-* Il numero di messaggi **[!UICONTROL Processed]** corrisponde al numero di messaggi ricevuti e al numero di messaggi con errori.
+* Numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari interessati dopo l’analisi e prima della consegna.
+* Il numero di messaggi nel **[!UICONTROL Success]** corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
+* Numero di **[!UICONTROL Processed]** corrisponde al numero di messaggi ricevuti più il numero di messaggi con errori.
 
 >[!NOTE]
 >
->Per le consegne di grandi dimensioni, è possibile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse sulla consegna. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare la procedura guidata per aggiornare queste informazioni.
+>Per le consegne di grandi dimensioni, è possibile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse sulla consegna. Seleziona **[!UICONTROL Action > Recompute delivery and tracking indicators...]** quindi utilizzare la procedura guidata per aggiornare queste informazioni.
 
 **Argomenti correlati:**
 

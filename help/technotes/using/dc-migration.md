@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Migrazione a Public Cloud
+title: Migrazione a cloud pubblico
 description: Ulteriori informazioni sulla migrazione di Campaign Classic a Public Cloud
 feature: Overview
 role: User
@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## Contesto
 
-In qualità di cliente Adobe Campaign Classic di valore, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, ci siamo resi conto del valore e dell&#39;affidabilità dell&#39;hosting dei nostri clienti nel cloud.  Come parte della nostra [iniziativa Gold Standard](../../rn/using/gold-standard.md), stiamo trasferendo tutti i nostri clienti ad Adobe Managed Services (Public Cloud on AWS) per fornire servizi migliori e più affidabili.
+In qualità di cliente Adobe Campaign Classic di valore, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, ci siamo resi conto del valore e dell&#39;affidabilità dell&#39;hosting dei nostri clienti nel cloud.  Come parte del nostro [Iniziativa Gold Standard](../../rn/using/gold-standard.md), stiamo spostando tutti i nostri clienti in Adobe Managed Services (Public Cloud on AWS) per fornire servizi migliori e più affidabili.
 
 Questo programma si prefigge tre obiettivi principali:
 
-* Affrontare le vulnerabilità di sicurezza individuate spostando l&#39;infrastruttura in un ambiente sicuro e moderno (AWS).
-* Elimina i processi di scalabilità potenzialmente ingombranti, fornisci accesso ai nostri [MTAs migliorati](../../delivery/using//sending-with-enhanced-mta.md) e migliora tutti i livelli del servizio di manutenzione.
+* Affrontare le vulnerabilità di sicurezza identificate spostando l’infrastruttura in un ambiente protetto e moderno (AWS).
+* Elimina i processi di scalabilità potenzialmente ingombranti e fornisci accesso ai nostri [MTA ottimizzati](../../delivery/using//sending-with-enhanced-mta.md) e migliorare tutti i livelli di servizio di manutenzione.
 * Prepara la tua istanza per il futuro di Adobe Campaign Classic, inclusi aggiornamenti più automatizzati e regolari che non richiederanno più risorse né tanto tempo.
 
 ### Glossario
 
-* **Aggiornamento della build** : quando il software Adobe Campaign Classic viene aggiornato al numero di build protetto più recente, ma rimane nello stesso livello di build principale/secondario. Ad esempio: Campaign v7 20.2.3 build 9182 a Campaign v7 21.2.5 build 9188. [Ulteriori informazioni](../../platform/using/faq-build-upgrade.md).
-* **MID/RT**  - Server di esecuzione dei messaggi ospitati su Adobe Cloud (MID per campagne batch e RT per messaggi unitari in tempo reale)
-* **Aggiornamento Gold Standard** : questo programma offre maggiore sicurezza, supporto migliorato, manutenzione e stabilità migliorate. Inoltre, semplifica gli aggiornamenti futuri e consente l’accesso a nuove funzionalità in Campaign.  [Ulteriori informazioni](../../rn/using/gs-overview.md).
-* **AWS**  - Servizi Web Amazon (Amazon Public Cloud)
-* **SFTP** : protocollo di trasferimento file protetto. [Ulteriori informazioni](../../platform/using/sftp-server-usage.md).
+* **Aggiornamento della build** - Quando il software Adobe Campaign Classic viene aggiornato al numero di build sicuro più recente, ma rimane nello stesso livello di build principale/secondario. Ad esempio: Campaign v7 20.2.3 build 9182 a Campaign v7 21.2.5 build 9188. [Ulteriori informazioni](../../platform/using/faq-build-upgrade.md).
+* **MID/RT** - Server di esecuzione dei messaggi ospitati su Adobe Cloud (MID per campagne batch e RT per messaggi unitari in tempo reale)
+* **Aggiornamento Gold Standard** - questo programma offre una maggiore sicurezza, un migliore supporto, una maggiore manutenzione e stabilità. Inoltre, semplifica gli aggiornamenti futuri e consente l’accesso a nuove funzionalità in Campaign.  [Ulteriori informazioni](../../rn/using/gs-overview.md).
+* **AWS** - Amazon Web Services (Amazon Public Cloud)
+* **SFTP** - Secure File Transfer Protocol (protocollo di trasferimento file protetto). [Ulteriori informazioni](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
->La migrazione di Campaign Classic v7 a Public Cloud ha un impatto sui clienti che utilizzano solo **Adobe Managed Services**.
+>La migrazione di Campaign Classic v7 a Public Cloud ha un impatto sui clienti che utilizzano **Adobe Managed Services** solo.
 
 
 ## Vantaggi
@@ -80,34 +80,34 @@ La migrazione ad Adobe Managed Services (Public Cloud) avverrà nel 2020/2021 pe
 
 Per avviare questo sforzo, gli account che richiedono questa migrazione riceveranno una comunicazione e-mail dall’Adobe che fornisce una timeline e l’accesso alla documentazione. Questa sarà la notifica della pianificazione della migrazione dell&#39;account.
 
-È possibile avviare una migrazione aprendo [un nuovo ticket di assistenza clienti](https://experienceleague.adobe.com/?support-solution=Campaign#support). Utilizza l’oggetto &quot;Migrare ad AWS&quot;.
+È possibile avviare una migrazione tramite [apertura di un nuovo ticket di assistenza clienti](https://experienceleague.adobe.com/?support-solution=Campaign#support). Utilizza l’oggetto &quot;Migrazione ad AWS&quot;.
 
 ### Questa migrazione è obbligatoria?
 
-Questa migrazione al cloud è il **primo passaggio alla [certificazione Gold Standard](../../rn/using/gs-overview.md)** delle istanze Adobe Campaign. Questa migrazione è obbligatoria se ti trovi in un Data Center che non è Public Cloud (AWS).
+Questa migrazione al cloud è **primo passo del [Certificazione Gold Standard](../../rn/using/gs-overview.md)** delle istanze Adobe Campaign. Questa migrazione è obbligatoria se ti trovi in un Data Center che non è Public Cloud (AWS).
 
-Il cloud Adobe Managed Services è ospitato in Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
+Il cloud Adobe Managed Services è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe pianifica di disattivare il Data Center legacy. Le istanze Adobe Campaign in esecuzione devono essere trasferite al nuovo Data Center di riferimento, AWS.
 
 Questo è un percorso critico in avanti, in quanto la posizione corrente potrebbe essere esposta a **vulnerabilità di sicurezza e prestazioni**.
 
-Inoltre, questa migrazione è ora un **prerequisito per qualsiasi futuro aggiornamento Build** del tuo Adobe Campaign. L’aggiornamento della build non è più possibile in Data Center legacy.
+Inoltre, questa migrazione è ora un **prerequisito per qualsiasi aggiornamento della build futuro** del tuo Adobe Campaign. L’aggiornamento della build non è più possibile in Data Center legacy.
 
 Adobe si impegna a proteggere i tuoi dati e a tenerti traccia del futuro di Adobe Campaign. Abbiamo bisogno del vostro partenariato per renderlo un successo congiunto!
 
 
-**Abbiamo organizzato un** team di rappresentanti dell’Assistenza clienti dedicati, responsabili del successo dei clienti, product manager, ingegneri, specialisti di TechOps e consulenti di prodotto per assistere e garantire che l’esperienza sia fluida e fluida. Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
+**Abbiamo organizzato un team** di rappresentanti dell’Assistenza clienti dedicati, responsabili del successo dei clienti, responsabili di prodotto, ingegneri, specialisti di TechOps e consulenti di prodotto per assistere e garantire che l’esperienza sia fluida e fluida. Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
 
 Abbiamo investito un enorme sforzo nello sviluppo di tecnologie che rendano questa migrazione rapida, continua e sicura.
 
 ### Vincoli
 
-* La migrazione verrà effettuata con un tempo di inattività inevitabile della piattaforma. L&#39;obiettivo di questo piano è quello di ridurre al minimo i tempi di inattività.
+* La migrazione verrà effettuata con un tempo di inattività inevitabile della piattaforma. L&#39;obiettivo di questo piano è di ridurre al minimo i tempi di inattività.
 * Modifica IP per le integrazioni di dati.
 * Incremento del recapito messaggi dei nuovi IP di invio. Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza della rampa iniziale che viene fatta durante il go-live.
 
-Ulteriori informazioni nella migrazione di Campaign alle [Domande frequenti su Public Cloud](dc-migration-faq.md).
+Ulteriori informazioni sulla migrazione di Campaign a [Domande frequenti su Public Cloud](dc-migration-faq.md).
 
 
 ## Certificazione Percorsi to Gold Standard
@@ -147,7 +147,7 @@ In generale, ciò significa che il cliente deve controllare eventuali restrizion
 
 **Server Campaign**
 
-I server Campaign esistenti (in realtà i contenitori) verranno spostati in Public Cloud (AWS) con un approccio &quot;incremento e cambiamento&quot;. In altre parole, non sarà necessaria alcuna nuova installazione del server, ma l&#39;intero server verrà trasferito al nuovo data center. L&#39;operazione richiede solo una riconfigurazione tecnica di basso livello.
+I server Campaign esistenti (in realtà i contenitori) verranno spostati in Public Cloud (AWS) con un approccio di tipo &quot;incremento e cambiamento&quot;. In altre parole, non sarà necessaria alcuna nuova installazione del server, ma l&#39;intero server verrà trasferito al nuovo data center. L&#39;operazione richiede solo una riconfigurazione tecnica di basso livello.
 
 **Nomi server**
 
@@ -170,8 +170,8 @@ Adobe fornirà lo stesso numero di IP nel nuovo data center.
 
 L’espansione dei nuovi IP può iniziare non appena viene eseguito il provisioning dei nuovi IP.
 
-**Pulizia delle applicazioniIl trasferimento**
-dei dati tra i centri dati è sul percorso critico del downtime.
+**Pulizia dell’applicazione**
+Il trasferimento dei dati tra i centri dati è sul percorso critico del downtime.
 
 I dati vengono memorizzati in due modi:
 
@@ -206,7 +206,7 @@ Dopo la migrazione al nuovo ambiente, l&#39;applicazione verrà riavviata progre
 
 **Eliminazione delle istanze nel Data Center legacy**
 
-Una volta completata la migrazione dell’applicazione, non è previsto di eseguire nuovamente alcun processo nel data center legacy. Ci aspettiamo che tutti i dati del data center legacy possano essere cancellati, ad eccezione dei backup temporanei, fino a quando i processi di backup pianificati non saranno eseguiti su Public Cloud (AWS).
+Una volta completata la migrazione dell’applicazione, non è previsto alcun piano per eseguire nuovamente alcun processo nel data center legacy. Ci aspettiamo che tutti i dati del data center legacy possano essere cancellati, ad eccezione dei backup temporanei, fino a quando i processi di backup pianificati non saranno eseguiti su Public Cloud (AWS).
 
 **Delega DNS**
 

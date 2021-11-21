@@ -41,13 +41,13 @@ Consente di definire i campi che creano un join tra tabelle SQL.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-5}
 
-È possibile utilizzare un elemento `<join>` solo se l’elemento principale `<element>` è di tipo &quot;link&quot;. Ciò significa che l’attributo &quot;@type=link&quot; deve essere dichiarato per l’elemento padre.
+A `<join>`  può essere utilizzato solo se l’elemento principale  `<element>`  è di tipo &quot;link&quot;. Ciò significa che l’attributo &quot;@type=link&quot; deve essere dichiarato per l’elemento padre.
 
-Non è necessario specificare il nome e lo spazio dei nomi della tabella remota nell&#39;elemento `<join>`. È necessario specificarli nell&#39;elemento padre `<element>`.
+Non è necessario specificare il nome e lo spazio dei nomi della tabella remota nel `<join>`  elemento. Devono essere specificati nella padre  `<element>`.
 
 Per convenzione, i collegamenti sono definiti alla fine dello schema.
 
-Se l’elemento `<join>` non è specificato quando è definito l’elemento del tipo di collegamento, il collegamento verrà posizionato automaticamente sulle chiavi primarie di entrambe le tabelle.
+Se la `<join>` non viene specificato quando l’elemento del tipo di collegamento è definito, il collegamento verrà posizionato automaticamente sulle chiavi primarie di entrambe le tabelle.
 
 ## Descrizione attributo {#attribute-description-7}
 

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Un&#39;attività **Alert** invia un messaggio a un gruppo di operatori. Funziona allo stesso modo di un’attività di approvazione, ma non è prevista alcuna risposta in questo caso.
+Un **Avviso** l’attività invia un messaggio a un gruppo di operatori. Funziona allo stesso modo di un’attività di approvazione, ma non è prevista alcuna risposta in questo caso.
 
 ![](assets/edit_alerte.png)
 

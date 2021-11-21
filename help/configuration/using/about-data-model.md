@@ -25,7 +25,7 @@ Adobe Campaign si basa su un database relazionale contenente tabelle collegate t
 
 ### Tabella destinatari {#recipient-table}
 
-Il modello dati si basa su una tabella principale che è per impostazione predefinita la tabella Destinatario (**NmsRecipient**). Questa tabella consente di memorizzare tutti i profili di marketing.
+Il modello dati si basa su una tabella principale che per impostazione predefinita è la tabella Destinatario (**NmsRecipient**). Questa tabella consente di memorizzare tutti i profili di marketing.
 
 Per ulteriori informazioni sulla tabella Destinatario, consulta [questa sezione](#default-recipient-table).
 
@@ -38,12 +38,12 @@ Il modello dati include anche una parte dedicata all’archiviazione di tutte le
 Un’altra parte del modello dati consente di memorizzare temporaneamente tutti i registri associati all’esecuzione delle campagne.
 
 I registri di consegna sono tutti i messaggi inviati a destinatari o dispositivi su tutti i canali. La tabella dei registri di consegna principale (**NmsBroadLog**) contiene i registri di consegna per tutti i destinatari.
-La tabella dei registri di tracciamento principale (**NmsTrackingLog**) memorizza i registri di tracciamento per tutti i destinatari. I registri di tracciamento si riferiscono alle reazioni dei destinatari, ad esempio aperture e clic delle e-mail. Ogni reazione corrisponde a un registro di tracciamento.
+Tabella dei registri di tracciamento principali (**NmsTrackingLog**) memorizza i registri di tracciamento per tutti i destinatari. I registri di tracciamento si riferiscono alle reazioni dei destinatari, ad esempio aperture e clic delle e-mail. Ogni reazione corrisponde a un registro di tracciamento.
 I registri di consegna e di tracciamento vengono eliminati dopo un certo periodo, che viene specificato in Adobe Campaign e può essere modificato. Pertanto, si raccomanda vivamente di esportare i registri su base regolare.
 
 ### Tabelle tecniche {#technical-tables}
 
-Infine, parte del modello dati è costituita da dati tecnici utilizzati per il processo applicativo, inclusi gli operatori e i diritti utente (**NmsGroup**), cartelle (**XtkFolder**).
+Infine, una parte del modello di dati consiste in dati tecnici utilizzati per il processo applicativo, compresi gli operatori e i diritti degli utenti (**NmsGroup**), cartelle (**XtkFolder**).
 
 ## Utilizzo della tabella Destinatario incorporata {#default-recipient-table}
 
@@ -75,7 +75,7 @@ Se necessario, puoi estenderlo con due meccanismi:
 * Estende una tabella esistente con nuovi campi. Ad esempio, puoi aggiungere un nuovo campo &quot;Fedeltà&quot; alla tabella Destinatario.
 * Crea una nuova tabella, ad esempio una tabella &quot;Acquisto&quot; in cui sono elencati tutti gli acquisti effettuati da ciascun profilo del database e collegalo alla tabella Destinatario.
 
-Per ulteriori informazioni sulla configurazione degli schemi di estensione per estendere il modello dati concettuale, consulta [Informazioni sull&#39;edizione dello schema](../../configuration/using/about-schema-edition.md).
+Per ulteriori informazioni sulla configurazione degli schemi di estensione per estendere il modello dati concettuale, consulta [Informazioni sulla modifica degli schemi](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ Per ulteriori informazioni sulla configurazione degli schemi di estensione per e
 
 ## Utilizzo di una tabella dei destinatari personalizzata {#custom-recipient-table}
 
-Durante la progettazione del modello dati Adobe Campaign, puoi utilizzare la tabella dei destinatari [preconfigurata](#default-recipient-table) o decidere di creare una tabella dei destinatari [personalizzata](../../configuration/using/about-custom-recipient-table.md) per memorizzare i profili di marketing.
+Durante la progettazione del modello dati Adobe Campaign, puoi utilizzare la funzione [tabella dei destinatari predefinita](#default-recipient-table)o decidere di creare un [tabella dei destinatari personalizzata](../../configuration/using/about-custom-recipient-table.md) per memorizzare i profili di marketing.
 
 In effetti, se il modello dati non si adatta alla struttura incentrata sul destinatario, puoi impostare altre tabelle come dimensione di targeting all’interno di Adobe Campaign. Ad esempio, questo può essere rilevante quando devi rivolgerti a famiglie, account (come telefoni cellulari) e aziende/siti invece che semplicemente a destinatari.
 
@@ -95,13 +95,13 @@ Tutti i principi e i passaggi necessari quando si utilizza una tabella dei desti
 
 I vantaggi dell’utilizzo di una tabella Destinatario personalizzata sono i seguenti:
 
-* **Modello dati flessibile** : la tabella Destinatario predefinita è inutile se non hai bisogno della maggior parte dei campi della tabella Destinatario o se il modello dati non è incentrato sul destinatario.
+* **Modello dati flessibile** - La tabella dei destinatari predefinita è inutile se non hai bisogno della maggior parte dei campi della tabella dei destinatari o se il modello dati non è incentrato sul destinatario.
 
-* **Scalabilità**  - I grandi volumi richiedono una tabella semplificata con pochi campi per un design efficiente. La tabella Destinatario predefinita avrebbe troppi campi inutili, che potrebbero influire sulle prestazioni e non essere efficiente.
+* **Scalabilità** - I grandi volumi richiedono una tabella semplificata con pochi campi per una progettazione efficiente. La tabella Destinatario predefinita avrebbe troppi campi inutili, che potrebbero influire sulle prestazioni e non essere efficiente.
 
-* **Percorso dei dati** : se i dati si trovano in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella dei destinatari predefinita. Creare un nuovo modello basato su una struttura esistente è più semplice.
+* **Posizione dati** - Se i dati si trovano in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella Destinatario preconfigurata. Creare un nuovo modello basato su una struttura esistente è più semplice.
 
-* **Migrazione semplice** : non è necessaria alcuna manutenzione per verificare che tutte le estensioni siano ancora valide in seguito all&#39;aggiornamento.
+* **Migrazione semplice** - Non è necessaria alcuna manutenzione per verificare che tutte le estensioni siano ancora valide al momento dell&#39;aggiornamento.
 
 >[!IMPORTANT]
 >
@@ -111,13 +111,13 @@ I vantaggi dell’utilizzo di una tabella Destinatario personalizzata sono i seg
 
 Ulteriori informazioni sul modello dati di Campaign sono disponibili nelle sezioni seguenti:
 
-* **Descrizione delle tabelle principali**  - Per ulteriori informazioni sulla descrizione predefinita del modello dati di Campaign Classic, consulta  [questa sezione](../../configuration/using/data-model-description.md).
+* **Descrizione delle principali tabelle** - Per ulteriori informazioni sulla descrizione predefinita del modello dati di Campaign Classic, consulta [questa sezione](../../configuration/using/data-model-description.md).
 
-* **Descrizione completa di ogni tabella** : per accedere alla descrizione completa di ogni tabella, vai a  **[!UICONTROL Admin > Configuration > Data schemas]**, seleziona una risorsa dall’elenco e fai clic sulla  **[!UICONTROL Documentation]** scheda .
+* **Descrizione completa di ciascuna tabella** - Per accedere alla descrizione completa di ogni tabella, vai a **[!UICONTROL Admin > Configuration > Data schemas]**, seleziona una risorsa dall’elenco e fai clic sul pulsante **[!UICONTROL Documentation]** scheda .
 
    ![](assets/data-model_documentation-tab.png)
 
 
-* **Schemi di campagna**  - La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
+* **Schemi di Campaign** - La struttura fisica e logica dei dati trasferiti nell&#39;applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-reference.md).
 
-* **Best practice per i modelli di dati**  - Scopri l’architettura del modello di dati Campaign e le relative best practice, in  [questa sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+* **Best practice per i modelli di dati** - Scopri l’architettura del modello dati Campaign e le relative best practice, in [questa sezione](../../configuration/using/data-model-best-practices.md#data-model-architecture).

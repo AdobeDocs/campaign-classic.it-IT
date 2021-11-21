@@ -56,10 +56,10 @@ Il simbolo &quot;@library&quot; è necessario per dichiarare un nuovo metodo (no
 
 * **access (stringa)**: questo attributo definisce il controllo di accesso per l’utilizzo del metodo . Se manca questo attributo, l&#39;identificazione è obbligatoria. I valori disponibili sono: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
 * **const (booleano)**: se è attivato, questo attributo significa che il metodo dichiarato modificherà l’entità
-* **etichetta (stringa)**: etichetta del metodo.
+* **label (stringa)**: etichetta del metodo.
 * **libreria (stringa)**: questo metodo non è nativo dell&#39;applicazione. Questo attributo prende il valore della libreria dei metodi in cui viene trovata la definizione del metodo (nms:mylibrary.js).
 * **nome (MNTOKEN)**: nome univoco del metodo.
-* **statico (booleano)**: se questo attributo è attivato, il metodo è considerato autonomo, tutti i parametri devono essere specificati al metodo quando viene richiamato.
+* **static (booleano)**: se questo attributo è attivato, il metodo è considerato autonomo, tutti i parametri devono essere specificati al metodo quando viene richiamato.
 
 ## Esempi {#examples-7}
 

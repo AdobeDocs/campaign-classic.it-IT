@@ -19,13 +19,13 @@ ht-degree: 7%
 
 ## Monitorare le soglie {#monitoring-thresholds}
 
-È possibile configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei rapporti **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (fare riferimento a [Accesso ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
+Puoi configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nella **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** rapporti (fare riferimento a [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Per farlo, segui la procedura indicata di seguito:
 
-1. Apri la procedura guidata di distribuzione sull&#39; **istanza di esecuzione**.
+1. Apri la procedura guidata di distribuzione in **istanza di esecuzione**.
 
-1. Passa alla pagina **[!UICONTROL Message Center]** .
+1. Vai a **[!UICONTROL Message Center]** pagina.
 
 1. Utilizzare le frecce per modificare le soglie.
 
@@ -33,13 +33,13 @@ Per farlo, segui la procedura indicata di seguito:
 
 >[!NOTE]
 >
->Il numero di eventi in sospeso nella coda viene visualizzato nella sezione [Indicatori di sistema](../../production/using/monitoring-processes.md#system-indicators) della pagina di monitoraggio del processo di Adobe Campaign. Per ulteriori informazioni sulla procedura guidata di distribuzione, consulta [questa sezione](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Il numero di eventi in sospeso nella coda viene visualizzato nella [Indicatori di sistema](../../production/using/monitoring-processes.md#system-indicators) della pagina di monitoraggio del processo di Adobe Campaign. Per ulteriori informazioni sulla procedura guidata di distribuzione, consulta [questa sezione](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Eliminare gli eventi {#purging-events}
 
-Puoi utilizzare la [procedura guidata di distribuzione](../../production/using/database-cleanup-workflow.md#deployment-wizard) per configurare per quanto tempo i dati devono essere memorizzati nel database.
+È possibile utilizzare [procedura guidata di distribuzione](../../production/using/database-cleanup-workflow.md#deployment-wizard) per configurare per quanto tempo i dati devono essere memorizzati nel database.
 
-L&#39;eliminazione degli eventi viene eseguita automaticamente dal [flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md). Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e gli eventi archiviati in un’istanza di controllo.
+L&#39;eliminazione degli eventi viene eseguita automaticamente dal [Flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md). Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e gli eventi archiviati in un’istanza di controllo.
 
 Utilizzare le frecce appropriate per modificare le impostazioni di eliminazione.
 
@@ -62,11 +62,11 @@ I vari flussi di lavoro tecnici relativi alla messaggistica transazionale (Messa
 
 ### Controllare i flussi di lavoro delle istanze {#control-instance-workflows}
 
-Nell’istanza di controllo, indipendentemente dalla registrazione di una o più istanze di esecuzione, è necessario creare un flusso di lavoro di archiviazione per ciascun account esterno **[!UICONTROL Message Center execution instance]**. Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]** per creare e avviare il flusso di lavoro.
+Nell’istanza di controllo, indipendentemente dalla registrazione di una o più istanze di esecuzione, è necessario creare un flusso di lavoro di archiviazione per ogni **[!UICONTROL Message Center execution instance]** conto esterno. Fai clic sul pulsante **[!UICONTROL Create the archiving workflow]** per creare e avviare il flusso di lavoro.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Questi flussi di lavoro sono quindi accessibili dalla cartella **Amministrazione > Produzione > Centro messaggi** . Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
+Questi flussi di lavoro sono quindi accessibili dal **Amministrazione > Produzione > Centro messaggi** cartella. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
 
 <!--**Minimal architecture**
 
@@ -76,11 +76,11 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### Flussi di lavoro dell’istanza di esecuzione {#execution-instance-workflows}
 
-Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per la messaggistica transazionale dalla cartella **Amministrazione > Produzione > Message Center** . Dovete solo cominciare a farlo. I flussi di lavoro nell’elenco sono:
+Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per la messaggistica transazionale da **Amministrazione > Produzione > Centro messaggi** cartella. Dovete solo cominciare a farlo. I flussi di lavoro nell’elenco sono:
 
-* **[!UICONTROL Processing batch events]** (nome interno:  **[!UICONTROL batchEventsProcessing]** ): questo flusso di lavoro ti consente di suddividere gli eventi batch in una coda prima che siano collegati a un modello di messaggio.
-* **[!UICONTROL Processing real time events]** (nome interno:  **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro ti consente di suddividere gli eventi in tempo reale in una coda prima che siano collegati a un modello di messaggio.
-* **[!UICONTROL Update event status]** (nome interno:  **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro ti consente di attribuire uno stato all’evento.
+* **[!UICONTROL Processing batch events]** (nome interno: **[!UICONTROL batchEventsProcessing]** ): questo flusso di lavoro ti consente di suddividere gli eventi batch in una coda prima che siano collegati a un modello di messaggio.
+* **[!UICONTROL Processing real time events]** (nome interno: **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro ti consente di suddividere gli eventi in tempo reale in una coda prima che siano collegati a un modello di messaggio.
+* **[!UICONTROL Update event status]** (nome interno: **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro ti consente di attribuire uno stato all’evento.
 
    Sono disponibili i seguenti stati dell’evento:
 
@@ -122,7 +122,7 @@ Sulle istanze di esecuzione, segui i passaggi seguenti:
 
    >[!NOTE]
    >
-   >Scopri come estendere uno schema esistente nella sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md) .
+   >Scopri come estendere uno schema esistente nel [Estensione di uno schema](../../configuration/using/extending-a-schema.md) sezione .
 
 1. Modificare il modulo nms:extAccount:
 
@@ -160,7 +160,7 @@ Nell’istanza di controllo è necessario collegare modelli di consegna e accoun
 
 Per farlo, segui la procedura indicata di seguito:
 
-1. Crea un account esterno per marchio con lo stesso nome interno definito nell&#39; [istanza di esecuzione](#execution-instance) (passaggio 1).
+1. Crea un account esterno per marchio con lo stesso nome interno definito nella [istanza di esecuzione](#execution-instance) (passaggio 1).
 
 1. Crea un modello di consegna predefinito per marchio.
 
@@ -168,4 +168,4 @@ Per farlo, segui la procedura indicata di seguito:
    >
    >    Scopri come creare un modello di consegna in [questa sezione](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
 
-1. Nel modello di consegna **[!UICONTROL Properties]**, imposta il ciclo sull’account esterno del brand.
+1. Nel modello di consegna **[!UICONTROL Properties]**, imposta il routing sull’account esterno del brand.

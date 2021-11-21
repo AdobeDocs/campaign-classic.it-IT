@@ -35,15 +35,15 @@ Quando un rapporto contiene più pagine, è necessario ripetere l’operazione p
 
 È possibile configurare il rapporto in modo da esportarlo in formato PDF, Excel o OpenOffice. Apri Adobe Campaign Explorer e seleziona il rapporto interessato.
 
-Le opzioni di esportazione sono accessibili tramite le attività **[!UICONTROL Page]** del rapporto, nella scheda **[!UICONTROL Advanced]** .
+Le opzioni di esportazione sono accessibili tramite il **[!UICONTROL Page]** attività della relazione, **[!UICONTROL Advanced]** scheda .
 
-Modifica le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** in base alle tue esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. A questo scopo, deseleziona l’opzione **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** .
+Modificare le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** per soddisfare le tue esigenze. È inoltre possibile autorizzare l’esportazione di una pagina solo in formato PDF. Per eseguire questa operazione, deseleziona la **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** opzione .
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Esportazione in Microsoft Excel {#exporting-into-microsoft-excel}
 
-Per i report di tipo **[!UICONTROL List with group]** destinati all&#39;esportazione in Excel, si applicano le seguenti raccomandazioni e limitazioni:
+Per **[!UICONTROL List with group]** tipi di rapporti destinati all’esportazione in Excel, si applicano le seguenti raccomandazioni e limitazioni:
 
 * Questi rapporti non devono contenere righe vuote.
 
@@ -53,10 +53,10 @@ Per i report di tipo **[!UICONTROL List with group]** destinati all&#39;esportaz
 
    ![](assets/export_limitations_hide_label.png)
 
-* I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** per definire il formato delle celle nella tabella. È possibile accedere a **[!UICONTROL Form rendering]** tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
+* I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** definire il formato delle celle della tabella. La **[!UICONTROL Form rendering]** accessibile tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Non è consigliabile inserire contenuto HTML.
 * Se un report contiene diverse tabelle, grafici e così via. gli elementi di tipo , saranno esportati uno sotto l’altro.
-* È possibile forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, consulta questo documento [Definizione del formato della cella](../../reporting/using/creating-a-table.md#defining-cell-format).
+* È possibile forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, consulta questo [Definizione del formato delle celle](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Posticipare l&#39;esportazione {#postpone-the-export}
 
@@ -66,23 +66,23 @@ Puoi posticipare l’esportazione di un rapporto, ad esempio per attendere le ch
 document.nl_waitBeforeRender = true;
 ```
 
-Per attivare l’esportazione e iniziare la conversione in un PDF, utilizza la funzione **document.nl_renderToPdf()** senza alcun parametro.
+Per attivare l’esportazione e iniziare la conversione in un PDF, utilizza il **document.nl_renderToPdf()** senza alcun parametro.
 
 ### Allocazione della memoria {#memory-allocation}
 
 Quando si esportano alcuni report di grandi dimensioni, possono verificarsi errori di allocazione della memoria.
 
-In alcune istanze, il valore predefinito **maxMB** (**SKMS** per le istanze in hosting) del JavaScript indicato nel file di configurazione **serverConf.xml** è impostato su 64 MB. Se durante l&#39;esportazione di un report si verificano errori di memoria insufficienti, è consigliabile aumentare questa cifra a 512 MB:
+In alcuni casi, il valore predefinito **maxMB** (**SKMS** per le istanze in hosting) del JavaScript indicato nel **serverConf.xml** il file di configurazione è impostato su 64 MB. Se durante l&#39;esportazione di un report si verificano errori di memoria insufficienti, è consigliabile aumentare questa cifra a 512 MB:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-Per applicare le modifiche apportate alla configurazione, è necessario riavviare il servizio **nlserver**.
+Per applicare le modifiche apportate alla configurazione, la **nlserver** è necessario riavviare il servizio.
 
-Per ulteriori informazioni sul file **serverConf.xml**, consulta [questa sezione](../../production/using/configuration-principle.md).
+Per saperne di più sulle **serverConf.xml** , fare riferimento a [questa sezione](../../production/using/configuration-principle.md).
 
-Per ulteriori informazioni sul servizio **nlserver**, consulta [questa sezione](../../production/using/administration.md).
+Per saperne di più sulle **nlserver** , fai riferimento a [questa sezione](../../production/using/administration.md).
 
 ## Stampa di un report {#printing-a-report}
 
@@ -108,6 +108,6 @@ Le date dell’archivio vengono visualizzate sotto l’icona mostra/nascondi . F
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-È possibile eliminare un archivio dei rapporti. A questo scopo, vai al nodo Adobe Campaign in cui sono memorizzati i tuoi rapporti. Fai clic sulla scheda **[!UICONTROL Archives]** , seleziona quella da eliminare e fai clic su **[!UICONTROL Delete]**.
+È possibile eliminare un archivio dei rapporti. A questo scopo, vai al nodo Adobe Campaign in cui sono memorizzati i tuoi rapporti. Fai clic sul pulsante **[!UICONTROL Archives]** seleziona quello da eliminare e fai clic su **[!UICONTROL Delete]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)

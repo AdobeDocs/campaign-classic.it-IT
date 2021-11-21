@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Informazioni sull’arricchimento dei dati {#about-enriching-data}
 
-Questo caso d’uso descrive i possibili utilizzi dell’attività **[!UICONTROL Enrichment]** in un flusso di lavoro di targeting. Per ulteriori informazioni sull&#39;utilizzo dell&#39;attività **[!UICONTROL Enrichment]**, consulta: [Arricchimento](enrichment.md).
+Questo caso d&#39;uso descrive gli usi possibili **[!UICONTROL Enrichment]** in un flusso di lavoro di targeting. Per ulteriori informazioni sull’utilizzo di **[!UICONTROL Enrichment]** attività, fai riferimento a: [Arricchimento](enrichment.md).
 
-Un caso d’uso su come arricchire una consegna e-mail con date personalizzate è disponibile anche in [questa sezione](email-enrichment-with-custom-date-fields.md).
+È disponibile anche un caso d’uso su come arricchire una consegna e-mail con date personalizzate in [questa sezione](email-enrichment-with-custom-date-fields.md).
 
-I contatti nel database marketing vengono inviati un invito a partecipare a un concorso tramite un&#39;applicazione web. I risultati del concorso sono recuperati nella tabella **[!UICONTROL Competition results]**. Questa tabella è collegata alla tabella dei contatti (**[!UICONTROL Recipients]**). La tabella **[!UICONTROL Competition results]** contiene i campi seguenti:
+I contatti nel database marketing vengono inviati un invito a partecipare a un concorso tramite un&#39;applicazione web. I risultati della concorrenza sono recuperati nella **[!UICONTROL Competition results]** tabella. Questa tabella è collegata alla tabella dei contatti (**[!UICONTROL Recipients]**). La **[!UICONTROL Competition results]** La tabella contiene i campi seguenti:
 
 * Nome della concorrenza (@game)
 * Numero della prova (@prova)
@@ -31,7 +31,7 @@ I contatti nel database marketing vengono inviati un invito a partecipare a un c
 
 ![](assets/uc1_enrich_1.png)
 
-Un contatto trovato nella tabella **[!UICONTROL Recipients]** può essere collegato a più righe nella tabella **[!UICONTROL Competition results]**. La relazione tra queste due tabelle è di tipo 1-n. Di seguito è riportato un esempio dei registri dei risultati per un destinatario:
+Un contatto trovato nel **[!UICONTROL Recipients]** può essere collegata a più righe nel **[!UICONTROL Competition results]** tabella. La relazione tra queste due tabelle è di tipo 1-n. Di seguito è riportato un esempio dei registri dei risultati per un destinatario:
 
 ![](assets/uc1_enrich_2.png)
 
@@ -43,10 +43,10 @@ Per impostare questo caso d’uso, abbiamo creato il seguente flusso di lavoro d
 
 Per creare il flusso di lavoro, esegui i seguenti passaggi:
 
-1. Per eseguire il targeting dei nuovi abbonati che sono entrati per ultimi, vengono aggiunte due attività **[!UICONTROL Query]** e un’attività **[!UICONTROL Intersection]** .
-1. L’attività **[!UICONTROL Enrichment]** ci consente di aggiungere i dati memorizzati nella tabella **[!UICONTROL Competition results]**. Il campo **[!UICONTROL Score]** sul quale avrà luogo la personalizzazione della consegna viene aggiunto alla tabella di lavoro del flusso di lavoro.
-1. L’attività di tipo **[!UICONTROL Split]** ci consente di creare sottoinsiemi di destinatari in base ai punteggi.
-1. Per ciascun sottoinsieme, viene aggiunta un’attività di tipo **[!UICONTROL Delivery]**.
+1. Due **[!UICONTROL Query]** attività e una **[!UICONTROL Intersection]** vengono aggiunte le attività per eseguire il targeting dei nuovi abbonati che sono entrati per ultimi nel concorso.
+1. La **[!UICONTROL Enrichment]** consente di aggiungere i dati memorizzati nel **[!UICONTROL Competition results]** tabella. La **[!UICONTROL Score]** il campo sul quale avrà luogo la personalizzazione della consegna viene aggiunto alla tabella di lavoro del flusso di lavoro.
+1. La **[!UICONTROL Split]** l’attività di tipo ci consente di creare sottoinsiemi di destinatari in base ai punteggi.
+1. Per ogni sottoinsieme, un **[!UICONTROL Delivery]** viene aggiunta l’attività di tipo .
 
 ## Passaggio 1: Targeting {#step-1--targeting}
 
@@ -58,33 +58,33 @@ La seconda query consente di eseguire il targeting dei destinatari che hanno par
 
 ![](assets/uc1_enrich_5.png)
 
-Viene quindi aggiunta un’attività di tipo **[!UICONTROL Intersection]** per eseguire il targeting dei destinatari aggiunti al database negli ultimi sei mesi e che sono entrati nell’ultima concorrenza.
+Un **[!UICONTROL Intersection]** L’attività di tipo viene quindi aggiunta per eseguire il targeting dei destinatari aggiunti al database negli ultimi sei mesi e che sono entrati nell’ultima concorrenza.
 
 ## Passaggio 2: Arricchimento {#step-2--enrichment}
 
-In questo esempio, vogliamo personalizzare le consegne in base al campo **[!UICONTROL Score]** memorizzato nella tabella **[!UICONTROL Competition results]** . Questa tabella presenta una relazione di tipo 1-n con la tabella dei destinatari. L’attività **[!UICONTROL Enrichment]** ci consente di aggiungere dati da una tabella collegata alla dimensione di filtro alla tabella di lavoro del flusso di lavoro.
+In questo esempio, vogliamo personalizzare le consegne in base alla **[!UICONTROL Score]** campo memorizzato in **[!UICONTROL Competition results]** tabella. Questa tabella presenta una relazione di tipo 1-n con la tabella dei destinatari. La **[!UICONTROL Enrichment]** l’attività ci consente di aggiungere dati da una tabella collegata alla dimensione di filtro alla tabella di lavoro del flusso di lavoro.
 
 1. Nella schermata di modifica dell’attività di arricchimento, seleziona **[!UICONTROL Add data]**, quindi **[!UICONTROL Data linked to the filtering dimension]** e fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_6.png)
 
-1. Quindi seleziona l’opzione **[!UICONTROL Data linked to the filtering dimension]**, seleziona la tabella **[!UICONTROL Competition results]** e fai clic su **[!UICONTROL Next]**.
+1. Quindi seleziona la **[!UICONTROL Data linked to the filtering dimension]** seleziona l’opzione **[!UICONTROL Competition results]** tabella e fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
-1. Immetti un ID e un’etichetta e seleziona l’opzione **[!UICONTROL Limit the line count]** nel campo **[!UICONTROL Data collected]** . Nel campo **[!UICONTROL Lines to retrieve]** , seleziona &quot;1&quot; come valore. Per ciascun destinatario, l’attività di arricchimento aggiunge una singola riga dalla tabella **[!UICONTROL Competition results]** alla tabella di lavoro del flusso di lavoro. Fai clic su **[!UICONTROL Next]**.
+1. Immetti un ID e un’etichetta e seleziona la **[!UICONTROL Limit the line count]** in **[!UICONTROL Data collected]** campo . In **[!UICONTROL Lines to retrieve]** selezionare &quot;1&quot; come valore. Per ciascun destinatario, l’attività di arricchimento aggiunge una riga singola dal **[!UICONTROL Competition results]** alla tabella di lavoro del flusso di lavoro. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. In questo esempio, vogliamo recuperare il punteggio più alto del destinatario, ma solo per l&#39;ultima competizione. A questo scopo, aggiungi un filtro al campo **[!UICONTROL Competition name]** per escludere tutte le righe relative ai concorsi precedenti. Fai clic su **[!UICONTROL Next]**.
+1. In questo esempio, vogliamo recuperare il punteggio più alto del destinatario, ma solo per l&#39;ultima competizione. A questo scopo, aggiungi un filtro al **[!UICONTROL Competition name]** campo per escludere tutte le linee relative ai concorsi precedenti. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Vai alla schermata **[!UICONTROL Sort]** e fai clic sul pulsante **[!UICONTROL Add]** , seleziona il campo **[!UICONTROL Score]** e spunta la casella nella colonna **[!UICONTROL descending]** per ordinare in ordine decrescente gli elementi dei campi **[!UICONTROL Score]**. Per ogni destinatario, l’attività di arricchimento aggiunge una riga che corrisponde al punteggio più alto per l’ultimo gioco. Fai clic su **[!UICONTROL Next]**.
+1. Vai a **[!UICONTROL Sort]** e fai clic su **[!UICONTROL Add]** seleziona il pulsante **[!UICONTROL Score]** e seleziona la casella in **[!UICONTROL descending]** per ordinare gli elementi **[!UICONTROL Score]** campi in ordine decrescente. Per ogni destinatario, l’attività di arricchimento aggiunge una riga che corrisponde al punteggio più alto per l’ultimo gioco. Fai clic su **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Nella finestra **[!UICONTROL Data to add]** fare doppio clic sul campo **[!UICONTROL Score]**. Per ciascun destinatario, l’attività di arricchimento aggiungerà solo il campo **[!UICONTROL Score]** . Fai clic su **[!UICONTROL Finish]**.
+1. In **[!UICONTROL Data to add]** finestra, fare doppio clic sul pulsante **[!UICONTROL Score]** campo . Per ciascun destinatario, l’attività di arricchimento aggiungerà solo il **[!UICONTROL Score]** campo . Fai clic su **[!UICONTROL Finish]**.
 
    ![](assets/uc1_enrich_11.png)
 
@@ -106,22 +106,22 @@ Anche lo schema corrispondente è stato arricchito.
 
 ## Passaggio 3: Divisione e consegna {#step-3--split-and-delivery}
 
-Per ordinare i destinatari in base ai loro punteggi, dopo l’arricchimento viene aggiunta un’attività **[!UICONTROL Split]** .
+Per ordinare i destinatari in base ai loro punteggi, **[!UICONTROL Split]** l’attività viene aggiunta dopo l’arricchimento.
 
 ![](assets/uc1_enrich_18.png)
 
-1. È stato definito un primo sottoinsieme (**Vincitore**) per includere il destinatario con il punteggio più alto. A questo scopo, definisci una limitazione del numero di record, applica un ordinamento decrescente al punteggio e limita il numero di record a 1.
+1. Prima (**Vincitore**) è stato definito un sottoinsieme per includere il destinatario con il punteggio più alto. A questo scopo, definisci una limitazione del numero di record, applica un ordinamento decrescente al punteggio e limita il numero di record a 1.
 
    ![](assets/uc1_enrich_16.png)
 
-1. Il secondo sottoinsieme (**Secondo posto**) include il destinatario con il secondo punteggio più alto. La configurazione è la stessa del primo sottoinsieme.
+1. La seconda (**Secondo posto**) include il destinatario con il secondo punteggio più alto. La configurazione è la stessa del primo sottoinsieme.
 
    ![](assets/uc1_enrich_17.png)
 
-1. Il terzo sottoinsieme (**perdenti**) contiene tutti gli altri destinatari. Vai alla scheda **[!UICONTROL General]** e seleziona la casella **[!UICONTROL Generate complement]** per eseguire il targeting di tutti i destinatari che non hanno raggiunto i due punteggi più elevati.
+1. La terza (**perdenti**) contiene tutti gli altri destinatari. Vai a **[!UICONTROL General]** e controlla la **[!UICONTROL Generate complement]** per eseguire il targeting di tutti i destinatari che non hanno raggiunto i due punteggi più elevati.
 
    ![](assets/uc1_enrich_19.png)
 
-1. Aggiungi un’attività di tipo **[!UICONTROL Delivery]** per ciascun sottoinsieme, utilizzando un modello di consegna diverso per ciascun sottoinsieme.
+1. Aggiungi un **[!UICONTROL Delivery]** digita l’attività per ciascun sottoinsieme, utilizzando un modello di consegna diverso per ciascun sottoinsieme.
 
    ![](assets/uc1_enrich_20.png)

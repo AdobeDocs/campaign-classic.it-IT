@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Per essere riutilizzata, è possibile salvare una configurazione di consegna in un modello di consegna. Il modello può contenere una configurazione completa o parziale della consegna.
 
-Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato in un determinato momento, all&#39;arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite il nodo **[!UICONTROL Resources > Templates > Delivery templates]** nella struttura.
+Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato in un determinato momento, all&#39;arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite **[!UICONTROL Resources > Templates > Delivery templates]** nell&#39;albero.
 
 ![](assets/s_user_template_list.png)
 
@@ -31,7 +31,7 @@ Esistono due tipi di modelli:
 
 1. Modelli di consegna predefiniti
 
-   L’amministratore di Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (quelli con diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, puoi configurare un modello di consegna e-mail e, quando gli utenti creano una consegna utilizzando questo modello, devono semplicemente immettere il testo o il contenuto HTML e quindi consegnarlo; le altre scelte sono già state definite dall’amministratore.
+   L’amministratore di Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (quelli con diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, puoi configurare un modello di consegna e-mail e, quando gli utenti creano una consegna utilizzando questo modello, devono semplicemente inserire il contenuto di testo o HTML e quindi consegnarlo; le altre scelte sono già state definite dall’amministratore.
 
 >[!NOTE]
 >

@@ -16,17 +16,17 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-**Impossibile eseguire la pipeline con errore &quot;Nessun task corrisponde alla maschera tubata@&lt;>&quot;**
+**Impossibile eseguire la tubazione con l&#39;errore &quot;Nessun task corrisponde alla maschera tubata@&lt; istanza >&quot;**
 
 La versione di Adobe Campaign Classic non supporta la pipeline.
 
-1. Controlla se l&#39;elemento [!DNL pipelined] è presente nel file di configurazione. In caso contrario, significa che non è supportato.
-1. Effettua l’aggiornamento a Campaign 20.3 o [!DNL Gold Standard] 11.
+1. Controlla se la [!DNL pipelined] è presente nel file di configurazione. In caso contrario, significa che non è supportato.
+1. Aggiornamento a Campaign 20.3 o [!DNL Gold Standard] 11.
 
-**Il tubo non riesce con &#39;&#39; aurait du comencer par  `[` ou  `{` (iRc=16384)&quot;**
+**Errore di tubazione con &#39;&#39; aurait duc commencer par `[` Tu `{` (iRc=16384)&quot;**
 
-L&#39;opzione **NmsPipeline_Config** non è impostata. In realtà è un errore di analisi JSON.
-Imposta la configurazione JSON nell&#39;opzione **NmsPipeline_Config**. Vedi &quot;opzione di routing&quot; in questa pagina.
+La **NmsPipeline_Config** opzione non impostata. In realtà è un errore di analisi JSON.
+Imposta la configurazione JSON nell’opzione . **NmsPipeline_Config**. Vedi &quot;opzione di routing&quot; in questa pagina.
 
 **Impossibile eseguire la pipeline con &quot;l&#39;oggetto deve essere un&#39;organizzazione o un client valido&quot;**
 
@@ -67,17 +67,17 @@ I registri dovrebbero essere i seguenti:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Questo messaggio di errore indica che l’autenticazione è configurata utilizzando la base OAuth di Omniture legacy. Per aggiornare l’autenticazione, fai riferimento alla documentazione [Configurazione Adobe I/O per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) .
+Questo messaggio di errore indica che l’autenticazione è configurata utilizzando la base OAuth di Omniture legacy. Fai riferimento a [Configurazione di Adobe I/O per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) per aggiornare l’autenticazione.
 
 **Nessun trigger recuperato**
 
-Quando il processo [!DNL pipelined] è in esecuzione e non vengono recuperati trigger:
+Quando il [!DNL pipelined] Il processo è in esecuzione e non viene recuperato alcun trigger:
 
 1. Assicurati che il trigger sia attivo in Analytics e stia generando eventi.
-1. Assicurati che il processo [!DNL pipelined] sia in esecuzione.
-1. Cerca gli errori nel registro [!DNL pipelined].
-1. Cerca gli errori nella pagina di stato [!DNL pipelined]. trigger-scarted, trigger-failed dovrebbe essere zero.
-1. Verifica che il nome del trigger sia configurato nell’opzione **[!UICONTROL NmsPipeline_Config]** . In caso di dubbi, utilizza l’opzione carattere jolly .
+1. Assicurati che il [!DNL pipelined] processo in esecuzione.
+1. Cerca errori nel [!DNL pipelined] registro.
+1. Cerca errori nel [!DNL pipelined] pagina di stato. trigger-scarted, trigger-failed dovrebbe essere zero.
+1. Verifica che il nome del trigger sia configurato nella **[!UICONTROL NmsPipeline_Config]** opzione . In caso di dubbi, utilizza l’opzione carattere jolly .
 1. Controlla che Analytics abbia un trigger attivo e stia generando eventi. Potrebbe verificarsi un ritardo di alcune ore dopo che la configurazione viene effettuata in Analytics prima che sia attiva.
 
 **Gli eventi non sono collegati a un cliente**
@@ -95,9 +95,9 @@ Quando la marca temporale di Analytics è molto più vecchia della data di creaz
 
 In genere, un trigger può richiedere 15-90 minuti per avviare una campagna di marketing. Questo varia a seconda dell’implementazione della raccolta di dati, del caricamento sulla pipeline, della configurazione personalizzata del trigger definito e del flusso di lavoro in Adobe Campaign.
 
-1. Controlla se il processo [!DNL pipelined] è in esecuzione.
+1. Controlla se la [!DNL pipelined] processo in esecuzione.
 1. Cerca gli errori in pipelined.log che possono causare nuovi tentativi. Correggi gli errori, se applicabile.
-1. Controlla la pagina di stato [!DNL pipelined] per le dimensioni della coda. Se le dimensioni della coda sono grandi, migliora le prestazioni del JS.
+1. Controlla la [!DNL pipelined] pagina di stato per la dimensione della coda. Se le dimensioni della coda sono grandi, migliora le prestazioni del JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura gli attivatori su Analytics utilizzando meno messaggi.
 
 **Aggiornamento delle istanze dell’area di visualizzazione dall’autenticazione legacy all’autenticazione I/O di Adobe**

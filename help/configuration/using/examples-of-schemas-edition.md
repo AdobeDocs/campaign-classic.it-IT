@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## Estensione di una tabella {#extending-a-table}
 
-Per estendere la tabella dei destinatari dello schema **nms:recipient** , procedi come segue:
+Per estendere **nms:recipient** tabella dei destinatari dello schema, applicare la procedura seguente:
 
-1. Crea lo schema dell&#39;estensione (**cus:extension**) utilizzando i seguenti dati:
+1. Crea lo schema dell&#39;estensione (**cus:extension**) utilizzando i dati seguenti:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ Per estendere la tabella dei destinatari dello schema **nms:recipient** , proced
    </srcSchema>
    ```
 
-   In questo esempio, viene aggiunto un campo indicizzato (**fidelity**) e l&#39;elemento **location** (già presente nello schema **nms:recipient**) viene completato con un campo enumerato (**area**).
+   In questo esempio, un campo indicizzato (**fedeltà**) viene aggiunta e la **posizione** elemento (già presente nel **nms:recipient** schema) è completato da un campo enumerato (**area**).
 
    >[!IMPORTANT]
    >
-   >Ricorda di aggiungere l&#39;attributo **ExtendedSchema** per fare riferimento allo schema dell&#39;estensione.
+   >Ricorda di aggiungere **ExtendedSchema** per fare riferimento allo schema dell&#39;estensione.
 
-1. Controlla che lo schema esteso sia lo schema **nms:recipient** e che i dati aggiuntivi siano presenti:
+1. Controlla che lo schema esteso sia il **nms:recipient** schema e la presenza di dati aggiuntivi:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -237,7 +237,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Una tabella di relazione consente di collegare due tabelle con cardinalità N-N. Questa tabella contiene solo le chiavi esterne delle tabelle da collegare.
 
-Esempio di tabella di relazione tra i gruppi (**nms:group**) e i destinatari (**nms:recipient**).
+Esempio di tabella di relazione tra gruppi (**nms:group**) e i destinatari (**nms:recipient**).
 
 Schema di origine della tabella delle relazioni:
 
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Questo caso d’uso illustra come utilizzare una tabella di riferimento esistente come alternativa ai meccanismi di enumerazione incorporati di Adobe Campaign (enum, userEnum o dbEnum).
 
-È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l&#39;attributo **displayAsField=&quot;true&quot;**.
+È inoltre possibile utilizzare una tabella di riferimento esistente come enumerazione negli schemi. Questo può essere ottenuto creando un collegamento tra una tabella e la tabella di riferimento e aggiungendo l’attributo **displayAsField=&quot;true&quot;**.
 
 In questo esempio, la tabella di riferimento contiene un elenco di nomi e identificatori bancari:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In qualsiasi tabella che utilizzi questa tabella di riferimento, definisci un collegamento e aggiungi l’attributo **displayAsField=&quot;true&quot;** .
+In qualsiasi tabella che utilizzi questa tabella di riferimento, definisci un collegamento e aggiungi la **displayAsField=&quot;true&quot;** attributo.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ L’interfaccia utente non visualizza un collegamento, ma un campo. Quando gli u
 
 * Per completare automaticamente la stringa, è necessario definire una stringa di calcolo nella tabella di riferimento.
 
-* Aggiungi l&#39;attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire ad Adobe Campaign di creare un indice sui valori memorizzati nella tabella sorgente del collegamento.
+* Aggiungi il **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire ad Adobe Campaign di creare un indice sui valori memorizzati nella tabella sorgente del collegamento.
 
 ## Argomenti correlati
 

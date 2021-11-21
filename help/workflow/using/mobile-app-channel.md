@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito è installato con il modulo **Canale app mobile** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/about-mobile-app-channel.md).
+Il flusso di lavoro descritto di seguito è installato con **Canale app mobile** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Il flusso di lavoro descritto di seguito è installato con il modulo **Canale ap
   <tr> 
    <td> <span class="uicontrol">Gestione delle rinunce NMAC</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna le sottoscrizioni di notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta questa <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">sezione</a>.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna le sottoscrizioni di notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta questo <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">sezione</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

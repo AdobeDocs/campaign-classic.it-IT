@@ -23,11 +23,11 @@ Per creare una consegna basata su un modello esistente, seleziona il modello dal
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-In caso contrario, fai clic sulla cartella **[!UICONTROL Select link]** a destra del campo per sfogliare la struttura.
+In caso contrario, fai clic sul pulsante **[!UICONTROL Select link]** a destra del campo per sfogliare la struttura.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Seleziona la directory desiderata dal campo **[!UICONTROL Folder]** oppure fai clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
+Seleziona la directory desiderata dal **[!UICONTROL Folder]** oppure fai clic sul campo **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
 
 Seleziona il modello di consegna da utilizzare e fai clic su **[!UICONTROL Ok]**.
 
@@ -45,4 +45,4 @@ Questa azione genera una consegna nella cartella associata al modello. Il nome d
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione di una consegna, consulta [Definizione del contenuto dell’e-mail](defining-the-email-content.md).
+>Per ulteriori informazioni sulla configurazione di una consegna, vedi [Definizione del contenuto dell’e-mail](defining-the-email-content.md).

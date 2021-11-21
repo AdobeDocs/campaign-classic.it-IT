@@ -19,9 +19,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->L’attività **Loading (SOAP)** è disponibile solo se è installato il modulo **FDA (Federated Data Access)** . Controlla il contratto di licenza.
+>La **Caricamento (SOAP)** l’attività è disponibile solo se hai **FDA (Federated Data Access)** modulo installato. Controlla il contratto di licenza.
 
-L&#39;attività **Loading (SOAP)** viene utilizzata in aggiunta all&#39;attività **data loading (RDBMS)** quando non è possibile raccogliere dati direttamente tramite FDA in un database esterno.
+La **Caricamento (SOAP)** viene utilizzata in aggiunta al **caricamento dati (RDBMS)** attività quando non è possibile raccogliere dati direttamente tramite l’FDA in un database esterno.
 
 Operazione:
 
@@ -37,13 +37,13 @@ Operazione:
 
    ![](assets/soap_load_003.png)
 
-1. Selezionare **[!UICONTROL Click here to view and edit analysis results]** per specificare ogni colonna identificata.
+1. Seleziona **[!UICONTROL Click here to view and edit analysis results]** per specificare ogni colonna identificata.
 
    ![](assets/soap_load_001.png)
 
    Se desideri aggiornare l’esempio, seleziona **[!UICONTROL Re-analyze the example]**.
 
-   Puoi anche personalizzare il formato dei dati della colonna tramite il collegamento **[!UICONTROL Advanced parameters]** . Per ulteriori informazioni sulla formattazione dei dati importati, consulta questa [sezione](../../platform/using/executing-import-jobs.md).
+   Puoi anche personalizzare il formato dei dati della colonna tramite la **[!UICONTROL Advanced parameters]** link. Per ulteriori informazioni sulla formattazione dei dati importati, consulta [sezione](../../platform/using/executing-import-jobs.md).
 
 1. È possibile utilizzare il numero di riga come identificatore e/o specificare che la chiamata SOAP restituisce diversi elementi.
 1. Immettere gli script di tabulazione seguenti in base alla loro funzione:

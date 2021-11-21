@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-I flussi di lavoro descritti di seguito sono installati per impostazione predefinita con il modulo **Campaign** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../campaign/using/designing-marketing-campaigns.md).
+I flussi di lavoro descritti di seguito sono installati con **Campaign** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ I flussi di lavoro descritti di seguito sono installati per impostazione predefi
   <tr> 
    <td> <span class="uicontrol">Processi campagna</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro gestisce i lavori per le campagne di marketing (targeting di lanci, estrazione file, ecc.). Crea anche flussi di lavoro relativi a campagne ricorrenti e periodiche.<br /> </td> 
+   <td> Questo flusso di lavoro gestisce i lavori per le campagne di marketing (targeting di lanci, estrazione file, ecc.). Crea inoltre flussi di lavoro relativi a campagne ricorrenti e periodiche.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Processi dei fornitori di servizi</span> <br /> </td> 

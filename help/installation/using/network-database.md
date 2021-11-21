@@ -19,7 +19,7 @@ ht-degree: 9%
 
 ## Configurazione della rete
 
-Una cosa molto importante da verificare quando si distribuisce un tipo di architettura on-premise è la [configurazione di rete](../../installation/using/network-configuration.md). Assicurati che il server Tomcat NON sia direttamente accessibile all&#39;esterno del server:
+Una cosa molto importante da verificare quando si implementa un tipo di architettura on-premise è la [configurazione di rete](../../installation/using/network-configuration.md). Assicurati che il server Tomcat NON sia direttamente accessibile all&#39;esterno del server:
 
 * Chiudi la porta Tomcat (8080) su IP esterni (deve funzionare su localhost)
 * Non mappare la porta HTTP standard (80) su quella Tomcat (8080)
@@ -50,7 +50,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-È inoltre possibile utilizzare uno script [ridimensiona](https://github.com/nabla-c0d3/sslyze/releases) python che esegue entrambe le operazioni.
+È inoltre possibile utilizzare un [balzo](https://github.com/nabla-c0d3/sslyze/releases) script di pitone che fa entrambi.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

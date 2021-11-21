@@ -17,43 +17,43 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-L&#39;entità centrale crea campagne collaborative dai modelli di campagne **Distributed Marketing**. Consulta [questa pagina](about-distributed-marketing.md#collaborative-campaign).
+L&#39;entità centrale crea campagne di collaborazione da **Marketing distribuito** modelli di campagna. Consulta [questa pagina](about-distributed-marketing.md#collaborative-campaign).
 
 ## Creazione di una campagna collaborativa {#creating-a-collaborative-campaign}
 
-Per configurare una campagna collaborativa, fai clic sul nodo **[!UICONTROL Campaign management > Campaigns]** , quindi sull&#39;icona **[!UICONTROL New]** .
+Per configurare una campagna collaborativa, fai clic sul pulsante **[!UICONTROL Campaign management > Campaigns]** nodo, quindi **[!UICONTROL New]** icona.
 
 >[!NOTE]
 >
->Oltre a **[!UICONTROL collaborative campaigns (by campaign)]**, queste campagne possono essere configurate ed eseguite tramite un’interfaccia web.
+>A parte **[!UICONTROL collaborative campaigns (by campaign)]**, queste campagne possono essere configurate ed eseguite tramite un’interfaccia web.
 
 Il processo di configurazione per un database di campagne collaborative è simile a quello di un modello di campagna locale. Di seguito sono illustrate le specifiche dei diversi tipi di campagne collaborative.
 
 ### Per modulo {#by-form}
 
-Per creare una campagna collaborativa (per modulo), è necessario selezionare il modello **[!UICONTROL Collaborative campaign (by form)]** .
+Per creare una campagna collaborativa (per modulo), la **[!UICONTROL Collaborative campaign (by form)]** il modello deve essere selezionato.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-Nella scheda **[!UICONTROL Edit]** , fai clic sul collegamento **[!UICONTROL Advanced campaign settings...]** per accedere alla scheda **Marketing distribuito** .
+In **[!UICONTROL Edit]** fai clic sulla scheda **[!UICONTROL Advanced campaign settings...]** per accedere al **Marketing distribuito** scheda .
 
-Selezionare l&#39;interfaccia Web **By form**. Questo tipo di interfaccia consente di creare campi di personalizzazione che verranno utilizzati dalle entità locali per ordinare una campagna. Consulta [Creazione di una campagna locale (per modulo)](examples.md#creating-a-local-campaign--by-form-).
+Seleziona la **Per modulo** interfaccia web. Questo tipo di interfaccia consente di creare campi di personalizzazione che verranno utilizzati dalle entità locali per ordinare una campagna. Fai riferimento a [Creazione di una campagna locale (tramite modulo)](examples.md#creating-a-local-campaign--by-form-).
 
-Salva la campagna. È ora possibile utilizzarlo dalla visualizzazione **Pacchetti campagna** nella scheda **Campagna** , facendo clic sul pulsante **[!UICONTROL Create]** .
+Salva la campagna. È ora possibile utilizzarlo dal **Pacchetti campagna** visualizza in **Campaign** facendo clic sulla scheda **[!UICONTROL Create]** pulsante .
 
-La vista **[!UICONTROL Campaign Package]** ti consente di utilizzare modelli di campagna locali (preconfigurati o duplicati), nonché campagne di riferimento per campagne collaborative, allo scopo di creare campagne per diverse entità organizzative.
+La **[!UICONTROL Campaign Package]** view consente di utilizzare modelli di campagna locali (preconfigurati o duplicati), nonché campagne di riferimento per campagne collaborative, allo scopo di creare campagne per le diverse entità organizzative.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
 ### Per campagna {#by-campaign}
 
-Per creare una campagna collaborativa (per campagna), è necessario selezionare il modello **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** .
+Per creare una campagna collaborativa (per campagna), il **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** il modello deve essere selezionato.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
 Quando ordinate la campagna, l’entità locale può completare i criteri predefiniti dall’entità centrale e valutare la campagna prima di ordinarla.
 
-Una volta che un ordine per una **campagna collaborativa (per campagna)** viene approvato dall’entità centrale, viene creata una campagna figlio per l’entità locale. Una volta disponibili, l’entità locale può quindi modificare:
+Una volta effettuato l&#39;ordine di un **Campagna collaborativa (per campagna)** viene approvata dall’entità centrale, viene creata una campagna figlio per l’entità locale. Una volta disponibili, l’entità locale può quindi modificare:
 
 * il flusso di lavoro della campagna,
 * regole di tipologia,
@@ -61,13 +61,13 @@ Una volta che un ordine per una **campagna collaborativa (per campagna)** viene 
 
 L’entità locale esegue la campagna figlio. L’entità centrale esegue la campagna padre.
 
-L’entità centrale può visualizzare tutte le campagne figlie collegate con una **campagna collaborativa (per campagna)** da questo dashboard (tramite il collegamento **[!UICONTROL List of associated campaigns]** ).
+L’entità centrale può visualizzare tutte le campagne figlio collegate a un **Campagna collaborativa (per campagna)** da questo dashboard (tramite **[!UICONTROL List of associated campaigns]** link).
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
 ### Per approvazione target {#by-target-approval}
 
-Per creare una campagna collaborativa (tramite approvazione target), è necessario selezionare il modello **[!UICONTROL Collaborative campaign (by target approval)]** .
+Per creare una campagna collaborativa (per approvazione target), il **[!UICONTROL Collaborative campaign (by target approval)]** il modello deve essere selezionato.
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -75,23 +75,23 @@ Per creare una campagna collaborativa (tramite approvazione target), è necessar
 >
 >In questa modalità, l’entità centrale non deve specificare le entità locali.
 
-Il flusso di lavoro della campagna deve integrare l’attività di tipo **Approvazione locale** . I parametri dell’attività sono i seguenti:
+Il flusso di lavoro della campagna deve essere integrato **Approvazione locale** digitare activity. I parametri dell’attività sono i seguenti:
 
 * **[!UICONTROL Action to perform]** : Notifica di approvazione di Target.
 * **[!UICONTROL Distribution context]** : Esplicito.
 * **[!UICONTROL Data distribution]** : Distribuzione di entità locale.
 
-**È necessario creare la distribuzione dei dati di tipo** di distribuzione dell&#39;entità locale. Il modello di distribuzione dei dati ti consente di limitare il numero di record da un elenco di valori di raggruppamento. In **[!UICONTROL Resources > Campaign management > Data distribution]**, fai clic sull&#39;icona **[!UICONTROL New]** per creare un nuovo **[!UICONTROL Data distribution]**. Per ulteriori informazioni sulla distribuzione dei dati, consulta la guida [Flussi di lavoro](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) .
+**Distribuzione di entità locali** è necessario creare la distribuzione dei dati di tipo . Il modello di distribuzione dei dati ti consente di limitare il numero di record da un elenco di valori di raggruppamento. In **[!UICONTROL Resources > Campaign management > Data distribution]**, fai clic su **[!UICONTROL New]** per creare un nuovo **[!UICONTROL Data distribution]**. Per ulteriori informazioni sulla distribuzione dei dati, consulta la [Flussi di lavoro](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) guida.
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Seleziona la **Dimensione di targeting** e la **[!UICONTROL Distribution field]**. Per **[!UICONTROL Assignment type]**, selezionare **Entità locale**.
+Seleziona la **Dimensione di targeting** e **[!UICONTROL Distribution field]**. Per **[!UICONTROL Assignment type]**, seleziona **Entità locale**.
 
-Nella scheda **[!UICONTROL Distribution]** , aggiungi un campo per ogni entità locale e specifica il valore.
+In **[!UICONTROL Distribution]** , aggiungi un campo per ogni entità locale e specifica il valore .
 
 ![](assets/mkg_dist_data_distribution2.png)
 
-Puoi aggiungere una seconda attività **Approvazione di Target** dopo l&#39;attività di tipo **Consegna** per configurare un rapporto su di essa.
+Puoi aggiungere un secondo **Approvazione di Target** dopo il **Consegna** digita attività per configurare un rapporto su di essa.
 
 Nel messaggio di notifica della creazione della campagna, l’entità locale riceve un elenco di contatti predefinito dai parametri dell’entità centrale.
 
@@ -103,7 +103,7 @@ L’entità locale può eliminare alcuni contatti in base al contenuto della cam
 
 ### Semplice {#simple}
 
-Per creare una campagna collaborativa semplice, è necessario selezionare il modello **[!UICONTROL Collaborative campaign (simple)]** .
+Per creare una semplice campagna collaborativa, il **[!UICONTROL Collaborative campaign (simple)]** il modello deve essere selezionato.
 
 ## Creazione di un pacchetto di campagna collaborativo {#creating-a-collaborative-campaign-package}
 
@@ -111,9 +111,9 @@ Per rendere una campagna disponibile alle entità locali, l’entità centrale d
 
 Applica i seguenti passaggi:
 
-1. Nella sezione **[!UICONTROL Navigation]** della pagina **Campagne**, fai clic sul collegamento **[!UICONTROL Campaign packages]**.
+1. In **[!UICONTROL Navigation]** sezione **Campagne** fai clic su **[!UICONTROL Campaign packages]** link.
 1. Fai clic sul pulsante **[!UICONTROL Create]**.
-1. La sezione nella parte superiore della finestra consente di selezionare il modello **[!UICONTROL New collaborative package (mutualizedEmpty)]**.
+1. La sezione nella parte superiore della finestra ti consente di selezionare il **[!UICONTROL New collaborative package (mutualizedEmpty)]** modello.
 1. Seleziona la campagna di riferimento.
 1. Specifica l’etichetta, la cartella e la pianificazione di esecuzione per il pacchetto della campagna.
 
@@ -121,11 +121,11 @@ Applica i seguenti passaggi:
 
 Le date di inizio e di fine definiscono il periodo di visibilità della campagna nell’elenco dei pacchetti della campagna.
 
-Per le **campagne collaborative**, l&#39;entità centrale deve specificare la scadenza per la registrazione e la personalizzazione.
+Per **campagne collaborative**, l’entità centrale deve specificare il termine di registrazione e personalizzazione.
 
 >[!NOTE]
 >
->Il **[!UICONTROL Personalization deadline]** consente all&#39;entità centrale di scegliere una scadenza entro la quale le entità locali devono aver consegnato i documenti (fogli di calcolo, immagini) da utilizzare per configurare la campagna. Questa non è un&#39;opzione obbligatoria. L’utilizzo graduale di questa data non influisce sull’implementazione della campagna.
+>La **[!UICONTROL Personalization deadline]** consente all’entità centrale di scegliere una scadenza entro la quale le entità locali devono aver consegnato i documenti (fogli di calcolo, immagini) da utilizzare per configurare la campagna. Questa non è un&#39;opzione obbligatoria. L’utilizzo graduale di questa data non influirà sull’implementazione della campagna.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -141,7 +141,7 @@ L’entità centrale deve specificare le entità locali coinvolte per campagna n
 
 ### Modalità di approvazione {#approval-modes}
 
-Per **campagne collaborative**, puoi specificare la modalità di approvazione dell&#39;ordine.
+Per **campagne collaborative**, puoi specificare la modalità di approvazione dell’ordine.
 
 ![](assets/mkg_dist_edit_kit1.png)
 
@@ -157,7 +157,7 @@ La configurazione per le notifiche è identica alle notifiche per un&#39;entità
 
 ## Ordinamento di una campagna {#ordering-a-campaign}
 
-Quando una campagna collaborativa viene aggiunta all’elenco dei pacchetti di campagne, le entità locali appartenenti al pubblico definito dall’entità centrale ricevono una notifica (le **campagne collaborative (per approvazione target)** non dispongono di un pubblico predefinito). Il messaggio inviato contiene un collegamento che consente di registrarsi per la campagna, come illustrato di seguito:
+Quando una campagna collaborativa viene aggiunta all’elenco dei pacchetti di campagne, le entità locali appartenenti al pubblico definito dall’entità centrale ricevono una notifica (il **campagne collaborative (per approvazione target)** non hanno un pubblico predefinito). Il messaggio inviato contiene un collegamento che consente di registrarsi per la campagna, come illustrato di seguito:
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
@@ -171,7 +171,7 @@ Dopo che un ente locale ha completato la sua registrazione, gli enti centrali ri
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-Per ulteriori informazioni, consulta la sezione [Processo di approvazione](creating-a-local-campaign.md#approval-process) .
+Per ulteriori informazioni, consulta la sezione [Processo di approvazione](creating-a-local-campaign.md#approval-process) sezione .
 
 ## Approvazione di un ordine {#approving-an-order}
 

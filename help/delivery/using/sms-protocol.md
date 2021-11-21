@@ -27,7 +27,7 @@ L’SMS potrebbe essere limitato all’invio di messaggi di testo brevi senza fo
 
 Esistono due modi principali per inviare un SMS:
 
-* Mandalo manualmente da un telefono, il modo solito per comunicare direttamente tra le persone.
+* Mandalo manualmente da un telefono, il modo abituale per comunicare direttamente tra le persone.
 * Invialo da Internet, il modo in cui Adobe Campaign invia i messaggi. Per questo, è necessario un provider di servizi SMS che connetta Internet alla rete mobile.
 Adobe Campaign utilizza il protocollo SMPP per inviare SMS a un provider di servizi.
 
@@ -133,7 +133,7 @@ Questa PDU viene utilizzata per avviare una connessione a SMSC. **Trasmettitore*
 | Ricevitore | MO + SR |
 | Ricetrasmettitore | MT + MO + SR |
 
-Notable fields in a `BIND_* PDU`:
+Campi di rilievo in un `BIND_* PDU`:
 
 * **system_id**: Accesso utilizzato per l’autenticazione. Impostato nell’account esterno.
 
@@ -221,19 +221,19 @@ Adobe Campaign Classic riconosce SR e MO una volta inseriti nel database. Alcuni
 
 #### INQUIRE_LINK {#enquire-links}
 
-Questa PDU viene utilizzata solo per verificare che la connessione sia attiva. Its frequency should be set according to the provider&#39;s needs.
+Questa PDU viene utilizzata solo per verificare che la connessione sia attiva. La sua frequenza deve essere stabilita in base alle esigenze del fornitore.
 
 I 60 secondi predefiniti devono corrispondere alla maggior parte delle configurazioni impostate nell’account esterno.
 
-#### ENQUIRE_LINK_RESP {#enquire-links-resp}
+#### INQUIRE_LINK_RESP {#enquire-links-resp}
 
-This PDU acknowledges that the connection is alive.
+Questa PDU riconosce che la connessione è attiva.
 
 ### SMS multiparte (SMS lungo) {#multipart}
 
 >[!IMPORTANT]
 >
-> Adobe Campaign only supports multipart SMS or long SMS for sending. UDH e `message_payload` non sono supportati per gli SMS in entrata (MO), il che significa che l’opzione MO è limitata a 160 caratteri.
+> Adobe Campaign supporta solo SMS multiparte o SMS lunghi per l’invio. UDH e `message_payload` non sono supportati per gli SMS in entrata (MO), il che significa che l’opzione MO è limitata a 160 caratteri.
 
 Gli SMS multiparte, o SMS lunghi, sono SMS inviati in più parti. A causa di limitazioni tecniche nel protocollo di rete mobile, un SMS non può essere più grande di 140 byte o dovrà essere diviso. Consulta la sezione [Codifica testo SMS](sms-protocol.md#sms-text-encoding) per ulteriori informazioni sul numero di caratteri che possono essere inclusi in un SMS.
 
@@ -330,7 +330,7 @@ Per impostazione predefinita, tutti gli errori vengono forniti come errori soft.
 
 ### Codifica testo SMS {#sms-text-encoding}
 
-You should **always contact the SMSC provider in case of encoding problems**. Solo i provider SMSC sono a conoscenza della codifica che supportano e delle regole speciali che possono essere applicate a causa di limitazioni nella loro piattaforma tecnica.
+Dovrebbe **contatta sempre il provider SMSC in caso di problemi di codifica**. Solo i provider SMSC sono a conoscenza della codifica che supportano e delle regole speciali che possono essere applicate a causa di limitazioni nella loro piattaforma tecnica.
 
 I messaggi SMS utilizzano una speciale codifica a 7 bit, spesso denominata codifica GSM7.
 
@@ -388,9 +388,9 @@ Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del 
 
 Nome DNS o indirizzo IP del server a cui connettersi.
 
-#### Port {#port}
+#### Porta {#port}
 
-The TCP port to connect to.
+Porta TCP a cui connettersi.
 
 #### Account {#account}
 
@@ -492,7 +492,7 @@ Indica il codice breve principale dell&#39;account. Se per questo account vengon
 
 TON (Tipo di numero) e NPI (Indicatore del piano di numerazione) sono descritti nella sezione 5.2.5 del [Specifiche di SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Questi valori devono essere impostati sulle esigenze del provider.
 
-They are transmitted as-is in `source_addr_ton`, `source_addr_npi`, `dest_addr_ton` and `dest_addr_npi` fields of the `SUBMIT_SM PDU`.
+Sono trasmessi così come sono `source_addr_ton`, `source_addr_npi`, `dest_addr_ton` e `dest_addr_npi` campi `SUBMIT_SM PDU`.
 
 #### Tipo di servizio {#service-type}
 
@@ -586,7 +586,7 @@ Se questa funzione è abilitata, Adobe Campaign non sarà in grado di contare le
 
 #### Invia il numero di telefono completo {#send-full-phone-number}
 
-When this checkbox is not checked, only digits of the phone number are sent to the provider (`destination_addr` field of the `SUBMIT_SM` field). Questo è il comportamento predefinito, in quanto l’indicatore del numero internazionale, solitamente un prefisso +, viene sostituito dai campi TON e NPI in SMPP.
+Quando questa casella di controllo non è selezionata, vengono inviate al provider solo le cifre del numero di telefono (`destination_addr` campo `SUBMIT_SM` (campo). Questo è il comportamento predefinito, in quanto l’indicatore del numero internazionale, solitamente un prefisso +, viene sostituito dai campi TON e NPI in SMPP.
 
 Quando la casella di controllo è selezionata, il numero di telefono viene inviato così com&#39;è, senza pre-elaborazione e spazi potenziali, + prefisso o cancelletto/hash/stella segni.
 
@@ -602,7 +602,7 @@ Può essere utile a scopo di debug o test.
 
 Per la convalida del certificato è possibile scegliere tra tre valori diversi:
 
-* Controllo completo della certificazione (incluso il nome host), predefinito.
+* Verifica completa della certificazione (incluso il nome host), impostazione predefinita.
 * Ignora la verifica del nome host.
 * Ignora la verifica del certificato.
 
@@ -786,13 +786,13 @@ Le frecce rappresentano i flussi di dati.
 
 Quando si inviano parti di consegna, l’MTA genera elementi secondari MTA. Il numero di processi figlio MTA è dinamico e dipende da una configurazione in serverConf.xml. Ogni elemento figlio MTA crea un&#39;istanza del connettore `CSmppConnectorWorker` che si connette al provider SMPP. Le connessioni vengono mantenute in vita finché il figlio MTA viene mantenuto in vita, configurabile anche in serverConf.xml.
 
-The SMS process only processes SR, it connects to the provider and leaves the connection open. Il processo si riconnette ogni 10 minuti per ricaricare nuove impostazioni, operazione normale.
+Il processo SMS elabora solo l’SR, si connette al provider e lascia aperta la connessione. Il processo si riconnette ogni 10 minuti per ricaricare nuove impostazioni, operazione normale.
 
 ### Voci MT, SR e broadlog corrispondenti {#matching-mt}
 
 Tabella intermedia `nmsProviderMsgId` viene utilizzato per memorizzare temporaneamente i dati MT e SR prima di essere impegnati in modo asincrono nel registro di trasmissione.
 
-`nmsProviderMsgId` la tabella presenta 3 gruppi di colonne:
+`nmsProviderMsgId` La tabella ha 3 gruppi di colonne:
 
 * Colonne aggiornate quando un MT viene inviato e riconosciuto: `iBroadLogId`, `iDeliveryId`
 
@@ -884,7 +884,7 @@ Con la `DELIVER_SM PDU`:
 
 Con la `DELIVER_SM_RESP PDU`:
 
-* Check that it was sent quickly after receiving the `DELIVER_SM PDU`, typically less than 1 second.
+* Verifica che sia stato inviato rapidamente dopo la ricezione del `DELIVER_SM PDU`, generalmente inferiore a 1 secondo.
 * Verificare che sia stato eseguito correttamente, command_status = 0.
 
 ### Controlla con il tuo provider {#provider}

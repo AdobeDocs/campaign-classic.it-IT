@@ -19,22 +19,22 @@ ht-degree: 4%
 
 Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una extranet, o moduli di notifica, inclusi dati dal database con tabelle, grafici, moduli di input, ecc. Utilizza questa funzionalità per progettare e pubblicare pagine web in cui gli utenti possono cercare o immettere informazioni.
 
-Il componente aggiuntivo opzionale **Survey** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni sul profilo, per effettuare o annullare l’iscrizione a un servizio informazioni o a un modulo di partecipazione al concorso. Una volta raccolte le risposte, queste vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte fornite ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
+L&#39;opzione **Sondaggio** add-on consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni di profilo, per effettuare o annullare l’iscrizione a un servizio informazioni o a un modulo di partecipazione a un concorso. Una volta raccolte le risposte, queste vengono memorizzate nel database o nelle variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte fornite ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
 
-Questo capitolo descrive come creare e gestire **Sondaggi**, la gestione dei campi e delle pagine, le modalità di archiviazione e i record.
+Questo capitolo descrive come creare e gestire **Indagini**, gestione dei campi e delle pagine, modalità di archiviazione e record.
 
 Scopri come creare il tuo primo sondaggio in [questa pagina](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
->* I passaggi dettagliati per la creazione di un modulo web standard sono disponibili in [questo documento](../../web/using/about-web-forms.md).
+>* I passaggi dettagliati per la creazione di un modulo web standard sono disponibili in [presente documento](../../web/using/about-web-forms.md).
 >
->* La gestione delle applicazioni web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
+>* La gestione delle applicazioni web è descritta in [presente documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
 
 
 ## Ambito delle funzioni {#campaign-surveys-scope}
 
-In Adobe Campaign, utilizza [applicazioni web](../../web/using/about-web-forms.md) per:
+In Adobe Campaign, utilizza [Applicazioni web](../../web/using/about-web-forms.md) a:
 
 * Creare moduli a più pagine,
 * Gestire i moduli multilingue con uno strumento di traduzione integrato,
@@ -65,7 +65,7 @@ Per creare e distribuire un sondaggio ed elaborarne i risultati, effettua i segu
 1. Pubblica, quindi distribuisci il sondaggio ai destinatari (ad esempio, includi un collegamento in una consegna o in un sito web).
 1. Monitora le risposte e visualizza i rapporti.
 
-Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi, consulta [questo documento](../../web/using/about-web-forms.md). In questo capitolo sono descritte solo le configurazioni specifiche dei sondaggi.
+Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi, consulta [presente documento](../../web/using/about-web-forms.md). In questo capitolo sono descritte solo le configurazioni specifiche dei sondaggi.
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi
 
 ## Impostazioni {#settings}
 
-Per impostazione predefinita, i sondaggi sono disponibili nel nodo **[!UICONTROL Resources > Online > Web Applications]** della struttura di Adobe Campaign.
+Per impostazione predefinita, i sondaggi sono disponibili nella **[!UICONTROL Resources > Online > Web Applications]** nodo della struttura Adobe Campaign.
 
 Le impostazioni sono memorizzate nelle seguenti cartelle:
 
@@ -82,4 +82,4 @@ Le impostazioni sono memorizzate nelle seguenti cartelle:
 
 >[!NOTE]
 >
->I dettagli delle impostazioni sono disponibili in [questo documento](../../web/using/about-web-forms.md).
+>I dettagli delle impostazioni sono disponibili in [presente documento](../../web/using/about-web-forms.md).

@@ -30,7 +30,7 @@ I flussi di lavoro si verificano in vari contesti e fasi del processo di gestion
 Adobe Campaign utilizza i flussi di lavoro per:
 
 * Eseguire campagne di targeting. [Ulteriori informazioni](building-a-workflow.md#implementation-steps-)
-* Creare campagne: per ogni campagna, la scheda **[!UICONTROL Workflow]** ti consente di creare il target e le consegne. [Ulteriori informazioni](building-a-workflow.md#campaign-workflows)
+* Creare campagne: per ogni campagna, **[!UICONTROL Workflow]** consente di creare il target e le consegne. [Ulteriori informazioni](building-a-workflow.md#campaign-workflows)
 * Eseguire processi tecnici: pulizia, raccolta di informazioni di tracciamento o calcoli provvisori. [Ulteriori informazioni](building-a-workflow.md#technical-workflows)
 
 Un flusso di lavoro può significare sia una definizione del processo (il modello di flusso di lavoro, che è una rappresentazione di ciò che dovrebbe accadere) che un’istanza di questo processo (un’istanza di flusso di lavoro, che è una rappresentazione di ciò che effettivamente accade).
@@ -43,11 +43,11 @@ Ogni flusso di lavoro contiene:
 
 * **[!UICONTROL Activities]**
 
-   Un’attività descrive un modello di attività. Le varie attività disponibili sono rappresentate nel diagramma da icone. Ogni tipo ha proprietà comuni e proprietà specifiche. Ad esempio, mentre tutte le attività hanno un nome e un’etichetta, solo l’attività **[!UICONTROL Approval]** dispone di un’assegnazione.
+   Un’attività descrive un modello di attività. Le varie attività disponibili sono rappresentate nel diagramma da icone. Ogni tipo ha proprietà comuni e proprietà specifiche. Ad esempio, mentre tutte le attività hanno un nome e un’etichetta, solo la **[!UICONTROL Approval]** l&#39;attività ha un&#39;assegnazione.
 
    In un diagramma di flusso di lavoro, una determinata attività può produrre più attività, in particolare quando è presente un ciclo o azioni ricorrenti (periodiche).
 
-   Tutte le attività del flusso di lavoro sono elencate in [questa sezione](about-activities.md), inclusi casi d&#39;uso ed esempi.
+   Tutte le attività del flusso di lavoro sono elencate in [questa sezione](about-activities.md), compresi casi d’uso e campioni.
 
 * **[!UICONTROL Transitions]**
 
@@ -75,6 +75,6 @@ Consulta queste sezioni per trovare indicazioni e best practice per automatizzar
 * Scopri come creare un flusso di lavoro in [questa sezione](building-a-workflow.md).
 * Scopri come utilizzare i flussi di lavoro per importare dati in Campaign in [questa sezione](../../platform/using/import-export-workflows.md).
 * Le best practice per i flussi di lavoro sono descritte in [questa pagina](workflow-best-practices.md).
-* Trova indicazioni sull&#39;esecuzione del flusso di lavoro in [questa sezione](starting-a-workflow.md).
+* Informazioni sull’esecuzione di un flusso di lavoro in [questa sezione](starting-a-workflow.md).
 * Scopri come monitorare i flussi di lavoro in [questa pagina](monitoring-workflow-execution.md).
 * Scopri come concedere l’accesso agli utenti per utilizzare i flussi di lavoro in [questa pagina](managing-rights.md).

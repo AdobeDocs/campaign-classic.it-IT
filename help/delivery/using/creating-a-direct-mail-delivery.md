@@ -21,10 +21,10 @@ Per creare una nuova consegna direct mailing, effettua le seguenti operazioni:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione delle consegne sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 
 1. Crea una nuova consegna, ad esempio dal dashboard Consegna .
-1. Seleziona il modello di consegna **Consegna per direct mailing (carta)**.
+1. Selezionare il modello di consegna **Consegna per direct mailing (carta)**.
 
    ![](assets/direct_mail.png)
 

@@ -27,4 +27,4 @@ A questo scopo, accedi a un database esistente e applica i seguenti passaggi:
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Specifica i parametri della nuova istanza. Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+   Specifica i parametri della nuova istanza. Per ulteriori informazioni, consulta [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).

@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Un’attività di tipo **Intersection** crea un target dall’intersezione delle destinazioni ricevute.
+Un **Intersection** L’attività -type crea un target dall’intersezione dei target ricevuti.
 
 Un’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Per ulteriori informazioni sulla configurazione e l&#39;utilizzo dell&#39;attività di intersezione, consulta [Estrazione di dati di giunzione (Intersezione)](targeting-data.md#extracting-joint-data--intersection-).
+Per ulteriori informazioni sulla configurazione e l’utilizzo dell’attività di intersezione, consulta [Estrazione di dati comuni (intersezione)](targeting-data.md#extracting-joint-data--intersection-).
 
-Se desideri elaborare la popolazione rimanente, seleziona l’opzione **[!UICONTROL Generate complement]** . Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All’attività verrà quindi aggiunta una transizione in uscita aggiuntiva, come segue:
+Controlla la **[!UICONTROL Generate complement]** se desideri elaborare la popolazione rimanente. Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All’attività verrà quindi aggiunta una transizione in uscita aggiuntiva, come segue:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -33,13 +33,13 @@ Se desideri elaborare la popolazione rimanente, seleziona l’opzione **[!UICONT
 
 Nell’esempio seguente, lo scopo dell’intersezione è quello di calcolare i destinatari comuni a tre semplici query per creare un elenco.
 
-1. Dopo tre semplici query, inserisci un&#39;attività di tipo **[!UICONTROL Intersection]**.
+1. Dopo tre semplici query, inserisci un **[!UICONTROL Intersection]** attività di tipo -type.
 
    In questo esempio; le query riguardano rispettivamente gli uomini, i beneficiari che vivono a Parigi e i beneficiari di età compresa tra i 18 e i 30 anni.
 
-1. Configura l&#39;intersezione. A questo scopo, seleziona il metodo di riconciliazione **[!UICONTROL Keys only]** in quanto le popolazioni risultanti dalle query contengono dati coerenti.
+1. Configura l&#39;intersezione. A questo scopo, seleziona la **[!UICONTROL Keys only]** metodo di riconciliazione in quanto le popolazioni risultanti dalle query contengono dati coerenti.
 1. Se hai inserito dati aggiuntivi per le query, puoi scegliere di mantenere solo quelli condivisi dai destinatari selezionando la casella corrispondente.
-1. Se desideri utilizzare il resto dei dati (per quanto riguarda le query ma non la loro intersezione), seleziona la casella **[!UICONTROL Generate complement]**.
+1. Se desideri utilizzare il resto dei dati (per quanto riguarda le query ma non la loro intersezione), controlla il **[!UICONTROL Generate complement]** scatola.
 1. Aggiungi un’attività di aggiornamento elenco dopo il risultato dell’intersezione. È inoltre possibile aggiungere un aggiornamento dell’elenco al complemento, se lo si desidera.
 1. Esegui il flusso di lavoro. In questo caso, due destinatari si applicano a tutte e tre le query inserite contemporaneamente. Il complemento è composto da cinque destinatari che si applicano solo a una o due delle tre query.
 
@@ -60,4 +60,4 @@ Ogni evento in entrata deve specificare un target definito da questi parametri.
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione,  **[!UICONTROL schema]** è lo schema del gruppo (in genere  **[!UICONTROL nms:recipient]**) ed  **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori target, **[!UICONTROL schema]** è lo schema del gruppo (in genere **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.

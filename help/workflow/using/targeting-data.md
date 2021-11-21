@@ -21,9 +21,9 @@ ht-degree: 4%
 
 ### Selezione dei dati {#selecting-data}
 
-Un’attività **[!UICONTROL Query]** ti consente di selezionare i dati di base per creare la popolazione target. Per ulteriori informazioni, consulta [Creazione di una query](query.md#creating-a-query).
+A **[!UICONTROL Query]** consente di selezionare i dati di base per generare la popolazione target. Per ulteriori informazioni, consulta [Creazione di una query](query.md#creating-a-query).
 
-Puoi inoltre utilizzare le seguenti attività per eseguire query e perfezionare i dati dal database: [Query incrementale](incremental-query.md), [Leggi elenco](read-list.md).
+Puoi inoltre utilizzare le seguenti attività per eseguire query e perfezionare i dati dal database: [Incremental query](incremental-query.md), [Leggi elenco](read-list.md).
 
 È possibile raccogliere dati aggiuntivi da inoltrare ed elaborare per tutto il ciclo di vita del flusso di lavoro. Per ulteriori informazioni, consulta [Aggiunta di dati](query.md#adding-data) e [Modifica di dati aggiuntivi](#editing-additional-data).
 
@@ -31,11 +31,11 @@ Puoi inoltre utilizzare le seguenti attività per eseguire query e perfezionare 
 
 Una volta aggiunti i dati aggiuntivi, puoi modificarli o utilizzarli per perfezionare la destinazione definita nell’attività di query.
 
-Il collegamento **[!UICONTROL Edit additional data...]** ti consente di visualizzare i dati aggiunti e modificarli o aggiungerli.
+La **[!UICONTROL Edit additional data...]** link ti consente di visualizzare i dati aggiunti e modificarli o aggiungerli.
 
 ![](assets/wf_add_data_edit_link.png)
 
-Per aggiungere dati alle colonne di output definite in precedenza, selezionalo nell’elenco dei campi disponibili. Per creare una nuova colonna di output, fai clic sull’icona **[!UICONTROL Add]** , quindi seleziona il campo e fai clic su **[!UICONTROL Edit expression]**.
+Per aggiungere dati alle colonne di output definite in precedenza, selezionalo nell’elenco dei campi disponibili. Per creare una nuova colonna di output, fai clic sul pulsante **[!UICONTROL Add]** , quindi seleziona il campo e fai clic su **[!UICONTROL Edit expression]**.
 
 ![](assets/query_add_an_output_column.png)
 
@@ -43,25 +43,25 @@ Definire una modalità di calcolo per il campo da aggiungere, ad esempio un aggr
 
 ![](assets/query_add_an_output_column_formula.png)
 
-L’opzione **[!UICONTROL Add a sub-item]** ti consente di allegare i dati calcolati alla raccolta. Ciò ti consente di selezionare i dati aggiuntivi dalla raccolta o di definire i calcoli aggregati sugli elementi di raccolta.
+La **[!UICONTROL Add a sub-item]** consente di allegare i dati calcolati alla raccolta. Ciò ti consente di selezionare i dati aggiuntivi dalla raccolta o di definire i calcoli aggregati sugli elementi di raccolta.
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
 I sottoelementi saranno rappresentati nel sottoalbero della raccolta a cui sono mappati.
 
-Le raccolte vengono visualizzate nella sottoscheda **[!UICONTROL Collections]** . Per filtrare gli elementi raccolti, fai clic sull’icona **[!UICONTROL Detail]** della raccolta selezionata. La procedura guidata di filtro consente di selezionare i dati raccolti e specificare le condizioni di filtro da applicare ai dati della raccolta.
+Le raccolte vengono visualizzate nella **[!UICONTROL Collections]** sottoscheda . Per filtrare gli elementi raccolti, fai clic sul pulsante **[!UICONTROL Detail]** icona della raccolta selezionata. La procedura guidata di filtro consente di selezionare i dati raccolti e specificare le condizioni di filtro da applicare ai dati della raccolta.
 
 ![](assets/query_add_columns_collection.png)
 
 ### Ottimizzazione del target utilizzando dati aggiuntivi {#refining-the-target-using-additional-data}
 
-I dati aggiuntivi raccolti possono consentirti di perfezionare il filtraggio dei dati nel database. A questo scopo, fai clic sul collegamento **[!UICONTROL Refine the target using additional data...]** : questo consente di filtrare eccessivamente i dati aggiunti.
+I dati aggiuntivi raccolti possono consentirti di perfezionare il filtraggio dei dati nel database. A questo scopo, fai clic sul pulsante **[!UICONTROL Refine the target using additional data...]** link: questo consente di filtrare eccessivamente i dati aggiunti.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
 ### Omogenealizzazione dei dati {#homogenizing-data}
 
-Nelle attività di tipo **[!UICONTROL Union]** o **[!UICONTROL Intersection]**, puoi scegliere di mantenere la coerenza dei dati solo per i dati aggiuntivi condivisi. In questo caso, la tabella di lavoro dell’output temporaneo di questa attività conterrà solo i dati aggiuntivi presenti in tutti i set in entrata.
+In **[!UICONTROL Union]** o **[!UICONTROL Intersection]** le attività di tipo , puoi scegliere di conservare solo i dati aggiuntivi condivisi per mantenere la coerenza dei dati. In questo caso, la tabella di lavoro dell’output temporaneo di questa attività conterrà solo i dati aggiuntivi presenti in tutti i set in entrata.
 
 ![](assets/option-common_additionnal_col_only.png)
 
@@ -73,9 +73,9 @@ Durante le fasi di riconciliazione dei dati (**[!UICONTROL Union]**, **[!UICONTR
 
 ### Creazione di sottoinsiemi {#creating-subsets}
 
-L’attività **[!UICONTROL Split]** ti consente di creare sottoinsiemi in base a criteri definiti tramite query di estrazione. Per ogni sottoinsieme, quando modifichi una condizione di filtro sulla popolazione, accederai all’attività di query standard che ti consente di definire le condizioni di segmentazione di destinazione.
+La **[!UICONTROL Split]** L’attività ti consente di creare sottoinsiemi in base a criteri definiti tramite query di estrazione. Per ogni sottoinsieme, quando modifichi una condizione di filtro sulla popolazione, accederai all’attività di query standard che ti consente di definire le condizioni di segmentazione di destinazione.
 
-Puoi dividere una destinazione in più sottoinsiemi utilizzando solo dati aggiuntivi come condizioni di filtro o in aggiunta ai dati di destinazione. Puoi anche utilizzare dati esterni se hai acquistato l’opzione **Federated Data Access** .
+Puoi dividere una destinazione in più sottoinsiemi utilizzando solo dati aggiuntivi come condizioni di filtro o in aggiunta ai dati di destinazione. Puoi anche utilizzare dati esterni se hai acquistato il **Federated Data Access** opzione .
 
 Per ulteriori informazioni, consulta [Creazione di sottoinsiemi tramite l’attività Split](#creating-subsets-using-the-split-activity).
 
@@ -127,7 +127,7 @@ L’intersezione ti consente di recuperare solo le righe condivise dalle popolaz
 
 Inoltre, è possibile mantenere solo una selezione di colonne, o solo le colonne condivise dalla popolazione in entrata.
 
-L’attività di intersezione è descritta nella sezione [Intersezione](intersection.md) .
+L’attività di intersezione è descritta nella sezione [Intersection](intersection.md) sezione .
 
 ### Esclusione di una popolazione (Esclusione) {#excluding-a-population--exclusion-}
 
@@ -135,45 +135,45 @@ L’attività di esclusione ti consente di escludere gli elementi di un target d
 
 Se necessario, è possibile manipolare le tabelle in entrata. Infatti, per escludere un target da un’altra dimensione, questo deve essere restituito alla stessa dimensione di targeting del target principale. A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e specifica le condizioni di modifica della dimensione.
 
-La riconciliazione dei dati viene eseguita tramite un identificatore, un asse di modifica o un join. Un esempio è disponibile in [Uso dei dati di un elenco: Leggi elenco](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
+La riconciliazione dei dati viene eseguita tramite un identificatore, un asse di modifica o un join. Un esempio è disponibile in [Utilizzo di dati da un elenco: Leggi elenco](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
 ### Creazione di sottoinsiemi tramite l’attività Split {#creating-subsets-using-the-split-activity}
 
-L’ attività **[!UICONTROL Split]** è un’attività standard che consente di creare tutti i set necessari tramite una o più dimensioni di filtro e di generare una transizione di output per sottoinsieme o una transizione univoca.
+La **[!UICONTROL Split]** attività è un’attività standard che consente di creare il numero di set necessario tramite una o più dimensioni di filtro e di generare una transizione di output per sottoinsieme o una transizione univoca.
 
 I dati aggiuntivi trasmessi dalla transizione in entrata possono essere utilizzati nei criteri di filtro.
 
 Per configurarlo, devi prima selezionare i criteri:
 
-1. Nel flusso di lavoro, trascina e rilascia un’attività **[!UICONTROL Split]** .
-1. Nella scheda **[!UICONTROL General]** , seleziona l’opzione desiderata: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** o **[!UICONTROL Use external data]**.
-1. Se è selezionata l’opzione **[!UICONTROL Use data from the target and additional data]** , la dimensione di targeting ti consente di utilizzare tutti i dati trasmessi dalla transizione in entrata.
+1. Nel flusso di lavoro, trascina e rilascia una **[!UICONTROL Split]** attività.
+1. In **[!UICONTROL General]** seleziona l’opzione desiderata: **[!UICONTROL Use data from the target and additional data]**, **[!UICONTROL Use the additional data only]** o **[!UICONTROL Use external data]**.
+1. Se la **[!UICONTROL Use data from the target and additional data]** se selezionata, la dimensione di targeting ti consente di utilizzare tutti i dati trasmessi dalla transizione in entrata.
 
    ![](assets/split-general-tab-options.png)
 
    Quando si creano i sottoinsiemi, vengono utilizzati i parametri di filtro sopra indicati.
 
-   Per definire le condizioni di filtro, scegli l’opzione **[!UICONTROL Add a filtering condition on the inbound population]** e fai clic sul collegamento **[!UICONTROL Edit...]** . Quindi specifica le condizioni di filtro per la creazione di questo sottoinsieme.
+   Per definire le condizioni di filtro, scegli la **[!UICONTROL Add a filtering condition on the inbound population]** e fai clic su **[!UICONTROL Edit...]** link. Quindi specifica le condizioni di filtro per la creazione di questo sottoinsieme.
 
    ![](assets/split-subset-config-all-data.png)
 
-   Un esempio che mostra come utilizzare le condizioni di filtro nell&#39;attività **[!UICONTROL Split]** per segmentare il target in popolazioni diverse è descritto in [questa sezione](cross-channel-delivery-workflow.md).
+   Un esempio che mostra come utilizzare le condizioni di filtro nel **[!UICONTROL Split]** viene descritta in [questa sezione](cross-channel-delivery-workflow.md).
 
-   Il campo **[!UICONTROL Label]** ti consente di assegnare un nome al sottoinsieme appena creato, che corrisponde alla transizione in uscita.
+   La **[!UICONTROL Label]** consente di assegnare un nome al sottoinsieme appena creato, che corrisponde alla transizione in uscita.
 
    Puoi anche assegnare un codice di segmento al sottoinsieme per identificarlo e utilizzarlo per eseguire il targeting della sua popolazione.
 
-   Se necessario, puoi modificare le dimensioni di targeting e filtro singolarmente per ogni sottoinsieme che desideri creare. A questo scopo, modifica la condizione di filtro del sottoinsieme e seleziona l’opzione **[!UICONTROL Use a specific filtering dimension]** .
+   Se necessario, puoi modificare le dimensioni di targeting e filtro singolarmente per ogni sottoinsieme che desideri creare. A questo scopo, modifica la condizione di filtro del sottoinsieme e controlla il **[!UICONTROL Use a specific filtering dimension]** opzione .
 
    ![](assets/split-subset-config-specific-filtering.png)
 
-1. Se è selezionata l’opzione **[!UICONTROL Use the additional data only]** , vengono offerti solo dati aggiuntivi per il filtro dei sottoinsiemi.
+1. Se la **[!UICONTROL Use the additional data only]** è selezionata, per il filtro dei sottoinsiemi sono disponibili solo dati aggiuntivi.
 
    ![](assets/split-subset-config-additional-data-only.png)
 
-1. Se l&#39;opzione **Federated Data Access** è abilitata, **[!UICONTROL Use external data]** consente di elaborare i dati in un database esterno già configurato oppure di creare una nuova connessione a un database.
+1. Se la **Federated Data Access** è abilitata l&#39;opzione , **[!UICONTROL Use external data]** consente di elaborare i dati in un database esterno già configurato o di creare una nuova connessione a un database.
 
    ![](assets/split-subset-config-add_external_data.png)
 
@@ -185,27 +185,27 @@ Per configurarlo, devi prima selezionare i criteri:
 
 Quindi, è necessario aggiungere nuovi sottoinsiemi:
 
-1. Fai clic sul pulsante **[!UICONTROL Add]** e definisci le condizioni di filtro.
+1. Fai clic sul pulsante **[!UICONTROL Add]** e definire le condizioni di filtro.
 
    ![](assets/wf_split_add_a_tab.png)
 
-1. Definisci la dimensione di filtro nella scheda **[!UICONTROL General]** dell’attività (vedi sopra). Si applica a tutti i sottoinsiemi per impostazione predefinita.
+1. Definisci la dimensione di filtro nella **[!UICONTROL General]** scheda dell’attività (vedi sopra).Si applica a tutti i sottoinsiemi per impostazione predefinita.
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Se necessario, puoi modificare singolarmente la dimensione di filtro per ciascun sottoinsieme. Questo consente di creare un set per tutti i titolari di carte Gold, uno per tutti i destinatari che hanno fatto clic sulla newsletter più recente e un terzo per le persone di età compresa tra i 18 e i 25 anni che hanno effettuato un acquisto in negozio negli ultimi 30 giorni, il tutto utilizzando la stessa attività di suddivisione. A questo scopo, seleziona l’opzione **[!UICONTROL Use a specific filtering dimension]** e seleziona il contesto di filtraggio dei dati.
+1. Se necessario, puoi modificare singolarmente la dimensione di filtro per ciascun sottoinsieme. Questo consente di creare un set per tutti i titolari di carte Gold, uno per tutti i destinatari che hanno fatto clic sulla newsletter più recente e un terzo per le persone di età compresa tra i 18 e i 25 anni che hanno effettuato un acquisto in negozio negli ultimi 30 giorni, il tutto utilizzando la stessa attività di suddivisione. A questo scopo, seleziona la **[!UICONTROL Use a specific filtering dimension]** e seleziona il contesto di filtro dati.
 
    ![](assets/wf_split_change_dimension.png)
 
    >[!NOTE]
    >
-   >Se hai acquisito l’opzione **Federated Data Access** , puoi creare sottoinsiemi in base alle informazioni in una base esterna. A questo scopo, seleziona lo schema della tabella esterna nel campo **[!UICONTROL Targeting dimension]** . Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database--fda-.md).
+   >Se hai acquisito il **Federated Data Access** è possibile creare sottoinsiemi in base alle informazioni presenti in una base esterna. A questo scopo, seleziona lo schema della tabella esterna nel **[!UICONTROL Targeting dimension]** campo . Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database--fda-.md).
 
 Una volta creati i sottoinsiemi, per impostazione predefinita l’attività divisa mostra quante transizioni di output sono presenti nei sottoinsiemi:
 
 ![](assets/wf_split_multi_outputs.png)
 
-Puoi raggruppare tutti questi sottoinsiemi in una singola transizione di output. In questo caso, ad esempio, il collegamento ai rispettivi sottoinsiemi sarà visibile nel codice del segmento. A questo scopo, seleziona l’opzione **[!UICONTROL Generate all subsets in the same table]** .
+Puoi raggruppare tutti questi sottoinsiemi in una singola transizione di output. In questo caso, ad esempio, il collegamento ai rispettivi sottoinsiemi sarà visibile nel codice del segmento. A questo scopo, seleziona la **[!UICONTROL Generate all subsets in the same table]** opzione .
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -213,7 +213,7 @@ Ad esempio, puoi inserire una singola attività di consegna e personalizzare il 
 
 ![](assets/wf_split_single_output.png)
 
-I sottoinsiemi possono essere creati anche utilizzando l’attività **[!UICONTROL Cells]** . Per ulteriori informazioni, consulta la sezione [Celle](cells.md) .
+I sottoinsiemi possono essere creati anche utilizzando **[!UICONTROL Cells]** attività. Per ulteriori informazioni, consulta la sezione [Celle](cells.md) sezione .
 
 ### Utilizzo di dati di destinazione {#using-targeted-data}
 
@@ -221,7 +221,7 @@ Una volta identificati e preparati, i dati possono essere utilizzati nei seguent
 
 * Puoi aggiornare i dati nel database in seguito alla manipolazione dei dati nelle varie fasi del flusso di lavoro.
 
-   Per ulteriori informazioni, [Aggiorna dati](update-data.md).
+   Per ulteriori informazioni, consulta [Update data](update-data.md).
 
 * È inoltre possibile aggiornare il contenuto degli elenchi esistenti.
 
@@ -229,7 +229,7 @@ Una volta identificati e preparati, i dati possono essere utilizzati nei seguent
 
 * Puoi preparare o avviare direttamente le consegne nel flusso di lavoro.
 
-   Per ulteriori informazioni, consulta [Consegna](delivery.md), [Controllo consegna](delivery-control.md) e [Consegna continua](continuous-delivery.md).
+   Per ulteriori informazioni, consulta [Consegna](delivery.md), [Controllo della consegna](delivery-control.md) e [Consegna continua](continuous-delivery.md).
 
 ## Gestione dati {#data-management}
 
@@ -241,9 +241,9 @@ In Adobe Campaign, la gestione dei dati combina una serie di attività per risol
 
 Per implementare queste operazioni, Adobe Campaign offre:
 
-* Attività di raccolta dati: [Trasferimento file](file-transfer.md), [Caricamento dati (file)](data-loading--file-.md), [Caricamento dati (RDBMS)](data-loading--rdbms-.md), [Aggiornamento dati](update-data.md). Questa prima fase della raccolta dei dati prepara i dati per consentirne l’elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e fornisca i risultati previsti. Ad esempio, quando importi i dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
-* Attività di targeting arricchite con opzioni di gestione dati: [Query](query.md), [Unione](union.md), [Intersezione](intersection.md), [Dividi](split.md). Questo ti consente di configurare un’unione o un’intersezione tra dati provenienti da diverse dimensioni di targeting, purché sia possibile la riconciliazione dei dati.
-* Attività di trasformazione dei dati: [Arricchimento](enrichment.md), [Cambia dimensione](change-dimension.md).
+* Attività di raccolta dati: [Trasferimento file](file-transfer.md), [Caricamento dati (file)](data-loading--file-.md), [Caricamento dati (RDBMS)](data-loading--rdbms-.md), [Update data](update-data.md). Questa prima fase della raccolta dei dati prepara i dati per consentirne l’elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e fornisca i risultati previsti. Ad esempio, quando importi i dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
+* Attività di targeting arricchite con opzioni di gestione dati: [Query](query.md), [Union](union.md), [Intersection](intersection.md), [Divisione](split.md). Questo ti consente di configurare un’unione o un’intersezione tra dati provenienti da diverse dimensioni di targeting, purché sia possibile la riconciliazione dei dati.
+* Attività di trasformazione dei dati: [Arricchimento](enrichment.md), [Modifica dimensione](change-dimension.md).
 
 >[!CAUTION]
 >
@@ -255,8 +255,8 @@ Per implementare queste operazioni, Adobe Campaign offre:
 
 Oltre alla dimensione di targeting, la dimensione di filtro consente di specificare la natura dei dati raccolti. Fai riferimento a [Dimensioni di targeting e filtro](building-a-workflow.md#targeting-and-filtering-dimensions).
 
-I dati identificati e raccolti possono essere arricchiti, aggregati e manipolati per ottimizzare la costruzione del target. A questo scopo, oltre alle attività di manipolazione dati descritte nella sezione [Segmentazione dei dati](#segmenting-data) , utilizza quanto segue:
+I dati identificati e raccolti possono essere arricchiti, aggregati e manipolati per ottimizzare la costruzione del target. A tal fine, oltre alle attività di manipolazione dei dati descritte nel [Segmentazione dei dati](#segmenting-data) utilizza quanto segue:
 
-* L’attività **[!UICONTROL Enrichment]** ti consente di aggiungere momentaneamente colonne a uno schema e di aggiungere informazioni ad alcuni elementi. È descritto nella sezione [Enrichment](enrichment.md) dell&#39;archivio delle attività.
-* L’attività **[!UICONTROL Edit schema]** ti consente di modificare la struttura di uno schema. È descritto in dettaglio nella sezione [Modifica schema](edit-schema.md) dell&#39;archivio delle attività.
-* L’ attività **[!UICONTROL Change dimension]** ti consente di modificare la dimensione di targeting durante il ciclo di costruzione di destinazione. È descritto nella sezione [Cambia dimensione](change-dimension.md) .
+* La **[!UICONTROL Enrichment]** attività ti consente di aggiungere momentaneamente colonne a uno schema, nonché di aggiungere informazioni a determinati elementi. È descritto nella sezione [Arricchimento](enrichment.md) sezione dell’archivio delle attività.
+* La **[!UICONTROL Edit schema]** consente di modificare la struttura di uno schema. È descritto nella sezione [Modifica schema](edit-schema.md) sezione dell’archivio delle attività.
+* La **[!UICONTROL Change dimension]** attività ti consente di modificare la dimensione di targeting durante il ciclo di costruzione del target. È descritto nella sezione [Modifica dimensione](change-dimension.md) sezione .

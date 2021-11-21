@@ -25,18 +25,18 @@ Nell’esempio seguente, il target di consegna è stato suddiviso in due gruppi,
 
 ![](assets/a-b-testing-schema.png)
 
-Con Campaign Classic, i test A/B vengono implementati tramite flussi di lavoro, in cui è possibile specificare il gruppo di destinazione e i gruppi che riceveranno ogni variante (consulta [Configurazione dei test a/b](configuring-a-b-testing.md)).
+Con Campaign Classic, il test A/B viene implementato tramite flussi di lavoro, in cui si specifica la popolazione di destinazione e i gruppi che riceveranno ogni variante (consulta [Configurazione del test a/b](configuring-a-b-testing.md)).
 
 Le fasi principali sono:
 
-1. **** Esegue il targeting della popolazione desiderata.
-1. **Dividi la** popolazione in sottoinsiemi in cui testerai le varianti della consegna.
+1. **Target** la popolazione desiderata.
+1. **Dividere la popolazione** in sottoinsiemi su cui testare le varianti della consegna.
 
    Ad esempio, puoi inviare una versione di una consegna a una piccola parte della popolazione target e un’altra versione alla popolazione rimanente. Ciò ti consente di testare una nuova versione di una consegna rispetto alla consegna che di solito viene inviata ai clienti. Puoi anche dividere la popolazione target in 3 gruppi per inviare loro tre diverse versioni di una consegna.
 
-1. **Crea più** versioni della consegna corrispondenti a ciascun sottoinsieme. La variante da testare può essere l’oggetto, il contenuto del messaggio, il nome del mittente e così via.
-1. Avvia il flusso di lavoro, quindi utilizza i **registri di consegna** per analizzare il comportamento dei sottoinsiemi con ogni variante.
+1. **Creare più versioni** della consegna corrispondente a ciascun sottoinsieme. La variante da testare può essere l’oggetto, il contenuto del messaggio, il nome del mittente e così via.
+1. Avvia il flusso di lavoro, quindi utilizza il **registri di consegna** per analizzare il comportamento dei sottoinsiemi con ogni variante.
 
 >[!NOTE]
 >
->I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questo [caso d’uso ](a-b-testing-use-case.md) dedicato.
+>I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questa sezione dedicata [caso d&#39;uso](a-b-testing-use-case.md).

@@ -20,22 +20,22 @@ ht-degree: 3%
 Questa sezione descrive i principi chiave e le best practice per creare un flusso di lavoro in Campaign.
 
 * Crea un flusso di lavoro, vedi [Creazione di un nuovo flusso di lavoro](#creating-a-new-workflow)
-* Progettazione del diagramma del flusso di lavoro, consulta [Aggiunta e collegamento di attività](#adding-and-linking-activities)
-* Accedi ai parametri e alle proprietà delle attività, consulta [Configurazione delle attività](#configuring-activities)
-* Progettare i flussi di lavoro di targeting, consulta [Targeting dei flussi di lavoro](#targeting-workflows)
-* Utilizzare i flussi di lavoro per eseguire una campagna, consulta [Flussi di lavoro di campagna](#campaign-workflows)
-* Accedere e creare flussi di lavoro tecnici, consulta [Flussi di lavoro tecnici](#technical-workflows)
-* Utilizza i modelli per creare flussi di lavoro, vedi [Modelli di flusso di lavoro](#workflow-templates)
+* Progettazione del diagramma del flusso di lavoro, vedi [Aggiunta e collegamento di attività](#adding-and-linking-activities)
+* Accedere ai parametri e alle proprietà delle attività, consulta [Configurazione delle attività](#configuring-activities)
+* Progetta flussi di lavoro di targeting, vedi [Workflow di targeting](#targeting-workflows)
+* Utilizza i flussi di lavoro per eseguire una campagna, vedi [Flussi di lavoro di Campaign](#campaign-workflows)
+* Accedi e crea flussi di lavoro tecnici, vedi [Flussi di lavoro tecnici](#technical-workflows)
+* Utilizzare i modelli per creare flussi di lavoro, vedi [Modelli di flusso di lavoro](#workflow-templates)
 
 ## Creazione di un nuovo flusso di lavoro {#creating-a-new-workflow}
 
-Accedi a una cartella di flusso di lavoro da **[!UICONTROL Explorer]**. Per impostazione predefinita, puoi utilizzare **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+Da **[!UICONTROL Explorer]**, accedere a una cartella di flusso di lavoro. Per impostazione predefinita, puoi utilizzare **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
-Fai clic sul pulsante **[!UICONTROL New]** situato sopra l’elenco dei flussi di lavoro.
+Fai clic sul pulsante **[!UICONTROL New]** si trova sopra l’elenco dei flussi di lavoro.
 
 ![](assets/create_a_wf_icon.png)
 
-In alternativa, puoi anche utilizzare il pulsante **[!UICONTROL Create]** nella panoramica del flusso di lavoro (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** link).
+Oppure, puoi anche utilizzare il **[!UICONTROL Create]** nella panoramica del flusso di lavoro (**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]** link).
 
 ![](assets/create_a_wf.png)
 
@@ -57,20 +57,20 @@ Devi ora definire le varie attività e collegarle nel diagramma. A questo punto 
 
 Le attività sono raggruppate per categoria all’interno delle diverse schede della palette. Le schede e le attività disponibili possono variare a seconda del tipo di flusso di lavoro (tecnico, di targeting o del flusso di lavoro della campagna).
 
-* La prima scheda contiene attività di targeting e di manipolazione dei dati. Queste attività sono descritte in [Attività di targeting](about-targeting-activities.md).
-* La seconda scheda contiene le attività di pianificazione, utilizzate principalmente per coordinare altre attività. Queste attività sono descritte in [Attività di controllo del flusso](about-flow-control-activities.md).
-* La terza scheda contiene strumenti e azioni che possono essere utilizzati nel flusso di lavoro. Queste attività sono descritte in [Attività azione](about-action-activities.md).
-* La quarta scheda contiene attività che dipendono da un determinato evento, ad esempio la ricezione di un’e-mail o l’arrivo di un file su un server. Queste attività sono descritte in [Attività evento](about-event-activities.md).
+* La prima scheda contiene attività di targeting e di manipolazione dei dati. Tali attività sono descritte in dettaglio in [Attività di targeting](about-targeting-activities.md).
+* La seconda scheda contiene le attività di pianificazione, utilizzate principalmente per coordinare altre attività. Tali attività sono descritte in dettaglio in [Attività di controllo del flusso](about-flow-control-activities.md).
+* La terza scheda contiene strumenti e azioni che possono essere utilizzati nel flusso di lavoro. Tali attività sono descritte in dettaglio in [Attività azione](about-action-activities.md).
+* La quarta scheda contiene attività che dipendono da un determinato evento, ad esempio la ricezione di un’e-mail o l’arrivo di un file su un server. Tali attività sono descritte in dettaglio in [Attività evento](about-event-activities.md).
 
 Per creare il diagramma
 
 1. Aggiungi un’attività selezionandola nella palette e spostandola nel diagramma mediante un’operazione di trascinamento della selezione.
 
-   Aggiungi un&#39;attività **Start** e quindi un&#39;attività **Delivery** sul diagramma.
+   Aggiungi un **Inizio** e quindi un **Consegna** sul diagramma.
 
    ![](assets/new-workflow-3.png)
 
-1. Collega le attività trascinando la transizione dell&#39;attività **Start** e rilasciandola sull&#39;attività **Delivery** .
+1. Collega le attività trascinando la **Inizio** transizione di attività e rilasciarla su **Consegna** attività.
 
    ![](assets/new-workflow-4.png)
 
@@ -82,7 +82,7 @@ Per creare il diagramma
 
 >[!CAUTION]
 >
->Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Ti consigliamo invece di eseguire flussi di lavoro **Duplica**. Per ulteriori informazioni, consulta [Duplicazione dei flussi di lavoro](#duplicating-workflows).
+>Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Invece, ti abbiamo consigliato di  **Duplica** flussi di lavoro. Per ulteriori informazioni, consulta [Duplicazione dei flussi di lavoro](#duplicating-workflows).
 
 È possibile modificare la visualizzazione e il layout del grafico utilizzando i seguenti elementi:
 
@@ -96,13 +96,13 @@ Per creare il diagramma
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Le icone relative al tracciamento e all&#39;avvio di un flusso di lavoro di targeting avanzato sono descritte in questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Le icone relative al tracciamento e al lancio di un flusso di lavoro di targeting avanzato sono descritte in questo [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **Allineamento dell’oggetto**
 
-   Per allineare le icone, selezionarle e fare clic sull&#39;icona **[!UICONTROL Align vertically]** o **[!UICONTROL Align horizontally]**.
+   Per allineare le icone, selezionale e fai clic sul pulsante **[!UICONTROL Align vertically]** o **[!UICONTROL Align horizontally]** icona.
 
-   Utilizza il tasto **CTRL** per selezionare più attività sparse o per deselezionare una o più attività. Fai clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
+   Utilizza la **CTRL** per selezionare più attività sparse o per deselezionare una o più attività. Fai clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
 
 * **Gestione delle immagini**
 
@@ -110,13 +110,13 @@ Per creare il diagramma
 
 ## Configurazione delle attività {#configuring-activities}
 
-Fai doppio clic su un’attività per configurarla o fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Open...]**.
+Fai doppio clic su un’attività per configurarla o fai clic con il pulsante destro del mouse e seleziona (Crea attività) **[!UICONTROL Open...]**.
 
 >[!NOTE]
 >
->Le attività del flusso di lavoro della campagna sono descritte in [questa sezione](about-activities.md).
+>Le attività del flusso di lavoro di Campaign sono descritte in [questa sezione](about-activities.md).
 
-La prima scheda contiene la configurazione di base. La scheda **[!UICONTROL Advanced]** contiene i parametri aggiuntivi, utilizzati in particolare per definire il comportamento in caso di errore, specificare la durata di esecuzione per un&#39;attività e per immettere uno script di inizializzazione.
+La prima scheda contiene la configurazione di base. La **[!UICONTROL Advanced]** La scheda contiene i parametri aggiuntivi, utilizzati in particolare per definire il comportamento in caso di errore, specificare la durata di esecuzione per un&#39;attività e per immettere uno script di inizializzazione.
 
 Per una migliore comprensione delle attività e per migliorare la leggibilità del flusso di lavoro, puoi inserire commenti nelle attività: questi vengono visualizzati automaticamente quando gli operatori scorrono l’attività.
 
@@ -134,7 +134,7 @@ Tutte queste attività si trovano nella prima scheda del flusso di lavoro.
 >
 >Le attività di targeting sono descritte in [questa sezione](about-activities.md).
 
-I flussi di lavoro di targeting possono essere creati e modificati tramite il nodo **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** della struttura di Adobe Campaign o tramite il menu **[!UICONTROL Profiles and Targets > Targeting workflows]** della home page.
+I flussi di lavoro di targeting possono essere creati e modificati tramite **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nodo della struttura di Adobe Campaign o tramite il **[!UICONTROL Profiles and Targets > Targeting workflows]** menu della home page.
 
 ![](assets/target_wf.png)
 
@@ -144,11 +144,11 @@ I flussi di lavoro di targeting nel quadro di una campagna vengono memorizzati c
 
 I passaggi per creare un flusso di lavoro di targeting sono descritti in dettaglio in queste sezioni:
 
-1. **** Identificare i dati nel database - Vedere  [Creazione di query](targeting-data.md#creating-queries)
-1. **** Preparazione dei dati per soddisfare le esigenze di consegna - Consulta  [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data)
-1. **** Dati utilizzati per eseguire aggiornamenti o all’interno di una consegna - Consulta  [Aggiornamento del database](how-to-use-workflow-data.md#updating-the-database)
+1. **Identifica** dati nel database - Vedere [Creazione di query](targeting-data.md#creating-queries)
+1. **Preparare** dati per soddisfare le esigenze di consegna - Vedi [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data)
+1. **Utilizzo** dati per eseguire aggiornamenti o all’interno di una consegna - Vedi [Aggiornamento del database](how-to-use-workflow-data.md#updating-the-database)
 
-I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili nei campi di personalizzazione, in particolare per l’utilizzo durante la creazione di messaggi personalizzati. Per ulteriori informazioni, consulta [Dati di destinazione](data-life-cycle.md#target-data)
+I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili nei campi di personalizzazione, in particolare per l’utilizzo durante la creazione di messaggi personalizzati. Per ulteriori informazioni, consulta [Dati di Target](data-life-cycle.md#target-data)
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
@@ -158,19 +158,19 @@ Ad esempio, per selezionare i clienti che hanno stipulato una polizza di assicur
 
 Durante la fase di selezione della dimensione di targeting, nell’interfaccia sono offerte solo dimensioni di filtro compatibili.
 
-Queste due dimensioni devono essere correlate. Pertanto, il contenuto dell’elenco **[!UICONTROL Filtering dimension]** dipende dalla dimensione di targeting specificata nel primo campo.
+Queste due dimensioni devono essere correlate. Pertanto, il contenuto del **[!UICONTROL Filtering dimension]** elenco dipende dalla dimensione di targeting specificata nel primo campo.
 
-Ad esempio, per i destinatari (**recipient**) saranno disponibili le seguenti dimensioni di filtro:
+Ad esempio, per i destinatari (**destinatario**), saranno disponibili le seguenti dimensioni di filtro:
 
 ![](assets/query_filter_target_dimensions_1.png)
 
-Mentre per **Applicazioni web**, l&#39;elenco conterrà le seguenti dimensioni di filtro:
+Mentre per **Applicazioni Web**, l’elenco conterrà le seguenti dimensioni di filtro:
 
 ![](assets/query_filter_target_dimensions_2.png)
 
 ## Flussi di lavoro di Campaign {#campaign-workflows}
 
-Per ogni campagna, puoi creare flussi di lavoro da eseguire dalla scheda **[!UICONTROL Targeting and workflows]** . Questi flussi di lavoro sono specifici per la campagna.
+Per ogni campagna, puoi creare flussi di lavoro da eseguire dal **[!UICONTROL Targeting and workflows]** scheda . Questi flussi di lavoro sono specifici per la campagna.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
@@ -178,27 +178,27 @@ Questa scheda contiene le stesse attività di tutti i flussi di lavoro. [Ulterio
 
 Oltre alle campagne di targeting, i flussi di lavoro delle campagne consentono di creare e configurare consegne interamente per tutti i canali disponibili. Una volta create nel flusso di lavoro, queste consegne sono disponibili dal dashboard della campagna. [Ulteriori informazioni](../../campaign/using/marketing-campaign-deliveries.md)
 
-Tutti i flussi di lavoro delle campagne sono centralizzati sotto il nodo **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** .
+Tutti i flussi di lavoro delle campagne sono centralizzati nella sezione **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]** nodo.
 
 ![](assets/campaigns_wf.png)
 
-I flussi di lavoro e gli esempi di implementazione delle campagne sono descritti in [questa pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+I flussi di lavoro e gli esempi di implementazione di Campaign sono descritti in [questa pagina](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Flussi di lavoro tecnici {#technical-workflows}
 
-I flussi di lavoro tecnici sono preconfigurati con Adobe Campaign. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di tracciamento sulle consegne e impostare processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite il nodo **[!UICONTROL Administration > Production > Technical workflows]** .
+I flussi di lavoro tecnici sono preconfigurati con Adobe Campaign. Si tratta di operazioni o processi pianificati per l&#39;esecuzione periodica sul server. Consentono di eseguire la manutenzione sul database, inoltrare le informazioni di tracciamento sulle consegne e impostare processi provvisori sulle consegne. I flussi di lavoro tecnici sono configurati tramite **[!UICONTROL Administration > Production > Technical workflows]** nodo.
 
 ![](assets/navtree.png)
 
 Sono disponibili modelli nativi per la creazione di flussi di lavoro tecnici. Possono essere configurati in base alle tue esigenze.
 
-La sottocartella **[!UICONTROL Campaign process]** centralizza i flussi di lavoro necessari per l’esecuzione di processi all’interno delle campagne: notifica delle attività, gestione delle scorte, calcolo dei costi, ecc.
+La **[!UICONTROL Campaign process]** la sottocartella centralizza i flussi di lavoro necessari per l’esecuzione dei processi all’interno delle campagne: notifica delle attività, gestione delle scorte, calcolo dei costi, ecc.
 
 >[!NOTE]
 >
->L&#39;elenco dei flussi di lavoro tecnici installati con ciascun modulo è disponibile in una sezione [dedicata](about-technical-workflows.md).
+>L’elenco dei flussi di lavoro tecnici installati con ciascun modulo è disponibile in un [sezione dedicata](about-technical-workflows.md).
 
-Puoi creare altri flussi di lavoro tecnici nel nodo **[!UICONTROL Administration > Production > Technical workflows]** della struttura ad albero. Tuttavia, questo processo è riservato agli utenti esperti.
+Puoi creare altri flussi di lavoro tecnici nella sezione **[!UICONTROL Administration > Production > Technical workflows]** nodo della struttura ad albero. Tuttavia, questo processo è riservato agli utenti esperti.
 
 Le attività offerte sono le stesse dei flussi di lavoro di targeting. [Ulteriori informazioni](#implementation-steps-)
 
@@ -208,7 +208,7 @@ I modelli di flusso di lavoro contengono la configurazione complessiva delle pro
 
 Puoi creare nuovi modelli di flusso di lavoro basati su modelli esistenti o modificare direttamente un flusso di lavoro in un modello.
 
-I modelli di flusso di lavoro sono memorizzati nel nodo **[!UICONTROL Resources > Templates > Workflow templates]** della struttura di Adobe Campaign.
+I modelli di flusso di lavoro sono memorizzati nella **[!UICONTROL Resources > Templates > Workflow templates]** nodo della struttura Adobe Campaign.
 
 ![](assets/s_advuser_wf_template_tree.png)
 
@@ -222,10 +222,10 @@ Puoi duplicare diversi tipi di flussi di lavoro. Una volta eseguita la duplicazi
 
 >[!CAUTION]
 >
->La funzione Copia e incolla è disponibile nei flussi di lavoro, ma ti consigliamo di utilizzare **Duplica**. Una volta copiata un’attività, viene mantenuta l’intera configurazione. Per le attività di consegna (e-mail, SMS, notifica push..), viene copiato anche l’oggetto di consegna allegato all’attività, il che può causare un arresto anomalo.
+>Copia e incolla è disponibile nei flussi di lavoro, ma ti consigliamo di utilizzare **Duplica**. Una volta copiata un’attività, viene mantenuta l’intera configurazione. Per le attività di consegna (e-mail, SMS, notifica push..), viene copiato anche l’oggetto di consegna allegato all’attività, il che può causare un arresto anomalo.
 
 1. Fai clic con il pulsante destro del mouse su un flusso di lavoro.
-1. Fare clic su **Duplica**.
+1. Fai clic su **Duplica**.
 
    ![](assets/duplicate-workflows.png)
 
@@ -234,7 +234,7 @@ Puoi duplicare diversi tipi di flussi di lavoro. Una volta eseguita la duplicazi
 
 La funzione duplicata non è direttamente disponibile nella visualizzazione di una campagna.
 
-Tuttavia, puoi creare una visualizzazione per visualizzare tutti i flussi di lavoro sull’istanza. In questa visualizzazione è possibile duplicare i flussi di lavoro utilizzando **Duplica su**.
+Tuttavia, puoi creare una visualizzazione per visualizzare tutti i flussi di lavoro sull’istanza. In questa visualizzazione puoi duplicare i flussi di lavoro utilizzando **Duplica su**.
 
 **Innanzitutto, creiamo una visualizzazione:**
 
@@ -243,10 +243,10 @@ Tuttavia, puoi creare una visualizzazione per visualizzare tutti i flussi di lav
 
    ![](assets/add-new-folder-workflows.png)
 
-Viene creata la nuova cartella **Flussi di lavoro**.
+La nuova cartella **Flussi di lavoro** viene creato.
 
 1. Fai clic con il pulsante destro del mouse e seleziona **Proprietà**.
-1. In **Restrizione**, controlla **Cartella è una visualizzazione** e fai clic su **Salva**.
+1. In **Restrizione**, controlla **La cartella è una visualizzazione** e fai clic su **Salva**.
 
    ![](assets/folder-is-a-view.png)
 
@@ -255,7 +255,7 @@ La cartella viene ora compilata con tutti i flussi di lavoro dell’istanza.
 **Duplicazione di un flusso di lavoro della campagna**
 
 1. Seleziona un flusso di lavoro della campagna nella visualizzazione del flusso di lavoro.
-1. Fai clic con il pulsante destro del mouse su **Duplica su**.
+1. Fai clic con il pulsante destro del mouse **Duplica su**.
    ![](assets/duplicate-to-right-click.png)
 1. Cambia l’etichetta.
 1. Fai clic su **Salva**.

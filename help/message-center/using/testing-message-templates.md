@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-Una volta che il [modello di messaggio](../../message-center/using/creating-the-message-template.md) è pronto, segui i passaggi riportati di seguito per visualizzarlo in anteprima e testarlo.
+Una volta che [modello di messaggio](../../message-center/using/creating-the-message-template.md) è pronto, segui i passaggi seguenti per visualizzarlo in anteprima e testarlo.
 
 ## Gestire gli indirizzi seed nei messaggi transazionali {#managing-seed-addresses-in-transactional-messages}
 
@@ -25,7 +25,7 @@ Un indirizzo di seed ti consente di visualizzare un’anteprima del messaggio, i
 
 Per creare indirizzi di seed in un messaggio sulle transazioni, segui i passaggi seguenti:
 
-1. Nel modello di messaggio transazionale, fai clic sulla scheda **[!UICONTROL Seed addresses]** .
+1. Nel modello di messaggio transazionale, fai clic sul pulsante **[!UICONTROL Seed addresses]** scheda .
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -41,12 +41,12 @@ Per creare indirizzi di seed in un messaggio sulle transazioni, segui i passaggi
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. Inserire i dati di test (fare riferimento a [Dati di personalizzazione](#personalization-data)).
+1. Inserire i dati di prova (fare riferimento a [Dati di personalizzazione](#personalization-data)).
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Fai clic sul collegamento **[!UICONTROL Add other seed addresses]**, quindi fai clic sul pulsante **[!UICONTROL Add]** .
+1. Fai clic sul pulsante **[!UICONTROL Add other seed addresses]** fai clic sul collegamento **[!UICONTROL Add]** pulsante .
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -55,7 +55,7 @@ Per creare indirizzi di seed in un messaggio sulle transazioni, segui i passaggi
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Una volta creati gli indirizzi, puoi visualizzarne l’anteprima e la personalizzazione. Fai riferimento a [Anteprima messaggio transazionale](#transactional-message-preview).
+Una volta creati gli indirizzi, puoi visualizzarne l’anteprima e la personalizzazione. Fai riferimento a [Anteprima di un messaggio transazionale](#transactional-message-preview).
 
 ## Dati di personalizzazione {#personalization-data}
 
@@ -69,7 +69,7 @@ Queste informazioni consentono di personalizzare il contenuto dei messaggi utili
 
 1. Seleziona il modello di messaggio transazionale.
 
-1. Nel modello, fai clic sulla scheda **[!UICONTROL Seed addresses]** .
+1. Nel modello, fai clic sul pulsante **[!UICONTROL Seed addresses]** scheda .
 
 1. Nel contenuto dell&#39;evento, immettere le informazioni di test in formato XML.
 
@@ -81,7 +81,7 @@ Queste informazioni consentono di personalizzare il contenuto dei messaggi utili
 
 Dopo aver creato uno o più indirizzi di seed e il corpo del messaggio, puoi visualizzare in anteprima il messaggio e controllarne la personalizzazione.
 
-1. Nel modello di messaggio, fai clic sulla scheda **[!UICONTROL Preview]** .
+1. Nel modello di messaggio, fai clic sul pulsante **[!UICONTROL Preview]** scheda .
 
    ![](assets/messagecenter_preview_001.png)
 
@@ -99,10 +99,10 @@ Utilizzando gli indirizzi di seed, puoi anche visualizzare il rendering del mess
 
 Puoi verificare la consegna dei messaggi inviando una bozza a un indirizzo di seed creato in precedenza.
 
-L&#39;invio di una bozza implica lo stesso processo di una [consegna regolare](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Tuttavia, con la messaggistica transazionale, devi prima eseguire le seguenti operazioni:
+L’invio di una bozza comporta lo stesso processo di invio di una [consegna regolare](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Tuttavia, con la messaggistica transazionale, devi prima eseguire le seguenti operazioni:
 
 * Crea uno o più [indirizzi di seed](#managing-seed-addresses-in-transactional-messages) con [dati di personalizzazione](#personalization-data).
-* [Crea il contenuto](../../message-center/using/creating-the-message-template.md#creating-message-content) del messaggio.
+* [Creare il contenuto del messaggio](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
 Per inviare la bozza:
 
@@ -116,8 +116,8 @@ Per inviare la bozza:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-È possibile accedere alle bozze in ciascun modello tramite la scheda **[!UICONTROL Audit]** . Per ulteriori dettagli, consulta [Inviare una bozza](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+È possibile accedere alle bozze in ogni modello tramite il **[!UICONTROL Audit]** scheda . Per maggiori dettagli su questo punto, vedi [Invia una bozza](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Il modello di messaggio è ora pronto per essere [pubblicato](../../message-center/using/publishing-message-templates.md).
+Il modello di messaggio è ora pronto per essere visualizzato [pubblicato](../../message-center/using/publishing-message-templates.md).

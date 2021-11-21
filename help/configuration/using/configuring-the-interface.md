@@ -25,8 +25,8 @@ Per visualizzare e dialogare con la nuova tabella dei destinatari nell’interfa
 
 Adobe Campaign utilizza una variabile globale &quot;Nms_DefaultRcpSchema&quot; per aprire una finestra di dialogo con il database dei destinatari predefinito (nms:recipient). Questa variabile deve pertanto essere modificata.
 
-1. Passa al nodo **[!UICONTROL Administration>Platform>Options]** dell&#39;esploratore.
-1. Modifica il valore della variabile **Nms_DefaultRcpSchema** con il nome dello schema che corrisponde alla tabella dei destinatari esterni (in questo caso: cus:individuale).
+1. Vai a **[!UICONTROL Administration>Platform>Options]** nodo dell&#39;esploratore.
+1. Modificare il valore del **Nms_DefaultRcpSchema** con il nome dello schema che corrisponde alla tabella del destinatario esterno (in questo caso: cus:individuale).
 1. Salva le modifiche.
 
 ## Creazione di un nuovo modulo {#creating-a-new-form-}
@@ -37,15 +37,15 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 >
 >Il nome del modulo deve essere identico al nome dello schema interessato.
 
-1. Vai al nodo **Amministrazione > Configurazione > Moduli di input** dell&#39;esploratore.
-1. Crea un nuovo file **xtk:form** di tipo **form**.
+1. Vai a **Amministrazione > Configurazione > Moduli di input** nodo dell&#39;esploratore.
+1. Crea un nuovo **xtk:form** type **modulo** file.
 1. Descrivi tutti i campi e di monitoraggio necessari a seconda del modello di tabella.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui file di tipo **form**, consulta [questa pagina](../../configuration/using/identifying-a-form.md).
+   >Per saperne di più **modulo** file di testo, fare riferimento a [questa pagina](../../configuration/using/identifying-a-form.md).
 
-   Nel nostro esempio corrente, il file **form** deve essere basato sullo schema **cus:Singolo** e quindi avere il seguente layout:
+   Nel nostro esempio attuale, il **modulo** il file deve essere basato su **cus:individuale** schema e quindi con il seguente layout:
 
    ```
    <container colspan="2">
@@ -64,15 +64,15 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
 ## Creazione di un nuovo tipo di cartella nella gerarchia di navigazione {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Passa al nodo **[!UICONTROL Administration>Configuration>Navigation hierarchies]** .
-1. Crea un nuovo documento di tipo **xtk:navtree** **navtree**.
+1. Vai a **[!UICONTROL Administration>Configuration>Navigation hierarchies]** nodo.
+1. Crea un nuovo **xtk:navtree** type **ombelico** documento.
 1. Descrivi tutti i campi e di monitoraggio necessari a seconda del modello di tabella.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui file di tipo **navtree**, consulta [questa pagina](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Per ulteriori informazioni **ombelico** file di testo, fare riferimento a [questa pagina](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   Nell&#39;esempio corrente, il file **navtree** deve essere basato sullo schema **cus:Singolo** e quindi avere il seguente modulo:
+   Nell’esempio corrente, la variabile **ombelico** il file deve essere basato su **cus:individuale** schema e quindi avere il seguente modulo:
 
    ```
     <model name="root">

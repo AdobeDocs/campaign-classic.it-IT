@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito è installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco delle MX. Una volta installato il pacchetto **Monitoraggio del recapito messaggi (Email Deliverability)** , questo flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio del recapito messaggi, consulta questa [sezione](../../delivery/using/about-deliverability.md).
+Il flusso di lavoro descritto di seguito è installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco delle MX. Una volta che **Monitoraggio del recapito messaggi (recapito messaggi e-mail)** il pacchetto è installato, questo flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio del recapito messaggi, consulta questo [sezione](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Il flusso di lavoro descritto di seguito è installato per impostazione predefin
   <tr> 
    <td> <strong>Aggiornamento per il recapito messaggi</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  Una volta installato il pacchetto <strong>Monitoraggio del recapito messaggi (Email Deliverability)</strong> , questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.<br /> </td> 
+   <td>  Una volta che <strong>Monitoraggio del recapito messaggi (recapito messaggi e-mail)</strong> Il pacchetto è installato, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

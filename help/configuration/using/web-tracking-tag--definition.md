@@ -79,8 +79,7 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Identificatore di consegna da utilizzare se non è presente un cookie di sessione. Questo valore deve essere
-                                 espresso in esadecimale.
+                              <p>Identificatore di consegna da utilizzare se non è presente un cookie di sessione. Questo valore deve essere espresso in esadecimale.
                               </p> 
                            </td> 
                         </tr>
@@ -92,9 +91,7 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Parametro utilizzato per identificare l'utente Internet. Il formato di questo parametro è "name=value",
-                                 dove il nome è un campo dello schema del destinatario. Questo parametro ha la priorità
-                                 l’identificatore contenuto nel cookie di sessione.
+                              <p>Parametro utilizzato per identificare l'utente Internet. Il formato di questo parametro è "name=value", dove il nome è un campo dello schema del destinatario. Questo parametro ha la priorità rispetto all’identificatore contenuto nel cookie di sessione.
                               </p> 
                            </td> 
                         </tr> 
@@ -131,5 +128,5 @@ Nella tabella seguente è riportato un elenco di parametri speciali supportati d
 
 Sono possibili i seguenti metodi:
 
-* Inserimento dell’URL nell’attributo **&quot;src&quot;** di un tag HTML **`<img>`** incorporato nella pagina web da monitorare.
+* Inserimento dell’URL nel **&quot;src&quot;** attributo di un HTML **`<img>`** tag incorporato nella pagina web da monitorare.
 * Chiamata diretta al server di reindirizzamento quando viene generata la pagina web che desideri monitorare.

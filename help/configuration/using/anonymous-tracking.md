@@ -26,8 +26,8 @@ Adobe Campaign ti consente di collegare le informazioni di web tracking raccolte
 
 Per abilitare il tracciamento Web anonimo nell’istanza, è necessario configurare i seguenti elementi:
 
-* Il parametro **trackWebVisitors** dell&#39;elemento **redirecting** del file **serverConf.xml** del server di tracciamento deve essere impostato su &#39;**true**&#39; per inserire un cookie permanente (**uuid230** nei browser di utenti Internet sconosciuti che visitano il sito.
-* La modalità **Tracciamento Web anonimo** deve essere selezionata nella schermata di configurazione del tracciamento della procedura guidata di distribuzione.
+* La **trackWebVisitors** del **reindirizzamento** elemento **serverConf.xml** il file del server di tracciamento deve essere impostato su &#39;**true** per inserire un cookie permanente (**uuid230**) nei browser di utenti Internet sconosciuti che visitano il sito.
+* La **Tracciamento web anonimo** deve essere selezionata nella schermata di configurazione del tracking della procedura guidata di distribuzione.
 
    ![](assets/webtracking_anonymous_set.png)
 

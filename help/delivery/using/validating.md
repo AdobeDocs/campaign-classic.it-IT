@@ -23,25 +23,25 @@ Il file di output di una consegna direct mailing viene generato durante l’anal
 
 >[!NOTE]
 >
->La fase di analisi è descritta in [Analisi della consegna](steps-validating-the-delivery.md#analyzing-the-delivery).
+>La fase di analisi è dettagliata in [Analisi della consegna](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante la fase di analisi, il file viene generato ma le informazioni relative ai destinatari (ad esempio i registri di consegna) non vengono aggiornate. È quindi possibile annullare il processo senza correre rischi.
 
-Prima di fare clic su **[!UICONTROL Confirm delivery]**, controlla il risultato dell’analisi e il contenuto del file di output. Un messaggio di conferma consente di avviare la consegna.
+Controlla il risultato dell&#39;analisi e il contenuto del file di output prima di fare clic su **[!UICONTROL Confirm delivery]**. Un messaggio di conferma consente di avviare la consegna.
 
 La conferma dell’invio avvia l’estrazione dei dati nel file specificato.
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Puoi quindi chiudere la procedura guidata e guardare i registri di consegna tramite la scheda **[!UICONTROL Delivery]** , accessibile tramite i dettagli di consegna.
+Puoi quindi chiudere la procedura guidata e esaminare i registri di consegna tramite il **[!UICONTROL Delivery]** , accessibile tramite i dettagli di consegna.
 
-Puoi configurare la modalità di recupero dei registri di consegna dalla scheda **[!UICONTROL Analysis]** delle proprietà di consegna.
+Puoi configurare la modalità di recupero dei registri di consegna dalla **[!UICONTROL Analysis]** scheda delle proprietà di consegna.
 
 Sono disponibili due modalità:
 
-* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità di funzione, tutti i registri di trasmissione vengono aggiornati quando l’operatore conferma l’invio (il loro stato passa da &quot;Pending delivery&quot; a &quot;Sent&quot;) e la consegna viene automaticamente impostata su  **[!UICONTROL Finished]**.
+* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità di funzione, tutti i registri di trasmissione vengono aggiornati quando l’operatore conferma l’invio (il loro stato passa da &quot;Pending delivery&quot; a &quot;Sent&quot;) e la consegna viene automaticamente impostata su **[!UICONTROL Finished]**.
 * **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : questa modalità consente di aggiornare i registri di trasmissione tramite un file esterno inviato dal provider di servizi. In questo caso, è necessario utilizzare un flusso di lavoro per elaborare queste informazioni per aggiornare lo stato del registro di trasmissione.
 
    >[!NOTE]
    >
-   >In questo caso, anche lo stato della consegna deve essere modificato in **[!UICONTROL Finished]** dall’utente non appena i registri di trasmissione vengono aggiornati.
+   >In questo caso, anche lo stato della consegna deve essere modificato in **[!UICONTROL Finished]** dall’utente non appena i log di trasmissione vengono aggiornati.

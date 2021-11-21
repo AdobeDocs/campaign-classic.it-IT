@@ -24,18 +24,18 @@ Puoi testare il tracciamento su pagine mirror, registri e-mail e collegamenti. P
 1. Aggiungi un blocco di personalizzazione della pagina speculare (MirrorPage) nel contenuto dell’e-mail.
 1. Invia la consegna contenente un collegamento alla pagina speculare.
 1. Dopo aver ricevuto l’e-mail, aprilo e fai clic sul collegamento della pagina speculare.
-1. Dopo aver eseguito correttamente il reindirizzamento alla pagina speculare, accedi alla cartella **Amministrazione > Flussi di lavoro tecnici** e apri il flusso di lavoro **Tracking** .
-1. Avvia il flusso di lavoro, fai clic con il pulsante destro del mouse sull&#39;attività **Scheduler** e seleziona **Esegui attività in sospeso ora**.
-1. Attendi circa 30 secondi, quindi seleziona la scheda **Audit** . Assicurati che sia trovato almeno un record di registro di tracciamento.
+1. Dopo aver eseguito correttamente il reindirizzamento alla pagina speculare, accedi al **Amministrazione > Flussi di lavoro tecnici** e apri la **Tracking** workflow.
+1. Avvia il flusso di lavoro, fai clic con il pulsante destro del mouse sul **Scheduler** e seleziona **Esegui attività in sospeso**.
+1. Attendi circa 30 secondi, quindi seleziona il **Audit** scheda . Assicurati che sia trovato almeno un record di registro di tracciamento.
 
    Fai clic su **Aggiorna** se non vengono visualizzati nuovi registri.
 
-1. Vai alla pagina del profilo del destinatario utilizzato per il test e seleziona la scheda **Tracking** . Alcuni record devono essere visualizzati con il valore **Pagina speculare** nella colonna **Tipo**.
+1. Vai alla pagina del profilo del destinatario utilizzato per il test e seleziona il **Tracking** scheda . Alcuni record devono essere visualizzati con **Pagina speculare** nel **Tipo** colonna.
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, la pagina del profilo del destinatario si trova nella cartella **Profili e destinazioni > Destinatari** .
+   >La pagina del profilo del destinatario si trova nella **Profili e destinazioni > Destinatari** per impostazione predefinita.
 
-   Per controllare il tracciamento del registro e-mail, cerca i valori **Apri** e **[!UICONTROL Email click]** nella colonna **Tipo** .
+   Per controllare il tracciamento del registro e-mail, cerca i valori **Apri** e **[!UICONTROL Email click]** in **Tipo** colonna.
 
-   Se i registri aperti non vengono visualizzati, vai alla consegna e accedi alle relative **Proprietà** per assicurarti che siano selezionate entrambe le opzioni **Attiva tracciamento** e **[!UICONTROL Opens tracking]** .
+   Se i registri aperti non vengono visualizzati, accedi alla consegna e accedi alle relative **Proprietà** per assicurarsi che **Attiva tracciamento** e **[!UICONTROL Opens tracking]** sono selezionate.

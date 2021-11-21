@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Il **File Collector** controlla l&#39;arrivo di uno o più file in una directory e attiva la relativa transizione per ogni file ricevuto. Per ogni evento, una variabile **[!UICONTROL filename]** contiene il nome completo del file ricevuto. I file raccolti vengono spostati in un&#39;altra directory a scopo di archiviazione e per assicurarsi che vengano conteggiati una sola volta.
+La **Raccoglitore file** controlla l&#39;arrivo di uno o più file in una directory e ne attiva la transizione per ogni file ricevuto. Per ogni evento, un **[!UICONTROL filename]** contiene il nome completo del file ricevuto. I file raccolti vengono spostati in un&#39;altra directory a scopo di archiviazione e per assicurarsi che vengano conteggiati una sola volta.
 
 Per impostazione predefinita, il raccoglitore di file è un&#39;attività persistente che verifica la presenza di file nei momenti specificati dalla pianificazione.
 
@@ -25,7 +25,7 @@ I file devono trovarsi sul server in cui viene eseguito il modulo wfserver respo
 
 ## Properties {#properties}
 
-La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate nelle schede [E-mail in entrata](inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** ).
+La prima scheda della **[!UICONTROL File collector]** activity ti consente di selezionare la directory di origine e, se necessario, filtrare i file raccolti. Le altre schede sono descritte in [E-mail in entrata](inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** schede).
 
 ![](assets/file_collect_edit.png)
 
@@ -43,11 +43,11 @@ La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di 
 
       Se questa opzione è abilitata, l’attività termina dopo la ricezione del primo file. Se nella directory sono presenti più file corrispondenti al filtro, ne verrà preso in considerazione solo uno. Questa opzione garantisce che venga inviato un solo evento. Il file preso in considerazione è il primo dell&#39;elenco in ordine alfabetico.
 
-      Per un’attività non pianificata, se nella directory specificata non viene trovato alcun file corrispondente al filtro e se l’opzione **[!UICONTROL Process file nonexistence]** non è abilitata, viene generato un errore.
+      Per un&#39;attività non pianificata, se nella directory specificata non viene trovato alcun file corrispondente al filtro e se la **[!UICONTROL Process file nonexistence]** non è abilitata, viene generato un errore.
 
    * **[!UICONTROL Execution schedule]**
 
-      Determina la frequenza del controllo della presenza del file tramite i parametri della scheda **[!UICONTROL Schedule]** .
+      Determina la frequenza del controllo della presenza del file tramite i parametri del **[!UICONTROL Schedule]** scheda .
 
 1. **Gestione degli errori**
 
@@ -69,9 +69,9 @@ La prima scheda dell’attività **[!UICONTROL File collector]** ti consente di 
 
 1. **Storizzazione**
 
-   Fai riferimento al passaggio **[!UICONTROL File historization]** qui: [Download Web](web-download.md).
+   Fai riferimento a **[!UICONTROL File historization]** passo qui: [Download Web](web-download.md).
 
-Impossibile determinare l&#39;ordine di elaborazione dei file. Per elaborare un set di file in sequenza, utilizza l&#39;opzione **[!UICONTROL Stop as soon as a file has been processed]** e crea un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. L’opzione **[!UICONTROL Process file nonexistence]** ti consente di terminare l’iterazione.
+Impossibile determinare l&#39;ordine di elaborazione dei file. Per elaborare un set di file in sequenza, utilizza il **[!UICONTROL Stop as soon as a file has been processed]** e crea un ciclo. In questo caso, i file verranno elaborati in ordine alfabetico. La **[!UICONTROL Process file nonexistence]** consente di terminare l’iterazione.
 
 ![](assets/file_collect_loop.png)
 

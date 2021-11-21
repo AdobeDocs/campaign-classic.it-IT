@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Adobe Campaign consente di selezionare una modalità di web tracking che definisce il modo in cui i log di tracking vengono elaborati nell’applicazione.
 
-Sono disponibili tre modalità di web tracking: **&quot;Tracciamento sessione&quot;**,**&quot;Tracciamento permanente&quot;** e **&quot;Tracciamento anonimo&quot;**.
+Sono disponibili tre modalità di web tracking: **&quot;Tracciamento sessione&quot;**,**&quot;Tracciamento permanente&quot;** e **&quot;Tracking anonimo&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -31,7 +31,7 @@ Ogni modalità ha caratteristiche specifiche. La modalità di web tracking &quot
 >
 >In qualsiasi momento, la modalità predefinita può essere modificata nella procedura guidata di distribuzione delle istanze.
 
-Nota che se utilizzi la modalità di tracciamento **web permanente** o **anonymous** , devi aggiungere un indice alla colonna &quot;sourceID&quot; (uuid230) nelle tabelle di tracciamento (trackingLogXXX):
+Se utilizzi **web permanente** o **anonimo** modalità di tracciamento, devi aggiungere un indice alla colonna &quot;sourceID&quot; (uuid230) nelle tabelle di tracciamento (trackingLogXXX):
 
 1. Identificare le tabelle di tracciamento interessate dal tracciamento permanente.
 1. Estendi gli schemi che corrispondono a queste tabelle aggiungendo le righe seguenti:
@@ -42,11 +42,11 @@ Nota che se utilizzi la modalità di tracciamento **web permanente** o **anonymo
 </dbindex>
 ```
 
-**Le modalità di tracciamento** Permanente e  **** AnonymousWeb includono due opzioni:  **Consegna forzata** e  **ultima consegna**.
+**Permanente** e **Anonimo** Le modalità di web tracking includono due opzioni: **Consegna forzata** e **Ultima consegna**.
 
-L’opzione **Consegna forzata** consente di specificare l’identificatore della consegna (@jobid) durante il tracciamento.
+La **Consegna forzata** consente di specificare l’identificatore della consegna (@jobid) durante il tracciamento.
 
-L’opzione **Ultima consegna** ti consente di collegare il registro di tracciamento corrente all’ultima consegna tracciata.
+La **Ultima consegna** consente di collegare il registro di tracciamento corrente all’ultima consegna tracciata.
 
 **Caratteristiche del tracciamento Web della sessione:**
 
@@ -81,7 +81,7 @@ Questa modalità è la più costosa in termini di calcolo e volume.
 
 >[!NOTE]
 >
->Se il pacchetto **[!UICONTROL Leads]** è installato, è necessario fare lo stesso per la tabella delle attività (**crm:inLead**)
+>Se la **[!UICONTROL Leads]** il pacchetto è installato, è necessario fare lo stesso per la tabella attività (**crm:entrinLead**)
 
 Lo schema seguente riassume le funzionalità di tutte e tre le modalità di web tracking:
 

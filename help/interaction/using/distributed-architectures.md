@@ -56,15 +56,15 @@ Viene creato un flusso di lavoro per ogni ambiente e account esterno per la sinc
 
 ## Configurazione dei pacchetti {#packages-configuration}
 
-Eventuali estensioni dello schema direttamente collegate a **Interazione** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
+Qualsiasi estensione di schema direttamente collegata a **Interazione** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
 
 Il pacchetto di interazione deve essere installato su tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare nelle istanze di controllo e un altro da installare in ogni istanza di esecuzione.
 
 >[!NOTE]
 >
->Durante l&#39;installazione del pacchetto, i campi del tipo **long** della tabella **nms:proposition**, come l&#39;ID della proposta, diventano campi di tipo **int64**. Questo tipo di dati è descritto in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Quando installi il pacchetto, il **long** digitare i campi **nms:proposizione** tabella come l’ID della proposta, diventa **int64** digitare i campi. Questo tipo di dati è descritto nella sezione [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-La durata del periodo di conservazione dei dati deve essere configurata su ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, tale periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo scorrevole) e delle regole di idoneità.
+La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, tale periodo deve corrispondere alla profondità storica necessaria per il calcolo delle regole di tipologia (periodo scorrevole) e delle regole di idoneità.
 
 Sulle istanze di controllo:
 
@@ -76,7 +76,7 @@ Sulle istanze di controllo:
    * Seleziona **[!UICONTROL Execution instance]**.
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
    * Completa i parametri di connessione per l’istanza di esecuzione.
-   * Ogni istanza di esecuzione deve essere collegata a un ID. L&#39;ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]** .
+   * Ogni istanza di esecuzione deve essere collegata a un ID. Questo ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]** pulsante .
    * Controllare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
    * Immettere l&#39;account FDA utilizzato. Un operatore deve essere creato sulle istanze di esecuzione e deve avere i seguenti diritti di lettura e scrittura sul database dell&#39;istanza in questione:
 
@@ -99,7 +99,7 @@ Sulle istanze di controllo:
       >
       >Se incontri un errore, puoi consultare i flussi di lavoro di sincronizzazione e le notifiche delle offerte. Questi sono disponibili nei flussi di lavoro tecnici dell’applicazione.
 
-Se, per motivi di ottimizzazione, nelle istanze di esecuzione viene duplicata solo una parte del database di marketing, puoi specificare uno schema limitato collegato all’ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Puoi creare un’offerta utilizzando dati non disponibili nelle istanze di esecuzione. A questo scopo, devi disattivare la regola sugli altri canali limitando questa regola sul canale in uscita (**[!UICONTROL Taken into account if]** campo ).
+Se, per motivi di ottimizzazione, nelle istanze di esecuzione viene duplicata solo una parte del database di marketing, puoi specificare uno schema limitato collegato all’ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Puoi creare un’offerta utilizzando dati non disponibili nelle istanze di esecuzione. A questo scopo, devi disattivare la regola sugli altri canali limitando questa regola sul canale in uscita (**[!UICONTROL Taken into account if]** (campo).
 
 ![](assets/ita_filtering.png)
 
@@ -166,7 +166,7 @@ ALTER TABLE nmspropositionrcp
 
 ###  Oracle {#oracle}
 
-La modifica delle dimensioni di un tipo **Number** non determina la riscrittura dei valori o dell&#39;indice. È quindi immediato.
+Modifica delle dimensioni di un **Numero** Il tipo non comporta la riscrittura dei valori o dell&#39;indice. È quindi immediato.
 
 La query da eseguire è la seguente:
 

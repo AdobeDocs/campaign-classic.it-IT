@@ -27,15 +27,15 @@ Puoi configurare il layout del rapporto nella directory principale della struttu
 
 Puoi utilizzare le opzioni su ogni pagina del rapporto.
 
-La scheda **[!UICONTROL General]** ti consente di modificare il titolo della pagina, nonché configurare le posizioni della legenda e navigare tra le pagine del rapporto.
+La **[!UICONTROL General]** La scheda ti consente di modificare il titolo della pagina, nonché configurare le posizioni della legenda e navigare tra le pagine del rapporto.
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-Il campo **[!UICONTROL Title]** ti consente di personalizzare l’etichetta nell’intestazione della pagina del rapporto. Il titolo della finestra può essere configurato tramite la finestra **[!UICONTROL Properties]** del rapporto. Per ulteriori informazioni, consulta [Aggiunta di un’intestazione e di un piè di pagina](#adding-a-header-and-a-footer).
+La **[!UICONTROL Title]** consente di personalizzare l’etichetta nell’intestazione della pagina del rapporto. Il titolo della finestra può essere configurato tramite il **[!UICONTROL Properties]** finestra del rapporto. Per ulteriori informazioni, consulta [Aggiunta di un’intestazione e di un piè di pagina](#adding-a-header-and-a-footer).
 
-Le opzioni **[!UICONTROL Display settings]** consentono di selezionare la posizione della didascalia di controllo all’interno di una pagina del rapporto e di definire il numero di colonne nella pagina. Per ulteriori informazioni sul layout di pagina, consulta la sezione **Layout elemento** di [questa sezione](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+La **[!UICONTROL Display settings]** le opzioni consentono di selezionare la posizione della didascalia di controllo all’interno di una pagina del rapporto e di definire il numero di colonne nella pagina. Per ulteriori informazioni sul layout di pagina, consulta la sezione **Layout degli elementi** sezione [questa sezione](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Seleziona le varie opzioni nella sezione **[!UICONTROL Browse]** per autorizzare la navigazione da una pagina del rapporto all’altra. Se è selezionata l’opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** , i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** scompaiono dalla pagina del rapporto.
+Seleziona le varie opzioni nella **[!UICONTROL Browse]** per autorizzare l’esplorazione da una pagina del report a un’altra. Se la **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** è selezionata l&#39;opzione , **[!UICONTROL Next]** e **[!UICONTROL Previous]** i pulsanti scompaiono dalla pagina del rapporto.
 
 ## Aggiunta di un’intestazione e di un piè di pagina {#adding-a-header-and-a-footer}
 
@@ -45,13 +45,13 @@ Per accedere alla finestra delle proprietà, fai clic sul pulsante **[!UICONTROL
 
 ![](assets/reporting_properties.png)
 
-La scheda **[!UICONTROL Page]** ti consente di personalizzare la visualizzazione.
+La **[!UICONTROL Page]** consente di personalizzare la visualizzazione.
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
 Il contenuto configurato in questa scheda sarà visibile su tutte le pagine del rapporto.
 
-La sottoscheda **[!UICONTROL Texts]** ti consente di definire il contenuto della variabile: sarà tenuto conto durante il ciclo di traduzione se il rapporto è destinato ad essere utilizzato in più lingue.
+La **[!UICONTROL Texts]** la sottoscheda consente di definire il contenuto della variabile: sarà tenuto conto durante il ciclo di traduzione se il rapporto è destinato ad essere utilizzato in più lingue.
 
 Consente di creare un elenco di frammenti di testo e di collegarli a identificatori:
 
@@ -63,4 +63,4 @@ Quindi inserisci questi identificatori nel contenuto HTML del rapporto:
 
 Quando viene visualizzato il rapporto, questi verranno automaticamente sostituiti con il contenuto appropriato.
 
-Come per i testi HTML, questa modalità operativa consente di centralizzare i testi utilizzati nel rapporto e di gestirne la traduzione. I testi creati in questa scheda vengono raccolti automaticamente dallo strumento di traduzione integrata di Adobe Campaign.
+Come per i testi in HTML, questa modalità operativa consente di centralizzare i testi utilizzati nel rapporto e di gestirne la traduzione. I testi creati in questa scheda vengono raccolti automaticamente dallo strumento di traduzione integrata di Adobe Campaign.

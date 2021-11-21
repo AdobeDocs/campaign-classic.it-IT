@@ -21,11 +21,11 @@ Adobe Campaign Classic fornisce importazioni ed esportazioni generiche. Consento
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
-Le importazioni e le esportazioni generiche vengono gestite dal nodo **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** della struttura di Adobe Campaign.
+Le importazioni e le esportazioni generiche sono gestite dal **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** nodo della struttura Adobe Campaign.
 
 Le operazioni generiche di importazione ed esportazione sono le seguenti:
 
-1. [Crea un modello di importazione o esportazione](../../platform/using/creating-import-export-templates.md)  (facoltativo).
-1. [Crea un processo](../../platform/using/creating-import-export-jobs.md) di importazione o esportazione.
-1. Configura ed esegui il processo [import](../../platform/using/executing-import-jobs.md) o [export](../../platform/using/executing-export-jobs.md) .
-1. [](../../platform/using/monitoring-jobs-execution.md) Monitora l&#39;esecuzione del lavoro.
+1. [Creare un modello di importazione o esportazione](../../platform/using/creating-import-export-templates.md) (facoltativo).
+1. [Creare un processo di importazione o esportazione](../../platform/using/creating-import-export-jobs.md).
+1. Configura ed esegui le [importare](../../platform/using/executing-import-jobs.md) o [esportare](../../platform/using/executing-export-jobs.md) lavoro.
+1. [Monitor](../../platform/using/monitoring-jobs-execution.md) l&#39;esecuzione del lavoro.

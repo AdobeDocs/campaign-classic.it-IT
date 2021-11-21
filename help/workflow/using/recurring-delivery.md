@@ -17,11 +17,11 @@ ht-degree: 21%
 
 ![](../../assets/common.svg)
 
-Un’attività **[!UICONTROL Recurring delivery]** ti consente di configurare un’occorrenza del modello di consegna specifica per una campagna.
+A **[!UICONTROL Recurring delivery]** activity ti consente di configurare un&#39;occorrenza del modello di consegna specifica per una campagna.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#recurring-delivery-video)
 
-Questa attività è disponibile solo dalla scheda **[!UICONTROL Targeting and workflows]** presente in una campagna.
+Questa attività è disponibile solo dal **[!UICONTROL Targeting and workflows]** in una campagna.
 
 Per eseguire questa operazione:
 
@@ -33,17 +33,17 @@ Per eseguire questa operazione:
 
 Il processo di configurazione per questa attività è simile a quello di creazione di un modello di consegna in termini di opzioni disponibili. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
 
-Per un esempio di utilizzo di questa attività, consulta questa [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Per un esempio dell’utilizzo di questa attività, consulta [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Come impostare una consegna ricorrente
 
-Una **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, in un anno si otterranno 52 consegne. Ciò significa anche che i registri di registro e di tracciamento ampi saranno separati da ogni istanza di consegna.
+A **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, in un anno si otterranno 52 consegne. Ciò significa anche che i registri di registro e di tracciamento ampi saranno separati da ogni istanza di consegna.
 
 ![Consegna ricorrente](assets/delivery_recurring.jpg)
 
 >[!NOTE]
 >
->Non è possibile inviare una bozza da un&#39;attività di tipo **[!UICONTROL Recurring delivery]**.\
+>Non è possibile inviare una prova da un **[!UICONTROL Recurring delivery]** digitare activity.\
 >Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizza le attività specifiche del canale preconfigurate (ad esempio **[!UICONTROL Email delivery]**).
 
 ## Video tutorial (#ricorrenti-delivery-video)

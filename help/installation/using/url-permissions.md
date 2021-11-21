@@ -5,7 +5,8 @@ description: Scopri come configurare le autorizzazioni URL
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 29%
@@ -22,13 +23,13 @@ Per impostazione predefinita, le istanze non possono connettersi a URL esterni. 
 
 >[!NOTE]
 >
->Questa procedura è limitata alle distribuzioni **on-premise**.
+>Questa procedura è limitata a **on-premise** distribuzioni.
 >
->In qualità di cliente **in hosting**, se puoi accedere a [Pannello di controllo Campaign di campagne](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service delle autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
+>Come **ospitato** cliente, se è possibile accedere [Pannello di controllo Campaign campagna](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service delle autorizzazioni URL . [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 >
->Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere IP all’inserire nell&#39;elenco Consentiti.
+>Altro **ibrido/ospitato** i clienti devono contattare il team di supporto Adobe per aggiungere IP all’inserire nell&#39;elenco Consentiti.
 
-Per le distribuzioni **Hybrid** e **On-Premise**, l&#39;amministratore deve fare riferimento a un nuovo **urlPermission** nel file **serverConf.xml**.
+Per **Ibrido** e **On-Premise** implementazioni, l’amministratore deve fare riferimento a una nuova **urlPermission** in **serverConf.xml** file.
 
 
 Sono disponibili tre modalità di protezione della connessione:
@@ -47,9 +48,9 @@ Sono disponibili tre modalità di protezione della connessione:
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, le nuove implementazioni utilizzano la modalità **Blocco** .
+>Per impostazione predefinita, le nuove implementazioni utilizzano le **Blocco** modalità.
 >
->Come cliente esistente proveniente da una migrazione, puoi utilizzare temporaneamente la modalità **Avviso** . Analizza il traffico in uscita prima di consentire gli URL. Una volta definito l’elenco degli URL consentiti, puoi aggiungere gli URL all’inserire nell&#39;elenco Consentiti e attivare la modalità **Blocking** .
+>Come cliente esistente proveniente da una migrazione, puoi utilizzare temporaneamente la funzione **Avviso** modalità. Analizza il traffico in uscita prima di consentire gli URL. Una volta definito l’elenco degli URL consentiti, puoi aggiungere gli URL all’inserire nell&#39;elenco Consentiti e attivare il **Blocco** modalità.
 
 Per ulteriori informazioni, consulta queste sezioni:
 

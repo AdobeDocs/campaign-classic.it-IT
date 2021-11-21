@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-I rapporti basati su uno schema specifico per i destinatari Adobe Campaign predefiniti (nm:recipient o schema linked) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura target (consulta la sezione [Mappatura target](../../configuration/using/target-mapping.md) ).
+I rapporti basati su uno schema specifico per i destinatari Adobe Campaign predefiniti (nm:recipient o schema linked) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura target (vedi [Mappatura del target](../../configuration/using/target-mapping.md) sezione).
 
 Per creare nuovi rapporti, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 

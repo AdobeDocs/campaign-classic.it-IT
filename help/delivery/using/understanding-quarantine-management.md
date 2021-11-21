@@ -39,7 +39,7 @@ La **quarantena** si applica solo a un indirizzo, non a tutto il profilo. Ciò s
 
 Allo stesso modo, un profilo con un indirizzo e-mail messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
 
-Il fatto di essere sul **elenco Bloccati**, d&#39;altra parte, fa sì che il profilo non sia più oggetto di targeting da parte di alcuna consegna, ad esempio dopo un annullamento dell&#39;abbonamento (opt-out).
+Essere sul **elenco Bloccati**, d’altro canto, il profilo non sarà più oggetto di targeting da parte di alcuna consegna, ad esempio dopo un annullamento dell’abbonamento (opt-out).
 
 >[!NOTE]
 >
@@ -51,11 +51,11 @@ Il fatto di essere sul **elenco Bloccati**, d&#39;altra parte, fa sì che il pro
 
 ### Identificazione di indirizzi messi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
 
-Gli indirizzi messi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (consulta [Log di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history)).
+Gli indirizzi messi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (vedi [Log di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history)).
 
 ### Identificazione degli indirizzi messi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
 
-Gli amministratori possono elencare gli indirizzi messi in quarantena per l’intera piattaforma dal nodo **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** .
+Gli amministratori possono elencare gli indirizzi messi in quarantena per l’intera piattaforma dalla **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
 
 >[!NOTE]
 >
@@ -76,58 +76,58 @@ Fine anno 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32,5%.
 
 I seguenti rapporti forniscono informazioni sugli indirizzi messi in quarantena:
 
-* Per ogni consegna, il rapporto **[!UICONTROL Delivery summary]** mostra il numero di indirizzi messi in quarantena nella destinazione di consegna. Viene visualizzato:
+* Per ogni consegna, il **[!UICONTROL Delivery summary]** il rapporto mostra il numero di indirizzi messi in quarantena nel target di consegna. Viene visualizzato:
 
    * il numero di indirizzi messi in quarantena durante l’analisi della consegna,
 
    * Il numero di indirizzi messi in quarantena dopo l’azione di consegna.
 
-* Il rapporto **[!UICONTROL Non-deliverables and bounces]** visualizza informazioni sugli indirizzi messi in quarantena, sui tipi di errore rilevato, ecc., e un’interruzione non riuscita per dominio.
+* La **[!UICONTROL Non-deliverables and bounces]** il rapporto visualizza informazioni sugli indirizzi messi in quarantena, i tipi di errore rilevato, ecc. e un guasto per dominio.
 
 Puoi cercare queste informazioni per tutte le consegne della piattaforma (**[!UICONTROL Home page > Reports]**) o per una consegna specifica. È inoltre possibile creare rapporti personalizzati e selezionare le informazioni da visualizzare.
 
 ### Identificazione degli indirizzi messi in quarantena per un destinatario {#identifying-quarantined-addresses-for-a-recipient}
 
-Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A questo scopo, seleziona il profilo del destinatario e fai clic sulla scheda **[!UICONTROL Deliveries]** . Per tutte le consegne a quel destinatario, puoi scoprire se l’indirizzo non è riuscito, se è stato messo in quarantena durante l’analisi, ecc. Per ogni cartella, puoi visualizzare solo i destinatari il cui indirizzo e-mail è in quarantena. A questo scopo, utilizza il filtro dell&#39;applicazione **[!UICONTROL Quarantined email address]**.
+Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A questo scopo, seleziona il profilo del destinatario e fai clic sul pulsante **[!UICONTROL Deliveries]** scheda . Per tutte le consegne a quel destinatario, puoi scoprire se l’indirizzo non è riuscito, se è stato messo in quarantena durante l’analisi, ecc. Per ogni cartella, puoi visualizzare solo i destinatari il cui indirizzo e-mail è in quarantena. Per eseguire questa operazione, utilizza la variabile **[!UICONTROL Quarantined email address]** filtro dell&#39;applicazione.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
 ### Rimozione di un indirizzo messo in quarantena {#removing-a-quarantined-address}
 
-Se necessario, è possibile rimuovere manualmente un indirizzo dall’elenco di quarantena. Inoltre, gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall’elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** .
+Se necessario, è possibile rimuovere manualmente un indirizzo dall’elenco di quarantena. Inoltre, gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall’elenco di quarantena dal **[!UICONTROL Database cleanup]** workflow.
 
 Per rimuovere manualmente un indirizzo dall’elenco di quarantena:
 
-* Puoi modificarne lo stato in **[!UICONTROL Valid]** dal nodo **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
+* È possibile modificarne lo stato in **[!UICONTROL Valid]** dal **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
 
    ![](assets/tech_quarant_error_status.png)
 
-* Puoi anche modificarne lo stato in **[!UICONTROL Allowlisted]**. In questo caso, l’indirizzo rimane nell’elenco di quarantena, ma sarà oggetto di targeting sistematico, anche in caso di errore.
+* È inoltre possibile modificarne lo stato in **[!UICONTROL Allowlisted]**. In questo caso, l’indirizzo rimane nell’elenco di quarantena, ma sarà oggetto di targeting sistematico, anche in caso di errore.
 
 Gli indirizzi vengono rimossi automaticamente dall’elenco di quarantena nei seguenti casi:
 
-* Gli indirizzi in uno stato **[!UICONTROL With errors]** verranno rimossi dall’elenco di quarantena dopo una consegna riuscita.
-* Gli indirizzi in uno stato **[!UICONTROL With errors]** verranno rimossi dall’elenco di quarantena se l’ultimo messaggio non recapitato è stato visualizzato più di 10 giorni fa. Per ulteriori informazioni sulla gestione degli errori software, consulta [questa sezione](#soft-error-management).
-* Gli indirizzi in uno stato **[!UICONTROL With errors]** che rimbalzano con l&#39;errore **[!UICONTROL Mailbox full]** verranno rimossi dall&#39;elenco di quarantena dopo 30 giorni.
+* Indirizzi in un **[!UICONTROL With errors]** lo stato viene rimosso dall’elenco di quarantena dopo la consegna riuscita.
+* Indirizzi in un **[!UICONTROL With errors]** lo stato verrà rimosso dall’elenco di quarantena se l’ultimo messaggio non recapitato è stato eseguito più di 10 giorni fa. Per ulteriori informazioni sulla gestione degli errori software, consulta [questa sezione](#soft-error-management).
+* Indirizzi in un **[!UICONTROL With errors]** che rimbalzano con il **[!UICONTROL Mailbox full]** L&#39;errore verrà rimosso dall&#39;elenco di quarantena dopo 30 giorni.
 
 Il loro stato cambia in **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
-I destinatari con un indirizzo in uno stato **[!UICONTROL Quarantine]** o **[!UICONTROL On denylist]** non verranno mai rimossi, anche se ricevono un’e-mail.
+Destinatari con un indirizzo in un **[!UICONTROL Quarantine]** o **[!UICONTROL On denylist]** lo stato non verrà mai rimosso, anche se riceve un’e-mail.
 
 È possibile modificare il numero di errori e il periodo tra due errori. A questo scopo, modifica le impostazioni corrispondenti nella procedura guidata di distribuzione (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**). Per ulteriori informazioni sulla procedura guidata di distribuzione, consulta [questa sezione](../../installation/using/deploying-an-instance.md).
 
 ## Condizioni per la messa in quarantena di un indirizzo {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)) e [Tipi e motivi di consegna non riuscita](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e al motivo assegnato durante la qualifica dei messaggi di errore (consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)) e [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Errore ignorato**: gli errori ignorati non mettono un indirizzo in quarantena.
 * **Errore rigido**: l’indirizzo e-mail corrispondente viene messo immediatamente in quarantena.
 * **Errore morbido**: gli errori morbidi non mettono immediatamente un indirizzo in quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consulta [Gestione degli errori software](#soft-error-management).
 
-Se un utente qualifica un&#39;e-mail come spam ([loop di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena.
+Se un utente qualifica un’e-mail come spam ([circuito di retroazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena.
 
-Nell’elenco degli indirizzi messi in quarantena, il campo **[!UICONTROL Error reason]** indica perché l’indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
+Nell’elenco degli indirizzi messi in quarantena, la **[!UICONTROL Error reason]** il campo indica perché l’indirizzo selezionato è stato messo in quarantena. In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -139,17 +139,17 @@ Al contrario degli errori rigidi, gli errori morbidi non mettono immediatamente 
 * Nella configurazione predefinita, la soglia è impostata a cinque errori, dove due errori sono significativi se si verificano almeno a 24 ore di distanza. L’indirizzo viene messo in quarantena al quinto errore.
 * È possibile modificare la soglia del contatore di errori. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
-Il contatore degli errori viene reinizializzato se l’ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo cambia in **Valido** e viene eliminato dall&#39;elenco delle quarantene dal flusso di lavoro **Database cleanup**.
+Il contatore degli errori viene reinizializzato se l’ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell’indirizzo cambia in **Valido** e viene eliminato dall’elenco delle quarantene dal **Pulizia del database** workflow.
 
 ## quarantene di notifiche push {#push-notification-quarantines}
 
-Il meccanismo di quarantena per le notifiche push è globalmente lo stesso del processo generale. Consulta [Informazioni sulla quarantena](#about-quarantines). Tuttavia alcuni errori vengono gestiti in modo diverso per le notifiche push. Ad esempio, per alcuni errori soft, non vengono eseguiti nuovi tentativi all’interno della stessa consegna. Le specificità della notifica push sono elencate di seguito. Il meccanismo di esecuzione di nuovi tentativi (numero di tentativi, frequenza) è lo stesso utilizzato per le e-mail.
+Il meccanismo di quarantena per le notifiche push è globalmente lo stesso del processo generale. Vedi [Informazioni sulla quarantena](#about-quarantines). Tuttavia alcuni errori vengono gestiti in modo diverso per le notifiche push. Ad esempio, per alcuni errori soft, non vengono eseguiti nuovi tentativi all’interno della stessa consegna. Le specificità della notifica push sono elencate di seguito. Il meccanismo di esecuzione di nuovi tentativi (numero di tentativi, frequenza) è lo stesso utilizzato per le e-mail.
 
 Gli elementi messi in quarantena sono token dispositivo.
 
 ### quarantena iOS {#ios-quarantine}
 
-Il protocollo HTTP/V2 consente un feedback e uno stato diretti per ogni consegna push. Se si utilizza il connettore del protocollo HTTP/V2, il servizio di feedback non viene più chiamato dal flusso di lavoro **[!UICONTROL mobileAppOptOutMgt]** . Un token viene considerato non registrato quando un’app mobile viene disinstallata o reinstallata.
+Il protocollo HTTP/V2 consente un feedback e uno stato diretti per ogni consegna push. Se si utilizza il connettore del protocollo HTTP/V2, il servizio di feedback non viene più chiamato dal **[!UICONTROL mobileAppOptOutMgt]** workflow. Un token viene considerato non registrato quando un’app mobile viene disinstallata o reinstallata.
 
 In modo sincrono, se le APN restituiscono uno stato &quot;non registrato&quot; per un messaggio, il token di destinazione viene messo immediatamente in quarantena.
 
@@ -188,26 +188,26 @@ In modo sincrono, se le APN restituiscono uno stato &quot;non registrato&quot; p
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Fase di creazione/analisi del messaggio - payload troppo grande<br /> </td> 
+   <td> Fase di creazione/analisi dei messaggi: payload troppo grande<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Payload troppo lungo<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
   <tr> 
    <td> Fase di creazione/analisi dei messaggi - problema di formato di contenuto imprevisto<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Vari messaggi di errore in base all'errore<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Vari messaggi di errore in base all’errore<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non definito<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
   <tr> 
    <td> Problema del certificato (password, corruzione, ecc.) e verifica la connessione al problema APN<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Vari messaggi di errore in base all'errore<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Vari messaggi di errore in base all’errore<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
@@ -220,18 +220,18 @@ In modo sincrono, se le APN restituiscono uno stato &quot;non registrato&quot; p
    <td> Sì<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rifiuto del messaggio APN: Annullamento della registrazione<br />: l'utente ha rimosso l'applicazione o il token è scaduto<br /> </td> 
+   <td> Rifiuto del messaggio APN: Annulla registrazione<br /> l'utente ha rimosso l'applicazione o il token è scaduto<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Non registrato<br /> </td> 
-   <td> Rigido<br /> </td> 
+   <td> Duro<br /> </td> 
    <td> Utente sconosciuto<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
   <tr> 
    <td> Rifiuto del messaggio APN: tutti gli altri errori<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> La causa del rifiuto dell'errore sarà presente nel messaggio di errore<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> La causa del rifiuto dell’errore sarà presente nel messaggio di errore<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
@@ -244,24 +244,24 @@ In modo sincrono, se le APN restituiscono uno stato &quot;non registrato&quot; p
 
 Per ogni notifica, Adobe Campaign riceve gli errori sincroni direttamente dal server FCM. Adobe campagna li gestisce al volo e genera errori rigidi o morbidi in base alla gravità dell&#39;errore e possono essere eseguiti nuovi tentativi:
 
-* Lunghezza del payload superata, problema di connessione, problema di disponibilità del servizio: esecuzione di un nuovo tentativo, errore soft, motivo dell&#39;errore **[!UICONTROL Refused]**.
+* Lunghezza del payload superata, problema di connessione, problema di disponibilità del servizio: esecuzione di un nuovo tentativo, errore morbido, motivo dell&#39;errore **[!UICONTROL Refused]**.
 * Quota del dispositivo superata: nessun nuovo tentativo, errore soft, motivo di errore **[!UICONTROL Refused]**.
 * Token non valido o non registrato, errore imprevisto, problema dell&#39;account del mittente: nessun nuovo tentativo, errore rigido, motivo errore **[!UICONTROL Refused]**.
 
-Il flusso di lavoro **[!UICONTROL mobileAppOptOutMgt]** viene eseguito ogni 6 ore per aggiornare la tabella **AppSubscriptionRcp**. Per i token dichiarati non registrati o non più validi, il campo **Disabilitato** è impostato su **True** e la sottoscrizione collegata a tale token dispositivo verrà automaticamente esclusa dalle consegne future.
+La **[!UICONTROL mobileAppOptOutMgt]** il flusso di lavoro viene eseguito ogni 6 ore per aggiornare **AppSubscriptionRcp** tabella. Per i token dichiarati non registrati o non più validi, il campo **Disabilitato** è impostato su **True** e la sottoscrizione collegata a tale token dispositivo verrà automaticamente esclusa dalle consegne future.
 
-Durante l’analisi della consegna, tutti i dispositivi esclusi dalla destinazione vengono aggiunti automaticamente alla tabella **excludeLogAppSubRcp** .
+Durante l’analisi della consegna, tutti i dispositivi esclusi dal target vengono aggiunti automaticamente al **excludeLogAppSubRcp** tabella.
 
 >[!NOTE]
 Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
-* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo errore **[!UICONTROL Unreachable]**, esecuzione di un nuovo tentativo.
-* Connessione persa durante una consegna: errore soft, motivo di errore **[!UICONTROL Refused]**, esecuzione di un nuovo tentativo.
-* Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
+* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
+* Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
+* Errore sincrono restituito da Baidu durante l&#39;invio: errore grave, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
 Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
-Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1, lo stesso vale per l’aggiornamento degli abbonamenti e delle esclusioni. Per ulteriori informazioni, consulta la sezione [Android V1](#android-quarantine) .
+Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1, lo stesso vale per l’aggiornamento degli abbonamenti e delle esclusioni. Per ulteriori informazioni, consulta la sezione [Android V1](#android-quarantine) sezione .
 
 <table> 
  <tbody> 
@@ -277,15 +277,15 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Fase di creazione/analisi dei messaggi: parole chiave non valide utilizzate nei campi personalizzati<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Non è possibile utilizzare le seguenti parole chiave: {1}<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> </td> 
    <td> No<br /> </td> 
   </tr> 
   <tr> 
-   <td> Fase di creazione/analisi dei messaggi: payload troppo grande<br /> </td> 
+   <td> Fase di creazione/analisi dei messaggi: carico utile troppo grande<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> La notifica è troppo pesante: {1} bit, mentre solo {2} sono autorizzati<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> La notifica è troppo pesante: {1} bit, mentre sono autorizzati solo {2}<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
@@ -293,15 +293,15 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Connessione di rete persa durante l'invio<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Nessuna risposta dal servizio Firebase Cloud Messaging sull'indirizzo: {1}<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non raggiungibile<br /> </td> 
    <td> Sì<br /> </td> 
   </tr> 
   <tr> 
    <td> Rifiuto del messaggio FCM: Il server FCM non è temporaneamente disponibile (ad esempio con timeout). <br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Il servizio Firebase Cloud Messaging non è temporaneamente disponibile<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Servizio Firebase Cloud Messaging temporaneamente non disponibile<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non raggiungibile<br /> </td> 
    <td> Sì<br /> </td> 
   </tr> 
@@ -309,7 +309,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Rifiuto del messaggio FCM: Errore durante l'autenticazione dell'account del mittente<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Impossibile identificare l'account sviluppatore. Controllare l'ID e la password<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
@@ -317,7 +317,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Rifiuto del messaggio FCM: Quota del dispositivo superata<br /> </td> 
    <td> Errore<br /> </td> 
    <td> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Rifiutato<br /> </td> 
    <td> Sì<br /> </td> 
   </tr> 
@@ -325,7 +325,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Rifiuto del messaggio FCM: Registrazione non valida / non registrata<br /> </td> 
    <td> Errore<br /> </td> 
    <td> </td> 
-   <td> Rigido<br /> </td> 
+   <td> Duro<br /> </td> 
    <td> Utente sconosciuto<br /> </td> 
    <td> No<br /> </td> 
   </tr> 
@@ -402,7 +402,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> Sì<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticazione: Client o ambito non autorizzati nella richiesta.<br /> </td> 
+   <td> Autenticazione: Client o ambito non autorizzato nella richiesta.<br /> </td> 
    <td> Errore<br /> </td> 
    <td> unauthorized_client </td> 
    <td> Ignorato</td>
@@ -410,7 +410,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> No<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticazione: Client non autorizzato a recuperare token di accesso utilizzando questo metodo o client non autorizzato per uno degli ambiti richiesti.<br /> </td> 
+   <td> Autenticazione: Client non autorizzato a recuperare token di accesso utilizzando questo metodo o client non autorizzato per nessuno degli ambiti richiesti.<br /> </td> 
    <td> Errore<br /> </td> 
    <td> unauthorized_client </td> 
    <td> Ignorato</td>
@@ -434,7 +434,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> No<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticazione: JWT<br /> non valido </td> 
+   <td> Autenticazione: JWT non valido<br /> </td> 
    <td> Errore<br /> </td> 
    <td> valid_Grant </td> 
    <td> Ignorato</td> 
@@ -442,7 +442,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> No<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticazione: Firma JWT<br /> non valida </td> 
+   <td> Autenticazione: Firma JWT non valida<br /> </td> 
    <td> Errore<br /> </td> 
    <td> valid_Grant </td> 
    <td> Ignorato</td> 
@@ -450,7 +450,7 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
    <td> No<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticazione: Pubblico del token ID o dell'ambito OAuth non valido fornito<br /> </td> 
+   <td> Autenticazione: Pubblico del token ID o dell’ambito OAuth non valido<br /> </td> 
    <td> Errore<br /> </td> 
    <td> unauthorized_client</td> 
    <td> Ignorato</td> 
@@ -472,10 +472,10 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
 
 **Per connettori standard**
 
-Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del processo generale. Consulta [Informazioni sulla quarantena](#about-quarantines). Le specificità per gli SMS sono elencate di seguito.
+Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del processo generale. Vedi [Informazioni sulla quarantena](#about-quarantines). Le specificità di SMS sono elencate di seguito.
 
 >[!NOTE]
-La tabella **[!UICONTROL Delivery log qualification]** non si applica al connettore **SMPP generico esteso**.
+La **[!UICONTROL Delivery log qualification]** la tabella non si applica al **SMPP generico esteso** connettore.
 
 <table> 
  <tbody> 
@@ -504,21 +504,21 @@ La tabella **[!UICONTROL Delivery log qualification]** non si applica al connett
    <td> Errore restituito dal provider<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Errore durante la ricezione dei dati (SR o MO)<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non raggiungibile<br /> </td> 
   </tr> 
   <tr> 
-   <td> MT: conferma<br /> non valida </td> 
+   <td> Conferma MT non valida<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Errore '{1}' durante l'elaborazione del frame di conferma per la query di invio<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non raggiungibile<br /> </td> 
   </tr> 
   <tr> 
-   <td> Errore durante l'invio del MT<br /> </td> 
+   <td> Errore durante l'invio dell'MT<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Errore durante l'invio dei messaggi<br /> </td> 
-   <td> Soft<br /> </td> 
+   <td> Morbido<br /> </td> 
    <td> Non raggiungibile<br /> </td> 
   </tr> 
  </tbody> 
@@ -528,12 +528,12 @@ La tabella **[!UICONTROL Delivery log qualification]** non si applica al connett
 
 Quando si utilizza il protocollo SMPP per inviare messaggi SMS, la gestione degli errori viene gestita in modo diverso. Per ulteriori informazioni sul connettore SMPP generico esteso, consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito utilizzando espressioni regolari (regexes) per filtrare il contenuto. Questi dati vengono quindi confrontati con le informazioni presenti nella tabella **[!UICONTROL Delivery log qualification]** (disponibile tramite il menu **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** ).
+Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito utilizzando espressioni regolari (regexes) per filtrare il contenuto. Questi dati vengono quindi confrontati con le informazioni presenti in **[!UICONTROL Delivery log qualification]** (disponibile tramite **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** menu).
 
 Prima che un nuovo tipo di errore sia qualificato, il motivo dell’errore è sempre impostato su **Rifiutato** per impostazione predefinita.
 
 >[!NOTE]
-I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Consulta [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Vedi [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 Chiedi al tuo provider di un elenco di stati e codici di errore per impostare i tipi di errori e i motivi corretti per un errore nella tabella di qualificazione del registro di consegna.
 
 Esempio di messaggio generato:
@@ -543,24 +543,24 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Tutti i messaggi di errore iniziano con **SR** per distinguere i codici di errore SMS dai codici di errore e-mail.
-* La seconda parte (**Generico** in questo esempio) del messaggio di errore fa riferimento al nome dell’implementazione SMSC, come definito nel campo **[!UICONTROL SMSC implementation name]** dell’account esterno SMS. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
+* seconda parte (**Generico** in questo esempio) del messaggio di errore si riferisce al nome dell&#39;implementazione SMSC, come definito in **[!UICONTROL SMSC implementation name]** campo dell’account esterno SMS. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    Poiché lo stesso codice di errore può avere un significato diverso per ogni provider, questo campo ti consente di sapere quale provider ha generato il codice di errore. Puoi quindi trovare l’errore nella documentazione del provider pertinente.
 
-* La terza parte (**DELIVRD** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dall’SR utilizzando il regex di estrazione dello stato definito nell’account esterno SMS.
+* terza parte (**DELIVRD** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dall’SR utilizzando il regex di estrazione dello stato definito nell’account esterno SMS.
 
-   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
+   Questo regex è specificato nel **[!UICONTROL SMSC specificities]** scheda dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
-   Per impostazione predefinita, il regex estrae il campo **stat:** come definito dalla sezione **Appendice B** della specifica **SMPP 3.4**.
+   Per impostazione predefinita, il regex estrae il **stat:** come definito dal **Appendice B** della sezione **Specifiche di SMPP 3.4**.
 
-* La quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dall’SR utilizzando il regex di estrazione del codice di errore definito nell’account esterno SMS.
+* quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dall’SR utilizzando il regex di estrazione del codice di errore definito nell’account esterno SMS.
 
-   Questo regex è specificato nella scheda **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
+   Questo regex è specificato nel **[!UICONTROL SMSC specificities]** scheda dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-   Per impostazione predefinita, il regex estrae il campo **err:** come definito dalla sezione **Appendice B** della specifica **SMPP 3.4**.
+   Per impostazione predefinita, il regex estrae il **errore:** come definito dal **Appendice B** della sezione **Specifiche di SMPP 3.4**.
 
-* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nella colonna **[!UICONTROL First text]** della tabella **[!UICONTROL Delivery log qualification]**. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di avere più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification).
+* Tutto ciò che viene dopo il simbolo di tubo (|) viene visualizzato solo nel **[!UICONTROL First text]** della colonna **[!UICONTROL Delivery log qualification]** tabella. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di avere più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification).
 
-Il connettore SMPP generico esteso applica un euristico per trovare valori predefiniti ragionevoli: se lo stato inizia con **DELIV**, viene considerato un successo perché corrisponde agli stati comuni **DELIVRD** o **DELIVERED** utilizzati dalla maggior parte dei provider. Qualsiasi altro stato causa un errore grave.
+Il connettore SMPP generico esteso applica un euristico per trovare valori predefiniti ragionevoli: se lo stato inizia con **DELIV**, viene considerato un successo perché corrisponde agli stati comuni **DELIVRD** o **CONSEGNATO** utilizzato dalla maggior parte dei fornitori. Qualsiasi altro stato causa un errore grave.

@@ -19,15 +19,15 @@ ht-degree: 7%
 
 ## Configurare l’attività Query {#configuring-the-query-activity}
 
-* Fai doppio clic sull’attività **[!UICONTROL Query]** .
+* Fai doppio clic sul pulsante **[!UICONTROL Query]** attività.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Fai clic sul collegamento **[!UICONTROL Edit query]** e seleziona i destinatari desiderati.
+* Fai clic sul pulsante **[!UICONTROL Edit query]** e seleziona i destinatari a cui desideri rivolgerti.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Collega l’attività **[!UICONTROL Query]** all’attività **[!UICONTROL Split]** .
+* Collega **[!UICONTROL Query]** attività **[!UICONTROL Split]** attività.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -37,7 +37,7 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
 1. Creazione della popolazione A:
 
-   * Fai doppio clic sull’attività **[!UICONTROL Split]** .
+   * Fai doppio clic sul pulsante **[!UICONTROL Split]** attività.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -45,11 +45,11 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Selezionare l&#39;opzione **[!UICONTROL Limit the selected records]**.
+   * Seleziona la **[!UICONTROL Limit the selected records]** opzione .
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Fai clic sul collegamento **[!UICONTROL Edit]**, seleziona **[!UICONTROL Activate random sampling]** e fai clic su **[!UICONTROL Next]**.
+   * Fai clic sul pulsante **[!UICONTROL Edit]** collegamento, seleziona **[!UICONTROL Activate random sampling]** e fai clic su **[!UICONTROL Next]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
@@ -77,7 +77,7 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * Modifica l’etichetta per specificare che questa popolazione non include né A né B, quindi fai clic su **[!UICONTROL OK]** per chiudere l’attività.
+   * Modifica l’etichetta per specificare che la popolazione non include né A né B, quindi fai clic su **[!UICONTROL OK]** per chiudere l’attività.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 

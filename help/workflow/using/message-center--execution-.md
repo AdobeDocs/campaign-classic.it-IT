@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il componente aggiuntivo **Message Center - Execution** .
+I flussi di lavoro descritti di seguito sono installati con **Centro messaggi - Esecuzione** add-on per impostazione predefinita.
 
 Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
 
@@ -35,14 +35,14 @@ Per ulteriori informazioni, a seconda della versione di Campaign, consulta quest
   <tr> 
    <td> <span class="uicontrol">Update event status</span> <br /> </td> 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
-   <td> Questo flusso di lavoro ti consente di assegnare uno stato a un evento. Gli stati dell'evento sono i seguenti:<br /> 
+   <td> Questo flusso di lavoro ti consente di assegnare uno stato a un evento. Gli stati dell’evento sono i seguenti:<br /> 
     <ul> 
      <li> <p><strong>In sospeso</strong>: l’evento è in coda. Non è ancora stato associato alcun modello di messaggio.</p> </li> 
-     <li> <p><strong>Consegna</strong> in sospeso: l’evento è in coda, è stato associato un modello di messaggio ed è attualmente in fase di elaborazione da parte della consegna.</p> </li> 
+     <li> <p><strong>Consegna in sospeso</strong>: l’evento è in coda, è stato associato un modello di messaggio ed è attualmente in fase di elaborazione da parte della consegna.</p> </li> 
      <li> <p><strong>Inviato</strong>: questo stato viene copiato dai log di consegna. Significa che la consegna è stata inviata.</p> </li> 
      <li> <p><strong>Ignorato dalla consegna</strong>: questo stato viene copiato dai log di consegna. Significa che la consegna è stata ignorata.</p> </li> 
-     <li> <p><strong>Errore</strong> di consegna: questo stato viene copiato dai log di consegna. Significa che la consegna non è riuscita.</p> </li> 
-     <li> <p><strong>Evento non trattato</strong>: impossibile associare l'evento a un modello di messaggio. L’evento non verrà rielaborato.</p> </li> 
+     <li> <p><strong>Errore di consegna</strong>: questo stato viene copiato dai log di consegna. Significa che la consegna non è riuscita.</p> </li> 
+     <li> <p><strong>Evento non coperto</strong>: impossibile associare l'evento a un modello di messaggio. L’evento non verrà rielaborato.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

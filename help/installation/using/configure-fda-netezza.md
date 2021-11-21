@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Utilizza l’opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi riportati di seguito per configurare l’accesso a Netezza.
+Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) opzione per elaborare le informazioni memorizzate in database esterni. Segui i passaggi riportati di seguito per configurare l’accesso a Netezza.
 
-1. Installa e configura [driver di Netezza](#netezza-config)
-1. Configura la Netezza [account esterno](#netezza-external) in Campaign
+1. Installare e configurare [Netezze](#netezza-config)
+1. Configurare la Netezza [account esterno](#netezza-external) in Campaign
 
 ## Netezza configurazione {#netezza-config}
 
@@ -28,10 +28,10 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
 
 1. Installare i driver ODBC per Netezza, in base al sistema operativo utilizzato:
 
-   * **nz-linuxclient-v7.2.0.0.tar.** gzfor Linux. Selezionare la cartella corrispondente al sistema operativo (linux o linux64) e avviare il comando di rimozione dal pacchetto. Puoi lasciare l’installazione da eseguire nell’archivio come consigliato per impostazione predefinita: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.** zipfor Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo in uso: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
+   * **nz-linuxclient-v7.2.0.0.tar.gz** per Linux. Selezionare la cartella corrispondente al sistema operativo (linux o linux64) e avviare il comando di rimozione dal pacchetto. Puoi lasciare l’installazione da eseguire nell’archivio come consigliato per impostazione predefinita: &quot;/usr/local/nz&quot;.
+   * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo in uso: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
 
-1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per la dichiarazione dei driver.
+1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per la dichiarazione dei conducenti.
 
    * **/etc/odbc.ini**
 
@@ -73,11 +73,11 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
 
 L’account esterno Netezza ti consente di collegare l’istanza Campaign al database esterno Netezza.
 
-1. Dalla campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
-1. Per configurare l’account esterno **[!UICONTROL Netezza]**, devi specificare:
+1. Per configurare le **[!UICONTROL Netezza]** account esterno, devi specificare:
 
    * **[!UICONTROL Type]**: Netezza
 
@@ -93,4 +93,4 @@ L’account esterno Netezza ti consente di collegare l’istanza Campaign al dat
 >
 >Non vengono prese in considerazione le operazioni sugli schemi contenenti chiavi primarie generate automaticamente.
 >
->La tabella utilizzerà la clausola **Organizza su** sul primo indice definito nello schema. Poiché questa clausola è limitata a 1 a 4 colonne con Netezza, questo indice non può contenere più di 4 colonne.
+>La tabella utilizzerà il **Organizza su** sul primo indice definito nello schema. Poiché questa clausola è limitata a 1 a 4 colonne con Netezza, questo indice non può contenere più di 4 colonne.

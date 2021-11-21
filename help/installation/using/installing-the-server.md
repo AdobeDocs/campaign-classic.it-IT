@@ -38,7 +38,7 @@ I passaggi di installazione per il server Adobe Campaign sono i seguenti:
    * **[!UICONTROL Installation of a client]** : Installazione dei componenti richiesti per il client Adobe Campaign.
    * **[!UICONTROL Custom installation]** : L&#39;utente sceglie gli elementi da installare.
 
-   Seleziona **Installazione di un server applicazioni** e segui i diversi passaggi come mostrato di seguito:
+   Seleziona **Installazione di un application server** e segui i diversi passaggi come mostrato di seguito:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -62,7 +62,7 @@ I passaggi di installazione per il server Adobe Campaign sono i seguenti:
    >
    >Una volta completata l&#39;installazione del server, è necessario riavviare il server per evitare possibili problemi di rete.
 
-   Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fare riferimento a [Primo avvio del server](#first-start-up-of-the-server).
+   Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fai riferimento a [Primo avvio del server](#first-start-up-of-the-server).
 
 ## Riepilogo del test di installazione {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## Primo avvio del server {#first-start-up-of-the-server}
 
-Al termine del test di installazione, apri un prompt dei comandi tramite il menu **[!UICONTROL Start > Programs > Adobe Campaign]** e immetti il seguente comando:
+Una volta completato il test di installazione, apri un prompt dei comandi tramite il **[!UICONTROL Start > Programs > Adobe Campaign]** e immetti il comando seguente:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ Vengono visualizzate le seguenti informazioni:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Premere **Ctrl+C** per interrompere il processo, quindi immettere il seguente comando:
+Press **Ctrl+C** per interrompere il processo, immettere il comando seguente:
 
 ```
 nlserver start web
@@ -137,7 +137,7 @@ Vengono visualizzate le seguenti informazioni:
 
 ## Password per l’identificatore interno {#password-for-the-internal-identifier}
 
-Il server Adobe Campaign definisce un accesso tecnico denominato **internal** che dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
+Il server Adobe Campaign definisce un accesso tecnico denominato **interno** che ha tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
 
 Ulteriori informazioni in [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installazione di LibreOffice {#installing-libreoffice}
 
-Scarica LibreOffice, ad esempio da [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) e segui i normali passaggi di installazione.
+Scarica LibreOffice, ad esempio da [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) e segui i passaggi regolari di installazione.
 
 Aggiungi la seguente variabile di ambiente:
 

@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-I flussi di lavoro descritti di seguito sono installati con il modulo **LINE channel** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../delivery/using/line-channel.md).
+I flussi di lavoro descritti di seguito sono installati con **Canale LINE** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 

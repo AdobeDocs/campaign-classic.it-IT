@@ -26,11 +26,11 @@ ht-degree: 5%
 
 ## Informazioni su questo caso d’uso {#about-this-use-case}
 
-Questo caso d&#39;uso descrive come utilizzare la funzionalità **[!UICONTROL Merge]** nell&#39;attività **[!UICONTROL Deduplication]**.
+Questo caso d&#39;uso descrive come utilizzare **[!UICONTROL Merge]** nella **[!UICONTROL Deduplication]** attività.
 
 Per ulteriori informazioni su questa funzionalità, consulta [questa sezione](deduplication.md#merging-fields-into-single-record).
 
-L’attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righe duplicate da un set di dati. In questo caso d’uso, i dati mostrati di seguito vengono duplicati in base al campo E-mail .
+La **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righe duplicate da un set di dati. In questo caso d’uso, i dati mostrati di seguito vengono duplicati in base al campo E-mail .
 
 | Data ultima modifica | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
 |-----|------------|-----------|-------|--------------|------|
@@ -38,24 +38,24 @@ L’attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righ
 | 22/07/2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 03/10/2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
 
-Con la funzionalità **[!UICONTROL Merge]** dell’attività Deduplication, puoi configurare un set di regole per la deduplicazione per definire un gruppo di campi da unire in un singolo record di dati risultante. Ad esempio, con un set di record duplicati, puoi scegliere di mantenere il numero di telefono più vecchio o il nome più recente.
+Con le attività di deduplicazione **[!UICONTROL Merge]** funzionalità, puoi configurare un set di regole per la deduplicazione per definire un gruppo di campi da unire in un singolo record di dati risultante. Ad esempio, con un set di record duplicati, puoi scegliere di mantenere il numero di telefono più vecchio o il nome più recente.
 
 ## Attivazione della funzionalità di unione {#activating-merge}
 
 
-Per abilitare la funzionalità di unione, devi prima configurare l’attività **[!UICONTROL Deduplication]** . Per farlo, esegui questi passaggi:
+Per abilitare la funzionalità di unione, è innanzitutto necessario configurare la **[!UICONTROL Deduplication]** attività. Per farlo, esegui questi passaggi:
 
-1. Apri l&#39;attività, quindi fai clic sul collegamento **[Modifica configurazione]** .
+1. Apri l’attività, quindi fai clic sul pulsante **[Modifica configurazione]** link.
 
 1. Seleziona il campo di riconciliazione da utilizzare per la deduplicazione, quindi fai clic su **[!UICONTROL Next]**. In questo esempio, vogliamo deduplicare in base al campo e-mail.
 
    ![](assets/uc_merge_edit.png)
 
-1. Fai clic sul collegamento **[!UICONTROL Advanced parameters]**, quindi attiva le opzioni **[!UICONTROL Merge records]** e **[!UICONTROL Use several record merging criteria]** .
+1. Fai clic sul pulsante **[!UICONTROL Advanced parameters]** , quindi attiva il **[!UICONTROL Merge records]** e **[!UICONTROL Use several record merging criteria]** opzioni.
 
    ![](assets/uc_merge_advanced_parameters.png)
 
-1. La scheda **[!UICONTROL Merge]** viene aggiunta alla schermata di configurazione **[!UICONTROL Deduplication]**. Questa scheda consente di specificare i dati da unire durante l’esecuzione della deduplicazione.
+1. La **[!UICONTROL Merge]** viene aggiunta alla scheda **[!UICONTROL Deduplication]** schermata di configurazione. Questa scheda consente di specificare i dati da unire durante l’esecuzione della deduplicazione.
 
 ## Configurazione dei campi da unire {#configuring-rules}
 
@@ -68,7 +68,7 @@ Di seguito sono riportate le regole che si desidera utilizzare per unire i dati 
 
 Per configurare queste regole, effettua le seguenti operazioni:
 
-1. Apri la scheda **[!UICONTROL Merge]** , quindi fai clic sul pulsante **[!UICONTROL Add]** .
+1. Apri **[!UICONTROL Merge]** , quindi fai clic sul pulsante **[!UICONTROL Add]** pulsante .
 
    ![](assets/uc_merge_add.png)
 
@@ -98,7 +98,7 @@ Per configurare queste regole, effettua le seguenti operazioni:
 
 ## Risultati {#results}
 
-Dopo aver configurato queste regole, alla fine dell&#39;attività **[!UICONTROL Deduplication]** vengono ricevuti i seguenti dati.
+Dopo aver configurato queste regole, i seguenti dati vengono ricevuti alla fine del **[!UICONTROL Deduplication]** attività.
 
 | Data di modifica | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
 |-----|------------|-----------|-------|--------------|------|

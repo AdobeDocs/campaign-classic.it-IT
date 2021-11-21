@@ -19,6 +19,6 @@ ht-degree: 15%
 
 Adobe Campaign offre diversi rapporti che ti consentono di controllare l’attività e l’esecuzione regolare delle istanze di esecuzione.
 
-Questi report del Centro messaggi sono accessibili dalla scheda **[!UICONTROL Reports]** dell&#39; **istanza di controllo**.
+Questi report del Centro messaggi sono accessibili dal **[!UICONTROL Reports]** della scheda **istanza di controllo**.
 
 ![](assets/messagecenter_reporting_002.png)

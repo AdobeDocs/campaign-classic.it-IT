@@ -35,7 +35,7 @@ metodo
 
 ## Descrizione {#description-11}
 
-Questo elemento ti consente di definire un elemento `<method>`. È obbligatorio dichiarare un metodo.
+Questo elemento consente di definire un `<method>`  elemento. È obbligatorio dichiarare un metodo.
 
 ## Descrizione attributo {#attribute-description-11}
 

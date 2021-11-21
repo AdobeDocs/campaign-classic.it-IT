@@ -24,9 +24,9 @@ ht-degree: 1%
 ## Avvisi {#warnings}
 
 * Il processo di migrazione deve essere eseguito solo da utenti esperti. Devi essere assistito da almeno un esperto di database, un amministratore di sistema e uno sviluppatore di applicazioni di Adobe Campaign.
-* Prima di avviare la migrazione, verifica che i sistemi e i componenti di sistema utilizzati siano in realtà compatibili con v7. Consultare la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+* Prima di avviare la migrazione, verifica che i sistemi e i componenti di sistema utilizzati siano in realtà compatibili con v7. Consulta la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 * Se utilizzi Adobe Campaign Cloud Messaging (mid-sourcing), contatta l’Adobe prima di avviare l’intera procedura di migrazione.
-* Prima di avviare un processo di migrazione, devi eseguire il backup dei dati **e**.
+* Prima di avviare un processo di migrazione, **deve** eseguire il backup dei dati.
 * Il processo di migrazione potrebbe richiedere diversi giorni per essere completato.
 * Adobe Campaign v7 è più rigoroso rispetto alle versioni 5.11 e 6.02 in termini di configurazione. Questo è principalmente per evitare problemi come la corruzione dei dati e per preservare l&#39;integrità dei dati nel database. Di conseguenza, alcune funzioni offerte nelle versioni v5.11 e v6.02 potrebbero non funzionare più nella versione v7 e potrebbero quindi essere adattate dopo la migrazione. Prima di mettere in produzione qualsiasi cosa, ti consigliamo di testare sistematicamente tutte le configurazioni, in particolare i flussi di lavoro necessari per utilizzare Adobe Campaign.
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 
 Prima di eseguire la migrazione, installa la build più recente della versione corrente in uso.
 
-Controlla la versione sul tuo server andando al menu **[!UICONTROL Help> About]** nella console del client utilizzando il comando **nlserver pdump** .
+Controlla la versione sul server accedendo al **[!UICONTROL Help> About]** nella console client utilizzando **pdump nlserver** comando.
 
 ### Backup dei dati {#data-backup}
 
-Prima di avviare un processo di migrazione, devi eseguire il backup dei dati **e**.
+Prima di avviare un processo di migrazione, **deve** eseguire il backup dei dati.
 
 ### Ambiente {#environment}
 
@@ -51,17 +51,17 @@ Poiché la procedura di migrazione è sensibile, si consiglia vivamente di legge
 
 ## Passaggi di migrazione {#migration-steps}
 
-La procedura di migrazione deve essere eseguita sui server **all** e in un ordine particolare.
+La procedura di migrazione deve essere espletata **tutto** server e in un ordine particolare.
 
-* Nel caso di una **piattaforma indipendente** (modalità macchina singola), l&#39;applicazione viene migrata nella sua totalità.
-* Nel caso di una **piattaforma standard** (enterprise), i passaggi di migrazione sono i seguenti:
+* Nel caso di un **piattaforma indipendente** (modalità macchina singola), l&#39;applicazione viene migrata completamente.
+* Nel caso di un **piattaforma standard** (azienda), le fasi di migrazione sono le seguenti:
 
    1. Esegui la migrazione del server di marketing.
    1. Eseguire la migrazione del server di posta (mta).
    1. Esegui la migrazione dei server di reindirizzamento e tracking (Apache / IIS).
 
-* Nel caso di una **piattaforma Cloud Messaging**, i server di esecuzione sono ospitati in Adobe Campaign. Contatta Adobe Campaign per coordinare la migrazione tra server diversi.
-* Nel caso di una **piattaforma Power Booster o Power Cluster**, i passaggi di migrazione sono i seguenti:
+* Nel caso di un **Piattaforma di messaggistica cloud**, i server di esecuzione sono ospitati in Adobe Campaign. Contatta Adobe Campaign per coordinare la migrazione tra server diversi.
+* Nel caso di un **Piattaforma Power Booster o Power Cluster**, le fasi di migrazione sono le seguenti:
 
    1. Esegui la migrazione dei server di reindirizzamento e tracking (Apache / IIS).
    1. Eseguire la migrazione dei server Power Booster/Cluster.
@@ -69,7 +69,7 @@ La procedura di migrazione deve essere eseguita sui server **all** e in un ordin
 
 ## Password utente {#user-passwords}
 
-In v7, la connessione dell&#39;operatore **internal** e **admin** deve essere protetta da una password. Si consiglia vivamente di assegnare password a questi account e a tutti gli account dell&#39;operatore **prima della migrazione**. Se non hai specificato una password per **internal**, non potrai più effettuare la connessione. Per assegnare una password a **internal**, immetti il comando seguente:
+Nella versione v7, **interno** e **admin** la connessione dell&#39;operatore deve essere protetta da una password. Si consiglia vivamente di assegnare password a questi account e a tutti gli account dell&#39;operatore, **prima della migrazione**. Se non hai specificato una password per **interno**, non sarà possibile connettersi. Per assegnare una password a **interno**, immetti il comando seguente:
 
 ```
 nlserver config -internalpassword
@@ -77,4 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->La password **interna** deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta le sezioni [Identificatore interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Autorizzazioni](../../platform/using/access-management.md) .
+>La **interno** La password deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta la [Identificatore interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Autorizzazioni](../../platform/using/access-management.md) sezioni.

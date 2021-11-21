@@ -31,16 +31,16 @@ Il ciclo del flusso di lavoro prevede tre passaggi principali.
 
    Un flusso di lavoro è &quot;Completato&quot; quando non sono più presenti attività in corso o quando un operatore ha esplicitamente interrotto l’istanza.
 
-Ad esempio, le attività **Start** e **Consegna** sono evidenziate mentre l&#39;attività **Approvazione** lampeggia nel flusso di lavoro seguente.
+Ad esempio, il **Inizio** e **Consegna** le attività sono descritte mentre **Approvazione** l’attività lampeggia nel flusso di lavoro seguente.
 
 ![](assets/new-workflow-6.png)
 
 Ciò significa che le prime due attività sono state eseguite correttamente e che l’approvazione è in corso, ovvero è stata creata ma non ancora completata.
 
-I caratteri **574 -Ok** visualizzati sopra la transizione dopo l’attività **Consegna** indicano che la preparazione della consegna ha eseguito il targeting di 574 destinatari e che l’operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
+I caratteri **574 -Ok** visualizzato sopra la transizione che segue **Consegna** attività indica che la preparazione della consegna ha eseguito il targeting di 574 destinatari e che l’operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
 
-Il flusso di lavoro viene avviato ed è in attesa che un operatore appartenente al gruppo specificato nell&#39;attività **Approvazione** prenda una decisione. Vengono notificati gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare.
+Il flusso di lavoro viene avviato e è in attesa di un operatore appartenente al gruppo specificato nel **Approvazione** attività per prendere una decisione. Vengono notificati gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare.
 
-La gestione degli operatori è descritta in questa sezione [sezione](../../platform/using/access-management.md).
+La gestione degli operatori è descritta in questo [sezione](../../platform/using/access-management.md).
 
 Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](monitoring-workflow-execution.md).

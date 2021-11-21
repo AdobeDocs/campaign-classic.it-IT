@@ -31,12 +31,12 @@ L’attività di profilo della consegna, disponibile nei flussi di lavoro delle 
 1. In un flusso di lavoro, aggiungi un’attività di profilo della consegna prima di aggiungere un’attività di consegna.
 1. Nell’attività di struttura della consegna, specifica il profilo da utilizzare.
 
-   Per ulteriori informazioni su come specificare i contorni di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) .
+   Per ulteriori informazioni su come specificare i contorni di consegna, consulta [Campagna - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) guida.
 
 1. Completa i campi disponibili in base alla consegna.
 1. Esistono due casi possibili:
 
-   * Se desideri chiamare il motore di offerta, seleziona la casella **[!UICONTROL Restrict the number of propositions selected]** . Specifica lo spazio di offerta e il numero di proposte da presentare nella consegna.
+   * Se desideri chiamare il motore di offerta, controlla la **[!UICONTROL Restrict the number of propositions selected]** scatola. Specifica lo spazio di offerta e il numero di proposte da presentare nella consegna.
 
       Il motore di offerta terrà conto dei fattori di ponderazione e delle regole di idoneità dell’offerta.
 
@@ -53,7 +53,7 @@ L’attività di arricchimento ti consente di aggiungere offerte o collegamenti 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la documentazione dedicata nella [Guida ai flussi di lavoro](../../workflow/using/enrichment.md).
+>Per ulteriori informazioni sull’attività di arricchimento, consulta la documentazione dedicata nella sezione [Guida ai flussi di lavoro](../../workflow/using/enrichment.md).
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
@@ -66,7 +66,7 @@ Esistono due metodi per specificare le proposte di offerta.
 
 ### Specifica di un’offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
+Dopo aver configurato la query (consulta la sezione [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
@@ -77,7 +77,7 @@ Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../wo
 1. Specifica un identificatore e un’etichetta per la proposta che verrà aggiunta.
 1. Specifica la selezione dell’offerta. Sono disponibili due opzioni possibili:
 
-   * **[!UICONTROL Search for the best offer in a category]** : seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio di offerta, categoria o tema/i, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare il campo **[!UICONTROL Category]** o **[!UICONTROL Theme]** anziché entrambi allo stesso tempo.
+   * **[!UICONTROL Search for the best offer in a category]** : seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio di offerta, categoria o tema/i, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare una delle due opzioni **[!UICONTROL Category]** o **[!UICONTROL Theme]** anziché contemporaneamente.
 
       ![](assets/int_enrichment_offer3.png)
 
@@ -85,7 +85,7 @@ Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../wo
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione .
 
    >[!NOTE]
    >
@@ -97,7 +97,7 @@ Puoi anche fare riferimento a un collegamento a un’offerta in un’attività d
 
 A questo scopo, utilizza il seguente processo:
 
-1. Seleziona **[!UICONTROL Add data]** nella scheda **[!UICONTROL Enrichment]** dell’attività.
+1. Seleziona **[!UICONTROL Add data]** nel **[!UICONTROL Enrichment]** scheda .
 1. Nella finestra in cui scegli il tipo di dati da aggiungere, seleziona **[!UICONTROL A link]**.
 1. Seleziona il tipo di collegamento che desideri stabilire e la relativa destinazione. In questo caso, la destinazione è lo schema dell&#39;offerta.
 
@@ -107,7 +107,7 @@ A questo scopo, utilizza il seguente processo:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione .
 
    >[!NOTE]
    >
@@ -115,38 +115,38 @@ A questo scopo, utilizza il seguente processo:
 
 ### Memorizzazione di ranking e pesi delle offerte {#storing-offer-rankings-and-weights}
 
-Per impostazione predefinita, quando un&#39;attività **Arricchimento** viene utilizzata per fornire offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
+Per impostazione predefinita, quando un **arricchimento** l’attività viene utilizzata per fornire offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
 
 >[!NOTE]
 >
->Ricorda: L’attività **[!UICONTROL Offer engine]** memorizza tali informazioni per impostazione predefinita.
+>Ricorda: La **[!UICONTROL Offer engine]** per impostazione predefinita queste informazioni vengono memorizzate nell’attività .
 
 Tuttavia, è possibile memorizzare queste informazioni come segue:
 
-1. Crea una chiamata al motore di offerta in un’attività di arricchimento inserita dopo una query e prima di un’attività di consegna. Consulta la sezione [Specifica di un&#39;offerta o di una chiamata al motore di offerta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) .
+1. Crea una chiamata al motore di offerta in un’attività di arricchimento inserita dopo una query e prima di un’attività di consegna. Fai riferimento a [Specifica di un’offerta o di una chiamata al motore di offerta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine) sezione .
 1. Nella finestra principale dell’attività, seleziona **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Aggiungi le colonne **[!UICONTROL @rank]** per la classificazione e **[!UICONTROL @weight]** per il peso dell’offerta.
+1. Aggiungi il **[!UICONTROL @rank]** colonne per la classificazione e **[!UICONTROL @weight]** per il peso dell&#39;offerta.
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Conferma l’aggiunta e salva il flusso di lavoro.
 
-La consegna memorizza automaticamente la classificazione e il peso delle offerte. Queste informazioni sono visibili nella scheda **[!UICONTROL Offers]** della consegna.
+La consegna memorizza automaticamente la classificazione e il peso delle offerte. Queste informazioni sono visibili nella **[!UICONTROL Offers]** scheda .
 
 ## Motore di offerta {#offer-engine}
 
-L’attività **[!UICONTROL Offer engine]** ti consente inoltre di specificare una chiamata al motore di offerta prima della consegna.
+La **[!UICONTROL Offer engine]** consente inoltre di specificare una chiamata al motore di offerta prima della consegna.
 
 Questa attività funziona sullo stesso principio dell’attività di arricchimento con una chiamata al motore, arricchendo i dati della popolazione in entrata con un’offerta calcolata dal motore, prima di una consegna.
 
 ![](assets/int_offerengine_activity2.png)
 
-Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
+Dopo aver configurato la query (consulta la sezione [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
-1. Aggiungi e apri un&#39;attività **[!UICONTROL Offer engine]** .
+1. Aggiungi e apri un **[!UICONTROL Offer engine]** attività.
 1. Completa i vari campi disponibili per specificare la chiamata ai parametri del motore di offerta (spazio di offerta, categoria o tema/i, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri.
 
    >[!NOTE]
@@ -155,21 +155,21 @@ Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../wo
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione .
 
 ## Offerte per cella {#offers-by-cell}
 
-L’attività **[!UICONTROL Offers by cell]** ti consente di distribuire il gruppo in entrata (da una query, ad esempio) in diversi segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
+La **[!UICONTROL Offers by cell]** l’attività ti consente di distribuire il gruppo in entrata (da una query, ad esempio) in diversi segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
 
 A questo scopo, utilizza il seguente processo:
 
-1. Aggiungi l’attività **[!UICONTROL Offers by cell]** una volta specificata la popolazione target, quindi aprila.
-1. Nella scheda **[!UICONTROL General]** , seleziona lo spazio di offerta in cui desideri presentare le offerte.
-1. Nella scheda **[!UICONTROL Cells]** , specifica i diversi sottoinsiemi utilizzando il pulsante **[!UICONTROL Add]** :
+1. Aggiungi il **[!UICONTROL Offers by cell]** una volta specificata la popolazione target, aprila.
+1. In **[!UICONTROL General]** seleziona lo spazio di offerta in cui desideri presentare le offerte.
+1. In **[!UICONTROL Cells]** , specifica i diversi sottoinsiemi utilizzando **[!UICONTROL Add]** pulsante:
 
    * Specifica il gruppo di sottoinsiemi utilizzando le regole di filtraggio e limitazione disponibili.
    * Quindi seleziona l’offerta da presentare al set secondario. Le offerte disponibili sono quelle idonee nell’ambiente delle offerte selezionato al passaggio precedente.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) .
+1. Quindi configura un’attività di consegna corrispondente al canale scelto. Per ulteriori informazioni, consulta la sezione [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione .

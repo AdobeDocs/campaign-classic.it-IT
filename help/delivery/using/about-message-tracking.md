@@ -19,9 +19,9 @@ ht-degree: 9%
 
 Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di monitorare i messaggi inviati e controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
 
-Queste informazioni vengono recuperate nella scheda **[!UICONTROL Tracking]** del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e su cui il destinatario è stato selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui hai fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
+Queste informazioni vengono recuperate nella **[!UICONTROL Tracking]** scheda del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e su cui il destinatario è stato selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui hai fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
+La **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
 
 Il diagramma seguente mostra le fasi della finestra di dialogo tra l’utente e i vari server.
 

@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Per assicurarti che ogni evento possa essere modificato in un messaggio personalizzato, devi innanzitutto creare **tipi di evento**.
+Per fare in modo che ogni evento possa essere modificato in un messaggio personalizzato, devi innanzitutto creare **tipi di evento**.
 
-Quando [crei un modello di messaggio](../../message-center/using/creating-the-message-template.md), selezioni il tipo di evento che corrisponde al messaggio che desideri inviare.
+Quando [creazione di un modello di messaggio](../../message-center/using/creating-the-message-template.md), selezioni il tipo di evento che corrisponde al messaggio che desideri inviare.
 
 >[!IMPORTANT]
 >
@@ -27,24 +27,24 @@ Quando [crei un modello di messaggio](../../message-center/using/creating-the-me
 
 Per creare tipi di evento che verranno elaborati da Adobe Campaign, segui i passaggi seguenti:
 
-1. Accedi all&#39; **istanza di controllo**.
+1. Accedi a **istanza di controllo**.
 
-1. Vai alla cartella **[!UICONTROL Administration > Platform > Enumerations]** della struttura.
+1. Vai a **[!UICONTROL Administration > Platform > Enumerations]** cartella dell&#39;albero.
 
-1. Seleziona **[!UICONTROL Event type]** dall’elenco.
+1. Seleziona **[!UICONTROL Event type]** dall&#39;elenco.
 
-1. Fare clic su **[!UICONTROL Add]** per creare un valore di enumerazione. Può trattarsi di una conferma dell’ordine, una modifica della password, una modifica della consegna dell’ordine, ecc.
+1. Fai clic su **[!UICONTROL Add]** per creare un valore di enumerazione. Può trattarsi di una conferma dell’ordine, una modifica della password, una modifica della consegna dell’ordine, ecc.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Ogni tipo di evento deve corrispondere a un valore nell&#39;enumerazione **[!UICONTROL Event type]**.
+   >Ogni tipo di evento deve corrispondere a un valore nel **[!UICONTROL Event type]** enumerazione.
 
 1. Una volta creati i valori elenco dettagliati, disconnettiti e torna all’istanza per rendere effettiva la creazione.
 
 >[!NOTE]
 >
->Ulteriori informazioni sugli elenchi dettagliati in [Gestione enumerazione](../../platform/using/managing-enumerations.md).
+>Ulteriori informazioni sugli elenchi dettagliati in [Gestione dell’enumerazione](../../platform/using/managing-enumerations.md).
 
 

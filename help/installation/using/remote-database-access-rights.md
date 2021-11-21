@@ -19,31 +19,31 @@ ht-degree: 1%
 
 Innanzitutto, affinché l’utente possa eseguire operazioni su un database esterno tramite FDA, quest’ultimo deve disporre di un diritto specifico denominato in Adobe Campaign.
 
-1. Seleziona il nodo **[!UICONTROL Administration > Access Management > Named Rights]** nell’explorer di Adobe Campaign.
+1. Seleziona la **[!UICONTROL Administration > Access Management > Named Rights]** in Adobe Campaign Explorer.
 1. Crea un nuovo diritto specificando l’etichetta selezionata.
-1. Il campo **[!UICONTROL Name]** deve avere il formato seguente **utente:base@server**, dove :
+1. La **[!UICONTROL Name]** Il campo deve avere il formato seguente **utente:base@server**, dove :
 
-   * **L’utente**  corrisponde al nome dell’utente nel database esterno.
-   * **** corrisponde al nome del database esterno.
-   * **** server corrisponde al nome del server di database esterno.
+   * **user** corrisponde al nome dell&#39;utente nel database esterno.
+   * **base** corrisponde al nome del database esterno.
+   * **server** corrisponde al nome del server di database esterno.
 
       >[!NOTE]
       >
-      >La parte **:base** è facoltativa nell&#39;Oracle.
+      >La **:base** parte è facoltativa nell&#39;Oracle.
 
-1. Salva il diritto denominato e collegalo all’utente scelto dal nodo **[!UICONTROL Administration > Access Management > Operators]** di Adobe Campaign Explorer.
+1. Salva il diritto denominato e collegalo all’utente scelto dal **[!UICONTROL Administration > Access Management > Operators]** nodo di Adobe Campaign explorer.
 
 Quindi, per elaborare i dati contenuti in un database esterno, l&#39;utente Adobe Campaign deve disporre almeno dei diritti di scrittura sul database per poter creare tabelle di lavoro. Vengono eliminate automaticamente da Adobe Campaign.
 
 In generale, sono necessari i seguenti diritti:
 
 * **CONNECT**: connessione al database remoto,
-* **LEGGI I Dati**: accesso in sola lettura alle tabelle contenenti i dati dei clienti,
+* **LEGGI i dati**: accesso in sola lettura alle tabelle contenenti i dati dei clienti,
 * **LEGGI &#39;MetaData&#39;**: accesso ai cataloghi di dati del server per ottenere la struttura della tabella,
 * **CARICA**: carico di massa nelle tabelle di lavoro (richiesto quando si lavora su collezioni e giunti),
-* **CREARE/** RILASCIARE PER  **TABLE/INDEX/PROCEDURE/FUNCTION**  (solo per tabelle di lavoro generate da Adobe Campaign),
-* **EXPLAIN**  (consigliato): per il monitoraggio delle prestazioni in caso di problemi,
-* **SCRIVI dati**  (a seconda dello scenario di integrazione).
+* **CREA/RILASCIA** per **TABELLA/INDICE/PROCEDURA/FUNZIONE** (solo per le tabelle di lavoro generate da Adobe Campaign),
+* **SPIEGARE** (consigliato): per il monitoraggio delle prestazioni in caso di problemi,
+* **SCRIVERE i dati** (a seconda dello scenario di integrazione).
 
 L’amministratore del database deve far corrispondere questi diritti con i diritti specifici di ciascun motore di database. Per ulteriori informazioni, consulta la sezione seguente.
 

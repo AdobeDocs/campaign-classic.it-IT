@@ -23,7 +23,7 @@ Puoi utilizzare questo server Tomcat integrato per distribuire le richieste HTTP
 
 In questo caso:
 
-* la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [questa sezione](configure-tomcat.md).
+* la porta di ascolto predefinita è 8080. Per modificarlo, fai riferimento a [questa sezione](configure-tomcat.md).
 * Le console client si connettono quindi utilizzando un URL come:
 
    ```
@@ -52,13 +52,13 @@ Applica i seguenti passaggi:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Assicurati che i moduli **alias**, **authz_host** e **mime** siano ancora abilitati. A questo scopo, utilizza il seguente comando:
+   Assicurati che **alias**, **authz_host** e **mime** i moduli sono ancora abilitati. A questo scopo, utilizza il seguente comando:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Crea il file **nlsrv.load** in **/etc/apache2/mods-available** e inserisci il seguente contenuto:
+1. Crea il file **nlsrv.load** in **/etc/apache2/mods-available** e inserire il contenuto seguente:
 
    In Debian 8:
 
@@ -66,7 +66,7 @@ Applica i seguenti passaggi:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Crea il file **nlsrv.conf** in **/etc/apache2/mods-available** utilizzando il seguente comando:
+1. Crea il file **nlsrv.conf** in **/etc/apache2/mods-available** utilizzando il comando seguente:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -78,13 +78,13 @@ Applica i seguenti passaggi:
     a2enmod nlsrv
    ```
 
-   Se utilizzi il modulo **mod_rewrite** per le pagine Adobe Campaign, devi rinominare i file **nlsrv.load** e **nlsrv.conf** in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, esegui il seguente comando:
+   Se utilizzi **mod_rewrite** modulo per le pagine Adobe Campaign, devi rinominare il **nlsrv.load** e **nlsrv.conf** file in **zz-nlsrv.load** e **zz-nlsrv.conf**. Per attivare il modulo, esegui il seguente comando:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Modifica il file **/etc/apache2/envars**, aggiungi le seguenti righe:
+1. Modifica le **/etc/apache2/envars** aggiungi le seguenti righe:
 
    ```
    # Added Neolane
@@ -113,7 +113,7 @@ Questa procedura si applica se hai installato e protetto Apache in un pacchetto 
 
 Applica i seguenti passaggi:
 
-1. Nel file `httpd.conf` , attiva i seguenti moduli Apache:
+1. In `httpd.conf` attiva i seguenti moduli Apache:
 
    ```
    alias
@@ -152,7 +152,7 @@ Applica i seguenti passaggi:
    ForceLanguagePriority
    ```
 
-1. Crea un file di configurazione specifico per Adobe Campaign nella cartella `/etc/httpd/conf.d/` . Ad esempio `CampaignApache.conf`
+1. Crea un file di configurazione specifico per Adobe Campaign nel `/etc/httpd/conf.d/` cartella. Ad esempio `CampaignApache.conf`
 
 1. Per **RHEL7**, aggiungi le seguenti istruzioni nel file :
 
@@ -163,7 +163,7 @@ Applica i seguenti passaggi:
 
 1. Per **RHEL7**:
 
-   Aggiungi il file `/etc/systemd/system/httpd.service` con il seguente contenuto:
+   Aggiungi il `/etc/systemd/system/httpd.service` con il seguente contenuto:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -244,4 +244,4 @@ Vengono visualizzate le seguenti informazioni:
 Connection closed by foreign host.
 ```
 
-È inoltre possibile richiedere l&#39;URL [`https://<computer>`](https://myserver.adobe.com/r/test) da un browser Web.
+Puoi anche richiedere l’URL [`https://<computer>`](https://myserver.adobe.com/r/test) da un browser Web.

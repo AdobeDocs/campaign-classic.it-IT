@@ -25,9 +25,9 @@ Il tracciamento si applica ai messaggi, ma il web tracking consente di monitorar
 >
 >I collegamenti nel contenuto delle e-mail che contengono personalizzazioni devono essere tracciati con una sintassi specifica. Per ulteriori informazioni su come aggiungere collegamenti nelle e-mail che possono essere personalizzati e che supportano il tracciamento, consulta [questa sezione](tracking-personalized-links.md).
 
-Prima di applicare la formula di tracciamento, consigliamo vivamente di allegare gli URL nei delimitatori nella scheda **[!UICONTROL Text content]** . I delimitatori URL immessi in questa scheda vengono utilizzati da Adobe Campaign per identificare gli URL all’interno delle stringhe di caratteri. È possibile utilizzare queste coppie di delimitatori:
+È consigliabile racchiudere gli URL nei delimitatori nel **[!UICONTROL Text content]** prima di applicare la formula di tracciamento. I delimitatori URL immessi in questa scheda vengono utilizzati da Adobe Campaign per identificare gli URL all’interno delle stringhe di caratteri. È possibile utilizzare queste coppie di delimitatori:
 * Parentesi ( )
-* Parentesi graffa [ ]
+* Parentesi [ ]
 * Bracce { }
 
 In questo esempio, l’URL https://www.adobe.com è seguito da un punto e virgola. Il punto e virgola può essere interpretato dai client e-mail dei destinatari come parte dell’URL. Di conseguenza, il collegamento potrebbe non funzionare. Per evitare questo problema, puoi racchiudere l’URL nei delimitatori in uno dei seguenti modi:
@@ -37,7 +37,7 @@ In questo esempio, l’URL https://www.adobe.com è seguito da un punto e virgol
 
 Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettua le seguenti operazioni:
 
-1. Seleziona l’opzione **[!UICONTROL Display URLs]** nella sezione inferiore della procedura guidata di consegna, sotto il contenuto del messaggio.
+1. Seleziona la **[!UICONTROL Display URLs]** nella sezione inferiore della procedura guidata di consegna, sotto il contenuto del messaggio.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -59,7 +59,7 @@ Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per pers
    >
    >Le etichette degli URL tracciati e delle etichette possono essere modificate per semplificare la lettura delle informazioni durante il tracciamento delle consegne. Nel calcolo del numero di clic verranno aggiunti insieme due URL o due etichette con lo stesso nome.
 
-1. Se necessario, modifica la modalità di tracciamento, seleziona una nuova modalità nella colonna **[!UICONTROL Tracking]** che corrisponda al collegamento di destinazione, come illustrato di seguito:
+1. Se necessario, modifica la modalità di tracciamento, seleziona una nuova modalità nel **[!UICONTROL Tracking]** che corrisponde al collegamento di destinazione, come illustrato di seguito:
 
    ![](assets/s_ncs_user_select_tracking_mode.png)
 
@@ -72,4 +72,4 @@ Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per pers
    * **[!UICONTROL Opt-out]** : considera questo URL come un URL di rinuncia o di annullamento dell’abbonamento.
    * **[!UICONTROL Mirror page]** : considera questo URL come un URL della pagina speculare.
 
-1. Inoltre, puoi selezionare una categoria per ogni URL tracciato nell’elenco a discesa della colonna **[!UICONTROL Category]** . Queste categorie possono essere visualizzate come ad esempio in **[!UICONTROL URLs and click streams]** (consulta [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un’enumerazione specifica: **[!UICONTROL urlCategory]** (consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
+1. Inoltre, puoi selezionare una categoria per ogni URL tracciato nell’elenco a discesa della **[!UICONTROL Category]** colonna. Queste categorie possono visualizzare rapporti, come ad esempio in **[!UICONTROL URLs and click streams]** (vedi [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un’enumerazione specifica: **[!UICONTROL urlCategory]** (vedi [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).

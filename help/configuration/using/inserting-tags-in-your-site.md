@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Metodo semplice {#simple-method}
 
-Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un tag HTML **`<img>`** nel codice sorgente HTML della pagina web che si desidera monitorare.
+Questo metodo consiste nell&#39;inviare una chiamata HTTP al server di reindirizzamento inserendo un **`<img>`** tag HTML nel codice sorgente HTML della pagina Web che si desidera monitorare.
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ Quando le pagine web vengono generate in modo dinamico, puoi aggiungere il tag d
 
 Se si desidera controllare le informazioni inviate al server di reindirizzamento, il modo più affidabile è quello di eseguire la query HTTP in modo sincrono utilizzando un linguaggio di generazione della pagina.
 
-L&#39;URL creato deve rispettare le regole di sintassi definite in [Tag di tracciamento Web: definition](../../configuration/using/web-tracking-tag--definition.md).
+L’URL creato deve rispettare le regole di sintassi definite in [Tag di web tracking: definizione](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

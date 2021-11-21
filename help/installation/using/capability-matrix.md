@@ -21,7 +21,7 @@ ht-degree: 20%
 
 Questa pagina mostra le differenze principali tra le distribuzioni in hosting (Managed Services) e on-premise. Le specificità delle implementazioni ibride dipendono dagli elementi ospitati da Adobe e ospitati nei tuoi locali.
 
-I diversi modelli di hosting sono introdotti [in questa sezione](../../installation/using/hosting-models.md).
+Vengono introdotti i diversi modelli di hosting [in questa sezione](../../installation/using/hosting-models.md).
 
 ## Disponibilità per modello di distribuzione {#capability-matrix}
 
@@ -43,11 +43,11 @@ I diversi modelli di hosting sono introdotti [in questa sezione](../../installat
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
+Adobe Campaign fornisce **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->L&#39;accesso a un database esterno tramite FDA è possibile solo per installazioni on-premise o ibride, ad eccezione del [connettore di Snowflake](../../installation/using/configure-fda-snowflake.md).
+>L’accesso a un database esterno tramite FDA è possibile solo per le installazioni on-premise o ibride, ad eccezione del [Connettore Snowflake](../../installation/using/configure-fda-snowflake.md).
 
 
 **Vedi anche**

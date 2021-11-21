@@ -66,7 +66,7 @@ Questo secondo esempio cattura tutti i trigger.
 
 >[!NOTE]
 >
->Il valore UID [!DNL Trigger] di un nome di trigger specifico nell’interfaccia di Analytics si trova come parte dei parametri della stringa di query URL nell’interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto in pipeline.JS per mappare l’UID trigger su un’etichetta semplice da usare che può essere memorizzata in una colonna Trigger Name nello schema pipelineEvents.
+>La [!DNL Trigger] Il valore UID associato a un nome di trigger specifico nell’interfaccia di Analytics si trova come parte dei parametri della stringa di query URL nell’interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto in pipeline.JS per mappare l’UID trigger su un’etichetta semplice da usare che può essere memorizzata in una colonna Trigger Name nello schema pipelineEvents.
 
 ## Il parametro consumer {#consumer-parameter}
 

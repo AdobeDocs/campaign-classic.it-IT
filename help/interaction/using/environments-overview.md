@@ -25,4 +25,4 @@ Diversi profili utente sono coinvolti nella gestione e nell’utilizzo delle off
 >
 >Le seguenti configurazioni devono essere eseguite da un **amministratore tecnico**.
 
-![](assets/do-not-localize/how-to-video.png) Guarda questo  [](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) video per scoprire l’architettura dell’interazione con Campaign e come funziona il motore di offerte.
+![](assets/do-not-localize/how-to-video.png) Guarda questo [video](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) per scoprire l’architettura dell’interazione di Campaign e il funzionamento del motore di offerta.

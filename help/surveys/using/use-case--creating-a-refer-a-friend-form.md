@@ -29,13 +29,13 @@ Per configurare e creare il blocco di riferimento, procedi come segue:
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Il campo **Messaggio** ti consente di inserire un messaggio per il riferimento. Il referente deve inoltre inserire i propri **Cognome**, **Nome** e **E-mail**.
+   La **Messaggio** consente di inserire un messaggio per l’arbitro. Il referente deve inoltre inserire il proprio **Cognome**, **Nome** e **E-mail**.
 
    Le informazioni inserite nei campi vengono memorizzate in una tabella specifica nota come tabella dei visitatori.
 
    >[!NOTE]
    >
-   >Se il destinatario non ha dato il proprio consenso, non puoi memorizzarli con i destinatari nel database. Saranno temporaneamente memorizzati nella tabella **visitor** (**nms:visitor**) progettata per le campagne di marketing virali. Questa tabella viene eliminata regolarmente grazie alle operazioni di **pulizia**.
+   >Se il destinatario non ha dato il proprio consenso, non puoi memorizzarli con i destinatari nel database. Vengono temporaneamente memorizzati nel **visitatore** tabella (**nms:visitatore**) progettata per campagne di marketing virali. Questa tabella viene eliminata regolarmente grazie a **pulizia** operazioni.
    >
    >In questo esempio, vogliamo indirizzare i destinatari affinché ti suggeriscano di partecipare al concorso consigliato dal loro referrer. Tuttavia, in questo messaggio vogliamo anche offrire loro un abbonamento a uno dei nostri servizi di informazione. Se si abbonano, possono essere memorizzati nel database.
 
@@ -65,7 +65,7 @@ Per configurare e creare il blocco di riferimento, procedi come segue:
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Quindi crea il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel campo **[!UICONTROL Choose scenario]** del servizio informazioni.
+1. Quindi crea il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nella **[!UICONTROL Choose scenario]** campo del servizio informazioni.
 
    Il modello di consegna utilizzato per creare il messaggio di offerta di riferimento contiene le seguenti informazioni:
 
@@ -83,12 +83,12 @@ Per configurare e creare il blocco di riferimento, procedi come segue:
 
    * Questo modello contiene un collegamento al modulo di concorso e il collegamento di abbonamento per l’utente a cui effettuare l’abbonamento alla newsletter.
 
-      Il collegamento di abbonamento viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, ti consente di abbonarti al servizio **newsletter** . Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un servizio diverso.
+      Il collegamento di abbonamento viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, ti consente di abbonare i profili al **newsletter** servizio. Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un servizio diverso.
 
    * Il nome interno (&quot;referrer&quot; qui) verrà utilizzato nello script di consegna del messaggio come mostrato di seguito.
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui modelli di consegna, consulta [questa pagina](../../delivery/using/about-templates.md) .
+   >Fai riferimento a [questa pagina](../../delivery/using/about-templates.md) per ulteriori informazioni sui modelli di consegna.
 
 1. Crea il secondo script per la consegna dei messaggi di abbonamento.
 
@@ -117,11 +117,11 @@ Per configurare e creare il blocco di riferimento, procedi come segue:
     </delivery>)
    ```
 
-1. Pubblica il modulo del concorso e invia un invito ai destinatari del target iniziale. Quando uno di essi invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento** .
+1. Pubblica il modulo del concorso e invia un invito ai destinatari del target iniziale. Quando uno di loro invita un amico, una consegna basata sul **Offerta di riferimento** viene creato.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   L’arbitro viene aggiunto alla cartella del visitatore in **[!UICONTROL Administration > Visitors node]**:
+   L’arbitro viene aggiunto alla cartella del visitatore nel **[!UICONTROL Administration > Visitors node]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 

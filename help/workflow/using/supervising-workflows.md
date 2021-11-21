@@ -28,20 +28,20 @@ Per monitorare lo stato di un set di flussi di lavoro, è necessario seguire que
 
 1. Crea il flusso di lavoro di monitoraggio.
 1. Scrivi il JavaScript per determinare se i flussi di lavoro vengono messi in pausa, interrotti o con errori.
-1. Crea l’attività **[!UICONTROL Test]** .
+1. Crea il **[!UICONTROL Test]** attività.
 1. Prepara il modello di consegna.
 
 >[!NOTE]
 >
->Oltre al flusso di lavoro, Campaign **Workflow Heatmap** ti consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [dedicata](heatmap.md).
+>Oltre al flusso di lavoro, Campaign **Workflow Heatmap** consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [sezione dedicata](heatmap.md).
 >
->Per ulteriori informazioni su come **monitorare l&#39;esecuzione dei flussi di lavoro**, consulta [questa sezione](monitoring-workflow-execution.md).
+>Per ulteriori informazioni su come **monitorare l’esecuzione dei flussi di lavoro**, fare riferimento a [questa sezione](monitoring-workflow-execution.md).
 
 ## Passaggio 1: Creazione del flusso di lavoro di monitoraggio {#step-1--creating-the-monitoring-workflow}
 
-La cartella del flusso di lavoro che stiamo per monitorare è la cartella **&quot;CustomWorkflows&quot;** memorizzata nel nodo **Amministrazione > Produzione > Flussi di lavoro tecnici**. Questa cartella contiene un set di flussi di lavoro aziendali.
+La cartella del flusso di lavoro che verrà monitorata è la **&quot;CustomWorkflows&quot;** cartella memorizzata in **Amministrazione > Produzione > Flussi di lavoro tecnici** nodo. Questa cartella contiene un set di flussi di lavoro aziendali.
 
-Il **flusso di lavoro di monitoraggio** viene memorizzato nella directory principale della cartella Flussi di lavoro tecnici. L&#39;etichetta utilizzata è **&quot;Monitoring&quot;**.
+La **Monitoraggio del flusso di lavoro** viene memorizzato nella directory principale della cartella Flussi di lavoro tecnici. L’etichetta utilizzata è **&quot;Monitoraggio&quot;**.
 
 Lo schema seguente mostra la sequenza di attività:
 
@@ -49,17 +49,17 @@ Lo schema seguente mostra la sequenza di attività:
 
 Questo flusso di lavoro è costituito da:
 
-* un&#39;attività **&quot;Start&quot;**.
-* un&#39;attività **&quot;JavaScript code&quot;** responsabile dell&#39;analisi della cartella dei flussi di lavoro aziendali.
-* un&#39;attività **&quot;Test&quot;** per inviare una consegna al supervisore o riavviare il flusso di lavoro.
-* un&#39;attività **&quot;Delivery&quot;** responsabile del layout dei messaggi.
-* un&#39;attività **&quot;Wait&quot;** che controlla i lead time tra le iterazioni del flusso di lavoro.
+* a **&quot;Start&quot;** attività.
+* a **&quot;Codice JavaScript&quot;** attività responsabile dell’analisi della cartella dei flussi di lavoro aziendali.
+* a **&quot;Test&quot;** attività per inviare una consegna al supervisore o riavviare il flusso di lavoro.
+* a **&quot;Consegna&quot;** attività responsabile del layout dei messaggi.
+* a **&quot;Wait&quot;** attività che controlla i lead time tra le iterazioni del flusso di lavoro.
 
 ## Passaggio 2: Scrittura di JavaScript {#step-2--writing-the-javascript}
 
-La prima parte del codice JavaScript coincide con una **query (queryDef)** che consente di identificare i flussi di lavoro con uno stato di &quot;pausa&quot; (@state == 13), &quot;error&quot; (@failed == 1) o &quot;stop&quot; (@state == 20).
+La prima parte del codice JavaScript coincide con un **query (queryDef)** che consente di identificare i flussi di lavoro con uno stato di &quot;pausa&quot; (@state == 13), &quot;error&quot; (@failed == 1) o &quot;stop&quot; (@state == 20).
 
-Il **nome interno** della cartella del flusso di lavoro da monitorare è indicato nella seguente condizione:
+La **nome interno** della cartella del flusso di lavoro da monitorare è indicata nella seguente condizione:
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -91,7 +91,7 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-La seconda parte del codice JavaScript ti consente di **visualizzare un messaggio per ogni flusso di lavoro** in base allo stato recuperato durante la query.
+La seconda parte del codice JavaScript consente di: **visualizzare un messaggio per ogni flusso di lavoro** in base allo stato recuperato durante la query.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ vars.strWorkflowStop = strStop;
 
 L’attività &quot;Test&quot; ti consente di determinare se una consegna deve essere inviata o se il flusso di lavoro di monitoraggio deve eseguire un altro ciclo in base all’attività &quot;Wait&quot; (Attendi) .
 
-Una consegna viene inviata al supervisore **se almeno una delle tre variabili di evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
+Viene inviata una consegna al supervisore **se almeno una delle tre variabili di evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
@@ -131,7 +131,7 @@ L’attività &quot;Wait&quot; può essere configurata per riavviare il flusso d
 
 ## Passaggio 4: Preparazione della consegna {#step-4--preparing-the-delivery}
 
-L&#39;attività &quot;Delivery&quot; è basata su un **modello di consegna** memorizzato nel nodo **Risorse > Modelli > Modelli di consegna** .
+L’attività &quot;Delivery&quot; è basata su un **modello di consegna** memorizzati in **Risorse > Modelli > Modelli di consegna** nodo.
 
 Questo modello deve includere:
 
@@ -142,29 +142,29 @@ Questo modello deve includere:
 
    Le tre variabili dichiarate (WF_Stop, WF_Paused, WF_Error) corrispondono alle tre variabili dell’evento del flusso di lavoro.
 
-   Queste variabili devono essere dichiarate nella scheda **Variabili** delle proprietà del modello di consegna.
+   Queste variabili devono essere dichiarate nella variabile **Variabili** scheda delle proprietà del modello di consegna.
 
-   Per recuperare **il contenuto delle variabili dell&#39;evento del flusso di lavoro**, è necessario dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
+   Per recuperare **il contenuto delle variabili dell’evento del flusso di lavoro**, è necessario dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
 
    Il modello di consegna ha il seguente contenuto:
 
    ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-Una volta creato e approvato il modello, devi configurare l&#39;attività **Delivery** per:
+Una volta creato e approvato il modello, devi configurare il **Consegna** attività per:
 
 * collega l’attività &quot;Consegna&quot; al modello di consegna creato in precedenza.
 * collega le variabili evento del flusso di lavoro a quelle specifiche del modello di consegna.
 
-Fai doppio clic sull&#39;attività **Consegna** e seleziona le seguenti opzioni:
+Fai doppio clic sul pulsante **Consegna** e seleziona le seguenti opzioni:
 
-* Consegna: seleziona **Nuovo, creato da un modello**, quindi seleziona il modello di consegna creato in precedenza.
-* Per i campi **Destinatari e Contenuto**, seleziona **Specificato nella consegna**.
-* Azione da eseguire: selezionare **Prepare and start**.
-* Deseleziona l&#39;opzione **Elabora errori** .
+* Consegna: select **Nuovo, creato da un modello**, quindi seleziona il modello di consegna creato in precedenza.
+* Per **Destinatari e contenuti** campi, seleziona **Specificato nella consegna**.
+* Azione da eseguire: select **Preparare e iniziare**.
+* Deseleziona **Errori di processo** opzione .
 
    ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* Vai alla scheda **Script** dell&#39;attività **Consegna** e aggiungi tre variabili di tipo **stringa di caratteri** tramite il menu del campo di personalizzazione.
+* Vai a **Script** della scheda **Consegna** aggiungi tre attività **stringa di caratteri** digita le variabili tramite il menu del campo di personalizzazione.
 
    ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 

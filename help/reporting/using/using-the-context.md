@@ -17,17 +17,17 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Per rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, è possibile prelevarli da due origini: una nuova query (consulta [Definizione di un filtro diretto sui dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consulta [Utilizzo dei dati contestuali](#using-context-data)).
+Quando desideri rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, può essere prelevato da due fonti: una nuova query (fare riferimento a [Definizione di un filtro diretto per i dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consulta [Utilizzo dei dati contestuali](#using-context-data)).
 
 ## Definizione di un filtro diretto per i dati {#defining-a-direct-filter-on-data}
 
 ### Filtrare dati {#filtering-data}
 
-L’utilizzo di un’attività di tipo **[!UICONTROL Query]** non è obbligatorio durante la creazione di un rapporto. I dati possono essere filtrati direttamente nelle tabelle e nei grafici che compongono il rapporto.
+Utilizzo di un **[!UICONTROL Query]** l’attività di tipo non è obbligatoria quando si crea un rapporto. I dati possono essere filtrati direttamente nelle tabelle e nei grafici che compongono il rapporto.
 
-Questo consente di selezionare i dati da visualizzare nel rapporto direttamente tramite l’ **[!UICONTROL Page]** attività del rapporto.
+Questo consente di selezionare i dati da visualizzare nel rapporto direttamente tramite il **[!UICONTROL Page]** attività del rapporto.
 
-A questo scopo, fai clic sul collegamento **[!UICONTROL Filter data...]** nella scheda **[!UICONTROL Data]** : questo collegamento ti consente di accedere all’editor espressioni per definire una query sui dati da analizzare.
+A questo scopo, fai clic sul pulsante **[!UICONTROL Filter data...]** nel collegamento **[!UICONTROL Data]** scheda: questo collegamento ti consente di accedere all’editor espressioni per definire una query sui dati da analizzare.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -35,7 +35,7 @@ A questo scopo, fai clic sul collegamento **[!UICONTROL Filter data...]** nella 
 
 Nell’esempio seguente, vogliamo che il grafico mostri solo i profili dei destinatari che vivono in Francia e che hanno effettuato un acquisto durante l’anno.
 
-Per definire questo filtro, posizionare una pagina nel grafico e modificarlo. Fai clic sul collegamento **[!UICONTROL Filter data]** e crea il filtro corrispondente ai dati da visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+Per definire questo filtro, posizionare una pagina nel grafico e modificarlo. Fai clic sul pulsante **[!UICONTROL Filter data]** crea e collega il filtro corrispondente ai dati da visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -55,8 +55,8 @@ Applica i seguenti passaggi:
 
 1. Posiziona una pagina nel grafico e modificala.
 1. Creare una tabella pivot.
-1. Vai alla scheda **[!UICONTROL Data]** e seleziona il cubo da utilizzare.
-1. Fai clic sul collegamento **[!UICONTROL Filter data...]** e definisci la seguente query per rimuovere l’Adobe dall’elenco delle società.
+1. Vai a **[!UICONTROL Data]** e selezionare il cubo da utilizzare.
+1. Fai clic sul pulsante **[!UICONTROL Filter data...]** collega e definisci la seguente query per rimuovere l’Adobe dall’elenco delle società.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -68,12 +68,12 @@ Nel rapporto verranno visualizzati solo i destinatari che soddisfano i criteri d
 
 Per rappresentare i dati sotto forma di **[!UICONTROL table]** o **[!UICONTROL chart]**, i dati possono provenire dal contesto del rapporto.
 
-Nella pagina contenente la tabella o il grafico, la scheda **[!UICONTROL Data]** consente di selezionare l’origine dati.
+Nella pagina contenente la tabella o il grafico, la **[!UICONTROL Data]** consente di selezionare l’origine dati.
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* L’opzione **[!UICONTROL New query]** ti consente di creare una query per raccogliere i dati. Per ulteriori informazioni, consulta [Definizione di un filtro diretto per i dati](#defining-a-direct-filter-on-data).
-* L’opzione **[!UICONTROL Context data]** ti consente di utilizzare i dati di input: il contesto del rapporto coincide con le informazioni contenute nella transizione in entrata della pagina che contiene il grafico o la tabella. Questo contesto può, ad esempio, contenere dati raccolti tramite un’attività **[!UICONTROL Query]** inserita prima dell’ attività **[!UICONTROL Page]** e per la quale è necessario specificare la tabella e i campi interessati dal rapporto.
+* La **[!UICONTROL New query]** consente di creare una query per la raccolta dei dati. Per ulteriori informazioni, consulta [Definizione di un filtro diretto per i dati](#defining-a-direct-filter-on-data).
+* La **[!UICONTROL Context data]** consente di utilizzare i dati di input: il contesto del rapporto coincide con le informazioni contenute nella transizione in entrata della pagina che contiene il grafico o la tabella. Questo contesto può, ad esempio, contenere dati raccolti tramite un **[!UICONTROL Query]** attività posizionata prima della **[!UICONTROL Page]** attività e per la quale devi specificare la tabella e i campi interessati dal rapporto.
 
 Ad esempio, in una casella di query, genera la seguente query per i destinatari:
 

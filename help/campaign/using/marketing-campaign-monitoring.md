@@ -19,27 +19,27 @@ ht-degree: 2%
 
 ## Tracciare una campagna {#tracking-a-campaign}
 
-Per ogni campagna, la scheda **[!UICONTROL Tracking]** ti consente di visualizzare tutti i processi e i relativi stati. Le seguenti informazioni sono accessibili tramite questa sottoscheda:
+Per ogni campagna, il **[!UICONTROL Tracking]** consente di visualizzare tutti i processi e i relativi stati. Le seguenti informazioni sono accessibili tramite questa sottoscheda:
 
 * Il giornale di registrazione attività mostra i lavori eseguiti nella campagna in generale: creazione o avvio di un flusso di lavoro, approvazione, estrazione, ecc.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* La sottoscheda **[!UICONTROL Deliveries]** contiene tutte le consegne della campagna che possono essere modificate da questa visualizzazione. A tale scopo, seleziona la consegna e fai clic sull’icona **[!UICONTROL Detail]** .
+* La **[!UICONTROL Deliveries]** la sottoscheda contiene tutte le consegne della campagna che possono essere modificate da questa visualizzazione. A tale scopo, seleziona la consegna e fai clic sul pulsante **[!UICONTROL Detail]** icona.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* La sottoscheda **[!UICONTROL Tasks]** raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritti in [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
+* La **[!UICONTROL Tasks]** nella sottoscheda vengono raggruppate tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Essi sono descritti in [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* I flussi di lavoro creati per generare messaggi per i provider di servizi vengono visualizzati nella sottoscheda **[!UICONTROL Jobs on service providers]** . Fai clic sull’icona **[!UICONTROL Detail]** per visualizzare il flusso di lavoro selezionato.
+* I flussi di lavoro creati per generare messaggi per i fornitori di servizi vengono visualizzati nella sezione **[!UICONTROL Jobs on service providers]** sottoscheda . Fai clic sul pulsante **[!UICONTROL Detail]** per visualizzare il flusso di lavoro selezionato.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Tracciamento delle consegne {#delivery-tracking}
 
-L’elenco delle consegne è disponibile tramite il collegamento **[!UICONTROL Deliveries]** del nodo Campaign.
+L’elenco delle consegne è disponibile tramite il **[!UICONTROL Deliveries]** collegamento del nodo Campaign.
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -49,10 +49,10 @@ Per controllare lo stato di una consegna, modificala e visualizzane il dashboard
 
 >[!NOTE]
 >
->Le informazioni relative ai dettagli di consegna sono disponibili in [questa sezione](../../delivery/using/about-message-tracking.md) .
+>Le informazioni relative ai dettagli della consegna sono disponibili in [questa sezione](../../delivery/using/about-message-tracking.md) sezione .
 
 ## Tracking di esecuzione {#execution-tracking}
 
-Puoi cercare lo stato delle consegne facendo clic su **[!UICONTROL Deliveries]** , accessibile tramite la home page di Adobe Campaign. Consulta [Tracciamento consegna](#delivery-tracking).
+Puoi cercare lo stato delle consegne facendo clic sul pulsante **[!UICONTROL Deliveries]**, accessibile tramite la home page di Adobe Campaign. Vedi [Tracciamento delle consegne](#delivery-tracking).
 
-Le informazioni sui processi eseguiti in una campagna vengono raccolte nella scheda **[!UICONTROL Edit > Audit]** della campagna. Qui puoi visualizzare l’elenco delle consegne nella campagna. [Ulteriori informazioni](#tracking-a-campaign).
+Le informazioni relative ai processi eseguiti in una campagna sono raccolte nella **[!UICONTROL Edit > Audit]** scheda della campagna. Qui puoi visualizzare l’elenco delle consegne nella campagna. [Ulteriori informazioni](#tracking-a-campaign).

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Come parte dell’ [Gold Standard Initiative](../../rn/using/gold-standard.md), Adobe decomprime il Data Center legacy. Le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
+Come parte del [Iniziativa Gold Standard](../../rn/using/gold-standard.md), Adobe rimuove il Data Center legacy. Le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi rivolgerti ad [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi rivolgerti a [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Effetti dell&#39;infrastruttura
 
@@ -47,11 +47,11 @@ Gli impatti globali su database e infrastrutture sono elencati di seguito.
 
    Come primo passo, manterremo la stessa build Campaign Classic con la migrazione.
 
-   In un ulteriore passaggio, si procederà all’aggiornamento alla build Campaign Classic GA più recente. Per ulteriori informazioni, consulta le [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md) e le [Note sulla versione di Campaign Gold Standard](../../rn/using/gold-standard.md).
+   In un ulteriore passaggio, si procederà all’aggiornamento alla build Campaign Classic GA più recente. Per ulteriori informazioni, consulta la sezione [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md) e [Note sulla versione di Campaign Gold Standard](../../rn/using/gold-standard.md).
 
 * **Qual è il piano per affrontare eventuali problemi post-migrazione?**
 
-   Si effettuerebbero test approfonditi prima della migrazione dei sistemi di produzione. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Se necessario, Adobe ha istituito un team di esperti per fornire supporto avanzato.
+   Si effettuerebbero test approfonditi prima della migrazione dei sistemi di produzione. Tuttavia, in caso di problemi, [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Se necessario, Adobe ha istituito un team di esperti per fornire supporto avanzato.
 
 ## Effetti sul recapito messaggi
 
@@ -63,23 +63,23 @@ Di seguito sono elencati gli impatti globali su IP, elenchi Bloccati, sottodomin
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nell’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic ](#config) qui per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
+   [Fai clic qui](#config) per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
 
 * **Come gestiremo la porta aggiunta all’inserire nell&#39;elenco Consentiti per l’accesso SFTP/FTP?**
 
-   La configurazione SFTP (chiavi pubbliche + IP sull’inserire nell&#39;elenco Consentiti) verrà spostata anche dal Data Center legacy a Public Cloud (AWS). Nessuna azione prevista dal cliente.
+   La configurazione SFTP (chiavi pubbliche + IP sull’inserire nell&#39;elenco Consentiti) verrà spostata dal Data Center legacy a Public Cloud (AWS). Nessuna azione prevista dal cliente.
 
 * **Stiamo cambiando gli IP?**
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP all’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic ](#config) qui per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
+   [Fai clic qui](#config) per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
 
 * **Come verrà gestita la delega del sottodominio?**
 
-   I sottodomini esistenti verranno spostati da Data Center legacy a Public Cloud (AWS). Questa parte verrà gestita dal team Adobe Deliverability come parte del processo di migrazione.
+   I sottodomini esistenti verranno spostati dal centro dati legacy a Public Cloud (AWS). Questa parte verrà gestita dal team Adobe Deliverability come parte del processo di migrazione.
 
-   L’Adobe guiderà il cliente attraverso i test richiesti per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
+   L’Adobe guiderà il cliente attraverso i test necessari per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
 
 * **La migrazione produrrà nuovi URL per il tracciamento, le risorse e le applicazioni web?**
 
@@ -87,13 +87,13 @@ Di seguito sono elencati gli impatti globali su IP, elenchi Bloccati, sottodomin
 
 * **Ci sarà una modifica nel sottodominio da Neolane.net a campaign.adobe.com?**
 
-   Dopo la migrazione saranno presenti sia `neolane.net` che `campaign.adobe.com`. Per semplificarlo: reindirizzeremo neolane.net a nuove istanze in Public Cloud (AWS), quindi non sono richieste modifiche da parte del cliente.
+   Entrambi `neolane.net` e `campaign.adobe.com` sarà attivo dopo la migrazione. Per semplificarlo: reindirizzeremo neolane.net a nuove istanze in Public Cloud (AWS), quindi non sono richieste modifiche da parte del cliente.
 
 * **Qual è il piano per il riscaldamento dell&#39;IP?**
 
    In primo luogo, Adobe Deliverability valuterà lo stato di consegna della piattaforma e raccomanderà un piano per il passaggio ai nuovi IP
 
-   Dopo la migrazione non è necessario alcun riscaldamento. Potrebbe essere un&#39;eccezione e, in questo caso, [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
+   Dopo la migrazione non è necessario alcun riscaldamento. Potrebbe essere un&#39;eccezione e, in tal caso, [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
    Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza della rampa iniziale che viene fatta durante il go-live.
 
@@ -133,7 +133,7 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
    Sì. Le integrazioni di terze parti, ad esempio i provider SMS, devono aggiungere nuovi indirizzi IP dell’applicazione server Adobe Campaign all’inserire nell&#39;elenco Consentiti.
 
-* **La migrazione influisce sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? Che ne dici dell’aggiunta di indirizzi IP di Campaign all’inserire nell&#39;elenco Consentiti sul lato Adobe Analytics?**
+* **La migrazione influisce sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? Che ne dici dell’aggiunta di indirizzi IP di Campaign all’inserire nell&#39;elenco Consentiti lato Adobe Analytics?**
 
    Gli indirizzi IP dei server applicazioni Adobe Campaign verranno modificati. Questo passaggio verrà gestito dall’Assistenza clienti di Adobe dopo la migrazione.
 
@@ -149,13 +149,13 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
 * **La migrazione influisce sulle configurazioni con più marchi?**
 
-   Non appena il sottodominio e tutte le configurazioni correlate vengono spostati/reindirizzati correttamente da Data Center a Public Cloud (AWS) legacy, non ci si dovrebbe aspettare alcun impatto.
+   Non appena il sottodominio e tutte le configurazioni correlate vengono spostati/reindirizzati correttamente da Data Center legacy a Public Cloud (AWS), non ci si dovrebbe aspettare alcun impatto.
 
 * **La connettività API è interessata dalla migrazione?**
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP all’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic ](#config) qui per ulteriori dettagli sull’IP inserire nell&#39;elenco Consentiti.
+   [Fai clic qui](#config) per ulteriori dettagli sull’IP sull’inserire nell&#39;elenco Consentiti.
 
 * **Ci assicureremo che tutti i parametri di configurazione della memoria JavaScript siano impostati correttamente dopo la migrazione?**
 
@@ -163,13 +163,13 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
 * **C&#39;è qualche rischio nell&#39;accesso a determinate estensioni di file?**
 
-   Il cliente può voler consentire il caricamento di file di font, file di riunione di outlook nella cartella delle risorse pubbliche. Questa configurazione viene eseguita nel file `config-<instance>.xml` corrente. Questo verrà copiato con i file di configurazione.
+   Il cliente può voler consentire il caricamento di file di font, file di riunione di outlook nella cartella delle risorse pubbliche. Questa configurazione viene eseguita nel `config-<instance>.xml` file. Questo verrà copiato con i file di configurazione.
 
 * **Il fuso orario cambia sul nuovo server? Il cliente sarà in grado di mantenere il proprio fuso orario corrente?**
 
    Può cambiare in base alla nuova posizione dei server. Tuttavia, il cliente potrà mantenere il proprio fuso orario corrente.
 
-   [Fai clic ](../../workflow/using/managing-time-zones.md) qui per ulteriori dettagli sulla gestione del fuso orario in Adobe Campaign Classic v7.
+   [Fai clic qui](../../workflow/using/managing-time-zones.md) per ulteriori informazioni sulla gestione del fuso orario in Adobe Campaign Classic v7.
 
 
 ## Sicurezza e autorizzazioni
@@ -227,7 +227,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Prevediamo tempi di inattività del servizio Adobe Campaign?**
 
-   La migrazione verrà effettuata con un tempo di inattività inevitabile della piattaforma. L&#39;obiettivo di questo piano è quello di ridurre al minimo i tempi di inattività.
+   La migrazione verrà effettuata con un tempo di inattività inevitabile della piattaforma. L&#39;obiettivo di questo piano è di ridurre al minimo i tempi di inattività.
 
    Il trasferimento dei dati tra i centri dati è sul percorso critico del downtime. I dati vengono memorizzati in due modi:
 
@@ -246,7 +246,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Informazioni sui messaggi inviati dal server legacy. I collegamenti saranno sempre accessibili?**
 
-   Durante l’esecuzione della migrazione, rimarrà operativo un solo servizio: reindirizzamento collegamenti e-mail. Tutti i destinatari possono raggiungere la pagina di destinazione facendo clic su un messaggio e-mail. Questi clic non verranno tuttavia tracciati, pertanto le percentuali di clic per le consegne avviate poco prima della migrazione saranno inferiori al solito.
+   Durante l’esecuzione della migrazione, rimarrà operativo un solo servizio: reindirizzamento collegamenti e-mail. Tutti i destinatari possono raggiungere la pagina di destinazione facendo clic su un messaggio e-mail. Questi clic non verranno tuttavia tracciati, pertanto i tassi di clic per le consegne avviate poco prima della migrazione saranno inferiori al solito.
 
 * **E gli ambienti mid-sourcing/RT?**
 

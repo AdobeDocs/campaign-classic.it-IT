@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito viene installato con il modulo **Rendering della casella in entrata (IR)** per impostazione predefinita. Per ulteriori informazioni sul rendering della casella in entrata, consulta questa [sezione](../../delivery/using/inbox-rendering.md).
+Il flusso di lavoro descritto di seguito è installato con **Rendering della casella in entrata (IR)** modulo per impostazione predefinita. Per ulteriori informazioni sul rendering della casella in entrata, consulta questo [sezione](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 

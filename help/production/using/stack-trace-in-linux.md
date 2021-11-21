@@ -17,17 +17,17 @@ ht-degree: 11%
 
 ![](../../assets/v7-only.svg)
 
-Una traccia di stack **traccia di stack** rappresenta una traccia contenuta in un file di tipo **core**. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
+A **traccia stack** rappresenta una traccia contenuta in un **nucleo centrale** digitare file. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
 >[!NOTE]
 >
->* Un file **core** è denominato **core.`<num>`**.
->* **gdb - Il** debugger GNU deve essere installato sul computer.
+>* A **nucleo centrale** file denominato **core.`<num>`**.
+>* **gdb - Debugger GNU** deve essere installato sul computer.
 
 >
 
 
-Il supporto tecnico di Adobe Campaign può richiedere questa **traccia dello stack**. Per ottenerlo, immetti i seguenti comandi in Linux:
+Il supporto tecnico Adobe Campaign può richiedere questo **traccia stack**. Per ottenerlo, immetti i seguenti comandi in Linux:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Il supporto tecnico di Adobe Campaign potrebbe chiederti di eseguire questo comando utilizzando un eseguibile specifico (da noi fornito).
 
-In questo caso, esegui semplicemente il seguente comando sostituendo **nlserver** con l&#39;eseguibile fornito da Adobe Campaign:
+In questo caso, è sufficiente eseguire il comando seguente sostituendo **nlserver** con l’eseguibile fornito da Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

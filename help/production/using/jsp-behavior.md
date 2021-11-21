@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-Se alcuni processi **jsp** non vengono eseguiti correttamente, è necessario forzarli a ricompilarli.
+Se **jsp** i processi non vengono eseguiti correttamente, è necessario forzarli a ricompilarli.
 
 A questo scopo, immetti i seguenti comandi:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-I processi **jsp** vengono rigenerati alla successiva connessione.
+La **jsp** i processi verranno rigenerati al successivo collegamento.

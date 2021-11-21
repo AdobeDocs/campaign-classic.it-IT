@@ -26,7 +26,7 @@ La procedura di rollback dipende dalla versione iniziale di Campaign.
 Questa è la procedura per ripristinare una v6.1 da una v7.
 
 1. Recuperare il backup del database e ripristinarlo.
-1. Recupera la cartella **Adobe Campaign v6.back** (**nl6.back** in Linux), rinominala in **Adobe Campaign v6** (**nl6** in Linux) e ripristinala nella posizione originale.
+1. Recuperare **Adobe Campaign v6.back** cartella (**nl6.back** in Linux), rinominalo in **Adobe Campaign v6** (**nl6** in Linux) e ripristinarlo nella sua posizione originale.
 1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l&#39;integrazione di Adobe Campaign v6.1 a livello di sito Web IIS.
 1. Arresta il servizio Adobe Campaign v7.
 1. Riavvia IIS.
@@ -37,7 +37,7 @@ Questa è la procedura per ripristinare una v6.1 da una v7.
 Questa è la procedura per ripristinare una v6.02 da una v7.
 
 1. Recuperare il backup del database e ripristinarlo.
-1. Recuperare la cartella **Neolane v6.back** (**nl6.back** in Linux), rinominarla in **Neolane v6** (**nl6** in Linux) e ripristinarla nella posizione originale.
+1. Recuperare **Neolane v6.back** cartella (**nl6.back** in Linux), rinominalo in **Neolane v6** (**nl6** in Linux) e ripristinarlo nella sua posizione originale.
 1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l&#39;integrazione di Adobe Campaign v6.02 a livello di sito Web IIS.
 1. Arresta il servizio Adobe Campaign v6.1.
 1. Riavvia IIS.
@@ -48,7 +48,7 @@ Questa è la procedura per ripristinare una v6.02 da una v7.
 Questa è la procedura per ripristinare una v5.11 da a v7.
 
 1. Recuperare il backup del database e ripristinarlo.
-1. Recuperare la cartella **Neolane v5.back** (**nl5.back** in Linux), rinominarla in **Neolane v5** (**nl5** in Linux) e ripristinarla nella posizione originale.
+1. Recuperare **Neolane v5.back** cartella (**nl5.back** in Linux), rinominalo in **Neolane v5** (**nl5** in Linux) e ripristinarlo nella sua posizione originale.
 1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l&#39;integrazione di Neolane v5 a livello di sito Web IIS.
 1. Arresta il servizio Adobe Campaign v7.
 1. Riavvia IIS.

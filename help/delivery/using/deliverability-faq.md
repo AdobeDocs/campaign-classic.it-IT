@@ -29,7 +29,7 @@ In Adobe Campaign, esiste una configurazione relativa al numero di e-mail all’
 
 Ciò significa che una connessione può utilizzare una regola MX senza inviare correttamente un’e-mail. In questo caso, una configurazione con un IP o un dominio con una reputazione bassa dovrà provare diverse connessioni prima di inviare un’e-mail. Per ogni tentativo, verrà utilizzato un messaggio di credito orario. Di conseguenza, le prestazioni della campagna di marketing saranno significativamente influenzate.
 
-Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel [registro SMTP](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
+Pertanto, il &quot;rispetto delle quote&quot; non è solo un problema di configurazione, ma può anche essere collegato alla reputazione. È importante analizzare i messaggi di errore nel [Registro SMTP](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
 
 Per ulteriori informazioni sulla configurazione MX, consulta [questa sezione](../../installation/using/email-deliverability.md#mx-configuration).
 
@@ -38,11 +38,11 @@ Per ulteriori informazioni sulla configurazione MX, consulta [questa sezione](..
 **Perché ricevo sempre lo stesso messaggio di errore per un particolare ISP?**
 
 Se ricevi sempre lo stesso messaggio di errore per un ISP, l&#39;e-mail o l&#39;IP potrebbe essere stato rilevato come difettoso dall&#39;ISP. Eseguite le seguenti raccomandazioni:
-* Controlla se ricevi una grande percentuale di errori collegati a indirizzi e-mail inesistenti (**Utente sconosciuto** non riusciti).
+* Controlla se ricevi una grande percentuale di errori collegati a indirizzi e-mail inesistenti (**Utente sconosciuto** errori).
 * Aggiorna i moduli di abbonamento per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti degli errori che indicano che i messaggi sono dichiarati come spam o che i messaggi sono costantemente bloccati, prova ad escludere i destinatari che non hanno aperto o fatto clic in uno dei tuoi messaggi negli ultimi 12 mesi dal target.
 
-Se il problema persiste, contatta il servizio commerciale o di recapito messaggi [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Se il problema persiste, contattare i servizi commerciali o di recapito messaggi, [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Elenco Bloccati e quarantena {#denylist-versus-quarantine}
 
@@ -50,7 +50,7 @@ Se il problema persiste, contatta il servizio commerciale o di recapito messaggi
 
    * Lo stato **[!UICONTROL Denylisted]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
-   * Lo stato **[!UICONTROL Quarantined]** è il risultato di un messaggio non recapitato morbido o rigido.
+   * Lo stato **[!UICONTROL Quarantined]** è il risultato di un rimbalzo morbido o duro.
    Per ulteriori informazioni, consulta [questa sezione](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
@@ -61,10 +61,10 @@ Se il problema persiste, contatta il servizio commerciale o di recapito messaggi
 
 ## Rimozione dal elenco Bloccati {#remove-from-denylist}
 
-* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati per errore. Come posso rimuoverli dal denyist in modo da poter iniziare a inviarli nuovamente?**
+* **Uno dei miei destinatari è stato aggiunto al elenco Bloccati per errore. Come rimuoverli dal negyist in modo da poter iniziare a inviarli di nuovo?**
 
    * Vai a **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
-   * Nei dettagli del record corrispondente, imposta il valore del campo **[!UICONTROL Status]** su **[!UICONTROL Valid]**.
+   * Nei dettagli del record corrispondente, imposta il valore del **[!UICONTROL Status]** campo a **[!UICONTROL Valid]**.
    * Salvare il record.
 
 * **Come posso sapere se uno dei miei IP è su un elenco Bloccati? Come posso rimuovere gli IP da un elenco Bloccati?**

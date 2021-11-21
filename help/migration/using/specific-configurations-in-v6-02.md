@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-La sezione seguente descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v6.02. È inoltre necessario configurare le impostazioni descritte nella sezione [Configurazioni generali](../../migration/using/general-configurations.md) .
+La sezione seguente descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v6.02. È inoltre necessario configurare le impostazioni descritte in [Configurazioni generali](../../migration/using/general-configurations.md) sezione .
 
 ## Applicazioni web {#web-applications}
 
@@ -37,13 +37,13 @@ Se non hai utilizzato queste applicazioni web, esegui il seguente script di puli
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Se hai modificato queste applicazioni web e desideri continuare a utilizzarle in v7, devi attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza e riavviare il post aggiornamento. Per ulteriori informazioni, consulta la sezione [SQLData](../../migration/using/general-configurations.md#sqldata) .
+Se hai modificato queste applicazioni web e desideri continuare a utilizzarle in v7, devi attivare la **allowSQLInjection** nelle diverse aree di protezione e riavvia l&#39;aggiornamento successivo. Fai riferimento a [SQLData](../../migration/using/general-configurations.md#sqldata) per ulteriori informazioni.
 
 ## Facilità di utilizzo: Home page e navigazione {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Per continuare a utilizzare le applicazioni web di tipo panoramica v6.02, è necessario attivare l&#39;opzione **allowSQLInjection** nelle diverse aree di sicurezza prima dell&#39;aggiornamento successivo. Fare riferimento a [Applicazioni web](#web-applications).
+>Per continuare a utilizzare le applicazioni web di tipo panoramica v6.02, è necessario attivare la **allowSQLInjection** nelle diverse aree di protezione prima dell&#39;aggiornamento successivo. Fai riferimento a [Applicazioni web](#web-applications).
 
 Dopo una migrazione dalla versione 6.02, la home page di Adobe Campaign v6.02 non viene più visualizzata ma è ancora accessibile e compatibile con Adobe Campaign v7.
 
@@ -51,9 +51,9 @@ Per continuare a utilizzare la home page v6.02, è necessario installare un pacc
 
 A questo scopo, importa il pacchetto di compatibilità:
 
-Fai clic su **[!UICONTROL Tools > Advanced > Import package]** e scegli il pacchetto **campaignMigration.xml** in **`\nl\datakit\nms\[Your language]\package\optional`**.
+Fai clic su **[!UICONTROL Tools > Advanced > Import package]** e scegli la **campaignMigration.xml** nel pacchetto **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Per consentire l&#39;accesso alle interfacce di tipo applicazione Web v6.02, l&#39;opzione di configurazione del server **sessionTokenOnly** deve essere attivata nel file **serverConf.xml** :
+Per consentire l&#39;accesso alle interfacce di tipo applicazione Web v6.02, il **sessionTokenOnly** l&#39;opzione di configurazione del server deve essere attivata nel **serverConf.xml** file:
 
 ```
 sessionTokenOnly="true"
@@ -79,4 +79,4 @@ Se desideri aggiungere un’altra panoramica configurata nella versione v6.02, d
 
 Dopo la migrazione di un&#39;istanza di controllo del Centro messaggi, devi ripubblicare i modelli dei messaggi transazionali affinché funzionino.
 
-In v7, i nomi dei modelli di messaggi transazionali nelle istanze di esecuzione sono cambiati. Sono attualmente preceduti dal nome dell’operatore che corrisponde all’istanza di controllo in cui sono stati creati, ad esempio **control1_template1_rt** (dove **control1** è il nome dell’operatore). Se si dispone di un volume significativo di modelli, è consigliabile eliminare i vecchi modelli nelle istanze di controllo.
+In v7, i nomi dei modelli di messaggi transazionali nelle istanze di esecuzione sono cambiati. Sono attualmente preceduti dal nome dell’operatore che corrisponde all’istanza di controllo in cui sono stati creati, ad esempio **control1_template1_rt** (4) **control1** è il nome dell&#39;operatore). Se si dispone di un volume significativo di modelli, è consigliabile eliminare i vecchi modelli nelle istanze di controllo.

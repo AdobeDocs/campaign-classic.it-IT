@@ -19,14 +19,14 @@ ht-degree: 4%
 
 I motivi di un problema di connessione possono essere molteplici e dipendere da vari contesti.
 
-Puoi provare i seguenti test e se l&#39;errore di connessione persiste, contatta l&#39; [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Puoi provare i seguenti test e se l&#39;errore di connessione persiste, contatta il [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
 <table> 
 <thead> 
 <tr> 
-<th>Verifiche<br /> </th> 
+<th>Controlli<br /> </th> 
 <th>Risoluzione<br /> </th> 
 </tr> 
 </thead> 
@@ -45,15 +45,15 @@ Puoi provare i seguenti test e se l&#39;errore di connessione persiste, contatta
 </tr>
 <tr> 
 <td>Adobe Campaign è stato integrato correttamente?</td> 
-<td>Accedi a: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='AAAA/MM/GG HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
-Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione è presa in considerazione.</td>
+<td>Accedi a: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Il server deve restituire il seguente tipo di messaggio: &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
+Se non si ottiene questo risultato, verificare nella configurazione del server Web che l'integrazione è presa in considerazione.:MM:</td>
 </tr>
 <tr> 
-<td>Collegati al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Collegati al seguente URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se ottieni un errore Tomcat Java, controlla se l'integrazione JAVA viene eseguita correttamente. È integrato nel file [percorso dell'applicazione]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>Collegati al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Collegati al seguente URL: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se si ottiene una pagina vuota, verificare se il modulo Web Adobe Campaign è avviato. Il comando nlserver pdump deve restituire Application Server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) di DD/MM/YYYY. In caso contrario, riavvia il modulo con il comando nlserver start web</td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Se non si ottiene questo risultato, verificare nella configurazione del server W
 <td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consulta <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>questa sezione.</a></td>
 </tr>
 <tr>
-<td>Il comando nlserver pdump restituisce <b>Nessun task</b></td>
+<td>Il comando nlserver pdump restituisce <b>Nessuna attività</b></td>
 <td>È necessario riavviare l'intera applicazione Adobe Campaign. A questo scopo, utilizza il seguente comando: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 

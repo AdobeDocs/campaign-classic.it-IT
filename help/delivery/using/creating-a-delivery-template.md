@@ -21,13 +21,13 @@ ht-degree: 11%
 
 ## Conversione di una consegna esistente in un modello {#converting-an-existing-delivery-to-a-template}
 
-Una consegna può essere convertita in un modello per nuove azioni di consegna ripetute. Per convertire una consegna in un modello, selezionala dall’elenco di consegna, accessibile tramite il nodo **[!UICONTROL Campaign management]** della struttura.
+Una consegna può essere convertita in un modello per nuove azioni di consegna ripetute. Per convertire una consegna in un modello, selezionala dall’elenco di consegna, accessibile tramite il **[!UICONTROL Campaign management]** nodo dell&#39;albero.
 
 Fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Actions > Save as template...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Questa azione crea un modello di consegna dalla consegna selezionata. Immetti la cartella in cui viene salvato (nel campo **[!UICONTROL Folder]** ) e la cartella in cui vengono create le consegne create in base a questo modello (nel campo **[!UICONTROL Execution folder]** ).
+Questa azione crea un modello di consegna dalla consegna selezionata. È necessario immettere la cartella in cui viene salvata (nel **[!UICONTROL Folder]** , nonché la cartella in cui vengono create le consegne create in base a questo modello (nel **[!UICONTROL Execution folder]** (campo).
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -38,7 +38,7 @@ Per ulteriori informazioni sulla modalità di configurazione, consulta [Collegam
 Per configurare un modello di consegna, esegui i seguenti passaggi:
 
 1. Apri Campaign Explorer.
-1. Nella cartella **Risorse**, seleziona **Modelli** e quindi **Modelli di consegna**.
+1. In **Risorse** cartella, seleziona **Modelli** then **Modelli di consegna**.
 
    ![](assets/delivery_template_1.png)
 
@@ -46,19 +46,19 @@ Per configurare un modello di consegna, esegui i seguenti passaggi:
 
    ![](assets/delivery_template_2.png)
 
-1. Modifica il **Etichetta** e il **Nome interno** della cartella.
+1. Modifica la **Etichetta** e **Nome interno** della cartella.
 1. Salva il modello e riaprilo.
-1. Fai clic sul pulsante **Proprietà**, quindi modifica i valori in base alle tue esigenze.
+1. Fai clic sul pulsante **Proprietà** e quindi modificare i valori in base alle tue esigenze.
 
    ![](assets/delivery_template_3.png)
 
-1. Nella scheda **Generale**, confermare o modificare le posizioni selezionate nei menu a discesa **Cartella di esecuzione**, **Cartella** e **Indirizzamento**.
+1. In **Generale** , confermare o modificare le posizioni selezionate nella **Cartella di esecuzione**, **Cartella** e **Indirizzamento** menu a discesa.
 
    ![](assets/delivery_template_4.png)
 
-1. Completa la categoria **Parametri e-mail** con l’oggetto dell’e-mail e la popolazione target.
-1. Aggiungi il **contenuto HTML** per personalizzare il modello, puoi visualizzare un collegamento a una pagina speculare e un collegamento di annullamento all’abbonamento.
-1. Selezionare la scheda **Anteprima**. Nel menu a discesa **Test personalization** , seleziona **Recipient** per visualizzare in anteprima il modello come profilo scelto.
+1. Completa il **Parametri e-mail** categoria con l’oggetto dell’e-mail e la popolazione target.
+1. Aggiungi il tuo **Contenuto HTML** per personalizzare il modello, puoi visualizzare un collegamento a una pagina speculare e un collegamento di annullamento all’abbonamento.
+1. Seleziona la **Anteprima** scheda . In **Personalizzazione dei test** menu a discesa, seleziona **Destinatario** per visualizzare in anteprima il modello come profilo scelto.
 
    ![](assets/delivery_template_5.png)
 

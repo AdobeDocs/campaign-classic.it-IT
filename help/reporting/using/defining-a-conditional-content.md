@@ -19,9 +19,9 @@ ht-degree: 8%
 
 È possibile condizionare la visualizzazione di specifici elementi o pagine del rapporto.
 
-Per rendere condizionali elementi specifici, adattane le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione elemento di condizionamento](#conditioning-item-display).
+Per rendere condizionali elementi specifici, adattane le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione degli elementi di condizionamento](#conditioning-item-display).
 
-Per rendere condizionale la visualizzazione di una o più pagine, utilizza un’attività di tipo **[!UICONTROL Test]**. Per ulteriori informazioni, consulta [Visualizzazione pagina di condizionamento](#conditioning-page-display).
+Per rendere condizionale la visualizzazione di una o più pagine, utilizza un **[!UICONTROL Test]** digitare activity. Per ulteriori informazioni, consulta [Visualizzazione della pagina di condizionamento](#conditioning-page-display).
 
 ## Visualizzazione degli elementi di condizionamento {#conditioning-item-display}
 
@@ -29,7 +29,7 @@ Per condizionare la visualizzazione di parte di un rapporto, è necessario defin
 
 Le condizioni di visibilità possono dipendere dallo stato dell’operatore, dagli elementi selezionati o inseriti nella pagina del rapporto.
 
-Esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](../../web/using/form-rendering.md#defining-fields-conditional-display).
+Gli esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](../../web/using/form-rendering.md#defining-fields-conditional-display).
 
 Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
@@ -37,21 +37,21 @@ Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
 ## Visualizzazione della pagina di condizionamento {#conditioning-page-display}
 
-Nel grafico di un rapporto, l’ attività **[!UICONTROL Test]** ti consente di modificare la sequenza di pagine a seconda di una o più condizioni.
+Nel grafico di un rapporto, la **[!UICONTROL Test]** attività ti consente di modificare la sequenza di pagine a seconda di una o più condizioni.
 
 Questa attività si basa sul seguente principio operativo:
 
-1. Inserire un elemento **[!UICONTROL Test]** in un grafico e modificarlo.
+1. Posiziona un **[!UICONTROL Test]** in un grafico e modificalo.
 1. Fai clic sul pulsante **[!UICONTROL Add]** per creare i vari casi possibili.
 
    ![](assets/reporting_test_sample.png)
 
-   Per ogni caso, all’attività **[!UICONTROL Test]** viene aggiunta una transizione di output.
+   Per ogni caso, viene aggiunta una transizione di output al **[!UICONTROL Test]** attività.
 
    ![](assets/reporting_test_transitions.png)
 
-1. Seleziona il **[!UICONTROL Enable default transition]** per aggiungere una transizione, nel caso in cui una delle condizioni configurate non sia soddisfatta.
+1. Seleziona la **[!UICONTROL Enable default transition]** per aggiungere una transizione, nel caso in cui una delle condizioni configurate non sia soddisfatta.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
-Un’attività **[!UICONTROL Test]** può essere posizionata all’inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell’operatore, ad esempio.
+A **[!UICONTROL Test]** l’attività può essere posizionata all’inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell’operatore, ad esempio.

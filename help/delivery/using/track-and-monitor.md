@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Hai fatto clic sul pulsante **Invia**? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come reagiscono i destinatari alla consegna. In questo modo potrai migliorare l’invio futuro e ottimizzare le campagne successive.
+Fai clic su **Invia** pulsante? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come reagiscono i destinatari alla consegna. In questo modo potrai migliorare l’invio futuro e ottimizzare le campagne successive.
 
 ## Monitoraggio delle consegne {#monitoring-deliveries}
 
@@ -43,7 +43,7 @@ Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della
 
 **Suggerimento**: Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
-Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](how-to-configure-tracked-links.md) e la descrizione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) .
+Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](how-to-configure-tracked-links.md) la sezione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) descrizione.
 
 ## Prestazioni di consegna {#delivery-performances}
 
@@ -67,4 +67,4 @@ Per misurare la velocità di consegna dei messaggi, puoi controllare la velocit�
 
 * [Problemi di prestazioni di consegna](delivery-performances.md)
 
-* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) : solo per i clienti  *on-premise*
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo clienti on-premise*

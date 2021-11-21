@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Gli indirizzi di seed non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Puoi creare sottocartelle per organizzare gli indirizzi di seed. A questo scopo, fai clic con il pulsante destro del mouse sul nodo **[!UICONTROL Seed addresses]** e seleziona **[!UICONTROL Create a new 'Seed addresses' folder]**. Denomina la sottocartella e premi **[!UICONTROL Enter]** per eseguire la convalida. Ora puoi creare o copiare gli indirizzi di seed in questa sottocartella. Per ulteriori informazioni, consulta [Definizione degli indirizzi](#defining-addresses).
+Puoi creare sottocartelle per organizzare gli indirizzi di seed. A tale scopo, fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL Seed addresses]** nodo e seleziona **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** da convalidare. Ora puoi creare o copiare gli indirizzi di seed in questa sottocartella. Per ulteriori informazioni, consulta [Definizione degli indirizzi](#defining-addresses).
 
 Adobe Campaign consente inoltre di creare modelli di indirizzi di seed importati in consegne o campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fai riferimento a [Creazione di modelli di indirizzi di seed](#creating-seed-address-templates).
 
@@ -27,8 +27,8 @@ Adobe Campaign consente inoltre di creare modelli di indirizzi di seed importati
 
 Per creare indirizzi di seed, segui i passaggi seguenti:
 
-1. Fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco degli indirizzi di seed.
-1. Immetti i dati collegati all’indirizzo nei campi corrispondenti dalla scheda **[!UICONTROL Recipient]** . I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (tabella nms:recipient): nome, nome, e-mail, ecc.
+1. Fai clic sul pulsante **[!UICONTROL New]** al di sopra dell’elenco degli indirizzi di seed.
+1. Immetti i dati collegati all’indirizzo nei campi corrispondenti dal **[!UICONTROL Recipient]** scheda . I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (tabella nms:recipient): nome, nome, e-mail, ecc.
 
    >[!NOTE]
    >
@@ -38,13 +38,13 @@ Per creare indirizzi di seed, segui i passaggi seguenti:
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. Nella scheda **[!UICONTROL Seed fields]** , immetti i valori che verranno inseriti nei registri di consegna durante la fase di analisi (nella tabella **[!UICONTROL nms:broadLog]** ).
+1. In **[!UICONTROL Seed fields]** , immetti i valori che verranno inseriti nei registri di consegna durante la fase di analisi (in **[!UICONTROL nms:broadLog]** tabella).
 
-1. Nella scheda **[!UICONTROL Additional data]** , inserisci i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dei dati a cui desideri assegnare un valore specifico.
+1. In **[!UICONTROL Additional data]** , immetti i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dati a cui desideri assegnare un valore specifico.
 
    >[!NOTE]
    >
-   >Assicurati che i dati di destinazione aggiuntivi siano stati definiti con un alias che inizia con &#39;@&#39; nell&#39;attività **[!UICONTROL Enrichment]**. In caso contrario, non potrai utilizzarli correttamente con gli indirizzi di seed nell’attività di consegna.
+   >Assicurati che i dati di destinazione aggiuntivi siano stati definiti con un alias che inizia con &#39;@&#39; nel **[!UICONTROL Enrichment]** attività. In caso contrario, non potrai utilizzarli correttamente con gli indirizzi di seed nell’attività di consegna.
 
 ## Creazione di modelli di indirizzi di seed {#creating-seed-address-templates}
 
@@ -52,11 +52,11 @@ Per creare modelli di indirizzi da importare e modificare per ogni consegna, il 
 
 Per definire una cartella di modelli, applicare il seguente processo:
 
-1. Crea una nuova cartella di tipo **[!UICONTROL Seed addresses]**, fai clic con il pulsante destro del mouse sulla cartella e seleziona **[!UICONTROL Properties...]**.
+1. Crea un nuovo **[!UICONTROL Seed addresses]** digita cartella, fai clic con il pulsante destro del mouse sulla cartella e seleziona **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_seedlist_template_folder.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Restriction]** e aggiungi la seguente condizione di filtro: **@isModel = true**.
+1. Fai clic sul pulsante **[!UICONTROL Restriction]** e aggiungi la seguente condizione di filtro: **@isModel = true**.
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 

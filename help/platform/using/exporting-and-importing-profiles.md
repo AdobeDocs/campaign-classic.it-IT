@@ -17,7 +17,7 @@ ht-degree: 31%
 
 ![](../../assets/common.svg)
 
-Puoi [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database Adobe Campaign oppure impostare [importazioni generiche o processi di esportazione](#create-jobs).
+È possibile [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database Adobe Campaign o configurare [lavori generici di importazione o esportazione](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#import-profiles-video)
 
@@ -25,11 +25,11 @@ Puoi [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i
 
 Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite attività di importazione ed esportazione. Possono essere ripetuti automaticamente in base a una pianificazione, ad esempio per automatizzare lo scambio di dati tra diversi sistemi di informazione. [Ulteriori informazioni](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-Se necessario, puoi creare un processo occasionale di importazione o esportazione tramite la funzione **[!UICONTROL Generic imports and exports]** descritta di seguito.
+Se necessario, puoi creare un processo occasionale di importazione o esportazione tramite il **[!UICONTROL Generic imports and exports]** funzionalità descritta di seguito.
 
 ## Creazione di processi{#create-jobs}
 
-Per configurare ed eseguire i processi di importazione ed esportazione dei dati, passa alla scheda **[!UICONTROL Profiles and targets]** e fai clic sul collegamento **[!UICONTROL Jobs]** . [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
+Per configurare ed eseguire i processi di importazione ed esportazione dei dati, vai alla pagina **[!UICONTROL Profiles and targets]** e fai clic su **[!UICONTROL Jobs]** link. [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 

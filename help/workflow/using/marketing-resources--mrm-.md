@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ![](../../assets/common.svg)
 
-I flussi di lavoro descritti di seguito sono installati con il modulo **Risorse di marketing (MRM)** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../campaign/using/designing-marketing-campaigns.md).
+I flussi di lavoro descritti di seguito sono installati con **Risorse di marketing (MRM)** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../campaign/using/designing-marketing-campaigns.md).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ I flussi di lavoro descritti di seguito sono installati con il modulo **Risorse 
   <tr> 
    <td> <span class="uicontrol">Notifica attività</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing.<br /> </td> 
+   <td> Questo flusso di lavoro ti consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Processi del forum di discussione</span> <br /> </td> 

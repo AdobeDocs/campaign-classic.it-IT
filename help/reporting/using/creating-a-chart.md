@@ -33,15 +33,15 @@ Per creare un grafico in un rapporto, effettua le seguenti operazioni:
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Data]** per definire l’origine dati e la serie da calcolare.
+1. Fai clic sul pulsante **[!UICONTROL Data]** per definire l’origine dati e la serie da calcolare.
 
-   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, ovvero ai dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, consulta [Utilizzo dei dati contestuali](../../reporting/using/using-the-context.md#using-context-data)).
+   Le statistiche da visualizzare nel grafico possono essere calcolate in base a una query o ai dati contestuali, ovvero i dati forniti dalla transizione in entrata della pagina corrente (per ulteriori informazioni, consulta [Utilizzo dei dati contestuali](../../reporting/using/using-the-context.md#using-context-data)).
 
-   * Fai clic sul collegamento **[!UICONTROL Filter data...]** per definire i criteri di filtro per i dati nel database.
+   * Fai clic sul pulsante **[!UICONTROL Filter data...]** collegamento per definire i criteri di filtro per i dati nel database.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Per utilizzare i dati contestuali, seleziona **[!UICONTROL Context data]** dal menu a discesa **[!UICONTROL Source]** e fai clic sul collegamento **[!UICONTROL Advanced settings...]** . Quindi selezionare i dati che le statistiche riguarderanno.
+   * Per utilizzare i dati contestuali, seleziona **[!UICONTROL Context data]** dal **[!UICONTROL Source]** e fai clic sul pulsante **[!UICONTROL Advanced settings...]** link. Quindi selezionare i dati che le statistiche riguarderanno.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -57,11 +57,11 @@ Il tipo di grafico viene selezionato quando viene inserito nella pagina.
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-Può anche essere modificato tramite la sezione **[!UICONTROL Chart type]** della scheda **[!UICONTROL General]** del grafico.
+Può anche essere modificato tramite il **[!UICONTROL Chart type]** della sezione **[!UICONTROL General]** nel grafico.
 
 ![](assets/reporting_change_graph_type.png)
 
-Le varianti dipendono dal tipo di grafico selezionato. Vengono selezionati tramite il collegamento **[!UICONTROL Variants...]** .
+Le varianti dipendono dal tipo di grafico selezionato. Vengono selezionati tramite la **[!UICONTROL Variants...]** link.
 
 ### Suddivisione: grafici a torta {#breakdown--pie-charts}
 
@@ -71,7 +71,7 @@ I grafici a torta consentono di analizzare una sola variabile.
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-Il collegamento **[!UICONTROL Variants]** ti consente di personalizzare il rendering complessivo del grafico.
+La **[!UICONTROL Variants]** link ti consente di personalizzare il rendering complessivo del grafico.
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -101,11 +101,11 @@ Questo tipo di rappresentazione grafica ti permette di comprendere l’evoluzion
 
 Gli istogrammi consentono di confrontare i valori di una o più variabili.
 
-Per questi tipi di grafici, nella finestra **[!UICONTROL Variants]** sono disponibili le seguenti opzioni:
+Per questi tipi di grafici, le seguenti opzioni sono offerte nel **[!UICONTROL Variants]** finestra:
 
 ![](assets/reporting_select_graph_var.png)
 
-Seleziona l’opzione **[!UICONTROL Display caption]** per visualizzare la didascalia con il grafico e scegli la relativa posizione:
+Controlla la **[!UICONTROL Display caption]** per visualizzare la didascalia con il grafico e sceglierne la posizione:
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -113,7 +113,7 @@ Se appropriato, è possibile sovrapporre i valori.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Se necessario, è possibile invertire la sequenza di visualizzazione del valore. A questo scopo, seleziona l’opzione **[!UICONTROL Reverse stacking]** .
+Se necessario, è possibile invertire la sequenza di visualizzazione del valore. A questo scopo, seleziona la **[!UICONTROL Reverse stacking]** opzione .
 
 ### Conversione: imbuto {#conversion--funnel}
 
@@ -121,9 +121,9 @@ Questo tipo di grafico consente di tenere traccia del tasso di conversazione deg
 
 ## Interazione con il grafico {#interaction-with-the-chart}
 
-È possibile definire un&#39;azione quando l&#39;utente fa clic sul grafico. Apri la finestra **[!UICONTROL Interaction events]** e seleziona l’azione da eseguire.
+È possibile definire un&#39;azione quando l&#39;utente fa clic sul grafico. Apri **[!UICONTROL Interaction events]** e selezionare l&#39;azione da eseguire.
 
-I tipi di interazione possibili e le relative configurazioni sono descritti in [questa sezione](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+I possibili tipi di interazione e le relative configurazioni sono descritti in [questa sezione](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
@@ -131,9 +131,9 @@ I tipi di interazione possibili e le relative configurazioni sono descritti in [
 
 I grafici consentono di visualizzare le statistiche sui dati raccolti.
 
-Queste statistiche sono definite tramite la sezione **[!UICONTROL Series parameters]** della scheda **[!UICONTROL Data]** .
+Tali statistiche sono definite tramite **[!UICONTROL Series parameters]** della sezione **[!UICONTROL Data]** scheda .
 
-Per creare una nuova statistica, fai clic sull’icona **[!UICONTROL Add]** e configura la finestra appropriata. I tipi di calcolo disponibili sono descritti di seguito.
+Per creare una nuova statistica, fai clic sul pulsante **[!UICONTROL Add]** e configura la finestra appropriata. I tipi di calcolo disponibili sono descritti di seguito.
 
 ![](assets/reporting_add_statistics.png)
 

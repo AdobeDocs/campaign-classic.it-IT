@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Le regole di controllo ti consentono di garantire la validità e la qualità dei messaggi prima della consegna: visualizzazione dei caratteri, dimensioni dell’SMS, formato dell’indirizzo, ecc.
 
-Una serie di regole predefinite ti consente di eseguire i consueti controlli. Questi controlli (in grassetto nell’interfaccia) sono:
+Una serie di regole predefinite ti consente di eseguire i controlli consueti. Questi controlli (in grassetto nell’interfaccia) sono:
 
 * **[!UICONTROL Object approval]** (e-mail): controlla che l&#39;oggetto e l&#39;indirizzo del mittente non contengano caratteri speciali che possono causare problemi ad alcuni agenti di posta elettronica.
 * **[!UICONTROL URL label approval]** (e-mail): controlla che ogni URL di tracciamento abbia un’etichetta.

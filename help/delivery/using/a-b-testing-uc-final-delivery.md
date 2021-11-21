@@ -19,13 +19,13 @@ ht-degree: 9%
 
 Una volta creato lo script per selezionare il vincitore del test A/B, puoi definire i parametri della consegna finale.
 
-1. Collega l&#39;attività **[!UICONTROL JavaScript code]** all&#39;attività **[!UICONTROL Delivery]** rimanente.
-1. Apri l’attività **[!UICONTROL Delivery]** .
-1. Deseleziona l’opzione **[!UICONTROL Generate an outbound transition]** per completare il flusso di lavoro con questa attività.
+1. Collega **[!UICONTROL JavaScript code]** attività per gli altri **[!UICONTROL Delivery]** attività.
+1. Apri **[!UICONTROL Delivery]** attività.
+1. Deseleziona **[!UICONTROL Generate an outbound transition]** per completare il flusso di lavoro con questa attività.
 1. Lascia i valori predefiniti delle altre opzioni.
 
    ![](assets/ab_test_final_delivery.png)
 
-Preparando la consegna specificata nella transizione (definita tramite l’attività **[!UICONTROL Javascript Code]** ), potrai quindi approvarla e avviare l’invio, come descritto nel passaggio successivo.
+Preparando la consegna specificata nella transizione (definita tramite il **[!UICONTROL Javascript Code]** attività), potrai quindi approvarla e avviare l’invio, come descritto nel passaggio successivo.
 
 Ora puoi avviare il flusso di lavoro. [Ulteriori informazioni](a-b-testing-uc-start-workflow.md).

@@ -70,21 +70,21 @@ Nell’esempio seguente, lo spazio di offerta selezionato nella consegna è **[!
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Se lo spazio di offerta selezionato nella consegna non dispone di una funzione di rendering HTML impostata, non verrà visualizzato nel menu di consegna e non sarà disponibile per la selezione. Anche in questo caso, questo è indipendente dallo spazio di offerta selezionato nell’attività Enrichment.
+Se lo spazio di offerta selezionato nella consegna non dispone di una funzione di rendering di HTML impostata, non verrà visualizzato nel menu di consegna e non sarà disponibile per la selezione. Anche in questo caso, questo è indipendente dallo spazio di offerta selezionato nell’attività Enrichment.
 
-Nell’esempio seguente, la funzione di rendering HTML è disponibile nell’elenco a discesa, perché lo spazio di offerta selezionato nella consegna ha una funzione di rendering:
+Nell’esempio seguente, la funzione di rendering di HTML è disponibile nell’elenco a discesa, perché lo spazio di offerta selezionato nella consegna ha una funzione di rendering:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
 Questa funzione inserisce codice come: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-Quando selezioni la proposta, il valore dell&#39;attributo **[!UICONTROL view]** è il seguente:
-* &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering HTML.
-* &quot;offer/view/html&quot;: contenuto HTML. Non utilizza la funzione di rendering HTML. Include solo il campo HTML.
+Quando selezioni la proposta, il valore della **[!UICONTROL view]** l&#39;attributo è il seguente:
+* &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering di HTML.
+* &quot;offer/view/html&quot;: contenuto HTML. Non utilizza la funzione di rendering di HTML. Include solo il campo HTML.
 
 Quando includi più spazi di offerta in un’unica consegna e-mail e se alcuni di essi hanno funzioni di rendering e altri no, devi ricordare quali offerte utilizzano quali spazi di offerta e quali spazi di offerta hanno funzioni di rendering.
 
-Di conseguenza, per evitare qualsiasi problema, si consiglia a tutti gli spazi di offerta di avere una funzione di rendering HTML definita, anche se lo spazio di offerta richiede solo contenuto HTML.
+Di conseguenza, per evitare problemi, si consiglia a tutti gli spazi di offerta di avere una funzione di rendering HTML definita, anche se lo spazio di offerta richiede solo contenuto HTML.
 
 ### Impostazione della classificazione nella tabella del registro delle proposte {#rank-proposition-log-table}
 
@@ -108,7 +108,7 @@ Puoi aggiungere altri campi, ad esempio un campo @rank:
 
 Dato che nella tabella delle proposte è presente un campo denominato @rank, il valore nella tabella temporanea del flusso di lavoro viene copiato.
 
-Per ulteriori informazioni sull’archiviazione di campi aggiuntivi nella tabella delle proposte, consulta [Integrazione di un’offerta tramite un flusso di lavoro](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Per ulteriori informazioni sull&#39;archiviazione di campi aggiuntivi nella tabella delle proposte, consulta [Integrazione di un’offerta tramite un flusso di lavoro](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Per le offerte in uscita con interazione, questa funzione è utile quando sono selezionate più offerte e si desidera registrare l’ordine in cui verranno visualizzate in un messaggio e-mail.
 
@@ -123,7 +123,7 @@ Quando utilizzi l’interazione e selezioni manualmente le offerte, l’utente p
 ### Estensione dello schema nms:offerta {#extending-nms-offer-schema}
 
 Quando estendi lo schema nms:offer, assicurati di seguire la struttura preconfigurata già configurata:
-* Definisci qualsiasi nuovo campo per l’archiviazione dei contenuti in `<element name="view">`.
+* Definire un nuovo campo per l’archiviazione dei contenuti in `<element name="view">`.
 * Ogni nuovo campo deve essere definito due volte. Una volta come campo XML normale e una volta come campo XML CDATA con &quot;_jst&quot; aggiunto al nome. Ad esempio:
 
    ```
@@ -131,4 +131,4 @@ Quando estendi lo schema nms:offer, assicurati di seguire la struttura preconfig
    <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
    ```
 
-* Tutti i campi che contengono URL da tracciare devono essere posizionati in `<element name="trackedUrls">` che si trova in `<element name="view" >`.
+* Eventuali campi che contengono URL da tracciare devono essere inseriti in `<element name="trackedUrls">` che si trova in `<element name="view" >`.

@@ -19,9 +19,9 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Per continuare, assicurati che IMS sia abilitato sul tuo sistema. Consulta la sezione relativa a [IMS](../../integrations/using/about-adobe-id.md).
+>Per continuare, assicurati che IMS sia abilitato sul tuo sistema. Consulta la sezione sulle [IMS](../../integrations/using/about-adobe-id.md).
 
-Una volta abilitato IMS, puoi richiedere il provisioning del servizio core Persone/integrazione di Audience Manager con Campaign. A questo scopo, invia un&#39;e-mail a [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) con le seguenti informazioni:
+Una volta abilitato IMS, puoi richiedere il provisioning del servizio core Persone/integrazione di Audience Manager con Campaign. A questo scopo, invia un’e-mail a [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) con le seguenti informazioni:
 
 <table> 
  <tbody> 

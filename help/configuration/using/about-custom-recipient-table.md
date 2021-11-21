@@ -47,22 +47,22 @@ L’utilizzo di una tabella dei destinatari esterna presenta le seguenti limitaz
 
    Si consiglia di:
 
-   * Dedicazione degli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** all’impostazione predefinita **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate a nessuna tabella dei destinatari personalizzata aggiuntiva.
-   * Definizione di schemi di registro di trasmissione e di registro personalizzati dedicati per ogni nuovo schema di destinatari personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione della mappatura di destinazione, consulta [Mappatura di destinazione](../../configuration/using/target-mapping.md).
+   * Dedicare **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** schemi per la preconfigurazione **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate a nessuna tabella dei destinatari personalizzata aggiuntiva.
+   * Definizione di schemi di registro di trasmissione e di registro personalizzati dedicati per ogni nuovo schema di destinatari personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione della mappatura di destinazione, vedi [Mappatura del target](../../configuration/using/target-mapping.md).
 
-* Non è possibile utilizzare il **[!UICONTROL Services and Subscriptions]** standard offerto nel prodotto.
+* Non è possibile utilizzare lo standard **[!UICONTROL Services and Subscriptions]** offerta nel prodotto.
 
-   Ciò significa che l&#39;operazione complessiva descritta in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
+   Ciò significa l&#39;operazione complessiva descritta in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
 
-* Il collegamento con la tabella **[!UICONTROL visitor]** non funziona.
+* Il collegamento con **[!UICONTROL visitor]** la tabella non funziona.
 
-   Pertanto, per utilizzare il modulo **[!UICONTROL Social Marketing]** è necessario configurare il passaggio di archiviazione in modo che faccia riferimento alla tabella corretta.
+   Pertanto, per utilizzare il **[!UICONTROL Social Marketing]** modulo è necessario configurare il passaggio di archiviazione per fare riferimento alla tabella corretta.
 
    Analogamente, quando si utilizzano le funzioni di riferimento, è necessario adattare il modello standard di trasferimento iniziale dei messaggi.
 
 * Non puoi aggiungere manualmente i profili in un elenco.
 
-   Pertanto, la procedura descritta in [questa sezione](../../platform/using/creating-and-managing-lists.md) non è applicabile senza una configurazione aggiuntiva.
+   Pertanto, la procedura di cui [questa sezione](../../platform/using/creating-and-managing-lists.md) non è applicabile senza una configurazione aggiuntiva.
 
    >[!NOTE]
    >
@@ -72,8 +72,8 @@ L’utilizzo di una tabella dei destinatari esterna presenta le seguenti limitaz
 
 Ad esempio:
 
-* Alcuni rapporti standard, in particolare quelli offerti da **Interaction** e da **Mobile Applications**, devono essere risviluppati. Consulta la sezione [Gestione dei report](../../configuration/using/managing-reports.md) .
-* Le configurazioni predefinite per alcune attività del flusso di lavoro fanno riferimento alla tabella dei destinatari standard (**[!UICONTROL nms:recipient]**): queste configurazioni devono essere modificate se utilizzate per una tabella dei destinatari esterna. Consulta la sezione [Gestione dei flussi di lavoro](../../configuration/using/managing-workflows.md) .
-* Il blocco di personalizzazione standard **[!UICONTROL Unsubscription link]** deve essere adattato.
+* Talune relazioni standard, in particolare quelle offerte da **Interazione** e **Applicazioni mobili** devono essere risviluppati. Fai riferimento a [Gestione dei rapporti](../../configuration/using/managing-reports.md) sezione .
+* Le configurazioni predefinite per alcune attività del flusso di lavoro fanno riferimento alla tabella dei destinatari standard (**[!UICONTROL nms:recipient]**): queste configurazioni devono essere modificate se utilizzate per una tabella dei destinatari esterna. Fai riferimento a [Gestione dei flussi di lavoro](../../configuration/using/managing-workflows.md) sezione .
+* Lo standard **[!UICONTROL Unsubscription link]** il blocco di personalizzazione deve essere adattato.
 * È necessario modificare la mappatura di destinazione dei modelli di consegna standard.
 * I moduli V4 non sono compatibili per l’uso con una tabella dei destinatari esterna: è necessario utilizzare applicazioni web.

@@ -23,9 +23,9 @@ I livelli di accesso al database richiesti devono essere installati sul server e
 
 Il generatore dinamico di pagine web utilizza la tecnologia JSP 1.2. Per questo, un motore Tomcat (da Apache) è incluso nell&#39;applicazione. Richiede un Java Development Kit (JDK), installato su tutti i server in cui è installata l&#39;applicazione Adobe Campaign.
 
-È innanzitutto necessario installare un JDK nei computer in cui si desidera eseguire il server dell&#39;applicazione Adobe Campaign (**nlserver web** processo) perché incorpora un contenitore servlet, Apache Tomcat, utilizzato per generare pagine Web dinamiche (report, moduli web, ecc.).
+È innanzitutto necessario installare un JDK nei computer in cui si desidera eseguire l&#39;application server di Adobe Campaign (**web nlserver** processo) perché incorpora un contenitore servlet, Apache Tomcat, utilizzato per generare pagine web dinamiche (report, moduli web, ecc.).
 
-L&#39;applicazione è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per **OpenJDK**.
+La domanda è stata approvata per Java Development Kit (JDK) sviluppato da Oracle e per **OpenJDK**.
 
 Le versioni supportate sono descritte in dettaglio in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -35,7 +35,7 @@ Le versioni supportate sono descritte in dettaglio in Campaign [Matrice di compa
 >  
 >Durante l&#39;installazione, non è necessario eseguire l&#39;integrazione con i browser Web.
 >
->Su un computer che esegue solo agenti di consegna (**nlserver mta** processo) o sul server del flusso di lavoro (**nlserver wfserver** processo), l&#39;installazione di un JDK non è necessaria.
+>Su un computer che esegue solo agenti di consegna (**mta nlserver** o il server del flusso di lavoro (**wfserver nlserver** processo), l&#39;installazione di un JDK non è necessaria.
 
 Per scaricare Java JDK, connettiti a: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -65,11 +65,11 @@ In Linux, OpenSSL deve essere installato. Le versioni supportate da Adobe Campai
 
 ## Esportazione dei rapporti {#exporting-reports}
 
-Adobe Campaign consente di esportare i rapporti delle piattaforme in formato Microsoft Excel e Adobe PDF. Per il formato Microsoft Excel, Adobe Campaign utilizza **LibreOffice**. Per il formato Adobe PDF, Adobe Campaign utilizza il convertitore **PhantomJS**. PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer sui quali viene eseguito il server applicazioni Adobe Campaign (**nlserver web** processo).
+Adobe Campaign consente di esportare i rapporti delle piattaforme in formato Microsoft Excel e Adobe PDF. Per il formato Microsoft Excel, Adobe Campaign utilizza **LibreOffice**. Per il formato Adobe PDF, Adobe Campaign utilizza il **PhantomJS** convertitore. PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer su cui viene eseguito il server applicazioni Adobe Campaign (**web nlserver** processo).
 
 >[!NOTE]
 >
->Per Linux, sarà necessario aggiungere font. Per ulteriori informazioni, consulta [Font per statistiche MTA](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Per Linux, sarà necessario aggiungere font. Per ulteriori informazioni, consulta [Font per le statistiche MTA](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 

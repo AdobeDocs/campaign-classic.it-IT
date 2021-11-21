@@ -77,10 +77,10 @@ Dove:
 L&#39;oggetto può essere:
    * **[!DNL delivery]**: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
    * **[!DNL provider]**: per il provider/indirizzamento di consegna corrente (nms:externalAccount).
-   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungi oggetti nel contesto di esecuzione**.
-   * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
+   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungere oggetti nel contesto di esecuzione**.
+   * Elemento del ciclo foreach: vedere [Foreach](#foreach) di seguito.
 * **[!DNL xpath]**: xpath del campo.
-* **[!DNL index]** (facoltativo): se  **[!DNL object]** è un array (per oggetti script aggiuntivi), l&#39;indice dell&#39;elemento nell&#39;array (Starts at 0).
+* **[!DNL index]** (facoltativo): if **[!DNL object]** è una matrice (per oggetti script aggiuntivi), indice dell&#39;elemento nella matrice (Starts at 0).
 
 ### [!DNL delivery] oggetto {#delivery-object}
 
@@ -145,8 +145,8 @@ Dove:
 
 * **[!DNL object]**: nome dell’oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
 * **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l’oggetto è la matrice su cui eseguire il ciclo.
-* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e l&#39;oggetto è un array stesso, l&#39;indice dell&#39;elemento dell&#39;oggetto (inizia da 0).
-* **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con  &lt;> Impostazione predefinita con il nome del collegamento nello schema.
+* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e object è un array stesso, l&#39;indice dell&#39;elemento dell&#39;oggetto (inizia da 0).
+* **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con il valore &lt;%@ all&#39;interno del ciclo foreach. Impostazione predefinita con il nome del collegamento nello schema.
 
 Esempio:
 
@@ -167,7 +167,7 @@ Con questa soluzione, i collegamenti a tutti gli articoli vengono tracciati senz
 
 La soluzione è:
 
-1. Precaricare tutti gli articoli possibili in un array di script aggiuntivo della consegna - articleList[] - il che significa che deve esserci un numero finito di articoli possibili.
+1. Precaricare tutti gli articoli possibili in un array di script extra della consegna - articleList[] - il che significa che ci deve essere un numero finito di articoli possibili.
 1. Scrivi una funzione JavaScript all&#39;inizio del contenuto.
 
    ```

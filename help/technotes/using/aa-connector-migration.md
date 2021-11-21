@@ -32,7 +32,7 @@ You **deve implementare** la nuova integrazione di Adobe Analytics Connector su 
 
 * La **Data contatto** La classificazione, che deve essere di tipo data, è stata dichiarata obsoleta da Adobe Analytics. Per le integrazioni migrate, rimarrà comunque dello stesso tipo. Per qualsiasi **Data contatto** creato da Campaign, il tipo sarà **Stringa**.
 
-* **Regole di elaborazione** sono create da Adobe Campaign come parte di nuove integrazioni. O **Regole di elaborazione** devono essere create manualmente da Adobe Analytics o direttamente utilizzando l’implementazione JavaScript lato client. **Regole di elaborazione** rimarrà intatto per le integrazioni esistenti.
+* **Regole di elaborazione** sono create da Adobe Campaign come parte di nuove integrazioni. O **Regole di elaborazione** devono essere create manualmente da Adobe Analytics o direttamente utilizzando l’implementazione JavaScript lato client. **Regole di elaborazione** rimarranno intatti per le integrazioni esistenti.
 
 * I flussi di lavoro tecnici incorporati e il loro comportamento restano invariati. Sono state modificate solo le API di backend utilizzate dai flussi di lavoro per inviare/estrarre dati da/verso Adobe Analytics.
 

@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Per impostazione predefinita, i modelli di consegna sono destinati a **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza quindi i campi della tabella **nms:recipient** . Adobe Campaign offre altre mappature target per le consegne, da utilizzare in base alle tue esigenze.
+Per impostazione predefinita, target dei modelli di consegna **[!UICONTROL Recipients]**. La mappatura del target utilizza quindi i campi del **nms:recipient** tabella. Adobe Campaign offre altre mappature target per le consegne, da utilizzare in base alle tue esigenze.
 
 ![](assets/delivery_select_mapping.png)
 

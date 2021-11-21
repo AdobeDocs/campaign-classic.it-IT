@@ -26,4 +26,4 @@ Attività multiple consentono di interagire con i dati provenienti da un databas
 * Arricchimento
 * Caricamento dati
 
-L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, nonché le best practice e limitazioni correlate all’utilizzo di essa, sono descritte in questa sezione [sezione](../../installation/using/about-fda.md).
+L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, nonché le best practice e limitazioni correlate all’utilizzo di questa sono descritte in [sezione](../../installation/using/about-fda.md).

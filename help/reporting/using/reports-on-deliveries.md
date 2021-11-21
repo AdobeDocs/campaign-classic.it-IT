@@ -21,11 +21,11 @@ Adobe Campaign offre diversi tipi di rapporti, accessibili tramite la console de
 
 Sono disponibili i seguenti tipi di rapporto:
 
-* Rapporti sull&#39;intera piattaforma, consulta [Rapporti globali](../../reporting/using/global-reports.md).
-* Rapporti di consegna, consulta [Rapporti di consegna](../../reporting/using/delivery-reports.md).
-* Rapporti cumulati, consulta [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
+* Rapporti sull’intera piattaforma, vedi [Report globali](../../reporting/using/global-reports.md).
+* Rapporti sulla consegna, vedi [Report di consegna](../../reporting/using/delivery-reports.md).
+* Rapporti cumulati, vedi [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
 
-Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L’elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) .
+Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L’elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Fai riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) per ulteriori informazioni.
 
 ## Utilizzo dei rapporti {#using-reports}
 

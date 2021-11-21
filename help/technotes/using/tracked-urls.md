@@ -4,7 +4,8 @@ title: Nota tecnica
 description: Nota tecnica
 hide: true
 hidefromtoc: true
-source-git-commit: 53ac193211a1d98c45e97bf01ab0ad843b8f8f02
+exl-id: e7d4331b-7149-4768-8e46-2e2911319074
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -23,7 +24,7 @@ Tieni presente che anche i collegamenti di annullamento di abbonamento, come tut
 
 **Sei interessato da questo problema?**
 
-Per migliorare la sicurezza, il meccanismo di firma per i collegamenti di tracciamento nelle e-mail è stato introdotto in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti che iniziano Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
+Per migliorare la sicurezza, è stato introdotto il meccanismo di firma per il tracciamento dei collegamenti nelle e-mail in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - Aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti a partire da Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
 
 Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, può essere interessato:
 
@@ -39,14 +40,14 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 **Come si esegue l’aggiornamento?**
 
-In qualità di **cliente in hosting**, Adobe collaborerà con te per aggiornare la tua configurazione a breve.
+Come **cliente ospitato**, Adobe collaborerà con te per aggiornare la configurazione a breve.
 
-In qualità di **cliente on-premise/ibrido**, devi aggiornare la configurazione.
+Come **cliente on-premise/ibrido**, devi aggiornare la configurazione.
 
 Segui il passaggio seguente:
 
-1. Nel [file di configurazione del server](../../installation/using/the-server-configuration-file.md) (serverConf.xml), cambia **signEmailLinks** in **false**.
-1. Riavvia il servizio **nlserver** .
+1. In [file di configurazione del server](../../installation/using/the-server-configuration-file.md) (serverConf.xml), modifica **signEmailLinks** a **false**.
+1. Riavvia **nlserver** servizio.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
    ```
@@ -55,7 +56,7 @@ Segui il passaggio seguente:
 
 >[!NOTE]
 >
->Il file **config-`<instance>`.xml** sostituisce le impostazioni **serverConf.xml**. Se il **signEmailLinks** è presente nel **config-`<instance>`.xml** (dove **instance** è il nome della tua istanza), deve anche essere ruotato su **false**.
+>La **config-`<instance>`.xml** sostituisce il file **serverConf.xml** impostazioni. Se la **signEmailLinks** è presente nel  **config-`<instance>`.xml** (4) **istanza** è il nome della tua istanza), deve anche essere girato a **false**.
 
 **Quale sarà l’impatto dell&#39;aggiornamento?**
 

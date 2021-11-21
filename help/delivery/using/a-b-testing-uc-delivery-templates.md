@@ -17,10 +17,10 @@ ht-degree: 20%
 
 ![](../../assets/common.svg)
 
-Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39;attività **[!UICONTROL Email delivery]** collegata all&#39;attività **[!UICONTROL Split]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
+Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un **[!UICONTROL Email delivery]** attività collegata al **[!UICONTROL Split]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
 
-1. Individua la cartella **[!UICONTROL Resources > Delivery template]** .
-1. Duplica il modello di consegna **[!UICONTROL Email]**.
+1. Sfoglia il **[!UICONTROL Resources > Delivery template]** cartella.
+1. Duplica la **[!UICONTROL Email]** modello di consegna.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

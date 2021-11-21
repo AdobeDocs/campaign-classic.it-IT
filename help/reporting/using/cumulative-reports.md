@@ -23,6 +23,6 @@ Puoi visualizzare rapporti cumulati sulle consegne. A questo scopo, seleziona le
 
 Per selezionare dall’elenco consegne non adiacenti, tenere premuto il tasto CTRL durante la selezione.
 
-Per selezionare le consegne salvate in un’altra cartella, fai clic su **[!UICONTROL Display sub-levels]** (accessibile tramite la barra degli strumenti). Vengono quindi visualizzati nello stesso elenco.
+Per selezionare le consegne salvate in una cartella diversa, fai clic su **[!UICONTROL Display sub-levels]** (accessibile tramite la barra degli strumenti). Vengono quindi visualizzati nello stesso elenco.
 
 ![](assets/s_ncs_user_display_children_icon.png)

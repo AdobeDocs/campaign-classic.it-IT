@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Alcune configurazioni possono essere eseguite solo per Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md).
+>Alcune configurazioni possono essere eseguite solo per Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse implementazioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) sezione o [questa pagina](../../installation/using/capability-matrix.md).
 
 ## Panoramica {#overview}
 
@@ -48,21 +48,21 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
 
 ### Installazione di SpamAssassin {#installing-spamassassin}
 
-1. Connettiti al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) utilizzando le tue credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it?lang=en).
-1. Scarica il file **Neolane Spam Assassin (Installazione di Windows) (2.0)** (neolane_spamassassin.2.0.zip).
+1. Collega a [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) utilizzo delle credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it?lang=en).
+1. Scarica la **Neolane Spam Assassin (Installazione di Windows) (2.0)** file (neolane_spamassassin.2.0.zip).
 1. Copia questo file sul server Adobe Campaign, quindi decomprimi il file.
 
    >[!NOTE]
    >
    >È possibile decomprimere il file ovunque si desideri, purché il percorso sia costituito da uno dei seguenti caratteri di espressione regolare: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Il percorso di installazione non deve contenere spazi bianchi.
 
-1. Vai al file in cui hai decompresso il file, quindi fai doppio clic sul file **run_me.bat** per avviare lo script di installazione.
+1. Vai al file in cui hai decompresso il file e fai doppio clic sul **run_me.bat** per avviare lo script di installazione.
 
-   Se viene visualizzata una shell di Windows e continua a essere visualizzata per alcuni secondi, attendi che l&#39;installazione e l&#39;aggiornamento siano completati, quindi fai clic su **Invio**.
+   Se viene visualizzata e continua la visualizzazione di Windows Shell per alcuni secondi, attendere che l&#39;installazione e l&#39;aggiornamento siano terminati, quindi fare clic su **Invio**.
 
-   Se la shell di Windows non viene visualizzata o non viene visualizzata prima della scomparsa immediata, segui questi passaggi, fai doppio clic sul file **portatileShell.bat** per visualizzare una shell di Windows e controlla che il percorso della shell corrisponda alla cartella in cui è stato decompresso il file **spamassassin.zip**. In caso contrario, accedervi utilizzando il comando **cd**.
+   Se Windows Shell non viene visualizzato o non viene visualizzato prima della scomparsa immediata, segui questi passaggi, fai doppio clic sul pulsante **portatileShell.bat** per visualizzare una shell di Windows e verificare che il percorso della shell corrisponda alla cartella in cui il **spamassassin.zip** file decompresso. In caso contrario, accedilo utilizzando il **cd** comando.
 
-   Inserisci **run_me.bat**, quindi fai clic su **Invio** per avviare il processo di installazione e aggiornamento. L&#39;operazione restituisce uno dei seguenti valori per indicare il risultato dell&#39;aggiornamento.
+   Invio **run_me.bat** quindi fai clic su **Invio** per avviare il processo di installazione e aggiornamento. L&#39;operazione restituisce uno dei seguenti valori per indicare il risultato dell&#39;aggiornamento.
 
    * **0**: è stato eseguito un aggiornamento.
    * **1**: Nessun nuovo aggiornamento disponibile.
@@ -89,7 +89,7 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
       XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
       ```
 
-   1. Fai doppio clic sul file **portatileShell.bat** per visualizzare una shell di Windows e quindi avvia il seguente comando (o &quot;`<root>`&quot; designa la cartella creata quando decomprimi il file **spamassassin.zip**):
+   1. Fai doppio clic sul pulsante **portatileShell.bat** per visualizzare una shell di Windows e quindi avviare il seguente comando (o &quot;`<root>`&quot; designa la cartella creata quando si decomprime la cartella  **spamassassin.zip** file):
 
       ```
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
@@ -99,8 +99,8 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
 
 ### Integrazione di SpamAssassin in Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
-1. Modifica il file **`[INSTALL]/conf/serverConf.xml`**. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
-1. Modifica il valore dell&#39;attributo **spamCheck** degli elementi **command** nel nodo **Web**. A questo scopo, esegui il seguente comando:
+1. Modifica le **`[INSTALL]/conf/serverConf.xml`** file. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
+1. Modificare il valore del **spamCheck** elementi **command** nella **Web** nodo. A questo scopo, esegui il seguente comando:
 
    ```
    <spamCheck command='"<absolute path to the folder where you unzipped the zip file>\call_perl_with_args.bat" "<absolute path to nlserver>/spamcheck.pl"'/>
@@ -110,11 +110,11 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
    >
    >Tutti i percorsi devono essere assoluti.
 
-   Arresta e avvia il servizio **[!UICONTROL Adobe Campaign]** .
+   Interrompi e avvia il **[!UICONTROL Adobe Campaign]** servizio.
 
 1. Per verificare l’integrazione di SpamAssassin in Adobe Campaign utilizza un test GTBUE (Test generico per e-mail in blocco non richieste):
 
-   Fare doppio clic sul file **portableshell.bat**. Questo attiva la visualizzazione di una shell di Windows. Esegui quindi il seguente comando:
+   Fai doppio clic sul pulsante **portableshell.bat** file. Questo attiva la visualizzazione di una shell di Windows. Esegui quindi il seguente comando:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
@@ -124,7 +124,7 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
 
 1. Aggiorna le regole di filtro e punteggio di SpamAssassin
 
-   Per un aggiornamento iniziale delle regole di filtraggio e punteggio, avvia **portatileShell.bat** ed esegui il seguente comando:
+   Per un aggiornamento iniziale delle regole di filtro e punteggio, inizia **portatileShell.bat** ed esegui il comando seguente:
 
    ```
    sa-update --no-gpg
@@ -146,7 +146,7 @@ Per installare e configurare SpamAssassin su Windows per abilitare l’integrazi
    apt-get install spamassassin libxml-writer-perl
    ```
 
-* Nel file **serverConf.xml** (disponibile in `/usr/local/[INSTALL]/nl6/conf/`), modifica la riga **spamCheck** come segue:
+* In **serverConf.xml** (disponibile in `/usr/local/[INSTALL]/nl6/conf/`), modifica il **spamCheck** come segue:
 
    ```
    <spamCheck command="perl
@@ -169,7 +169,7 @@ cpan Mail::SpamAssassin
 
 ### Aggiornamento delle regole del filtro {#updating-filter-rules}
 
-Le regole del filtro possono essere aggiornate automaticamente utilizzando lo strumento **sa-update** . Per ulteriori informazioni, consulta il sito web ufficiale SpamAssassin [https://spamassassin.apache.org/](https://spamassassin.apache.org/) .
+Le regole del filtro possono essere aggiornate automaticamente utilizzando **sa-update** strumento. Consultare il sito ufficiale SpamAssassin [https://spamassassin.apache.org/](https://spamassassin.apache.org/) per ulteriori informazioni.
 
 In Debian, gli aggiornamenti avvengono automaticamente ogni giorno.
 
@@ -181,7 +181,7 @@ test -x /usr/bin/sa-update || exit 0
 /usr/sbin/sa-update && /etc/init.d/spamassassin update
 ```
 
-Inserisci questo script in **crontab** utilizzando il seguente comando:
+Inserisci questo script in **crontab** utilizzando il comando seguente:
 
 ```
 crontab-e
@@ -189,7 +189,7 @@ crontab-e
 
 ### Ottimizzazione delle prestazioni {#performance-optimization}
 
-Per migliorare le prestazioni in Linux, modifica il file **/etc/spamassassin/local.cf** e aggiungi la seguente riga alla fine del file:
+Per migliorare le prestazioni in Linux, modifica il **/etc/spamassassin/local.cf** e aggiungi la seguente riga alla fine del file:
 
 ```
 dns_available no

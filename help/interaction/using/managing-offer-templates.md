@@ -17,18 +17,18 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-I modelli di offerta vengono forniti come predefiniti in Adobe Campaign. Puoi utilizzarli dopo aver creato le offerte, averle duplicate o aver adattato la configurazione alle tue esigenze. Puoi anche creare modelli personalizzati. Le offerte dei modelli sono memorizzate nella cartella **Risorse** > **Modelli** > **Modelli di offerta**.
+I modelli di offerta vengono forniti come predefiniti in Adobe Campaign. Puoi utilizzarli dopo aver creato le offerte, averle duplicate o aver adattato la configurazione alle tue esigenze. Puoi anche creare modelli personalizzati. Le offerte modello sono memorizzate nella cartella **Risorse** > **Modelli** > **Modelli di offerta**.
 
 ## Creazione di un modello di offerta {#creating-an-offer-template}
 
 Per creare un’offerta modello, effettua le seguenti operazioni:
 
 1. Vai a **Risorse** > **Modelli** > **Modelli di offerta**.
-1. Fai clic sull&#39;icona **Nuovo** .
+1. Fai clic sul pulsante **Nuovo** icona.
 
    ![](assets/offer_model_001.png)
 
-1. Configura il modello applicando lo stesso processo di un&#39;offerta normale, quindi salvalo facendo clic su **Salva**.
+1. Configura il modello applicando lo stesso processo di un’offerta normale, quindi salvalo facendo clic su **Salva**.
 
 ## Duplicare un modello esistente {#duplicate-an-existing-template}
 

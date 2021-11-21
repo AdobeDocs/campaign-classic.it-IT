@@ -19,8 +19,8 @@ ht-degree: 6%
 
 Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare le seguenti linee guida:
 
-* Prima di **importare un modello di pagina HTML** in Adobe Campaign, assicurati che il modello si apra e venga visualizzato correttamente nei vari browser.
-* Se la pagina HTML contiene **script JavaScript**, devono eseguire **senza errori** all&#39;esterno dell&#39;editor.
+* Prima **importazione di un modello di pagina di HTML** in Adobe Campaign, assicurati che il modello si apra e venga visualizzato correttamente nei vari browser.
+* Se la pagina HTML contiene **Script JavaScript**, devono eseguire **senza errori** all&#39;esterno dell&#39;editor.
 * Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
    Esempio di codice HTML nel modello:
@@ -29,29 +29,29 @@ Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare
    <input id="email" type="email" name="email"/>
    ```
 
-   L&#39;attributo **&#39;type&#39;** è visibile nell&#39;interfaccia nel seguente modulo:
+   La **&#39;type&#39;** L’attributo è visibile nell’interfaccia nel seguente modulo:
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   L&#39;elenco ufficiale degli attributi &quot;type&quot; è disponibile [in questo sito web](https://www.w3schools.com/tags/att_input_type.asp).
+   È disponibile l’elenco ufficiale degli attributi &quot;type&quot; [in questo sito web](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Passaggi per simulare una pagina finale con il DCE:
 
    ![](assets/dce_enchainement.png)
 
-* Assicurati che nella pagina sia presente un solo elemento `<body> </body>`.
+* Assicurati che sia presente una sola `<body> </body>` nella pagina .
 * Quando viene caricato un file CSS o JS, le immagini contenute nel file .zip non vengono caricate. I riferimenti a queste immagini presenti nel CSS non vengono quindi aggiornati.
 
 ## Formati supportati dall’editor dei contenuti {#content-editor-supported-formats}
 
-L’editor di contenuti digitali supporta il formato HTML: puoi passare in qualsiasi momento alla modalità **sorgente** .
+Digital Content Editor supporta il formato HTML: puoi passare a **source** in qualsiasi momento.
 
 La funzione di importazione di Digital Content Editor funziona come segue con i seguenti formati supportati:
 
 * CSS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini nel CSS non vengono aggiornati.
 * JS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini nel JS non vengono aggiornati.
 * Iframe: le pagine collegate non vengono importate.
-* Pagine di destinazione e app web: se manca un tag **form**, viene visualizzato un avviso. Un `<form> </form>` deve essere sempre presente nel corpo del messaggio.
+* Pagine di destinazione e app web: se **modulo** tag mancante. Viene visualizzato un avviso. A `<form> </form>` deve essere sempre presente nel corpo del messaggio.
 
 L’editor di contenuti digitali funziona anche con le seguenti pagine di codice supportate:
 
@@ -69,19 +69,19 @@ L’editor di contenuti digitali funziona anche con le seguenti pagine di codice
 
 >[!NOTE]
 >
->La tabella codici HTML deve essere definita in un tag meta (HTML 4 o HTML 5) o nella distinta base. Se non è disponibile alcuna tabella codici, apri il file in latino1.
+>La pagina del codice HTML deve essere definita in un tag meta (HTML 4 o HTML 5) o nella distinta base. Se non è disponibile alcuna tabella codici, apri il file in latino1.
 
-## Stati del contenuto HTML {#html-content-statuses}
+## Stato del contenuto di HTML {#html-content-statuses}
 
 Nella sezione superiore dell’editor vengono visualizzati i messaggi relativi allo stato del contenuto. I codici colore dei messaggi sono i seguenti:
 
-* **Messaggio** grigio: messaggio informativo, non è necessario eseguire azioni nell’editor.
-* **Messaggio** blu: messaggio informativo relativo al contenuto in corso di modifica.
-* **Messaggio** giallo: avviso o messaggio di errore che richiede un&#39;azione per conto dell&#39;utente.
+* **Messaggio grigio**: messaggio informativo, non è necessario eseguire azioni nell’editor.
+* **Messaggio blu**: messaggio informativo relativo al contenuto in corso di modifica.
+* **Messaggio giallo**: avviso o messaggio di errore che richiede un&#39;azione per conto dell&#39;utente.
 
 ### Elenco dei messaggi durante la modifica di un&#39;applicazione Web {#list-of-messages-when-editing-a-web-application}
 
-* Il contenuto HTML funziona.
+* Il contenuto di HTML è funzionale.
 * L&#39;applicazione Web non è stata pubblicata e non è possibile accedervi online.
 * L&#39;applicazione Web è online. Per applicare eventuali modifiche, eseguire di nuovo la pubblicazione.
 * Il contenuto della pagina non funziona. Deve includere un modulo HTML (`<form>`)

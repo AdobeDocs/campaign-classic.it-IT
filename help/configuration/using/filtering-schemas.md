@@ -9,7 +9,7 @@ exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Filtri di sistema {#system-filters}
 
-Puoi filtrare l’accesso allo schema per utenti specifici, in base alle relative autorizzazioni. I filtri di sistema consentono di gestire le autorizzazioni di lettura e scrittura delle entità descritte negli schemi utilizzando i parametri **readAccess** e **writeAccess**.
+Puoi filtrare l’accesso allo schema per utenti specifici, in base alle relative autorizzazioni. I filtri di sistema consentono di gestire le autorizzazioni di lettura e scrittura delle entità descritte negli schemi, utilizzando **readAccess** e **writeAccess** Parametri.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Puoi filtrare l’accesso allo schema per utenti specifici, in base alle relativ
 
 * **readAccess**: consente l&#39;accesso in sola lettura ai dati dello schema.
 
-   **Avviso** : tutte le tabelle collegate devono essere impostate con la stessa restrizione. Questa configurazione può influire sulle prestazioni.
+   **Avviso** - Tutte le tabelle collegate devono essere impostate con la stessa restrizione. Questa configurazione può influire sulle prestazioni.
 
 * **writeAccess**: fornisce l&#39;accesso in scrittura ai dati dello schema.
 
-Questi filtri vengono immessi al livello principale **element** degli schemi e, come mostrato negli esempi seguenti, possono essere formati per limitare l’accesso.
+Questi filtri vengono immessi nella pagina principale **elemento** per limitare l’accesso, è possibile creare il livello degli schemi e, come mostrato negli esempi seguenti.
 
 * Limita autorizzazioni DI SCRITTURA
 
@@ -45,7 +45,7 @@ Questi filtri vengono immessi al livello principale **element** degli schemi e, 
 
 * Limitare le autorizzazioni di LETTURA e SCRITTURA:
 
-   In questo caso, il filtro viene utilizzato per disabilitare le autorizzazioni READ e WRITE sullo schema per tutti gli operatori. Solo l&#39;account **interno**, rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone di queste autorizzazioni.
+   In questo caso, il filtro viene utilizzato per disabilitare le autorizzazioni READ e WRITE sullo schema per tutti gli operatori. Solo il **interno** account, rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone di queste autorizzazioni.
 
    ```
    <sysFilter name="readAccess"> 
@@ -57,7 +57,7 @@ Questi filtri vengono immessi al livello principale **element** degli schemi e, 
    </sysFilter>
    ```
 
-   Possibili valori di attributo **espr** utilizzati per definire la condizione sono TRUE o FALSE.
+   Possibile **expr** i valori degli attributi utilizzati per definire la condizione sono TRUE o FALSE.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Per impostazione predefinita, gli schemi incorporati sono accessibili solo con a
 
 >[!IMPORTANT]
 >
->Le autorizzazioni READ e WRITE per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza Adobe Campaign.
+>Autorizzazioni READ e WRITE per **xtk:sessionInfo** Lo schema è accessibile solo dall’account interno di un’istanza di Adobe Campaign.
 
 ## Modificare i filtri di sistema degli schemi incorporati {#modifying-system-filters-of-built-in-schemas}
 
@@ -111,5 +111,5 @@ Per impostazione predefinita, gli schemi incorporati sono accessibili solo con a
 >Tuttavia, Adobe consiglia di non modificare i parametri predefiniti per garantire una protezione ottimale.
 
 1. Crea un&#39;estensione per lo schema interessato o apri un&#39;estensione esistente.
-1. Aggiungi un elemento figlio **`<sysfilter name="<filter name>" _operation="delete"/>`** nell’elemento principale per eliminare l’applicazione del filtro nello stesso schema di origine.
+1. Aggiungi un elemento figlio **`<sysfilter name="<filter name>" _operation="delete"/>`** nell&#39;elemento principale per eliminare l&#39;applicazione del filtro nello stesso nello schema di origine.
 1. Se lo desideri, puoi aggiungere un nuovo filtro, come descritto in [Filtri di sistema](#system-filters).

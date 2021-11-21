@@ -17,15 +17,15 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-## Informazioni sui documenti PDF variabili {#about-variable-pdf-documents}
+## Informazioni sui documenti variabili di PDF {#about-variable-pdf-documents}
 
-Adobe Campaign consente di generare documenti PDF variabili per allegati e-mail da LibreOffice o documenti Microsoft Word.
+Adobe Campaign consente di generare documenti PDF variabili per gli allegati e-mail da documenti LibreOffice o Microsoft Word.
 
 Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &quot;.odt&quot;.
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità JavaScript utilizzate per la personalizzazione delle e-mail.
 
-È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni sull&#39;aggiunta di un file calcolato, consulta la sezione [File allegati](attaching-files.md) .
+È necessario attivare la **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opzione . Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni sull’associazione di un file calcolato, consulta la [File allegati](attaching-files.md) sezione .
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -38,7 +38,7 @@ Per generare tabelle dinamiche o includere immagini tramite un URL, è necessari
 La procedura per la generazione di tabelle dinamiche è la seguente:
 
 * Crea una tabella con tre righe e tutte le colonne necessarie, quindi configurane il layout (bordi, ecc.).
-* Posiziona il cursore sulla tabella e fai clic sul menu **[!UICONTROL Table > Table properties]** . Vai alla scheda **[!UICONTROL Table]** e immetti un nome che inizia con **NlJsTable**.
+* Posiziona il cursore sulla tabella e fai clic sul pulsante **[!UICONTROL Table > Table properties]** menu. Vai a **[!UICONTROL Table]** e immetti un nome che inizia con **NlJsTable**.
 * Nella prima cella della prima riga, definire un ciclo (&quot;for&quot;, ad esempio) che abilita l’iterazione sui valori che si desidera visualizzare nella tabella.
 * In ogni cella della seconda riga della tabella, inserire gli script che restituiscono i valori da visualizzare.
 * Chiudere il loop nella terza e ultima riga della tabella.
@@ -64,16 +64,16 @@ A questo scopo, devi configurare un blocco di personalizzazione, quindi includer
 
 **Passaggio 2: crea il blocco di personalizzazione:**
 
-* Vai al menu **[!UICONTROL Resources > Campaign management > Personalization blocks]** della console Adobe Campaign.
+* Vai a **[!UICONTROL Resources > Campaign management > Personalization blocks]** del menu della console Adobe Campaign.
 * Crea un nuovo blocco di personalizzazione &quot;My Logo&quot; con &quot;My_Logo&quot; come nome interno.
-* Fai clic sul collegamento **[!UICONTROL Advanced parameters...]**, quindi seleziona l’opzione **[!UICONTROL "The content of the block is included in an attachment"]** . Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
+* Fai clic sul pulsante **[!UICONTROL Advanced parameters...]** quindi controlla il **[!UICONTROL "The content of the block is included in an attachment"]** opzione . Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
 
    ![](assets/s_ncs_pdf_bloc_option.png)
 
    È necessario differenziare due tipi di dichiarazioni all’interno del blocco di personalizzazione:
 
    * Il codice Adobe Campaign dei campi di personalizzazione per i quali i caratteri &quot;open&quot; e &quot;closed&quot; devono essere sostituiti da caratteri di escape (rispettivamente `&lt;` e `&gt;`).
-   * L&#39;intero codice XML di OpenOffice verrà copiato nel documento OpenOffice.
+   * L&#39;intero codice XML di OpenOffice verrà copiato nel documento di OpenOffice.
 
 Nell’esempio, il blocco di personalizzazione si presenta così:
 

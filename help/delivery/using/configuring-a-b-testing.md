@@ -19,17 +19,17 @@ ht-degree: 3%
 
 Questa sezione descrive come creare un flusso di lavoro per eseguire test A/B.
 
-1. Crea un nuovo flusso di lavoro e configura un’attività [Query](../../workflow/using/query.md) per eseguire il targeting della popolazione desiderata.
+1. Crea un nuovo flusso di lavoro e configura un [Query](../../workflow/using/query.md) attività per indirizzare la popolazione desiderata.
 
-1. Aggiungi un&#39;attività [Dividi](../../workflow/using/split.md) per suddividere la popolazione target in più sottoinsiemi.
+1. Aggiungi un [Divisione](../../workflow/using/split.md) attività per dividere la popolazione target in più sottoinsiemi.
 
-1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un&#39;attività **[!UICONTROL Split]**, consulta [questa sezione](../../workflow/using/split.md).
+1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un **[!UICONTROL Split]** attività, fai riferimento a [questa sezione](../../workflow/using/split.md).
 
    In questo esempio, vogliamo sottoporre a test 2 nuovi soggetti per una newsletter presentandoli ciascuno al 10% della popolazione target.
 
    ![](assets/ab-testing-split.png)
 
-1. Aggiungi una transizione per inviare alla popolazione rimanente la newsletter con l’oggetto corrente. A questo scopo, attiva l’opzione **[!UICONTROL Generate complement]** dalla scheda **[!UICONTROL General]** .
+1. Aggiungi una transizione per inviare alla popolazione rimanente la newsletter con l’oggetto corrente. Per eseguire questa operazione, attiva il **[!UICONTROL Generate complement]** dall&#39;opzione **[!UICONTROL General]** scheda .
 
    ![](assets/ab-testing-complement.png)
 
@@ -39,4 +39,4 @@ Questa sezione descrive come creare un flusso di lavoro per eseguire test A/B.
 
 Ora puoi avviare il flusso di lavoro. Una volta inviate le consegne, potrai tenere traccia del comportamento dei tre sottoinsiemi nei registri di consegna, in modo da individuare l’oggetto che ha avuto maggior successo.
 
-I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questo [caso d’uso ](a-b-testing-use-case.md) dedicato.
+I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questa sezione dedicata [caso d&#39;uso](a-b-testing-use-case.md).

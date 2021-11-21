@@ -29,7 +29,7 @@ Viene aggiunto al dettaglio dell’ordine corrispondente e può essere modificat
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-La campagna rimane accessibile nella panoramica Campaign, tramite il collegamento **[!UICONTROL Campaigns]** nella home page.
+La campagna rimane accessibile nella panoramica di Campaign, che si trova tramite il **[!UICONTROL Campaigns]** nella home page.
 
 ## Impostazioni disponibili {#available-settings}
 

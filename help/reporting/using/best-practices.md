@@ -35,7 +35,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
    * Aggiungi indicatori a un rapporto esistente. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizza i dati nel database. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esporta dati dal database Adobe Campaign (tramite un flusso di lavoro, consulta [questa sezione](../../workflow/using/about-workflows.md)
+   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](../../workflow/using/about-workflows.md)
    * Creare una tabella pivot. Ulteriori informazioni [in questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplorare i dati aggregati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-cubes.md)
    * Utilizza una procedura guidata per analizzare i dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
@@ -114,4 +114,4 @@ Inoltre, Adobe Campaign consiglia i seguenti miglioramenti:
 
 ### Esportazione dei rapporti {#exporting-reports}
 
-Recommendations specifico per l&#39;esportazione dei rapporti sono descritti in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).

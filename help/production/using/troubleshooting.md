@@ -22,9 +22,9 @@ Questa sezione contiene procedure di risoluzione dei problemi relativi a problem
 ## Problemi comuni e generali {#common-and-general-issues}
 
 * Questo [page](../../production/using/modules-and-frequent-issues.md) presenta i problemi più frequenti riscontrati per i moduli elencati.
-* In questa [pagina](../../production/using/workflow-execution.md) sono elencate le procedure comuni per la risoluzione dei problemi da seguire quando si verificano problemi nell&#39;esecuzione di un flusso di lavoro.
-* Questa [pagina](../../production/using/lost-password.md) descrive in dettaglio come modificare o recuperare una password persa.
-* Questa [pagina](../../production/using/console-update.md) descrive come riattivare la richiesta di aggiornamento della console se hai disattivato l’opzione corrispondente.
+* Questo [page](../../production/using/workflow-execution.md) elenca le procedure comuni per la risoluzione dei problemi da seguire quando si verificano problemi con l’esecuzione del flusso di lavoro.
+* Questo [page](../../production/using/lost-password.md) informazioni dettagliate su come modificare o recuperare una password persa.
+* Questo [page](../../production/using/console-update.md) scopri come riattivare la richiesta di aggiornamento della console se hai disattivato l’opzione corrispondente.
 
 ## Risoluzione dei problemi nelle consegne {#delivery-troubleshooting}
 
@@ -32,7 +32,7 @@ Questa sezione contiene procedure di risoluzione dei problemi relativi a problem
 * [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 * [Immagine mancante](../../production/using/images-missing.md)
-* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md)  (solo *modelli di hosting* on-premise)
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) (*solo modelli di hosting on-premise*)
 
 **Argomento correlato**:
 

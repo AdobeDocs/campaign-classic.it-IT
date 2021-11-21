@@ -17,15 +17,15 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-L’attività **[!UICONTROL Offers by cell]** ti consente di distribuire il gruppo in entrata (da una query, ad esempio) in diversi segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
+La **[!UICONTROL Offers by cell]** l’attività ti consente di distribuire il gruppo in entrata (da una query, ad esempio) in diversi segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
 
-Questa attività può essere utilizzata solo con **Interazione**. Per ulteriori informazioni, consulta questa [sezione](../../interaction/using/about-outbound-channels.md).
+Questa attività può essere utilizzata solo con **Interazione**. Per ulteriori informazioni, consulta [sezione](../../interaction/using/about-outbound-channels.md).
 
 Per eseguire questa operazione:
 
-1. Aggiungi l’attività **[!UICONTROL Offers by cell]** una volta specificata la popolazione target, quindi aprila.
-1. Nella scheda **[!UICONTROL General]** , seleziona lo spazio di offerta in cui desideri presentare le offerte.
-1. Nella scheda **[!UICONTROL Cells]** , specifica i diversi sottoinsiemi utilizzando il pulsante **[!UICONTROL Add]** :
+1. Aggiungi il **[!UICONTROL Offers by cell]** una volta specificata la popolazione target, aprila.
+1. In **[!UICONTROL General]** seleziona lo spazio di offerta in cui desideri presentare le offerte.
+1. In **[!UICONTROL Cells]** , specifica i diversi sottoinsiemi utilizzando **[!UICONTROL Add]** pulsante:
 
    * Specifica il gruppo di sottoinsiemi utilizzando le regole di filtraggio e limitazione disponibili.
    * Quindi, seleziona l’offerta da presentare al set secondario. Le offerte disponibili sono quelle idonee per lo spazio di offerta selezionato al passaggio precedente.

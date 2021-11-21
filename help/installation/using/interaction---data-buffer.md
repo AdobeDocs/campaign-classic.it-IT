@@ -19,21 +19,21 @@ ht-degree: 3%
 
 È possibile configurare una zona buffer dati per migliorare le prestazioni di interazione in entrata desincronizzando i calcoli delle proposte di offerta. Questa configurazione deve essere eseguita nel file di configurazione dell&#39;istanza (config-Instance.xml).
 
-In Adobe Campaign, nel modulo di interazione è stata introdotta una **zona buffer dati**. Questo ti consente di **aumentare le prestazioni** di Interazione in entrata desincronizzando i calcoli di stock e offerte.
+In Adobe Campaign, un **zona buffer dati** è stato introdotto nel modulo Interaction. Questo consente di: **migliorare le prestazioni** di Interazione in entrata tramite la desincronizzazione dei calcoli di stock e offerte.
 
 Riguarda solo l’interazione in entrata, sia tramite una chiamata (con o senza dati di chiamata), sia tramite un aggiornamento di stato (updateStatus).
 
-Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo genera una **zona buffer dati** che consente di scrivere le proposte in modo **asincrono**. Questa zona del buffer dati viene periodicamente letta e svuotata. Il periodo predefinito si trova nello spazio di circa un secondo.La scrittura della proposta è quindi raggruppata.
+Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo genera un **zona buffer dati** che consente di presentare proposte **scritto in modo asincrono**. Questa zona del buffer dati viene periodicamente letta e svuotata. Il periodo predefinito si trova nello spazio di circa un secondo.La scrittura della proposta è quindi raggruppata.
 
 >[!NOTE]
 >
 >Questo parametro è essenziale se utilizzi l’interazione con un’architettura distribuita.
 
-La zona del buffer dati **configuration** può essere fatta nel file di configurazione dell&#39;istanza (config-Instance.xml).
+Zona buffer dati **configurazione** può essere eseguito nel file di configurazione dell&#39;istanza (config-Instance.xml).
 
 >[!CAUTION]
 >
->Alcune configurazioni possono essere eseguite solo per Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md).
+>Alcune configurazioni possono essere eseguite solo per Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse implementazioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) sezione o [questa pagina](../../installation/using/capability-matrix.md).
 >
 >Qualsiasi modifica apportata alla configurazione richiede un riavvio del server web (Apache:IIS) e dei processi Adobe Campaign.\
 >Dopo aver configurato la zona del buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).

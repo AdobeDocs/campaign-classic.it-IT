@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Questa sezione descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v5.11. È inoltre necessario configurare le impostazioni descritte nella sezione [Configurazioni generali](../../migration/using/general-configurations.md) .
+Questa sezione descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v5.11. È inoltre necessario configurare le impostazioni descritte in [Configurazioni generali](../../migration/using/general-configurations.md) sezione .
 
 ## Applicazioni web {#web-applications}
 
@@ -29,7 +29,7 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Alcuni componenti delle applicazioni web, ad esempio i vari campi formula, hanno attributi @id. Vengono utilizzati nel codice XML delle applicazioni web e non vengono più generati nello stesso modo. Non sono visibili nell’interfaccia e non devono essere normalmente utilizzati. Tuttavia, in alcuni casi, gli attributi @id possono essere stati utilizzati per personalizzare il rendering delle applicazioni web, ad esempio tramite un foglio di stile o utilizzando il codice JavaScript.
 
-Durante la migrazione, **è necessario** controllare il percorso del file di registro specificato nell&#39;avviso:
+Durante la migrazione, **deve** controllare il percorso del file di registro specificato nell&#39;avviso:
 
 * **Il file non è vuoto**: contiene avvisi che riguardano incongruenze registrate prima della migrazione e che persistono. Può essere un codice JavaScript in un&#39;applicazione web che fa riferimento a un ID inesistente. Ogni errore deve essere controllato e corretto.
 * **Il file è vuoto**: questo significa che Adobe Campaign non ha rilevato alcun problema.
@@ -38,7 +38,7 @@ Che il file sia vuoto o meno, devi verificare che questi ID non siano usati per 
 
 ## Flussi di lavoro {#workflows}
 
-Poiché il nome della directory di installazione di Adobe Campaign è stato modificato, alcuni flussi di lavoro potrebbero non funzionare dopo la migrazione. Se un flusso di lavoro fa riferimento alla directory nl5 in una delle sue attività, si verifica un errore. Sostituisci questo riferimento con **build**. È possibile eseguire una query SQL per identificare questi flussi di lavoro (esempio PostgreSQL):
+Poiché il nome della directory di installazione di Adobe Campaign è stato modificato, alcuni flussi di lavoro potrebbero non funzionare dopo la migrazione. Se un flusso di lavoro fa riferimento alla directory nl5 in una delle sue attività, si verifica un errore. Sostituisci il riferimento con **build**. È possibile eseguire una query SQL per identificare questi flussi di lavoro (esempio PostgreSQL):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -66,19 +66,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta la pagina [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
+>Per ulteriori informazioni, consulta la [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) pagina.
 
-Se sono state apportate modifiche alla struttura del database, ad esempio durante la configurazione (creazione di indici specifici, creazione di viste SQL, ecc.), è necessario prendere alcune precauzioni durante la migrazione. In effetti, alcune modifiche possono essere generate da incompatibilità con la procedura di migrazione. Ad esempio, la creazione di visualizzazioni SQL contenenti campi **Timestamp** non è compatibile con l&#39;opzione **usetimestamptz**. Vi consigliamo pertanto di seguire le raccomandazioni seguenti:
+Se sono state apportate modifiche alla struttura del database, ad esempio durante la configurazione (creazione di indici specifici, creazione di viste SQL, ecc.), è necessario prendere alcune precauzioni durante la migrazione. In effetti, alcune modifiche possono essere generate da incompatibilità con la procedura di migrazione. Ad esempio, creazione di visualizzazioni SQL contenenti **Timestamp** i campi non sono compatibili con **usetimestamptz** opzione . Vi consigliamo pertanto di seguire le raccomandazioni seguenti:
 
 1. Prima di avviare la migrazione, esegui il backup del database.
 1. Elimina le modifiche SQL.
-1. Esegui l&#39;aggiornamento successivo in base alla procedura descritta nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+1. Esegui l’aggiornamento successivo in base alla procedura descritta nel  [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sezione .
    >[!NOTE]
    >
-   >È fondamentale seguire i passaggi di migrazione descritti nella sezione [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   >È fondamentale seguire i passaggi di migrazione descritti in [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sezione .
 1. Reintegrare le modifiche SQL.
 
-In questo esempio, è stata creata una visualizzazione **NmcTrackingLogMessages** con un campo **Timestamp** denominato **tslog**. In questo caso, la procedura di migrazione non riesce e viene visualizzato il seguente messaggio di errore:
+In questo esempio, un **NmcTrackingLogMessages** la visualizzazione è stata creata e presenta un **Timestamp** campo denominato **tslog**. In questo caso, la procedura di migrazione non riesce e viene visualizzato il seguente messaggio di errore:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ Per assicurarsi che il post aggiornamento funzioni, è necessario eliminare la v
 
 ## Tracciamento {#tracking}
 
-La formula di tracciamento è stata modificata. Durante la migrazione, la vecchia formula (v5) viene sostituita dalla nuova (v7). Se utilizzi una formula personalizzata in Adobe Campaign v5, questa configurazione deve essere adattata in Adobe Campaign v7 (**NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** ).
+La formula di tracciamento è stata modificata. Durante la migrazione, la vecchia formula (v5) viene sostituita dalla nuova (v7). Se utilizzi una formula personalizzata in Adobe Campaign v5, questa configurazione deve essere adattata in Adobe Campaign v7 (**NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** opzioni).
 
 È stata modificata anche la gestione del web tracking. Una volta effettuata la migrazione alla versione v7, devi avviare la procedura guidata di distribuzione per completare la configurazione del web tracking.
 
@@ -98,9 +98,9 @@ La formula di tracciamento è stata modificata. Durante la migrazione, la vecchi
 
 Sono disponibili tre modalità:
 
-* **Tracciamento** web della sessione: Se il  **[!UICONTROL Leads]** pacchetto non è stato installato, questa opzione è selezionata per impostazione predefinita. Questa opzione è la più ideale in termini di prestazioni e ti consente di limitare le dimensioni dei log di tracciamento.
+* **Tracciamento web della sessione**: Se la **[!UICONTROL Leads]** pacchetto non installato. Questa opzione è selezionata per impostazione predefinita. Questa opzione è la più ideale in termini di prestazioni e ti consente di limitare le dimensioni dei log di tracciamento.
 * **Tracciamento Web permanente**
-* **Tracciamento** Web anonimo: Se il  **[!UICONTROL Leads]** pacchetto è installato, questa opzione è selezionata per impostazione predefinita. È l’opzione che richiede più risorse. Come sopra, la colonna **sSourceId** deve essere indicizzata (nella tabella di tracciamento e nella tabella **CrmIncomingLead**).
+* **Tracciamento web anonimo**: Se la **[!UICONTROL Leads]** pacchetto installato, questa opzione è selezionata per impostazione predefinita. È l’opzione che richiede più risorse. Come sopra, **sSourceId** deve essere indicizzata (nella tabella di tracciamento e nella **CrmIncomingLead** tabella).
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Sono disponibili tre modalità:
 
 Durante la migrazione, la struttura ad albero viene riorganizzata automaticamente in base agli standard v7. Le nuove cartelle vengono aggiunte, le cartelle obsolete vengono eliminate e il loro contenuto viene inserito nella cartella &quot;Per spostare&quot;. Tutti gli elementi in questa cartella devono essere controllati dopo la migrazione e il consulente deve decidere di mantenerli o eliminarli. Gli oggetti da conservare devono quindi essere spostati nel posto giusto.
 
-È stata aggiunta un’opzione per disabilitare la migrazione automatica della struttura di navigazione. Questa operazione è ora manuale. Le cartelle obsolete non vengono eliminate e non vengono aggiunte nuove cartelle. Questa opzione deve essere utilizzata solo se la struttura di navigazione preconfigurata v5 è stata sottoposta a troppe modifiche. Aggiungi l’opzione alla console prima di eseguire la migrazione nel nodo **[!UICONTROL Administration > Options]** :
+È stata aggiunta un’opzione per disabilitare la migrazione automatica della struttura di navigazione. Questa operazione è ora manuale. Le cartelle obsolete non vengono eliminate e non vengono aggiunte nuove cartelle. Questa opzione deve essere utilizzata solo se la struttura di navigazione preconfigurata v5 è stata sottoposta a troppe modifiche. Aggiungi l’opzione alla console prima di eseguire la migrazione nella **[!UICONTROL Administration > Options]** nodo:
 
 * Nome interno: NlMigration_KeepFolderStructure
 * Tipo di dati: Intero
@@ -138,7 +138,7 @@ Dopo la migrazione è necessario aggiungere le seguenti cartelle:
 | nmsMRM | MRM | MRM installato |
 | nmsOperations | Campagne | Campaign installato |
 
-**Elenco delle cartelle** obsolete:
+**Elenco delle cartelle obsolete**:
 
 Le cartelle obsolete da eliminare dopo la migrazione sono le seguenti:
 

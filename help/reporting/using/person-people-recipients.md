@@ -27,7 +27,7 @@ Questo esempio ti aiuterà a comprendere la differenza tra una persona/a e un de
 
 >[!NOTE]
 >
->Questi indicatori vengono utilizzati nel rapporto **[!UICONTROL Tracking indicators]** . Per ulteriori informazioni, consulta [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Questi indicatori sono utilizzati nella **[!UICONTROL Tracking indicators]** rapporto. Per ulteriori informazioni, consulta [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 A una consegna vengono aggiunti tre collegamenti. Viene inviato a 4 destinatari:
 
@@ -110,7 +110,7 @@ I registri seguenti coincidono con i due clic aperti effettuati dalla persona a 
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Persone**: per quanto riguarda i clic, lo stesso identificatore (UUID) viene assegnato a tutti i log:  **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Viene quindi aggiunta una nuova persona al conteggio.
+**Persone**: per quanto riguarda i clic, lo stesso identificatore (UUID) viene assegnato a tutti i log: **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Viene quindi aggiunta una nuova persona al conteggio.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -147,7 +147,7 @@ I 4 clic aperti e quelli effettuati da Henry compaiono nei seguenti registri:
 | Florian | +1 | +1 | +1 |
 | Persona sconosciuta | - | +1 | - |
 | Henry | +1 | +4 | +1 |
-| Totale intermedio | 2 | 6 | 1 |
+| Totale intermedio | 2 | 6 | 3 |
 
 ## Riepilogo {#summary}
 
@@ -157,20 +157,20 @@ A livello di consegna, otteniamo i seguenti risultati:
 
 * **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su): 2
 * **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic su): 6
-* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 1
+* **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 3
 
 La reattività grezza e la stima dei contratti a termine sono calcolate come segue:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** =  **B - A**  (quindi 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** =  **A / C**  (quindi 2 / 3 = 66,67%)
+* **[!UICONTROL Estimation of forwards]** = **B - A** (quindi 6 - 2 = 4)
+* **[!UICONTROL Raw reactivity]** = **A/C** (quindi 2 / 3 = 66,67%)
 
 >[!NOTE]
 >
 >Nelle seguenti formule:
 >
->* Una rappresenta l’indicatore **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su di esso).
->* B rappresenta l’indicatore **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic su di esso).
->* C rappresenta l’indicatore **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto).
+>* A rappresenta **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su).
+>* B rappresenta **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic su).
+>* C rappresenta **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto).
 

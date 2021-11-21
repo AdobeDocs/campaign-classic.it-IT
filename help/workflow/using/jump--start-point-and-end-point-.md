@@ -31,4 +31,4 @@ Per ogni transizione di tipo &quot;punto iniziale&quot;, deve essere posizionata
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Consulta [Gestione delle immagini delle attività](managing-activity-images.md).
+Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Vedi [Gestione delle immagini delle attività](managing-activity-images.md).

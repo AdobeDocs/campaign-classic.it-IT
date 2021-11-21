@@ -31,11 +31,11 @@ Sono completati da parametri di sicurezza collegati alla modalità di connession
 
 * È possibile definire i gruppi di operatori a cui si attribuiscono i diritti, quindi associare gli operatori a uno o più gruppi. Questo consente di riutilizzare i diritti e di rendere i profili dell’operatore più coerenti. Inoltre, facilita la gestione e la manutenzione dei profili. La creazione e la gestione dei gruppi sono presentate in [questa sezione](access-management-groups.md).
 
-* Puoi attribuire i diritti denominati direttamente agli utenti, in alcuni casi per sovraccaricare i diritti assegnati tramite i gruppi. Questi diritti sono presentati in [questa pagina](access-management-named-rights.md).
+* Puoi attribuire i diritti denominati direttamente agli utenti, in alcuni casi per sovraccaricare i diritti assegnati tramite i gruppi. Tali diritti sono presentati in [questa pagina](access-management-named-rights.md).
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere la [Lista di controllo per la configurazione della protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+>Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere il [Lista di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
 
 Scopri come concedere l’accesso e impostare le autorizzazioni in queste sezioni:
 

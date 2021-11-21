@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Puoi estrarre i dati da una tabella di flusso di lavoro in un file esterno utilizzando l’attività **[!UICONTROL Data extraction (file)]** .
+Puoi estrarre dati da una tabella di un flusso di lavoro in un file esterno utilizzando **[!UICONTROL Data extraction (file)]** attività.
 
 >[!CAUTION]
 >
@@ -30,13 +30,13 @@ Per configurare l’estrazione dei dati, esegui i seguenti passaggi:
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   L’opzione **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** aggiunge un ulteriore passaggio per filtrare il risultato finale dell’aggregato, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte, ecc.
+   La **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** l’opzione aggiunge un passaggio aggiuntivo per filtrare il risultato finale dell’aggregato, ad esempio per un determinato tipo di ordine di acquisto, per i clienti che hanno ordinato più di 10 volte, ecc.
 
-1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio i risultati di elaborazione o elaborazione. A questo scopo, fai clic sull&#39;icona **[!UICONTROL Add]** .
+1. Se necessario, è possibile aggiungere nuove colonne al file di output, ad esempio i risultati di elaborazione o elaborazione. A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** icona.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   Nella riga aggiuntiva, fai clic sull’icona **[!UICONTROL Edit expression]** per definire il contenuto della nuova colonna.
+   Nella riga aggiuntiva, fai clic sul pulsante **[!UICONTROL Edit expression]** per definire il contenuto della nuova colonna.
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
@@ -48,7 +48,7 @@ Per configurare l’estrazione dei dati, esegui i seguenti passaggi:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-Puoi definire un post-processo da eseguire durante l’estrazione dei dati, consentendoti di comprimere o crittografare i file. A questo scopo, è necessario aggiungere il comando desiderato nella scheda **[!UICONTROL Script]** dell’attività.
+Puoi definire un post-processo da eseguire durante l’estrazione dei dati, consentendoti di comprimere o crittografare i file. A questo scopo, è necessario aggiungere il comando desiderato nel **[!UICONTROL Script]** scheda dell’attività.
 
 Per ulteriori informazioni, consulta questa sezione: [ZIP o cifratura di un file](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 

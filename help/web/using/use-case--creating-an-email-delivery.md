@@ -28,13 +28,13 @@ Il nostro obiettivo finale è quello di creare una consegna con un modello perso
 
 >[!NOTE]
 >
->Prima di iniziare, è necessario disporre di almeno un **modello HTML** configurato per ospitare il contenuto delle consegne future.
+>Prima di iniziare, devi averne almeno uno **Modello HTML** configurato per ospitare il contenuto delle consegne future.
 >
->Nella consegna **[!UICONTROL Properties]**, accertati che **[!UICONTROL Content editing mode]** (nella scheda **[!UICONTROL Advanced]** ) sia impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell&#39;editor, consulta le [best practice per la modifica dei contenuti](content-editing-best-practices.md).
+>Nella consegna **[!UICONTROL Properties]**, assicurati che **[!UICONTROL Content editing mode]** (in **[!UICONTROL Advanced]** è impostato su **[!UICONTROL DCE]**. Per garantire il funzionamento ottimale dell’editor, fai riferimento alla [Best practice per la modifica dei contenuti](content-editing-best-practices.md).
 
 ## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
 
-Per creare una nuova consegna, posiziona il cursore nella scheda **Campagne** e fai clic su **Consegne**. Fai clic sul pulsante **Crea** sopra l’elenco delle consegne esistenti. Per ulteriori informazioni sulla creazione delle consegne, consulta [questa pagina](../../delivery/using/about-email-channel.md).
+Per creare una nuova consegna, posiziona il cursore nel **Campagne** e fai clic su **Consegne**. Fai clic su **Crea** , sopra l’elenco delle consegne esistenti. Per ulteriori informazioni sulla creazione di consegne, consulta [questa pagina](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
@@ -60,7 +60,7 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
 >[!CAUTION]
 >
->Se utilizzi l&#39; **interfaccia Web Adobe Campaign**, devi importare un file .zip contenente il contenuto HTML e le immagini correlate.
+>Se utilizzi **Interfaccia web Adobe Campaign**, è necessario importare un file .zip contenente il contenuto di HTML e le immagini correlate.
 
 ## Passaggio 4: progettare il messaggio {#step-4---designing-the-message}
 
@@ -72,17 +72,17 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
 * Inserire un collegamento in un’immagine
 
-   Per portare i destinatari a un indirizzo esterno tramite un’immagine, fai clic sull’immagine corrispondente per visualizzare la barra degli strumenti a comparsa, posiziona il cursore sulla prima icona e fai clic su **[!UICONTROL Link to an external URL]**. Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
+   Per indirizzare i destinatari a un indirizzo esterno tramite un’immagine, fai clic sull’immagine corrispondente per visualizzare la barra degli strumenti a comparsa, posiziona il cursore sulla prima icona e fai clic su **[!UICONTROL Link to an external URL]**. Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
-   Immetti l&#39;URL del collegamento nel campo **URL** utilizzando il seguente formato **https://www.myURL.com**, quindi conferma.
+   Immetti l’URL del collegamento nel **URL** utilizzando il formato seguente **https://www.myURL.com**, quindi conferma.
 
    Il collegamento può essere modificato in qualsiasi momento utilizzando la sezione a destra della finestra.
 
 * Inserire un collegamento nel testo
 
-   Per integrare un collegamento esterno nel testo della consegna, seleziona un testo o un blocco di testo, quindi fai clic sulla prima icona nella barra degli strumenti a comparsa. Fai clic su **[!UICONTROL Link to an external URL]**, immetti l’indirizzo del collegamento nel campo **[!UICONTROL URL]** . Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
+   Per integrare un collegamento esterno nel testo della consegna, seleziona un testo o un blocco di testo, quindi fai clic sulla prima icona nella barra degli strumenti a comparsa. Fai clic su **[!UICONTROL Link to an external URL]**, inserisci l&#39;indirizzo del collegamento nel **[!UICONTROL URL]** campo . Per ulteriori informazioni, consulta [Aggiunta di un collegamento](editing-content.md#adding-a-link).
 
    Il collegamento può essere modificato in qualsiasi momento utilizzando la sezione a destra della finestra.
 
@@ -106,7 +106,7 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
    L’editor di contenuti digitali consente di integrare i collegamenti alle applicazioni Web dalla console Adobe Campaign, ad esempio una pagina di destinazione o una pagina del modulo. Per ulteriori informazioni, consulta [Collegamento a un&#39;applicazione Web](editing-content.md#link-to-a-web-application).
 
-   Selezionare un campo di testo per il collegamento a un&#39;applicazione Web, quindi fare clic sulla prima icona. Scegli **[!UICONTROL Link to a Web application]**, quindi seleziona l&#39;applicazione desiderata facendo clic sull&#39;icona alla fine del campo **Applicazione web**.
+   Selezionare un campo di testo per il collegamento a un&#39;applicazione Web, quindi fare clic sulla prima icona. Scegli **[!UICONTROL Link to a Web application]**, quindi seleziona l’applicazione desiderata facendo clic sull’icona alla fine del **Applicazione Web** campo .
 
    ![](assets/dce_webapp.png)
 
@@ -114,8 +114,8 @@ Puoi salvare il contenuto come modello da utilizzare in futuro. Una volta creato
 
    >[!NOTE]
    >
-   >Questo passaggio richiede di salvare almeno un&#39;applicazione Web in anticipo. Questi sono disponibili nella scheda **[!UICONTROL Campaigns > Web applications]** della console.
+   >Questo passaggio richiede di salvare almeno un&#39;applicazione Web in anticipo. Questi sono disponibili nella **[!UICONTROL Campaigns > Web applications]** della console.
 
 ## Passaggio 5 - Salvataggio della consegna {#step-5---saving-the-delivery}
 
-Una volta integrato il contenuto, salva la consegna facendo clic su **Salva**. Ora verrà visualizzato nell’elenco delle consegne, disponibile nella scheda **[!UICONTROL Campaigns > Deliveries]** .
+Una volta integrato il contenuto, salva la consegna facendo clic su **Salva**. Ora verrà visualizzato nell’elenco delle consegne, disponibile nella sezione **[!UICONTROL Campaigns > Deliveries]** scheda .

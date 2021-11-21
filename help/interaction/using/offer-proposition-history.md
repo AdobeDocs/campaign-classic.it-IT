@@ -23,14 +23,14 @@ Una volta effettuate le proposte di offerta, puoi visualizzare la cronologia del
 >
 >Questa funzionalità è visibile solo online e solo per il gestore consegne.
 
-* A livello di offerta, nella scheda **[!UICONTROL Edit]** fai clic su **[!UICONTROL Propositions]**.
+* A livello di offerta, nella **[!UICONTROL Edit]** scheda , fai clic su **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* Dal profilo di un destinatario, fai clic sulla scheda **[!UICONTROL Propositions]** .
+* Dal profilo di un destinatario, fai clic sul pulsante **[!UICONTROL Propositions]** scheda .
 
    ![](assets/offer_followup_002.png)
 
-* A livello di spazio di offerta, fai clic sulla scheda **[!UICONTROL Propositions]** .
+* A livello di spazio di offerta, fai clic sul pulsante **[!UICONTROL Propositions]** scheda .
 
    ![](assets/offer_space_prop_001_b.png)

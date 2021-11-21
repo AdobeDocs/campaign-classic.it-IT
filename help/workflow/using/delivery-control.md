@@ -17,13 +17,13 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-Un&#39;azione di tipo **Controllo consegna** consente di avviare, mettere in pausa o interrompere una consegna.
+A **Controllo della consegna** L’azione -type ti consente di avviare, mettere in pausa o interrompere una consegna.
 
 Può trattarsi della consegna specificata nella transizione, di una consegna selezionata esplicitamente o di una consegna calcolata da uno script. Per ulteriori informazioni, consulta [Consegna](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-Se selezioni **[!UICONTROL Start]**, l’attività eseguirà tutti i passaggi necessari per avviare la consegna (calcolo di destinazione, preparazione dei contenuti, consegna). Se alcuni di questi passaggi sono già stati eseguiti da un’attività di flusso di lavoro precedente, non verranno eseguiti di nuovo. Ad esempio, se la stima del target è già stata eseguita da un’attività di tipo **[!UICONTROL Delivery]** (consulta [Consegna](delivery.md)), l’attività **[!UICONTROL Act on the delivery]** avvierà i passaggi rimanenti (preparazione e consegna dei contenuti).
+Se si seleziona **[!UICONTROL Start]**, l’attività eseguirà tutti i passaggi necessari per avviare la consegna (calcolo del target, preparazione dei contenuti, consegna). Se alcuni di questi passaggi sono già stati eseguiti da un’attività di flusso di lavoro precedente, non verranno eseguiti di nuovo. Ad esempio, se la stima del target è già stata eseguita da un **[!UICONTROL Delivery]** attività del tipo (fare riferimento a [Consegna](delivery.md)), **[!UICONTROL Act on the delivery]** l’attività avvia i passaggi rimanenti (preparazione e distribuzione dei contenuti).
 
 Sono disponibili le seguenti opzioni:
 
@@ -33,10 +33,10 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Processing errors]**
 
-   Fare riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
+   Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ## Parametri di input {#input-parameters}
 
 * deliveryId
 
-Identificatore di consegna, se l&#39;azione selezionata è **[!UICONTROL Specified in the transition]**.
+Identificatore di consegna, se l’azione selezionata è **[!UICONTROL Specified in the transition]**.

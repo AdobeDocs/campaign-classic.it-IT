@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Puoi utilizzare l’attività **[!UICONTROL Fork]** per creare più transizioni in uscita ed eseguire diverse attività in modo indipendente all’interno dello stesso flusso di lavoro.
+È possibile utilizzare **[!UICONTROL Fork]** per creare più transizioni in uscita ed eseguire diverse attività in modo indipendente all’interno dello stesso flusso di lavoro.
 
 >[!IMPORTANT]
 >
->Le transizioni in uscita aggiunte dopo un’attività **[!UICONTROL Fork]** non vengono eseguite simultaneamente. Questo comportamento può influire sulle prestazioni del flusso di lavoro. Utilizza l’attività **[!UICONTROL Fork]** se devi eseguire diverse attività in modo indipendente. Facoltativamente, puoi unire le attività in uscita prima della parte successiva del flusso di lavoro.
+>Le transizioni in uscita aggiunte dopo un **[!UICONTROL Fork]** l’attività non viene eseguita simultaneamente. Questo comportamento può influire sulle prestazioni del flusso di lavoro. Utilizza la **[!UICONTROL Fork]** se devi eseguire diverse attività in modo indipendente. Facoltativamente, puoi unire le attività in uscita prima della parte successiva del flusso di lavoro.
 
-Per configurare un’attività **[!UICONTROL Fork]** e le relative attività, effettua le seguenti operazioni:
+Per configurare un **[!UICONTROL Fork]** attività e relative attività, segui questi passaggi:
 
-1. Apri l’attività **[!UICONTROL Fork]** e definisci il nome e l’etichetta delle transizioni in uscita.
+1. Apri **[!UICONTROL Fork]** e definisci il nome e l’etichetta delle transizioni in uscita.
 
    ![](assets/s_user_segmentation_fork.png)
 
@@ -36,7 +36,7 @@ Per configurare un’attività **[!UICONTROL Fork]** e le relative attività, ef
 
 ## Esempio: segmentazione
 
-In questo esempio, vengono inviate e-mail diverse a diversi gruppi di popolazione. Un’attività **[!UICONTROL Fork]** viene utilizzata dopo una query per eseguire due azioni in parallelo:
+In questo esempio, vengono inviate e-mail diverse a diversi gruppi di popolazione. A **[!UICONTROL Fork]** l’attività viene utilizzata dopo una query per eseguire due azioni in parallelo:
 
 * Salva il risultato della query
 * Segmenta il risultato per inviare più consegne
@@ -66,17 +66,17 @@ Il flusso di lavoro comprende le seguenti attività:
 
 ## Caso di utilizzo: invia un’e-mail di compleanno
 
-Un’e-mail ricorrente viene inviata a un elenco di destinatari al momento del loro compleanno. Un’attività **[!UICONTROL Fork]** viene utilizzata per includere i destinatari nati il 29 febbraio un anno bisestile. [Ulteriori ](sending-a-birthday-email.md) informazioni su questo caso d’uso.
+Un’e-mail ricorrente viene inviata a un elenco di destinatari al momento del loro compleanno. A **[!UICONTROL Fork]** L’attività viene utilizzata per includere i destinatari nati il 29 febbraio in un anno bisestile. [Ulteriori informazioni](sending-a-birthday-email.md) informazioni su questo caso d’uso.
 
 ![L’attività fork segue un’attività di test e precede due attività di query.](assets/birthday-workflow_usecase_1.png)
 
 ## Caso di utilizzo: automatizzare il contenuto con un flusso di lavoro
 
-La creazione e la consegna di un blocco di contenuto è automatizzata. Un’attività **[!UICONTROL Fork]** viene utilizzata per calcolare il target e, in parallelo, per creare il contenuto. [Ulteriori ](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) informazioni su questo caso d’uso.
+La creazione e la consegna di un blocco di contenuto è automatizzata. A **[!UICONTROL Fork]** viene utilizzata per calcolare il target e, in parallelo, per creare il contenuto. [Ulteriori informazioni](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) informazioni su questo caso d’uso.
 
 ![L’attività Fork segue un’attività di consegna e precede un’attività Query e un’attività di gestione dei contenuti, entrambe collegate tramite un’attività AND-join.](../../delivery/using/assets/d_ncs_content_workflow10.png)
 
-Puoi quindi configurare ogni transizione in uscita, quindi unirle utilizzando un&#39;attività [AND-join](and-join.md) , se necessario. In questo modo, il resto del flusso di lavoro verrà eseguito solo una volta completate le transizioni in uscita dell’attività **[!UICONTROL Fork]**.
+Puoi quindi configurare ogni transizione in uscita e unirle utilizzando un’ [AND-join](and-join.md) , se necessario. In questo modo, il resto del flusso di lavoro viene eseguito solo una volta che il **[!UICONTROL Fork]** le transizioni in uscita dell’attività sono completate.
 
 ## Argomenti correlati
 

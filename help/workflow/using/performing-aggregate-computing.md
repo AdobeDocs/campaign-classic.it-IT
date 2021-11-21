@@ -21,7 +21,7 @@ In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra
 
 * Quale tabella deve essere selezionata?
 
-   Tabella dei destinatari (**nms:recipient**)
+   La tabella dei destinatari (**nms:recipient**)
 
 * Quali campi devono essere selezionati nella colonna di output?
 
@@ -33,11 +33,11 @@ In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra
 
 Per creare questo esempio, esegui i seguenti passaggi:
 
-1. In **[!UICONTROL Data to extract]**, definisci un conteggio per la chiave primaria (come mostrato nell’esempio precedente). Aggiungi il campo **[!UICONTROL Gender]** nella colonna di output. Seleziona l’opzione **[!UICONTROL Group]** nella colonna **[!UICONTROL Gender]** . In questo modo i destinatari saranno raggruppati per genere.
+1. In **[!UICONTROL Data to extract]**, definisci un conteggio per la chiave primaria (come mostrato nell’esempio precedente). Aggiungi il **[!UICONTROL Gender]** nella colonna di output. Controlla la **[!UICONTROL Group]** in **[!UICONTROL Gender]** colonna. In questo modo i destinatari saranno raggruppati per genere.
 
    ![](assets/query_editor_nveau_27.png)
 
-1. Nella finestra **[!UICONTROL Sorting]**, fai clic su **[!UICONTROL Next]**: qui non è necessaria alcuna selezione.
+1. In **[!UICONTROL Sorting]** finestra, fai clic su **[!UICONTROL Next]**: qui non è necessaria alcuna selezione.
 1. Configura il filtro dati. Qui, si desidera limitare la selezione ai contatti che vivono a Londra.
 
    ![](assets/query_editor_22.png)
@@ -46,7 +46,7 @@ Per creare questo esempio, esegui i seguenti passaggi:
    >
    >I valori sono sensibili all’uso di maiuscole e minuscole. Se il valore &quot;Londra&quot; è inserito nella condizione senza lettera maiuscola e l’elenco dei destinatari contiene la parola &quot;Londra&quot; con una lettera maiuscola, la query non riuscirà.
 
-1. Nella finestra **[!UICONTROL Data formatting]**, fai clic su **[!UICONTROL Next]**: per questo esempio non è necessaria alcuna formattazione.
+1. In **[!UICONTROL Data formatting]** finestra, fai clic su **[!UICONTROL Next]**: per questo esempio non è necessaria alcuna formattazione.
 1. Nella finestra di anteprima, fai clic su **[!UICONTROL Launch data preview]**.
 
    Ci sono tre valori distinti per ogni tipo di genere: **2** per le donne, **1** per i maschi e **0** quando il genere è sconosciuto. In questo esempio, l&#39;elenco contiene 10 donne, 16 uomini e 2 persone il cui genere non è conosciuto.

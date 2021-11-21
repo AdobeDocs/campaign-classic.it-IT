@@ -27,14 +27,14 @@ Questi dati possono essere filtrati tramite le opzioni che si trovano nella sezi
 
 Esistono diversi modi per filtrare i dati da visualizzare. Se necessario, possono essere utilizzati insieme:
 
-* Filtrare le cartelle, fare riferimento a [Filtrare per cartella](#filter-by-folder),
-* Filtrare per stato, fare riferimento a [Filtrare per stato](#filter-by-status),
-* Ordinamento dei dati, fare riferimento a [Ordine per](#order-by),
+* Filtrare le cartelle, fai riferimento a [Filtra per cartella](#filter-by-folder),
+* Filtra per stato, fai riferimento a [Filtra per stato](#filter-by-status),
+* Ordinamento dei dati, fai riferimento a [Ordina per](#order-by),
 * Cerca, fai riferimento a [Ricerca rapida](#quick-search).
 
 ## Filtra per cartella {#filter-by-folder}
 
-Fai clic sull’icona **[!UICONTROL Folder]** per selezionare la cartella contenente i dati da visualizzare.
+Fai clic sul pulsante **[!UICONTROL Folder]** per selezionare la cartella contenente i dati da visualizzare.
 
 ![](assets/filter_web_select_folder.png)
 

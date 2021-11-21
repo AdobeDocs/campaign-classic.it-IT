@@ -17,12 +17,12 @@ ht-degree: 2%
 
 ![](../../assets/v7-only.svg)
 
-Social Marketing consente di inviare consegne alle varie pagine Facebook e account Twitter anziché ai profili dei destinatari. Su Facebook, i contenuti di consegna vengono visualizzati sotto forma di pubblicazioni sulle pareti della pagina e saranno visualizzati anche nel feed di notizie di tutti gli appassionati di pagina. Su Twitter, il contenuto della consegna viene visualizzato come tweet e apparirà sulla home page dei follower dell’account. Puoi anche inviare messaggi diretti ai follower dell’account che raccogli.
+Social Marketing consente di inviare consegne alle varie pagine Facebook e account Twitter anziché ai profili dei destinatari. Su Facebook, il contenuto della consegna viene visualizzato sotto forma di pubblicazioni sulle pareti della pagina e apparirà anche nel feed di notizie di tutti i fan della pagina. Su Twitter, il contenuto della consegna viene visualizzato come tweet e apparirà sulla home page dei follower dell’account. Puoi anche inviare messaggi diretti ai follower dell’account che raccogli.
 
 >[!IMPORTANT]
 >
 >Adobe Campaign chiede all’utente di rispettare i termini di servizio comunicati da Facebook e Twitter per quanto riguarda la consegna dei messaggi.
 >
->Prima di inviare pubblicazioni, è necessario attenersi ai passaggi di configurazione descritti in [Avvio dei flussi di lavoro](../../social/using/starting-workflows.md).
+>Prima di inviare pubblicazioni, devi eseguire i passaggi di configurazione descritti in [Avvio dei flussi di lavoro](../../social/using/starting-workflows.md).
 
 Questa sezione descrive gli elementi specifici di una consegna Facebook e Twitter. Tutti gli elementi identici alle consegne e-mail sono descritti in [questa sezione](../../delivery/using/about-email-channel.md).

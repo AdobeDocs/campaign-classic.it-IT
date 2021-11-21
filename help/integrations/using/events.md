@@ -30,13 +30,13 @@ Poiché la modifica del codice Javascript richiede competenze tecniche, non tent
 
 La pipeline utilizza una funzione JavaScript per elaborare ogni messaggio. Questa funzione è definita dall&#39;utente.
 
-È configurato nell&#39;opzione **[!UICONTROL NmsPipeline_Config]** sotto l&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento . Viene eseguito dal processo [!DNL pipelined].
+È configurato nella **[!UICONTROL NmsPipeline_Config]** sotto l&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento . È gestito dalla [!DNL pipelined] processo.
 
 Il file Javascript di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
-Il codice JavaScript [!DNL pipelined] deve iniziare con una funzione specifica.
+La [!DNL pipelined] Javascript deve iniziare con una funzione specifica.
 
 Questa funzione viene chiamata una volta per ogni evento:
 
@@ -54,10 +54,10 @@ Riavvia [!DNL pipelined] dopo aver modificato il codice JavaScript.
 
 ### Formato dati del trigger {#trigger-format}
 
-I dati [!DNL trigger] vengono passati alla funzione JS in formato XML.
+La [!DNL trigger] i dati vengono passati alla funzione JS in formato XML.
 
-* L&#39;attributo **[!UICONTROL @triggerId]** contiene il nome dell&#39; [!DNL trigger].
-* L’elemento **Arricchimenti** in formato JSON contiene i dati generati da Adobe Analytics e viene allegato al trigger.
+* La **[!UICONTROL @triggerId]** l&#39;attributo contiene il nome dell&#39; [!DNL trigger].
+* La **arricchimenti** nel formato JSON contiene i dati generati da Adobe Analytics ed è associato al trigger.
 * **[!UICONTROL @offset]** è il &quot;puntatore&quot; del messaggio. Indica l’ordine del messaggio all’interno della coda.
 * **[!UICONTROL @partition]** è un contenitore di messaggi all’interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni nella coda.
 
@@ -109,20 +109,20 @@ Esempio:
 
 ### Ordine di elaborazione degli eventi{#order-events}
 
-Gli eventi vengono elaborati uno alla volta, in base all’ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
+Gli eventi vengono elaborati uno alla volta, in base all’ordine di offset. Ogni thread del [!DNL pipelined] elabora una partizione diversa.
 
 L’&quot;offset&quot; dell’ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema incorporato xtk:pipelineOffset.
 
 Questo puntatore è specifico per ogni istanza e per ogni consumatore. Pertanto, quando molte istanze accedono alla stessa pipeline con consumatori diversi, ricevono tutti i messaggi e nello stesso ordine.
 
-Il parametro **consumer** dell’opzione pipeline identifica l’istanza chiamante.
+La **consumer** Il parametro dell’opzione pipeline identifica l’istanza chiamante.
 
 Attualmente, non è possibile avere code diverse per ambienti separati come &quot;staging&quot; o &quot;dev&quot;.
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al registro [!DNL pipelined]. Errori come logError() vengono scritti nel registro [!DNL pipelined] e fanno sì che l&#39;evento venga messo in una coda di nuovi tentativi. In questo caso, è necessario controllare il registro pipeline.
-I messaggi di errore vengono ritentati più volte nella durata impostata nelle opzioni [!DNL pipelined] .
+I registri come logInfo() sono indirizzati al [!DNL pipelined] registro. Gli errori come logError() vengono scritti nel [!DNL pipelined] registra e fa sì che l’evento venga inserito in una coda di nuovi tentativi. In questo caso, è necessario controllare il registro pipeline.
+I messaggi di errore vengono riprovati più volte nella durata impostata nel [!DNL pipelined] opzioni.
 
 A scopo di debug e monitoraggio, i dati del trigger completo vengono scritti nella tabella dell’attivatore nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati del trigger ha lo stesso scopo.
 
@@ -217,7 +217,7 @@ Gli eventi possono essere visualizzati con un modulo semplice basato sullo schem
 
 >[!NOTE]
 >
->Il nodo Evento pipeline non è incorporato e deve essere aggiunto, nonché il relativo modulo deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta queste sezioni: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica di moduli](../../configuration/using/editing-forms.md).
+>Il nodo Evento pipeline non è incorporato e deve essere aggiunto, nonché il relativo modulo deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta queste sezioni: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica dei moduli](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

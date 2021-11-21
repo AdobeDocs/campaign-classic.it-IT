@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Utilizza l’opzione Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Per configurare l’accesso a SAP HANA, effettua le seguenti operazioni.
+Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) opzione per elaborare le informazioni memorizzate in database esterni. Per configurare l’accesso a SAP HANA, effettua le seguenti operazioni.
 
 1. Configura [database SAP HANA](#sap-config)
 1. Configurare SAP HANA [account esterno](#sap-external) in Campaign
@@ -28,8 +28,8 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
 
 1. Installare i driver ODBC per SAP HANA in base al sistema operativo utilizzato:
 
-   * **hdb_client_linux.** tgzfor Linux. Una volta decompresso, avviare il comando hdbinst e seguire le istruzioni per completare l&#39;installazione dei driver.
-   * **hdb_client_windows.** zipfor Windows. Decomprimi il file e avvia l&#39;eseguibile: **hdbinst.exe**. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
+   * **hdb_client_linux.tgz** per Linux. Una volta decompresso, avviare il comando hdbinst e seguire le istruzioni per completare l&#39;installazione dei driver.
+   * **hdb_client_windows.zip** per Windows. Decomprimi il file e avvia l&#39;eseguibile: **hdbinst.exe**. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
 
 1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: /etc/odbc.ini per i parametri generali e /etc/odbcinst.ini per la dichiarazione dei driver.
 
@@ -45,7 +45,7 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
       User:SYSTEM
       ```
 
-      &quot;InstallDir&quot; corrisponde alla posizione del file **odbcinst.ini**.
+      &quot;InstallDir&quot; corrisponde alla posizione del **odbcinst.ini** file.
 
    * **/etc/odbcinst.ini**
 
@@ -64,11 +64,11 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
 
 L’account esterno di SAP HANA ti consente di collegare l’istanza Campaign al database esterno di SAP HANA.
 
-1. Dalla campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
-1. Per configurare l’account esterno **[!UICONTROL SAP Hana]**, devi specificare:
+1. Per configurare le **[!UICONTROL SAP Hana]** account esterno, devi specificare:
 
    * **[!UICONTROL Type]**: SAP Hana
 

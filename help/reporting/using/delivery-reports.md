@@ -19,30 +19,30 @@ ht-degree: 2%
 
 Puoi tracciare l’esecuzione delle consegne tramite vari rapporti accessibili dalla panoramica della consegna. Per visualizzare i rapporti, attenersi alla seguente procedura:
 
-1. Vai alla scheda **[!UICONTROL Campaigns]** e fai clic sul collegamento **[!UICONTROL Delivery]** per visualizzare l’elenco delle consegne.
+1. Vai a **[!UICONTROL Campaigns]** e fai clic su **[!UICONTROL Delivery]** per visualizzare l’elenco delle consegne.
 1. Fai clic sul nome della consegna da visualizzare per visualizzarne i dettagli.
 
    ![](assets/s_ncs_user_detailled_report.png)
 
-1. Seleziona la scheda **[!UICONTROL Summary]** e fai clic sul collegamento **[!UICONTROL Reports]** per accedere ai rapporti specifici della consegna.
+1. Seleziona la **[!UICONTROL Summary]** e fai clic su **[!UICONTROL Reports]** per accedere ai rapporti specifici della consegna.
 
    ![](assets/s_ncs_user_detailled_report2.png)
 
    Per impostazione predefinita sono disponibili i seguenti rapporti:
 
-   * **[!UICONTROL Delivery throughput]** : fai riferimento a  [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : fare riferimento a  [Condivisione su social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : fare riferimento a  [Statistiche sulle attività di condivisione](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
-   * **[!UICONTROL Hot clicks]** : fare riferimento a  [Hot click](#hot-clicks).
-   * **[!UICONTROL Tracking statistics]** : fai riferimento alle statistiche  [di tracciamento](#tracking-statistics)
-   * **[!UICONTROL URLs and click streams]** : fai riferimento agli  [URL e ai flussi di clic](#urls-and-click-streams).
-   * **[!UICONTROL Tracking indicators]** : fai riferimento agli indicatori  [di tracciamento](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a  [Non-deliverables e rimbalzi](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : consulta Attività  [utente](../../reporting/using/global-reports.md#user-activities).
-   * **[!UICONTROL Delivery summary]** : consulta  [Riepilogo consegne](#delivery-summary).
-   * **[!UICONTROL Subscription tracking]** : consulta  [Tracciamento sottoscrizione](../../reporting/using/global-reports.md#subscription-tracking).
-   * **[!UICONTROL Delivery statistics]** : consulta Statistiche di  [consegna](../../reporting/using/global-reports.md#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : consulta  [Suddivisione delle aperture](../../reporting/using/global-reports.md#breakdown-of-opens).
+   * **[!UICONTROL Delivery throughput]** : fare riferimento a [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Sharing to social networks]** : fare riferimento a [Condivisione sui social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistics on sharing activities]** : fare riferimento a [Statistiche sulle attività di condivisione](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
+   * **[!UICONTROL Hot clicks]** : fare riferimento a [Hot click](#hot-clicks).
+   * **[!UICONTROL Tracking statistics]** : fare riferimento a [Tracking delle statistiche](#tracking-statistics)
+   * **[!UICONTROL URLs and click streams]** : fare riferimento a [URL e flussi di clic](#urls-and-click-streams).
+   * **[!UICONTROL Tracking indicators]** : fare riferimento a [Indicatori di tracciamento](#tracking-indicators).
+   * **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a [Non recapitati e mancati recapiti](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL User activities]** : fare riferimento a [Attività utente](../../reporting/using/global-reports.md#user-activities).
+   * **[!UICONTROL Delivery summary]** : fare riferimento a [Riepilogo consegne](#delivery-summary).
+   * **[!UICONTROL Subscription tracking]** : fare riferimento a [Tracciamento sottoscrizione](../../reporting/using/global-reports.md#subscription-tracking).
+   * **[!UICONTROL Delivery statistics]** : fare riferimento a [Statistiche di consegna](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Breakdown of opens]** : fare riferimento a [Suddivisione delle aperture](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Indicatori di tracciamento {#tracking-indicators}
 
@@ -50,7 +50,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 
 >[!NOTE]
 >
->I valori calcolati in base all’apertura dei messaggi sono sempre stime, a causa del margine di errore collegato alle e-mail in formato testo. Gli indicatori **[!UICONTROL Distinct opens/Sum of opens for the population reached]** tengono conto di questo margine di errore. Per ulteriori informazioni sulle aperture di tracciamento, consulta [Aperture di tracciamento](../../reporting/using/indicator-calculation.md#tracking-opens-).
+>I valori calcolati in base all’apertura dei messaggi sono sempre stime, a causa del margine di errore collegato alle e-mail in formato testo. La **[!UICONTROL Distinct opens/Sum of opens for the population reached]** Gli indicatori tengono conto di questo margine di errore. Per ulteriori informazioni sulle aperture di tracciamento, consulta [Aperture di tracciamento](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
@@ -68,12 +68,12 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 * **[!UICONTROL Distinct opens for the population reached]** : Stima del numero di destinatari con cui è stato aperto un messaggio almeno una volta. Vengono presi in considerazione i clic sui collegamenti di annullamento all’abbonamento e sulle pagine mirror.
 * **[!UICONTROL Sum of opens for the population reached]** : Stima del numero totale di aperture per destinatari con targeting.
 * **[!UICONTROL Clicks on opt-out link]** : Numero di clic sul collegamento di annullamento dell’abbonamento.
-* **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina speculare. Per essere preso in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fai riferimento a questa [pagina](../../delivery/using/about-delivery-monitoring.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina speculare. Per essere preso in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fai riferimento a questo [page](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nell’e-mail.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari di destinazione, consulta [Persone/destinatari di destinazione](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
+   >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari target, consulta [Persone/destinatari interessati](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -87,7 +87,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere domini predefiniti, modifica l’ elenco dettagliato **[!UICONTROL Domains]** e modifica valori e alias. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/managing-enumerations.md). La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell’elenco dettagliato.
+>I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere domini predefiniti, modifica il **[!UICONTROL Domains]** elenco dettagliato e modifica valori e alias. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/managing-enumerations.md). La **[!UICONTROL Others]** La categoria include i nomi di dominio che non appartengono ad alcun valore dell’elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -116,7 +116,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
-Questa sezione mostra il numero di messaggi condivisi su ogni social network. Per ulteriori informazioni, consulta [Condivisione su social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
+Questa sezione mostra il numero di messaggi condivisi su ogni social network. Per ulteriori informazioni, consulta [Condivisione sui social network](../../reporting/using/global-reports.md#sharing-to-social-networks).
 
 ## URL e flussi di clic {#urls-and-click-streams}
 
@@ -159,7 +159,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione presenta due indicatori:
 
 * **[!UICONTROL Initial population]** : Numero totale di destinatari interessati dalla consegna.
-* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l’analisi durante l’applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, al elenco Bloccati, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Numero di indirizzi ignorati durante l’analisi durante l’applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, al elenco Bloccati, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta questo [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Causes of exclusion]**
 

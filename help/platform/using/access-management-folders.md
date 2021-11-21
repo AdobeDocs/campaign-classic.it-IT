@@ -23,11 +23,11 @@ A ogni cartella della struttura di navigazione di Esplora risorse sono associati
 
 ### Cartella {#about-folders}
 
-Le cartelle sono nodi nella struttura di Adobe Campaign. Per creare questi nodi, fai clic con il pulsante destro del mouse sulla struttura tramite il menu **[!UICONTROL Add new folder]** . Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
+Le cartelle sono nodi nella struttura di Adobe Campaign. Questi nodi vengono creati facendo clic con il pulsante destro del mouse sulla struttura tramite il **[!UICONTROL Add new folder]** menu. Per impostazione predefinita, il primo menu consente di aggiungere la cartella corrispondente al contesto corrente.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-È possibile personalizzare la struttura di navigazione di Esplora risorse. Scopri i passaggi di configurazione e le best practice [in questa sezione](adobe-campaign-workspace.md).
+È possibile personalizzare la struttura di navigazione di Esplora risorse. Informazioni sui passaggi di configurazione e sulle best practice [in questa sezione](adobe-campaign-workspace.md).
 
 ### Visualizzazione {#about-views}
 
@@ -51,7 +51,7 @@ Per distinguere le visualizzazioni dalle cartelle, il nome di ciascuna visualizz
 
 Nell’esempio seguente, creeremo nuove cartelle per visualizzare dati specifici:
 
-1. Creare una nuova cartella di tipo **[!UICONTROL Deliveries]** e denominarla **Consegne France**.
+1. Crea un nuovo **[!UICONTROL Deliveries]** digitare la cartella e denominarla **Consegne Francia**.
 1. Fai clic con il pulsante destro del mouse su questa cartella e seleziona **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
@@ -64,7 +64,7 @@ Nell’esempio seguente, creeremo nuove cartelle per visualizzare dati specifici
 
    >[!NOTE]
    >
-   >L&#39;editor delle query è presentato in [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   >L’editor delle query è presentato in [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
    Con le seguenti condizioni di filtro:
 
@@ -76,7 +76,7 @@ Nella visualizzazione verranno visualizzate le seguenti consegne:
 
 >[!NOTE]
 >
->Quando gestisci eventi [messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come visualizzazioni sulle istanze di esecuzione, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](../../message-center/using/about-event-processing.md#event-collection).
+>Durante la gestione [messaggistica transazionale](../../message-center/using/about-transactional-messaging.md) eventi, **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** le cartelle non devono essere impostate come visualizzazioni sulle istanze di esecuzione, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](../../message-center/using/about-event-processing.md#event-collection).
 
 ## Autorizzazioni in una cartella
 
@@ -88,7 +88,7 @@ Per modificare le autorizzazioni su una cartella specifica della struttura, segu
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Security]** per visualizzare le autorizzazioni in questa cartella.
+1. Fai clic sul pulsante **[!UICONTROL Security]** per visualizzare le autorizzazioni in questa cartella.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -100,15 +100,15 @@ Per modificare le autorizzazioni, puoi:
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Autorizzare un gruppo o un operatore**. A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e seleziona il gruppo o l’operatore a cui desideri assegnare le autorizzazioni per questa cartella.
-* **Vietare un gruppo o un operatore**. A questo scopo, fai clic su **[!UICONTROL Delete]** e seleziona il gruppo o l’operatore da cui vuoi rimuovere l’autorizzazione per questa cartella.
-* **Seleziona i diritti assegnati a un gruppo o a un operatore**. A questo scopo, fai clic sul gruppo o sull’operatore interessato, quindi seleziona i diritti di accesso che desideri concedere e deseleziona gli altri.
+* **Autorizzare un gruppo o un operatore**. A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e selezionare il gruppo o l&#39;operatore a cui si desidera assegnare le autorizzazioni per questa cartella.
+* **Vietare un gruppo o un operatore**. A questo scopo, fai clic su **[!UICONTROL Delete]** e selezionare il gruppo o l&#39;operatore da cui si desidera rimuovere l&#39;autorizzazione per questa cartella.
+* **Selezionare i diritti assegnati a un gruppo o a un operatore**. A questo scopo, fai clic sul gruppo o sull’operatore interessato, quindi seleziona i diritti di accesso che desideri concedere e deseleziona gli altri.
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Propagare le autorizzazioni {#propagate-permissions}
 
-Puoi propagare le autorizzazioni e i diritti di accesso. A questo scopo, seleziona l’opzione **[!UICONTROL Propagate]** nelle proprietà della cartella.
+Puoi propagare le autorizzazioni e i diritti di accesso. A questo scopo, seleziona la **[!UICONTROL Propagate]** nelle proprietà della cartella.
 
 Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte le sottocartelle del nodo corrente. Puoi quindi sovraccaricare queste autorizzazioni per ciascuna sottocartella.
 
@@ -118,6 +118,6 @@ Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte 
 
 ### Concedere l’accesso a tutti gli operatori {#grant-access-to-all-operators}
 
-Nella scheda **[!UICONTROL Security]** , se è selezionata l’opzione **[!UICONTROL System folder]** , tutti gli operatori avranno accesso a tali dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, devi aggiungere esplicitamente l’operatore (o il loro gruppo) all’elenco delle autorizzazioni per consentire loro l’accesso.
+In **[!UICONTROL Security]** se **[!UICONTROL System folder]** è selezionata l’opzione , tutti gli operatori avranno accesso a questi dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, devi aggiungere esplicitamente l’operatore (o il loro gruppo) all’elenco delle autorizzazioni per consentire loro l’accesso.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)

@@ -8,7 +8,7 @@ exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -30,11 +30,11 @@ Per esportare i dati da Campaign Classic nel percorso di archiviazione S3 o Azur
 
 A questo scopo, aggiungi e configura:
 
-* Un’attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction--file-.md).
+* Un **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction--file-.md).
 
    ![](assets/rtcdp-extract-file.png)
 
-* Un’attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/file-transfer.md).
+* A **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/file-transfer.md).
 
    ![](assets/rtcdp-file-transfer.png)
 
@@ -44,9 +44,9 @@ Ad esempio, il flusso di lavoro seguente estrae regolarmente i registri in un fi
 
 ## Collegare la posizione di archiviazione come origine
 
-Di seguito sono elencati i passaggi principali per collegare il percorso di archiviazione BLOB S3 o Azure come **Origine** in Adobe experience Platform. Informazioni dettagliate su ciascuno di questi passaggi sono disponibili nella documentazione [Connettori sorgente](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html).
+I passaggi principali per collegare la posizione di archiviazione BLOB S3 o Azure come **Origine** in Adobe experience Platform sono elencati di seguito. Informazioni dettagliate su ciascuno di questi passaggi sono disponibili nella sezione [Documentazione dei connettori di origine](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
 
-1. Nel menu Adobe Experience Platform **[!UICONTROL Sources]** , crea una connessione al percorso di archiviazione:
+1. In Adobe Experience Platform **[!UICONTROL Sources]** creare una connessione al percorso di archiviazione:
 
    * [Creare una connessione sorgente Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)

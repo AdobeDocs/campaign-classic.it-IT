@@ -17,6 +17,6 @@ ht-degree: 27%
 
 ![](../../assets/common.svg)
 
-Un&#39;attività **modulo nlserver** avvia un modulo nlserver con i parametri specificati nella finestra centrale.
+Un **modulo nlserver** l’attività avvia un modulo nlserver con i parametri specificati nella finestra centrale.
 
 ![](assets/nlserver_module_edit.png)

@@ -19,14 +19,14 @@ ht-degree: 4%
 
 Social Marketing fornisce rapporti che ti consentono di misurare il tasso di reattività delle consegne di Facebook e Twitter e di analizzare l’acquisizione dei profili Facebook. Sono disponibili i seguenti rapporti:
 
-* Il rapporto **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Summary]** di una consegna Facebook o Twitter.
+* La **[!UICONTROL Reactivity rate]** disponibile tramite **[!UICONTROL Summary]** di una consegna Facebook o Twitter.
 
    ![](assets/social_report_3.png)
 
-* Il rapporto **[!UICONTROL Reactivity rate]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Twitter o Facebook.
+* La **[!UICONTROL Reactivity rate]** disponibile tramite **[!UICONTROL Dashboard]** di un servizio Twitter o Facebook.
 
    ![](assets/social_report_2.png)
 
-* Il rapporto **[!UICONTROL Fan acquisition]**, disponibile tramite la scheda **[!UICONTROL Dashboard]** di un servizio Facebook.
+* La **[!UICONTROL Fan acquisition]** disponibile tramite **[!UICONTROL Dashboard]** scheda di un servizio Facebook.
 
    ![](assets/social_report_1.png)

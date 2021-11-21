@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-I gruppi di operatori vengono creati tramite il nodo **[!UICONTROL Administration > Access management > Operator groups]** nella struttura.
+I gruppi di operatori vengono creati tramite il **[!UICONTROL Administration > Access management > Operator groups]** nell&#39;albero.
 
 ## Crea un nuovo gruppo di operatori {#creating-a-new-operator-group}
 
 Per creare un nuovo gruppo di operatori, effettua le seguenti operazioni:
 
-1. Fai clic sul pulsante **[!UICONTROL New]** a destra dell’elenco dei gruppi oppure fai clic con il pulsante destro del mouse sull’elenco e scegli **[!UICONTROL New]**.
-1. Nella finestra inferiore della sezione, dalla scheda **[!UICONTROL General]**, immetti il nome e una descrizione per questo gruppo nei campi corrispondenti.
+1. Fai clic sul pulsante **[!UICONTROL New]** a destra dell&#39;elenco dei gruppi o fai clic con il pulsante destro del mouse sull&#39;elenco e scegli **[!UICONTROL New]**.
+1. Nella finestra inferiore della sezione, dal **[!UICONTROL General]** immettere il nome e la descrizione del gruppo nei campi corrispondenti.
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Content]** per definire le autorizzazioni per questo gruppo.
+1. Fai clic sul pulsante **[!UICONTROL Content]** scheda per definire le autorizzazioni per questo gruppo.
 1. Fai clic sul pulsante **[!UICONTROL Add]** per selezionare un diritto designato o un operatore da associare al gruppo.
-1. Fai clic sull&#39;elenco a discesa o sulla cartella a destra del campo **[!UICONTROL Folder]** per individuare i diritti o gli operatori nominati da associare a questo gruppo.
-1. Seleziona i diritti o gli operatori da aggiungere e fai clic su **[!UICONTROL OK]** per convalidare.
+1. Fai clic sull’elenco a discesa o sulla cartella a destra del **[!UICONTROL Folder]** per individuare i diritti o gli operatori da associare a questo gruppo.
+1. Seleziona i diritti o gli operatori da aggiungere e fai clic su **[!UICONTROL OK]** da convalidare.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
@@ -45,7 +45,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Administrator]**
 
-   Gli operatori di questo gruppo hanno pieno accesso all’istanza. Gli amministratori sono utenti che possono accedere alle parti più tecniche dell’interfaccia. Hanno il ruolo **[!UICONTROL Administration]** e si accertano che la piattaforma sia configurata completamente.
+   Gli operatori di questo gruppo hanno pieno accesso all’istanza. Gli amministratori sono utenti che possono accedere alle parti più tecniche dell’interfaccia. Loro tengono il **[!UICONTROL Administration]** e assicurati che la piattaforma sia configurata.
 
    Questo gruppo contiene il seguente diritto denominato:
 
@@ -62,7 +62,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Gli operatori di questo gruppo possono gestire le campagne di marketing: ti consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nel framework di **[!UICONTROL Campaign]** (modulo Adobe Campaign opzionale).
+   Gli operatori di questo gruppo possono gestire le campagne di marketing: ti consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nell&#39;ambito **[!UICONTROL Campaign]** (modulo Adobe Campaign facoltativo).
 
    Questo gruppo contiene i seguenti diritti denominati:
 
@@ -74,7 +74,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Content contributors]**
 
-   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto nel framework di **[!UICONTROL Content management]** (modulo Adobe Campaign opzionale). Questo gruppo non concede diritti aggiuntivi.
+   Gli operatori di questo gruppo possono accedere alle cartelle Contenuto nel framework di **[!UICONTROL Content management]** (modulo Adobe Campaign facoltativo). Questo gruppo non concede diritti aggiuntivi.
 
 1. **[!UICONTROL Access to reports]**
 
@@ -90,11 +90,11 @@ I gruppi di operatori predefiniti sono:
 
 1. Gestione locale/centrale
 
-   Questi gruppi consentono di utilizzare **[!UICONTROL Distributed marketing]** (modulo Adobe Campaign opzionale).
+   Questi gruppi consentono di utilizzare **[!UICONTROL Distributed marketing]** (modulo Adobe Campaign facoltativo).
 
 1. **[!UICONTROL Offer managers]**
 
-   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consulta questa [pagina](../../interaction/using/operator-profiles.md).
+   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consulta questo [page](../../interaction/using/operator-profiles.md).
 Questo gruppo contiene i seguenti diritti denominati:
 
    * **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire cartelle nell&#39;albero di Adobe Campaign (purché si disponga dei diritti di modifica per i rami interessati),

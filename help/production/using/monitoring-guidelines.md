@@ -19,7 +19,7 @@ ht-degree: 21%
 
 ## Dashboard di monitoraggio delle istanze {#instance-monitoring-dashboard}
 
-La scheda **[!UICONTROL Monitoring]** , accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per aiutarti a monitorare l’istanza.
+La **[!UICONTROL Monitoring]** tab, accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per aiutarti a monitorare l’istanza.
 
 Fornisce un dashboard di ciò che si verifica sull&#39;istanza: il suo stato (versione build, pacchetti installati, ecc.), gli indicatori di sistema, i registri, i flussi di lavoro attualmente in esecuzione, lo stato delle ultime consegne inviate, ecc.
 
@@ -58,7 +58,7 @@ Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell�
 >
 >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1.3)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con l’ultima [Gold Standard](../../rn/using/gs-overview.md) o [build GA più recente (21.1.3)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
 ### Monitoraggio dei flussi di lavoro {#monitoring-workflows}
 
@@ -96,14 +96,14 @@ I rapporti SMTP mostrano le statistiche di consegna e gli errori SMTP per domini
 
 **Best practice**
 
-[Le best practice per l’invio e la ](../../delivery/using/delivery-best-practices.md) progettazione delle consegne consentono di migliorare le prestazioni.
+[Best practice per l’invio e la progettazione delle consegne](../../delivery/using/delivery-best-practices.md) può aiutarti a migliorare le loro prestazioni.
 
-****
-Risoluzione dei problemi di consegnaÈ possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
+**Risoluzione dei problemi di consegna**
+È possibile eseguire azioni specifiche quando si verificano problemi con le consegne:
 * [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 * [Problemi di prestazioni di consegna](../../delivery/using/delivery-performances.md)
-* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) : solo modelli di hosting  *on-premise*
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo modelli di hosting on-premise*
 
 ### Monitoraggio del database {#monitoring-database}
 

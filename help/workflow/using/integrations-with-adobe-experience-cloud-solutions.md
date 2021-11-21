@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Integrazione con Adobe Experience Cloud** . Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
+I flussi di lavoro descritti di seguito sono installati con **Integrazione con Adobe Experience Cloud** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -34,7 +34,7 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito sono insta
   <tr> 
    <td> <span class="uicontrol">Esportare tipi di pubblico in Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Questo flusso di lavoro esporta i tipi di pubblico come pubblici/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud utilizzate.<br /> </td> 
+   <td> Questo flusso di lavoro esporta i tipi di pubblico come pubblici/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud che utilizzi.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

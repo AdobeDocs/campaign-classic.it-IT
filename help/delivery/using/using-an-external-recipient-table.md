@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ![](../../assets/common.svg)
 
-Se la tabella di consegna è una tabella esterna, dovrai effettuare configurazioni aggiuntive. Lo schema **[!UICONTROL nms:seedmember]** deve essere esteso. Agli indirizzi di seed viene aggiunta una scheda per definire i campi appropriati, come illustrato di seguito:
+Se la tabella di consegna è una tabella esterna, dovrai effettuare configurazioni aggiuntive. La **[!UICONTROL nms:seedmember]** lo schema deve essere esteso. Agli indirizzi di seed viene aggiunta una scheda per definire i campi appropriati, come illustrato di seguito:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,4 +25,4 @@ In questo caso, per aggiungere gli indirizzi di seed alla consegna, immetti i ca
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-L&#39;estensione dello schema **nms:seedMember** è [questa sezione](../../configuration/using/seed-addresses.md).
+La **nms:seedMember** estensione dello schema [questa sezione](../../configuration/using/seed-addresses.md).

@@ -23,7 +23,7 @@ Se un utente finale rinuncia al tracciamento dei comportamenti tramite cookie o 
 
 >[!NOTE]
 >
->Quando gli script seguono sempre le linee guida descritte nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Quando gli script seguono sempre le linee guida descritte nel [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
@@ -35,7 +35,7 @@ Adobe Campaign viene fornito con un banner di esempio che devi adattare alle tue
 >
 >Per creare un banner personalizzato, devi personalizzare il banner preconfigurato.
 
-Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un&#39;applicazione web](designing-a-web-application.md) .
+Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Fai riferimento a [Progettazione di un’applicazione web](designing-a-web-application.md) sezione .
 
 Se è attivato il tracciamento Web, è possibile disporre di:
 
@@ -64,7 +64,7 @@ Il banner predefinito ha la seguente struttura:
       
 ```
 
-Devi sostituire il **Inserisci qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
+È necessario sostituire **Inserisci qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
 
 Il banner viene fornito con un CSS specifico. Tuttavia, puoi sovrascrivere gli stili durante la creazione e la configurazione di una pagina web. Consulta [questa pagina](content-editor-interface.md).
 
@@ -95,7 +95,7 @@ Se è necessario scrivere un JSSP, sono disponibili le API lato server:
 
    **escapeJs {Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript.
 
-   Restituisce l’HTML del markup del banner di rinuncia che deve essere stampato nella pagina.
+   Restituisce il HTML del markup del banner di rinuncia che deve essere stampato nella pagina.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 

@@ -23,9 +23,9 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 
 >[!AVAILABILITY]
 >
->* I materiali della guida in questa raccolta si applicano ad Campaign Classic v7 nella [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
+>* I materiali della Guida in questa raccolta si applicano a Campaign Classic v7 nel suo [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
 >
->* La documentazione di Adobe Campaign v8 è disponibile [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html).
+>* È disponibile la documentazione di Adobe Campaign v8 [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=it).
 
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzioni e le funzionalità principali del video](#video)

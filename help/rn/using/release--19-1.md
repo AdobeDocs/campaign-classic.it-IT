@@ -198,7 +198,7 @@ _30 maggio 2019_
 **Miglioramenti di sicurezza**
 
 * Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza il **[!UICONTROL Pre-process the file]** in un **[!UICONTROL Data loading (file)]** attività del flusso di lavoro. È ora disponibile un elenco a discesa che consente di scegliere tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di sicurezza XtkSecurity_Disable_Preproc . Per i nuovi clienti, questa opzione è impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 dal post aggiornamento per mantenere il comportamento precedente. Fai riferimento a questo [sezione](../../workflow/using/data-loading--file-.md).
-* È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account esterno FDA senza fuso orario impostato.
+* È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account esterno FDA senza impostazione del fuso orario.
 * La libreria PDFBox è stata rimossa.
 * Tomcat è stato aggiornato alla versione 7.0.93.
 * È stato risolto un problema di visibilità del token che si verificava quando il token di sicurezza non era valido.

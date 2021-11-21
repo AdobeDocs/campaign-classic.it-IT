@@ -24,7 +24,7 @@ Ogni pagina del sito che desideri monitorare deve essere referenziata nella tua 
 
 ## Definizione degli URL da tracciare nell’applicazione {#defining-the-urls-to-be-tracked-in-the-application}
 
-Questo metodo ti consente di definire manualmente le pagine da tracciare e quindi di generare un esempio del tag di web tracking associato. Questa operazione è definita nel nodo **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client.
+Questo metodo ti consente di definire manualmente le pagine da tracciare e quindi di generare un esempio del tag di web tracking associato. Questa operazione è definita nella **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nodo della console client.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -39,7 +39,7 @@ Quindi copia il codice generato e incollalo nella pagina da tracciare.
 
 ## Creazione rapida di URL da tracciare {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Puoi creare gli URL di web tracking immediatamente aggiungendo informazioni al valore del parametro **tagid** :
+Puoi creare al volo gli URL di web tracking aggiungendo informazioni al valore della **tagid** parametro:
 
 * Tipo di pagina tracciato: &quot;w&quot; per WEB o &quot;t&quot; per TRANSAZIONE,
 * Nome interno della cartella in cui deve essere creato l’URL.
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Ricorda di codificare il valore del parametro **tagid** quando viene utilizzato come parametro URL.
+>Ricorda di codificare il valore del **tagid** quando viene utilizzato come parametro URL.
 
 **Esempio**: creazione di un URL di web tracking di tipo transazione.
 

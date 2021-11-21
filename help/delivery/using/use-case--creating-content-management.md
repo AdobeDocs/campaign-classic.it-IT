@@ -20,11 +20,11 @@ ht-degree: 2%
 Per creare la gestione dei contenuti in Adobe Campaign, sono necessari i seguenti passaggi:
 
 * [Passaggio 1: analisi del contenuto da produrre](#step-1---analyzing-the-content-to-be-produced),
-* [Passaggio 2: creazione dello schema](#step-2---creating-the-data-schema) dati,
-* [Passaggio 3: creazione del modulo](#step-3---creating-the-input-form) di input,
-* [Passaggio 4 - Creazione del modello](#step-4---creating-the-construction-template) di costruzione,
-* [Passaggio 5: creazione del modello](#step-5---creating-the-publication-template) di pubblicazione,
-* [Passaggio 6: creazione dei contenuti](#step-6---creating-contents).
+* [Passaggio 2: creazione dello schema dati](#step-2---creating-the-data-schema),
+* [Passaggio 3 - Creazione del modulo di input](#step-3---creating-the-input-form),
+* [Passaggio 4 - Creazione del modello di costruzione](#step-4---creating-the-construction-template),
+* [Passaggio 5: creazione del modello di pubblicazione](#step-5---creating-the-publication-template),
+* [Passaggio 6 - Creazione dei contenuti](#step-6---creating-contents).
 
 ## Passaggio 1: analisi del contenuto da produrre {#step-1---analyzing-the-content-to-be-produced}
 
@@ -64,11 +64,11 @@ Uno schema dati è un documento XML associato al contenuto. Descrive la struttur
 
 Per creare uno schema di dati, esegui i seguenti passaggi:
 
-1. Apri Adobe Campaign Explorer e seleziona il nodo **[!UICONTROL Administration > Configuration > Data schemas]** .
+1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
 
-   Fai clic sull’icona **[!UICONTROL New]** situata sopra l’elenco degli schemi di dati.
+   Fai clic sul pulsante **[!UICONTROL New]** icona situata sopra l’elenco degli schemi di dati.
 
-1. Seleziona l’opzione **[!UICONTROL Create a schema]** per la gestione dei contenuti, quindi fai clic su **[!UICONTROL Next]**.
+1. Seleziona la **[!UICONTROL Create a schema]** opzione per la gestione dei contenuti, quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,15 +76,15 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Fai clic su **[!UICONTROL Next]** per convalidare.
+   Fai clic su **[!UICONTROL Next]** da convalidare.
 
-1. Immetti il contenuto dello schema nella finestra **[!UICONTROL Edit schema]**.
+1. Immetti il contenuto dello schema nel **[!UICONTROL Edit schema]** finestra.
 
-   Utilizza il pulsante **[!UICONTROL Insert]** per creare il contenuto dello schema.
+   Utilizza la **[!UICONTROL Insert]** per creare il contenuto dello schema.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Per ulteriori informazioni, consulta [Modifica di schemi](data-schemas.md#editing-schemas).
+   Per ulteriori informazioni, consulta [Modifica degli schemi](data-schemas.md#editing-schemas).
 
    Per ogni elemento a cui si fa riferimento nel contenuto, devi selezionare un tipo corrispondente.
 
@@ -119,7 +119,7 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
    <td> Data<br /> </td> 
   </tr> 
   <tr> 
-   <td> Introduzione al paragrafo<br /> </td> 
+   <td> Paragrafo introduttivo<br /> </td> 
    <td> Elemento “element”<br /> </td> 
    <td> HTML<br /> </td> 
    <td> Panoramica<br /> </td> 
@@ -133,11 +133,11 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
   <tr> 
    <td> Autore<br /> </td> 
    <td> Elemento “element”<br /> </td> 
-   <td> Memo<br /> </td> 
+   <td> Per memoria<br /> </td> 
    <td> Autore<br /> </td> 
   </tr> 
   <tr> 
-   <td> Logo dell'intestazione (memorizzato nelle risorse pubbliche Adobe Campaign)<br /> </td> 
+   <td> Logo dell’intestazione (archiviato nelle risorse pubbliche di Adobe Campaign)<br /> </td> 
    <td> Attributo<br /> </td> 
    <td> Collegamento<br /> </td> 
    <td> Immagine<br /> </td> 
@@ -160,7 +160,7 @@ Lo schema conterrà le seguenti informazioni:
   </element>
 ```
 
-1. Fai clic su **[!UICONTROL Save]** per creare lo schema dei dati.
+1. Fai clic su **[!UICONTROL Save]** per creare lo schema dati.
 
 ## Passaggio 3 - Creazione del modulo di input {#step-3---creating-the-input-form}
 
@@ -176,17 +176,17 @@ La descrizione di un modulo è un documento XML strutturato che osserva la gramm
 
 Per creare un modulo di input per la gestione del contenuto, esegui i seguenti passaggi:
 
-1. Apri Adobe Campaign Explorer e seleziona il nodo **[!UICONTROL Administration > Configuration > Input forms]** .
+1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > Input forms]** nodo.
 
-   Fare clic sull’icona **[!UICONTROL New]** sopra l’elenco dei moduli.
+   Fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco dei moduli.
 
-1. Immettere il nome del modulo e l’etichetta collegata al modulo, quindi selezionare il tipo **[!UICONTROL Content management]**.
+1. Immettere il nome del modulo e l’etichetta collegata al modulo, quindi selezionare il **[!UICONTROL Content management]** digitare.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >Per abilitare la corrispondenza automatica di entrambi gli elementi, è consigliabile utilizzare lo stesso nome dello schema dati collegato. Utilizza il pulsante **[!UICONTROL Insert]** sopra la zona di input per aggiungere campi dallo schema collegato al modulo.
+   >Per abilitare la corrispondenza automatica di entrambi gli elementi, è consigliabile utilizzare lo stesso nome dello schema dati collegato. Utilizza la **[!UICONTROL Insert]** al di sopra della zona di input per aggiungere campi dallo schema collegato al modulo.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -208,11 +208,11 @@ Per creare un modulo di input per la gestione del contenuto, esegui i seguenti p
      </input>
    ```
 
-   La scheda **[!UICONTROL Preview]** consente di controllare il rendering del modulo durante la modifica:
+   La **[!UICONTROL Preview]** consente di controllare il rendering del modulo durante la modifica:
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. Fare clic su **[!UICONTROL Save]** per creare il modulo di input.
+1. Fai clic su **[!UICONTROL Save]** per creare il modulo di input.
 
 ## Passaggio 4 - Creazione del modello di costruzione {#step-4---creating-the-construction-template}
 
@@ -226,14 +226,14 @@ In questo esempio, si desidera utilizzare un modello JavaScript per definire la 
 
 Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passaggi:
 
-1. Apri Adobe Campaign Explorer e seleziona il nodo **[!UICONTROL Administration > Configuration > JavaScript Templates]** .
+1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > JavaScript Templates]** nodo.
 
-   Fai clic sull’icona **[!UICONTROL New]** sopra l’elenco dei modelli.
+   Fai clic sul pulsante **[!UICONTROL New]** , sopra l’elenco dei modelli.
 
 1. Immetti un nome di modello e seleziona lo schema creato per la gestione del contenuto.
 1. Importa il contenuto del set che desideri visualizzare nel messaggio.
 
-   Aggiungi gli elementi della variabile rispettando la sintassi dettagliata in [Modelli JavaScript](formatting.md#javascript-templates).
+   Aggiungi gli elementi variabili rispettando la sintassi dettagliata in [Modelli JavaScript](formatting.md#javascript-templates).
 
    Per visualizzare il contenuto mostrato nel nostro esempio, il modello JavaScript deve contenere i seguenti elementi:
 
@@ -345,7 +345,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passag
    }
    ```
 
-   Affinché il modello JavaScript sia valido, questa funzione deve essere creata in precedenza dal nodo **[!UICONTROL JavaScript codes]** nella struttura ad albero, come segue:
+   Affinché il modello JavaScript sia valido, questa funzione deve essere creata in precedenza dal **[!UICONTROL JavaScript codes]** nella struttura ad albero, come segue:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
@@ -359,19 +359,19 @@ Il passaggio successivo prevede la creazione di un modello di pubblicazione del 
 
 In questo esempio, i passaggi sono i seguenti:
 
-1. Crea un nuovo modello di pubblicazione tramite il nodo **[!UICONTROL Administration > Configuration > Publication templates]** .
+1. Crea un nuovo modello di pubblicazione tramite **[!UICONTROL Administration > Configuration > Publication templates]** nodo.
 1. Immettere un nome e un&#39;etichetta, quindi selezionare lo schema e il modulo da utilizzare.
-1. Quindi immetti il nome del modello e scegli la modalità di rendering da applicare. In questo caso, è disponibile un rendering di tipo **[!UICONTROL JavaScript]** basato sul modello creato in precedenza.
+1. Quindi immetti il nome del modello e scegli la modalità di rendering da applicare. Qui abbiamo un **[!UICONTROL JavaScript]** effettua il rendering in base al modello creato in precedenza.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >L’opzione **[!UICONTROL DOM interface]** è selezionata per impostazione predefinita e questo significa che il documento non sarà accessibile se si utilizza la sintassi E4X. L’interfaccia DOM deve essere utilizzata quando questa opzione è selezionata ed è la sintassi consigliata.
+   >La **[!UICONTROL DOM interface]** Questa opzione è selezionata per impostazione predefinita e questo significa che il documento non sarà accessibile se si utilizza la sintassi E4X. L’interfaccia DOM deve essere utilizzata quando questa opzione è selezionata ed è la sintassi consigliata.
    >
    >È comunque possibile utilizzare la sintassi E4X. In tal caso, deselezionare questa opzione.
 
-   Utilizza il pulsante **[!UICONTROL Add]** per creare altri modelli di trasformazione.
+   Utilizza la **[!UICONTROL Add]** per creare altri modelli di trasformazione.
 
 1. Fai clic su **[!UICONTROL Save]** per creare il modello di pubblicazione.
 
@@ -381,13 +381,13 @@ In questo esempio, i passaggi sono i seguenti:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione di contenuti, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).
+>Per ulteriori informazioni sulla creazione dei contenuti, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).
 
 ### Creazione di contenuti nella procedura guidata di consegna {#creating-content-in-the-delivery-wizard}
 
 Per creare contenuti direttamente nelle consegne, esegui i seguenti passaggi:
 
-1. Inizia facendo riferimento al modello di pubblicazione tramite la scheda **[!UICONTROL Advanced]** delle proprietà di consegna.
+1. Inizia facendo riferimento al modello di pubblicazione tramite il **[!UICONTROL Advanced]** scheda delle proprietà di consegna.
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -397,6 +397,6 @@ Per creare contenuti direttamente nelle consegne, esegui i seguenti passaggi:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Fai clic sulla scheda **[!UICONTROL HTML preview]** per visualizzare il rendering. Devi selezionare un destinatario per testare la personalizzazione.
+1. Fai clic sul pulsante **[!UICONTROL HTML preview]** per visualizzare il rendering. Devi selezionare un destinatario per testare la personalizzazione.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

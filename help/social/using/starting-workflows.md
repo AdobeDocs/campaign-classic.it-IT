@@ -17,12 +17,12 @@ ht-degree: 6%
 
 ![](../../assets/v7-only.svg)
 
-I flussi di lavoro **[!UICONTROL Managing social networks]** accessibili tramite il nodo **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** consentono di sincronizzare Adobe Campaign con Twitter e Facebook.
+La **[!UICONTROL Managing social networks]** flussi di lavoro accessibili tramite **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** consente di sincronizzare Adobe Campaign con Twitter e Facebook.
 
 La prima volta che utilizzi Social Marketing, questi flussi di lavoro vengono interrotti per impostazione predefinita. Per avviarli, fai clic sul pulsante **[!UICONTROL Start]** nella barra degli strumenti.
 
 ![](assets/social_start_workflows.png)
 
-Se esiste un social network che non desideri utilizzare, si consiglia di non avviare i flussi di lavoro corrispondenti. Per evitare di ricevere un avviso che indichi l’arresto dei flussi di lavoro di produzione, seleziona il livello di gravità **[!UICONTROL Normal]** nella scheda **[!UICONTROL Execution]** delle proprietà dei flussi di lavoro interessati.
+Se esiste un social network che non desideri utilizzare, si consiglia di non avviare i flussi di lavoro corrispondenti. Per evitare di ricevere un avviso che indichi l’arresto dei flussi di lavoro di produzione, seleziona il livello di gravità **[!UICONTROL Normal]** in **[!UICONTROL Execution]** scheda delle proprietà dei flussi di lavoro interessati.
 
 ![](assets/social_start_workflows2.png)

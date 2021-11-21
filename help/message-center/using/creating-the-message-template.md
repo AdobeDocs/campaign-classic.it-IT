@@ -27,9 +27,9 @@ I modelli di messaggi transazionali contengono le informazioni necessarie per pe
 
 ## Creare il modello di messaggio {#creating-message-template}
 
-1. Vai alla cartella **[!UICONTROL Message Center >Transactional message templates]** nella struttura di Adobe Campaign.
+1. Vai a **[!UICONTROL Message Center >Transactional message templates]** nella struttura Adobe Campaign.
 
-1. Nell’elenco dei modelli di messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa oppure fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco dei modelli di messaggi transazionali.
+1. Nell’elenco dei modelli di messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa o fai clic su **[!UICONTROL New]** , sopra l’elenco dei modelli di messaggi transazionali.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -49,20 +49,20 @@ I modelli di messaggi transazionali contengono le informazioni necessarie per pe
    >
    >Un tipo di evento non può essere collegato a più di un modello.
 
-1. Immetti una natura e una descrizione, quindi fai clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (consulta [Crea il contenuto del messaggio](#creating-message-content)).
+1. Immetti una natura e una descrizione, quindi fai clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (consulta [Creare il contenuto del messaggio](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Creare il contenuto del messaggio {#creating-message-content}
 
-La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md) .
+La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in HTML o in formato testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta la sezione [Email delivery](../../delivery/using/about-email-channel.md) capitolo.
 
 >[!IMPORTANT]
 >
 >Le immagini incluse nel messaggio devono essere accessibili al pubblico. Adobe Campaign non fornisce alcun meccanismo di caricamento delle immagini per i messaggi transazionali.\
 >A differenza di JSSP o webApp, `<%=` non dispone di escape predefinito.
 >
->In questo caso, è necessario eseguire correttamente l’escape di ogni dato proveniente dall’evento. Questo escape dipende da come viene utilizzato questo campo. Ad esempio, all’interno di un URL, utilizza encodeURIComponent. Per essere visualizzato nell&#39;HTML, è possibile utilizzare escapeXMLString.
+>In questo caso, è necessario eseguire correttamente l’escape di ogni dato proveniente dall’evento. Questo escape dipende da come viene utilizzato questo campo. Ad esempio, all’interno di un URL, utilizza encodeURIComponent. Per essere visualizzato in HTML, è possibile utilizzare escapeXMLString.
 
 Una volta definito il contenuto del messaggio, puoi integrare le informazioni sull’evento nel corpo del messaggio e personalizzarlo. Le informazioni sull’evento vengono inserite nel corpo del testo grazie ai tag di personalizzazione.
 
@@ -77,14 +77,14 @@ Per inserire tag di personalizzazione nel corpo di un messaggio e-mail, effettua
 
 1. Inserisci il corpo del messaggio.
 
-1. Nel corpo del testo, inserisci il tag utilizzando il menu **[!UICONTROL Real time events > Event XML]** .
+1. Nel corpo del testo, inserisci il tag utilizzando **[!UICONTROL Real time events > Event XML]** menu.
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Compila il tag utilizzando la seguente sintassi: **nome elemento**.@**nome dell&#39;attributo** come mostrato di seguito.
+1. Compila il tag utilizzando la seguente sintassi: **nome elemento**.@**nome attributo** come mostrato di seguito.
 
    ![](assets/messagecenter_create_custo_003.png)
 
 1. Salva il contenuto.
 
-Il messaggio è ora pronto per essere [testato](../../message-center/using/testing-message-templates.md).
+Il messaggio è pronto per essere visualizzato [testato](../../message-center/using/testing-message-templates.md).

@@ -23,18 +23,18 @@ Questa sostituzione consente di risparmiare tempo durante la creazione della con
 
 ## Contesto {#context}
 
-In questo caso d&#39;uso, il sito **La mia libreria online** vorrebbe inviare uno sconto ai suoi clienti, in base al loro genere letterario preferito.
+In questo caso d’uso, il sito **Raccolta online personale** Vorrei inviare uno sconto ai suoi clienti, sulla base del loro genere letterario preferito.
 
 Il responsabile della consegna ha integrato nella sua e-mail un campo di personalizzazione collegato con il genere preferito. L&#39;obiettivo è quello di utilizzare alcuni indirizzi di seed: questi indirizzi di seed presentano il campo di personalizzazione nella tabella, ma non vi è alcun valore salvato.
 
 Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 
 * una consegna con uno o più campi di personalizzazione,
-* indirizzi di seed i cui **schema dati** vengono modificati in base ai campi di personalizzazione utilizzati nella consegna.
+* indirizzi di sementi **schema dati** viene modificato in base ai campi di personalizzazione utilizzati nella consegna.
 
 ## Creazione di una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti in dettaglio nella sezione [Creazione di una consegna e-mail](creating-an-email-delivery.md) .
+I passaggi per la creazione di una consegna sono descritti in [Creazione di una consegna e-mail](creating-an-email-delivery.md) sezione .
 
 In questo esempio, il gestore consegne ha creato la newsletter.
 
@@ -53,19 +53,19 @@ In questo esempio, lo schema dati degli indirizzi di seed prende un valore creat
 
 Questa enumerazione consente all’utente di specificare il genere letterario preferito dei propri client.
 
-Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi di seed **Modulo di input**, è necessario aggiornarla. Consulta la sezione [Aggiornamento del modulo di input](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) .
+Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi di seed **Modulo di input**, devi aggiornarlo. Fai riferimento a [Aggiornamento del modulo di input](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) sezione .
 
 ## Configurazione della personalizzazione {#configuring-personalization}
 
 1. Apri una consegna.
 
-   In questo esempio, la consegna ha due campi di personalizzazione: il nome **del destinatario** e il genere letterario preferito **del destinatario**.
+   In questo esempio, la consegna ha due campi di personalizzazione: del destinatario **nome** e del destinatario **genere letterario preferito**.
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configura l’elenco di consegna e gli indirizzi di seed. Fare riferimento a [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
+1. Configura l’elenco di consegna e gli indirizzi di seed. Fai riferimento a [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
-   In questo esempio, l&#39;utente seleziona gli utenti il cui **genere letterario preferito** è Sci-Fi come popolazione target principale.
+   In questo esempio, l&#39;utente seleziona gli utenti di cui **genere letterario preferito** è Sci-Fi come la popolazione target principale.
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -75,18 +75,18 @@ Affinché questa modifica dello schema dati sia visualizzabile negli indirizzi d
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul collegamento **[!UICONTROL Edit the dynamic condition...]**, consulta [Caso di utilizzo: selezione degli indirizzi di seed in criteria](use-case--selecting-seed-addresses-on-criteria.md).
+   >Per ulteriori informazioni sulla **[!UICONTROL Edit the dynamic condition...]** link, fai riferimento a [Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md).
 
-1. Fai clic sulla scheda **[!UICONTROL Preview]** , quindi seleziona un indirizzo di seed per testare la personalizzazione.
+1. Fai clic sul pulsante **[!UICONTROL Preview]** seleziona quindi un indirizzo di seed per testare la personalizzazione.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   Come puoi vedere, uno dei campi di personalizzazione è vuoto. Poiché l’indirizzo di seed non dispone di dati per questo campo, l’anteprima del contenuto HTML non può visualizzare un valore.
+   Come puoi vedere, uno dei campi di personalizzazione è vuoto. Poiché l’indirizzo di seed non dispone di dati per questo campo, l’anteprima del contenuto di HTML non può visualizzare un valore.
 
-   La sostituzione casuale dei campi viene eseguita **al momento della consegna**.
+   Viene eseguita la sostituzione casuale dei campi **al momento della consegna**.
 
 1. Fai clic sul pulsante **[!UICONTROL Send]**.
-1. Analizza la consegna quindi **conferma la consegna**.
+1. Analizza la consegna quindi **conferma consegna**.
 
    Gli indirizzi di seed ricevono la consegna nella loro casella in entrata.
 

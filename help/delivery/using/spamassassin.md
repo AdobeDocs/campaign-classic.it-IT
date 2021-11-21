@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## SpamAssassin {#about-spamassassin}
 
-Adobe Campaign può essere configurato per funzionare con [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per il filtraggio degli spam e-mail. Questo ti consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
+Adobe Campaign può essere configurato per lavorare con [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per il filtraggio degli spam e-mail. Questo ti consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
 SpamAssassin sfrutta una varietà di tecniche di rilevamento dello spam, tra cui:
 
@@ -54,12 +54,12 @@ Per ulteriori informazioni sulla creazione e la progettazione di una consegna, c
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Fai clic sul collegamento **[!UICONTROL More...]** accanto all’avviso.
+1. Fai clic sul pulsante **[!UICONTROL More...]** accanto all’avviso.
 1. Seleziona la scheda **[!UICONTROL Anti-spam checking]**.
-1. Vai alla sezione **[!UICONTROL Points / Rule / Description]** per visualizzare i motivi di questo rischio.
+1. Vai a **[!UICONTROL Points / Rule / Description]** per visualizzare i motivi di questo rischio.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Ogni volta che fai clic sul **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per il rilevamento di anti-spam. Assicurati di aver modificato il contenuto prima di eseguire nuovamente l’analisi anti-spam.
+>Ogni volta che fai clic sul pulsante **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per il rilevamento di anti-spam. Assicurati di aver modificato il contenuto prima di eseguire nuovamente l’analisi anti-spam.

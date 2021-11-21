@@ -34,7 +34,7 @@ Adobe Campaign non limita la dimensione del file. Ma è possibile farlo configur
 
 ## Relè
 
-Fare riferimento a [questa pagina](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) per ulteriori informazioni.
+Fai riferimento a [questa pagina](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) per ulteriori informazioni.
 
 Per impostazione predefinita, tutte le pagine dinamiche vengono automaticamente inviate al server Tomcat locale del computer di cui viene avviato il modulo Web. Puoi scegliere di non inoltrarne alcuni. Se non utilizzi alcuni moduli di Adobe Campaign (come webapp, interazione, alcuni jsp) puoi rimuoverli dalle regole di relay.
 
@@ -44,7 +44,7 @@ Se utilizzi nomi host diversi (uno pubblico e uno per gli operatori), puoi anche
 
 ## Protezione delle connessioni in uscita
 
-L’elenco predefinito di URL che possono essere richiamati tramite codici JavaScript (flussi di lavoro, ecc.) è limitato. Per consentire un nuovo URL, l&#39;amministratore deve farvi riferimento nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md).
+L’elenco predefinito di URL che possono essere richiamati tramite codici JavaScript (flussi di lavoro, ecc.) è limitato. Per consentire l’utilizzo di un nuovo URL, l’amministratore deve fare riferimento a tale URL nel [file serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Esistono tre modalità di protezione della connessione:
 
@@ -66,7 +66,7 @@ I clienti esistenti provenienti da una migrazione possono utilizzare la modalit�
 
 ## Restrizione dei comandi (lato server)
 
-Diversi comandi vengono inseriti in blacklist e non possono essere eseguiti utilizzando la funzione execCommand. Un utente Unix dedicato fornisce una protezione aggiuntiva per eseguire comandi esterni. Per le installazioni in hosting, questa restrizione viene applicata automaticamente. Per le installazioni on-premise, puoi impostare manualmente questa restrizione seguendo le istruzioni riportate in [questa pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Inoltre, le attività del flusso di lavoro **[!UICONTROL Script]** e **[!UICONTROL External task]** non sono disponibili (istanze appena installate).
+Diversi comandi vengono inseriti in blacklist e non possono essere eseguiti utilizzando la funzione execCommand. Un utente Unix dedicato fornisce una protezione aggiuntiva per eseguire comandi esterni. Per le installazioni in hosting, questa restrizione viene applicata automaticamente. Per le installazioni on-premise, puoi impostare manualmente questa restrizione seguendo le istruzioni di [questa pagina](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Inoltre, **[!UICONTROL Script]** e **[!UICONTROL External task]** le attività del flusso di lavoro non sono disponibili (istanze appena installate).
 
 ## Altre configurazioni
 
@@ -79,10 +79,10 @@ Puoi aggiungere intestazioni HTTP aggiuntive per tutte le pagine (per ulteriori 
    >
    >È possibile interrompere Adobe Campaign aggiungendo alcune intestazioni.
 
-Adobe Campaign consente di impostare una password semplice nell’elemento `<dbcnx .../>` . Non utilizzare questa funzione.
+Adobe Campaign consente di impostare una password semplice nel `<dbcnx .../>` elemento. Non utilizzare questa funzione.
 
-Per impostazione predefinita, Adobe Campaign non blocca una sessione a un IP specifico, ma la puoi attivare per evitare che la sessione venga rubata. Per farlo, nel file [serverConf.xml](../../installation/using/the-server-configuration-file.md), imposta l&#39;attributo checkIPConsistent su **true** nel nodo `<authentication>`.
+Per impostazione predefinita, Adobe Campaign non blocca una sessione a un IP specifico, ma la puoi attivare per evitare che la sessione venga rubata. Per farlo, nella [file serverConf.xml](../../installation/using/the-server-configuration-file.md), imposta l&#39;attributo checkIPConsistent su **true** in `<authentication>` nodo.
 
-Per impostazione predefinita, l’MTA di Adobe Campaign non utilizza una connessione protetta per inviare il contenuto al server SMTP. Devi abilitare questa funzione (può ridurre la velocità di consegna). A questo scopo, imposta **enableTLS** su **true** nel nodo `<smtp ...>`.
+Per impostazione predefinita, l’MTA di Adobe Campaign non utilizza una connessione protetta per inviare il contenuto al server SMTP. Devi abilitare questa funzione (può ridurre la velocità di consegna). Per eseguire questa operazione, imposta **enableTLS** a **true** in `<smtp ...>` nodo.
 
 Puoi ridurre la durata di una sessione nel nodo di autenticazione (attributo sessionTimeOutSec ).

@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito viene installato con il modulo **Distributed Marketing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
+Il flusso di lavoro descritto di seguito è installato con **Marketing distribuito** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

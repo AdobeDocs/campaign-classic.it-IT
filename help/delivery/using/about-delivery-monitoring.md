@@ -47,7 +47,7 @@ Per ogni consegna è disponibile un dashboard dedicato. Consente di monitorare e
 
 Quando un messaggio non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, rilevato dalla piattaforma Adobe Campaign e qualificato per determinare se l’indirizzo e-mail o il numero di telefono devono essere messi in quarantena o meno.
 
-[La comprensione dei ](understanding-delivery-failures.md) fallimenti di consegna è un passaggio chiave per migliorare le campagne di marketing.
+[Informazioni sugli errori di consegna](understanding-delivery-failures.md) è un passaggio chiave per migliorare le campagne di marketing.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -55,4 +55,4 @@ Quando un messaggio non può essere inviato a un profilo, il server remoto invia
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting.
 
-In [questa sezione](understanding-quarantine-management.md) troverai informazioni su come identificare e gestire gli indirizzi messi in quarantena e ulteriori informazioni sulle condizioni per l’invio di un indirizzo in quarantena.
+In [questa sezione](understanding-quarantine-management.md), troverai informazioni su come identificare e gestire gli indirizzi messi in quarantena e ulteriori informazioni sulle condizioni per l’invio di un indirizzo in quarantena.

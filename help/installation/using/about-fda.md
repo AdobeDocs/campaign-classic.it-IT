@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
+Adobe Campaign fornisce **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
 
 ## Prerequisiti {#operating-principle}
 
@@ -25,7 +25,7 @@ L’opzione FDA ti consente di estendere il modello dati in un database di terze
 
 Per utilizzare questa funzionalità, i prerequisiti sono elencati di seguito:
 
-* **Configurazione**: ad eccezione, ad Snowflake, per impostare Federated Data Access è necessario un modello  **on-** premise o  **** ibridi. [Ulteriori informazioni](../../installation/using/hosting-models.md)
-* **Versione** del database esterno: è necessario disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign. L’elenco dei sistemi di database e delle versioni compatibili è dettagliato nella matrice di compatibilità di Campaign [a1/>.](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)
-* **Autorizzazioni**: Gli utenti devono inoltre disporre delle autorizzazioni  [necessarie ](../../installation/using/remote-database-access-rights.md) in Adobe Campaign e nel database esterno.
+* **Configurazione**: ad eccezione del Snowflake, è necessario un **on-premise** o **ibrido** modello di hosting per configurare Federated Data Access. [Ulteriori informazioni](../../installation/using/hosting-models.md)
+* **Versione database esterna**: è necessario disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign. L’elenco dei sistemi di database e delle versioni compatibili è dettagliato in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+* **Autorizzazioni**: gli utenti devono inoltre avere [autorizzazioni necessarie](../../installation/using/remote-database-access-rights.md) in Adobe Campaign e sul database esterno.
 

@@ -17,15 +17,15 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Le consegne cross-channel sono disponibili nella scheda **[!UICONTROL Deliveries]** delle attività del flusso di lavoro della campagna.
+Le consegne cross-channel sono disponibili nel **[!UICONTROL Deliveries]** scheda delle attività del flusso di lavoro della campagna.
 
 I vari canali disponibili sono:
 
 * [E-mail](../../delivery/using/about-email-channel.md)
 * [Direct mailing](../../delivery/using/about-direct-mail-channel.md)
 * [Mobile](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md)  (solo Campaign Classic v7)
-* [Facebook](../../social/using/publishing-on-facebook.md)  (solo Campaign Classic v7)
+* [Twitter](../../social/using/publishing-on-twitter.md) (Solo Campaign Classic v7)
+* [Facebook](../../social/using/publishing-on-facebook.md) (Solo Campaign Classic v7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [per Android](../../delivery/using/create-notifications-android.md)
 
@@ -36,12 +36,12 @@ Puoi specificare un target per la consegna a monte del flusso di lavoro utilizza
 Nell’esempio seguente, creeremo un flusso di lavoro per inviare un’e-mail o un SMS per gli abbonati alle notifiche push e quindi una notifica push una settimana dopo. Per eseguire questa operazione:
 
 1. Creare una campagna.
-1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un **[!UICONTROL Query]** al flusso di lavoro.
+1. In **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungi una **[!UICONTROL Query]** al flusso di lavoro.
 1. Configura la query. Ad esempio, in questo caso selezioni i destinatari abbonati alle notifiche push come dimensione di destinazione.
 
    >[!NOTE]
    >
-   >Per le notifiche push, utilizza la dimensione di destinazione **applicazioni utente con sottoscrizione**.
+   >Per le notifiche push, utilizza il **applicazioni abbonato** dimensione target.
 
    ![](assets/cross_channel_delivery_1.png)
 
@@ -49,17 +49,17 @@ Nell’esempio seguente, creeremo un flusso di lavoro per inviare un’e-mail o 
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Aggiungi un’attività **[!UICONTROL Split]** al flusso di lavoro per dividere i destinatari con un numero di cellulare e quelli con un indirizzo e-mail.
-1. Nella scheda **[!UICONTROL Delivery]** , seleziona una consegna per ciascuna delle tue destinazioni.
+1. Aggiungi un **[!UICONTROL Split]** al flusso di lavoro per dividere i destinatari con un numero di cellulare e quelli con un indirizzo e-mail.
+1. In **[!UICONTROL Delivery]** seleziona una consegna per ciascuna delle tue destinazioni.
 
    Crea la consegna come con una procedura guidata di consegna classica facendo doppio clic sull’attività di consegna nel flusso di lavoro. Per ulteriori informazioni, consulta questa [pagina](../../delivery/using/about-email-channel.md).
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. Aggiungi e configura un’attività **[!UICONTROL Wait]** in modo che i destinatari non ricevano troppe consegne alla volta.
-1. Aggiungi un’attività **[!UICONTROL Split]** per dividere gli abbonati a un’app mobile iOS o Android.
+1. Aggiungi e configura un **[!UICONTROL Wait]** affinché i destinatari non ricevano troppe consegne alla volta.
+1. Aggiungi un **[!UICONTROL Split]** attività per dividere gli abbonati di un’app mobile iOS o Android.
 
-   Selezionare un servizio per ciascuno dei sistemi operativi. Per ulteriori informazioni sulla creazione di un servizio, consulta questa [pagina](../../delivery/using/configuring-the-mobile-application.md).
+   Selezionare un servizio per ciascuno dei sistemi operativi. Per ulteriori informazioni sulla creazione di un servizio, consulta questo articolo [page](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 

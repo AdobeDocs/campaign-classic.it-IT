@@ -21,26 +21,26 @@ Gli operatori di entità centrale possono tenere traccia degli ordini delle camp
 
 Questo consente di:
 
-* [Colli](#filter-packages) filtranti,
+* [Pacchetti filtro](#filter-packages),
 * [Modifica pacchetti](#edit-packages),
-* [Annulla un pacchetto](#cancel-a-package),
+* [Annullare un pacchetto](#cancel-a-package),
 * [Reinizializzazione di un pacchetto](#reinitializing-a-package).
 
 ## Pacchetti filtro {#filter-packages}
 
-Dalla scheda **[!UICONTROL Campaigns]** è possibile visualizzare l’elenco di **[!UICONTROL Campaign packages]** che raggruppa tutte le campagne Distributed Marketing esistenti. Puoi filtrare questo elenco in modo che visualizzi solo le campagne pubblicate, in ritardo, in attesa di approvazione, ecc. A questo scopo, fai clic sui collegamenti nella sezione superiore di questa visualizzazione oppure utilizza il collegamento **[!UICONTROL Filter list]** e seleziona lo stato del pacchetto della campagna da visualizzare.
+Da **[!UICONTROL Campaigns]** è possibile visualizzare l’elenco dei **[!UICONTROL Campaign packages]** raggruppa tutte le campagne Distributed Marketing esistenti. Puoi filtrare questo elenco in modo che visualizzi solo le campagne pubblicate, in ritardo, in attesa di approvazione, ecc. A questo scopo, fai clic sui collegamenti nella sezione superiore di questa visualizzazione oppure utilizza il **[!UICONTROL Filter list]** e seleziona lo stato del pacchetto della campagna da visualizzare.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Modifica pacchetti {#edit-packages}
 
-La pagina **[!UICONTROL Campaign packages]** ti consente di visualizzare il riepilogo di ciascun pacchetto.
+La **[!UICONTROL Campaign packages]** consente di visualizzare il riepilogo di ciascun pacchetto.
 
 Questo riepilogo mostra le seguenti informazioni: etichetta, tipo di campagna, nome della campagna da cui è stata creata e la cartella.
 
 Fai clic sul nome del pacchetto per modificarlo. È inoltre possibile visualizzare gli ordini in base alle rispettive entità locali e al loro stato.
 
-Queste informazioni sono disponibili anche nella visualizzazione **[!UICONTROL Campaign orders]** in cui sono elencati tutti gli ordini.
+Queste informazioni sono disponibili anche nel **[!UICONTROL Campaign orders]** visualizza l&#39;elenco di tutti gli ordini.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -50,7 +50,7 @@ L’operatore centrale può modificare l’ordine. Ci sono due modi per farlo:
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   La scheda **[!UICONTROL Edit > General]** ti consente di visualizzare le informazioni immesse dall’entità locale al momento dell’ordine della campagna.
+   La **[!UICONTROL Edit > General]** consente di visualizzare le informazioni immesse dall’entità locale quando ha ordinato la campagna.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -66,11 +66,11 @@ Fai clic su **[!UICONTROL Cancel]** nel pacchetto della campagna **[!UICONTROL D
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-Il campo **[!UICONTROL Comment]** consente di giustificare l’annullamento.
+La **[!UICONTROL Comment]** consente di giustificare l’annullamento.
 
-Per **campagne locali**, l&#39;annullamento di un pacchetto lo rimuove dall&#39;elenco delle campagne di marketing disponibili.
+Per **campagne locali**, l’annullamento di un pacchetto lo rimuove dall’elenco delle campagne di marketing disponibili.
 
-Per **campagne collaborative**, l&#39;annullamento di un pacchetto attiva numerose azioni:
+Per **campagne collaborative**, l’annullamento di un pacchetto attiva numerose azioni:
 
 1. Tutti gli ordini relativi a questo pacchetto vengono annullati,
 
@@ -91,7 +91,7 @@ I pacchetti annullati possono ancora essere accessibili e reinizializzati dall&#
 I pacchetti di campagna già pubblicati possono essere reinizializzati, modificati e resi disponibili alle entità locali.
 
 1. Selezionare il pacchetto in questione.
-1. Fai clic sul collegamento **[!UICONTROL Reinitialize the package to reuse it]** e fai clic su **[!UICONTROL OK]**.
+1. Fai clic sul pulsante **[!UICONTROL Reinitialize the package to reuse it]** collegamento e clic **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 

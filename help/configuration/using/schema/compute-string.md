@@ -35,11 +35,11 @@ Nessuno
 
 ## Descrizione {#description-1}
 
-L’elemento `<compute-string>` consente di generare una stringa basata su un’espressione XTK per visualizzare un’etichetta &quot;generata&quot; nell’interfaccia in base a diversi valori.
+La `<compute-string>` consente di generare una stringa basata su un’espressione XTK per visualizzare un’etichetta &quot;generata&quot; nell’interfaccia in base a diversi valori.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-1}
 
-Quando non viene definito alcun elemento `<compute-string>`, per impostazione predefinita viene inserito un elemento `<compute-string>` con i valori della chiave primaria nello schema.
+Quando no `<compute-string>` è definito come `<compute-string>` l’elemento viene immesso per impostazione predefinita con i valori della chiave primaria nello schema.
 
 ## Descrizione attributo {#attribute-description-1}
 

@@ -23,7 +23,7 @@ Alcuni clienti hanno bisogno che gli utenti di marketing siano in grado di acced
 
 ## Implementazione {#implementation}
 
-Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è stato aggiunto agli schemi, integra l’attributo esistente **[!UICONTROL visibleIf]** . Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un&#39;espressione XTK correlata al contesto utente corrente, può, ad esempio, sfruttare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]** .
+Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è stato aggiunto agli schemi, integra l&#39;attributo esistente **[!UICONTROL visibleIf]** . Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un&#39;espressione XTK correlata al contesto utente corrente, può sfruttare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]** , per esempio.
 
 Puoi trovare un esempio di estensione dello schema destinatario che mostra questo utilizzo:
 
@@ -58,7 +58,7 @@ Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in 
 
 ## Raccomandazioni {#recommendations}
 
-In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]** : di conseguenza, anche questi campi devono essere protetti.
+In ogni consegna, gli indirizzi e-mail vengono copiati nel **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]** tabelle: di conseguenza, anche questi campi devono essere protetti.
 
 Di seguito è riportato un esempio di estensione della tabella di registro per implementare questo:
 

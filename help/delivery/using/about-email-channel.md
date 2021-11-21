@@ -22,7 +22,7 @@ Adobe Campaign ti consente di inviare in massa messaggi elettronici personalizza
 Prima di iniziare a inviare le e-mail:
 
 * Assicurati che i profili dei destinatari contengano almeno un indirizzo e-mail.
-* Ulteriori informazioni sulle best practice per le consegne [Adobe Campaign](delivery-best-practices.md).
+* Ulteriori informazioni su Adobe Campaign [Best practice per le consegne](delivery-best-practices.md).
 * Per ulteriori informazioni sul recapito messaggi, consulta le sezioni seguenti: [Gestione del recapito messaggi in Campaign](about-deliverability.md) e [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 I passaggi chiave per l’invio di un’e-mail sono i seguenti:

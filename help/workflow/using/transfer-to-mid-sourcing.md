@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/common.svg)
 
-I flussi di lavoro descritti di seguito vengono installati per impostazione predefinita con il modulo **Trasferisci a mid-Sourcing** . Per ulteriori informazioni su questo modulo, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
+I flussi di lavoro descritti di seguito sono installati con **Trasferisci a mid-Sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

@@ -22,10 +22,10 @@ In questa pagina verrà illustrato come collegare Campaign Classic a **Salesforc
 La sincronizzazione dei dati viene eseguita tramite un’attività del flusso di lavoro dedicata. [Ulteriori informazioni](../../platform/using/crm-data-sync.md).
 
 
-L’account esterno ti consente di importare ed esportare i dati di Salesforce in Adobe Campaign.
+L’account esterno ti consente di importare ed esportare dati Salesforce in Adobe Campaign.
 Per configurare il connettore di gestione delle relazioni con i clienti per Salesforce, segui i passaggi seguenti:
 
-1. Crea un nuovo account esterno tramite il nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura di Adobe Campaign.
+1. Crea un nuovo account esterno tramite **[!UICONTROL Administration > Platform > External accounts]** nodo della struttura Adobe Campaign.
 1. Seleziona **[!UICONTROL Salesforce.com]**.
 1. Immettere le impostazioni per abilitare la connessione.
 
@@ -40,10 +40,10 @@ Account utilizzato per accedere a CRM Salesforce.
 Password utilizzata per accedere a CRM Salesforce.
 
    * **[!UICONTROL Client identifier]**
-Per sapere dove trovare l’identificatore client, consulta questa  [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Per sapere dove trovare l’identificatore client, consulta questo [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL Security token]**
-Per sapere dove trovare il token di sicurezza, consulta questa  [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Per sapere dove trovare il token di sicurezza, consulta questo [page](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL API version]**
 Seleziona la versione dell’API.
@@ -55,15 +55,15 @@ Seleziona la versione dell’API.
    >
    >Per approvare la configurazione, è necessario disconnettersi e accedere nuovamente alla console Adobe Campaign.
 
-1. Controlla lo schema generato in Adobe Campaign nel nodo **[!UICONTROL Administration > Configuration > Data schemas]** .
+1. Controlla lo schema generato in Adobe Campaign nel **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
 
-   Esempio per lo schema **Salesforce**:
+   Esempio per **Salesforce** schema:
 
    ![](assets/crm_connectors_sfdc_table.png)
 
 1. Una volta creato lo schema, puoi sincronizzare automaticamente le enumerazioni da Salesforce ad Adobe Campaign.
 
-   A questo scopo, fai clic sul collegamento **[!UICONTROL Synchronizing enumerations...]** e seleziona l’enumerazione Adobe Campaign che corrisponde all’enumerazione Salesforce.
+   A questo scopo, fai clic sul pulsante **[!UICONTROL Synchronizing enumerations...]** collega e seleziona l’enumerazione Adobe Campaign che corrisponde all’enumerazione Salesforce.
 
 
 
@@ -71,12 +71,12 @@ Seleziona la versione dell’API.
 
    >[!NOTE]
    >
-   >Puoi sostituire tutti i valori di un&#39;enumerazione Adobe Campaign con quelli del CRM: a questo scopo, seleziona **[!UICONTROL Yes]** nella colonna **[!UICONTROL Replace]** .
+   >Puoi sostituire tutti i valori di un&#39;enumerazione Adobe Campaign con quelli del CRM: a questo scopo, seleziona **[!UICONTROL Yes]** in **[!UICONTROL Replace]** colonna.
 
 
-   Fare clic su **[!UICONTROL Next]** e quindi su **[!UICONTROL Start]** per iniziare a importare l&#39;elenco.
+   Fai clic su **[!UICONTROL Next]** e poi **[!UICONTROL Start]** per iniziare a importare l’elenco.
 
-1. Controlla i valori importati nel menu **[!UICONTROL Administration > Platform > Enumerations]** .
+1. Controlla i valori importati nella **[!UICONTROL Administration > Platform > Enumerations]** menu.
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
@@ -86,7 +86,7 @@ Seleziona la versione dell’API.
 
 Campaign e Salesforce.com sono ora connessi. È possibile impostare la sincronizzazione dei dati tra i due sistemi.
 
-Per sincronizzare i dati tra i dati di Adobe Campaign e SFDC, devi creare un flusso di lavoro e utilizzare l’attività **[!UICONTROL CRM connector]** .
+Per sincronizzare i dati tra i dati di Adobe Campaign e SFDC, devi creare un flusso di lavoro e utilizzare il **[!UICONTROL CRM connector]** attività.
 
 ![](assets/crm_connectors_sfdc_wf.png)
 

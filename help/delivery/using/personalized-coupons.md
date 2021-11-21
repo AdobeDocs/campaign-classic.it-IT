@@ -21,9 +21,9 @@ L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiu
 
 >[!NOTE]
 >
->La gestione dei coupon è un pacchetto che deve essere installato. Per confermare la gestione del coupon, controlla **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+>La gestione dei coupon è un pacchetto che deve essere installato. Per confermare di avere Gestione Coupon, controlla **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 >
->I dati dei coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consulta [questa sezione](../../platform/using/get-started-data-import-export.md).
+>I dati dei coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, fare riferimento a [questa sezione](../../platform/using/get-started-data-import-export.md).
 
 ## Creazione di un coupon {#creating-a-coupon}
 
@@ -39,26 +39,26 @@ Prima di seguire i passaggi seguenti, assicurati di conoscere il tipo di coupon 
    ![](assets/deliv_coup_01.png)
 
 1. Fai clic sul pulsante **[!UICONTROL New]**.
-1. Immetti il nome del coupon nel campo **[!UICONTROL Label]** . Un codice univoco è stato immesso automaticamente in **[!UICONTROL Coupon code]**. Puoi mantenere il codice o inserirne uno nuovo.
+1. Immettere il nome del coupon in **[!UICONTROL Label]** campo . È stato immesso automaticamente un codice univoco in **[!UICONTROL Coupon code]**. Puoi mantenere il codice o inserirne uno nuovo.
 
    ![](assets/deliv_coup_02.png)
 
-1. Scegliere **[!UICONTROL Start date]** e **[!UICONTROL End date]** per impostare il periodo in cui il coupon è valido.
+1. Scegli **[!UICONTROL Start date]** e **[!UICONTROL End date]** impostare il periodo in cui la cedola è valida.
 1. In **[!UICONTROL Coupon type]**, scegli Anonymous o Individuale.
 
-   **[!UICONTROL Anonymous coupons]** : Un coupon anonimo è identico per tutti i destinatari. Conferma che Anonymous sia selezionato nel menu **Tipo di coupon** e fai clic su **Salva** per generare il coupon.
+   **[!UICONTROL Anonymous coupons]** : Un coupon anonimo è identico per tutti i destinatari. Conferma che l’opzione Anonymous sia selezionata nella **Tipo di coupon** menu e fai clic su **Salva** per generare il coupon.
 
    **[!UICONTROL Individual coupons]** : Un singolo coupon può essere ulteriormente personalizzato con codici coupon aggiuntivi. Ad esempio, viene creato un coupon individuale per una vendita presso un negozio di attrezzature sportive. Tuttavia, l&#39;elenco dei beneficiari è lungo e non condividono lo stesso entusiasmo per un solo sport. È possibile aggiungere nomi di codice per il singolo coupon in base a uno sport (ad esempio calcio, calcio, baseball, ecc.) e invia ogni codice ai destinatari applicabili.
 
-   1. Quando si sceglie Individuale, viene visualizzata una nuova scheda, Coupon, in basso a sinistra. Vai alla scheda **[!UICONTROL Coupons]** e fai clic su **[!UICONTROL Add]**.
+   1. Quando si sceglie Individuale, viene visualizzata una nuova scheda, Coupon, in basso a sinistra. Vai a **[!UICONTROL Coupons]** e fai clic su **[!UICONTROL Add]**.
    1. Inserisci un codice univoco per il singolo coupon quando richiesto dalla finestra pop-up.
-   1. Fare clic su **[!UICONTROL Save]** per generare il coupon.
+   1. Fai clic su **[!UICONTROL Save]** per generare il coupon.
 
-   Per ulteriori dettagli sulla scheda Coupon, vedere [Configurazione di singoli coupon](#configuring-individual-coupons).
+   Per ulteriori dettagli sulla scheda Coupon, vedi [Configurazione di singoli coupon](#configuring-individual-coupons).
 
    >[!NOTE]
    >
-   >I singoli coupon possono essere importati in massa. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, consulta [questa sezione](../../platform/using/get-started-data-import-export.md).
+   >I singoli coupon possono essere importati in massa. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, fare riferimento a [questa sezione](../../platform/using/get-started-data-import-export.md).
 
 ### Configurazione di singoli coupon {#configuring-individual-coupons}
 
@@ -71,7 +71,7 @@ La scheda Coupon è disponibile solo con singoli coupon. Dopo che un coupon è a
 * **[!UICONTROL Channel]** : Il canale utilizzato per inviare il coupon.
 * **[!UICONTROL Address]** : Gli indirizzi e-mail dei destinatari.
 
-I valori per **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** vengono completati automaticamente. Tuttavia, i valori per **[!UICONTROL redeemed on]** non vengono recuperati da Campaign. È possibile completarli importando un file con i dettagli per il rimborso delle cedole.
+Valori per **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** vengono completati automaticamente. Tuttavia, i valori per **[!UICONTROL redeemed on]** non vengono recuperati da Campaign. È possibile completarli importando un file con i dettagli per il rimborso delle cedole.
 
 ## Inserimento di un coupon in una consegna e-mail {#inserting-a-coupon-into-an-email-delivery}
 
@@ -92,12 +92,12 @@ Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzion
 
    ![](assets/deliv_coup_06.png)
 
-1. Nella barra degli strumenti, fai clic su **[!UICONTROL Properties]** e scegli la scheda **[!UICONTROL Advanced]** .
+1. Nella barra degli strumenti, fai clic su **[!UICONTROL Properties]** e scegli la **[!UICONTROL Advanced]** scheda .
 1. Fai clic sull’icona della cartella per **[!UICONTROL Coupon management]**.
 
    ![](assets/deliv_coup_07.png)
 
-1. Scegli il coupon e fai clic su **[!UICONTROL Ok]**. Fare nuovamente clic su **[!UICONTROL Ok]**.
+1. Scegli il coupon e fai clic su **[!UICONTROL Ok]**. Fai clic su **[!UICONTROL Ok]** di nuovo.
 
    ![](assets/deliv_coup_08.png)
 
@@ -118,7 +118,7 @@ Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzion
       Il coupon viene inserito nel messaggio come codice anziché come nome assegnato. Il codice viene utilizzato all’interno del modello dati di ootb di Campaign.
    ![](assets/deliv_coup_12.png)
 
-1. Esegui un test per confermare il nome assegnato al coupon. Vai alla scheda **[!UICONTROL Preview]** e fai clic su **[!UICONTROL Test personalization]**. Scegli un destinatario per il test.
+1. Esegui un test per confermare il nome assegnato al coupon. Vai a **[!UICONTROL Preview]** e fai clic su **[!UICONTROL Test personalization]**. Scegli un destinatario per il test.
 
    ![](assets/deliv_coup_13.png)
 
@@ -136,20 +136,20 @@ Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzion
 
 >[!NOTE]
 >
->Per istruzioni su come gestire i coupon insufficienti per una consegna, consulta [Gestione dei coupon insufficienti](#managing-insufficient-coupons)
+>Per istruzioni su come gestire i coupon insufficienti per una consegna, vedi [Gestione dei coupon insufficienti](#managing-insufficient-coupons)
 
 Per confermare l’esito positivo della consegna:
 
 1. Vai a **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**.
-1. Fai clic sulla scheda **[!UICONTROL Deliveries]** .
+1. Fai clic sul pulsante **[!UICONTROL Deliveries]** scheda .
 
    ![](assets/deliv_coup_17.png)
 
-   Lo stato indica come **[!UICONTROL Finished]** per una consegna riuscita.
+   Lo stato viene letto come **[!UICONTROL Finished]** per una consegna riuscita.
 
 >[!NOTE]
 >
->Per impostazione predefinita, il modulo di gestione delle cedole utilizza una tabella **nms:recipient** . [Ulteriori informazioni](../../configuration/using/about-data-model.md#default-recipient-table).
+>Per impostazione predefinita, il modulo di gestione delle cedole utilizza un **nms:recipient** tabella. [Ulteriori informazioni](../../configuration/using/about-data-model.md#default-recipient-table).
 >
 >Scopri come utilizzare una tabella dei destinatari personalizzata [in questa pagina](../../configuration/using/about-custom-recipient-table.md).
 
@@ -159,12 +159,12 @@ L’analisi della consegna si interrompe se ci sono meno coupon dei messaggi. In
 
 1. Passa alla finestra di consegna e-mail.
 1. Fai clic su **[!UICONTROL To]**.
-1. In **[!UICONTROL Select target]**, vai alla scheda **[!UICONTROL Exclusions]** .
+1. In **[!UICONTROL Select target]**, vai al **[!UICONTROL Exclusions]** scheda .
 
    ![](assets/deliv_coup_18.png)
 
 1. Nella sezione delle impostazioni di esclusione, fai clic su **[!UICONTROL Edit]**.
-1. Immetti il numero di messaggi da inviare in **[!UICONTROL Limit delivery to...messages]** e fai clic su **[!UICONTROL Ok]**. Puoi inviare la consegna.
+1. Immettere il numero di messaggi che si desidera inviare **[!UICONTROL Limit delivery to...messages]** e fai clic su **[!UICONTROL Ok]**. Puoi inviare la consegna.
 
    ![](assets/deliv_coup_19.png)
 

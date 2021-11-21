@@ -17,19 +17,19 @@ ht-degree: 5%
 
 ![](../../assets/v7-only.svg)
 
-I parametri di consegna devono essere configurati nella cartella **serverConf.xml** .
+I parametri di consegna devono essere configurati nel **serverConf.xml** cartella.
 
-* **Configurazione** DNS: specifica il dominio di consegna e gli indirizzi IP (o host) dei server DNS utilizzati per rispondere alle query DNS di tipo MX effettuate dal modulo MTA a  **`<dnsconfig>`** partire da .
+* **Configurazione DNS**: specifica il dominio di consegna e gli indirizzi IP (o host) dei server DNS utilizzati per rispondere alle query DNS di tipo MX effettuate dal modulo MTA dal **`<dnsconfig>`** a partire da .
 
    >[!NOTE]
    >
-   >Il parametro **nameServers** è essenziale per un&#39;installazione in Windows. Per un&#39;installazione in Linux, deve essere lasciata vuota.
+   >La **nameServers** è essenziale per un&#39;installazione in Windows. Per un&#39;installazione in Linux, deve essere lasciata vuota.
 
    ```
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Puoi anche eseguire le seguenti configurazioni in base alle tue esigenze e impostazioni: configura un [relay SMTP](#smtp-relay), adatta il numero di [processi secondari MTA](#mta-child-processes), [Gestisci traffico SMTP in uscita](#managing-outbound-smtp-traffic-with-affinities).
+Puoi anche eseguire le seguenti configurazioni in base alle tue esigenze e impostazioni: configurare un [relè SMTP](#smtp-relay), adegua il numero di [Processi figlio MTA](#mta-child-processes), [Gestione del traffico SMTP in uscita](#managing-outbound-smtp-traffic-with-affinities).
 
 ## relè SMTP {#smtp-relay}
 
@@ -37,7 +37,7 @@ Il modulo MTA agisce come agente nativo di trasferimento della posta per la tras
 
 È tuttavia possibile sostituirlo con un server relay se richiesto dal criterio di sicurezza. In tal caso, il throughput globale sarà quello relay (purché il throughput del server relay sia inferiore a quello di Adobe Campaign).
 
-In questo caso, questi parametri vengono impostati configurando il server SMTP nella sezione **`<relay>`** . È necessario specificare l’indirizzo IP (o l’host) del server SMTP utilizzato per trasferire la posta e la relativa porta associata (25 per impostazione predefinita).
+In questo caso, questi parametri vengono impostati configurando il server SMTP nel **`<relay>`** sezione . È necessario specificare l’indirizzo IP (o l’host) del server SMTP utilizzato per trasferire la posta e la relativa porta associata (25 per impostazione predefinita).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -49,13 +49,13 @@ In questo caso, questi parametri vengono impostati configurando il server SMTP n
 
 ## Processi figlio MTA {#mta-child-processes}
 
-È possibile controllare il numero di processi figlio (maxSpareServers per impostazione predefinita 2) al fine di ottimizzare le prestazioni di trasmissione in base alla potenza della CPU dei server e alle risorse di rete disponibili. Questa configurazione deve essere effettuata nella sezione **`<master>`** della configurazione MTA su ogni singolo computer.
+È possibile controllare il numero di processi figlio (maxSpareServers per impostazione predefinita 2) al fine di ottimizzare le prestazioni di trasmissione in base alla potenza della CPU dei server e alle risorse di rete disponibili. Questa configurazione deve essere effettuata nella **`<master>`** sezione della configurazione MTA su ogni singolo computer.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Consulta anche [Ottimizzazione dell&#39;invio di e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
+Fai riferimento anche a [Ottimizzazione dell’invio di e-mail](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Gestire il traffico SMTP in uscita con le affinità {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -67,9 +67,9 @@ Puoi migliorare il traffico SMTP in uscita tramite affinità con indirizzi IP.
 
 A questo scopo, esegui i seguenti passaggi:
 
-1. Immetti le affinità nella sezione **`<ipaffinity>`** del file **serverConf.xml**.
+1. Immetti le affinità in **`<ipaffinity>`** della sezione **serverConf.xml** file.
 
-   Un&#39;affinità può avere diversi nomi diversi: per separarli, utilizzare il carattere **;**.
+   Un&#39;affinità può avere diversi nomi diversi: per separarli, utilizza **;** carattere.
 
    Esempio:
 
@@ -78,15 +78,15 @@ A questo scopo, esegui i seguenti passaggi:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Per visualizzare i parametri rilevanti, fai riferimento al file **serverConf.xml** .
+   Per visualizzare i parametri rilevanti, fai riferimento alla sezione **serverConf.xml** file.
 
-1. Per abilitare la selezione di affinità negli elenchi a discesa, devi aggiungere i nomi di affinità nell&#39;enumerazione **IPAffinity**.
+1. Per abilitare la selezione dell’affinità negli elenchi a discesa, devi aggiungere i nomi di affinità in **IPAffinity** enumerazione.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Le enumerazioni sono descritte in [questo documento](../../platform/using/managing-enumerations.md).
+   >Le enumerazioni sono descritte in [presente documento](../../platform/using/managing-enumerations.md).
 
    Puoi quindi selezionare l’affinità da utilizzare, come mostrato di seguito per le tipologie:
 

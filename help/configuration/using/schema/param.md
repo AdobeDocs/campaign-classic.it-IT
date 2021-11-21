@@ -47,12 +47,12 @@ Questo elemento ti consente di definire un parametro per la chiamata a un metodo
 
 ## Descrizione attributo {#attribute-description-12}
 
-* **desc (stringa)**: descrizione che riguarda l’ `<param>` elemento.
+* **desc (stringa)**: descrizione che riguarda `<param>` elemento.
 * **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all’input (in) o all’output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
-* **etichetta (stringa)**:  `<param>` etichetta
-* **localizzabile (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
-* **nome (MNTOKEN)**: nome interno  `<param>`
-* **tipo (stringa)**: questo attributo definisce il tipo di  `<param>` elemento
+* **label (stringa)**: `<param>` etichetta
+* **localizable (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
+* **nome (MNTOKEN)**: nome interno `<param>`
+* **type (string)**: questo attributo definisce il tipo di `<param>` elemento
 
    Elenco dei tipi disponibili:
 

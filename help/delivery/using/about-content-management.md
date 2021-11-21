@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/common.svg)
 
-Il modulo Adobe Campaign Content Manager è un [pacchetto integrato ](../../installation/using/installing-campaign-standard-packages.md) specifico di Campaign Classic che è possibile installare per creare newsletter o siti web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+Il modulo Adobe Campaign Content Manager è uno specifico Campaign Classic [pacchetto integrato](../../installation/using/installing-campaign-standard-packages.md) che è possibile installare per creare newsletter o siti web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >

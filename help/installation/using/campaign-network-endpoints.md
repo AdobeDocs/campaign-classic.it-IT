@@ -21,7 +21,7 @@ Di seguito sono elencati i diversi endpoint utilizzati in Campaign Classic.
 
 | Contesto | URL |
 |--- |--- |
-| Endpoint browser | `https://*.experiencecloud.adobe.com` (provider SSO)<br>`https://*.campaign.adobe.com` (istanza Campaign)<br>`https://adobeid-na1.services.adobe.com`  (accesso Adobe) |
+| Endpoint browser | `https://*.experiencecloud.adobe.com` (provider SSO)<br>`https://*.campaign.adobe.com` (Istanza campagna)<br>`https://adobeid-na1.services.adobe.com` (Adobe di accesso) |
 | Rapporti sul recapito messaggi | `https://deliverablity.neolane.net` |
 | Rendering della casella in entrata (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | URL di branding, pagine mirror, tracking, fileref (procedura guidata di distribuzione) | Controlla gli URL configurati per te. |

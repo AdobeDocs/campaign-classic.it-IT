@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-La schermata di creazione e configurazione del modulo di input è accessibile dalla cartella **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** della console client di Adobe Campaign:
+La schermata di creazione e configurazione del modulo di input è accessibile dal **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** cartella della console client di Adobe Campaign:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

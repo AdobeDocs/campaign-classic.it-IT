@@ -19,23 +19,23 @@ ht-degree: 2%
 
 ## Creare un nuovo sondaggio {#creating-a-new-survey}
 
-Questo capitolo descrive la progettazione di un modulo di tipo **Survey** utilizzando Adobe Campaign, nonché le opzioni e le configurazioni disponibili. Adobe Campaign consente di rendere questo sondaggio disponibile agli utenti e raccogliere e archiviare le risposte nel database.
+Questo capitolo descrive la progettazione di un **Sondaggio** digitare il modulo con Adobe Campaign, nonché le opzioni e le configurazioni disponibili. Adobe Campaign consente di rendere questo sondaggio disponibile agli utenti e raccogliere e archiviare le risposte nel database.
 
-I moduli web sono accessibili tramite il nodo **[!UICONTROL Resources > Online > Web applications]** della struttura. Per creare un sondaggio, fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco delle applicazioni oppure fai clic con il pulsante destro del mouse sull’elenco e scegli **[!UICONTROL New]**.
+I moduli web sono accessibili tramite **[!UICONTROL Resources > Online > Web applications]** nodo dell&#39;albero. Per creare un sondaggio, fai clic sul pulsante **[!UICONTROL New]** fare clic con il pulsante destro del mouse sull&#39;elenco e scegliere **[!UICONTROL New]**.
 
 Seleziona il modello di sondaggio (**[!UICONTROL newSurvey]** per impostazione predefinita).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-Le pagine del modulo vengono create utilizzando un editor speciale che consente di definire e configurare (testo) campi di input, campi di selezione (elenchi, caselle di controllo, ecc.) ed elementi statici (immagini, contenuto HTML, ecc.). Essi possono essere raccolti in &quot;contenitori&quot; e disposti secondo i requisiti. [Ulteriori informazioni](#adding-questions)).
+Le pagine del modulo vengono create utilizzando un editor speciale che consente di definire e configurare (testo) campi di input, campi di selezione (elenchi, caselle di controllo, ecc.) ed elementi statici (immagini, contenuto di HTML, ecc.). Essi possono essere raccolti in &quot;contenitori&quot; e disposti secondo i requisiti. [Ulteriori informazioni](#adding-questions)).
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come definire il contenuto e creare layout di schermo per un modulo web, vedere [questo documento](../../web/using/about-web-forms.md).
+>Per ulteriori informazioni su come definire il contenuto e creare layout di schermo per un modulo Web, fare riferimento a [presente documento](../../web/using/about-web-forms.md).
 
 ## Aggiungi campi {#adding-fields}
 
-I campi di un modulo consentono agli utenti di immettere informazioni e selezionare opzioni. Per ogni pagina del modulo, vengono create tramite il primo pulsante nella barra degli strumenti utilizzando il menu **[!UICONTROL Add using the wizard]** .
+I campi di un modulo consentono agli utenti di immettere informazioni e selezionare opzioni. Per ogni pagina del modulo, vengono create tramite il primo pulsante nella barra degli strumenti utilizzando **[!UICONTROL Add using the wizard]** menu.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -47,16 +47,16 @@ I campi di un modulo consentono agli utenti di immettere informazioni e selezion
 
 Quando aggiungi un campo a un sondaggio, devi selezionarne il tipo. Sono disponibili le seguenti opzioni:
 
-1. **[!UICONTROL Answer a question]**: questa opzione consente di dichiarare un nuovo campo (noto come &quot;campo archiviato&quot;) per memorizzare le risposte. In questo caso, tutti i valori raccolti vengono salvati, anche quando un partecipante compila il modulo più di una volta. Questa modalità di archiviazione è disponibile solo in **Sondaggi**. [Ulteriori informazioni](../../surveys/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Answer a question]**: questa opzione consente di dichiarare un nuovo campo (noto come &quot;campo archiviato&quot;) per memorizzare le risposte. In questo caso, tutti i valori raccolti vengono salvati, anche quando un partecipante compila il modulo più di una volta. Questa modalità di archiviazione è disponibile solo in **Indagini**. [Ulteriori informazioni](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Edit a recipient]**: questa opzione consente di selezionare un campo nel database. In questo caso, le risposte utente verranno memorizzate in questo campo. Per ciascun partecipante, viene mantenuto solo l’ultimo valore salvato e aggiunto ai dati del profilo.
 1. **[!UICONTROL Add a variable]**: questa opzione consente di creare una configurazione in modo che le informazioni non vengano memorizzate nel database. Le variabili locali possono essere dichiarate a monte. Puoi anche aggiungerli direttamente durante la creazione del campo.
 1. **[!UICONTROL Import an existing question]**: questa opzione ti consente di importare le domande esistenti create in altri sondaggi.
 
    >[!NOTE]
    >
-   >Le modalità di archiviazione e le importazioni dei campi sono descritte in [questa sezione](../../surveys/using/managing-answers.md#storing-collected-answers).
+   >Le modalità di archiviazione e le importazioni sul campo sono descritte in [questa sezione](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-La natura del campo da aggiungere (elenco a discesa, campo di testo, caselle di controllo, ecc.) si adatta alla modalità di archiviazione selezionata. Puoi modificarlo utilizzando il campo **[!UICONTROL Type]** della scheda **[!UICONTROL General]** , ma accertati di mantenere la coerenza con il tipo di dati.
+La natura del campo da aggiungere (elenco a discesa, campo di testo, caselle di controllo, ecc.) si adatta alla modalità di archiviazione selezionata. Puoi modificarla utilizzando la **[!UICONTROL Type]** campo **[!UICONTROL General]** , ma assicurati di rimanere coerente con il tipo di dati.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -68,7 +68,7 @@ I sondaggi online si basano sulle funzionalità delle applicazioni web. Le funzi
 
 ### Scelta multipla {#multiple-choice}
 
-Per i controlli di tipo **[!UICONTROL Multiple choice]**, è possibile definire un numero minimo e massimo di selezioni. Ad esempio, questa opzione consente di forzare la selezione ad almeno i valori **2** e al massimo i valori **4** dalle opzioni disponibili:
+Per **[!UICONTROL Multiple choice]** è possibile definire un numero minimo e massimo di selezioni. Ad esempio, questa opzione consente di forzare la selezione ad almeno **2** al massimo **4** dalle opzioni disponibili:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -84,13 +84,13 @@ La configurazione corrispondente è la seguente:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-Inoltre, il percorso di archiviazione per questo campo di input deve essere di tipo **[!UICONTROL Multiple values]** **campo archiviato**:
+Inoltre, il percorso di archiviazione per questo campo di input deve essere un **[!UICONTROL Multiple values]** type **campo archiviato**:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
->* Questa funzionalità è disponibile solo per i moduli di tipo **Survey**.
+>* Questa funzionalità è disponibile solo per **Sondaggio** digitare i moduli.
 >* Questa opzione non è compatibile con la visualizzazione casuale delle domande. [Ulteriori informazioni](#adding-questions).
 
 
@@ -98,19 +98,19 @@ Inoltre, il percorso di archiviazione per questo campo di input deve essere di t
 
 Esistono due tipi di contenitori: standard e domanda. I contenitori standard vengono utilizzati per configurare il layout di pagina e la visualizzazione condizionale in una pagina. [Ulteriori informazioni](../../web/using/about-web-forms.md).
 
-Utilizza un contenitore **Domanda** per aggiungere una domanda alla pagina e per inserire le possibili risposte sotto nella gerarchia. Le risposte degli utenti alle domande inserite in questo tipo di contenitore possono essere analizzate nei rapporti.
+Utilizza un **Domanda** per aggiungere una domanda alla pagina e per inserire le possibili risposte sotto nella gerarchia. Le risposte degli utenti alle domande inserite in questo tipo di contenitore possono essere analizzate nei rapporti.
 
 >[!CAUTION]
 >
->Non inserire mai un contenitore **Domanda** sotto un altro contenitore **Domanda** nella gerarchia.
+>Non inserire mai un **Domanda** contenitore sotto un altro **Domanda** nella gerarchia.
 
 ![](assets/s_ncs_admin_question_label.png)
 
-L’etichetta della domanda viene inserita nel campo dell’etichetta. In questo caso, verrà applicato lo stile del foglio di stile del modulo. Seleziona l’opzione **[!UICONTROL Enter the title in HTML format]** per personalizzarla. In questo modo potrai accedere all’editor HTML.
+L’etichetta della domanda viene inserita nel campo dell’etichetta. In questo caso, verrà applicato lo stile del foglio di stile del modulo. Seleziona la **[!UICONTROL Enter the title in HTML format]** per personalizzare. In questo modo potrai accedere all’editor di HTML.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’utilizzo dell’editor HTML, consulta [questo documento](../../web/using/about-web-forms.md) .
+>Fai riferimento a [presente documento](../../web/using/about-web-forms.md) per ulteriori informazioni sull’utilizzo dell’editor di HTML.
 
 Ad esempio:
 
@@ -122,7 +122,7 @@ Nell’esempio precedente, il rendering sarà il seguente:
 
 >[!NOTE]
 >
->Ogni domanda ha un contenitore di tipo **Domanda**.
+>Ogni domanda ha **Domanda** contenitore di tipi.
 
 Puoi abilitare il disegno casuale delle domande da parte di Adobe Campaign. È quindi possibile specificare il numero di domande da visualizzare nella pagina, nel campo situato nella parte inferiore della finestra di configurazione.
 
@@ -136,4 +136,4 @@ Quando la pagina viene aggiornata, le domande visualizzate non sono le stesse.
 
 >[!CAUTION]
 >
->Quando visualizzi una domanda in modo casuale (**[!UICONTROL Display randomly]** opzione selezionata nella pagina), fai attenzione a non utilizzare più domande di scelta per le quali una o più selezioni sono obbligatorie.
+>Quando visualizzi una domanda in modo casuale (**[!UICONTROL Display randomly]** opzione selezionata nella pagina), fare attenzione a non utilizzare domande a scelta multipla per le quali una o più selezioni sono obbligatorie.

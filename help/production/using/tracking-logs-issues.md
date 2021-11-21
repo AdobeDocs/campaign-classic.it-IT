@@ -19,15 +19,15 @@ ht-degree: 13%
 
 Ci possono essere diversi motivi per cui i registri di tracciamento non vengono inoltrati. Si consiglia di controllare le seguenti informazioni:
 
-* **Il flusso di lavoro di****tracciamento presenta errori?**
+* **Effettua la** Tracking **workflow con errori?**
 
    Fai riferimento a [Monitoraggio dei flussi di lavoro tecnici](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
-* **Il modulo****trackinglogdrunning è sul server?**
+* **È il modulo** trackinglogd **sul server?**
 
-   Fare riferimento a [File di registro](../../production/using/log-files.md).
+   Fai riferimento a [File di registro](../../production/using/log-files.md).
 
 * **Sono state apportate modifiche?**
 

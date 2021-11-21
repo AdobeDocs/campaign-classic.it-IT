@@ -8,8 +8,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Scopri come orchestrare processi e attività con i flussi di lavoro di Adobe Cam
 
 ## Come posso importare dati in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Scopri le best practice per importare dati in [questa sezione](../../platform/using/import-export-best-practices.md).
+Scopri le best practice per importare i dati in [questa sezione](../../platform/using/import-export-best-practices.md).
 
 ## Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution-}
 

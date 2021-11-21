@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Per impostazione predefinita, i flussi di lavoro descritti di seguito sono installati con il modulo **Privacy Data Protection Regulation** . Per ulteriori informazioni su questo modulo, consulta questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
+I flussi di lavoro descritti di seguito sono installati con **Regolamento sulla protezione dei dati sulla privacy** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
@@ -29,7 +29,7 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito sono insta
   <tr> 
    <td> <span class="uicontrol">Raccogli richieste di privacy</span> <br /> </td> 
    <td> <span class="uicontrol">collectPrivacyRequests</span> <br /> </td> 
-   <td> Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di privacy.<br /> </td> 
+   <td> Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di accesso a dati personali.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Eliminare i dati delle richieste di privacy</span> <br /> </td> 

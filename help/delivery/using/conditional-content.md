@@ -26,7 +26,7 @@ Configurando i campi di contenuto condizionale, puoi creare una personalizzazion
 
 Nell’esempio seguente, imparerai a creare un messaggio personalizzato in modo dinamico in base al genere e agli interessi del destinatario.
 
-* Visualizzazione che mostra &quot;Mr&quot; o &quot;Ms&quot; in base al valore del campo **[!UICONTROL Gender]** (M o F) nell&#39;origine dati,
+* Visualizzazione che mostra &quot;Mr&quot; o &quot;Ms&quot; in base al valore del **[!UICONTROL Gender]** campo (M o F) nell’origine dati,
 * Assemblaggio personalizzato di newsletter o offerte promozionali in base agli interessi indicati o rilevati:
 
    * Interesse 1 — > Blocco 1
@@ -42,20 +42,20 @@ Per creare contenuto condizionale in base al valore di un campo, procedi come se
 
    Gli elementi di personalizzazione vengono inseriti nel corpo del messaggio. È ora necessario configurarli.
 
-1. Quindi, compila i parametri dell&#39;espressione **if** .
+1. Quindi, compila i parametri del **if** espressione.
 
    Per eseguire questa operazione:
 
-   * Seleziona il primo elemento dell’espressione, **`<field>`** (per impostazione predefinita, questo elemento viene evidenziato durante l’inserimento dell’espressione **if**), quindi fai clic sull’icona di personalizzazione per sostituirlo con il campo di test.
+   * Seleziona il primo elemento dell’espressione, **`<field>`**, (per impostazione predefinita, questo elemento viene evidenziato durante l&#39;inserimento del **if** espressione) e fai clic sull&#39;icona di personalizzazione per sostituirla con il campo di test.
 
       ![](assets/s_ncs_user_conditional_content03.png)
 
-   * Sostituisci **`<value>`** con il valore del campo per il quale la condizione verrà soddisfatta. Questo valore deve essere racchiuso tra virgolette.
+   * Sostituisci **`<value>`** con il valore del campo per il quale verrà soddisfatta la condizione. Questo valore deve essere racchiuso tra virgolette.
    * Specifica il contenuto da inserire quando la condizione viene soddisfatta. Può essere costituito da testo, un’immagine, un modulo, un collegamento ipertestuale, ecc.
 
       ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Preview]** per visualizzare il contenuto del messaggio in base al destinatario della consegna:
+1. Fai clic sul pulsante **[!UICONTROL Preview]** per visualizzare il contenuto del messaggio in base al destinatario della consegna:
 
    * Selezione di un destinatario per il quale la condizione è vera:
 
@@ -65,13 +65,13 @@ Per creare contenuto condizionale in base al valore di un campo, procedi come se
 
       ![](assets/s_ncs_user_conditional_content06.png)
 
-Puoi aggiungere altri casi e definire contenuti diversi in base ai valori di uno o più campi. A questo scopo, utilizza **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Queste espressioni sono configurate nello stesso modo dell&#39;espressione **if**.
+Puoi aggiungere altri casi e definire contenuti diversi in base ai valori di uno o più campi. A questo scopo, utilizza **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Queste espressioni sono configurate nello stesso modo della **if** espressione.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
 >[!CAUTION]
 >
->Per rispettare la sintassi JavaScript, i caratteri **%> &lt;%** devono essere eliminati dopo l&#39;aggiunta delle condizioni **Else** e **Else** .
+>Per rispettare la sintassi JavaScript, il **%> &lt;%** i caratteri devono essere eliminati dopo l’aggiunta **Else** e **Else se** condizioni.
 
 Fai clic su **[!UICONTROL Preview]** e seleziona un destinatario per visualizzare il contenuto condizionale.
 
@@ -81,8 +81,8 @@ Fai clic su **[!UICONTROL Preview]** e seleziona un destinatario per visualizzar
 
 Nell’esempio seguente, imparerai a creare un’e-mail multilingue. Il contenuto verrà visualizzato in una lingua o nell’altra a seconda della lingua preferita del destinatario.
 
-1. Crea un’e-mail e seleziona la popolazione target. In questo esempio, la condizione per visualizzare una versione o l&#39;altra sarà basata sul valore **Language** del profilo del destinatario. In questo esempio, questi valori sono impostati su **EN**, **FR**, **ES**.
-1. Nel contenuto HTML dell’e-mail, fai clic sulla scheda **[!UICONTROL Source]** e incolla il seguente codice:
+1. Crea un’e-mail e seleziona la popolazione target. In questo esempio, la condizione per visualizzare una versione o l’altra sarà basata sui **Lingua** valore del profilo del destinatario. In questo esempio, questi valori sono impostati su **IT**, **FR**, **ES**.
+1. Nel contenuto di e-mail HTML, fai clic sul pulsante **[!UICONTROL Source]** imposta e incolla il seguente codice:
 
    ```
    <% if (language == "EN" ) { %>
@@ -103,7 +103,7 @@ Nell’esempio seguente, imparerai a creare un’e-mail multilingue. Il contenut
    <% } %>
    ```
 
-1. Verifica il contenuto delle e-mail nella scheda **[!UICONTROL Preview]** selezionando i destinatari con diverse lingue preferite.
+1. Verifica il contenuto delle e-mail nel **[!UICONTROL Preview]** selezionando i destinatari con diverse lingue preferite.
 
    >[!NOTE]
    >

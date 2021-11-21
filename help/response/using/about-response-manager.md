@@ -21,11 +21,11 @@ Adobe Campaign offre un componente aggiuntivo Gestione della risposta che consen
 
 ## Ipotesi {#hypothesis-concept}
 
-Le ipotesi possono essere configurate in un determinato periodo a partire dalla data di contatto per determinare il comportamento dei target dopo la ricezione di una consegna. Queste ipotesi si basano su una tabella **transaction** che salva gli acquisti e i dettagli di tali acquisti.
+Le ipotesi possono essere configurate in un determinato periodo a partire dalla data di contatto per determinare il comportamento dei target dopo la ricezione di una consegna. Queste ipotesi si basano su un **transazione** tabella che salva gli acquisti e i dettagli di tali acquisti.
 
-Le ipotesi sono limitate nel tempo e possono essere applicate a un gruppo di controllo da confrontare con la popolazione target. I risultati delle ipotesi sono forniti da **indicatori** che vengono aggiornati automaticamente una volta completato il calcolo. Nei rapporti sulle campagne si terrà conto del ROI connesso alle ipotesi.
+Le ipotesi sono limitate nel tempo e possono essere applicate a un gruppo di controllo da confrontare con la popolazione target. I risultati delle ipotesi sono forniti da **indicatori** che vengono aggiornati automaticamente una volta completato il calcolo. Il ROI connesso alle ipotesi sarà preso in considerazione nei rapporti della campagna.
 
-Inoltre, i **report** forniti con Response Manager consentono di riepilogare le informazioni collegate all&#39;aumento del fatturato, al calcolo del margine, nonché al ROI della consegna o dell&#39;offerta.
+Inoltre, il **rapporti** grazie a Response Manager è possibile riepilogare le informazioni collegate all&#39;aumento del fatturato, al calcolo del margine e al ROI della consegna o dell&#39;offerta.
 
 Inoltre, grazie alle linee di dettaglio per l&#39;acquisto, è possibile specificare le ipotesi per concentrarsi su un solo prodotto particolare, ad esempio.
 
@@ -33,7 +33,7 @@ Ad esempio, dopo una consegna che promuove un articolo, desideriamo valutare i r
 
 >[!CAUTION]
 >
->Response Manager è un&#39;opzione **[!UICONTROL Campaign]**. Controlla il contratto di licenza.
+>Response Manager è un **[!UICONTROL Campaign]** opzione . Controlla il contratto di licenza.
 
 Puoi anche calcolare tutte le reazioni per l’intera famiglia del destinatario che ha ricevuto la consegna o l’offerta.
 
@@ -41,7 +41,7 @@ Ciascuna ipotesi è collegata a una singola tabella delle transazioni. Una conse
 
 ## Passaggi di implementazione {#method}
 
-Prima di iniziare a utilizzare Gestione risposte, fai riferimento a [Configurazione](configuration.md) ed esegui le configurazioni necessarie.
+Prima di iniziare a utilizzare Gestione risposte, fai riferimento a [Configurazione](configuration.md) ed eseguire le configurazioni necessarie.
 
 Per lanciare un&#39;ipotesi su una consegna o un&#39;offerta, è necessario definirne il contesto in un modello che verrà utilizzato per ogni ipotesi creata.
 

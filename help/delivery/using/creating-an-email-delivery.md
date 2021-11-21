@@ -21,10 +21,10 @@ Per creare una nuova consegna e-mail, segui i passaggi seguenti:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione delle consegne sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 
 1. Crea una nuova consegna, ad esempio dal dashboard Consegna .
-1. Seleziona il modello di consegna **Email delivery (mail)** o qualsiasi modello di consegna e-mail creato. Per ulteriori informazioni sui modelli di consegna, consulta [questa sezione](about-templates.md).
+1. Selezionare il modello di consegna **Email delivery (mail)** o qualsiasi modello di consegna e-mail creato. Per ulteriori informazioni sui modelli di consegna, consulta [questa sezione](about-templates.md).
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 

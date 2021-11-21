@@ -27,7 +27,7 @@ Il mio flusso di lavoro di tracciamento non riesce, come posso rilevare le linee
 >
 >Disponibile solo per Windows
 
-File di registro di tracciamento danneggiato .../nl6/var/&lt;instance_name>/redir/log/0x0000 log può interrompere il flusso di lavoro di tracciamento. Per rilevare facilmente le linee danneggiate e rimuoverle per riprendere il flusso di lavoro di tracciamento, puoi utilizzare i comandi riportati di seguito.
+File di registro di tracciamento danneggiato .../nl6/var/&lt;instance_name>Il registro /redir/log/0x0000 può interrompere il flusso di lavoro di tracciamento. Per rilevare facilmente le linee danneggiate e rimuoverle per riprendere il flusso di lavoro di tracciamento, puoi utilizzare i comandi riportati di seguito.
 
 ### So in quale file è la linea danneggiata
 
@@ -87,7 +87,7 @@ Quando tenti di accedere ai collegamenti di tracciamento, viene visualizzato il 
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Accedi all&#39;URL di &lt;redirecting_server>/r/test e controlla se il numero di build e localhost sono stati restituiti dalla richiesta.
+1. Accesso &lt;redirection_server>/r/test URL e controlla se il numero di build e localhost sono stati restituiti dalla richiesta.
 
 1. Controlla la configurazione di spareServer nel file serverConf.xml per il server di tracciamento. Questa configurazione deve essere in modalità di reindirizzamento.
 
@@ -104,13 +104,13 @@ Quando tenti di accedere ai collegamenti di tracciamento, viene visualizzato il 
    </redirection>
    ```
 
-1. Controlla manualmente se il file &lt;deliveryID>.xml esiste sul computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> directory (YYYY rappresenta l’anno di consegna).
+1. Controlla manualmente se la &lt;deliveryid>Il file .xml esiste nel computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> directory (AAAA rappresenta l’anno di consegna).
 
-1. Controlla manualmente se &lt;trackingUrlId> può essere trovato nel file &lt;deliveryID>.xml .
+1. Controlla manualmente se &lt;trackingurlid> si trova nella &lt;deliveryid>file .xml.
 
 1. Verifica manualmente l’esistenza di broadlogID nella relativa consegna deliveryID.
 
-1. Controlla le autorizzazioni dei file &lt;deliveryID>.xml in .../nl6/var/&lt;instance_name>/redir/url/year directory.
+1. Controlla &lt;deliveryid>autorizzazioni per i file .xml in .../nl6/var/&lt;instance_name>/redir/url/year directory.
 
    Dovrebbero disporre di almeno 644 autorizzazioni in modo che Apache possa leggere gli url di tracciamento per reindirizzare il collegamento richiesto.
 

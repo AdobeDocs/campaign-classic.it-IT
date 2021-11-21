@@ -27,7 +27,7 @@ Adobe Campaign Classic offre funzionalità di gestione dei dati che consentono d
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**** I flussi di lavoro sono un modo utile per automatizzare i processi di importazione. Sia che importi dati da un file locale o da un SFTP, ti consentono di standardizzare le procedure di gestione dei dati.
+**Flussi di lavoro** sono un modo utile per automatizzare i processi di importazione. Sia che importi dati da un file locale o da un SFTP, ti consentono di standardizzare le procedure di gestione dei dati.
 
 Con i flussi di lavoro, le operazioni di importazione ed esportazione possono essere ripetute automaticamente in base a una pianificazione, ad esempio per automatizzare lo scambio di dati tra diversi sistemi informativi.
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-Inoltre, Campaign Classic fornisce **importazioni ed esportazioni generiche** che consentono di creare occasionali processi di importazione o esportazione.
+Inoltre, Campaign Classic fornisce **importazioni ed esportazioni generiche** che consentono di creare processi occasionali di importazione o esportazione.
 
 Le importazioni e le esportazioni sono configurate in modelli dedicati che è possibile configurare e utilizzare per avviare e monitorare i processi di importazione ed esportazione.
 
@@ -63,6 +63,6 @@ Per ulteriori informazioni, consulta queste sezioni:
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-È necessario seguire diverse [best practice](../../platform/using/import-export-best-practices.md) durante l&#39;esecuzione delle operazioni di importazione ed esportazione per garantire la coerenza dei dati all&#39;interno del database ed evitare errori comuni durante le operazioni di aggiornamento o esportazione.
+Dovresti seguire diversi [best practice](../../platform/using/import-export-best-practices.md) durante l&#39;esecuzione delle operazioni di importazione ed esportazione per garantire la coerenza dei dati all&#39;interno del database ed evitare errori comuni durante le operazioni di aggiornamento o esportazione.
 
-Inoltre, i consigli e i problemi comuni relativi all&#39;utilizzo dei server SFTP sono disponibili in [questa sezione](../../platform/using/sftp-server-usage.md).
+Inoltre, sono disponibili consigli e problemi comuni relativi all’utilizzo dei server SFTP in [questa sezione](../../platform/using/sftp-server-usage.md).

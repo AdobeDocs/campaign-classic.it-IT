@@ -19,7 +19,7 @@ ht-degree: 11%
 
 I campi di personalizzazione sono utilizzati per la personalizzazione di primo livello del contenuto dei messaggi inviati. I campi inseriti in un contenuto principale mostrano la posizione in cui inserire i dati dall’origine dati selezionata.
 
-Ad esempio, il campo di personalizzazione con la sintassi **&lt;%= recipient.LastName %>** indica ad Adobe Campaign di inserire il nome del destinatario nel database (tabella dei destinatari).
+Ad esempio, il campo di personalizzazione con **&lt;%= recipient.LastName %>** indica ad Adobe Campaign di inserire il nome del destinatario nel database (tabella dei destinatari).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#personalization-fields-video)
 
@@ -44,7 +44,7 @@ Per inserire campi di personalizzazione, fai clic sull’icona a discesa accessi
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-Dopo la selezione di un’origine dati (campi destinatario o campo file), l’inserimento assume la forma di un comando che verrà interpretato da Adobe Campaign e sostituito dal valore del campo per un determinato destinatario. La sostituzione fisica può quindi essere visualizzata nella scheda **[!UICONTROL Preview]** .
+Dopo la selezione di un’origine dati (campi destinatario o campo file), l’inserimento assume la forma di un comando che verrà interpretato da Adobe Campaign e sostituito dal valore del campo per un determinato destinatario. La sostituzione fisica può quindi essere visualizzata nella **[!UICONTROL Preview]** scheda .
 
 ## Esempio di campi di personalizzazione {#personalization-fields-example}
 
@@ -52,12 +52,12 @@ Creiamo un’e-mail in cui inseriremo prima il nome del destinatario e quindi la
 
 1. Crea una nuova consegna o apri una consegna di tipo e-mail esistente.
 1. Nella procedura guidata di consegna, fai clic su **[!UICONTROL Subject]** per modificare l’oggetto del messaggio e inserire un oggetto.
-1. Immetti &quot; **[!UICONTROL Special offer for]**&quot; e utilizza il pulsante nella barra degli strumenti per inserire un campo di personalizzazione. Seleziona **[!UICONTROL Recipients>Title]**.
+1. Inserisci &quot; **[!UICONTROL Special offer for]** &quot; e utilizza il pulsante nella barra degli strumenti per inserire un campo di personalizzazione. Seleziona **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
 1. Ripetere l&#39;operazione per inserire il nome del destinatario. Inserisci spazi tra tutti i campi di personalizzazione.
-1. Fai clic su **[!UICONTROL OK]** per convalidare.
+1. Fai clic su **[!UICONTROL OK]** da convalidare.
 1. Inserisci la personalizzazione nel corpo del messaggio. A questo scopo, fai clic sul contenuto del messaggio e fai clic sul pulsante di inserimento del campo .
 1. Seleziona **[!UICONTROL Recipient>Other...]**.
 
@@ -67,17 +67,17 @@ Creiamo un’e-mail in cui inseriremo prima il nome del destinatario e quindi la
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
-1. Fai clic sulla scheda **[!UICONTROL Preview]** per visualizzare il risultato della personalizzazione. Devi selezionare un destinatario per visualizzare il messaggio del destinatario.
+1. Fai clic sul pulsante **[!UICONTROL Preview]** per visualizzare il risultato della personalizzazione. Devi selezionare un destinatario per visualizzare il messaggio del destinatario.
 
    ![](assets/s_ncs_user_insert_custom_field_d.png)
 
    >[!NOTE]
    >
-   >Quando una consegna fa parte di un flusso di lavoro, puoi utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel menu **[!UICONTROL Target extension]** . Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/data-life-cycle.md#target-data).
+   >Quando una consegna fa parte di un flusso di lavoro, puoi utilizzare i dati della tabella del flusso di lavoro temporaneo. Questi dati sono raggruppati nel **[!UICONTROL Target extension]** menu. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Ottimizzazione della personalizzazione {#optimizing-personalization}
 
-Puoi ottimizzare la personalizzazione utilizzando un’opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella scheda **[!UICONTROL Analysis]** delle proprietà di consegna. Per ulteriori informazioni sull’analisi della consegna, consulta [questa sezione](steps-validating-the-delivery.md#analyzing-the-delivery).
+Puoi ottimizzare la personalizzazione utilizzando un’opzione dedicata: **[!UICONTROL Prepare the personalization data with a workflow]**, disponibile nella **[!UICONTROL Analysis]** scheda delle proprietà di consegna. Per ulteriori informazioni sull’analisi della consegna, consulta [questa sezione](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Durante l’analisi della consegna, questa opzione crea ed esegue automaticamente un flusso di lavoro che memorizza in una tabella temporanea tutti i dati collegati alla destinazione, inclusi i dati provenienti da tabelle collegate in FDA.
 
@@ -88,9 +88,9 @@ Ad esempio, se riscontri problemi di prestazioni quando distribuisci a un numero
 Per utilizzare questa opzione, segui i passaggi seguenti:
 
 1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un’attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/query.md).
-1. Aggiungi un’attività **[!UICONTROL Email delivery]** al flusso di lavoro e aprila. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/delivery.md).
-1. Vai alla scheda **[!UICONTROL Analysis]** del **[!UICONTROL Delivery properties]** e seleziona l&#39;opzione **[!UICONTROL Prepare the personalization data with a workflow]**.
+1. In **[!UICONTROL Targeting and workflows]** scheda della campagna, aggiungi una **Query** al flusso di lavoro. Per ulteriori informazioni sull’utilizzo di questa attività, consulta [questa sezione](../../workflow/using/query.md).
+1. Aggiungi un **[!UICONTROL Email delivery]** al flusso di lavoro e aprilo. Per ulteriori informazioni sull’utilizzo di questa attività, consulta [questa sezione](../../workflow/using/delivery.md).
+1. Vai a **[!UICONTROL Analysis]** della scheda **[!UICONTROL Delivery properties]** e seleziona la **[!UICONTROL Prepare the personalization data with a workflow]** opzione .
 
    ![](assets/perso_optimization.png)
 
@@ -100,7 +100,7 @@ Una volta effettuata l’analisi, i dati di personalizzazione vengono memorizzat
 
 Questo flusso di lavoro non è visibile nell’interfaccia di Adobe Campaign. Si tratta solo di uno strumento tecnico per archiviare e gestire rapidamente i dati di personalizzazione.
 
-Al termine dell’analisi, vai al flusso di lavoro **[!UICONTROL Properties]** e seleziona la scheda **[!UICONTROL Variables]** . Qui puoi vedere il nome della tabella temporanea che puoi utilizzare per effettuare una chiamata SQL per visualizzare gli ID contenuti.
+Al termine dell’analisi, passa al flusso di lavoro **[!UICONTROL Properties]** e seleziona la **[!UICONTROL Variables]** scheda . Qui puoi vedere il nome della tabella temporanea che puoi utilizzare per effettuare una chiamata SQL per visualizzare gli ID contenuti.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -108,7 +108,7 @@ Al termine dell’analisi, vai al flusso di lavoro **[!UICONTROL Properties]** e
 
 Per migliorare la protezione della consegna, puoi impostare un periodo di timeout per la fase di personalizzazione.
 
-Nella scheda **[!UICONTROL Delivery]** di **[!UICONTROL Delivery properties]** , seleziona un valore massimo in secondi per l’opzione **[!UICONTROL Maximum personalization run time]**.
+In **[!UICONTROL Delivery]** della scheda **[!UICONTROL Delivery properties]**, seleziona un valore massimo in secondi per il **[!UICONTROL Maximum personalization run time]** opzione .
 
 Durante l’anteprima o l’invio, se la fase di personalizzazione supera il tempo massimo impostato in questo campo, il processo verrà interrotto con un messaggio di errore e la consegna avrà esito negativo.
 

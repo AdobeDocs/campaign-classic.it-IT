@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione e la selezione dei dati dal database tramite cubi. Questo consente di:
 
-* Crea report basati su cubi. Il processo è descritto di seguito: [Esplorazione dei dati in un report](#exploring-the-data-in-a-report).
+* Crea report basati su cubi. Il processo è descritto di seguito: [Esplorazione dei dati in un rapporto](#exploring-the-data-in-a-report).
 * Raccogliere i dati nel database e raggrupparli in elenchi, ad esempio per identificare e creare destinazioni e consegne. Per ulteriori informazioni, consulta [Creazione di una popolazione target](#building-a-target-population).
 * Inserire una tabella pivot in un report, fare riferimento a un cubo esistente al suo interno. Per ulteriori informazioni, consulta [Inserimento di una tabella pivot in un rapporto](#inserting-a-pivot-table-into-a-report).
 
@@ -31,7 +31,7 @@ Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione 
 
 ### Passaggio 1: creazione di un report basato su un cubo {#step-1---creating-a-report-based-on-a-cube}
 
-Per creare un report basato su un cubo, fare clic sul pulsante **[!UICONTROL Create]** nella scheda **[!UICONTROL Reports]** e selezionare il cubo che si desidera utilizzare.
+Per creare un rapporto basato su un cubo, fai clic sul pulsante **[!UICONTROL Create]** nel **[!UICONTROL Reports]** e selezionare il cubo che si desidera utilizzare.
 
 Il processo è descritto di seguito: [Creazione di un report basato su un cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -39,7 +39,7 @@ Il processo è descritto di seguito: [Creazione di un report basato su un cubo](
 
 La visualizzazione predefinita mostra le prime due dimensioni del cubo (età e città, in questo caso).
 
-I pulsanti **[!UICONTROL Add]** su ciascun asse consentono di aggiungere dimensioni.
+La **[!UICONTROL Add]** i pulsanti su ciascun asse consentono di aggiungere dimensioni.
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -54,7 +54,7 @@ I pulsanti **[!UICONTROL Add]** su ciascun asse consentono di aggiungere dimensi
 
    I parametri dipendono dal tipo di dati della dimensione selezionata.
 
-   Ad esempio, per le date, possono essere disponibili diversi livelli. Per ulteriori informazioni, consulta [Visualizzazione di misure](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Ad esempio, per le date, possono essere disponibili diversi livelli. Per ulteriori informazioni, consulta [Visualizzazione delle misure](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    In questo caso sono offerte le seguenti opzioni:
 
@@ -70,7 +70,7 @@ I pulsanti **[!UICONTROL Add]** su ciascun asse consentono di aggiungere dimensi
 
 1. Fai clic su **[!UICONTROL Ok]** per confermare: la dimensione viene aggiunta alle dimensioni esistenti.
 
-   Il banner giallo sopra la tabella indica che sono state apportate modifiche: fai clic sul pulsante **[!UICONTROL Save]** per salvarli.
+   Il banner giallo sopra la tabella indica che sono state apportate modifiche: fai clic su **[!UICONTROL Save]** per salvarli.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -84,7 +84,7 @@ Per impostazione predefinita viene visualizzata una sola misura. Per aggiungere 
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. Il pulsante **[!UICONTROL Use a measure]** ti consente di selezionare una delle misure esistenti.
+1. La **[!UICONTROL Use a measure]** consente di selezionare una delle misure esistenti.
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -92,7 +92,7 @@ Per impostazione predefinita viene visualizzata una sola misura. Per aggiungere 
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   La configurazione complessiva delle misure è disponibile anche tramite l’ **[!UICONTROL Edit the configuration of the pivot table]** icona nell’intestazione.
+   La configurazione complessiva delle misure è disponibile anche tramite **[!UICONTROL Edit the configuration of the pivot table]** nell’intestazione.
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
@@ -116,7 +116,7 @@ Per impostazione predefinita viene visualizzata una sola misura. Per aggiungere 
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   Dopo aver creato una misura, puoi modificarla e, se necessario, modificarne la configurazione. A questo scopo, fai clic sul pulsante **[!UICONTROL Measures]** , quindi vai alla scheda della misura da modificare.
+   Dopo aver creato una misura, puoi modificarla e, se necessario, modificarne la configurazione. A questo scopo, fai clic sul pulsante **[!UICONTROL Measures]** quindi vai alla scheda della misura da modificare.
 
    Quindi fai clic su **[!UICONTROL Edit the dynamic measure]** per accedere al menu impostazioni.
 
@@ -128,7 +128,7 @@ A questo scopo, aggiungili a un carrello ed elaborane il contenuto.
 
 Per raggruppare una popolazione in un elenco, effettua le seguenti operazioni:
 
-1. Fai clic sulle celle che contengono la popolazione da raccogliere per selezionarle, quindi fai clic sull&#39;icona **[!UICONTROL Add to cart]** .
+1. Fai clic sulle celle che contengono la popolazione da raccogliere per selezionarle, quindi fai clic sul pulsante **[!UICONTROL Add to cart]** icona.
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
@@ -138,13 +138,13 @@ Per raggruppare una popolazione in un elenco, effettua le seguenti operazioni:
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. Il pulsante **[!UICONTROL Export]** ti consente di raggruppare gli elementi nel carrello in un elenco.
+1. La **[!UICONTROL Export]** consente di raggruppare gli elementi nel carrello in un elenco.
 
    È necessario specificare il nome dell’elenco e il tipo di esportazione da eseguire.
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   Fai clic su **[!UICONTROL Start]** per eseguire l’esportazione.
+   Fai clic su **[!UICONTROL Start]** per eseguire l&#39;esportazione.
 
 1. Una volta completata l’esportazione, un messaggio conferma la relativa esecuzione e il numero di record elaborati.
 
@@ -152,7 +152,7 @@ Per raggruppare una popolazione in un elenco, effettua le seguenti operazioni:
 
    Puoi salvare il contenuto del carrello o svuotarlo.
 
-   L’elenco pertinente è accessibile tramite la scheda **[!UICONTROL Profiles and targets]** .
+   L&#39;elenco è accessibile tramite **[!UICONTROL Profiles and targets]** scheda .
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
@@ -164,8 +164,8 @@ Per creare una tabella ed esplorare i dati di un cubo, eseguire i seguenti passa
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. Nella scheda **[!UICONTROL Data]** della pagina, seleziona un cubo per elaborare le dimensioni che contiene e visualizzare le misure calcolate.
+1. In **[!UICONTROL Data]** scheda della pagina, selezionare un cubo per elaborare le dimensioni che contiene e visualizzare le misure calcolate.
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   In questo modo puoi creare il rapporto da visualizzare. Per ulteriori informazioni, consulta [Passaggio 2 - Selezione di righe e colonne](#step-2---selecting-lines-and-columns).
+   In questo modo puoi creare il rapporto da visualizzare. Per ulteriori informazioni, consulta [Passaggio 2: selezione di linee e colonne](#step-2---selecting-lines-and-columns).

@@ -23,17 +23,17 @@ I filtri disponibili in Adobe Campaign sono definiti tramite condizioni di filtr
 >
 >Per ulteriori informazioni sulla creazione dei filtri, consulta [questa sezione](../../platform/using/filtering-options.md).
 
-Il nodo **[!UICONTROL Administration > Configuration > Predefined filters]** contiene tutti i filtri utilizzati negli elenchi e nelle panoramiche.
+La **[!UICONTROL Administration > Configuration > Predefined filters]** contiene tutti i filtri utilizzati negli elenchi e nelle panoramiche.
 
-Ad esempio, l’elenco degli operatori può essere filtrato da **[!UICONTROL Active accounts]**:
+Ad esempio, l’elenco degli operatori può essere filtrato tramite **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-Il filtro corrispondente contiene la query sul valore **[!UICONTROL Account disabled]** dello schema **[!UICONTROL Operators]**:
+Il filtro corrispondente contiene la query sul **[!UICONTROL Account disabled]** del valore **[!UICONTROL Operators]** schema:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-Per lo stesso elenco, il filtro **[!UICONTROL By login or label]** ti consente di filtrare i dati dell’elenco in base al valore inserito nel campo del filtro:
+Per lo stesso elenco, il **[!UICONTROL By login or label]** filter ti consente di filtrare i dati dell’elenco in base al valore inserito nel campo filter:
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -49,12 +49,12 @@ Per soddisfare le condizioni di filtro, l’account dell’operatore deve contro
 
 >[!NOTE]
 >
->La funzione **[!UICONTROL Upper]** consente di disattivare la funzione sensibile a maiuscole e minuscole.
+>La **[!UICONTROL Upper]** consente di disattivare la funzione sensibile a maiuscole e minuscole.
 
-La colonna **[!UICONTROL Taken into account if]** ti consente di definire i criteri dell’applicazione per queste condizioni di filtro. In questo caso, i caratteri **$(/tmp/@text)** rappresentano il contenuto del campo di input collegato al filtro:
+La **[!UICONTROL Taken into account if]** La colonna ti consente di definire i criteri dell’applicazione per queste condizioni di filtro. Qui, il **$(/tmp/@text)** i caratteri rappresentano il contenuto del campo di input collegato al filtro:
 
 ![](assets/query_editor_filter_sample_5.png)
 
 Qui, **$(/tmp/@text)=&#39;agenzia&#39;**
 
-Il **$(/tmp/@text)!=&#39;&#39;** applica ogni condizione quando il campo di input non è vuoto.
+La **$(/tmp/@text)!=&#39;&#39;** espressione applica ogni condizione quando il campo di input non è vuoto.

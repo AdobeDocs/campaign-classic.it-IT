@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Il servizio Web di stato [!DNL pipelined] fornisce informazioni sullo stato del processo [!DNL pipelined].
+La [!DNL pipelined] il servizio web di stato fornisce informazioni sullo stato del [!DNL pipelined] processo.
 
 È possibile accedervi manualmente utilizzando un browser o automaticamente con un&#39;applicazione di monitoraggio.
 
@@ -41,7 +41,7 @@ Vengono evidenziati gli indicatori consigliati da monitorare.
    * next-offsets-flush: tempo di attesa del batch successivo, al termine.
    * elaborati-dall’ultimo scaricamento: numero di trigger elaborati nell’ultimo batch.
 * ciclo
-   * trigger: elenco dei trigger recuperati. Configurata nell&#39;opzione [!DNL pipelined].
+   * trigger: elenco dei trigger recuperati. Configurato in [!DNL pipelined] opzione .
 * statistiche
    * tempo medio-di-flush-ms: tempo medio di elaborazione per un batch di trigger.
    * tempo medio di elaborazione-trigger-ms: tempo medio trascorso dall&#39;analisi dei dati dei trigger.
@@ -59,8 +59,8 @@ Queste statistiche vengono visualizzate per thread di elaborazione.
 
 * tempo medio di elaborazione-trigger-ms: tempo medio trascorso dall&#39;analisi dei dati dei trigger.
 * is-JS-processor: valore &quot;1&quot; se questo thread utilizza il JS personalizzato.
-* attivatore scartato: numero di messaggi scartati dopo troppi tentativi a causa di errori di elaborazione. **Questo indicatore deve essere zero**.
-* trigger-failed: numero di errori di elaborazione nel JS. **Questo indicatore deve essere zero**.
+* attivatore scartato: numero di messaggi scartati dopo troppi tentativi a causa di errori di elaborazione. **Questo indicatore deve essere pari a zero**.
+* trigger-failed: numero di errori di elaborazione nel JS. **Questo indicatore deve essere pari a zero**.
 * ricevuto dal trigger: numero di messaggi ricevuti dalla coda.
 
 * Impostazioni: sono impostati nei file di configurazione.

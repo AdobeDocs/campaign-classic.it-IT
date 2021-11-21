@@ -48,7 +48,7 @@ Nel protocollo di connessione devono essere rispettate le norme per impedire lo 
 
 L&#39;indirizzo di errore elabora i rimbalzi inviati dagli ISP. Il processo analizzerà diversi codici di errore SMTP e applicherà l&#39;azione corretta in base allo standard RegEx.
 
-Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore Adobe Campaign (indirizzo del percorso restituito). Questo errore viene quindi confrontato con lo standard RegEx e la regola corretta verrà applicata. L’e-mail viene considerata un *rimbalzo rigido* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e viene messa in quarantena dopo il primo ciclo nel sistema.
+Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore Adobe Campaign (indirizzo del percorso restituito). Questo errore viene quindi confrontato con lo standard RegEx e la regola corretta verrà applicata. L’e-mail viene considerata come *Rimbalzo duro* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
 
 ### Come viene gestita da Adobe Campaign?
 
@@ -62,7 +62,7 @@ Adobe Campaign gestisce questo processo con una corrispondenza tra un tipo di er
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi e i motivi di errori di consegna, consulta questa [sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Per ulteriori informazioni sui tipi e i motivi di errori di consegna, consulta questo [sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Istanza di recapito messaggi
 
@@ -78,12 +78,12 @@ La modalità personalizzata è per i clienti avanzati che desiderano impostare l
 
 ## Esempi di mancato recapito
 
-* **Utente sconosciuto**  (rimbalzo rigido): 550 5.1.1 ... Utente sconosciuto {mx003}
-* **Cassetta postale piena**  (rimbalzo morbido): 550 5.2.2 Superata la quota degli utenti
-* **Cassetta postale**  inattiva (rimbalzo morbido): 550 5.7.1 : Indirizzo destinatario rifiutato: MailBox inattiva, non in poping per più di 6 mesi
-* **Dominio non valido**  (rimbalzo morbido): Query DNS non riuscita per &#39;ourdan.com&#39;
-* **Rifiutato**  (rimbalzo morbido): Messaggio e-mail non recapitato in entrata (la regola &#39;Feedback_loop_Hotmail&#39; corrisponde a questo messaggio non recapitato)
-* **Non raggiungibile**  (rimbalzo morbido): 421 4.16.55  [TS01] Messaggi da x.x.x.x temporaneamente differiti a causa di reclami degli utenti eccessivi
+* **Utente sconosciuto** (rimbalzo duro): 550 5.1.1 ... Utente sconosciuto {mx003}
+* **Cassetta postale piena** (rimbalzo morbido): 550 5.2.2 Superata la quota degli utenti
+* **Cassetta postale inattiva** (rimbalzo morbido): 550 5.7.1 : Indirizzo destinatario rifiutato: MailBox inattiva, non in poping per più di 6 mesi
+* **Dominio non valido** (rimbalzo morbido): Query DNS non riuscita per &#39;ourdan.com&#39;
+* **Rifiutato** (rimbalzo morbido): Messaggio e-mail non recapitato in entrata (la regola &#39;Feedback_loop_Hotmail&#39; corrisponde a questo messaggio non recapitato)
+* **Non raggiungibile** (rimbalzo morbido): 421 4.16.55 [TS01] Messaggi da x.x.x.x temporaneamente differiti a causa di reclami degli utenti eccessivi
 
 **Argomenti correlati:**
 * [Configurazione MX](../../installation/using/email-deliverability.md#mx-configuration)

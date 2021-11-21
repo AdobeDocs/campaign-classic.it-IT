@@ -23,12 +23,12 @@ Puoi allegare uno o più file a una consegna e-mail.
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [l&#39;elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Esistono due casi possibili:
 
 * Seleziona un file e allegalo alla consegna così com’è.
-* Personalizza il contenuto dell’allegato per ciascun destinatario. In questo caso, è necessario creare un **allegato calcolato**: il nome dell’allegato viene calcolato al momento della consegna per ciascun messaggio a seconda del destinatario. Il contenuto può anche essere personalizzato e convertito in formato PDF al momento della consegna, se disponi dell&#39;opzione **Stampa digitale variabile** .
+* Personalizza il contenuto dell’allegato per ciascun destinatario. In questo caso, devi creare un **allegato calcolato**: il nome dell’allegato viene calcolato al momento della consegna per ciascun messaggio a seconda del destinatario. Il contenuto può anche essere personalizzato e convertito in formato PDF al momento della consegna, se disponi dei seguenti **Stampa digitale variabile** opzione .
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ Per allegare un file locale a una consegna, segui la procedura seguente.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-Puoi anche trascinare e rilasciare direttamente il file nel campo di consegna **[!UICONTROL Attachments]** oppure utilizzare l’icona **[!UICONTROL Attach]** dalla barra degli strumenti della procedura guidata di consegna,
+Puoi anche trascinare e rilasciare direttamente il file nella consegna **[!UICONTROL Attachments]** oppure utilizza il campo **[!UICONTROL Attach]** icona dalla barra degli strumenti della procedura guidata di consegna,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-Una volta selezionato, il file viene immediatamente caricato sul server per essere disponibile al momento della consegna. È elencato nel campo **[!UICONTROL Attachments]** .
+Una volta selezionato, il file viene immediatamente caricato sul server per essere disponibile al momento della consegna. È elencato nella **[!UICONTROL Attachments]** campo .
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -65,8 +65,8 @@ Quando si crea un allegato calcolato, il nome dell&#39;allegato può essere calc
 Per creare un allegato personalizzato, effettua le seguenti operazioni:
 
 1. Fai clic sul collegamento **[!UICONTROL Attachments]**.
-1. Fai clic sul pulsante **[!UICONTROL Add]** , quindi seleziona **[!UICONTROL Calculated attachment]**.
-1. Selezionare il tipo di calcolo dall&#39;elenco a discesa **[!UICONTROL Type]**:
+1. Fai clic sul pulsante **[!UICONTROL Add]** quindi seleziona **[!UICONTROL Calculated attachment]**.
+1. Seleziona il tipo di calcolo dal **[!UICONTROL Type]** elenco a discesa:
 
 ![](assets/s_ncs_user_wizard_email01_136.png)
 
@@ -81,12 +81,12 @@ Sono disponibili le seguenti opzioni:
 
 Se l&#39;allegato è un file locale, selezionare l&#39;opzione: **[!UICONTROL File name is specified when creating the delivery template]**. Il file viene selezionato localmente e caricato sul server. Segui i passaggi seguenti:
 
-1. Seleziona il file da caricare nel campo **[!UICONTROL Local file]** .
+1. Seleziona il file da caricare nella **[!UICONTROL Local file]** campo .
 1. Se necessario, specifica l’etichetta. L’etichetta sostituisce il nome del file quando viene visualizzato nei sistemi di messaggistica. Se non viene specificato nulla, il nome del file viene utilizzato per impostazione predefinita.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
-1. Se necessario, selezionare **[!UICONTROL Upload file on the server]**, quindi fare clic su **[!UICONTROL Update on server]** per avviare il trasferimento.
+1. Se necessario, seleziona **[!UICONTROL Upload file on the server]**, quindi fai clic su **[!UICONTROL Update on server]** per avviare il trasferimento.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
@@ -94,7 +94,7 @@ Il file è quindi disponibile sul server da allegare alle diverse consegne creat
 
 ### Collegamento di un messaggio personalizzato {#attach-a-personalized-message}
 
-L’opzione **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** ti consente di selezionare un file con campi di personalizzazione, ad esempio il cognome e il nome del destinatario desiderato.
+Opzione **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** ti consente di selezionare un file con campi di personalizzazione, ad esempio il cognome e il nome del destinatario desiderato.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -102,7 +102,7 @@ Per questo tipo di allegato, applicare i seguenti passaggi di configurazione:
 
 1. Seleziona il file da caricare.
 1. Se necessario, specifica l’etichetta.
-1. Selezionare **[!UICONTROL Upload file on the server]**, quindi fare clic su **[!UICONTROL Update on server]** per avviare il trasferimento.
+1. Seleziona **[!UICONTROL Upload file on the server]**, quindi fai clic su **[!UICONTROL Update on server]** per avviare il trasferimento.
 1. Puoi visualizzare un’anteprima. A questo scopo, seleziona un destinatario.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
@@ -115,7 +115,7 @@ Per questo tipo di allegato, applicare i seguenti passaggi di configurazione:
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Allega un file calcolato {#attach-a-calculated-file}
 
@@ -165,7 +165,7 @@ Quando si seleziona l&#39;allegato, è possibile scegliere l&#39;opzione **[!UIC
 
 ### Impostazioni allegato {#attachment-settings}
 
-Per le prime due opzioni, puoi scegliere **[!UICONTROL Upload file on the server]** selezionando l’opzione appropriata. Il collegamento **[!UICONTROL Update the file on the server]** ti consente di iniziare il caricamento.
+Per le prime due opzioni, puoi scegliere **[!UICONTROL Upload file on the server]** selezionando l’opzione appropriata. La **[!UICONTROL Update the file on the server]** link ti consente di iniziare a caricare.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -177,9 +177,9 @@ Per una modifica del file, viene visualizzato un messaggio di avviso:
 
 ![](assets/s_ncs_user_wizard_email01_1372.png)
 
-La scheda **[!UICONTROL Advanced]** ti consente di definire opzioni avanzate sui file allegati:
+La **[!UICONTROL Advanced]** La scheda ti consente di definire opzioni avanzate sui file allegati:
 
-* Puoi definire le opzioni di filtro per evitare di inviare il file allegato a tutti i destinatari. L’opzione **[!UICONTROL Enable filtering of recipients who will receive the attachment]** attiva un campo di input utilizzato per definire uno script di selezione del destinatario, che deve essere immesso in JavaScript.
+* Puoi definire le opzioni di filtro per evitare di inviare il file allegato a tutti i destinatari. Opzione **[!UICONTROL Enable filtering of recipients who will receive the attachment]** attiva un campo di input utilizzato per definire uno script di selezione del destinatario, che deve essere immesso in JavaScript.
 * Puoi scrivere il nome del file per personalizzarlo.
 
    Inserisci il testo nella finestra e utilizza i campi di personalizzazione disponibili nell’elenco a discesa. Nell’esempio seguente, il nome del file è personalizzato per contenere la data odierna e il nome del destinatario.

@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Per creare un’offerta, esegui i seguenti passaggi:
 
-1. Vai alla scheda **[!UICONTROL Campaigns]** e fai clic sul collegamento **[!UICONTROL Offers]** .
+1. Vai a **[!UICONTROL Campaigns]** e fai clic su **[!UICONTROL Offers]** link.
 
    ![](assets/offer_create_001.png)
 
@@ -43,7 +43,7 @@ Per creare un’offerta, esegui i seguenti passaggi:
 
 ## Configurazione dell’idoneità delle offerte {#configuring-offer-eligibility}
 
-Nella scheda **[!UICONTROL Eligibility]** , definisci il periodo in cui l’offerta sarà valida e può essere presentata, i filtri da applicare al target e il peso dell’offerta.
+In **[!UICONTROL Eligibility]** , definisci il periodo per il quale l’offerta sarà valida e può essere presentata, i filtri da applicare al target e il peso dell’offerta.
 
 ### Definizione del periodo di idoneità di un’offerta {#defining-the-eligibility-period-of-an-offer}
 
@@ -57,7 +57,7 @@ Al di fuori di queste date, l’offerta non verrà selezionata dal motore di int
 
 Puoi applicare filtri alla destinazione dell’offerta.
 
-A questo scopo, fai clic sul collegamento **[!UICONTROL Edit query]** e seleziona il filtro da applicare. (Fai riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+A questo scopo, fai clic sul pulsante **[!UICONTROL Edit query]** e seleziona il filtro da applicare. (Fai riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -103,7 +103,7 @@ Per creare un peso in un’offerta, esegui i seguenti passaggi:
 
    ![](assets/offer_weight_create_004.png)
 
-1. Fare clic su **[!UICONTROL OK]** per salvare il peso.
+1. Fai clic su **[!UICONTROL OK]** per risparmiare il peso.
 
    ![](assets/offer_weight_create_005.png)
 
@@ -115,22 +115,22 @@ Per creare un peso in un’offerta, esegui i seguenti passaggi:
 
 Al termine della configurazione, un riepilogo delle regole di idoneità sarà disponibile sul dashboard delle offerte.
 
-Per visualizzarlo, fai clic sul collegamento **[!UICONTROL Schedule and eligibility rules]** .
+Per visualizzarlo, fai clic sul pulsante **[!UICONTROL Schedule and eligibility rules]** link.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Creazione del contenuto dell’offerta {#creating-the-offer-content}
 
-1. Fai clic sulla scheda **[!UICONTROL Edit]** , quindi fai clic sulla scheda **[!UICONTROL Content]** .
+1. Fai clic sul pulsante **[!UICONTROL Edit]** , quindi fai clic sul pulsante **[!UICONTROL Content]** scheda .
 
    ![](assets/offer_content_create_001.png)
 
 1. Compila i vari campi del contenuto dell’offerta.
 
-   * **[!UICONTROL Title]** : Specifica il titolo da visualizzare nell’offerta. Avviso: questo non fa riferimento all’etichetta dell’offerta, definita nella scheda **[!UICONTROL General]** .
+   * **[!UICONTROL Title]** : Specifica il titolo da visualizzare nell’offerta. Avviso: non si tratta dell’etichetta dell’offerta, definita nella **[!UICONTROL General]** scheda .
    * **[!UICONTROL Destination URL]** : specifica l’URL dell’offerta. Per essere elaborato correttamente, deve iniziare con &quot;http://&quot; o &quot;https://&quot;.
    * **[!UICONTROL Image URL]** : specifica un URL o un percorso di accesso all’immagine dell’offerta.
-   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** : inserisci il corpo dell’offerta nella scheda desiderata. Per generare il tracciamento, il **[!UICONTROL HTML content]** deve essere composto da elementi HTML che possono essere racchiusi in un elemento di tipo `<div>`. Ad esempio, il risultato di un elemento `<table>` nella pagina HTML sarà il seguente:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : inserisci il corpo dell’offerta nella scheda desiderata. Per generare il tracciamento, **[!UICONTROL HTML content]** devono essere composti da elementi HTML che possono essere racchiusi in un `<div>` elemento type. Ad esempio, il risultato di un `<table>` nella pagina HTML verrà visualizzato il seguente elemento:
 
    ```
       <div> 
@@ -147,11 +147,11 @@ Per visualizzarlo, fai clic sul collegamento **[!UICONTROL Schedule and eligibil
       </div>
    ```
 
-   La definizione dell’URL di accettazione viene presentata nella sezione [Configurazione dello stato quando la proposta viene accettata](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) .
+   La definizione dell’URL di accettazione viene presentata nel [Configurazione dello stato quando la proposta viene accettata](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) sezione .
 
    ![](assets/offer_content_create_002.png)
 
-   Per trovare i campi obbligatori così come sono stati definiti durante la configurazione dello spazio di offerta, fai clic sul collegamento **[!UICONTROL Content definitions]** per visualizzare l’elenco. Per ulteriori informazioni, consulta [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md).
+   Per trovare i campi obbligatori così come sono stati definiti durante la configurazione dello spazio di offerta, fai clic sul pulsante **[!UICONTROL Content definitions]** per visualizzare l’elenco. Per ulteriori informazioni, consulta [Creazione di spazi di offerta](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -161,7 +161,7 @@ Per visualizzarlo, fai clic sul collegamento **[!UICONTROL Schedule and eligibil
 
 Non appena è configurato il contenuto dell’offerta, puoi visualizzarlo in anteprima per il destinatario. Per eseguire questa operazione:
 
-1. Fai clic sulla scheda **[!UICONTROL Preview]** .
+1. Fai clic sul pulsante **[!UICONTROL Preview]** scheda .
 
    ![](assets/offer_preview_create_001.png)
 
@@ -181,7 +181,7 @@ Puoi creare ipotesi sulle proposte di offerta. Ciò consente di determinare l’
 >
 >Queste ipotesi vengono eseguite tramite Response Manager. Controlla il contratto di licenza.
 
-Le ipotesi eseguite su una proposta di offerta sono riportate nella relativa scheda **[!UICONTROL Measure]** .
+Le ipotesi eseguite su una proposta di offerta sono riportate nella loro **[!UICONTROL Measure]** scheda .
 
 La creazione di ipotesi è descritta in [questa pagina](../../response/using/about-response-manager.md).
 

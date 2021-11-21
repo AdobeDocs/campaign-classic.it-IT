@@ -44,47 +44,47 @@ Sono disponibili tre modalità di abbonamento/annullamento dell’abbonamento al
 
 Puoi creare e gestire abbonamenti a servizi di informazione con messaggi di conferma associati o consegne automatiche agli abbonati.
 
-Per accedere alla mappa dei servizi di informazione, apri la scheda **[!UICONTROL Profiles and Targets]** e fai clic sul collegamento **[!UICONTROL Services and Subscriptions]** .
+Per accedere alla mappa dei servizi di informazione, apri la **[!UICONTROL Profiles and Targets]** e fai clic su **[!UICONTROL Services and Subscriptions]** link.
 
 ![](assets/s_ncs_user_services_new.png)
 
-Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servizio, fai clic sul pulsante **[!UICONTROL Create]** situato sopra l’elenco.
+Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servizio, fai clic sul pulsante **[!UICONTROL Create]** pulsante situato sopra l’elenco.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Immetti il nome del servizio nel campo **[!UICONTROL Label]** e seleziona il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni mobili.
+* Immetti il nome del servizio nel **[!UICONTROL Label]** e seleziona il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni mobili.
 
    >[!NOTE]
    >
    >Gli abbonamenti a facebook e Twitter sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle applicazioni mobili sono descritti in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
 
-* Per un servizio di tipo Email, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
-* Puoi inviare **messaggi di conferma** per un abbonamento o il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dai campi **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** . Questi modelli devono essere configurati con una mappatura di destinazione di tipo **[!UICONTROL Subscription]**, senza un target definito. Consulta la sezione [Informazioni sul canale e-mail](about-email-channel.md).
-* Per impostazione predefinita, gli abbonamenti sono illimitati. Puoi deselezionare l’opzione **[!UICONTROL Unlimited]** per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
+* Per un servizio di tipo E-mail, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
+* Puoi inviare **messaggi di conferma** per un abbonamento o per un suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dalla **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** campi. Questi modelli devono essere configurati con un **[!UICONTROL Subscription]** mappatura del tipo di target, senza un target definito. Vedere la sezione [Informazioni sul canale e-mail](about-email-channel.md).
+* Per impostazione predefinita, gli abbonamenti sono illimitati. Puoi deselezionare la **[!UICONTROL Unlimited]** per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
 
-Una volta salvato, il servizio viene aggiunto all’elenco Servizi e iscrizioni: Fare clic sul nome per modificarlo. Sono disponibili diverse schede. La scheda **[!UICONTROL Subscriptions]** ti consente di visualizzare l’elenco degli abbonati al servizio informazioni (**[!UICONTROL Active subscriptions]** scheda ) o la cronologia dell’abbonamento o del suo annullamento (**[!UICONTROL History]** scheda ). Puoi anche aggiungere ed eliminare gli abbonati da questa scheda. Consulta [Aggiunta ed eliminazione di abbonati](#adding-and-deleting-subscribers).
+Una volta salvato, il servizio viene aggiunto all’elenco Servizi e iscrizioni: Fare clic sul nome per modificarlo. Sono disponibili diverse schede. La **[!UICONTROL Subscriptions]** consente di consultare l’elenco degli abbonati al servizio informazioni (**[!UICONTROL Active subscriptions]** o la cronologia dell&#39;abbonamento o del suo annullamento (**[!UICONTROL History]** ). Puoi anche aggiungere ed eliminare gli abbonati da questa scheda. Vedi [Aggiunta ed eliminazione di abbonati](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
-Il pulsante **[!UICONTROL Detail...]** ti consente di esaminare le proprietà dell’abbonamento per il destinatario selezionato.
+La **[!UICONTROL Detail...]** ti consente di esaminare le proprietà dell’abbonamento per il destinatario selezionato.
 
 Puoi modificare le proprietà dell’abbonamento per un destinatario.
 
 ![](assets/s_ncs_user_services_modify.png)
 
-Nel dashboard, fai clic sulla scheda **[!UICONTROL Reports]** per tenere traccia delle sottoscrizioni: modifiche dei livelli di abbonamento, numero totale di abbonati, ecc. È possibile archiviare i rapporti e esaminare la cronologia da questa scheda.
+Nel dashboard, fai clic sul pulsante **[!UICONTROL Reports]** scheda per tenere traccia delle sottoscrizioni: modifiche dei livelli di abbonamento, numero totale di abbonati, ecc. È possibile archiviare i rapporti e esaminare la cronologia da questa scheda.
 
 ## Aggiunta ed eliminazione di abbonati {#adding-and-deleting-subscribers}
 
-Dalla scheda **[!UICONTROL Subscriptions]** di un servizio informazioni, fai clic su **[!UICONTROL Add]** per aggiungere abbonati. Puoi anche fare clic con il pulsante destro del mouse sull’elenco degli abbonati e selezionare **[!UICONTROL Add]**. Seleziona la cartella in cui sono memorizzati i profili da sottoscrivere, quindi seleziona i profili da sottoscrivere e fai clic su **[!UICONTROL OK]** per eseguire la convalida.
+Da **[!UICONTROL Subscriptions]** scheda di un clic del servizio informazioni **[!UICONTROL Add]** per aggiungere abbonati. Puoi anche fare clic con il pulsante destro del mouse sull’elenco degli abbonati e selezionare **[!UICONTROL Add]**. Seleziona la cartella in cui sono memorizzati i profili da sottoscrivere, quindi seleziona i profili da sottoscrivere e fai clic su **[!UICONTROL OK]** da convalidare.
 
-Per eliminare gli abbonati, selezionali e fai clic su **[!UICONTROL Delete]**. Puoi anche fare clic con il pulsante destro del mouse sull’elenco degli abbonati e selezionare **[!UICONTROL Delete]**.
+Per eliminare gli abbonati, selezionali e fai clic su **[!UICONTROL Delete]**. È inoltre possibile fare clic con il pulsante destro del mouse sull’elenco degli abbonati e selezionare **[!UICONTROL Delete]**.
 
-In entrambi i casi, puoi inviare un messaggio di conferma agli utenti interessati se è stato allegato al servizio un modello di consegna per gli annullamenti di abbonamenti (consulta [Creazione di un servizio di informazioni](#creating-an-information-service)). Un avviso consente di convalidare o meno questa consegna:
+In entrambi i casi, puoi inviare un messaggio di conferma agli utenti interessati se al servizio è stato allegato un modello di consegna per gli annullamenti di abbonamenti (vedi [Creazione di un servizio informazioni](#creating-an-information-service)). Un avviso consente di convalidare o meno questa consegna:
 
 ![](assets/s_ncs_user_services_update.png)
 
-Consulta [Meccanismi di abbonamento e annullamento dell’abbonamento](#subscription-and-unsubscription-mechanisms).
+Vedi [Meccanismi di abbonamento e di annullamento dell’abbonamento](#subscription-and-unsubscription-mechanisms).
 
 ## Consegna agli abbonati di un servizio {#delivering-to-the-subscribers-of-a-service}
 
@@ -94,7 +94,7 @@ Per fornire agli abbonati di un servizio di informazione, è possibile indirizza
 
 >[!CAUTION]
 >
->La mappatura della destinazione deve essere **[!UICONTROL Subscriptions]**.
+>La mappatura di destinazione deve essere **[!UICONTROL Subscriptions]**.
 
 Seleziona **[!UICONTROL Subscribers of an information service]** e fai clic su **[!UICONTROL Next]**.
 
@@ -104,7 +104,7 @@ Seleziona il servizio di informazioni di destinazione e fai clic su **[!UICONTRO
 
 ![](assets/s_ncs_user_wizard_target_is_a_service03.png)
 
-La scheda **[!UICONTROL Preview]** ti consente di visualizzare l’elenco dei sottoscrittori del servizio informazioni selezionato.
+La **[!UICONTROL Preview]** consente di visualizzare l’elenco dei sottoscrittori del servizio informazioni selezionato.
 
 ## Meccanismi di abbonamento e di annullamento dell’abbonamento {#subscription-and-unsubscription-mechanisms}
 
@@ -113,7 +113,7 @@ Puoi impostare meccanismi di abbonamento e annullamento dell’abbonamento per a
 >[!NOTE]
 >
 >Puoi inviare un messaggio di conferma ai nuovi abbonati.\
->Il contenuto di questo messaggio viene definito nella configurazione del servizio informazioni tramite i campi **[!UICONTROL Subscription]** o **[!UICONTROL Unsubscription]** .
+>Il contenuto di questo messaggio viene definito nella configurazione del servizio informazioni tramite il **[!UICONTROL Subscription]** o **[!UICONTROL Unsubscription]** campi.
 >
 >I messaggi di conferma vengono creati tramite i modelli di consegna specificati in questi campi. Queste mappature di destinazione devono essere **[!UICONTROL Subscriptions]**.
 
@@ -123,11 +123,11 @@ Puoi impostare meccanismi di abbonamento e annullamento dell’abbonamento per a
 
 Per registrare i destinatari per un servizio di informazione, puoi:
 
-* Aggiungi manualmente il servizio: a questo scopo, dalla scheda **[!UICONTROL Subscriptions]** del profilo, fai clic su **[!UICONTROL Add]** e seleziona il servizio informazioni interessato.
+* Aggiungi manualmente il servizio: a tal fine, dal **[!UICONTROL Subscriptions]** scheda del profilo, fai clic su **[!UICONTROL Add]** e selezionare il servizio di informazione interessato.
 
-   Per ulteriori informazioni, consulta la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
+   Per ulteriori informazioni, consulta la sezione sulla modifica dei profili in [questa sezione](../../platform/using/editing-a-profile.md).
 
-* Iscriviti automaticamente un set di destinatari a questo servizio. L’elenco dei destinatari può provenire da un’operazione di filtro, un gruppo, una cartella, un’importazione o una selezione diretta tramite il mouse. Per sottoscrivere questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse su di essi. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
+* Iscriviti automaticamente un set di destinatari a questo servizio. L’elenco dei destinatari può provenire da un’operazione di filtro, un gruppo, una cartella, un’importazione o una selezione diretta tramite il mouse. Per sottoscrivere questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse su di essi. Seleziona **[!UICONTROL Actions > Subscribe selection to a service...]**, seleziona il servizio interessato e avvia l’operazione.
 * Importa i destinatari e abbonali automaticamente a un servizio di informazioni. A questo scopo, seleziona il servizio interessato nell’ultimo passaggio della procedura guidata di importazione.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
@@ -136,7 +136,7 @@ Per registrare i destinatari per un servizio di informazione, puoi:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-web-applications.md).
 
-* Creazione di un flusso di lavoro di targeting e utilizzo di una casella **[!UICONTROL Subscription service]**.
+* Creazione di un flusso di lavoro di targeting e utilizzo di un **[!UICONTROL Subscription service]** scatola.
 
    ![](assets/s_ncs_user_subscribe_from_wf.png)
 
@@ -150,22 +150,22 @@ Le consegne e-mail devono contenere un collegamento di annullamento dell’abbon
 
 Il collegamento di annullamento dell’abbonamento predefinito viene inserito tramite l’ultimo pulsante nella barra degli strumenti dell’editor di contenuti fornito nella procedura guidata di consegna (consulta [Informazioni sulla personalizzazione](about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al  di elenco Bloccati (rinuncia), il che significa che il destinatario non sarà più oggetto di targeting da parte di alcuna azione di consegna.
 
-Tuttavia, i destinatari possono scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. Per fare ciò, puoi utilizzare un modulo web (consulta [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell’abbonamento personalizzato (consulta [Blocchi di personalizzazione](personalization-blocks.md)).
+Tuttavia, i destinatari possono scegliere di annullare l’iscrizione a un servizio senza annullare l’iscrizione a tutti i servizi. Per consentire questa operazione, è possibile utilizzare un modulo web (fare riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserisci un collegamento di annullamento all’abbonamento personalizzato (vedi [Blocchi di personalizzazione](personalization-blocks.md)).
 
-Puoi anche annullare manualmente l’iscrizione di un destinatario dal profilo del destinatario. A questo scopo, fare clic sulla scheda **[!UICONTROL Subscriptions]** del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
+Puoi anche annullare manualmente l’iscrizione di un destinatario dal profilo del destinatario. A questo scopo, fai clic sul pulsante **[!UICONTROL Subscriptions]** scheda del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 
-È infine possibile annullare l’iscrizione di uno o più destinatari tramite il servizio di informazione interessato. A questo scopo, fai clic sulla scheda **[!UICONTROL Subscriptions]** del servizio, seleziona i destinatari interessati e fai clic su **[!UICONTROL Delete]**.
+È infine possibile annullare l’iscrizione di uno o più destinatari tramite il servizio di informazione interessato. A questo scopo, fai clic sul pulsante **[!UICONTROL Subscriptions]** scheda del servizio, seleziona i destinatari interessati e fai clic su **[!UICONTROL Delete]**.
 
 #### Annullamento automatico della sottoscrizione {#automatic-unsubscription}
 
-Un servizio di informazione può avere una durata limitata. I destinatari verranno automaticamente annullati alla scadenza del periodo di validità. Questo periodo è specificato nella scheda **[!UICONTROL Edit]** delle proprietà del servizio. Viene espresso in giorni.
+Un servizio di informazione può avere una durata limitata. I destinatari verranno automaticamente annullati alla scadenza del periodo di validità. Questo periodo è specificato nel **[!UICONTROL Edit]** scheda delle proprietà del servizio. Viene espresso in giorni.
 
 ![](assets/s_ncs_user_services_delay.png)
 
-Puoi anche impostare un flusso di lavoro di annullamento dell’abbonamento per una popolazione. A questo scopo, segui la stessa procedura utilizzata per un flusso di lavoro di abbonamento, ma seleziona l’opzione **[!UICONTROL Unsubscription]** . Consulta [Iscrizione di un destinatario a un servizio](#subscribing-a-recipient-to-a-service).
+Puoi anche impostare un flusso di lavoro di annullamento dell’abbonamento per una popolazione. A questo scopo, segui la stessa procedura utilizzata per un flusso di lavoro di abbonamento, ma seleziona la **[!UICONTROL Unsubscription]** opzione . Vedi [Iscrizione di un destinatario a un servizio](#subscribing-a-recipient-to-a-service).
 
 ### Tracciamento dei sottoscrittori {#subscriber-tracking}
 
-Puoi tenere traccia delle modifiche negli abbonamenti ai servizi di informazione utilizzando il collegamento **[!UICONTROL Reports]** nel dashboard.
+Puoi tenere traccia delle modifiche apportate agli abbonamenti ai servizi di informazione utilizzando la variabile **[!UICONTROL Reports]** sul dashboard.
 
 ![](assets/s_ncs_user_services_report.png)

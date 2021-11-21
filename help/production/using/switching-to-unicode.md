@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-Per un&#39;istanza esistente **prod** in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
+Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
 
 1. Interrompere i processi di scrittura nel database:
 
@@ -60,7 +60,7 @@ Per un&#39;istanza esistente **prod** in Linux/PostgreSQL, i passaggi per passar
    vi config-prod.xml
    ```
 
-   Aggiungi il carattere **u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
+   Aggiungi il **u** davanti al valore relativo all&#39;identificativo del database (**databaseId**):
 
    ```
    <web>

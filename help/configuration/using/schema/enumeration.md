@@ -82,11 +82,11 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elem
    * timespan
    * uuid
 
-* **predefinito (stringa)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
+* **default (string)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
 * **desc (stringa)**: descrizione dell&#39;enumerazione.
-* **etichetta (stringa)**: etichetta di enumerazione.
-* **nome (stringa)**: nome interno dell&#39;enumerazione.
-* **template (stringa)**: questo attributo definisce un riferimento a un  `<enumeration>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **label (stringa)**: etichetta di enumerazione.
+* **name (stringa)**: nome interno dell&#39;enumerazione.
+* **template (stringa)**: questo attributo definisce un riferimento a un `<enumeration>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
 
 ## Esempi {#examples-4}
 

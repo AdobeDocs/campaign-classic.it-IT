@@ -23,8 +23,8 @@ Nel nostro database ci sono diverse offerte di viaggio per Europa, Africa, Stati
 
 Stiamo per configurare la nostra regola in modo che il viaggio in Canada venga offerto una sola volta per destinatario e non offerto di nuovo se rifiutato.
 
-1. Nella struttura di Adobe Campaign, passa al nodo **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** .
-1. Crea una nuova regola di tipo **[!UICONTROL Offer presentation]**.
+1. Nell’albero di Adobe Campaign, vai alla pagina **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** nodo.
+1. Crea un nuovo **[!UICONTROL Offer presentation]** digita la regola.
 
    ![](assets/offer_typology_example_001.png)
 
@@ -32,11 +32,11 @@ Stiamo per configurare la nostra regola in modo che il viaggio in Canada venga o
 
    ![](assets/offer_typology_example_002.png)
 
-1. Scegli l&#39;opzione **[!UICONTROL All channels]** per estendere la regola a tutti i canali.
+1. Scegli la **[!UICONTROL All channels]** per estendere la regola a tutti i canali.
 
    ![](assets/offer_typology_example_003.png)
 
-1. Fai clic sul collegamento **[!UICONTROL Edit expression]** e scegli il nodo **[!UICONTROL Category]** come espressione.
+1. Fai clic sul pulsante **[!UICONTROL Edit expression]** e scegli la **[!UICONTROL Category]** come espressione.
 
    ![](assets/offer_typology_example_004.png)
 
@@ -44,7 +44,7 @@ Stiamo per configurare la nostra regola in modo che il viaggio in Canada venga o
 
    ![](assets/offer_typology_example_005.png)
 
-1. Nella scheda **[!UICONTROL Offer presentation]** , scegli le stesse dimensioni di quelle configurate nell’ambiente.
+1. In **[!UICONTROL Offer presentation]** scegli le stesse dimensioni di quelle configurate nell’ambiente.
 
    ![](assets/offer_typology_example_006.png)
 
@@ -56,17 +56,17 @@ Stiamo per configurare la nostra regola in modo che il viaggio in Canada venga o
 
    ![](assets/offer_typology_example_008.png)
 
-1. Seleziona il filtro **[!UICONTROL Offers for the same category]** per escludere tutte le offerte dalla categoria **Canada** .
+1. Seleziona la **[!UICONTROL Offers for the same category]** , per escludere tutte le offerte dal **Canada** categoria.
 
    ![](assets/offer_typology_example_020.png)
 
-1. Seleziona il filtro **[!UICONTROL Rejected propositions]** per tenere conto solo delle proposte rifiutate dal destinatario.
+1. Seleziona la **[!UICONTROL Rejected propositions]** per tenere conto solo delle proposte respinte dal destinatario.
 
    ![](assets/offer_typology_example_021.png)
 
 1. Scegli i destinatari per i quali verrà applicata questa regola.
 
-   Nel nostro esempio, sceglieremo i destinatari **Viaggiatori frequenti**.
+   Nel nostro esempio, sceglieremo il **Viaggiatori frequenti** destinatari.
 
    ![](assets/offer_typology_example_009.png)
 
@@ -74,7 +74,7 @@ Stiamo per configurare la nostra regola in modo che il viaggio in Canada venga o
 
    ![](assets/offer_typology_example_013.png)
 
-1. Vai all&#39;ambiente delle offerte, (**Ambiente - Destinatario** in questo caso) e fai riferimento alla nuova tipologia appena creata utilizzando l&#39;elenco a discesa nella scheda **[!UICONTROL Eligibility]** .
+1. Vai all’ambiente delle offerte, (**Ambiente - Destinatario** in questo caso) e fai riferimento alla nuova tipologia appena creata utilizzando l’elenco a discesa nel **[!UICONTROL Eligibility]** scheda .
 
    ![](assets/offer_typology_example_014.png)
 
@@ -84,16 +84,16 @@ Ecco un esempio di applicazione della regola di tipologia creata in precedenza.
 
 Vogliamo inviare una prima proposta di offerta appartenente alla categoria Canada. Se l’offerta viene rifiutata una volta da uno dei destinatari, non verrà loro offerta nuovamente.
 
-1. Nella cartella dei destinatari **Viaggiatori frequenti** , scegli uno dei profili per controllare le offerte per le quali sono idonei: fare clic sulla scheda **[!UICONTROL Propositions]** , quindi sulla scheda **[!UICONTROL Preview]** .
+1. In **Viaggiatori frequenti** nella cartella dei destinatari, scegli uno dei profili per controllare le offerte per le quali sono idonei: fai clic su **[!UICONTROL Propositions]** , quindi la **[!UICONTROL Preview]** scheda .
 
-   Nel nostro esempio, **Tim Ramsey** è idoneo per un&#39;offerta che fa parte della categoria **Americhe**.
+   Nel nostro esempio, **Tim Ramsey** è ammissibile a un&#39;offerta che fa parte del **Americhe** categoria.
 
    ![](assets/offer_typology_example_015.png)
 
-1. Inizia creando una consegna e-mail indirizzata ai destinatari **Frequent Traveller** con offerte.
+1. Inizia creando una consegna e-mail destinata al tuo **Viaggiatori frequenti** destinatari con offerte.
 1. Seleziona i parametri di chiamata del motore di offerta.
 
-   Nel nostro esempio, viene selezionata la categoria **Viaggi in America**, che contiene le sottocategorie **Canada** e **Stati Uniti**.
+   Nel nostro esempio, il **Viaggi in America** viene selezionata la categoria , che contiene **Canada** e **Stati Uniti** sottocategorie.
 
    ![](assets/offer_typology_example_016.png)
 

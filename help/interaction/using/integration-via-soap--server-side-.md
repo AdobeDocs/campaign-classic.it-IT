@@ -21,11 +21,11 @@ I servizi Web SOAP forniti per la gestione delle offerte sono diversi da quelli 
 
 ## Proposta di offerta {#offer-proposition}
 
-Per una proposta di offerta tramite SOAP, aggiungi il comando **nms:proposition#Propose** seguito dai seguenti parametri:
+Per una proposta di offerta tramite SOAP, aggiungi la **nms:proposition#Propose** seguito dai seguenti parametri:
 
 * **targetId**: chiave primaria del destinatario (può essere una chiave composita).
 * **maxCount**: specifica il numero di proposte di offerta per il contatto.
-* **contesto**: consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:relation**, è necessario aggiungere **`<empty>`**.
+* **contesto**: consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:interazione**, **`<empty>`** devono essere aggiunti.
 * **categorie**: specifica le categorie a cui devono appartenere le offerte.
 * **temi**: specifica i temi a cui devono appartenere le offerte.
 * **uuid**: valore del cookie permanente di Adobe Campaign (&quot;uuid230&quot;).
@@ -34,20 +34,20 @@ Per una proposta di offerta tramite SOAP, aggiungi il comando **nms:proposition#
 
 >[!NOTE]
 >
->Le impostazioni **targetId** e **maxCount** sono obbligatorie. Gli altri sono facoltativi.
+>La **targetId** e **maxCount** le impostazioni sono obbligatorie. Gli altri sono facoltativi.
 
 In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 
 * **actionId**: ID dell’interazione.
-* **proposte**: Elemento XML, contiene l&#39;elenco delle proposte, ciascuna con il proprio ID e la propria rappresentazione HTML.
+* **proposizioni**: Elemento XML, contiene l&#39;elenco delle proposte, ciascuna con il proprio ID e la propria rappresentazione HTML.
 
 ## Aggiornamento dell’offerta {#offer-update}
 
-Aggiungi il comando **nms:interface#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
+Aggiungi il **nms:interazione#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
 
 * **proposta**: stringa di caratteri, contiene l&#39;ID della proposta fornito come output durante una proposta di offerta. Fai riferimento a [Proposta di offerta](#offer-proposition).
-* **stato**: tipo di stringa specifica il nuovo stato dell&#39;offerta. I valori possibili sono elencati nell&#39;enumerazione **propositionStatus** nello schema **nms:common**. Ad esempio, preconfigurato, il numero 3 corrisponde allo stato **Accettato** .
-* **contesto**: Elemento XML, consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:relation**, è necessario aggiungere **`<empty>`**.
+* **status**: tipo di stringa specifica il nuovo stato dell&#39;offerta. I valori possibili sono elencati nella **propositionStatus** enumerazione, **nms:common** schema. Ad esempio, preconfigurato, il numero 3 corrisponde al **Accettato** stato.
+* **contesto**: Elemento XML, consente di aggiungere informazioni contestuali nello schema dello spazio. Se lo schema utilizzato è **nms:interazione**, **`<empty>`** devono essere aggiunti.
 
 ## Esempio di utilizzo di una chiamata SOAP {#example-using-a-soap-call}
 

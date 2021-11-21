@@ -38,14 +38,14 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
 <table> 
  <thead> 
   <tr> 
-   <th> Status<br /> </th> 
+   <th> Stato<br /> </th> 
    <th> Definizioni e soluzioni<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> Inviato<br /> </td> 
-   <td> La consegna è stata inviata correttamente al provider del messaggio (ma il destinatario non l'ha necessariamente ricevuta).<br /> </td> 
+   <td> La consegna è stata inviata correttamente al provider del messaggio (ma il destinatario non l’ha necessariamente ricevuta).<br /> </td> 
   </tr> 
   <tr> 
    <td> Ignorato<br /> </td> 
@@ -53,11 +53,11 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Non riuscito<br /> </td> 
-   <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Consulta <a href="understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
+   <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Vedi <a href="understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
   </tr>
   <tr> 
-   <td> Pending<br /> </td> 
-   <td> La consegna è pronta per essere inviata e verrà elaborata dal server di consegna (MTA). Vedere <a href="#pending-status" target="_blank">Stato in sospeso</a>.<br /> </td> 
+   <td> In sospeso<br /> </td> 
+   <td> La consegna è pronta per essere inviata e verrà elaborata dal server di consegna (MTA). Vedi <a href="#pending-status" target="_blank">Stato in sospeso</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non applicabile<br /> </td> 
@@ -68,12 +68,12 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
    <td> La consegna è stata annullata da un operatore.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Preso in considerazione dal fornitore di servizi<br /> </td> 
-   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento all’MTA  <a href="sending-with-enhanced-mta.md" target="_blank">avanzato</a>, il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato.</td> 
+   <td> Presa in considerazione dal fornitore di servizi<br /> </td> 
+   <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al <a href="sending-with-enhanced-mta.md" target="_blank">MTA avanzato</a>, il messaggio è stato inviato correttamente da Campaign all’MTA avanzato.</td> 
   </tr> 
   <tr> 
-   <td> Ricevuto su mobile<br /> </td> 
-   <td> Il destinatario ha ricevuto l'SMS sul proprio dispositivo mobile.<br /> </td> 
+   <td> Ricevuto su cellulare<br /> </td> 
+   <td> Il destinatario ha ricevuto l’SMS sul proprio dispositivo mobile.<br /> </td> 
   </tr>
   <tr> 
    <td> Inviato al provider di servizi<br /> </td> 
@@ -82,18 +82,18 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Preparato<br /> </td> 
-   <td> Stato intermedio utilizzato solo per connettori esterni, come il canale mobile. Segue lo stato "In sospeso" ed è il connettore esterno che determinerà il seguente stato.<br /> </td> 
+   <td> Stato intermedio utilizzato solo per connettori esterni, come il canale mobile. Segue lo stato "In sospeso" ed è il connettore esterno che determinerà lo stato seguente.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per scoprire come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, consulta [questa sezione](about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Per scoprire come ottimizzare il recapito messaggi delle e-mail di Adobe Campaign, consulta [questa sezione](about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Stato in sospeso {#pending-status}
 
 Dopo aver confermato la consegna, puoi vedere che lo stato della consegna è **[!UICONTROL Pending]**. Questo stato significa che il processo di esecuzione è in attesa della disponibilità di alcune risorse.
 
-Lo stato **[!UICONTROL Pending]** può prima indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione delle consegne](steps-sending-the-delivery.md#scheduling-the-delivery-sending) .
+La **[!UICONTROL Pending]** lo stato può prima significare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione delle consegne](steps-sending-the-delivery.md#scheduling-the-delivery-sending) sezione .
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 
@@ -103,9 +103,9 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
    >[!NOTE]
    >
-   >Questa operazione può essere eseguita con un modello di hosting **on-premise** o **ibrido** con accesso al server Campaign (vedi [modelli di hosting](../../installation/using/hosting-models.md)).
+   >Questa operazione può essere eseguita con un **on-premise** o **ibrido** modello di hosting con accesso al server Campaign (vedi [modelli di hosting](../../installation/using/hosting-models.md)).
 
-   1. Verifica che i moduli `mta@<instance>` siano lanciati sui server MTA.
+   1. Controlla che la tua `mta@<instance>` i moduli vengono lanciati sui server MTA.
 
       ```
       nlserver pdump
@@ -127,11 +127,11 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
 * La consegna potrebbe utilizzare un’affinità non configurata sul server di invio.
 
-   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
+   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza il **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
 
 * Quando sono in esecuzione troppe campagne, lo stato di consegna rimane in sospeso.
 
-   Il limite di campagne simultanee è definito nell’opzione **[!UICONTROL NmsOperation_LimitConcurrency]** . Il valore predefinito è 10.
+   Il limite di campagne simultanee è definito nella **[!UICONTROL NmsOperation_LimitConcurrency]** opzione . Il valore predefinito è 10.
 
    Ulteriori informazioni sulle opzioni in [questa pagina](../../installation/using/configuring-campaign-options.md).
 

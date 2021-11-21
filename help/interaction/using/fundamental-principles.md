@@ -25,7 +25,7 @@ Esistono due ambienti per ogni dimensione di targeting utilizzata per la gestion
 
    Le categorie possono anche essere pubblicate manualmente nell’ambiente online.
 
-   La procedura per l’approvazione delle offerte è descritta nella sezione [Approvazione e attivazione di un’offerta](../../interaction/using/approving-and-activating-an-offer.md) .
+   La procedura per l’approvazione delle offerte è descritta nella sezione [Approvazione e attivazione di un’offerta](../../interaction/using/approving-and-activating-an-offer.md) sezione .
 
 * È possibile trovare un ambiente live in cui le offerte approvate dall’ambiente di progettazione, nonché i vari spazi di offerta, filtri, categorie e regole configurati nell’ambiente di progettazione. Durante una chiamata al motore di offerta, il motore utilizzerà sempre le offerte provenienti dall’ambiente live.
 

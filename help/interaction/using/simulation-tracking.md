@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Al termine della simulazione, puoi analizzarne il risultato tramite la scheda **[!UICONTROL Results]** aggiunta alla finestra di simulazione e al rapporto **[!UICONTROL Breakdown of offers by rank]**, disponibile tramite nel dashboard di simulazione.
+Una volta completata la simulazione, puoi analizzarne il risultato tramite il **[!UICONTROL Results]** che viene aggiunta alla finestra di simulazione e alla **[!UICONTROL Breakdown of offers by rank]** , disponibile tramite nel dashboard di simulazione.
 
 I risultati della simulazione contengono una suddivisione delle proposte per rango e per destinatario. Anche gli assi di reporting vengono presi in considerazione e visualizzati in questa scheda.
 
 Puoi salvare questi risultati ed esportarli, se necessario, creando un’analisi descrittiva dei risultati. A questo scopo, fai clic sul collegamento appropriato nella finestra dei risultati.
 
-Per ulteriori informazioni sulla procedura guidata di analisi descrittiva, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md) .
+Fai riferimento a [questa sezione](../../reporting/using/about-descriptive-analysis.md) per ulteriori informazioni sulla procedura guidata di analisi descrittiva.
 
 ![](assets/offer_simulation_012.png)
 

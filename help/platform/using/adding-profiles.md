@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ![](../../assets/common.svg)
 
-Nella maggior parte dei casi, i profili vengono [importati in Campaign tramite un flusso di lavoro](../../platform/using/import-export-workflows.md). Tuttavia, puoi aggiungere uno o più profili direttamente dall’interfaccia facendo clic sul pulsante **[!UICONTROL Create]** . Vengono quindi aggiunti al database.
+Nella maggior parte dei casi, i profili sono [importato in Campaign tramite un flusso di lavoro](../../platform/using/import-export-workflows.md). Tuttavia, puoi aggiungere uno o più profili direttamente dall’interfaccia, facendo clic sul pulsante **[!UICONTROL Create]** pulsante . Vengono quindi aggiunti al database.
 
 ![](assets/s_ncs_user_profile_add.png)
 

@@ -55,33 +55,33 @@ Elenco dei moduli interessati da problemi frequenti:
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> Scrittura dei log<br /> </td> 
-   <td> Se mancano alcuni log nei file di log, controlla che il modulo utilizzi la porta 6666. Fare riferimento a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Elenco delle porte aperte</a>.<br /> </td> 
+   <td> Scrittura del registro<br /> </td> 
+   <td> Se mancano alcuni log nei file di log, controlla che il modulo utilizzi la porta 6666. Fai riferimento a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Elenco delle porte aperte</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracking </td> 
    <td> Consolidamento e recupero dei registri di tracciamento<br /> </td> 
-   <td> Controlla questo modulo se i log di tracciamento non sono più inoltrati.<br /> </td> 
+   <td> Controlla questo modulo se i registri di tracciamento non sono più inoltrati.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> Tracciamento della scrittura del registro e della pulizia del server<br /> </td> 
-   <td> Controlla questo modulo se i log di tracciamento non sono più inoltrati e non ci sono tracce di log nei file sul server. Fai riferimento a <a href="../../production/using/tracking-logs-issues.md" target="_blank">Problemi dei registri di tracciamento</a>.<br /> </td> 
+   <td> Tracking del server di scrittura e pulizia del registro<br /> </td> 
+   <td> Controlla questo modulo se i log di tracciamento non sono più inoltrati e non ci sono tracce di log nei file sul server. Fai riferimento a <a href="../../production/using/tracking-logs-issues.md" target="_blank">Tracking dei problemi dei log</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> cane da guardia </td> 
    <td> Avvio e monitoraggio dell'istanza<br /> </td> 
-   <td> Controlla questo modulo se non viene avviato alcun processo.<br /> </td> 
+   <td> Controlla questo modulo se non iniziano i processi.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
    <td> Server applicazioni (HTTP e SOAP)<br /> </td> 
-   <td> Controlla questo modulo se la console e le connessioni web non funzionano e attiva un errore di tipo <strong>xtk:session</strong><br /> </td> 
+   <td> Controlla questo modulo se la console e le connessioni web non funzionano e attiva un <strong>xtk:session</strong> errore di tipo<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> Controlla l'esecuzione dell'istanza del flusso di lavoro.<br /> </td> 
-   <td> In caso di problemi, riavviare il modulo. Se necessario, applicare la procedura per aumentare la precisione dei log descritti nella sezione <a href="../../production/using/log-precision.md" target="_blank">Precisione log</a>.<br /> </td> 
+   <td> Controlla l’esecuzione dell’istanza del flusso di lavoro.<br /> </td> 
+   <td> In caso di problemi, riavviare il modulo. Se necessario, applicare la procedura per aumentare la precisione dei tronchi descritti nella <a href="../../production/using/log-precision.md" target="_blank">Precisione dei log</a> sezione .<br /> </td> 
   </tr> 
  </tbody> 
 </table>

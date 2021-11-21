@@ -31,7 +31,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
-   <td> @open<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -43,20 +43,20 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> Transazioni<br /> </td> 
-   <td> @Transactions<br /> </td> 
-   <td> Somma di tutti @totalClicks con un tipo di URL uguale a "Transaction".<br /> </td> 
+   <td> @transazioni<br /> </td> 
+   <td> Somma di tutti i @totalClicks con un tipo di URL uguale a "Transaction".<br /> </td> 
    <td> sum(Iif([url/@type]=5, @totalClicks, 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Questo rapporto è basato sulla tabella **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Questa tabella aggregata viene utilizzata per motivi di prestazioni durante la visualizzazione dei rapporti, al posto della tabella **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp) e non viene calcolata in tempo reale. La tabella viene generata alcuni minuti dopo il recupero dei log di tracciamento. Se gli indicatori sono aggiornati, i risultati saranno gli stessi degli indicatori del rapporto **Indicatori di tracciamento**. L&#39;indicatore @totalclick esprime il numero totale di clic su un periodo di 5 minuti.
+Questo rapporto si basa sul **[!UICONTROL Consolidated tracking]** tabella (nms:trackingStats). Questa tabella aggregata viene utilizzata per motivi di prestazioni durante la visualizzazione dei rapporti, al posto della **[!UICONTROL Recipient tracking logs]** tabella (nms:trackingLogRcp) e non viene calcolata in tempo reale. La tabella viene generata alcuni minuti dopo il recupero dei log di tracciamento. Se gli indicatori sono aggiornati, i risultati saranno gli stessi degli indicatori del **Indicatori di tracciamento** rapporto. L&#39;indicatore @totalclick esprime il numero totale di clic su un periodo di 5 minuti.
 
 ## Messaggi non recapitati e non trasferibili {#non-deliverables-and-bounces-1}
 
 **Suddivisione per tipo di errore**
 
-Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats).
+Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** tabella (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -71,7 +71,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Numero totale di messaggi elaborati<br /> </td> 
    <td> @totalProcessed<br /> </td> 
-   <td> Somma dei messaggi con stato uguale a "Ready", "Sent" o "Failed".<br /> </td> 
+   <td> Somma dei messaggi con stato uguale a "Ready", "Sent" o "Failed" (Pronto).<br /> </td> 
    <td> @ready + @error + @success<br /> </td> 
   </tr> 
   <tr> 
@@ -82,13 +82,13 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
   </tr> 
   <tr> 
    <td> Non raggiungibile <br /> </td> 
-   <td> @unreachable<br /> </td> 
+   <td> @irraggiungibile<br /> </td> 
    <td> Numero di tutti i messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "Non raggiungibile". <br /> </td> 
    <td> Count(@status=2 e msg/@failedReason=3)<br /> </td> 
   </tr> 
   <tr> 
    <td> Rifiutato<br /> </td> 
-   <td> @rifiutato<br /> </td> 
+   <td> @@rifiutato<br /> </td> 
    <td> Numero di tutti i messaggi con stato uguale a "Non riuscito" e motivo uguale a "Rifiutato". <br /> </td> 
    <td> Count(@status=2 e msg/@failedReason=20)<br /> </td> 
   </tr> 
@@ -123,7 +123,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
    <td> percent(@value,@totalErrors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Breakdown<br /> </td> 
+   <td> Suddivisione<br /> </td> 
    <td> -<br /> </td> 
    <td> Percentuale di errori di questo tipo rispetto al numero totale di messaggi elaborati.<br /> </td> 
    <td> percent(@value,@totalProcessed)<br /> </td> 
@@ -133,11 +133,11 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
 
 **Suddivisione per dominio**
 
-La seconda parte del rapporto descrive la suddivisione dei messaggi non riusciti per dominio Internet anziché per tipo di errore. La formula collegata all&#39;indicatore **Errore** (@value) in questo caso è: Count(@status=2 e @domain=&quot;Value of the domain name&quot;), cioè un conteggio di tutti i messaggi con uno stato non riuscito per questo dominio.
+La seconda parte del rapporto descrive la suddivisione dei messaggi non riusciti per dominio Internet anziché per tipo di errore. La formula collegata al **Errore** indicatore (@value) in questo caso è: Count(@status=2 e @domain=&quot;Value of the domain name&quot;), cioè un conteggio di tutti i messaggi con uno stato non riuscito per questo dominio.
 
 ## Browser {#browsers-1}
 
-Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
+Questo rapporto si basa sul **[!UICONTROL Internet Browser Statistics]** tabella (nms:userAgentsStats).
 
 **Statistiche globali**
 
@@ -154,7 +154,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistic
   <tr> 
    <td> Visitatori<br /> </td> 
    <td> @totalVisitors<br /> </td> 
-   <td> Numero totale di destinatari per il browser che ha fatto clic su una consegna almeno una volta.<br /> </td> 
+   <td> Numero totale di destinatari per il browser che ha fatto clic su in una consegna almeno una volta.<br /> </td> 
    <td> Sum(@visitatori)<br /> </td> 
   </tr> 
   <tr> 
@@ -188,7 +188,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistic
    <td> Tasso di utilizzo<br /> </td> 
    <td> @visitatori<br /> </td> 
    <td> Percentuale del numero di visitatori al giorno che utilizzano questo browser rispetto al numero di visitatori misurato nel giorno con il maggior numero di visite.<br /> </td> 
-   <td> percent(sum(@visitatori),max(@visitatoriOfTheDay)))<br /> </td> 
+   <td> percent(sum(@visitatori),max(@visitatoriOfTheDay))<br /> </td> 
   </tr> 
   <tr> 
    <td> Tasso globale<br /> </td> 
@@ -207,7 +207,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistic
 
 ## Condivisione sui social network {#sharing-to-social-networks-1}
 
-Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** (nms:webTrackingLog).
+Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** tabelle (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -220,16 +220,16 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
  </thead> 
  <tbody> 
   <tr> 
-   <td> Numero di messaggi da consegnare<br /> </td> 
+   <td> Numero di messaggi da inviare<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> Numero totale di messaggi elaborati durante l'analisi della consegna.<br /> </td> 
+   <td> Numero totale di messaggi elaborati durante l’analisi della consegna.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
    <td> Numero di consegne riuscite<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati correttamente <br /> </td> 
-   <td> sum([indicatori/@successo])<br /> </td> 
+   <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
@@ -252,7 +252,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
   <tr> 
    <td> Delizioso<br /> </td> 
    <td> @delizioso<br /> </td> 
-   <td> Somma di tutti i @totalClicks per i quali la categoria URL è uguale a "delizioso".<br /> </td> 
+   <td> Somma di tutti @totalClicks per i quali la categoria URL è uguale a "delizioso".<br /> </td> 
    <td> Sum(iIf([url/@category]='delizioso',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -291,11 +291,11 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
   <tr> 
    <td> Numero di azioni<br /> </td> 
    <td> @forward<br /> </td> 
-   <td> Numero totale di messaggi condivisi sul social network.<br /> </td> 
+   <td> Numero totale di messaggi condivisi nel social network.<br /> </td> 
    <td> Sum(iIf([url/@category]="Valore del tipo di social network",@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Breakdown<br /> </td> 
+   <td> Suddivisione<br /> </td> 
    <td> @percent<br /> </td> 
    <td> Percentuale del numero di azioni di questo social network rispetto al numero totale di azioni.<br /> </td> 
    <td> percent(@forward, sum(@forward))<br /> </td> 
@@ -303,7 +303,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
   <tr> 
    <td> Velocità di condivisione<br /> </td> 
    <td> @rate<br /> </td> 
-   <td> Numero di condivisioni in questa rete rispetto al numero di messaggi da consegnare.<br /> </td> 
+   <td> Numero di condivisioni in questa rete rispetto al numero di messaggi da inviare.<br /> </td> 
    <td> @forward / @totalTarget<br /> </td> 
   </tr> 
  </tbody> 
@@ -325,16 +325,16 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
    <td> Numero di aperture <br /> </td> 
    <td> @open<br /> </td> 
    <td> Numero totale di righe di tracciamento nella tabella di tracciamento web.<br /> </td> 
-   <td> Count<br /> </td> 
+   <td> Conteggio<br /> </td> 
   </tr> 
   <tr> 
-   <td> Breakdown<br /> </td> 
+   <td> Suddivisione<br /> </td> 
    <td> @percentOpen<br /> </td> 
    <td> Percentuale del numero di aperture su questo social network rispetto al numero totale di aperture.<br /> </td> 
    <td> percent(@open, sum(@open))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Frequenza di aperture<br /> </td> 
+   <td> Tasso di apertura<br /> </td> 
    <td> @rateOpen<br /> </td> 
    <td> Numero di aperture su questo social network rispetto al numero totale di messaggi da inviare.<br /> </td> 
    <td> @open / @totalTarget<br /> </td> 
@@ -344,7 +344,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
 
 ## Statistiche sulle attività di condivisione {#statistics-on-sharing-activities-1}
 
-Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** (nms:webTrackingLog).
+Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONTROL Consolidated tracking]** (nms:trackingStats) e **[!UICONTROL Web tracking]** tabelle (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -371,15 +371,15 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery]** (nms:delivery)
   <tr> 
    <td> Azioni<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> categoria URL inclusa in 'email' , 'facebook' , 'twitter' , 'delizioso' , 'digg' , 'google' , 'linkedin'<br /> Numero di tutti @totalClicks con una categoria URL che è uguale a "email", "facebook", "twitter", "delizioso", "digg", "google" o "linkedin".<br /> </td> 
-   <td> count (Iif([url/@category] IN (email' , 'facebook' , 'twitter' , 'delizioso' , 'digg' , 'google' , 'linkedin'), @totalClicks, 0))<br /> </td> 
+   <td> Categoria URL inclusa in "email" , "facebook" , "twitter" , "delizioso" , "digg" , "google" , "linkedin"<br /> Numero di tutti @totalClicks con una categoria URL che è uguale a "email", "facebook", "twitter", "delizioso", "digg", "google" o "linkedin".<br /> </td> 
+   <td> count (Iif([url/@category] IN (e-mail' , 'facebook' , 'twitter' , 'delizioso' , 'digg' , 'google' , 'linkedin'), @totalClicks, 0)<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Sistemi operativi {#operating-systems-1}
 
-Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistics]** (nms:userAgentsStats).
+Questo rapporto si basa sul **[!UICONTROL Internet Browser Statistics]** tabella (nms:userAgentsStats).
 
 **Statistiche globali**
 
@@ -449,7 +449,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Internet Browser Statistic
 
 ## Tracciamento sottoscrizione {#subscription-tracking-1}
 
-Questo rapporto si basa sulla tabella **[!UICONTROL Services]** (nms:service).
+Questo rapporto si basa sul **[!UICONTROL Services]** tabella (nms:service).
 
 <table> 
  <thead> 
@@ -470,7 +470,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Services]** (nms:service).
   <tr> 
    <td> Abbonamenti<br /> </td> 
    <td> @_subscription<br /> </td> 
-   <td> conteggio delle sottoscrizioni (@action = 1) il giorno precedente.<br /> </td> 
+   <td> conteggio degli abbonamenti (@action = 1) il giorno precedente.<br /> </td> 
    <td> sum(Iif(@action = 1 e @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
@@ -483,7 +483,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Services]** (nms:service).
    <td> Evoluzione<br /> </td> 
    <td> -<br /> </td> 
    <td> Numero di sottoscrizioni meno il numero di annullamenti di sottoscrizioni. Il tasso è calcolato in relazione al numero totale di abbonati.<br /> </td> 
-   <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '# ##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 0')+ '%)','')<br /> </td> 
+   <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '# ##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.0 0')+ '%)',')<br /> </td> 
   </tr> 
   <tr> 
    <td> Fedeltà<br /> </td> 
@@ -496,7 +496,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Services]** (nms:service).
 
 ## Indicatori di tracciamento {#tracking-indicators-1}
 
-Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
+Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats) tabelle.
 
 <table> 
  <thead> 
@@ -511,20 +511,20 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Messaggi da consegnare<br /> </td> 
    <td> @toDeliver<br /> </td> 
-   <td> Conteggio del numero di wideLogs dopo l'analisi di destinazione.<br /> </td> 
+   <td> Numero di wideLogs dopo l’analisi del target.<br /> </td> 
    <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Success<br /> </td> 
+   <td> Completato<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Numero di messaggi per i quali il campo "indirizzo di seed" è uguale a "No" e con uno stato uguale a "Preso in considerazione dal fornitore di servizi" o "Inviato" o "Ricevuto sul cellulare".<br /> </td> 
-   <td> sum([indicatori/@successo])<br /> </td> 
+   <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Apertura univoca sulla popolazione raggiunta<br /> </td> 
+   <td> Si apre una distinta sulla popolazione raggiunta<br /> </td> 
    <td> @EstimatedRecipientOpen<br /> </td> 
    <td> Estrapolazione del numero di aperture distinte per tutte le e-mail in base al numero di aperture distinte per le e-mail in formato html.<br /> </td> 
-   <td> Iif([@toDeliver] - [@text]) = 0, 0, round(toDouble(@recipientOpen) * [@toDeliver] / ([@toDeliver] - [@text]), 0)<br /> </td> 
+   <td> Iif([@toDeliver] - [@text]) = 0, 0, round(toDouble(@recipientOpen) * [@toDeliver] / ([@toDeliver] - [@text]), 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Somma delle aperture sulla popolazione raggiunta<br /> </td> 
@@ -533,7 +533,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
    <td> Iif([@toDeliver] - [@text]) = 0, 0, round(toDouble(@totalRecipientOpen) * [@toDeliver] / ([@toDeliver] - [@text]), 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic sul collegamento di annullamento dell'abbonamento<br /> </td> 
+   <td> Clic sul collegamento per annullare l’abbonamento<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Numero di tutti gli @ids con una categoria URL uguale a "Rinuncia".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
@@ -545,27 +545,27 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
    <td> count(Iif([url/@type]=6, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Stima dei inoltri<br /> </td> 
+   <td> Stima dei progressi<br /> </td> 
    <td> @forward<br /> </td> 
-   <td> Differenza tra il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic almeno una volta nell'e-mail.<br /> </td> 
+   <td> Differenza tra il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic almeno una volta nell’e-mail.<br /> </td> 
    <td> @personClick - @recipientClick<br /> </td> 
   </tr> 
   <tr> 
-   <td> Invia<br /> </td> 
+   <td> Invio<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Conteggio dei messaggi per i quali il campo "indirizzo di seed" è uguale a "No" e con uno stato uguale a "preso in considerazione dal destinatario" o "Inviato" o "Ricevuto su cellulare".<br /> </td> 
-   <td> sum([indicatori/@successo])<br /> </td> 
+   <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> Reclami<br /> </td> 
    <td> @reclami<br /> </td> 
-   <td> Numero di messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "indirizzo al elenco Bloccati".<br /> </td> 
+   <td> Numero di messaggi con stato uguale a "Non riuscito" e motivo uguale a "indirizzo al elenco Bloccati".<br /> </td> 
    <td> Count(@status=2 e msg/@failedReason=8)<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
    <td> @recipientOpen<br /> </td> 
-   <td> Numero di tutti gli @wideLog-ids in tutti i log di tracciamento.<br /> </td> 
+   <td> Numero di tutti gli @wideLog-id in tutti i log di tracciamento.<br /> </td> 
    <td> Countdistinct ([@wideLog-id])<br /> </td> 
   </tr> 
   <tr> 
@@ -577,23 +577,23 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Reattività grezza<br /> </td> 
    <td> -<br /> </td> 
-   <td> Percentuale del numero di destinatari che hanno fatto clic su una consegna almeno una volta rispetto al numero di destinatari che hanno aperto una consegna almeno una volta.<br /> </td> 
+   <td> Percentuale del numero di destinatari che hanno fatto clic in una consegna almeno una volta rispetto al numero di destinatari che hanno aperto una consegna almeno una volta.<br /> </td> 
    <td> percent(@recipientClick,@recipientOpen)<br /> </td> 
   </tr> 
   <tr> 
    <td> Clic distinto sulla popolazione raggiunta<br /> </td> 
    <td> @personClick<br /> </td> 
-   <td> Numero di tutti gli @source-ids con una categoria URL uguale a "Email click".<br /> </td> 
+   <td> Numero di tutti gli @source-ids con una categoria URL uguale a "Clic su e-mail".<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic cumulato<br /> </td> 
+   <td> Clic cumulativo<br /> </td> 
    <td> @totalRecipientClick<br /> </td> 
-   <td> Numero di tutti gli @ids con una categoria URL che è uguale a "Email click".<br /> </td> 
+   <td> Numero di tutti gli @id con una categoria URL che è uguale a "Clic su e-mail".<br /> </td> 
    <td> count(Iif([url/@type]=1, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> I clic del destinatario<br /> </td> 
+   <td> Clic del destinatario<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> Conteggio distinto degli @wideLog-ids con un tipo di URL che è uguale a "Email click".<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
@@ -601,7 +601,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Reattività stimata<br /> </td> 
    <td> -<br /> </td> 
-   <td> Rapporto tra il numero di destinatari che hanno fatto clic su una consegna almeno una volta rispetto alla stima dei destinatari che hanno aperto la consegna almeno una volta.<br /> </td> 
+   <td> Rapporto tra il numero di destinatari che hanno fatto clic su in una consegna almeno una volta rispetto alla stima dei destinatari che hanno aperto la consegna almeno una volta.<br /> </td> 
    <td> percent(@recipientClick, @EstimatedRecipientOpen<br /> </td> 
   </tr> 
   <tr> 
@@ -612,8 +612,8 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   </tr> 
   <tr> 
    <td> Transazioni<br /> </td> 
-   <td> @transaction<br /> </td> 
-   <td> Numero di tutti gli @ids con un tipo di URL uguale a "Transaction".<br /> </td> 
+   <td> @transazione<br /> </td> 
+   <td> Numero di tutti gli @ids con un tipo di URL uguale a "Transazione".<br /> </td> 
    <td> count(Iif([url/@type]=5, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
@@ -625,7 +625,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Importo medio della transazione<br /> </td> 
    <td> -<br /> </td> 
-   <td> Rapporto dell'importo totale rispetto al numero di transazioni.<br /> </td> 
+   <td> Rapporto tra l'importo totale e il numero di transazioni.<br /> </td> 
    <td> div(@amount, @transaction)<br /> </td> 
   </tr> 
   <tr> 
@@ -643,25 +643,25 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Importo medio per messaggio<br /> </td> 
    <td> -<br /> </td> 
-   <td> Rapporto tra l'importo totale e il numero di messaggi da inviare.<br /> </td> 
+   <td> Rapporto tra l’importo totale e il numero di messaggi da consegnare.<br /> </td> 
    <td> div(@amount, @toDeliver)<br /> </td> 
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
    <td> @email<br /> </td> 
-   <td> Somma di tutti i @totalClicks con una categoria di URL che è uguale a "email".<br /> </td> 
+   <td> Somma di tutti i @totalClicks con una categoria URL che è uguale a "email".<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
-   <td> Somma di tutti i @totalClicks con una categoria di URL che è uguale a "facebook".<br /> </td> 
+   <td> Somma di tutti i @totalClicks con una categoria URL che è uguale a "facebook".<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
-   <td> Somma di tutti i @totalClicks con una categoria di URL che è uguale a "twitter".<br /> </td> 
+   <td> Somma di tutti i @totalClicks con una categoria URL che è uguale a "twitter".<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
@@ -685,7 +685,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Linkedin<br /> </td> 
    <td> @linkedin<br /> </td> 
-   <td> Somma di tutti i @totalClicks con una categoria di URL che è uguale a "linkedin".<br /> </td> 
+   <td> Somma di tutti i @totalClicks con una categoria URL che è uguale a "linkedin".<br /> </td> 
    <td> Sum(iIf([url/@category]='linkedin',@totalClicks,0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -693,7 +693,7 @@ Questo rapporto è basato sulle tabelle **[!UICONTROL Delivery and tracking stat
 
 ## URL e flussi di clic {#urls-and-click-streams-1}
 
-Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
+Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
 
 <table> 
  <thead> 
@@ -708,26 +708,26 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Reattività<br /> </td> 
    <td> @reactivity<br /> </td> 
-   <td> Rapporto tra il numero di destinatari con cui hai fatto clic in una consegna almeno una volta rispetto al numero stimato di destinatari con cui hai aperto una consegna almeno una volta.<br /> </td> 
-   <td> percentuale([indicatori/@recipientClick], [indicatori/@stimatoRecipientOpen])<br /> </td> 
+   <td> Rapporto tra il numero di destinatari con cui hai fatto clic su una consegna almeno una volta rispetto al numero stimato di destinatari con cui hai aperto una consegna almeno una volta.<br /> </td> 
+   <td> percentuale([indicatori/@destinatariClick], [indicatori/@stimatoRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
    <td> Clic distinto<br /> </td> 
    <td> @distinctClicks<br /> </td> 
-   <td> Rapporto tra il numero di persone distinte che hanno fatto clic su una consegna almeno una volta rispetto al numero di messaggi consegnati con successo.<br /> </td> 
+   <td> Rapporto tra il numero di persone distinte che hanno fatto clic su in una consegna almeno una volta rispetto al numero di messaggi consegnati con successo.<br /> </td> 
    <td> percentuale([indicatori/@personaClic], [indicatori/@successo])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic cumulato<br /> </td> 
+   <td> Clic cumulativo<br /> </td> 
    <td> @totalClicks<br /> </td> 
    <td> Rapporto tra il numero totale di clic dei destinatari con targeting e il numero di messaggi consegnati con successo.<br /> </td> 
-   <td> percent([indicators/@totalRecipientClick], [indicatori/@success])<br /> </td> 
+   <td> percentuale([indicatori/@totalRecipientClick], [indicatori/@successo])<br /> </td> 
   </tr> 
   <tr> 
    <td> Clic<br /> </td> 
    <td> @_click<br /> </td> 
    <td> Numero di tutti @totalClicks con una chiave primaria URL diversa da 1<br /> </td> 
-   <td> count(Iif([@url-id] != 1, @totalClicks, 0)<br /> </td> 
+   <td> count(Iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Clic (%)<br /> </td> 
@@ -740,7 +740,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Riepilogo consegne {#delivery-summary-1}
 
-Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
+Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
 
 <table> 
  <thead> 
@@ -760,27 +760,27 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
   </tr> 
   <tr> 
    <td> Messaggi rifiutati dalla regola<br /> </td> 
-   <td> @deny<br /> </td> 
+   <td> @rifiuto<br /> </td> 
    <td> Numero di indirizzi ignorati durante l’analisi in linea con le regole di tipologia: indirizzo non specificato, messo in quarantena, al elenco Bloccati, ecc.<br /> </td> 
    <td> sum([proprietà/@rifiuto])<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi da consegnare<br /> </td> 
    <td> @toDeliver<br /> </td> 
-   <td> Numero totale di messaggi da consegnare dopo l'analisi della consegna.<br /> </td> 
+   <td> Numero totale di messaggi da consegnare dopo l’analisi della consegna.<br /> </td> 
    <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Success<br /> </td> 
+   <td> Completato<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati con successo.<br /> </td> 
-   <td> sum([indicatori/@successo])<br /> </td> 
+   <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> Errori<br /> </td> 
    <td> @error<br /> </td> 
-   <td> Numero totale di errori cumulati durante le consegne e l'elaborazione automatica dei messaggi non recapitati.<br /> </td> 
-   <td> sum([indicatori/@errore])<br /> </td> 
+   <td> Numero totale di errori cumulati durante le consegne e l’elaborazione automatica dei messaggi non recapitati.<br /> </td> 
+   <td> sum([indicators/@errore])<br /> </td> 
   </tr> 
   <tr> 
    <td> Nuova quarantena<br /> </td> 
@@ -793,13 +793,13 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Hot click {#hot-clicks-1}
 
-Questo rapporto si basa sulle tabelle Delivery(nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats) .
+Questo rapporto si basa sulla consegna (nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats) tabelle.
 
 Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) con, su ogni collegamento, la percentuale di clic sui collegamenti. I blocchi di personalizzazione per i collegamenti di annullamento dell’abbonamento e i collegamenti alle pagine mirror vengono presi in considerazione nei clic cumulati totali, ma non vengono visualizzati nel rapporto.
 
 ## Tracking delle statistiche {#tracking-statistics-1}
 
-Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
+Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
 
 <table> 
  <thead> 
@@ -813,7 +813,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
  <tbody> 
   <tr> 
    <td> Transazioni<br /> </td> 
-   <td> @Transactions<br /> </td> 
+   <td> @transazioni<br /> </td> 
    <td> Somma di tutti i @totalClicks con un tipo di URL che è uguale a "Transaction".<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -825,7 +825,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
   </tr> 
   <tr> 
    <td> Apri<br /> </td> 
-   <td> @open<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -834,7 +834,7 @@ Questo rapporto si basa sulla tabella **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Statistiche di consegna {#delivery-statistics-1}
 
-Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats).
+Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** tabella (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -849,11 +849,11 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> E-mail elaborate<br /> </td> 
    <td> @processed<br /> </td> 
-   <td> Numero totale di messaggi con stato uguale a "Ready", "Sent" o "Failed".<br /> </td> 
+   <td> Numero totale di messaggi con stato uguale a "Ready", "Sent" o "Failed" (Pronto).<br /> </td> 
    <td> @ready + @error + @success<br /> </td> 
   </tr> 
   <tr> 
-   <td> Delivered<br /> </td> 
+   <td> Consegnato<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati correttamente.<br /> </td> 
    <td> indicators/@success<br /> </td> 
@@ -868,7 +868,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
    <td> Rimbalzi morbidi<br /> </td> 
    <td> @softBounce<br /> </td> 
    <td> Totale di tutti i messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "Non raggiungibile", "Posta in arrivo piena", "dominio non valido", "account disabilitato", "non connesso" o "rifiutato"<br /> </td> 
-   <td> @unreachable + @mailBoxFull + @validDomain + @disabled + @notConnected + @rifiutato<br /> </td> 
+   <td> @unreachable + @mailBoxFull + @InvalidDomain + @disabled + @notConnected + @rifiutato<br /> </td> 
   </tr> 
   <tr> 
    <td> Messaggi aperti<br /> </td> 
@@ -885,7 +885,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
   <tr> 
    <td> Abbonamenti annullati<br /> </td> 
    <td> @optOut<br /> </td> 
-   <td> Numero totale di @ids per i quali la categoria URL è uguale a "Opt-out".<br /> </td> 
+   <td> Numero totale di @id per i quali la categoria URL è uguale a "Rinuncia".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -893,7 +893,7 @@ Questo rapporto è basato sulla tabella **[!UICONTROL Delivery and tracking stat
 
 ## Suddivisione delle aperture {#breakdown-of-opens-1}
 
-Questo rapporto si basa sulle tabelle **Consegne** (nms:delivery) e **Registri di tracciamento** (nms:trackingLogRcp).
+Questo rapporto si basa su **Consegne** (nms:delivery) e **Registri di tracciamento** (nms:trackingLogRcp) tabelle.
 
 <table> 
  <thead> 
@@ -916,17 +916,17 @@ Questo rapporto si basa sulle tabelle **Consegne** (nms:delivery) e **Registri d
 
 ## Altri indicatori {#other-indicators}
 
-L&#39;indicatore **Sent** (@sent), accessibile tramite il nodo **Consegne (nms:delivery) > Indicatori** corrisponde al numero totale di SMS inviati al provider di servizi. Questo indicatore viene utilizzato solo per le consegne SMS e non deve essere utilizzato per altri tipi di consegne (da non confondere con gli indicatori **@success** e **@processed** ).
+La **Inviato** indicatore (@sent), accessibile tramite **Consegne (nms:delivery) > Indicatori** nodo corrisponde al numero totale di SMS inviati al provider di servizi. Questo indicatore viene utilizzato solo per le consegne SMS e non deve essere utilizzato per altri tipi di consegne (da non confondere con il **@success** e **@elaborati** indicatori).
 
 ## Sincronizzazione indicatore {#indicator-synchronization}
 
-Se si verifica una desincronizzazione o un’incoerenza per alcuni indicatori, seleziona la consegna interessata nell’explorer di Adobe Campaign, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fare clic su **[!UICONTROL Next]**, quindi su **[!UICONTROL Finish]**.
+Se si verifica una desincronizzazione o un’incoerenza per determinati indicatori, seleziona la consegna interessata nell’explorer di Adobe Campaign, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Fai clic su **[!UICONTROL Next]**, quindi fai clic su **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
 ## Aperture di tracciamento {#tracking-opens-}
 
-Affinché Adobe Campaign possa rilevare l’apertura dei messaggi, il destinatario deve scaricare le immagini nell’e-mail. Le e-mail HTML e multiparte/alternativa includono un’immagine da 0 pixel, che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base all&#39;apertura dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione dell&#39;immagine.
+Affinché Adobe Campaign possa rilevare l’apertura dei messaggi, il destinatario deve scaricare le immagini nell’e-mail. Le e-mail HTML e Multipart/Alternative includono un’immagine a 0 pixel, che consente di rilevare i messaggi aperti. Poiché i messaggi in formato testo non includono immagini, è impossibile rilevare se sono stati aperti o meno. I valori calcolati in base all&#39;apertura dei messaggi sono sempre stime, a causa del margine di errore collegato alla visualizzazione dell&#39;immagine.
 
 ## Persone/destinatari interessati {#targeted-persons---recipients}
 

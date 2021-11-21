@@ -17,16 +17,16 @@ ht-degree: 17%
 
 ![](../../assets/common.svg)
 
-Quando la consegna è stata inviata e il tracciamento è attivato, il flusso di lavoro tecnico **[!UICONTROL Tracking]** ha il compito di recuperare i dati di tracciamento. Viene eseguito ogni ora per impostazione predefinita.
+Quando la consegna è stata inviata e il tracciamento è attivato, il **[!UICONTROL Tracking]** il flusso di lavoro tecnico è responsabile del recupero dei dati di tracciamento. Viene eseguito ogni ora per impostazione predefinita.
 
-Queste informazioni vengono visualizzate nella scheda **[!UICONTROL Tracking]** del profilo dei destinatari interessati dalla consegna, come nell’esempio seguente:
+Queste informazioni vengono visualizzate nella sezione **[!UICONTROL Tracking]** scheda del profilo dei destinatari interessati dalla consegna, come nell’esempio seguente:
 
 ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
-È accessibile anche tramite la scheda **[!UICONTROL Tracking]** della consegna.
+È accessibile anche tramite **[!UICONTROL Tracking]** scheda della consegna.
 
 ![](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 >[!NOTE]
 >
->Se non è possibile visualizzare la scheda **[!UICONTROL Tracking]** di una consegna, significa che il tracciamento non è stato attivato. Fai riferimento a [questa sezione](how-to-configure-tracked-links.md).
+>Se non riesci a visualizzare la **[!UICONTROL Tracking]** significa che il tracciamento non è stato attivato. Fai riferimento a [questa sezione](how-to-configure-tracked-links.md).

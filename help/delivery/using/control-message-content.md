@@ -21,23 +21,23 @@ Per essere sicuri che le e-mail raggiungano i destinatari e migliorino il tasso 
 
 Segui i principi elencati di seguito durante la progettazione del contenuto del messaggio:
 
-* [Indirizzo](#sender-address) mittente: l&#39;indirizzo deve identificare esplicitamente il mittente. Il dominio deve essere di proprietà e registrato al mittente. Il registro di dominio non deve essere privatizzato.
+* [Indirizzo mittente](#sender-address): l&#39;indirizzo deve identificare esplicitamente il mittente. Il dominio deve essere di proprietà e registrato al mittente. Il registro di dominio non deve essere privatizzato.
 * [Personalizzazione](#personalization): la personalizzazione del contenuto e la definizione del tempo di invio per destinatario aumentano le possibilità di apertura del messaggio.
 * Immagini e testo: rispettare un rapporto testo/immagine decente (ad esempio 60% di testo e 40% di immagini).
-* [Annullamento dell’abbonamento ](#opt-out) e pagina di destinazione: il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
+* [Collegamento di annullamento dell’abbonamento](#opt-out) e pagina di destinazione: il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
 * Anteprima: utilizza gli strumenti offerti da Adobe Campaign per controllare e ottimizzare il contenuto della tua e-mail ([Rendering della casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la progettazione dei contenuti, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
+Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la progettazione dei contenuti, consulta la sezione [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definizione del contenuto delle e-mail](defining-the-email-content.md) e [Creazione di contenuti personalizzati](design-and-personalize.md).
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definizione del contenuto dell’e-mail](defining-the-email-content.md) e [Creare contenuti personalizzati](design-and-personalize.md).
 
 ## Indirizzo mittente {#sender-address}
 
-Alcuni ISP controllano la validità dell&#39;indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo formato in modo non corretto può causare il rifiuto da parte del server ricevente.
+Alcuni ISP controllano la validità dell’indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo formato in modo non corretto può causare il rifiuto da parte del server ricevente.
 
-Devi accertarti che l’indirizzo corretto sia indicato a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
+È necessario assicurarsi che a livello di istanza sia fornito un indirizzo corretto (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
 
 Per ulteriori informazioni, consulta [Definizione del mittente](defining-the-email-content.md).
 
@@ -51,9 +51,9 @@ Alcuni suggerimenti per ottimizzare la personalizzazione durante la creazione de
 
 ## Collegamento e modulo di rinuncia {#opt-out}
 
-Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza. Puoi modificare questa regola in modo che venga generato un errore invece di un semplice avviso e impedire che una consegna venga interrotta senza questo collegamento.
+Per impostazione predefinita, quando il messaggio viene analizzato, un [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) verifica se un collegamento di rinuncia è stato incluso e genera un avviso in caso di assenza. Puoi modificare questa regola in modo che venga generato un errore invece di un semplice avviso e impedire che una consegna venga interrotta senza questo collegamento.
 
-Devi verificare che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia online e che la convalida di questo modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. È necessario eseguire questo controllo sistematicamente perché l’errore umano è sempre possibile quando si inserisce il collegamento o si modifica il modulo.
+Devi verificare che il collegamento di rinuncia funzioni correttamente prima di ogni invio. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia online e che la convalida di questo modifichi il valore del **[!UICONTROL No longer contact this recipient]** campo a **[!UICONTROL Yes]**. È necessario eseguire questo controllo sistematicamente perché l’errore umano è sempre possibile quando si inserisce il collegamento o si modifica il modulo.
 
 Scopri come inserire un collegamento di rinuncia [in questa sezione](personalization-blocks.md#personalization-blocks-example).
 
@@ -75,6 +75,6 @@ Per ulteriori informazioni, consulta [Rendering della casella in entrata](inbox-
 
 Adobe Campaign può essere configurato per lavorare con SpamAssassin. Questo consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
-Prima di avviare una consegna, la scheda **[!UICONTROL Preview]** ti consente di valutare i rischi. Un messaggio di avviso fornisce il risultato del test.
+Prima di avviare una consegna, il **[!UICONTROL Preview]** La scheda ti consente di valutare i rischi. Un messaggio di avviso fornisce il risultato del test.
 
-Ulteriori informazioni in questa sezione [sezione](spamassassin.md).
+Ulteriori informazioni [sezione](spamassassin.md).

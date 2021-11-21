@@ -21,7 +21,7 @@ I filtri predefiniti consentono di creare regole di idoneità per la popolazione
 
 Per creare un filtro, applica il seguente processo:
 
-1. Vai alla cartella **[!UICONTROL Administration]** e seleziona **[!UICONTROL Pre-defined offer filters]**.
+1. Vai a **[!UICONTROL Administration]** e seleziona **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 

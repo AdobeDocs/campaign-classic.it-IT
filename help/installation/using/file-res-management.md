@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## Limita il formato del file di caricamento {#limiting-uploadable-files}
 
-Utilizza l&#39;attributo **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
+Utilizza la **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
 
-Questo attributo è disponibile all&#39;interno dell&#39;elemento **dataStore** del file **serverConf.xml**. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+Questo attributo è disponibile all&#39;interno della variabile **dataStore** elemento **serverConf.xml** file. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
 
 Il valore predefinito di questo attributo è **.+** e consente di caricare qualsiasi tipo di file.
 
@@ -37,9 +37,9 @@ Ad esempio: **uploadWhiteList=&quot;.*.png,.*.jpg&quot;** consente di caricare i
 
 ## Configurazione della connessione proxy {#proxy-connection-configuration}
 
-Puoi collegare il server Campaign a un sistema esterno tramite un proxy, ad esempio utilizzando un’attività del flusso di lavoro **Trasferimento file**. A questo scopo, devi configurare la sezione **proxyConfig** del file **serverConf.xml** tramite un comando specifico. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
+Puoi collegare il server Campaign a un sistema esterno tramite un proxy utilizzando un **Trasferimento file** ad esempio, l’attività del flusso di lavoro . A questo scopo, devi configurare le **proxyConfig** della sezione **serverConf.xml** tramite un comando specifico. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
 
-Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibili**. Tali parametri sono ancora indicati di seguito in quanto rimangono disponibili nelle build precedenti, tra cui 9032.
+Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibile**. Tali parametri sono ancora indicati di seguito in quanto rimangono disponibili nelle build precedenti, tra cui 9032.
 
 >[!CAUTION]
 >
@@ -109,23 +109,23 @@ Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, sono supportate le
 * HTTP senza autenticazione
 * Autenticazione di base HTTP
 
-Per attivare la modalità proxy, è necessario eseguire la seguente modifica nel file `serverconf.xml` :
+Per attivare la modalità proxy, è necessario eseguire la seguente modifica nel `serverconf.xml` file:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Per ulteriori informazioni su questo connettore iOS HTTP/2, consulta questa [pagina](../../delivery/using/about-mobile-app-channel.md).
+Per ulteriori informazioni su questo connettore iOS HTTP/2, consulta [page](../../delivery/using/about-mobile-app-channel.md).
 
 ## Gestione delle risorse pubbliche {#managing-public-resources}
 
 Per essere disponibili al pubblico, le immagini utilizzate nelle e-mail e nelle risorse pubbliche collegate alle campagne devono essere presenti su un server accessibile esternamente. Possono quindi essere disponibili per i destinatari o gli operatori esterni. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Le risorse pubbliche sono memorizzate nella directory **/var/res/instance** della directory di installazione di Adobe Campaign.
+Le risorse pubbliche sono memorizzate nella **/var/res/instance** della directory di installazione di Adobe Campaign.
 
-L’URL corrispondente è: **http://server/res/instance** dove **instance** è il nome dell&#39;istanza di tracciamento.
+L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell&#39;istanza di tracciamento.
 
-È possibile specificare un&#39;altra directory aggiungendo un nodo al file **conf-`<instance>`.xml** per configurare la memorizzazione sul server. Questo significa aggiungere le seguenti righe:
+Puoi specificare un’altra directory aggiungendo un nodo al **conf-`<instance>`.xml** per configurare lo storage sul server. Questo significa aggiungere le seguenti righe:
 
 ```
 <serverconf>

@@ -29,7 +29,7 @@ Le schede e il relativo contenuto dipendono dalla configurazione e dai pacchetti
 
 >[!CAUTION]
 >
->Lo schema XML e il modulo che riguarda i campi nella tabella dei profili sono accessibili tramite il nodo **[!UICONTROL Administration > Configuration > Data schemas]** della struttura di Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
+>Lo schema XML e il modulo che riguarda i campi della tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
 >
 >Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/about-schema-edition.md).
 
@@ -41,7 +41,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 
 >[!NOTE]
 >
->Quando l’opzione **[!UICONTROL No longer contact (by any channel)]** è selezionata, significa che il profilo è in elenco Bloccati, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di targeting per consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
+>Quando il **[!UICONTROL No longer contact (by any channel)]** è selezionata l’opzione , il che significa che il profilo è in elenco Bloccati, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di targeting per consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
 ## Scheda Informazioni contatto {#contact-information-tab}
 
@@ -53,7 +53,7 @@ Questa schermata mostra l&#39;indice di qualità dell&#39;indirizzo, nonché qua
 
 ## Scheda Altro {#other-tab}
 
-Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. Puoi anche modificare i nomi dei campi e definirne il formato, tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
+Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. È inoltre possibile modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -75,7 +75,7 @@ Questa schermata contiene i servizi di informazioni a cui il profilo si è iscri
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Il pulsante **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. Il pulsante **[!UICONTROL Add]** viene utilizzato per aggiungere manualmente una nuova sottoscrizione.
+La **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. La **[!UICONTROL Add]** viene utilizzato per aggiungere manualmente una nuova sottoscrizione.
 
 Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
 

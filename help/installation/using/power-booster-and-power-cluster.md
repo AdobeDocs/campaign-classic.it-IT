@@ -63,27 +63,27 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
   </tr> 
   <tr> 
    <td> Disponibilità<br /> </td> 
-   <td> Quello del database principale<br /> </td> 
-   <td> 24/7 tranne le finestre di manutenzione e i tempi di inattività per l'istanza di esecuzione<br /> </td> 
+   <td> Quello del database primario<br /> </td> 
+   <td> 24/7 ad eccezione delle finestre di manutenzione e dei tempi di inattività per l’istanza di esecuzione<br /> </td> 
    <td> 24/7/365 servizio possibile<br /> </td> 
   </tr> 
   <tr> 
    <td> Sicurezza<br /> </td> 
    <td> Data mart è potenzialmente accessibile da Internet pubblico<br /> </td> 
-   <td> Data mart è isolato dai componenti frontali rivolti a Internet<br /> </td> 
-   <td> Data mart è isolato dai componenti frontali rivolti a Internet<br /> </td> 
+   <td> Data mart è isolato dai componenti frontali e rivolti a Internet<br /> </td> 
+   <td> Data mart è isolato dai componenti frontali e rivolti a Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Modello di distribuzione<br /> </td> 
-   <td> Tutti su un sito (può essere on-premise o nel cloud)<br /> </td> 
-   <td> Possibilità di effettuare il marketing on-premise con l’esecuzione nel cloud<br /> </td> 
-   <td> marketing on-premise con esecuzione nel cloud; esecuzione in diversi geos possibili<br /> </td> 
+   <td> Tutte su un sito (possono essere on-premise o nel cloud)<br /> </td> 
+   <td> Marketing on-premise con esecuzione nel cloud possibile<br /> </td> 
+   <td> marketing on-premise con esecuzione nel cloud; esecuzione in geos diversi possibile<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Raccomandazioni {#recommendations}
 
-* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non è possibile installare un pacchetto per un servizio a cui non si è iscritti. Ad esempio, se ti abboni all&#39;opzione **Power Booster** per il servizio **Message Center**, puoi installare il pacchetto **[!UICONTROL Execution of transactional messages]** solo sull&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
-* Poiché le istanze dedicate (o cluster) sono istanze Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. Per ulteriori informazioni, consulta [questo documento](../../production/using/foreword.md).
-* Per configurare correttamente l&#39;istanza dal punto di vista di un database/componenti hardware, contatta Adobe Campaign Professional Services.
+* Un&#39;istanza di esecuzione deve essere dedicata a un servizio. Non è possibile installare un pacchetto per un servizio a cui non si è iscritti. Ad esempio, se ti abboni al **Alimentazione** per **Centro messaggi** è possibile installare solo il servizio **[!UICONTROL Execution of transactional messages]** pacchetto sull&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
+* Poiché le istanze dedicate (o cluster) sono istanze Adobe Campaign, le raccomandazioni sono le stesse di un&#39;istanza principale. Per ulteriori informazioni, consulta [presente documento](../../production/using/foreword.md).
+* Per configurare correttamente l&#39;istanza dal punto di vista di un database/componenti hardware, contattare Adobe Campaign Professional Services.

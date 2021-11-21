@@ -19,17 +19,17 @@ ht-degree: 6%
 
 Per creare uno schema su un database esterno:
 
-1. Fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco degli schemi di dati e scegli **[!UICONTROL Access external data]**.
+1. Fai clic sul pulsante **[!UICONTROL New]** pulsante sopra l’elenco degli schemi di dati e scegli **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Immetti un **[!UICONTROL Namespace]** e **[!UICONTROL Name]** per lo schema e seleziona il **[!UICONTROL External account]** che abiliterà la connessione al database. Ciò consente l’accesso all’elenco delle tabelle disponibili nella base esterna.
+1. Inserisci un **[!UICONTROL Namespace]** e  **[!UICONTROL Name]** per lo schema e seleziona il **[!UICONTROL External account]** che consente la connessione al database. Ciò consente l’accesso all’elenco delle tabelle disponibili nella base esterna.
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Dal campo **[!UICONTROL Table name]** , scegli la tabella che contiene i dati da raccogliere.
+1. Da **[!UICONTROL Table name]** scegliere la tabella contenente i dati da raccogliere.
 
-   Con il Snowflake, è possibile selezionare qui le visualizzazioni se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le visualizzazioni, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta la [documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Con il Snowflake, è possibile selezionare qui le visualizzazioni se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le visualizzazioni, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta [Documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

@@ -26,7 +26,7 @@ Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricev
 
 Questo passaggio ti consente di rilevare eventuali errori e correggerli prima di consegnarli al target principale.
 
-I passaggi per la convalida di una consegna sono descritti [in questa sezione](steps-validating-the-delivery.md).
+Vengono descritti i passaggi per la convalida di una consegna [in questa sezione](steps-validating-the-delivery.md).
 
 ## Rendering della casella in entrata {#inbox-and-email-rendering}
 
@@ -74,7 +74,7 @@ Puoi aumentare progressivamente il volume inviato utilizzando le onde. In questo
 
 Puoi impostare l’ordine di invio per le consegne specificando il livello di priorità. Per eseguire questa operazione:
 
-1. Modifica le proprietà di consegna e seleziona la scheda **[!UICONTROL Delivery]** .
+1. Modifica le proprietà di consegna e seleziona il **[!UICONTROL Delivery]** scheda .
 
 1. Definisci il livello di priorità per la consegna su una scala da **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
 
@@ -92,7 +92,7 @@ Puoi:
 
 * Per ogni elemento IPAffinity, dichiarare gli indirizzi IP che possono essere utilizzati. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Nella [tipologia](../../campaign-opt/using/about-campaign-typologies.md) scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* In [tipologia](../../campaign-opt/using/about-campaign-typologies.md) di tua scelta, utilizza **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Una volta inviata l’e-mail, controlla l’intestazione per verificare da quale indirizzo IP è stata inviata la consegna. L’amministratore di e-mail deve essere in grado di ottenere le informazioni relative all’intestazione.
 

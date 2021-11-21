@@ -63,7 +63,7 @@ Puoi scegliere tra cinque lingue diverse:
 
 La lingua scelta per l’istanza Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
-Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
+Per ulteriori informazioni su come creare un’istanza, consulta questo [page](../../installation/using/creating-an-instance-and-logging-on.md).
 
 >[!CAUTION]
 >
@@ -79,15 +79,15 @@ Le varie funzionalità della piattaforma sono suddivise in funzionalità princip
 
 L’elenco delle funzionalità di base a cui puoi accedere dipende dai pacchetti e dai componenti aggiuntivi installati e dai diritti di accesso.
 
-Ogni funzionalità include un set di funzionalità in base alle esigenze relative alle attività e al contesto di utilizzo. Ad esempio, il collegamento **[!UICONTROL Profiles and targets]** ti porta agli elenchi dei destinatari, ai servizi di abbonamento, ai flussi di lavoro di targeting esistenti e alle scelte rapide per la creazione di tali elementi.
+Ogni funzionalità include un set di funzionalità in base alle esigenze relative alle attività e al contesto di utilizzo. Ad esempio, il **[!UICONTROL Profiles and targets]** link ti porta agli elenchi dei destinatari, ai servizi di abbonamento, ai flussi di lavoro di targeting esistenti e alle scelte rapide per la creazione di questi elementi.
 
-Gli elenchi sono disponibili tramite il collegamento **[!UICONTROL Lists]** nella sezione a sinistra dell’ interfaccia **[!UICONTROL Profiles and Targets]** .
+Gli elenchi sono disponibili tramite **[!UICONTROL Lists]** nella sezione a sinistra del **[!UICONTROL Profiles and Targets]** interfaccia.
 
 ![](assets/recipient_list_overview.png)
 
 ### Usa schede {#using-tabs}
 
-* Quando fai clic su una funzionalità di base o su un collegamento, la pagina corrispondente sostituisce la pagina corrente. Per tornare alla pagina precedente, fai clic sul pulsante **[!UICONTROL Back]** nella barra degli strumenti. Per tornare alla home page, fai clic sul pulsante **[!UICONTROL Home]** .
+* Quando fai clic su una funzionalità di base o su un collegamento, la pagina corrispondente sostituisce la pagina corrente. Per tornare alla pagina precedente, fai clic sul pulsante **[!UICONTROL Back]** sulla barra degli strumenti. Per tornare alla home page, fai clic sul pulsante **[!UICONTROL Home]** pulsante .
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -97,11 +97,11 @@ Gli elenchi sono disponibili tramite il collegamento **[!UICONTROL Lists]** nell
 
 ### Creare un elemento {#creating-an-element}
 
-Ogni sezione delle funzionalità di base consente di navigare tra gli elementi disponibili. A questo scopo, utilizza le scelte rapide nella sezione **[!UICONTROL Browsing]** . Il collegamento **[!UICONTROL Other choices]** ti consente di accedere a tutte le altre pagine, indipendentemente dall’ambiente.
+Ogni sezione delle funzionalità di base consente di navigare tra gli elementi disponibili. A questo scopo, utilizza le scelte rapide **[!UICONTROL Browsing]** sezione . La **[!UICONTROL Other choices]** link ti consente di accedere a tutte le altre pagine, indipendentemente dall’ambiente.
 
-Puoi creare un nuovo elemento (consegna, applicazione Web, flusso di lavoro, ecc.) utilizzando le scelte rapide nella sezione **[!UICONTROL Create]** a sinistra dello schermo. Utilizza il pulsante **[!UICONTROL Create]** sopra l’elenco per aggiungere nuovi elementi all’elenco.
+Puoi creare un nuovo elemento (consegna, applicazione Web, flusso di lavoro, ecc.) utilizzo delle scelte rapide **[!UICONTROL Create]** a sinistra dello schermo. Utilizza la **[!UICONTROL Create]** per aggiungere nuovi elementi all’elenco.
 
-Ad esempio, nella pagina di consegna, utilizza il pulsante **[!UICONTROL Create]** per creare una nuova consegna.
+Ad esempio, nella pagina di consegna, utilizza il **[!UICONTROL Create]** per creare una nuova consegna.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -121,7 +121,7 @@ Le principali differenze tra inglese americano e inglese britannico sono:
   <tr> 
    <th> Formati<br /> </th> 
    <th> Inglese (Stati Uniti)<br /> </th> 
-   <th> Inglese (EN)<br /> </th> 
+   <th> Inglese (IT)<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -136,16 +136,16 @@ Le principali differenze tra inglese americano e inglese britannico sono:
    <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
   </tr> 
   <tr> 
-   <td> Data breve con tempo<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
+   <td> Data breve con ora<br /> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 10:47:25</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 09/25/2018 22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Aggiungere valori in un’enumerazione {#add-values-in-an-enumeration}
 
-Utilizzando i campi di input con un elenco a discesa, puoi immettere un valore di enumerazione, che può essere memorizzato e quindi offerto come opzione nell’elenco a discesa. Ad esempio, nel campo **[!UICONTROL City]** della scheda **[!UICONTROL General]** di un profilo destinatario, puoi accedere a Londra. Quando si preme Invio per confermare questo valore, viene richiesto se si desidera salvare questo valore per l&#39;enumerazione associata al campo.
+Utilizzando i campi di input con un elenco a discesa, puoi immettere un valore di enumerazione, che può essere memorizzato e quindi offerto come opzione nell’elenco a discesa. Ad esempio, nella **[!UICONTROL City]** campo **[!UICONTROL General]** scheda di un profilo destinatario, puoi accedere a Londra. Quando si preme Invio per confermare questo valore, viene richiesto se si desidera salvare questo valore per l&#39;enumerazione associata al campo.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
@@ -153,11 +153,11 @@ Se fai clic su **[!UICONTROL Yes]**, questo valore sarà disponibile nella casel
 
 >[!NOTE]
 >
->Le enumerazioni (dette anche &quot;elenchi dettagliati&quot;) vengono gestite dall’amministratore tramite la sezione **[!UICONTROL Administration > Platform > Enumerations]** . Per ulteriori informazioni, consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md).
+>Le enumerazioni (dette anche &quot;elenchi dettagliati&quot;) sono gestite dall’amministratore tramite il **[!UICONTROL Administration > Platform > Enumerations]** sezione . Per ulteriori informazioni, consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md).
 
 ### Unità predefinite {#default-units}
 
-Nei campi che esprimono una durata (ad esempio il periodo di validità delle risorse di una consegna, il termine di approvazione di un&#39;attività, ecc.), il valore può essere espresso nelle seguenti **unità**:
+Nei campi che esprimono una durata (ad esempio il periodo di validità delle risorse di una consegna, il termine di approvazione di un&#39;attività, ecc.), il valore può essere espresso nel seguente **unità**:
 
 * **[!UICONTROL s]** per secondi,
 * **[!UICONTROL mn]** per i minuti,

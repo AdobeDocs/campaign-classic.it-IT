@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Utilizza il tuo Adobe ID in Campaign
-description: Ulteriori informazioni sull’integrazione Adobe IMS
+description: Ulteriori informazioni sull’integrazione di Adobe IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
@@ -17,7 +17,7 @@ ht-degree: 24%
 
 ![](../../assets/common.svg)
 
-Adobe Identity Management System (IMS) consente agli amministratori di creare e gestire l’accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID Adobe, consulta [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) consente agli amministratori di creare e gestire l’accesso degli utenti alle applicazioni e ai servizi. Per ulteriori informazioni sui diversi tipi di ID di Adobe, consulta [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
 Gli utenti di Campaign possono connettersi alla console Adobe Campaign utilizzando il proprio Adobe ID. Questa integrazione offre i seguenti vantaggi:
 
@@ -29,7 +29,7 @@ Gli utenti di Campaign possono connettersi alla console Adobe Campaign utilizzan
 
 >[!IMPORTANT]
 >
->Se ti connetti a Campaign tramite Adobe Identity Service (IMS), devi effettuare l’aggiornamento alla build più recente per poterti connettere a Campaign dopo il **30 giugno 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client. A seconda della versione corrente, è necessario eseguire l’aggiornamento a una delle seguenti versioni:
+>Se ti connetti a Campaign tramite Adobe Identity Service (IMS), devi effettuare l’aggiornamento alla build più recente per poterti connettere a Campaign dopo **30 giugno 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client. A seconda della versione corrente, è necessario eseguire l’aggiornamento a una delle seguenti versioni:
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.3](../../rn/using/latest-release.md)

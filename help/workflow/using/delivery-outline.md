@@ -17,29 +17,29 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Il **profilo di consegna** consente di utilizzare un profilo in un flusso di lavoro della campagna. La struttura deve essere stata creata in precedenza nella campagna.
+La **profilo di consegna** consente di utilizzare una struttura in un flusso di lavoro della campagna. La struttura deve essere stata creata in precedenza nella campagna.
 
-Per ulteriori informazioni sui profili di consegna in Adobe Campaign, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Per ulteriori informazioni sui profili di consegna in Adobe Campaign, consulta questo [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 Per configurare l’attività, è sufficiente selezionare il profilo desiderato e la data di contatto pianificata. Puoi aggiungere regole di filtro aggiungendo tipologie o regole di tipologia.
 
 ## Esempio: Inserimento di un’offerta tramite un profilo di consegna {#example--inserting-an-offer-via-a-delivery-outline}
 
-L’attività **consegna struttura**, disponibile nei flussi di lavoro delle campagne, consente di presentare le offerte a cui si fa riferimento in una struttura di consegna dalla campagna corrente in corso.
+La **profilo di consegna** L’attività , disponibile nei flussi di lavoro delle campagne, ti consente di presentare offerte a cui si fa riferimento in una struttura di consegna dalla campagna corrente in corso.
 
 >[!NOTE]
 >
->Il pacchetto **Interaction** deve essere installato.
+>La **Interazione** il pacchetto deve essere installato.
 
 1. In un flusso di lavoro, aggiungi un’attività di profilo della consegna prima di aggiungere un’attività di consegna.
 1. Nell’attività di struttura della consegna, specifica il profilo da utilizzare.
 
-   Per ulteriori informazioni sulla specifica dei profili di consegna, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Per ulteriori informazioni sulla specifica dei profili di consegna, consulta questo [sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 1. Completa i campi disponibili in base alla consegna.
 1. Esistono due casi possibili:
 
-   * Se desideri chiamare il motore di offerta, seleziona la casella **[!UICONTROL Restrict the number of propositions selected]** . Specifica lo spazio di offerta e il numero di proposte da presentare nella consegna.
+   * Se desideri chiamare il motore di offerta, controlla la **[!UICONTROL Restrict the number of propositions selected]** scatola. Specifica lo spazio di offerta e il numero di proposte da presentare nella consegna.
 
       Il motore di offerta terrà conto dei fattori di ponderazione e delle regole di idoneità dell’offerta.
 

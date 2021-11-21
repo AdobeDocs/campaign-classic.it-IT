@@ -25,9 +25,9 @@ In un flusso di lavoro, puoi adattare i piani di esecuzione dell’attività e c
 
 ## Pianificazione esecuzione {#execution-scheduling}
 
-Puoi pianificare l&#39;esecuzione delle attività utilizzando lo scheduler (consulta [Scheduler](scheduler.md)). Puoi inoltre utilizzare le opzioni di pianificazione disponibili nelle attività che offrono questa funzionalità. Queste attività offrono una scheda **[!UICONTROL Schedule]** : **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, ecc.
+Puoi pianificare l’esecuzione delle attività utilizzando lo scheduler (consulta [Scheduler](scheduler.md)). Puoi inoltre utilizzare le opzioni di pianificazione disponibili nelle attività che offrono questa funzionalità. Queste attività offrono un **[!UICONTROL Schedule]** scheda: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, ecc.
 
-Per tutte le attività pianificate, ovvero tutte le attività con opzioni di pianificazione, è possibile selezionare il fuso orario da applicare. Il fuso orario viene selezionato tramite la scheda **[!UICONTROL Advanced]** dell’attività interessata:
+Per tutte le attività pianificate, ovvero tutte le attività con opzioni di pianificazione, è possibile selezionare il fuso orario da applicare. Il fuso orario viene selezionato tramite la **[!UICONTROL Advanced]** scheda dell’attività interessata:
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -49,8 +49,8 @@ I valori possibili sono:
 
    Utilizza il fuso orario selezionato.
 
-Se il valore **[!UICONTROL By default]** è selezionato, viene applicato il fuso orario del flusso di lavoro o, in caso contrario, quello dell&#39;application server.
+Se la **[!UICONTROL By default]** viene selezionato , viene applicato il fuso orario del flusso di lavoro o, in caso contrario, quello dell&#39;application server.
 
 ## Collegamento di un fuso orario a un’attività {#linking-a-time-zone-to-an-activity}
 
-La scheda **[!UICONTROL Advanced]** delle attività del flusso di lavoro ti consente di selezionarne il fuso orario. Anche se la maggior parte del tempo, il fuso orario dei flussi di lavoro è sufficiente, può essere necessario sovraccaricarlo di tanto in tanto per un’attività specifica, come l’importazione di dati, al fine di collegare le date al loro fuso orario corretto.
+La **[!UICONTROL Advanced]** la scheda delle attività del flusso di lavoro ti consente di selezionarne il fuso orario. Anche se la maggior parte del tempo, il fuso orario dei flussi di lavoro è sufficiente, può essere necessario sovraccaricarlo di tanto in tanto per un’attività specifica, come l’importazione di dati, al fine di collegare le date al loro fuso orario corretto.

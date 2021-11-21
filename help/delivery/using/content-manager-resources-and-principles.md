@@ -29,9 +29,9 @@ Per la configurazione del contenuto sono necessarie le seguenti risorse:
 
 * Schemi di dati: descrizione della struttura del contenuto XML. Per ulteriori informazioni, consulta [Schemi di dati](data-schemas.md).
 * Moduli di immissione dati: costruzione di schermate di immissione dati. Per ulteriori informazioni, consulta [Moduli di input](input-forms.md).
-* Immagini: immagini utilizzate nei moduli di immissione dati. Per ulteriori informazioni, consulta [Gestione immagini](formatting.md#image-management).
+* Immagini: immagini utilizzate nei moduli di immissione dati. Per ulteriori informazioni, consulta [Gestione delle immagini](formatting.md#image-management).
 * Fogli di stile: formattazione di documenti di output utilizzando il linguaggio XSLT. Per ulteriori informazioni, consulta [Formattazione](formatting.md).
 * Modelli JavaScript: formattazione di documenti di output utilizzando il linguaggio JavaScript. Per ulteriori informazioni, consulta [Modelli di pubblicazione](publication-templates.md).
-* Codici JavaScript: Codici JavaScript per l’aggregazione dei dati. Per ulteriori informazioni, consulta [Aggregator](publication-templates.md#aggregator).
+* Codici JavaScript: Codici JavaScript per l’aggregazione dei dati. Per ulteriori informazioni, consulta [Aggregatore](publication-templates.md#aggregator).
 * Modelli di pubblicazione: definizione dei modelli di pubblicazione. Per ulteriori informazioni, consulta [Modelli di pubblicazione](publication-templates.md).
 * Contenuto: istanze di contenuto da creare e pubblicare. Per ulteriori informazioni, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).

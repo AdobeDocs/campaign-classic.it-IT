@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Abilitazione della connessione IMS {#enabling-the-ims-connection}
 
-1. Per abilitare la connessione tramite IMS, seleziona **[!UICONTROL Connect with an Adobe ID]** nella finestra delle connessioni della console.
+1. Per abilitare la connessione tramite IMS, controlla **[!UICONTROL Connect with an Adobe ID]** nella finestra delle connessioni della console.
 
    ![](assets/ims_1.png)
 

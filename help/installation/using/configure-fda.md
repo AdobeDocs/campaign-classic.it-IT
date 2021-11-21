@@ -29,7 +29,7 @@ Come regola generale, devi installare il livello client corrispondente sul datab
 
 Per impostare l&#39;accesso a un database esterno con FDA, i passaggi di configurazione sono i seguenti:
 
-1. Installa i driver e configura l&#39;account esterno corrispondente al database sul server Adobe Campaign. Fai riferimento alle pagine specifiche del database [elencate di seguito](#fda-specific-configuration)
+1. Installa i driver e configura l&#39;account esterno corrispondente al database sul server Adobe Campaign. Fai riferimento alle pagine specifiche del database [elencati di seguito](#fda-specific-configuration)
 1. Verifica l’account esterno o crea una connessione temporanea tra Adobe Campaign e il database esterno. [Ulteriori informazioni](../../installation/using/connecting-to-database.md)
 1. Crea lo schema del database esterno in Adobe Campaign. Ciò ti consente di identificare la struttura dati del database esterno. [Ulteriori informazioni](../../installation/using/creating-data-schema.md)
 1. Se necessario, crea una nuova mappatura di destinazione dallo schema creato in precedenza. Questo è necessario se i destinatari delle consegne provengono dal database esterno. Questa implementazione include limitazioni relative alla personalizzazione dei messaggi. [Ulteriori informazioni](../../installation/using/defining-data-mapping.md)
@@ -42,22 +42,22 @@ A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai
 
 Segui i collegamenti riportati di seguito per ulteriori informazioni:
 
-* Connetti campagna e [Vertica](../../installation/using/configure-fda-vertica.md)
+* Connetti Campaign e [Vertica](../../installation/using/configure-fda-vertica.md)
 
-* Connetti Campaign e [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
+* Connetti Campaign e [BigQuery Google](../../installation/using/configure-fda-google-big-query.md)
 
-* Connetti campagna e [Azure synapse](../../installation/using/configure-fda-synapse.md)
+* Connetti Campaign e [azure synapse](../../installation/using/configure-fda-synapse.md)
 
-* Connetti campagna e [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Connetti Campaign e [Snowflake](../../installation/using/configure-fda-snowflake.md)
 
-* Connetti campagna e [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Connetti Campaign e [Hadoop](../../installation/using/configure-fda-hadoop.md)
 
 * Connetti Campaign e [Oracle](../../installation/using/configure-fda-oracle.md)
 
-* Connetti campagna e [Netezza](../../installation/using/configure-fda-netezza.md)
+* Connetti Campaign e [Netezza](../../installation/using/configure-fda-netezza.md)
 
-* Connetti campagna e [Sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Connetti Campaign e [sybase IQ](../../installation/using/configure-fda-sybase.md)
 
-* Connetti campagna e [Teradata](../../installation/using/configure-fda-teradata.md)
+* Connetti Campaign e [Teradata](../../installation/using/configure-fda-teradata.md)
 
 * Connetti Campaign e [SAP HANA](../../installation/using/configure-fda-sap-hana.md)

@@ -25,7 +25,7 @@ I moduli nel database vengono compilati e attivati automaticamente.
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-Le opzioni **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** vengono utilizzate per avviare gli script SQL iniziali e i pacchetti di dati eseguiti al momento della creazione del database.
+La **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** vengono utilizzate le opzioni per avviare gli script SQL iniziali e i pacchetti di dati eseguiti al momento della creazione del database.
 
 Puoi importare un set di dati da un pacchetto di dati esterno. A questo scopo, seleziona **[!UICONTROL Import a package]** e immetti il file XML del pacchetto.
 

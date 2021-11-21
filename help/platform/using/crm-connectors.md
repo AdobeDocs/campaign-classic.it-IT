@@ -25,12 +25,12 @@ Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe
 
 >[!NOTE]
 >
->Questa funzione è disponibile in Adobe Campaign tramite il pacchetto dedicato **Connettori di gestione delle relazioni con i clienti**.
+>Questa funzione è disponibile in Adobe Campaign tramite **Connettori CRM** pacchetto dedicato.
 
 
 ### Sistemi compatibili {#compatible-crm-systems-and-limitations}
 
-Le versioni e i sistemi di gestione delle relazioni con i clienti supportati sono descritti in dettaglio in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Il CRM e le versioni supportate sono descritti in dettaglio in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >

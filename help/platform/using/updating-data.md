@@ -25,7 +25,7 @@ Un aggiornamento automatico può essere configurato tramite un flusso di lavoro.
 
 ## Eseguire un aggiornamento di massa {#performing-a-mass-update}
 
-Per eseguire aggiornamenti manuali, fai clic con il pulsante destro del mouse sui destinatari selezionati per utilizzare il menu di scelta rapida **[!UICONTROL Actions]** o utilizza l&#39;icona **[!UICONTROL Actions]**.
+Per eseguire aggiornamenti manuali, fai clic con il pulsante destro del mouse sui destinatari selezionati per utilizzare il **[!UICONTROL Actions]** il menu di scelta rapida o utilizza **[!UICONTROL Actions]** icona.
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -37,13 +37,13 @@ Per l&#39;aggiornamento di massa, utilizzare **[!UICONTROL Action > Mass update 
 
 Il primo passaggio della procedura guidata consiste nel specificare i campi da aggiornare.
 
-Nella sezione a sinistra della procedura guidata viene visualizzato l’elenco dei campi disponibili. Utilizza il campo **[!UICONTROL Find]** per eseguire una ricerca in questi campi. Premere il tasto **Enter** per sfogliare l&#39;elenco. I nomi dei campi corrispondenti alla voce vengono visualizzati in grassetto, come illustrato di seguito.
+Nella sezione a sinistra della procedura guidata viene visualizzato l’elenco dei campi disponibili. Utilizza la **[!UICONTROL Find]** per eseguire una ricerca di questi campi. Premere **Invio** per sfogliare l’elenco. I nomi dei campi corrispondenti alla voce vengono visualizzati in grassetto, come illustrato di seguito.
 
 Fai doppio clic sui campi da aggiornare per visualizzarli nella sezione a destra della procedura guidata.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
-In caso di errore, utilizza il pulsante **[!UICONTROL Delete]** per eliminare un campo dall’elenco dei campi da aggiornare.
+In caso di errore, utilizza il **[!UICONTROL Delete]** per eliminare un campo dall’elenco dei campi da aggiornare.
 
 Seleziona o immetti i valori da applicare ai profili da aggiornare.
 
@@ -63,13 +63,13 @@ Chiudi questa finestra e fai clic su **[!UICONTROL Next]** per visualizzare il s
 
 Le informazioni relative all’esecuzione dell’aggiornamento vengono visualizzate nella sezione superiore della procedura guidata.
 
-Il **[!UICONTROL Stop]** consente di annullare l&#39;aggiornamento, ma alcuni record potrebbero essere stati aggiornati e l&#39;arresto del processo non annullerà questi aggiornamenti. La barra di avanzamento mostra lo stato di avanzamento dell’operazione.
+La **[!UICONTROL Stop]** consente di annullare l&#39;aggiornamento, ma alcuni record potrebbero essere stati aggiornati e l&#39;arresto del processo non annullerà questi aggiornamenti. La barra di avanzamento mostra lo stato di avanzamento dell’operazione.
 
 ### Unisci dati {#merge-data}
 
 Seleziona **[!UICONTROL Merge selected lines...]** per avviare l’unione di due profili destinatario. I profili da unire devono essere selezionati prima di selezionare l’opzione . L&#39;unione viene configurata e avviata utilizzando una procedura guidata.
 
-La procedura guidata visualizza i valori da recuperare per ogni campo completato in uno o più dei profili di origine. Se uno o più campi dei profili da unire hanno valori diversi, vengono visualizzati nella sezione **[!UICONTROL List of conflicts]** . Puoi quindi selezionare il profilo predefinito utilizzando i pulsanti di scelta sotto l’elenco, come nell’esempio seguente:
+La procedura guidata visualizza i valori da recuperare per ogni campo completato in uno o più dei profili di origine. Se uno o più campi dei profili da unire hanno valori diversi, vengono visualizzati nella **[!UICONTROL List of conflicts]** sezione . Puoi quindi selezionare il profilo predefinito utilizzando i pulsanti di scelta sotto l’elenco, come nell’esempio seguente:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -77,7 +77,7 @@ Fai clic su **[!UICONTROL Compute]** per visualizzare il risultato desiderato.
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
-Controllare le colonne **[!UICONTROL Result]** di entrambe le sezioni della finestra e fare clic su **[!UICONTROL Finish]** per eseguire l&#39;unione.
+Controlla la **[!UICONTROL Result]** colonne di entrambe le sezioni della finestra e fare clic su **[!UICONTROL Finish]** per eseguire l&#39;unione.
 
 ## Esportare i dati {#exporting-data}
 
@@ -109,21 +109,21 @@ Nella maggior parte dei casi, i destinatari si abbonano a una newsletter tramite
 
    >[!NOTE]
    >
-   >Questo editor consente di creare un nuovo servizio: fare clic sul pulsante **[!UICONTROL Create]** .
+   >Questo editor consente di creare un nuovo servizio: fai clic su **[!UICONTROL Create]** pulsante .
 
-1. Puoi **[!UICONTROL Send a confirmation message]** ai destinatari. Il contenuto di questo messaggio può essere configurato nello scenario di abbonamento collegato al servizio selezionato.
+1. È possibile **[!UICONTROL Send a confirmation message]** ai destinatari. Il contenuto di questo messaggio può essere configurato nello scenario di abbonamento collegato al servizio selezionato.
 1. Fai clic sul pulsante **[!UICONTROL Start]** per eseguire il processo di abbonamento.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-La sezione superiore della finestra consente di monitorare il processo di esecuzione. Il pulsante **[!UICONTROL Stop]** ti consente di interrompere il processo. Tuttavia, i destinatari già elaborati verranno sottoscritti.
+La sezione superiore della finestra consente di monitorare il processo di esecuzione. La **[!UICONTROL Stop]** consente di interrompere il processo. Tuttavia, i destinatari già elaborati verranno sottoscritti.
 
-Deselezionando l’opzione **[!UICONTROL Do not keep a trace of this job in the database]**, puoi selezionare (o creare) la cartella di esecuzione in cui verranno memorizzate le informazioni sul processo.
+Se deselezioni **[!UICONTROL Do not keep a trace of this job in the database]** è possibile selezionare (o creare) la cartella di esecuzione in cui verranno memorizzate le informazioni sul processo.
 
-Per verificare il processo, vai alla scheda **[!UICONTROL Subscriptions]** sui profili dei destinatari interessati dall’operazione o alla scheda **[!UICONTROL Subscriptions]** accessibile tramite il nodo **[!UICONTROL Profiles and Targets > Services and Subscriptions]** .
+Per controllare il processo, vai alla **[!UICONTROL Subscriptions]** scheda sui profili dei destinatari interessati dall&#39;operazione o **[!UICONTROL Subscriptions]** scheda accessibile tramite **[!UICONTROL Profiles and Targets > Services and Subscriptions]** nodo.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione di servizi di informazione, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
+>Per ulteriori informazioni sulla creazione e la configurazione dei servizi di informazione, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).

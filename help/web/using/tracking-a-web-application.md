@@ -34,11 +34,11 @@ I principali miglioramenti descritti in questa versione sono i seguenti:
 
    I principali indicatori sono i seguenti:
 
-   * **Tasso** di conversione: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
-   * **Frequenza** di rimbalzo: numero di persone che hanno visualizzato solo il primo passaggio
-   * **Funnel** di conversione: tasso di perdita tra ciascun passo.
+   * **Tasso di conversione**: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
+   * **Frequenza di rimbalzo**: numero di persone che hanno visualizzato solo il primo passaggio
+   * **Funnel di conversione**: tasso di perdita tra ciascun passo.
 
-   Inoltre, un grafico di tipo **Settore** mostra la popolazione in base alla relativa origine.
+   Inoltre, un **Settore** grafico a tipi mostra la popolazione in base all’origine.
 
 ## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
 
@@ -61,7 +61,7 @@ Per identificare l&#39;origine del traffico in un&#39;applicazione Web, Adobe Ca
 
 ## Applicazioni web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni sull&#39;editor di contenuti digitali (DCE), consulta [questa sezione](about-campaign-html-editor.md).
+Quando viene creata un’applicazione Web utilizzando l’editor di contenuti di HTML - **Editor di contenuti digitali (DCE)** - i tag di tracciamento vengono inseriti dal **[!UICONTROL Properties]** scheda dell’editor. Per ulteriori informazioni sull’editor di contenuti digitali (DCE), consulta [questa sezione](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -69,6 +69,6 @@ Quando si utilizza l’interfaccia Web, i tag di tracciamento devono essere inse
 
 ![](assets/trackers_3.png)
 
-L’icona **[!UICONTROL Display blocks]** ti consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
+La **[!UICONTROL Display blocks]** consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
 
 ![](assets/trackers_4.png)

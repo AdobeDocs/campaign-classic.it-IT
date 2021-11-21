@@ -17,11 +17,11 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-La creazione di spazio di offerta può essere eseguita solo da un **amministratore tecnico** con accesso alla sottocartella spazio di offerta. Gli spazi di offerta possono essere creati solo nell’ambiente di progettazione e vengono automaticamente duplicati nell’ambiente live durante l’approvazione dell’offerta.
+La creazione di uno spazio di offerta può essere effettuata solo da un **amministratore tecnico** con accesso alla sottocartella spazio offerta . Gli spazi di offerta possono essere creati solo nell’ambiente di progettazione e vengono automaticamente duplicati nell’ambiente live durante l’approvazione dell’offerta.
 
 Il contenuto delle offerte del catalogo viene configurato negli spazi delle offerte. Per impostazione predefinita, il contenuto può includere i campi seguenti: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. La sequenza di campi è configurata nello spazio di offerta.
 
-I parametri avanzati consentono di specificare una chiave di identificazione del contatto (che può essere composta da vari elementi, ad esempio il nome e il campo e-mail contemporaneamente). Per ulteriori informazioni, consulta la sezione [Presentazione di un’offerta identificata](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) .
+I parametri avanzati consentono di specificare una chiave di identificazione del contatto (che può essere composta da vari elementi, ad esempio il nome e il campo e-mail contemporaneamente). Per ulteriori informazioni, consulta la sezione [Presentare un’offerta identificata](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) sezione .
 
 Il rendering HTML o XML viene creato tramite una funzione di rendering. La sequenza dei campi definiti nella funzione di rendering deve essere identica alla sequenza configurata nel contenuto.
 
@@ -37,20 +37,20 @@ Per creare un nuovo spazio di offerta, applica il seguente processo:
 
    ![](assets/offer_space_create_002.png)
 
-1. Seleziona la casella **[!UICONTROL Enable unitary mode]** se si applica uno dei seguenti casi:
+1. Controlla la **[!UICONTROL Enable unitary mode]** Se si applica uno dei seguenti casi:
 
    * Stai utilizzando Interazione con Centro messaggi
    * Stai utilizzando la modalità unitaria di Interaction (interazioni in entrata)
 
-1. Vai alla finestra **[!UICONTROL Content field]** e fai clic su **[!UICONTROL Add]**.
+1. Vai a **[!UICONTROL Content field]** finestra e fai clic su **[!UICONTROL Add]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Vai al nodo **[!UICONTROL Content]** e seleziona i campi nel seguente ordine: **[!UICONTROL Title]**, quindi **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]**, quindi **[!UICONTROL Destination URL]**.
+1. Vai a **[!UICONTROL Content]** e seleziona i campi nel seguente ordine: **[!UICONTROL Title]**, quindi **[!UICONTROL Image URL]**, quindi **[!UICONTROL HTML content]**, quindi **[!UICONTROL Destination URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. Seleziona la casella **[!UICONTROL Required]** per rendere obbligatorio ogni campo.
+1. Controlla la **[!UICONTROL Required]** per rendere ogni campo obbligatorio.
 
    >[!NOTE]
    >
@@ -64,12 +64,12 @@ Per creare un nuovo spazio di offerta, applica il seguente processo:
 
    ![](assets/offer_space_create_006.png)
 
-1. Vai alla scheda **[!UICONTROL HTML rendering]** e seleziona **[!UICONTROL Overload the HTML rendering function]**.
+1. Vai a **[!UICONTROL HTML rendering]** e seleziona **[!UICONTROL Overload the HTML rendering function]**.
 1. Inserisci la funzione di rendering.
 
    ![](assets/offer_space_create_007.png)
 
-Se necessario, puoi sovraccaricare le funzioni di rendering XML per le interazioni in entrata. Puoi anche sovraccaricare le funzioni di rendering HTML e testo per le interazioni in uscita. Per ulteriori informazioni, consulta [Informazioni sui canali in entrata](../../interaction/using/about-inbound-channels.md).
+Se necessario, puoi sovraccaricare le funzioni di rendering XML per le interazioni in entrata. È inoltre possibile sovraccaricare le funzioni di rendering di HTML e testo per le interazioni in uscita. Per ulteriori informazioni, consulta [Informazioni sui canali in entrata](../../interaction/using/about-inbound-channels.md).
 
 ## Stato delle proposte di offerta {#offer-proposition-statuses}
 
@@ -98,13 +98,13 @@ Questi valori non vengono applicati per impostazione predefinita: devono essere 
 
 ### Configurazione dello stato al momento della creazione della proposta {#configuring-the-status-when-the-proposition-is-created}
 
-Quando una proposta di offerta viene creata dal motore di interazione, il suo stato viene modificato, sia che si tratti di un’interazione in entrata che in uscita. La scelta tra questi due valori dipende dal modo in cui gli spazi di offerta sono stati configurati nell’ambiente **[!UICONTROL Design]**
+Quando una proposta di offerta viene creata dal motore di interazione, il suo stato viene modificato, sia che si tratti di un’interazione in entrata che in uscita. La scelta tra questi due valori dipende dal modo in cui gli spazi di offerta sono stati configurati nel **[!UICONTROL Design]** ambiente
 
 Per ogni spazio, puoi configurare lo stato da applicare alla creazione di una proposta, in base alle informazioni da visualizzare nei rapporti delle offerte.
 
 A questo scopo, utilizza il seguente processo:
 
-1. Passa alla scheda **[!UICONTROL Storage]** dello spazio desiderato.
+1. Vai a **[!UICONTROL Storage]** scheda dello spazio desiderato.
 1. Selezionare lo stato da applicare alla proposta al momento della creazione.
 
    ![](assets/offer_update_status_001.png)
@@ -115,36 +115,36 @@ Una volta accettata la proposta di offerta, puoi utilizzare uno dei valori forni
 
 A questo scopo, utilizza il seguente processo:
 
-1. Passa alla scheda **[!UICONTROL Storage]** dello spazio desiderato.
+1. Vai a **[!UICONTROL Storage]** scheda dello spazio desiderato.
 1. Selezionare lo stato da applicare alla proposta quando viene accettata.
 
    ![](assets/offer_update_status_002.png)
 
 **Interazione in entrata**
 
-La scheda **[!UICONTROL Storage]** ti consente di definire gli stati solo per le proposte di offerta **proposte** e **accettate**. Per l’interazione in entrata, lo stato delle proposte di offerta deve essere specificato direttamente nell’URL per la chiamata al motore di offerta, anziché tramite l’interfaccia. In questo modo, potrai specificare quale stato applicare in altri casi, ad esempio se una proposta di offerta viene rifiutata.
+La **[!UICONTROL Storage]** consente di definire gli stati per **proposto** e **accettato** solo proposte di offerta. Per l’interazione in entrata, lo stato delle proposte di offerta deve essere specificato direttamente nell’URL per la chiamata al motore di offerta, anziché tramite l’interfaccia. In questo modo, potrai specificare quale stato applicare in altri casi, ad esempio se una proposta di offerta viene rifiutata.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-Ad esempio, la proposta (identificatore **40004**) che corrisponde all&#39;offerta **Home Insurance** visualizzata sul sito **Neobank** contiene il seguente URL:
+Ad esempio, la proposta (identificatore **40004**) che corrisponde al **Assicurazione abitativa** offerta visualizzata sul **Neobank** il sito contiene il seguente URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-Non appena un visitatore fa clic sull’offerta e quindi sull’URL, viene applicato lo stato **[!UICONTROL Accepted]** (valore **3**) alla proposta e il visitatore viene reindirizzato a una nuova pagina del sito **Neobank** per eliminare il contratto di assicurazione.
+Non appena un visitatore fa clic sull’offerta, e quindi sull’URL, il **[!UICONTROL Accepted]** status (valore) **3**) viene applicata alla proposta e il visitatore viene reindirizzato a una nuova pagina della **Neobank** luogo in cui stipulare il contratto di assicurazione.
 
 >[!NOTE]
 >
 >Se desideri specificare un altro stato nell’url (ad esempio se una proposta di offerta viene rifiutata), utilizza il valore corrispondente allo stato desiderato. Esempio: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; e così via.
 >
->Gli stati e i relativi valori possono essere recuperati nello schema dati **[!UICONTROL Offer propositions (nms)]** . Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/data-schemas.md).
+>Gli stati e i relativi valori possono essere recuperati nella **[!UICONTROL Offer propositions (nms)]** schema dati. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/data-schemas.md).
 
 **Interazione in uscita**
 
-In caso di interazione in uscita, puoi applicare automaticamente lo stato **[!UICONTROL Interested]** a una proposta di offerta quando la consegna contiene un collegamento. Aggiungi semplicemente il valore **_urlType=&quot;11&quot;** al collegamento:
+In caso di interazione in uscita, puoi applicare automaticamente il **[!UICONTROL Interested]** stato di una proposta di offerta quando la consegna contiene un collegamento. Aggiungi semplicemente il **_urlType=&quot;11&quot;** valore del collegamento:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>

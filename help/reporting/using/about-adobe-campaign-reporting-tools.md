@@ -17,7 +17,7 @@ ht-degree: 19%
 
 ![](../../assets/common.svg)
 
-Oltre ai [report incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare report in vari contesti e per soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
+Oltre a [report incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare rapporti in vari contesti e per soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
 
 Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati. I rapporti di Adobe Campaign, dedicati all’analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
@@ -25,21 +25,21 @@ Per esportare i dati dal database Adobe Campaign, devi creare un flusso di lavor
 
 Adobe Campaign fornisce diversi strumenti di reporting:
 
-1. **Report** incorporati: Adobe Campaign offre una serie di rapporti su consegne, campagne, attività della piattaforma, funzionalità facoltative, ecc. Tali rapporti sono disponibili tramite le varie funzionalità a cui si riferiscono. Possono essere adattati alle tue esigenze specifiche.
+1. **Report incorporati**: Adobe Campaign offre una serie di rapporti su consegne, campagne, attività della piattaforma, funzionalità facoltative, ecc. Tali rapporti sono disponibili tramite le varie funzionalità a cui si riferiscono. Possono essere adattati alle tue esigenze specifiche.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Analisi** dei dati descrittivi: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando una procedura guidata dedicata e adattarne il contenuto e il layout in base alle tue esigenze.
+1. **Analisi dei dati descrittivi**: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando una procedura guidata dedicata e adattarne il contenuto e il layout in base alle tue esigenze.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md).
 
-1. **Rapporti** personalizzati: Adobe Campaign consente di creare rapporti sui dati nel database. Una volta create, queste sono rese accessibili nei contesti appropriati.
+1. **Rapporti personalizzati**: Adobe Campaign consente di creare rapporti sui dati nel database. Una volta create, queste sono rese accessibili nei contesti appropriati.
 
    A seconda della complessità delle query, dei calcoli e dei volumi, i dati analizzati in questi rapporti possono essere raccolti tramite una query e preaggregati in un elenco (flusso di lavoro di tipo &quot;gestione dati&quot;) o in un cubo (tramite Marketing Analytics). Viene visualizzato sotto forma di tabella pivot o di elenco di gruppi.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-1. **Rapporti** di analisi: Marketing Analytics consente un&#39;esplorazione intuitiva dei dati.
+1. **Rapporti di analisi**: Marketing Analytics consente un&#39;esplorazione intuitiva dei dati.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-cubes.md).
 

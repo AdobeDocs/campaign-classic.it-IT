@@ -45,7 +45,7 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle diverse architetture, consulta [questa sezione](../../installation/using/general-architecture.md).
+>Per ulteriori informazioni sulle varie architetture, consulta [questa sezione](../../installation/using/general-architecture.md).
 
 ## Elenco delle porte aperte {#list-of-open-ports}
 

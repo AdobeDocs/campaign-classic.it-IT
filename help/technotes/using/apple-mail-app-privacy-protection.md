@@ -1,26 +1,26 @@
 ---
 product: campaign
-title: Protezione della privacy della posta nell’app Mail di Apple
+title: Protezione della privacy della posta nell’app Apple Mail
 description: Scopri in che modo le tue campagne potrebbero essere influenzate dalla funzione di protezione della privacy della posta di Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Protezione della privacy della posta nell’app Mail di Apple
+# Protezione della privacy della posta nell’app Apple Mail
 
 ![Si applica alle versioni v7 e v8](../../assets/common.svg)
 
 ## Cosa è cambiato?
 
-Nel 2021, Apple ha introdotto nuove funzionalità di protezione della privacy per la loro app nativa Mail. Questa app ora include la funzione di protezione della privacy della posta di Apple. In sostanza, i mittenti non possono più utilizzare i pixel di tracciamento per raccogliere informazioni sui destinatari che hanno scelto di attivare la funzione di protezione della privacy della posta di Apple. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html) su {target=&quot;_blank&quot;}.
+Nel 2021, Apple ha introdotto nuove funzionalità di protezione della privacy per la propria app Mail nativa. Questa app ora include la funzionalità di protezione della privacy della posta di Apple. In sostanza, i mittenti non possono più utilizzare i pixel di tracciamento per raccogliere informazioni sui destinatari che hanno scelto di attivare la funzione di protezione della privacy della posta di Apple. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it){target=&quot;_blank&quot;}.
 
 ## In che modo vengono influenzate le mie campagne?
 
-Adobe Campaign fornisce la capacità di utilizzare i pixel di tracciamento per tenere traccia delle aperture delle e-mail. Puoi utilizzare questa funzionalità non solo per il targeting e le campagne, ma anche per le metriche. Ad esempio, puoi utilizzare i tassi di apertura delle e-mail per misurare l’efficacia delle campagne e il coinvolgimento degli utenti. In breve, segmentazione, targeting e metriche potrebbero essere interessati nelle campagne. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F) su {target=&quot;_blank&quot;}.
+Adobe Campaign fornisce la capacità di utilizzare i pixel di tracciamento per tenere traccia delle aperture delle e-mail. Puoi utilizzare questa funzionalità non solo per il targeting e le campagne, ma anche per le metriche. Ad esempio, puoi utilizzare i tassi di apertura delle e-mail per misurare l’efficacia delle campagne e il coinvolgimento degli utenti. In breve, segmentazione, targeting e metriche potrebbero essere interessati nelle campagne. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
 
 ## Quali azioni devo intraprendere?
 
@@ -28,24 +28,24 @@ La nuova funzionalità di Apple è la forma delle cose che verranno nel settore 
 
 ### Valutare l&#39;impatto sugli attivatori della campagna
 
-Valuta in che modo queste modifiche influiscono sugli attivatori della campagna corrente. Identifica i flussi di lavoro in cui l’apertura delle e-mail viene utilizzata come criterio per la segmentazione, il targeting o il retargeting. Leggi i [suggerimenti e trucchi](#find-email-open-tracking).
+Valuta in che modo queste modifiche influiscono sugli attivatori della campagna corrente. Identifica i flussi di lavoro in cui l’apertura delle e-mail viene utilizzata come criterio per la segmentazione, il targeting o il retargeting. Leggi la sezione [suggerimenti](#find-email-open-tracking).
 
 ### Conserva i dati
 
-Conserva i tuoi dati e consolida le tue conoscenze attuali sui dispositivi. Puoi basare gli indicatori prestazioni chiave (KPI, Key Performance Indicators) sull’agente utente. Ad esempio, puoi creare KPI intorno ai profili delle persone che utilizzano l’app e-mail di iOS e Apple. Leggi i [suggerimenti e trucchi](#preserve-tracking-data).
+Conserva i tuoi dati e consolida le tue conoscenze attuali sui dispositivi. Puoi basare gli indicatori prestazioni chiave (KPI, Key Performance Indicators) sull’agente utente. Ad esempio, puoi creare KPI intorno ai profili delle persone che utilizzano l’app iOS e Apple Mail. Leggi la sezione [suggerimenti](#preserve-tracking-data).
 
 ### Archiviare i registri di tracciamento oltre il periodo di conservazione
 
 Archivia i registri di tracciamento oltre il periodo di conservazione di Adobe Campaign:
 
 1. Controlla la durata del periodo di conservazione nell’istanza della campagna.
-1. Controlla le mappature di destinazione attive. Determina se utilizzare tabelle di profili personalizzati in aggiunta alla tabella di profili predefiniti (`nmsRecipient`).
+1. Controlla le mappature di destinazione attive. Determina se utilizzare tabelle di profili personalizzati oltre alla tabella di profili predefiniti (`nmsRecipient`).
 1. Esporta i registri di tracciamento da Adobe Campaign. Includi i registri che contengono i dati sull’agente utente e sul sistema operativo.
 
 ### Valutare l&#39;attuale tendenza dei tassi aperti
 
-Determinare quale percentuale del pubblico utilizza l’app e-mail di Apple su un dispositivo iOS.
-Utilizzando questa valutazione, puoi identificare potenziali lacune anomale e la loro causa. Puoi determinare se un gap è dovuto a problemi di prestazioni della campagna o alla funzionalità di protezione della privacy di Apple. Leggi i [suggerimenti e trucchi](#measure-ios-footprint).
+Determinare quale percentuale del pubblico utilizza l&#39;app Apple Mail su un dispositivo iOS.
+Utilizzando questa valutazione, puoi identificare potenziali lacune anomale e la loro causa. Puoi determinare se un gap è dovuto a problemi di prestazioni della campagna o alla funzionalità di protezione della privacy di Apple. Leggi la sezione [suggerimenti](#measure-ios-footprint).
 
 ### Rivedere la strategia e le metriche delle prestazioni della campagna
 
@@ -81,7 +81,7 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare i rappo
 
 Puoi identificare i flussi di lavoro in cui l’apertura delle e-mail viene utilizzata come criterio per la segmentazione, il targeting e il retargeting.
 
-A questo scopo, puoi utilizzare l&#39;attributo **[!UICONTROL type]** dell&#39;URL del collegamento tracciato (**[!UICONTROL url/@type]**). Per le aperture dei messaggi e-mail, questo attributo è impostato su **[!UICONTROL Open]**. Questo attributo è disponibile dall’editor delle query, dall’attività **[!UICONTROL Query]** in un flusso di lavoro e dai filtri predefiniti. Puoi utilizzare questo attributo come criterio di targeting per le campagne di marketing.
+A questo scopo, puoi utilizzare la funzione **[!UICONTROL type]** attributo dell&#39;URL di collegamento tracciato (**[!UICONTROL url/@type]**). Per le aperture delle e-mail, questo attributo è impostato su **[!UICONTROL Open]**. Questo attributo è disponibile dall’editor delle query, il **[!UICONTROL Query]** attività in un flusso di lavoro e filtri predefiniti. Puoi utilizzare questo attributo come criterio di targeting per le campagne di marketing.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,7 +89,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
 
 * Puoi utilizzare le aperture e-mail come criterio di targeting in una query.
 
-   Puoi specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica debba essere impostato su **[!UICONTROL Open]**.
+   Puoi specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica sia impostato su **[!UICONTROL Open]**.
 
    ![](assets/identify-email-open-tracking-2.png)
 
@@ -105,7 +105,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
    >
    >Da un flusso di lavoro non è possibile visualizzare i criteri di targeting di un filtro predefinito.
 
-Per recuperare l’elenco dei flussi di lavoro in cui le aperture e-mail vengono utilizzate come criterio di targeting, è necessario eseguire una query sullo schema `xtk:workflow`. Il contenuto del flusso di lavoro viene memorizzato nel campo **[!UICONTROL XML memo (data)]** in formato XML.
+Per recuperare l’elenco dei flussi di lavoro in cui le aperture e-mail vengono utilizzate come criterio di targeting, è necessario eseguire una query sul `xtk:workflow` schema. Il contenuto del flusso di lavoro viene memorizzato nel **[!UICONTROL XML memo (data)]** in formato XML.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -138,7 +138,7 @@ Questo esempio mostra un’implementazione personalizzata in un unico flusso di 
 >
 >Ti consigliamo vivamente di testare e convalidare questo pacchetto in un ambiente non di produzione.
 
-Scarica il [pacchetto di esempio](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e installalo. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#importing-packages).
+Scarica la [pacchetto di esempio](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e installalo. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Dopo aver installato il pacchetto, puoi accedere al flusso di lavoro dalla cartella che contiene i flussi di lavoro tecnici predefiniti nella tua istanza:
 
@@ -158,7 +158,7 @@ Il flusso di lavoro comprende i seguenti passaggi principali:
 
 Il flusso di lavoro comprende i seguenti passaggi dettagliati:
 
-1. L’attività iniziale è un’attività di query nello schema `xtk:workflow` . Questa attività viene utilizzata per trovare, nell’istanza corrispondente, le query esplicite del flusso di lavoro che includono le e-mail si aprono come criterio di targeting.
+1. L’attività iniziale è un’attività di query nel `xtk:workflow` schema. Questa attività viene utilizzata per trovare, nell’istanza corrispondente, le query esplicite del flusso di lavoro che includono le e-mail si aprono come criterio di targeting.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -317,7 +317,7 @@ In breve, i dati di tracciamento di Adobe Campaign forniscono le seguenti inform
 * Profilo associato alla persona che ha aperto o ha fatto clic su un messaggio e-mail specifico
 * Data di apertura
 * Il dispositivo utilizzato, ad esempio, iPhone o Mac
-* Sistema operativo e versione, ad esempio iOS 15, macOS 12 o Windows 10
+* Il sistema operativo e la versione, ad esempio iOS 15, macOS 12 o Windows 10
 * L&#39;applicazione, ad esempio un&#39;applicazione di posta o un browser Web, e la versione, ad esempio, Outlook 2019
 
 #### Perché dovrei conservare i dati di tracciamento?
@@ -328,7 +328,7 @@ Si consiglia vivamente di conservare questi dati per diversi motivi:
 
    Controlla la configurazione dell&#39;istanza. [Leggi tutto](../../platform/using/privacy-management.md#data-retention).
 
-* Oltre alle recenti modifiche di Apple, puoi utilizzare i dati di tracciamento per aggiungere un valore immenso per stimolare il coinvolgimento del pubblico.
+* Oltre alle recenti modifiche apportate da Apple, puoi utilizzare i dati di tracciamento per aggiungere un valore immenso al coinvolgimento del pubblico.
 * Apple potrebbe apportare ulteriori modifiche alla propria app Mail nativa e alla relativa funzione di protezione della privacy della posta.
 
 Per tutti questi motivi, ti consigliamo vivamente di esportare questi dati il prima possibile. In caso contrario, i dati di tracciamento per una parte del pubblico potrebbero risentirne negativamente.
@@ -339,11 +339,11 @@ Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo 
 
 >[!IMPORTANT]
 >
->L’esempio seguente si concentra sullo schema predefinito `nms:Recipient`, che è lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate ai profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di log personalizzate. [Leggi tutto](../../configuration/using/target-mapping.md).
+>L&#39;esempio seguente si concentra sull&#39;predefinito `nms:Recipient` schema, che è lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate ai profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di log personalizzate. [Leggi tutto](../../configuration/using/target-mapping.md).
 
 ##### Principio
 
-Per impostazione predefinita, lo schema `nms:Recipient` è collegato a tre schemi da esportare:
+Per impostazione predefinita, la `nms:Recipient` lo schema è collegato a tre schemi da esportare:
 
 | Schema | Contenuto |
 | --- | --- |
@@ -381,11 +381,11 @@ Questo esempio mostra come esportare dati di tracciamento da Adobe Campaign.
    La query iniziale viene utilizzata per recuperare i registri di tracciamento degli ultimi tre mesi.
 È possibile utilizzare una query incrementale per estrarre solo i record non ancora esportati.
 
-   Aggiungi tutte le informazioni richieste dal nodo **[!UICONTROL Additional data]** .
+   Aggiungi tutte le informazioni richieste dal **[!UICONTROL Additional data]** nodo.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Aggiungi un’attività **[!UICONTROL Data extraction (file)]** . Mappa tutti i dati dalla query a un formato di file di estrazione.
+1. Aggiungi un **[!UICONTROL Data extraction (file)]** attività. Mappa tutti i dati dalla query a un formato di file di estrazione.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -399,7 +399,7 @@ Questo esempio mostra come esportare dati di tracciamento da Adobe Campaign.
 
 ##### Implementazione avanzata: suddivisione per dispositivo iOS
 
-Puoi utilizzare i flussi di lavoro per determinare se un destinatario utilizza l’app Mail di Apple. Puoi suddividere i registri di tracciamento per dispositivo. Ad esempio, puoi utilizzare i filtri di query per suddividere i record per dispositivo iOS:
+Puoi utilizzare i flussi di lavoro per determinare se un destinatario utilizza l’app Apple Mail. Puoi suddividere i registri di tracciamento per dispositivo. Ad esempio, puoi utilizzare i filtri di query per suddividere i record in base al dispositivo iOS:
 
 | Applicazione | Sistema operativo o dispositivo  | Filtro query |
 | --- | --- | --- |
@@ -424,14 +424,14 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il primo flusso di lavoro di esempio include queste attività:
 
-   1. L’attività iniziale **[!UICONTROL Query]** viene utilizzata per selezionare tutte le aperture dei messaggi e-mail per gli ultimi tre mesi.
-   1. Un’attività **[!UICONTROL Split]** viene utilizzata per dividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+   1. L&#39;iniziale **[!UICONTROL Query]** viene utilizzata per selezionare tutte le aperture dei messaggi e-mail per gli ultimi tre mesi.
+   1. A **[!UICONTROL Split]** l’attività viene utilizzata per dividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
 
-   1. Un&#39;attività **[!UICONTROL Deduplication]** segue ogni attività **[!UICONTROL Split]**. L’attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+   1. A **[!UICONTROL Deduplication]** segue ogni **[!UICONTROL Split]** attività. La **[!UICONTROL Deduplication]** l’attività viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
 
-      L&#39;attività **[!UICONTROL Deduplication]** viene posizionata dopo l&#39;attività **[!UICONTROL Split]** per evitare di perdere informazioni sui destinatari che utilizzano vari dispositivi.
+      La **[!UICONTROL Deduplication]** l’attività viene posizionata dopo la **[!UICONTROL Split]** per evitare di perdere informazioni sui destinatari che utilizzano vari dispositivi.
 
-   1. Un&#39;attività **[!UICONTROL End]** segue ogni attività **[!UICONTROL Deduplication]**.
+   1. Un **[!UICONTROL End]** segue ogni **[!UICONTROL Deduplication]** attività.
 
    Questo tipo di flusso di lavoro è utile se archivi i destinatari solo nella tabella dei destinatari predefiniti per il targeting.
 
@@ -439,13 +439,13 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il secondo flusso di lavoro di esempio include queste attività:
 
-   1. L’attività iniziale **[!UICONTROL Query]** viene utilizzata per selezionare tutte le aperture dei messaggi e-mail per gli ultimi tre mesi.
-   1. Un’attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
-   1. Viene utilizzata un&#39;attività **[!UICONTROL Fork]**:
+   1. L&#39;iniziale **[!UICONTROL Query]** viene utilizzata per selezionare tutte le aperture dei messaggi e-mail per gli ultimi tre mesi.
+   1. A **[!UICONTROL Deduplication]** l’attività viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+   1. A **[!UICONTROL Fork]** viene utilizzata l’attività :
 
-      * In una transizione, l’attività **[!UICONTROL Change dimension]** viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
-      * Nell’altra transizione, l’attività **[!UICONTROL Split]** viene utilizzata per dividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
-   1. Un&#39;attività **[!UICONTROL End]** segue ogni transizione dopo l&#39;attività **[!UICONTROL Split]**.
+      * In una transizione, il **[!UICONTROL Change dimension]** viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
+      * Nell’altra transizione, la funzione **[!UICONTROL Split]** l’attività viene utilizzata per dividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+   1. Un **[!UICONTROL End]** l’attività segue ogni transizione dopo **[!UICONTROL Split]** attività.
 
    Questo tipo di flusso di lavoro è utile se archivi i destinatari in una tabella diversa da quella predefinita.
 

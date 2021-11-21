@@ -21,11 +21,11 @@ I file di registro sono organizzati come segue:
 
 ![](assets/d_ncs_directory.png)
 
-Ogni modulo **nlserver** genera un file di registro salvato nella seguente directory: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Ogni **nlserver** Il modulo genera un file di registro salvato nella seguente directory: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-Il modulo **nlserver syslogd** salva i registri sul disco. Questo modulo è simile a Unix **syslog daemon**, ma è stato adattato per la compatibilità tra Unix e Windows. Gli altri moduli Adobe Campaign non salvano i loro registri sul disco; delegano questa attività al modulo **syslogd** inviandolo pacchetti UDP.
+La **slogd nlserver** Il modulo salva i registri sul disco. Questo modulo è simile all&#39;Unix **daemon syslog**, ma è stato adattato per la compatibilità tra Unix e Windows. Gli altri moduli Adobe Campaign non salvano i loro registri sul disco; delegano questa attività al **syslogd** mediante l&#39;invio di pacchetti UDP.
 
-Per impostazione predefinita, la piattaforma Adobe Campaign dispone del modulo **syslogd** installato al suo interno, ma è possibile utilizzare un altro **daemon syslog**. Questo modulo crea i file di registro nella directory **log**.
+Per impostazione predefinita, la piattaforma Adobe Campaign ha la funzione **syslogd** modulo installato su di esso, ma è possibile utilizzare un altro **daemon syslog**. Questo modulo crea i file di registro nel **log** directory.
 
 I registri dei moduli con più istanze sono memorizzati nella seguente directory: **`<installation directory>`/var/default/log/**. Lo stesso file di registro è condiviso da tutte le istanze (ad es. **web.log**).
 
@@ -53,14 +53,14 @@ I file di registro mono-instance sono elencati nella seguente tabella:
 
 >[!IMPORTANT]
 >
->La directory **redir** esiste solo sui server di reindirizzamento. La sottodirectory **url** contiene le corrispondenze degli URL da reindirizzare e la sottodirectory **log** contiene i registri di tracciamento. Per generare i registri di tracciamento, il modulo **trackinglogd** deve essere in esecuzione.
+>La **riavvolgitore** la directory esiste solo sui server di reindirizzamento. La **url** la sottodirectory contiene le corrispondenze degli URL da reindirizzare e la sottodirectory **log** contiene i registri di tracciamento. Per generare i registri di tracciamento, **trackinglogd** Il modulo deve essere in esecuzione.
 
-Per l&#39;ottimizzazione delle prestazioni e dello storage, il file logins.log viene suddiviso in più file, uno ogni giorno (logins.yy-mm-dd.log) con un massimo di 365 file conservati. Il numero di giorni può essere modificato nel serverConf.xml, sotto syslogd (**maxNumberOfLoginsFiles** opzione). Vedi la documentazione sul [file di configurazione del server](../../installation/using/the-server-configuration-file.md#syslogd).
+Per l&#39;ottimizzazione delle prestazioni e dello storage, il file logins.log viene suddiviso in più file, uno ogni giorno (logins.yy-mm-dd.log) con un massimo di 365 file conservati. Il numero di giorni può essere modificato nel serverConf.xml, in syslogd (**maxNumberOfLoginsFiles** ). Consulta la documentazione sul [file di configurazione del server](../../installation/using/the-server-configuration-file.md#syslogd).
 
 Per impostazione predefinita, i registri sono limitati a due file da 10 MB per modulo e per istanza. Viene chiamato il secondo file: **`<modulename>`_2.log**. La dimensione dei log è quindi limitata a 2*10 MB per modulo e per istanza.
 
-È tuttavia possibile conservare file di dimensioni maggiori. Per abilitare questa opzione, modifica il valore dell&#39;impostazione **maxFileSizeMb=&quot;10&quot;** nel nodo **syslogd** del file **conf/serverConf.xml**. Questo valore rappresenta la dimensione massima in MB di un file di registro.
+È tuttavia possibile conservare file di dimensioni maggiori. Per attivarlo, modifica il valore della **maxFileSizeMb=&quot;10&quot;** nella **syslogd** nodo **conf/serverConf.xml** file. Questo valore rappresenta la dimensione massima in MB di un file di registro.
 
-Se desideri mantenere ulteriori livelli di dettaglio nei registri, puoi avviare i moduli Adobe Campaign con il parametro **-verbose** :
+Se desideri mantenere ulteriori livelli di dettaglio nei registri, puoi avviare i moduli Adobe Campaign con la **-verboso** parametro:
 
-**nlserver start  `<MODULE>`@`<INSTANCE>` -verbose**
+**avvio nlserver `<MODULE>`@`<INSTANCE>` -verboso**

@@ -17,17 +17,17 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-L’attività **Inbound emails** consente di scaricare ed elaborare messaggi e-mail da un server di posta POP3.
+La **E-mail in entrata** activity ti consente di scaricare ed elaborare i messaggi e-mail da un server di posta POP3.
 
 ![](assets/email_rec_edit_1.png)
 
-La prima scheda dell’attività **Inbound Emails** ti consente di immettere i parametri del server POP3 e inserire lo script da eseguire al ricevimento di ciascun messaggio. La seconda scheda ti consente di assegnare una pianificazione all’attività e la terza definisce le condizioni di scadenza dell’attività.
+La prima scheda della **E-mail in entrata** activity ti consente di immettere i parametri del server POP3 e lo script da eseguire al ricevimento di ogni messaggio. La seconda scheda ti consente di assegnare una pianificazione all’attività e la terza definisce le condizioni di scadenza dell’attività.
 
 1. **[!UICONTROL Inbound Emails]**
 
    * **[!UICONTROL Use an external account]**
 
-      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. Il campo **[!UICONTROL External account]** specifica l’account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l’opzione &quot;Utilizza un account esterno&quot;.
+      Quando questa opzione è attivata, è possibile selezionare un account POP3 esterno invece di immettere i parametri di connessione. La **[!UICONTROL External account]** campo specifica l’account POP3 esterno da utilizzare per connettersi al servizio e-mail. Questo campo è visibile solo se è abilitata l’opzione &quot;Utilizza un account esterno&quot;.
 
       Se questa opzione non è selezionata, è necessario specificare i seguenti parametri:
 
@@ -64,18 +64,18 @@ La prima scheda dell’attività **Inbound Emails** ti consente di immettere i p
    * 3 - Elimina il messaggio dal server.
    * 4 - Lascia il messaggio sul server.
 
-   Il contenuto del messaggio è accessibile dalla variabile globale **[!UICONTROL mailMessage]** .
+   Il contenuto del messaggio è accessibile dal **[!UICONTROL mailMessage]** variabile.
 
 1. **[!UICONTROL Schedule]**
 
-   Per definire una pianificazione per l’attività, fai clic sulla scheda **[!UICONTROL Scheduling]** e seleziona **[!UICONTROL Plan execution]**. Fai clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
+   Per definire una pianificazione per l’attività, fai clic sul pulsante **[!UICONTROL Scheduling]** scheda e controllo **[!UICONTROL Plan execution]**. Fai clic sul pulsante **[!UICONTROL Change]** per configurare la pianificazione.
 
-   La configurazione della pianificazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scheduler](scheduler.md).
+   La configurazione della pianificazione è la stessa dell’attività di pianificazione. Fai riferimento a [Scheduler](scheduler.md).
 
 1. **[!UICONTROL Expiration]**
 
-   Puoi definire i ritardi di scadenza tramite la scheda **[!UICONTROL Expiration]** .
+   Puoi definire i ritardi di scadenza tramite la **[!UICONTROL Expiration]** scheda .
 
    ![](assets/email_rec_edit_3.png)
 
-   La configurazione è la stessa dell’attività di pianificazione. Fare riferimento a [Scadenza](defining-approvals.md).
+   La configurazione è la stessa dell’attività di pianificazione. Fai riferimento a [Scadenza](defining-approvals.md).

@@ -21,7 +21,7 @@ ht-degree: 8%
 Esistono due possibili scenari:
 
 * [Password persa da un operatore Adobe Campaign](#password-lost-by-campaign-operator)
-* [Password interna persa](#internal-password-lost)  (solo per clienti on-premise)
+* [Password interna persa](#internal-password-lost) (solo per i clienti on-premise)
 
 ## Password persa da un operatore Campaign {#password-lost-by-campaign-operator}
 
@@ -45,9 +45,9 @@ Per farlo, segui la procedura indicata di seguito:
 Se la password interna viene persa, è necessario reinizializzarla.
 A questo scopo, applicare la seguente procedura:
 
-1. Modifica il file **/usr/local/neolane/nl6/conf/serverConf.xml**.
+1. Modifica le **/usr/local/neolane/nl6/conf/serverConf.xml** file.
 
-1. Vai alla riga **internalPassword** .
+1. Vai a **internalPassword** linea.
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -77,4 +77,4 @@ A questo scopo, applicare la seguente procedura:
    Confirmation 
    ```
 
-1. È ora possibile utilizzare la nuova password per connettersi in modalità **Interna**.
+1. È ora possibile utilizzare la nuova password per connettersi a **Interno** modalità.

@@ -19,27 +19,27 @@ ht-degree: 2%
 
 ## Aggiornamento del database {#updating-the-database}
 
-Tutti i dati raccolti possono essere utilizzati per aggiornare il database o nelle consegne. Ad esempio, puoi arricchire le possibilità di personalizzazione del contenuto dei messaggi (include il numero di contratti nel messaggio, specifica il carrello medio nell’ultimo anno, ecc.) o il targeting dettagliato della popolazione (inviare un messaggio ai titolari di contratti, indirizzare i 1.000 migliori abbonati ai servizi online, ecc.). Questi dati possono anche essere esportati o archiviati in un elenco.
+Tutti i dati raccolti possono essere utilizzati per aggiornare il database o nelle consegne. Ad esempio, puoi arricchire le possibilità di personalizzazione del contenuto dei messaggi (include il numero di contratti nel messaggio, specifica il carrello medio nell’ultimo anno, ecc.) o il targeting dettagliato della popolazione (inviare un messaggio ai titolari di contratto, indirizzare i 1.000 migliori abbonati ai servizi online, ecc.). Questi dati possono anche essere esportati o archiviati in un elenco.
 
 ### Elenchi e aggiornamenti diretti {#lists-and-direct-updates}
 
 I dati del database Adobe Campaign e degli elenchi esistenti possono essere aggiornati utilizzando due attività dedicate:
 
-* L’attività **[!UICONTROL List update]** ti consente di memorizzare tabelle di lavoro in un datalist.
+* La **[!UICONTROL List update]** attività ti consente di memorizzare tabelle di lavoro in un datalist.
 
    È possibile selezionare un elenco esistente o crearlo. In questo caso, vengono calcolati il nome e probabilmente la cartella di record.
 
    ![](assets/s_user_create_list.png)
 
-   Fare riferimento a [Aggiornamento elenco](list-update.md).
+   Fai riferimento a [Aggiornamento elenco](list-update.md).
 
-* L’attività **[!UICONTROL Update data]** esegue un aggiornamento di massa dei campi nel database.
+* La **[!UICONTROL Update data]** l’attività esegue un aggiornamento di massa dei campi nel database.
 
-   Per ulteriori informazioni, consulta [Aggiornare dati](update-data.md).
+   Per ulteriori informazioni, consulta [Update data](update-data.md).
 
 ### Gestione dell’abbonamento/annullamento dell’abbonamento {#subscription-unsubscription-management}
 
-Per informazioni sull’abbonamento e l’annullamento dell’abbonamento dei destinatari a un servizio di informazioni tramite un flusso di lavoro, consulta [Subscription Services](subscription-services.md) .
+Per informazioni sull’abbonamento e l’annullamento dell’abbonamento dei destinatari a un servizio di informazione tramite un flusso di lavoro, consulta [Servizi sottoscrizione](subscription-services.md).
 
 ## Invio tramite un flusso di lavoro {#sending-via-a-workflow}
 
@@ -59,12 +59,12 @@ Oltre ai campi di personalizzazione consueti, puoi aggiungere campi di personali
 
 ![](assets/s_advuser_using_additional_data.png)
 
-I dati contenuti nella tabella del flusso di lavoro sono identificati dal relativo nome: è sempre composto dal collegamento **targetData** . Per ulteriori informazioni, consulta [Dati di destinazione](data-life-cycle.md#target-data).
+I dati contenuti nella tabella del flusso di lavoro sono identificati dal relativo nome: è sempre costituito da **targetData** link. Per ulteriori informazioni, consulta [Dati di Target](data-life-cycle.md#target-data).
 
 Nel framework della consegna e-mail, i campi di personalizzazione possono utilizzare anche i dati provenienti dall’estensione target eseguita nelle fasi del flusso di lavoro di targeting, come mostrato nell’esempio seguente:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Se un codice di segmento viene specificato in un’attività di targeting, viene aggiunto a una colonna specifica della tabella del flusso di lavoro e viene offerto insieme ai campi di personalizzazione. Per visualizzare tutti i campi di personalizzazione, fai clic sul collegamento **[!UICONTROL Target extension > Other...]** accessibile tramite il pulsante di personalizzazione.
+Se un codice di segmento viene specificato in un’attività di targeting, viene aggiunto a una colonna specifica della tabella del flusso di lavoro e viene offerto insieme ai campi di personalizzazione. Per visualizzare tutti i campi di personalizzazione, fai clic sul pulsante **[!UICONTROL Target extension > Other...]** collegamento accessibile tramite il pulsante di personalizzazione .
 
 ![](assets/s_advuser_segment_code_select.png)

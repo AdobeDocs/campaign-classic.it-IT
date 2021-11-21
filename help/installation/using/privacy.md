@@ -21,7 +21,7 @@ ht-degree: 4%
 
  Adobe Campaign offre una serie di strumenti per aiutarti con la conformità in materia di privacy in relazione a GDPR e CCPA.
 
-Fai riferimento a [questa pagina](../../platform/using/privacy-management.md) per informazioni generali su cosa è Privacy Management e sui passaggi di implementazione in Adobe Campaign. Troverai inoltre le best practice e una panoramica del processo utente e dei singoli utenti.
+Fai riferimento a [questa pagina](../../platform/using/privacy-management.md) per informazioni generali su cosa si intende per gestione della privacy e sui passaggi di implementazione in Adobe Campaign. Troverai inoltre le best practice e una panoramica del processo utente e dei singoli utenti.
 
 ## Personalizzazione URL {#url-personalization}
 
@@ -35,7 +35,7 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di avere 
 
 ### Consiglio
 
-Per convalidare e assicurarsi di non utilizzare quanto sopra, esegui una query sulla tabella URL di tracciamento tramite [Editor query generico campagna](../../platform/using/steps-to-create-a-query.md) o crea un flusso di lavoro con criteri di filtro nell&#39; [attività query](../../workflow/using/query.md).
+Per convalidare e verificare di non utilizzare quanto sopra, esegui una query sulla tabella URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/steps-to-create-a-query.md) o creare un flusso di lavoro con i criteri di filtro nella [attività query](../../workflow/using/query.md).
 
 Esempio:
 
@@ -57,11 +57,11 @@ Per migliorare la sicurezza, è stato introdotto un meccanismo di firma per il t
 >
 >Quando si fa clic su un URL firmato non valido, viene restituito questo errore: &quot;Impossibile trovare l&#39;URL richiesto &#39;..&#39;.&quot;
 
-Inoltre, a partire da Campaign 20.2 e dalla versione [!DNL Gold Standard], puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Per abilitare questa funzione, contatta l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+Inoltre, a partire da Campaign 20.2 e dal [!DNL Gold Standard] Puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Puoi rivolgerti a [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per abilitare questa funzione.
 
-Se esegui [!DNL Gold Standard] 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push che utilizzano collegamenti di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
+Se siete in esecuzione [!DNL Gold Standard] 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push che utilizzano collegamenti di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
 
-Se esegui Campaign localmente o in un’architettura ibrida, devi contattare l’ [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disattivare la firma URL.
+Se esegui Campaign in locale o in un’architettura ibrida, devi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disattivare la firma URL.
 
 Se esegui Campaign in un’architettura ibrida, prima di abilitare la firma URL, assicurati che l’istanza di mid-sourcing in hosting sia stata aggiornata come segue:
 * Prima dell’istanza di marketing locale
@@ -73,14 +73,14 @@ In caso contrario, potrebbero sorgere alcuni dei seguenti problemi:
 
 Per disabilitare gli URL generati nelle build precedenti, segui questi passaggi su tutti i server Campaign allo stesso tempo:
 
-1. Nel file di configurazione del server (serverConf.xml), cambia **blockRedirectForUnsignedTrackingLink** in **true**.
-1. Riavvia il servizio **nlserver** .
+1. Nel file di configurazione del server (serverConf.xml), modifica **blockRedirectForUnsignedTrackingLink** a **true**.
+1. Riavvia **nlserver** servizio.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
 Per abilitare la firma URL, segui questi passaggi su tutti i server Campaign contemporaneamente:
 
-1. Nel file di configurazione del server (serverConf.xml), cambia **signEmailLinks** in **false**.
-1. Riavvia il servizio **nlserver** .
+1. Nel file di configurazione del server (serverConf.xml), modifica **signEmailLinks** a **false**.
+1. Riavvia **nlserver** servizio.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
 ## Restrizione dei dati
@@ -89,7 +89,7 @@ Devi accertarti che le password crittografate non siano accessibili da un utente
 
 Questa limitazione consente di rimuovere i campi password, ma consente all’account esterno di essere accessibile dall’interfaccia per tutti gli utenti. Consulta [questa pagina](../../configuration/using/restricting-pii-view.md).
 
-1. Vai in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. Accedi **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
 
 1. Crea un nuovo **[!UICONTROL Extension of a schema]**.
 
@@ -99,7 +99,7 @@ Questa limitazione consente di rimuovere i campi password, ma consente all’acc
 
 1. Nell’ultima schermata della procedura guidata, puoi modificare il nuovo srcSchema per limitare l’accesso a tutti i campi password:
 
-   Puoi sostituire l’elemento principale (`<element name="extAccount" ... >`) con:
+   Puoi sostituire l’elemento principale (`<element name="extAccount" ... >`) da:
 
    ```
    <element name="extAccount">
@@ -174,12 +174,12 @@ Per proteggere le pagine, effettua le seguenti operazioni:
    *Disallow: /
    ```
 
-   Per IIS, fare riferimento a [questa pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Per IIS, consulta [questa pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    Per Apache, puoi inserire il file in **/var/www/robots.txt** (Debian).
 
-1. A volte l&#39;aggiunta di un file **robots.txt** non è sufficiente in termini di sicurezza. Ad esempio, se un altro sito web contiene un collegamento alla pagina, potrebbe essere visualizzato in un risultato della ricerca.
+1. A volte è possibile aggiungere un **robots.txt** file non sufficiente in termini di sicurezza. Ad esempio, se un altro sito web contiene un collegamento alla pagina, potrebbe essere visualizzato in un risultato della ricerca.
 
-Oltre al file **robots.txt**, è consigliabile aggiungere un&#39;intestazione **X-Robots-Tag**. Puoi farlo in Apache o IIS e nel file di configurazione **serverConf.xml**.
+Oltre al **robots.txt** è consigliabile aggiungere un **X-Robots-Tag** intestazione. Puoi farlo in Apache o IIS e nella **serverConf.xml** file di configurazione.
 
-Per ulteriori informazioni, consulta [questo articolo](https://developers.google.com/search/reference/robots_meta_tag).
+Per ulteriori informazioni, consulta [articolo](https://developers.google.com/search/reference/robots_meta_tag).

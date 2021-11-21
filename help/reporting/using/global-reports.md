@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Tali relazioni riguardano l&#39;attività dei dati nell&#39;intero database. Per visualizzare il dashboard dei rapporti, passa alla scheda **[!UICONTROL Reports]** .
+Tali relazioni riguardano l&#39;attività dei dati nell&#39;intero database. Per visualizzare il dashboard dei rapporti, passa alla pagina **[!UICONTROL Reports]** scheda .
 
 ![](assets/s_ncs_user_report_delivery_link.png)
 
@@ -29,19 +29,19 @@ Per visualizzare i rapporti, fare clic sui relativi nomi. Per impostazione prede
 >
 >Questa sezione mostra solo i rapporti collegati alle consegne.
 
-* **[!UICONTROL Delivery throughput]** : fai riferimento a  [Velocità effettiva di consegna](#delivery-throughput).
-* **[!UICONTROL Browsers]** : consulta  [Browser](#browsers).
-* **[!UICONTROL Sharing to social networks]** : fare riferimento a  [Condivisione su social network](#sharing-to-social-networks).
-* **[!UICONTROL Statistics on sharing activities]** : fare riferimento a  [Statistiche sulle attività di condivisione](#statistics-on-sharing-activities).
-* **[!UICONTROL Operating systems]** : fare riferimento a  [Sistemi operativi](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : fai riferimento agli  [URL e ai flussi di clic](../../reporting/using/delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** : fai riferimento agli indicatori  [di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a  [Non-deliverables e rimbalzi](#non-deliverables-and-bounces).
-* **[!UICONTROL User activities]** : consulta Attività  [utente](#user-activities).
-* **[!UICONTROL Subscription tracking]** : consulta  [Tracciamento sottoscrizione](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : consulta  [Riepilogo consegne](../../reporting/using/delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** : consulta Statistiche di  [consegna](#delivery-statistics).
-* **[!UICONTROL Breakdown of opens]** : consulta  [Suddivisione delle aperture](#breakdown-of-opens).
+* **[!UICONTROL Delivery throughput]** : fare riferimento a [Velocità effettiva di consegna](#delivery-throughput).
+* **[!UICONTROL Browsers]** : fare riferimento a [Browser](#browsers).
+* **[!UICONTROL Sharing to social networks]** : fare riferimento a [Condivisione sui social network](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]** : fare riferimento a [Statistiche sulle attività di condivisione](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]** : fare riferimento a [Sistemi operativi](#operating-systems).
+* **[!UICONTROL URLs and click streams]** : fare riferimento a [URL e flussi di clic](../../reporting/using/delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** : fare riferimento a [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]** : fare riferimento a [Non recapitati e mancati recapiti](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]** : fare riferimento a [Attività utente](#user-activities).
+* **[!UICONTROL Subscription tracking]** : fare riferimento a [Tracciamento sottoscrizione](#subscription-tracking).
+* **[!UICONTROL Delivery summary]** : fare riferimento a [Riepilogo consegne](../../reporting/using/delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** : fare riferimento a [Statistiche di consegna](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]** : fare riferimento a [Suddivisione delle aperture](#breakdown-of-opens).
 
 ## Velocità effettiva di consegna {#delivery-throughput}
 
@@ -67,7 +67,7 @@ Sono disponibili le seguenti opzioni:
 
 Questo rapporto mostra il raggruppamento dei non-deliverable e un raggruppamento dei mancati recapiti per dominio Internet.
 
-Il **[!UICONTROL Number of messages processed]** rappresenta il numero totale di messaggi elaborati dal server di consegna. Questo valore è inferiore al numero di messaggi da consegnare quando alcune consegne sono state interrotte o messe in pausa (prima di essere elaborate dal server).
+La **[!UICONTROL Number of messages processed]** rappresenta il numero totale di messaggi elaborati dal server di consegna. Questo valore è inferiore al numero di messaggi da consegnare quando alcune consegne sono state interrotte o messe in pausa (prima di essere elaborate dal server).
 
 ![](assets/s_ncs_user_errors_report.png)
 
@@ -99,7 +99,7 @@ Vengono utilizzati i seguenti indicatori:
    >
    >Questo indicatore riguarda solo le consegne sui canali mobili. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sms-channel.md).
 
-   Per aprire ciascuna riga della tabella dei valori, fai clic sul simbolo `[+]` . Per ogni tipo di errore, puoi visualizzare la suddivisione dei messaggi di errore per dominio.
+   Per aprire ciascuna riga della tabella dei valori, fai clic sul pulsante `[+]` simbolo. Per ogni tipo di errore, puoi visualizzare la suddivisione dei messaggi di errore per dominio.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
@@ -113,13 +113,13 @@ Per ogni nome di dominio, abbiamo:
 * la percentuale di messaggi con errori per questo dominio rispetto al numero totale di messaggi elaborati per questo dominio,
 * la percentuale di messaggi di errore per questo dominio rispetto al numero totale di messaggi di errore.
 
-Per aprire ciascuna riga della tabella dei valori, fai clic sul simbolo [+]. Per ogni tipo di dominio, puoi visualizzare la suddivisione dei messaggi di errore in base al tipo di errore.
+Per aprire ciascuna riga della tabella dei valori, fai clic sul pulsante [+] simbolo. Per ogni tipo di dominio, puoi visualizzare la suddivisione dei messaggi di errore in base al tipo di errore.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report vengono definiti a livello di cubo. Per modificare questi valori, modificare il cubo **[!UICONTROL Delivery logs (broadlogrcp)]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-cubes.md). La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono a una classe specifica.
+>I nomi di dominio visualizzati in questo report vengono definiti a livello di cubo. Per modificare questi valori, modifica il **[!UICONTROL Delivery logs (broadlogrcp)]** cubo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-cubes.md). La **[!UICONTROL Others]** La categoria include i nomi di dominio che non appartengono a una classe specifica.
 
 ## Browser {#browsers}
 
@@ -149,9 +149,9 @@ Nella tabella dei valori statistici globali, puoi fare clic sul nome di ciascun 
 
 Le statistiche sono presentate sotto forma di curva, grafico e tabella dei valori.
 
-La curva **[!UICONTROL History]** rappresenta il tasso di frequenza giornaliera del browser. Il tasso è il rapporto tra il numero di visitatori al giorno (su questo browser) e il numero di visitatori misurato al giorno con il tasso di presenza più alto.
+La **[!UICONTROL History]** curva rappresenta il tasso di frequenza di questo browser al giorno. Il tasso è il rapporto tra il numero di visitatori al giorno (su questo browser) e il numero di visitatori misurato al giorno con il tasso di presenza più alto.
 
-Il grafico **[!UICONTROL Breakdown per version]** rappresenta la suddivisione dei visitatori per versione rispetto al numero totale di visitatori (in questo browser).
+La **[!UICONTROL Breakdown per version]** grafico rappresenta la suddivisione dei visitatori per versione rispetto al numero totale di visitatori (in questo browser).
 
 La tabella dei valori utilizza i seguenti indicatori:
 
@@ -177,15 +177,15 @@ Nelle statistiche di consegna e-mail vengono visualizzati due valori:
 
 La tabella centrale mostra le statistiche sulle condivisioni e-mail e si apre.
 
-Nella colonna **[!UICONTROL Shares]** sono disponibili i seguenti indicatori:
+In **[!UICONTROL Shares]** Abbiamo i seguenti indicatori:
 
-* **[!UICONTROL No. of sharing activities]** : Numero totale di messaggi condivisi su ogni social network. Questo valore è uguale al numero totale di clic sull&#39;icona del blocco di personalizzazione **[!UICONTROL Links for sharing to social networks]** corrispondente.
+* **[!UICONTROL No. of sharing activities]** : Numero totale di messaggi condivisi su ogni social network. Questo valore è uguale al numero totale di clic sull&#39;icona della corrispondenza **[!UICONTROL Links for sharing to social networks]** blocco di personalizzazione.
 * **[!UICONTROL Breakdown]** : Questo tasso rappresenta la disaggregazione delle azioni per rete sociale, in relazione al numero totale di azioni.
 * **[!UICONTROL Sharing rate]** : Tale tasso corrisponde alla ripartizione delle azioni per rete sociale, in relazione al numero di messaggi da inviare.
 
-Nella colonna **[!UICONTROL Opens]** sono disponibili i seguenti indicatori:
+In **[!UICONTROL Opens]** Abbiamo i seguenti indicatori:
 
-* **[!UICONTROL No. of opens]** : Numero totale di messaggi aperti dalle persone a cui è stato inoltrato il messaggio (tramite il blocco di  **[!UICONTROL Links for sharing to social networks]** personalizzazione). Questo valore è uguale al numero di volte in cui è stata visualizzata la pagina speculare. Le aperture da parte dei destinatari della consegna non vengono prese in considerazione.
+* **[!UICONTROL No. of opens]** : Numero totale di messaggi aperti dalle persone a cui è stato inoltrato il messaggio (tramite il **[!UICONTROL Links for sharing to social networks]** blocco di personalizzazione). Questo valore è uguale al numero di volte in cui è stata visualizzata la pagina speculare. Le aperture da parte dei destinatari della consegna non vengono prese in considerazione.
 * **[!UICONTROL Breakdown]** : Questo tasso rappresenta la disaggregazione delle aperture per rete sociale, in relazione al numero totale di aperture.
 * **[!UICONTROL Rate of opens]** : Questo tasso rappresenta la disaggregazione delle aperture per rete sociale, in relazione al numero totale di azioni.
 
@@ -205,9 +205,9 @@ Le statistiche sono presentate sotto forma di tabella di valori e di grafico.
 
 Vengono utilizzati i seguenti indicatori:
 
-* **[!UICONTROL New contacts]** : Numero di nuovi abbonamenti a seguito della ricezione di un messaggio condiviso via e-mail. Questo valore corrisponde al numero di persone che hanno ricevuto un messaggio condiviso tramite e-mail, hanno fatto clic su **[!UICONTROL Subscription link]** e hanno compilato il modulo di abbonamento.
-* **[!UICONTROL Opens]** : Numero totale di messaggi aperti dalle persone a cui è stato trasferito il messaggio (tramite il blocco di  **[!UICONTROL Link for sharing to social networks]** personalizzazione). Questo valore è uguale al numero di volte in cui è stata visualizzata la pagina speculare. Le aperture da parte dei destinatari della consegna non vengono prese in considerazione.
-* **[!UICONTROL Sharing activities]** : Numero totale di messaggi condivisi tramite i social network. Questo valore corrisponde al numero totale di clic sull&#39;icona del blocco di personalizzazione **[!UICONTROL Links for sharing to social networks]**.
+* **[!UICONTROL New contacts]** : Numero di nuovi abbonamenti a seguito della ricezione di un messaggio condiviso via e-mail. Questo valore corrisponde al numero di persone che hanno ricevuto un messaggio condiviso tramite e-mail, hanno fatto clic su **[!UICONTROL Subscription link]** e ha compilato il modulo di abbonamento.
+* **[!UICONTROL Opens]** : Numero totale di messaggi aperti dalle persone a cui è stato trasferito il messaggio (tramite il **[!UICONTROL Link for sharing to social networks]** blocco di personalizzazione). Questo valore è uguale al numero di volte in cui è stata visualizzata la pagina speculare. Le aperture da parte dei destinatari della consegna non vengono prese in considerazione.
+* **[!UICONTROL Sharing activities]** : Numero totale di messaggi condivisi tramite i social network. Questo valore corrisponde al numero totale di clic sull&#39;icona del **[!UICONTROL Links for sharing to social networks]** blocco di personalizzazione.
 
 ## Sistemi operativi {#operating-systems}
 
@@ -237,9 +237,9 @@ Nella tabella dei valori delle statistiche globali, fare clic sul nome di ciascu
 
 Le statistiche sono presentate sotto forma di curva, grafico e tabella dei valori.
 
-La curva **[!UICONTROL History]** rappresenta il tasso di utilizzo di questo sistema operativo al giorno. Questo tasso è il rapporto tra il numero di visitatori al giorno (su questo sistema operativo) e il numero di visitatori misurato il giorno con la maggiore frequenza.
+La **[!UICONTROL History]** curva rappresenta il tasso di utilizzo di questo sistema operativo al giorno. Questo tasso è il rapporto tra il numero di visitatori al giorno (su questo sistema operativo) e il numero di visitatori misurato il giorno con la maggiore frequenza.
 
-Il grafico **[!UICONTROL Breakdown by version]** rappresenta la suddivisione dei visitatori per versione in relazione al numero totale di visitatori in questo sistema operativo.
+La **[!UICONTROL Breakdown by version]** grafico rappresenta la suddivisione dei visitatori per versione in relazione al numero totale di visitatori in questo sistema operativo.
 
 La tabella dei valori utilizza i seguenti indicatori:
 
@@ -252,11 +252,11 @@ Questo rapporto ti consente di monitorare gli abbonamenti ai servizi di informaz
 
 ![](assets/s_ncs_user_services_report.png)
 
-Può essere visualizzato per una sottoscrizione facendo clic sul nodo **[!UICONTROL Profiles and targets > Services and subscriptions]** della home page o dell&#39;explorer. Seleziona l’abbonamento desiderato, quindi fai clic sulla scheda **[!UICONTROL Reports]** . Il rapporto **[!UICONTROL Subscriptions tracking]** è disponibile per impostazione predefinita. Ti consente di visualizzare le tendenze di abbonamento e annullamento dell’abbonamento e il tasso di fedeltà in un periodo. Puoi configurare la rappresentazione di questi dati tramite l’elenco a discesa . Fai clic su **[!UICONTROL Refresh]** per convalidare la configurazione selezionata.
+Può essere visualizzato per un abbonamento facendo clic sul pulsante **[!UICONTROL Profiles and targets > Services and subscriptions]** nodo della home page o dell&#39;explorer. Seleziona l’abbonamento desiderato, quindi fai clic sul pulsante **[!UICONTROL Reports]** scheda . La **[!UICONTROL Subscriptions tracking]** il rapporto è disponibile per impostazione predefinita. Ti consente di visualizzare le tendenze di abbonamento e annullamento dell’abbonamento e il tasso di fedeltà in un periodo. Puoi configurare la rappresentazione di questi dati tramite l’elenco a discesa . Fai clic su **[!UICONTROL Refresh]** per convalidare la configurazione selezionata.
 
 Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
 
-Il **[!UICONTROL Number subscribed to date]** rappresenta il numero totale di persone attualmente abbonate.
+La **[!UICONTROL Number subscribed to date]** rappresenta il numero totale di persone attualmente abbonate.
 
 **[!UICONTROL Overall evolution of subscriptions]**
 
@@ -274,7 +274,7 @@ Questo grafico mostra l’evoluzione degli abbonamenti e degli annullamenti degl
 
 ## Statistiche di consegna {#delivery-statistics}
 
-Questo rapporto mostra la suddivisione per dominio Internet di tutti i messaggi elaborati e inviati, di mancati recapiti rigidi e morbidi, aperture, clic e annullamenti dell’abbonamento.
+Questo rapporto mostra la suddivisione per dominio Internet di tutti i messaggi elaborati e inviati, di mancati recapiti rigidi e morbidi, aperture, clic e annullamenti delle sottoscrizioni.
 
 ![](assets/s_ncs_user_broadcast_report.png)
 
@@ -297,7 +297,7 @@ Vengono utilizzati i seguenti indicatori:
 
 Questo rapporto mostra la suddivisione delle aperture per sistema operativo, dispositivo e browser per il periodo in questione. Per ogni categoria vengono utilizzati due grafici. Il primo visualizza le statistiche relative all&#39;apertura su un computer e dispositivi mobili. Il secondo visualizza le statistiche relative solo all’apertura su dispositivi mobili.
 
-Il numero di aperture corrisponde al numero totale di messaggi aperti. Le e-mail in formato testo non vengono conteggiate. Per ulteriori informazioni sulle aperture di Tracking, consulta la sezione [Aperture di Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-) .
+Il numero di aperture corrisponde al numero totale di messaggi aperti. Le e-mail in formato testo non vengono conteggiate. Per ulteriori informazioni sulle aperture di Tracking, consulta la [Aperture di tracciamento](../../reporting/using/indicator-calculation.md#tracking-opens-) sezione .
 
 ![](assets/dlv_useragent_report.png)
 

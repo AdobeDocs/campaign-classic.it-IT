@@ -30,18 +30,18 @@ Di seguito sono riportati i passaggi principali di questo scenario:
 1. Il cliente accede al sito web e trova un prodotto che desidera acquistare.
 1. Il cliente seleziona il prodotto e personalizza alcune opzioni.
 1. Il cliente completa la transazione.
-1. Viene inviata al cliente un’e-mail di conferma della transazione. Poiché si sconsiglia di inviare informazioni PII (personalmente identificabili) nell’e-mail, viene generato un PDF sicuro che viene allegato all’e-mail.
+1. Viene inviata al cliente un’e-mail di conferma della transazione. Poiché si sconsiglia di inviare informazioni PII (personalmente identificabili) nell’e-mail, viene generato un PDF protetto che viene allegato all’e-mail.
 1. Il cliente riceve l’e-mail e il relativo allegato contenente i dati pertinenti.
 
 In questo scenario, gli allegati non vengono pre-creati, ma aggiunti al volo alle e-mail in uscita, il che offre i seguenti vantaggi:
 
 * Questo consente di personalizzare il contenuto dell’allegato.
 * Se l&#39;allegato è associato a una transazione (come nello scenario di esempio descritto sopra), potrebbe contenere dati dinamici generati durante il processo del cliente.
-* L’allegato a file PDF ottimizza la protezione in quanto è possibile crittografarli e inviarli tramite HTTPS.
+* L’allegato ai file PDF ottimizza la sicurezza in quanto è possibile crittografarli e inviarli tramite HTTPS.
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata dall&#39; [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Raccomandazioni {#important-notes}
 
@@ -54,7 +54,7 @@ Prima di implementare questo scenario, leggi attentamente le linee guida riporta
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [l&#39;elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementazione {#implementation}
 
@@ -74,7 +74,7 @@ Per aggiungere istantaneamente un allegato e-mail a un messaggio sulle transazio
 
 1. Durante la progettazione dell’e-mail, fai clic su **[!UICONTROL Attachment]**.
 
-1. Nella schermata **[!UICONTROL Attachment definition]**, immetti il parametro di attacco SOAP:
+1. In **[!UICONTROL Attachment definition]** immettere il parametro di attacco SOAP:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

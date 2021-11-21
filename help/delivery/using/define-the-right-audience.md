@@ -28,7 +28,7 @@ Per garantire il successo della consegna, devi inviare i contenuti personalizzat
 
 ## Mappature di Target {#target-mappings}
 
-In Campaign Classic, per impostazione predefinita, i modelli di consegna sono destinati a **Destinatari**. Adobe Campaign offre altre mappature di destinazione per le consegne, che puoi modificare in base alle tue esigenze.
+In Campaign Classic, per impostazione predefinita, target dei modelli di consegna **Destinatari**. Adobe Campaign offre altre mappature di destinazione per le consegne, che puoi modificare in base alle tue esigenze.
 
 Ad esempio, puoi consegnare ai visitatori i cui profili sono stati raccolti tramite social network o ai visitatori abbonati a un servizio di informazione.
 
@@ -49,9 +49,9 @@ Per inviare messaggi agli abbonati di una newsletter, potete eseguire il targeti
 
 Per verificare la consegna, utilizza le bozze prima di inviare al target principale.
 
-Assicurati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per la definizione dei destinatari della bozza sono descritti [in questa sezione](steps-defining-the-target-population.md#selecting-the-proof-target).
+Assicurati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. Vengono presentate le fasi per la definizione dei destinatari della bozza [in questa sezione](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non soddisfano i criteri di target definiti al fine di testare una consegna prima di inviarla al target principale. Vengono presentati [in questa sezione](about-seed-addresses.md).
+Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non soddisfano i criteri di target definiti al fine di testare una consegna prima di inviarla al target principale. Sono presentati [in questa sezione](about-seed-addresses.md).
 
 ## Indirizzi duplicati {#deduplicate-addresses}
 
@@ -72,4 +72,4 @@ La deduplicazione degli indirizzi protegge la reputazione dell’invio e garanti
 
 Per ottimizzare le prestazioni delle query SQL utilizzate nell&#39;applicazione, è possibile dichiarare un indice dall&#39;elemento principale dello schema dati.
 
-I passaggi per aggiungere un indice all&#39;indirizzo e-mail sono descritti [in questa sezione](../../configuration/using/database-mapping.md#indexed-fields).
+Vengono descritti i passaggi per l’aggiunta di un indice all’indirizzo e-mail. [in questa sezione](../../configuration/using/database-mapping.md#indexed-fields).

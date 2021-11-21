@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Manutenzione dell&#39;applicazione {#application-maintenance}
 
-Adobe Campaign fornisce un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: il **flusso di lavoro di pulizia del database**. Questo flusso di lavoro esegue le seguenti attività:
+Adobe Campaign fornisce un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: la **flusso di lavoro di pulizia del database**. Questo flusso di lavoro esegue le seguenti attività:
 
 * eliminazione dei record scaduti,
 * eliminazione dei record orfani e reinizializzazione dello stato per gli oggetti scaduti,
@@ -66,17 +66,17 @@ Sono disponibili diverse strategie:
   <tr> 
    <td> Deframmentazione online<br /> </td> 
    <td> La maggior parte dei motori di database fornisce metodi di deframmentazione.<br /> </td> 
-   <td> Utilizza semplicemente il metodo di deframmentazione del database. Questi metodi in genere si occupano dei problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
+   <td> Utilizza semplicemente il metodo di deframmentazione del database. In genere, questi metodi si occupano dei problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
    <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (ad Oracle) e non sono sempre il modo più efficiente per gestire tabelle più grandi.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Discarica e ripristina<br /> </td> 
+   <td> Discesa e ripristino<br /> </td> 
    <td> Eseguire il dump della tabella in un file, eliminare la tabella nel database e ripristinarla dal dump.<br /> </td> 
    <td> Questo è il modo più semplice per deframmentare una tabella. Anche l'unica soluzione quando il database è quasi pieno.<br /> </td> 
-   <td> Poiché la tabella viene eliminata e ricreata, l'applicazione non può essere lasciata online, anche in modalità di sola lettura (la tabella non è disponibile durante la fase di ripristino).<br /> </td> 
+   <td> Poiché la tabella viene eliminata e ricreata, l’applicazione non può essere lasciata online, anche in modalità di sola lettura (la tabella non è disponibile durante la fase di ripristino).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Duplica, rinomina e rilascia<br /> </td> 
+   <td> Duplicare, rinominare e rilasciare<br /> </td> 
    <td> Crea una copia di una tabella e dei relativi indici, quindi rilascia quella esistente e rinomina la copia per sostituirla.<br /> </td> 
    <td> Questo metodo è più veloce del primo approccio in quanto genera meno IO (nessuna copia come file e lettura da questo file).<br /> </td> 
    <td> Richiede il doppio della quantità di spazio.<br /> È necessario arrestare tutti i processi attivi che scrivono alla tabella durante il processo. Tuttavia, i processi di lettura non saranno influenzati, poiché la tabella viene scambiata all’ultimo momento una volta ricostruita. <br /> </td> 

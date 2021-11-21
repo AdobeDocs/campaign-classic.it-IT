@@ -19,13 +19,13 @@ ht-degree: 3%
 
 Questo rapporto visualizza gli indicatori principali relativi alla coda in tempo reale.
 
-Questo rapporto, destinato agli amministratori tecnici, è accessibile anche tramite la scheda **[!UICONTROL Monitoring]** nell’istanza di controllo .
+Questo rapporto, rivolto agli amministratori tecnici, è accessibile anche tramite **[!UICONTROL Monitoring]** nell&#39;istanza di controllo.
 
 ![](assets/mc_reports_2.png)
 
-Come per il rapporto **[!UICONTROL Message Center service level]**, puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. Puoi anche filtrare i dati per canale e per un periodo di tempo specifico.
+Proprio come per la **[!UICONTROL Message Center service level]** puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. Puoi anche filtrare i dati per canale e per un periodo di tempo specifico.
 
-Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the period]** vengono calcolati nel periodo selezionato:
+Gli indicatori visualizzati nel **[!UICONTROL Indicators over the period]** La sezione viene calcolata nel periodo selezionato:
 
 * **[!UICONTROL Average queuing time]** : il tempo medio trascorso dall&#39;elaborazione degli eventi in Centro messaggi. Viene preso in considerazione solo il tempo di elaborazione.
 * **[!UICONTROL Average message sending time (s)]** : il tempo medio trascorso dall&#39;elaborazione degli eventi in Centro messaggi. Viene preso in considerazione solo il tempo di consegna mta.
@@ -36,4 +36,4 @@ Gli indicatori visualizzati nella sezione **[!UICONTROL Indicators over the peri
 
 >[!NOTE]
 >
->Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione di Adobe Campaign. Fai riferimento a [Soglie di monitoraggio](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione di Adobe Campaign. Fai riferimento a [Monitorare le soglie](../../message-center/using/additional-configurations.md#monitoring-thresholds).

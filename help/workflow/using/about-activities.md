@@ -21,7 +21,7 @@ Questa sezione descrive tutte le attività disponibili. A seconda del nodo o del
 
 Le attività del flusso di lavoro sono raggruppate per categoria. Sono disponibili quattro schede contemporaneamente.
 
-Nei flussi di lavoro della campagna, la scheda **[!UICONTROL Events]** viene sostituita dalla scheda **[!UICONTROL Deliveries]** . Le attività in questa scheda sono descritte in dettaglio nella sezione [Attività azione](about-action-activities.md) .
+Nei flussi di lavoro delle campagne, la **[!UICONTROL Events]** viene sostituita dalla scheda **[!UICONTROL Deliveries]** scheda . Le attività in questa scheda sono descritte in [Attività azione](about-action-activities.md) sezione .
 
 ![](assets/wf-activity-tabs.png)
 

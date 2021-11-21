@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ![](../../assets/v7-only.svg)
 
-Avvio automatico dei moduli Adobe Campaign (**web**, **mta**, **wfserver**, ecc.) è fornito dal server **nlserver** .
+Avvio automatico dei moduli Adobe Campaign (**web**, **mta**, **wfserver**, ecc.) è fornito da **nlserver** server.
 
-L&#39;installazione di Adobe Campaign configura automaticamente il computer in modo che il servizio **nlserver** si avvii durante la sequenza di avvio.
+L’installazione di Adobe Campaign configura automaticamente il computer in modo che il **nlserver** il servizio viene avviato durante la sequenza di avvio.
 
 I seguenti comandi vengono utilizzati per avviare e arrestare manualmente il servizio Adobe Campaign:
 
@@ -35,7 +35,7 @@ I seguenti comandi vengono utilizzati per avviare e arrestare manualmente il ser
 
 >[!NOTE]
 >
->A partire da 20.1, si consiglia di utilizzare invece il seguente comando (per Linux): **systemctl start nlserver** / **systemctl stop nlserver**
+>A partire da 20.1, si consiglia di utilizzare invece il seguente comando (per Linux): **system start nlserver** / **system stop nlserver**
 
 Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (come **Adobe Campaign**):
 
@@ -43,8 +43,8 @@ Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (com
 
    >[!NOTE]
    >
-   >L&#39;aggiunta del parametro **-who** al comando **pdump** consente di raccogliere informazioni sulle connessioni correnti (utenti e processi).\
-   >Il comando **/etc/init.d/nlserver6 status** (senza il parametro &quot;-who&quot;) restituirà:
+   >Aggiunta di **-chi** al **scampo** consente di raccogliere informazioni sulle connessioni correnti (utenti e processi).\
+   >La **/etc/init.d/nlserver6 status** (senza il parametro &quot;-who&quot;) restituirà:
    >
    >    * 0 se tutti i processi vengono eseguiti.
    >    * 1 se manca un processo.
@@ -52,13 +52,13 @@ Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (com
    >    * un altro valore in caso di errore.
 
 
-* Avviare/interrompere un modulo di istanza multipla o mono-istanza (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
+* Avviare/interrompere un modulo di istanza multipla o mono-istanza (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **posta indesiderata**):
 
    **avvio nlserver`<module>[@<instance>]`**
 
    **arresto del server`<module>[@<instance>][-immediate][-noconsole]`**
 
-   È inoltre possibile utilizzare il comando **nlserver riavvio`<module>[@<instance>]`** per riavviare un modulo.
+   È inoltre possibile utilizzare **riavvio del server`<module>[@<instance>]`** per riavviare un modulo.
 
    Esempio:
 
@@ -77,28 +77,29 @@ Ecco un elenco dei consueti comandi di amministrazione accessibili in Linux (com
    >[!NOTE]
    >
    >* Se l’istanza non è specificata, verrà utilizzata l’istanza &quot;predefinita&quot;.
-   >* In caso di emergenza, utilizza l&#39;opzione **-immediate** per forzare un arresto immediato del processo (equivalente al comando Unix **kill -9**).
-   >* Utilizza l&#39;opzione **-noconsole** per assicurarti che il modulo avviato non visualizzi nulla sulla console. I registri verranno scritti sul disco tramite il modulo **syslogd**.
-   >* Utilizza l&#39;opzione **-verbose** per visualizzare informazioni aggiuntive sulle azioni del processo.
-   >
-   >   Esempio:
-   >
-   >   **nlserver riavvio web -verbose**
-   >
-   >   **avvio nlserver mta@myinstance -verbose**
-   >
-   >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza l&#39;opzione **-verbose** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i registri.
+   >* In caso di emergenza, utilizza il **-immediate** opzione per interrompere immediatamente il processo (equivalente al comando Unix) **kill-9**).
+   >* Utilizza la **-noconsole** per garantire che il modulo avviato non venga visualizzato nella console. I registri verranno scritti sul disco tramite il **syslogd** modulo .
+   >* Utilizza la **-verboso** per visualizzare informazioni aggiuntive sulle azioni del processo.
+
+      >
+      >   Esempio:
+      >
+      >   **nlserver riavvio web -verbose**
+      >
+      >   **avvio nlserver mta@myinstance -verbose**
+      >
+      >   Questa opzione aggiunge altri registri. È consigliabile riavviare i processi senza **-verboso** una volta trovate le informazioni desiderate, per evitare di sovraccaricare i log.
 
 
-* Avvia tutti i processi Adobe Campaign (equivalente all&#39;avvio del servizio **nlserver6** ):
+* Avvia tutti i processi Adobe Campaign (equivalente all’avvio del **nlserver6** servizio):
 
    **nlserver watchdog -noconsole**
 
-* Spegni tutti i processi Adobe Campaign (equivalente all&#39;arresto del servizio **nlserver6** ):
+* Arresta tutti i processi Adobe Campaign (equivalente all’arresto del **nlserver6** servizio):
 
    **chiusura nlserver**
 
-* Ricarica la configurazione del modulo **nlserver web** (e il modulo di estensione del server web, se applicabile) quando i file **serverConf.xml** e **config-`<instance>  .xml </instance>`** sono stati modificati.
+* Ricarica il **web nlserver** la configurazione del modulo (e il modulo di estensione del server web, se applicabile) quando **serverConf.xml** e **config-`<instance>  .xml </instance>`** i file sono stati modificati.
 
    **nlserver config -reload**
 

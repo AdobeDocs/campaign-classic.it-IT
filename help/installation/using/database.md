@@ -21,7 +21,7 @@ Il server di database può essere eseguito su qualsiasi sistema operativo specif
 
 Il sistema operativo del server di database non è importante finché è disponibile la connettività con i diversi componenti di Adobe Campaign.
 
-Controlla anche la sezione [Livelli di accesso al database](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
+Controlla anche il [Livelli di accesso al database](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) sezione .
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -31,7 +31,7 @@ Il client nativo deve essere installato sui server dell&#39;applicazione Adobe C
 
 La seguente DLL di accesso deve essere presente: **sqlncli11.dll**.
 
-Le DLL di accesso si trovano sul sito Web Microsoft.
+Le DLL di accesso si trovano sul sito web Microsoft.
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ Le DLL di accesso si trovano sul sito Web Microsoft.
 >
 >I nomi di colonna con caratteri multibyte non sono supportati.
 
-I parametri **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** devono essere configurati correttamente affinché il database funzioni in Unicode o ANSI.
+La **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** i parametri devono essere configurati correttamente affinché il database funzioni in Unicode o ANSI.
 
 Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altre codifiche può causare problemi di compatibilità: in questo caso, contattare il supporto tecnico.
 
-Per informazioni sulla codifica, utilizza il seguente comando **sqlplus**:
+Per informazioni sulla codifica, utilizza quanto segue **sqlplus** comando:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-È inoltre possibile fare riferimento a [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Puoi anche fare riferimento a [Client Oracle in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 

@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/common.svg)
 
-Il flusso di lavoro descritto di seguito è pianificato per l’esecuzione ogni ora. Per impostazione predefinita, è installato con il modulo **Centro messaggi - Control** .
+Il flusso di lavoro descritto di seguito è pianificato per l’esecuzione ogni ora. È installato con **Centro messaggi - Controllo** modulo per impostazione predefinita.
 
 
 Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
@@ -35,7 +35,7 @@ Per ulteriori informazioni, a seconda della versione di Campaign, consulta quest
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Centro messaggi &lt;nome_account_esterno&gt;<br /> </td> 
+   <td> Centro messaggi &lt;external_account_name&gt;<br /> </td> 
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
    <td> Questo flusso di lavoro:<br /> 
     <ul> 

@@ -89,8 +89,8 @@ La firma della funzione deve includere un argomento per ogni parametro &#39;in&#
 
 Casi specifici:
 
-* **metodi** non statici: la funzione deve includere prima un argomento aggiuntivo, che coincide con l&#39;entità XML passata sotto forma di un oggetto di tipo &quot;xml&quot; (E4X).
-* **metodi** di tipo &quot;solo chiave&quot;: la funzione deve prima includere un argomento aggiuntivo, che coincide con la chiave passata sotto forma di stringhe di caratteri.
+* **metodi non statici**: la funzione deve includere prima un argomento aggiuntivo, che coincide con l&#39;entità XML passata sotto forma di un oggetto di tipo &quot;xml&quot; (E4X).
+* **Metodi di tipo &quot;solo chiave&quot;**: la funzione deve prima includere un argomento aggiuntivo, che coincide con la chiave passata sotto forma di stringhe di caratteri.
 
 **3. Valori restituiti**
 

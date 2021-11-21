@@ -46,16 +46,16 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 
 ## Descrizione {#description-4}
 
-In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
+Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 
-* Radice `<element>` : definisce il nome della tabella SQL corrispondente allo schema.
-* Struttura `<element>` : definisce un gruppo di `<element>`   o   `<attribute>`    elementi.
-* Collegamento `<element>` : definisce un collegamento. Questi elementi devono includere l’attributo &quot;@type=link&quot;.
-* XML `<element>` : definisce un campo di tipo Testo &quot;mData&quot;. Questo elemento deve includere l&#39;attributo &quot;@type=xml&quot;.
+* Radice `<element>`  : definisce il nome della tabella SQL corrispondente allo schema.
+* Struttura `<element>`  : definisce un gruppo di  `<element>`   o   `<attribute>`    elementi.
+* Collegamento `<element>`  : definisce un collegamento. Questi elementi devono includere l’attributo &quot;@type=link&quot;.
+* XML `<element>`  : definisce un campo di tipo Testo &quot;mData&quot;. Questo elemento deve includere l&#39;attributo &quot;@type=xml&quot;.
 
 ## Descrizione attributo {#attribute-description-4}
 
-* **_operazione (stringa)**: definisce il tipo di scrittura nel database.
+* **_operation (stringa)**: definisce il tipo di scrittura nel database.
 
    Questo attributo viene utilizzato principalmente per l’estensione degli schemi predefiniti.
 
@@ -68,8 +68,8 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * &quot;delete&quot;: eliminazione. Questo significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **avanzato (booleano)**: quando questa opzione viene attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili, accessibili per configurare un elenco in un modulo.
-* **aggregato (stringa)**: consente di copiare la definizione di un  `<element>`  tramite un altro schema. Questo attributo riceve una dichiarazione di schema sotto forma di &quot;namespace:name&quot;.
-* **applyIf (string)**: condizione per l&#39;applicazione dell&#39;indice. Questo attributo riceve un&#39;espressione XTK.
+* **aggregato (stringa)**: consente di copiare la definizione di un `<element>`  tramite un altro schema. Questo attributo riceve una dichiarazione di schema sotto forma di &quot;namespace:name&quot;.
+* **applyIf (stringa)**: condizione per l&#39;applicazione dell&#39;indice. Questo attributo riceve un&#39;espressione XTK.
 * **autopk (booleano)**: se questa opzione è attivata (autopk=&quot;true&quot;), viene automaticamente definita una chiave univoca. Questa opzione può essere utilizzata solo sull&#39;elemento principale dello schema. Attenzione, Adobe Campaign garantisce solo che la chiave generata sia univoca. Non è garantito che i valori chiave siano consecutivi e incrementali.
 * **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL. I valori di questo attributo sono:
 
@@ -82,12 +82,12 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * &quot;identifier&quot;: nome identificatore
    * &quot;resIdentifier&quot;: nome file
 
-* **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti in `<srcschema>`.
+* **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti nel `<srcschema>`.
 * **defOnDuplicate (booleano)**: se questo attributo viene attivato, quando un record viene duplicato, il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
-* **predefinito (stringa)**: consente di definire il comportamento degli elementi (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
+* **default (string)**: consente di definire il comportamento degli elementi (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
 * **desc (stringa)**: consente di inserire una descrizione dell’elemento. Questa descrizione viene visualizzata nella barra di stato dell’interfaccia.
-* **displayAsField (booleano)**: se questo attributo è attivato, un tipo di &quot;collegamento&quot;  `<element>`  verrà visualizzato come campo nella vista ad albero degli schemi (&quot;Struttura&quot; scheda). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarlo durante una query. Quando l’elemento viene trovato nella SELEZIONE di una query, viene utilizzato il valore della destinazione del collegamento. Quando l’elemento si trova nel punto in cui si trova una query, verrà utilizzata la chiave sottostante del collegamento.
-* **modifica (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
+* **displayAsField (booleano)**: se questo attributo è attivato, un tipo &quot;link&quot; `<element>`  verrà visualizzato come campo nella vista struttura degli schemi (&quot;Struttura&quot; scheda). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarlo durante una query. Quando l’elemento viene trovato nella SELEZIONE di una query, viene utilizzato il valore della destinazione del collegamento. Quando l’elemento si trova nel punto in cui si trova una query, verrà utilizzata la chiave sottostante del collegamento.
+* **edit (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
 * **enum (stringa)**: riceve il nome dell&#39;enumerazione collegata al campo. L&#39;enumerazione può essere inserita nello stesso schema o in uno schema remoto.
 * **expr (stringa)**: questo attributo definisce un campo calcolato per il quale non è memorizzata alcuna definizione nella tabella. Riceve un’espressione Xpath o XTK (string).
 * **externalJoin (booleano)**: join esterno in un elemento di tipo &quot;link&quot;.
@@ -122,9 +122,9 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * &quot;owncopy&quot;: simile a &quot;own&quot; (in caso di eliminazione) o duplica gli eventi (in caso di duplicazione)
    * &quot;neutro&quot;: non fa nulla
 
-* **etichetta (stringa)**: etichetta elemento.
+* **label (stringa)**: etichetta elemento.
 * **labelSingular (stringa)**: etichetta (forma singolare) dell’elemento utilizzato in alcune parti dell’interfaccia.
-* **lunghezza (stringa)**: max numero di caratteri autorizzati per un valore del campo SQL di tipo &quot;stringa&quot;.
+* **length (stringa)**: max numero di caratteri autorizzati per un valore del campo SQL di tipo &quot;stringa&quot;.
 * **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
 * **nome (MNTOKEN)**: nome interno dell’elemento che corrisponde al nome della tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione collegati a XML.
 
@@ -147,7 +147,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * &quot;predefinito (o nullo)&quot;: l’elemento viene esportato a meno che non sia l’elemento predefinito o se non è un campo interno e non sia compatibile con altre istanze
 
 * **ref (stringa)**: questo attributo definisce un riferimento a un elemento >element> condiviso da diversi schemi (factoring di definizione). La definizione non viene copiata nello schema corrente.
-* **obbligatorio (booleano)**: se questo attributo viene attivato (@required=&quot;true&quot;), il campo viene evidenziato nell’interfaccia di . Nei moduli l’etichetta del campo sarà rossa.
+* **required (booleano)**: se questo attributo viene attivato (@required=&quot;true&quot;), il campo viene evidenziato nell’interfaccia di . Nei moduli l’etichetta del campo sarà rossa.
 * **revAdvanced (booleano)**: quando attivato, questo attributo specifica che il collegamento opposto è un collegamento &quot;avanzato&quot;.
 * **revCardinality (stringa)**: questo attributo definisce la cardinalità di un collegamento tra due tabelle. Viene utilizzato in un tipo &quot;link&quot; `<element>`.
 
@@ -162,18 +162,18 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
 * **revExternalJoin (booleano)**: quando attivato, questo attributo consente di forzare l’unione esterna sul collegamento opposto.
 * **revIntegrity (stringa)**: questo attributo definisce l’integrità dello schema di destinazione. Gli stessi valori dell&#39;attributo &quot;@Integrity&quot; sono autorizzati. Per impostazione predefinita, Adobe Campaign assegna il valore &quot;normale&quot; a questo attributo.
 * **revLabel (stringa)**: etichetta del link opposto.
-* **revLink (stringa)**: nome del link opposto. Se il valore è &quot;_NONE_&quot;, non verrà creato alcun collegamento opposto nello schema di destinazione.
+* **revLink (stringa)**: nome del link opposto. Se il valore è &quot;_NESSUNO_&quot;, nello schema di destinazione non verrà creato alcun collegamento opposto.
 * **revTarget (stringa)**: destinazione del link opposto.
 * **sql (booleano)**: se questo attributo è attivato (@sql=&quot;true&quot;), forza l&#39;archiviazione dell&#39;elemento SQL, anche se l&#39;elemento ha la proprietà xml=&quot;true&quot;.
 * **sqlname (stringa)**: nome del campo durante la creazione della tabella. Se &quot;@sqlname&quot; non è specificato, il valore dell&#39;attributo &quot;@name&quot; viene utilizzato per impostazione predefinita. Quando si scrive lo schema nella tabella, i prefissi vengono aggiunti automaticamente a seconda del tipo di campo.
-* **sqltable (stringa)**: per l&#39;elemento principale dello schema, questo attributo sovrascrive il nome della tabella SQL generata per impostazione predefinita. Se &quot;@sqltable&quot; non è specificato, il nome predefinito sarà strutturato in questo modo: namespace (maiuscolo lettera) seguito dal valore dello SrcSchema &quot;@name&quot;.
-* **tableSpace (stringa)**: questo attributo consente di specificare una nuova tablespace di archiviazione dati per una tabella (valida nella directory principale  `<element>`).
-* **tableSpaceIndex (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dell&#39;indice per una tabella (valida nella radice  `<element>`).
+* **sqltable (stringa)**: per l&#39;elemento principale dello schema, questo attributo sovrascrive il nome della tabella SQL generata per impostazione predefinita. Se &quot;@sqltable&quot; non è specificato, il nome predefinito sarà strutturato in questo modo: namespace (primo maiuscolo lettera) seguito dal valore dello SrcSchema &quot;@name&quot;.
+* **tableSpace (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dei dati per una tabella (valida nella radice) `<element>`).
+* **tableSpaceIndex (stringa)**: questo attributo consente di specificare una nuova tablespace di memorizzazione dell&#39;indice per una tabella (valida nella radice) `<element>`).
 * **target (MNTOKEN)**: riceve il nome dello schema di destinazione durante la creazione di un collegamento tra tabelle. Questo attributo è attivo solo per gli elementi di tipo &quot;link&quot;.
-* **template (stringa)**: questo attributo definisce un riferimento a un  `<element>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **template (stringa)**: questo attributo definisce un riferimento a un `<element>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
 * **translateDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translateDefault&quot; ti permetterà di ridefinire un&#39;espressione che corrisponda a quella definita in @default, da raccogliere dallo strumento di traduzione (uso interno).
 * **translateExpr (stringa)**: se viene trovato un attributo &quot;@expr&quot;, l’attributo &quot;@translateExpr&quot; ti consente di ridefinire un’espressione corrispondente a quella definita in &quot;@expr&quot; e che verrà raccolta dallo strumento di traduzione (uso interno).
-* **tipo (MNTOKEN)**: definisce il tipo di dati memorizzati nell’elemento.
+* **type (MNTOKEN)**: definisce il tipo di dati memorizzati nell’elemento.
 
    Elenco dei tipi disponibili:
 
@@ -204,7 +204,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * timespan
    * uuid
 
-* **non associato (booleano)**: se l’attributo è attivato (unbound=&quot;true&quot;), il collegamento viene dichiarato come elemento di raccolta per una cardinalità 1-N.
+* **unbound (booleano)**: se l’attributo è attivato (unbound=&quot;true&quot;), il collegamento viene dichiarato come elemento di raccolta per una cardinalità 1-N.
 * **userEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;open&quot;. I valori di enumerazione possono essere definiti dall’utente nell’interfaccia di .
 * **xml (booleano)**: se questa opzione è attivata, tutti i valori definiti nell&#39;elemento sono memorizzati in XML in un campo di tipo TESTO &quot;mData&quot;. Ciò significa che non vi saranno filtri o ordinamento su questi campi.
-* **xmlChildren (booleano)**: forza l&#39;archiviazione per ogni bambino (  `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`
+* **xmlChildren (booleano)**: forza l&#39;archiviazione per ogni bambino ( `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`

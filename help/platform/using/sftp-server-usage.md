@@ -23,7 +23,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per evitare la scadenza della password (le password hanno un periodo di validità di 90 giorni), utilizza l’autenticazione basata sulle chiavi anziché l’autenticazione tramite password. Inoltre, l’autenticazione basata sulle chiavi consente di generare più chiavi, ad esempio quando gestisci più entità. Al contrario, l&#39;autenticazione tramite password richiede la condivisione della password con tutte le entità che stai gestendo.
 
-   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Per caricare le chiavi sul server Campaign, devi fornire la chiave pubblica al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) .
+   Il formato chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Sarà necessario fornire la chiave pubblica al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per caricarlo sul server Campaign.
 
 * Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
 
@@ -31,7 +31,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l&#39;identificatore. Quando crei cartelle a cui è necessario accedere da Campaign, assicurati di configurarle con diritti di lettura/scrittura per l’intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
 
-* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’inserire nell&#39;elenco Consentiti nell’istanza Campaign. L&#39;aggiunta di indirizzi IP all&#39;inserire nell&#39;elenco Consentiti può essere richiesta tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’inserire nell&#39;elenco Consentiti nell’istanza Campaign. È possibile richiedere l’aggiunta di indirizzi IP all’inserire nell&#39;elenco Consentiti tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Best practice di utilizzo del database {#sftp-server-best-practices}
 
@@ -43,11 +43,11 @@ Per evitare tali problemi, l&#39;Adobe consiglia di seguire le best practice rip
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, puoi monitorare l&#39;archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Se la tua istanza è ospitata su AWS, puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
 >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere aggiornata con la build [Gold Standard](../../rn/using/gs-overview.md) più recente o con la build [GA più recente (21.1.3)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Tieni presente che l’istanza deve essere aggiornata con l’ultima [Gold Standard](../../rn/using/gs-overview.md) o [build GA più recente (21.1.3)](../../rn/using/latest-release.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 * Le capacità del server variano a seconda della licenza. In ogni caso, mantieni i dati minimi possibili e conserva i dati solo per il tempo richiesto (15 giorni è il limite massimo di tempo).
 
@@ -63,14 +63,14 @@ Se utilizzi il tuo server SFTP, assicurati di seguire il più possibile le racco
 
 Inoltre, quando si specifica in Campaign Classic un percorso a un server SFTP esterno, la sintassi del percorso è diversa a seconda del sistema operativo del server SFTP:
 
-* Se il server SFTP è su **Windows**, utilizza sempre un percorso relativo.
-* Se il server STP è su **Linux**, utilizza sempre un percorso relativo alla home (a partire da &quot;~/&quot;), o un percorso assoluto (a partire da &quot;/&quot;).
+* Se il server SFTP è attivo **Windows**, utilizza sempre un percorso relativo.
+* Se il server STP è attivo **Linux**, utilizza sempre un percorso relativo alla home (a partire da &quot;~/&quot;), o un percorso assoluto (a partire da &quot;/&quot;).
 
 ## Problemi di connessione con il server SFTP ospitato da Adobe {#sftp-server-troubleshooting}
 
 La sezione seguente elenca le informazioni da controllare e fornire al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
 
-1. Verifica che l&#39;istanza sia in esecuzione. A questo scopo, apri il browser, quindi effettua una chiamata **[!UICONTROL GET]** sull&#39;endpoint dell&#39;istanza **[!UICONTROL /r/test]**:
+1. Verifica che l&#39;istanza sia in esecuzione. A questo scopo, apri il browser e quindi fai un **[!UICONTROL GET]** chiama l&#39;istanza **[!UICONTROL /r/test]** punto finale:
 
    ```
    https://instanceUrl/r/test
@@ -100,11 +100,11 @@ La sezione seguente elenca le informazioni da controllare e fornire al team di s
    >
    >Lo strumento Netcat consente di gestire facilmente le connessioni di rete su vari sistemi operativi (vedere [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Se la porta non è aperta, assicurati di aprire le connessioni in uscita sul tuo lato, quindi riprova. Se riscontri ancora problemi di connessione, condividi l&#39;output del comando con il team [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   Se la porta non è aperta, assicurati di aprire le connessioni in uscita sul tuo lato, quindi riprova. Se si verificano ancora problemi di connessione, condividere l&#39;output del comando con [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) squadra.
 
 1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per l’inserire nell&#39;elenco Consentiti.
-1. Se utilizzi un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). Pertanto, consigliamo vivamente di utilizzare un’autenticazione basata sulle chiavi (consulta [Best practice per i server SFTP](#sftp-server-best-practices)).
-1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita al team [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per la configurazione dell’istanza.
+1. Se utilizzi un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). Si consiglia pertanto vivamente di utilizzare un’autenticazione basata sulle chiavi (consulta [Best practice per server SFTP](#sftp-server-best-practices)).
+1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita a [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per la configurazione dell&#39;istanza.
 1. Se utilizzi FileZilla o uno strumento FTP equivalente, fornisci i dettagli dei log di connessione nel ticket di supporto.
 
 ## Errore &quot;Impossibile risolvere il nome host&quot;
@@ -125,7 +125,7 @@ Questo errore si verifica quando si tenta di collegare il server FTP da un fluss
 
 Questo errore indica che il nome di dominio del server FTP non può essere risolto correttamente. Per risolvere i problemi, procedi come segue:
 
-1. Risolvere i problemi relativi alla **configurazione del server DNS**:
+1. Risolvere i problemi **Configurazione del server DNS**:
 
    1. Controlla se il nome del server è stato aggiunto al server DNS locale.
    1. Se sì, esegui il seguente comando sul server Adobe Campaign per ottenere l&#39;indirizzo IP:
@@ -134,10 +134,10 @@ Questo errore indica che il nome di dominio del server FTP non può essere risol
 
       Questo conferma il funzionamento del server FTP e la sua reperibilità dal server dell&#39;applicazione Adobe Campaign.
 
-1. Risolvere i problemi **log di sessione**:
+1. Risolvere i problemi **registri di sessione**:
 
-   1. Nel flusso di lavoro, fai doppio clic sull’attività [Trasferimento file](../../workflow/using/file-transfer.md) .
-   1. Vai alla scheda **[!UICONTROL File Transfer]**, quindi fai clic su **[!UICONTROL Advanced Parameters]**.
+   1. Nel flusso di lavoro, fai doppio clic sul pulsante [Trasferimento file](../../workflow/using/file-transfer.md) attività.
+   1. Vai a **[!UICONTROL File Transfer]** scheda , quindi fai clic su **[!UICONTROL Advanced Parameters]**.
    1. Seleziona l’opzione **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)
