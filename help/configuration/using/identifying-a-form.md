@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Identificazione di un modulo
-description: Identificazione di un modulo
+title: Identificare un modulo
+description: Identificare un modulo
 audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
-# Identificazione di un modulo{#identifying-a-form}
+# Identificare un modulo{#identifying-a-form}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Un modulo di input consente di modificare un’istanza associata a uno schema di dati dalla console client di Adobe Campaign.
 

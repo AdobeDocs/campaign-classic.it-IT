@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ Forms è descritto in [questa sezione](../../configuration/using/identifying-a-f
 
 Il documento XML di un modulo di input deve contenere **`<form>`** elemento principale con **name** e **namespace** attributi per compilare rispettivamente il nome del modulo e il relativo namespace.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
@@ -39,7 +39,7 @@ Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia 
 
 Modulo di input corrispondente:
 
-```
+```xml
 <form name="book" namespace="cus" type="contentForm">
   <input xpath="@name"/>
   <input xpath="@date"/>
@@ -89,7 +89,7 @@ Questo controllo visualizza un elenco di colonne modificabili con una barra degl
 
 ![](assets/d_ncs_content_form4.png)
 
-```
+```xml
 <input xpath="chapter" type="list">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -108,7 +108,7 @@ Per impostazione predefinita, i pulsanti della barra degli strumenti sono alline
 
 ![](assets/d_ncs_content_form5.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -133,7 +133,7 @@ Le modifiche ai moduli negli elenchi vengono utilizzate nei casi seguenti:
 
 ![](assets/d_ncs_content_form7.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter" zoom="true" zoomOnAdd="true">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -160,7 +160,7 @@ Questo elenco presenta la modifica degli elementi della raccolta sotto forma di 
 
 ![](assets/d_ncs_content_form6.png)
 
-```
+```xml
 <container toolbarCaption="List of chapters" type="notebooklist" xpath="chapter" xpath-label="@name">
   <container colcount="2">
     <input xpath="@name"/>
@@ -197,3 +197,5 @@ La zona di modifica consente di immettere il contenuto XML del modulo di input:
 La **[!UICONTROL Preview]** consente di visualizzare il modulo di input:
 
 ![](assets/d_ncs_content_form13.png)
+
+Ulteriori informazioni [modifica dei moduli](../../configuration/using/editing-forms.md) e [struttura del modulo](../../configuration/using/form-structure.md).

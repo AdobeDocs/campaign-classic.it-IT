@@ -6,7 +6,7 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93fcb0b2b12b581dadbe4358e72bb883384fbbe6
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 99%
@@ -790,8 +790,8 @@ ht-degree: 99%
       + [Rigenerazione degli schemi](configuration/using/regenerating-schemas.md)
       + [Esempi di modifica degli schemi](configuration/using/examples-of-schemas-edition.md)
    + Moduli di input {#input-forms}
-      + [Identificazione di un modulo](configuration/using/identifying-a-form.md)
-      + [Modifica dei moduli](configuration/using/editing-forms.md)
+      + [Identificare un modulo](configuration/using/identifying-a-form.md)
+      + [Modificare i moduli](configuration/using/editing-forms.md)
       + [Struttura di un modulo](configuration/using/form-structure.md)
    + API {#api}
       + [Informazioni sui servizi web](configuration/using/about-web-services.md)
