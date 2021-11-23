@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
    </tr>
    <tr>
    <td>Documentazione sulle API di Campaign - file jsapi.chm</td>
-   <td>A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html">nuova versione online</a>.</td>
+   <td>A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it">nuova versione online</a>.</td>
   </tr> 
   <tr> 
    <td>Orchestrazione delle campagne - Marketing predittivo</td>
