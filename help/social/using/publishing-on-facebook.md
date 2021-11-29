@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Pubblicazione su Facebook
-description: Pubblicazione su Facebook
+title: Pubblicare su Facebook
+description: Scopri come pubblicare su Facebook
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1138'
 ht-degree: 3%
 
 ---
 
-# Pubblicazione su Facebook{#publishing-on-facebook}
+# Pubblicare su Facebook{#publishing-on-facebook}
 
 ![](../../assets/v7-only.svg)
 
@@ -26,13 +26,13 @@ Le seguenti limitazioni sono inerenti a Facebook.
 * I messaggi non possono superare i 1.000 caratteri.
 * HTML non è supportato.
 
-## Creazione della consegna {#creating-the-delivery}
+## Creare la consegna {#creating-the-delivery}
 
 Crea una nuova consegna utilizzando **[!UICONTROL Publish to a brand page]** modello di consegna.
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Selezione del target principale {#selecting-the-main-target}
+## Selezionare la destinazione principale {#selecting-the-main-target}
 
 Selezionare le pagine sulle quali si desidera pubblicare la pubblicazione.
 
@@ -52,9 +52,9 @@ Selezionare le pagine sulle quali si desidera pubblicare la pubblicazione.
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Selezione della destinazione della bozza {#selecting-the-proof-target}
+## Selezionare la destinazione della bozza {#selecting-the-proof-target}
 
-La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire la pagina Facebook da utilizzare per testare le consegne prima di inviarle. È consigliabile creare una pagina Facebook privata dedicata a questo scopo. Per ulteriori informazioni sulla creazione di una pagina Facebook privata, consulta [Creazione di una pagina Facebook di test](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Per selezionare il target della bozza, esegui gli stessi passaggi del target principale: [Selezione del target principale](#selecting-the-main-target).
+La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire la pagina Facebook da utilizzare per testare le consegne prima di inviarle. È consigliabile creare una pagina Facebook privata dedicata a questo scopo. Per ulteriori informazioni sulla creazione di una pagina Facebook privata, consulta [questa pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Per selezionare il target della bozza, applica gli stessi passaggi del target principale. [Ulteriori informazioni](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -62,7 +62,7 @@ La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire la pa
 >
 >Se utilizzi la stessa pagina di test di Facebook per tutte le consegne, puoi salvare il target della bozza nella **[!UICONTROL Publish to a brand page]** modello di consegna, accessibile tramite **[!UICONTROL Resources > Templates > Delivery templates]** nodo. Il target della bozza verrà immesso per impostazione predefinita per ogni nuova consegna.
 
-## Definizione del pubblico {#defining-the-audience}
+## Definire il pubblico {#defining-the-audience}
 
 Se desideri utilizzare i segmenti locali per perfezionare il tipo di pubblico autorizzato a visualizzare la pubblicazione, ti consigliamo di creare una pagina Facebook per segmento (ad esempio: Adobe Campaign Paris, Adobe Campaign London, ecc.).
 
@@ -73,13 +73,13 @@ Tuttavia è anche possibile utilizzare i filtri del pubblico utilizzati da Faceb
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Usa questa funzione con attenzione. Nei rapporti di consegna, la **[!UICONTROL Number of fans]** Questo indicatore non terrà conto di questi filtri Facebook.
 >
 >Facebook può modificare l’elenco dei filtri per il pubblico e i relativi valori.
 
-## Definizione del contenuto del messaggio {#defining-message-content}
+## Definire il contenuto del messaggio {#defining-message-content}
 
 Seleziona il tipo di pubblicazione utilizzando **[!UICONTROL Content type]** menu a discesa.
 
@@ -102,7 +102,7 @@ Inserire lo stato di pubblicazione nella zona di input.
 
 ![](assets/social_facebook_delivery_015.png)
 
-### Pubblicazione di uno stato con un collegamento {#publishing-a-status-with-a-link}
+### Pubblicare uno stato con un collegamento {#publishing-a-status-with-a-link}
 
 Una consegna di tipo stato con un collegamento può contenere testo, immagini e un collegamento. La sezione seguente descrive la simmetria tra i campi della schermata di modifica della consegna e la pubblicazione finale su Facebook:
 
@@ -110,7 +110,7 @@ Una consegna di tipo stato con un collegamento può contenere testo, immagini e 
 
 Inserisci i vari campi:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Tutti gli URL devono iniziare con **&quot;http://&quot;** o **&quot;https://&quot;**.
 
@@ -131,7 +131,7 @@ Inserisci i vari campi:
 
 1. In **[!UICONTROL Image]** , immetti l’URL dell’immagine che verrà visualizzata a sinistra della pubblicazione.
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >L&#39;immagine deve essere ospitata su un sito Internet pubblico per consentire a Facebook di caricarla.
 
@@ -140,7 +140,7 @@ Inserisci i vari campi:
 
 ![](assets/social_facebook_delivery_005.png)
 
-### Pubblicazione di uno stato con un collegamento YouTube {#publishing-a-status-with-a-youtube-link}
+### Pubblicare uno stato con un collegamento YouTube {#publishing-a-status-with-a-youtube-link}
 
 Questo tipo di contenuto consente di pubblicare un collegamento a un video di YouTube. Come per uno stato con un collegamento regolare, puoi definire uno stato, un nome, una didascalia, una descrizione e un collegamento aggiuntivo. L’immagine viene aggiunta automaticamente da Facebook. Di seguito sono descritte le simmetrie tra i campi della schermata di modifica della consegna e la pubblicazione finale su Facebook:
 
@@ -148,7 +148,7 @@ Questo tipo di contenuto consente di pubblicare un collegamento a un video di Yo
 
 Inserisci i vari campi:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Tutti gli URL devono iniziare con **&quot;http://&quot;** o **&quot;https://&quot;**.
 
@@ -160,7 +160,7 @@ Inserisci i vari campi:
 
 ![](assets/social_facebook_delivery_youtube.png)
 
-### Pubblicazione di un album fotografico {#publishing-a-photo-album}
+### Pubblicare un album di foto {#publishing-a-photo-album}
 
 Questo tipo di contenuto consente di pubblicare un album fotografico. È possibile aggiungere un nome e una descrizione per l&#39;album, nonché una didascalia per ogni foto. Di seguito sono descritte le simmetrie tra i campi della schermata di modifica della consegna e la pubblicazione finale su Facebook:
 
@@ -188,9 +188,9 @@ La **[!UICONTROL Preview]** consente di visualizzare il rendering della pubblica
 
 >[!NOTE]
 >
->L’anteprima potrebbe essere leggermente diversa dalla pubblicazione finale di Facebook. Si consiglia vivamente di inviare una prova prima della consegna finale per un rendering esatto della pubblicazione. Fai riferimento a [Invio della bozza](#sending-the-proof).
+>L’anteprima potrebbe essere leggermente diversa dalla pubblicazione finale di Facebook. Si consiglia vivamente di inviare una prova prima della consegna finale per un rendering esatto della pubblicazione. [Ulteriori informazioni](#sending-the-proof).
 
-## Configurazione del tracciamento {#configuring-tracking}
+## Configurare il tracciamento {#configuring-tracking}
 
 Il tracciamento può essere visualizzato nei rapporti di consegna e nel **[!UICONTROL Edit > Tracking]** scheda della consegna e del servizio.
 
@@ -202,13 +202,13 @@ La configurazione del tracciamento è la stessa di una consegna e-mail. Per ulte
 >
 >In **[!UICONTROL Publish to a brand page]** modello di consegna, il tracciamento è abilitato per impostazione predefinita.
 
-## Invio della bozza {#sending-the-proof}
+## Invia la bozza {#sending-the-proof}
 
-Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per visualizzare l’esatto rendering della pubblicazione su una pagina di test Facebook privata. Per ulteriori informazioni sulla creazione di una pagina di test Facebook privata, consulta [Creazione di una pagina Facebook di test](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). I passaggi per selezionare la bozza di destinazione sono descritti in [Selezione della destinazione della bozza](#selecting-the-proof-target).
+Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per visualizzare l’esatto rendering della pubblicazione su una pagina di test Facebook privata. Per ulteriori informazioni sulla creazione di una pagina di test Facebook privata, consulta [questa pagina](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). I passaggi per selezionare la bozza di destinazione sono descritti in [questa sezione](#selecting-the-proof-target).
 
 La consegna delle prove è identica alle consegne delle e-mail. Fai riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Invio del messaggio {#sending-the-message}
+## Invia il messaggio {#sending-the-message}
 
 1. Una volta approvato il contenuto, fai clic sul pulsante **[!UICONTROL Send]** pulsante .
 1. Seleziona **[!UICONTROL Deliver as soon as possible]** e fai clic su **[!UICONTROL Analyze]** pulsante .

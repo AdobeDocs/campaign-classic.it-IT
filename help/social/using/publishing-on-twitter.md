@@ -6,18 +6,18 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 5%
+source-wordcount: '923'
+ht-degree: 6%
 
 ---
 
-# Pubblicazione su Twitter{#publishing-on-twitter}
+# Pubblicare su Twitter{#publishing-on-twitter}
 
 ![](../../assets/v7-only.svg)
 
-## Pubblicazione sugli account Twitter {#publishing-on-your-twitter-accounts}
+## Pubblica sui tuoi account Twitter {#publishing-on-your-twitter-accounts}
 
 Una volta completata la configurazione, Social Marketing ti consente di inviare tweet ai tuoi account Twitter.
 
@@ -28,13 +28,13 @@ Le seguenti limitazioni sono vincoli inerenti a Twitter.
 * Il messaggio non può superare i 140 caratteri.
 * Il formato HTML non è supportato.
 
-### Creazione della consegna {#creating-the-delivery}
+### Creare la consegna {#creating-the-delivery}
 
 Crea una nuova consegna basata su **[!UICONTROL Tweet (twitter)]** modello di consegna.
 
 ![](assets/social_twitter_delivery_001.png)
 
-### Selezione del target principale {#selecting-the-main-target}
+### Selezionare la destinazione principale {#selecting-the-main-target}
 
 Seleziona gli account a cui desideri inviare i tweet.
 
@@ -54,9 +54,9 @@ Seleziona gli account a cui desideri inviare i tweet.
 
    ![](assets/social_twitter_delivery_011.png)
 
-### Selezione del target della bozza {#selecting-the-target-of-the-proof}
+### Selezionare la destinazione della bozza {#selecting-the-target-of-the-proof}
 
-La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire l’account Twitter da utilizzare per testare le consegne prima della consegna finale. È quindi consigliabile creare un account Twitter privato dedicato all’invio di bozze. Per ulteriori informazioni su come creare un account Twitter privato, consulta [Creazione di un account di test su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare il target della bozza sono gli stessi che per selezionare il target principale. Fai riferimento a [Creazione di un account di test su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire l’account Twitter da utilizzare per testare le consegne prima della consegna finale. È quindi consigliabile creare un account Twitter privato dedicato all’invio di bozze. Per ulteriori informazioni su come creare un account Twitter privato, consulta [questa sezione](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare il target della bozza sono gli stessi che per selezionare il target principale. Fai riferimento a [questa sezione](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -64,13 +64,13 @@ La **[!UICONTROL Target of the proofs]** La scheda ti consente di definire l’a
 >
 >Se utilizzi lo stesso account di test Twitter per tutte le consegne, puoi salvare la destinazione della bozza nella sezione **[!UICONTROL Tweet]** modello di consegna, accessibile tramite il **[!UICONTROL Resources > Templates > Delivery templates]** nodo. Il target della bozza verrà quindi immesso per impostazione predefinita per ogni nuova consegna.
 
-### Definizione del contenuto del messaggio {#defining-the-message-content}
+### Definire il contenuto del messaggio {#defining-the-message-content}
 
 Digita il contenuto del tuo tweet nel **[!UICONTROL Content]** scheda .
 
 ![](assets/social_twitter_delivery_005.png)
 
-### Visualizzazione dell&#39;anteprima {#viewing-the-preview}
+### Anteprima del messaggio {#viewing-the-preview}
 
 La **[!UICONTROL Preview]** consente di visualizzare un rendering del tweet.
 
@@ -83,9 +83,9 @@ La **[!UICONTROL Preview]** consente di visualizzare un rendering del tweet.
 
 >[!NOTE]
 >
->L&#39;anteprima può differire leggermente dal tweet finale. Consigliamo vivamente di inviare una prova prima della consegna finale per visualizzare un rendering esatto del tweet. Fai riferimento a [Invio della bozza](#sending-the-proof).
+>L&#39;anteprima può differire leggermente dal tweet finale. Consigliamo vivamente di inviare una prova prima della consegna finale per visualizzare un rendering esatto del tweet. Fai riferimento a [questa sezione](#sending-the-proof).
 
-### Configurazione del tracciamento {#configuring-tracking}
+### Configurare il tracciamento {#configuring-tracking}
 
 Il tracciamento può essere visualizzato nei rapporti di consegna e nel **[!UICONTROL Edit > Tracking]** scheda della consegna e del servizio.
 
@@ -95,17 +95,17 @@ La configurazione del tracciamento è la stessa di una consegna e-mail. Per ulte
 >
 >In **[!UICONTROL Tweet]** modello di consegna, il tracciamento è abilitato per impostazione predefinita.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Non riusciamo a distinguere tra robot che analizzano i tweet e utenti che stanno cliccando.
 
-### Invio della bozza {#sending-the-proof}
+### Invia la bozza {#sending-the-proof}
 
-Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per ottenere un rendering esatto della pubblicazione su una pagina di test Twitter privata. Per ulteriori informazioni sulla creazione di un account Twitter privato, consulta [Creazione di un account di test su Twitter](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare la destinazione della bozza sono descritti in [Selezione del target della bozza](#selecting-the-target-of-the-proof).
+Si consiglia vivamente di inviare una prova della pubblicazione prima della consegna finale per ottenere un rendering esatto della pubblicazione su una pagina di test Twitter privata. Per ulteriori informazioni sulla creazione di un account Twitter privato, consulta [questa sezione](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). I passaggi per selezionare la destinazione della bozza sono descritti in [questa sezione](#selecting-the-target-of-the-proof).
 
 La consegna delle prove è identica alle consegne delle e-mail. Fai riferimento a [questa sezione](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Invio del messaggio {#sending-the-message}
+### Invia il messaggio {#sending-the-message}
 
 1. Una volta approvato il contenuto, fai clic sul pulsante **[!UICONTROL Send]** pulsante .
 1. Seleziona **[!UICONTROL Deliver as soon as possible]** e fai clic su **[!UICONTROL Analyze]** pulsante .
@@ -121,11 +121,11 @@ La consegna delle prove è identica alle consegne delle e-mail. Fai riferimento 
 
 ![](assets/social_facebook_delivery_016.png)
 
-## Invio di messaggi diretti agli abbonati {#sending-direct-messages-to-subscribers}
+## Inviare messaggi diretti agli abbonati {#sending-direct-messages-to-subscribers}
 
 ### Principio di funzionamento {#operating-principle}
 
-La **[!UICONTROL Synchronize Twitter accounts]** workflow (fai riferimento a [Sincronizzazione degli account Twitter](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera l’elenco degli abbonati a Twitter in modo da poter inviare loro messaggi diretti. I seguaci recuperati sono memorizzati in una tabella specifica: la tabella dei visitatori. Per visualizzare l’elenco dei follower di Twitter, vai alla pagina **[!UICONTROL Profiles and Targets > Visitors]** nodo.
+La **[!UICONTROL Synchronize Twitter accounts]** workflow (fai riferimento a [Ulteriori informazioni](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) recupera l’elenco degli abbonati a Twitter in modo da poter inviare loro messaggi diretti. I seguaci recuperati sono memorizzati in una tabella specifica: la tabella dei visitatori. Per visualizzare l’elenco dei follower di Twitter, vai alla pagina **[!UICONTROL Profiles and Targets > Visitors]** nodo.
 
 ![](assets/social_twitter_visitors_001.png)
 
@@ -152,13 +152,13 @@ Le seguenti limitazioni sono vincoli inerenti a Twitter.
 * HTML non è supportato.
 * Non puoi inviare più di 250 messaggi diretti al giorno. Per evitare di superare questa soglia, puoi fornire in diverse ondate. Le consegne a ondate sono configurate come le consegne e-mail. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
-### Creazione della consegna {#creating-the-delivery-}
+### Creare la consegna {#creating-the-delivery-}
 
 Crea una nuova consegna basata su **[!UICONTROL Tweet (Direct Message)]** modello di consegna.
 
 ![](assets/social_twitter_delivery_010.png)
 
-### Selezione del target principale {#selecting-the-main-target-1}
+### Selezionare la destinazione principale {#selecting-the-main-target-1}
 
 Seleziona i follower a cui desideri inviare il messaggio diretto.
 
@@ -184,7 +184,7 @@ Seleziona i follower a cui desideri inviare il messaggio diretto.
 
       ![](assets/social_twitter_delivery_018.png)
 
-### Selezione del target della bozza {#selecting-the-target-of-the-proof-1}
+### Selezionare la destinazione della bozza {#selecting-the-target-of-the-proof-1}
 
 La **[!UICONTROL Target of the proofs]** consente di selezionare il follower che riceverà la bozza del messaggio diretto. Il processo di selezione è lo stesso del target principale. Fai riferimento a [Selezione del target principale](#selecting-the-main-target).
 
@@ -194,7 +194,7 @@ La **[!UICONTROL Target of the proofs]** consente di selezionare il follower che
 >
 >Se desideri inviare tutte le bozze dei messaggi diretti allo stesso follower di Twitter, puoi salvare la destinazione della bozza nella **[!UICONTROL Tweet (Direct Message)]** modello di consegna, accessibile tramite il **[!UICONTROL Resources > Templates > Delivery templates]** nodo. Il target della bozza verrà quindi immesso per impostazione predefinita per ogni nuova consegna.
 
-### Definizione del contenuto del messaggio {#defining-message-content-}
+### Definire il contenuto del messaggio {#defining-message-content-}
 
 Immetti il contenuto del tweet nel **[!UICONTROL Content]** scheda .
 

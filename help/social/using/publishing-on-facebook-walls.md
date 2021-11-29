@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Pubblicazione su bacheche Facebook
-description: Pubblicazione su bacheche Facebook
+title: Pubblicare su bacheche Facebook
+description: Pubblicare su bacheche Facebook
 audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '903'
+ht-degree: 4%
 
 ---
 
-# Pubblicazione su bacheche Facebook{#publishing-on-facebook-walls}
+# Pubblicare su bacheche Facebook{#publishing-on-facebook-walls}
 
 ![](../../assets/v7-only.svg)
 
@@ -35,9 +35,9 @@ Inizia creando un account Facebook e diverse pagine: verranno utilizzati per l�
 
    ![](assets/social_diagram_fb_external_account.png)
 
-## Creazione di una pagina Facebook di test {#creating-a-test-facebook-page}
+## Creare una pagina Facebook di test {#creating-a-test-facebook-page}
 
-È consigliabile creare una pagina Facebook privata per la distribuzione delle bozze di pubblicazione (per ulteriori informazioni, consulta [Invio della bozza](../../social/using/publishing-on-facebook.md#sending-the-proof).
+È consigliabile creare una pagina Facebook privata per la distribuzione delle bozze di pubblicazione (per ulteriori informazioni, consulta [questa sezione](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Accedi all’account Facebook che utilizzi per amministrare le pagine.
 1. Crea una nuova pagina Facebook.
@@ -47,14 +47,14 @@ Inizia creando un account Facebook e diverse pagine: verranno utilizzati per l�
 
 ![](assets/social_facebook_test_page.png)
 
-## Creazione di un’app Facebook {#creating-a-facebook-application}
+## Creare un’applicazione Facebook {#creating-a-facebook-application}
 
 Affinché Adobe Campaign possa pubblicare sulle pareti delle pagine, devi creare un’applicazione Facebook. A questo scopo, esegui i seguenti passaggi:
 
 1. Accedi all’account Facebook utilizzato per amministrare le pagine.
 1. Inserisci il seguente indirizzo nel browser: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >A seconda del tipo di account in uso, potrebbe essere necessaria una o più autorizzazioni.
    >
@@ -82,7 +82,7 @@ Per delegare l’accesso in scrittura ad Adobe Campaign per la pubblicazione sul
 
 Questo passaggio richiede l’accesso sia alla console Adobe Campaign che a un browser Internet connesso all’account Facebook che utilizzi per l’amministrazione delle pagine:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Per eseguire questa configurazione, l’operatore Adobe Campaign deve disporre dei diritti di amministrazione.
 
@@ -102,7 +102,7 @@ Questo passaggio richiede l’accesso sia alla console Adobe Campaign che a un b
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Non devi utilizzare l’URL non protetto in nessun caso.
 
@@ -121,7 +121,7 @@ Questo passaggio richiede l’accesso sia alla console Adobe Campaign che a un b
    >
    >La **[!UICONTROL Marketing URL]** è facoltativo.
 
-1. Nella console Adobe Campaign, fai clic sul pulsante **[!UICONTROL Request the authorization from the application]** link nella parte inferiore del **[!UICONTROL Connector]** scheda . La **[!UICONTROL Synchronize Facebook pages]** il flusso di lavoro viene attivato automaticamente e raccoglie tutte le pagine Facebook gestite dall’amministratore. Per ulteriori informazioni, consulta [Sincronizzazione delle pagine Facebook](#synchronizing-facebook-pages).
+1. Nella console Adobe Campaign, fai clic sul pulsante **[!UICONTROL Request the authorization from the application]** link nella parte inferiore del **[!UICONTROL Connector]** scheda . La **[!UICONTROL Synchronize Facebook pages]** il flusso di lavoro viene attivato automaticamente e raccoglie tutte le pagine Facebook gestite dall’amministratore. [Ulteriori informazioni](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ Questo passaggio richiede l’accesso sia alla console Adobe Campaign che a un b
 >
 >Se l’account Facebook amministra diverse pagine, è sufficiente configurare un account esterno da scrivere su qualsiasi pagina dell’account Facebook. Per ogni nuovo account Facebook, dovrai creare un nuovo **[!UICONTROL Routing]** digitare account esterno.
 
-La **[!UICONTROL Synchronization of Facebook pages]** Il flusso di lavoro sincronizza tutte le pagine amministrate dall’account Facebook, per consentirti di pubblicare direttamente sul loro muro tramite Adobe Campaign. Per ulteriori informazioni, consulta [Sincronizzazione delle pagine Facebook](#synchronizing-facebook-pages).
+La **[!UICONTROL Synchronization of Facebook pages]** Il flusso di lavoro sincronizza tutte le pagine amministrate dall’account Facebook, per consentirti di pubblicare direttamente sul loro muro tramite Adobe Campaign. [Ulteriori informazioni](#synchronizing-facebook-pages).
 
 ## Sincronizzazione delle pagine Facebook {#synchronizing-facebook-pages}
 
-La **[!UICONTROL Synchronization of Facebook pages]** , accessibile tramite il **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** node, consente di sincronizzare (in Adobe Campaign) le pagine dell’account Facebook configurate in precedenza. Per impostazione predefinita, questo flusso di lavoro è configurato per l’esecuzione una volta al giorno o ogni volta che un amministratore fa clic sul pulsante **[!UICONTROL Request an authorization from the application]** nella schermata di configurazione del servizio (consulta [Delega dell’accesso in scrittura ad Adobe Campaign](#delegating-write-access-to-adobe-campaign)).
+La **[!UICONTROL Synchronization of Facebook pages]** , accessibile tramite il **[!UICONTROL Administration > Production > Technical workflows > Managing social networks]** node, consente di sincronizzare (in Adobe Campaign) le pagine dell’account Facebook configurate in precedenza. Per impostazione predefinita, questo flusso di lavoro è configurato per l’esecuzione una volta al giorno o ogni volta che un amministratore fa clic sul pulsante **[!UICONTROL Request an authorization from the application]** nella schermata di configurazione del servizio. [Ulteriori informazioni](#delegating-write-access-to-adobe-campaign).
 
-Una volta completata la sincronizzazione, le pagine raccolte vengono visualizzate nella cartella del servizio inserita nell’account esterno (consulta [Delega dell’accesso in scrittura ad Adobe Campaign](#delegating-write-access-to-adobe-campaign)). Per impostazione predefinita, le pagine vengono aggiunte alla directory principale del **[!UICONTROL Facebook]** cartella del servizio disponibile tramite **[!UICONTROL Profiles and Targets > Services and subscriptions]** menu.
+Una volta completata la sincronizzazione, le pagine raccolte vengono visualizzate nella cartella del servizio immessa nell’account esterno. [Ulteriori informazioni](#delegating-write-access-to-adobe-campaign)).
+
+Per impostazione predefinita, le pagine vengono aggiunte alla directory principale del **[!UICONTROL Facebook]** cartella del servizio disponibile tramite **[!UICONTROL Profiles and Targets > Services and subscriptions]** menu.
 
 ![](assets/social_facebook_service_002.png)
 
-Ora puoi pubblicare direttamente sulle pareti delle pagine Facebook tramite Adobe Campaign. Per ulteriori informazioni, consulta [Pubblicazione su Facebook](#publishing-on-facebook-walls).
+Ora puoi pubblicare direttamente sulle pareti delle pagine Facebook tramite Adobe Campaign. [Ulteriori informazioni](#publishing-on-facebook-walls).

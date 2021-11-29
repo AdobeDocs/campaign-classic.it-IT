@@ -3,7 +3,7 @@ product: campaign
 title: Migrazione al connettore Adobe Analytics
 description: Campaign - Domande frequenti sul connettore Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 A partire dalla versione 21.1.3 di Campaign Classic v7, il Connettore dati di Adobe Analytics è diventato obsoleto. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Il 1° agosto 2021, Adobe Campaign Classic è stato rimosso dall’interfaccia utente dei Data Connectors legacy, tuttavia, le integrazioni esistenti di Campaign continueranno a raccogliere e trasmettere dati ad Adobe Analytics fino ad agosto 2022. Dopo questa data, l’integrazione cesserà di raccogliere e trasmettere dati ad Adobe Analytics.
+Il 1° agosto 2021, Adobe Campaign Classic è stato rimosso dall’interfaccia utente dei Data Connectors legacy, tuttavia, le integrazioni esistenti di Campaign continueranno a raccogliere e trasmettere dati ad Adobe Analytics fino al 17 agosto 2022. Dopo questa data, l’integrazione cesserà di raccogliere e trasmettere dati ad Adobe Analytics.
 
 You **deve implementare** la nuova integrazione di Adobe Analytics Connector su Adobe Exchange che sostituisce l’integrazione legacy di Data Connectors. Per ulteriori informazioni su Adobe Analytics Connector, consulta [questa pagina](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 ## Come si esegue l’aggiornamento?
 
-Devi effettuare l’aggiornamento a Campaign 21.1.3 (o più) **prima di agosto 2022**.
+Devi effettuare l’aggiornamento a Campaign 21.1.3 (o più) **prima del 17 agosto 2022**.
 
 In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente. Potrai quindi utilizzare [Connettore Adobe Analytics](../../platform/using/adobe-analytics-connector.md).
 
