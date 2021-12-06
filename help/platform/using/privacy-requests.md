@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: d750e13d3770d3b36b5f4376233d4da458730ed7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2420'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Sono disponibili tre namespace predefiniti: e-mail, telefono e cellulare. Se hai
 
 >[!NOTE]
 >
->Per ottenere prestazioni ottimali, si consiglia di utilizzare spazi dei nomi predefiniti.
+>Per ottenere prestazioni ottimali, si consiglia di utilizzare gli spazi dei nomi predefiniti.
 
 ## Creazione di una richiesta di accesso a dati personali {#create-privacy-request-ui}
 
