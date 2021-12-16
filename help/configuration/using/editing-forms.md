@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: c08a4b3540da6370584e32e13723bee352402914
+source-git-commit: 31cf8dca13d53a3d6c450c04b45f8ed7e32f95b6
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1110'
 ht-degree: 2%
 
 ---
@@ -405,7 +405,4 @@ Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizza
 ![](assets/nested_forms_preview.png)
 
 ## Modificare un modulo di input di fabbrica {#modify-factory-form}
-
-Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
-
 
