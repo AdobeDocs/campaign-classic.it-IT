@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
+source-git-commit: c08a4b3540da6370584e32e13723bee352402914
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -407,12 +407,5 @@ Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizza
 ## Modificare un modulo di input di fabbrica {#modify-factory-form}
 
 Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
-
-1. Facoltativamente, estendere lo schema dati correlato:
-
-   1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
-   1. Seleziona uno schema di dati ed estendilo. Ad esempio, è possibile aggiungere campi. [Leggi tutto](extending-a-schema.md).
-
-
 
 
