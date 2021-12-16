@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
+source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 4%
+source-wordcount: '1105'
+ht-degree: 2%
 
 ---
 
@@ -169,5 +169,237 @@ Questo esempio mostra i riferimenti al `book.png` e `detail.png` immagini dal `n
 ```
 
 Queste immagini vengono utilizzate per le icone che gli utenti fanno clic per spostarsi in un modulo multipagina:
+
+![](assets/nested_forms_preview.png)
+
+
+## Creare un modulo semplice {#create-simple-form}
+
+Per creare un modulo, procedere come segue:
+
+1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+1. Fai clic sul pulsante **[!UICONTROL New]** in alto a destra dell’elenco.
+
+   ![](assets/input-form-create-1.png)
+
+1. Specificare le proprietà del modulo:
+
+   * Specificare il nome del modulo e lo spazio dei nomi.
+
+      Il nome del modulo e lo spazio dei nomi possono corrispondere allo schema di dati correlato.  Questo esempio mostra un modulo per `cus:order` schema dati:
+
+      ```xml
+      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+      In alternativa, puoi specificare esplicitamente lo schema dati nel `entity-schema` attributo.
+
+      ```xml
+      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+   * Specifica l’etichetta da visualizzare sul modulo.
+   * Facoltativamente, specificare il tipo di modulo. Se non si specifica un tipo di modulo, per impostazione predefinita viene utilizzato il tipo di schermata della console.
+
+      ![](assets/input-form-create-2.png)
+
+      Durante la progettazione di un modulo multipagina, è possibile omettere il tipo di modulo nella `<form>` e specifica il tipo in un contenitore .
+
+1. Fai clic su **[!UICONTROL Save]**.
+
+1. Inserire gli elementi del modulo.
+
+   Ad esempio, per inserire un campo di input, utilizza il `<input>` elemento. Imposta la `xpath` attributo al riferimento di campo come espressione XPath. [Leggi tutto](schema-structure.md#referencing-with-xpath).
+
+   Questo esempio mostra i campi di input basati su `nms:recipient` schema.
+
+   ```xml
+   <input xpath="@firstName"/>
+   <input xpath="@lastName"/>
+   ```
+
+1. Se il modulo è basato su un tipo di schema specifico, è possibile cercare i campi per questo schema:
+
+   1. Fai clic su **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+
+      ![](assets/input-form-create-4.png)
+
+   1. Seleziona il campo e fai clic su **[!UICONTROL OK]**.
+
+      ![](assets/input-form-create-5.png)
+
+1. Facoltativamente, specifica l’editor di campi.
+
+   A ciascun tipo di dati è associato un editor di campi predefinito:
+   * Per un campo di tipo data, il modulo mostra un calendario di input.
+   * Per un campo di tipo enumerazione, il modulo mostra un elenco di selezione.
+
+   Puoi utilizzare i seguenti tipi di editor di campi:
+
+   | Editor di campi | Attributo modulo |
+   | --- | --- |
+   | Pulsante di scelta | `type="radiobutton"` |
+   | Casella di controllo | `type="checkbox"` |
+   | Modifica albero | `type="tree"` |
+
+   Ulteriori informazioni [controlli elenco memoria](form-structure.md#memory-list-controls).
+
+1. Facoltativamente, definisci l’accesso ai campi:
+
+   | Elemento “element” | Attributo | Descrizione |
+   | --- | --- | --- |
+   | `<input>` | `read-only:"true"` | Accesso in sola lettura a un campo |
+   | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Visualizza in modo condizionale un gruppo di campi |
+   | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Abilita condizionale un gruppo di campi |
+
+   Esempio:
+
+   ```xml
+   <container type="enabledGroup" enabledIf="@gender=1">
+     […]
+   </container>
+   <container type="enabledGroup" enabledIf="@gender=2">
+     […]
+   </container>
+   ```
+
+1. Facoltativamente, utilizza i contenitori per raggruppare i campi in sezioni.
+
+   ```xml
+   <container type="frame" label="Name">
+      <input xpath="@firstName"/>
+      <input xpath="@lastName"/>
+   </container>
+   <container type="frame" label="Contact details">
+      <input xpath="@email"/>
+      <input xpath="@phone"/>
+   </container>
+   ```
+
+   ![](assets/input-form-create-3.png)
+
+## Creazione di un modulo multipagina {#create-multipage-form}
+
+È possibile creare moduli multipagina. È inoltre possibile nidificare i moduli all’interno di altri moduli.
+
+### Crea un `iconbox` modulo
+
+Utilizza la `iconbox` tipo di modulo per visualizzare le icone a sinistra del modulo, che consentono agli utenti di spostarsi su pagine diverse del modulo.
+
+![](assets/iconbox_form_preview.png)
+
+Per modificare il tipo di modulo esistente in `iconbox`, segui questi passaggi:
+
+1. Modificare la `type` dell&#39;attributo `<form>` elemento a `iconbox`:
+
+   ```xml
+   <form […] type="iconbox">
+   ```
+
+1. Impostare un contenitore per ciascuna pagina del modulo:
+
+   1. Aggiungi un `<container>` come elemento figlio di `<form>` elemento.
+   1. Per definire un’etichetta e un’immagine per l’icona, utilizza l’ `label` e `img` attributi.
+
+      ```xml
+      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
+          <container img="xtk:properties.png" label="General">
+              <input xpath="@label"/>
+              <input xpath="@name"/>
+              […]
+          </container>
+          <container img="nms:msgfolder.png" label="Details">
+              <input xpath="@address"/>
+              […]
+          </container>
+          <container img="nms:supplier.png" label="Services">
+              […]
+          </container>
+      </form>
+      ```
+   In alternativa, rimuovere la `type="frame"` attributo dell&#39;esistente `<container>` elementi.
+
+### Creazione di un modulo per appunti
+
+Utilizza la `notebook` tipo di modulo per visualizzare le schede nella parte superiore del modulo, che consentono agli utenti di passare a pagine diverse.
+
+![](assets/notebook_form_preview.png)
+
+Per modificare il tipo di modulo esistente in `notebook`, segui questi passaggi:
+
+1. Modificare la `type` dell&#39;attributo `<form>` elemento a `notebook`:
+
+   ```xml
+   <form […] type="notebook">
+   ```
+
+1. Aggiungere un contenitore per ciascuna pagina del modulo:
+
+   1. Aggiungi un `<container>` come elemento figlio di `<form>` elemento.
+   1. Per definire l’etichetta e l’immagine dell’icona, utilizza la `label` e `img` attributi.
+
+   ```xml
+     <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
+         <container label="General">
+             <input xpath="@label"/>
+             <input xpath="@name"/>
+             […]
+         </container>
+         <container label="Details">
+             <input xpath="@address"/>
+             […]
+         </container>
+         <container label="Services">
+             […]
+         </container>
+     </form>
+   ```
+
+   In alternativa, rimuovere la `type="frame"` attributo dell&#39;esistente `<container>` elementi.
+
+### Nidificare moduli {#nest-forms}
+
+È possibile nidificare i moduli all’interno di altri moduli. Ad esempio, è possibile nidificare i moduli per appunti all’interno dei moduli di iconbox.
+
+Il livello di nidificazione controlla la navigazione. Gli utenti possono eseguire il drill-down ai sottomoduli.
+
+Per nidificare un modulo all’interno di un altro modulo, inserire una `<container>` e imposta `type` al tipo di modulo. Per il modulo di livello superiore, è possibile impostare il tipo di modulo in un contenitore esterno o nella `<form>` elemento.
+
+### Esempio
+
+Questo esempio mostra un modulo complesso:
+
+* Il modulo di livello superiore è un modulo casella di inbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
+
+   Di conseguenza, il modulo esterno mostra il **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone nella parte sinistra del modulo.
+
+* Il sottomodulo è un modulo per appunti nidificato all&#39;interno del **Generale** contenitore. Il sottomodulo comprende due contenitori etichettati **Nome** e **Contatto**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
 
 ![](assets/nested_forms_preview.png)
