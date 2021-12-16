@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
+source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -360,10 +360,3 @@ Per modificare il tipo di modulo esistente in `notebook`, segui questi passaggi:
    ```
 
    In alternativa, rimuovere la `type="frame"` attributo dell&#39;esistente `<container>` elementi.
-
-### Nidificare moduli {#nest-forms}
-
-È possibile nidificare i moduli all’interno di altri moduli. Ad esempio, è possibile nidificare i moduli per appunti all’interno dei moduli di iconbox.
-
-Il livello di nidificazione controlla la navigazione. Gli utenti possono eseguire il drill-down ai sottomoduli.
-
